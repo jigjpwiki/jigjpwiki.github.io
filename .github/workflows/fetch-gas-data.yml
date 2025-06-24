@@ -2,7 +2,7 @@ name: Fetch GAS JSON and update data.json
 
 on:
   schedule:
-    #- cron: "*/10 * * * *" # 毎10分ごとに実行（日本時間は+9h補正必要）
+    - cron: "*/10 * * * *" # 毎10分ごとに実行（日本時間は+9h補正必要）
   workflow_dispatch: # 手動実行も可
 
 jobs:

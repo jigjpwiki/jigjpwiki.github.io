@@ -1,0 +1,25 @@
+name: Fetch GAS JSON and update data.json
+
+on:
+  schedule:
+    - cron: "*/10 * * * *" # 毎10分ごとに実行（日本時間は+9h補正必要）
+  workflow_dispatch: # 手動実行も可
+
+jobs:
+  update-json:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Fetch JSON from GAS
+        run: |
+          curl -s "https://script.google.com/macros/s/xxxxxxxxxxxxxxxx/exec" > data.json
+
+      - name: Commit & Push updated data.json
+        run: |
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+          git add data.json
+          git commit -m "Auto update data.json from GAS" || echo "No changes"
+          git push

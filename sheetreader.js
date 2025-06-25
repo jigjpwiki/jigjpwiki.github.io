@@ -1,6 +1,6 @@
 'use strict';
 
-fetch("data/data.json")
+fetch("data/tiktok.json")
   .then(response => response.json())
   .then(data => {
   const container = document.getElementById("videolist");

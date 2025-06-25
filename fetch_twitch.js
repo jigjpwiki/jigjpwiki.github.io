@@ -61,7 +61,7 @@ function toJstISOString(utcString) {
       });
     }
 
-    await fs.writeFile('docs/twitch.json', JSON.stringify(output, null, 2), 'utf8');
+    await fs.writeFile('data/twitch.json', JSON.stringify(output, null, 2), 'utf8');
     console.log('✅ twitch.json saved.');
   } catch (err) {
     console.error('❌ Error:', err);

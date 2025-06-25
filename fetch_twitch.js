@@ -12,10 +12,10 @@ function getJstThresholdISOString(daysAgo = 3) {
   const jst = new Date(now.getTime() + 9 * 60 * 60 * 1000); // JST補正
   jst.setDate(jst.getDate() - daysAgo);
   jst.setHours(0, 0, 0, 0); // 0:00に設定
-  return jst.toISOString(); // ISO文字列
+  return jst.toISOString();
 }
 
-// JST形式で出力する（ISO 8601 +09:00）
+// JST形式で出力（ISO 8601 +09:00）
 function toJstISOString(utcString) {
   const date = new Date(utcString);
   const jstOffset = 9 * 60;
@@ -32,7 +32,7 @@ async function getTwitchToken() {
   return (await res.json()).access_token;
 }
 
-// ライブ配信取得
+// 配信中取得
 async function fetchTwitchLive(login, token) {
   const res = await fetch(
     `https://api.twitch.tv/helix/streams?user_login=${login}`,
@@ -47,7 +47,7 @@ async function fetchTwitchLive(login, token) {
   return data[0] || null;
 }
 
-// アーカイブ（ビデオ）取得
+// アーカイブ取得
 async function fetchTwitchVideos(userId, token) {
   const res = await fetch(
     `https://api.twitch.tv/helix/videos?user_id=${userId}&type=archive`,
@@ -62,7 +62,7 @@ async function fetchTwitchVideos(userId, token) {
   return data;
 }
 
-// ユーザー情報（user_id取得用）
+// ユーザー情報取得
 async function fetchUserInfo(login, token) {
   const res = await fetch(
     `https://api.twitch.tv/helix/users?login=${login}`,
@@ -91,7 +91,7 @@ async function fetchUserInfo(login, token) {
 
       const userId = userInfo.id;
 
-      // 配信中チェック
+      // ライブ中の配信
       const stream = await fetchTwitchLive(s.twitchUserLogin, token);
       if (stream) {
         output.push({
@@ -101,10 +101,9 @@ async function fetchUserInfo(login, token) {
           date: toJstISOString(stream.started_at),
           status: "live"
         });
-        continue;
       }
 
-      // アーカイブの中から3日前以降のものを抽出
+      // アーカイブ取得（3日前以降）
       const videos = await fetchTwitchVideos(userId, token);
       for (const video of videos) {
         const created = new Date(video.created_at);
@@ -120,8 +119,12 @@ async function fetchUserInfo(login, token) {
       }
     }
 
+    // 日付昇順にソート
+    output.sort((a, b) => new Date(a.date) - new Date(b.date));
+
+    // 書き出し
     await fs.writeFile('data/twitch.json', JSON.stringify(output, null, 2), 'utf8');
-    console.log('✅ twitch.json saved.');
+    console.log('✅ twitch.json saved (sorted by date).');
   } catch (err) {
     console.error('❌ Error:', err);
   }

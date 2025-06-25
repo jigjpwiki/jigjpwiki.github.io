@@ -9,9 +9,9 @@ const TWITCH_CLIENT_SECRET = process.env.TWITCH_CLIENT_SECRET;
 // JSTで3日前の0:00を取得
 function getJstThresholdISOString(daysAgo = 3) {
   const now = new Date();
-  const jst = new Date(now.getTime() + 9 * 60 * 60 * 1000); // JST補正
+  const jst = new Date(now.getTime() + 9 * 60 * 60 * 1000);
   jst.setDate(jst.getDate() - daysAgo);
-  jst.setHours(0, 0, 0, 0); // 0:00に設定
+  jst.setHours(0, 0, 0, 0);
   return jst.toISOString();
 }
 
@@ -23,7 +23,6 @@ function toJstISOString(utcString) {
   return jstDate.toISOString().replace('Z', '+09:00');
 }
 
-// Twitchトークン取得
 async function getTwitchToken() {
   const res = await fetch(
     `https://id.twitch.tv/oauth2/token?client_id=${TWITCH_CLIENT_ID}&client_secret=${TWITCH_CLIENT_SECRET}&grant_type=client_credentials`,
@@ -32,7 +31,6 @@ async function getTwitchToken() {
   return (await res.json()).access_token;
 }
 
-// 配信中取得
 async function fetchTwitchLive(login, token) {
   const res = await fetch(
     `https://api.twitch.tv/helix/streams?user_login=${login}`,
@@ -47,7 +45,6 @@ async function fetchTwitchLive(login, token) {
   return data[0] || null;
 }
 
-// アーカイブ取得
 async function fetchTwitchVideos(userId, token) {
   const res = await fetch(
     `https://api.twitch.tv/helix/videos?user_id=${userId}&type=archive`,
@@ -62,7 +59,6 @@ async function fetchTwitchVideos(userId, token) {
   return data;
 }
 
-// ユーザー情報取得
 async function fetchUserInfo(login, token) {
   const res = await fetch(
     `https://api.twitch.tv/helix/users?login=${login}`,
@@ -84,6 +80,7 @@ async function fetchUserInfo(login, token) {
     const output = [];
 
     const jstThreshold = new Date(getJstThresholdISOString());
+    const liveMap = new Map(); // key: twitchid, value: { title, date }
 
     for (const s of list) {
       const userInfo = await fetchUserInfo(s.twitchUserLogin, token);
@@ -91,23 +88,35 @@ async function fetchUserInfo(login, token) {
 
       const userId = userInfo.id;
 
-      // ライブ中の配信
+      // LIVE取得
       const stream = await fetchTwitchLive(s.twitchUserLogin, token);
       if (stream) {
-        output.push({
+        const date = toJstISOString(stream.started_at);
+        const item = {
           name: s.name,
           twitchid: s.twitchUserLogin,
           title: stream.title,
-          date: toJstISOString(stream.started_at),
+          date,
           status: "live"
-        });
+        };
+        output.push(item);
+        liveMap.set(s.twitchUserLogin, { title: stream.title, date: new Date(date) });
       }
 
-      // アーカイブ取得（3日前以降）
+      // アーカイブ取得
       const videos = await fetchTwitchVideos(userId, token);
       for (const video of videos) {
         const created = new Date(video.created_at);
-        if (created >= jstThreshold) {
+        if (created < jstThreshold) continue;
+
+        const jstDate = new Date(created.getTime() + 9 * 60 * 60 * 1000);
+
+        // liveと重複していないか確認
+        const live = liveMap.get(s.twitchUserLogin);
+        const timeDiff = live ? Math.abs(live.date.getTime() - jstDate.getTime()) : Infinity;
+        const isDuplicate = live && live.title === video.title && timeDiff < 60 * 1000;
+
+        if (!isDuplicate) {
           output.push({
             name: s.name,
             twitchid: s.twitchUserLogin,
@@ -119,14 +128,12 @@ async function fetchUserInfo(login, token) {
       }
     }
 
-    // 日付昇順にソート
+    // date昇順にソート
     output.sort((a, b) => new Date(a.date) - new Date(b.date));
 
-    // 書き出し
     await fs.writeFile('data/twitch.json', JSON.stringify(output, null, 2), 'utf8');
-    console.log('✅ twitch.json saved (sorted by date).');
+    console.log('✅ twitch.json saved (duplicates filtered & sorted).');
   } catch (err) {
     console.error('❌ Error:', err);
   }
 })();
-

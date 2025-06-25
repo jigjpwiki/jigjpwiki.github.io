@@ -15,7 +15,7 @@ jobs:
       - name: Fetch JSON from GAS
         run: |
           mkdir -p data
-          curl -s "https://script.google.com/macros/s/AKfycbx21xLkgVYXkhYf7awzkp6blzSF5QA9PkFKEQaMVTkcMSIaX48tsy_KASRems2BO5UjSw/exec" > data/data.json
+          curl -sL "https://script.google.com/macros/s/AKfycbx21xLkgVYXkhYf7awzkp6blzSF5QA9PkFKEQaMVTkcMSIaX48tsy_KASRems2BO5UjSw/exec" > data/data.json
 
       - name: Commit & Push updated data.json
         run: |

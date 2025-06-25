@@ -1,26 +1,5 @@
 [
   {
-    "name": "水透ユウ",
-    "twitchid": "minato_yu_",
-    "title": "【🔰参加型】初心者歓迎！こちらPC初心者！みんなで強くなろ！【ぷろのゔぁ】【新人Vtuber】",
-    "date": "2025-06-22T14:57:59.000+09:00",
-    "status": "archive"
-  },
-  {
-    "name": "銘兎目あう",
-    "twitchid": "Metome_Au",
-    "title": "🔴【スト６】🔰Mケン✊ハイマスター目指してます！ 1300MR維持がんばるよ🥊",
-    "date": "2025-06-22T17:09:09.000+09:00",
-    "status": "archive"
-  },
-  {
-    "name": "駿河ルガ",
-    "twitchid": "suruga_luga",
-    "title": "【スト６】ランクマなど【Vtuber駿河ルガ】",
-    "date": "2025-06-22T18:00:01.000+09:00",
-    "status": "archive"
-  },
-  {
     "name": "火乃晴るい",
     "twitchid": "hinoha_rui",
     "title": "【 #VALORANT 】今日はまりごさん&蘭蘭さんのコーチングするよ！！",
@@ -165,13 +144,29 @@
     "twitchid": "ayune_amemiya",
     "title": "🔰初心者ろいやる、いくぞ🎀やさしい指示おじ募集⭐┊#シャドバWB┊JP/EN┊#Vtuber┊ぷろのゔぁ",
     "date": "2025-06-25T10:09:56.000+09:00",
-    "status": "live"
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_ayune_amemiya-320x180.jpg"
+  },
+  {
+    "name": "雨宮愛結猫",
+    "twitchid": "ayune_amemiya",
+    "title": "🔰初心者ろいやる、いくぞ🎀やさしい指示おじ募集⭐┊#シャドバWB┊JP/EN┊#Vtuber┊ぷろのゔぁ",
+    "date": "2025-06-25T10:10:02.000+09:00",
+    "status": "archive"
   },
   {
     "name": "火乃晴るい",
     "twitchid": "hinoha_rui",
     "title": "【 #VCTWatchParty 】みんなで一緒に応援するぞ！！！ #VALORANT",
     "date": "2025-06-25T10:12:12.000+09:00",
-    "status": "live"
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_hinoha_rui-320x180.jpg"
+  },
+  {
+    "name": "火乃晴るい",
+    "twitchid": "hinoha_rui",
+    "title": "【 #VCTWatchParty 】みんなで一緒に応援するぞ！！！ #VALORANT",
+    "date": "2025-06-25T10:12:18.000+09:00",
+    "status": "archive"
   }
 ]

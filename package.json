@@ -1,7 +1,6 @@
 {
   "name": "fetch-twitch",
   "version": "1.0.0",
-  "type": "module",
   "main": "fetch_twitch.js",
   "dependencies": {
     "node-fetch": "^2.6.11"

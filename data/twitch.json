@@ -187,9 +187,9 @@
     "name": "水透ユウ",
     "twitchid": "minato_yu_",
     "title": "【Mブランカ】久しぶりの着ぐるみ ちょっとだけ【スト6】【新人Vtuber】",
-    "date": "2025-06-25T23:16:22.000+09:00",
-    "status": "live",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_minato_yu_-320x180.jpg"
+    "date": "2025-06-25T23:16:28.000+09:00",
+    "status": "archive",
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/7e083870b0c614eedf9d_minato_yu__314505213809_1750860982//thumb/thumb0-320x180.jpg"
   },
   {
     "name": "銘兎目あう",
@@ -206,5 +206,13 @@
     "date": "2025-06-25T23:22:49.000+09:00",
     "status": "live",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_hinoha_rui-320x180.jpg"
+  },
+  {
+    "name": "李じゅぴ汰",
+    "twitchid": "lee_jupita",
+    "title": "【スト6】帰ってきたぞスト6に！！！モダンキンバリー【ストリートファイター6】",
+    "date": "2025-06-26T01:08:27.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lee_jupita-320x180.jpg"
   }
 ]

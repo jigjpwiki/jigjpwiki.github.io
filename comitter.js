@@ -7,7 +7,7 @@ Promise.all([
   // YouTube を追加する場合はここに追加
 ])
 .then(([tiktokData, twitchData]) => {
-  // 各データにプラットフォーム名を追加
+  // 各データにプラットフォーム名と URL・サムネイルを追加
   const tiktok = tiktokData.map(item => ({
     ...item,
     platform: 'tiktok',
@@ -19,13 +19,14 @@ Promise.all([
     ...item,
     platform: 'twitch',
     url: `https://www.twitch.tv/${item.twitchid}`,
-    thumbnail: 'asset/thumbnail/twitch-thumbnail-template.svg'
+    // JSONに入っているthumbnailをそのまま使う
+    thumbnail: item.thumbnail || 'asset/thumbnail/twitch-thumbnail-template.svg'
   }));
 
-  // 統合 + 日時でソート（昇順）
+  // 統合 + 日付昇順で並び替え
   const allData = [...tiktok, ...twitch].sort((a, b) => new Date(a.date) - new Date(b.date));
 
-  // 表示
+  // HTMLに出力
   const container = document.getElementById("videolist");
   allData.forEach(item => {
     const li = document.createElement("li");

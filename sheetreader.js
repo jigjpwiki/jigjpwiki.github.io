@@ -1,6 +1,6 @@
 'use strict';
 
-fetch("https://script.google.com/macros/s/AKfycbx21xLkgVYXkhYf7awzkp6blzSF5QA9PkFKEQaMVTkcMSIaX48tsy_KASRems2BO5UjSw/exec")
+fetch("data.json")
   .then(response => response.json())
   .then(data => {
   const container = document.getElementById("videolist");
@@ -15,8 +15,9 @@ fetch("https://script.google.com/macros/s/AKfycbx21xLkgVYXkhYf7awzkp6blzSF5QA9Pk
     ${item.date}
     `;
     container.appendChild(li);
-  });
-})
+    });
+    console.log(data);
+  })
   .catch(error => {
     console.error("データ取得エラー:", error);
   });

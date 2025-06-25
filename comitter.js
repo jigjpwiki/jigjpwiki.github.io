@@ -12,7 +12,7 @@ Promise.all([
     ...item,
     platform: 'tiktok',
     url: `https://www.tiktok.com/@${item.tiktokid}/live`,
-    thumbnail: 'asset/thumbnail/tiktok-thumbnail-template.svg'
+    thumbnail: 'assets/thumbnail/tiktok-thumbnail-template.svg'
   }));
 
   const twitch = twitchData.map(item => ({
@@ -20,7 +20,7 @@ Promise.all([
     platform: 'twitch',
     url: `https://www.twitch.tv/${item.twitchid}`,
     // JSONに入っているthumbnailをそのまま使う
-    thumbnail: item.thumbnail || 'asset/thumbnail/twitch-thumbnail-template.svg'
+    thumbnail: item.thumbnail || 'assets/thumbnail/tiktok-thumbnail-template.svg'
   }));
 
   // 統合 + 日付昇順で並び替え
@@ -31,7 +31,7 @@ Promise.all([
   allData.forEach(item => {
     const li = document.createElement("li");
     li.innerHTML = `
-      <img src="${item.thumbnail}" alt="サムネイル" width="120" height="120"><br>
+      <img src="${item.thumbnail}" alt="サムネイル" width="" height="120"><br>
       <a href="${item.url}" target="_blank">
         ${item.name} (${item.platform})
       </a>

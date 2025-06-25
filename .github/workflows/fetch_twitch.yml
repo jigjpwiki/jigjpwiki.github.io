@@ -1,19 +1,18 @@
-name: Fetch Twitch Data
+name: fetch-twitch
 
 on:
   schedule:
-    - cron: "*/10 * * * *" # 10分ごとに実行（UTC、JSTは+9h）
+    - cron: '*/15 * * * *' # 毎時15分おきに実行
   workflow_dispatch:
 
 jobs:
-  fetch-twitch:
+  run-script:
     runs-on: ubuntu-latest
-    steps:
-      - name: Checkout repo
-        uses: actions/checkout@v3
 
-      - name: Set up Node.js
-        uses: actions/setup-node@v3
+    steps:
+      - uses: actions/checkout@v3
+
+      - uses: actions/setup-node@v3
         with:
           node-version: '18'
 
@@ -22,11 +21,14 @@ jobs:
 
       - name: Run Twitch fetch script
         run: node fetch_twitch.js
+        env:
+          TWITCH_CLIENT_ID: ${{ secrets.TWITCH_CLIENT_ID }}
+          TWITCH_CLIENT_SECRET: ${{ secrets.TWITCH_CLIENT_SECRET }}
 
       - name: Commit & Push updated twitch.json
         run: |
-          git config --global user.name "github-actions"
-          git config --global user.email "actions@github.com"
+          git config user.name github-actions
+          git config user.email github-actions@github.com
           git add data/twitch.json
-          git commit -m "Auto update Twitch data" || echo "No changes"
+          git commit -m "Update twitch.json"
           git push

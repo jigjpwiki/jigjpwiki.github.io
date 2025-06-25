@@ -116,7 +116,9 @@ function getThumbnailUrl(user_login, status, videoId) {
             title: video.title,
             date: toJstISOString(video.created_at),
             status: 'archive',
-            thumbnail: `https://i3.ytimg.com/vi/${video.id}/hqdefault.jpg` // サムネイル（TwitchはAPIでなく動画IDを使う）
+            thumbnail: video.thumbnail_url
+              .replace('%{width}', '320')
+              .replace('%{height}', '180')
           });
         }
       }

@@ -108,14 +108,22 @@ async function fetchUserInfo(login, token) {
       for (const video of videos) {
         const created = new Date(video.created_at);
         if (created < jstThreshold) continue;
-
+      
         const jstDate = new Date(created.getTime() + 9 * 60 * 60 * 1000);
-
-        // liveと重複していないか確認
+      
         const live = liveMap.get(s.twitchUserLogin);
         const timeDiff = live ? Math.abs(live.date.getTime() - jstDate.getTime()) : Infinity;
-        const isDuplicate = live && live.title === video.title && timeDiff < 60 * 1000;
-
+        
+        const isSameMinute =
+          live && live.title === video.title &&
+          live.date.getFullYear() === jstDate.getFullYear() &&
+          live.date.getMonth() === jstDate.getMonth() &&
+          live.date.getDate() === jstDate.getDate() &&
+          live.date.getHours() === jstDate.getHours() &&
+          live.date.getMinutes() === jstDate.getMinutes();
+      
+        const isDuplicate = isSameMinute || (live && live.title === video.title && timeDiff < 60 * 1000);
+      
         if (!isDuplicate) {
           output.push({
             name: s.name,

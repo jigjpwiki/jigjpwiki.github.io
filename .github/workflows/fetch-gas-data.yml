@@ -2,7 +2,7 @@ name: Fetch GAS JSON and update tiktok.json
 
 on:
   schedule:
-    - cron: "*/10 * * * *" # 毎10分ごとに実行（UTCなので日本時間+9h）
+    - cron: "*/05 * * * *" # 毎5分ごとに実行（UTCなので日本時間+9h）
   workflow_dispatch: # 手動実行も可
 
 jobs:

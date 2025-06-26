@@ -7,20 +7,26 @@ Promise.all([
   // YouTube を追加する場合はここに追加
 ])
 .then(([tiktokData, twitchData]) => {
-  // 各データにプラットフォーム名と URL・サムネイルを追加
+  // TikTok：学籍番号でサムネイルとアイコンを指定
   const tiktok = tiktokData.map(item => ({
     ...item,
     platform: 'tiktok',
     url: `https://www.tiktok.com/@${item.tiktokid}/live`,
-    thumbnail: 'assets/thumbnail/tiktok-thumbnail-template.svg'
+    thumbnail: item.schoolid
+      ? `assets/thumbnail/${item.schoolid}.png`
+      : 'assets/thumbnail/tiktok-thumbnail-template.svg',
+    faceIcon: item.schoolid
+      ? `assets/face/${item.schoolid}.png`
+      : null
   }));
 
+  // Twitch：JSONに入っているthumbnailを使用、顔アイコンはなし
   const twitch = twitchData.map(item => ({
     ...item,
     platform: 'twitch',
     url: `https://www.twitch.tv/${item.twitchid}`,
-    // JSONに入っているthumbnailをそのまま使う
-    thumbnail: item.thumbnail || 'assets/thumbnail/tiktok-thumbnail-template.svg'
+    thumbnail: item.thumbnail || 'assets/thumbnail/twitch-thumbnail-template.svg',
+    faceIcon: null
   }));
 
   // 統合 + 日付昇順で並び替え
@@ -31,10 +37,11 @@ Promise.all([
   allData.forEach(item => {
     const li = document.createElement("li");
     li.innerHTML = `
-      <img src="${item.thumbnail}" alt="サムネイル" width="" height="120"><br>
+      <img src="${item.thumbnail}" alt="サムネイル" width="120" height="120"><br>
       <a href="${item.url}" target="_blank">
+        ${item.faceIcon ? `<img src="${item.faceIcon}" alt="アイコン" width="25" height="25" style="vertical-align: middle;"> ` : ""}
         ${item.name} (${item.platform})
-      </a>
+      </a><br>
       <em>${item.title}</em><br>
       ${item.date}
     `;

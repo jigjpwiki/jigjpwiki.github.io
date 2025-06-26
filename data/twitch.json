@@ -1,13 +1,5 @@
 [
   {
-    "name": "駿河ルガ",
-    "twitchid": "suruga_luga",
-    "title": "【スト６】ランクマとトナメ【Vtuber駿河ルガ】",
-    "date": "2025-06-23T17:59:42.000+09:00",
-    "status": "archive",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/a4a053713feba3cb4a22_suruga_luga_314494075762_1750669171//thumb/thumb0-320x180.jpg"
-  },
-  {
     "name": "銘兎目あう",
     "twitchid": "Metome_Au",
     "title": "🔴【スト６】🔰Mケン✊コンボ練習！ハイマスター目指してます！ 1300MR維持がんばるよ🥊",
@@ -206,5 +198,13 @@
     "date": "2025-06-26T10:45:08.000+09:00",
     "status": "archive",
     "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/a90912cac812adc6e61b_ayune_amemiya_314506432114_1750902302//thumb/thumb0-320x180.jpg"
+  },
+  {
+    "name": "駿河ルガ",
+    "twitchid": "suruga_luga",
+    "title": "【スト6】ランクマッチョ【Vtuber駿河ルガ】",
+    "date": "2025-06-26T18:00:21.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_suruga_luga-320x180.jpg"
   }
 ]

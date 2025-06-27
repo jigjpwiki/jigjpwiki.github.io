@@ -1,13 +1,5 @@
 [
   {
-    "name": "駿河ルガ",
-    "twitchid": "suruga_luga",
-    "title": "【スト６】ランクマなど【Vtuber駿河ルガ】",
-    "date": "2025-06-24T18:03:34.000+09:00",
-    "status": "archive",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/989153112487b90b35ad_suruga_luga_314499059825_1750755804//thumb/thumb0-320x180.jpg"
-  },
-  {
     "name": "火乃晴るい",
     "twitchid": "hinoha_rui",
     "title": "【ロードモバイル】視聴者参加型イベントに参戦！優勝するために協力タノム！",
@@ -190,5 +182,21 @@
     "date": "2025-06-27T15:36:58.000+09:00",
     "status": "live",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_minato_yu_-320x180.jpg"
+  },
+  {
+    "name": "駿河ルガ",
+    "twitchid": "suruga_luga",
+    "title": "【ロードモバイル】視聴者参加型！１位になりたーい！【Vtuber駿河ルガ】",
+    "date": "2025-06-27T17:59:36.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_suruga_luga-320x180.jpg"
+  },
+  {
+    "name": "火乃晴るい",
+    "twitchid": "hinoha_rui",
+    "title": "【 ##VCTWatchParty 】VALO大会ウォチパ！➡未定！",
+    "date": "2025-06-27T18:01:43.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_hinoha_rui-320x180.jpg"
   }
 ]

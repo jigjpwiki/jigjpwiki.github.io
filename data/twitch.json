@@ -171,9 +171,9 @@
     "name": "水透ユウ",
     "twitchid": "minato_yu_",
     "title": "【初見〇ROM〇】気軽にはなすだけ～作業しているのだ【新人Vtuber】",
-    "date": "2025-06-27T15:36:58.000+09:00",
-    "status": "live",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_minato_yu_-320x180.jpg"
+    "date": "2025-06-27T15:37:04.000+09:00",
+    "status": "archive",
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/6d1e32f26226c6c86993_minato_yu__314511598834_1751006218//thumb/thumb0-320x180.jpg"
   },
   {
     "name": "駿河ルガ",
@@ -190,5 +190,13 @@
     "date": "2025-06-27T18:01:43.000+09:00",
     "status": "live",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_hinoha_rui-320x180.jpg"
+  },
+  {
+    "name": "駿河ルガ",
+    "twitchid": "suruga_luga",
+    "title": "【スト6】ランクマとトナメ【Vtuber駿河ルガ】",
+    "date": "2025-06-27T19:11:10.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_suruga_luga-320x180.jpg"
   }
 ]

@@ -1,21 +1,5 @@
 [
   {
-    "name": "雨宮愛結猫",
-    "twitchid": "ayune_amemiya",
-    "title": "🔰初心者ろいやる、いくぞ🎀やさしい指示おじ募集⭐┊#シャドバWB┊JP/EN┊#Vtuber┊ぷろのゔぁ",
-    "date": "2025-06-25T10:10:02.000+09:00",
-    "status": "archive",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/d4a04f654e2b32a18d54_ayune_amemiya_314501785970_1750813796//thumb/thumb0-320x180.jpg"
-  },
-  {
-    "name": "火乃晴るい",
-    "twitchid": "hinoha_rui",
-    "title": "【 #VCTWatchParty 】みんなで一緒に応援するぞ！！！ #VALORANT",
-    "date": "2025-06-25T10:12:18.000+09:00",
-    "status": "archive",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/82d84303a473c4528ad0_hinoha_rui_314530657651_1750813932//thumb/thumb0-320x180.jpg"
-  },
-  {
     "name": "李じゅぴ汰",
     "twitchid": "lee_jupita",
     "title": "【雑談】ざつだん二時間！ローモバもやるよし、よし",
@@ -198,5 +182,13 @@
     "date": "2025-06-28T09:08:16.000+09:00",
     "status": "live",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_Metome_Au-320x180.jpg"
+  },
+  {
+    "name": "水透ユウ",
+    "twitchid": "minato_yu_",
+    "title": "【参加型🔰＆ランク】元CSのPC初心者参る【R6SX】【新人Vtuber】",
+    "date": "2025-06-28T10:16:12.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_minato_yu_-320x180.jpg"
   }
 ]

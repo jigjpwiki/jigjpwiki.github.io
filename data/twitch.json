@@ -1,13 +1,5 @@
 [
   {
-    "name": "銘兎目あう",
-    "twitchid": "Metome_Au",
-    "title": "🔴【スト６】🔰Mケン✊かたプデ！FCがんばるよ～🥊",
-    "date": "2025-06-27T20:04:08.000+09:00",
-    "status": "archive",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/a52b294dd4c7ac89cd86_metome_au_314512855025_1751022242//thumb/thumb0-320x180.jpg"
-  },
-  {
     "name": "李じゅぴ汰",
     "twitchid": "lee_jupita",
     "title": "【雑談】自宅内食料(減) いろいろゲームDAY！",
@@ -142,5 +134,13 @@
     "date": "2025-06-30T17:59:40.000+09:00",
     "status": "live",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_suruga_luga-320x180.jpg"
+  },
+  {
+    "name": "銘兎目あう",
+    "twitchid": "Metome_Au",
+    "title": "🔴【スト６】🔰ハイマスター目指して頑張る🥋 Mケン！デイヤフン！",
+    "date": "2025-06-30T19:56:11.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_Metome_Au-320x180.jpg"
   }
 ]

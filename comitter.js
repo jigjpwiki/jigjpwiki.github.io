@@ -3,10 +3,10 @@
 // すべての JSON を並列で読み込み
 Promise.all([
   fetch("data/tiktok.json").then(res => res.json()),
-  fetch("data/twitch.json").then(res => res.json())
-  // YouTube を追加する場合はここに追加
+  fetch("data/twitch.json").then(res => res.json()),
+  fetch("data/youtube.json").then(res => res.json())
 ])
-.then(([tiktokData, twitchData]) => {
+.then(([tiktokData, twitchData, youtubeData]) => {
   // TikTok：学籍番号でサムネイルとアイコンを指定
   const tiktok = tiktokData.map(item => ({
     ...item,
@@ -29,8 +29,17 @@ Promise.all([
     faceIcon: null
   }));
 
+  // YouTube：JSONに入っているthumbnailを使用、顔アイコンはなし
+  const youtube = youtubeData.map(item => ({
+    ...item,
+    platform: 'youtube',
+    url: `https://www.youtube.com/channel/${item.youtubeid}`,
+    thumbnail: item.thumbnail || 'assets/thumbnail/youtube-thumbnail-template.svg',
+    faceIcon: null
+  }));
+
   // 統合 + 日付昇順で並び替え
-  const allData = [...tiktok, ...twitch].sort((a, b) => new Date(a.date) - new Date(b.date));
+  const allData = [...tiktok, ...twitch, ...youtube].sort((a, b) => new Date(a.date) - new Date(b.date));
 
   // HTMLに出力
   const container = document.getElementById("videolist");

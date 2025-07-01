@@ -47,11 +47,12 @@ Promise.all([
     const li = document.createElement("li");
     li.innerHTML = `
       <img class="thumbnail" src="${item.thumbnail}" alt="サムネイル" height="120"><br>
+      ${item.faceIcon ? `<img src="${item.faceIcon}" alt="アイコン" width="25" height="25" style="vertical-align: middle;"> ` : ""}
+      ${item.name} (${item.platform})
+      <br>
       <a href="${item.url}" target="_blank">
-        ${item.faceIcon ? `<img src="${item.faceIcon}" alt="アイコン" width="25" height="25" style="vertical-align: middle;"> ` : ""}
-        ${item.name} (${item.platform})
-      </a><br>
-      <em>${item.title}</em><br>
+        <em>${item.title}</em><br>
+      </a>
       ${item.date}
     `;
     container.appendChild(li);

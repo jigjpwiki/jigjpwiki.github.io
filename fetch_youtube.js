@@ -63,7 +63,8 @@ function toJstISOString(utcString) {
               title,
               date: toJstISOString(details.actualStartTime),
               status: 'live',
-              thumbnail
+              thumbnail,
+              channelIcon: s.channelIcon || ''
             });
           }
         } else if (details.scheduledStartTime) {
@@ -75,7 +76,8 @@ function toJstISOString(utcString) {
               title,
               date: toJstISOString(details.scheduledStartTime),
               status: 'upcoming',
-              thumbnail
+              thumbnail,
+              channelIcon: s.channelIcon || ''
             });
           }
         } else {
@@ -87,7 +89,8 @@ function toJstISOString(utcString) {
               title,
               date: toJstISOString(snippet.publishedAt),
               status: 'archive',
-              thumbnail
+              thumbnail,
+              channelIcon: s.channelIcon || ''
             });
           }
         }

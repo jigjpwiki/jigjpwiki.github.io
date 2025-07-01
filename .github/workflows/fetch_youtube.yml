@@ -2,7 +2,8 @@ name: Fetch YouTube data and update youtube.json
 
 on:
   schedule:
-    - cron: '*/15 * * * *'  # 15分ごとに実行（UTC）
+    #- cron: '*/15 * * * *'  # 15分ごとに実行（UTC）
+    - cron: '0 * * * *'  # 毎時0分に実行（UTC）
   workflow_dispatch:         # 手動実行も可能
 
 jobs:

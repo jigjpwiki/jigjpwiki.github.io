@@ -29,15 +29,14 @@ Promise.all([
     faceIcon: null
   }));
 
-  // YouTube：JSONに入っているthumbnailとchannelIconを使用
+  // YouTube：JSONに入っているvideoリンクとchannelIconを使用
   const youtube = youtubeData.map(item => ({
     ...item,
     platform: 'youtube',
-    url: `https://www.youtube.com/channel/${item.youtubeid}`,
+    url: item.url,  // ← 動画のURLが直接JSONに入っている
     thumbnail: item.thumbnail || 'assets/thumbnail/youtube-thumbnail-template.svg',
-    faceIcon: item.channelIcon || null
+    faceIcon: item.channelIcon || null  // ← 顔アイコンとしてchannelIconを利用
   }));
-
 
   // 統合 + 日付昇順で並び替え
   const allData = [...tiktok, ...twitch, ...youtube].sort((a, b) => new Date(a.date) - new Date(b.date));

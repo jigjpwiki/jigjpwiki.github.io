@@ -39,7 +39,7 @@ function toJstISOString(utcString) {
         continue;
       }
 
-      const searchRes = await fetch(`https://www.googleapis.com/youtube/v3/search?part=id&channelId=${s.youtubeChannelId}&maxResults=10&order=date&type=video&key=${YOUTUBE_API_KEY}`);
+      const searchRes = await fetch(`https://www.googleapis.com/youtube/v3/search?part=id&channelId=${s.youtubeChannelId}&maxResults=5&order=date&type=video&key=${YOUTUBE_API_KEY}`);
       const searchJson = await searchRes.json();
       const videoIds = searchJson.items?.map(item => item.id.videoId).filter(Boolean).join(',');
       if (!videoIds) continue;

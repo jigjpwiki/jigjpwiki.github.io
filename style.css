@@ -1,1 +1,10 @@
+.thumbnail-wrapper {
+  aspect-ratio: 16 / 9;
+  position: relative;
+}
 
+.thumbnail-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

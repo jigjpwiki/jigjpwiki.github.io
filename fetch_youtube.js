@@ -39,13 +39,17 @@ function toJstISOString(utcString) {
       }
 
       // 最新動画検索（最大5件）
-      const searchRes = await fetch(`https://www.googleapis.com/youtube/v3/search?part=id&channelId=${s.youtubeChannelId}&maxResults=5&order=date&type=video&key=${YOUTUBE_API_KEY}`);
+      const searchRes = await fetch(
+        `https://www.googleapis.com/youtube/v3/search?part=id&channelId=${s.youtubeChannelId}&maxResults=5&order=date&type=video&key=${YOUTUBE_API_KEY}`
+      );
       const searchJson = await searchRes.json();
       const videoIds = searchJson.items?.map(item => item.id.videoId).filter(Boolean).join(',');
       if (!videoIds) continue;
 
       // 詳細情報を取得
-      const videosRes = await fetch(`https://www.googleapis.com/youtube/v3/videos?part=snippet,liveStreamingDetails&id=${videoIds}&key=${YOUTUBE_API_KEY}`);
+      const videosRes = await fetch(
+        `https://www.googleapis.com/youtube/v3/videos?part=snippet,liveStreamingDetails&id=${videoIds}&key=${YOUTUBE_API_KEY}`
+      );
       const videosJson = await videosRes.json();
 
       for (const video of videosJson.items || []) {
@@ -53,6 +57,7 @@ function toJstISOString(utcString) {
         const details = video.liveStreamingDetails || {};
         const title = snippet.title;
         const thumbnail = snippet.thumbnails?.medium?.url || '';
+        const videoUrl = `https://www.youtube.com/watch?v=${video.id}`;
 
         if (details.actualStartTime) {
           const actual = new Date(details.actualStartTime);
@@ -65,7 +70,7 @@ function toJstISOString(utcString) {
               status: 'live',
               thumbnail,
               channelIcon: s.channelIcon || '',
-              url: `https://www.youtube.com/watch?v=${video.id}`
+              url: videoUrl
             });
           }
         } else if (details.scheduledStartTime) {
@@ -79,7 +84,7 @@ function toJstISOString(utcString) {
               status: 'upcoming',
               thumbnail,
               channelIcon: s.channelIcon || '',
-              url: `https://www.youtube.com/watch?v=${video.id}`
+              url: videoUrl
             });
           }
         } else {
@@ -93,7 +98,7 @@ function toJstISOString(utcString) {
               status: 'archive',
               thumbnail,
               channelIcon: s.channelIcon || '',
-              url: `https://www.youtube.com/watch?v=${video.id}`
+              url: videoUrl
             });
           }
         }

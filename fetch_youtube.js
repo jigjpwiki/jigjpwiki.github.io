@@ -64,7 +64,8 @@ function toJstISOString(utcString) {
               date: toJstISOString(details.actualStartTime),
               status: 'live',
               thumbnail,
-              channelIcon: s.channelIcon || ''
+              channelIcon: s.channelIcon || '',
+              url: `https://www.youtube.com/watch?v=${video.id}`
             });
           }
         } else if (details.scheduledStartTime) {
@@ -77,7 +78,8 @@ function toJstISOString(utcString) {
               date: toJstISOString(details.scheduledStartTime),
               status: 'upcoming',
               thumbnail,
-              channelIcon: s.channelIcon || ''
+              channelIcon: s.channelIcon || '',
+              url: `https://www.youtube.com/watch?v=${video.id}`
             });
           }
         } else {
@@ -90,7 +92,8 @@ function toJstISOString(utcString) {
               date: toJstISOString(snippet.publishedAt),
               status: 'archive',
               thumbnail,
-              channelIcon: s.channelIcon || ''
+              channelIcon: s.channelIcon || '',
+              url: `https://www.youtube.com/watch?v=${video.id}`
             });
           }
         }

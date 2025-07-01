@@ -2,7 +2,6 @@
 
 const fs = require('fs').promises;
 const fetch = require('node-fetch');
-const path = require('path');
 
 const YOUTUBE_API_KEY = process.env.YOUTUBE_API_KEY;
 const CACHE_FILE = 'data/youtube_cache.json';
@@ -25,7 +24,7 @@ function toJstISOString(utcString) {
     try {
       cache = JSON.parse(await fs.readFile(CACHE_FILE, 'utf8'));
     } catch (e) {
-      console.log('No cache found, starting fresh.');
+      console.log('📁 No cache found, starting fresh.');
     }
 
     let combined = [];
@@ -39,11 +38,13 @@ function toJstISOString(utcString) {
         continue;
       }
 
+      // 最新動画検索（最大5件）
       const searchRes = await fetch(`https://www.googleapis.com/youtube/v3/search?part=id&channelId=${s.youtubeChannelId}&maxResults=5&order=date&type=video&key=${YOUTUBE_API_KEY}`);
       const searchJson = await searchRes.json();
       const videoIds = searchJson.items?.map(item => item.id.videoId).filter(Boolean).join(',');
       if (!videoIds) continue;
 
+      // 詳細情報を取得
       const videosRes = await fetch(`https://www.googleapis.com/youtube/v3/videos?part=snippet,liveStreamingDetails&id=${videoIds}&key=${YOUTUBE_API_KEY}`);
       const videosJson = await videosRes.json();
 
@@ -54,14 +55,17 @@ function toJstISOString(utcString) {
         const thumbnail = snippet.thumbnails?.medium?.url || '';
 
         if (details.actualStartTime) {
-          combined.push({
-            name: s.name,
-            youtubeid: s.youtubeChannelId,
-            title,
-            date: toJstISOString(details.actualStartTime),
-            status: 'live',
-            thumbnail
-          });
+          const actual = new Date(details.actualStartTime);
+          if (actual >= threeDaysAgo && actual <= now) {
+            combined.push({
+              name: s.name,
+              youtubeid: s.youtubeChannelId,
+              title,
+              date: toJstISOString(details.actualStartTime),
+              status: 'live',
+              thumbnail
+            });
+          }
         } else if (details.scheduledStartTime) {
           const scheduled = new Date(details.scheduledStartTime);
           if (scheduled >= now && scheduled <= threeDaysLater) {
@@ -89,9 +93,11 @@ function toJstISOString(utcString) {
         }
       }
 
+      // チェック済みとして記録
       cache[s.youtubeChannelId] = now.toISOString();
     }
 
+    // live と archive の重複削除
     combined = combined.filter((item, index, arr) => {
       if (item.status !== 'archive') return true;
       const duplicate = arr.find(other =>
@@ -103,8 +109,10 @@ function toJstISOString(utcString) {
       return !duplicate;
     });
 
+    // 昇順ソート
     combined.sort((a, b) => new Date(a.date) - new Date(b.date));
 
+    // 出力
     await fs.writeFile('data/youtube.json', JSON.stringify(combined, null, 2), 'utf8');
     await fs.writeFile(CACHE_FILE, JSON.stringify(cache, null, 2), 'utf8');
     console.log('✅ youtube.json and cache saved.');

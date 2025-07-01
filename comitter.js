@@ -29,14 +29,15 @@ Promise.all([
     faceIcon: null
   }));
 
-  // YouTube：JSONに入っているthumbnailを使用、顔アイコンはなし
+  // YouTube：JSONに入っているthumbnailとchannelIconを使用
   const youtube = youtubeData.map(item => ({
     ...item,
     platform: 'youtube',
     url: `https://www.youtube.com/channel/${item.youtubeid}`,
     thumbnail: item.thumbnail || 'assets/thumbnail/youtube-thumbnail-template.svg',
-    faceIcon: null
+    faceIcon: item.channelIcon || null
   }));
+
 
   // 統合 + 日付昇順で並び替え
   const allData = [...tiktok, ...twitch, ...youtube].sort((a, b) => new Date(a.date) - new Date(b.date));

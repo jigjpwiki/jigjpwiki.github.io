@@ -46,7 +46,9 @@ Promise.all([
   allData.forEach(item => {
     const li = document.createElement("li");
     li.innerHTML = `
-      <img class="thumbnail" src="${item.thumbnail}" alt="サムネイル" height="120"><br>
+      <div class="thumbnail-wrapper">
+        <img class="thumbnail" src="${item.thumbnail}" alt="サムネイル" height="120"><br>
+      </div>
       ${item.faceIcon ? `<img src="${item.faceIcon}" alt="アイコン" width="25" height="25" style="vertical-align: middle;"> ` : ""}
       ${item.name} (${item.platform})
       <br>

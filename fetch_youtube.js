@@ -16,7 +16,7 @@ function toJstISOString(utcString) {
 
 (async () => {
   try {
-    const list = JSON.parse(await fs.readFile('data/streamers.json', 'utf8'));
+    const list = JSON.parse(await fs.readFile('data/youtube_streamers.json', 'utf8'));
     const now = new Date();
     const threeDaysAgo = new Date(now.getTime() - 3 * 24 * 60 * 60 * 1000);
     const threeDaysLater = new Date(now.getTime() + 3 * 24 * 60 * 60 * 1000);

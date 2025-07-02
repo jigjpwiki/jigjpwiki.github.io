@@ -116,6 +116,7 @@ function getThumbnailUrl(user_login, status, videoId) {
             title: video.title,
             date: toJstISOString(video.created_at),
             status: 'archive',
+            channelIcon: s.channelIcon || '',
             thumbnail: video.thumbnail_url
               .replace('%{width}', '320')
               .replace('%{height}', '180')

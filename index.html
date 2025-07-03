@@ -5,24 +5,50 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>じぐじゅーる｜jig.jp非公式配信スケジュール</title>
 
+        <!-- CSSの読み込み -->
         <link rel="stylesheet" href="style.css">
+
+        <!-- Google Fontsの読み込み -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
 
         <!-- ページの説明文 (SEO対策にも有効) -->
         <meta name="description" content="じぐじゅーるは、jig.jp非公式Wiki記載ライバーのスケジュールを簡単に見ることができる非公式ツールです。">
+        <meta name="keywords" content="じぐじゅーる, jig.jp, 非公式, 配信スケジュール, ライバー, VTuber登龍門, ProForma Nova, ぷろのゔぁ, パレデミア学園, パレ学, 60人, VTuber, YouTube, TikTok, 配信">
+        <meta name="author" content="jig.jp非公式Wiki管理者">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <!-- ページに表示するアイコン (ファビコン) -->
         <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
+
+        <!-- Font Awesomeの読み込み -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
     </head>
     <body>
         <header>
+            <div class="header-wrapper">
+                <div class="logo"><img src="assets/logo.png" alt="じぐじゅーる"></div>
+            </div>
         </header>
         <main>
-            <ul id="videolist"></ul>
+            <header>
+
+            </header>
+            <div class="videocontainer">
+                <div class="videoswipe-inner">
+                    <button class="swipe-button prev" id="prev-button"><i class="fa-solid fa-chevron-left"></i></button>
+                    <button class="swipe-button next" id="next-button"><i class="fa-solid fa-chevron-right"></i></button>
+                </div>
+                <div id="videolist"></div>
+            </div>
         </main>
         <footer>
         </footer>
         <script src="comitter.js"></script>
-        <script src="script.js"></script>
+        <script src="/script.js"></script>
     </body>
 </html>

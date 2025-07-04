@@ -68,12 +68,13 @@ header {
 
 .header-policy {
   position: absolute;
-  right: 20px;
-  top: 20px;
+  right: 24px;
+  top: 16px;
+  font-size: 14px;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  gap: 10px;
+  gap: 4px;
 }
 
 .link-underline {

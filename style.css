@@ -308,16 +308,6 @@ header {
   width: 8px;
   background: transparent; /* スクロールバー全体の背景 */
 }
-::-webkit-scrollbar-track {
-  background: transparent;
-}
-::-webkit-scrollbar-thumb {
-  background-color: #888;
-  border-radius: 4px;
-}
-::-webkit-scrollbar-thumb:hover {
-  background-color: #555;
-}
 
 /* Firefox対応 */
 * {

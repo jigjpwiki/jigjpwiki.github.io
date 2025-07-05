@@ -19,9 +19,26 @@
         <meta name="author" content="jig.jp非公式Wiki管理者">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+        <!-- Open Graph Protocol (OGP) メタタグ -->
+        <meta property="og:title" content="じぐじゅーる｜jig.jp非公式配信スケジュール" />
+        <meta property="og:description" content="じぐじゅーるは、jig.jp非公式Wiki記載ライバーのスケジュールを簡単に見ることができる非公式ツールです。" />
+        <meta property="og:image" content="/assets/ogp-image.jpg" />
+        <meta property="og:url" content="https://jigdule.jp" />
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="じぐじゅーる" />
+
+        <!-- Twitterカード用メタタグ -->
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="じぐじゅーる｜jig.jp非公式配信スケジュール" />
+        <meta name="twitter:description" content="じぐじゅーるは、jig.jp非公式Wiki記載ライバーのスケジュールを簡単に見ることができる非公式ツールです。" />
+        <meta name="twitter:image" content="/assets/ogp-image.jpg" />
+        <meta name="twitter:site" content="@Jigjpwiki" />
+
         <!-- ページに表示するアイコン (ファビコン) -->
-        <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
+        <link rel="manifest" href="/assets/site.webmanifest">
 
         <!-- Font Awesomeの読み込み -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -29,6 +46,24 @@
     </head>
     <body>
         <header>
+            <!-- Windowsユーザーへの注意 -->
+            <div id="windows-notice" style="display: none; position: fixed; top: 20px; left: 20%; transform: translateX(-50%); background-color: #000; color: #fff; padding: 10px 20px; border-radius: 5px; font-size: 14px; z-index: 1000;">
+                Windowsユーザーへお知らせ
+                <br>
+                このサイトはMacを基準に設計されているため、Windowsでは一部機能が正常に動作しない場合があります。
+                <br>
+                Shiftキーを押しながらスクロールすることで横スクロールが可能です。
+            </div>
+            <script>
+            const ua = navigator.userAgent;
+
+            // Windows かどうかを判定
+            if (/Windows/i.test(ua)) {
+                document.getElementById('windows-notice').style.display = 'block';
+            }
+            </script>
+            <!-- Windowsユーザーへの注意終了 -->
+
             <div class="header-wrapper">
                 <div class="logo"><img src="assets/logo.png" alt="じぐじゅーる"></div>
             </div>

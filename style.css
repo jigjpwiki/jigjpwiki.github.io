@@ -126,6 +126,10 @@ header {
   padding-bottom: 50px;
 }
 
+.windows .video-list {
+  padding-right: 2px; /* Windowsの場合はスクロールバー分の余白を調整 */
+}
+
 .day-block {
   width: fit-content;
   min-width: 596px;

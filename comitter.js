@@ -57,7 +57,7 @@ Promise.all([
   });
 
   // 表示対象の日付（過去3日〜未来3日）を全て出力（中身がなくても）
-  for (let offset = -3; offset <= 3; offset++) {
+  for (let offset = -3; offset <= 5; offset++) {
     const targetDate = new Date(today.getFullYear(), today.getMonth(), today.getDate() + offset);
     const dateStr = targetDate.toLocaleDateString('ja-JP', { month: 'numeric', day: 'numeric' });
     const entries = groupedData[dateStr] || [];
@@ -107,7 +107,8 @@ Promise.all([
         }
 
         const div = document.createElement("div");
-        div.classList.add("live-wrapper");
+        div.classList.add("live-wrapper"); // IDを追加
+
         div.innerHTML = `
           <a href="${item.url}" target="_blank" class="live-block">
             <div class="formatted-time"><p>${formattedTime}</p></div>

@@ -144,6 +144,10 @@ header {
   background-color: #ecf0f6;
 }
 
+.windows .today-block {
+  width: 1193px; /* Windowsの場合は幅を調整(スクロールバー分) */
+}
+
 .today-block .video-list {
   display: flex;
   flex-direction: row;

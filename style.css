@@ -292,6 +292,15 @@ header {
   justify-content: space-between;
 }
 
+/* ────────swipe buttons───────── */
+
+.videoswipe-inner {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
 /* ────────scroll bar──────── */
 
 /* Chrome / Edge / Safari対応*/
@@ -299,7 +308,7 @@ header {
   width: 8px;
 }
 ::-webkit-scrollbar-track {
-  background: #f0f0f0;
+  background: transparent;
 }
 ::-webkit-scrollbar-thumb {
   background-color: #888;
@@ -312,5 +321,5 @@ header {
 /* Firefox対応 */
 * {
   scrollbar-width: thin;
-  scrollbar-color: #888 #f0f0f0;
+  scrollbar-color: #888 transparent;
 }

@@ -1,5 +1,7 @@
 html, body {
   height: 100vh;
+  scrollbar-width: none; /* Firefoxでスクロールバーを非表示にする */
+
 }
 
 body {
@@ -292,25 +294,9 @@ header {
   justify-content: space-between;
 }
 
-/* ────────swipe buttons───────── */
-
-.videoswipe-inner {
-  position: absolute;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-}
-
 /* ────────scroll bar──────── */
 
 /* Chrome / Edge / Safari対応*/
-::-webkit-scrollbar {
-  width: 8px;
-  background: transparent; /* スクロールバー全体の背景 */
-}
-
-/* Firefox対応 */
-* {
-  scrollbar-width: thin;
-  scrollbar-color: #888 transparent;
+html::-webkit-scrollbar {
+  display: none;
 }

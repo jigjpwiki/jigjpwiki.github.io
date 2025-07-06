@@ -1,15 +1,5 @@
 [
   {
-    "name": "秋桜しゅお",
-    "youtubeid": "UCPjtwOeRQV5EFkCwUycZsgw",
-    "title": "【登録者9000#耐久配信 】#初見歓迎！一万人までの前ステップ！！いくぞ！#歌枠配信 ！！【秋桜しゅお/登龍門BOX】EN OK　 #vtuber #vsinger",
-    "date": "2025-07-03T19:04:37.000+09:00",
-    "status": "live",
-    "thumbnail": "https://i.ytimg.com/vi/dZVo3PuIvCk/mqdefault.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/WBGP05KaXeA21IzCbCeM0QHa0v9maVvVUBDZ2DyfTT62F1wGaW3hLOQBy1gCfuQfEnDNgwbsrQ",
-    "url": "https://www.youtube.com/watch?v=dZVo3PuIvCk"
-  },
-  {
     "name": "桜樹美彩",
     "youtubeid": "UCTwKpTFX1aAXD0xpBqYqTdg",
     "title": "強気のコンビニ店員🍀🐥 #shorts #vtuber #新人vtuber #コント #ネタ  #桜樹美彩",
@@ -312,9 +302,19 @@
   {
     "name": "春原なずな",
     "youtubeid": "UCW-iuU7g3BJnuQ1D3UkqeSA",
+    "title": "【P5R】誰が味方で誰が敵か ※ネタバレ注意【春原なずな/Vtuber】 ©ATLUS ©SEGA #vtuber #p5r",
+    "date": "2025-07-06T19:00:10.000+09:00",
+    "status": "archive",
+    "thumbnail": "https://i.ytimg.com/vi/3s3BoZ0HwVk/mqdefault.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/0pD1c95Y9X0VrhzWtlf2SRPqdkesiuZxC8Hb5Mg9Xv1WWpQaFCmjITTK8-n5HlNsB-yDbAN4CZA",
+    "url": "https://www.youtube.com/watch?v=3s3BoZ0HwVk"
+  },
+  {
+    "name": "春原なずな",
+    "youtubeid": "UCW-iuU7g3BJnuQ1D3UkqeSA",
     "title": "【雑談配信】お話しよ～【春原なずな/Vtuber】",
-    "date": "2025-07-06T19:00:00.000+09:00",
-    "status": "upcoming",
+    "date": "2025-07-06T19:03:13.000+09:00",
+    "status": "live",
     "thumbnail": "https://i.ytimg.com/vi/b_59jMOZbZQ/mqdefault_live.jpg",
     "channelIcon": "https://yt3.googleusercontent.com/0pD1c95Y9X0VrhzWtlf2SRPqdkesiuZxC8Hb5Mg9Xv1WWpQaFCmjITTK8-n5HlNsB-yDbAN4CZA",
     "url": "https://www.youtube.com/watch?v=b_59jMOZbZQ"
@@ -348,5 +348,15 @@
     "thumbnail": "https://i.ytimg.com/vi/XD7EbZhJsWw/mqdefault_live.jpg",
     "channelIcon": "https://yt3.googleusercontent.com/pDP2GuylW0RN1REDScFAlNklbXaPRqTm2mwT2F7dIo8xoYYFPfspsjGH_G3RagwlKVlQbdw95bY",
     "url": "https://www.youtube.com/watch?v=XD7EbZhJsWw"
+  },
+  {
+    "name": "カルプ・マーガレット",
+    "youtubeid": "UCAANONySj4hE_-ch6G34MZQ",
+    "title": "【 #近畿霊務局  】幽霊だｧ...かかってこいや！！！【 広島弁のオネエVTuber 】",
+    "date": "2025-07-09T19:00:00.000+09:00",
+    "status": "upcoming",
+    "thumbnail": "https://i.ytimg.com/vi/AVLmDD8Jgl0/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/XXH1eOS7_cbzNwQFqJAtIguKNeLGs7-D2Pvf3M0vHlBVdKoYlmTbyMwUv7xjtsv5qM9IodH9",
+    "url": "https://www.youtube.com/watch?v=AVLmDD8Jgl0"
   }
 ]

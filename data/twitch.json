@@ -1,14 +1,5 @@
 [
   {
-    "name": "カルプ・マーガレット",
-    "twitchid": "carpe_margaret",
-    "title": "【 #valorant 】スクリム練習～！！！【 広島弁のオネエVTuber 】",
-    "date": "2025-07-04T22:04:10.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://yt3.googleusercontent.com/XXH1eOS7_cbzNwQFqJAtIguKNeLGs7-D2Pvf3M0vHlBVdKoYlmTbyMwUv7xjtsv5qM9IodH9",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/13838486c1ebaaaa8c00_carpe_margaret_314544321137_1751634244//thumb/thumb0-320x180.jpg"
-  },
-  {
     "name": "水透ユウ",
     "twitchid": "minato_yu_",
     "title": "【耐久】初REMATCHでFANBOX耐久！支援者募集～！！【ぜにげゔぁ】【新人Vtuber】",
@@ -122,5 +113,29 @@
     "date": "2025-07-07T20:06:18.000+09:00",
     "status": "live",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_Metome_Au-320x180.jpg"
+  },
+  {
+    "name": "李じゅぴ汰",
+    "twitchid": "lee_jupita",
+    "title": "【スト6】デビュー4か月目らしい！Mキンバリー【ストリートファイター6】",
+    "date": "2025-07-07T21:21:57.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lee_jupita-320x180.jpg"
+  },
+  {
+    "name": "雨宮愛結猫",
+    "twitchid": "ayune_amemiya",
+    "title": "🔰初心者ろいやる、いくぞ🎀やさしい指示おじ募集⭐┊#シャドバWB┊JP/EN┊#Vtuber┊ぷろのゔぁ",
+    "date": "2025-07-07T21:36:23.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_ayune_amemiya-320x180.jpg"
+  },
+  {
+    "name": "火乃晴るい",
+    "twitchid": "hinoha_rui",
+    "title": "【 #R6SX 】【14日目初心者】今日こそプラチナ！ソロランクGO!!!!",
+    "date": "2025-07-07T21:56:13.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_hinoha_rui-320x180.jpg"
   }
 ]

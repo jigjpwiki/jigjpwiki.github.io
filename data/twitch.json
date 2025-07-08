@@ -130,5 +130,38 @@
     "date": "2025-07-08T20:04:47.000+09:00",
     "status": "live",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_Metome_Au-320x180.jpg"
+  },
+  {
+    "name": "雨宮愛結猫",
+    "twitchid": "ayune_amemiya",
+    "title": "ローモバ中間発表🌟みんなありがとう🐈✨┊#PR┊JP/EN┊#Vtuber┊ぷろのゔぁ",
+    "date": "2025-07-08T21:08:48.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_ayune_amemiya-320x180.jpg"
+  },
+  {
+    "name": "雨宮愛結猫",
+    "twitchid": "ayune_amemiya",
+    "title": "ローモバ中間発表🌟みんなありがとう🐈✨┊JP/EN┊#Vtuber┊ぷろのゔぁ",
+    "date": "2025-07-08T21:08:54.000+09:00",
+    "status": "archive",
+    "channelIcon": "https://yt3.googleusercontent.com/kn25wJn77KhPY6MXLYIvYg_VDJk9MDaguKjRFJu2UbLMLSasK_h3Xo4ZaIRM5U7vUbiMQJD-",
+    "thumbnail": "https://vod-secure.twitch.tv/_404/404_processing_320x180.png"
+  },
+  {
+    "name": "水透ユウ",
+    "twitchid": "minato_yu_",
+    "title": "【ローモバ】中間発表でました！ w/雨宮愛結猫 李じゅぴ汰【新人Vtuber】",
+    "date": "2025-07-08T21:11:34.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_minato_yu_-320x180.jpg"
+  },
+  {
+    "name": "李じゅぴ汰",
+    "twitchid": "lee_jupita",
+    "title": "【雑談】ローモバ中間報告！一位ありがとう！【PR】",
+    "date": "2025-07-08T21:13:33.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lee_jupita-320x180.jpg"
   }
 ]

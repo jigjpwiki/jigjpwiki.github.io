@@ -174,9 +174,10 @@
     "name": "銘兎目あう",
     "twitchid": "Metome_Au",
     "title": "【スト６】カスタム参加型でチーム戦🐰🥊withりーちゃん！",
-    "date": "2025-07-09T21:08:13.000+09:00",
-    "status": "live",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_Metome_Au-320x180.jpg"
+    "date": "2025-07-09T21:08:19.000+09:00",
+    "status": "archive",
+    "channelIcon": "https://yt3.googleusercontent.com/VB97J8AMHex_rkfd6hDhfiGhhVvrL-NNkseP2mMYSWh75sxA_oXctmxK5tV4FYgkM17RUAx6GQ",
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/c2789c1ababb04607b00_metome_au_314566608881_1752062893//thumb/thumb0-320x180.jpg"
   },
   {
     "name": "火乃晴るい",
@@ -198,9 +199,18 @@
   {
     "name": "李じゅぴ汰",
     "twitchid": "lee_jupita",
-    "title": "【スト6】参加型♡あうちゃんとコラボ♡負けたらドキドキ罰ゲーム【ストリートファイター6】Mキンバリー",
+    "title": "【スト6】ゆるっと【ストリートファイター6】Mキンバリー",
     "date": "2025-07-10T00:06:54.000+09:00",
     "status": "live",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lee_jupita-320x180.jpg"
+  },
+  {
+    "name": "李じゅぴ汰",
+    "twitchid": "lee_jupita",
+    "title": "【スト6】参加型♡あうちゃんとコラボ♡負けたらドキドキ罰ゲーム【ストリートファイター6】Mキンバリー",
+    "date": "2025-07-10T00:07:00.000+09:00",
+    "status": "archive",
+    "channelIcon": "https://yt3.googleusercontent.com/QQqec9A1J7eLk9RrRYD9vvk51BBJzcE1leGkU9n4YkwHqht9gmGT1ktmSlKItQtbuMSGuklAFxM",
+    "thumbnail": "https://vod-secure.twitch.tv/_404/404_processing_320x180.png"
   }
 ]

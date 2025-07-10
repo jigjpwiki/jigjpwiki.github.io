@@ -1,25 +1,5 @@
 [
   {
-    "name": "銘兎目あう",
-    "youtubeid": "UCpr-9ssUUgSb0EpDA8bRuTA",
-    "title": "【スト６】Mケン！ハイマスター目指して頑張るよ🐰🥊",
-    "date": "2025-07-07T20:06:27.000+09:00",
-    "status": "live",
-    "thumbnail": "https://i.ytimg.com/vi/tSwzkux4_YY/mqdefault.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/VB97J8AMHex_rkfd6hDhfiGhhVvrL-NNkseP2mMYSWh75sxA_oXctmxK5tV4FYgkM17RUAx6GQ",
-    "url": "https://www.youtube.com/watch?v=tSwzkux4_YY"
-  },
-  {
-    "name": "秋桜しゅお",
-    "youtubeid": "UCPjtwOeRQV5EFkCwUycZsgw",
-    "title": "【初見77人#耐久配信 】#初見歓迎！七夕に77人初見をさがせ！#歌枠配信  ！【秋桜しゅお/登龍門BOX】EN OK　 #vtuber #vsinger",
-    "date": "2025-07-07T20:15:47.000+09:00",
-    "status": "live",
-    "thumbnail": "https://i.ytimg.com/vi/3lewSiDUJbo/mqdefault.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/WBGP05KaXeA21IzCbCeM0QHa0v9maVvVUBDZ2DyfTT62F1wGaW3hLOQBy1gCfuQfEnDNgwbsrQ",
-    "url": "https://www.youtube.com/watch?v=3lewSiDUJbo"
-  },
-  {
     "name": "忠犬しず",
     "youtubeid": "UCPzN3R0x_SciJJ_FP-STpHQ",
     "title": "【 同時視聴 】完全初見！仮面ライダーアギト 39，40話と仮面ライダーWの41，42話見て行くぞ！【 Vtuber/忠犬しず 】#特撮オタク　#特撮女子",
@@ -128,16 +108,6 @@
     "thumbnail": "https://i.ytimg.com/vi/6KnneNkf6NQ/mqdefault.jpg",
     "channelIcon": "https://yt3.googleusercontent.com/8LfPowqmhNmaEl9OBYSMUbrC7y1UCCpgvvGo2WhFFk4WKuMiigUwuFQFP2PD1krD6nfVHsQ-ew",
     "url": "https://www.youtube.com/watch?v=6KnneNkf6NQ"
-  },
-  {
-    "name": "桜樹美彩",
-    "youtubeid": "UCTwKpTFX1aAXD0xpBqYqTdg",
-    "title": "【 朝活 / 雑談 】エアコン故障中、応援希望🎐「おはよう」☀ ご挨拶380名様目標.ᐟ.ᐟ 朝活雑談🍀初見＆ROM勢大歓迎🐥  #vtuber #みさライなう #桜樹美彩 #新人vtuber",
-    "date": "2025-07-09T07:00:13.000+09:00",
-    "status": "live",
-    "thumbnail": "https://i.ytimg.com/vi/jCrrkn0Kl4Y/mqdefault.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/pDP2GuylW0RN1REDScFAlNklbXaPRqTm2mwT2F7dIo8xoYYFPfspsjGH_G3RagwlKVlQbdw95bY",
-    "url": "https://www.youtube.com/watch?v=jCrrkn0Kl4Y"
   },
   {
     "name": "カルプ・マーガレット",
@@ -348,6 +318,26 @@
     "thumbnail": "https://i.ytimg.com/vi/LnyZuxqDces/mqdefault.jpg",
     "channelIcon": "https://yt3.googleusercontent.com/0pD1c95Y9X0VrhzWtlf2SRPqdkesiuZxC8Hb5Mg9Xv1WWpQaFCmjITTK8-n5HlNsB-yDbAN4CZA",
     "url": "https://www.youtube.com/watch?v=LnyZuxqDces"
+  },
+  {
+    "name": "桜樹美彩",
+    "youtubeid": "UCTwKpTFX1aAXD0xpBqYqTdg",
+    "title": "夏休みに浮かれる朝強めＪＫ🍀🐥 #vtuber #新人vtuber #桜樹美彩",
+    "date": "2025-07-10T19:30:03.000+09:00",
+    "status": "archive",
+    "thumbnail": "https://i.ytimg.com/vi/2Txr2zdZzbk/mqdefault.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/pDP2GuylW0RN1REDScFAlNklbXaPRqTm2mwT2F7dIo8xoYYFPfspsjGH_G3RagwlKVlQbdw95bY",
+    "url": "https://www.youtube.com/watch?v=2Txr2zdZzbk"
+  },
+  {
+    "name": "銘兎目あう",
+    "youtubeid": "UCpr-9ssUUgSb0EpDA8bRuTA",
+    "title": "【スト６】Mケン！ハイマスター目指して頑張るよ🐰🥊",
+    "date": "2025-07-10T20:03:08.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/8XA3A-GwKNI/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/VB97J8AMHex_rkfd6hDhfiGhhVvrL-NNkseP2mMYSWh75sxA_oXctmxK5tV4FYgkM17RUAx6GQ",
+    "url": "https://www.youtube.com/watch?v=8XA3A-GwKNI"
   },
   {
     "name": "カルプ・マーガレット",

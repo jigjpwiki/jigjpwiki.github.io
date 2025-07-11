@@ -137,10 +137,19 @@
   {
     "name": "銘兎目あう",
     "twitchid": "Metome_Au",
-    "title": "【スト６】Mケン！ ハイマスター目指して頑張るよ🥋🥊",
+    "title": "【スト６】HUB参加型！どなたでもおいで！Mケン！ ハイマスター目指して頑張るよ🥋🥊",
     "date": "2025-07-11T20:07:21.000+09:00",
     "status": "live",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_Metome_Au-320x180.jpg"
+  },
+  {
+    "name": "銘兎目あう",
+    "twitchid": "Metome_Au",
+    "title": "【スト６】Mケン！ ハイマスター目指して頑張るよ🥋🥊",
+    "date": "2025-07-11T20:07:28.000+09:00",
+    "status": "archive",
+    "channelIcon": "https://yt3.googleusercontent.com/VB97J8AMHex_rkfd6hDhfiGhhVvrL-NNkseP2mMYSWh75sxA_oXctmxK5tV4FYgkM17RUAx6GQ",
+    "thumbnail": "https://vod-secure.twitch.tv/_404/404_processing_320x180.png"
   },
   {
     "name": "駿河ルガ",
@@ -158,5 +167,29 @@
     "status": "archive",
     "channelIcon": "https://yt3.googleusercontent.com/JlY4XEMg9noNa4ShOtky0OwYbKXjnhnje6NQUcwrnJ0UI3C9VQrB-fBNat9QJSUJuuT_Yo1P",
     "thumbnail": "https://vod-secure.twitch.tv/_404/404_processing_320x180.png"
+  },
+  {
+    "name": "雨宮愛結猫",
+    "twitchid": "ayune_amemiya",
+    "title": "🔰👶のんびりし～じ部⭐┊#R6SX┊JP/EN┊#Vtuber┊ぷろのゔぁ",
+    "date": "2025-07-11T22:07:11.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_ayune_amemiya-320x180.jpg"
+  },
+  {
+    "name": "火乃晴るい",
+    "twitchid": "hinoha_rui",
+    "title": "【 #R6SX 】【18日目初心者】コラボ！w/@ayune_amemiya  @minato_yu_ R6Sとはなんぞや…を学びたい",
+    "date": "2025-07-11T22:12:15.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_hinoha_rui-320x180.jpg"
+  },
+  {
+    "name": "水透ユウ",
+    "twitchid": "minato_yu_",
+    "title": "【初心者🔰】ぜにげゔぁコラボシージ！【R6SX】【新人Vtuber】",
+    "date": "2025-07-11T22:14:08.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_minato_yu_-320x180.jpg"
   }
 ]

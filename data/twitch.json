@@ -1,14 +1,5 @@
 [
   {
-    "name": "李じゅぴ汰",
-    "twitchid": "lee_jupita",
-    "title": "【スト6】参加型♡あうちゃんとコラボ♡負けたらドキドキ罰ゲーム【ストリートファイター6】Mキンバリー",
-    "date": "2025-07-10T00:07:00.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://yt3.googleusercontent.com/QQqec9A1J7eLk9RrRYD9vvk51BBJzcE1leGkU9n4YkwHqht9gmGT1ktmSlKItQtbuMSGuklAFxM",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/21c9febd8d892c969e73_lee_jupita_314567588721_1752073614//thumb/thumb0-320x180.jpg"
-  },
-  {
     "name": "駿河ルガ",
     "twitchid": "suruga_luga",
     "title": "【スト6】アルマス豪鬼【Vtuber駿河ルガ】",
@@ -138,9 +129,10 @@
     "name": "駿河ルガ",
     "twitchid": "suruga_luga",
     "title": "【スト6】ランクマとトナメ【Vtuber駿河ルガ】",
-    "date": "2025-07-12T18:00:09.000+09:00",
-    "status": "live",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_suruga_luga-320x180.jpg"
+    "date": "2025-07-12T18:00:21.000+09:00",
+    "status": "archive",
+    "channelIcon": "https://yt3.googleusercontent.com/JlY4XEMg9noNa4ShOtky0OwYbKXjnhnje6NQUcwrnJ0UI3C9VQrB-fBNat9QJSUJuuT_Yo1P",
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/d126defc988d067eb70d_suruga_luga_314579114610_1752310809//thumb/thumb0-320x180.jpg"
   },
   {
     "name": "銘兎目あう",
@@ -190,5 +182,13 @@
     "date": "2025-07-12T21:30:43.000+09:00",
     "status": "live",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_hinoha_rui-320x180.jpg"
+  },
+  {
+    "name": "カルプ・マーガレット",
+    "twitchid": "carpe_margaret",
+    "title": "【 #valorant 】TIM CUP 予選いくわよ～！！！！【 広島弁のオネエVTuber 】",
+    "date": "2025-07-12T23:48:12.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_carpe_margaret-320x180.jpg"
   }
 ]

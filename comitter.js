@@ -114,6 +114,7 @@ Promise.all([
             <div class="formatted-time"><p>${formattedTime}</p></div>
             <div class="live-info">
               <div class="live-info-inner">
+                <div class="${item.platform}-badge"></div>
                 <div class="face-icon">
                   ${item.faceIcon ? `<img src="${item.faceIcon}" alt="アイコン" width="68" height="68">` : ""}
                 </div>

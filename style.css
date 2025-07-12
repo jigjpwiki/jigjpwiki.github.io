@@ -139,8 +139,13 @@ header {
   border-right: 1px solid #dedede;
 }
 
+@media (min-width: 1177px) {
+  .today-block {
+    width: 1177px; /* デスクトップ用の幅 */
+  }
+}
+
 .today-block {
-  width: 1177px;
   background-color: #ecf0f6;
 }
 
@@ -196,12 +201,23 @@ header {
   display: flex;
   justify-content: space-between;
   background-color: #ffffff;
-  padding-left: 17px;
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transition: box-shadow 0.3s ease, transform 0.3s ease;
   z-index: 1; /* z-indexを追加 */
+}
+
+.tiktok-badge {
+  border-left: #00F2EA 5px solid;
+}
+
+.twitch-badge {
+  border-left: #6441A5 5px solid;
+}
+
+.youtube .live-info {
+  border-left: #FF0000 5px solid;
 }
 
 .live-block:hover .live-info {
@@ -218,6 +234,7 @@ header {
 }
 
 .face-icon {
+  margin-left: 12px;
   width: 68px;
   min-width: 68px;
   height: 100%;
@@ -312,4 +329,20 @@ html::-webkit-scrollbar {
   right: 10px;
   font-size: 12px;
   color: #999;
+}
+
+
+@media (max-width: 600px) {
+  .day-block {
+    min-width: 100vw;
+  }
+
+  .video-list {
+  }
+
+  .live-wrapper {
+    width: calc(100vw - 36px);
+  }
+
+
 }

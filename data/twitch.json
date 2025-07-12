@@ -1,32 +1,5 @@
 [
   {
-    "name": "水透ユウ",
-    "twitchid": "minato_yu_",
-    "title": "【初心者🔰】カスタム告知しました練習します！【R6SX】【新人Vtuber】",
-    "date": "2025-07-09T21:04:20.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://yt3.googleusercontent.com/eVD8Ygm7KVyh3dvWnyebfYlbYpD13ZYQ-Bos8WdR5LDE61A3svHVHCLEY-rM3IQgw9O4uvdd",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/fc235155bfeb0e1aea47_minato_yu__314595446003_1752062654//thumb/thumb0-320x180.jpg"
-  },
-  {
-    "name": "李じゅぴ汰",
-    "twitchid": "lee_jupita",
-    "title": "【スト6】参加型♡あうちゃんとコラボ♡負けたらドキドキ罰ゲーム【ストリートファイター6】Mキンバリー",
-    "date": "2025-07-09T21:08:12.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://yt3.googleusercontent.com/QQqec9A1J7eLk9RrRYD9vvk51BBJzcE1leGkU9n4YkwHqht9gmGT1ktmSlKItQtbuMSGuklAFxM",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/7cb765487f03bdc4d3ee_lee_jupita_314566608113_1752062886//thumb/thumb0-320x180.jpg"
-  },
-  {
-    "name": "銘兎目あう",
-    "twitchid": "Metome_Au",
-    "title": "【スト６】カスタム参加型でチーム戦🐰🥊withりーちゃん！",
-    "date": "2025-07-09T21:08:19.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://yt3.googleusercontent.com/VB97J8AMHex_rkfd6hDhfiGhhVvrL-NNkseP2mMYSWh75sxA_oXctmxK5tV4FYgkM17RUAx6GQ",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/c2789c1ababb04607b00_metome_au_314566608881_1752062893//thumb/thumb0-320x180.jpg"
-  },
-  {
     "name": "火乃晴るい",
     "twitchid": "hinoha_rui",
     "title": "【 #R6SX 】【16日目初心者】参加型するよ！誰でもおいで～🔥人いなくなったらソロランクする！",
@@ -164,19 +137,11 @@
   {
     "name": "水透ユウ",
     "twitchid": "minato_yu_",
-    "title": "【初心者参加型🔰】21時からのM×Mカスタム前にお散歩しておく！（祝UBISOFT CREATORS PROGRAM）【R6SX】【新人Vtuber】",
-    "date": "2025-07-12T16:00:56.000+09:00",
-    "status": "live",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_minato_yu_-320x180.jpg"
-  },
-  {
-    "name": "水透ユウ",
-    "twitchid": "minato_yu_",
     "title": "【初心者🔰】21時からのM×Mカスタム前にお散歩しておく！（祝UBISOFT CREATORS PROGRAM）【R6SX】【新人Vtuber】",
     "date": "2025-07-12T16:01:02.000+09:00",
     "status": "archive",
     "channelIcon": "https://yt3.googleusercontent.com/eVD8Ygm7KVyh3dvWnyebfYlbYpD13ZYQ-Bos8WdR5LDE61A3svHVHCLEY-rM3IQgw9O4uvdd",
-    "thumbnail": "https://vod-secure.twitch.tv/_404/404_processing_320x180.png"
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/84353a37b9c90b3a4ad1_minato_yu__314607879411_1752303656//thumb/thumb0-320x180.jpg"
   },
   {
     "name": "駿河ルガ",
@@ -193,5 +158,13 @@
     "date": "2025-07-12T20:21:17.000+09:00",
     "status": "live",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_Metome_Au-320x180.jpg"
+  },
+  {
+    "name": "カルプ・マーガレット",
+    "twitchid": "carpe_margaret",
+    "title": "【 #valorant 】TIM CUP 予選いくわよ～！！！！【 広島弁のオネエVTuber 】",
+    "date": "2025-07-12T21:00:56.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_carpe_margaret-320x180.jpg"
   }
 ]

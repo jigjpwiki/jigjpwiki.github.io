@@ -1,15 +1,5 @@
 [
   {
-    "name": "駿河ルガ",
-    "youtubeid": "UCij_jFd6ggNIYGm0rHwcNtg",
-    "title": "【スト6】アルマス豪鬼のランクマ【駿河ルガ/登龍門BOX】",
-    "date": "2025-07-10T18:00:24.000+09:00",
-    "status": "live",
-    "thumbnail": "https://i.ytimg.com/vi/zXQ1TQkNXNo/mqdefault.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/JlY4XEMg9noNa4ShOtky0OwYbKXjnhnje6NQUcwrnJ0UI3C9VQrB-fBNat9QJSUJuuT_Yo1P",
-    "url": "https://www.youtube.com/watch?v=zXQ1TQkNXNo"
-  },
-  {
     "name": "李じゅぴ汰",
     "youtubeid": "UCHsAAyHJhPXuLS6N3Kig6PQ",
     "title": "【スト6】スト6に翻弄される李じゅぴ汰まとめ【ストリートファイター6】新人Vtuber/切り抜き/shorts",
@@ -368,6 +358,26 @@
     "thumbnail": "https://i.ytimg.com/vi/SLmA7unCyfM/mqdefault_live.jpg",
     "channelIcon": "https://yt3.googleusercontent.com/8LfPowqmhNmaEl9OBYSMUbrC7y1UCCpgvvGo2WhFFk4WKuMiigUwuFQFP2PD1krD6nfVHsQ-ew",
     "url": "https://www.youtube.com/watch?v=SLmA7unCyfM"
+  },
+  {
+    "name": "雨宮愛結猫",
+    "youtubeid": "UC65woet7p7bhcjHtSbtlWQw",
+    "title": "【LoL】Riotのゲームやると人はおかしくなります【VALORANT】",
+    "date": "2025-07-13T16:38:56.000+09:00",
+    "status": "archive",
+    "thumbnail": "https://i.ytimg.com/vi/VTWWBLB7428/mqdefault.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/kn25wJn77KhPY6MXLYIvYg_VDJk9MDaguKjRFJu2UbLMLSasK_h3Xo4ZaIRM5U7vUbiMQJD-",
+    "url": "https://www.youtube.com/watch?v=VTWWBLB7428"
+  },
+  {
+    "name": "駿河ルガ",
+    "youtubeid": "UCij_jFd6ggNIYGm0rHwcNtg",
+    "title": "豪鬼はこれでいいんです！ #shorts #スト6 #ストリートファイター6",
+    "date": "2025-07-13T16:55:00.000+09:00",
+    "status": "archive",
+    "thumbnail": "https://i.ytimg.com/vi/s5sINdbX95o/mqdefault.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/JlY4XEMg9noNa4ShOtky0OwYbKXjnhnje6NQUcwrnJ0UI3C9VQrB-fBNat9QJSUJuuT_Yo1P",
+    "url": "https://www.youtube.com/watch?v=s5sINdbX95o"
   },
   {
     "name": "カルプ・マーガレット",

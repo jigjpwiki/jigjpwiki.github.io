@@ -1,32 +1,5 @@
 [
   {
-    "name": "雨宮愛結猫",
-    "twitchid": "ayune_amemiya",
-    "title": "🔰👶のんびりし～じ部⭐┊#R6SX┊JP/EN┊#Vtuber┊ぷろのゔぁ",
-    "date": "2025-07-11T22:07:17.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://yt3.googleusercontent.com/kn25wJn77KhPY6MXLYIvYg_VDJk9MDaguKjRFJu2UbLMLSasK_h3Xo4ZaIRM5U7vUbiMQJD-",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/6b9b038a7e7711b5d111_ayune_amemiya_314575741810_1752239231//thumb/thumb0-320x180.jpg"
-  },
-  {
-    "name": "火乃晴るい",
-    "twitchid": "hinoha_rui",
-    "title": "【 #R6SX 】【18日目初心者】コラボ！w/@ayune_amemiya  @minato_yu_ R6Sとはなんぞや…を学びたい",
-    "date": "2025-07-11T22:12:21.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://yt3.googleusercontent.com/8vDFqOVNprKqFE0o7EecXyQleBXIibeJZpXpSgjm5msh4Yd0S8hTsbmYZyOBXa3bUEgBJHZt1w",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/5e5b6c438361f526ec54_hinoha_rui_314604913779_1752239535//thumb/thumb0-320x180.jpg"
-  },
-  {
-    "name": "水透ユウ",
-    "twitchid": "minato_yu_",
-    "title": "【初心者🔰】ぜにげゔぁコラボシージ！【R6SX】【新人Vtuber】",
-    "date": "2025-07-11T22:14:14.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://yt3.googleusercontent.com/eVD8Ygm7KVyh3dvWnyebfYlbYpD13ZYQ-Bos8WdR5LDE61A3svHVHCLEY-rM3IQgw9O4uvdd",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/e2987dbbbbb6cc275e8d_minato_yu__314576046193_1752239648//thumb/thumb0-320x180.jpg"
-  },
-  {
     "name": "水透ユウ",
     "twitchid": "minato_yu_",
     "title": "【初心者🔰】21時からのM×Mカスタム前にお散歩しておく！（祝UBISOFT CREATORS PROGRAM）【R6SX】【新人Vtuber】",
@@ -219,5 +192,13 @@
     "date": "2025-07-14T21:33:21.000+09:00",
     "status": "live",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_ayune_amemiya-320x180.jpg"
+  },
+  {
+    "name": "真昼ねる",
+    "twitchid": "mahiruneru",
+    "title": "【参加◎】オペ全開放まで残り1名！求：名声ブースト🔋【ぷろのゔぁ／真昼ねる】",
+    "date": "2025-07-14T22:16:45.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_mahiruneru-320x180.jpg"
   }
 ]

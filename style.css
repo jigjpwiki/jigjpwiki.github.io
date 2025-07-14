@@ -201,6 +201,11 @@ header {
   display: flex;
   justify-content: space-between;
   background-color: #ffffff;
+  width: 100%;
+}
+
+.live-badge {
+  display: flex;
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -208,8 +213,13 @@ header {
   z-index: 1; /* z-indexを追加 */
 }
 
+.platform-border {
+  width: 5px;
+  height: 108px;
+}
+
 .tiktok-badge {
-  border-left: #00F2EA 5px solid;
+  background-color: #00F2EA;
 }
 
 .twitch-badge {
@@ -340,8 +350,70 @@ html::-webkit-scrollbar {
   .video-list {
   }
 
+  .live-info {
+    flex-direction: column;
+  }
+
+  .thumbnail-wrapper {
+    width: 100%;
+  }
+
   .live-wrapper {
     width: calc(100vw - 36px);
+    max-height: none;
+  }
+
+  .live-info-inner {
+    height: 82px;
+  }
+
+  .live-badge {
+    display: flex;
+  }
+
+  .platform-border {
+    height: 100%;
+  }
+
+  .tiktok {
+    background-color: #00F2EA;
+  }
+
+  .twitch {
+    background-color: #6441A5;
+  }
+
+  .youtube {
+    background-color: #FF0000;
+  }
+
+  .face-icon img {
+    width: 48px;
+    height: 48px;
+  }
+
+  .description {
+    padding-top: 12px;
+    padding-left: 2px;
+  }
+
+  header {
+    display: flex;
+    flex-direction: column-reverse;
+    padding-bottom: 0px;
+
+  }
+
+  .header-policy {
+    position: unset;
+    flex-wrap: wrap;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    gap: 8px;
+    flex-direction: row;
   }
 
 

@@ -112,19 +112,21 @@ Promise.all([
         div.innerHTML = `
           <a href="${item.url}" target="_blank" class="live-block">
             <div class="formatted-time"><p>${formattedTime}</p></div>
-            <div class="live-info">
-              <div class="live-info-inner">
-                <div class="${item.platform}-badge"></div>
-                <div class="face-icon">
-                  ${item.faceIcon ? `<img src="${item.faceIcon}" alt="アイコン" width="68" height="68">` : ""}
+            <div class="live-badge ${item.platform}">
+            <div class="${item.platform}-badge platform-border"></div>
+              <div class="live-info">
+                <div class="live-info-inner">
+                  <div class="face-icon">
+                    ${item.faceIcon ? `<img src="${item.faceIcon}" alt="アイコン" width="68" height="68">` : ""}
+                  </div>
+                  <div class="description">
+                    <div class="liver-name"><p>${item.name}</p></div>
+                    <p class="live-title">${item.title}</p>
+                  </div>
                 </div>
-                <div class="description">
-                  <div class="liver-name"><p>${item.name}</p></div>
-                  <p class="live-title">${item.title}</p>
+                <div class="thumbnail-wrapper">
+                  <img class="thumbnail" src="${item.thumbnail}" alt="サムネイル" height="120">
                 </div>
-              </div>
-              <div class="thumbnail-wrapper">
-                <img class="thumbnail" src="${item.thumbnail}" alt="サムネイル" height="120">
               </div>
             </div>
           </a>

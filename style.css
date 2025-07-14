@@ -230,7 +230,7 @@ header {
   border-left: #FF0000 5px solid;
 }
 
-.live-block:hover .live-info {
+.live-block:hover .live-badge {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* ← 濃く・広く */
   transform: translateY(-3px);  
 }

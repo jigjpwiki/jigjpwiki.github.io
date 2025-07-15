@@ -1,35 +1,5 @@
 [
   {
-    "name": "駿河ルガ",
-    "youtubeid": "UCij_jFd6ggNIYGm0rHwcNtg",
-    "title": "【スト6】アルマス豪鬼のランクマとトナメ【駿河ルガ/登龍門BOX】",
-    "date": "2025-07-12T18:00:22.000+09:00",
-    "status": "live",
-    "thumbnail": "https://i.ytimg.com/vi/roTSxpTQHvc/mqdefault.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/JlY4XEMg9noNa4ShOtky0OwYbKXjnhnje6NQUcwrnJ0UI3C9VQrB-fBNat9QJSUJuuT_Yo1P",
-    "url": "https://www.youtube.com/watch?v=roTSxpTQHvc"
-  },
-  {
-    "name": "魔法少女アルト",
-    "youtubeid": "UCtRhBS8dlaeBgVcnEZOkAbA",
-    "title": "中学生の時にやらかした間違い電話 #替え歌 #ネタ #お返事まだカナおじさん構文 #アニメ #魔法少女アルト #あるある",
-    "date": "2025-07-12T18:00:35.000+09:00",
-    "status": "archive",
-    "thumbnail": "https://i.ytimg.com/vi/OpBmdqk8-RI/mqdefault.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/JwOkUNiR-08GjSI3MS8-Yk6jzONshtmRWZ9tpjOghB10quze7fgbJkhpPTpIfUX00HBACjAR8Q",
-    "url": "https://www.youtube.com/watch?v=OpBmdqk8-RI"
-  },
-  {
-    "name": "李じゅぴ汰",
-    "youtubeid": "UCHsAAyHJhPXuLS6N3Kig6PQ",
-    "title": "【スト6】うんこを集めないとエレナに会えないと知りざわつくコメント欄ｗｗｗ【ストリートファイター6】ワールドツアー/面白切り抜きShorts/新人Vtuber",
-    "date": "2025-07-12T18:17:00.000+09:00",
-    "status": "archive",
-    "thumbnail": "https://i.ytimg.com/vi/oeY_M0wYMn4/mqdefault.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/QQqec9A1J7eLk9RrRYD9vvk51BBJzcE1leGkU9n4YkwHqht9gmGT1ktmSlKItQtbuMSGuklAFxM",
-    "url": "https://www.youtube.com/watch?v=oeY_M0wYMn4"
-  },
-  {
     "name": "妖小琳",
     "youtubeid": "UC6eopxuX7lx8GnpkntObt1w",
     "title": "【 ネタバレ注意 】この夏、島の神隠しを解く【妖小琳/Vtuber】",
@@ -415,7 +385,7 @@
     "title": "【#R6SX】初心者爆笑シージ。今日もがんばります。虹色指示部【レインボーシックスシージX】",
     "date": "2025-07-15T15:47:51.000+09:00",
     "status": "live",
-    "thumbnail": "https://i.ytimg.com/vi/Gjgfh8_rQGA/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/Gjgfh8_rQGA/mqdefault.jpg",
     "channelIcon": "https://yt3.googleusercontent.com/QQqec9A1J7eLk9RrRYD9vvk51BBJzcE1leGkU9n4YkwHqht9gmGT1ktmSlKItQtbuMSGuklAFxM",
     "url": "https://www.youtube.com/watch?v=Gjgfh8_rQGA"
   },
@@ -428,6 +398,26 @@
     "thumbnail": "https://i.ytimg.com/vi/UGFWMJcf37E/mqdefault.jpg",
     "channelIcon": "https://yt3.googleusercontent.com/JlY4XEMg9noNa4ShOtky0OwYbKXjnhnje6NQUcwrnJ0UI3C9VQrB-fBNat9QJSUJuuT_Yo1P",
     "url": "https://www.youtube.com/watch?v=UGFWMJcf37E"
+  },
+  {
+    "name": "秋桜しゅお",
+    "youtubeid": "UCPjtwOeRQV5EFkCwUycZsgw",
+    "title": "【平成生まれVTuberが昭和の名曲歌ってみた】#vtuber #歌ってみた #新人vtuber #vsinger #昭和歌謡 #昭和歌謡カバー #レトロ #うたってみた",
+    "date": "2025-07-15T18:00:33.000+09:00",
+    "status": "archive",
+    "thumbnail": "https://i.ytimg.com/vi/G8VHagFf2T0/mqdefault.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/WBGP05KaXeA21IzCbCeM0QHa0v9maVvVUBDZ2DyfTT62F1wGaW3hLOQBy1gCfuQfEnDNgwbsrQ",
+    "url": "https://www.youtube.com/watch?v=G8VHagFf2T0"
+  },
+  {
+    "name": "忠犬しず",
+    "youtubeid": "UCPzN3R0x_SciJJ_FP-STpHQ",
+    "title": "【 メイキングクイズ！ 】このマイクラスキンは誰だ！？早押しクイズに挑戦しよう！【 忠犬しず/特撮オタクVTuber 】",
+    "date": "2025-07-15T18:02:40.000+09:00",
+    "status": "archive",
+    "thumbnail": "https://i.ytimg.com/vi/2owOCjYoVWc/mqdefault.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/9dVPxoBbcXIeN4O1N6bYiWu3EHHHeaStY7fQYPZfF3thWIP2Sc9Uc6kg56Aj0UHrg5QqqDtn",
+    "url": "https://www.youtube.com/watch?v=2owOCjYoVWc"
   },
   {
     "name": "桜樹美彩",

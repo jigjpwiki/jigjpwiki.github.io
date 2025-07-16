@@ -1,25 +1,5 @@
 [
   {
-    "name": "駿河ルガ",
-    "youtubeid": "UCij_jFd6ggNIYGm0rHwcNtg",
-    "title": "【スト6】アルマス豪鬼のランクマ【駿河ルガ/登龍門BOX】",
-    "date": "2025-07-13T18:01:03.000+09:00",
-    "status": "live",
-    "thumbnail": "https://i.ytimg.com/vi/3HNqZ0mFrUQ/mqdefault.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/JlY4XEMg9noNa4ShOtky0OwYbKXjnhnje6NQUcwrnJ0UI3C9VQrB-fBNat9QJSUJuuT_Yo1P",
-    "url": "https://www.youtube.com/watch?v=3HNqZ0mFrUQ"
-  },
-  {
-    "name": "宇田わん",
-    "youtubeid": "UCp45rWiRwgYZJUR4bQO-Xgw",
-    "title": "実際どう？？#新人vtuber",
-    "date": "2025-07-13T18:01:04.000+09:00",
-    "status": "archive",
-    "thumbnail": "https://i.ytimg.com/vi/lcyDtn4nmtI/mqdefault.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/bcgws2A-h2HRTCoWgcipC2sgJw_9y0O_5jBi_0QEW4DhAqyPZg4_xLkZw3JJBFZ2DzsYNiGx",
-    "url": "https://www.youtube.com/watch?v=lcyDtn4nmtI"
-  },
-  {
     "name": "春原なずな",
     "youtubeid": "UCW-iuU7g3BJnuQ1D3UkqeSA",
     "title": "【雑談配信】お話しよ～【春原なずな/Vtuber】",
@@ -118,16 +98,6 @@
     "thumbnail": "https://i.ytimg.com/vi/CyWbkh2vDCs/mqdefault.jpg",
     "channelIcon": "https://yt3.googleusercontent.com/bcgws2A-h2HRTCoWgcipC2sgJw_9y0O_5jBi_0QEW4DhAqyPZg4_xLkZw3JJBFZ2DzsYNiGx",
     "url": "https://www.youtube.com/watch?v=CyWbkh2vDCs"
-  },
-  {
-    "name": "秋桜しゅお",
-    "youtubeid": "UCPjtwOeRQV5EFkCwUycZsgw",
-    "title": "【元声優の悲しい運命ーさだめー】#vtuber #新人vtuber #あるある #声優 #声優系vtuber #声優vtuber #ゲーム #悲しい話 #あるあるネタ",
-    "date": "2025-07-14T19:02:32.000+09:00",
-    "status": "archive",
-    "thumbnail": "https://i.ytimg.com/vi/5W9F5MYKpj8/mqdefault.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/WBGP05KaXeA21IzCbCeM0QHa0v9maVvVUBDZ2DyfTT62F1wGaW3hLOQBy1gCfuQfEnDNgwbsrQ",
-    "url": "https://www.youtube.com/watch?v=5W9F5MYKpj8"
   },
   {
     "name": "魔法少女アルト",
@@ -378,6 +348,46 @@
     "thumbnail": "https://i.ytimg.com/vi/PQ5idgSwIzU/mqdefault.jpg",
     "channelIcon": "https://yt3.googleusercontent.com/pDP2GuylW0RN1REDScFAlNklbXaPRqTm2mwT2F7dIo8xoYYFPfspsjGH_G3RagwlKVlQbdw95bY",
     "url": "https://www.youtube.com/watch?v=PQ5idgSwIzU"
+  },
+  {
+    "name": "魔法少女アルト",
+    "youtubeid": "UCtRhBS8dlaeBgVcnEZOkAbA",
+    "title": "お菓子作ったらドブになりました。 #替え歌 #ネタ #アニメ #魔法少女アルト #ウワサのあの子",
+    "date": "2025-07-16T18:00:25.000+09:00",
+    "status": "archive",
+    "thumbnail": "https://i.ytimg.com/vi/JlsfY68NUnE/mqdefault.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/JwOkUNiR-08GjSI3MS8-Yk6jzONshtmRWZ9tpjOghB10quze7fgbJkhpPTpIfUX00HBACjAR8Q",
+    "url": "https://www.youtube.com/watch?v=JlsfY68NUnE"
+  },
+  {
+    "name": "駿河ルガ",
+    "youtubeid": "UCij_jFd6ggNIYGm0rHwcNtg",
+    "title": "【スト6】アルマス豪鬼のランクマ【駿河ルガ/登龍門BOX】",
+    "date": "2025-07-16T18:00:28.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/luMlNb-xQ4A/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/JlY4XEMg9noNa4ShOtky0OwYbKXjnhnje6NQUcwrnJ0UI3C9VQrB-fBNat9QJSUJuuT_Yo1P",
+    "url": "https://www.youtube.com/watch?v=luMlNb-xQ4A"
+  },
+  {
+    "name": "宇田わん",
+    "youtubeid": "UCp45rWiRwgYZJUR4bQO-Xgw",
+    "title": "頭についてるのって…#新人vtuber",
+    "date": "2025-07-16T18:01:14.000+09:00",
+    "status": "archive",
+    "thumbnail": "https://i.ytimg.com/vi/oTAIieSTeu8/mqdefault.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/bcgws2A-h2HRTCoWgcipC2sgJw_9y0O_5jBi_0QEW4DhAqyPZg4_xLkZw3JJBFZ2DzsYNiGx",
+    "url": "https://www.youtube.com/watch?v=oTAIieSTeu8"
+  },
+  {
+    "name": "秋桜しゅお",
+    "youtubeid": "UCPjtwOeRQV5EFkCwUycZsgw",
+    "title": "【海外にモテモテVTuberのあるある】#vtuber #新人vtuber #海外 #あるある #あるあるネタ #求婚 #モテる #shorts",
+    "date": "2025-07-16T18:03:18.000+09:00",
+    "status": "archive",
+    "thumbnail": "https://i.ytimg.com/vi/MEWyDn-fNsg/mqdefault.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/WBGP05KaXeA21IzCbCeM0QHa0v9maVvVUBDZ2DyfTT62F1wGaW3hLOQBy1gCfuQfEnDNgwbsrQ",
+    "url": "https://www.youtube.com/watch?v=MEWyDn-fNsg"
   },
   {
     "name": "魔法少女アルト",

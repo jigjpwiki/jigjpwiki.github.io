@@ -1,15 +1,5 @@
 [
   {
-    "name": "春原なずな",
-    "youtubeid": "UCW-iuU7g3BJnuQ1D3UkqeSA",
-    "title": "【雑談配信】お話しよ～【春原なずな/Vtuber】",
-    "date": "2025-07-13T19:01:20.000+09:00",
-    "status": "live",
-    "thumbnail": "https://i.ytimg.com/vi/96loZtqFLLs/mqdefault.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/0pD1c95Y9X0VrhzWtlf2SRPqdkesiuZxC8Hb5Mg9Xv1WWpQaFCmjITTK8-n5HlNsB-yDbAN4CZA",
-    "url": "https://www.youtube.com/watch?v=96loZtqFLLs"
-  },
-  {
     "name": "銘兎目あう",
     "youtubeid": "UCpr-9ssUUgSb0EpDA8bRuTA",
     "title": "【スト６】Mケン！ハイマスター目指して頑張るよ🐰🥊",
@@ -108,16 +98,6 @@
     "thumbnail": "https://i.ytimg.com/vi/bICgF-DYy5Y/mqdefault.jpg",
     "channelIcon": "https://yt3.googleusercontent.com/JwOkUNiR-08GjSI3MS8-Yk6jzONshtmRWZ9tpjOghB10quze7fgbJkhpPTpIfUX00HBACjAR8Q",
     "url": "https://www.youtube.com/watch?v=bICgF-DYy5Y"
-  },
-  {
-    "name": "秋桜しゅお",
-    "youtubeid": "UCPjtwOeRQV5EFkCwUycZsgw",
-    "title": "【初見50人#耐久配信 】#初見歓迎 🧡月曜日はまったり初見狩り！#歌枠配信 【秋桜しゅお/登龍門BOX】EN OK　 #vtuber #vsinger",
-    "date": "2025-07-14T19:42:36.000+09:00",
-    "status": "live",
-    "thumbnail": "https://i.ytimg.com/vi/E9JwYd__XD0/mqdefault.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/WBGP05KaXeA21IzCbCeM0QHa0v9maVvVUBDZ2DyfTT62F1wGaW3hLOQBy1gCfuQfEnDNgwbsrQ",
-    "url": "https://www.youtube.com/watch?v=E9JwYd__XD0"
   },
   {
     "name": "桜樹美彩",
@@ -393,11 +373,21 @@
     "name": "魔法少女アルト",
     "youtubeid": "UCtRhBS8dlaeBgVcnEZOkAbA",
     "title": "【残業配信】ショート動画をがんばって作っている！一緒に作業しよ！7/16  #shorts #Vtuber ＃アルトの魔法通信 【登龍門BOX /魔法少女アルト 】",
-    "date": "2025-07-16T19:00:59.000+09:00",
-    "status": "upcoming",
+    "date": "2025-07-16T19:05:40.000+09:00",
+    "status": "live",
     "thumbnail": "https://i.ytimg.com/vi/6Q62Hg574Bk/mqdefault_live.jpg",
     "channelIcon": "https://yt3.googleusercontent.com/JwOkUNiR-08GjSI3MS8-Yk6jzONshtmRWZ9tpjOghB10quze7fgbJkhpPTpIfUX00HBACjAR8Q",
     "url": "https://www.youtube.com/watch?v=6Q62Hg574Bk"
+  },
+  {
+    "name": "秋桜しゅお",
+    "youtubeid": "UCPjtwOeRQV5EFkCwUycZsgw",
+    "title": "【初見１００人#耐久配信 】#初見歓迎 🧡一万人後ののんびり初見狩り#歌枠配信 【秋桜しゅお/登龍門BOX】EN OK　 #vtuber #vsinger",
+    "date": "2025-07-16T19:15:11.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/uIdDdoAAW2k/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/WBGP05KaXeA21IzCbCeM0QHa0v9maVvVUBDZ2DyfTT62F1wGaW3hLOQBy1gCfuQfEnDNgwbsrQ",
+    "url": "https://www.youtube.com/watch?v=uIdDdoAAW2k"
   },
   {
     "name": "妖小琳",

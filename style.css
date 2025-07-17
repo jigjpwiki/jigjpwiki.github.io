@@ -223,11 +223,11 @@ header {
 }
 
 .twitch-badge {
-  border-left: #6441A5 5px solid;
+  background-color: #6441A5;
 }
 
 .youtube-badge {
-  border-left: #FF0000 5px solid;
+  background-color: #FF0000;
 }
 
 .live-block:hover .live-badge {

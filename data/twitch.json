@@ -1,14 +1,5 @@
 [
   {
-    "name": "駿河ルガ",
-    "twitchid": "suruga_luga",
-    "title": "【スト6】ランクマとトナメ【Vtuber駿河ルガ】",
-    "date": "2025-07-14T18:00:24.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://yt3.googleusercontent.com/JlY4XEMg9noNa4ShOtky0OwYbKXjnhnje6NQUcwrnJ0UI3C9VQrB-fBNat9QJSUJuuT_Yo1P",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/30e6030677595bb8a58c_suruga_luga_314587901298_1752483614//thumb/thumb0-320x180.jpg"
-  },
-  {
     "name": "銘兎目あう",
     "twitchid": "Metome_Au",
     "title": "【スト６】カスタム参加型：どなたでも大歓迎！！Mケン！ハイマスター目指して頑張るよ🐰🥊",
@@ -205,5 +196,13 @@
     "status": "archive",
     "channelIcon": "https://yt3.googleusercontent.com/VB97J8AMHex_rkfd6hDhfiGhhVvrL-NNkseP2mMYSWh75sxA_oXctmxK5tV4FYgkM17RUAx6GQ",
     "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/447e78b0c1ec776504ab_metome_au_314597103346_1752670047//thumb/thumb0-320x180.jpg"
+  },
+  {
+    "name": "駿河ルガ",
+    "twitchid": "suruga_luga",
+    "title": "【スト6】アルマス豪鬼です【Vtuber駿河ルガ】",
+    "date": "2025-07-17T17:59:49.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_suruga_luga-320x180.jpg"
   }
 ]

@@ -1,15 +1,5 @@
 [
   {
-    "name": "忠犬しず",
-    "youtubeid": "UCPzN3R0x_SciJJ_FP-STpHQ",
-    "title": "【 メイキングクイズ！ 】このマイクラスキンは誰だ！？早押しクイズに挑戦しよう！【 忠犬しず/特撮オタクVTuber 】",
-    "date": "2025-07-15T18:02:40.000+09:00",
-    "status": "archive",
-    "thumbnail": "https://i.ytimg.com/vi/2owOCjYoVWc/mqdefault.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/9dVPxoBbcXIeN4O1N6bYiWu3EHHHeaStY7fQYPZfF3thWIP2Sc9Uc6kg56Aj0UHrg5QqqDtn",
-    "url": "https://www.youtube.com/watch?v=2owOCjYoVWc"
-  },
-  {
     "name": "秋桜しゅお",
     "youtubeid": "UCPjtwOeRQV5EFkCwUycZsgw",
     "title": "【登録者１万人#耐久配信 】#初見歓迎 🧡伝説を一緒に迎えよう！#歌枠配信 【秋桜しゅお/登龍門BOX】EN OK　 #vtuber #vsinger",
@@ -30,16 +20,6 @@
     "url": "https://www.youtube.com/watch?v=qCUwUObTpmI"
   },
   {
-    "name": "宇田わん",
-    "youtubeid": "UCp45rWiRwgYZJUR4bQO-Xgw",
-    "title": "【 妨害 】ちゃんと叩ける？？みんなに負けない「太鼓の達人」妨害【 #宇田わん #新人VTuber 】",
-    "date": "2025-07-15T20:00:08.000+09:00",
-    "status": "live",
-    "thumbnail": "https://i.ytimg.com/vi/zXXYgGF9dpE/mqdefault.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/bcgws2A-h2HRTCoWgcipC2sgJw_9y0O_5jBi_0QEW4DhAqyPZg4_xLkZw3JJBFZ2DzsYNiGx",
-    "url": "https://www.youtube.com/watch?v=zXXYgGF9dpE"
-  },
-  {
     "name": "銘兎目あう",
     "youtubeid": "UCpr-9ssUUgSb0EpDA8bRuTA",
     "title": "【スト６】Mケン！ハイマスター目指して頑張るよ🐰🥊",
@@ -48,16 +28,6 @@
     "thumbnail": "https://i.ytimg.com/vi/e_fjvdGcwTM/mqdefault.jpg",
     "channelIcon": "https://yt3.googleusercontent.com/VB97J8AMHex_rkfd6hDhfiGhhVvrL-NNkseP2mMYSWh75sxA_oXctmxK5tV4FYgkM17RUAx6GQ",
     "url": "https://www.youtube.com/watch?v=e_fjvdGcwTM"
-  },
-  {
-    "name": "駿河ルガ",
-    "youtubeid": "UCij_jFd6ggNIYGm0rHwcNtg",
-    "title": "【スト6】アルマス豪鬼のランクマ【駿河ルガ/登龍門BOX】",
-    "date": "2025-07-15T20:57:20.000+09:00",
-    "status": "live",
-    "thumbnail": "https://i.ytimg.com/vi/S6gLs8PXluU/mqdefault.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/JlY4XEMg9noNa4ShOtky0OwYbKXjnhnje6NQUcwrnJ0UI3C9VQrB-fBNat9QJSUJuuT_Yo1P",
-    "url": "https://www.youtube.com/watch?v=S6gLs8PXluU"
   },
   {
     "name": "鹿鳴りあ",
@@ -373,11 +343,31 @@
     "name": "忠犬しず",
     "youtubeid": "UCPzN3R0x_SciJJ_FP-STpHQ",
     "title": "【 KARAOKE/歌枠 】初見さん歓迎！おしゃべりしつつちょっとウルトラソング歌う！　【 VTuber/忠犬しず  】",
-    "date": "2025-07-18T17:30:00.000+09:00",
-    "status": "upcoming",
+    "date": "2025-07-18T17:30:19.000+09:00",
+    "status": "live",
     "thumbnail": "https://i.ytimg.com/vi/oCqYxm0TmAQ/mqdefault_live.jpg",
     "channelIcon": "https://yt3.googleusercontent.com/9dVPxoBbcXIeN4O1N6bYiWu3EHHHeaStY7fQYPZfF3thWIP2Sc9Uc6kg56Aj0UHrg5QqqDtn",
     "url": "https://www.youtube.com/watch?v=oCqYxm0TmAQ"
+  },
+  {
+    "name": "駿河ルガ",
+    "youtubeid": "UCij_jFd6ggNIYGm0rHwcNtg",
+    "title": "【スト6】アルマス豪鬼のランクマ【駿河ルガ/登龍門BOX】",
+    "date": "2025-07-18T18:00:12.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/3IDUy1haAaU/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/JlY4XEMg9noNa4ShOtky0OwYbKXjnhnje6NQUcwrnJ0UI3C9VQrB-fBNat9QJSUJuuT_Yo1P",
+    "url": "https://www.youtube.com/watch?v=3IDUy1haAaU"
+  },
+  {
+    "name": "宇田わん",
+    "youtubeid": "UCp45rWiRwgYZJUR4bQO-Xgw",
+    "title": "ディズニー行きたああい！Carrying Happiness踊ってみた！#新人vtuber",
+    "date": "2025-07-18T18:00:21.000+09:00",
+    "status": "archive",
+    "thumbnail": "https://i.ytimg.com/vi/FWzq2TlBPgI/mqdefault.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/bcgws2A-h2HRTCoWgcipC2sgJw_9y0O_5jBi_0QEW4DhAqyPZg4_xLkZw3JJBFZ2DzsYNiGx",
+    "url": "https://www.youtube.com/watch?v=FWzq2TlBPgI"
   },
   {
     "name": "忠犬しず",

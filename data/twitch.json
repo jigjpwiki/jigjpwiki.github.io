@@ -1,14 +1,5 @@
 [
   {
-    "name": "駿河ルガ",
-    "twitchid": "suruga_luga",
-    "title": "【スト6】ランクマとトナメ【Vtuber駿河ルガ】",
-    "date": "2025-07-16T18:00:27.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://yt3.googleusercontent.com/JlY4XEMg9noNa4ShOtky0OwYbKXjnhnje6NQUcwrnJ0UI3C9VQrB-fBNat9QJSUJuuT_Yo1P",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/2f6882ddabb1cd0b1699_suruga_luga_314596418929_1752656417//thumb/thumb0-320x180.jpg"
-  },
-  {
     "name": "なかもとおまち",
     "twitchid": "41futon",
     "title": "事務所に加入しました！！なかもとおまち！@ぷろのゔぁ",
@@ -177,5 +168,13 @@
     "date": "2025-07-19T14:03:34.000+09:00",
     "status": "live",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_minato_yu_-320x180.jpg"
+  },
+  {
+    "name": "駿河ルガ",
+    "twitchid": "suruga_luga",
+    "title": "【スト6】アルマス豪鬼です【Vtuber駿河ルガ】",
+    "date": "2025-07-19T17:59:48.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_suruga_luga-320x180.jpg"
   }
 ]

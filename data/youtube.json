@@ -1,25 +1,5 @@
 [
   {
-    "name": "魔法少女アルト",
-    "youtubeid": "UCtRhBS8dlaeBgVcnEZOkAbA",
-    "title": "【神回】魔法少女アルトの100万再生ショート動画まとめ【替え歌】",
-    "date": "2025-07-17T18:01:17.000+09:00",
-    "status": "archive",
-    "thumbnail": "https://i.ytimg.com/vi/oYALFphGuvo/mqdefault.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/JwOkUNiR-08GjSI3MS8-Yk6jzONshtmRWZ9tpjOghB10quze7fgbJkhpPTpIfUX00HBACjAR8Q",
-    "url": "https://www.youtube.com/watch?v=oYALFphGuvo"
-  },
-  {
-    "name": "宇田わん",
-    "youtubeid": "UCp45rWiRwgYZJUR4bQO-Xgw",
-    "title": "頭についてるそれって…？#新人vtuber",
-    "date": "2025-07-17T18:01:20.000+09:00",
-    "status": "archive",
-    "thumbnail": "https://i.ytimg.com/vi/oS1iDu0040I/mqdefault.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/bcgws2A-h2HRTCoWgcipC2sgJw_9y0O_5jBi_0QEW4DhAqyPZg4_xLkZw3JJBFZ2DzsYNiGx",
-    "url": "https://www.youtube.com/watch?v=oS1iDu0040I"
-  },
-  {
     "name": "宇田わん",
     "youtubeid": "UCp45rWiRwgYZJUR4bQO-Xgw",
     "title": "【 漢字でGO/耐久 】指定回数クリア耐久！高評価と初見さんで地獄へ＿＿【 #宇田わん #新人VTuber 】",
@@ -78,16 +58,6 @@
     "thumbnail": "https://i.ytimg.com/vi/Rnu5qiOZEi0/mqdefault.jpg",
     "channelIcon": "https://yt3.googleusercontent.com/kn25wJn77KhPY6MXLYIvYg_VDJk9MDaguKjRFJu2UbLMLSasK_h3Xo4ZaIRM5U7vUbiMQJD-",
     "url": "https://www.youtube.com/watch?v=Rnu5qiOZEi0"
-  },
-  {
-    "name": "駿河ルガ",
-    "youtubeid": "UCij_jFd6ggNIYGm0rHwcNtg",
-    "title": "マリーザ戦で大胆な読みを通すVtuber #shorts #スト6 #ストリートファイター6",
-    "date": "2025-07-18T16:54:24.000+09:00",
-    "status": "archive",
-    "thumbnail": "https://i.ytimg.com/vi/k0PUo1cmACY/mqdefault.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/JlY4XEMg9noNa4ShOtky0OwYbKXjnhnje6NQUcwrnJ0UI3C9VQrB-fBNat9QJSUJuuT_Yo1P",
-    "url": "https://www.youtube.com/watch?v=k0PUo1cmACY"
   },
   {
     "name": "忠犬しず",
@@ -388,6 +358,26 @@
     "thumbnail": "https://i.ytimg.com/vi/Y5_wX--zMFE/mqdefault.jpg",
     "channelIcon": "https://yt3.googleusercontent.com/JlY4XEMg9noNa4ShOtky0OwYbKXjnhnje6NQUcwrnJ0UI3C9VQrB-fBNat9QJSUJuuT_Yo1P",
     "url": "https://www.youtube.com/watch?v=Y5_wX--zMFE"
+  },
+  {
+    "name": "宇田わん",
+    "youtubeid": "UCp45rWiRwgYZJUR4bQO-Xgw",
+    "title": "ワンピース知らなすぎるVTuber#新人vtuber",
+    "date": "2025-07-20T18:00:38.000+09:00",
+    "status": "archive",
+    "thumbnail": "https://i.ytimg.com/vi/Q8zhxPKu8ws/mqdefault.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/bcgws2A-h2HRTCoWgcipC2sgJw_9y0O_5jBi_0QEW4DhAqyPZg4_xLkZw3JJBFZ2DzsYNiGx",
+    "url": "https://www.youtube.com/watch?v=Q8zhxPKu8ws"
+  },
+  {
+    "name": "駿河ルガ",
+    "youtubeid": "UCij_jFd6ggNIYGm0rHwcNtg",
+    "title": "【スト6】アルマス豪鬼のランクマ【駿河ルガ/登龍門BOX】",
+    "date": "2025-07-20T18:11:53.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/-EdGNEgSCsY/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/JlY4XEMg9noNa4ShOtky0OwYbKXjnhnje6NQUcwrnJ0UI3C9VQrB-fBNat9QJSUJuuT_Yo1P",
+    "url": "https://www.youtube.com/watch?v=-EdGNEgSCsY"
   },
   {
     "name": "桜樹美彩",

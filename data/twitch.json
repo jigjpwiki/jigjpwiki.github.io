@@ -1,14 +1,5 @@
 [
   {
-    "name": "しーはむ",
-    "twitchid": "siyham",
-    "title": "大事な配信です🐹ぷろのゔぁに…！",
-    "date": "2025-07-18T20:01:05.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://yt3.googleusercontent.com/y0zP0Uz7HSLx5dv3xo488Suxk8rJQQUC1wXaymjUBIQIwa25WlVu_VmrsT1xAyVD-jgeL7hs",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/a576c55006125e9b52f5_siyham_314604502386_1752836459//thumb/thumb0-320x180.jpg"
-  },
-  {
     "name": "雨宮愛結猫",
     "twitchid": "ayune_amemiya",
     "title": "【参加型】ぜにげゔぁ雀魂部⭐┊#雀魂┊JP/EN┊#Vtuber┊ぷろのゔぁ",
@@ -184,5 +175,13 @@
     "date": "2025-07-21T19:50:28.000+09:00",
     "status": "live",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_41futon-320x180.jpg"
+  },
+  {
+    "name": "銘兎目あう",
+    "twitchid": "Metome_Au",
+    "title": "🔴【スト６】Mケン！ ハイマスター目指して頑張るよ🐰🥊",
+    "date": "2025-07-21T20:00:05.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_Metome_Au-320x180.jpg"
   }
 ]

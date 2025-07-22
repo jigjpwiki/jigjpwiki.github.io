@@ -37,18 +37,20 @@ Promise.all([
   const allData = [...tiktok, ...twitch, ...youtube]
     .sort((a, b) => new Date(a.date) - new Date(b.date));
 
-  const container = document.getElementById("videolist");
-  container.classList.add("videolist-container");
+  // Swiper構造を用意
+  const outer = document.createElement('div');
+  outer.classList.add('swiper', 'videolist-container');
 
-  let lastDate = '';
-  let lastHourRange = -1;
-  let currentUl = null;
-  let dayBlock = null;
+  const container = document.createElement('div');
+  container.id = 'videolist';
+  container.classList.add('swiper-wrapper');
+
+  outer.appendChild(container);
+  document.querySelector('.videoswipe-inner').appendChild(outer); // 適切な親に追加
 
   const today = new Date();
   const todayStr = today.toLocaleDateString('ja-JP', { month: 'numeric', day: 'numeric' });
 
-  // 日付キーでグループ化
   const groupedData = {};
   allData.forEach(item => {
     const dateKey = new Date(item.date).toLocaleDateString('ja-JP', { month: 'numeric', day: 'numeric' });
@@ -56,14 +58,13 @@ Promise.all([
     groupedData[dateKey].push(item);
   });
 
-  // 表示対象の日付（過去3日〜未来3日）を全て出力（中身がなくても）
   for (let offset = -3; offset <= 5; offset++) {
     const targetDate = new Date(today.getFullYear(), today.getMonth(), today.getDate() + offset);
     const dateStr = targetDate.toLocaleDateString('ja-JP', { month: 'numeric', day: 'numeric' });
     const entries = groupedData[dateStr] || [];
 
-    dayBlock = document.createElement("div");
-    dayBlock.classList.add("day-block");
+    const dayBlock = document.createElement("div");
+    dayBlock.classList.add("day-block", "swiper-slide");
     if (dateStr === todayStr) {
       dayBlock.classList.add("today-block");
     }
@@ -74,10 +75,9 @@ Promise.all([
     dateHeading.textContent = `${dateStr}`;
     dateHeadingWrapper.appendChild(dateHeading);
     dayBlock.appendChild(dateHeadingWrapper);
-    container.appendChild(dayBlock);
 
-    lastHourRange = -1;
-    currentUl = null;
+    let lastHourRange = -1;
+    let currentUl = null;
 
     entries
       .sort((a, b) => new Date(a.date) - new Date(b.date))
@@ -107,13 +107,13 @@ Promise.all([
         }
 
         const div = document.createElement("div");
-        div.classList.add("live-wrapper"); // IDを追加
+        div.classList.add("live-wrapper");
 
         div.innerHTML = `
           <a href="${item.url}" target="_blank" class="live-block">
             <div class="formatted-time"><p>${formattedTime}</p></div>
             <div class="live-badge ${item.platform}">
-            <div class="${item.platform}-badge platform-border"></div>
+              <div class="${item.platform}-badge platform-border"></div>
               <div class="live-info">
                 <div class="live-info-inner">
                   <div class="face-icon">
@@ -133,12 +133,12 @@ Promise.all([
         `;
         currentUl.appendChild(div);
       });
+
+    container.appendChild(dayBlock);
   }
+
+  initializeCarousel();
 })
 .catch(error => {
   console.error("データ取得エラー:", error);
-});
-buildDayBlocks().then(() => {
-  // buildDayBlocks() 内で .day-block をすべて挿入し終わったら
-  initializeCarousel();  // script.js で定義しておいた関数
 });

@@ -110,13 +110,12 @@ header {
 }
 
 .videolist-container {
-  display: flex;            /* 横並びにする */
+  display: flex;
   padding-bottom: 50px;
-  overflow-x: auto;         /* 横スクロールを有効化 */
-  scroll-snap-type: x mandatory;    /* （あれば）ScrollSnap で１列ずつ止める */
-  scroll-behavior: smooth;         /* ボタン操作時のアニメーション */
   height: calc(100% - 30px);
 }
+
+
 
 .video-list {
   display: flex;
@@ -129,13 +128,12 @@ header {
 .day-block {
   width: fit-content;
   min-width: 596px;
-  flex: 0 0 auto;           /* 幅を固定 or コンテンツ幅に */
-  scroll-snap-align: start; /* カルーセル時の停止位置 */
-  display: flex;            /* 縦スクロールさせるため */
-  flex-direction: column;   /* アイテムを縦に並べる */
-  overflow-y: auto;         /* 縦スクロールを有効化 */
-  /* 高さは親（main）領域に合わせる or calc() で指定 */
-  height: 100%;
+  flex: 0 0 auto;
+  scroll-snap-align: start;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  height: calc(100vh - 132px); /* 必要に応じて調整 */
   border-right: 1px solid #dedede;
 }
 
@@ -323,7 +321,36 @@ header {
   width: 100%;
   display: flex;
   justify-content: space-between;
+  z-index: 2;
 }
+
+.swipe-button {
+  position: absolute;
+  top: 0px;
+  width: 60px;
+  height: 40px;
+  border-radius: 20px;
+  z-index: 12;
+  background-color: #000;
+  --swiper-theme-color: #000000;
+}
+
+/* 左ボタン */
+.swipe-button.prev {
+  left: 24px;
+}
+
+/* 右ボタン */
+.swipe-button.next {
+  right: 24px;
+}
+
+.swipe-button {
+  .fa-solid {
+    color: #fff;
+  }
+}
+
 
 /* ────────scroll bar──────── */
 
@@ -418,3 +445,4 @@ html::-webkit-scrollbar {
 
 
 }
+

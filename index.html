@@ -2,11 +2,12 @@
 <html lang="ja">
     <head>
         <meta charset="UTF-8">
-        <title>じぐじゅーる｜jig.jp(VTuber事業)非公式配信スケジュール</title>
+        <title>じぐじゅーる｜jig.jp非公式配信スケジュール</title>
 
         <!-- CSSの読み込み -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
         <link rel="stylesheet" href="style.css">
-        
+
         <!-- Google Fontsの読み込み -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,7 +23,7 @@
         <!-- Open Graph Protocol (OGP) メタタグ -->
         <meta property="og:title" content="じぐじゅーる｜jig.jp非公式配信スケジュール" />
         <meta property="og:description" content="じぐじゅーるは、jig.jp非公式Wiki記載ライバーのスケジュールを簡単に見ることができる非公式ツールです。" />
-        <meta property="og:image" content="https://jigjpwiki.github.io/assets/ogp-image.png" />
+        <meta property="og:image" content="https://github.com/jigjpwiki/jigjpwiki.github.io/blob/main/assets/ogp-image.png?raw=true" />
         <meta property="og:url" content="https://jigdule.jp" />
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content="じぐじゅーる" />
@@ -31,7 +32,7 @@
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="じぐじゅーる｜jig.jp非公式配信スケジュール" />
         <meta name="twitter:description" content="じぐじゅーるは、jig.jp非公式Wiki記載ライバーのスケジュールを簡単に見ることができる非公式ツールです。" />
-        <meta name="twitter:image" content="https://jigjpwiki.github.io/assets/ogp-image.png" />
+        <meta name="twitter:image" content="https://github.com/jigjpwiki/jigjpwiki.github.io/blob/main/assets/ogp-image.png?raw=true" />
         <meta name="twitter:site" content="@Jigjpwiki" />
 
         <!-- ページに表示するアイコン (ファビコン) -->
@@ -40,20 +41,12 @@
         <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
         <link rel="manifest" href="/assets/site.webmanifest">
 
+
         <!-- Font Awesomeの読み込み -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
     </head>
     <body>
-        <!-- Google tag (gtag.js) -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-8SBJKHRBRJ"></script>
-        <script>
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-        
-          gtag('config', 'G-8SBJKHRBRJ');
-        </script>
         <header>
             <!-- Windowsユーザーへの注意 -->
             <div id="windows-notice" style="display: none; position: fixed; bottom: 20px; left: 50%; transform: translateX(-50%); background-color: #000; color: #fff; padding: 10px 20px; border-radius: 5px; font-size: 14px; z-index: 1000; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); text-align: center;">
@@ -84,22 +77,24 @@
             <header>
 
             </header>
-            <div class="videocontainer">
+            <div class="videocontainer swiper">
                 <div class="videoswipe-inner">
                     <button class="swipe-button prev" id="prev-button"><i class="fa-solid fa-chevron-left"></i></button>
                     <button class="swipe-button next" id="next-button"><i class="fa-solid fa-chevron-right"></i></button>
                 </div>
-                <div id="videolist"></div>
+                <div id="videolist" class="swiper-wrapper"></div>
             </div>
         </main>
         <footer>
             <!-- バージョン表記(絶対位置) -->
             <div class="version">
-                <span>Version 2.1.5-beta</span>
+                <span>Version 2.2.0-beta</span>
             </div>
         </footer>
-        <script src="comitter.js"></script>
-        <script src="/script.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
+        <script src="comitter.js" defer></script>
+        <script src="script.js" defer></script>
+
         <script>
         if (/Windows/i.test(navigator.userAgent)) {
             document.documentElement.classList.add("windows");

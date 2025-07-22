@@ -1,15 +1,5 @@
 [
   {
-    "name": "宇田わん",
-    "youtubeid": "UCp45rWiRwgYZJUR4bQO-Xgw",
-    "title": "【 耐久歌枠 】初見さん30名まで耐久！コメント待ってるよ～～！！【 #宇田わん #新人VTuber 】",
-    "date": "2025-07-19T19:59:23.000+09:00",
-    "status": "live",
-    "thumbnail": "https://i.ytimg.com/vi/IZWFC0IMMRY/mqdefault.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/bcgws2A-h2HRTCoWgcipC2sgJw_9y0O_5jBi_0QEW4DhAqyPZg4_xLkZw3JJBFZ2DzsYNiGx",
-    "url": "https://www.youtube.com/watch?v=IZWFC0IMMRY"
-  },
-  {
     "name": "忠犬しず",
     "youtubeid": "UCPzN3R0x_SciJJ_FP-STpHQ",
     "title": "【 同時視聴 】ウルトラマンオメガの3話とウルトラマンガイア23～26話を完全初見で見るぞ！【 Vtuber/忠犬しず 】#特撮女子　#特撮オタク",
@@ -168,16 +158,6 @@
     "thumbnail": "https://i.ytimg.com/vi/y9bsbf2Kmqs/mqdefault.jpg",
     "channelIcon": "https://yt3.googleusercontent.com/bcgws2A-h2HRTCoWgcipC2sgJw_9y0O_5jBi_0QEW4DhAqyPZg4_xLkZw3JJBFZ2DzsYNiGx",
     "url": "https://www.youtube.com/watch?v=y9bsbf2Kmqs"
-  },
-  {
-    "name": "カルプ・マーガレット",
-    "youtubeid": "UCAANONySj4hE_-ch6G34MZQ",
-    "title": "襲われてる女の子を助けに行くオネエVTuber#shorts #vtuber #GTA",
-    "date": "2025-07-21T07:00:16.000+09:00",
-    "status": "archive",
-    "thumbnail": "https://i.ytimg.com/vi/84lE2SLhx9U/mqdefault.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/XXH1eOS7_cbzNwQFqJAtIguKNeLGs7-D2Pvf3M0vHlBVdKoYlmTbyMwUv7xjtsv5qM9IodH9",
-    "url": "https://www.youtube.com/watch?v=84lE2SLhx9U"
   },
   {
     "name": "桜樹美彩",
@@ -408,6 +388,26 @@
     "thumbnail": "https://i.ytimg.com/vi/AeOs-JXZTOM/mqdefault_live.jpg",
     "channelIcon": "https://yt3.googleusercontent.com/0pD1c95Y9X0VrhzWtlf2SRPqdkesiuZxC8Hb5Mg9Xv1WWpQaFCmjITTK8-n5HlNsB-yDbAN4CZA",
     "url": "https://www.youtube.com/watch?v=AeOs-JXZTOM"
+  },
+  {
+    "name": "秋桜しゅお",
+    "youtubeid": "UCPjtwOeRQV5EFkCwUycZsgw",
+    "title": "【#歌枠配信 】#初見歓迎 🧡初見さん狩りしながら昭和歌謡縛り歌枠！【秋桜しゅお/登龍門BOX】EN OK　 #vtuber #vsinger #昭和歌謡",
+    "date": "2025-07-22T19:33:21.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/uWAZw8uh9yg/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/WBGP05KaXeA21IzCbCeM0QHa0v9maVvVUBDZ2DyfTT62F1wGaW3hLOQBy1gCfuQfEnDNgwbsrQ",
+    "url": "https://www.youtube.com/watch?v=uWAZw8uh9yg"
+  },
+  {
+    "name": "カルプ・マーガレット",
+    "youtubeid": "UCAANONySj4hE_-ch6G34MZQ",
+    "title": "【#雑談 / 初見さん大歓迎♡ 】カマちゃん節炸裂！？オネエがあんたの悩み吹き飛ばす！！！【 広島弁のオネエVTuber 】",
+    "date": "2025-07-22T21:00:00.000+09:00",
+    "status": "upcoming",
+    "thumbnail": "https://i.ytimg.com/vi/1gH5zYBf-vI/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/XXH1eOS7_cbzNwQFqJAtIguKNeLGs7-D2Pvf3M0vHlBVdKoYlmTbyMwUv7xjtsv5qM9IodH9",
+    "url": "https://www.youtube.com/watch?v=1gH5zYBf-vI"
   },
   {
     "name": "桜樹美彩",

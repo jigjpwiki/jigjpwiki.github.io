@@ -333,6 +333,7 @@ header {
   z-index: 12;
   background-color: #000;
   --swiper-theme-color: #000000;
+  cursor: pointer;
 }
 
 /* 左ボタン */

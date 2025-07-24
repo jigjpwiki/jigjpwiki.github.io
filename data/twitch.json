@@ -226,10 +226,19 @@
   {
     "name": "なかもとおまち",
     "twitchid": "41futon",
-    "title": "なかもとEVOチャレンジ本番！！！8人抜きするぞ！！！",
+    "title": "2先負け終わりランクマ",
     "date": "2025-07-24T20:58:17.000+09:00",
     "status": "live",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_41futon-320x180.jpg"
+  },
+  {
+    "name": "なかもとおまち",
+    "twitchid": "41futon",
+    "title": "なかもとEVOチャレンジ本番！！！8人抜きするぞ！！！",
+    "date": "2025-07-24T20:58:23.000+09:00",
+    "status": "archive",
+    "channelIcon": "https://yt3.googleusercontent.com/h8jNjVckVf08zSV6wdhQ38Fw9OH7kucAprlJsi9w0YdDIL8_Kcv0tHY-1cK8jPK_jRLSJb3t_Q",
+    "thumbnail": "https://vod-secure.twitch.tv/_404/404_processing_320x180.png"
   },
   {
     "name": "真昼ねる",
@@ -269,10 +278,19 @@
   {
     "name": "銘兎目あう",
     "twitchid": "Metome_Au",
-    "title": "【スト６】なかもとEVOチャレンジ VSぷろのゔぁ&星鳳ともりさん【銘兎目あう】",
+    "title": "【スト６】Mケン！めとめあう。",
     "date": "2025-07-24T21:05:39.000+09:00",
     "status": "live",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_Metome_Au-320x180.jpg"
+  },
+  {
+    "name": "銘兎目あう",
+    "twitchid": "Metome_Au",
+    "title": "【スト６】なかもとEVOチャレンジ VSぷろのゔぁ&星鳳ともりさん【銘兎目あう】",
+    "date": "2025-07-24T21:05:45.000+09:00",
+    "status": "archive",
+    "channelIcon": "https://yt3.googleusercontent.com/VB97J8AMHex_rkfd6hDhfiGhhVvrL-NNkseP2mMYSWh75sxA_oXctmxK5tV4FYgkM17RUAx6GQ",
+    "thumbnail": "https://vod-secure.twitch.tv/_404/404_processing_320x180.png"
   },
   {
     "name": "李じゅぴ汰",
@@ -282,5 +300,13 @@
     "status": "archive",
     "channelIcon": "https://yt3.googleusercontent.com/QQqec9A1J7eLk9RrRYD9vvk51BBJzcE1leGkU9n4YkwHqht9gmGT1ktmSlKItQtbuMSGuklAFxM",
     "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/857b1c973e441ccb47ea_lee_jupita_314630245746_1753359010//thumb/thumb0-320x180.jpg"
+  },
+  {
+    "name": "火乃晴るい",
+    "twitchid": "hinoha_rui",
+    "title": "【 #R6SX 】【24日目初心者】ソロランク エメラルド目指して！🔥",
+    "date": "2025-07-24T23:20:28.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_hinoha_rui-320x180.jpg"
   }
 ]

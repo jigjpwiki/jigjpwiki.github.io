@@ -226,9 +226,25 @@
     "name": "李じゅぴ汰",
     "twitchid": "lee_jupita",
     "title": "【スト6】参加型ジェイミー無限募だよ～！夜は企画！！！【ストリートファイター6】",
-    "date": "2025-07-24T16:13:21.000+09:00",
+    "date": "2025-07-24T16:13:15.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lee_jupita-320x180.jpg"
+  },
+  {
+    "name": "なかもとおまち",
+    "twitchid": "41futon",
+    "title": "MCジュリ募集！pass4141 EVOチャレンジいきます！！",
+    "date": "2025-07-24T16:21:12.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_41futon-320x180.jpg"
+  },
+  {
+    "name": "なかもとおまち",
+    "twitchid": "41futon",
+    "title": "EVOチャレンジいきます！！",
+    "date": "2025-07-24T16:21:18.000+09:00",
     "status": "archive",
-    "channelIcon": "https://yt3.googleusercontent.com/QQqec9A1J7eLk9RrRYD9vvk51BBJzcE1leGkU9n4YkwHqht9gmGT1ktmSlKItQtbuMSGuklAFxM",
+    "channelIcon": "https://yt3.googleusercontent.com/h8jNjVckVf08zSV6wdhQ38Fw9OH7kucAprlJsi9w0YdDIL8_Kcv0tHY-1cK8jPK_jRLSJb3t_Q",
     "thumbnail": "https://vod-secure.twitch.tv/_404/404_processing_320x180.png"
   }
 ]

@@ -1,15 +1,5 @@
 [
   {
-    "name": "宇田わん",
-    "youtubeid": "UCp45rWiRwgYZJUR4bQO-Xgw",
-    "title": "頭についてるそれってぇ…？！#新人vtuber",
-    "date": "2025-07-22T18:00:25.000+09:00",
-    "status": "archive",
-    "thumbnail": "https://i.ytimg.com/vi/JP_oHc6al0M/mqdefault.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/bcgws2A-h2HRTCoWgcipC2sgJw_9y0O_5jBi_0QEW4DhAqyPZg4_xLkZw3JJBFZ2DzsYNiGx",
-    "url": "https://www.youtube.com/watch?v=JP_oHc6al0M"
-  },
-  {
     "name": "妖小琳",
     "youtubeid": "UC6eopxuX7lx8GnpkntObt1w",
     "title": "【 #school666  】あらゆる超常現象から逃げろ！！ #登龍門BOX 【妖小琳/Vtuber】",
@@ -98,16 +88,6 @@
     "thumbnail": "https://i.ytimg.com/vi/U2WIbCCgtwQ/mqdefault.jpg",
     "channelIcon": "https://yt3.googleusercontent.com/bcgws2A-h2HRTCoWgcipC2sgJw_9y0O_5jBi_0QEW4DhAqyPZg4_xLkZw3JJBFZ2DzsYNiGx",
     "url": "https://www.youtube.com/watch?v=U2WIbCCgtwQ"
-  },
-  {
-    "name": "秋桜しゅお",
-    "youtubeid": "UCPjtwOeRQV5EFkCwUycZsgw",
-    "title": "【初見150#耐久配信  】#初見歓迎 🧡夏休みだ！初見狩りだ！#歌枠配信 【秋桜しゅお/登龍門BOX】EN OK　 #vtuber #vsinger #昭和歌謡",
-    "date": "2025-07-23T19:29:35.000+09:00",
-    "status": "live",
-    "thumbnail": "https://i.ytimg.com/vi/c43QzL1K3r0/mqdefault.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/WBGP05KaXeA21IzCbCeM0QHa0v9maVvVUBDZ2DyfTT62F1wGaW3hLOQBy1gCfuQfEnDNgwbsrQ",
-    "url": "https://www.youtube.com/watch?v=c43QzL1K3r0"
   },
   {
     "name": "鹿鳴りあ",
@@ -332,12 +312,42 @@
   {
     "name": "魔狩メグ",
     "youtubeid": "UCc-A8oC0aTLd9YLfq-mgQTw",
-    "title": "#3  ⛏Minecraft ﾁﾙ雑談配信┋ #魔狩メグ #ルナスト鯖",
+    "title": "#3  ⛏Minecraft ﾁﾙ雑談配信、A型の人は見ないでください┋ #魔狩メグ #ルナスト鯖",
     "date": "2025-07-25T16:31:34.000+09:00",
     "status": "live",
     "thumbnail": "https://i.ytimg.com/vi/lRTVMttKDY8/mqdefault_live.jpg",
     "channelIcon": "https://yt3.googleusercontent.com/F9pOM4qdqqRlcR-l2Ip7QpokNxCCXxTUMv_kRanXgAOmfHKff5mX9880XqYYEaNFx-kEYpjQ",
     "url": "https://www.youtube.com/watch?v=lRTVMttKDY8"
+  },
+  {
+    "name": "駿河ルガ",
+    "youtubeid": "UCij_jFd6ggNIYGm0rHwcNtg",
+    "title": "【スト6】アルマス豪鬼のランクマ【駿河ルガ/登龍門BOX】",
+    "date": "2025-07-25T18:00:19.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/S-rulyp6LM4/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/JlY4XEMg9noNa4ShOtky0OwYbKXjnhnje6NQUcwrnJ0UI3C9VQrB-fBNat9QJSUJuuT_Yo1P",
+    "url": "https://www.youtube.com/watch?v=S-rulyp6LM4"
+  },
+  {
+    "name": "宇田わん",
+    "youtubeid": "UCp45rWiRwgYZJUR4bQO-Xgw",
+    "title": "鬼滅の推し誰ですか？#新人vtuber",
+    "date": "2025-07-25T18:01:03.000+09:00",
+    "status": "archive",
+    "thumbnail": "https://i.ytimg.com/vi/_6mFmYMHZFY/mqdefault.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/bcgws2A-h2HRTCoWgcipC2sgJw_9y0O_5jBi_0QEW4DhAqyPZg4_xLkZw3JJBFZ2DzsYNiGx",
+    "url": "https://www.youtube.com/watch?v=_6mFmYMHZFY"
+  },
+  {
+    "name": "秋桜しゅお",
+    "youtubeid": "UCPjtwOeRQV5EFkCwUycZsgw",
+    "title": "【昭和の夏の名曲うたってみた】#vtuber #新人vtuber #vsinger #うたってみた #歌ってみた #昭和歌謡カバー #昭和 #昭和のアイドル #昭和レトロ",
+    "date": "2025-07-25T18:12:52.000+09:00",
+    "status": "archive",
+    "thumbnail": "https://i.ytimg.com/vi/s3er18kjKhA/mqdefault.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/WBGP05KaXeA21IzCbCeM0QHa0v9maVvVUBDZ2DyfTT62F1wGaW3hLOQBy1gCfuQfEnDNgwbsrQ",
+    "url": "https://www.youtube.com/watch?v=s3er18kjKhA"
   },
   {
     "name": "桜樹美彩",
@@ -348,6 +358,16 @@
     "thumbnail": "https://i.ytimg.com/vi/b_F4E1kPDyY/mqdefault_live.jpg",
     "channelIcon": "https://yt3.googleusercontent.com/pDP2GuylW0RN1REDScFAlNklbXaPRqTm2mwT2F7dIo8xoYYFPfspsjGH_G3RagwlKVlQbdw95bY",
     "url": "https://www.youtube.com/watch?v=b_F4E1kPDyY"
+  },
+  {
+    "name": "宇田わん",
+    "youtubeid": "UCp45rWiRwgYZJUR4bQO-Xgw",
+    "title": "【 歌枠？ 】コメントスピードMAXで赤ちゃん化！？ばぶ～～～～～【 #宇田わん #新人VTuber 】",
+    "date": "2025-07-25T20:00:00.000+09:00",
+    "status": "upcoming",
+    "thumbnail": "https://i.ytimg.com/vi/XuR6U-mbabY/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/bcgws2A-h2HRTCoWgcipC2sgJw_9y0O_5jBi_0QEW4DhAqyPZg4_xLkZw3JJBFZ2DzsYNiGx",
+    "url": "https://www.youtube.com/watch?v=XuR6U-mbabY"
   },
   {
     "name": "忠犬しず",

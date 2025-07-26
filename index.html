@@ -48,21 +48,6 @@
     </head>
     <body>
         <header>
-            <!-- Windowsユーザーへの注意 -->
-            <div id="windows-notice" style="display: none; position: fixed; bottom: 20px; left: 50%; transform: translateX(-50%); background-color: #000; color: #fff; padding: 10px 20px; border-radius: 5px; font-size: 14px; z-index: 1000; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); text-align: center;">
-                このサイトはMacを基準に設計されているため、Windowsでは一部機能が正常に動作しない場合があります。
-                <br>
-                Shiftキーを押しながらスクロールすることで横スクロールが可能です。
-            </div>
-            <script>
-            const ua = navigator.userAgent;
-
-            // Windows かどうかを判定
-            if (/Windows/i.test(ua)) {
-                document.getElementById('windows-notice').style.display = 'block';
-            }
-            </script>
-            <!-- Windowsユーザーへの注意終了 -->
 
             <div class="header-wrapper">
                 <div class="logo"><img src="assets/logo.png" alt="じぐじゅーる"></div>
@@ -70,7 +55,7 @@
             <div class="header-policy">
                 <a href="/privacy-policy" class="link-underline">プライバシーポリシー</a>
                 <a href="/terms" class="link-underline">利用規約</a>
-                <a href="https://wikiwiki.jp/jigjp/" class="link-underline" target="_blank">jig.jp非公式Wiki</a>
+                <!--<a href="https://wikiwiki.jp/jigjp/" class="link-underline" target="_blank">jig.jp非公式Wiki</a>-->
             </div>
         </header>
         <main>
@@ -88,17 +73,11 @@
         <footer>
             <!-- バージョン表記(絶対位置) -->
             <div class="version">
-                <span>Version 2.2.0-beta</span>
+                <span>Version 2.0.8-beta</span>
             </div>
         </footer>
         <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
         <script src="comitter.js" defer></script>
         <script src="script.js" defer></script>
-
-        <script>
-        if (/Windows/i.test(navigator.userAgent)) {
-            document.documentElement.classList.add("windows");
-        }
-        </script>
     </body>
 </html>

@@ -1,25 +1,5 @@
 [
   {
-    "name": "駿河ルガ",
-    "youtubeid": "UCij_jFd6ggNIYGm0rHwcNtg",
-    "title": "【スト6】アルマス豪鬼のランクマ【駿河ルガ/登龍門BOX】",
-    "date": "2025-07-24T18:00:14.000+09:00",
-    "status": "live",
-    "thumbnail": "https://i.ytimg.com/vi/RzfRzJ1t_5I/mqdefault.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/JlY4XEMg9noNa4ShOtky0OwYbKXjnhnje6NQUcwrnJ0UI3C9VQrB-fBNat9QJSUJuuT_Yo1P",
-    "url": "https://www.youtube.com/watch?v=RzfRzJ1t_5I"
-  },
-  {
-    "name": "宇田わん",
-    "youtubeid": "UCp45rWiRwgYZJUR4bQO-Xgw",
-    "title": "頭についてるそれって…？#新人vtuber",
-    "date": "2025-07-24T18:00:15.000+09:00",
-    "status": "archive",
-    "thumbnail": "https://i.ytimg.com/vi/9wISH4JIQzc/mqdefault.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/bcgws2A-h2HRTCoWgcipC2sgJw_9y0O_5jBi_0QEW4DhAqyPZg4_xLkZw3JJBFZ2DzsYNiGx",
-    "url": "https://www.youtube.com/watch?v=9wISH4JIQzc"
-  },
-  {
     "name": "春原なずな",
     "youtubeid": "UCW-iuU7g3BJnuQ1D3UkqeSA",
     "title": "【 #school666 】💩vs貞子 ※ネタバレ注意【 春原なずな / Vtuber 】  #ゲーム実況 #vtuber",
@@ -478,6 +458,26 @@
     "thumbnail": "https://i.ytimg.com/vi/R_Z4bNiYDYA/mqdefault.jpg",
     "channelIcon": "https://yt3.googleusercontent.com/JlY4XEMg9noNa4ShOtky0OwYbKXjnhnje6NQUcwrnJ0UI3C9VQrB-fBNat9QJSUJuuT_Yo1P",
     "url": "https://www.youtube.com/watch?v=R_Z4bNiYDYA"
+  },
+  {
+    "name": "駿河ルガ",
+    "youtubeid": "UCij_jFd6ggNIYGm0rHwcNtg",
+    "title": "【スト6】アルマス豪鬼のランクマ【駿河ルガ/登龍門BOX】",
+    "date": "2025-07-27T18:00:38.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/mClBLLFCv_c/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/JlY4XEMg9noNa4ShOtky0OwYbKXjnhnje6NQUcwrnJ0UI3C9VQrB-fBNat9QJSUJuuT_Yo1P",
+    "url": "https://www.youtube.com/watch?v=mClBLLFCv_c"
+  },
+  {
+    "name": "宇田わん",
+    "youtubeid": "UCp45rWiRwgYZJUR4bQO-Xgw",
+    "title": "宇田わんとお話しよ？？#新人vtuber",
+    "date": "2025-07-27T18:01:09.000+09:00",
+    "status": "archive",
+    "thumbnail": "https://i.ytimg.com/vi/tA1DaALk1HQ/mqdefault.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/bcgws2A-h2HRTCoWgcipC2sgJw_9y0O_5jBi_0QEW4DhAqyPZg4_xLkZw3JJBFZ2DzsYNiGx",
+    "url": "https://www.youtube.com/watch?v=tA1DaALk1HQ"
   },
   {
     "name": "鹿鳴りあ",

@@ -255,5 +255,30 @@
     "date": "2025-07-28T21:05:49.000+09:00",
     "status": "live",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_ayune_amemiya-320x180.jpg"
+  },
+  {
+    "name": "真昼ねる",
+    "twitchid": "mahiruneru",
+    "title": "【参加◎】夏のエイム肉体改造計画❕負けたら筋トレ(リスナーも)💪🏻【ぷろのゔぁ／真昼ねる】",
+    "date": "2025-07-28T21:30:43.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_mahiruneru-320x180.jpg"
+  },
+  {
+    "name": "魔狩メグ",
+    "twitchid": "magarimeg",
+    "title": "マイクラ初心者の旅、ネザーにいってみたい！#Vtuber",
+    "date": "2025-07-28T22:04:41.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_magarimeg-320x180.jpg"
+  },
+  {
+    "name": "魔狩メグ",
+    "twitchid": "magarimeg",
+    "title": "マイクラ初心者の旅、冒険&作業する！#Vtuber",
+    "date": "2025-07-28T22:04:47.000+09:00",
+    "status": "archive",
+    "channelIcon": "https://yt3.googleusercontent.com/F9pOM4qdqqRlcR-l2Ip7QpokNxCCXxTUMv_kRanXgAOmfHKff5mX9880XqYYEaNFx-kEYpjQ",
+    "thumbnail": "https://vod-secure.twitch.tv/_404/404_processing_320x180.png"
   }
 ]

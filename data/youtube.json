@@ -1,15 +1,5 @@
 [
   {
-    "name": "魔狩メグ",
-    "youtubeid": "UCc-A8oC0aTLd9YLfq-mgQTw",
-    "title": "#3  ⛏Minecraft ﾁﾙ雑談配信、A型の人は見ないでください┋ #魔狩メグ #ルナスト鯖",
-    "date": "2025-07-25T16:31:34.000+09:00",
-    "status": "live",
-    "thumbnail": "https://i.ytimg.com/vi/lRTVMttKDY8/mqdefault.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/F9pOM4qdqqRlcR-l2Ip7QpokNxCCXxTUMv_kRanXgAOmfHKff5mX9880XqYYEaNFx-kEYpjQ",
-    "url": "https://www.youtube.com/watch?v=lRTVMttKDY8"
-  },
-  {
     "name": "駿河ルガ",
     "youtubeid": "UCij_jFd6ggNIYGm0rHwcNtg",
     "title": "【スト6】アルマス豪鬼のランクマ【駿河ルガ/登龍門BOX】",
@@ -68,16 +58,6 @@
     "thumbnail": "https://i.ytimg.com/vi/YgfCS6bJpSo/mqdefault.jpg",
     "channelIcon": "https://yt3.googleusercontent.com/VB97J8AMHex_rkfd6hDhfiGhhVvrL-NNkseP2mMYSWh75sxA_oXctmxK5tV4FYgkM17RUAx6GQ",
     "url": "https://www.youtube.com/watch?v=YgfCS6bJpSo"
-  },
-  {
-    "name": "忠犬しず",
-    "youtubeid": "UCPzN3R0x_SciJJ_FP-STpHQ",
-    "title": "【 同時視聴 】金曜ロードショー同時視聴「ジュラシックパーク」を一緒に見よう！【 忠犬しず/Vtuber 】",
-    "date": "2025-07-25T20:39:53.000+09:00",
-    "status": "live",
-    "thumbnail": "https://i.ytimg.com/vi/Y1vWo2OpZxs/mqdefault.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/9dVPxoBbcXIeN4O1N6bYiWu3EHHHeaStY7fQYPZfF3thWIP2Sc9Uc6kg56Aj0UHrg5QqqDtn",
-    "url": "https://www.youtube.com/watch?v=Y1vWo2OpZxs"
   },
   {
     "name": "橋門エル",
@@ -308,6 +288,16 @@
     "thumbnail": "https://i.ytimg.com/vi/EifmgI14vxU/mqdefault.jpg",
     "channelIcon": "https://yt3.googleusercontent.com/pDP2GuylW0RN1REDScFAlNklbXaPRqTm2mwT2F7dIo8xoYYFPfspsjGH_G3RagwlKVlQbdw95bY",
     "url": "https://www.youtube.com/watch?v=EifmgI14vxU"
+  },
+  {
+    "name": "忠犬しず",
+    "youtubeid": "UCPzN3R0x_SciJJ_FP-STpHQ",
+    "title": "【 同時視聴 】完全初見！特捜戦隊デカレンジャーの17、18話を一緒に見ようぜ！【 忠犬しず/Vtuber 】#特撮オタク　#特撮女子",
+    "date": "2025-07-27T10:30:14.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/WQLQfrPNJCk/mqdefault.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/9dVPxoBbcXIeN4O1N6bYiWu3EHHHeaStY7fQYPZfF3thWIP2Sc9Uc6kg56Aj0UHrg5QqqDtn",
+    "url": "https://www.youtube.com/watch?v=WQLQfrPNJCk"
   },
   {
     "name": "妖小琳",

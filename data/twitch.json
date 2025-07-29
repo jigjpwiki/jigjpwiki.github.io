@@ -219,9 +219,10 @@
     "name": "なかもとおまち",
     "twitchid": "41futon",
     "title": "EVO前ラストかも1700登山？！？！",
-    "date": "2025-07-29T16:16:28.000+09:00",
-    "status": "live",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_41futon-320x180.jpg"
+    "date": "2025-07-29T16:16:34.000+09:00",
+    "status": "archive",
+    "channelIcon": "https://yt3.googleusercontent.com/h8jNjVckVf08zSV6wdhQ38Fw9OH7kucAprlJsi9w0YdDIL8_Kcv0tHY-1cK8jPK_jRLSJb3t_Q",
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/4c0d5f7306c2b38e0500_41futon_314678799603_1753773388//thumb/thumb0-320x180.jpg"
   },
   {
     "name": "駿河ルガ",
@@ -255,5 +256,13 @@
     "date": "2025-07-29T21:19:38.000+09:00",
     "status": "live",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_hinoha_rui-320x180.jpg"
+  },
+  {
+    "name": "水透ユウ",
+    "twitchid": "minato_yu_",
+    "title": "【作業雑談】一緒にアイス食べる？【新人Vtuber】",
+    "date": "2025-07-29T22:35:35.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_minato_yu_-320x180.jpg"
   }
 ]

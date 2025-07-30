@@ -1,35 +1,5 @@
 [
   {
-    "name": "駿河ルガ",
-    "youtubeid": "UCij_jFd6ggNIYGm0rHwcNtg",
-    "title": "【スト6】アルマス豪鬼のランクマ【駿河ルガ/登龍門BOX】",
-    "date": "2025-07-27T18:00:38.000+09:00",
-    "status": "live",
-    "thumbnail": "https://i.ytimg.com/vi/mClBLLFCv_c/mqdefault.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/JlY4XEMg9noNa4ShOtky0OwYbKXjnhnje6NQUcwrnJ0UI3C9VQrB-fBNat9QJSUJuuT_Yo1P",
-    "url": "https://www.youtube.com/watch?v=mClBLLFCv_c"
-  },
-  {
-    "name": "宇田わん",
-    "youtubeid": "UCp45rWiRwgYZJUR4bQO-Xgw",
-    "title": "宇田わんとお話しよ？？#新人vtuber",
-    "date": "2025-07-27T18:01:09.000+09:00",
-    "status": "archive",
-    "thumbnail": "https://i.ytimg.com/vi/tA1DaALk1HQ/mqdefault.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/bcgws2A-h2HRTCoWgcipC2sgJw_9y0O_5jBi_0QEW4DhAqyPZg4_xLkZw3JJBFZ2DzsYNiGx",
-    "url": "https://www.youtube.com/watch?v=tA1DaALk1HQ"
-  },
-  {
-    "name": "雨宮愛結猫",
-    "youtubeid": "UC65woet7p7bhcjHtSbtlWQw",
-    "title": "【シャドバWB】とりあえずこればっかり【初心者】 #vtuber  #shadowverse #シャドバ",
-    "date": "2025-07-27T18:24:41.000+09:00",
-    "status": "archive",
-    "thumbnail": "https://i.ytimg.com/vi/oJ4diTqvGLw/mqdefault.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/kn25wJn77KhPY6MXLYIvYg_VDJk9MDaguKjRFJu2UbLMLSasK_h3Xo4ZaIRM5U7vUbiMQJD-",
-    "url": "https://www.youtube.com/watch?v=oJ4diTqvGLw"
-  },
-  {
     "name": "鹿鳴りあ",
     "youtubeid": "UC6cgUcRa_gGsjqq3Kp6B68w",
     "title": "【#アニフェスsummer2025 】西川アニキ縛り！SEED楽曲、沢山歌います！【#鹿鳴りあ #ろくめみて 】",
@@ -358,6 +328,46 @@
     "thumbnail": "https://i.ytimg.com/vi/RdHU-pxk-M4/mqdefault_live.jpg",
     "channelIcon": "https://yt3.googleusercontent.com/8LfPowqmhNmaEl9OBYSMUbrC7y1UCCpgvvGo2WhFFk4WKuMiigUwuFQFP2PD1krD6nfVHsQ-ew",
     "url": "https://www.youtube.com/watch?v=RdHU-pxk-M4"
+  },
+  {
+    "name": "秋桜しゅお",
+    "youtubeid": "UCPjtwOeRQV5EFkCwUycZsgw",
+    "title": "【音量注意】昭和歌謡を某キャラで歌う#vtuber   #歌ってみた #切り抜き #切り抜き動画 #vsinger #キノピオ #声真似 #うたってみた #新人vtuber",
+    "date": "2025-07-30T18:00:14.000+09:00",
+    "status": "archive",
+    "thumbnail": "https://i.ytimg.com/vi/6GYRoX--tb8/mqdefault.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/WBGP05KaXeA21IzCbCeM0QHa0v9maVvVUBDZ2DyfTT62F1wGaW3hLOQBy1gCfuQfEnDNgwbsrQ",
+    "url": "https://www.youtube.com/watch?v=6GYRoX--tb8"
+  },
+  {
+    "name": "魔法少女アルト",
+    "youtubeid": "UCtRhBS8dlaeBgVcnEZOkAbA",
+    "title": "休日の昼寝って起きれないよね #替え歌 #ネタ #魔法少女アルト #モニタリング #アニメ",
+    "date": "2025-07-30T18:00:24.000+09:00",
+    "status": "archive",
+    "thumbnail": "https://i.ytimg.com/vi/JC-lkMlxSL4/mqdefault.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/JwOkUNiR-08GjSI3MS8-Yk6jzONshtmRWZ9tpjOghB10quze7fgbJkhpPTpIfUX00HBACjAR8Q",
+    "url": "https://www.youtube.com/watch?v=JC-lkMlxSL4"
+  },
+  {
+    "name": "宇田わん",
+    "youtubeid": "UCp45rWiRwgYZJUR4bQO-Xgw",
+    "title": "名前の由来ってなんですか？#新人vtuber",
+    "date": "2025-07-30T18:00:30.000+09:00",
+    "status": "archive",
+    "thumbnail": "https://i.ytimg.com/vi/MSRzcaX6LUw/mqdefault.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/bcgws2A-h2HRTCoWgcipC2sgJw_9y0O_5jBi_0QEW4DhAqyPZg4_xLkZw3JJBFZ2DzsYNiGx",
+    "url": "https://www.youtube.com/watch?v=MSRzcaX6LUw"
+  },
+  {
+    "name": "駿河ルガ",
+    "youtubeid": "UCij_jFd6ggNIYGm0rHwcNtg",
+    "title": "【スト6】アルマス豪鬼のランクマ【駿河ルガ/登龍門BOX】",
+    "date": "2025-07-30T18:02:46.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/ytbXy-fi8NY/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/JlY4XEMg9noNa4ShOtky0OwYbKXjnhnje6NQUcwrnJ0UI3C9VQrB-fBNat9QJSUJuuT_Yo1P",
+    "url": "https://www.youtube.com/watch?v=ytbXy-fi8NY"
   },
   {
     "name": "桜樹美彩",

@@ -250,5 +250,13 @@
     "status": "archive",
     "channelIcon": "https://yt3.googleusercontent.com/pDP2GuylW0RN1REDScFAlNklbXaPRqTm2mwT2F7dIo8xoYYFPfspsjGH_G3RagwlKVlQbdw95bY",
     "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d2nvs31859zcd8/05706a745921320e1b82_sakuragimisa_v_325110001020_1753826412//thumb/thumb0-320x180.jpg"
+  },
+  {
+    "name": "しーはむ",
+    "twitchid": "siyham",
+    "title": "話題の最新ホラー",
+    "date": "2025-07-30T14:08:38.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_siyham-320x180.jpg"
   }
 ]

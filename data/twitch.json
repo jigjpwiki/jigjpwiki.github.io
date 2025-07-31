@@ -1,14 +1,5 @@
 [
   {
-    "name": "駿河ルガ",
-    "twitchid": "suruga_luga",
-    "title": "ゾンビ倒します【Vtuber駿河ルガ】",
-    "date": "2025-07-28T19:03:12.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://yt3.googleusercontent.com/JlY4XEMg9noNa4ShOtky0OwYbKXjnhnje6NQUcwrnJ0UI3C9VQrB-fBNat9QJSUJuuT_Yo1P",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/152d20c136491363431f_suruga_luga_314646525937_1753696982//thumb/thumb0-320x180.jpg"
-  },
-  {
     "name": "銘兎目あう",
     "twitchid": "Metome_Au",
     "title": "🔴【スト６】Mケン！ハイマス目指して頑張るよ🥊🥋🐰",
@@ -255,5 +246,13 @@
     "date": "2025-07-31T18:09:56.000+09:00",
     "status": "live",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lee_jupita-320x180.jpg"
+  },
+  {
+    "name": "桜樹美彩",
+    "twitchid": "sakuragimisa_v",
+    "title": "ガチ初見＆ガチ初心者のよちよち「Shadowverse: Worlds Beyond」🍀すべてを許してください…分からないんです…/ #vtuber #ゲーム実況 #みさライなう #桜樹美彩",
+    "date": "2025-07-31T19:00:31.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sakuragimisa_v-320x180.jpg"
   }
 ]

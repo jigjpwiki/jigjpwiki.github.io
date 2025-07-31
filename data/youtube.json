@@ -1,15 +1,5 @@
 [
   {
-    "name": "カルプ・マーガレット",
-    "youtubeid": "UCAANONySj4hE_-ch6G34MZQ",
-    "title": "【 #apex / コラボ!! 】オネエ×ボクっ狐！？久々のAPEXコラボ～✨【 広島弁のオネエVTuber 】",
-    "date": "2025-07-28T21:01:17.000+09:00",
-    "status": "live",
-    "thumbnail": "https://i.ytimg.com/vi/P3lHDXT0PjA/mqdefault.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/XXH1eOS7_cbzNwQFqJAtIguKNeLGs7-D2Pvf3M0vHlBVdKoYlmTbyMwUv7xjtsv5qM9IodH9",
-    "url": "https://www.youtube.com/watch?v=P3lHDXT0PjA"
-  },
-  {
     "name": "忠犬しず",
     "youtubeid": "UCPzN3R0x_SciJJ_FP-STpHQ",
     "title": "【 同時視聴 】完全初見！仮面ライダーアギトと仮面ライダーWの４５、４６話を見て行くぞ！【 Vtuber/忠犬しず 】#特撮オタク　#特撮女子",
@@ -340,24 +330,44 @@
     "url": "https://www.youtube.com/watch?v=HstXThPmWGc"
   },
   {
+    "name": "宇田わん",
+    "youtubeid": "UCp45rWiRwgYZJUR4bQO-Xgw",
+    "title": "【 実写注意 】さらば個人勢。卒業式＆振り返り！【 #宇田わん #新人VTuber 】",
+    "date": "2025-07-31T19:59:14.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/lrjsPxePeiY/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/bcgws2A-h2HRTCoWgcipC2sgJw_9y0O_5jBi_0QEW4DhAqyPZg4_xLkZw3JJBFZ2DzsYNiGx",
+    "url": "https://www.youtube.com/watch?v=lrjsPxePeiY"
+  },
+  {
+    "name": "桜樹美彩",
+    "youtubeid": "UCTwKpTFX1aAXD0xpBqYqTdg",
+    "title": "危ない薬を作ってると思われ、爆笑する桜樹美彩💊【 雑談 / 切り抜き 】 #カマちゃん #カルプマーガレット #vtuber #新人vtuber",
+    "date": "2025-07-31T20:00:14.000+09:00",
+    "status": "archive",
+    "thumbnail": "https://i.ytimg.com/vi/8KIKHfoLrvc/mqdefault.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/pDP2GuylW0RN1REDScFAlNklbXaPRqTm2mwT2F7dIo8xoYYFPfspsjGH_G3RagwlKVlQbdw95bY",
+    "url": "https://www.youtube.com/watch?v=8KIKHfoLrvc"
+  },
+  {
     "name": "秋桜しゅお",
     "youtubeid": "UCPjtwOeRQV5EFkCwUycZsgw",
     "title": "【#雑談配信 】#初見歓迎！しゅおの雑談！7月最終日だ！🧡【秋桜しゅお/登龍門BOX】#新人vtuber",
-    "date": "2025-07-31T20:00:00.000+09:00",
-    "status": "upcoming",
+    "date": "2025-07-31T20:04:58.000+09:00",
+    "status": "live",
     "thumbnail": "https://i.ytimg.com/vi/nj7URf2W7sE/mqdefault_live.jpg",
     "channelIcon": "https://yt3.googleusercontent.com/WBGP05KaXeA21IzCbCeM0QHa0v9maVvVUBDZ2DyfTT62F1wGaW3hLOQBy1gCfuQfEnDNgwbsrQ",
     "url": "https://www.youtube.com/watch?v=nj7URf2W7sE"
   },
   {
-    "name": "宇田わん",
-    "youtubeid": "UCp45rWiRwgYZJUR4bQO-Xgw",
-    "title": "【 実写注意 】さらば個人勢。卒業式＆振り返り！【 #宇田わん #新人VTuber 】",
-    "date": "2025-07-31T20:00:00.000+09:00",
+    "name": "カルプ・マーガレット",
+    "youtubeid": "UCAANONySj4hE_-ch6G34MZQ",
+    "title": "【#雑談 / 初見さん大歓迎♡ 】7月最後の雑談💕8月は忙しいわよ...【 広島弁のオネエVTuber 】",
+    "date": "2025-07-31T21:00:00.000+09:00",
     "status": "upcoming",
-    "thumbnail": "https://i.ytimg.com/vi/lrjsPxePeiY/mqdefault_live.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/bcgws2A-h2HRTCoWgcipC2sgJw_9y0O_5jBi_0QEW4DhAqyPZg4_xLkZw3JJBFZ2DzsYNiGx",
-    "url": "https://www.youtube.com/watch?v=lrjsPxePeiY"
+    "thumbnail": "https://i.ytimg.com/vi/BZ3_F2DYHaA/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/XXH1eOS7_cbzNwQFqJAtIguKNeLGs7-D2Pvf3M0vHlBVdKoYlmTbyMwUv7xjtsv5qM9IodH9",
+    "url": "https://www.youtube.com/watch?v=BZ3_F2DYHaA"
   },
   {
     "name": "妖小琳",
@@ -368,26 +378,6 @@
     "thumbnail": "https://i.ytimg.com/vi/deL5-Mwwag4/mqdefault_live.jpg",
     "channelIcon": "https://yt3.googleusercontent.com/Ji8DJgyzWKUbbeWlYgFfsCZtyiGZ-zM597otZBcFnIoEVIw7284GbNbBQcALgEKwqvk8OXNZLA",
     "url": "https://www.youtube.com/watch?v=deL5-Mwwag4"
-  },
-  {
-    "name": "忠犬しず",
-    "youtubeid": "UCPzN3R0x_SciJJ_FP-STpHQ",
-    "title": "【 同時視聴 】完全初見！機動警察パトレイバー ON TELEVISIONの9、10話と戦隊レッド 異世界で冒険者になるの11、12話を見るぞ！【 忠犬しず/Vtuber 】#特撮オタク　#特撮女子",
-    "date": "2025-07-31T21:00:00.000+09:00",
-    "status": "upcoming",
-    "thumbnail": "https://i.ytimg.com/vi/cMnmaBkexHo/mqdefault_live.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/9dVPxoBbcXIeN4O1N6bYiWu3EHHHeaStY7fQYPZfF3thWIP2Sc9Uc6kg56Aj0UHrg5QqqDtn",
-    "url": "https://www.youtube.com/watch?v=cMnmaBkexHo"
-  },
-  {
-    "name": "桜樹美彩",
-    "youtubeid": "UCTwKpTFX1aAXD0xpBqYqTdg",
-    "title": "【 朝活 / ニュース 】8月が始まります.ᐟ.ᐟ🐙⛱AM7:00～8:00『ちょこっと』朝活ニュース🍀初見＆ROM勢大歓迎🐥 #vtuber #みさライなう #桜樹美彩 #新人vtuber",
-    "date": "2025-08-01T07:00:00.000+09:00",
-    "status": "upcoming",
-    "thumbnail": "https://i.ytimg.com/vi/oBdMeuzxo3I/mqdefault_live.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/pDP2GuylW0RN1REDScFAlNklbXaPRqTm2mwT2F7dIo8xoYYFPfspsjGH_G3RagwlKVlQbdw95bY",
-    "url": "https://www.youtube.com/watch?v=oBdMeuzxo3I"
   },
   {
     "name": "カルプ・マーガレット",

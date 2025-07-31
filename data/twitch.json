@@ -200,7 +200,7 @@
   {
     "name": "火乃晴るい",
     "twitchid": "hinoha_rui",
-    "title": "【 #R6SX 】【30日目初心者】今日もエメラルド目指してソロランク！",
+    "title": "【 #R6SX 】🔴!Drops🔴【30日目初心者】今日もエメラルド目指してソロランク！",
     "date": "2025-07-31T16:45:17.000+09:00",
     "status": "live",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_hinoha_rui-320x180.jpg"
@@ -213,5 +213,13 @@
     "status": "archive",
     "channelIcon": "https://yt3.googleusercontent.com/8vDFqOVNprKqFE0o7EecXyQleBXIibeJZpXpSgjm5msh4Yd0S8hTsbmYZyOBXa3bUEgBJHZt1w",
     "thumbnail": "https://vod-secure.twitch.tv/_404/404_processing_320x180.png"
+  },
+  {
+    "name": "なかもとおまち",
+    "twitchid": "41futon",
+    "title": "ラスベガスからこんにちは",
+    "date": "2025-07-31T17:09:11.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_41futon-320x180.jpg"
   }
 ]

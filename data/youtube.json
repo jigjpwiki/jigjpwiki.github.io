@@ -1,35 +1,5 @@
 [
   {
-    "name": "忠犬しず",
-    "youtubeid": "UCPzN3R0x_SciJJ_FP-STpHQ",
-    "title": "【 切り抜き 】ウルトラマン初心者でも楽しめるおすすめ作品！",
-    "date": "2025-07-29T17:30:19.000+09:00",
-    "status": "archive",
-    "thumbnail": "https://i.ytimg.com/vi/dMVZSsOdaBY/mqdefault.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/9dVPxoBbcXIeN4O1N6bYiWu3EHHHeaStY7fQYPZfF3thWIP2Sc9Uc6kg56Aj0UHrg5QqqDtn",
-    "url": "https://www.youtube.com/watch?v=dMVZSsOdaBY"
-  },
-  {
-    "name": "駿河ルガ",
-    "youtubeid": "UCij_jFd6ggNIYGm0rHwcNtg",
-    "title": "【スト6】アルマス豪鬼のランクマ【駿河ルガ/登龍門BOX】",
-    "date": "2025-07-29T18:00:38.000+09:00",
-    "status": "live",
-    "thumbnail": "https://i.ytimg.com/vi/9pw3BS71Kks/mqdefault.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/JlY4XEMg9noNa4ShOtky0OwYbKXjnhnje6NQUcwrnJ0UI3C9VQrB-fBNat9QJSUJuuT_Yo1P",
-    "url": "https://www.youtube.com/watch?v=9pw3BS71Kks"
-  },
-  {
-    "name": "宇田わん",
-    "youtubeid": "UCp45rWiRwgYZJUR4bQO-Xgw",
-    "title": "VALOしてたら柱いた#新人vtuber #valorant",
-    "date": "2025-07-29T18:01:03.000+09:00",
-    "status": "archive",
-    "thumbnail": "https://i.ytimg.com/vi/fiKe-p7ybo4/mqdefault.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/bcgws2A-h2HRTCoWgcipC2sgJw_9y0O_5jBi_0QEW4DhAqyPZg4_xLkZw3JJBFZ2DzsYNiGx",
-    "url": "https://www.youtube.com/watch?v=fiKe-p7ybo4"
-  },
-  {
     "name": "魔狩メグ",
     "youtubeid": "UCc-A8oC0aTLd9YLfq-mgQTw",
     "title": "みんなの好きな歌謡曲教えて🫴 #vtuber #魔狩メグ",
@@ -315,7 +285,7 @@
     "title": "【 ゆる作業 】やらんよりマシ！みんなでゆるくおしゃべりしながら作業をする枠　【 忠犬しず/VTuber 】",
     "date": "2025-08-01T13:25:37.000+09:00",
     "status": "live",
-    "thumbnail": "https://i.ytimg.com/vi/DbTVb_tKrTU/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/DbTVb_tKrTU/mqdefault.jpg",
     "channelIcon": "https://yt3.googleusercontent.com/9dVPxoBbcXIeN4O1N6bYiWu3EHHHeaStY7fQYPZfF3thWIP2Sc9Uc6kg56Aj0UHrg5QqqDtn",
     "url": "https://www.youtube.com/watch?v=DbTVb_tKrTU"
   },
@@ -330,14 +300,24 @@
     "url": "https://www.youtube.com/watch?v=hNiFsRKfJZY"
   },
   {
-    "name": "カルプ・マーガレット",
-    "youtubeid": "UCAANONySj4hE_-ch6G34MZQ",
-    "title": "【#VTuber雪山大戦】合法の男狩りよ～💕『Project Winter』企画カマちゃん視点！【カルプ・マーガレット/ #ProjectWinter】",
-    "date": "2025-08-01T20:00:00.000+09:00",
-    "status": "upcoming",
-    "thumbnail": "https://i.ytimg.com/vi/8PXF7x21Jv8/mqdefault_live.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/XXH1eOS7_cbzNwQFqJAtIguKNeLGs7-D2Pvf3M0vHlBVdKoYlmTbyMwUv7xjtsv5qM9IodH9",
-    "url": "https://www.youtube.com/watch?v=8PXF7x21Jv8"
+    "name": "宇田わん",
+    "youtubeid": "UCp45rWiRwgYZJUR4bQO-Xgw",
+    "title": "VTuberは外に出ません！！#新人vtuber",
+    "date": "2025-08-01T18:00:49.000+09:00",
+    "status": "archive",
+    "thumbnail": "https://i.ytimg.com/vi/XbPf4EoN_0M/mqdefault.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/bcgws2A-h2HRTCoWgcipC2sgJw_9y0O_5jBi_0QEW4DhAqyPZg4_xLkZw3JJBFZ2DzsYNiGx",
+    "url": "https://www.youtube.com/watch?v=XbPf4EoN_0M"
+  },
+  {
+    "name": "忠犬しず",
+    "youtubeid": "UCPzN3R0x_SciJJ_FP-STpHQ",
+    "title": "【 イラストメイキング 】元プロゲームグラフィッカーがウルトラマンガイア描いてみた！",
+    "date": "2025-08-01T18:01:08.000+09:00",
+    "status": "archive",
+    "thumbnail": "https://i.ytimg.com/vi/hOvsne5sZeA/mqdefault.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/9dVPxoBbcXIeN4O1N6bYiWu3EHHHeaStY7fQYPZfF3thWIP2Sc9Uc6kg56Aj0UHrg5QqqDtn",
+    "url": "https://www.youtube.com/watch?v=hOvsne5sZeA"
   },
   {
     "name": "忠犬しず",

@@ -263,10 +263,19 @@
   {
     "name": "銘兎目あう",
     "twitchid": "Metome_Au",
-    "title": "🔴【スト６】EVOミラー配信！みんなで応援しよう♪",
+    "title": "🔴【スト６】EVOミラー配信！みんなで応援しよう♪※許諾済み",
     "date": "2025-08-02T01:36:11.000+09:00",
     "status": "live",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_Metome_Au-320x180.jpg"
+  },
+  {
+    "name": "銘兎目あう",
+    "twitchid": "Metome_Au",
+    "title": "🔴【スト６】EVOミラー配信！みんなで応援しよう♪",
+    "date": "2025-08-02T01:36:17.000+09:00",
+    "status": "archive",
+    "channelIcon": "https://yt3.googleusercontent.com/VB97J8AMHex_rkfd6hDhfiGhhVvrL-NNkseP2mMYSWh75sxA_oXctmxK5tV4FYgkM17RUAx6GQ",
+    "thumbnail": "https://vod-secure.twitch.tv/_404/404_processing_320x180.png"
   },
   {
     "name": "なかもとおまち",
@@ -298,9 +307,10 @@
     "name": "なかもとおまち",
     "twitchid": "41futon",
     "title": "試合はじまる！！！",
-    "date": "2025-08-02T08:52:17.000+09:00",
-    "status": "live",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_41futon-320x180.jpg"
+    "date": "2025-08-02T08:52:23.000+09:00",
+    "status": "archive",
+    "channelIcon": "https://yt3.googleusercontent.com/h8jNjVckVf08zSV6wdhQ38Fw9OH7kucAprlJsi9w0YdDIL8_Kcv0tHY-1cK8jPK_jRLSJb3t_Q",
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d2nvs31859zcd8/988a4fcc43c77edf8d9e_41futon_325246902780_1754092337//thumb/thumb0-320x180.jpg"
   },
   {
     "name": "桜樹美彩",

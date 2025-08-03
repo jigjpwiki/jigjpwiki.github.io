@@ -1,14 +1,5 @@
 [
   {
-    "name": "銘兎目あう",
-    "twitchid": "Metome_Au",
-    "title": "🔴【スト６】Mケン！ハイマス目指してMRあげるぞぉ！頑張るよ🥊🥋🐰",
-    "date": "2025-07-31T17:41:53.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://yt3.googleusercontent.com/VB97J8AMHex_rkfd6hDhfiGhhVvrL-NNkseP2mMYSWh75sxA_oXctmxK5tV4FYgkM17RUAx6GQ",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/d7ce1f252a837dbf261d_metome_au_314657333489_1753951307//thumb/thumb0-320x180.jpg"
-  },
-  {
     "name": "駿河ルガ",
     "twitchid": "suruga_luga",
     "title": "【スト6】レジェいきます【Vtuber駿河ルガ】",
@@ -334,9 +325,18 @@
   {
     "name": "水透ユウ",
     "twitchid": "minato_yu_",
-    "title": "【限定Drops】元CSエンジョイ勢のよく喋る大人のお姉さん、急遽初のシージカップに誘われるの巻【R6SX】【新人Vtuber】",
+    "title": "元CSエンジョイ勢のよく喋る大人のお姉さん、急遽初のシージカップに誘われるの巻【R6SX】【新人Vtuber】",
     "date": "2025-08-03T17:28:18.000+09:00",
     "status": "live",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_minato_yu_-320x180.jpg"
+  },
+  {
+    "name": "水透ユウ",
+    "twitchid": "minato_yu_",
+    "title": "【限定Drops】元CSエンジョイ勢のよく喋る大人のお姉さん、急遽初のシージカップに誘われるの巻【R6SX】【新人Vtuber】",
+    "date": "2025-08-03T17:28:24.000+09:00",
+    "status": "archive",
+    "channelIcon": "https://yt3.googleusercontent.com/eVD8Ygm7KVyh3dvWnyebfYlbYpD13ZYQ-Bos8WdR5LDE61A3svHVHCLEY-rM3IQgw9O4uvdd",
+    "thumbnail": "https://vod-secure.twitch.tv/_404/404_processing_320x180.png"
   }
 ]

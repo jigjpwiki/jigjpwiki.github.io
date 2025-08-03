@@ -1,15 +1,5 @@
 [
   {
-    "name": "宇田わん",
-    "youtubeid": "UCp45rWiRwgYZJUR4bQO-Xgw",
-    "title": "個人勢のままでいてほしかったな…#新人vtuber",
-    "date": "2025-07-31T18:00:38.000+09:00",
-    "status": "archive",
-    "thumbnail": "https://i.ytimg.com/vi/R7CCyoECmbY/mqdefault.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/bcgws2A-h2HRTCoWgcipC2sgJw_9y0O_5jBi_0QEW4DhAqyPZg4_xLkZw3JJBFZ2DzsYNiGx",
-    "url": "https://www.youtube.com/watch?v=R7CCyoECmbY"
-  },
-  {
     "name": "春原なずな",
     "youtubeid": "UCW-iuU7g3BJnuQ1D3UkqeSA",
     "title": "【 #school666 】ホラーゲーム苦手です ※ネタバレ注意【 春原なずな / Vtuber 】  #ゲーム実況 #vtuber",
@@ -370,16 +360,6 @@
     "url": "https://www.youtube.com/watch?v=GE2zsSVcleo"
   },
   {
-    "name": "忠犬しず",
-    "youtubeid": "UCPzN3R0x_SciJJ_FP-STpHQ",
-    "title": "【 ニチアサ同時視聴 】仮面ライダーガヴ46話とナンバーワン戦隊ゴジュウジャー24話とキミとアイドルプリキュア♪26話を一緒に見よう！【 忠犬しず/Vtuber 】#特撮オタク　#特撮女子",
-    "date": "2025-08-03T08:10:21.000+09:00",
-    "status": "live",
-    "thumbnail": "https://i.ytimg.com/vi/23gMEu9GuuM/mqdefault_live.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/9dVPxoBbcXIeN4O1N6bYiWu3EHHHeaStY7fQYPZfF3thWIP2Sc9Uc6kg56Aj0UHrg5QqqDtn",
-    "url": "https://www.youtube.com/watch?v=23gMEu9GuuM"
-  },
-  {
     "name": "妖小琳",
     "youtubeid": "UC6eopxuX7lx8GnpkntObt1w",
     "title": "【 同時視聴 】「カルト」を見るぞ！【妖小琳/Vtuber】",
@@ -408,6 +388,26 @@
     "thumbnail": "https://i.ytimg.com/vi/lc3vQmYsfTs/mqdefault_live.jpg",
     "channelIcon": "https://yt3.googleusercontent.com/WBGP05KaXeA21IzCbCeM0QHa0v9maVvVUBDZ2DyfTT62F1wGaW3hLOQBy1gCfuQfEnDNgwbsrQ",
     "url": "https://www.youtube.com/watch?v=lc3vQmYsfTs"
+  },
+  {
+    "name": "宇田わん",
+    "youtubeid": "UCp45rWiRwgYZJUR4bQO-Xgw",
+    "title": "【 参加型 】線香花火バトルで負けたら即終了！？【 #宇田わん #新人VTuber 】",
+    "date": "2025-08-03T16:59:19.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/6Oiui8z09K8/mqdefault.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/bcgws2A-h2HRTCoWgcipC2sgJw_9y0O_5jBi_0QEW4DhAqyPZg4_xLkZw3JJBFZ2DzsYNiGx",
+    "url": "https://www.youtube.com/watch?v=6Oiui8z09K8"
+  },
+  {
+    "name": "忠犬しず",
+    "youtubeid": "UCPzN3R0x_SciJJ_FP-STpHQ",
+    "title": "【 東映特撮夏映画レビュー】仮面ライダーガヴ お菓子の家の侵略者とナンバーワン戦隊ゴジュウジャー 復活のテガソードを見て大号泣してきたので感想を語る【 忠犬しず 】#特撮オタク　#特撮女子",
+    "date": "2025-08-03T21:00:00.000+09:00",
+    "status": "upcoming",
+    "thumbnail": "https://i.ytimg.com/vi/IzugS200FwQ/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/9dVPxoBbcXIeN4O1N6bYiWu3EHHHeaStY7fQYPZfF3thWIP2Sc9Uc6kg56Aj0UHrg5QqqDtn",
+    "url": "https://www.youtube.com/watch?v=IzugS200FwQ"
   },
   {
     "name": "桜樹美彩",

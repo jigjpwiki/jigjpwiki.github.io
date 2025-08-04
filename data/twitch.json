@@ -280,19 +280,11 @@
   {
     "name": "銘兎目あう",
     "twitchid": "Metome_Au",
-    "title": "【スト６】Mケン！新ACTハイマス目指す！🥊🥋",
-    "date": "2025-08-04T19:58:28.000+09:00",
-    "status": "live",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_Metome_Au-320x180.jpg"
-  },
-  {
-    "name": "銘兎目あう",
-    "twitchid": "Metome_Au",
     "title": "🔴【スト６】EVOミラー配信！最終日♪【許諾済み】",
     "date": "2025-08-04T19:58:34.000+09:00",
     "status": "archive",
     "channelIcon": "https://yt3.googleusercontent.com/VB97J8AMHex_rkfd6hDhfiGhhVvrL-NNkseP2mMYSWh75sxA_oXctmxK5tV4FYgkM17RUAx6GQ",
-    "thumbnail": "https://vod-secure.twitch.tv/_404/404_processing_320x180.png"
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/dcd2b09f3002cfed1dbf_metome_au_314672826482_1754305108//thumb/thumb0-320x180.jpg"
   },
   {
     "name": "火乃晴るい",
@@ -328,5 +320,13 @@
     "status": "archive",
     "channelIcon": "https://yt3.googleusercontent.com/h8jNjVckVf08zSV6wdhQ38Fw9OH7kucAprlJsi9w0YdDIL8_Kcv0tHY-1cK8jPK_jRLSJb3t_Q",
     "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d2nvs31859zcd8/ad57f3bffab06116c949_41futon_325351451004_1754311679//thumb/thumb0-320x180.jpg"
+  },
+  {
+    "name": "真昼ねる",
+    "twitchid": "mahiruneru",
+    "title": "【R6SX】プラチナいくど！負けたら筋トレ💪🏻【ぷろのゔぁ／真昼ねる】",
+    "date": "2025-08-05T01:00:43.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_mahiruneru-320x180.jpg"
   }
 ]

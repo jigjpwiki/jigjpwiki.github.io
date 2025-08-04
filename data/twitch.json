@@ -1,41 +1,5 @@
 [
   {
-    "name": "雨宮愛結猫",
-    "twitchid": "ayune_amemiya",
-    "title": "FANBOX支援者3名増加耐久.ᐟ.ᐟ┊#PEAK┊JP/EN┊#Vtuber┊ぷろのゔぁ",
-    "date": "2025-08-01T22:36:22.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://yt3.googleusercontent.com/kn25wJn77KhPY6MXLYIvYg_VDJk9MDaguKjRFJu2UbLMLSasK_h3Xo4ZaIRM5U7vUbiMQJD-",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/6f682f5622fa55916de5_ayune_amemiya_314691523955_1754055376//thumb/thumb0-320x180.jpg"
-  },
-  {
-    "name": "真昼ねる",
-    "twitchid": "mahiruneru",
-    "title": "【FANBOX3人耐久】ぜにげゔぁでてっぺん目指します☝🏻 w/ @ayune_amemiya @minato_yu_ @hinoha_rui 【ぷろのゔぁ／真昼ねる】",
-    "date": "2025-08-01T22:38:51.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://yt3.googleusercontent.com/Cu6AMAZAEC_DTANKoaloA_4iLCuEUQ8BiAwyHGuOUG9GtoIw6s7mXCv1-49LV1IgODYZfGowzQ",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/040b9ab0d5995d546488_mahiruneru_314691535475_1754055525//thumb/thumb0-320x180.jpg"
-  },
-  {
-    "name": "火乃晴るい",
-    "twitchid": "hinoha_rui",
-    "title": "【 #PEAK 】ぜにげゔぁ耐久コラボ！FANBOX ３人増えるまで耐久！詳細はピン止め📍",
-    "date": "2025-08-01T22:39:02.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://yt3.googleusercontent.com/8vDFqOVNprKqFE0o7EecXyQleBXIibeJZpXpSgjm5msh4Yd0S8hTsbmYZyOBXa3bUEgBJHZt1w",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/273ae420b2d4a4426a9e_hinoha_rui_314661860594_1754055536//thumb/thumb0-320x180.jpg"
-  },
-  {
-    "name": "水透ユウ",
-    "twitchid": "minato_yu_",
-    "title": "【耐久！】てっぺんいけるの？こちら全員初心者！【ぜにげゔぁ】【PEAK】【新人Vtuber】",
-    "date": "2025-08-01T22:39:03.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://yt3.googleusercontent.com/eVD8Ygm7KVyh3dvWnyebfYlbYpD13ZYQ-Bos8WdR5LDE61A3svHVHCLEY-rM3IQgw9O4uvdd",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/c0a0c5f11064fc8016d2_minato_yu__314661860722_1754055537//thumb/thumb0-320x180.jpg"
-  },
-  {
     "name": "李じゅぴ汰",
     "twitchid": "lee_jupita",
     "title": "【スト6】インパクト返し、27Fめに押してたことが発覚した女ｗ【ストリートファイトター6】Mキンバリー",
@@ -290,10 +254,19 @@
   {
     "name": "駿河ルガ",
     "twitchid": "suruga_luga",
-    "title": "【スト6】豪鬼卒業式【Vtuber駿河ルガ】",
+    "title": "学校であった怖い話【Vtuber駿河ルガ】",
     "date": "2025-08-04T17:13:42.000+09:00",
     "status": "live",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_suruga_luga-320x180.jpg"
+  },
+  {
+    "name": "駿河ルガ",
+    "twitchid": "suruga_luga",
+    "title": "【スト6】豪鬼卒業式【Vtuber駿河ルガ】",
+    "date": "2025-08-04T17:13:52.000+09:00",
+    "status": "archive",
+    "channelIcon": "https://yt3.googleusercontent.com/JlY4XEMg9noNa4ShOtky0OwYbKXjnhnje6NQUcwrnJ0UI3C9VQrB-fBNat9QJSUJuuT_Yo1P",
+    "thumbnail": "https://vod-secure.twitch.tv/_404/404_processing_320x180.png"
   },
   {
     "name": "なかもとおまち",

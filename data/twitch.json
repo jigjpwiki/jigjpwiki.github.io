@@ -1,14 +1,5 @@
 [
   {
-    "name": "しーはむ",
-    "twitchid": "siyham",
-    "title": "ヨードルと生きていく",
-    "date": "2025-08-01T12:22:27.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://yt3.googleusercontent.com/y0zP0Uz7HSLx5dv3xo488Suxk8rJQQUC1wXaymjUBIQIwa25WlVu_VmrsT1xAyVD-jgeL7hs",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/0ac642cd431a9d91aa84_siyham_314689504243_1754018541//thumb/thumb0-320x180.jpg"
-  },
-  {
     "name": "真昼ねる",
     "twitchid": "mahiruneru",
     "title": "【夏休み健康化計画Day3】負けたら筋トレ💪🏻ゴールド目指して！【ぷろのゔぁ／真昼ねる】",
@@ -298,9 +289,26 @@
   {
     "name": "銘兎目あう",
     "twitchid": "Metome_Au",
-    "title": "🔴【スト６】Mケン！新ACTハイマス目指す！🥊🔴【スト６】EVOミラー配信！最終日♪【許諾済み】",
+    "title": "🔴【スト６】EVOミラー配信！最終日♪【許諾済み】",
     "date": "2025-08-04T11:57:42.000+09:00",
     "status": "live",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_Metome_Au-320x180.jpg"
+  },
+  {
+    "name": "銘兎目あう",
+    "twitchid": "Metome_Au",
+    "title": "🔴【スト６】Mケン！新ACTハイマス目指す！🥊🔴【スト６】EVOミラー配信！最終日♪【許諾済み】",
+    "date": "2025-08-04T11:57:48.000+09:00",
+    "status": "archive",
+    "channelIcon": "https://yt3.googleusercontent.com/VB97J8AMHex_rkfd6hDhfiGhhVvrL-NNkseP2mMYSWh75sxA_oXctmxK5tV4FYgkM17RUAx6GQ",
+    "thumbnail": "https://vod-secure.twitch.tv/_404/404_processing_320x180.png"
+  },
+  {
+    "name": "雨宮愛結猫",
+    "twitchid": "ayune_amemiya",
+    "title": "ぽれが夏休みのキッズだ💖🎀🐈┊#LeagueOfLegends┊JP/EN┊#Vtuber┊ぷろのゔぁ",
+    "date": "2025-08-04T12:53:53.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_ayune_amemiya-320x180.jpg"
   }
 ]

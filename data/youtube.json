@@ -1,15 +1,5 @@
 [
   {
-    "name": "李じゅぴ汰",
-    "youtubeid": "UCHsAAyHJhPXuLS6N3Kig6PQ",
-    "title": "【#R6SX】るいるいにガチ初心者コーチングしてもらう！何も分からない女はどうなるのか・・・【レインボーシックスシージ】",
-    "date": "2025-08-01T16:35:09.000+09:00",
-    "status": "live",
-    "thumbnail": "https://i.ytimg.com/vi/hNiFsRKfJZY/mqdefault.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/QQqec9A1J7eLk9RrRYD9vvk51BBJzcE1leGkU9n4YkwHqht9gmGT1ktmSlKItQtbuMSGuklAFxM",
-    "url": "https://www.youtube.com/watch?v=hNiFsRKfJZY"
-  },
-  {
     "name": "銘兎目あう",
     "youtubeid": "UCpr-9ssUUgSb0EpDA8bRuTA",
     "title": "【スト６】金星語、対戦中に漏れてしまう【銘兎目あう】#スト6 #sf6 #vtuber #おすすめ #streetfighter #格ゲー",
@@ -128,16 +118,6 @@
     "thumbnail": "https://i.ytimg.com/vi/AvkWv4UrCjQ/mqdefault.jpg",
     "channelIcon": "https://yt3.googleusercontent.com/9dVPxoBbcXIeN4O1N6bYiWu3EHHHeaStY7fQYPZfF3thWIP2Sc9Uc6kg56Aj0UHrg5QqqDtn",
     "url": "https://www.youtube.com/watch?v=AvkWv4UrCjQ"
-  },
-  {
-    "name": "宇田わん",
-    "youtubeid": "UCp45rWiRwgYZJUR4bQO-Xgw",
-    "title": "ムリムリ進化論 MV再現してみた！#新人vtuber #ナナヲアカリ",
-    "date": "2025-08-02T18:00:37.000+09:00",
-    "status": "archive",
-    "thumbnail": "https://i.ytimg.com/vi/SGJmKZcB_m0/mqdefault.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/bcgws2A-h2HRTCoWgcipC2sgJw_9y0O_5jBi_0QEW4DhAqyPZg4_xLkZw3JJBFZ2DzsYNiGx",
-    "url": "https://www.youtube.com/watch?v=SGJmKZcB_m0"
   },
   {
     "name": "秋桜しゅお",
@@ -448,6 +428,26 @@
     "thumbnail": "https://i.ytimg.com/vi/aGTub4ep7sI/mqdefault.jpg",
     "channelIcon": "https://yt3.googleusercontent.com/WBGP05KaXeA21IzCbCeM0QHa0v9maVvVUBDZ2DyfTT62F1wGaW3hLOQBy1gCfuQfEnDNgwbsrQ",
     "url": "https://www.youtube.com/watch?v=aGTub4ep7sI"
+  },
+  {
+    "name": "李じゅぴ汰",
+    "youtubeid": "UCHsAAyHJhPXuLS6N3Kig6PQ",
+    "title": "【フォールガイズ】4時間でクラウン取れなきゃ語尾縛り罰ゲーム【FallGuys　1位を目指して】雑談",
+    "date": "2025-08-04T17:00:19.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/n6Aje03ig2A/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/QQqec9A1J7eLk9RrRYD9vvk51BBJzcE1leGkU9n4YkwHqht9gmGT1ktmSlKItQtbuMSGuklAFxM",
+    "url": "https://www.youtube.com/watch?v=n6Aje03ig2A"
+  },
+  {
+    "name": "宇田わん",
+    "youtubeid": "UCp45rWiRwgYZJUR4bQO-Xgw",
+    "title": "【 参加型  】第2回 線香花火バトルで負けたら即終了！？【 #宇田わん #新人VTuber 】",
+    "date": "2025-08-04T20:30:00.000+09:00",
+    "status": "upcoming",
+    "thumbnail": "https://i.ytimg.com/vi/QmFEpXMR8-Y/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/bcgws2A-h2HRTCoWgcipC2sgJw_9y0O_5jBi_0QEW4DhAqyPZg4_xLkZw3JJBFZ2DzsYNiGx",
+    "url": "https://www.youtube.com/watch?v=QmFEpXMR8-Y"
   },
   {
     "name": "桜樹美彩",

@@ -273,9 +273,10 @@
     "name": "李じゅぴ汰",
     "twitchid": "lee_jupita",
     "title": "【フォールガイズ】4時間でクラウン取れなきゃ語尾縛り罰ゲーム【1位を目指して】雑談",
-    "date": "2025-08-04T16:44:32.000+09:00",
-    "status": "live",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lee_jupita-320x180.jpg"
+    "date": "2025-08-04T16:44:38.000+09:00",
+    "status": "archive",
+    "channelIcon": "https://yt3.googleusercontent.com/QQqec9A1J7eLk9RrRYD9vvk51BBJzcE1leGkU9n4YkwHqht9gmGT1ktmSlKItQtbuMSGuklAFxM",
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/e421d97eda7ad5ebee84_lee_jupita_314672288242_1754293472//thumb/thumb0-320x180.jpg"
   },
   {
     "name": "駿河ルガ",
@@ -335,5 +336,22 @@
     "date": "2025-08-04T21:07:25.000+09:00",
     "status": "live",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_hinoha_rui-320x180.jpg"
+  },
+  {
+    "name": "雨宮愛結猫",
+    "twitchid": "ayune_amemiya",
+    "title": "雑談麻雀 参加型でお勉強します💖🎀🐈┊#麻雀┊JP/EN┊#Vtuber┊ぷろのゔぁ",
+    "date": "2025-08-04T21:18:59.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_ayune_amemiya-320x180.jpg"
+  },
+  {
+    "name": "なかもとおまち",
+    "twitchid": "41futon",
+    "title": "ホテル徘徊するすぐおわる",
+    "date": "2025-08-04T21:48:05.000+09:00",
+    "status": "archive",
+    "channelIcon": "https://yt3.googleusercontent.com/h8jNjVckVf08zSV6wdhQ38Fw9OH7kucAprlJsi9w0YdDIL8_Kcv0tHY-1cK8jPK_jRLSJb3t_Q",
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d2nvs31859zcd8/ad57f3bffab06116c949_41futon_325351451004_1754311679//thumb/thumb0-320x180.jpg"
   }
 ]

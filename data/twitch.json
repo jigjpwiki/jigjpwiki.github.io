@@ -1,14 +1,5 @@
 [
   {
-    "name": "駿河ルガ",
-    "twitchid": "suruga_luga",
-    "title": "Vtuber雪山大戦【Vtuber駿河ルガ】",
-    "date": "2025-08-01T20:01:50.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://yt3.googleusercontent.com/JlY4XEMg9noNa4ShOtky0OwYbKXjnhnje6NQUcwrnJ0UI3C9VQrB-fBNat9QJSUJuuT_Yo1P",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d2nvs31859zcd8/06c91fb0e9949e22b31d_suruga_luga_314661610225_1754046100/thumb/custom-29149355-550e-4b52-b886-a9725ffc95a9-320x180.jpeg"
-  },
-  {
     "name": "雨宮愛結猫",
     "twitchid": "ayune_amemiya",
     "title": "FANBOX支援者3名増加耐久.ᐟ.ᐟ┊#PEAK┊JP/EN┊#Vtuber┊ぷろのゔぁ",
@@ -307,9 +298,10 @@
     "name": "なかもとおまち",
     "twitchid": "41futon",
     "title": "帰国準備修羅場はいしん",
-    "date": "2025-08-04T19:12:03.000+09:00",
-    "status": "live",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_41futon-320x180.jpg"
+    "date": "2025-08-04T19:12:09.000+09:00",
+    "status": "archive",
+    "channelIcon": "https://yt3.googleusercontent.com/h8jNjVckVf08zSV6wdhQ38Fw9OH7kucAprlJsi9w0YdDIL8_Kcv0tHY-1cK8jPK_jRLSJb3t_Q",
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d2nvs31859zcd8/fc6daa17ff8e548e4f58_41futon_325350195068_1754302323//thumb/thumb0-320x180.jpg"
   },
   {
     "name": "水透ユウ",
@@ -318,5 +310,22 @@
     "date": "2025-08-04T19:16:25.000+09:00",
     "status": "live",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_minato_yu_-320x180.jpg"
+  },
+  {
+    "name": "銘兎目あう",
+    "twitchid": "Metome_Au",
+    "title": "【スト６】Mケン！新ACTハイマス目指す！🥊🥋",
+    "date": "2025-08-04T19:58:28.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_Metome_Au-320x180.jpg"
+  },
+  {
+    "name": "銘兎目あう",
+    "twitchid": "Metome_Au",
+    "title": "🔴【スト６】EVOミラー配信！最終日♪【許諾済み】",
+    "date": "2025-08-04T19:58:34.000+09:00",
+    "status": "archive",
+    "channelIcon": "https://yt3.googleusercontent.com/VB97J8AMHex_rkfd6hDhfiGhhVvrL-NNkseP2mMYSWh75sxA_oXctmxK5tV4FYgkM17RUAx6GQ",
+    "thumbnail": "https://vod-secure.twitch.tv/_404/404_processing_320x180.png"
   }
 ]

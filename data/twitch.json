@@ -1,23 +1,5 @@
 [
   {
-    "name": "火乃晴るい",
-    "twitchid": "hinoha_rui",
-    "title": "【 #R6SX 】【31日目🔰】R6Sコラボ！ w/りーちゃん",
-    "date": "2025-08-01T16:34:26.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://yt3.googleusercontent.com/8vDFqOVNprKqFE0o7EecXyQleBXIibeJZpXpSgjm5msh4Yd0S8hTsbmYZyOBXa3bUEgBJHZt1w",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/2c42418deda10eb07545_hinoha_rui_314661029489_1754033660//thumb/thumb0-320x180.jpg"
-  },
-  {
-    "name": "李じゅぴ汰",
-    "twitchid": "lee_jupita",
-    "title": "【#R6SX】るいるいにガチ初心者コーチングしてもらう！何も分からない女はどうなるのか・・・【レインボーシックスシージ】",
-    "date": "2025-08-01T16:34:45.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://yt3.googleusercontent.com/QQqec9A1J7eLk9RrRYD9vvk51BBJzcE1leGkU9n4YkwHqht9gmGT1ktmSlKItQtbuMSGuklAFxM",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/31d0969db5d0b18f085d_lee_jupita_314661030001_1754033679//thumb/thumb0-320x180.jpg"
-  },
-  {
     "name": "銘兎目あう",
     "twitchid": "Metome_Au",
     "title": "🔴【スト６】Mケン！新ACTハイマス目指す！深夜EVOミラー配信するよ🥊🥋🐰",
@@ -302,5 +284,13 @@
     "date": "2025-08-04T13:55:13.000+09:00",
     "status": "live",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_siyham-320x180.jpg"
+  },
+  {
+    "name": "李じゅぴ汰",
+    "twitchid": "lee_jupita",
+    "title": "【フォールガイズ】4時間でクラウン取れなきゃ語尾縛り罰ゲーム【1位を目指して】雑談",
+    "date": "2025-08-04T16:44:32.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lee_jupita-320x180.jpg"
   }
 ]

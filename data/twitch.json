@@ -264,7 +264,16 @@
     "name": "しーはむ",
     "twitchid": "siyham",
     "title": "VEX 毎日配信5日目",
-    "date": "2025-08-05T12:22:27.000+09:00",
+    "date": "2025-08-05T12:22:33.000+09:00",
+    "status": "archive",
+    "channelIcon": "https://yt3.googleusercontent.com/y0zP0Uz7HSLx5dv3xo488Suxk8rJQQUC1wXaymjUBIQIwa25WlVu_VmrsT1xAyVD-jgeL7hs",
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/cc96c4ba98be52b2c622_siyham_314675385202_1754364147//thumb/thumb0-320x180.jpg"
+  },
+  {
+    "name": "しーはむ",
+    "twitchid": "siyham",
+    "title": "限界きてる",
+    "date": "2025-08-05T15:42:06.000+09:00",
     "status": "live",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_siyham-320x180.jpg"
   }

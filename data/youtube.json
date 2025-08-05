@@ -1,15 +1,5 @@
 [
   {
-    "name": "鹿鳴りあ",
-    "youtubeid": "UC6cgUcRa_gGsjqq3Kp6B68w",
-    "title": "【バトオペ2 /PS4】カスタムマッチ練習付き合って！【#鹿鳴りあ #ろくめみて 】",
-    "date": "2025-08-02T20:07:44.000+09:00",
-    "status": "live",
-    "thumbnail": "https://i.ytimg.com/vi/ZHDqxK8WzHI/mqdefault.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/8LfPowqmhNmaEl9OBYSMUbrC7y1UCCpgvvGo2WhFFk4WKuMiigUwuFQFP2PD1krD6nfVHsQ-ew",
-    "url": "https://www.youtube.com/watch?v=ZHDqxK8WzHI"
-  },
-  {
     "name": "水透ユウ",
     "youtubeid": "UCOah55SQYynzPgQQ4wxuzkA",
     "title": "【参加型】Mブランカ🔰マスター！キャラ対学ぶべくチーム戦でカスタムマッチ募集中！【スト6】【新人Vtuber】",
@@ -403,11 +393,21 @@
     "name": "秋桜しゅお",
     "youtubeid": "UCPjtwOeRQV5EFkCwUycZsgw",
     "title": "【#古銭プッシャー 】ひさしぶりに古銭を集めながら#雑談配信🧡【秋桜しゅお/登龍門BOX】",
-    "date": "2025-08-05T20:00:00.000+09:00",
-    "status": "upcoming",
+    "date": "2025-08-05T20:04:37.000+09:00",
+    "status": "live",
     "thumbnail": "https://i.ytimg.com/vi/NveEKYY-eP0/mqdefault_live.jpg",
     "channelIcon": "https://yt3.googleusercontent.com/WBGP05KaXeA21IzCbCeM0QHa0v9maVvVUBDZ2DyfTT62F1wGaW3hLOQBy1gCfuQfEnDNgwbsrQ",
     "url": "https://www.youtube.com/watch?v=NveEKYY-eP0"
+  },
+  {
+    "name": "橋門エル",
+    "youtubeid": "UCcNo3POf2DiRs1TPIsEvNgA",
+    "title": "【スト6】ダイナミック肩屋入り発動www #vtuber #ゲーム実況 #スト6",
+    "date": "2025-08-05T20:05:56.000+09:00",
+    "status": "archive",
+    "thumbnail": "https://i.ytimg.com/vi/zmRkEnC-AsM/mqdefault.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/fyNf7EKChxLeUcCXrveXXaSOc-P-5t2NjD32mXWpBDFUhnC0HVKP9lPG0P6GgxFMdMoX29tg",
+    "url": "https://www.youtube.com/watch?v=zmRkEnC-AsM"
   },
   {
     "name": "桜樹美彩",

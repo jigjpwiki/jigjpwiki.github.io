@@ -1,14 +1,5 @@
 [
   {
-    "name": "桜樹美彩",
-    "twitchid": "sakuragimisa_v",
-    "title": "ガチ初見＆ガチ初心者（疾走と必殺を持つ）のよちよち「Shadowverse: Worlds Beyond」🍀他人と戦いたい。/ #vtuber #シャドバWB #みさライなう #桜樹美彩",
-    "date": "2025-08-02T19:00:52.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://yt3.googleusercontent.com/pDP2GuylW0RN1REDScFAlNklbXaPRqTm2mwT2F7dIo8xoYYFPfspsjGH_G3RagwlKVlQbdw95bY",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d1m7jfoe9zdc1j/770a4f32ed334fc88cca_sakuragimisa_v_330576152317_1754128847//thumb/thumb0-320x180.jpg"
-  },
-  {
     "name": "水透ユウ",
     "twitchid": "minato_yu_",
     "title": "【参加型】Mブランカ🔰マスター主催！キャラ対学ぶべくチーム戦でカスタムマッチ！【スト6】→深夜飲酒雑談→早朝おはよう雑談【新人Vtuber】",
@@ -250,5 +241,21 @@
     "status": "archive",
     "channelIcon": "https://yt3.googleusercontent.com/y0zP0Uz7HSLx5dv3xo488Suxk8rJQQUC1wXaymjUBIQIwa25WlVu_VmrsT1xAyVD-jgeL7hs",
     "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/cc96c4ba98be52b2c622_siyham_314675385202_1754364147//thumb/thumb0-320x180.jpg"
+  },
+  {
+    "name": "桜樹美彩",
+    "twitchid": "sakuragimisa_v",
+    "title": "ガチ初見＆ガチ初心者の人形ネメシスよちよち「Shadowverse: Worlds Beyond」🍀勝ちたい。/ #vtuber #シャドバWB #みさライなう #桜樹美彩",
+    "date": "2025-08-05T19:00:14.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sakuragimisa_v-320x180.jpg"
+  },
+  {
+    "name": "銘兎目あう",
+    "twitchid": "Metome_Au",
+    "title": "【スト６】Mケン！サガットきた！新ACTハイマス目指す！🥊🥋",
+    "date": "2025-08-05T19:00:26.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_Metome_Au-320x180.jpg"
   }
 ]

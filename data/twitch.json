@@ -219,8 +219,17 @@
     "name": "しーはむ",
     "twitchid": "siyham",
     "title": "少し歌う",
-    "date": "2025-08-06T13:33:26.000+09:00",
+    "date": "2025-08-06T13:33:32.000+09:00",
+    "status": "archive",
+    "channelIcon": "https://yt3.googleusercontent.com/y0zP0Uz7HSLx5dv3xo488Suxk8rJQQUC1wXaymjUBIQIwa25WlVu_VmrsT1xAyVD-jgeL7hs",
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/9e1526b308061665e4fa_siyham_314679938417_1754454806//thumb/thumb0-320x180.jpg"
+  },
+  {
+    "name": "なかもとおまち",
+    "twitchid": "41futon",
+    "title": "ホテル徘徊するすぐおわる",
+    "date": "2025-08-06T14:28:45.000+09:00",
     "status": "live",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_siyham-320x180.jpg"
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_41futon-320x180.jpg"
   }
 ]

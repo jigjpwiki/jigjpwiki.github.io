@@ -1,14 +1,5 @@
 [
   {
-    "name": "銘兎目あう",
-    "twitchid": "Metome_Au",
-    "title": "🔴【スト６】Mケン！新ACTハイマス目指す！🥊🥋",
-    "date": "2025-08-03T22:33:32.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://yt3.googleusercontent.com/VB97J8AMHex_rkfd6hDhfiGhhVvrL-NNkseP2mMYSWh75sxA_oXctmxK5tV4FYgkM17RUAx6GQ",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/c4af0afe9f73b31f90c2_metome_au_314670473073_1754228006//thumb/thumb0-320x180.jpg"
-  },
-  {
     "name": "雨宮愛結猫",
     "twitchid": "ayune_amemiya",
     "title": "雑談麻雀 牌効率を勉強します💖🎀🐈┊#麻雀┊JP/EN┊#Vtuber┊ぷろのゔぁ",
@@ -191,27 +182,20 @@
   {
     "name": "なかもとおまち",
     "twitchid": "41futon",
-    "title": "ゲーセンアルランディスに遊びにきました！",
-    "date": "2025-08-06T14:28:45.000+09:00",
-    "status": "live",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_41futon-320x180.jpg"
-  },
-  {
-    "name": "なかもとおまち",
-    "twitchid": "41futon",
     "title": "ホテル徘徊するすぐおわる",
     "date": "2025-08-06T14:28:50.000+09:00",
     "status": "archive",
     "channelIcon": "https://yt3.googleusercontent.com/h8jNjVckVf08zSV6wdhQ38Fw9OH7kucAprlJsi9w0YdDIL8_Kcv0tHY-1cK8jPK_jRLSJb3t_Q",
-    "thumbnail": "https://vod-secure.twitch.tv/_404/404_processing_320x180.png"
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/df11626587ad0f876053_41futon_314679538674_1754458125//thumb/thumb0-320x180.jpg"
   },
   {
     "name": "火乃晴るい",
     "twitchid": "hinoha_rui",
     "title": "【 #R6SX 】【35日目🔰】安定の毎日ソロランク～エメラルドからダイヤ目指して頑張るよ！",
-    "date": "2025-08-06T18:56:48.000+09:00",
-    "status": "live",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_hinoha_rui-320x180.jpg"
+    "date": "2025-08-06T18:56:54.000+09:00",
+    "status": "archive",
+    "channelIcon": "https://yt3.googleusercontent.com/8vDFqOVNprKqFE0o7EecXyQleBXIibeJZpXpSgjm5msh4Yd0S8hTsbmYZyOBXa3bUEgBJHZt1w",
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/50529e8fec2b72003e88_hinoha_rui_314680224754_1754474208//thumb/thumb0-320x180.jpg"
   },
   {
     "name": "銘兎目あう",
@@ -244,5 +228,30 @@
     "date": "2025-08-06T21:30:13.000+09:00",
     "status": "live",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_siyham-320x180.jpg"
+  },
+  {
+    "name": "火乃晴るい",
+    "twitchid": "hinoha_rui",
+    "title": "【 #R6SX 】【35日目🔰】参加型🔥もぎもぎとR6Sコラボするよ！",
+    "date": "2025-08-06T22:34:42.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_hinoha_rui-320x180.jpg"
+  },
+  {
+    "name": "火乃晴るい",
+    "twitchid": "hinoha_rui",
+    "title": "【 #R6SX 】【35日目🔰】安定の毎日ソロランク～エメラルドからダイヤ目指して頑張るよ！",
+    "date": "2025-08-06T22:34:48.000+09:00",
+    "status": "archive",
+    "channelIcon": "https://yt3.googleusercontent.com/8vDFqOVNprKqFE0o7EecXyQleBXIibeJZpXpSgjm5msh4Yd0S8hTsbmYZyOBXa3bUEgBJHZt1w",
+    "thumbnail": "https://vod-secure.twitch.tv/_404/404_processing_320x180.png"
+  },
+  {
+    "name": "李じゅぴ汰",
+    "twitchid": "lee_jupita",
+    "title": "【スト6】水着キンバリー！いくぞー！！！【ストリートファイトター6】Mキンバリー",
+    "date": "2025-08-06T22:42:45.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lee_jupita-320x180.jpg"
   }
 ]

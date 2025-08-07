@@ -1,14 +1,5 @@
 [
   {
-    "name": "真昼ねる",
-    "twitchid": "mahiruneru",
-    "title": "【R6SX】プラチナいくど！負けたら筋トレ💪🏻【ぷろのゔぁ／真昼ねる】",
-    "date": "2025-08-05T01:00:49.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://yt3.googleusercontent.com/Cu6AMAZAEC_DTANKoaloA_4iLCuEUQ8BiAwyHGuOUG9GtoIw6s7mXCv1-49LV1IgODYZfGowzQ",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/d11d561efab769d6cc8f_mahiruneru_314703880563_1754323243//thumb/thumb0-320x180.jpg"
-  },
-  {
     "name": "桜樹美彩",
     "twitchid": "sakuragimisa_v",
     "title": "【 朝活 / ニュース 】あなたの素敵な目覚めを支える☀AM7:00～8:00『ちょこっと』朝活ニュース🍀初見＆ROM勢大歓迎🐥 #vtuber #みさライなう #桜樹美彩 #新人vtuber",
@@ -153,14 +144,6 @@
     "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/c4d1b40ef4488a0fc8f5_lee_jupita_314713610867_1754553151//thumb/thumb0-320x180.jpg"
   },
   {
-    "name": "駿河ルガ",
-    "twitchid": "suruga_luga",
-    "title": "【スト6】俺がタイガー【Vtuber駿河ルガ】",
-    "date": "2025-08-07T17:00:00.000+09:00",
-    "status": "live",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_suruga_luga-320x180.jpg"
-  },
-  {
     "name": "銘兎目あう",
     "twitchid": "Metome_Au",
     "title": "【スト６】ランクまわす！Mケン！ハイマス目指して頑張るよ！🥊🥋",
@@ -168,6 +151,15 @@
     "status": "archive",
     "channelIcon": "https://yt3.googleusercontent.com/VB97J8AMHex_rkfd6hDhfiGhhVvrL-NNkseP2mMYSWh75sxA_oXctmxK5tV4FYgkM17RUAx6GQ",
     "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/1955d75607f92fb6b8a2_metome_au_314683733362_1754553605//thumb/thumb0-320x180.jpg"
+  },
+  {
+    "name": "駿河ルガ",
+    "twitchid": "suruga_luga",
+    "title": "【スト6】俺がタイガー【Vtuber駿河ルガ】",
+    "date": "2025-08-07T17:00:11.000+09:00",
+    "status": "archive",
+    "channelIcon": "https://yt3.googleusercontent.com/JlY4XEMg9noNa4ShOtky0OwYbKXjnhnje6NQUcwrnJ0UI3C9VQrB-fBNat9QJSUJuuT_Yo1P",
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/bbabb896fd79e3be0876_suruga_luga_314684267889_1754553600//thumb/thumb0-320x180.jpg"
   },
   {
     "name": "なかもとおまち",

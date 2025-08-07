@@ -1,15 +1,5 @@
 [
   {
-    "name": "李じゅぴ汰",
-    "youtubeid": "UCHsAAyHJhPXuLS6N3Kig6PQ",
-    "title": "【フォールガイズ】4時間でクラウン取れなきゃ語尾縛り罰ゲーム【FallGuys　1位を目指して】雑談",
-    "date": "2025-08-04T17:00:19.000+09:00",
-    "status": "live",
-    "thumbnail": "https://i.ytimg.com/vi/n6Aje03ig2A/mqdefault.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/QQqec9A1J7eLk9RrRYD9vvk51BBJzcE1leGkU9n4YkwHqht9gmGT1ktmSlKItQtbuMSGuklAFxM",
-    "url": "https://www.youtube.com/watch?v=n6Aje03ig2A"
-  },
-  {
     "name": "駿河ルガ",
     "youtubeid": "UCij_jFd6ggNIYGm0rHwcNtg",
     "title": "【スト6】アルマス豪鬼のランクマ【駿河ルガ/登龍門BOX】",
@@ -18,16 +8,6 @@
     "thumbnail": "https://i.ytimg.com/vi/ReiAfgftgRM/mqdefault.jpg",
     "channelIcon": "https://yt3.googleusercontent.com/JlY4XEMg9noNa4ShOtky0OwYbKXjnhnje6NQUcwrnJ0UI3C9VQrB-fBNat9QJSUJuuT_Yo1P",
     "url": "https://www.youtube.com/watch?v=ReiAfgftgRM"
-  },
-  {
-    "name": "秋桜しゅお",
-    "youtubeid": "UCPjtwOeRQV5EFkCwUycZsgw",
-    "title": "【VTuberの日常の危機】#vtuber #新人vtuber #あるある #あるあるネタ #vtuberあるある #身バレ #shorts",
-    "date": "2025-08-04T18:00:15.000+09:00",
-    "status": "archive",
-    "thumbnail": "https://i.ytimg.com/vi/Ce-m3RRT_po/mqdefault.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/WBGP05KaXeA21IzCbCeM0QHa0v9maVvVUBDZ2DyfTT62F1wGaW3hLOQBy1gCfuQfEnDNgwbsrQ",
-    "url": "https://www.youtube.com/watch?v=Ce-m3RRT_po"
   },
   {
     "name": "魔法少女アルト",
@@ -342,7 +322,7 @@
   {
     "name": "春原なずな",
     "youtubeid": "UCW-iuU7g3BJnuQ1D3UkqeSA",
-    "title": "【 FF7remake / FINAL FANTASY VII REMAKE INTERGRADE 】#1 名作リメイク完全初見！【 春原なずな / Vtuber 】",
+    "title": "【 FF7remake / FINAL FANTASY VII REMAKE INTERGRADE 】#1 名作リメイク完全初見！※ネタバレ注意【 春原なずな / Vtuber 】",
     "date": "2025-08-06T19:58:05.000+09:00",
     "status": "live",
     "thumbnail": "https://i.ytimg.com/vi/xXjlioax508/mqdefault.jpg",
@@ -410,14 +390,54 @@
     "url": "https://www.youtube.com/watch?v=UWI8eC39p1E"
   },
   {
+    "name": "李じゅぴ汰",
+    "youtubeid": "UCHsAAyHJhPXuLS6N3Kig6PQ",
+    "title": "【スト6 / #縦型配信】水着Mキンバリー！サガットだらけで苦しいダイヤ帯！【ストリートファイトター6】",
+    "date": "2025-08-07T16:53:42.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/QZmYrbGtbf0/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/QQqec9A1J7eLk9RrRYD9vvk51BBJzcE1leGkU9n4YkwHqht9gmGT1ktmSlKItQtbuMSGuklAFxM",
+    "url": "https://www.youtube.com/watch?v=QZmYrbGtbf0"
+  },
+  {
+    "name": "駿河ルガ",
+    "youtubeid": "UCij_jFd6ggNIYGm0rHwcNtg",
+    "title": "【スト6】アルマス豪鬼のランクマ【駿河ルガ/登龍門BOX】",
+    "date": "2025-08-07T17:00:09.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/dTHULRzaJp8/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/JlY4XEMg9noNa4ShOtky0OwYbKXjnhnje6NQUcwrnJ0UI3C9VQrB-fBNat9QJSUJuuT_Yo1P",
+    "url": "https://www.youtube.com/watch?v=dTHULRzaJp8"
+  },
+  {
+    "name": "秋桜しゅお",
+    "youtubeid": "UCPjtwOeRQV5EFkCwUycZsgw",
+    "title": "【#雑談配信 】#初見歓迎！みんな夏どうすごしてる🧡【秋桜しゅお/登龍門BOX】#新人vtuber",
+    "date": "2025-08-07T20:00:00.000+09:00",
+    "status": "upcoming",
+    "thumbnail": "https://i.ytimg.com/vi/5P9p67hq0G0/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/WBGP05KaXeA21IzCbCeM0QHa0v9maVvVUBDZ2DyfTT62F1wGaW3hLOQBy1gCfuQfEnDNgwbsrQ",
+    "url": "https://www.youtube.com/watch?v=5P9p67hq0G0"
+  },
+  {
     "name": "春原なずな",
     "youtubeid": "UCW-iuU7g3BJnuQ1D3UkqeSA",
-    "title": "【 FF7remake / FINAL FANTASY VII REMAKE INTERGRADE 】#2 名作リメイク完全初見！【 春原なずな / Vtuber 】",
+    "title": "【 FF7remake / FINAL FANTASY VII REMAKE INTERGRADE 】#2 名作リメイク完全初見！※ネタバレ注意【 春原なずな / Vtuber 】",
     "date": "2025-08-07T20:00:00.000+09:00",
     "status": "upcoming",
     "thumbnail": "https://i.ytimg.com/vi/_n92sxv2IAQ/mqdefault_live.jpg",
     "channelIcon": "https://yt3.googleusercontent.com/0pD1c95Y9X0VrhzWtlf2SRPqdkesiuZxC8Hb5Mg9Xv1WWpQaFCmjITTK8-n5HlNsB-yDbAN4CZA",
     "url": "https://www.youtube.com/watch?v=_n92sxv2IAQ"
+  },
+  {
+    "name": "忠犬しず",
+    "youtubeid": "UCPzN3R0x_SciJJ_FP-STpHQ",
+    "title": "【 同時視聴 】完全初見！ULTRAMAN(アニメ)の1，2話と機動警察パトレイバー ON TELEVISIONの11、12話を見るぞ！【 忠犬しず/Vtuber 】#特撮オタク　#特撮女子",
+    "date": "2025-08-07T21:00:00.000+09:00",
+    "status": "upcoming",
+    "thumbnail": "https://i.ytimg.com/vi/LXGnX-6q_Qk/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/9dVPxoBbcXIeN4O1N6bYiWu3EHHHeaStY7fQYPZfF3thWIP2Sc9Uc6kg56Aj0UHrg5QqqDtn",
+    "url": "https://www.youtube.com/watch?v=LXGnX-6q_Qk"
   },
   {
     "name": "鹿鳴りあ",

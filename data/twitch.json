@@ -1,14 +1,5 @@
 [
   {
-    "name": "火乃晴るい",
-    "twitchid": "hinoha_rui",
-    "title": "【 #VALORANT 】星祭杯に向けてコラボ！",
-    "date": "2025-08-04T21:07:31.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://yt3.googleusercontent.com/8vDFqOVNprKqFE0o7EecXyQleBXIibeJZpXpSgjm5msh4Yd0S8hTsbmYZyOBXa3bUEgBJHZt1w",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/8024c634cd5ff939263a_hinoha_rui_314673164274_1754309245//thumb/thumb0-320x180.jpg"
-  },
-  {
     "name": "雨宮愛結猫",
     "twitchid": "ayune_amemiya",
     "title": "雑談麻雀 参加型でお勉強します💖🎀🐈┊#麻雀┊JP/EN┊#Vtuber┊ぷろのゔぁ",
@@ -220,5 +211,13 @@
     "date": "2025-08-07T20:47:48.000+09:00",
     "status": "live",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_mahiruneru-320x180.jpg"
+  },
+  {
+    "name": "銘兎目あう",
+    "twitchid": "Metome_Au",
+    "title": "【スト６】ハイマス目指して頑張るよ！Mケンです🥊🥋",
+    "date": "2025-08-07T20:56:27.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_Metome_Au-320x180.jpg"
   }
 ]

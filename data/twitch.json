@@ -218,10 +218,19 @@
   {
     "name": "水透ユウ",
     "twitchid": "minato_yu_",
-    "title": "【罰有MR100マッチ耐久】🔰Mブランカ ハイマスへの道【水透ユウ】【新人Vtuber】",
+    "title": "【罰有MR100マッチ耐久】←完走したので参加型ランダムチームカスタム開催中！【水透ユウ】【新人Vtuber】",
     "date": "2025-08-09T14:05:21.000+09:00",
     "status": "live",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_minato_yu_-320x180.jpg"
+  },
+  {
+    "name": "水透ユウ",
+    "twitchid": "minato_yu_",
+    "title": "【罰有MR100マッチ耐久】🔰Mブランカ ハイマスへの道【水透ユウ】【新人Vtuber】",
+    "date": "2025-08-09T14:05:27.000+09:00",
+    "status": "archive",
+    "channelIcon": "https://yt3.googleusercontent.com/eVD8Ygm7KVyh3dvWnyebfYlbYpD13ZYQ-Bos8WdR5LDE61A3svHVHCLEY-rM3IQgw9O4uvdd",
+    "thumbnail": "https://vod-secure.twitch.tv/_404/404_processing_320x180.png"
   },
   {
     "name": "真昼ねる",
@@ -285,9 +294,26 @@
   {
     "name": "なかもとおまち",
     "twitchid": "41futon",
-    "title": "お誕生日企画★24時間配はじまったぞおおおおお【#なかもと24時間開店中】",
+    "title": "お誕生日24時間企画★24時までにMr1600いけるかチャレンジ#なかもと24時間開店中",
     "date": "2025-08-09T21:07:47.000+09:00",
     "status": "live",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_41futon-320x180.jpg"
+  },
+  {
+    "name": "なかもとおまち",
+    "twitchid": "41futon",
+    "title": "お誕生日企画★24時間配はじまったぞおおおおお【#なかもと24時間開店中】",
+    "date": "2025-08-09T21:07:53.000+09:00",
+    "status": "archive",
+    "channelIcon": "https://yt3.googleusercontent.com/h8jNjVckVf08zSV6wdhQ38Fw9OH7kucAprlJsi9w0YdDIL8_Kcv0tHY-1cK8jPK_jRLSJb3t_Q",
+    "thumbnail": "https://vod-secure.twitch.tv/_404/404_processing_320x180.png"
+  },
+  {
+    "name": "カルプ・マーガレット",
+    "twitchid": "carpe_margaret",
+    "title": "【 #VVGTA 】オネエがVVGTAにやってきた！！！【 広島弁のオネエVTuber 】",
+    "date": "2025-08-09T22:00:22.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_carpe_margaret-320x180.jpg"
   }
 ]

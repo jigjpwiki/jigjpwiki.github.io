@@ -252,9 +252,10 @@
     "name": "しーはむ",
     "twitchid": "siyham",
     "title": "人形とAF10回試合ずつやってどっちが勝ち越せるかを見る",
-    "date": "2025-08-09T20:44:07.000+09:00",
-    "status": "live",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_siyham-320x180.jpg"
+    "date": "2025-08-09T20:44:13.000+09:00",
+    "status": "archive",
+    "channelIcon": "https://yt3.googleusercontent.com/y0zP0Uz7HSLx5dv3xo488Suxk8rJQQUC1wXaymjUBIQIwa25WlVu_VmrsT1xAyVD-jgeL7hs",
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/6dd4bef58c989a61b6ae_siyham_314692389746_1754739847//thumb/thumb0-320x180.jpg"
   },
   {
     "name": "なかもとおまち",
@@ -280,5 +281,13 @@
     "date": "2025-08-09T22:00:22.000+09:00",
     "status": "live",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_carpe_margaret-320x180.jpg"
+  },
+  {
+    "name": "水透ユウ",
+    "twitchid": "minato_yu_",
+    "title": "【 #R6SX 】スト6終わりにゴールド目指しに来た夜更かし民🔰【水透ユウ】【新人Vtuber】",
+    "date": "2025-08-09T23:54:13.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_minato_yu_-320x180.jpg"
   }
 ]

@@ -1,15 +1,5 @@
 [
   {
-    "name": "春原なずな",
-    "youtubeid": "UCW-iuU7g3BJnuQ1D3UkqeSA",
-    "title": "【 FF7remake / FINAL FANTASY VII REMAKE INTERGRADE 】#1 名作リメイク完全初見！※ネタバレ注意【 春原なずな / Vtuber 】",
-    "date": "2025-08-06T19:58:05.000+09:00",
-    "status": "live",
-    "thumbnail": "https://i.ytimg.com/vi/xXjlioax508/mqdefault.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/0pD1c95Y9X0VrhzWtlf2SRPqdkesiuZxC8Hb5Mg9Xv1WWpQaFCmjITTK8-n5HlNsB-yDbAN4CZA",
-    "url": "https://www.youtube.com/watch?v=xXjlioax508"
-  },
-  {
     "name": "鹿鳴りあ",
     "youtubeid": "UC6cgUcRa_gGsjqq3Kp6B68w",
     "title": "【タイタンフォール2 /PS4】#1 初見プレイ！神作と噂のゲーム、楽しみです✨【#鹿鳴りあ #ろくめみて 】",
@@ -172,7 +162,7 @@
   {
     "name": "宇田わん",
     "youtubeid": "UCp45rWiRwgYZJUR4bQO-Xgw",
-    "title": "【 参加型  】第3回 線香花火バトルで負けたら即終了！？【 #宇田わん #新人VTuber / #登龍門BOX 】",
+    "title": "【 参加型  】第3回 線香花火バトルで負けたら即終了！？【 #宇田わん #新人VTuber 】",
     "date": "2025-08-07T22:07:32.000+09:00",
     "status": "live",
     "thumbnail": "https://i.ytimg.com/vi/WtISDc8bAe4/mqdefault.jpg",
@@ -345,7 +335,7 @@
     "title": "【スト6】サガットランクマ【駿河ルガ/登龍門BOX】",
     "date": "2025-08-09T17:01:08.000+09:00",
     "status": "live",
-    "thumbnail": "https://i.ytimg.com/vi/2bLYVzqWTrg/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/2bLYVzqWTrg/mqdefault.jpg",
     "channelIcon": "https://yt3.googleusercontent.com/JlY4XEMg9noNa4ShOtky0OwYbKXjnhnje6NQUcwrnJ0UI3C9VQrB-fBNat9QJSUJuuT_Yo1P",
     "url": "https://www.youtube.com/watch?v=2bLYVzqWTrg"
   },
@@ -390,21 +380,11 @@
     "url": "https://www.youtube.com/watch?v=G94BntwjwmE"
   },
   {
-    "name": "カルプ・マーガレット",
-    "youtubeid": "UCAANONySj4hE_-ch6G34MZQ",
-    "title": "今ここに、宣言します【 広島弁のオネエVTuber 】",
-    "date": "2025-08-09T20:00:00.000+09:00",
-    "status": "upcoming",
-    "thumbnail": "https://i.ytimg.com/vi/ptxnLtvKYeU/mqdefault_live.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/XXH1eOS7_cbzNwQFqJAtIguKNeLGs7-D2Pvf3M0vHlBVdKoYlmTbyMwUv7xjtsv5qM9IodH9",
-    "url": "https://www.youtube.com/watch?v=ptxnLtvKYeU"
-  },
-  {
     "name": "春原なずな",
     "youtubeid": "UCW-iuU7g3BJnuQ1D3UkqeSA",
     "title": "【 FF7remake / FINAL FANTASY VII REMAKE INTERGRADE 】#4 名作リメイク完全初見！※ネタバレ注意【 春原なずな / Vtuber 】",
-    "date": "2025-08-09T20:00:00.000+09:00",
-    "status": "upcoming",
+    "date": "2025-08-09T19:58:24.000+09:00",
+    "status": "live",
     "thumbnail": "https://i.ytimg.com/vi/e80Duvt6pig/mqdefault_live.jpg",
     "channelIcon": "https://yt3.googleusercontent.com/0pD1c95Y9X0VrhzWtlf2SRPqdkesiuZxC8Hb5Mg9Xv1WWpQaFCmjITTK8-n5HlNsB-yDbAN4CZA",
     "url": "https://www.youtube.com/watch?v=e80Duvt6pig"
@@ -413,11 +393,21 @@
     "name": "宇田わん",
     "youtubeid": "UCp45rWiRwgYZJUR4bQO-Xgw",
     "title": "【 VALORANT 】「配信者ですか？」って言われるまで耐久。【 #宇田わん #新人VTuber / #登龍門BOX】",
-    "date": "2025-08-09T20:00:00.000+09:00",
-    "status": "upcoming",
+    "date": "2025-08-09T20:01:27.000+09:00",
+    "status": "live",
     "thumbnail": "https://i.ytimg.com/vi/9C-KQ2cpKbQ/mqdefault_live.jpg",
     "channelIcon": "https://yt3.googleusercontent.com/bcgws2A-h2HRTCoWgcipC2sgJw_9y0O_5jBi_0QEW4DhAqyPZg4_xLkZw3JJBFZ2DzsYNiGx",
     "url": "https://www.youtube.com/watch?v=9C-KQ2cpKbQ"
+  },
+  {
+    "name": "カルプ・マーガレット",
+    "youtubeid": "UCAANONySj4hE_-ch6G34MZQ",
+    "title": "今ここに、宣言します【 広島弁のオネエVTuber 】",
+    "date": "2025-08-09T20:02:02.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/ptxnLtvKYeU/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/XXH1eOS7_cbzNwQFqJAtIguKNeLGs7-D2Pvf3M0vHlBVdKoYlmTbyMwUv7xjtsv5qM9IodH9",
+    "url": "https://www.youtube.com/watch?v=ptxnLtvKYeU"
   },
   {
     "name": "魔法少女アルト",

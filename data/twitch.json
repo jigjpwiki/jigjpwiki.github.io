@@ -1,23 +1,5 @@
 [
   {
-    "name": "水透ユウ",
-    "twitchid": "minato_yu_",
-    "title": "【R6SX】一旦綺麗な色になりたい🔰ソロランク【新人Vtuber】",
-    "date": "2025-08-06T21:03:50.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://yt3.googleusercontent.com/eVD8Ygm7KVyh3dvWnyebfYlbYpD13ZYQ-Bos8WdR5LDE61A3svHVHCLEY-rM3IQgw9O4uvdd",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/49934a58a55da59e551f_minato_yu__314710602611_1754481824//thumb/thumb0-320x180.jpg"
-  },
-  {
-    "name": "雨宮愛結猫",
-    "twitchid": "ayune_amemiya",
-    "title": "雑談麻雀 参加型でお勉強します💖🎀🐈┊#麻雀┊JP/EN┊#Vtuber┊ぷろのゔぁ",
-    "date": "2025-08-06T21:04:41.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://yt3.googleusercontent.com/kn25wJn77KhPY6MXLYIvYg_VDJk9MDaguKjRFJu2UbLMLSasK_h3Xo4ZaIRM5U7vUbiMQJD-",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/717b7f13ba997afed9de_ayune_amemiya_314681286513_1754481875//thumb/thumb0-320x180.jpg"
-  },
-  {
     "name": "しーはむ",
     "twitchid": "siyham",
     "title": "VEXヴェックスぶぇっくしゅ",
@@ -287,10 +269,19 @@
   {
     "name": "火乃晴るい",
     "twitchid": "hinoha_rui",
-    "title": "【 #R6SX 】【37日目🔰】【参加型】アンランクするよ！チャネポ交換よろしく🔥",
+    "title": "【 #VALORANT 】星祭杯に向けてすくりむします！！",
     "date": "2025-08-09T19:30:09.000+09:00",
     "status": "live",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_hinoha_rui-320x180.jpg"
+  },
+  {
+    "name": "火乃晴るい",
+    "twitchid": "hinoha_rui",
+    "title": "【 #R6SX 】【37日目🔰】【参加型】アンランクするよ！チャネポ交換よろしく🔥",
+    "date": "2025-08-09T19:30:15.000+09:00",
+    "status": "archive",
+    "channelIcon": "https://yt3.googleusercontent.com/8vDFqOVNprKqFE0o7EecXyQleBXIibeJZpXpSgjm5msh4Yd0S8hTsbmYZyOBXa3bUEgBJHZt1w",
+    "thumbnail": "https://vod-secure.twitch.tv/_404/404_processing_320x180.png"
   },
   {
     "name": "しーはむ",
@@ -299,5 +290,13 @@
     "date": "2025-08-09T20:44:07.000+09:00",
     "status": "live",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_siyham-320x180.jpg"
+  },
+  {
+    "name": "なかもとおまち",
+    "twitchid": "41futon",
+    "title": "お誕生日企画★24時間配はじまったぞおおおおお【#なかもと24時間開店中】",
+    "date": "2025-08-09T21:07:47.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_41futon-320x180.jpg"
   }
 ]

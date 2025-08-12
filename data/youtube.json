@@ -1,25 +1,5 @@
 [
   {
-    "name": "春原なずな",
-    "youtubeid": "UCW-iuU7g3BJnuQ1D3UkqeSA",
-    "title": "【 FF7remake / FINAL FANTASY VII REMAKE INTERGRADE 】#4 名作リメイク完全初見！※ネタバレ注意【 春原なずな / Vtuber 】",
-    "date": "2025-08-09T19:58:24.000+09:00",
-    "status": "live",
-    "thumbnail": "https://i.ytimg.com/vi/e80Duvt6pig/mqdefault.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/0pD1c95Y9X0VrhzWtlf2SRPqdkesiuZxC8Hb5Mg9Xv1WWpQaFCmjITTK8-n5HlNsB-yDbAN4CZA",
-    "url": "https://www.youtube.com/watch?v=e80Duvt6pig"
-  },
-  {
-    "name": "宇田わん",
-    "youtubeid": "UCp45rWiRwgYZJUR4bQO-Xgw",
-    "title": "【 VALORANT 】「配信者ですか？」って言われるまで耐久。【 #宇田わん #新人VTuber / #登龍門BOX】",
-    "date": "2025-08-09T20:01:27.000+09:00",
-    "status": "live",
-    "thumbnail": "https://i.ytimg.com/vi/9C-KQ2cpKbQ/mqdefault.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/bcgws2A-h2HRTCoWgcipC2sgJw_9y0O_5jBi_0QEW4DhAqyPZg4_xLkZw3JJBFZ2DzsYNiGx",
-    "url": "https://www.youtube.com/watch?v=9C-KQ2cpKbQ"
-  },
-  {
     "name": "魔法少女アルト",
     "youtubeid": "UCtRhBS8dlaeBgVcnEZOkAbA",
     "title": "【 爆弾解除マニュアル 】協力など無い。青空ニココラボ   #Vtuber ＃アルトの魔法通信 【登龍門BOX /魔法少女アルト 】",
@@ -128,16 +108,6 @@
     "thumbnail": "https://i.ytimg.com/vi/6oD8PoX3p2w/mqdefault.jpg",
     "channelIcon": "https://yt3.googleusercontent.com/pDP2GuylW0RN1REDScFAlNklbXaPRqTm2mwT2F7dIo8xoYYFPfspsjGH_G3RagwlKVlQbdw95bY",
     "url": "https://www.youtube.com/watch?v=6oD8PoX3p2w"
-  },
-  {
-    "name": "秋桜しゅお",
-    "youtubeid": "UCPjtwOeRQV5EFkCwUycZsgw",
-    "title": "【  #花咲く華園歌枠リレー  】元気いっぱいキバナコスモスのうたごえをお届け🧡【秋桜しゅお/登龍門BOX】",
-    "date": "2025-08-10T20:59:08.000+09:00",
-    "status": "live",
-    "thumbnail": "https://i.ytimg.com/vi/il5f9b9SwD8/mqdefault.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/WBGP05KaXeA21IzCbCeM0QHa0v9maVvVUBDZ2DyfTT62F1wGaW3hLOQBy1gCfuQfEnDNgwbsrQ",
-    "url": "https://www.youtube.com/watch?v=il5f9b9SwD8"
   },
   {
     "name": "鹿鳴りあ",
@@ -473,11 +443,21 @@
     "name": "春原なずな",
     "youtubeid": "UCW-iuU7g3BJnuQ1D3UkqeSA",
     "title": "【 FF7remake / FINAL FANTASY VII REMAKE INTERGRADE 】#7 名作リメイク完全初見！※ネタバレ注意【 春原なずな / Vtuber 】",
-    "date": "2025-08-12T20:00:00.000+09:00",
-    "status": "upcoming",
+    "date": "2025-08-12T20:01:53.000+09:00",
+    "status": "live",
     "thumbnail": "https://i.ytimg.com/vi/JaOr1tZHE54/mqdefault_live.jpg",
     "channelIcon": "https://yt3.googleusercontent.com/0pD1c95Y9X0VrhzWtlf2SRPqdkesiuZxC8Hb5Mg9Xv1WWpQaFCmjITTK8-n5HlNsB-yDbAN4CZA",
     "url": "https://www.youtube.com/watch?v=JaOr1tZHE54"
+  },
+  {
+    "name": "秋桜しゅお",
+    "youtubeid": "UCPjtwOeRQV5EFkCwUycZsgw",
+    "title": "【Among Us 3D 】フレッシュカラーでアモアス！３D激弱の運命とは,,,🧡#フレッシュmongUs【秋桜しゅお/登龍門BOX】",
+    "date": "2025-08-12T21:00:00.000+09:00",
+    "status": "upcoming",
+    "thumbnail": "https://i.ytimg.com/vi/l--N1q2nhaU/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/WBGP05KaXeA21IzCbCeM0QHa0v9maVvVUBDZ2DyfTT62F1wGaW3hLOQBy1gCfuQfEnDNgwbsrQ",
+    "url": "https://www.youtube.com/watch?v=l--N1q2nhaU"
   },
   {
     "name": "カルプ・マーガレット",

@@ -1,14 +1,5 @@
 [
   {
-    "name": "なかもとおまち",
-    "twitchid": "41futon",
-    "title": "お誕生日企画★24時間配はじまったぞおおおおお【#なかもと24時間開店中】",
-    "date": "2025-08-09T21:07:53.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://yt3.googleusercontent.com/h8jNjVckVf08zSV6wdhQ38Fw9OH7kucAprlJsi9w0YdDIL8_Kcv0tHY-1cK8jPK_jRLSJb3t_Q",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/b7c98e229fc58bd87cde_41futon_314722481139_1754741267//thumb/thumb0-320x180.jpg"
-  },
-  {
     "name": "カルプ・マーガレット",
     "twitchid": "carpe_margaret",
     "title": "【 #VVGTA 】オネエがVVGTAにやってきた！！！【 広島弁のオネエVTuber 】",
@@ -207,9 +198,34 @@
   {
     "name": "火乃晴るい",
     "twitchid": "hinoha_rui",
-    "title": "【 #R6SX 】【38日目🔰】のんびりR6S！21時からVALO",
+    "title": "【 #VALORANT 】星祭杯に向けてスクリム！るいるいはコーチだよ！",
     "date": "2025-08-12T18:32:58.000+09:00",
     "status": "live",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_hinoha_rui-320x180.jpg"
+  },
+  {
+    "name": "火乃晴るい",
+    "twitchid": "hinoha_rui",
+    "title": "【 #R6SX 】【38日目🔰】のんびりR6S！21時からVALO",
+    "date": "2025-08-12T18:33:04.000+09:00",
+    "status": "archive",
+    "channelIcon": "https://yt3.googleusercontent.com/8vDFqOVNprKqFE0o7EecXyQleBXIibeJZpXpSgjm5msh4Yd0S8hTsbmYZyOBXa3bUEgBJHZt1w",
+    "thumbnail": "https://vod-secure.twitch.tv/_404/404_processing_320x180.png"
+  },
+  {
+    "name": "しーはむ",
+    "twitchid": "siyham",
+    "title": "花王制作のホラゲー",
+    "date": "2025-08-12T21:07:17.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_siyham-320x180.jpg"
+  },
+  {
+    "name": "水透ユウ",
+    "twitchid": "minato_yu_",
+    "title": "【ソロPEAK】誰だ？友達いないって言ったの👀【ぷろのゔぁ】【新人Vtuber】",
+    "date": "2025-08-12T21:09:20.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_minato_yu_-320x180.jpg"
   }
 ]

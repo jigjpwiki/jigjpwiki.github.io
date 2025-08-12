@@ -1,14 +1,5 @@
 [
   {
-    "name": "駿河ルガ",
-    "twitchid": "suruga_luga",
-    "title": "【スト6】俺がタイガー【Vtuber駿河ルガ】",
-    "date": "2025-08-09T17:00:19.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://yt3.googleusercontent.com/JlY4XEMg9noNa4ShOtky0OwYbKXjnhnje6NQUcwrnJ0UI3C9VQrB-fBNat9QJSUJuuT_Yo1P",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/06752b8ebf3792e416ad_suruga_luga_314721608307_1754726409//thumb/thumb0-320x180.jpg"
-  },
-  {
     "name": "銘兎目あう",
     "twitchid": "Metome_Au",
     "title": "【スト６】みんな倒します👊何かを練習中…答えは最後🥋",
@@ -155,7 +146,7 @@
   {
     "name": "李じゅぴ汰",
     "twitchid": "lee_jupita",
-    "title": "【スト6耐久】1000ラウンド耐久！参加型！Mキンバリー【ストリートファイター6】",
+    "title": "【スト6】遊んでます【ストリートファイター6】",
     "date": "2025-08-11T16:00:35.000+09:00",
     "status": "live",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lee_jupita-320x180.jpg"
@@ -221,5 +212,13 @@
     "date": "2025-08-12T12:31:39.000+09:00",
     "status": "live",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_siyham-320x180.jpg"
+  },
+  {
+    "name": "駿河ルガ",
+    "twitchid": "suruga_luga",
+    "title": "【スト6】21時からトナメ主催します！【Vtuber駿河ルガ】",
+    "date": "2025-08-12T17:00:04.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_suruga_luga-320x180.jpg"
   }
 ]

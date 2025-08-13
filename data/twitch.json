@@ -191,19 +191,11 @@
   {
     "name": "なかもとおまち",
     "twitchid": "41futon",
-    "title": "RUST DAY1 ソロ野生ネコいきます※目標！家を建てる 【SSSRUST】",
-    "date": "2025-08-13T16:26:32.000+09:00",
-    "status": "live",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_41futon-320x180.jpg"
-  },
-  {
-    "name": "なかもとおまち",
-    "twitchid": "41futon",
     "title": "RUST DAY1 ソロ野生ネコいきます 【SSSRUST】",
     "date": "2025-08-13T16:26:38.000+09:00",
     "status": "archive",
     "channelIcon": "https://yt3.googleusercontent.com/h8jNjVckVf08zSV6wdhQ38Fw9OH7kucAprlJsi9w0YdDIL8_Kcv0tHY-1cK8jPK_jRLSJb3t_Q",
-    "thumbnail": "https://vod-secure.twitch.tv/_404/404_processing_320x180.png"
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/6b337033801ccafccad1_41futon_314708012273_1755069992//thumb/thumb0-320x180.jpg"
   },
   {
     "name": "火乃晴るい",
@@ -233,7 +225,7 @@
   {
     "name": "銘兎目あう",
     "twitchid": "Metome_Au",
-    "title": "🔴【スト６】Mケン！ハイマス目指して頑張るよ！🥋",
+    "title": "🔴【スト６】コンボ10回両画面出来るまで出られません！",
     "date": "2025-08-13T18:21:25.000+09:00",
     "status": "live",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_Metome_Au-320x180.jpg"
@@ -263,5 +255,13 @@
     "status": "archive",
     "channelIcon": "https://yt3.googleusercontent.com/Cu6AMAZAEC_DTANKoaloA_4iLCuEUQ8BiAwyHGuOUG9GtoIw6s7mXCv1-49LV1IgODYZfGowzQ",
     "thumbnail": "https://vod-secure.twitch.tv/_404/404_processing_320x180.png"
+  },
+  {
+    "name": "水透ユウ",
+    "twitchid": "minato_yu_",
+    "title": "【ソロぼっち】心を無にして。心頭滅却。【ぷろのゔぁ】【新人Vtuber】",
+    "date": "2025-08-13T21:42:08.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_minato_yu_-320x180.jpg"
   }
 ]

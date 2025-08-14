@@ -1,14 +1,5 @@
 [
   {
-    "name": "銘兎目あう",
-    "twitchid": "Metome_Au",
-    "title": "【スト６】どうも、ケンです！",
-    "date": "2025-08-11T17:58:39.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://yt3.googleusercontent.com/VB97J8AMHex_rkfd6hDhfiGhhVvrL-NNkseP2mMYSWh75sxA_oXctmxK5tV4FYgkM17RUAx6GQ",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/1e4aa1419c2da3e3338a_metome_au_314700595057_1754902713//thumb/thumb0-320x180.jpg"
-  },
-  {
     "name": "真昼ねる",
     "twitchid": "mahiruneru",
     "title": "【参加◎】夏休みはみんなで楽しーじ🍉【ぷろのゔぁ／真昼ねる】",
@@ -201,9 +192,10 @@
     "name": "しーはむ",
     "twitchid": "siyham",
     "title": "みっどさぽ申請 毎日配信14日目",
-    "date": "2025-08-14T13:11:01.000+09:00",
-    "status": "live",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_siyham-320x180.jpg"
+    "date": "2025-08-14T13:11:07.000+09:00",
+    "status": "archive",
+    "channelIcon": "https://yt3.googleusercontent.com/y0zP0Uz7HSLx5dv3xo488Suxk8rJQQUC1wXaymjUBIQIwa25WlVu_VmrsT1xAyVD-jgeL7hs",
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/754fc4a7d9e64b337d04_siyham_314710689010_1755144661//thumb/thumb0-320x180.jpg"
   },
   {
     "name": "駿河ルガ",
@@ -220,5 +212,13 @@
     "date": "2025-08-14T17:16:28.000+09:00",
     "status": "live",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_41futon-320x180.jpg"
+  },
+  {
+    "name": "火乃晴るい",
+    "twitchid": "hinoha_rui",
+    "title": "【 #R6SX 】【40日目🔰】今シーズン中に目指せダイヤ💎",
+    "date": "2025-08-14T18:02:08.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_hinoha_rui-320x180.jpg"
   }
 ]

@@ -192,9 +192,10 @@
     "name": "なかもとおまち",
     "twitchid": "41futon",
     "title": "なつやすみにジェイミー1600いく",
-    "date": "2025-08-14T11:37:48.000+09:00",
-    "status": "live",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_41futon-320x180.jpg"
+    "date": "2025-08-14T11:37:53.000+09:00",
+    "status": "archive",
+    "channelIcon": "https://yt3.googleusercontent.com/h8jNjVckVf08zSV6wdhQ38Fw9OH7kucAprlJsi9w0YdDIL8_Kcv0tHY-1cK8jPK_jRLSJb3t_Q",
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/e599a728455b33c65848_41futon_314740652659_1755139068//thumb/thumb0-320x180.jpg"
   },
   {
     "name": "しーはむ",
@@ -211,5 +212,13 @@
     "date": "2025-08-14T17:03:02.000+09:00",
     "status": "live",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_suruga_luga-320x180.jpg"
+  },
+  {
+    "name": "なかもとおまち",
+    "twitchid": "41futon",
+    "title": "なつやすみになかもとおまち王になる。ELDENRING 完全初見フロムゲー",
+    "date": "2025-08-14T17:16:28.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_41futon-320x180.jpg"
   }
 ]

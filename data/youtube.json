@@ -1,15 +1,5 @@
 [
   {
-    "name": "駿河ルガ",
-    "youtubeid": "UCij_jFd6ggNIYGm0rHwcNtg",
-    "title": "【スト6】サガットランクマ【駿河ルガ/登龍門BOX】",
-    "date": "2025-08-11T17:00:28.000+09:00",
-    "status": "live",
-    "thumbnail": "https://i.ytimg.com/vi/vy9dqh-3oWo/mqdefault.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/JlY4XEMg9noNa4ShOtky0OwYbKXjnhnje6NQUcwrnJ0UI3C9VQrB-fBNat9QJSUJuuT_Yo1P",
-    "url": "https://www.youtube.com/watch?v=vy9dqh-3oWo"
-  },
-  {
     "name": "銘兎目あう",
     "youtubeid": "UCpr-9ssUUgSb0EpDA8bRuTA",
     "title": "【スト６】夏のMケンだぁ！【銘兎目あう】",
@@ -478,6 +468,16 @@
     "thumbnail": "https://i.ytimg.com/vi/evx36bsgAoY/mqdefault.jpg",
     "channelIcon": "https://yt3.googleusercontent.com/JlY4XEMg9noNa4ShOtky0OwYbKXjnhnje6NQUcwrnJ0UI3C9VQrB-fBNat9QJSUJuuT_Yo1P",
     "url": "https://www.youtube.com/watch?v=evx36bsgAoY"
+  },
+  {
+    "name": "駿河ルガ",
+    "youtubeid": "UCij_jFd6ggNIYGm0rHwcNtg",
+    "title": "【スト6】サガットランクマ【駿河ルガ/登龍門BOX】",
+    "date": "2025-08-14T17:03:36.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/gfht-u9RaJ8/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/JlY4XEMg9noNa4ShOtky0OwYbKXjnhnje6NQUcwrnJ0UI3C9VQrB-fBNat9QJSUJuuT_Yo1P",
+    "url": "https://www.youtube.com/watch?v=gfht-u9RaJ8"
   },
   {
     "name": "忠犬しず",

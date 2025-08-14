@@ -192,9 +192,10 @@
     "name": "なかもとおまち",
     "twitchid": "41futon",
     "title": "なつやすみになかもとおまち王になる。ELDENRING 完全初見フロムゲー",
-    "date": "2025-08-14T17:16:28.000+09:00",
-    "status": "live",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_41futon-320x180.jpg"
+    "date": "2025-08-14T17:16:34.000+09:00",
+    "status": "archive",
+    "channelIcon": "https://yt3.googleusercontent.com/h8jNjVckVf08zSV6wdhQ38Fw9OH7kucAprlJsi9w0YdDIL8_Kcv0tHY-1cK8jPK_jRLSJb3t_Q",
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/6d78fc459c3ad48b70cb_41futon_314741527539_1755159388//thumb/thumb0-320x180.jpg"
   },
   {
     "name": "火乃晴るい",
@@ -213,5 +214,13 @@
     "status": "archive",
     "channelIcon": "https://yt3.googleusercontent.com/VB97J8AMHex_rkfd6hDhfiGhhVvrL-NNkseP2mMYSWh75sxA_oXctmxK5tV4FYgkM17RUAx6GQ",
     "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/d8422986423c6ed6260e_metome_au_314712290417_1755165840//thumb/thumb0-320x180.jpg"
+  },
+  {
+    "name": "しーはむ",
+    "twitchid": "siyham",
+    "title": "ねむくなるまで 毎日配信15日目",
+    "date": "2025-08-15T01:04:57.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_siyham-320x180.jpg"
   }
 ]

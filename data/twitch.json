@@ -1,14 +1,5 @@
 [
   {
-    "name": "しーはむ",
-    "twitchid": "siyham",
-    "title": "VEX好きな奴 毎日配信12日目",
-    "date": "2025-08-12T12:31:45.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://yt3.googleusercontent.com/y0zP0Uz7HSLx5dv3xo488Suxk8rJQQUC1wXaymjUBIQIwa25WlVu_VmrsT1xAyVD-jgeL7hs",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/4365c784b67c2dc235ac_siyham_314703527153_1754969499//thumb/thumb0-320x180.jpg"
-  },
-  {
     "name": "駿河ルガ",
     "twitchid": "suruga_luga",
     "title": "【スト6】21時からトナメ主催します！【Vtuber駿河ルガ】",
@@ -227,18 +218,18 @@
   {
     "name": "銘兎目あう",
     "twitchid": "Metome_Au",
-    "title": "🔴【スト６】お盆の朝活！Mケン！ランクやるぞぉぉ！！！お昼までやるよ！",
-    "date": "2025-08-15T08:55:17.000+09:00",
-    "status": "live",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_Metome_Au-320x180.jpg"
-  },
-  {
-    "name": "銘兎目あう",
-    "twitchid": "Metome_Au",
     "title": "🔴【スト６】お盆の朝活！Mケン！ランクやるぞぉぉ！！！",
     "date": "2025-08-15T08:55:22.000+09:00",
     "status": "archive",
     "channelIcon": "https://yt3.googleusercontent.com/VB97J8AMHex_rkfd6hDhfiGhhVvrL-NNkseP2mMYSWh75sxA_oXctmxK5tV4FYgkM17RUAx6GQ",
-    "thumbnail": "https://vod-secure.twitch.tv/_404/404_processing_320x180.png"
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/a2f227ec3cc390323f20_metome_au_314714626673_1755215717//thumb/thumb0-320x180.jpg"
+  },
+  {
+    "name": "しーはむ",
+    "twitchid": "siyham",
+    "title": "VEXたちと生きていく 毎日配信15日目",
+    "date": "2025-08-15T12:32:58.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_siyham-320x180.jpg"
   }
 ]

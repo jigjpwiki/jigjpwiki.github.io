@@ -1,14 +1,5 @@
 [
   {
-    "name": "しーはむ",
-    "twitchid": "siyham",
-    "title": "みっどさぽ申請 毎日配信14日目",
-    "date": "2025-08-14T13:11:07.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://yt3.googleusercontent.com/y0zP0Uz7HSLx5dv3xo488Suxk8rJQQUC1wXaymjUBIQIwa25WlVu_VmrsT1xAyVD-jgeL7hs",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/754fc4a7d9e64b337d04_siyham_314710689010_1755144661//thumb/thumb0-320x180.jpg"
-  },
-  {
     "name": "駿河ルガ",
     "twitchid": "suruga_luga",
     "title": "【スト6】サンサンサガット🌟【Vtuber駿河ルガ】",
@@ -258,5 +249,21 @@
     "date": "2025-08-17T10:00:36.000+09:00",
     "status": "live",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sakuragimisa_v-320x180.jpg"
+  },
+  {
+    "name": "李じゅぴ汰",
+    "twitchid": "lee_jupita",
+    "title": "【違う星のぼくら】ユウちゃんと2画面協力謎解き！後編！【アーカイブはFANBOX限定】",
+    "date": "2025-08-17T13:05:50.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lee_jupita-320x180.jpg"
+  },
+  {
+    "name": "水透ユウ",
+    "twitchid": "minato_yu_",
+    "title": "【違う星のぼくら】後半戦！ぽれらの運命は…？？ w/李じゅぴ汰【新人Vtuber】",
+    "date": "2025-08-17T13:05:52.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_minato_yu_-320x180.jpg"
   }
 ]

@@ -1,14 +1,5 @@
 [
   {
-    "name": "なかもとおまち",
-    "twitchid": "41futon",
-    "title": "なつやすみにジェイミー1600いく",
-    "date": "2025-08-14T11:37:53.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://yt3.googleusercontent.com/h8jNjVckVf08zSV6wdhQ38Fw9OH7kucAprlJsi9w0YdDIL8_Kcv0tHY-1cK8jPK_jRLSJb3t_Q",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/e599a728455b33c65848_41futon_314740652659_1755139068//thumb/thumb0-320x180.jpg"
-  },
-  {
     "name": "しーはむ",
     "twitchid": "siyham",
     "title": "みっどさぽ申請 毎日配信14日目",
@@ -246,9 +237,10 @@
     "name": "李じゅぴ汰",
     "twitchid": "lee_jupita",
     "title": "【スト6】インパクトを返す練習！雑談も多い！座学から！【ストリートファイター6】Mキンバリー",
-    "date": "2025-08-17T01:39:15.000+09:00",
-    "status": "live",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lee_jupita-320x180.jpg"
+    "date": "2025-08-17T01:39:21.000+09:00",
+    "status": "archive",
+    "channelIcon": "https://yt3.googleusercontent.com/QQqec9A1J7eLk9RrRYD9vvk51BBJzcE1leGkU9n4YkwHqht9gmGT1ktmSlKItQtbuMSGuklAFxM",
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/ecf14d351d0cccce1550_lee_jupita_314721204978_1755362355//thumb/thumb0-320x180.jpg"
   },
   {
     "name": "しーはむ",
@@ -257,5 +249,13 @@
     "date": "2025-08-17T09:04:39.000+09:00",
     "status": "live",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_siyham-320x180.jpg"
+  },
+  {
+    "name": "桜樹美彩",
+    "twitchid": "sakuragimisa_v",
+    "title": "【 朝活 / 雑談 】「おはよう」400名様に☀12時～ゲスト：妖小琳様 .ᐟ.ᐟ 朝活雑談🍀初見＆ROM勢大歓迎🐥  #vtuber #みさライなう #桜樹美彩 #新人vtuber",
+    "date": "2025-08-17T10:00:36.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sakuragimisa_v-320x180.jpg"
   }
 ]

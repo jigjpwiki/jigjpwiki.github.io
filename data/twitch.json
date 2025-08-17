@@ -1,14 +1,5 @@
 [
   {
-    "name": "銘兎目あう",
-    "twitchid": "Metome_Au",
-    "title": "🔴【スト６】Mケン！ランクがんばります・・・！！",
-    "date": "2025-08-14T19:04:06.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://yt3.googleusercontent.com/VB97J8AMHex_rkfd6hDhfiGhhVvrL-NNkseP2mMYSWh75sxA_oXctmxK5tV4FYgkM17RUAx6GQ",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/d8422986423c6ed6260e_metome_au_314712290417_1755165840//thumb/thumb0-320x180.jpg"
-  },
-  {
     "name": "しーはむ",
     "twitchid": "siyham",
     "title": "ねむくなるまで 毎日配信15日目",
@@ -231,5 +222,13 @@
     "date": "2025-08-17T17:00:06.000+09:00",
     "status": "live",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_suruga_luga-320x180.jpg"
+  },
+  {
+    "name": "銘兎目あう",
+    "twitchid": "Metome_Au",
+    "title": "🔴【スト６】Mケン！ランク！ハイマスター目指してます🥊",
+    "date": "2025-08-17T19:04:41.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_Metome_Au-320x180.jpg"
   }
 ]

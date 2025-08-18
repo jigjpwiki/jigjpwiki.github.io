@@ -1,32 +1,5 @@
 [
   {
-    "name": "駿河ルガ",
-    "twitchid": "suruga_luga",
-    "title": "【スト6】ニコニコサガット☺",
-    "date": "2025-08-15T21:32:16.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://yt3.googleusercontent.com/JlY4XEMg9noNa4ShOtky0OwYbKXjnhnje6NQUcwrnJ0UI3C9VQrB-fBNat9QJSUJuuT_Yo1P",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/2fb22c79f13f50215319_suruga_luga_314716137074_1755261126//thumb/thumb0-320x180.jpg"
-  },
-  {
-    "name": "水透ユウ",
-    "twitchid": "minato_yu_",
-    "title": "【初BF】戦車でばーん！ロケランでばーん！【ぜにげゔぁ】【新人Vtuber】",
-    "date": "2025-08-15T21:53:23.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://yt3.googleusercontent.com/eVD8Ygm7KVyh3dvWnyebfYlbYpD13ZYQ-Bos8WdR5LDE61A3svHVHCLEY-rM3IQgw9O4uvdd",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/6548a9b01055d9b18c38_minato_yu__314746483059_1755262397//thumb/thumb0-320x180.jpg"
-  },
-  {
-    "name": "雨宮愛結猫",
-    "twitchid": "ayune_amemiya",
-    "title": "【Drops】㍉しらバトルフィールド部💖🎀🐈┊#Battlefield 6┊JP/EN┊#Vtuber┊ぷろのゔぁ",
-    "date": "2025-08-15T22:03:58.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://yt3.googleusercontent.com/kn25wJn77KhPY6MXLYIvYg_VDJk9MDaguKjRFJu2UbLMLSasK_h3Xo4ZaIRM5U7vUbiMQJD-",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/a88ca17148e07b22b25c_ayune_amemiya_314716302578_1755263032//thumb/thumb0-320x180.jpg"
-  },
-  {
     "name": "カルプ・マーガレット",
     "twitchid": "carpe_margaret",
     "title": "【 #VVGTA DAY2 】オネエがVVGTAにやってきた！！！【 広島弁のオネエVTuber 】",
@@ -239,5 +212,13 @@
     "date": "2025-08-18T19:21:43.000+09:00",
     "status": "live",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_Metome_Au-320x180.jpg"
+  },
+  {
+    "name": "しーはむ",
+    "twitchid": "siyham",
+    "title": "E3 mid vex  毎日配信18日目",
+    "date": "2025-08-18T22:00:43.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_siyham-320x180.jpg"
   }
 ]

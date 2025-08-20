@@ -1,15 +1,5 @@
 [
   {
-    "name": "橋門エル",
-    "youtubeid": "UCcNo3POf2DiRs1TPIsEvNgA",
-    "title": "【スト6】長時間配信の弊害#vtuber #ゲーム実況 #スト6",
-    "date": "2025-08-17T19:25:52.000+09:00",
-    "status": "archive",
-    "thumbnail": "https://i.ytimg.com/vi/SOdjdeh8v9A/mqdefault.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/fyNf7EKChxLeUcCXrveXXaSOc-P-5t2NjD32mXWpBDFUhnC0HVKP9lPG0P6GgxFMdMoX29tg",
-    "url": "https://www.youtube.com/watch?v=SOdjdeh8v9A"
-  },
-  {
     "name": "真昼ねる",
     "youtubeid": "UCI-8WyYqMymGPw9vg55HXDQ",
     "title": "【PEAK】イタズラで神AIMを魅せる！ #peak #shorts 【真昼ねる/ぷろのゔぁ】",
@@ -440,24 +430,34 @@
     "url": "https://www.youtube.com/watch?v=YQszaqSuppw"
   },
   {
-    "name": "カルプ・マーガレット",
-    "youtubeid": "UCAANONySj4hE_-ch6G34MZQ",
-    "title": "【 #男性VTuberフォロー祭り 】オネエVTuberが男性VTuberを大紹介しちゃう💕【 広島弁のオネエVTuber 】",
-    "date": "2025-08-20T20:00:00.000+09:00",
-    "status": "upcoming",
-    "thumbnail": "https://i.ytimg.com/vi/9X6KSg3V0eI/mqdefault_live.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/XXH1eOS7_cbzNwQFqJAtIguKNeLGs7-D2Pvf3M0vHlBVdKoYlmTbyMwUv7xjtsv5qM9IodH9",
-    "url": "https://www.youtube.com/watch?v=9X6KSg3V0eI"
+    "name": "春原なずな",
+    "youtubeid": "UCW-iuU7g3BJnuQ1D3UkqeSA",
+    "title": "【FF7remake】リスナーに弱いと言われ続けたチャクラ※ネタバレ注意【 春原なずな / Vtuber 】",
+    "date": "2025-08-20T19:30:01.000+09:00",
+    "status": "archive",
+    "thumbnail": "https://i.ytimg.com/vi/0zj0m4aiHWc/mqdefault.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/0pD1c95Y9X0VrhzWtlf2SRPqdkesiuZxC8Hb5Mg9Xv1WWpQaFCmjITTK8-n5HlNsB-yDbAN4CZA",
+    "url": "https://www.youtube.com/watch?v=0zj0m4aiHWc"
   },
   {
     "name": "春原なずな",
     "youtubeid": "UCW-iuU7g3BJnuQ1D3UkqeSA",
     "title": "【 FF7remake / FINAL FANTASY VII REMAKE INTERGRADE 】#9 名作リメイク完全初見！※ネタバレ注意【 春原なずな / Vtuber 】",
-    "date": "2025-08-20T20:00:00.000+09:00",
-    "status": "upcoming",
+    "date": "2025-08-20T19:58:38.000+09:00",
+    "status": "live",
     "thumbnail": "https://i.ytimg.com/vi/L1FnqKuSC24/mqdefault_live.jpg",
     "channelIcon": "https://yt3.googleusercontent.com/0pD1c95Y9X0VrhzWtlf2SRPqdkesiuZxC8Hb5Mg9Xv1WWpQaFCmjITTK8-n5HlNsB-yDbAN4CZA",
     "url": "https://www.youtube.com/watch?v=L1FnqKuSC24"
+  },
+  {
+    "name": "カルプ・マーガレット",
+    "youtubeid": "UCAANONySj4hE_-ch6G34MZQ",
+    "title": "【 #男性VTuberフォロー祭り 】オネエVTuberが男性VTuberを大紹介しちゃう💕【 広島弁のオネエVTuber 】",
+    "date": "2025-08-20T20:00:33.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/9X6KSg3V0eI/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/XXH1eOS7_cbzNwQFqJAtIguKNeLGs7-D2Pvf3M0vHlBVdKoYlmTbyMwUv7xjtsv5qM9IodH9",
+    "url": "https://www.youtube.com/watch?v=9X6KSg3V0eI"
   },
   {
     "name": "忠犬しず",
@@ -518,5 +518,15 @@
     "thumbnail": "https://i.ytimg.com/vi/mdkduA8pcsw/mqdefault_live.jpg",
     "channelIcon": "https://yt3.googleusercontent.com/F9pOM4qdqqRlcR-l2Ip7QpokNxCCXxTUMv_kRanXgAOmfHKff5mX9880XqYYEaNFx-kEYpjQ",
     "url": "https://www.youtube.com/watch?v=mdkduA8pcsw"
+  },
+  {
+    "name": "宇田わん",
+    "youtubeid": "UCp45rWiRwgYZJUR4bQO-Xgw",
+    "title": "【 同時視聴】「赤髪の白雪姫」ラストを見届けましょう…【 #宇田わん #新人VTuber / #登龍門BOX 】",
+    "date": "2025-08-23T20:00:00.000+09:00",
+    "status": "upcoming",
+    "thumbnail": "https://i.ytimg.com/vi/plRxSAN9nEI/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/bcgws2A-h2HRTCoWgcipC2sgJw_9y0O_5jBi_0QEW4DhAqyPZg4_xLkZw3JJBFZ2DzsYNiGx",
+    "url": "https://www.youtube.com/watch?v=plRxSAN9nEI"
   }
 ]

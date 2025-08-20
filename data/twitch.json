@@ -174,9 +174,10 @@
     "name": "駿河ルガ",
     "twitchid": "suruga_luga",
     "title": "【スト6】雷のサガット【登龍門BOX/駿河ルガ】",
-    "date": "2025-08-20T17:00:29.000+09:00",
-    "status": "live",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_suruga_luga-320x180.jpg"
+    "date": "2025-08-20T17:00:40.000+09:00",
+    "status": "archive",
+    "channelIcon": "https://yt3.googleusercontent.com/JlY4XEMg9noNa4ShOtky0OwYbKXjnhnje6NQUcwrnJ0UI3C9VQrB-fBNat9QJSUJuuT_Yo1P",
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/6ec8a859271fcdf91062_suruga_luga_314765220851_1755676829//thumb/thumb0-320x180.jpg"
   },
   {
     "name": "水透ユウ",
@@ -206,18 +207,10 @@
   {
     "name": "銘兎目あう",
     "twitchid": "Metome_Au",
-    "title": "【雀魂】🔰ぷろのゔぁ雀魂最強決定戦の練習🀄️教えてください！刻子（こーつ）順子（しゅんつ）対子（といつ） 萬子（まんず）筒子（ぴんず）索子（そうず）",
-    "date": "2025-08-20T23:26:38.000+09:00",
-    "status": "live",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_Metome_Au-320x180.jpg"
-  },
-  {
-    "name": "銘兎目あう",
-    "twitchid": "Metome_Au",
     "title": "【雀魂】🔰ぷろのゔぁ雀魂最強決定戦の練習🀄️教えてください！",
     "date": "2025-08-20T23:26:44.000+09:00",
     "status": "archive",
     "channelIcon": "https://yt3.googleusercontent.com/VB97J8AMHex_rkfd6hDhfiGhhVvrL-NNkseP2mMYSWh75sxA_oXctmxK5tV4FYgkM17RUAx6GQ",
-    "thumbnail": "https://vod-secure.twitch.tv/_404/404_processing_320x180.png"
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/ceb232c7f7bb6ed91e21_metome_au_314736434034_1755699998//thumb/thumb0-320x180.jpg"
   }
 ]

@@ -188,14 +188,6 @@
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_suruga_luga-320x180.jpg"
   },
   {
-    "name": "銘兎目あう",
-    "twitchid": "Metome_Au",
-    "title": "【スト６】やっぱりやりたいランクマ🥊✨",
-    "date": "2025-08-20T18:30:46.000+09:00",
-    "status": "live",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_Metome_Au-320x180.jpg"
-  },
-  {
     "name": "水透ユウ",
     "twitchid": "minato_yu_",
     "title": "【初見◎ROM◎】雑談多めがち初心者。ロンならわかります。【ぷろのゔぁ】【新人Vtuber】",
@@ -210,5 +202,13 @@
     "date": "2025-08-20T22:56:35.000+09:00",
     "status": "live",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_hinoha_rui-320x180.jpg"
+  },
+  {
+    "name": "銘兎目あう",
+    "twitchid": "Metome_Au",
+    "title": "【雀魂】🔰ぷろのゔぁ雀魂最強決定戦の練習🀄️教えてください！",
+    "date": "2025-08-20T23:26:38.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_Metome_Au-320x180.jpg"
   }
 ]

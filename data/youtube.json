@@ -1,15 +1,5 @@
 [
   {
-    "name": "真昼ねる",
-    "youtubeid": "UCI-8WyYqMymGPw9vg55HXDQ",
-    "title": "【PEAK】イタズラで神AIMを魅せる！ #peak #shorts 【真昼ねる/ぷろのゔぁ】",
-    "date": "2025-08-18T16:30:30.000+09:00",
-    "status": "archive",
-    "thumbnail": "https://i.ytimg.com/vi/jqNjxti5hLk/mqdefault.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/Cu6AMAZAEC_DTANKoaloA_4iLCuEUQ8BiAwyHGuOUG9GtoIw6s7mXCv1-49LV1IgODYZfGowzQ",
-    "url": "https://www.youtube.com/watch?v=jqNjxti5hLk"
-  },
-  {
     "name": "駿河ルガ",
     "youtubeid": "UCij_jFd6ggNIYGm0rHwcNtg",
     "title": "【スト6】サガットランクマ【駿河ルガ/登龍門BOX】",
@@ -28,16 +18,6 @@
     "thumbnail": "https://i.ytimg.com/vi/nvwWCz3mCrI/mqdefault.jpg",
     "channelIcon": "https://yt3.googleusercontent.com/JwOkUNiR-08GjSI3MS8-Yk6jzONshtmRWZ9tpjOghB10quze7fgbJkhpPTpIfUX00HBACjAR8Q",
     "url": "https://www.youtube.com/watch?v=nvwWCz3mCrI"
-  },
-  {
-    "name": "銘兎目あう",
-    "youtubeid": "UCpr-9ssUUgSb0EpDA8bRuTA",
-    "title": "【Firewatch】腕負傷の為、今日は山にこもります⛰️",
-    "date": "2025-08-18T19:21:49.000+09:00",
-    "status": "live",
-    "thumbnail": "https://i.ytimg.com/vi/28Gbxwz76Kg/mqdefault.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/VB97J8AMHex_rkfd6hDhfiGhhVvrL-NNkseP2mMYSWh75sxA_oXctmxK5tV4FYgkM17RUAx6GQ",
-    "url": "https://www.youtube.com/watch?v=28Gbxwz76Kg"
   },
   {
     "name": "忠犬しず",
@@ -510,6 +490,26 @@
     "url": "https://www.youtube.com/watch?v=dQ3_znvMQm4"
   },
   {
+    "name": "銘兎目あう",
+    "youtubeid": "UCpr-9ssUUgSb0EpDA8bRuTA",
+    "title": "【スト６】あうの初実況をものまねする駿河ルガさん【銘兎目あう】#スト6  #ストリートファイター6 #vtuber  #shorts #sf6",
+    "date": "2025-08-21T16:50:46.000+09:00",
+    "status": "archive",
+    "thumbnail": "https://i.ytimg.com/vi/-BbYrD5TBJM/mqdefault.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/VB97J8AMHex_rkfd6hDhfiGhhVvrL-NNkseP2mMYSWh75sxA_oXctmxK5tV4FYgkM17RUAx6GQ",
+    "url": "https://www.youtube.com/watch?v=-BbYrD5TBJM"
+  },
+  {
+    "name": "駿河ルガ",
+    "youtubeid": "UCij_jFd6ggNIYGm0rHwcNtg",
+    "title": "【スト6】サガットランクマ【駿河ルガ/登龍門BOX】",
+    "date": "2025-08-21T17:00:37.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/T2swScLRZ6w/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/JlY4XEMg9noNa4ShOtky0OwYbKXjnhnje6NQUcwrnJ0UI3C9VQrB-fBNat9QJSUJuuT_Yo1P",
+    "url": "https://www.youtube.com/watch?v=T2swScLRZ6w"
+  },
+  {
     "name": "カルプ・マーガレット",
     "youtubeid": "UCAANONySj4hE_-ch6G34MZQ",
     "title": "【 #男性VTuberフォロー祭り Day2 】オネエVTuberが男性VTuberを大紹介しちゃう💕【 広島弁のオネエVTuber 】",
@@ -518,6 +518,16 @@
     "thumbnail": "https://i.ytimg.com/vi/fiF8FQDsxlo/mqdefault_live.jpg",
     "channelIcon": "https://yt3.googleusercontent.com/XXH1eOS7_cbzNwQFqJAtIguKNeLGs7-D2Pvf3M0vHlBVdKoYlmTbyMwUv7xjtsv5qM9IodH9",
     "url": "https://www.youtube.com/watch?v=fiF8FQDsxlo"
+  },
+  {
+    "name": "春原なずな",
+    "youtubeid": "UCW-iuU7g3BJnuQ1D3UkqeSA",
+    "title": "【 FF7remake / FINAL FANTASY VII REMAKE INTERGRADE 】#10 名作リメイク完全初見！※ネタバレ注意【 春原なずな / Vtuber 】",
+    "date": "2025-08-21T20:00:00.000+09:00",
+    "status": "upcoming",
+    "thumbnail": "https://i.ytimg.com/vi/ZgSxkLSoXj8/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/0pD1c95Y9X0VrhzWtlf2SRPqdkesiuZxC8Hb5Mg9Xv1WWpQaFCmjITTK8-n5HlNsB-yDbAN4CZA",
+    "url": "https://www.youtube.com/watch?v=ZgSxkLSoXj8"
   },
   {
     "name": "宇田わん",

@@ -1,25 +1,5 @@
 [
   {
-    "name": "駿河ルガ",
-    "youtubeid": "UCij_jFd6ggNIYGm0rHwcNtg",
-    "title": "【スト6】サガットランクマ【駿河ルガ/登龍門BOX】",
-    "date": "2025-08-18T18:00:56.000+09:00",
-    "status": "live",
-    "thumbnail": "https://i.ytimg.com/vi/GEhdV04e930/mqdefault.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/JlY4XEMg9noNa4ShOtky0OwYbKXjnhnje6NQUcwrnJ0UI3C9VQrB-fBNat9QJSUJuuT_Yo1P",
-    "url": "https://www.youtube.com/watch?v=GEhdV04e930"
-  },
-  {
-    "name": "魔法少女アルト",
-    "youtubeid": "UCtRhBS8dlaeBgVcnEZOkAbA",
-    "title": "どこからでも切れます(大嘘) #替え歌 #ネタ #革命道中 #魔法少女アルト #アニメ",
-    "date": "2025-08-18T18:01:09.000+09:00",
-    "status": "archive",
-    "thumbnail": "https://i.ytimg.com/vi/nvwWCz3mCrI/mqdefault.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/JwOkUNiR-08GjSI3MS8-Yk6jzONshtmRWZ9tpjOghB10quze7fgbJkhpPTpIfUX00HBACjAR8Q",
-    "url": "https://www.youtube.com/watch?v=nvwWCz3mCrI"
-  },
-  {
     "name": "忠犬しず",
     "youtubeid": "UCPzN3R0x_SciJJ_FP-STpHQ",
     "title": "【 同時視聴 】完全初見！仮面ライダーオーズと機界戦隊ゼンカイジャーの1、2話を見て行くぞ！【 Vtuber/忠犬しず 】#特撮オタク　#特撮女子",
@@ -228,16 +208,6 @@
     "thumbnail": "https://i.ytimg.com/vi/xL4Q68wJjc8/mqdefault.jpg",
     "channelIcon": "https://yt3.googleusercontent.com/0pD1c95Y9X0VrhzWtlf2SRPqdkesiuZxC8Hb5Mg9Xv1WWpQaFCmjITTK8-n5HlNsB-yDbAN4CZA",
     "url": "https://www.youtube.com/watch?v=xL4Q68wJjc8"
-  },
-  {
-    "name": "宇田わん",
-    "youtubeid": "UCp45rWiRwgYZJUR4bQO-Xgw",
-    "title": "【 同時視聴】「赤髪の白雪姫」つづきをみるんだよおおおおおお【 #宇田わん #新人VTuber / #登龍門BOX 】",
-    "date": "2025-08-19T20:04:06.000+09:00",
-    "status": "live",
-    "thumbnail": "https://i.ytimg.com/vi/fQGjilDBD1o/mqdefault.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/bcgws2A-h2HRTCoWgcipC2sgJw_9y0O_5jBi_0QEW4DhAqyPZg4_xLkZw3JJBFZ2DzsYNiGx",
-    "url": "https://www.youtube.com/watch?v=fQGjilDBD1o"
   },
   {
     "name": "カルプ・マーガレット",
@@ -508,6 +478,16 @@
     "thumbnail": "https://i.ytimg.com/vi/T2swScLRZ6w/mqdefault_live.jpg",
     "channelIcon": "https://yt3.googleusercontent.com/JlY4XEMg9noNa4ShOtky0OwYbKXjnhnje6NQUcwrnJ0UI3C9VQrB-fBNat9QJSUJuuT_Yo1P",
     "url": "https://www.youtube.com/watch?v=T2swScLRZ6w"
+  },
+  {
+    "name": "宇田わん",
+    "youtubeid": "UCp45rWiRwgYZJUR4bQO-Xgw",
+    "title": "その耳に名前つけてよ〜#新人vtuber",
+    "date": "2025-08-21T18:01:19.000+09:00",
+    "status": "archive",
+    "thumbnail": "https://i.ytimg.com/vi/xn875w-c5xM/mqdefault.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/bcgws2A-h2HRTCoWgcipC2sgJw_9y0O_5jBi_0QEW4DhAqyPZg4_xLkZw3JJBFZ2DzsYNiGx",
+    "url": "https://www.youtube.com/watch?v=xn875w-c5xM"
   },
   {
     "name": "カルプ・マーガレット",

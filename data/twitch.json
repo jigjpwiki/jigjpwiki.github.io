@@ -137,9 +137,10 @@
     "name": "銘兎目あう",
     "twitchid": "Metome_Au",
     "title": "【スト６】まったりワールドツアーで 一緒にあそぼっ～🐰🥊？",
-    "date": "2025-08-22T18:16:45.000+09:00",
-    "status": "live",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_Metome_Au-320x180.jpg"
+    "date": "2025-08-22T18:16:51.000+09:00",
+    "status": "archive",
+    "channelIcon": "https://yt3.googleusercontent.com/VB97J8AMHex_rkfd6hDhfiGhhVvrL-NNkseP2mMYSWh75sxA_oXctmxK5tV4FYgkM17RUAx6GQ",
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/8c69056e3271eca77754_metome_au_314773495795_1755854205//thumb/thumb0-320x180.jpg"
   },
   {
     "name": "火乃晴るい",
@@ -190,5 +191,13 @@
     "date": "2025-08-22T22:18:03.000+09:00",
     "status": "live",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_ayune_amemiya-320x180.jpg"
+  },
+  {
+    "name": "銘兎目あう",
+    "twitchid": "Metome_Au",
+    "title": "【雀魂】🔰ぷろのゔぁ雀魂最強決定戦の練習🀄️",
+    "date": "2025-08-22T23:56:25.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_Metome_Au-320x180.jpg"
   }
 ]

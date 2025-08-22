@@ -186,5 +186,13 @@
     "status": "archive",
     "channelIcon": "https://yt3.googleusercontent.com/QQqec9A1J7eLk9RrRYD9vvk51BBJzcE1leGkU9n4YkwHqht9gmGT1ktmSlKItQtbuMSGuklAFxM",
     "thumbnail": "https://vod-secure.twitch.tv/_404/404_processing_320x180.png"
+  },
+  {
+    "name": "しーはむ",
+    "twitchid": "siyham",
+    "title": "突発歌枠 アーカイブ無",
+    "date": "2025-08-22T16:15:48.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_siyham-320x180.jpg"
   }
 ]

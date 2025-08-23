@@ -1,14 +1,5 @@
 [
   {
-    "name": "しーはむ",
-    "twitchid": "siyham",
-    "title": "E3vex 初見さんお待ちしてます 毎日配信20日目",
-    "date": "2025-08-20T13:19:39.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://yt3.googleusercontent.com/y0zP0Uz7HSLx5dv3xo488Suxk8rJQQUC1wXaymjUBIQIwa25WlVu_VmrsT1xAyVD-jgeL7hs",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/9691c4b4ca8da14f43f7_siyham_314764646387_1755663573//thumb/thumb0-320x180.jpg"
-  },
-  {
     "name": "駿河ルガ",
     "twitchid": "suruga_luga",
     "title": "【スト6】雷のサガット【登龍門BOX/駿河ルガ】",
@@ -201,9 +192,10 @@
     "name": "桜樹美彩",
     "twitchid": "sakuragimisa_v",
     "title": "【 朝活 / 雑談 】「おはよう」を380名様に🐣定期朝活雑談🍀テーマ：ASMRはエロ！？ 初見＆ROM勢大歓迎🐥  #vtuber #みさライなう #桜樹美彩 #新人vtuber #作業用BGM",
-    "date": "2025-08-23T09:00:12.000+09:00",
-    "status": "live",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sakuragimisa_v-320x180.jpg"
+    "date": "2025-08-23T09:00:17.000+09:00",
+    "status": "archive",
+    "channelIcon": "https://yt3.googleusercontent.com/pDP2GuylW0RN1REDScFAlNklbXaPRqTm2mwT2F7dIo8xoYYFPfspsjGH_G3RagwlKVlQbdw95bY",
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d1m7jfoe9zdc1j/e8e4a090370f8e523f39_sakuragimisa_v_332104135549_1755907212//thumb/thumb0-320x180.jpg"
   },
   {
     "name": "しーはむ",
@@ -213,5 +205,13 @@
     "status": "archive",
     "channelIcon": "https://yt3.googleusercontent.com/y0zP0Uz7HSLx5dv3xo488Suxk8rJQQUC1wXaymjUBIQIwa25WlVu_VmrsT1xAyVD-jgeL7hs",
     "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/5b0ac8ea87bcdc0303c4_siyham_314776521203_1755915172//thumb/thumb0-320x180.jpg"
+  },
+  {
+    "name": "桜樹美彩",
+    "twitchid": "sakuragimisa_v",
+    "title": "【 朝活 / 雑談 】「おはよう」を380名様に🐣定期朝活雑談🍀テーマ：ASMRはエロ！？ 初見＆ROM勢大歓迎🐥  #vtuber #みさライなう #桜樹美彩 #新人vtuber #作業用BGM",
+    "date": "2025-08-23T13:20:15.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sakuragimisa_v-320x180.jpg"
   }
 ]

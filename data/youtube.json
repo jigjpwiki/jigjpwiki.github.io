@@ -1,15 +1,5 @@
 [
   {
-    "name": "宇田わん",
-    "youtubeid": "UCp45rWiRwgYZJUR4bQO-Xgw",
-    "title": "その耳に名前つけてよ〜#新人vtuber",
-    "date": "2025-08-21T18:01:19.000+09:00",
-    "status": "archive",
-    "thumbnail": "https://i.ytimg.com/vi/xn875w-c5xM/mqdefault.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/bcgws2A-h2HRTCoWgcipC2sgJw_9y0O_5jBi_0QEW4DhAqyPZg4_xLkZw3JJBFZ2DzsYNiGx",
-    "url": "https://www.youtube.com/watch?v=xn875w-c5xM"
-  },
-  {
     "name": "火乃晴るい",
     "youtubeid": "UCVI8oEcv0MArpjPdwlRgYRw",
     "title": "【サイレントヒル2】初ホラゲに大ビビりｗｗ #サイレントヒル2 #silenthill2  #shorts",
@@ -48,16 +38,6 @@
     "thumbnail": "https://i.ytimg.com/vi/fiF8FQDsxlo/mqdefault.jpg",
     "channelIcon": "https://yt3.googleusercontent.com/XXH1eOS7_cbzNwQFqJAtIguKNeLGs7-D2Pvf3M0vHlBVdKoYlmTbyMwUv7xjtsv5qM9IodH9",
     "url": "https://www.youtube.com/watch?v=fiF8FQDsxlo"
-  },
-  {
-    "name": "カルプ・マーガレット",
-    "youtubeid": "UCAANONySj4hE_-ch6G34MZQ",
-    "title": "広島弁のオネエVTuberカルプ・マーガレットの雑学 #shorts #雑学",
-    "date": "2025-08-21T20:00:39.000+09:00",
-    "status": "archive",
-    "thumbnail": "https://i.ytimg.com/vi/OnnjHPgymrI/mqdefault.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/XXH1eOS7_cbzNwQFqJAtIguKNeLGs7-D2Pvf3M0vHlBVdKoYlmTbyMwUv7xjtsv5qM9IodH9",
-    "url": "https://www.youtube.com/watch?v=OnnjHPgymrI"
   },
   {
     "name": "春原なずな",
@@ -478,6 +458,36 @@
     "thumbnail": "https://i.ytimg.com/vi/h9r4embxwcI/mqdefault.jpg",
     "channelIcon": "https://yt3.googleusercontent.com/WBGP05KaXeA21IzCbCeM0QHa0v9maVvVUBDZ2DyfTT62F1wGaW3hLOQBy1gCfuQfEnDNgwbsrQ",
     "url": "https://www.youtube.com/watch?v=h9r4embxwcI"
+  },
+  {
+    "name": "宇田わん",
+    "youtubeid": "UCp45rWiRwgYZJUR4bQO-Xgw",
+    "title": "収益化まだですか？#新人vtuber",
+    "date": "2025-08-24T18:00:51.000+09:00",
+    "status": "archive",
+    "thumbnail": "https://i.ytimg.com/vi/cMJgpfB_Iek/mqdefault.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/bcgws2A-h2HRTCoWgcipC2sgJw_9y0O_5jBi_0QEW4DhAqyPZg4_xLkZw3JJBFZ2DzsYNiGx",
+    "url": "https://www.youtube.com/watch?v=cMJgpfB_Iek"
+  },
+  {
+    "name": "駿河ルガ",
+    "youtubeid": "UCij_jFd6ggNIYGm0rHwcNtg",
+    "title": "【スト6】サガットランクマ【駿河ルガ/登龍門BOX】",
+    "date": "2025-08-24T18:02:35.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/kyfv7dIQaKQ/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/JlY4XEMg9noNa4ShOtky0OwYbKXjnhnje6NQUcwrnJ0UI3C9VQrB-fBNat9QJSUJuuT_Yo1P",
+    "url": "https://www.youtube.com/watch?v=kyfv7dIQaKQ"
+  },
+  {
+    "name": "カルプ・マーガレット",
+    "youtubeid": "UCAANONySj4hE_-ch6G34MZQ",
+    "title": "3秒クッキング『シャインマスカットのタルト』 #shorts #vtuber #料理",
+    "date": "2025-08-24T18:02:44.000+09:00",
+    "status": "archive",
+    "thumbnail": "https://i.ytimg.com/vi/xZiNF9YEcS4/mqdefault.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/XXH1eOS7_cbzNwQFqJAtIguKNeLGs7-D2Pvf3M0vHlBVdKoYlmTbyMwUv7xjtsv5qM9IodH9",
+    "url": "https://www.youtube.com/watch?v=xZiNF9YEcS4"
   },
   {
     "name": "春原なずな",

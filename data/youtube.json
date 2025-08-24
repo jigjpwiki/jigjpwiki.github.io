@@ -1,25 +1,5 @@
 [
   {
-    "name": "火乃晴るい",
-    "youtubeid": "UCVI8oEcv0MArpjPdwlRgYRw",
-    "title": "【サイレントヒル2】初ホラゲに大ビビりｗｗ #サイレントヒル2 #silenthill2  #shorts",
-    "date": "2025-08-21T18:56:45.000+09:00",
-    "status": "archive",
-    "thumbnail": "https://i.ytimg.com/vi/__pmPhGNOjg/mqdefault.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/8vDFqOVNprKqFE0o7EecXyQleBXIibeJZpXpSgjm5msh4Yd0S8hTsbmYZyOBXa3bUEgBJHZt1w",
-    "url": "https://www.youtube.com/watch?v=__pmPhGNOjg"
-  },
-  {
-    "name": "秋桜しゅお",
-    "youtubeid": "UCPjtwOeRQV5EFkCwUycZsgw",
-    "title": "【#歌枠配信 】#初見歓迎 🧡 雑談配信前のひとうたいー！！！【秋桜しゅお/登龍門BOX】#karaoke  #vtuber #vsinger  #envtuber",
-    "date": "2025-08-21T19:01:19.000+09:00",
-    "status": "live",
-    "thumbnail": "https://i.ytimg.com/vi/Yef_kV_zn50/mqdefault.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/WBGP05KaXeA21IzCbCeM0QHa0v9maVvVUBDZ2DyfTT62F1wGaW3hLOQBy1gCfuQfEnDNgwbsrQ",
-    "url": "https://www.youtube.com/watch?v=Yef_kV_zn50"
-  },
-  {
     "name": "宇田わん",
     "youtubeid": "UCp45rWiRwgYZJUR4bQO-Xgw",
     "title": "【 同時視聴】「赤髪の白雪姫」2期いきます！！！！【 #宇田わん #新人VTuber / #登龍門BOX 】",
@@ -68,16 +48,6 @@
     "thumbnail": "https://i.ytimg.com/vi/14ADy5qUEyE/mqdefault.jpg",
     "channelIcon": "https://yt3.googleusercontent.com/8LfPowqmhNmaEl9OBYSMUbrC7y1UCCpgvvGo2WhFFk4WKuMiigUwuFQFP2PD1krD6nfVHsQ-ew",
     "url": "https://www.youtube.com/watch?v=14ADy5qUEyE"
-  },
-  {
-    "name": "桜樹美彩",
-    "youtubeid": "UCTwKpTFX1aAXD0xpBqYqTdg",
-    "title": "【 朝活 / ニュース 】金曜日を元気にスタート☀ AM7:00～8:00『ちょこっと』朝活ニュース🍀初見＆ROM勢大歓迎🐥 #vtuber #みさライなう #桜樹美彩 #新人vtuber",
-    "date": "2025-08-22T07:00:21.000+09:00",
-    "status": "live",
-    "thumbnail": "https://i.ytimg.com/vi/vX1_Ca0DMus/mqdefault.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/pDP2GuylW0RN1REDScFAlNklbXaPRqTm2mwT2F7dIo8xoYYFPfspsjGH_G3RagwlKVlQbdw95bY",
-    "url": "https://www.youtube.com/watch?v=vX1_Ca0DMus"
   },
   {
     "name": "秋桜しゅお",
@@ -498,5 +468,15 @@
     "thumbnail": "https://i.ytimg.com/vi/keWXasfGbnQ/mqdefault_live.jpg",
     "channelIcon": "https://yt3.googleusercontent.com/0pD1c95Y9X0VrhzWtlf2SRPqdkesiuZxC8Hb5Mg9Xv1WWpQaFCmjITTK8-n5HlNsB-yDbAN4CZA",
     "url": "https://www.youtube.com/watch?v=keWXasfGbnQ"
+  },
+  {
+    "name": "桜樹美彩",
+    "youtubeid": "UCTwKpTFX1aAXD0xpBqYqTdg",
+    "title": "【 朝活 / 雑談 】「おはよう」を360名様に🐣定期朝活雑談🍀 初見＆ROM勢大歓迎🐥  #vtuber #みさライなう #桜樹美彩 #新人vtuber #作業用BGM",
+    "date": "2025-08-25T07:00:00.000+09:00",
+    "status": "upcoming",
+    "thumbnail": "https://i.ytimg.com/vi/s3eLhZSdEIs/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/pDP2GuylW0RN1REDScFAlNklbXaPRqTm2mwT2F7dIo8xoYYFPfspsjGH_G3RagwlKVlQbdw95bY",
+    "url": "https://www.youtube.com/watch?v=s3eLhZSdEIs"
   }
 ]

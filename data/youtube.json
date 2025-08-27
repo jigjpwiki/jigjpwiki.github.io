@@ -395,7 +395,7 @@
     "title": "【 ＃世界で1番かわいい歌枠リレー  】かわいいばぶぎゃうしゅおの歌きいて🧡【秋桜しゅお/登龍門BOX】",
     "date": "2025-08-27T17:58:37.000+09:00",
     "status": "live",
-    "thumbnail": "https://i.ytimg.com/vi/HAl5zhIdvhw/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/HAl5zhIdvhw/mqdefault.jpg",
     "channelIcon": "https://yt3.googleusercontent.com/WBGP05KaXeA21IzCbCeM0QHa0v9maVvVUBDZ2DyfTT62F1wGaW3hLOQBy1gCfuQfEnDNgwbsrQ",
     "url": "https://www.youtube.com/watch?v=HAl5zhIdvhw"
   },
@@ -450,16 +450,6 @@
     "url": "https://www.youtube.com/watch?v=ez_t24mI3MM"
   },
   {
-    "name": "カルプ・マーガレット",
-    "youtubeid": "UCAANONySj4hE_-ch6G34MZQ",
-    "title": "【#バイオハザード Day1】ホラー苦手なオネエでも、銃が使えたら無双しちゃう！？！？【カルプ・マーガレット】",
-    "date": "2025-08-27T20:00:00.000+09:00",
-    "status": "upcoming",
-    "thumbnail": "https://i.ytimg.com/vi/rQj2fbtiHE4/mqdefault_live.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/XXH1eOS7_cbzNwQFqJAtIguKNeLGs7-D2Pvf3M0vHlBVdKoYlmTbyMwUv7xjtsv5qM9IodH9",
-    "url": "https://www.youtube.com/watch?v=rQj2fbtiHE4"
-  },
-  {
     "name": "春原なずな",
     "youtubeid": "UCW-iuU7g3BJnuQ1D3UkqeSA",
     "title": "【 FINAL FANTASY VII REBIRTH 】#2 リメイク2作品目初見プレイ！※ネタバレ注意【 春原なずな / Vtuber 】",
@@ -468,6 +458,16 @@
     "thumbnail": "https://i.ytimg.com/vi/J43dvP8MHLY/mqdefault_live.jpg",
     "channelIcon": "https://yt3.googleusercontent.com/0pD1c95Y9X0VrhzWtlf2SRPqdkesiuZxC8Hb5Mg9Xv1WWpQaFCmjITTK8-n5HlNsB-yDbAN4CZA",
     "url": "https://www.youtube.com/watch?v=J43dvP8MHLY"
+  },
+  {
+    "name": "カルプ・マーガレット",
+    "youtubeid": "UCAANONySj4hE_-ch6G34MZQ",
+    "title": "【#雑談 / 初見さん大歓迎♡ 】オネエさんがこんばんわを１５０人の子らに言うちゃる💕【 広島弁のオネエVTuber 】",
+    "date": "2025-08-27T21:00:00.000+09:00",
+    "status": "upcoming",
+    "thumbnail": "https://i.ytimg.com/vi/FXn_FjELras/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/XXH1eOS7_cbzNwQFqJAtIguKNeLGs7-D2Pvf3M0vHlBVdKoYlmTbyMwUv7xjtsv5qM9IodH9",
+    "url": "https://www.youtube.com/watch?v=FXn_FjELras"
   },
   {
     "name": "妖小琳",

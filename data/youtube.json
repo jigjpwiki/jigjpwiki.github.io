@@ -1,25 +1,5 @@
 [
   {
-    "name": "宇田わん",
-    "youtubeid": "UCp45rWiRwgYZJUR4bQO-Xgw",
-    "title": "収益化まだですか？#新人vtuber",
-    "date": "2025-08-24T18:00:51.000+09:00",
-    "status": "archive",
-    "thumbnail": "https://i.ytimg.com/vi/cMJgpfB_Iek/mqdefault.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/bcgws2A-h2HRTCoWgcipC2sgJw_9y0O_5jBi_0QEW4DhAqyPZg4_xLkZw3JJBFZ2DzsYNiGx",
-    "url": "https://www.youtube.com/watch?v=cMJgpfB_Iek"
-  },
-  {
-    "name": "駿河ルガ",
-    "youtubeid": "UCij_jFd6ggNIYGm0rHwcNtg",
-    "title": "【スト6】サガットランクマ【駿河ルガ/登龍門BOX】",
-    "date": "2025-08-24T18:02:35.000+09:00",
-    "status": "live",
-    "thumbnail": "https://i.ytimg.com/vi/kyfv7dIQaKQ/mqdefault.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/JlY4XEMg9noNa4ShOtky0OwYbKXjnhnje6NQUcwrnJ0UI3C9VQrB-fBNat9QJSUJuuT_Yo1P",
-    "url": "https://www.youtube.com/watch?v=kyfv7dIQaKQ"
-  },
-  {
     "name": "雨宮愛結猫",
     "youtubeid": "UC65woet7p7bhcjHtSbtlWQw",
     "title": "✯*.麻雀参加型 ┊🔰初心者雀魂部😹雑談しながらのんびり勉強.ᐟ.ᐟˎˊ˗〖Vtuber┊ぷろのゔぁ┊雨宮愛結猫〗",
@@ -413,11 +393,61 @@
     "name": "秋桜しゅお",
     "youtubeid": "UCPjtwOeRQV5EFkCwUycZsgw",
     "title": "【 ＃世界で1番かわいい歌枠リレー  】かわいいばぶぎゃうしゅおの歌きいて🧡【秋桜しゅお/登龍門BOX】",
-    "date": "2025-08-27T18:00:00.000+09:00",
-    "status": "upcoming",
+    "date": "2025-08-27T17:58:37.000+09:00",
+    "status": "live",
     "thumbnail": "https://i.ytimg.com/vi/HAl5zhIdvhw/mqdefault_live.jpg",
     "channelIcon": "https://yt3.googleusercontent.com/WBGP05KaXeA21IzCbCeM0QHa0v9maVvVUBDZ2DyfTT62F1wGaW3hLOQBy1gCfuQfEnDNgwbsrQ",
     "url": "https://www.youtube.com/watch?v=HAl5zhIdvhw"
+  },
+  {
+    "name": "忠犬しず",
+    "youtubeid": "UCPzN3R0x_SciJJ_FP-STpHQ",
+    "title": "【 大号泣 】ウルトラマンガイア41話「アグル復活」を見て限界化した結果",
+    "date": "2025-08-27T18:00:06.000+09:00",
+    "status": "archive",
+    "thumbnail": "https://i.ytimg.com/vi/3y34MwfZTEQ/mqdefault.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/9dVPxoBbcXIeN4O1N6bYiWu3EHHHeaStY7fQYPZfF3thWIP2Sc9Uc6kg56Aj0UHrg5QqqDtn",
+    "url": "https://www.youtube.com/watch?v=3y34MwfZTEQ"
+  },
+  {
+    "name": "魔法少女アルト",
+    "youtubeid": "UCtRhBS8dlaeBgVcnEZOkAbA",
+    "title": "【 実話 】 いろいろ大惨事 #替え歌 #ネタ #残響散歌 #あるある #アニメ",
+    "date": "2025-08-27T18:00:07.000+09:00",
+    "status": "archive",
+    "thumbnail": "https://i.ytimg.com/vi/5gH-PJJhSFs/mqdefault.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/JwOkUNiR-08GjSI3MS8-Yk6jzONshtmRWZ9tpjOghB10quze7fgbJkhpPTpIfUX00HBACjAR8Q",
+    "url": "https://www.youtube.com/watch?v=5gH-PJJhSFs"
+  },
+  {
+    "name": "駿河ルガ",
+    "youtubeid": "UCij_jFd6ggNIYGm0rHwcNtg",
+    "title": "【スト6】アルマスサガットランクマ【駿河ルガ/登龍門BOX】",
+    "date": "2025-08-27T18:00:31.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/KyrCvP-ySoE/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/JlY4XEMg9noNa4ShOtky0OwYbKXjnhnje6NQUcwrnJ0UI3C9VQrB-fBNat9QJSUJuuT_Yo1P",
+    "url": "https://www.youtube.com/watch?v=KyrCvP-ySoE"
+  },
+  {
+    "name": "宇田わん",
+    "youtubeid": "UCp45rWiRwgYZJUR4bQO-Xgw",
+    "title": "そのままでよろしいでしょうか？#新人vtuber",
+    "date": "2025-08-27T18:01:22.000+09:00",
+    "status": "archive",
+    "thumbnail": "https://i.ytimg.com/vi/oVrLifEA3L8/mqdefault.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/bcgws2A-h2HRTCoWgcipC2sgJw_9y0O_5jBi_0QEW4DhAqyPZg4_xLkZw3JJBFZ2DzsYNiGx",
+    "url": "https://www.youtube.com/watch?v=oVrLifEA3L8"
+  },
+  {
+    "name": "李じゅぴ汰",
+    "youtubeid": "UCHsAAyHJhPXuLS6N3Kig6PQ",
+    "title": "【スト6】実は家族が激つよだった件ｗｗｗ【ストリートファイター6】面白切り抜きShorts/グラマス/新人Vtuber",
+    "date": "2025-08-27T18:18:00.000+09:00",
+    "status": "archive",
+    "thumbnail": "https://i.ytimg.com/vi/ez_t24mI3MM/mqdefault.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/QQqec9A1J7eLk9RrRYD9vvk51BBJzcE1leGkU9n4YkwHqht9gmGT1ktmSlKItQtbuMSGuklAFxM",
+    "url": "https://www.youtube.com/watch?v=ez_t24mI3MM"
   },
   {
     "name": "カルプ・マーガレット",

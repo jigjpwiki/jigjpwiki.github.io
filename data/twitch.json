@@ -200,17 +200,19 @@
     "name": "真昼ねる",
     "twitchid": "mahiruneru",
     "title": "【真昼ねる視点】ぷろのゔぁ雀魂最強決定戦本番🀄！※5分遅延あり【ぷろのゔぁ￤VTuber】",
-    "date": "2025-08-28T19:02:14.000+09:00",
-    "status": "live",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_mahiruneru-320x180.jpg"
+    "date": "2025-08-28T19:02:20.000+09:00",
+    "status": "archive",
+    "channelIcon": "https://yt3.googleusercontent.com/Cu6AMAZAEC_DTANKoaloA_4iLCuEUQ8BiAwyHGuOUG9GtoIw6s7mXCv1-49LV1IgODYZfGowzQ",
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/9016de64fd2b45a7f030_mahiruneru_314797267315_1756375334//thumb/thumb0-320x180.jpg"
   },
   {
     "name": "水透ユウ",
     "twitchid": "minato_yu_",
     "title": "【ぷろのゔぁ麻雀大会】役なんも知らん初心者現代リー麻雀【ぷろのゔぁ】【新人Vtuber】",
-    "date": "2025-08-28T19:02:27.000+09:00",
-    "status": "live",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_minato_yu_-320x180.jpg"
+    "date": "2025-08-28T19:02:33.000+09:00",
+    "status": "archive",
+    "channelIcon": "https://yt3.googleusercontent.com/eVD8Ygm7KVyh3dvWnyebfYlbYpD13ZYQ-Bos8WdR5LDE61A3svHVHCLEY-rM3IQgw9O4uvdd",
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/5f5091dface947119fb6_minato_yu__314797268339_1756375347//thumb/thumb0-320x180.jpg"
   },
   {
     "name": "しーはむ",
@@ -233,9 +235,10 @@
     "name": "銘兎目あう",
     "twitchid": "Metome_Au",
     "title": "【銘兎目あう視点】ぷろのゔぁ雀魂最強決定戦！頑張るよ🐰っ🀄🌸",
-    "date": "2025-08-28T19:04:33.000+09:00",
-    "status": "live",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_Metome_Au-320x180.jpg"
+    "date": "2025-08-28T19:04:39.000+09:00",
+    "status": "archive",
+    "channelIcon": "https://yt3.googleusercontent.com/VB97J8AMHex_rkfd6hDhfiGhhVvrL-NNkseP2mMYSWh75sxA_oXctmxK5tV4FYgkM17RUAx6GQ",
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/fbc5a831a06f8d0e86b0_metome_au_314797273459_1756375473//thumb/thumb0-320x180.jpg"
   },
   {
     "name": "李じゅぴ汰",
@@ -249,9 +252,10 @@
     "name": "火乃晴るい",
     "twitchid": "hinoha_rui",
     "title": "【 #ぷろのゔぁ雀魂最強決定戦 】目指すは優勝！！！！！！えいえいおーー！！！🀄",
-    "date": "2025-08-28T19:07:35.000+09:00",
-    "status": "live",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_hinoha_rui-320x180.jpg"
+    "date": "2025-08-28T19:07:41.000+09:00",
+    "status": "archive",
+    "channelIcon": "https://yt3.googleusercontent.com/8vDFqOVNprKqFE0o7EecXyQleBXIibeJZpXpSgjm5msh4Yd0S8hTsbmYZyOBXa3bUEgBJHZt1w",
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/363eddfae424bf694d93_hinoha_rui_314797283187_1756375655//thumb/thumb0-320x180.jpg"
   },
   {
     "name": "雨宮愛結猫",
@@ -274,9 +278,18 @@
   {
     "name": "なかもとおまち",
     "twitchid": "41futon",
-    "title": "ぷろのゔぁ雀弾最強決定戦！優勝するぞ！！！！！！！！！！！！",
+    "title": "麻雀2日目",
     "date": "2025-08-28T21:23:58.000+09:00",
     "status": "live",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_41futon-320x180.jpg"
+  },
+  {
+    "name": "なかもとおまち",
+    "twitchid": "41futon",
+    "title": "ぷろのゔぁ雀弾最強決定戦！優勝するぞ！！！！！！！！！！！！",
+    "date": "2025-08-28T21:24:04.000+09:00",
+    "status": "archive",
+    "channelIcon": "https://yt3.googleusercontent.com/h8jNjVckVf08zSV6wdhQ38Fw9OH7kucAprlJsi9w0YdDIL8_Kcv0tHY-1cK8jPK_jRLSJb3t_Q",
+    "thumbnail": "https://vod-secure.twitch.tv/_404/404_processing_320x180.png"
   }
 ]

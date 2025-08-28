@@ -50,16 +50,6 @@
     "url": "https://www.youtube.com/watch?v=nS5SVp50tag"
   },
   {
-    "name": "桜樹美彩",
-    "youtubeid": "UCTwKpTFX1aAXD0xpBqYqTdg",
-    "title": "【 朝活 / ニュース 】作業用BGMにも最適📻 AM7:00～8:00『ちょこっと』朝活ニュース🍀初見＆ROM勢大歓迎🐥 #vtuber #みさライなう #桜樹美彩 #新人vtuber",
-    "date": "2025-08-26T07:00:19.000+09:00",
-    "status": "live",
-    "thumbnail": "https://i.ytimg.com/vi/TObsU75hNqs/mqdefault.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/pDP2GuylW0RN1REDScFAlNklbXaPRqTm2mwT2F7dIo8xoYYFPfspsjGH_G3RagwlKVlQbdw95bY",
-    "url": "https://www.youtube.com/watch?v=TObsU75hNqs"
-  },
-  {
     "name": "駿河ルガ",
     "youtubeid": "UCij_jFd6ggNIYGm0rHwcNtg",
     "title": "このゲームめくりに昇竜出すの難しすぎませんか #shorts #スト6 #ストリートファイター6",
@@ -330,16 +320,6 @@
     "url": "https://www.youtube.com/watch?v=RqKz6fNGGVg"
   },
   {
-    "name": "橋門エル",
-    "youtubeid": "UCcNo3POf2DiRs1TPIsEvNgA",
-    "title": "【スト6】投げ対応できず台パン #vtuber #ゲーム実況 #スト6",
-    "date": "2025-08-28T06:00:26.000+09:00",
-    "status": "archive",
-    "thumbnail": "https://i.ytimg.com/vi/F0tbBt6qzyI/mqdefault.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/fyNf7EKChxLeUcCXrveXXaSOc-P-5t2NjD32mXWpBDFUhnC0HVKP9lPG0P6GgxFMdMoX29tg",
-    "url": "https://www.youtube.com/watch?v=F0tbBt6qzyI"
-  },
-  {
     "name": "カルプ・マーガレット",
     "youtubeid": "UCAANONySj4hE_-ch6G34MZQ",
     "title": "実力で”アンチ”を黙らせたオネエVTuberの雑学 #shorts #vtuber #雑学",
@@ -385,7 +365,7 @@
     "title": "【スト6】アルマスサガットランクマ【駿河ルガ/登龍門BOX】",
     "date": "2025-08-28T17:00:52.000+09:00",
     "status": "live",
-    "thumbnail": "https://i.ytimg.com/vi/y7h7vYgq60I/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/y7h7vYgq60I/mqdefault.jpg",
     "channelIcon": "https://yt3.googleusercontent.com/JlY4XEMg9noNa4ShOtky0OwYbKXjnhnje6NQUcwrnJ0UI3C9VQrB-fBNat9QJSUJuuT_Yo1P",
     "url": "https://www.youtube.com/watch?v=y7h7vYgq60I"
   },
@@ -470,14 +450,54 @@
     "url": "https://www.youtube.com/watch?v=xImGYsmsZ5Y"
   },
   {
+    "name": "宇田わん",
+    "youtubeid": "UCp45rWiRwgYZJUR4bQO-Xgw",
+    "title": "おめめもかわいい！#新人vtuber",
+    "date": "2025-08-28T19:20:01.000+09:00",
+    "status": "archive",
+    "thumbnail": "https://i.ytimg.com/vi/YXAEZkMw9wg/mqdefault.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/bcgws2A-h2HRTCoWgcipC2sgJw_9y0O_5jBi_0QEW4DhAqyPZg4_xLkZw3JJBFZ2DzsYNiGx",
+    "url": "https://www.youtube.com/watch?v=YXAEZkMw9wg"
+  },
+  {
+    "name": "雨宮愛結猫",
+    "youtubeid": "UC65woet7p7bhcjHtSbtlWQw",
+    "title": "✯*.麻雀初心者大会┊🔰ぷろのゔぁ雀魂最強決定戦 .ᐟ.ᐟˎˊ˗〖Vtuber┊ぷろのゔぁ┊雨宮愛結猫〗",
+    "date": "2025-08-28T19:31:03.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/r1B4vzdrhbE/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/kn25wJn77KhPY6MXLYIvYg_VDJk9MDaguKjRFJu2UbLMLSasK_h3Xo4ZaIRM5U7vUbiMQJD-",
+    "url": "https://www.youtube.com/watch?v=r1B4vzdrhbE"
+  },
+  {
+    "name": "桜樹美彩",
+    "youtubeid": "UCTwKpTFX1aAXD0xpBqYqTdg",
+    "title": "急に点つけられるVTuber （ネタ元：急にめっちゃ悪口言われる奴） #shorts #vtuber #新人vtuber #ネタ",
+    "date": "2025-08-28T20:00:22.000+09:00",
+    "status": "archive",
+    "thumbnail": "https://i.ytimg.com/vi/EHfOGbCENGo/mqdefault.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/pDP2GuylW0RN1REDScFAlNklbXaPRqTm2mwT2F7dIo8xoYYFPfspsjGH_G3RagwlKVlQbdw95bY",
+    "url": "https://www.youtube.com/watch?v=EHfOGbCENGo"
+  },
+  {
     "name": "秋桜しゅお",
     "youtubeid": "UCPjtwOeRQV5EFkCwUycZsgw",
     "title": "【#雑談配信 】夏、、、？夏休み、、、？嫌いじゃああああ！！【秋桜しゅお/登龍門BOX】#新人vtuber",
-    "date": "2025-08-28T20:00:00.000+09:00",
-    "status": "upcoming",
+    "date": "2025-08-28T20:01:24.000+09:00",
+    "status": "live",
     "thumbnail": "https://i.ytimg.com/vi/6ySRb42457c/mqdefault_live.jpg",
     "channelIcon": "https://yt3.googleusercontent.com/WBGP05KaXeA21IzCbCeM0QHa0v9maVvVUBDZ2DyfTT62F1wGaW3hLOQBy1gCfuQfEnDNgwbsrQ",
     "url": "https://www.youtube.com/watch?v=6ySRb42457c"
+  },
+  {
+    "name": "橋門エル",
+    "youtubeid": "UCcNo3POf2DiRs1TPIsEvNgA",
+    "title": "【スト6】リスナーから教わるスーパー四股四股相撲ドリーム #vtuber #ゲーム実況 #スト6",
+    "date": "2025-08-28T20:12:56.000+09:00",
+    "status": "archive",
+    "thumbnail": "https://i.ytimg.com/vi/n6f9BZSw_r4/mqdefault.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/fyNf7EKChxLeUcCXrveXXaSOc-P-5t2NjD32mXWpBDFUhnC0HVKP9lPG0P6GgxFMdMoX29tg",
+    "url": "https://www.youtube.com/watch?v=n6f9BZSw_r4"
   },
   {
     "name": "桜樹美彩",

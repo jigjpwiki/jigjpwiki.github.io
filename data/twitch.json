@@ -1,14 +1,5 @@
 [
   {
-    "name": "水透ユウ",
-    "twitchid": "minato_yu_",
-    "title": "【 スト6→雀魂 】Mブランカでロンしてツモからの麻雀でバチカ【ぷろのゔぁ】【新人Vtuber】",
-    "date": "2025-08-25T21:31:31.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://yt3.googleusercontent.com/eVD8Ygm7KVyh3dvWnyebfYlbYpD13ZYQ-Bos8WdR5LDE61A3svHVHCLEY-rM3IQgw9O4uvdd",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/92df91a31c049395dab9_minato_yu__314756465905_1756125085//thumb/thumb0-320x180.jpg"
-  },
-  {
     "name": "火乃晴るい",
     "twitchid": "hinoha_rui",
     "title": "【 #R6SX 】今シーズン中にダイヤにいきたい！！！深夜の部",
@@ -266,15 +257,25 @@
     "name": "雨宮愛結猫",
     "twitchid": "ayune_amemiya",
     "title": "ぷろのゔぁ雀魂最強決定戦本番💖🎀🐈※5分遅延あり┊#麻雀┊JP/EN┊#Vtuber┊ぷろのゔぁ",
-    "date": "2025-08-28T19:18:44.000+09:00",
-    "status": "live",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_ayune_amemiya-320x180.jpg"
+    "date": "2025-08-28T19:18:50.000+09:00",
+    "status": "archive",
+    "channelIcon": "https://yt3.googleusercontent.com/kn25wJn77KhPY6MXLYIvYg_VDJk9MDaguKjRFJu2UbLMLSasK_h3Xo4ZaIRM5U7vUbiMQJD-",
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/a32e1f6730fa8e20e7a7_ayune_amemiya_314766587122_1756376324//thumb/thumb0-320x180.jpg"
   },
   {
     "name": "なかもとおまち",
     "twitchid": "41futon",
     "title": "ぷろのゔぁ雀弾最強決定戦！優勝するぞ！！！！！！！！！！！！",
-    "date": "2025-08-28T21:05:19.000+09:00",
+    "date": "2025-08-28T21:05:25.000+09:00",
+    "status": "archive",
+    "channelIcon": "https://yt3.googleusercontent.com/h8jNjVckVf08zSV6wdhQ38Fw9OH7kucAprlJsi9w0YdDIL8_Kcv0tHY-1cK8jPK_jRLSJb3t_Q",
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/f8e6f13d15a6a8934dd8_41futon_314767862769_1756382719//thumb/thumb0-320x180.jpg"
+  },
+  {
+    "name": "なかもとおまち",
+    "twitchid": "41futon",
+    "title": "ぷろのゔぁ雀弾最強決定戦！優勝するぞ！！！！！！！！！！！！",
+    "date": "2025-08-28T21:23:58.000+09:00",
     "status": "live",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_41futon-320x180.jpg"
   }

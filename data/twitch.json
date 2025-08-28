@@ -1,14 +1,5 @@
 [
   {
-    "name": "火乃晴るい",
-    "twitchid": "hinoha_rui",
-    "title": "【 #R6SX 】今シーズン中にダイヤにいきたい！！！深夜の部",
-    "date": "2025-08-26T00:21:33.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://yt3.googleusercontent.com/8vDFqOVNprKqFE0o7EecXyQleBXIibeJZpXpSgjm5msh4Yd0S8hTsbmYZyOBXa3bUEgBJHZt1w",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/6e38b4301b2eb21d5840_hinoha_rui_314787152243_1756135288//thumb/thumb0-320x180.jpg"
-  },
-  {
     "name": "桜樹美彩",
     "twitchid": "sakuragimisa_v",
     "title": "【 朝活 / 雑談 】お目覚め👀「おはよう」を360名様に🐣定期朝活雑談🍀 初見＆ROM勢大歓迎🐥  #vtuber #みさライなう #桜樹美彩 #新人vtuber #作業用BGM",
@@ -320,5 +311,13 @@
     "status": "archive",
     "channelIcon": "https://yt3.googleusercontent.com/8vDFqOVNprKqFE0o7EecXyQleBXIibeJZpXpSgjm5msh4Yd0S8hTsbmYZyOBXa3bUEgBJHZt1w",
     "thumbnail": "https://vod-secure.twitch.tv/_404/404_processing_320x180.png"
+  },
+  {
+    "name": "李じゅぴ汰",
+    "twitchid": "lee_jupita",
+    "title": "【雀魂と雑談】振り返ったり動画見たり話したり",
+    "date": "2025-08-29T00:22:45.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lee_jupita-320x180.jpg"
   }
 ]

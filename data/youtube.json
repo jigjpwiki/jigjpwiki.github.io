@@ -1,25 +1,5 @@
 [
   {
-    "name": "宇田わん",
-    "youtubeid": "UCp45rWiRwgYZJUR4bQO-Xgw",
-    "title": "お口かわいいね！#新人vtuber",
-    "date": "2025-08-26T18:01:13.000+09:00",
-    "status": "archive",
-    "thumbnail": "https://i.ytimg.com/vi/r_nySRJLUlM/mqdefault.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/bcgws2A-h2HRTCoWgcipC2sgJw_9y0O_5jBi_0QEW4DhAqyPZg4_xLkZw3JJBFZ2DzsYNiGx",
-    "url": "https://www.youtube.com/watch?v=r_nySRJLUlM"
-  },
-  {
-    "name": "忠犬しず",
-    "youtubeid": "UCPzN3R0x_SciJJ_FP-STpHQ",
-    "title": "特撮オタクVTuberのウルサマ参戦レポ＆戦利品紹介！",
-    "date": "2025-08-26T18:30:12.000+09:00",
-    "status": "archive",
-    "thumbnail": "https://i.ytimg.com/vi/PGFhA-mO028/mqdefault.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/9dVPxoBbcXIeN4O1N6bYiWu3EHHHeaStY7fQYPZfF3thWIP2Sc9Uc6kg56Aj0UHrg5QqqDtn",
-    "url": "https://www.youtube.com/watch?v=PGFhA-mO028"
-  },
-  {
     "name": "カルプ・マーガレット",
     "youtubeid": "UCAANONySj4hE_-ch6G34MZQ",
     "title": "【 #apex 】オネエの息抜きAPEX～！ランクマっ！！！【 広島弁のオネエVTuber 】",
@@ -450,6 +430,76 @@
     "url": "https://www.youtube.com/watch?v=WuG3sp33k54"
   },
   {
+    "name": "橋門エル",
+    "youtubeid": "UCcNo3POf2DiRs1TPIsEvNgA",
+    "title": "【スト6】投げ対応できず台パン #vtuber #ゲーム実況 #スト6",
+    "date": "2025-08-29T17:39:43.000+09:00",
+    "status": "archive",
+    "thumbnail": "https://i.ytimg.com/vi/Lb7kyOjXE1k/mqdefault.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/fyNf7EKChxLeUcCXrveXXaSOc-P-5t2NjD32mXWpBDFUhnC0HVKP9lPG0P6GgxFMdMoX29tg",
+    "url": "https://www.youtube.com/watch?v=Lb7kyOjXE1k"
+  },
+  {
+    "name": "銘兎目あう",
+    "youtubeid": "UCpr-9ssUUgSb0EpDA8bRuTA",
+    "title": "【スト６】私の大好きなケ…ケン…！？🥋ｗ【銘兎目あう】#スト6  #ストリートファイター6 #vtuber  #shorts #sf6",
+    "date": "2025-08-29T17:46:26.000+09:00",
+    "status": "archive",
+    "thumbnail": "https://i.ytimg.com/vi/E8Y_7E2hLM0/mqdefault.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/VB97J8AMHex_rkfd6hDhfiGhhVvrL-NNkseP2mMYSWh75sxA_oXctmxK5tV4FYgkM17RUAx6GQ",
+    "url": "https://www.youtube.com/watch?v=E8Y_7E2hLM0"
+  },
+  {
+    "name": "駿河ルガ",
+    "youtubeid": "UCij_jFd6ggNIYGm0rHwcNtg",
+    "title": "【スト6】アルマスサガットランクマ【駿河ルガ/登龍門BOX】",
+    "date": "2025-08-29T18:00:22.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/VROOLIHymeU/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/JlY4XEMg9noNa4ShOtky0OwYbKXjnhnje6NQUcwrnJ0UI3C9VQrB-fBNat9QJSUJuuT_Yo1P",
+    "url": "https://www.youtube.com/watch?v=VROOLIHymeU"
+  },
+  {
+    "name": "宇田わん",
+    "youtubeid": "UCp45rWiRwgYZJUR4bQO-Xgw",
+    "title": "個人勢卒業式の歌🎓#新人vtuber",
+    "date": "2025-08-29T18:00:32.000+09:00",
+    "status": "archive",
+    "thumbnail": "https://i.ytimg.com/vi/I0veMk-fuP0/mqdefault.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/bcgws2A-h2HRTCoWgcipC2sgJw_9y0O_5jBi_0QEW4DhAqyPZg4_xLkZw3JJBFZ2DzsYNiGx",
+    "url": "https://www.youtube.com/watch?v=I0veMk-fuP0"
+  },
+  {
+    "name": "忠犬しず",
+    "youtubeid": "UCPzN3R0x_SciJJ_FP-STpHQ",
+    "title": "集計！特撮オタクに聞いた人気特撮作品大発表！#ランキング",
+    "date": "2025-08-29T18:00:35.000+09:00",
+    "status": "archive",
+    "thumbnail": "https://i.ytimg.com/vi/JkF27KFQNvY/mqdefault.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/9dVPxoBbcXIeN4O1N6bYiWu3EHHHeaStY7fQYPZfF3thWIP2Sc9Uc6kg56Aj0UHrg5QqqDtn",
+    "url": "https://www.youtube.com/watch?v=JkF27KFQNvY"
+  },
+  {
+    "name": "魔法少女アルト",
+    "youtubeid": "UCtRhBS8dlaeBgVcnEZOkAbA",
+    "title": "☝️ リズムに合わせて指を動かしてね☝️ THUMB DANCE CHALLENGE!  #funny #InteractiveGame #rhythmgame #ThumbChallenge",
+    "date": "2025-08-29T18:01:16.000+09:00",
+    "status": "archive",
+    "thumbnail": "https://i.ytimg.com/vi/mctIOVo2mJ4/mqdefault.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/JwOkUNiR-08GjSI3MS8-Yk6jzONshtmRWZ9tpjOghB10quze7fgbJkhpPTpIfUX00HBACjAR8Q",
+    "url": "https://www.youtube.com/watch?v=mctIOVo2mJ4"
+  },
+  {
+    "name": "魔狩メグ",
+    "youtubeid": "UCc-A8oC0aTLd9YLfq-mgQTw",
+    "title": "#雑談  一週間おつかれぃ~！　#shorts  #縦型配信",
+    "date": "2025-08-29T18:30:00.000+09:00",
+    "status": "upcoming",
+    "thumbnail": "https://i.ytimg.com/vi/6ZTn-VfA7NM/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/F9pOM4qdqqRlcR-l2Ip7QpokNxCCXxTUMv_kRanXgAOmfHKff5mX9880XqYYEaNFx-kEYpjQ",
+    "url": "https://www.youtube.com/watch?v=6ZTn-VfA7NM"
+  },
+  {
     "name": "春原なずな",
     "youtubeid": "UCW-iuU7g3BJnuQ1D3UkqeSA",
     "title": "【 FINAL FANTASY VII REBIRTH 】#4 リメイク2作品目初見プレイ！※ネタバレ注意【 春原なずな / Vtuber 】",
@@ -472,6 +522,16 @@
   {
     "name": "忠犬しず",
     "youtubeid": "UCPzN3R0x_SciJJ_FP-STpHQ",
+    "title": "【 同時視聴 】金曜ロードショー同時視聴「もののけ姫」を一緒に見よう【 忠犬しず/Vtuber 】",
+    "date": "2025-08-29T21:40:00.000+09:00",
+    "status": "upcoming",
+    "thumbnail": "https://i.ytimg.com/vi/0-qc_Bzo7Y8/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/9dVPxoBbcXIeN4O1N6bYiWu3EHHHeaStY7fQYPZfF3thWIP2Sc9Uc6kg56Aj0UHrg5QqqDtn",
+    "url": "https://www.youtube.com/watch?v=0-qc_Bzo7Y8"
+  },
+  {
+    "name": "忠犬しず",
+    "youtubeid": "UCPzN3R0x_SciJJ_FP-STpHQ",
     "title": "【 同時視聴 】ウルトラマンオメガ 特別総集編「アカジナリアキの日常」  とウルトラマンマックス3、4話を見るぞ！【 Vtuber/忠犬しず 】#特撮女子　#特撮オタク",
     "date": "2025-08-30T09:15:00.000+09:00",
     "status": "upcoming",
@@ -488,6 +548,16 @@
     "thumbnail": "https://i.ytimg.com/vi/Je1pms9OCaU/mqdefault_live.jpg",
     "channelIcon": "https://yt3.googleusercontent.com/9dVPxoBbcXIeN4O1N6bYiWu3EHHHeaStY7fQYPZfF3thWIP2Sc9Uc6kg56Aj0UHrg5QqqDtn",
     "url": "https://www.youtube.com/watch?v=Je1pms9OCaU"
+  },
+  {
+    "name": "魔狩メグ",
+    "youtubeid": "UCc-A8oC0aTLd9YLfq-mgQTw",
+    "title": "ご報告",
+    "date": "2025-08-31T19:15:00.000+09:00",
+    "status": "upcoming",
+    "thumbnail": "https://i.ytimg.com/vi/kUzMkXpqK1Q/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/F9pOM4qdqqRlcR-l2Ip7QpokNxCCXxTUMv_kRanXgAOmfHKff5mX9880XqYYEaNFx-kEYpjQ",
+    "url": "https://www.youtube.com/watch?v=kUzMkXpqK1Q"
   },
   {
     "name": "妖小琳",

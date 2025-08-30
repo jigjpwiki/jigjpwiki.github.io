@@ -1,14 +1,5 @@
 [
   {
-    "name": "火乃晴るい",
-    "twitchid": "hinoha_rui",
-    "title": "【 #R6SX 】💎目指して今日もソロランク頑張る",
-    "date": "2025-08-28T01:08:02.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://yt3.googleusercontent.com/8vDFqOVNprKqFE0o7EecXyQleBXIibeJZpXpSgjm5msh4Yd0S8hTsbmYZyOBXa3bUEgBJHZt1w",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/2fe37552525403fe2bf2_hinoha_rui_314765032049_1756310876//thumb/thumb0-320x180.jpg"
-  },
-  {
     "name": "雨宮愛結猫",
     "twitchid": "ayune_amemiya",
     "title": "雑談麻雀 段位戦 ジャンゴ目指す💖🎀🐈┊#麻雀┊JP/EN┊#Vtuber┊ぷろのゔぁ",
@@ -313,5 +304,13 @@
     "status": "archive",
     "channelIcon": "https://yt3.googleusercontent.com/VB97J8AMHex_rkfd6hDhfiGhhVvrL-NNkseP2mMYSWh75sxA_oXctmxK5tV4FYgkM17RUAx6GQ",
     "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/7a0d367f5f90421b61f9_metome_au_314774782834_1756551639//thumb/thumb0-320x180.jpg"
+  },
+  {
+    "name": "水透ユウ",
+    "twitchid": "minato_yu_",
+    "title": "【初見◎ROM◎】深夜雑談！メインお話しながら麻雀する！【ぷろのゔぁ】【新人Vtuber】",
+    "date": "2025-08-31T01:07:23.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_minato_yu_-320x180.jpg"
   }
 ]

@@ -170,16 +170,6 @@
     "url": "https://www.youtube.com/watch?v=xImGYsmsZ5Y"
   },
   {
-    "name": "宇田わん",
-    "youtubeid": "UCp45rWiRwgYZJUR4bQO-Xgw",
-    "title": "おめめもかわいい！#新人vtuber",
-    "date": "2025-08-28T19:20:01.000+09:00",
-    "status": "archive",
-    "thumbnail": "https://i.ytimg.com/vi/YXAEZkMw9wg/mqdefault.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/bcgws2A-h2HRTCoWgcipC2sgJw_9y0O_5jBi_0QEW4DhAqyPZg4_xLkZw3JJBFZ2DzsYNiGx",
-    "url": "https://www.youtube.com/watch?v=YXAEZkMw9wg"
-  },
-  {
     "name": "雨宮愛結猫",
     "youtubeid": "UC65woet7p7bhcjHtSbtlWQw",
     "title": "✯*.麻雀初心者大会┊🔰ぷろのゔぁ雀魂最強決定戦 .ᐟ.ᐟˎˊ˗〖Vtuber┊ぷろのゔぁ┊雨宮愛結猫〗",
@@ -415,7 +405,7 @@
     "title": "【スト6参加型/耐久】インパクト返せるようになったかもしれない李。朝だよ。Mキンバリー②【ストリートファイター6】",
     "date": "2025-08-30T07:54:05.000+09:00",
     "status": "live",
-    "thumbnail": "https://i.ytimg.com/vi/nJwSA4GZtC4/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/nJwSA4GZtC4/mqdefault.jpg",
     "channelIcon": "https://yt3.googleusercontent.com/QQqec9A1J7eLk9RrRYD9vvk51BBJzcE1leGkU9n4YkwHqht9gmGT1ktmSlKItQtbuMSGuklAFxM",
     "url": "https://www.youtube.com/watch?v=nJwSA4GZtC4"
   },
@@ -462,7 +452,7 @@
   {
     "name": "魔狩メグ",
     "youtubeid": "UCc-A8oC0aTLd9YLfq-mgQTw",
-    "title": "【 FINAL FANTASY XIV 】復帰勢なのでまずは操作を思い出す旅 黄金編/パッチ7.0 #魔狩メグ ※ネタバレあり※",
+    "title": "【 FINAL FANTASY XIV 】「未知なる冒険へ」から復帰勢が操作を思い出しながらメインクエを進めていく。 黄金編/パッチ7.0 #魔狩メグ ※ネタバレあり※",
     "date": "2025-08-30T16:02:00.000+09:00",
     "status": "live",
     "thumbnail": "https://i.ytimg.com/vi/LdyEVI3GVJk/mqdefault_live.jpg",
@@ -568,6 +558,16 @@
     "thumbnail": "https://i.ytimg.com/vi/Je1pms9OCaU/mqdefault_live.jpg",
     "channelIcon": "https://yt3.googleusercontent.com/9dVPxoBbcXIeN4O1N6bYiWu3EHHHeaStY7fQYPZfF3thWIP2Sc9Uc6kg56Aj0UHrg5QqqDtn",
     "url": "https://www.youtube.com/watch?v=Je1pms9OCaU"
+  },
+  {
+    "name": "宇田わん",
+    "youtubeid": "UCp45rWiRwgYZJUR4bQO-Xgw",
+    "title": "【 罰ゲームホラゲ 】花王さんのしずかなおそうじをやります…【 #宇田わん #新人VTuber / #登龍門BOX 】",
+    "date": "2025-08-30T21:00:00.000+09:00",
+    "status": "upcoming",
+    "thumbnail": "https://i.ytimg.com/vi/-cDrvwt_LEg/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/bcgws2A-h2HRTCoWgcipC2sgJw_9y0O_5jBi_0QEW4DhAqyPZg4_xLkZw3JJBFZ2DzsYNiGx",
+    "url": "https://www.youtube.com/watch?v=-cDrvwt_LEg"
   },
   {
     "name": "桜樹美彩",

@@ -1,14 +1,5 @@
 [
   {
-    "name": "水透ユウ",
-    "twitchid": "minato_yu_",
-    "title": "【初見◎ROM◎】おはようする枠。【ぷろのゔぁ】【新人Vtuber】",
-    "date": "2025-08-29T07:34:03.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://yt3.googleusercontent.com/eVD8Ygm7KVyh3dvWnyebfYlbYpD13ZYQ-Bos8WdR5LDE61A3svHVHCLEY-rM3IQgw9O4uvdd",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/efb5e7bab100e7969abe_minato_yu__314768711538_1756420437//thumb/thumb0-320x180.jpg"
-  },
-  {
     "name": "しーはむ",
     "twitchid": "siyham",
     "title": "おひさしぶりんこ🐹",
@@ -204,5 +195,13 @@
     "date": "2025-09-01T07:00:21.000+09:00",
     "status": "live",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sakuragimisa_v-320x180.jpg"
+  },
+  {
+    "name": "水透ユウ",
+    "twitchid": "minato_yu_",
+    "title": "【初見◎ROM◎】9月朝活月間！9/1のおはよう☀️【ぷろのゔぁ】【新人Vtuber】",
+    "date": "2025-09-01T07:30:59.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_minato_yu_-320x180.jpg"
   }
 ]

@@ -1,25 +1,5 @@
 [
   {
-    "name": "李じゅぴ汰",
-    "youtubeid": "UCHsAAyHJhPXuLS6N3Kig6PQ",
-    "title": "【雀魂】最後の練習！優しく教えてね【雑談/麻雀】新人Vtuber",
-    "date": "2025-08-28T16:16:59.000+09:00",
-    "status": "live",
-    "thumbnail": "https://i.ytimg.com/vi/E5bIq5Q_4vo/mqdefault.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/QQqec9A1J7eLk9RrRYD9vvk51BBJzcE1leGkU9n4YkwHqht9gmGT1ktmSlKItQtbuMSGuklAFxM",
-    "url": "https://www.youtube.com/watch?v=E5bIq5Q_4vo"
-  },
-  {
-    "name": "駿河ルガ",
-    "youtubeid": "UCij_jFd6ggNIYGm0rHwcNtg",
-    "title": "【スト6】アルマスサガットランクマ【駿河ルガ/登龍門BOX】",
-    "date": "2025-08-28T17:00:52.000+09:00",
-    "status": "live",
-    "thumbnail": "https://i.ytimg.com/vi/y7h7vYgq60I/mqdefault.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/JlY4XEMg9noNa4ShOtky0OwYbKXjnhnje6NQUcwrnJ0UI3C9VQrB-fBNat9QJSUJuuT_Yo1P",
-    "url": "https://www.youtube.com/watch?v=y7h7vYgq60I"
-  },
-  {
     "name": "春原なずな",
     "youtubeid": "UCW-iuU7g3BJnuQ1D3UkqeSA",
     "title": "【FF7REBIRTH】サイドクエストが楽しくてメインが進まない※ネタバレ注意【 春原なずな / Vtuber 】",
@@ -538,6 +518,16 @@
     "thumbnail": "https://i.ytimg.com/vi/spZRUveRppU/mqdefault_live.jpg",
     "channelIcon": "https://yt3.googleusercontent.com/bcgws2A-h2HRTCoWgcipC2sgJw_9y0O_5jBi_0QEW4DhAqyPZg4_xLkZw3JJBFZ2DzsYNiGx",
     "url": "https://www.youtube.com/watch?v=spZRUveRppU"
+  },
+  {
+    "name": "春原なずな",
+    "youtubeid": "UCW-iuU7g3BJnuQ1D3UkqeSA",
+    "title": "【 FINAL FANTASY VII REBIRTH 】#6 リメイク2作品目初見プレイ！※ネタバレ注意【 春原なずな / Vtuber 】",
+    "date": "2025-08-31T19:00:00.000+09:00",
+    "status": "upcoming",
+    "thumbnail": "https://i.ytimg.com/vi/BnDfD6Ot2oE/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/0pD1c95Y9X0VrhzWtlf2SRPqdkesiuZxC8Hb5Mg9Xv1WWpQaFCmjITTK8-n5HlNsB-yDbAN4CZA",
+    "url": "https://www.youtube.com/watch?v=BnDfD6Ot2oE"
   },
   {
     "name": "宇田わん",

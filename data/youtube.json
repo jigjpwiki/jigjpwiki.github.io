@@ -300,16 +300,6 @@
     "url": "https://www.youtube.com/watch?v=QWBrf56A3p8"
   },
   {
-    "name": "宇田わん",
-    "youtubeid": "UCp45rWiRwgYZJUR4bQO-Xgw",
-    "title": "犬とのことなので…🐶#新人vtuber",
-    "date": "2025-08-30T18:00:32.000+09:00",
-    "status": "archive",
-    "thumbnail": "https://i.ytimg.com/vi/ELkjgjDM3g4/mqdefault.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/bcgws2A-h2HRTCoWgcipC2sgJw_9y0O_5jBi_0QEW4DhAqyPZg4_xLkZw3JJBFZ2DzsYNiGx",
-    "url": "https://www.youtube.com/watch?v=ELkjgjDM3g4"
-  },
-  {
     "name": "忠犬しず",
     "youtubeid": "UCPzN3R0x_SciJJ_FP-STpHQ",
     "title": "ウルトラヒーローズEXPO サマーフェスティバル 2025の参戦レポ！",
@@ -460,16 +450,6 @@
     "url": "https://www.youtube.com/watch?v=lWCIJmYDl3o"
   },
   {
-    "name": "忠犬しず",
-    "youtubeid": "UCPzN3R0x_SciJJ_FP-STpHQ",
-    "title": "【 ニチアサ同時視聴 】仮面ライダーガヴ最終話とキミとアイドルプリキュア♪30話を一緒に見よう！【 忠犬しず/Vtuber 】#特撮オタク　#特撮女子",
-    "date": "2025-08-31T08:10:20.000+09:00",
-    "status": "live",
-    "thumbnail": "https://i.ytimg.com/vi/h7nNAkORi98/mqdefault_live.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/9dVPxoBbcXIeN4O1N6bYiWu3EHHHeaStY7fQYPZfF3thWIP2Sc9Uc6kg56Aj0UHrg5QqqDtn",
-    "url": "https://www.youtube.com/watch?v=h7nNAkORi98"
-  },
-  {
     "name": "桜樹美彩",
     "youtubeid": "UCTwKpTFX1aAXD0xpBqYqTdg",
     "title": "【 朝活 / 耐久 】登録者10000名様まで耐久縦型 雑談🍀1枠目🐣初見さん100名にご挨拶目標✨ 初見＆ROM勢大歓迎🐥 #vtuber #みさライなう #桜樹美彩 #新人vtuber",
@@ -515,9 +495,39 @@
     "title": "【 妨害 】今回こそは叩ける！！みんなに妨害される「太鼓の達人」【 #宇田わん #新人VTuber / #登龍門BOX 】",
     "date": "2025-08-31T15:29:30.000+09:00",
     "status": "live",
-    "thumbnail": "https://i.ytimg.com/vi/spZRUveRppU/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/spZRUveRppU/mqdefault.jpg",
     "channelIcon": "https://yt3.googleusercontent.com/bcgws2A-h2HRTCoWgcipC2sgJw_9y0O_5jBi_0QEW4DhAqyPZg4_xLkZw3JJBFZ2DzsYNiGx",
     "url": "https://www.youtube.com/watch?v=spZRUveRppU"
+  },
+  {
+    "name": "忠犬しず",
+    "youtubeid": "UCPzN3R0x_SciJJ_FP-STpHQ",
+    "title": "【 イラストメイキング 】元プロイラストレーターがパトレイバーのイングラム描いてみた!【 VTuber/忠犬しず 】",
+    "date": "2025-08-31T18:00:39.000+09:00",
+    "status": "archive",
+    "thumbnail": "https://i.ytimg.com/vi/S7QtYiW4Qgg/mqdefault.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/9dVPxoBbcXIeN4O1N6bYiWu3EHHHeaStY7fQYPZfF3thWIP2Sc9Uc6kg56Aj0UHrg5QqqDtn",
+    "url": "https://www.youtube.com/watch?v=S7QtYiW4Qgg"
+  },
+  {
+    "name": "宇田わん",
+    "youtubeid": "UCp45rWiRwgYZJUR4bQO-Xgw",
+    "title": "5000人達成しました㊗️#新人vtuber",
+    "date": "2025-08-31T18:00:40.000+09:00",
+    "status": "archive",
+    "thumbnail": "https://i.ytimg.com/vi/RKRIos7_fRg/mqdefault.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/bcgws2A-h2HRTCoWgcipC2sgJw_9y0O_5jBi_0QEW4DhAqyPZg4_xLkZw3JJBFZ2DzsYNiGx",
+    "url": "https://www.youtube.com/watch?v=RKRIos7_fRg"
+  },
+  {
+    "name": "カルプ・マーガレット",
+    "youtubeid": "UCAANONySj4hE_-ch6G34MZQ",
+    "title": "カマちゃんの3秒クッキング集 Vol.1 #shorts #vtuber #料理",
+    "date": "2025-08-31T18:00:54.000+09:00",
+    "status": "archive",
+    "thumbnail": "https://i.ytimg.com/vi/gDMeAtwtCQU/mqdefault.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/XXH1eOS7_cbzNwQFqJAtIguKNeLGs7-D2Pvf3M0vHlBVdKoYlmTbyMwUv7xjtsv5qM9IodH9",
+    "url": "https://www.youtube.com/watch?v=gDMeAtwtCQU"
   },
   {
     "name": "春原なずな",

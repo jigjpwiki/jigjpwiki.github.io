@@ -90,16 +90,6 @@
     "url": "https://www.youtube.com/watch?v=-7glQAhEhJM"
   },
   {
-    "name": "宇田わん",
-    "youtubeid": "UCp45rWiRwgYZJUR4bQO-Xgw",
-    "title": "ただ頑張っているだけの店舗#新人vtuber",
-    "date": "2025-09-01T18:00:30.000+09:00",
-    "status": "archive",
-    "thumbnail": "https://i.ytimg.com/vi/CVg2HabLdsM/mqdefault.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/bcgws2A-h2HRTCoWgcipC2sgJw_9y0O_5jBi_0QEW4DhAqyPZg4_xLkZw3JJBFZ2DzsYNiGx",
-    "url": "https://www.youtube.com/watch?v=CVg2HabLdsM"
-  },
-  {
     "name": "魔法少女アルト",
     "youtubeid": "UCtRhBS8dlaeBgVcnEZOkAbA",
     "title": "【 実話 】 セミのまさかの居場所  #替え歌 #ネタ #いますぐ輪廻 #あるある #アニメ",
@@ -408,6 +398,16 @@
     "thumbnail": "https://i.ytimg.com/vi/oH-B1-DVevg/mqdefault.jpg",
     "channelIcon": "https://yt3.googleusercontent.com/bcgws2A-h2HRTCoWgcipC2sgJw_9y0O_5jBi_0QEW4DhAqyPZg4_xLkZw3JJBFZ2DzsYNiGx",
     "url": "https://www.youtube.com/watch?v=oH-B1-DVevg"
+  },
+  {
+    "name": "宇田わん",
+    "youtubeid": "UCp45rWiRwgYZJUR4bQO-Xgw",
+    "title": "【 耐久 】質問400個回答するまで終われまテン！【 #宇田わん #新人VTuber / #登龍門BOX 】",
+    "date": "2025-09-03T19:59:43.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/Ma0lyMjrarw/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/bcgws2A-h2HRTCoWgcipC2sgJw_9y0O_5jBi_0QEW4DhAqyPZg4_xLkZw3JJBFZ2DzsYNiGx",
+    "url": "https://www.youtube.com/watch?v=Ma0lyMjrarw"
   },
   {
     "name": "カルプ・マーガレット",

@@ -1,14 +1,5 @@
 [
   {
-    "name": "李じゅぴ汰",
-    "twitchid": "lee_jupita",
-    "title": "【雑談】作業(学力テスト)してスト6",
-    "date": "2025-08-31T22:00:30.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://yt3.googleusercontent.com/QQqec9A1J7eLk9RrRYD9vvk51BBJzcE1leGkU9n4YkwHqht9gmGT1ktmSlKItQtbuMSGuklAFxM",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/c56d47b07a97e4050286_lee_jupita_314810450163_1756645224//thumb/thumb0-320x180.jpg"
-  },
-  {
     "name": "なかもとおまち",
     "twitchid": "41futon",
     "title": "復活のなかもと！久々のスト６にワクワクさん",
@@ -239,5 +230,13 @@
     "date": "2025-09-03T21:06:40.000+09:00",
     "status": "live",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_yaosyaorin-320x180.jpg"
+  },
+  {
+    "name": "銘兎目あう",
+    "twitchid": "Metome_Au",
+    "title": "今日はちょこっと雑談でごめんなさい！2年ぶりの風邪ぐぁ🤧",
+    "date": "2025-09-03T22:03:33.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_Metome_Au-320x180.jpg"
   }
 ]

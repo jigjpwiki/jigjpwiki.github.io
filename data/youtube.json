@@ -1,15 +1,5 @@
 [
   {
-    "name": "忠犬しず",
-    "youtubeid": "UCPzN3R0x_SciJJ_FP-STpHQ",
-    "title": "【 イラストメイキング 】元プロイラストレーターがパトレイバーのイングラム描いてみた!【 VTuber/忠犬しず 】",
-    "date": "2025-08-31T18:00:39.000+09:00",
-    "status": "archive",
-    "thumbnail": "https://i.ytimg.com/vi/S7QtYiW4Qgg/mqdefault.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/9dVPxoBbcXIeN4O1N6bYiWu3EHHHeaStY7fQYPZfF3thWIP2Sc9Uc6kg56Aj0UHrg5QqqDtn",
-    "url": "https://www.youtube.com/watch?v=S7QtYiW4Qgg"
-  },
-  {
     "name": "春原なずな",
     "youtubeid": "UCW-iuU7g3BJnuQ1D3UkqeSA",
     "title": "【FF7REBIRTH】これむずい※ネタバレ注意【 春原なずな / Vtuber 】",
@@ -28,16 +18,6 @@
     "thumbnail": "https://i.ytimg.com/vi/BnDfD6Ot2oE/mqdefault.jpg",
     "channelIcon": "https://yt3.googleusercontent.com/0pD1c95Y9X0VrhzWtlf2SRPqdkesiuZxC8Hb5Mg9Xv1WWpQaFCmjITTK8-n5HlNsB-yDbAN4CZA",
     "url": "https://www.youtube.com/watch?v=BnDfD6Ot2oE"
-  },
-  {
-    "name": "宇田わん",
-    "youtubeid": "UCp45rWiRwgYZJUR4bQO-Xgw",
-    "title": "【 参加型 】第4回 線香花火バトルで負けたら即終了！？【 #宇田わん #新人VTuber / #登龍門BOX 】",
-    "date": "2025-08-31T19:04:49.000+09:00",
-    "status": "live",
-    "thumbnail": "https://i.ytimg.com/vi/pD2F_FVVbFY/mqdefault.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/bcgws2A-h2HRTCoWgcipC2sgJw_9y0O_5jBi_0QEW4DhAqyPZg4_xLkZw3JJBFZ2DzsYNiGx",
-    "url": "https://www.youtube.com/watch?v=pD2F_FVVbFY"
   },
   {
     "name": "魔狩メグ",
@@ -425,9 +405,39 @@
     "title": "【 FINAL FANTASY XIV 】黄金のレガシーから復帰勢メインクエを進めていく。 黄金編/パッチ7.0 #魔狩メグ ※ネタバレあり※",
     "date": "2025-09-03T13:31:04.000+09:00",
     "status": "live",
-    "thumbnail": "https://i.ytimg.com/vi/2VmbTTRVKZk/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/2VmbTTRVKZk/mqdefault.jpg",
     "channelIcon": "https://yt3.googleusercontent.com/F9pOM4qdqqRlcR-l2Ip7QpokNxCCXxTUMv_kRanXgAOmfHKff5mX9880XqYYEaNFx-kEYpjQ",
     "url": "https://www.youtube.com/watch?v=2VmbTTRVKZk"
+  },
+  {
+    "name": "駿河ルガ",
+    "youtubeid": "UCij_jFd6ggNIYGm0rHwcNtg",
+    "title": "【スト6】アルマスサガットランクマ【駿河ルガ/登龍門BOX】",
+    "date": "2025-09-03T18:00:12.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/fhAJ0HHAPIA/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/JlY4XEMg9noNa4ShOtky0OwYbKXjnhnje6NQUcwrnJ0UI3C9VQrB-fBNat9QJSUJuuT_Yo1P",
+    "url": "https://www.youtube.com/watch?v=fhAJ0HHAPIA"
+  },
+  {
+    "name": "魔法少女アルト",
+    "youtubeid": "UCtRhBS8dlaeBgVcnEZOkAbA",
+    "title": "詐欺！？ クレジットカードあるある #替え歌 #ネタ #ハッピーラッキーチャッピー #タコピーの原罪 #あるある #アニメ",
+    "date": "2025-09-03T18:00:58.000+09:00",
+    "status": "archive",
+    "thumbnail": "https://i.ytimg.com/vi/co1ZJ1YTyZQ/mqdefault.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/JwOkUNiR-08GjSI3MS8-Yk6jzONshtmRWZ9tpjOghB10quze7fgbJkhpPTpIfUX00HBACjAR8Q",
+    "url": "https://www.youtube.com/watch?v=co1ZJ1YTyZQ"
+  },
+  {
+    "name": "宇田わん",
+    "youtubeid": "UCp45rWiRwgYZJUR4bQO-Xgw",
+    "title": "初見さんカットインでビビる事故物件監視員#新人vtuber #事故物件監視協会",
+    "date": "2025-09-03T18:01:13.000+09:00",
+    "status": "archive",
+    "thumbnail": "https://i.ytimg.com/vi/oH-B1-DVevg/mqdefault.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/bcgws2A-h2HRTCoWgcipC2sgJw_9y0O_5jBi_0QEW4DhAqyPZg4_xLkZw3JJBFZ2DzsYNiGx",
+    "url": "https://www.youtube.com/watch?v=oH-B1-DVevg"
   },
   {
     "name": "カルプ・マーガレット",

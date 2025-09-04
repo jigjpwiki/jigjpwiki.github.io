@@ -1,15 +1,5 @@
 [
   {
-    "name": "魔法少女アルト",
-    "youtubeid": "UCtRhBS8dlaeBgVcnEZOkAbA",
-    "title": "【 実話 】 セミのまさかの居場所  #替え歌 #ネタ #いますぐ輪廻 #あるある #アニメ",
-    "date": "2025-09-01T18:00:53.000+09:00",
-    "status": "archive",
-    "thumbnail": "https://i.ytimg.com/vi/ZT6B4EHslZo/mqdefault.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/JwOkUNiR-08GjSI3MS8-Yk6jzONshtmRWZ9tpjOghB10quze7fgbJkhpPTpIfUX00HBACjAR8Q",
-    "url": "https://www.youtube.com/watch?v=ZT6B4EHslZo"
-  },
-  {
     "name": "駿河ルガ",
     "youtubeid": "UCij_jFd6ggNIYGm0rHwcNtg",
     "title": "【スト6】アルマスサガットランクマ【駿河ルガ/登龍門BOX】",
@@ -38,16 +28,6 @@
     "thumbnail": "https://i.ytimg.com/vi/e2tt5hIuoKo/mqdefault.jpg",
     "channelIcon": "https://yt3.googleusercontent.com/VB97J8AMHex_rkfd6hDhfiGhhVvrL-NNkseP2mMYSWh75sxA_oXctmxK5tV4FYgkM17RUAx6GQ",
     "url": "https://www.youtube.com/watch?v=e2tt5hIuoKo"
-  },
-  {
-    "name": "宇田わん",
-    "youtubeid": "UCp45rWiRwgYZJUR4bQO-Xgw",
-    "title": "【日本事故物件監視協会 】実在する事故物件らしい。と、突撃じゃあ～！！【 #宇田わん #新人VTuber / #登龍門BOX 】",
-    "date": "2025-09-01T20:00:44.000+09:00",
-    "status": "live",
-    "thumbnail": "https://i.ytimg.com/vi/czecIDyVTSk/mqdefault.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/bcgws2A-h2HRTCoWgcipC2sgJw_9y0O_5jBi_0QEW4DhAqyPZg4_xLkZw3JJBFZ2DzsYNiGx",
-    "url": "https://www.youtube.com/watch?v=czecIDyVTSk"
   },
   {
     "name": "橋門エル",
@@ -370,6 +350,16 @@
     "url": "https://www.youtube.com/watch?v=qpvUmfggDeo"
   },
   {
+    "name": "宇田わん",
+    "youtubeid": "UCp45rWiRwgYZJUR4bQO-Xgw",
+    "title": "やらなきゃいけない罰ゲームがたくさん#新人vtuber",
+    "date": "2025-09-04T18:00:14.000+09:00",
+    "status": "archive",
+    "thumbnail": "https://i.ytimg.com/vi/Ceh6_Cjq0P8/mqdefault.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/bcgws2A-h2HRTCoWgcipC2sgJw_9y0O_5jBi_0QEW4DhAqyPZg4_xLkZw3JJBFZ2DzsYNiGx",
+    "url": "https://www.youtube.com/watch?v=Ceh6_Cjq0P8"
+  },
+  {
     "name": "春原なずな",
     "youtubeid": "UCW-iuU7g3BJnuQ1D3UkqeSA",
     "title": "【 FINAL FANTASY VII REBIRTH 】#7 リメイク2作品目初見プレイ！※ネタバレ注意【 春原なずな / Vtuber 】",
@@ -398,6 +388,16 @@
     "thumbnail": "https://i.ytimg.com/vi/Rim_4IcoUeM/mqdefault_live.jpg",
     "channelIcon": "https://yt3.googleusercontent.com/Ji8DJgyzWKUbbeWlYgFfsCZtyiGZ-zM597otZBcFnIoEVIw7284GbNbBQcALgEKwqvk8OXNZLA",
     "url": "https://www.youtube.com/watch?v=Rim_4IcoUeM"
+  },
+  {
+    "name": "忠犬しず",
+    "youtubeid": "UCPzN3R0x_SciJJ_FP-STpHQ",
+    "title": "【 同時視聴 】完全初見！ULTRAMAN(アニメ)の7、8話と機動警察パトレイバー 13、14話を見るぞ！【 忠犬しず/Vtuber 】#特撮オタク　#特撮女子",
+    "date": "2025-09-04T21:00:00.000+09:00",
+    "status": "upcoming",
+    "thumbnail": "https://i.ytimg.com/vi/hfFZNUB9mNI/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/9dVPxoBbcXIeN4O1N6bYiWu3EHHHeaStY7fQYPZfF3thWIP2Sc9Uc6kg56Aj0UHrg5QqqDtn",
+    "url": "https://www.youtube.com/watch?v=hfFZNUB9mNI"
   },
   {
     "name": "桜樹美彩",

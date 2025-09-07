@@ -199,24 +199,43 @@
     "name": "しーはむ",
     "twitchid": "siyham",
     "title": "急遽ホラーゲーム",
-    "date": "2025-09-07T21:15:15.000+09:00",
-    "status": "live",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_siyham-320x180.jpg"
+    "date": "2025-09-07T21:15:21.000+09:00",
+    "status": "archive",
+    "channelIcon": "https://yt3.googleusercontent.com/y0zP0Uz7HSLx5dv3xo488Suxk8rJQQUC1wXaymjUBIQIwa25WlVu_VmrsT1xAyVD-jgeL7hs",
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/0df717893446e7e532a5_siyham_314837945459_1757247315//thumb/thumb0-320x180.jpg"
   },
   {
     "name": "なかもとおまち",
     "twitchid": "41futon",
-    "title": "エアロバイク手に入れた、勝ったな",
+    "title": "1700にいく（かも）",
     "date": "2025-09-07T22:03:13.000+09:00",
     "status": "live",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_41futon-320x180.jpg"
   },
   {
+    "name": "なかもとおまち",
+    "twitchid": "41futon",
+    "title": "エアロバイク手に入れた、勝ったな",
+    "date": "2025-09-07T22:03:19.000+09:00",
+    "status": "archive",
+    "channelIcon": "https://yt3.googleusercontent.com/h8jNjVckVf08zSV6wdhQ38Fw9OH7kucAprlJsi9w0YdDIL8_Kcv0tHY-1cK8jPK_jRLSJb3t_Q",
+    "thumbnail": "https://vod-secure.twitch.tv/_404/404_processing_320x180.png"
+  },
+  {
     "name": "真昼ねる",
     "twitchid": "mahiruneru",
-    "title": "【参加◎】のんびりあんれーと🌟#ubisoftpartner #ad【ぷろのゔぁ／真昼ねる】",
+    "title": "【参加◎】のんびりあんらんく🌟#ubisoftpartner #ad【ぷろのゔぁ／真昼ねる】",
     "date": "2025-09-07T22:31:58.000+09:00",
     "status": "live",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_mahiruneru-320x180.jpg"
+  },
+  {
+    "name": "真昼ねる",
+    "twitchid": "mahiruneru",
+    "title": "【参加◎】のんびりあんれーと🌟#ubisoftpartner #ad【ぷろのゔぁ／真昼ねる】",
+    "date": "2025-09-07T22:32:04.000+09:00",
+    "status": "archive",
+    "channelIcon": "https://yt3.googleusercontent.com/Cu6AMAZAEC_DTANKoaloA_4iLCuEUQ8BiAwyHGuOUG9GtoIw6s7mXCv1-49LV1IgODYZfGowzQ",
+    "thumbnail": "https://vod-secure.twitch.tv/_404/404_processing_320x180.png"
   }
 ]

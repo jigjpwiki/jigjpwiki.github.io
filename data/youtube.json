@@ -1,15 +1,5 @@
 [
   {
-    "name": "宇田わん",
-    "youtubeid": "UCp45rWiRwgYZJUR4bQO-Xgw",
-    "title": "やらなきゃいけない罰ゲームがたくさん#新人vtuber",
-    "date": "2025-09-04T18:00:14.000+09:00",
-    "status": "archive",
-    "thumbnail": "https://i.ytimg.com/vi/Ceh6_Cjq0P8/mqdefault.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/bcgws2A-h2HRTCoWgcipC2sgJw_9y0O_5jBi_0QEW4DhAqyPZg4_xLkZw3JJBFZ2DzsYNiGx",
-    "url": "https://www.youtube.com/watch?v=Ceh6_Cjq0P8"
-  },
-  {
     "name": "秋桜しゅお",
     "youtubeid": "UCPjtwOeRQV5EFkCwUycZsgw",
     "title": "【#歌枠配信 】#初見歓迎 🧡ざつだんまえにおうたしよ！【秋桜しゅお/登龍門BOX】#karaoke  #vtuber #vsinger  #envtuber",
@@ -415,9 +405,29 @@
     "title": "【 #龍が如く6  】お話聞かせてもらってもいいか？【妖小琳/Vtuber】",
     "date": "2025-09-07T13:00:29.000+09:00",
     "status": "live",
-    "thumbnail": "https://i.ytimg.com/vi/r3uIOJnAm7E/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/r3uIOJnAm7E/mqdefault.jpg",
     "channelIcon": "https://yt3.googleusercontent.com/Ji8DJgyzWKUbbeWlYgFfsCZtyiGZ-zM597otZBcFnIoEVIw7284GbNbBQcALgEKwqvk8OXNZLA",
     "url": "https://www.youtube.com/watch?v=r3uIOJnAm7E"
+  },
+  {
+    "name": "雨宮愛結猫",
+    "youtubeid": "UC65woet7p7bhcjHtSbtlWQw",
+    "title": "【シャドバWB】なんで、許されたんや？【初心者】 #vtuber  #shadowverse #シャドバ",
+    "date": "2025-09-07T17:23:22.000+09:00",
+    "status": "archive",
+    "thumbnail": "https://i.ytimg.com/vi/2C6wmdNmLDs/mqdefault.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/kn25wJn77KhPY6MXLYIvYg_VDJk9MDaguKjRFJu2UbLMLSasK_h3Xo4ZaIRM5U7vUbiMQJD-",
+    "url": "https://www.youtube.com/watch?v=2C6wmdNmLDs"
+  },
+  {
+    "name": "宇田わん",
+    "youtubeid": "UCp45rWiRwgYZJUR4bQO-Xgw",
+    "title": "何系VTuber？#新人vtuber",
+    "date": "2025-09-07T18:00:55.000+09:00",
+    "status": "archive",
+    "thumbnail": "https://i.ytimg.com/vi/_yIH8muNlbI/mqdefault.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/bcgws2A-h2HRTCoWgcipC2sgJw_9y0O_5jBi_0QEW4DhAqyPZg4_xLkZw3JJBFZ2DzsYNiGx",
+    "url": "https://www.youtube.com/watch?v=_yIH8muNlbI"
   },
   {
     "name": "カルプ・マーガレット",

@@ -1,25 +1,5 @@
 [
   {
-    "name": "駿河ルガ",
-    "youtubeid": "UCij_jFd6ggNIYGm0rHwcNtg",
-    "title": "【スト6】アルマスサガットランクマ【駿河ルガ/登龍門BOX】",
-    "date": "2025-09-04T20:00:26.000+09:00",
-    "status": "live",
-    "thumbnail": "https://i.ytimg.com/vi/xbmUZ2m8QHo/mqdefault.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/JlY4XEMg9noNa4ShOtky0OwYbKXjnhnje6NQUcwrnJ0UI3C9VQrB-fBNat9QJSUJuuT_Yo1P",
-    "url": "https://www.youtube.com/watch?v=xbmUZ2m8QHo"
-  },
-  {
-    "name": "秋桜しゅお",
-    "youtubeid": "UCPjtwOeRQV5EFkCwUycZsgw",
-    "title": "【#雑談配信 】9月秋のケツまつり【秋桜しゅお/登龍門BOX】#新人vtuber",
-    "date": "2025-09-04T20:05:48.000+09:00",
-    "status": "live",
-    "thumbnail": "https://i.ytimg.com/vi/hIPTZqrNwKo/mqdefault.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/WBGP05KaXeA21IzCbCeM0QHa0v9maVvVUBDZ2DyfTT62F1wGaW3hLOQBy1gCfuQfEnDNgwbsrQ",
-    "url": "https://www.youtube.com/watch?v=hIPTZqrNwKo"
-  },
-  {
     "name": "妖小琳",
     "youtubeid": "UC6eopxuX7lx8GnpkntObt1w",
     "title": "【 #龍が如く6  】迷子の迷子のお子さんがいらっしゃいます【妖小琳/Vtuber】",
@@ -378,6 +358,26 @@
     "thumbnail": "https://i.ytimg.com/vi/_yIH8muNlbI/mqdefault.jpg",
     "channelIcon": "https://yt3.googleusercontent.com/bcgws2A-h2HRTCoWgcipC2sgJw_9y0O_5jBi_0QEW4DhAqyPZg4_xLkZw3JJBFZ2DzsYNiGx",
     "url": "https://www.youtube.com/watch?v=_yIH8muNlbI"
+  },
+  {
+    "name": "秋桜しゅお",
+    "youtubeid": "UCPjtwOeRQV5EFkCwUycZsgw",
+    "title": "【#歌枠配信 】#初見歓迎 🧡日曜の夜はのんびり歌うぜ！【秋桜しゅお/登龍門BOX】#karaoke  #vtuber #vsinger  #envtuber",
+    "date": "2025-09-07T19:24:37.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/nrUm4DpFYW8/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/WBGP05KaXeA21IzCbCeM0QHa0v9maVvVUBDZ2DyfTT62F1wGaW3hLOQBy1gCfuQfEnDNgwbsrQ",
+    "url": "https://www.youtube.com/watch?v=nrUm4DpFYW8"
+  },
+  {
+    "name": "銘兎目あう",
+    "youtubeid": "UCpr-9ssUUgSb0EpDA8bRuTA",
+    "title": "【スト６】デビュー6か月記念日👑みんなと振り返り＆カスタム参加型🥊Mケン🥋",
+    "date": "2025-09-07T20:02:17.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/cCx1u0UhLFo/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/VB97J8AMHex_rkfd6hDhfiGhhVvrL-NNkseP2mMYSWh75sxA_oXctmxK5tV4FYgkM17RUAx6GQ",
+    "url": "https://www.youtube.com/watch?v=cCx1u0UhLFo"
   },
   {
     "name": "桜樹美彩",

@@ -1,14 +1,5 @@
 [
   {
-    "name": "雨宮愛結猫",
-    "twitchid": "ayune_amemiya",
-    "title": "カスタムにさそわれたのでいってみます🐈💨┊#LeagueOfLegends┊JP/EN┊#Vtuber┊",
-    "date": "2025-09-05T21:02:56.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://yt3.googleusercontent.com/kn25wJn77KhPY6MXLYIvYg_VDJk9MDaguKjRFJu2UbLMLSasK_h3Xo4ZaIRM5U7vUbiMQJD-",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/0e0fb7d98394e8f2e613_ayune_amemiya_314829393779_1757073770//thumb/thumb0-320x180.jpg"
-  },
-  {
     "name": "水透ユウ",
     "twitchid": "minato_yu_",
     "title": "【初見◎ROM◎】9月朝活月間！9/6のおはよう☀️【ぷろのゔぁ】【新人Vtuber】",
@@ -185,5 +176,30 @@
     "date": "2025-09-08T20:05:08.000+09:00",
     "status": "live",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_Metome_Au-320x180.jpg"
+  },
+  {
+    "name": "水透ユウ",
+    "twitchid": "minato_yu_",
+    "title": "【Drops◎】【参加◎R6SX】ひさしーじ！アンランクで新シーズンお散歩！【ぷろのゔぁ】【新人Vtuber】",
+    "date": "2025-09-08T20:50:36.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_minato_yu_-320x180.jpg"
+  },
+  {
+    "name": "水透ユウ",
+    "twitchid": "minato_yu_",
+    "title": "【参加◎R6SX】ひさしーじ！アンランクで新シーズンお散歩！【ぷろのゔぁ】【新人Vtuber】",
+    "date": "2025-09-08T20:50:42.000+09:00",
+    "status": "archive",
+    "channelIcon": "https://yt3.googleusercontent.com/eVD8Ygm7KVyh3dvWnyebfYlbYpD13ZYQ-Bos8WdR5LDE61A3svHVHCLEY-rM3IQgw9O4uvdd",
+    "thumbnail": "https://vod-secure.twitch.tv/_404/404_processing_320x180.png"
+  },
+  {
+    "name": "火乃晴るい",
+    "twitchid": "hinoha_rui",
+    "title": "【 #R6SX 】【参加◎✨】参加型アンランクやるぞ！#ubisoftpartner #ad",
+    "date": "2025-09-08T20:55:02.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_hinoha_rui-320x180.jpg"
   }
 ]

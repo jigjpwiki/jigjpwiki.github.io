@@ -225,17 +225,27 @@
   {
     "name": "李じゅぴ汰",
     "twitchid": "lee_jupita",
-    "title": "【雑談】デビュー半年+1日♡ からのスト6",
+    "title": "【雑談/お絵描き】デビュー半年+1日♡ からのスト6",
     "date": "2025-09-08T22:04:39.000+09:00",
     "status": "live",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lee_jupita-320x180.jpg"
   },
   {
+    "name": "李じゅぴ汰",
+    "twitchid": "lee_jupita",
+    "title": "【雑談】デビュー半年+1日♡ からのスト6",
+    "date": "2025-09-08T22:04:45.000+09:00",
+    "status": "archive",
+    "channelIcon": "https://yt3.googleusercontent.com/QQqec9A1J7eLk9RrRYD9vvk51BBJzcE1leGkU9n4YkwHqht9gmGT1ktmSlKItQtbuMSGuklAFxM",
+    "thumbnail": "https://vod-secure.twitch.tv/_404/404_processing_320x180.png"
+  },
+  {
     "name": "真昼ねる",
     "twitchid": "mahiruneru",
     "title": "【参加◎】あたまの悪さ天下一品レディアント【ぷろのゔぁ／真昼ねる】",
-    "date": "2025-09-08T23:18:29.000+09:00",
-    "status": "live",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_mahiruneru-320x180.jpg"
+    "date": "2025-09-08T23:18:35.000+09:00",
+    "status": "archive",
+    "channelIcon": "https://yt3.googleusercontent.com/Cu6AMAZAEC_DTANKoaloA_4iLCuEUQ8BiAwyHGuOUG9GtoIw6s7mXCv1-49LV1IgODYZfGowzQ",
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/cd6ef2de13e24cc42b16_mahiruneru_314811107826_1757341109//thumb/thumb0-320x180.jpg"
   }
 ]

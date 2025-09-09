@@ -237,9 +237,10 @@
     "name": "しーはむ",
     "twitchid": "siyham",
     "title": "ふんわりおだやかなMID",
-    "date": "2025-09-09T15:20:17.000+09:00",
-    "status": "live",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_siyham-320x180.jpg"
+    "date": "2025-09-09T15:20:23.000+09:00",
+    "status": "archive",
+    "channelIcon": "https://yt3.googleusercontent.com/y0zP0Uz7HSLx5dv3xo488Suxk8rJQQUC1wXaymjUBIQIwa25WlVu_VmrsT1xAyVD-jgeL7hs",
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/ef49cef9e755d43cfcd6_siyham_314813134194_1757398817//thumb/thumb0-320x180.jpg"
   },
   {
     "name": "駿河ルガ",
@@ -248,5 +249,13 @@
     "date": "2025-09-09T18:00:09.000+09:00",
     "status": "live",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_suruga_luga-320x180.jpg"
+  },
+  {
+    "name": "銘兎目あう",
+    "twitchid": "Metome_Au",
+    "title": "【スト６】SFL同時視聴しよー！！みんなで応援しよ🐰🥊",
+    "date": "2025-09-09T18:16:37.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_Metome_Au-320x180.jpg"
   }
 ]

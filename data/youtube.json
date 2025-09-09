@@ -1,25 +1,5 @@
 [
   {
-    "name": "魔法少女アルト",
-    "youtubeid": "UCtRhBS8dlaeBgVcnEZOkAbA",
-    "title": "【 あるある 】 いつも縫い物の時に言いたくなること #替え歌 #ネタ #あるある #怪獣 #アニメ",
-    "date": "2025-09-06T18:01:23.000+09:00",
-    "status": "archive",
-    "thumbnail": "https://i.ytimg.com/vi/uu0UXl2vyXw/mqdefault.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/JwOkUNiR-08GjSI3MS8-Yk6jzONshtmRWZ9tpjOghB10quze7fgbJkhpPTpIfUX00HBACjAR8Q",
-    "url": "https://www.youtube.com/watch?v=uu0UXl2vyXw"
-  },
-  {
-    "name": "宇田わん",
-    "youtubeid": "UCp45rWiRwgYZJUR4bQO-Xgw",
-    "title": "おじさんセンサーぴぴぴーん！#新人vtuber",
-    "date": "2025-09-06T18:01:32.000+09:00",
-    "status": "archive",
-    "thumbnail": "https://i.ytimg.com/vi/xpVhCZ1dv50/mqdefault.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/bcgws2A-h2HRTCoWgcipC2sgJw_9y0O_5jBi_0QEW4DhAqyPZg4_xLkZw3JJBFZ2DzsYNiGx",
-    "url": "https://www.youtube.com/watch?v=xpVhCZ1dv50"
-  },
-  {
     "name": "カルプ・マーガレット",
     "youtubeid": "UCAANONySj4hE_-ch6G34MZQ",
     "title": "【 登龍門BOX×占いコラボ!!! 】オネエが事務所メンバーの未来に警告！？！？！【 広島弁のオネエVTuber 】",
@@ -28,16 +8,6 @@
     "thumbnail": "https://i.ytimg.com/vi/pMbfNh-Wef8/mqdefault.jpg",
     "channelIcon": "https://yt3.googleusercontent.com/XXH1eOS7_cbzNwQFqJAtIguKNeLGs7-D2Pvf3M0vHlBVdKoYlmTbyMwUv7xjtsv5qM9IodH9",
     "url": "https://www.youtube.com/watch?v=pMbfNh-Wef8"
-  },
-  {
-    "name": "銘兎目あう",
-    "youtubeid": "UCpr-9ssUUgSb0EpDA8bRuTA",
-    "title": "【スト６】Mケン🥋カスタム参加型！リハビリ手伝って欲しいな！🥊🏥",
-    "date": "2025-09-06T20:38:03.000+09:00",
-    "status": "live",
-    "thumbnail": "https://i.ytimg.com/vi/-CVq0ADFuW0/mqdefault.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/VB97J8AMHex_rkfd6hDhfiGhhVvrL-NNkseP2mMYSWh75sxA_oXctmxK5tV4FYgkM17RUAx6GQ",
-    "url": "https://www.youtube.com/watch?v=-CVq0ADFuW0"
   },
   {
     "name": "鹿鳴りあ",
@@ -370,6 +340,26 @@
     "url": "https://www.youtube.com/watch?v=0WgO_009G7g"
   },
   {
+    "name": "宇田わん",
+    "youtubeid": "UCp45rWiRwgYZJUR4bQO-Xgw",
+    "title": "NGなし質問受け付けてみた#新人vtuber",
+    "date": "2025-09-09T18:01:25.000+09:00",
+    "status": "archive",
+    "thumbnail": "https://i.ytimg.com/vi/tlRnMVRXb6I/mqdefault.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/bcgws2A-h2HRTCoWgcipC2sgJw_9y0O_5jBi_0QEW4DhAqyPZg4_xLkZw3JJBFZ2DzsYNiGx",
+    "url": "https://www.youtube.com/watch?v=tlRnMVRXb6I"
+  },
+  {
+    "name": "銘兎目あう",
+    "youtubeid": "UCpr-9ssUUgSb0EpDA8bRuTA",
+    "title": "【スト６】SFL同時視聴しよー！！Mケンハイマスター目指してるよ🥊",
+    "date": "2025-09-09T18:16:46.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/OEbDDpWsuXA/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/VB97J8AMHex_rkfd6hDhfiGhhVvrL-NNkseP2mMYSWh75sxA_oXctmxK5tV4FYgkM17RUAx6GQ",
+    "url": "https://www.youtube.com/watch?v=OEbDDpWsuXA"
+  },
+  {
     "name": "カルプ・マーガレット",
     "youtubeid": "UCAANONySj4hE_-ch6G34MZQ",
     "title": "【#雑談 / 初見さん大歓迎♡ 】オネエさんがこんばんわを１５０人の子らに言うちゃる💕【 広島弁のオネエVTuber 】",
@@ -392,7 +382,7 @@
   {
     "name": "春原なずな",
     "youtubeid": "UCW-iuU7g3BJnuQ1D3UkqeSA",
-    "title": "【 Overcooked! 】最高の料理をつくるシェフを目指して #登龍門BOX【 春原なずな / Vtuber 】",
+    "title": "【 Overcooked!2 】最高の料理をつくるシェフを目指して #登龍門BOX【 春原なずな / Vtuber 】",
     "date": "2025-09-09T21:00:00.000+09:00",
     "status": "upcoming",
     "thumbnail": "https://i.ytimg.com/vi/UaSnhGV-h0I/mqdefault_live.jpg",

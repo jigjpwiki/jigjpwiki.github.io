@@ -1,14 +1,5 @@
 [
   {
-    "name": "なかもとおまち",
-    "twitchid": "41futon",
-    "title": "エアロバイク手に入れた、勝ったな",
-    "date": "2025-09-07T22:03:19.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://yt3.googleusercontent.com/h8jNjVckVf08zSV6wdhQ38Fw9OH7kucAprlJsi9w0YdDIL8_Kcv0tHY-1cK8jPK_jRLSJb3t_Q",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/bc4bfe7b6ca494d7bbe0_41futon_314807971441_1757250193//thumb/thumb0-320x180.jpg"
-  },
-  {
     "name": "真昼ねる",
     "twitchid": "mahiruneru",
     "title": "【参加◎】のんびりあんれーと🌟#ubisoftpartner #ad【ぷろのゔぁ／真昼ねる】",
@@ -227,19 +218,11 @@
   {
     "name": "なかもとおまち",
     "twitchid": "41futon",
-    "title": "ハイマスへ帰ろうジェイミー",
-    "date": "2025-09-10T16:14:00.000+09:00",
-    "status": "live",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_41futon-320x180.jpg"
-  },
-  {
-    "name": "なかもとおまち",
-    "twitchid": "41futon",
     "title": "Cタイガー3日目🐯",
     "date": "2025-09-10T16:14:06.000+09:00",
     "status": "archive",
     "channelIcon": "https://yt3.googleusercontent.com/h8jNjVckVf08zSV6wdhQ38Fw9OH7kucAprlJsi9w0YdDIL8_Kcv0tHY-1cK8jPK_jRLSJb3t_Q",
-    "thumbnail": "https://vod-secure.twitch.tv/_404/404_processing_320x180.png"
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/8ace8c4d594a13d9f5f9_41futon_314817046642_1757488440//thumb/thumb0-320x180.jpg"
   },
   {
     "name": "駿河ルガ",
@@ -265,5 +248,22 @@
     "date": "2025-09-10T21:19:21.000+09:00",
     "status": "live",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_minato_yu_-320x180.jpg"
+  },
+  {
+    "name": "雨宮愛結猫",
+    "twitchid": "ayune_amemiya",
+    "title": "麻雀参加型 雑談しながらのんびり🐈🎶┊雀魂┊JP/EN┊#Vtuber┊",
+    "date": "2025-09-10T22:02:51.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_ayune_amemiya-320x180.jpg"
+  },
+  {
+    "name": "雨宮愛結猫",
+    "twitchid": "ayune_amemiya",
+    "title": "雑談しながら参加型 のんびり🐈🎶┊雀魂┊JP/EN┊#Vtuber┊",
+    "date": "2025-09-10T22:02:57.000+09:00",
+    "status": "archive",
+    "channelIcon": "https://yt3.googleusercontent.com/kn25wJn77KhPY6MXLYIvYg_VDJk9MDaguKjRFJu2UbLMLSasK_h3Xo4ZaIRM5U7vUbiMQJD-",
+    "thumbnail": "https://vod-secure.twitch.tv/_404/404_processing_320x180.png"
   }
 ]

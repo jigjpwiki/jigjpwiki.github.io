@@ -1,14 +1,5 @@
 [
   {
-    "name": "火乃晴るい",
-    "twitchid": "hinoha_rui",
-    "title": "【 #R6SX 】【参加型✨】二日ぶりシージ！#ubisoftpartner #ad",
-    "date": "2025-09-07T16:01:47.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://yt3.googleusercontent.com/8vDFqOVNprKqFE0o7EecXyQleBXIibeJZpXpSgjm5msh4Yd0S8hTsbmYZyOBXa3bUEgBJHZt1w",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/2ef8649c54a119c8c113_hinoha_rui_314806613361_1757228501//thumb/thumb0-320x180.jpg"
-  },
-  {
     "name": "駿河ルガ",
     "twitchid": "suruga_luga",
     "title": "【スト6】光のサガット【登龍門BOX/駿河ルガ】",
@@ -249,5 +240,30 @@
     "date": "2025-09-10T15:23:16.000+09:00",
     "status": "live",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_siyham-320x180.jpg"
+  },
+  {
+    "name": "魔狩メグ",
+    "twitchid": "magarimeg",
+    "title": "【FF14：復帰勢】黄金のメインクエを進めていく！  ＃VStreame",
+    "date": "2025-09-10T16:03:39.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_magarimeg-320x180.jpg"
+  },
+  {
+    "name": "なかもとおまち",
+    "twitchid": "41futon",
+    "title": "よちよちCタイガー3日目🐯",
+    "date": "2025-09-10T16:14:00.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_41futon-320x180.jpg"
+  },
+  {
+    "name": "なかもとおまち",
+    "twitchid": "41futon",
+    "title": "Cタイガー3日目🐯",
+    "date": "2025-09-10T16:14:06.000+09:00",
+    "status": "archive",
+    "channelIcon": "https://yt3.googleusercontent.com/h8jNjVckVf08zSV6wdhQ38Fw9OH7kucAprlJsi9w0YdDIL8_Kcv0tHY-1cK8jPK_jRLSJb3t_Q",
+    "thumbnail": "https://vod-secure.twitch.tv/_404/404_processing_320x180.png"
   }
 ]

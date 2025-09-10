@@ -1,14 +1,5 @@
 [
   {
-    "name": "銘兎目あう",
-    "twitchid": "Metome_Au",
-    "title": "【スト６】デビュー6か月記念日👑みんなと振り返り＆カスタム参加型🥊Mケン🥋",
-    "date": "2025-09-07T20:02:13.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://yt3.googleusercontent.com/VB97J8AMHex_rkfd6hDhfiGhhVvrL-NNkseP2mMYSWh75sxA_oXctmxK5tV4FYgkM17RUAx6GQ",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/8e2131be09b6257302d2_metome_au_314806399602_1757242927//thumb/thumb0-320x180.jpg"
-  },
-  {
     "name": "しーはむ",
     "twitchid": "siyham",
     "title": "急遽ホラーゲーム",
@@ -237,9 +228,10 @@
     "name": "魔狩メグ",
     "twitchid": "magarimeg",
     "title": "【FF14：復帰勢】黄金のメインクエを進めていく！  ＃VStreame",
-    "date": "2025-09-10T16:03:39.000+09:00",
-    "status": "live",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_magarimeg-320x180.jpg"
+    "date": "2025-09-10T16:03:49.000+09:00",
+    "status": "archive",
+    "channelIcon": "https://yt3.googleusercontent.com/F9pOM4qdqqRlcR-l2Ip7QpokNxCCXxTUMv_kRanXgAOmfHKff5mX9880XqYYEaNFx-kEYpjQ",
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/eb0922dadb2ea5a30d66_magarimeg_314818017265_1757487819//thumb/thumb0-320x180.jpg"
   },
   {
     "name": "なかもとおまち",
@@ -265,5 +257,13 @@
     "date": "2025-09-10T18:00:19.000+09:00",
     "status": "live",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_suruga_luga-320x180.jpg"
+  },
+  {
+    "name": "銘兎目あう",
+    "twitchid": "Metome_Au",
+    "title": "【スト６】Mケン🥋今日も頑張ります🥊",
+    "date": "2025-09-10T20:09:56.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_Metome_Au-320x180.jpg"
   }
 ]

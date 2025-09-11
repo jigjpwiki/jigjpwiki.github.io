@@ -1,14 +1,5 @@
 [
   {
-    "name": "雨宮愛結猫",
-    "twitchid": "ayune_amemiya",
-    "title": "ごーるど のんびり🐈🎶nds┊JP/EN┊#Vtuber┊",
-    "date": "2025-09-08T21:39:51.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://yt3.googleusercontent.com/kn25wJn77KhPY6MXLYIvYg_VDJk9MDaguKjRFJu2UbLMLSasK_h3Xo4ZaIRM5U7vUbiMQJD-",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/58350a94e500633a57eb_ayune_amemiya_314841880947_1757335185//thumb/thumb0-320x180.jpg"
-  },
-  {
     "name": "銘兎目あう",
     "twitchid": "Metome_Au",
     "title": "【スト６】Mケン🥋ハイマスター目指して頑張ります🥊",
@@ -246,16 +237,34 @@
     "name": "駿河ルガ",
     "twitchid": "suruga_luga",
     "title": "金曜ロードショー「コマンドー」【登龍門BOX/駿河ルガ】",
-    "date": "2025-09-11T21:01:31.000+09:00",
+    "date": "2025-09-11T21:01:42.000+09:00",
+    "status": "archive",
+    "channelIcon": "https://yt3.googleusercontent.com/JlY4XEMg9noNa4ShOtky0OwYbKXjnhnje6NQUcwrnJ0UI3C9VQrB-fBNat9QJSUJuuT_Yo1P",
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/61e50ef33475c1dcb7e1_suruga_luga_314822519025_1757592091//thumb/thumb0-320x180.jpg"
+  },
+  {
+    "name": "しーはむ",
+    "twitchid": "siyham",
+    "title": "破壊ネメシスオーキス",
+    "date": "2025-09-11T21:05:14.000+09:00",
     "status": "live",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_suruga_luga-320x180.jpg"
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_siyham-320x180.jpg"
   },
   {
     "name": "しーはむ",
     "twitchid": "siyham",
     "title": "破壊ネメシスオーキス入りで宝箱回収",
-    "date": "2025-09-11T21:05:14.000+09:00",
+    "date": "2025-09-11T21:05:20.000+09:00",
+    "status": "archive",
+    "channelIcon": "https://yt3.googleusercontent.com/y0zP0Uz7HSLx5dv3xo488Suxk8rJQQUC1wXaymjUBIQIwa25WlVu_VmrsT1xAyVD-jgeL7hs",
+    "thumbnail": "https://vod-secure.twitch.tv/_404/404_processing_320x180.png"
+  },
+  {
+    "name": "駿河ルガ",
+    "twitchid": "suruga_luga",
+    "title": "金曜ロードショー「コマンドー」【登龍門BOX/駿河ルガ】",
+    "date": "2025-09-11T21:19:50.000+09:00",
     "status": "live",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_siyham-320x180.jpg"
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_suruga_luga-320x180.jpg"
   }
 ]

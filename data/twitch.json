@@ -1,23 +1,5 @@
 [
   {
-    "name": "水透ユウ",
-    "twitchid": "minato_yu_",
-    "title": "【参加◎R6SX】ひさしーじ！アンランクで新シーズンお散歩！【ぷろのゔぁ】【新人Vtuber】",
-    "date": "2025-09-08T20:50:42.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://yt3.googleusercontent.com/eVD8Ygm7KVyh3dvWnyebfYlbYpD13ZYQ-Bos8WdR5LDE61A3svHVHCLEY-rM3IQgw9O4uvdd",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/a1286f3416898a0f6ca0_minato_yu__314810332786_1757332236//thumb/thumb0-320x180.jpg"
-  },
-  {
-    "name": "火乃晴るい",
-    "twitchid": "hinoha_rui",
-    "title": "【 #R6SX 】【参加◎✨】参加型アンランクやるぞ！#ubisoftpartner #ad",
-    "date": "2025-09-08T20:55:08.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://yt3.googleusercontent.com/8vDFqOVNprKqFE0o7EecXyQleBXIibeJZpXpSgjm5msh4Yd0S8hTsbmYZyOBXa3bUEgBJHZt1w",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/763380ccba0c31ff654c_hinoha_rui_314811329521_1757332502//thumb/thumb0-320x180.jpg"
-  },
-  {
     "name": "雨宮愛結猫",
     "twitchid": "ayune_amemiya",
     "title": "ごーるど のんびり🐈🎶nds┊JP/EN┊#Vtuber┊",
@@ -259,5 +241,21 @@
     "status": "archive",
     "channelIcon": "https://yt3.googleusercontent.com/8vDFqOVNprKqFE0o7EecXyQleBXIibeJZpXpSgjm5msh4Yd0S8hTsbmYZyOBXa3bUEgBJHZt1w",
     "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/385371a6403b3e2045f8_hinoha_rui_314852312307_1757573152//thumb/thumb0-320x180.jpg"
+  },
+  {
+    "name": "駿河ルガ",
+    "twitchid": "suruga_luga",
+    "title": "金曜ロードショー「コマンドー」【登龍門BOX/駿河ルガ】",
+    "date": "2025-09-11T21:01:31.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_suruga_luga-320x180.jpg"
+  },
+  {
+    "name": "しーはむ",
+    "twitchid": "siyham",
+    "title": "破壊ネメシスオーキス入りで宝箱回収",
+    "date": "2025-09-11T21:05:14.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_siyham-320x180.jpg"
   }
 ]

@@ -1,25 +1,5 @@
 [
   {
-    "name": "宇田わん",
-    "youtubeid": "UCp45rWiRwgYZJUR4bQO-Xgw",
-    "title": "NGなし質問受け付けてみた#新人vtuber",
-    "date": "2025-09-09T18:01:25.000+09:00",
-    "status": "archive",
-    "thumbnail": "https://i.ytimg.com/vi/tlRnMVRXb6I/mqdefault.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/bcgws2A-h2HRTCoWgcipC2sgJw_9y0O_5jBi_0QEW4DhAqyPZg4_xLkZw3JJBFZ2DzsYNiGx",
-    "url": "https://www.youtube.com/watch?v=tlRnMVRXb6I"
-  },
-  {
-    "name": "銘兎目あう",
-    "youtubeid": "UCpr-9ssUUgSb0EpDA8bRuTA",
-    "title": "Mケン🥋ハイマスター目指して頑張ります🥊 #vtuber #sf6 #streetfighter #streetfighter6 #スト6 #SFL",
-    "date": "2025-09-09T18:16:46.000+09:00",
-    "status": "live",
-    "thumbnail": "https://i.ytimg.com/vi/OEbDDpWsuXA/mqdefault.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/VB97J8AMHex_rkfd6hDhfiGhhVvrL-NNkseP2mMYSWh75sxA_oXctmxK5tV4FYgkM17RUAx6GQ",
-    "url": "https://www.youtube.com/watch?v=OEbDDpWsuXA"
-  },
-  {
     "name": "秋桜しゅお",
     "youtubeid": "UCPjtwOeRQV5EFkCwUycZsgw",
     "title": "【#歌枠配信 】#初見歓迎 🧡登録者14000人タイムアタック！【秋桜しゅお/登龍門BOX】#karaoke  #vtuber #vsinger  #envtuber",
@@ -58,16 +38,6 @@
     "thumbnail": "https://i.ytimg.com/vi/agiS55rR3Do/mqdefault.jpg",
     "channelIcon": "https://yt3.googleusercontent.com/Ji8DJgyzWKUbbeWlYgFfsCZtyiGZ-zM597otZBcFnIoEVIw7284GbNbBQcALgEKwqvk8OXNZLA",
     "url": "https://www.youtube.com/watch?v=agiS55rR3Do"
-  },
-  {
-    "name": "カルプ・マーガレット",
-    "youtubeid": "UCAANONySj4hE_-ch6G34MZQ",
-    "title": "【 #雑談  / 初見さん大歓迎♡ 】スナック二輪の華へようこそ♡【 広島弁のオネエVTuber 】#shorts #縦型配信",
-    "date": "2025-09-09T22:01:15.000+09:00",
-    "status": "live",
-    "thumbnail": "https://i.ytimg.com/vi/-mWHltnrWZc/mqdefault.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/XXH1eOS7_cbzNwQFqJAtIguKNeLGs7-D2Pvf3M0vHlBVdKoYlmTbyMwUv7xjtsv5qM9IodH9",
-    "url": "https://www.youtube.com/watch?v=-mWHltnrWZc"
   },
   {
     "name": "雨宮愛結猫",
@@ -408,6 +378,36 @@
     "thumbnail": "https://i.ytimg.com/vi/g_pcdL3tEhA/mqdefault.jpg",
     "channelIcon": "https://yt3.googleusercontent.com/kn25wJn77KhPY6MXLYIvYg_VDJk9MDaguKjRFJu2UbLMLSasK_h3Xo4ZaIRM5U7vUbiMQJD-",
     "url": "https://www.youtube.com/watch?v=g_pcdL3tEhA"
+  },
+  {
+    "name": "橋門エル",
+    "youtubeid": "UCcNo3POf2DiRs1TPIsEvNgA",
+    "title": "マックの月見と他社を比較！一番人気はまさかの...〇〇！？【登龍門BOXコラボ】",
+    "date": "2025-09-12T18:00:19.000+09:00",
+    "status": "archive",
+    "thumbnail": "https://i.ytimg.com/vi/E0xnM9CW348/mqdefault.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/fyNf7EKChxLeUcCXrveXXaSOc-P-5t2NjD32mXWpBDFUhnC0HVKP9lPG0P6GgxFMdMoX29tg",
+    "url": "https://www.youtube.com/watch?v=E0xnM9CW348"
+  },
+  {
+    "name": "カルプ・マーガレット",
+    "youtubeid": "UCAANONySj4hE_-ch6G34MZQ",
+    "title": "カマちゃんの初恋はいつ!?!? #shorts #vtuber #お悩み相談",
+    "date": "2025-09-12T18:01:33.000+09:00",
+    "status": "archive",
+    "thumbnail": "https://i.ytimg.com/vi/sNrRIMsScJ8/mqdefault.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/XXH1eOS7_cbzNwQFqJAtIguKNeLGs7-D2Pvf3M0vHlBVdKoYlmTbyMwUv7xjtsv5qM9IodH9",
+    "url": "https://www.youtube.com/watch?v=sNrRIMsScJ8"
+  },
+  {
+    "name": "宇田わん",
+    "youtubeid": "UCp45rWiRwgYZJUR4bQO-Xgw",
+    "title": "ビジュアルって自分でデザインしたんですか？#新人vtuber",
+    "date": "2025-09-12T18:11:07.000+09:00",
+    "status": "archive",
+    "thumbnail": "https://i.ytimg.com/vi/klmPaypC_cE/mqdefault.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/bcgws2A-h2HRTCoWgcipC2sgJw_9y0O_5jBi_0QEW4DhAqyPZg4_xLkZw3JJBFZ2DzsYNiGx",
+    "url": "https://www.youtube.com/watch?v=klmPaypC_cE"
   },
   {
     "name": "宇田わん",

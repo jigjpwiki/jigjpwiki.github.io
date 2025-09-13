@@ -1,15 +1,5 @@
 [
   {
-    "name": "魔法少女アルト",
-    "youtubeid": "UCtRhBS8dlaeBgVcnEZOkAbA",
-    "title": "テストあるある #替え歌 #ネタ #あるある #ケセラセラ #アニメ",
-    "date": "2025-09-10T18:01:03.000+09:00",
-    "status": "archive",
-    "thumbnail": "https://i.ytimg.com/vi/ceHWMVo7SLs/mqdefault.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/JwOkUNiR-08GjSI3MS8-Yk6jzONshtmRWZ9tpjOghB10quze7fgbJkhpPTpIfUX00HBACjAR8Q",
-    "url": "https://www.youtube.com/watch?v=ceHWMVo7SLs"
-  },
-  {
     "name": "銘兎目あう",
     "youtubeid": "UCpr-9ssUUgSb0EpDA8bRuTA",
     "title": "Mケン🥋今日も頑張ります🥊 #sf6 #streetfighter #streetfighter6 #スト6 #SFL",
@@ -28,16 +18,6 @@
     "thumbnail": "https://i.ytimg.com/vi/hLGl4Q_lvoY/mqdefault.jpg",
     "channelIcon": "https://yt3.googleusercontent.com/9dVPxoBbcXIeN4O1N6bYiWu3EHHHeaStY7fQYPZfF3thWIP2Sc9Uc6kg56Aj0UHrg5QqqDtn",
     "url": "https://www.youtube.com/watch?v=hLGl4Q_lvoY"
-  },
-  {
-    "name": "カルプ・マーガレット",
-    "youtubeid": "UCAANONySj4hE_-ch6G34MZQ",
-    "title": "【 #同時視聴 / アマプラ 】『映画忍たま乱太郎』と『実写版忍たま乱太郎』をオネエと一緒に見ましょう!!!!【 広島弁のオネエVTuber 】",
-    "date": "2025-09-10T21:00:57.000+09:00",
-    "status": "live",
-    "thumbnail": "https://i.ytimg.com/vi/N9aLl2XqArw/mqdefault.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/XXH1eOS7_cbzNwQFqJAtIguKNeLGs7-D2Pvf3M0vHlBVdKoYlmTbyMwUv7xjtsv5qM9IodH9",
-    "url": "https://www.youtube.com/watch?v=N9aLl2XqArw"
   },
   {
     "name": "鹿鳴りあ",
@@ -128,16 +108,6 @@
     "thumbnail": "https://i.ytimg.com/vi/0iGPfI_y-d8/mqdefault.jpg",
     "channelIcon": "https://yt3.googleusercontent.com/9dVPxoBbcXIeN4O1N6bYiWu3EHHHeaStY7fQYPZfF3thWIP2Sc9Uc6kg56Aj0UHrg5QqqDtn",
     "url": "https://www.youtube.com/watch?v=0iGPfI_y-d8"
-  },
-  {
-    "name": "宇田わん",
-    "youtubeid": "UCp45rWiRwgYZJUR4bQO-Xgw",
-    "title": "その耳って寝癖付くの？#新人vtuber",
-    "date": "2025-09-11T18:00:20.000+09:00",
-    "status": "archive",
-    "thumbnail": "https://i.ytimg.com/vi/Ge0yXokf2J8/mqdefault.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/bcgws2A-h2HRTCoWgcipC2sgJw_9y0O_5jBi_0QEW4DhAqyPZg4_xLkZw3JJBFZ2DzsYNiGx",
-    "url": "https://www.youtube.com/watch?v=Ge0yXokf2J8"
   },
   {
     "name": "カルプ・マーガレット",
@@ -408,6 +378,36 @@
     "thumbnail": "https://i.ytimg.com/vi/NG9W_XqC3dc/mqdefault.jpg",
     "channelIcon": "https://yt3.googleusercontent.com/JlY4XEMg9noNa4ShOtky0OwYbKXjnhnje6NQUcwrnJ0UI3C9VQrB-fBNat9QJSUJuuT_Yo1P",
     "url": "https://www.youtube.com/watch?v=NG9W_XqC3dc"
+  },
+  {
+    "name": "カルプ・マーガレット",
+    "youtubeid": "UCAANONySj4hE_-ch6G34MZQ",
+    "title": "カマちゃんの3秒クッキングvol.2 #shorts #vtuber #料理",
+    "date": "2025-09-13T18:00:04.000+09:00",
+    "status": "archive",
+    "thumbnail": "https://i.ytimg.com/vi/azAgdZuaNhg/mqdefault.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/XXH1eOS7_cbzNwQFqJAtIguKNeLGs7-D2Pvf3M0vHlBVdKoYlmTbyMwUv7xjtsv5qM9IodH9",
+    "url": "https://www.youtube.com/watch?v=azAgdZuaNhg"
+  },
+  {
+    "name": "宇田わん",
+    "youtubeid": "UCp45rWiRwgYZJUR4bQO-Xgw",
+    "title": "メン限配信なにしたい？#新人vtuber",
+    "date": "2025-09-13T18:00:23.000+09:00",
+    "status": "archive",
+    "thumbnail": "https://i.ytimg.com/vi/Jgnddvr06eg/mqdefault.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/bcgws2A-h2HRTCoWgcipC2sgJw_9y0O_5jBi_0QEW4DhAqyPZg4_xLkZw3JJBFZ2DzsYNiGx",
+    "url": "https://www.youtube.com/watch?v=Jgnddvr06eg"
+  },
+  {
+    "name": "魔法少女アルト",
+    "youtubeid": "UCtRhBS8dlaeBgVcnEZOkAbA",
+    "title": "最後が出ない時ってあるよね #あるある #替え歌 #ネタ #カリスマックス #アニメ",
+    "date": "2025-09-13T18:01:31.000+09:00",
+    "status": "archive",
+    "thumbnail": "https://i.ytimg.com/vi/ttyQToXrDik/mqdefault.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/JwOkUNiR-08GjSI3MS8-Yk6jzONshtmRWZ9tpjOghB10quze7fgbJkhpPTpIfUX00HBACjAR8Q",
+    "url": "https://www.youtube.com/watch?v=ttyQToXrDik"
   },
   {
     "name": "桜樹美彩",

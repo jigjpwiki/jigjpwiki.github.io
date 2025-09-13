@@ -1,14 +1,5 @@
 [
   {
-    "name": "水透ユウ",
-    "twitchid": "minato_yu_",
-    "title": "【✅Drops】R6SX参加◎アンランクまわそうぜ【ぷろのゔぁ】【新人Vtuber】",
-    "date": "2025-09-10T21:19:27.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://yt3.googleusercontent.com/eVD8Ygm7KVyh3dvWnyebfYlbYpD13ZYQ-Bos8WdR5LDE61A3svHVHCLEY-rM3IQgw9O4uvdd",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/bc763580e241f0038d26_minato_yu__314849435763_1757506761//thumb/thumb0-320x180.jpg"
-  },
-  {
     "name": "雨宮愛結猫",
     "twitchid": "ayune_amemiya",
     "title": "雑談しながら参加型 のんびり🐈🎶┊雀魂┊JP/EN┊#Vtuber┊",
@@ -275,5 +266,13 @@
     "date": "2025-09-13T19:56:07.000+09:00",
     "status": "live",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_hinoha_rui-320x180.jpg"
+  },
+  {
+    "name": "銘兎目あう",
+    "twitchid": "Metome_Au",
+    "title": "🔰【R6SX】初心者シージ出撃！！【スト６】後半ランクやるよ🥊🐰",
+    "date": "2025-09-13T21:23:13.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_Metome_Au-320x180.jpg"
   }
 ]

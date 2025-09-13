@@ -244,10 +244,19 @@
   {
     "name": "火乃晴るい",
     "twitchid": "hinoha_rui",
-    "title": "【 #R6SX 】【参加◎】 事務所企画に向けて練習だ！あんらんくGO！ #ubisoftpartner #ad",
+    "title": "【 #R6SX 】【参加◎】 もぎもぎとコラボ！ #ubisoftpartner #ad",
     "date": "2025-09-13T19:56:07.000+09:00",
     "status": "live",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_hinoha_rui-320x180.jpg"
+  },
+  {
+    "name": "火乃晴るい",
+    "twitchid": "hinoha_rui",
+    "title": "【 #R6SX 】【参加◎】 事務所企画に向けて練習だ！あんらんくGO！ #ubisoftpartner #ad",
+    "date": "2025-09-13T19:56:13.000+09:00",
+    "status": "archive",
+    "channelIcon": "https://yt3.googleusercontent.com/8vDFqOVNprKqFE0o7EecXyQleBXIibeJZpXpSgjm5msh4Yd0S8hTsbmYZyOBXa3bUEgBJHZt1w",
+    "thumbnail": "https://vod-secure.twitch.tv/_404/404_processing_320x180.png"
   },
   {
     "name": "銘兎目あう",
@@ -265,5 +274,13 @@
     "status": "archive",
     "channelIcon": "https://yt3.googleusercontent.com/VB97J8AMHex_rkfd6hDhfiGhhVvrL-NNkseP2mMYSWh75sxA_oXctmxK5tV4FYgkM17RUAx6GQ",
     "thumbnail": "https://vod-secure.twitch.tv/_404/404_processing_320x180.png"
+  },
+  {
+    "name": "水透ユウ",
+    "twitchid": "minato_yu_",
+    "title": "【参加◎】今日も元気にアンランク！【ぷろのゔぁ】【新人Vtuber】",
+    "date": "2025-09-13T23:02:17.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_minato_yu_-320x180.jpg"
   }
 ]

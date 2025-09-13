@@ -120,16 +120,6 @@
     "url": "https://www.youtube.com/watch?v=o7iKI7853bg"
   },
   {
-    "name": "宇田わん",
-    "youtubeid": "UCp45rWiRwgYZJUR4bQO-Xgw",
-    "title": "【 Killing Floor 2 】事務所の仲間たちとゾンビ退治ダッ！！【 #宇田わん #新人VTuber / #登龍門BOX 】",
-    "date": "2025-09-11T20:59:00.000+09:00",
-    "status": "live",
-    "thumbnail": "https://i.ytimg.com/vi/GjHqJ7oDmRU/mqdefault.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/bcgws2A-h2HRTCoWgcipC2sgJw_9y0O_5jBi_0QEW4DhAqyPZg4_xLkZw3JJBFZ2DzsYNiGx",
-    "url": "https://www.youtube.com/watch?v=GjHqJ7oDmRU"
-  },
-  {
     "name": "妖小琳",
     "youtubeid": "UC6eopxuX7lx8GnpkntObt1w",
     "title": "【 #KillingFloor2  】ゾンビを殲滅せよ！過労死ヒーラーやり卍 #登龍門BOX 【妖小琳/Vtuber】",
@@ -412,12 +402,32 @@
   {
     "name": "桜樹美彩",
     "youtubeid": "UCTwKpTFX1aAXD0xpBqYqTdg",
-    "title": "【 #overcooked2   】 #他責組コラボ 🎮桜樹美彩視点　#vtuber #ゲーム実況 #みさライなう #久遠なつめ #ミラルプス #伊達つかさ",
-    "date": "2025-09-13T19:00:00.000+09:00",
-    "status": "upcoming",
+    "title": "【 #overcooked2   】オーバークック２／協力したいとは思っている。 #他責組コラボ 🎮桜樹美彩視点　#vtuber #ゲーム実況 #みさライなう #久遠なつめ #ミラルプス #伊達つかさ",
+    "date": "2025-09-13T19:02:12.000+09:00",
+    "status": "live",
     "thumbnail": "https://i.ytimg.com/vi/Ht-DJUSdGB4/mqdefault_live.jpg",
     "channelIcon": "https://yt3.googleusercontent.com/pDP2GuylW0RN1REDScFAlNklbXaPRqTm2mwT2F7dIo8xoYYFPfspsjGH_G3RagwlKVlQbdw95bY",
     "url": "https://www.youtube.com/watch?v=Ht-DJUSdGB4"
+  },
+  {
+    "name": "秋桜しゅお",
+    "youtubeid": "UCPjtwOeRQV5EFkCwUycZsgw",
+    "title": "【#歌枠配信  】#初見歓迎 🧡どようののんびりおうた🧡 【秋桜しゅお/登龍門BOX】#karaoke  #vtuber #vsinger  #envtuber",
+    "date": "2025-09-13T19:10:17.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/jyco4Nbqqag/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/WBGP05KaXeA21IzCbCeM0QHa0v9maVvVUBDZ2DyfTT62F1wGaW3hLOQBy1gCfuQfEnDNgwbsrQ",
+    "url": "https://www.youtube.com/watch?v=jyco4Nbqqag"
+  },
+  {
+    "name": "宇田わん",
+    "youtubeid": "UCp45rWiRwgYZJUR4bQO-Xgw",
+    "title": "【 雑談 】3連休はいかがお過ごしでしょうか！？お話しよ～～！【 #宇田わん #新人VTuber / #登龍門BOX 】",
+    "date": "2025-09-13T19:30:00.000+09:00",
+    "status": "upcoming",
+    "thumbnail": "https://i.ytimg.com/vi/ugWHF_aj4RY/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/bcgws2A-h2HRTCoWgcipC2sgJw_9y0O_5jBi_0QEW4DhAqyPZg4_xLkZw3JJBFZ2DzsYNiGx",
+    "url": "https://www.youtube.com/watch?v=ugWHF_aj4RY"
   },
   {
     "name": "桜樹美彩",

@@ -182,7 +182,7 @@
   {
     "name": "なかもとおまち",
     "twitchid": "41futon",
-    "title": "【 #R6SX 🔰】CrayzyPapiyoNさんにコーチングしていただく！",
+    "title": "【 #R6SX 🔰】シージ1日目",
     "date": "2025-09-14T15:17:09.000+09:00",
     "status": "live",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_41futon-320x180.jpg"
@@ -267,9 +267,10 @@
     "name": "雨宮愛結猫",
     "twitchid": "ayune_amemiya",
     "title": "しーじこーちんぐ🐈🎶┊#r6sx┊JP/EN┊#Vtuber┊",
-    "date": "2025-09-14T21:04:37.000+09:00",
-    "status": "live",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_ayune_amemiya-320x180.jpg"
+    "date": "2025-09-14T21:04:43.000+09:00",
+    "status": "archive",
+    "channelIcon": "https://yt3.googleusercontent.com/kn25wJn77KhPY6MXLYIvYg_VDJk9MDaguKjRFJu2UbLMLSasK_h3Xo4ZaIRM5U7vUbiMQJD-",
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/0e8cff35c348b21bece8_ayune_amemiya_314833866610_1757851477//thumb/thumb0-320x180.jpg"
   },
   {
     "name": "火乃晴るい",
@@ -282,18 +283,10 @@
   {
     "name": "しーはむ",
     "twitchid": "siyham",
-    "title": "ぷろのゔぁシージ練習がんばるぞ",
-    "date": "2025-09-14T21:06:45.000+09:00",
-    "status": "live",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_siyham-320x180.jpg"
-  },
-  {
-    "name": "しーはむ",
-    "twitchid": "siyham",
     "title": "ぷろのゔぁシージがんばるぞ",
     "date": "2025-09-14T21:06:51.000+09:00",
     "status": "archive",
     "channelIcon": "https://yt3.googleusercontent.com/y0zP0Uz7HSLx5dv3xo488Suxk8rJQQUC1wXaymjUBIQIwa25WlVu_VmrsT1xAyVD-jgeL7hs",
-    "thumbnail": "https://vod-secure.twitch.tv/_404/404_processing_320x180.png"
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/2b50fe78bf4aff46d95d_siyham_314866939123_1757851605//thumb/thumb0-320x180.jpg"
   }
 ]

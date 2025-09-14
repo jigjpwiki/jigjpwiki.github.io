@@ -3,24 +3,6 @@
     "name": "駿河ルガ",
     "twitchid": "suruga_luga",
     "title": "金曜ロードショー「コマンドー」【登龍門BOX/駿河ルガ】",
-    "date": "2025-09-11T21:01:42.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://yt3.googleusercontent.com/JlY4XEMg9noNa4ShOtky0OwYbKXjnhnje6NQUcwrnJ0UI3C9VQrB-fBNat9QJSUJuuT_Yo1P",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/61e50ef33475c1dcb7e1_suruga_luga_314822519025_1757592091//thumb/thumb0-320x180.jpg"
-  },
-  {
-    "name": "しーはむ",
-    "twitchid": "siyham",
-    "title": "破壊ネメシスオーキス入りで宝箱回収",
-    "date": "2025-09-11T21:05:20.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://yt3.googleusercontent.com/y0zP0Uz7HSLx5dv3xo488Suxk8rJQQUC1wXaymjUBIQIwa25WlVu_VmrsT1xAyVD-jgeL7hs",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/528291bffaf37e44988e_siyham_314853465843_1757592314//thumb/thumb0-320x180.jpg"
-  },
-  {
-    "name": "駿河ルガ",
-    "twitchid": "suruga_luga",
-    "title": "金曜ロードショー「コマンドー」【登龍門BOX/駿河ルガ】",
     "date": "2025-09-11T21:20:00.000+09:00",
     "status": "archive",
     "channelIcon": "https://yt3.googleusercontent.com/JlY4XEMg9noNa4ShOtky0OwYbKXjnhnje6NQUcwrnJ0UI3C9VQrB-fBNat9QJSUJuuT_Yo1P",
@@ -236,10 +218,19 @@
   {
     "name": "なかもとおまち",
     "twitchid": "41futon",
-    "title": "【 #R6SX 】生まれて初めてのプレイ。FPS🔰なんとかなるか？",
+    "title": "【 #R6SX 🔰】CrayzyPapiyoNさんにコーチングしていただく！",
     "date": "2025-09-14T15:17:09.000+09:00",
     "status": "live",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_41futon-320x180.jpg"
+  },
+  {
+    "name": "なかもとおまち",
+    "twitchid": "41futon",
+    "title": "【 #R6SX 】生まれて初めてのプレイ。FPS🔰なんとかなるか？",
+    "date": "2025-09-14T15:17:15.000+09:00",
+    "status": "archive",
+    "channelIcon": "https://yt3.googleusercontent.com/h8jNjVckVf08zSV6wdhQ38Fw9OH7kucAprlJsi9w0YdDIL8_Kcv0tHY-1cK8jPK_jRLSJb3t_Q",
+    "thumbnail": "https://vod-secure.twitch.tv/_404/404_processing_320x180.png"
   },
   {
     "name": "水透ユウ",
@@ -271,8 +262,65 @@
     "name": "李じゅぴ汰",
     "twitchid": "lee_jupita",
     "title": "【 #R6SX 】予習、これ大事ね【レインボーシージエックス】",
-    "date": "2025-09-14T19:49:45.000+09:00",
+    "date": "2025-09-14T19:49:51.000+09:00",
+    "status": "archive",
+    "channelIcon": "https://yt3.googleusercontent.com/QQqec9A1J7eLk9RrRYD9vvk51BBJzcE1leGkU9n4YkwHqht9gmGT1ktmSlKItQtbuMSGuklAFxM",
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/672014253c7fbf0fa26c_lee_jupita_314866563187_1757846985//thumb/thumb0-320x180.jpg"
+  },
+  {
+    "name": "水透ユウ",
+    "twitchid": "minato_yu_",
+    "title": "【 #R6SX 】ぷろのゔぁシージ最強決定戦第1回コーチング【水透ユウ】【新人Vtuber】",
+    "date": "2025-09-14T20:58:13.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_minato_yu_-320x180.jpg"
+  },
+  {
+    "name": "銘兎目あう",
+    "twitchid": "Metome_Au",
+    "title": "🔰【R6SX】第1回目コーチング「CrazyPapiyoNさん」よろしくお願いします！",
+    "date": "2025-09-14T21:00:25.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_Metome_Au-320x180.jpg"
+  },
+  {
+    "name": "真昼ねる",
+    "twitchid": "mahiruneru",
+    "title": "【#R6SX】ぷろのゔぁシージ最強決定戦❕コーチングDay1【ぷろのゔぁ／真昼ねる】",
+    "date": "2025-09-14T21:00:38.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_mahiruneru-320x180.jpg"
+  },
+  {
+    "name": "李じゅぴ汰",
+    "twitchid": "lee_jupita",
+    "title": "【 #R6SX 】CrazyPapiyoN さんコーチング！ぷろのゔぁシージ最強決定戦【レインボーシージエックス】",
+    "date": "2025-09-14T21:02:22.000+09:00",
     "status": "live",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lee_jupita-320x180.jpg"
+  },
+  {
+    "name": "雨宮愛結猫",
+    "twitchid": "ayune_amemiya",
+    "title": "しーじこーちんぐ🐈🎶┊#r6sx┊JP/EN┊#Vtuber┊",
+    "date": "2025-09-14T21:04:37.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_ayune_amemiya-320x180.jpg"
+  },
+  {
+    "name": "火乃晴るい",
+    "twitchid": "hinoha_rui",
+    "title": "【 #R6SX 】ぷろのゔぁシージ最強決定戦🔥コーチング一回目！#ubisoftpartner #ad",
+    "date": "2025-09-14T21:06:40.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_hinoha_rui-320x180.jpg"
+  },
+  {
+    "name": "しーはむ",
+    "twitchid": "siyham",
+    "title": "ぷろのゔぁシージがんばるぞ",
+    "date": "2025-09-14T21:06:45.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_siyham-320x180.jpg"
   }
 ]

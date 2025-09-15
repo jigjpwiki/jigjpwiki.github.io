@@ -1,14 +1,5 @@
 [
   {
-    "name": "水透ユウ",
-    "twitchid": "minato_yu_",
-    "title": "【初見◎ROM◎】9月朝活月間！9/13のおはよう☀️【ぷろのゔぁ】【新人Vtuber】",
-    "date": "2025-09-13T07:33:48.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://yt3.googleusercontent.com/eVD8Ygm7KVyh3dvWnyebfYlbYpD13ZYQ-Bos8WdR5LDE61A3svHVHCLEY-rM3IQgw9O4uvdd",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/e5f64aeee8ed61cfcf6d_minato_yu__314827401074_1757716422//thumb/thumb0-320x180.jpg"
-  },
-  {
     "name": "桜樹美彩",
     "twitchid": "sakuragimisa_v",
     "title": "【 朝活 / 雑談 】歩数決め健康朝活雑談👯「おはよう」×10歩・初見さん×20歩🐣🍀 初見＆ROM勢大歓迎🐤  #vtuber #みさライなう #桜樹美彩",
@@ -257,5 +248,21 @@
     "date": "2025-09-16T07:00:22.000+09:00",
     "status": "live",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sakuragimisa_v-320x180.jpg"
+  },
+  {
+    "name": "なかもとおまち",
+    "twitchid": "41futon",
+    "title": "🌞月曜朝はなかモーニング🌞おはよーーーーーーーーーーーーーーーーー！！まった ？？？",
+    "date": "2025-09-16T07:31:06.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_41futon-320x180.jpg"
+  },
+  {
+    "name": "水透ユウ",
+    "twitchid": "minato_yu_",
+    "title": "【初見◎ROM◎】9月朝活月間！9/16のおはよう☀️【ぷろのゔぁ】【新人Vtuber】",
+    "date": "2025-09-16T07:35:10.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_minato_yu_-320x180.jpg"
   }
 ]

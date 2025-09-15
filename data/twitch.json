@@ -227,19 +227,11 @@
   {
     "name": "銘兎目あう",
     "twitchid": "Metome_Au",
-    "title": "🔴🔰【R6SX】初参加型！がんばるよ！",
-    "date": "2025-09-15T22:35:59.000+09:00",
-    "status": "live",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_Metome_Au-320x180.jpg"
-  },
-  {
-    "name": "銘兎目あう",
-    "twitchid": "Metome_Au",
     "title": "🔴【スト６】１５００維持を目指して頑張る🥋🥊モダンⅯケン！デイヤフン！ 後半シージ！",
     "date": "2025-09-15T22:36:05.000+09:00",
     "status": "archive",
     "channelIcon": "https://yt3.googleusercontent.com/VB97J8AMHex_rkfd6hDhfiGhhVvrL-NNkseP2mMYSWh75sxA_oXctmxK5tV4FYgkM17RUAx6GQ",
-    "thumbnail": "https://vod-secure.twitch.tv/_404/404_processing_320x180.png"
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/1562e2dee065e9c4ac29_metome_au_314837184625_1757943359//thumb/thumb0-320x180.jpg"
   },
   {
     "name": "火乃晴るい",
@@ -248,5 +240,13 @@
     "date": "2025-09-15T23:43:22.000+09:00",
     "status": "live",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_hinoha_rui-320x180.jpg"
+  },
+  {
+    "name": "李じゅぴ汰",
+    "twitchid": "lee_jupita",
+    "title": "【スト6】たるんでるからランクやるぞー！Mキンバリー【ストリートファイター6】",
+    "date": "2025-09-16T00:54:48.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lee_jupita-320x180.jpg"
   }
 ]

@@ -1,15 +1,5 @@
 [
   {
-    "name": "李じゅぴ汰",
-    "youtubeid": "UCHsAAyHJhPXuLS6N3Kig6PQ",
-    "title": "【スト6】たるんでるからランクやるぞー！Mキンバリー【ストリートファイター6】　 #縦型配信",
-    "date": "2025-09-16T00:54:59.000+09:00",
-    "status": "live",
-    "thumbnail": "https://i.ytimg.com/vi/cNqA1Hn64HI/mqdefault.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/QQqec9A1J7eLk9RrRYD9vvk51BBJzcE1leGkU9n4YkwHqht9gmGT1ktmSlKItQtbuMSGuklAFxM",
-    "url": "https://www.youtube.com/watch?v=cNqA1Hn64HI"
-  },
-  {
     "name": "水透ユウ",
     "youtubeid": "UCOah55SQYynzPgQQ4wxuzkA",
     "title": "【初見◎ROM◎】9月朝活月間！9/16のおはよう☀️【ぷろのゔぁ】【新人Vtuber】",
@@ -400,6 +390,16 @@
     "url": "https://www.youtube.com/watch?v=5gnVy7ELPVA"
   },
   {
+    "name": "妖小琳",
+    "youtubeid": "UC6eopxuX7lx8GnpkntObt1w",
+    "title": "【 #龍が如く6  】裏切りの連鎖！一体神室町はどうなっちゃうの！？【妖小琳/Vtuber】",
+    "date": "2025-09-18T21:00:53.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/U6BK0zalNi4/mqdefault.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/Ji8DJgyzWKUbbeWlYgFfsCZtyiGZ-zM597otZBcFnIoEVIw7284GbNbBQcALgEKwqvk8OXNZLA",
+    "url": "https://www.youtube.com/watch?v=U6BK0zalNi4"
+  },
+  {
     "name": "カルプ・マーガレット",
     "youtubeid": "UCAANONySj4hE_-ch6G34MZQ",
     "title": "【 #雑談  / 初見さん大歓迎♡ 】スナック二輪の華へようこそ♡【 広島弁のオネエVTuber 】#shorts #縦型配信",
@@ -428,5 +428,15 @@
     "thumbnail": "https://i.ytimg.com/vi/n5fwnBdZV8c/mqdefault_live.jpg",
     "channelIcon": "https://yt3.googleusercontent.com/pDP2GuylW0RN1REDScFAlNklbXaPRqTm2mwT2F7dIo8xoYYFPfspsjGH_G3RagwlKVlQbdw95bY",
     "url": "https://www.youtube.com/watch?v=n5fwnBdZV8c"
+  },
+  {
+    "name": "魔法少女アルト",
+    "youtubeid": "UCtRhBS8dlaeBgVcnEZOkAbA",
+    "title": "【雑談】仮めの！！9/20  #shorts #Vtuber ＃アルトの魔法通信 【登龍門BOX /魔法少女アルト 】",
+    "date": "2025-09-20T22:00:14.000+09:00",
+    "status": "upcoming",
+    "thumbnail": "https://i.ytimg.com/vi/nsWQEHPXXco/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/JwOkUNiR-08GjSI3MS8-Yk6jzONshtmRWZ9tpjOghB10quze7fgbJkhpPTpIfUX00HBACjAR8Q",
+    "url": "https://www.youtube.com/watch?v=nsWQEHPXXco"
   }
 ]

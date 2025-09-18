@@ -226,7 +226,7 @@
   {
     "name": "銘兎目あう",
     "twitchid": "Metome_Au",
-    "title": "🔰【R6SX】初心者シージのお時間！",
+    "title": "🔰【R6SX】参加型！どなたでもどうぞ！初心者シージのお時間！",
     "date": "2025-09-18T19:51:01.000+09:00",
     "status": "live",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_Metome_Au-320x180.jpg"
@@ -247,5 +247,13 @@
     "date": "2025-09-18T21:02:42.000+09:00",
     "status": "live",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_minato_yu_-320x180.jpg"
+  },
+  {
+    "name": "しーはむ",
+    "twitchid": "siyham",
+    "title": "成人向け飲酒雑談",
+    "date": "2025-09-18T22:11:11.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_siyham-320x180.jpg"
   }
 ]

@@ -1,14 +1,5 @@
 [
   {
-    "name": "駿河ルガ",
-    "twitchid": "suruga_luga",
-    "title": "【スト6】海のサガット【登龍門BOX/駿河ルガ】",
-    "date": "2025-09-15T18:00:19.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://yt3.googleusercontent.com/JlY4XEMg9noNa4ShOtky0OwYbKXjnhnje6NQUcwrnJ0UI3C9VQrB-fBNat9QJSUJuuT_Yo1P",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/18025d3306414c3199ab_suruga_luga_314836158449_1757926809//thumb/thumb0-320x180.jpg"
-  },
-  {
     "name": "銘兎目あう",
     "twitchid": "Metome_Au",
     "title": "🔴【スト６】１５００維持を目指して頑張る🥋🥊モダンⅯケン！デイヤフン！ 後半シージ！",
@@ -228,9 +219,10 @@
     "name": "しーはむ",
     "twitchid": "siyham",
     "title": "ヴェックスotp ～おだやかな気持ちで～",
-    "date": "2025-09-18T15:24:40.000+09:00",
-    "status": "live",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_siyham-320x180.jpg"
+    "date": "2025-09-18T15:24:46.000+09:00",
+    "status": "archive",
+    "channelIcon": "https://yt3.googleusercontent.com/y0zP0Uz7HSLx5dv3xo488Suxk8rJQQUC1wXaymjUBIQIwa25WlVu_VmrsT1xAyVD-jgeL7hs",
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/cc004d89a7b8ec8ebe57_siyham_314883073139_1758176680//thumb/thumb0-320x180.jpg"
   },
   {
     "name": "火乃晴るい",
@@ -239,5 +231,13 @@
     "date": "2025-09-18T16:23:29.000+09:00",
     "status": "live",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_hinoha_rui-320x180.jpg"
+  },
+  {
+    "name": "駿河ルガ",
+    "twitchid": "suruga_luga",
+    "title": "【スト6】鉄のサガット【登龍門BOX/駿河ルガ】",
+    "date": "2025-09-18T18:00:15.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_suruga_luga-320x180.jpg"
   }
 ]

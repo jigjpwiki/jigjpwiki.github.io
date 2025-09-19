@@ -1,32 +1,5 @@
 [
   {
-    "name": "火乃晴るい",
-    "twitchid": "hinoha_rui",
-    "title": "【 #VALORANT 】 #水縹杯 の練習をするぞ！",
-    "date": "2025-09-16T22:05:54.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://yt3.googleusercontent.com/8vDFqOVNprKqFE0o7EecXyQleBXIibeJZpXpSgjm5msh4Yd0S8hTsbmYZyOBXa3bUEgBJHZt1w",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/a02c5b2021a79d829a80_hinoha_rui_314840341617_1758027948//thumb/thumb0-320x180.jpg"
-  },
-  {
-    "name": "真昼ねる",
-    "twitchid": "mahiruneru",
-    "title": "【VALORANT】水縹杯れんしゅうします🌟w/雨宮愛結猫＆火乃晴るい＆ぽてうさ©＆久慈くじあ©＆コーチ【ぷろのゔぁ／真昼ねる】",
-    "date": "2025-09-16T22:08:33.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://yt3.googleusercontent.com/Cu6AMAZAEC_DTANKoaloA_4iLCuEUQ8BiAwyHGuOUG9GtoIw6s7mXCv1-49LV1IgODYZfGowzQ",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/078d1a294cf3c7121eca_mahiruneru_314841965810_1758028107//thumb/thumb0-320x180.jpg"
-  },
-  {
-    "name": "雨宮愛結猫",
-    "twitchid": "ayune_amemiya",
-    "title": "#水縹杯 練習🐈🎶┊#r6sx┊JP/EN┊#Vtuber┊",
-    "date": "2025-09-16T22:10:05.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://yt3.googleusercontent.com/kn25wJn77KhPY6MXLYIvYg_VDJk9MDaguKjRFJu2UbLMLSasK_h3Xo4ZaIRM5U7vUbiMQJD-",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/082bc9a009897c3a823e_ayune_amemiya_314876077171_1758028199//thumb/thumb0-320x180.jpg"
-  },
-  {
     "name": "魔狩メグ",
     "twitchid": "magarimeg",
     "title": "【GTAV】3日目 今日は遅番23-2時出勤 #凪グラ",
@@ -226,10 +199,19 @@
   {
     "name": "銘兎目あう",
     "twitchid": "Metome_Au",
-    "title": "【スト６】SFL同時視聴で応援しよー！！",
+    "title": "【スト６】１５００目指して頑張る🥋 Ⅿケン！デイヤフン！",
     "date": "2025-09-19T18:17:50.000+09:00",
     "status": "live",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_Metome_Au-320x180.jpg"
+  },
+  {
+    "name": "銘兎目あう",
+    "twitchid": "Metome_Au",
+    "title": "【スト６】SFL同時視聴で応援しよー！！",
+    "date": "2025-09-19T18:17:56.000+09:00",
+    "status": "archive",
+    "channelIcon": "https://yt3.googleusercontent.com/VB97J8AMHex_rkfd6hDhfiGhhVvrL-NNkseP2mMYSWh75sxA_oXctmxK5tV4FYgkM17RUAx6GQ",
+    "thumbnail": "https://vod-secure.twitch.tv/_404/404_processing_320x180.png"
   },
   {
     "name": "なかもとおまち",
@@ -243,10 +225,19 @@
   {
     "name": "なかもとおまち",
     "twitchid": "41futon",
-    "title": "SFLみるぞ！うりょさん全力応援！",
+    "title": "常闇祭で勝つために、なにをするべきかわかりますね",
     "date": "2025-09-19T18:55:09.000+09:00",
     "status": "live",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_41futon-320x180.jpg"
+  },
+  {
+    "name": "なかもとおまち",
+    "twitchid": "41futon",
+    "title": "SFLみるぞ！うりょさん全力応援！",
+    "date": "2025-09-19T18:55:15.000+09:00",
+    "status": "archive",
+    "channelIcon": "https://yt3.googleusercontent.com/h8jNjVckVf08zSV6wdhQ38Fw9OH7kucAprlJsi9w0YdDIL8_Kcv0tHY-1cK8jPK_jRLSJb3t_Q",
+    "thumbnail": "https://vod-secure.twitch.tv/_404/404_processing_320x180.png"
   },
   {
     "name": "駿河ルガ",

@@ -1,25 +1,5 @@
 [
   {
-    "name": "春原なずな",
-    "youtubeid": "UCW-iuU7g3BJnuQ1D3UkqeSA",
-    "title": "【 FINAL FANTASY VII REBIRTH 】#9 リメイク2作品目初見プレイ！※ネタバレ注意【 春原なずな / Vtuber 】",
-    "date": "2025-09-16T19:00:32.000+09:00",
-    "status": "live",
-    "thumbnail": "https://i.ytimg.com/vi/i8HmviJ4QMc/mqdefault.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/0pD1c95Y9X0VrhzWtlf2SRPqdkesiuZxC8Hb5Mg9Xv1WWpQaFCmjITTK8-n5HlNsB-yDbAN4CZA",
-    "url": "https://www.youtube.com/watch?v=i8HmviJ4QMc"
-  },
-  {
-    "name": "カルプ・マーガレット",
-    "youtubeid": "UCAANONySj4hE_-ch6G34MZQ",
-    "title": "些細なことで悩んでるあなたが絶対に見るべき動画",
-    "date": "2025-09-16T19:01:48.000+09:00",
-    "status": "archive",
-    "thumbnail": "https://i.ytimg.com/vi/y9QPFc8SdJs/mqdefault.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/XXH1eOS7_cbzNwQFqJAtIguKNeLGs7-D2Pvf3M0vHlBVdKoYlmTbyMwUv7xjtsv5qM9IodH9",
-    "url": "https://www.youtube.com/watch?v=y9QPFc8SdJs"
-  },
-  {
     "name": "橋門エル",
     "youtubeid": "UCcNo3POf2DiRs1TPIsEvNgA",
     "title": "JK登場(?) #部屋紹介 #VTuber",
@@ -48,16 +28,6 @@
     "thumbnail": "https://i.ytimg.com/vi/pueUnEkAcSs/mqdefault.jpg",
     "channelIcon": "https://yt3.googleusercontent.com/XXH1eOS7_cbzNwQFqJAtIguKNeLGs7-D2Pvf3M0vHlBVdKoYlmTbyMwUv7xjtsv5qM9IodH9",
     "url": "https://www.youtube.com/watch?v=pueUnEkAcSs"
-  },
-  {
-    "name": "宇田わん",
-    "youtubeid": "UCp45rWiRwgYZJUR4bQO-Xgw",
-    "title": "【 歌枠 】好きな曲いっぱい歌おうの会！！【 #宇田わん #新人VTuber / #登龍門BOX 】",
-    "date": "2025-09-16T21:01:15.000+09:00",
-    "status": "live",
-    "thumbnail": "https://i.ytimg.com/vi/E5X2UjRRjLA/mqdefault.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/bcgws2A-h2HRTCoWgcipC2sgJw_9y0O_5jBi_0QEW4DhAqyPZg4_xLkZw3JJBFZ2DzsYNiGx",
-    "url": "https://www.youtube.com/watch?v=E5X2UjRRjLA"
   },
   {
     "name": "妖小琳",
@@ -408,6 +378,36 @@
     "thumbnail": "https://i.ytimg.com/vi/vg3CFocfkb8/mqdefault.jpg",
     "channelIcon": "https://yt3.googleusercontent.com/fyNf7EKChxLeUcCXrveXXaSOc-P-5t2NjD32mXWpBDFUhnC0HVKP9lPG0P6GgxFMdMoX29tg",
     "url": "https://www.youtube.com/watch?v=vg3CFocfkb8"
+  },
+  {
+    "name": "宇田わん",
+    "youtubeid": "UCp45rWiRwgYZJUR4bQO-Xgw",
+    "title": "春夏秋冬どれがすき？#新人vtuber",
+    "date": "2025-09-19T18:48:09.000+09:00",
+    "status": "archive",
+    "thumbnail": "https://i.ytimg.com/vi/_Y-p8xcXtYU/mqdefault.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/bcgws2A-h2HRTCoWgcipC2sgJw_9y0O_5jBi_0QEW4DhAqyPZg4_xLkZw3JJBFZ2DzsYNiGx",
+    "url": "https://www.youtube.com/watch?v=_Y-p8xcXtYU"
+  },
+  {
+    "name": "カルプ・マーガレット",
+    "youtubeid": "UCAANONySj4hE_-ch6G34MZQ",
+    "title": "アンチを実力で黙らせた最強のオネエV #shorts #vtuber",
+    "date": "2025-09-19T19:00:24.000+09:00",
+    "status": "archive",
+    "thumbnail": "https://i.ytimg.com/vi/8NLyY0ETMuk/mqdefault.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/XXH1eOS7_cbzNwQFqJAtIguKNeLGs7-D2Pvf3M0vHlBVdKoYlmTbyMwUv7xjtsv5qM9IodH9",
+    "url": "https://www.youtube.com/watch?v=8NLyY0ETMuk"
+  },
+  {
+    "name": "宇田わん",
+    "youtubeid": "UCp45rWiRwgYZJUR4bQO-Xgw",
+    "title": "【 鳴蟇村 #2 】早くこの村から出たい。罰ゲーム消化します。【 #宇田わん #新人VTuber / #登龍門BOX 】",
+    "date": "2025-09-19T20:00:00.000+09:00",
+    "status": "upcoming",
+    "thumbnail": "https://i.ytimg.com/vi/e_YVAmdHkjs/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/bcgws2A-h2HRTCoWgcipC2sgJw_9y0O_5jBi_0QEW4DhAqyPZg4_xLkZw3JJBFZ2DzsYNiGx",
+    "url": "https://www.youtube.com/watch?v=e_YVAmdHkjs"
   },
   {
     "name": "忠犬しず",

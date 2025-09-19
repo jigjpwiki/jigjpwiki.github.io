@@ -210,9 +210,10 @@
     "name": "なかもとおまち",
     "twitchid": "41futon",
     "title": "何を失っても残るものを人は心とよびます",
-    "date": "2025-09-19T15:08:08.000+09:00",
-    "status": "live",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_41futon-320x180.jpg"
+    "date": "2025-09-19T15:08:14.000+09:00",
+    "status": "archive",
+    "channelIcon": "https://yt3.googleusercontent.com/h8jNjVckVf08zSV6wdhQ38Fw9OH7kucAprlJsi9w0YdDIL8_Kcv0tHY-1cK8jPK_jRLSJb3t_Q",
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/5086983dcf24abdc729f_41futon_314851995634_1758262088//thumb/thumb0-320x180.jpg"
   },
   {
     "name": "魔狩メグ",
@@ -237,5 +238,22 @@
     "date": "2025-09-19T18:17:50.000+09:00",
     "status": "live",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_Metome_Au-320x180.jpg"
+  },
+  {
+    "name": "なかもとおまち",
+    "twitchid": "41futon",
+    "title": "何を失っても残るものを人は心とよびます",
+    "date": "2025-09-19T18:52:52.000+09:00",
+    "status": "archive",
+    "channelIcon": "https://yt3.googleusercontent.com/h8jNjVckVf08zSV6wdhQ38Fw9OH7kucAprlJsi9w0YdDIL8_Kcv0tHY-1cK8jPK_jRLSJb3t_Q",
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/5a895f099c685453bfdc_41futon_314852567410_1758275566//thumb/thumb0-320x180.jpg"
+  },
+  {
+    "name": "なかもとおまち",
+    "twitchid": "41futon",
+    "title": "SFLみるぞ！うりょさん全力応援！",
+    "date": "2025-09-19T18:55:09.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_41futon-320x180.jpg"
   }
 ]

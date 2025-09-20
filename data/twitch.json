@@ -1,14 +1,5 @@
 [
   {
-    "name": "魔狩メグ",
-    "twitchid": "magarimeg",
-    "title": "【GTAV】4日目 今日は遅番23-2時出勤 #凪グラ",
-    "date": "2025-09-17T22:48:09.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://yt3.googleusercontent.com/F9pOM4qdqqRlcR-l2Ip7QpokNxCCXxTUMv_kRanXgAOmfHKff5mX9880XqYYEaNFx-kEYpjQ",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/cfd58de18b5663082813_magarimeg_314880603379_1758116883//thumb/thumb0-320x180.jpg"
-  },
-  {
     "name": "火乃晴るい",
     "twitchid": "hinoha_rui",
     "title": "【 #R6SX 】【参加◎】あんらんくいきます！！#ubisoftpartner #ad",
@@ -254,9 +245,10 @@
     "name": "しーはむ",
     "twitchid": "siyham",
     "title": "LoL学園祭に向けてwatanekoさんに教えてもらう会",
-    "date": "2025-09-20T21:00:05.000+09:00",
-    "status": "live",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_siyham-320x180.jpg"
+    "date": "2025-09-20T21:00:11.000+09:00",
+    "status": "archive",
+    "channelIcon": "https://yt3.googleusercontent.com/y0zP0Uz7HSLx5dv3xo488Suxk8rJQQUC1wXaymjUBIQIwa25WlVu_VmrsT1xAyVD-jgeL7hs",
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/83a069a6bc42db54a08a_siyham_314893376243_1758369605//thumb/thumb0-320x180.jpg"
   },
   {
     "name": "銘兎目あう",
@@ -282,5 +274,22 @@
     "date": "2025-09-20T22:19:09.000+09:00",
     "status": "live",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_41futon-320x180.jpg"
+  },
+  {
+    "name": "魔狩メグ",
+    "twitchid": "magarimeg",
+    "title": "【GTAV】7日目 今日は23-2時出勤！ #凪グラ",
+    "date": "2025-09-20T22:46:16.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_magarimeg-320x180.jpg"
+  },
+  {
+    "name": "魔狩メグ",
+    "twitchid": "magarimeg",
+    "title": "【GTAV】6日目 今日は17-2時出勤！ #凪グラ",
+    "date": "2025-09-20T22:46:22.000+09:00",
+    "status": "archive",
+    "channelIcon": "https://yt3.googleusercontent.com/F9pOM4qdqqRlcR-l2Ip7QpokNxCCXxTUMv_kRanXgAOmfHKff5mX9880XqYYEaNFx-kEYpjQ",
+    "thumbnail": "https://vod-secure.twitch.tv/_404/404_processing_320x180.png"
   }
 ]

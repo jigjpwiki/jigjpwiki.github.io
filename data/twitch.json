@@ -228,17 +228,10 @@
     "name": "桜樹美彩",
     "twitchid": "sakuragimisa_v",
     "title": "【 朝活 / 雑談 】バトル型トーク朝活.ᐟ.ᐟ「おはよう」380名様目標で朝活雑談🐣🍀 初見＆ROM勢大歓迎🐤  #vtuber #みさライなう #桜樹美彩 #新人vtuber #作業用BGM",
-    "date": "2025-09-20T09:00:22.000+09:00",
-    "status": "live",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sakuragimisa_v-320x180.jpg"
-  },
-  {
-    "name": "真昼ねる",
-    "twitchid": "mahiruneru",
-    "title": "【🔴Drops】参加◎世にもめずらしい朝活シージ☀️【ぷろのゔぁ／真昼ねる】",
-    "date": "2025-09-20T09:56:34.000+09:00",
-    "status": "live",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_mahiruneru-320x180.jpg"
+    "date": "2025-09-20T09:00:26.000+09:00",
+    "status": "archive",
+    "channelIcon": "https://yt3.googleusercontent.com/pDP2GuylW0RN1REDScFAlNklbXaPRqTm2mwT2F7dIo8xoYYFPfspsjGH_G3RagwlKVlQbdw95bY",
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d1m7jfoe9zdc1j/6ec301de62ac756d5429_sakuragimisa_v_315086143451_1758326422//thumb/thumb0-320x180.jpg"
   },
   {
     "name": "真昼ねる",
@@ -247,7 +240,7 @@
     "date": "2025-09-20T09:56:40.000+09:00",
     "status": "archive",
     "channelIcon": "https://yt3.googleusercontent.com/Cu6AMAZAEC_DTANKoaloA_4iLCuEUQ8BiAwyHGuOUG9GtoIw6s7mXCv1-49LV1IgODYZfGowzQ",
-    "thumbnail": "https://vod-secure.twitch.tv/_404/404_processing_320x180.png"
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/8578c6c5661cf23b7d63_mahiruneru_314891060595_1758329794//thumb/thumb0-320x180.jpg"
   },
   {
     "name": "李じゅぴ汰",
@@ -260,9 +253,18 @@
   {
     "name": "なかもとおまち",
     "twitchid": "41futon",
-    "title": "#常闇祭 まで鍛錬",
+    "title": "#常闇祭 星鳳ともり ユヰメ＠俺たちインパクト返します",
     "date": "2025-09-20T10:58:42.000+09:00",
     "status": "live",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_41futon-320x180.jpg"
+  },
+  {
+    "name": "なかもとおまち",
+    "twitchid": "41futon",
+    "title": "#常闇祭 まで鍛錬",
+    "date": "2025-09-20T10:58:48.000+09:00",
+    "status": "archive",
+    "channelIcon": "https://yt3.googleusercontent.com/h8jNjVckVf08zSV6wdhQ38Fw9OH7kucAprlJsi9w0YdDIL8_Kcv0tHY-1cK8jPK_jRLSJb3t_Q",
+    "thumbnail": "https://vod-secure.twitch.tv/_404/404_processing_320x180.png"
   }
 ]

@@ -1,15 +1,5 @@
 [
   {
-    "name": "宇田わん",
-    "youtubeid": "UCp45rWiRwgYZJUR4bQO-Xgw",
-    "title": "ホラゲ怖すぎてサツイマシマシ#新人vtuber",
-    "date": "2025-09-17T18:01:28.000+09:00",
-    "status": "archive",
-    "thumbnail": "https://i.ytimg.com/vi/v7E-bkOtKWw/mqdefault.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/bcgws2A-h2HRTCoWgcipC2sgJw_9y0O_5jBi_0QEW4DhAqyPZg4_xLkZw3JJBFZ2DzsYNiGx",
-    "url": "https://www.youtube.com/watch?v=v7E-bkOtKWw"
-  },
-  {
     "name": "魔法少女アルト",
     "youtubeid": "UCtRhBS8dlaeBgVcnEZOkAbA",
     "title": "ガサツあるある 〜 個人的に好きな曲を添えて 〜 #替え歌 #ネタ #badapple #あるある #アニメ",
@@ -18,16 +8,6 @@
     "thumbnail": "https://i.ytimg.com/vi/jV9Ux-TxPVI/mqdefault.jpg",
     "channelIcon": "https://yt3.googleusercontent.com/JwOkUNiR-08GjSI3MS8-Yk6jzONshtmRWZ9tpjOghB10quze7fgbJkhpPTpIfUX00HBACjAR8Q",
     "url": "https://www.youtube.com/watch?v=jV9Ux-TxPVI"
-  },
-  {
-    "name": "橋門エル",
-    "youtubeid": "UCcNo3POf2DiRs1TPIsEvNgA",
-    "title": "バトエンって知ってる? #部屋紹介 #VTuber",
-    "date": "2025-09-17T20:05:31.000+09:00",
-    "status": "archive",
-    "thumbnail": "https://i.ytimg.com/vi/iRWkRMhD_4A/mqdefault.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/fyNf7EKChxLeUcCXrveXXaSOc-P-5t2NjD32mXWpBDFUhnC0HVKP9lPG0P6GgxFMdMoX29tg",
-    "url": "https://www.youtube.com/watch?v=iRWkRMhD_4A"
   },
   {
     "name": "鹿鳴りあ",
@@ -448,6 +428,26 @@
     "thumbnail": "https://i.ytimg.com/vi/uk8xPgFLEsE/mqdefault_live.jpg",
     "channelIcon": "https://yt3.googleusercontent.com/9dVPxoBbcXIeN4O1N6bYiWu3EHHHeaStY7fQYPZfF3thWIP2Sc9Uc6kg56Aj0UHrg5QqqDtn",
     "url": "https://www.youtube.com/watch?v=uk8xPgFLEsE"
+  },
+  {
+    "name": "橋門エル",
+    "youtubeid": "UCcNo3POf2DiRs1TPIsEvNgA",
+    "title": "【スト6】レバレス移行初日、大ナメプをかます #vtuber #ゲーム実況 #スト6",
+    "date": "2025-09-20T18:00:48.000+09:00",
+    "status": "archive",
+    "thumbnail": "https://i.ytimg.com/vi/WoUyxF-hg8o/mqdefault.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/fyNf7EKChxLeUcCXrveXXaSOc-P-5t2NjD32mXWpBDFUhnC0HVKP9lPG0P6GgxFMdMoX29tg",
+    "url": "https://www.youtube.com/watch?v=WoUyxF-hg8o"
+  },
+  {
+    "name": "宇田わん",
+    "youtubeid": "UCp45rWiRwgYZJUR4bQO-Xgw",
+    "title": "犬とのことなので…🐾#新人vtuber",
+    "date": "2025-09-20T18:01:24.000+09:00",
+    "status": "archive",
+    "thumbnail": "https://i.ytimg.com/vi/sH547tU2WGs/mqdefault.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/bcgws2A-h2HRTCoWgcipC2sgJw_9y0O_5jBi_0QEW4DhAqyPZg4_xLkZw3JJBFZ2DzsYNiGx",
+    "url": "https://www.youtube.com/watch?v=sH547tU2WGs"
   },
   {
     "name": "カルプ・マーガレット",

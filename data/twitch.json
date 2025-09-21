@@ -1,14 +1,5 @@
 [
   {
-    "name": "しーはむ",
-    "twitchid": "siyham",
-    "title": "成人向け飲酒雑談",
-    "date": "2025-09-18T22:11:17.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://yt3.googleusercontent.com/y0zP0Uz7HSLx5dv3xo488Suxk8rJQQUC1wXaymjUBIQIwa25WlVu_VmrsT1xAyVD-jgeL7hs",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/c703cc041c9bdec83a77_siyham_314849635698_1758201071//thumb/thumb0-320x180.jpg"
-  },
-  {
     "name": "魔狩メグ",
     "twitchid": "magarimeg",
     "title": "【GTAV】5日目 今日は遅番23-2時出勤 #凪グラ",
@@ -287,19 +278,11 @@
   {
     "name": "なかもとおまち",
     "twitchid": "41futon",
-    "title": "#サガット祭り ♰虎ブルDarkness♰ 全力タイガー少女",
-    "date": "2025-09-21T19:04:11.000+09:00",
-    "status": "live",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_41futon-320x180.jpg"
-  },
-  {
-    "name": "なかもとおまち",
-    "twitchid": "41futon",
     "title": "マスターになりたい",
     "date": "2025-09-21T19:04:16.000+09:00",
     "status": "archive",
     "channelIcon": "https://yt3.googleusercontent.com/h8jNjVckVf08zSV6wdhQ38Fw9OH7kucAprlJsi9w0YdDIL8_Kcv0tHY-1cK8jPK_jRLSJb3t_Q",
-    "thumbnail": "https://vod-secure.twitch.tv/_404/404_processing_320x180.png"
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/8eb026115d4a938d4eeb_41futon_314860955762_1758449051//thumb/thumb0-320x180.jpg"
   },
   {
     "name": "銘兎目あう",
@@ -325,5 +308,13 @@
     "date": "2025-09-21T20:25:38.000+09:00",
     "status": "live",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_mahiruneru-320x180.jpg"
+  },
+  {
+    "name": "雨宮愛結猫",
+    "twitchid": "ayune_amemiya",
+    "title": "#水縹杯 練習🐈🎶┊#VALORANT┊JP/EN┊#Vtuber┊",
+    "date": "2025-09-21T21:59:19.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_ayune_amemiya-320x180.jpg"
   }
 ]

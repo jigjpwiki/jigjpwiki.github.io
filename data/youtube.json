@@ -1,15 +1,5 @@
 [
   {
-    "name": "橋門エル",
-    "youtubeid": "UCcNo3POf2DiRs1TPIsEvNgA",
-    "title": "朝活雑談というものをします #vtuber #雑談",
-    "date": "2025-09-18T10:01:35.000+09:00",
-    "status": "live",
-    "thumbnail": "https://i.ytimg.com/vi/CMSxVA8jlk8/mqdefault.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/fyNf7EKChxLeUcCXrveXXaSOc-P-5t2NjD32mXWpBDFUhnC0HVKP9lPG0P6GgxFMdMoX29tg",
-    "url": "https://www.youtube.com/watch?v=CMSxVA8jlk8"
-  },
-  {
     "name": "秋桜しゅお",
     "youtubeid": "UCPjtwOeRQV5EFkCwUycZsgw",
     "title": "【横型#歌枠配信 】#初見歓迎 🧡#作業用bgm にも！電車音とおうた【秋桜しゅお/登龍門BOX】#karaoke  #vtuber #vsinger  #懐メロ",
@@ -78,16 +68,6 @@
     "thumbnail": "https://i.ytimg.com/vi/WCemZeYLWRk/mqdefault.jpg",
     "channelIcon": "https://yt3.googleusercontent.com/WBGP05KaXeA21IzCbCeM0QHa0v9maVvVUBDZ2DyfTT62F1wGaW3hLOQBy1gCfuQfEnDNgwbsrQ",
     "url": "https://www.youtube.com/watch?v=WCemZeYLWRk"
-  },
-  {
-    "name": "桜樹美彩",
-    "youtubeid": "UCTwKpTFX1aAXD0xpBqYqTdg",
-    "title": "超夜型VTuberが朝5時半起き朝活を1年続けた結果… / 早起きする方法 #vtuber #朝活 #桜樹美彩",
-    "date": "2025-09-18T20:01:38.000+09:00",
-    "status": "archive",
-    "thumbnail": "https://i.ytimg.com/vi/pKzJP-eqSNo/mqdefault.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/pDP2GuylW0RN1REDScFAlNklbXaPRqTm2mwT2F7dIo8xoYYFPfspsjGH_G3RagwlKVlQbdw95bY",
-    "url": "https://www.youtube.com/watch?v=pKzJP-eqSNo"
   },
   {
     "name": "秋桜しゅお",
@@ -405,7 +385,7 @@
     "title": "【 ケーキ案件!! /#メイミーケーキ 】カマちゃん❤CAKEつくっちゃうわよ～！！！【 カルプ・マーガレット 】",
     "date": "2025-09-20T21:01:04.000+09:00",
     "status": "live",
-    "thumbnail": "https://i.ytimg.com/vi/3xZmCg2F2TI/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/3xZmCg2F2TI/mqdefault.jpg",
     "channelIcon": "https://yt3.googleusercontent.com/XXH1eOS7_cbzNwQFqJAtIguKNeLGs7-D2Pvf3M0vHlBVdKoYlmTbyMwUv7xjtsv5qM9IodH9",
     "url": "https://www.youtube.com/watch?v=3xZmCg2F2TI"
   },
@@ -448,6 +428,16 @@
     "thumbnail": "https://i.ytimg.com/vi/W0Yc1sqekrE/mqdefault_live.jpg",
     "channelIcon": "https://yt3.googleusercontent.com/9dVPxoBbcXIeN4O1N6bYiWu3EHHHeaStY7fQYPZfF3thWIP2Sc9Uc6kg56Aj0UHrg5QqqDtn",
     "url": "https://www.youtube.com/watch?v=W0Yc1sqekrE"
+  },
+  {
+    "name": "桜樹美彩",
+    "youtubeid": "UCTwKpTFX1aAXD0xpBqYqTdg",
+    "title": "ランクマ回しつつ日曜シャドバ🐤ガチ初心者の人形ネメシスよちよち「Shadowverse: Worlds Beyond」🍀/ #vtuber #シャドバWB #みさライなう #桜樹美彩",
+    "date": "2025-09-21T10:00:14.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/FGsKPPzwhfo/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/pDP2GuylW0RN1REDScFAlNklbXaPRqTm2mwT2F7dIo8xoYYFPfspsjGH_G3RagwlKVlQbdw95bY",
+    "url": "https://www.youtube.com/watch?v=FGsKPPzwhfo"
   },
   {
     "name": "忠犬しず",

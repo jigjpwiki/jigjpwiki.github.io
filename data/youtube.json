@@ -1,15 +1,5 @@
 [
   {
-    "name": "秋桜しゅお",
-    "youtubeid": "UCPjtwOeRQV5EFkCwUycZsgw",
-    "title": "【横型#歌枠配信 】#初見歓迎 🧡#作業用bgm にも！電車音とおうた【秋桜しゅお/登龍門BOX】#karaoke  #vtuber #vsinger  #懐メロ",
-    "date": "2025-09-18T12:00:40.000+09:00",
-    "status": "live",
-    "thumbnail": "https://i.ytimg.com/vi/gmi2BEOgXrc/mqdefault.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/WBGP05KaXeA21IzCbCeM0QHa0v9maVvVUBDZ2DyfTT62F1wGaW3hLOQBy1gCfuQfEnDNgwbsrQ",
-    "url": "https://www.youtube.com/watch?v=gmi2BEOgXrc"
-  },
-  {
     "name": "李じゅぴ汰",
     "youtubeid": "UCHsAAyHJhPXuLS6N3Kig6PQ",
     "title": "【スト6】ダイヤ3になるまで耐久　Mキンバリー【ストリートファイター6】　 #縦型配信",
@@ -18,16 +8,6 @@
     "thumbnail": "https://i.ytimg.com/vi/vyw1lPjRByk/mqdefault.jpg",
     "channelIcon": "https://yt3.googleusercontent.com/QQqec9A1J7eLk9RrRYD9vvk51BBJzcE1leGkU9n4YkwHqht9gmGT1ktmSlKItQtbuMSGuklAFxM",
     "url": "https://www.youtube.com/watch?v=vyw1lPjRByk"
-  },
-  {
-    "name": "橋門エル",
-    "youtubeid": "UCcNo3POf2DiRs1TPIsEvNgA",
-    "title": "部屋紹介させろマジで #部屋紹介 #VTuber",
-    "date": "2025-09-18T14:53:05.000+09:00",
-    "status": "archive",
-    "thumbnail": "https://i.ytimg.com/vi/YWJlx2VnMWg/mqdefault.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/fyNf7EKChxLeUcCXrveXXaSOc-P-5t2NjD32mXWpBDFUhnC0HVKP9lPG0P6GgxFMdMoX29tg",
-    "url": "https://www.youtube.com/watch?v=YWJlx2VnMWg"
   },
   {
     "name": "雨宮愛結猫",
@@ -438,6 +418,16 @@
     "thumbnail": "https://i.ytimg.com/vi/FGsKPPzwhfo/mqdefault_live.jpg",
     "channelIcon": "https://yt3.googleusercontent.com/pDP2GuylW0RN1REDScFAlNklbXaPRqTm2mwT2F7dIo8xoYYFPfspsjGH_G3RagwlKVlQbdw95bY",
     "url": "https://www.youtube.com/watch?v=FGsKPPzwhfo"
+  },
+  {
+    "name": "橋門エル",
+    "youtubeid": "UCcNo3POf2DiRs1TPIsEvNgA",
+    "title": "朝活雑談というものをします #vtuber #雑談",
+    "date": "2025-09-21T11:29:53.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/C6zOjeipgCA/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/fyNf7EKChxLeUcCXrveXXaSOc-P-5t2NjD32mXWpBDFUhnC0HVKP9lPG0P6GgxFMdMoX29tg",
+    "url": "https://www.youtube.com/watch?v=C6zOjeipgCA"
   },
   {
     "name": "忠犬しず",

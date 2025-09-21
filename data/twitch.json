@@ -292,5 +292,22 @@
     "date": "2025-09-21T18:04:09.000+09:00",
     "status": "live",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_hinoha_rui-320x180.jpg"
+  },
+  {
+    "name": "なかもとおまち",
+    "twitchid": "41futon",
+    "title": "#サガット祭り ♰虎ブルDarkness♰ 全力タイガー少女",
+    "date": "2025-09-21T19:04:11.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_41futon-320x180.jpg"
+  },
+  {
+    "name": "なかもとおまち",
+    "twitchid": "41futon",
+    "title": "マスターになりたい",
+    "date": "2025-09-21T19:04:16.000+09:00",
+    "status": "archive",
+    "channelIcon": "https://yt3.googleusercontent.com/h8jNjVckVf08zSV6wdhQ38Fw9OH7kucAprlJsi9w0YdDIL8_Kcv0tHY-1cK8jPK_jRLSJb3t_Q",
+    "thumbnail": "https://vod-secure.twitch.tv/_404/404_processing_320x180.png"
   }
 ]

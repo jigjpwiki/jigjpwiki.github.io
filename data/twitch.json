@@ -1,23 +1,5 @@
 [
   {
-    "name": "なかもとおまち",
-    "twitchid": "41futon",
-    "title": "何を失っても残るものを人は心とよびます",
-    "date": "2025-09-19T18:52:52.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://yt3.googleusercontent.com/h8jNjVckVf08zSV6wdhQ38Fw9OH7kucAprlJsi9w0YdDIL8_Kcv0tHY-1cK8jPK_jRLSJb3t_Q",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/5a895f099c685453bfdc_41futon_314852567410_1758275566//thumb/thumb0-320x180.jpg"
-  },
-  {
-    "name": "なかもとおまち",
-    "twitchid": "41futon",
-    "title": "SFLみるぞ！うりょさん全力応援！",
-    "date": "2025-09-19T18:55:15.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://yt3.googleusercontent.com/h8jNjVckVf08zSV6wdhQ38Fw9OH7kucAprlJsi9w0YdDIL8_Kcv0tHY-1cK8jPK_jRLSJb3t_Q",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/7fdeca6238159f2d1f50_41futon_314852572402_1758275709//thumb/thumb0-320x180.jpg"
-  },
-  {
     "name": "駿河ルガ",
     "twitchid": "suruga_luga",
     "title": "【スト6】音のサガット【登龍門BOX/駿河ルガ】",
@@ -267,5 +249,13 @@
     "date": "2025-09-22T17:00:47.000+09:00",
     "status": "live",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_41futon-320x180.jpg"
+  },
+  {
+    "name": "駿河ルガ",
+    "twitchid": "suruga_luga",
+    "title": "【スト6】時のサガット【登龍門BOX/駿河ルガ】",
+    "date": "2025-09-22T19:00:08.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_suruga_luga-320x180.jpg"
   }
 ]

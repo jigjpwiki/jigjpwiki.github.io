@@ -1,15 +1,5 @@
 [
   {
-    "name": "鹿鳴りあ",
-    "youtubeid": "UC6cgUcRa_gGsjqq3Kp6B68w",
-    "title": "【歌枠】アニソン中心✨初見さんも大歓迎！【#鹿鳴りあ #ろくめみて 】",
-    "date": "2025-09-19T22:01:35.000+09:00",
-    "status": "live",
-    "thumbnail": "https://i.ytimg.com/vi/tmoNJcmcz2g/mqdefault.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/8LfPowqmhNmaEl9OBYSMUbrC7y1UCCpgvvGo2WhFFk4WKuMiigUwuFQFP2PD1krD6nfVHsQ-ew",
-    "url": "https://www.youtube.com/watch?v=tmoNJcmcz2g"
-  },
-  {
     "name": "李じゅぴ汰",
     "youtubeid": "UCHsAAyHJhPXuLS6N3Kig6PQ",
     "title": "【 #R6SX 】不束者ですが、クリアランスレベルを上げます。初心者です　文句言いながらやるシージ【レインボーシージエックス】　 #縦型配信",
@@ -385,7 +375,7 @@
     "title": "【#歌枠配信  】#初見歓迎 🧡月曜日だ！のんびりおうた【秋桜しゅお/登龍門BOX】#karaoke  #vtuber #vsinger  #懐メロ",
     "date": "2025-09-22T19:30:31.000+09:00",
     "status": "live",
-    "thumbnail": "https://i.ytimg.com/vi/iRINNzdHDAY/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/iRINNzdHDAY/mqdefault.jpg",
     "channelIcon": "https://yt3.googleusercontent.com/WBGP05KaXeA21IzCbCeM0QHa0v9maVvVUBDZ2DyfTT62F1wGaW3hLOQBy1gCfuQfEnDNgwbsrQ",
     "url": "https://www.youtube.com/watch?v=iRINNzdHDAY"
   },
@@ -395,7 +385,7 @@
     "title": "【 FINAL FANTASY VII REBIRTH 】#10 リメイク2作品目初見プレイ！※ネタバレ注意【 春原なずな / Vtuber 】",
     "date": "2025-09-22T19:31:33.000+09:00",
     "status": "live",
-    "thumbnail": "https://i.ytimg.com/vi/YL39ETwXev8/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/YL39ETwXev8/mqdefault.jpg",
     "channelIcon": "https://yt3.googleusercontent.com/0pD1c95Y9X0VrhzWtlf2SRPqdkesiuZxC8Hb5Mg9Xv1WWpQaFCmjITTK8-n5HlNsB-yDbAN4CZA",
     "url": "https://www.youtube.com/watch?v=YL39ETwXev8"
   },
@@ -430,11 +420,21 @@
     "url": "https://www.youtube.com/watch?v=DDugxq5vSNw"
   },
   {
+    "name": "鹿鳴りあ",
+    "youtubeid": "UC6cgUcRa_gGsjqq3Kp6B68w",
+    "title": "【歌枠】アニソン✨初見さんも大歓迎！【#鹿鳴りあ #ろくめみて 】",
+    "date": "2025-09-22T22:01:36.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/oNrGaLGQd4o/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/8LfPowqmhNmaEl9OBYSMUbrC7y1UCCpgvvGo2WhFFk4WKuMiigUwuFQFP2PD1krD6nfVHsQ-ew",
+    "url": "https://www.youtube.com/watch?v=oNrGaLGQd4o"
+  },
+  {
     "name": "カルプ・マーガレット",
     "youtubeid": "UCAANONySj4hE_-ch6G34MZQ",
     "title": "【 #雑談  / 初見さん大歓迎♡ 】スナック二輪の華へようこそ♡【 広島弁のオネエVTuber 】",
-    "date": "2025-09-22T22:00:00.000+09:00",
-    "status": "upcoming",
+    "date": "2025-09-22T22:02:43.000+09:00",
+    "status": "live",
     "thumbnail": "https://i.ytimg.com/vi/EE3gsYE-mIQ/mqdefault_live.jpg",
     "channelIcon": "https://yt3.googleusercontent.com/XXH1eOS7_cbzNwQFqJAtIguKNeLGs7-D2Pvf3M0vHlBVdKoYlmTbyMwUv7xjtsv5qM9IodH9",
     "url": "https://www.youtube.com/watch?v=EE3gsYE-mIQ"

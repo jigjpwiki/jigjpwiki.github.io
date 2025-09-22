@@ -1,15 +1,5 @@
 [
   {
-    "name": "妖小琳",
-    "youtubeid": "UC6eopxuX7lx8GnpkntObt1w",
-    "title": "【#お悩み相談 】「 溢れる食欲 」【#小林鍼灸治療院】",
-    "date": "2025-09-19T21:00:19.000+09:00",
-    "status": "live",
-    "thumbnail": "https://i.ytimg.com/vi/fohrWp2ECpk/mqdefault.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/Ji8DJgyzWKUbbeWlYgFfsCZtyiGZ-zM597otZBcFnIoEVIw7284GbNbBQcALgEKwqvk8OXNZLA",
-    "url": "https://www.youtube.com/watch?v=fohrWp2ECpk"
-  },
-  {
     "name": "鹿鳴りあ",
     "youtubeid": "UC6cgUcRa_gGsjqq3Kp6B68w",
     "title": "【歌枠】アニソン中心✨初見さんも大歓迎！【#鹿鳴りあ #ろくめみて 】",
@@ -305,7 +295,7 @@
     "title": "【初見◎ROM◎】9月朝活月間！9/22のおはよう☀️【ぷろのゔぁ】【新人Vtuber】",
     "date": "2025-09-22T07:31:26.000+09:00",
     "status": "live",
-    "thumbnail": "https://i.ytimg.com/vi/1IAcYDKb5f0/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/1IAcYDKb5f0/mqdefault.jpg",
     "channelIcon": "https://yt3.googleusercontent.com/eVD8Ygm7KVyh3dvWnyebfYlbYpD13ZYQ-Bos8WdR5LDE61A3svHVHCLEY-rM3IQgw9O4uvdd",
     "url": "https://www.youtube.com/watch?v=1IAcYDKb5f0"
   },
@@ -428,6 +418,16 @@
     "thumbnail": "https://i.ytimg.com/vi/RTDcZ9TkhmY/mqdefault_live.jpg",
     "channelIcon": "https://yt3.googleusercontent.com/Ji8DJgyzWKUbbeWlYgFfsCZtyiGZ-zM597otZBcFnIoEVIw7284GbNbBQcALgEKwqvk8OXNZLA",
     "url": "https://www.youtube.com/watch?v=RTDcZ9TkhmY"
+  },
+  {
+    "name": "宇田わん",
+    "youtubeid": "UCp45rWiRwgYZJUR4bQO-Xgw",
+    "title": "【 歌枠 】登録者数6000人耐久をしたかった！！【 #宇田わん #新人VTuber / #登龍門BOX 】",
+    "date": "2025-09-22T21:30:30.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/DDugxq5vSNw/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/bcgws2A-h2HRTCoWgcipC2sgJw_9y0O_5jBi_0QEW4DhAqyPZg4_xLkZw3JJBFZ2DzsYNiGx",
+    "url": "https://www.youtube.com/watch?v=DDugxq5vSNw"
   },
   {
     "name": "カルプ・マーガレット",

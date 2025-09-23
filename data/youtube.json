@@ -1,15 +1,5 @@
 [
   {
-    "name": "忠犬しず",
-    "youtubeid": "UCPzN3R0x_SciJJ_FP-STpHQ",
-    "title": "【 KARAOKE/歌枠 】初見さん歓迎！特撮ソングを歌うぞぉ！　【 VTuber/忠犬しず  】",
-    "date": "2025-09-20T16:31:33.000+09:00",
-    "status": "live",
-    "thumbnail": "https://i.ytimg.com/vi/uk8xPgFLEsE/mqdefault.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/9dVPxoBbcXIeN4O1N6bYiWu3EHHHeaStY7fQYPZfF3thWIP2Sc9Uc6kg56Aj0UHrg5QqqDtn",
-    "url": "https://www.youtube.com/watch?v=uk8xPgFLEsE"
-  },
-  {
     "name": "宇田わん",
     "youtubeid": "UCp45rWiRwgYZJUR4bQO-Xgw",
     "title": "犬とのことなので…🐾#新人vtuber",
@@ -385,7 +375,7 @@
     "title": "【 忠犬しず推薦BLドラマ同時視聴 】きのう何食べた？と40までにしたい10のことの1、2話をみんなで見てみよう！",
     "date": "2025-09-23T14:00:35.000+09:00",
     "status": "live",
-    "thumbnail": "https://i.ytimg.com/vi/jxlJlPqXHhg/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/jxlJlPqXHhg/mqdefault.jpg",
     "channelIcon": "https://yt3.googleusercontent.com/9dVPxoBbcXIeN4O1N6bYiWu3EHHHeaStY7fQYPZfF3thWIP2Sc9Uc6kg56Aj0UHrg5QqqDtn",
     "url": "https://www.youtube.com/watch?v=jxlJlPqXHhg"
   },
@@ -408,6 +398,16 @@
     "thumbnail": "https://i.ytimg.com/vi/VUTnE-Ho5w8/mqdefault_live.jpg",
     "channelIcon": "https://yt3.googleusercontent.com/XXH1eOS7_cbzNwQFqJAtIguKNeLGs7-D2Pvf3M0vHlBVdKoYlmTbyMwUv7xjtsv5qM9IodH9",
     "url": "https://www.youtube.com/watch?v=VUTnE-Ho5w8"
+  },
+  {
+    "name": "忠犬しず",
+    "youtubeid": "UCPzN3R0x_SciJJ_FP-STpHQ",
+    "title": "【 同時視聴 】完全初見！仮面ライダーオーズと機界戦隊ゼンカイジャーの9、10話を見て行くぞ！【 Vtuber/忠犬しず 】#特撮オタク　#特撮女子",
+    "date": "2025-09-23T21:00:00.000+09:00",
+    "status": "upcoming",
+    "thumbnail": "https://i.ytimg.com/vi/MB6QKQEaQeE/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/9dVPxoBbcXIeN4O1N6bYiWu3EHHHeaStY7fQYPZfF3thWIP2Sc9Uc6kg56Aj0UHrg5QqqDtn",
+    "url": "https://www.youtube.com/watch?v=MB6QKQEaQeE"
   },
   {
     "name": "桜樹美彩",

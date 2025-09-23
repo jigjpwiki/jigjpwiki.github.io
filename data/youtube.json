@@ -1,15 +1,5 @@
 [
   {
-    "name": "宇田わん",
-    "youtubeid": "UCp45rWiRwgYZJUR4bQO-Xgw",
-    "title": "【 雑談 】高評価150耐久🤍おしゃべり配信！！【 #宇田わん #新人VTuber / #登龍門BOX 】",
-    "date": "2025-09-20T20:30:48.000+09:00",
-    "status": "live",
-    "thumbnail": "https://i.ytimg.com/vi/n_WGp_TXRPQ/mqdefault.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/bcgws2A-h2HRTCoWgcipC2sgJw_9y0O_5jBi_0QEW4DhAqyPZg4_xLkZw3JJBFZ2DzsYNiGx",
-    "url": "https://www.youtube.com/watch?v=n_WGp_TXRPQ"
-  },
-  {
     "name": "魔法少女アルト",
     "youtubeid": "UCtRhBS8dlaeBgVcnEZOkAbA",
     "title": "【雑談】ファンアート自慢会！Charaforioに投稿してもらったイラスト紹介！！9/20  #shorts #Vtuber ＃アルトの魔法通信 【登龍門BOX /魔法少女アルト 】",
@@ -138,16 +128,6 @@
     "thumbnail": "https://i.ytimg.com/vi/YkIgDiuk67M/mqdefault.jpg",
     "channelIcon": "https://yt3.googleusercontent.com/XXH1eOS7_cbzNwQFqJAtIguKNeLGs7-D2Pvf3M0vHlBVdKoYlmTbyMwUv7xjtsv5qM9IodH9",
     "url": "https://www.youtube.com/watch?v=YkIgDiuk67M"
-  },
-  {
-    "name": "桜樹美彩",
-    "youtubeid": "UCTwKpTFX1aAXD0xpBqYqTdg",
-    "title": "【 朝活 / 雑談 】月曜も元気に雑談＆おはようを365名様に.ᐟ おいしいパン教えて🍞🐣🍀 初見＆ROM勢大歓迎🐤  #vtuber #みさライなう #桜樹美彩 #新人vtuber #作業用BGM",
-    "date": "2025-09-22T07:00:17.000+09:00",
-    "status": "live",
-    "thumbnail": "https://i.ytimg.com/vi/cfHyQqipz3Y/mqdefault.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/pDP2GuylW0RN1REDScFAlNklbXaPRqTm2mwT2F7dIo8xoYYFPfspsjGH_G3RagwlKVlQbdw95bY",
-    "url": "https://www.youtube.com/watch?v=cfHyQqipz3Y"
   },
   {
     "name": "水透ユウ",
@@ -330,6 +310,16 @@
     "url": "https://www.youtube.com/watch?v=tOHJc3IbmLo"
   },
   {
+    "name": "桜樹美彩",
+    "youtubeid": "UCTwKpTFX1aAXD0xpBqYqTdg",
+    "title": "【 朝活 / ニュース 】アラーム代わりに⏰ AM7:00 『ちょこっと』朝活ニュース🍀天気予報/時事ニュース🍁初見＆ROM勢大歓迎🐥 #vtuber #みさライなう #桜樹美彩 #新人vtuber",
+    "date": "2025-09-23T07:00:25.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/x0eYvG6preo/mqdefault.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/pDP2GuylW0RN1REDScFAlNklbXaPRqTm2mwT2F7dIo8xoYYFPfspsjGH_G3RagwlKVlQbdw95bY",
+    "url": "https://www.youtube.com/watch?v=x0eYvG6preo"
+  },
+  {
     "name": "鹿鳴りあ",
     "youtubeid": "UC6cgUcRa_gGsjqq3Kp6B68w",
     "title": "【実写 #ガンプラ女子 】シャアザク作る✨【#鹿鳴りあ  #作業】",
@@ -370,6 +360,16 @@
     "url": "https://www.youtube.com/watch?v=H74RQ2U2zXA"
   },
   {
+    "name": "桜樹美彩",
+    "youtubeid": "UCTwKpTFX1aAXD0xpBqYqTdg",
+    "title": "【 雑談 】究極のゆる雑談／ふーん、秋じゃん。【縦型配信】 #vtuber #桜樹美彩 #みさライなう #新人Vtuber #shorts",
+    "date": "2025-09-23T18:01:49.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/bS4VBRHBBy0/mqdefault.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/pDP2GuylW0RN1REDScFAlNklbXaPRqTm2mwT2F7dIo8xoYYFPfspsjGH_G3RagwlKVlQbdw95bY",
+    "url": "https://www.youtube.com/watch?v=bS4VBRHBBy0"
+  },
+  {
     "name": "魔狩メグ",
     "youtubeid": "UCc-A8oC0aTLd9YLfq-mgQTw",
     "title": "デスマウンテンだったょ。。。 #凪グラ #gtav",
@@ -400,34 +400,54 @@
     "url": "https://www.youtube.com/watch?v=wfDHDNOSRtQ"
   },
   {
-    "name": "カルプ・マーガレット",
-    "youtubeid": "UCAANONySj4hE_-ch6G34MZQ",
-    "title": "【 #sf6 交流会!! / 視聴者参加型!? 】私がMVPに輝く!!!任せておきなさい!!!【 広島弁のオネエVTuber 】",
-    "date": "2025-09-23T21:00:00.000+09:00",
-    "status": "upcoming",
-    "thumbnail": "https://i.ytimg.com/vi/VUTnE-Ho5w8/mqdefault_live.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/XXH1eOS7_cbzNwQFqJAtIguKNeLGs7-D2Pvf3M0vHlBVdKoYlmTbyMwUv7xjtsv5qM9IodH9",
-    "url": "https://www.youtube.com/watch?v=VUTnE-Ho5w8"
-  },
-  {
     "name": "忠犬しず",
     "youtubeid": "UCPzN3R0x_SciJJ_FP-STpHQ",
     "title": "【 同時視聴 】完全初見！仮面ライダーオーズと機界戦隊ゼンカイジャーの9、10話を見て行くぞ！【 Vtuber/忠犬しず 】#特撮オタク　#特撮女子",
-    "date": "2025-09-23T21:00:00.000+09:00",
-    "status": "upcoming",
+    "date": "2025-09-23T20:59:55.000+09:00",
+    "status": "live",
     "thumbnail": "https://i.ytimg.com/vi/MB6QKQEaQeE/mqdefault_live.jpg",
     "channelIcon": "https://yt3.googleusercontent.com/9dVPxoBbcXIeN4O1N6bYiWu3EHHHeaStY7fQYPZfF3thWIP2Sc9Uc6kg56Aj0UHrg5QqqDtn",
     "url": "https://www.youtube.com/watch?v=MB6QKQEaQeE"
   },
   {
+    "name": "カルプ・マーガレット",
+    "youtubeid": "UCAANONySj4hE_-ch6G34MZQ",
+    "title": "【 #sf6 交流会!! / 視聴者参加型!? 】私がMVPに輝く!!!任せておきなさい!!!【 広島弁のオネエVTuber 】",
+    "date": "2025-09-23T21:00:03.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/VUTnE-Ho5w8/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/XXH1eOS7_cbzNwQFqJAtIguKNeLGs7-D2Pvf3M0vHlBVdKoYlmTbyMwUv7xjtsv5qM9IodH9",
+    "url": "https://www.youtube.com/watch?v=VUTnE-Ho5w8"
+  },
+  {
     "name": "魔法少女アルト",
     "youtubeid": "UCtRhBS8dlaeBgVcnEZOkAbA",
     "title": "【予選ラスト】突破するぞ🔥ファンアート見ながら見守り配信！9/23  #shorts #Vtuber ＃アルトの魔法通信 【登龍門BOX /魔法少女アルト 】",
-    "date": "2025-09-23T21:00:44.000+09:00",
-    "status": "upcoming",
+    "date": "2025-09-23T21:02:35.000+09:00",
+    "status": "live",
     "thumbnail": "https://i.ytimg.com/vi/FMkExvBgNg4/mqdefault_live.jpg",
     "channelIcon": "https://yt3.googleusercontent.com/JwOkUNiR-08GjSI3MS8-Yk6jzONshtmRWZ9tpjOghB10quze7fgbJkhpPTpIfUX00HBACjAR8Q",
     "url": "https://www.youtube.com/watch?v=FMkExvBgNg4"
+  },
+  {
+    "name": "銘兎目あう",
+    "youtubeid": "UCpr-9ssUUgSb0EpDA8bRuTA",
+    "title": "🔰【R6SX】第2回（コーチ）CrazyPapiyoNさん（ゲスト）月羽るみんさん🌟10月2日本番🔫 #R6SX #レインボーシックスシージ #fps #vtuber",
+    "date": "2025-09-23T21:03:03.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/xNXK0M_OjMU/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/VB97J8AMHex_rkfd6hDhfiGhhVvrL-NNkseP2mMYSWh75sxA_oXctmxK5tV4FYgkM17RUAx6GQ",
+    "url": "https://www.youtube.com/watch?v=xNXK0M_OjMU"
+  },
+  {
+    "name": "李じゅぴ汰",
+    "youtubeid": "UCHsAAyHJhPXuLS6N3Kig6PQ",
+    "title": "【 #R6SX 】CrazyPapiyoN さんコーチング！ぷろのゔぁシージ最強決定戦②【レインボーシージエックス】月羽るみんさんと一緒！",
+    "date": "2025-09-23T21:03:57.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/1C36tQKt3H8/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/QQqec9A1J7eLk9RrRYD9vvk51BBJzcE1leGkU9n4YkwHqht9gmGT1ktmSlKItQtbuMSGuklAFxM",
+    "url": "https://www.youtube.com/watch?v=1C36tQKt3H8"
   },
   {
     "name": "桜樹美彩",
@@ -442,21 +462,21 @@
   {
     "name": "妖小琳",
     "youtubeid": "UC6eopxuX7lx8GnpkntObt1w",
+    "title": "【#ひるツボ 】第1回 「百会」【#小林鍼灸治療院】",
+    "date": "2025-09-24T12:00:00.000+09:00",
+    "status": "upcoming",
+    "thumbnail": "https://i.ytimg.com/vi/iPHNZpgML_0/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/Ji8DJgyzWKUbbeWlYgFfsCZtyiGZ-zM597otZBcFnIoEVIw7284GbNbBQcALgEKwqvk8OXNZLA",
+    "url": "https://www.youtube.com/watch?v=iPHNZpgML_0"
+  },
+  {
+    "name": "妖小琳",
+    "youtubeid": "UC6eopxuX7lx8GnpkntObt1w",
     "title": "【#雑談 /FreeTalk】明日がちょっとマシになるように－蒸し暑い夜にゆるっと相談—【妖小琳/Vtuber】",
     "date": "2025-09-24T23:00:00.000+09:00",
     "status": "upcoming",
     "thumbnail": "https://i.ytimg.com/vi/egWOeAhvU6E/mqdefault_live.jpg",
     "channelIcon": "https://yt3.googleusercontent.com/Ji8DJgyzWKUbbeWlYgFfsCZtyiGZ-zM597otZBcFnIoEVIw7284GbNbBQcALgEKwqvk8OXNZLA",
     "url": "https://www.youtube.com/watch?v=egWOeAhvU6E"
-  },
-  {
-    "name": "桜樹美彩",
-    "youtubeid": "UCTwKpTFX1aAXD0xpBqYqTdg",
-    "title": "【 朝活 / ニュース 】アラーム代わりに⏰ AM7:00 『ちょこっと』朝活ニュース🍀天気予報/時事ニュース🍁 初見＆ROM勢大歓迎🐥#vtuber #みさライなう #桜樹美彩 #新人vtuber",
-    "date": "2025-09-26T07:00:00.000+09:00",
-    "status": "upcoming",
-    "thumbnail": "https://i.ytimg.com/vi/jo7cEUvl4FE/mqdefault_live.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/pDP2GuylW0RN1REDScFAlNklbXaPRqTm2mwT2F7dIo8xoYYFPfspsjGH_G3RagwlKVlQbdw95bY",
-    "url": "https://www.youtube.com/watch?v=jo7cEUvl4FE"
   }
 ]

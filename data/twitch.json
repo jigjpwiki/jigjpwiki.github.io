@@ -150,7 +150,7 @@
     "date": "2025-09-25T18:00:38.000+09:00",
     "status": "archive",
     "channelIcon": "https://yt3.googleusercontent.com/JlY4XEMg9noNa4ShOtky0OwYbKXjnhnje6NQUcwrnJ0UI3C9VQrB-fBNat9QJSUJuuT_Yo1P",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/b1abb3986053c96989a2_suruga_luga_314876819698_1758790828//thumb/thumb0-320x180.jpg"
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d2nvs31859zcd8/b1abb3986053c96989a2_suruga_luga_314876819698_1758790828/thumb/custom-678a84ba-306a-4617-92e5-92ff3e08fe82-320x180.png"
   },
   {
     "name": "銘兎目あう",
@@ -186,5 +186,13 @@
     "status": "archive",
     "channelIcon": "https://yt3.googleusercontent.com/h8jNjVckVf08zSV6wdhQ38Fw9OH7kucAprlJsi9w0YdDIL8_Kcv0tHY-1cK8jPK_jRLSJb3t_Q",
     "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/358e5910570eab9d58d9_41futon_314877699442_1758803391//thumb/thumb0-320x180.jpg"
+  },
+  {
+    "name": "火乃晴るい",
+    "twitchid": "hinoha_rui",
+    "title": "【 #サイレントヒルf 】喉が壊れるのが先か、クリアが先か",
+    "date": "2025-09-25T23:12:44.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_hinoha_rui-320x180.jpg"
   }
 ]

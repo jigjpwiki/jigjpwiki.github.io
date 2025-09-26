@@ -1,15 +1,5 @@
 [
   {
-    "name": "魔狩メグ",
-    "youtubeid": "UCc-A8oC0aTLd9YLfq-mgQTw",
-    "title": "デスマウンテンだったょ。。。 #凪グラ #gtav",
-    "date": "2025-09-23T19:00:50.000+09:00",
-    "status": "archive",
-    "thumbnail": "https://i.ytimg.com/vi/XN5KKRN2OuM/mqdefault.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/F9pOM4qdqqRlcR-l2Ip7QpokNxCCXxTUMv_kRanXgAOmfHKff5mX9880XqYYEaNFx-kEYpjQ",
-    "url": "https://www.youtube.com/watch?v=XN5KKRN2OuM"
-  },
-  {
     "name": "秋桜しゅお",
     "youtubeid": "UCPjtwOeRQV5EFkCwUycZsgw",
     "title": "【#歌枠配信  】#初見歓迎 🧡かようのよるののんびりうた【秋桜しゅお/登龍門BOX】#karaoke  #vtuber #vsinger  #懐メロ",
@@ -28,16 +18,6 @@
     "thumbnail": "https://i.ytimg.com/vi/MB6QKQEaQeE/mqdefault.jpg",
     "channelIcon": "https://yt3.googleusercontent.com/9dVPxoBbcXIeN4O1N6bYiWu3EHHHeaStY7fQYPZfF3thWIP2Sc9Uc6kg56Aj0UHrg5QqqDtn",
     "url": "https://www.youtube.com/watch?v=MB6QKQEaQeE"
-  },
-  {
-    "name": "カルプ・マーガレット",
-    "youtubeid": "UCAANONySj4hE_-ch6G34MZQ",
-    "title": "【 #sf6 交流会!! / 視聴者参加型!? 】私がMVPに輝く!!!任せておきなさい!!!【 広島弁のオネエVTuber 】",
-    "date": "2025-09-23T21:00:03.000+09:00",
-    "status": "live",
-    "thumbnail": "https://i.ytimg.com/vi/VUTnE-Ho5w8/mqdefault.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/XXH1eOS7_cbzNwQFqJAtIguKNeLGs7-D2Pvf3M0vHlBVdKoYlmTbyMwUv7xjtsv5qM9IodH9",
-    "url": "https://www.youtube.com/watch?v=VUTnE-Ho5w8"
   },
   {
     "name": "魔法少女アルト",
@@ -412,12 +392,42 @@
   {
     "name": "春原なずな",
     "youtubeid": "UCW-iuU7g3BJnuQ1D3UkqeSA",
+    "title": "【FF7REBIRTH】無事勝ちましたよ※ネタバレ注意【 春原なずな / Vtuber 】 #ゲーム実況 #vtuber #ff7rebirth",
+    "date": "2025-09-26T18:30:16.000+09:00",
+    "status": "archive",
+    "thumbnail": "https://i.ytimg.com/vi/NwXHsuFWjes/mqdefault.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/0pD1c95Y9X0VrhzWtlf2SRPqdkesiuZxC8Hb5Mg9Xv1WWpQaFCmjITTK8-n5HlNsB-yDbAN4CZA",
+    "url": "https://www.youtube.com/watch?v=NwXHsuFWjes"
+  },
+  {
+    "name": "カルプ・マーガレット",
+    "youtubeid": "UCAANONySj4hE_-ch6G34MZQ",
+    "title": "犬とオネエが戯れてる癒し系動画💕",
+    "date": "2025-09-26T19:00:01.000+09:00",
+    "status": "archive",
+    "thumbnail": "https://i.ytimg.com/vi/-eQ728N3K6E/mqdefault.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/XXH1eOS7_cbzNwQFqJAtIguKNeLGs7-D2Pvf3M0vHlBVdKoYlmTbyMwUv7xjtsv5qM9IodH9",
+    "url": "https://www.youtube.com/watch?v=-eQ728N3K6E"
+  },
+  {
+    "name": "春原なずな",
+    "youtubeid": "UCW-iuU7g3BJnuQ1D3UkqeSA",
     "title": "【 FINAL FANTASY VII REBIRTH 】#12 リメイク2作品目初見プレイ！※ネタバレ注意【 春原なずな / Vtuber 】",
-    "date": "2025-09-26T19:00:00.000+09:00",
-    "status": "upcoming",
+    "date": "2025-09-26T19:00:21.000+09:00",
+    "status": "live",
     "thumbnail": "https://i.ytimg.com/vi/4nLoF3VruKc/mqdefault_live.jpg",
     "channelIcon": "https://yt3.googleusercontent.com/0pD1c95Y9X0VrhzWtlf2SRPqdkesiuZxC8Hb5Mg9Xv1WWpQaFCmjITTK8-n5HlNsB-yDbAN4CZA",
     "url": "https://www.youtube.com/watch?v=4nLoF3VruKc"
+  },
+  {
+    "name": "魔狩メグ",
+    "youtubeid": "UCc-A8oC0aTLd9YLfq-mgQTw",
+    "title": "頭から離れない音楽 #vtuber #魔狩メグ",
+    "date": "2025-09-26T19:01:29.000+09:00",
+    "status": "archive",
+    "thumbnail": "https://i.ytimg.com/vi/kLi587G4Ajo/mqdefault.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/F9pOM4qdqqRlcR-l2Ip7QpokNxCCXxTUMv_kRanXgAOmfHKff5mX9880XqYYEaNFx-kEYpjQ",
+    "url": "https://www.youtube.com/watch?v=kLi587G4Ajo"
   },
   {
     "name": "妖小琳",

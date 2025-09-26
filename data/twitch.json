@@ -137,7 +137,7 @@
   {
     "name": "銘兎目あう",
     "twitchid": "Metome_Au",
-    "title": "【スト６】カスタム参加型🥊🥋誰でもお気軽に🎶",
+    "title": "【スト６】ランクやるよ！",
     "date": "2025-09-26T20:38:39.000+09:00",
     "status": "live",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_Metome_Au-320x180.jpg"
@@ -154,26 +154,27 @@
   {
     "name": "雨宮愛結猫",
     "twitchid": "ayune_amemiya",
-    "title": "ぱーとなーきねんび ありがとう🐈🎶┊#LoL┊JP/EN┊#Vtuber┊",
-    "date": "2025-09-26T20:53:27.000+09:00",
-    "status": "live",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_ayune_amemiya-320x180.jpg"
-  },
-  {
-    "name": "雨宮愛結猫",
-    "twitchid": "ayune_amemiya",
     "title": "ごるど のんびり🐈🎶┊#LoL┊JP/EN┊#Vtuber┊",
     "date": "2025-09-26T20:53:33.000+09:00",
     "status": "archive",
     "channelIcon": "https://yt3.googleusercontent.com/kn25wJn77KhPY6MXLYIvYg_VDJk9MDaguKjRFJu2UbLMLSasK_h3Xo4ZaIRM5U7vUbiMQJD-",
-    "thumbnail": "https://vod-secure.twitch.tv/_404/404_processing_320x180.png"
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/efccd3020a37fa29105f_ayune_amemiya_314875018865_1758887607//thumb/thumb0-320x180.jpg"
   },
   {
     "name": "火乃晴るい",
     "twitchid": "hinoha_rui",
     "title": "第二回【 #サイレントヒルf 】喉が壊れるのが先か、クリアが先か",
-    "date": "2025-09-26T21:33:03.000+09:00",
+    "date": "2025-09-26T21:33:09.000+09:00",
+    "status": "archive",
+    "channelIcon": "https://yt3.googleusercontent.com/8vDFqOVNprKqFE0o7EecXyQleBXIibeJZpXpSgjm5msh4Yd0S8hTsbmYZyOBXa3bUEgBJHZt1w",
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/1b9480aeb48660537682_hinoha_rui_314921495923_1758889983//thumb/thumb0-320x180.jpg"
+  },
+  {
+    "name": "魔狩メグ",
+    "twitchid": "magarimeg",
+    "title": "【League of Legends】🔰#1 LOLって何から始まる お友達配信者乱入OK",
+    "date": "2025-09-27T00:04:40.000+09:00",
     "status": "live",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_hinoha_rui-320x180.jpg"
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_magarimeg-320x180.jpg"
   }
 ]

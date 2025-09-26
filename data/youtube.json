@@ -40,16 +40,6 @@
     "url": "https://www.youtube.com/watch?v=XN5KKRN2OuM"
   },
   {
-    "name": "カルプ・マーガレット",
-    "youtubeid": "UCAANONySj4hE_-ch6G34MZQ",
-    "title": "ええ加減他人と比較するのやめんさい",
-    "date": "2025-09-23T19:01:00.000+09:00",
-    "status": "archive",
-    "thumbnail": "https://i.ytimg.com/vi/WtC4m1sENgU/mqdefault.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/XXH1eOS7_cbzNwQFqJAtIguKNeLGs7-D2Pvf3M0vHlBVdKoYlmTbyMwUv7xjtsv5qM9IodH9",
-    "url": "https://www.youtube.com/watch?v=WtC4m1sENgU"
-  },
-  {
     "name": "秋桜しゅお",
     "youtubeid": "UCPjtwOeRQV5EFkCwUycZsgw",
     "title": "【#歌枠配信  】#初見歓迎 🧡かようのよるののんびりうた【秋桜しゅお/登龍門BOX】#karaoke  #vtuber #vsinger  #懐メロ",
@@ -148,6 +138,16 @@
     "thumbnail": "https://i.ytimg.com/vi/qvXPGpPBGoc/mqdefault.jpg",
     "channelIcon": "https://yt3.googleusercontent.com/QQqec9A1J7eLk9RrRYD9vvk51BBJzcE1leGkU9n4YkwHqht9gmGT1ktmSlKItQtbuMSGuklAFxM",
     "url": "https://www.youtube.com/watch?v=qvXPGpPBGoc"
+  },
+  {
+    "name": "秋桜しゅお",
+    "youtubeid": "UCPjtwOeRQV5EFkCwUycZsgw",
+    "title": "【#歌枠配信  】#初見歓迎 🧡#作業用bgm にも！すいようおひるのんびりうた【秋桜しゅお/登龍門BOX】#karaoke  #vtuber #vsinger  #懐メロ",
+    "date": "2025-09-24T12:03:53.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/LJF9y0PCeEE/mqdefault.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/WBGP05KaXeA21IzCbCeM0QHa0v9maVvVUBDZ2DyfTT62F1wGaW3hLOQBy1gCfuQfEnDNgwbsrQ",
+    "url": "https://www.youtube.com/watch?v=LJF9y0PCeEE"
   },
   {
     "name": "妖小琳",
@@ -405,7 +405,7 @@
     "title": "【スト6】朝活！ダイヤ4になった！TGSもいってきた！  Mキンバリー【ストリートファイター6】　 #縦型配信",
     "date": "2025-09-26T11:10:19.000+09:00",
     "status": "live",
-    "thumbnail": "https://i.ytimg.com/vi/piHdA7HaNvo/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/piHdA7HaNvo/mqdefault.jpg",
     "channelIcon": "https://yt3.googleusercontent.com/QQqec9A1J7eLk9RrRYD9vvk51BBJzcE1leGkU9n4YkwHqht9gmGT1ktmSlKItQtbuMSGuklAFxM",
     "url": "https://www.youtube.com/watch?v=piHdA7HaNvo"
   },
@@ -428,5 +428,15 @@
     "thumbnail": "https://i.ytimg.com/vi/edHgteid4zE/mqdefault_live.jpg",
     "channelIcon": "https://yt3.googleusercontent.com/Ji8DJgyzWKUbbeWlYgFfsCZtyiGZ-zM597otZBcFnIoEVIw7284GbNbBQcALgEKwqvk8OXNZLA",
     "url": "https://www.youtube.com/watch?v=edHgteid4zE"
+  },
+  {
+    "name": "カルプ・マーガレット",
+    "youtubeid": "UCAANONySj4hE_-ch6G34MZQ",
+    "title": "【 2万人記念配信!! 】みんな本当にありがとう！！！！！【 広島弁のオネエVTuber 】",
+    "date": "2025-09-28T20:00:00.000+09:00",
+    "status": "upcoming",
+    "thumbnail": "https://i.ytimg.com/vi/-PymW_OrpxE/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/XXH1eOS7_cbzNwQFqJAtIguKNeLGs7-D2Pvf3M0vHlBVdKoYlmTbyMwUv7xjtsv5qM9IodH9",
+    "url": "https://www.youtube.com/watch?v=-PymW_OrpxE"
   }
 ]

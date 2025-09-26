@@ -150,16 +150,6 @@
     "url": "https://www.youtube.com/watch?v=8UkChLTnWKU"
   },
   {
-    "name": "忠犬しず",
-    "youtubeid": "UCPzN3R0x_SciJJ_FP-STpHQ",
-    "title": "【 仮面ライダーゼッツ 】元プロ絵師が仮面ライダーゼッツ描いてみたから見て見て！",
-    "date": "2025-09-25T18:00:35.000+09:00",
-    "status": "archive",
-    "thumbnail": "https://i.ytimg.com/vi/KXv7egpldUU/mqdefault.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/9dVPxoBbcXIeN4O1N6bYiWu3EHHHeaStY7fQYPZfF3thWIP2Sc9Uc6kg56Aj0UHrg5QqqDtn",
-    "url": "https://www.youtube.com/watch?v=KXv7egpldUU"
-  },
-  {
     "name": "李じゅぴ汰",
     "youtubeid": "UCHsAAyHJhPXuLS6N3Kig6PQ",
     "title": "【スト6】春麗のお尻にテンションが上がる様子ｗｗｗ【ストリートファイター6】面白切り抜きShorts/新人Vtuber/水着衣装",
@@ -385,7 +375,7 @@
     "title": "【 完全初見 】ゴジラvsスペースゴジラを同時視聴するぞ～！　【 VTuber/忠犬しず 】",
     "date": "2025-09-26T21:00:31.000+09:00",
     "status": "live",
-    "thumbnail": "https://i.ytimg.com/vi/E3kYL84--LI/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/E3kYL84--LI/mqdefault.jpg",
     "channelIcon": "https://yt3.googleusercontent.com/9dVPxoBbcXIeN4O1N6bYiWu3EHHHeaStY7fQYPZfF3thWIP2Sc9Uc6kg56Aj0UHrg5QqqDtn",
     "url": "https://www.youtube.com/watch?v=E3kYL84--LI"
   },
@@ -398,6 +388,26 @@
     "thumbnail": "https://i.ytimg.com/vi/ANFGTVRHkAI/mqdefault.jpg",
     "channelIcon": "https://yt3.googleusercontent.com/fyNf7EKChxLeUcCXrveXXaSOc-P-5t2NjD32mXWpBDFUhnC0HVKP9lPG0P6GgxFMdMoX29tg",
     "url": "https://www.youtube.com/watch?v=ANFGTVRHkAI"
+  },
+  {
+    "name": "忠犬しず",
+    "youtubeid": "UCPzN3R0x_SciJJ_FP-STpHQ",
+    "title": "【 同時視聴 】ウルトラマンオメガ 12話  とウルトラマンマックス11、12話を見るぞ！【 Vtuber/忠犬しず 】#特撮女子　#特撮オタク",
+    "date": "2025-09-27T09:15:00.000+09:00",
+    "status": "upcoming",
+    "thumbnail": "https://i.ytimg.com/vi/WsYLeRaz4ms/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/9dVPxoBbcXIeN4O1N6bYiWu3EHHHeaStY7fQYPZfF3thWIP2Sc9Uc6kg56Aj0UHrg5QqqDtn",
+    "url": "https://www.youtube.com/watch?v=WsYLeRaz4ms"
+  },
+  {
+    "name": "忠犬しず",
+    "youtubeid": "UCPzN3R0x_SciJJ_FP-STpHQ",
+    "title": "【 同時視聴 】大決戦!超ウルトラ8兄弟を完全初見で見るぞ！【 Vtuber/忠犬しず 】#特撮オタク",
+    "date": "2025-09-27T21:00:00.000+09:00",
+    "status": "upcoming",
+    "thumbnail": "https://i.ytimg.com/vi/GWUpmhi1m4U/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/9dVPxoBbcXIeN4O1N6bYiWu3EHHHeaStY7fQYPZfF3thWIP2Sc9Uc6kg56Aj0UHrg5QqqDtn",
+    "url": "https://www.youtube.com/watch?v=GWUpmhi1m4U"
   },
   {
     "name": "桜樹美彩",
@@ -418,5 +428,15 @@
     "thumbnail": "https://i.ytimg.com/vi/-PymW_OrpxE/mqdefault_live.jpg",
     "channelIcon": "https://yt3.googleusercontent.com/XXH1eOS7_cbzNwQFqJAtIguKNeLGs7-D2Pvf3M0vHlBVdKoYlmTbyMwUv7xjtsv5qM9IodH9",
     "url": "https://www.youtube.com/watch?v=-PymW_OrpxE"
+  },
+  {
+    "name": "妖小琳",
+    "youtubeid": "UC6eopxuX7lx8GnpkntObt1w",
+    "title": "【ASMR】ASMR雑談♡/囁き/Sleep/whispering【妖小琳/Vtuber】",
+    "date": "2025-09-28T23:00:00.000+09:00",
+    "status": "upcoming",
+    "thumbnail": "https://i.ytimg.com/vi/wj3yFTov00Q/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/Ji8DJgyzWKUbbeWlYgFfsCZtyiGZ-zM597otZBcFnIoEVIw7284GbNbBQcALgEKwqvk8OXNZLA",
+    "url": "https://www.youtube.com/watch?v=wj3yFTov00Q"
   }
 ]

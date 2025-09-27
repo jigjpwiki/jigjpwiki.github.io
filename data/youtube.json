@@ -1,15 +1,5 @@
 [
   {
-    "name": "妖小琳",
-    "youtubeid": "UC6eopxuX7lx8GnpkntObt1w",
-    "title": "【#雑談 /FreeTalk】明日がちょっとマシになるように－蒸し暑い夜にゆるっと相談—【妖小琳/Vtuber】",
-    "date": "2025-09-24T23:00:53.000+09:00",
-    "status": "live",
-    "thumbnail": "https://i.ytimg.com/vi/egWOeAhvU6E/mqdefault.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/Ji8DJgyzWKUbbeWlYgFfsCZtyiGZ-zM597otZBcFnIoEVIw7284GbNbBQcALgEKwqvk8OXNZLA",
-    "url": "https://www.youtube.com/watch?v=egWOeAhvU6E"
-  },
-  {
     "name": "銘兎目あう",
     "youtubeid": "UCpr-9ssUUgSb0EpDA8bRuTA",
     "title": "【腱鞘炎】まさかの自分に必要な物【銘兎目あう】#スト6  #ストリートファイター6 #vtuber  #shorts #sf6",
@@ -418,6 +408,16 @@
     "thumbnail": "https://i.ytimg.com/vi/cuNCoX8LF9c/mqdefault_live.jpg",
     "channelIcon": "https://yt3.googleusercontent.com/JwOkUNiR-08GjSI3MS8-Yk6jzONshtmRWZ9tpjOghB10quze7fgbJkhpPTpIfUX00HBACjAR8Q",
     "url": "https://www.youtube.com/watch?v=cuNCoX8LF9c"
+  },
+  {
+    "name": "鹿鳴りあ",
+    "youtubeid": "UC6cgUcRa_gGsjqq3Kp6B68w",
+    "title": "【実写 #ガンプラ女子 】シャアザク作る✨【#鹿鳴りあ  #作業配信】",
+    "date": "2025-09-28T07:00:00.000+09:00",
+    "status": "upcoming",
+    "thumbnail": "https://i.ytimg.com/vi/guWX20Y-rlE/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/8LfPowqmhNmaEl9OBYSMUbrC7y1UCCpgvvGo2WhFFk4WKuMiigUwuFQFP2PD1krD6nfVHsQ-ew",
+    "url": "https://www.youtube.com/watch?v=guWX20Y-rlE"
   },
   {
     "name": "忠犬しず",

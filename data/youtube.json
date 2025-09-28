@@ -1,15 +1,5 @@
 [
   {
-    "name": "カルプ・マーガレット",
-    "youtubeid": "UCAANONySj4hE_-ch6G34MZQ",
-    "title": "【 #雑談  / 初見さん大歓迎♡ 】スナック二輪の華へようこそ♡【 広島弁のオネエVTuber 】",
-    "date": "2025-09-25T23:00:11.000+09:00",
-    "status": "live",
-    "thumbnail": "https://i.ytimg.com/vi/B90BmPYj-3s/mqdefault.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/XXH1eOS7_cbzNwQFqJAtIguKNeLGs7-D2Pvf3M0vHlBVdKoYlmTbyMwUv7xjtsv5qM9IodH9",
-    "url": "https://www.youtube.com/watch?v=B90BmPYj-3s"
-  },
-  {
     "name": "李じゅぴ汰",
     "youtubeid": "UCHsAAyHJhPXuLS6N3Kig6PQ",
     "title": "【スト6】朝活！ダイヤ4になった！TGSもいってきた！  Mキンバリー【ストリートファイター6】　 #縦型配信",
@@ -403,11 +393,21 @@
     "name": "妖小琳",
     "youtubeid": "UC6eopxuX7lx8GnpkntObt1w",
     "title": "【ASMR】ASMR雑談♡/囁き/Sleep/whispering【妖小琳/Vtuber】",
-    "date": "2025-09-28T23:00:00.000+09:00",
-    "status": "upcoming",
+    "date": "2025-09-28T23:00:19.000+09:00",
+    "status": "live",
     "thumbnail": "https://i.ytimg.com/vi/wj3yFTov00Q/mqdefault_live.jpg",
     "channelIcon": "https://yt3.googleusercontent.com/Ji8DJgyzWKUbbeWlYgFfsCZtyiGZ-zM597otZBcFnIoEVIw7284GbNbBQcALgEKwqvk8OXNZLA",
     "url": "https://www.youtube.com/watch?v=wj3yFTov00Q"
+  },
+  {
+    "name": "橋門エル",
+    "youtubeid": "UCcNo3POf2DiRs1TPIsEvNgA",
+    "title": "息をするかのように発狂するVTuber  #vtuber",
+    "date": "2025-09-28T23:07:01.000+09:00",
+    "status": "archive",
+    "thumbnail": "https://i.ytimg.com/vi/98JJytAi3Sk/mqdefault.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/fyNf7EKChxLeUcCXrveXXaSOc-P-5t2NjD32mXWpBDFUhnC0HVKP9lPG0P6GgxFMdMoX29tg",
+    "url": "https://www.youtube.com/watch?v=98JJytAi3Sk"
   },
   {
     "name": "桜樹美彩",

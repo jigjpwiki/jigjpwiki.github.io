@@ -4,7 +4,7 @@ const fs = require('fs').promises;
 const fetch = require('node-fetch');
 
 const YOUTUBE_API_KEY = process.env.YOUTUBE_API_KEY;
-const CACHE_FILE = 'data/youtube.json';
+const CACHE_FILE = 'data/youtube_cache.json';
 
 function toJstISOString(utcString) {
   const date = new Date(utcString);

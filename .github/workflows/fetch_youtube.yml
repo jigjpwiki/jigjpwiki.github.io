@@ -27,10 +27,19 @@ jobs:
         env:
           YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
 
-      - name: Commit and push youtube.json
+      - name: Commit and push youtube data
         run: |
           git config --global user.name "github-actions"
           git config --global user.email "github-actions@github.com"
-          git add data/youtube.json
-          git commit -m "Update youtube.json"
-          git push
+      
+          # 変更されたJSONをステージ
+          git add data/youtube.json data/youtube_cache.json || true
+      
+          # 何もステージされてなければスキップ
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "Update youtube data"
+            git push
+          fi
+

@@ -3,7 +3,7 @@
 Promise.all([
   fetch("data/tiktok.json").then(res => res.json()),
   fetch("data/twitch.json").then(res => res.json()),
-  fetch("data/youtube_cache.json").then(res => res.json())
+  fetch("data/youtube.json").then(res => res.json())
 ])
 .then(([tiktokData, twitchData, youtubeData]) => {
   const tiktok = tiktokData.map(item => ({

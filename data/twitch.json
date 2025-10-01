@@ -183,9 +183,10 @@
     "name": "しーはむ",
     "twitchid": "siyham",
     "title": "今日までネタバレをどれだけ回避してきたか",
-    "date": "2025-10-01T15:04:38.000+09:00",
-    "status": "live",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_siyham-320x180.jpg"
+    "date": "2025-10-01T15:04:45.000+09:00",
+    "status": "archive",
+    "channelIcon": "https://yt3.googleusercontent.com/y0zP0Uz7HSLx5dv3xo488Suxk8rJQQUC1wXaymjUBIQIwa25WlVu_VmrsT1xAyVD-jgeL7hs",
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/b4dbc74027edbdc1647e_siyham_314901142770_1759298678//thumb/thumb0-320x180.jpg"
   },
   {
     "name": "なかもとおまち",
@@ -199,9 +200,18 @@
   {
     "name": "なかもとおまち",
     "twitchid": "41futon",
-    "title": "仮復活のなかもと",
+    "title": "くれぱぴさんにシージを教えてもらう！@あうたそ",
     "date": "2025-10-01T17:26:34.000+09:00",
     "status": "live",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_41futon-320x180.jpg"
+  },
+  {
+    "name": "なかもとおまち",
+    "twitchid": "41futon",
+    "title": "仮復活のなかもと",
+    "date": "2025-10-01T17:26:39.000+09:00",
+    "status": "archive",
+    "channelIcon": "https://yt3.googleusercontent.com/h8jNjVckVf08zSV6wdhQ38Fw9OH7kucAprlJsi9w0YdDIL8_Kcv0tHY-1cK8jPK_jRLSJb3t_Q",
+    "thumbnail": "https://vod-secure.twitch.tv/_404/404_processing_320x180.png"
   }
 ]

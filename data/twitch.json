@@ -208,16 +208,26 @@
     "name": "しーはむ",
     "twitchid": "siyham",
     "title": "LoL学園祭練習",
-    "date": "2025-10-01T19:09:02.000+09:00",
-    "status": "live",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_siyham-320x180.jpg"
+    "date": "2025-10-01T19:09:08.000+09:00",
+    "status": "archive",
+    "channelIcon": "https://yt3.googleusercontent.com/y0zP0Uz7HSLx5dv3xo488Suxk8rJQQUC1wXaymjUBIQIwa25WlVu_VmrsT1xAyVD-jgeL7hs",
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/88ea280dac02d7a41cc1_siyham_314892662129_1759313342//thumb/thumb0-320x180.jpg"
   },
   {
     "name": "火乃晴るい",
     "twitchid": "hinoha_rui",
     "title": "【 #POE2 】 実はPOE2を最近やている‥‥。深夜R6SX配信",
-    "date": "2025-10-01T20:02:02.000+09:00",
+    "date": "2025-10-01T20:02:08.000+09:00",
+    "status": "archive",
+    "channelIcon": "https://yt3.googleusercontent.com/8vDFqOVNprKqFE0o7EecXyQleBXIibeJZpXpSgjm5msh4Yd0S8hTsbmYZyOBXa3bUEgBJHZt1w",
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/4ea6795117d55a391c95_hinoha_rui_314944607091_1759316522//thumb/thumb0-320x180.jpg"
+  },
+  {
+    "name": "雨宮愛結猫",
+    "twitchid": "ayune_amemiya",
+    "title": "ルーンテラ杯 スクリム🐈🎶┊#LoL┊JP/EN┊#Vtuber┊",
+    "date": "2025-10-01T22:04:07.000+09:00",
     "status": "live",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_hinoha_rui-320x180.jpg"
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_ayune_amemiya-320x180.jpg"
   }
 ]

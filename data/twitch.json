@@ -1,14 +1,5 @@
 [
   {
-    "name": "駿河ルガ",
-    "twitchid": "suruga_luga",
-    "title": "【スト6】SFL見たりランクマしたり【登龍門BOX/駿河ルガ】",
-    "date": "2025-09-30T18:00:41.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://yt3.googleusercontent.com/JlY4XEMg9noNa4ShOtky0OwYbKXjnhnje6NQUcwrnJ0UI3C9VQrB-fBNat9QJSUJuuT_Yo1P",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/5c57b2cb72ddc7fcb39e_suruga_luga_314939395443_1759222830//thumb/thumb0-320x180.jpg"
-  },
-  {
     "name": "銘兎目あう",
     "twitchid": "Metome_Au",
     "title": "【スト６】SFL同時視聴しよー！！全力応援だあ！！",
@@ -290,8 +281,9 @@
     "name": "しーはむ",
     "twitchid": "siyham",
     "title": "行くぞ",
-    "date": "2025-10-03T15:01:12.000+09:00",
-    "status": "live",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_siyham-320x180.jpg"
+    "date": "2025-10-03T15:01:18.000+09:00",
+    "status": "archive",
+    "channelIcon": "https://yt3.googleusercontent.com/y0zP0Uz7HSLx5dv3xo488Suxk8rJQQUC1wXaymjUBIQIwa25WlVu_VmrsT1xAyVD-jgeL7hs",
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/ecf90059884a64e7bb5b_siyham_314952625651_1759471272//thumb/thumb0-320x180.jpg"
   }
 ]

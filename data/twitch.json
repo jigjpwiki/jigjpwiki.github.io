@@ -1,23 +1,5 @@
 [
   {
-    "name": "銘兎目あう",
-    "twitchid": "Metome_Au",
-    "title": "🔰【R6SX】ファイナルラスト（コーチ）CrazyPapiyoNさんと、なかもとさんと一緒🌟🔫",
-    "date": "2025-10-01T17:54:29.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://yt3.googleusercontent.com/VB97J8AMHex_rkfd6hDhfiGhhVvrL-NNkseP2mMYSWh75sxA_oXctmxK5tV4FYgkM17RUAx6GQ",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/07aba7333e23434887c7_metome_au_314901598578_1759308863//thumb/thumb0-320x180.jpg"
-  },
-  {
-    "name": "駿河ルガ",
-    "twitchid": "suruga_luga",
-    "title": "【スト6】花のサガット【登龍門BOX/駿河ルガ】",
-    "date": "2025-10-01T18:00:17.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://yt3.googleusercontent.com/JlY4XEMg9noNa4ShOtky0OwYbKXjnhnje6NQUcwrnJ0UI3C9VQrB-fBNat9QJSUJuuT_Yo1P",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/79d01bf59944889c72c2_suruga_luga_314892466673_1759309207//thumb/thumb0-320x180.jpg"
-  },
-  {
     "name": "水透ユウ",
     "twitchid": "minato_yu_",
     "title": "【 #R6SX 】明日に向けてキャラ練がてらソロランク【水透ユウ】【新人Vtuber】",
@@ -258,5 +240,13 @@
     "date": "2025-10-04T17:19:28.000+09:00",
     "status": "live",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_41futon-320x180.jpg"
+  },
+  {
+    "name": "駿河ルガ",
+    "twitchid": "suruga_luga",
+    "title": "【スト6】21時からわーぐなー杯【登龍門BOX/駿河ルガ】",
+    "date": "2025-10-04T18:00:19.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_suruga_luga-320x180.jpg"
   }
 ]

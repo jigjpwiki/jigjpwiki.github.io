@@ -170,14 +170,6 @@
     "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/642274b8d82e49422868_metome_au_314923611506_1759748821//thumb/thumb0-320x180.jpg"
   },
   {
-    "name": "火乃晴るい",
-    "twitchid": "hinoha_rui",
-    "title": "【 #VALORANT 】#水縹杯 に向けて練習しまする！",
-    "date": "2025-10-06T21:00:28.000+09:00",
-    "status": "live",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_hinoha_rui-320x180.jpg"
-  },
-  {
     "name": "カルプ・マーガレット",
     "twitchid": "carpe_margaret",
     "title": "【 #valorant 】交流カスタム～【 広島弁のオネエuber 】",
@@ -189,8 +181,34 @@
     "name": "真昼ねる",
     "twitchid": "mahiruneru",
     "title": "【#VALORANT】水縹杯れんしゅーしちゃうの巻❕【ぷろのゔぁ／真昼ねる】",
-    "date": "2025-10-06T21:55:28.000+09:00",
+    "date": "2025-10-06T21:55:34.000+09:00",
+    "status": "archive",
+    "channelIcon": "https://yt3.googleusercontent.com/Cu6AMAZAEC_DTANKoaloA_4iLCuEUQ8BiAwyHGuOUG9GtoIw6s7mXCv1-49LV1IgODYZfGowzQ",
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/05aa7355dfa7ceb26d4b_mahiruneru_314914234609_1759755328//thumb/thumb0-320x180.jpg"
+  },
+  {
+    "name": "火乃晴るい",
+    "twitchid": "hinoha_rui",
+    "title": "【 #サイレントヒルf 】進めるぞ進めるぞー！！！！！",
+    "date": "2025-10-07T00:12:55.000+09:00",
     "status": "live",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_mahiruneru-320x180.jpg"
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_hinoha_rui-320x180.jpg"
+  },
+  {
+    "name": "火乃晴るい",
+    "twitchid": "hinoha_rui",
+    "title": "【 #VALORANT 】#水縹杯 に向けて練習しまする！",
+    "date": "2025-10-07T00:13:00.000+09:00",
+    "status": "archive",
+    "channelIcon": "https://yt3.googleusercontent.com/8vDFqOVNprKqFE0o7EecXyQleBXIibeJZpXpSgjm5msh4Yd0S8hTsbmYZyOBXa3bUEgBJHZt1w",
+    "thumbnail": "https://vod-secure.twitch.tv/_404/404_processing_320x180.png"
+  },
+  {
+    "name": "李じゅぴ汰",
+    "twitchid": "lee_jupita",
+    "title": "【雑談】ゆるい。やることはこれから決める",
+    "date": "2025-10-07T00:13:18.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lee_jupita-320x180.jpg"
   }
 ]

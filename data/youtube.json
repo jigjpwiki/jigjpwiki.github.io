@@ -1,195 +1,5 @@
 [
   {
-    "name": "李じゅぴ汰",
-    "youtubeid": "UCHsAAyHJhPXuLS6N3Kig6PQ",
-    "title": "【スト6】負け続きで自信ないよ～！ Mキンバリー【ストリートファイター6】　 #縦型配信",
-    "date": "2025-10-03T11:31:40.000+09:00",
-    "status": "live",
-    "thumbnail": "https://i.ytimg.com/vi/XEyo5eUyjW0/mqdefault_live.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/QQqec9A1J7eLk9RrRYD9vvk51BBJzcE1leGkU9n4YkwHqht9gmGT1ktmSlKItQtbuMSGuklAFxM",
-    "url": "https://www.youtube.com/watch?v=XEyo5eUyjW0"
-  },
-  {
-    "name": "藤森ちとせ",
-    "youtubeid": "UCAhdxmsdngH4noySdpVAVWQ",
-    "title": "【Minecraftサブスクワールド配信】トライアルトライアルチャンバー攻略したいのもり【#新人vtuber 】#ちとせらいぶ",
-    "date": "2025-10-03T12:59:34.000+09:00",
-    "status": "live",
-    "thumbnail": "https://i.ytimg.com/vi/teCmGWVHXi8/mqdefault.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/traR_yWe-AOGyM2wjo8h2FJO9JWBcbjfrL13X-umeD6BtNPopSZ2Q3YmdJq_5K9gWgHf_j64iQ",
-    "url": "https://www.youtube.com/watch?v=teCmGWVHXi8"
-  },
-  {
-    "name": "しーはむ",
-    "youtubeid": "UC5xSDiB2WG4pO_zUZ_t-n0Q",
-    "title": "〘 サイレントヒル f〙完全初見 ネタバレ回避がんばったよ #2〘#VTuber│#しーはむ│SILENT HILL f〙",
-    "date": "2025-10-03T15:00:00.000+09:00",
-    "status": "upcoming",
-    "thumbnail": "https://i.ytimg.com/vi/6hsJL1GeZDw/mqdefault_live.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/y0zP0Uz7HSLx5dv3xo488Suxk8rJQQUC1wXaymjUBIQIwa25WlVu_VmrsT1xAyVD-jgeL7hs",
-    "url": "https://www.youtube.com/watch?v=6hsJL1GeZDw"
-  },
-  {
-    "name": "李じゅぴ汰",
-    "youtubeid": "UCHsAAyHJhPXuLS6N3Kig6PQ",
-    "title": "【恐怖耐性診断テスト】怖がらないことに定評があります(フラグ)【ホラゲー】",
-    "date": "2025-10-03T15:56:31.000+09:00",
-    "status": "live",
-    "thumbnail": "https://i.ytimg.com/vi/RVhnvOj_l6c/mqdefault_live.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/QQqec9A1J7eLk9RrRYD9vvk51BBJzcE1leGkU9n4YkwHqht9gmGT1ktmSlKItQtbuMSGuklAFxM",
-    "url": "https://www.youtube.com/watch?v=RVhnvOj_l6c"
-  },
-  {
-    "name": "桜樹美彩",
-    "youtubeid": "UCTwKpTFX1aAXD0xpBqYqTdg",
-    "title": "【 雑談 】究極のゆる雑談／今週もお疲れ様っした.ᐟ.ᐟ🍁【縦型配信】 #vtuber #桜樹美彩 #みさライなう #新人Vtuber #shorts",
-    "date": "2025-10-03T18:00:27.000+09:00",
-    "status": "live",
-    "thumbnail": "https://i.ytimg.com/vi/CSXfUGeYrlI/mqdefault_live.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/pDP2GuylW0RN1REDScFAlNklbXaPRqTm2mwT2F7dIo8xoYYFPfspsjGH_G3RagwlKVlQbdw95bY",
-    "url": "https://www.youtube.com/watch?v=CSXfUGeYrlI"
-  },
-  {
-    "name": "宇田わん",
-    "youtubeid": "UCp45rWiRwgYZJUR4bQO-Xgw",
-    "title": "【以心伝心】『チェリーポップ』歌ってみた！#新人vtuber",
-    "date": "2025-10-03T18:00:58.000+09:00",
-    "status": "archive",
-    "thumbnail": "https://i.ytimg.com/vi/bmR3ykbMsJA/mqdefault.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/bcgws2A-h2HRTCoWgcipC2sgJw_9y0O_5jBi_0QEW4DhAqyPZg4_xLkZw3JJBFZ2DzsYNiGx",
-    "url": "https://www.youtube.com/watch?v=bmR3ykbMsJA"
-  },
-  {
-    "name": "満力きぃ",
-    "youtubeid": "UCE7WT_aCMxej-E4NUz-wEHg",
-    "title": "冷蔵庫3回開けるやつwww#新人VTuber#ネタ#奇跡 #shorts",
-    "date": "2025-10-03T18:01:07.000+09:00",
-    "status": "archive",
-    "thumbnail": "https://i.ytimg.com/vi/etpE1b3E3vg/mqdefault.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/jvlw_xWAYcbgcPbg1CBi6PF5wSlP-4n6Nmbv8EElPHU9VegxlBIt0_p8_4qlKxHrA6WtE5bGSA",
-    "url": "https://www.youtube.com/watch?v=etpE1b3E3vg"
-  },
-  {
-    "name": "藤森ちとせ",
-    "youtubeid": "UCAhdxmsdngH4noySdpVAVWQ",
-    "title": "【GNOSIA#11】たくさん進めたいですね～😉【 #新人vtuber 】#ちとせらいぶ",
-    "date": "2025-10-03T18:05:26.000+09:00",
-    "status": "live",
-    "thumbnail": "https://i.ytimg.com/vi/l3g5HD0s52I/mqdefault_live.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/traR_yWe-AOGyM2wjo8h2FJO9JWBcbjfrL13X-umeD6BtNPopSZ2Q3YmdJq_5K9gWgHf_j64iQ",
-    "url": "https://www.youtube.com/watch?v=l3g5HD0s52I"
-  },
-  {
-    "name": "天辻ゆらぐ",
-    "youtubeid": "UCeOFQCn_QZJMTszlRYRg3rQ",
-    "title": "【けものティータイム】ケモミミ×喫茶店×ASMR🎧️癒しのドット絵ゲームを実況プレイ🐈️#7【#新人Vtuber】#ゆらぐっどたいむ ⚠️ネタバレ注意",
-    "date": "2025-10-03T18:09:38.000+09:00",
-    "status": "live",
-    "thumbnail": "https://i.ytimg.com/vi/mCLgmgeBuBA/mqdefault_live.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/4AFFu60kFJqix-OhtDW3EJdQ0jQa1LrK56tGpvqvbGodMQFpkH-_qtvL_66dPGD3kl4LW9N4",
-    "url": "https://www.youtube.com/watch?v=mCLgmgeBuBA"
-  },
-  {
-    "name": "李じゅぴ汰",
-    "youtubeid": "UCHsAAyHJhPXuLS6N3Kig6PQ",
-    "title": "【Refind Self: 性格診断ゲーム】可愛い絵柄で性格診断していくよ！",
-    "date": "2025-10-03T18:45:00.000+09:00",
-    "status": "upcoming",
-    "thumbnail": "https://i.ytimg.com/vi/cSghdh18138/mqdefault_live.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/QQqec9A1J7eLk9RrRYD9vvk51BBJzcE1leGkU9n4YkwHqht9gmGT1ktmSlKItQtbuMSGuklAFxM",
-    "url": "https://www.youtube.com/watch?v=cSghdh18138"
-  },
-  {
-    "name": "カルプ・マーガレット",
-    "youtubeid": "UCAANONySj4hE_-ch6G34MZQ",
-    "title": "病気や障害で悩んでいる子たちへ、オネエから一言",
-    "date": "2025-10-03T19:01:21.000+09:00",
-    "status": "archive",
-    "thumbnail": "https://i.ytimg.com/vi/hIaq7zQ4fTY/mqdefault.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/XXH1eOS7_cbzNwQFqJAtIguKNeLGs7-D2Pvf3M0vHlBVdKoYlmTbyMwUv7xjtsv5qM9IodH9",
-    "url": "https://www.youtube.com/watch?v=hIaq7zQ4fTY"
-  },
-  {
-    "name": "秋桜しゅお",
-    "youtubeid": "UCPjtwOeRQV5EFkCwUycZsgw",
-    "title": "【激カワ！？】VTuberでVSinger しゅおの配信部屋ルームツアー！【登龍門BOX/秋桜しゅお】",
-    "date": "2025-10-03T20:00:06.000+09:00",
-    "status": "live",
-    "thumbnail": "https://i.ytimg.com/vi/wASHKgR48Co/mqdefault.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/WBGP05KaXeA21IzCbCeM0QHa0v9maVvVUBDZ2DyfTT62F1wGaW3hLOQBy1gCfuQfEnDNgwbsrQ",
-    "url": "https://www.youtube.com/watch?v=wASHKgR48Co"
-  },
-  {
-    "name": "満力きぃ",
-    "youtubeid": "UCE7WT_aCMxej-E4NUz-wEHg",
-    "title": "【飲酒雑談】初見さん来たらすぐ歌う華金お疲れ雑談【満力きぃ/パレデミア学園】",
-    "date": "2025-10-03T20:01:58.000+09:00",
-    "status": "live",
-    "thumbnail": "https://i.ytimg.com/vi/nu73WS0KxhQ/mqdefault.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/jvlw_xWAYcbgcPbg1CBi6PF5wSlP-4n6Nmbv8EElPHU9VegxlBIt0_p8_4qlKxHrA6WtE5bGSA",
-    "url": "https://www.youtube.com/watch?v=nu73WS0KxhQ"
-  },
-  {
-    "name": "雛菊のん",
-    "youtubeid": "UChccV6U0Tkx9de4YjXbEelw",
-    "title": "ぎゃるのすすめ❣#新人vtuber #縦型配信",
-    "date": "2025-10-03T20:05:16.000+09:00",
-    "status": "live",
-    "thumbnail": "https://i.ytimg.com/vi/a1Gwgn-fWYI/mqdefault.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/OxvUqyZAoX4gIX91GOkYMIE2iYfD1ndRKGZbo4Ih8cDb5QuoXpqNJWZKpephYlI0zNiYjQptAQ",
-    "url": "https://www.youtube.com/watch?v=a1Gwgn-fWYI"
-  },
-  {
-    "name": "宇田わん",
-    "youtubeid": "UCp45rWiRwgYZJUR4bQO-Xgw",
-    "title": "【 歌枠 】華金おうた配信だ～！！おつかれさま！！【 #宇田わん #新人VTuber / #登龍門BOX 】",
-    "date": "2025-10-03T20:30:22.000+09:00",
-    "status": "live",
-    "thumbnail": "https://i.ytimg.com/vi/JzdHuQA8dG8/mqdefault.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/bcgws2A-h2HRTCoWgcipC2sgJw_9y0O_5jBi_0QEW4DhAqyPZg4_xLkZw3JJBFZ2DzsYNiGx",
-    "url": "https://www.youtube.com/watch?v=JzdHuQA8dG8"
-  },
-  {
-    "name": "花晴りら",
-    "youtubeid": "UCqcnlq8uJqnGml6hcIrMCZw",
-    "title": "【 #雀エボライブ  】初見さん大歓迎！視聴者参加型麻雀！【花晴りら/パレデミア学園】 #れりライブ #新人vtuber",
-    "date": "2025-10-03T21:00:00.000+09:00",
-    "status": "upcoming",
-    "thumbnail": "https://i.ytimg.com/vi/b6vwUe6pEQ0/mqdefault_live.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/CH5JMWVQZ_RtloaXoj6W-yXjo9x8UxXSBG_vMyDnfk7M2QTOApVE1zOesu_aDrSAqvDbGrUyxs0",
-    "url": "https://www.youtube.com/watch?v=b6vwUe6pEQ0"
-  },
-  {
-    "name": "忠犬しず",
-    "youtubeid": "UCPzN3R0x_SciJJ_FP-STpHQ",
-    "title": "【 完全初見 】ゴジラvsデストロイアを同時視聴するぞ～！　【 VTuber/忠犬しず 】",
-    "date": "2025-10-03T21:00:00.000+09:00",
-    "status": "upcoming",
-    "thumbnail": "https://i.ytimg.com/vi/oWZflma_6Oc/mqdefault_live.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/9dVPxoBbcXIeN4O1N6bYiWu3EHHHeaStY7fQYPZfF3thWIP2Sc9Uc6kg56Aj0UHrg5QqqDtn",
-    "url": "https://www.youtube.com/watch?v=oWZflma_6Oc"
-  },
-  {
-    "name": "カルプ・マーガレット",
-    "youtubeid": "UCAANONySj4hE_-ch6G34MZQ",
-    "title": "【#バイオハザード Day３】ホラー苦手なオネエでも、銃が使えたら無双しちゃう！？！？【カルプ・マーガレット】",
-    "date": "2025-10-03T21:00:00.000+09:00",
-    "status": "upcoming",
-    "thumbnail": "https://i.ytimg.com/vi/bz4KP-3-umE/mqdefault_live.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/XXH1eOS7_cbzNwQFqJAtIguKNeLGs7-D2Pvf3M0vHlBVdKoYlmTbyMwUv7xjtsv5qM9IodH9",
-    "url": "https://www.youtube.com/watch?v=bz4KP-3-umE"
-  },
-  {
-    "name": "瀬奈りるか",
-    "youtubeid": "UCWi_ztz8Xuz4XfzhoG6ZfyA",
-    "title": "【＃Don't Scream】3度目の正直は得意なんです👻ホラー得意新人VTuberクリア頑張ります🎶【ホラゲ】＃せなりるライブ",
-    "date": "2025-10-03T22:30:52.000+09:00",
-    "status": "live",
-    "thumbnail": "https://i.ytimg.com/vi/Eavary1Mw7A/mqdefault_live.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/bM-okYT9oTq3M5dq33VSpidEiaC8MP2EoQXX2gNpgW7PAV7RSn1t7_2HghmCcAwrNxriAmMy",
-    "url": "https://www.youtube.com/watch?v=Eavary1Mw7A"
-  },
-  {
     "name": "天辻ゆらぐ",
     "youtubeid": "UCeOFQCn_QZJMTszlRYRg3rQ",
     "title": "【雑談】初見歓迎✨️あなたのお姉さんアイドルVtuber天辻ゆらぐです🪼【#新人Vtuber】#ゆらぐっどたいむ",
@@ -258,6 +68,16 @@
     "thumbnail": "https://i.ytimg.com/vi/pxGkIFjoHn0/mqdefault_live.jpg",
     "channelIcon": "https://yt3.googleusercontent.com/traR_yWe-AOGyM2wjo8h2FJO9JWBcbjfrL13X-umeD6BtNPopSZ2Q3YmdJq_5K9gWgHf_j64iQ",
     "url": "https://www.youtube.com/watch?v=pxGkIFjoHn0"
+  },
+  {
+    "name": "陰山アゲハ",
+    "youtubeid": "UCIw8aQVRBwi72yOrPLgkbRQ",
+    "title": "【#apex  #新人vtuber 】#06  戦場を駆ける真っピンクのクリプト。【#アゲハが来たぞ #パレデミア学園 】",
+    "date": "2025-10-04T14:00:19.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/D8Oi8-mEhG4/mqdefault.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/TRbQGbBCM6R6LAzCQXka_AxVqF-ozTWwqW455tZU9q9GMo4ijQNNc3d818MX-5wmMnhv-k84Rw",
+    "url": "https://www.youtube.com/watch?v=D8Oi8-mEhG4"
   },
   {
     "name": "満力きぃ",
@@ -488,6 +308,16 @@
     "thumbnail": "https://i.ytimg.com/vi/UZj-_oVs5YQ/mqdefault_live.jpg",
     "channelIcon": "https://yt3.googleusercontent.com/8LfPowqmhNmaEl9OBYSMUbrC7y1UCCpgvvGo2WhFFk4WKuMiigUwuFQFP2PD1krD6nfVHsQ-ew",
     "url": "https://www.youtube.com/watch?v=UZj-_oVs5YQ"
+  },
+  {
+    "name": "鈴木沙透",
+    "youtubeid": "UCj5nRzNFXZn9GRhITRkKElA",
+    "title": "【#歌枠  】令和楽曲で縛る！歌の時間ですよ～【鈴木沙透/パレデミア学園】",
+    "date": "2025-10-04T22:05:20.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/Wh-UOz-0HE4/mqdefault.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/doWaEHgvIyGiFYS-kh_sISc4kxoKHfigCVy_DgtUJr3Pqwu4EIfaVD25ycH4FUg4gpTxUHWZbQ",
+    "url": "https://www.youtube.com/watch?v=Wh-UOz-0HE4"
   },
   {
     "name": "神童めしあ",
@@ -810,6 +640,16 @@
     "url": "https://www.youtube.com/watch?v=-B0ojIvi9bM"
   },
   {
+    "name": "七音うら",
+    "youtubeid": "UCv2IYO-4waCpHvn50SWWY2A",
+    "title": "【#おにぎり屋さんシュミレーター 】#3 深夜のおにぎり屋さん。　【七音うら】",
+    "date": "2025-10-06T00:37:32.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/k8VzHILkOL8/mqdefault.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/T655ATpSd2gkjZBrokvlkaUH0f5-fCpQdcJpwxmmNdy6fxCYffAlq2sMhPOtFk_CvVyOkEPY8Q",
+    "url": "https://www.youtube.com/watch?v=k8VzHILkOL8"
+  },
+  {
     "name": "桜樹美彩",
     "youtubeid": "UCTwKpTFX1aAXD0xpBqYqTdg",
     "title": "【 朝活 / 雑談 】今日は10時まで☀「おはよう」ください.ᐟ 朝雑🍀 初見＆ROM勢大歓迎🐤  #vtuber #みさライなう #桜樹美彩 #作業用BGM",
@@ -850,6 +690,126 @@
     "url": "https://www.youtube.com/watch?v=i1j8N5dvAuk"
   },
   {
+    "name": "李じゅぴ汰",
+    "youtubeid": "UCHsAAyHJhPXuLS6N3Kig6PQ",
+    "title": "【スト6】朝起きれたよー！Mキンバリー【ストリートファイター6】　 #縦型配信",
+    "date": "2025-10-06T10:34:11.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/fQD854kKajo/mqdefault.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/QQqec9A1J7eLk9RrRYD9vvk51BBJzcE1leGkU9n4YkwHqht9gmGT1ktmSlKItQtbuMSGuklAFxM",
+    "url": "https://www.youtube.com/watch?v=fQD854kKajo"
+  },
+  {
+    "name": "満力きぃ",
+    "youtubeid": "UCE7WT_aCMxej-E4NUz-wEHg",
+    "title": "【BALANCED FOOD CalorieMate FOR GAME CREATORS - JELLY MISSION】カロリーメイトに世話されようか・・・【満力きぃ/パレデミア学園】",
+    "date": "2025-10-06T10:53:38.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/dRn3yCCqSOE/mqdefault.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/jvlw_xWAYcbgcPbg1CBi6PF5wSlP-4n6Nmbv8EElPHU9VegxlBIt0_p8_4qlKxHrA6WtE5bGSA",
+    "url": "https://www.youtube.com/watch?v=dRn3yCCqSOE"
+  },
+  {
+    "name": "藤森ちとせ",
+    "youtubeid": "UCAhdxmsdngH4noySdpVAVWQ",
+    "title": "【露天掘り】露天掘りしながら雑談😉💬山も掘るかもですね～【Minecraft】【#新人vtuber 】#ちとせらいぶ #パレデミア学園",
+    "date": "2025-10-06T13:01:44.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/MMjLqhKpIgM/mqdefault.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/traR_yWe-AOGyM2wjo8h2FJO9JWBcbjfrL13X-umeD6BtNPopSZ2Q3YmdJq_5K9gWgHf_j64iQ",
+    "url": "https://www.youtube.com/watch?v=MMjLqhKpIgM"
+  },
+  {
+    "name": "七音うら",
+    "youtubeid": "UCv2IYO-4waCpHvn50SWWY2A",
+    "title": "#shorts 音楽雑学クイズ🎼Q.スターウォーズのライトセーバーの音は何の音を録音してつくられてる？　#新人vtuber #音楽クイズ",
+    "date": "2025-10-06T13:24:40.000+09:00",
+    "status": "archive",
+    "thumbnail": "https://i.ytimg.com/vi/5m-LgTNduD8/mqdefault.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/T655ATpSd2gkjZBrokvlkaUH0f5-fCpQdcJpwxmmNdy6fxCYffAlq2sMhPOtFk_CvVyOkEPY8Q",
+    "url": "https://www.youtube.com/watch?v=5m-LgTNduD8"
+  },
+  {
+    "name": "桜堂ねる",
+    "youtubeid": "UC0H7dRRqhfOifbYQ2TURdAg",
+    "title": "10月6日今日は何の日【桜堂ねる】#vtuber #shorts#ねる道場 #今日は何の日",
+    "date": "2025-10-06T16:51:08.000+09:00",
+    "status": "archive",
+    "thumbnail": "https://i.ytimg.com/vi/fDTVUKUYyPo/mqdefault.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/hBz75E3AEST1Dzv5vOTHAqoJfayd30WIWWQ3ZFLlWMHDsyZ_QD6ZVVUtLTKSizalT3APPtdpFGI",
+    "url": "https://www.youtube.com/watch?v=fDTVUKUYyPo"
+  },
+  {
+    "name": "銘兎目あう",
+    "youtubeid": "UCpr-9ssUUgSb0EpDA8bRuTA",
+    "title": "【スト６】風邪なのに元気!?南国の鳥レア遭遇！【銘兎目あう】#shorts #vtuber #おすすめ #tiktok #新人Vtuber #スト６ #streetfighter6",
+    "date": "2025-10-06T17:26:19.000+09:00",
+    "status": "archive",
+    "thumbnail": "https://i.ytimg.com/vi/zJuW5sd7I0U/mqdefault.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/VB97J8AMHex_rkfd6hDhfiGhhVvrL-NNkseP2mMYSWh75sxA_oXctmxK5tV4FYgkM17RUAx6GQ",
+    "url": "https://www.youtube.com/watch?v=zJuW5sd7I0U"
+  },
+  {
+    "name": "藤森ちとせ",
+    "youtubeid": "UCAhdxmsdngH4noySdpVAVWQ",
+    "title": "【GNOSIA】アニメまでに全イベント回収したいですね🐺【 #新人vtuber 】#ちとせらいぶ",
+    "date": "2025-10-06T17:27:47.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/_Qmjzo_w_Xc/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/traR_yWe-AOGyM2wjo8h2FJO9JWBcbjfrL13X-umeD6BtNPopSZ2Q3YmdJq_5K9gWgHf_j64iQ",
+    "url": "https://www.youtube.com/watch?v=_Qmjzo_w_Xc"
+  },
+  {
+    "name": "天辻ゆらぐ",
+    "youtubeid": "UCeOFQCn_QZJMTszlRYRg3rQ",
+    "title": "【雀魂参加型】麻雀カラオケ略して雀カラ #2 -懐かしボカロマシマシ編- 【#新人Vtuber】#ゆらぐっどたいむ",
+    "date": "2025-10-06T17:44:31.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/0TA4vEu9nks/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/4AFFu60kFJqix-OhtDW3EJdQ0jQa1LrK56tGpvqvbGodMQFpkH-_qtvL_66dPGD3kl4LW9N4",
+    "url": "https://www.youtube.com/watch?v=0TA4vEu9nks"
+  },
+  {
+    "name": "魔法少女アルト",
+    "youtubeid": "UCtRhBS8dlaeBgVcnEZOkAbA",
+    "title": "夢ならばどれほど良かったでしょう〜電子レンジ爆発事件〜 #lemon #替え歌 #ネタ #アニメ #魔法少女アルト #あるある",
+    "date": "2025-10-06T18:00:25.000+09:00",
+    "status": "archive",
+    "thumbnail": "https://i.ytimg.com/vi/H4hAItfgF5E/mqdefault.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/JwOkUNiR-08GjSI3MS8-Yk6jzONshtmRWZ9tpjOghB10quze7fgbJkhpPTpIfUX00HBACjAR8Q",
+    "url": "https://www.youtube.com/watch?v=H4hAItfgF5E"
+  },
+  {
+    "name": "灯野ぺけ。",
+    "youtubeid": "UCldoz5HLh6BMW29HGnRpC0Q",
+    "title": "酔ってるっつってんだろ！？　#peak #切り抜き #shorts",
+    "date": "2025-10-06T18:49:44.000+09:00",
+    "status": "archive",
+    "thumbnail": "https://i.ytimg.com/vi/DNf2jxYUOss/mqdefault.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/fkb3ZihjrgGSVr5drGCJziRf-9EQ6AtqTswp3wNfS4xRMnVZKQ3WvcphIna7hTwOZpy5vq9UKg",
+    "url": "https://www.youtube.com/watch?v=DNf2jxYUOss"
+  },
+  {
+    "name": "カルプ・マーガレット",
+    "youtubeid": "UCAANONySj4hE_-ch6G34MZQ",
+    "title": "バイオハザードでゾンビじゃなくて”あれ”に悲鳴を上げるオネエwwwwwwwwwwwwww",
+    "date": "2025-10-06T19:00:26.000+09:00",
+    "status": "archive",
+    "thumbnail": "https://i.ytimg.com/vi/J2U0R1zBhjA/mqdefault.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/XXH1eOS7_cbzNwQFqJAtIguKNeLGs7-D2Pvf3M0vHlBVdKoYlmTbyMwUv7xjtsv5qM9IodH9",
+    "url": "https://www.youtube.com/watch?v=J2U0R1zBhjA"
+  },
+  {
+    "name": "瀬奈りるか",
+    "youtubeid": "UCWi_ztz8Xuz4XfzhoG6ZfyA",
+    "title": "【麻雀】罰ゲーム免除のお願いをするも初見さんに弄ばれた新人VTuber【#雀エボライブ】#雀エボライバー",
+    "date": "2025-10-06T19:00:36.000+09:00",
+    "status": "archive",
+    "thumbnail": "https://i.ytimg.com/vi/LZf9Go9jb40/mqdefault.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/bM-okYT9oTq3M5dq33VSpidEiaC8MP2EoQXX2gNpgW7PAV7RSn1t7_2HghmCcAwrNxriAmMy",
+    "url": "https://www.youtube.com/watch?v=LZf9Go9jb40"
+  },
+  {
     "name": "黒鋼亜華",
     "youtubeid": "UCEJSKIlp0XitVYFjJG7eYBg",
     "title": "【４寮コラボ】麻雀初心者、揉んでいただきます。【雀エボライブ】#あかはいしん",
@@ -858,5 +818,85 @@
     "thumbnail": "https://i.ytimg.com/vi/wK5NB8XZ2TU/mqdefault_live.jpg",
     "channelIcon": "https://yt3.googleusercontent.com/Uhv1WIfwZC5yuIyLgFMw4KQstJa7BweM1kFsikOIFX20zOA2BJUN_SkHqtt1MZff1ALXZQy1",
     "url": "https://www.youtube.com/watch?v=wK5NB8XZ2TU"
+  },
+  {
+    "name": "秋桜しゅお",
+    "youtubeid": "UCPjtwOeRQV5EFkCwUycZsgw",
+    "title": "【Teaser PV】🧡秋桜しゅお🧡Syuou Syuo【登龍門BOX】",
+    "date": "2025-10-06T20:00:06.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/aQuhZiVVWAo/mqdefault.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/WBGP05KaXeA21IzCbCeM0QHa0v9maVvVUBDZ2DyfTT62F1wGaW3hLOQBy1gCfuQfEnDNgwbsrQ",
+    "url": "https://www.youtube.com/watch?v=aQuhZiVVWAo"
+  },
+  {
+    "name": "満力きぃ",
+    "youtubeid": "UCE7WT_aCMxej-E4NUz-wEHg",
+    "title": "配信者の飯が戦うゲームをやったら大パニックだったww#新人vtuber #カロリーメイト #ゲーム実況 #切り抜き",
+    "date": "2025-10-06T20:13:04.000+09:00",
+    "status": "archive",
+    "thumbnail": "https://i.ytimg.com/vi/1rTRL7MGLVU/mqdefault.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/jvlw_xWAYcbgcPbg1CBi6PF5wSlP-4n6Nmbv8EElPHU9VegxlBIt0_p8_4qlKxHrA6WtE5bGSA",
+    "url": "https://www.youtube.com/watch?v=1rTRL7MGLVU"
+  },
+  {
+    "name": "花晴りら",
+    "youtubeid": "UCqcnlq8uJqnGml6hcIrMCZw",
+    "title": "【グノーシア】アニメ放送直前！絶対に騙されないSF人狼物語【花晴りら/パレデミア学園】#れりライブ #新人vtuber",
+    "date": "2025-10-06T21:00:06.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/ks3Nh4k74QU/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/CH5JMWVQZ_RtloaXoj6W-yXjo9x8UxXSBG_vMyDnfk7M2QTOApVE1zOesu_aDrSAqvDbGrUyxs0",
+    "url": "https://www.youtube.com/watch?v=ks3Nh4k74QU"
+  },
+  {
+    "name": "七音うら",
+    "youtubeid": "UCv2IYO-4waCpHvn50SWWY2A",
+    "title": "#shorts いつ君に会えるのかな？♡ #新人vtuber #月見バーガー",
+    "date": "2025-10-06T21:01:59.000+09:00",
+    "status": "archive",
+    "thumbnail": "https://i.ytimg.com/vi/zNukYRH7y-g/mqdefault.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/T655ATpSd2gkjZBrokvlkaUH0f5-fCpQdcJpwxmmNdy6fxCYffAlq2sMhPOtFk_CvVyOkEPY8Q",
+    "url": "https://www.youtube.com/watch?v=zNukYRH7y-g"
+  },
+  {
+    "name": "風野かなめ",
+    "youtubeid": "UC2AO1ZIgtAVIh6_mx2SqmMQ",
+    "title": "【FF14】なんかいろいろやります【パレデミア学園】",
+    "date": "2025-10-06T21:55:37.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/xYD7x3O_Vjw/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/gtjdyYJUUd1ESZ7-6meuTshluv9Susg7NeB54uoFxPpLrof9Fttx2K7Ck5B6DsbNxb_pNm-z",
+    "url": "https://www.youtube.com/watch?v=xYD7x3O_Vjw"
+  },
+  {
+    "name": "桜堂ねる",
+    "youtubeid": "UC0H7dRRqhfOifbYQ2TURdAg",
+    "title": "圧倒的自由なねるの毎日配信！",
+    "date": "2025-10-06T22:34:37.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/DZHq6KC9DPQ/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/hBz75E3AEST1Dzv5vOTHAqoJfayd30WIWWQ3ZFLlWMHDsyZ_QD6ZVVUtLTKSizalT3APPtdpFGI",
+    "url": "https://www.youtube.com/watch?v=DZHq6KC9DPQ"
+  },
+  {
+    "name": "花晴りら",
+    "youtubeid": "UCqcnlq8uJqnGml6hcIrMCZw",
+    "title": "【朝活/雑談】自炊派？総菜派？外食派？朝からお腹がすく朝活【花晴りら/パレデミア学園】#れりライブ #新人vtuber #朝活 #雑談",
+    "date": "2025-10-07T07:00:00.000+09:00",
+    "status": "upcoming",
+    "thumbnail": "https://i.ytimg.com/vi/yKSCv-3MNGM/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/CH5JMWVQZ_RtloaXoj6W-yXjo9x8UxXSBG_vMyDnfk7M2QTOApVE1zOesu_aDrSAqvDbGrUyxs0",
+    "url": "https://www.youtube.com/watch?v=yKSCv-3MNGM"
+  },
+  {
+    "name": "花晴りら",
+    "youtubeid": "UCqcnlq8uJqnGml6hcIrMCZw",
+    "title": "【 #雀エボライブ  】新感覚異能麻雀ゲーム！午後のチルランクマッチチャレンジ🀄🎶【花晴りら/パレデミア学園】 #れりライブ #新人vtuber",
+    "date": "2025-10-07T15:00:00.000+09:00",
+    "status": "upcoming",
+    "thumbnail": "https://i.ytimg.com/vi/h2OxnUYDqgk/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/CH5JMWVQZ_RtloaXoj6W-yXjo9x8UxXSBG_vMyDnfk7M2QTOApVE1zOesu_aDrSAqvDbGrUyxs0",
+    "url": "https://www.youtube.com/watch?v=h2OxnUYDqgk"
   }
 ]

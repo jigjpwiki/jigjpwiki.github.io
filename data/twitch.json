@@ -173,19 +173,11 @@
   {
     "name": "水透ユウ",
     "twitchid": "minato_yu_",
-    "title": "🔴Drops【 #R6SX 】R6S配信者カスタム 作戦会議Bチーム コーチ:CherrySwind先生【水透ユウ】【 #新人vtuber 】",
-    "date": "2025-10-07T20:59:17.000+09:00",
-    "status": "live",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_minato_yu_-320x180.jpg"
-  },
-  {
-    "name": "水透ユウ",
-    "twitchid": "minato_yu_",
     "title": "【 #R6SX 】R6S配信者カスタム 作戦会議Bチーム コーチ:CherrySwind先生【水透ユウ】【 #新人vtuber 】",
     "date": "2025-10-07T20:59:23.000+09:00",
     "status": "archive",
     "channelIcon": "https://yt3.googleusercontent.com/eVD8Ygm7KVyh3dvWnyebfYlbYpD13ZYQ-Bos8WdR5LDE61A3svHVHCLEY-rM3IQgw9O4uvdd",
-    "thumbnail": "https://vod-secure.twitch.tv/_404/404_processing_320x180.png"
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/d79de6b3b439d105a4d5_minato_yu__314971357811_1759838357//thumb/thumb0-320x180.jpg"
   },
   {
     "name": "李じゅぴ汰",
@@ -206,10 +198,19 @@
   {
     "name": "火乃晴るい",
     "twitchid": "hinoha_rui",
-    "title": "【 #VALORANT 】 #水縹杯 に向けて練習だっ！",
+    "title": "【 #LoL 】半初心者🔰今日のデザートはLoLです！！！！！！！！！",
     "date": "2025-10-07T21:59:40.000+09:00",
     "status": "live",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_hinoha_rui-320x180.jpg"
+  },
+  {
+    "name": "火乃晴るい",
+    "twitchid": "hinoha_rui",
+    "title": "【 #VALORANT 】 #水縹杯 に向けて練習だっ！",
+    "date": "2025-10-07T21:59:46.000+09:00",
+    "status": "archive",
+    "channelIcon": "https://yt3.googleusercontent.com/8vDFqOVNprKqFE0o7EecXyQleBXIibeJZpXpSgjm5msh4Yd0S8hTsbmYZyOBXa3bUEgBJHZt1w",
+    "thumbnail": "https://vod-secure.twitch.tv/_404/404_processing_320x180.png"
   },
   {
     "name": "なかもとおまち",

@@ -2,15 +2,6 @@
   {
     "name": "駿河ルガ",
     "twitchid": "suruga_luga",
-    "title": "【スト6】WWに挑戦【登龍門BOX/駿河ルガ】",
-    "date": "2025-10-05T12:35:31.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://yt3.googleusercontent.com/JlY4XEMg9noNa4ShOtky0OwYbKXjnhnje6NQUcwrnJ0UI3C9VQrB-fBNat9QJSUJuuT_Yo1P",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/64a45676d6034c047d16_suruga_luga_314907932017_1759635321//thumb/thumb0-320x180.jpg"
-  },
-  {
-    "name": "駿河ルガ",
-    "twitchid": "suruga_luga",
     "title": "【スト6】20時から「俺を描け！」に挑戦【登龍門BOX/駿河ルガ】",
     "date": "2025-10-05T18:00:35.000+09:00",
     "status": "archive",
@@ -214,5 +205,13 @@
     "status": "archive",
     "channelIcon": "https://yt3.googleusercontent.com/pDP2GuylW0RN1REDScFAlNklbXaPRqTm2mwT2F7dIo8xoYYFPfspsjGH_G3RagwlKVlQbdw95bY",
     "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d1m7jfoe9zdc1j/e357452f3cdbc6887990_sakuragimisa_v_315382116058_1759874412//thumb/thumb0-320x180.jpg"
+  },
+  {
+    "name": "なかもとおまち",
+    "twitchid": "41futon",
+    "title": "日課ジェイミーMR1558 ～",
+    "date": "2025-10-08T12:18:50.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_41futon-320x180.jpg"
   }
 ]

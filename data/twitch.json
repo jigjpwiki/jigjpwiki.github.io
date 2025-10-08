@@ -183,9 +183,10 @@
     "name": "駿河ルガ",
     "twitchid": "suruga_luga",
     "title": "【スト6】21時から勝ちたがりトナメ！【登龍門BOX/駿河ルガ】",
-    "date": "2025-10-08T18:00:11.000+09:00",
-    "status": "live",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_suruga_luga-320x180.jpg"
+    "date": "2025-10-08T18:00:21.000+09:00",
+    "status": "archive",
+    "channelIcon": "https://yt3.googleusercontent.com/JlY4XEMg9noNa4ShOtky0OwYbKXjnhnje6NQUcwrnJ0UI3C9VQrB-fBNat9QJSUJuuT_Yo1P",
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/be5e84d640d6714fb6fe_suruga_luga_314921372913_1759914011//thumb/thumb0-320x180.jpg"
   },
   {
     "name": "銘兎目あう",
@@ -211,5 +212,13 @@
     "date": "2025-10-08T22:01:26.000+09:00",
     "status": "live",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_magarimeg-320x180.jpg"
+  },
+  {
+    "name": "李じゅぴ汰",
+    "twitchid": "lee_jupita",
+    "title": "【おにぎり屋さんシミュレーター】ご飯握りたい①🍙🍙🍙【衛生観念】",
+    "date": "2025-10-08T23:44:25.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lee_jupita-320x180.jpg"
   }
 ]

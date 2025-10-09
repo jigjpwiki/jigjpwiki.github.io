@@ -1,14 +1,5 @@
 [
   {
-    "name": "カルプ・マーガレット",
-    "twitchid": "carpe_margaret",
-    "title": "【 #valorant 】交流カスタム～【 広島弁のオネエuber 】",
-    "date": "2025-10-06T21:03:29.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://yt3.googleusercontent.com/XXH1eOS7_cbzNwQFqJAtIguKNeLGs7-D2Pvf3M0vHlBVdKoYlmTbyMwUv7xjtsv5qM9IodH9",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/d577263ccadd038c85b1_carpe_margaret_314913926129_1759752204//thumb/thumb0-320x180.jpg"
-  },
-  {
     "name": "火乃晴るい",
     "twitchid": "hinoha_rui",
     "title": "【 #VALORANT 】#水縹杯 に向けて練習しまする！",
@@ -204,5 +195,13 @@
     "date": "2025-10-09T18:00:11.000+09:00",
     "status": "live",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_suruga_luga-320x180.jpg"
+  },
+  {
+    "name": "しーはむ",
+    "twitchid": "siyham",
+    "title": "LoL学園祭練習",
+    "date": "2025-10-09T21:02:32.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_siyham-320x180.jpg"
   }
 ]

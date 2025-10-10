@@ -1,14 +1,5 @@
 [
   {
-    "name": "銘兎目あう",
-    "twitchid": "Metome_Au",
-    "title": "【スト６】SFL同時視聴！一緒に応援しよ～🥊✨",
-    "date": "2025-10-07T18:16:52.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://yt3.googleusercontent.com/VB97J8AMHex_rkfd6hDhfiGhhVvrL-NNkseP2mMYSWh75sxA_oXctmxK5tV4FYgkM17RUAx6GQ",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/8ba09628f0c4e91cb81b_metome_au_314970718451_1759828606//thumb/thumb0-320x180.jpg"
-  },
-  {
     "name": "水透ユウ",
     "twitchid": "minato_yu_",
     "title": "【 #R6SX 】R6S配信者カスタム 作戦会議Bチーム コーチ:CherrySwind先生【水透ユウ】【 #新人vtuber 】",
@@ -201,9 +192,10 @@
     "name": "なかもとおまち",
     "twitchid": "41futon",
     "title": "Cサガットでマスターにいきたい配信",
-    "date": "2025-10-10T15:03:19.000+09:00",
-    "status": "live",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_41futon-320x180.jpg"
+    "date": "2025-10-10T15:03:25.000+09:00",
+    "status": "archive",
+    "channelIcon": "https://yt3.googleusercontent.com/h8jNjVckVf08zSV6wdhQ38Fw9OH7kucAprlJsi9w0YdDIL8_Kcv0tHY-1cK8jPK_jRLSJb3t_Q",
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/e37f1b5ab7b95df7d767_41futon_314939116914_1760076199//thumb/thumb0-320x180.jpg"
   },
   {
     "name": "駿河ルガ",

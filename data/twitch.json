@@ -165,9 +165,10 @@
     "name": "李じゅぴ汰",
     "twitchid": "lee_jupita",
     "title": "【へべれけ ばにーがーでん】飲みながら推しの美羽香を家に送り届ける【配信許諾済】",
-    "date": "2025-10-12T19:54:17.000+09:00",
-    "status": "live",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lee_jupita-320x180.jpg"
+    "date": "2025-10-12T19:54:23.000+09:00",
+    "status": "archive",
+    "channelIcon": "https://yt3.googleusercontent.com/QQqec9A1J7eLk9RrRYD9vvk51BBJzcE1leGkU9n4YkwHqht9gmGT1ktmSlKItQtbuMSGuklAFxM",
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/f3834d8fe7b3f70a60ee_lee_jupita_314938878705_1760266457//thumb/thumb0-320x180.jpg"
   },
   {
     "name": "銘兎目あう",
@@ -177,5 +178,13 @@
     "status": "archive",
     "channelIcon": "https://yt3.googleusercontent.com/VB97J8AMHex_rkfd6hDhfiGhhVvrL-NNkseP2mMYSWh75sxA_oXctmxK5tV4FYgkM17RUAx6GQ",
     "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/0057d28d133e39d62534_metome_au_314939000049_1760267910//thumb/thumb0-320x180.jpg"
+  },
+  {
+    "name": "李じゅぴ汰",
+    "twitchid": "lee_jupita",
+    "title": "【へべれけ ばにーがーでん】飲みながら推しの美羽香を家に送り届ける【配信許諾済】",
+    "date": "2025-10-13T00:05:54.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lee_jupita-320x180.jpg"
   }
 ]

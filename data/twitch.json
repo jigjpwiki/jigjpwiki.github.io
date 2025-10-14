@@ -1,14 +1,5 @@
 [
   {
-    "name": "駿河ルガ",
-    "twitchid": "suruga_luga",
-    "title": "【スト6】理(ことわり)のサガット【登龍門BOX/駿河ルガ】",
-    "date": "2025-10-11T18:00:52.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://yt3.googleusercontent.com/JlY4XEMg9noNa4ShOtky0OwYbKXjnhnje6NQUcwrnJ0UI3C9VQrB-fBNat9QJSUJuuT_Yo1P",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/45a143a4d47d9eba6cae_suruga_luga_314944045810_1760173241//thumb/thumb0-320x180.jpg"
-  },
-  {
     "name": "水透ユウ",
     "twitchid": "minato_yu_",
     "title": "🔴Drops【 #R6SX 】配信者カスタム練習！Bチーム！【水透ユウ】【 #新人vtuber 】",
@@ -223,5 +214,13 @@
     "status": "archive",
     "channelIcon": "https://yt3.googleusercontent.com/y0zP0Uz7HSLx5dv3xo488Suxk8rJQQUC1wXaymjUBIQIwa25WlVu_VmrsT1xAyVD-jgeL7hs",
     "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/ae34dc588c6b166c5a08_siyham_314956343794_1760418945//thumb/thumb0-320x180.jpg"
+  },
+  {
+    "name": "駿河ルガ",
+    "twitchid": "suruga_luga",
+    "title": "【スト6】20時からtakeraカップ【登龍門BOX/駿河ルガ】",
+    "date": "2025-10-14T18:00:07.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_suruga_luga-320x180.jpg"
   }
 ]

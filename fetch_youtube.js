@@ -53,9 +53,9 @@ function toJstISOString(utcString) {
       processed++;
 
       const lastChecked = cache[s.youtubeChannelId];
-      if (lastChecked && (now - new Date(lastChecked) < 6 * 60 * 60 * 1000)) {
+      if (lastChecked && (now - new Date(lastChecked) < 3 * 60 * 60 * 1000)) {
         skippedByCache++;
-        // 直近6時間はスキップ
+        // 直近3時間はスキップ
         continue;
       }
 

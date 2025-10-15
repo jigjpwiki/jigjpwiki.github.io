@@ -1,25 +1,5 @@
 [
   {
-    "name": "桜庭羽奈",
-    "youtubeid": "UCPgg_A08ksSYP-VivJGniRw",
-    "title": "＃１【「逆境無頼カイジ」】アニメ初見！1話～10話同時視聴（ざわ・・ざわ・・・）",
-    "date": "2025-10-12T11:00:00.000+09:00",
-    "status": "upcoming",
-    "thumbnail": "https://i.ytimg.com/vi/l3E-2wVTrf0/mqdefault_live.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/04zALH6pYL7mkWILHajvBzfzg4hrwRCLBONme3K1PjuEeYJIRC6RYxPmJzVZRuN42skHEDNRGmo",
-    "url": "https://www.youtube.com/watch?v=l3E-2wVTrf0"
-  },
-  {
-    "name": "シグマ・イングラム",
-    "youtubeid": "UCnQFkIgH-2IURW--34owWIw",
-    "title": "【歌ってみた】アルゴリズムたいそう/いつもここから",
-    "date": "2025-10-12T11:00:52.000+09:00",
-    "status": "archive",
-    "thumbnail": "https://i.ytimg.com/vi/ocSnWspAvOI/mqdefault.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/qbn_sYVG1ZUjL2xgGkLtNaYdyeWSj8hMooE0VqW4jThdOnm2G6ZKRhpBsxV8pGUXkqi6zUq84w",
-    "url": "https://www.youtube.com/watch?v=ocSnWspAvOI"
-  },
-  {
     "name": "七音うら",
     "youtubeid": "UCv2IYO-4waCpHvn50SWWY2A",
     "title": "#shorts 音楽雑学くいず🌼Q.大きな古時計が動いているのは原曲だと何年？　#新人vtuber #音楽クイズ",
@@ -1050,6 +1030,16 @@
     "url": "https://www.youtube.com/watch?v=bNVlY2wLN-c"
   },
   {
+    "name": "桜堂ねる",
+    "youtubeid": "UC0H7dRRqhfOifbYQ2TURdAg",
+    "title": "10月15日今日は何の日【桜堂ねる】#vtuber #shorts#ねる道場 #今日は何の日",
+    "date": "2025-10-15T06:50:00.000+09:00",
+    "status": "archive",
+    "thumbnail": "https://i.ytimg.com/vi/e4cloYNdlBw/mqdefault.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/hBz75E3AEST1Dzv5vOTHAqoJfayd30WIWWQ3ZFLlWMHDsyZ_QD6ZVVUtLTKSizalT3APPtdpFGI",
+    "url": "https://www.youtube.com/watch?v=e4cloYNdlBw"
+  },
+  {
     "name": "桜樹美彩",
     "youtubeid": "UCTwKpTFX1aAXD0xpBqYqTdg",
     "title": "【 朝活 / 雑談 】AM7:00開始.ᐟ.ᐟ 370名様におはようしていく朝雑☀ 🍀 初見＆ROM勢大歓迎🐤  #vtuber #みさライなう #桜樹美彩 #作業用BGM",
@@ -1058,6 +1048,56 @@
     "thumbnail": "https://i.ytimg.com/vi/OLiE4EfpQTQ/mqdefault_live.jpg",
     "channelIcon": "https://yt3.googleusercontent.com/pDP2GuylW0RN1REDScFAlNklbXaPRqTm2mwT2F7dIo8xoYYFPfspsjGH_G3RagwlKVlQbdw95bY",
     "url": "https://www.youtube.com/watch?v=OLiE4EfpQTQ"
+  },
+  {
+    "name": "桜堂ねる",
+    "youtubeid": "UC0H7dRRqhfOifbYQ2TURdAg",
+    "title": "ねるの朝活1015",
+    "date": "2025-10-15T07:23:15.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/pTvAJyczIF4/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/hBz75E3AEST1Dzv5vOTHAqoJfayd30WIWWQ3ZFLlWMHDsyZ_QD6ZVVUtLTKSizalT3APPtdpFGI",
+    "url": "https://www.youtube.com/watch?v=pTvAJyczIF4"
+  },
+  {
+    "name": "春原なずな",
+    "youtubeid": "UCW-iuU7g3BJnuQ1D3UkqeSA",
+    "title": "【 牧場物語 Let's！風のグランドバザール 】#2 牧場でっかくするぞ！1年目はるの月！【 春原なずな / VTuber 】",
+    "date": "2025-10-15T07:58:54.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/8hET2P8GvzQ/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/0pD1c95Y9X0VrhzWtlf2SRPqdkesiuZxC8Hb5Mg9Xv1WWpQaFCmjITTK8-n5HlNsB-yDbAN4CZA",
+    "url": "https://www.youtube.com/watch?v=8hET2P8GvzQ"
+  },
+  {
+    "name": "七音うら",
+    "youtubeid": "UCv2IYO-4waCpHvn50SWWY2A",
+    "title": "#shorts 10月15日のおはよう🌼　#新人vtuber #おはようvtuber",
+    "date": "2025-10-15T08:00:18.000+09:00",
+    "status": "archive",
+    "thumbnail": "https://i.ytimg.com/vi/AOcLH9JZwdE/mqdefault.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/T655ATpSd2gkjZBrokvlkaUH0f5-fCpQdcJpwxmmNdy6fxCYffAlq2sMhPOtFk_CvVyOkEPY8Q",
+    "url": "https://www.youtube.com/watch?v=AOcLH9JZwdE"
+  },
+  {
+    "name": "藤森ちとせ",
+    "youtubeid": "UCAhdxmsdngH4noySdpVAVWQ",
+    "title": "⛵9月12日金曜日⛵ 今日の誕生花は #ツリフネソウ ！ #誕生花 #花言葉 #藤森ちとせ #吊舟草",
+    "date": "2025-10-15T08:15:06.000+09:00",
+    "status": "archive",
+    "thumbnail": "https://i.ytimg.com/vi/eFZtT0gMhbc/mqdefault.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/traR_yWe-AOGyM2wjo8h2FJO9JWBcbjfrL13X-umeD6BtNPopSZ2Q3YmdJq_5K9gWgHf_j64iQ",
+    "url": "https://www.youtube.com/watch?v=eFZtT0gMhbc"
+  },
+  {
+    "name": "満力きぃ",
+    "youtubeid": "UCE7WT_aCMxej-E4NUz-wEHg",
+    "title": "なんかありがたそうなこと言う人だいたい寝不足（諸説あり）#新人vtuber #ネタ#ありがたそうな言葉#寝不足 #おもしろ",
+    "date": "2025-10-15T09:01:02.000+09:00",
+    "status": "archive",
+    "thumbnail": "https://i.ytimg.com/vi/kV1GIFJNC1c/mqdefault.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/jvlw_xWAYcbgcPbg1CBi6PF5wSlP-4n6Nmbv8EElPHU9VegxlBIt0_p8_4qlKxHrA6WtE5bGSA",
+    "url": "https://www.youtube.com/watch?v=kV1GIFJNC1c"
   },
   {
     "name": "カルプ・マーガレット",

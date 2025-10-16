@@ -1,25 +1,5 @@
 [
   {
-    "name": "愛乃宮ゆめ",
-    "youtubeid": "UCttSjPiwPYpiPuCrgxK7c1g",
-    "title": "ホグワーツレガシー ＃０１【愛乃宮ゆめ/パレデミア学園】",
-    "date": "2025-10-13T20:24:25.000+09:00",
-    "status": "live",
-    "thumbnail": "https://i.ytimg.com/vi/27e7E-ygITs/mqdefault_live.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/M01WvdgX_IfwIkwA4g0_gf9qo4fqF5U7pnXloNwOcL2XnTXXdF8UQ9HS2oyv21t-GXnIhBTWndk",
-    "url": "https://www.youtube.com/watch?v=27e7E-ygITs"
-  },
-  {
-    "name": "宇田わん",
-    "youtubeid": "UCp45rWiRwgYZJUR4bQO-Xgw",
-    "title": "【 雑談？ 】高評価150個まで喉休ませろ宇田わん【 #宇田わん #新人VTuber / #登龍門BOX 】",
-    "date": "2025-10-13T20:29:50.000+09:00",
-    "status": "live",
-    "thumbnail": "https://i.ytimg.com/vi/TNQZePOevF0/mqdefault_live.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/bcgws2A-h2HRTCoWgcipC2sgJw_9y0O_5jBi_0QEW4DhAqyPZg4_xLkZw3JJBFZ2DzsYNiGx",
-    "url": "https://www.youtube.com/watch?v=TNQZePOevF0"
-  },
-  {
     "name": "天辻ゆらぐ",
     "youtubeid": "UCeOFQCn_QZJMTszlRYRg3rQ",
     "title": "Among Us テストプレイ（アーカイブなし）",
@@ -920,6 +900,16 @@
     "url": "https://www.youtube.com/watch?v=koNnEGYVxL8"
   },
   {
+    "name": "満力きぃ",
+    "youtubeid": "UCE7WT_aCMxej-E4NUz-wEHg",
+    "title": "【ほりほりドリル】朝、穴掘っておはよう言う！！！おはよう！！【満力きぃ/パレデミア学園】",
+    "date": "2025-10-16T06:30:30.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/n5qG9GEOo6s/mqdefault.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/jvlw_xWAYcbgcPbg1CBi6PF5wSlP-4n6Nmbv8EElPHU9VegxlBIt0_p8_4qlKxHrA6WtE5bGSA",
+    "url": "https://www.youtube.com/watch?v=n5qG9GEOo6s"
+  },
+  {
     "name": "桜堂ねる",
     "youtubeid": "UC0H7dRRqhfOifbYQ2TURdAg",
     "title": "10月16日今日は何の日【桜堂ねる】#vtuber #ねる道場 #shorts #今日は何の日",
@@ -1030,6 +1020,16 @@
     "url": "https://www.youtube.com/watch?v=paOszxd6rvc"
   },
   {
+    "name": "天辻ゆらぐ",
+    "youtubeid": "UCeOFQCn_QZJMTszlRYRg3rQ",
+    "title": "【雀魂参加型】麻雀カラオケ略して雀カラ #4【#新人Vtuber】#ゆらぐっどたいむ",
+    "date": "2025-10-16T17:41:32.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/8eo5venbcdA/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/4AFFu60kFJqix-OhtDW3EJdQ0jQa1LrK56tGpvqvbGodMQFpkH-_qtvL_66dPGD3kl4LW9N4",
+    "url": "https://www.youtube.com/watch?v=8eo5venbcdA"
+  },
+  {
     "name": "宇田わん",
     "youtubeid": "UCp45rWiRwgYZJUR4bQO-Xgw",
     "title": "【 雑談 】初見さんから偏見集め！！NGなし！何でもOK【 #宇田わん #新人VTuber / #登龍門BOX 】",
@@ -1038,6 +1038,96 @@
     "thumbnail": "https://i.ytimg.com/vi/0oIqmJ1ybpg/mqdefault_live.jpg",
     "channelIcon": "https://yt3.googleusercontent.com/bcgws2A-h2HRTCoWgcipC2sgJw_9y0O_5jBi_0QEW4DhAqyPZg4_xLkZw3JJBFZ2DzsYNiGx",
     "url": "https://www.youtube.com/watch?v=0oIqmJ1ybpg"
+  },
+  {
+    "name": "宇田わん",
+    "youtubeid": "UCp45rWiRwgYZJUR4bQO-Xgw",
+    "title": "みんなただいま！#新人vtuber",
+    "date": "2025-10-16T18:01:15.000+09:00",
+    "status": "archive",
+    "thumbnail": "https://i.ytimg.com/vi/os9Hyte_gsg/mqdefault.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/bcgws2A-h2HRTCoWgcipC2sgJw_9y0O_5jBi_0QEW4DhAqyPZg4_xLkZw3JJBFZ2DzsYNiGx",
+    "url": "https://www.youtube.com/watch?v=os9Hyte_gsg"
+  },
+  {
+    "name": "駿河ルガ",
+    "youtubeid": "UCij_jFd6ggNIYGm0rHwcNtg",
+    "title": "【スト6】アルマスサガットランクマ【駿河ルガ/登龍門BOX】",
+    "date": "2025-10-16T18:01:28.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/uNs1yd5TZjg/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/JlY4XEMg9noNa4ShOtky0OwYbKXjnhnje6NQUcwrnJ0UI3C9VQrB-fBNat9QJSUJuuT_Yo1P",
+    "url": "https://www.youtube.com/watch?v=uNs1yd5TZjg"
+  },
+  {
+    "name": "カルプ・マーガレット",
+    "youtubeid": "UCAANONySj4hE_-ch6G34MZQ",
+    "title": "バイオハザードがあまりにも怖すぎて、途中でやめてしまうオネエVTuber",
+    "date": "2025-10-16T19:01:17.000+09:00",
+    "status": "archive",
+    "thumbnail": "https://i.ytimg.com/vi/hIdhL8Kbwno/mqdefault.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/XXH1eOS7_cbzNwQFqJAtIguKNeLGs7-D2Pvf3M0vHlBVdKoYlmTbyMwUv7xjtsv5qM9IodH9",
+    "url": "https://www.youtube.com/watch?v=hIdhL8Kbwno"
+  },
+  {
+    "name": "鹿鳴りあ",
+    "youtubeid": "UC6cgUcRa_gGsjqq3Kp6B68w",
+    "title": "【KARAOKE】こんばんは100人耐久歌枠✨初見さんも大歓迎！【#鹿鳴りあ #ろくめみて 】",
+    "date": "2025-10-16T19:04:24.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/PB--x8pVITE/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/8LfPowqmhNmaEl9OBYSMUbrC7y1UCCpgvvGo2WhFFk4WKuMiigUwuFQFP2PD1krD6nfVHsQ-ew",
+    "url": "https://www.youtube.com/watch?v=PB--x8pVITE"
+  },
+  {
+    "name": "秋桜しゅお",
+    "youtubeid": "UCPjtwOeRQV5EFkCwUycZsgw",
+    "title": "【#歌枠配信  】#初見歓迎 🧡同接100目標！お誕生日前日のおうた！【秋桜しゅお/登龍門BOX】#karaoke  #vtuber #vsinger  #envtuber",
+    "date": "2025-10-16T19:27:27.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/epEXymoTTVs/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/WBGP05KaXeA21IzCbCeM0QHa0v9maVvVUBDZ2DyfTT62F1wGaW3hLOQBy1gCfuQfEnDNgwbsrQ",
+    "url": "https://www.youtube.com/watch?v=epEXymoTTVs"
+  },
+  {
+    "name": "桜樹美彩",
+    "youtubeid": "UCTwKpTFX1aAXD0xpBqYqTdg",
+    "title": "売買 🍀🐥 #shorts #vtuber #ネタ #新人vtuber",
+    "date": "2025-10-16T20:00:40.000+09:00",
+    "status": "archive",
+    "thumbnail": "https://i.ytimg.com/vi/KPfhwFu0sfA/mqdefault.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/pDP2GuylW0RN1REDScFAlNklbXaPRqTm2mwT2F7dIo8xoYYFPfspsjGH_G3RagwlKVlQbdw95bY",
+    "url": "https://www.youtube.com/watch?v=KPfhwFu0sfA"
+  },
+  {
+    "name": "桜庭羽奈",
+    "youtubeid": "UCPgg_A08ksSYP-VivJGniRw",
+    "title": "【雑談＆歌】初見さん大歓迎！🐻youTube登録者1000人目指してます",
+    "date": "2025-10-16T20:30:53.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/xXpqGX5MzLM/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/04zALH6pYL7mkWILHajvBzfzg4hrwRCLBONme3K1PjuEeYJIRC6RYxPmJzVZRuN42skHEDNRGmo",
+    "url": "https://www.youtube.com/watch?v=xXpqGX5MzLM"
+  },
+  {
+    "name": "忠犬しず",
+    "youtubeid": "UCPzN3R0x_SciJJ_FP-STpHQ",
+    "title": "【 同時視聴 】完全初見！機動警察パトレイバー25、26話とULTRAMAN(アニメ)のシーズン2   5、6話を見るぞ！【 忠犬しず/Vtuber 】#特撮オタク　#特撮女子",
+    "date": "2025-10-16T21:00:00.000+09:00",
+    "status": "upcoming",
+    "thumbnail": "https://i.ytimg.com/vi/dyQwfgd_IDo/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/9dVPxoBbcXIeN4O1N6bYiWu3EHHHeaStY7fQYPZfF3thWIP2Sc9Uc6kg56Aj0UHrg5QqqDtn",
+    "url": "https://www.youtube.com/watch?v=dyQwfgd_IDo"
+  },
+  {
+    "name": "鈴木沙透",
+    "youtubeid": "UCj5nRzNFXZn9GRhITRkKElA",
+    "title": "【VALORANT】全員初心者！泣かないめげないヘラんない！【パレデミア学園/鈴木沙透/東雲アカリ/新巻るろな/灯野ぺけ。/緋雨柚】",
+    "date": "2025-10-16T21:00:00.000+09:00",
+    "status": "upcoming",
+    "thumbnail": "https://i.ytimg.com/vi/qjKnDyaQ4PE/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/doWaEHgvIyGiFYS-kh_sISc4kxoKHfigCVy_DgtUJr3Pqwu4EIfaVD25ycH4FUg4gpTxUHWZbQ",
+    "url": "https://www.youtube.com/watch?v=qjKnDyaQ4PE"
   },
   {
     "name": "妖小琳",
@@ -1088,6 +1178,16 @@
     "thumbnail": "https://i.ytimg.com/vi/5sXaw8y7Nrc/mqdefault_live.jpg",
     "channelIcon": "https://yt3.googleusercontent.com/WBGP05KaXeA21IzCbCeM0QHa0v9maVvVUBDZ2DyfTT62F1wGaW3hLOQBy1gCfuQfEnDNgwbsrQ",
     "url": "https://www.youtube.com/watch?v=5sXaw8y7Nrc"
+  },
+  {
+    "name": "桜樹美彩",
+    "youtubeid": "UCTwKpTFX1aAXD0xpBqYqTdg",
+    "title": "【 朝活 / 雑談 】ごあいさつ400名様目標☀『どっち派？』リスナーに２択聞いていく朝雑🍀 初見＆ROM勢大歓迎🐤  #vtuber #みさライなう #桜樹美彩 #作業用BGM",
+    "date": "2025-10-18T09:00:00.000+09:00",
+    "status": "upcoming",
+    "thumbnail": "https://i.ytimg.com/vi/HpvYdCq58Pc/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/pDP2GuylW0RN1REDScFAlNklbXaPRqTm2mwT2F7dIo8xoYYFPfspsjGH_G3RagwlKVlQbdw95bY",
+    "url": "https://www.youtube.com/watch?v=HpvYdCq58Pc"
   },
   {
     "name": "鹿鳴りあ",

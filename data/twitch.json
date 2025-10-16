@@ -183,9 +183,10 @@
     "name": "駿河ルガ",
     "twitchid": "suruga_luga",
     "title": "【スト6】布のサガット【登龍門BOX/駿河ルガ】",
-    "date": "2025-10-16T18:00:09.000+09:00",
-    "status": "live",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_suruga_luga-320x180.jpg"
+    "date": "2025-10-16T18:00:19.000+09:00",
+    "status": "archive",
+    "channelIcon": "https://yt3.googleusercontent.com/JlY4XEMg9noNa4ShOtky0OwYbKXjnhnje6NQUcwrnJ0UI3C9VQrB-fBNat9QJSUJuuT_Yo1P",
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/51ee0ae4a7907e5cdb70_suruga_luga_315008952947_1760605208//thumb/thumb0-320x180.jpg"
   },
   {
     "name": "銘兎目あう",
@@ -225,9 +226,10 @@
     "name": "火乃晴るい",
     "twitchid": "hinoha_rui",
     "title": "【 #VALORANT 】今日も #水縹杯 に向けて練習scrim頑張る！",
-    "date": "2025-10-16T20:58:57.000+09:00",
-    "status": "live",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_hinoha_rui-320x180.jpg"
+    "date": "2025-10-16T20:59:03.000+09:00",
+    "status": "archive",
+    "channelIcon": "https://yt3.googleusercontent.com/8vDFqOVNprKqFE0o7EecXyQleBXIibeJZpXpSgjm5msh4Yd0S8hTsbmYZyOBXa3bUEgBJHZt1w",
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/8bda59d1ed44385e442e_hinoha_rui_315009617779_1760615937//thumb/thumb0-320x180.jpg"
   },
   {
     "name": "しーはむ",
@@ -253,5 +255,13 @@
     "date": "2025-10-16T21:39:14.000+09:00",
     "status": "live",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lee_jupita-320x180.jpg"
+  },
+  {
+    "name": "なかもとおまち",
+    "twitchid": "41futon",
+    "title": "寝る前にすこしはなそうよネコを撫でながら",
+    "date": "2025-10-16T23:10:03.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_41futon-320x180.jpg"
   }
 ]

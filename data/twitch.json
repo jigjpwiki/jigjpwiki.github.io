@@ -1,14 +1,5 @@
 [
   {
-    "name": "駿河ルガ",
-    "twitchid": "suruga_luga",
-    "title": "【スト6】20時からtakeraカップ【登龍門BOX/駿河ルガ】",
-    "date": "2025-10-14T18:00:16.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://yt3.googleusercontent.com/JlY4XEMg9noNa4ShOtky0OwYbKXjnhnje6NQUcwrnJ0UI3C9VQrB-fBNat9QJSUJuuT_Yo1P",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/0639c68f09cad3489f90_suruga_luga_314946900721_1760432407//thumb/thumb0-320x180.jpg"
-  },
-  {
     "name": "水透ユウ",
     "twitchid": "minato_yu_",
     "title": "【 #R6SX 】配信者カスタム第2回スクリムBvs.Aチーム🔥（ソロ➡作戦会議➡スクリム）【水透ユウ】【 #新人vtuber 】",
@@ -219,9 +210,10 @@
     "name": "しーはむ",
     "twitchid": "siyham",
     "title": "ヴェックスとラックスとその他で生きていく",
-    "date": "2025-10-17T15:12:39.000+09:00",
-    "status": "live",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_siyham-320x180.jpg"
+    "date": "2025-10-17T15:12:45.000+09:00",
+    "status": "archive",
+    "channelIcon": "https://yt3.googleusercontent.com/y0zP0Uz7HSLx5dv3xo488Suxk8rJQQUC1wXaymjUBIQIwa25WlVu_VmrsT1xAyVD-jgeL7hs",
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/a1284eac6b8785143049_siyham_314958526321_1760681559//thumb/thumb0-320x180.jpg"
   },
   {
     "name": "火乃晴るい",
@@ -238,5 +230,13 @@
     "date": "2025-10-17T16:35:26.000+09:00",
     "status": "live",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_41futon-320x180.jpg"
+  },
+  {
+    "name": "駿河ルガ",
+    "twitchid": "suruga_luga",
+    "title": "【スト6】布のサガット【登龍門BOX/駿河ルガ】",
+    "date": "2025-10-17T18:00:40.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_suruga_luga-320x180.jpg"
   }
 ]

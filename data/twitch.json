@@ -225,7 +225,7 @@
   {
     "name": "水透ユウ",
     "twitchid": "minato_yu_",
-    "title": "🔴Drops【 #R6SX 】cherryswind先生にお呼ばれしました【水透ユウ】【 #新人vtuber 】",
+    "title": "🔴Drops【 #R6SX 】cherryswind先生にお呼ばれしました w/wokka3 Yunma3 るてん3【水透ユウ】【 #新人vtuber 】",
     "date": "2025-10-17T22:50:25.000+09:00",
     "status": "live",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_minato_yu_-320x180.jpg"
@@ -238,5 +238,13 @@
     "status": "archive",
     "channelIcon": "https://yt3.googleusercontent.com/eVD8Ygm7KVyh3dvWnyebfYlbYpD13ZYQ-Bos8WdR5LDE61A3svHVHCLEY-rM3IQgw9O4uvdd",
     "thumbnail": "https://vod-secure.twitch.tv/_404/404_processing_320x180.png"
+  },
+  {
+    "name": "なかもとおまち",
+    "twitchid": "41futon",
+    "title": "MR1603~Cレバージェイミー1700までの奇跡",
+    "date": "2025-10-17T23:09:51.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_41futon-320x180.jpg"
   }
 ]

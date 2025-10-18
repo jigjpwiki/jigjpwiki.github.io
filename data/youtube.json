@@ -1,15 +1,5 @@
 [
   {
-    "name": "七音うら",
-    "youtubeid": "UCv2IYO-4waCpHvn50SWWY2A",
-    "title": "【#melatonin  】深夜のちるりずむげー！めらとにん！#２【七音うら】",
-    "date": "2025-10-16T01:41:50.000+09:00",
-    "status": "live",
-    "thumbnail": "https://i.ytimg.com/vi/Z2jWWOvvmIQ/mqdefault_live.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/T655ATpSd2gkjZBrokvlkaUH0f5-fCpQdcJpwxmmNdy6fxCYffAlq2sMhPOtFk_CvVyOkEPY8Q",
-    "url": "https://www.youtube.com/watch?v=Z2jWWOvvmIQ"
-  },
-  {
     "name": "李じゅぴ汰",
     "youtubeid": "UCHsAAyHJhPXuLS6N3Kig6PQ",
     "title": "【hookah haze】シーシャ屋さんになりまーす！②【こころさんルート＆真エンド】",
@@ -1290,6 +1280,16 @@
     "url": "https://www.youtube.com/watch?v=JhLt7A_G62Q"
   },
   {
+    "name": "堂下さとり",
+    "youtubeid": "UCBq6MSUL-Ermvnoj3PtX7Iw",
+    "title": "こっち見んな！【キレ芸】【優しめ】新人Vtuber",
+    "date": "2025-10-18T23:14:05.000+09:00",
+    "status": "archive",
+    "thumbnail": "https://i.ytimg.com/vi/UY0LgC_2HL8/mqdefault.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/eW_Hug0M6zFk9QSbAmOUWLMSfzBlCHmes-8yAksvfUNzyLgY6TSsE_eW8ncfE4bHYZXKoTWxmQ",
+    "url": "https://www.youtube.com/watch?v=UY0LgC_2HL8"
+  },
+  {
     "name": "雛菊のん",
     "youtubeid": "UChccV6U0Tkx9de4YjXbEelw",
     "title": "癒し系親子に遭遇した話#shorts #vtuber #新人vtuber #おしゃべり #おすすめにのりたい",
@@ -1298,6 +1298,16 @@
     "thumbnail": "https://i.ytimg.com/vi/l-Pi70j4_kE/mqdefault.jpg",
     "channelIcon": "https://yt3.googleusercontent.com/OxvUqyZAoX4gIX91GOkYMIE2iYfD1ndRKGZbo4Ih8cDb5QuoXpqNJWZKpephYlI0zNiYjQptAQ",
     "url": "https://www.youtube.com/watch?v=l-Pi70j4_kE"
+  },
+  {
+    "name": "飛渡ココ",
+    "youtubeid": "UCMElh_FlHyzp_obVe-b3Qrg",
+    "title": "日本を制覇したいトトココ#vtuber",
+    "date": "2025-10-18T23:19:03.000+09:00",
+    "status": "archive",
+    "thumbnail": "https://i.ytimg.com/vi/Ojx_WAip7tA/mqdefault.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/8I1SuqBXvb4dRY9bcXYc8xxSxL-L2CAe4YvBx2x3kOkyboXRq-G0rVo7pYflUmvo0UKIyxnlRA",
+    "url": "https://www.youtube.com/watch?v=Ojx_WAip7tA"
   },
   {
     "name": "瀬奈りるか",

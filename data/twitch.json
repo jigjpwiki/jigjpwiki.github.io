@@ -1,14 +1,5 @@
 [
   {
-    "name": "駿河ルガ",
-    "twitchid": "suruga_luga",
-    "title": "【スト6】クリムゾンサガット【登龍門BOX/駿河ルガ】",
-    "date": "2025-10-15T18:00:23.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://yt3.googleusercontent.com/JlY4XEMg9noNa4ShOtky0OwYbKXjnhnje6NQUcwrnJ0UI3C9VQrB-fBNat9QJSUJuuT_Yo1P",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/fc6b9fdea238c74175b1_suruga_luga_315004723571_1760518812//thumb/thumb0-320x180.jpg"
-  },
-  {
     "name": "水透ユウ",
     "twitchid": "minato_yu_",
     "title": "【 #R6SX 】配信者カスタム第3回スクリムBvs.Cチーム🔥（ソロ➡作戦会議➡スクリム）【水透ユウ】【 #新人vtuber 】",
@@ -222,5 +213,21 @@
     "date": "2025-10-18T15:05:23.000+09:00",
     "status": "live",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_41futon-320x180.jpg"
+  },
+  {
+    "name": "水透ユウ",
+    "twitchid": "minato_yu_",
+    "title": "🔴Drops【 #R6SX 】シージ配信者カスタム本番～さくらんぼ幼稚園WIN～【水透ユウ】【 #新人vtuber 】",
+    "date": "2025-10-18T17:56:40.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_minato_yu_-320x180.jpg"
+  },
+  {
+    "name": "駿河ルガ",
+    "twitchid": "suruga_luga",
+    "title": "【スト6】蟹のサガット【登龍門BOX/駿河ルガ】",
+    "date": "2025-10-18T18:00:17.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_suruga_luga-320x180.jpg"
   }
 ]

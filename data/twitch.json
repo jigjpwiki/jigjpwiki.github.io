@@ -174,9 +174,10 @@
     "name": "駿河ルガ",
     "twitchid": "suruga_luga",
     "title": "【スト6】21時からゆなっこ杯だ！！【登龍門BOX/駿河ルガ】",
-    "date": "2025-10-20T18:00:06.000+09:00",
-    "status": "live",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_suruga_luga-320x180.jpg"
+    "date": "2025-10-20T18:00:16.000+09:00",
+    "status": "archive",
+    "channelIcon": "https://yt3.googleusercontent.com/JlY4XEMg9noNa4ShOtky0OwYbKXjnhnje6NQUcwrnJ0UI3C9VQrB-fBNat9QJSUJuuT_Yo1P",
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/01e0a07b1cf640dd586e_suruga_luga_315026232179_1760950806//thumb/thumb0-320x180.jpg"
   },
   {
     "name": "水透ユウ",
@@ -198,19 +199,11 @@
   {
     "name": "銘兎目あう",
     "twitchid": "Metome_Au",
-    "title": "【スト６】M1500目指して頑張るよ練習🥊 BO注意！ゲージ回復！Dリバ確定反撃！中アシ強昇竜！",
-    "date": "2025-10-20T20:34:31.000+09:00",
-    "status": "live",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_Metome_Au-320x180.jpg"
-  },
-  {
-    "name": "銘兎目あう",
-    "twitchid": "Metome_Au",
     "title": "【スト６】M1500目指して頑張るよ練習🥊 BO注意！ゲージ回復！画面端で戦わない！",
     "date": "2025-10-20T20:34:37.000+09:00",
     "status": "archive",
     "channelIcon": "https://yt3.googleusercontent.com/VB97J8AMHex_rkfd6hDhfiGhhVvrL-NNkseP2mMYSWh75sxA_oXctmxK5tV4FYgkM17RUAx6GQ",
-    "thumbnail": "https://vod-secure.twitch.tv/_404/404_processing_320x180.png"
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/05b08753343b438e8535_metome_au_314982588658_1760960071//thumb/thumb0-320x180.jpg"
   },
   {
     "name": "真昼ねる",
@@ -219,5 +212,13 @@
     "date": "2025-10-20T23:03:36.000+09:00",
     "status": "live",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_mahiruneru-320x180.jpg"
+  },
+  {
+    "name": "火乃晴るい",
+    "twitchid": "hinoha_rui",
+    "title": "【 #BF6 】参加◎！BFシリーズガチ初心者🔰初プレイ！",
+    "date": "2025-10-20T23:21:30.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_hinoha_rui-320x180.jpg"
   }
 ]

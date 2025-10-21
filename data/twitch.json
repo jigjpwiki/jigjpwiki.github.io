@@ -156,9 +156,10 @@
     "name": "駿河ルガ",
     "twitchid": "suruga_luga",
     "title": "【スト6】陰のサガット【登龍門BOX/駿河ルガ】",
-    "date": "2025-10-21T18:00:07.000+09:00",
-    "status": "live",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_suruga_luga-320x180.jpg"
+    "date": "2025-10-21T18:00:17.000+09:00",
+    "status": "archive",
+    "channelIcon": "https://yt3.googleusercontent.com/JlY4XEMg9noNa4ShOtky0OwYbKXjnhnje6NQUcwrnJ0UI3C9VQrB-fBNat9QJSUJuuT_Yo1P",
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/dcd9cbd2a26ce300cf19_suruga_luga_315030585843_1761037207//thumb/thumb0-320x180.jpg"
   },
   {
     "name": "銘兎目あう",
@@ -184,5 +185,13 @@
     "date": "2025-10-21T23:18:38.000+09:00",
     "status": "live",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_mahiruneru-320x180.jpg"
+  },
+  {
+    "name": "なかもとおまち",
+    "twitchid": "41futon",
+    "title": "2先負け終わり即終了ランクマッチ",
+    "date": "2025-10-21T23:19:41.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_41futon-320x180.jpg"
   }
 ]

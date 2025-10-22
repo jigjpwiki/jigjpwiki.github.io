@@ -174,25 +174,19 @@
     "name": "駿河ルガ",
     "twitchid": "suruga_luga",
     "title": "【スト6】19時からSCARZ NIGHTERS Vol.2【登龍門BOX/駿河ルガ】",
-    "date": "2025-10-22T18:00:33.000+09:00",
-    "status": "live",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_suruga_luga-320x180.jpg"
+    "date": "2025-10-22T18:00:44.000+09:00",
+    "status": "archive",
+    "channelIcon": "https://yt3.googleusercontent.com/JlY4XEMg9noNa4ShOtky0OwYbKXjnhnje6NQUcwrnJ0UI3C9VQrB-fBNat9QJSUJuuT_Yo1P",
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/97dc9436ec9b085862b5_suruga_luga_315034926067_1761123633//thumb/thumb0-320x180.jpg"
   },
   {
     "name": "カルプ・マーガレット",
     "twitchid": "carpe_margaret",
     "title": "【 #SF6 】大会練習～～！！！【 広島弁のオネエuber 】",
-    "date": "2025-10-22T21:32:29.000+09:00",
-    "status": "live",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_carpe_margaret-320x180.jpg"
-  },
-  {
-    "name": "しーはむ",
-    "twitchid": "siyham",
-    "title": "事務所の企画練習するぞ！",
-    "date": "2025-10-22T21:50:52.000+09:00",
-    "status": "live",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_siyham-320x180.jpg"
+    "date": "2025-10-22T21:32:35.000+09:00",
+    "status": "archive",
+    "channelIcon": "https://yt3.googleusercontent.com/XXH1eOS7_cbzNwQFqJAtIguKNeLGs7-D2Pvf3M0vHlBVdKoYlmTbyMwUv7xjtsv5qM9IodH9",
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/164e6498bd3063823861_carpe_margaret_314981760753_1761136349//thumb/thumb0-320x180.jpg"
   },
   {
     "name": "銘兎目あう",
@@ -201,6 +195,15 @@
     "date": "2025-10-22T21:50:55.000+09:00",
     "status": "live",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_Metome_Au-320x180.jpg"
+  },
+  {
+    "name": "しーはむ",
+    "twitchid": "siyham",
+    "title": "事務所の企画練習するぞ！",
+    "date": "2025-10-22T21:50:58.000+09:00",
+    "status": "archive",
+    "channelIcon": "https://yt3.googleusercontent.com/y0zP0Uz7HSLx5dv3xo488Suxk8rJQQUC1wXaymjUBIQIwa25WlVu_VmrsT1xAyVD-jgeL7hs",
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/7446797d4952ecc80a28_siyham_314991604082_1761137452//thumb/thumb0-320x180.jpg"
   },
   {
     "name": "水透ユウ",

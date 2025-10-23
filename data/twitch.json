@@ -1,14 +1,5 @@
 [
   {
-    "name": "火乃晴るい",
-    "twitchid": "hinoha_rui",
-    "title": "【 #BF6 】参加◎！BFシリーズガチ初心者🔰初プレイ！",
-    "date": "2025-10-20T23:21:36.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://yt3.googleusercontent.com/8vDFqOVNprKqFE0o7EecXyQleBXIibeJZpXpSgjm5msh4Yd0S8hTsbmYZyOBXa3bUEgBJHZt1w",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/917576eed44e87d40a78_hinoha_rui_314983489138_1760970090//thumb/thumb0-320x180.jpg"
-  },
-  {
     "name": "桜樹美彩",
     "twitchid": "sakuragimisa_v",
     "title": "【 朝活 / ニュース 】10月21日（火）⏰ AM7:00 『ちょこっと』朝活ニュース🍀天気予報/時事ニュース🍁初見＆ROM勢大歓迎🐥 #vtuber #みさライなう #桜樹美彩 #新人vtuber",
@@ -192,9 +183,10 @@
     "name": "駿河ルガ",
     "twitchid": "suruga_luga",
     "title": "【スト6】液のサガット【登龍門BOX/駿河ルガ】",
-    "date": "2025-10-23T18:00:12.000+09:00",
-    "status": "live",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_suruga_luga-320x180.jpg"
+    "date": "2025-10-23T18:00:21.000+09:00",
+    "status": "archive",
+    "channelIcon": "https://yt3.googleusercontent.com/JlY4XEMg9noNa4ShOtky0OwYbKXjnhnje6NQUcwrnJ0UI3C9VQrB-fBNat9QJSUJuuT_Yo1P",
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/96b3b8ae895bfb602e30_suruga_luga_314985055473_1761210012//thumb/thumb0-320x180.jpg"
   },
   {
     "name": "なかもとおまち",
@@ -233,19 +225,11 @@
   {
     "name": "水透ユウ",
     "twitchid": "minato_yu_",
-    "title": "🔴Drops【#DbD 】参加型！有能の証明【水透ユウ】【 #新人vtuber 】",
-    "date": "2025-10-23T20:17:52.000+09:00",
-    "status": "live",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_minato_yu_-320x180.jpg"
-  },
-  {
-    "name": "水透ユウ",
-    "twitchid": "minato_yu_",
     "title": "【#DbD 】有能の証明【水透ユウ】【 #新人vtuber 】",
     "date": "2025-10-23T20:17:58.000+09:00",
     "status": "archive",
     "channelIcon": "https://yt3.googleusercontent.com/eVD8Ygm7KVyh3dvWnyebfYlbYpD13ZYQ-Bos8WdR5LDE61A3svHVHCLEY-rM3IQgw9O4uvdd",
-    "thumbnail": "https://vod-secure.twitch.tv/_404/404_processing_320x180.png"
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/2d72d0a27dbebe529c9d_minato_yu__314985548401_1761218272//thumb/thumb0-320x180.jpg"
   },
   {
     "name": "しーはむ",

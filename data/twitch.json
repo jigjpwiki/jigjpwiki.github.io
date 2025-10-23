@@ -231,5 +231,13 @@
     "status": "archive",
     "channelIcon": "https://yt3.googleusercontent.com/y0zP0Uz7HSLx5dv3xo488Suxk8rJQQUC1wXaymjUBIQIwa25WlVu_VmrsT1xAyVD-jgeL7hs",
     "thumbnail": "https://vod-secure.twitch.tv/_404/404_processing_320x180.png"
+  },
+  {
+    "name": "李じゅぴ汰",
+    "twitchid": "lee_jupita",
+    "title": "【DBD】今日も皆で練習ー！初心者【デッドバイデイライト/Dead by Daylight】",
+    "date": "2025-10-24T00:52:13.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lee_jupita-320x180.jpg"
   }
 ]

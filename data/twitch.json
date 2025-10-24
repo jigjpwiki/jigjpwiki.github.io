@@ -254,9 +254,10 @@
     "name": "駿河ルガ",
     "twitchid": "suruga_luga",
     "title": "【スト6】液のサガット【登龍門BOX/駿河ルガ】",
-    "date": "2025-10-24T21:07:42.000+09:00",
-    "status": "live",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_suruga_luga-320x180.jpg"
+    "date": "2025-10-24T21:07:52.000+09:00",
+    "status": "archive",
+    "channelIcon": "https://yt3.googleusercontent.com/JlY4XEMg9noNa4ShOtky0OwYbKXjnhnje6NQUcwrnJ0UI3C9VQrB-fBNat9QJSUJuuT_Yo1P",
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/39268511bc0f4bebea1c_suruga_luga_315044306803_1761307662//thumb/thumb0-320x180.jpg"
   },
   {
     "name": "真昼ねる",
@@ -265,5 +266,13 @@
     "date": "2025-10-24T22:43:15.000+09:00",
     "status": "live",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_mahiruneru-320x180.jpg"
+  },
+  {
+    "name": "魔狩メグ",
+    "twitchid": "magarimeg",
+    "title": "【VALORANT】ソロランク#1🔰メンタル弱くて要領悪い奴がどこまで上手くなれるのか",
+    "date": "2025-10-24T23:49:19.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_magarimeg-320x180.jpg"
   }
 ]

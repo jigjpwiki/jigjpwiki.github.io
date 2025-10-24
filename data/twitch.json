@@ -1,14 +1,5 @@
 [
   {
-    "name": "銘兎目あう",
-    "twitchid": "Metome_Au",
-    "title": "【スト６】SFL同時視聴しよ～！🐰🥊 同時視聴後は大会に向けて練習だぁ👊",
-    "date": "2025-10-21T18:56:03.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://yt3.googleusercontent.com/VB97J8AMHex_rkfd6hDhfiGhhVvrL-NNkseP2mMYSWh75sxA_oXctmxK5tV4FYgkM17RUAx6GQ",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/f2d9361b641c8befc7f4_metome_au_314986469234_1761040557//thumb/thumb0-320x180.jpg"
-  },
-  {
     "name": "真昼ねる",
     "twitchid": "mahiruneru",
     "title": "【DbD参加型】田舎のキラーと都会のキラーどっちがいい？【ぷろのゔぁ￤VTuber￤真昼ねる】",
@@ -236,9 +227,10 @@
     "name": "妖小琳",
     "twitchid": "yaosyaorin",
     "title": "今日もデドバの練習！！",
-    "date": "2025-10-24T17:58:27.000+09:00",
-    "status": "live",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_yaosyaorin-320x180.jpg"
+    "date": "2025-10-24T17:58:33.000+09:00",
+    "status": "archive",
+    "channelIcon": "https://yt3.googleusercontent.com/Ji8DJgyzWKUbbeWlYgFfsCZtyiGZ-zM597otZBcFnIoEVIw7284GbNbBQcALgEKwqvk8OXNZLA",
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/9dec10bda04b94a932fa_yaosyaorin_314999074034_1761296307//thumb/thumb0-320x180.jpg"
   },
   {
     "name": "桜樹美彩",
@@ -247,5 +239,13 @@
     "date": "2025-10-24T18:00:10.000+09:00",
     "status": "live",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sakuragimisa_v-320x180.jpg"
+  },
+  {
+    "name": "妖小琳",
+    "twitchid": "yaosyaorin",
+    "title": "今日もデドバの練習！！",
+    "date": "2025-10-24T19:16:06.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_yaosyaorin-320x180.jpg"
   }
 ]

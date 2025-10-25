@@ -271,17 +271,27 @@
     "name": "魔狩メグ",
     "twitchid": "magarimeg",
     "title": "【VALORANT】ランク#2(ﾌﾚ乱入あるかも)🔰メンタル弱くて要領悪い奴がどこまで上手くなれるのか",
-    "date": "2025-10-25T15:19:48.000+09:00",
+    "date": "2025-10-25T15:19:54.000+09:00",
+    "status": "archive",
+    "channelIcon": "https://yt3.googleusercontent.com/F9pOM4qdqqRlcR-l2Ip7QpokNxCCXxTUMv_kRanXgAOmfHKff5mX9880XqYYEaNFx-kEYpjQ",
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/cea4ad8ff81602fb5528_magarimeg_315003038066_1761373188//thumb/thumb0-320x180.jpg"
+  },
+  {
+    "name": "水透ユウ",
+    "twitchid": "minato_yu_",
+    "title": "【#R6SX 】20:30～シージカップ！【水透ユウ】【 #新人vtuber 】",
+    "date": "2025-10-25T17:10:33.000+09:00",
     "status": "live",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_magarimeg-320x180.jpg"
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_minato_yu_-320x180.jpg"
   },
   {
     "name": "水透ユウ",
     "twitchid": "minato_yu_",
     "title": "【#DBD 】参加〇→後半R6Sシージカップ【水透ユウ】【 #新人vtuber 】",
-    "date": "2025-10-25T17:10:33.000+09:00",
-    "status": "live",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_minato_yu_-320x180.jpg"
+    "date": "2025-10-25T17:10:39.000+09:00",
+    "status": "archive",
+    "channelIcon": "https://yt3.googleusercontent.com/eVD8Ygm7KVyh3dvWnyebfYlbYpD13ZYQ-Bos8WdR5LDE61A3svHVHCLEY-rM3IQgw9O4uvdd",
+    "thumbnail": "https://vod-secure.twitch.tv/_404/404_processing_320x180.png"
   },
   {
     "name": "なかもとおまち",
@@ -298,5 +308,13 @@
     "date": "2025-10-25T19:00:10.000+09:00",
     "status": "live",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_suruga_luga-320x180.jpg"
+  },
+  {
+    "name": "銘兎目あう",
+    "twitchid": "Metome_Au",
+    "title": "【本番】ONE COIN CUP🏆チーム「Code:M3」🥊🐰",
+    "date": "2025-10-25T19:34:59.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_Metome_Au-320x180.jpg"
   }
 ]

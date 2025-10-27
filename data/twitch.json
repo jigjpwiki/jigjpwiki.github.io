@@ -3,24 +3,6 @@
     "name": "妖小琳",
     "twitchid": "yaosyaorin",
     "title": "今日もデドバの練習！！",
-    "date": "2025-10-24T17:58:33.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://yt3.googleusercontent.com/Ji8DJgyzWKUbbeWlYgFfsCZtyiGZ-zM597otZBcFnIoEVIw7284GbNbBQcALgEKwqvk8OXNZLA",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/9dec10bda04b94a932fa_yaosyaorin_314999074034_1761296307//thumb/thumb0-320x180.jpg"
-  },
-  {
-    "name": "桜樹美彩",
-    "twitchid": "sakuragimisa_v",
-    "title": "10月24日（金）寝坊謝罪会見会場18時～",
-    "date": "2025-10-24T18:00:15.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://yt3.googleusercontent.com/pDP2GuylW0RN1REDScFAlNklbXaPRqTm2mwT2F7dIo8xoYYFPfspsjGH_G3RagwlKVlQbdw95bY",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d1m7jfoe9zdc1j/582d4cee494af44b77f7_sakuragimisa_v_315704804315_1761296410//thumb/thumb0-320x180.jpg"
-  },
-  {
-    "name": "妖小琳",
-    "twitchid": "yaosyaorin",
-    "title": "今日もデドバの練習！！",
     "date": "2025-10-24T19:16:12.000+09:00",
     "status": "archive",
     "channelIcon": "https://yt3.googleusercontent.com/Ji8DJgyzWKUbbeWlYgFfsCZtyiGZ-zM597otZBcFnIoEVIw7284GbNbBQcALgEKwqvk8OXNZLA",
@@ -282,9 +264,10 @@
     "name": "しーはむ",
     "twitchid": "siyham",
     "title": "ベタ足メイジで行くソロランク",
-    "date": "2025-10-27T15:11:06.000+09:00",
-    "status": "live",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_siyham-320x180.jpg"
+    "date": "2025-10-27T15:11:12.000+09:00",
+    "status": "archive",
+    "channelIcon": "https://yt3.googleusercontent.com/y0zP0Uz7HSLx5dv3xo488Suxk8rJQQUC1wXaymjUBIQIwa25WlVu_VmrsT1xAyVD-jgeL7hs",
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/3ee089119d1786c545e8_siyham_315001672817_1761545466//thumb/thumb0-320x180.jpg"
   },
   {
     "name": "妖小琳",
@@ -309,5 +292,13 @@
     "date": "2025-10-27T17:13:40.000+09:00",
     "status": "live",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_hinoha_rui-320x180.jpg"
+  },
+  {
+    "name": "駿河ルガ",
+    "twitchid": "suruga_luga",
+    "title": "【スト6】湯のサガット【登龍門BOX/駿河ルガ】",
+    "date": "2025-10-27T18:00:06.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_suruga_luga-320x180.jpg"
   }
 ]

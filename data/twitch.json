@@ -1,14 +1,5 @@
 [
   {
-    "name": "なかもとおまち",
-    "twitchid": "41futon",
-    "title": "ありがとう、すべての1600",
-    "date": "2025-10-24T16:28:19.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://yt3.googleusercontent.com/h8jNjVckVf08zSV6wdhQ38Fw9OH7kucAprlJsi9w0YdDIL8_Kcv0tHY-1cK8jPK_jRLSJb3t_Q",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/6371de9c404666d7a5c1_41futon_315043248883_1761290893//thumb/thumb0-320x180.jpg"
-  },
-  {
     "name": "妖小琳",
     "twitchid": "yaosyaorin",
     "title": "今日もデドバの練習！！",
@@ -294,5 +285,13 @@
     "date": "2025-10-27T15:11:06.000+09:00",
     "status": "live",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_siyham-320x180.jpg"
+  },
+  {
+    "name": "妖小琳",
+    "twitchid": "yaosyaorin",
+    "title": "今日もデドバの練習！！",
+    "date": "2025-10-27T16:17:27.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_yaosyaorin-320x180.jpg"
   }
 ]

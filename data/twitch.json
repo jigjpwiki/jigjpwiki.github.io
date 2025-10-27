@@ -264,9 +264,10 @@
     "name": "妖小琳",
     "twitchid": "yaosyaorin",
     "title": "今日もデドバの練習！！",
-    "date": "2025-10-27T16:17:27.000+09:00",
-    "status": "live",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_yaosyaorin-320x180.jpg"
+    "date": "2025-10-27T16:17:33.000+09:00",
+    "status": "archive",
+    "channelIcon": "https://yt3.googleusercontent.com/Ji8DJgyzWKUbbeWlYgFfsCZtyiGZ-zM597otZBcFnIoEVIw7284GbNbBQcALgEKwqvk8OXNZLA",
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d1m7jfoe9zdc1j/0d0fca67961ef7be9620_yaosyaorin_315688559449_1761549447//thumb/thumb0-320x180.jpg"
   },
   {
     "name": "なかもとおまち",
@@ -288,10 +289,19 @@
   {
     "name": "火乃晴るい",
     "twitchid": "hinoha_rui",
-    "title": "【 #DBD 】team A練習します！！！！！！！！ w/りんりん、なかやん、えるこちゃん",
+    "title": "【 #DBD 】参加◎！練習する！",
     "date": "2025-10-27T17:13:40.000+09:00",
     "status": "live",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_hinoha_rui-320x180.jpg"
+  },
+  {
+    "name": "火乃晴るい",
+    "twitchid": "hinoha_rui",
+    "title": "【 #DBD 】team A練習します！！！！！！！！ w/りんりん、なかやん、えるこちゃん",
+    "date": "2025-10-27T17:13:46.000+09:00",
+    "status": "archive",
+    "channelIcon": "https://yt3.googleusercontent.com/8vDFqOVNprKqFE0o7EecXyQleBXIibeJZpXpSgjm5msh4Yd0S8hTsbmYZyOBXa3bUEgBJHZt1w",
+    "thumbnail": "https://vod-secure.twitch.tv/_404/404_processing_320x180.png"
   },
   {
     "name": "駿河ルガ",
@@ -300,5 +310,13 @@
     "date": "2025-10-27T18:00:06.000+09:00",
     "status": "live",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_suruga_luga-320x180.jpg"
+  },
+  {
+    "name": "銘兎目あう",
+    "twitchid": "Metome_Au",
+    "title": "【スト６】MR1419～ランク30戦👊もうすぐACT終了！ 30戦後DBDやるよ👻",
+    "date": "2025-10-27T19:32:30.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_Metome_Au-320x180.jpg"
   }
 ]

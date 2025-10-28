@@ -1,15 +1,5 @@
 [
   {
-    "name": "堂下さとり",
-    "youtubeid": "UCBq6MSUL-Ermvnoj3PtX7Iw",
-    "title": "BackStage ROOKIE CHALLENGE 5 出場！マニフェスト",
-    "date": "2025-10-25T16:26:52.000+09:00",
-    "status": "archive",
-    "thumbnail": "https://i.ytimg.com/vi/RrHNqffh1wI/mqdefault.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/eW_Hug0M6zFk9QSbAmOUWLMSfzBlCHmes-8yAksvfUNzyLgY6TSsE_eW8ncfE4bHYZXKoTWxmQ",
-    "url": "https://www.youtube.com/watch?v=RrHNqffh1wI"
-  },
-  {
     "name": "桜堂ねる",
     "youtubeid": "UC0H7dRRqhfOifbYQ2TURdAg",
     "title": "10月25日今日は何の日【桜堂ねる】#vtuber #shorts #ねる道場 #今日は何の日",
@@ -1050,6 +1040,16 @@
     "url": "https://www.youtube.com/watch?v=8JK0Hnib_G0"
   },
   {
+    "name": "七音うら",
+    "youtubeid": "UCv2IYO-4waCpHvn50SWWY2A",
+    "title": "【#たこぱ 】夜のたこやきぱーてぃー！【七音うら/桜堂ねる】",
+    "date": "2025-10-28T00:09:03.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/bmTAg4H4xSg/mqdefault.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/T655ATpSd2gkjZBrokvlkaUH0f5-fCpQdcJpwxmmNdy6fxCYffAlq2sMhPOtFk_CvVyOkEPY8Q",
+    "url": "https://www.youtube.com/watch?v=bmTAg4H4xSg"
+  },
+  {
     "name": "天辻ゆらぐ",
     "youtubeid": "UCeOFQCn_QZJMTszlRYRg3rQ",
     "title": "【まだ猫は逃げますか？】話題の新作ホラーゲームを初見実況プレイ🐈️シナリオは『近畿地方のある場所について』背筋 氏監修！【パレデミア学園/天辻ゆらぐ】#新人Vtuber #ゆらぐっどたいむ",
@@ -1180,6 +1180,26 @@
     "url": "https://www.youtube.com/watch?v=cBIjkhcYmX8"
   },
   {
+    "name": "春原なずな",
+    "youtubeid": "UCW-iuU7g3BJnuQ1D3UkqeSA",
+    "title": "【 #dbd  】#7-1 ぷろのゔぁDBD最強決定戦練習！【 春原なずな / Vtuber 】",
+    "date": "2025-10-28T14:28:15.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/K9NZC8bEOSA/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/0pD1c95Y9X0VrhzWtlf2SRPqdkesiuZxC8Hb5Mg9Xv1WWpQaFCmjITTK8-n5HlNsB-yDbAN4CZA",
+    "url": "https://www.youtube.com/watch?v=K9NZC8bEOSA"
+  },
+  {
+    "name": "肇明日空",
+    "youtubeid": "UCj6HYkokrIErMfhKAUAvYcA",
+    "title": "あの世界のフラウィが明日空だったら平和だったかもしれない話#vtuber #shorts",
+    "date": "2025-10-28T16:01:06.000+09:00",
+    "status": "archive",
+    "thumbnail": "https://i.ytimg.com/vi/v7aVie7Onx4/mqdefault.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/u59W56aqJ9r7WunTIqg60ZGnBu-G-9LA-OX6tZR6debt_isQ8xR59HUwrbAqLLqlTf_0VosmZg",
+    "url": "https://www.youtube.com/watch?v=v7aVie7Onx4"
+  },
+  {
     "name": "桜樹美彩",
     "youtubeid": "UCTwKpTFX1aAXD0xpBqYqTdg",
     "title": "【 #バーチャる広報室 】「J.A.M ねじロボ」を作ってみよう.ᐟ.ᐟ🤖初見＆ROM勢大歓迎🐥 #vtuber #みさライなう #桜樹美彩 #新人vtuber",
@@ -1198,6 +1218,36 @@
     "thumbnail": "https://i.ytimg.com/vi/QxSp1BOAHcQ/mqdefault_live.jpg",
     "channelIcon": "https://yt3.googleusercontent.com/XXH1eOS7_cbzNwQFqJAtIguKNeLGs7-D2Pvf3M0vHlBVdKoYlmTbyMwUv7xjtsv5qM9IodH9",
     "url": "https://www.youtube.com/watch?v=QxSp1BOAHcQ"
+  },
+  {
+    "name": "妖小琳",
+    "youtubeid": "UC6eopxuX7lx8GnpkntObt1w",
+    "title": "うお～！ #いきなりAmongUs！ 妖小琳視点",
+    "date": "2025-10-28T21:30:00.000+09:00",
+    "status": "upcoming",
+    "thumbnail": "https://i.ytimg.com/vi/NPkptvTMwVw/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/Ji8DJgyzWKUbbeWlYgFfsCZtyiGZ-zM597otZBcFnIoEVIw7284GbNbBQcALgEKwqvk8OXNZLA",
+    "url": "https://www.youtube.com/watch?v=NPkptvTMwVw"
+  },
+  {
+    "name": "瀬奈りるか",
+    "youtubeid": "UCWi_ztz8Xuz4XfzhoG6ZfyA",
+    "title": "【#2 怪異症候群】初見プレイ！昨日の続き🌟チャプター2から👻完璧プレイを今日もお届けします！🌟【24時くらいまで】＃せなりるライブ #パレデミア学園",
+    "date": "2025-10-28T22:30:00.000+09:00",
+    "status": "upcoming",
+    "thumbnail": "https://i.ytimg.com/vi/mdejErN6gkk/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/bM-okYT9oTq3M5dq33VSpidEiaC8MP2EoQXX2gNpgW7PAV7RSn1t7_2HghmCcAwrNxriAmMy",
+    "url": "https://www.youtube.com/watch?v=mdejErN6gkk"
+  },
+  {
+    "name": "桜樹美彩",
+    "youtubeid": "UCTwKpTFX1aAXD0xpBqYqTdg",
+    "title": "【 朝活 / 雑談 】🎃ハッピーハロウィン🦇AM7:00開始☀375名様にご挨拶＆宝くじ当選確認する朝雑☀ 🍀 初見＆ROM勢大歓迎🐤  #vtuber #みさライなう #桜樹美彩 #作業用BGM",
+    "date": "2025-10-29T07:00:00.000+09:00",
+    "status": "upcoming",
+    "thumbnail": "https://i.ytimg.com/vi/joikVwIB4w8/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/pDP2GuylW0RN1REDScFAlNklbXaPRqTm2mwT2F7dIo8xoYYFPfspsjGH_G3RagwlKVlQbdw95bY",
+    "url": "https://www.youtube.com/watch?v=joikVwIB4w8"
   },
   {
     "name": "妖小琳",

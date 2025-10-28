@@ -1,14 +1,5 @@
 [
   {
-    "name": "カルプ・マーガレット",
-    "twitchid": "carpe_margaret",
-    "title": "【 Kiki鯖GTA2 】少しだけ街を散策、男狩り【 広島弁のオネエV】",
-    "date": "2025-10-26T00:50:32.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://yt3.googleusercontent.com/XXH1eOS7_cbzNwQFqJAtIguKNeLGs7-D2Pvf3M0vHlBVdKoYlmTbyMwUv7xjtsv5qM9IodH9",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/c1c91875206bc1fa0cc5_carpe_margaret_314995421169_1761407426//thumb/thumb0-320x180.jpg"
-  },
-  {
     "name": "駿河ルガ",
     "twitchid": "suruga_luga",
     "title": "【スト6】WWに挑戦【登龍門BOX/駿河ルガ】",
@@ -274,5 +265,22 @@
     "date": "2025-10-29T00:44:53.000+09:00",
     "status": "live",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_yaosyaorin-320x180.jpg"
+  },
+  {
+    "name": "火乃晴るい",
+    "twitchid": "hinoha_rui",
+    "title": "【 #DBD 】参加◎！事務所企画に向けて練習するます！",
+    "date": "2025-10-29T00:52:20.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_hinoha_rui-320x180.jpg"
+  },
+  {
+    "name": "火乃晴るい",
+    "twitchid": "hinoha_rui",
+    "title": "【 #DBD 】事務所企画に向けて練習するます！",
+    "date": "2025-10-29T00:52:26.000+09:00",
+    "status": "archive",
+    "channelIcon": "https://yt3.googleusercontent.com/8vDFqOVNprKqFE0o7EecXyQleBXIibeJZpXpSgjm5msh4Yd0S8hTsbmYZyOBXa3bUEgBJHZt1w",
+    "thumbnail": "https://vod-secure.twitch.tv/_404/404_processing_320x180.png"
   }
 ]

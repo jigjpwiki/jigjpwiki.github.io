@@ -1,14 +1,5 @@
 [
   {
-    "name": "魔狩メグ",
-    "twitchid": "magarimeg",
-    "title": "【VALORANT】ランク#2(ﾌﾚ乱入あるかも)🔰メンタル弱くて要領悪い奴がどこまで上手くなれるのか",
-    "date": "2025-10-25T15:19:54.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://yt3.googleusercontent.com/F9pOM4qdqqRlcR-l2Ip7QpokNxCCXxTUMv_kRanXgAOmfHKff5mX9880XqYYEaNFx-kEYpjQ",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/cea4ad8ff81602fb5528_magarimeg_315003038066_1761373188//thumb/thumb0-320x180.jpg"
-  },
-  {
     "name": "水透ユウ",
     "twitchid": "minato_yu_",
     "title": "【#DBD 】参加〇→後半R6Sシージカップ【水透ユウ】【 #新人vtuber 】",
@@ -250,5 +241,21 @@
     "status": "archive",
     "channelIcon": "https://yt3.googleusercontent.com/pDP2GuylW0RN1REDScFAlNklbXaPRqTm2mwT2F7dIo8xoYYFPfspsjGH_G3RagwlKVlQbdw95bY",
     "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d1m7jfoe9zdc1j/df37b9fd6e42420652e3_sakuragimisa_v_315695339097_1761602412//thumb/thumb0-320x180.jpg"
+  },
+  {
+    "name": "妖小琳",
+    "twitchid": "yaosyaorin",
+    "title": "今日もデドバの練習！！",
+    "date": "2025-10-28T15:01:39.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_yaosyaorin-320x180.jpg"
+  },
+  {
+    "name": "しーはむ",
+    "twitchid": "siyham",
+    "title": "mid＆bot申請だとbotにばっかなるのどうして？",
+    "date": "2025-10-28T15:07:38.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_siyham-320x180.jpg"
   }
 ]

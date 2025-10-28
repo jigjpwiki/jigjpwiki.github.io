@@ -251,9 +251,18 @@
   {
     "name": "妖小琳",
     "twitchid": "yaosyaorin",
-    "title": "今日もデドバの練習！！",
+    "title": "いきなりあもあす",
     "date": "2025-10-28T21:30:21.000+09:00",
     "status": "live",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_yaosyaorin-320x180.jpg"
+  },
+  {
+    "name": "妖小琳",
+    "twitchid": "yaosyaorin",
+    "title": "今日もデドバの練習！！",
+    "date": "2025-10-28T21:30:26.000+09:00",
+    "status": "archive",
+    "channelIcon": "https://yt3.googleusercontent.com/Ji8DJgyzWKUbbeWlYgFfsCZtyiGZ-zM597otZBcFnIoEVIw7284GbNbBQcALgEKwqvk8OXNZLA",
+    "thumbnail": "https://vod-secure.twitch.tv/_404/404_processing_320x180.png"
   }
 ]

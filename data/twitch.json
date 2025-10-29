@@ -1,14 +1,5 @@
 [
   {
-    "name": "銘兎目あう",
-    "twitchid": "Metome_Au",
-    "title": "【DBD】🔰ぷろのゔぁDBD最強決定戦に向けて練習するよ👻",
-    "date": "2025-10-26T21:31:02.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://yt3.googleusercontent.com/VB97J8AMHex_rkfd6hDhfiGhhVvrL-NNkseP2mMYSWh75sxA_oXctmxK5tV4FYgkM17RUAx6GQ",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/712dead97a6988d45100_metome_au_315008886258_1761481856//thumb/thumb0-320x180.jpg"
-  },
-  {
     "name": "なかもとおまち",
     "twitchid": "41futon",
     "title": "【DbD】ゲーム初心者いざゆかん！！！！！",
@@ -308,5 +299,21 @@
     "date": "2025-10-29T20:05:28.000+09:00",
     "status": "live",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_41futon-320x180.jpg"
+  },
+  {
+    "name": "水透ユウ",
+    "twitchid": "minato_yu_",
+    "title": "【#DBD 】本番まであと2日！チームB練習！【水透ユウ】【 #新人vtuber 】",
+    "date": "2025-10-29T20:57:08.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_minato_yu_-320x180.jpg"
+  },
+  {
+    "name": "真昼ねる",
+    "twitchid": "mahiruneru",
+    "title": "【DbD】ぷろのゔぁDBD最強決定戦れんしゅー！チームBWIN❕【ぷろのゔぁ￤VTuber￤真昼ねる】",
+    "date": "2025-10-29T21:01:54.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_mahiruneru-320x180.jpg"
   }
 ]

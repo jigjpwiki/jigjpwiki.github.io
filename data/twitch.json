@@ -1,14 +1,5 @@
 [
   {
-    "name": "駿河ルガ",
-    "twitchid": "suruga_luga",
-    "title": "【スト6】湯のサガット【登龍門BOX/駿河ルガ】",
-    "date": "2025-10-27T18:00:16.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://yt3.googleusercontent.com/JlY4XEMg9noNa4ShOtky0OwYbKXjnhnje6NQUcwrnJ0UI3C9VQrB-fBNat9QJSUJuuT_Yo1P",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/f827fa1fb91f98b7c4b0_suruga_luga_315002123889_1761555606//thumb/thumb0-320x180.jpg"
-  },
-  {
     "name": "銘兎目あう",
     "twitchid": "Metome_Au",
     "title": "【スト６】MR1419～ランク30戦👊もうすぐACT終了！ 30戦後DBDやるよ👻",
@@ -264,9 +255,10 @@
     "name": "なかもとおまち",
     "twitchid": "41futon",
     "title": "【ジェイミー生誕祭】ジェイミーにMR1700をプレゼントしたいネコ",
-    "date": "2025-10-30T13:17:53.000+09:00",
-    "status": "live",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_41futon-320x180.jpg"
+    "date": "2025-10-30T13:17:58.000+09:00",
+    "status": "archive",
+    "channelIcon": "https://yt3.googleusercontent.com/h8jNjVckVf08zSV6wdhQ38Fw9OH7kucAprlJsi9w0YdDIL8_Kcv0tHY-1cK8jPK_jRLSJb3t_Q",
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/c84dad01ff25250742bf_41futon_315068454387_1761797872//thumb/thumb0-320x180.jpg"
   },
   {
     "name": "妖小琳",
@@ -283,5 +275,13 @@
     "date": "2025-10-30T15:21:44.000+09:00",
     "status": "live",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lee_jupita-320x180.jpg"
+  },
+  {
+    "name": "駿河ルガ",
+    "twitchid": "suruga_luga",
+    "title": "【スト6】将のサガット【登龍門BOX/駿河ルガ】",
+    "date": "2025-10-30T18:00:14.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_suruga_luga-320x180.jpg"
   }
 ]

@@ -1,14 +1,5 @@
 [
   {
-    "name": "しーはむ",
-    "twitchid": "siyham",
-    "title": "デトロイト完全初見！！！",
-    "date": "2025-10-27T21:35:13.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://yt3.googleusercontent.com/y0zP0Uz7HSLx5dv3xo488Suxk8rJQQUC1wXaymjUBIQIwa25WlVu_VmrsT1xAyVD-jgeL7hs",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/f3bdb9efee825203ed4d_siyham_315057496691_1761568507//thumb/thumb0-320x180.jpg"
-  },
-  {
     "name": "真昼ねる",
     "twitchid": "mahiruneru",
     "title": "【参加◎】インコ攻めマスター❕【ぷろのゔぁ￤VTuber￤真昼ねる】",
@@ -285,9 +276,18 @@
   {
     "name": "銘兎目あう",
     "twitchid": "Metome_Au",
-    "title": "【スト６】MR1463～ランクやるぞ👊 【中間】DBD練習 【後半】お悩み相談🏥本日、銘兎目ドクター出勤💉",
+    "title": "【スト６】MR1463～👊 【中間】DBD練習 【後半】お悩み相談🏥本日、銘兎目ドクター出勤💉",
     "date": "2025-10-30T19:49:35.000+09:00",
     "status": "live",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_Metome_Au-320x180.jpg"
+  },
+  {
+    "name": "銘兎目あう",
+    "twitchid": "Metome_Au",
+    "title": "【スト６】MR1463～ランクやるぞ👊 【中間】DBD練習 【後半】お悩み相談🏥本日、銘兎目ドクター出勤💉",
+    "date": "2025-10-30T19:49:41.000+09:00",
+    "status": "archive",
+    "channelIcon": "https://yt3.googleusercontent.com/VB97J8AMHex_rkfd6hDhfiGhhVvrL-NNkseP2mMYSWh75sxA_oXctmxK5tV4FYgkM17RUAx6GQ",
+    "thumbnail": "https://vod-secure.twitch.tv/_404/404_processing_320x180.png"
   }
 ]

@@ -1,15 +1,5 @@
 [
   {
-    "name": "飛渡ココ",
-    "youtubeid": "UCMElh_FlHyzp_obVe-b3Qrg",
-    "title": "300万ブロック掘る配信",
-    "date": "2025-10-28T09:00:55.000+09:00",
-    "status": "live",
-    "thumbnail": "https://i.ytimg.com/vi/7WdQXIawHkE/mqdefault_live.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/8I1SuqBXvb4dRY9bcXYc8xxSxL-L2CAe4YvBx2x3kOkyboXRq-G0rVo7pYflUmvo0UKIyxnlRA",
-    "url": "https://www.youtube.com/watch?v=7WdQXIawHkE"
-  },
-  {
     "name": "七音うら",
     "youtubeid": "UCv2IYO-4waCpHvn50SWWY2A",
     "title": "#shorts 音楽くいず🌼Q.ハイドン作曲の「皇帝」は現在どの国の国家でしょう？ #音楽クイズ",
@@ -1030,6 +1020,16 @@
     "url": "https://www.youtube.com/watch?v=iEx4gjrnm60"
   },
   {
+    "name": "宇田わん",
+    "youtubeid": "UCp45rWiRwgYZJUR4bQO-Xgw",
+    "title": "【 歌枠？ 】同接30↑で赤ちゃん化！？やめてくれ～～～～【 #宇田わん #新人VTuber / #登龍門BOX 】",
+    "date": "2025-10-30T19:28:56.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/fFLncYMJTHw/mqdefault.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/bcgws2A-h2HRTCoWgcipC2sgJw_9y0O_5jBi_0QEW4DhAqyPZg4_xLkZw3JJBFZ2DzsYNiGx",
+    "url": "https://www.youtube.com/watch?v=fFLncYMJTHw"
+  },
+  {
     "name": "天透あわ",
     "youtubeid": "UCXI0W_Os-BCIngpCb1YnOow",
     "title": "【初配信】はじめまして、天透あわです！＃毎日あまあわ ＃新人Vtuber",
@@ -1240,6 +1240,46 @@
     "url": "https://www.youtube.com/watch?v=Y5295KsTwH0"
   },
   {
+    "name": "桜堂ねる",
+    "youtubeid": "UC0H7dRRqhfOifbYQ2TURdAg",
+    "title": "10月31今日は何の日【桜堂ねる】#vtuber #shorts #ねる道場 #今日は何の日",
+    "date": "2025-10-31T07:12:36.000+09:00",
+    "status": "archive",
+    "thumbnail": "https://i.ytimg.com/vi/ZZ1I-3VySj0/mqdefault.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/hBz75E3AEST1Dzv5vOTHAqoJfayd30WIWWQ3ZFLlWMHDsyZ_QD6ZVVUtLTKSizalT3APPtdpFGI",
+    "url": "https://www.youtube.com/watch?v=ZZ1I-3VySj0"
+  },
+  {
+    "name": "桜堂ねる",
+    "youtubeid": "UC0H7dRRqhfOifbYQ2TURdAg",
+    "title": "圧倒的自由な朝活1031",
+    "date": "2025-10-31T07:22:55.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/BjfTKtx1Jss/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/hBz75E3AEST1Dzv5vOTHAqoJfayd30WIWWQ3ZFLlWMHDsyZ_QD6ZVVUtLTKSizalT3APPtdpFGI",
+    "url": "https://www.youtube.com/watch?v=BjfTKtx1Jss"
+  },
+  {
+    "name": "七音うら",
+    "youtubeid": "UCv2IYO-4waCpHvn50SWWY2A",
+    "title": "#shorts ハロウィンのおはよう🎃 #新人vtuber",
+    "date": "2025-10-31T08:01:15.000+09:00",
+    "status": "archive",
+    "thumbnail": "https://i.ytimg.com/vi/pmVqgIuWTs0/mqdefault.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/T655ATpSd2gkjZBrokvlkaUH0f5-fCpQdcJpwxmmNdy6fxCYffAlq2sMhPOtFk_CvVyOkEPY8Q",
+    "url": "https://www.youtube.com/watch?v=pmVqgIuWTs0"
+  },
+  {
+    "name": "桜庭羽奈",
+    "youtubeid": "UCPgg_A08ksSYP-VivJGniRw",
+    "title": "マスクの下は。。。ひっそり噂のあの子にぞっこん。#vtuber #新人vtuberと繋がりたい #新人vtuber #推しをお探しですか #shorts",
+    "date": "2025-10-31T09:01:26.000+09:00",
+    "status": "archive",
+    "thumbnail": "https://i.ytimg.com/vi/z9SzxhblgSY/mqdefault.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/04zALH6pYL7mkWILHajvBzfzg4hrwRCLBONme3K1PjuEeYJIRC6RYxPmJzVZRuN42skHEDNRGmo",
+    "url": "https://www.youtube.com/watch?v=z9SzxhblgSY"
+  },
+  {
     "name": "カルプ・マーガレット",
     "youtubeid": "UCAANONySj4hE_-ch6G34MZQ",
     "title": "【 登龍門BOX卒業記念!! 】登龍門BOXメンツと凸待ちよ～～～ん！！！【 広島弁のオネエVTuber 】",
@@ -1278,5 +1318,15 @@
     "thumbnail": "https://i.ytimg.com/vi/Wm5QFtaEbO8/mqdefault_live.jpg",
     "channelIcon": "https://yt3.googleusercontent.com/pDP2GuylW0RN1REDScFAlNklbXaPRqTm2mwT2F7dIo8xoYYFPfspsjGH_G3RagwlKVlQbdw95bY",
     "url": "https://www.youtube.com/watch?v=Wm5QFtaEbO8"
+  },
+  {
+    "name": "桜樹美彩",
+    "youtubeid": "UCTwKpTFX1aAXD0xpBqYqTdg",
+    "title": "【 朝活 / 雑談 】朝雑200回記念㊗週初めを「おはよう」から始めましょ☕月曜の朝活雑談☀ 🍀 初見＆ROM勢大歓迎🐤  #vtuber #みさライなう #桜樹美彩 #作業用BGM",
+    "date": "2025-11-03T07:00:00.000+09:00",
+    "status": "upcoming",
+    "thumbnail": "https://i.ytimg.com/vi/XBtKwGtaarg/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/pDP2GuylW0RN1REDScFAlNklbXaPRqTm2mwT2F7dIo8xoYYFPfspsjGH_G3RagwlKVlQbdw95bY",
+    "url": "https://www.youtube.com/watch?v=XBtKwGtaarg"
   }
 ]

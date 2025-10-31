@@ -271,19 +271,11 @@
   {
     "name": "銘兎目あう",
     "twitchid": "Metome_Au",
-    "title": "【DBD】天宮ちほさんと🎃ぷろのゔぁDBD最強決定戦🎃20:00～‼️最後の練習！",
-    "date": "2025-10-31T16:10:29.000+09:00",
-    "status": "live",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_Metome_Au-320x180.jpg"
-  },
-  {
-    "name": "銘兎目あう",
-    "twitchid": "Metome_Au",
     "title": "【DBD】🎃ぷろのゔぁDBD最強決定戦🎃20:00～‼️最後の練習！",
     "date": "2025-10-31T16:10:35.000+09:00",
     "status": "archive",
     "channelIcon": "https://yt3.googleusercontent.com/VB97J8AMHex_rkfd6hDhfiGhhVvrL-NNkseP2mMYSWh75sxA_oXctmxK5tV4FYgkM17RUAx6GQ",
-    "thumbnail": "https://vod-secure.twitch.tv/_404/404_processing_320x180.png"
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/efc3cadfd188446ceba1_metome_au_315018705265_1761894629//thumb/thumb0-320x180.jpg"
   },
   {
     "name": "李じゅぴ汰",
@@ -309,5 +301,13 @@
     "status": "archive",
     "channelIcon": "https://yt3.googleusercontent.com/8vDFqOVNprKqFE0o7EecXyQleBXIibeJZpXpSgjm5msh4Yd0S8hTsbmYZyOBXa3bUEgBJHZt1w",
     "thumbnail": "https://vod-secure.twitch.tv/_404/404_processing_320x180.png"
+  },
+  {
+    "name": "駿河ルガ",
+    "twitchid": "suruga_luga",
+    "title": "【スト6】虎のサガット【登龍門BOX/駿河ルガ】",
+    "date": "2025-10-31T18:00:06.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_suruga_luga-320x180.jpg"
   }
 ]

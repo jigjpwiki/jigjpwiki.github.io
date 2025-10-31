@@ -268,5 +268,22 @@
     "status": "archive",
     "channelIcon": "https://yt3.googleusercontent.com/pDP2GuylW0RN1REDScFAlNklbXaPRqTm2mwT2F7dIo8xoYYFPfspsjGH_G3RagwlKVlQbdw95bY",
     "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d1m7jfoe9zdc1j/479a4907a0ec873459d2_sakuragimisa_v_315782389594_1761861612//thumb/thumb0-320x180.jpg"
+  },
+  {
+    "name": "妖小琳",
+    "twitchid": "yaosyaorin",
+    "title": "本番は20時から",
+    "date": "2025-10-31T13:59:14.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_yaosyaorin-320x180.jpg"
+  },
+  {
+    "name": "妖小琳",
+    "twitchid": "yaosyaorin",
+    "title": "デドバ",
+    "date": "2025-10-31T13:59:20.000+09:00",
+    "status": "archive",
+    "channelIcon": "https://yt3.googleusercontent.com/Ji8DJgyzWKUbbeWlYgFfsCZtyiGZ-zM597otZBcFnIoEVIw7284GbNbBQcALgEKwqvk8OXNZLA",
+    "thumbnail": "https://vod-secure.twitch.tv/_404/404_processing_320x180.png"
   }
 ]

@@ -1,14 +1,5 @@
 [
   {
-    "name": "真昼ねる",
-    "twitchid": "mahiruneru",
-    "title": "【参加◎】本日のインコ攻めマスター❕【ぷろのゔぁ￤VTuber￤真昼ねる】",
-    "date": "2025-10-28T23:21:25.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://yt3.googleusercontent.com/Cu6AMAZAEC_DTANKoaloA_4iLCuEUQ8BiAwyHGuOUG9GtoIw6s7mXCv1-49LV1IgODYZfGowzQ",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/8e71eebf4725e7c51977_mahiruneru_315062253811_1761661279//thumb/thumb0-320x180.jpg"
-  },
-  {
     "name": "李じゅぴ汰",
     "twitchid": "lee_jupita",
     "title": "【DBD】ちょっとずつでも上達したい！初心者！Dチーム練習！【デッドバイデイライト/Dead by Daylight】",
@@ -246,9 +237,10 @@
     "name": "駿河ルガ",
     "twitchid": "suruga_luga",
     "title": "【スト6】虎のサガット【登龍門BOX/駿河ルガ】",
-    "date": "2025-10-31T18:00:06.000+09:00",
-    "status": "live",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_suruga_luga-320x180.jpg"
+    "date": "2025-10-31T18:00:17.000+09:00",
+    "status": "archive",
+    "channelIcon": "https://yt3.googleusercontent.com/JlY4XEMg9noNa4ShOtky0OwYbKXjnhnje6NQUcwrnJ0UI3C9VQrB-fBNat9QJSUJuuT_Yo1P",
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/0eb3f3ff49b5967defa4_suruga_luga_315028647538_1761901206//thumb/thumb0-320x180.jpg"
   },
   {
     "name": "水透ユウ",

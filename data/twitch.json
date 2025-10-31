@@ -1,14 +1,5 @@
 [
   {
-    "name": "銘兎目あう",
-    "twitchid": "Metome_Au",
-    "title": "【スト６】SFL同時視聴！一緒に応援しよ～🥊✨",
-    "date": "2025-10-28T18:52:22.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://yt3.googleusercontent.com/VB97J8AMHex_rkfd6hDhfiGhhVvrL-NNkseP2mMYSWh75sxA_oXctmxK5tV4FYgkM17RUAx6GQ",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/ae9127f0dd736958e1c2_metome_au_315006432625_1761645136//thumb/thumb0-320x180.jpg"
-  },
-  {
     "name": "駿河ルガ",
     "twitchid": "suruga_luga",
     "title": "【スト6】床のサガット【登龍門BOX/駿河ルガ】",
@@ -245,19 +236,11 @@
   {
     "name": "妖小琳",
     "twitchid": "yaosyaorin",
-    "title": "本番は20時から",
-    "date": "2025-10-31T13:59:14.000+09:00",
-    "status": "live",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_yaosyaorin-320x180.jpg"
-  },
-  {
-    "name": "妖小琳",
-    "twitchid": "yaosyaorin",
     "title": "デドバ",
     "date": "2025-10-31T13:59:20.000+09:00",
     "status": "archive",
     "channelIcon": "https://yt3.googleusercontent.com/Ji8DJgyzWKUbbeWlYgFfsCZtyiGZ-zM597otZBcFnIoEVIw7284GbNbBQcALgEKwqvk8OXNZLA",
-    "thumbnail": "https://vod-secure.twitch.tv/_404/404_processing_320x180.png"
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/26a836b6f106527d8af4_yaosyaorin_315018326001_1761886754//thumb/thumb0-320x180.jpg"
   },
   {
     "name": "銘兎目あう",
@@ -272,9 +255,10 @@
     "name": "李じゅぴ汰",
     "twitchid": "lee_jupita",
     "title": "【DBD】20時に向けて板を探す！初心者！Dチーム練習！【デッドバイデイライト/Dead by Daylight】",
-    "date": "2025-10-31T16:34:57.000+09:00",
-    "status": "live",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lee_jupita-320x180.jpg"
+    "date": "2025-10-31T16:35:03.000+09:00",
+    "status": "archive",
+    "channelIcon": "https://yt3.googleusercontent.com/QQqec9A1J7eLk9RrRYD9vvk51BBJzcE1leGkU9n4YkwHqht9gmGT1ktmSlKItQtbuMSGuklAFxM",
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/78ef4707d0a052f473b4_lee_jupita_315073238259_1761896097//thumb/thumb0-320x180.jpg"
   },
   {
     "name": "火乃晴るい",

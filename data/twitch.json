@@ -244,10 +244,19 @@
   {
     "name": "なかもとおまち",
     "twitchid": "41futon",
-    "title": "CYNTHIA顔合わせ！『三人娘』@限界お姉さんほーちゃん＠えりーちゃん",
+    "title": "う",
     "date": "2025-11-01T19:46:18.000+09:00",
     "status": "live",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_41futon-320x180.jpg"
+  },
+  {
+    "name": "なかもとおまち",
+    "twitchid": "41futon",
+    "title": "CYNTHIA顔合わせ！『三人娘』@限界お姉さんほーちゃん＠えりーちゃん",
+    "date": "2025-11-01T19:46:24.000+09:00",
+    "status": "archive",
+    "channelIcon": "https://yt3.googleusercontent.com/h8jNjVckVf08zSV6wdhQ38Fw9OH7kucAprlJsi9w0YdDIL8_Kcv0tHY-1cK8jPK_jRLSJb3t_Q",
+    "thumbnail": "https://vod-secure.twitch.tv/_404/404_processing_320x180.png"
   },
   {
     "name": "真昼ねる",
@@ -265,5 +274,13 @@
     "date": "2025-11-01T21:44:26.000+09:00",
     "status": "live",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_siyham-320x180.jpg"
+  },
+  {
+    "name": "真昼ねる",
+    "twitchid": "mahiruneru",
+    "title": "【参加◎】10/32なのでギリハロウィン【ぷろのゔぁ￤VTuber￤真昼ねる】",
+    "date": "2025-11-01T22:07:29.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_mahiruneru-320x180.jpg"
   }
 ]

@@ -1,15 +1,5 @@
 [
   {
-    "name": "鈴木沙透",
-    "youtubeid": "UCj5nRzNFXZn9GRhITRkKElA",
-    "title": "【#歌枠】アーカイブ残しません【鈴木沙透/パレデミア学園】",
-    "date": "2025-10-29T17:53:09.000+09:00",
-    "status": "live",
-    "thumbnail": "https://i.ytimg.com/vi/pkNAyIJC_8s/mqdefault_live.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/doWaEHgvIyGiFYS-kh_sISc4kxoKHfigCVy_DgtUJr3Pqwu4EIfaVD25ycH4FUg4gpTxUHWZbQ",
-    "url": "https://www.youtube.com/watch?v=pkNAyIJC_8s"
-  },
-  {
     "name": "肇明日空",
     "youtubeid": "UCj6HYkokrIErMfhKAUAvYcA",
     "title": "【敬語3回使ったら即終了リターンズ】#新人vtuber　#あすぞら観測会 ",
@@ -1308,6 +1298,56 @@
     "thumbnail": "https://i.ytimg.com/vi/AIx0nIg_twY/mqdefault.jpg",
     "channelIcon": "https://yt3.googleusercontent.com/T655ATpSd2gkjZBrokvlkaUH0f5-fCpQdcJpwxmmNdy6fxCYffAlq2sMhPOtFk_CvVyOkEPY8Q",
     "url": "https://www.youtube.com/watch?v=AIx0nIg_twY"
+  },
+  {
+    "name": "鹿鳴りあ",
+    "youtubeid": "UC6cgUcRa_gGsjqq3Kp6B68w",
+    "title": "【ホラゲ初見実況】まだ猫は逃げますか？【#鹿鳴りあ #ろくめみて 】",
+    "date": "2025-11-01T16:00:45.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/zKlcR1Wt3d4/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/8LfPowqmhNmaEl9OBYSMUbrC7y1UCCpgvvGo2WhFFk4WKuMiigUwuFQFP2PD1krD6nfVHsQ-ew",
+    "url": "https://www.youtube.com/watch?v=zKlcR1Wt3d4"
+  },
+  {
+    "name": "肇明日空",
+    "youtubeid": "UCj6HYkokrIErMfhKAUAvYcA",
+    "title": "推しって大事だもんね#vtuber #shorts #都市伝説解体センター",
+    "date": "2025-11-01T16:00:57.000+09:00",
+    "status": "archive",
+    "thumbnail": "https://i.ytimg.com/vi/rPWJjFfxfJE/mqdefault.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/u59W56aqJ9r7WunTIqg60ZGnBu-G-9LA-OX6tZR6debt_isQ8xR59HUwrbAqLLqlTf_0VosmZg",
+    "url": "https://www.youtube.com/watch?v=rPWJjFfxfJE"
+  },
+  {
+    "name": "銘兎目あう",
+    "youtubeid": "UCpr-9ssUUgSb0EpDA8bRuTA",
+    "title": "【スト６】ケンが大好きすぎる【銘兎目あう】#スト6 #ストリートファイター6 #vtuber #shorts #sf6 #おすすめ #StreetFighter6",
+    "date": "2025-11-01T17:07:19.000+09:00",
+    "status": "archive",
+    "thumbnail": "https://i.ytimg.com/vi/-A4Ok3OwQ10/mqdefault.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/VB97J8AMHex_rkfd6hDhfiGhhVvrL-NNkseP2mMYSWh75sxA_oXctmxK5tV4FYgkM17RUAx6GQ",
+    "url": "https://www.youtube.com/watch?v=-A4Ok3OwQ10"
+  },
+  {
+    "name": "桜堂ねる",
+    "youtubeid": "UC0H7dRRqhfOifbYQ2TURdAg",
+    "title": "圧倒的自由な雑枠",
+    "date": "2025-11-01T17:53:19.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/aoFw7JjYvOY/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/hBz75E3AEST1Dzv5vOTHAqoJfayd30WIWWQ3ZFLlWMHDsyZ_QD6ZVVUtLTKSizalT3APPtdpFGI",
+    "url": "https://www.youtube.com/watch?v=aoFw7JjYvOY"
+  },
+  {
+    "name": "忠犬しず",
+    "youtubeid": "UCPzN3R0x_SciJJ_FP-STpHQ",
+    "title": "【 同時視聴 】ウルトラQとウルトラマンパワードの7、8話を完全初見で見るぞ！【 Vtuber/忠犬しず 】#特撮オタク",
+    "date": "2025-11-01T21:00:00.000+09:00",
+    "status": "upcoming",
+    "thumbnail": "https://i.ytimg.com/vi/ybvmFATZ9iE/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/9dVPxoBbcXIeN4O1N6bYiWu3EHHHeaStY7fQYPZfF3thWIP2Sc9Uc6kg56Aj0UHrg5QqqDtn",
+    "url": "https://www.youtube.com/watch?v=ybvmFATZ9iE"
   },
   {
     "name": "鹿鳴りあ",

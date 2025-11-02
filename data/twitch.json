@@ -217,10 +217,19 @@
   {
     "name": "火乃晴るい",
     "twitchid": "hinoha_rui",
-    "title": "【 #LoL 】LoLのレベル上げﾓｸﾓｸやるヨ。next未定",
+    "title": "【 #VALORANT 】ひさVALO！",
     "date": "2025-11-02T19:13:49.000+09:00",
     "status": "live",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_hinoha_rui-320x180.jpg"
+  },
+  {
+    "name": "火乃晴るい",
+    "twitchid": "hinoha_rui",
+    "title": "【 #LoL 】LoLのレベル上げﾓｸﾓｸやるヨ。next未定",
+    "date": "2025-11-02T19:13:55.000+09:00",
+    "status": "archive",
+    "channelIcon": "https://yt3.googleusercontent.com/8vDFqOVNprKqFE0o7EecXyQleBXIibeJZpXpSgjm5msh4Yd0S8hTsbmYZyOBXa3bUEgBJHZt1w",
+    "thumbnail": "https://vod-secure.twitch.tv/_404/404_processing_320x180.png"
   },
   {
     "name": "なかもとおまち",
@@ -237,5 +246,21 @@
     "date": "2025-11-02T20:20:37.000+09:00",
     "status": "live",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_Metome_Au-320x180.jpg"
+  },
+  {
+    "name": "しーはむ",
+    "twitchid": "siyham",
+    "title": "完全初見 クリアまで",
+    "date": "2025-11-02T21:47:29.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_siyham-320x180.jpg"
+  },
+  {
+    "name": "真昼ねる",
+    "twitchid": "mahiruneru",
+    "title": "【サブ限配信】ふぁんぼメンバーとREPOする❕【ぷろのゔぁ￤VTuber￤真昼ねる】",
+    "date": "2025-11-02T21:59:01.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_mahiruneru-320x180.jpg"
   }
 ]

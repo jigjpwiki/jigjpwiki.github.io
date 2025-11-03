@@ -1,14 +1,5 @@
 [
   {
-    "name": "李じゅぴ汰",
-    "twitchid": "lee_jupita",
-    "title": "【DBD】20時に向けて板を探す！初心者！Dチーム練習！【デッドバイデイライト/Dead by Daylight】",
-    "date": "2025-10-31T16:35:03.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://yt3.googleusercontent.com/QQqec9A1J7eLk9RrRYD9vvk51BBJzcE1leGkU9n4YkwHqht9gmGT1ktmSlKItQtbuMSGuklAFxM",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/78ef4707d0a052f473b4_lee_jupita_315073238259_1761896097//thumb/thumb0-320x180.jpg"
-  },
-  {
     "name": "火乃晴るい",
     "twitchid": "hinoha_rui",
     "title": "【 #DBD 】#ぷろのゔぁDBD最強決定戦 本番だよ！仮装しながら頑張らせていただきます",
@@ -244,9 +235,18 @@
   {
     "name": "なかもとおまち",
     "twitchid": "41futon",
-    "title": "新actだー！",
+    "title": "かじりむし王※ビッツ禁止",
     "date": "2025-11-03T13:28:26.000+09:00",
     "status": "live",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_41futon-320x180.jpg"
+  },
+  {
+    "name": "なかもとおまち",
+    "twitchid": "41futon",
+    "title": "新actだー！",
+    "date": "2025-11-03T13:28:32.000+09:00",
+    "status": "archive",
+    "channelIcon": "https://yt3.googleusercontent.com/h8jNjVckVf08zSV6wdhQ38Fw9OH7kucAprlJsi9w0YdDIL8_Kcv0tHY-1cK8jPK_jRLSJb3t_Q",
+    "thumbnail": "https://vod-secure.twitch.tv/_404/404_processing_320x180.png"
   }
 ]

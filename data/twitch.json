@@ -1,59 +1,5 @@
 [
   {
-    "name": "水透ユウ",
-    "twitchid": "minato_yu_",
-    "title": "【 #ぷろのゔぁDBD最強決定戦 】Bチーム「ワワワワァ～♪」WIN!!【水透ユウ】【 #新人vtuber 】",
-    "date": "2025-10-31T19:55:47.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://yt3.googleusercontent.com/eVD8Ygm7KVyh3dvWnyebfYlbYpD13ZYQ-Bos8WdR5LDE61A3svHVHCLEY-rM3IQgw9O4uvdd",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/e4d112a4844df43b73da_minato_yu__315019408625_1761908141//thumb/thumb0-320x180.jpg"
-  },
-  {
-    "name": "しーはむ",
-    "twitchid": "siyham",
-    "title": "勝ったら松阪牛🐄ぷろのゔぁDBD最強決定戦！",
-    "date": "2025-10-31T19:59:48.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://yt3.googleusercontent.com/y0zP0Uz7HSLx5dv3xo488Suxk8rJQQUC1wXaymjUBIQIwa25WlVu_VmrsT1xAyVD-jgeL7hs",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/540d6b512242c6d29316_siyham_315019427825_1761908382//thumb/thumb0-320x180.jpg"
-  },
-  {
-    "name": "真昼ねる",
-    "twitchid": "mahiruneru",
-    "title": "【DbD】ぷろのゔぁDBD最強決定戦本番🔥チーム『ワワワワァ～♪』WIN🎃【ぷろのゔぁ￤VTuber￤真昼ねる】",
-    "date": "2025-10-31T20:00:03.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://yt3.googleusercontent.com/Cu6AMAZAEC_DTANKoaloA_4iLCuEUQ8BiAwyHGuOUG9GtoIw6s7mXCv1-49LV1IgODYZfGowzQ",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/c1078e25a27b103f2587_mahiruneru_315073905267_1761908397//thumb/thumb0-320x180.jpg"
-  },
-  {
-    "name": "銘兎目あう",
-    "twitchid": "Metome_Au",
-    "title": "【本番🐸】🎃ぷろのゔぁDBD最強決定戦👻銘兎目あう視点👀",
-    "date": "2025-10-31T20:00:19.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://yt3.googleusercontent.com/VB97J8AMHex_rkfd6hDhfiGhhVvrL-NNkseP2mMYSWh75sxA_oXctmxK5tV4FYgkM17RUAx6GQ",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/97e0e30953cb68fd495d_metome_au_315029064818_1761908413//thumb/thumb0-320x180.jpg"
-  },
-  {
-    "name": "火乃晴るい",
-    "twitchid": "hinoha_rui",
-    "title": "【 #DBD 】20時～ #ぷろのゔぁDBD最強決定戦 本番だよ！仮装しながら頑張らせていただきます",
-    "date": "2025-10-31T20:01:00.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://yt3.googleusercontent.com/8vDFqOVNprKqFE0o7EecXyQleBXIibeJZpXpSgjm5msh4Yd0S8hTsbmYZyOBXa3bUEgBJHZt1w",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/28d933074719b65272f9_hinoha_rui_315073913587_1761908454//thumb/thumb0-320x180.jpg"
-  },
-  {
-    "name": "なかもとおまち",
-    "twitchid": "41futon",
-    "title": "ぷろのゔぁ最強決定戦！DbD本番いくぞおおおおおお！！",
-    "date": "2025-10-31T20:01:48.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://yt3.googleusercontent.com/h8jNjVckVf08zSV6wdhQ38Fw9OH7kucAprlJsi9w0YdDIL8_Kcv0tHY-1cK8jPK_jRLSJb3t_Q",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/04460c954f14a416c7ed_41futon_315073919731_1761908502//thumb/thumb0-320x180.jpg"
-  },
-  {
     "name": "妖小琳",
     "twitchid": "yaosyaorin",
     "title": "Dチームエキシビジョン withれぷちんさん",
@@ -239,5 +185,13 @@
     "date": "2025-11-03T18:33:16.000+09:00",
     "status": "live",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_hinoha_rui-320x180.jpg"
+  },
+  {
+    "name": "銘兎目あう",
+    "twitchid": "Metome_Au",
+    "title": "【スト６】祝日まったりワールドツアー🛫",
+    "date": "2025-11-03T20:04:47.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_Metome_Au-320x180.jpg"
   }
 ]

@@ -1,23 +1,5 @@
 [
   {
-    "name": "しーはむ",
-    "twitchid": "siyham",
-    "title": "完全初見 クリアまで",
-    "date": "2025-11-02T21:47:35.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://yt3.googleusercontent.com/y0zP0Uz7HSLx5dv3xo488Suxk8rJQQUC1wXaymjUBIQIwa25WlVu_VmrsT1xAyVD-jgeL7hs",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/ade8beb124cba38843b3_siyham_315029234545_1762087649//thumb/thumb0-320x180.jpg"
-  },
-  {
-    "name": "真昼ねる",
-    "twitchid": "mahiruneru",
-    "title": "【サブ限配信】ふぁんぼメンバーとREPOする❕【ぷろのゔぁ￤VTuber￤真昼ねる】",
-    "date": "2025-11-02T21:59:07.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://yt3.googleusercontent.com/Cu6AMAZAEC_DTANKoaloA_4iLCuEUQ8BiAwyHGuOUG9GtoIw6s7mXCv1-49LV1IgODYZfGowzQ",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/d6bca02d14b4692070eb_mahiruneru_315029293681_1762088341//thumb/thumb0-320x180.jpg"
-  },
-  {
     "name": "桜樹美彩",
     "twitchid": "sakuragimisa_v",
     "title": "【 朝活 / 雑談 】朝雑200回記念㊗週初めを「おはよう」から始めましょ☕月曜の朝活雑談☀ 🍀 初見＆ROM勢大歓迎🐤  #vtuber #みさライなう #桜樹美彩 #作業用BGM",
@@ -227,19 +209,11 @@
   {
     "name": "なかもとおまち",
     "twitchid": "41futon",
-    "title": "スト６",
-    "date": "2025-11-05T15:16:53.000+09:00",
-    "status": "live",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_41futon-320x180.jpg"
-  },
-  {
-    "name": "なかもとおまち",
-    "twitchid": "41futon",
     "title": "大会に向けて対策本部設置します",
     "date": "2025-11-05T15:16:59.000+09:00",
     "status": "archive",
     "channelIcon": "https://yt3.googleusercontent.com/h8jNjVckVf08zSV6wdhQ38Fw9OH7kucAprlJsi9w0YdDIL8_Kcv0tHY-1cK8jPK_jRLSJb3t_Q",
-    "thumbnail": "https://vod-secure.twitch.tv/_404/404_processing_320x180.png"
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/f0561c3c332dc4bf0220_41futon_315040614641_1762323413//thumb/thumb0-320x180.jpg"
   },
   {
     "name": "駿河ルガ",
@@ -256,5 +230,13 @@
     "date": "2025-11-05T20:05:07.000+09:00",
     "status": "live",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_Metome_Au-320x180.jpg"
+  },
+  {
+    "name": "李じゅぴ汰",
+    "twitchid": "lee_jupita",
+    "title": "【Project:;COLD case.mirage】謎解きアドベンチャー！3章～ラストまで！！【※ネタバレ注意】",
+    "date": "2025-11-05T22:17:16.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lee_jupita-320x180.jpg"
   }
 ]

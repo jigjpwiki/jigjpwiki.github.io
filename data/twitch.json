@@ -1,14 +1,5 @@
 [
   {
-    "name": "なかもとおまち",
-    "twitchid": "41futon",
-    "title": "初めてのお歌 カラオケだ！【お知らせあり…】※ビッツ禁止",
-    "date": "2025-11-02T20:02:44.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://yt3.googleusercontent.com/h8jNjVckVf08zSV6wdhQ38Fw9OH7kucAprlJsi9w0YdDIL8_Kcv0tHY-1cK8jPK_jRLSJb3t_Q",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/3d3bc0785fdcfa7bcabb_41futon_315038382322_1762081357//thumb/thumb0-320x180.jpg"
-  },
-  {
     "name": "銘兎目あう",
     "twitchid": "Metome_Au",
     "title": "【スト６】ハイマス目指して頑張るよ🥋🥊",
@@ -245,10 +236,19 @@
   {
     "name": "なかもとおまち",
     "twitchid": "41futon",
-    "title": "大会に向けて対策本部設置します",
+    "title": "M アキ、Mリリー、キンバリー、キャミィ1600前後募集",
     "date": "2025-11-05T15:16:53.000+09:00",
     "status": "live",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_41futon-320x180.jpg"
+  },
+  {
+    "name": "なかもとおまち",
+    "twitchid": "41futon",
+    "title": "大会に向けて対策本部設置します",
+    "date": "2025-11-05T15:16:59.000+09:00",
+    "status": "archive",
+    "channelIcon": "https://yt3.googleusercontent.com/h8jNjVckVf08zSV6wdhQ38Fw9OH7kucAprlJsi9w0YdDIL8_Kcv0tHY-1cK8jPK_jRLSJb3t_Q",
+    "thumbnail": "https://vod-secure.twitch.tv/_404/404_processing_320x180.png"
   },
   {
     "name": "駿河ルガ",
@@ -257,5 +257,13 @@
     "date": "2025-11-05T18:00:34.000+09:00",
     "status": "live",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_suruga_luga-320x180.jpg"
+  },
+  {
+    "name": "銘兎目あう",
+    "twitchid": "Metome_Au",
+    "title": "【壺おじ】🔰初やってみる！後半【スト６】MR1512～やるよ🥊✨",
+    "date": "2025-11-05T20:05:07.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_Metome_Au-320x180.jpg"
   }
 ]

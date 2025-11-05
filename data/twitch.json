@@ -1,23 +1,5 @@
 [
   {
-    "name": "駿河ルガ",
-    "twitchid": "suruga_luga",
-    "title": "【スト6】窯のサガット【登龍門BOX/駿河ルガ】",
-    "date": "2025-11-02T18:00:12.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://yt3.googleusercontent.com/JlY4XEMg9noNa4ShOtky0OwYbKXjnhnje6NQUcwrnJ0UI3C9VQrB-fBNat9QJSUJuuT_Yo1P",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/993f97444567f6fb804a_suruga_luga_315037969650_1762074002//thumb/thumb0-320x180.jpg"
-  },
-  {
-    "name": "水透ユウ",
-    "twitchid": "minato_yu_",
-    "title": "【 #R6SX 】ちょっとぶりのシージ！【水透ユウ】【 #新人vtuber 】",
-    "date": "2025-11-02T18:27:44.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://yt3.googleusercontent.com/eVD8Ygm7KVyh3dvWnyebfYlbYpD13ZYQ-Bos8WdR5LDE61A3svHVHCLEY-rM3IQgw9O4uvdd",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/c33960d17f48563701d8_minato_yu__315082951667_1762075658//thumb/thumb0-320x180.jpg"
-  },
-  {
     "name": "火乃晴るい",
     "twitchid": "hinoha_rui",
     "title": "【 #LoL 】LoLのレベル上げﾓｸﾓｸやるヨ。next未定",
@@ -285,5 +267,13 @@
     "status": "archive",
     "channelIcon": "https://yt3.googleusercontent.com/h8jNjVckVf08zSV6wdhQ38Fw9OH7kucAprlJsi9w0YdDIL8_Kcv0tHY-1cK8jPK_jRLSJb3t_Q",
     "thumbnail": "https://vod-secure.twitch.tv/_404/404_processing_320x180.png"
+  },
+  {
+    "name": "駿河ルガ",
+    "twitchid": "suruga_luga",
+    "title": "【スト6】五のサガット【登龍門BOX/駿河ルガ】",
+    "date": "2025-11-05T18:00:34.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_suruga_luga-320x180.jpg"
   }
 ]

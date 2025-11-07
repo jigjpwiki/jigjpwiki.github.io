@@ -1,14 +1,5 @@
 [
   {
-    "name": "李じゅぴ汰",
-    "twitchid": "lee_jupita",
-    "title": "【おにぎり屋さんシミュレーター】揚げ物忙しすぎる。うちはおにぎり屋なんだが？？？④🍙🍙🍙",
-    "date": "2025-11-04T23:47:26.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://yt3.googleusercontent.com/QQqec9A1J7eLk9RrRYD9vvk51BBJzcE1leGkU9n4YkwHqht9gmGT1ktmSlKItQtbuMSGuklAFxM",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/b9b2aa35f6731d093116_lee_jupita_315093221363_1762267640//thumb/thumb0-320x180.jpg"
-  },
-  {
     "name": "桜樹美彩",
     "twitchid": "sakuragimisa_v",
     "title": "【 朝活 / 雑談 】300名様に元気な「おはよう」を☀ 水曜日 AM7:00～10:00 モーニングコール朝活雑談🐤  #vtuber #みさライなう #桜樹美彩 #作業用BGM",
@@ -219,9 +210,10 @@
     "name": "水透ユウ",
     "twitchid": "minato_yu_",
     "title": "【 #DBD 】参加◎インコースってことはマリカと同じ理論か【水透ユウ】【 #新人vtuber 】",
-    "date": "2025-11-07T20:28:02.000+09:00",
-    "status": "live",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_minato_yu_-320x180.jpg"
+    "date": "2025-11-07T20:28:07.000+09:00",
+    "status": "archive",
+    "channelIcon": "https://yt3.googleusercontent.com/eVD8Ygm7KVyh3dvWnyebfYlbYpD13ZYQ-Bos8WdR5LDE61A3svHVHCLEY-rM3IQgw9O4uvdd",
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/9ce2b53c57f871477b32_minato_yu__315050363377_1762514882//thumb/thumb0-320x180.jpg"
   },
   {
     "name": "なかもとおまち",
@@ -230,5 +222,13 @@
     "date": "2025-11-07T23:26:36.000+09:00",
     "status": "live",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_41futon-320x180.jpg"
+  },
+  {
+    "name": "真昼ねる",
+    "twitchid": "mahiruneru",
+    "title": "【参加◎】2日目ARCRaiders🔰 機械が私に歯向かうな【ぷろのゔぁ￤VTuber￤真昼ねる】",
+    "date": "2025-11-07T23:41:56.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_mahiruneru-320x180.jpg"
   }
 ]

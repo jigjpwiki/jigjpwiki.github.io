@@ -1,15 +1,5 @@
 [
   {
-    "name": "相栖るじゅ",
-    "youtubeid": "UCrpdBoGpa6g2WEtRWsIlhDQ",
-    "title": "3秒後に変身します🪄︎︎◝✩ #shorts #新人vtuberだけど推されたい #推しをお探しですか #いますぐ輪廻",
-    "date": "2025-11-05T08:01:10.000+09:00",
-    "status": "archive",
-    "thumbnail": "https://i.ytimg.com/vi/m67-EJ5b1Qg/mqdefault.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/yQbh9vEEgS_UapoQhIxxoTSy13bDxlHYC-ncTcO9VIDBN2NvrLTAWeKGQ72CN2fhOOrHqYaFDA",
-    "url": "https://www.youtube.com/watch?v=m67-EJ5b1Qg"
-  },
-  {
     "name": "桜堂ねる",
     "youtubeid": "UC0H7dRRqhfOifbYQ2TURdAg",
     "title": "圧倒的自由な朝活1105",
@@ -1080,6 +1070,16 @@
     "url": "https://www.youtube.com/watch?v=G6pWRlCPNfo"
   },
   {
+    "name": "鹿鳴りあ",
+    "youtubeid": "UC6cgUcRa_gGsjqq3Kp6B68w",
+    "title": "【朝活雑談】おはよう150人耐久✨10人達成ごとに一曲歌います❣初見さんも大歓迎！【#鹿鳴りあ #ろくめみて 】",
+    "date": "2025-11-08T07:01:00.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/-hiJBynwBe8/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/8LfPowqmhNmaEl9OBYSMUbrC7y1UCCpgvvGo2WhFFk4WKuMiigUwuFQFP2PD1krD6nfVHsQ-ew",
+    "url": "https://www.youtube.com/watch?v=-hiJBynwBe8"
+  },
+  {
     "name": "飛渡ココ",
     "youtubeid": "UCMElh_FlHyzp_obVe-b3Qrg",
     "title": "300万ブロックを掘る雑談",
@@ -1088,6 +1088,16 @@
     "thumbnail": "https://i.ytimg.com/vi/EhcgMDvmxxI/mqdefault_live.jpg",
     "channelIcon": "https://yt3.googleusercontent.com/8I1SuqBXvb4dRY9bcXYc8xxSxL-L2CAe4YvBx2x3kOkyboXRq-G0rVo7pYflUmvo0UKIyxnlRA",
     "url": "https://www.youtube.com/watch?v=EhcgMDvmxxI"
+  },
+  {
+    "name": "七音うら",
+    "youtubeid": "UCv2IYO-4waCpHvn50SWWY2A",
+    "title": "【#アキネーター風クイズ 】これなんだ！ちょっと納得がいってないうらち。　#アキネータークイズ #アキネーター #これなんだ",
+    "date": "2025-11-08T08:00:26.000+09:00",
+    "status": "archive",
+    "thumbnail": "https://i.ytimg.com/vi/LD1fYqAb4Jc/mqdefault.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/T655ATpSd2gkjZBrokvlkaUH0f5-fCpQdcJpwxmmNdy6fxCYffAlq2sMhPOtFk_CvVyOkEPY8Q",
+    "url": "https://www.youtube.com/watch?v=LD1fYqAb4Jc"
   },
   {
     "name": "桜樹美彩",
@@ -1178,5 +1188,15 @@
     "thumbnail": "https://i.ytimg.com/vi/ALV91mHOlMY/mqdefault_live.jpg",
     "channelIcon": "https://yt3.googleusercontent.com/pDP2GuylW0RN1REDScFAlNklbXaPRqTm2mwT2F7dIo8xoYYFPfspsjGH_G3RagwlKVlQbdw95bY",
     "url": "https://www.youtube.com/watch?v=ALV91mHOlMY"
+  },
+  {
+    "name": "飛渡ココ",
+    "youtubeid": "UCMElh_FlHyzp_obVe-b3Qrg",
+    "title": "300万ブロックを掘る雑談",
+    "date": "2025-11-11T08:00:00.000+09:00",
+    "status": "upcoming",
+    "thumbnail": "https://i.ytimg.com/vi/0vGlc4mjWe4/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/8I1SuqBXvb4dRY9bcXYc8xxSxL-L2CAe4YvBx2x3kOkyboXRq-G0rVo7pYflUmvo0UKIyxnlRA",
+    "url": "https://www.youtube.com/watch?v=0vGlc4mjWe4"
   }
 ]

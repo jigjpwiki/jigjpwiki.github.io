@@ -1,23 +1,5 @@
 [
   {
-    "name": "真昼ねる",
-    "twitchid": "mahiruneru",
-    "title": "【参加◎】初めてのARC Raiders🔰 指示おぢ募❕【ぷろのゔぁ￤VTuber￤真昼ねる】",
-    "date": "2025-11-05T22:28:21.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://yt3.googleusercontent.com/Cu6AMAZAEC_DTANKoaloA_4iLCuEUQ8BiAwyHGuOUG9GtoIw6s7mXCv1-49LV1IgODYZfGowzQ",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/7cc75dccf15e705dad37_mahiruneru_315042302449_1762349295//thumb/thumb0-320x180.jpg"
-  },
-  {
-    "name": "火乃晴るい",
-    "twitchid": "hinoha_rui",
-    "title": "【 #ArcRaiders 】この世界で…生きていきたい…ちにたくない…！",
-    "date": "2025-11-05T22:28:22.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://yt3.googleusercontent.com/8vDFqOVNprKqFE0o7EecXyQleBXIibeJZpXpSgjm5msh4Yd0S8hTsbmYZyOBXa3bUEgBJHZt1w",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/1ca7a69fb48797e8e04b_hinoha_rui_315051976690_1762349296//thumb/thumb0-320x180.jpg"
-  },
-  {
     "name": "妖小琳",
     "twitchid": "yaosyaorin",
     "title": "明日がちょっとマシになるように",
@@ -200,9 +182,10 @@
     "name": "銘兎目あう",
     "twitchid": "Metome_Au",
     "title": "【スト６】MR1518～Mケン🥋",
-    "date": "2025-11-08T19:32:20.000+09:00",
-    "status": "live",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_Metome_Au-320x180.jpg"
+    "date": "2025-11-08T19:32:26.000+09:00",
+    "status": "archive",
+    "channelIcon": "https://yt3.googleusercontent.com/VB97J8AMHex_rkfd6hDhfiGhhVvrL-NNkseP2mMYSWh75sxA_oXctmxK5tV4FYgkM17RUAx6GQ",
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/d3347cb104c5cf4d1f67_metome_au_315109500787_1762597940//thumb/thumb0-320x180.jpg"
   },
   {
     "name": "真昼ねる",
@@ -216,9 +199,10 @@
     "name": "妖小琳",
     "twitchid": "yaosyaorin",
     "title": "5000人記念配信",
-    "date": "2025-11-08T21:12:57.000+09:00",
-    "status": "live",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_yaosyaorin-320x180.jpg"
+    "date": "2025-11-08T21:13:02.000+09:00",
+    "status": "archive",
+    "channelIcon": "https://yt3.googleusercontent.com/Ji8DJgyzWKUbbeWlYgFfsCZtyiGZ-zM597otZBcFnIoEVIw7284GbNbBQcALgEKwqvk8OXNZLA",
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d1m7jfoe9zdc1j/834b1651b8bf49737a16_yaosyaorin_315933319770_1762603977//thumb/thumb0-320x180.jpg"
   },
   {
     "name": "しーはむ",
@@ -235,5 +219,13 @@
     "date": "2025-11-08T22:06:08.000+09:00",
     "status": "live",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lee_jupita-320x180.jpg"
+  },
+  {
+    "name": "銘兎目あう",
+    "twitchid": "Metome_Au",
+    "title": "【スト６】2先カスタム参加型🥊✨",
+    "date": "2025-11-08T22:38:29.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_Metome_Au-320x180.jpg"
   }
 ]

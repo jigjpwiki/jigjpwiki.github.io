@@ -1,15 +1,5 @@
 [
   {
-    "name": "飛渡ココ",
-    "youtubeid": "UCMElh_FlHyzp_obVe-b3Qrg",
-    "title": "300万ブロック掘る配信",
-    "date": "2025-11-07T15:21:13.000+09:00",
-    "status": "live",
-    "thumbnail": "https://i.ytimg.com/vi/WbbGxntn2jw/mqdefault_live.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/8I1SuqBXvb4dRY9bcXYc8xxSxL-L2CAe4YvBx2x3kOkyboXRq-G0rVo7pYflUmvo0UKIyxnlRA",
-    "url": "https://www.youtube.com/watch?v=WbbGxntn2jw"
-  },
-  {
     "name": "李じゅぴ汰",
     "youtubeid": "UCHsAAyHJhPXuLS6N3Kig6PQ",
     "title": "【スト6】とんでもなく久しぶりのスト6  Mキンバリー【ストリートファイター6】",
@@ -1360,6 +1350,26 @@
     "url": "https://www.youtube.com/watch?v=1MlZAKJbW7g"
   },
   {
+    "name": "秋桜しゅお",
+    "youtubeid": "UCPjtwOeRQV5EFkCwUycZsgw",
+    "title": "【#歌枠配信  】#初見歓迎 🧡大忙しからちょっと抜け出した女のおうた🧡【秋桜しゅお/登龍門BOX】#karaoke  #vtuber #vsinger",
+    "date": "2025-11-10T12:01:44.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/DnMy_ZQUCy0/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/WBGP05KaXeA21IzCbCeM0QHa0v9maVvVUBDZ2DyfTT62F1wGaW3hLOQBy1gCfuQfEnDNgwbsrQ",
+    "url": "https://www.youtube.com/watch?v=DnMy_ZQUCy0"
+  },
+  {
+    "name": "堂下さとり",
+    "youtubeid": "UCBq6MSUL-Ermvnoj3PtX7Iw",
+    "title": "いろいろおためし",
+    "date": "2025-11-10T12:18:16.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/XIZrRvClqUI/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/eW_Hug0M6zFk9QSbAmOUWLMSfzBlCHmes-8yAksvfUNzyLgY6TSsE_eW8ncfE4bHYZXKoTWxmQ",
+    "url": "https://www.youtube.com/watch?v=XIZrRvClqUI"
+  },
+  {
     "name": "肇明日空",
     "youtubeid": "UCj6HYkokrIErMfhKAUAvYcA",
     "title": "クゥ寮クトゥルフ＃1〜破壊神ほわり〜",
@@ -1388,6 +1398,16 @@
     "thumbnail": "https://i.ytimg.com/vi/0vGlc4mjWe4/mqdefault_live.jpg",
     "channelIcon": "https://yt3.googleusercontent.com/8I1SuqBXvb4dRY9bcXYc8xxSxL-L2CAe4YvBx2x3kOkyboXRq-G0rVo7pYflUmvo0UKIyxnlRA",
     "url": "https://www.youtube.com/watch?v=0vGlc4mjWe4"
+  },
+  {
+    "name": "宇田わん",
+    "youtubeid": "UCp45rWiRwgYZJUR4bQO-Xgw",
+    "title": "11/11(Tue)19:00~ プレミア公開",
+    "date": "2025-11-11T19:30:00.000+09:00",
+    "status": "upcoming",
+    "thumbnail": "https://i.ytimg.com/vi/UQZwHxKFXBg/mqdefault.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/bcgws2A-h2HRTCoWgcipC2sgJw_9y0O_5jBi_0QEW4DhAqyPZg4_xLkZw3JJBFZ2DzsYNiGx",
+    "url": "https://www.youtube.com/watch?v=UQZwHxKFXBg"
   },
   {
     "name": "桜樹美彩",

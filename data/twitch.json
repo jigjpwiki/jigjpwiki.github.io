@@ -1,23 +1,5 @@
 [
   {
-    "name": "しーはむ",
-    "twitchid": "siyham",
-    "title": "メイジ専のチルLOL",
-    "date": "2025-11-08T21:40:53.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://yt3.googleusercontent.com/y0zP0Uz7HSLx5dv3xo488Suxk8rJQQUC1wXaymjUBIQIwa25WlVu_VmrsT1xAyVD-jgeL7hs",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/0ec4acfa8208dd035926_siyham_315110167283_1762605647//thumb/thumb0-320x180.jpg"
-  },
-  {
-    "name": "李じゅぴ汰",
-    "twitchid": "lee_jupita",
-    "title": "【スト6】未熟者ですがよろです立ち中振りたい  Mキンバリー【ストリートファイター6】",
-    "date": "2025-11-08T22:06:15.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://yt3.googleusercontent.com/QQqec9A1J7eLk9RrRYD9vvk51BBJzcE1leGkU9n4YkwHqht9gmGT1ktmSlKItQtbuMSGuklAFxM",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/e112d02dd098be5f67f0_lee_jupita_315055457649_1762607168//thumb/thumb0-320x180.jpg"
-  },
-  {
     "name": "銘兎目あう",
     "twitchid": "Metome_Au",
     "title": "【スト６】2先カスタム参加型🥊✨",
@@ -173,7 +155,7 @@
   {
     "name": "銘兎目あう",
     "twitchid": "Metome_Au",
-    "title": "【スト６】SFL同時視聴しよっ！",
+    "title": "【スト６】MR1505～Mケンいきますっっっっ🥊🥋",
     "date": "2025-11-11T16:51:12.000+09:00",
     "status": "live",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_Metome_Au-320x180.jpg"
@@ -191,9 +173,10 @@
     "name": "駿河ルガ",
     "twitchid": "suruga_luga",
     "title": "【スト6】赤のサガット【登龍門BOX/駿河ルガ】",
-    "date": "2025-11-11T18:01:19.000+09:00",
-    "status": "live",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_suruga_luga-320x180.jpg"
+    "date": "2025-11-11T18:01:29.000+09:00",
+    "status": "archive",
+    "channelIcon": "https://yt3.googleusercontent.com/JlY4XEMg9noNa4ShOtky0OwYbKXjnhnje6NQUcwrnJ0UI3C9VQrB-fBNat9QJSUJuuT_Yo1P",
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/2cbbcdeecb1ec9b54646_suruga_luga_315067817457_1762851679//thumb/thumb0-320x180.jpg"
   },
   {
     "name": "水透ユウ",
@@ -218,5 +201,13 @@
     "date": "2025-11-11T21:06:37.000+09:00",
     "status": "live",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lee_jupita-320x180.jpg"
+  },
+  {
+    "name": "しーはむ",
+    "twitchid": "siyham",
+    "title": "mid bot メイジ しっとり夜ランク",
+    "date": "2025-11-11T21:54:11.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_siyham-320x180.jpg"
   }
 ]

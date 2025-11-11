@@ -1,14 +1,5 @@
 [
   {
-    "name": "駿河ルガ",
-    "twitchid": "suruga_luga",
-    "title": "【スト6】西のサガット【登龍門BOX/駿河ルガ】",
-    "date": "2025-11-08T18:01:31.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://yt3.googleusercontent.com/JlY4XEMg9noNa4ShOtky0OwYbKXjnhnje6NQUcwrnJ0UI3C9VQrB-fBNat9QJSUJuuT_Yo1P",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/aa8ab6cea0dd10d61d80_suruga_luga_315054330993_1762592481//thumb/thumb0-320x180.jpg"
-  },
-  {
     "name": "銘兎目あう",
     "twitchid": "Metome_Au",
     "title": "【スト６】MR1518～Mケン🥋",
@@ -201,9 +192,10 @@
     "name": "しーはむ",
     "twitchid": "siyham",
     "title": "mid bot マッチョになる夢を見ました。",
-    "date": "2025-11-11T15:04:48.000+09:00",
-    "status": "live",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_siyham-320x180.jpg"
+    "date": "2025-11-11T15:04:54.000+09:00",
+    "status": "archive",
+    "channelIcon": "https://yt3.googleusercontent.com/y0zP0Uz7HSLx5dv3xo488Suxk8rJQQUC1wXaymjUBIQIwa25WlVu_VmrsT1xAyVD-jgeL7hs",
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/4a397a5c92855f8688c8_siyham_315122172275_1762841088//thumb/thumb0-320x180.jpg"
   },
   {
     "name": "銘兎目あう",
@@ -212,5 +204,13 @@
     "date": "2025-11-11T16:51:12.000+09:00",
     "status": "live",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_Metome_Au-320x180.jpg"
+  },
+  {
+    "name": "駿河ルガ",
+    "twitchid": "suruga_luga",
+    "title": "【スト6】赤のサガット【登龍門BOX/駿河ルガ】",
+    "date": "2025-11-11T18:01:19.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_suruga_luga-320x180.jpg"
   }
 ]

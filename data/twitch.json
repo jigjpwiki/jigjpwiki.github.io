@@ -1,14 +1,5 @@
 [
   {
-    "name": "李じゅぴ汰",
-    "twitchid": "lee_jupita",
-    "title": "【スト6】スト6→疲れたらフォールガイズ！  Mキンバリー【ストリートファイター6】",
-    "date": "2025-11-11T21:06:44.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://yt3.googleusercontent.com/QQqec9A1J7eLk9RrRYD9vvk51BBJzcE1leGkU9n4YkwHqht9gmGT1ktmSlKItQtbuMSGuklAFxM",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/483d2c19993f46e45934_lee_jupita_315078365298_1762862797//thumb/thumb0-320x180.jpg"
-  },
-  {
     "name": "しーはむ",
     "twitchid": "siyham",
     "title": "mid bot メイジ しっとり夜ランク",
@@ -156,9 +147,10 @@
     "name": "駿河ルガ",
     "twitchid": "suruga_luga",
     "title": "【スト6】冬のサガット【登龍門BOX/駿河ルガ】",
-    "date": "2025-11-14T18:00:14.000+09:00",
-    "status": "live",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_suruga_luga-320x180.jpg"
+    "date": "2025-11-14T18:00:24.000+09:00",
+    "status": "archive",
+    "channelIcon": "https://yt3.googleusercontent.com/JlY4XEMg9noNa4ShOtky0OwYbKXjnhnje6NQUcwrnJ0UI3C9VQrB-fBNat9QJSUJuuT_Yo1P",
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/86d077b486310dd5f410_suruga_luga_315136524915_1763110814//thumb/thumb0-320x180.jpg"
   },
   {
     "name": "銘兎目あう",
@@ -175,5 +167,37 @@
     "date": "2025-11-14T20:43:29.000+09:00",
     "status": "live",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_magarimeg-320x180.jpg"
+  },
+  {
+    "name": "火乃晴るい",
+    "twitchid": "hinoha_rui",
+    "title": "【 #MIMESIS 】初見🔰！初めてやるぞ！コラボだだだだ！",
+    "date": "2025-11-14T21:03:43.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_hinoha_rui-320x180.jpg"
+  },
+  {
+    "name": "しーはむ",
+    "twitchid": "siyham",
+    "title": "ぷろのゔぁメンバーとコラボ!W/るいちゃん なかもっちゃん ぴたちゃん",
+    "date": "2025-11-14T21:03:44.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_siyham-320x180.jpg"
+  },
+  {
+    "name": "なかもとおまち",
+    "twitchid": "41futon",
+    "title": "【 MIMESIS 】AIに騙されるな！サバイバルゲーム＠るいるい、じゅぴーた、はむはむ、なかもと",
+    "date": "2025-11-14T21:04:20.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_41futon-320x180.jpg"
+  },
+  {
+    "name": "李じゅぴ汰",
+    "twitchid": "lee_jupita",
+    "title": "【MIMESIS】AIが誰かのフリをしてるらしいよ！メンバーコラボ！【ミメシス】ぷろのゔぁ",
+    "date": "2025-11-14T21:04:32.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lee_jupita-320x180.jpg"
   }
 ]

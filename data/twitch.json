@@ -1,14 +1,5 @@
 [
   {
-    "name": "妖小琳",
-    "twitchid": "yaosyaorin",
-    "title": "明日マシ",
-    "date": "2025-11-12T23:01:45.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://yt3.googleusercontent.com/Ji8DJgyzWKUbbeWlYgFfsCZtyiGZ-zM597otZBcFnIoEVIw7284GbNbBQcALgEKwqvk8OXNZLA",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d1m7jfoe9zdc1j/44ddf5b039a5f4a892bb_yaosyaorin_316007510618_1762956098//thumb/thumb0-320x180.jpg"
-  },
-  {
     "name": "李じゅぴ汰",
     "twitchid": "lee_jupita",
     "title": "【ライフイズストレンジ】時間を戻せる名作ゲームをやるよ！【Life is Strange Remastered】※ネタバレあり",
@@ -90,15 +81,6 @@
     "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/ba2b4a081abcf179dc10_metome_au_315081100913_1763112456//thumb/thumb0-320x180.jpg"
   },
   {
-    "name": "魔狩メグ",
-    "twitchid": "magarimeg",
-    "title": "【#如月鯖V #RUST】1DAY ボイス博物館~建設編~ ファームなどしながら雑談",
-    "date": "2025-11-14T20:43:35.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://yt3.googleusercontent.com/F9pOM4qdqqRlcR-l2Ip7QpokNxCCXxTUMv_kRanXgAOmfHKff5mX9880XqYYEaNFx-kEYpjQ",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/f6e4087cf413dc7f54f4_magarimeg_315137171187_1763120609//thumb/thumb0-320x180.jpg"
-  },
-  {
     "name": "火乃晴るい",
     "twitchid": "hinoha_rui",
     "title": "【 #MIMESIS 】初見🔰！初めてやるぞ！コラボだだだだ！",
@@ -162,15 +144,6 @@
     "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d1m7jfoe9zdc1j/3fb9f8d4781b0915bcd1_yaosyaorin_316006914905_1763179243//thumb/thumb0-320x180.jpg"
   },
   {
-    "name": "魔狩メグ",
-    "twitchid": "magarimeg",
-    "title": "【#如月鯖V #RUST】1DAY ボイス博物館~建設編~ ファームなどしながら雑談",
-    "date": "2025-11-15T13:51:30.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://yt3.googleusercontent.com/F9pOM4qdqqRlcR-l2Ip7QpokNxCCXxTUMv_kRanXgAOmfHKff5mX9880XqYYEaNFx-kEYpjQ",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/459ab2c67a37d1ea334c_magarimeg_315094646770_1763182284//thumb/thumb0-320x180.jpg"
-  },
-  {
     "name": "なかもとおまち",
     "twitchid": "41futon",
     "title": "【ELDEN RING】#6 おまち王、についてこい！※ビッツ禁止",
@@ -207,10 +180,19 @@
   {
     "name": "銘兎目あう",
     "twitchid": "Metome_Au",
-    "title": "【スト６】カスタム参加型1人1先やろ～🥋🎶",
+    "title": "【スト６】ランクちょろっと🥋Mケン！",
     "date": "2025-11-15T20:52:58.000+09:00",
     "status": "live",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_Metome_Au-320x180.jpg"
+  },
+  {
+    "name": "銘兎目あう",
+    "twitchid": "Metome_Au",
+    "title": "【スト６】カスタム参加型1人1先やろ～🥋🎶",
+    "date": "2025-11-15T20:53:04.000+09:00",
+    "status": "archive",
+    "channelIcon": "https://yt3.googleusercontent.com/VB97J8AMHex_rkfd6hDhfiGhhVvrL-NNkseP2mMYSWh75sxA_oXctmxK5tV4FYgkM17RUAx6GQ",
+    "thumbnail": "https://vod-secure.twitch.tv/_404/404_processing_320x180.png"
   },
   {
     "name": "李じゅぴ汰",

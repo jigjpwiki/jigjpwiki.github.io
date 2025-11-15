@@ -164,19 +164,11 @@
   {
     "name": "魔狩メグ",
     "twitchid": "magarimeg",
-    "title": "【#如月鯖V #RUST】2DAY ボイス博物館~建設編~ ファームなどしながら雑談",
-    "date": "2025-11-15T13:51:24.000+09:00",
-    "status": "live",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_magarimeg-320x180.jpg"
-  },
-  {
-    "name": "魔狩メグ",
-    "twitchid": "magarimeg",
     "title": "【#如月鯖V #RUST】1DAY ボイス博物館~建設編~ ファームなどしながら雑談",
     "date": "2025-11-15T13:51:30.000+09:00",
     "status": "archive",
     "channelIcon": "https://yt3.googleusercontent.com/F9pOM4qdqqRlcR-l2Ip7QpokNxCCXxTUMv_kRanXgAOmfHKff5mX9880XqYYEaNFx-kEYpjQ",
-    "thumbnail": "https://vod-secure.twitch.tv/_404/404_processing_320x180.png"
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/459ab2c67a37d1ea334c_magarimeg_315094646770_1763182284//thumb/thumb0-320x180.jpg"
   },
   {
     "name": "なかもとおまち",
@@ -219,5 +211,13 @@
     "date": "2025-11-15T20:52:58.000+09:00",
     "status": "live",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_Metome_Au-320x180.jpg"
+  },
+  {
+    "name": "李じゅぴ汰",
+    "twitchid": "lee_jupita",
+    "title": "【ライフイズストレンジ】時間を戻す！クロエと幸せになりたい！4章～【Life is Strange Remastered】※ネタバレあり",
+    "date": "2025-11-15T22:38:44.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lee_jupita-320x180.jpg"
   }
 ]

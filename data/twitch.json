@@ -172,19 +172,11 @@
   {
     "name": "銘兎目あう",
     "twitchid": "Metome_Au",
-    "title": "【スト６】1506MR～Mケン⭐",
-    "date": "2025-11-16T18:48:36.000+09:00",
-    "status": "live",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_Metome_Au-320x180.jpg"
-  },
-  {
-    "name": "銘兎目あう",
-    "twitchid": "Metome_Au",
     "title": "【スト６】チーム戦カスタム参加型でみんなで遊ぼう♪その後ランク1506MR～Mケン⭐",
     "date": "2025-11-16T18:48:42.000+09:00",
     "status": "archive",
     "channelIcon": "https://yt3.googleusercontent.com/VB97J8AMHex_rkfd6hDhfiGhhVvrL-NNkseP2mMYSWh75sxA_oXctmxK5tV4FYgkM17RUAx6GQ",
-    "thumbnail": "https://vod-secure.twitch.tv/_404/404_processing_320x180.png"
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/be14f0d80a42b835d7f8_metome_au_315090489073_1763286516//thumb/thumb0-320x180.jpg"
   },
   {
     "name": "水透ユウ",
@@ -216,8 +208,17 @@
     "name": "妖小琳",
     "twitchid": "yaosyaorin",
     "title": "雑談ASMR",
-    "date": "2025-11-16T23:00:19.000+09:00",
+    "date": "2025-11-16T23:00:24.000+09:00",
+    "status": "archive",
+    "channelIcon": "https://yt3.googleusercontent.com/Ji8DJgyzWKUbbeWlYgFfsCZtyiGZ-zM597otZBcFnIoEVIw7284GbNbBQcALgEKwqvk8OXNZLA",
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d1m7jfoe9zdc1j/c8b8e5d3bfe68b9f3a14_yaosyaorin_316131589339_1763301619//thumb/thumb0-320x180.jpg"
+  },
+  {
+    "name": "真昼ねる",
+    "twitchid": "mahiruneru",
+    "title": "【R6S】ゆるらんく！真昼ねるは勝つと言いなさい【ぷろのゔぁ￤VTuber￤真昼ねる】",
+    "date": "2025-11-17T00:01:14.000+09:00",
     "status": "live",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_yaosyaorin-320x180.jpg"
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_mahiruneru-320x180.jpg"
   }
 ]

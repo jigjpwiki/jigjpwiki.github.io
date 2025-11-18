@@ -199,9 +199,10 @@
     "name": "しーはむ",
     "twitchid": "siyham",
     "title": "E1 今日も40LPくらい盛りたい",
-    "date": "2025-11-18T15:09:51.000+09:00",
-    "status": "live",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_siyham-320x180.jpg"
+    "date": "2025-11-18T15:09:57.000+09:00",
+    "status": "archive",
+    "channelIcon": "https://yt3.googleusercontent.com/y0zP0Uz7HSLx5dv3xo488Suxk8rJQQUC1wXaymjUBIQIwa25WlVu_VmrsT1xAyVD-jgeL7hs",
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/a64f673901ad69e5e2b8_siyham_315107773426_1763446191//thumb/thumb0-320x180.jpg"
   },
   {
     "name": "真昼ねる",
@@ -218,5 +219,21 @@
     "date": "2025-11-18T17:55:02.000+09:00",
     "status": "live",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lee_jupita-320x180.jpg"
+  },
+  {
+    "name": "駿河ルガ",
+    "twitchid": "suruga_luga",
+    "title": "【スト6】漬のサガット【登龍門BOX/駿河ルガ】",
+    "date": "2025-11-18T18:00:06.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_suruga_luga-320x180.jpg"
+  },
+  {
+    "name": "銘兎目あう",
+    "twitchid": "Metome_Au",
+    "title": "【スト６】SFL同時視聴しよ～🥊DivisionF第9節✨→ランク1563MR⭐初ハイマスターなれるかな!?チャレンジ👊!!",
+    "date": "2025-11-18T18:18:15.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_Metome_Au-320x180.jpg"
   }
 ]

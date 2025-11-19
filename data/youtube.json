@@ -1,25 +1,5 @@
 [
   {
-    "name": "新巻るろな",
-    "youtubeid": "UCUd4wJjvPQflbLnsk_YHleA",
-    "title": "※R-15【実況】氷点下30度の絶望【新巻るろな／#パレデミア学園】#vtuber",
-    "date": "2025-11-16T22:24:17.000+09:00",
-    "status": "live",
-    "thumbnail": "https://i.ytimg.com/vi/Eona50OTyNk/mqdefault_live.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/-4sLuWCih-DlfhpwpDQEuB6eupCB6kTImkIPmKnh54vu5I0F49RkveNQGiqy0p8t0GDU6eiegGE",
-    "url": "https://www.youtube.com/watch?v=Eona50OTyNk"
-  },
-  {
-    "name": "瀬奈りるか",
-    "youtubeid": "UCWi_ztz8Xuz4XfzhoG6ZfyA",
-    "title": "【雑談】日曜夜はスケジュール決め雑談🌟ある程度決まってるのでみんなと最終調整！しながら雑談🌟🐏🌙【＃パレデミア学園】＃せなりるライブ #新人vtuber",
-    "date": "2025-11-16T22:29:56.000+09:00",
-    "status": "live",
-    "thumbnail": "https://i.ytimg.com/vi/JfyhwJ04X68/mqdefault_live.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/bM-okYT9oTq3M5dq33VSpidEiaC8MP2EoQXX2gNpgW7PAV7RSn1t7_2HghmCcAwrNxriAmMy",
-    "url": "https://www.youtube.com/watch?v=JfyhwJ04X68"
-  },
-  {
     "name": "李じゅぴ汰",
     "youtubeid": "UCHsAAyHJhPXuLS6N3Kig6PQ",
     "title": "【ライフイズストレンジ】前日譚もサクッとやる！！①【Life is Strange: Before the Storm】※ネタバレあり",
@@ -1070,6 +1050,16 @@
     "url": "https://www.youtube.com/watch?v=FORLPbfkScw"
   },
   {
+    "name": "春原なずな",
+    "youtubeid": "UCW-iuU7g3BJnuQ1D3UkqeSA",
+    "title": "【#空の軌跡the1st  】にんじんvs魔獣【 春原なずな / Vtuber 】 #ゲーム実況 #vtuber",
+    "date": "2025-11-19T18:00:33.000+09:00",
+    "status": "archive",
+    "thumbnail": "https://i.ytimg.com/vi/FYaVDMkvglE/mqdefault.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/0pD1c95Y9X0VrhzWtlf2SRPqdkesiuZxC8Hb5Mg9Xv1WWpQaFCmjITTK8-n5HlNsB-yDbAN4CZA",
+    "url": "https://www.youtube.com/watch?v=FYaVDMkvglE"
+  },
+  {
     "name": "しーはむ",
     "youtubeid": "UC5xSDiB2WG4pO_zUZ_t-n0Q",
     "title": "【LoL】ヴェックスはやっぱベルトか…【 League of Legends / リーグオブレジェンド 】",
@@ -1120,6 +1110,46 @@
     "url": "https://www.youtube.com/watch?v=bM3HfONfCwg"
   },
   {
+    "name": "宇田わん",
+    "youtubeid": "UCp45rWiRwgYZJUR4bQO-Xgw",
+    "title": "アキバハラ？#新人vtuber",
+    "date": "2025-11-19T19:45:50.000+09:00",
+    "status": "archive",
+    "thumbnail": "https://i.ytimg.com/vi/c-SOcPSi8vE/mqdefault.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/bcgws2A-h2HRTCoWgcipC2sgJw_9y0O_5jBi_0QEW4DhAqyPZg4_xLkZw3JJBFZ2DzsYNiGx",
+    "url": "https://www.youtube.com/watch?v=c-SOcPSi8vE"
+  },
+  {
+    "name": "銘兎目あう",
+    "youtubeid": "UCpr-9ssUUgSb0EpDA8bRuTA",
+    "title": "【スト６】1564MR～⭐初ハイマスターなれるかな!?チャレンジ👊#2 現在最高1580MR🏆 #スト6 #SF6 #ストリートファイター6 #VTuber  #SFL",
+    "date": "2025-11-19T19:50:58.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/6Z3_bTJ05qE/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/VB97J8AMHex_rkfd6hDhfiGhhVvrL-NNkseP2mMYSWh75sxA_oXctmxK5tV4FYgkM17RUAx6GQ",
+    "url": "https://www.youtube.com/watch?v=6Z3_bTJ05qE"
+  },
+  {
+    "name": "堂下さとり",
+    "youtubeid": "UCBq6MSUL-Ermvnoj3PtX7Iw",
+    "title": "Lady Borden アイス食べ比べ 【独断偏見】",
+    "date": "2025-11-19T20:16:17.000+09:00",
+    "status": "archive",
+    "thumbnail": "https://i.ytimg.com/vi/F2OiEAzhVyk/mqdefault.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/eW_Hug0M6zFk9QSbAmOUWLMSfzBlCHmes-8yAksvfUNzyLgY6TSsE_eW8ncfE4bHYZXKoTWxmQ",
+    "url": "https://www.youtube.com/watch?v=F2OiEAzhVyk"
+  },
+  {
+    "name": "宇田わん",
+    "youtubeid": "UCp45rWiRwgYZJUR4bQO-Xgw",
+    "title": "【 歌枠？雑談？ 】目をつぶりながらでもみんなと会話できます【 #宇田わん #新人VTuber / #登龍門BOX 】",
+    "date": "2025-11-19T20:31:17.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/d6jJSNF06iU/mqdefault.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/bcgws2A-h2HRTCoWgcipC2sgJw_9y0O_5jBi_0QEW4DhAqyPZg4_xLkZw3JJBFZ2DzsYNiGx",
+    "url": "https://www.youtube.com/watch?v=d6jJSNF06iU"
+  },
+  {
     "name": "橋門エル",
     "youtubeid": "UCcNo3POf2DiRs1TPIsEvNgA",
     "title": "お前らの【デブあるある】俺に教えろ！",
@@ -1138,6 +1168,56 @@
     "thumbnail": "https://i.ytimg.com/vi/XsaJ4u77028/mqdefault_live.jpg",
     "channelIcon": "https://yt3.googleusercontent.com/OQpHijB1HDVezkvjNufbM9PmR9kbhUe1mfnSRqJ67l-R34sAc4BhYmQ2U7C-SapKAtcOk_Bp",
     "url": "https://www.youtube.com/watch?v=XsaJ4u77028"
+  },
+  {
+    "name": "橋門エル",
+    "youtubeid": "UCcNo3POf2DiRs1TPIsEvNgA",
+    "title": "【切り抜き】金持ってる物乞いの見分け方",
+    "date": "2025-11-19T21:05:32.000+09:00",
+    "status": "archive",
+    "thumbnail": "https://i.ytimg.com/vi/UdHstqps0pU/mqdefault.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/fyNf7EKChxLeUcCXrveXXaSOc-P-5t2NjD32mXWpBDFUhnC0HVKP9lPG0P6GgxFMdMoX29tg",
+    "url": "https://www.youtube.com/watch?v=UdHstqps0pU"
+  },
+  {
+    "name": "灯野ぺけ。",
+    "youtubeid": "UCldoz5HLh6BMW29HGnRpC0Q",
+    "title": "【 龍が如く極 】＃７　おやっさん待ってろよぉぉぉぉぉ！！※ネタバレあり",
+    "date": "2025-11-19T21:39:02.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/ahzgdejMgxE/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/fkb3ZihjrgGSVr5drGCJziRf-9EQ6AtqTswp3wNfS4xRMnVZKQ3WvcphIna7hTwOZpy5vq9UKg",
+    "url": "https://www.youtube.com/watch?v=ahzgdejMgxE"
+  },
+  {
+    "name": "風野かなめ",
+    "youtubeid": "UC2AO1ZIgtAVIh6_mx2SqmMQ",
+    "title": "【FF4】やるぞ～～！【パレデミア学園】",
+    "date": "2025-11-19T21:59:46.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/CepQymfkm0A/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/gtjdyYJUUd1ESZ7-6meuTshluv9Susg7NeB54uoFxPpLrof9Fttx2K7Ck5B6DsbNxb_pNm-z",
+    "url": "https://www.youtube.com/watch?v=CepQymfkm0A"
+  },
+  {
+    "name": "桜樹美彩",
+    "youtubeid": "UCTwKpTFX1aAXD0xpBqYqTdg",
+    "title": "平成のVTuberがショックを受けたコメント #shorts #vtuber #桜樹美彩 #新人vtuber",
+    "date": "2025-11-19T22:01:12.000+09:00",
+    "status": "archive",
+    "thumbnail": "https://i.ytimg.com/vi/XZPrNqz9lk4/mqdefault.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/pDP2GuylW0RN1REDScFAlNklbXaPRqTm2mwT2F7dIo8xoYYFPfspsjGH_G3RagwlKVlQbdw95bY",
+    "url": "https://www.youtube.com/watch?v=XZPrNqz9lk4"
+  },
+  {
+    "name": "雛菊のん",
+    "youtubeid": "UChccV6U0Tkx9de4YjXbEelw",
+    "title": "限界オタクのあいうえお#shorts #vtuber #新人vtuber #おしゃべり #おすすめにのりたい #ばずれ",
+    "date": "2025-11-19T22:01:28.000+09:00",
+    "status": "archive",
+    "thumbnail": "https://i.ytimg.com/vi/ikdxg3bGDmQ/mqdefault.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/OxvUqyZAoX4gIX91GOkYMIE2iYfD1ndRKGZbo4Ih8cDb5QuoXpqNJWZKpephYlI0zNiYjQptAQ",
+    "url": "https://www.youtube.com/watch?v=ikdxg3bGDmQ"
   },
   {
     "name": "瀬奈りるか",
@@ -1170,6 +1250,16 @@
     "url": "https://www.youtube.com/watch?v=hS85prglhYs"
   },
   {
+    "name": "妖小琳",
+    "youtubeid": "UC6eopxuX7lx8GnpkntObt1w",
+    "title": "【 biohazard HD REMASTER 】初見で洋館に放り込まれた結果【妖小琳】",
+    "date": "2025-11-20T21:00:00.000+09:00",
+    "status": "upcoming",
+    "thumbnail": "https://i.ytimg.com/vi/R3BJsquHwz0/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/Ji8DJgyzWKUbbeWlYgFfsCZtyiGZ-zM597otZBcFnIoEVIw7284GbNbBQcALgEKwqvk8OXNZLA",
+    "url": "https://www.youtube.com/watch?v=R3BJsquHwz0"
+  },
+  {
     "name": "春原なずな",
     "youtubeid": "UCW-iuU7g3BJnuQ1D3UkqeSA",
     "title": "【 空の軌跡 the 1st 】#5 完全初見！王立学園の学園祭！※ネタバレ注意【 春原なずな / VTuber 】",
@@ -1188,6 +1278,16 @@
     "thumbnail": "https://i.ytimg.com/vi/LUOJQda142A/mqdefault_live.jpg",
     "channelIcon": "https://yt3.googleusercontent.com/pDP2GuylW0RN1REDScFAlNklbXaPRqTm2mwT2F7dIo8xoYYFPfspsjGH_G3RagwlKVlQbdw95bY",
     "url": "https://www.youtube.com/watch?v=LUOJQda142A"
+  },
+  {
+    "name": "VTuber登龍門",
+    "youtubeid": "UC4BwtvtE6flwK-EnmB5c9uQ",
+    "title": "【デビュー1周年直前】秋桜しゅおと松本の対談会！",
+    "date": "2025-11-21T19:00:00.000+09:00",
+    "status": "upcoming",
+    "thumbnail": "https://i.ytimg.com/vi/D6lwCT4ckY8/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/fkj-1QWZHwze8fuKIbgiXXJsZ8nXscTHT6zjw06tnH-3yJgcwvoG6CVMcL_eThe26G7q5qu_yw",
+    "url": "https://www.youtube.com/watch?v=D6lwCT4ckY8"
   },
   {
     "name": "鹿鳴りあ",

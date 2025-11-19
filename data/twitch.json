@@ -218,19 +218,11 @@
   {
     "name": "火乃晴るい",
     "twitchid": "hinoha_rui",
-    "title": "【 #EFT 】まったりのんびり",
-    "date": "2025-11-19T17:03:30.000+09:00",
-    "status": "live",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_hinoha_rui-320x180.jpg"
-  },
-  {
-    "name": "火乃晴るい",
-    "twitchid": "hinoha_rui",
     "title": "【 #EFT 】✅Drops✅まったりのんびり",
     "date": "2025-11-19T17:03:36.000+09:00",
     "status": "archive",
     "channelIcon": "https://yt3.googleusercontent.com/8vDFqOVNprKqFE0o7EecXyQleBXIibeJZpXpSgjm5msh4Yd0S8hTsbmYZyOBXa3bUEgBJHZt1w",
-    "thumbnail": "https://vod-secure.twitch.tv/_404/404_processing_320x180.png"
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/1c2398cd4e610b795bf4_hinoha_rui_315112496754_1763539410//thumb/thumb0-320x180.jpg"
   },
   {
     "name": "駿河ルガ",
@@ -247,5 +239,13 @@
     "date": "2025-11-19T19:50:51.000+09:00",
     "status": "live",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_Metome_Au-320x180.jpg"
+  },
+  {
+    "name": "水透ユウ",
+    "twitchid": "minato_yu_",
+    "title": "【 #R6SX 】こすもcup TeamMugi練習カスタム～個性訓練編～【水透ユウ】【 #新人vtuber 】",
+    "date": "2025-11-19T21:01:14.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_minato_yu_-320x180.jpg"
   }
 ]

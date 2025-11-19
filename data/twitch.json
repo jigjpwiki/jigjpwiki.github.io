@@ -1,14 +1,5 @@
 [
   {
-    "name": "なかもとおまち",
-    "twitchid": "41futon",
-    "title": "#9 なかモーニング ねぼうしましたすみませｎ",
-    "date": "2025-11-17T07:52:19.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://yt3.googleusercontent.com/h8jNjVckVf08zSV6wdhQ38Fw9OH7kucAprlJsi9w0YdDIL8_Kcv0tHY-1cK8jPK_jRLSJb3t_Q",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/acf5335a8766fdf01c0d_41futon_315092849137_1763333533//thumb/thumb0-320x180.jpg"
-  },
-  {
     "name": "しーはむ",
     "twitchid": "siyham",
     "title": "ヴェックスOTPたまにジグスでソロランク！",
@@ -227,18 +218,10 @@
   {
     "name": "李じゅぴ汰",
     "twitchid": "lee_jupita",
-    "title": "【雑談】ゆるお絵描き",
-    "date": "2025-11-20T00:17:56.000+09:00",
-    "status": "live",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lee_jupita-320x180.jpg"
-  },
-  {
-    "name": "李じゅぴ汰",
-    "twitchid": "lee_jupita",
     "title": "【雑談】雑談してミサイド",
     "date": "2025-11-20T00:18:03.000+09:00",
     "status": "archive",
     "channelIcon": "https://yt3.googleusercontent.com/QQqec9A1J7eLk9RrRYD9vvk51BBJzcE1leGkU9n4YkwHqht9gmGT1ktmSlKItQtbuMSGuklAFxM",
-    "thumbnail": "https://vod-secure.twitch.tv/_404/404_processing_320x180.png"
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/417395f3ac05efb7e41d_lee_jupita_315114435058_1763565476//thumb/thumb0-320x180.jpg"
   }
 ]

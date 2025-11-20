@@ -201,9 +201,10 @@
     "name": "なかもとおまち",
     "twitchid": "41futon",
     "title": "MR1560～ なぜ笑うんだい？なかやんの無影蹴は上手だよ",
-    "date": "2025-11-20T14:01:56.000+09:00",
-    "status": "live",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_41futon-320x180.jpg"
+    "date": "2025-11-20T14:02:02.000+09:00",
+    "status": "archive",
+    "channelIcon": "https://yt3.googleusercontent.com/h8jNjVckVf08zSV6wdhQ38Fw9OH7kucAprlJsi9w0YdDIL8_Kcv0tHY-1cK8jPK_jRLSJb3t_Q",
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/2537164d931b09b2c644_41futon_315107005553_1763614916//thumb/thumb0-320x180.jpg"
   },
   {
     "name": "しーはむ",
@@ -229,5 +230,13 @@
     "date": "2025-11-20T18:32:07.000+09:00",
     "status": "live",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_minato_yu_-320x180.jpg"
+  },
+  {
+    "name": "銘兎目あう",
+    "twitchid": "Metome_Au",
+    "title": "【スト６】1525MR～🥋11月中、初ハイマスターチャレンジ👊現在最高1583MR🏆",
+    "date": "2025-11-20T19:22:07.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_Metome_Au-320x180.jpg"
   }
 ]

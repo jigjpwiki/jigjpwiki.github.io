@@ -1,41 +1,5 @@
 [
   {
-    "name": "水透ユウ",
-    "twitchid": "minato_yu_",
-    "title": "【 #R6SX 】こすもcup TeamMugi練習カスタム～盾絶不許編～【水透ユウ】【 #新人vtuber 】",
-    "date": "2025-11-18T20:58:17.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://yt3.googleusercontent.com/eVD8Ygm7KVyh3dvWnyebfYlbYpD13ZYQ-Bos8WdR5LDE61A3svHVHCLEY-rM3IQgw9O4uvdd",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/180c354c7abf101ef7f0_minato_yu__315155019507_1763467091//thumb/thumb0-320x180.jpg"
-  },
-  {
-    "name": "妖小琳",
-    "twitchid": "yaosyaorin",
-    "title": "サブクエ",
-    "date": "2025-11-18T21:01:11.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://yt3.googleusercontent.com/Ji8DJgyzWKUbbeWlYgFfsCZtyiGZ-zM597otZBcFnIoEVIw7284GbNbBQcALgEKwqvk8OXNZLA",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d1m7jfoe9zdc1j/edc3aa265ff807aeb023_yaosyaorin_316109856730_1763467266//thumb/thumb0-320x180.jpg"
-  },
-  {
-    "name": "李じゅぴ汰",
-    "twitchid": "lee_jupita",
-    "title": "【ミサイド】かわいいホラー",
-    "date": "2025-11-18T21:06:25.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://yt3.googleusercontent.com/QQqec9A1J7eLk9RrRYD9vvk51BBJzcE1leGkU9n4YkwHqht9gmGT1ktmSlKItQtbuMSGuklAFxM",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/c119dd394dfb2519014d_lee_jupita_315109134450_1763467579//thumb/thumb0-320x180.jpg"
-  },
-  {
-    "name": "李じゅぴ汰",
-    "twitchid": "lee_jupita",
-    "title": "【スト6】Mキンバリー武神流の心得！ダイヤ帯編！コーチング with喜枝コビトさん【ストリートファイター6】",
-    "date": "2025-11-18T21:08:41.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://yt3.googleusercontent.com/QQqec9A1J7eLk9RrRYD9vvk51BBJzcE1leGkU9n4YkwHqht9gmGT1ktmSlKItQtbuMSGuklAFxM",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/83978cd89fb68cb2f50d_lee_jupita_315109145842_1763467715//thumb/thumb0-320x180.jpg"
-  },
-  {
     "name": "桜樹美彩",
     "twitchid": "sakuragimisa_v",
     "title": "【 朝活 / ニュース 】11月18日（火）⏰ AM7:00 『ちょこっと』朝活ニュース🍀天気予報/時事ニュース🍁初見＆ROM勢大歓迎🐥 #vtuber #みさライなう #桜樹美彩 #新人vtuber",
@@ -236,9 +200,10 @@
     "name": "駿河ルガ",
     "twitchid": "suruga_luga",
     "title": "【スト6】拳のサガット【登龍門BOX/駿河ルガ】",
-    "date": "2025-11-21T18:00:10.000+09:00",
-    "status": "live",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_suruga_luga-320x180.jpg"
+    "date": "2025-11-21T18:00:20.000+09:00",
+    "status": "archive",
+    "channelIcon": "https://yt3.googleusercontent.com/JlY4XEMg9noNa4ShOtky0OwYbKXjnhnje6NQUcwrnJ0UI3C9VQrB-fBNat9QJSUJuuT_Yo1P",
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/b00f1c4053658445ac13_suruga_luga_315165095539_1763715610//thumb/thumb0-320x180.jpg"
   },
   {
     "name": "水透ユウ",
@@ -255,5 +220,13 @@
     "date": "2025-11-21T20:10:34.000+09:00",
     "status": "live",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_hinoha_rui-320x180.jpg"
+  },
+  {
+    "name": "なかもとおまち",
+    "twitchid": "41futon",
+    "title": "SFL全力応援会場！！！スマホでも同時試聴できましゅ！",
+    "date": "2025-11-21T21:08:45.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_41futon-320x180.jpg"
   }
 ]

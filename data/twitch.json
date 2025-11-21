@@ -182,19 +182,11 @@
   {
     "name": "銘兎目あう",
     "twitchid": "Metome_Au",
-    "title": "【スト６】1579MR⭐初ハイマスターチャレンジ👊",
-    "date": "2025-11-21T16:03:16.000+09:00",
-    "status": "live",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_Metome_Au-320x180.jpg"
-  },
-  {
-    "name": "銘兎目あう",
-    "twitchid": "Metome_Au",
     "title": "【スト６】まったりトレーニング！18:30~SFL同時視聴しよっ🥊DivisionS第10節✨→ランク1527MR⭐初ハイマスターチャレンジ👊",
     "date": "2025-11-21T16:03:22.000+09:00",
     "status": "archive",
     "channelIcon": "https://yt3.googleusercontent.com/VB97J8AMHex_rkfd6hDhfiGhhVvrL-NNkseP2mMYSWh75sxA_oXctmxK5tV4FYgkM17RUAx6GQ",
-    "thumbnail": "https://vod-secure.twitch.tv/_404/404_processing_320x180.png"
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/46b541178954342154bc_metome_au_315118676466_1763708596//thumb/thumb0-320x180.jpg"
   },
   {
     "name": "駿河ルガ",
@@ -246,5 +238,13 @@
     "status": "archive",
     "channelIcon": "https://yt3.googleusercontent.com/h8jNjVckVf08zSV6wdhQ38Fw9OH7kucAprlJsi9w0YdDIL8_Kcv0tHY-1cK8jPK_jRLSJb3t_Q",
     "thumbnail": "https://vod-secure.twitch.tv/_404/404_processing_320x180.png"
+  },
+  {
+    "name": "李じゅぴ汰",
+    "twitchid": "lee_jupita",
+    "title": "【ライフイズストレンジ】おまけだけやる！② クロエとマックス【Life is Strange: Before the Storm】※ネタバレあり",
+    "date": "2025-11-21T23:48:42.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lee_jupita-320x180.jpg"
   }
 ]

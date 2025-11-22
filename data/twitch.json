@@ -1,14 +1,5 @@
 [
   {
-    "name": "妖小琳",
-    "twitchid": "yaosyaorin",
-    "title": "明日がちょっとマシになるように",
-    "date": "2025-11-19T22:59:52.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://yt3.googleusercontent.com/Ji8DJgyzWKUbbeWlYgFfsCZtyiGZ-zM597otZBcFnIoEVIw7284GbNbBQcALgEKwqvk8OXNZLA",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d1m7jfoe9zdc1j/047adc465af6bce47f53_yaosyaorin_316125589210_1763560787//thumb/thumb0-320x180.jpg"
-  },
-  {
     "name": "李じゅぴ汰",
     "twitchid": "lee_jupita",
     "title": "【雑談】雑談してミサイド",
@@ -228,9 +219,10 @@
     "name": "駿河ルガ",
     "twitchid": "suruga_luga",
     "title": "【スト6】門のサガット【登龍門BOX/駿河ルガ】",
-    "date": "2025-11-22T18:00:13.000+09:00",
-    "status": "live",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_suruga_luga-320x180.jpg"
+    "date": "2025-11-22T18:00:23.000+09:00",
+    "status": "archive",
+    "channelIcon": "https://yt3.googleusercontent.com/JlY4XEMg9noNa4ShOtky0OwYbKXjnhnje6NQUcwrnJ0UI3C9VQrB-fBNat9QJSUJuuT_Yo1P",
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/2ccfb3c69f58cc5db030_suruga_luga_315169864819_1763802013//thumb/thumb0-320x180.jpg"
   },
   {
     "name": "水透ユウ",

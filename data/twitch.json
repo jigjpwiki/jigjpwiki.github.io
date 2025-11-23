@@ -1,14 +1,5 @@
 [
   {
-    "name": "なかもとおまち",
-    "twitchid": "41futon",
-    "title": "悔しい気持ちをここにぶつける。1時間チャレンジ",
-    "date": "2025-11-20T22:17:47.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://yt3.googleusercontent.com/h8jNjVckVf08zSV6wdhQ38Fw9OH7kucAprlJsi9w0YdDIL8_Kcv0tHY-1cK8jPK_jRLSJb3t_Q",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/4ba8033338a8dc1d9f3f_41futon_314702575599_1763644660//thumb/thumb0-320x180.jpg"
-  },
-  {
     "name": "李じゅぴ汰",
     "twitchid": "lee_jupita",
     "title": "【スト6】下スライディングと上ドロン禁止令 Mキンバリー【ストリートファイター6】",
@@ -227,9 +218,10 @@
     "name": "妖小琳",
     "twitchid": "yaosyaorin",
     "title": "どん底",
-    "date": "2025-11-23T20:01:43.000+09:00",
-    "status": "live",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_yaosyaorin-320x180.jpg"
+    "date": "2025-11-23T20:01:48.000+09:00",
+    "status": "archive",
+    "channelIcon": "https://yt3.googleusercontent.com/Ji8DJgyzWKUbbeWlYgFfsCZtyiGZ-zM597otZBcFnIoEVIw7284GbNbBQcALgEKwqvk8OXNZLA",
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d1m7jfoe9zdc1j/1d24492ab7d805ca2a33_yaosyaorin_316261731675_1763895703//thumb/thumb0-320x180.jpg"
   },
   {
     "name": "真昼ねる",
@@ -254,5 +246,14 @@
     "date": "2025-11-23T21:06:21.000+09:00",
     "status": "live",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_suruga_luga-320x180.jpg"
+  },
+  {
+    "name": "妖小琳",
+    "twitchid": "yaosyaorin",
+    "title": "どん底",
+    "date": "2025-11-23T22:10:41.000+09:00",
+    "status": "archive",
+    "channelIcon": "https://yt3.googleusercontent.com/Ji8DJgyzWKUbbeWlYgFfsCZtyiGZ-zM597otZBcFnIoEVIw7284GbNbBQcALgEKwqvk8OXNZLA",
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d1m7jfoe9zdc1j/bc6f018bd0c906337243_yaosyaorin_316142764633_1763903436//thumb/thumb0-320x180.jpg"
   }
 ]

@@ -1,15 +1,5 @@
 [
   {
-    "name": "藤森ちとせ",
-    "youtubeid": "UCAhdxmsdngH4noySdpVAVWQ",
-    "title": "【ゲリラマイクラコラボ】まだまだコンビ名が決まらない二人のマイクラ配信⛏【#新人vtuber 】#ちとせらいぶ #パレデミア学園",
-    "date": "2025-11-20T13:21:17.000+09:00",
-    "status": "live",
-    "thumbnail": "https://i.ytimg.com/vi/BuYTjkjcatg/mqdefault_live.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/traR_yWe-AOGyM2wjo8h2FJO9JWBcbjfrL13X-umeD6BtNPopSZ2Q3YmdJq_5K9gWgHf_j64iQ",
-    "url": "https://www.youtube.com/watch?v=BuYTjkjcatg"
-  },
-  {
     "name": "黒鋼亜華",
     "youtubeid": "UCEJSKIlp0XitVYFjJG7eYBg",
     "title": "【#マインクラフト / #minecraft 】まいくら　with　藤　森 　２【 遊ぶ】#あかはいしん",
@@ -1230,6 +1220,26 @@
     "url": "https://www.youtube.com/watch?v=7GyDiD2WbCo"
   },
   {
+    "name": "七音うら",
+    "youtubeid": "UCv2IYO-4waCpHvn50SWWY2A",
+    "title": "【#昼活】1123昼活。日曜日だけど昼活。【七音うら】",
+    "date": "2025-11-23T12:01:30.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/vfGFpvq7HNg/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/T655ATpSd2gkjZBrokvlkaUH0f5-fCpQdcJpwxmmNdy6fxCYffAlq2sMhPOtFk_CvVyOkEPY8Q",
+    "url": "https://www.youtube.com/watch?v=vfGFpvq7HNg"
+  },
+  {
+    "name": "堂下さとり",
+    "youtubeid": "UCBq6MSUL-Ermvnoj3PtX7Iw",
+    "title": "お昼のぼちごー雑談",
+    "date": "2025-11-23T12:05:59.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/z6txlrqLWxo/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/eW_Hug0M6zFk9QSbAmOUWLMSfzBlCHmes-8yAksvfUNzyLgY6TSsE_eW8ncfE4bHYZXKoTWxmQ",
+    "url": "https://www.youtube.com/watch?v=z6txlrqLWxo"
+  },
+  {
     "name": "妖小琳",
     "youtubeid": "UC6eopxuX7lx8GnpkntObt1w",
     "title": "【 イワクツギ 】この配信、もう引き返せない。 【妖小琳】",
@@ -1238,6 +1248,16 @@
     "thumbnail": "https://i.ytimg.com/vi/CL_-yTQku24/mqdefault_live.jpg",
     "channelIcon": "https://yt3.googleusercontent.com/Ji8DJgyzWKUbbeWlYgFfsCZtyiGZ-zM597otZBcFnIoEVIw7284GbNbBQcALgEKwqvk8OXNZLA",
     "url": "https://www.youtube.com/watch?v=CL_-yTQku24"
+  },
+  {
+    "name": "雨海まる",
+    "youtubeid": "UCLuPxPlM1v6IOTLxM1TRPzA",
+    "title": "【開封動画】発注ミスをしたので今日からパープルマンになります（？） #shorts #vtuber",
+    "date": "2025-11-23T13:00:44.000+09:00",
+    "status": "archive",
+    "thumbnail": "https://i.ytimg.com/vi/hS7S048j26Q/mqdefault.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/NVLNPEsj4s1-JKLx5Yu2YbnsbK9jZtQetRBAuQMQGHXbasx2Oxr38qQLS-zQWg0Im2KQDRljKQ",
+    "url": "https://www.youtube.com/watch?v=hS7S048j26Q"
   },
   {
     "name": "鹿鳴りあ",

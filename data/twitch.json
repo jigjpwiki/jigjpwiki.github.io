@@ -219,16 +219,26 @@
     "name": "しーはむ",
     "twitchid": "siyham",
     "title": "ヴェックスOTP メイジでソロランク！【新衣装＆生誕祭は11月27日】",
-    "date": "2025-11-25T15:40:38.000+09:00",
-    "status": "live",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_siyham-320x180.jpg"
+    "date": "2025-11-25T15:40:44.000+09:00",
+    "status": "archive",
+    "channelIcon": "https://yt3.googleusercontent.com/y0zP0Uz7HSLx5dv3xo488Suxk8rJQQUC1wXaymjUBIQIwa25WlVu_VmrsT1xAyVD-jgeL7hs",
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/f30f0e3d6478a21d2707_siyham_315182912755_1764052838//thumb/thumb0-320x180.jpg"
   },
   {
     "name": "駿河ルガ",
     "twitchid": "suruga_luga",
     "title": "【スト6】知のサガット【登龍門BOX/駿河ルガ】",
-    "date": "2025-11-25T16:24:23.000+09:00",
+    "date": "2025-11-25T16:24:33.000+09:00",
+    "status": "archive",
+    "channelIcon": "https://yt3.googleusercontent.com/JlY4XEMg9noNa4ShOtky0OwYbKXjnhnje6NQUcwrnJ0UI3C9VQrB-fBNat9QJSUJuuT_Yo1P",
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/fcd162ac5c83608acc15_suruga_luga_315136664050_1764055463//thumb/thumb0-320x180.jpg"
+  },
+  {
+    "name": "銘兎目あう",
+    "twitchid": "Metome_Au",
+    "title": "【スト６】SFL同時視聴しよ～🥊DivisionF第10節✨一緒に応援しよっ～！",
+    "date": "2025-11-25T18:28:07.000+09:00",
     "status": "live",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_suruga_luga-320x180.jpg"
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_Metome_Au-320x180.jpg"
   }
 ]

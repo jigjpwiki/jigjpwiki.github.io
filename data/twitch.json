@@ -1,23 +1,5 @@
 [
   {
-    "name": "しーはむ",
-    "twitchid": "siyham",
-    "title": "無職杯の顔合わせ＆練習【新衣装＆生誕祭は11月27日】",
-    "date": "2025-11-22T21:00:25.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://yt3.googleusercontent.com/y0zP0Uz7HSLx5dv3xo488Suxk8rJQQUC1wXaymjUBIQIwa25WlVu_VmrsT1xAyVD-jgeL7hs",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/86cde14c1952888c41c7_siyham_315115448689_1763812819//thumb/thumb0-320x180.jpg"
-  },
-  {
-    "name": "妖小琳",
-    "twitchid": "yaosyaorin",
-    "title": "やくざ",
-    "date": "2025-11-22T21:01:11.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://yt3.googleusercontent.com/Ji8DJgyzWKUbbeWlYgFfsCZtyiGZ-zM597otZBcFnIoEVIw7284GbNbBQcALgEKwqvk8OXNZLA",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d1m7jfoe9zdc1j/9f7f8a183e2b511be8b6_yaosyaorin_316240838363_1763812866//thumb/thumb0-320x180.jpg"
-  },
-  {
     "name": "銘兎目あう",
     "twitchid": "Metome_Au",
     "title": "【スト６】カスタム参加型⭐ハイマス記念🥊🥋初見さんもどうぞ🎶",
@@ -231,5 +213,29 @@
     "status": "archive",
     "channelIcon": "https://yt3.googleusercontent.com/QQqec9A1J7eLk9RrRYD9vvk51BBJzcE1leGkU9n4YkwHqht9gmGT1ktmSlKItQtbuMSGuklAFxM",
     "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/052aff954776546e9726_lee_jupita_315137271538_1764067437//thumb/thumb0-320x180.jpg"
+  },
+  {
+    "name": "しーはむ",
+    "twitchid": "siyham",
+    "title": "箱のメンバーとリベンジ！",
+    "date": "2025-11-25T21:07:28.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_siyham-320x180.jpg"
+  },
+  {
+    "name": "火乃晴るい",
+    "twitchid": "hinoha_rui",
+    "title": "【 #MIMESIS 】リベンジコラボ！🔥 w/しーはむ、なかやん、り～",
+    "date": "2025-11-25T21:07:44.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_hinoha_rui-320x180.jpg"
+  },
+  {
+    "name": "李じゅぴ汰",
+    "twitchid": "lee_jupita",
+    "title": "【MIMESIS】リベンジするぞ！！AIに成りすましてる人がいる！【ミメシス】ぷろのゔぁ",
+    "date": "2025-11-25T21:07:47.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lee_jupita-320x180.jpg"
   }
 ]

@@ -1,55 +1,5 @@
 [
   {
-    "name": "堂下さとり",
-    "youtubeid": "UCBq6MSUL-Ermvnoj3PtX7Iw",
-    "title": "お昼のぼちごー雑談",
-    "date": "2025-11-23T21:54:31.000+09:00",
-    "status": "live",
-    "thumbnail": "https://i.ytimg.com/vi/ZqDyfkY9sNo/mqdefault_live.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/eW_Hug0M6zFk9QSbAmOUWLMSfzBlCHmes-8yAksvfUNzyLgY6TSsE_eW8ncfE4bHYZXKoTWxmQ",
-    "url": "https://www.youtube.com/watch?v=ZqDyfkY9sNo"
-  },
-  {
-    "name": "春原なずな",
-    "youtubeid": "UCW-iuU7g3BJnuQ1D3UkqeSA",
-    "title": "【 空の軌跡 the 1st 】#6 完全初見！オーブメントの博士に会いにいくぞ！ ※ネタバレ注意【 春原なずな / VTuber 】",
-    "date": "2025-11-23T22:00:00.000+09:00",
-    "status": "upcoming",
-    "thumbnail": "https://i.ytimg.com/vi/kfY5Yvz2Lwo/mqdefault_live.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/0pD1c95Y9X0VrhzWtlf2SRPqdkesiuZxC8Hb5Mg9Xv1WWpQaFCmjITTK8-n5HlNsB-yDbAN4CZA",
-    "url": "https://www.youtube.com/watch?v=kfY5Yvz2Lwo"
-  },
-  {
-    "name": "満力きぃ",
-    "youtubeid": "UCE7WT_aCMxej-E4NUz-wEHg",
-    "title": "【睡眠導入】絶対によく眠れる！！波の音と羊を数える癒やし声【満力きぃ/パレデミア学園】",
-    "date": "2025-11-23T22:00:00.000+09:00",
-    "status": "upcoming",
-    "thumbnail": "https://i.ytimg.com/vi/e6PpvHqqEzQ/mqdefault.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/jvlw_xWAYcbgcPbg1CBi6PF5wSlP-4n6Nmbv8EElPHU9VegxlBIt0_p8_4qlKxHrA6WtE5bGSA",
-    "url": "https://www.youtube.com/watch?v=e6PpvHqqEzQ"
-  },
-  {
-    "name": "雛菊のん",
-    "youtubeid": "UChccV6U0Tkx9de4YjXbEelw",
-    "title": "ヒロインとギャルの違い#shorts #新人vtuber #vtuber #おしゃべり #おすすめにのりたい #バズれ",
-    "date": "2025-11-23T22:01:30.000+09:00",
-    "status": "archive",
-    "thumbnail": "https://i.ytimg.com/vi/lBUw9fKCs9Q/mqdefault.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/OxvUqyZAoX4gIX91GOkYMIE2iYfD1ndRKGZbo4Ih8cDb5QuoXpqNJWZKpephYlI0zNiYjQptAQ",
-    "url": "https://www.youtube.com/watch?v=lBUw9fKCs9Q"
-  },
-  {
-    "name": "犬丸なでこ",
-    "youtubeid": "UCdJmJxMfXrlnZabUkuss2EA",
-    "title": "【♡コラボ♡】天辻ゆらぐちゃんとおしゃべりするわんっ♪",
-    "date": "2025-11-23T22:09:05.000+09:00",
-    "status": "live",
-    "thumbnail": "https://i.ytimg.com/vi/IIAn3XEHJfQ/mqdefault.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/OQpHijB1HDVezkvjNufbM9PmR9kbhUe1mfnSRqJ67l-R34sAc4BhYmQ2U7C-SapKAtcOk_Bp",
-    "url": "https://www.youtube.com/watch?v=IIAn3XEHJfQ"
-  },
-  {
     "name": "橋門エル",
     "youtubeid": "UCcNo3POf2DiRs1TPIsEvNgA",
     "title": "体調不良なので寝ます",

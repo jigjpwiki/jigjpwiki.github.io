@@ -1,14 +1,5 @@
 [
   {
-    "name": "桜樹美彩",
-    "twitchid": "sakuragimisa_v",
-    "title": "【 朝活 / 雑談 】休日の朝.ᐟ.ᐟ 初見歓迎☀ おはよう数で『今週の目標歩数』を決めます🚶 AM7:00～ 定期朝雑🍀🐥  #vtuber #みさライなう #桜樹美彩 #朝活",
-    "date": "2025-11-25T07:00:40.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://yt3.googleusercontent.com/pDP2GuylW0RN1REDScFAlNklbXaPRqTm2mwT2F7dIo8xoYYFPfspsjGH_G3RagwlKVlQbdw95bY",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d1m7jfoe9zdc1j/dd28d65ff5133d2d2ba8_sakuragimisa_v_316215874778_1764021635//thumb/thumb0-320x180.jpg"
-  },
-  {
     "name": "しーはむ",
     "twitchid": "siyham",
     "title": "ヴェックスOTP メイジでソロランク！【新衣装＆生誕祭は11月27日】",
@@ -183,9 +174,10 @@
     "name": "妖小琳",
     "twitchid": "yaosyaorin",
     "title": "８９３",
-    "date": "2025-11-27T21:00:50.000+09:00",
-    "status": "live",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_yaosyaorin-320x180.jpg"
+    "date": "2025-11-27T21:00:55.000+09:00",
+    "status": "archive",
+    "channelIcon": "https://yt3.googleusercontent.com/Ji8DJgyzWKUbbeWlYgFfsCZtyiGZ-zM597otZBcFnIoEVIw7284GbNbBQcALgEKwqvk8OXNZLA",
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d1m7jfoe9zdc1j/79a8540e583ccb3cbe91_yaosyaorin_316262066522_1764244850//thumb/thumb0-320x180.jpg"
   },
   {
     "name": "しーはむ",
@@ -220,5 +212,13 @@
     "date": "2025-11-28T02:03:38.000+09:00",
     "status": "live",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_minato_yu_-320x180.jpg"
+  },
+  {
+    "name": "桜樹美彩",
+    "twitchid": "sakuragimisa_v",
+    "title": "【 朝活 / ニュース 】11月28日（金）⏰ AM7:00 『ちょこっと』朝活ニュース🍀天気予報/時事ニュース🍁初見＆ROM勢大歓迎🐥 #vtuber #みさライなう #桜樹美彩 #新人vtuber",
+    "date": "2025-11-28T07:00:18.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sakuragimisa_v-320x180.jpg"
   }
 ]

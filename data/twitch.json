@@ -191,9 +191,10 @@
     "name": "しーはむ",
     "twitchid": "siyham",
     "title": "🎈しーはむ2025生誕祭＆新衣装お披露目🎈",
-    "date": "2025-11-27T21:00:14.000+09:00",
-    "status": "live",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_siyham-320x180.jpg"
+    "date": "2025-11-27T21:00:20.000+09:00",
+    "status": "archive",
+    "channelIcon": "https://yt3.googleusercontent.com/y0zP0Uz7HSLx5dv3xo488Suxk8rJQQUC1wXaymjUBIQIwa25WlVu_VmrsT1xAyVD-jgeL7hs",
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/4042352445cb0f6c54dd_siyham_315137754865_1764244814//thumb/thumb0-320x180.jpg"
   },
   {
     "name": "妖小琳",
@@ -202,5 +203,13 @@
     "date": "2025-11-27T21:00:50.000+09:00",
     "status": "live",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_yaosyaorin-320x180.jpg"
+  },
+  {
+    "name": "しーはむ",
+    "twitchid": "siyham",
+    "title": "新衣装＆誕生日LOL【誕生日グッズ出ました】",
+    "date": "2025-11-27T21:50:00.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_siyham-320x180.jpg"
   }
 ]

@@ -1,25 +1,5 @@
 [
   {
-    "name": "風野かなめ",
-    "youtubeid": "UC2AO1ZIgtAVIh6_mx2SqmMQ",
-    "title": "【FF4】まったり【パレデミア学園】",
-    "date": "2025-11-25T17:58:54.000+09:00",
-    "status": "live",
-    "thumbnail": "https://i.ytimg.com/vi/ROn5y0B18ko/mqdefault_live.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/gtjdyYJUUd1ESZ7-6meuTshluv9Susg7NeB54uoFxPpLrof9Fttx2K7Ck5B6DsbNxb_pNm-z",
-    "url": "https://www.youtube.com/watch?v=ROn5y0B18ko"
-  },
-  {
-    "name": "藤森ちとせ",
-    "youtubeid": "UCAhdxmsdngH4noySdpVAVWQ",
-    "title": "【ピコパークコラボ】このテトリス、楽しすぎますね～？😉【#新人vtuber 】#ちとせらいぶ #パレデミア学園 #ウィニー寮",
-    "date": "2025-11-25T18:00:00.000+09:00",
-    "status": "upcoming",
-    "thumbnail": "https://i.ytimg.com/vi/EAgQJlpwiw8/mqdefault_live.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/traR_yWe-AOGyM2wjo8h2FJO9JWBcbjfrL13X-umeD6BtNPopSZ2Q3YmdJq_5K9gWgHf_j64iQ",
-    "url": "https://www.youtube.com/watch?v=EAgQJlpwiw8"
-  },
-  {
     "name": "七音うら",
     "youtubeid": "UCv2IYO-4waCpHvn50SWWY2A",
     "title": "【#音楽雑学】Q.ロビンソンのタイトルはなにからつけられたでしょう？　#音楽クイズ #雑学クイズ",
@@ -1260,6 +1240,26 @@
     "url": "https://www.youtube.com/watch?v=lFXYAO3X6Rs"
   },
   {
+    "name": "肇明日空",
+    "youtubeid": "UCj6HYkokrIErMfhKAUAvYcA",
+    "title": "ガチ恋距離まで……#vtuber #shorts",
+    "date": "2025-11-28T16:00:58.000+09:00",
+    "status": "archive",
+    "thumbnail": "https://i.ytimg.com/vi/nMYuXF15WDg/mqdefault.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/u59W56aqJ9r7WunTIqg60ZGnBu-G-9LA-OX6tZR6debt_isQ8xR59HUwrbAqLLqlTf_0VosmZg",
+    "url": "https://www.youtube.com/watch?v=nMYuXF15WDg"
+  },
+  {
+    "name": "犬丸なでこ",
+    "youtubeid": "UCdJmJxMfXrlnZabUkuss2EA",
+    "title": "姉妹で早口言葉に挑戦したよ❣️ #新人vtuber #早口言葉 #パレデミア学園　#猫乃間うと　#犬丸なでこ",
+    "date": "2025-11-28T16:26:49.000+09:00",
+    "status": "archive",
+    "thumbnail": "https://i.ytimg.com/vi/tdOQ_MOP_Ck/mqdefault.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/OQpHijB1HDVezkvjNufbM9PmR9kbhUe1mfnSRqJ67l-R34sAc4BhYmQ2U7C-SapKAtcOk_Bp",
+    "url": "https://www.youtube.com/watch?v=tdOQ_MOP_Ck"
+  },
+  {
     "name": "藤森ちとせ",
     "youtubeid": "UCAhdxmsdngH4noySdpVAVWQ",
     "title": "【GNOSIA】久しぶりのグノーシア配信ですね～✨🐺【 #新人vtuber 】#ちとせらいぶ",
@@ -1288,6 +1288,16 @@
     "thumbnail": "https://i.ytimg.com/vi/blGB1_D-rPo/mqdefault_live.jpg",
     "channelIcon": "https://yt3.googleusercontent.com/OQpHijB1HDVezkvjNufbM9PmR9kbhUe1mfnSRqJ67l-R34sAc4BhYmQ2U7C-SapKAtcOk_Bp",
     "url": "https://www.youtube.com/watch?v=blGB1_D-rPo"
+  },
+  {
+    "name": "忠犬しず",
+    "youtubeid": "UCPzN3R0x_SciJJ_FP-STpHQ",
+    "title": "【 完全初見 】旧作を見終わったので今こそ新幹線大爆破(2025年)をみんなで見てみよう！【 忠犬しず/VTuber 】",
+    "date": "2025-11-28T21:00:00.000+09:00",
+    "status": "upcoming",
+    "thumbnail": "https://i.ytimg.com/vi/3_w6TdbtpHg/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/9dVPxoBbcXIeN4O1N6bYiWu3EHHHeaStY7fQYPZfF3thWIP2Sc9Uc6kg56Aj0UHrg5QqqDtn",
+    "url": "https://www.youtube.com/watch?v=3_w6TdbtpHg"
   },
   {
     "name": "鹿鳴りあ",

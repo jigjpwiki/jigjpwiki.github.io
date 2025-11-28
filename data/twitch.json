@@ -1,32 +1,5 @@
 [
   {
-    "name": "しーはむ",
-    "twitchid": "siyham",
-    "title": "箱のメンバーとリベンジ！",
-    "date": "2025-11-25T21:07:34.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://yt3.googleusercontent.com/y0zP0Uz7HSLx5dv3xo488Suxk8rJQQUC1wXaymjUBIQIwa25WlVu_VmrsT1xAyVD-jgeL7hs",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/f93ca734be6089e5edc0_siyham_315128585201_1764072448//thumb/thumb0-320x180.jpg"
-  },
-  {
-    "name": "火乃晴るい",
-    "twitchid": "hinoha_rui",
-    "title": "【 #MIMESIS 】リベンジコラボ！🔥 w/しーはむ、なかやん、り～",
-    "date": "2025-11-25T21:07:50.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://yt3.googleusercontent.com/8vDFqOVNprKqFE0o7EecXyQleBXIibeJZpXpSgjm5msh4Yd0S8hTsbmYZyOBXa3bUEgBJHZt1w",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/9ab1d4ee5d2a6482c082_hinoha_rui_315128588785_1764072464//thumb/thumb0-320x180.jpg"
-  },
-  {
-    "name": "李じゅぴ汰",
-    "twitchid": "lee_jupita",
-    "title": "【MIMESIS】リベンジするぞ！！AIに成りすましてる人がいる！【ミメシス】ぷろのゔぁ",
-    "date": "2025-11-25T21:07:53.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://yt3.googleusercontent.com/QQqec9A1J7eLk9RrRYD9vvk51BBJzcE1leGkU9n4YkwHqht9gmGT1ktmSlKItQtbuMSGuklAFxM",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/8e0224c6003458958f88_lee_jupita_315184061171_1764072467//thumb/thumb0-320x180.jpg"
-  },
-  {
     "name": "桜樹美彩",
     "twitchid": "sakuragimisa_v",
     "title": "【 朝活 / 雑談 】初見歓迎.ᐟ.ᐟ 「おはよう＆いってらっしゃい」を300名様に☀ 水曜 AM7:00～10:00 元気注入💉朝活雑談🐤  #vtuber #みさライなう #桜樹美彩",
@@ -192,9 +165,10 @@
     "name": "なかもとおまち",
     "twitchid": "41futon",
     "title": "MR1700までバタバタバタコ子さん",
-    "date": "2025-11-28T16:08:08.000+09:00",
-    "status": "live",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_41futon-320x180.jpg"
+    "date": "2025-11-28T16:08:14.000+09:00",
+    "status": "archive",
+    "channelIcon": "https://yt3.googleusercontent.com/h8jNjVckVf08zSV6wdhQ38Fw9OH7kucAprlJsi9w0YdDIL8_Kcv0tHY-1cK8jPK_jRLSJb3t_Q",
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/416549e158d85fca9bb9_41futon_315149807858_1764313688//thumb/thumb0-320x180.jpg"
   },
   {
     "name": "駿河ルガ",
@@ -211,5 +185,13 @@
     "date": "2025-11-28T18:17:41.000+09:00",
     "status": "live",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_Metome_Au-320x180.jpg"
+  },
+  {
+    "name": "妖小琳",
+    "twitchid": "yaosyaorin",
+    "title": "東洋医学を知ろう",
+    "date": "2025-11-28T21:00:02.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_yaosyaorin-320x180.jpg"
   }
 ]

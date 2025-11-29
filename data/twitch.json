@@ -1,23 +1,5 @@
 [
   {
-    "name": "真昼ねる",
-    "twitchid": "mahiruneru",
-    "title": "【#R6SX】めずらしくフルパシージ🌟w/E36 Mugi,水透ユウ,錵ツカサ,みぃちゃん【ぷろのゔぁ￤VTuber￤真昼ねる】",
-    "date": "2025-11-26T21:01:45.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://yt3.googleusercontent.com/Cu6AMAZAEC_DTANKoaloA_4iLCuEUQ8BiAwyHGuOUG9GtoIw6s7mXCv1-49LV1IgODYZfGowzQ",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/e2c1aa683d16ba4494d8_mahiruneru_315142459890_1764158499//thumb/thumb0-320x180.jpg"
-  },
-  {
-    "name": "なかもとおまち",
-    "twitchid": "41futon",
-    "title": "リハビリスト６だにょ",
-    "date": "2025-11-26T21:03:10.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://yt3.googleusercontent.com/h8jNjVckVf08zSV6wdhQ38Fw9OH7kucAprlJsi9w0YdDIL8_Kcv0tHY-1cK8jPK_jRLSJb3t_Q",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/3a6d7e86fff88f85f7a9_41futon_315142471794_1764158584//thumb/thumb0-320x180.jpg"
-  },
-  {
     "name": "妖小琳",
     "twitchid": "yaosyaorin",
     "title": "明日マシ",
@@ -182,19 +164,11 @@
   {
     "name": "李じゅぴ汰",
     "twitchid": "lee_jupita",
-    "title": "【誕生日配信】オンリーアップ上にのぼる",
-    "date": "2025-11-29T14:22:37.000+09:00",
-    "status": "live",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lee_jupita-320x180.jpg"
-  },
-  {
-    "name": "李じゅぴ汰",
-    "twitchid": "lee_jupita",
     "title": "【誕生日耐久】スト6→いろんなゲーム→お肉食べる！【李じゅぴ汰】",
     "date": "2025-11-29T14:22:43.000+09:00",
     "status": "archive",
     "channelIcon": "https://yt3.googleusercontent.com/QQqec9A1J7eLk9RrRYD9vvk51BBJzcE1leGkU9n4YkwHqht9gmGT1ktmSlKItQtbuMSGuklAFxM",
-    "thumbnail": "https://vod-secure.twitch.tv/_404/404_processing_320x180.png"
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/c1f03805b714e2fb6383_lee_jupita_315144939633_1764393757//thumb/thumb0-320x180.jpg"
   },
   {
     "name": "銘兎目あう",
@@ -229,5 +203,21 @@
     "date": "2025-11-29T20:01:36.000+09:00",
     "status": "live",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_Metome_Au-320x180.jpg"
+  },
+  {
+    "name": "しーはむ",
+    "twitchid": "siyham",
+    "title": "無職杯の練習!! コメント読んでるよ🐹【誕生日グッズ出てます】",
+    "date": "2025-11-29T21:03:45.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_siyham-320x180.jpg"
+  },
+  {
+    "name": "李じゅぴ汰",
+    "twitchid": "lee_jupita",
+    "title": "【誕生日配信】皆でお祝いしようねー！いい肉の日！スパチャも解禁！【21時!/李じゅぴ汰2025】",
+    "date": "2025-11-29T21:19:09.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lee_jupita-320x180.jpg"
   }
 ]

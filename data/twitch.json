@@ -1,14 +1,5 @@
 [
   {
-    "name": "妖小琳",
-    "twitchid": "yaosyaorin",
-    "title": "東洋医学を知ろう",
-    "date": "2025-11-28T21:00:07.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://yt3.googleusercontent.com/Ji8DJgyzWKUbbeWlYgFfsCZtyiGZ-zM597otZBcFnIoEVIw7284GbNbBQcALgEKwqvk8OXNZLA",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d1m7jfoe9zdc1j/54ed3dc95d94a7ac21ab_yaosyaorin_316360030427_1764331202//thumb/thumb0-320x180.jpg"
-  },
-  {
     "name": "李じゅぴ汰",
     "twitchid": "lee_jupita",
     "title": "【歌枠】誕生日前にお歌をいっぱい歌うんだ！！！",
@@ -246,5 +237,13 @@
     "date": "2025-12-01T20:31:01.000+09:00",
     "status": "live",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_Metome_Au-320x180.jpg"
+  },
+  {
+    "name": "しーはむ",
+    "twitchid": "siyham",
+    "title": "オリアナ初めてなので教えて下さい🐹【誕生日グッズ出てます】",
+    "date": "2025-12-01T21:04:55.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_siyham-320x180.jpg"
   }
 ]

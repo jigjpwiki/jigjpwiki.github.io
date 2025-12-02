@@ -1,23 +1,5 @@
 [
   {
-    "name": "妖小琳",
-    "twitchid": "yaosyaorin",
-    "title": "いい肉食べるよ！",
-    "date": "2025-11-29T20:00:11.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://yt3.googleusercontent.com/Ji8DJgyzWKUbbeWlYgFfsCZtyiGZ-zM597otZBcFnIoEVIw7284GbNbBQcALgEKwqvk8OXNZLA",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d1m7jfoe9zdc1j/99b6dec099e3aa221e14_yaosyaorin_316293862234_1764414006//thumb/thumb0-320x180.jpg"
-  },
-  {
-    "name": "銘兎目あう",
-    "twitchid": "Metome_Au",
-    "title": "【スト６】ちはたんCUPMini顔合わせ🐰🌷天宮ちほさん・救堕えるちゃん！",
-    "date": "2025-11-29T20:01:42.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://yt3.googleusercontent.com/VB97J8AMHex_rkfd6hDhfiGhhVvrL-NNkseP2mMYSWh75sxA_oXctmxK5tV4FYgkM17RUAx6GQ",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/6c4ebb1cda8de8d78331_metome_au_315155204082_1764414096//thumb/thumb0-320x180.jpg"
-  },
-  {
     "name": "しーはむ",
     "twitchid": "siyham",
     "title": "無職杯の練習!! コメント読んでるよ🐹【誕生日グッズ出てます】",
@@ -247,5 +229,13 @@
     "date": "2025-12-02T19:51:21.000+09:00",
     "status": "live",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_minato_yu_-320x180.jpg"
+  },
+  {
+    "name": "妖小琳",
+    "twitchid": "yaosyaorin",
+    "title": "マダミス",
+    "date": "2025-12-02T20:02:50.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_yaosyaorin-320x180.jpg"
   }
 ]

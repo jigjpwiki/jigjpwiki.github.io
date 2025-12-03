@@ -227,7 +227,7 @@
   {
     "name": "銘兎目あう",
     "twitchid": "Metome_Au",
-    "title": "【スト６C.A.Eチームとエキシビジョンマッチ天宮ちほさんと救堕えるちゃん！",
+    "title": "【スト６】エキシビジョンマッチ中！天宮ちほさんと救堕えるちゃん！",
     "date": "2025-12-03T19:53:12.000+09:00",
     "status": "live",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_Metome_Au-320x180.jpg"
@@ -283,5 +283,13 @@
     "status": "archive",
     "channelIcon": "https://yt3.googleusercontent.com/eVD8Ygm7KVyh3dvWnyebfYlbYpD13ZYQ-Bos8WdR5LDE61A3svHVHCLEY-rM3IQgw9O4uvdd",
     "thumbnail": "https://vod-secure.twitch.tv/_404/404_processing_320x180.png"
+  },
+  {
+    "name": "李じゅぴ汰",
+    "twitchid": "lee_jupita",
+    "title": "【Only Up！】私は上を目指す女！【オンリーアップ】",
+    "date": "2025-12-03T23:21:39.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lee_jupita-320x180.jpg"
   }
 ]

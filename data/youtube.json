@@ -1,15 +1,5 @@
 [
   {
-    "name": "秋桜しゅお",
-    "youtubeid": "UCPjtwOeRQV5EFkCwUycZsgw",
-    "title": "【#一周年記念配信  】もう一年！？ここからがしゅおの第二フェーズ！【秋桜しゅお/登龍門BOX】#vtuber",
-    "date": "2025-12-01T20:00:00.000+09:00",
-    "status": "upcoming",
-    "thumbnail": "https://i.ytimg.com/vi/8pswLHjRHp4/mqdefault_live.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/WBGP05KaXeA21IzCbCeM0QHa0v9maVvVUBDZ2DyfTT62F1wGaW3hLOQBy1gCfuQfEnDNgwbsrQ",
-    "url": "https://www.youtube.com/watch?v=8pswLHjRHp4"
-  },
-  {
     "name": "宇田わん",
     "youtubeid": "UCp45rWiRwgYZJUR4bQO-Xgw",
     "title": "【 雑談 】12月ですね、サンタさんって実在するんですか？【 #宇田わん #新人VTuber / #登龍門BOX 】",
@@ -1280,6 +1270,16 @@
     "url": "https://www.youtube.com/watch?v=16N9-e-_rW8"
   },
   {
+    "name": "天辻ゆらぐ",
+    "youtubeid": "UCeOFQCn_QZJMTszlRYRg3rQ",
+    "title": "【雑談/雑談歌枠】平成アニメ懐古アカペラ多め！あなたのお姉さんアイドルVtuber🪼💜初見歓迎✨️【天辻ゆらぐ/パレデミア学園】 #新人Vtuber #ゆらぐっどたいむ",
+    "date": "2025-12-04T17:11:31.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/739vuM4E83g/mqdefault.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/4AFFu60kFJqix-OhtDW3EJdQ0jQa1LrK56tGpvqvbGodMQFpkH-_qtvL_66dPGD3kl4LW9N4",
+    "url": "https://www.youtube.com/watch?v=739vuM4E83g"
+  },
+  {
     "name": "七扇ヲトメ",
     "youtubeid": "UC2hU8mFmV7f2ELJUGJKOtTw",
     "title": "【RVThereYet?】大爆走キャンピングカー【無事帰寮せよ】＃新人Vtuber　＃ゲーム実況　#RVthereyet?",
@@ -1300,6 +1300,56 @@
     "url": "https://www.youtube.com/watch?v=WrrNIftaI-M"
   },
   {
+    "name": "魔法少女アルト",
+    "youtubeid": "UCtRhBS8dlaeBgVcnEZOkAbA",
+    "title": "ケーキ食べる時の事件 #ウルトラソウル #ultrasoul #替え歌  #ネタ #魔法少女アルト",
+    "date": "2025-12-04T18:00:22.000+09:00",
+    "status": "archive",
+    "thumbnail": "https://i.ytimg.com/vi/EoXJ7PEx0Fw/mqdefault.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/JwOkUNiR-08GjSI3MS8-Yk6jzONshtmRWZ9tpjOghB10quze7fgbJkhpPTpIfUX00HBACjAR8Q",
+    "url": "https://www.youtube.com/watch?v=EoXJ7PEx0Fw"
+  },
+  {
+    "name": "桜堂ねる",
+    "youtubeid": "UC0H7dRRqhfOifbYQ2TURdAg",
+    "title": "圧倒的自由な4人",
+    "date": "2025-12-04T18:03:12.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/aDjlXLzIh0A/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/hBz75E3AEST1Dzv5vOTHAqoJfayd30WIWWQ3ZFLlWMHDsyZ_QD6ZVVUtLTKSizalT3APPtdpFGI",
+    "url": "https://www.youtube.com/watch?v=aDjlXLzIh0A"
+  },
+  {
+    "name": "七音うら",
+    "youtubeid": "UCv2IYO-4waCpHvn50SWWY2A",
+    "title": "【#rvthereyet 】みんなにウィニー寮に帰るぞ！【#ウィニー寮】",
+    "date": "2025-12-04T18:03:34.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/pObsb4kOuCk/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/T655ATpSd2gkjZBrokvlkaUH0f5-fCpQdcJpwxmmNdy6fxCYffAlq2sMhPOtFk_CvVyOkEPY8Q",
+    "url": "https://www.youtube.com/watch?v=pObsb4kOuCk"
+  },
+  {
+    "name": "瀬奈りるか",
+    "youtubeid": "UCWi_ztz8Xuz4XfzhoG6ZfyA",
+    "title": "【ブルアカ】ガチャ煽りダメ、絶対【新人VTuber】＃パレデミア学園　＃ブルーアーカイブ",
+    "date": "2025-12-04T18:30:17.000+09:00",
+    "status": "archive",
+    "thumbnail": "https://i.ytimg.com/vi/Srn_gmRPpmY/mqdefault.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/bM-okYT9oTq3M5dq33VSpidEiaC8MP2EoQXX2gNpgW7PAV7RSn1t7_2HghmCcAwrNxriAmMy",
+    "url": "https://www.youtube.com/watch?v=Srn_gmRPpmY"
+  },
+  {
+    "name": "愛上オハナ",
+    "youtubeid": "UCwxQdxFJW67WGv-s5_z030w",
+    "title": "オハナとのんびりクジラゲーム",
+    "date": "2025-12-04T18:35:41.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/Yv6MtkhTB2I/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/neZ2Mw2PcuimtH172AaHAlm5eKk_O17aEJ8aMGhme708zPqxyZB6QhS89qzSt30uXnGLLbgdliw",
+    "url": "https://www.youtube.com/watch?v=Yv6MtkhTB2I"
+  },
+  {
     "name": "宇田わん",
     "youtubeid": "UCp45rWiRwgYZJUR4bQO-Xgw",
     "title": "【  】配信予定地【 #宇田わん #新人VTuber / #登龍門BOX 】",
@@ -1308,6 +1358,26 @@
     "thumbnail": "https://i.ytimg.com/vi/uJChZkFHffY/mqdefault_live.jpg",
     "channelIcon": "https://yt3.googleusercontent.com/bcgws2A-h2HRTCoWgcipC2sgJw_9y0O_5jBi_0QEW4DhAqyPZg4_xLkZw3JJBFZ2DzsYNiGx",
     "url": "https://www.youtube.com/watch?v=uJChZkFHffY"
+  },
+  {
+    "name": "緋雨柚",
+    "youtubeid": "UCrB-SfrqB5ChY8aAT99grXw",
+    "title": "【雀魂】初の役満でテンションが上がる緋雨 #vtuber #ゲーム配信 #雀魂 #パレデミア#新人vtuber #shorts",
+    "date": "2025-12-04T19:01:32.000+09:00",
+    "status": "archive",
+    "thumbnail": "https://i.ytimg.com/vi/n3b88y5onsQ/mqdefault.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/dPJHngNTeEfD_K0Mus141-We4xIuAhttm2pgEBl3VdGXqWvxGfy5mJfDMDbBmwI6UGc17dXb-g",
+    "url": "https://www.youtube.com/watch?v=n3b88y5onsQ"
+  },
+  {
+    "name": "犬丸なでこ",
+    "youtubeid": "UCdJmJxMfXrlnZabUkuss2EA",
+    "title": "【漢字でGO！】なんて読むの～～？！【パレデミア学園/犬丸なでこ】",
+    "date": "2025-12-04T19:23:26.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/87o6tcgsiys/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/OQpHijB1HDVezkvjNufbM9PmR9kbhUe1mfnSRqJ67l-R34sAc4BhYmQ2U7C-SapKAtcOk_Bp",
+    "url": "https://www.youtube.com/watch?v=87o6tcgsiys"
   },
   {
     "name": "満力きぃ",
@@ -1320,6 +1390,26 @@
     "url": "https://www.youtube.com/watch?v=zgm7GxxcW-g"
   },
   {
+    "name": "桜樹美彩",
+    "youtubeid": "UCTwKpTFX1aAXD0xpBqYqTdg",
+    "title": "平成のVTuberが引っ掛かる罠 #shorts #vtuber #新人vtuber #ネタ",
+    "date": "2025-12-04T20:01:16.000+09:00",
+    "status": "archive",
+    "thumbnail": "https://i.ytimg.com/vi/_9wAzhMGeh8/mqdefault.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/pDP2GuylW0RN1REDScFAlNklbXaPRqTm2mwT2F7dIo8xoYYFPfspsjGH_G3RagwlKVlQbdw95bY",
+    "url": "https://www.youtube.com/watch?v=_9wAzhMGeh8"
+  },
+  {
+    "name": "天透あわ",
+    "youtubeid": "UCXI0W_Os-BCIngpCb1YnOow",
+    "title": "12年間待ち続けた最新作英雄たちのヴィクトリーロードをやっていく！【イナズマイレブン】",
+    "date": "2025-12-04T20:02:02.000+09:00",
+    "status": "archive",
+    "thumbnail": "https://i.ytimg.com/vi/v5o43KYpuRo/mqdefault.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/Me8I_Op8OlIy8Vuj387_Hdi6gnrZ-qiY1yDDt1Q5yKMKA51ISagT76HE01gw8xbLcef0vpsPgoc",
+    "url": "https://www.youtube.com/watch?v=v5o43KYpuRo"
+  },
+  {
     "name": "妖小琳",
     "youtubeid": "UC6eopxuX7lx8GnpkntObt1w",
     "title": "【 #龍が如く7 】準備中【妖小琳/Vtuber】",
@@ -1328,6 +1418,16 @@
     "thumbnail": "https://i.ytimg.com/vi/eE8gGp7Af9k/mqdefault_live.jpg",
     "channelIcon": "https://yt3.googleusercontent.com/Ji8DJgyzWKUbbeWlYgFfsCZtyiGZ-zM597otZBcFnIoEVIw7284GbNbBQcALgEKwqvk8OXNZLA",
     "url": "https://www.youtube.com/watch?v=eE8gGp7Af9k"
+  },
+  {
+    "name": "犬丸なでこ",
+    "youtubeid": "UCdJmJxMfXrlnZabUkuss2EA",
+    "title": "【歌枠＆雑談】まったり歌うよお～！【パレデミア学園/犬丸なでこ】",
+    "date": "2025-12-04T21:00:00.000+09:00",
+    "status": "upcoming",
+    "thumbnail": "https://i.ytimg.com/vi/Hg2l4nAe9c4/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/OQpHijB1HDVezkvjNufbM9PmR9kbhUe1mfnSRqJ67l-R34sAc4BhYmQ2U7C-SapKAtcOk_Bp",
+    "url": "https://www.youtube.com/watch?v=Hg2l4nAe9c4"
   },
   {
     "name": "桜樹美彩",

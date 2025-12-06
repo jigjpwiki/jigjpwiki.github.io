@@ -1,14 +1,5 @@
 [
   {
-    "name": "なかもとおまち",
-    "twitchid": "41futon",
-    "title": "【参加型！カスタム】だれでもおまちを倒しに来てくれ",
-    "date": "2025-12-03T21:14:00.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://yt3.googleusercontent.com/h8jNjVckVf08zSV6wdhQ38Fw9OH7kucAprlJsi9w0YdDIL8_Kcv0tHY-1cK8jPK_jRLSJb3t_Q",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/359cec6c0156ff49b502_41futon_315172566130_1764764034//thumb/thumb0-320x180.jpg"
-  },
-  {
     "name": "水透ユウ",
     "twitchid": "minato_yu_",
     "title": "【 ＃R6SX 】急によばれました。初めてのフルスクでやります。w/sylviastyle しなぎたま3【水透ユウ】【 #新人vtuber 】",
@@ -174,9 +165,10 @@
     "name": "駿河ルガ",
     "twitchid": "suruga_luga",
     "title": "【スト6】鏡のサガット【登龍門BOX/駿河ルガ】",
-    "date": "2025-12-06T18:01:15.000+09:00",
-    "status": "live",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_suruga_luga-320x180.jpg"
+    "date": "2025-12-06T18:01:25.000+09:00",
+    "status": "archive",
+    "channelIcon": "https://yt3.googleusercontent.com/JlY4XEMg9noNa4ShOtky0OwYbKXjnhnje6NQUcwrnJ0UI3C9VQrB-fBNat9QJSUJuuT_Yo1P",
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/eb3d9f9f1f538b29cd1f_suruga_luga_315175332977_1765011675//thumb/thumb0-320x180.jpg"
   },
   {
     "name": "銘兎目あう",
@@ -185,5 +177,13 @@
     "date": "2025-12-06T20:00:55.000+09:00",
     "status": "live",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_Metome_Au-320x180.jpg"
+  },
+  {
+    "name": "水透ユウ",
+    "twitchid": "minato_yu_",
+    "title": "【 ＃R6SX 】初メンツでシージコラボ w/宇宙花いんぐ3 神咲オリト3【水透ユウ】【 #新人vtuber 】",
+    "date": "2025-12-06T20:56:49.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_minato_yu_-320x180.jpg"
   }
 ]

@@ -1,35 +1,5 @@
 [
   {
-    "name": "飛渡ココ",
-    "youtubeid": "UCMElh_FlHyzp_obVe-b3Qrg",
-    "title": "雑談",
-    "date": "2025-12-04T11:00:21.000+09:00",
-    "status": "live",
-    "thumbnail": "https://i.ytimg.com/vi/MZK75E01jmM/mqdefault_live.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/8I1SuqBXvb4dRY9bcXYc8xxSxL-L2CAe4YvBx2x3kOkyboXRq-G0rVo7pYflUmvo0UKIyxnlRA",
-    "url": "https://www.youtube.com/watch?v=MZK75E01jmM"
-  },
-  {
-    "name": "七音うら",
-    "youtubeid": "UCv2IYO-4waCpHvn50SWWY2A",
-    "title": "【#昼活 】1204昼活！寒波がこわすぎる日の昼活！【七音うら】",
-    "date": "2025-12-04T12:00:34.000+09:00",
-    "status": "live",
-    "thumbnail": "https://i.ytimg.com/vi/SpA7y5eMbzo/mqdefault.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/T655ATpSd2gkjZBrokvlkaUH0f5-fCpQdcJpwxmmNdy6fxCYffAlq2sMhPOtFk_CvVyOkEPY8Q",
-    "url": "https://www.youtube.com/watch?v=SpA7y5eMbzo"
-  },
-  {
-    "name": "七音うら",
-    "youtubeid": "UCv2IYO-4waCpHvn50SWWY2A",
-    "title": "【#音楽雑学 】Q.世界初の電子楽器は？　#音楽クイズ #雑学クイズ",
-    "date": "2025-12-04T12:00:48.000+09:00",
-    "status": "archive",
-    "thumbnail": "https://i.ytimg.com/vi/Xc86LM_axh4/mqdefault.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/T655ATpSd2gkjZBrokvlkaUH0f5-fCpQdcJpwxmmNdy6fxCYffAlq2sMhPOtFk_CvVyOkEPY8Q",
-    "url": "https://www.youtube.com/watch?v=Xc86LM_axh4"
-  },
-  {
     "name": "堂下さとり",
     "youtubeid": "UCBq6MSUL-Ermvnoj3PtX7Iw",
     "title": "お昼のぼちごー雑談",
@@ -1090,6 +1060,16 @@
     "url": "https://www.youtube.com/watch?v=8IoqCfCPcZc"
   },
   {
+    "name": "犬丸なでこ",
+    "youtubeid": "UCdJmJxMfXrlnZabUkuss2EA",
+    "title": "【雑談】童心イベント最終日だよおおおお【犬丸なでこ/パレデミア学園】",
+    "date": "2025-12-06T21:00:04.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/Cq1otf-GsKU/mqdefault.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/OQpHijB1HDVezkvjNufbM9PmR9kbhUe1mfnSRqJ67l-R34sAc4BhYmQ2U7C-SapKAtcOk_Bp",
+    "url": "https://www.youtube.com/watch?v=Cq1otf-GsKU"
+  },
+  {
     "name": "忠犬しず",
     "youtubeid": "UCPzN3R0x_SciJJ_FP-STpHQ",
     "title": "【 同時視聴 】ウルトラQの15~17話とウルトラマンアーク8話を見るぞ！【 Vtuber/忠犬しず 】#特撮オタク",
@@ -1398,6 +1378,56 @@
     "thumbnail": "https://i.ytimg.com/vi/k3w7ICofGf8/mqdefault_live.jpg",
     "channelIcon": "https://yt3.googleusercontent.com/9dVPxoBbcXIeN4O1N6bYiWu3EHHHeaStY7fQYPZfF3thWIP2Sc9Uc6kg56Aj0UHrg5QqqDtn",
     "url": "https://www.youtube.com/watch?v=k3w7ICofGf8"
+  },
+  {
+    "name": "満力きぃ",
+    "youtubeid": "UCE7WT_aCMxej-E4NUz-wEHg",
+    "title": "寝起き彼女の理想と現実がヤバい#新人VTuber#理想と現実#彼女#寝起き#shorts",
+    "date": "2025-12-07T09:01:14.000+09:00",
+    "status": "archive",
+    "thumbnail": "https://i.ytimg.com/vi/xmD4RpnMd5c/mqdefault.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/jvlw_xWAYcbgcPbg1CBi6PF5wSlP-4n6Nmbv8EElPHU9VegxlBIt0_p8_4qlKxHrA6WtE5bGSA",
+    "url": "https://www.youtube.com/watch?v=xmD4RpnMd5c"
+  },
+  {
+    "name": "桜樹美彩",
+    "youtubeid": "UCTwKpTFX1aAXD0xpBqYqTdg",
+    "title": "【 初見歓迎 】チャンネル登録で色を取り戻す朝活雑談🍀【縦型配信】 #shorts  #vtuber #桜樹美彩 #みさライなう #新人Vtuber",
+    "date": "2025-12-07T10:00:20.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/OfA_SjL71SE/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/pDP2GuylW0RN1REDScFAlNklbXaPRqTm2mwT2F7dIo8xoYYFPfspsjGH_G3RagwlKVlQbdw95bY",
+    "url": "https://www.youtube.com/watch?v=OfA_SjL71SE"
+  },
+  {
+    "name": "堂下さとり",
+    "youtubeid": "UCBq6MSUL-Ermvnoj3PtX7Iw",
+    "title": "Ghana公式チョコおかずレシピ＆アイス作り",
+    "date": "2025-12-07T11:10:28.000+09:00",
+    "status": "archive",
+    "thumbnail": "https://i.ytimg.com/vi/zIMfEImufB0/mqdefault.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/eW_Hug0M6zFk9QSbAmOUWLMSfzBlCHmes-8yAksvfUNzyLgY6TSsE_eW8ncfE4bHYZXKoTWxmQ",
+    "url": "https://www.youtube.com/watch?v=zIMfEImufB0"
+  },
+  {
+    "name": "桜堂ねる",
+    "youtubeid": "UC0H7dRRqhfOifbYQ2TURdAg",
+    "title": "圧倒的自由な桃紅茶昼活1207",
+    "date": "2025-12-07T12:01:04.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/bz61tRAoWaQ/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/hBz75E3AEST1Dzv5vOTHAqoJfayd30WIWWQ3ZFLlWMHDsyZ_QD6ZVVUtLTKSizalT3APPtdpFGI",
+    "url": "https://www.youtube.com/watch?v=bz61tRAoWaQ"
+  },
+  {
+    "name": "七音うら",
+    "youtubeid": "UCv2IYO-4waCpHvn50SWWY2A",
+    "title": "【#昼活 】1207昼活！ねるとまくど食べる！【七音うら / 桜堂ねる】",
+    "date": "2025-12-07T12:01:34.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/uttuqGTgfng/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/T655ATpSd2gkjZBrokvlkaUH0f5-fCpQdcJpwxmmNdy6fxCYffAlq2sMhPOtFk_CvVyOkEPY8Q",
+    "url": "https://www.youtube.com/watch?v=uttuqGTgfng"
   },
   {
     "name": "神童めしあ",

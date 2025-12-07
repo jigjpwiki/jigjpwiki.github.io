@@ -1,14 +1,5 @@
 [
   {
-    "name": "銘兎目あう",
-    "twitchid": "Metome_Au",
-    "title": "【スト６】1506MR～Mケン👊🥋24時までやろっ～！",
-    "date": "2025-12-04T22:49:02.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://yt3.googleusercontent.com/VB97J8AMHex_rkfd6hDhfiGhhVvrL-NNkseP2mMYSWh75sxA_oXctmxK5tV4FYgkM17RUAx6GQ",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/765e4ed7d46146b71619_metome_au_315168085745_1764856136//thumb/thumb0-320x180.jpg"
-  },
-  {
     "name": "火乃晴るい",
     "twitchid": "hinoha_rui",
     "title": "【 #TFT 】参加◎！ネムネムなのでTFT少しする",
@@ -163,9 +154,10 @@
     "name": "しーはむ",
     "twitchid": "siyham",
     "title": "無職杯の練習 コメントも見てるよ！！【誕生日グッズ出てます】",
-    "date": "2025-12-07T19:57:57.000+09:00",
-    "status": "live",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_siyham-320x180.jpg"
+    "date": "2025-12-07T19:58:03.000+09:00",
+    "status": "archive",
+    "channelIcon": "https://yt3.googleusercontent.com/y0zP0Uz7HSLx5dv3xo488Suxk8rJQQUC1wXaymjUBIQIwa25WlVu_VmrsT1xAyVD-jgeL7hs",
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/d539c415be6610756678_siyham_315189355890_1765105077//thumb/thumb0-320x180.jpg"
   },
   {
     "name": "李じゅぴ汰",
@@ -191,5 +183,13 @@
     "date": "2025-12-07T22:27:36.000+09:00",
     "status": "live",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_hinoha_rui-320x180.jpg"
+  },
+  {
+    "name": "妖小琳",
+    "twitchid": "yaosyaorin",
+    "title": "雑談ASMR",
+    "date": "2025-12-07T23:00:38.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_yaosyaorin-320x180.jpg"
   }
 ]

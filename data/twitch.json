@@ -1,14 +1,5 @@
 [
   {
-    "name": "妖小琳",
-    "twitchid": "yaosyaorin",
-    "title": "８９３",
-    "date": "2025-12-04T21:00:19.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://yt3.googleusercontent.com/Ji8DJgyzWKUbbeWlYgFfsCZtyiGZ-zM597otZBcFnIoEVIw7284GbNbBQcALgEKwqvk8OXNZLA",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d1m7jfoe9zdc1j/86874778a9c3b19ca5a0_yaosyaorin_316327457497_1764849615//thumb/thumb0-320x180.jpg"
-  },
-  {
     "name": "しーはむ",
     "twitchid": "siyham",
     "title": "無職杯練習！！【誕生日グッズ出てます】",
@@ -189,7 +180,16 @@
     "name": "李じゅぴ汰",
     "twitchid": "lee_jupita",
     "title": "【スト6大会】きのそらCUP！ダイヤ以下の部！  Mキンバリー【ストリートファイター6】",
-    "date": "2025-12-07T20:05:22.000+09:00",
+    "date": "2025-12-07T20:05:28.000+09:00",
+    "status": "archive",
+    "channelIcon": "https://yt3.googleusercontent.com/QQqec9A1J7eLk9RrRYD9vvk51BBJzcE1leGkU9n4YkwHqht9gmGT1ktmSlKItQtbuMSGuklAFxM",
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/1d4fd07e4ce0527d566e_lee_jupita_315180272625_1765105522//thumb/thumb0-320x180.jpg"
+  },
+  {
+    "name": "李じゅぴ汰",
+    "twitchid": "lee_jupita",
+    "title": "【スト6大会】きのそらCUP！ダイヤ以下の部！  Mキンバリー【ストリートファイター6】",
+    "date": "2025-12-07T21:15:50.000+09:00",
     "status": "live",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lee_jupita-320x180.jpg"
   }

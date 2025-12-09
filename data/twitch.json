@@ -1,14 +1,5 @@
 [
   {
-    "name": "駿河ルガ",
-    "twitchid": "suruga_luga",
-    "title": "【スト6】鏡のサガット【登龍門BOX/駿河ルガ】",
-    "date": "2025-12-06T18:01:25.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://yt3.googleusercontent.com/JlY4XEMg9noNa4ShOtky0OwYbKXjnhnje6NQUcwrnJ0UI3C9VQrB-fBNat9QJSUJuuT_Yo1P",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/eb3d9f9f1f538b29cd1f_suruga_luga_315175332977_1765011675//thumb/thumb0-320x180.jpg"
-  },
-  {
     "name": "銘兎目あう",
     "twitchid": "Metome_Au",
     "title": "【APEX】参加型！いつもは格闘だけど今日はﾊﾞｷｭｰﾝ🔫🐰",
@@ -192,9 +183,10 @@
     "name": "火乃晴るい",
     "twitchid": "hinoha_rui",
     "title": "【 #EFT 】PvP P1 37～ めんたーで破産しました☆",
-    "date": "2025-12-09T13:06:50.000+09:00",
-    "status": "live",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_hinoha_rui-320x180.jpg"
+    "date": "2025-12-09T13:06:56.000+09:00",
+    "status": "archive",
+    "channelIcon": "https://yt3.googleusercontent.com/8vDFqOVNprKqFE0o7EecXyQleBXIibeJZpXpSgjm5msh4Yd0S8hTsbmYZyOBXa3bUEgBJHZt1w",
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/a0dad4fc1fbbf9bc86f7_hinoha_rui_315242969075_1765253210//thumb/thumb0-320x180.jpg"
   },
   {
     "name": "なかもとおまち",
@@ -208,8 +200,17 @@
     "name": "しーはむ",
     "twitchid": "siyham",
     "title": "ヴェックスOTPランクへ【誕生日グッズ出てます】",
-    "date": "2025-12-09T15:05:23.000+09:00",
+    "date": "2025-12-09T15:05:29.000+09:00",
+    "status": "archive",
+    "channelIcon": "https://yt3.googleusercontent.com/y0zP0Uz7HSLx5dv3xo488Suxk8rJQQUC1wXaymjUBIQIwa25WlVu_VmrsT1xAyVD-jgeL7hs",
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/fe88e0aafe874e633874_siyham_315196573170_1765260323//thumb/thumb0-320x180.jpg"
+  },
+  {
+    "name": "駿河ルガ",
+    "twitchid": "suruga_luga",
+    "title": "【スト6】竜のサガット【登龍門BOX/駿河ルガ】",
+    "date": "2025-12-09T18:02:13.000+09:00",
     "status": "live",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_siyham-320x180.jpg"
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_suruga_luga-320x180.jpg"
   }
 ]

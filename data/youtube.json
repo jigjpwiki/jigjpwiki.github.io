@@ -1,65 +1,5 @@
 [
   {
-    "name": "瀬奈りるか",
-    "youtubeid": "UCWi_ztz8Xuz4XfzhoG6ZfyA",
-    "title": "【青鬼】青鬼で学ぶまどマギほむらの気持ち【パレデミア学園】#新人vtuber #ゲーム実況",
-    "date": "2025-12-06T21:36:28.000+09:00",
-    "status": "archive",
-    "thumbnail": "https://i.ytimg.com/vi/rLqkRXMQvBg/mqdefault.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/bM-okYT9oTq3M5dq33VSpidEiaC8MP2EoQXX2gNpgW7PAV7RSn1t7_2HghmCcAwrNxriAmMy",
-    "url": "https://www.youtube.com/watch?v=rLqkRXMQvBg"
-  },
-  {
-    "name": "春原なずな",
-    "youtubeid": "UCW-iuU7g3BJnuQ1D3UkqeSA",
-    "title": "【 空の軌跡 the 1st 】#11最終回！ 完全初見！忘れられない旅になる！封印区画～！ ※ネタバレ注意【 春原なずな / VTuber 】",
-    "date": "2025-12-06T22:00:00.000+09:00",
-    "status": "upcoming",
-    "thumbnail": "https://i.ytimg.com/vi/GY-U9qeYWfU/mqdefault_live.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/0pD1c95Y9X0VrhzWtlf2SRPqdkesiuZxC8Hb5Mg9Xv1WWpQaFCmjITTK8-n5HlNsB-yDbAN4CZA",
-    "url": "https://www.youtube.com/watch?v=GY-U9qeYWfU"
-  },
-  {
-    "name": "犬丸なでこ",
-    "youtubeid": "UCdJmJxMfXrlnZabUkuss2EA",
-    "title": "みんなで推理！難問何問正解できる？！？！？！【犬丸なでこ/パレデミア学園】",
-    "date": "2025-12-06T22:00:00.000+09:00",
-    "status": "upcoming",
-    "thumbnail": "https://i.ytimg.com/vi/vmFtiKRBtfU/mqdefault_live.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/OQpHijB1HDVezkvjNufbM9PmR9kbhUe1mfnSRqJ67l-R34sAc4BhYmQ2U7C-SapKAtcOk_Bp",
-    "url": "https://www.youtube.com/watch?v=vmFtiKRBtfU"
-  },
-  {
-    "name": "陰山アゲハ",
-    "youtubeid": "UCIw8aQVRBwi72yOrPLgkbRQ",
-    "title": "【#飲酒雑談 】ぽしゃ雑！未成年はジュースで我慢して【#新人Vtuber #アゲハが来たぞ #パレデミア学園 】",
-    "date": "2025-12-06T22:00:41.000+09:00",
-    "status": "live",
-    "thumbnail": "https://i.ytimg.com/vi/YdYHss9GrB4/mqdefault_live.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/TRbQGbBCM6R6LAzCQXka_AxVqF-ozTWwqW455tZU9q9GMo4ijQNNc3d818MX-5wmMnhv-k84Rw",
-    "url": "https://www.youtube.com/watch?v=YdYHss9GrB4"
-  },
-  {
-    "name": "愛乃宮ゆめ",
-    "youtubeid": "UCttSjPiwPYpiPuCrgxK7c1g",
-    "title": "愛乃宮ファッションショー✨【愛乃宮ゆめ/パレデミア学園】",
-    "date": "2025-12-06T22:03:57.000+09:00",
-    "status": "live",
-    "thumbnail": "https://i.ytimg.com/vi/7oKl9VxijWg/mqdefault_live.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/M01WvdgX_IfwIkwA4g0_gf9qo4fqF5U7pnXloNwOcL2XnTXXdF8UQ9HS2oyv21t-GXnIhBTWndk",
-    "url": "https://www.youtube.com/watch?v=7oKl9VxijWg"
-  },
-  {
-    "name": "瀬奈りるか",
-    "youtubeid": "UCWi_ztz8Xuz4XfzhoG6ZfyA",
-    "title": "【雀エボライブ】視聴者参加型🀄✨役満大チャンスで上がったことのない役満上がりたい～～～！🌟【公認エボライバー】＃せなりるライブ #PR",
-    "date": "2025-12-06T22:32:42.000+09:00",
-    "status": "live",
-    "thumbnail": "https://i.ytimg.com/vi/l2SHZNCsfdg/mqdefault_live.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/bM-okYT9oTq3M5dq33VSpidEiaC8MP2EoQXX2gNpgW7PAV7RSn1t7_2HghmCcAwrNxriAmMy",
-    "url": "https://www.youtube.com/watch?v=l2SHZNCsfdg"
-  },
-  {
     "name": "風野かなめ",
     "youtubeid": "UC2AO1ZIgtAVIh6_mx2SqmMQ",
     "title": "【誕生日】祝ってください【カウントダウン】",
@@ -1060,6 +1000,36 @@
     "url": "https://www.youtube.com/watch?v=R57OXRIB0A8"
   },
   {
+    "name": "花晴りら",
+    "youtubeid": "UCqcnlq8uJqnGml6hcIrMCZw",
+    "title": "【第一回】パレデミア学園雀魂大会PV【新人Vtuber】",
+    "date": "2025-12-09T19:01:15.000+09:00",
+    "status": "archive",
+    "thumbnail": "https://i.ytimg.com/vi/PGdGCnlOe5E/mqdefault.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/CH5JMWVQZ_RtloaXoj6W-yXjo9x8UxXSBG_vMyDnfk7M2QTOApVE1zOesu_aDrSAqvDbGrUyxs0",
+    "url": "https://www.youtube.com/watch?v=PGdGCnlOe5E"
+  },
+  {
+    "name": "相栖るじゅ",
+    "youtubeid": "UCrpdBoGpa6g2WEtRWsIlhDQ",
+    "title": "ふんふんあいやー #shorts #新人vtuberだけど推されたい #推しをお探しですか #pitbullterriers",
+    "date": "2025-12-09T19:01:24.000+09:00",
+    "status": "archive",
+    "thumbnail": "https://i.ytimg.com/vi/pM3BIP_vv0Q/mqdefault.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/yQbh9vEEgS_UapoQhIxxoTSy13bDxlHYC-ncTcO9VIDBN2NvrLTAWeKGQ72CN2fhOOrHqYaFDA",
+    "url": "https://www.youtube.com/watch?v=pM3BIP_vv0Q"
+  },
+  {
+    "name": "銘兎目あう",
+    "youtubeid": "UCpr-9ssUUgSb0EpDA8bRuTA",
+    "title": "【スト６】1458MR～Mケン🥋デイヤフンッ👣 #新人Vtuber #あう時間 #スト６ #StreetFighter6 #ストリートファイター6　#おすすめ",
+    "date": "2025-12-09T19:02:43.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/r-EQvE65g0I/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/VB97J8AMHex_rkfd6hDhfiGhhVvrL-NNkseP2mMYSWh75sxA_oXctmxK5tV4FYgkM17RUAx6GQ",
+    "url": "https://www.youtube.com/watch?v=r-EQvE65g0I"
+  },
+  {
     "name": "宇田わん",
     "youtubeid": "UCp45rWiRwgYZJUR4bQO-Xgw",
     "title": "【 雑談 】回答求ム！！今何でYouTube見てますかっ？【 #宇田わん #新人VTuber / #登龍門BOX 】",
@@ -1078,6 +1048,26 @@
     "thumbnail": "https://i.ytimg.com/vi/2I6cpytalHE/mqdefault_live.jpg",
     "channelIcon": "https://yt3.googleusercontent.com/Ji8DJgyzWKUbbeWlYgFfsCZtyiGZ-zM597otZBcFnIoEVIw7284GbNbBQcALgEKwqvk8OXNZLA",
     "url": "https://www.youtube.com/watch?v=2I6cpytalHE"
+  },
+  {
+    "name": "VTuber登龍門",
+    "youtubeid": "UC4BwtvtE6flwK-EnmB5c9uQ",
+    "title": "ホロライブの天音かなたが突然の卒業発表！異例の情報漏洩対策や会社体制についてにじさんじ元COO岩永とキズナアイ原案者松田に聞いてみた【トピック会】",
+    "date": "2025-12-09T20:01:06.000+09:00",
+    "status": "archive",
+    "thumbnail": "https://i.ytimg.com/vi/XMdvAPlYEsU/mqdefault.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/fkj-1QWZHwze8fuKIbgiXXJsZ8nXscTHT6zjw06tnH-3yJgcwvoG6CVMcL_eThe26G7q5qu_yw",
+    "url": "https://www.youtube.com/watch?v=XMdvAPlYEsU"
+  },
+  {
+    "name": "桜堂ねる",
+    "youtubeid": "UC0H7dRRqhfOifbYQ2TURdAg",
+    "title": "12月9日【桜堂ねる】#今日は何の日 #ねる道場 #vtuber #shorts",
+    "date": "2025-12-09T20:20:43.000+09:00",
+    "status": "archive",
+    "thumbnail": "https://i.ytimg.com/vi/9wRVejDh2sU/mqdefault.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/hBz75E3AEST1Dzv5vOTHAqoJfayd30WIWWQ3ZFLlWMHDsyZ_QD6ZVVUtLTKSizalT3APPtdpFGI",
+    "url": "https://www.youtube.com/watch?v=9wRVejDh2sU"
   },
   {
     "name": "桜庭羽奈",
@@ -1118,6 +1108,66 @@
     "thumbnail": "https://i.ytimg.com/vi/M5NYZuhT5kI/mqdefault_live.jpg",
     "channelIcon": "https://yt3.googleusercontent.com/9dVPxoBbcXIeN4O1N6bYiWu3EHHHeaStY7fQYPZfF3thWIP2Sc9Uc6kg56Aj0UHrg5QqqDtn",
     "url": "https://www.youtube.com/watch?v=M5NYZuhT5kI"
+  },
+  {
+    "name": "七音うら",
+    "youtubeid": "UCv2IYO-4waCpHvn50SWWY2A",
+    "title": "【#毎日うらち 】褒めて！　#新人vtuber",
+    "date": "2025-12-09T21:00:18.000+09:00",
+    "status": "archive",
+    "thumbnail": "https://i.ytimg.com/vi/3mgPzvB7aNU/mqdefault.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/T655ATpSd2gkjZBrokvlkaUH0f5-fCpQdcJpwxmmNdy6fxCYffAlq2sMhPOtFk_CvVyOkEPY8Q",
+    "url": "https://www.youtube.com/watch?v=3mgPzvB7aNU"
+  },
+  {
+    "name": "陰山アゲハ",
+    "youtubeid": "UCIw8aQVRBwi72yOrPLgkbRQ",
+    "title": "【#雑談 】木曜日からのイベントのこととゆるり雑談【#新人Vtuber #アゲハが来たぞ #パレデミア学園 】",
+    "date": "2025-12-09T21:01:58.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/vDqmFla2zlE/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/TRbQGbBCM6R6LAzCQXka_AxVqF-ozTWwqW455tZU9q9GMo4ijQNNc3d818MX-5wmMnhv-k84Rw",
+    "url": "https://www.youtube.com/watch?v=vDqmFla2zlE"
+  },
+  {
+    "name": "犬丸なでこ",
+    "youtubeid": "UCdJmJxMfXrlnZabUkuss2EA",
+    "title": "【マシュマロ＆雑談】まるまるコラボ♡【灯野ぺけ。＆犬丸なでこ/パレデミア学園】",
+    "date": "2025-12-09T21:03:07.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/gNZlNM1M6Ws/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/OQpHijB1HDVezkvjNufbM9PmR9kbhUe1mfnSRqJ67l-R34sAc4BhYmQ2U7C-SapKAtcOk_Bp",
+    "url": "https://www.youtube.com/watch?v=gNZlNM1M6Ws"
+  },
+  {
+    "name": "風野かなめ",
+    "youtubeid": "UC2AO1ZIgtAVIh6_mx2SqmMQ",
+    "title": "【雑談】さむい【パレデミア学園】",
+    "date": "2025-12-09T21:59:43.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/nofCem7a6BU/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/gtjdyYJUUd1ESZ7-6meuTshluv9Susg7NeB54uoFxPpLrof9Fttx2K7Ck5B6DsbNxb_pNm-z",
+    "url": "https://www.youtube.com/watch?v=nofCem7a6BU"
+  },
+  {
+    "name": "藤森ちとせ",
+    "youtubeid": "UCAhdxmsdngH4noySdpVAVWQ",
+    "title": "🌟10月10日金曜日🌟 今日の誕生花は #ハマギク ！ #誕生花 #花言葉 #藤森ちとせ #浜菊",
+    "date": "2025-12-09T22:00:58.000+09:00",
+    "status": "archive",
+    "thumbnail": "https://i.ytimg.com/vi/QgCSCCrutdg/mqdefault.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/traR_yWe-AOGyM2wjo8h2FJO9JWBcbjfrL13X-umeD6BtNPopSZ2Q3YmdJq_5K9gWgHf_j64iQ",
+    "url": "https://www.youtube.com/watch?v=QgCSCCrutdg"
+  },
+  {
+    "name": "雛菊のん",
+    "youtubeid": "UChccV6U0Tkx9de4YjXbEelw",
+    "title": "ぶきあつめ～なんでも武器になるRPG～#shorts #vtuber #新人vtuber  #切り抜き #おすすめにのりたい #ゲーム実況",
+    "date": "2025-12-09T22:47:01.000+09:00",
+    "status": "archive",
+    "thumbnail": "https://i.ytimg.com/vi/Hp7cAJ7DZrw/mqdefault.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/OxvUqyZAoX4gIX91GOkYMIE2iYfD1ndRKGZbo4Ih8cDb5QuoXpqNJWZKpephYlI0zNiYjQptAQ",
+    "url": "https://www.youtube.com/watch?v=Hp7cAJ7DZrw"
   },
   {
     "name": "桜樹美彩",

@@ -1,14 +1,5 @@
 [
   {
-    "name": "妖小琳",
-    "twitchid": "yaosyaorin",
-    "title": "雑談ASMR",
-    "date": "2025-12-07T23:00:43.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://yt3.googleusercontent.com/Ji8DJgyzWKUbbeWlYgFfsCZtyiGZ-zM597otZBcFnIoEVIw7284GbNbBQcALgEKwqvk8OXNZLA",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d1m7jfoe9zdc1j/a7642aea4f3d2aad608c_yaosyaorin_316438663386_1765116038//thumb/thumb0-320x180.jpg"
-  },
-  {
     "name": "なかもとおまち",
     "twitchid": "41futon",
     "title": "朝と冬のおいしい空気【#月曜朝はなかモーニング】",
@@ -246,9 +237,10 @@
     "name": "駿河ルガ",
     "twitchid": "suruga_luga",
     "title": "【スト6】脚のサガット【登龍門BOX/駿河ルガ】",
-    "date": "2025-12-10T18:14:05.000+09:00",
-    "status": "live",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_suruga_luga-320x180.jpg"
+    "date": "2025-12-10T18:14:16.000+09:00",
+    "status": "archive",
+    "channelIcon": "https://yt3.googleusercontent.com/JlY4XEMg9noNa4ShOtky0OwYbKXjnhnje6NQUcwrnJ0UI3C9VQrB-fBNat9QJSUJuuT_Yo1P",
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/4e154bf169062be6c2c6_suruga_luga_315201240946_1765358045//thumb/thumb0-320x180.jpg"
   },
   {
     "name": "銘兎目あう",
@@ -257,5 +249,13 @@
     "date": "2025-12-10T20:31:50.000+09:00",
     "status": "live",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_Metome_Au-320x180.jpg"
+  },
+  {
+    "name": "妖小琳",
+    "twitchid": "yaosyaorin",
+    "title": "明日マシ",
+    "date": "2025-12-10T22:59:37.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_yaosyaorin-320x180.jpg"
   }
 ]

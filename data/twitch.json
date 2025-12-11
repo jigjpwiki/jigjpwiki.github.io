@@ -225,10 +225,19 @@
   {
     "name": "水透ユウ",
     "twitchid": "minato_yu_",
-    "title": "【 ＃R6SX 】スクリム助っ人よばれました再（たまま杯team虹彩神社）【水透ユウ】【 #新人vtuber 】",
+    "title": "【 ＃R6SX 】参加型アンランク！始めました！【水透ユウ】【 #新人vtuber 】",
     "date": "2025-12-11T21:10:28.000+09:00",
     "status": "live",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_minato_yu_-320x180.jpg"
+  },
+  {
+    "name": "水透ユウ",
+    "twitchid": "minato_yu_",
+    "title": "【 ＃R6SX 】スクリム助っ人よばれました再（たまま杯team虹彩神社）【水透ユウ】【 #新人vtuber 】",
+    "date": "2025-12-11T21:10:34.000+09:00",
+    "status": "archive",
+    "channelIcon": "https://yt3.googleusercontent.com/eVD8Ygm7KVyh3dvWnyebfYlbYpD13ZYQ-Bos8WdR5LDE61A3svHVHCLEY-rM3IQgw9O4uvdd",
+    "thumbnail": "https://vod-secure.twitch.tv/_404/404_processing_320x180.png"
   },
   {
     "name": "しーはむ",
@@ -245,5 +254,13 @@
     "date": "2025-12-11T21:39:04.000+09:00",
     "status": "live",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_Metome_Au-320x180.jpg"
+  },
+  {
+    "name": "真昼ねる",
+    "twitchid": "mahiruneru",
+    "title": "【参加◎】高熱と戦い、新シーズンは初めてなので優しくしてください♡【ぷろのゔぁ￤VTuber￤真昼ねる】",
+    "date": "2025-12-11T23:07:34.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_mahiruneru-320x180.jpg"
   }
 ]

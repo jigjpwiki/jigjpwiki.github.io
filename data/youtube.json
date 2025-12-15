@@ -1080,6 +1080,16 @@
     "url": "https://www.youtube.com/watch?v=JPN8852BwGI"
   },
   {
+    "name": "犬丸なでこ",
+    "youtubeid": "UCdJmJxMfXrlnZabUkuss2EA",
+    "title": "#２８【朝活】おはようございますわんっ！【犬丸なでこ/パレデミア学園】",
+    "date": "2025-12-16T06:59:33.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/b90oR9AVoAk/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/OQpHijB1HDVezkvjNufbM9PmR9kbhUe1mfnSRqJ67l-R34sAc4BhYmQ2U7C-SapKAtcOk_Bp",
+    "url": "https://www.youtube.com/watch?v=b90oR9AVoAk"
+  },
+  {
     "name": "桜樹美彩",
     "youtubeid": "UCTwKpTFX1aAXD0xpBqYqTdg",
     "title": "【 朝活 / ニュース 】初見歓迎🌸12月16日（火）⏰『ちょこっと』朝活ニュース🍀天気予報/時事ニュース🍁ROM歓迎🐥 #vtuber #みさライなう #桜樹美彩 #新人vtuber",
@@ -1208,5 +1218,15 @@
     "thumbnail": "https://i.ytimg.com/vi/sq5tTo-UHiw/mqdefault_live.jpg",
     "channelIcon": "https://yt3.googleusercontent.com/WBGP05KaXeA21IzCbCeM0QHa0v9maVvVUBDZ2DyfTT62F1wGaW3hLOQBy1gCfuQfEnDNgwbsrQ",
     "url": "https://www.youtube.com/watch?v=sq5tTo-UHiw"
+  },
+  {
+    "name": "桜樹美彩",
+    "youtubeid": "UCTwKpTFX1aAXD0xpBqYqTdg",
+    "title": "【 朝活 / ニュース 】12月19日（金）⏰ AM7:00 『ちょこっと』朝活ニュース🍀天気予報/時事ニュース🍁初見＆ROM勢大歓迎🐥 #vtuber #みさライなう #桜樹美彩 #新人vtuber",
+    "date": "2025-12-19T07:00:00.000+09:00",
+    "status": "upcoming",
+    "thumbnail": "https://i.ytimg.com/vi/8-AADhMBzlY/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/pDP2GuylW0RN1REDScFAlNklbXaPRqTm2mwT2F7dIo8xoYYFPfspsjGH_G3RagwlKVlQbdw95bY",
+    "url": "https://www.youtube.com/watch?v=8-AADhMBzlY"
   }
 ]

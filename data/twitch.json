@@ -1,14 +1,5 @@
 [
   {
-    "name": "駿河ルガ",
-    "twitchid": "suruga_luga",
-    "title": "【スト6】味のサガット【登龍門BOX/駿河ルガ】",
-    "date": "2025-12-12T18:00:30.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://yt3.googleusercontent.com/JlY4XEMg9noNa4ShOtky0OwYbKXjnhnje6NQUcwrnJ0UI3C9VQrB-fBNat9QJSUJuuT_Yo1P",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/56c639ab8a5270df32ea_suruga_luga_315209427314_1765530020//thumb/thumb0-320x180.jpg"
-  },
-  {
     "name": "妖小琳",
     "twitchid": "yaosyaorin",
     "title": "小林鍼灸治療院",
@@ -155,8 +146,25 @@
     "name": "しーはむ",
     "twitchid": "siyham",
     "title": "大会でやったアーリはソロQでも通用するのか【誕生日グッズ発売中】",
-    "date": "2025-12-15T14:23:03.000+09:00",
+    "date": "2025-12-15T14:23:09.000+09:00",
+    "status": "archive",
+    "channelIcon": "https://yt3.googleusercontent.com/y0zP0Uz7HSLx5dv3xo488Suxk8rJQQUC1wXaymjUBIQIwa25WlVu_VmrsT1xAyVD-jgeL7hs",
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/148d9030166948524826_siyham_315221942770_1765776183//thumb/thumb0-320x180.jpg"
+  },
+  {
+    "name": "銘兎目あう",
+    "twitchid": "Metome_Au",
+    "title": "【スト６】ちはたんCUPMini練習会🌷19：00～天宮ちほさん・ななりーちゃんと一緒！",
+    "date": "2025-12-15T18:00:15.000+09:00",
     "status": "live",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_siyham-320x180.jpg"
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_Metome_Au-320x180.jpg"
+  },
+  {
+    "name": "駿河ルガ",
+    "twitchid": "suruga_luga",
+    "title": "【スト6】塔のサガット【登龍門BOX/駿河ルガ】",
+    "date": "2025-12-15T18:00:49.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_suruga_luga-320x180.jpg"
   }
 ]

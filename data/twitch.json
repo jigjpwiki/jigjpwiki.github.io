@@ -1,14 +1,5 @@
 [
   {
-    "name": "妖小琳",
-    "twitchid": "yaosyaorin",
-    "title": "彼氏の周りにいたら嫌な女友達を拳でわからせるゲーム",
-    "date": "2025-12-13T20:09:05.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://yt3.googleusercontent.com/Ji8DJgyzWKUbbeWlYgFfsCZtyiGZ-zM597otZBcFnIoEVIw7284GbNbBQcALgEKwqvk8OXNZLA",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d1m7jfoe9zdc1j/373de7f5db2ccd1bccb7_yaosyaorin_316535356506_1765624140//thumb/thumb0-320x180.jpg"
-  },
-  {
     "name": "銘兎目あう",
     "twitchid": "Metome_Au",
     "title": "【スト６】1605MR～Mケン🥋今日も練習だぁ👊",
@@ -185,5 +176,13 @@
     "date": "2025-12-16T19:47:30.000+09:00",
     "status": "live",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lee_jupita-320x180.jpg"
+  },
+  {
+    "name": "水透ユウ",
+    "twitchid": "minato_yu_",
+    "title": "【 ＃VALORANT 】久しぶりすぎて終わってる初心者です22:00～フルパ【水透ユウ】【 #新人vtuber 】",
+    "date": "2025-12-16T20:16:31.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_minato_yu_-320x180.jpg"
   }
 ]

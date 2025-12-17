@@ -217,10 +217,19 @@
   {
     "name": "銘兎目あう",
     "twitchid": "Metome_Au",
-    "title": "【スト６】21:00～ちはたんCUPMini👊Mケン🥋天宮ちほさん☔ななりーちゃん🍓",
+    "title": "【スト６】ちはたんCUPMini👊Mケン🥋天宮ちほさん☔ななりーちゃん🍓",
     "date": "2025-12-17T19:09:29.000+09:00",
     "status": "live",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_Metome_Au-320x180.jpg"
+  },
+  {
+    "name": "銘兎目あう",
+    "twitchid": "Metome_Au",
+    "title": "【スト６】21:00～ちはたんCUPMini👊Mケン🥋天宮ちほさん☔ななりーちゃん🍓",
+    "date": "2025-12-17T19:09:35.000+09:00",
+    "status": "archive",
+    "channelIcon": "https://yt3.googleusercontent.com/VB97J8AMHex_rkfd6hDhfiGhhVvrL-NNkseP2mMYSWh75sxA_oXctmxK5tV4FYgkM17RUAx6GQ",
+    "thumbnail": "https://vod-secure.twitch.tv/_404/404_processing_320x180.png"
   },
   {
     "name": "しーはむ",
@@ -229,5 +238,22 @@
     "date": "2025-12-17T21:33:02.000+09:00",
     "status": "live",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_siyham-320x180.jpg"
+  },
+  {
+    "name": "火乃晴るい",
+    "twitchid": "hinoha_rui",
+    "title": "【 #VALORANT 】今日はカスタム！頑張らせていただきまっす",
+    "date": "2025-12-17T21:56:52.000+09:00",
+    "status": "archive",
+    "channelIcon": "https://yt3.googleusercontent.com/8vDFqOVNprKqFE0o7EecXyQleBXIibeJZpXpSgjm5msh4Yd0S8hTsbmYZyOBXa3bUEgBJHZt1w",
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/e9c08266d5cc2e655c14_hinoha_rui_315223220081_1765976206//thumb/thumb0-320x180.jpg"
+  },
+  {
+    "name": "火乃晴るい",
+    "twitchid": "hinoha_rui",
+    "title": "【 #VALORANT 】今日はカスタム！頑張らせていただきまっす",
+    "date": "2025-12-17T22:06:59.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_hinoha_rui-320x180.jpg"
   }
 ]

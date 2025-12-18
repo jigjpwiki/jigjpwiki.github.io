@@ -213,5 +213,21 @@
     "date": "2025-12-18T18:00:06.000+09:00",
     "status": "live",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_suruga_luga-320x180.jpg"
+  },
+  {
+    "name": "水透ユウ",
+    "twitchid": "minato_yu_",
+    "title": "【 ＃雑談 】同期とゆる酒コラボ！たこ焼きやく w/李じゅぴ汰【 #ぷろのゔぁ 】【 #新人vtuber 】",
+    "date": "2025-12-18T21:05:15.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_minato_yu_-320x180.jpg"
+  },
+  {
+    "name": "李じゅぴ汰",
+    "twitchid": "lee_jupita",
+    "title": "【雑談】水透ユウちゃんと酒飲みタコパ雑談！",
+    "date": "2025-12-18T21:11:59.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lee_jupita-320x180.jpg"
   }
 ]

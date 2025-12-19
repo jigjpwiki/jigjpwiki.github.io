@@ -1,14 +1,5 @@
 [
   {
-    "name": "銘兎目あう",
-    "twitchid": "Metome_Au",
-    "title": "【スト６】1616MR～Mケン🥋明日は大会練習デイヤフンッ👊✨",
-    "date": "2025-12-16T18:07:34.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://yt3.googleusercontent.com/VB97J8AMHex_rkfd6hDhfiGhhVvrL-NNkseP2mMYSWh75sxA_oXctmxK5tV4FYgkM17RUAx6GQ",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/ebaf2dd1b78e340fc58e_metome_au_315218017009_1765876048//thumb/thumb0-320x180.jpg"
-  },
-  {
     "name": "李じゅぴ汰",
     "twitchid": "lee_jupita",
     "title": "【モンスターハンターワールド】キャラクリの李。李のキャラク李。ぽんこつ",
@@ -228,17 +219,19 @@
     "name": "しーはむ",
     "twitchid": "siyham",
     "title": "アーリDAY3リベンジ【誕生日グッズ発売中】",
-    "date": "2025-12-19T15:05:45.000+09:00",
-    "status": "live",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_siyham-320x180.jpg"
+    "date": "2025-12-19T15:05:51.000+09:00",
+    "status": "archive",
+    "channelIcon": "https://yt3.googleusercontent.com/y0zP0Uz7HSLx5dv3xo488Suxk8rJQQUC1wXaymjUBIQIwa25WlVu_VmrsT1xAyVD-jgeL7hs",
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/8b3443b0d918308545e0_siyham_315238515826_1766124345//thumb/thumb0-320x180.jpg"
   },
   {
     "name": "銘兎目あう",
     "twitchid": "Metome_Au",
     "title": "【スト６】1548MR～モダンケン🥋ハイマスター目指してデイヤフン👊",
-    "date": "2025-12-19T15:12:58.000+09:00",
-    "status": "live",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_Metome_Au-320x180.jpg"
+    "date": "2025-12-19T15:13:04.000+09:00",
+    "status": "archive",
+    "channelIcon": "https://yt3.googleusercontent.com/VB97J8AMHex_rkfd6hDhfiGhhVvrL-NNkseP2mMYSWh75sxA_oXctmxK5tV4FYgkM17RUAx6GQ",
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/fb696fa17db9933e43e5_metome_au_315229945329_1766124778//thumb/thumb0-320x180.jpg"
   },
   {
     "name": "李じゅぴ汰",
@@ -247,5 +240,13 @@
     "date": "2025-12-19T16:28:53.000+09:00",
     "status": "live",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lee_jupita-320x180.jpg"
+  },
+  {
+    "name": "駿河ルガ",
+    "twitchid": "suruga_luga",
+    "title": "【スト6】央のサガット【登龍門BOX/駿河ルガ】",
+    "date": "2025-12-19T18:00:42.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_suruga_luga-320x180.jpg"
   }
 ]

@@ -1,14 +1,5 @@
 [
   {
-    "name": "しーはむ",
-    "twitchid": "siyham",
-    "title": "アーリDAY3【誕生日グッズ発売中】",
-    "date": "2025-12-17T15:15:59.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://yt3.googleusercontent.com/y0zP0Uz7HSLx5dv3xo488Suxk8rJQQUC1wXaymjUBIQIwa25WlVu_VmrsT1xAyVD-jgeL7hs",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/79726f0fc1ae6f8c70ab_siyham_315275912435_1765952153//thumb/thumb0-320x180.jpg"
-  },
-  {
     "name": "駿河ルガ",
     "twitchid": "suruga_luga",
     "title": "【スト6】新のサガット【登龍門BOX/駿河ルガ】",
@@ -272,10 +263,19 @@
   {
     "name": "なかもとおまち",
     "twitchid": "41futon",
-    "title": "【トパチャリ】💖すとりーとぎゃるず💖w/べてぃ©なげき©ともり©りりりっぴ©",
+    "title": "ランクマッチだよ",
     "date": "2025-12-20T12:17:44.000+09:00",
     "status": "live",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_41futon-320x180.jpg"
+  },
+  {
+    "name": "なかもとおまち",
+    "twitchid": "41futon",
+    "title": "【トパチャリ】💖すとりーとぎゃるず💖w/べてぃ©なげき©ともり©りりりっぴ©",
+    "date": "2025-12-20T12:17:50.000+09:00",
+    "status": "archive",
+    "channelIcon": "https://yt3.googleusercontent.com/h8jNjVckVf08zSV6wdhQ38Fw9OH7kucAprlJsi9w0YdDIL8_Kcv0tHY-1cK8jPK_jRLSJb3t_Q",
+    "thumbnail": "https://vod-secure.twitch.tv/_404/404_processing_320x180.png"
   },
   {
     "name": "駿河ルガ",

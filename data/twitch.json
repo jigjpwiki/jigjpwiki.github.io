@@ -1,23 +1,5 @@
 [
   {
-    "name": "しーはむ",
-    "twitchid": "siyham",
-    "title": "アーリDAY3リベンジ【誕生日グッズ発売中】",
-    "date": "2025-12-19T15:05:51.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://yt3.googleusercontent.com/y0zP0Uz7HSLx5dv3xo488Suxk8rJQQUC1wXaymjUBIQIwa25WlVu_VmrsT1xAyVD-jgeL7hs",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/8b3443b0d918308545e0_siyham_315238515826_1766124345//thumb/thumb0-320x180.jpg"
-  },
-  {
-    "name": "銘兎目あう",
-    "twitchid": "Metome_Au",
-    "title": "【スト６】1548MR～モダンケン🥋ハイマスター目指してデイヤフン👊",
-    "date": "2025-12-19T15:13:04.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://yt3.googleusercontent.com/VB97J8AMHex_rkfd6hDhfiGhhVvrL-NNkseP2mMYSWh75sxA_oXctmxK5tV4FYgkM17RUAx6GQ",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/fb696fa17db9933e43e5_metome_au_315229945329_1766124778//thumb/thumb0-320x180.jpg"
-  },
-  {
     "name": "李じゅぴ汰",
     "twitchid": "lee_jupita",
     "title": "【都市伝説解体センター】探偵になる！！！！！5話のみ！ ※ネタバレ注意",
@@ -259,5 +241,21 @@
     "status": "archive",
     "channelIcon": "https://yt3.googleusercontent.com/QQqec9A1J7eLk9RrRYD9vvk51BBJzcE1leGkU9n4YkwHqht9gmGT1ktmSlKItQtbuMSGuklAFxM",
     "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/1b2e774f5dfdedefad35_lee_jupita_315251019890_1766375867//thumb/thumb0-320x180.jpg"
+  },
+  {
+    "name": "しーはむ",
+    "twitchid": "siyham",
+    "title": "ソロランク ヴェックス・アーリ・ジグス【冬グッズ＆誕生日グッズ発売中】",
+    "date": "2025-12-22T15:05:36.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_siyham-320x180.jpg"
+  },
+  {
+    "name": "銘兎目あう",
+    "twitchid": "Metome_Au",
+    "title": "【スト６】1523MR～Mケン🥋Dゲージ使い過ぎ注意報⚡1500MR維持するぞぉ👊",
+    "date": "2025-12-22T15:14:16.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_Metome_Au-320x180.jpg"
   }
 ]

@@ -1,35 +1,5 @@
 [
   {
-    "name": "春原なずな",
-    "youtubeid": "UCW-iuU7g3BJnuQ1D3UkqeSA",
-    "title": "【 オクトパストラベラー0 】#6 シリーズ完全初見！3つの指輪を集めた先は。終章～ ※ネタバレ注意【 春原なずな / VTuber 】",
-    "date": "2025-12-20T22:00:00.000+09:00",
-    "status": "upcoming",
-    "thumbnail": "https://i.ytimg.com/vi/4PHTKbxwDC8/mqdefault_live.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/0pD1c95Y9X0VrhzWtlf2SRPqdkesiuZxC8Hb5Mg9Xv1WWpQaFCmjITTK8-n5HlNsB-yDbAN4CZA",
-    "url": "https://www.youtube.com/watch?v=4PHTKbxwDC8"
-  },
-  {
-    "name": "魔法少女アルト",
-    "youtubeid": "UCtRhBS8dlaeBgVcnEZOkAbA",
-    "title": "【特別配信】月１回の私服あまあま配信♪ キミのこと、教えて！  #Vtuber ＃アルトの魔法通信 【登龍門BOX /魔法少女アルト 】",
-    "date": "2025-12-20T22:00:00.000+09:00",
-    "status": "upcoming",
-    "thumbnail": "https://i.ytimg.com/vi/zBfm8VXMKaQ/mqdefault_live.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/JwOkUNiR-08GjSI3MS8-Yk6jzONshtmRWZ9tpjOghB10quze7fgbJkhpPTpIfUX00HBACjAR8Q",
-    "url": "https://www.youtube.com/watch?v=zBfm8VXMKaQ"
-  },
-  {
-    "name": "風野かなめ",
-    "youtubeid": "UC2AO1ZIgtAVIh6_mx2SqmMQ",
-    "title": "【FF4】ファイナルダンジョン【パレデミア学園】",
-    "date": "2025-12-20T22:00:52.000+09:00",
-    "status": "live",
-    "thumbnail": "https://i.ytimg.com/vi/zC6FQCecETM/mqdefault_live.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/gtjdyYJUUd1ESZ7-6meuTshluv9Susg7NeB54uoFxPpLrof9Fttx2K7Ck5B6DsbNxb_pNm-z",
-    "url": "https://www.youtube.com/watch?v=zC6FQCecETM"
-  },
-  {
     "name": "瀬奈りるか",
     "youtubeid": "UCWi_ztz8Xuz4XfzhoG6ZfyA",
     "title": "【＃雀魂】視聴者参加型麻雀🀄✨明日のパレ学麻雀大会に向けて最後の練習をします🌟【＃パレデミア学園】＃せなりるライブ",
@@ -118,6 +88,16 @@
     "thumbnail": "https://i.ytimg.com/vi/J3pD3_eC34M/mqdefault_live.jpg",
     "channelIcon": "https://yt3.googleusercontent.com/CdsPDDWH5A6_0NcvN9NA3dvi2ptoQ_A-b2kS4p8S3s9KbdBiH-IOqTmkNclbbjlaUCBtYKDdrPY",
     "url": "https://www.youtube.com/watch?v=J3pD3_eC34M"
+  },
+  {
+    "name": "妖小琳",
+    "youtubeid": "UC6eopxuX7lx8GnpkntObt1w",
+    "title": "【 #龍が如く7 】覚悟なき喧嘩に勝算なし【妖小琳/Vtuber】",
+    "date": "2025-12-21T12:00:07.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/dp2UM5v3irI/mqdefault.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/Ji8DJgyzWKUbbeWlYgFfsCZtyiGZ-zM597otZBcFnIoEVIw7284GbNbBQcALgEKwqvk8OXNZLA",
+    "url": "https://www.youtube.com/watch?v=dp2UM5v3irI"
   },
   {
     "name": "七音うら",
@@ -790,6 +770,16 @@
     "url": "https://www.youtube.com/watch?v=mfM4nOIveQw"
   },
   {
+    "name": "桜堂ねる",
+    "youtubeid": "UC0H7dRRqhfOifbYQ2TURdAg",
+    "title": "圧倒的自由なねるの朝活1223",
+    "date": "2025-12-23T07:17:56.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/Ux9wsMD9eAY/mqdefault.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/hBz75E3AEST1Dzv5vOTHAqoJfayd30WIWWQ3ZFLlWMHDsyZ_QD6ZVVUtLTKSizalT3APPtdpFGI",
+    "url": "https://www.youtube.com/watch?v=Ux9wsMD9eAY"
+  },
+  {
     "name": "犬丸なでこ",
     "youtubeid": "UCdJmJxMfXrlnZabUkuss2EA",
     "title": "#３３　おはようございますわんっ！【犬丸なでこ/パレデミア学園】",
@@ -870,6 +860,16 @@
     "url": "https://www.youtube.com/watch?v=ZS0TpWOA61E"
   },
   {
+    "name": "桜樹美彩",
+    "youtubeid": "UCTwKpTFX1aAXD0xpBqYqTdg",
+    "title": "【 雑談 】究極のゆる雑談／初見歓迎🍀今日もお疲れ雑談配信【縦型配信】 #vtuber #桜樹美彩 #みさライなう #新人Vtuber #shorts",
+    "date": "2025-12-23T18:11:37.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/sBKEUiOThPU/mqdefault.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/pDP2GuylW0RN1REDScFAlNklbXaPRqTm2mwT2F7dIo8xoYYFPfspsjGH_G3RagwlKVlQbdw95bY",
+    "url": "https://www.youtube.com/watch?v=sBKEUiOThPU"
+  },
+  {
     "name": "秋桜しゅお",
     "youtubeid": "UCPjtwOeRQV5EFkCwUycZsgw",
     "title": "【  #歌枠配信  】同接100目標#初見歓迎 🧡平日おわり！1週間お疲れ様夜のおうた 🧡【秋桜しゅお/登龍門BOX】#karaoke  #vtuber #vsinger",
@@ -890,6 +890,26 @@
     "url": "https://www.youtube.com/watch?v=anuwMo0IGyI"
   },
   {
+    "name": "相栖るじゅ",
+    "youtubeid": "UCrpdBoGpa6g2WEtRWsIlhDQ",
+    "title": "緑は敵 #shorts #新人vtuberだけど推されたい #推しをお探しですか #lesserafim",
+    "date": "2025-12-23T19:01:31.000+09:00",
+    "status": "archive",
+    "thumbnail": "https://i.ytimg.com/vi/o3aSDDbetC8/mqdefault.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/yQbh9vEEgS_UapoQhIxxoTSy13bDxlHYC-ncTcO9VIDBN2NvrLTAWeKGQ72CN2fhOOrHqYaFDA",
+    "url": "https://www.youtube.com/watch?v=o3aSDDbetC8"
+  },
+  {
+    "name": "銘兎目あう",
+    "youtubeid": "UCpr-9ssUUgSb0EpDA8bRuTA",
+    "title": "【スト６】1513MR～Mケン🥋Dゲージ使い過ぎ注意報発令中☃　#あう時間 #スト６ #StreetFighter6 #ストリートファイター6 #おすすめ #参加型",
+    "date": "2025-12-23T19:16:17.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/Y0og3drqTpc/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/VB97J8AMHex_rkfd6hDhfiGhhVvrL-NNkseP2mMYSWh75sxA_oXctmxK5tV4FYgkM17RUAx6GQ",
+    "url": "https://www.youtube.com/watch?v=Y0og3drqTpc"
+  },
+  {
     "name": "忠犬しず",
     "youtubeid": "UCPzN3R0x_SciJJ_FP-STpHQ",
     "title": "【 開封動画 】大怪獣シリーズ ウルトラマンアグルV2 限定版を特撮オタクがガイアSVと比較＆開封！あのシーンの再現も…？！【 忠犬しず 】",
@@ -898,6 +918,36 @@
     "thumbnail": "https://i.ytimg.com/vi/yAwU3yQLhwQ/mqdefault.jpg",
     "channelIcon": "https://yt3.googleusercontent.com/9dVPxoBbcXIeN4O1N6bYiWu3EHHHeaStY7fQYPZfF3thWIP2Sc9Uc6kg56Aj0UHrg5QqqDtn",
     "url": "https://www.youtube.com/watch?v=yAwU3yQLhwQ"
+  },
+  {
+    "name": "桜庭羽奈",
+    "youtubeid": "UCPgg_A08ksSYP-VivJGniRw",
+    "title": "【雑談＆歌】初見さん大歓迎！🐻年内チャンネル登録1500人目指してます!🐻",
+    "date": "2025-12-23T20:30:05.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/dxusWlfLM3c/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/04zALH6pYL7mkWILHajvBzfzg4hrwRCLBONme3K1PjuEeYJIRC6RYxPmJzVZRuN42skHEDNRGmo",
+    "url": "https://www.youtube.com/watch?v=dxusWlfLM3c"
+  },
+  {
+    "name": "犬丸なでこ",
+    "youtubeid": "UCdJmJxMfXrlnZabUkuss2EA",
+    "title": "なでこのグッズの紹介するよお！【パレデミア学園/犬丸なでこ】",
+    "date": "2025-12-23T21:01:08.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/5c71lve2Gfs/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/OQpHijB1HDVezkvjNufbM9PmR9kbhUe1mfnSRqJ67l-R34sAc4BhYmQ2U7C-SapKAtcOk_Bp",
+    "url": "https://www.youtube.com/watch?v=5c71lve2Gfs"
+  },
+  {
+    "name": "鈴木沙透",
+    "youtubeid": "UCj5nRzNFXZn9GRhITRkKElA",
+    "title": "【#歌枠】明日から2日間はただの平日です【鈴木沙透/パレデミア学園】",
+    "date": "2025-12-23T21:01:48.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/nTMmZxruoPQ/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/doWaEHgvIyGiFYS-kh_sISc4kxoKHfigCVy_DgtUJr3Pqwu4EIfaVD25ycH4FUg4gpTxUHWZbQ",
+    "url": "https://www.youtube.com/watch?v=nTMmZxruoPQ"
   },
   {
     "name": "花晴りら",
@@ -918,6 +968,56 @@
     "thumbnail": "https://i.ytimg.com/vi/0mH_PGmqEzw/mqdefault_live.jpg",
     "channelIcon": "https://yt3.googleusercontent.com/0pD1c95Y9X0VrhzWtlf2SRPqdkesiuZxC8Hb5Mg9Xv1WWpQaFCmjITTK8-n5HlNsB-yDbAN4CZA",
     "url": "https://www.youtube.com/watch?v=0mH_PGmqEzw"
+  },
+  {
+    "name": "風野かなめ",
+    "youtubeid": "UC2AO1ZIgtAVIh6_mx2SqmMQ",
+    "title": "【FF14】四天王に会いに行く【パレデミア学園】",
+    "date": "2025-12-23T22:00:09.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/IFeOqt6ulIY/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/gtjdyYJUUd1ESZ7-6meuTshluv9Susg7NeB54uoFxPpLrof9Fttx2K7Ck5B6DsbNxb_pNm-z",
+    "url": "https://www.youtube.com/watch?v=IFeOqt6ulIY"
+  },
+  {
+    "name": "妖小琳",
+    "youtubeid": "UC6eopxuX7lx8GnpkntObt1w",
+    "title": "※閲覧注意？噂の“馬の激レア部位”を食べてみた　 #shorts   #切り抜き",
+    "date": "2025-12-23T22:01:19.000+09:00",
+    "status": "archive",
+    "thumbnail": "https://i.ytimg.com/vi/cWJXZbo_-14/mqdefault.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/Ji8DJgyzWKUbbeWlYgFfsCZtyiGZ-zM597otZBcFnIoEVIw7284GbNbBQcALgEKwqvk8OXNZLA",
+    "url": "https://www.youtube.com/watch?v=cWJXZbo_-14"
+  },
+  {
+    "name": "灯野ぺけ。",
+    "youtubeid": "UCldoz5HLh6BMW29HGnRpC0Q",
+    "title": "【3rdステージ締切日！】投票イベント見届けるぞ👀✨初見さん/ROMの人もおいで～💥≪パレデミア学園 / 灯野ぺけ。≫ #vtuber #歌枠  #karaoke",
+    "date": "2025-12-23T22:07:06.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/pSVNYZOVXHo/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/fkb3ZihjrgGSVr5drGCJziRf-9EQ6AtqTswp3wNfS4xRMnVZKQ3WvcphIna7hTwOZpy5vq9UKg",
+    "url": "https://www.youtube.com/watch?v=pSVNYZOVXHo"
+  },
+  {
+    "name": "瀬奈りるか",
+    "youtubeid": "UCWi_ztz8Xuz4XfzhoG6ZfyA",
+    "title": "【#1 怪異症候群2】続編を完全初見プレイ👻🌟怪異症候群シリーズの２を完璧にクリアします🎶【よきところまで】＃せなりるライブ #パレデミア学園",
+    "date": "2025-12-23T22:30:00.000+09:00",
+    "status": "upcoming",
+    "thumbnail": "https://i.ytimg.com/vi/5fArVOqkzP0/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/bM-okYT9oTq3M5dq33VSpidEiaC8MP2EoQXX2gNpgW7PAV7RSn1t7_2HghmCcAwrNxriAmMy",
+    "url": "https://www.youtube.com/watch?v=5fArVOqkzP0"
+  },
+  {
+    "name": "肇明日空",
+    "youtubeid": "UCj6HYkokrIErMfhKAUAvYcA",
+    "title": "magnet covered byはじかお【magnet/minato(流星P)】",
+    "date": "2025-12-24T00:00:00.000+09:00",
+    "status": "upcoming",
+    "thumbnail": "https://i.ytimg.com/vi/DViAXrg9QyY/mqdefault.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/u59W56aqJ9r7WunTIqg60ZGnBu-G-9LA-OX6tZR6debt_isQ8xR59HUwrbAqLLqlTf_0VosmZg",
+    "url": "https://www.youtube.com/watch?v=DViAXrg9QyY"
   },
   {
     "name": "桜樹美彩",

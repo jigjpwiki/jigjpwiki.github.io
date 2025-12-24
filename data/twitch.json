@@ -1,14 +1,5 @@
 [
   {
-    "name": "しーはむ",
-    "twitchid": "siyham",
-    "title": "ソロランク ヴェックス・アーリ・ジグス【冬グッズ＆誕生日グッズ発売中】",
-    "date": "2025-12-21T21:38:47.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://yt3.googleusercontent.com/y0zP0Uz7HSLx5dv3xo488Suxk8rJQQUC1wXaymjUBIQIwa25WlVu_VmrsT1xAyVD-jgeL7hs",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/9341f4354963a38ad26e_siyham_315294573939_1766320721//thumb/thumb0-320x180.jpg"
-  },
-  {
     "name": "水透ユウ",
     "twitchid": "minato_yu_",
     "title": "【 #R6SX 】参加◎ イベントってまだやってます？【 #新人vtuber 】",
@@ -225,10 +216,19 @@
   {
     "name": "銘兎目あう",
     "twitchid": "Metome_Au",
-    "title": "【漢字でGO！】クリスマス特別編🎅→【スト６】ちょこっと！",
+    "title": "【スト６】1525MR～メリークリスマス🎅🎄",
     "date": "2025-12-24T20:32:11.000+09:00",
     "status": "live",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_Metome_Au-320x180.jpg"
+  },
+  {
+    "name": "銘兎目あう",
+    "twitchid": "Metome_Au",
+    "title": "【漢字でGO！】クリスマス特別編🎅→【スト６】ちょこっと！",
+    "date": "2025-12-24T20:32:17.000+09:00",
+    "status": "archive",
+    "channelIcon": "https://yt3.googleusercontent.com/VB97J8AMHex_rkfd6hDhfiGhhVvrL-NNkseP2mMYSWh75sxA_oXctmxK5tV4FYgkM17RUAx6GQ",
+    "thumbnail": "https://vod-secure.twitch.tv/_404/404_processing_320x180.png"
   },
   {
     "name": "水透ユウ",

@@ -201,9 +201,10 @@
     "name": "しーはむ",
     "twitchid": "siyham",
     "title": "イブだけどLOL【冬グッズ＆誕生日グッズ発売中】",
-    "date": "2025-12-24T14:59:48.000+09:00",
-    "status": "live",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_siyham-320x180.jpg"
+    "date": "2025-12-24T14:59:54.000+09:00",
+    "status": "archive",
+    "channelIcon": "https://yt3.googleusercontent.com/y0zP0Uz7HSLx5dv3xo488Suxk8rJQQUC1wXaymjUBIQIwa25WlVu_VmrsT1xAyVD-jgeL7hs",
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/5230aa777d2a1327e222_siyham_315305448307_1766555988//thumb/thumb0-320x180.jpg"
   },
   {
     "name": "なかもとおまち",
@@ -212,5 +213,13 @@
     "date": "2025-12-24T17:11:23.000+09:00",
     "status": "live",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_41futon-320x180.jpg"
+  },
+  {
+    "name": "駿河ルガ",
+    "twitchid": "suruga_luga",
+    "title": "【スト6】蜆のサガット【登龍門BOX/駿河ルガ】",
+    "date": "2025-12-24T18:00:15.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_suruga_luga-320x180.jpg"
   }
 ]

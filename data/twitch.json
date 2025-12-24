@@ -1,14 +1,5 @@
 [
   {
-    "name": "銘兎目あう",
-    "twitchid": "Metome_Au",
-    "title": "【スト６】1498MR～Mケン🥋Dゲージ使い過ぎ注意報☔1500MR維持するぞぉ👊",
-    "date": "2025-12-21T20:39:18.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://yt3.googleusercontent.com/VB97J8AMHex_rkfd6hDhfiGhhVvrL-NNkseP2mMYSWh75sxA_oXctmxK5tV4FYgkM17RUAx6GQ",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/c70a8eb1892321b4bf43_metome_au_315294261619_1766317152//thumb/thumb0-320x180.jpg"
-  },
-  {
     "name": "しーはむ",
     "twitchid": "siyham",
     "title": "ソロランク ヴェックス・アーリ・ジグス【冬グッズ＆誕生日グッズ発売中】",
@@ -226,8 +217,25 @@
     "name": "火乃晴るい",
     "twitchid": "hinoha_rui",
     "title": "【 #POE2 】今日は平日です🎄一旦夕飯まで",
-    "date": "2025-12-24T19:25:55.000+09:00",
+    "date": "2025-12-24T19:26:01.000+09:00",
+    "status": "archive",
+    "channelIcon": "https://yt3.googleusercontent.com/8vDFqOVNprKqFE0o7EecXyQleBXIibeJZpXpSgjm5msh4Yd0S8hTsbmYZyOBXa3bUEgBJHZt1w",
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/082d3049f619d461687e_hinoha_rui_315251796081_1766571955//thumb/thumb0-320x180.jpg"
+  },
+  {
+    "name": "銘兎目あう",
+    "twitchid": "Metome_Au",
+    "title": "【漢字でGO！】クリスマス特別編🎅→【スト６】ちょこっと！",
+    "date": "2025-12-24T20:32:11.000+09:00",
     "status": "live",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_hinoha_rui-320x180.jpg"
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_Metome_Au-320x180.jpg"
+  },
+  {
+    "name": "水透ユウ",
+    "twitchid": "minato_yu_",
+    "title": "【 #雑談 】Christmasみんなで過ごそうの会（ゲームもするかも）【 #新人vtuber 】",
+    "date": "2025-12-24T20:40:32.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_minato_yu_-320x180.jpg"
   }
 ]

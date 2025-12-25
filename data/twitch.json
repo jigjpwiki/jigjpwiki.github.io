@@ -1,14 +1,5 @@
 [
   {
-    "name": "水透ユウ",
-    "twitchid": "minato_yu_",
-    "title": "【 #R6SX 】今シーズン初solo rank!!【 #新人vtuber 】",
-    "date": "2025-12-22T21:50:38.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://yt3.googleusercontent.com/eVD8Ygm7KVyh3dvWnyebfYlbYpD13ZYQ-Bos8WdR5LDE61A3svHVHCLEY-rM3IQgw9O4uvdd",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/b1b9e1b3e094ab0cd778_minato_yu__315244237937_1766407832//thumb/thumb0-320x180.jpg"
-  },
-  {
     "name": "李じゅぴ汰",
     "twitchid": "lee_jupita",
     "title": "【都市伝説解体センター】遂に最終回だぁぁぁ！！！ ※ネタバレ注意",
@@ -182,10 +173,19 @@
   {
     "name": "銘兎目あう",
     "twitchid": "Metome_Au",
-    "title": "【スト６】クリスマス🎅カスタム参加型 22：00～写真会",
+    "title": "【スト６】クリスマス会🎅 🎄北アメリカ0007",
     "date": "2025-12-25T17:59:20.000+09:00",
     "status": "live",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_Metome_Au-320x180.jpg"
+  },
+  {
+    "name": "銘兎目あう",
+    "twitchid": "Metome_Au",
+    "title": "【スト６】クリスマス🎅カスタム参加型 22：00～写真会",
+    "date": "2025-12-25T17:59:26.000+09:00",
+    "status": "archive",
+    "channelIcon": "https://yt3.googleusercontent.com/VB97J8AMHex_rkfd6hDhfiGhhVvrL-NNkseP2mMYSWh75sxA_oXctmxK5tV4FYgkM17RUAx6GQ",
+    "thumbnail": "https://vod-secure.twitch.tv/_404/404_processing_320x180.png"
   },
   {
     "name": "駿河ルガ",

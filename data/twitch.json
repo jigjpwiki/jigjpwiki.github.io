@@ -201,8 +201,17 @@
     "name": "しーはむ",
     "twitchid": "siyham",
     "title": "平日15時はしーはむの配信を見るんだ【冬グッズ＆誕生日グッズ発売中】",
-    "date": "2025-12-26T15:09:32.000+09:00",
+    "date": "2025-12-26T15:09:38.000+09:00",
+    "status": "archive",
+    "channelIcon": "https://yt3.googleusercontent.com/y0zP0Uz7HSLx5dv3xo488Suxk8rJQQUC1wXaymjUBIQIwa25WlVu_VmrsT1xAyVD-jgeL7hs",
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/012a1ecbe18a5019cc82_siyham_315267692914_1766729372//thumb/thumb0-320x180.jpg"
+  },
+  {
+    "name": "駿河ルガ",
+    "twitchid": "suruga_luga",
+    "title": "【スト6】潮のサガット【登龍門BOX/駿河ルガ】",
+    "date": "2025-12-26T18:00:23.000+09:00",
     "status": "live",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_siyham-320x180.jpg"
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_suruga_luga-320x180.jpg"
   }
 ]

@@ -1,14 +1,5 @@
 [
   {
-    "name": "李じゅぴ汰",
-    "twitchid": "lee_jupita",
-    "title": "【おしゃべりキング】クリスマスのコミュ力診断といきますか！！",
-    "date": "2025-12-24T23:06:57.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://yt3.googleusercontent.com/QQqec9A1J7eLk9RrRYD9vvk51BBJzcE1leGkU9n4YkwHqht9gmGT1ktmSlKItQtbuMSGuklAFxM",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/8a5be113bd3111664578_lee_jupita_315252895089_1766585211//thumb/thumb0-320x180.jpg"
-  },
-  {
     "name": "真昼ねる",
     "twitchid": "mahiruneru",
     "title": "【OW】聖なる夜に最も他責が多いとされているゲームをプレイしてみる【ぷろのゔぁ￤VTuber￤真昼ねる】",
@@ -201,17 +192,19 @@
     "name": "駿河ルガ",
     "twitchid": "suruga_luga",
     "title": "【スト6】丼のサガット【登龍門BOX/駿河ルガ】",
-    "date": "2025-12-27T18:07:47.000+09:00",
-    "status": "live",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_suruga_luga-320x180.jpg"
+    "date": "2025-12-27T18:07:57.000+09:00",
+    "status": "archive",
+    "channelIcon": "https://yt3.googleusercontent.com/JlY4XEMg9noNa4ShOtky0OwYbKXjnhnje6NQUcwrnJ0UI3C9VQrB-fBNat9QJSUJuuT_Yo1P",
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/70b61bf6c9b6f1959999_suruga_luga_315272408818_1766826467//thumb/thumb0-320x180.jpg"
   },
   {
     "name": "火乃晴るい",
     "twitchid": "hinoha_rui",
     "title": "【 #VALORANT 】#JadeVALORANTCup 本番！遅延有",
-    "date": "2025-12-27T19:46:26.000+09:00",
-    "status": "live",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_hinoha_rui-320x180.jpg"
+    "date": "2025-12-27T19:46:32.000+09:00",
+    "status": "archive",
+    "channelIcon": "https://yt3.googleusercontent.com/8vDFqOVNprKqFE0o7EecXyQleBXIibeJZpXpSgjm5msh4Yd0S8hTsbmYZyOBXa3bUEgBJHZt1w",
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/9ff060fc27b53b29d4d6_hinoha_rui_315264440177_1766832386//thumb/thumb0-320x180.jpg"
   },
   {
     "name": "銘兎目あう",
@@ -220,5 +213,13 @@
     "date": "2025-12-27T21:30:50.000+09:00",
     "status": "live",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_Metome_Au-320x180.jpg"
+  },
+  {
+    "name": "火乃晴るい",
+    "twitchid": "hinoha_rui",
+    "title": "【 #VALORANT 】#JadeVALORANTCup 本番！遅延有",
+    "date": "2025-12-27T23:06:41.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_hinoha_rui-320x180.jpg"
   }
 ]

@@ -1,25 +1,5 @@
 [
   {
-    "name": "緋月・ローズ・ブレイド",
-    "youtubeid": "UCDutDfyKbX_ah4GF6kPNKmw",
-    "title": "【#アカペラ】サインはB【#歌ってみた 】#minecraft #cover #新人vtuberと繋がりたい",
-    "date": "2025-12-24T10:17:44.000+09:00",
-    "status": "archive",
-    "thumbnail": "https://i.ytimg.com/vi/baImPoDMh-A/mqdefault.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/W_G4fcoLegJdQmhWclC6RKHdrx9DJLGZ4WcLyCKgJxzyZZ3MUd-tNZ90LYQGVAbt7NzXl5GUJQ",
-    "url": "https://www.youtube.com/watch?v=baImPoDMh-A"
-  },
-  {
-    "name": "七音うら",
-    "youtubeid": "UCv2IYO-4waCpHvn50SWWY2A",
-    "title": "【#昼活  】1224昼活。くりすますいぶの桃紅茶昼活！【七音うら】",
-    "date": "2025-12-24T12:00:54.000+09:00",
-    "status": "live",
-    "thumbnail": "https://i.ytimg.com/vi/jMaiZHTlY7U/mqdefault_live.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/T655ATpSd2gkjZBrokvlkaUH0f5-fCpQdcJpwxmmNdy6fxCYffAlq2sMhPOtFk_CvVyOkEPY8Q",
-    "url": "https://www.youtube.com/watch?v=jMaiZHTlY7U"
-  },
-  {
     "name": "藤森ちとせ",
     "youtubeid": "UCAhdxmsdngH4noySdpVAVWQ",
     "title": "【キノコ島からメサへ帰宅したい雑談】クリスマスといえば～？整地！早くメサに帰りたいですね～⛏作業用にも😉ROM歓迎🎉【Minecraft】【#新人vtuber 】#ちとせらいぶ #パレデミア学園",
@@ -1190,6 +1170,26 @@
     "url": "https://www.youtube.com/watch?v=BJY_9pK9FZ0"
   },
   {
+    "name": "七音うら",
+    "youtubeid": "UCv2IYO-4waCpHvn50SWWY2A",
+    "title": "【#昼活   】1227昼活！寝起きすぎる昼活！【七音うら】",
+    "date": "2025-12-27T12:06:44.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/UBhTopfzheU/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/T655ATpSd2gkjZBrokvlkaUH0f5-fCpQdcJpwxmmNdy6fxCYffAlq2sMhPOtFk_CvVyOkEPY8Q",
+    "url": "https://www.youtube.com/watch?v=UBhTopfzheU"
+  },
+  {
+    "name": "藤森ちとせ",
+    "youtubeid": "UCAhdxmsdngH4noySdpVAVWQ",
+    "title": "【メサ整地雑談】いい感じに平らにしたい配信⛏作業用にも😉ROM歓迎🎉【Minecraft】【#新人vtuber 】#ちとせらいぶ #パレデミア学園",
+    "date": "2025-12-27T13:00:00.000+09:00",
+    "status": "upcoming",
+    "thumbnail": "https://i.ytimg.com/vi/sqA3CnA4_oA/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/traR_yWe-AOGyM2wjo8h2FJO9JWBcbjfrL13X-umeD6BtNPopSZ2Q3YmdJq_5K9gWgHf_j64iQ",
+    "url": "https://www.youtube.com/watch?v=sqA3CnA4_oA"
+  },
+  {
     "name": "桜樹美彩",
     "youtubeid": "UCTwKpTFX1aAXD0xpBqYqTdg",
     "title": "【 塩かずのこ家コラボ 】ＡＩボイスを判別せよ.ᐟ.ᐟ  MIMESIS🎮 桜樹美彩視点　#vtuber #ゲーム実況 #みさライなう 【菜鳥ひなた／／るる・らら・りりぃ／ぽぷ・にゃーちふぃらんど】",
@@ -1208,6 +1208,16 @@
     "thumbnail": "https://i.ytimg.com/vi/nuOnjOuXUHo/mqdefault_live.jpg",
     "channelIcon": "https://yt3.googleusercontent.com/CdsPDDWH5A6_0NcvN9NA3dvi2ptoQ_A-b2kS4p8S3s9KbdBiH-IOqTmkNclbbjlaUCBtYKDdrPY",
     "url": "https://www.youtube.com/watch?v=nuOnjOuXUHo"
+  },
+  {
+    "name": "藤森ちとせ",
+    "youtubeid": "UCAhdxmsdngH4noySdpVAVWQ",
+    "title": "【RV THERE YET?コラボ】キャンピングカーが大変なことになるゲームでわちゃわちゃします😉雪山～❄【#新人vtuber 】#ちとせらいぶ #パレデミア学園 #ウィニー寮",
+    "date": "2025-12-27T18:00:00.000+09:00",
+    "status": "upcoming",
+    "thumbnail": "https://i.ytimg.com/vi/ichmbKgqr84/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/traR_yWe-AOGyM2wjo8h2FJO9JWBcbjfrL13X-umeD6BtNPopSZ2Q3YmdJq_5K9gWgHf_j64iQ",
+    "url": "https://www.youtube.com/watch?v=ichmbKgqr84"
   },
   {
     "name": "忠犬しず",

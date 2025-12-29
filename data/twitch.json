@@ -199,16 +199,26 @@
     "name": "なかもとおまち",
     "twitchid": "41futon",
     "title": "2925年さいごのはいしん",
-    "date": "2025-12-29T21:37:26.000+09:00",
-    "status": "live",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_41futon-320x180.jpg"
+    "date": "2025-12-29T21:37:32.000+09:00",
+    "status": "archive",
+    "channelIcon": "https://yt3.googleusercontent.com/h8jNjVckVf08zSV6wdhQ38Fw9OH7kucAprlJsi9w0YdDIL8_Kcv0tHY-1cK8jPK_jRLSJb3t_Q",
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/91382f5046125e4b96f2_41futon_315273407985_1767011846//thumb/thumb0-320x180.jpg"
   },
   {
     "name": "駿河ルガ",
     "twitchid": "suruga_luga",
     "title": "初対面ミメシス【登龍門BOX/駿河ルガ】",
-    "date": "2025-12-29T21:41:55.000+09:00",
+    "date": "2025-12-29T21:42:05.000+09:00",
+    "status": "archive",
+    "channelIcon": "https://yt3.googleusercontent.com/JlY4XEMg9noNa4ShOtky0OwYbKXjnhnje6NQUcwrnJ0UI3C9VQrB-fBNat9QJSUJuuT_Yo1P",
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/24a2d4d750ac9b253e42_suruga_luga_315273429489_1767012115//thumb/thumb0-320x180.jpg"
+  },
+  {
+    "name": "火乃晴るい",
+    "twitchid": "hinoha_rui",
+    "title": "【 #EFT 】✅Drops✅PvP39~ 三日ぶりのEFT てすどら",
+    "date": "2025-12-29T22:47:43.000+09:00",
     "status": "live",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_suruga_luga-320x180.jpg"
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_hinoha_rui-320x180.jpg"
   }
 ]

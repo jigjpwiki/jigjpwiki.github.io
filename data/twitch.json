@@ -1,14 +1,5 @@
 [
   {
-    "name": "火乃晴るい",
-    "twitchid": "hinoha_rui",
-    "title": "【 ##Lockdownprotocol 】人狼げむこらぼ？",
-    "date": "2025-12-26T21:31:48.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://yt3.googleusercontent.com/8vDFqOVNprKqFE0o7EecXyQleBXIibeJZpXpSgjm5msh4Yd0S8hTsbmYZyOBXa3bUEgBJHZt1w",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/493a9e1ae95757d97c14_hinoha_rui_315315139699_1766752302//thumb/thumb0-320x180.jpg"
-  },
-  {
     "name": "しーはむ",
     "twitchid": "siyham",
     "title": "ネメシスで2pick【冬グッズ＆誕生日グッズ発売中】",
@@ -204,5 +195,13 @@
     "date": "2025-12-29T19:48:50.000+09:00",
     "status": "live",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_Metome_Au-320x180.jpg"
+  },
+  {
+    "name": "しーはむ",
+    "twitchid": "siyham",
+    "title": "新弾見に行く!!ネメシス !!【冬グッズ＆誕生日グッズ発売中】",
+    "date": "2025-12-29T21:29:44.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_siyham-320x180.jpg"
   }
 ]

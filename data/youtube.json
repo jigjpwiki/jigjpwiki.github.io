@@ -1,15 +1,5 @@
 [
   {
-    "name": "七音うら",
-    "youtubeid": "UCv2IYO-4waCpHvn50SWWY2A",
-    "title": "【#昼活  】1226昼活！今日寒い気がする昼活。【七音うら】",
-    "date": "2025-12-26T12:07:50.000+09:00",
-    "status": "live",
-    "thumbnail": "https://i.ytimg.com/vi/nMoeB36RtD8/mqdefault_live.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/T655ATpSd2gkjZBrokvlkaUH0f5-fCpQdcJpwxmmNdy6fxCYffAlq2sMhPOtFk_CvVyOkEPY8Q",
-    "url": "https://www.youtube.com/watch?v=nMoeB36RtD8"
-  },
-  {
     "name": "藤森ちとせ",
     "youtubeid": "UCAhdxmsdngH4noySdpVAVWQ",
     "title": "【Minecraftサブスクワールド配信】屋根がない建物を量産しすぎましたね～😉屋根建築がんばるのもり【#新人vtuber 】#ちとせらいぶ",
@@ -938,6 +928,26 @@
     "thumbnail": "https://i.ytimg.com/vi/frU6E2ke7ac/mqdefault_live.jpg",
     "channelIcon": "https://yt3.googleusercontent.com/fkb3ZihjrgGSVr5drGCJziRf-9EQ6AtqTswp3wNfS4xRMnVZKQ3WvcphIna7hTwOZpy5vq9UKg",
     "url": "https://www.youtube.com/watch?v=frU6E2ke7ac"
+  },
+  {
+    "name": "桜庭羽奈",
+    "youtubeid": "UCPgg_A08ksSYP-VivJGniRw",
+    "title": "【雑談＆歌】初見さん大歓迎！🐻年内チャンネル登録1500人目指してます!🐻",
+    "date": "2025-12-29T12:00:43.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/QSUGewGyhjo/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/04zALH6pYL7mkWILHajvBzfzg4hrwRCLBONme3K1PjuEeYJIRC6RYxPmJzVZRuN42skHEDNRGmo",
+    "url": "https://www.youtube.com/watch?v=QSUGewGyhjo"
+  },
+  {
+    "name": "しーはむ",
+    "youtubeid": "UC5xSDiB2WG4pO_zUZ_t-n0Q",
+    "title": "〘 シャドバWB〙新弾見に行くぞ!!!ネメシス!!!〘#VTuber│#しーはむ│Shadowverse〙",
+    "date": "2025-12-29T14:30:00.000+09:00",
+    "status": "upcoming",
+    "thumbnail": "https://i.ytimg.com/vi/ez1ozPkRZDo/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/y0zP0Uz7HSLx5dv3xo488Suxk8rJQQUC1wXaymjUBIQIwa25WlVu_VmrsT1xAyVD-jgeL7hs",
+    "url": "https://www.youtube.com/watch?v=ez1ozPkRZDo"
   },
   {
     "name": "しーはむ",

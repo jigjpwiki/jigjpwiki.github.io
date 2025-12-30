@@ -1,15 +1,5 @@
 [
   {
-    "name": "妖小琳",
-    "youtubeid": "UC6eopxuX7lx8GnpkntObt1w",
-    "title": "【スーパーダンガンロンパ2】#2 完全初見🌟絶望はここから…【妖小琳/Vtuber】",
-    "date": "2025-12-27T12:00:00.000+09:00",
-    "status": "upcoming",
-    "thumbnail": "https://i.ytimg.com/vi/BJY_9pK9FZ0/mqdefault_live.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/Ji8DJgyzWKUbbeWlYgFfsCZtyiGZ-zM597otZBcFnIoEVIw7284GbNbBQcALgEKwqvk8OXNZLA",
-    "url": "https://www.youtube.com/watch?v=BJY_9pK9FZ0"
-  },
-  {
     "name": "七音うら",
     "youtubeid": "UCv2IYO-4waCpHvn50SWWY2A",
     "title": "【#昼活   】1227昼活！寝起きすぎる昼活！【七音うら】",
@@ -928,6 +918,26 @@
     "thumbnail": "https://i.ytimg.com/vi/6YcwN0_9w6Y/mqdefault.jpg",
     "channelIcon": "https://yt3.googleusercontent.com/traR_yWe-AOGyM2wjo8h2FJO9JWBcbjfrL13X-umeD6BtNPopSZ2Q3YmdJq_5K9gWgHf_j64iQ",
     "url": "https://www.youtube.com/watch?v=6YcwN0_9w6Y"
+  },
+  {
+    "name": "飛渡ココ",
+    "youtubeid": "UCMElh_FlHyzp_obVe-b3Qrg",
+    "title": "年末と羊と君と。",
+    "date": "2025-12-30T11:00:14.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/6R3iaZabjgg/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/8I1SuqBXvb4dRY9bcXYc8xxSxL-L2CAe4YvBx2x3kOkyboXRq-G0rVo7pYflUmvo0UKIyxnlRA",
+    "url": "https://www.youtube.com/watch?v=6R3iaZabjgg"
+  },
+  {
+    "name": "桜庭羽奈",
+    "youtubeid": "UCPgg_A08ksSYP-VivJGniRw",
+    "title": "⑧【ネタバレ注意】完全初見プレイ！新人Vtuberがテイルズ最新作を実況プレイしてみた！【Tales of ARISE テイルズ オブ アライズ ／ゲーム実況配信】",
+    "date": "2025-12-30T12:00:45.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/QMjjuXzQzuw/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/04zALH6pYL7mkWILHajvBzfzg4hrwRCLBONme3K1PjuEeYJIRC6RYxPmJzVZRuN42skHEDNRGmo",
+    "url": "https://www.youtube.com/watch?v=QMjjuXzQzuw"
   },
   {
     "name": "忠犬しず",

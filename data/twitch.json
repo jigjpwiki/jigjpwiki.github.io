@@ -1,14 +1,5 @@
 [
   {
-    "name": "駿河ルガ",
-    "twitchid": "suruga_luga",
-    "title": "【スト6】丼のサガット【登龍門BOX/駿河ルガ】",
-    "date": "2025-12-27T18:07:57.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://yt3.googleusercontent.com/JlY4XEMg9noNa4ShOtky0OwYbKXjnhnje6NQUcwrnJ0UI3C9VQrB-fBNat9QJSUJuuT_Yo1P",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/70b61bf6c9b6f1959999_suruga_luga_315272408818_1766826467//thumb/thumb0-320x180.jpg"
-  },
-  {
     "name": "火乃晴るい",
     "twitchid": "hinoha_rui",
     "title": "【 #VALORANT 】#JadeVALORANTCup 本番！遅延有",
@@ -165,8 +156,17 @@
     "name": "しーはむ",
     "twitchid": "siyham",
     "title": "LOLOLOLOLOLOL【冬グッズ＆誕生日グッズ発売中】",
-    "date": "2025-12-30T15:17:08.000+09:00",
+    "date": "2025-12-30T15:17:14.000+09:00",
+    "status": "archive",
+    "channelIcon": "https://yt3.googleusercontent.com/y0zP0Uz7HSLx5dv3xo488Suxk8rJQQUC1wXaymjUBIQIwa25WlVu_VmrsT1xAyVD-jgeL7hs",
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/e14f7d1926fc587527af_siyham_315284514802_1767075428//thumb/thumb0-320x180.jpg"
+  },
+  {
+    "name": "駿河ルガ",
+    "twitchid": "suruga_luga",
+    "title": "【スト6】焔のサガット【登龍門BOX/駿河ルガ】",
+    "date": "2025-12-30T18:00:06.000+09:00",
     "status": "live",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_siyham-320x180.jpg"
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_suruga_luga-320x180.jpg"
   }
 ]

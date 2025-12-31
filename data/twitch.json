@@ -1,14 +1,5 @@
 [
   {
-    "name": "桜樹美彩",
-    "twitchid": "sakuragimisa_v",
-    "title": "【 朝活 】木曜以外は平日7時！土曜は9時開始朝活☀",
-    "date": "2025-12-29T07:00:20.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://yt3.googleusercontent.com/pDP2GuylW0RN1REDScFAlNklbXaPRqTm2mwT2F7dIo8xoYYFPfspsjGH_G3RagwlKVlQbdw95bY",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d1m7jfoe9zdc1j/5cb8b1cc784e5b845bca_sakuragimisa_v_316744710105_1766959215//thumb/thumb0-320x180.jpg"
-  },
-  {
     "name": "しーはむ",
     "twitchid": "siyham",
     "title": "新弾見に行く!!ネメシス !!【冬グッズ＆誕生日グッズ発売中】",
@@ -169,5 +160,13 @@
     "status": "archive",
     "channelIcon": "https://yt3.googleusercontent.com/eVD8Ygm7KVyh3dvWnyebfYlbYpD13ZYQ-Bos8WdR5LDE61A3svHVHCLEY-rM3IQgw9O4uvdd",
     "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/d9430e2da080b91fd26c_minato_yu__315336756211_1767189919//thumb/thumb0-320x180.jpg"
+  },
+  {
+    "name": "桜樹美彩",
+    "twitchid": "sakuragimisa_v",
+    "title": "【 朝活 】木曜以外は平日7時！土曜は9時開始朝活☀",
+    "date": "2026-01-01T07:00:22.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sakuragimisa_v-320x180.jpg"
   }
 ]

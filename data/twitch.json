@@ -1,14 +1,5 @@
 [
   {
-    "name": "しーはむ",
-    "twitchid": "siyham",
-    "title": "新弾見に行く!!ネメシス !!【冬グッズ＆誕生日グッズ発売中】",
-    "date": "2025-12-29T21:29:49.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://yt3.googleusercontent.com/y0zP0Uz7HSLx5dv3xo488Suxk8rJQQUC1wXaymjUBIQIwa25WlVu_VmrsT1xAyVD-jgeL7hs",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/f7f9af7f7daebec23433_siyham_315327955955_1767011384//thumb/thumb0-320x180.jpg"
-  },
-  {
     "name": "なかもとおまち",
     "twitchid": "41futon",
     "title": "2925年さいごのはいしん",
@@ -168,5 +159,21 @@
     "date": "2026-01-01T20:39:53.000+09:00",
     "status": "live",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_Metome_Au-320x180.jpg"
+  },
+  {
+    "name": "なかもとおまち",
+    "twitchid": "41futon",
+    "title": "明けたな2926年！のちにスト６",
+    "date": "2026-01-01T21:03:56.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_41futon-320x180.jpg"
+  },
+  {
+    "name": "火乃晴るい",
+    "twitchid": "hinoha_rui",
+    "title": "【 #EFT 】✅Drops✅PvP41 あけおめ！今年もよろしくお願いします✨",
+    "date": "2026-01-01T21:30:00.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_hinoha_rui-320x180.jpg"
   }
 ]

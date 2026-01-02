@@ -1,14 +1,5 @@
 [
   {
-    "name": "しーはむ",
-    "twitchid": "siyham",
-    "title": "イマリ人形ネメシス【冬グッズ＆誕生日グッズ発売中】",
-    "date": "2025-12-30T21:31:04.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://yt3.googleusercontent.com/y0zP0Uz7HSLx5dv3xo488Suxk8rJQQUC1wXaymjUBIQIwa25WlVu_VmrsT1xAyVD-jgeL7hs",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/32d6a50d4121add31aed_siyham_315277530609_1767097858//thumb/thumb0-320x180.jpg"
-  },
-  {
     "name": "李じゅぴ汰",
     "twitchid": "lee_jupita",
     "title": "【雑談】年の瀬ましゅまろ読み雑談！",
@@ -150,5 +141,13 @@
     "date": "2026-01-02T17:11:57.000+09:00",
     "status": "live",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_Metome_Au-320x180.jpg"
+  },
+  {
+    "name": "しーはむ",
+    "twitchid": "siyham",
+    "title": "k4senさんのカスタムにお邪魔します！棒読みちゃんなしだけどコメント見てるよ!!【冬グッズ＆誕生日グッズ発売中】",
+    "date": "2026-01-02T21:31:21.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_siyham-320x180.jpg"
   }
 ]

@@ -1,35 +1,5 @@
 [
   {
-    "name": "飛渡ココ",
-    "youtubeid": "UCMElh_FlHyzp_obVe-b3Qrg",
-    "title": "年末と羊と君と。",
-    "date": "2025-12-30T11:00:14.000+09:00",
-    "status": "live",
-    "thumbnail": "https://i.ytimg.com/vi/6R3iaZabjgg/mqdefault_live.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/8I1SuqBXvb4dRY9bcXYc8xxSxL-L2CAe4YvBx2x3kOkyboXRq-G0rVo7pYflUmvo0UKIyxnlRA",
-    "url": "https://www.youtube.com/watch?v=6R3iaZabjgg"
-  },
-  {
-    "name": "桜庭羽奈",
-    "youtubeid": "UCPgg_A08ksSYP-VivJGniRw",
-    "title": "⑧【ネタバレ注意】完全初見プレイ！新人Vtuberがテイルズ最新作を実況プレイしてみた！【Tales of ARISE テイルズ オブ アライズ ／ゲーム実況配信】",
-    "date": "2025-12-30T12:00:45.000+09:00",
-    "status": "live",
-    "thumbnail": "https://i.ytimg.com/vi/QMjjuXzQzuw/mqdefault_live.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/04zALH6pYL7mkWILHajvBzfzg4hrwRCLBONme3K1PjuEeYJIRC6RYxPmJzVZRuN42skHEDNRGmo",
-    "url": "https://www.youtube.com/watch?v=QMjjuXzQzuw"
-  },
-  {
-    "name": "秋桜しゅお",
-    "youtubeid": "UCPjtwOeRQV5EFkCwUycZsgw",
-    "title": "【  #歌枠配信  】同接100目標#初見歓迎 🧡みんな仕事納めした？しゅおはまだ歌う！ 🧡【秋桜しゅお/登龍門BOX】#karaoke  #vtuber #vsinger",
-    "date": "2025-12-30T12:10:19.000+09:00",
-    "status": "live",
-    "thumbnail": "https://i.ytimg.com/vi/h_nRaIwgeoE/mqdefault.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/WBGP05KaXeA21IzCbCeM0QHa0v9maVvVUBDZ2DyfTT62F1wGaW3hLOQBy1gCfuQfEnDNgwbsrQ",
-    "url": "https://www.youtube.com/watch?v=h_nRaIwgeoE"
-  },
-  {
     "name": "藤森ちとせ",
     "youtubeid": "UCAhdxmsdngH4noySdpVAVWQ",
     "title": "【ソロL4D2】たくさん倒しましょうね～😉【#新人vtuber 】#ちとせらいぶ #パレデミア学園",
@@ -1098,6 +1068,46 @@
     "thumbnail": "https://i.ytimg.com/vi/YN1t6F4HHe0/mqdefault_live.jpg",
     "channelIcon": "https://yt3.googleusercontent.com/pDP2GuylW0RN1REDScFAlNklbXaPRqTm2mwT2F7dIo8xoYYFPfspsjGH_G3RagwlKVlQbdw95bY",
     "url": "https://www.youtube.com/watch?v=YN1t6F4HHe0"
+  },
+  {
+    "name": "藤森ちとせ",
+    "youtubeid": "UCAhdxmsdngH4noySdpVAVWQ",
+    "title": "🌼11月3日月曜日🌼 今日の誕生花は #キク ！ #誕生花 #花言葉 #藤森ちとせ #菊",
+    "date": "2026-01-02T08:15:00.000+09:00",
+    "status": "archive",
+    "thumbnail": "https://i.ytimg.com/vi/4YxWMbXpFf4/mqdefault.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/traR_yWe-AOGyM2wjo8h2FJO9JWBcbjfrL13X-umeD6BtNPopSZ2Q3YmdJq_5K9gWgHf_j64iQ",
+    "url": "https://www.youtube.com/watch?v=4YxWMbXpFf4"
+  },
+  {
+    "name": "犬丸なでこ",
+    "youtubeid": "UCdJmJxMfXrlnZabUkuss2EA",
+    "title": "後ろにいたよ…🥹 #vtuber #8番出口 #ゲーム実況 #犬丸なでこ　#パレデミア学園",
+    "date": "2026-01-02T10:44:16.000+09:00",
+    "status": "archive",
+    "thumbnail": "https://i.ytimg.com/vi/pCmD4eXugA4/mqdefault.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/OQpHijB1HDVezkvjNufbM9PmR9kbhUe1mfnSRqJ67l-R34sAc4BhYmQ2U7C-SapKAtcOk_Bp",
+    "url": "https://www.youtube.com/watch?v=pCmD4eXugA4"
+  },
+  {
+    "name": "七音うら",
+    "youtubeid": "UCv2IYO-4waCpHvn50SWWY2A",
+    "title": "【#昼活配信 】0102昼活！お正月な気がしない昼活！【七音うら】",
+    "date": "2026-01-02T12:01:49.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/JU9l9seRInc/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/T655ATpSd2gkjZBrokvlkaUH0f5-fCpQdcJpwxmmNdy6fxCYffAlq2sMhPOtFk_CvVyOkEPY8Q",
+    "url": "https://www.youtube.com/watch?v=JU9l9seRInc"
+  },
+  {
+    "name": "藤森ちとせ",
+    "youtubeid": "UCAhdxmsdngH4noySdpVAVWQ",
+    "title": "【メサ拠点屋根作り雑談】いい感じの屋根を建築したいですね～🏠✨作業用にも😉ROM歓迎🎉【Minecraft】【#新人vtuber 】#ちとせらいぶ #パレデミア学園",
+    "date": "2026-01-02T13:00:00.000+09:00",
+    "status": "upcoming",
+    "thumbnail": "https://i.ytimg.com/vi/9HmBguGmeWM/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/traR_yWe-AOGyM2wjo8h2FJO9JWBcbjfrL13X-umeD6BtNPopSZ2Q3YmdJq_5K9gWgHf_j64iQ",
+    "url": "https://www.youtube.com/watch?v=9HmBguGmeWM"
   },
   {
     "name": "忠犬しず",

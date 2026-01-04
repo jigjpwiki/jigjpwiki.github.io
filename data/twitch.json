@@ -24,7 +24,7 @@
     "date": "2026-01-02T17:12:03.000+09:00",
     "status": "archive",
     "channelIcon": "https://yt3.googleusercontent.com/VB97J8AMHex_rkfd6hDhfiGhhVvrL-NNkseP2mMYSWh75sxA_oXctmxK5tV4FYgkM17RUAx6GQ",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/f929e1291f0bed469c18_metome_au_315343565555_1767341517//thumb/thumb0-320x180.jpg"
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d2nvs31859zcd8/f929e1291f0bed469c18_metome_au_315343565555_1767341517/thumb/custom-07c21991-fd54-43a7-9097-e4df87146003-320x180.png"
   },
   {
     "name": "しーはむ",
@@ -60,7 +60,7 @@
     "date": "2026-01-03T17:50:14.000+09:00",
     "status": "archive",
     "channelIcon": "https://yt3.googleusercontent.com/VB97J8AMHex_rkfd6hDhfiGhhVvrL-NNkseP2mMYSWh75sxA_oXctmxK5tV4FYgkM17RUAx6GQ",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/0c7c6e049017ba46ccaa_metome_au_315293041137_1767430208//thumb/thumb0-320x180.jpg"
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d2nvs31859zcd8/0c7c6e049017ba46ccaa_metome_au_315293041137_1767430208/thumb/custom-f74195be-19ae-47f6-84d6-bd6bcbc70bd6-320x180.png"
   },
   {
     "name": "なかもとおまち",
@@ -132,7 +132,7 @@
     "date": "2026-01-04T20:16:12.000+09:00",
     "status": "archive",
     "channelIcon": "https://yt3.googleusercontent.com/VB97J8AMHex_rkfd6hDhfiGhhVvrL-NNkseP2mMYSWh75sxA_oXctmxK5tV4FYgkM17RUAx6GQ",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/e3eff6f6dd16a4f1183f_metome_au_315306161906_1767525366//thumb/thumb0-320x180.jpg"
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d2nvs31859zcd8/e3eff6f6dd16a4f1183f_metome_au_315306161906_1767525366/thumb/custom-60703286-b8c4-461d-95a7-0ce610b0532c-320x180.png"
   },
   {
     "name": "しーはむ",
@@ -159,5 +159,13 @@
     "date": "2026-01-04T22:35:50.000+09:00",
     "status": "live",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_mahiruneru-320x180.jpg"
+  },
+  {
+    "name": "水透ユウ",
+    "twitchid": "minato_yu_",
+    "title": "【 #雑談 】来た人のお名前貸してくださいLoddlenaut【冬グッズ＆お正月グッズ発売中！】【 #新人vtuber 】",
+    "date": "2026-01-05T00:27:38.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_minato_yu_-320x180.jpg"
   }
 ]

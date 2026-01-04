@@ -156,16 +156,26 @@
     "name": "真昼ねる",
     "twitchid": "mahiruneru",
     "title": "【#R6S】きょうもきょうとてランクすっぞ💣【ぷろのゔぁ￤VTuber￤真昼ねる】",
-    "date": "2026-01-04T22:35:50.000+09:00",
+    "date": "2026-01-04T22:35:56.000+09:00",
+    "status": "archive",
+    "channelIcon": "https://yt3.googleusercontent.com/Cu6AMAZAEC_DTANKoaloA_4iLCuEUQ8BiAwyHGuOUG9GtoIw6s7mXCv1-49LV1IgODYZfGowzQ",
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/ac78ebc8d715f563268e_mahiruneru_315306835442_1767533750//thumb/thumb0-320x180.jpg"
+  },
+  {
+    "name": "水透ユウ",
+    "twitchid": "minato_yu_",
+    "title": "【 #R6SX 】ど深夜solorankかますので見守り募集【冬グッズ＆お正月グッズ発売中！】【 #新人vtuber 】",
+    "date": "2026-01-05T00:27:38.000+09:00",
     "status": "live",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_mahiruneru-320x180.jpg"
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_minato_yu_-320x180.jpg"
   },
   {
     "name": "水透ユウ",
     "twitchid": "minato_yu_",
     "title": "【 #雑談 】来た人のお名前貸してくださいLoddlenaut【冬グッズ＆お正月グッズ発売中！】【 #新人vtuber 】",
-    "date": "2026-01-05T00:27:38.000+09:00",
-    "status": "live",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_minato_yu_-320x180.jpg"
+    "date": "2026-01-05T00:27:44.000+09:00",
+    "status": "archive",
+    "channelIcon": "https://yt3.googleusercontent.com/eVD8Ygm7KVyh3dvWnyebfYlbYpD13ZYQ-Bos8WdR5LDE61A3svHVHCLEY-rM3IQgw9O4uvdd",
+    "thumbnail": "https://vod-secure.twitch.tv/_404/404_processing_320x180.png"
   }
 ]

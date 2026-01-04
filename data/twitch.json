@@ -1,14 +1,5 @@
 [
   {
-    "name": "桜樹美彩",
-    "twitchid": "sakuragimisa_v",
-    "title": "【 朝活 】木曜以外は平日7時！土曜は9時開始朝活☀",
-    "date": "2026-01-02T07:00:22.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://yt3.googleusercontent.com/pDP2GuylW0RN1REDScFAlNklbXaPRqTm2mwT2F7dIo8xoYYFPfspsjGH_G3RagwlKVlQbdw95bY",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d1m7jfoe9zdc1j/e431bbd3fab600ffe582_sakuragimisa_v_316819130969_1767304816//thumb/thumb0-320x180.jpg"
-  },
-  {
     "name": "なかもとおまち",
     "twitchid": "41futon",
     "title": "新春MR1700登山部、出動します！",
@@ -164,18 +155,18 @@
   {
     "name": "水透ユウ",
     "twitchid": "minato_yu_",
-    "title": "【 #R6SX 】ど深夜solorankかますので見守り募集【冬グッズ＆お正月グッズ発売中！】【 #新人vtuber 】",
-    "date": "2026-01-05T00:27:38.000+09:00",
-    "status": "live",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_minato_yu_-320x180.jpg"
-  },
-  {
-    "name": "水透ユウ",
-    "twitchid": "minato_yu_",
     "title": "【 #雑談 】来た人のお名前貸してくださいLoddlenaut【冬グッズ＆お正月グッズ発売中！】【 #新人vtuber 】",
     "date": "2026-01-05T00:27:44.000+09:00",
     "status": "archive",
     "channelIcon": "https://yt3.googleusercontent.com/eVD8Ygm7KVyh3dvWnyebfYlbYpD13ZYQ-Bos8WdR5LDE61A3svHVHCLEY-rM3IQgw9O4uvdd",
-    "thumbnail": "https://vod-secure.twitch.tv/_404/404_processing_320x180.png"
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/ccfc1610ea8f24a1426c_minato_yu__315353891699_1767540458//thumb/thumb0-320x180.jpg"
+  },
+  {
+    "name": "桜樹美彩",
+    "twitchid": "sakuragimisa_v",
+    "title": "【 朝活 】木曜以外は平日7時！土曜は9時開始朝活☀",
+    "date": "2026-01-05T07:00:09.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sakuragimisa_v-320x180.jpg"
   }
 ]

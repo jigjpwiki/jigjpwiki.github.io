@@ -1,25 +1,5 @@
 [
   {
-    "name": "忠犬しず",
-    "youtubeid": "UCPzN3R0x_SciJJ_FP-STpHQ",
-    "title": "【 リクエスト同時視聴5日目 】完全初見「七人の侍」を見るぞ！　【 忠犬しず/VTuber 】",
-    "date": "2026-01-02T14:00:00.000+09:00",
-    "status": "upcoming",
-    "thumbnail": "https://i.ytimg.com/vi/_xbPZHFU-a4/mqdefault_live.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/9dVPxoBbcXIeN4O1N6bYiWu3EHHHeaStY7fQYPZfF3thWIP2Sc9Uc6kg56Aj0UHrg5QqqDtn",
-    "url": "https://www.youtube.com/watch?v=_xbPZHFU-a4"
-  },
-  {
-    "name": "花晴りら",
-    "youtubeid": "UCqcnlq8uJqnGml6hcIrMCZw",
-    "title": "【新春雑談】元巫女Vtuberによるおみくじ配信⛩️新年の運勢占おう✨【花晴りら/パレデミア学園】#れりライブ #新人vtuber #雑談",
-    "date": "2026-01-02T14:00:00.000+09:00",
-    "status": "upcoming",
-    "thumbnail": "https://i.ytimg.com/vi/IlZ8DslhHsk/mqdefault_live.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/CH5JMWVQZ_RtloaXoj6W-yXjo9x8UxXSBG_vMyDnfk7M2QTOApVE1zOesu_aDrSAqvDbGrUyxs0",
-    "url": "https://www.youtube.com/watch?v=IlZ8DslhHsk"
-  },
-  {
     "name": "肇明日空",
     "youtubeid": "UCj6HYkokrIErMfhKAUAvYcA",
     "title": "元気な返事#vtuber #shorts #repo",
@@ -898,6 +878,26 @@
     "thumbnail": "https://i.ytimg.com/vi/XRRcGiDkbaQ/mqdefault_live.jpg",
     "channelIcon": "https://yt3.googleusercontent.com/OQpHijB1HDVezkvjNufbM9PmR9kbhUe1mfnSRqJ67l-R34sAc4BhYmQ2U7C-SapKAtcOk_Bp",
     "url": "https://www.youtube.com/watch?v=XRRcGiDkbaQ"
+  },
+  {
+    "name": "堂下さとり",
+    "youtubeid": "UCBq6MSUL-Ermvnoj3PtX7Iw",
+    "title": "大喜利茶屋",
+    "date": "2026-01-05T12:08:22.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/pchMTarMmS8/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/eW_Hug0M6zFk9QSbAmOUWLMSfzBlCHmes-8yAksvfUNzyLgY6TSsE_eW8ncfE4bHYZXKoTWxmQ",
+    "url": "https://www.youtube.com/watch?v=pchMTarMmS8"
+  },
+  {
+    "name": "藤森ちとせ",
+    "youtubeid": "UCAhdxmsdngH4noySdpVAVWQ",
+    "title": "【メサ削り雑談】赤いテラコッタをたくさん集めたい配信⛏✨作業用にも😉ROM歓迎🎉【Minecraft】【#新人vtuber 】#ちとせらいぶ #パレデミア学園",
+    "date": "2026-01-05T13:01:04.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/ENh4bDSgMUo/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/traR_yWe-AOGyM2wjo8h2FJO9JWBcbjfrL13X-umeD6BtNPopSZ2Q3YmdJq_5K9gWgHf_j64iQ",
+    "url": "https://www.youtube.com/watch?v=ENh4bDSgMUo"
   },
   {
     "name": "朧月ひかる",

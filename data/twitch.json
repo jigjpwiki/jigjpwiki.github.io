@@ -1,14 +1,5 @@
 [
   {
-    "name": "なかもとおまち",
-    "twitchid": "41futon",
-    "title": "MR1700はどこだ～～～！！！21時からは新春SP 事故物件監視２",
-    "date": "2026-01-03T18:48:19.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://yt3.googleusercontent.com/h8jNjVckVf08zSV6wdhQ38Fw9OH7kucAprlJsi9w0YdDIL8_Kcv0tHY-1cK8jPK_jRLSJb3t_Q",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/3eac42a6c8212c54f103_41futon_315301518962_1767433693//thumb/thumb0-320x180.jpg"
-  },
-  {
     "name": "水透ユウ",
     "twitchid": "minato_yu_",
     "title": "【 #雑談 】Loddlenautで新年からごみ拾いするんだ【冬グッズ＆お正月グッズ発売中！】【 #新人vtuber 】",
@@ -203,5 +194,13 @@
     "date": "2026-01-06T18:00:13.000+09:00",
     "status": "live",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_suruga_luga-320x180.jpg"
+  },
+  {
+    "name": "銘兎目あう",
+    "twitchid": "Metome_Au",
+    "title": "【スト６】1489MR～Mケン🥋風邪もさんぼーん！吹き飛ばすよ～🥊",
+    "date": "2026-01-06T18:38:08.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_Metome_Au-320x180.jpg"
   }
 ]

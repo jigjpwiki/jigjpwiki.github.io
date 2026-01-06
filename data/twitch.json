@@ -191,9 +191,10 @@
     "name": "銘兎目あう",
     "twitchid": "Metome_Au",
     "title": "【スト６】1489MR～Mケン🥋風邪もさんぼーん！吹き飛ばすよ～🥊",
-    "date": "2026-01-06T18:38:08.000+09:00",
-    "status": "live",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_Metome_Au-320x180.jpg"
+    "date": "2026-01-06T18:38:14.000+09:00",
+    "status": "archive",
+    "channelIcon": "https://yt3.googleusercontent.com/VB97J8AMHex_rkfd6hDhfiGhhVvrL-NNkseP2mMYSWh75sxA_oXctmxK5tV4FYgkM17RUAx6GQ",
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/d63dc5da809b36a57392_metome_au_315313873778_1767692288//thumb/thumb0-320x180.jpg"
   },
   {
     "name": "しーはむ",
@@ -202,5 +203,13 @@
     "date": "2026-01-06T21:30:52.000+09:00",
     "status": "live",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_siyham-320x180.jpg"
+  },
+  {
+    "name": "李じゅぴ汰",
+    "twitchid": "lee_jupita",
+    "title": "【チルゲー】思い出修理屋さんでチル【リ・ストーリー】",
+    "date": "2026-01-06T22:39:16.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lee_jupita-320x180.jpg"
   }
 ]

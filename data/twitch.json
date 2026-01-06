@@ -183,9 +183,10 @@
     "name": "駿河ルガ",
     "twitchid": "suruga_luga",
     "title": "【スト6】笑のサガット【登龍門BOX/駿河ルガ】",
-    "date": "2026-01-06T18:00:13.000+09:00",
-    "status": "live",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_suruga_luga-320x180.jpg"
+    "date": "2026-01-06T18:00:23.000+09:00",
+    "status": "archive",
+    "channelIcon": "https://yt3.googleusercontent.com/JlY4XEMg9noNa4ShOtky0OwYbKXjnhnje6NQUcwrnJ0UI3C9VQrB-fBNat9QJSUJuuT_Yo1P",
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/75a87d13f5de12f70e9a_suruga_luga_315313758834_1767690013//thumb/thumb0-320x180.jpg"
   },
   {
     "name": "銘兎目あう",
@@ -211,5 +212,13 @@
     "date": "2026-01-06T22:39:16.000+09:00",
     "status": "live",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lee_jupita-320x180.jpg"
+  },
+  {
+    "name": "真昼ねる",
+    "twitchid": "mahiruneru",
+    "title": "【＃R6SX】まひるねるは勝つと言いなさい。【ぷろのゔぁ￤VTuber￤真昼ねる】",
+    "date": "2026-01-06T23:55:07.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_mahiruneru-320x180.jpg"
   }
 ]

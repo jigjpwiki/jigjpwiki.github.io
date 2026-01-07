@@ -1,14 +1,5 @@
 [
   {
-    "name": "銘兎目あう",
-    "twitchid": "Metome_Au",
-    "title": "【スト６】1460MR～Mケン🥋今日も負けずにランクいくぞぉ～👊",
-    "date": "2026-01-04T20:16:12.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://yt3.googleusercontent.com/VB97J8AMHex_rkfd6hDhfiGhhVvrL-NNkseP2mMYSWh75sxA_oXctmxK5tV4FYgkM17RUAx6GQ",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d2nvs31859zcd8/e3eff6f6dd16a4f1183f_metome_au_315306161906_1767525366/thumb/custom-60703286-b8c4-461d-95a7-0ce610b0532c-320x180.png"
-  },
-  {
     "name": "しーはむ",
     "twitchid": "siyham",
     "title": "イマリ破壊ネメシスで行く!!【冬グッズ＆お正月グッズ発売中】",
@@ -203,5 +194,21 @@
     "date": "2026-01-07T18:54:56.000+09:00",
     "status": "live",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_hinoha_rui-320x180.jpg"
+  },
+  {
+    "name": "なかもとおまち",
+    "twitchid": "41futon",
+    "title": "大会にでる。ちはたんかっぷmini！w/タンタンメン、ごまさんごう",
+    "date": "2026-01-07T20:15:19.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_41futon-320x180.jpg"
+  },
+  {
+    "name": "銘兎目あう",
+    "twitchid": "Metome_Au",
+    "title": "【スト６】1570MR～Mケン🥋ハイマスいくぞぉぉぉお🥊",
+    "date": "2026-01-07T20:17:32.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_Metome_Au-320x180.jpg"
   }
 ]

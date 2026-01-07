@@ -180,10 +180,19 @@
   {
     "name": "なかもとおまち",
     "twitchid": "41futon",
-    "title": "大会にでる。ちはたんかっぷmini！w/タンタンメン、ごまさんごう",
+    "title": "しんやの出航",
     "date": "2026-01-07T20:15:19.000+09:00",
     "status": "live",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_41futon-320x180.jpg"
+  },
+  {
+    "name": "なかもとおまち",
+    "twitchid": "41futon",
+    "title": "大会にでる。ちはたんかっぷmini！w/タンタンメン、ごまさんごう",
+    "date": "2026-01-07T20:15:25.000+09:00",
+    "status": "archive",
+    "channelIcon": "https://yt3.googleusercontent.com/h8jNjVckVf08zSV6wdhQ38Fw9OH7kucAprlJsi9w0YdDIL8_Kcv0tHY-1cK8jPK_jRLSJb3t_Q",
+    "thumbnail": "https://vod-secure.twitch.tv/_404/404_processing_320x180.png"
   },
   {
     "name": "銘兎目あう",
@@ -209,5 +218,13 @@
     "date": "2026-01-07T21:31:20.000+09:00",
     "status": "live",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_siyham-320x180.jpg"
+  },
+  {
+    "name": "李じゅぴ汰",
+    "twitchid": "lee_jupita",
+    "title": "【雑談】修理屋さん業務に慣れてきた【リ・ストーリー/思い出修理屋さん】",
+    "date": "2026-01-07T22:39:11.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lee_jupita-320x180.jpg"
   }
 ]

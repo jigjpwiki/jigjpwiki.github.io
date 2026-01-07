@@ -1,14 +1,5 @@
 [
   {
-    "name": "しーはむ",
-    "twitchid": "siyham",
-    "title": "イマリ破壊ネメシスで行く!!【冬グッズ＆お正月グッズ発売中】",
-    "date": "2026-01-04T21:30:14.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://yt3.googleusercontent.com/y0zP0Uz7HSLx5dv3xo488Suxk8rJQQUC1wXaymjUBIQIwa25WlVu_VmrsT1xAyVD-jgeL7hs",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/5e9a47c4a77d298ec5ff_siyham_315306519282_1767529808//thumb/thumb0-320x180.jpg"
-  },
-  {
     "name": "李じゅぴ汰",
     "twitchid": "lee_jupita",
     "title": "【100％おれんじじゅ～すっ！】正月はボドゲ！",
@@ -219,5 +210,13 @@
     "status": "archive",
     "channelIcon": "https://yt3.googleusercontent.com/VB97J8AMHex_rkfd6hDhfiGhhVvrL-NNkseP2mMYSWh75sxA_oXctmxK5tV4FYgkM17RUAx6GQ",
     "thumbnail": "https://vod-secure.twitch.tv/_404/404_processing_320x180.png"
+  },
+  {
+    "name": "しーはむ",
+    "twitchid": "siyham",
+    "title": "純人形ネメシス!!夜はシャドバ【冬グッズ＆お正月グッズ発売中】",
+    "date": "2026-01-07T21:31:20.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_siyham-320x180.jpg"
   }
 ]

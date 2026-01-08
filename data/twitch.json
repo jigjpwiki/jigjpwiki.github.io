@@ -164,19 +164,11 @@
   {
     "name": "なかもとおまち",
     "twitchid": "41futon",
-    "title": "【新春SPホラゲ 凶寓 】最恐らしいホラゲを最強のチンパンジーに見守ってもらいながらやる。見守り役：なかあしにーに→あうたそ",
-    "date": "2026-01-08T21:01:35.000+09:00",
-    "status": "live",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_41futon-320x180.jpg"
-  },
-  {
-    "name": "なかもとおまち",
-    "twitchid": "41futon",
     "title": "【新春SPホラゲ 凶寓 】最恐らしいホラゲを最強のチンパンジーに見守ってもらいながらやる。見守り役：なかあしにーに",
     "date": "2026-01-08T21:01:41.000+09:00",
     "status": "archive",
     "channelIcon": "https://yt3.googleusercontent.com/h8jNjVckVf08zSV6wdhQ38Fw9OH7kucAprlJsi9w0YdDIL8_Kcv0tHY-1cK8jPK_jRLSJb3t_Q",
-    "thumbnail": "https://vod-secure.twitch.tv/_404/404_processing_320x180.png"
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/cdbc327220c255b285b2_41futon_315369678067_1767873695//thumb/thumb0-320x180.jpg"
   },
   {
     "name": "水透ユウ",
@@ -206,9 +198,18 @@
   {
     "name": "真昼ねる",
     "twitchid": "mahiruneru",
-    "title": "【＃R6SX】まひるねるは勝つと言いなさい。【ぷろのゔぁ￤VTuber￤真昼ねる】",
+    "title": "【参加◎】シージ不調なのでDbDするンゴ❕【ぷろのゔぁ￤VTuber￤真昼ねる】",
     "date": "2026-01-09T00:40:44.000+09:00",
     "status": "live",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_mahiruneru-320x180.jpg"
+  },
+  {
+    "name": "真昼ねる",
+    "twitchid": "mahiruneru",
+    "title": "【＃R6SX】まひるねるは勝つと言いなさい。【ぷろのゔぁ￤VTuber￤真昼ねる】",
+    "date": "2026-01-09T00:40:50.000+09:00",
+    "status": "archive",
+    "channelIcon": "https://yt3.googleusercontent.com/Cu6AMAZAEC_DTANKoaloA_4iLCuEUQ8BiAwyHGuOUG9GtoIw6s7mXCv1-49LV1IgODYZfGowzQ",
+    "thumbnail": "https://vod-secure.twitch.tv/_404/404_processing_320x180.png"
   }
 ]

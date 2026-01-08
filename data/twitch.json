@@ -1,14 +1,5 @@
 [
   {
-    "name": "銘兎目あう",
-    "twitchid": "Metome_Au",
-    "title": "【スト６】1460MR～Mケン🥋今日も負けずにランクいくぞぉ～👊",
-    "date": "2026-01-05T19:19:59.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://yt3.googleusercontent.com/VB97J8AMHex_rkfd6hDhfiGhhVvrL-NNkseP2mMYSWh75sxA_oXctmxK5tV4FYgkM17RUAx6GQ",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/74ea1a8977387b9bd2cc_metome_au_315309977202_1767608392//thumb/thumb0-320x180.jpg"
-  },
-  {
     "name": "火乃晴るい",
     "twitchid": "hinoha_rui",
     "title": "【 #EFT 】✅Drops✅PvP41~ テスドラ3 サボるなやるぞ",
@@ -174,9 +165,10 @@
     "name": "なかもとおまち",
     "twitchid": "41futon",
     "title": "MR1542？！？！何が起こっているというんです？！",
-    "date": "2026-01-08T15:09:59.000+09:00",
-    "status": "live",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_41futon-320x180.jpg"
+    "date": "2026-01-08T15:10:05.000+09:00",
+    "status": "archive",
+    "channelIcon": "https://yt3.googleusercontent.com/h8jNjVckVf08zSV6wdhQ38Fw9OH7kucAprlJsi9w0YdDIL8_Kcv0tHY-1cK8jPK_jRLSJb3t_Q",
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/17bcaaba0899596f3714_41futon_315313114609_1767852599//thumb/thumb0-320x180.jpg"
   },
   {
     "name": "しーはむ",
@@ -186,5 +178,13 @@
     "status": "archive",
     "channelIcon": "https://yt3.googleusercontent.com/y0zP0Uz7HSLx5dv3xo488Suxk8rJQQUC1wXaymjUBIQIwa25WlVu_VmrsT1xAyVD-jgeL7hs",
     "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/dde15d2cdef149610acb_siyham_315368402291_1767852644//thumb/thumb0-320x180.jpg"
+  },
+  {
+    "name": "銘兎目あう",
+    "twitchid": "Metome_Au",
+    "title": "【スト６】1569MR～Mケン🥋ハイマスチャレンジ🥊✨本日の風邪状況：鼻血時々、激痛👃",
+    "date": "2026-01-08T18:59:53.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_Metome_Au-320x180.jpg"
   }
 ]

@@ -1,14 +1,5 @@
 [
   {
-    "name": "しーはむ",
-    "twitchid": "siyham",
-    "title": "新年初ソロQ【冬グッズ＆お正月グッズ発売中】",
-    "date": "2026-01-05T15:05:15.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://yt3.googleusercontent.com/y0zP0Uz7HSLx5dv3xo488Suxk8rJQQUC1wXaymjUBIQIwa25WlVu_VmrsT1xAyVD-jgeL7hs",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/db548d5dbae657dc0876_siyham_315300921585_1767593109//thumb/thumb0-320x180.jpg"
-  },
-  {
     "name": "駿河ルガ",
     "twitchid": "suruga_luga",
     "title": "【スト6】福のサガット【登龍門BOX/駿河ルガ】",
@@ -187,5 +178,21 @@
     "status": "archive",
     "channelIcon": "https://yt3.googleusercontent.com/QQqec9A1J7eLk9RrRYD9vvk51BBJzcE1leGkU9n4YkwHqht9gmGT1ktmSlKItQtbuMSGuklAFxM",
     "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/ad43b2233c0a5a4503c5_lee_jupita_315365951219_1767793151//thumb/thumb0-320x180.jpg"
+  },
+  {
+    "name": "なかもとおまち",
+    "twitchid": "41futon",
+    "title": "MR1542？！？！何が起こっているというんです？！",
+    "date": "2026-01-08T15:09:59.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_41futon-320x180.jpg"
+  },
+  {
+    "name": "しーはむ",
+    "twitchid": "siyham",
+    "title": "アプデきたの…？【冬グッズ＆お正月グッズ発売中】",
+    "date": "2026-01-08T15:10:44.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_siyham-320x180.jpg"
   }
 ]

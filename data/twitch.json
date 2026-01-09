@@ -1,14 +1,5 @@
 [
   {
-    "name": "しーはむ",
-    "twitchid": "siyham",
-    "title": "メイジ専のソロQ【冬グッズ＆お正月グッズ発売中】",
-    "date": "2026-01-06T15:08:56.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://yt3.googleusercontent.com/y0zP0Uz7HSLx5dv3xo488Suxk8rJQQUC1wXaymjUBIQIwa25WlVu_VmrsT1xAyVD-jgeL7hs",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/2cff2231102d315ba2c8_siyham_315360063475_1767679730//thumb/thumb0-320x180.jpg"
-  },
-  {
     "name": "駿河ルガ",
     "twitchid": "suruga_luga",
     "title": "【スト6】笑のサガット【登龍門BOX/駿河ルガ】",
@@ -187,5 +178,13 @@
     "status": "archive",
     "channelIcon": "https://yt3.googleusercontent.com/pDP2GuylW0RN1REDScFAlNklbXaPRqTm2mwT2F7dIo8xoYYFPfspsjGH_G3RagwlKVlQbdw95bY",
     "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d1m7jfoe9zdc1j/28001e8131ccb32c34d3_sakuragimisa_v_317012932058_1767909612//thumb/thumb0-320x180.jpg"
+  },
+  {
+    "name": "しーはむ",
+    "twitchid": "siyham",
+    "title": "新シーズンのTOP強そうじゃない？【冬グッズ＆お正月グッズ発売中】",
+    "date": "2026-01-09T15:06:28.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_siyham-320x180.jpg"
   }
 ]

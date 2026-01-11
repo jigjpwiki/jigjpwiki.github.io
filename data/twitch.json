@@ -151,5 +151,21 @@
     "status": "archive",
     "channelIcon": "https://yt3.googleusercontent.com/VB97J8AMHex_rkfd6hDhfiGhhVvrL-NNkseP2mMYSWh75sxA_oXctmxK5tV4FYgkM17RUAx6GQ",
     "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/520a7264a9ae7673bb7c_metome_au_315322871025_1768044902//thumb/thumb0-320x180.jpg"
+  },
+  {
+    "name": "なかもとおまち",
+    "twitchid": "41futon",
+    "title": "MR1700で乗り込むWWーー！！！",
+    "date": "2026-01-11T11:22:53.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_41futon-320x180.jpg"
+  },
+  {
+    "name": "駿河ルガ",
+    "twitchid": "suruga_luga",
+    "title": "【スト6】WW#5 に挑戦！【登龍門BOX/駿河ルガ】",
+    "date": "2026-01-11T11:41:51.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_suruga_luga-320x180.jpg"
   }
 ]

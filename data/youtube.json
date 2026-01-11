@@ -1,15 +1,5 @@
 [
   {
-    "name": "堂下さとり",
-    "youtubeid": "UCBq6MSUL-Ermvnoj3PtX7Iw",
-    "title": "実家から",
-    "date": "2026-01-08T11:03:20.000+09:00",
-    "status": "live",
-    "thumbnail": "https://i.ytimg.com/vi/LwmRHjQWijg/mqdefault_live.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/eW_Hug0M6zFk9QSbAmOUWLMSfzBlCHmes-8yAksvfUNzyLgY6TSsE_eW8ncfE4bHYZXKoTWxmQ",
-    "url": "https://www.youtube.com/watch?v=LwmRHjQWijg"
-  },
-  {
     "name": "藤森ちとせ",
     "youtubeid": "UCAhdxmsdngH4noySdpVAVWQ",
     "title": "【メサ削り赤テラコッタ集め雑談】赤テラコッタ何に使うか全く考えてないですね～✨作業用にも😉ROM歓迎🎉【Minecraft】【#新人vtuber 】#ちとせらいぶ #パレデミア学園",
@@ -960,6 +950,16 @@
     "url": "https://www.youtube.com/watch?v=Yb4m_d8579o"
   },
   {
+    "name": "七音うら",
+    "youtubeid": "UCv2IYO-4waCpHvn50SWWY2A",
+    "title": "【#昼活配信  】111昼活。寝起きな昼活！【七音うら】",
+    "date": "2026-01-11T12:06:27.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/3hugwoGwM_Q/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/T655ATpSd2gkjZBrokvlkaUH0f5-fCpQdcJpwxmmNdy6fxCYffAlq2sMhPOtFk_CvVyOkEPY8Q",
+    "url": "https://www.youtube.com/watch?v=3hugwoGwM_Q"
+  },
+  {
     "name": "花晴りら",
     "youtubeid": "UCqcnlq8uJqnGml6hcIrMCZw",
     "title": "【Minecraft】初見さん/ROM勢大歓迎🌷拠点の地図埋めの続きマイクラ🌎メサとペールオーク周辺埋め🌳【花晴りら/パレデミア学園】#れりライブ #vtuber #雑談",
@@ -978,6 +978,16 @@
     "thumbnail": "https://i.ytimg.com/vi/u1Xsb2YSAcA/mqdefault_live.jpg",
     "channelIcon": "https://yt3.googleusercontent.com/bcgws2A-h2HRTCoWgcipC2sgJw_9y0O_5jBi_0QEW4DhAqyPZg4_xLkZw3JJBFZ2DzsYNiGx",
     "url": "https://www.youtube.com/watch?v=u1Xsb2YSAcA"
+  },
+  {
+    "name": "春原なずな",
+    "youtubeid": "UCW-iuU7g3BJnuQ1D3UkqeSA",
+    "title": "【 利用規約に同意したい 】同意するだけの簡単なゲームと聞きました【 春原なずな / VTuber 】",
+    "date": "2026-01-11T22:00:00.000+09:00",
+    "status": "upcoming",
+    "thumbnail": "https://i.ytimg.com/vi/ksVsd1TRAVM/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/0pD1c95Y9X0VrhzWtlf2SRPqdkesiuZxC8Hb5Mg9Xv1WWpQaFCmjITTK8-n5HlNsB-yDbAN4CZA",
+    "url": "https://www.youtube.com/watch?v=ksVsd1TRAVM"
   },
   {
     "name": "しーはむ",

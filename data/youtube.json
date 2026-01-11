@@ -1,55 +1,5 @@
 [
   {
-    "name": "妖小琳",
-    "youtubeid": "UC6eopxuX7lx8GnpkntObt1w",
-    "title": "【 #龍が如く7 】伝承【妖小琳/Vtuber】",
-    "date": "2026-01-08T21:00:00.000+09:00",
-    "status": "upcoming",
-    "thumbnail": "https://i.ytimg.com/vi/xn_tiUT9naw/mqdefault_live.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/Ji8DJgyzWKUbbeWlYgFfsCZtyiGZ-zM597otZBcFnIoEVIw7284GbNbBQcALgEKwqvk8OXNZLA",
-    "url": "https://www.youtube.com/watch?v=xn_tiUT9naw"
-  },
-  {
-    "name": "忠犬しず",
-    "youtubeid": "UCPzN3R0x_SciJJ_FP-STpHQ",
-    "title": "【 同時視聴 】完全初見！機界戦隊ゼンカイジャーの25、26話を見て行くぞ！【 Vtuber/忠犬しず 】#特撮オタク　#特撮女子",
-    "date": "2026-01-08T21:00:00.000+09:00",
-    "status": "upcoming",
-    "thumbnail": "https://i.ytimg.com/vi/u7MlNnCfMMM/mqdefault_live.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/9dVPxoBbcXIeN4O1N6bYiWu3EHHHeaStY7fQYPZfF3thWIP2Sc9Uc6kg56Aj0UHrg5QqqDtn",
-    "url": "https://www.youtube.com/watch?v=u7MlNnCfMMM"
-  },
-  {
-    "name": "花晴りら",
-    "youtubeid": "UCqcnlq8uJqnGml6hcIrMCZw",
-    "title": "【雑談】月イチ企画！みんなのおすすめ作品とか展示会とか知りたい！📖【花晴りら/パレデミア学園】#れりライブ #新人vtuber #雑談",
-    "date": "2026-01-08T21:00:00.000+09:00",
-    "status": "upcoming",
-    "thumbnail": "https://i.ytimg.com/vi/9DrYsV9B6AA/mqdefault_live.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/CH5JMWVQZ_RtloaXoj6W-yXjo9x8UxXSBG_vMyDnfk7M2QTOApVE1zOesu_aDrSAqvDbGrUyxs0",
-    "url": "https://www.youtube.com/watch?v=9DrYsV9B6AA"
-  },
-  {
-    "name": "灯野ぺけ。",
-    "youtubeid": "UCldoz5HLh6BMW29HGnRpC0Q",
-    "title": "【2026年一発目💥】参加型麻雀だー🀄💥初見さん/ROMの人もおいで～💥≪パレデミア学園 / 灯野ぺけ。≫ #vtuber #雀魂  #麻雀",
-    "date": "2026-01-08T21:04:32.000+09:00",
-    "status": "live",
-    "thumbnail": "https://i.ytimg.com/vi/CKd_oaRoHOs/mqdefault_live.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/fkb3ZihjrgGSVr5drGCJziRf-9EQ6AtqTswp3wNfS4xRMnVZKQ3WvcphIna7hTwOZpy5vq9UKg",
-    "url": "https://www.youtube.com/watch?v=CKd_oaRoHOs"
-  },
-  {
-    "name": "八重森ふゆの",
-    "youtubeid": "UCYVPgR8PrA-DjOh36rLvSeg",
-    "title": "黒毛和牛上塩タン焼き680円/大塚愛 歌ってみた #vtuber #cover #shorts",
-    "date": "2026-01-08T21:22:52.000+09:00",
-    "status": "archive",
-    "thumbnail": "https://i.ytimg.com/vi/5z26yt5AeBQ/mqdefault.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/0wtZ7ppCtnuhOD7p5zuy8UBp65YElDY_L3_RQ9rqD7paGRNAf3TZyUp4Ie8EaRk4kVrbD_dk",
-    "url": "https://www.youtube.com/watch?v=5z26yt5AeBQ"
-  },
-  {
     "name": "瀬奈りるか",
     "youtubeid": "UCWi_ztz8Xuz4XfzhoG6ZfyA",
     "title": "【#8番出口】観察力◎ホラー耐性◎なので即クリアできると思う８番出口初プレイ🌟目指せ１発クリア✨【＃パレデミア学園】＃せなりるライブ",

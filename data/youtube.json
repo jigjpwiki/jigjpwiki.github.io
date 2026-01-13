@@ -1,25 +1,5 @@
 [
   {
-    "name": "妖小琳",
-    "youtubeid": "UC6eopxuX7lx8GnpkntObt1w",
-    "title": "【 利用規約に同意したい 】同意するだけの簡単なゲーム（嘘）【妖小琳 / 登龍門BOX】",
-    "date": "2026-01-10T11:00:00.000+09:00",
-    "status": "upcoming",
-    "thumbnail": "https://i.ytimg.com/vi/xQvCBtmnPi8/mqdefault_live.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/Ji8DJgyzWKUbbeWlYgFfsCZtyiGZ-zM597otZBcFnIoEVIw7284GbNbBQcALgEKwqvk8OXNZLA",
-    "url": "https://www.youtube.com/watch?v=xQvCBtmnPi8"
-  },
-  {
-    "name": "七音うら",
-    "youtubeid": "UCv2IYO-4waCpHvn50SWWY2A",
-    "title": "【#昼活配信  】1110昼活！久々な気がする昼活。【七音うら】",
-    "date": "2026-01-10T12:03:39.000+09:00",
-    "status": "live",
-    "thumbnail": "https://i.ytimg.com/vi/bo0q_a2gCko/mqdefault_live.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/T655ATpSd2gkjZBrokvlkaUH0f5-fCpQdcJpwxmmNdy6fxCYffAlq2sMhPOtFk_CvVyOkEPY8Q",
-    "url": "https://www.youtube.com/watch?v=bo0q_a2gCko"
-  },
-  {
     "name": "飛渡ココ",
     "youtubeid": "UCMElh_FlHyzp_obVe-b3Qrg",
     "title": "こんぽぽの巻",
@@ -1188,6 +1168,46 @@
     "thumbnail": "https://i.ytimg.com/vi/AmfBWtn7TB0/mqdefault_live.jpg",
     "channelIcon": "https://yt3.googleusercontent.com/OQpHijB1HDVezkvjNufbM9PmR9kbhUe1mfnSRqJ67l-R34sAc4BhYmQ2U7C-SapKAtcOk_Bp",
     "url": "https://www.youtube.com/watch?v=AmfBWtn7TB0"
+  },
+  {
+    "name": "堂下さとり",
+    "youtubeid": "UCBq6MSUL-Ermvnoj3PtX7Iw",
+    "title": "つまみの家作ってみた 【お菓子の家】",
+    "date": "2026-01-13T08:14:16.000+09:00",
+    "status": "archive",
+    "thumbnail": "https://i.ytimg.com/vi/oubCWfWXoYY/mqdefault.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/eW_Hug0M6zFk9QSbAmOUWLMSfzBlCHmes-8yAksvfUNzyLgY6TSsE_eW8ncfE4bHYZXKoTWxmQ",
+    "url": "https://www.youtube.com/watch?v=oubCWfWXoYY"
+  },
+  {
+    "name": "藤森ちとせ",
+    "youtubeid": "UCAhdxmsdngH4noySdpVAVWQ",
+    "title": "🎗️11月11日火曜日🎗️ 今日の誕生花は #ミズヒキ ！ #誕生花 #花言葉 #藤森ちとせ #水引",
+    "date": "2026-01-13T08:15:05.000+09:00",
+    "status": "archive",
+    "thumbnail": "https://i.ytimg.com/vi/tbxfayN07bA/mqdefault.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/traR_yWe-AOGyM2wjo8h2FJO9JWBcbjfrL13X-umeD6BtNPopSZ2Q3YmdJq_5K9gWgHf_j64iQ",
+    "url": "https://www.youtube.com/watch?v=tbxfayN07bA"
+  },
+  {
+    "name": "飛渡ココ",
+    "youtubeid": "UCMElh_FlHyzp_obVe-b3Qrg",
+    "title": "モノマネ練習3時間",
+    "date": "2026-01-13T12:00:57.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/mco335-Tap4/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/8I1SuqBXvb4dRY9bcXYc8xxSxL-L2CAe4YvBx2x3kOkyboXRq-G0rVo7pYflUmvo0UKIyxnlRA",
+    "url": "https://www.youtube.com/watch?v=mco335-Tap4"
+  },
+  {
+    "name": "秋桜しゅお",
+    "youtubeid": "UCPjtwOeRQV5EFkCwUycZsgw",
+    "title": "【#歌枠配信 】#初見歓迎 🧡二万人までの助走！！歌うぞ！【秋桜しゅお/登龍門BOX】#karaoke  #vtuber #vsinger",
+    "date": "2026-01-13T12:01:20.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/SNlPvfrnuXo/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/WBGP05KaXeA21IzCbCeM0QHa0v9maVvVUBDZ2DyfTT62F1wGaW3hLOQBy1gCfuQfEnDNgwbsrQ",
+    "url": "https://www.youtube.com/watch?v=SNlPvfrnuXo"
   },
   {
     "name": "肇明日空",

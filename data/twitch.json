@@ -137,9 +137,10 @@
     "name": "月皇ちな",
     "twitchid": "chi7_v",
     "title": "事務所解散と今後について&プチお披露目",
-    "date": "2026-01-13T22:10:20.000+09:00",
-    "status": "live",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_chi7_v-320x180.jpg"
+    "date": "2026-01-13T22:10:26.000+09:00",
+    "status": "archive",
+    "channelIcon": "https://yt3.googleusercontent.com/dPtSb9jgOlWAvy3_pEFIVzTc5iOd4OGhJQIVwjT6RpMAjOmJQHDzs0g2gYCjNEnlpcgQO8fb5-k",
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/90199ad411e9e72e6ce0_chi7_v_315393051507_1768309820//thumb/thumb0-320x180.jpg"
   },
   {
     "name": "真昼ねる",
@@ -148,5 +149,13 @@
     "date": "2026-01-13T23:58:47.000+09:00",
     "status": "live",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_mahiruneru-320x180.jpg"
+  },
+  {
+    "name": "火乃晴るい",
+    "twitchid": "hinoha_rui",
+    "title": "【 #EFT 】PvP42~ 経験値ﾌﾟﾘｽﾞ~ 疲れたらチルゲする👀",
+    "date": "2026-01-14T01:04:34.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_hinoha_rui-320x180.jpg"
   }
 ]

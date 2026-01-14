@@ -1,15 +1,5 @@
 [
   {
-    "name": "七音うら",
-    "youtubeid": "UCv2IYO-4waCpHvn50SWWY2A",
-    "title": "【#昼活配信  】111昼活。寝起きな昼活！【七音うら】",
-    "date": "2026-01-11T12:06:27.000+09:00",
-    "status": "live",
-    "thumbnail": "https://i.ytimg.com/vi/3hugwoGwM_Q/mqdefault_live.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/T655ATpSd2gkjZBrokvlkaUH0f5-fCpQdcJpwxmmNdy6fxCYffAlq2sMhPOtFk_CvVyOkEPY8Q",
-    "url": "https://www.youtube.com/watch?v=3hugwoGwM_Q"
-  },
-  {
     "name": "雨海まる",
     "youtubeid": "UCLuPxPlM1v6IOTLxM1TRPzA",
     "title": "【ラブライブ！】アイドルVtuberが「Snow halation」 #歌ってみた #shorts #vtuber",
@@ -1298,6 +1288,26 @@
     "thumbnail": "https://i.ytimg.com/vi/XyIygS3dFEc/mqdefault.jpg",
     "channelIcon": "https://yt3.googleusercontent.com/eW_Hug0M6zFk9QSbAmOUWLMSfzBlCHmes-8yAksvfUNzyLgY6TSsE_eW8ncfE4bHYZXKoTWxmQ",
     "url": "https://www.youtube.com/watch?v=XyIygS3dFEc"
+  },
+  {
+    "name": "藤森ちとせ",
+    "youtubeid": "UCAhdxmsdngH4noySdpVAVWQ",
+    "title": "🌲11月13日木曜日🌲 今日の誕生花は #ヒマラヤスギ ！ #誕生花 #花言葉 #藤森ちとせ #ヒマラヤ杉",
+    "date": "2026-01-14T08:15:01.000+09:00",
+    "status": "archive",
+    "thumbnail": "https://i.ytimg.com/vi/3p7cPTrAdpw/mqdefault.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/traR_yWe-AOGyM2wjo8h2FJO9JWBcbjfrL13X-umeD6BtNPopSZ2Q3YmdJq_5K9gWgHf_j64iQ",
+    "url": "https://www.youtube.com/watch?v=3p7cPTrAdpw"
+  },
+  {
+    "name": "飛渡ココ",
+    "youtubeid": "UCMElh_FlHyzp_obVe-b3Qrg",
+    "title": "器用選手権",
+    "date": "2026-01-14T12:04:35.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/O1z8uHWBpSM/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/8I1SuqBXvb4dRY9bcXYc8xxSxL-L2CAe4YvBx2x3kOkyboXRq-G0rVo7pYflUmvo0UKIyxnlRA",
+    "url": "https://www.youtube.com/watch?v=O1z8uHWBpSM"
   },
   {
     "name": "泡清みる",

@@ -1,14 +1,5 @@
 [
   {
-    "name": "桜樹美彩",
-    "twitchid": "sakuragimisa_v",
-    "title": "【 朝活 】木曜以外は平日7時！土曜は9時開始朝活☀",
-    "date": "2026-01-12T07:00:20.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://yt3.googleusercontent.com/pDP2GuylW0RN1REDScFAlNklbXaPRqTm2mwT2F7dIo8xoYYFPfspsjGH_G3RagwlKVlQbdw95bY",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d1m7jfoe9zdc1j/7e3dfa88b00cbb40d4e0_sakuragimisa_v_317072161754_1768168816//thumb/thumb0-320x180.jpg"
-  },
-  {
     "name": "なかもとおまち",
     "twitchid": "41futon",
     "title": "【ELDENRING】永遠の都、ノクターンへおまち王が乗り込む※ビッツ禁止",
@@ -128,19 +119,11 @@
   {
     "name": "火乃晴るい",
     "twitchid": "hinoha_rui",
-    "title": "【 #EFT 】PvP43~  KAPPA耐久🔥 Kappaまであと2%",
-    "date": "2026-01-14T18:31:03.000+09:00",
-    "status": "live",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_hinoha_rui-320x180.jpg"
-  },
-  {
-    "name": "火乃晴るい",
-    "twitchid": "hinoha_rui",
     "title": "【 #EFT 】PvP43~ アリーナ➡本編 Kappaまであと2%",
     "date": "2026-01-14T18:31:09.000+09:00",
     "status": "archive",
     "channelIcon": "https://yt3.googleusercontent.com/8vDFqOVNprKqFE0o7EecXyQleBXIibeJZpXpSgjm5msh4Yd0S8hTsbmYZyOBXa3bUEgBJHZt1w",
-    "thumbnail": "https://vod-secure.twitch.tv/_404/404_processing_320x180.png"
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/f7452edc93e113d0eb93_hinoha_rui_315348582130_1768383063//thumb/thumb0-320x180.jpg"
   },
   {
     "name": "銘兎目あう",
@@ -164,8 +147,26 @@
     "name": "李じゅぴ汰",
     "twitchid": "lee_jupita",
     "title": "【ギルティギア】初心者！基礎から勉強中！4日目【GUILTY GEAR -STRIVE- /GGST 】",
-    "date": "2026-01-15T02:45:16.000+09:00",
+    "date": "2026-01-15T02:45:22.000+09:00",
+    "status": "archive",
+    "channelIcon": "https://yt3.googleusercontent.com/QQqec9A1J7eLk9RrRYD9vvk51BBJzcE1leGkU9n4YkwHqht9gmGT1ktmSlKItQtbuMSGuklAFxM",
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/b5745a84de29905c89cf_lee_jupita_315350585586_1768412716//thumb/thumb0-320x180.jpg"
+  },
+  {
+    "name": "火乃晴るい",
+    "twitchid": "hinoha_rui",
+    "title": "【 #EFT 】PvP43~  KAPPA耐久🔥Kappaまであと2% 一回配信落ちちゃった；；",
+    "date": "2026-01-15T06:56:32.000+09:00",
     "status": "live",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lee_jupita-320x180.jpg"
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_hinoha_rui-320x180.jpg"
+  },
+  {
+    "name": "火乃晴るい",
+    "twitchid": "hinoha_rui",
+    "title": "【 #EFT 】PvP43~  KAPPA耐久🔥 Kappaまであと2%",
+    "date": "2026-01-15T06:56:38.000+09:00",
+    "status": "archive",
+    "channelIcon": "https://yt3.googleusercontent.com/8vDFqOVNprKqFE0o7EecXyQleBXIibeJZpXpSgjm5msh4Yd0S8hTsbmYZyOBXa3bUEgBJHZt1w",
+    "thumbnail": "https://vod-secure.twitch.tv/_404/404_processing_320x180.png"
   }
 ]

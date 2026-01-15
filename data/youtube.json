@@ -1,45 +1,5 @@
 [
   {
-    "name": "シグマ・イングラム",
-    "youtubeid": "UCnQFkIgH-2IURW--34owWIw",
-    "title": "【時そば①】落語に挑戦してみた #vtuber #新人vtuber #落語#時そば",
-    "date": "2026-01-12T11:32:27.000+09:00",
-    "status": "archive",
-    "thumbnail": "https://i.ytimg.com/vi/70pl-8XxoLQ/mqdefault.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/qbn_sYVG1ZUjL2xgGkLtNaYdyeWSj8hMooE0VqW4jThdOnm2G6ZKRhpBsxV8pGUXkqi6zUq84w",
-    "url": "https://www.youtube.com/watch?v=70pl-8XxoLQ"
-  },
-  {
-    "name": "シグマ・イングラム",
-    "youtubeid": "UCnQFkIgH-2IURW--34owWIw",
-    "title": "【しぐま噺】時そば①",
-    "date": "2026-01-12T11:37:48.000+09:00",
-    "status": "archive",
-    "thumbnail": "https://i.ytimg.com/vi/-8FXd1POlRI/mqdefault.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/qbn_sYVG1ZUjL2xgGkLtNaYdyeWSj8hMooE0VqW4jThdOnm2G6ZKRhpBsxV8pGUXkqi6zUq84w",
-    "url": "https://www.youtube.com/watch?v=-8FXd1POlRI"
-  },
-  {
-    "name": "飛渡ココ",
-    "youtubeid": "UCMElh_FlHyzp_obVe-b3Qrg",
-    "title": "本日も最高の1日に",
-    "date": "2026-01-12T12:01:07.000+09:00",
-    "status": "live",
-    "thumbnail": "https://i.ytimg.com/vi/3ikRO8s4jZA/mqdefault_live.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/8I1SuqBXvb4dRY9bcXYc8xxSxL-L2CAe4YvBx2x3kOkyboXRq-G0rVo7pYflUmvo0UKIyxnlRA",
-    "url": "https://www.youtube.com/watch?v=3ikRO8s4jZA"
-  },
-  {
-    "name": "七音うら",
-    "youtubeid": "UCv2IYO-4waCpHvn50SWWY2A",
-    "title": "【#昼活配信 】0112昼活。寒すぎる祝日の昼活！【七音うら】",
-    "date": "2026-01-12T12:01:11.000+09:00",
-    "status": "live",
-    "thumbnail": "https://i.ytimg.com/vi/gLMBildn0OE/mqdefault_live.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/T655ATpSd2gkjZBrokvlkaUH0f5-fCpQdcJpwxmmNdy6fxCYffAlq2sMhPOtFk_CvVyOkEPY8Q",
-    "url": "https://www.youtube.com/watch?v=gLMBildn0OE"
-  },
-  {
     "name": "藤森ちとせ",
     "youtubeid": "UCAhdxmsdngH4noySdpVAVWQ",
     "title": "【天空トラップタワー建築雑談】完成させたいですね～✨作業用にも😉ROM歓迎🎉【Minecraft】【#新人vtuber 】#ちとせらいぶ #パレデミア学園",
@@ -1290,6 +1250,26 @@
     "url": "https://www.youtube.com/watch?v=uPgmFh8T7zo"
   },
   {
+    "name": "藤森ちとせ",
+    "youtubeid": "UCAhdxmsdngH4noySdpVAVWQ",
+    "title": "✨11月15日土曜日✨ 今日の誕生花は #ミゾソバ ！ #誕生花 #花言葉 #藤森ちとせ #溝蕎麦",
+    "date": "2026-01-15T08:15:01.000+09:00",
+    "status": "archive",
+    "thumbnail": "https://i.ytimg.com/vi/Ki-0XX_7p5U/mqdefault.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/traR_yWe-AOGyM2wjo8h2FJO9JWBcbjfrL13X-umeD6BtNPopSZ2Q3YmdJq_5K9gWgHf_j64iQ",
+    "url": "https://www.youtube.com/watch?v=Ki-0XX_7p5U"
+  },
+  {
+    "name": "飛渡ココ",
+    "youtubeid": "UCMElh_FlHyzp_obVe-b3Qrg",
+    "title": "不器用選手権",
+    "date": "2026-01-15T12:02:02.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/SSjxdPjmRmc/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/8I1SuqBXvb4dRY9bcXYc8xxSxL-L2CAe4YvBx2x3kOkyboXRq-G0rVo7pYflUmvo0UKIyxnlRA",
+    "url": "https://www.youtube.com/watch?v=SSjxdPjmRmc"
+  },
+  {
     "name": "虎島めら。",
     "youtubeid": "UCqewFfi_wwydw6fpazmlAFA",
     "title": "ALGS Year5 Watch Party",
@@ -1298,6 +1278,16 @@
     "thumbnail": "https://i.ytimg.com/vi/FEcr6O7xiTE/mqdefault_live.jpg",
     "channelIcon": "https://yt3.googleusercontent.com/6nfq-sTwa1PCHMrmFq5uNijG5PcQ8BRheGNXHc6GEMlBustwPyvfLIPWtxaHpKOhdXU1tFTnfA",
     "url": "https://www.youtube.com/watch?v=FEcr6O7xiTE"
+  },
+  {
+    "name": "藤森ちとせ",
+    "youtubeid": "UCAhdxmsdngH4noySdpVAVWQ",
+    "title": "【メサ露天掘り雑談】今日もエンチャントダイヤツルハシで露天掘りしちゃいましょうね～⛏✨作業用にも😉ROM歓迎🎉【Minecraft】【#新人vtuber 】#ちとせらいぶ #パレデミア学園",
+    "date": "2026-01-15T13:00:00.000+09:00",
+    "status": "upcoming",
+    "thumbnail": "https://i.ytimg.com/vi/EONm16LFapI/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/traR_yWe-AOGyM2wjo8h2FJO9JWBcbjfrL13X-umeD6BtNPopSZ2Q3YmdJq_5K9gWgHf_j64iQ",
+    "url": "https://www.youtube.com/watch?v=EONm16LFapI"
   },
   {
     "name": "泡清みる",

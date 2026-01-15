@@ -136,10 +136,19 @@
   {
     "name": "火乃晴るい",
     "twitchid": "hinoha_rui",
-    "title": "【 #EFT 】PvP45  Kappa目前！✨ 残り2%",
+    "title": "【 #VALORANT 】少しだけかも～",
     "date": "2026-01-15T21:30:00.000+09:00",
     "status": "live",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_hinoha_rui-320x180.jpg"
+  },
+  {
+    "name": "火乃晴るい",
+    "twitchid": "hinoha_rui",
+    "title": "【 #EFT 】PvP45  Kappa目前！✨ 残り2%",
+    "date": "2026-01-15T21:30:06.000+09:00",
+    "status": "archive",
+    "channelIcon": "https://yt3.googleusercontent.com/8vDFqOVNprKqFE0o7EecXyQleBXIibeJZpXpSgjm5msh4Yd0S8hTsbmYZyOBXa3bUEgBJHZt1w",
+    "thumbnail": "https://vod-secure.twitch.tv/_404/404_processing_320x180.png"
   },
   {
     "name": "李じゅぴ汰",
@@ -148,5 +157,13 @@
     "date": "2026-01-15T22:39:07.000+09:00",
     "status": "live",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lee_jupita-320x180.jpg"
+  },
+  {
+    "name": "真昼ねる",
+    "twitchid": "mahiruneru",
+    "title": "【参加◎】オペ新規開拓❕ぷろのゔぁの新メンバーも募集しています📮【ぷろのゔぁ￤VTuber￤真昼ねる】",
+    "date": "2026-01-15T23:52:13.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_mahiruneru-320x180.jpg"
   }
 ]

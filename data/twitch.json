@@ -132,7 +132,7 @@
     "date": "2026-01-17T08:28:43.000+09:00",
     "status": "archive",
     "channelIcon": "https://yt3.googleusercontent.com/VB97J8AMHex_rkfd6hDhfiGhhVvrL-NNkseP2mMYSWh75sxA_oXctmxK5tV4FYgkM17RUAx6GQ",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/c800feaaaab499f587e2_metome_au_315407695475_1768606117//thumb/thumb0-320x180.jpg"
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d2nvs31859zcd8/c800feaaaab499f587e2_metome_au_315407695475_1768606117/thumb/custom-ef5a981d-5750-4fc3-9661-d33030649d6f-320x180.png"
   },
   {
     "name": "桜樹美彩",
@@ -159,7 +159,7 @@
     "date": "2026-01-17T11:46:25.000+09:00",
     "status": "archive",
     "channelIcon": "https://yt3.googleusercontent.com/VB97J8AMHex_rkfd6hDhfiGhhVvrL-NNkseP2mMYSWh75sxA_oXctmxK5tV4FYgkM17RUAx6GQ",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/dbf2e77def645957877b_metome_au_315360400498_1768617979//thumb/thumb0-320x180.jpg"
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d2nvs31859zcd8/dbf2e77def645957877b_metome_au_315360400498_1768617979/thumb/custom-83f41d05-94f0-4781-8d77-1e986f247001-320x180.png"
   },
   {
     "name": "水透ユウ",
@@ -168,5 +168,13 @@
     "date": "2026-01-17T19:50:22.000+09:00",
     "status": "live",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_minato_yu_-320x180.jpg"
+  },
+  {
+    "name": "真昼ねる",
+    "twitchid": "mahiruneru",
+    "title": "【#R6SX】誕生日前夜だっておれはランクをやる、さ【ぷろのゔぁ￤VTuber￤真昼ねる】",
+    "date": "2026-01-17T22:32:54.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_mahiruneru-320x180.jpg"
   }
 ]

@@ -146,10 +146,19 @@
   {
     "name": "水透ユウ",
     "twitchid": "minato_yu_",
-    "title": "【 #R6SX 】20:00お知らせあり！一旦ソロランク！【冬グッズ＆お正月グッズ1/31まで発売中！】【 #新人vtuber 】",
+    "title": "【 #R6SX 】10周年スペシャルマッチ日本チームでシージ！！【冬グッズ＆お正月グッズ1/31まで発売中！】【 #新人vtuber 】",
     "date": "2026-01-19T19:07:39.000+09:00",
     "status": "live",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_minato_yu_-320x180.jpg"
+  },
+  {
+    "name": "水透ユウ",
+    "twitchid": "minato_yu_",
+    "title": "【 #R6SX 】20:00お知らせあり！一旦ソロランク！【冬グッズ＆お正月グッズ1/31まで発売中！】【 #新人vtuber 】",
+    "date": "2026-01-19T19:07:45.000+09:00",
+    "status": "archive",
+    "channelIcon": "https://yt3.googleusercontent.com/eVD8Ygm7KVyh3dvWnyebfYlbYpD13ZYQ-Bos8WdR5LDE61A3svHVHCLEY-rM3IQgw9O4uvdd",
+    "thumbnail": "https://vod-secure.twitch.tv/_404/404_processing_320x180.png"
   },
   {
     "name": "月皇ちな",
@@ -158,5 +167,13 @@
     "date": "2026-01-19T20:07:54.000+09:00",
     "status": "live",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_chi7_v-320x180.jpg"
+  },
+  {
+    "name": "銘兎目あう",
+    "twitchid": "Metome_Au",
+    "title": "【スト６】1501MR～Mケン🥋フンシュデイヤフンッ🥊✨",
+    "date": "2026-01-19T20:24:00.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_Metome_Au-320x180.jpg"
   }
 ]

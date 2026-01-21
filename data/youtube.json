@@ -1,25 +1,5 @@
 [
   {
-    "name": "桜堂ねる",
-    "youtubeid": "UC0H7dRRqhfOifbYQ2TURdAg",
-    "title": "圧倒的自由な桃紅茶のマイクラ",
-    "date": "2026-01-19T03:45:35.000+09:00",
-    "status": "live",
-    "thumbnail": "https://i.ytimg.com/vi/Hhu9talw-xQ/mqdefault_live.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/hBz75E3AEST1Dzv5vOTHAqoJfayd30WIWWQ3ZFLlWMHDsyZ_QD6ZVVUtLTKSizalT3APPtdpFGI",
-    "url": "https://www.youtube.com/watch?v=Hhu9talw-xQ"
-  },
-  {
-    "name": "七音うら",
-    "youtubeid": "UCv2IYO-4waCpHvn50SWWY2A",
-    "title": "【#minecraft  】さすがに初心者すぎるまいくら。【七音うら】",
-    "date": "2026-01-19T03:46:28.000+09:00",
-    "status": "live",
-    "thumbnail": "https://i.ytimg.com/vi/6ZNgMFsRPL4/mqdefault_live.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/T655ATpSd2gkjZBrokvlkaUH0f5-fCpQdcJpwxmmNdy6fxCYffAlq2sMhPOtFk_CvVyOkEPY8Q",
-    "url": "https://www.youtube.com/watch?v=6ZNgMFsRPL4"
-  },
-  {
     "name": "新巻るろな",
     "youtubeid": "UCUd4wJjvPQflbLnsk_YHleA",
     "title": "【切り抜き】自画自賛ってやつ☆ #shorts #vtuber #valorant",
@@ -1490,6 +1470,16 @@
     "url": "https://www.youtube.com/watch?v=c6KdArQeqqE"
   },
   {
+    "name": "泡清みる",
+    "youtubeid": "UC0pz1TaDyqeO5p8_gbdeunw",
+    "title": "【真夜中ティータイム】お久し雑談🫧【ぷろのゔぁ/泡清みる】",
+    "date": "2026-01-21T22:02:35.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/L6mHWOPOwik/mqdefault.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/XefzBgTJORQ_8-p4C-a-57IHhaUNpY9becOfXRTDmQ4ezWFTtdBtXQ5H2tJlgUTnYBXUgwZ3dg",
+    "url": "https://www.youtube.com/watch?v=L6mHWOPOwik"
+  },
+  {
     "name": "香鳴ハノン",
     "youtubeid": "UCay6Y3oEoiC6ZEE2G0UZu_A",
     "title": "【歌枠｜KARAOKE】Palette Projectのオリジナル曲を歌う！ユニット曲も✨【#パレプロ #香鳴ハノン】",
@@ -1560,6 +1550,16 @@
     "url": "https://www.youtube.com/watch?v=yZc8aldZ7A8"
   },
   {
+    "name": "愛染アネラ",
+    "youtubeid": "UC7ek9Q4cK9O0eT3hiUYJaQw",
+    "title": "【 #ハートピアスローライフ 】 視聴者参加型💗ギャルがのんびり雑談しながらゲームする🎮 【 #新人Vtuber 愛染アネラ 】",
+    "date": "2026-01-22T00:01:10.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/-HERN3uIbHI/mqdefault.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/R99ADiR_1bRxcNCpiGLCW6ortzJy4JZFjlLaEHeDSJfYgwO_IieZWjjp4GbZauEeMxg_hhoS3A",
+    "url": "https://www.youtube.com/watch?v=-HERN3uIbHI"
+  },
+  {
     "name": "鎖乙女がぶ",
     "youtubeid": "UCSS4KDyRC--XCXGWgmjcrrA",
     "title": "【雑談】正真正銘最後の雑談・スパチャ読み【#鎖乙女がぶ /#パレプロ研究生 】",
@@ -1568,6 +1568,56 @@
     "thumbnail": "https://i.ytimg.com/vi/x59AQAY97MY/mqdefault_live.jpg",
     "channelIcon": "https://yt3.googleusercontent.com/1VQJQMprXeasnal8HcErTtxGpwob1CHAR5F_gyubiGAP06OqzWWhyUDBqyoZxcoCmowUh4XDRw",
     "url": "https://www.youtube.com/watch?v=x59AQAY97MY"
+  },
+  {
+    "name": "七音うら",
+    "youtubeid": "UCv2IYO-4waCpHvn50SWWY2A",
+    "title": "【#歌枠 】喋りたい深夜の雑談しながら歌枠。【七音うら】",
+    "date": "2026-01-22T01:03:34.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/dGrHEvqmJZM/mqdefault.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/T655ATpSd2gkjZBrokvlkaUH0f5-fCpQdcJpwxmmNdy6fxCYffAlq2sMhPOtFk_CvVyOkEPY8Q",
+    "url": "https://www.youtube.com/watch?v=dGrHEvqmJZM"
+  },
+  {
+    "name": "雛菊のん",
+    "youtubeid": "UChccV6U0Tkx9de4YjXbEelw",
+    "title": "ひそひそ配信💤おやすみを届ける💕 #新人vtuber #睡眠導入",
+    "date": "2026-01-22T01:25:33.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/-TolnzqRv1Q/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/OxvUqyZAoX4gIX91GOkYMIE2iYfD1ndRKGZbo4Ih8cDb5QuoXpqNJWZKpephYlI0zNiYjQptAQ",
+    "url": "https://www.youtube.com/watch?v=-TolnzqRv1Q"
+  },
+  {
+    "name": "天辻ゆらぐ",
+    "youtubeid": "UCeOFQCn_QZJMTszlRYRg3rQ",
+    "title": "【縦型/雑談歌枠】高評価100目標🎶あなたのお姉さんアイドルVtuber🪼💜初見歓迎✨️【天辻ゆらぐ/パレデミア学園】 #新人Vtuber #ゆらぐっどたいむ",
+    "date": "2026-01-22T02:16:35.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/KFsvZHWEU0w/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/4AFFu60kFJqix-OhtDW3EJdQ0jQa1LrK56tGpvqvbGodMQFpkH-_qtvL_66dPGD3kl4LW9N4",
+    "url": "https://www.youtube.com/watch?v=KFsvZHWEU0w"
+  },
+  {
+    "name": "花晴りら",
+    "youtubeid": "UCqcnlq8uJqnGml6hcIrMCZw",
+    "title": "【雑談朝活】大寒波到来中❄️木曜日も元気に朝活🔆初見さん/ROM勢大歓迎🌷【花晴りら/パレデミア学園】#れりライブ #vtuber #朝活 #雑談",
+    "date": "2026-01-22T07:00:00.000+09:00",
+    "status": "upcoming",
+    "thumbnail": "https://i.ytimg.com/vi/XkT9sNFwO8E/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/CH5JMWVQZ_RtloaXoj6W-yXjo9x8UxXSBG_vMyDnfk7M2QTOApVE1zOesu_aDrSAqvDbGrUyxs0",
+    "url": "https://www.youtube.com/watch?v=XkT9sNFwO8E"
+  },
+  {
+    "name": "夏渚まはろ",
+    "youtubeid": "UC_a00ml_EVDXSrtY8ZuyqGQ",
+    "title": "【お絵描き】彩音るかちゃん＆鎖乙女がぶちゃんお絵描き配信【#夏渚まはろ￤#パレプロ研究生】",
+    "date": "2026-01-22T17:00:00.000+09:00",
+    "status": "upcoming",
+    "thumbnail": "https://i.ytimg.com/vi/2l2wFweh1so/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/iktv-39nC7NDASD1WeXms-DEuHuVqB5RhwTtdDe26w-BCvqf6yq3r_8zBiv2i2CfNXCK0uE8",
+    "url": "https://www.youtube.com/watch?v=2l2wFweh1so"
   },
   {
     "name": "彩音るか",

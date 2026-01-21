@@ -1,14 +1,5 @@
 [
   {
-    "name": "李じゅぴ汰",
-    "twitchid": "lee_jupita",
-    "title": "【フォールガイズ】ゆるっとランクマ楽しい【FallGuys】雑談",
-    "date": "2026-01-18T20:57:44.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://yt3.googleusercontent.com/QQqec9A1J7eLk9RrRYD9vvk51BBJzcE1leGkU9n4YkwHqht9gmGT1ktmSlKItQtbuMSGuklAFxM",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/02d1309d58d98805dc98_lee_jupita_315415494899_1768737457//thumb/thumb0-320x180.jpg"
-  },
-  {
     "name": "真昼ねる",
     "twitchid": "mahiruneru",
     "title": "【参加◎】誕生日記念の『118キル』目指す‼️ 誕生日グッズもぜったいGETしてねぃ🎂【ぷろのゔぁ￤VTuber￤真昼ねる】",
@@ -189,9 +180,18 @@
   {
     "name": "なかもとおまち",
     "twitchid": "41futon",
-    "title": "日課スト６からの新春ホラゲSP『FORD ROAD』",
+    "title": "新春ホラゲSP『FORD ROAD』第三弾",
     "date": "2026-01-21T20:01:44.000+09:00",
     "status": "live",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_41futon-320x180.jpg"
+  },
+  {
+    "name": "なかもとおまち",
+    "twitchid": "41futon",
+    "title": "日課スト６からの新春ホラゲSP『FORD ROAD』",
+    "date": "2026-01-21T20:01:50.000+09:00",
+    "status": "archive",
+    "channelIcon": "https://yt3.googleusercontent.com/h8jNjVckVf08zSV6wdhQ38Fw9OH7kucAprlJsi9w0YdDIL8_Kcv0tHY-1cK8jPK_jRLSJb3t_Q",
+    "thumbnail": "https://vod-secure.twitch.tv/_404/404_processing_320x180.png"
   }
 ]

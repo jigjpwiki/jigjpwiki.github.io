@@ -1,14 +1,5 @@
 [
   {
-    "name": "しーはむ",
-    "twitchid": "siyham",
-    "title": "オーロラ練習がしたいんだが【冬グッズ特典ついて期間延長したぞ！】",
-    "date": "2026-01-19T15:36:05.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://yt3.googleusercontent.com/y0zP0Uz7HSLx5dv3xo488Suxk8rJQQUC1wXaymjUBIQIwa25WlVu_VmrsT1xAyVD-jgeL7hs",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/3378071b9ddc97e6d57c_siyham_315362184177_1768804559//thumb/thumb0-320x180.jpg"
-  },
-  {
     "name": "水透ユウ",
     "twitchid": "minato_yu_",
     "title": "【 #R6SX 】10周年スペシャルマッチ日韓戦日本チームでランク【冬グッズ＆お正月グッズ1/31まで発売中！】【 #新人vtuber 】",
@@ -178,5 +169,13 @@
     "status": "archive",
     "channelIcon": "https://yt3.googleusercontent.com/dPtSb9jgOlWAvy3_pEFIVzTc5iOd4OGhJQIVwjT6RpMAjOmJQHDzs0g2gYCjNEnlpcgQO8fb5-k",
     "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/4e4af88eb22812a1048b_chi7_v_315381084914_1769004446//thumb/thumb0-320x180.jpg"
+  },
+  {
+    "name": "火乃晴るい",
+    "twitchid": "hinoha_rui",
+    "title": "【 #VALORANT 】オハヨ",
+    "date": "2026-01-22T15:01:52.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_hinoha_rui-320x180.jpg"
   }
 ]

@@ -1,14 +1,5 @@
 [
   {
-    "name": "なかもとおまち",
-    "twitchid": "41futon",
-    "title": "祝・冬休み解禁！ちょっと話して出所してスト６だ！",
-    "date": "2026-01-19T22:03:46.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://yt3.googleusercontent.com/h8jNjVckVf08zSV6wdhQ38Fw9OH7kucAprlJsi9w0YdDIL8_Kcv0tHY-1cK8jPK_jRLSJb3t_Q",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/8ad2e9c67c43db72b4f8_41futon_315363710705_1768827820//thumb/thumb0-320x180.jpg"
-  },
-  {
     "name": "桜樹美彩",
     "twitchid": "sakuragimisa_v",
     "title": "【 朝活 】木曜以外は平日7時！土曜は9時開始朝活☀",
@@ -137,19 +128,11 @@
   {
     "name": "火乃晴るい",
     "twitchid": "hinoha_rui",
-    "title": "【 #VALORANT 】VALOカスタム練習DAY✨",
-    "date": "2026-01-22T15:01:52.000+09:00",
-    "status": "live",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_hinoha_rui-320x180.jpg"
-  },
-  {
-    "name": "火乃晴るい",
-    "twitchid": "hinoha_rui",
     "title": "【 #VALORANT 】オハヨ",
     "date": "2026-01-22T15:01:58.000+09:00",
     "status": "archive",
     "channelIcon": "https://yt3.googleusercontent.com/8vDFqOVNprKqFE0o7EecXyQleBXIibeJZpXpSgjm5msh4Yd0S8hTsbmYZyOBXa3bUEgBJHZt1w",
-    "thumbnail": "https://vod-secure.twitch.tv/_404/404_processing_320x180.png"
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/a8c55e29331903136977_hinoha_rui_315374807537_1769061712//thumb/thumb0-320x180.jpg"
   },
   {
     "name": "しーはむ",
@@ -163,7 +146,7 @@
   {
     "name": "李じゅぴ汰",
     "twitchid": "lee_jupita",
-    "title": "【スト6】TakeraCUP見てる【ストリートファイター6】",
+    "title": "【スト6】MR3桁の世界からこんにちは Mキンバリー【ストリートファイター6】",
     "date": "2026-01-22T19:55:07.000+09:00",
     "status": "live",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lee_jupita-320x180.jpg"
@@ -181,8 +164,17 @@
     "name": "銘兎目あう",
     "twitchid": "Metome_Au",
     "title": "【スト６】1506MRちょこっとランクいこっ～🥊✨",
-    "date": "2026-01-22T21:32:17.000+09:00",
+    "date": "2026-01-22T21:32:23.000+09:00",
+    "status": "archive",
+    "channelIcon": "https://yt3.googleusercontent.com/VB97J8AMHex_rkfd6hDhfiGhhVvrL-NNkseP2mMYSWh75sxA_oXctmxK5tV4FYgkM17RUAx6GQ",
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/d9d1d07eba18040ed6db_metome_au_315384901874_1769085137//thumb/thumb0-320x180.jpg"
+  },
+  {
+    "name": "月皇ちな",
+    "twitchid": "chi7_v",
+    "title": "【TFT】今日は炒飯とそば食べました",
+    "date": "2026-01-22T22:54:13.000+09:00",
     "status": "live",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_Metome_Au-320x180.jpg"
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_chi7_v-320x180.jpg"
   }
 ]

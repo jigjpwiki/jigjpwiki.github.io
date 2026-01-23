@@ -1,15 +1,5 @@
 [
   {
-    "name": "飛渡ココ",
-    "youtubeid": "UCMElh_FlHyzp_obVe-b3Qrg",
-    "title": "ガチ雑談なトトココ",
-    "date": "2026-01-20T12:00:26.000+09:00",
-    "status": "live",
-    "thumbnail": "https://i.ytimg.com/vi/qPUY36uwD8g/mqdefault.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/8I1SuqBXvb4dRY9bcXYc8xxSxL-L2CAe4YvBx2x3kOkyboXRq-G0rVo7pYflUmvo0UKIyxnlRA",
-    "url": "https://www.youtube.com/watch?v=qPUY36uwD8g"
-  },
-  {
     "name": "藤森ちとせ",
     "youtubeid": "UCAhdxmsdngH4noySdpVAVWQ",
     "title": "【ネザー露天掘り雑談】玄武岩デルタ掘ります⛏✨作業用にも😉ROM歓迎🎉【Minecraft】【#新人vtuber 】#ちとせらいぶ #パレデミア学園",
@@ -1580,6 +1570,16 @@
     "url": "https://www.youtube.com/watch?v=pua1OECd8nA"
   },
   {
+    "name": "夏渚まはろ",
+    "youtubeid": "UC_a00ml_EVDXSrtY8ZuyqGQ",
+    "title": "【朝活】みんなにおはようが言いたい雑談！初見さんも大歓迎！移動のお供にしてってね～！【#夏渚まはろ￤#パレプロ研究生】",
+    "date": "2026-01-23T06:00:26.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/b_XjNguKY3w/mqdefault.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/iktv-39nC7NDASD1WeXms-DEuHuVqB5RhwTtdDe26w-BCvqf6yq3r_8zBiv2i2CfNXCK0uE8",
+    "url": "https://www.youtube.com/watch?v=b_XjNguKY3w"
+  },
+  {
     "name": "桜樹美彩",
     "youtubeid": "UCTwKpTFX1aAXD0xpBqYqTdg",
     "title": "【 朝活 / ニュース 】１月23日（金）⏰ AM7:00『ちょこっと』朝活ニュース🍀天気予報/時事ニュース🍁初見＆ROM勢大歓迎🐥 #vtuber #みさライなう #桜樹美彩 #新人vtuber",
@@ -1618,6 +1618,36 @@
     "thumbnail": "https://i.ytimg.com/vi/v0HSgVDcBSw/mqdefault_live.jpg",
     "channelIcon": "https://yt3.googleusercontent.com/hBz75E3AEST1Dzv5vOTHAqoJfayd30WIWWQ3ZFLlWMHDsyZ_QD6ZVVUtLTKSizalT3APPtdpFGI",
     "url": "https://www.youtube.com/watch?v=v0HSgVDcBSw"
+  },
+  {
+    "name": "藤森ちとせ",
+    "youtubeid": "UCAhdxmsdngH4noySdpVAVWQ",
+    "title": "🐉11月21日金曜日🐉 今日の誕生花は #リュウノウギク ！ #誕生花 #花言葉 #藤森ちとせ #竜脳菊",
+    "date": "2026-01-23T08:15:07.000+09:00",
+    "status": "archive",
+    "thumbnail": "https://i.ytimg.com/vi/vipwePhDCcA/mqdefault.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/traR_yWe-AOGyM2wjo8h2FJO9JWBcbjfrL13X-umeD6BtNPopSZ2Q3YmdJq_5K9gWgHf_j64iQ",
+    "url": "https://www.youtube.com/watch?v=vipwePhDCcA"
+  },
+  {
+    "name": "飛渡ココ",
+    "youtubeid": "UCMElh_FlHyzp_obVe-b3Qrg",
+    "title": "マイクラ",
+    "date": "2026-01-23T12:01:36.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/K2QCbuboGHo/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/8I1SuqBXvb4dRY9bcXYc8xxSxL-L2CAe4YvBx2x3kOkyboXRq-G0rVo7pYflUmvo0UKIyxnlRA",
+    "url": "https://www.youtube.com/watch?v=K2QCbuboGHo"
+  },
+  {
+    "name": "藤森ちとせ",
+    "youtubeid": "UCAhdxmsdngH4noySdpVAVWQ",
+    "title": "【Minecraftメン限参加型ワールド配信】みんなで山削っちゃいましょうね～⛰✨【#新人vtuber 】#ちとせらいぶ",
+    "date": "2026-01-23T13:00:00.000+09:00",
+    "status": "upcoming",
+    "thumbnail": "https://i.ytimg.com/vi/InSFcFWBbY4/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/traR_yWe-AOGyM2wjo8h2FJO9JWBcbjfrL13X-umeD6BtNPopSZ2Q3YmdJq_5K9gWgHf_j64iQ",
+    "url": "https://www.youtube.com/watch?v=InSFcFWBbY4"
   },
   {
     "name": "常磐カナメ",

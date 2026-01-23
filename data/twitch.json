@@ -1,14 +1,5 @@
 [
   {
-    "name": "銘兎目あう",
-    "twitchid": "Metome_Au",
-    "title": "【スト６】1534MR～Mケン🥋今日もがんばろっ～👊✨",
-    "date": "2026-01-20T20:08:01.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://yt3.googleusercontent.com/VB97J8AMHex_rkfd6hDhfiGhhVvrL-NNkseP2mMYSWh75sxA_oXctmxK5tV4FYgkM17RUAx6GQ",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/88d3015dbf9325c9774a_metome_au_315367244273_1768907275//thumb/thumb0-320x180.jpg"
-  },
-  {
     "name": "李じゅぴ汰",
     "twitchid": "lee_jupita",
     "title": "【スト6】大会が近いから練習！  Mキンバリー【ストリートファイター6】",
@@ -168,5 +159,21 @@
     "date": "2026-01-23T17:05:21.000+09:00",
     "status": "live",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_chi7_v-320x180.jpg"
+  },
+  {
+    "name": "水透ユウ",
+    "twitchid": "minato_yu_",
+    "title": "【 #R6SX 】明日日韓戦だってばよ。22時～のvaloスクリムまでsolorank!【冬グッズ＆お正月グッズ1/31まで発売中！】【 #新人vtuber 】",
+    "date": "2026-01-23T19:42:25.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_minato_yu_-320x180.jpg"
+  },
+  {
+    "name": "銘兎目あう",
+    "twitchid": "Metome_Au",
+    "title": "【スト６】1517MR～Mケン🥋カスタム参加型👊ヤッー🦵！！！※22:30締切",
+    "date": "2026-01-23T20:44:16.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_Metome_Au-320x180.jpg"
   }
 ]

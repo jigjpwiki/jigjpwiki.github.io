@@ -1,15 +1,5 @@
 [
   {
-    "name": "桜堂ねる",
-    "youtubeid": "UC0H7dRRqhfOifbYQ2TURdAg",
-    "title": "圧倒的自由な朝活0122",
-    "date": "2026-01-22T07:22:40.000+09:00",
-    "status": "live",
-    "thumbnail": "https://i.ytimg.com/vi/hJf6_UZiJs8/mqdefault_live.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/hBz75E3AEST1Dzv5vOTHAqoJfayd30WIWWQ3ZFLlWMHDsyZ_QD6ZVVUtLTKSizalT3APPtdpFGI",
-    "url": "https://www.youtube.com/watch?v=hJf6_UZiJs8"
-  },
-  {
     "name": "灯野ぺけ。",
     "youtubeid": "UCldoz5HLh6BMW29HGnRpC0Q",
     "title": "【期間限定グッズ紹介💥】朝活22日目！みんな、おはぺけ～☀️初見さん/ROMの人もおいで～💥≪パレデミア学園 / 灯野ぺけ。≫ #vtuber #朝活 #雑談",
@@ -1550,6 +1540,16 @@
     "url": "https://www.youtube.com/watch?v=LQUa9N60xEk"
   },
   {
+    "name": "暁月クララ",
+    "youtubeid": "UCn4XvlTXjGSvDynpxpOYZPQ",
+    "title": "〖 質問きてた！〗アイドル禁断の質問：体重 #shorts #vtuber #暁月クララ #パレプロ",
+    "date": "2026-01-25T05:42:30.000+09:00",
+    "status": "archive",
+    "thumbnail": "https://i.ytimg.com/vi/MltMT3jjbgA/mqdefault.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/8tcStp-WzdZPtf6bPq1DtUnFSd2Eq5AppSd3_CEQ7hNNpnRND8InaWdPCz6T1wIWWkGJuFrbT94",
+    "url": "https://www.youtube.com/watch?v=MltMT3jjbgA"
+  },
+  {
     "name": "花晴りら",
     "youtubeid": "UCqcnlq8uJqnGml6hcIrMCZw",
     "title": "【雑談朝活】日曜日も早起き！まったりしゃべろ～～🔆初見さん/ROM勢大歓迎🌷【花晴りら/パレデミア学園】#れりライブ #vtuber #朝活 #雑談",
@@ -1558,6 +1558,36 @@
     "thumbnail": "https://i.ytimg.com/vi/NnHE3cYIVv8/mqdefault_live.jpg",
     "channelIcon": "https://yt3.googleusercontent.com/CH5JMWVQZ_RtloaXoj6W-yXjo9x8UxXSBG_vMyDnfk7M2QTOApVE1zOesu_aDrSAqvDbGrUyxs0",
     "url": "https://www.youtube.com/watch?v=NnHE3cYIVv8"
+  },
+  {
+    "name": "藤宮コトハ",
+    "youtubeid": "UCGndc74kfWb_A-8hZBG534Q",
+    "title": "【雑談】　おはよう☼【#パレプロ ／ #藤宮コトハ 】",
+    "date": "2026-01-25T07:00:16.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/TNP_ydvjMNY/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/rthBXvqjNFcVwEp-AWpiZDXnNjBodSXlsDTa-sjW6uR6Ssv3wuOw2dMXDZLlYaf_c4YiKfItHXU",
+    "url": "https://www.youtube.com/watch?v=TNP_ydvjMNY"
+  },
+  {
+    "name": "藤森ちとせ",
+    "youtubeid": "UCAhdxmsdngH4noySdpVAVWQ",
+    "title": "絶対に謝らない新人VTuber #グノーシア #GNOSIA #切り抜き #新人vtuber #vtuber",
+    "date": "2026-01-25T07:15:03.000+09:00",
+    "status": "archive",
+    "thumbnail": "https://i.ytimg.com/vi/vu5mF2KPJ5U/mqdefault.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/traR_yWe-AOGyM2wjo8h2FJO9JWBcbjfrL13X-umeD6BtNPopSZ2Q3YmdJq_5K9gWgHf_j64iQ",
+    "url": "https://www.youtube.com/watch?v=vu5mF2KPJ5U"
+  },
+  {
+    "name": "桜堂ねる",
+    "youtubeid": "UC0H7dRRqhfOifbYQ2TURdAg",
+    "title": "圧倒的自由な朝活0125 #マイクラ",
+    "date": "2026-01-25T07:20:20.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/n1qF6cyMneI/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/hBz75E3AEST1Dzv5vOTHAqoJfayd30WIWWQ3ZFLlWMHDsyZ_QD6ZVVUtLTKSizalT3APPtdpFGI",
+    "url": "https://www.youtube.com/watch?v=n1qF6cyMneI"
   },
   {
     "name": "忠犬しず",
@@ -1598,6 +1628,16 @@
     "thumbnail": "https://i.ytimg.com/vi/kIjLXEjJkH8/mqdefault_live.jpg",
     "channelIcon": "https://yt3.googleusercontent.com/0rkc__es21Zw7caiFrXVpP_HmFtp4e6ydnXKvFmJ9SFbWOsRE6xB70Xy-WUDX1FB-BYflvHA",
     "url": "https://www.youtube.com/watch?v=kIjLXEjJkH8"
+  },
+  {
+    "name": "天辻ゆらぐ",
+    "youtubeid": "UCeOFQCn_QZJMTszlRYRg3rQ",
+    "title": "【感想雑談】如月千早武道館単独公演「OathONE」💙P歴18年の古参Pが語りたいだけ語ります！初見歓迎🪼✨️【天辻ゆらぐ/パレデミア学園】 #新人Vtuber #ゆらぐっどたいむ",
+    "date": "2026-01-25T22:00:00.000+09:00",
+    "status": "upcoming",
+    "thumbnail": "https://i.ytimg.com/vi/VsHE3nxig_A/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/4AFFu60kFJqix-OhtDW3EJdQ0jQa1LrK56tGpvqvbGodMQFpkH-_qtvL_66dPGD3kl4LW9N4",
+    "url": "https://www.youtube.com/watch?v=VsHE3nxig_A"
   },
   {
     "name": "妖小琳",

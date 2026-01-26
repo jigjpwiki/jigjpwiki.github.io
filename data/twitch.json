@@ -1,14 +1,5 @@
 [
   {
-    "name": "真昼ねる",
-    "twitchid": "mahiruneru",
-    "title": "【#R6SX】やりましょう本日のランクマ🔥 誕生日グッズ発売中❣【ぷろのゔぁ￤VTuber￤真昼ねる】",
-    "date": "2026-01-23T22:43:51.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://yt3.googleusercontent.com/Cu6AMAZAEC_DTANKoaloA_4iLCuEUQ8BiAwyHGuOUG9GtoIw6s7mXCv1-49LV1IgODYZfGowzQ",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/35f3e6e081a89189b3b9_mahiruneru_315389594610_1769175825//thumb/thumb0-320x180.jpg"
-  },
-  {
     "name": "銘兎目あう",
     "twitchid": "Metome_Au",
     "title": "『クッキーラン：冒険の塔』今日も新しい冒険にいこう～🎶 #PR",
@@ -131,5 +122,13 @@
     "date": "2026-01-26T22:30:42.000+09:00",
     "status": "live",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_chi7_v-320x180.jpg"
+  },
+  {
+    "name": "李じゅぴ汰",
+    "twitchid": "lee_jupita",
+    "title": "【殴るぞ！！】彼氏の周りにいたら嫌な女友達を拳でわからせるゲーム",
+    "date": "2026-01-26T22:59:33.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lee_jupita-320x180.jpg"
   }
 ]

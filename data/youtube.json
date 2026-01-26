@@ -1,45 +1,5 @@
 [
   {
-    "name": "泡清みる",
-    "youtubeid": "UC0pz1TaDyqeO5p8_gbdeunw",
-    "title": "【あつまれ どうぶつの森】あつ森生活2日🍒【ぷろのゔぁ/泡清みる】",
-    "date": "2026-01-23T19:00:00.000+09:00",
-    "status": "upcoming",
-    "thumbnail": "https://i.ytimg.com/vi/ZtHkeIkLB2I/mqdefault_live.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/XefzBgTJORQ_8-p4C-a-57IHhaUNpY9becOfXRTDmQ4ezWFTtdBtXQ5H2tJlgUTnYBXUgwZ3dg",
-    "url": "https://www.youtube.com/watch?v=ZtHkeIkLB2I"
-  },
-  {
-    "name": "彼方ルカ",
-    "youtubeid": "UCDDYyCAWxccRh1QbjMd1NlQ",
-    "title": "【声劇サークル】創設【始動します】",
-    "date": "2026-01-23T19:00:00.000+09:00",
-    "status": "upcoming",
-    "thumbnail": "https://i.ytimg.com/vi/dXpQnprMfQA/mqdefault_live.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/nDlRaltNV-_TkUViiBzaAPFBeFSu4ZaC1XcJ4ENiondxy6f8poAi99eoqq9yZQ7yzbzo33Ts",
-    "url": "https://www.youtube.com/watch?v=dXpQnprMfQA"
-  },
-  {
-    "name": "神童めしあ",
-    "youtubeid": "UC6qmN_y3OTthBIjX4XlWfMw",
-    "title": "【歌ってみた】未完成/家入レオ #歌ってみた #vtuber  #神童めしあ #パレデミア学園 #shorts  #絶対零度   #家入レオ #vsinger #karaoke",
-    "date": "2026-01-23T19:00:01.000+09:00",
-    "status": "archive",
-    "thumbnail": "https://i.ytimg.com/vi/aJyr8_BvcfI/mqdefault.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/tcw2BKGi4A9w8yzvE1sql3hgtCrzLjRAlYf_birmjvHeQ4gjZYU7Zk53qLvt-TnGjmVXJsU3dQ",
-    "url": "https://www.youtube.com/watch?v=aJyr8_BvcfI"
-  },
-  {
-    "name": "七海ロナ",
-    "youtubeid": "UCIaZylf5L9MsCMOJX3BdTEg",
-    "title": "【可愛いでしょ？💖】special♡spell / きゅるりんってしてみて #vtuber #shorts",
-    "date": "2026-01-23T19:00:32.000+09:00",
-    "status": "archive",
-    "thumbnail": "https://i.ytimg.com/vi/G1IcisqZYv8/mqdefault.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/wi_loPPiitkzxiP0EiHomngWqVGTZQk1Dn4aI79VFWKLY0QbCTHz-FdjBxKEcQ1Jm0Ea_g257A",
-    "url": "https://www.youtube.com/watch?v=G1IcisqZYv8"
-  },
-  {
     "name": "常磐カナメ",
     "youtubeid": "UCbNEgJIF_ADD9e8-q7SoxCg",
     "title": "#ちくわぶ組 で奇妙な館から脱出しなさい！w/和央パリン【パレプロ/常磐カナメ】",
@@ -1500,6 +1460,26 @@
     "url": "https://www.youtube.com/watch?v=wwCwNReW9gs"
   },
   {
+    "name": "しーはむ",
+    "youtubeid": "UC5xSDiB2WG4pO_zUZ_t-n0Q",
+    "title": "ア〇チいるの？ #vtuber #新人vtuber",
+    "date": "2026-01-26T17:01:19.000+09:00",
+    "status": "archive",
+    "thumbnail": "https://i.ytimg.com/vi/zyBDfctsCKY/mqdefault.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/y0zP0Uz7HSLx5dv3xo488Suxk8rJQQUC1wXaymjUBIQIwa25WlVu_VmrsT1xAyVD-jgeL7hs",
+    "url": "https://www.youtube.com/watch?v=zyBDfctsCKY"
+  },
+  {
+    "name": "藤宮コトハ",
+    "youtubeid": "UCGndc74kfWb_A-8hZBG534Q",
+    "title": "MOTTAI💛 #shorts #藤宮コトハ",
+    "date": "2026-01-26T17:59:46.000+09:00",
+    "status": "archive",
+    "thumbnail": "https://i.ytimg.com/vi/P8sT52sZ1Qc/mqdefault.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/rthBXvqjNFcVwEp-AWpiZDXnNjBodSXlsDTa-sjW6uR6Ssv3wuOw2dMXDZLlYaf_c4YiKfItHXU",
+    "url": "https://www.youtube.com/watch?v=P8sT52sZ1Qc"
+  },
+  {
     "name": "虎島めら。",
     "youtubeid": "UCqewFfi_wwydw6fpazmlAFA",
     "title": "【APEX 甘狼このみカスタム チーム むかい】虎島めら。 ぷろのゔぁ",
@@ -1508,6 +1488,36 @@
     "thumbnail": "https://i.ytimg.com/vi/C8f9Y7ZLblQ/mqdefault_live.jpg",
     "channelIcon": "https://yt3.googleusercontent.com/6nfq-sTwa1PCHMrmFq5uNijG5PcQ8BRheGNXHc6GEMlBustwPyvfLIPWtxaHpKOhdXU1tFTnfA",
     "url": "https://www.youtube.com/watch?v=C8f9Y7ZLblQ"
+  },
+  {
+    "name": "宇田わん",
+    "youtubeid": "UCp45rWiRwgYZJUR4bQO-Xgw",
+    "title": "嘘告白してください！ #新人vtuber",
+    "date": "2026-01-26T18:01:03.000+09:00",
+    "status": "archive",
+    "thumbnail": "https://i.ytimg.com/vi/f4grMaUFbn0/mqdefault.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/bcgws2A-h2HRTCoWgcipC2sgJw_9y0O_5jBi_0QEW4DhAqyPZg4_xLkZw3JJBFZ2DzsYNiGx",
+    "url": "https://www.youtube.com/watch?v=f4grMaUFbn0"
+  },
+  {
+    "name": "雨海まる",
+    "youtubeid": "UCLuPxPlM1v6IOTLxM1TRPzA",
+    "title": "アイドルVtuberが「真夜中遊園地」 #歌ってみた #shorts #vtuber",
+    "date": "2026-01-26T18:01:25.000+09:00",
+    "status": "archive",
+    "thumbnail": "https://i.ytimg.com/vi/kmL7--hwZaY/mqdefault.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/NVLNPEsj4s1-JKLx5Yu2YbnsbK9jZtQetRBAuQMQGHXbasx2Oxr38qQLS-zQWg0Im2KQDRljKQ",
+    "url": "https://www.youtube.com/watch?v=kmL7--hwZaY"
+  },
+  {
+    "name": "八重森ふゆの",
+    "youtubeid": "UCYVPgR8PrA-DjOh36rLvSeg",
+    "title": "BOYS BE BRAVE～少年よ勇気を持て～/奥井亜紀 歌ってみた #vtuber #cover #shorts",
+    "date": "2026-01-26T18:08:55.000+09:00",
+    "status": "archive",
+    "thumbnail": "https://i.ytimg.com/vi/1bK7a56l8oI/mqdefault.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/0wtZ7ppCtnuhOD7p5zuy8UBp65YElDY_L3_RQ9rqD7paGRNAf3TZyUp4Ie8EaRk4kVrbD_dk",
+    "url": "https://www.youtube.com/watch?v=1bK7a56l8oI"
   },
   {
     "name": "夏渚まはろ",
@@ -1520,6 +1530,66 @@
     "url": "https://www.youtube.com/watch?v=B-DpfFZ7tbg"
   },
   {
+    "name": "天透あわ",
+    "youtubeid": "UCXI0W_Os-BCIngpCb1YnOow",
+    "title": "【初見さん大歓迎】月曜日の雑談 #毎日あまあわ ＃新人Vtuber",
+    "date": "2026-01-26T18:56:53.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/NHV6MXfLfck/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/Me8I_Op8OlIy8Vuj387_Hdi6gnrZ-qiY1yDDt1Q5yKMKA51ISagT76HE01gw8xbLcef0vpsPgoc",
+    "url": "https://www.youtube.com/watch?v=NHV6MXfLfck"
+  },
+  {
+    "name": "緋月・ローズ・ブレイド",
+    "youtubeid": "UCDutDfyKbX_ah4GF6kPNKmw",
+    "title": "【#vtuber 】恋愛タイガ→☆/くらp【#歌ってみた】 #vocaloid #初音ミク",
+    "date": "2026-01-26T19:01:04.000+09:00",
+    "status": "archive",
+    "thumbnail": "https://i.ytimg.com/vi/flI5fgCCvd0/mqdefault.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/W_G4fcoLegJdQmhWclC6RKHdrx9DJLGZ4WcLyCKgJxzyZZ3MUd-tNZ90LYQGVAbt7NzXl5GUJQ",
+    "url": "https://www.youtube.com/watch?v=flI5fgCCvd0"
+  },
+  {
+    "name": "神童めしあ",
+    "youtubeid": "UC6qmN_y3OTthBIjX4XlWfMw",
+    "title": "【歌ってみた】幻の命/SEKAI NO OWARI #歌ってみた #vtuber  #神童めしあ #パレデミア学園 #shorts  #セカオワ #世界の終わり  #vsinger",
+    "date": "2026-01-26T19:01:06.000+09:00",
+    "status": "archive",
+    "thumbnail": "https://i.ytimg.com/vi/mQrrPv0OAds/mqdefault.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/tcw2BKGi4A9w8yzvE1sql3hgtCrzLjRAlYf_birmjvHeQ4gjZYU7Zk53qLvt-TnGjmVXJsU3dQ",
+    "url": "https://www.youtube.com/watch?v=mQrrPv0OAds"
+  },
+  {
+    "name": "亀城ちかり",
+    "youtubeid": "UCn67GGb_NB7P17BVTduGkEw",
+    "title": "プレゼントよ♡しまわないでね♡#vtuber #新人vtuber #パレデミア学園",
+    "date": "2026-01-26T19:28:29.000+09:00",
+    "status": "archive",
+    "thumbnail": "https://i.ytimg.com/vi/33BfR97o0zM/mqdefault.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/1lCP0LQUS6X7hWGdwUeFcmKxR3jbMrKF9F-p3HVJMdvEkP_PUAx4f5fUIG91oui6rg9Y0U00-jY",
+    "url": "https://www.youtube.com/watch?v=33BfR97o0zM"
+  },
+  {
+    "name": "瀬奈りるか",
+    "youtubeid": "UCWi_ztz8Xuz4XfzhoG6ZfyA",
+    "title": "【ブルアカ】レイド6日目！コクマーを倒す🔫✨鋼鉄大陸攻略戦をプレイ🪄💫【ブルーアーカイブ】＃せなりるライブ",
+    "date": "2026-01-26T19:45:00.000+09:00",
+    "status": "upcoming",
+    "thumbnail": "https://i.ytimg.com/vi/1aC4G5Nr_lE/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/bM-okYT9oTq3M5dq33VSpidEiaC8MP2EoQXX2gNpgW7PAV7RSn1t7_2HghmCcAwrNxriAmMy",
+    "url": "https://www.youtube.com/watch?v=1aC4G5Nr_lE"
+  },
+  {
+    "name": "フローレ・ブランカ",
+    "youtubeid": "UCNb9zRVc1coFKxJAn9lVtsw",
+    "title": "【雑談】なにか話す【フローレ・ブランカ/パレデミア学園】",
+    "date": "2026-01-26T20:00:00.000+09:00",
+    "status": "upcoming",
+    "thumbnail": "https://i.ytimg.com/vi/jTFIaFjhsCc/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/xqdNSKZCNQ6ekbqgjixeOR0aTymLfmP_ILAFQ4sBF7ln-ZWxQYkVjGBun2pF1PwVC6nmwi2KFxE",
+    "url": "https://www.youtube.com/watch?v=jTFIaFjhsCc"
+  },
+  {
     "name": "香鳴ハノン",
     "youtubeid": "UCay6Y3oEoiC6ZEE2G0UZu_A",
     "title": "【歌枠】#はのみくりん が歌うラブライブ！オンリーセトリ💗μ's・Aqours・Liella! & more✨【#星衣未空莉 #香鳴ハノン】",
@@ -1530,6 +1600,36 @@
     "url": "https://www.youtube.com/watch?v=sGicwGQoqo8"
   },
   {
+    "name": "忠犬しず",
+    "youtubeid": "UCPzN3R0x_SciJJ_FP-STpHQ",
+    "title": "【 同時視聴 】完全初見！仮面ライダーオーズと機界戦隊ゼンカイジャーの29、30話を見て行くぞ！【 Vtuber/忠犬しず 】#特撮オタク　#特撮女子",
+    "date": "2026-01-26T21:00:00.000+09:00",
+    "status": "upcoming",
+    "thumbnail": "https://i.ytimg.com/vi/0LOb4dnCVSE/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/9dVPxoBbcXIeN4O1N6bYiWu3EHHHeaStY7fQYPZfF3thWIP2Sc9Uc6kg56Aj0UHrg5QqqDtn",
+    "url": "https://www.youtube.com/watch?v=0LOb4dnCVSE"
+  },
+  {
+    "name": "花晴りら",
+    "youtubeid": "UCqcnlq8uJqnGml6hcIrMCZw",
+    "title": "【雑談】2666人目指して🌷月曜夜おつかれさま！まったり雑談🌙初見さん/ROM勢大歓迎【花晴りら/パレデミア学園】#れりライブ #vtuber #雑談",
+    "date": "2026-01-26T21:00:00.000+09:00",
+    "status": "upcoming",
+    "thumbnail": "https://i.ytimg.com/vi/Q2koTVAsHxY/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/CH5JMWVQZ_RtloaXoj6W-yXjo9x8UxXSBG_vMyDnfk7M2QTOApVE1zOesu_aDrSAqvDbGrUyxs0",
+    "url": "https://www.youtube.com/watch?v=Q2koTVAsHxY"
+  },
+  {
+    "name": "しーはむ",
+    "youtubeid": "UC5xSDiB2WG4pO_zUZ_t-n0Q",
+    "title": "〘 #雑談〙ゲームからアニメまで色々お話しよ～！2400人めざし中♡〘#VTuber│#しーはむ│ぷろのゔぁ〙",
+    "date": "2026-01-26T21:30:00.000+09:00",
+    "status": "upcoming",
+    "thumbnail": "https://i.ytimg.com/vi/em3792uf0sE/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/y0zP0Uz7HSLx5dv3xo488Suxk8rJQQUC1wXaymjUBIQIwa25WlVu_VmrsT1xAyVD-jgeL7hs",
+    "url": "https://www.youtube.com/watch?v=em3792uf0sE"
+  },
+  {
     "name": "桜樹美彩",
     "youtubeid": "UCTwKpTFX1aAXD0xpBqYqTdg",
     "title": "【 朝活 / ニュース 】１月27日（火）⏰ AM7:00『ちょこっと』朝活ニュース🍀天気予報/時事ニュース🍁初見＆ROM勢大歓迎🐥 #vtuber #みさライなう #桜樹美彩 #新人vtuber",
@@ -1538,6 +1638,16 @@
     "thumbnail": "https://i.ytimg.com/vi/w8e09-Vf-Ls/mqdefault_live.jpg",
     "channelIcon": "https://yt3.googleusercontent.com/pDP2GuylW0RN1REDScFAlNklbXaPRqTm2mwT2F7dIo8xoYYFPfspsjGH_G3RagwlKVlQbdw95bY",
     "url": "https://www.youtube.com/watch?v=w8e09-Vf-Ls"
+  },
+  {
+    "name": "花晴りら",
+    "youtubeid": "UCqcnlq8uJqnGml6hcIrMCZw",
+    "title": "【雑談朝活】まだまだ寒波到来中❄️火曜も早起き！お仕事前におはよう🔆初見さん/ROM勢大歓迎🌷【花晴りら/パレデミア学園】#れりライブ #vtuber #朝活 #雑談",
+    "date": "2026-01-27T07:00:00.000+09:00",
+    "status": "upcoming",
+    "thumbnail": "https://i.ytimg.com/vi/xpM5uk9jyGs/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/CH5JMWVQZ_RtloaXoj6W-yXjo9x8UxXSBG_vMyDnfk7M2QTOApVE1zOesu_aDrSAqvDbGrUyxs0",
+    "url": "https://www.youtube.com/watch?v=xpM5uk9jyGs"
   },
   {
     "name": "Palette Project",

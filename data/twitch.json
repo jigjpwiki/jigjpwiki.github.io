@@ -119,9 +119,10 @@
     "name": "水透ユウ",
     "twitchid": "minato_yu_",
     "title": "【 #R6SX 】敵の数と配置は。（22時～激動valoスクリム）【冬グッズ＆お正月グッズ1/31まで発売中！】【 #新人vtuber 】",
-    "date": "2026-01-27T19:49:37.000+09:00",
-    "status": "live",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_minato_yu_-320x180.jpg"
+    "date": "2026-01-27T19:49:42.000+09:00",
+    "status": "archive",
+    "channelIcon": "https://yt3.googleusercontent.com/eVD8Ygm7KVyh3dvWnyebfYlbYpD13ZYQ-Bos8WdR5LDE61A3svHVHCLEY-rM3IQgw9O4uvdd",
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/f0db59516003e05c47ad_minato_yu__315455430387_1769510977//thumb/thumb0-320x180.jpg"
   },
   {
     "name": "銘兎目あう",
@@ -139,5 +140,13 @@
     "status": "archive",
     "channelIcon": "https://yt3.googleusercontent.com/VB97J8AMHex_rkfd6hDhfiGhhVvrL-NNkseP2mMYSWh75sxA_oXctmxK5tV4FYgkM17RUAx6GQ",
     "thumbnail": "https://vod-secure.twitch.tv/_404/404_processing_320x180.png"
+  },
+  {
+    "name": "真昼ねる",
+    "twitchid": "mahiruneru",
+    "title": "【参加◎】みんなでアンランクぼくはカリOTP🌟 誕生日グッズ発売中❣【ぷろのゔぁ￤VTuber￤真昼ねる】",
+    "date": "2026-01-27T21:36:46.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_mahiruneru-320x180.jpg"
   }
 ]

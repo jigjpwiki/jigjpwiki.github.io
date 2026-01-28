@@ -1,35 +1,5 @@
 [
   {
-    "name": "宇田わん",
-    "youtubeid": "UCp45rWiRwgYZJUR4bQO-Xgw",
-    "title": "必殺技を放ってください #新人VTuber #手描き切り抜き",
-    "date": "2026-01-25T18:00:00.000+09:00",
-    "status": "archive",
-    "thumbnail": "https://i.ytimg.com/vi/-O6mEiJhj0Q/mqdefault.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/bcgws2A-h2HRTCoWgcipC2sgJw_9y0O_5jBi_0QEW4DhAqyPZg4_xLkZw3JJBFZ2DzsYNiGx",
-    "url": "https://www.youtube.com/watch?v=-O6mEiJhj0Q"
-  },
-  {
-    "name": "愛乃宮ゆめ",
-    "youtubeid": "UCttSjPiwPYpiPuCrgxK7c1g",
-    "title": "流行りのリズムゲームやってみた！！【愛乃宮ゆめ/パレデミア学園】#shorts  #saythewordonbeat",
-    "date": "2026-01-25T18:01:09.000+09:00",
-    "status": "archive",
-    "thumbnail": "https://i.ytimg.com/vi/q8m10AlswX4/mqdefault.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/M01WvdgX_IfwIkwA4g0_gf9qo4fqF5U7pnXloNwOcL2XnTXXdF8UQ9HS2oyv21t-GXnIhBTWndk",
-    "url": "https://www.youtube.com/watch?v=q8m10AlswX4"
-  },
-  {
-    "name": "桜樹美彩",
-    "youtubeid": "UCTwKpTFX1aAXD0xpBqYqTdg",
-    "title": "【 1日限定！Project Zomboid Streamer Server 】生き残ったら勝ち。k4senさんサーバーで初見ゲームプレイ🎮 / #vtuber  #みさライなう",
-    "date": "2026-01-25T18:15:18.000+09:00",
-    "status": "live",
-    "thumbnail": "https://i.ytimg.com/vi/hPKGf6qgxEU/mqdefault_live.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/pDP2GuylW0RN1REDScFAlNklbXaPRqTm2mwT2F7dIo8xoYYFPfspsjGH_G3RagwlKVlQbdw95bY",
-    "url": "https://www.youtube.com/watch?v=hPKGf6qgxEU"
-  },
-  {
     "name": "夏渚まはろ",
     "youtubeid": "UC_a00ml_EVDXSrtY8ZuyqGQ",
     "title": "【縦型雑談】日曜夕方に少しだけまったりお話ししよ！初見さんも大歓迎！ch登録1万人で3D化のアイドル研究生です！【#夏渚まはろ￤#パレプロ研究生】",
@@ -1500,6 +1470,36 @@
     "url": "https://www.youtube.com/watch?v=STdhm6I8HO0"
   },
   {
+    "name": "肇明日空",
+    "youtubeid": "UCj6HYkokrIErMfhKAUAvYcA",
+    "title": "そう、暴れる#vtuber #shorts #repo",
+    "date": "2026-01-28T16:00:53.000+09:00",
+    "status": "archive",
+    "thumbnail": "https://i.ytimg.com/vi/vX6IEcvjnyk/mqdefault.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/u59W56aqJ9r7WunTIqg60ZGnBu-G-9LA-OX6tZR6debt_isQ8xR59HUwrbAqLLqlTf_0VosmZg",
+    "url": "https://www.youtube.com/watch?v=vX6IEcvjnyk"
+  },
+  {
+    "name": "桜樹美彩",
+    "youtubeid": "UCTwKpTFX1aAXD0xpBqYqTdg",
+    "title": "【 歌枠 / karaoke 】まったり夕方の歌枠🎤初見＆ROM大歓迎🎉singing stream🐤  #vtuber #みさライなう #桜樹美彩 #新人vtuber",
+    "date": "2026-01-28T17:00:37.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/1k7XZDyvVPc/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/pDP2GuylW0RN1REDScFAlNklbXaPRqTm2mwT2F7dIo8xoYYFPfspsjGH_G3RagwlKVlQbdw95bY",
+    "url": "https://www.youtube.com/watch?v=1k7XZDyvVPc"
+  },
+  {
+    "name": "しーはむ",
+    "youtubeid": "UC5xSDiB2WG4pO_zUZ_t-n0Q",
+    "title": "コメ返率高くない？ #vtuber #新人vtuber",
+    "date": "2026-01-28T17:00:57.000+09:00",
+    "status": "archive",
+    "thumbnail": "https://i.ytimg.com/vi/qUO7F-TmZmg/mqdefault.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/y0zP0Uz7HSLx5dv3xo488Suxk8rJQQUC1wXaymjUBIQIwa25WlVu_VmrsT1xAyVD-jgeL7hs",
+    "url": "https://www.youtube.com/watch?v=qUO7F-TmZmg"
+  },
+  {
     "name": "夏渚まはろ",
     "youtubeid": "UC_a00ml_EVDXSrtY8ZuyqGQ",
     "title": "【あつまれどうぶつの森】島クリで島を更地にする！飛行場から島の形整えていこうかな【#夏渚まはろ￤#パレプロ研究生】",
@@ -1508,6 +1508,26 @@
     "thumbnail": "https://i.ytimg.com/vi/UiuE8opzD-o/mqdefault_live.jpg",
     "channelIcon": "https://yt3.googleusercontent.com/iktv-39nC7NDASD1WeXms-DEuHuVqB5RhwTtdDe26w-BCvqf6yq3r_8zBiv2i2CfNXCK0uE8",
     "url": "https://www.youtube.com/watch?v=UiuE8opzD-o"
+  },
+  {
+    "name": "雨海まる",
+    "youtubeid": "UCLuPxPlM1v6IOTLxM1TRPzA",
+    "title": "関西弁アイドルVのバイト先がやばすぎてツッコミが止まらない！？ #shorts #vtuber #ゲーム配信",
+    "date": "2026-01-28T18:01:29.000+09:00",
+    "status": "archive",
+    "thumbnail": "https://i.ytimg.com/vi/wEfkIgDC63Y/mqdefault.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/NVLNPEsj4s1-JKLx5Yu2YbnsbK9jZtQetRBAuQMQGHXbasx2Oxr38qQLS-zQWg0Im2KQDRljKQ",
+    "url": "https://www.youtube.com/watch?v=wEfkIgDC63Y"
+  },
+  {
+    "name": "肇明日空",
+    "youtubeid": "UCj6HYkokrIErMfhKAUAvYcA",
+    "title": "変わらないもの covered by肇明日空【変わらないもの/奥華子】",
+    "date": "2026-01-28T18:03:29.000+09:00",
+    "status": "archive",
+    "thumbnail": "https://i.ytimg.com/vi/C8-hOWU4r1E/mqdefault.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/u59W56aqJ9r7WunTIqg60ZGnBu-G-9LA-OX6tZR6debt_isQ8xR59HUwrbAqLLqlTf_0VosmZg",
+    "url": "https://www.youtube.com/watch?v=C8-hOWU4r1E"
   },
   {
     "name": "虎島めら。",
@@ -1618,5 +1638,15 @@
     "thumbnail": "https://i.ytimg.com/vi/GFITJdu5jZs/mqdefault_live.jpg",
     "channelIcon": "https://yt3.googleusercontent.com/iktv-39nC7NDASD1WeXms-DEuHuVqB5RhwTtdDe26w-BCvqf6yq3r_8zBiv2i2CfNXCK0uE8",
     "url": "https://www.youtube.com/watch?v=GFITJdu5jZs"
+  },
+  {
+    "name": "妖小琳",
+    "youtubeid": "UC6eopxuX7lx8GnpkntObt1w",
+    "title": "【#PoppyPlaytimeChapter4 】その笑顔が怖い【妖小琳/登龍門BOX】",
+    "date": "2026-01-31T18:00:00.000+09:00",
+    "status": "upcoming",
+    "thumbnail": "https://i.ytimg.com/vi/JgVjoOWx268/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/Ji8DJgyzWKUbbeWlYgFfsCZtyiGZ-zM597otZBcFnIoEVIw7284GbNbBQcALgEKwqvk8OXNZLA",
+    "url": "https://www.youtube.com/watch?v=JgVjoOWx268"
   }
 ]

@@ -147,9 +147,10 @@
     "name": "月皇ちな",
     "twitchid": "chi7_v",
     "title": "【アークナイツ：エンドフィールド】ストーリー進める！！",
-    "date": "2026-01-28T17:36:36.000+09:00",
-    "status": "live",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_chi7_v-320x180.jpg"
+    "date": "2026-01-28T17:36:42.000+09:00",
+    "status": "archive",
+    "channelIcon": "https://yt3.googleusercontent.com/dPtSb9jgOlWAvy3_pEFIVzTc5iOd4OGhJQIVwjT6RpMAjOmJQHDzs0g2gYCjNEnlpcgQO8fb5-k",
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/ab7a34ff17ae06dc43ee_chi7_v_315410835570_1769589396//thumb/thumb0-320x180.jpg"
   },
   {
     "name": "銘兎目あう",
@@ -175,5 +176,13 @@
     "date": "2026-01-28T20:29:19.000+09:00",
     "status": "live",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_minato_yu_-320x180.jpg"
+  },
+  {
+    "name": "火乃晴るい",
+    "twitchid": "hinoha_rui",
+    "title": "【 #VALORANT 】レインさんとDUOコンペ👀PCフリーズしたら配信オワリ",
+    "date": "2026-01-28T20:56:09.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_hinoha_rui-320x180.jpg"
   }
 ]

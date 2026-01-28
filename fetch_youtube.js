@@ -21,7 +21,7 @@ function toJstISOString(utcString) {
 
     const now = new Date();
     const threeDaysAgo   = new Date(now.getTime() - 3 * 24 * 60 * 60 * 1000);
-    const threeDaysLater = new Date(now.getTime() + 3 * 24 * 60 * 60 * 1000);
+    const threeDaysLater = new Date(now.getTime() + 5 * 24 * 60 * 60 * 1000);
 
     // キャッシュ読み込み
     let cache = {};

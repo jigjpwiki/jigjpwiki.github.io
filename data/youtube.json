@@ -1,25 +1,5 @@
 [
   {
-    "name": "桜堂ねる",
-    "youtubeid": "UC0H7dRRqhfOifbYQ2TURdAg",
-    "title": "圧倒的自由なお昼の #マイクラ",
-    "date": "2026-01-26T11:47:39.000+09:00",
-    "status": "live",
-    "thumbnail": "https://i.ytimg.com/vi/C3-YligGqnY/mqdefault_live.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/hBz75E3AEST1Dzv5vOTHAqoJfayd30WIWWQ3ZFLlWMHDsyZ_QD6ZVVUtLTKSizalT3APPtdpFGI",
-    "url": "https://www.youtube.com/watch?v=C3-YligGqnY"
-  },
-  {
-    "name": "飛渡ココ",
-    "youtubeid": "UCMElh_FlHyzp_obVe-b3Qrg",
-    "title": "歌枠・・・のはずだったんですけど・・・",
-    "date": "2026-01-26T12:00:36.000+09:00",
-    "status": "live",
-    "thumbnail": "https://i.ytimg.com/vi/G2-ibmN5McI/mqdefault_live.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/8I1SuqBXvb4dRY9bcXYc8xxSxL-L2CAe4YvBx2x3kOkyboXRq-G0rVo7pYflUmvo0UKIyxnlRA",
-    "url": "https://www.youtube.com/watch?v=G2-ibmN5McI"
-  },
-  {
     "name": "藤森ちとせ",
     "youtubeid": "UCAhdxmsdngH4noySdpVAVWQ",
     "title": "【ネザー露天掘り雑談】溶岩埋めるの大変ですね～😥⛏作業用にも😉ROM歓迎🎉【Minecraft】【#新人vtuber 】#ちとせらいぶ #パレデミア学園",
@@ -1520,6 +1500,16 @@
     "url": "https://www.youtube.com/watch?v=M6uwz-s3fFc"
   },
   {
+    "name": "藤森ちとせ",
+    "youtubeid": "UCAhdxmsdngH4noySdpVAVWQ",
+    "title": "【メサ露天掘り雑談】メサ2チャンク掘る配信⛏✨ゆるゆる掘っていきましょうね～😊作業用にも😉ROM歓迎🎉【Minecraft】【#新人vtuber 】#ちとせらいぶ #パレデミア学園",
+    "date": "2026-01-29T13:00:00.000+09:00",
+    "status": "upcoming",
+    "thumbnail": "https://i.ytimg.com/vi/hpI8gPzXc-A/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/traR_yWe-AOGyM2wjo8h2FJO9JWBcbjfrL13X-umeD6BtNPopSZ2Q3YmdJq_5K9gWgHf_j64iQ",
+    "url": "https://www.youtube.com/watch?v=hpI8gPzXc-A"
+  },
+  {
     "name": "夏渚まはろ",
     "youtubeid": "UC_a00ml_EVDXSrtY8ZuyqGQ",
     "title": "【初代ゼルダの伝説】FC版ゼル伝全部やる！マップ全部飛びました【#夏渚まはろ￤#パレプロ研究生】",
@@ -1538,6 +1528,16 @@
     "thumbnail": "https://i.ytimg.com/vi/yv2P4Z6Lga4/mqdefault_live.jpg",
     "channelIcon": "https://yt3.googleusercontent.com/XefzBgTJORQ_8-p4C-a-57IHhaUNpY9becOfXRTDmQ4ezWFTtdBtXQ5H2tJlgUTnYBXUgwZ3dg",
     "url": "https://www.youtube.com/watch?v=yv2P4Z6Lga4"
+  },
+  {
+    "name": "虎島めら。",
+    "youtubeid": "UCqewFfi_wwydw6fpazmlAFA",
+    "title": "【女子パで初見プレイHighguard】虎島めら。ぷろのゔぁ",
+    "date": "2026-01-29T20:00:00.000+09:00",
+    "status": "upcoming",
+    "thumbnail": "https://i.ytimg.com/vi/LzTdhO9HuQc/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/6nfq-sTwa1PCHMrmFq5uNijG5PcQ8BRheGNXHc6GEMlBustwPyvfLIPWtxaHpKOhdXU1tFTnfA",
+    "url": "https://www.youtube.com/watch?v=LzTdhO9HuQc"
   },
   {
     "name": "江波キョウカ",
@@ -1588,6 +1588,16 @@
     "thumbnail": "https://i.ytimg.com/vi/X4QKb-m0E1M/mqdefault_live.jpg",
     "channelIcon": "https://yt3.googleusercontent.com/pDP2GuylW0RN1REDScFAlNklbXaPRqTm2mwT2F7dIo8xoYYFPfspsjGH_G3RagwlKVlQbdw95bY",
     "url": "https://www.youtube.com/watch?v=X4QKb-m0E1M"
+  },
+  {
+    "name": "虎島めら。",
+    "youtubeid": "UCqewFfi_wwydw6fpazmlAFA",
+    "title": "【APEX   たかハルカスタム】虎島めら。ぷろのゔぁ",
+    "date": "2026-01-30T20:45:00.000+09:00",
+    "status": "upcoming",
+    "thumbnail": "https://i.ytimg.com/vi/352WcYj8VFk/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/6nfq-sTwa1PCHMrmFq5uNijG5PcQ8BRheGNXHc6GEMlBustwPyvfLIPWtxaHpKOhdXU1tFTnfA",
+    "url": "https://www.youtube.com/watch?v=352WcYj8VFk"
   },
   {
     "name": "妖小琳",

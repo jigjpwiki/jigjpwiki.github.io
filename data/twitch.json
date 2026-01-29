@@ -1,14 +1,5 @@
 [
   {
-    "name": "銘兎目あう",
-    "twitchid": "Metome_Au",
-    "title": "【スト６】1515MR～Mケン🥋2日ぶりのランクにいこう～👊",
-    "date": "2026-01-26T20:11:33.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://yt3.googleusercontent.com/VB97J8AMHex_rkfd6hDhfiGhhVvrL-NNkseP2mMYSWh75sxA_oXctmxK5tV4FYgkM17RUAx6GQ",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/28ca07cde2dd45027af8_metome_au_315451228275_1769425887//thumb/thumb0-320x180.jpg"
-  },
-  {
     "name": "月皇ちな",
     "twitchid": "chi7_v",
     "title": "【ARC Raiders】設計図ゲットするわよ w/陵本なぎ,水縹うる",
@@ -178,5 +169,29 @@
     "status": "archive",
     "channelIcon": "https://yt3.googleusercontent.com/QQqec9A1J7eLk9RrRYD9vvk51BBJzcE1leGkU9n4YkwHqht9gmGT1ktmSlKItQtbuMSGuklAFxM",
     "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/0aabebf760b8ce96a00f_lee_jupita_315414978802_1769671890//thumb/thumb0-320x180.jpg"
+  },
+  {
+    "name": "水透ユウ",
+    "twitchid": "minato_yu_",
+    "title": "【 #R6SX 】solo→LandValk Cupメンバー#2【冬グッズ＆お正月グッズ1/31まで発売中！】【 #新人vtuber 】",
+    "date": "2026-01-29T20:01:06.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_minato_yu_-320x180.jpg"
+  },
+  {
+    "name": "月皇ちな",
+    "twitchid": "chi7_v",
+    "title": "【Highguard】新作FPSやるよー！ w/真昼ねる,虎島めら。",
+    "date": "2026-01-29T20:03:07.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_chi7_v-320x180.jpg"
+  },
+  {
+    "name": "真昼ねる",
+    "twitchid": "mahiruneru",
+    "title": "【#HIGHGUARD】初コラボではじめてのはいがーど🌟 w/月皇ちな＆虎島めら。【ぷろのゔぁ￤VTuber￤真昼ねる】",
+    "date": "2026-01-29T20:03:23.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_mahiruneru-320x180.jpg"
   }
 ]

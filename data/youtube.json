@@ -1,55 +1,5 @@
 [
   {
-    "name": "飛渡ココ",
-    "youtubeid": "UCMElh_FlHyzp_obVe-b3Qrg",
-    "title": "初配信時の初々しいトトココ#vtuber",
-    "date": "2026-01-26T19:58:59.000+09:00",
-    "status": "archive",
-    "thumbnail": "https://i.ytimg.com/vi/T5BR1mFk2z0/mqdefault.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/8I1SuqBXvb4dRY9bcXYc8xxSxL-L2CAe4YvBx2x3kOkyboXRq-G0rVo7pYflUmvo0UKIyxnlRA",
-    "url": "https://www.youtube.com/watch?v=T5BR1mFk2z0"
-  },
-  {
-    "name": "フローレ・ブランカ",
-    "youtubeid": "UCNb9zRVc1coFKxJAn9lVtsw",
-    "title": "【雑談】なにか話す【フローレ・ブランカ/パレデミア学園】",
-    "date": "2026-01-26T20:00:00.000+09:00",
-    "status": "upcoming",
-    "thumbnail": "https://i.ytimg.com/vi/jTFIaFjhsCc/mqdefault_live.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/xqdNSKZCNQ6ekbqgjixeOR0aTymLfmP_ILAFQ4sBF7ln-ZWxQYkVjGBun2pF1PwVC6nmwi2KFxE",
-    "url": "https://www.youtube.com/watch?v=jTFIaFjhsCc"
-  },
-  {
-    "name": "艶島カオル",
-    "youtubeid": "UC8k86ipkbrCC4ZpA2HU3jPg",
-    "title": "え、友達だよね？？　【妖怪ウォッチ1 for Nintendo Switch】",
-    "date": "2026-01-26T20:01:28.000+09:00",
-    "status": "live",
-    "thumbnail": "https://i.ytimg.com/vi/-Wz--YjFQbU/mqdefault_live.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/lzteAfqbat5y-V0xiXVQZwWYWy5Jj3vCD-c4goMnmK-D-90KX33WL4Ylg76gJclf60txW7GHyQ",
-    "url": "https://www.youtube.com/watch?v=-Wz--YjFQbU"
-  },
-  {
-    "name": "飛渡ココ",
-    "youtubeid": "UCMElh_FlHyzp_obVe-b3Qrg",
-    "title": "ガチ雑談",
-    "date": "2026-01-26T20:04:29.000+09:00",
-    "status": "live",
-    "thumbnail": "https://i.ytimg.com/vi/JfB0qHCuXqc/mqdefault_live.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/8I1SuqBXvb4dRY9bcXYc8xxSxL-L2CAe4YvBx2x3kOkyboXRq-G0rVo7pYflUmvo0UKIyxnlRA",
-    "url": "https://www.youtube.com/watch?v=JfB0qHCuXqc"
-  },
-  {
-    "name": "銘兎目あう",
-    "youtubeid": "UCpr-9ssUUgSb0EpDA8bRuTA",
-    "title": "【スト６】1515MR～Mケン🥋2日ぶりのランクにいこう～👊#スト６ #StreetFighter6 #ストリートファイター6 #Vtuber #新人Vtuber #shorts",
-    "date": "2026-01-26T20:11:33.000+09:00",
-    "status": "live",
-    "thumbnail": "https://i.ytimg.com/vi/lHrDExMe7IY/mqdefault_live.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/VB97J8AMHex_rkfd6hDhfiGhhVvrL-NNkseP2mMYSWh75sxA_oXctmxK5tV4FYgkM17RUAx6GQ",
-    "url": "https://www.youtube.com/watch?v=lHrDExMe7IY"
-  },
-  {
     "name": "宇田わん",
     "youtubeid": "UCp45rWiRwgYZJUR4bQO-Xgw",
     "title": "【 コメント募集‼️ 】リスナーさんのお名前で五十音表を真っ赤に染め上げよう🔥【 #宇田わん #新人VTuber / #登龍門BOX 】",

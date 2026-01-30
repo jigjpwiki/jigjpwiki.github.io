@@ -1,14 +1,5 @@
 [
   {
-    "name": "真昼ねる",
-    "twitchid": "mahiruneru",
-    "title": "【参加◎】みんなでアンランクぼくはカリOTP🌟 誕生日グッズ発売中❣【ぷろのゔぁ￤VTuber￤真昼ねる】",
-    "date": "2026-01-27T21:36:52.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://yt3.googleusercontent.com/Cu6AMAZAEC_DTANKoaloA_4iLCuEUQ8BiAwyHGuOUG9GtoIw6s7mXCv1-49LV1IgODYZfGowzQ",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/e9778e436fe69928d77e_mahiruneru_315456030323_1769517406//thumb/thumb0-320x180.jpg"
-  },
-  {
     "name": "李じゅぴ汰",
     "twitchid": "lee_jupita",
     "title": "【ギルティギア】赤ロマキャン難しい～！コンボ練7日目【GUILTY GEAR -STRIVE- /GGST 】",
@@ -159,5 +150,13 @@
     "date": "2026-01-30T20:44:12.000+09:00",
     "status": "live",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_Metome_Au-320x180.jpg"
+  },
+  {
+    "name": "火乃晴るい",
+    "twitchid": "hinoha_rui",
+    "title": "【 #VALORANT 】カスタム練習✨PCフリーズしたら配信オワリ",
+    "date": "2026-01-30T21:03:20.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_hinoha_rui-320x180.jpg"
   }
 ]

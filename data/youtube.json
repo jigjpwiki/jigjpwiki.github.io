@@ -1,15 +1,5 @@
 [
   {
-    "name": "飛渡ココ",
-    "youtubeid": "UCMElh_FlHyzp_obVe-b3Qrg",
-    "title": "奇妙な家系図",
-    "date": "2026-01-28T12:59:07.000+09:00",
-    "status": "live",
-    "thumbnail": "https://i.ytimg.com/vi/STdhm6I8HO0/mqdefault_live.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/8I1SuqBXvb4dRY9bcXYc8xxSxL-L2CAe4YvBx2x3kOkyboXRq-G0rVo7pYflUmvo0UKIyxnlRA",
-    "url": "https://www.youtube.com/watch?v=STdhm6I8HO0"
-  },
-  {
     "name": "肇明日空",
     "youtubeid": "UCj6HYkokrIErMfhKAUAvYcA",
     "title": "そう、暴れる#vtuber #shorts #repo",
@@ -1420,6 +1410,16 @@
     "url": "https://www.youtube.com/watch?v=yvc12992moI"
   },
   {
+    "name": "堂下さとり",
+    "youtubeid": "UCBq6MSUL-Ermvnoj3PtX7Iw",
+    "title": "香港現地流 水餃子食べ方🥟",
+    "date": "2026-01-31T11:05:21.000+09:00",
+    "status": "archive",
+    "thumbnail": "https://i.ytimg.com/vi/zxyY-IZ_U2g/mqdefault.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/eW_Hug0M6zFk9QSbAmOUWLMSfzBlCHmes-8yAksvfUNzyLgY6TSsE_eW8ncfE4bHYZXKoTWxmQ",
+    "url": "https://www.youtube.com/watch?v=zxyY-IZ_U2g"
+  },
+  {
     "name": "夏渚まはろ",
     "youtubeid": "UC_a00ml_EVDXSrtY8ZuyqGQ",
     "title": "【耐久歌枠】達成すれば3D化！ch登録10000人耐久！アイドル研究生の本気を見付けてください！【#夏渚まはろ￤#パレプロ研究生】",
@@ -1428,6 +1428,46 @@
     "thumbnail": "https://i.ytimg.com/vi/GFITJdu5jZs/mqdefault_live.jpg",
     "channelIcon": "https://yt3.googleusercontent.com/iktv-39nC7NDASD1WeXms-DEuHuVqB5RhwTtdDe26w-BCvqf6yq3r_8zBiv2i2CfNXCK0uE8",
     "url": "https://www.youtube.com/watch?v=GFITJdu5jZs"
+  },
+  {
+    "name": "藤森ちとせ",
+    "youtubeid": "UCAhdxmsdngH4noySdpVAVWQ",
+    "title": "【Minecraftメン限参加型ワールド配信】お誕生日といえば～？みんなで山削りですね～⛰✨【#新人vtuber 】#ちとせらいぶ",
+    "date": "2026-01-31T12:58:38.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/Qf4hnt9aQzs/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/traR_yWe-AOGyM2wjo8h2FJO9JWBcbjfrL13X-umeD6BtNPopSZ2Q3YmdJq_5K9gWgHf_j64iQ",
+    "url": "https://www.youtube.com/watch?v=Qf4hnt9aQzs"
+  },
+  {
+    "name": "雨海まる",
+    "youtubeid": "UCLuPxPlM1v6IOTLxM1TRPzA",
+    "title": "アイドルVtuberが「拝啓、少年よ」 #歌ってみた #shorts #vtuber",
+    "date": "2026-01-31T13:00:28.000+09:00",
+    "status": "archive",
+    "thumbnail": "https://i.ytimg.com/vi/YxkdIRy_gAo/mqdefault.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/NVLNPEsj4s1-JKLx5Yu2YbnsbK9jZtQetRBAuQMQGHXbasx2Oxr38qQLS-zQWg0Im2KQDRljKQ",
+    "url": "https://www.youtube.com/watch?v=YxkdIRy_gAo"
+  },
+  {
+    "name": "秋桜しゅお",
+    "youtubeid": "UCPjtwOeRQV5EFkCwUycZsgw",
+    "title": "【姉妹コラボ  #歌枠配信  】#初見歓迎 🧡姉妹で歌います🧡オフコラボ【秋桜しゅお/登龍門BOX】#karaoke  #vtuber #vsinger",
+    "date": "2026-01-31T13:16:09.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/7F4dKv161_A/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/WBGP05KaXeA21IzCbCeM0QHa0v9maVvVUBDZ2DyfTT62F1wGaW3hLOQBy1gCfuQfEnDNgwbsrQ",
+    "url": "https://www.youtube.com/watch?v=7F4dKv161_A"
+  },
+  {
+    "name": "陰山アゲハ",
+    "youtubeid": "UCIw8aQVRBwi72yOrPLgkbRQ",
+    "title": "【#apex  】初心者ソロランク！目標はゴールド出戻りしないこと【#アゲハが来たぞ #パレデミア学園 】",
+    "date": "2026-01-31T14:00:00.000+09:00",
+    "status": "upcoming",
+    "thumbnail": "https://i.ytimg.com/vi/MmBqgzrmcpk/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/TRbQGbBCM6R6LAzCQXka_AxVqF-ozTWwqW455tZU9q9GMo4ijQNNc3d818MX-5wmMnhv-k84Rw",
+    "url": "https://www.youtube.com/watch?v=MmBqgzrmcpk"
   },
   {
     "name": "妖小琳",

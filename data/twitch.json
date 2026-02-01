@@ -1,23 +1,5 @@
 [
   {
-    "name": "月皇ちな",
-    "twitchid": "chi7_v",
-    "title": "【Highguard】新作FPSやるよー！ w/真昼ねる,虎島めら。",
-    "date": "2026-01-29T20:03:13.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://yt3.googleusercontent.com/dPtSb9jgOlWAvy3_pEFIVzTc5iOd4OGhJQIVwjT6RpMAjOmJQHDzs0g2gYCjNEnlpcgQO8fb5-k",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/9bcb682ba17d804ce757_chi7_v_315415671666_1769684587//thumb/thumb0-320x180.jpg"
-  },
-  {
-    "name": "真昼ねる",
-    "twitchid": "mahiruneru",
-    "title": "【#HIGHGUARD】初コラボではじめてのはいがーど🌟 w/月皇ちな＆虎島めら。【ぷろのゔぁ￤VTuber￤真昼ねる】",
-    "date": "2026-01-29T20:03:29.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://yt3.googleusercontent.com/Cu6AMAZAEC_DTANKoaloA_4iLCuEUQ8BiAwyHGuOUG9GtoIw6s7mXCv1-49LV1IgODYZfGowzQ",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/f79d62e08a79874bd086_mahiruneru_315415672946_1769684603//thumb/thumb0-320x180.jpg"
-  },
-  {
     "name": "銘兎目あう",
     "twitchid": "Metome_Au",
     "title": "【スト6】1603MR～Mケン🥊🥋 22：00～HUBトナメにでるよ👊✨",
@@ -151,5 +133,21 @@
     "status": "archive",
     "channelIcon": "https://yt3.googleusercontent.com/eVD8Ygm7KVyh3dvWnyebfYlbYpD13ZYQ-Bos8WdR5LDE61A3svHVHCLEY-rM3IQgw9O4uvdd",
     "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/61123820af7b5a8c507f_minato_yu__315428400498_1769924401//thumb/thumb0-320x180.jpg"
+  },
+  {
+    "name": "銘兎目あう",
+    "twitchid": "Metome_Au",
+    "title": "【スト６】新act！Mケン🥋MR～ランクいってみるー！",
+    "date": "2026-02-01T20:23:49.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_Metome_Au-320x180.jpg"
+  },
+  {
+    "name": "月皇ちな",
+    "twitchid": "chi7_v",
+    "title": "お知らせと雑談するよ～！",
+    "date": "2026-02-01T20:32:56.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_chi7_v-320x180.jpg"
   }
 ]

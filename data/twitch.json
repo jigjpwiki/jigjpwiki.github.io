@@ -1,23 +1,5 @@
 [
   {
-    "name": "銘兎目あう",
-    "twitchid": "Metome_Au",
-    "title": "【スト6】1603MR～Mケン🥊🥋 22：00～HUBトナメにでるよ👊✨",
-    "date": "2026-01-29T21:04:30.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://yt3.googleusercontent.com/VB97J8AMHex_rkfd6hDhfiGhhVvrL-NNkseP2mMYSWh75sxA_oXctmxK5tV4FYgkM17RUAx6GQ",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/147891643a1896932d20_metome_au_315464615027_1769688264//thumb/thumb0-320x180.jpg"
-  },
-  {
-    "name": "なかもとおまち",
-    "twitchid": "41futon",
-    "title": "【ELDENRING】🔰王都ローデイル探索する平日の王※ビッツ禁止",
-    "date": "2026-01-29T21:12:35.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://yt3.googleusercontent.com/h8jNjVckVf08zSV6wdhQ38Fw9OH7kucAprlJsi9w0YdDIL8_Kcv0tHY-1cK8jPK_jRLSJb3t_Q",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/0b63bcfa0704313f69a2_41futon_315407409009_1769688749//thumb/thumb0-320x180.jpg"
-  },
-  {
     "name": "桜樹美彩",
     "twitchid": "sakuragimisa_v",
     "title": "【 朝活 】木曜以外は平日7時！土曜は9時開始朝活☀",
@@ -149,5 +131,13 @@
     "date": "2026-02-01T20:32:56.000+09:00",
     "status": "live",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_chi7_v-320x180.jpg"
+  },
+  {
+    "name": "李じゅぴ汰",
+    "twitchid": "lee_jupita",
+    "title": "【リズムドクター】クリア目指して音ゲーがんばる！【Rhythm Doctor】",
+    "date": "2026-02-01T21:49:34.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lee_jupita-320x180.jpg"
   }
 ]

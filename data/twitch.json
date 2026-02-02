@@ -1,14 +1,5 @@
 [
   {
-    "name": "銘兎目あう",
-    "twitchid": "Metome_Au",
-    "title": "【都市伝説.exe】最新ホラゲー👻脱出を目指せー！",
-    "date": "2026-01-30T20:44:18.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://yt3.googleusercontent.com/VB97J8AMHex_rkfd6hDhfiGhhVvrL-NNkseP2mMYSWh75sxA_oXctmxK5tV4FYgkM17RUAx6GQ",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/e0addf98423a6b391f51_metome_au_315420281074_1769773452//thumb/thumb0-320x180.jpg"
-  },
-  {
     "name": "なかもとおまち",
     "twitchid": "41futon",
     "title": "グラマスに触れたい！！！！！！！",
@@ -165,9 +156,10 @@
     "name": "なかもとおまち",
     "twitchid": "41futon",
     "title": "新Act11こんにちはアルマスを目指します！Cジェイミー",
-    "date": "2026-02-02T16:18:51.000+09:00",
-    "status": "live",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_41futon-320x180.jpg"
+    "date": "2026-02-02T16:18:57.000+09:00",
+    "status": "archive",
+    "channelIcon": "https://yt3.googleusercontent.com/h8jNjVckVf08zSV6wdhQ38Fw9OH7kucAprlJsi9w0YdDIL8_Kcv0tHY-1cK8jPK_jRLSJb3t_Q",
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/f49377fb765c8d5f6a56_41futon_315482275443_1770016731//thumb/thumb0-320x180.jpg"
   },
   {
     "name": "水透ユウ",
@@ -176,5 +168,13 @@
     "date": "2026-02-02T18:48:19.000+09:00",
     "status": "live",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_minato_yu_-320x180.jpg"
+  },
+  {
+    "name": "銘兎目あう",
+    "twitchid": "Metome_Au",
+    "title": "【スト６】1551MR～Mケン🥋超かぐや姫！最高だったああ🎍✨",
+    "date": "2026-02-02T20:21:11.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_Metome_Au-320x180.jpg"
   }
 ]

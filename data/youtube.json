@@ -1,15 +1,5 @@
 [
   {
-    "name": "なかもとおまち",
-    "youtubeid": "UCvTAG-S8KykNcWTneGLNpnw",
-    "title": "【スト６】MR差300で負けて発狂するなかもとおまち　#スト6 #ストリートファイター6 #vtuber",
-    "date": "2026-01-30T17:56:12.000+09:00",
-    "status": "archive",
-    "thumbnail": "https://i.ytimg.com/vi/t2gAE-nPH_A/mqdefault.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/h8jNjVckVf08zSV6wdhQ38Fw9OH7kucAprlJsi9w0YdDIL8_Kcv0tHY-1cK8jPK_jRLSJb3t_Q",
-    "url": "https://www.youtube.com/watch?v=t2gAE-nPH_A"
-  },
-  {
     "name": "愛染アネラ",
     "youtubeid": "UC7ek9Q4cK9O0eT3hiUYJaQw",
     "title": "超最強 #9 #歌ってみた #超ときめき宣伝部 #とき宣 #shorts #vtuber #新人vtuber #愛染アネラ ラ #singer #music #anime #kawaii #idol",
@@ -950,6 +940,16 @@
     "url": "https://www.youtube.com/watch?v=ZMiYfTpYf6o"
   },
   {
+    "name": "天透あわ",
+    "youtubeid": "UCXI0W_Os-BCIngpCb1YnOow",
+    "title": "【縦型配信】初見さん大歓迎！二月最初の雑談配信 #毎日あまあわ ＃新人Vtuber",
+    "date": "2026-02-01T18:51:54.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/q59hohFasQs/mqdefault.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/Me8I_Op8OlIy8Vuj387_Hdi6gnrZ-qiY1yDDt1Q5yKMKA51ISagT76HE01gw8xbLcef0vpsPgoc",
+    "url": "https://www.youtube.com/watch?v=q59hohFasQs"
+  },
+  {
     "name": "七海ロナ",
     "youtubeid": "UCIaZylf5L9MsCMOJX3BdTEg",
     "title": "冬ですなあ〜⛄️🧊❄️#mottai #p丸様 #踊ってみた #vtuber",
@@ -1250,6 +1250,26 @@
     "url": "https://www.youtube.com/watch?v=GjQRkT_URC0"
   },
   {
+    "name": "肇明日空",
+    "youtubeid": "UCj6HYkokrIErMfhKAUAvYcA",
+    "title": "もう声が酷い#vtuber #shorts #shadowcorridor2",
+    "date": "2026-02-02T16:00:24.000+09:00",
+    "status": "archive",
+    "thumbnail": "https://i.ytimg.com/vi/L3SJnXqrnY4/mqdefault.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/u59W56aqJ9r7WunTIqg60ZGnBu-G-9LA-OX6tZR6debt_isQ8xR59HUwrbAqLLqlTf_0VosmZg",
+    "url": "https://www.youtube.com/watch?v=L3SJnXqrnY4"
+  },
+  {
+    "name": "しーはむ",
+    "youtubeid": "UC5xSDiB2WG4pO_zUZ_t-n0Q",
+    "title": "この子伸びる今のうちに古参名乗る #vtuber #新人vtuber",
+    "date": "2026-02-02T17:00:21.000+09:00",
+    "status": "archive",
+    "thumbnail": "https://i.ytimg.com/vi/E9uLot2DH9I/mqdefault.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/y0zP0Uz7HSLx5dv3xo488Suxk8rJQQUC1wXaymjUBIQIwa25WlVu_VmrsT1xAyVD-jgeL7hs",
+    "url": "https://www.youtube.com/watch?v=E9uLot2DH9I"
+  },
+  {
     "name": "夏渚まはろ",
     "youtubeid": "UC_a00ml_EVDXSrtY8ZuyqGQ",
     "title": "【Terraria￤テラリア＃7】ついにラスボス！？ムーンロード戦！【#レモサマ￤#夏渚まはろ￤#パレプロ研究生】",
@@ -1348,6 +1368,16 @@
     "thumbnail": "https://i.ytimg.com/vi/oWFtfFb0kUg/mqdefault_live.jpg",
     "channelIcon": "https://yt3.googleusercontent.com/ytc/AIdro_nuv43BXc-JNRM-omFed0brcXGTD8qvA8313ZeQa8PfviA",
     "url": "https://www.youtube.com/watch?v=oWFtfFb0kUg"
+  },
+  {
+    "name": "しーはむ",
+    "youtubeid": "UC5xSDiB2WG4pO_zUZ_t-n0Q",
+    "title": "〘#ダレカレ 〙家に知らない人がいる。珠玉の物語〘#VTuber│しーはむ│ぷろのゔぁ〙",
+    "date": "2026-02-03T21:30:00.000+09:00",
+    "status": "upcoming",
+    "thumbnail": "https://i.ytimg.com/vi/DrrtLcKC1pY/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/y0zP0Uz7HSLx5dv3xo488Suxk8rJQQUC1wXaymjUBIQIwa25WlVu_VmrsT1xAyVD-jgeL7hs",
+    "url": "https://www.youtube.com/watch?v=DrrtLcKC1pY"
   },
   {
     "name": "夏渚まはろ",

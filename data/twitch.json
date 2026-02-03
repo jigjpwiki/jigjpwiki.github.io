@@ -200,19 +200,11 @@
   {
     "name": "火乃晴るい",
     "twitchid": "hinoha_rui",
-    "title": "【 #VALORANT 】カスタム練習代理です！シェリフ縛り！",
-    "date": "2026-02-03T21:01:30.000+09:00",
-    "status": "live",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_hinoha_rui-320x180.jpg"
-  },
-  {
-    "name": "火乃晴るい",
-    "twitchid": "hinoha_rui",
     "title": "【 #VALORANT 】おはにょ～21時までかも",
     "date": "2026-02-03T21:01:36.000+09:00",
     "status": "archive",
     "channelIcon": "https://yt3.googleusercontent.com/8vDFqOVNprKqFE0o7EecXyQleBXIibeJZpXpSgjm5msh4Yd0S8hTsbmYZyOBXa3bUEgBJHZt1w",
-    "thumbnail": "https://vod-secure.twitch.tv/_404/404_processing_320x180.png"
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/e87ff3a1fac87828fa9f_hinoha_rui_315430123121_1770120090//thumb/thumb0-320x180.jpg"
   },
   {
     "name": "水透ユウ",
@@ -221,5 +213,13 @@
     "date": "2026-02-03T21:59:51.000+09:00",
     "status": "live",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_minato_yu_-320x180.jpg"
+  },
+  {
+    "name": "李じゅぴ汰",
+    "twitchid": "lee_jupita",
+    "title": "【CloverPit】満を持して打ちますか・・・",
+    "date": "2026-02-03T22:33:46.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lee_jupita-320x180.jpg"
   }
 ]

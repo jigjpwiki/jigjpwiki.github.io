@@ -1,35 +1,5 @@
 [
   {
-    "name": "常磐カナメ",
-    "youtubeid": "UCbNEgJIF_ADD9e8-q7SoxCg",
-    "title": "【朝活】『風立ちぬ』を鑑賞しよう【パレプロ/常磐カナメ】",
-    "date": "2026-02-02T07:30:00.000+09:00",
-    "status": "upcoming",
-    "thumbnail": "https://i.ytimg.com/vi/0nia6EJz8sU/mqdefault_live.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/vb_kLF_4hQ7UdEtOnEtL-_pI320ZMQ-lVQ9OV3xMvdTQitHXX1zk0b6GKQ977dawvfoB5Sb8OQ",
-    "url": "https://www.youtube.com/watch?v=0nia6EJz8sU"
-  },
-  {
-    "name": "天辻ゆらぐ",
-    "youtubeid": "UCeOFQCn_QZJMTszlRYRg3rQ",
-    "title": "仲良しVtuberのお忍びデート #shorts #新人Vtuber #パレデミア学園 #天辻ゆらぐ #天辻切り #天透あわ #毎日あまあわ",
-    "date": "2026-02-02T07:30:15.000+09:00",
-    "status": "archive",
-    "thumbnail": "https://i.ytimg.com/vi/fZQcU5cKs68/mqdefault.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/4AFFu60kFJqix-OhtDW3EJdQ0jQa1LrK56tGpvqvbGodMQFpkH-_qtvL_66dPGD3kl4LW9N4",
-    "url": "https://www.youtube.com/watch?v=fZQcU5cKs68"
-  },
-  {
-    "name": "藤森ちとせ",
-    "youtubeid": "UCAhdxmsdngH4noySdpVAVWQ",
-    "title": "❄12月1日月曜日❄ 今日の誕生花は #エラチオールベゴニア ！ #誕生花 #花言葉 #藤森ちとせ",
-    "date": "2026-02-02T08:15:00.000+09:00",
-    "status": "archive",
-    "thumbnail": "https://i.ytimg.com/vi/J2RR_K6flZg/mqdefault.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/traR_yWe-AOGyM2wjo8h2FJO9JWBcbjfrL13X-umeD6BtNPopSZ2Q3YmdJq_5K9gWgHf_j64iQ",
-    "url": "https://www.youtube.com/watch?v=J2RR_K6flZg"
-  },
-  {
     "name": "鬼多見アユム",
     "youtubeid": "UCnrJK-sb3gSn3kRLkmpmzaw",
     "title": "【#歌枠 】2月初歌枠 【鬼多見アユム】",
@@ -1378,6 +1348,16 @@
     "thumbnail": "https://i.ytimg.com/vi/q5c5y1epKvg/mqdefault_live.jpg",
     "channelIcon": "https://yt3.googleusercontent.com/OQpHijB1HDVezkvjNufbM9PmR9kbhUe1mfnSRqJ67l-R34sAc4BhYmQ2U7C-SapKAtcOk_Bp",
     "url": "https://www.youtube.com/watch?v=q5c5y1epKvg"
+  },
+  {
+    "name": "陰山アゲハ",
+    "youtubeid": "UCIw8aQVRBwi72yOrPLgkbRQ",
+    "title": "【#朝活 】 今日もゆる～り5分は遅刻に入りますか？入りますかそうですか【#アゲハが来たぞ #パレデミア学園 】",
+    "date": "2026-02-05T07:04:41.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/SpPOOyO33lw/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/TRbQGbBCM6R6LAzCQXka_AxVqF-ozTWwqW455tZU9q9GMo4ijQNNc3d818MX-5wmMnhv-k84Rw",
+    "url": "https://www.youtube.com/watch?v=SpPOOyO33lw"
   },
   {
     "name": "新巻るろな",

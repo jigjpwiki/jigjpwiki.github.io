@@ -1,14 +1,5 @@
 [
   {
-    "name": "火乃晴るい",
-    "twitchid": "hinoha_rui",
-    "title": "【 #LoL 】参加◎！LoLやる！PCフリーズしたら配信オワリ",
-    "date": "2026-02-02T00:52:13.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://yt3.googleusercontent.com/8vDFqOVNprKqFE0o7EecXyQleBXIibeJZpXpSgjm5msh4Yd0S8hTsbmYZyOBXa3bUEgBJHZt1w",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/bb7c327b69307f55a45e_hinoha_rui_315422401265_1769961127//thumb/thumb0-320x180.jpg"
-  },
-  {
     "name": "妖小琳",
     "twitchid": "yaosyaorin",
     "title": "ばいお！",
@@ -173,26 +164,27 @@
   {
     "name": "なかもとおまち",
     "twitchid": "41futon",
-    "title": "🔰REPO / いずみぃ、KtR",
-    "date": "2026-02-04T17:08:10.000+09:00",
-    "status": "live",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_41futon-320x180.jpg"
-  },
-  {
-    "name": "なかもとおまち",
-    "twitchid": "41futon",
     "title": "CジェイミーハイマスへGOだよ20時からREPO～～～",
     "date": "2026-02-04T17:08:16.000+09:00",
     "status": "archive",
     "channelIcon": "https://yt3.googleusercontent.com/h8jNjVckVf08zSV6wdhQ38Fw9OH7kucAprlJsi9w0YdDIL8_Kcv0tHY-1cK8jPK_jRLSJb3t_Q",
-    "thumbnail": "https://vod-secure.twitch.tv/_404/404_processing_320x180.png"
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/49f482550c5b7c60ff34_41futon_315433581297_1770192490//thumb/thumb0-320x180.jpg"
   },
   {
     "name": "銘兎目あう",
     "twitchid": "Metome_Au",
     "title": "【スト６】毎日配信333日目✨1514MR～Mケン🥋デイヤフン意識高めてランクいくよ👊",
-    "date": "2026-02-04T20:26:09.000+09:00",
+    "date": "2026-02-04T20:26:15.000+09:00",
+    "status": "archive",
+    "channelIcon": "https://yt3.googleusercontent.com/VB97J8AMHex_rkfd6hDhfiGhhVvrL-NNkseP2mMYSWh75sxA_oXctmxK5tV4FYgkM17RUAx6GQ",
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/eaf7ef192312a89f9a36_metome_au_315442805362_1770204369//thumb/thumb0-320x180.jpg"
+  },
+  {
+    "name": "月皇ちな",
+    "twitchid": "chi7_v",
+    "title": "エンドフィールドのお時間です",
+    "date": "2026-02-04T22:18:55.000+09:00",
     "status": "live",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_Metome_Au-320x180.jpg"
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_chi7_v-320x180.jpg"
   }
 ]

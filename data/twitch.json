@@ -137,27 +137,20 @@
   {
     "name": "水透ユウ",
     "twitchid": "minato_yu_",
-    "title": "【 #雀魂 】🔴参加型🔴シージメンテにつきロン！【 #新人vtuber 】【ぷろのゔぁ】",
-    "date": "2026-02-05T21:28:11.000+09:00",
-    "status": "live",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_minato_yu_-320x180.jpg"
-  },
-  {
-    "name": "水透ユウ",
-    "twitchid": "minato_yu_",
     "title": "【 #R6SX 】なんだかんだ少しぶりrank【 #新人vtuber 】【ぷろのゔぁ】",
     "date": "2026-02-05T21:28:17.000+09:00",
     "status": "archive",
     "channelIcon": "https://yt3.googleusercontent.com/eVD8Ygm7KVyh3dvWnyebfYlbYpD13ZYQ-Bos8WdR5LDE61A3svHVHCLEY-rM3IQgw9O4uvdd",
-    "thumbnail": "https://vod-secure.twitch.tv/_404/404_processing_320x180.png"
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/52a460ee78ebc5a17aab_minato_yu__315497114739_1770294491//thumb/thumb0-320x180.jpg"
   },
   {
     "name": "李じゅぴ汰",
     "twitchid": "lee_jupita",
     "title": "【CloverPit】7がいっぱいだ！！！",
-    "date": "2026-02-05T22:39:38.000+09:00",
-    "status": "live",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lee_jupita-320x180.jpg"
+    "date": "2026-02-05T22:39:44.000+09:00",
+    "status": "archive",
+    "channelIcon": "https://yt3.googleusercontent.com/QQqec9A1J7eLk9RrRYD9vvk51BBJzcE1leGkU9n4YkwHqht9gmGT1ktmSlKItQtbuMSGuklAFxM",
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/97694396a0ea43e02e96_lee_jupita_315447983858_1770298778//thumb/thumb0-320x180.jpg"
   },
   {
     "name": "真昼ねる",
@@ -166,5 +159,14 @@
     "date": "2026-02-05T23:46:00.000+09:00",
     "status": "live",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_mahiruneru-320x180.jpg"
+  },
+  {
+    "name": "李じゅぴ汰",
+    "twitchid": "lee_jupita",
+    "title": "【CloverPit】クリアするだけ一瞬",
+    "date": "2026-02-06T00:34:39.000+09:00",
+    "status": "archive",
+    "channelIcon": "https://yt3.googleusercontent.com/QQqec9A1J7eLk9RrRYD9vvk51BBJzcE1leGkU9n4YkwHqht9gmGT1ktmSlKItQtbuMSGuklAFxM",
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/3a66fed77132bc1d172a_lee_jupita_315498002163_1770305673//thumb/thumb0-320x180.jpg"
   }
 ]

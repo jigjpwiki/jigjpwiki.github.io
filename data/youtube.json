@@ -1,15 +1,5 @@
 [
   {
-    "name": "音海まいる",
-    "youtubeid": "UCz339ZwPv-i_PaBi_FVCF6w",
-    "title": "【🔰 #Minecraft 】整地しながら雑談。初見さん/ROM専さん歓迎！【パレデミア学園/音海まいる】",
-    "date": "2026-02-04T14:01:29.000+09:00",
-    "status": "live",
-    "thumbnail": "https://i.ytimg.com/vi/R_s7nmOGKRo/mqdefault_live.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/0rkc__es21Zw7caiFrXVpP_HmFtp4e6ydnXKvFmJ9SFbWOsRE6xB70Xy-WUDX1FB-BYflvHA",
-    "url": "https://www.youtube.com/watch?v=R_s7nmOGKRo"
-  },
-  {
     "name": "しーはむ",
     "youtubeid": "UC5xSDiB2WG4pO_zUZ_t-n0Q",
     "title": "そのキャラ無理 #vtuber #新人vtuber",
@@ -1360,6 +1350,36 @@
     "url": "https://www.youtube.com/watch?v=yvc12992moI"
   },
   {
+    "name": "雨海まる",
+    "youtubeid": "UCLuPxPlM1v6IOTLxM1TRPzA",
+    "title": "【ちいかわ】つくっチョ3って何！？#shorts #ちいかわ #vtuber #おやつ",
+    "date": "2026-02-07T13:00:04.000+09:00",
+    "status": "archive",
+    "thumbnail": "https://i.ytimg.com/vi/6YKrnPa5YVM/mqdefault.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/NVLNPEsj4s1-JKLx5Yu2YbnsbK9jZtQetRBAuQMQGHXbasx2Oxr38qQLS-zQWg0Im2KQDRljKQ",
+    "url": "https://www.youtube.com/watch?v=6YKrnPa5YVM"
+  },
+  {
+    "name": "藤森ちとせ",
+    "youtubeid": "UCAhdxmsdngH4noySdpVAVWQ",
+    "title": "【整地雑談】いい感じに平らにしたいですね～✨⛏作業用にも😉ROM歓迎🎉【Minecraft】【#新人vtuber 】#ちとせらいぶ #パレデミア学園",
+    "date": "2026-02-07T13:01:51.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/0UGL7BAOsGw/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/traR_yWe-AOGyM2wjo8h2FJO9JWBcbjfrL13X-umeD6BtNPopSZ2Q3YmdJq_5K9gWgHf_j64iQ",
+    "url": "https://www.youtube.com/watch?v=0UGL7BAOsGw"
+  },
+  {
+    "name": "銘兎目あう",
+    "youtubeid": "UCpr-9ssUUgSb0EpDA8bRuTA",
+    "title": "【スト６】14:00～じすたげCUP本番🥋1564MR～Mケン🥊 #sf6 #StreetFighter6 #vtuber #shorts #スト6",
+    "date": "2026-02-07T13:38:44.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/yNQHq-d6dyQ/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/VB97J8AMHex_rkfd6hDhfiGhhVvrL-NNkseP2mMYSWh75sxA_oXctmxK5tV4FYgkM17RUAx6GQ",
+    "url": "https://www.youtube.com/watch?v=yNQHq-d6dyQ"
+  },
+  {
     "name": "夏渚まはろ",
     "youtubeid": "UC_a00ml_EVDXSrtY8ZuyqGQ",
     "title": "【お絵描き】七海ロナ先輩お絵描き配信【#夏渚まはろ￤#パレプロ研究生】",
@@ -1368,6 +1388,16 @@
     "thumbnail": "https://i.ytimg.com/vi/_LXgu9G-wRQ/mqdefault_live.jpg",
     "channelIcon": "https://yt3.googleusercontent.com/iktv-39nC7NDASD1WeXms-DEuHuVqB5RhwTtdDe26w-BCvqf6yq3r_8zBiv2i2CfNXCK0uE8",
     "url": "https://www.youtube.com/watch?v=_LXgu9G-wRQ"
+  },
+  {
+    "name": "藤森ちとせ",
+    "youtubeid": "UCAhdxmsdngH4noySdpVAVWQ",
+    "title": "【R.E.P.O.コラボ配信】4人でわちゃわちゃレポ【#新人vtuber 】#ちとせらいぶ #パレデミア学園 #ウィニー寮",
+    "date": "2026-02-07T18:00:00.000+09:00",
+    "status": "upcoming",
+    "thumbnail": "https://i.ytimg.com/vi/o1RuQ8sSUK4/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/traR_yWe-AOGyM2wjo8h2FJO9JWBcbjfrL13X-umeD6BtNPopSZ2Q3YmdJq_5K9gWgHf_j64iQ",
+    "url": "https://www.youtube.com/watch?v=o1RuQ8sSUK4"
   },
   {
     "name": "Palette Project",
@@ -1408,6 +1438,16 @@
     "thumbnail": "https://i.ytimg.com/vi/0Nfw7vhFLRY/mqdefault_live.jpg",
     "channelIcon": "https://yt3.googleusercontent.com/JwOkUNiR-08GjSI3MS8-Yk6jzONshtmRWZ9tpjOghB10quze7fgbJkhpPTpIfUX00HBACjAR8Q",
     "url": "https://www.youtube.com/watch?v=0Nfw7vhFLRY"
+  },
+  {
+    "name": "忠犬しず",
+    "youtubeid": "UCPzN3R0x_SciJJ_FP-STpHQ",
+    "title": "【 同時視聴 】ウルトラマン５～８話  を見るぞ！【 Vtuber/忠犬しず 】#特撮女子　#特撮オタク",
+    "date": "2026-02-07T21:00:00.000+09:00",
+    "status": "upcoming",
+    "thumbnail": "https://i.ytimg.com/vi/b6P2FIqA9uw/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/9dVPxoBbcXIeN4O1N6bYiWu3EHHHeaStY7fQYPZfF3thWIP2Sc9Uc6kg56Aj0UHrg5QqqDtn",
+    "url": "https://www.youtube.com/watch?v=b6P2FIqA9uw"
   },
   {
     "name": "香鳴ハノン",

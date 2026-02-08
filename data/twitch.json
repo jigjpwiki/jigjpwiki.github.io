@@ -1,14 +1,5 @@
 [
   {
-    "name": "李じゅぴ汰",
-    "twitchid": "lee_jupita",
-    "title": "【CloverPit】7がいっぱいだ！！！",
-    "date": "2026-02-05T22:39:44.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://yt3.googleusercontent.com/QQqec9A1J7eLk9RrRYD9vvk51BBJzcE1leGkU9n4YkwHqht9gmGT1ktmSlKItQtbuMSGuklAFxM",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/97694396a0ea43e02e96_lee_jupita_315447983858_1770298778//thumb/thumb0-320x180.jpg"
-  },
-  {
     "name": "真昼ねる",
     "twitchid": "mahiruneru",
     "title": "【参加◎】うっふ〜ん♡初心者よぉ〜ん♡優しくしてぇ〜ん♡♡♡【ぷろのゔぁ￤VTuber￤真昼ねる】",
@@ -169,5 +160,13 @@
     "status": "archive",
     "channelIcon": "https://yt3.googleusercontent.com/h8jNjVckVf08zSV6wdhQ38Fw9OH7kucAprlJsi9w0YdDIL8_Kcv0tHY-1cK8jPK_jRLSJb3t_Q",
     "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/16dc67f0de7bb948ac70_41futon_315452165745_1770531323//thumb/thumb0-320x180.jpg"
+  },
+  {
+    "name": "月皇ちな",
+    "twitchid": "chi7_v",
+    "title": "第二章プロセスⅡやる！武陵城だー！",
+    "date": "2026-02-08T23:25:51.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_chi7_v-320x180.jpg"
   }
 ]

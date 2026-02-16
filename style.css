@@ -188,7 +188,7 @@ header {
 .live-wrapper {
   max-width: 560px;
   width: 560px;
-  max-height: 120px;
+  margin-bottom: -12px;
 }
 
 .live-block {
@@ -376,6 +376,10 @@ html::-webkit-scrollbar {
   }
 
   .video-list {
+    gap: 12px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 
   .live-info {
@@ -387,20 +391,18 @@ html::-webkit-scrollbar {
   }
 
   .live-wrapper {
-    width: calc(100vw - 36px);
+    width: calc(50vw - 24px);
     max-height: none;
   }
 
   .live-info-inner {
-    height: 82px;
+    flex-direction: column;
+    align-items: center;
+    padding: 6px 0px 6px 0px;
   }
 
   .live-badge {
     display: flex;
-  }
-
-  .platform-border {
-    height: 100%;
   }
 
   .tiktok {
@@ -421,8 +423,15 @@ html::-webkit-scrollbar {
   }
 
   .description {
-    padding-top: 12px;
-    padding-left: 2px;
+    padding: 0;
+    align-items: center;
+  }
+
+  .live-title {
+    font-size: 12px;
+    text-align: center;
+    margin: 0px 8px 0px 8px;
+    height: 35px;
   }
 
   header {
@@ -438,7 +447,6 @@ html::-webkit-scrollbar {
     width: 100%;
     display: flex;
     justify-content: center;
-    padding-top: 10px;
     padding-bottom: 10px;
     gap: 8px;
     flex-direction: row;

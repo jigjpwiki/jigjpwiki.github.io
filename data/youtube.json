@@ -1,25 +1,5 @@
 [
   {
-    "name": "陰山アゲハ",
-    "youtubeid": "UCIw8aQVRBwi72yOrPLgkbRQ",
-    "title": "【#apex  】新シーズンも楽しく参加型ドゾ【#アゲハが来たぞ #パレデミア学園 】",
-    "date": "2026-02-14T14:00:00.000+09:00",
-    "status": "upcoming",
-    "thumbnail": "https://i.ytimg.com/vi/vi9g4Fsgn0c/mqdefault_live.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/TRbQGbBCM6R6LAzCQXka_AxVqF-ozTWwqW455tZU9q9GMo4ijQNNc3d818MX-5wmMnhv-k84Rw",
-    "url": "https://www.youtube.com/watch?v=vi9g4Fsgn0c"
-  },
-  {
-    "name": "堂下さとり",
-    "youtubeid": "UCBq6MSUL-Ermvnoj3PtX7Iw",
-    "title": "バレンタイン 板チョコデコ 初挑戦",
-    "date": "2026-02-14T14:04:48.000+09:00",
-    "status": "archive",
-    "thumbnail": "https://i.ytimg.com/vi/aHv_N-T2IMc/mqdefault.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/eW_Hug0M6zFk9QSbAmOUWLMSfzBlCHmes-8yAksvfUNzyLgY6TSsE_eW8ncfE4bHYZXKoTWxmQ",
-    "url": "https://www.youtube.com/watch?v=aHv_N-T2IMc"
-  },
-  {
     "name": "天透あわ",
     "youtubeid": "UCXI0W_Os-BCIngpCb1YnOow",
     "title": "【初見さん大歓迎】新表情お披露目＆バレンタインソング歌枠！",
@@ -38,6 +18,16 @@
     "thumbnail": "https://i.ytimg.com/vi/AZNmdfM64PY/mqdefault_live.jpg",
     "channelIcon": "https://yt3.googleusercontent.com/9dVPxoBbcXIeN4O1N6bYiWu3EHHHeaStY7fQYPZfF3thWIP2Sc9Uc6kg56Aj0UHrg5QqqDtn",
     "url": "https://www.youtube.com/watch?v=AZNmdfM64PY"
+  },
+  {
+    "name": "陰山アゲハ",
+    "youtubeid": "UCIw8aQVRBwi72yOrPLgkbRQ",
+    "title": "【#apex  】新シーズンも楽しく参加型ドゾ【#アゲハが来たぞ #パレデミア学園 】",
+    "date": "2026-02-14T15:36:13.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/vi9g4Fsgn0c/mqdefault.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/TRbQGbBCM6R6LAzCQXka_AxVqF-ozTWwqW455tZU9q9GMo4ijQNNc3d818MX-5wmMnhv-k84Rw",
+    "url": "https://www.youtube.com/watch?v=vi9g4Fsgn0c"
   },
   {
     "name": "夏渚まはろ",
@@ -1550,6 +1540,16 @@
     "url": "https://www.youtube.com/watch?v=gZCdOagLtpw"
   },
   {
+    "name": "秋桜しゅお",
+    "youtubeid": "UCPjtwOeRQV5EFkCwUycZsgw",
+    "title": "【#歌枠配信 】同接100目標🧡かようびだ！お昼歌だ！【秋桜しゅお/登龍門BOX】#歌枠配信 #karaoke  #vtuber #vsinger　#初見歓迎",
+    "date": "2026-02-17T12:11:51.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/bgGhVnDVTiQ/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/WBGP05KaXeA21IzCbCeM0QHa0v9maVvVUBDZ2DyfTT62F1wGaW3hLOQBy1gCfuQfEnDNgwbsrQ",
+    "url": "https://www.youtube.com/watch?v=bgGhVnDVTiQ"
+  },
+  {
     "name": "藤森ちとせ",
     "youtubeid": "UCAhdxmsdngH4noySdpVAVWQ",
     "title": "【建築雑談】トウヒのお家の屋根をいい感じに建てる配信🏠✨作業用にも😉ROM歓迎🎉【Minecraft】【#新人vtuber 】#ちとせらいぶ #パレデミア学園",
@@ -1650,6 +1650,16 @@
     "url": "https://www.youtube.com/watch?v=e9Q-xZHMaT0"
   },
   {
+    "name": "常磐カナメ",
+    "youtubeid": "UCbNEgJIF_ADD9e8-q7SoxCg",
+    "title": "【Log Riders】7年の仲なんだから余裕だよね？【パレプロ/七海ロナ・常磐カナメ】#ろなめこ",
+    "date": "2026-02-18T21:00:00.000+09:00",
+    "status": "upcoming",
+    "thumbnail": "https://i.ytimg.com/vi/bLV2xAi6Whk/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/vb_kLF_4hQ7UdEtOnEtL-_pI320ZMQ-lVQ9OV3xMvdTQitHXX1zk0b6GKQ977dawvfoB5Sb8OQ",
+    "url": "https://www.youtube.com/watch?v=bLV2xAi6Whk"
+  },
+  {
     "name": "桜樹美彩",
     "youtubeid": "UCTwKpTFX1aAXD0xpBqYqTdg",
     "title": "【 朝活 / ニュース 】２月20日（金）⏰ AM7:00『ちょこっと』朝活ニュース🍀天気予報/時事ニュース🍁初見＆ROM勢大歓迎🐥 #vtuber #みさライなう #桜樹美彩 #新人vtuber",
@@ -1658,6 +1668,16 @@
     "thumbnail": "https://i.ytimg.com/vi/GTFJsws2K7k/mqdefault_live.jpg",
     "channelIcon": "https://yt3.googleusercontent.com/pDP2GuylW0RN1REDScFAlNklbXaPRqTm2mwT2F7dIo8xoYYFPfspsjGH_G3RagwlKVlQbdw95bY",
     "url": "https://www.youtube.com/watch?v=GTFJsws2K7k"
+  },
+  {
+    "name": "常磐カナメ",
+    "youtubeid": "UCbNEgJIF_ADD9e8-q7SoxCg",
+    "title": "【Escape Simulator 2】脱出しないと脱出できない部屋 w/ひなお・りんりん・たるたる【パレプロ/常磐カナメ】",
+    "date": "2026-02-20T20:00:00.000+09:00",
+    "status": "upcoming",
+    "thumbnail": "https://i.ytimg.com/vi/6u1Q2b_IKpQ/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/vb_kLF_4hQ7UdEtOnEtL-_pI320ZMQ-lVQ9OV3xMvdTQitHXX1zk0b6GKQ977dawvfoB5Sb8OQ",
+    "url": "https://www.youtube.com/watch?v=6u1Q2b_IKpQ"
   },
   {
     "name": "朧月ひかる",

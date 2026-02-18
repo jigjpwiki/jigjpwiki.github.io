@@ -1,15 +1,5 @@
 [
   {
-    "name": "陰山アゲハ",
-    "youtubeid": "UCIw8aQVRBwi72yOrPLgkbRQ",
-    "title": "【#apex  】よしもう一回あそぶか～～～【#アゲハが来たぞ #パレデミア学園 】",
-    "date": "2026-02-15T16:00:00.000+09:00",
-    "status": "upcoming",
-    "thumbnail": "https://i.ytimg.com/vi/TX9lOVxJ-pA/mqdefault_live.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/TRbQGbBCM6R6LAzCQXka_AxVqF-ozTWwqW455tZU9q9GMo4ijQNNc3d818MX-5wmMnhv-k84Rw",
-    "url": "https://www.youtube.com/watch?v=TX9lOVxJ-pA"
-  },
-  {
     "name": "しーはむ",
     "youtubeid": "UC5xSDiB2WG4pO_zUZ_t-n0Q",
     "title": "最近泣いた？ #vtuber #新人vtuber",
@@ -1240,6 +1230,26 @@
     "url": "https://www.youtube.com/watch?v=4F4Ddxq9Zh8"
   },
   {
+    "name": "藤宮コトハ",
+    "youtubeid": "UCGndc74kfWb_A-8hZBG534Q",
+    "title": "【作業雑談】　ついにインドア人間になったようです。　【#パレプロ ／ #藤宮コトハ 】",
+    "date": "2026-02-18T16:26:31.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/bDjOwipHs94/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/rthBXvqjNFcVwEp-AWpiZDXnNjBodSXlsDTa-sjW6uR6Ssv3wuOw2dMXDZLlYaf_c4YiKfItHXU",
+    "url": "https://www.youtube.com/watch?v=bDjOwipHs94"
+  },
+  {
+    "name": "虎島めら。",
+    "youtubeid": "UCqewFfi_wwydw6fpazmlAFA",
+    "title": "【#APEX ニューキャッスル専のソロランどんなもん？ #虎島めら。 #VTuber】",
+    "date": "2026-02-18T17:00:00.000+09:00",
+    "status": "upcoming",
+    "thumbnail": "https://i.ytimg.com/vi/VYET9PjtBsc/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/6nfq-sTwa1PCHMrmFq5uNijG5PcQ8BRheGNXHc6GEMlBustwPyvfLIPWtxaHpKOhdXU1tFTnfA",
+    "url": "https://www.youtube.com/watch?v=VYET9PjtBsc"
+  },
+  {
     "name": "鬼多見アユム",
     "youtubeid": "UCnrJK-sb3gSn3kRLkmpmzaw",
     "title": "【 #NEWTOWN 】#9  銃を預けられてしまった。。。。【鬼多見アユム】",
@@ -1260,6 +1270,16 @@
     "url": "https://www.youtube.com/watch?v=gzm9NJZDHPE"
   },
   {
+    "name": "夏渚まはろ",
+    "youtubeid": "UC_a00ml_EVDXSrtY8ZuyqGQ",
+    "title": "【#NEWTOWN￤9日目】ドーナツ100個頑張って売る【#夏渚まはろ￤#パレプロ】",
+    "date": "2026-02-18T18:00:00.000+09:00",
+    "status": "upcoming",
+    "thumbnail": "https://i.ytimg.com/vi/ITGQCMdRi6A/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/iktv-39nC7NDASD1WeXms-DEuHuVqB5RhwTtdDe26w-BCvqf6yq3r_8zBiv2i2CfNXCK0uE8",
+    "url": "https://www.youtube.com/watch?v=ITGQCMdRi6A"
+  },
+  {
     "name": "魔法少女アルト",
     "youtubeid": "UCtRhBS8dlaeBgVcnEZOkAbA",
     "title": "【記念配信】✨３周年ありがとう✨振り返りと新○○お披露目！    【 魔法少女アルト / ＃アルトの魔法通信 】",
@@ -1278,6 +1298,16 @@
     "thumbnail": "https://i.ytimg.com/vi/bLV2xAi6Whk/mqdefault_live.jpg",
     "channelIcon": "https://yt3.googleusercontent.com/vb_kLF_4hQ7UdEtOnEtL-_pI320ZMQ-lVQ9OV3xMvdTQitHXX1zk0b6GKQ977dawvfoB5Sb8OQ",
     "url": "https://www.youtube.com/watch?v=bLV2xAi6Whk"
+  },
+  {
+    "name": "犬丸なでこ",
+    "youtubeid": "UCdJmJxMfXrlnZabUkuss2EA",
+    "title": "#３【LIVE】星砂島のくらし♡【スターサンド・アイランド/Starsand Island】　【犬丸なでこ/パレデミア学園】",
+    "date": "2026-02-18T21:00:00.000+09:00",
+    "status": "upcoming",
+    "thumbnail": "https://i.ytimg.com/vi/d0M2Ux_Q6cc/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/OQpHijB1HDVezkvjNufbM9PmR9kbhUe1mfnSRqJ67l-R34sAc4BhYmQ2U7C-SapKAtcOk_Bp",
+    "url": "https://www.youtube.com/watch?v=d0M2Ux_Q6cc"
   },
   {
     "name": "常磐カナメ",

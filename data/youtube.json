@@ -1,15 +1,5 @@
 [
   {
-    "name": "緋月・ローズ・ブレイド",
-    "youtubeid": "UCDutDfyKbX_ah4GF6kPNKmw",
-    "title": "【#歌ってみた】青春おでん【#新人vtuber 】#イナズマイレブン #vsinger",
-    "date": "2026-02-17T07:54:12.000+09:00",
-    "status": "archive",
-    "thumbnail": "https://i.ytimg.com/vi/dE6R3MpKyC0/mqdefault.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/W_G4fcoLegJdQmhWclC6RKHdrx9DJLGZ4WcLyCKgJxzyZZ3MUd-tNZ90LYQGVAbt7NzXl5GUJQ",
-    "url": "https://www.youtube.com/watch?v=dE6R3MpKyC0"
-  },
-  {
     "name": "藤森ちとせ",
     "youtubeid": "UCAhdxmsdngH4noySdpVAVWQ",
     "title": "🌲12月11日木曜日🌲 今日の誕生花は #ヤドリギ ！ #誕生花 #花言葉 #藤森ちとせ #宿木",
@@ -1390,6 +1380,16 @@
     "url": "https://www.youtube.com/watch?v=REFhBV5p5pk"
   },
   {
+    "name": "新巻るろな",
+    "youtubeid": "UCUd4wJjvPQflbLnsk_YHleA",
+    "title": "【 #朝活 】おはぽよ＾＾【新巻るろな／パレデミア学園】#VTuber #雑談",
+    "date": "2026-02-20T07:06:36.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/Fsyqq-c2XeE/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/-4sLuWCih-DlfhpwpDQEuB6eupCB6kTImkIPmKnh54vu5I0F49RkveNQGiqy0p8t0GDU6eiegGE",
+    "url": "https://www.youtube.com/watch?v=Fsyqq-c2XeE"
+  },
+  {
     "name": "七音うら",
     "youtubeid": "UCv2IYO-4waCpHvn50SWWY2A",
     "title": "【#repo  】れぽれぽ！【#ウィニー寮】",
@@ -1398,6 +1398,16 @@
     "thumbnail": "https://i.ytimg.com/vi/uREQLmCjX34/mqdefault_live.jpg",
     "channelIcon": "https://yt3.googleusercontent.com/T655ATpSd2gkjZBrokvlkaUH0f5-fCpQdcJpwxmmNdy6fxCYffAlq2sMhPOtFk_CvVyOkEPY8Q",
     "url": "https://www.youtube.com/watch?v=uREQLmCjX34"
+  },
+  {
+    "name": "変幻リメ",
+    "youtubeid": "UC5bCRde8xRrNS7s6GjCNCyQ",
+    "title": "【#NEWTOWN】事件追ってカジノ行って！！！#NEWTOWN*̩̩̥11日目*̩̩̥  #gta5 【変幻リメ】",
+    "date": "2026-02-20T18:00:00.000+09:00",
+    "status": "upcoming",
+    "thumbnail": "https://i.ytimg.com/vi/5wiedo82bKk/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/4hssn4EXW2lORXRfiuYTjmYfnlZoQ2h72sdEompqX7GQwAKCsBx7eL0joCFSook1rfCKIcpykg",
+    "url": "https://www.youtube.com/watch?v=5wiedo82bKk"
   },
   {
     "name": "常磐カナメ",
@@ -1418,6 +1428,16 @@
     "thumbnail": "https://i.ytimg.com/vi/fjbO0g7V2ik/mqdefault_live.jpg",
     "channelIcon": "https://yt3.googleusercontent.com/wzntFKPKUatW6H2KvuoQW9rYN9L1A9TCKyKODJlLPslV0mwXea4muC4A96enHQtovT6iYTH_Rw",
     "url": "https://www.youtube.com/watch?v=fjbO0g7V2ik"
+  },
+  {
+    "name": "変幻リメ",
+    "youtubeid": "UC5bCRde8xRrNS7s6GjCNCyQ",
+    "title": "【#NEWTOWN】事件追ってカジノ行って！！！#NEWTOWN*̩̩̥11日目*̩̩̥  #gta5 【変幻リメ】",
+    "date": "2026-02-20T23:00:00.000+09:00",
+    "status": "upcoming",
+    "thumbnail": "https://i.ytimg.com/vi/G7EoONpOK3Y/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/4hssn4EXW2lORXRfiuYTjmYfnlZoQ2h72sdEompqX7GQwAKCsBx7eL0joCFSook1rfCKIcpykg",
+    "url": "https://www.youtube.com/watch?v=G7EoONpOK3Y"
   },
   {
     "name": "桜樹美彩",

@@ -1,14 +1,5 @@
 [
   {
-    "name": "李じゅぴ汰",
-    "twitchid": "lee_jupita",
-    "title": "【電気街の喫茶店】今日もちょっとずつ喫茶店【バイトと銭湯】",
-    "date": "2026-02-16T23:03:04.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://yt3.googleusercontent.com/QQqec9A1J7eLk9RrRYD9vvk51BBJzcE1leGkU9n4YkwHqht9gmGT1ktmSlKItQtbuMSGuklAFxM",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/3ba61ec50424abb440b7_lee_jupita_315490024945_1771250578//thumb/thumb0-320x180.jpg"
-  },
-  {
     "name": "月皇ちな",
     "twitchid": "chi7_v",
     "title": "エンドフィールドのお時間",
@@ -142,5 +133,22 @@
     "status": "archive",
     "channelIcon": "https://yt3.googleusercontent.com/8vDFqOVNprKqFE0o7EecXyQleBXIibeJZpXpSgjm5msh4Yd0S8hTsbmYZyOBXa3bUEgBJHZt1w",
     "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/db08b95363d0f2acc212_hinoha_rui_315509137394_1771475050//thumb/thumb0-320x180.jpg"
+  },
+  {
+    "name": "なかもとおまち",
+    "twitchid": "41futon",
+    "title": "MR1600~本田募集！深夜におまちが？！ストを？！？！",
+    "date": "2026-02-19T22:11:53.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_41futon-320x180.jpg"
+  },
+  {
+    "name": "なかもとおまち",
+    "twitchid": "41futon",
+    "title": "深夜におまちが？！ストを？！？！",
+    "date": "2026-02-19T22:11:59.000+09:00",
+    "status": "archive",
+    "channelIcon": "https://yt3.googleusercontent.com/h8jNjVckVf08zSV6wdhQ38Fw9OH7kucAprlJsi9w0YdDIL8_Kcv0tHY-1cK8jPK_jRLSJb3t_Q",
+    "thumbnail": "https://vod-secure.twitch.tv/_404/404_processing_320x180.png"
   }
 ]

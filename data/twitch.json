@@ -1,14 +1,5 @@
 [
   {
-    "name": "なかもとおまち",
-    "twitchid": "41futon",
-    "title": "#ゆなっこ杯 顔合わせ！w/赫闇まお3、灰ノ鼠しなの3、杏藤ぴちか3、エリオット3",
-    "date": "2026-02-17T20:23:21.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://yt3.googleusercontent.com/h8jNjVckVf08zSV6wdhQ38Fw9OH7kucAprlJsi9w0YdDIL8_Kcv0tHY-1cK8jPK_jRLSJb3t_Q",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/68302aa4dd8907124ee6_41futon_315551869427_1771327395//thumb/thumb0-320x180.jpg"
-  },
-  {
     "name": "銘兎目あう",
     "twitchid": "Metome_Au",
     "title": "【スト６】1542MR～Mケン🥋あうが如く🥊BOしない意識#∞ ケンを画面端で泣かせるわけにはいかねぇ。",
@@ -124,5 +115,13 @@
     "status": "archive",
     "channelIcon": "https://yt3.googleusercontent.com/dPtSb9jgOlWAvy3_pEFIVzTc5iOd4OGhJQIVwjT6RpMAjOmJQHDzs0g2gYCjNEnlpcgQO8fb5-k",
     "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/42c42ed2e07e4b1e7c18_chi7_v_315514097394_1771576553//thumb/thumb0-320x180.jpg"
+  },
+  {
+    "name": "銘兎目あう",
+    "twitchid": "Metome_Au",
+    "title": "【スト６】1616MR～Mケン🥋大会前日！どすこーい！でいやふーん！✋",
+    "date": "2026-02-20T20:24:19.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_Metome_Au-320x180.jpg"
   }
 ]

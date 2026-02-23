@@ -1,65 +1,5 @@
 [
   {
-    "name": "桜庭羽奈",
-    "youtubeid": "UCPgg_A08ksSYP-VivJGniRw",
-    "title": "■初見さん大歓迎■高評価100を目指してます！🐻【新人VTuberの雑談／歌枠】🐻",
-    "date": "2026-02-20T20:30:29.000+09:00",
-    "status": "live",
-    "thumbnail": "https://i.ytimg.com/vi/7HEKs1onlDA/mqdefault_live.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/04zALH6pYL7mkWILHajvBzfzg4hrwRCLBONme3K1PjuEeYJIRC6RYxPmJzVZRuN42skHEDNRGmo",
-    "url": "https://www.youtube.com/watch?v=7HEKs1onlDA"
-  },
-  {
-    "name": "忠犬しず",
-    "youtubeid": "UCPzN3R0x_SciJJ_FP-STpHQ",
-    "title": "【 同時視聴 】金曜ロードショー同時視聴「ゴールデンカムイ」を一緒に見よう【 忠犬しず/Vtuber 】",
-    "date": "2026-02-20T20:40:00.000+09:00",
-    "status": "upcoming",
-    "thumbnail": "https://i.ytimg.com/vi/lBpKsj2kyaY/mqdefault_live.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/9dVPxoBbcXIeN4O1N6bYiWu3EHHHeaStY7fQYPZfF3thWIP2Sc9Uc6kg56Aj0UHrg5QqqDtn",
-    "url": "https://www.youtube.com/watch?v=lBpKsj2kyaY"
-  },
-  {
-    "name": "相栖るじゅ",
-    "youtubeid": "UCrpdBoGpa6g2WEtRWsIlhDQ",
-    "title": "【利用規約に同意したい】同意させるね^―^【相栖るじゅ/パレデミア学園】",
-    "date": "2026-02-20T21:04:13.000+09:00",
-    "status": "live",
-    "thumbnail": "https://i.ytimg.com/vi/NYvVTEem_xo/mqdefault_live.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/yQbh9vEEgS_UapoQhIxxoTSy13bDxlHYC-ncTcO9VIDBN2NvrLTAWeKGQ72CN2fhOOrHqYaFDA",
-    "url": "https://www.youtube.com/watch?v=NYvVTEem_xo"
-  },
-  {
-    "name": "朧月ひかる",
-    "youtubeid": "UCGyMmGRoI-BOLnEVvcerNoQ",
-    "title": "【雑談】ちょっとだけ！【朧月ひかる/パレデミア学園】",
-    "date": "2026-02-20T22:00:00.000+09:00",
-    "status": "upcoming",
-    "thumbnail": "https://i.ytimg.com/vi/fjbO0g7V2ik/mqdefault_live.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/wzntFKPKUatW6H2KvuoQW9rYN9L1A9TCKyKODJlLPslV0mwXea4muC4A96enHQtovT6iYTH_Rw",
-    "url": "https://www.youtube.com/watch?v=fjbO0g7V2ik"
-  },
-  {
-    "name": "灯野ぺけ。",
-    "youtubeid": "UCldoz5HLh6BMW29HGnRpC0Q",
-    "title": "【おぼぼコラボ💥】活動から初見さん/ROMの人もおいで～🏮≪パレデミア学園 / 灯野ぺけ。≫ #vtuber #コラボ #雑談",
-    "date": "2026-02-20T22:00:00.000+09:00",
-    "status": "upcoming",
-    "thumbnail": "https://i.ytimg.com/vi/9oKh3uGHeb4/mqdefault_live.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/fkb3ZihjrgGSVr5drGCJziRf-9EQ6AtqTswp3wNfS4xRMnVZKQ3WvcphIna7hTwOZpy5vq9UKg",
-    "url": "https://www.youtube.com/watch?v=9oKh3uGHeb4"
-  },
-  {
-    "name": "陰山アゲハ",
-    "youtubeid": "UCIw8aQVRBwi72yOrPLgkbRQ",
-    "title": "【#poppyplaytime  】ｱﾎﾟﾍﾟﾝｿｰに家出されてサムネがないポピープレイタイム５！【#アゲハが来たぞ #パレデミア学園 】",
-    "date": "2026-02-20T22:00:00.000+09:00",
-    "status": "upcoming",
-    "thumbnail": "https://i.ytimg.com/vi/dSfO2ektwNU/mqdefault_live.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/TRbQGbBCM6R6LAzCQXka_AxVqF-ozTWwqW455tZU9q9GMo4ijQNNc3d818MX-5wmMnhv-k84Rw",
-    "url": "https://www.youtube.com/watch?v=dSfO2ektwNU"
-  },
-  {
     "name": "瀬奈りるか",
     "youtubeid": "UCWi_ztz8Xuz4XfzhoG6ZfyA",
     "title": "【青鬼2 ＃4】青鬼2初見プレイ！🌟謎解きがんばります🎶ホラゲー得意なので絶対驚かない！【いいところまで】＃せなりるライブ #パレデミア学園",
@@ -1202,12 +1142,112 @@
   {
     "name": "夏渚まはろ",
     "youtubeid": "UC_a00ml_EVDXSrtY8ZuyqGQ",
+    "title": "【縦型歌枠】元気が出る曲歌枠！NEW TOWNで歌えなかったのでリベンジ【#夏渚まはろ￤#パレプロ】",
+    "date": "2026-02-23T18:08:20.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/z6-jzmZN7dM/mqdefault.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/iktv-39nC7NDASD1WeXms-DEuHuVqB5RhwTtdDe26w-BCvqf6yq3r_8zBiv2i2CfNXCK0uE8",
+    "url": "https://www.youtube.com/watch?v=z6-jzmZN7dM"
+  },
+  {
+    "name": "銘兎目あう",
+    "youtubeid": "UCpr-9ssUUgSb0EpDA8bRuTA",
+    "title": "【スト６】なんじゃこりゃぁあ！【銘兎目あう】#shorts #vtuber #おすすめ #新人Vtuber #スト6 #ストリートファイター6 #sf6#StreetFighter6",
+    "date": "2026-02-23T18:30:25.000+09:00",
+    "status": "archive",
+    "thumbnail": "https://i.ytimg.com/vi/aYFGMUe1f2s/mqdefault.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/VB97J8AMHex_rkfd6hDhfiGhhVvrL-NNkseP2mMYSWh75sxA_oXctmxK5tV4FYgkM17RUAx6GQ",
+    "url": "https://www.youtube.com/watch?v=aYFGMUe1f2s"
+  },
+  {
+    "name": "しーはむ",
+    "youtubeid": "UC5xSDiB2WG4pO_zUZ_t-n0Q",
+    "title": "マックでよく注文するものは？ #vtuber #新人vtuber",
+    "date": "2026-02-23T18:30:30.000+09:00",
+    "status": "archive",
+    "thumbnail": "https://i.ytimg.com/vi/WfXCp7cxAgI/mqdefault.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/y0zP0Uz7HSLx5dv3xo488Suxk8rJQQUC1wXaymjUBIQIwa25WlVu_VmrsT1xAyVD-jgeL7hs",
+    "url": "https://www.youtube.com/watch?v=WfXCp7cxAgI"
+  },
+  {
+    "name": "鬼多見アユム",
+    "youtubeid": "UCnrJK-sb3gSn3kRLkmpmzaw",
+    "title": "【にぎにぎにじたうん！】楽しく踊らせて頂きました!! #にぎにじダンス #踊ってみた #vtuber #shorts",
+    "date": "2026-02-23T19:46:55.000+09:00",
+    "status": "archive",
+    "thumbnail": "https://i.ytimg.com/vi/hagVDFlbZdw/mqdefault.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/5l_IDFvbCkoc_xXy5i5YH24NcAgRR9bYZM9hu30Hm8may2x-7GiLIxkQ3DHQ4vI9uKwRUcbR6Q",
+    "url": "https://www.youtube.com/watch?v=hagVDFlbZdw"
+  },
+  {
+    "name": "夏渚まはろ",
+    "youtubeid": "UC_a00ml_EVDXSrtY8ZuyqGQ",
     "title": "【Terraria￤テラリア＃9】エキスパートモードでムーンロード討伐！【#レモサマ￤#夏渚まはろ￤#パレプロ】",
     "date": "2026-02-23T20:00:00.000+09:00",
     "status": "upcoming",
     "thumbnail": "https://i.ytimg.com/vi/cePo34NOono/mqdefault_live.jpg",
     "channelIcon": "https://yt3.googleusercontent.com/iktv-39nC7NDASD1WeXms-DEuHuVqB5RhwTtdDe26w-BCvqf6yq3r_8zBiv2i2CfNXCK0uE8",
     "url": "https://www.youtube.com/watch?v=cePo34NOono"
+  },
+  {
+    "name": "七海ロナ",
+    "youtubeid": "UCIaZylf5L9MsCMOJX3BdTEg",
+    "title": "#番外編【ウミガリ】金のお魚捕まえるぞ🎖🐟【パレプロ／七海ロナ】",
+    "date": "2026-02-23T20:02:26.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/hfDLSOoAYI0/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/wi_loPPiitkzxiP0EiHomngWqVGTZQk1Dn4aI79VFWKLY0QbCTHz-FdjBxKEcQ1Jm0Ea_g257A",
+    "url": "https://www.youtube.com/watch?v=hfDLSOoAYI0"
+  },
+  {
+    "name": "変幻リメ",
+    "youtubeid": "UC5bCRde8xRrNS7s6GjCNCyQ",
+    "title": "【#newtown 】まったり練習しよう！！！ *̩̩̥ 練習 *̩̩̥  #gta5 【変幻リメ】",
+    "date": "2026-02-23T20:10:07.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/RLApP9-UYS4/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/4hssn4EXW2lORXRfiuYTjmYfnlZoQ2h72sdEompqX7GQwAKCsBx7eL0joCFSook1rfCKIcpykg",
+    "url": "https://www.youtube.com/watch?v=RLApP9-UYS4"
+  },
+  {
+    "name": "天透あわ",
+    "youtubeid": "UCXI0W_Os-BCIngpCb1YnOow",
+    "title": "【コラボ実況】違う冬のぼくら",
+    "date": "2026-02-23T20:29:43.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/fJDg98vLcX4/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/Me8I_Op8OlIy8Vuj387_Hdi6gnrZ-qiY1yDDt1Q5yKMKA51ISagT76HE01gw8xbLcef0vpsPgoc",
+    "url": "https://www.youtube.com/watch?v=fJDg98vLcX4"
+  },
+  {
+    "name": "愛乃宮ゆめ",
+    "youtubeid": "UCttSjPiwPYpiPuCrgxK7c1g",
+    "title": "違う冬の僕ら with 天透あわ【愛乃宮ゆめ/パレデミア学園】",
+    "date": "2026-02-23T20:30:38.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/-MnDUS_jhWU/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/M01WvdgX_IfwIkwA4g0_gf9qo4fqF5U7pnXloNwOcL2XnTXXdF8UQ9HS2oyv21t-GXnIhBTWndk",
+    "url": "https://www.youtube.com/watch?v=-MnDUS_jhWU"
+  },
+  {
+    "name": "犬丸なでこ",
+    "youtubeid": "UCdJmJxMfXrlnZabUkuss2EA",
+    "title": "【雑談】話すわんね～♪【犬丸なでこ/パレデミア学園】",
+    "date": "2026-02-23T20:31:59.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/7LZB569n6Fs/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/OQpHijB1HDVezkvjNufbM9PmR9kbhUe1mfnSRqJ67l-R34sAc4BhYmQ2U7C-SapKAtcOk_Bp",
+    "url": "https://www.youtube.com/watch?v=7LZB569n6Fs"
+  },
+  {
+    "name": "桜庭羽奈",
+    "youtubeid": "UCPgg_A08ksSYP-VivJGniRw",
+    "title": "【名探偵コナン歌枠！】初見さん大歓迎💛🍫高評価100を目指してます！🐻",
+    "date": "2026-02-23T20:34:25.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/w8Rypgnj_3g/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/04zALH6pYL7mkWILHajvBzfzg4hrwRCLBONme3K1PjuEeYJIRC6RYxPmJzVZRuN42skHEDNRGmo",
+    "url": "https://www.youtube.com/watch?v=w8Rypgnj_3g"
   },
   {
     "name": "朧月ひかる",
@@ -1230,6 +1270,26 @@
     "url": "https://www.youtube.com/watch?v=s6FUZt-jqBo"
   },
   {
+    "name": "常磐カナメ",
+    "youtubeid": "UCbNEgJIF_ADD9e8-q7SoxCg",
+    "title": "真っ赤で可愛いオタ活部屋！広島県産オタクエンジェル 江波キョウカちゃんのお部屋を作ってみよう #shorts #あつもり",
+    "date": "2026-02-23T21:10:58.000+09:00",
+    "status": "archive",
+    "thumbnail": "https://i.ytimg.com/vi/7dXcSTfokjE/mqdefault.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/vb_kLF_4hQ7UdEtOnEtL-_pI320ZMQ-lVQ9OV3xMvdTQitHXX1zk0b6GKQ977dawvfoB5Sb8OQ",
+    "url": "https://www.youtube.com/watch?v=7dXcSTfokjE"
+  },
+  {
+    "name": "魔法少女アルト",
+    "youtubeid": "UCtRhBS8dlaeBgVcnEZOkAbA",
+    "title": "初見さんも歓迎！【再・延長戦】３周年メッセージ読む！   【 魔法少女アルト / ＃アルトの魔法通信 】",
+    "date": "2026-02-23T21:42:35.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/hAcYdEzpCu8/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/JwOkUNiR-08GjSI3MS8-Yk6jzONshtmRWZ9tpjOghB10quze7fgbJkhpPTpIfUX00HBACjAR8Q",
+    "url": "https://www.youtube.com/watch?v=hAcYdEzpCu8"
+  },
+  {
     "name": "春原なずな",
     "youtubeid": "UCW-iuU7g3BJnuQ1D3UkqeSA",
     "title": "【 ドラゴンクエストVII Reimagined 】#4 初見ドラクエ７！仲間が増えて新しい島へ！ショップ使わない縛り！？ ※ネタバレあり【 春原なずな / VTuber 】",
@@ -1238,6 +1298,46 @@
     "thumbnail": "https://i.ytimg.com/vi/MgEfHpulT4c/mqdefault_live.jpg",
     "channelIcon": "https://yt3.googleusercontent.com/0pD1c95Y9X0VrhzWtlf2SRPqdkesiuZxC8Hb5Mg9Xv1WWpQaFCmjITTK8-n5HlNsB-yDbAN4CZA",
     "url": "https://www.youtube.com/watch?v=MgEfHpulT4c"
+  },
+  {
+    "name": "桜庭羽奈",
+    "youtubeid": "UCPgg_A08ksSYP-VivJGniRw",
+    "title": "だめだぁぁぁ！言えないよぉ！#vtuber #推しをお探しですか #切り抜き #新人vtuberと繋がりたい #バズれ #shorts",
+    "date": "2026-02-23T22:00:03.000+09:00",
+    "status": "archive",
+    "thumbnail": "https://i.ytimg.com/vi/1DV0vJuBFpU/mqdefault.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/04zALH6pYL7mkWILHajvBzfzg4hrwRCLBONme3K1PjuEeYJIRC6RYxPmJzVZRuN42skHEDNRGmo",
+    "url": "https://www.youtube.com/watch?v=1DV0vJuBFpU"
+  },
+  {
+    "name": "雛菊のん",
+    "youtubeid": "UChccV6U0Tkx9de4YjXbEelw",
+    "title": "ギャルによる小中高学級閉鎖になった時の反応の違い#shorts #vtuber #新人vtuber #おしゃべり #おすすめにのりたい #バズれ",
+    "date": "2026-02-23T22:01:03.000+09:00",
+    "status": "archive",
+    "thumbnail": "https://i.ytimg.com/vi/ZJQjnZJi_Rc/mqdefault.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/OxvUqyZAoX4gIX91GOkYMIE2iYfD1ndRKGZbo4Ih8cDb5QuoXpqNJWZKpephYlI0zNiYjQptAQ",
+    "url": "https://www.youtube.com/watch?v=ZJQjnZJi_Rc"
+  },
+  {
+    "name": "李じゅぴ汰",
+    "youtubeid": "UCHsAAyHJhPXuLS6N3Kig6PQ",
+    "title": "【電気街の喫茶店】番外編！好みの可愛い子いた！！",
+    "date": "2026-02-23T22:15:00.000+09:00",
+    "status": "upcoming",
+    "thumbnail": "https://i.ytimg.com/vi/LnNKsHX_8Rw/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/QQqec9A1J7eLk9RrRYD9vvk51BBJzcE1leGkU9n4YkwHqht9gmGT1ktmSlKItQtbuMSGuklAFxM",
+    "url": "https://www.youtube.com/watch?v=LnNKsHX_8Rw"
+  },
+  {
+    "name": "瀬奈りるか",
+    "youtubeid": "UCWi_ztz8Xuz4XfzhoG6ZfyA",
+    "title": "【♯4 Euro Truck Simulator2】バレンタインイベント半分まで進めたい🍫ブランケットのために今日もたくさん運送します🌟ヨーロッパの道路を走行する🎶【＃パレデミア学園】＃せなりるライブ",
+    "date": "2026-02-23T22:30:00.000+09:00",
+    "status": "upcoming",
+    "thumbnail": "https://i.ytimg.com/vi/FoivcBhZzk8/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/bM-okYT9oTq3M5dq33VSpidEiaC8MP2EoQXX2gNpgW7PAV7RSn1t7_2HghmCcAwrNxriAmMy",
+    "url": "https://www.youtube.com/watch?v=FoivcBhZzk8"
   },
   {
     "name": "真昼ねる",
@@ -1278,6 +1378,26 @@
     "thumbnail": "https://i.ytimg.com/vi/3Yrx63gurAM/mqdefault_live.jpg",
     "channelIcon": "https://yt3.googleusercontent.com/ytc/AIdro_nuv43BXc-JNRM-omFed0brcXGTD8qvA8313ZeQa8PfviA",
     "url": "https://www.youtube.com/watch?v=3Yrx63gurAM"
+  },
+  {
+    "name": "桜樹美彩",
+    "youtubeid": "UCTwKpTFX1aAXD0xpBqYqTdg",
+    "title": "【 朝活 / 雑談 】リアクションボタンを押しまくれる朝活雑談🍞初見＆ROM勢大歓迎🎉AM7:00～ 🐤 #vtuber #みさライなう #桜樹美彩 #新人vtuber",
+    "date": "2026-02-25T07:00:00.000+09:00",
+    "status": "upcoming",
+    "thumbnail": "https://i.ytimg.com/vi/noe96tGyv1I/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/pDP2GuylW0RN1REDScFAlNklbXaPRqTm2mwT2F7dIo8xoYYFPfspsjGH_G3RagwlKVlQbdw95bY",
+    "url": "https://www.youtube.com/watch?v=noe96tGyv1I"
+  },
+  {
+    "name": "桜樹美彩",
+    "youtubeid": "UCTwKpTFX1aAXD0xpBqYqTdg",
+    "title": "【 #鳴潮 #Wuthering Waves 】完全初見.ᐟ.ᐟ 初心者🔰鳴潮実況 第２回 / #vtuber  #みさライなう",
+    "date": "2026-02-25T18:00:00.000+09:00",
+    "status": "upcoming",
+    "thumbnail": "https://i.ytimg.com/vi/xhmr0dWxXgc/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/pDP2GuylW0RN1REDScFAlNklbXaPRqTm2mwT2F7dIo8xoYYFPfspsjGH_G3RagwlKVlQbdw95bY",
+    "url": "https://www.youtube.com/watch?v=xhmr0dWxXgc"
   },
   {
     "name": "しーはむ",

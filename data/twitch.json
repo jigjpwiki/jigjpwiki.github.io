@@ -1,14 +1,5 @@
 [
   {
-    "name": "なかもとおまち",
-    "twitchid": "41futon",
-    "title": "【ELEDEN RING】🔰金曜日の夜に火山へ向かう王おまち。※ビッツ禁止",
-    "date": "2026-02-20T23:04:14.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://yt3.googleusercontent.com/h8jNjVckVf08zSV6wdhQ38Fw9OH7kucAprlJsi9w0YdDIL8_Kcv0tHY-1cK8jPK_jRLSJb3t_Q",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/5c0ecac820718a3a7e31_41futon_315515569522_1771596248//thumb/thumb0-320x180.jpg"
-  },
-  {
     "name": "李じゅぴ汰",
     "twitchid": "lee_jupita",
     "title": "【メンヘラリウム】メンヘラちゃんと血を賭けたチンチロで勝負だ！【新作】",
@@ -138,8 +129,26 @@
     "name": "水透ユウ",
     "twitchid": "minato_yu_",
     "title": "【 #R6SX 】女性活動者1vs1トーナメント予選 自認コッパー参ります【 #新人vtuber 】【ぷろのゔぁ】#ユウおんらいぶ",
-    "date": "2026-02-23T20:56:02.000+09:00",
+    "date": "2026-02-23T20:56:08.000+09:00",
+    "status": "archive",
+    "channelIcon": "https://yt3.googleusercontent.com/eVD8Ygm7KVyh3dvWnyebfYlbYpD13ZYQ-Bos8WdR5LDE61A3svHVHCLEY-rM3IQgw9O4uvdd",
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/fad4fa1079796961349d_minato_yu__315528751602_1771847762//thumb/thumb0-320x180.jpg"
+  },
+  {
+    "name": "李じゅぴ汰",
+    "twitchid": "lee_jupita",
+    "title": "早く終わったからチンチロ",
+    "date": "2026-02-23T22:09:55.000+09:00",
     "status": "live",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_minato_yu_-320x180.jpg"
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lee_jupita-320x180.jpg"
+  },
+  {
+    "name": "李じゅぴ汰",
+    "twitchid": "lee_jupita",
+    "title": "【電気街の喫茶店】番外編！好みの可愛い子いた！！",
+    "date": "2026-02-23T22:10:02.000+09:00",
+    "status": "archive",
+    "channelIcon": "https://yt3.googleusercontent.com/QQqec9A1J7eLk9RrRYD9vvk51BBJzcE1leGkU9n4YkwHqht9gmGT1ktmSlKItQtbuMSGuklAFxM",
+    "thumbnail": "https://vod-secure.twitch.tv/_404/404_processing_320x180.png"
   }
 ]

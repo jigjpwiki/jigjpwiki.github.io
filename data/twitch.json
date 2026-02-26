@@ -1,14 +1,5 @@
 [
   {
-    "name": "水透ユウ",
-    "twitchid": "minato_yu_",
-    "title": "【 #R6SX 】女性活動者1vs1トーナメント予選 自認コッパー参ります【 #新人vtuber 】【ぷろのゔぁ】#ユウおんらいぶ",
-    "date": "2026-02-23T20:56:08.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://yt3.googleusercontent.com/eVD8Ygm7KVyh3dvWnyebfYlbYpD13ZYQ-Bos8WdR5LDE61A3svHVHCLEY-rM3IQgw9O4uvdd",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/fad4fa1079796961349d_minato_yu__315528751602_1771847762//thumb/thumb0-320x180.jpg"
-  },
-  {
     "name": "李じゅぴ汰",
     "twitchid": "lee_jupita",
     "title": "【電気街の喫茶店】番外編！好みの可愛い子いた！！",
@@ -115,5 +106,29 @@
     "status": "archive",
     "channelIcon": "https://yt3.googleusercontent.com/8vDFqOVNprKqFE0o7EecXyQleBXIibeJZpXpSgjm5msh4Yd0S8hTsbmYZyOBXa3bUEgBJHZt1w",
     "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/c1f273ebe5d10143ce10_hinoha_rui_315529096561_1772021822//thumb/thumb0-320x180.jpg"
+  },
+  {
+    "name": "水透ユウ",
+    "twitchid": "minato_yu_",
+    "title": "【 #R6SX 】solo rank 一旦一応滑り込んでおきたい【 #新人vtuber 】【ぷろのゔぁ】#ユウおんらいぶ",
+    "date": "2026-02-26T20:14:36.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_minato_yu_-320x180.jpg"
+  },
+  {
+    "name": "銘兎目あう",
+    "twitchid": "Metome_Au",
+    "title": "【スト６】1499MR～Mケン🥋🥊毎日配信355日目✨しっかりコマンド押す👉🔘ポチッ 22：00～HUBトーナメント🏆",
+    "date": "2026-02-26T20:45:00.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_Metome_Au-320x180.jpg"
+  },
+  {
+    "name": "なかもとおまち",
+    "twitchid": "41futon",
+    "title": "ひさしぶりだな！スト６ちょいからのエルデ",
+    "date": "2026-02-26T21:34:26.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_41futon-320x180.jpg"
   }
 ]

@@ -1,23 +1,5 @@
 [
   {
-    "name": "銘兎目あう",
-    "twitchid": "Metome_Au",
-    "title": "【スト６】1600MR～Mケン🥋🥊グラマス目指していくぞぉ👊",
-    "date": "2026-02-24T20:10:23.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://yt3.googleusercontent.com/VB97J8AMHex_rkfd6hDhfiGhhVvrL-NNkseP2mMYSWh75sxA_oXctmxK5tV4FYgkM17RUAx6GQ",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/20119cd0d9e8cbed0114_metome_au_315532819698_1771931417//thumb/thumb0-320x180.jpg"
-  },
-  {
-    "name": "しーはむ",
-    "twitchid": "siyham",
-    "title": "ミリしらカスタム！LOL知らない人が選んだチャンプを使う",
-    "date": "2026-02-24T20:57:14.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://yt3.googleusercontent.com/y0zP0Uz7HSLx5dv3xo488Suxk8rJQQUC1wXaymjUBIQIwa25WlVu_VmrsT1xAyVD-jgeL7hs",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/c8869dd8bd5836218b2d_siyham_315524588401_1771934228//thumb/thumb0-320x180.jpg"
-  },
-  {
     "name": "月皇ちな",
     "twitchid": "chi7_v",
     "title": "久々のエンドフィールド #chi7live",
@@ -160,5 +142,21 @@
     "status": "archive",
     "channelIcon": "https://yt3.googleusercontent.com/pDP2GuylW0RN1REDScFAlNklbXaPRqTm2mwT2F7dIo8xoYYFPfspsjGH_G3RagwlKVlQbdw95bY",
     "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d1m7jfoe9zdc1j/0db0170e5e68c05b696b_sakuragimisa_v_318047401307_1772143227//thumb/thumb0-320x180.jpg"
+  },
+  {
+    "name": "銘兎目あう",
+    "twitchid": "Metome_Au",
+    "title": "『クッキーラン：冒険の塔』 ガチャ250回やるよ✨金曜日、一緒に冒険にいこ！参加◎🍪#PR",
+    "date": "2026-02-27T20:09:04.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_Metome_Au-320x180.jpg"
+  },
+  {
+    "name": "月皇ちな",
+    "twitchid": "chi7_v",
+    "title": "すこしだけTFTタイム #chi7live",
+    "date": "2026-02-27T21:26:52.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_chi7_v-320x180.jpg"
   }
 ]

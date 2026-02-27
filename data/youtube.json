@@ -1,15 +1,5 @@
 [
   {
-    "name": "天辻ゆらぐ",
-    "youtubeid": "UCeOFQCn_QZJMTszlRYRg3rQ",
-    "title": "【縦型/雑談歌枠】高評価111目標🎶あなたのお姉さんアイドルVtuber🪼💜初見歓迎✨️【天辻ゆらぐ/パレデミア学園】 #新人Vtuber #ゆらぐっどたいむ",
-    "date": "2026-02-25T02:45:23.000+09:00",
-    "status": "live",
-    "thumbnail": "https://i.ytimg.com/vi/wDtshhr44p4/mqdefault_live.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/4AFFu60kFJqix-OhtDW3EJdQ0jQa1LrK56tGpvqvbGodMQFpkH-_qtvL_66dPGD3kl4LW9N4",
-    "url": "https://www.youtube.com/watch?v=wDtshhr44p4"
-  },
-  {
     "name": "暁月クララ",
     "youtubeid": "UCn4XvlTXjGSvDynpxpOYZPQ",
     "title": "【好き？嫌い？】ブルーハワイレモン / ≒JOY #ニアジョイ #踊ってみた #暁月クララ #パレプロ #vtuber",
@@ -1120,6 +1110,16 @@
     "url": "https://www.youtube.com/watch?v=fWjAwA7cVC0"
   },
   {
+    "name": "七音うら",
+    "youtubeid": "UCv2IYO-4waCpHvn50SWWY2A",
+    "title": "【#雑談配信 】ねむねむ金曜日の夜雑談。【七音うら】",
+    "date": "2026-02-28T01:47:50.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/8iKXxnai7u4/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/T655ATpSd2gkjZBrokvlkaUH0f5-fCpQdcJpwxmmNdy6fxCYffAlq2sMhPOtFk_CvVyOkEPY8Q",
+    "url": "https://www.youtube.com/watch?v=8iKXxnai7u4"
+  },
+  {
     "name": "犬丸なでこ",
     "youtubeid": "UCdJmJxMfXrlnZabUkuss2EA",
     "title": "おにぎり屋さんシュミレーター！開店するわんよ！【パレデミア学園/犬丸なでこ】",
@@ -1128,6 +1128,16 @@
     "thumbnail": "https://i.ytimg.com/vi/GeXbp9ud3-Y/mqdefault_live.jpg",
     "channelIcon": "https://yt3.googleusercontent.com/OQpHijB1HDVezkvjNufbM9PmR9kbhUe1mfnSRqJ67l-R34sAc4BhYmQ2U7C-SapKAtcOk_Bp",
     "url": "https://www.youtube.com/watch?v=GeXbp9ud3-Y"
+  },
+  {
+    "name": "暁月クララ",
+    "youtubeid": "UCn4XvlTXjGSvDynpxpOYZPQ",
+    "title": "『 V 』 / HIMEHINA【#踊ってみた】#ヴィー #vtuber #暁月クララ #パレプロ",
+    "date": "2026-02-28T02:46:08.000+09:00",
+    "status": "archive",
+    "thumbnail": "https://i.ytimg.com/vi/dO9AtLG0tis/mqdefault.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/8tcStp-WzdZPtf6bPq1DtUnFSd2Eq5AppSd3_CEQ7hNNpnRND8InaWdPCz6T1wIWWkGJuFrbT94",
+    "url": "https://www.youtube.com/watch?v=dO9AtLG0tis"
   },
   {
     "name": "犬丸なでこ",
@@ -1158,6 +1168,16 @@
     "thumbnail": "https://i.ytimg.com/vi/FBIivc-OTMg/mqdefault_live.jpg",
     "channelIcon": "https://yt3.googleusercontent.com/OQpHijB1HDVezkvjNufbM9PmR9kbhUe1mfnSRqJ67l-R34sAc4BhYmQ2U7C-SapKAtcOk_Bp",
     "url": "https://www.youtube.com/watch?v=FBIivc-OTMg"
+  },
+  {
+    "name": "天辻ゆらぐ",
+    "youtubeid": "UCeOFQCn_QZJMTszlRYRg3rQ",
+    "title": "【縦型/朝活/雑談歌枠】高評価100目標🎶あなたのお姉さんアイドルVtuber🪼💜初見歓迎✨️【天辻ゆらぐ/パレデミア学園】 #新人Vtuber #ゆらぐっどたいむ",
+    "date": "2026-02-28T07:00:00.000+09:00",
+    "status": "upcoming",
+    "thumbnail": "https://i.ytimg.com/vi/bpEU4tZcTsk/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/4AFFu60kFJqix-OhtDW3EJdQ0jQa1LrK56tGpvqvbGodMQFpkH-_qtvL_66dPGD3kl4LW9N4",
+    "url": "https://www.youtube.com/watch?v=bpEU4tZcTsk"
   },
   {
     "name": "桜樹美彩",

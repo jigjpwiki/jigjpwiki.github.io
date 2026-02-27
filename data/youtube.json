@@ -1,15 +1,5 @@
 [
   {
-    "name": "肇明日空",
-    "youtubeid": "UCj6HYkokrIErMfhKAUAvYcA",
-    "title": "なんでやろうなぁ#vtuber #shorts",
-    "date": "2026-02-24T16:00:24.000+09:00",
-    "status": "archive",
-    "thumbnail": "https://i.ytimg.com/vi/UMHRI2sPIRs/mqdefault.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/u59W56aqJ9r7WunTIqg60ZGnBu-G-9LA-OX6tZR6debt_isQ8xR59HUwrbAqLLqlTf_0VosmZg",
-    "url": "https://www.youtube.com/watch?v=UMHRI2sPIRs"
-  },
-  {
     "name": "春原なずな",
     "youtubeid": "UCW-iuU7g3BJnuQ1D3UkqeSA",
     "title": "【 漢字でGO! 】※ネタバレあり 算数は小学生より出来ないVTuber【 春原なずな / VTuber 】#vtuber  #ゲーム実況 #漢字でgo",
@@ -1220,6 +1210,16 @@
     "url": "https://www.youtube.com/watch?v=9lacEWW_NuY"
   },
   {
+    "name": "緋雨柚",
+    "youtubeid": "UCrB-SfrqB5ChY8aAT99grXw",
+    "title": "【いえのあじ】お母さんの料理で一番好きなのは肉じゃが　緋雨柚【パレデミア学園】",
+    "date": "2026-02-27T13:30:30.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/ds8FWpIpHdA/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/dPJHngNTeEfD_K0Mus141-We4xIuAhttm2pgEBl3VdGXqWvxGfy5mJfDMDbBmwI6UGc17dXb-g",
+    "url": "https://www.youtube.com/watch?v=ds8FWpIpHdA"
+  },
+  {
     "name": "変幻リメ",
     "youtubeid": "UC5bCRde8xRrNS7s6GjCNCyQ",
     "title": "【歌枠】久しぶりのまったり歌枠！[#変幻リメ]",
@@ -1228,6 +1228,16 @@
     "thumbnail": "https://i.ytimg.com/vi/jOq42t24WJ4/mqdefault_live.jpg",
     "channelIcon": "https://yt3.googleusercontent.com/4hssn4EXW2lORXRfiuYTjmYfnlZoQ2h72sdEompqX7GQwAKCsBx7eL0joCFSook1rfCKIcpykg",
     "url": "https://www.youtube.com/watch?v=jOq42t24WJ4"
+  },
+  {
+    "name": "肇明日空",
+    "youtubeid": "UCj6HYkokrIErMfhKAUAvYcA",
+    "title": "独り言ずっと呟いてた#vtuber #shorts #repo",
+    "date": "2026-02-27T16:00:30.000+09:00",
+    "status": "archive",
+    "thumbnail": "https://i.ytimg.com/vi/TVwpmy_-U58/mqdefault.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/u59W56aqJ9r7WunTIqg60ZGnBu-G-9LA-OX6tZR6debt_isQ8xR59HUwrbAqLLqlTf_0VosmZg",
+    "url": "https://www.youtube.com/watch?v=TVwpmy_-U58"
   },
   {
     "name": "変幻リメ",
@@ -1358,5 +1368,15 @@
     "thumbnail": "https://i.ytimg.com/vi/sP8HzWliwhw/mqdefault_live.jpg",
     "channelIcon": "https://yt3.googleusercontent.com/ytc/AIdro_nuv43BXc-JNRM-omFed0brcXGTD8qvA8313ZeQa8PfviA",
     "url": "https://www.youtube.com/watch?v=sP8HzWliwhw"
+  },
+  {
+    "name": "しーはむ",
+    "youtubeid": "UC5xSDiB2WG4pO_zUZ_t-n0Q",
+    "title": "〘ポケモン/ファイアレッド〙人生縛りで行く!!全クリめざして…!!#1〘VTuber│しーはむ│ポケットモンスター〙",
+    "date": "2026-03-03T21:30:00.000+09:00",
+    "status": "upcoming",
+    "thumbnail": "https://i.ytimg.com/vi/0QwIhYm_vv8/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/y0zP0Uz7HSLx5dv3xo488Suxk8rJQQUC1wXaymjUBIQIwa25WlVu_VmrsT1xAyVD-jgeL7hs",
+    "url": "https://www.youtube.com/watch?v=0QwIhYm_vv8"
   }
 ]

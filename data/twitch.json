@@ -1,23 +1,5 @@
 [
   {
-    "name": "李じゅぴ汰",
-    "twitchid": "lee_jupita",
-    "title": "【メンヘラリウム】真エンディングを目指す！！【真剣勝負】",
-    "date": "2026-02-25T10:55:37.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://yt3.googleusercontent.com/QQqec9A1J7eLk9RrRYD9vvk51BBJzcE1leGkU9n4YkwHqht9gmGT1ktmSlKItQtbuMSGuklAFxM",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/368752953b46cb044219_lee_jupita_315535494386_1771984531//thumb/thumb0-320x180.jpg"
-  },
-  {
-    "name": "しーはむ",
-    "twitchid": "siyham",
-    "title": "mid supp ソロランク！",
-    "date": "2026-02-25T11:15:56.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://yt3.googleusercontent.com/y0zP0Uz7HSLx5dv3xo488Suxk8rJQQUC1wXaymjUBIQIwa25WlVu_VmrsT1xAyVD-jgeL7hs",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/9d2cde9b3b30c5277ad4_siyham_315527085169_1771985750//thumb/thumb0-320x180.jpg"
-  },
-  {
     "name": "銘兎目あう",
     "twitchid": "Metome_Au",
     "title": "【スト６】1512MR～Mケン🥋🥊デイヤフンきちんと✊パなしあう✋⚠",
@@ -159,5 +141,22 @@
     "date": "2026-02-28T09:00:18.000+09:00",
     "status": "live",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sakuragimisa_v-320x180.jpg"
+  },
+  {
+    "name": "李じゅぴ汰",
+    "twitchid": "lee_jupita",
+    "title": "【雑談/メンヘラリウム】チンチロチンチロリンリン♪不思議な力が湧いたらどーしよ？【ローグモード】",
+    "date": "2026-02-28T11:20:18.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lee_jupita-320x180.jpg"
+  },
+  {
+    "name": "李じゅぴ汰",
+    "twitchid": "lee_jupita",
+    "title": "【メンヘラリウム】チンチロチンチロリンリン♪不思議な力が湧いたらどーしよ？【ローグモード】",
+    "date": "2026-02-28T11:20:24.000+09:00",
+    "status": "archive",
+    "channelIcon": "https://yt3.googleusercontent.com/QQqec9A1J7eLk9RrRYD9vvk51BBJzcE1leGkU9n4YkwHqht9gmGT1ktmSlKItQtbuMSGuklAFxM",
+    "thumbnail": "https://vod-secure.twitch.tv/_404/404_processing_320x180.png"
   }
 ]

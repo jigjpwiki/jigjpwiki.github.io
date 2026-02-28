@@ -1,14 +1,5 @@
 [
   {
-    "name": "火乃晴るい",
-    "twitchid": "hinoha_rui",
-    "title": "【 #PummelParty 】友情破壊ゲーム！？激動VALOメンバーでぷめるぱーてぃーやるよ✨",
-    "date": "2026-02-25T21:17:08.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://yt3.googleusercontent.com/8vDFqOVNprKqFE0o7EecXyQleBXIibeJZpXpSgjm5msh4Yd0S8hTsbmYZyOBXa3bUEgBJHZt1w",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/c1f273ebe5d10143ce10_hinoha_rui_315529096561_1772021822//thumb/thumb0-320x180.jpg"
-  },
-  {
     "name": "水透ユウ",
     "twitchid": "minato_yu_",
     "title": "【 #R6SX 】solo rank 一旦一応滑り込んでおきたい【 #新人vtuber 】【ぷろのゔぁ】#ユウおんらいぶ",
@@ -138,8 +129,33 @@
     "name": "銘兎目あう",
     "twitchid": "Metome_Au",
     "title": "【スト６】1602MR～Mケン🥋 久しぶりのカスタム参加型🎶1人1先👊 初見さんも大歓迎✨",
-    "date": "2026-02-28T20:25:16.000+09:00",
+    "date": "2026-02-28T20:25:22.000+09:00",
+    "status": "archive",
+    "channelIcon": "https://yt3.googleusercontent.com/VB97J8AMHex_rkfd6hDhfiGhhVvrL-NNkseP2mMYSWh75sxA_oXctmxK5tV4FYgkM17RUAx6GQ",
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/95284e2d08dbffbbb105_metome_au_315601597811_1772277916//thumb/thumb0-320x180.jpg"
+  },
+  {
+    "name": "なかもとおまち",
+    "twitchid": "41futon",
+    "title": "【スト６】MR1557~今actアルマスを目指したいCジェイミー",
+    "date": "2026-02-28T21:02:47.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_41futon-320x180.jpg"
+  },
+  {
+    "name": "銘兎目あう",
+    "twitchid": "Metome_Au",
+    "title": "【スト６】1602MR～Mケン🥋 久しぶりのカスタム参加型🎶1人1先👊 初見さんも大歓迎✨",
+    "date": "2026-02-28T21:34:43.000+09:00",
     "status": "live",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_Metome_Au-320x180.jpg"
+  },
+  {
+    "name": "水透ユウ",
+    "twitchid": "minato_yu_",
+    "title": "【 #R6SX 】solo rank night🌃 ちょい酔いかも🍶 【 #新人vtuber 】【ぷろのゔぁ】#ユウおんらいぶ",
+    "date": "2026-02-28T21:58:01.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_minato_yu_-320x180.jpg"
   }
 ]

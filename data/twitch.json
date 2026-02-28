@@ -146,9 +146,10 @@
     "name": "銘兎目あう",
     "twitchid": "Metome_Au",
     "title": "【スト６】1602MR～Mケン🥋 久しぶりのカスタム参加型🎶1人1先👊 初見さんも大歓迎✨",
-    "date": "2026-02-28T21:34:43.000+09:00",
-    "status": "live",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_Metome_Au-320x180.jpg"
+    "date": "2026-02-28T21:34:49.000+09:00",
+    "status": "archive",
+    "channelIcon": "https://yt3.googleusercontent.com/VB97J8AMHex_rkfd6hDhfiGhhVvrL-NNkseP2mMYSWh75sxA_oXctmxK5tV4FYgkM17RUAx6GQ",
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/0e45f9521fd9f5412fbf_metome_au_315602031859_1772282083//thumb/thumb0-320x180.jpg"
   },
   {
     "name": "水透ユウ",
@@ -157,5 +158,13 @@
     "date": "2026-02-28T21:58:01.000+09:00",
     "status": "live",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_minato_yu_-320x180.jpg"
+  },
+  {
+    "name": "妖小琳",
+    "twitchid": "yaosyaorin",
+    "title": "デドバ",
+    "date": "2026-03-01T00:50:16.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_yaosyaorin-320x180.jpg"
   }
 ]

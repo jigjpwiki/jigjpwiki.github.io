@@ -1,15 +1,5 @@
 [
   {
-    "name": "暁月クララ",
-    "youtubeid": "UCn4XvlTXjGSvDynpxpOYZPQ",
-    "title": "『 V 』 / HIMEHINA【#踊ってみた】#ヴィー #vtuber #暁月クララ #パレプロ",
-    "date": "2026-02-28T02:46:08.000+09:00",
-    "status": "archive",
-    "thumbnail": "https://i.ytimg.com/vi/dO9AtLG0tis/mqdefault.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/8tcStp-WzdZPtf6bPq1DtUnFSd2Eq5AppSd3_CEQ7hNNpnRND8InaWdPCz6T1wIWWkGJuFrbT94",
-    "url": "https://www.youtube.com/watch?v=dO9AtLG0tis"
-  },
-  {
     "name": "変幻リメ",
     "youtubeid": "UC5bCRde8xRrNS7s6GjCNCyQ",
     "title": "【#REPO】警察メンバーで緊急REPO配信【変幻リメ】",
@@ -1280,6 +1270,16 @@
     "url": "https://www.youtube.com/watch?v=67_S--fH1yE"
   },
   {
+    "name": "しーはむ",
+    "youtubeid": "UC5xSDiB2WG4pO_zUZ_t-n0Q",
+    "title": "〘 バイオ9 〙鼓膜の準備は出来てるか？超ビビリがゆく#2〘BIOHAZARD requiem│しーはむ│レクイエム〙",
+    "date": "2026-03-02T21:30:42.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/zwrvfkUWDIs/mqdefault.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/y0zP0Uz7HSLx5dv3xo488Suxk8rJQQUC1wXaymjUBIQIwa25WlVu_VmrsT1xAyVD-jgeL7hs",
+    "url": "https://www.youtube.com/watch?v=zwrvfkUWDIs"
+  },
+  {
     "name": "暁月クララ",
     "youtubeid": "UCn4XvlTXjGSvDynpxpOYZPQ",
     "title": "✧︎*.〖 MIMESIS┊︎クララ視点 〗偽物くーちゃんも愛して？？？？？⋆꙳〖#暁月クララ┊︎#パレプロ〗",
@@ -1370,6 +1370,46 @@
     "url": "https://www.youtube.com/watch?v=jDv8OOgSf9I"
   },
   {
+    "name": "愛上オハナ",
+    "youtubeid": "UCwxQdxFJW67WGv-s5_z030w",
+    "title": "【新人Vtuber】すきなアメ教えて！ゆるお歌するかも　深夜のちょっとだけゆる雑談【パレデミア学園】",
+    "date": "2026-03-03T00:08:52.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/Hk1vdMX7Gas/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/neZ2Mw2PcuimtH172AaHAlm5eKk_O17aEJ8aMGhme708zPqxyZB6QhS89qzSt30uXnGLLbgdliw",
+    "url": "https://www.youtube.com/watch?v=Hk1vdMX7Gas"
+  },
+  {
+    "name": "天辻ゆらぐ",
+    "youtubeid": "UCeOFQCn_QZJMTszlRYRg3rQ",
+    "title": "【話題の新作ゲーム】ペンギンウォーズ🐧実況プレイ🎮️あなたのお姉さんアイドルVtuber🪼💜初見歓迎✨️【天辻ゆらぐ/パレデミア学園】 #新人Vtuber #ゆらぐっどたいむ",
+    "date": "2026-03-03T01:36:23.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/kTj-IHOu_9A/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/4AFFu60kFJqix-OhtDW3EJdQ0jQa1LrK56tGpvqvbGodMQFpkH-_qtvL_66dPGD3kl4LW9N4",
+    "url": "https://www.youtube.com/watch?v=kTj-IHOu_9A"
+  },
+  {
+    "name": "七音うら",
+    "youtubeid": "UCv2IYO-4waCpHvn50SWWY2A",
+    "title": "【#雑談配信 】おめめかゆかゆしょぼしょぼ雑談。【七音うら】",
+    "date": "2026-03-03T01:46:44.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/yJ9mAf7_G6o/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/T655ATpSd2gkjZBrokvlkaUH0f5-fCpQdcJpwxmmNdy6fxCYffAlq2sMhPOtFk_CvVyOkEPY8Q",
+    "url": "https://www.youtube.com/watch?v=yJ9mAf7_G6o"
+  },
+  {
+    "name": "犬丸なでこ",
+    "youtubeid": "UCdJmJxMfXrlnZabUkuss2EA",
+    "title": "【歌枠】深夜わんわ～ん【犬丸なでこ/パレデミア学園】",
+    "date": "2026-03-03T01:52:51.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/79pqBEG-tG0/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/OQpHijB1HDVezkvjNufbM9PmR9kbhUe1mfnSRqJ67l-R34sAc4BhYmQ2U7C-SapKAtcOk_Bp",
+    "url": "https://www.youtube.com/watch?v=79pqBEG-tG0"
+  },
+  {
     "name": "妖小琳",
     "youtubeid": "UC6eopxuX7lx8GnpkntObt1w",
     "title": "【#雑談 /FreeTalk】まったり朝雑談【妖小琳/Vtuber】",
@@ -1428,6 +1468,16 @@
     "thumbnail": "https://i.ytimg.com/vi/-4J-BOOqh14/mqdefault_live.jpg",
     "channelIcon": "https://yt3.googleusercontent.com/Ji8DJgyzWKUbbeWlYgFfsCZtyiGZ-zM597otZBcFnIoEVIw7284GbNbBQcALgEKwqvk8OXNZLA",
     "url": "https://www.youtube.com/watch?v=-4J-BOOqh14"
+  },
+  {
+    "name": "夏渚まはろ",
+    "youtubeid": "UC_a00ml_EVDXSrtY8ZuyqGQ",
+    "title": "【#NEWTOWN￤クリップ鑑賞会Day2】クリップ鑑賞会！妖縁ノ宴とドーナツ屋と競輪の思い出【#夏渚まはろ￤#パレプロ】",
+    "date": "2026-03-03T21:00:00.000+09:00",
+    "status": "upcoming",
+    "thumbnail": "https://i.ytimg.com/vi/39PLhTOcnVU/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/iktv-39nC7NDASD1WeXms-DEuHuVqB5RhwTtdDe26w-BCvqf6yq3r_8zBiv2i2CfNXCK0uE8",
+    "url": "https://www.youtube.com/watch?v=39PLhTOcnVU"
   },
   {
     "name": "しーはむ",

@@ -1,55 +1,5 @@
 [
   {
-    "name": "鈴木沙透",
-    "youtubeid": "UCj5nRzNFXZn9GRhITRkKElA",
-    "title": "【VALORANT】ひっさびさ(※初心者)【パレデミア学園/鈴木沙透】",
-    "date": "2026-02-28T21:15:21.000+09:00",
-    "status": "live",
-    "thumbnail": "https://i.ytimg.com/vi/ckXXTeNvBo0/mqdefault.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/doWaEHgvIyGiFYS-kh_sISc4kxoKHfigCVy_DgtUJr3Pqwu4EIfaVD25ycH4FUg4gpTxUHWZbQ",
-    "url": "https://www.youtube.com/watch?v=ckXXTeNvBo0"
-  },
-  {
-    "name": "しーはむ",
-    "youtubeid": "UC5xSDiB2WG4pO_zUZ_t-n0Q",
-    "title": "〘シャドバWB〙何勝何敗？進化ネメシスでランクマへ旅立つ！〘VTuber│しーはむ│Shadowverse〙",
-    "date": "2026-02-28T21:30:00.000+09:00",
-    "status": "upcoming",
-    "thumbnail": "https://i.ytimg.com/vi/O766WBH_P7A/mqdefault_live.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/y0zP0Uz7HSLx5dv3xo488Suxk8rJQQUC1wXaymjUBIQIwa25WlVu_VmrsT1xAyVD-jgeL7hs",
-    "url": "https://www.youtube.com/watch?v=O766WBH_P7A"
-  },
-  {
-    "name": "堂下さとり",
-    "youtubeid": "UCBq6MSUL-Ermvnoj3PtX7Iw",
-    "title": "手描き＆アカペララジオ体操【中級者向け】",
-    "date": "2026-02-28T21:40:12.000+09:00",
-    "status": "archive",
-    "thumbnail": "https://i.ytimg.com/vi/BkNbUkFjXww/mqdefault.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/eW_Hug0M6zFk9QSbAmOUWLMSfzBlCHmes-8yAksvfUNzyLgY6TSsE_eW8ncfE4bHYZXKoTWxmQ",
-    "url": "https://www.youtube.com/watch?v=BkNbUkFjXww"
-  },
-  {
-    "name": "月皇ちな",
-    "youtubeid": "UCQ9ojibvAX4UXCMeDzuc68g",
-    "title": "〖ペルソナ3 リロード #1〗完全初見✨神ゲーと噂のペルソナを遊び尽くす！〖月皇ちな〗",
-    "date": "2026-02-28T22:00:00.000+09:00",
-    "status": "upcoming",
-    "thumbnail": "https://i.ytimg.com/vi/VVoXBJnabk0/mqdefault_live.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/dPtSb9jgOlWAvy3_pEFIVzTc5iOd4OGhJQIVwjT6RpMAjOmJQHDzs0g2gYCjNEnlpcgQO8fb5-k",
-    "url": "https://www.youtube.com/watch?v=VVoXBJnabk0"
-  },
-  {
-    "name": "天透あわ",
-    "youtubeid": "UCXI0W_Os-BCIngpCb1YnOow",
-    "title": "【実況】夢でつながる、不思議な夜のお話『Green Light』",
-    "date": "2026-02-28T22:00:00.000+09:00",
-    "status": "upcoming",
-    "thumbnail": "https://i.ytimg.com/vi/rfVPMuQ72oc/mqdefault_live.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/Me8I_Op8OlIy8Vuj387_Hdi6gnrZ-qiY1yDDt1Q5yKMKA51ISagT76HE01gw8xbLcef0vpsPgoc",
-    "url": "https://www.youtube.com/watch?v=rfVPMuQ72oc"
-  },
-  {
     "name": "犬丸なでこ",
     "youtubeid": "UCdJmJxMfXrlnZabUkuss2EA",
     "title": "【雑談】学内イベントありがとうございました！【犬丸なでこ/パレデミア学園】",

@@ -1,14 +1,5 @@
 [
   {
-    "name": "なかもとおまち",
-    "twitchid": "41futon",
-    "title": "【ELDEN RING】🔰つるはしでいく！火山館！振る星の成獣倒したいなの気持ち※ビッツ禁止",
-    "date": "2026-03-01T15:19:42.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://yt3.googleusercontent.com/h8jNjVckVf08zSV6wdhQ38Fw9OH7kucAprlJsi9w0YdDIL8_Kcv0tHY-1cK8jPK_jRLSJb3t_Q",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/05a876ae849a43dd169a_41futon_315546380785_1772345976//thumb/thumb0-320x180.jpg"
-  },
-  {
     "name": "水透ユウ",
     "twitchid": "minato_yu_",
     "title": "【 #R6SX 】🔴参加型 1vs1練習相手募or アンランク ※FBくれる方でお願いします ※指示米じゃないよ 【 #新人vtuber 】【ぷろのゔぁ】#ユウおんらいぶ",
@@ -160,5 +151,21 @@
     "status": "archive",
     "channelIcon": "https://yt3.googleusercontent.com/y0zP0Uz7HSLx5dv3xo488Suxk8rJQQUC1wXaymjUBIQIwa25WlVu_VmrsT1xAyVD-jgeL7hs",
     "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/8e9ead1bc6da84a8eab4_siyham_315618258675_1772590216//thumb/thumb0-320x180.jpg"
+  },
+  {
+    "name": "妖小琳",
+    "twitchid": "yaosyaorin",
+    "title": "初心者OW",
+    "date": "2026-03-04T14:30:41.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_yaosyaorin-320x180.jpg"
+  },
+  {
+    "name": "なかもとおまち",
+    "twitchid": "41futon",
+    "title": "【スト６】 使用キャラ選考会会場Day2です。",
+    "date": "2026-03-04T15:13:25.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_41futon-320x180.jpg"
   }
 ]

@@ -1,14 +1,5 @@
 [
   {
-    "name": "火乃晴るい",
-    "twitchid": "hinoha_rui",
-    "title": "【 #VALORANT 】ｿﾛﾗﾝｸ ｺﾞｰ",
-    "date": "2026-03-02T20:58:23.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://yt3.googleusercontent.com/8vDFqOVNprKqFE0o7EecXyQleBXIibeJZpXpSgjm5msh4Yd0S8hTsbmYZyOBXa3bUEgBJHZt1w",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/63ac2f6e0b70a3308690_hinoha_rui_315552143729_1772452697//thumb/thumb0-320x180.jpg"
-  },
-  {
     "name": "李じゅぴ汰",
     "twitchid": "lee_jupita",
     "title": "【Ambidextro】1人で2人分操作するゲームやるぞぉ！！！",
@@ -169,5 +160,13 @@
     "status": "archive",
     "channelIcon": "https://yt3.googleusercontent.com/QQqec9A1J7eLk9RrRYD9vvk51BBJzcE1leGkU9n4YkwHqht9gmGT1ktmSlKItQtbuMSGuklAFxM",
     "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/d48f383aa2150d721dc1_lee_jupita_315623886195_1772700089//thumb/thumb0-320x180.jpg"
+  },
+  {
+    "name": "水透ユウ",
+    "twitchid": "minato_yu_",
+    "title": "【 #スト6 】こちら1億万年ぶりに起動したマスターブランカ 【水透ユウ/ぷろのゔぁ】",
+    "date": "2026-03-05T20:38:55.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_minato_yu_-320x180.jpg"
   }
 ]

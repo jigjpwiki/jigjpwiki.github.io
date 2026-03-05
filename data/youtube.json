@@ -1,33 +1,13 @@
 [
   {
-    "name": "李じゅぴ汰",
-    "youtubeid": "UCHsAAyHJhPXuLS6N3Kig6PQ",
-    "title": "【Ambidextro】1人で2人分操作するゲームやるぞぉ！！！",
-    "date": "2026-03-02T22:12:44.000+09:00",
-    "status": "live",
-    "thumbnail": "https://i.ytimg.com/vi/P9ZvfnrweYc/mqdefault_live.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/QQqec9A1J7eLk9RrRYD9vvk51BBJzcE1leGkU9n4YkwHqht9gmGT1ktmSlKItQtbuMSGuklAFxM",
-    "url": "https://www.youtube.com/watch?v=P9ZvfnrweYc"
-  },
-  {
     "name": "香鳴ハノン",
     "youtubeid": "UCay6Y3oEoiC6ZEE2G0UZu_A",
     "title": "【#ハノ誕2026】告知あり✨お誕生日カウントダウン配信🎂🩵【#香鳴ハノン #パレプロ】",
-    "date": "2026-03-02T23:00:00.000+09:00",
-    "status": "upcoming",
-    "thumbnail": "https://i.ytimg.com/vi/RYfKpfV9nV8/mqdefault_live.jpg",
+    "date": "2026-03-02T23:12:26.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/RYfKpfV9nV8/mqdefault.jpg",
     "channelIcon": "https://yt3.googleusercontent.com/qvbeb9E-gYc822fxxzi6Ug5QyjhqZAWbUskHANcwDWP5W8iTsK3LcQJnjS4CVBuFJ6fONsM9F7M",
     "url": "https://www.youtube.com/watch?v=RYfKpfV9nV8"
-  },
-  {
-    "name": "愛上オハナ",
-    "youtubeid": "UCwxQdxFJW67WGv-s5_z030w",
-    "title": "勉強会で寝るなァァァァ！！！ #vtuber #shorts #睡眠",
-    "date": "2026-03-02T23:00:35.000+09:00",
-    "status": "archive",
-    "thumbnail": "https://i.ytimg.com/vi/KLzMj6uIQxc/mqdefault.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/neZ2Mw2PcuimtH172AaHAlm5eKk_O17aEJ8aMGhme708zPqxyZB6QhS89qzSt30uXnGLLbgdliw",
-    "url": "https://www.youtube.com/watch?v=KLzMj6uIQxc"
   },
   {
     "name": "愛染アネラ",
@@ -440,6 +420,16 @@
     "url": "https://www.youtube.com/watch?v=sAoFXMtupa8"
   },
   {
+    "name": "妖小琳",
+    "youtubeid": "UC6eopxuX7lx8GnpkntObt1w",
+    "title": "【#雑談 /FreeTalk】リスナーからヤバいもの届いた【妖小琳/Vtuber】",
+    "date": "2026-03-03T21:00:17.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/bbLCDn_HWEs/mqdefault.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/Ji8DJgyzWKUbbeWlYgFfsCZtyiGZ-zM597otZBcFnIoEVIw7284GbNbBQcALgEKwqvk8OXNZLA",
+    "url": "https://www.youtube.com/watch?v=bbLCDn_HWEs"
+  },
+  {
     "name": "鬼多見アユム",
     "youtubeid": "UCnrJK-sb3gSn3kRLkmpmzaw",
     "title": "【 #Valorant 】ゴールドの救急隊員です。ぼっちです【鬼多見アユム】",
@@ -738,6 +728,16 @@
     "thumbnail": "https://i.ytimg.com/vi/_bRWEnCBknA/mqdefault_live.jpg",
     "channelIcon": "https://yt3.googleusercontent.com/4AFFu60kFJqix-OhtDW3EJdQ0jQa1LrK56tGpvqvbGodMQFpkH-_qtvL_66dPGD3kl4LW9N4",
     "url": "https://www.youtube.com/watch?v=_bRWEnCBknA"
+  },
+  {
+    "name": "江波キョウカ",
+    "youtubeid": "UChpkyQ3O21OnkcMcgCoNHCg",
+    "title": "꒰ঌ #ダレカレ┆泣けると噂のゲームをプレイ！お父さんどこ！？おじさんだれぇ！？【 #江波キョウカ / パレプロ 】",
+    "date": "2026-03-04T18:00:31.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/SWEvVOejft0/mqdefault.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/pM4ZefnBFJ2qlBEqknYCFHdW6dLH29KptwG0OYSu1-mAVAIy5M1IjwpMwC24-A_v07nluGGrlQ",
+    "url": "https://www.youtube.com/watch?v=SWEvVOejft0"
   },
   {
     "name": "水透ユウ",
@@ -1350,6 +1350,56 @@
     "url": "https://www.youtube.com/watch?v=2CGps2mqtEg"
   },
   {
+    "name": "泡清みる",
+    "youtubeid": "UC0pz1TaDyqeO5p8_gbdeunw",
+    "title": "【第五人格】今シーズンはユニ４に行きたい心理学者使いのサバラン🪈【ぷろのゔぁ/泡清みる】",
+    "date": "2026-03-05T20:12:51.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/gNbFv3rZmRc/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/XefzBgTJORQ_8-p4C-a-57IHhaUNpY9becOfXRTDmQ4ezWFTtdBtXQ5H2tJlgUTnYBXUgwZ3dg",
+    "url": "https://www.youtube.com/watch?v=gNbFv3rZmRc"
+  },
+  {
+    "name": "香鳴ハノン",
+    "youtubeid": "UCay6Y3oEoiC6ZEE2G0UZu_A",
+    "title": "【耐久雑談】初めてのぬいぐるみ販売！ハノぬい50個売れるまで終われません【#パレプロ #香鳴ハノン】",
+    "date": "2026-03-05T20:18:15.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/nVQyIkevDZw/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/qvbeb9E-gYc822fxxzi6Ug5QyjhqZAWbUskHANcwDWP5W8iTsK3LcQJnjS4CVBuFJ6fONsM9F7M",
+    "url": "https://www.youtube.com/watch?v=nVQyIkevDZw"
+  },
+  {
+    "name": "七海ロナ",
+    "youtubeid": "UCIaZylf5L9MsCMOJX3BdTEg",
+    "title": "【雑談】3月生写真紹介！テーマはイースターです🐇🐣【パレプロ／七海ロナ】",
+    "date": "2026-03-05T20:28:39.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/pjRQMBOXzkQ/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/wi_loPPiitkzxiP0EiHomngWqVGTZQk1Dn4aI79VFWKLY0QbCTHz-FdjBxKEcQ1Jm0Ea_g257A",
+    "url": "https://www.youtube.com/watch?v=pjRQMBOXzkQ"
+  },
+  {
+    "name": "桜庭羽奈",
+    "youtubeid": "UCPgg_A08ksSYP-VivJGniRw",
+    "title": "高評価100を目指してます！初見さん大歓迎！🐻【新人VTuberの雑談／歌枠】🐻",
+    "date": "2026-03-05T20:32:19.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/hNlxT3wuwsw/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/04zALH6pYL7mkWILHajvBzfzg4hrwRCLBONme3K1PjuEeYJIRC6RYxPmJzVZRuN42skHEDNRGmo",
+    "url": "https://www.youtube.com/watch?v=hNlxT3wuwsw"
+  },
+  {
+    "name": "愛乃宮ゆめ",
+    "youtubeid": "UCttSjPiwPYpiPuCrgxK7c1g",
+    "title": "we were here forever【愛乃宮ゆめ/パレデミア学園】",
+    "date": "2026-03-05T20:59:45.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/NGFKgEqNRow/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/M01WvdgX_IfwIkwA4g0_gf9qo4fqF5U7pnXloNwOcL2XnTXXdF8UQ9HS2oyv21t-GXnIhBTWndk",
+    "url": "https://www.youtube.com/watch?v=NGFKgEqNRow"
+  },
+  {
     "name": "常磐カナメ",
     "youtubeid": "UCbNEgJIF_ADD9e8-q7SoxCg",
     "title": "【あつ森】#天才児ぴよ で共同作業♡【パレプロ/江波キョウカ・常磐カナメ】",
@@ -1390,6 +1440,36 @@
     "url": "https://www.youtube.com/watch?v=_waUfSK3K6k"
   },
   {
+    "name": "艶島カオル",
+    "youtubeid": "UC8k86ipkbrCC4ZpA2HU3jPg",
+    "title": "人の命って儚いよね💙！ねっみんな！【We Were Here Forever】",
+    "date": "2026-03-05T21:01:37.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/-gla5-Zz11o/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/lzteAfqbat5y-V0xiXVQZwWYWy5Jj3vCD-c4goMnmK-D-90KX33WL4Ylg76gJclf60txW7GHyQ",
+    "url": "https://www.youtube.com/watch?v=-gla5-Zz11o"
+  },
+  {
+    "name": "暁月クララ",
+    "youtubeid": "UCn4XvlTXjGSvDynpxpOYZPQ",
+    "title": "✧︎*.〖 復帰！ただいま！ 〗君からの「おかえり」が欲しい✨✨⋆꙳〖#暁月クララ┊︎#パレプロ〗",
+    "date": "2026-03-05T21:03:37.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/VQxzNDFKoWo/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/8tcStp-WzdZPtf6bPq1DtUnFSd2Eq5AppSd3_CEQ7hNNpnRND8InaWdPCz6T1wIWWkGJuFrbT94",
+    "url": "https://www.youtube.com/watch?v=VQxzNDFKoWo"
+  },
+  {
+    "name": "秋桜しゅお",
+    "youtubeid": "UCPjtwOeRQV5EFkCwUycZsgw",
+    "title": "【#雑談配信 】ばか大忙しな一週間を駆け抜けるぎゃう【秋桜しゅお/登龍門BOX】#新人vtuber",
+    "date": "2026-03-05T21:10:07.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/vpvQTjK6i10/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/WBGP05KaXeA21IzCbCeM0QHa0v9maVvVUBDZ2DyfTT62F1wGaW3hLOQBy1gCfuQfEnDNgwbsrQ",
+    "url": "https://www.youtube.com/watch?v=vpvQTjK6i10"
+  },
+  {
     "name": "しーはむ",
     "youtubeid": "UC5xSDiB2WG4pO_zUZ_t-n0Q",
     "title": "〘ポケモン/ファイアレッド〙人生縛りで行く!!全クリめざして…!!②〘VTuber│しーはむ│ポケットモンスター〙",
@@ -1400,6 +1480,16 @@
     "url": "https://www.youtube.com/watch?v=66mpdQm_-ig"
   },
   {
+    "name": "銘兎目あう",
+    "youtubeid": "UCpr-9ssUUgSb0EpDA8bRuTA",
+    "title": "【#龍が如く極3】知らない方がよかった…？#5 ※ネタバレあり【銘兎目あう】#銘兎目あう#VTuber #ゲーム配信 #新人Vtuber #shorts #龍が如く #龍が如く3外伝",
+    "date": "2026-03-05T21:39:17.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/kRvnfv_WUEk/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/VB97J8AMHex_rkfd6hDhfiGhhVvrL-NNkseP2mMYSWh75sxA_oXctmxK5tV4FYgkM17RUAx6GQ",
+    "url": "https://www.youtube.com/watch?v=kRvnfv_WUEk"
+  },
+  {
     "name": "春原なずな",
     "youtubeid": "UCW-iuU7g3BJnuQ1D3UkqeSA",
     "title": "【 P3R / ペルソナ３ リロード 】#12 今日は約束の日らしい！10月の満月が来るぞ！10月2日～※ネタバレ注意【 春原なずな / VTuber 】",
@@ -1408,6 +1498,56 @@
     "thumbnail": "https://i.ytimg.com/vi/4fVks6OH9pI/mqdefault_live.jpg",
     "channelIcon": "https://yt3.googleusercontent.com/0pD1c95Y9X0VrhzWtlf2SRPqdkesiuZxC8Hb5Mg9Xv1WWpQaFCmjITTK8-n5HlNsB-yDbAN4CZA",
     "url": "https://www.youtube.com/watch?v=4fVks6OH9pI"
+  },
+  {
+    "name": "桜樹美彩",
+    "youtubeid": "UCTwKpTFX1aAXD0xpBqYqTdg",
+    "title": "令和に感謝する平成のオタクVTuber🍀 #shorts #vtuber #桜樹美彩 #ネタ",
+    "date": "2026-03-05T22:01:00.000+09:00",
+    "status": "archive",
+    "thumbnail": "https://i.ytimg.com/vi/Y4riXSWnEN8/mqdefault.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/pDP2GuylW0RN1REDScFAlNklbXaPRqTm2mwT2F7dIo8xoYYFPfspsjGH_G3RagwlKVlQbdw95bY",
+    "url": "https://www.youtube.com/watch?v=Y4riXSWnEN8"
+  },
+  {
+    "name": "雛菊のん",
+    "youtubeid": "UChccV6U0Tkx9de4YjXbEelw",
+    "title": "歌枠切り抜き🎤こんな感じで歌枠やってるって話#shorts #vtuber #新人vtuber #おすすめにのりたい #歌枠 #切り抜き",
+    "date": "2026-03-05T22:01:44.000+09:00",
+    "status": "archive",
+    "thumbnail": "https://i.ytimg.com/vi/urJ_Jkt3eN8/mqdefault.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/OxvUqyZAoX4gIX91GOkYMIE2iYfD1ndRKGZbo4Ih8cDb5QuoXpqNJWZKpephYlI0zNiYjQptAQ",
+    "url": "https://www.youtube.com/watch?v=urJ_Jkt3eN8"
+  },
+  {
+    "name": "灯野ぺけ。",
+    "youtubeid": "UCldoz5HLh6BMW29HGnRpC0Q",
+    "title": "【Starsand Island 】#6 戦おう💥🏝️≪パレデミア学園 / 灯野ぺけ。🏮💥≫ #vtuber #ゲーム実況 #starsandisland",
+    "date": "2026-03-05T22:26:07.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/Viq1KcI6m50/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/fkb3ZihjrgGSVr5drGCJziRf-9EQ6AtqTswp3wNfS4xRMnVZKQ3WvcphIna7hTwOZpy5vq9UKg",
+    "url": "https://www.youtube.com/watch?v=Viq1KcI6m50"
+  },
+  {
+    "name": "瀬奈りるか",
+    "youtubeid": "UCWi_ztz8Xuz4XfzhoG6ZfyA",
+    "title": "【夜廻】完全初見プレイ🎮✨深夜に1人でお散歩するらしい？余裕すぎる🌙✨🐏頑張ってクリアします！【いい感じのところまで】＃せなりるライブ #パレデミア学園",
+    "date": "2026-03-05T22:30:50.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/yO84AMuLzi8/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/bM-okYT9oTq3M5dq33VSpidEiaC8MP2EoQXX2gNpgW7PAV7RSn1t7_2HghmCcAwrNxriAmMy",
+    "url": "https://www.youtube.com/watch?v=yO84AMuLzi8"
+  },
+  {
+    "name": "藤宮コトハ",
+    "youtubeid": "UCGndc74kfWb_A-8hZBG534Q",
+    "title": "【 Boxes: Lost Fragments 】 頭つかう？？いいえ、勘です。　【#パレプロ ／ #藤宮コトハ 】",
+    "date": "2026-03-05T22:46:07.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/bye46YpoT7A/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/rthBXvqjNFcVwEp-AWpiZDXnNjBodSXlsDTa-sjW6uR6Ssv3wuOw2dMXDZLlYaf_c4YiKfItHXU",
+    "url": "https://www.youtube.com/watch?v=bye46YpoT7A"
   },
   {
     "name": "変幻リメ",
@@ -1448,6 +1588,16 @@
     "thumbnail": "https://i.ytimg.com/vi/fXB52sz7_V4/mqdefault_live.jpg",
     "channelIcon": "https://yt3.googleusercontent.com/eVD8Ygm7KVyh3dvWnyebfYlbYpD13ZYQ-Bos8WdR5LDE61A3svHVHCLEY-rM3IQgw9O4uvdd",
     "url": "https://www.youtube.com/watch?v=fXB52sz7_V4"
+  },
+  {
+    "name": "夏渚まはろ",
+    "youtubeid": "UC_a00ml_EVDXSrtY8ZuyqGQ",
+    "title": "【3D化＆正規メンバー昇格記念】念願のアイドル研究生からの昇格！みんなでお祝いだ～！【#夏渚まはろ￤#パレプロ】",
+    "date": "2026-03-06T18:00:00.000+09:00",
+    "status": "upcoming",
+    "thumbnail": "https://i.ytimg.com/vi/p6ayJd3l0jE/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/iktv-39nC7NDASD1WeXms-DEuHuVqB5RhwTtdDe26w-BCvqf6yq3r_8zBiv2i2CfNXCK0uE8",
+    "url": "https://www.youtube.com/watch?v=p6ayJd3l0jE"
   },
   {
     "name": "常磐カナメ",
@@ -1548,5 +1698,15 @@
     "thumbnail": "https://i.ytimg.com/vi/NMatfcLjMnU/mqdefault_live.jpg",
     "channelIcon": "https://yt3.googleusercontent.com/ytc/AIdro_nuv43BXc-JNRM-omFed0brcXGTD8qvA8313ZeQa8PfviA",
     "url": "https://www.youtube.com/watch?v=NMatfcLjMnU"
+  },
+  {
+    "name": "Palette Project",
+    "youtubeid": "UC_cCW1xmXwRFp1tX-RD2X1Q",
+    "title": "🎁そのプレゼント、センスある？ホワイトデーお返し王!! 🍪【 #パレプロEX 】",
+    "date": "2026-03-10T20:00:00.000+09:00",
+    "status": "upcoming",
+    "thumbnail": "https://i.ytimg.com/vi/Fi1BPXhCzI4/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/ytc/AIdro_nuv43BXc-JNRM-omFed0brcXGTD8qvA8313ZeQa8PfviA",
+    "url": "https://www.youtube.com/watch?v=Fi1BPXhCzI4"
   }
 ]

@@ -1,25 +1,5 @@
 [
   {
-    "name": "犬丸なでこ",
-    "youtubeid": "UCdJmJxMfXrlnZabUkuss2EA",
-    "title": "【歌枠】こんにちわんわ！【犬丸なでこ/パレデミア学園】",
-    "date": "2026-03-04T11:39:32.000+09:00",
-    "status": "live",
-    "thumbnail": "https://i.ytimg.com/vi/8nrnOIV4taM/mqdefault_live.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/OQpHijB1HDVezkvjNufbM9PmR9kbhUe1mfnSRqJ67l-R34sAc4BhYmQ2U7C-SapKAtcOk_Bp",
-    "url": "https://www.youtube.com/watch?v=8nrnOIV4taM"
-  },
-  {
-    "name": "鬼多見アユム",
-    "youtubeid": "UCnrJK-sb3gSn3kRLkmpmzaw",
-    "title": "【#縦型配信 】雑談多めな歌枠 【鬼多見アユム】#shorts",
-    "date": "2026-03-04T12:00:10.000+09:00",
-    "status": "live",
-    "thumbnail": "https://i.ytimg.com/vi/OmDJ5Lf5RNo/mqdefault_live.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/5l_IDFvbCkoc_xXy5i5YH24NcAgRR9bYZM9hu30Hm8may2x-7GiLIxkQ3DHQ4vI9uKwRUcbR6Q",
-    "url": "https://www.youtube.com/watch?v=OmDJ5Lf5RNo"
-  },
-  {
     "name": "宇田わん",
     "youtubeid": "UCp45rWiRwgYZJUR4bQO-Xgw",
     "title": "【 ポケモンファイアレッド 】たぶん初見🔰ポケモンマスターに俺はなる‼️【 #宇田わん #新人VTuber 】",
@@ -1520,6 +1500,26 @@
     "url": "https://www.youtube.com/watch?v=Mp9GxdtwZlk"
   },
   {
+    "name": "堂下さとり",
+    "youtubeid": "UCBq6MSUL-Ermvnoj3PtX7Iw",
+    "title": "【黒歴史】小6の時の日記を読んで行く(ガチ)【パレデミア学園/堂下さとり】",
+    "date": "2026-03-07T11:49:15.000+09:00",
+    "status": "archive",
+    "thumbnail": "https://i.ytimg.com/vi/1d1gNC8fUGM/mqdefault.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/eW_Hug0M6zFk9QSbAmOUWLMSfzBlCHmes-8yAksvfUNzyLgY6TSsE_eW8ncfE4bHYZXKoTWxmQ",
+    "url": "https://www.youtube.com/watch?v=1d1gNC8fUGM"
+  },
+  {
+    "name": "藤森ちとせ",
+    "youtubeid": "UCAhdxmsdngH4noySdpVAVWQ",
+    "title": "【露天掘り雑談】4チャンク掘る配信⛏✨作業用にも😉ROM歓迎🎉【Minecraft】【#新人vtuber 】#ちとせらいぶ #パレデミア学園",
+    "date": "2026-03-07T13:00:00.000+09:00",
+    "status": "upcoming",
+    "thumbnail": "https://i.ytimg.com/vi/MGDYAyZmO1o/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/traR_yWe-AOGyM2wjo8h2FJO9JWBcbjfrL13X-umeD6BtNPopSZ2Q3YmdJq_5K9gWgHf_j64iQ",
+    "url": "https://www.youtube.com/watch?v=MGDYAyZmO1o"
+  },
+  {
     "name": "桜樹美彩",
     "youtubeid": "UCTwKpTFX1aAXD0xpBqYqTdg",
     "title": "【 歌枠 / karaoke 】昭和と平成を感じて🌸春の歌🎤 #三つ編みで結ぶ歌枠リレー 🍀 初見＆ROM大歓迎🎉singing stream🐤  #vtuber #桜樹美彩 #新人vtuber",
@@ -1528,6 +1528,16 @@
     "thumbnail": "https://i.ytimg.com/vi/FdOY1jciTZs/mqdefault_live.jpg",
     "channelIcon": "https://yt3.googleusercontent.com/pDP2GuylW0RN1REDScFAlNklbXaPRqTm2mwT2F7dIo8xoYYFPfspsjGH_G3RagwlKVlQbdw95bY",
     "url": "https://www.youtube.com/watch?v=FdOY1jciTZs"
+  },
+  {
+    "name": "藤森ちとせ",
+    "youtubeid": "UCAhdxmsdngH4noySdpVAVWQ",
+    "title": "【じゃんたま段位上げ配信】リーチしたい初心者じゃんたま配信【雀魂】【#新人vtuber 】#ちとせらいぶ #パレデミア学園",
+    "date": "2026-03-07T18:00:00.000+09:00",
+    "status": "upcoming",
+    "thumbnail": "https://i.ytimg.com/vi/xIz7g2turAY/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/traR_yWe-AOGyM2wjo8h2FJO9JWBcbjfrL13X-umeD6BtNPopSZ2Q3YmdJq_5K9gWgHf_j64iQ",
+    "url": "https://www.youtube.com/watch?v=xIz7g2turAY"
   },
   {
     "name": "月皇ちな",

@@ -1,15 +1,5 @@
 [
   {
-    "name": "堂下さとり",
-    "youtubeid": "UCBq6MSUL-Ermvnoj3PtX7Iw",
-    "title": "【黒歴史】小6の時の日記を読んで行く(ガチ)【パレデミア学園/堂下さとり】",
-    "date": "2026-03-07T11:49:15.000+09:00",
-    "status": "archive",
-    "thumbnail": "https://i.ytimg.com/vi/1d1gNC8fUGM/mqdefault.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/eW_Hug0M6zFk9QSbAmOUWLMSfzBlCHmes-8yAksvfUNzyLgY6TSsE_eW8ncfE4bHYZXKoTWxmQ",
-    "url": "https://www.youtube.com/watch?v=1d1gNC8fUGM"
-  },
-  {
     "name": "藤森ちとせ",
     "youtubeid": "UCAhdxmsdngH4noySdpVAVWQ",
     "title": "【露天掘り雑談】4チャンク掘る配信⛏✨作業用にも😉ROM歓迎🎉【Minecraft】【#新人vtuber 】#ちとせらいぶ #パレデミア学園",
@@ -158,6 +148,16 @@
     "thumbnail": "https://i.ytimg.com/vi/N1nITYXAyE0/mqdefault.jpg",
     "channelIcon": "https://yt3.googleusercontent.com/Me8I_Op8OlIy8Vuj387_Hdi6gnrZ-qiY1yDDt1Q5yKMKA51ISagT76HE01gw8xbLcef0vpsPgoc",
     "url": "https://www.youtube.com/watch?v=N1nITYXAyE0"
+  },
+  {
+    "name": "水透ユウ",
+    "youtubeid": "UCOah55SQYynzPgQQ4wxuzkA",
+    "title": "【1周年記念歌枠】歌枠初心者2回目の歌枠【 #水透ユウ 💎🫧】　#歌枠 #新人vtuber #vtuber",
+    "date": "2026-03-07T19:38:26.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/Mp9GxdtwZlk/mqdefault.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/eVD8Ygm7KVyh3dvWnyebfYlbYpD13ZYQ-Bos8WdR5LDE61A3svHVHCLEY-rM3IQgw9O4uvdd",
+    "url": "https://www.youtube.com/watch?v=Mp9GxdtwZlk"
   },
   {
     "name": "常磐カナメ",
@@ -1458,6 +1458,36 @@
     "thumbnail": "https://i.ytimg.com/vi/uFOjyu2C96E/mqdefault_live.jpg",
     "channelIcon": "https://yt3.googleusercontent.com/8I1SuqBXvb4dRY9bcXYc8xxSxL-L2CAe4YvBx2x3kOkyboXRq-G0rVo7pYflUmvo0UKIyxnlRA",
     "url": "https://www.youtube.com/watch?v=uFOjyu2C96E"
+  },
+  {
+    "name": "藤森ちとせ",
+    "youtubeid": "UCAhdxmsdngH4noySdpVAVWQ",
+    "title": "✨12月28日日曜日✨ 今日の誕生花は #ロウバイ ！ #誕生花 #花言葉 #藤森ちとせ #蝋梅",
+    "date": "2026-03-10T08:15:06.000+09:00",
+    "status": "archive",
+    "thumbnail": "https://i.ytimg.com/vi/m56kYsfxPMo/mqdefault.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/traR_yWe-AOGyM2wjo8h2FJO9JWBcbjfrL13X-umeD6BtNPopSZ2Q3YmdJq_5K9gWgHf_j64iQ",
+    "url": "https://www.youtube.com/watch?v=m56kYsfxPMo"
+  },
+  {
+    "name": "七扇ヲトメ",
+    "youtubeid": "UC2hU8mFmV7f2ELJUGJKOtTw",
+    "title": "ヲトメ三泊四日で出張中　#新人vtuber  #ゲーム実況  #出張 　#businesstrip",
+    "date": "2026-03-10T12:01:13.000+09:00",
+    "status": "archive",
+    "thumbnail": "https://i.ytimg.com/vi/zG-nx2Y7uYg/mqdefault.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/CdsPDDWH5A6_0NcvN9NA3dvi2ptoQ_A-b2kS4p8S3s9KbdBiH-IOqTmkNclbbjlaUCBtYKDdrPY",
+    "url": "https://www.youtube.com/watch?v=zG-nx2Y7uYg"
+  },
+  {
+    "name": "堂下さとり",
+    "youtubeid": "UCBq6MSUL-Ermvnoj3PtX7Iw",
+    "title": "【雑談】料理配信リクエスト【パレデミア学園/堂下さとり】",
+    "date": "2026-03-10T12:27:45.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/xFdP5vfXfso/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/eW_Hug0M6zFk9QSbAmOUWLMSfzBlCHmes-8yAksvfUNzyLgY6TSsE_eW8ncfE4bHYZXKoTWxmQ",
+    "url": "https://www.youtube.com/watch?v=xFdP5vfXfso"
   },
   {
     "name": "泡清みる",

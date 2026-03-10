@@ -1,15 +1,5 @@
 [
   {
-    "name": "虎島めら。",
-    "youtubeid": "UCqewFfi_wwydw6fpazmlAFA",
-    "title": "雑談枠",
-    "date": "2026-03-07T15:15:38.000+09:00",
-    "status": "live",
-    "thumbnail": "https://i.ytimg.com/vi/gZyZpto3rcU/mqdefault_live.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/6nfq-sTwa1PCHMrmFq5uNijG5PcQ8BRheGNXHc6GEMlBustwPyvfLIPWtxaHpKOhdXU1tFTnfA",
-    "url": "https://www.youtube.com/watch?v=gZyZpto3rcU"
-  },
-  {
     "name": "フローレ・ブランカ",
     "youtubeid": "UCNb9zRVc1coFKxJAn9lVtsw",
     "title": "【歌枠】歌いたいと思ったんだ！【フローレ・ブランカ/パレデミア学園】",
@@ -1460,6 +1450,36 @@
     "url": "https://www.youtube.com/watch?v=xFdP5vfXfso"
   },
   {
+    "name": "藤森ちとせ",
+    "youtubeid": "UCAhdxmsdngH4noySdpVAVWQ",
+    "title": "【建築雑談】建築って何でしょうね～？🏠✨作業用にも😉ROM歓迎🎉【Minecraft】【#新人vtuber 】#ちとせらいぶ #パレデミア学園",
+    "date": "2026-03-10T12:59:51.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/64FHpEiMRp0/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/traR_yWe-AOGyM2wjo8h2FJO9JWBcbjfrL13X-umeD6BtNPopSZ2Q3YmdJq_5K9gWgHf_j64iQ",
+    "url": "https://www.youtube.com/watch?v=64FHpEiMRp0"
+  },
+  {
+    "name": "火乃晴るい",
+    "youtubeid": "UCVI8oEcv0MArpjPdwlRgYRw",
+    "title": "【バイオRE2】いきなり襲われて大絶叫！？ #biohazard2remake #バイオハザードRE2",
+    "date": "2026-03-10T13:39:02.000+09:00",
+    "status": "archive",
+    "thumbnail": "https://i.ytimg.com/vi/nl4DPjfFSzc/mqdefault.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/8vDFqOVNprKqFE0o7EecXyQleBXIibeJZpXpSgjm5msh4Yd0S8hTsbmYZyOBXa3bUEgBJHZt1w",
+    "url": "https://www.youtube.com/watch?v=nl4DPjfFSzc"
+  },
+  {
+    "name": "瀬奈りるか",
+    "youtubeid": "UCWi_ztz8Xuz4XfzhoG6ZfyA",
+    "title": "【大決戦】ドレスヒナ絆100記念🌟ドヒナ全会心TLを爆発チケット5枚使ってやってみる🪄💫会心宝くじ当たりますように！✨【ブルーアーカイブ】＃せなりるライブ",
+    "date": "2026-03-10T15:46:11.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/ahaQyTS64vY/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/bM-okYT9oTq3M5dq33VSpidEiaC8MP2EoQXX2gNpgW7PAV7RSn1t7_2HghmCcAwrNxriAmMy",
+    "url": "https://www.youtube.com/watch?v=ahaQyTS64vY"
+  },
+  {
     "name": "泡清みる",
     "youtubeid": "UC0pz1TaDyqeO5p8_gbdeunw",
     "title": "【第五人格】今日は普通にグリフォンランクマに行きます😏【ぷろのゔぁ/泡清みる】",
@@ -1488,6 +1508,16 @@
     "thumbnail": "https://i.ytimg.com/vi/O076tA7wahk/mqdefault_live.jpg",
     "channelIcon": "https://yt3.googleusercontent.com/iktv-39nC7NDASD1WeXms-DEuHuVqB5RhwTtdDe26w-BCvqf6yq3r_8zBiv2i2CfNXCK0uE8",
     "url": "https://www.youtube.com/watch?v=O076tA7wahk"
+  },
+  {
+    "name": "堂下さとり",
+    "youtubeid": "UCBq6MSUL-Ermvnoj3PtX7Iw",
+    "title": "【コラボ】雨海まる＆堂下さとり【さとまる水産】",
+    "date": "2026-03-10T21:00:00.000+09:00",
+    "status": "upcoming",
+    "thumbnail": "https://i.ytimg.com/vi/3wxCpmXMUKw/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/eW_Hug0M6zFk9QSbAmOUWLMSfzBlCHmes-8yAksvfUNzyLgY6TSsE_eW8ncfE4bHYZXKoTWxmQ",
+    "url": "https://www.youtube.com/watch?v=3wxCpmXMUKw"
   },
   {
     "name": "しーはむ",

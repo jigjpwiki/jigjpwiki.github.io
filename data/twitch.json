@@ -1,23 +1,5 @@
 [
   {
-    "name": "銘兎目あう",
-    "twitchid": "Metome_Au",
-    "title": "【スト６】毎日配信365日目記念✨カスタム参加型🥋誰でもOK🐰🌷",
-    "date": "2026-03-08T19:59:16.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://yt3.googleusercontent.com/VB97J8AMHex_rkfd6hDhfiGhhVvrL-NNkseP2mMYSWh75sxA_oXctmxK5tV4FYgkM17RUAx6GQ",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/b0864476969d609c62b2_metome_au_315588166386_1772967550//thumb/thumb0-320x180.jpg"
-  },
-  {
-    "name": "火乃晴るい",
-    "twitchid": "hinoha_rui",
-    "title": "【 マシュマロ雑談 】✨一周年✨マシュマロを読みます！るいるいの珍しい雑談配信",
-    "date": "2026-03-08T20:15:41.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://yt3.googleusercontent.com/8vDFqOVNprKqFE0o7EecXyQleBXIibeJZpXpSgjm5msh4Yd0S8hTsbmYZyOBXa3bUEgBJHZt1w",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/b35cf0620e38e9a48d7d_hinoha_rui_315588249842_1772968535//thumb/thumb0-320x180.jpg"
-  },
-  {
     "name": "李じゅぴ汰",
     "twitchid": "lee_jupita",
     "title": "【雑談】デビュー1周年らしいよ！ましゅまろもぐもぐ【縦型/李じゅぴ汰】",
@@ -115,5 +97,13 @@
     "status": "archive",
     "channelIcon": "https://yt3.googleusercontent.com/pDP2GuylW0RN1REDScFAlNklbXaPRqTm2mwT2F7dIo8xoYYFPfspsjGH_G3RagwlKVlQbdw95bY",
     "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d1m7jfoe9zdc1j/0a40e0e5c79486f6a90a_sakuragimisa_v_318085228889_1773180026//thumb/thumb0-320x180.jpg"
+  },
+  {
+    "name": "水透ユウ",
+    "twitchid": "minato_yu_",
+    "title": "【解放】確定申告倒してきたお姉さんのsolo rank 【水透ユウ/ぷろのゔぁ】#R6S #ユウおんらいぶ",
+    "date": "2026-03-11T19:26:46.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_minato_yu_-320x180.jpg"
   }
 ]

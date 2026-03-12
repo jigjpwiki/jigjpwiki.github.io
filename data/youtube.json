@@ -1,25 +1,5 @@
 [
   {
-    "name": "犬丸なでこ",
-    "youtubeid": "UCdJmJxMfXrlnZabUkuss2EA",
-    "title": "【歌枠】おは歌わんね～【犬丸なでこ/パレデミア学園】",
-    "date": "2026-03-10T06:21:01.000+09:00",
-    "status": "live",
-    "thumbnail": "https://i.ytimg.com/vi/81HlsnFFOpI/mqdefault_live.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/OQpHijB1HDVezkvjNufbM9PmR9kbhUe1mfnSRqJ67l-R34sAc4BhYmQ2U7C-SapKAtcOk_Bp",
-    "url": "https://www.youtube.com/watch?v=81HlsnFFOpI"
-  },
-  {
-    "name": "堂下さとり",
-    "youtubeid": "UCBq6MSUL-Ermvnoj3PtX7Iw",
-    "title": "【rラジオ体操】あさかつ【パレデミア学園/堂下さとり】",
-    "date": "2026-03-10T06:24:05.000+09:00",
-    "status": "live",
-    "thumbnail": "https://i.ytimg.com/vi/b58Pa7Cqcmw/mqdefault_live.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/eW_Hug0M6zFk9QSbAmOUWLMSfzBlCHmes-8yAksvfUNzyLgY6TSsE_eW8ncfE4bHYZXKoTWxmQ",
-    "url": "https://www.youtube.com/watch?v=b58Pa7Cqcmw"
-  },
-  {
     "name": "桜樹美彩",
     "youtubeid": "UCTwKpTFX1aAXD0xpBqYqTdg",
     "title": "【 朝活 / ニュース 】３月10日（火）⏰ AM7:00『ちょこっと』朝活ニュース🍀天気予報/時事ニュース🍁初見＆ROM勢大歓迎🐥 #vtuber #みさライなう #桜樹美彩 #新人vtuber",
@@ -1368,6 +1348,26 @@
     "thumbnail": "https://i.ytimg.com/vi/wEMu220linU/mqdefault_live.jpg",
     "channelIcon": "https://yt3.googleusercontent.com/neZ2Mw2PcuimtH172AaHAlm5eKk_O17aEJ8aMGhme708zPqxyZB6QhS89qzSt30uXnGLLbgdliw",
     "url": "https://www.youtube.com/watch?v=wEMu220linU"
+  },
+  {
+    "name": "久堂れしあ",
+    "youtubeid": "UC0O_8Ssx5exycwGvuF5S6_Q",
+    "title": "【雑談】〜結局歌枠になるやつ〜",
+    "date": "2026-03-13T04:19:02.000+09:00",
+    "status": "archive",
+    "thumbnail": "https://i.ytimg.com/vi/pMpFFPnWctM/mqdefault.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/0FA2IgWHnUEwOi919LsjtnX-V-MHLKf-wBQMhEkybsNiifpMfrlQ1JAPDf4kb5GLaLna8BmeNA",
+    "url": "https://www.youtube.com/watch?v=pMpFFPnWctM"
+  },
+  {
+    "name": "堂下さとり",
+    "youtubeid": "UCBq6MSUL-Ermvnoj3PtX7Iw",
+    "title": "【雑談】ohayou【パレデミア学園/堂下さとり】",
+    "date": "2026-03-13T06:23:45.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/BAs7arbVrzg/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/eW_Hug0M6zFk9QSbAmOUWLMSfzBlCHmes-8yAksvfUNzyLgY6TSsE_eW8ncfE4bHYZXKoTWxmQ",
+    "url": "https://www.youtube.com/watch?v=BAs7arbVrzg"
   },
   {
     "name": "桜樹美彩",

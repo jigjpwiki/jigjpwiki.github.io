@@ -1,14 +1,5 @@
 [
   {
-    "name": "銘兎目あう",
-    "twitchid": "Metome_Au",
-    "title": "【コラボアケコンお披露目会】販売スタートだよ🐰🌷#NextOneStep #あうのコラボアケコン #PR",
-    "date": "2026-03-14T20:58:58.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://yt3.googleusercontent.com/VB97J8AMHex_rkfd6hDhfiGhhVvrL-NNkseP2mMYSWh75sxA_oXctmxK5tV4FYgkM17RUAx6GQ",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/faaf813904b09c8df1d8_metome_au_315614963826_1773489532//thumb/thumb0-320x180.jpg"
-  },
-  {
     "name": "なかもとおまち",
     "twitchid": "41futon",
     "title": "【コラボアケコンお披露目会】発売したぞお！！カメラ付けて触っていくよ～！#NextOneStep #なかもとおまちコラボアケコン #PR",
@@ -124,5 +115,21 @@
     "status": "archive",
     "channelIcon": "https://yt3.googleusercontent.com/y0zP0Uz7HSLx5dv3xo488Suxk8rJQQUC1wXaymjUBIQIwa25WlVu_VmrsT1xAyVD-jgeL7hs",
     "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/a85bbd50647104adf8bf_siyham_315626677618_1773713634//thumb/thumb0-320x180.jpg"
+  },
+  {
+    "name": "銘兎目あう",
+    "twitchid": "Metome_Au",
+    "title": "【スト６】Mケン1530MR～👊ランクや～る～よ～🥊🥋ﾃﾞｲﾔﾌﾝｯ",
+    "date": "2026-03-17T20:30:52.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_Metome_Au-320x180.jpg"
+  },
+  {
+    "name": "なかもとおまち",
+    "twitchid": "41futon",
+    "title": "ジェイミー使いが報われる日が来たって本当なの？",
+    "date": "2026-03-17T20:49:26.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_41futon-320x180.jpg"
   }
 ]

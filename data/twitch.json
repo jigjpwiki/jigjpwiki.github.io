@@ -2,15 +2,6 @@
   {
     "name": "なかもとおまち",
     "twitchid": "41futon",
-    "title": "【コラボアケコンお披露目会】発売したぞお！！カメラ付けて触っていくよ～！#NextOneStep #なかもとおまちコラボアケコン #PR",
-    "date": "2026-03-14T22:00:53.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://yt3.googleusercontent.com/h8jNjVckVf08zSV6wdhQ38Fw9OH7kucAprlJsi9w0YdDIL8_Kcv0tHY-1cK8jPK_jRLSJb3t_Q",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/688f2d73d78e43ff5a1f_41futon_315607380721_1773493247//thumb/thumb0-320x180.jpg"
-  },
-  {
-    "name": "なかもとおまち",
-    "twitchid": "41futon",
     "title": "CC現地最高だったし、コラボレバレスも触ってみる",
     "date": "2026-03-14T23:36:49.000+09:00",
     "status": "archive",
@@ -131,5 +122,39 @@
     "date": "2026-03-17T20:49:26.000+09:00",
     "status": "live",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_41futon-320x180.jpg"
+  },
+  {
+    "name": "火乃晴るい",
+    "twitchid": "hinoha_rui",
+    "title": "【 #VALORANT 】すくりむ！！デュエ…？になるらしい？？",
+    "date": "2026-03-17T22:04:24.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_hinoha_rui-320x180.jpg"
+  },
+  {
+    "name": "火乃晴るい",
+    "twitchid": "hinoha_rui",
+    "title": "【 #バイオRE2 】や、やる",
+    "date": "2026-03-17T22:04:30.000+09:00",
+    "status": "archive",
+    "channelIcon": "https://yt3.googleusercontent.com/8vDFqOVNprKqFE0o7EecXyQleBXIibeJZpXpSgjm5msh4Yd0S8hTsbmYZyOBXa3bUEgBJHZt1w",
+    "thumbnail": "https://vod-secure.twitch.tv/_404/404_processing_320x180.png"
+  },
+  {
+    "name": "李じゅぴ汰",
+    "twitchid": "lee_jupita",
+    "title": "【Q】頭使ってパズルしようね～～～！！！【Q REMASTERED/パズル】",
+    "date": "2026-03-17T22:31:16.000+09:00",
+    "status": "archive",
+    "channelIcon": "https://yt3.googleusercontent.com/QQqec9A1J7eLk9RrRYD9vvk51BBJzcE1leGkU9n4YkwHqht9gmGT1ktmSlKItQtbuMSGuklAFxM",
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/d3e96a4c81109e975a62_lee_jupita_315680784627_1773754270//thumb/thumb0-320x180.jpg"
+  },
+  {
+    "name": "李じゅぴ汰",
+    "twitchid": "lee_jupita",
+    "title": "【ハートピアスローライフ】ガチャ引くのが楽しすぎて～！！！！【雑談】",
+    "date": "2026-03-17T22:32:54.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lee_jupita-320x180.jpg"
   }
 ]

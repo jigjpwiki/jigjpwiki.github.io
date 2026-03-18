@@ -142,5 +142,21 @@
     "status": "archive",
     "channelIcon": "https://yt3.googleusercontent.com/Cu6AMAZAEC_DTANKoaloA_4iLCuEUQ8BiAwyHGuOUG9GtoIw6s7mXCv1-49LV1IgODYZfGowzQ",
     "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/9113302c8b45f01aeb51_mahiruneru_315681247603_1773761123//thumb/thumb0-320x180.jpg"
+  },
+  {
+    "name": "桜樹美彩",
+    "twitchid": "sakuragimisa_v",
+    "title": "【 朝活 】木曜以外は平日7時！土曜は9時開始朝活☀",
+    "date": "2026-03-18T07:00:15.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sakuragimisa_v-320x180.jpg"
+  },
+  {
+    "name": "しーはむ",
+    "twitchid": "siyham",
+    "title": "グウェン練習してTOPで無双するハムスターになりたい",
+    "date": "2026-03-18T09:42:44.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_siyham-320x180.jpg"
   }
 ]

@@ -1,23 +1,5 @@
 [
   {
-    "name": "李じゅぴ汰",
-    "twitchid": "lee_jupita",
-    "title": "【Q】頭使ってパズルしようね～～～！！！【Q REMASTERED/パズル】",
-    "date": "2026-03-17T22:31:16.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://yt3.googleusercontent.com/QQqec9A1J7eLk9RrRYD9vvk51BBJzcE1leGkU9n4YkwHqht9gmGT1ktmSlKItQtbuMSGuklAFxM",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/d3e96a4c81109e975a62_lee_jupita_315680784627_1773754270//thumb/thumb0-320x180.jpg"
-  },
-  {
-    "name": "李じゅぴ汰",
-    "twitchid": "lee_jupita",
-    "title": "【ハートピアスローライフ】ガチャ引くのが楽しすぎて～！！！！【雑談】",
-    "date": "2026-03-17T22:33:00.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://yt3.googleusercontent.com/QQqec9A1J7eLk9RrRYD9vvk51BBJzcE1leGkU9n4YkwHqht9gmGT1ktmSlKItQtbuMSGuklAFxM",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/2ca3ca1f8753cbc206c5_lee_jupita_315680792179_1773754374//thumb/thumb0-320x180.jpg"
-  },
-  {
     "name": "真昼ねる",
     "twitchid": "mahiruneru",
     "title": "【R6SX】おひさしぶりぶりシージ🌟【真昼ねる￤ぷろのゔぁ】",
@@ -141,5 +123,13 @@
     "date": "2026-03-20T21:07:02.000+09:00",
     "status": "live",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_chi7_v-320x180.jpg"
+  },
+  {
+    "name": "李じゅぴ汰",
+    "twitchid": "lee_jupita",
+    "title": "【JUDGE EYES：死神の遺言】 この世界はビデオ通話が基本なんです！！！",
+    "date": "2026-03-20T22:29:56.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lee_jupita-320x180.jpg"
   }
 ]

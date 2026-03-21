@@ -1,15 +1,5 @@
 [
   {
-    "name": "春原なずな",
-    "youtubeid": "UCW-iuU7g3BJnuQ1D3UkqeSA",
-    "title": "【 #1UPRUST 】#5 回すために真面目に働く🔰【 春原なずな / VTuber 】",
-    "date": "2026-03-18T13:09:17.000+09:00",
-    "status": "live",
-    "thumbnail": "https://i.ytimg.com/vi/-EZQuf4b8Es/mqdefault_live.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/0pD1c95Y9X0VrhzWtlf2SRPqdkesiuZxC8Hb5Mg9Xv1WWpQaFCmjITTK8-n5HlNsB-yDbAN4CZA",
-    "url": "https://www.youtube.com/watch?v=-EZQuf4b8Es"
-  },
-  {
     "name": "天辻ゆらぐ",
     "youtubeid": "UCeOFQCn_QZJMTszlRYRg3rQ",
     "title": "【縦型/雑談歌枠】高評価50目標🎶あなたのお姉さんアイドルVtuber🪼💜初見歓迎✨️【天辻ゆらぐ/パレデミア学園】 #新人Vtuber #ゆらぐっどたいむ",
@@ -1380,6 +1370,16 @@
     "url": "https://www.youtube.com/watch?v=HwN2EB6e_OM"
   },
   {
+    "name": "妖小琳",
+    "youtubeid": "UC6eopxuX7lx8GnpkntObt1w",
+    "title": "【 #1upRust 】モニュメントもまわりたい【妖小琳 / 登龍門BOX】",
+    "date": "2026-03-21T13:23:09.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/89EWhU0kPAc/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/Ji8DJgyzWKUbbeWlYgFfsCZtyiGZ-zM597otZBcFnIoEVIw7284GbNbBQcALgEKwqvk8OXNZLA",
+    "url": "https://www.youtube.com/watch?v=89EWhU0kPAc"
+  },
+  {
     "name": "夏渚まはろ",
     "youtubeid": "UC_a00ml_EVDXSrtY8ZuyqGQ",
     "title": "【ピコパーク】#妖縁NEW組 なら協力してクリアできるはず【#夏渚まはろ￤#パレプロ】",
@@ -1398,6 +1398,16 @@
     "thumbnail": "https://i.ytimg.com/vi/JpySDVnj_G0/mqdefault_live.jpg",
     "channelIcon": "https://yt3.googleusercontent.com/traR_yWe-AOGyM2wjo8h2FJO9JWBcbjfrL13X-umeD6BtNPopSZ2Q3YmdJq_5K9gWgHf_j64iQ",
     "url": "https://www.youtube.com/watch?v=JpySDVnj_G0"
+  },
+  {
+    "name": "七音うら",
+    "youtubeid": "UCv2IYO-4waCpHvn50SWWY2A",
+    "title": "【#焼肉ぱーてぃー】3連休なのでお肉焼こう！【#ウィニー寮】",
+    "date": "2026-03-21T18:00:00.000+09:00",
+    "status": "upcoming",
+    "thumbnail": "https://i.ytimg.com/vi/zQZAhhGiUUY/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/T655ATpSd2gkjZBrokvlkaUH0f5-fCpQdcJpwxmmNdy6fxCYffAlq2sMhPOtFk_CvVyOkEPY8Q",
+    "url": "https://www.youtube.com/watch?v=zQZAhhGiUUY"
   },
   {
     "name": "月皇ちな",

@@ -1,15 +1,5 @@
 [
   {
-    "name": "愛上オハナ",
-    "youtubeid": "UCwxQdxFJW67WGv-s5_z030w",
-    "title": "【新人VTuber】すこしだけ歌【パレデミア学園】",
-    "date": "2026-03-19T00:58:49.000+09:00",
-    "status": "live",
-    "thumbnail": "https://i.ytimg.com/vi/EARdXjhGzRc/mqdefault_live.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/neZ2Mw2PcuimtH172AaHAlm5eKk_O17aEJ8aMGhme708zPqxyZB6QhS89qzSt30uXnGLLbgdliw",
-    "url": "https://www.youtube.com/watch?v=EARdXjhGzRc"
-  },
-  {
     "name": "天透あわ",
     "youtubeid": "UCXI0W_Os-BCIngpCb1YnOow",
     "title": "【推し活】楽しかったことがあるんです #初見さん大歓迎 #vtuber",
@@ -1408,6 +1398,26 @@
     "thumbnail": "https://i.ytimg.com/vi/BvbOu8ZIvLc/mqdefault_live.jpg",
     "channelIcon": "https://yt3.googleusercontent.com/R99ADiR_1bRxcNCpiGLCW6ortzJy4JZFjlLaEHeDSJfYgwO_IieZWjjp4GbZauEeMxg_hhoS3A",
     "url": "https://www.youtube.com/watch?v=BvbOu8ZIvLc"
+  },
+  {
+    "name": "陰山アゲハ",
+    "youtubeid": "UCIw8aQVRBwi72yOrPLgkbRQ",
+    "title": "【apex】初心者バカ久々にやりける【#アゲハが来たぞ #パレデミア学園  #shorts 】",
+    "date": "2026-03-22T00:31:27.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/P1tAM_kf7eY/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/TRbQGbBCM6R6LAzCQXka_AxVqF-ozTWwqW455tZU9q9GMo4ijQNNc3d818MX-5wmMnhv-k84Rw",
+    "url": "https://www.youtube.com/watch?v=P1tAM_kf7eY"
+  },
+  {
+    "name": "犬丸なでこ",
+    "youtubeid": "UCdJmJxMfXrlnZabUkuss2EA",
+    "title": "【歌枠＆雑談】深夜に歌うわんね～【犬丸なでこ/パレデミア学園】",
+    "date": "2026-03-22T01:00:00.000+09:00",
+    "status": "upcoming",
+    "thumbnail": "https://i.ytimg.com/vi/CPmoMBkbvPI/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/OQpHijB1HDVezkvjNufbM9PmR9kbhUe1mfnSRqJ67l-R34sAc4BhYmQ2U7C-SapKAtcOk_Bp",
+    "url": "https://www.youtube.com/watch?v=CPmoMBkbvPI"
   },
   {
     "name": "花晴りら",

@@ -102,9 +102,10 @@
     "name": "銘兎目あう",
     "twitchid": "Metome_Au",
     "title": "【スト6】🔰Cケンのレバレス練習🥊🥋",
-    "date": "2026-03-21T20:30:42.000+09:00",
-    "status": "live",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_Metome_Au-320x180.jpg"
+    "date": "2026-03-21T20:30:48.000+09:00",
+    "status": "archive",
+    "channelIcon": "https://yt3.googleusercontent.com/VB97J8AMHex_rkfd6hDhfiGhhVvrL-NNkseP2mMYSWh75sxA_oXctmxK5tV4FYgkM17RUAx6GQ",
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/aafa4da5c5307756f42d_metome_au_315698260595_1774092642//thumb/thumb0-320x180.jpg"
   },
   {
     "name": "火乃晴るい",
@@ -122,5 +123,13 @@
     "date": "2026-03-21T22:21:05.000+09:00",
     "status": "live",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_chi7_v-320x180.jpg"
+  },
+  {
+    "name": "なかもとおまち",
+    "twitchid": "41futon",
+    "title": "深夜ににょろ～ん",
+    "date": "2026-03-21T23:11:55.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_41futon-320x180.jpg"
   }
 ]

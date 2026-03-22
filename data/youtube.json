@@ -1,15 +1,5 @@
 [
   {
-    "name": "藤宮コトハ",
-    "youtubeid": "UCGndc74kfWb_A-8hZBG534Q",
-    "title": "【Doors: Paradox】扉あ～け～て～♪🚪　【#パレプロ ／ #藤宮コトハ 】",
-    "date": "2026-03-20T00:30:00.000+09:00",
-    "status": "upcoming",
-    "thumbnail": "https://i.ytimg.com/vi/N8yTX_VTuCg/mqdefault_live.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/rthBXvqjNFcVwEp-AWpiZDXnNjBodSXlsDTa-sjW6uR6Ssv3wuOw2dMXDZLlYaf_c4YiKfItHXU",
-    "url": "https://www.youtube.com/watch?v=N8yTX_VTuCg"
-  },
-  {
     "name": "愛上オハナ",
     "youtubeid": "UCwxQdxFJW67WGv-s5_z030w",
     "title": "1/8192 永遠にクリアできない女 #切り抜き #vtuber #推しをお探しですか #shorts #おやすみvtuber",
@@ -1360,6 +1350,16 @@
     "url": "https://www.youtube.com/watch?v=jwRtwLPr8D4"
   },
   {
+    "name": "雛菊のん",
+    "youtubeid": "UChccV6U0Tkx9de4YjXbEelw",
+    "title": "ギャルによる小中高タイムカプセルに入れる物の違い#shorts #vtuber #新人vtuber #おしゃべり #おすすめにのりたい #バズれ",
+    "date": "2026-03-22T22:00:02.000+09:00",
+    "status": "archive",
+    "thumbnail": "https://i.ytimg.com/vi/1ODHJ7hVam8/mqdefault.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/OxvUqyZAoX4gIX91GOkYMIE2iYfD1ndRKGZbo4Ih8cDb5QuoXpqNJWZKpephYlI0zNiYjQptAQ",
+    "url": "https://www.youtube.com/watch?v=1ODHJ7hVam8"
+  },
+  {
     "name": "七海ロナ",
     "youtubeid": "UCIaZylf5L9MsCMOJX3BdTEg",
     "title": "☀️太陽、なってあげよかっか？♡ #vtuber #shorts #踊ってみた",
@@ -1408,6 +1408,36 @@
     "thumbnail": "https://i.ytimg.com/vi/UYmfwLhbijo/mqdefault_live.jpg",
     "channelIcon": "https://yt3.googleusercontent.com/4hssn4EXW2lORXRfiuYTjmYfnlZoQ2h72sdEompqX7GQwAKCsBx7eL0joCFSook1rfCKIcpykg",
     "url": "https://www.youtube.com/watch?v=UYmfwLhbijo"
+  },
+  {
+    "name": "江波キョウカ",
+    "youtubeid": "UChpkyQ3O21OnkcMcgCoNHCg",
+    "title": "私は、わたしの事が好き。 / HoneyWorks & かぐや(cv.夏吉ゆうこ) #踊ってみた໒꒱⋆ #江波キョウカ / パレプロ",
+    "date": "2026-03-22T23:55:58.000+09:00",
+    "status": "archive",
+    "thumbnail": "https://i.ytimg.com/vi/29LCLjqCEG0/mqdefault.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/pM4ZefnBFJ2qlBEqknYCFHdW6dLH29KptwG0OYSu1-mAVAIy5M1IjwpMwC24-A_v07nluGGrlQ",
+    "url": "https://www.youtube.com/watch?v=29LCLjqCEG0"
+  },
+  {
+    "name": "妖小琳",
+    "youtubeid": "UC6eopxuX7lx8GnpkntObt1w",
+    "title": "【 #1upRust 】フィナーレ！【妖小琳 / 登龍門BOX】",
+    "date": "2026-03-23T00:32:43.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/EOaysOWUFLI/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/Ji8DJgyzWKUbbeWlYgFfsCZtyiGZ-zM597otZBcFnIoEVIw7284GbNbBQcALgEKwqvk8OXNZLA",
+    "url": "https://www.youtube.com/watch?v=EOaysOWUFLI"
+  },
+  {
+    "name": "花晴りら",
+    "youtubeid": "UCqcnlq8uJqnGml6hcIrMCZw",
+    "title": "【朝活雑談】100人におはよう言いたい朝活🔆初見さん大歓迎🌷【花晴りら/パレデミア学園】#れりライブ #新人vtuber",
+    "date": "2026-03-23T07:00:00.000+09:00",
+    "status": "upcoming",
+    "thumbnail": "https://i.ytimg.com/vi/t5_rLblyAi4/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/CH5JMWVQZ_RtloaXoj6W-yXjo9x8UxXSBG_vMyDnfk7M2QTOApVE1zOesu_aDrSAqvDbGrUyxs0",
+    "url": "https://www.youtube.com/watch?v=t5_rLblyAi4"
   },
   {
     "name": "泡清みる",

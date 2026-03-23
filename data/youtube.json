@@ -1,45 +1,5 @@
 [
   {
-    "name": "妖小琳",
-    "youtubeid": "UC6eopxuX7lx8GnpkntObt1w",
-    "title": "【 #1upRust 】今日は絶対謎を解く！！！！！！【妖小琳 / 登龍門BOX】",
-    "date": "2026-03-20T12:59:55.000+09:00",
-    "status": "live",
-    "thumbnail": "https://i.ytimg.com/vi/u7QCEJe8ASw/mqdefault_live.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/Ji8DJgyzWKUbbeWlYgFfsCZtyiGZ-zM597otZBcFnIoEVIw7284GbNbBQcALgEKwqvk8OXNZLA",
-    "url": "https://www.youtube.com/watch?v=u7QCEJe8ASw"
-  },
-  {
-    "name": "藤森ちとせ",
-    "youtubeid": "UCAhdxmsdngH4noySdpVAVWQ",
-    "title": "【Minecraftメン限参加型ワールド配信】山削り配信⛰✨【#新人vtuber 】#ちとせらいぶ",
-    "date": "2026-03-20T12:59:58.000+09:00",
-    "status": "live",
-    "thumbnail": "https://i.ytimg.com/vi/-qAiCXETb34/mqdefault_live.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/traR_yWe-AOGyM2wjo8h2FJO9JWBcbjfrL13X-umeD6BtNPopSZ2Q3YmdJq_5K9gWgHf_j64iQ",
-    "url": "https://www.youtube.com/watch?v=-qAiCXETb34"
-  },
-  {
-    "name": "江波キョウカ",
-    "youtubeid": "UChpkyQ3O21OnkcMcgCoNHCg",
-    "title": "꒰ঌ #桜餅アイドル歌枠リレー┆桜色の髪&もちもちほっぺのバーチャルアイドルが歌います！🌸【 #江波キョウカ / パレプロ 】",
-    "date": "2026-03-20T13:00:00.000+09:00",
-    "status": "upcoming",
-    "thumbnail": "https://i.ytimg.com/vi/IcCIZyG4JLU/mqdefault_live.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/pM4ZefnBFJ2qlBEqknYCFHdW6dLH29KptwG0OYSu1-mAVAIy5M1IjwpMwC24-A_v07nluGGrlQ",
-    "url": "https://www.youtube.com/watch?v=IcCIZyG4JLU"
-  },
-  {
-    "name": "春原なずな",
-    "youtubeid": "UCW-iuU7g3BJnuQ1D3UkqeSA",
-    "title": "【 #1UPRUST 】#7 ネコネコ海賊団行くぞ🔰【 春原なずな / VTuber 】",
-    "date": "2026-03-20T13:06:12.000+09:00",
-    "status": "live",
-    "thumbnail": "https://i.ytimg.com/vi/_zFL3OiFF2c/mqdefault_live.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/0pD1c95Y9X0VrhzWtlf2SRPqdkesiuZxC8Hb5Mg9Xv1WWpQaFCmjITTK8-n5HlNsB-yDbAN4CZA",
-    "url": "https://www.youtube.com/watch?v=_zFL3OiFF2c"
-  },
-  {
     "name": "常磐カナメ",
     "youtubeid": "UCbNEgJIF_ADD9e8-q7SoxCg",
     "title": "【#桜餅アイドル歌枠リレー】ﾊﾁｬﾒﾁｬ文学少女緑！常磐カナメ、参ります。【パレプロ/常磐カナメ】",
@@ -1428,6 +1388,16 @@
     "thumbnail": "https://i.ytimg.com/vi/20krVAdLWWI/mqdefault_live.jpg",
     "channelIcon": "https://yt3.googleusercontent.com/traR_yWe-AOGyM2wjo8h2FJO9JWBcbjfrL13X-umeD6BtNPopSZ2Q3YmdJq_5K9gWgHf_j64iQ",
     "url": "https://www.youtube.com/watch?v=20krVAdLWWI"
+  },
+  {
+    "name": "犬丸なでこ",
+    "youtubeid": "UCdJmJxMfXrlnZabUkuss2EA",
+    "title": "【耐久！岩を転がす】The Game of Sisyphusするわんね！【パレデミア学園/犬丸なでこ】",
+    "date": "2026-03-23T14:02:17.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/RyHklZVvLYQ/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/OQpHijB1HDVezkvjNufbM9PmR9kbhUe1mfnSRqJ67l-R34sAc4BhYmQ2U7C-SapKAtcOk_Bp",
+    "url": "https://www.youtube.com/watch?v=RyHklZVvLYQ"
   },
   {
     "name": "泡清みる",

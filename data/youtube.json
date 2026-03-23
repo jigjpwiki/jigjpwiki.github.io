@@ -1,15 +1,5 @@
 [
   {
-    "name": "堂下さとり",
-    "youtubeid": "UCBq6MSUL-Ermvnoj3PtX7Iw",
-    "title": "【歌枠】禊【パレデミア学園/堂下さとり】",
-    "date": "2026-03-20T16:36:56.000+09:00",
-    "status": "live",
-    "thumbnail": "https://i.ytimg.com/vi/AkRXX-2i85k/mqdefault_live.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/eW_Hug0M6zFk9QSbAmOUWLMSfzBlCHmes-8yAksvfUNzyLgY6TSsE_eW8ncfE4bHYZXKoTWxmQ",
-    "url": "https://www.youtube.com/watch?v=AkRXX-2i85k"
-  },
-  {
     "name": "桜庭羽奈",
     "youtubeid": "UCPgg_A08ksSYP-VivJGniRw",
     "title": "【12時間配信②】（途中枠替えあり）！初見さんお待ちしてます！🐻【新人VTuberの雑談／歌枠】🐻",
@@ -1378,6 +1368,16 @@
     "thumbnail": "https://i.ytimg.com/vi/1NnRGKpqHAE/mqdefault_live.jpg",
     "channelIcon": "https://yt3.googleusercontent.com/XefzBgTJORQ_8-p4C-a-57IHhaUNpY9becOfXRTDmQ4ezWFTtdBtXQ5H2tJlgUTnYBXUgwZ3dg",
     "url": "https://www.youtube.com/watch?v=1NnRGKpqHAE"
+  },
+  {
+    "name": "しーはむ",
+    "youtubeid": "UC5xSDiB2WG4pO_zUZ_t-n0Q",
+    "title": "〘異変探し〙がちで怖い異変探しに挑む！一緒に探して（涙）〘VTuber│#しーはむ│Lost in Anomaly〙",
+    "date": "2026-03-23T21:30:00.000+09:00",
+    "status": "upcoming",
+    "thumbnail": "https://i.ytimg.com/vi/QUrTQbkDgkw/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/y0zP0Uz7HSLx5dv3xo488Suxk8rJQQUC1wXaymjUBIQIwa25WlVu_VmrsT1xAyVD-jgeL7hs",
+    "url": "https://www.youtube.com/watch?v=QUrTQbkDgkw"
   },
   {
     "name": "Palette Project",

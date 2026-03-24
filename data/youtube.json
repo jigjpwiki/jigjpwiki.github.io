@@ -1,35 +1,5 @@
 [
   {
-    "name": "久堂れしあ",
-    "youtubeid": "UC0O_8Ssx5exycwGvuF5S6_Q",
-    "title": "【ジューンブライドイベント４日目】〜夜ご飯配信〜",
-    "date": "2026-03-21T12:20:40.000+09:00",
-    "status": "archive",
-    "thumbnail": "https://i.ytimg.com/vi/fbrxcSNiva4/mqdefault.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/0FA2IgWHnUEwOi919LsjtnX-V-MHLKf-wBQMhEkybsNiifpMfrlQ1JAPDf4kb5GLaLna8BmeNA",
-    "url": "https://www.youtube.com/watch?v=fbrxcSNiva4"
-  },
-  {
-    "name": "藤森ちとせ",
-    "youtubeid": "UCAhdxmsdngH4noySdpVAVWQ",
-    "title": "【整地雑談】ゆるゆる平らにする配信⛏✨作業用にも😉ROM歓迎🎉【Minecraft】【#新人vtuber 】#ちとせらいぶ #パレデミア学園",
-    "date": "2026-03-21T13:00:00.000+09:00",
-    "status": "upcoming",
-    "thumbnail": "https://i.ytimg.com/vi/HwN2EB6e_OM/mqdefault_live.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/traR_yWe-AOGyM2wjo8h2FJO9JWBcbjfrL13X-umeD6BtNPopSZ2Q3YmdJq_5K9gWgHf_j64iQ",
-    "url": "https://www.youtube.com/watch?v=HwN2EB6e_OM"
-  },
-  {
-    "name": "妖小琳",
-    "youtubeid": "UC6eopxuX7lx8GnpkntObt1w",
-    "title": "【 #1upRust 】モニュメントもまわりたい【妖小琳 / 登龍門BOX】",
-    "date": "2026-03-21T13:23:09.000+09:00",
-    "status": "live",
-    "thumbnail": "https://i.ytimg.com/vi/89EWhU0kPAc/mqdefault_live.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/Ji8DJgyzWKUbbeWlYgFfsCZtyiGZ-zM597otZBcFnIoEVIw7284GbNbBQcALgEKwqvk8OXNZLA",
-    "url": "https://www.youtube.com/watch?v=89EWhU0kPAc"
-  },
-  {
     "name": "春原なずな",
     "youtubeid": "UCW-iuU7g3BJnuQ1D3UkqeSA",
     "title": "【 #1UPRUST 】#8 もう金欠ならないぞ🔰【 春原なずな / VTuber 】",
@@ -1328,6 +1298,16 @@
     "thumbnail": "https://i.ytimg.com/vi/_UB_Zl0jFS4/mqdefault_live.jpg",
     "channelIcon": "https://yt3.googleusercontent.com/neZ2Mw2PcuimtH172AaHAlm5eKk_O17aEJ8aMGhme708zPqxyZB6QhS89qzSt30uXnGLLbgdliw",
     "url": "https://www.youtube.com/watch?v=_UB_Zl0jFS4"
+  },
+  {
+    "name": "藤森ちとせ",
+    "youtubeid": "UCAhdxmsdngH4noySdpVAVWQ",
+    "title": "【整地雑談】今日は……！なんと……！整地します。⛏✨作業用にも😉ROM歓迎🎉【Minecraft】【#新人vtuber 】#ちとせらいぶ #パレデミア学園",
+    "date": "2026-03-24T12:58:33.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/louuf6EhBao/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/traR_yWe-AOGyM2wjo8h2FJO9JWBcbjfrL13X-umeD6BtNPopSZ2Q3YmdJq_5K9gWgHf_j64iQ",
+    "url": "https://www.youtube.com/watch?v=louuf6EhBao"
   },
   {
     "name": "Palette Project",

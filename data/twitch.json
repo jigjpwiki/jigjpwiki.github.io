@@ -2,15 +2,6 @@
   {
     "name": "なかもとおまち",
     "twitchid": "41futon",
-    "title": "深夜ににょろ～ん",
-    "date": "2026-03-21T23:12:01.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://yt3.googleusercontent.com/h8jNjVckVf08zSV6wdhQ38Fw9OH7kucAprlJsi9w0YdDIL8_Kcv0tHY-1cK8jPK_jRLSJb3t_Q",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/ad6130ccd73c182a010a_41futon_315639449073_1774102315//thumb/thumb0-320x180.jpg"
-  },
-  {
-    "name": "なかもとおまち",
-    "twitchid": "41futon",
     "title": "【ELEDENRING】🔰つるはし！やきとりくうぞ！※ビッツ禁止",
     "date": "2026-03-22T15:02:49.000+09:00",
     "status": "archive",
@@ -120,24 +111,36 @@
     "name": "銘兎目あう",
     "twitchid": "Metome_Au",
     "title": "【スト6】🔰今日もCケンのレバレス各30分練習🥊🥋【1603MR～Mケン🎮】最後ランク！",
-    "date": "2026-03-24T20:33:22.000+09:00",
-    "status": "live",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_Metome_Au-320x180.jpg"
+    "date": "2026-03-24T20:33:27.000+09:00",
+    "status": "archive",
+    "channelIcon": "https://yt3.googleusercontent.com/VB97J8AMHex_rkfd6hDhfiGhhVvrL-NNkseP2mMYSWh75sxA_oXctmxK5tV4FYgkM17RUAx6GQ",
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/354ef43fc4d2f2603dc9_metome_au_315712127475_1774352002//thumb/thumb0-320x180.jpg"
   },
   {
     "name": "李じゅぴ汰",
     "twitchid": "lee_jupita",
     "title": "【オーバーウォッチ2】 ちなちゃんと初めて遊ぶ！！【Overwatch2】",
-    "date": "2026-03-24T21:18:50.000+09:00",
-    "status": "live",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lee_jupita-320x180.jpg"
+    "date": "2026-03-24T21:18:56.000+09:00",
+    "status": "archive",
+    "channelIcon": "https://yt3.googleusercontent.com/QQqec9A1J7eLk9RrRYD9vvk51BBJzcE1leGkU9n4YkwHqht9gmGT1ktmSlKItQtbuMSGuklAFxM",
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/ad98e0121eae074c5572_lee_jupita_315712394867_1774354730//thumb/thumb0-320x180.jpg"
   },
   {
     "name": "月皇ちな",
     "twitchid": "chi7_v",
     "title": "【OW】じゅぴ汰ちゃんとデュオいくぞ！🔫 #chi7live",
-    "date": "2026-03-24T21:19:00.000+09:00",
-    "status": "live",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_chi7_v-320x180.jpg"
+    "date": "2026-03-24T21:19:06.000+09:00",
+    "status": "archive",
+    "channelIcon": "https://yt3.googleusercontent.com/dPtSb9jgOlWAvy3_pEFIVzTc5iOd4OGhJQIVwjT6RpMAjOmJQHDzs0g2gYCjNEnlpcgQO8fb5-k",
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/84d4cd22f72078003471_chi7_v_315660484338_1774354740//thumb/thumb0-320x180.jpg"
+  },
+  {
+    "name": "銘兎目あう",
+    "twitchid": "Metome_Au",
+    "title": "【スト6】🔰今日もCケンのレバレス各30分練習🥊🥋【1603MR～Mケン🎮】最後ランク！",
+    "date": "2026-03-24T23:03:55.000+09:00",
+    "status": "archive",
+    "channelIcon": "https://yt3.googleusercontent.com/VB97J8AMHex_rkfd6hDhfiGhhVvrL-NNkseP2mMYSWh75sxA_oXctmxK5tV4FYgkM17RUAx6GQ",
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/f1d405bc4c9461c25497_metome_au_315661089010_1774361030//thumb/thumb0-320x180.jpg"
   }
 ]

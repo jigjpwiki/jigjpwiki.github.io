@@ -1,23 +1,5 @@
 [
   {
-    "name": "銘兎目あう",
-    "twitchid": "Metome_Au",
-    "title": "【スト６】🔰レバレスミリしら会🩷コラボ：おまちちゃん💙手元カメラON✋📸",
-    "date": "2026-03-22T21:02:19.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://yt3.googleusercontent.com/VB97J8AMHex_rkfd6hDhfiGhhVvrL-NNkseP2mMYSWh75sxA_oXctmxK5tV4FYgkM17RUAx6GQ",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/8e6259173c68fd75bfb1_metome_au_315703335795_1774180933//thumb/thumb0-320x180.jpg"
-  },
-  {
-    "name": "なかもとおまち",
-    "twitchid": "41futon",
-    "title": "【#ミリ知らレバレス会】レバレス対戦するぞおおお！ w/銘兎目あう",
-    "date": "2026-03-22T21:04:36.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://yt3.googleusercontent.com/h8jNjVckVf08zSV6wdhQ38Fw9OH7kucAprlJsi9w0YdDIL8_Kcv0tHY-1cK8jPK_jRLSJb3t_Q",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/73d756f495f7de1e01c7_41futon_315651534450_1774181070//thumb/thumb0-320x180.jpg"
-  },
-  {
     "name": "李じゅぴ汰",
     "twitchid": "lee_jupita",
     "title": "【JUDGE EYES：死神の遺言】 息抜きにちょこっと探偵業を嗜みます",
@@ -147,8 +129,33 @@
     "name": "なかもとおまち",
     "twitchid": "41futon",
     "title": "レバーCジェイミー たすけて！コマ投げマーン！",
-    "date": "2026-03-25T15:12:48.000+09:00",
+    "date": "2026-03-25T15:12:54.000+09:00",
+    "status": "archive",
+    "channelIcon": "https://yt3.googleusercontent.com/h8jNjVckVf08zSV6wdhQ38Fw9OH7kucAprlJsi9w0YdDIL8_Kcv0tHY-1cK8jPK_jRLSJb3t_Q",
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/2f3b4aa719631b936951_41futon_315655708017_1774419168//thumb/thumb0-320x180.jpg"
+  },
+  {
+    "name": "銘兎目あう",
+    "twitchid": "Metome_Au",
+    "title": "【スト6】🔰Cケン成長記録🥋レバレス練習✨最後パッドMケンランク🎮！",
+    "date": "2026-03-25T20:47:36.000+09:00",
     "status": "live",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_41futon-320x180.jpg"
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_Metome_Au-320x180.jpg"
+  },
+  {
+    "name": "火乃晴るい",
+    "twitchid": "hinoha_rui",
+    "title": "【 #VALORANT 】28日に向けてスクリムするよ～ん！",
+    "date": "2026-03-25T21:55:33.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_hinoha_rui-320x180.jpg"
+  },
+  {
+    "name": "月皇ちな",
+    "twitchid": "chi7_v",
+    "title": "OW🔫 #chi7live",
+    "date": "2026-03-25T22:15:14.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_chi7_v-320x180.jpg"
   }
 ]

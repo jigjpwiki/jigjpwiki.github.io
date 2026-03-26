@@ -119,19 +119,11 @@
   {
     "name": "李じゅぴ汰",
     "twitchid": "lee_jupita",
-    "title": "Qのパズルやります",
-    "date": "2026-03-26T19:17:01.000+09:00",
-    "status": "live",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lee_jupita-320x180.jpg"
-  },
-  {
-    "name": "李じゅぴ汰",
-    "twitchid": "lee_jupita",
     "title": "【Öoo】 爆弾いもむしの冒険やってみるぞー！【ウー/DEMO版】",
     "date": "2026-03-26T19:17:07.000+09:00",
     "status": "archive",
     "channelIcon": "https://yt3.googleusercontent.com/QQqec9A1J7eLk9RrRYD9vvk51BBJzcE1leGkU9n4YkwHqht9gmGT1ktmSlKItQtbuMSGuklAFxM",
-    "thumbnail": "https://vod-secure.twitch.tv/_404/404_processing_320x180.png"
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/d843b5960cea2594aa50_lee_jupita_315668787570_1774520221//thumb/thumb0-320x180.jpg"
   },
   {
     "name": "銘兎目あう",
@@ -140,5 +132,13 @@
     "date": "2026-03-26T20:30:42.000+09:00",
     "status": "live",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_Metome_Au-320x180.jpg"
+  },
+  {
+    "name": "なかもとおまち",
+    "twitchid": "41futon",
+    "title": "MR1548 今日は甘えてもいいですか",
+    "date": "2026-03-26T21:20:08.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_41futon-320x180.jpg"
   }
 ]

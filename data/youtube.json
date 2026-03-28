@@ -1,15 +1,5 @@
 [
   {
-    "name": "妖小琳",
-    "youtubeid": "UC6eopxuX7lx8GnpkntObt1w",
-    "title": "【#雑談 /FreeTalk】明日がちょっとマシになるように－肌寒い夜にゆるっと相談—【妖小琳/Vtuber】",
-    "date": "2026-03-25T23:00:31.000+09:00",
-    "status": "live",
-    "thumbnail": "https://i.ytimg.com/vi/qSfr-ciduAU/mqdefault_live.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/Ji8DJgyzWKUbbeWlYgFfsCZtyiGZ-zM597otZBcFnIoEVIw7284GbNbBQcALgEKwqvk8OXNZLA",
-    "url": "https://www.youtube.com/watch?v=qSfr-ciduAU"
-  },
-  {
     "name": "変幻リメ",
     "youtubeid": "UC5bCRde8xRrNS7s6GjCNCyQ",
     "title": "【鳴潮】完全初見🔰はじめての鳴潮｜続きから【 #変幻リメ / #vtuber 】",
@@ -1288,6 +1278,26 @@
     "thumbnail": "https://i.ytimg.com/vi/6KI3euh5PZk/mqdefault_live.jpg",
     "channelIcon": "https://yt3.googleusercontent.com/JwOkUNiR-08GjSI3MS8-Yk6jzONshtmRWZ9tpjOghB10quze7fgbJkhpPTpIfUX00HBACjAR8Q",
     "url": "https://www.youtube.com/watch?v=6KI3euh5PZk"
+  },
+  {
+    "name": "風野かなめ",
+    "youtubeid": "UC2AO1ZIgtAVIh6_mx2SqmMQ",
+    "title": "【雑談】さようなら【パレデミア学園】",
+    "date": "2026-03-28T22:01:37.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/fu9l3LXJZWI/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/gtjdyYJUUd1ESZ7-6meuTshluv9Susg7NeB54uoFxPpLrof9Fttx2K7Ck5B6DsbNxb_pNm-z",
+    "url": "https://www.youtube.com/watch?v=fu9l3LXJZWI"
+  },
+  {
+    "name": "雛菊のん",
+    "youtubeid": "UChccV6U0Tkx9de4YjXbEelw",
+    "title": "3.28恋と名のつく歌枠#shorts #vtuber #新人vtuber #切り抜き #のんだべり",
+    "date": "2026-03-28T22:21:01.000+09:00",
+    "status": "archive",
+    "thumbnail": "https://i.ytimg.com/vi/TUtmMeEvuSg/mqdefault.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/OxvUqyZAoX4gIX91GOkYMIE2iYfD1ndRKGZbo4Ih8cDb5QuoXpqNJWZKpephYlI0zNiYjQptAQ",
+    "url": "https://www.youtube.com/watch?v=TUtmMeEvuSg"
   },
   {
     "name": "七音うら",

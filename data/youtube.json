@@ -1,15 +1,5 @@
 [
   {
-    "name": "桜庭羽奈",
-    "youtubeid": "UCPgg_A08ksSYP-VivJGniRw",
-    "title": "初見20人お待ちしてます！初見さん大歓迎！⭐【新人VTuberの雑談／歌枠】🐻",
-    "date": "2026-03-27T09:00:36.000+09:00",
-    "status": "live",
-    "thumbnail": "https://i.ytimg.com/vi/MSBY25EguUo/mqdefault_live.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/04zALH6pYL7mkWILHajvBzfzg4hrwRCLBONme3K1PjuEeYJIRC6RYxPmJzVZRuN42skHEDNRGmo",
-    "url": "https://www.youtube.com/watch?v=MSBY25EguUo"
-  },
-  {
     "name": "堂下さとり",
     "youtubeid": "UCBq6MSUL-Ermvnoj3PtX7Iw",
     "title": "【チャレンジ】24時間配信tiktok同時配信【パレデミア学園/堂下さとり】",
@@ -1328,6 +1318,16 @@
     "thumbnail": "https://i.ytimg.com/vi/FjNXUWTUNwg/mqdefault_live.jpg",
     "channelIcon": "https://yt3.googleusercontent.com/pDP2GuylW0RN1REDScFAlNklbXaPRqTm2mwT2F7dIo8xoYYFPfspsjGH_G3RagwlKVlQbdw95bY",
     "url": "https://www.youtube.com/watch?v=FjNXUWTUNwg"
+  },
+  {
+    "name": "斗瀬ひおり",
+    "youtubeid": "UC08QpBje15pNUqtG9_SivMw",
+    "title": "【コラボ】少女レイ/斗瀬ひおり×璃乃瀬りあ【cover】",
+    "date": "2026-03-31T19:00:00.000+09:00",
+    "status": "upcoming",
+    "thumbnail": "https://i.ytimg.com/vi/29xM4zbY0tA/mqdefault.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/3lYsrYl_NokMPqG6g-HryeuoJI-ogVXgq9Tyx7fSAsOBq2Z3KN1GMSDvNIT6bFgMIlTWJyiadg",
+    "url": "https://www.youtube.com/watch?v=29xM4zbY0tA"
   },
   {
     "name": "Palette Project",

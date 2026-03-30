@@ -1,25 +1,5 @@
 [
   {
-    "name": "天辻ゆらぐ",
-    "youtubeid": "UCeOFQCn_QZJMTszlRYRg3rQ",
-    "title": "【縦型/朝活/雑談歌枠】高評価100目標🎶あなたのお姉さんアイドルVtuber🪼💜初見歓迎✨️【天辻ゆらぐ/パレデミア学園】 #新人Vtuber #ゆらぐっどたいむ",
-    "date": "2026-03-28T06:00:00.000+09:00",
-    "status": "upcoming",
-    "thumbnail": "https://i.ytimg.com/vi/HstJ9C2BE4s/mqdefault_live.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/4AFFu60kFJqix-OhtDW3EJdQ0jQa1LrK56tGpvqvbGodMQFpkH-_qtvL_66dPGD3kl4LW9N4",
-    "url": "https://www.youtube.com/watch?v=HstJ9C2BE4s"
-  },
-  {
-    "name": "愛上オハナ",
-    "youtubeid": "UCwxQdxFJW67WGv-s5_z030w",
-    "title": "【新人VTuber】寝落ち・初見さん大歓迎🌷ゆる雑談【パレデミア学園】",
-    "date": "2026-03-28T06:01:55.000+09:00",
-    "status": "live",
-    "thumbnail": "https://i.ytimg.com/vi/TM7vo-1qihA/mqdefault_live.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/neZ2Mw2PcuimtH172AaHAlm5eKk_O17aEJ8aMGhme708zPqxyZB6QhS89qzSt30uXnGLLbgdliw",
-    "url": "https://www.youtube.com/watch?v=TM7vo-1qihA"
-  },
-  {
     "name": "犬丸なでこ",
     "youtubeid": "UCdJmJxMfXrlnZabUkuss2EA",
     "title": "【ラスラン】歌うわんね！！！【犬丸なでこ/パレデミア学園】",
@@ -1138,6 +1118,46 @@
     "thumbnail": "https://i.ytimg.com/vi/HJlpuRAxRrk/mqdefault_live.jpg",
     "channelIcon": "https://yt3.googleusercontent.com/OxvUqyZAoX4gIX91GOkYMIE2iYfD1ndRKGZbo4Ih8cDb5QuoXpqNJWZKpephYlI0zNiYjQptAQ",
     "url": "https://www.youtube.com/watch?v=HJlpuRAxRrk"
+  },
+  {
+    "name": "愛染アネラ",
+    "youtubeid": "UC7ek9Q4cK9O0eT3hiUYJaQw",
+    "title": "ただ声ひとつ #9 #vtuber #歌ってみた #アイドル #music",
+    "date": "2026-03-31T04:01:11.000+09:00",
+    "status": "archive",
+    "thumbnail": "https://i.ytimg.com/vi/Dq_Am2h1ssc/mqdefault.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/R99ADiR_1bRxcNCpiGLCW6ortzJy4JZFjlLaEHeDSJfYgwO_IieZWjjp4GbZauEeMxg_hhoS3A",
+    "url": "https://www.youtube.com/watch?v=Dq_Am2h1ssc"
+  },
+  {
+    "name": "愛染アネラ",
+    "youtubeid": "UC7ek9Q4cK9O0eT3hiUYJaQw",
+    "title": "ただ声ひとつ #8 #vtuber #歌ってみた #アイドル #music",
+    "date": "2026-03-31T06:00:00.000+09:00",
+    "status": "archive",
+    "thumbnail": "https://i.ytimg.com/vi/xiZ-qNG-JdQ/mqdefault.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/R99ADiR_1bRxcNCpiGLCW6ortzJy4JZFjlLaEHeDSJfYgwO_IieZWjjp4GbZauEeMxg_hhoS3A",
+    "url": "https://www.youtube.com/watch?v=xiZ-qNG-JdQ"
+  },
+  {
+    "name": "堂下さとり",
+    "youtubeid": "UCBq6MSUL-Ermvnoj3PtX7Iw",
+    "title": "【雑談】3月３1日お昼のニュース【パレデミア学園/堂下さとり】",
+    "date": "2026-03-31T06:23:16.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/P7PH1vSuTI0/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/eW_Hug0M6zFk9QSbAmOUWLMSfzBlCHmes-8yAksvfUNzyLgY6TSsE_eW8ncfE4bHYZXKoTWxmQ",
+    "url": "https://www.youtube.com/watch?v=P7PH1vSuTI0"
+  },
+  {
+    "name": "妖小琳",
+    "youtubeid": "UC6eopxuX7lx8GnpkntObt1w",
+    "title": "【#雑談 /FreeTalk】まったり朝雑談【妖小琳/Vtuber】",
+    "date": "2026-03-31T06:31:35.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/U_MYsP1j7NQ/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/Ji8DJgyzWKUbbeWlYgFfsCZtyiGZ-zM597otZBcFnIoEVIw7284GbNbBQcALgEKwqvk8OXNZLA",
+    "url": "https://www.youtube.com/watch?v=U_MYsP1j7NQ"
   },
   {
     "name": "桜樹美彩",

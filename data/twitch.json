@@ -1,14 +1,5 @@
 [
   {
-    "name": "李じゅぴ汰",
-    "twitchid": "lee_jupita",
-    "title": "【JUDGE EYES：死神の遺言】今日も元気にお話を進めていく！",
-    "date": "2026-03-27T19:20:42.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://yt3.googleusercontent.com/QQqec9A1J7eLk9RrRYD9vvk51BBJzcE1leGkU9n4YkwHqht9gmGT1ktmSlKItQtbuMSGuklAFxM",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/1a61890e18a8bf5e5926_lee_jupita_315725251827_1774606837//thumb/thumb0-320x180.jpg"
-  },
-  {
     "name": "桜樹美彩",
     "twitchid": "sakuragimisa_v",
     "title": "【 朝活 】木曜以外は平日7時！土曜は9時開始朝活☀",
@@ -106,5 +97,13 @@
     "status": "archive",
     "channelIcon": "https://yt3.googleusercontent.com/pDP2GuylW0RN1REDScFAlNklbXaPRqTm2mwT2F7dIo8xoYYFPfspsjGH_G3RagwlKVlQbdw95bY",
     "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d1m7jfoe9zdc1j/015a847af4e7537d94c2_sakuragimisa_v_318429987673_1774821624//thumb/thumb0-320x180.jpg"
+  },
+  {
+    "name": "水透ユウ",
+    "twitchid": "minato_yu_",
+    "title": "【solo】タイミー派遣先探してますrank【水透ユウ/ぷろのゔぁ】#R6S #ユウおんらいぶ",
+    "date": "2026-03-30T19:29:19.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_minato_yu_-320x180.jpg"
   }
 ]

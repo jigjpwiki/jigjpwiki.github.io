@@ -120,9 +120,10 @@
     "name": "銘兎目あう",
     "twitchid": "Metome_Au",
     "title": "【スト６】Cケン/レバレス練習🥊🥋22:00～1585MR～Mケンランク👊",
-    "date": "2026-03-31T20:33:30.000+09:00",
-    "status": "live",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_Metome_Au-320x180.jpg"
+    "date": "2026-03-31T20:33:35.000+09:00",
+    "status": "archive",
+    "channelIcon": "https://yt3.googleusercontent.com/VB97J8AMHex_rkfd6hDhfiGhhVvrL-NNkseP2mMYSWh75sxA_oXctmxK5tV4FYgkM17RUAx6GQ",
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/533fcea157e54cc01b17_metome_au_315744309875_1774956810//thumb/thumb0-320x180.jpg"
   },
   {
     "name": "月皇ちな",
@@ -139,5 +140,21 @@
     "date": "2026-03-31T22:44:37.000+09:00",
     "status": "live",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lee_jupita-320x180.jpg"
+  },
+  {
+    "name": "なかもとおまち",
+    "twitchid": "41futon",
+    "title": "エイプリルフールがやってくる短期集中ランクマ",
+    "date": "2026-03-31T23:15:55.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_41futon-320x180.jpg"
+  },
+  {
+    "name": "妖小琳",
+    "twitchid": "yaosyaorin",
+    "title": "なず～なとデドバ",
+    "date": "2026-04-01T00:02:23.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_yaosyaorin-320x180.jpg"
   }
 ]

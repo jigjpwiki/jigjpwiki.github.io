@@ -1,35 +1,5 @@
 [
   {
-    "name": "七音うら",
-    "youtubeid": "UCv2IYO-4waCpHvn50SWWY2A",
-    "title": "【？？？】",
-    "date": "2026-03-29T01:55:00.000+09:00",
-    "status": "upcoming",
-    "thumbnail": "https://i.ytimg.com/vi/GyxkqANLZDA/mqdefault.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/T655ATpSd2gkjZBrokvlkaUH0f5-fCpQdcJpwxmmNdy6fxCYffAlq2sMhPOtFk_CvVyOkEPY8Q",
-    "url": "https://www.youtube.com/watch?v=GyxkqANLZDA"
-  },
-  {
-    "name": "愛上オハナ",
-    "youtubeid": "UCwxQdxFJW67WGv-s5_z030w",
-    "title": "【新人VTuber】寝落ち・初見さん大歓迎🌷ゆる雑談【パレデミア学園】",
-    "date": "2026-03-29T02:05:25.000+09:00",
-    "status": "live",
-    "thumbnail": "https://i.ytimg.com/vi/vw6ggRRVCKc/mqdefault_live.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/neZ2Mw2PcuimtH172AaHAlm5eKk_O17aEJ8aMGhme708zPqxyZB6QhS89qzSt30uXnGLLbgdliw",
-    "url": "https://www.youtube.com/watch?v=vw6ggRRVCKc"
-  },
-  {
-    "name": "七音うら",
-    "youtubeid": "UCv2IYO-4waCpHvn50SWWY2A",
-    "title": "【#雑談配信】花粉やばくないですか雑談【七音うら】",
-    "date": "2026-03-29T02:08:04.000+09:00",
-    "status": "live",
-    "thumbnail": "https://i.ytimg.com/vi/MQrALYzAZnI/mqdefault_live.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/T655ATpSd2gkjZBrokvlkaUH0f5-fCpQdcJpwxmmNdy6fxCYffAlq2sMhPOtFk_CvVyOkEPY8Q",
-    "url": "https://www.youtube.com/watch?v=MQrALYzAZnI"
-  },
-  {
     "name": "緋月・ローズ・ブレイド",
     "youtubeid": "UCDutDfyKbX_ah4GF6kPNKmw",
     "title": "【#歌ってみた】ば・く・れ・つ♡【#shorts】#vtuber",
@@ -1250,6 +1220,46 @@
     "url": "https://www.youtube.com/watch?v=ytSifn1-nvM"
   },
   {
+    "name": "雛菊のん",
+    "youtubeid": "UChccV6U0Tkx9de4YjXbEelw",
+    "title": "ひそひそ配信💤活動一周年💕#新人vtuber #睡眠導入",
+    "date": "2026-04-01T01:10:37.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/nEsA5KAEKto/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/OxvUqyZAoX4gIX91GOkYMIE2iYfD1ndRKGZbo4Ih8cDb5QuoXpqNJWZKpephYlI0zNiYjQptAQ",
+    "url": "https://www.youtube.com/watch?v=nEsA5KAEKto"
+  },
+  {
+    "name": "七音うら",
+    "youtubeid": "UCv2IYO-4waCpHvn50SWWY2A",
+    "title": "【#雑談配信】今日から2年生！ぺかー！【七音うら】",
+    "date": "2026-04-01T02:01:47.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/m0nM8F2Gukw/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/T655ATpSd2gkjZBrokvlkaUH0f5-fCpQdcJpwxmmNdy6fxCYffAlq2sMhPOtFk_CvVyOkEPY8Q",
+    "url": "https://www.youtube.com/watch?v=m0nM8F2Gukw"
+  },
+  {
+    "name": "緋雨柚",
+    "youtubeid": "UCrB-SfrqB5ChY8aAT99grXw",
+    "title": "【縦型雑談】深夜にくだらない話をするだけ　【パレデミア学園/緋雨柚】",
+    "date": "2026-04-01T02:06:39.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/H-SU-ey5flo/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/dPJHngNTeEfD_K0Mus141-We4xIuAhttm2pgEBl3VdGXqWvxGfy5mJfDMDbBmwI6UGc17dXb-g",
+    "url": "https://www.youtube.com/watch?v=H-SU-ey5flo"
+  },
+  {
+    "name": "天辻ゆらぐ",
+    "youtubeid": "UCeOFQCn_QZJMTszlRYRg3rQ",
+    "title": "【縦型】本当に苦手なとうもろこしを克服します🌽あなたのお姉さんアイドルVtuber🪼💜初見歓迎✨️【天辻ゆらぐ/パレデミア学園】 #新人Vtuber #ゆらぐっどたいむ",
+    "date": "2026-04-01T02:17:43.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/Ba8fFfY_fTk/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/4AFFu60kFJqix-OhtDW3EJdQ0jQa1LrK56tGpvqvbGodMQFpkH-_qtvL_66dPGD3kl4LW9N4",
+    "url": "https://www.youtube.com/watch?v=Ba8fFfY_fTk"
+  },
+  {
     "name": "桜樹美彩",
     "youtubeid": "UCTwKpTFX1aAXD0xpBqYqTdg",
     "title": "【 朝活 / 雑談 】エイプリルフール嘘活朝活雑談☕☀ 初見＆ROM勢大歓迎🎉4/1 AM7:00～ 🐤 #vtuber #みさライなう #桜樹美彩 #新人vtuber",
@@ -1318,6 +1328,16 @@
     "thumbnail": "https://i.ytimg.com/vi/XF42wvMInBQ/mqdefault_live.jpg",
     "channelIcon": "https://yt3.googleusercontent.com/QQqec9A1J7eLk9RrRYD9vvk51BBJzcE1leGkU9n4YkwHqht9gmGT1ktmSlKItQtbuMSGuklAFxM",
     "url": "https://www.youtube.com/watch?v=XF42wvMInBQ"
+  },
+  {
+    "name": "相栖るじゅ",
+    "youtubeid": "UCrpdBoGpa6g2WEtRWsIlhDQ",
+    "title": "【3Dお披露目】次元を超えて【相栖るじゅ/パレデミア学園】",
+    "date": "2026-04-01T21:00:00.000+09:00",
+    "status": "upcoming",
+    "thumbnail": "https://i.ytimg.com/vi/Mv3dSUONPVQ/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/yQbh9vEEgS_UapoQhIxxoTSy13bDxlHYC-ncTcO9VIDBN2NvrLTAWeKGQ72CN2fhOOrHqYaFDA",
+    "url": "https://www.youtube.com/watch?v=Mv3dSUONPVQ"
   },
   {
     "name": "しーはむ",

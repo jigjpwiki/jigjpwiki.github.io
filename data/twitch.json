@@ -164,19 +164,11 @@
   {
     "name": "李じゅぴ汰",
     "twitchid": "lee_jupita",
-    "title": "３Dとハートピアスローライフ",
-    "date": "2026-04-01T21:08:54.000+09:00",
-    "status": "live",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lee_jupita-320x180.jpg"
-  },
-  {
-    "name": "李じゅぴ汰",
-    "twitchid": "lee_jupita",
     "title": "【4月1日】李じゅぴ汰3Dお披露目配信！【ぷろのゔぁ/エイプリルフール企画】",
     "date": "2026-04-01T21:09:00.000+09:00",
     "status": "archive",
     "channelIcon": "https://yt3.googleusercontent.com/QQqec9A1J7eLk9RrRYD9vvk51BBJzcE1leGkU9n4YkwHqht9gmGT1ktmSlKItQtbuMSGuklAFxM",
-    "thumbnail": "https://vod-secure.twitch.tv/_404/404_processing_320x180.png"
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/fbbfc03bfefd2c19619e_lee_jupita_315688921841_1775045334//thumb/thumb0-320x180.jpg"
   },
   {
     "name": "妖小琳",
@@ -185,5 +177,13 @@
     "date": "2026-04-01T22:00:28.000+09:00",
     "status": "live",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_yaosyaorin-320x180.jpg"
+  },
+  {
+    "name": "真昼ねる",
+    "twitchid": "mahiruneru",
+    "title": "【R6SX】This is らんく【真昼ねる￤ぷろのゔぁ】",
+    "date": "2026-04-02T01:18:57.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_mahiruneru-320x180.jpg"
   }
 ]

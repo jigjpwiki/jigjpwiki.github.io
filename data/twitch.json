@@ -1,23 +1,5 @@
 [
   {
-    "name": "銘兎目あう",
-    "twitchid": "Metome_Au",
-    "title": "【スト６】Cケン/レバレス練習🥊🥋後半1564MR～Mケンランク👊",
-    "date": "2026-03-29T20:16:00.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://yt3.googleusercontent.com/VB97J8AMHex_rkfd6hDhfiGhhVvrL-NNkseP2mMYSWh75sxA_oXctmxK5tV4FYgkM17RUAx6GQ",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/b2236d99013a3055e3b0_metome_au_315683082226_1774782955//thumb/thumb0-320x180.jpg"
-  },
-  {
-    "name": "火乃晴るい",
-    "twitchid": "hinoha_rui",
-    "title": "【 #VALORANT 】大会本番Day2 3位決定戦など🔥遅延有",
-    "date": "2026-03-29T20:45:26.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://yt3.googleusercontent.com/8vDFqOVNprKqFE0o7EecXyQleBXIibeJZpXpSgjm5msh4Yd0S8hTsbmYZyOBXa3bUEgBJHZt1w",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/0067152514c5349ffdf6_hinoha_rui_315683225202_1774784721//thumb/thumb0-320x180.jpg"
-  },
-  {
     "name": "月皇ちな",
     "twitchid": "chi7_v",
     "title": "Core Keeperカワイイ部始動！！ w/弦月藤士郎,yue,ばたーくっきー,桃雛なの #chi7live",
@@ -160,5 +142,29 @@
     "status": "archive",
     "channelIcon": "https://yt3.googleusercontent.com/y0zP0Uz7HSLx5dv3xo488Suxk8rJQQUC1wXaymjUBIQIwa25WlVu_VmrsT1xAyVD-jgeL7hs",
     "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/3cd98f776cfb9371e65e_siyham_315747256307_1775014482//thumb/thumb0-320x180.jpg"
+  },
+  {
+    "name": "銘兎目あう",
+    "twitchid": "Metome_Au",
+    "title": "【スト６】Cケン/レバレス練習🥊🥋1571MR～Mケンランク👊",
+    "date": "2026-04-01T20:37:25.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_Metome_Au-320x180.jpg"
+  },
+  {
+    "name": "水透ユウ",
+    "twitchid": "minato_yu_",
+    "title": "【solo】いい職場ありませんかキルしたら時給上がりますか【水透ユウ/ぷろのゔぁ】#R6S #ユウおんらいぶ",
+    "date": "2026-04-01T20:59:09.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_minato_yu_-320x180.jpg"
+  },
+  {
+    "name": "なかもとおまち",
+    "twitchid": "41futon",
+    "title": "【エイプリルフール】…おや!?なかもとおまちの様子が…!※ビッツ禁止",
+    "date": "2026-04-01T21:00:53.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_41futon-320x180.jpg"
   }
 ]

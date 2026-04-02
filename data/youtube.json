@@ -1,25 +1,5 @@
 [
   {
-    "name": "妖小琳",
-    "youtubeid": "UC6eopxuX7lx8GnpkntObt1w",
-    "title": "【 #ドゥームズデイ 】同盟イベント：アンペーデと戦うぞ！【妖小琳 / 登龍門BOX】",
-    "date": "2026-03-30T12:00:49.000+09:00",
-    "status": "live",
-    "thumbnail": "https://i.ytimg.com/vi/tU5-fe2JsPM/mqdefault_live.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/Ji8DJgyzWKUbbeWlYgFfsCZtyiGZ-zM597otZBcFnIoEVIw7284GbNbBQcALgEKwqvk8OXNZLA",
-    "url": "https://www.youtube.com/watch?v=tU5-fe2JsPM"
-  },
-  {
-    "name": "堂下さとり",
-    "youtubeid": "UCBq6MSUL-Ermvnoj3PtX7Iw",
-    "title": "【雑団】3月３日お昼のニュース【パレデミア学園/堂下さとり】",
-    "date": "2026-03-30T12:04:54.000+09:00",
-    "status": "live",
-    "thumbnail": "https://i.ytimg.com/vi/0KnL49difk8/mqdefault_live.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/eW_Hug0M6zFk9QSbAmOUWLMSfzBlCHmes-8yAksvfUNzyLgY6TSsE_eW8ncfE4bHYZXKoTWxmQ",
-    "url": "https://www.youtube.com/watch?v=0KnL49difk8"
-  },
-  {
     "name": "久堂れしあ",
     "youtubeid": "UC0O_8Ssx5exycwGvuF5S6_Q",
     "title": "【ジューンブライドイベント11日目】〜夜活〜　〜LEEの辛さ20倍を食す〜",
@@ -1428,6 +1408,16 @@
     "thumbnail": "https://i.ytimg.com/vi/s2JWqURBdA0/mqdefault_live.jpg",
     "channelIcon": "https://yt3.googleusercontent.com/5l_IDFvbCkoc_xXy5i5YH24NcAgRR9bYZM9hu30Hm8may2x-7GiLIxkQ3DHQ4vI9uKwRUcbR6Q",
     "url": "https://www.youtube.com/watch?v=s2JWqURBdA0"
+  },
+  {
+    "name": "堂下さとり",
+    "youtubeid": "UCBq6MSUL-Ermvnoj3PtX7Iw",
+    "title": "【雑談】野菜選抜【パレデミア学園/堂下さとり】",
+    "date": "2026-04-02T12:04:57.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/JENRK-Htksk/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/eW_Hug0M6zFk9QSbAmOUWLMSfzBlCHmes-8yAksvfUNzyLgY6TSsE_eW8ncfE4bHYZXKoTWxmQ",
+    "url": "https://www.youtube.com/watch?v=JENRK-Htksk"
   },
   {
     "name": "藤森ちとせ",

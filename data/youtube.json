@@ -1,35 +1,5 @@
 [
   {
-    "name": "飛渡ココ",
-    "youtubeid": "UCMElh_FlHyzp_obVe-b3Qrg",
-    "title": "ただいま",
-    "date": "2026-03-31T12:00:48.000+09:00",
-    "status": "live",
-    "thumbnail": "https://i.ytimg.com/vi/zFK9YuKNmPI/mqdefault_live.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/8I1SuqBXvb4dRY9bcXYc8xxSxL-L2CAe4YvBx2x3kOkyboXRq-G0rVo7pYflUmvo0UKIyxnlRA",
-    "url": "https://www.youtube.com/watch?v=zFK9YuKNmPI"
-  },
-  {
-    "name": "鬼多見アユム",
-    "youtubeid": "UCnrJK-sb3gSn3kRLkmpmzaw",
-    "title": "【#縦型配信 】そこの君ちょっとお話してかない？ 【鬼多見アユム】#shorts",
-    "date": "2026-03-31T12:00:57.000+09:00",
-    "status": "live",
-    "thumbnail": "https://i.ytimg.com/vi/O1Yv12nR6TY/mqdefault_live.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/5l_IDFvbCkoc_xXy5i5YH24NcAgRR9bYZM9hu30Hm8may2x-7GiLIxkQ3DHQ4vI9uKwRUcbR6Q",
-    "url": "https://www.youtube.com/watch?v=O1Yv12nR6TY"
-  },
-  {
-    "name": "鈴木沙透",
-    "youtubeid": "UCj5nRzNFXZn9GRhITRkKElA",
-    "title": "【#minecraft 】誕生日に家つくる作業雑談【鈴木沙透/パレデミア学園】【#すずさと誕生祭2026】",
-    "date": "2026-03-31T12:16:40.000+09:00",
-    "status": "live",
-    "thumbnail": "https://i.ytimg.com/vi/8VGB2ww_XSw/mqdefault_live.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/doWaEHgvIyGiFYS-kh_sISc4kxoKHfigCVy_DgtUJr3Pqwu4EIfaVD25ycH4FUg4gpTxUHWZbQ",
-    "url": "https://www.youtube.com/watch?v=8VGB2ww_XSw"
-  },
-  {
     "name": "愛染アネラ",
     "youtubeid": "UC7ek9Q4cK9O0eT3hiUYJaQw",
     "title": "ただ声ひとつ #10 #vtuber #歌ってみた #アイドル #music",
@@ -1488,6 +1458,26 @@
     "thumbnail": "https://i.ytimg.com/vi/wzb5H-UOCCg/mqdefault.jpg",
     "channelIcon": "https://yt3.googleusercontent.com/W_G4fcoLegJdQmhWclC6RKHdrx9DJLGZ4WcLyCKgJxzyZZ3MUd-tNZ90LYQGVAbt7NzXl5GUJQ",
     "url": "https://www.youtube.com/watch?v=wzb5H-UOCCg"
+  },
+  {
+    "name": "藤森ちとせ",
+    "youtubeid": "UCAhdxmsdngH4noySdpVAVWQ",
+    "title": "【壺おじ耐久】8時間～クリアできる気がしないですね～⛏✨【 Getting Over It with Bennett Foddy 】【#新人vtuber 】#ちとせらいぶ #パレデミア学園",
+    "date": "2026-04-03T11:05:10.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/w8DPv2w6Fe4/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/traR_yWe-AOGyM2wjo8h2FJO9JWBcbjfrL13X-umeD6BtNPopSZ2Q3YmdJq_5K9gWgHf_j64iQ",
+    "url": "https://www.youtube.com/watch?v=w8DPv2w6Fe4"
+  },
+  {
+    "name": "堂下さとり",
+    "youtubeid": "UCBq6MSUL-Ermvnoj3PtX7Iw",
+    "title": "【雑談】おひる【パレデミア学園/堂下さとり】",
+    "date": "2026-04-03T12:14:28.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/kXvei2_uRl4/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/eW_Hug0M6zFk9QSbAmOUWLMSfzBlCHmes-8yAksvfUNzyLgY6TSsE_eW8ncfE4bHYZXKoTWxmQ",
+    "url": "https://www.youtube.com/watch?v=kXvei2_uRl4"
   },
   {
     "name": "七海ロナ",

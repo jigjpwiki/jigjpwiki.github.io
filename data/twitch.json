@@ -1,23 +1,5 @@
 [
   {
-    "name": "銘兎目あう",
-    "twitchid": "Metome_Au",
-    "title": "【スト６】Cケン/レバレス練習🥊🥋22:00～1585MR～Mケンランク👊",
-    "date": "2026-03-31T20:33:35.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://yt3.googleusercontent.com/VB97J8AMHex_rkfd6hDhfiGhhVvrL-NNkseP2mMYSWh75sxA_oXctmxK5tV4FYgkM17RUAx6GQ",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/533fcea157e54cc01b17_metome_au_315744309875_1774956810//thumb/thumb0-320x180.jpg"
-  },
-  {
-    "name": "月皇ちな",
-    "twitchid": "chi7_v",
-    "title": "作業雑談ですわよ #chi7live",
-    "date": "2026-03-31T20:44:10.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://yt3.googleusercontent.com/dPtSb9jgOlWAvy3_pEFIVzTc5iOd4OGhJQIVwjT6RpMAjOmJQHDzs0g2gYCjNEnlpcgQO8fb5-k",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/dfd7b78e62480a3f8b60_chi7_v_315744368755_1774957445//thumb/thumb0-320x180.jpg"
-  },
-  {
     "name": "李じゅぴ汰",
     "twitchid": "lee_jupita",
     "title": "【JUDGE EYES：死神の遺言】久しぶりにまったり話すすめてこー！",
@@ -174,8 +156,17 @@
     "name": "なかもとおまち",
     "twitchid": "41futon",
     "title": "【自認のじゃロリ】そろそろ、本気だすかのぅ～",
-    "date": "2026-04-03T14:15:17.000+09:00",
+    "date": "2026-04-03T14:15:22.000+09:00",
+    "status": "archive",
+    "channelIcon": "https://yt3.googleusercontent.com/h8jNjVckVf08zSV6wdhQ38Fw9OH7kucAprlJsi9w0YdDIL8_Kcv0tHY-1cK8jPK_jRLSJb3t_Q",
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/ca66be65f6e627255617_41futon_315704233458_1775193317//thumb/thumb0-320x180.jpg"
+  },
+  {
+    "name": "銘兎目あう",
+    "twitchid": "Metome_Au",
+    "title": "【スト６】21:00～じこは杯3.5 生誕祭🎂ケン限定トナメに参加するよ🥊🥋",
+    "date": "2026-04-03T20:06:14.000+09:00",
     "status": "live",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_41futon-320x180.jpg"
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_Metome_Au-320x180.jpg"
   }
 ]

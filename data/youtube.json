@@ -1,15 +1,5 @@
 [
   {
-    "name": "天透あわ",
-    "youtubeid": "UCXI0W_Os-BCIngpCb1YnOow",
-    "title": "【朝活】無事にはじめての朝活できるのか",
-    "date": "2026-04-02T06:00:00.000+09:00",
-    "status": "upcoming",
-    "thumbnail": "https://i.ytimg.com/vi/KwwVqCjhc4s/mqdefault_live.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/Me8I_Op8OlIy8Vuj387_Hdi6gnrZ-qiY1yDDt1Q5yKMKA51ISagT76HE01gw8xbLcef0vpsPgoc",
-    "url": "https://www.youtube.com/watch?v=KwwVqCjhc4s"
-  },
-  {
     "name": "堂下さとり",
     "youtubeid": "UCBq6MSUL-Ermvnoj3PtX7Iw",
     "title": "【雑談】4月2日朝のニュース【パレデミア学園/堂下さとり】",
@@ -1510,6 +1500,16 @@
     "url": "https://www.youtube.com/watch?v=OXtsZQY1giM"
   },
   {
+    "name": "藤宮コトハ",
+    "youtubeid": "UCGndc74kfWb_A-8hZBG534Q",
+    "title": "(🍄•᎑•🍄)🍄‍🟫#shorts #dance #藤宮コトハ",
+    "date": "2026-04-05T05:18:00.000+09:00",
+    "status": "archive",
+    "thumbnail": "https://i.ytimg.com/vi/1ESG7cw2tqU/mqdefault.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/rthBXvqjNFcVwEp-AWpiZDXnNjBodSXlsDTa-sjW6uR6Ssv3wuOw2dMXDZLlYaf_c4YiKfItHXU",
+    "url": "https://www.youtube.com/watch?v=1ESG7cw2tqU"
+  },
+  {
     "name": "花晴りら",
     "youtubeid": "UCqcnlq8uJqnGml6hcIrMCZw",
     "title": "【朝活雑談】初見さん大歓迎🌷200人におはよう言いたい日曜日の朝活🔆【花晴りら/パレデミア学園】#れりライブ #新人vtuber",
@@ -1528,6 +1528,16 @@
     "thumbnail": "https://i.ytimg.com/vi/Qu6OEg4dDUI/mqdefault_live.jpg",
     "channelIcon": "https://yt3.googleusercontent.com/pDP2GuylW0RN1REDScFAlNklbXaPRqTm2mwT2F7dIo8xoYYFPfspsjGH_G3RagwlKVlQbdw95bY",
     "url": "https://www.youtube.com/watch?v=Qu6OEg4dDUI"
+  },
+  {
+    "name": "堂下さとり",
+    "youtubeid": "UCBq6MSUL-Ermvnoj3PtX7Iw",
+    "title": "【雑談】4月5日昼のニュース【平和なニュース】【堂下さとり/パレデミア学園】",
+    "date": "2026-04-05T12:00:00.000+09:00",
+    "status": "upcoming",
+    "thumbnail": "https://i.ytimg.com/vi/RScRDsKO5aE/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/eW_Hug0M6zFk9QSbAmOUWLMSfzBlCHmes-8yAksvfUNzyLgY6TSsE_eW8ncfE4bHYZXKoTWxmQ",
+    "url": "https://www.youtube.com/watch?v=RScRDsKO5aE"
   },
   {
     "name": "夏渚まはろ",

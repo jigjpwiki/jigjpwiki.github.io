@@ -1390,6 +1390,26 @@
     "url": "https://www.youtube.com/watch?v=VN5quhNDb3Q"
   },
   {
+    "name": "七音うら",
+    "youtubeid": "UCv2IYO-4waCpHvn50SWWY2A",
+    "title": "【#雑談配信】結局お昼寝してない日の雑談。【七音うら】",
+    "date": "2026-04-06T02:00:44.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/OCNXDpS1zsU/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/T655ATpSd2gkjZBrokvlkaUH0f5-fCpQdcJpwxmmNdy6fxCYffAlq2sMhPOtFk_CvVyOkEPY8Q",
+    "url": "https://www.youtube.com/watch?v=OCNXDpS1zsU"
+  },
+  {
+    "name": "暁月クララ",
+    "youtubeid": "UCn4XvlTXjGSvDynpxpOYZPQ",
+    "title": "理想と現実…。んー？#理想と現実 #暁月クララ #vtuber",
+    "date": "2026-04-06T02:13:34.000+09:00",
+    "status": "archive",
+    "thumbnail": "https://i.ytimg.com/vi/umLgecXCG3A/mqdefault.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/8tcStp-WzdZPtf6bPq1DtUnFSd2Eq5AppSd3_CEQ7hNNpnRND8InaWdPCz6T1wIWWkGJuFrbT94",
+    "url": "https://www.youtube.com/watch?v=umLgecXCG3A"
+  },
+  {
     "name": "堂下さとり",
     "youtubeid": "UCBq6MSUL-Ermvnoj3PtX7Iw",
     "title": "【雑談】4月6日朝のニュース【平和なニュース】【堂下さとり/パレデミア学園】",
@@ -1450,6 +1470,16 @@
     "url": "https://www.youtube.com/watch?v=dzmVdeAMrX0"
   },
   {
+    "name": "魔法少女アルト",
+    "youtubeid": "UCtRhBS8dlaeBgVcnEZOkAbA",
+    "title": "【解説】エイプリルフール背景の裏側とネタの話をしたい！　 #Vtuber 【 魔法少女アルト / #アルトの魔法通信  】",
+    "date": "2026-04-06T21:30:00.000+09:00",
+    "status": "upcoming",
+    "thumbnail": "https://i.ytimg.com/vi/_Zc7rAVyrRQ/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/JwOkUNiR-08GjSI3MS8-Yk6jzONshtmRWZ9tpjOghB10quze7fgbJkhpPTpIfUX00HBACjAR8Q",
+    "url": "https://www.youtube.com/watch?v=_Zc7rAVyrRQ"
+  },
+  {
     "name": "変幻リメ",
     "youtubeid": "UC5bCRde8xRrNS7s6GjCNCyQ",
     "title": "【OW】初ランク！行きます！オーバーウォッチ！【＃変幻リメ】",
@@ -1508,5 +1538,15 @@
     "thumbnail": "https://i.ytimg.com/vi/F6X0hVVPs4A/mqdefault_live.jpg",
     "channelIcon": "https://yt3.googleusercontent.com/VB97J8AMHex_rkfd6hDhfiGhhVvrL-NNkseP2mMYSWh75sxA_oXctmxK5tV4FYgkM17RUAx6GQ",
     "url": "https://www.youtube.com/watch?v=F6X0hVVPs4A"
+  },
+  {
+    "name": "魔法少女アルト",
+    "youtubeid": "UCtRhBS8dlaeBgVcnEZOkAbA",
+    "title": "【マイクラ】力が欲しい！！！初心者によるダイヤゲットチャレンジ！！#Vtuber ＃アルトの魔法通信 【魔法少女アルト 】",
+    "date": "2026-04-08T21:30:00.000+09:00",
+    "status": "upcoming",
+    "thumbnail": "https://i.ytimg.com/vi/HOJJe6ILzzQ/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/JwOkUNiR-08GjSI3MS8-Yk6jzONshtmRWZ9tpjOghB10quze7fgbJkhpPTpIfUX00HBACjAR8Q",
+    "url": "https://www.youtube.com/watch?v=HOJJe6ILzzQ"
   }
 ]

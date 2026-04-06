@@ -1,15 +1,5 @@
 [
   {
-    "name": "新巻るろな",
-    "youtubeid": "UCUd4wJjvPQflbLnsk_YHleA",
-    "title": "【切り抜き】るろナーしか喜ばない動画 #shorts #vtuber #valorant",
-    "date": "2026-04-04T04:10:24.000+09:00",
-    "status": "archive",
-    "thumbnail": "https://i.ytimg.com/vi/R2jwskrG5ag/mqdefault.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/-4sLuWCih-DlfhpwpDQEuB6eupCB6kTImkIPmKnh54vu5I0F49RkveNQGiqy0p8t0GDU6eiegGE",
-    "url": "https://www.youtube.com/watch?v=R2jwskrG5ag"
-  },
-  {
     "name": "堂下さとり",
     "youtubeid": "UCBq6MSUL-Ermvnoj3PtX7Iw",
     "title": "【雑談】4月4日朝のニュース【平和なニュース】【堂下さとり/パレデミア学園】",
@@ -1018,6 +1008,16 @@
     "thumbnail": "https://i.ytimg.com/vi/tkZqzjwQc8c/mqdefault_live.jpg",
     "channelIcon": "https://yt3.googleusercontent.com/5l_IDFvbCkoc_xXy5i5YH24NcAgRR9bYZM9hu30Hm8may2x-7GiLIxkQ3DHQ4vI9uKwRUcbR6Q",
     "url": "https://www.youtube.com/watch?v=tkZqzjwQc8c"
+  },
+  {
+    "name": "堂下さとり",
+    "youtubeid": "UCBq6MSUL-Ermvnoj3PtX7Iw",
+    "title": "【雑談】ダイエット成功談失敗談教えて【パレデミア学園/堂下さとり】",
+    "date": "2026-04-06T12:07:02.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/YIl2vV3UA48/mqdefault.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/eW_Hug0M6zFk9QSbAmOUWLMSfzBlCHmes-8yAksvfUNzyLgY6TSsE_eW8ncfE4bHYZXKoTWxmQ",
+    "url": "https://www.youtube.com/watch?v=YIl2vV3UA48"
   },
   {
     "name": "緋雨柚",

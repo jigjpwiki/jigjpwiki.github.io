@@ -1,25 +1,5 @@
 [
   {
-    "name": "藤森ちとせ",
-    "youtubeid": "UCAhdxmsdngH4noySdpVAVWQ",
-    "title": "【壺おじ耐久】8時間～クリアできる気がしないですね～⛏✨【 Getting Over It with Bennett Foddy 】【#新人vtuber 】#ちとせらいぶ #パレデミア学園",
-    "date": "2026-04-03T11:05:10.000+09:00",
-    "status": "live",
-    "thumbnail": "https://i.ytimg.com/vi/w8DPv2w6Fe4/mqdefault_live.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/traR_yWe-AOGyM2wjo8h2FJO9JWBcbjfrL13X-umeD6BtNPopSZ2Q3YmdJq_5K9gWgHf_j64iQ",
-    "url": "https://www.youtube.com/watch?v=w8DPv2w6Fe4"
-  },
-  {
-    "name": "堂下さとり",
-    "youtubeid": "UCBq6MSUL-Ermvnoj3PtX7Iw",
-    "title": "【雑談】おひる【パレデミア学園/堂下さとり】",
-    "date": "2026-04-03T12:14:28.000+09:00",
-    "status": "live",
-    "thumbnail": "https://i.ytimg.com/vi/kXvei2_uRl4/mqdefault_live.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/eW_Hug0M6zFk9QSbAmOUWLMSfzBlCHmes-8yAksvfUNzyLgY6TSsE_eW8ncfE4bHYZXKoTWxmQ",
-    "url": "https://www.youtube.com/watch?v=kXvei2_uRl4"
-  },
-  {
     "name": "真昼ねる",
     "youtubeid": "UCI-8WyYqMymGPw9vg55HXDQ",
     "title": "個人V？企業V？ #vtuber #教えて真昼さん",
@@ -1220,6 +1200,16 @@
     "url": "https://www.youtube.com/watch?v=0F5dMs6VqdA"
   },
   {
+    "name": "鈴木沙透",
+    "youtubeid": "UCj5nRzNFXZn9GRhITRkKElA",
+    "title": "【#歌枠】アフター歌【鈴木沙透/パレデミア学園】",
+    "date": "2026-04-05T21:06:29.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/hAW3aH2_Ang/mqdefault.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/doWaEHgvIyGiFYS-kh_sISc4kxoKHfigCVy_DgtUJr3Pqwu4EIfaVD25ycH4FUg4gpTxUHWZbQ",
+    "url": "https://www.youtube.com/watch?v=hAW3aH2_Ang"
+  },
+  {
     "name": "七海ロナ",
     "youtubeid": "UCIaZylf5L9MsCMOJX3BdTEg",
     "title": "【雑談】学生気分になったっていいですよね？【パレプロ／七海ロナ】",
@@ -1430,6 +1420,36 @@
     "url": "https://www.youtube.com/watch?v=YaKvDI25O-w"
   },
   {
+    "name": "鬼多見アユム",
+    "youtubeid": "UCnrJK-sb3gSn3kRLkmpmzaw",
+    "title": "【#縦型配信 】今週もがんばるどん 【鬼多見アユム】#shorts",
+    "date": "2026-04-06T12:04:45.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/tkZqzjwQc8c/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/5l_IDFvbCkoc_xXy5i5YH24NcAgRR9bYZM9hu30Hm8may2x-7GiLIxkQ3DHQ4vI9uKwRUcbR6Q",
+    "url": "https://www.youtube.com/watch?v=tkZqzjwQc8c"
+  },
+  {
+    "name": "緋雨柚",
+    "youtubeid": "UCrB-SfrqB5ChY8aAT99grXw",
+    "title": "【#雑談 】新社会人を応援するfeat.角煮マン【パレデミア学園/緋雨柚】",
+    "date": "2026-04-06T12:19:40.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/WSgkAz8Vl2o/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/dPJHngNTeEfD_K0Mus141-We4xIuAhttm2pgEBl3VdGXqWvxGfy5mJfDMDbBmwI6UGc17dXb-g",
+    "url": "https://www.youtube.com/watch?v=WSgkAz8Vl2o"
+  },
+  {
+    "name": "堂下さとり",
+    "youtubeid": "UCBq6MSUL-Ermvnoj3PtX7Iw",
+    "title": "【黒歴史】小6の日記❤恋愛事情 【新人Vtuber】",
+    "date": "2026-04-06T12:35:32.000+09:00",
+    "status": "archive",
+    "thumbnail": "https://i.ytimg.com/vi/bWMJDAWpvQc/mqdefault.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/eW_Hug0M6zFk9QSbAmOUWLMSfzBlCHmes-8yAksvfUNzyLgY6TSsE_eW8ncfE4bHYZXKoTWxmQ",
+    "url": "https://www.youtube.com/watch?v=bWMJDAWpvQc"
+  },
+  {
     "name": "七海ロナ",
     "youtubeid": "UCIaZylf5L9MsCMOJX3BdTEg",
     "title": "#3【ドラクエ１】完全初見！！！人生初のドラゴンクエスト⚔【パレプロ／七海ロナ】",
@@ -1448,6 +1468,16 @@
     "thumbnail": "https://i.ytimg.com/vi/9IggQlV3SQA/mqdefault_live.jpg",
     "channelIcon": "https://yt3.googleusercontent.com/iktv-39nC7NDASD1WeXms-DEuHuVqB5RhwTtdDe26w-BCvqf6yq3r_8zBiv2i2CfNXCK0uE8",
     "url": "https://www.youtube.com/watch?v=9IggQlV3SQA"
+  },
+  {
+    "name": "江波キョウカ",
+    "youtubeid": "UChpkyQ3O21OnkcMcgCoNHCg",
+    "title": "꒰ঌ 雑談┆江波キョウカ生誕ライブ2026ありがとうございました🎉【#江波キョウカ/ パレプロ 】",
+    "date": "2026-04-06T20:00:00.000+09:00",
+    "status": "upcoming",
+    "thumbnail": "https://i.ytimg.com/vi/gLSSbgjwdpQ/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/pM4ZefnBFJ2qlBEqknYCFHdW6dLH29KptwG0OYSu1-mAVAIy5M1IjwpMwC24-A_v07nluGGrlQ",
+    "url": "https://www.youtube.com/watch?v=gLSSbgjwdpQ"
   },
   {
     "name": "銘兎目あう",

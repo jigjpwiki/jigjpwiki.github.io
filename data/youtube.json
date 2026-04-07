@@ -1,55 +1,5 @@
 [
   {
-    "name": "鬼多見アユム",
-    "youtubeid": "UCnrJK-sb3gSn3kRLkmpmzaw",
-    "title": "【#縦型配信 】土曜日になったぞおおお 【鬼多見アユム】#shorts",
-    "date": "2026-04-04T12:00:00.000+09:00",
-    "status": "upcoming",
-    "thumbnail": "https://i.ytimg.com/vi/6fvfuCdcd_k/mqdefault_live.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/5l_IDFvbCkoc_xXy5i5YH24NcAgRR9bYZM9hu30Hm8may2x-7GiLIxkQ3DHQ4vI9uKwRUcbR6Q",
-    "url": "https://www.youtube.com/watch?v=6fvfuCdcd_k"
-  },
-  {
-    "name": "鈴木沙透",
-    "youtubeid": "UCj5nRzNFXZn9GRhITRkKElA",
-    "title": "【歌枠切り抜き】1年前の自分に文句言いまくる#鈴木沙透 #六兆年と一夜物語",
-    "date": "2026-04-04T12:00:55.000+09:00",
-    "status": "archive",
-    "thumbnail": "https://i.ytimg.com/vi/mfGPalMBB0M/mqdefault.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/doWaEHgvIyGiFYS-kh_sISc4kxoKHfigCVy_DgtUJr3Pqwu4EIfaVD25ycH4FUg4gpTxUHWZbQ",
-    "url": "https://www.youtube.com/watch?v=mfGPalMBB0M"
-  },
-  {
-    "name": "緋雨柚",
-    "youtubeid": "UCrB-SfrqB5ChY8aAT99grXw",
-    "title": "【#歌枠】雨だもん気分あげてこーぜ【パレデミア学園/緋雨柚】",
-    "date": "2026-04-04T12:05:33.000+09:00",
-    "status": "live",
-    "thumbnail": "https://i.ytimg.com/vi/BYkQKC6GXLc/mqdefault_live.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/dPJHngNTeEfD_K0Mus141-We4xIuAhttm2pgEBl3VdGXqWvxGfy5mJfDMDbBmwI6UGc17dXb-g",
-    "url": "https://www.youtube.com/watch?v=BYkQKC6GXLc"
-  },
-  {
-    "name": "飛渡ココ",
-    "youtubeid": "UCMElh_FlHyzp_obVe-b3Qrg",
-    "title": "元ハトの新人Vtuberが神シード見つけた結果！！",
-    "date": "2026-04-04T12:28:05.000+09:00",
-    "status": "live",
-    "thumbnail": "https://i.ytimg.com/vi/XFOzGMeeHhM/mqdefault_live.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/8I1SuqBXvb4dRY9bcXYc8xxSxL-L2CAe4YvBx2x3kOkyboXRq-G0rVo7pYflUmvo0UKIyxnlRA",
-    "url": "https://www.youtube.com/watch?v=XFOzGMeeHhM"
-  },
-  {
-    "name": "瀬奈りるか",
-    "youtubeid": "UCWi_ztz8Xuz4XfzhoG6ZfyA",
-    "title": "【Minecraft】まったり昼活マイクラ！🔨💫メン限サーバーで遊びます！🎶視察してまったり整地したい⭐【#パレデミア学園 】＃せなりるライブ",
-    "date": "2026-04-04T14:00:00.000+09:00",
-    "status": "upcoming",
-    "thumbnail": "https://i.ytimg.com/vi/8pj7xmFKPbk/mqdefault_live.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/bM-okYT9oTq3M5dq33VSpidEiaC8MP2EoQXX2gNpgW7PAV7RSn1t7_2HghmCcAwrNxriAmMy",
-    "url": "https://www.youtube.com/watch?v=8pj7xmFKPbk"
-  },
-  {
     "name": "常磐カナメ",
     "youtubeid": "UCbNEgJIF_ADD9e8-q7SoxCg",
     "title": "先輩で遊んで御満悦なクソガキ #shorts",
@@ -1360,6 +1310,36 @@
     "url": "https://www.youtube.com/watch?v=2w0wzjyrVFI"
   },
   {
+    "name": "瀬奈りるか",
+    "youtubeid": "UCWi_ztz8Xuz4XfzhoG6ZfyA",
+    "title": "【雑談】まったり昼活！🌟イベント始まったからイベントの公約とか考えたい🪄💫TikTokと同時配信！🎶【＃パレデミア学園】＃せなりるライブ #vtuber",
+    "date": "2026-04-07T12:00:22.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/uQa5QLHKv74/mqdefault.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/bM-okYT9oTq3M5dq33VSpidEiaC8MP2EoQXX2gNpgW7PAV7RSn1t7_2HghmCcAwrNxriAmMy",
+    "url": "https://www.youtube.com/watch?v=uQa5QLHKv74"
+  },
+  {
+    "name": "鬼多見アユム",
+    "youtubeid": "UCnrJK-sb3gSn3kRLkmpmzaw",
+    "title": "【#縦型配信 】今日もひるかーつ✨✨✨ 【鬼多見アユム】#shorts",
+    "date": "2026-04-07T12:00:25.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/CDziFvjE1eA/mqdefault.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/5l_IDFvbCkoc_xXy5i5YH24NcAgRR9bYZM9hu30Hm8may2x-7GiLIxkQ3DHQ4vI9uKwRUcbR6Q",
+    "url": "https://www.youtube.com/watch?v=CDziFvjE1eA"
+  },
+  {
+    "name": "藤森ちとせ",
+    "youtubeid": "UCAhdxmsdngH4noySdpVAVWQ",
+    "title": "【整地雑談】一面平らにしちゃいましょうね～⛏✨作業用にも😉ROM歓迎🎉【Minecraft】【#vtuber 】#ちとせらいぶ #パレデミア学園",
+    "date": "2026-04-07T12:59:36.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/X63k9uDU7gQ/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/traR_yWe-AOGyM2wjo8h2FJO9JWBcbjfrL13X-umeD6BtNPopSZ2Q3YmdJq_5K9gWgHf_j64iQ",
+    "url": "https://www.youtube.com/watch?v=X63k9uDU7gQ"
+  },
+  {
     "name": "Palette Project",
     "youtubeid": "UC_cCW1xmXwRFp1tX-RD2X1Q",
     "title": "【放課後会えますか？】もしもパレプロが恋愛シミュレーションだったら!? 学園編🎒【 #パレプロEX 】",
@@ -1368,6 +1348,26 @@
     "thumbnail": "https://i.ytimg.com/vi/Y_CPQA3bYkA/mqdefault_live.jpg",
     "channelIcon": "https://yt3.googleusercontent.com/ytc/AIdro_nuv43BXc-JNRM-omFed0brcXGTD8qvA8313ZeQa8PfviA",
     "url": "https://www.youtube.com/watch?v=Y_CPQA3bYkA"
+  },
+  {
+    "name": "秋桜しゅお",
+    "youtubeid": "UCPjtwOeRQV5EFkCwUycZsgw",
+    "title": "【昭和歌謡縛り #歌枠配信 】しゅおと言えば？#昭和歌謡  ！！大好きな曲たちをお届け！🧡【秋桜しゅお/登龍門BOX】#karaoke #vtuber #vsinger",
+    "date": "2026-04-07T20:00:00.000+09:00",
+    "status": "upcoming",
+    "thumbnail": "https://i.ytimg.com/vi/yQjQCEiuz7E/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/WBGP05KaXeA21IzCbCeM0QHa0v9maVvVUBDZ2DyfTT62F1wGaW3hLOQBy1gCfuQfEnDNgwbsrQ",
+    "url": "https://www.youtube.com/watch?v=yQjQCEiuz7E"
+  },
+  {
+    "name": "藤森ちとせ",
+    "youtubeid": "UCAhdxmsdngH4noySdpVAVWQ",
+    "title": "【壺おじ配信】空が紫色になってきましたね～☺⛏27時間～【 Getting Over It with Bennett Foddy 】【#vtuber 】#ちとせらいぶ #パレデミア学園",
+    "date": "2026-04-07T20:00:00.000+09:00",
+    "status": "upcoming",
+    "thumbnail": "https://i.ytimg.com/vi/vxa05VMLkek/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/traR_yWe-AOGyM2wjo8h2FJO9JWBcbjfrL13X-umeD6BtNPopSZ2Q3YmdJq_5K9gWgHf_j64iQ",
+    "url": "https://www.youtube.com/watch?v=vxa05VMLkek"
   },
   {
     "name": "桜樹美彩",
@@ -1448,5 +1448,15 @@
     "thumbnail": "https://i.ytimg.com/vi/u5Tadch4YC0/mqdefault_live.jpg",
     "channelIcon": "https://yt3.googleusercontent.com/y0zP0Uz7HSLx5dv3xo488Suxk8rJQQUC1wXaymjUBIQIwa25WlVu_VmrsT1xAyVD-jgeL7hs",
     "url": "https://www.youtube.com/watch?v=u5Tadch4YC0"
+  },
+  {
+    "name": "銘兎目あう",
+    "youtubeid": "UCpr-9ssUUgSb0EpDA8bRuTA",
+    "title": "【ドラゴンボール Z KAKAROT】完全初見！！キャラ2人しか知らないVTuberが挑む＃02【 #銘兎目あう 】※ネタバレあり #ドラゴンボールz #ドラゴンボール #Vtuber",
+    "date": "2026-04-12T13:30:00.000+09:00",
+    "status": "upcoming",
+    "thumbnail": "https://i.ytimg.com/vi/bJ3wFCtDnqs/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/VB97J8AMHex_rkfd6hDhfiGhhVvrL-NNkseP2mMYSWh75sxA_oXctmxK5tV4FYgkM17RUAx6GQ",
+    "url": "https://www.youtube.com/watch?v=bJ3wFCtDnqs"
   }
 ]

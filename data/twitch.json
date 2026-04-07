@@ -1,14 +1,5 @@
 [
   {
-    "name": "月皇ちな",
-    "twitchid": "chi7_v",
-    "title": "ふるぱVALO！ w/じょんそん,そらる,山本涼介,アステル・レダ #chi7live",
-    "date": "2026-04-04T22:21:07.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://yt3.googleusercontent.com/dPtSb9jgOlWAvy3_pEFIVzTc5iOd4OGhJQIVwjT6RpMAjOmJQHDzs0g2gYCjNEnlpcgQO8fb5-k",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/0ac54762438c9587550d_chi7_v_315703167729_1775308862//thumb/thumb0-320x180.jpg"
-  },
-  {
     "name": "李じゅぴ汰",
     "twitchid": "lee_jupita",
     "title": "【RACCOIN】今日もコインタワーじゃらじゃらしていきたい【雑談/ラッコイン】",
@@ -83,10 +74,19 @@
   {
     "name": "李じゅぴ汰",
     "twitchid": "lee_jupita",
-    "title": "【超オーバーウォッチ2】 エイプリルフール限定モードをやるよ！！！【Overwatch2】",
+    "title": "【RACCOIN】最強構成やってみる！！！！いくぞー！【雑談/ラッコイン】",
     "date": "2026-04-07T19:22:14.000+09:00",
     "status": "live",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lee_jupita-320x180.jpg"
+  },
+  {
+    "name": "李じゅぴ汰",
+    "twitchid": "lee_jupita",
+    "title": "【超オーバーウォッチ2】 エイプリルフール限定モードをやるよ！！！【Overwatch2】",
+    "date": "2026-04-07T19:22:20.000+09:00",
+    "status": "archive",
+    "channelIcon": "https://yt3.googleusercontent.com/QQqec9A1J7eLk9RrRYD9vvk51BBJzcE1leGkU9n4YkwHqht9gmGT1ktmSlKItQtbuMSGuklAFxM",
+    "thumbnail": "https://vod-secure.twitch.tv/_404/404_processing_320x180.png"
   },
   {
     "name": "銘兎目あう",

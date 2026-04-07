@@ -1,25 +1,5 @@
 [
   {
-    "name": "七音うら",
-    "youtubeid": "UCv2IYO-4waCpHvn50SWWY2A",
-    "title": "【#雑談配信】花粉の猛威に怯えながら雑談。【七音うら】",
-    "date": "2026-04-05T02:01:38.000+09:00",
-    "status": "live",
-    "thumbnail": "https://i.ytimg.com/vi/i_mdGnQRD9o/mqdefault_live.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/T655ATpSd2gkjZBrokvlkaUH0f5-fCpQdcJpwxmmNdy6fxCYffAlq2sMhPOtFk_CvVyOkEPY8Q",
-    "url": "https://www.youtube.com/watch?v=i_mdGnQRD9o"
-  },
-  {
-    "name": "陰山アゲハ",
-    "youtubeid": "UCIw8aQVRBwi72yOrPLgkbRQ",
-    "title": "【apex】ソロラン成長記録※彼女は初心者です【陰山アゲハ パレデミア学園】",
-    "date": "2026-04-05T02:20:52.000+09:00",
-    "status": "live",
-    "thumbnail": "https://i.ytimg.com/vi/dKOn3J4oKP8/mqdefault_live.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/TRbQGbBCM6R6LAzCQXka_AxVqF-ozTWwqW455tZU9q9GMo4ijQNNc3d818MX-5wmMnhv-k84Rw",
-    "url": "https://www.youtube.com/watch?v=dKOn3J4oKP8"
-  },
-  {
     "name": "新巻るろな",
     "youtubeid": "UCUd4wJjvPQflbLnsk_YHleA",
     "title": "【切り抜き】R.E.P.O.しながらVALOやってるつもりの女 #shorts #vtuber",
@@ -1260,6 +1240,16 @@
     "url": "https://www.youtube.com/watch?v=dCsuoBhof58"
   },
   {
+    "name": "しーはむ",
+    "youtubeid": "UC5xSDiB2WG4pO_zUZ_t-n0Q",
+    "title": "〘Poppy Playtime5〙最新作！恐怖のおもちゃ工場から抜け出したい！〘VTuber│#しーはむ│ぷろのゔぁ〙",
+    "date": "2026-04-07T21:33:09.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/El5zJ_DYdfU/mqdefault.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/y0zP0Uz7HSLx5dv3xo488Suxk8rJQQUC1wXaymjUBIQIwa25WlVu_VmrsT1xAyVD-jgeL7hs",
+    "url": "https://www.youtube.com/watch?v=El5zJ_DYdfU"
+  },
+  {
     "name": "堂下さとり",
     "youtubeid": "UCBq6MSUL-Ermvnoj3PtX7Iw",
     "title": "【食レポ？】ハーゲンダッツ 和のスイーツアソート【オススメ紹介】",
@@ -1340,6 +1330,56 @@
     "url": "https://www.youtube.com/watch?v=4z5mvVm4mzQ"
   },
   {
+    "name": "緋雨柚",
+    "youtubeid": "UCrB-SfrqB5ChY8aAT99grXw",
+    "title": "【FF13】大好きな作品 #1【パレデミア学園/緋雨柚】",
+    "date": "2026-04-08T01:01:42.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/mAwYJLv9s_E/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/dPJHngNTeEfD_K0Mus141-We4xIuAhttm2pgEBl3VdGXqWvxGfy5mJfDMDbBmwI6UGc17dXb-g",
+    "url": "https://www.youtube.com/watch?v=mAwYJLv9s_E"
+  },
+  {
+    "name": "香鳴ハノン",
+    "youtubeid": "UCay6Y3oEoiC6ZEE2G0UZu_A",
+    "title": "【超かぐや姫！】制服で「Reply」踊ってみた💗 #香鳴ハノン #パレプロ",
+    "date": "2026-04-08T01:09:06.000+09:00",
+    "status": "archive",
+    "thumbnail": "https://i.ytimg.com/vi/zYYq3_YjO5I/mqdefault.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/qvbeb9E-gYc822fxxzi6Ug5QyjhqZAWbUskHANcwDWP5W8iTsK3LcQJnjS4CVBuFJ6fONsM9F7M",
+    "url": "https://www.youtube.com/watch?v=zYYq3_YjO5I"
+  },
+  {
+    "name": "七音うら",
+    "youtubeid": "UCv2IYO-4waCpHvn50SWWY2A",
+    "title": "【#雑談配信】今日なんか寒くないですか？【七音うら】",
+    "date": "2026-04-08T02:01:23.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/FLgyomW70r0/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/T655ATpSd2gkjZBrokvlkaUH0f5-fCpQdcJpwxmmNdy6fxCYffAlq2sMhPOtFk_CvVyOkEPY8Q",
+    "url": "https://www.youtube.com/watch?v=FLgyomW70r0"
+  },
+  {
+    "name": "天辻ゆらぐ",
+    "youtubeid": "UCeOFQCn_QZJMTszlRYRg3rQ",
+    "title": "【縦型/雑談歌枠】高評価111目標🎶あなたのお姉さんアイドルVtuber🪼💜初見歓迎✨️【天辻ゆらぐ/パレデミア学園】 #新人Vtuber #ゆらぐっどたいむ",
+    "date": "2026-04-08T02:29:34.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/03f8vKt9lNA/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/4AFFu60kFJqix-OhtDW3EJdQ0jQa1LrK56tGpvqvbGodMQFpkH-_qtvL_66dPGD3kl4LW9N4",
+    "url": "https://www.youtube.com/watch?v=03f8vKt9lNA"
+  },
+  {
+    "name": "堂下さとり",
+    "youtubeid": "UCBq6MSUL-Ermvnoj3PtX7Iw",
+    "title": "【雑談】4月8日朝のニュース【平和なニュース】【堂下さとり/パレデミア学園】",
+    "date": "2026-04-08T06:20:00.000+09:00",
+    "status": "upcoming",
+    "thumbnail": "https://i.ytimg.com/vi/891jjFFSR1M/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/eW_Hug0M6zFk9QSbAmOUWLMSfzBlCHmes-8yAksvfUNzyLgY6TSsE_eW8ncfE4bHYZXKoTWxmQ",
+    "url": "https://www.youtube.com/watch?v=891jjFFSR1M"
+  },
+  {
     "name": "桜樹美彩",
     "youtubeid": "UCTwKpTFX1aAXD0xpBqYqTdg",
     "title": "【 朝活 / 雑談 】水曜日の朝活雑談☀ 初見＆ROM勢大歓迎🎉4/8 AM7:00～ 🐤 #vtuber #みさライなう #フリートーク #桜樹美彩 #新人vtuber",
@@ -1418,6 +1458,16 @@
     "thumbnail": "https://i.ytimg.com/vi/wHpOUWOJWwQ/mqdefault_live.jpg",
     "channelIcon": "https://yt3.googleusercontent.com/y0zP0Uz7HSLx5dv3xo488Suxk8rJQQUC1wXaymjUBIQIwa25WlVu_VmrsT1xAyVD-jgeL7hs",
     "url": "https://www.youtube.com/watch?v=wHpOUWOJWwQ"
+  },
+  {
+    "name": "妖小琳",
+    "youtubeid": "UC6eopxuX7lx8GnpkntObt1w",
+    "title": "【#雑談 /FreeTalk】明日がちょっとマシになるように－静かな夜にゆるっと相談—【妖小琳/Vtuber】",
+    "date": "2026-04-08T23:00:00.000+09:00",
+    "status": "upcoming",
+    "thumbnail": "https://i.ytimg.com/vi/vBTl5fkv9VI/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/Ji8DJgyzWKUbbeWlYgFfsCZtyiGZ-zM597otZBcFnIoEVIw7284GbNbBQcALgEKwqvk8OXNZLA",
+    "url": "https://www.youtube.com/watch?v=vBTl5fkv9VI"
   },
   {
     "name": "泡清みる",

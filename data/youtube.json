@@ -1,15 +1,5 @@
 [
   {
-    "name": "虎島めら。",
-    "youtubeid": "UCqewFfi_wwydw6fpazmlAFA",
-    "title": "歌枠【虎島めら。ぷろのゔぁ】 #VTuber",
-    "date": "2026-04-05T16:36:16.000+09:00",
-    "status": "live",
-    "thumbnail": "https://i.ytimg.com/vi/TaXfWIh6KcQ/mqdefault_live.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/6nfq-sTwa1PCHMrmFq5uNijG5PcQ8BRheGNXHc6GEMlBustwPyvfLIPWtxaHpKOhdXU1tFTnfA",
-    "url": "https://www.youtube.com/watch?v=TaXfWIh6KcQ"
-  },
-  {
     "name": "桜堂ねる",
     "youtubeid": "UC0H7dRRqhfOifbYQ2TURdAg",
     "title": "4月5日【桜堂ねる】#今日は何の日 #ねる道場 #vtuber #shorts",
@@ -1060,6 +1050,16 @@
     "url": "https://www.youtube.com/watch?v=jT4VYfk6UD8"
   },
   {
+    "name": "新巻るろな",
+    "youtubeid": "UCUd4wJjvPQflbLnsk_YHleA",
+    "title": "【 #歌枠 】本日の素人カラオケ垂れ流し会場はこちら！【新巻るろな】　#vtuber",
+    "date": "2026-04-07T20:29:01.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/YZmWkdjbPow/mqdefault.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/-4sLuWCih-DlfhpwpDQEuB6eupCB6kTImkIPmKnh54vu5I0F49RkveNQGiqy0p8t0GDU6eiegGE",
+    "url": "https://www.youtube.com/watch?v=YZmWkdjbPow"
+  },
+  {
     "name": "瀬奈りるか",
     "youtubeid": "UCWi_ztz8Xuz4XfzhoG6ZfyA",
     "title": "【サ。-算数問題について-】小学生レベルの計算間違える人いる？？？ #せなりるライブ #vtuber #切り抜き",
@@ -1368,6 +1368,16 @@
     "thumbnail": "https://i.ytimg.com/vi/IXGeueRASVc/mqdefault_live.jpg",
     "channelIcon": "https://yt3.googleusercontent.com/Me8I_Op8OlIy8Vuj387_Hdi6gnrZ-qiY1yDDt1Q5yKMKA51ISagT76HE01gw8xbLcef0vpsPgoc",
     "url": "https://www.youtube.com/watch?v=IXGeueRASVc"
+  },
+  {
+    "name": "火乃晴るい",
+    "youtubeid": "UCVI8oEcv0MArpjPdwlRgYRw",
+    "title": "好きな花とは…？ #新人Vtuber #vtuber #short",
+    "date": "2026-04-08T15:43:14.000+09:00",
+    "status": "archive",
+    "thumbnail": "https://i.ytimg.com/vi/Bne8glFdEL4/mqdefault.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/8vDFqOVNprKqFE0o7EecXyQleBXIibeJZpXpSgjm5msh4Yd0S8hTsbmYZyOBXa3bUEgBJHZt1w",
+    "url": "https://www.youtube.com/watch?v=Bne8glFdEL4"
   },
   {
     "name": "桜樹美彩",

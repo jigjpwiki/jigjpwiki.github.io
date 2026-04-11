@@ -1,25 +1,5 @@
 [
   {
-    "name": "鈴木沙透",
-    "youtubeid": "UCj5nRzNFXZn9GRhITRkKElA",
-    "title": "【切り抜き】読み間違いをガチで心配される#鈴木沙透 #vtuber",
-    "date": "2026-04-08T23:30:40.000+09:00",
-    "status": "archive",
-    "thumbnail": "https://i.ytimg.com/vi/hrvi63ILayM/mqdefault.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/doWaEHgvIyGiFYS-kh_sISc4kxoKHfigCVy_DgtUJr3Pqwu4EIfaVD25ycH4FUg4gpTxUHWZbQ",
-    "url": "https://www.youtube.com/watch?v=hrvi63ILayM"
-  },
-  {
-    "name": "陰山アゲハ",
-    "youtubeid": "UCIw8aQVRBwi72yOrPLgkbRQ",
-    "title": "【耐久】ほんまに助けて、もう夏日が来るなんておれたえられない【#新人Vtuber #パレデミア学園 】",
-    "date": "2026-04-08T23:48:17.000+09:00",
-    "status": "live",
-    "thumbnail": "https://i.ytimg.com/vi/GLSnkALQOqs/mqdefault_live.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/TRbQGbBCM6R6LAzCQXka_AxVqF-ozTWwqW455tZU9q9GMo4ijQNNc3d818MX-5wmMnhv-k84Rw",
-    "url": "https://www.youtube.com/watch?v=GLSnkALQOqs"
-  },
-  {
     "name": "香鳴ハノン",
     "youtubeid": "UCay6Y3oEoiC6ZEE2G0UZu_A",
     "title": "【#爆裂愛してる】筋肉痛になりそうなダンス踊ってみた #香鳴ハノン #パレプロ",
@@ -1328,6 +1308,46 @@
     "thumbnail": "https://i.ytimg.com/vi/spzXVPCfQaA/mqdefault_live.jpg",
     "channelIcon": "https://yt3.googleusercontent.com/JwOkUNiR-08GjSI3MS8-Yk6jzONshtmRWZ9tpjOghB10quze7fgbJkhpPTpIfUX00HBACjAR8Q",
     "url": "https://www.youtube.com/watch?v=spzXVPCfQaA"
+  },
+  {
+    "name": "香鳴ハノン",
+    "youtubeid": "UCay6Y3oEoiC6ZEE2G0UZu_A",
+    "title": "【歌枠｜KARAOKE】週末は平成のアニソンで盛り上がろう～～～！！！【#パレプロ #香鳴ハノン】",
+    "date": "2026-04-11T23:06:48.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/mo5Y9G4nXts/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/qvbeb9E-gYc822fxxzi6Ug5QyjhqZAWbUskHANcwDWP5W8iTsK3LcQJnjS4CVBuFJ6fONsM9F7M",
+    "url": "https://www.youtube.com/watch?v=mo5Y9G4nXts"
+  },
+  {
+    "name": "雛菊のん",
+    "youtubeid": "UChccV6U0Tkx9de4YjXbEelw",
+    "title": "ギャルによる入学式の朝理想と現実#shorts #vtuber #新人vtuber #おしゃべり #おすすめにのりたい #バズれ",
+    "date": "2026-04-11T23:11:20.000+09:00",
+    "status": "archive",
+    "thumbnail": "https://i.ytimg.com/vi/bRIAINmmLwg/mqdefault.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/OxvUqyZAoX4gIX91GOkYMIE2iYfD1ndRKGZbo4Ih8cDb5QuoXpqNJWZKpephYlI0zNiYjQptAQ",
+    "url": "https://www.youtube.com/watch?v=bRIAINmmLwg"
+  },
+  {
+    "name": "愛染アネラ",
+    "youtubeid": "UC7ek9Q4cK9O0eT3hiUYJaQw",
+    "title": "【 #モンスターハンターストーリーズ3 】HR999のギャルがやるモンハンだぞっ💗 #15 【#新人Vtuber 愛染アネラ 】",
+    "date": "2026-04-11T23:24:08.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/46IKWt3OCVw/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/R99ADiR_1bRxcNCpiGLCW6ortzJy4JZFjlLaEHeDSJfYgwO_IieZWjjp4GbZauEeMxg_hhoS3A",
+    "url": "https://www.youtube.com/watch?v=46IKWt3OCVw"
+  },
+  {
+    "name": "鈴木沙透",
+    "youtubeid": "UCj5nRzNFXZn9GRhITRkKElA",
+    "title": "【#歌枠 】本日のアフター歌枠【鈴木沙透/パレデミア学園】",
+    "date": "2026-04-11T23:32:47.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/_Ejv2cnZNNo/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/doWaEHgvIyGiFYS-kh_sISc4kxoKHfigCVy_DgtUJr3Pqwu4EIfaVD25ycH4FUg4gpTxUHWZbQ",
+    "url": "https://www.youtube.com/watch?v=_Ejv2cnZNNo"
   },
   {
     "name": "花晴りら",

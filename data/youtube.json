@@ -1,25 +1,5 @@
 [
   {
-    "name": "瀬奈りるか",
-    "youtubeid": "UCWi_ztz8Xuz4XfzhoG6ZfyA",
-    "title": "【歌枠】イベント中に100曲歌う！🎤✨1枠目はアニソン縛り！🎶ちょっと昔のアニソンメインで歌います🪄💫TikTokと同時配信！🎶【＃パレデミア学園】＃せなりるライブ #vtuber",
-    "date": "2026-04-08T22:00:00.000+09:00",
-    "status": "upcoming",
-    "thumbnail": "https://i.ytimg.com/vi/DPr-41Q-60M/mqdefault_live.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/bM-okYT9oTq3M5dq33VSpidEiaC8MP2EoQXX2gNpgW7PAV7RSn1t7_2HghmCcAwrNxriAmMy",
-    "url": "https://www.youtube.com/watch?v=DPr-41Q-60M"
-  },
-  {
-    "name": "泡清みる",
-    "youtubeid": "UC0pz1TaDyqeO5p8_gbdeunw",
-    "title": "【真夜中ティータイム】日本一堅いあれを食べながら配信🍞【ぷろのゔぁ/泡清みる】",
-    "date": "2026-04-08T22:02:51.000+09:00",
-    "status": "live",
-    "thumbnail": "https://i.ytimg.com/vi/Cpuim1PGHgA/mqdefault.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/XefzBgTJORQ_8-p4C-a-57IHhaUNpY9becOfXRTDmQ4ezWFTtdBtXQ5H2tJlgUTnYBXUgwZ3dg",
-    "url": "https://www.youtube.com/watch?v=Cpuim1PGHgA"
-  },
-  {
     "name": "雛菊のん",
     "youtubeid": "UChccV6U0Tkx9de4YjXbEelw",
     "title": "ギャルによるクラス替えの時の反応の違い#shorts #vtuber #新人vtuber #おしゃべり #おすすめにのりたい #バズれ",
@@ -1180,6 +1160,16 @@
     "url": "https://www.youtube.com/watch?v=DFFVissZISE"
   },
   {
+    "name": "夏渚まはろ",
+    "youtubeid": "UC_a00ml_EVDXSrtY8ZuyqGQ",
+    "title": "【Cuphead￤カップヘッド】インクウェル島もあと少しでクリアな気がする！【#まはリメ￤#夏渚まはろ￤#変幻リメ￤#パレプロ研究生】",
+    "date": "2026-04-11T18:14:40.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/C9jWZecOg60/mqdefault.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/iktv-39nC7NDASD1WeXms-DEuHuVqB5RhwTtdDe26w-BCvqf6yq3r_8zBiv2i2CfNXCK0uE8",
+    "url": "https://www.youtube.com/watch?v=C9jWZecOg60"
+  },
+  {
     "name": "桜樹美彩",
     "youtubeid": "UCTwKpTFX1aAXD0xpBqYqTdg",
     "title": "【 #powerwashsimulator  】パワーウォッシュシミュレーターでキレイキレイしていく #他責組 / #vtuber  #みさライなう",
@@ -1340,6 +1330,36 @@
     "url": "https://www.youtube.com/watch?v=RRdoHDjKux8"
   },
   {
+    "name": "桜庭羽奈",
+    "youtubeid": "UCPgg_A08ksSYP-VivJGniRw",
+    "title": "【高評価100をめざします💕】お話ししたいことがたくさん！初見さん大歓迎！🐻【新人VTuberの雑談／歌枠】🐻",
+    "date": "2026-04-11T22:02:45.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/5mK2B_gm2u4/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/04zALH6pYL7mkWILHajvBzfzg4hrwRCLBONme3K1PjuEeYJIRC6RYxPmJzVZRuN42skHEDNRGmo",
+    "url": "https://www.youtube.com/watch?v=5mK2B_gm2u4"
+  },
+  {
+    "name": "灯野ぺけ。",
+    "youtubeid": "UCldoz5HLh6BMW29HGnRpC0Q",
+    "title": "【久しぶりの雀魂参加型🀄💥】初見さん/ROMの人もおいで～💥≪パレデミア学園 / 灯野ぺけ。≫ #vtuber #雀魂  #麻雀",
+    "date": "2026-04-11T22:18:06.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/8Dv-WC5kkQo/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/fkb3ZihjrgGSVr5drGCJziRf-9EQ6AtqTswp3wNfS4xRMnVZKQ3WvcphIna7hTwOZpy5vq9UKg",
+    "url": "https://www.youtube.com/watch?v=8Dv-WC5kkQo"
+  },
+  {
+    "name": "魔法少女アルト",
+    "youtubeid": "UCtRhBS8dlaeBgVcnEZOkAbA",
+    "title": "【雑談】ちょっとだけしゃべろう！　 #Vtuber 【 魔法少女アルト / #アルトの魔法通信  】",
+    "date": "2026-04-11T22:38:37.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/spzXVPCfQaA/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/JwOkUNiR-08GjSI3MS8-Yk6jzONshtmRWZ9tpjOghB10quze7fgbJkhpPTpIfUX00HBACjAR8Q",
+    "url": "https://www.youtube.com/watch?v=spzXVPCfQaA"
+  },
+  {
     "name": "花晴りら",
     "youtubeid": "UCqcnlq8uJqnGml6hcIrMCZw",
     "title": "【朝活/縦型雑談】初見さん大歓迎🌷200人におはよう言いたい日曜日のまた～り朝活🔆【花晴りら/パレデミア学園】#れりライブ #新人vtuber",
@@ -1370,6 +1390,16 @@
     "url": "https://www.youtube.com/watch?v=bJ3wFCtDnqs"
   },
   {
+    "name": "桜樹美彩",
+    "youtubeid": "UCTwKpTFX1aAXD0xpBqYqTdg",
+    "title": "【 朝活 / 雑談 】350名様『おはよう』朝活雑談☕ 初見＆ROM勢大歓迎🎉4/13 AM7:00～ 🐤 #vtuber #みさライなう #桜樹美彩 #新人vtuber",
+    "date": "2026-04-13T07:00:00.000+09:00",
+    "status": "upcoming",
+    "thumbnail": "https://i.ytimg.com/vi/MOxvxr_qtnQ/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/pDP2GuylW0RN1REDScFAlNklbXaPRqTm2mwT2F7dIo8xoYYFPfspsjGH_G3RagwlKVlQbdw95bY",
+    "url": "https://www.youtube.com/watch?v=MOxvxr_qtnQ"
+  },
+  {
     "name": "妖小琳",
     "youtubeid": "UC6eopxuX7lx8GnpkntObt1w",
     "title": "【 #ドゥームズデイ 】同盟イベント：アンペーデと戦うぞ！【妖小琳 / 登龍門BOX】",
@@ -1378,6 +1408,16 @@
     "thumbnail": "https://i.ytimg.com/vi/l8YagC5-zeA/mqdefault_live.jpg",
     "channelIcon": "https://yt3.googleusercontent.com/Ji8DJgyzWKUbbeWlYgFfsCZtyiGZ-zM597otZBcFnIoEVIw7284GbNbBQcALgEKwqvk8OXNZLA",
     "url": "https://www.youtube.com/watch?v=l8YagC5-zeA"
+  },
+  {
+    "name": "桜樹美彩",
+    "youtubeid": "UCTwKpTFX1aAXD0xpBqYqTdg",
+    "title": "【 朝活 / ニュース 】４月14日（火）⏰ AM7:00『ちょこっと』朝活ニュース🍀天気予報/時事ニュース🍁初見＆ROM勢大歓迎🐥 #vtuber #みさライなう #桜樹美彩 #新人vtuber",
+    "date": "2026-04-14T07:00:00.000+09:00",
+    "status": "upcoming",
+    "thumbnail": "https://i.ytimg.com/vi/dSdmchwcvzc/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/pDP2GuylW0RN1REDScFAlNklbXaPRqTm2mwT2F7dIo8xoYYFPfspsjGH_G3RagwlKVlQbdw95bY",
+    "url": "https://www.youtube.com/watch?v=dSdmchwcvzc"
   },
   {
     "name": "Palette Project",

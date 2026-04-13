@@ -1,15 +1,5 @@
 [
   {
-    "name": "フローレ・ブランカ",
-    "youtubeid": "UCNb9zRVc1coFKxJAn9lVtsw",
-    "title": "【Getting Over It with Bennett Foddy】壷おじクリア！？耐久がしたかったの【フローレ・ブランカ/パレデミア学園】",
-    "date": "2026-04-10T23:30:00.000+09:00",
-    "status": "upcoming",
-    "thumbnail": "https://i.ytimg.com/vi/pephwwztXZE/mqdefault_live.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/xqdNSKZCNQ6ekbqgjixeOR0aTymLfmP_ILAFQ4sBF7ln-ZWxQYkVjGBun2pF1PwVC6nmwi2KFxE",
-    "url": "https://www.youtube.com/watch?v=pephwwztXZE"
-  },
-  {
     "name": "七音うら",
     "youtubeid": "UCv2IYO-4waCpHvn50SWWY2A",
     "title": "【#雑談配信】ちょっと花粉症ましな気がする雑談。【七音うら】",
@@ -1240,6 +1230,16 @@
     "url": "https://www.youtube.com/watch?v=1_o3P1pI1-E"
   },
   {
+    "name": "魔法少女アルト",
+    "youtubeid": "UCtRhBS8dlaeBgVcnEZOkAbA",
+    "title": "【雑談】新生活、どう？ 【 魔法少女アルト / #アルトの魔法通信  】 #vtuber 配信中",
+    "date": "2026-04-13T22:10:54.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/EHA81w4E8m4/mqdefault.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/JwOkUNiR-08GjSI3MS8-Yk6jzONshtmRWZ9tpjOghB10quze7fgbJkhpPTpIfUX00HBACjAR8Q",
+    "url": "https://www.youtube.com/watch?v=EHA81w4E8m4"
+  },
+  {
     "name": "李じゅぴ汰",
     "youtubeid": "UCHsAAyHJhPXuLS6N3Kig6PQ",
     "title": "【Trees Hate You】初見〇し！木におちょくられます！！【体験版】",
@@ -1258,6 +1258,56 @@
     "thumbnail": "https://i.ytimg.com/vi/iMFz9KuYrLQ/mqdefault_live.jpg",
     "channelIcon": "https://yt3.googleusercontent.com/Cu6AMAZAEC_DTANKoaloA_4iLCuEUQ8BiAwyHGuOUG9GtoIw6s7mXCv1-49LV1IgODYZfGowzQ",
     "url": "https://www.youtube.com/watch?v=iMFz9KuYrLQ"
+  },
+  {
+    "name": "藤宮コトハ",
+    "youtubeid": "UCGndc74kfWb_A-8hZBG534Q",
+    "title": "【雑談】春が来た～🌸🌷　【#パレプロ ／ #藤宮コトハ 】",
+    "date": "2026-04-14T00:03:33.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/DaTzqr2kZEU/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/rthBXvqjNFcVwEp-AWpiZDXnNjBodSXlsDTa-sjW6uR6Ssv3wuOw2dMXDZLlYaf_c4YiKfItHXU",
+    "url": "https://www.youtube.com/watch?v=DaTzqr2kZEU"
+  },
+  {
+    "name": "暁月クララ",
+    "youtubeid": "UCn4XvlTXjGSvDynpxpOYZPQ",
+    "title": "ダダダダダル / 雨良【#踊ってみた 】#dance #暁月クララ",
+    "date": "2026-04-14T00:25:06.000+09:00",
+    "status": "archive",
+    "thumbnail": "https://i.ytimg.com/vi/SlSnCEvH4yg/mqdefault.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/8tcStp-WzdZPtf6bPq1DtUnFSd2Eq5AppSd3_CEQ7hNNpnRND8InaWdPCz6T1wIWWkGJuFrbT94",
+    "url": "https://www.youtube.com/watch?v=SlSnCEvH4yg"
+  },
+  {
+    "name": "雛菊のん",
+    "youtubeid": "UChccV6U0Tkx9de4YjXbEelw",
+    "title": "ひそひそ配信💤おやすみを届ける💕#新人vtuber #睡眠導入",
+    "date": "2026-04-14T00:44:38.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/V5zGNJKLIwU/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/OxvUqyZAoX4gIX91GOkYMIE2iYfD1ndRKGZbo4Ih8cDb5QuoXpqNJWZKpephYlI0zNiYjQptAQ",
+    "url": "https://www.youtube.com/watch?v=V5zGNJKLIwU"
+  },
+  {
+    "name": "天辻ゆらぐ",
+    "youtubeid": "UCeOFQCn_QZJMTszlRYRg3rQ",
+    "title": "【縦型/雑談歌枠】高評価100目標🎶あなたのお姉さんアイドルVtuber🪼💜初見歓迎✨️【天辻ゆらぐ/パレデミア学園】 #新人Vtuber #ゆらぐっどたいむ",
+    "date": "2026-04-14T01:34:22.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/qSGTcw4_Zb4/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/4AFFu60kFJqix-OhtDW3EJdQ0jQa1LrK56tGpvqvbGodMQFpkH-_qtvL_66dPGD3kl4LW9N4",
+    "url": "https://www.youtube.com/watch?v=qSGTcw4_Zb4"
+  },
+  {
+    "name": "愛上オハナ",
+    "youtubeid": "UCwxQdxFJW67WGv-s5_z030w",
+    "title": "これはソリティアですか？  #shorts  #新人vtuber #新人vtuberを発掘せよ",
+    "date": "2026-04-14T01:40:59.000+09:00",
+    "status": "archive",
+    "thumbnail": "https://i.ytimg.com/vi/ks5mR4ZGs4c/mqdefault.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/neZ2Mw2PcuimtH172AaHAlm5eKk_O17aEJ8aMGhme708zPqxyZB6QhS89qzSt30uXnGLLbgdliw",
+    "url": "https://www.youtube.com/watch?v=ks5mR4ZGs4c"
   },
   {
     "name": "妖小琳",
@@ -1298,6 +1348,26 @@
     "thumbnail": "https://i.ytimg.com/vi/SZe4JL2aenQ/mqdefault_live.jpg",
     "channelIcon": "https://yt3.googleusercontent.com/ytc/AIdro_nuv43BXc-JNRM-omFed0brcXGTD8qvA8313ZeQa8PfviA",
     "url": "https://www.youtube.com/watch?v=SZe4JL2aenQ"
+  },
+  {
+    "name": "水透ユウ",
+    "youtubeid": "UCOah55SQYynzPgQQ4wxuzkA",
+    "title": "【 #縦型配信 】一日2リットルの水飲むのって難しくないか？【水透ユウ/ぷろのゔぁ】#vtuber #新人vtuber #雑談   #朝活配信 #朝活",
+    "date": "2026-04-15T07:30:00.000+09:00",
+    "status": "upcoming",
+    "thumbnail": "https://i.ytimg.com/vi/IdoUaMljDhs/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/eVD8Ygm7KVyh3dvWnyebfYlbYpD13ZYQ-Bos8WdR5LDE61A3svHVHCLEY-rM3IQgw9O4uvdd",
+    "url": "https://www.youtube.com/watch?v=IdoUaMljDhs"
+  },
+  {
+    "name": "銘兎目あう",
+    "youtubeid": "UCpr-9ssUUgSb0EpDA8bRuTA",
+    "title": "【ドラゴンボール Z KAKAROT】完全初見！戦慄の人造人間編！ミリしらVTuberも大激闘！🐉🟠 ＃03【 #銘兎目あう 】※ネタバレあり #ドラゴンボールz #ドラゴンボール #Vtuber",
+    "date": "2026-04-15T20:00:00.000+09:00",
+    "status": "upcoming",
+    "thumbnail": "https://i.ytimg.com/vi/YJiO6aWRYuE/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/VB97J8AMHex_rkfd6hDhfiGhhVvrL-NNkseP2mMYSWh75sxA_oXctmxK5tV4FYgkM17RUAx6GQ",
+    "url": "https://www.youtube.com/watch?v=YJiO6aWRYuE"
   },
   {
     "name": "虎島めら。",

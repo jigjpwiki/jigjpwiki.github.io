@@ -1,15 +1,5 @@
 [
   {
-    "name": "夏渚まはろ",
-    "youtubeid": "UC_a00ml_EVDXSrtY8ZuyqGQ",
-    "title": "【Cuphead￤カップヘッド】インクウェル島もあと少しでクリアな気がする！【#まはリメ￤#夏渚まはろ￤#変幻リメ￤#パレプロ研究生】",
-    "date": "2026-04-11T18:14:40.000+09:00",
-    "status": "live",
-    "thumbnail": "https://i.ytimg.com/vi/C9jWZecOg60/mqdefault.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/iktv-39nC7NDASD1WeXms-DEuHuVqB5RhwTtdDe26w-BCvqf6yq3r_8zBiv2i2CfNXCK0uE8",
-    "url": "https://www.youtube.com/watch?v=C9jWZecOg60"
-  },
-  {
     "name": "桜樹美彩",
     "youtubeid": "UCTwKpTFX1aAXD0xpBqYqTdg",
     "title": "【 #powerwashsimulator  】パワーウォッシュシミュレーターでキレイキレイしていく #他責組 / #vtuber  #みさライなう",
@@ -1330,6 +1320,16 @@
     "url": "https://www.youtube.com/watch?v=Q9H_4yt0d4s"
   },
   {
+    "name": "天辻ゆらぐ",
+    "youtubeid": "UCeOFQCn_QZJMTszlRYRg3rQ",
+    "title": "【縦型/雑談】高評価77目標🎶あなたのお姉さんアイドルVtuber🪼💜初見歓迎✨️【天辻ゆらぐ/パレデミア学園】 #新人Vtuber #ゆらぐっどたいむ",
+    "date": "2026-04-14T17:37:32.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/GSuJc8jM6RU/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/4AFFu60kFJqix-OhtDW3EJdQ0jQa1LrK56tGpvqvbGodMQFpkH-_qtvL_66dPGD3kl4LW9N4",
+    "url": "https://www.youtube.com/watch?v=GSuJc8jM6RU"
+  },
+  {
     "name": "水透ユウ",
     "youtubeid": "UCOah55SQYynzPgQQ4wxuzkA",
     "title": "【初見バイオ2】「おかしいだろ！」と台パンが止まらない配信はこちらです【水透ユウ/ぷろのゔぁ】#vtuber #新人vtuber #バイオハザード #biohazard #バイオハザード2",
@@ -1348,6 +1348,36 @@
     "thumbnail": "https://i.ytimg.com/vi/SZe4JL2aenQ/mqdefault_live.jpg",
     "channelIcon": "https://yt3.googleusercontent.com/ytc/AIdro_nuv43BXc-JNRM-omFed0brcXGTD8qvA8313ZeQa8PfviA",
     "url": "https://www.youtube.com/watch?v=SZe4JL2aenQ"
+  },
+  {
+    "name": "藤森ちとせ",
+    "youtubeid": "UCAhdxmsdngH4noySdpVAVWQ",
+    "title": "【ソロR.E.P.O.練習配信】レベル10まで行ってみたいですよね～🤖【#vtuber 】#ちとせらいぶ #パレデミア学園 #ウィニー寮",
+    "date": "2026-04-14T20:00:00.000+09:00",
+    "status": "upcoming",
+    "thumbnail": "https://i.ytimg.com/vi/f05OmCXVTVo/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/traR_yWe-AOGyM2wjo8h2FJO9JWBcbjfrL13X-umeD6BtNPopSZ2Q3YmdJq_5K9gWgHf_j64iQ",
+    "url": "https://www.youtube.com/watch?v=f05OmCXVTVo"
+  },
+  {
+    "name": "天透あわ",
+    "youtubeid": "UCXI0W_Os-BCIngpCb1YnOow",
+    "title": "【＃新人Vtuber】メンバーシップ解禁！記念配信✨#毎日あまあわ",
+    "date": "2026-04-14T20:00:00.000+09:00",
+    "status": "upcoming",
+    "thumbnail": "https://i.ytimg.com/vi/EK5wicqB8Ys/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/Me8I_Op8OlIy8Vuj387_Hdi6gnrZ-qiY1yDDt1Q5yKMKA51ISagT76HE01gw8xbLcef0vpsPgoc",
+    "url": "https://www.youtube.com/watch?v=EK5wicqB8Ys"
+  },
+  {
+    "name": "忠犬しず",
+    "youtubeid": "UCPzN3R0x_SciJJ_FP-STpHQ",
+    "title": "【 完全初見 】同時視聴 牙狼＜GARO＞〜闇を照らす者〜21、22話を見ていく　【 特撮オタクVTuber/忠犬しず 】",
+    "date": "2026-04-14T21:00:00.000+09:00",
+    "status": "upcoming",
+    "thumbnail": "https://i.ytimg.com/vi/J5lzjfdpEQ4/mqdefault.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/9dVPxoBbcXIeN4O1N6bYiWu3EHHHeaStY7fQYPZfF3thWIP2Sc9Uc6kg56Aj0UHrg5QqqDtn",
+    "url": "https://www.youtube.com/watch?v=J5lzjfdpEQ4"
   },
   {
     "name": "江波キョウカ",

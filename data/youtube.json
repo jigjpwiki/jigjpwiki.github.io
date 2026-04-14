@@ -1,45 +1,5 @@
 [
   {
-    "name": "藤森ちとせ",
-    "youtubeid": "UCAhdxmsdngH4noySdpVAVWQ",
-    "title": "【天穂のサクナヒメ#1 】お米作りﾄﾞｷﾄﾞｷですね～🌾【#vtuber 】#ちとせらいぶ #パレデミア学園",
-    "date": "2026-04-11T20:00:00.000+09:00",
-    "status": "upcoming",
-    "thumbnail": "https://i.ytimg.com/vi/cK--3rrPWCE/mqdefault_live.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/traR_yWe-AOGyM2wjo8h2FJO9JWBcbjfrL13X-umeD6BtNPopSZ2Q3YmdJq_5K9gWgHf_j64iQ",
-    "url": "https://www.youtube.com/watch?v=cK--3rrPWCE"
-  },
-  {
-    "name": "天透あわ",
-    "youtubeid": "UCXI0W_Os-BCIngpCb1YnOow",
-    "title": "【雑談】タイムリミット一時間",
-    "date": "2026-04-11T20:00:00.000+09:00",
-    "status": "upcoming",
-    "thumbnail": "https://i.ytimg.com/vi/XU6aNDhVRgU/mqdefault_live.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/Me8I_Op8OlIy8Vuj387_Hdi6gnrZ-qiY1yDDt1Q5yKMKA51ISagT76HE01gw8xbLcef0vpsPgoc",
-    "url": "https://www.youtube.com/watch?v=XU6aNDhVRgU"
-  },
-  {
-    "name": "愛乃宮ゆめ",
-    "youtubeid": "UCttSjPiwPYpiPuCrgxK7c1g",
-    "title": "【雑談】風邪ひいてました…TT【愛乃宮ゆめ/パレデミア学園4】",
-    "date": "2026-04-11T20:04:39.000+09:00",
-    "status": "live",
-    "thumbnail": "https://i.ytimg.com/vi/1NCD9Y3aQ7Q/mqdefault_live.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/M01WvdgX_IfwIkwA4g0_gf9qo4fqF5U7pnXloNwOcL2XnTXXdF8UQ9HS2oyv21t-GXnIhBTWndk",
-    "url": "https://www.youtube.com/watch?v=1NCD9Y3aQ7Q"
-  },
-  {
-    "name": "暁月クララ",
-    "youtubeid": "UCn4XvlTXjGSvDynpxpOYZPQ",
-    "title": "あんぱぁ〜んまぁ〜ん.ᐟ.ᐟ(⚈ ̍̑⚈ ̍̑⚈)#アンパンマン #踊ってみた #vtuber #暁月クララ",
-    "date": "2026-04-11T20:42:26.000+09:00",
-    "status": "archive",
-    "thumbnail": "https://i.ytimg.com/vi/WorFSxuNGdE/mqdefault.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/8tcStp-WzdZPtf6bPq1DtUnFSd2Eq5AppSd3_CEQ7hNNpnRND8InaWdPCz6T1wIWWkGJuFrbT94",
-    "url": "https://www.youtube.com/watch?v=WorFSxuNGdE"
-  },
-  {
     "name": "忠犬しず",
     "youtubeid": "UCPzN3R0x_SciJJ_FP-STpHQ",
     "title": "【 同時視聴 】ウルトラマン36～39話  を見るぞ！【 Vtuber/忠犬しず 】#特撮女子　#特撮オタク",
@@ -1340,6 +1300,26 @@
     "url": "https://www.youtube.com/watch?v=EK5wicqB8Ys"
   },
   {
+    "name": "シグマ・イングラム",
+    "youtubeid": "UCnQFkIgH-2IURW--34owWIw",
+    "title": "【ガンダムSEED】みんなが思うラクス・クラインは？？ #gundam #anime #ガンダムseed #ガンダムseeddestiny  #声真似  #田中理恵",
+    "date": "2026-04-14T20:00:44.000+09:00",
+    "status": "archive",
+    "thumbnail": "https://i.ytimg.com/vi/NLiZL_GCarg/mqdefault.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/qbn_sYVG1ZUjL2xgGkLtNaYdyeWSj8hMooE0VqW4jThdOnm2G6ZKRhpBsxV8pGUXkqi6zUq84w",
+    "url": "https://www.youtube.com/watch?v=NLiZL_GCarg"
+  },
+  {
+    "name": "愛乃宮ゆめ",
+    "youtubeid": "UCttSjPiwPYpiPuCrgxK7c1g",
+    "title": "【マイクラ】エンダーホールうぉー！【愛乃宮ゆめ/パレデミア学園4】",
+    "date": "2026-04-14T20:02:12.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/3n8R6rNcjRk/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/M01WvdgX_IfwIkwA4g0_gf9qo4fqF5U7pnXloNwOcL2XnTXXdF8UQ9HS2oyv21t-GXnIhBTWndk",
+    "url": "https://www.youtube.com/watch?v=3n8R6rNcjRk"
+  },
+  {
     "name": "忠犬しず",
     "youtubeid": "UCPzN3R0x_SciJJ_FP-STpHQ",
     "title": "【 完全初見 】同時視聴 牙狼＜GARO＞〜闇を照らす者〜21、22話を見ていく　【 特撮オタクVTuber/忠犬しず 】",
@@ -1348,6 +1328,16 @@
     "thumbnail": "https://i.ytimg.com/vi/J5lzjfdpEQ4/mqdefault.jpg",
     "channelIcon": "https://yt3.googleusercontent.com/9dVPxoBbcXIeN4O1N6bYiWu3EHHHeaStY7fQYPZfF3thWIP2Sc9Uc6kg56Aj0UHrg5QqqDtn",
     "url": "https://www.youtube.com/watch?v=J5lzjfdpEQ4"
+  },
+  {
+    "name": "桜庭羽奈",
+    "youtubeid": "UCPgg_A08ksSYP-VivJGniRw",
+    "title": "【歌枠！】初見さん大歓迎💛高評価123を目指してます！🐻",
+    "date": "2026-04-14T21:00:00.000+09:00",
+    "status": "upcoming",
+    "thumbnail": "https://i.ytimg.com/vi/rrLH-HDgxwI/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/04zALH6pYL7mkWILHajvBzfzg4hrwRCLBONme3K1PjuEeYJIRC6RYxPmJzVZRuN42skHEDNRGmo",
+    "url": "https://www.youtube.com/watch?v=rrLH-HDgxwI"
   },
   {
     "name": "江波キョウカ",

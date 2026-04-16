@@ -1,25 +1,5 @@
 [
   {
-    "name": "堂下さとり",
-    "youtubeid": "UCBq6MSUL-Ermvnoj3PtX7Iw",
-    "title": "【雑談】あくびがばれたら即終了【パレデミア学園/堂下さとり】",
-    "date": "2026-04-13T12:07:21.000+09:00",
-    "status": "live",
-    "thumbnail": "https://i.ytimg.com/vi/4jGpB-sXGTo/mqdefault_live.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/eW_Hug0M6zFk9QSbAmOUWLMSfzBlCHmes-8yAksvfUNzyLgY6TSsE_eW8ncfE4bHYZXKoTWxmQ",
-    "url": "https://www.youtube.com/watch?v=4jGpB-sXGTo"
-  },
-  {
-    "name": "緋雨柚",
-    "youtubeid": "UCrB-SfrqB5ChY8aAT99grXw",
-    "title": "【#雑談】春が過ぎそうですね【パレデミア学園/緋雨柚】",
-    "date": "2026-04-13T12:18:43.000+09:00",
-    "status": "live",
-    "thumbnail": "https://i.ytimg.com/vi/El2I07byM-4/mqdefault_live.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/dPJHngNTeEfD_K0Mus141-We4xIuAhttm2pgEBl3VdGXqWvxGfy5mJfDMDbBmwI6UGc17dXb-g",
-    "url": "https://www.youtube.com/watch?v=El2I07byM-4"
-  },
-  {
     "name": "新巻るろな",
     "youtubeid": "UCUd4wJjvPQflbLnsk_YHleA",
     "title": "【Cuphead】ょゎょゎゲーマーのクリア耐久【新巻るろな／#パレデミア学園】#vtuber",
@@ -1300,6 +1280,36 @@
     "url": "https://www.youtube.com/watch?v=2BrCdWbI9Nc"
   },
   {
+    "name": "瀬奈りるか",
+    "youtubeid": "UCWi_ztz8Xuz4XfzhoG6ZfyA",
+    "title": "【雑談】まったり昼活やさん！🎶寝起き昼活枠🪄💫2年生のXをチェックしましょう🔍✨TikTokと同時配信！🎶【＃パレデミア学園】＃せなりるライブ #vtuber",
+    "date": "2026-04-16T12:01:48.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/dN42Scdc6oA/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/bM-okYT9oTq3M5dq33VSpidEiaC8MP2EoQXX2gNpgW7PAV7RSn1t7_2HghmCcAwrNxriAmMy",
+    "url": "https://www.youtube.com/watch?v=dN42Scdc6oA"
+  },
+  {
+    "name": "愛乃宮ゆめ",
+    "youtubeid": "UCttSjPiwPYpiPuCrgxK7c1g",
+    "title": "【雑談】ゆめらじっ！＃０１【愛乃宮ゆめ/パレデミア学園4】",
+    "date": "2026-04-16T12:35:31.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/JnZFL_73XeI/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/M01WvdgX_IfwIkwA4g0_gf9qo4fqF5U7pnXloNwOcL2XnTXXdF8UQ9HS2oyv21t-GXnIhBTWndk",
+    "url": "https://www.youtube.com/watch?v=JnZFL_73XeI"
+  },
+  {
+    "name": "藤森ちとせ",
+    "youtubeid": "UCAhdxmsdngH4noySdpVAVWQ",
+    "title": "【整地建築雑談】門……？🤔作業用にも😉ROM歓迎🎉【Minecraft】【#vtuber 】#ちとせらいぶ #パレデミア学園",
+    "date": "2026-04-16T12:58:52.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/z1eA1T5gfiA/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/traR_yWe-AOGyM2wjo8h2FJO9JWBcbjfrL13X-umeD6BtNPopSZ2Q3YmdJq_5K9gWgHf_j64iQ",
+    "url": "https://www.youtube.com/watch?v=z1eA1T5gfiA"
+  },
+  {
     "name": "新巻るろな",
     "youtubeid": "UCUd4wJjvPQflbLnsk_YHleA",
     "title": "【 #歌枠 】27曲歌います。【新巻るろな】　#vtuber",
@@ -1308,6 +1318,16 @@
     "thumbnail": "https://i.ytimg.com/vi/528KrZc8kWw/mqdefault_live.jpg",
     "channelIcon": "https://yt3.googleusercontent.com/-4sLuWCih-DlfhpwpDQEuB6eupCB6kTImkIPmKnh54vu5I0F49RkveNQGiqy0p8t0GDU6eiegGE",
     "url": "https://www.youtube.com/watch?v=528KrZc8kWw"
+  },
+  {
+    "name": "藤森ちとせ",
+    "youtubeid": "UCAhdxmsdngH4noySdpVAVWQ",
+    "title": "【R.E.P.O.コラボ配信】レポ楽しすぎますね～😉✨【#vtuber 】#ちとせらいぶ #パレデミア学園 #ウィニー寮",
+    "date": "2026-04-16T19:00:00.000+09:00",
+    "status": "upcoming",
+    "thumbnail": "https://i.ytimg.com/vi/MY9g8fuK_v4/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/traR_yWe-AOGyM2wjo8h2FJO9JWBcbjfrL13X-umeD6BtNPopSZ2Q3YmdJq_5K9gWgHf_j64iQ",
+    "url": "https://www.youtube.com/watch?v=MY9g8fuK_v4"
   },
   {
     "name": "水透ユウ",

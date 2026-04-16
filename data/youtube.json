@@ -1,25 +1,5 @@
 [
   {
-    "name": "桜堂ねる",
-    "youtubeid": "UC0H7dRRqhfOifbYQ2TURdAg",
-    "title": "圧倒的自由な朝活0414",
-    "date": "2026-04-14T07:18:23.000+09:00",
-    "status": "live",
-    "thumbnail": "https://i.ytimg.com/vi/pn2UT9_30nc/mqdefault.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/hBz75E3AEST1Dzv5vOTHAqoJfayd30WIWWQ3ZFLlWMHDsyZ_QD6ZVVUtLTKSizalT3APPtdpFGI",
-    "url": "https://www.youtube.com/watch?v=pn2UT9_30nc"
-  },
-  {
-    "name": "天透あわ",
-    "youtubeid": "UCXI0W_Os-BCIngpCb1YnOow",
-    "title": "【朝活】伝説の朝活配信🌞＃新人Vtuber",
-    "date": "2026-04-14T07:32:17.000+09:00",
-    "status": "live",
-    "thumbnail": "https://i.ytimg.com/vi/b6o64I4-oE8/mqdefault_live.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/Me8I_Op8OlIy8Vuj387_Hdi6gnrZ-qiY1yDDt1Q5yKMKA51ISagT76HE01gw8xbLcef0vpsPgoc",
-    "url": "https://www.youtube.com/watch?v=b6o64I4-oE8"
-  },
-  {
     "name": "藤森ちとせ",
     "youtubeid": "UCAhdxmsdngH4noySdpVAVWQ",
     "title": "【壺おじ配信】⛏6壺目⛏【 Getting Over It with Bennett Foddy 】【#vtuber 】#ちとせらいぶ #パレデミア学園",
@@ -1518,6 +1498,26 @@
     "thumbnail": "https://i.ytimg.com/vi/r5Mzcd_7g_8/mqdefault_live.jpg",
     "channelIcon": "https://yt3.googleusercontent.com/pDP2GuylW0RN1REDScFAlNklbXaPRqTm2mwT2F7dIo8xoYYFPfspsjGH_G3RagwlKVlQbdw95bY",
     "url": "https://www.youtube.com/watch?v=r5Mzcd_7g_8"
+  },
+  {
+    "name": "緋月・ローズ・ブレイド",
+    "youtubeid": "UCDutDfyKbX_ah4GF6kPNKmw",
+    "title": "【#歌ってみた】とても純粋な失恋ソング【#vtuber 】#cover",
+    "date": "2026-04-17T07:00:07.000+09:00",
+    "status": "archive",
+    "thumbnail": "https://i.ytimg.com/vi/7-L75sOym_w/mqdefault.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/W_G4fcoLegJdQmhWclC6RKHdrx9DJLGZ4WcLyCKgJxzyZZ3MUd-tNZ90LYQGVAbt7NzXl5GUJQ",
+    "url": "https://www.youtube.com/watch?v=7-L75sOym_w"
+  },
+  {
+    "name": "陰山アゲハ",
+    "youtubeid": "UCIw8aQVRBwi72yOrPLgkbRQ",
+    "title": "【#朝活 】初見/ROM歓迎👍寝起きだけど耳から元気チャージしてほしい朝歌枠🎵【#新人Vtuber #歌枠 】",
+    "date": "2026-04-17T08:01:09.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/at6aYf9mo1w/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/TRbQGbBCM6R6LAzCQXka_AxVqF-ozTWwqW455tZU9q9GMo4ijQNNc3d818MX-5wmMnhv-k84Rw",
+    "url": "https://www.youtube.com/watch?v=at6aYf9mo1w"
   },
   {
     "name": "瀬奈りるか",

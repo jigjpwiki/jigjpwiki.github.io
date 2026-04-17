@@ -66,7 +66,7 @@ YouTube / Twitch / TikTok の情報をまとめて読み込み、日付ごとに
 本サイトの利用によって生じたトラブル・損害について、開発者は一切の責任を負いません。
 
 ## クレジット
-- Project / Development：jig.jp非公式Wiki コミュニティ
+- Project / Development：jig.jp非公式Wiki 管理者
 - Data Sources：YouTube / Twitch / TikTok
 - Frontend Library：Swiper.js
 - Hosting：GitHub Pages

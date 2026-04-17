@@ -2,7 +2,7 @@ name: fetch-twitch
 
 on:
   schedule:
-    - cron: '*/10 * * * *' # 毎時10分おきに実行
+    - cron: '*/12 * * * *' # 毎時10分おきに実行
   workflow_dispatch:
 
 jobs:

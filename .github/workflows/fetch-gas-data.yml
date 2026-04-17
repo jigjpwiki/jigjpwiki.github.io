@@ -1,26 +1,26 @@
-name: Fetch GAS JSON and update tiktok.json
+#name: Fetch GAS JSON and update tiktok.json
 
-on:
-  schedule:
-    - cron: "*/5 * * * *" # 毎5分ごとに実行（UTCなので日本時間+9h）
-  workflow_dispatch: # 手動実行も可
+#on:
+  #schedule:
+    #- cron: "*/5 * * * *" # 毎5分ごとに実行（UTCなので日本時間+9h）
+  #workflow_dispatch: # 手動実行も可
 
-jobs:
-  update-json:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout repo
-        uses: actions/checkout@v3
+#jobs:
+  #update-json:
+    #runs-on: ubuntu-latest
+    #steps:
+      #- name: Checkout repo
+        #uses: actions/checkout@v3
 
-      - name: Fetch JSON from GAS
-        run: |
-          mkdir -p data
-          curl -sL "https://script.google.com/macros/s/AKfycbx21xLkgVYXkhYf7awzkp6blzSF5QA9PkFKEQaMVTkcMSIaX48tsy_KASRems2BO5UjSw/exec" > data/tiktok.json
+      #- name: Fetch JSON from GAS
+        #run: |
+          #mkdir -p data
+          #curl -sL "https://script.google.com/macros/s/AKfycbx21xLkgVYXkhYf7awzkp6blzSF5QA9PkFKEQaMVTkcMSIaX48tsy_KASRems2BO5UjSw/exec" > data/tiktok.json
 
-      - name: Commit & Push updated tiktok.json
-        run: |
-          git config --global user.name "github-actions"
-          git config --global user.email "actions@github.com"
-          git add data/tiktok.json
-          git commit -m "Auto update data/tiktok.json from GAS" || echo "No changes to commit"
-          git push
+      #- name: Commit & Push updated tiktok.json
+        #run: |
+          #git config --global user.name "github-actions"
+          #git config --global user.email "actions@github.com"
+          #git add data/tiktok.json
+          #git commit -m "Auto update data/tiktok.json from GAS" || echo "No changes to commit"
+          #git push

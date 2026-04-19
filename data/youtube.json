@@ -1,25 +1,5 @@
 [
   {
-    "name": "宵坂伊織",
-    "youtubeid": "UCa1C15g_z1k5oQIYCeD2Hdw",
-    "title": "【パレデミア学園】2期生！クゥ寮所属の宵坂伊織やで！！",
-    "date": "2026-04-16T15:21:13.000+09:00",
-    "status": "archive",
-    "thumbnail": "https://i.ytimg.com/vi/3ToNyyeLdRU/mqdefault.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/fOSQN7R8b2LFTwHpvzc3RfsR_nJ02TIUKscIIj-hYwqWAsmMmqiixAt7XTbJTuH5MRqir4oC9Q",
-    "url": "https://www.youtube.com/watch?v=3ToNyyeLdRU"
-  },
-  {
-    "name": "常磐カナメ",
-    "youtubeid": "UCbNEgJIF_ADD9e8-q7SoxCg",
-    "title": "ダーリンダンス #踊ってみた #shorts #常磐カナメ",
-    "date": "2026-04-16T15:57:53.000+09:00",
-    "status": "archive",
-    "thumbnail": "https://i.ytimg.com/vi/jtzDY5_l2Zo/mqdefault.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/vb_kLF_4hQ7UdEtOnEtL-_pI320ZMQ-lVQ9OV3xMvdTQitHXX1zk0b6GKQ977dawvfoB5Sb8OQ",
-    "url": "https://www.youtube.com/watch?v=jtzDY5_l2Zo"
-  },
-  {
     "name": "天辻ゆらぐ",
     "youtubeid": "UCeOFQCn_QZJMTszlRYRg3rQ",
     "title": "【縦型/雑談歌枠】高評価77目標🎶あなたのお姉さんアイドルVtuber🪼💜初見歓迎✨️【天辻ゆらぐ/パレデミア学園】 #新人Vtuber #ゆらぐっどたいむ",
@@ -1720,6 +1700,16 @@
     "url": "https://www.youtube.com/watch?v=d3Kc0a4cBB4"
   },
   {
+    "name": "常磐カナメ",
+    "youtubeid": "UCbNEgJIF_ADD9e8-q7SoxCg",
+    "title": "【魔法少女ノ魔女裁判 #3】魔法少女の魔女裁判をしています【パレプロ/常磐カナメ】※ネタバレ注意",
+    "date": "2026-04-19T19:00:00.000+09:00",
+    "status": "upcoming",
+    "thumbnail": "https://i.ytimg.com/vi/OiAbdpsdTk8/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/vb_kLF_4hQ7UdEtOnEtL-_pI320ZMQ-lVQ9OV3xMvdTQitHXX1zk0b6GKQ977dawvfoB5Sb8OQ",
+    "url": "https://www.youtube.com/watch?v=OiAbdpsdTk8"
+  },
+  {
     "name": "愛乃宮ゆめ",
     "youtubeid": "UCttSjPiwPYpiPuCrgxK7c1g",
     "title": "【ダッコフ】この世界をチキン南蛮にしてやる！【愛乃宮ゆめ/パレデミア学園】",
@@ -1768,5 +1758,15 @@
     "thumbnail": "https://i.ytimg.com/vi/AnRoOIwLFKw/mqdefault_live.jpg",
     "channelIcon": "https://yt3.googleusercontent.com/ytc/AIdro_nuv43BXc-JNRM-omFed0brcXGTD8qvA8313ZeQa8PfviA",
     "url": "https://www.youtube.com/watch?v=AnRoOIwLFKw"
+  },
+  {
+    "name": "銘兎目あう",
+    "youtubeid": "UCpr-9ssUUgSb0EpDA8bRuTA",
+    "title": "【ドラゴンボール Z KAKAROT】完全初見ミリしら！セルゲーム編、ついに始まる🐉🟠 #05 【 #銘兎目あう 】※ネタバレあり #ドラゴンボールz #ドラゴンボール #Vtuber",
+    "date": "2026-04-22T20:00:00.000+09:00",
+    "status": "upcoming",
+    "thumbnail": "https://i.ytimg.com/vi/euSxI0127hM/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/VB97J8AMHex_rkfd6hDhfiGhhVvrL-NNkseP2mMYSWh75sxA_oXctmxK5tV4FYgkM17RUAx6GQ",
+    "url": "https://www.youtube.com/watch?v=euSxI0127hM"
   }
 ]

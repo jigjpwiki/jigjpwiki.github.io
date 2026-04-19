@@ -1,45 +1,5 @@
 [
   {
-    "name": "雛菊のん",
-    "youtubeid": "UChccV6U0Tkx9de4YjXbEelw",
-    "title": "ひそひそ配信💤おやすみを届ける💕#新人vtuber #睡眠導入",
-    "date": "2026-04-16T23:08:58.000+09:00",
-    "status": "live",
-    "thumbnail": "https://i.ytimg.com/vi/BOEe15SJlvE/mqdefault_live.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/OxvUqyZAoX4gIX91GOkYMIE2iYfD1ndRKGZbo4Ih8cDb5QuoXpqNJWZKpephYlI0zNiYjQptAQ",
-    "url": "https://www.youtube.com/watch?v=BOEe15SJlvE"
-  },
-  {
-    "name": "春原なずな",
-    "youtubeid": "UCW-iuU7g3BJnuQ1D3UkqeSA",
-    "title": "【 P3R / ペルソナ３ リロード 】#13 仲間の覚醒が来た！10月23日～※ネタバレ注意【 春原なずな / VTuber 】",
-    "date": "2026-04-16T23:30:00.000+09:00",
-    "status": "upcoming",
-    "thumbnail": "https://i.ytimg.com/vi/clUx1WgF_vw/mqdefault_live.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/0pD1c95Y9X0VrhzWtlf2SRPqdkesiuZxC8Hb5Mg9Xv1WWpQaFCmjITTK8-n5HlNsB-yDbAN4CZA",
-    "url": "https://www.youtube.com/watch?v=clUx1WgF_vw"
-  },
-  {
-    "name": "変幻リメ",
-    "youtubeid": "UC5bCRde8xRrNS7s6GjCNCyQ",
-    "title": "#9【 #ゼルダの伝説ムジュラの仮面 】完全初見※トラウマ注意※ 闇が深すぎるゼルダ、ムジュラの仮面【変幻リメ】【※ネタバレ厳禁】",
-    "date": "2026-04-16T23:30:00.000+09:00",
-    "status": "upcoming",
-    "thumbnail": "https://i.ytimg.com/vi/zDB8XBwGCu4/mqdefault_live.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/4hssn4EXW2lORXRfiuYTjmYfnlZoQ2h72sdEompqX7GQwAKCsBx7eL0joCFSook1rfCKIcpykg",
-    "url": "https://www.youtube.com/watch?v=zDB8XBwGCu4"
-  },
-  {
-    "name": "雨海まる",
-    "youtubeid": "UCLuPxPlM1v6IOTLxM1TRPzA",
-    "title": "【tiktok同時配信】テストみたいな感じです",
-    "date": "2026-04-16T23:46:56.000+09:00",
-    "status": "live",
-    "thumbnail": "https://i.ytimg.com/vi/_8k7n8BQc-Q/mqdefault_live.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/NVLNPEsj4s1-JKLx5Yu2YbnsbK9jZtQetRBAuQMQGHXbasx2Oxr38qQLS-zQWg0Im2KQDRljKQ",
-    "url": "https://www.youtube.com/watch?v=_8k7n8BQc-Q"
-  },
-  {
     "name": "緋雨柚",
     "youtubeid": "UCrB-SfrqB5ChY8aAT99grXw",
     "title": "【#雑談】新入生おめでとう！！！【パレデミア学園/緋雨柚】",
@@ -1590,6 +1550,46 @@
     "url": "https://www.youtube.com/watch?v=kuTxDdRNeTw"
   },
   {
+    "name": "狛社なの",
+    "youtubeid": "UCXhHHxwH94cuHv4N1cAYQeA",
+    "title": "お姉さんななののこともすき？♡ #新人vtuber #パレデミア学園",
+    "date": "2026-04-19T23:16:40.000+09:00",
+    "status": "archive",
+    "thumbnail": "https://i.ytimg.com/vi/TFB44HMSucU/mqdefault.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/49XXshraNExkwpEaGVe6r452ZjrI1veepA5Tbl-zhXrsOa381CcaTIl1C0HfsFwIseWg8ZjOEg",
+    "url": "https://www.youtube.com/watch?v=TFB44HMSucU"
+  },
+  {
+    "name": "愛染アネラ",
+    "youtubeid": "UC7ek9Q4cK9O0eT3hiUYJaQw",
+    "title": "【 #sekiro 】SEKIRO SHADOWS DIE TWICE  ⚔ ギャルの完全初見プレイ💗 #3【 #新人Vtuber 愛染アネラ 】",
+    "date": "2026-04-19T23:20:31.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/PQE0sSLL8mA/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/R99ADiR_1bRxcNCpiGLCW6ortzJy4JZFjlLaEHeDSJfYgwO_IieZWjjp4GbZauEeMxg_hhoS3A",
+    "url": "https://www.youtube.com/watch?v=PQE0sSLL8mA"
+  },
+  {
+    "name": "緋雨柚",
+    "youtubeid": "UCrB-SfrqB5ChY8aAT99grXw",
+    "title": "【#maincraft 】ミュゥ鯖でのんびりダイヤ集め【パレデミア学園/緋雨柚】",
+    "date": "2026-04-19T23:30:41.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/Su74VKQ8oHU/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/dPJHngNTeEfD_K0Mus141-We4xIuAhttm2pgEBl3VdGXqWvxGfy5mJfDMDbBmwI6UGc17dXb-g",
+    "url": "https://www.youtube.com/watch?v=Su74VKQ8oHU"
+  },
+  {
+    "name": "堂下さとり",
+    "youtubeid": "UCBq6MSUL-Ermvnoj3PtX7Iw",
+    "title": "【雑談】4月20日朝のニュース【平和なニュース】【堂下さとり/パレデミア学園】",
+    "date": "2026-04-20T06:20:00.000+09:00",
+    "status": "upcoming",
+    "thumbnail": "https://i.ytimg.com/vi/Ef1RCYInEb4/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/eW_Hug0M6zFk9QSbAmOUWLMSfzBlCHmes-8yAksvfUNzyLgY6TSsE_eW8ncfE4bHYZXKoTWxmQ",
+    "url": "https://www.youtube.com/watch?v=Ef1RCYInEb4"
+  },
+  {
     "name": "桜樹美彩",
     "youtubeid": "UCTwKpTFX1aAXD0xpBqYqTdg",
     "title": "【 朝活 / 雑談 】挨拶耐久「おはよう」を360名様に！🍀初見＆ROM勢大歓迎🎉4/20 AM7:00～ 🐤 #vtuber #みさライなう #桜樹美彩 #新人vtuber",
@@ -1598,6 +1598,16 @@
     "thumbnail": "https://i.ytimg.com/vi/RIhrctt5xEQ/mqdefault_live.jpg",
     "channelIcon": "https://yt3.googleusercontent.com/pDP2GuylW0RN1REDScFAlNklbXaPRqTm2mwT2F7dIo8xoYYFPfspsjGH_G3RagwlKVlQbdw95bY",
     "url": "https://www.youtube.com/watch?v=RIhrctt5xEQ"
+  },
+  {
+    "name": "花晴りら",
+    "youtubeid": "UCqcnlq8uJqnGml6hcIrMCZw",
+    "title": "【朝活/縦型雑談】初見さん大歓迎🌷100人におはよう言いたいお仕事前朝活🔆【花晴りら/パレデミア学園】#れりライブ #新人vtuber",
+    "date": "2026-04-20T07:00:00.000+09:00",
+    "status": "upcoming",
+    "thumbnail": "https://i.ytimg.com/vi/Ycj7X2wBc70/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/CH5JMWVQZ_RtloaXoj6W-yXjo9x8UxXSBG_vMyDnfk7M2QTOApVE1zOesu_aDrSAqvDbGrUyxs0",
+    "url": "https://www.youtube.com/watch?v=Ycj7X2wBc70"
   },
   {
     "name": "七海ロナ",

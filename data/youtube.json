@@ -1,15 +1,5 @@
 [
   {
-    "name": "花晴りら",
-    "youtubeid": "UCqcnlq8uJqnGml6hcIrMCZw",
-    "title": "【朝活/縦型雑談】初見さん大歓迎🌷100人におはよう言いたいお仕事前朝活🔆【花晴りら/パレデミア学園】#れりライブ #新人vtuber",
-    "date": "2026-04-18T07:00:00.000+09:00",
-    "status": "upcoming",
-    "thumbnail": "https://i.ytimg.com/vi/LrelZ91iKg8/mqdefault_live.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/CH5JMWVQZ_RtloaXoj6W-yXjo9x8UxXSBG_vMyDnfk7M2QTOApVE1zOesu_aDrSAqvDbGrUyxs0",
-    "url": "https://www.youtube.com/watch?v=LrelZ91iKg8"
-  },
-  {
     "name": "愛乃宮ゆめ",
     "youtubeid": "UCttSjPiwPYpiPuCrgxK7c1g",
     "title": "【朝枠】ゆめから特大のおはよう！【愛乃宮ゆめ/パレデミア学園】",
@@ -1590,6 +1580,16 @@
     "url": "https://www.youtube.com/watch?v=-Y-lxTQzhzg"
   },
   {
+    "name": "堂下さとり",
+    "youtubeid": "UCBq6MSUL-Ermvnoj3PtX7Iw",
+    "title": "【雑談】4月21日朝のニュース【平和なニュース】【堂下さとり/パレデミア学園】",
+    "date": "2026-04-21T06:38:22.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/7_kYpE9y_PQ/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/eW_Hug0M6zFk9QSbAmOUWLMSfzBlCHmes-8yAksvfUNzyLgY6TSsE_eW8ncfE4bHYZXKoTWxmQ",
+    "url": "https://www.youtube.com/watch?v=7_kYpE9y_PQ"
+  },
+  {
     "name": "桜樹美彩",
     "youtubeid": "UCTwKpTFX1aAXD0xpBqYqTdg",
     "title": "【 朝活 / ニュース 】４月21日（火）⏰ AM7:00『ちょこっと』朝活ニュース🍀天気予報/時事ニュース🍁初見＆ROM勢大歓迎🐥 #vtuber #みさライなう #桜樹美彩 #新人vtuber",
@@ -1608,6 +1608,26 @@
     "thumbnail": "https://i.ytimg.com/vi/8Sp1m5qeguU/mqdefault_live.jpg",
     "channelIcon": "https://yt3.googleusercontent.com/CH5JMWVQZ_RtloaXoj6W-yXjo9x8UxXSBG_vMyDnfk7M2QTOApVE1zOesu_aDrSAqvDbGrUyxs0",
     "url": "https://www.youtube.com/watch?v=8Sp1m5qeguU"
+  },
+  {
+    "name": "相栖るじゅ",
+    "youtubeid": "UCrpdBoGpa6g2WEtRWsIlhDQ",
+    "title": "【3D?お披露目配信】ゲスト:あなた #shorts #新人vtuber #推しをお探しですか #cover #ヤンデレ",
+    "date": "2026-04-21T07:01:08.000+09:00",
+    "status": "archive",
+    "thumbnail": "https://i.ytimg.com/vi/z3hqGmEknJM/mqdefault.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/yQbh9vEEgS_UapoQhIxxoTSy13bDxlHYC-ncTcO9VIDBN2NvrLTAWeKGQ72CN2fhOOrHqYaFDA",
+    "url": "https://www.youtube.com/watch?v=z3hqGmEknJM"
+  },
+  {
+    "name": "堂下さとり",
+    "youtubeid": "UCBq6MSUL-Ermvnoj3PtX7Iw",
+    "title": "【悲報】ソフトクリームさん一線を越えてしまう【どうしてこうなった】",
+    "date": "2026-04-21T07:23:25.000+09:00",
+    "status": "archive",
+    "thumbnail": "https://i.ytimg.com/vi/BBReK_GWivI/mqdefault.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/eW_Hug0M6zFk9QSbAmOUWLMSfzBlCHmes-8yAksvfUNzyLgY6TSsE_eW8ncfE4bHYZXKoTWxmQ",
+    "url": "https://www.youtube.com/watch?v=BBReK_GWivI"
   },
   {
     "name": "陰山アゲハ",

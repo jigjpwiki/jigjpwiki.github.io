@@ -1,35 +1,5 @@
 [
   {
-    "name": "緋雨柚",
-    "youtubeid": "UCrB-SfrqB5ChY8aAT99grXw",
-    "title": "【FF13】チョコボに癒されたところで頑張りますか　#5【パレデミア学園】",
-    "date": "2026-04-17T10:30:00.000+09:00",
-    "status": "upcoming",
-    "thumbnail": "https://i.ytimg.com/vi/r14si6_NL0g/mqdefault_live.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/dPJHngNTeEfD_K0Mus141-We4xIuAhttm2pgEBl3VdGXqWvxGfy5mJfDMDbBmwI6UGc17dXb-g",
-    "url": "https://www.youtube.com/watch?v=r14si6_NL0g"
-  },
-  {
-    "name": "瀬奈りるか",
-    "youtubeid": "UCWi_ztz8Xuz4XfzhoG6ZfyA",
-    "title": "【歌枠】イベント中に100曲歌う！🎤✨ボカロ・ハニワ縛り！🎶折り返して残り45曲も頑張って歌います💫TikTokと同時配信！🎶【＃パレデミア学園】＃せなりるライブ #vtuber",
-    "date": "2026-04-17T12:00:00.000+09:00",
-    "status": "upcoming",
-    "thumbnail": "https://i.ytimg.com/vi/fFE7r1Nf7aA/mqdefault_live.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/bM-okYT9oTq3M5dq33VSpidEiaC8MP2EoQXX2gNpgW7PAV7RSn1t7_2HghmCcAwrNxriAmMy",
-    "url": "https://www.youtube.com/watch?v=fFE7r1Nf7aA"
-  },
-  {
-    "name": "黄金つむぎ",
-    "youtubeid": "UCCqDErkWNs8yWjKS7zHYZBA",
-    "title": "【お絵描き】ペンタブデビュー！！（続）２期生描く",
-    "date": "2026-04-17T12:00:31.000+09:00",
-    "status": "live",
-    "thumbnail": "https://i.ytimg.com/vi/ttZhBWF7_0A/mqdefault_live.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/lTdispopc8pOEncTx9kn4np7w6VU3-cPBCzBs9ZGkfC2n57SHCgY9XyqR_Gs6cpBD7aqpYPGdHE",
-    "url": "https://www.youtube.com/watch?v=ttZhBWF7_0A"
-  },
-  {
     "name": "虎島めら。",
     "youtubeid": "UCqewFfi_wwydw6fpazmlAFA",
     "title": "ゆるめapex!!",
@@ -1630,6 +1600,26 @@
     "url": "https://www.youtube.com/watch?v=t2ibjJgKj5k"
   },
   {
+    "name": "緋雨柚",
+    "youtubeid": "UCrB-SfrqB5ChY8aAT99grXw",
+    "title": "【FF13】ファルシの真意とは#6【パレデミア学園】",
+    "date": "2026-04-20T10:01:29.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/16jkOBN7OXY/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/dPJHngNTeEfD_K0Mus141-We4xIuAhttm2pgEBl3VdGXqWvxGfy5mJfDMDbBmwI6UGc17dXb-g",
+    "url": "https://www.youtube.com/watch?v=16jkOBN7OXY"
+  },
+  {
+    "name": "夕凪万夜",
+    "youtubeid": "UCJLYktDEOak1rSOGRVRKlLQ",
+    "title": "【パレデミア学園】TLにいつも居る新人VTuberが先輩＆同期との相性診断やってみた【夕凪万夜/Mayo Yunagi】",
+    "date": "2026-04-20T11:00:33.000+09:00",
+    "status": "archive",
+    "thumbnail": "https://i.ytimg.com/vi/WEqntfTHRSw/mqdefault.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/1mhcUNOhZXxkFYV8imS3FPi93B6Gx2oUAl5GKWMya4zSwD7omsT4rdUn01TDVm3TniI_2TjGmQ",
+    "url": "https://www.youtube.com/watch?v=WEqntfTHRSw"
+  },
+  {
     "name": "鬼多見アユム",
     "youtubeid": "UCnrJK-sb3gSn3kRLkmpmzaw",
     "title": "【#縦型配信 】もう月曜日って本当ですか？！？！？【鬼多見アユム】#shorts",
@@ -1728,5 +1718,15 @@
     "thumbnail": "https://i.ytimg.com/vi/Ag-UUMNyXGQ/mqdefault_live.jpg",
     "channelIcon": "https://yt3.googleusercontent.com/M01WvdgX_IfwIkwA4g0_gf9qo4fqF5U7pnXloNwOcL2XnTXXdF8UQ9HS2oyv21t-GXnIhBTWndk",
     "url": "https://www.youtube.com/watch?v=Ag-UUMNyXGQ"
+  },
+  {
+    "name": "愛乃宮ゆめ",
+    "youtubeid": "UCttSjPiwPYpiPuCrgxK7c1g",
+    "title": "【雑談】ゆめらじっ！＃０４【愛乃宮ゆめ/パレデミア学園】",
+    "date": "2026-04-25T12:00:00.000+09:00",
+    "status": "upcoming",
+    "thumbnail": "https://i.ytimg.com/vi/F1kj2CBlM9Q/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/M01WvdgX_IfwIkwA4g0_gf9qo4fqF5U7pnXloNwOcL2XnTXXdF8UQ9HS2oyv21t-GXnIhBTWndk",
+    "url": "https://www.youtube.com/watch?v=F1kj2CBlM9Q"
   }
 ]

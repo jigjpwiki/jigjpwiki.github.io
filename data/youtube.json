@@ -1,15 +1,5 @@
 [
   {
-    "name": "虎島めら。",
-    "youtubeid": "UCqewFfi_wwydw6fpazmlAFA",
-    "title": "ゆるめapex!!",
-    "date": "2026-04-17T13:18:02.000+09:00",
-    "status": "live",
-    "thumbnail": "https://i.ytimg.com/vi/pgbxobSpdRA/mqdefault_live.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/6nfq-sTwa1PCHMrmFq5uNijG5PcQ8BRheGNXHc6GEMlBustwPyvfLIPWtxaHpKOhdXU1tFTnfA",
-    "url": "https://www.youtube.com/watch?v=pgbxobSpdRA"
-  },
-  {
     "name": "宵坂伊織",
     "youtubeid": "UCa1C15g_z1k5oQIYCeD2Hdw",
     "title": "【パレデミア学園】事件発生！？名探偵伊織の推理をご覧あれ！！",
@@ -1648,6 +1638,16 @@
     "thumbnail": "https://i.ytimg.com/vi/jfk8a1Q7rWc/mqdefault_live.jpg",
     "channelIcon": "https://yt3.googleusercontent.com/0pD1c95Y9X0VrhzWtlf2SRPqdkesiuZxC8Hb5Mg9Xv1WWpQaFCmjITTK8-n5HlNsB-yDbAN4CZA",
     "url": "https://www.youtube.com/watch?v=jfk8a1Q7rWc"
+  },
+  {
+    "name": "魔法少女アルト",
+    "youtubeid": "UCtRhBS8dlaeBgVcnEZOkAbA",
+    "title": "【質問コーナー続き】特別配信の延長戦はこちらです",
+    "date": "2026-04-20T22:00:00.000+09:00",
+    "status": "upcoming",
+    "thumbnail": "https://i.ytimg.com/vi/UXBe1zS5QaI/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/JwOkUNiR-08GjSI3MS8-Yk6jzONshtmRWZ9tpjOghB10quze7fgbJkhpPTpIfUX00HBACjAR8Q",
+    "url": "https://www.youtube.com/watch?v=UXBe1zS5QaI"
   },
   {
     "name": "桜樹美彩",

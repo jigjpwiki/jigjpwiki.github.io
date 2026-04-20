@@ -87,5 +87,21 @@
     "date": "2026-04-20T21:00:06.000+09:00",
     "status": "live",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_Metome_Au-320x180.jpg"
+  },
+  {
+    "name": "しーはむ",
+    "twitchid": "siyham",
+    "title": "LTKDL がんばるぞ",
+    "date": "2026-04-20T21:29:16.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_siyham-320x180.jpg"
+  },
+  {
+    "name": "なかもとおまち",
+    "twitchid": "41futon",
+    "title": "しんやにスト６をやらせてください！",
+    "date": "2026-04-20T22:09:31.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_41futon-320x180.jpg"
   }
 ]

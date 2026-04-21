@@ -1,15 +1,5 @@
 [
   {
-    "name": "夜雨ねむる",
-    "youtubeid": "UC1hxdM37vjjqr-IfZuDn1iw",
-    "title": "第一声。 #vtuber  #vtuber準備中最古参になってください",
-    "date": "2026-04-18T15:00:41.000+09:00",
-    "status": "archive",
-    "thumbnail": "https://i.ytimg.com/vi/lmgMd2teiuE/mqdefault.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/oX8bu2EfV0AJmmDPuA74S-Ky2XAUOxd1IXHEpX5jFDLltMrVNknI1FkpYdhb9VrLGtpUCm3Xvg",
-    "url": "https://www.youtube.com/watch?v=lmgMd2teiuE"
-  },
-  {
     "name": "宵坂伊織",
     "youtubeid": "UCa1C15g_z1k5oQIYCeD2Hdw",
     "title": "【パレデミア学園】〇年ぶりのマイクラ！？うちの冒険を見よ！！",
@@ -1270,6 +1260,16 @@
     "url": "https://www.youtube.com/watch?v=YlyzrTr9J5Q"
   },
   {
+    "name": "銘兎目あう",
+    "youtubeid": "UCpr-9ssUUgSb0EpDA8bRuTA",
+    "title": "【スト６】1552MR～Mケン🥊🥋ハイマス目指して昇竜拳👊【Twitchアーカイブ】",
+    "date": "2026-04-20T21:00:37.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/8amu7K7C6BA/mqdefault.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/VB97J8AMHex_rkfd6hDhfiGhhVvrL-NNkseP2mMYSWh75sxA_oXctmxK5tV4FYgkM17RUAx6GQ",
+    "url": "https://www.youtube.com/watch?v=8amu7K7C6BA"
+  },
+  {
     "name": "藤宮コトハ",
     "youtubeid": "UCGndc74kfWb_A-8hZBG534Q",
     "title": "【スナフキン：ムーミン谷のメロディ】癒しを求めてムーミン谷へ⛰【 パレプロ / 藤宮コトハ】",
@@ -1618,6 +1618,16 @@
     "thumbnail": "https://i.ytimg.com/vi/qSQ5mr_TjH0/mqdefault_live.jpg",
     "channelIcon": "https://yt3.googleusercontent.com/iktv-39nC7NDASD1WeXms-DEuHuVqB5RhwTtdDe26w-BCvqf6yq3r_8zBiv2i2CfNXCK0uE8",
     "url": "https://www.youtube.com/watch?v=qSQ5mr_TjH0"
+  },
+  {
+    "name": "変幻リメ",
+    "youtubeid": "UC5bCRde8xRrNS7s6GjCNCyQ",
+    "title": "#2【スプリット・フィクション】コラボ！季咲あんこちゃんと他では味わえない分割画面で進行するスプリット・フィクション初プレイ！【＃変幻リメ】",
+    "date": "2026-04-21T21:00:00.000+09:00",
+    "status": "upcoming",
+    "thumbnail": "https://i.ytimg.com/vi/X6kLiDgshZ8/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/4hssn4EXW2lORXRfiuYTjmYfnlZoQ2h72sdEompqX7GQwAKCsBx7eL0joCFSook1rfCKIcpykg",
+    "url": "https://www.youtube.com/watch?v=X6kLiDgshZ8"
   },
   {
     "name": "桜樹美彩",

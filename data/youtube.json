@@ -1,15 +1,5 @@
 [
   {
-    "name": "七音うら",
-    "youtubeid": "UCv2IYO-4waCpHvn50SWWY2A",
-    "title": "【#雑談配信】喉が飛んでいきそうな日の雑談。【七音うら】",
-    "date": "2026-04-21T02:01:38.000+09:00",
-    "status": "live",
-    "thumbnail": "https://i.ytimg.com/vi/-Y-lxTQzhzg/mqdefault_live.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/T655ATpSd2gkjZBrokvlkaUH0f5-fCpQdcJpwxmmNdy6fxCYffAlq2sMhPOtFk_CvVyOkEPY8Q",
-    "url": "https://www.youtube.com/watch?v=-Y-lxTQzhzg"
-  },
-  {
     "name": "堂下さとり",
     "youtubeid": "UCBq6MSUL-Ermvnoj3PtX7Iw",
     "title": "【雑談】4月21日朝のニュース【平和なニュース】【堂下さとり/パレデミア学園】",
@@ -1608,6 +1598,36 @@
     "thumbnail": "https://i.ytimg.com/vi/lx5LGcXv5AQ/mqdefault_live.jpg",
     "channelIcon": "https://yt3.googleusercontent.com/4AFFu60kFJqix-OhtDW3EJdQ0jQa1LrK56tGpvqvbGodMQFpkH-_qtvL_66dPGD3kl4LW9N4",
     "url": "https://www.youtube.com/watch?v=lx5LGcXv5AQ"
+  },
+  {
+    "name": "七音うら",
+    "youtubeid": "UCv2IYO-4waCpHvn50SWWY2A",
+    "title": "【#雑談配信】ビーナスみたいに座りながら雑談。【七音うら】",
+    "date": "2026-04-24T02:00:32.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/fY0HIC7xnrU/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/T655ATpSd2gkjZBrokvlkaUH0f5-fCpQdcJpwxmmNdy6fxCYffAlq2sMhPOtFk_CvVyOkEPY8Q",
+    "url": "https://www.youtube.com/watch?v=fY0HIC7xnrU"
+  },
+  {
+    "name": "虎島めら。",
+    "youtubeid": "UCqewFfi_wwydw6fpazmlAFA",
+    "title": "ニューキャッスル専だけどジブに浮気中の女ソロランク 【虎島めら。ぷろのゔぁ】 #apex",
+    "date": "2026-04-24T02:24:42.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/-2OnN_cSTt0/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/6nfq-sTwa1PCHMrmFq5uNijG5PcQ8BRheGNXHc6GEMlBustwPyvfLIPWtxaHpKOhdXU1tFTnfA",
+    "url": "https://www.youtube.com/watch?v=-2OnN_cSTt0"
+  },
+  {
+    "name": "黄金つむぎ",
+    "youtubeid": "UCCqDErkWNs8yWjKS7zHYZBA",
+    "title": "【縦型朝活】( 第1回)猫カフェで、犬系VTuberが猫にモテるには？？",
+    "date": "2026-04-24T06:30:00.000+09:00",
+    "status": "upcoming",
+    "thumbnail": "https://i.ytimg.com/vi/wjyKdzKOdpY/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/lTdispopc8pOEncTx9kn4np7w6VU3-cPBCzBs9ZGkfC2n57SHCgY9XyqR_Gs6cpBD7aqpYPGdHE",
+    "url": "https://www.youtube.com/watch?v=wjyKdzKOdpY"
   },
   {
     "name": "桜樹美彩",

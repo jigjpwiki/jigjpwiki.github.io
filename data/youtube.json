@@ -1,25 +1,5 @@
 [
   {
-    "name": "七音うら",
-    "youtubeid": "UCv2IYO-4waCpHvn50SWWY2A",
-    "title": "【#雑談配信】ちょっとだけ作業するかもしれない日の雑談。【七音うら】",
-    "date": "2026-04-22T02:01:39.000+09:00",
-    "status": "live",
-    "thumbnail": "https://i.ytimg.com/vi/-vZq1UKXQ4A/mqdefault_live.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/T655ATpSd2gkjZBrokvlkaUH0f5-fCpQdcJpwxmmNdy6fxCYffAlq2sMhPOtFk_CvVyOkEPY8Q",
-    "url": "https://www.youtube.com/watch?v=-vZq1UKXQ4A"
-  },
-  {
-    "name": "愛染アネラ",
-    "youtubeid": "UC7ek9Q4cK9O0eT3hiUYJaQw",
-    "title": "【 Supermarket Simulator 】ギャルが完全初見でスーパー経営する【 #新人Vtuber 愛染アネラ 】",
-    "date": "2026-04-22T02:02:31.000+09:00",
-    "status": "live",
-    "thumbnail": "https://i.ytimg.com/vi/PfZMr20cFEE/mqdefault_live.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/R99ADiR_1bRxcNCpiGLCW6ortzJy4JZFjlLaEHeDSJfYgwO_IieZWjjp4GbZauEeMxg_hhoS3A",
-    "url": "https://www.youtube.com/watch?v=PfZMr20cFEE"
-  },
-  {
     "name": "緋雨柚",
     "youtubeid": "UCrB-SfrqB5ChY8aAT99grXw",
     "title": "【#雑談  】グッズが出ました！！！【パレデミア学園/緋雨柚】",
@@ -1660,6 +1640,16 @@
     "url": "https://www.youtube.com/watch?v=n0_AlEHPBE0"
   },
   {
+    "name": "七音うら",
+    "youtubeid": "UCv2IYO-4waCpHvn50SWWY2A",
+    "title": "【#雑談配信】めっちゃおなかすいた雑談。【七音うら】",
+    "date": "2026-04-25T02:00:47.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/Bb85OjyVR84/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/T655ATpSd2gkjZBrokvlkaUH0f5-fCpQdcJpwxmmNdy6fxCYffAlq2sMhPOtFk_CvVyOkEPY8Q",
+    "url": "https://www.youtube.com/watch?v=Bb85OjyVR84"
+  },
+  {
     "name": "堂下さとり",
     "youtubeid": "UCBq6MSUL-Ermvnoj3PtX7Iw",
     "title": "【雑談】4月25日朝のニュース【平和なニュース】【堂下さとり/パレデミア学園】",
@@ -1718,6 +1708,16 @@
     "thumbnail": "https://i.ytimg.com/vi/MfmlHo-yhsI/mqdefault_live.jpg",
     "channelIcon": "https://yt3.googleusercontent.com/wi_loPPiitkzxiP0EiHomngWqVGTZQk1Dn4aI79VFWKLY0QbCTHz-FdjBxKEcQ1Jm0Ea_g257A",
     "url": "https://www.youtube.com/watch?v=MfmlHo-yhsI"
+  },
+  {
+    "name": "藤森ちとせ",
+    "youtubeid": "UCAhdxmsdngH4noySdpVAVWQ",
+    "title": "【歌枠】職業体験グッズイベントの応援ありがとうございました～💐【#vtuber 】#ちとせらいぶ #パレデミア学園",
+    "date": "2026-04-25T18:00:00.000+09:00",
+    "status": "upcoming",
+    "thumbnail": "https://i.ytimg.com/vi/4gFzt7jtRwE/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/traR_yWe-AOGyM2wjo8h2FJO9JWBcbjfrL13X-umeD6BtNPopSZ2Q3YmdJq_5K9gWgHf_j64iQ",
+    "url": "https://www.youtube.com/watch?v=4gFzt7jtRwE"
   },
   {
     "name": "愛乃宮ゆめ",

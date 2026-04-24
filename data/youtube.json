@@ -1,15 +1,5 @@
 [
   {
-    "name": "雛菊のん",
-    "youtubeid": "UChccV6U0Tkx9de4YjXbEelw",
-    "title": "ひそひそ配信💤おやすみを届ける💕#新人vtuber #睡眠導入",
-    "date": "2026-04-22T01:30:52.000+09:00",
-    "status": "live",
-    "thumbnail": "https://i.ytimg.com/vi/0jDYiba3ok4/mqdefault_live.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/OxvUqyZAoX4gIX91GOkYMIE2iYfD1ndRKGZbo4Ih8cDb5QuoXpqNJWZKpephYlI0zNiYjQptAQ",
-    "url": "https://www.youtube.com/watch?v=0jDYiba3ok4"
-  },
-  {
     "name": "七音うら",
     "youtubeid": "UCv2IYO-4waCpHvn50SWWY2A",
     "title": "【#雑談配信】ちょっとだけ作業するかもしれない日の雑談。【七音うら】",
@@ -1550,6 +1540,16 @@
     "url": "https://www.youtube.com/watch?v=qGg78288xA0"
   },
   {
+    "name": "泡清みる",
+    "youtubeid": "UC0pz1TaDyqeO5p8_gbdeunw",
+    "title": "【真夜中ティータイム】某テーマパークに行った話し🐭【ぷろのゔぁ/泡清みる】",
+    "date": "2026-04-24T22:02:58.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/3m2H_Y_-5_M/mqdefault.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/XefzBgTJORQ_8-p4C-a-57IHhaUNpY9becOfXRTDmQ4ezWFTtdBtXQ5H2tJlgUTnYBXUgwZ3dg",
+    "url": "https://www.youtube.com/watch?v=3m2H_Y_-5_M"
+  },
+  {
     "name": "香鳴ハノン",
     "youtubeid": "UCay6Y3oEoiC6ZEE2G0UZu_A",
     "title": "【Burglin' Gnomes】小人！盗人！はのあにすたーんちゅ！#はのあにすたーず【#パレプロ #香鳴ハノン】",
@@ -1618,6 +1618,46 @@
     "thumbnail": "https://i.ytimg.com/vi/3cdNqOo9zaU/mqdefault_live.jpg",
     "channelIcon": "https://yt3.googleusercontent.com/5l_IDFvbCkoc_xXy5i5YH24NcAgRR9bYZM9hu30Hm8may2x-7GiLIxkQ3DHQ4vI9uKwRUcbR6Q",
     "url": "https://www.youtube.com/watch?v=3cdNqOo9zaU"
+  },
+  {
+    "name": "露草なぎ",
+    "youtubeid": "UC9nhm1B-XhPaUO8W8oc4thQ",
+    "title": "マシュマロ返信中..... マシュマロは概要欄に貼ってるよ‼️ #新人vtuber #vtuber準備中 #vtuber#パレデミア学園",
+    "date": "2026-04-25T00:34:10.000+09:00",
+    "status": "archive",
+    "thumbnail": "https://i.ytimg.com/vi/maLy_BQKk08/mqdefault.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/3KzF3YSQvjRpSMpFZEEsaGlIcETMW03ZmdKQy_TjJIm8t9vC4AjNwLLR5hNqXi0M9qnyszb0PCY",
+    "url": "https://www.youtube.com/watch?v=maLy_BQKk08"
+  },
+  {
+    "name": "暁月クララ",
+    "youtubeid": "UCn4XvlTXjGSvDynpxpOYZPQ",
+    "title": "現役JKか、そうじゃないか。世の中これ。#MIMIMI #踊ってみた #dance #暁月クララ",
+    "date": "2026-04-25T00:48:56.000+09:00",
+    "status": "archive",
+    "thumbnail": "https://i.ytimg.com/vi/lJpnrhCpRFk/mqdefault.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/8tcStp-WzdZPtf6bPq1DtUnFSd2Eq5AppSd3_CEQ7hNNpnRND8InaWdPCz6T1wIWWkGJuFrbT94",
+    "url": "https://www.youtube.com/watch?v=lJpnrhCpRFk"
+  },
+  {
+    "name": "藤宮コトハ",
+    "youtubeid": "UCGndc74kfWb_A-8hZBG534Q",
+    "title": "【Duolingo】　英語勉強はじめました。最近の趣味みたいなもん🍀　【#パレプロ ／ #藤宮コトハ 】",
+    "date": "2026-04-25T00:52:47.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/ZXAZQbcE1RM/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/rthBXvqjNFcVwEp-AWpiZDXnNjBodSXlsDTa-sjW6uR6Ssv3wuOw2dMXDZLlYaf_c4YiKfItHXU",
+    "url": "https://www.youtube.com/watch?v=ZXAZQbcE1RM"
+  },
+  {
+    "name": "暁月クララ",
+    "youtubeid": "UCn4XvlTXjGSvDynpxpOYZPQ",
+    "title": "【#学マス 】#ミリしら プレイで神引き💐Vアイドルの反応✨️【#暁月クララ 】#学園アイドルマスター #切り抜き",
+    "date": "2026-04-25T01:25:46.000+09:00",
+    "status": "archive",
+    "thumbnail": "https://i.ytimg.com/vi/n0_AlEHPBE0/mqdefault.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/8tcStp-WzdZPtf6bPq1DtUnFSd2Eq5AppSd3_CEQ7hNNpnRND8InaWdPCz6T1wIWWkGJuFrbT94",
+    "url": "https://www.youtube.com/watch?v=n0_AlEHPBE0"
   },
   {
     "name": "堂下さとり",

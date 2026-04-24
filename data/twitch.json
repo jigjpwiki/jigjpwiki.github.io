@@ -1,14 +1,5 @@
 [
   {
-    "name": "銘兎目あう",
-    "twitchid": "Metome_Au",
-    "title": "【スト６】新スタ有⭐1536MR～Mケン🥊🥋大会に向けて編（火）",
-    "date": "2026-04-21T20:31:48.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://yt3.googleusercontent.com/VB97J8AMHex_rkfd6hDhfiGhhVvrL-NNkseP2mMYSWh75sxA_oXctmxK5tV4FYgkM17RUAx6GQ",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/b46fab50b6d246ed0492_metome_au_315787492594_1776771103//thumb/thumb0-320x180.jpg"
-  },
-  {
     "name": "桜樹美彩",
     "twitchid": "sakuragimisa_v",
     "title": "【 朝活 】木曜以外は平日7時！土曜は9時開始朝活☀",
@@ -93,8 +84,17 @@
     "name": "火乃晴るい",
     "twitchid": "hinoha_rui",
     "title": "【 #R6SX 】参加型アンランク✨やるわよ",
-    "date": "2026-04-24T18:38:13.000+09:00",
+    "date": "2026-04-24T18:38:18.000+09:00",
+    "status": "archive",
+    "channelIcon": "https://yt3.googleusercontent.com/8vDFqOVNprKqFE0o7EecXyQleBXIibeJZpXpSgjm5msh4Yd0S8hTsbmYZyOBXa3bUEgBJHZt1w",
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/4e07f2d0ae01ebe6230d_hinoha_rui_315854210419_1777023493//thumb/thumb0-320x180.jpg"
+  },
+  {
+    "name": "銘兎目あう",
+    "twitchid": "Metome_Au",
+    "title": "【スト６】明日は レバテック #VRoad ！カスタム参加型🥊初見さん◎初見さん◎【参加希望】とコメントしてね⭐",
+    "date": "2026-04-24T20:32:07.000+09:00",
     "status": "live",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_hinoha_rui-320x180.jpg"
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_Metome_Au-320x180.jpg"
   }
 ]

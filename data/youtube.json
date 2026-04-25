@@ -1,15 +1,5 @@
 [
   {
-    "name": "天堂ライラ",
-    "youtubeid": "UCpdWNjSU-onhmcARqgHIfpg",
-    "title": "【祝】デビューから1週間！#パレデミア学園 #新人Vtuber #Vtuber準備中",
-    "date": "2026-04-23T01:50:19.000+09:00",
-    "status": "archive",
-    "thumbnail": "https://i.ytimg.com/vi/LoU0lx3sVrg/mqdefault.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/EiYqg3UgCbTPecJe4dg8w3Wc7VQmPvm7HP7WYhhTZh9439PRlcwoc8j9T27PeF6XaFfLVhGH",
-    "url": "https://www.youtube.com/watch?v=LoU0lx3sVrg"
-  },
-  {
     "name": "七音うら",
     "youtubeid": "UCv2IYO-4waCpHvn50SWWY2A",
     "title": "【#雑談配信】絶望の雑談。30分(本気)【七音うら】",
@@ -1610,6 +1600,16 @@
     "url": "https://www.youtube.com/watch?v=U06SWwPZSc8"
   },
   {
+    "name": "相栖るじゅ",
+    "youtubeid": "UCrpdBoGpa6g2WEtRWsIlhDQ",
+    "title": "【夏祭り】あいすの的あて２【相栖るじゅ/パレデミア学園】",
+    "date": "2026-04-26T01:02:31.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/UGGObdwqI2U/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/yQbh9vEEgS_UapoQhIxxoTSy13bDxlHYC-ncTcO9VIDBN2NvrLTAWeKGQ72CN2fhOOrHqYaFDA",
+    "url": "https://www.youtube.com/watch?v=UGGObdwqI2U"
+  },
+  {
     "name": "犬丸なでこ",
     "youtubeid": "UCdJmJxMfXrlnZabUkuss2EA",
     "title": "【Haunted Room : 205】この部屋で今夜、何が起きるわん・・・？【パレデミア学園/犬丸なでこ】",
@@ -1618,6 +1618,16 @@
     "thumbnail": "https://i.ytimg.com/vi/yHpEGLQ2kmE/mqdefault_live.jpg",
     "channelIcon": "https://yt3.googleusercontent.com/OQpHijB1HDVezkvjNufbM9PmR9kbhUe1mfnSRqJ67l-R34sAc4BhYmQ2U7C-SapKAtcOk_Bp",
     "url": "https://www.youtube.com/watch?v=yHpEGLQ2kmE"
+  },
+  {
+    "name": "堂下さとり",
+    "youtubeid": "UCBq6MSUL-Ermvnoj3PtX7Iw",
+    "title": "【雑談】4月26日朝のニュース【平和なニュース】【堂下さとり/パレデミア学園】",
+    "date": "2026-04-26T06:20:00.000+09:00",
+    "status": "upcoming",
+    "thumbnail": "https://i.ytimg.com/vi/W3LMCQjyc4c/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/eW_Hug0M6zFk9QSbAmOUWLMSfzBlCHmes-8yAksvfUNzyLgY6TSsE_eW8ncfE4bHYZXKoTWxmQ",
+    "url": "https://www.youtube.com/watch?v=W3LMCQjyc4c"
   },
   {
     "name": "花晴りら",

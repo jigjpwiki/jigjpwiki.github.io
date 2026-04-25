@@ -1,15 +1,5 @@
 [
   {
-    "name": "桜堂ねる",
-    "youtubeid": "UC0H7dRRqhfOifbYQ2TURdAg",
-    "title": "圧倒的自由な朝活0422",
-    "date": "2026-04-23T03:05:57.000+09:00",
-    "status": "live",
-    "thumbnail": "https://i.ytimg.com/vi/yInsvaH0EJI/mqdefault_live.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/hBz75E3AEST1Dzv5vOTHAqoJfayd30WIWWQ3ZFLlWMHDsyZ_QD6ZVVUtLTKSizalT3APPtdpFGI",
-    "url": "https://www.youtube.com/watch?v=yInsvaH0EJI"
-  },
-  {
     "name": "堂下さとり",
     "youtubeid": "UCBq6MSUL-Ermvnoj3PtX7Iw",
     "title": "【手元配信】【大量】チョコバナナ＆わたあめ作り【夏祭り】【パレデミア学園/堂下さとり】新人Vtuber",
@@ -1680,6 +1670,26 @@
     "url": "https://www.youtube.com/watch?v=rZVSFOcs5to"
   },
   {
+    "name": "香鳴ハノン",
+    "youtubeid": "UCay6Y3oEoiC6ZEE2G0UZu_A",
+    "title": "【蒼の彼方のフォーリズム】第八話(後半) 有坂真白ルートを行く！はじめての美少女ゲーム！👀✨#あおかな【#パレプロ #香鳴ハノン】",
+    "date": "2026-04-26T14:00:00.000+09:00",
+    "status": "upcoming",
+    "thumbnail": "https://i.ytimg.com/vi/S1UCppubkKU/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/qvbeb9E-gYc822fxxzi6Ug5QyjhqZAWbUskHANcwDWP5W8iTsK3LcQJnjS4CVBuFJ6fONsM9F7M",
+    "url": "https://www.youtube.com/watch?v=S1UCppubkKU"
+  },
+  {
+    "name": "七海ロナ",
+    "youtubeid": "UCIaZylf5L9MsCMOJX3BdTEg",
+    "title": "#4【ドラクエ２】四天王討伐編、開始！！！【パレプロ／七海ロナ】",
+    "date": "2026-04-26T17:00:00.000+09:00",
+    "status": "upcoming",
+    "thumbnail": "https://i.ytimg.com/vi/RWDcl28ASjs/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/wi_loPPiitkzxiP0EiHomngWqVGTZQk1Dn4aI79VFWKLY0QbCTHz-FdjBxKEcQ1Jm0Ea_g257A",
+    "url": "https://www.youtube.com/watch?v=RWDcl28ASjs"
+  },
+  {
     "name": "夏渚まはろ",
     "youtubeid": "UC_a00ml_EVDXSrtY8ZuyqGQ",
     "title": "【Slay the Spire 2】リージェント初見プレイ！【#夏渚まはろ￤#パレプロ】",
@@ -1688,6 +1698,16 @@
     "thumbnail": "https://i.ytimg.com/vi/i01RFGciFeQ/mqdefault_live.jpg",
     "channelIcon": "https://yt3.googleusercontent.com/iktv-39nC7NDASD1WeXms-DEuHuVqB5RhwTtdDe26w-BCvqf6yq3r_8zBiv2i2CfNXCK0uE8",
     "url": "https://www.youtube.com/watch?v=i01RFGciFeQ"
+  },
+  {
+    "name": "常磐カナメ",
+    "youtubeid": "UCbNEgJIF_ADD9e8-q7SoxCg",
+    "title": "【魔法少女ノ魔女裁判 #5】初見魔法少女の魔女裁判【パレプロ/常磐カナメ】※ネタバレ注意",
+    "date": "2026-04-26T19:30:00.000+09:00",
+    "status": "upcoming",
+    "thumbnail": "https://i.ytimg.com/vi/qtrpNk7oGTI/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/vb_kLF_4hQ7UdEtOnEtL-_pI320ZMQ-lVQ9OV3xMvdTQitHXX1zk0b6GKQ977dawvfoB5Sb8OQ",
+    "url": "https://www.youtube.com/watch?v=qtrpNk7oGTI"
   },
   {
     "name": "Palette Project",

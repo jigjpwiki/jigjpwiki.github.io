@@ -1,25 +1,5 @@
 [
   {
-    "name": "藤森ちとせ",
-    "youtubeid": "UCAhdxmsdngH4noySdpVAVWQ",
-    "title": "【Minecraftメン限参加型ワールド配信】山、すごいことになってましたね～ﾅﾆｺﾚｯ【#新人vtuber 】#ちとせらいぶ",
-    "date": "2026-04-24T12:58:20.000+09:00",
-    "status": "live",
-    "thumbnail": "https://i.ytimg.com/vi/DIt0ZSCkbVY/mqdefault_live.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/traR_yWe-AOGyM2wjo8h2FJO9JWBcbjfrL13X-umeD6BtNPopSZ2Q3YmdJq_5K9gWgHf_j64iQ",
-    "url": "https://www.youtube.com/watch?v=DIt0ZSCkbVY"
-  },
-  {
-    "name": "七海ロナ",
-    "youtubeid": "UCIaZylf5L9MsCMOJX3BdTEg",
-    "title": "昼夜逆転VOXAC30W",
-    "date": "2026-04-24T15:00:55.000+09:00",
-    "status": "live",
-    "thumbnail": "https://i.ytimg.com/vi/3k74klwpwVw/mqdefault_live.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/wi_loPPiitkzxiP0EiHomngWqVGTZQk1Dn4aI79VFWKLY0QbCTHz-FdjBxKEcQ1Jm0Ea_g257A",
-    "url": "https://www.youtube.com/watch?v=3k74klwpwVw"
-  },
-  {
     "name": "桜堂ねる",
     "youtubeid": "UC0H7dRRqhfOifbYQ2TURdAg",
     "title": "4月24日【桜堂ねる】#今日は何の日 #ねる道場 #vtuber #shorts",
@@ -1608,5 +1588,15 @@
     "thumbnail": "https://i.ytimg.com/vi/Juc2QtoSTqs/mqdefault_live.jpg",
     "channelIcon": "https://yt3.googleusercontent.com/vb_kLF_4hQ7UdEtOnEtL-_pI320ZMQ-lVQ9OV3xMvdTQitHXX1zk0b6GKQ977dawvfoB5Sb8OQ",
     "url": "https://www.youtube.com/watch?v=Juc2QtoSTqs"
+  },
+  {
+    "name": "常磐カナメ",
+    "youtubeid": "UCbNEgJIF_ADD9e8-q7SoxCg",
+    "title": "【#和風曲歌枠リレー】開会式&参加者紹介♪【パレプロ/常磐カナメ】",
+    "date": "2026-05-02T14:00:00.000+09:00",
+    "status": "upcoming",
+    "thumbnail": "https://i.ytimg.com/vi/4PkJmhFpXsA/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.googleusercontent.com/vb_kLF_4hQ7UdEtOnEtL-_pI320ZMQ-lVQ9OV3xMvdTQitHXX1zk0b6GKQ977dawvfoB5Sb8OQ",
+    "url": "https://www.youtube.com/watch?v=4PkJmhFpXsA"
   }
 ]

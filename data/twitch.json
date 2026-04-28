@@ -1,14 +1,5 @@
 [
   {
-    "name": "桜樹美彩",
-    "twitchid": "sakuragimisa_v",
-    "title": "【 朝活 】木曜以外は平日7時！土曜は9時開始朝活☀",
-    "date": "2026-04-25T09:00:22.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://yt3.googleusercontent.com/pDP2GuylW0RN1REDScFAlNklbXaPRqTm2mwT2F7dIo8xoYYFPfspsjGH_G3RagwlKVlQbdw95bY",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d1m7jfoe9zdc1j/5b2218366489ee7c217c_sakuragimisa_v_318947782234_1777075217//thumb/thumb0-320x180.jpg"
-  },
-  {
     "name": "妖小琳",
     "twitchid": "yaosyaorin",
     "title": "デドバ",
@@ -124,5 +115,13 @@
     "status": "archive",
     "channelIcon": "https://yt3.googleusercontent.com/pDP2GuylW0RN1REDScFAlNklbXaPRqTm2mwT2F7dIo8xoYYFPfspsjGH_G3RagwlKVlQbdw95bY",
     "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d1m7jfoe9zdc1j/db60e6a19c9ea1cb36f6_sakuragimisa_v_319001130330_1777327215//thumb/thumb0-320x180.jpg"
+  },
+  {
+    "name": "しーはむ",
+    "twitchid": "siyham",
+    "title": "グウェン練習をあきらめない",
+    "date": "2026-04-28T08:47:27.000+09:00",
+    "status": "live",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_siyham-320x180.jpg"
   }
 ]

@@ -23,6 +23,11 @@ function toJstISOString(utcString) {
     const threeDaysAgo   = new Date(now.getTime() - 3 * 24 * 60 * 60 * 1000);
     const threeDaysLater = new Date(now.getTime() + 5 * 24 * 60 * 60 * 1000);
 
+    // 当日・前日の範囲 (JST基準)
+    const jstNow = new Date(now.getTime() + 9 * 60 * 60 * 1000);
+    const todayJstMidnight = new Date(Date.UTC(jstNow.getUTCFullYear(), jstNow.getUTCMonth(), jstNow.getUTCDate()) - 9 * 60 * 60 * 1000);
+    const yesterdayJstMidnight = new Date(todayJstMidnight.getTime() - 24 * 60 * 60 * 1000);
+
     // キャッシュ読み込み
     let cache = {};
     try {
@@ -53,16 +58,28 @@ function toJstISOString(utcString) {
       processed++;
 
       const lastChecked = cache[s.youtubeChannelId];
-      if (lastChecked && (now - new Date(lastChecked) < 1 * 60 * 60 * 1000)) {
+      const lastCheckedAge = lastChecked ? (now - new Date(lastChecked)) : Infinity;
+
+      // 1時間以内にチェック済みはスキップ
+      if (lastCheckedAge < 1 * 60 * 60 * 1000) {
         skippedByCache++;
-        // 直近3時間はスキップ
         continue;
       }
 
-      // 最新動画検索（最大5件）
+      // 当日・前日にデータがないチャンネルは6時間キャッシュ（クォータ節約）
+      const hasRecentEntry = existing.some(
+        item => item.youtubeid === s.youtubeChannelId && new Date(item.date) >= yesterdayJstMidnight
+      );
+      if (!hasRecentEntry && lastCheckedAge < 6 * 60 * 60 * 1000) {
+        skippedByCache++;
+        continue;
+      }
+
+      // 最新動画検索（当日・前日分のみ、最大5件）
       const searchUrl =
         `https://www.googleapis.com/youtube/v3/search?` +
-        `part=id&channelId=${s.youtubeChannelId}&maxResults=5&order=date&type=video&key=${YOUTUBE_API_KEY}`;
+        `part=id&channelId=${s.youtubeChannelId}&maxResults=5&order=date&type=video` +
+        `&publishedAfter=${yesterdayJstMidnight.toISOString()}&key=${YOUTUBE_API_KEY}`;
 
       const searchRes = await fetch(searchUrl);
       const searchJson = await searchRes.json();
@@ -95,13 +112,15 @@ function toJstISOString(utcString) {
 
         if (details.actualStartTime) {
           const actual = new Date(details.actualStartTime);
-          if (actual >= threeDaysAgo && actual <= now) {
+          if (actual >= yesterdayJstMidnight && actual <= now) {
+            // liveBroadcastContent が 'live' かつ actualEndTime がなければ配信中
+            const isLive = snippet.liveBroadcastContent === 'live' && !details.actualEndTime;
             combined.push({
               name: s.name,
               youtubeid: s.youtubeChannelId,
               title,
               date: toJstISOString(details.actualStartTime),
-              status: 'live',
+              status: isLive ? 'live' : 'archive',
               thumbnail,
               channelIcon: s.channelIcon || '',
               url: videoUrl
@@ -123,7 +142,7 @@ function toJstISOString(utcString) {
           }
         } else {
           const publishedAt = new Date(snippet.publishedAt);
-          if (publishedAt >= threeDaysAgo && publishedAt <= now) {
+          if (publishedAt >= yesterdayJstMidnight && publishedAt <= now) {
             combined.push({
               name: s.name,
               youtubeid: s.youtubeChannelId,
@@ -160,7 +179,7 @@ function toJstISOString(utcString) {
     const windowStart = new Date(threeDaysAgo);
     const windowEnd   = new Date(threeDaysLater);
 
-    const merged = [...existing, ...combined].filter(item => {
+    const merged = [...combined, ...existing].filter(item => {
       const d = new Date(item.date);
       return d >= windowStart && d <= windowEnd;
     });
@@ -172,6 +191,14 @@ function toJstISOString(utcString) {
       if (seen.has(key)) return false;
       seen.add(key);
       return true;
+    });
+
+    // 12時間以上経過した live エントリを archive に降格（キャッシュ中に配信が終了した場合の補正）
+    const liveStaleThreshold = new Date(now.getTime() - 12 * 60 * 60 * 1000);
+    deduped.forEach(item => {
+      if (item.status === 'live' && new Date(item.date) < liveStaleThreshold) {
+        item.status = 'archive';
+      }
     });
 
     // 昇順ソート

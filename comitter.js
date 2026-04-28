@@ -109,9 +109,21 @@ Promise.all([
         const div = document.createElement("div");
         div.classList.add("live-wrapper");
 
+        // YouTubeアイテムにはビデオIDを付与してAPI確認対象にする
+        if (item.platform === 'youtube') {
+          try {
+            const videoId = new URL(item.url).searchParams.get('v');
+            if (videoId) div.dataset.ytId = videoId;
+          } catch (_) {}
+        }
+
+        // 12時間以上経過したliveはON AIR非表示（JSONキャッシュ中に終了した場合の補正）
+        const streamAge = Date.now() - new Date(item.date).getTime();
+        const isLive = item.status === 'live' && streamAge < 12 * 60 * 60 * 1000;
         div.innerHTML = `
-          <a href="${item.url}" target="_blank" class="live-block">
+          <a href="${item.url}" target="_blank" class="live-block${isLive ? ' is-live' : ''}">
             <div class="formatted-time"><p>${formattedTime}</p></div>
+            ${isLive ? '<div class="on-air-badge"><p>ON AIR</p></div>' : ''}
             <div class="live-badge ${item.platform}">
               <div class="${item.platform}-badge platform-border"></div>
               <div class="live-info">
@@ -138,6 +150,7 @@ Promise.all([
   }
 
   initializeCarousel();
+  checkYouTubeLiveStatus();
 
   // 現在のJST時刻に対応する time-heading へスクロール
   function scrollToCurrentTime() {
@@ -179,3 +192,69 @@ Promise.all([
 .catch(error => {
   console.error("データ取得エラー:", error);
 });
+
+/**
+ * data/yt_browser_config.json のAPIキーを使い、
+ * YouTube Data API v3 でライブ状態をリアルタイム確認してDOMを更新する
+ */
+async function checkYouTubeLiveStatus() {
+  let apiKey = '';
+  try {
+    const config = await fetch('data/yt_browser_config.json').then(r => r.json());
+    apiKey = (config.apiKey || '').trim();
+  } catch {
+    return; // 設定ファイルなし or パース失敗はサイレントに無視
+  }
+  if (!apiKey || apiKey === 'YOUR_KEY_HERE') return;
+
+  const allDivs = [...document.querySelectorAll('[data-yt-id]')];
+  if (!allDivs.length) return;
+
+  const idMap = new Map(allDivs.map(div => [div.dataset.ytId, div]));
+  const ids = [...idMap.keys()];
+
+  for (let i = 0; i < ids.length; i += 50) {
+    const batch = ids.slice(i, i + 50).join(',');
+    try {
+      const url = new URL('https://www.googleapis.com/youtube/v3/videos');
+      url.searchParams.set('part', 'snippet,liveStreamingDetails');
+      url.searchParams.set('id', batch);
+      url.searchParams.set('key', apiKey);
+
+      const res = await fetch(url.toString());
+      if (!res.ok) {
+        console.warn('YouTube API error:', res.status, await res.text());
+        continue;
+      }
+      const json = await res.json();
+
+      for (const video of (json.items || [])) {
+        const div = idMap.get(video.id);
+        if (!div) continue;
+
+        const snippet = video.snippet || {};
+        const details = video.liveStreamingDetails || {};
+        const isLive = snippet.liveBroadcastContent === 'live' && !details.actualEndTime;
+
+        const anchor = div.querySelector('a.live-block');
+        if (!anchor) continue;
+
+        if (isLive) {
+          anchor.classList.add('is-live');
+          if (!anchor.querySelector('.on-air-badge')) {
+            const badge = document.createElement('div');
+            badge.className = 'on-air-badge';
+            badge.innerHTML = '<p>ON AIR</p>';
+            const timeEl = anchor.querySelector('.formatted-time');
+            if (timeEl) timeEl.insertAdjacentElement('afterend', badge);
+          }
+        } else {
+          anchor.classList.remove('is-live');
+          anchor.querySelector('.on-air-badge')?.remove();
+        }
+      }
+    } catch (e) {
+      console.warn('YouTube live status check failed:', e);
+    }
+  }
+}

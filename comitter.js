@@ -49,18 +49,24 @@ Promise.all([
   document.querySelector('.videoswipe-inner').appendChild(outer); // 適切な親に追加
 
   const today = new Date();
-  const todayStr = today.toLocaleDateString('ja-JP', { month: 'numeric', day: 'numeric' });
+  const toDateKey = (d) => {
+    const m = String(d.getMonth() + 1).padStart(2, '0');
+    const day = String(d.getDate()).padStart(2, '0');
+    return `${m}/${day}`;
+  };
+  const todayStr = toDateKey(today);
 
   const groupedData = {};
   allData.forEach(item => {
-    const dateKey = new Date(item.date).toLocaleDateString('ja-JP', { month: 'numeric', day: 'numeric' });
+    const d = new Date(item.date);
+    const dateKey = toDateKey(d);
     if (!groupedData[dateKey]) groupedData[dateKey] = [];
     groupedData[dateKey].push(item);
   });
 
   for (let offset = -3; offset <= 5; offset++) {
     const targetDate = new Date(today.getFullYear(), today.getMonth(), today.getDate() + offset);
-    const dateStr = targetDate.toLocaleDateString('ja-JP', { month: 'numeric', day: 'numeric' });
+    const dateStr = toDateKey(targetDate);
     const entries = groupedData[dateStr] || [];
 
     const dayBlock = document.createElement("div");
@@ -72,7 +78,10 @@ Promise.all([
     const dateHeadingWrapper = document.createElement("div");
     dateHeadingWrapper.classList.add("date-heading");
     const dateHeading = document.createElement("h2");
-    dateHeading.textContent = `${dateStr}`;
+    const dow = targetDate.getDay();
+    if (dow === 0) dateHeading.classList.add("date-heading--sun");
+    else if (dow === 6) dateHeading.classList.add("date-heading--sat");
+    dateHeading.textContent = dateStr;
     dateHeadingWrapper.appendChild(dateHeading);
     dayBlock.appendChild(dateHeadingWrapper);
 

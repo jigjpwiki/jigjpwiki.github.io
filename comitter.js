@@ -138,6 +138,43 @@ Promise.all([
   }
 
   initializeCarousel();
+
+  // 現在のJST時刻に対応する time-heading へスクロール
+  function scrollToCurrentTime() {
+    const todayBlock = document.querySelector('.today-block');
+    if (!todayBlock) return;
+
+    // UTC+9 でJSTの時刻を取得
+    const jstHour = new Date(Date.now() + 9 * 60 * 60 * 1000).getUTCHours();
+
+    // 時間帯の区切り (0, 6, 12, 18)
+    const ranges = [0, 6, 12, 18];
+    const currentRange = ranges.reduce((prev, curr) => jstHour >= curr ? curr : prev, 0);
+
+    // 現在の時間帯から遡り、データが存在する最も近い time-heading を探す
+    let targetEl = null;
+    for (let i = ranges.indexOf(currentRange); i >= 0; i--) {
+      const rangeStr = ranges[i].toString().padStart(2, '0');
+      const videoList = todayBlock.querySelector(`.video-list.time-${rangeStr}`);
+      if (videoList && videoList.previousElementSibling) {
+        targetEl = videoList.previousElementSibling; // .time-heading div
+        break;
+      }
+    }
+
+    // 見つからなければ最初の time-heading にフォールバック
+    if (!targetEl) {
+      targetEl = todayBlock.querySelector('.time-heading');
+    }
+
+    if (targetEl) {
+      const offset = targetEl.getBoundingClientRect().top - todayBlock.getBoundingClientRect().top;
+      todayBlock.scrollTo({ top: todayBlock.scrollTop + offset - 100, behavior: 'smooth' });
+    }
+  }
+
+  // Swiper描画完了後に実行
+  requestAnimationFrame(() => requestAnimationFrame(scrollToCurrentTime));
 })
 .catch(error => {
   console.error("データ取得エラー:", error);

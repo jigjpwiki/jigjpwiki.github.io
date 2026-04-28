@@ -1,3 +1,21 @@
+function startDebugClock() {
+  const el = document.getElementById('debug-jst');
+  if (!el) return;
+  const update = () => {
+    const now = new Date().toLocaleString('ja-JP', {
+      timeZone: 'Asia/Tokyo',
+      year: 'numeric', month: '2-digit', day: '2-digit',
+      hour: '2-digit', minute: '2-digit', second: '2-digit',
+      hour12: false
+    });
+    el.textContent = '' + now + ' JST';
+  };
+  update();
+  setInterval(update, 1000);
+}
+
+startDebugClock();
+
 function initializeCarousel() {
   const today = new Date().toLocaleDateString('ja-JP', { month: 'numeric', day: 'numeric' });
   const slides = document.querySelectorAll('.day-block');

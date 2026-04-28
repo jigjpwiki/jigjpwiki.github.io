@@ -1,23 +1,5 @@
 [
   {
-    "name": "妖小琳",
-    "twitchid": "yaosyaorin",
-    "title": "デドバ",
-    "date": "2026-04-25T11:15:04.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://yt3.googleusercontent.com/Ji8DJgyzWKUbbeWlYgFfsCZtyiGZ-zM597otZBcFnIoEVIw7284GbNbBQcALgEKwqvk8OXNZLA",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/791e33db566133ac6cd4_yaosyaorin_315803950834_1777083298//thumb/thumb0-320x180.jpg"
-  },
-  {
-    "name": "銘兎目あう",
-    "twitchid": "Metome_Au",
-    "title": "【スト６】レバテック #VRoad ~Virtual Road to EVO Japan~ 頑張るよ！🥊🥋",
-    "date": "2026-04-25T12:01:15.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://yt3.googleusercontent.com/VB97J8AMHex_rkfd6hDhfiGhhVvrL-NNkseP2mMYSWh75sxA_oXctmxK5tV4FYgkM17RUAx6GQ",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/6808c351e170a3a66ce8_metome_au_315804085234_1777086070//thumb/thumb0-320x180.jpg"
-  },
-  {
     "name": "水透ユウ",
     "twitchid": "minato_yu_",
     "title": "【アメこすカスタム】お久しぶりでっすカスタムでっす【水透ユウ/ぷろのゔぁ】#ubisoftpartner #ユウおんらいぶ #ad",
@@ -120,8 +102,9 @@
     "name": "しーはむ",
     "twitchid": "siyham",
     "title": "グウェン練習をあきらめない",
-    "date": "2026-04-28T08:47:27.000+09:00",
-    "status": "live",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_siyham-320x180.jpg"
+    "date": "2026-04-28T08:47:33.000+09:00",
+    "status": "archive",
+    "channelIcon": "https://yt3.googleusercontent.com/y0zP0Uz7HSLx5dv3xo488Suxk8rJQQUC1wXaymjUBIQIwa25WlVu_VmrsT1xAyVD-jgeL7hs",
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/dd1c8e892f9885c49b9f_siyham_315817431922_1777333647//thumb/thumb0-320x180.jpg"
   }
 ]

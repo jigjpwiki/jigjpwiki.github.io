@@ -133,6 +133,7 @@ header {
   display: flex;
   flex-direction: column;
   overflow-y: auto;
+  overscroll-behavior-y: none;
   height: calc(100vh - 132px); /* 必要に応じて調整 */
   border-right: 1px solid #dedede;
 }
@@ -237,6 +238,10 @@ header {
   transform: translateY(-3px);
 }
 
+.live-block:hover .onair-badge {
+  transform: translateY(-3px);
+}
+
 .live-info-inner {
   display: flex;
 }
@@ -298,12 +303,8 @@ header {
   display: flex;
   align-items: center;
   background-color: #ffffff;
-  position: relative;
-  top: 12px;
-  left: 17px;
   border-radius: 12px;
   transition: box-shadow 0.3s ease, transform 0.3s ease;
-  z-index: 2; /* z-indexを追加 */
 }
 
 .formatted-time p {
@@ -311,6 +312,42 @@ header {
   font-family: roboto, sans-serif;
   color: #999999;
   font-weight: 700;
+}
+
+/* 時刻ピル / ON AIRピル を左右に振り分けるラッパー */
+.card-pills {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 17px;
+  position: relative;
+  top: 12px;
+  z-index: 2;
+  pointer-events: none;
+}
+
+/* ON AIR バッジ（YouTube Live配信中のみ表示） */
+.onair-badge {
+  padding: 0px 11px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  background-color: #FF0000;
+  border-radius: 12px;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.onair-badge p {
+  font-size: 14px;
+  font-family: roboto, sans-serif;
+  color: #ffffff;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+}
+
+/* YouTube Live配信中のカードボーダー */
+.live-badge.is-live {
+  border: 2px solid #FF0000;
 }
 
 

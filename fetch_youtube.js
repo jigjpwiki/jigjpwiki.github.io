@@ -7,6 +7,15 @@ const YOUTUBE_API_KEY = process.env.YOUTUBE_API_KEY;
 const DATA_FILE  = 'data/youtube.json';          // ページが読む本体
 const CACHE_FILE = 'data/youtube_cache.json';    // 取得間引き用キャッシュ（lastChecked）
 
+async function fetchChannelIcon(channelId, apiKey) {
+  const url =
+    `https://www.googleapis.com/youtube/v3/channels?` +
+    `part=snippet&id=${channelId}&key=${apiKey}`;
+  const res = await fetch(url);
+  const json = await res.json();
+  return json.items?.[0]?.snippet?.thumbnails?.medium?.url || '';
+}
+
 function toJstISOString(utcString) {
   const date = new Date(utcString);
   const jstOffset = 9 * 60;
@@ -35,6 +44,7 @@ function toJstISOString(utcString) {
     } catch {
       console.log('📁 No cache found, starting fresh.');
     }
+    if (!cache.__channelIcons__) cache.__channelIcons__ = {};
 
     // 既存の出力（上書き事故を避けるため先に読む）
     let existing = [];
@@ -56,6 +66,13 @@ function toJstISOString(utcString) {
     for (const s of streamers) {
       if (!s.youtubeChannelId) continue;
       processed++;
+
+      // チャンネルアイコン取得（未キャッシュなら API から取得）
+      if (!cache.__channelIcons__[s.youtubeChannelId]) {
+        const icon = await fetchChannelIcon(s.youtubeChannelId, YOUTUBE_API_KEY);
+        if (icon) cache.__channelIcons__[s.youtubeChannelId] = icon;
+      }
+      const channelIcon = cache.__channelIcons__[s.youtubeChannelId] || '';
 
       const lastChecked = cache[s.youtubeChannelId];
       const lastCheckedAge = lastChecked ? (now - new Date(lastChecked)) : Infinity;
@@ -122,7 +139,7 @@ function toJstISOString(utcString) {
               date: toJstISOString(details.actualStartTime),
               status: isLive ? 'live' : 'archive',
               thumbnail,
-              channelIcon: s.channelIcon || '',
+              channelIcon,
               url: videoUrl
             });
           }
@@ -136,7 +153,7 @@ function toJstISOString(utcString) {
               date: toJstISOString(details.scheduledStartTime),
               status: 'upcoming',
               thumbnail,
-              channelIcon: s.channelIcon || '',
+              channelIcon,
               url: videoUrl
             });
           }
@@ -150,7 +167,7 @@ function toJstISOString(utcString) {
               date: toJstISOString(snippet.publishedAt),
               status: 'archive',
               thumbnail,
-              channelIcon: s.channelIcon || '',
+              channelIcon,
               url: videoUrl
             });
           }

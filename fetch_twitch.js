@@ -78,19 +78,6 @@ function getThumbnailUrl(user_login, status, videoId) {
     for (const s of list) {
       if (!s.twitchUserLogin) continue;
 
-      // ライブ配信取得
-      const stream = await fetchTwitchLive(s.twitchUserLogin, token);
-      if (stream) {
-        combined.push({
-          name: s.name,
-          twitchid: s.twitchUserLogin,
-          title: stream.title,
-          date: toJstISOString(stream.started_at),
-          status: 'live',
-          thumbnail: getThumbnailUrl(s.twitchUserLogin, 'live')
-        });
-      }
-
       // ユーザーID取得
       const userRes = await fetch(
         `https://api.twitch.tv/helix/users?login=${s.twitchUserLogin}`,
@@ -105,6 +92,20 @@ function getThumbnailUrl(user_login, status, videoId) {
       const user = userJson.data?.[0];
       if (!user) continue;
 
+      // ライブ配信取得
+      const stream = await fetchTwitchLive(s.twitchUserLogin, token);
+      if (stream) {
+        combined.push({
+          name: s.name,
+          twitchid: s.twitchUserLogin,
+          title: stream.title,
+          date: toJstISOString(stream.started_at),
+          status: 'live',
+          channelIcon: user.profile_image_url || '',
+          thumbnail: getThumbnailUrl(s.twitchUserLogin, 'live')
+        });
+      }
+
       // アーカイブ取得
       const archives = await fetchTwitchArchive(user.id, token);
       for (const video of archives) {
@@ -116,7 +117,7 @@ function getThumbnailUrl(user_login, status, videoId) {
             title: video.title,
             date: toJstISOString(video.created_at),
             status: 'archive',
-            channelIcon: s.channelIcon || '',
+            channelIcon: user.profile_image_url || '',
             thumbnail: video.thumbnail_url
               .replace('%{width}', '320')
               .replace('%{height}', '180')

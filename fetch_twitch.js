@@ -69,7 +69,7 @@ function getThumbnailUrl(user_login, status, videoId) {
 (async () => {
   try {
     const token = await getTwitchToken();
-    const list = JSON.parse(await fs.readFile('data/streamers.json', 'utf8'));
+    const list = JSON.parse(await fs.readFile('data/twitch_streamers.json', 'utf8'));
     const now = new Date();
     const threeDaysAgo = new Date(now.getTime() - 3 * 24 * 60 * 60 * 1000);
 

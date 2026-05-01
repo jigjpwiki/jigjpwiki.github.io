@@ -1,14 +1,5 @@
 [
   {
-    "name": "しーはむ",
-    "twitchid": "siyham",
-    "title": "グウェン練習をあきらめない",
-    "date": "2026-04-28T08:47:33.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/e1c097ec-5528-472a-a299-4dc50a979373-profile_image-300x300.png",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/dd1c8e892f9885c49b9f_siyham_315817431922_1777333647//thumb/thumb0-320x180.jpg"
-  },
-  {
     "name": "銘兎目あう",
     "twitchid": "Metome_Au",
     "title": "【スト６】1520MR～Mケン🥊🥋ACT終了目前･･･!!MRどこまでいけるかぁぁ🔥",
@@ -79,5 +70,23 @@
     "status": "archive",
     "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/76f2958e-cab4-41b8-98c1-cc4d275b2ca5-profile_image-300x300.png",
     "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/8be166e82bc3078088af_chi7_v_315883237747_1777550234//thumb/thumb0-320x180.jpg"
+  },
+  {
+    "name": "しーはむ",
+    "twitchid": "siyham",
+    "title": "グウェン練習をあきらめない",
+    "date": "2026-05-01T09:32:03.000+09:00",
+    "status": "live",
+    "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/e1c097ec-5528-472a-a299-4dc50a979373-profile_image-300x300.png",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_siyham-320x180.jpg"
+  },
+  {
+    "name": "なかもとおまち",
+    "twitchid": "41futon",
+    "title": "【EVOJ現地】10:30〜試合行くぞ！",
+    "date": "2026-05-01T10:12:01.000+09:00",
+    "status": "live",
+    "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/1405880b-e945-4720-98c9-6a08c6400cae-profile_image-300x300.png",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_41futon-320x180.jpg"
   }
 ]

@@ -1,15 +1,5 @@
 [
   {
-    "name": "新巻るろな",
-    "youtubeid": "UCUd4wJjvPQflbLnsk_YHleA",
-    "title": "【 #朝活 】新巻は遅れてやってくるものさ【新巻るろな／パレデミア学園】#VTuber #雑談",
-    "date": "2026-04-29T07:45:56.000+09:00",
-    "status": "archive",
-    "thumbnail": "https://i.ytimg.com/vi/u27GzEWzpi0/mqdefault_live.jpg",
-    "channelIcon": "https://yt3.googleusercontent.com/-4sLuWCih-DlfhpwpDQEuB6eupCB6kTImkIPmKnh54vu5I0F49RkveNQGiqy0p8t0GDU6eiegGE",
-    "url": "https://www.youtube.com/watch?v=u27GzEWzpi0"
-  },
-  {
     "name": "緋雨柚",
     "youtubeid": "UCrB-SfrqB5ChY8aAT99grXw",
     "title": "【雑談】4月も終わりますね【パレデミア学園/緋雨柚】",
@@ -1055,7 +1045,7 @@
     "title": "ニューキャッスル専ソロランク 【虎島めら。ぷろのゔぁ】 #apex",
     "date": "2026-05-01T16:52:55.000+09:00",
     "status": "archive",
-    "thumbnail": "https://i.ytimg.com/vi/JjEbTGEEzmo/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/JjEbTGEEzmo/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/GTQLrgAFGtGBsfbiwqAP-vnRRHXDfXAKiZIGJAO-p4hzLfenIewQmuXdsBmgPfnz_hf0WsI62Q=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=JjEbTGEEzmo"
   },
@@ -1533,11 +1523,21 @@
     "name": "花晴りら",
     "youtubeid": "UCqcnlq8uJqnGml6hcIrMCZw",
     "title": "【毎日朝活/雑談】初見さん大歓迎🌷朝活300回記念！100人におはよう言いたいお仕事前の朝活🔆【花晴りら/パレデミア学園】#れりライブ #新人vtuber",
-    "date": "2026-05-02T07:00:00.000+09:00",
-    "status": "upcoming",
+    "date": "2026-05-02T06:59:57.000+09:00",
+    "status": "live",
     "thumbnail": "https://i.ytimg.com/vi/Yl2Dk9NRl00/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/CH5JMWVQZ_RtloaXoj6W-yXjo9x8UxXSBG_vMyDnfk7M2QTOApVE1zOesu_aDrSAqvDbGrUyxs0=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=Yl2Dk9NRl00"
+  },
+  {
+    "name": "桜庭羽奈",
+    "youtubeid": "UCPgg_A08ksSYP-VivJGniRw",
+    "title": "【高評価75を目指す！】おはようまってるよ！！初見さん大歓迎！🐻【新人VTuberの雑談／歌枠】🐻",
+    "date": "2026-05-02T08:00:40.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/LtbI3oMZ6fk/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/04zALH6pYL7mkWILHajvBzfzg4hrwRCLBONme3K1PjuEeYJIRC6RYxPmJzVZRuN42skHEDNRGmo=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=LtbI3oMZ6fk"
   },
   {
     "name": "桜樹美彩",

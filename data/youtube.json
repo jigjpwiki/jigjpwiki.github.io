@@ -1185,7 +1185,7 @@
     "title": "圧倒的自由な！3人で #repo",
     "date": "2026-05-01T19:01:17.000+09:00",
     "status": "archive",
-    "thumbnail": "https://i.ytimg.com/vi/j-RqIoVk5Yg/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/j-RqIoVk5Yg/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/hBz75E3AEST1Dzv5vOTHAqoJfayd30WIWWQ3ZFLlWMHDsyZ_QD6ZVVUtLTKSizalT3APPtdpFGI=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=j-RqIoVk5Yg"
   },
@@ -1195,7 +1195,7 @@
     "title": "【R.E.P.O.コラボ配信】わちゃちゃ【#vtuber 】#ちとせらいぶ #パレデミア学園 #ウィニー寮",
     "date": "2026-05-01T19:01:18.000+09:00",
     "status": "archive",
-    "thumbnail": "https://i.ytimg.com/vi/_mrDyTUNR-U/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/_mrDyTUNR-U/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/traR_yWe-AOGyM2wjo8h2FJO9JWBcbjfrL13X-umeD6BtNPopSZ2Q3YmdJq_5K9gWgHf_j64iQ=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=_mrDyTUNR-U"
   },
@@ -1205,7 +1205,7 @@
     "title": "【#repo 】なんとか生き残りたいれぽ。【#ウィニー寮】",
     "date": "2026-05-01T19:01:22.000+09:00",
     "status": "archive",
-    "thumbnail": "https://i.ytimg.com/vi/YL_3FrYutRc/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/YL_3FrYutRc/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/T655ATpSd2gkjZBrokvlkaUH0f5-fCpQdcJpwxmmNdy6fxCYffAlq2sMhPOtFk_CvVyOkEPY8Q=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=YL_3FrYutRc"
   },
@@ -1238,6 +1238,16 @@
     "thumbnail": "https://i.ytimg.com/vi/G41bbTlb8uc/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/aVOgQtF_-urmi9JtRAIdoMOuSIfXzi5aOvwhiekLF2aQRJoVFfNCg3_x30I97YJ8Lwv9GNmB9Q=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=G41bbTlb8uc"
+  },
+  {
+    "name": "飛渡ココ",
+    "youtubeid": "UCMElh_FlHyzp_obVe-b3Qrg",
+    "title": "現状説明ライブ",
+    "date": "2026-05-01T19:59:32.000+09:00",
+    "status": "archive",
+    "thumbnail": "https://i.ytimg.com/vi/6krSaxm5Hvc/mqdefault.jpg",
+    "channelIcon": "https://yt3.ggpht.com/8I1SuqBXvb4dRY9bcXYc8xxSxL-L2CAe4YvBx2x3kOkyboXRq-G0rVo7pYflUmvo0UKIyxnlRA=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=6krSaxm5Hvc"
   },
   {
     "name": "火狐むい",
@@ -1275,7 +1285,7 @@
     "title": "【高評価50を目指す！】5月のイベントについてお話します！！初見さん大歓迎！🐻【新人VTuberの雑談／歌枠】🐻",
     "date": "2026-05-01T20:00:29.000+09:00",
     "status": "archive",
-    "thumbnail": "https://i.ytimg.com/vi/xeQAmtEyXxo/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/xeQAmtEyXxo/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/04zALH6pYL7mkWILHajvBzfzg4hrwRCLBONme3K1PjuEeYJIRC6RYxPmJzVZRuN42skHEDNRGmo=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=xeQAmtEyXxo"
   },
@@ -1295,7 +1305,7 @@
     "title": "【ハートピアスローライフ】猫を飼いたいんですよ",
     "date": "2026-05-01T20:12:50.000+09:00",
     "status": "archive",
-    "thumbnail": "https://i.ytimg.com/vi/zOas3p-4djI/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/zOas3p-4djI/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/QQqec9A1J7eLk9RrRYD9vvk51BBJzcE1leGkU9n4YkwHqht9gmGT1ktmSlKItQtbuMSGuklAFxM=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=zOas3p-4djI"
   },
@@ -1520,11 +1530,21 @@
     "url": "https://www.youtube.com/watch?v=b_UejEtdFQE"
   },
   {
+    "name": "汐月永遠",
+    "youtubeid": "UCCCm2ueQtW3mYUMB7Excq8g",
+    "title": "一旦ね、いったん。#shorts",
+    "date": "2026-05-02T03:18:35.000+09:00",
+    "status": "archive",
+    "thumbnail": "https://i.ytimg.com/vi/Cas6CcHbd08/mqdefault.jpg",
+    "channelIcon": "https://yt3.ggpht.com/68oh3mZjSYRleiuocaxnF9VcHdbaxLQzjCq4QgdPlHe3083eTdmNkfXZ6YV81vTUA51qoNXH_g=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=Cas6CcHbd08"
+  },
+  {
     "name": "花晴りら",
     "youtubeid": "UCqcnlq8uJqnGml6hcIrMCZw",
     "title": "【毎日朝活/雑談】初見さん大歓迎🌷朝活300回記念！100人におはよう言いたいお仕事前の朝活🔆【花晴りら/パレデミア学園】#れりライブ #新人vtuber",
     "date": "2026-05-02T06:59:57.000+09:00",
-    "status": "live",
+    "status": "archive",
     "thumbnail": "https://i.ytimg.com/vi/Yl2Dk9NRl00/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/CH5JMWVQZ_RtloaXoj6W-yXjo9x8UxXSBG_vMyDnfk7M2QTOApVE1zOesu_aDrSAqvDbGrUyxs0=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=Yl2Dk9NRl00"
@@ -1534,8 +1554,8 @@
     "youtubeid": "UCPgg_A08ksSYP-VivJGniRw",
     "title": "【高評価75を目指す！】おはようまってるよ！！初見さん大歓迎！🐻【新人VTuberの雑談／歌枠】🐻",
     "date": "2026-05-02T08:00:40.000+09:00",
-    "status": "live",
-    "thumbnail": "https://i.ytimg.com/vi/LtbI3oMZ6fk/mqdefault_live.jpg",
+    "status": "archive",
+    "thumbnail": "https://i.ytimg.com/vi/LtbI3oMZ6fk/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/04zALH6pYL7mkWILHajvBzfzg4hrwRCLBONme3K1PjuEeYJIRC6RYxPmJzVZRuN42skHEDNRGmo=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=LtbI3oMZ6fk"
   },

@@ -1,35 +1,5 @@
 [
   {
-    "name": "虎島めら。",
-    "youtubeid": "UCqewFfi_wwydw6fpazmlAFA",
-    "title": "ニューキャッスル専ソロランク 【虎島めら。ぷろのゔぁ】 #apex",
-    "date": "2026-04-29T18:33:22.000+09:00",
-    "status": "archive",
-    "thumbnail": "https://i.ytimg.com/vi/-TQYIRrm5bc/mqdefault.jpg",
-    "channelIcon": "https://yt3.ggpht.com/GTQLrgAFGtGBsfbiwqAP-vnRRHXDfXAKiZIGJAO-p4hzLfenIewQmuXdsBmgPfnz_hf0WsI62Q=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=-TQYIRrm5bc"
-  },
-  {
-    "name": "七海ロナ",
-    "youtubeid": "UCIaZylf5L9MsCMOJX3BdTEg",
-    "title": "むずかしい😕 てきとうメイク！#vtuber #shorts #踊ってみた",
-    "date": "2026-04-29T19:00:02.000+09:00",
-    "status": "archive",
-    "thumbnail": "https://i.ytimg.com/vi/aIu_tYzGCF0/mqdefault.jpg",
-    "channelIcon": "https://yt3.ggpht.com/86cM_4q1A56pIYgdKxh776hM0nropjiZIlmXbfroWHXQ-MjdGGsjLcL5hMDOFL-T2EJHmybT=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=aIu_tYzGCF0"
-  },
-  {
-    "name": "水透ユウ",
-    "youtubeid": "UCOah55SQYynzPgQQ4wxuzkA",
-    "title": "【対戦募集】リュウ対策2回目、一旦手癖のズサーなんとかならんか【水透ユウ/ぷろのゔぁ】",
-    "date": "2026-04-29T19:27:41.000+09:00",
-    "status": "archive",
-    "thumbnail": "https://i.ytimg.com/vi/Imi2K00eyaE/mqdefault.jpg",
-    "channelIcon": "https://yt3.ggpht.com/eVD8Ygm7KVyh3dvWnyebfYlbYpD13ZYQ-Bos8WdR5LDE61A3svHVHCLEY-rM3IQgw9O4uvdd=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=Imi2K00eyaE"
-  },
-  {
     "name": "牡丹雪",
     "youtubeid": "UCl-qrfygvCjyA_lMR5lJzig",
     "title": "祝Live2D🎉見付けてくれたら嬉しいな🫶🏻 #新人vtuber #新人vtuberを発掘せよ #vtuber準備中",
@@ -1584,7 +1554,7 @@
     "youtubeid": "UCIw8aQVRBwi72yOrPLgkbRQ",
     "title": "【#apex 】初見/ROM歓迎👍概要欄見てね！週一参加型🔫【#vtuber #パレデミア学園 】",
     "date": "2026-05-02T17:18:57.000+09:00",
-    "status": "live",
+    "status": "archive",
     "thumbnail": "https://i.ytimg.com/vi/VflljTNoNcs/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/XWKUawU_WoX_xINkx3TMSF3fj0RbdiwNezFiEAGcmHfQYvwkjMUM1mvyOmgsbK8LxHoo6aEKJA=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=VflljTNoNcs"
@@ -1620,6 +1590,26 @@
     "url": "https://www.youtube.com/watch?v=PU9-DRsJteQ"
   },
   {
+    "name": "李じゅぴ汰",
+    "youtubeid": "UCHsAAyHJhPXuLS6N3Kig6PQ",
+    "title": "【Only Up!】速攻フラグ回収で落ちていく様子ｗ【賭け】まだ舞える　#shorts 面白切り抜きShorts/新人Vtuber",
+    "date": "2026-05-02T18:21:01.000+09:00",
+    "status": "archive",
+    "thumbnail": "https://i.ytimg.com/vi/X-DSGQaQtss/mqdefault.jpg",
+    "channelIcon": "https://yt3.ggpht.com/QQqec9A1J7eLk9RrRYD9vvk51BBJzcE1leGkU9n4YkwHqht9gmGT1ktmSlKItQtbuMSGuklAFxM=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=X-DSGQaQtss"
+  },
+  {
+    "name": "犬丸なでこ",
+    "youtubeid": "UCdJmJxMfXrlnZabUkuss2EA",
+    "title": "【重大発表】新しいお部屋大公開わんね！【犬丸なでこ/パレデミア学園】",
+    "date": "2026-05-02T19:07:08.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/WKJ1YNOsV9Y/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/HZPUrbSwGcllAbUtx6xggJ6lKfMfnAWDxWOCc01tpthiDipSqQP48TK5Jqz4GRzUdwKMUsxlsg=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=WKJ1YNOsV9Y"
+  },
+  {
     "name": "秋桜しゅお",
     "youtubeid": "UCPjtwOeRQV5EFkCwUycZsgw",
     "title": "【同接111耐久#歌枠配信 】#初見歓迎 🧡一人でも頑張る覚悟を決めて！#耐久配信 ！【秋桜しゅお/登龍門BOX】#歌枠配信 #karaoke  #vtuber  #vsinger",
@@ -1650,6 +1640,26 @@
     "url": "https://www.youtube.com/watch?v=y93Ivi5bK2U"
   },
   {
+    "name": "花晴りら",
+    "youtubeid": "UCqcnlq8uJqnGml6hcIrMCZw",
+    "title": "【参加型雀魂/四麻】今日も今日とて華麗に勝つ！視聴者参加型麻雀🀄🎮✨【花晴りら/パレデミア学園】 #れりライブ #新人vtuber",
+    "date": "2026-05-02T21:00:00.000+09:00",
+    "status": "upcoming",
+    "thumbnail": "https://i.ytimg.com/vi/4ue51E2MO0o/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/CH5JMWVQZ_RtloaXoj6W-yXjo9x8UxXSBG_vMyDnfk7M2QTOApVE1zOesu_aDrSAqvDbGrUyxs0=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=4ue51E2MO0o"
+  },
+  {
+    "name": "犬丸なでこ",
+    "youtubeid": "UCdJmJxMfXrlnZabUkuss2EA",
+    "title": "【重大発表】新衣装公開わんよ！！！！【犬丸なでこ/パレデミア学園】",
+    "date": "2026-05-02T21:00:00.000+09:00",
+    "status": "upcoming",
+    "thumbnail": "https://i.ytimg.com/vi/_ncAu53STJ8/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/HZPUrbSwGcllAbUtx6xggJ6lKfMfnAWDxWOCc01tpthiDipSqQP48TK5Jqz4GRzUdwKMUsxlsg=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=_ncAu53STJ8"
+  },
+  {
     "name": "魔法少女アルト",
     "youtubeid": "UCtRhBS8dlaeBgVcnEZOkAbA",
     "title": "【初心配信】今日から個人勢！本当の夢を取り戻すための配信　 #Vtuber 【 魔法少女アルト / #アルトの魔法通信  】",
@@ -1658,6 +1668,16 @@
     "thumbnail": "https://i.ytimg.com/vi/yQ_0wd1wRKY/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/_SSLxrkyrsLiD3ecK-qSvHH2igSzmL739L2Qo_fXzf7h-isyInFSGUnThvSj3yO5KsPqysHX=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=yQ_0wd1wRKY"
+  },
+  {
+    "name": "花晴りら",
+    "youtubeid": "UCqcnlq8uJqnGml6hcIrMCZw",
+    "title": "【毎日朝活/視聴者参加型】初見さん大歓迎🌷リスナーさんの出身地で都道府県耐久リベンジ🔆【花晴りら/パレデミア学園】#れりライブ #新人vtuber",
+    "date": "2026-05-03T07:00:00.000+09:00",
+    "status": "upcoming",
+    "thumbnail": "https://i.ytimg.com/vi/NjseUVP8Ev4/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/CH5JMWVQZ_RtloaXoj6W-yXjo9x8UxXSBG_vMyDnfk7M2QTOApVE1zOesu_aDrSAqvDbGrUyxs0=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=NjseUVP8Ev4"
   },
   {
     "name": "桜樹美彩",

@@ -1,25 +1,5 @@
 [
   {
-    "name": "さくさくさく",
-    "youtubeid": "UC9zEgqk0yVvX3nqRLCJXGGg",
-    "title": "漢字でGO！クリアなるか！？ゲキムズ実況プレイ！",
-    "date": "2026-04-29T23:52:05.000+09:00",
-    "status": "archive",
-    "thumbnail": "https://i.ytimg.com/vi/YwD03ka6cnQ/mqdefault.jpg",
-    "channelIcon": "https://yt3.ggpht.com/CinM2xYSxfIbebsolFNjzaPnWjFB8BYcRU5jYnVkw1gdF8R-q-pQlFhnR5UkFsBxZHnRjM6r=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=YwD03ka6cnQ"
-  },
-  {
-    "name": "雛菊のん",
-    "youtubeid": "UChccV6U0Tkx9de4YjXbEelw",
-    "title": "ちょこっとおしゃべり💕#新人vtuber #雑談",
-    "date": "2026-04-29T23:52:27.000+09:00",
-    "status": "archive",
-    "thumbnail": "https://i.ytimg.com/vi/sfXYGxchIxg/mqdefault.jpg",
-    "channelIcon": "https://yt3.ggpht.com/-7v40HQCqllHpJD69LHIo2n5lUt-pZ-bLtfrKAXhZk9OF06nj4Lno3gwBvO8d1jBSl5dCCxAxQ=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=sfXYGxchIxg"
-  },
-  {
     "name": "灯野ぺけ。",
     "youtubeid": "UCldoz5HLh6BMW29HGnRpC0Q",
     "title": "チャンネル復活いたしました💥初見さん/ROMの人もおいで～💥≪パレデミア学園 / 灯野ぺけ。≫ #vtuber #雑談 #パレデミア学園",
@@ -1234,7 +1214,7 @@
     "youtubeid": "UCIaZylf5L9MsCMOJX3BdTEg",
     "title": "#5【ドラクエ２】勇者が憎しみを持ったっていい【パレプロ／七海ロナ】",
     "date": "2026-05-02T11:59:50.000+09:00",
-    "status": "live",
+    "status": "archive",
     "thumbnail": "https://i.ytimg.com/vi/okPrG5qGKhM/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/86cM_4q1A56pIYgdKxh776hM0nropjiZIlmXbfroWHXQ-MjdGGsjLcL5hMDOFL-T2EJHmybT=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=okPrG5qGKhM"
@@ -1514,8 +1494,8 @@
     "youtubeid": "UCdJmJxMfXrlnZabUkuss2EA",
     "title": "【重大発表】新衣装公開わんよ！！！！【犬丸なでこ/パレデミア学園】",
     "date": "2026-05-02T20:56:54.000+09:00",
-    "status": "live",
-    "thumbnail": "https://i.ytimg.com/vi/_ncAu53STJ8/mqdefault_live.jpg",
+    "status": "archive",
+    "thumbnail": "https://i.ytimg.com/vi/_ncAu53STJ8/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/HZPUrbSwGcllAbUtx6xggJ6lKfMfnAWDxWOCc01tpthiDipSqQP48TK5Jqz4GRzUdwKMUsxlsg=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=_ncAu53STJ8"
   },
@@ -1588,6 +1568,16 @@
     "thumbnail": "https://i.ytimg.com/vi/Gle34iK-7RY/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/rthBXvqjNFcVwEp-AWpiZDXnNjBodSXlsDTa-sjW6uR6Ssv3wuOw2dMXDZLlYaf_c4YiKfItHXU=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=Gle34iK-7RY"
+  },
+  {
+    "name": "雛菊のん",
+    "youtubeid": "UChccV6U0Tkx9de4YjXbEelw",
+    "title": "ギャルによる小中高友達と好きな人が被った時の反応の違い#shorts #vtuber #新人vtuber #おしゃべり #おすすめにのりたい #バズれ",
+    "date": "2026-05-02T23:15:55.000+09:00",
+    "status": "archive",
+    "thumbnail": "https://i.ytimg.com/vi/bTQ7Hgbx5gY/mqdefault.jpg",
+    "channelIcon": "https://yt3.ggpht.com/-7v40HQCqllHpJD69LHIo2n5lUt-pZ-bLtfrKAXhZk9OF06nj4Lno3gwBvO8d1jBSl5dCCxAxQ=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=bTQ7Hgbx5gY"
   },
   {
     "name": "花晴りら",

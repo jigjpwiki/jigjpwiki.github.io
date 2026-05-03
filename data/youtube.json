@@ -1,15 +1,5 @@
 [
   {
-    "name": "ニコ・ダークウェル",
-    "youtubeid": "UCwSq7LbTyR1lXLJphsHKy2A",
-    "title": "テーマ「野球部」 #新人VTuber #VTuber",
-    "date": "2026-05-01T07:20:07.000+09:00",
-    "status": "archive",
-    "thumbnail": "https://i.ytimg.com/vi/HVdpT1IpQmg/mqdefault.jpg",
-    "channelIcon": "https://yt3.ggpht.com/aVOgQtF_-urmi9JtRAIdoMOuSIfXzi5aOvwhiekLF2aQRJoVFfNCg3_x30I97YJ8Lwv9GNmB9Q=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=HVdpT1IpQmg"
-  },
-  {
     "name": "夏渚まはろ",
     "youtubeid": "UC_a00ml_EVDXSrtY8ZuyqGQ",
     "title": "【縦型歌枠】12時～13時お昼休み限定歌枠！元気が出る歌を歌うよ～！【#夏渚まはろ￤#パレプロ】",
@@ -1335,7 +1325,7 @@
     "title": "【同時視聴】ザ・スーパーマリオブラザーズ・ムービーを一緒に観よう✨【#パレプロ #香鳴ハノン】",
     "date": "2026-05-03T17:04:33.000+09:00",
     "status": "archive",
-    "thumbnail": "https://i.ytimg.com/vi/3vgAlqE66Qc/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/3vgAlqE66Qc/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/qvbeb9E-gYc822fxxzi6Ug5QyjhqZAWbUskHANcwDWP5W8iTsK3LcQJnjS4CVBuFJ6fONsM9F7M=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=3vgAlqE66Qc"
   },
@@ -1654,8 +1644,8 @@
     "youtubeid": "UCNb9zRVc1coFKxJAn9lVtsw",
     "title": "【ゴブリン・ノーム・ホーン】労働するらしい？？？【フローレ・ブランカ/パレデミア学園】",
     "date": "2026-05-04T00:04:32.000+09:00",
-    "status": "live",
-    "thumbnail": "https://i.ytimg.com/vi/mDSGc11ZIiU/mqdefault_live.jpg",
+    "status": "archive",
+    "thumbnail": "https://i.ytimg.com/vi/mDSGc11ZIiU/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/xqdNSKZCNQ6ekbqgjixeOR0aTymLfmP_ILAFQ4sBF7ln-ZWxQYkVjGBun2pF1PwVC6nmwi2KFxE=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=mDSGc11ZIiU"
   },
@@ -1703,11 +1693,21 @@
     "name": "花晴りら",
     "youtubeid": "UCqcnlq8uJqnGml6hcIrMCZw",
     "title": "【毎日朝活/雑談】初見さん大歓迎🌷みどりの日💚200人におはよう言いたい朝活🔆【花晴りら/パレデミア学園】#れりライブ #新人vtuber",
-    "date": "2026-05-04T07:00:00.000+09:00",
-    "status": "upcoming",
+    "date": "2026-05-04T07:00:19.000+09:00",
+    "status": "live",
     "thumbnail": "https://i.ytimg.com/vi/HCuw-M5Rtj8/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/CH5JMWVQZ_RtloaXoj6W-yXjo9x8UxXSBG_vMyDnfk7M2QTOApVE1zOesu_aDrSAqvDbGrUyxs0=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=HCuw-M5Rtj8"
+  },
+  {
+    "name": "ニコ・ダークウェル",
+    "youtubeid": "UCwSq7LbTyR1lXLJphsHKy2A",
+    "title": "【垢BAN】キッズ判定BANを食らったロリボ サンプルボイス #新人VTuber #ロリボ #サンプルボイスN",
+    "date": "2026-05-04T07:58:27.000+09:00",
+    "status": "archive",
+    "thumbnail": "https://i.ytimg.com/vi/Wz6c6JCS464/mqdefault.jpg",
+    "channelIcon": "https://yt3.ggpht.com/aVOgQtF_-urmi9JtRAIdoMOuSIfXzi5aOvwhiekLF2aQRJoVFfNCg3_x30I97YJ8Lwv9GNmB9Q=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=Wz6c6JCS464"
   },
   {
     "name": "堂下さとり",

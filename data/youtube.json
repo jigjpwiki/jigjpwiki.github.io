@@ -1,15 +1,5 @@
 [
   {
-    "name": "七音うら",
-    "youtubeid": "UCv2IYO-4waCpHvn50SWWY2A",
-    "title": "【#雑談配信】今日も眠い気がする雑談。【七音うら】",
-    "date": "2026-05-01T02:01:35.000+09:00",
-    "status": "archive",
-    "thumbnail": "https://i.ytimg.com/vi/nAVt_DYnatk/mqdefault.jpg",
-    "channelIcon": "https://yt3.ggpht.com/T655ATpSd2gkjZBrokvlkaUH0f5-fCpQdcJpwxmmNdy6fxCYffAlq2sMhPOtFk_CvVyOkEPY8Q=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=nAVt_DYnatk"
-  },
-  {
     "name": "天辻ゆらぐ",
     "youtubeid": "UCeOFQCn_QZJMTszlRYRg3rQ",
     "title": "【縦型雑談】高評価100目標🎶あなたのお姉さんアイドルVtuber🪼💜初見歓迎✨️【天辻ゆらぐ/パレデミア学園】 #新人Vtuber #ゆらぐっどたいむ",
@@ -1240,12 +1230,22 @@
     "url": "https://www.youtube.com/watch?v=iHvwHda2rgc"
   },
   {
+    "name": "愛乃宮ゆめ",
+    "youtubeid": "UCttSjPiwPYpiPuCrgxK7c1g",
+    "title": "【雑談】ゆめらじっ！＃０４【愛乃宮ゆめ/パレデミア学園】",
+    "date": "2026-05-03T12:02:12.000+09:00",
+    "status": "archive",
+    "thumbnail": "https://i.ytimg.com/vi/F1kj2CBlM9Q/mqdefault.jpg",
+    "channelIcon": "https://yt3.ggpht.com/Gwr7KJNWnI6CEgmIfEeMZahF5pbGNKlRhQXBEkuMWE0D66--IJE77z-5Zu2i5LFBc_CA6ZkqY4Y=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=F1kj2CBlM9Q"
+  },
+  {
     "name": "堂下さとり",
     "youtubeid": "UCBq6MSUL-Ermvnoj3PtX7Iw",
     "title": "【雑談】5月3日昼のニュース【平和なニュース】【堂下さとり/パレデミア学園】",
     "date": "2026-05-03T12:08:12.000+09:00",
     "status": "archive",
-    "thumbnail": "https://i.ytimg.com/vi/RmxJzEA0X-8/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/RmxJzEA0X-8/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/eW_Hug0M6zFk9QSbAmOUWLMSfzBlCHmes-8yAksvfUNzyLgY6TSsE_eW8ncfE4bHYZXKoTWxmQ=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=RmxJzEA0X-8"
   },
@@ -1412,7 +1412,7 @@
   {
     "name": "堂下さとり",
     "youtubeid": "UCBq6MSUL-Ermvnoj3PtX7Iw",
-    "title": "【カオス】バーチャルメイドカフェ　わっつあっぷ　開店",
+    "title": "【カオス】バーチャルメイドカフェ　わっつあっぷ　開店【パレデミア学園/堂下さとり】元メイド",
     "date": "2026-05-03T18:41:53.000+09:00",
     "status": "archive",
     "thumbnail": "https://i.ytimg.com/vi/Nyv2in3XD1Y/mqdefault.jpg",
@@ -1474,8 +1474,8 @@
     "youtubeid": "UCAhdxmsdngH4noySdpVAVWQ",
     "title": "終盤に突入しかけてるらしいゆるゆるサクナヒメ🌾【天穂のサクナヒメ#8 】【#vtuber 】#ちとせらいぶ #パレデミア学園",
     "date": "2026-05-03T19:58:52.000+09:00",
-    "status": "live",
-    "thumbnail": "https://i.ytimg.com/vi/-j0jXdu6rCs/mqdefault_live.jpg",
+    "status": "archive",
+    "thumbnail": "https://i.ytimg.com/vi/-j0jXdu6rCs/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/traR_yWe-AOGyM2wjo8h2FJO9JWBcbjfrL13X-umeD6BtNPopSZ2Q3YmdJq_5K9gWgHf_j64iQ=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=-j0jXdu6rCs"
   },
@@ -1620,6 +1620,16 @@
     "url": "https://www.youtube.com/watch?v=DjPDuOsxQ7g"
   },
   {
+    "name": "翡翠あかね",
+    "youtubeid": "UCaADm-qI6khKDIX8AIek1-w",
+    "title": "㊗️㊗️㊗️㊗️LiVE2D化！！！！！",
+    "date": "2026-05-03T22:00:51.000+09:00",
+    "status": "archive",
+    "thumbnail": "https://i.ytimg.com/vi/QqBFDJXHcVY/mqdefault.jpg",
+    "channelIcon": "https://yt3.ggpht.com/2E-UxKp7QECcvHR_COfspS7CdTnTxUHM9TRVCA7HPy_wdEfSwcZOxW0NIIKElrXq8J7bR_Huxw=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=QqBFDJXHcVY"
+  },
+  {
     "name": "巳野みこと",
     "youtubeid": "UCHBPF4eBZEAQ5MmiddmhM2w",
     "title": "#shorts 息抜きに歌ったよ #水流のロック",
@@ -1644,8 +1654,8 @@
     "youtubeid": "UCeOFQCn_QZJMTszlRYRg3rQ",
     "title": "【お部屋公開/記念配信】リアクション10万TAPでお部屋公開❣ あなたのお姉さんアイドルVtuber🪼💜初見歓迎✨️【天辻ゆらぐ/パレデミア学園】 #新人Vtuber #ゆらぐっどたいむ",
     "date": "2026-05-03T23:11:11.000+09:00",
-    "status": "live",
-    "thumbnail": "https://i.ytimg.com/vi/24PqzuzzSzg/mqdefault_live.jpg",
+    "status": "archive",
+    "thumbnail": "https://i.ytimg.com/vi/24PqzuzzSzg/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/4AFFu60kFJqix-OhtDW3EJdQ0jQa1LrK56tGpvqvbGodMQFpkH-_qtvL_66dPGD3kl4LW9N4=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=24PqzuzzSzg"
   },
@@ -1668,6 +1678,66 @@
     "thumbnail": "https://i.ytimg.com/vi/TVQQT6CkpJU/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/neZ2Mw2PcuimtH172AaHAlm5eKk_O17aEJ8aMGhme708zPqxyZB6QhS89qzSt30uXnGLLbgdliw=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=TVQQT6CkpJU"
+  },
+  {
+    "name": "フローレ・ブランカ",
+    "youtubeid": "UCNb9zRVc1coFKxJAn9lVtsw",
+    "title": "【ゴブリン・ノーム・ホーン】労働するらしい？？？【フローレ・ブランカ/パレデミア学園】",
+    "date": "2026-05-04T00:04:32.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/mDSGc11ZIiU/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/xqdNSKZCNQ6ekbqgjixeOR0aTymLfmP_ILAFQ4sBF7ln-ZWxQYkVjGBun2pF1PwVC6nmwi2KFxE=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=mDSGc11ZIiU"
+  },
+  {
+    "name": "暁月クララ",
+    "youtubeid": "UCn4XvlTXjGSvDynpxpOYZPQ",
+    "title": "君はいつ恋に落ちるの？？？#暁月クララ #vtuber #パレプロ",
+    "date": "2026-05-04T00:49:18.000+09:00",
+    "status": "archive",
+    "thumbnail": "https://i.ytimg.com/vi/FxC78ebf7AQ/mqdefault.jpg",
+    "channelIcon": "https://yt3.ggpht.com/8tcStp-WzdZPtf6bPq1DtUnFSd2Eq5AppSd3_CEQ7hNNpnRND8InaWdPCz6T1wIWWkGJuFrbT94=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=FxC78ebf7AQ"
+  },
+  {
+    "name": "汐月永遠",
+    "youtubeid": "UCCCm2ueQtW3mYUMB7Excq8g",
+    "title": "✨️Party Time✨️ #shorts",
+    "date": "2026-05-04T01:21:04.000+09:00",
+    "status": "archive",
+    "thumbnail": "https://i.ytimg.com/vi/2Yjwqo35Apo/mqdefault.jpg",
+    "channelIcon": "https://yt3.ggpht.com/68oh3mZjSYRleiuocaxnF9VcHdbaxLQzjCq4QgdPlHe3083eTdmNkfXZ6YV81vTUA51qoNXH_g=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=2Yjwqo35Apo"
+  },
+  {
+    "name": "七音うら",
+    "youtubeid": "UCv2IYO-4waCpHvn50SWWY2A",
+    "title": "【#雑談配信】今日もちょっぴりねむねむ雑談。【七音うら】",
+    "date": "2026-05-04T02:01:51.000+09:00",
+    "status": "live",
+    "thumbnail": "https://i.ytimg.com/vi/32_s9_CY-OA/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/T655ATpSd2gkjZBrokvlkaUH0f5-fCpQdcJpwxmmNdy6fxCYffAlq2sMhPOtFk_CvVyOkEPY8Q=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=32_s9_CY-OA"
+  },
+  {
+    "name": "花晴りら",
+    "youtubeid": "UCqcnlq8uJqnGml6hcIrMCZw",
+    "title": "【毎日朝活/雑談】初見さん大歓迎🌷みどりの日💚200人におはよう言いたい朝活🔆【花晴りら/パレデミア学園】#れりライブ #新人vtuber",
+    "date": "2026-05-04T07:00:00.000+09:00",
+    "status": "upcoming",
+    "thumbnail": "https://i.ytimg.com/vi/HCuw-M5Rtj8/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/CH5JMWVQZ_RtloaXoj6W-yXjo9x8UxXSBG_vMyDnfk7M2QTOApVE1zOesu_aDrSAqvDbGrUyxs0=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=HCuw-M5Rtj8"
+  },
+  {
+    "name": "堂下さとり",
+    "youtubeid": "UCBq6MSUL-Ermvnoj3PtX7Iw",
+    "title": "【歌枠】知らない曲もノリと勢いで歌っちゃおう【謝罪】【堂下さとり/パレデミア学園】",
+    "date": "2026-05-04T12:00:00.000+09:00",
+    "status": "upcoming",
+    "thumbnail": "https://i.ytimg.com/vi/-syKHTP_XzQ/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/eW_Hug0M6zFk9QSbAmOUWLMSfzBlCHmes-8yAksvfUNzyLgY6TSsE_eW8ncfE4bHYZXKoTWxmQ=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=-syKHTP_XzQ"
   },
   {
     "name": "鬼多見アユム",
@@ -1698,5 +1768,25 @@
     "thumbnail": "https://i.ytimg.com/vi/h8F85wN4kpQ/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/iktv-39nC7NDASD1WeXms-DEuHuVqB5RhwTtdDe26w-BCvqf6yq3r_8zBiv2i2CfNXCK0uE8=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=h8F85wN4kpQ"
+  },
+  {
+    "name": "しーはむ",
+    "youtubeid": "UC5xSDiB2WG4pO_zUZ_t-n0Q",
+    "title": "〘DREAD FLATS〙え去年最恐のホラゲーに続編が出たの？！？！〘VTuber│#しーはむ│凶寓〙",
+    "date": "2026-05-04T21:30:00.000+09:00",
+    "status": "upcoming",
+    "thumbnail": "https://i.ytimg.com/vi/5AkuJF6xeeM/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/y0zP0Uz7HSLx5dv3xo488Suxk8rJQQUC1wXaymjUBIQIwa25WlVu_VmrsT1xAyVD-jgeL7hs=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=5AkuJF6xeeM"
+  },
+  {
+    "name": "しーはむ",
+    "youtubeid": "UC5xSDiB2WG4pO_zUZ_t-n0Q",
+    "title": "〘ぷろのゔぁ〙NGワードで仲間が爆発！？箱のメンバーと一緒にゆる～くあそぶ！〘VTuber│#しーはむ│Cursed Companions〙",
+    "date": "2026-05-05T19:00:00.000+09:00",
+    "status": "upcoming",
+    "thumbnail": "https://i.ytimg.com/vi/Ga-mW08VqAo/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/y0zP0Uz7HSLx5dv3xo488Suxk8rJQQUC1wXaymjUBIQIwa25WlVu_VmrsT1xAyVD-jgeL7hs=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=Ga-mW08VqAo"
   }
 ]

@@ -234,6 +234,14 @@ function toJstISOString(utcString) {
     // キャッシュは毎回更新
     await fs.writeFile(CACHE_FILE, JSON.stringify(cache, null, 2), 'utf8');
     console.log('✅ cache saved.');
+
+    // 最終更新日時を記録
+    const META_FILE = 'data/last_updated.json';
+    let meta = {};
+    try { meta = JSON.parse(await fs.readFile(META_FILE, 'utf8')); } catch { /* 初回 */ }
+    meta.youtube = now.toISOString();
+    await fs.writeFile(META_FILE, JSON.stringify(meta, null, 2), 'utf8');
+    console.log('✅ last_updated.json (youtube) saved.');
   } catch (err) {
     console.error('❌ Error:', err?.message || err);
     process.exitCode = 1;

@@ -33,7 +33,7 @@ jobs:
           git config --global user.email "github-actions@github.com"
       
           # 変更されたJSONをステージ
-          git add data/youtube.json data/youtube_cache.json || true
+          git add data/youtube.json data/youtube_cache.json data/last_updated.json || true
       
           # 何もステージされてなければスキップ
           if git diff --cached --quiet; then

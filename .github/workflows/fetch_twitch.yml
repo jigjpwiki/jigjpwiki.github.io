@@ -29,7 +29,7 @@ jobs:
         run: |
           git config user.name github-actions
           git config user.email github-actions@github.com
-          git add data/twitch.json
+          git add data/twitch.json data/last_updated.json
 
           # 差分があるときだけコミット＆プッシュ
           if ! git diff --cached --quiet; then

@@ -144,6 +144,14 @@ function getThumbnailUrl(user_login, status, videoId) {
 
     await fs.writeFile('data/twitch.json', JSON.stringify(combined, null, 2), 'utf8');
     console.log('✅ twitch.json saved.');
+
+    // 最終更新日時を記録
+    const META_FILE = 'data/last_updated.json';
+    let meta = {};
+    try { meta = JSON.parse(await fs.readFile(META_FILE, 'utf8')); } catch { /* 初回 */ }
+    meta.twitch = now.toISOString();
+    await fs.writeFile(META_FILE, JSON.stringify(meta, null, 2), 'utf8');
+    console.log('✅ last_updated.json (twitch) saved.');
   } catch (err) {
     console.error('❌ Error:', err);
   }

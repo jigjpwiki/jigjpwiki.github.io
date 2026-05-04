@@ -1,14 +1,5 @@
 [
   {
-    "name": "真昼ねる",
-    "twitchid": "mahiruneru",
-    "title": "プロコーチにも呆れられた連打力でプラチナにゆく👊‼️【真昼ねる￤ぷろのゔぁ】",
-    "date": "2026-05-02T00:31:09.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/90e97ba8-20ac-4d1d-861a-d27ed84b5d70-profile_image-300x300.png",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/993e66570ecb56c2e93a_mahiruneru_315889194611_1777649464//thumb/thumb0-320x180.jpg"
-  },
-  {
     "name": "銘兎目あう",
     "twitchid": "Metome_Au",
     "title": "【EVOJapan2026】ミラー配信中！！2日目🚩",
@@ -47,20 +38,11 @@
   {
     "name": "銘兎目あう",
     "twitchid": "Metome_Au",
-    "title": "【スト６】🔰レバレスCケン練習：ダイヤのマネモンを倒せるかチャレンジ👊",
-    "date": "2026-05-04T20:33:12.000+09:00",
-    "status": "live",
-    "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/6eea4ef4-a33b-4c66-9378-ad3aa84b1187-profile_image-300x300.png",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_Metome_Au-320x180.jpg"
-  },
-  {
-    "name": "銘兎目あう",
-    "twitchid": "Metome_Au",
     "title": "【スト６】レバレスCケン練習：ダイヤのマネモンを倒せるかチャレンジ👊",
     "date": "2026-05-04T20:33:18.000+09:00",
     "status": "archive",
     "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/6eea4ef4-a33b-4c66-9378-ad3aa84b1187-profile_image-300x300.png",
-    "thumbnail": "https://vod-secure.twitch.tv/_404/404_processing_320x180.png"
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/fb42888e9520c30fee2e_metome_au_315902270579_1777894392//thumb/thumb0-320x180.jpg"
   },
   {
     "name": "火乃晴るい",
@@ -75,18 +57,36 @@
     "name": "なかもとおまち",
     "twitchid": "41futon",
     "title": "【EVOJ振り返り】現地感想せん【ダイエットチャレンジ発表】",
-    "date": "2026-05-04T22:12:44.000+09:00",
-    "status": "live",
+    "date": "2026-05-04T22:12:54.000+09:00",
+    "status": "archive",
     "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/1405880b-e945-4720-98c9-6a08c6400cae-profile_image-300x300.png",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_41futon-320x180.jpg"
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/94a80680890beffcfb7e_41futon_315902871923_1777900364//thumb/thumb0-320x180.jpg"
+  },
+  {
+    "name": "李じゅぴ汰",
+    "twitchid": "lee_jupita",
+    "title": "スローーーーライフ！！！",
+    "date": "2026-05-04T23:02:39.000+09:00",
+    "status": "live",
+    "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/5706bc75-6841-4954-8894-7b7bfba16adb-profile_image-300x300.png",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lee_jupita-320x180.jpg"
   },
   {
     "name": "李じゅぴ汰",
     "twitchid": "lee_jupita",
     "title": "【スト6】しれっと久々Mキンバリー参上！",
-    "date": "2026-05-04T23:02:39.000+09:00",
-    "status": "live",
+    "date": "2026-05-04T23:02:44.000+09:00",
+    "status": "archive",
     "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/5706bc75-6841-4954-8894-7b7bfba16adb-profile_image-300x300.png",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lee_jupita-320x180.jpg"
+    "thumbnail": "https://vod-secure.twitch.tv/_404/404_processing_320x180.png"
+  },
+  {
+    "name": "真昼ねる",
+    "twitchid": "mahiruneru",
+    "title": "最弱の弟子が師匠ひびきを倒すまでのシンデレラ配信 👊‼️【現目標：プラチナ到達】",
+    "date": "2026-05-04T23:49:54.000+09:00",
+    "status": "live",
+    "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/90e97ba8-20ac-4d1d-861a-d27ed84b5d70-profile_image-300x300.png",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_mahiruneru-320x180.jpg"
   }
 ]

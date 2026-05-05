@@ -138,6 +138,7 @@ function toJstISOString(utcString) {
               title,
               date: toJstISOString(details.actualStartTime),
               status: isLive ? 'live' : 'archive',
+              type: 'stream',
               thumbnail,
               channelIcon,
               url: videoUrl
@@ -152,6 +153,7 @@ function toJstISOString(utcString) {
               title,
               date: toJstISOString(details.scheduledStartTime),
               status: 'upcoming',
+              type: 'stream',
               thumbnail,
               channelIcon,
               url: videoUrl
@@ -166,6 +168,7 @@ function toJstISOString(utcString) {
               title,
               date: toJstISOString(snippet.publishedAt),
               status: 'archive',
+              type: 'video',
               thumbnail,
               channelIcon,
               url: videoUrl

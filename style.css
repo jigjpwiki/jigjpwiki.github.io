@@ -101,6 +101,59 @@ header {
   width: 100%;
 }
 
+/* ————— コンテンツタイプトグル ————— */
+.content-type-toggle {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  user-select: none;
+  margin-bottom: 4px;
+  position: relative;
+}
+
+.content-type-toggle input[type="checkbox"] {
+  display: none;
+}
+
+.toggle-track {
+  position: relative;
+  display: inline-block;
+  width: 38px;
+  height: 22px;
+  background-color: #aaa;
+  border-radius: 11px;
+  flex-shrink: 0;
+  transition: background-color 0.2s ease;
+}
+
+.toggle-track::after {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 16px;
+  height: 16px;
+  background-color: #fff;
+  border-radius: 50%;
+  transition: transform 0.2s ease;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.content-type-toggle input:checked ~ .toggle-track {
+  background-color: #333;
+}
+
+.content-type-toggle input:checked ~ .toggle-track::after {
+  transform: translateX(16px);
+}
+
+.toggle-label {
+  font-size: 12px;
+  color: #333;
+  white-space: nowrap;
+}
+
 /* ———————main css———————— */
 
 .videocontainer {
@@ -443,6 +496,12 @@ html::-webkit-scrollbar {
   color: #999;
 }
 
+
+@media (max-width: 1024px) {
+  .content-type-toggle {
+    display: none;
+  }
+}
 
 @media (max-width: 600px) {
   .day-block {

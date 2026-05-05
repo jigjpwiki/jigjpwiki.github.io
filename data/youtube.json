@@ -7,7 +7,8 @@
     "status": "archive",
     "thumbnail": "https://i.ytimg.com/vi/cTSK3JXiYiw/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/4AFFu60kFJqix-OhtDW3EJdQ0jQa1LrK56tGpvqvbGodMQFpkH-_qtvL_66dPGD3kl4LW9N4=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=cTSK3JXiYiw"
+    "url": "https://www.youtube.com/watch?v=cTSK3JXiYiw",
+    "type": "stream"
   },
   {
     "name": "暁月クララ",
@@ -17,7 +18,8 @@
     "status": "archive",
     "thumbnail": "https://i.ytimg.com/vi/9I1vB6sQnOQ/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/8tcStp-WzdZPtf6bPq1DtUnFSd2Eq5AppSd3_CEQ7hNNpnRND8InaWdPCz6T1wIWWkGJuFrbT94=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=9I1vB6sQnOQ"
+    "url": "https://www.youtube.com/watch?v=9I1vB6sQnOQ",
+    "type": "video"
   },
   {
     "name": "愛上オハナ",
@@ -27,7 +29,8 @@
     "status": "archive",
     "thumbnail": "https://i.ytimg.com/vi/FLM485hR34c/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/neZ2Mw2PcuimtH172AaHAlm5eKk_O17aEJ8aMGhme708zPqxyZB6QhS89qzSt30uXnGLLbgdliw=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=FLM485hR34c"
+    "url": "https://www.youtube.com/watch?v=FLM485hR34c",
+    "type": "stream"
   },
   {
     "name": "真昼ねる",
@@ -37,7 +40,8 @@
     "status": "archive",
     "thumbnail": "https://i.ytimg.com/vi/FBkPeoHEDKQ/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/Cu6AMAZAEC_DTANKoaloA_4iLCuEUQ8BiAwyHGuOUG9GtoIw6s7mXCv1-49LV1IgODYZfGowzQ=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=FBkPeoHEDKQ"
+    "url": "https://www.youtube.com/watch?v=FBkPeoHEDKQ",
+    "type": "video"
   },
   {
     "name": "汐月永遠",
@@ -47,7 +51,8 @@
     "status": "archive",
     "thumbnail": "https://i.ytimg.com/vi/4W4F-Pv4Ojo/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/68oh3mZjSYRleiuocaxnF9VcHdbaxLQzjCq4QgdPlHe3083eTdmNkfXZ6YV81vTUA51qoNXH_g=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=4W4F-Pv4Ojo"
+    "url": "https://www.youtube.com/watch?v=4W4F-Pv4Ojo",
+    "type": "video"
   },
   {
     "name": "巳野みこと",
@@ -57,7 +62,8 @@
     "status": "archive",
     "thumbnail": "https://i.ytimg.com/vi/LNtfrqdFwOw/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/3p9jAiFZNvnKiFnz-hu-u03CwwXSshaxv5bexFCUmNuZbW2W93YCg5BQ6OeqfUAzvBcxSeSKR74=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=LNtfrqdFwOw"
+    "url": "https://www.youtube.com/watch?v=LNtfrqdFwOw",
+    "type": "video"
   },
   {
     "name": "七音うら",
@@ -67,7 +73,8 @@
     "status": "archive",
     "thumbnail": "https://i.ytimg.com/vi/1QLFMWRn0-8/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/T655ATpSd2gkjZBrokvlkaUH0f5-fCpQdcJpwxmmNdy6fxCYffAlq2sMhPOtFk_CvVyOkEPY8Q=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=1QLFMWRn0-8"
+    "url": "https://www.youtube.com/watch?v=1QLFMWRn0-8",
+    "type": "stream"
   },
   {
     "name": "瀬奈りるか",
@@ -77,7 +84,8 @@
     "status": "archive",
     "thumbnail": "https://i.ytimg.com/vi/-qdZ6hR9EBw/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/BaxFKUrCc4gGKc1wwAHt4ebjk8C69NdTl3fMz9LoR5SUm_Tpvv2yixsbJhp8qsld6S0tdgup=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=-qdZ6hR9EBw"
+    "url": "https://www.youtube.com/watch?v=-qdZ6hR9EBw",
+    "type": "stream"
   },
   {
     "name": "花晴りら",
@@ -87,7 +95,8 @@
     "status": "archive",
     "thumbnail": "https://i.ytimg.com/vi/NjseUVP8Ev4/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/CH5JMWVQZ_RtloaXoj6W-yXjo9x8UxXSBG_vMyDnfk7M2QTOApVE1zOesu_aDrSAqvDbGrUyxs0=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=NjseUVP8Ev4"
+    "url": "https://www.youtube.com/watch?v=NjseUVP8Ev4",
+    "type": "stream"
   },
   {
     "name": "ローズ・ダマスクハート",
@@ -97,7 +106,8 @@
     "status": "archive",
     "thumbnail": "https://i.ytimg.com/vi/-qa0KLljpQg/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/FR4hUBx4CbKSNHsSFNmOirsxutWwh99UiqdUFXaZQ4UmcMzTmlq3Wmbo-anCzIRenl3bojZ8Pg=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=-qa0KLljpQg"
+    "url": "https://www.youtube.com/watch?v=-qa0KLljpQg",
+    "type": "video"
   },
   {
     "name": "桜樹美彩",
@@ -107,7 +117,8 @@
     "status": "upcoming",
     "thumbnail": "https://i.ytimg.com/vi/CPiAsLY6zlo/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/pDP2GuylW0RN1REDScFAlNklbXaPRqTm2mwT2F7dIo8xoYYFPfspsjGH_G3RagwlKVlQbdw95bY=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=CPiAsLY6zlo"
+    "url": "https://www.youtube.com/watch?v=CPiAsLY6zlo",
+    "type": "stream"
   },
   {
     "name": "桜庭羽奈",
@@ -117,7 +128,8 @@
     "status": "archive",
     "thumbnail": "https://i.ytimg.com/vi/3LomSuRzOV4/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/04zALH6pYL7mkWILHajvBzfzg4hrwRCLBONme3K1PjuEeYJIRC6RYxPmJzVZRuN42skHEDNRGmo=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=3LomSuRzOV4"
+    "url": "https://www.youtube.com/watch?v=3LomSuRzOV4",
+    "type": "stream"
   },
   {
     "name": "天麗らん",
@@ -127,7 +139,8 @@
     "status": "archive",
     "thumbnail": "https://i.ytimg.com/vi/02YWklM4C_s/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/MS1hSixShoy77GfMxg8KL38vfYzD2NRZ5VnPyLyf5-Xg6WENZiAbydPV7YJLYECwRfp6rKNR8Q=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=02YWklM4C_s"
+    "url": "https://www.youtube.com/watch?v=02YWklM4C_s",
+    "type": "video"
   },
   {
     "name": "香鳴ハノン",
@@ -137,7 +150,8 @@
     "status": "archive",
     "thumbnail": "https://i.ytimg.com/vi/iHvwHda2rgc/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/qvbeb9E-gYc822fxxzi6Ug5QyjhqZAWbUskHANcwDWP5W8iTsK3LcQJnjS4CVBuFJ6fONsM9F7M=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=iHvwHda2rgc"
+    "url": "https://www.youtube.com/watch?v=iHvwHda2rgc",
+    "type": "stream"
   },
   {
     "name": "愛乃宮ゆめ",
@@ -147,7 +161,8 @@
     "status": "archive",
     "thumbnail": "https://i.ytimg.com/vi/F1kj2CBlM9Q/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/Gwr7KJNWnI6CEgmIfEeMZahF5pbGNKlRhQXBEkuMWE0D66--IJE77z-5Zu2i5LFBc_CA6ZkqY4Y=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=F1kj2CBlM9Q"
+    "url": "https://www.youtube.com/watch?v=F1kj2CBlM9Q",
+    "type": "stream"
   },
   {
     "name": "堂下さとり",
@@ -157,7 +172,8 @@
     "status": "archive",
     "thumbnail": "https://i.ytimg.com/vi/RmxJzEA0X-8/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/eW_Hug0M6zFk9QSbAmOUWLMSfzBlCHmes-8yAksvfUNzyLgY6TSsE_eW8ncfE4bHYZXKoTWxmQ=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=RmxJzEA0X-8"
+    "url": "https://www.youtube.com/watch?v=RmxJzEA0X-8",
+    "type": "stream"
   },
   {
     "name": "虎島めら。",
@@ -167,7 +183,8 @@
     "status": "archive",
     "thumbnail": "https://i.ytimg.com/vi/K9hel7T5_hE/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/GTQLrgAFGtGBsfbiwqAP-vnRRHXDfXAKiZIGJAO-p4hzLfenIewQmuXdsBmgPfnz_hf0WsI62Q=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=K9hel7T5_hE"
+    "url": "https://www.youtube.com/watch?v=K9hel7T5_hE",
+    "type": "video"
   },
   {
     "name": "八重森ふゆの",
@@ -177,7 +194,8 @@
     "status": "archive",
     "thumbnail": "https://i.ytimg.com/vi/ruqT0arl0Yw/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/X5HHgZ4fOiErYCteDVWI8Ph27gVw15e9fuVjkrJWfeqFjfOfOLo3-ZVWOfc57QBgeFwT6eJ_hXc=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=ruqT0arl0Yw"
+    "url": "https://www.youtube.com/watch?v=ruqT0arl0Yw",
+    "type": "video"
   },
   {
     "name": "藤森ちとせ",
@@ -187,7 +205,8 @@
     "status": "archive",
     "thumbnail": "https://i.ytimg.com/vi/AvOaRKLBAfY/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/traR_yWe-AOGyM2wjo8h2FJO9JWBcbjfrL13X-umeD6BtNPopSZ2Q3YmdJq_5K9gWgHf_j64iQ=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=AvOaRKLBAfY"
+    "url": "https://www.youtube.com/watch?v=AvOaRKLBAfY",
+    "type": "stream"
   },
   {
     "name": "宵坂伊織",
@@ -197,7 +216,8 @@
     "status": "archive",
     "thumbnail": "https://i.ytimg.com/vi/-A5cJw8UAR0/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/fOSQN7R8b2LFTwHpvzc3RfsR_nJ02TIUKscIIj-hYwqWAsmMmqiixAt7XTbJTuH5MRqir4oC9Q=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=-A5cJw8UAR0"
+    "url": "https://www.youtube.com/watch?v=-A5cJw8UAR0",
+    "type": "stream"
   },
   {
     "name": "陰山アゲハ",
@@ -207,7 +227,8 @@
     "status": "archive",
     "thumbnail": "https://i.ytimg.com/vi/wrVPnPuwcAg/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/XWKUawU_WoX_xINkx3TMSF3fj0RbdiwNezFiEAGcmHfQYvwkjMUM1mvyOmgsbK8LxHoo6aEKJA=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=wrVPnPuwcAg"
+    "url": "https://www.youtube.com/watch?v=wrVPnPuwcAg",
+    "type": "stream"
   },
   {
     "name": "常磐カナメ",
@@ -217,7 +238,8 @@
     "status": "archive",
     "thumbnail": "https://i.ytimg.com/vi/BCoh64wViJ0/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/vb_kLF_4hQ7UdEtOnEtL-_pI320ZMQ-lVQ9OV3xMvdTQitHXX1zk0b6GKQ977dawvfoB5Sb8OQ=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=BCoh64wViJ0"
+    "url": "https://www.youtube.com/watch?v=BCoh64wViJ0",
+    "type": "video"
   },
   {
     "name": "亀城ちかり",
@@ -227,7 +249,8 @@
     "status": "archive",
     "thumbnail": "https://i.ytimg.com/vi/MCC3X0cMOC8/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/FoMfSB8j5DfKLhYyYkZTiSDODTCNEaOlBJykfWqc56jsEvGHgPNq9b8UPkYdtAE6xHe9ZTCVrQ=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=MCC3X0cMOC8"
+    "url": "https://www.youtube.com/watch?v=MCC3X0cMOC8",
+    "type": "stream"
   },
   {
     "name": "花晴りら",
@@ -237,7 +260,8 @@
     "status": "archive",
     "thumbnail": "https://i.ytimg.com/vi/sUA61LovbuE/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/CH5JMWVQZ_RtloaXoj6W-yXjo9x8UxXSBG_vMyDnfk7M2QTOApVE1zOesu_aDrSAqvDbGrUyxs0=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=sUA61LovbuE"
+    "url": "https://www.youtube.com/watch?v=sUA61LovbuE",
+    "type": "stream"
   },
   {
     "name": "夕凪万夜",
@@ -247,7 +271,8 @@
     "status": "archive",
     "thumbnail": "https://i.ytimg.com/vi/jMs7jq3G9z0/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/1mhcUNOhZXxkFYV8imS3FPi93B6Gx2oUAl5GKWMya4zSwD7omsT4rdUn01TDVm3TniI_2TjGmQ=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=jMs7jq3G9z0"
+    "url": "https://www.youtube.com/watch?v=jMs7jq3G9z0",
+    "type": "video"
   },
   {
     "name": "七海ロナ",
@@ -257,7 +282,8 @@
     "status": "archive",
     "thumbnail": "https://i.ytimg.com/vi/zp5j5vg1b6U/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/86cM_4q1A56pIYgdKxh776hM0nropjiZIlmXbfroWHXQ-MjdGGsjLcL5hMDOFL-T2EJHmybT=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=zp5j5vg1b6U"
+    "url": "https://www.youtube.com/watch?v=zp5j5vg1b6U",
+    "type": "stream"
   },
   {
     "name": "鬼多見アユム",
@@ -267,7 +293,8 @@
     "status": "archive",
     "thumbnail": "https://i.ytimg.com/vi/hANgErFPq50/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/5l_IDFvbCkoc_xXy5i5YH24NcAgRR9bYZM9hu30Hm8may2x-7GiLIxkQ3DHQ4vI9uKwRUcbR6Q=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=hANgErFPq50"
+    "url": "https://www.youtube.com/watch?v=hANgErFPq50",
+    "type": "stream"
   },
   {
     "name": "香鳴ハノン",
@@ -277,7 +304,8 @@
     "status": "archive",
     "thumbnail": "https://i.ytimg.com/vi/3vgAlqE66Qc/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/qvbeb9E-gYc822fxxzi6Ug5QyjhqZAWbUskHANcwDWP5W8iTsK3LcQJnjS4CVBuFJ6fONsM9F7M=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=3vgAlqE66Qc"
+    "url": "https://www.youtube.com/watch?v=3vgAlqE66Qc",
+    "type": "stream"
   },
   {
     "name": "雪紫誉",
@@ -287,7 +315,8 @@
     "status": "archive",
     "thumbnail": "https://i.ytimg.com/vi/bvuA5BlTxlA/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/4RbHGCHx02xQ2ze4g7UCTvuUPlQCpbk6bHIb5cdqO4JNzTe5qsq4sDTt6m-xVKMm476vJiMF7A=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=bvuA5BlTxlA"
+    "url": "https://www.youtube.com/watch?v=bvuA5BlTxlA",
+    "type": "stream"
   },
   {
     "name": "冬星れんこん",
@@ -297,7 +326,8 @@
     "status": "archive",
     "thumbnail": "https://i.ytimg.com/vi/_qlBmjHQOVQ/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/nMtec5z3KY5RUGCSbQENm9culC2VpB7Ate_dUueAINpAJdFK4wwe7Q6eH88QiMXqjImAleLI=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=_qlBmjHQOVQ"
+    "url": "https://www.youtube.com/watch?v=_qlBmjHQOVQ",
+    "type": "stream"
   },
   {
     "name": "夏渚まはろ",
@@ -307,7 +337,8 @@
     "status": "archive",
     "thumbnail": "https://i.ytimg.com/vi/RsAJPUumInQ/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/iktv-39nC7NDASD1WeXms-DEuHuVqB5RhwTtdDe26w-BCvqf6yq3r_8zBiv2i2CfNXCK0uE8=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=RsAJPUumInQ"
+    "url": "https://www.youtube.com/watch?v=RsAJPUumInQ",
+    "type": "stream"
   },
   {
     "name": "李じゅぴ汰",
@@ -317,7 +348,8 @@
     "status": "archive",
     "thumbnail": "https://i.ytimg.com/vi/ndyGMhslz3E/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/QQqec9A1J7eLk9RrRYD9vvk51BBJzcE1leGkU9n4YkwHqht9gmGT1ktmSlKItQtbuMSGuklAFxM=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=ndyGMhslz3E"
+    "url": "https://www.youtube.com/watch?v=ndyGMhslz3E",
+    "type": "video"
   },
   {
     "name": "堂下さとり",
@@ -327,7 +359,8 @@
     "status": "archive",
     "thumbnail": "https://i.ytimg.com/vi/Nyv2in3XD1Y/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/eW_Hug0M6zFk9QSbAmOUWLMSfzBlCHmes-8yAksvfUNzyLgY6TSsE_eW8ncfE4bHYZXKoTWxmQ=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=Nyv2in3XD1Y"
+    "url": "https://www.youtube.com/watch?v=Nyv2in3XD1Y",
+    "type": "stream"
   },
   {
     "name": "陰山アゲハ",
@@ -337,7 +370,8 @@
     "status": "upcoming",
     "thumbnail": "https://i.ytimg.com/vi/e6uM7IIcK8E/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/XWKUawU_WoX_xINkx3TMSF3fj0RbdiwNezFiEAGcmHfQYvwkjMUM1mvyOmgsbK8LxHoo6aEKJA=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=e6uM7IIcK8E"
+    "url": "https://www.youtube.com/watch?v=e6uM7IIcK8E",
+    "type": "stream"
   },
   {
     "name": "緋雨柚",
@@ -347,7 +381,8 @@
     "status": "archive",
     "thumbnail": "https://i.ytimg.com/vi/KMMHefe8PGQ/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/dPJHngNTeEfD_K0Mus141-We4xIuAhttm2pgEBl3VdGXqWvxGfy5mJfDMDbBmwI6UGc17dXb-g=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=KMMHefe8PGQ"
+    "url": "https://www.youtube.com/watch?v=KMMHefe8PGQ",
+    "type": "video"
   },
   {
     "name": "ニコ・ダークウェル",
@@ -357,7 +392,8 @@
     "status": "archive",
     "thumbnail": "https://i.ytimg.com/vi/KZKu6B6N5Ug/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/aVOgQtF_-urmi9JtRAIdoMOuSIfXzi5aOvwhiekLF2aQRJoVFfNCg3_x30I97YJ8Lwv9GNmB9Q=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=KZKu6B6N5Ug"
+    "url": "https://www.youtube.com/watch?v=KZKu6B6N5Ug",
+    "type": "stream"
   },
   {
     "name": "ニコ・ダークウェル",
@@ -367,7 +403,8 @@
     "status": "archive",
     "thumbnail": "https://i.ytimg.com/vi/m8oicxZfIXQ/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/aVOgQtF_-urmi9JtRAIdoMOuSIfXzi5aOvwhiekLF2aQRJoVFfNCg3_x30I97YJ8Lwv9GNmB9Q=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=m8oicxZfIXQ"
+    "url": "https://www.youtube.com/watch?v=m8oicxZfIXQ",
+    "type": "stream"
   },
   {
     "name": "雛菊のん",
@@ -377,7 +414,8 @@
     "status": "archive",
     "thumbnail": "https://i.ytimg.com/vi/LhLvusuc7-U/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/-7v40HQCqllHpJD69LHIo2n5lUt-pZ-bLtfrKAXhZk9OF06nj4Lno3gwBvO8d1jBSl5dCCxAxQ=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=LhLvusuc7-U"
+    "url": "https://www.youtube.com/watch?v=LhLvusuc7-U",
+    "type": "video"
   },
   {
     "name": "藤森ちとせ",
@@ -387,7 +425,8 @@
     "status": "archive",
     "thumbnail": "https://i.ytimg.com/vi/-j0jXdu6rCs/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/traR_yWe-AOGyM2wjo8h2FJO9JWBcbjfrL13X-umeD6BtNPopSZ2Q3YmdJq_5K9gWgHf_j64iQ=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=-j0jXdu6rCs"
+    "url": "https://www.youtube.com/watch?v=-j0jXdu6rCs",
+    "type": "video"
   },
   {
     "name": "新巻るろな",
@@ -397,7 +436,8 @@
     "status": "archive",
     "thumbnail": "https://i.ytimg.com/vi/wKIzcH2Qdgs/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/-4sLuWCih-DlfhpwpDQEuB6eupCB6kTImkIPmKnh54vu5I0F49RkveNQGiqy0p8t0GDU6eiegGE=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=wKIzcH2Qdgs"
+    "url": "https://www.youtube.com/watch?v=wKIzcH2Qdgs",
+    "type": "stream"
   },
   {
     "name": "火狐むい",
@@ -407,7 +447,8 @@
     "status": "archive",
     "thumbnail": "https://i.ytimg.com/vi/2ja940pOqHU/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/Ft5mSjImEah_xri4b9k0p2Olyhy6T_vj1ZxyglCcVbk2FqN-nrWqSMm5YoM_hEjeRQ9aaMjelV0=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=2ja940pOqHU"
+    "url": "https://www.youtube.com/watch?v=2ja940pOqHU",
+    "type": "stream"
   },
   {
     "name": "愛乃宮ゆめ",
@@ -417,7 +458,8 @@
     "status": "upcoming",
     "thumbnail": "https://i.ytimg.com/vi/oiv3m3KyCSE/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/Gwr7KJNWnI6CEgmIfEeMZahF5pbGNKlRhQXBEkuMWE0D66--IJE77z-5Zu2i5LFBc_CA6ZkqY4Y=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=oiv3m3KyCSE"
+    "url": "https://www.youtube.com/watch?v=oiv3m3KyCSE",
+    "type": "stream"
   },
   {
     "name": "鈴木沙透",
@@ -427,7 +469,8 @@
     "status": "archive",
     "thumbnail": "https://i.ytimg.com/vi/8r6EXRWEfUU/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/h4kuTtFCGhkDV4nmk6qjQt8auhkqLEqWwB9Il3NZR6op3ph-a0YElRfLcXkZVPp6xqvGmZHy3w=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=8r6EXRWEfUU"
+    "url": "https://www.youtube.com/watch?v=8r6EXRWEfUU",
+    "type": "stream"
   },
   {
     "name": "瀬奈りるか",
@@ -437,7 +480,8 @@
     "status": "archive",
     "thumbnail": "https://i.ytimg.com/vi/n3v02erCYsc/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/BaxFKUrCc4gGKc1wwAHt4ebjk8C69NdTl3fMz9LoR5SUm_Tpvv2yixsbJhp8qsld6S0tdgup=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=n3v02erCYsc"
+    "url": "https://www.youtube.com/watch?v=n3v02erCYsc",
+    "type": "video"
   },
   {
     "name": "水凪るぅ",
@@ -447,7 +491,8 @@
     "status": "archive",
     "thumbnail": "https://i.ytimg.com/vi/hLXiTJ-8FHA/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/UWKN-YZPLehhOew0000E-A8P4FZ5TB7C48g2KZGY4UDiheuj7UAI-IiS9m8v4nzuifg6JwdGKA=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=hLXiTJ-8FHA"
+    "url": "https://www.youtube.com/watch?v=hLXiTJ-8FHA",
+    "type": "video"
   },
   {
     "name": "犬丸なでこ",
@@ -457,7 +502,8 @@
     "status": "archive",
     "thumbnail": "https://i.ytimg.com/vi/pp-pgJ7akmw/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/HZPUrbSwGcllAbUtx6xggJ6lKfMfnAWDxWOCc01tpthiDipSqQP48TK5Jqz4GRzUdwKMUsxlsg=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=pp-pgJ7akmw"
+    "url": "https://www.youtube.com/watch?v=pp-pgJ7akmw",
+    "type": "stream"
   },
   {
     "name": "銀河キララ",
@@ -467,7 +513,8 @@
     "status": "archive",
     "thumbnail": "https://i.ytimg.com/vi/U1gK7xUjEjc/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/XCt0ypsqr8q8DMneWxWfHg2pn2x505K2P-ERTzMT6NhUT0CjcVtLlz0KrWgIz2zz449w1fdWRg=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=U1gK7xUjEjc"
+    "url": "https://www.youtube.com/watch?v=U1gK7xUjEjc",
+    "type": "video"
   },
   {
     "name": "鈴木沙透",
@@ -477,7 +524,8 @@
     "status": "archive",
     "thumbnail": "https://i.ytimg.com/vi/0vEa8h1q9bs/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/h4kuTtFCGhkDV4nmk6qjQt8auhkqLEqWwB9Il3NZR6op3ph-a0YElRfLcXkZVPp6xqvGmZHy3w=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=0vEa8h1q9bs"
+    "url": "https://www.youtube.com/watch?v=0vEa8h1q9bs",
+    "type": "stream"
   },
   {
     "name": "夕凪万夜",
@@ -487,7 +535,8 @@
     "status": "archive",
     "thumbnail": "https://i.ytimg.com/vi/vyqm7YmTPug/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/1mhcUNOhZXxkFYV8imS3FPi93B6Gx2oUAl5GKWMya4zSwD7omsT4rdUn01TDVm3TniI_2TjGmQ=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=vyqm7YmTPug"
+    "url": "https://www.youtube.com/watch?v=vyqm7YmTPug",
+    "type": "video"
   },
   {
     "name": "新巻るろな",
@@ -497,7 +546,8 @@
     "status": "archive",
     "thumbnail": "https://i.ytimg.com/vi/djeUPBmuh_A/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/-4sLuWCih-DlfhpwpDQEuB6eupCB6kTImkIPmKnh54vu5I0F49RkveNQGiqy0p8t0GDU6eiegGE=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=djeUPBmuh_A"
+    "url": "https://www.youtube.com/watch?v=djeUPBmuh_A",
+    "type": "stream"
   },
   {
     "name": "桜堂ねる",
@@ -507,7 +557,8 @@
     "status": "archive",
     "thumbnail": "https://i.ytimg.com/vi/IOsRqa5zA0s/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/hBz75E3AEST1Dzv5vOTHAqoJfayd30WIWWQ3ZFLlWMHDsyZ_QD6ZVVUtLTKSizalT3APPtdpFGI=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=IOsRqa5zA0s"
+    "url": "https://www.youtube.com/watch?v=IOsRqa5zA0s",
+    "type": "video"
   },
   {
     "name": "堂下さとり",
@@ -517,7 +568,8 @@
     "status": "archive",
     "thumbnail": "https://i.ytimg.com/vi/3eAZBF1IR1E/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/eW_Hug0M6zFk9QSbAmOUWLMSfzBlCHmes-8yAksvfUNzyLgY6TSsE_eW8ncfE4bHYZXKoTWxmQ=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=3eAZBF1IR1E"
+    "url": "https://www.youtube.com/watch?v=3eAZBF1IR1E",
+    "type": "stream"
   },
   {
     "name": "さくさくさく",
@@ -527,7 +579,8 @@
     "status": "archive",
     "thumbnail": "https://i.ytimg.com/vi/DjPDuOsxQ7g/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/CinM2xYSxfIbebsolFNjzaPnWjFB8BYcRU5jYnVkw1gdF8R-q-pQlFhnR5UkFsBxZHnRjM6r=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=DjPDuOsxQ7g"
+    "url": "https://www.youtube.com/watch?v=DjPDuOsxQ7g",
+    "type": "video"
   },
   {
     "name": "翡翠あかね",
@@ -537,7 +590,8 @@
     "status": "archive",
     "thumbnail": "https://i.ytimg.com/vi/QqBFDJXHcVY/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/2E-UxKp7QECcvHR_COfspS7CdTnTxUHM9TRVCA7HPy_wdEfSwcZOxW0NIIKElrXq8J7bR_Huxw=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=QqBFDJXHcVY"
+    "url": "https://www.youtube.com/watch?v=QqBFDJXHcVY",
+    "type": "video"
   },
   {
     "name": "巳野みこと",
@@ -547,7 +601,8 @@
     "status": "archive",
     "thumbnail": "https://i.ytimg.com/vi/kDvaBxldqiI/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/3p9jAiFZNvnKiFnz-hu-u03CwwXSshaxv5bexFCUmNuZbW2W93YCg5BQ6OeqfUAzvBcxSeSKR74=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=kDvaBxldqiI"
+    "url": "https://www.youtube.com/watch?v=kDvaBxldqiI",
+    "type": "video"
   },
   {
     "name": "灯野ぺけ。",
@@ -557,7 +612,8 @@
     "status": "archive",
     "thumbnail": "https://i.ytimg.com/vi/UaqT_p_EvUo/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/sYbvo_2nSCW162VEArIwu7v1B3bl159gmEnGgGei8I8drc4l7huPP7q6aWZ4AfXi5wTMACmGow=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=UaqT_p_EvUo"
+    "url": "https://www.youtube.com/watch?v=UaqT_p_EvUo",
+    "type": "stream"
   },
   {
     "name": "天辻ゆらぐ",
@@ -567,7 +623,8 @@
     "status": "archive",
     "thumbnail": "https://i.ytimg.com/vi/24PqzuzzSzg/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/4AFFu60kFJqix-OhtDW3EJdQ0jQa1LrK56tGpvqvbGodMQFpkH-_qtvL_66dPGD3kl4LW9N4=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=24PqzuzzSzg"
+    "url": "https://www.youtube.com/watch?v=24PqzuzzSzg",
+    "type": "stream"
   },
   {
     "name": "雛菊のん",
@@ -577,7 +634,8 @@
     "status": "archive",
     "thumbnail": "https://i.ytimg.com/vi/NDZo3vme5SU/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/-7v40HQCqllHpJD69LHIo2n5lUt-pZ-bLtfrKAXhZk9OF06nj4Lno3gwBvO8d1jBSl5dCCxAxQ=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=NDZo3vme5SU"
+    "url": "https://www.youtube.com/watch?v=NDZo3vme5SU",
+    "type": "video"
   },
   {
     "name": "愛上オハナ",
@@ -587,7 +645,8 @@
     "status": "archive",
     "thumbnail": "https://i.ytimg.com/vi/TVQQT6CkpJU/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/neZ2Mw2PcuimtH172AaHAlm5eKk_O17aEJ8aMGhme708zPqxyZB6QhS89qzSt30uXnGLLbgdliw=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=TVQQT6CkpJU"
+    "url": "https://www.youtube.com/watch?v=TVQQT6CkpJU",
+    "type": "stream"
   },
   {
     "name": "フローレ・ブランカ",
@@ -597,7 +656,8 @@
     "status": "archive",
     "thumbnail": "https://i.ytimg.com/vi/mDSGc11ZIiU/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/xqdNSKZCNQ6ekbqgjixeOR0aTymLfmP_ILAFQ4sBF7ln-ZWxQYkVjGBun2pF1PwVC6nmwi2KFxE=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=mDSGc11ZIiU"
+    "url": "https://www.youtube.com/watch?v=mDSGc11ZIiU",
+    "type": "stream"
   },
   {
     "name": "無月いお",
@@ -607,7 +667,8 @@
     "status": "archive",
     "thumbnail": "https://i.ytimg.com/vi/6BCdnYVdgHU/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/IIxHliRENu1SI2xbfa4TXwE0X5otBL4RH9OxJhMdxTqM3y4DzXDoiHQbvhelH9tRY9ZCkfQBzKE=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=6BCdnYVdgHU"
+    "url": "https://www.youtube.com/watch?v=6BCdnYVdgHU",
+    "type": "video"
   },
   {
     "name": "暁月クララ",
@@ -617,7 +678,8 @@
     "status": "archive",
     "thumbnail": "https://i.ytimg.com/vi/FxC78ebf7AQ/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/8tcStp-WzdZPtf6bPq1DtUnFSd2Eq5AppSd3_CEQ7hNNpnRND8InaWdPCz6T1wIWWkGJuFrbT94=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=FxC78ebf7AQ"
+    "url": "https://www.youtube.com/watch?v=FxC78ebf7AQ",
+    "type": "video"
   },
   {
     "name": "汐月永遠",
@@ -627,7 +689,8 @@
     "status": "archive",
     "thumbnail": "https://i.ytimg.com/vi/2Yjwqo35Apo/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/68oh3mZjSYRleiuocaxnF9VcHdbaxLQzjCq4QgdPlHe3083eTdmNkfXZ6YV81vTUA51qoNXH_g=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=2Yjwqo35Apo"
+    "url": "https://www.youtube.com/watch?v=2Yjwqo35Apo",
+    "type": "video"
   },
   {
     "name": "七音うら",
@@ -637,7 +700,8 @@
     "status": "archive",
     "thumbnail": "https://i.ytimg.com/vi/32_s9_CY-OA/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/T655ATpSd2gkjZBrokvlkaUH0f5-fCpQdcJpwxmmNdy6fxCYffAlq2sMhPOtFk_CvVyOkEPY8Q=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=32_s9_CY-OA"
+    "url": "https://www.youtube.com/watch?v=32_s9_CY-OA",
+    "type": "stream"
   },
   {
     "name": "花晴りら",
@@ -647,7 +711,8 @@
     "status": "archive",
     "thumbnail": "https://i.ytimg.com/vi/HCuw-M5Rtj8/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/CH5JMWVQZ_RtloaXoj6W-yXjo9x8UxXSBG_vMyDnfk7M2QTOApVE1zOesu_aDrSAqvDbGrUyxs0=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=HCuw-M5Rtj8"
+    "url": "https://www.youtube.com/watch?v=HCuw-M5Rtj8",
+    "type": "stream"
   },
   {
     "name": "ニコ・ダークウェル",
@@ -657,7 +722,8 @@
     "status": "archive",
     "thumbnail": "https://i.ytimg.com/vi/Wz6c6JCS464/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/aVOgQtF_-urmi9JtRAIdoMOuSIfXzi5aOvwhiekLF2aQRJoVFfNCg3_x30I97YJ8Lwv9GNmB9Q=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=Wz6c6JCS464"
+    "url": "https://www.youtube.com/watch?v=Wz6c6JCS464",
+    "type": "stream"
   },
   {
     "name": "新巻るろな",
@@ -667,7 +733,8 @@
     "status": "archive",
     "thumbnail": "https://i.ytimg.com/vi/DEd1Ux7HfDM/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/-4sLuWCih-DlfhpwpDQEuB6eupCB6kTImkIPmKnh54vu5I0F49RkveNQGiqy0p8t0GDU6eiegGE=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=DEd1Ux7HfDM"
+    "url": "https://www.youtube.com/watch?v=DEd1Ux7HfDM",
+    "type": "stream"
   },
   {
     "name": "鈴木沙透",
@@ -677,7 +744,8 @@
     "status": "archive",
     "thumbnail": "https://i.ytimg.com/vi/EP28MGgfd0A/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/h4kuTtFCGhkDV4nmk6qjQt8auhkqLEqWwB9Il3NZR6op3ph-a0YElRfLcXkZVPp6xqvGmZHy3w=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=EP28MGgfd0A"
+    "url": "https://www.youtube.com/watch?v=EP28MGgfd0A",
+    "type": "stream"
   },
   {
     "name": "ローズ・ダマスクハート",
@@ -687,7 +755,8 @@
     "status": "archive",
     "thumbnail": "https://i.ytimg.com/vi/xtPhf5mLM48/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/FR4hUBx4CbKSNHsSFNmOirsxutWwh99UiqdUFXaZQ4UmcMzTmlq3Wmbo-anCzIRenl3bojZ8Pg=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=xtPhf5mLM48"
+    "url": "https://www.youtube.com/watch?v=xtPhf5mLM48",
+    "type": "video"
   },
   {
     "name": "天麗らん",
@@ -697,7 +766,8 @@
     "status": "archive",
     "thumbnail": "https://i.ytimg.com/vi/bqa3p6YQeM4/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/MS1hSixShoy77GfMxg8KL38vfYzD2NRZ5VnPyLyf5-Xg6WENZiAbydPV7YJLYECwRfp6rKNR8Q=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=bqa3p6YQeM4"
+    "url": "https://www.youtube.com/watch?v=bqa3p6YQeM4",
+    "type": "video"
   },
   {
     "name": "江波キョウカ",
@@ -707,7 +777,8 @@
     "status": "archive",
     "thumbnail": "https://i.ytimg.com/vi/2ujlnZwOhs4/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/pM4ZefnBFJ2qlBEqknYCFHdW6dLH29KptwG0OYSu1-mAVAIy5M1IjwpMwC24-A_v07nluGGrlQ=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=2ujlnZwOhs4"
+    "url": "https://www.youtube.com/watch?v=2ujlnZwOhs4",
+    "type": "video"
   },
   {
     "name": "香鳴ハノン",
@@ -717,7 +788,8 @@
     "status": "archive",
     "thumbnail": "https://i.ytimg.com/vi/1Vy7JPwdjwM/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/qvbeb9E-gYc822fxxzi6Ug5QyjhqZAWbUskHANcwDWP5W8iTsK3LcQJnjS4CVBuFJ6fONsM9F7M=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=1Vy7JPwdjwM"
+    "url": "https://www.youtube.com/watch?v=1Vy7JPwdjwM",
+    "type": "stream"
   },
   {
     "name": "堂下さとり",
@@ -727,7 +799,8 @@
     "status": "archive",
     "thumbnail": "https://i.ytimg.com/vi/-syKHTP_XzQ/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/eW_Hug0M6zFk9QSbAmOUWLMSfzBlCHmes-8yAksvfUNzyLgY6TSsE_eW8ncfE4bHYZXKoTWxmQ=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=-syKHTP_XzQ"
+    "url": "https://www.youtube.com/watch?v=-syKHTP_XzQ",
+    "type": "stream"
   },
   {
     "name": "夕凪万夜",
@@ -737,7 +810,8 @@
     "status": "archive",
     "thumbnail": "https://i.ytimg.com/vi/-8Vzi0X6Z0g/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/1mhcUNOhZXxkFYV8imS3FPi93B6Gx2oUAl5GKWMya4zSwD7omsT4rdUn01TDVm3TniI_2TjGmQ=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=-8Vzi0X6Z0g"
+    "url": "https://www.youtube.com/watch?v=-8Vzi0X6Z0g",
+    "type": "video"
   },
   {
     "name": "犬丸なでこ",
@@ -747,7 +821,8 @@
     "status": "archive",
     "thumbnail": "https://i.ytimg.com/vi/C6r7D6Er7y4/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/HZPUrbSwGcllAbUtx6xggJ6lKfMfnAWDxWOCc01tpthiDipSqQP48TK5Jqz4GRzUdwKMUsxlsg=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=C6r7D6Er7y4"
+    "url": "https://www.youtube.com/watch?v=C6r7D6Er7y4",
+    "type": "stream"
   },
   {
     "name": "鬼多見アユム",
@@ -757,7 +832,8 @@
     "status": "archive",
     "thumbnail": "https://i.ytimg.com/vi/fS02z-0ADiM/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/5l_IDFvbCkoc_xXy5i5YH24NcAgRR9bYZM9hu30Hm8may2x-7GiLIxkQ3DHQ4vI9uKwRUcbR6Q=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=fS02z-0ADiM"
+    "url": "https://www.youtube.com/watch?v=fS02z-0ADiM",
+    "type": "stream"
   },
   {
     "name": "宵坂伊織",
@@ -767,7 +843,8 @@
     "status": "archive",
     "thumbnail": "https://i.ytimg.com/vi/fAPC1L0lqzE/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/fOSQN7R8b2LFTwHpvzc3RfsR_nJ02TIUKscIIj-hYwqWAsmMmqiixAt7XTbJTuH5MRqir4oC9Q=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=fAPC1L0lqzE"
+    "url": "https://www.youtube.com/watch?v=fAPC1L0lqzE",
+    "type": "video"
   },
   {
     "name": "夕凪万夜",
@@ -777,7 +854,8 @@
     "status": "archive",
     "thumbnail": "https://i.ytimg.com/vi/eHEcwLlFRGU/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/1mhcUNOhZXxkFYV8imS3FPi93B6Gx2oUAl5GKWMya4zSwD7omsT4rdUn01TDVm3TniI_2TjGmQ=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=eHEcwLlFRGU"
+    "url": "https://www.youtube.com/watch?v=eHEcwLlFRGU",
+    "type": "video"
   },
   {
     "name": "虎島めら。",
@@ -787,7 +865,8 @@
     "status": "archive",
     "thumbnail": "https://i.ytimg.com/vi/GG1f-Nwdld8/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/GTQLrgAFGtGBsfbiwqAP-vnRRHXDfXAKiZIGJAO-p4hzLfenIewQmuXdsBmgPfnz_hf0WsI62Q=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=GG1f-Nwdld8"
+    "url": "https://www.youtube.com/watch?v=GG1f-Nwdld8",
+    "type": "video"
   },
   {
     "name": "香桜あんにん",
@@ -797,7 +876,8 @@
     "status": "archive",
     "thumbnail": "https://i.ytimg.com/vi/OmfHlEyXPn4/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/LL8h8c1rjBm_CimsOmJqxMtfMpzaEZCJ56jM4iOTOaEaDLQ7f6fYwkAWggiJNEwh-aeggh3L-w=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=OmfHlEyXPn4"
+    "url": "https://www.youtube.com/watch?v=OmfHlEyXPn4",
+    "type": "video"
   },
   {
     "name": "冬星れんこん",
@@ -807,7 +887,8 @@
     "status": "archive",
     "thumbnail": "https://i.ytimg.com/vi/6-1Z0jPkXZQ/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/nMtec5z3KY5RUGCSbQENm9culC2VpB7Ate_dUueAINpAJdFK4wwe7Q6eH88QiMXqjImAleLI=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=6-1Z0jPkXZQ"
+    "url": "https://www.youtube.com/watch?v=6-1Z0jPkXZQ",
+    "type": "video"
   },
   {
     "name": "Palette Project",
@@ -817,7 +898,8 @@
     "status": "archive",
     "thumbnail": "https://i.ytimg.com/vi/LN4BTY9ynmo/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/ytc/AIdro_nuv43BXc-JNRM-omFed0brcXGTD8qvA8313ZeQa8PfviA=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=LN4BTY9ynmo"
+    "url": "https://www.youtube.com/watch?v=LN4BTY9ynmo",
+    "type": "video"
   },
   {
     "name": "白尾すず",
@@ -827,7 +909,8 @@
     "status": "archive",
     "thumbnail": "https://i.ytimg.com/vi/XeciDiDdRzw/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/HZ3YCHg83nmisfw0Cui5jLKF3g9u9lERdI8ZLN9qTDrNZDkP39piI7bMaaAm7gNS5B3F-UHe9g=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=XeciDiDdRzw"
+    "url": "https://www.youtube.com/watch?v=XeciDiDdRzw",
+    "type": "video"
   },
   {
     "name": "八重森ふゆの",
@@ -837,7 +920,8 @@
     "status": "archive",
     "thumbnail": "https://i.ytimg.com/vi/rrsBPC97NLM/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/X5HHgZ4fOiErYCteDVWI8Ph27gVw15e9fuVjkrJWfeqFjfOfOLo3-ZVWOfc57QBgeFwT6eJ_hXc=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=rrsBPC97NLM"
+    "url": "https://www.youtube.com/watch?v=rrsBPC97NLM",
+    "type": "video"
   },
   {
     "name": "天辻ゆらぐ",
@@ -847,7 +931,8 @@
     "status": "archive",
     "thumbnail": "https://i.ytimg.com/vi/_lZ4p3WgqRo/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/4AFFu60kFJqix-OhtDW3EJdQ0jQa1LrK56tGpvqvbGodMQFpkH-_qtvL_66dPGD3kl4LW9N4=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=_lZ4p3WgqRo"
+    "url": "https://www.youtube.com/watch?v=_lZ4p3WgqRo",
+    "type": "stream"
   },
   {
     "name": "李じゅぴ汰",
@@ -857,7 +942,8 @@
     "status": "archive",
     "thumbnail": "https://i.ytimg.com/vi/RC0rLXbaciM/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/QQqec9A1J7eLk9RrRYD9vvk51BBJzcE1leGkU9n4YkwHqht9gmGT1ktmSlKItQtbuMSGuklAFxM=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=RC0rLXbaciM"
+    "url": "https://www.youtube.com/watch?v=RC0rLXbaciM",
+    "type": "video"
   },
   {
     "name": "牡丹雪",
@@ -867,7 +953,8 @@
     "status": "archive",
     "thumbnail": "https://i.ytimg.com/vi/AjIBXNnMztk/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/a-UPogpdl_uCUW2GY-4J281LxjaqCIjgZidqBCq5XkdCvoDum57Qszkm9ZhLFZarfy5ocQOrOQ=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=AjIBXNnMztk"
+    "url": "https://www.youtube.com/watch?v=AjIBXNnMztk",
+    "type": "video"
   },
   {
     "name": "七海ロナ",
@@ -877,7 +964,8 @@
     "status": "archive",
     "thumbnail": "https://i.ytimg.com/vi/LfdfLQTPCpc/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/86cM_4q1A56pIYgdKxh776hM0nropjiZIlmXbfroWHXQ-MjdGGsjLcL5hMDOFL-T2EJHmybT=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=LfdfLQTPCpc"
+    "url": "https://www.youtube.com/watch?v=LfdfLQTPCpc",
+    "type": "video"
   },
   {
     "name": "狛社なの",
@@ -887,7 +975,8 @@
     "status": "archive",
     "thumbnail": "https://i.ytimg.com/vi/0hGCcE9_yOI/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/lUhYJWFisxke7yvKcBZ6RxH7FTw7XOdLis-QyC2l9ngUEWj4YprpGyJvhJ_nxKuaM_rZYRbLbA=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=0hGCcE9_yOI"
+    "url": "https://www.youtube.com/watch?v=0hGCcE9_yOI",
+    "type": "stream"
   },
   {
     "name": "緋雨柚",
@@ -897,7 +986,8 @@
     "status": "archive",
     "thumbnail": "https://i.ytimg.com/vi/Gjwq4AREZy0/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/dPJHngNTeEfD_K0Mus141-We4xIuAhttm2pgEBl3VdGXqWvxGfy5mJfDMDbBmwI6UGc17dXb-g=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=Gjwq4AREZy0"
+    "url": "https://www.youtube.com/watch?v=Gjwq4AREZy0",
+    "type": "video"
   },
   {
     "name": "火狐むい",
@@ -907,7 +997,8 @@
     "status": "archive",
     "thumbnail": "https://i.ytimg.com/vi/cWfigOXkA8I/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/Ft5mSjImEah_xri4b9k0p2Olyhy6T_vj1ZxyglCcVbk2FqN-nrWqSMm5YoM_hEjeRQ9aaMjelV0=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=cWfigOXkA8I"
+    "url": "https://www.youtube.com/watch?v=cWfigOXkA8I",
+    "type": "video"
   },
   {
     "name": "水凪るぅ",
@@ -917,7 +1008,8 @@
     "status": "archive",
     "thumbnail": "https://i.ytimg.com/vi/cE_4PQJ39Lc/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/UWKN-YZPLehhOew0000E-A8P4FZ5TB7C48g2KZGY4UDiheuj7UAI-IiS9m8v4nzuifg6JwdGKA=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=cE_4PQJ39Lc"
+    "url": "https://www.youtube.com/watch?v=cE_4PQJ39Lc",
+    "type": "video"
   },
   {
     "name": "秋桜しゅお",
@@ -927,7 +1019,8 @@
     "status": "archive",
     "thumbnail": "https://i.ytimg.com/vi/RA-SqfP7xnA/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/WBGP05KaXeA21IzCbCeM0QHa0v9maVvVUBDZ2DyfTT62F1wGaW3hLOQBy1gCfuQfEnDNgwbsrQ=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=RA-SqfP7xnA"
+    "url": "https://www.youtube.com/watch?v=RA-SqfP7xnA",
+    "type": "stream"
   },
   {
     "name": "夏渚まはろ",
@@ -937,7 +1030,8 @@
     "status": "archive",
     "thumbnail": "https://i.ytimg.com/vi/h8F85wN4kpQ/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/iktv-39nC7NDASD1WeXms-DEuHuVqB5RhwTtdDe26w-BCvqf6yq3r_8zBiv2i2CfNXCK0uE8=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=h8F85wN4kpQ"
+    "url": "https://www.youtube.com/watch?v=h8F85wN4kpQ",
+    "type": "stream"
   },
   {
     "name": "桜堂ねる",
@@ -947,7 +1041,8 @@
     "status": "archive",
     "thumbnail": "https://i.ytimg.com/vi/zPLFDglMd0Q/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/hBz75E3AEST1Dzv5vOTHAqoJfayd30WIWWQ3ZFLlWMHDsyZ_QD6ZVVUtLTKSizalT3APPtdpFGI=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=zPLFDglMd0Q"
+    "url": "https://www.youtube.com/watch?v=zPLFDglMd0Q",
+    "type": "video"
   },
   {
     "name": "犬丸なでこ",
@@ -957,7 +1052,8 @@
     "status": "upcoming",
     "thumbnail": "https://i.ytimg.com/vi/PNf161X3wz8/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/HZPUrbSwGcllAbUtx6xggJ6lKfMfnAWDxWOCc01tpthiDipSqQP48TK5Jqz4GRzUdwKMUsxlsg=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=PNf161X3wz8"
+    "url": "https://www.youtube.com/watch?v=PNf161X3wz8",
+    "type": "stream"
   },
   {
     "name": "花晴りら",
@@ -967,7 +1063,8 @@
     "status": "archive",
     "thumbnail": "https://i.ytimg.com/vi/nN4_pE1Owgk/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/CH5JMWVQZ_RtloaXoj6W-yXjo9x8UxXSBG_vMyDnfk7M2QTOApVE1zOesu_aDrSAqvDbGrUyxs0=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=nN4_pE1Owgk"
+    "url": "https://www.youtube.com/watch?v=nN4_pE1Owgk",
+    "type": "stream"
   },
   {
     "name": "桜庭羽奈",
@@ -977,7 +1074,8 @@
     "status": "archive",
     "thumbnail": "https://i.ytimg.com/vi/17im_oARX4k/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/04zALH6pYL7mkWILHajvBzfzg4hrwRCLBONme3K1PjuEeYJIRC6RYxPmJzVZRuN42skHEDNRGmo=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=17im_oARX4k"
+    "url": "https://www.youtube.com/watch?v=17im_oARX4k",
+    "type": "stream"
   },
   {
     "name": "銀河キララ",
@@ -987,7 +1085,8 @@
     "status": "archive",
     "thumbnail": "https://i.ytimg.com/vi/HvIntLhRPaw/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/XCt0ypsqr8q8DMneWxWfHg2pn2x505K2P-ERTzMT6NhUT0CjcVtLlz0KrWgIz2zz449w1fdWRg=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=HvIntLhRPaw"
+    "url": "https://www.youtube.com/watch?v=HvIntLhRPaw",
+    "type": "stream"
   },
   {
     "name": "瀬奈りるか",
@@ -997,7 +1096,8 @@
     "status": "archive",
     "thumbnail": "https://i.ytimg.com/vi/9BzbLubYHxw/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/BaxFKUrCc4gGKc1wwAHt4ebjk8C69NdTl3fMz9LoR5SUm_Tpvv2yixsbJhp8qsld6S0tdgup=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=9BzbLubYHxw"
+    "url": "https://www.youtube.com/watch?v=9BzbLubYHxw",
+    "type": "stream"
   },
   {
     "name": "灯野ぺけ。",
@@ -1007,7 +1107,8 @@
     "status": "archive",
     "thumbnail": "https://i.ytimg.com/vi/Btbxl38BN1U/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/sYbvo_2nSCW162VEArIwu7v1B3bl159gmEnGgGei8I8drc4l7huPP7q6aWZ4AfXi5wTMACmGow=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=Btbxl38BN1U"
+    "url": "https://www.youtube.com/watch?v=Btbxl38BN1U",
+    "type": "stream"
   },
   {
     "name": "犬丸なでこ",
@@ -1017,7 +1118,8 @@
     "status": "archive",
     "thumbnail": "https://i.ytimg.com/vi/0BTz6JLK24M/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/HZPUrbSwGcllAbUtx6xggJ6lKfMfnAWDxWOCc01tpthiDipSqQP48TK5Jqz4GRzUdwKMUsxlsg=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=0BTz6JLK24M"
+    "url": "https://www.youtube.com/watch?v=0BTz6JLK24M",
+    "type": "stream"
   },
   {
     "name": "雛菊のん",
@@ -1027,7 +1129,8 @@
     "status": "archive",
     "thumbnail": "https://i.ytimg.com/vi/ZsAAWpA50gY/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/-7v40HQCqllHpJD69LHIo2n5lUt-pZ-bLtfrKAXhZk9OF06nj4Lno3gwBvO8d1jBSl5dCCxAxQ=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=ZsAAWpA50gY"
+    "url": "https://www.youtube.com/watch?v=ZsAAWpA50gY",
+    "type": "video"
   },
   {
     "name": "しーはむ",
@@ -1037,7 +1140,8 @@
     "status": "archive",
     "thumbnail": "https://i.ytimg.com/vi/5AkuJF6xeeM/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/y0zP0Uz7HSLx5dv3xo488Suxk8rJQQUC1wXaymjUBIQIwa25WlVu_VmrsT1xAyVD-jgeL7hs=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=5AkuJF6xeeM"
+    "url": "https://www.youtube.com/watch?v=5AkuJF6xeeM",
+    "type": "video"
   },
   {
     "name": "八重森ふゆの",
@@ -1047,7 +1151,8 @@
     "status": "archive",
     "thumbnail": "https://i.ytimg.com/vi/WY7USyEnXTo/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/X5HHgZ4fOiErYCteDVWI8Ph27gVw15e9fuVjkrJWfeqFjfOfOLo3-ZVWOfc57QBgeFwT6eJ_hXc=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=WY7USyEnXTo"
+    "url": "https://www.youtube.com/watch?v=WY7USyEnXTo",
+    "type": "stream"
   },
   {
     "name": "フローレ・ブランカ",
@@ -1057,7 +1162,8 @@
     "status": "archive",
     "thumbnail": "https://i.ytimg.com/vi/wl5eqvEmrrM/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/xqdNSKZCNQ6ekbqgjixeOR0aTymLfmP_ILAFQ4sBF7ln-ZWxQYkVjGBun2pF1PwVC6nmwi2KFxE=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=wl5eqvEmrrM"
+    "url": "https://www.youtube.com/watch?v=wl5eqvEmrrM",
+    "type": "stream"
   },
   {
     "name": "さくさくさく",
@@ -1067,7 +1173,8 @@
     "status": "archive",
     "thumbnail": "https://i.ytimg.com/vi/jm6sxUqW8Ng/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/CinM2xYSxfIbebsolFNjzaPnWjFB8BYcRU5jYnVkw1gdF8R-q-pQlFhnR5UkFsBxZHnRjM6r=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=jm6sxUqW8Ng"
+    "url": "https://www.youtube.com/watch?v=jm6sxUqW8Ng",
+    "type": "video"
   },
   {
     "name": "桜堂ねる",
@@ -1077,7 +1184,8 @@
     "status": "archive",
     "thumbnail": "https://i.ytimg.com/vi/i9OZg_eIQs0/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/hBz75E3AEST1Dzv5vOTHAqoJfayd30WIWWQ3ZFLlWMHDsyZ_QD6ZVVUtLTKSizalT3APPtdpFGI=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=i9OZg_eIQs0"
+    "url": "https://www.youtube.com/watch?v=i9OZg_eIQs0",
+    "type": "video"
   },
   {
     "name": "鈴木沙透",
@@ -1087,7 +1195,8 @@
     "status": "archive",
     "thumbnail": "https://i.ytimg.com/vi/-R7YMoBlr5I/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/h4kuTtFCGhkDV4nmk6qjQt8auhkqLEqWwB9Il3NZR6op3ph-a0YElRfLcXkZVPp6xqvGmZHy3w=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=-R7YMoBlr5I"
+    "url": "https://www.youtube.com/watch?v=-R7YMoBlr5I",
+    "type": "stream"
   },
   {
     "name": "李じゅぴ汰",
@@ -1097,7 +1206,8 @@
     "status": "archive",
     "thumbnail": "https://i.ytimg.com/vi/_-7_V3X4QyY/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/QQqec9A1J7eLk9RrRYD9vvk51BBJzcE1leGkU9n4YkwHqht9gmGT1ktmSlKItQtbuMSGuklAFxM=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=_-7_V3X4QyY"
+    "url": "https://www.youtube.com/watch?v=_-7_V3X4QyY",
+    "type": "stream"
   },
   {
     "name": "雨海まる",
@@ -1107,7 +1217,8 @@
     "status": "archive",
     "thumbnail": "https://i.ytimg.com/vi/8ZvSxpiHh-k/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/OJJah1uxke5bLtSAu-d36t6FaLG6SgDD0gxxL_lpIJuTJ6Xa1NDYP3MiLsyZ-xAjDRms3kROzQ=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=8ZvSxpiHh-k"
+    "url": "https://www.youtube.com/watch?v=8ZvSxpiHh-k",
+    "type": "video"
   },
   {
     "name": "雛菊のん",
@@ -1117,7 +1228,8 @@
     "status": "archive",
     "thumbnail": "https://i.ytimg.com/vi/fvA14y9x8XY/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/-7v40HQCqllHpJD69LHIo2n5lUt-pZ-bLtfrKAXhZk9OF06nj4Lno3gwBvO8d1jBSl5dCCxAxQ=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=fvA14y9x8XY"
+    "url": "https://www.youtube.com/watch?v=fvA14y9x8XY",
+    "type": "video"
   },
   {
     "name": "真昼ねる",
@@ -1127,7 +1239,8 @@
     "status": "archive",
     "thumbnail": "https://i.ytimg.com/vi/sJQxJT4Ty7U/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/Cu6AMAZAEC_DTANKoaloA_4iLCuEUQ8BiAwyHGuOUG9GtoIw6s7mXCv1-49LV1IgODYZfGowzQ=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=sJQxJT4Ty7U"
+    "url": "https://www.youtube.com/watch?v=sJQxJT4Ty7U",
+    "type": "video"
   },
   {
     "name": "暁月クララ",
@@ -1137,7 +1250,8 @@
     "status": "archive",
     "thumbnail": "https://i.ytimg.com/vi/27CaY_l-lxQ/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/8tcStp-WzdZPtf6bPq1DtUnFSd2Eq5AppSd3_CEQ7hNNpnRND8InaWdPCz6T1wIWWkGJuFrbT94=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=27CaY_l-lxQ"
+    "url": "https://www.youtube.com/watch?v=27CaY_l-lxQ",
+    "type": "stream"
   },
   {
     "name": "香鳴ハノン",
@@ -1147,7 +1261,8 @@
     "status": "archive",
     "thumbnail": "https://i.ytimg.com/vi/vwKRN2u0B5Y/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/qvbeb9E-gYc822fxxzi6Ug5QyjhqZAWbUskHANcwDWP5W8iTsK3LcQJnjS4CVBuFJ6fONsM9F7M=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=vwKRN2u0B5Y"
+    "url": "https://www.youtube.com/watch?v=vwKRN2u0B5Y",
+    "type": "stream"
   },
   {
     "name": "愛上オハナ",
@@ -1157,7 +1272,8 @@
     "status": "archive",
     "thumbnail": "https://i.ytimg.com/vi/S7ohND6jVKU/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/neZ2Mw2PcuimtH172AaHAlm5eKk_O17aEJ8aMGhme708zPqxyZB6QhS89qzSt30uXnGLLbgdliw=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=S7ohND6jVKU"
+    "url": "https://www.youtube.com/watch?v=S7ohND6jVKU",
+    "type": "stream"
   },
   {
     "name": "瀬奈りるか",
@@ -1167,7 +1283,8 @@
     "status": "archive",
     "thumbnail": "https://i.ytimg.com/vi/qFdPFLmhHiI/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/BaxFKUrCc4gGKc1wwAHt4ebjk8C69NdTl3fMz9LoR5SUm_Tpvv2yixsbJhp8qsld6S0tdgup=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=qFdPFLmhHiI"
+    "url": "https://www.youtube.com/watch?v=qFdPFLmhHiI",
+    "type": "stream"
   },
   {
     "name": "天辻ゆらぐ",
@@ -1177,7 +1294,8 @@
     "status": "archive",
     "thumbnail": "https://i.ytimg.com/vi/6xXiTuEBdxE/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/4AFFu60kFJqix-OhtDW3EJdQ0jQa1LrK56tGpvqvbGodMQFpkH-_qtvL_66dPGD3kl4LW9N4=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=6xXiTuEBdxE"
+    "url": "https://www.youtube.com/watch?v=6xXiTuEBdxE",
+    "type": "stream"
   },
   {
     "name": "七音うら",
@@ -1187,7 +1305,8 @@
     "status": "archive",
     "thumbnail": "https://i.ytimg.com/vi/a6-ncJ7H3CU/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/T655ATpSd2gkjZBrokvlkaUH0f5-fCpQdcJpwxmmNdy6fxCYffAlq2sMhPOtFk_CvVyOkEPY8Q=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=a6-ncJ7H3CU"
+    "url": "https://www.youtube.com/watch?v=a6-ncJ7H3CU",
+    "type": "stream"
   },
   {
     "name": "天辻ゆらぐ",
@@ -1197,7 +1316,8 @@
     "status": "archive",
     "thumbnail": "https://i.ytimg.com/vi/x31TZEaSitM/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/4AFFu60kFJqix-OhtDW3EJdQ0jQa1LrK56tGpvqvbGodMQFpkH-_qtvL_66dPGD3kl4LW9N4=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=x31TZEaSitM"
+    "url": "https://www.youtube.com/watch?v=x31TZEaSitM",
+    "type": "stream"
   },
   {
     "name": "堂下さとり",
@@ -1207,7 +1327,8 @@
     "status": "archive",
     "thumbnail": "https://i.ytimg.com/vi/-iRQVw_Dplk/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/eW_Hug0M6zFk9QSbAmOUWLMSfzBlCHmes-8yAksvfUNzyLgY6TSsE_eW8ncfE4bHYZXKoTWxmQ=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=-iRQVw_Dplk"
+    "url": "https://www.youtube.com/watch?v=-iRQVw_Dplk",
+    "type": "stream"
   },
   {
     "name": "花晴りら",
@@ -1217,7 +1338,8 @@
     "status": "archive",
     "thumbnail": "https://i.ytimg.com/vi/_aL1rSKOc6g/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/CH5JMWVQZ_RtloaXoj6W-yXjo9x8UxXSBG_vMyDnfk7M2QTOApVE1zOesu_aDrSAqvDbGrUyxs0=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=_aL1rSKOc6g"
+    "url": "https://www.youtube.com/watch?v=_aL1rSKOc6g",
+    "type": "stream"
   },
   {
     "name": "藤森ちとせ",
@@ -1227,7 +1349,8 @@
     "status": "archive",
     "thumbnail": "https://i.ytimg.com/vi/DYekOKflHpk/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/traR_yWe-AOGyM2wjo8h2FJO9JWBcbjfrL13X-umeD6BtNPopSZ2Q3YmdJq_5K9gWgHf_j64iQ=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=DYekOKflHpk"
+    "url": "https://www.youtube.com/watch?v=DYekOKflHpk",
+    "type": "video"
   },
   {
     "name": "桜庭羽奈",
@@ -1237,7 +1360,8 @@
     "status": "archive",
     "thumbnail": "https://i.ytimg.com/vi/BSLK7XW2wLI/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/04zALH6pYL7mkWILHajvBzfzg4hrwRCLBONme3K1PjuEeYJIRC6RYxPmJzVZRuN42skHEDNRGmo=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=BSLK7XW2wLI"
+    "url": "https://www.youtube.com/watch?v=BSLK7XW2wLI",
+    "type": "stream"
   },
   {
     "name": "天麗らん",
@@ -1247,7 +1371,8 @@
     "status": "archive",
     "thumbnail": "https://i.ytimg.com/vi/Z83uHHzhh7o/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/MS1hSixShoy77GfMxg8KL38vfYzD2NRZ5VnPyLyf5-Xg6WENZiAbydPV7YJLYECwRfp6rKNR8Q=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=Z83uHHzhh7o"
+    "url": "https://www.youtube.com/watch?v=Z83uHHzhh7o",
+    "type": "video"
   },
   {
     "name": "秋桜しゅお",
@@ -1257,7 +1382,8 @@
     "status": "archive",
     "thumbnail": "https://i.ytimg.com/vi/5RvSq5kOQYA/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/WBGP05KaXeA21IzCbCeM0QHa0v9maVvVUBDZ2DyfTT62F1wGaW3hLOQBy1gCfuQfEnDNgwbsrQ=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=5RvSq5kOQYA"
+    "url": "https://www.youtube.com/watch?v=5RvSq5kOQYA",
+    "type": "stream"
   },
   {
     "name": "シグマ・イングラム",
@@ -1267,7 +1393,8 @@
     "status": "archive",
     "thumbnail": "https://i.ytimg.com/vi/XIYyQpxwKIU/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/qbn_sYVG1ZUjL2xgGkLtNaYdyeWSj8hMooE0VqW4jThdOnm2G6ZKRhpBsxV8pGUXkqi6zUq84w=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=XIYyQpxwKIU"
+    "url": "https://www.youtube.com/watch?v=XIYyQpxwKIU",
+    "type": "video"
   },
   {
     "name": "堂下さとり",
@@ -1277,7 +1404,8 @@
     "status": "archive",
     "thumbnail": "https://i.ytimg.com/vi/65QBAl7Nm3U/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/eW_Hug0M6zFk9QSbAmOUWLMSfzBlCHmes-8yAksvfUNzyLgY6TSsE_eW8ncfE4bHYZXKoTWxmQ=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=65QBAl7Nm3U"
+    "url": "https://www.youtube.com/watch?v=65QBAl7Nm3U",
+    "type": "stream"
   },
   {
     "name": "香鳴ハノン",
@@ -1287,7 +1415,8 @@
     "status": "archive",
     "thumbnail": "https://i.ytimg.com/vi/IwROnADjKsk/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/qvbeb9E-gYc822fxxzi6Ug5QyjhqZAWbUskHANcwDWP5W8iTsK3LcQJnjS4CVBuFJ6fONsM9F7M=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=IwROnADjKsk"
+    "url": "https://www.youtube.com/watch?v=IwROnADjKsk",
+    "type": "stream"
   },
   {
     "name": "虎島めら。",
@@ -1297,7 +1426,8 @@
     "status": "archive",
     "thumbnail": "https://i.ytimg.com/vi/WBx_zz4SFdo/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/GTQLrgAFGtGBsfbiwqAP-vnRRHXDfXAKiZIGJAO-p4hzLfenIewQmuXdsBmgPfnz_hf0WsI62Q=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=WBx_zz4SFdo"
+    "url": "https://www.youtube.com/watch?v=WBx_zz4SFdo",
+    "type": "video"
   },
   {
     "name": "藤森ちとせ",
@@ -1307,7 +1437,8 @@
     "status": "archive",
     "thumbnail": "https://i.ytimg.com/vi/jG_n2SzWziU/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/traR_yWe-AOGyM2wjo8h2FJO9JWBcbjfrL13X-umeD6BtNPopSZ2Q3YmdJq_5K9gWgHf_j64iQ=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=jG_n2SzWziU"
+    "url": "https://www.youtube.com/watch?v=jG_n2SzWziU",
+    "type": "stream"
   },
   {
     "name": "ニコ・ダークウェル",
@@ -1317,7 +1448,8 @@
     "status": "archive",
     "thumbnail": "https://i.ytimg.com/vi/YmBz688mUEg/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/aVOgQtF_-urmi9JtRAIdoMOuSIfXzi5aOvwhiekLF2aQRJoVFfNCg3_x30I97YJ8Lwv9GNmB9Q=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=YmBz688mUEg"
+    "url": "https://www.youtube.com/watch?v=YmBz688mUEg",
+    "type": "stream"
   },
   {
     "name": "ニコ・ダークウェル",
@@ -1327,7 +1459,8 @@
     "status": "archive",
     "thumbnail": "https://i.ytimg.com/vi/fF8UY7Y1oog/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/aVOgQtF_-urmi9JtRAIdoMOuSIfXzi5aOvwhiekLF2aQRJoVFfNCg3_x30I97YJ8Lwv9GNmB9Q=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=fF8UY7Y1oog"
+    "url": "https://www.youtube.com/watch?v=fF8UY7Y1oog",
+    "type": "stream"
   },
   {
     "name": "夕凪万夜",
@@ -1337,7 +1470,8 @@
     "status": "archive",
     "thumbnail": "https://i.ytimg.com/vi/s-FQIlcaG78/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/1mhcUNOhZXxkFYV8imS3FPi93B6Gx2oUAl5GKWMya4zSwD7omsT4rdUn01TDVm3TniI_2TjGmQ=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=s-FQIlcaG78"
+    "url": "https://www.youtube.com/watch?v=s-FQIlcaG78",
+    "type": "video"
   },
   {
     "name": "陰山アゲハ",
@@ -1347,7 +1481,8 @@
     "status": "archive",
     "thumbnail": "https://i.ytimg.com/vi/NSj9CUe8XxA/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/XWKUawU_WoX_xINkx3TMSF3fj0RbdiwNezFiEAGcmHfQYvwkjMUM1mvyOmgsbK8LxHoo6aEKJA=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=NSj9CUe8XxA"
+    "url": "https://www.youtube.com/watch?v=NSj9CUe8XxA",
+    "type": "video"
   },
   {
     "name": "香鳴ハノン",
@@ -1357,7 +1492,8 @@
     "status": "archive",
     "thumbnail": "https://i.ytimg.com/vi/hJr_Fvn1l18/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/qvbeb9E-gYc822fxxzi6Ug5QyjhqZAWbUskHANcwDWP5W8iTsK3LcQJnjS4CVBuFJ6fONsM9F7M=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=hJr_Fvn1l18"
+    "url": "https://www.youtube.com/watch?v=hJr_Fvn1l18",
+    "type": "stream"
   },
   {
     "name": "銘兎目あう",
@@ -1367,7 +1503,8 @@
     "status": "archive",
     "thumbnail": "https://i.ytimg.com/vi/L-Rsdw8slMg/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/VB97J8AMHex_rkfd6hDhfiGhhVvrL-NNkseP2mMYSWh75sxA_oXctmxK5tV4FYgkM17RUAx6GQ=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=L-Rsdw8slMg"
+    "url": "https://www.youtube.com/watch?v=L-Rsdw8slMg",
+    "type": "video"
   },
   {
     "name": "夕凪万夜",
@@ -1377,7 +1514,8 @@
     "status": "archive",
     "thumbnail": "https://i.ytimg.com/vi/NaEufYQ-rzs/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/1mhcUNOhZXxkFYV8imS3FPi93B6Gx2oUAl5GKWMya4zSwD7omsT4rdUn01TDVm3TniI_2TjGmQ=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=NaEufYQ-rzs"
+    "url": "https://www.youtube.com/watch?v=NaEufYQ-rzs",
+    "type": "video"
   },
   {
     "name": "天堂ライラ",
@@ -1387,7 +1525,8 @@
     "status": "archive",
     "thumbnail": "https://i.ytimg.com/vi/hvmtLWydC5w/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/JA8QqThoUnCNAgJASH3p_wPyWJBf2ILiUfpIvArr6592NkkrFntPQ4EgPsahnLpPCMP4mk93ig=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=hvmtLWydC5w"
+    "url": "https://www.youtube.com/watch?v=hvmtLWydC5w",
+    "type": "stream"
   },
   {
     "name": "桜堂ねる",
@@ -1397,7 +1536,8 @@
     "status": "archive",
     "thumbnail": "https://i.ytimg.com/vi/oHDyP8_I8yc/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/hBz75E3AEST1Dzv5vOTHAqoJfayd30WIWWQ3ZFLlWMHDsyZ_QD6ZVVUtLTKSizalT3APPtdpFGI=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=oHDyP8_I8yc"
+    "url": "https://www.youtube.com/watch?v=oHDyP8_I8yc",
+    "type": "video"
   },
   {
     "name": "天辻ゆらぐ",
@@ -1407,7 +1547,8 @@
     "status": "archive",
     "thumbnail": "https://i.ytimg.com/vi/hrYCeliRTWg/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/4AFFu60kFJqix-OhtDW3EJdQ0jQa1LrK56tGpvqvbGodMQFpkH-_qtvL_66dPGD3kl4LW9N4=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=hrYCeliRTWg"
+    "url": "https://www.youtube.com/watch?v=hrYCeliRTWg",
+    "type": "stream"
   },
   {
     "name": "鬼多見アユム",
@@ -1417,7 +1558,8 @@
     "status": "archive",
     "thumbnail": "https://i.ytimg.com/vi/JU9Ynv0xXcA/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/5l_IDFvbCkoc_xXy5i5YH24NcAgRR9bYZM9hu30Hm8may2x-7GiLIxkQ3DHQ4vI9uKwRUcbR6Q=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=JU9Ynv0xXcA"
+    "url": "https://www.youtube.com/watch?v=JU9Ynv0xXcA",
+    "type": "video"
   },
   {
     "name": "冬星れんこん",
@@ -1427,7 +1569,8 @@
     "status": "archive",
     "thumbnail": "https://i.ytimg.com/vi/2ePpF7AsECQ/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/nMtec5z3KY5RUGCSbQENm9culC2VpB7Ate_dUueAINpAJdFK4wwe7Q6eH88QiMXqjImAleLI=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=2ePpF7AsECQ"
+    "url": "https://www.youtube.com/watch?v=2ePpF7AsECQ",
+    "type": "stream"
   },
   {
     "name": "牡丹雪",
@@ -1437,7 +1580,8 @@
     "status": "archive",
     "thumbnail": "https://i.ytimg.com/vi/s_uQi6PuuZ4/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/a-UPogpdl_uCUW2GY-4J281LxjaqCIjgZidqBCq5XkdCvoDum57Qszkm9ZhLFZarfy5ocQOrOQ=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=s_uQi6PuuZ4"
+    "url": "https://www.youtube.com/watch?v=s_uQi6PuuZ4",
+    "type": "stream"
   },
   {
     "name": "桜庭羽奈",
@@ -1447,7 +1591,8 @@
     "status": "archive",
     "thumbnail": "https://i.ytimg.com/vi/EoImxYDy9rQ/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/04zALH6pYL7mkWILHajvBzfzg4hrwRCLBONme3K1PjuEeYJIRC6RYxPmJzVZRuN42skHEDNRGmo=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=EoImxYDy9rQ"
+    "url": "https://www.youtube.com/watch?v=EoImxYDy9rQ",
+    "type": "stream"
   },
   {
     "name": "李じゅぴ汰",
@@ -1457,7 +1602,8 @@
     "status": "archive",
     "thumbnail": "https://i.ytimg.com/vi/tbMt8qRpBgk/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/QQqec9A1J7eLk9RrRYD9vvk51BBJzcE1leGkU9n4YkwHqht9gmGT1ktmSlKItQtbuMSGuklAFxM=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=tbMt8qRpBgk"
+    "url": "https://www.youtube.com/watch?v=tbMt8qRpBgk",
+    "type": "video"
   },
   {
     "name": "火狐むい",
@@ -1467,7 +1613,8 @@
     "status": "archive",
     "thumbnail": "https://i.ytimg.com/vi/aY9Ebwr0B78/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/Ft5mSjImEah_xri4b9k0p2Olyhy6T_vj1ZxyglCcVbk2FqN-nrWqSMm5YoM_hEjeRQ9aaMjelV0=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=aY9Ebwr0B78"
+    "url": "https://www.youtube.com/watch?v=aY9Ebwr0B78",
+    "type": "stream"
   },
   {
     "name": "虎島めら。",
@@ -1477,7 +1624,8 @@
     "status": "archive",
     "thumbnail": "https://i.ytimg.com/vi/XueY1zB2cuw/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/GTQLrgAFGtGBsfbiwqAP-vnRRHXDfXAKiZIGJAO-p4hzLfenIewQmuXdsBmgPfnz_hf0WsI62Q=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=XueY1zB2cuw"
+    "url": "https://www.youtube.com/watch?v=XueY1zB2cuw",
+    "type": "video"
   },
   {
     "name": "水透ユウ",
@@ -1487,7 +1635,8 @@
     "status": "archive",
     "thumbnail": "https://i.ytimg.com/vi/cd04S_NgkK4/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/eVD8Ygm7KVyh3dvWnyebfYlbYpD13ZYQ-Bos8WdR5LDE61A3svHVHCLEY-rM3IQgw9O4uvdd=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=cd04S_NgkK4"
+    "url": "https://www.youtube.com/watch?v=cd04S_NgkK4",
+    "type": "stream"
   },
   {
     "name": "しーはむ",
@@ -1497,7 +1646,8 @@
     "status": "archive",
     "thumbnail": "https://i.ytimg.com/vi/Ga-mW08VqAo/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/y0zP0Uz7HSLx5dv3xo488Suxk8rJQQUC1wXaymjUBIQIwa25WlVu_VmrsT1xAyVD-jgeL7hs=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=Ga-mW08VqAo"
+    "url": "https://www.youtube.com/watch?v=Ga-mW08VqAo",
+    "type": "video"
   },
   {
     "name": "李じゅぴ汰",
@@ -1507,7 +1657,8 @@
     "status": "archive",
     "thumbnail": "https://i.ytimg.com/vi/j_-_fCqz874/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/QQqec9A1J7eLk9RrRYD9vvk51BBJzcE1leGkU9n4YkwHqht9gmGT1ktmSlKItQtbuMSGuklAFxM=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=j_-_fCqz874"
+    "url": "https://www.youtube.com/watch?v=j_-_fCqz874",
+    "type": "stream"
   },
   {
     "name": "瀬奈りるか",
@@ -1517,7 +1668,8 @@
     "status": "archive",
     "thumbnail": "https://i.ytimg.com/vi/savBthKEK40/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/BaxFKUrCc4gGKc1wwAHt4ebjk8C69NdTl3fMz9LoR5SUm_Tpvv2yixsbJhp8qsld6S0tdgup=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=savBthKEK40"
+    "url": "https://www.youtube.com/watch?v=savBthKEK40",
+    "type": "stream"
   },
   {
     "name": "八重森ふゆの",
@@ -1527,7 +1679,8 @@
     "status": "archive",
     "thumbnail": "https://i.ytimg.com/vi/H352dh79Dko/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/X5HHgZ4fOiErYCteDVWI8Ph27gVw15e9fuVjkrJWfeqFjfOfOLo3-ZVWOfc57QBgeFwT6eJ_hXc=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=H352dh79Dko"
+    "url": "https://www.youtube.com/watch?v=H352dh79Dko",
+    "type": "video"
   },
   {
     "name": "牡丹雪",
@@ -1537,7 +1690,8 @@
     "status": "archive",
     "thumbnail": "https://i.ytimg.com/vi/xrAB3x6zMto/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/a-UPogpdl_uCUW2GY-4J281LxjaqCIjgZidqBCq5XkdCvoDum57Qszkm9ZhLFZarfy5ocQOrOQ=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=xrAB3x6zMto"
+    "url": "https://www.youtube.com/watch?v=xrAB3x6zMto",
+    "type": "stream"
   },
   {
     "name": "灯野ぺけ。",
@@ -1547,7 +1701,8 @@
     "status": "archive",
     "thumbnail": "https://i.ytimg.com/vi/uFSxnnzzJfs/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/sYbvo_2nSCW162VEArIwu7v1B3bl159gmEnGgGei8I8drc4l7huPP7q6aWZ4AfXi5wTMACmGow=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=uFSxnnzzJfs"
+    "url": "https://www.youtube.com/watch?v=uFSxnnzzJfs",
+    "type": "stream"
   },
   {
     "name": "新巻るろな",
@@ -1557,7 +1712,8 @@
     "status": "archive",
     "thumbnail": "https://i.ytimg.com/vi/F2VTo-L35_c/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/-4sLuWCih-DlfhpwpDQEuB6eupCB6kTImkIPmKnh54vu5I0F49RkveNQGiqy0p8t0GDU6eiegGE=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=F2VTo-L35_c"
+    "url": "https://www.youtube.com/watch?v=F2VTo-L35_c",
+    "type": "stream"
   },
   {
     "name": "藤森ちとせ",
@@ -1567,7 +1723,8 @@
     "status": "live",
     "thumbnail": "https://i.ytimg.com/vi/eXMjhgob8-Q/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/traR_yWe-AOGyM2wjo8h2FJO9JWBcbjfrL13X-umeD6BtNPopSZ2Q3YmdJq_5K9gWgHf_j64iQ=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=eXMjhgob8-Q"
+    "url": "https://www.youtube.com/watch?v=eXMjhgob8-Q",
+    "type": "stream"
   },
   {
     "name": "天透あわ",
@@ -1577,7 +1734,8 @@
     "status": "archive",
     "thumbnail": "https://i.ytimg.com/vi/1B6KQIngtIk/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/Me8I_Op8OlIy8Vuj387_Hdi6gnrZ-qiY1yDDt1Q5yKMKA51ISagT76HE01gw8xbLcef0vpsPgoc=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=1B6KQIngtIk"
+    "url": "https://www.youtube.com/watch?v=1B6KQIngtIk",
+    "type": "stream"
   },
   {
     "name": "桜庭羽奈",
@@ -1587,7 +1745,8 @@
     "status": "archive",
     "thumbnail": "https://i.ytimg.com/vi/TZvPmTVSHSM/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/04zALH6pYL7mkWILHajvBzfzg4hrwRCLBONme3K1PjuEeYJIRC6RYxPmJzVZRuN42skHEDNRGmo=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=TZvPmTVSHSM"
+    "url": "https://www.youtube.com/watch?v=TZvPmTVSHSM",
+    "type": "stream"
   },
   {
     "name": "秋桜しゅお",
@@ -1597,7 +1756,8 @@
     "status": "archive",
     "thumbnail": "https://i.ytimg.com/vi/qCt9SNNrWu8/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/WBGP05KaXeA21IzCbCeM0QHa0v9maVvVUBDZ2DyfTT62F1wGaW3hLOQBy1gCfuQfEnDNgwbsrQ=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=qCt9SNNrWu8"
+    "url": "https://www.youtube.com/watch?v=qCt9SNNrWu8",
+    "type": "stream"
   },
   {
     "name": "無月いお",
@@ -1607,7 +1767,8 @@
     "status": "archive",
     "thumbnail": "https://i.ytimg.com/vi/JdNYz9Cbd98/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/IIxHliRENu1SI2xbfa4TXwE0X5otBL4RH9OxJhMdxTqM3y4DzXDoiHQbvhelH9tRY9ZCkfQBzKE=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=JdNYz9Cbd98"
+    "url": "https://www.youtube.com/watch?v=JdNYz9Cbd98",
+    "type": "video"
   },
   {
     "name": "花晴りら",
@@ -1617,7 +1778,8 @@
     "status": "live",
     "thumbnail": "https://i.ytimg.com/vi/PfRLj1cPjMY/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/CH5JMWVQZ_RtloaXoj6W-yXjo9x8UxXSBG_vMyDnfk7M2QTOApVE1zOesu_aDrSAqvDbGrUyxs0=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=PfRLj1cPjMY"
+    "url": "https://www.youtube.com/watch?v=PfRLj1cPjMY",
+    "type": "stream"
   },
   {
     "name": "陰山アゲハ",
@@ -1627,7 +1789,8 @@
     "status": "archive",
     "thumbnail": "https://i.ytimg.com/vi/FxBOPRi-sjw/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/XWKUawU_WoX_xINkx3TMSF3fj0RbdiwNezFiEAGcmHfQYvwkjMUM1mvyOmgsbK8LxHoo6aEKJA=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=FxBOPRi-sjw"
+    "url": "https://www.youtube.com/watch?v=FxBOPRi-sjw",
+    "type": "stream"
   },
   {
     "name": "水凪るぅ",
@@ -1637,7 +1800,8 @@
     "status": "archive",
     "thumbnail": "https://i.ytimg.com/vi/MRVfB_N3ULI/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/UWKN-YZPLehhOew0000E-A8P4FZ5TB7C48g2KZGY4UDiheuj7UAI-IiS9m8v4nzuifg6JwdGKA=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=MRVfB_N3ULI"
+    "url": "https://www.youtube.com/watch?v=MRVfB_N3ULI",
+    "type": "video"
   },
   {
     "name": "犬丸なでこ",
@@ -1647,7 +1811,8 @@
     "status": "archive",
     "thumbnail": "https://i.ytimg.com/vi/WIbOLouwrjg/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/HZPUrbSwGcllAbUtx6xggJ6lKfMfnAWDxWOCc01tpthiDipSqQP48TK5Jqz4GRzUdwKMUsxlsg=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=WIbOLouwrjg"
+    "url": "https://www.youtube.com/watch?v=WIbOLouwrjg",
+    "type": "stream"
   },
   {
     "name": "銀河キララ",
@@ -1657,7 +1822,8 @@
     "status": "archive",
     "thumbnail": "https://i.ytimg.com/vi/rH6MkyBzpfY/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/XCt0ypsqr8q8DMneWxWfHg2pn2x505K2P-ERTzMT6NhUT0CjcVtLlz0KrWgIz2zz449w1fdWRg=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=rH6MkyBzpfY"
+    "url": "https://www.youtube.com/watch?v=rH6MkyBzpfY",
+    "type": "stream"
   },
   {
     "name": "さくさくさく",
@@ -1667,7 +1833,8 @@
     "status": "archive",
     "thumbnail": "https://i.ytimg.com/vi/QwyUBfmy6tw/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/CinM2xYSxfIbebsolFNjzaPnWjFB8BYcRU5jYnVkw1gdF8R-q-pQlFhnR5UkFsBxZHnRjM6r=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=QwyUBfmy6tw"
+    "url": "https://www.youtube.com/watch?v=QwyUBfmy6tw",
+    "type": "video"
   },
   {
     "name": "八重森ふゆの",
@@ -1677,7 +1844,8 @@
     "status": "live",
     "thumbnail": "https://i.ytimg.com/vi/DS2oQBRtLmM/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/X5HHgZ4fOiErYCteDVWI8Ph27gVw15e9fuVjkrJWfeqFjfOfOLo3-ZVWOfc57QBgeFwT6eJ_hXc=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=DS2oQBRtLmM"
+    "url": "https://www.youtube.com/watch?v=DS2oQBRtLmM",
+    "type": "stream"
   },
   {
     "name": "雛菊のん",
@@ -1687,7 +1855,8 @@
     "status": "archive",
     "thumbnail": "https://i.ytimg.com/vi/yg0JfnBk07E/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/-7v40HQCqllHpJD69LHIo2n5lUt-pZ-bLtfrKAXhZk9OF06nj4Lno3gwBvO8d1jBSl5dCCxAxQ=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=yg0JfnBk07E"
+    "url": "https://www.youtube.com/watch?v=yg0JfnBk07E",
+    "type": "video"
   },
   {
     "name": "犬丸なでこ",
@@ -1697,7 +1866,8 @@
     "status": "live",
     "thumbnail": "https://i.ytimg.com/vi/ATyN2Q22mzg/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/HZPUrbSwGcllAbUtx6xggJ6lKfMfnAWDxWOCc01tpthiDipSqQP48TK5Jqz4GRzUdwKMUsxlsg=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=ATyN2Q22mzg"
+    "url": "https://www.youtube.com/watch?v=ATyN2Q22mzg",
+    "type": "stream"
   },
   {
     "name": "新巻るろな",
@@ -1707,7 +1877,8 @@
     "status": "live",
     "thumbnail": "https://i.ytimg.com/vi/_akiE4JgIwY/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/-4sLuWCih-DlfhpwpDQEuB6eupCB6kTImkIPmKnh54vu5I0F49RkveNQGiqy0p8t0GDU6eiegGE=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=_akiE4JgIwY"
+    "url": "https://www.youtube.com/watch?v=_akiE4JgIwY",
+    "type": "stream"
   },
   {
     "name": "ニコ・ダークウェル",
@@ -1717,7 +1888,8 @@
     "status": "archive",
     "thumbnail": "https://i.ytimg.com/vi/aamZJW97FK8/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/aVOgQtF_-urmi9JtRAIdoMOuSIfXzi5aOvwhiekLF2aQRJoVFfNCg3_x30I97YJ8Lwv9GNmB9Q=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=aamZJW97FK8"
+    "url": "https://www.youtube.com/watch?v=aamZJW97FK8",
+    "type": "video"
   },
   {
     "name": "花晴りら",
@@ -1727,7 +1899,8 @@
     "status": "upcoming",
     "thumbnail": "https://i.ytimg.com/vi/THdQoKW5hQU/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/CH5JMWVQZ_RtloaXoj6W-yXjo9x8UxXSBG_vMyDnfk7M2QTOApVE1zOesu_aDrSAqvDbGrUyxs0=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=THdQoKW5hQU"
+    "url": "https://www.youtube.com/watch?v=THdQoKW5hQU",
+    "type": "stream"
   },
   {
     "name": "七海ロナ",
@@ -1737,7 +1910,8 @@
     "status": "upcoming",
     "thumbnail": "https://i.ytimg.com/vi/zEli58b72sk/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/86cM_4q1A56pIYgdKxh776hM0nropjiZIlmXbfroWHXQ-MjdGGsjLcL5hMDOFL-T2EJHmybT=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=zEli58b72sk"
+    "url": "https://www.youtube.com/watch?v=zEli58b72sk",
+    "type": "stream"
   },
   {
     "name": "銘兎目あう",
@@ -1747,7 +1921,8 @@
     "status": "upcoming",
     "thumbnail": "https://i.ytimg.com/vi/xRZNad1R4SQ/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/VB97J8AMHex_rkfd6hDhfiGhhVvrL-NNkseP2mMYSWh75sxA_oXctmxK5tV4FYgkM17RUAx6GQ=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=xRZNad1R4SQ"
+    "url": "https://www.youtube.com/watch?v=xRZNad1R4SQ",
+    "type": "stream"
   },
   {
     "name": "藤宮コトハ",
@@ -1757,7 +1932,8 @@
     "status": "upcoming",
     "thumbnail": "https://i.ytimg.com/vi/mpM4JpZlZS4/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/rthBXvqjNFcVwEp-AWpiZDXnNjBodSXlsDTa-sjW6uR6Ssv3wuOw2dMXDZLlYaf_c4YiKfItHXU=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=mpM4JpZlZS4"
+    "url": "https://www.youtube.com/watch?v=mpM4JpZlZS4",
+    "type": "stream"
   },
   {
     "name": "七海ロナ",
@@ -1767,6 +1943,7 @@
     "status": "upcoming",
     "thumbnail": "https://i.ytimg.com/vi/sHg-UeNC-GM/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/86cM_4q1A56pIYgdKxh776hM0nropjiZIlmXbfroWHXQ-MjdGGsjLcL5hMDOFL-T2EJHmybT=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=sHg-UeNC-GM"
+    "url": "https://www.youtube.com/watch?v=sHg-UeNC-GM",
+    "type": "stream"
   }
 ]

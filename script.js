@@ -67,4 +67,5 @@ function initializeCarousel() {
     //   clickable: true
     // }
   });
+  window._swiperInstance = swiper;
 }

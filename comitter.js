@@ -9,6 +9,7 @@ Promise.all([
   const tiktok = tiktokData.map(item => ({
     ...item,
     platform: 'tiktok',
+    type: 'stream',
     url: `https://www.tiktok.com/@${item.tiktokid}/live`,
     thumbnail: item.schoolid
       ? `assets/thumbnail/${item.schoolid}.png`
@@ -21,6 +22,7 @@ Promise.all([
   const twitch = twitchData.map(item => ({
     ...item,
     platform: 'twitch',
+    type: 'stream',
     url: `https://www.twitch.tv/${item.twitchid}`,
     thumbnail: item.thumbnail || 'assets/thumbnail/twitch-thumbnail-template.svg',
     faceIcon: item.channelIcon || null
@@ -118,6 +120,10 @@ Promise.all([
         const div = document.createElement("div");
         div.classList.add("live-wrapper");
 
+        // コンテンツタイプを付与（type未定義の既存データは stream として扱う）
+        const contentType = item.type === 'video' ? 'video' : 'stream';
+        div.dataset.contentType = contentType;
+
         // YouTubeアイテムにはビデオIDを付与してAPI確認対象にする
         if (item.platform === 'youtube') {
           try {
@@ -160,6 +166,48 @@ Promise.all([
 
   initializeCarousel();
   checkYouTubeLiveStatus();
+
+  // ————— コンテンツタイプフィルター —————
+  const toggle = document.getElementById('show-videos-toggle');
+  const STORAGE_KEY = 'showVideos';
+
+  // トグルが非表示（iPad・スマホ）の場合は常に全動画表示
+  const toggleLabel = toggle ? toggle.closest('.content-type-toggle') : null;
+  const toggleVisible = toggleLabel && getComputedStyle(toggleLabel).display !== 'none';
+  // localStorage から初期状態を読み込む（未設定時は false = 配信のみ）
+  let showVideos = !toggleVisible || localStorage.getItem(STORAGE_KEY) === 'true';
+  if (toggle) toggle.checked = showVideos;
+  applyContentTypeFilter(showVideos);
+
+  if (toggle) {
+    toggle.addEventListener('change', () => {
+      showVideos = toggle.checked;
+      localStorage.setItem(STORAGE_KEY, String(showVideos));
+      applyContentTypeFilter(showVideos);
+    });
+  }
+
+  function applyContentTypeFilter(show) {
+    // 動画カードの表示/非表示
+    document.querySelectorAll('[data-content-type="video"]').forEach(el => {
+      el.style.display = show ? '' : 'none';
+    });
+
+    // 全アイテムが非表示の時間帯は time-heading も非表示にする
+    document.querySelectorAll('.video-list').forEach(list => {
+      const visible = [...list.querySelectorAll('.live-wrapper')].some(
+        el => el.style.display !== 'none'
+      );
+      const heading = list.previousElementSibling;
+      if (heading && heading.classList.contains('time-heading')) {
+        heading.style.display = visible ? '' : 'none';
+      }
+      list.style.display = visible ? '' : 'none';
+    });
+
+    // Swiper にレイアウト再計算を通知
+    if (window._swiperInstance) window._swiperInstance.update();
+  }
 
   // 現在のJST時刻に対応する time-heading へスクロール
   function scrollToCurrentTime() {

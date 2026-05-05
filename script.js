@@ -69,3 +69,52 @@ function initializeCarousel() {
   });
   window._swiperInstance = swiper;
 }
+
+// ———————アップデート情報バナー制御———————— 
+async function loadUpdateInfo() {
+  try {
+    const res = await fetch('data/update_info.json');
+    if (!res.ok) return;
+    const data = await res.json();
+
+    // message_all が書かれていればデバイス問わず表示（単体は無視）
+    const all = (data.message_all || '').trim();
+    const mobile = (data.message_mobile || '').trim();
+    const pc = (data.message_pc || '').trim();
+
+    let message = '';
+    if (all) {
+      message = all;
+    } else {
+      const isMobile = /Android|iPhone|iPad|iPod|Mobile/i.test(navigator.userAgent);
+      message = isMobile ? mobile : pc;
+    }
+
+    if (!message) return;
+
+    const banner = document.getElementById('update-banner');
+    const messageEl = document.getElementById('update-message');
+
+    if (banner && messageEl) {
+      messageEl.textContent = message;
+      banner.style.display = 'flex';
+    }
+  } catch {
+    // JSONが読み込めない場合は何もしない
+  }
+}
+
+// バナー閉じるボタンの処理
+function initUpdateBannerClose() {
+  const closeBtn = document.getElementById('update-close-btn');
+  const banner = document.getElementById('update-banner');
+  
+  if (closeBtn && banner) {
+    closeBtn.addEventListener('click', () => {
+      banner.style.display = 'none';
+    });
+  }
+}
+
+loadUpdateInfo();
+initUpdateBannerClose();

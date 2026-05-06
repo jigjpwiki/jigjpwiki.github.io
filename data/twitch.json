@@ -1,23 +1,5 @@
 [
   {
-    "name": "真昼ねる",
-    "twitchid": "mahiruneru",
-    "title": "プロコーチにも呆れられた連打力でプラチナにゆく👊‼️【真昼ねる￤ぷろのゔぁ】",
-    "date": "2026-05-03T01:05:31.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/90e97ba8-20ac-4d1d-861a-d27ed84b5d70-profile_image-300x300.png",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/0624db4bbc2e64f88f2a_mahiruneru_315832391025_1777737926//thumb/thumb0-320x180.jpg"
-  },
-  {
-    "name": "銘兎目あう",
-    "twitchid": "Metome_Au",
-    "title": "【EVOJapan2026】ミラー配信中！！決勝戦🚩",
-    "date": "2026-05-03T13:56:26.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/6eea4ef4-a33b-4c66-9378-ad3aa84b1187-profile_image-300x300.png",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/4efede56c39690a37934_metome_au_315896072947_1777784181//thumb/thumb0-320x180.jpg"
-  },
-  {
     "name": "月皇ちな",
     "twitchid": "chi7_v",
     "title": "やほーーーーーー #chi7live",
@@ -84,9 +66,36 @@
     "name": "銘兎目あう",
     "twitchid": "Metome_Au",
     "title": "【スト６】1510MR～Mケンランク🥊🥋最初復習レバレスCケン練習👊",
-    "date": "2026-05-05T20:34:14.000+09:00",
-    "status": "live",
+    "date": "2026-05-05T20:34:20.000+09:00",
+    "status": "archive",
     "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/6eea4ef4-a33b-4c66-9378-ad3aa84b1187-profile_image-300x300.png",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_Metome_Au-320x180.jpg"
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/49bdbdf76ff89d2b4128_metome_au_315907073907_1777980854//thumb/thumb0-320x180.jpg"
+  },
+  {
+    "name": "月皇ちな",
+    "twitchid": "chi7_v",
+    "title": "こんばんちな #chi7live",
+    "date": "2026-05-05T22:05:22.000+09:00",
+    "status": "archive",
+    "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/76f2958e-cab4-41b8-98c1-cc4d275b2ca5-profile_image-300x300.png",
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/473aebd9dabb8dc90f7f_chi7_v_315907641203_1777986317//thumb/thumb0-320x180.jpg"
+  },
+  {
+    "name": "火乃晴るい",
+    "twitchid": "hinoha_rui",
+    "title": "【 #VALORANT 】今日も少しだけやるよん👀",
+    "date": "2026-05-05T22:22:49.000+09:00",
+    "status": "archive",
+    "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/9e02effe-cf25-4ba0-9fe7-da457d4e8c87-profile_image-300x300.png",
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/17faae3ebfd5e707c9b3_hinoha_rui_315907740403_1777987364//thumb/thumb0-320x180.jpg"
+  },
+  {
+    "name": "しーはむ",
+    "twitchid": "siyham",
+    "title": "グウェン練習をあきらめない",
+    "date": "2026-05-06T09:56:33.000+09:00",
+    "status": "archive",
+    "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/e1c097ec-5528-472a-a299-4dc50a979373-profile_image-300x300.png",
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/1af015e6ff42cd3ca559_siyham_315909724659_1778028988//thumb/thumb0-320x180.jpg"
   }
 ]

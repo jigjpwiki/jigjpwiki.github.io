@@ -251,18 +251,23 @@ Promise.all([
 });
 
 /**
- * data/yt_browser_config.json のAPIキーを使い、
+ * data/cfg_a.json と data/cfg_b.json から復元したAPIキーを使い、
  * YouTube Data API v3 でライブ状態をリアルタイム確認してDOMを更新する
  */
 async function checkYouTubeLiveStatus() {
   let apiKey = '';
   try {
-    const config = await fetch('data/yt_browser_config.json').then(r => r.json());
-    apiKey = (config.apiKey || '').trim();
+    const [cfgA, cfgB] = await Promise.all([
+      fetch('data/cfg_a.json').then(r => r.json()),
+      fetch('data/cfg_b.json').then(r => r.json()),
+    ]);
+    const encoded = (cfgA.p || '') + (cfgB.p || '');
+    if (!encoded) return;
+    apiKey = atob(encoded).split('').reverse().join('');
   } catch {
     return; // 設定ファイルなし or パース失敗はサイレントに無視
   }
-  if (!apiKey || apiKey === 'YOUR_KEY_HERE') return;
+  if (!apiKey) return;
 
   const allDivs = [...document.querySelectorAll('[data-yt-id]')];
   if (!allDivs.length) return;

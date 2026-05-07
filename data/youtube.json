@@ -985,7 +985,7 @@
     "date": "2026-05-06T17:50:20.000+09:00",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/2X8cmqqbnZY/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/2X8cmqqbnZY/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/4AFFu60kFJqix-OhtDW3EJdQ0jQa1LrK56tGpvqvbGodMQFpkH-_qtvL_66dPGD3kl4LW9N4=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=2X8cmqqbnZY"
   },
@@ -1170,7 +1170,7 @@
     "youtubeid": "UCGndc74kfWb_A-8hZBG534Q",
     "title": "【7周年記念】　8年目もよろしく！！　【#パレプロ ／ #藤宮コトハ 】",
     "date": "2026-05-06T19:59:56.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/mpM4JpZlZS4/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/rthBXvqjNFcVwEp-AWpiZDXnNjBodSXlsDTa-sjW6uR6Ssv3wuOw2dMXDZLlYaf_c4YiKfItHXU=s240-c-k-c0x00ffffff-no-rj",
@@ -1260,7 +1260,7 @@
     "date": "2026-05-06T20:14:21.000+09:00",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/plDZXs9l9Zw/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/plDZXs9l9Zw/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/-4sLuWCih-DlfhpwpDQEuB6eupCB6kTImkIPmKnh54vu5I0F49RkveNQGiqy0p8t0GDU6eiegGE=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=plDZXs9l9Zw"
   },
@@ -1344,7 +1344,7 @@
   {
     "name": "牡丹雪",
     "youtubeid": "UCl-qrfygvCjyA_lMR5lJzig",
-    "title": "家庭的ギャル、同期に詫びでおつまみを作るの巻😇 #新人vtuberを発掘せよ #vtuber準備中 #3分クッキング",
+    "title": "【超簡単おつまみ3品】家庭的ギャル、同期に詫びでおつまみを作るの巻😇 #新人vtuber #vtuber準備中 #3分クッキング",
     "date": "2026-05-06T21:06:51.000+09:00",
     "status": "archive",
     "type": "video",
@@ -1577,9 +1577,9 @@
     "youtubeid": "UCIaZylf5L9MsCMOJX3BdTEg",
     "title": "#3【魔法少女ノ魔女裁判】悲しみに暮れる第4話【パレプロ／七海ロナ】",
     "date": "2026-05-07T01:31:02.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/YPxu5mODbEg/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/YPxu5mODbEg/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/86cM_4q1A56pIYgdKxh776hM0nropjiZIlmXbfroWHXQ-MjdGGsjLcL5hMDOFL-T2EJHmybT=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=YPxu5mODbEg"
   },
@@ -1637,6 +1637,17 @@
     "thumbnail": "https://i.ytimg.com/vi/3u4JmynGM30/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/FR4hUBx4CbKSNHsSFNmOirsxutWwh99UiqdUFXaZQ4UmcMzTmlq3Wmbo-anCzIRenl3bojZ8Pg=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=3u4JmynGM30"
+  },
+  {
+    "name": "無月いお",
+    "youtubeid": "UC2X_mAVGw8e3N9JQZZDVBfQ",
+    "title": "常温のコーヒーって出されたことある？ #パレデミア学園 #低音女子 #新人vtuber  #コーヒー  #vtuber準備中  #低音vtuber",
+    "date": "2026-05-07T08:00:35.000+09:00",
+    "status": "archive",
+    "type": "video",
+    "thumbnail": "https://i.ytimg.com/vi/TkYoydIRCPI/mqdefault.jpg",
+    "channelIcon": "https://yt3.ggpht.com/Z7PlAWhweuycNXNXoQ6etyDTkduySM-Kqy8kQW-AD19JuRdxT3HSdIxogPw3GPD5NHw_vZlf=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=TkYoydIRCPI"
   },
   {
     "name": "藤森ちとせ",

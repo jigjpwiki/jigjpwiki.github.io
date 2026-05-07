@@ -1172,7 +1172,7 @@
     "date": "2026-05-06T19:59:56.000+09:00",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/mpM4JpZlZS4/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/mpM4JpZlZS4/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/rthBXvqjNFcVwEp-AWpiZDXnNjBodSXlsDTa-sjW6uR6Ssv3wuOw2dMXDZLlYaf_c4YiKfItHXU=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=mpM4JpZlZS4"
   },
@@ -1227,7 +1227,7 @@
     "date": "2026-05-06T20:02:14.000+09:00",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/gGfk9g4Im50/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/gGfk9g4Im50/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/WBGP05KaXeA21IzCbCeM0QHa0v9maVvVUBDZ2DyfTT62F1wGaW3hLOQBy1gCfuQfEnDNgwbsrQ=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=gGfk9g4Im50"
   },
@@ -1425,7 +1425,7 @@
     "date": "2026-05-06T22:05:39.000+09:00",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/QE41qFPHQHs/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/QE41qFPHQHs/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/8tcStp-WzdZPtf6bPq1DtUnFSd2Eq5AppSd3_CEQ7hNNpnRND8InaWdPCz6T1wIWWkGJuFrbT94=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=QE41qFPHQHs"
   },
@@ -1488,10 +1488,10 @@
     "name": "七海ロナ",
     "youtubeid": "UCIaZylf5L9MsCMOJX3BdTEg",
     "title": "GW閉会式",
-    "date": "2026-05-06T23:15:00.000+09:00",
-    "status": "upcoming",
+    "date": "2026-05-06T23:01:41.000+09:00",
+    "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/sHg-UeNC-GM/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/sHg-UeNC-GM/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/86cM_4q1A56pIYgdKxh776hM0nropjiZIlmXbfroWHXQ-MjdGGsjLcL5hMDOFL-T2EJHmybT=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=sHg-UeNC-GM"
   },
@@ -1621,9 +1621,9 @@
     "youtubeid": "UCqcnlq8uJqnGml6hcIrMCZw",
     "title": "【毎日朝活/雑談】初見さん大歓迎🌷GW明け✊200人におはよう言いたい朝活🔆【花晴りら/パレデミア学園】#れりライブ #新人vtuber",
     "date": "2026-05-07T07:00:25.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/mvIgOwZdSmM/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/mvIgOwZdSmM/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/CH5JMWVQZ_RtloaXoj6W-yXjo9x8UxXSBG_vMyDnfk7M2QTOApVE1zOesu_aDrSAqvDbGrUyxs0=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=mvIgOwZdSmM"
   },
@@ -1648,6 +1648,28 @@
     "thumbnail": "https://i.ytimg.com/vi/TkYoydIRCPI/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/Z7PlAWhweuycNXNXoQ6etyDTkduySM-Kqy8kQW-AD19JuRdxT3HSdIxogPw3GPD5NHw_vZlf=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=TkYoydIRCPI"
+  },
+  {
+    "name": "ローズ・ダマスクハート",
+    "youtubeid": "UCyY_NaAfv6k0CdHFcmYDqCA",
+    "title": "【司書のお仕事：魔導図書館を片付けろ！】ただいま【ローズ・ダマスクハート／パレデミア学園】#vtuber",
+    "date": "2026-05-07T10:37:12.000+09:00",
+    "status": "archive",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/VJonXkkcvM0/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/FR4hUBx4CbKSNHsSFNmOirsxutWwh99UiqdUFXaZQ4UmcMzTmlq3Wmbo-anCzIRenl3bojZ8Pg=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=VJonXkkcvM0"
+  },
+  {
+    "name": "藤森ちとせ",
+    "youtubeid": "UCAhdxmsdngH4noySdpVAVWQ",
+    "title": "【砂漠で露天掘り雑談】化石にダイヤがいっぱいついてることあるらしいですね～💎✨作業用にも😉ROM歓迎🎉【Minecraft】【#vtuber 】#ちとせらいぶ #パレデミア学園",
+    "date": "2026-05-07T12:58:20.000+09:00",
+    "status": "live",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/Qctvmj6ohS0/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/traR_yWe-AOGyM2wjo8h2FJO9JWBcbjfrL13X-umeD6BtNPopSZ2Q3YmdJq_5K9gWgHf_j64iQ=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=Qctvmj6ohS0"
   },
   {
     "name": "藤森ちとせ",

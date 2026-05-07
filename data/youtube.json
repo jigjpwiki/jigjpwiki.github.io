@@ -1502,7 +1502,7 @@
     "date": "2026-05-06T23:30:57.000+09:00",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/MqOQbI5BV0o/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/MqOQbI5BV0o/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/4hssn4EXW2lORXRfiuYTjmYfnlZoQ2h72sdEompqX7GQwAKCsBx7eL0joCFSook1rfCKIcpykg=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=MqOQbI5BV0o"
   },
@@ -1590,7 +1590,7 @@
     "date": "2026-05-07T01:46:15.000+09:00",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/mfSQsRGaR2Y/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/mfSQsRGaR2Y/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/neZ2Mw2PcuimtH172AaHAlm5eKk_O17aEJ8aMGhme708zPqxyZB6QhS89qzSt30uXnGLLbgdliw=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=mfSQsRGaR2Y"
   },
@@ -1672,6 +1672,28 @@
     "url": "https://www.youtube.com/watch?v=Qctvmj6ohS0"
   },
   {
+    "name": "李じゅぴ汰",
+    "youtubeid": "UCHsAAyHJhPXuLS6N3Kig6PQ",
+    "title": "【Cursed Companions】ソロ。一人で喋って自爆してアントワネットは倒せないよ",
+    "date": "2026-05-07T16:30:10.000+09:00",
+    "status": "live",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/I_1_1j9JaJs/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/QQqec9A1J7eLk9RrRYD9vvk51BBJzcE1leGkU9n4YkwHqht9gmGT1ktmSlKItQtbuMSGuklAFxM=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=I_1_1j9JaJs"
+  },
+  {
+    "name": "Palette Project",
+    "youtubeid": "UC_cCW1xmXwRFp1tX-RD2X1Q",
+    "title": "【緊張の現地レポ!!】パレプロが熱気あふれるフランスJapanExpoでレポーターデビュー‼ in Marseilles Part3",
+    "date": "2026-05-07T19:30:00.000+09:00",
+    "status": "upcoming",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/9vMoWA9sZRc/mqdefault.jpg",
+    "channelIcon": "https://yt3.ggpht.com/ytc/AIdro_nuv43BXc-JNRM-omFed0brcXGTD8qvA8313ZeQa8PfviA=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=9vMoWA9sZRc"
+  },
+  {
     "name": "藤森ちとせ",
     "youtubeid": "UCAhdxmsdngH4noySdpVAVWQ",
     "title": "負けるたび語尾が変わる4人コラボ！🀄✨【雀魂配信】【#vtuber 】#ちとせらいぶ #パレデミア学園",
@@ -1692,5 +1714,16 @@
     "thumbnail": "https://i.ytimg.com/vi/Z_3VOTQHxeE/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/iktv-39nC7NDASD1WeXms-DEuHuVqB5RhwTtdDe26w-BCvqf6yq3r_8zBiv2i2CfNXCK0uE8=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=Z_3VOTQHxeE"
+  },
+  {
+    "name": "銘兎目あう",
+    "youtubeid": "UCpr-9ssUUgSb0EpDA8bRuTA",
+    "title": "【ドラゴンボール Z KAKAROT】完全初見ミリしら！新たなる覚醒「前編」DLC🐉🟠 #08 【 #銘兎目あう 】※ネタバレあり #ドラゴンボールz #ドラゴンボール #Vtuber",
+    "date": "2026-05-10T13:30:00.000+09:00",
+    "status": "upcoming",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/op8sIR6benw/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/VB97J8AMHex_rkfd6hDhfiGhhVvrL-NNkseP2mMYSWh75sxA_oXctmxK5tV4FYgkM17RUAx6GQ=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=op8sIR6benw"
   }
 ]

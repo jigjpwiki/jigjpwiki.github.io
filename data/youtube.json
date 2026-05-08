@@ -1,16 +1,5 @@
 [
   {
-    "name": "藤森ちとせ",
-    "youtubeid": "UCAhdxmsdngH4noySdpVAVWQ",
-    "title": "🦋1月11日日曜日🦋 今日の誕生花は #コチョウラン ！ #誕生花 #花言葉 #藤森ちとせ #胡蝶蘭",
-    "date": "2026-05-05T08:15:01.000+09:00",
-    "status": "archive",
-    "type": "video",
-    "thumbnail": "https://i.ytimg.com/vi/DYekOKflHpk/mqdefault.jpg",
-    "channelIcon": "https://yt3.ggpht.com/traR_yWe-AOGyM2wjo8h2FJO9JWBcbjfrL13X-umeD6BtNPopSZ2Q3YmdJq_5K9gWgHf_j64iQ=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=DYekOKflHpk"
-  },
-  {
     "name": "桜庭羽奈",
     "youtubeid": "UCPgg_A08ksSYP-VivJGniRw",
     "title": "【高評価50を目指す！】GWの真昼間！みんな何してる？！初見さん大歓迎！🐻【新人VTuberの雑談／歌枠】🐻",
@@ -1612,7 +1601,7 @@
     "date": "2026-05-07T17:47:16.000+09:00",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/AkFBzclA0mY/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/AkFBzclA0mY/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/4AFFu60kFJqix-OhtDW3EJdQ0jQa1LrK56tGpvqvbGodMQFpkH-_qtvL_66dPGD3kl4LW9N4=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=AkFBzclA0mY"
   },
@@ -2006,7 +1995,7 @@
     "youtubeid": "UCBq6MSUL-Ermvnoj3PtX7Iw",
     "title": "【雑談】5月8日朝のニュース【平和なニュース】【堂下さとり/パレデミア学園】",
     "date": "2026-05-08T06:25:52.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/tJin8ReRoZU/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/eW_Hug0M6zFk9QSbAmOUWLMSfzBlCHmes-8yAksvfUNzyLgY6TSsE_eW8ncfE4bHYZXKoTWxmQ=s240-c-k-c0x00ffffff-no-rj",
@@ -2024,6 +2013,17 @@
     "url": "https://www.youtube.com/watch?v=oVFaBGc7Z2c"
   },
   {
+    "name": "ローズ・ダマスクハート",
+    "youtubeid": "UCyY_NaAfv6k0CdHFcmYDqCA",
+    "title": "画面酔いにアレを使う【司書のお仕事：魔導図書館を片付けろ！】ただいま【ローズ・ダマスクハート／パレデミア学園】#shorts #切り抜き",
+    "date": "2026-05-08T07:28:52.000+09:00",
+    "status": "archive",
+    "type": "video",
+    "thumbnail": "https://i.ytimg.com/vi/V4KTWqF1YzQ/mqdefault.jpg",
+    "channelIcon": "https://yt3.ggpht.com/FR4hUBx4CbKSNHsSFNmOirsxutWwh99UiqdUFXaZQ4UmcMzTmlq3Wmbo-anCzIRenl3bojZ8Pg=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=V4KTWqF1YzQ"
+  },
+  {
     "name": "愛乃宮ゆめ",
     "youtubeid": "UCttSjPiwPYpiPuCrgxK7c1g",
     "title": "【雑談】ゆめらじっ！＃０6【愛乃宮ゆめ/パレデミア学園】",
@@ -2033,6 +2033,17 @@
     "thumbnail": "https://i.ytimg.com/vi/3dxTNryLOQU/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/Gwr7KJNWnI6CEgmIfEeMZahF5pbGNKlRhQXBEkuMWE0D66--IJE77z-5Zu2i5LFBc_CA6ZkqY4Y=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=3dxTNryLOQU"
+  },
+  {
+    "name": "堂下さとり",
+    "youtubeid": "UCBq6MSUL-Ermvnoj3PtX7Iw",
+    "title": "【雑談】Vtuber　売れる！デジタルコンテンツ相談会【堂下さとり/パレデミア学園】",
+    "date": "2026-05-08T12:00:00.000+09:00",
+    "status": "upcoming",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/r1Y1dXPQ-_4/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/eW_Hug0M6zFk9QSbAmOUWLMSfzBlCHmes-8yAksvfUNzyLgY6TSsE_eW8ncfE4bHYZXKoTWxmQ=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=r1Y1dXPQ-_4"
   },
   {
     "name": "香鳴ハノン",

@@ -1106,7 +1106,7 @@
     "date": "2026-05-09T06:59:44.000+09:00",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/jZkE8ob5M0I/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/jZkE8ob5M0I/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/CH5JMWVQZ_RtloaXoj6W-yXjo9x8UxXSBG_vMyDnfk7M2QTOApVE1zOesu_aDrSAqvDbGrUyxs0=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=jZkE8ob5M0I"
   },
@@ -1562,6 +1562,17 @@
     "url": "https://www.youtube.com/watch?v=AAydoNe9JN0"
   },
   {
+    "name": "雨海まる",
+    "youtubeid": "UCLuPxPlM1v6IOTLxM1TRPzA",
+    "title": "【歌雑】まるのこと推してみいひん？〜やっぱり雑談多め〜",
+    "date": "2026-05-09T23:20:50.000+09:00",
+    "status": "archive",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/xIhMmkUaM1c/mqdefault.jpg",
+    "channelIcon": "https://yt3.ggpht.com/OJJah1uxke5bLtSAu-d36t6FaLG6SgDD0gxxL_lpIJuTJ6Xa1NDYP3MiLsyZ-xAjDRms3kROzQ=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=xIhMmkUaM1c"
+  },
+  {
     "name": "暁月クララ",
     "youtubeid": "UCn4XvlTXjGSvDynpxpOYZPQ",
     "title": "チラ見せが結局いちばん好きなんでしょ？#vtuber #暁月クララ #パレプロ",
@@ -1584,6 +1595,17 @@
     "url": "https://www.youtube.com/watch?v=UfW2CH_voeY"
   },
   {
+    "name": "愛染アネラ",
+    "youtubeid": "UC7ek9Q4cK9O0eT3hiUYJaQw",
+    "title": "【 inZOI 】完全初見💗ギャルが激カワカフェ経営をする！【 #新人Vtuber 愛染アネラ 】",
+    "date": "2026-05-09T23:52:11.000+09:00",
+    "status": "archive",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/oRfn2T8geXs/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/R99ADiR_1bRxcNCpiGLCW6ortzJy4JZFjlLaEHeDSJfYgwO_IieZWjjp4GbZauEeMxg_hhoS3A=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=oRfn2T8geXs"
+  },
+  {
     "name": "彼方ルカ",
     "youtubeid": "UCDDYyCAWxccRh1QbjMd1NlQ",
     "title": "【5月10日】少女レイ/みきとP【彼方ルカ/0220アーカイブ】",
@@ -1595,15 +1617,81 @@
     "url": "https://www.youtube.com/watch?v=VmypvU1bItk"
   },
   {
+    "name": "無月いお",
+    "youtubeid": "UC2X_mAVGw8e3N9JQZZDVBfQ",
+    "title": "オセロで上級AIと戦ってみた #パレデミア学園  #新人vtuber #vtuber準備中  #低音女子  #オセロ  #低音vtuber",
+    "date": "2026-05-10T00:01:03.000+09:00",
+    "status": "archive",
+    "type": "video",
+    "thumbnail": "https://i.ytimg.com/vi/o7P9WNqOfiY/mqdefault.jpg",
+    "channelIcon": "https://yt3.ggpht.com/Z7PlAWhweuycNXNXoQ6etyDTkduySM-Kqy8kQW-AD19JuRdxT3HSdIxogPw3GPD5NHw_vZlf=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=o7P9WNqOfiY"
+  },
+  {
+    "name": "相栖るじゅ",
+    "youtubeid": "UCrpdBoGpa6g2WEtRWsIlhDQ",
+    "title": "【歌枠】うたっちゃおう！【相栖るじゅ/パレデミア学園】",
+    "date": "2026-05-10T00:21:21.000+09:00",
+    "status": "archive",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/V9aVE_e06CU/mqdefault.jpg",
+    "channelIcon": "https://yt3.ggpht.com/yQbh9vEEgS_UapoQhIxxoTSy13bDxlHYC-ncTcO9VIDBN2NvrLTAWeKGQ72CN2fhOOrHqYaFDA=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=V9aVE_e06CU"
+  },
+  {
+    "name": "変幻リメ",
+    "youtubeid": "UC5bCRde8xRrNS7s6GjCNCyQ",
+    "title": "【OW】OWランク｜ちょっとだけオーバーウォッチ！【＃変幻リメ】",
+    "date": "2026-05-10T01:15:59.000+09:00",
+    "status": "archive",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/2q8iDYnOuzg/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/4hssn4EXW2lORXRfiuYTjmYfnlZoQ2h72sdEompqX7GQwAKCsBx7eL0joCFSook1rfCKIcpykg=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=2q8iDYnOuzg"
+  },
+  {
+    "name": "巳野みこと",
+    "youtubeid": "UCHBPF4eBZEAQ5MmiddmhM2w",
+    "title": "#shorts  一緒にお散歩してる気分になれた？ #マシュマロ",
+    "date": "2026-05-10T01:20:27.000+09:00",
+    "status": "archive",
+    "type": "video",
+    "thumbnail": "https://i.ytimg.com/vi/Jjobu_lBl9o/mqdefault.jpg",
+    "channelIcon": "https://yt3.ggpht.com/3p9jAiFZNvnKiFnz-hu-u03CwwXSshaxv5bexFCUmNuZbW2W93YCg5BQ6OeqfUAzvBcxSeSKR74=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=Jjobu_lBl9o"
+  },
+  {
+    "name": "無月いお",
+    "youtubeid": "UC2X_mAVGw8e3N9JQZZDVBfQ",
+    "title": "レディーレ_バルーン / 無月いお(cover)#パレデミア学園 #歌ってみた #低音女子 #新人vtuber #vtuber準備中 #一発録り",
+    "date": "2026-05-10T01:33:02.000+09:00",
+    "status": "archive",
+    "type": "video",
+    "thumbnail": "https://i.ytimg.com/vi/JWJPobkFleQ/mqdefault.jpg",
+    "channelIcon": "https://yt3.ggpht.com/Z7PlAWhweuycNXNXoQ6etyDTkduySM-Kqy8kQW-AD19JuRdxT3HSdIxogPw3GPD5NHw_vZlf=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=JWJPobkFleQ"
+  },
+  {
     "name": "雛菊のん",
     "youtubeid": "UChccV6U0Tkx9de4YjXbEelw",
     "title": "配信1年記念前夜祭ひそひそ配信💤おやすみを届ける💕#新人vtuber #睡眠導入",
     "date": "2026-05-10T01:53:38.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/JGQHJPVjxRw/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/-7v40HQCqllHpJD69LHIo2n5lUt-pZ-bLtfrKAXhZk9OF06nj4Lno3gwBvO8d1jBSl5dCCxAxQ=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=JGQHJPVjxRw"
+  },
+  {
+    "name": "汐月永遠",
+    "youtubeid": "UCCCm2ueQtW3mYUMB7Excq8g",
+    "title": "【#アカペラ 】からくりピエロ/40mP【#歌ってみた 】",
+    "date": "2026-05-10T02:33:57.000+09:00",
+    "status": "archive",
+    "type": "video",
+    "thumbnail": "https://i.ytimg.com/vi/12jtWe2RUeo/mqdefault.jpg",
+    "channelIcon": "https://yt3.ggpht.com/68oh3mZjSYRleiuocaxnF9VcHdbaxLQzjCq4QgdPlHe3083eTdmNkfXZ6YV81vTUA51qoNXH_g=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=12jtWe2RUeo"
   },
   {
     "name": "花晴りら",
@@ -1615,6 +1703,17 @@
     "thumbnail": "https://i.ytimg.com/vi/DBZuoyuFI5Y/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/CH5JMWVQZ_RtloaXoj6W-yXjo9x8UxXSBG_vMyDnfk7M2QTOApVE1zOesu_aDrSAqvDbGrUyxs0=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=DBZuoyuFI5Y"
+  },
+  {
+    "name": "堂下さとり",
+    "youtubeid": "UCBq6MSUL-Ermvnoj3PtX7Iw",
+    "title": "【雑談】配信１周年＆収益化記念【堂下さとり/パレデミア学園】",
+    "date": "2026-05-10T12:00:00.000+09:00",
+    "status": "upcoming",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/j-a_T3PIFRk/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/eW_Hug0M6zFk9QSbAmOUWLMSfzBlCHmes-8yAksvfUNzyLgY6TSsE_eW8ncfE4bHYZXKoTWxmQ=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=j-a_T3PIFRk"
   },
   {
     "name": "江波キョウカ",
@@ -1637,6 +1736,17 @@
     "thumbnail": "https://i.ytimg.com/vi/op8sIR6benw/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/VB97J8AMHex_rkfd6hDhfiGhhVvrL-NNkseP2mMYSWh75sxA_oXctmxK5tV4FYgkM17RUAx6GQ=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=op8sIR6benw"
+  },
+  {
+    "name": "夏渚まはろ",
+    "youtubeid": "UC_a00ml_EVDXSrtY8ZuyqGQ",
+    "title": "【お絵描き】お誕生日の暁クララ先輩を描く！【#夏渚まはろ￤#パレプロ】",
+    "date": "2026-05-10T18:00:00.000+09:00",
+    "status": "upcoming",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/nHBGQjzsRSw/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/iktv-39nC7NDASD1WeXms-DEuHuVqB5RhwTtdDe26w-BCvqf6yq3r_8zBiv2i2CfNXCK0uE8=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=nHBGQjzsRSw"
   },
   {
     "name": "桜堂ねる",
@@ -1670,6 +1780,17 @@
     "thumbnail": "https://i.ytimg.com/vi/I6kO7b2VMT4/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/4AFFu60kFJqix-OhtDW3EJdQ0jQa1LrK56tGpvqvbGodMQFpkH-_qtvL_66dPGD3kl4LW9N4=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=I6kO7b2VMT4"
+  },
+  {
+    "name": "愛上オハナ",
+    "youtubeid": "UCwxQdxFJW67WGv-s5_z030w",
+    "title": "【新人Vtuber】はじめまして🌷愛上オハナです（※初配信アーカイブが消えてしまったので供養）【パレデミア学園】",
+    "date": "2026-05-10T21:00:00.000+09:00",
+    "status": "upcoming",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/2skpQiKwdbU/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/neZ2Mw2PcuimtH172AaHAlm5eKk_O17aEJ8aMGhme708zPqxyZB6QhS89qzSt30uXnGLLbgdliw=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=2skpQiKwdbU"
   },
   {
     "name": "愛乃宮ゆめ",

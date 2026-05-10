@@ -1,16 +1,5 @@
 [
   {
-    "name": "汐月永遠",
-    "youtubeid": "UCCCm2ueQtW3mYUMB7Excq8g",
-    "title": "どーこだ #shorts",
-    "date": "2026-05-08T01:39:50.000+09:00",
-    "status": "archive",
-    "type": "video",
-    "thumbnail": "https://i.ytimg.com/vi/rpFpy_Vycu4/mqdefault.jpg",
-    "channelIcon": "https://yt3.ggpht.com/68oh3mZjSYRleiuocaxnF9VcHdbaxLQzjCq4QgdPlHe3083eTdmNkfXZ6YV81vTUA51qoNXH_g=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=rpFpy_Vycu4"
-  },
-  {
     "name": "堂下さとり",
     "youtubeid": "UCBq6MSUL-Ermvnoj3PtX7Iw",
     "title": "【雑談】5月8日朝のニュース【平和なニュース】【堂下さとり/パレデミア学園】",
@@ -1293,7 +1282,7 @@
     "date": "2026-05-10T12:19:10.000+09:00",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/j-a_T3PIFRk/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/j-a_T3PIFRk/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/eW_Hug0M6zFk9QSbAmOUWLMSfzBlCHmes-8yAksvfUNzyLgY6TSsE_eW8ncfE4bHYZXKoTWxmQ=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=j-a_T3PIFRk"
   },
@@ -1368,9 +1357,9 @@
     "youtubeid": "UCIw8aQVRBwi72yOrPLgkbRQ",
     "title": "【#雑談 】ファフナー組み立てながら 一年を振り返る【#vtuber #パレデミア学園 】",
     "date": "2026-05-10T16:31:30.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/umg-KSFGQYE/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/umg-KSFGQYE/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/XWKUawU_WoX_xINkx3TMSF3fj0RbdiwNezFiEAGcmHfQYvwkjMUM1mvyOmgsbK8LxHoo6aEKJA=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=umg-KSFGQYE"
   },
@@ -1507,6 +1496,17 @@
     "url": "https://www.youtube.com/watch?v=wb2qS9IIcuE"
   },
   {
+    "name": "虎島めら。",
+    "youtubeid": "UCqewFfi_wwydw6fpazmlAFA",
+    "title": "【ややぴカスタム】虎島めら。ぷろのゔぁ #apexlegends",
+    "date": "2026-05-10T19:54:01.000+09:00",
+    "status": "archive",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/w20t27deLeY/mqdefault.jpg",
+    "channelIcon": "https://yt3.ggpht.com/GTQLrgAFGtGBsfbiwqAP-vnRRHXDfXAKiZIGJAO-p4hzLfenIewQmuXdsBmgPfnz_hf0WsI62Q=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=w20t27deLeY"
+  },
+  {
     "name": "Palette Project",
     "youtubeid": "UC_cCW1xmXwRFp1tX-RD2X1Q",
     "title": "【 #暁月クララ生誕ライブ2026 】ひだまり♡てぃあら 【パレプロ / Palette Project】",
@@ -1617,6 +1617,17 @@
     "url": "https://www.youtube.com/watch?v=D3VYvSVXhis"
   },
   {
+    "name": "露草なぎ",
+    "youtubeid": "UC9nhm1B-XhPaUO8W8oc4thQ",
+    "title": "【露草探訪記】とーはくに行ってきた！※あくまで個人の感想です。",
+    "date": "2026-05-10T21:03:38.000+09:00",
+    "status": "archive",
+    "type": "video",
+    "thumbnail": "https://i.ytimg.com/vi/Gx1QLGoZj44/mqdefault.jpg",
+    "channelIcon": "https://yt3.ggpht.com/3KzF3YSQvjRpSMpFZEEsaGlIcETMW03ZmdKQy_TjJIm8t9vC4AjNwLLR5hNqXi0M9qnyszb0PCY=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=Gx1QLGoZj44"
+  },
+  {
     "name": "天辻ゆらぐ",
     "youtubeid": "UCeOFQCn_QZJMTszlRYRg3rQ",
     "title": "【１周年記念配信】初見歓迎✨️あなたのお姉さんアイドルVtuber🪼💜【天辻ゆらぐ/パレデミア学園】 #新人Vtuber #ゆらぐっどたいむ",
@@ -1643,7 +1654,7 @@
     "youtubeid": "UCyY_NaAfv6k0CdHFcmYDqCA",
     "title": "【一周年記念】ありがとうを伝える配信【ローズ・ダマスクハート／＃パレデミア学園】#vtuber",
     "date": "2026-05-10T21:30:44.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/GDXqX1Lg0uE/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/FR4hUBx4CbKSNHsSFNmOirsxutWwh99UiqdUFXaZQ4UmcMzTmlq3Wmbo-anCzIRenl3bojZ8Pg=s240-c-k-c0x00ffffff-no-rj",
@@ -1659,6 +1670,17 @@
     "thumbnail": "https://i.ytimg.com/vi/_609l7vj9kk/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/y0zP0Uz7HSLx5dv3xo488Suxk8rJQQUC1wXaymjUBIQIwa25WlVu_VmrsT1xAyVD-jgeL7hs=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=_609l7vj9kk"
+  },
+  {
+    "name": "露草なぎ",
+    "youtubeid": "UC9nhm1B-XhPaUO8W8oc4thQ",
+    "title": "とーはく行ってきたよー！！！フルVerはチャンネルへ #vtuber #新人vtuber #shorts",
+    "date": "2026-05-10T21:37:20.000+09:00",
+    "status": "archive",
+    "type": "video",
+    "thumbnail": "https://i.ytimg.com/vi/fiTUZi1-p-Q/mqdefault.jpg",
+    "channelIcon": "https://yt3.ggpht.com/3KzF3YSQvjRpSMpFZEEsaGlIcETMW03ZmdKQy_TjJIm8t9vC4AjNwLLR5hNqXi0M9qnyszb0PCY=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=fiTUZi1-p-Q"
   },
   {
     "name": "銀河キララ",
@@ -1753,9 +1775,9 @@
     "youtubeid": "UCldoz5HLh6BMW29HGnRpC0Q",
     "title": "【歌枠🎶】配信開始一周年＆収益化記念💥初見さん/ROMの人もおいで～💥≪パレデミア学園 / 灯野ぺけ。≫ #vtuber #パレデミア学園 #歌枠",
     "date": "2026-05-10T23:00:34.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/6EFIUMRWiG4/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/6EFIUMRWiG4/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/sYbvo_2nSCW162VEArIwu7v1B3bl159gmEnGgGei8I8drc4l7huPP7q6aWZ4AfXi5wTMACmGow=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=6EFIUMRWiG4"
   },
@@ -1797,7 +1819,7 @@
     "youtubeid": "UCrpdBoGpa6g2WEtRWsIlhDQ",
     "title": "【雑談】初見さん待ってるよっ！【相栖るじゅ/パレデミア学園】",
     "date": "2026-05-11T00:29:21.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/93gMpF5ppps/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/yQbh9vEEgS_UapoQhIxxoTSy13bDxlHYC-ncTcO9VIDBN2NvrLTAWeKGQ72CN2fhOOrHqYaFDA=s240-c-k-c0x00ffffff-no-rj",
@@ -1808,11 +1830,33 @@
     "youtubeid": "UC5bCRde8xRrNS7s6GjCNCyQ",
     "title": "#10【 #ゼルダの伝説ムジュラの仮面 】完全初見※トラウマ注意※ 闇が深すぎるゼルダ、ムジュラの仮面【変幻リメ】【※ネタバレ厳禁】",
     "date": "2026-05-11T00:30:22.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/4RhJancYROw/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/4hssn4EXW2lORXRfiuYTjmYfnlZoQ2h72sdEompqX7GQwAKCsBx7eL0joCFSook1rfCKIcpykg=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=4RhJancYROw"
+  },
+  {
+    "name": "無月いお",
+    "youtubeid": "UC2X_mAVGw8e3N9JQZZDVBfQ",
+    "title": "サリシノハラ_mikitoP / 無月いお(cover) #パレデミア学園 #歌ってみた #新人vtuber #vtuber準備中 #低音女子 #低音vtuber",
+    "date": "2026-05-11T01:07:05.000+09:00",
+    "status": "archive",
+    "type": "video",
+    "thumbnail": "https://i.ytimg.com/vi/5Ky0IRmNhlg/mqdefault.jpg",
+    "channelIcon": "https://yt3.ggpht.com/Z7PlAWhweuycNXNXoQ6etyDTkduySM-Kqy8kQW-AD19JuRdxT3HSdIxogPw3GPD5NHw_vZlf=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=5Ky0IRmNhlg"
+  },
+  {
+    "name": "堂下さとり",
+    "youtubeid": "UCBq6MSUL-Ermvnoj3PtX7Iw",
+    "title": "【雑談】5月11日朝のニュース【平和なニュース】【堂下さとり/パレデミア学園】",
+    "date": "2026-05-11T06:20:00.000+09:00",
+    "status": "upcoming",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/uh0AOLnZ9YQ/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/eW_Hug0M6zFk9QSbAmOUWLMSfzBlCHmes-8yAksvfUNzyLgY6TSsE_eW8ncfE4bHYZXKoTWxmQ=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=uh0AOLnZ9YQ"
   },
   {
     "name": "花晴りら",

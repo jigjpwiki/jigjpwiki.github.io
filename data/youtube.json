@@ -1,16 +1,5 @@
 [
   {
-    "name": "緋雨柚",
-    "youtubeid": "UCrB-SfrqB5ChY8aAT99grXw",
-    "title": "【R.E.P.O】LV.10～　果たしてクリアなるか【パレデミア学園/緋雨柚】",
-    "date": "2026-05-07T13:52:47.000+09:00",
-    "status": "archive",
-    "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/aRW6C5In_wQ/mqdefault.jpg",
-    "channelIcon": "https://yt3.ggpht.com/dPJHngNTeEfD_K0Mus141-We4xIuAhttm2pgEBl3VdGXqWvxGfy5mJfDMDbBmwI6UGc17dXb-g=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=aRW6C5In_wQ"
-  },
-  {
     "name": "李じゅぴ汰",
     "youtubeid": "UCHsAAyHJhPXuLS6N3Kig6PQ",
     "title": "【Cursed Companions】ソロ。一人で喋って自爆してアントワネットは倒せないよ",
@@ -1540,6 +1529,17 @@
     "url": "https://www.youtube.com/watch?v=oRfn2T8geXs"
   },
   {
+    "name": "八重森ふゆの",
+    "youtubeid": "UCYVPgR8PrA-DjOh36rLvSeg",
+    "title": "【無言＆寝落ちOK】雑談ラジオ配信 2026/05/10",
+    "date": "2026-05-09T23:59:25.000+09:00",
+    "status": "archive",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/xxmQkZwcLBI/mqdefault.jpg",
+    "channelIcon": "https://yt3.ggpht.com/X5HHgZ4fOiErYCteDVWI8Ph27gVw15e9fuVjkrJWfeqFjfOfOLo3-ZVWOfc57QBgeFwT6eJ_hXc=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=xxmQkZwcLBI"
+  },
+  {
     "name": "彼方ルカ",
     "youtubeid": "UCDDYyCAWxccRh1QbjMd1NlQ",
     "title": "【5月10日】少女レイ/みきとP【彼方ルカ/0220アーカイブ】",
@@ -1584,13 +1584,24 @@
     "url": "https://www.youtube.com/watch?v=e8nOL187KF8"
   },
   {
+    "name": "愛上オハナ",
+    "youtubeid": "UCwxQdxFJW67WGv-s5_z030w",
+    "title": "【新人VTuber】初見さん、寝落ち大歓迎🌷深夜のゆる雑談🌸【パレデミア学園】",
+    "date": "2026-05-10T01:07:53.000+09:00",
+    "status": "archive",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/QssImNhKs68/mqdefault.jpg",
+    "channelIcon": "https://yt3.ggpht.com/neZ2Mw2PcuimtH172AaHAlm5eKk_O17aEJ8aMGhme708zPqxyZB6QhS89qzSt30uXnGLLbgdliw=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=QssImNhKs68"
+  },
+  {
     "name": "変幻リメ",
     "youtubeid": "UC5bCRde8xRrNS7s6GjCNCyQ",
     "title": "【OW】OWランク｜ちょっとだけオーバーウォッチ！【＃変幻リメ】",
     "date": "2026-05-10T01:15:59.000+09:00",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/2q8iDYnOuzg/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/2q8iDYnOuzg/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/4hssn4EXW2lORXRfiuYTjmYfnlZoQ2h72sdEompqX7GQwAKCsBx7eL0joCFSook1rfCKIcpykg=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=2q8iDYnOuzg"
   },
@@ -1623,7 +1634,7 @@
     "date": "2026-05-10T01:53:38.000+09:00",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/JGQHJPVjxRw/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/JGQHJPVjxRw/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/-7v40HQCqllHpJD69LHIo2n5lUt-pZ-bLtfrKAXhZk9OF06nj4Lno3gwBvO8d1jBSl5dCCxAxQ=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=JGQHJPVjxRw"
   },
@@ -1698,7 +1709,7 @@
     "youtubeid": "UCBq6MSUL-Ermvnoj3PtX7Iw",
     "title": "【雑談】配信１周年＆収益化記念【堂下さとり/パレデミア学園】",
     "date": "2026-05-10T12:19:10.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/j-a_T3PIFRk/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/eW_Hug0M6zFk9QSbAmOUWLMSfzBlCHmes-8yAksvfUNzyLgY6TSsE_eW8ncfE4bHYZXKoTWxmQ=s240-c-k-c0x00ffffff-no-rj",
@@ -1716,6 +1727,17 @@
     "url": "https://www.youtube.com/watch?v=FTzGYkLzCF0"
   },
   {
+    "name": "桜庭羽奈",
+    "youtubeid": "UCPgg_A08ksSYP-VivJGniRw",
+    "title": "【オリジナル曲】シャイニングデイズ",
+    "date": "2026-05-10T13:15:05.000+09:00",
+    "status": "archive",
+    "type": "video",
+    "thumbnail": "https://i.ytimg.com/vi/tBKTH4iDSE0/mqdefault.jpg",
+    "channelIcon": "https://yt3.ggpht.com/04zALH6pYL7mkWILHajvBzfzg4hrwRCLBONme3K1PjuEeYJIRC6RYxPmJzVZRuN42skHEDNRGmo=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=tBKTH4iDSE0"
+  },
+  {
     "name": "銘兎目あう",
     "youtubeid": "UCpr-9ssUUgSb0EpDA8bRuTA",
     "title": "【ドラゴンボール Z KAKAROT】完全初見ミリしら！DLC⭐新たなる覚醒「前編」🐉🟠 #08 【 #銘兎目あう 】※ネタバレあり #ドラゴンボールz #ドラゴンボール #Vtuber",
@@ -1725,6 +1747,28 @@
     "thumbnail": "https://i.ytimg.com/vi/op8sIR6benw/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/VB97J8AMHex_rkfd6hDhfiGhhVvrL-NNkseP2mMYSWh75sxA_oXctmxK5tV4FYgkM17RUAx6GQ=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=op8sIR6benw"
+  },
+  {
+    "name": "夕凪万夜",
+    "youtubeid": "UCJLYktDEOak1rSOGRVRKlLQ",
+    "title": "【在る、VTuberのとある記録】MBTI診断やってみた結果…【パレデミア学園/夕凪万夜】#shorts #vtuber準備中 #新人vtuber #雑談 #新人vtuberを発掘せよ",
+    "date": "2026-05-10T14:00:45.000+09:00",
+    "status": "archive",
+    "type": "video",
+    "thumbnail": "https://i.ytimg.com/vi/qD-kIrwzA4Q/mqdefault.jpg",
+    "channelIcon": "https://yt3.ggpht.com/zOlQ66VHDdW9B1w3cRbHlo-3cfkYBLVHzYpXS_xLbOv9bHe72uv-bD246R7gCEfD_7wGBc-6vQ=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=qD-kIrwzA4Q"
+  },
+  {
+    "name": "シグマ・イングラム",
+    "youtubeid": "UCnQFkIgH-2IURW--34owWIw",
+    "title": "【必見‼️】おジャ魔女カーニバル合いの手バージョン！🎶/@uta-cha-oh #新人vtuber #おジャ魔女どれみ #カラオケ",
+    "date": "2026-05-10T14:47:02.000+09:00",
+    "status": "archive",
+    "type": "video",
+    "thumbnail": "https://i.ytimg.com/vi/KpCFLx_-AC4/mqdefault.jpg",
+    "channelIcon": "https://yt3.ggpht.com/qbn_sYVG1ZUjL2xgGkLtNaYdyeWSj8hMooE0VqW4jThdOnm2G6ZKRhpBsxV8pGUXkqi6zUq84w=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=KpCFLx_-AC4"
   },
   {
     "name": "天透あわ",
@@ -1802,6 +1846,17 @@
     "thumbnail": "https://i.ytimg.com/vi/2skpQiKwdbU/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/neZ2Mw2PcuimtH172AaHAlm5eKk_O17aEJ8aMGhme708zPqxyZB6QhS89qzSt30uXnGLLbgdliw=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=2skpQiKwdbU"
+  },
+  {
+    "name": "天辻ゆらぐ",
+    "youtubeid": "UCeOFQCn_QZJMTszlRYRg3rQ",
+    "title": "【初オリジナル曲】My Fluctuation【 #天辻ゆらぐ / #新人Vtuber】 #パレデミア学園",
+    "date": "2026-05-10T23:00:00.000+09:00",
+    "status": "upcoming",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/ZM_tDXd5YNw/mqdefault.jpg",
+    "channelIcon": "https://yt3.ggpht.com/4AFFu60kFJqix-OhtDW3EJdQ0jQa1LrK56tGpvqvbGodMQFpkH-_qtvL_66dPGD3kl4LW9N4=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=ZM_tDXd5YNw"
   },
   {
     "name": "天辻ゆらぐ",

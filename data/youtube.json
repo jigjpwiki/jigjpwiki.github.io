@@ -1370,7 +1370,7 @@
     "date": "2026-05-10T18:00:50.000+09:00",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/nHBGQjzsRSw/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/nHBGQjzsRSw/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/iktv-39nC7NDASD1WeXms-DEuHuVqB5RhwTtdDe26w-BCvqf6yq3r_8zBiv2i2CfNXCK0uE8=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=nHBGQjzsRSw"
   },
@@ -1568,7 +1568,7 @@
     "date": "2026-05-10T20:59:27.000+09:00",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/ruhO-HRfHHE/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/ruhO-HRfHHE/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/04zALH6pYL7mkWILHajvBzfzg4hrwRCLBONme3K1PjuEeYJIRC6RYxPmJzVZRuN42skHEDNRGmo=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=ruhO-HRfHHE"
   },
@@ -1874,11 +1874,22 @@
     "youtubeid": "UCqcnlq8uJqnGml6hcIrMCZw",
     "title": "【毎日朝活/雑談】初見さん大歓迎🌷100人に挨拶したいお仕事前朝活🔆【花晴りら/パレデミア学園】#れりライブ #新人vtuber",
     "date": "2026-05-11T07:00:28.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/7fD26fDojTw/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/CH5JMWVQZ_RtloaXoj6W-yXjo9x8UxXSBG_vMyDnfk7M2QTOApVE1zOesu_aDrSAqvDbGrUyxs0=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=7fD26fDojTw"
+  },
+  {
+    "name": "鬼多見アユム",
+    "youtubeid": "UCnrJK-sb3gSn3kRLkmpmzaw",
+    "title": "【#縦型配信 】風邪ひいてたやつのチル雑談【鬼多見アユム】#shorts",
+    "date": "2026-05-11T11:30:00.000+09:00",
+    "status": "upcoming",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/Tr--ZVDmMYg/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/5l_IDFvbCkoc_xXy5i5YH24NcAgRR9bYZM9hu30Hm8may2x-7GiLIxkQ3DHQ4vI9uKwRUcbR6Q=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=Tr--ZVDmMYg"
   },
   {
     "name": "夏渚まはろ",
@@ -1901,6 +1912,17 @@
     "thumbnail": "https://i.ytimg.com/vi/DPcQcsP1wWU/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/Gwr7KJNWnI6CEgmIfEeMZahF5pbGNKlRhQXBEkuMWE0D66--IJE77z-5Zu2i5LFBc_CA6ZkqY4Y=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=DPcQcsP1wWU"
+  },
+  {
+    "name": "江波キョウカ",
+    "youtubeid": "UChpkyQ3O21OnkcMcgCoNHCg",
+    "title": "꒰ঌ #雑談┆過ごしやすい気温になってきましたね🎏雑談＆5月生写真紹介！📷✨【#江波キョウカ / パレプロ 】",
+    "date": "2026-05-11T21:30:00.000+09:00",
+    "status": "upcoming",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/9NVGuCLQLno/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/pM4ZefnBFJ2qlBEqknYCFHdW6dLH29KptwG0OYSu1-mAVAIy5M1IjwpMwC24-A_v07nluGGrlQ=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=9NVGuCLQLno"
   },
   {
     "name": "藤森ちとせ",

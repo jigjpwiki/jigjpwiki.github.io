@@ -1205,7 +1205,7 @@
     "date": "2026-05-13T18:26:06.000+09:00",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/7RQdTVhjuzY/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/7RQdTVhjuzY/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/4AFFu60kFJqix-OhtDW3EJdQ0jQa1LrK56tGpvqvbGodMQFpkH-_qtvL_66dPGD3kl4LW9N4=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=7RQdTVhjuzY"
   },
@@ -1632,7 +1632,7 @@
     "youtubeid": "UCBq6MSUL-Ermvnoj3PtX7Iw",
     "title": "【雑談】5月14日朝のニュース【平和なニュース】【堂下さとり/パレデミア学園】",
     "date": "2026-05-14T06:29:14.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/tUsjcE3TMRI/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/eW_Hug0M6zFk9QSbAmOUWLMSfzBlCHmes-8yAksvfUNzyLgY6TSsE_eW8ncfE4bHYZXKoTWxmQ=s240-c-k-c0x00ffffff-no-rj",
@@ -1652,13 +1652,24 @@
   {
     "name": "天辻ゆらぐ",
     "youtubeid": "UCeOFQCn_QZJMTszlRYRg3rQ",
-    "title": "スラップベースゴリゴリの新人Vtuber初オリジナル曲㊗️1周年 #shorts #新人Vtuber #ゆらぐのマイフラ #オリジナル曲 #天辻ゆらぐ",
+    "title": "スラップベースゴリゴリの新人Vtuber初オリ曲㊗️1周年 #shorts #新人Vtuber #ゆらぐのマイフラ #オリジナル曲 #天辻ゆらぐ",
     "date": "2026-05-14T07:41:29.000+09:00",
     "status": "archive",
     "type": "video",
     "thumbnail": "https://i.ytimg.com/vi/NN1FtstHz74/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/4AFFu60kFJqix-OhtDW3EJdQ0jQa1LrK56tGpvqvbGodMQFpkH-_qtvL_66dPGD3kl4LW9N4=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=NN1FtstHz74"
+  },
+  {
+    "name": "新巻るろな",
+    "youtubeid": "UCUd4wJjvPQflbLnsk_YHleA",
+    "title": "【 #朝活 】たまには朝活でもすゆか～～【新巻るろな／パレデミア学園】#VTuber #雑談",
+    "date": "2026-05-14T08:32:09.000+09:00",
+    "status": "live",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/7Xxx0RC6RVQ/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/-4sLuWCih-DlfhpwpDQEuB6eupCB6kTImkIPmKnh54vu5I0F49RkveNQGiqy0p8t0GDU6eiegGE=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=7Xxx0RC6RVQ"
   },
   {
     "name": "藤森ちとせ",

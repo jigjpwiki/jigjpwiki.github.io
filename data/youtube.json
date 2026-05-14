@@ -1128,7 +1128,7 @@
     "date": "2026-05-14T12:10:42.000+09:00",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/DXf5kGJlZls/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/DXf5kGJlZls/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/eW_Hug0M6zFk9QSbAmOUWLMSfzBlCHmes-8yAksvfUNzyLgY6TSsE_eW8ncfE4bHYZXKoTWxmQ=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=DXf5kGJlZls"
   },
@@ -1342,6 +1342,17 @@
     "url": "https://www.youtube.com/watch?v=ATYK-SLBmhk"
   },
   {
+    "name": "銘兎目あう",
+    "youtubeid": "UCpr-9ssUUgSb0EpDA8bRuTA",
+    "title": "【スト６】1550(悟天)MR～Mケン🥊🥋ランク🎮【Twitchアーカイブ】",
+    "date": "2026-05-14T20:34:42.000+09:00",
+    "status": "archive",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/wNGZFVqnqPY/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/VB97J8AMHex_rkfd6hDhfiGhhVvrL-NNkseP2mMYSWh75sxA_oXctmxK5tV4FYgkM17RUAx6GQ=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=wNGZFVqnqPY"
+  },
+  {
     "name": "桜庭羽奈",
     "youtubeid": "UCPgg_A08ksSYP-VivJGniRw",
     "title": "【高評価100を目指す！】旅行に行くならどこ行きたい？！！初見さん大歓迎！🐻【新人VTuberの雑談／歌枠】🐻",
@@ -1423,9 +1434,9 @@
     "youtubeid": "UCGndc74kfWb_A-8hZBG534Q",
     "title": "【 司書のお仕事：魔導図書館を片付けろ！】　3072冊の本を片付けに気ました。　【#パレプロ ／ #藤宮コトハ 】",
     "date": "2026-05-14T22:35:17.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/9shV8iJjEoU/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/9shV8iJjEoU/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/rthBXvqjNFcVwEp-AWpiZDXnNjBodSXlsDTa-sjW6uR6Ssv3wuOw2dMXDZLlYaf_c4YiKfItHXU=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=9shV8iJjEoU"
   },
@@ -1465,7 +1476,7 @@
   {
     "name": "桜堂ねる",
     "youtubeid": "UC0H7dRRqhfOifbYQ2TURdAg",
-    "title": "圧倒的自由な４人で8番出口",
+    "title": "圧倒的自由な3人で8番出口",
     "date": "2026-05-14T23:01:41.000+09:00",
     "status": "archive",
     "type": "stream",
@@ -1474,13 +1485,24 @@
     "url": "https://www.youtube.com/watch?v=p09BG02pKYs"
   },
   {
+    "name": "愛染アネラ",
+    "youtubeid": "UC7ek9Q4cK9O0eT3hiUYJaQw",
+    "title": "ギャルと一緒に映画みよ💗『鬼談百景』同時視聴🎥✨",
+    "date": "2026-05-14T23:26:56.000+09:00",
+    "status": "archive",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/fV1kGRVnBH4/mqdefault.jpg",
+    "channelIcon": "https://yt3.ggpht.com/R99ADiR_1bRxcNCpiGLCW6ortzJy4JZFjlLaEHeDSJfYgwO_IieZWjjp4GbZauEeMxg_hhoS3A=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=fV1kGRVnBH4"
+  },
+  {
     "name": "変幻リメ",
     "youtubeid": "UC5bCRde8xRrNS7s6GjCNCyQ",
     "title": "#4【ペルソナ３リロード】初プレイ！深夜に始まる、もうひとつの1日【＃変幻リメ】",
     "date": "2026-05-14T23:30:19.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/8MKa6QEX3TM/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/8MKa6QEX3TM/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/4hssn4EXW2lORXRfiuYTjmYfnlZoQ2h72sdEompqX7GQwAKCsBx7eL0joCFSook1rfCKIcpykg=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=8MKa6QEX3TM"
   },
@@ -1496,6 +1518,17 @@
     "url": "https://www.youtube.com/watch?v=YTeqanP7i4c"
   },
   {
+    "name": "さくさくさく",
+    "youtubeid": "UC9zEgqk0yVvX3nqRLCJXGGg",
+    "title": "🐶わんちゃんもふもふしたーい❣️🐶#illustration #サモエド #vtuber",
+    "date": "2026-05-15T00:27:58.000+09:00",
+    "status": "archive",
+    "type": "video",
+    "thumbnail": "https://i.ytimg.com/vi/7nMitRgiKd0/mqdefault.jpg",
+    "channelIcon": "https://yt3.ggpht.com/XPoBTJELcobaMFIaRg_qVPbA2B8qzIloNvNNOoG_OkksZJ9JkGiZvRh8Rl3YbU4iV4sxqhZ8=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=7nMitRgiKd0"
+  },
+  {
     "name": "夜雨ねむる",
     "youtubeid": "UC1hxdM37vjjqr-IfZuDn1iw",
     "title": "【ASMR】新人バイトちゃんにされる耳かき",
@@ -1507,11 +1540,22 @@
     "url": "https://www.youtube.com/watch?v=RaelCuw-A-o"
   },
   {
+    "name": "愛染アネラ",
+    "youtubeid": "UC7ek9Q4cK9O0eT3hiUYJaQw",
+    "title": "ギャルと一緒に映画みよ💗『事故物件ゾク 恐い間取り』同時視聴🎥✨",
+    "date": "2026-05-15T01:30:28.000+09:00",
+    "status": "archive",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/5HvmV0fTc8g/mqdefault.jpg",
+    "channelIcon": "https://yt3.ggpht.com/R99ADiR_1bRxcNCpiGLCW6ortzJy4JZFjlLaEHeDSJfYgwO_IieZWjjp4GbZauEeMxg_hhoS3A=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=5HvmV0fTc8g"
+  },
+  {
     "name": "愛上オハナ",
     "youtubeid": "UCwxQdxFJW67WGv-s5_z030w",
     "title": "【クトゥルフ神話TRPG】フカシカ▲▲▲に挑戦してみよう！【パレデミア学園】",
     "date": "2026-05-15T01:42:31.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/HjI_bYPnMnI/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/neZ2Mw2PcuimtH172AaHAlm5eKk_O17aEJ8aMGhme708zPqxyZB6QhS89qzSt30uXnGLLbgdliw=s240-c-k-c0x00ffffff-no-rj",
@@ -1533,7 +1577,7 @@
     "youtubeid": "UCv2IYO-4waCpHvn50SWWY2A",
     "title": "【#雑談】もうすぐお誕生日だけど相変わらず雑談。【七音うら】",
     "date": "2026-05-15T02:00:09.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/6TGlko6xBaY/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/T655ATpSd2gkjZBrokvlkaUH0f5-fCpQdcJpwxmmNdy6fxCYffAlq2sMhPOtFk_CvVyOkEPY8Q=s240-c-k-c0x00ffffff-no-rj",
@@ -1542,13 +1586,24 @@
   {
     "name": "夕凪万夜",
     "youtubeid": "UCJLYktDEOak1rSOGRVRKlLQ",
-    "title": "【在る、VTuberのとある記録？】お知らせと悲劇【パレデミア学園/夕凪万夜】#shorts #vtuber準備中 #新人vtuber #vtuber #初配信",
+    "title": "【在る、VTuberのとある記録】お知らせと悲劇【パレデミア学園/夕凪万夜】#shorts #vtuber準備中 #新人vtuber #vtuber #初配信",
     "date": "2026-05-15T02:12:48.000+09:00",
     "status": "archive",
     "type": "video",
     "thumbnail": "https://i.ytimg.com/vi/lpWl3Y4rgtI/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/zOlQ66VHDdW9B1w3cRbHlo-3cfkYBLVHzYpXS_xLbOv9bHe72uv-bD246R7gCEfD_7wGBc-6vQ=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=lpWl3Y4rgtI"
+  },
+  {
+    "name": "瀬奈りるか",
+    "youtubeid": "UCWi_ztz8Xuz4XfzhoG6ZfyA",
+    "title": "【大決戦】弾力やる！2781↑通したい🦊🪄💫並走･ROM･寝落ち大歓迎🎶人のTLを参考に大決戦３桁目指す作業配信🎶【ブルーアーカイブ】＃せなりるライブ",
+    "date": "2026-05-15T03:02:10.000+09:00",
+    "status": "live",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/H9bVw8nx1xM/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/BaxFKUrCc4gGKc1wwAHt4ebjk8C69NdTl3fMz9LoR5SUm_Tpvv2yixsbJhp8qsld6S0tdgup=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=H9bVw8nx1xM"
   },
   {
     "name": "堂下さとり",
@@ -1571,6 +1626,17 @@
     "thumbnail": "https://i.ytimg.com/vi/07cQ7OMZ1gY/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/CH5JMWVQZ_RtloaXoj6W-yXjo9x8UxXSBG_vMyDnfk7M2QTOApVE1zOesu_aDrSAqvDbGrUyxs0=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=07cQ7OMZ1gY"
+  },
+  {
+    "name": "藤森ちとせ",
+    "youtubeid": "UCAhdxmsdngH4noySdpVAVWQ",
+    "title": "【露天掘り雑談】砂漠で化石さがしちゃいましょうね～⛏✨作業用にも😉ROM歓迎🎉【#Minecraft】【#新人vtuber 】#ちとせらいぶ #パレデミア学園",
+    "date": "2026-05-15T13:00:00.000+09:00",
+    "status": "upcoming",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/M1lOTKXBTbk/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/traR_yWe-AOGyM2wjo8h2FJO9JWBcbjfrL13X-umeD6BtNPopSZ2Q3YmdJq_5K9gWgHf_j64iQ=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=M1lOTKXBTbk"
   },
   {
     "name": "夏渚まはろ",

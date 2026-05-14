@@ -1,14 +1,5 @@
 [
   {
-    "name": "なかもとおまち",
-    "twitchid": "41futon",
-    "title": "【レバレス】】～タイガー始動～",
-    "date": "2026-05-11T14:01:19.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/1405880b-e945-4720-98c9-6a08c6400cae-profile_image-300x300.png",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/6a68c6eaeb1e32dc2c77_41futon_315934530419_1778475669//thumb/thumb0-320x180.jpg"
-  },
-  {
     "name": "李じゅぴ汰",
     "twitchid": "lee_jupita",
     "title": "【雑談】switch2が買えたり自己紹介を作ってみたり【作業】",
@@ -106,5 +97,14 @@
     "status": "archive",
     "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/5706bc75-6841-4954-8894-7b7bfba16adb-profile_image-300x300.png",
     "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/3a3d081244f452e0c096_lee_jupita_315891457138_1778675076//thumb/thumb0-320x180.jpg"
+  },
+  {
+    "name": "なかもとおまち",
+    "twitchid": "41futon",
+    "title": "ギリ朝活",
+    "date": "2026-05-14T13:57:48.000+09:00",
+    "status": "archive",
+    "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/1405880b-e945-4720-98c9-6a08c6400cae-profile_image-300x300.png",
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/06a490d0e8fb77a07e14_41futon_315894332786_1778734658//thumb/thumb0-320x180.jpg"
   }
 ]

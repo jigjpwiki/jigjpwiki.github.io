@@ -1,23 +1,5 @@
 [
   {
-    "name": "火乃晴るい",
-    "twitchid": "hinoha_rui",
-    "title": "【 #FF14 】『３日目』１から一緒にストーリー見ようの会✨",
-    "date": "2026-05-12T22:22:49.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/9e02effe-cf25-4ba0-9fe7-da457d4e8c87-profile_image-300x300.png",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/02078ad356d3a5136dea_hinoha_rui_315879287537_1778592164//thumb/thumb0-320x180.jpg"
-  },
-  {
-    "name": "火乃晴るい",
-    "twitchid": "hinoha_rui",
-    "title": "【 #FF14 】『３日目』１から一緒にストーリー見ようの会✨",
-    "date": "2026-05-12T22:52:15.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/9e02effe-cf25-4ba0-9fe7-da457d4e8c87-profile_image-300x300.png",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/90c9e70b918f9f417991_hinoha_rui_315879441521_1778593930//thumb/thumb0-320x180.jpg"
-  },
-  {
     "name": "しーはむ",
     "twitchid": "siyham",
     "title": "JGをオールミュートで挑戦するの回。全てのクレームから逃避していく。",
@@ -101,19 +83,46 @@
   {
     "name": "銘兎目あう",
     "twitchid": "Metome_Au",
-    "title": "【スト６】初見さんも誰でも🙆‍♀️カスタム参加型👊こちらMケン🥊🥋伸びろ！あう棒🐒！！",
+    "title": "【スト６】1554MR～Mケン🥊🥋伸びろ！あう棒🐒！！",
     "date": "2026-05-15T20:01:48.000+09:00",
     "status": "live",
     "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/6eea4ef4-a33b-4c66-9378-ad3aa84b1187-profile_image-300x300.png",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_Metome_Au-320x180.jpg"
   },
   {
+    "name": "銘兎目あう",
+    "twitchid": "Metome_Au",
+    "title": "【スト６】初見さんも誰でも🙆‍♀️カスタム参加型👊こちらMケン🥊🥋伸びろ！あう棒🐒！！",
+    "date": "2026-05-15T20:01:53.000+09:00",
+    "status": "archive",
+    "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/6eea4ef4-a33b-4c66-9378-ad3aa84b1187-profile_image-300x300.png",
+    "thumbnail": "https://vod-secure.twitch.tv/_404/404_processing_320x180.png"
+  },
+  {
     "name": "月皇ちな",
     "twitchid": "chi7_v",
     "title": "ただいま雑談 東京のお話 #chi7live",
-    "date": "2026-05-15T20:25:20.000+09:00",
-    "status": "live",
+    "date": "2026-05-15T20:25:25.000+09:00",
+    "status": "archive",
     "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/76f2958e-cab4-41b8-98c1-cc4d275b2ca5-profile_image-300x300.png",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_chi7_v-320x180.jpg"
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/ee88679a227bc6459bbd_chi7_v_315954317427_1778844319//thumb/thumb0-320x180.jpg"
+  },
+  {
+    "name": "李じゅぴ汰",
+    "twitchid": "lee_jupita",
+    "title": "【APEX】李の回復あったかいよ～【ライフラ】",
+    "date": "2026-05-15T23:36:53.000+09:00",
+    "status": "archive",
+    "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/5706bc75-6841-4954-8894-7b7bfba16adb-profile_image-300x300.png",
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/1f62be8b5b52221387f1_lee_jupita_315893142897_1778855808//thumb/thumb0-320x180.jpg"
+  },
+  {
+    "name": "李じゅぴ汰",
+    "twitchid": "lee_jupita",
+    "title": "【APEX】李の回復あったかいよ～【ライフラ】",
+    "date": "2026-05-15T23:38:32.000+09:00",
+    "status": "live",
+    "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/5706bc75-6841-4954-8894-7b7bfba16adb-profile_image-300x300.png",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lee_jupita-320x180.jpg"
   }
 ]

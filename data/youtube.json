@@ -1,16 +1,5 @@
 [
   {
-    "name": "鈴木沙透",
-    "youtubeid": "UCj5nRzNFXZn9GRhITRkKElA",
-    "title": "【#朝活 】もしかして社畜の鏡？おはようっていいにきた【鈴木沙透/パレデミア学園】",
-    "date": "2026-05-13T08:03:11.000+09:00",
-    "status": "archive",
-    "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/a6wk09q1744/mqdefault.jpg",
-    "channelIcon": "https://yt3.ggpht.com/h4kuTtFCGhkDV4nmk6qjQt8auhkqLEqWwB9Il3NZR6op3ph-a0YElRfLcXkZVPp6xqvGmZHy3w=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=a6wk09q1744"
-  },
-  {
     "name": "愛乃宮ゆめ",
     "youtubeid": "UCttSjPiwPYpiPuCrgxK7c1g",
     "title": "【雑談】ゆめらじっ！＃０6【愛乃宮ゆめ/パレデミア学園】",
@@ -1183,7 +1172,7 @@
     "date": "2026-05-15T17:59:43.000+09:00",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/7BkS6VPc7T4/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/7BkS6VPc7T4/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/4AFFu60kFJqix-OhtDW3EJdQ0jQa1LrK56tGpvqvbGodMQFpkH-_qtvL_66dPGD3kl4LW9N4=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=7BkS6VPc7T4"
   },
@@ -1620,12 +1609,45 @@
     "name": "花晴りら",
     "youtubeid": "UCqcnlq8uJqnGml6hcIrMCZw",
     "title": "【毎日朝活/雑談】初見さん大歓迎🌷おはよう！100人に挨拶したいお仕事前朝活🔆【花晴りら/パレデミア学園】#れりライブ #新人vtuber",
-    "date": "2026-05-16T07:00:00.000+09:00",
-    "status": "upcoming",
+    "date": "2026-05-16T06:59:54.000+09:00",
+    "status": "archive",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/PhOOkxqMN4g/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/CH5JMWVQZ_RtloaXoj6W-yXjo9x8UxXSBG_vMyDnfk7M2QTOApVE1zOesu_aDrSAqvDbGrUyxs0=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=PhOOkxqMN4g"
+  },
+  {
+    "name": "緋月・ローズ・ブレイド",
+    "youtubeid": "UCDutDfyKbX_ah4GF6kPNKmw",
+    "title": "【#VTuber】タゴサク構文【#shorts 】#ゲーム実況",
+    "date": "2026-05-16T07:00:38.000+09:00",
+    "status": "archive",
+    "type": "video",
+    "thumbnail": "https://i.ytimg.com/vi/_JKRvO455ac/mqdefault.jpg",
+    "channelIcon": "https://yt3.ggpht.com/W_G4fcoLegJdQmhWclC6RKHdrx9DJLGZ4WcLyCKgJxzyZZ3MUd-tNZ90LYQGVAbt7NzXl5GUJQ=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=_JKRvO455ac"
+  },
+  {
+    "name": "相栖るじゅ",
+    "youtubeid": "UCrpdBoGpa6g2WEtRWsIlhDQ",
+    "title": "【あいす御殿の歌】",
+    "date": "2026-05-16T07:01:03.000+09:00",
+    "status": "archive",
+    "type": "video",
+    "thumbnail": "https://i.ytimg.com/vi/wMJE_TNyAoc/mqdefault.jpg",
+    "channelIcon": "https://yt3.ggpht.com/yQbh9vEEgS_UapoQhIxxoTSy13bDxlHYC-ncTcO9VIDBN2NvrLTAWeKGQ72CN2fhOOrHqYaFDA=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=wMJE_TNyAoc"
+  },
+  {
+    "name": "藤森ちとせ",
+    "youtubeid": "UCAhdxmsdngH4noySdpVAVWQ",
+    "title": "🌱1月15日木曜日🌱 今日の誕生花は #セントウソウ ！ #誕生花 #花言葉 #藤森ちとせ #仙洞草",
+    "date": "2026-05-16T08:15:06.000+09:00",
+    "status": "archive",
+    "type": "video",
+    "thumbnail": "https://i.ytimg.com/vi/c3rusRWMAg8/mqdefault.jpg",
+    "channelIcon": "https://yt3.ggpht.com/traR_yWe-AOGyM2wjo8h2FJO9JWBcbjfrL13X-umeD6BtNPopSZ2Q3YmdJq_5K9gWgHf_j64iQ=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=c3rusRWMAg8"
   },
   {
     "name": "汐月永遠",
@@ -1648,6 +1670,17 @@
     "thumbnail": "https://i.ytimg.com/vi/tSn7ZQ50lfY/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/XPoBTJELcobaMFIaRg_qVPbA2B8qzIloNvNNOoG_OkksZJ9JkGiZvRh8Rl3YbU4iV4sxqhZ8=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=tSn7ZQ50lfY"
+  },
+  {
+    "name": "銀河キララ",
+    "youtubeid": "UCRuWA3zi9BB3pm4J0vLan_A",
+    "title": "【初配信】キミの謎、キラリと解決⭐️🔍 銀河キララ、調査開始！",
+    "date": "2026-05-16T20:00:00.000+09:00",
+    "status": "upcoming",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/pYqY80LpHys/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/TWALoyGbMNWKoG6NkimlLjiN1yZAl1y3pcliV9giJZrk5Z6_bmlG6KvmpAJLKt9Ec2cFaD7u6A=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=pYqY80LpHys"
   },
   {
     "name": "犬丸なでこ",

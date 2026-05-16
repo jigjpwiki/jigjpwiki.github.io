@@ -1348,7 +1348,7 @@
     "date": "2026-05-15T21:30:17.000+09:00",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/KGeFuA9-5sM/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/KGeFuA9-5sM/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/y0zP0Uz7HSLx5dv3xo488Suxk8rJQQUC1wXaymjUBIQIwa25WlVu_VmrsT1xAyVD-jgeL7hs=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=KGeFuA9-5sM"
   },
@@ -1648,6 +1648,28 @@
     "thumbnail": "https://i.ytimg.com/vi/c3rusRWMAg8/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/traR_yWe-AOGyM2wjo8h2FJO9JWBcbjfrL13X-umeD6BtNPopSZ2Q3YmdJq_5K9gWgHf_j64iQ=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=c3rusRWMAg8"
+  },
+  {
+    "name": "雪紫誉",
+    "youtubeid": "UCdbYinKlpkB_uMt_wPmYcsw",
+    "title": "【雪紫誉】【歌雑談】回線ギリギリ界隈　＃ゆきむらじお",
+    "date": "2026-05-16T10:13:31.000+09:00",
+    "status": "live",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/HAg3673MZ_E/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/4RbHGCHx02xQ2ze4g7UCTvuUPlQCpbk6bHIb5cdqO4JNzTe5qsq4sDTt6m-xVKMm476vJiMF7A=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=HAg3673MZ_E"
+  },
+  {
+    "name": "鬼多見アユム",
+    "youtubeid": "UCnrJK-sb3gSn3kRLkmpmzaw",
+    "title": "【#縦型配信 】休みだああああ【鬼多見アユム】#shorts",
+    "date": "2026-05-16T12:00:00.000+09:00",
+    "status": "upcoming",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/0eitOFTNeRo/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/5l_IDFvbCkoc_xXy5i5YH24NcAgRR9bYZM9hu30Hm8may2x-7GiLIxkQ3DHQ4vI9uKwRUcbR6Q=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=0eitOFTNeRo"
   },
   {
     "name": "汐月永遠",

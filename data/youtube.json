@@ -1271,7 +1271,7 @@
     "date": "2026-05-17T13:00:21.000+09:00",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/MULiwyI2FdI/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/MULiwyI2FdI/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/3KzF3YSQvjRpSMpFZEEsaGlIcETMW03ZmdKQy_TjJIm8t9vC4AjNwLLR5hNqXi0M9qnyszb0PCY=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=MULiwyI2FdI"
   },
@@ -1282,7 +1282,7 @@
     "date": "2026-05-17T13:31:48.000+09:00",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/PO5nf0uhyLc/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/PO5nf0uhyLc/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/BaxFKUrCc4gGKc1wwAHt4ebjk8C69NdTl3fMz9LoR5SUm_Tpvv2yixsbJhp8qsld6S0tdgup=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=PO5nf0uhyLc"
   },
@@ -1315,7 +1315,7 @@
     "date": "2026-05-17T15:00:03.000+09:00",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/7xoOD1wq44s/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/7xoOD1wq44s/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/Me8I_Op8OlIy8Vuj387_Hdi6gnrZ-qiY1yDDt1Q5yKMKA51ISagT76HE01gw8xbLcef0vpsPgoc=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=7xoOD1wq44s"
   },
@@ -1742,9 +1742,9 @@
     "youtubeid": "UCHsAAyHJhPXuLS6N3Kig6PQ",
     "title": "【バニーガーデン2】瑠那の恋人になるぞ！！！！③",
     "date": "2026-05-18T00:21:02.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/14u5VYajA-c/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/14u5VYajA-c/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/QQqec9A1J7eLk9RrRYD9vvk51BBJzcE1leGkU9n4YkwHqht9gmGT1ktmSlKItQtbuMSGuklAFxM=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=14u5VYajA-c"
   },
@@ -1784,9 +1784,9 @@
   {
     "name": "露草なぎ",
     "youtubeid": "UC9nhm1B-XhPaUO8W8oc4thQ",
-    "title": "HOLLOW KNIGHTから逃げるな　＃一夜目",
+    "title": "HOLLOW KNIGHTから逃げるな　＃一夜目 【パレデミア学園】",
     "date": "2026-05-18T01:00:16.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/HUtdcH2hVRg/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/3KzF3YSQvjRpSMpFZEEsaGlIcETMW03ZmdKQy_TjJIm8t9vC4AjNwLLR5hNqXi0M9qnyszb0PCY=s240-c-k-c0x00ffffff-no-rj",
@@ -1797,9 +1797,9 @@
     "youtubeid": "UC2X_mAVGw8e3N9JQZZDVBfQ",
     "title": "【#低音女子】台パンしつつ安眠させます。",
     "date": "2026-05-18T01:00:31.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/z84LDLIxAyA/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/z84LDLIxAyA/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/Z7PlAWhweuycNXNXoQ6etyDTkduySM-Kqy8kQW-AD19JuRdxT3HSdIxogPw3GPD5NHw_vZlf=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=z84LDLIxAyA"
   },
@@ -1819,7 +1819,7 @@
     "youtubeid": "UCJLYktDEOak1rSOGRVRKlLQ",
     "title": "【#飲酒雑談 】ぽしゃりながら初配信振り返り【パレデミア学園/夕凪万夜】",
     "date": "2026-05-18T01:07:36.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/LxPzM52A1qE/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/zOlQ66VHDdW9B1w3cRbHlo-3cfkYBLVHzYpXS_xLbOv9bHe72uv-bD246R7gCEfD_7wGBc-6vQ=s240-c-k-c0x00ffffff-no-rj",
@@ -1841,7 +1841,7 @@
     "youtubeid": "UCv2IYO-4waCpHvn50SWWY2A",
     "title": "【#誕生日打ち上げ】誕生日ありがとうございましたっ🌼【七音うら】",
     "date": "2026-05-18T02:00:30.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/QZjq0y_UmNI/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/T655ATpSd2gkjZBrokvlkaUH0f5-fCpQdcJpwxmmNdy6fxCYffAlq2sMhPOtFk_CvVyOkEPY8Q=s240-c-k-c0x00ffffff-no-rj",
@@ -1923,6 +1923,17 @@
     "thumbnail": "https://i.ytimg.com/vi/GgiRC99VaIY/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/pM4ZefnBFJ2qlBEqknYCFHdW6dLH29KptwG0OYSu1-mAVAIy5M1IjwpMwC24-A_v07nluGGrlQ=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=GgiRC99VaIY"
+  },
+  {
+    "name": "暁月クララ",
+    "youtubeid": "UCn4XvlTXjGSvDynpxpOYZPQ",
+    "title": "✧︎*.〖 アソビ大全 〗た ぶ ん 騒 ぐ wwww #ひなクララ⋆꙳〖#暁月クララ #理原ひなり┊︎#パレプロ〗",
+    "date": "2026-05-18T21:00:00.000+09:00",
+    "status": "upcoming",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/Hjuhto7hZZI/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/8tcStp-WzdZPtf6bPq1DtUnFSd2Eq5AppSd3_CEQ7hNNpnRND8InaWdPCz6T1wIWWkGJuFrbT94=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=Hjuhto7hZZI"
   },
   {
     "name": "変幻リメ",

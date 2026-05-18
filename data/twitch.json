@@ -1,32 +1,5 @@
 [
   {
-    "name": "なかもとおまち",
-    "twitchid": "41futon",
-    "title": "まだ朝活 のちにエルデン",
-    "date": "2026-05-15T19:38:36.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/1405880b-e945-4720-98c9-6a08c6400cae-profile_image-300x300.png",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/7eb6e8cca040168732f4_41futon_315891790961_1778841511//thumb/thumb0-320x180.jpg"
-  },
-  {
-    "name": "銘兎目あう",
-    "twitchid": "Metome_Au",
-    "title": "【スト６】初見さんも誰でも🙆‍♀️カスタム参加型👊こちらMケン🥊🥋伸びろ！あう棒🐒！！",
-    "date": "2026-05-15T20:01:53.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/6eea4ef4-a33b-4c66-9378-ad3aa84b1187-profile_image-300x300.png",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/ae3e36d667dd666eb06f_metome_au_315954217587_1778842908//thumb/thumb0-320x180.jpg"
-  },
-  {
-    "name": "月皇ちな",
-    "twitchid": "chi7_v",
-    "title": "ただいま雑談 東京のお話 #chi7live",
-    "date": "2026-05-15T20:25:25.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/76f2958e-cab4-41b8-98c1-cc4d275b2ca5-profile_image-300x300.png",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/ee88679a227bc6459bbd_chi7_v_315954317427_1778844319//thumb/thumb0-320x180.jpg"
-  },
-  {
     "name": "李じゅぴ汰",
     "twitchid": "lee_jupita",
     "title": "【APEX】李の回復あったかいよ～【ライフラ】",
@@ -84,9 +57,18 @@
     "name": "銘兎目あう",
     "twitchid": "Metome_Au",
     "title": "【スト６】1589MR～Mケン🥊🥋 グラマスになりたい🐲🔥",
-    "date": "2026-05-18T17:16:21.000+09:00",
-    "status": "live",
+    "date": "2026-05-18T17:16:26.000+09:00",
+    "status": "archive",
     "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/6eea4ef4-a33b-4c66-9378-ad3aa84b1187-profile_image-300x300.png",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_Metome_Au-320x180.jpg"
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/0e433e68dd00ff29ef8f_metome_au_315914007922_1779092181//thumb/thumb0-320x180.jpg"
+  },
+  {
+    "name": "なかもとおまち",
+    "twitchid": "41futon",
+    "title": "いったんトパチャン予選まで酒",
+    "date": "2026-05-18T18:08:59.000+09:00",
+    "status": "archive",
+    "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/1405880b-e945-4720-98c9-6a08c6400cae-profile_image-300x300.png",
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/d127852bdc0f40ed7f0d_41futon_315906027761_1779095334//thumb/thumb0-320x180.jpg"
   }
 ]

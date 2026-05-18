@@ -1,16 +1,5 @@
 [
   {
-    "name": "ローズ・ダマスクハート",
-    "youtubeid": "UCyY_NaAfv6k0CdHFcmYDqCA",
-    "title": "【驚愕】アメリカに1年近く留学してましたけど何か？【ローズ・ダマスクハート/パレデミア学園】#shorts",
-    "date": "2026-05-15T09:00:40.000+09:00",
-    "status": "archive",
-    "type": "video",
-    "thumbnail": "https://i.ytimg.com/vi/3G5RPg81now/mqdefault.jpg",
-    "channelIcon": "https://yt3.ggpht.com/FR4hUBx4CbKSNHsSFNmOirsxutWwh99UiqdUFXaZQ4UmcMzTmlq3Wmbo-anCzIRenl3bojZ8Pg=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=3G5RPg81now"
-  },
-  {
     "name": "天堂ライラ",
     "youtubeid": "UCpdWNjSU-onhmcARqgHIfpg",
     "title": "パレ学 テンドウライラです。 初配信します #スズキタゴサク構文 #新人vtuber #初配信 ",
@@ -1326,7 +1315,7 @@
     "date": "2026-05-17T18:22:36.000+09:00",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/45KA1yJefyk/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/45KA1yJefyk/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/eVD8Ygm7KVyh3dvWnyebfYlbYpD13ZYQ-Bos8WdR5LDE61A3svHVHCLEY-rM3IQgw9O4uvdd=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=45KA1yJefyk"
   },
@@ -1389,10 +1378,10 @@
     "name": "夕凪万夜",
     "youtubeid": "UCJLYktDEOak1rSOGRVRKlLQ",
     "title": "【#初配信 】観測を開始します。【パレデミア学園/夕凪万夜】#ゆうなぎ放送局 #パレ学 #vtuber",
-    "date": "2026-05-17T19:50:00.000+09:00",
-    "status": "upcoming",
+    "date": "2026-05-17T20:00:00.000+09:00",
+    "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/5UsERXSEgOs/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/5UsERXSEgOs/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/zOlQ66VHDdW9B1w3cRbHlo-3cfkYBLVHzYpXS_xLbOv9bHe72uv-bD246R7gCEfD_7wGBc-6vQ=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=5UsERXSEgOs"
   },
@@ -1408,13 +1397,24 @@
     "url": "https://www.youtube.com/watch?v=W2N3bHrWg_A"
   },
   {
+    "name": "愛乃宮ゆめ",
+    "youtubeid": "UCttSjPiwPYpiPuCrgxK7c1g",
+    "title": "【ダッコフ】わんわんスナイパーのお出まし【愛乃宮ゆめ/パレデミア学園】",
+    "date": "2026-05-17T20:01:07.000+09:00",
+    "status": "archive",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/DPcQcsP1wWU/mqdefault.jpg",
+    "channelIcon": "https://yt3.ggpht.com/Gwr7KJNWnI6CEgmIfEeMZahF5pbGNKlRhQXBEkuMWE0D66--IJE77z-5Zu2i5LFBc_CA6ZkqY4Y=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=DPcQcsP1wWU"
+  },
+  {
     "name": "陰山アゲハ",
     "youtubeid": "UCIw8aQVRBwi72yOrPLgkbRQ",
     "title": "【#雑談 】昨日告知があったなんて言えない【#vtuber #パレデミア学園 】",
     "date": "2026-05-17T20:06:31.000+09:00",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/tCYFPoLLPYo/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/tCYFPoLLPYo/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/XWKUawU_WoX_xINkx3TMSF3fj0RbdiwNezFiEAGcmHfQYvwkjMUM1mvyOmgsbK8LxHoo6aEKJA=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=tCYFPoLLPYo"
   },
@@ -1436,7 +1436,7 @@
     "date": "2026-05-17T20:36:01.000+09:00",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/F0lG6ALF-Is/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/F0lG6ALF-Is/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/h4kuTtFCGhkDV4nmk6qjQt8auhkqLEqWwB9Il3NZR6op3ph-a0YElRfLcXkZVPp6xqvGmZHy3w=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=F0lG6ALF-Is"
   },
@@ -1458,7 +1458,7 @@
     "date": "2026-05-17T20:51:01.000+09:00",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/7Wal8zySop4/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/7Wal8zySop4/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/oX8bu2EfV0AJmmDPuA74S-Ky2XAUOxd1IXHEpX5jFDLltMrVNknI1FkpYdhb9VrLGtpUCm3Xvg=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=7Wal8zySop4"
   },
@@ -1826,24 +1826,13 @@
     "url": "https://www.youtube.com/watch?v=QZjq0y_UmNI"
   },
   {
-    "name": "堂下さとり",
-    "youtubeid": "UCBq6MSUL-Ermvnoj3PtX7Iw",
-    "title": "【雑談】朝活　REVENGE　5月18日朝のニュース【平和なニュース】【堂下さとり/パレデミア学園】",
-    "date": "2026-05-18T06:20:00.000+09:00",
-    "status": "upcoming",
-    "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/MNk6AQuzBKM/mqdefault_live.jpg",
-    "channelIcon": "https://yt3.ggpht.com/eW_Hug0M6zFk9QSbAmOUWLMSfzBlCHmes-8yAksvfUNzyLgY6TSsE_eW8ncfE4bHYZXKoTWxmQ=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=MNk6AQuzBKM"
-  },
-  {
     "name": "花晴りら",
     "youtubeid": "UCqcnlq8uJqnGml6hcIrMCZw",
     "title": "【毎日朝活/雑談】初見さん大歓迎🌷150名様におはよう言いたい耐久朝活🔆【花晴りら/パレデミア学園】#れりライブ #新人vtuber",
     "date": "2026-05-18T07:00:13.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/Xi1db6rWLvo/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/Xi1db6rWLvo/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/CH5JMWVQZ_RtloaXoj6W-yXjo9x8UxXSBG_vMyDnfk7M2QTOApVE1zOesu_aDrSAqvDbGrUyxs0=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=Xi1db6rWLvo"
   },
@@ -1874,7 +1863,7 @@
     "youtubeid": "UCa1C15g_z1k5oQIYCeD2Hdw",
     "title": "【朝活】おはよい～～～～～！！！【パレデミア学園】#伊織実行中",
     "date": "2026-05-18T07:38:54.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/7neqP4xogVQ/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/fOSQN7R8b2LFTwHpvzc3RfsR_nJ02TIUKscIIj-hYwqWAsmMmqiixAt7XTbJTuH5MRqir4oC9Q=s240-c-k-c0x00ffffff-no-rj",
@@ -1885,11 +1874,44 @@
     "youtubeid": "UCaolaxqG55OJhU8qwRHHtQg",
     "title": "【 #火狐むい 】初の朝活【 #パレデミア学園 】",
     "date": "2026-05-18T08:16:17.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/4A7gf3BK2gg/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/Ft5mSjImEah_xri4b9k0p2Olyhy6T_vj1ZxyglCcVbk2FqN-nrWqSMm5YoM_hEjeRQ9aaMjelV0=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=4A7gf3BK2gg"
+  },
+  {
+    "name": "堂下さとり",
+    "youtubeid": "UCBq6MSUL-Ermvnoj3PtX7Iw",
+    "title": "【雑談】朝活　REVENGE　5月18日朝のニュース【平和なニュース】【堂下さとり/パレデミア学園】",
+    "date": "2026-05-18T08:50:25.000+09:00",
+    "status": "archive",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/MNk6AQuzBKM/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/eW_Hug0M6zFk9QSbAmOUWLMSfzBlCHmes-8yAksvfUNzyLgY6TSsE_eW8ncfE4bHYZXKoTWxmQ=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=MNk6AQuzBKM"
+  },
+  {
+    "name": "花晴りら",
+    "youtubeid": "UCqcnlq8uJqnGml6hcIrMCZw",
+    "title": "【縦型雑談/昼活】昼マック食べる🍔お久しぶりのランランランチ🎶初見/ROM歓迎🌷【花晴りら/パレデミア学園】#れりライブ #vtuber",
+    "date": "2026-05-18T12:00:00.000+09:00",
+    "status": "upcoming",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/mBf7-PR_8Ew/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/CH5JMWVQZ_RtloaXoj6W-yXjo9x8UxXSBG_vMyDnfk7M2QTOApVE1zOesu_aDrSAqvDbGrUyxs0=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=mBf7-PR_8Ew"
+  },
+  {
+    "name": "夕凪万夜",
+    "youtubeid": "UCJLYktDEOak1rSOGRVRKlLQ",
+    "title": "【定期】#ゆうなぎ放送局  1 タグ決めたり【パレデミア学園/夕凪万夜】#vtuber #新人vtuber",
+    "date": "2026-05-18T16:00:00.000+09:00",
+    "status": "upcoming",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/UyjNZgZcxG4/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/zOlQ66VHDdW9B1w3cRbHlo-3cfkYBLVHzYpXS_xLbOv9bHe72uv-bD246R7gCEfD_7wGBc-6vQ=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=UyjNZgZcxG4"
   },
   {
     "name": "泡清みる",
@@ -1967,6 +1989,17 @@
     "thumbnail": "https://i.ytimg.com/vi/rgvvkwVijvE/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/4hssn4EXW2lORXRfiuYTjmYfnlZoQ2h72sdEompqX7GQwAKCsBx7eL0joCFSook1rfCKIcpykg=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=rgvvkwVijvE"
+  },
+  {
+    "name": "夕凪万夜",
+    "youtubeid": "UCJLYktDEOak1rSOGRVRKlLQ",
+    "title": "【定期】#ゆうなぎ放送局 2【パレデミア学園/夕凪万夜】#vtuber #新人vtuber",
+    "date": "2026-05-19T16:00:00.000+09:00",
+    "status": "upcoming",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/c1H3pNjjanI/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/zOlQ66VHDdW9B1w3cRbHlo-3cfkYBLVHzYpXS_xLbOv9bHe72uv-bD246R7gCEfD_7wGBc-6vQ=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=c1H3pNjjanI"
   },
   {
     "name": "巳野みこと",

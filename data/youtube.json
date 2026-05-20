@@ -1874,7 +1874,7 @@
     "youtubeid": "UCpdWNjSU-onhmcARqgHIfpg",
     "title": "【雑談】てぃっくと同時配信中！ #天堂観測【パレデミア学園/天堂ライラ】",
     "date": "2026-05-21T00:58:29.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/5OOaustImxA/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/JA8QqThoUnCNAgJASH3p_wPyWJBf2ILiUfpIvArr6592NkkrFntPQ4EgPsahnLpPCMP4mk93ig=s240-c-k-c0x00ffffff-no-rj",
@@ -1896,9 +1896,9 @@
     "youtubeid": "UChccV6U0Tkx9de4YjXbEelw",
     "title": "ひそひそ配信💤おやすみを届ける💕💕#新人vtuber #睡眠導入",
     "date": "2026-05-21T01:00:46.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/th9DaPpRuVY/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/th9DaPpRuVY/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/-7v40HQCqllHpJD69LHIo2n5lUt-pZ-bLtfrKAXhZk9OF06nj4Lno3gwBvO8d1jBSl5dCCxAxQ=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=th9DaPpRuVY"
   },
@@ -1951,7 +1951,7 @@
     "youtubeid": "UCHBPF4eBZEAQ5MmiddmhM2w",
     "title": "どうしても同時配信がしてみたい",
     "date": "2026-05-21T01:53:53.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/4R0BRv_cVHE/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/3p9jAiFZNvnKiFnz-hu-u03CwwXSshaxv5bexFCUmNuZbW2W93YCg5BQ6OeqfUAzvBcxSeSKR74=s240-c-k-c0x00ffffff-no-rj",
@@ -1967,6 +1967,17 @@
     "thumbnail": "https://i.ytimg.com/vi/wPIvMhWjzEE/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/CH5JMWVQZ_RtloaXoj6W-yXjo9x8UxXSBG_vMyDnfk7M2QTOApVE1zOesu_aDrSAqvDbGrUyxs0=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=wPIvMhWjzEE"
+  },
+  {
+    "name": "無月いお",
+    "youtubeid": "UC2X_mAVGw8e3N9JQZZDVBfQ",
+    "title": "【#低音女子】休憩時間をうちにください《#パレデミア学園》",
+    "date": "2026-05-21T12:00:00.000+09:00",
+    "status": "upcoming",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/itJUv5KvMCo/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/Z7PlAWhweuycNXNXoQ6etyDTkduySM-Kqy8kQW-AD19JuRdxT3HSdIxogPw3GPD5NHw_vZlf=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=itJUv5KvMCo"
   },
   {
     "name": "夕凪万夜",

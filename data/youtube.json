@@ -1907,7 +1907,7 @@
     "youtubeid": "UC0H7dRRqhfOifbYQ2TURdAg",
     "title": "空手家Vtuberの朝活0522",
     "date": "2026-05-22T07:28:15.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/SiCovUjiT1Q/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/hBz75E3AEST1Dzv5vOTHAqoJfayd30WIWWQ3ZFLlWMHDsyZ_QD6ZVVUtLTKSizalT3APPtdpFGI=s240-c-k-c0x00ffffff-no-rj",
@@ -1923,6 +1923,28 @@
     "thumbnail": "https://i.ytimg.com/vi/X9_cp-vNJlk/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/JA8QqThoUnCNAgJASH3p_wPyWJBf2ILiUfpIvArr6592NkkrFntPQ4EgPsahnLpPCMP4mk93ig=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=X9_cp-vNJlk"
+  },
+  {
+    "name": "鈴木沙透",
+    "youtubeid": "UCj5nRzNFXZn9GRhITRkKElA",
+    "title": "【歌枠切り抜き】蜜月アン・ドゥ・トロワ #歌ってみた #鈴木沙透 #shorts",
+    "date": "2026-05-22T08:19:26.000+09:00",
+    "status": "archive",
+    "type": "video",
+    "thumbnail": "https://i.ytimg.com/vi/_66iCblNFdQ/mqdefault.jpg",
+    "channelIcon": "https://yt3.ggpht.com/h4kuTtFCGhkDV4nmk6qjQt8auhkqLEqWwB9Il3NZR6op3ph-a0YElRfLcXkZVPp6xqvGmZHy3w=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=_66iCblNFdQ"
+  },
+  {
+    "name": "常磐カナメ",
+    "youtubeid": "UCbNEgJIF_ADD9e8-q7SoxCg",
+    "title": "やっぱりとても気まずいトモダチコレクション #shorts #常磐カナメ",
+    "date": "2026-05-22T08:30:38.000+09:00",
+    "status": "archive",
+    "type": "video",
+    "thumbnail": "https://i.ytimg.com/vi/Z6BMi7vLnp4/mqdefault.jpg",
+    "channelIcon": "https://yt3.ggpht.com/vb_kLF_4hQ7UdEtOnEtL-_pI320ZMQ-lVQ9OV3xMvdTQitHXX1zk0b6GKQ977dawvfoB5Sb8OQ=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=Z6BMi7vLnp4"
   },
   {
     "name": "夕凪万夜",

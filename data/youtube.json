@@ -1,27 +1,5 @@
 [
   {
-    "name": "火狐むい",
-    "youtubeid": "UCaolaxqG55OJhU8qwRHHtQg",
-    "title": "【 #火狐むい 】初の朝活【 #パレデミア学園 】",
-    "date": "2026-05-18T08:16:17.000+09:00",
-    "status": "archive",
-    "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/4A7gf3BK2gg/mqdefault.jpg",
-    "channelIcon": "https://yt3.ggpht.com/Ft5mSjImEah_xri4b9k0p2Olyhy6T_vj1ZxyglCcVbk2FqN-nrWqSMm5YoM_hEjeRQ9aaMjelV0=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=4A7gf3BK2gg"
-  },
-  {
-    "name": "堂下さとり",
-    "youtubeid": "UCBq6MSUL-Ermvnoj3PtX7Iw",
-    "title": "【雑談】朝活　REVENGE　5月18日朝のニュース【平和なニュース】【堂下さとり/パレデミア学園】",
-    "date": "2026-05-18T08:50:25.000+09:00",
-    "status": "archive",
-    "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/MNk6AQuzBKM/mqdefault.jpg",
-    "channelIcon": "https://yt3.ggpht.com/eW_Hug0M6zFk9QSbAmOUWLMSfzBlCHmes-8yAksvfUNzyLgY6TSsE_eW8ncfE4bHYZXKoTWxmQ=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=MNk6AQuzBKM"
-  },
-  {
     "name": "花晴りら",
     "youtubeid": "UCqcnlq8uJqnGml6hcIrMCZw",
     "title": "【縦型雑談/昼活】昼マック食べる🍔お久しぶりのランランランチ🎶初見/ROM歓迎🌷【花晴りら/パレデミア学園】#れりライブ #vtuber",
@@ -1491,7 +1469,7 @@
     "date": "2026-05-20T19:02:32.000+09:00",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/mrCg3dxuUhk/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/mrCg3dxuUhk/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/h4kuTtFCGhkDV4nmk6qjQt8auhkqLEqWwB9Il3NZR6op3ph-a0YElRfLcXkZVPp6xqvGmZHy3w=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=mrCg3dxuUhk"
   },
@@ -1973,7 +1951,7 @@
     "youtubeid": "UC0H7dRRqhfOifbYQ2TURdAg",
     "title": "空手家Vtuberの朝活0521",
     "date": "2026-05-21T07:32:52.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/hZwDoZ6fITg/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/hBz75E3AEST1Dzv5vOTHAqoJfayd30WIWWQ3ZFLlWMHDsyZ_QD6ZVVUtLTKSizalT3APPtdpFGI=s240-c-k-c0x00ffffff-no-rj",
@@ -1989,6 +1967,17 @@
     "thumbnail": "https://i.ytimg.com/vi/GTwI4VCgx9M/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/W_G4fcoLegJdQmhWclC6RKHdrx9DJLGZ4WcLyCKgJxzyZZ3MUd-tNZ90LYQGVAbt7NzXl5GUJQ=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=GTwI4VCgx9M"
+  },
+  {
+    "name": "火狐むい",
+    "youtubeid": "UCaolaxqG55OJhU8qwRHHtQg",
+    "title": "【 #火狐むい 】起こしてください【 #パレデミア学園 】",
+    "date": "2026-05-21T08:45:17.000+09:00",
+    "status": "live",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/cSmIAx20DhE/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/Ft5mSjImEah_xri4b9k0p2Olyhy6T_vj1ZxyglCcVbk2FqN-nrWqSMm5YoM_hEjeRQ9aaMjelV0=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=cSmIAx20DhE"
   },
   {
     "name": "無月いお",

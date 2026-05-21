@@ -1,23 +1,5 @@
 [
   {
-    "name": "李じゅぴ汰",
-    "twitchid": "lee_jupita",
-    "title": "【スト6とか】好きなことをゆるっとやる",
-    "date": "2026-05-18T22:09:15.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/5706bc75-6841-4954-8894-7b7bfba16adb-profile_image-300x300.png",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/f98819218895347f7e93_lee_jupita_315907177073_1779109749//thumb/thumb0-320x180.jpg"
-  },
-  {
-    "name": "なかもとおまち",
-    "twitchid": "41futon",
-    "title": "私はクラシックレバージェイミー",
-    "date": "2026-05-18T23:16:00.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/1405880b-e945-4720-98c9-6a08c6400cae-profile_image-300x300.png",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/0b889f567fed37871cb3_41futon_315969909107_1779113755//thumb/thumb0-320x180.jpg"
-  },
-  {
     "name": "なかもとおまち",
     "twitchid": "41futon",
     "title": "ほんとにギリ朝活＠レバレス教えてください",
@@ -93,18 +75,45 @@
     "name": "銘兎目あう",
     "twitchid": "Metome_Au",
     "title": "【スト６】KEY先生によるコーチング＆天宮ちほさん/花岡ももちゃんと練習会🐰🎶",
-    "date": "2026-05-21T19:43:53.000+09:00",
-    "status": "live",
+    "date": "2026-05-21T19:43:58.000+09:00",
+    "status": "archive",
     "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/6eea4ef4-a33b-4c66-9378-ad3aa84b1187-profile_image-300x300.png",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_Metome_Au-320x180.jpg"
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/dbdc267adedefe6ce762_metome_au_315920042865_1779360233//thumb/thumb0-320x180.jpg"
   },
   {
     "name": "李じゅぴ汰",
     "twitchid": "lee_jupita",
     "title": "【オムレツにそれ入れる？】体験版でちょこっと遊んでみる！【Omelet You Cook/ローグライク】",
-    "date": "2026-05-21T21:02:50.000+09:00",
-    "status": "live",
+    "date": "2026-05-21T21:02:55.000+09:00",
+    "status": "archive",
     "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/5706bc75-6841-4954-8894-7b7bfba16adb-profile_image-300x300.png",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lee_jupita-320x180.jpg"
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/a042165a0f4ea748f6f3_lee_jupita_315928637170_1779364970//thumb/thumb0-320x180.jpg"
+  },
+  {
+    "name": "月皇ちな",
+    "twitchid": "chi7_v",
+    "title": "ハッピーターン味のからあげクンは普通にうまい #chi7live",
+    "date": "2026-05-21T21:22:01.000+09:00",
+    "status": "archive",
+    "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/76f2958e-cab4-41b8-98c1-cc4d275b2ca5-profile_image-300x300.png",
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/9f1e19f62539e4c46315_chi7_v_315928765682_1779366116//thumb/thumb0-320x180.jpg"
+  },
+  {
+    "name": "真昼ねる",
+    "twitchid": "mahiruneru",
+    "title": "最弱弟子が師匠ひび〇きを倒すまでのシンデレラストーリー👊‼️ 【真昼ねる￤ぷろのゔぁ】",
+    "date": "2026-05-21T23:32:39.000+09:00",
+    "status": "live",
+    "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/90e97ba8-20ac-4d1d-861a-d27ed84b5d70-profile_image-300x300.png",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_mahiruneru-320x180.jpg"
+  },
+  {
+    "name": "なかもとおまち",
+    "twitchid": "41futon",
+    "title": "明日から旅行いきますのでご挨拶にやってきました",
+    "date": "2026-05-21T23:55:13.000+09:00",
+    "status": "live",
+    "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/1405880b-e945-4720-98c9-6a08c6400cae-profile_image-300x300.png",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_41futon-320x180.jpg"
   }
 ]

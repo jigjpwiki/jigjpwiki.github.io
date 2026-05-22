@@ -1,27 +1,5 @@
 [
   {
-    "name": "宵坂伊織",
-    "youtubeid": "UCa1C15g_z1k5oQIYCeD2Hdw",
-    "title": "【朝活】おはよいよい【パレデミア学園】#伊織実行中",
-    "date": "2026-05-19T08:46:30.000+09:00",
-    "status": "archive",
-    "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/_hUtV7mzunE/mqdefault.jpg",
-    "channelIcon": "https://yt3.ggpht.com/fOSQN7R8b2LFTwHpvzc3RfsR_nJ02TIUKscIIj-hYwqWAsmMmqiixAt7XTbJTuH5MRqir4oC9Q=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=_hUtV7mzunE"
-  },
-  {
-    "name": "四葉みっけ",
-    "youtubeid": "UCObfu1e9xeIzisKCslx_XQA",
-    "title": "【縦型雑談】昼活しながら作戦会議！【パレデミア学園/新人VTuber】",
-    "date": "2026-05-19T10:00:49.000+09:00",
-    "status": "archive",
-    "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/z9OGAteMKr0/mqdefault.jpg",
-    "channelIcon": "https://yt3.ggpht.com/GX5900eq9zWhjaH0ed2mHxFSbUs6l-IXI1O5Joa9qp0M5BTw76KhoMpBC31IvZatLYymIatPMho=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=z9OGAteMKr0"
-  },
-  {
     "name": "天堂ライラ",
     "youtubeid": "UCpdWNjSU-onhmcARqgHIfpg",
     "title": "【ライランチ】一緒にお昼食べながらお話しよー！【パレデミア学園/天堂ライラ】",
@@ -1513,7 +1491,7 @@
     "date": "2026-05-21T20:00:44.000+09:00",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/ZgumPLJGOc4/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/ZgumPLJGOc4/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/Me8I_Op8OlIy8Vuj387_Hdi6gnrZ-qiY1yDDt1Q5yKMKA51ISagT76HE01gw8xbLcef0vpsPgoc=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=ZgumPLJGOc4"
   },
@@ -1656,7 +1634,7 @@
     "date": "2026-05-21T21:04:34.000+09:00",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/d-EwW2Nihak/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/d-EwW2Nihak/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/QQqec9A1J7eLk9RrRYD9vvk51BBJzcE1leGkU9n4YkwHqht9gmGT1ktmSlKItQtbuMSGuklAFxM=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=d-EwW2Nihak"
   },
@@ -1918,9 +1896,9 @@
     "youtubeid": "UCpdWNjSU-onhmcARqgHIfpg",
     "title": "【朝活】ひたすらおはようといってらっしゃいを言う会 #天堂観測【パレデミア学園/天堂ライラ】",
     "date": "2026-05-22T07:33:58.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/X9_cp-vNJlk/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/X9_cp-vNJlk/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/JA8QqThoUnCNAgJASH3p_wPyWJBf2ILiUfpIvArr6592NkkrFntPQ4EgPsahnLpPCMP4mk93ig=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=X9_cp-vNJlk"
   },
@@ -1945,6 +1923,17 @@
     "thumbnail": "https://i.ytimg.com/vi/Z6BMi7vLnp4/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/vb_kLF_4hQ7UdEtOnEtL-_pI320ZMQ-lVQ9OV3xMvdTQitHXX1zk0b6GKQ977dawvfoB5Sb8OQ=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=Z6BMi7vLnp4"
+  },
+  {
+    "name": "宵坂伊織",
+    "youtubeid": "UCa1C15g_z1k5oQIYCeD2Hdw",
+    "title": "【朝活】寝坊してもた💦【パレデミア学園】#伊織実行中",
+    "date": "2026-05-22T09:35:30.000+09:00",
+    "status": "live",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/5iaLsYwNJvs/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/fOSQN7R8b2LFTwHpvzc3RfsR_nJ02TIUKscIIj-hYwqWAsmMmqiixAt7XTbJTuH5MRqir4oC9Q=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=5iaLsYwNJvs"
   },
   {
     "name": "夕凪万夜",

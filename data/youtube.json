@@ -1546,7 +1546,7 @@
     "date": "2026-05-22T16:01:07.000+09:00",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/_XBw1S5584g/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/_XBw1S5584g/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/zOlQ66VHDdW9B1w3cRbHlo-3cfkYBLVHzYpXS_xLbOv9bHe72uv-bD246R7gCEfD_7wGBc-6vQ=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=_XBw1S5584g"
   },
@@ -1775,7 +1775,7 @@
     "youtubeid": "UCa1C15g_z1k5oQIYCeD2Hdw",
     "title": "【 #マイクラ 】エンドラ討伐するまで走り抜ける！！【パレデミア学園】#伊織実行中 #新人Vtuber",
     "date": "2026-05-22T20:58:14.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/8TDvLybeUD8/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/fOSQN7R8b2LFTwHpvzc3RfsR_nJ02TIUKscIIj-hYwqWAsmMmqiixAt7XTbJTuH5MRqir4oC9Q=s240-c-k-c0x00ffffff-no-rj",
@@ -2044,6 +2044,17 @@
     "thumbnail": "https://i.ytimg.com/vi/QbJ5R53GIwM/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/dPJHngNTeEfD_K0Mus141-We4xIuAhttm2pgEBl3VdGXqWvxGfy5mJfDMDbBmwI6UGc17dXb-g=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=QbJ5R53GIwM"
+  },
+  {
+    "name": "天堂ライラ",
+    "youtubeid": "UCpdWNjSU-onhmcARqgHIfpg",
+    "title": "【朝練】イベントラストラン！ #天堂観測【パレデミア学園/天堂ライラ】",
+    "date": "2026-05-23T06:09:17.000+09:00",
+    "status": "live",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/RKof2IWbZSI/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/JA8QqThoUnCNAgJASH3p_wPyWJBf2ILiUfpIvArr6592NkkrFntPQ4EgPsahnLpPCMP4mk93ig=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=RKof2IWbZSI"
   },
   {
     "name": "花晴りら",

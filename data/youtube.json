@@ -1,27 +1,5 @@
 [
   {
-    "name": "桜堂ねる",
-    "youtubeid": "UC0H7dRRqhfOifbYQ2TURdAg",
-    "title": "空手家Vtuberの朝活0521",
-    "date": "2026-05-21T07:32:52.000+09:00",
-    "status": "archive",
-    "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/hZwDoZ6fITg/mqdefault.jpg",
-    "channelIcon": "https://yt3.ggpht.com/hBz75E3AEST1Dzv5vOTHAqoJfayd30WIWWQ3ZFLlWMHDsyZ_QD6ZVVUtLTKSizalT3APPtdpFGI=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=hZwDoZ6fITg"
-  },
-  {
-    "name": "緋月・ローズ・ブレイド",
-    "youtubeid": "UCDutDfyKbX_ah4GF6kPNKmw",
-    "title": "【#歌ってみた】マトリョシカ【#vtuber 】#cover#shorts #minecraft",
-    "date": "2026-05-21T07:34:58.000+09:00",
-    "status": "archive",
-    "type": "video",
-    "thumbnail": "https://i.ytimg.com/vi/GTwI4VCgx9M/mqdefault.jpg",
-    "channelIcon": "https://yt3.ggpht.com/W_G4fcoLegJdQmhWclC6RKHdrx9DJLGZ4WcLyCKgJxzyZZ3MUd-tNZ90LYQGVAbt7NzXl5GUJQ=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=GTwI4VCgx9M"
-  },
-  {
     "name": "火狐むい",
     "youtubeid": "UCaolaxqG55OJhU8qwRHHtQg",
     "title": "【 #火狐むい 】起こしてください【 #パレデミア学園 】",
@@ -1936,6 +1914,17 @@
     "url": "https://www.youtube.com/watch?v=ZWeOBjpSRZM"
   },
   {
+    "name": "汐月永遠",
+    "youtubeid": "UCCCm2ueQtW3mYUMB7Excq8g",
+    "title": "【#切り抜き 】ダジャレを連投すんのはダレジャってな！【汐月永遠/パレデミア学園】 #新人vtuber #shorts",
+    "date": "2026-05-24T02:23:12.000+09:00",
+    "status": "archive",
+    "type": "video",
+    "thumbnail": "https://i.ytimg.com/vi/q1YS45xjVKg/mqdefault.jpg",
+    "channelIcon": "https://yt3.ggpht.com/68oh3mZjSYRleiuocaxnF9VcHdbaxLQzjCq4QgdPlHe3083eTdmNkfXZ6YV81vTUA51qoNXH_g=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=q1YS45xjVKg"
+  },
+  {
     "name": "花晴りら",
     "youtubeid": "UCqcnlq8uJqnGml6hcIrMCZw",
     "title": "【毎日朝活/雑談】初見さん大歓迎🌷250名様におはよう言いたい！耐久朝活🔆【花晴りら/パレデミア学園】#れりライブ #新人vtuber",
@@ -1956,6 +1945,17 @@
     "thumbnail": "https://i.ytimg.com/vi/9VUvasu_hzM/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/yQbh9vEEgS_UapoQhIxxoTSy13bDxlHYC-ncTcO9VIDBN2NvrLTAWeKGQ72CN2fhOOrHqYaFDA=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=9VUvasu_hzM"
+  },
+  {
+    "name": "ニコ・ダークウェル",
+    "youtubeid": "UCwSq7LbTyR1lXLJphsHKy2A",
+    "title": "【朝雑】はじめての縦配信♡初見さん◎　#新人vtuber #vtuber #ニコニコダークストリーム",
+    "date": "2026-05-24T07:19:58.000+09:00",
+    "status": "live",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/yyQXTKEZ-20/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/FZAApPZQQXHgHOVY8RCKI0eGvcyJ19mHBpWOT-a_pR_rY6LC8Z2Z9K0gpd4zuwNnYxA-XkKF=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=yyQXTKEZ-20"
   },
   {
     "name": "香鳴ハノン",

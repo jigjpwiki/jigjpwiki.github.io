@@ -1,27 +1,5 @@
 [
   {
-    "name": "汐月永遠",
-    "youtubeid": "UCCCm2ueQtW3mYUMB7Excq8g",
-    "title": "【切り抜き】なんだか懐かしい名前 #新人vtuber #shorts",
-    "date": "2026-05-21T01:46:51.000+09:00",
-    "status": "archive",
-    "type": "video",
-    "thumbnail": "https://i.ytimg.com/vi/GV1MfvJHrZs/mqdefault.jpg",
-    "channelIcon": "https://yt3.ggpht.com/68oh3mZjSYRleiuocaxnF9VcHdbaxLQzjCq4QgdPlHe3083eTdmNkfXZ6YV81vTUA51qoNXH_g=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=GV1MfvJHrZs"
-  },
-  {
-    "name": "巳野みこと",
-    "youtubeid": "UCHBPF4eBZEAQ5MmiddmhM2w",
-    "title": "どうしても同時配信がしてみたい",
-    "date": "2026-05-21T01:53:53.000+09:00",
-    "status": "archive",
-    "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/4R0BRv_cVHE/mqdefault.jpg",
-    "channelIcon": "https://yt3.ggpht.com/3p9jAiFZNvnKiFnz-hu-u03CwwXSshaxv5bexFCUmNuZbW2W93YCg5BQ6OeqfUAzvBcxSeSKR74=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=4R0BRv_cVHE"
-  },
-  {
     "name": "堂下さとり",
     "youtubeid": "UCBq6MSUL-Ermvnoj3PtX7Iw",
     "title": "【実写】新人Vtuber３Dラジオ体操　公開？【堂下さとり/パレデミア学園】",
@@ -1491,7 +1469,7 @@
     "date": "2026-05-23T13:13:27.000+09:00",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/9UnlCMWA4G0/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/9UnlCMWA4G0/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/qvbeb9E-gYc822fxxzi6Ug5QyjhqZAWbUskHANcwDWP5W8iTsK3LcQJnjS4CVBuFJ6fONsM9F7M=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=9UnlCMWA4G0"
   },
@@ -1617,17 +1595,6 @@
     "url": "https://www.youtube.com/watch?v=6fV_VK5-Ovk"
   },
   {
-    "name": "愛乃宮ゆめ",
-    "youtubeid": "UCttSjPiwPYpiPuCrgxK7c1g",
-    "title": "【ぷるぐらっ！】＃02 仲間探し！【愛乃宮ゆめ/パレデミア学園】",
-    "date": "2026-05-23T19:00:00.000+09:00",
-    "status": "upcoming",
-    "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/ZSOE4Z5VCng/mqdefault_live.jpg",
-    "channelIcon": "https://yt3.ggpht.com/Gwr7KJNWnI6CEgmIfEeMZahF5pbGNKlRhQXBEkuMWE0D66--IJE77z-5Zu2i5LFBc_CA6ZkqY4Y=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=ZSOE4Z5VCng"
-  },
-  {
     "name": "銘兎目あう",
     "youtubeid": "UCpr-9ssUUgSb0EpDA8bRuTA",
     "title": "【 #スト６ 】たべっこ動物mini #あまがみCUP 3on3大会にでるよ🏆花岡ももちゃん / 天宮ちほさん / 銘兎目あう【Twitch同時配信】#ストリートファイター6",
@@ -1637,6 +1604,17 @@
     "thumbnail": "https://i.ytimg.com/vi/-VWmHLRwnvc/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/VB97J8AMHex_rkfd6hDhfiGhhVvrL-NNkseP2mMYSWh75sxA_oXctmxK5tV4FYgkM17RUAx6GQ=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=-VWmHLRwnvc"
+  },
+  {
+    "name": "愛乃宮ゆめ",
+    "youtubeid": "UCttSjPiwPYpiPuCrgxK7c1g",
+    "title": "【ぷるぐらっ！】＃02 目指せ２億！！【愛乃宮ゆめ/パレデミア学園】",
+    "date": "2026-05-23T19:00:52.000+09:00",
+    "status": "archive",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/ZSOE4Z5VCng/mqdefault.jpg",
+    "channelIcon": "https://yt3.ggpht.com/Gwr7KJNWnI6CEgmIfEeMZahF5pbGNKlRhQXBEkuMWE0D66--IJE77z-5Zu2i5LFBc_CA6ZkqY4Y=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=ZSOE4Z5VCng"
   },
   {
     "name": "相栖るじゅ",
@@ -1742,7 +1720,7 @@
     "youtubeid": "UCWi_ztz8Xuz4XfzhoG6ZfyA",
     "title": "※ネタバレ注意【#10 魔法少女ノ魔女裁判】完全初見！🌟２章第2話🪄今日も今日とて魔女裁判🎶2話クリアまで！🎶【#まのさば実況 】",
     "date": "2026-05-23T20:02:03.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/yBHcjRTNkts/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/BaxFKUrCc4gGKc1wwAHt4ebjk8C69NdTl3fMz9LoR5SUm_Tpvv2yixsbJhp8qsld6S0tdgup=s240-c-k-c0x00ffffff-no-rj",
@@ -1896,9 +1874,9 @@
     "youtubeid": "UCXI0W_Os-BCIngpCb1YnOow",
     "title": "【夜廻】絶対に怖がらない夜廻/初見プレイ【ネタバレ注意】",
     "date": "2026-05-23T23:32:02.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/D8Pr9wivwA0/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/D8Pr9wivwA0/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/Me8I_Op8OlIy8Vuj387_Hdi6gnrZ-qiY1yDDt1Q5yKMKA51ISagT76HE01gw8xbLcef0vpsPgoc=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=D8Pr9wivwA0"
   },
@@ -1907,7 +1885,7 @@
     "youtubeid": "UCBq6MSUL-Ermvnoj3PtX7Iw",
     "title": "【雑談】大喜利過去問から読み解く攻略　【堂下さとり/パレデミア学園】",
     "date": "2026-05-23T23:37:17.000+09:00",
-    "status": "archive",
+    "status": "live",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/AnZQe0uKIWM/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/eW_Hug0M6zFk9QSbAmOUWLMSfzBlCHmes-8yAksvfUNzyLgY6TSsE_eW8ncfE4bHYZXKoTWxmQ=s240-c-k-c0x00ffffff-no-rj",
@@ -1929,7 +1907,7 @@
     "youtubeid": "UCpdWNjSU-onhmcARqgHIfpg",
     "title": "【雑談】SDイベントお疲れ様&ありがとう会！！！ #天堂観測【パレデミア学園/天堂ライラ】",
     "date": "2026-05-24T00:32:41.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/y2xhIbqb7iM/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/JA8QqThoUnCNAgJASH3p_wPyWJBf2ILiUfpIvArr6592NkkrFntPQ4EgPsahnLpPCMP4mk93ig=s240-c-k-c0x00ffffff-no-rj",
@@ -1947,11 +1925,22 @@
     "url": "https://www.youtube.com/watch?v=b6BxDcJnnoA"
   },
   {
+    "name": "愛上オハナ",
+    "youtubeid": "UCwxQdxFJW67WGv-s5_z030w",
+    "title": "めっちゃ寒くなってきたね！？寒暖差に勝つ！！雑談配信🌷初見さん寝落ち大歓迎🌷【新人VTuber】【パレデミア学園】",
+    "date": "2026-05-24T01:46:40.000+09:00",
+    "status": "live",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/PollmVNHdPg/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/neZ2Mw2PcuimtH172AaHAlm5eKk_O17aEJ8aMGhme708zPqxyZB6QhS89qzSt30uXnGLLbgdliw=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=PollmVNHdPg"
+  },
+  {
     "name": "天辻ゆらぐ",
     "youtubeid": "UCeOFQCn_QZJMTszlRYRg3rQ",
     "title": "【雑談歌枠】3時間で登録何人増えるかな？高評価100目標🎤夏曲🏝️あなたのお姉さんアイドルVtuber🪼💜【天辻ゆらぐ/パレデミア学園】 #新人Vtuber #ゆらぐっどたいむ",
-    "date": "2026-05-24T01:45:00.000+09:00",
-    "status": "upcoming",
+    "date": "2026-05-24T02:09:14.000+09:00",
+    "status": "live",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/ZWeOBjpSRZM/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/4AFFu60kFJqix-OhtDW3EJdQ0jQa1LrK56tGpvqvbGodMQFpkH-_qtvL_66dPGD3kl4LW9N4=s240-c-k-c0x00ffffff-no-rj",
@@ -1967,6 +1956,17 @@
     "thumbnail": "https://i.ytimg.com/vi/BbXRvqq5XHk/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/CH5JMWVQZ_RtloaXoj6W-yXjo9x8UxXSBG_vMyDnfk7M2QTOApVE1zOesu_aDrSAqvDbGrUyxs0=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=BbXRvqq5XHk"
+  },
+  {
+    "name": "香鳴ハノン",
+    "youtubeid": "UCay6Y3oEoiC6ZEE2G0UZu_A",
+    "title": "【A Dance of Fire and Ice】アドファイ実況！寝起きでもリズム感はあるのか！？！？【#パレプロ #香鳴ハノン】",
+    "date": "2026-05-24T11:00:00.000+09:00",
+    "status": "upcoming",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/Awk7Co6SdrA/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/qvbeb9E-gYc822fxxzi6Ug5QyjhqZAWbUskHANcwDWP5W8iTsK3LcQJnjS4CVBuFJ6fONsM9F7M=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=Awk7Co6SdrA"
   },
   {
     "name": "四葉みっけ",

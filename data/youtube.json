@@ -1,27 +1,5 @@
 [
   {
-    "name": "鈴木沙透",
-    "youtubeid": "UCj5nRzNFXZn9GRhITRkKElA",
-    "title": "【#歌枠 】4万のマイクを買って4000円マイクで歌う配信【鈴木沙透/パレデミア学園】",
-    "date": "2026-05-20T13:55:48.000+09:00",
-    "status": "archive",
-    "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/FaCv2EdCgHY/mqdefault.jpg",
-    "channelIcon": "https://yt3.ggpht.com/h4kuTtFCGhkDV4nmk6qjQt8auhkqLEqWwB9Il3NZR6op3ph-a0YElRfLcXkZVPp6xqvGmZHy3w=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=FaCv2EdCgHY"
-  },
-  {
-    "name": "藤宮コトハ",
-    "youtubeid": "UCGndc74kfWb_A-8hZBG534Q",
-    "title": "もぎゅっと“loveで接近中！💕#shorts#dance #ラブライブ #藤宮コトハ",
-    "date": "2026-05-20T15:21:29.000+09:00",
-    "status": "archive",
-    "type": "video",
-    "thumbnail": "https://i.ytimg.com/vi/GBoSTJRt0fE/mqdefault.jpg",
-    "channelIcon": "https://yt3.ggpht.com/rthBXvqjNFcVwEp-AWpiZDXnNjBodSXlsDTa-sjW6uR6Ssv3wuOw2dMXDZLlYaf_c4YiKfItHXU=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=GBoSTJRt0fE"
-  },
-  {
     "name": "夕凪万夜",
     "youtubeid": "UCJLYktDEOak1rSOGRVRKlLQ",
     "title": "【定期】#ゆうなぎ放送局  ＃3事務所イベ２日目の小休憩【パレデミア学園/夕凪万夜】#vtuber #新人vtuber",
@@ -1575,7 +1553,7 @@
   {
     "name": "銘兎目あう",
     "youtubeid": "UCpr-9ssUUgSb0EpDA8bRuTA",
-    "title": "【 #スト６ 】#ガウにいデカ杯 3on3大会に参戦するよ「Mewtopia」🏆おMewさん/灰ノ鼠しなのさん/銘兎目あう【Twitch同時配信】#ストリートファイター6",
+    "title": "【 #スト６ 】#ガウにい杯デカ 3on3大会に参戦するよ「Mewtopia」🏆おMewさん/灰ノ鼠しなのさん/銘兎目あう【Twitch同時配信】#ストリートファイター6",
     "date": "2026-05-22T20:29:06.000+09:00",
     "status": "archive",
     "type": "stream",
@@ -1821,7 +1799,7 @@
     "date": "2026-05-23T00:11:08.000+09:00",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/BoWr0xXVsKU/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/BoWr0xXVsKU/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/UWKN-YZPLehhOew0000E-A8P4FZ5TB7C48g2KZGY4UDiheuj7UAI-IiS9m8v4nzuifg6JwdGKA=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=BoWr0xXVsKU"
   },
@@ -1969,37 +1947,59 @@
     "url": "https://www.youtube.com/watch?v=25jSLFBNuw4"
   },
   {
+    "name": "鬼多見アユム",
+    "youtubeid": "UCnrJK-sb3gSn3kRLkmpmzaw",
+    "title": "【#縦型配信 】雑談するだあああ【鬼多見アユム】#shorts",
+    "date": "2026-05-23T12:00:53.000+09:00",
+    "status": "archive",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/gdN2N0X6_TU/mqdefault.jpg",
+    "channelIcon": "https://yt3.ggpht.com/5l_IDFvbCkoc_xXy5i5YH24NcAgRR9bYZM9hu30Hm8may2x-7GiLIxkQ3DHQ4vI9uKwRUcbR6Q=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=gdN2N0X6_TU"
+  },
+  {
+    "name": "香鳴ハノン",
+    "youtubeid": "UCay6Y3oEoiC6ZEE2G0UZu_A",
+    "title": "#1【イナズマイレブン 英雄たちのヴィクトリーロード】キャラクリをする！【#パレプロ #香鳴ハノン】",
+    "date": "2026-05-23T13:13:27.000+09:00",
+    "status": "archive",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/9UnlCMWA4G0/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/qvbeb9E-gYc822fxxzi6Ug5QyjhqZAWbUskHANcwDWP5W8iTsK3LcQJnjS4CVBuFJ6fONsM9F7M=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=9UnlCMWA4G0"
+  },
+  {
     "name": "堂下さとり",
     "youtubeid": "UCBq6MSUL-Ermvnoj3PtX7Iw",
     "title": "【耐久】47都道府県耐久＆郷土料理教えて！【堂下さとり/パレデミア学園】",
-    "date": "2026-05-23T12:00:00.000+09:00",
-    "status": "upcoming",
+    "date": "2026-05-23T13:17:34.000+09:00",
+    "status": "live",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/kpeAyutakx0/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/eW_Hug0M6zFk9QSbAmOUWLMSfzBlCHmes-8yAksvfUNzyLgY6TSsE_eW8ncfE4bHYZXKoTWxmQ=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=kpeAyutakx0"
   },
   {
-    "name": "鬼多見アユム",
-    "youtubeid": "UCnrJK-sb3gSn3kRLkmpmzaw",
-    "title": "【#縦型配信 】雑談するだあああ【鬼多見アユム】#shorts",
-    "date": "2026-05-23T12:00:53.000+09:00",
-    "status": "live",
-    "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/gdN2N0X6_TU/mqdefault_live.jpg",
-    "channelIcon": "https://yt3.ggpht.com/5l_IDFvbCkoc_xXy5i5YH24NcAgRR9bYZM9hu30Hm8may2x-7GiLIxkQ3DHQ4vI9uKwRUcbR6Q=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=gdN2N0X6_TU"
-  },
-  {
     "name": "陰山アゲハ",
     "youtubeid": "UCIw8aQVRBwi72yOrPLgkbRQ",
     "title": "【#apex 】初見/ROM歓迎👍概要欄見てね！ワイカかカジュアルかデュオか【#vtuber #パレデミア学園 】",
-    "date": "2026-05-23T14:00:00.000+09:00",
-    "status": "upcoming",
+    "date": "2026-05-23T14:37:25.000+09:00",
+    "status": "live",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/PJgrschxENw/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/XWKUawU_WoX_xINkx3TMSF3fj0RbdiwNezFiEAGcmHfQYvwkjMUM1mvyOmgsbK8LxHoo6aEKJA=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=PJgrschxENw"
+  },
+  {
+    "name": "七海ロナ",
+    "youtubeid": "UCIaZylf5L9MsCMOJX3BdTEg",
+    "title": "【ドラクエ３】そして伝説へ【パレプロ／七海ロナ】",
+    "date": "2026-05-23T15:43:56.000+09:00",
+    "status": "live",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/CjB1gX_LRdA/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/86cM_4q1A56pIYgdKxh776hM0nropjiZIlmXbfroWHXQ-MjdGGsjLcL5hMDOFL-T2EJHmybT=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=CjB1gX_LRdA"
   },
   {
     "name": "愛乃宮ゆめ",
@@ -2022,6 +2022,17 @@
     "thumbnail": "https://i.ytimg.com/vi/-VWmHLRwnvc/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/VB97J8AMHex_rkfd6hDhfiGhhVvrL-NNkseP2mMYSWh75sxA_oXctmxK5tV4FYgkM17RUAx6GQ=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=-VWmHLRwnvc"
+  },
+  {
+    "name": "冬星れんこん",
+    "youtubeid": "UCy4tS4QJSyI-VOr9ImBEveg",
+    "title": "【シャインポスト】新人アイドルVtuberがプレイする！！　冬星れんこん/パレデミア学園",
+    "date": "2026-05-23T20:00:00.000+09:00",
+    "status": "upcoming",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/TnS7GFhjC08/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/nMtec5z3KY5RUGCSbQENm9culC2VpB7Ate_dUueAINpAJdFK4wwe7Q6eH88QiMXqjImAleLI=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=TnS7GFhjC08"
   },
   {
     "name": "銘兎目あう",

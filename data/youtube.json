@@ -1,16 +1,5 @@
 [
   {
-    "name": "堂下さとり",
-    "youtubeid": "UCBq6MSUL-Ermvnoj3PtX7Iw",
-    "title": "【水着イベ】Vtuberだけど水着着るために本人も立ち腹筋をする【トレーニング】【パレデミア学園/堂下さとり】",
-    "date": "2026-05-22T06:38:18.000+09:00",
-    "status": "archive",
-    "type": "video",
-    "thumbnail": "https://i.ytimg.com/vi/W8_Dfqb3zYc/mqdefault.jpg",
-    "channelIcon": "https://yt3.ggpht.com/eW_Hug0M6zFk9QSbAmOUWLMSfzBlCHmes-8yAksvfUNzyLgY6TSsE_eW8ncfE4bHYZXKoTWxmQ=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=W8_Dfqb3zYc"
-  },
-  {
     "name": "花晴りら",
     "youtubeid": "UCqcnlq8uJqnGml6hcIrMCZw",
     "title": "【毎日朝活/雑談】初見さん大歓迎🌷250名様におはよう言わせて！耐久朝活🔆【花晴りら/パレデミア学園】#れりライブ #新人vtuber",
@@ -1540,6 +1529,17 @@
     "url": "https://www.youtube.com/watch?v=2aFyABwd2js"
   },
   {
+    "name": "銘兎目あう",
+    "youtubeid": "UCpr-9ssUUgSb0EpDA8bRuTA",
+    "title": "【 #スト６ 】#LocoCUP4 3on3大会に参戦するよ「兎爆弾🐰💣」🏆かずしボンバーさん/高坂めぐみちゃん/銘兎目あう【Twitch同時配信】#ストリートファイター6",
+    "date": "2026-05-24T14:22:51.000+09:00",
+    "status": "archive",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/IWueiF1YXgE/mqdefault.jpg",
+    "channelIcon": "https://yt3.ggpht.com/VB97J8AMHex_rkfd6hDhfiGhhVvrL-NNkseP2mMYSWh75sxA_oXctmxK5tV4FYgkM17RUAx6GQ=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=IWueiF1YXgE"
+  },
+  {
     "name": "暁月クララ",
     "youtubeid": "UCn4XvlTXjGSvDynpxpOYZPQ",
     "title": "✧︎*.〖 学園アイドルマスター┊︎＃９〗ほぼミリしら初見プレイ！篠澤広ちゃん編✨アイドルの学マスへの反応は！？💗✨※ネタバレあり⋆꙳`〖#暁月クララ┊︎#パレプロ〗#学マス #学園アイドルマスター",
@@ -1562,24 +1562,13 @@
     "url": "https://www.youtube.com/watch?v=NkYFFEUlXxk"
   },
   {
-    "name": "銘兎目あう",
-    "youtubeid": "UCpr-9ssUUgSb0EpDA8bRuTA",
-    "title": "【 #スト６ 】#LocoCUP 3on3大会に参戦するよ「兎爆弾🐰💣」🏆かずしボンバーさん/高坂めぐみちゃん/銘兎目あう【Twitch同時配信】#ストリートファイター6",
-    "date": "2026-05-24T15:00:00.000+09:00",
-    "status": "upcoming",
-    "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/IWueiF1YXgE/mqdefault_live.jpg",
-    "channelIcon": "https://yt3.ggpht.com/VB97J8AMHex_rkfd6hDhfiGhhVvrL-NNkseP2mMYSWh75sxA_oXctmxK5tV4FYgkM17RUAx6GQ=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=IWueiF1YXgE"
-  },
-  {
     "name": "虎島めら。",
     "youtubeid": "UCqewFfi_wwydw6fpazmlAFA",
     "title": "ニューキャッスル専ソロランク 【虎島めら。ぷろのゔぁ】 #apex",
     "date": "2026-05-24T16:08:56.000+09:00",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/1OHhi34UYoc/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/1OHhi34UYoc/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/GTQLrgAFGtGBsfbiwqAP-vnRRHXDfXAKiZIGJAO-p4hzLfenIewQmuXdsBmgPfnz_hf0WsI62Q=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=1OHhi34UYoc"
   },
@@ -2055,6 +2044,28 @@
     "thumbnail": "https://i.ytimg.com/vi/zTJqe30LhYE/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/FZAApPZQQXHgHOVY8RCKI0eGvcyJ19mHBpWOT-a_pR_rY6LC8Z2Z9K0gpd4zuwNnYxA-XkKF=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=zTJqe30LhYE"
+  },
+  {
+    "name": "桜堂ねる",
+    "youtubeid": "UC0H7dRRqhfOifbYQ2TURdAg",
+    "title": "5月25日【桜堂ねる】#今日は何の日 #ねる道場 #vtuber #shorts",
+    "date": "2026-05-25T06:41:41.000+09:00",
+    "status": "archive",
+    "type": "video",
+    "thumbnail": "https://i.ytimg.com/vi/xyLnRO_UxfA/mqdefault.jpg",
+    "channelIcon": "https://yt3.ggpht.com/hBz75E3AEST1Dzv5vOTHAqoJfayd30WIWWQ3ZFLlWMHDsyZ_QD6ZVVUtLTKSizalT3APPtdpFGI=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=xyLnRO_UxfA"
+  },
+  {
+    "name": "香鳴ハノン",
+    "youtubeid": "UCay6Y3oEoiC6ZEE2G0UZu_A",
+    "title": "【Vアイドルが】「アイドルパワー」踊ってみた🎤🩵 #MILK #香鳴ハノン #パレプロ",
+    "date": "2026-05-25T06:48:11.000+09:00",
+    "status": "archive",
+    "type": "video",
+    "thumbnail": "https://i.ytimg.com/vi/jx1vwPkirH4/mqdefault.jpg",
+    "channelIcon": "https://yt3.ggpht.com/qvbeb9E-gYc822fxxzi6Ug5QyjhqZAWbUskHANcwDWP5W8iTsK3LcQJnjS4CVBuFJ6fONsM9F7M=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=jx1vwPkirH4"
   },
   {
     "name": "花晴りら",

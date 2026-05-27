@@ -66,9 +66,36 @@
     "name": "火乃晴るい",
     "twitchid": "hinoha_rui",
     "title": "【 #FF14 】四日目✨久しぶりに少しだけストーリー進めます！イフリート🔥",
-    "date": "2026-05-27T18:05:27.000+09:00",
-    "status": "live",
+    "date": "2026-05-27T18:05:32.000+09:00",
+    "status": "archive",
     "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/9e02effe-cf25-4ba0-9fe7-da457d4e8c87-profile_image-300x300.png",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_hinoha_rui-320x180.jpg"
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/89d6708bdfe528e40652_hinoha_rui_315955688690_1779872727//thumb/thumb0-320x180.jpg"
+  },
+  {
+    "name": "水透ユウ",
+    "twitchid": "minato_yu_",
+    "title": "【 #R6S 】おなかいっぱい過ぎ【水透ユウ/ぷろのゔぁ】#ubisoftpartner #ユウおんらいぶ #ad",
+    "date": "2026-05-27T19:47:43.000+09:00",
+    "status": "archive",
+    "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/fc4f961e-29c3-4f2e-9880-161fbf3b98eb-profile_image-300x300.png",
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/dd750d412ff5373eaaee_minato_yu__315947891953_1779878857//thumb/thumb0-320x180.jpg"
+  },
+  {
+    "name": "月皇ちな",
+    "twitchid": "chi7_v",
+    "title": "マンゴー味のパピコは最高なのでOWします #chi7live",
+    "date": "2026-05-27T20:45:54.000+09:00",
+    "status": "live",
+    "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/76f2958e-cab4-41b8-98c1-cc4d275b2ca5-profile_image-300x300.png",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_chi7_v-320x180.jpg"
+  },
+  {
+    "name": "月皇ちな",
+    "twitchid": "chi7_v",
+    "title": "マンゴー味のパピコは最高 #chi7live",
+    "date": "2026-05-27T20:45:59.000+09:00",
+    "status": "archive",
+    "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/76f2958e-cab4-41b8-98c1-cc4d275b2ca5-profile_image-300x300.png",
+    "thumbnail": "https://vod-secure.twitch.tv/_404/404_processing_320x180.png"
   }
 ]

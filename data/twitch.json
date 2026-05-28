@@ -1,14 +1,5 @@
 [
   {
-    "name": "銘兎目あう",
-    "twitchid": "Metome_Au",
-    "title": "【スト６】お誕生日会🐰🎂カスタム参加型🥊22：00～写真撮影会📷",
-    "date": "2026-05-25T20:05:37.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/6eea4ef4-a33b-4c66-9378-ad3aa84b1187-profile_image-300x300.png",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/c00e174d72c82f3f41a9_metome_au_315947271410_1779707131//thumb/thumb0-320x180.jpg"
-  },
-  {
     "name": "なかもとおまち",
     "twitchid": "41futon",
     "title": "久々の朝活だ 旅行たのしかった",
@@ -88,5 +79,41 @@
     "status": "archive",
     "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/76f2958e-cab4-41b8-98c1-cc4d275b2ca5-profile_image-300x300.png",
     "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/a2c039a4f30339468492_chi7_v_315948189553_1779882354//thumb/thumb0-320x180.jpg"
+  },
+  {
+    "name": "銘兎目あう",
+    "twitchid": "Metome_Au",
+    "title": "【スト６】1463MR～ Mケン🥋コスプレ中🤟⭐",
+    "date": "2026-05-28T20:32:46.000+09:00",
+    "status": "live",
+    "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/6eea4ef4-a33b-4c66-9378-ad3aa84b1187-profile_image-300x300.png",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_Metome_Au-320x180.jpg"
+  },
+  {
+    "name": "李じゅぴ汰",
+    "twitchid": "lee_jupita",
+    "title": "いんぐりっととととととと",
+    "date": "2026-05-28T20:39:47.000+09:00",
+    "status": "live",
+    "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/5706bc75-6841-4954-8894-7b7bfba16adb-profile_image-300x300.png",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lee_jupita-320x180.jpg"
+  },
+  {
+    "name": "李じゅぴ汰",
+    "twitchid": "lee_jupita",
+    "title": "じゃんたまと少しのスト？",
+    "date": "2026-05-28T20:39:53.000+09:00",
+    "status": "archive",
+    "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/5706bc75-6841-4954-8894-7b7bfba16adb-profile_image-300x300.png",
+    "thumbnail": "https://vod-secure.twitch.tv/_404/404_processing_320x180.png"
+  },
+  {
+    "name": "なかもとおまち",
+    "twitchid": "41futon",
+    "title": "虎の自認イングリットなのじゃ虎のスーツを拝見",
+    "date": "2026-05-28T20:46:58.000+09:00",
+    "status": "live",
+    "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/1405880b-e945-4720-98c9-6a08c6400cae-profile_image-300x300.png",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_41futon-320x180.jpg"
   }
 ]

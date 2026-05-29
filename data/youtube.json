@@ -1,27 +1,5 @@
 [
   {
-    "name": "桜堂ねる",
-    "youtubeid": "UC0H7dRRqhfOifbYQ2TURdAg",
-    "title": "空手家Vtuberの朝活0527",
-    "date": "2026-05-27T07:23:25.000+09:00",
-    "status": "archive",
-    "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/HNAv5uZtdZ0/mqdefault.jpg",
-    "channelIcon": "https://yt3.ggpht.com/hBz75E3AEST1Dzv5vOTHAqoJfayd30WIWWQ3ZFLlWMHDsyZ_QD6ZVVUtLTKSizalT3APPtdpFGI=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=HNAv5uZtdZ0"
-  },
-  {
-    "name": "ローズ・ダマスクハート",
-    "youtubeid": "UCyY_NaAfv6k0CdHFcmYDqCA",
-    "title": "【驚愕】脳死すぎるvtuber【ローズ・ダマスクハート/パレデミア学園】#shorts",
-    "date": "2026-05-27T07:43:40.000+09:00",
-    "status": "archive",
-    "type": "video",
-    "thumbnail": "https://i.ytimg.com/vi/_67A_a-qNSM/mqdefault.jpg",
-    "channelIcon": "https://yt3.ggpht.com/FR4hUBx4CbKSNHsSFNmOirsxutWwh99UiqdUFXaZQ4UmcMzTmlq3Wmbo-anCzIRenl3bojZ8Pg=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=_67A_a-qNSM"
-  },
-  {
     "name": "さくさくさく",
     "youtubeid": "UC9zEgqk0yVvX3nqRLCJXGGg",
     "title": "🎨深夜のお絵描き雑談🎨",
@@ -1634,7 +1612,7 @@
     "date": "2026-05-30T00:29:18.000+09:00",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/KDNVdvCiYk0/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/KDNVdvCiYk0/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/zOlQ66VHDdW9B1w3cRbHlo-3cfkYBLVHzYpXS_xLbOv9bHe72uv-bD246R7gCEfD_7wGBc-6vQ=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=KDNVdvCiYk0"
   },
@@ -1698,9 +1676,9 @@
     "youtubeid": "UCwSq7LbTyR1lXLJphsHKy2A",
     "title": "【ゲーム実況】第九惑星 初見さん◎　#新人vtuber #vtuber #ニコニコダークストリーム #パレデミア学園",
     "date": "2026-05-30T05:07:19.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/aDTSmG97gd4/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/aDTSmG97gd4/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/FZAApPZQQXHgHOVY8RCKI0eGvcyJ19mHBpWOT-a_pR_rY6LC8Z2Z9K0gpd4zuwNnYxA-XkKF=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=aDTSmG97gd4"
   },
@@ -1709,7 +1687,7 @@
     "youtubeid": "UCPgg_A08ksSYP-VivJGniRw",
     "title": "【初見さん20人と出会いたい】朝活雑談！初見さん大歓迎！🐻【新人VTuberの雑談／歌枠】🐻",
     "date": "2026-05-30T06:30:49.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/W4L2a76J7hs/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/04zALH6pYL7mkWILHajvBzfzg4hrwRCLBONme3K1PjuEeYJIRC6RYxPmJzVZRuN42skHEDNRGmo=s240-c-k-c0x00ffffff-no-rj",
@@ -1736,6 +1714,17 @@
     "thumbnail": "https://i.ytimg.com/vi/qgYrs3zylJY/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/yQbh9vEEgS_UapoQhIxxoTSy13bDxlHYC-ncTcO9VIDBN2NvrLTAWeKGQ72CN2fhOOrHqYaFDA=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=qgYrs3zylJY"
+  },
+  {
+    "name": "新巻るろな",
+    "youtubeid": "UCUd4wJjvPQflbLnsk_YHleA",
+    "title": "【 #朝活 】ねむすぎもんすたー【新巻るろな／パレデミア学園】#VTuber #雑談",
+    "date": "2026-05-30T08:42:54.000+09:00",
+    "status": "live",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/Xfy_-vqTp6w/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/-4sLuWCih-DlfhpwpDQEuB6eupCB6kTImkIPmKnh54vu5I0F49RkveNQGiqy0p8t0GDU6eiegGE=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=Xfy_-vqTp6w"
   },
   {
     "name": "銘兎目あう",

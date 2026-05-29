@@ -1,27 +1,5 @@
 [
   {
-    "name": "李じゅぴ汰",
-    "youtubeid": "UCHsAAyHJhPXuLS6N3Kig6PQ",
-    "title": "暇つぶしのアローアロー【Arrow a Row】",
-    "date": "2026-05-27T04:36:54.000+09:00",
-    "status": "archive",
-    "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/3luvp1Xryk0/mqdefault.jpg",
-    "channelIcon": "https://yt3.ggpht.com/QQqec9A1J7eLk9RrRYD9vvk51BBJzcE1leGkU9n4YkwHqht9gmGT1ktmSlKItQtbuMSGuklAFxM=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=3luvp1Xryk0"
-  },
-  {
-    "name": "ニコ・ダークウェル",
-    "youtubeid": "UCwSq7LbTyR1lXLJphsHKy2A",
-    "title": "【ゲーム実況】ひらがなの「へ」とカタカナの「ヘ」を見分けるゲーム　#新人vtuber #vtuber #ニコニコダークストリーム #パレデミア学園",
-    "date": "2026-05-27T05:22:11.000+09:00",
-    "status": "archive",
-    "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/Pd66fdbh2kw/mqdefault.jpg",
-    "channelIcon": "https://yt3.ggpht.com/FZAApPZQQXHgHOVY8RCKI0eGvcyJ19mHBpWOT-a_pR_rY6LC8Z2Z9K0gpd4zuwNnYxA-XkKF=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=Pd66fdbh2kw"
-  },
-  {
     "name": "天堂ライラ",
     "youtubeid": "UCpdWNjSU-onhmcARqgHIfpg",
     "title": "【朝枠】ドラクエの日らしいから、おはようしながらドラクエの話しよう！ #天堂観測【パレデミア学園/天堂ライラ】",
@@ -1392,7 +1370,7 @@
     "date": "2026-05-29T14:19:29.000+09:00",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/Y5ARl3pPatI/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/Y5ARl3pPatI/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/eW_Hug0M6zFk9QSbAmOUWLMSfzBlCHmes-8yAksvfUNzyLgY6TSsE_eW8ncfE4bHYZXKoTWxmQ=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=Y5ARl3pPatI"
   },
@@ -1465,11 +1443,11 @@
   {
     "name": "愛乃宮ゆめ",
     "youtubeid": "UCttSjPiwPYpiPuCrgxK7c1g",
-    "title": "【ぷるぐらっ！/GTA５】#08 ようかめー！！【愛乃宮ゆめ/パレデミア学園】",
-    "date": "2026-05-29T18:55:00.000+09:00",
-    "status": "upcoming",
+    "title": "【ぷるぐらっ！/GTA５】#08  今日は大型もイベントも盛りだくさん！【愛乃宮ゆめ/パレデミア学園】",
+    "date": "2026-05-29T19:01:47.000+09:00",
+    "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/dbS2Xu7lhh4/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/dbS2Xu7lhh4/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/Gwr7KJNWnI6CEgmIfEeMZahF5pbGNKlRhQXBEkuMWE0D66--IJE77z-5Zu2i5LFBc_CA6ZkqY4Y=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=dbS2Xu7lhh4"
   },
@@ -1742,7 +1720,7 @@
     "youtubeid": "UCv2IYO-4waCpHvn50SWWY2A",
     "title": "【#歌枠  】歌枠だけど喋っちゃうかもしれない歌枠。【七音うら】",
     "date": "2026-05-30T02:01:38.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/LyuUDYK4_ug/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/T655ATpSd2gkjZBrokvlkaUH0f5-fCpQdcJpwxmmNdy6fxCYffAlq2sMhPOtFk_CvVyOkEPY8Q=s240-c-k-c0x00ffffff-no-rj",
@@ -1758,6 +1736,17 @@
     "thumbnail": "https://i.ytimg.com/vi/S3W7VtfdgkI/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/4AFFu60kFJqix-OhtDW3EJdQ0jQa1LrK56tGpvqvbGodMQFpkH-_qtvL_66dPGD3kl4LW9N4=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=S3W7VtfdgkI"
+  },
+  {
+    "name": "ニコ・ダークウェル",
+    "youtubeid": "UCwSq7LbTyR1lXLJphsHKy2A",
+    "title": "【ゲーム実況】第九惑星 初見さん◎　#新人vtuber #vtuber #ニコニコダークストリーム #パレデミア学園",
+    "date": "2026-05-30T05:07:19.000+09:00",
+    "status": "live",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/aDTSmG97gd4/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/FZAApPZQQXHgHOVY8RCKI0eGvcyJ19mHBpWOT-a_pR_rY6LC8Z2Z9K0gpd4zuwNnYxA-XkKF=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=aDTSmG97gd4"
   },
   {
     "name": "桜庭羽奈",

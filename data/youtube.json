@@ -1546,7 +1546,7 @@
     "date": "2026-05-30T00:39:54.000+09:00",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/mmNPlO2vt4o/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/mmNPlO2vt4o/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/neZ2Mw2PcuimtH172AaHAlm5eKk_O17aEJ8aMGhme708zPqxyZB6QhS89qzSt30uXnGLLbgdliw=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=mmNPlO2vt4o"
   },
@@ -1568,7 +1568,7 @@
     "date": "2026-05-30T02:01:38.000+09:00",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/LyuUDYK4_ug/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/LyuUDYK4_ug/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/T655ATpSd2gkjZBrokvlkaUH0f5-fCpQdcJpwxmmNdy6fxCYffAlq2sMhPOtFk_CvVyOkEPY8Q=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=LyuUDYK4_ug"
   },
@@ -1654,9 +1654,9 @@
     "youtubeid": "UCay6Y3oEoiC6ZEE2G0UZu_A",
     "title": "#1【イナズマイレブン 英雄たちのヴィクトリーロード】はじめてのストーリーモード！【#パレプロ #香鳴ハノン】",
     "date": "2026-05-30T13:06:47.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/oUsubedu5zw/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/oUsubedu5zw/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/qvbeb9E-gYc822fxxzi6Ug5QyjhqZAWbUskHANcwDWP5W8iTsK3LcQJnjS4CVBuFJ6fONsM9F7M=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=oUsubedu5zw"
   },
@@ -1665,9 +1665,9 @@
     "youtubeid": "UCBq6MSUL-Ermvnoj3PtX7Iw",
     "title": "【参加型】【大喜利】水着？大喜利【堂下さとり/パレデミア学園】",
     "date": "2026-05-30T13:18:24.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/e00ULLouY14/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/e00ULLouY14/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/eW_Hug0M6zFk9QSbAmOUWLMSfzBlCHmes-8yAksvfUNzyLgY6TSsE_eW8ncfE4bHYZXKoTWxmQ=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=e00ULLouY14"
   },
@@ -1697,12 +1697,23 @@
     "name": "夕凪万夜",
     "youtubeid": "UCJLYktDEOak1rSOGRVRKlLQ",
     "title": "【定期】#ゆうなぎ放送局 #10 ５月ラスト土曜日！記念１０回目【パレデミア学園/夕凪万夜】#vtuber #新人vtuber #雑談",
-    "date": "2026-05-30T16:00:00.000+09:00",
-    "status": "upcoming",
+    "date": "2026-05-30T16:02:36.000+09:00",
+    "status": "live",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/VbPppzqG6A0/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/zOlQ66VHDdW9B1w3cRbHlo-3cfkYBLVHzYpXS_xLbOv9bHe72uv-bD246R7gCEfD_7wGBc-6vQ=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=VbPppzqG6A0"
+  },
+  {
+    "name": "宵坂伊織",
+    "youtubeid": "UCa1C15g_z1k5oQIYCeD2Hdw",
+    "title": "【Poppy Playtime】楽しい？おもちゃ工場見学へ！ - chapter 1【パレデミア学園】#伊織実行中",
+    "date": "2026-05-30T16:18:04.000+09:00",
+    "status": "live",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/ljTuMznqCxc/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/fOSQN7R8b2LFTwHpvzc3RfsR_nJ02TIUKscIIj-hYwqWAsmMmqiixAt7XTbJTuH5MRqir4oC9Q=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=ljTuMznqCxc"
   },
   {
     "name": "愛乃宮ゆめ",
@@ -1736,5 +1747,16 @@
     "thumbnail": "https://i.ytimg.com/vi/WqDPBIe3uvA/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/rthBXvqjNFcVwEp-AWpiZDXnNjBodSXlsDTa-sjW6uR6Ssv3wuOw2dMXDZLlYaf_c4YiKfItHXU=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=WqDPBIe3uvA"
+  },
+  {
+    "name": "しーはむ",
+    "youtubeid": "UC5xSDiB2WG4pO_zUZ_t-n0Q",
+    "title": "〘ポケモン銀〙進化縛りで！カントージム攻略編〘VTuber│しーはむ│ポケットモンスター〙",
+    "date": "2026-05-31T21:30:00.000+09:00",
+    "status": "upcoming",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/6jPCYBawfrc/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/y0zP0Uz7HSLx5dv3xo488Suxk8rJQQUC1wXaymjUBIQIwa25WlVu_VmrsT1xAyVD-jgeL7hs=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=6jPCYBawfrc"
   }
 ]

@@ -1,27 +1,5 @@
 [
   {
-    "name": "桜庭羽奈",
-    "youtubeid": "UCPgg_A08ksSYP-VivJGniRw",
-    "title": "【初見さん20人と出会いたい】朝活雑談！初見さん大歓迎！🐻【新人VTuberの雑談／歌枠】🐻",
-    "date": "2026-05-29T06:31:31.000+09:00",
-    "status": "archive",
-    "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/DRAVfU7m0I0/mqdefault.jpg",
-    "channelIcon": "https://yt3.ggpht.com/04zALH6pYL7mkWILHajvBzfzg4hrwRCLBONme3K1PjuEeYJIRC6RYxPmJzVZRuN42skHEDNRGmo=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=DRAVfU7m0I0"
-  },
-  {
-    "name": "堂下さとり",
-    "youtubeid": "UCBq6MSUL-Ermvnoj3PtX7Iw",
-    "title": "【雑談】【こんにゃくの日】突発朝枠　洗濯終わるまで【堂下さとり/パレデミア学園】",
-    "date": "2026-05-29T06:38:22.000+09:00",
-    "status": "archive",
-    "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/ShVd7ZopD4I/mqdefault.jpg",
-    "channelIcon": "https://yt3.ggpht.com/eW_Hug0M6zFk9QSbAmOUWLMSfzBlCHmes-8yAksvfUNzyLgY6TSsE_eW8ncfE4bHYZXKoTWxmQ=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=ShVd7ZopD4I"
-  },
-  {
     "name": "桜堂ねる",
     "youtubeid": "UC0H7dRRqhfOifbYQ2TURdAg",
     "title": "5月29日【桜堂ねる】#今日は何の日 #ねる道場 #vtuber #shorts",
@@ -1326,7 +1304,7 @@
     "date": "2026-05-31T14:59:36.000+09:00",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/x-8IB3OfC9E/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/x-8IB3OfC9E/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/CH5JMWVQZ_RtloaXoj6W-yXjo9x8UxXSBG_vMyDnfk7M2QTOApVE1zOesu_aDrSAqvDbGrUyxs0=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=x-8IB3OfC9E"
   },
@@ -1808,9 +1786,9 @@
     "youtubeid": "UCWi_ztz8Xuz4XfzhoG6ZfyA",
     "title": "【制約解除決戦】セト神秘124階💫初めての制約解除決戦全クリを目指す！🤍並走･ROM･寝落ち大歓迎🎶人のTLを参考に制約解除決戦全クリ目指す作業配信🎶【ブルーアーカイブ】＃せなりるライブ",
     "date": "2026-06-01T01:00:16.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/1SDWYwH8P1c/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/1SDWYwH8P1c/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/BaxFKUrCc4gGKc1wwAHt4ebjk8C69NdTl3fMz9LoR5SUm_Tpvv2yixsbJhp8qsld6S0tdgup=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=1SDWYwH8P1c"
   },
@@ -1862,8 +1840,8 @@
     "name": "ニコ・ダークウェル",
     "youtubeid": "UCwSq7LbTyR1lXLJphsHKy2A",
     "title": "【ゲーム実況】スイカを作らないで 初見さん◎　#新人vtuber #vtuber #ニコニコダークストリーム #パレデミア学園",
-    "date": "2026-06-01T05:30:00.000+09:00",
-    "status": "upcoming",
+    "date": "2026-06-01T05:26:53.000+09:00",
+    "status": "live",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/vru95q9pQeI/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/FZAApPZQQXHgHOVY8RCKI0eGvcyJ19mHBpWOT-a_pR_rY6LC8Z2Z9K0gpd4zuwNnYxA-XkKF=s240-c-k-c0x00ffffff-no-rj",
@@ -1872,9 +1850,9 @@
   {
     "name": "桜庭羽奈",
     "youtubeid": "UCPgg_A08ksSYP-VivJGniRw",
-    "title": "【初見さん20人と出会いたい】イベントラスラン！初見さん大歓迎！🐻【新人VTuberの雑談／歌枠】🐻",
-    "date": "2026-06-01T06:30:00.000+09:00",
-    "status": "upcoming",
+    "title": "【初見さん20人と出会いたい】！初見さん大歓迎！🐻【新人VTuberの雑談／歌枠】🐻",
+    "date": "2026-06-01T06:30:25.000+09:00",
+    "status": "live",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/bZUNTmBoB9k/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/04zALH6pYL7mkWILHajvBzfzg4hrwRCLBONme3K1PjuEeYJIRC6RYxPmJzVZRuN42skHEDNRGmo=s240-c-k-c0x00ffffff-no-rj",

@@ -66,9 +66,27 @@
     "name": "李じゅぴ汰",
     "twitchid": "lee_jupita",
     "title": "とにかくさぎょー",
-    "date": "2026-06-02T19:22:27.000+09:00",
-    "status": "live",
+    "date": "2026-06-02T19:22:32.000+09:00",
+    "status": "archive",
     "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/5706bc75-6841-4954-8894-7b7bfba16adb-profile_image-300x300.png",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lee_jupita-320x180.jpg"
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/e38dc2f0066cc431988a_lee_jupita_315983635570_1780395747//thumb/thumb0-320x180.jpg"
+  },
+  {
+    "name": "銘兎目あう",
+    "twitchid": "Metome_Au",
+    "title": "【スト６】1540MR～ Mケン🥊🥋氷が爪に当たった確率約0.27%🍧",
+    "date": "2026-06-02T20:30:29.000+09:00",
+    "status": "archive",
+    "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/6eea4ef4-a33b-4c66-9378-ad3aa84b1187-profile_image-300x300.png",
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/2c770d2515822f05d66b_metome_au_316038515955_1780399824//thumb/thumb0-320x180.jpg"
+  },
+  {
+    "name": "水透ユウ",
+    "twitchid": "minato_yu_",
+    "title": "【 #R6S 】トロフィー生活CUP顔合わせ【水透ユウ/ぷろのゔぁ】#ubisoftpartner #ユウおんらいぶ",
+    "date": "2026-06-02T21:10:15.000+09:00",
+    "status": "live",
+    "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/fc4f961e-29c3-4f2e-9880-161fbf3b98eb-profile_image-300x300.png",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_minato_yu_-320x180.jpg"
   }
 ]

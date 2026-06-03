@@ -1,14 +1,5 @@
 [
   {
-    "name": "銘兎目あう",
-    "twitchid": "Metome_Au",
-    "title": "【スト６】1500MR～ Mケン🥊🥋スト6の夢を見たよ💤",
-    "date": "2026-05-31T20:29:48.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/6eea4ef4-a33b-4c66-9378-ad3aa84b1187-profile_image-300x300.png",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/016aa9b70abf89ec8346_metome_au_316029570163_1780226983//thumb/thumb0-320x180.jpg"
-  },
-  {
     "name": "しーはむ",
     "twitchid": "siyham",
     "title": "TOPグウェンとオーロラ",
@@ -111,9 +102,18 @@
     "name": "銘兎目あう",
     "twitchid": "Metome_Au",
     "title": "【スト６】KEY先生によるコーチング＆花岡ももちゃん/ななりーちゃんと練習会🐰",
-    "date": "2026-06-03T20:00:38.000+09:00",
-    "status": "live",
+    "date": "2026-06-03T20:00:44.000+09:00",
+    "status": "archive",
     "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/6eea4ef4-a33b-4c66-9378-ad3aa84b1187-profile_image-300x300.png",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_Metome_Au-320x180.jpg"
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/c5e70cc7644ce14a97f5_metome_au_316043120371_1780484438//thumb/thumb0-320x180.jpg"
+  },
+  {
+    "name": "なかもとおまち",
+    "twitchid": "41futon",
+    "title": "昼はアイドル夜は酒飲み",
+    "date": "2026-06-03T22:16:22.000+09:00",
+    "status": "live",
+    "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/1405880b-e945-4720-98c9-6a08c6400cae-profile_image-300x300.png",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_41futon-320x180.jpg"
   }
 ]

@@ -1,16 +1,5 @@
 [
   {
-    "name": "ニコ・ダークウェル",
-    "youtubeid": "UCwSq7LbTyR1lXLJphsHKy2A",
-    "title": "【ゲーム実況】あと一番出口 初見さん◎　#新人vtuber #vtuber #ニコニコダークストリーム #パレデミア学園",
-    "date": "2026-06-02T05:29:09.000+09:00",
-    "status": "archive",
-    "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/vOdKZMsTksQ/mqdefault.jpg",
-    "channelIcon": "https://yt3.ggpht.com/FZAApPZQQXHgHOVY8RCKI0eGvcyJ19mHBpWOT-a_pR_rY6LC8Z2Z9K0gpd4zuwNnYxA-XkKF=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=vOdKZMsTksQ"
-  },
-  {
     "name": "雪紫誉",
     "youtubeid": "UCdbYinKlpkB_uMt_wPmYcsw",
     "title": "【365日耐久 】誕生日教えてください＆同時配信テスト【#パレデミア学園/#ゆきむらじお】",
@@ -1632,18 +1621,29 @@
     "youtubeid": "UCeOFQCn_QZJMTszlRYRg3rQ",
     "title": "【雑談歌枠】2時間で登録者さん何人増えるかな？高評価100目標！あなたのお姉さんアイドルVtuber🪼💜【天辻ゆらぐ/パレデミア学園】 #新人Vtuber #ゆらぐっどたいむ",
     "date": "2026-06-05T01:53:02.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/oLWLGMOPE54/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/oLWLGMOPE54/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/4AFFu60kFJqix-OhtDW3EJdQ0jQa1LrK56tGpvqvbGodMQFpkH-_qtvL_66dPGD3kl4LW9N4=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=oLWLGMOPE54"
   },
   {
+    "name": "夕凪万夜",
+    "youtubeid": "UCJLYktDEOak1rSOGRVRKlLQ",
+    "title": "【#雑談】初見さん◎ゲリラ朝活！【パレデミア学園/夕凪万夜】#vtuber #新人vtuber #朝活 #ゆうなぎ放送局",
+    "date": "2026-06-05T05:01:16.000+09:00",
+    "status": "live",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/RE0fnPvZrJU/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/zOlQ66VHDdW9B1w3cRbHlo-3cfkYBLVHzYpXS_xLbOv9bHe72uv-bD246R7gCEfD_7wGBc-6vQ=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=RE0fnPvZrJU"
+  },
+  {
     "name": "ニコ・ダークウェル",
     "youtubeid": "UCwSq7LbTyR1lXLJphsHKy2A",
-    "title": "【ゲーム実況】ダイエット阻止ゲーム 初見さん◎　#新人vtuber #vtuber #ニコニコダークストリーム #パレデミア学園",
-    "date": "2026-06-05T05:30:00.000+09:00",
-    "status": "upcoming",
+    "title": "【ゲーム実況】UnderDevelopment 初見さん◎　#新人vtuber #vtuber #ニコニコダークストリーム #パレデミア学園",
+    "date": "2026-06-05T05:29:25.000+09:00",
+    "status": "live",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/Zwv0Ypca16c/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/FZAApPZQQXHgHOVY8RCKI0eGvcyJ19mHBpWOT-a_pR_rY6LC8Z2Z9K0gpd4zuwNnYxA-XkKF=s240-c-k-c0x00ffffff-no-rj",

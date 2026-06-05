@@ -128,28 +128,28 @@
   {
     "name": "なかもとおまち",
     "twitchid": "41futon",
-    "title": "難破からの学マス",
-    "date": "2026-06-05T13:01:17.000+09:00",
-    "status": "live",
-    "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/1405880b-e945-4720-98c9-6a08c6400cae-profile_image-300x300.png",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_41futon-320x180.jpg"
-  },
-  {
-    "name": "なかもとおまち",
-    "twitchid": "41futon",
     "title": "朝活いくぞ～～MR1700島へ出航です！",
     "date": "2026-06-05T13:01:22.000+09:00",
     "status": "archive",
     "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/1405880b-e945-4720-98c9-6a08c6400cae-profile_image-300x300.png",
-    "thumbnail": "https://vod-secure.twitch.tv/_404/404_processing_320x180.png"
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/458fbde8aecb37da61e4_41futon_315987573873_1780632077//thumb/thumb0-320x180.jpg"
   },
   {
     "name": "しーはむ",
     "twitchid": "siyham",
     "title": "少しだけ。グウェン練習",
-    "date": "2026-06-05T14:50:55.000+09:00",
-    "status": "live",
+    "date": "2026-06-05T14:51:00.000+09:00",
+    "status": "archive",
     "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/e1c097ec-5528-472a-a299-4dc50a979373-profile_image-300x300.png",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_siyham-320x180.jpg"
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/3e7fa591824002567bc9_siyham_315996642802_1780638655//thumb/thumb0-320x180.jpg"
+  },
+  {
+    "name": "李じゅぴ汰",
+    "twitchid": "lee_jupita",
+    "title": "【Life is Strange: Double Exposure】不法侵入の達人だった③【ライフイズストレンジ】",
+    "date": "2026-06-05T16:07:44.000+09:00",
+    "status": "archive",
+    "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/5706bc75-6841-4954-8894-7b7bfba16adb-profile_image-300x300.png",
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/98f32e239f05786fe4f3_lee_jupita_315996875634_1780643259//thumb/thumb0-320x180.jpg"
   }
 ]

@@ -115,5 +115,41 @@
     "status": "archive",
     "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/76f2958e-cab4-41b8-98c1-cc4d275b2ca5-profile_image-300x300.png",
     "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/349daed8aa94b78db7a6_chi7_v_316048751603_1780581748//thumb/thumb0-320x180.jpg"
+  },
+  {
+    "name": "なかもとおまち",
+    "twitchid": "41futon",
+    "title": "朝活いくぞ～～MR1700島へ出航です！",
+    "date": "2026-06-05T12:18:47.000+09:00",
+    "status": "archive",
+    "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/1405880b-e945-4720-98c9-6a08c6400cae-profile_image-300x300.png",
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/9d9ecb59b8f7acaf34aa_41futon_315987462129_1780629522//thumb/thumb0-320x180.jpg"
+  },
+  {
+    "name": "なかもとおまち",
+    "twitchid": "41futon",
+    "title": "難破からの学マス",
+    "date": "2026-06-05T13:01:17.000+09:00",
+    "status": "live",
+    "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/1405880b-e945-4720-98c9-6a08c6400cae-profile_image-300x300.png",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_41futon-320x180.jpg"
+  },
+  {
+    "name": "なかもとおまち",
+    "twitchid": "41futon",
+    "title": "朝活いくぞ～～MR1700島へ出航です！",
+    "date": "2026-06-05T13:01:22.000+09:00",
+    "status": "archive",
+    "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/1405880b-e945-4720-98c9-6a08c6400cae-profile_image-300x300.png",
+    "thumbnail": "https://vod-secure.twitch.tv/_404/404_processing_320x180.png"
+  },
+  {
+    "name": "しーはむ",
+    "twitchid": "siyham",
+    "title": "少しだけ。グウェン練習",
+    "date": "2026-06-05T14:50:55.000+09:00",
+    "status": "live",
+    "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/e1c097ec-5528-472a-a299-4dc50a979373-profile_image-300x300.png",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_siyham-320x180.jpg"
   }
 ]

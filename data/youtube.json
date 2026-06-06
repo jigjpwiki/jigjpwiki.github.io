@@ -1720,7 +1720,7 @@
     "youtubeid": "UC9nhm1B-XhPaUO8W8oc4thQ",
     "title": "【視聴者参加型】オセロで戦うぞ！【パレデミア学園】",
     "date": "2026-06-07T00:00:51.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/8yEP44uyRKY/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/3KzF3YSQvjRpSMpFZEEsaGlIcETMW03ZmdKQy_TjJIm8t9vC4AjNwLLR5hNqXi0M9qnyszb0PCY=s240-c-k-c0x00ffffff-no-rj",
@@ -1764,7 +1764,7 @@
     "youtubeid": "UCa1C15g_z1k5oQIYCeD2Hdw",
     "title": "【つぐのひ】今度こそ悲鳴をあげない・・・【パレデミア学園】#伊織実行中",
     "date": "2026-06-07T01:44:44.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/BgdIWVQ8OAM/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/fOSQN7R8b2LFTwHpvzc3RfsR_nJ02TIUKscIIj-hYwqWAsmMmqiixAt7XTbJTuH5MRqir4oC9Q=s240-c-k-c0x00ffffff-no-rj",
@@ -1780,6 +1780,28 @@
     "thumbnail": "https://i.ytimg.com/vi/9czh-KboVyY/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/eW_Hug0M6zFk9QSbAmOUWLMSfzBlCHmes-8yAksvfUNzyLgY6TSsE_eW8ncfE4bHYZXKoTWxmQ=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=9czh-KboVyY"
+  },
+  {
+    "name": "宵坂伊織",
+    "youtubeid": "UCa1C15g_z1k5oQIYCeD2Hdw",
+    "title": "【原神】寝れるようになるまでやる【パレデミア学園】#伊織実行中",
+    "date": "2026-06-07T03:15:28.000+09:00",
+    "status": "archive",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/eKQZgSdSOz0/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/fOSQN7R8b2LFTwHpvzc3RfsR_nJ02TIUKscIIj-hYwqWAsmMmqiixAt7XTbJTuH5MRqir4oC9Q=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=eKQZgSdSOz0"
+  },
+  {
+    "name": "瀬奈りるか",
+    "youtubeid": "UCWi_ztz8Xuz4XfzhoG6ZfyA",
+    "title": "【総力戦】新ボスドラム缶ガニ！🦀✨２凸でトマトクリアしたい🍅💭並走･ROM･寝落ち大歓迎🎶人のTLを参考にチナトロ上位を目指す作業配信🎶【ブルーアーカイブ】＃せなりるライブ",
+    "date": "2026-06-07T03:15:57.000+09:00",
+    "status": "archive",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/BF4hcxCO-8s/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/BaxFKUrCc4gGKc1wwAHt4ebjk8C69NdTl3fMz9LoR5SUm_Tpvv2yixsbJhp8qsld6S0tdgup=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=BF4hcxCO-8s"
   },
   {
     "name": "桜庭羽奈",

@@ -1683,6 +1683,17 @@
     "url": "https://www.youtube.com/watch?v=DI8vHMYxPxc"
   },
   {
+    "name": "灯野ぺけ。",
+    "youtubeid": "UCldoz5HLh6BMW29HGnRpC0Q",
+    "title": "【ど初心者のよちよちApex🔫】コラボ 初見さん/ROMの人もおいで～💥≪パレデミア学園 / 灯野ぺけ。≫ #vtuber #ゲーム配信 #apex",
+    "date": "2026-06-07T23:01:56.000+09:00",
+    "status": "archive",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/MH6p6tQYJ1s/mqdefault.jpg",
+    "channelIcon": "https://yt3.ggpht.com/sYbvo_2nSCW162VEArIwu7v1B3bl159gmEnGgGei8I8drc4l7huPP7q6aWZ4AfXi5wTMACmGow=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=MH6p6tQYJ1s"
+  },
+  {
     "name": "新巻るろな",
     "youtubeid": "UCUd4wJjvPQflbLnsk_YHleA",
     "title": "【#雑談】おやすみ雑談って何【新巻るろな／パレデミア学園】　#vtuber",
@@ -1720,9 +1731,9 @@
     "youtubeid": "UC5bCRde8xRrNS7s6GjCNCyQ",
     "title": "#16【 #ゼルダの伝説ムジュラの仮面 】完全初見※トラウマ注意※ 闇が深すぎるゼルダ、ムジュラの仮面【変幻リメ】【※ネタバレ厳禁】",
     "date": "2026-06-07T23:31:24.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/Lz8HnUzQT7E/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/Lz8HnUzQT7E/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/4hssn4EXW2lORXRfiuYTjmYfnlZoQ2h72sdEompqX7GQwAKCsBx7eL0joCFSook1rfCKIcpykg=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=Lz8HnUzQT7E"
   },
@@ -1736,6 +1747,17 @@
     "thumbnail": "https://i.ytimg.com/vi/dQU7J9Ep-Zg/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/4t0lTung_X29I2abs2pm5ds33Xmo4umZzRJdmvSfMlI639aZhci-OjxB65nuoH447t3wS99z6N4=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=dQU7J9Ep-Zg"
+  },
+  {
+    "name": "夏渚まはろ",
+    "youtubeid": "UC_a00ml_EVDXSrtY8ZuyqGQ",
+    "title": "【雑談】近況とかパレプロ感謝祭2026の話とかWickの話とか【#夏渚まはろ￤#パレプロ】",
+    "date": "2026-06-08T01:00:27.000+09:00",
+    "status": "live",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/tEYN1jOOYyY/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/iktv-39nC7NDASD1WeXms-DEuHuVqB5RhwTtdDe26w-BCvqf6yq3r_8zBiv2i2CfNXCK0uE8=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=tEYN1jOOYyY"
   },
   {
     "name": "ニコ・ダークウェル",
@@ -1769,5 +1791,16 @@
     "thumbnail": "https://i.ytimg.com/vi/4Fml-Q1_o5M/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/CH5JMWVQZ_RtloaXoj6W-yXjo9x8UxXSBG_vMyDnfk7M2QTOApVE1zOesu_aDrSAqvDbGrUyxs0=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=4Fml-Q1_o5M"
+  },
+  {
+    "name": "秋桜しゅお",
+    "youtubeid": "UCPjtwOeRQV5EFkCwUycZsgw",
+    "title": "【オーストラリア在住VTuber】肉2㎏食うまでオーストラリアに帰れません【秋桜しゅお/橋門エル】",
+    "date": "2026-06-08T21:00:00.000+09:00",
+    "status": "upcoming",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/Es4316QYpRo/mqdefault.jpg",
+    "channelIcon": "https://yt3.ggpht.com/WBGP05KaXeA21IzCbCeM0QHa0v9maVvVUBDZ2DyfTT62F1wGaW3hLOQBy1gCfuQfEnDNgwbsrQ=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=Es4316QYpRo"
   }
 ]

@@ -1,14 +1,5 @@
 [
   {
-    "name": "月皇ちな",
-    "twitchid": "chi7_v",
-    "title": "祝２周年！初配信振り返る #chi7live",
-    "date": "2026-06-04T23:02:33.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/76f2958e-cab4-41b8-98c1-cc4d275b2ca5-profile_image-300x300.png",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/349daed8aa94b78db7a6_chi7_v_316048751603_1780581748//thumb/thumb0-320x180.jpg"
-  },
-  {
     "name": "なかもとおまち",
     "twitchid": "41futon",
     "title": "朝活いくぞ～～MR1700島へ出航です！",
@@ -111,9 +102,18 @@
     "name": "なかもとおまち",
     "twitchid": "41futon",
     "title": "【ELDEN RING】マレニアチャレンジ#2いきます🔰※ビッツ禁止",
-    "date": "2026-06-07T14:15:07.000+09:00",
-    "status": "live",
+    "date": "2026-06-07T14:15:13.000+09:00",
+    "status": "archive",
     "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/1405880b-e945-4720-98c9-6a08c6400cae-profile_image-300x300.png",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_41futon-320x180.jpg"
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/66e60c0c47b94297c48f_41futon_316060892787_1780809307//thumb/thumb0-320x180.jpg"
+  },
+  {
+    "name": "水透ユウ",
+    "twitchid": "minato_yu_",
+    "title": "【 #R6S 】トロフィー生活CUPチーム練習【水透ユウ/ぷろのゔぁ】#ubisoftpartner #ユウおんらいぶ",
+    "date": "2026-06-07T21:56:29.000+09:00",
+    "status": "live",
+    "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/fc4f961e-29c3-4f2e-9880-161fbf3b98eb-profile_image-300x300.png",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_minato_yu_-320x180.jpg"
   }
 ]

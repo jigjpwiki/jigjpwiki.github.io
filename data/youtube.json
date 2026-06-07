@@ -1370,7 +1370,7 @@
     "date": "2026-06-07T11:57:46.000+09:00",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/619amglAtFA/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/619amglAtFA/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/FZAApPZQQXHgHOVY8RCKI0eGvcyJ19mHBpWOT-a_pR_rY6LC8Z2Z9K0gpd4zuwNnYxA-XkKF=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=619amglAtFA"
   },
@@ -1403,7 +1403,7 @@
     "date": "2026-06-07T14:30:38.000+09:00",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/6CAaQPGVhtY/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/6CAaQPGVhtY/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/XWKUawU_WoX_xINkx3TMSF3fj0RbdiwNezFiEAGcmHfQYvwkjMUM1mvyOmgsbK8LxHoo6aEKJA=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=6CAaQPGVhtY"
   },
@@ -1753,9 +1753,9 @@
     "youtubeid": "UC_a00ml_EVDXSrtY8ZuyqGQ",
     "title": "【雑談】近況とかパレプロ感謝祭2026の話とかWickの話とか【#夏渚まはろ￤#パレプロ】",
     "date": "2026-06-08T01:00:27.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/tEYN1jOOYyY/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/tEYN1jOOYyY/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/iktv-39nC7NDASD1WeXms-DEuHuVqB5RhwTtdDe26w-BCvqf6yq3r_8zBiv2i2CfNXCK0uE8=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=tEYN1jOOYyY"
   },
@@ -1802,5 +1802,16 @@
     "thumbnail": "https://i.ytimg.com/vi/Es4316QYpRo/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/WBGP05KaXeA21IzCbCeM0QHa0v9maVvVUBDZ2DyfTT62F1wGaW3hLOQBy1gCfuQfEnDNgwbsrQ=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=Es4316QYpRo"
+  },
+  {
+    "name": "夏渚まはろ",
+    "youtubeid": "UC_a00ml_EVDXSrtY8ZuyqGQ",
+    "title": "【雀魂】初めての参加型配信！僕には協力なスタンドがついています。コーチング：空星きらめ【#夏渚まはろ￤#空星きらめ￤#パレプロ】",
+    "date": "2026-06-08T21:00:00.000+09:00",
+    "status": "upcoming",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/wO1xKjXyfPI/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/iktv-39nC7NDASD1WeXms-DEuHuVqB5RhwTtdDe26w-BCvqf6yq3r_8zBiv2i2CfNXCK0uE8=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=wO1xKjXyfPI"
   }
 ]

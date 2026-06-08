@@ -1,14 +1,5 @@
 [
   {
-    "name": "月皇ちな",
-    "twitchid": "chi7_v",
-    "title": "UMIVALO交流カスタム！w/皆様  #chi7live",
-    "date": "2026-06-05T21:28:42.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/76f2958e-cab4-41b8-98c1-cc4d275b2ca5-profile_image-300x300.png",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/091bd35b871713471538_chi7_v_316052708595_1780662517//thumb/thumb0-320x180.jpg"
-  },
-  {
     "name": "銘兎目あう",
     "twitchid": "Metome_Au",
     "title": "【スト６】常闇祭2 ななりーちゃん🍓花岡ももちゃん🍑銘兎目あう🐰「ベリーピーチバニー」",
@@ -66,9 +57,54 @@
     "name": "銘兎目あう",
     "twitchid": "Metome_Au",
     "title": "【スト６】戦闘力 1601MR～Mケン🥊🥋強敵出現🐲！？スカウター反応あり👓",
-    "date": "2026-06-08T20:28:40.000+09:00",
-    "status": "live",
+    "date": "2026-06-08T20:28:46.000+09:00",
+    "status": "archive",
     "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/6eea4ef4-a33b-4c66-9378-ad3aa84b1187-profile_image-300x300.png",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_Metome_Au-320x180.jpg"
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/8ab5a669d013dcda0844_metome_au_316003302385_1780918120//thumb/thumb0-320x180.jpg"
+  },
+  {
+    "name": "李じゅぴ汰",
+    "twitchid": "lee_jupita",
+    "title": "【スト6】イングリットのストーリーやる！！！(ワールドツアー)【縦型/李じゅぴ汰】",
+    "date": "2026-06-08T20:59:07.000+09:00",
+    "status": "archive",
+    "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/5706bc75-6841-4954-8894-7b7bfba16adb-profile_image-300x300.png",
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/bf4099983c1c65fe07e1_lee_jupita_316003472881_1780919941//thumb/thumb0-320x180.jpg"
+  },
+  {
+    "name": "水透ユウ",
+    "twitchid": "minato_yu_",
+    "title": "【 #R6S 】22時～トロフィー生活CUPチーム練習【水透ユウ/ぷろのゔぁ】#ubisoftpartner #ユウおんらいぶ",
+    "date": "2026-06-08T21:04:11.000+09:00",
+    "status": "archive",
+    "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/fc4f961e-29c3-4f2e-9880-161fbf3b98eb-profile_image-300x300.png",
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/a73fa38d9439af41a5dd_minato_yu__316003522417_1780920245//thumb/thumb0-320x180.jpg"
+  },
+  {
+    "name": "なかもとおまち",
+    "twitchid": "41futon",
+    "title": "イングリッドのコンボ覚えたい年頃",
+    "date": "2026-06-08T21:57:47.000+09:00",
+    "status": "live",
+    "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/1405880b-e945-4720-98c9-6a08c6400cae-profile_image-300x300.png",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_41futon-320x180.jpg"
+  },
+  {
+    "name": "月皇ちな",
+    "twitchid": "chi7_v",
+    "title": "質問答えます  #chi7live",
+    "date": "2026-06-08T22:09:04.000+09:00",
+    "status": "live",
+    "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/76f2958e-cab4-41b8-98c1-cc4d275b2ca5-profile_image-300x300.png",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_chi7_v-320x180.jpg"
+  },
+  {
+    "name": "真昼ねる",
+    "twitchid": "mahiruneru",
+    "title": "久しぶりの配信でひさシージを堪能するぜぃ🌟【真昼ねる￤ぷろのゔぁ】",
+    "date": "2026-06-08T22:46:50.000+09:00",
+    "status": "live",
+    "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/90e97ba8-20ac-4d1d-861a-d27ed84b5d70-profile_image-300x300.png",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_mahiruneru-320x180.jpg"
   }
 ]

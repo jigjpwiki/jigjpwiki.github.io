@@ -1,14 +1,5 @@
 [
   {
-    "name": "火乃晴るい",
-    "twitchid": "hinoha_rui",
-    "title": "【 #POE2 】装備更新したからお金稼ぎたい(願望)20:30くらいまでかも",
-    "date": "2026-06-06T18:16:37.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/9e02effe-cf25-4ba0-9fe7-da457d4e8c87-profile_image-300x300.png",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/820a0728585e220f65fe_hinoha_rui_315993327089_1780737392//thumb/thumb0-320x180.jpg"
-  },
-  {
     "name": "なかもとおまち",
     "twitchid": "41futon",
     "title": "【ELDEN RING】マレニアチャレンジ#2いきます🔰※ビッツ禁止",
@@ -93,9 +84,36 @@
     "name": "なかもとおまち",
     "twitchid": "41futon",
     "title": "朝活だなあイングリッド頑張る！",
-    "date": "2026-06-09T13:04:19.000+09:00",
-    "status": "live",
+    "date": "2026-06-09T13:04:24.000+09:00",
+    "status": "archive",
     "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/1405880b-e945-4720-98c9-6a08c6400cae-profile_image-300x300.png",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_41futon-320x180.jpg"
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/529205d0c9aed75d3879_41futon_316015376754_1780977859//thumb/thumb0-320x180.jpg"
+  },
+  {
+    "name": "李じゅぴ汰",
+    "twitchid": "lee_jupita",
+    "title": "【Life is Strange: Double Exposure】ドッペルゲンガーってこわ～い④【ライフイズストレンジ】",
+    "date": "2026-06-09T18:40:11.000+09:00",
+    "status": "archive",
+    "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/5706bc75-6841-4954-8894-7b7bfba16adb-profile_image-300x300.png",
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/290640463187eae65c11_lee_jupita_316016393970_1780998006//thumb/thumb0-320x180.jpg"
+  },
+  {
+    "name": "銘兎目あう",
+    "twitchid": "Metome_Au",
+    "title": "【スト６】1554MR～Mケン🥋毎日配信460日目✨ありがとう🐰🌷",
+    "date": "2026-06-09T20:31:29.000+09:00",
+    "status": "live",
+    "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/6eea4ef4-a33b-4c66-9378-ad3aa84b1187-profile_image-300x300.png",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_Metome_Au-320x180.jpg"
+  },
+  {
+    "name": "銘兎目あう",
+    "twitchid": "Metome_Au",
+    "title": "【スト６】1554MR～Mケン🥋毎日配信460日目✨ありがとうございました🐰🌷",
+    "date": "2026-06-09T20:31:34.000+09:00",
+    "status": "archive",
+    "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/6eea4ef4-a33b-4c66-9378-ad3aa84b1187-profile_image-300x300.png",
+    "thumbnail": "https://vod-secure.twitch.tv/_404/404_processing_320x180.png"
   }
 ]

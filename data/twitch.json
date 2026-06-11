@@ -1,14 +1,5 @@
 [
   {
-    "name": "火乃晴るい",
-    "twitchid": "hinoha_rui",
-    "title": "【 #POE2 】Drops✅最後のアセンダンシーそろそろ欲しい！！！チルポエ２",
-    "date": "2026-06-09T00:15:18.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/9e02effe-cf25-4ba0-9fe7-da457d4e8c87-profile_image-300x300.png",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/21ee13840b36338a53e8_hinoha_rui_316068034291_1780931713//thumb/thumb0-320x180.jpg"
-  },
-  {
     "name": "なかもとおまち",
     "twitchid": "41futon",
     "title": "朝活だなあイングリッド頑張る！",
@@ -120,18 +111,27 @@
     "name": "月皇ちな",
     "twitchid": "chi7_v",
     "title": "ちょっとOW  #chi7live",
-    "date": "2026-06-11T22:26:57.000+09:00",
-    "status": "live",
+    "date": "2026-06-11T22:27:03.000+09:00",
+    "status": "archive",
     "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/76f2958e-cab4-41b8-98c1-cc4d275b2ca5-profile_image-300x300.png",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_chi7_v-320x180.jpg"
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/e2f4da5b3a8695554559_chi7_v_316017545713_1781184417//thumb/thumb0-320x180.jpg"
   },
   {
     "name": "真昼ねる",
     "twitchid": "mahiruneru",
     "title": "GO！Mジュリ！～ 他責連打ネキ誕生 ～ 【真昼ねる￤ぷろのゔぁ】",
-    "date": "2026-06-11T22:33:27.000+09:00",
-    "status": "live",
+    "date": "2026-06-11T22:33:32.000+09:00",
+    "status": "archive",
     "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/90e97ba8-20ac-4d1d-861a-d27ed84b5d70-profile_image-300x300.png",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_mahiruneru-320x180.jpg"
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/dd9a30a6251b3a1c5904_mahiruneru_316026785650_1781184807//thumb/thumb0-320x180.jpg"
+  },
+  {
+    "name": "火乃晴るい",
+    "twitchid": "hinoha_rui",
+    "title": "【 #POE2 】Drops✅MB目指してお金を貯めたい…！安定深夜のチルポエ２",
+    "date": "2026-06-12T01:19:20.000+09:00",
+    "status": "live",
+    "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/9e02effe-cf25-4ba0-9fe7-da457d4e8c87-profile_image-300x300.png",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_hinoha_rui-320x180.jpg"
   }
 ]

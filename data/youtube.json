@@ -1,38 +1,5 @@
 [
   {
-    "name": "天堂ライラ",
-    "youtubeid": "UCpdWNjSU-onhmcARqgHIfpg",
-    "title": "【#雑談】作業しようと思ったけどおはなししたい！ #天堂観測【パレデミア学園/天堂ライラ】",
-    "date": "2026-06-09T00:42:27.000+09:00",
-    "status": "archive",
-    "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/mySgt6C6nQk/mqdefault.jpg",
-    "channelIcon": "https://yt3.ggpht.com/JA8QqThoUnCNAgJASH3p_wPyWJBf2ILiUfpIvArr6592NkkrFntPQ4EgPsahnLpPCMP4mk93ig=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=mySgt6C6nQk"
-  },
-  {
-    "name": "七音うら",
-    "youtubeid": "UCv2IYO-4waCpHvn50SWWY2A",
-    "title": "【#雑談配信 】久々！配信の仕方忘れてるかもしれない配信。【七音うら】",
-    "date": "2026-06-09T02:00:18.000+09:00",
-    "status": "archive",
-    "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/pMWEXmHToH8/mqdefault.jpg",
-    "channelIcon": "https://yt3.ggpht.com/T655ATpSd2gkjZBrokvlkaUH0f5-fCpQdcJpwxmmNdy6fxCYffAlq2sMhPOtFk_CvVyOkEPY8Q=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=pMWEXmHToH8"
-  },
-  {
-    "name": "天辻ゆらぐ",
-    "youtubeid": "UCeOFQCn_QZJMTszlRYRg3rQ",
-    "title": "【縦型/雑談歌枠】初見歓迎✨️高評価77目標！あなたのお姉さんアイドルVtuber🪼💜【天辻ゆらぐ/パレデミア学園】 #新人Vtuber #ゆらぐっどたいむ",
-    "date": "2026-06-09T02:51:53.000+09:00",
-    "status": "archive",
-    "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/S3_Vt9_ksHU/mqdefault.jpg",
-    "channelIcon": "https://yt3.ggpht.com/4AFFu60kFJqix-OhtDW3EJdQ0jQa1LrK56tGpvqvbGodMQFpkH-_qtvL_66dPGD3kl4LW9N4=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=S3_Vt9_ksHU"
-  },
-  {
     "name": "ニコ・ダークウェル",
     "youtubeid": "UCwSq7LbTyR1lXLJphsHKy2A",
     "title": "【ゲーム実況】朝から次郎系！？ 食欲VSシスター 初見さん◎　#新人vtuber #vtuber #ニコニコダークストリーム #パレデミア学園",
@@ -1216,7 +1183,7 @@
     "date": "2026-06-11T11:59:38.000+09:00",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/zZm3MlSonXk/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/zZm3MlSonXk/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/HZPUrbSwGcllAbUtx6xggJ6lKfMfnAWDxWOCc01tpthiDipSqQP48TK5Jqz4GRzUdwKMUsxlsg=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=zZm3MlSonXk"
   },
@@ -1238,7 +1205,7 @@
     "date": "2026-06-11T12:02:26.000+09:00",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/mMsevH-R528/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/mMsevH-R528/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/Z7PlAWhweuycNXNXoQ6etyDTkduySM-Kqy8kQW-AD19JuRdxT3HSdIxogPw3GPD5NHw_vZlf=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=mMsevH-R528"
   },
@@ -1324,9 +1291,9 @@
     "youtubeid": "UCIaZylf5L9MsCMOJX3BdTEg",
     "title": "【Return of the Obra Dinn】あなたは誰なの？【パレプロ／七海ロナ】",
     "date": "2026-06-11T20:05:08.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/SPzE6sobteo/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/SPzE6sobteo/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/86cM_4q1A56pIYgdKxh776hM0nropjiZIlmXbfroWHXQ-MjdGGsjLcL5hMDOFL-T2EJHmybT=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=SPzE6sobteo"
   },
@@ -1419,15 +1386,15 @@
     "url": "https://www.youtube.com/watch?v=sTcNM7ihwgQ"
   },
   {
-    "name": "夏渚まはろ",
-    "youtubeid": "UC_a00ml_EVDXSrtY8ZuyqGQ",
-    "title": "【Slay the Spire 2】スレスパマルチで女子会！ボコボコにしちゃうぞ❤【#夏渚まはろ￤#パレプロ】",
-    "date": "2026-06-11T21:30:00.000+09:00",
-    "status": "upcoming",
+    "name": "四葉みっけ",
+    "youtubeid": "UCObfu1e9xeIzisKCslx_XQA",
+    "title": "【縦型同時/偽神】ホラーゲームやっていくよ！こ、怖くなんてないもん！！【パレデミア学園/新人VTuber】",
+    "date": "2026-06-11T21:16:36.000+09:00",
+    "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/EGCO58H27FU/mqdefault_live.jpg",
-    "channelIcon": "https://yt3.ggpht.com/iktv-39nC7NDASD1WeXms-DEuHuVqB5RhwTtdDe26w-BCvqf6yq3r_8zBiv2i2CfNXCK0uE8=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=EGCO58H27FU"
+    "thumbnail": "https://i.ytimg.com/vi/3U3HEwkOgZk/mqdefault.jpg",
+    "channelIcon": "https://yt3.ggpht.com/GX5900eq9zWhjaH0ed2mHxFSbUs6l-IXI1O5Joa9qp0M5BTw76KhoMpBC31IvZatLYymIatPMho=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=3U3HEwkOgZk"
   },
   {
     "name": "鈴木沙透",
@@ -1439,6 +1406,28 @@
     "thumbnail": "https://i.ytimg.com/vi/3MlEVG7Edg4/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/h4kuTtFCGhkDV4nmk6qjQt8auhkqLEqWwB9Il3NZR6op3ph-a0YElRfLcXkZVPp6xqvGmZHy3w=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=3MlEVG7Edg4"
+  },
+  {
+    "name": "夏渚まはろ",
+    "youtubeid": "UC_a00ml_EVDXSrtY8ZuyqGQ",
+    "title": "【Slay the Spire 2】スレスパマルチで女子会！ボコボコにしちゃうぞ❤【#夏渚まはろ￤#パレプロ】",
+    "date": "2026-06-11T21:37:19.000+09:00",
+    "status": "archive",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/EGCO58H27FU/mqdefault.jpg",
+    "channelIcon": "https://yt3.ggpht.com/iktv-39nC7NDASD1WeXms-DEuHuVqB5RhwTtdDe26w-BCvqf6yq3r_8zBiv2i2CfNXCK0uE8=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=EGCO58H27FU"
+  },
+  {
+    "name": "雛菊のん",
+    "youtubeid": "UChccV6U0Tkx9de4YjXbEelw",
+    "title": "朝なのに朝じゃない歌枠切り抜き#shorts #vtuber #新人vtuber #おしゃべり #切り抜き #個人勢vtuber #歌枠切り抜き",
+    "date": "2026-06-11T22:00:33.000+09:00",
+    "status": "archive",
+    "type": "video",
+    "thumbnail": "https://i.ytimg.com/vi/W-AX_a2ui28/mqdefault.jpg",
+    "channelIcon": "https://yt3.ggpht.com/-7v40HQCqllHpJD69LHIo2n5lUt-pZ-bLtfrKAXhZk9OF06nj4Lno3gwBvO8d1jBSl5dCCxAxQ=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=W-AX_a2ui28"
   },
   {
     "name": "フローレ・ブランカ",
@@ -1467,11 +1456,22 @@
     "youtubeid": "UCI-8WyYqMymGPw9vg55HXDQ",
     "title": "〚 スト6 〛GO！Mジュリ！～ 他責連打ネキ誕生 ～ ＃スト6【ぷろのゔぁ￤VTuber￤真昼ねる】",
     "date": "2026-06-11T22:35:17.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/UH2o6u0oCks/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/UH2o6u0oCks/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/Cu6AMAZAEC_DTANKoaloA_4iLCuEUQ8BiAwyHGuOUG9GtoIw6s7mXCv1-49LV1IgODYZfGowzQ=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=UH2o6u0oCks"
+  },
+  {
+    "name": "桜堂ねる",
+    "youtubeid": "UC0H7dRRqhfOifbYQ2TURdAg",
+    "title": "6月11日【桜堂ねる】#今日は何の日 #ねる道場 #vtuber #shorts",
+    "date": "2026-06-11T22:37:49.000+09:00",
+    "status": "archive",
+    "type": "video",
+    "thumbnail": "https://i.ytimg.com/vi/0hV4j8ZrzYo/mqdefault.jpg",
+    "channelIcon": "https://yt3.ggpht.com/hBz75E3AEST1Dzv5vOTHAqoJfayd30WIWWQ3ZFLlWMHDsyZ_QD6ZVVUtLTKSizalT3APPtdpFGI=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=0hV4j8ZrzYo"
   },
   {
     "name": "冬星れんこん",
@@ -1485,24 +1485,57 @@
     "url": "https://www.youtube.com/watch?v=vJq09MK2QBk"
   },
   {
+    "name": "宵坂伊織",
+    "youtubeid": "UCa1C15g_z1k5oQIYCeD2Hdw",
+    "title": "【 #ホグワーツレガシー 】ハリポタファンと行くホグワーツの旅！#5【パレデミア学園】#伊織実行中 #新人Vtuber",
+    "date": "2026-06-11T22:58:46.000+09:00",
+    "status": "archive",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/UmkhG1dT9SU/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/fOSQN7R8b2LFTwHpvzc3RfsR_nJ02TIUKscIIj-hYwqWAsmMmqiixAt7XTbJTuH5MRqir4oC9Q=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=UmkhG1dT9SU"
+  },
+  {
+    "name": "藤宮コトハ",
+    "youtubeid": "UCGndc74kfWb_A-8hZBG534Q",
+    "title": "【 勉強 】　~四柱推命~ 干支でわかる性格　60/60　【#パレプロ ／ #藤宮コトハ 】",
+    "date": "2026-06-11T23:01:36.000+09:00",
+    "status": "archive",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/hr2jJYzh5to/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/rthBXvqjNFcVwEp-AWpiZDXnNjBodSXlsDTa-sjW6uR6Ssv3wuOw2dMXDZLlYaf_c4YiKfItHXU=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=hr2jJYzh5to"
+  },
+  {
     "name": "フローレ・ブランカ",
     "youtubeid": "UCNb9zRVc1coFKxJAn9lVtsw",
     "title": "【雑談】お話ししよ！！初見さん歓迎！【フローレ・ブランカ/パレデミア学園】",
     "date": "2026-06-11T23:30:51.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/Pz1dRxD56CE/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/xqdNSKZCNQ6ekbqgjixeOR0aTymLfmP_ILAFQ4sBF7ln-ZWxQYkVjGBun2pF1PwVC6nmwi2KFxE=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=Pz1dRxD56CE"
   },
   {
+    "name": "宵坂伊織",
+    "youtubeid": "UCa1C15g_z1k5oQIYCeD2Hdw",
+    "title": "【サブノーティカ】いざ深海の冒険へ！！【パレデミア学園】#伊織実行中",
+    "date": "2026-06-11T23:32:16.000+09:00",
+    "status": "archive",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/8GmMfaUBKfw/mqdefault.jpg",
+    "channelIcon": "https://yt3.ggpht.com/fOSQN7R8b2LFTwHpvzc3RfsR_nJ02TIUKscIIj-hYwqWAsmMmqiixAt7XTbJTuH5MRqir4oC9Q=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=8GmMfaUBKfw"
+  },
+  {
     "name": "無月いお",
     "youtubeid": "UC2X_mAVGw8e3N9JQZZDVBfQ",
     "title": "【#低音女子】童話ミリしらがペロー版の三大作品にイチャモンつけてみた。《#パレデミア学園》",
     "date": "2026-06-12T00:01:40.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/oJZgqYVQfVI/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/oJZgqYVQfVI/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/Z7PlAWhweuycNXNXoQ6etyDTkduySM-Kqy8kQW-AD19JuRdxT3HSdIxogPw3GPD5NHw_vZlf=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=oJZgqYVQfVI"
   },
@@ -1511,11 +1544,44 @@
     "youtubeid": "UCpdWNjSU-onhmcARqgHIfpg",
     "title": "【#雑談】極上のレシピを考えてほしい！ #天堂観測【パレデミア学園/天堂ライラ】",
     "date": "2026-06-12T00:03:59.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/W-ky_2fSE_c/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/W-ky_2fSE_c/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/JA8QqThoUnCNAgJASH3p_wPyWJBf2ILiUfpIvArr6592NkkrFntPQ4EgPsahnLpPCMP4mk93ig=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=W-ky_2fSE_c"
+  },
+  {
+    "name": "雛菊のん",
+    "youtubeid": "UChccV6U0Tkx9de4YjXbEelw",
+    "title": "ひそひそ配信💤おやすみを届ける💕#新人vtuber #睡眠導入",
+    "date": "2026-06-12T00:04:50.000+09:00",
+    "status": "archive",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/isA3SNQu2bI/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/-7v40HQCqllHpJD69LHIo2n5lUt-pZ-bLtfrKAXhZk9OF06nj4Lno3gwBvO8d1jBSl5dCCxAxQ=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=isA3SNQu2bI"
+  },
+  {
+    "name": "宵坂伊織",
+    "youtubeid": "UCa1C15g_z1k5oQIYCeD2Hdw",
+    "title": "【つぐのひ】2時に君を助けに行くよ【パレデミア学園】#伊織実行中",
+    "date": "2026-06-12T01:54:30.000+09:00",
+    "status": "archive",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/IZShv0RN5-c/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/fOSQN7R8b2LFTwHpvzc3RfsR_nJ02TIUKscIIj-hYwqWAsmMmqiixAt7XTbJTuH5MRqir4oC9Q=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=IZShv0RN5-c"
+  },
+  {
+    "name": "七音うら",
+    "youtubeid": "UCv2IYO-4waCpHvn50SWWY2A",
+    "title": "【#雑談配信 】結局梅雨ってもうきてるの？【七音うら】",
+    "date": "2026-06-12T02:01:45.000+09:00",
+    "status": "archive",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/2NnovEr6nAE/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/T655ATpSd2gkjZBrokvlkaUH0f5-fCpQdcJpwxmmNdy6fxCYffAlq2sMhPOtFk_CvVyOkEPY8Q=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=2NnovEr6nAE"
   },
   {
     "name": "雪紫誉",
@@ -1560,5 +1626,27 @@
     "thumbnail": "https://i.ytimg.com/vi/Ulo7zxEKw2Q/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/CH5JMWVQZ_RtloaXoj6W-yXjo9x8UxXSBG_vMyDnfk7M2QTOApVE1zOesu_aDrSAqvDbGrUyxs0=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=Ulo7zxEKw2Q"
+  },
+  {
+    "name": "無月いお",
+    "youtubeid": "UC2X_mAVGw8e3N9JQZZDVBfQ",
+    "title": "【#低音女子】休憩時間をうちにください《#パレデミア学園》",
+    "date": "2026-06-12T12:00:00.000+09:00",
+    "status": "upcoming",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/NY-DpnhuyW0/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/Z7PlAWhweuycNXNXoQ6etyDTkduySM-Kqy8kQW-AD19JuRdxT3HSdIxogPw3GPD5NHw_vZlf=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=NY-DpnhuyW0"
+  },
+  {
+    "name": "夏渚まはろ",
+    "youtubeid": "UC_a00ml_EVDXSrtY8ZuyqGQ",
+    "title": "【R.E.P.O】初めてのアプデ後の世界！全裸なので服を着せてください。熟練者達と協力～！【#夏渚まはろ￤#パレプロ】",
+    "date": "2026-06-12T21:00:00.000+09:00",
+    "status": "upcoming",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/fhmmEyYos68/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/iktv-39nC7NDASD1WeXms-DEuHuVqB5RhwTtdDe26w-BCvqf6yq3r_8zBiv2i2CfNXCK0uE8=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=fhmmEyYos68"
   }
 ]

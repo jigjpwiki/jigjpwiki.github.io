@@ -1,32 +1,5 @@
 [
   {
-    "name": "銘兎目あう",
-    "twitchid": "Metome_Au",
-    "title": "【スト６】1554MR～Mケン🥋毎日配信460日目✨ありがとうございました🐰🌷",
-    "date": "2026-06-09T20:31:34.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/6eea4ef4-a33b-4c66-9378-ad3aa84b1187-profile_image-300x300.png",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/129ce828d54ccc93b803_metome_au_316071322099_1781004689//thumb/thumb0-320x180.jpg"
-  },
-  {
-    "name": "真昼ねる",
-    "twitchid": "mahiruneru",
-    "title": "チームしゅわしゅわソーダ🥤顔合わせ🏆🌟 #トロフィー生活CUP @nietsukasa @yunma_flw @kyou__u @hoei0810 【真昼ねる￤ぷろのゔぁ】",
-    "date": "2026-06-09T21:00:48.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/90e97ba8-20ac-4d1d-861a-d27ed84b5d70-profile_image-300x300.png",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/111b1f53f5da61756aed_mahiruneru_316071496307_1781006443//thumb/thumb0-320x180.jpg"
-  },
-  {
-    "name": "水透ユウ",
-    "twitchid": "minato_yu_",
-    "title": "【 #R6S 】Team ええエイムしてはりますなぁ(笑)のチーム練習（鳩×）【水透ユウ/ぷろのゔぁ】#ubisoftpartner #ユウおんらいぶ",
-    "date": "2026-06-09T22:00:41.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/fc4f961e-29c3-4f2e-9880-161fbf3b98eb-profile_image-300x300.png",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/8b7c04474aedf1c3881f_minato_yu__316071887347_1781010036//thumb/thumb0-320x180.jpg"
-  },
-  {
     "name": "火乃晴るい",
     "twitchid": "hinoha_rui",
     "title": "【 #POE2 】Drops✅強くなった気がする！MAP進めながら金策したい✨チルポエ２",
@@ -129,9 +102,18 @@
     "name": "李じゅぴ汰",
     "twitchid": "lee_jupita",
     "title": "【Life is Strange: Double Exposure】ラスト！！今日で完結するよ！⑥【ライフイズストレンジ】",
-    "date": "2026-06-12T16:36:33.000+09:00",
-    "status": "live",
+    "date": "2026-06-12T16:36:38.000+09:00",
+    "status": "archive",
     "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/5706bc75-6841-4954-8894-7b7bfba16adb-profile_image-300x300.png",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lee_jupita-320x180.jpg"
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/dc08c08b893344da61f5_lee_jupita_316029740658_1781249793//thumb/thumb0-320x180.jpg"
+  },
+  {
+    "name": "銘兎目あう",
+    "twitchid": "Metome_Au",
+    "title": "【スト６】1604MR～ケン🥋初めての休み明け～銘兎目あうACT2スタート⭐",
+    "date": "2026-06-12T20:31:08.000+09:00",
+    "status": "live",
+    "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/6eea4ef4-a33b-4c66-9378-ad3aa84b1187-profile_image-300x300.png",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_Metome_Au-320x180.jpg"
   }
 ]

@@ -1,16 +1,5 @@
 [
   {
-    "name": "ニコ・ダークウェル",
-    "youtubeid": "UCwSq7LbTyR1lXLJphsHKy2A",
-    "title": "【ゲーム実況】 すくすくすいかげーむ 初見さん◎　#新人vtuber #vtuber #ニコニコダークストリーム #パレデミア学園",
-    "date": "2026-06-11T05:54:56.000+09:00",
-    "status": "archive",
-    "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/sgRWPdIbmBc/mqdefault.jpg",
-    "channelIcon": "https://yt3.ggpht.com/FZAApPZQQXHgHOVY8RCKI0eGvcyJ19mHBpWOT-a_pR_rY6LC8Z2Z9K0gpd4zuwNnYxA-XkKF=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=sgRWPdIbmBc"
-  },
-  {
     "name": "雪紫誉",
     "youtubeid": "UCdbYinKlpkB_uMt_wPmYcsw",
     "title": "【#朝活＃雑談】ねむねむ朝雑談＃初見さん◎【#パレデミア学園/#ゆきむらじお】＃新人VTuber",
@@ -1271,7 +1260,7 @@
     "date": "2026-06-13T14:28:26.000+09:00",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/14qyKrpe6gc/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/14qyKrpe6gc/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/VB97J8AMHex_rkfd6hDhfiGhhVvrL-NNkseP2mMYSWh75sxA_oXctmxK5tV4FYgkM17RUAx6GQ=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=14qyKrpe6gc"
   },
@@ -1601,7 +1590,7 @@
     "date": "2026-06-13T23:33:47.000+09:00",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/bFPIcnT6ECo/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/bFPIcnT6ECo/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/GX5900eq9zWhjaH0ed2mHxFSbUs6l-IXI1O5Joa9qp0M5BTw76KhoMpBC31IvZatLYymIatPMho=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=bFPIcnT6ECo"
   },
@@ -1692,6 +1681,17 @@
     "thumbnail": "https://i.ytimg.com/vi/nSxf2jPWTBM/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/T655ATpSd2gkjZBrokvlkaUH0f5-fCpQdcJpwxmmNdy6fxCYffAlq2sMhPOtFk_CvVyOkEPY8Q=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=nSxf2jPWTBM"
+  },
+  {
+    "name": "天堂ライラ",
+    "youtubeid": "UCpdWNjSU-onhmcARqgHIfpg",
+    "title": "【#朝活】9:00までおはようしながら宝塚記念予測するよ！ #天堂観測【パレデミア学園/天堂ライラ】",
+    "date": "2026-06-14T06:28:00.000+09:00",
+    "status": "upcoming",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/wyqt0Ghmjug/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/JA8QqThoUnCNAgJASH3p_wPyWJBf2ILiUfpIvArr6592NkkrFntPQ4EgPsahnLpPCMP4mk93ig=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=wyqt0Ghmjug"
   },
   {
     "name": "ニコ・ダークウェル",

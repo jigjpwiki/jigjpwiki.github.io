@@ -1,27 +1,5 @@
 [
   {
-    "name": "香鳴ハノン",
-    "youtubeid": "UCay6Y3oEoiC6ZEE2G0UZu_A",
-    "title": "珍しくメガネかけて踊ってみたよ👓🩵 #超最強 #香鳴ハノン #パレプロ",
-    "date": "2026-06-13T03:48:53.000+09:00",
-    "status": "archive",
-    "type": "video",
-    "thumbnail": "https://i.ytimg.com/vi/yKypgS3FURc/mqdefault.jpg",
-    "channelIcon": "https://yt3.ggpht.com/qvbeb9E-gYc822fxxzi6Ug5QyjhqZAWbUskHANcwDWP5W8iTsK3LcQJnjS4CVBuFJ6fONsM9F7M=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=yKypgS3FURc"
-  },
-  {
-    "name": "雪紫誉",
-    "youtubeid": "UCdbYinKlpkB_uMt_wPmYcsw",
-    "title": "【#朝活＃雑談】土曜日も早起き狼＃初見さん◎いっぱいはなそ！【#パレデミア学園/#ゆきむらじお】＃新人VTuber",
-    "date": "2026-06-13T06:02:33.000+09:00",
-    "status": "archive",
-    "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/236hNXDjLog/mqdefault.jpg",
-    "channelIcon": "https://yt3.ggpht.com/4RbHGCHx02xQ2ze4g7UCTvuUPlQCpbk6bHIb5cdqO4JNzTe5qsq4sDTt6m-xVKMm476vJiMF7A=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=236hNXDjLog"
-  },
-  {
     "name": "ニコ・ダークウェル",
     "youtubeid": "UCwSq7LbTyR1lXLJphsHKy2A",
     "title": "【ゲーム実況】 すくすくすいかげーむ #3 今日こそクリアしたい 初見さん◎　#新人vtuber #vtuber #ニコニコダークストリーム #パレデミア学園",
@@ -1269,9 +1247,9 @@
     "youtubeid": "UCttSjPiwPYpiPuCrgxK7c1g",
     "title": "【マイクラ】何事もまずは土台から！！ ドリームハウス作戦＃１ 【愛乃宮ゆめ/パレデミア学園】",
     "date": "2026-06-15T21:10:03.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/MK--iTFEzz8/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/MK--iTFEzz8/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/Gwr7KJNWnI6CEgmIfEeMZahF5pbGNKlRhQXBEkuMWE0D66--IJE77z-5Zu2i5LFBc_CA6ZkqY4Y=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=MK--iTFEzz8"
   },
@@ -1375,6 +1353,17 @@
     "url": "https://www.youtube.com/watch?v=APMYMfGNeas"
   },
   {
+    "name": "犬丸なでこ",
+    "youtubeid": "UCdJmJxMfXrlnZabUkuss2EA",
+    "title": "【雑談】リアイベありがとう！【犬丸なでこ/パレデミア学園】",
+    "date": "2026-06-15T22:24:27.000+09:00",
+    "status": "archive",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/xk7ZPgN1gXI/mqdefault.jpg",
+    "channelIcon": "https://yt3.ggpht.com/HZPUrbSwGcllAbUtx6xggJ6lKfMfnAWDxWOCc01tpthiDipSqQP48TK5Jqz4GRzUdwKMUsxlsg=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=xk7ZPgN1gXI"
+  },
+  {
     "name": "露草なぎ",
     "youtubeid": "UC9nhm1B-XhPaUO8W8oc4thQ",
     "title": "【R.E.P.O】超初心者！練習するぞ！【パレデミア学園】",
@@ -1408,6 +1397,28 @@
     "url": "https://www.youtube.com/watch?v=sy0lmaXC_4Y"
   },
   {
+    "name": "鈴木沙透",
+    "youtubeid": "UCj5nRzNFXZn9GRhITRkKElA",
+    "title": "【#雑談 】ライブ振り返り　鈴木沙透/パレデミア学園】",
+    "date": "2026-06-15T23:15:50.000+09:00",
+    "status": "archive",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/x-0ezk4FXQ4/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/h4kuTtFCGhkDV4nmk6qjQt8auhkqLEqWwB9Il3NZR6op3ph-a0YElRfLcXkZVPp6xqvGmZHy3w=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=x-0ezk4FXQ4"
+  },
+  {
+    "name": "藤森ちとせ",
+    "youtubeid": "UCAhdxmsdngH4noySdpVAVWQ",
+    "title": "【壺おじ配信】なんとなく縦型配信をしてみたかったんですね～🏺✨【 Getting Over It with Bennett Foddy 】【#vtuber 】#ちとせらいぶ #パレデミア学園",
+    "date": "2026-06-15T23:16:58.000+09:00",
+    "status": "archive",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/OJXROdspB7M/mqdefault.jpg",
+    "channelIcon": "https://yt3.ggpht.com/traR_yWe-AOGyM2wjo8h2FJO9JWBcbjfrL13X-umeD6BtNPopSZ2Q3YmdJq_5K9gWgHf_j64iQ=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=OJXROdspB7M"
+  },
+  {
     "name": "暁月クララ",
     "youtubeid": "UCn4XvlTXjGSvDynpxpOYZPQ",
     "title": "お姫様の作り方 / =LOVE【#踊ってみた 】#イコラブ #暁月クララ",
@@ -1423,9 +1434,9 @@
     "youtubeid": "UC2X_mAVGw8e3N9JQZZDVBfQ",
     "title": "【#低音女子】雑談で安眠をお届けします。《#パレデミア学園》",
     "date": "2026-06-16T00:06:09.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/LFeHeZceuTg/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/LFeHeZceuTg/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/Z7PlAWhweuycNXNXoQ6etyDTkduySM-Kqy8kQW-AD19JuRdxT3HSdIxogPw3GPD5NHw_vZlf=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=LFeHeZceuTg"
   },
@@ -1439,6 +1450,50 @@
     "thumbnail": "https://i.ytimg.com/vi/9yvk38Gl0tU/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/-7v40HQCqllHpJD69LHIo2n5lUt-pZ-bLtfrKAXhZk9OF06nj4Lno3gwBvO8d1jBSl5dCCxAxQ=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=9yvk38Gl0tU"
+  },
+  {
+    "name": "愛染アネラ",
+    "youtubeid": "UC7ek9Q4cK9O0eT3hiUYJaQw",
+    "title": "ギャルと一緒にワールドカップみよ💗スペイン VS カーボ・ベルデ⚽",
+    "date": "2026-06-16T00:59:27.000+09:00",
+    "status": "archive",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/EhAqK-2lIu4/mqdefault.jpg",
+    "channelIcon": "https://yt3.ggpht.com/R99ADiR_1bRxcNCpiGLCW6ortzJy4JZFjlLaEHeDSJfYgwO_IieZWjjp4GbZauEeMxg_hhoS3A=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=EhAqK-2lIu4"
+  },
+  {
+    "name": "汐月永遠",
+    "youtubeid": "UCCCm2ueQtW3mYUMB7Excq8g",
+    "title": "【#雑談 】毎回タイトル考えるのって大変だわね【汐月永遠/パレデミア学園】#永遠との時間",
+    "date": "2026-06-16T01:00:07.000+09:00",
+    "status": "archive",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/eWyGv-NTBXc/mqdefault.jpg",
+    "channelIcon": "https://yt3.ggpht.com/68oh3mZjSYRleiuocaxnF9VcHdbaxLQzjCq4QgdPlHe3083eTdmNkfXZ6YV81vTUA51qoNXH_g=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=eWyGv-NTBXc"
+  },
+  {
+    "name": "雪紫誉",
+    "youtubeid": "UCdbYinKlpkB_uMt_wPmYcsw",
+    "title": "【#朝活＃雑談】おはよー！！！＃初見さん◎いっぱいはなそ！【#パレデミア学園/#ゆきむらじお】＃新人VTuber",
+    "date": "2026-06-16T06:03:51.000+09:00",
+    "status": "live",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/eTOh4ysUOn8/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/4RbHGCHx02xQ2ze4g7UCTvuUPlQCpbk6bHIb5cdqO4JNzTe5qsq4sDTt6m-xVKMm476vJiMF7A=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=eTOh4ysUOn8"
+  },
+  {
+    "name": "桜庭羽奈",
+    "youtubeid": "UCPgg_A08ksSYP-VivJGniRw",
+    "title": "【初見さん20人と出会いたい】朝から歌枠！初見さん大歓迎！💛【新人VTuberの雑談／歌枠】🐻",
+    "date": "2026-06-16T06:30:00.000+09:00",
+    "status": "upcoming",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/XN9_GD-BG9E/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/04zALH6pYL7mkWILHajvBzfzg4hrwRCLBONme3K1PjuEeYJIRC6RYxPmJzVZRuN42skHEDNRGmo=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=XN9_GD-BG9E"
   },
   {
     "name": "ニコ・ダークウェル",
@@ -1474,6 +1529,17 @@
     "url": "https://www.youtube.com/watch?v=qBh369FQ0Cs"
   },
   {
+    "name": "変幻リメ",
+    "youtubeid": "UC5bCRde8xRrNS7s6GjCNCyQ",
+    "title": "【歌枠】リベンジだああああ！！！！！！[#変幻リメ]",
+    "date": "2026-06-16T20:30:00.000+09:00",
+    "status": "upcoming",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/Cja2VFTurXQ/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/4hssn4EXW2lORXRfiuYTjmYfnlZoQ2h72sdEompqX7GQwAKCsBx7eL0joCFSook1rfCKIcpykg=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=Cja2VFTurXQ"
+  },
+  {
     "name": "ニコ・ダークウェル",
     "youtubeid": "UCwSq7LbTyR1lXLJphsHKy2A",
     "title": "【記念日】 デビュー1か月おめでとう配信🍰 初見さん◎　#新人vtuber #vtuber #ニコニコダークストリーム #パレデミア学園",
@@ -1494,6 +1560,28 @@
     "thumbnail": "https://i.ytimg.com/vi/PmmbSI-bY60/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/pM4ZefnBFJ2qlBEqknYCFHdW6dLH29KptwG0OYSu1-mAVAIy5M1IjwpMwC24-A_v07nluGGrlQ=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=PmmbSI-bY60"
+  },
+  {
+    "name": "汐月永遠",
+    "youtubeid": "UCCCm2ueQtW3mYUMB7Excq8g",
+    "title": "【#誕生日記念 / #雑談  】ケーキ食べながら誕生日カウントダウンをしたい【汐月永遠/パレデミア学園】#永遠との時間",
+    "date": "2026-06-16T23:00:00.000+09:00",
+    "status": "upcoming",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/bBSI9LkTRs4/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/68oh3mZjSYRleiuocaxnF9VcHdbaxLQzjCq4QgdPlHe3083eTdmNkfXZ6YV81vTUA51qoNXH_g=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=bBSI9LkTRs4"
+  },
+  {
+    "name": "愛染アネラ",
+    "youtubeid": "UC7ek9Q4cK9O0eT3hiUYJaQw",
+    "title": "ギャルと一緒にワールドカップみよ💗フランス VS セネガル⚽",
+    "date": "2026-06-17T04:00:00.000+09:00",
+    "status": "upcoming",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/1lICCDeqg28/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/R99ADiR_1bRxcNCpiGLCW6ortzJy4JZFjlLaEHeDSJfYgwO_IieZWjjp4GbZauEeMxg_hhoS3A=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=1lICCDeqg28"
   },
   {
     "name": "天堂ライラ",

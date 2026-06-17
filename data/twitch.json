@@ -1,23 +1,5 @@
 [
   {
-    "name": "水透ユウ",
-    "twitchid": "minato_yu_",
-    "title": "【 #R6S 】ゆるくランクおば【水透ユウ/ぷろのゔぁ】 #ユウおんらいぶ",
-    "date": "2026-06-14T17:32:51.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/fc4f961e-29c3-4f2e-9880-161fbf3b98eb-profile_image-300x300.png",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/176468d78dc43b45c451_minato_yu__316039840498_1781425965//thumb/thumb0-320x180.jpg"
-  },
-  {
-    "name": "月皇ちな",
-    "twitchid": "chi7_v",
-    "title": "【Hideout City #2】1日の始まりは服選びから #隠れ家GTA #chi7live",
-    "date": "2026-06-14T18:29:06.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/76f2958e-cab4-41b8-98c1-cc4d275b2ca5-profile_image-300x300.png",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/530d18e34af7893028fc_chi7_v_316094391923_1781429341//thumb/thumb0-320x180.jpg"
-  },
-  {
     "name": "月皇ちな",
     "twitchid": "chi7_v",
     "title": "【Hideout City #2】1日の始まりは服選びから #隠れ家GTA #chi7live",
@@ -178,5 +160,41 @@
     "status": "archive",
     "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/1405880b-e945-4720-98c9-6a08c6400cae-profile_image-300x300.png",
     "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/d8e6db642a76c688f5f1_41futon_316043505265_1781671650//thumb/thumb0-320x180.jpg"
+  },
+  {
+    "name": "李じゅぴ汰",
+    "twitchid": "lee_jupita",
+    "title": "【乗せる】ソーセージについての奇妙なゲーム！をやるそ！【A weird game about sausage】",
+    "date": "2026-06-17T16:50:33.000+09:00",
+    "status": "archive",
+    "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/5706bc75-6841-4954-8894-7b7bfba16adb-profile_image-300x300.png",
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/462abb8e4b0fd46a96dd_lee_jupita_316107812083_1781682628//thumb/thumb0-320x180.jpg"
+  },
+  {
+    "name": "水透ユウ",
+    "twitchid": "minato_yu_",
+    "title": "【 #R6S 】solo rank→team unrank【水透ユウ/ぷろのゔぁ】 #ユウおんらいぶ",
+    "date": "2026-06-17T20:00:23.000+09:00",
+    "status": "live",
+    "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/fc4f961e-29c3-4f2e-9880-161fbf3b98eb-profile_image-300x300.png",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_minato_yu_-320x180.jpg"
+  },
+  {
+    "name": "銘兎目あう",
+    "twitchid": "Metome_Au",
+    "title": "【スト６】1615MR～Mケン🥋目指せグラマス👊",
+    "date": "2026-06-17T20:01:55.000+09:00",
+    "status": "live",
+    "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/6eea4ef4-a33b-4c66-9378-ad3aa84b1187-profile_image-300x300.png",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_Metome_Au-320x180.jpg"
+  },
+  {
+    "name": "火乃晴るい",
+    "twitchid": "hinoha_rui",
+    "title": "【 #POE2 】今日はアビスファームをやってみる🐍",
+    "date": "2026-06-17T20:49:35.000+09:00",
+    "status": "live",
+    "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/9e02effe-cf25-4ba0-9fe7-da457d4e8c87-profile_image-300x300.png",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_hinoha_rui-320x180.jpg"
   }
 ]

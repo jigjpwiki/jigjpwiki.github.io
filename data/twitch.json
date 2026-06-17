@@ -1,23 +1,5 @@
 [
   {
-    "name": "月皇ちな",
-    "twitchid": "chi7_v",
-    "title": "【Hideout City #2】1日の始まりは服選びから #隠れ家GTA #chi7live",
-    "date": "2026-06-14T21:04:13.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/76f2958e-cab4-41b8-98c1-cc4d275b2ca5-profile_image-300x300.png",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/345e1aaddddbdf9f72ed_chi7_v_316031300081_1781438648//thumb/thumb0-320x180.jpg"
-  },
-  {
-    "name": "火乃晴るい",
-    "twitchid": "hinoha_rui",
-    "title": "【 #POE2 】実はツイスターにビルド変えて結局戻しました…",
-    "date": "2026-06-14T23:05:30.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/9e02effe-cf25-4ba0-9fe7-da457d4e8c87-profile_image-300x300.png",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/7c8f84537414367901bc_hinoha_rui_316041420658_1781445925//thumb/thumb0-320x180.jpg"
-  },
-  {
     "name": "李じゅぴ汰",
     "twitchid": "lee_jupita",
     "title": "【ギルティギア】可愛い女の子を久々に愛でるのです【GUILTY GEAR -STRIVE- /GGST 】",
@@ -174,19 +156,19 @@
     "name": "水透ユウ",
     "twitchid": "minato_yu_",
     "title": "【 #R6S 】solo rank→team unrank【水透ユウ/ぷろのゔぁ】 #ユウおんらいぶ",
-    "date": "2026-06-17T20:00:23.000+09:00",
-    "status": "live",
+    "date": "2026-06-17T20:00:29.000+09:00",
+    "status": "archive",
     "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/fc4f961e-29c3-4f2e-9880-161fbf3b98eb-profile_image-300x300.png",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_minato_yu_-320x180.jpg"
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/c06553dc110af95b07d2_minato_yu__316108500595_1781694023//thumb/thumb0-320x180.jpg"
   },
   {
     "name": "銘兎目あう",
     "twitchid": "Metome_Au",
     "title": "【スト６】1615MR～Mケン🥋目指せグラマス👊",
-    "date": "2026-06-17T20:01:55.000+09:00",
-    "status": "live",
+    "date": "2026-06-17T20:02:00.000+09:00",
+    "status": "archive",
     "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/6eea4ef4-a33b-4c66-9378-ad3aa84b1187-profile_image-300x300.png",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_Metome_Au-320x180.jpg"
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/b62ecb26bea6617ff20a_metome_au_316108510963_1781694115//thumb/thumb0-320x180.jpg"
   },
   {
     "name": "火乃晴るい",
@@ -196,5 +178,32 @@
     "status": "live",
     "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/9e02effe-cf25-4ba0-9fe7-da457d4e8c87-profile_image-300x300.png",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_hinoha_rui-320x180.jpg"
+  },
+  {
+    "name": "月皇ちな",
+    "twitchid": "chi7_v",
+    "title": "【Hideout City #5】犯罪します #隠れ家GTA #chi7live",
+    "date": "2026-06-17T20:59:45.000+09:00",
+    "status": "live",
+    "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/76f2958e-cab4-41b8-98c1-cc4d275b2ca5-profile_image-300x300.png",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_chi7_v-320x180.jpg"
+  },
+  {
+    "name": "なかもとおまち",
+    "twitchid": "41futon",
+    "title": "【ELDEN RIENG】マレニア3回目のチャレンジ※ビッツ禁止",
+    "date": "2026-06-17T21:02:33.000+09:00",
+    "status": "archive",
+    "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/1405880b-e945-4720-98c9-6a08c6400cae-profile_image-300x300.png",
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/848d2a61881eec4e133f_41futon_316108847859_1781697748//thumb/thumb0-320x180.jpg"
+  },
+  {
+    "name": "しーはむ",
+    "twitchid": "siyham",
+    "title": "グウェン特訓中、数試合だけ",
+    "date": "2026-06-17T21:44:10.000+09:00",
+    "status": "archive",
+    "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/e1c097ec-5528-472a-a299-4dc50a979373-profile_image-300x300.png",
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/53aa0878ee217847d96e_siyham_316045439601_1781700245//thumb/thumb0-320x180.jpg"
   }
 ]

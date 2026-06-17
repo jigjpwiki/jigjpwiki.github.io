@@ -1,27 +1,5 @@
 [
   {
-    "name": "雪紫誉",
-    "youtubeid": "UCdbYinKlpkB_uMt_wPmYcsw",
-    "title": "【#朝活＃雑談】おはようください＃初見さん◎いっぱいはなそ！【#パレデミア学園/#ゆきむらじお】＃新人VTuber",
-    "date": "2026-06-15T06:05:43.000+09:00",
-    "status": "archive",
-    "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/8WYosdmUkmM/mqdefault.jpg",
-    "channelIcon": "https://yt3.ggpht.com/4RbHGCHx02xQ2ze4g7UCTvuUPlQCpbk6bHIb5cdqO4JNzTe5qsq4sDTt6m-xVKMm476vJiMF7A=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=8WYosdmUkmM"
-  },
-  {
-    "name": "ニコ・ダークウェル",
-    "youtubeid": "UCwSq7LbTyR1lXLJphsHKy2A",
-    "title": "【ゲーム実況】 すくすくすいかげーむ #5 ぽっちゃりドラゴン 初見さん◎　#新人vtuber #vtuber #ニコニコダークストリーム #パレデミア学園",
-    "date": "2026-06-15T06:30:31.000+09:00",
-    "status": "archive",
-    "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/hR8fQr6yTEY/mqdefault.jpg",
-    "channelIcon": "https://yt3.ggpht.com/FZAApPZQQXHgHOVY8RCKI0eGvcyJ19mHBpWOT-a_pR_rY6LC8Z2Z9K0gpd4zuwNnYxA-XkKF=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=hR8fQr6yTEY"
-  },
-  {
     "name": "堂下さとり",
     "youtubeid": "UCBq6MSUL-Ermvnoj3PtX7Iw",
     "title": "【雑談】堂下職業案内所⁉️DQNネームの話【堂下さとり/パレデミア学園】",
@@ -1326,7 +1304,7 @@
     "date": "2026-06-17T13:32:46.000+09:00",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/rFe0o60NMao/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/rFe0o60NMao/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/FZAApPZQQXHgHOVY8RCKI0eGvcyJ19mHBpWOT-a_pR_rY6LC8Z2Z9K0gpd4zuwNnYxA-XkKF=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=rFe0o60NMao"
   },
@@ -1617,6 +1595,17 @@
     "url": "https://www.youtube.com/watch?v=HH8vmeQN3mE"
   },
   {
+    "name": "泡清みる",
+    "youtubeid": "UC0pz1TaDyqeO5p8_gbdeunw",
+    "title": "【真夜中ティータイム】コンビニの新作にスタバ⁉️ゆるっと雑談【ぷろのゔぁ/泡清みる】",
+    "date": "2026-06-17T22:02:32.000+09:00",
+    "status": "archive",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/GtsLW1Slvww/mqdefault.jpg",
+    "channelIcon": "https://yt3.ggpht.com/XefzBgTJORQ_8-p4C-a-57IHhaUNpY9becOfXRTDmQ4ezWFTtdBtXQ5H2tJlgUTnYBXUgwZ3dg=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=GtsLW1Slvww"
+  },
+  {
     "name": "新巻るろな",
     "youtubeid": "UCUd4wJjvPQflbLnsk_YHleA",
     "title": "【#遊戯王マスターデュエル】何デッキで生きましょうか【新巻るろな／#パレデミア学園】#vtuber",
@@ -1709,9 +1698,9 @@
     "youtubeid": "UC2X_mAVGw8e3N9JQZZDVBfQ",
     "title": "【#低音女子】雑談で安眠をお届けします。《#パレデミア学園》",
     "date": "2026-06-18T00:09:14.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/z_2an9UwZvA/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/z_2an9UwZvA/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/Z7PlAWhweuycNXNXoQ6etyDTkduySM-Kqy8kQW-AD19JuRdxT3HSdIxogPw3GPD5NHw_vZlf=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=z_2an9UwZvA"
   },
@@ -1742,9 +1731,9 @@
     "youtubeid": "UCl-qrfygvCjyA_lMR5lJzig",
     "title": "初心者デュエリスト！デッキ構築し直す！4話目～最強のワイト使いへの道～　#牡丹の雪宿り",
     "date": "2026-06-18T01:00:41.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/EShvr7sfRM8/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/EShvr7sfRM8/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/K9NG8yMDYt1GGoQjhc9c-XEBm1PxGVkEhIQxos6ODhB_pk5HpUvETjUOe5LLkzzJ3biot_nWwQ=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=EShvr7sfRM8"
   },
@@ -1771,22 +1760,44 @@
     "url": "https://www.youtube.com/watch?v=m3M9QQlrvUk"
   },
   {
+    "name": "藤宮コトハ",
+    "youtubeid": "UCGndc74kfWb_A-8hZBG534Q",
+    "title": "【 ラジオ #歌枠  】　深夜のうたああ　【#パレプロ ／ #藤宮コトハ 】#singingstream",
+    "date": "2026-06-18T03:59:16.000+09:00",
+    "status": "archive",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/yb0fJR6Eo4A/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/rthBXvqjNFcVwEp-AWpiZDXnNjBodSXlsDTa-sjW6uR6Ssv3wuOw2dMXDZLlYaf_c4YiKfItHXU=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=yb0fJR6Eo4A"
+  },
+  {
     "name": "ニコ・ダークウェル",
     "youtubeid": "UCwSq7LbTyR1lXLJphsHKy2A",
     "title": "【事務所イベ2日目】バニーガール風天気予報🍰 初見さん◎　#新人vtuber #vtuber #ニコニコダークストリーム #パレデミア学園",
-    "date": "2026-06-18T05:30:00.000+09:00",
-    "status": "upcoming",
+    "date": "2026-06-18T05:37:36.000+09:00",
+    "status": "live",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/iyP-XYdm0HY/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/FZAApPZQQXHgHOVY8RCKI0eGvcyJ19mHBpWOT-a_pR_rY6LC8Z2Z9K0gpd4zuwNnYxA-XkKF=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=iyP-XYdm0HY"
   },
   {
+    "name": "雪紫誉",
+    "youtubeid": "UCdbYinKlpkB_uMt_wPmYcsw",
+    "title": "【#朝活＃雑談】おはよぉ＝＃初見さん◎いっぱいはなそ！【#パレデミア学園/#ゆきむらじお】＃新人VTuber",
+    "date": "2026-06-18T06:00:45.000+09:00",
+    "status": "live",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/ucGZtUHIgtY/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/4RbHGCHx02xQ2ze4g7UCTvuUPlQCpbk6bHIb5cdqO4JNzTe5qsq4sDTt6m-xVKMm476vJiMF7A=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=ucGZtUHIgtY"
+  },
+  {
     "name": "堂下さとり",
     "youtubeid": "UCBq6MSUL-Ermvnoj3PtX7Iw",
     "title": "【雑談】秋どこ行く？お得？【堂下さとり/パレデミア学園】",
-    "date": "2026-06-18T06:20:00.000+09:00",
-    "status": "upcoming",
+    "date": "2026-06-18T06:28:56.000+09:00",
+    "status": "live",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/4h_uf1Fqrb4/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/eW_Hug0M6zFk9QSbAmOUWLMSfzBlCHmes-8yAksvfUNzyLgY6TSsE_eW8ncfE4bHYZXKoTWxmQ=s240-c-k-c0x00ffffff-no-rj",
@@ -1796,8 +1807,8 @@
     "name": "桜庭羽奈",
     "youtubeid": "UCPgg_A08ksSYP-VivJGniRw",
     "title": "【初見さん20人と出会いたい】君に元気が出る笑顔をお届けします！初見さん大歓迎！💛【新人VTuberの雑談／歌枠】🐻",
-    "date": "2026-06-18T06:30:00.000+09:00",
-    "status": "upcoming",
+    "date": "2026-06-18T06:29:07.000+09:00",
+    "status": "live",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/_CUievLT6qA/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/04zALH6pYL7mkWILHajvBzfzg4hrwRCLBONme3K1PjuEeYJIRC6RYxPmJzVZRuN42skHEDNRGmo=s240-c-k-c0x00ffffff-no-rj",

@@ -1359,7 +1359,7 @@
     "date": "2026-06-18T12:01:14.000+09:00",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/ALLbXoVVIq8/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/ALLbXoVVIq8/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/JA8QqThoUnCNAgJASH3p_wPyWJBf2ILiUfpIvArr6592NkkrFntPQ4EgPsahnLpPCMP4mk93ig=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=ALLbXoVVIq8"
   },
@@ -1652,7 +1652,7 @@
   {
     "name": "夕凪万夜",
     "youtubeid": "UCJLYktDEOak1rSOGRVRKlLQ",
-    "title": "【#雑談】初見さん◎チャンネル登録４4０人目標！【パレデミア学園/夕凪万夜】#vtuber #新人vtuber  #ゆうなぎ放送局 #同時配信",
+    "title": "【#雑談】初見さん◎深夜雑談が朝活になった件について。【パレデミア学園/夕凪万夜】#vtuber #新人vtuber  #ゆうなぎ放送局 #vtuber #朝活",
     "date": "2026-06-18T22:25:26.000+09:00",
     "status": "live",
     "type": "stream",
@@ -1709,9 +1709,9 @@
     "youtubeid": "UCeOFQCn_QZJMTszlRYRg3rQ",
     "title": "【同時視聴】ぶいかふぇ♪NEXT vol.70 を一緒に観よう🪼🎶【天辻ゆらぐ/パレデミア学園】 #新人Vtuber #ゆらぐっどたいむ",
     "date": "2026-06-19T00:00:55.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/EihYapMuEsg/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/EihYapMuEsg/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/4AFFu60kFJqix-OhtDW3EJdQ0jQa1LrK56tGpvqvbGodMQFpkH-_qtvL_66dPGD3kl4LW9N4=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=EihYapMuEsg"
   },
@@ -1720,9 +1720,9 @@
     "youtubeid": "UC2X_mAVGw8e3N9JQZZDVBfQ",
     "title": "【#低音女子】雑談で安眠をお届けします。《#パレデミア学園》",
     "date": "2026-06-19T00:03:19.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/7mUsFwAWSq0/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/7mUsFwAWSq0/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/Z7PlAWhweuycNXNXoQ6etyDTkduySM-Kqy8kQW-AD19JuRdxT3HSdIxogPw3GPD5NHw_vZlf=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=7mUsFwAWSq0"
   },
@@ -1760,17 +1760,6 @@
     "url": "https://www.youtube.com/watch?v=cTgnGNw96eM"
   },
   {
-    "name": "灯野ぺけ。",
-    "youtubeid": "UCldoz5HLh6BMW29HGnRpC0Q",
-    "title": "☀️起きれたらやる朝配信☀️初見さん/ROMの人もおいで～💥≪パレデミア学園 / 灯野ぺけ。≫ #vtuber #朝活 #雑談",
-    "date": "2026-06-19T07:00:00.000+09:00",
-    "status": "upcoming",
-    "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/QiMPjljDxAE/mqdefault_live.jpg",
-    "channelIcon": "https://yt3.ggpht.com/sYbvo_2nSCW162VEArIwu7v1B3bl159gmEnGgGei8I8drc4l7huPP7q6aWZ4AfXi5wTMACmGow=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=QiMPjljDxAE"
-  },
-  {
     "name": "花晴りら",
     "youtubeid": "UCqcnlq8uJqnGml6hcIrMCZw",
     "title": "【毎日朝活/雑談】初見さん大歓迎🌷200人におはよう言いたい耐久朝活🔆【花晴りら/パレデミア学園】#れりライブ",
@@ -1780,6 +1769,17 @@
     "thumbnail": "https://i.ytimg.com/vi/Nprlog-4Ycg/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/CH5JMWVQZ_RtloaXoj6W-yXjo9x8UxXSBG_vMyDnfk7M2QTOApVE1zOesu_aDrSAqvDbGrUyxs0=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=Nprlog-4Ycg"
+  },
+  {
+    "name": "灯野ぺけ。",
+    "youtubeid": "UCldoz5HLh6BMW29HGnRpC0Q",
+    "title": "☀️起きれたらやる朝配信☀️初見さん/ROMの人もおいで～💥≪パレデミア学園 / 灯野ぺけ。≫ #vtuber #朝活 #雑談",
+    "date": "2026-06-19T07:00:00.000+09:00",
+    "status": "upcoming",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/QiMPjljDxAE/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/sYbvo_2nSCW162VEArIwu7v1B3bl159gmEnGgGei8I8drc4l7huPP7q6aWZ4AfXi5wTMACmGow=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=QiMPjljDxAE"
   },
   {
     "name": "夏渚まはろ",
@@ -1824,6 +1824,17 @@
     "thumbnail": "https://i.ytimg.com/vi/LyXZP4KBsTc/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/FZAApPZQQXHgHOVY8RCKI0eGvcyJ19mHBpWOT-a_pR_rY6LC8Z2Z9K0gpd4zuwNnYxA-XkKF=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=LyXZP4KBsTc"
+  },
+  {
+    "name": "天辻ゆらぐ",
+    "youtubeid": "UCeOFQCn_QZJMTszlRYRg3rQ",
+    "title": "【コラボ同時視聴】ぶいかふぇ♪NEXT vol.70 をゆらなでと一緒に観よう🐶🪼🎶【天辻ゆらぐ/パレデミア学園】 #新人Vtuber #ゆらぐっどたいむ #犬丸王国",
+    "date": "2026-06-19T22:00:00.000+09:00",
+    "status": "upcoming",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/qECEaHKrjKQ/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/4AFFu60kFJqix-OhtDW3EJdQ0jQa1LrK56tGpvqvbGodMQFpkH-_qtvL_66dPGD3kl4LW9N4=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=qECEaHKrjKQ"
   },
   {
     "name": "愛乃宮ゆめ",

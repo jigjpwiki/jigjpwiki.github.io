@@ -1,38 +1,5 @@
 [
   {
-    "name": "天堂ライラ",
-    "youtubeid": "UCpdWNjSU-onhmcARqgHIfpg",
-    "title": "【#朝活】9:00までおはようするよ！ #天堂観測【パレデミア学園/天堂ライラ】",
-    "date": "2026-06-16T07:29:42.000+09:00",
-    "status": "archive",
-    "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/qBh369FQ0Cs/mqdefault.jpg",
-    "channelIcon": "https://yt3.ggpht.com/JA8QqThoUnCNAgJASH3p_wPyWJBf2ILiUfpIvArr6592NkkrFntPQ4EgPsahnLpPCMP4mk93ig=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=qBh369FQ0Cs"
-  },
-  {
-    "name": "桜堂ねる",
-    "youtubeid": "UC0H7dRRqhfOifbYQ2TURdAg",
-    "title": "空手家Vtuberの #朝活",
-    "date": "2026-06-16T07:33:05.000+09:00",
-    "status": "archive",
-    "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/J7vZhMENz4k/mqdefault.jpg",
-    "channelIcon": "https://yt3.ggpht.com/hBz75E3AEST1Dzv5vOTHAqoJfayd30WIWWQ3ZFLlWMHDsyZ_QD6ZVVUtLTKSizalT3APPtdpFGI=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=J7vZhMENz4k"
-  },
-  {
-    "name": "冬星れんこん",
-    "youtubeid": "UCy4tS4QJSyI-VOr9ImBEveg",
-    "title": "【朝活】火曜日がんばろう♡　冬星れんこん/パレデミア学園",
-    "date": "2026-06-16T07:59:37.000+09:00",
-    "status": "archive",
-    "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/cTjy4gjQS4s/mqdefault.jpg",
-    "channelIcon": "https://yt3.ggpht.com/nMtec5z3KY5RUGCSbQENm9culC2VpB7Ate_dUueAINpAJdFK4wwe7Q6eH88QiMXqjImAleLI=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=cTjy4gjQS4s"
-  },
-  {
     "name": "藤宮コトハ",
     "youtubeid": "UCGndc74kfWb_A-8hZBG534Q",
     "title": "Dracula  (JENNIE Remix) #shorts #dance #藤宮コトハ #パレプロ",
@@ -1348,7 +1315,7 @@
     "date": "2026-06-18T17:47:22.000+09:00",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/c75J-mtlU0c/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/c75J-mtlU0c/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/4AFFu60kFJqix-OhtDW3EJdQ0jQa1LrK56tGpvqvbGodMQFpkH-_qtvL_66dPGD3kl4LW9N4=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=c75J-mtlU0c"
   },
@@ -1370,7 +1337,7 @@
     "date": "2026-06-18T19:00:31.000+09:00",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/sQASJb1NwFU/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/sQASJb1NwFU/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/Ft5mSjImEah_xri4b9k0p2Olyhy6T_vj1ZxyglCcVbk2FqN-nrWqSMm5YoM_hEjeRQ9aaMjelV0=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=sQASJb1NwFU"
   },
@@ -1720,7 +1687,7 @@
     "youtubeid": "UCPgg_A08ksSYP-VivJGniRw",
     "title": "【初見さん20人と出会いたい】君に元気が出る笑顔をお届けします！初見さん大歓迎！💛【新人VTuberの雑談／歌枠】🐻",
     "date": "2026-06-19T06:30:15.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/cTgnGNw96eM/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/04zALH6pYL7mkWILHajvBzfzg4hrwRCLBONme3K1PjuEeYJIRC6RYxPmJzVZRuN42skHEDNRGmo=s240-c-k-c0x00ffffff-no-rj",
@@ -1769,6 +1736,28 @@
     "thumbnail": "https://i.ytimg.com/vi/qmQ-Qv6pkoo/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/yQbh9vEEgS_UapoQhIxxoTSy13bDxlHYC-ncTcO9VIDBN2NvrLTAWeKGQ72CN2fhOOrHqYaFDA=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=qmQ-Qv6pkoo"
+  },
+  {
+    "name": "桜堂ねる",
+    "youtubeid": "UC0H7dRRqhfOifbYQ2TURdAg",
+    "title": "空手家Vtuberの #朝活",
+    "date": "2026-06-19T07:28:16.000+09:00",
+    "status": "archive",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/zJGC1YKZQC8/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/hBz75E3AEST1Dzv5vOTHAqoJfayd30WIWWQ3ZFLlWMHDsyZ_QD6ZVVUtLTKSizalT3APPtdpFGI=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=zJGC1YKZQC8"
+  },
+  {
+    "name": "新巻るろな",
+    "youtubeid": "UCUd4wJjvPQflbLnsk_YHleA",
+    "title": "【 #朝活 】朝雑談久々すぎんやろがい【新巻るろな／パレデミア学園】#VTuber #雑談",
+    "date": "2026-06-19T08:00:38.000+09:00",
+    "status": "live",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/G5HyMSz5-_o/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/-4sLuWCih-DlfhpwpDQEuB6eupCB6kTImkIPmKnh54vu5I0F49RkveNQGiqy0p8t0GDU6eiegGE=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=G5HyMSz5-_o"
   },
   {
     "name": "夏渚まはろ",

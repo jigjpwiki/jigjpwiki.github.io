@@ -1,23 +1,5 @@
 [
   {
-    "name": "月皇ちな",
-    "twitchid": "chi7_v",
-    "title": "【Hideout City #4】稼ぐぞ #隠れ家GTA #chi7live",
-    "date": "2026-06-16T21:56:52.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/76f2958e-cab4-41b8-98c1-cc4d275b2ca5-profile_image-300x300.png",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/fb98c00ad21723e38b55_chi7_v_316104593267_1781614607//thumb/thumb0-320x180.jpg"
-  },
-  {
-    "name": "真昼ねる",
-    "twitchid": "mahiruneru",
-    "title": "チームしゅわしゅわソーダ🥤スクリムれんしゅー🏆🌟 #トロフィー生活CUP   @nietsukasa @yunma_flw @hoei0810 @kyou__u 【真昼ねる￤ぷろのゔぁ】",
-    "date": "2026-06-16T22:02:43.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/90e97ba8-20ac-4d1d-861a-d27ed84b5d70-profile_image-300x300.png",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/96edf04614cff89193e0_mahiruneru_316104637939_1781614958//thumb/thumb0-320x180.jpg"
-  },
-  {
     "name": "なかもとおまち",
     "twitchid": "41futon",
     "title": "短期集中ゲームプランナーおまち",
@@ -151,5 +133,32 @@
     "status": "live",
     "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/fc4f961e-29c3-4f2e-9880-161fbf3b98eb-profile_image-300x300.png",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_minato_yu_-320x180.jpg"
+  },
+  {
+    "name": "真昼ねる",
+    "twitchid": "mahiruneru",
+    "title": "チームしゅわしゅわソーダ🥤大会前夜スクリム🏆🌟 #トロフィー生活CUP   @nietsukasa @yunma_flw @hoei0810 @kyou__u 【真昼ねる￤ぷろのゔぁ】",
+    "date": "2026-06-19T21:05:21.000+09:00",
+    "status": "live",
+    "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/90e97ba8-20ac-4d1d-861a-d27ed84b5d70-profile_image-300x300.png",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_mahiruneru-320x180.jpg"
+  },
+  {
+    "name": "月皇ちな",
+    "twitchid": "chi7_v",
+    "title": "【Hideout City #7】今日もまったり #隠れ家GTA #chi7live",
+    "date": "2026-06-19T21:43:49.000+09:00",
+    "status": "live",
+    "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/76f2958e-cab4-41b8-98c1-cc4d275b2ca5-profile_image-300x300.png",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_chi7_v-320x180.jpg"
+  },
+  {
+    "name": "火乃晴るい",
+    "twitchid": "hinoha_rui",
+    "title": "【 #POE2 】新ビルドに向けて金策💰取り合えずアビスファーム……",
+    "date": "2026-06-19T21:47:53.000+09:00",
+    "status": "live",
+    "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/9e02effe-cf25-4ba0-9fe7-da457d4e8c87-profile_image-300x300.png",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_hinoha_rui-320x180.jpg"
   }
 ]

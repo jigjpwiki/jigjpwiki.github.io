@@ -1,16 +1,5 @@
 [
   {
-    "name": "愛染アネラ",
-    "youtubeid": "UC7ek9Q4cK9O0eT3hiUYJaQw",
-    "title": "ギャルと一緒にワールドカップみよ💗フランス VS セネガル⚽",
-    "date": "2026-06-17T04:00:00.000+09:00",
-    "status": "upcoming",
-    "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/1lICCDeqg28/mqdefault_live.jpg",
-    "channelIcon": "https://yt3.ggpht.com/R99ADiR_1bRxcNCpiGLCW6ortzJy4JZFjlLaEHeDSJfYgwO_IieZWjjp4GbZauEeMxg_hhoS3A=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=1lICCDeqg28"
-  },
-  {
     "name": "雪紫誉",
     "youtubeid": "UCdbYinKlpkB_uMt_wPmYcsw",
     "title": "【#朝活＃雑談】朝だよ＃初見さん◎いっぱいはなそ！【#パレデミア学園/#ゆきむらじお】＃新人VTuber",
@@ -1617,6 +1606,17 @@
     "url": "https://www.youtube.com/watch?v=eOBjoevPci0"
   },
   {
+    "name": "鈴木沙透",
+    "youtubeid": "UCj5nRzNFXZn9GRhITRkKElA",
+    "title": "【#歌枠 】華金ぶち上げで歌う【鈴木沙透/パレデミア学園】",
+    "date": "2026-06-19T22:42:21.000+09:00",
+    "status": "archive",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/00hRZAfOWPQ/mqdefault.jpg",
+    "channelIcon": "https://yt3.ggpht.com/h4kuTtFCGhkDV4nmk6qjQt8auhkqLEqWwB9Il3NZR6op3ph-a0YElRfLcXkZVPp6xqvGmZHy3w=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=00hRZAfOWPQ"
+  },
+  {
     "name": "新巻るろな",
     "youtubeid": "UCUd4wJjvPQflbLnsk_YHleA",
     "title": "【Minecraft】ミュゥ寮サーバーで遊ぶ☆第23話「1時間だけ編」【新巻るろな／#パレデミア学園】#vtuber",
@@ -1626,6 +1626,17 @@
     "thumbnail": "https://i.ytimg.com/vi/iG78ySeQIWc/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/-4sLuWCih-DlfhpwpDQEuB6eupCB6kTImkIPmKnh54vu5I0F49RkveNQGiqy0p8t0GDU6eiegGE=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=iG78ySeQIWc"
+  },
+  {
+    "name": "暁月クララ",
+    "youtubeid": "UCn4XvlTXjGSvDynpxpOYZPQ",
+    "title": "BRAVE GROOVE / iLIFE!【#踊ってみた 】#ilife #暁月クララ #vtuber",
+    "date": "2026-06-19T23:31:56.000+09:00",
+    "status": "archive",
+    "type": "video",
+    "thumbnail": "https://i.ytimg.com/vi/WdMXv9sC4yM/mqdefault.jpg",
+    "channelIcon": "https://yt3.ggpht.com/8tcStp-WzdZPtf6bPq1DtUnFSd2Eq5AppSd3_CEQ7hNNpnRND8InaWdPCz6T1wIWWkGJuFrbT94=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=WdMXv9sC4yM"
   },
   {
     "name": "常磐カナメ",
@@ -1639,13 +1650,24 @@
     "url": "https://www.youtube.com/watch?v=5kgabdD9oiQ"
   },
   {
+    "name": "暁月クララ",
+    "youtubeid": "UCn4XvlTXjGSvDynpxpOYZPQ",
+    "title": "メガネあり…メガネなし…メガありなし…👓#vtuber #暁月クララ #パレプロ",
+    "date": "2026-06-19T23:49:39.000+09:00",
+    "status": "archive",
+    "type": "video",
+    "thumbnail": "https://i.ytimg.com/vi/H693khXTK-w/mqdefault.jpg",
+    "channelIcon": "https://yt3.ggpht.com/8tcStp-WzdZPtf6bPq1DtUnFSd2Eq5AppSd3_CEQ7hNNpnRND8InaWdPCz6T1wIWWkGJuFrbT94=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=H693khXTK-w"
+  },
+  {
     "name": "無月いお",
     "youtubeid": "UC2X_mAVGw8e3N9JQZZDVBfQ",
     "title": "【#低音女子】雑談で安眠をお届けします。《#パレデミア学園》",
     "date": "2026-06-20T00:00:36.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/7IxmKzT4Y_A/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/7IxmKzT4Y_A/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/Z7PlAWhweuycNXNXoQ6etyDTkduySM-Kqy8kQW-AD19JuRdxT3HSdIxogPw3GPD5NHw_vZlf=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=7IxmKzT4Y_A"
   },
@@ -1670,6 +1692,17 @@
     "thumbnail": "https://i.ytimg.com/vi/R2Y8U8EV1AE/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/T655ATpSd2gkjZBrokvlkaUH0f5-fCpQdcJpwxmmNdy6fxCYffAlq2sMhPOtFk_CvVyOkEPY8Q=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=R2Y8U8EV1AE"
+  },
+  {
+    "name": "堂下さとり",
+    "youtubeid": "UCBq6MSUL-Ermvnoj3PtX7Iw",
+    "title": "【雑談】突発朝【堂下さとり/パレデミア学園】",
+    "date": "2026-06-20T05:15:00.000+09:00",
+    "status": "upcoming",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/edNgwkKUowI/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/eW_Hug0M6zFk9QSbAmOUWLMSfzBlCHmes-8yAksvfUNzyLgY6TSsE_eW8ncfE4bHYZXKoTWxmQ=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=edNgwkKUowI"
   },
   {
     "name": "花晴りら",

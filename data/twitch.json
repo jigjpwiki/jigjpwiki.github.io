@@ -1,14 +1,5 @@
 [
   {
-    "name": "李じゅぴ汰",
-    "twitchid": "lee_jupita",
-    "title": "【乗せる】ソーセージについての奇妙なゲーム！をやるそ！【A weird game about sausage】",
-    "date": "2026-06-17T16:50:33.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/5706bc75-6841-4954-8894-7b7bfba16adb-profile_image-300x300.png",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/462abb8e4b0fd46a96dd_lee_jupita_316107812083_1781682628//thumb/thumb0-320x180.jpg"
-  },
-  {
     "name": "水透ユウ",
     "twitchid": "minato_yu_",
     "title": "【 #R6S 】solo rank→team unrank【水透ユウ/ぷろのゔぁ】 #ユウおんらいぶ",
@@ -156,9 +147,18 @@
     "name": "銘兎目あう",
     "twitchid": "Metome_Au",
     "title": "【スト６】1503MR～Mケン🥋-160MRからどうなるかっ👊",
-    "date": "2026-06-20T14:34:21.000+09:00",
-    "status": "live",
+    "date": "2026-06-20T14:34:26.000+09:00",
+    "status": "archive",
     "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/6eea4ef4-a33b-4c66-9378-ad3aa84b1187-profile_image-300x300.png",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_Metome_Au-320x180.jpg"
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/7290c9f0e48e02557f67_metome_au_316057663601_1781933661//thumb/thumb0-320x180.jpg"
+  },
+  {
+    "name": "水透ユウ",
+    "twitchid": "minato_yu_",
+    "title": "【 #R6S 】トロフィー生活カップ本番！ええエイムしてはりますなぁ(笑)WIN!!【水透ユウ/ぷろのゔぁ】 #ユウおんらいぶ",
+    "date": "2026-06-20T15:58:05.000+09:00",
+    "status": "live",
+    "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/fc4f961e-29c3-4f2e-9880-161fbf3b98eb-profile_image-300x300.png",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_minato_yu_-320x180.jpg"
   }
 ]

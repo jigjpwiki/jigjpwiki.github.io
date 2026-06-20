@@ -1,16 +1,5 @@
 [
   {
-    "name": "ニコ・ダークウェル",
-    "youtubeid": "UCwSq7LbTyR1lXLJphsHKy2A",
-    "title": "【事務所イベ１日目】バニーガール風天気予報🍰 初見さん◎　#新人vtuber #vtuber #ニコニコダークストリーム #パレデミア学園",
-    "date": "2026-06-17T09:00:46.000+09:00",
-    "status": "archive",
-    "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/ITmAU9_KSb4/mqdefault.jpg",
-    "channelIcon": "https://yt3.ggpht.com/FZAApPZQQXHgHOVY8RCKI0eGvcyJ19mHBpWOT-a_pR_rY6LC8Z2Z9K0gpd4zuwNnYxA-XkKF=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=ITmAU9_KSb4"
-  },
-  {
     "name": "常磐カナメ",
     "youtubeid": "UCbNEgJIF_ADD9e8-q7SoxCg",
     "title": "Sputripはここから始まった…🌇「Breeze in the Sun」踊ってみた #shorts  #常磐カナメ #Sputrip",
@@ -1304,7 +1293,7 @@
     "date": "2026-06-19T17:44:28.000+09:00",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/Cj1eREgCvTk/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/Cj1eREgCvTk/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/4AFFu60kFJqix-OhtDW3EJdQ0jQa1LrK56tGpvqvbGodMQFpkH-_qtvL_66dPGD3kl4LW9N4=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=Cj1eREgCvTk"
   },
@@ -1632,9 +1621,9 @@
     "youtubeid": "UCPgg_A08ksSYP-VivJGniRw",
     "title": "【初見さん20人と出会いたい】君に元気が出る笑顔をお届けします！初見さん大歓迎！💛【新人VTuberの雑談／歌枠】🐻",
     "date": "2026-06-20T06:44:25.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/P-nRPeWtFYc/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/P-nRPeWtFYc/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/04zALH6pYL7mkWILHajvBzfzg4hrwRCLBONme3K1PjuEeYJIRC6RYxPmJzVZRuN42skHEDNRGmo=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=P-nRPeWtFYc"
   },
@@ -1665,7 +1654,7 @@
     "youtubeid": "UCwSq7LbTyR1lXLJphsHKy2A",
     "title": "【事務所イベ4日目】 ゲーム実況 すくすくすいかげーむ #7 ぽっちゃりドラゴン 初見さん◎　#新人vtuber #vtuber #ニコニコダークストリーム #パレデミア学園",
     "date": "2026-06-20T07:06:36.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/xSzIX-YcVeY/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/FZAApPZQQXHgHOVY8RCKI0eGvcyJ19mHBpWOT-a_pR_rY6LC8Z2Z9K0gpd4zuwNnYxA-XkKF=s240-c-k-c0x00ffffff-no-rj",
@@ -1675,12 +1664,23 @@
     "name": "宵坂伊織",
     "youtubeid": "UCa1C15g_z1k5oQIYCeD2Hdw",
     "title": "【#復活】みんな久しぶり～～！！(1週間ぶり)【#パレデミア学園】#伊織実行中",
-    "date": "2026-06-20T09:00:00.000+09:00",
-    "status": "upcoming",
+    "date": "2026-06-20T08:55:54.000+09:00",
+    "status": "archive",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/Ml5hus1F2nE/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/fOSQN7R8b2LFTwHpvzc3RfsR_nJ02TIUKscIIj-hYwqWAsmMmqiixAt7XTbJTuH5MRqir4oC9Q=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=Ml5hus1F2nE"
+  },
+  {
+    "name": "新巻るろな",
+    "youtubeid": "UCUd4wJjvPQflbLnsk_YHleA",
+    "title": "【 #朝活 】寝すぎた【新巻るろな／パレデミア学園】#VTuber #雑談",
+    "date": "2026-06-20T09:06:01.000+09:00",
+    "status": "archive",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/GBjlRCs1GQY/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/-4sLuWCih-DlfhpwpDQEuB6eupCB6kTImkIPmKnh54vu5I0F49RkveNQGiqy0p8t0GDU6eiegGE=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=GBjlRCs1GQY"
   },
   {
     "name": "ニコ・ダークウェル",

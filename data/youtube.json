@@ -1,27 +1,5 @@
 [
   {
-    "name": "雪紫誉",
-    "youtubeid": "UCdbYinKlpkB_uMt_wPmYcsw",
-    "title": "【#朝活＃雑談】朝が来た＃初見さん◎いっぱいはなそ！【#パレデミア学園/#ゆきむらじお】＃新人VTuber",
-    "date": "2026-06-19T06:00:25.000+09:00",
-    "status": "archive",
-    "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/-VHdmGQ_NdQ/mqdefault.jpg",
-    "channelIcon": "https://yt3.ggpht.com/4RbHGCHx02xQ2ze4g7UCTvuUPlQCpbk6bHIb5cdqO4JNzTe5qsq4sDTt6m-xVKMm476vJiMF7A=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=-VHdmGQ_NdQ"
-  },
-  {
-    "name": "桜庭羽奈",
-    "youtubeid": "UCPgg_A08ksSYP-VivJGniRw",
-    "title": "【初見さん20人と出会いたい】君に元気が出る笑顔をお届けします！初見さん大歓迎！💛【新人VTuberの雑談／歌枠】🐻",
-    "date": "2026-06-19T06:30:15.000+09:00",
-    "status": "archive",
-    "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/cTgnGNw96eM/mqdefault.jpg",
-    "channelIcon": "https://yt3.ggpht.com/04zALH6pYL7mkWILHajvBzfzg4hrwRCLBONme3K1PjuEeYJIRC6RYxPmJzVZRuN42skHEDNRGmo=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=cTgnGNw96eM"
-  },
-  {
     "name": "桜堂ねる",
     "youtubeid": "UC0H7dRRqhfOifbYQ2TURdAg",
     "title": "6月19日【桜堂ねる】#今日は何の日 #ねる道場 #vtuber #shorts",
@@ -1584,15 +1562,37 @@
     "url": "https://www.youtube.com/watch?v=Zd2NWwycCew"
   },
   {
+    "name": "雪紫誉",
+    "youtubeid": "UCdbYinKlpkB_uMt_wPmYcsw",
+    "title": "【#雑談 #耐久  】47都道府県耐久！！！＃初見さん◎【#パレデミア学園/#ゆきむらじお】＃新人VTuber",
+    "date": "2026-06-22T06:00:55.000+09:00",
+    "status": "live",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/yd6pJYbCrSg/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/4RbHGCHx02xQ2ze4g7UCTvuUPlQCpbk6bHIb5cdqO4JNzTe5qsq4sDTt6m-xVKMm476vJiMF7A=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=yd6pJYbCrSg"
+  },
+  {
     "name": "ニコ・ダークウェル",
     "youtubeid": "UCwSq7LbTyR1lXLJphsHKy2A",
     "title": "【事務所イベ６日目】 ゲーム実況 すくすくすいかげーむ #8 ぽっちゃりドラゴン 初見さん◎　#新人vtuber #vtuber #ニコニコダークストリーム #パレデミア学園",
-    "date": "2026-06-22T06:00:00.000+09:00",
-    "status": "upcoming",
+    "date": "2026-06-22T06:02:06.000+09:00",
+    "status": "live",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/8pbcW569W1g/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/FZAApPZQQXHgHOVY8RCKI0eGvcyJ19mHBpWOT-a_pR_rY6LC8Z2Z9K0gpd4zuwNnYxA-XkKF=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=8pbcW569W1g"
+  },
+  {
+    "name": "桜庭羽奈",
+    "youtubeid": "UCPgg_A08ksSYP-VivJGniRw",
+    "title": "【初見さん20人と出会いたい】君に元気が出る笑顔をお届けします！初見さん大歓迎！💛【新人VTuberの雑談／歌枠】🐻",
+    "date": "2026-06-22T06:31:33.000+09:00",
+    "status": "live",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/kPpXRYDgIZ8/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/04zALH6pYL7mkWILHajvBzfzg4hrwRCLBONme3K1PjuEeYJIRC6RYxPmJzVZRuN42skHEDNRGmo=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=kPpXRYDgIZ8"
   },
   {
     "name": "花晴りら",

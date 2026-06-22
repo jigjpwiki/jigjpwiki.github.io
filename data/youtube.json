@@ -1,49 +1,5 @@
 [
   {
-    "name": "緋月・ローズ・ブレイド",
-    "youtubeid": "UCDutDfyKbX_ah4GF6kPNKmw",
-    "title": "【#歌ってみた】ウェディング・ベル【#vtuber 】#cover",
-    "date": "2026-06-20T07:00:15.000+09:00",
-    "status": "archive",
-    "type": "video",
-    "thumbnail": "https://i.ytimg.com/vi/WMLalf21YVg/mqdefault.jpg",
-    "channelIcon": "https://yt3.ggpht.com/W_G4fcoLegJdQmhWclC6RKHdrx9DJLGZ4WcLyCKgJxzyZZ3MUd-tNZ90LYQGVAbt7NzXl5GUJQ=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=WMLalf21YVg"
-  },
-  {
-    "name": "花晴りら",
-    "youtubeid": "UCqcnlq8uJqnGml6hcIrMCZw",
-    "title": "【毎日朝活/雑談】初見さん大歓迎🌷250人におはよう言いたい土曜の耐久朝活🔆【花晴りら/ #パレデミア学園 】#れりライブ",
-    "date": "2026-06-20T07:00:27.000+09:00",
-    "status": "archive",
-    "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/6W6z2_lZKtA/mqdefault.jpg",
-    "channelIcon": "https://yt3.ggpht.com/CH5JMWVQZ_RtloaXoj6W-yXjo9x8UxXSBG_vMyDnfk7M2QTOApVE1zOesu_aDrSAqvDbGrUyxs0=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=6W6z2_lZKtA"
-  },
-  {
-    "name": "ニコ・ダークウェル",
-    "youtubeid": "UCwSq7LbTyR1lXLJphsHKy2A",
-    "title": "【事務所イベ4日目】 ゲーム実況 すくすくすいかげーむ #7 ぽっちゃりドラゴン 初見さん◎　#新人vtuber #vtuber #ニコニコダークストリーム #パレデミア学園",
-    "date": "2026-06-20T07:06:36.000+09:00",
-    "status": "archive",
-    "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/xSzIX-YcVeY/mqdefault.jpg",
-    "channelIcon": "https://yt3.ggpht.com/FZAApPZQQXHgHOVY8RCKI0eGvcyJ19mHBpWOT-a_pR_rY6LC8Z2Z9K0gpd4zuwNnYxA-XkKF=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=xSzIX-YcVeY"
-  },
-  {
-    "name": "天堂ライラ",
-    "youtubeid": "UCpdWNjSU-onhmcARqgHIfpg",
-    "title": "【#朝活】少し鼻声だけどおはようがしたい！ #天堂観測【パレデミア学園/天堂ライラ】",
-    "date": "2026-06-20T07:29:33.000+09:00",
-    "status": "archive",
-    "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/l6l4KjNRL48/mqdefault.jpg",
-    "channelIcon": "https://yt3.ggpht.com/JA8QqThoUnCNAgJASH3p_wPyWJBf2ILiUfpIvArr6592NkkrFntPQ4EgPsahnLpPCMP4mk93ig=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=l6l4KjNRL48"
-  },
-  {
     "name": "宵坂伊織",
     "youtubeid": "UCa1C15g_z1k5oQIYCeD2Hdw",
     "title": "【#復活】みんな久しぶり～～！！(1週間ぶり)【#パレデミア学園】#伊織実行中",
@@ -1540,6 +1496,17 @@
     "url": "https://www.youtube.com/watch?v=LzH40r4FVEg"
   },
   {
+    "name": "七音うら",
+    "youtubeid": "UCv2IYO-4waCpHvn50SWWY2A",
+    "title": "【#雑談配信 】ちょぴっと雑談。【七音うら】",
+    "date": "2026-06-23T02:01:53.000+09:00",
+    "status": "archive",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/5N2vvvmJ250/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/T655ATpSd2gkjZBrokvlkaUH0f5-fCpQdcJpwxmmNdy6fxCYffAlq2sMhPOtFk_CvVyOkEPY8Q=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=5N2vvvmJ250"
+  },
+  {
     "name": "瀬奈りるか",
     "youtubeid": "UCWi_ztz8Xuz4XfzhoG6ZfyA",
     "title": "【大決戦】ホバクラ神秘トマトTA🍅💫やっと３属性目！✨最終日目前にやっと３属性を置く🎶並走･ROM･寝落ち大歓迎🎶人のTLを参考に大決戦３桁目指す作業配信🎶【ブルーアーカイブ】＃せなりるライブ",
@@ -1566,7 +1533,7 @@
     "youtubeid": "UCwSq7LbTyR1lXLJphsHKy2A",
     "title": "【事務所イベ７日目】ゲーム実況 すくすくすいかげーむ #8 ぽっちゃりドラゴン 初見さん◎　#新人vtuber #vtuber #ニコニコダークストリーム #パレデミア学園",
     "date": "2026-06-23T06:02:21.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/-C50ra4ps8o/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/FZAApPZQQXHgHOVY8RCKI0eGvcyJ19mHBpWOT-a_pR_rY6LC8Z2Z9K0gpd4zuwNnYxA-XkKF=s240-c-k-c0x00ffffff-no-rj",
@@ -1577,7 +1544,7 @@
     "youtubeid": "UCdbYinKlpkB_uMt_wPmYcsw",
     "title": "【#雑談 #耐久  】47都道府県耐久！！！パート２＃初見さん◎【#パレデミア学園/#ゆきむらじお】＃新人VTuber",
     "date": "2026-06-23T06:09:53.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/SwfOc37eEYQ/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/4RbHGCHx02xQ2ze4g7UCTvuUPlQCpbk6bHIb5cdqO4JNzTe5qsq4sDTt6m-xVKMm476vJiMF7A=s240-c-k-c0x00ffffff-no-rj",
@@ -1588,18 +1555,29 @@
     "youtubeid": "UCPgg_A08ksSYP-VivJGniRw",
     "title": "【初見さん20人と出会いたい】君に元気が出る笑顔をお届けします！初見さん大歓迎！💛【新人VTuberの雑談／歌枠】🐻",
     "date": "2026-06-23T06:30:21.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/h7Fn7YTl6SI/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/04zALH6pYL7mkWILHajvBzfzg4hrwRCLBONme3K1PjuEeYJIRC6RYxPmJzVZRuN42skHEDNRGmo=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=h7Fn7YTl6SI"
   },
   {
+    "name": "堂下さとり",
+    "youtubeid": "UCBq6MSUL-Ermvnoj3PtX7Iw",
+    "title": "【雑談】あさ　いってらっしゃいいわせて【堂下さとり/パレデミア学園】",
+    "date": "2026-06-23T06:52:39.000+09:00",
+    "status": "live",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/tRbNyyfRfos/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/eW_Hug0M6zFk9QSbAmOUWLMSfzBlCHmes-8yAksvfUNzyLgY6TSsE_eW8ncfE4bHYZXKoTWxmQ=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=tRbNyyfRfos"
+  },
+  {
     "name": "花晴りら",
     "youtubeid": "UCqcnlq8uJqnGml6hcIrMCZw",
     "title": "【毎日朝活/雑談】初見さん大歓迎🌷150人におはよう言いたい火曜日の耐久朝活🔆【花晴りら/ #パレデミア学園 】#れりライブ",
-    "date": "2026-06-23T07:00:00.000+09:00",
-    "status": "upcoming",
+    "date": "2026-06-23T06:59:50.000+09:00",
+    "status": "live",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/3p4L5QIAfnE/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/CH5JMWVQZ_RtloaXoj6W-yXjo9x8UxXSBG_vMyDnfk7M2QTOApVE1zOesu_aDrSAqvDbGrUyxs0=s240-c-k-c0x00ffffff-no-rj",
@@ -1609,12 +1587,34 @@
     "name": "天堂ライラ",
     "youtubeid": "UCpdWNjSU-onhmcARqgHIfpg",
     "title": "【#朝活】まだ鼻声だけどおはようがしたい！ #天堂観測【パレデミア学園/天堂ライラ】",
-    "date": "2026-06-23T07:30:00.000+09:00",
-    "status": "upcoming",
+    "date": "2026-06-23T07:30:01.000+09:00",
+    "status": "live",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/C9VjU8jMI2g/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/JA8QqThoUnCNAgJASH3p_wPyWJBf2ILiUfpIvArr6592NkkrFntPQ4EgPsahnLpPCMP4mk93ig=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=C9VjU8jMI2g"
+  },
+  {
+    "name": "藤森ちとせ",
+    "youtubeid": "UCAhdxmsdngH4noySdpVAVWQ",
+    "title": "【露天掘り雑談】トライアルチャンバー掘り出すにはいったい何チャンク掘ればいいんですか～？👀✨作業用にも😉ROM歓迎🎉【#Minecraft】【#新人vtuber 】#ちとせらいぶ #パレデミア学園",
+    "date": "2026-06-23T13:00:00.000+09:00",
+    "status": "upcoming",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/9RHXRzjSky8/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/traR_yWe-AOGyM2wjo8h2FJO9JWBcbjfrL13X-umeD6BtNPopSZ2Q3YmdJq_5K9gWgHf_j64iQ=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=9RHXRzjSky8"
+  },
+  {
+    "name": "藤森ちとせ",
+    "youtubeid": "UCAhdxmsdngH4noySdpVAVWQ",
+    "title": "【APEX】大会まであと68日！ソロ練習～🔫✨【#新人vtuber 】#apex  #ちとせらいぶ #パレデミア学園",
+    "date": "2026-06-23T20:00:00.000+09:00",
+    "status": "upcoming",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/EyQxCbR7W2c/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/traR_yWe-AOGyM2wjo8h2FJO9JWBcbjfrL13X-umeD6BtNPopSZ2Q3YmdJq_5K9gWgHf_j64iQ=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=EyQxCbR7W2c"
   },
   {
     "name": "変幻リメ",
@@ -1628,6 +1628,17 @@
     "url": "https://www.youtube.com/watch?v=9ezS3Td6bl8"
   },
   {
+    "name": "ニコ・ダークウェル",
+    "youtubeid": "UCwSq7LbTyR1lXLJphsHKy2A",
+    "title": "【事務所イベ8日目】ゲーム実況 すくすくすいかげーむ #8 ぽっちゃりドラゴン 初見さん◎　#新人vtuber #vtuber #ニコニコダークストリーム #パレデミア学園",
+    "date": "2026-06-24T06:00:00.000+09:00",
+    "status": "upcoming",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/KIh_FkUaaSQ/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/FZAApPZQQXHgHOVY8RCKI0eGvcyJ19mHBpWOT-a_pR_rY6LC8Z2Z9K0gpd4zuwNnYxA-XkKF=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=KIh_FkUaaSQ"
+  },
+  {
     "name": "愛乃宮ゆめ",
     "youtubeid": "UCttSjPiwPYpiPuCrgxK7c1g",
     "title": "【PRAGMATA】＃３あの子は俺が助けるっ！！【愛乃宮ゆめ/パレデミア学園】",
@@ -1637,5 +1648,16 @@
     "thumbnail": "https://i.ytimg.com/vi/B1V5S5bX3zI/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/Gwr7KJNWnI6CEgmIfEeMZahF5pbGNKlRhQXBEkuMWE0D66--IJE77z-5Zu2i5LFBc_CA6ZkqY4Y=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=B1V5S5bX3zI"
+  },
+  {
+    "name": "藤森ちとせ",
+    "youtubeid": "UCAhdxmsdngH4noySdpVAVWQ",
+    "title": "【じゃんたまコラボ配信】負けたら罰ゲーム？！ロズブレちゃんと麻雀します２😉🀄【雀魂】【#vtuber 】#ちとせらいぶ #パレデミア学園",
+    "date": "2026-06-24T23:00:00.000+09:00",
+    "status": "upcoming",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/O0-tMqo60mE/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/traR_yWe-AOGyM2wjo8h2FJO9JWBcbjfrL13X-umeD6BtNPopSZ2Q3YmdJq_5K9gWgHf_j64iQ=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=O0-tMqo60mE"
   }
 ]

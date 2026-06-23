@@ -1,23 +1,5 @@
 [
   {
-    "name": "真昼ねる",
-    "twitchid": "mahiruneru",
-    "title": "トロフィー生活CUP本番🔥しゅわしゅわソーダWIN🥤🌟 @nietsukasa @yunma_flw @hoei0810 @kyou__u 【真昼ねる￤ぷろのゔぁ】",
-    "date": "2026-06-20T19:02:01.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/90e97ba8-20ac-4d1d-861a-d27ed84b5d70-profile_image-300x300.png",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/b947200c3c70b2f6dd71_mahiruneru_316067946994_1781949716//thumb/thumb0-320x180.jpg"
-  },
-  {
-    "name": "真昼ねる",
-    "twitchid": "mahiruneru",
-    "title": "トロフィー生活CUP後のろうわー戦🔥しゅわしゅわソーダWIN🥤🌟 @nietsukasa @yunma_flw @hoei0810 @kyou__u 【真昼ねる￤ぷろのゔぁ】",
-    "date": "2026-06-20T20:12:46.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/90e97ba8-20ac-4d1d-861a-d27ed84b5d70-profile_image-300x300.png",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/71994b35020739ebc992_mahiruneru_316068288114_1781953960//thumb/thumb0-320x180.jpg"
-  },
-  {
     "name": "月皇ちな",
     "twitchid": "chi7_v",
     "title": "【Hideout City #8】まったり遊ぶ～ #隠れ家GTA #chi7live",
@@ -102,9 +84,18 @@
     "name": "なかもとおまち",
     "twitchid": "41futon",
     "title": "【ELDENRING】3回目の正直、マレニアを倒して終わらせるーーーー※ビッツ禁止",
-    "date": "2026-06-23T15:09:32.000+09:00",
-    "status": "live",
+    "date": "2026-06-23T15:09:37.000+09:00",
+    "status": "archive",
     "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/1405880b-e945-4720-98c9-6a08c6400cae-profile_image-300x300.png",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_41futon-320x180.jpg"
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/69c50770b15ad859417b_41futon_316071678321_1782194972//thumb/thumb0-320x180.jpg"
+  },
+  {
+    "name": "銘兎目あう",
+    "twitchid": "Metome_Au",
+    "title": "【スト６】1600MR～Mケン🥋目指せグラマス６２３✊",
+    "date": "2026-06-23T20:25:16.000+09:00",
+    "status": "live",
+    "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/6eea4ef4-a33b-4c66-9378-ad3aa84b1187-profile_image-300x300.png",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_Metome_Au-320x180.jpg"
   }
 ]

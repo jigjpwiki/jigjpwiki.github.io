@@ -1,14 +1,5 @@
 [
   {
-    "name": "月皇ちな",
-    "twitchid": "chi7_v",
-    "title": "【Hideout City #11】しっかりご飯を食べしっかりお風呂に入りました #隠れ家GTA #chi7live",
-    "date": "2026-06-23T21:19:30.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/76f2958e-cab4-41b8-98c1-cc4d275b2ca5-profile_image-300x300.png",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/59fc95f27dc546758439_chi7_v_316136524403_1782217165//thumb/thumb0-320x180.jpg"
-  },
-  {
     "name": "火乃晴るい",
     "twitchid": "hinoha_rui",
     "title": "【 #めっちゃカメレオン 】参加型✨PC不調のため、ちょとだけ！",
@@ -120,27 +111,36 @@
     "name": "銘兎目あう",
     "twitchid": "Metome_Au",
     "title": "【スト６】21:00~ガウにいデカ杯２3on3 🐰＃茶ばしら(17)さん🍵 ＃花岡ももちゃん🍑",
-    "date": "2026-06-26T20:28:50.000+09:00",
-    "status": "live",
+    "date": "2026-06-26T20:28:55.000+09:00",
+    "status": "archive",
     "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/6eea4ef4-a33b-4c66-9378-ad3aa84b1187-profile_image-300x300.png",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_Metome_Au-320x180.jpg"
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/426c557389098a8fd402_metome_au_316086567153_1782473330//thumb/thumb0-320x180.jpg"
   },
   {
     "name": "なかもとおまち",
     "twitchid": "41futon",
     "title": "やる気元気花火",
-    "date": "2026-06-26T21:04:20.000+09:00",
-    "status": "live",
+    "date": "2026-06-26T21:04:25.000+09:00",
+    "status": "archive",
     "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/1405880b-e945-4720-98c9-6a08c6400cae-profile_image-300x300.png",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_41futon-320x180.jpg"
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/c05410422ca318ec8387_41futon_316095883506_1782475460//thumb/thumb0-320x180.jpg"
   },
   {
     "name": "水透ユウ",
     "twitchid": "minato_yu_",
     "title": "【 #スト6 】M復帰ブランカ おすすめBGM募【水透ユウ/ぷろのゔぁ】 #ユウおんらいぶ #SF6",
-    "date": "2026-06-26T21:08:39.000+09:00",
-    "status": "live",
+    "date": "2026-06-26T21:08:44.000+09:00",
+    "status": "archive",
     "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/fc4f961e-29c3-4f2e-9880-161fbf3b98eb-profile_image-300x300.png",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_minato_yu_-320x180.jpg"
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/4b3fec669aa1c51e4327_minato_yu__316150068083_1782475719//thumb/thumb0-320x180.jpg"
+  },
+  {
+    "name": "月皇ちな",
+    "twitchid": "chi7_v",
+    "title": "【Hideout City #14】あと2日...⁉ #隠れ家GTA #chi7live",
+    "date": "2026-06-26T21:43:35.000+09:00",
+    "status": "live",
+    "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/76f2958e-cab4-41b8-98c1-cc4d275b2ca5-profile_image-300x300.png",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_chi7_v-320x180.jpg"
   }
 ]

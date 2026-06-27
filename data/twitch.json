@@ -2,15 +2,6 @@
   {
     "name": "なかもとおまち",
     "twitchid": "41futon",
-    "title": "絶対本気のランクマ",
-    "date": "2026-06-24T21:05:54.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/1405880b-e945-4720-98c9-6a08c6400cae-profile_image-300x300.png",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/72ae9e7178f5dc21992b_41futon_316077641841_1782302749//thumb/thumb0-320x180.jpg"
-  },
-  {
-    "name": "なかもとおまち",
-    "twitchid": "41futon",
     "title": "今後の活動についてお知らせ",
     "date": "2026-06-25T12:06:18.000+09:00",
     "status": "archive",
@@ -138,10 +129,10 @@
     "name": "月皇ちな",
     "twitchid": "chi7_v",
     "title": "【Hideout City #15】ついに最終日 #隠れ家GTA #chi7live",
-    "date": "2026-06-27T19:36:06.000+09:00",
-    "status": "live",
+    "date": "2026-06-27T19:36:11.000+09:00",
+    "status": "archive",
     "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/76f2958e-cab4-41b8-98c1-cc4d275b2ca5-profile_image-300x300.png",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_chi7_v-320x180.jpg"
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/16307e162bd032bdc6a5_chi7_v_316100530546_1782556566//thumb/thumb0-320x180.jpg"
   },
   {
     "name": "李じゅぴ汰",
@@ -151,5 +142,14 @@
     "status": "live",
     "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/5706bc75-6841-4954-8894-7b7bfba16adb-profile_image-300x300.png",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lee_jupita-320x180.jpg"
+  },
+  {
+    "name": "月皇ちな",
+    "twitchid": "chi7_v",
+    "title": "【Hideout City #15】ついに最終日 #隠れ家GTA #chi7live",
+    "date": "2026-06-27T21:35:51.000+09:00",
+    "status": "live",
+    "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/76f2958e-cab4-41b8-98c1-cc4d275b2ca5-profile_image-300x300.png",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_chi7_v-320x180.jpg"
   }
 ]

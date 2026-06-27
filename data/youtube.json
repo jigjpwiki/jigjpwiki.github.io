@@ -1183,7 +1183,7 @@
     "date": "2026-06-27T14:31:00.000+09:00",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/x1IzLZz-Ivw/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/x1IzLZz-Ivw/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/dPJHngNTeEfD_K0Mus141-We4xIuAhttm2pgEBl3VdGXqWvxGfy5mJfDMDbBmwI6UGc17dXb-g=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=x1IzLZz-Ivw"
   },
@@ -1194,7 +1194,7 @@
     "date": "2026-06-27T14:46:24.000+09:00",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/JxcDFFMvZiQ/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/JxcDFFMvZiQ/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/zOlQ66VHDdW9B1w3cRbHlo-3cfkYBLVHzYpXS_xLbOv9bHe72uv-bD246R7gCEfD_7wGBc-6vQ=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=JxcDFFMvZiQ"
   },
@@ -1573,6 +1573,17 @@
     "url": "https://www.youtube.com/watch?v=wpTCtq460R0"
   },
   {
+    "name": "桜堂ねる",
+    "youtubeid": "UC0H7dRRqhfOifbYQ2TURdAg",
+    "title": "6月27【桜堂ねる】#今日は何の日 #ねる道場 #vtuber #shorts",
+    "date": "2026-06-27T23:26:45.000+09:00",
+    "status": "archive",
+    "type": "video",
+    "thumbnail": "https://i.ytimg.com/vi/6DtDZPmp0ao/mqdefault.jpg",
+    "channelIcon": "https://yt3.ggpht.com/hBz75E3AEST1Dzv5vOTHAqoJfayd30WIWWQ3ZFLlWMHDsyZ_QD6ZVVUtLTKSizalT3APPtdpFGI=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=6DtDZPmp0ao"
+  },
+  {
     "name": "ニコ・ダークウェル",
     "youtubeid": "UCwSq7LbTyR1lXLJphsHKy2A",
     "title": "【事務所イベラスラン】おしゃぶりして哺乳瓶でタバスコの酒割する情報量が多すぎる歌枠　 初見さん◎　#新人vtuber #vtuber #ニコニコダークストリーム #パレデミア学園",
@@ -1599,20 +1610,31 @@
     "youtubeid": "UCrB-SfrqB5ChY8aAT99grXw",
     "title": "【R.E.P.O.】シカマル(？)を可愛くしたい！！【パレデミア学園/緋雨柚】",
     "date": "2026-06-27T23:56:07.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/HPeI_s49E84/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/HPeI_s49E84/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/dPJHngNTeEfD_K0Mus141-We4xIuAhttm2pgEBl3VdGXqWvxGfy5mJfDMDbBmwI6UGc17dXb-g=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=HPeI_s49E84"
+  },
+  {
+    "name": "シグマ・イングラム",
+    "youtubeid": "UCnQFkIgH-2IURW--34owWIw",
+    "title": "【ノーカット版】なんでもゆるせる人だけみてください即興モノマネ",
+    "date": "2026-06-28T00:01:14.000+09:00",
+    "status": "archive",
+    "type": "video",
+    "thumbnail": "https://i.ytimg.com/vi/g9xx-bS7DAk/mqdefault.jpg",
+    "channelIcon": "https://yt3.ggpht.com/qbn_sYVG1ZUjL2xgGkLtNaYdyeWSj8hMooE0VqW4jThdOnm2G6ZKRhpBsxV8pGUXkqi6zUq84w=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=g9xx-bS7DAk"
   },
   {
     "name": "無月いお",
     "youtubeid": "UC2X_mAVGw8e3N9JQZZDVBfQ",
     "title": "【#低音女子】秋旅行イベ最終日だぇ雑談。《#パレデミア学園》",
     "date": "2026-06-28T00:01:47.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/STMd7QRiEIs/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/STMd7QRiEIs/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/Z7PlAWhweuycNXNXoQ6etyDTkduySM-Kqy8kQW-AD19JuRdxT3HSdIxogPw3GPD5NHw_vZlf=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=STMd7QRiEIs"
   },

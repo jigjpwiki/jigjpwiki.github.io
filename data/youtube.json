@@ -1,16 +1,5 @@
 [
   {
-    "name": "夕凪万夜",
-    "youtubeid": "UCJLYktDEOak1rSOGRVRKlLQ",
-    "title": "【500人耐久リベンジ】初見さん◎助けて！あと少し！【パレデミア学園/夕凪万夜】#雑談 #vtuber #新人vtuber  #ゆうなぎ放送局 #耐久 #朝活 #深夜",
-    "date": "2026-06-25T00:58:55.000+09:00",
-    "status": "archive",
-    "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/fX0coJPEgLc/mqdefault.jpg",
-    "channelIcon": "https://yt3.ggpht.com/zOlQ66VHDdW9B1w3cRbHlo-3cfkYBLVHzYpXS_xLbOv9bHe72uv-bD246R7gCEfD_7wGBc-6vQ=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=fX0coJPEgLc"
-  },
-  {
     "name": "堂下さとり",
     "youtubeid": "UCBq6MSUL-Ermvnoj3PtX7Iw",
     "title": "【手元配信】納豆10000回混ぜプロジェクト 納豆を1時間に何回混ぜられるか？検証【パレデミア学園/堂下さとり】",
@@ -1335,9 +1324,9 @@
     "youtubeid": "UCWi_ztz8Xuz4XfzhoG6ZfyA",
     "title": "【同時視聴】ハリーポッターと死の秘宝PART1＆2同時視聴！✨ハリポタ初心者なので全作見たい！クライマックス🌟※吹き替え版・タイマーあり🎶【＃パレデミア学園】＃せなりるライブ #新人vtuber",
     "date": "2026-06-27T19:00:40.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/OXFRUzh7rHQ/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/OXFRUzh7rHQ/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/BaxFKUrCc4gGKc1wwAHt4ebjk8C69NdTl3fMz9LoR5SUm_Tpvv2yixsbJhp8qsld6S0tdgup=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=OXFRUzh7rHQ"
   },
@@ -1478,9 +1467,9 @@
     "youtubeid": "UCIaZylf5L9MsCMOJX3BdTEg",
     "title": "#4【ドラクエ３】タイミー勇者出勤します【パレプロ／七海ロナ】",
     "date": "2026-06-27T20:45:30.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/BlpBiL7wQ0I/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/BlpBiL7wQ0I/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/86cM_4q1A56pIYgdKxh776hM0nropjiZIlmXbfroWHXQ-MjdGGsjLcL5hMDOFL-T2EJHmybT=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=BlpBiL7wQ0I"
   },
@@ -1511,7 +1500,7 @@
     "youtubeid": "UC8zjZBqGnx_j55ZJzluhW8A",
     "title": "【同時視聴】『ドラゴンボール』一緒に見よ！＃あんにんたいむ #28【パレデミア学園/香桜あんにん/＃新人VTuber】",
     "date": "2026-06-27T21:37:28.000+09:00",
-    "status": "archive",
+    "status": "live",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/tqcs1oVRtL0/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/LL8h8c1rjBm_CimsOmJqxMtfMpzaEZCJ56jM4iOTOaEaDLQ7f6fYwkAWggiJNEwh-aeggh3L-w=s240-c-k-c0x00ffffff-no-rj",
@@ -1659,6 +1648,17 @@
     "thumbnail": "https://i.ytimg.com/vi/jl8SDX6rHEo/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/3KzF3YSQvjRpSMpFZEEsaGlIcETMW03ZmdKQy_TjJIm8t9vC4AjNwLLR5hNqXi0M9qnyszb0PCY=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=jl8SDX6rHEo"
+  },
+  {
+    "name": "夜雨ねむる",
+    "youtubeid": "UC1hxdM37vjjqr-IfZuDn1iw",
+    "title": "【雑談】作業　夜雨ねむる【パレデミア学園】",
+    "date": "2026-06-28T01:10:37.000+09:00",
+    "status": "live",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/MYz5fNrd8fg/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/oX8bu2EfV0AJmmDPuA74S-Ky2XAUOxd1IXHEpX5jFDLltMrVNknI1FkpYdhb9VrLGtpUCm3Xvg=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=MYz5fNrd8fg"
   },
   {
     "name": "ニコ・ダークウェル",

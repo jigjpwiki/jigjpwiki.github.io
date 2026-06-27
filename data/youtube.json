@@ -2,17 +2,6 @@
   {
     "name": "堂下さとり",
     "youtubeid": "UCBq6MSUL-Ermvnoj3PtX7Iw",
-    "title": "【手元配信】納豆10000回混ぜプロジェクト 納豆を1時間に何回混ぜられるか？検証【パレデミア学園/堂下さとり】",
-    "date": "2026-06-25T02:48:31.000+09:00",
-    "status": "archive",
-    "type": "video",
-    "thumbnail": "https://i.ytimg.com/vi/7HbLaWlEAcA/mqdefault.jpg",
-    "channelIcon": "https://yt3.ggpht.com/eW_Hug0M6zFk9QSbAmOUWLMSfzBlCHmes-8yAksvfUNzyLgY6TSsE_eW8ncfE4bHYZXKoTWxmQ=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=7HbLaWlEAcA"
-  },
-  {
-    "name": "堂下さとり",
-    "youtubeid": "UCBq6MSUL-Ermvnoj3PtX7Iw",
     "title": "【手元配信】【実写】STR27時間TV 自分の誕生日ケーキ作り【パレデミア学園/堂下さとり】",
     "date": "2026-06-25T02:52:11.000+09:00",
     "status": "archive",
@@ -1139,7 +1128,7 @@
     "date": "2026-06-27T12:00:29.000+09:00",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/7BoP9fK4aBM/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/7BoP9fK4aBM/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/FZAApPZQQXHgHOVY8RCKI0eGvcyJ19mHBpWOT-a_pR_rY6LC8Z2Z9K0gpd4zuwNnYxA-XkKF=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=7BoP9fK4aBM"
   },
@@ -1474,6 +1463,17 @@
     "url": "https://www.youtube.com/watch?v=BlpBiL7wQ0I"
   },
   {
+    "name": "鈴木沙透",
+    "youtubeid": "UCj5nRzNFXZn9GRhITRkKElA",
+    "title": "【検証】初見への態度が人によって違う？#vtuber #鈴木沙透 #shorts",
+    "date": "2026-06-27T21:00:38.000+09:00",
+    "status": "archive",
+    "type": "video",
+    "thumbnail": "https://i.ytimg.com/vi/P--ZA21HJnU/mqdefault.jpg",
+    "channelIcon": "https://yt3.ggpht.com/h4kuTtFCGhkDV4nmk6qjQt8auhkqLEqWwB9Il3NZR6op3ph-a0YElRfLcXkZVPp6xqvGmZHy3w=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=P--ZA21HJnU"
+  },
+  {
     "name": "犬丸なでこ",
     "youtubeid": "UCdJmJxMfXrlnZabUkuss2EA",
     "title": "【 #歌枠雑談  】❤おしゃべりわんね❤【犬丸なでこ/パレデミア学園】",
@@ -1496,11 +1496,22 @@
     "url": "https://www.youtube.com/watch?v=sY_nZezk5NE"
   },
   {
+    "name": "鈴木沙透",
+    "youtubeid": "UCj5nRzNFXZn9GRhITRkKElA",
+    "title": "【#雑談 】鼻声になりました✌【鈴木沙透/パレデミア学園】",
+    "date": "2026-06-27T21:31:47.000+09:00",
+    "status": "archive",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/5Afd_lNXV7s/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/h4kuTtFCGhkDV4nmk6qjQt8auhkqLEqWwB9Il3NZR6op3ph-a0YElRfLcXkZVPp6xqvGmZHy3w=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=5Afd_lNXV7s"
+  },
+  {
     "name": "香桜あんにん",
     "youtubeid": "UC8zjZBqGnx_j55ZJzluhW8A",
     "title": "【同時視聴】『ドラゴンボール』一緒に見よ！＃あんにんたいむ #28【パレデミア学園/香桜あんにん/＃新人VTuber】",
     "date": "2026-06-27T21:37:28.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/tqcs1oVRtL0/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/LL8h8c1rjBm_CimsOmJqxMtfMpzaEZCJ56jM4iOTOaEaDLQ7f6fYwkAWggiJNEwh-aeggh3L-w=s240-c-k-c0x00ffffff-no-rj",
@@ -1511,9 +1522,9 @@
     "youtubeid": "UCldoz5HLh6BMW29HGnRpC0Q",
     "title": "💥アニソン縛り歌枠💥初見さん/ROMの人もおいで～💥≪パレデミア学園 / 灯野ぺけ。≫ #vtuber #karaoke  #歌枠",
     "date": "2026-06-27T21:41:27.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/NcvxFwlGgXA/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/NcvxFwlGgXA/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/sYbvo_2nSCW162VEArIwu7v1B3bl159gmEnGgGei8I8drc4l7huPP7q6aWZ4AfXi5wTMACmGow=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=NcvxFwlGgXA"
   },
@@ -1588,9 +1599,9 @@
     "youtubeid": "UCdJmJxMfXrlnZabUkuss2EA",
     "title": "【ホラー】新幹線0号に乗車するわんね！【パレデミア学園/犬丸なでこ】",
     "date": "2026-06-27T23:50:10.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/SuFBjmnP-9M/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/SuFBjmnP-9M/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/HZPUrbSwGcllAbUtx6xggJ6lKfMfnAWDxWOCc01tpthiDipSqQP48TK5Jqz4GRzUdwKMUsxlsg=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=SuFBjmnP-9M"
   },
@@ -1628,6 +1639,17 @@
     "url": "https://www.youtube.com/watch?v=o0OChqpr6Kc"
   },
   {
+    "name": "天辻ゆらぐ",
+    "youtubeid": "UCeOFQCn_QZJMTszlRYRg3rQ",
+    "title": "【縦型雑談】低音×癒し×お姉さんと深夜のチル雑談１時間🪼🌙💜【天辻ゆらぐ/パレデミア学園】 #新人Vtuber #ゆらぐっどたいむ",
+    "date": "2026-06-28T00:16:52.000+09:00",
+    "status": "archive",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/ICQGu1pxEKs/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/4AFFu60kFJqix-OhtDW3EJdQ0jQa1LrK56tGpvqvbGodMQFpkH-_qtvL_66dPGD3kl4LW9N4=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=ICQGu1pxEKs"
+  },
+  {
     "name": "藤宮コトハ",
     "youtubeid": "UCGndc74kfWb_A-8hZBG534Q",
     "title": "【歌枠 】　深夜のラジオ歌枠♪　【#パレプロ ／ #藤宮コトハ 】",
@@ -1643,7 +1665,7 @@
     "youtubeid": "UC9nhm1B-XhPaUO8W8oc4thQ",
     "title": "【雑談】秋旅行イベントラスラン！【露草なぎ/パレデミア学園】",
     "date": "2026-06-28T00:39:21.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/jl8SDX6rHEo/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/3KzF3YSQvjRpSMpFZEEsaGlIcETMW03ZmdKQy_TjJIm8t9vC4AjNwLLR5hNqXi0M9qnyszb0PCY=s240-c-k-c0x00ffffff-no-rj",
@@ -1654,7 +1676,7 @@
     "youtubeid": "UC1hxdM37vjjqr-IfZuDn1iw",
     "title": "【雑談】作業　夜雨ねむる【パレデミア学園】",
     "date": "2026-06-28T01:10:37.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/MYz5fNrd8fg/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/oX8bu2EfV0AJmmDPuA74S-Ky2XAUOxd1IXHEpX5jFDLltMrVNknI1FkpYdhb9VrLGtpUCm3Xvg=s240-c-k-c0x00ffffff-no-rj",
@@ -1681,6 +1703,17 @@
     "thumbnail": "https://i.ytimg.com/vi/E28j4n3p0ls/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/CH5JMWVQZ_RtloaXoj6W-yXjo9x8UxXSBG_vMyDnfk7M2QTOApVE1zOesu_aDrSAqvDbGrUyxs0=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=E28j4n3p0ls"
+  },
+  {
+    "name": "犬丸なでこ",
+    "youtubeid": "UCdJmJxMfXrlnZabUkuss2EA",
+    "title": "【 #歌枠雑談  】❤ラスランわんね❤【犬丸なでこ/パレデミア学園】",
+    "date": "2026-06-28T07:00:00.000+09:00",
+    "status": "upcoming",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/F2fVMmkx0Cg/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/HZPUrbSwGcllAbUtx6xggJ6lKfMfnAWDxWOCc01tpthiDipSqQP48TK5Jqz4GRzUdwKMUsxlsg=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=F2fVMmkx0Cg"
   },
   {
     "name": "桜庭羽奈",

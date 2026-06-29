@@ -1579,7 +1579,7 @@
     "date": "2026-06-29T23:47:56.000+09:00",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/L2EWmYw6NTw/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/L2EWmYw6NTw/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/oX8bu2EfV0AJmmDPuA74S-Ky2XAUOxd1IXHEpX5jFDLltMrVNknI1FkpYdhb9VrLGtpUCm3Xvg=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=L2EWmYw6NTw"
   },
@@ -1659,6 +1659,17 @@
     "thumbnail": "https://i.ytimg.com/vi/Bw1nUiuEPZw/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/traR_yWe-AOGyM2wjo8h2FJO9JWBcbjfrL13X-umeD6BtNPopSZ2Q3YmdJq_5K9gWgHf_j64iQ=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=Bw1nUiuEPZw"
+  },
+  {
+    "name": "香鳴ハノン",
+    "youtubeid": "UCay6Y3oEoiC6ZEE2G0UZu_A",
+    "title": "【歌枠｜KARAOKE】結婚2026、Day2──💍【#パレプロ #香鳴ハノン】",
+    "date": "2026-06-30T18:30:00.000+09:00",
+    "status": "upcoming",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/QTAG2BrenPk/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/qvbeb9E-gYc822fxxzi6Ug5QyjhqZAWbUskHANcwDWP5W8iTsK3LcQJnjS4CVBuFJ6fONsM9F7M=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=QTAG2BrenPk"
   },
   {
     "name": "藤森ちとせ",

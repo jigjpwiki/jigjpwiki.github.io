@@ -1,27 +1,5 @@
 [
   {
-    "name": "緋月・ローズ・ブレイド",
-    "youtubeid": "UCDutDfyKbX_ah4GF6kPNKmw",
-    "title": "【#パレデミア学園】罰ゲームシチュボ【#shorts】#シチュエーションボイス",
-    "date": "2026-06-26T09:20:23.000+09:00",
-    "status": "archive",
-    "type": "video",
-    "thumbnail": "https://i.ytimg.com/vi/qZMbgkMrDNM/mqdefault.jpg",
-    "channelIcon": "https://yt3.ggpht.com/W_G4fcoLegJdQmhWclC6RKHdrx9DJLGZ4WcLyCKgJxzyZZ3MUd-tNZ90LYQGVAbt7NzXl5GUJQ=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=qZMbgkMrDNM"
-  },
-  {
-    "name": "宵坂伊織",
-    "youtubeid": "UCa1C15g_z1k5oQIYCeD2Hdw",
-    "title": "【#雑談】ちょろっと話す～【#パレデミア学園】#伊織実行中",
-    "date": "2026-06-26T10:28:48.000+09:00",
-    "status": "archive",
-    "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/qT9zMmmpNEU/mqdefault.jpg",
-    "channelIcon": "https://yt3.ggpht.com/fOSQN7R8b2LFTwHpvzc3RfsR_nJ02TIUKscIIj-hYwqWAsmMmqiixAt7XTbJTuH5MRqir4oC9Q=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=qT9zMmmpNEU"
-  },
-  {
     "name": "牡丹雪",
     "youtubeid": "UCl-qrfygvCjyA_lMR5lJzig",
     "title": "【切り抜き】役満上がって3位になるVTuberが居るらしい…【雀魂参加型】",
@@ -1621,7 +1599,7 @@
     "youtubeid": "UCpdWNjSU-onhmcARqgHIfpg",
     "title": "【#朝活】今日からまた1週間がんばろうのおはようがしたい！6/29(月) #天堂観測【パレデミア学園/天堂ライラ】",
     "date": "2026-06-29T07:29:32.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/tzcrqtOMhMc/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/JA8QqThoUnCNAgJASH3p_wPyWJBf2ILiUfpIvArr6592NkkrFntPQ4EgPsahnLpPCMP4mk93ig=s240-c-k-c0x00ffffff-no-rj",
@@ -1648,6 +1626,17 @@
     "thumbnail": "https://i.ytimg.com/vi/1B8DTl7lTFg/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/GTQLrgAFGtGBsfbiwqAP-vnRRHXDfXAKiZIGJAO-p4hzLfenIewQmuXdsBmgPfnz_hf0WsI62Q=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=1B8DTl7lTFg"
+  },
+  {
+    "name": "天堂ライラ",
+    "youtubeid": "UCpdWNjSU-onhmcARqgHIfpg",
+    "title": "【#ライランチ】同時視聴！アニメ版イニD一緒にみよう！第9話 #天堂観測【パレデミア学園/天堂ライラ】",
+    "date": "2026-06-29T12:00:00.000+09:00",
+    "status": "upcoming",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/FUBfN8mGG1c/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/JA8QqThoUnCNAgJASH3p_wPyWJBf2ILiUfpIvArr6592NkkrFntPQ4EgPsahnLpPCMP4mk93ig=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=FUBfN8mGG1c"
   },
   {
     "name": "真昼ねる",

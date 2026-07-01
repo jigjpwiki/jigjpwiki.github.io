@@ -974,7 +974,7 @@
     "date": "2026-06-30T19:00:36.000+09:00",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/IoYmx4Wv9do/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/IoYmx4Wv9do/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/WBGP05KaXeA21IzCbCeM0QHa0v9maVvVUBDZ2DyfTT62F1wGaW3hLOQBy1gCfuQfEnDNgwbsrQ=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=IoYmx4Wv9do"
   },
@@ -996,7 +996,7 @@
     "date": "2026-06-30T19:58:01.000+09:00",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/niKULSIeY_U/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/niKULSIeY_U/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/FZAApPZQQXHgHOVY8RCKI0eGvcyJ19mHBpWOT-a_pR_rY6LC8Z2Z9K0gpd4zuwNnYxA-XkKF=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=niKULSIeY_U"
   },
@@ -1117,7 +1117,7 @@
     "date": "2026-06-30T22:04:16.000+09:00",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/LlcdWRFUSuo/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/LlcdWRFUSuo/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/GTQLrgAFGtGBsfbiwqAP-vnRRHXDfXAKiZIGJAO-p4hzLfenIewQmuXdsBmgPfnz_hf0WsI62Q=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=LlcdWRFUSuo"
   },
@@ -1254,6 +1254,17 @@
     "url": "https://www.youtube.com/watch?v=p4kt3r20Aw4"
   },
   {
+    "name": "相栖るじゅ",
+    "youtubeid": "UCrpdBoGpa6g2WEtRWsIlhDQ",
+    "title": "【あるある】ナニコレ珍百景登録決定だねっ！#shorts #新人vtuber #推しをお探しですか #あるある #ネタ",
+    "date": "2026-07-01T07:00:24.000+09:00",
+    "status": "archive",
+    "type": "video",
+    "thumbnail": "https://i.ytimg.com/vi/VB5sWDX0Xyw/mqdefault.jpg",
+    "channelIcon": "https://yt3.ggpht.com/yQbh9vEEgS_UapoQhIxxoTSy13bDxlHYC-ncTcO9VIDBN2NvrLTAWeKGQ72CN2fhOOrHqYaFDA=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=VB5sWDX0Xyw"
+  },
+  {
     "name": "花晴りら",
     "youtubeid": "UCqcnlq8uJqnGml6hcIrMCZw",
     "title": "【朝活/雑談】初見さん歓迎🌷150人におはよう言いたい7月最初の朝活🔆【花晴りら/ #パレデミア学園 】#れりライブ",
@@ -1291,11 +1302,22 @@
     "youtubeid": "UCpdWNjSU-onhmcARqgHIfpg",
     "title": "【#朝活】今日もがんばろうのおはようがしたい！7/1(水) #天堂観測【パレデミア学園/天堂ライラ】",
     "date": "2026-07-01T07:30:31.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/4WO9Z8iNGkw/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/4WO9Z8iNGkw/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/JA8QqThoUnCNAgJASH3p_wPyWJBf2ILiUfpIvArr6592NkkrFntPQ4EgPsahnLpPCMP4mk93ig=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=4WO9Z8iNGkw"
+  },
+  {
+    "name": "天堂ライラ",
+    "youtubeid": "UCpdWNjSU-onhmcARqgHIfpg",
+    "title": "【#ライランチ】同時視聴！アニメ版イニD一緒にみよう！第11話 #天堂観測【パレデミア学園/天堂ライラ】",
+    "date": "2026-07-01T12:00:00.000+09:00",
+    "status": "upcoming",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/3YhpiFgVWiY/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/JA8QqThoUnCNAgJASH3p_wPyWJBf2ILiUfpIvArr6592NkkrFntPQ4EgPsahnLpPCMP4mk93ig=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=3YhpiFgVWiY"
   },
   {
     "name": "無月いお",
@@ -1323,7 +1345,7 @@
     "name": "江波キョウカ",
     "youtubeid": "UChpkyQ3O21OnkcMcgCoNHCg",
     "title": "꒰ঌ どろぼうノームになっちゃえ～！#えこーちゃん【 #江波キョウカ / 日向奈央 / キョンシーのCiちゃん / 音門るき 】",
-    "date": "2026-07-01T19:00:00.000+09:00",
+    "date": "2026-07-01T18:00:00.000+09:00",
     "status": "upcoming",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/88c03o5P8u0/mqdefault_live.jpg",

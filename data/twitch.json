@@ -1,14 +1,5 @@
 [
   {
-    "name": "李じゅぴ汰",
-    "twitchid": "lee_jupita",
-    "title": "【作業雑談】なななな内職",
-    "date": "2026-06-28T16:19:25.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/5706bc75-6841-4954-8894-7b7bfba16adb-profile_image-300x300.png",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/56c56bd2920dc07902c4_lee_jupita_316095856113_1782631160//thumb/thumb0-320x180.jpg"
-  },
-  {
     "name": "真昼ねる",
     "twitchid": "mahiruneru",
     "title": "【スト6】 潜在的関東規模他責少女 、ダイヤにゆく【ぷろのゔぁ￤VTuber￤真昼ねる】",
@@ -84,9 +75,18 @@
     "name": "しーはむ",
     "twitchid": "siyham",
     "title": "めれーは難しい",
-    "date": "2026-07-01T14:10:09.000+09:00",
-    "status": "live",
+    "date": "2026-07-01T14:10:14.000+09:00",
+    "status": "archive",
     "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/e1c097ec-5528-472a-a299-4dc50a979373-profile_image-300x300.png",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_siyham-320x180.jpg"
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/98548ef66533c01f2458_siyham_316171721203_1782882609//thumb/thumb0-320x180.jpg"
+  },
+  {
+    "name": "李じゅぴ汰",
+    "twitchid": "lee_jupita",
+    "title": "【ミカクテイ事件の観測者】ネトスト力が試されています…！【ネタバレ注意/謎解き/ネット探偵】",
+    "date": "2026-07-01T16:46:41.000+09:00",
+    "status": "live",
+    "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/5706bc75-6841-4954-8894-7b7bfba16adb-profile_image-300x300.png",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lee_jupita-320x180.jpg"
   }
 ]

@@ -1,27 +1,5 @@
 [
   {
-    "name": "雪紫誉",
-    "youtubeid": "UCdbYinKlpkB_uMt_wPmYcsw",
-    "title": "【#雑談 #朝活】おはよう朝だよ！！#初見さん大歓迎 ◎【#パレデミア学園/#ゆきむらじお】＃新人VTuber",
-    "date": "2026-06-29T06:00:37.000+09:00",
-    "status": "archive",
-    "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/Xe_xAP_qrnI/mqdefault.jpg",
-    "channelIcon": "https://yt3.ggpht.com/4RbHGCHx02xQ2ze4g7UCTvuUPlQCpbk6bHIb5cdqO4JNzTe5qsq4sDTt6m-xVKMm476vJiMF7A=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=Xe_xAP_qrnI"
-  },
-  {
-    "name": "桜堂ねる",
-    "youtubeid": "UC0H7dRRqhfOifbYQ2TURdAg",
-    "title": "6月29日【桜堂ねる】#今日は何の日 #ねる道場 #vtuber #shorts",
-    "date": "2026-06-29T06:14:03.000+09:00",
-    "status": "archive",
-    "type": "video",
-    "thumbnail": "https://i.ytimg.com/vi/2ouULl84-d0/mqdefault.jpg",
-    "channelIcon": "https://yt3.ggpht.com/hBz75E3AEST1Dzv5vOTHAqoJfayd30WIWWQ3ZFLlWMHDsyZ_QD6ZVVUtLTKSizalT3APPtdpFGI=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=2ouULl84-d0"
-  },
-  {
     "name": "桜庭羽奈",
     "youtubeid": "UCPgg_A08ksSYP-VivJGniRw",
     "title": "【おはよう100人待ってます！】6月最終月曜日楽しもう！！初見さん大歓迎！💛【新人VTuberの雑談／歌枠】🐻",
@@ -1073,7 +1051,7 @@
     "date": "2026-07-01T16:16:21.000+09:00",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/Lw9T-XsqnIw/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/Lw9T-XsqnIw/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/yQbh9vEEgS_UapoQhIxxoTSy13bDxlHYC-ncTcO9VIDBN2NvrLTAWeKGQ72CN2fhOOrHqYaFDA=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=Lw9T-XsqnIw"
   },
@@ -1445,9 +1423,9 @@
     "youtubeid": "UCeOFQCn_QZJMTszlRYRg3rQ",
     "title": "【チル雑談/ゲーム】ただただ、アヒルを眺める夜 - Placid Plastic Duck Simulator -【天辻ゆらぐ/パレデミア学園】 #新人Vtuber #ゆらぐっどたいむ",
     "date": "2026-07-02T02:16:40.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/kiL9iejzpJg/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/kiL9iejzpJg/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/4AFFu60kFJqix-OhtDW3EJdQ0jQa1LrK56tGpvqvbGodMQFpkH-_qtvL_66dPGD3kl4LW9N4=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=kiL9iejzpJg"
   },
@@ -1455,8 +1433,8 @@
     "name": "桜庭羽奈",
     "youtubeid": "UCPgg_A08ksSYP-VivJGniRw",
     "title": "【おはよう100人待ってます！】今日こそおはよう100人目指す！！初見さん大歓迎！💛【新人VTuberの雑談／歌枠】🐻",
-    "date": "2026-07-02T06:30:00.000+09:00",
-    "status": "upcoming",
+    "date": "2026-07-02T06:30:49.000+09:00",
+    "status": "live",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/qZjUvIrhOs0/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/04zALH6pYL7mkWILHajvBzfzg4hrwRCLBONme3K1PjuEeYJIRC6RYxPmJzVZRuN42skHEDNRGmo=s240-c-k-c0x00ffffff-no-rj",
@@ -1494,6 +1472,17 @@
     "thumbnail": "https://i.ytimg.com/vi/ras47OthQE8/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/FZAApPZQQXHgHOVY8RCKI0eGvcyJ19mHBpWOT-a_pR_rY6LC8Z2Z9K0gpd4zuwNnYxA-XkKF=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=ras47OthQE8"
+  },
+  {
+    "name": "無月いお",
+    "youtubeid": "UC2X_mAVGw8e3N9JQZZDVBfQ",
+    "title": "【#低音女子】休憩時間をうちにください《#パレデミア学園》",
+    "date": "2026-07-02T12:00:00.000+09:00",
+    "status": "upcoming",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/HjyxKD5mta0/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/Z7PlAWhweuycNXNXoQ6etyDTkduySM-Kqy8kQW-AD19JuRdxT3HSdIxogPw3GPD5NHw_vZlf=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=HjyxKD5mta0"
   },
   {
     "name": "藤森ちとせ",

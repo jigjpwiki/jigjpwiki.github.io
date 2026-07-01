@@ -1,14 +1,5 @@
 [
   {
-    "name": "月皇ちな",
-    "twitchid": "chi7_v",
-    "title": "うるさん祝うぞ！！ふるぱヴぁろ #chi7live",
-    "date": "2026-06-28T15:07:54.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/76f2958e-cab4-41b8-98c1-cc4d275b2ca5-profile_image-300x300.png",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/1ad9b368ce73af12e7d7_chi7_v_316104629618_1782626869//thumb/thumb0-320x180.jpg"
-  },
-  {
     "name": "李じゅぴ汰",
     "twitchid": "lee_jupita",
     "title": "【作業雑談】なななな内職",
@@ -88,5 +79,14 @@
     "status": "archive",
     "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/9e02effe-cf25-4ba0-9fe7-da457d4e8c87-profile_image-300x300.png",
     "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/210356df84a78d8e9bc5_hinoha_rui_316107106033_1782844138//thumb/thumb0-320x180.jpg"
+  },
+  {
+    "name": "しーはむ",
+    "twitchid": "siyham",
+    "title": "めれーは難しい",
+    "date": "2026-07-01T14:10:09.000+09:00",
+    "status": "live",
+    "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/e1c097ec-5528-472a-a299-4dc50a979373-profile_image-300x300.png",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_siyham-320x180.jpg"
   }
 ]

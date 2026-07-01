@@ -1018,7 +1018,7 @@
     "date": "2026-07-01T11:59:58.000+09:00",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/3YhpiFgVWiY/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/3YhpiFgVWiY/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/JA8QqThoUnCNAgJASH3p_wPyWJBf2ILiUfpIvArr6592NkkrFntPQ4EgPsahnLpPCMP4mk93ig=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=3YhpiFgVWiY"
   },
@@ -1029,7 +1029,7 @@
     "date": "2026-07-01T12:07:14.000+09:00",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/MuMm8ktp2dc/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/MuMm8ktp2dc/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/Z7PlAWhweuycNXNXoQ6etyDTkduySM-Kqy8kQW-AD19JuRdxT3HSdIxogPw3GPD5NHw_vZlf=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=MuMm8ktp2dc"
   },
@@ -1051,7 +1051,7 @@
     "date": "2026-07-01T13:00:17.000+09:00",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/Y1ZDvDWUNoE/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/Y1ZDvDWUNoE/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/dPJHngNTeEfD_K0Mus141-We4xIuAhttm2pgEBl3VdGXqWvxGfy5mJfDMDbBmwI6UGc17dXb-g=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=Y1ZDvDWUNoE"
   },
@@ -1225,9 +1225,9 @@
     "youtubeid": "UCAhdxmsdngH4noySdpVAVWQ",
     "title": "久しぶりの麻雀配信～🀄✨段位あがるといいですね～【雀魂】【#新人vtuber 】#ちとせらいぶ #パレデミア学園",
     "date": "2026-07-01T19:58:45.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/OrW0T3SvtT0/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/OrW0T3SvtT0/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/traR_yWe-AOGyM2wjo8h2FJO9JWBcbjfrL13X-umeD6BtNPopSZ2Q3YmdJq_5K9gWgHf_j64iQ=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=OrW0T3SvtT0"
   },
@@ -1302,9 +1302,9 @@
     "youtubeid": "UCqcnlq8uJqnGml6hcIrMCZw",
     "title": "【Minecraft/雑談】メン限鯖で建築！風車完成！外装＆小麦畑をつくる🌾🌷初見さん/ROM勢大歓迎【花晴りら/ #パレデミア学園 】#れりライブ",
     "date": "2026-07-01T20:59:41.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/3IO__lbP2PY/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/3IO__lbP2PY/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/CH5JMWVQZ_RtloaXoj6W-yXjo9x8UxXSBG_vMyDnfk7M2QTOApVE1zOesu_aDrSAqvDbGrUyxs0=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=3IO__lbP2PY"
   },
@@ -1342,6 +1342,17 @@
     "url": "https://www.youtube.com/watch?v=4b3SLmLgoFw"
   },
   {
+    "name": "銀河キララ",
+    "youtubeid": "UCRuWA3zi9BB3pm4J0vLan_A",
+    "title": "【名探偵と、もしも】#shortvideo #vtuber #新人vtuber #学園祭 #探偵 #パレデミア学園",
+    "date": "2026-07-01T21:09:40.000+09:00",
+    "status": "archive",
+    "type": "video",
+    "thumbnail": "https://i.ytimg.com/vi/nRzmzLzOV_w/mqdefault.jpg",
+    "channelIcon": "https://yt3.ggpht.com/TWALoyGbMNWKoG6NkimlLjiN1yZAl1y3pcliV9giJZrk5Z6_bmlG6KvmpAJLKt9Ec2cFaD7u6A=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=nRzmzLzOV_w"
+  },
+  {
     "name": "変幻リメ",
     "youtubeid": "UC5bCRde8xRrNS7s6GjCNCyQ",
     "title": "【リズム天国 ミラクルスターズ】初見！体験版！最高とるまで進めません。バンドやってたのでリズム天国、余裕です。【＃変幻リメ】",
@@ -1351,6 +1362,17 @@
     "thumbnail": "https://i.ytimg.com/vi/BRjHDMWFMX8/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/4hssn4EXW2lORXRfiuYTjmYfnlZoQ2h72sdEompqX7GQwAKCsBx7eL0joCFSook1rfCKIcpykg=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=BRjHDMWFMX8"
+  },
+  {
+    "name": "新巻るろな",
+    "youtubeid": "UCUd4wJjvPQflbLnsk_YHleA",
+    "title": "【 コミュ力に難のある #雑談 】てりて～りソースの焼きそば～～～【新巻るろな／パレデミア学園】#VTuber",
+    "date": "2026-07-01T22:11:16.000+09:00",
+    "status": "archive",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/U4dseDohEko/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/-4sLuWCih-DlfhpwpDQEuB6eupCB6kTImkIPmKnh54vu5I0F49RkveNQGiqy0p8t0GDU6eiegGE=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=U4dseDohEko"
   },
   {
     "name": "香桜あんにん",
@@ -1390,11 +1412,22 @@
     "youtubeid": "UCldoz5HLh6BMW29HGnRpC0Q",
     "title": "【ど初心者のよちよちApex💥】part12 初見さん/ROMさんもおいで～💥≪パレデミア学園 / 灯野ぺけ。≫ #vtuber #ゲーム配信 #apex",
     "date": "2026-07-01T23:51:55.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/mi2DCRzq5lE/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/sYbvo_2nSCW162VEArIwu7v1B3bl159gmEnGgGei8I8drc4l7huPP7q6aWZ4AfXi5wTMACmGow=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=mi2DCRzq5lE"
+  },
+  {
+    "name": "天辻ゆらぐ",
+    "youtubeid": "UCeOFQCn_QZJMTszlRYRg3rQ",
+    "title": "【チル雑談/ゲーム】ただただ、アヒルを眺める夜 - Placid Plastic Duck Simulator -【天辻ゆらぐ/パレデミア学園】 #新人Vtuber #ゆらぐっどたいむ",
+    "date": "2026-07-02T02:16:40.000+09:00",
+    "status": "live",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/kiL9iejzpJg/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/4AFFu60kFJqix-OhtDW3EJdQ0jQa1LrK56tGpvqvbGodMQFpkH-_qtvL_66dPGD3kl4LW9N4=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=kiL9iejzpJg"
   },
   {
     "name": "桜庭羽奈",
@@ -1439,6 +1472,28 @@
     "thumbnail": "https://i.ytimg.com/vi/ras47OthQE8/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/FZAApPZQQXHgHOVY8RCKI0eGvcyJ19mHBpWOT-a_pR_rY6LC8Z2Z9K0gpd4zuwNnYxA-XkKF=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=ras47OthQE8"
+  },
+  {
+    "name": "藤森ちとせ",
+    "youtubeid": "UCAhdxmsdngH4noySdpVAVWQ",
+    "title": "【露天掘り雑談】水抜きが大変すぎるトライアルチャンバー掘り出し⛏✨作業用にも😉ROM歓迎🎉【#Minecraft】【#新人vtuber 】#ちとせらいぶ #パレデミア学園",
+    "date": "2026-07-02T13:00:00.000+09:00",
+    "status": "upcoming",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/DljZXsS890c/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/traR_yWe-AOGyM2wjo8h2FJO9JWBcbjfrL13X-umeD6BtNPopSZ2Q3YmdJq_5K9gWgHf_j64iQ=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=DljZXsS890c"
+  },
+  {
+    "name": "夏渚まはろ",
+    "youtubeid": "UC_a00ml_EVDXSrtY8ZuyqGQ",
+    "title": "【リズム天国 ミラクルスターズ】発売日当日！初見プレイ！アイドルが最強のリズム感を発揮する！【#夏渚まはろ￤#パレプロ】",
+    "date": "2026-07-02T18:00:00.000+09:00",
+    "status": "upcoming",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/TQyoPrhLaM0/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/iktv-39nC7NDASD1WeXms-DEuHuVqB5RhwTtdDe26w-BCvqf6yq3r_8zBiv2i2CfNXCK0uE8=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=TQyoPrhLaM0"
   },
   {
     "name": "銘兎目あう",

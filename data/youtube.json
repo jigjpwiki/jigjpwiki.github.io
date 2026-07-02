@@ -1,27 +1,5 @@
 [
   {
-    "name": "堂下さとり",
-    "youtubeid": "UCBq6MSUL-Ermvnoj3PtX7Iw",
-    "title": "【雑談】ジューンブライド本日最終日【堂下さとり/パレデミア学園】",
-    "date": "2026-06-30T06:26:02.000+09:00",
-    "status": "archive",
-    "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/i3m-UDVCGQs/mqdefault.jpg",
-    "channelIcon": "https://yt3.ggpht.com/eW_Hug0M6zFk9QSbAmOUWLMSfzBlCHmes-8yAksvfUNzyLgY6TSsE_eW8ncfE4bHYZXKoTWxmQ=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=i3m-UDVCGQs"
-  },
-  {
-    "name": "桜庭羽奈",
-    "youtubeid": "UCPgg_A08ksSYP-VivJGniRw",
-    "title": "【おはよう100人待ってます！】今日こそおはよう100人目指す！！初見さん大歓迎！💛【新人VTuberの雑談／歌枠】🐻",
-    "date": "2026-06-30T06:29:23.000+09:00",
-    "status": "archive",
-    "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/HOUV5riO2WE/mqdefault.jpg",
-    "channelIcon": "https://yt3.ggpht.com/04zALH6pYL7mkWILHajvBzfzg4hrwRCLBONme3K1PjuEeYJIRC6RYxPmJzVZRuN42skHEDNRGmo=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=HOUV5riO2WE"
-  },
-  {
     "name": "花晴りら",
     "youtubeid": "UCqcnlq8uJqnGml6hcIrMCZw",
     "title": "【朝活/雑談】初見さん歓迎🌷150人におはよう言いたい6月最後の朝活🔆【花晴りら/ #パレデミア学園 】#れりライブ",
@@ -1128,7 +1106,7 @@
     "date": "2026-07-02T16:35:07.000+09:00",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/sBLn801Iydw/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/sBLn801Iydw/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/yQbh9vEEgS_UapoQhIxxoTSy13bDxlHYC-ncTcO9VIDBN2NvrLTAWeKGQ72CN2fhOOrHqYaFDA=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=sBLn801Iydw"
   },
@@ -1441,6 +1419,17 @@
     "url": "https://www.youtube.com/watch?v=3epqcoKz5uo"
   },
   {
+    "name": "さくさくさく",
+    "youtubeid": "UC9zEgqk0yVvX3nqRLCJXGGg",
+    "title": "🎶歌枠雑談🎶@パレデミア学園さくさくさく",
+    "date": "2026-07-03T00:10:40.000+09:00",
+    "status": "archive",
+    "type": "video",
+    "thumbnail": "https://i.ytimg.com/vi/87tVuhqzpY0/mqdefault.jpg",
+    "channelIcon": "https://yt3.ggpht.com/XPoBTJELcobaMFIaRg_qVPbA2B8qzIloNvNNOoG_OkksZJ9JkGiZvRh8Rl3YbU4iV4sxqhZ8=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=87tVuhqzpY0"
+  },
+  {
     "name": "暁月クララ",
     "youtubeid": "UCn4XvlTXjGSvDynpxpOYZPQ",
     "title": "さよならいちごちゃん🍓#SeraniPoji #踊ってみた #暁月クララ",
@@ -1502,9 +1491,20 @@
     "date": "2026-07-03T02:13:07.000+09:00",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/HKJ_z4U5f7w/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/HKJ_z4U5f7w/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/4AFFu60kFJqix-OhtDW3EJdQ0jQa1LrK56tGpvqvbGodMQFpkH-_qtvL_66dPGD3kl4LW9N4=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=HKJ_z4U5f7w"
+  },
+  {
+    "name": "雪紫誉",
+    "youtubeid": "UCdbYinKlpkB_uMt_wPmYcsw",
+    "title": "【#朝活＃雑談】おはよー！！！＃初見さん◎いっぱいはなそ！【#パレデミア学園/#ゆきむらじお】＃新人VTuber",
+    "date": "2026-07-03T06:03:13.000+09:00",
+    "status": "live",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/FbrxkGu657M/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/4RbHGCHx02xQ2ze4g7UCTvuUPlQCpbk6bHIb5cdqO4JNzTe5qsq4sDTt6m-xVKMm476vJiMF7A=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=FbrxkGu657M"
   },
   {
     "name": "花晴りら",

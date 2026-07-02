@@ -1,16 +1,5 @@
 [
   {
-    "name": "汐月永遠",
-    "youtubeid": "UCCCm2ueQtW3mYUMB7Excq8g",
-    "title": "【#雑談  】同時配信を試したい【汐月永遠/パレデミア学園】#永遠との時間",
-    "date": "2026-06-30T01:49:06.000+09:00",
-    "status": "archive",
-    "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/CDWVi_rigI4/mqdefault.jpg",
-    "channelIcon": "https://yt3.ggpht.com/68oh3mZjSYRleiuocaxnF9VcHdbaxLQzjCq4QgdPlHe3083eTdmNkfXZ6YV81vTUA51qoNXH_g=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=CDWVi_rigI4"
-  },
-  {
     "name": "堂下さとり",
     "youtubeid": "UCBq6MSUL-Ermvnoj3PtX7Iw",
     "title": "【雑談】ジューンブライド本日最終日【堂下さとり/パレデミア学園】",
@@ -1095,7 +1084,7 @@
     "date": "2026-07-02T12:08:20.000+09:00",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/HjyxKD5mta0/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/HjyxKD5mta0/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/Z7PlAWhweuycNXNXoQ6etyDTkduySM-Kqy8kQW-AD19JuRdxT3HSdIxogPw3GPD5NHw_vZlf=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=HjyxKD5mta0"
   },
@@ -1232,13 +1221,24 @@
     "url": "https://www.youtube.com/watch?v=wNMXmdJZigU"
   },
   {
+    "name": "露草なぎ",
+    "youtubeid": "UC9nhm1B-XhPaUO8W8oc4thQ",
+    "title": "【シチュボ】君と一緒に秋旅行【イベント入賞ありがとう✨️ 】 #vtuber #新人vtuber #シチュエーションボイス",
+    "date": "2026-07-02T19:53:26.000+09:00",
+    "status": "archive",
+    "type": "video",
+    "thumbnail": "https://i.ytimg.com/vi/Yf1dSA4Jl_E/mqdefault.jpg",
+    "channelIcon": "https://yt3.ggpht.com/3KzF3YSQvjRpSMpFZEEsaGlIcETMW03ZmdKQy_TjJIm8t9vC4AjNwLLR5hNqXi0M9qnyszb0PCY=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=Yf1dSA4Jl_E"
+  },
+  {
     "name": "藤森ちとせ",
     "youtubeid": "UCAhdxmsdngH4noySdpVAVWQ",
     "title": "【ホグワーツ・レガシー】初めての魔法学校！ちとせも魔法使いになれますか～？🪄【初見プレイ】#vtuber  #ちとせらいぶ #パレデミア学園",
     "date": "2026-07-02T19:58:13.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/qXjN8g1Jn7A/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/qXjN8g1Jn7A/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/traR_yWe-AOGyM2wjo8h2FJO9JWBcbjfrL13X-umeD6BtNPopSZ2Q3YmdJq_5K9gWgHf_j64iQ=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=qXjN8g1Jn7A"
   },
@@ -1291,9 +1291,9 @@
     "youtubeid": "UCqcnlq8uJqnGml6hcIrMCZw",
     "title": "【雑談】みんなのオススメ知りたい！Steamサマーセールで買うゲームを決める【花晴りら/ #パレデミア学園 】#れりライブ",
     "date": "2026-07-02T21:00:09.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/1P20u8gLHX4/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/1P20u8gLHX4/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/CH5JMWVQZ_RtloaXoj6W-yXjo9x8UxXSBG_vMyDnfk7M2QTOApVE1zOesu_aDrSAqvDbGrUyxs0=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=1P20u8gLHX4"
   },
@@ -1313,9 +1313,9 @@
     "youtubeid": "UCIw8aQVRBwi72yOrPLgkbRQ",
     "title": "【雑談】7月の目標と6月どうしちゃったんですか【陰山アゲハ/#パレデミア学園 】",
     "date": "2026-07-02T21:02:48.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/NWazPrr0ke8/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/NWazPrr0ke8/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/XWKUawU_WoX_xINkx3TMSF3fj0RbdiwNezFiEAGcmHfQYvwkjMUM1mvyOmgsbK8LxHoo6aEKJA=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=NWazPrr0ke8"
   },
@@ -1331,13 +1331,24 @@
     "url": "https://www.youtube.com/watch?v=a2LRiszAt_0"
   },
   {
+    "name": "露草なぎ",
+    "youtubeid": "UC9nhm1B-XhPaUO8W8oc4thQ",
+    "title": "【コラボ雑談】みっけちゃんとお茶会【露草なぎ/パレデミア学園】",
+    "date": "2026-07-02T21:30:36.000+09:00",
+    "status": "archive",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/0ofoezB-K8U/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/3KzF3YSQvjRpSMpFZEEsaGlIcETMW03ZmdKQy_TjJIm8t9vC4AjNwLLR5hNqXi0M9qnyszb0PCY=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=0ofoezB-K8U"
+  },
+  {
     "name": "香桜あんにん",
     "youtubeid": "UC8zjZBqGnx_j55ZJzluhW8A",
     "title": "【初見さん50人に出会いたい】今期夏アニメを語ろう！#あんにんたいむ #34 【パレデミア学園/香桜あんにん/＃新人VTuber】",
     "date": "2026-07-02T21:41:12.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/TSWppo5-iFc/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/TSWppo5-iFc/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/LL8h8c1rjBm_CimsOmJqxMtfMpzaEZCJ56jM4iOTOaEaDLQ7f6fYwkAWggiJNEwh-aeggh3L-w=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=TSWppo5-iFc"
   },
@@ -1346,9 +1357,9 @@
     "youtubeid": "UCWi_ztz8Xuz4XfzhoG6ZfyA",
     "title": "【誕生日カウントダウン】入学して2度目の誕生日🎂✨カウントダウンをしていろいろな嬉しいお知らせも！🌟【＃パレデミア学園】＃せなりるライブ",
     "date": "2026-07-02T22:01:53.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/sQEqegqFlhg/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/sQEqegqFlhg/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/BaxFKUrCc4gGKc1wwAHt4ebjk8C69NdTl3fMz9LoR5SUm_Tpvv2yixsbJhp8qsld6S0tdgup=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=sQEqegqFlhg"
   },
@@ -1364,11 +1375,66 @@
     "url": "https://www.youtube.com/watch?v=fBOS1HN6YsI"
   },
   {
+    "name": "暁月クララ",
+    "youtubeid": "UCn4XvlTXjGSvDynpxpOYZPQ",
+    "title": "✧︎*.〖 雑談 〗ただいまぁ♡30分だけ！のんびり話そ！⋆꙳〖#暁月クララ┊︎#パレプロ〗",
+    "date": "2026-07-02T23:03:16.000+09:00",
+    "status": "archive",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/zZZQU0Epe_Y/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/8tcStp-WzdZPtf6bPq1DtUnFSd2Eq5AppSd3_CEQ7hNNpnRND8InaWdPCz6T1wIWWkGJuFrbT94=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=zZZQU0Epe_Y"
+  },
+  {
+    "name": "藤宮コトハ",
+    "youtubeid": "UCGndc74kfWb_A-8hZBG534Q",
+    "title": "【 雑談 】　ましゅもぐと性格診断　【#パレプロ ／ #藤宮コトハ 】",
+    "date": "2026-07-02T23:38:22.000+09:00",
+    "status": "live",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/j_2oppPk3Ys/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/rthBXvqjNFcVwEp-AWpiZDXnNjBodSXlsDTa-sjW6uR6Ssv3wuOw2dMXDZLlYaf_c4YiKfItHXU=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=j_2oppPk3Ys"
+  },
+  {
+    "name": "暁月クララ",
+    "youtubeid": "UCn4XvlTXjGSvDynpxpOYZPQ",
+    "title": "さよならいちごちゃん🍓#SeraniPoji #踊ってみた #暁月クララ",
+    "date": "2026-07-03T00:18:07.000+09:00",
+    "status": "archive",
+    "type": "video",
+    "thumbnail": "https://i.ytimg.com/vi/e0HRbaQvdE0/mqdefault.jpg",
+    "channelIcon": "https://yt3.ggpht.com/8tcStp-WzdZPtf6bPq1DtUnFSd2Eq5AppSd3_CEQ7hNNpnRND8InaWdPCz6T1wIWWkGJuFrbT94=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=e0HRbaQvdE0"
+  },
+  {
+    "name": "汐月永遠",
+    "youtubeid": "UCCCm2ueQtW3mYUMB7Excq8g",
+    "title": "【同時配信】先輩と同期の名前を覚えようの会【汐月永遠/パレデミア学園】#永遠との時間",
+    "date": "2026-07-03T01:03:28.000+09:00",
+    "status": "live",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/CPlS4D_AkXI/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/68oh3mZjSYRleiuocaxnF9VcHdbaxLQzjCq4QgdPlHe3083eTdmNkfXZ6YV81vTUA51qoNXH_g=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=CPlS4D_AkXI"
+  },
+  {
+    "name": "香桜あんにん",
+    "youtubeid": "UC8zjZBqGnx_j55ZJzluhW8A",
+    "title": "【ささやき睡眠導入ASMR】寝れない人はひそひそお話しよ#あんにんたいむ #35 【パレデミア学園/香桜あんにん/＃新人VTuber】",
+    "date": "2026-07-03T01:15:05.000+09:00",
+    "status": "live",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/NbRV_6eXYqg/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/LL8h8c1rjBm_CimsOmJqxMtfMpzaEZCJ56jM4iOTOaEaDLQ7f6fYwkAWggiJNEwh-aeggh3L-w=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=NbRV_6eXYqg"
+  },
+  {
     "name": "天堂ライラ",
     "youtubeid": "UCpdWNjSU-onhmcARqgHIfpg",
     "title": "【マウス新調】コブリン・ノーム・ホーンのんびりプレイ！ #天堂観測【パレデミア学園/天堂ライラ】",
-    "date": "2026-07-02T23:00:00.000+09:00",
-    "status": "upcoming",
+    "date": "2026-07-03T01:31:09.000+09:00",
+    "status": "live",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/IuIUZ8o93HU/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/JA8QqThoUnCNAgJASH3p_wPyWJBf2ILiUfpIvArr6592NkkrFntPQ4EgPsahnLpPCMP4mk93ig=s240-c-k-c0x00ffffff-no-rj",
@@ -1408,6 +1474,17 @@
     "url": "https://www.youtube.com/watch?v=kT9cU91l-_U"
   },
   {
+    "name": "江波キョウカ",
+    "youtubeid": "UChpkyQ3O21OnkcMcgCoNHCg",
+    "title": "꒰ঌ リズム天国ミラクルスターズ┆待望のリズム天国🎵令和に復活じゃ～！【 #江波キョウカ / パレプロ 】",
+    "date": "2026-07-03T20:00:00.000+09:00",
+    "status": "upcoming",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/QtvuYI-W2OA/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/pM4ZefnBFJ2qlBEqknYCFHdW6dLH29KptwG0OYSu1-mAVAIy5M1IjwpMwC24-A_v07nluGGrlQ=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=QtvuYI-W2OA"
+  },
+  {
     "name": "銘兎目あう",
     "youtubeid": "UCpr-9ssUUgSb0EpDA8bRuTA",
     "title": "【歌枠】🎀アイドルソング縛り🐰🎀【 #銘兎目あう / #ぷろのゔぁ 】 #shorts #Vtuber #歌枠",
@@ -1428,5 +1505,27 @@
     "thumbnail": "https://i.ytimg.com/vi/TQ-V3IaGimU/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/pM4ZefnBFJ2qlBEqknYCFHdW6dLH29KptwG0OYSu1-mAVAIy5M1IjwpMwC24-A_v07nluGGrlQ=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=TQ-V3IaGimU"
+  },
+  {
+    "name": "愛乃宮ゆめ",
+    "youtubeid": "UCttSjPiwPYpiPuCrgxK7c1g",
+    "title": "墓場から地獄まで。【愛乃宮ゆめ/パレデミア学園】",
+    "date": "2026-07-04T21:00:00.000+09:00",
+    "status": "upcoming",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/cHSlUSt2BG4/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/Gwr7KJNWnI6CEgmIfEeMZahF5pbGNKlRhQXBEkuMWE0D66--IJE77z-5Zu2i5LFBc_CA6ZkqY4Y=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=cHSlUSt2BG4"
+  },
+  {
+    "name": "愛乃宮ゆめ",
+    "youtubeid": "UCttSjPiwPYpiPuCrgxK7c1g",
+    "title": "【マイクラ】一級マイクラ建築士になる！ ドリームハウス作戦 ＃4 【愛乃宮ゆめ/パレデミア学園】",
+    "date": "2026-07-05T21:00:00.000+09:00",
+    "status": "upcoming",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/JLAVGrTTCdw/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/Gwr7KJNWnI6CEgmIfEeMZahF5pbGNKlRhQXBEkuMWE0D66--IJE77z-5Zu2i5LFBc_CA6ZkqY4Y=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=JLAVGrTTCdw"
   }
 ]

@@ -1309,6 +1309,17 @@
     "url": "https://www.youtube.com/watch?v=dlUCD6uFK1o"
   },
   {
+    "name": "愛乃宮ゆめ",
+    "youtubeid": "UCttSjPiwPYpiPuCrgxK7c1g",
+    "title": "【PRAGMATA】＃３あの子は俺が助けるっ！！【愛乃宮ゆめ/パレデミア学園】",
+    "date": "2026-07-02T21:02:32.000+09:00",
+    "status": "archive",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/B1V5S5bX3zI/mqdefault.jpg",
+    "channelIcon": "https://yt3.ggpht.com/Gwr7KJNWnI6CEgmIfEeMZahF5pbGNKlRhQXBEkuMWE0D66--IJE77z-5Zu2i5LFBc_CA6ZkqY4Y=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=B1V5S5bX3zI"
+  },
+  {
     "name": "陰山アゲハ",
     "youtubeid": "UCIw8aQVRBwi72yOrPLgkbRQ",
     "title": "【雑談】7月の目標と6月どうしちゃったんですか【陰山アゲハ/#パレデミア学園 】",
@@ -1434,11 +1445,33 @@
     "youtubeid": "UCpdWNjSU-onhmcARqgHIfpg",
     "title": "【マウス新調】コブリン・ノーム・ホーンのんびりプレイ！ #天堂観測【パレデミア学園/天堂ライラ】",
     "date": "2026-07-03T01:31:09.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/IuIUZ8o93HU/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/JA8QqThoUnCNAgJASH3p_wPyWJBf2ILiUfpIvArr6592NkkrFntPQ4EgPsahnLpPCMP4mk93ig=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=IuIUZ8o93HU"
+  },
+  {
+    "name": "七音うら",
+    "youtubeid": "UCv2IYO-4waCpHvn50SWWY2A",
+    "title": "【#雑談配信 】生活りずむ狂って眠い気がする雑談。多分。【七音うら】",
+    "date": "2026-07-03T02:00:40.000+09:00",
+    "status": "archive",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/adH0DNYeF8w/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/T655ATpSd2gkjZBrokvlkaUH0f5-fCpQdcJpwxmmNdy6fxCYffAlq2sMhPOtFk_CvVyOkEPY8Q=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=adH0DNYeF8w"
+  },
+  {
+    "name": "天辻ゆらぐ",
+    "youtubeid": "UCeOFQCn_QZJMTszlRYRg3rQ",
+    "title": "【めっちゃカメレオン】発売から4日で1000万本達成！？話題のかくれんぼゲームをよちよち初見実況🎨【天辻ゆらぐ/パレデミア学園】 #新人Vtuber #ゆらぐっどたいむ",
+    "date": "2026-07-03T02:13:07.000+09:00",
+    "status": "live",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/HKJ_z4U5f7w/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/4AFFu60kFJqix-OhtDW3EJdQ0jQa1LrK56tGpvqvbGodMQFpkH-_qtvL_66dPGD3kl4LW9N4=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=HKJ_z4U5f7w"
   },
   {
     "name": "花晴りら",
@@ -1450,6 +1483,17 @@
     "thumbnail": "https://i.ytimg.com/vi/L83wuv6OJyg/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/CH5JMWVQZ_RtloaXoj6W-yXjo9x8UxXSBG_vMyDnfk7M2QTOApVE1zOesu_aDrSAqvDbGrUyxs0=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=L83wuv6OJyg"
+  },
+  {
+    "name": "天堂ライラ",
+    "youtubeid": "UCpdWNjSU-onhmcARqgHIfpg",
+    "title": "【#朝活】今日もがんばろうのおはようがしたい！7/3(金) #天堂観測【パレデミア学園/天堂ライラ】",
+    "date": "2026-07-03T07:30:00.000+09:00",
+    "status": "upcoming",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/vmSY-KScWHs/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/JA8QqThoUnCNAgJASH3p_wPyWJBf2ILiUfpIvArr6592NkkrFntPQ4EgPsahnLpPCMP4mk93ig=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=vmSY-KScWHs"
   },
   {
     "name": "無月いお",

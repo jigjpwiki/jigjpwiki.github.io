@@ -1194,7 +1194,7 @@
     "date": "2026-07-02T20:02:29.000+09:00",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/kKO6PCiuLMM/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/kKO6PCiuLMM/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/WBGP05KaXeA21IzCbCeM0QHa0v9maVvVUBDZ2DyfTT62F1wGaW3hLOQBy1gCfuQfEnDNgwbsrQ=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=kKO6PCiuLMM"
   },
@@ -1500,7 +1500,7 @@
     "youtubeid": "UCJLYktDEOak1rSOGRVRKlLQ",
     "title": "【#マイクラ 】初見さん◎朝活マイクラ。エンドの整地【パレデミア学園/夕凪万夜】#vtuber #新人vtuber #ゲーム実況 #ゆうなぎ放送局 #朝活",
     "date": "2026-07-03T07:02:37.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/s1IdAjYhgeY/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/zOlQ66VHDdW9B1w3cRbHlo-3cfkYBLVHzYpXS_xLbOv9bHe72uv-bD246R7gCEfD_7wGBc-6vQ=s240-c-k-c0x00ffffff-no-rj",
@@ -1533,11 +1533,22 @@
     "youtubeid": "UCqewFfi_wwydw6fpazmlAFA",
     "title": "ニューキャッスル専のランク 【虎島めら。ぷろのゔぁ】 #apex",
     "date": "2026-07-03T07:49:50.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/CwiMmN4MZrw/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/GTQLrgAFGtGBsfbiwqAP-vnRRHXDfXAKiZIGJAO-p4hzLfenIewQmuXdsBmgPfnz_hf0WsI62Q=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=CwiMmN4MZrw"
+  },
+  {
+    "name": "新巻るろな",
+    "youtubeid": "UCUd4wJjvPQflbLnsk_YHleA",
+    "title": "【 #朝活 】マスター、いつもの【新巻るろな／パレデミア学園】#VTuber #雑談",
+    "date": "2026-07-03T08:50:04.000+09:00",
+    "status": "archive",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/buW7AdrfICY/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/-4sLuWCih-DlfhpwpDQEuB6eupCB6kTImkIPmKnh54vu5I0F49RkveNQGiqy0p8t0GDU6eiegGE=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=buW7AdrfICY"
   },
   {
     "name": "無月いお",

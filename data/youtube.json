@@ -1232,6 +1232,17 @@
     "url": "https://www.youtube.com/watch?v=PHiXCZ3ZVXI"
   },
   {
+    "name": "亀城ちかり",
+    "youtubeid": "UCn67GGb_NB7P17BVTduGkEw",
+    "title": "【雑談】今日も突然でごめんよ【亀城ちかり/パレデミア学園】",
+    "date": "2026-07-03T17:28:53.000+09:00",
+    "status": "archive",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/blC2vUU8HbM/mqdefault.jpg",
+    "channelIcon": "https://yt3.ggpht.com/FoMfSB8j5DfKLhYyYkZTiSDODTCNEaOlBJykfWqc56jsEvGHgPNq9b8UPkYdtAE6xHe9ZTCVrQ=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=blC2vUU8HbM"
+  },
+  {
     "name": "四葉みっけ",
     "youtubeid": "UCObfu1e9xeIzisKCslx_XQA",
     "title": "【縦型同時雑談】夕方のお話会！！【パレデミア学園/新人VTuber】",
@@ -1326,7 +1337,7 @@
     "date": "2026-07-03T19:33:27.000+09:00",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/drkD7ZhNgaA/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/drkD7ZhNgaA/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/-7v40HQCqllHpJD69LHIo2n5lUt-pZ-bLtfrKAXhZk9OF06nj4Lno3gwBvO8d1jBSl5dCCxAxQ=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=drkD7ZhNgaA"
   },
@@ -1351,17 +1362,6 @@
     "thumbnail": "https://i.ytimg.com/vi/G5_v8PQUf-U/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/Me8I_Op8OlIy8Vuj387_Hdi6gnrZ-qiY1yDDt1Q5yKMKA51ISagT76HE01gw8xbLcef0vpsPgoc=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=G5_v8PQUf-U"
-  },
-  {
-    "name": "銘兎目あう",
-    "youtubeid": "UCpr-9ssUUgSb0EpDA8bRuTA",
-    "title": "【歌枠】🎀アイドルソング縛り🐰🎀【 #銘兎目あう / #ぷろのゔぁ 】 #shorts #Vtuber #歌枠",
-    "date": "2026-07-03T20:00:00.000+09:00",
-    "status": "upcoming",
-    "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/oOrIT_cU3kk/mqdefault_live.jpg",
-    "channelIcon": "https://yt3.ggpht.com/VB97J8AMHex_rkfd6hDhfiGhhVvrL-NNkseP2mMYSWh75sxA_oXctmxK5tV4FYgkM17RUAx6GQ=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=oOrIT_cU3kk"
   },
   {
     "name": "江波キョウカ",
@@ -1392,9 +1392,20 @@
     "date": "2026-07-03T20:00:54.000+09:00",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/Ini-CGoP3ec/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/Ini-CGoP3ec/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/WBGP05KaXeA21IzCbCeM0QHa0v9maVvVUBDZ2DyfTT62F1wGaW3hLOQBy1gCfuQfEnDNgwbsrQ=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=Ini-CGoP3ec"
+  },
+  {
+    "name": "銘兎目あう",
+    "youtubeid": "UCpr-9ssUUgSb0EpDA8bRuTA",
+    "title": "【歌枠】🎀アイドルソング縛り🐰🎀【 #銘兎目あう / #ぷろのゔぁ 】 #Vtuber #歌枠",
+    "date": "2026-07-03T20:01:06.000+09:00",
+    "status": "archive",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/oOrIT_cU3kk/mqdefault.jpg",
+    "channelIcon": "https://yt3.ggpht.com/VB97J8AMHex_rkfd6hDhfiGhhVvrL-NNkseP2mMYSWh75sxA_oXctmxK5tV4FYgkM17RUAx6GQ=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=oOrIT_cU3kk"
   },
   {
     "name": "ローズ・ダマスクハート",
@@ -1414,7 +1425,7 @@
     "date": "2026-07-03T20:05:55.000+09:00",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/vQmz3U29D78/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/vQmz3U29D78/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/hBz75E3AEST1Dzv5vOTHAqoJfayd30WIWWQ3ZFLlWMHDsyZ_QD6ZVVUtLTKSizalT3APPtdpFGI=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=vQmz3U29D78"
   },
@@ -1425,7 +1436,7 @@
     "date": "2026-07-03T20:37:11.000+09:00",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/U9qKZId3gVo/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/U9qKZId3gVo/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/3KzF3YSQvjRpSMpFZEEsaGlIcETMW03ZmdKQy_TjJIm8t9vC4AjNwLLR5hNqXi0M9qnyszb0PCY=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=U9qKZId3gVo"
   },
@@ -1478,7 +1489,7 @@
     "youtubeid": "UCqewFfi_wwydw6fpazmlAFA",
     "title": "ニューキャッスル専のランク 【虎島めら。ぷろのゔぁ】 #apex",
     "date": "2026-07-03T21:40:06.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/SzVhfFnd-yk/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/GTQLrgAFGtGBsfbiwqAP-vnRRHXDfXAKiZIGJAO-p4hzLfenIewQmuXdsBmgPfnz_hf0WsI62Q=s240-c-k-c0x00ffffff-no-rj",
@@ -1632,7 +1643,7 @@
     "youtubeid": "UCUd4wJjvPQflbLnsk_YHleA",
     "title": "【 #朝活 】マジ寝起きです。焼きそば食べます。【新巻るろな／パレデミア学園】#VTuber #雑談",
     "date": "2026-07-04T07:26:28.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/FRi1IG9wJYs/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/-4sLuWCih-DlfhpwpDQEuB6eupCB6kTImkIPmKnh54vu5I0F49RkveNQGiqy0p8t0GDU6eiegGE=s240-c-k-c0x00ffffff-no-rj",
@@ -1648,6 +1659,17 @@
     "thumbnail": "https://i.ytimg.com/vi/p0_7EZm_95M/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/eW_Hug0M6zFk9QSbAmOUWLMSfzBlCHmes-8yAksvfUNzyLgY6TSsE_eW8ncfE4bHYZXKoTWxmQ=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=p0_7EZm_95M"
+  },
+  {
+    "name": "江波キョウカ",
+    "youtubeid": "UChpkyQ3O21OnkcMcgCoNHCg",
+    "title": "꒰ঌ 歌枠┆初見さん40人と出会いたい🔥#おはぴよ朝活 2026/7/4 【 #江波キョウカ / パレプロ 】【 #江波キョウカ / パレプロ 】 #shorts #vtuber",
+    "date": "2026-07-04T09:03:28.000+09:00",
+    "status": "live",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/xy9yyJjNk0U/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/pM4ZefnBFJ2qlBEqknYCFHdW6dLH29KptwG0OYSu1-mAVAIy5M1IjwpMwC24-A_v07nluGGrlQ=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=xy9yyJjNk0U"
   },
   {
     "name": "堂下さとり",

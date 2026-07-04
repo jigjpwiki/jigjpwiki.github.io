@@ -1,49 +1,5 @@
 [
   {
-    "name": "桜庭羽奈",
-    "youtubeid": "UCPgg_A08ksSYP-VivJGniRw",
-    "title": "【おはよう100人待ってます！】今日こそおはよう100人目指す！！初見さん大歓迎！💛【新人VTuberの雑談／歌枠】🐻",
-    "date": "2026-07-02T06:30:49.000+09:00",
-    "status": "archive",
-    "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/qZjUvIrhOs0/mqdefault.jpg",
-    "channelIcon": "https://yt3.ggpht.com/04zALH6pYL7mkWILHajvBzfzg4hrwRCLBONme3K1PjuEeYJIRC6RYxPmJzVZRuN42skHEDNRGmo=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=qZjUvIrhOs0"
-  },
-  {
-    "name": "花晴りら",
-    "youtubeid": "UCqcnlq8uJqnGml6hcIrMCZw",
-    "title": "【毎日朝活/雑談】初見さん歓迎🌷250人におはよう言いたい耐久朝活🔆【花晴りら/ #パレデミア学園 】#れりライブ",
-    "date": "2026-07-02T06:59:56.000+09:00",
-    "status": "archive",
-    "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/Au34pyiDKP0/mqdefault.jpg",
-    "channelIcon": "https://yt3.ggpht.com/CH5JMWVQZ_RtloaXoj6W-yXjo9x8UxXSBG_vMyDnfk7M2QTOApVE1zOesu_aDrSAqvDbGrUyxs0=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=Au34pyiDKP0"
-  },
-  {
-    "name": "李じゅぴ汰",
-    "youtubeid": "UCHsAAyHJhPXuLS6N3Kig6PQ",
-    "title": "【雑談】早起きは三文の徳得大セール【作業/朝活】",
-    "date": "2026-07-02T07:04:29.000+09:00",
-    "status": "archive",
-    "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/mRNqnCW6Flc/mqdefault.jpg",
-    "channelIcon": "https://yt3.ggpht.com/QQqec9A1J7eLk9RrRYD9vvk51BBJzcE1leGkU9n4YkwHqht9gmGT1ktmSlKItQtbuMSGuklAFxM=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=mRNqnCW6Flc"
-  },
-  {
-    "name": "虎島めら。",
-    "youtubeid": "UCqewFfi_wwydw6fpazmlAFA",
-    "title": "ニューキャッスル専のランク 【虎島めら。ぷろのゔぁ】 #apex",
-    "date": "2026-07-02T07:06:05.000+09:00",
-    "status": "archive",
-    "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/1TYeJSee7e4/mqdefault.jpg",
-    "channelIcon": "https://yt3.ggpht.com/GTQLrgAFGtGBsfbiwqAP-vnRRHXDfXAKiZIGJAO-p4hzLfenIewQmuXdsBmgPfnz_hf0WsI62Q=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=1TYeJSee7e4"
-  },
-  {
     "name": "七海ロナ",
     "youtubeid": "UCIaZylf5L9MsCMOJX3BdTEg",
     "title": "昼夜逆転しないという強い意志の朝活",
@@ -1194,7 +1150,7 @@
     "date": "2026-07-04T15:16:07.000+09:00",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/NVRN0MTPXbc/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/NVRN0MTPXbc/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/oX8bu2EfV0AJmmDPuA74S-Ky2XAUOxd1IXHEpX5jFDLltMrVNknI1FkpYdhb9VrLGtpUCm3Xvg=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=NVRN0MTPXbc"
   },
@@ -1249,7 +1205,7 @@
     "date": "2026-07-04T18:01:05.000+09:00",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/rLkhEC2r7hM/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/rLkhEC2r7hM/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/iktv-39nC7NDASD1WeXms-DEuHuVqB5RhwTtdDe26w-BCvqf6yq3r_8zBiv2i2CfNXCK0uE8=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=rLkhEC2r7hM"
   },
@@ -1521,12 +1477,23 @@
     "name": "花晴りら",
     "youtubeid": "UCqcnlq8uJqnGml6hcIrMCZw",
     "title": "【毎日朝活/雑談】初見さん歓迎🌷250人におはよう言いたい日曜のまったり朝活🔆【花晴りら/ #パレデミア学園 】#れりライブ",
-    "date": "2026-07-05T07:00:00.000+09:00",
-    "status": "upcoming",
+    "date": "2026-07-05T06:59:58.000+09:00",
+    "status": "live",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/UhS-lfHagEg/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/CH5JMWVQZ_RtloaXoj6W-yXjo9x8UxXSBG_vMyDnfk7M2QTOApVE1zOesu_aDrSAqvDbGrUyxs0=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=UhS-lfHagEg"
+  },
+  {
+    "name": "夜雨ねむる",
+    "youtubeid": "UC1hxdM37vjjqr-IfZuDn1iw",
+    "title": "【雑談】作業　夜雨ねむる【パレデミア学園】",
+    "date": "2026-07-05T07:08:58.000+09:00",
+    "status": "live",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/CLaogQOUXYE/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/oX8bu2EfV0AJmmDPuA74S-Ky2XAUOxd1IXHEpX5jFDLltMrVNknI1FkpYdhb9VrLGtpUCm3Xvg=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=CLaogQOUXYE"
   },
   {
     "name": "犬丸なでこ",

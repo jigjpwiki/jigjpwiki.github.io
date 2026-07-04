@@ -1194,7 +1194,7 @@
     "date": "2026-07-04T13:19:01.000+09:00",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/nHKLC7v4s4A/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/nHKLC7v4s4A/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/dPJHngNTeEfD_K0Mus141-We4xIuAhttm2pgEBl3VdGXqWvxGfy5mJfDMDbBmwI6UGc17dXb-g=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=nHKLC7v4s4A"
   },
@@ -1397,17 +1397,6 @@
     "url": "https://www.youtube.com/watch?v=Td5xDs4OzD0"
   },
   {
-    "name": "愛乃宮ゆめ",
-    "youtubeid": "UCttSjPiwPYpiPuCrgxK7c1g",
-    "title": "墓場から地獄まで。【愛乃宮ゆめ/パレデミア学園】",
-    "date": "2026-07-04T21:00:00.000+09:00",
-    "status": "upcoming",
-    "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/cHSlUSt2BG4/mqdefault_live.jpg",
-    "channelIcon": "https://yt3.ggpht.com/Gwr7KJNWnI6CEgmIfEeMZahF5pbGNKlRhQXBEkuMWE0D66--IJE77z-5Zu2i5LFBc_CA6ZkqY4Y=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=cHSlUSt2BG4"
-  },
-  {
     "name": "花晴りら",
     "youtubeid": "UCqcnlq8uJqnGml6hcIrMCZw",
     "title": "【参加型雀魂/四麻】1位とるぞ🥇視聴者参加型麻雀🀄🎮✨【花晴りら/パレデミア学園】 #れりライブ #新人vtuber",
@@ -1417,6 +1406,17 @@
     "thumbnail": "https://i.ytimg.com/vi/ZvA7XKXHYJA/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/CH5JMWVQZ_RtloaXoj6W-yXjo9x8UxXSBG_vMyDnfk7M2QTOApVE1zOesu_aDrSAqvDbGrUyxs0=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=ZvA7XKXHYJA"
+  },
+  {
+    "name": "愛乃宮ゆめ",
+    "youtubeid": "UCttSjPiwPYpiPuCrgxK7c1g",
+    "title": "墓場から地獄まで。【愛乃宮ゆめ/パレデミア学園】",
+    "date": "2026-07-04T21:17:02.000+09:00",
+    "status": "archive",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/cHSlUSt2BG4/mqdefault.jpg",
+    "channelIcon": "https://yt3.ggpht.com/Gwr7KJNWnI6CEgmIfEeMZahF5pbGNKlRhQXBEkuMWE0D66--IJE77z-5Zu2i5LFBc_CA6ZkqY4Y=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=cHSlUSt2BG4"
   },
   {
     "name": "変幻リメ",
@@ -1478,7 +1478,7 @@
     "youtubeid": "UCqewFfi_wwydw6fpazmlAFA",
     "title": "デジモンストーリー タイムストレンジャー初見プレイ!!　※ネタバレ注意",
     "date": "2026-07-04T22:31:46.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/m07OWnQ4FhI/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/GTQLrgAFGtGBsfbiwqAP-vnRRHXDfXAKiZIGJAO-p4hzLfenIewQmuXdsBmgPfnz_hf0WsI62Q=s240-c-k-c0x00ffffff-no-rj",

@@ -1,49 +1,5 @@
 [
   {
-    "name": "桜堂ねる",
-    "youtubeid": "UC0H7dRRqhfOifbYQ2TURdAg",
-    "title": "７月２日【桜堂ねる】#今日は何の日 #ねる道場 #vtuber #shorts",
-    "date": "2026-07-02T14:36:00.000+09:00",
-    "status": "archive",
-    "type": "video",
-    "thumbnail": "https://i.ytimg.com/vi/OwJV_WSmWIU/mqdefault.jpg",
-    "channelIcon": "https://yt3.ggpht.com/hBz75E3AEST1Dzv5vOTHAqoJfayd30WIWWQ3ZFLlWMHDsyZ_QD6ZVVUtLTKSizalT3APPtdpFGI=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=OwJV_WSmWIU"
-  },
-  {
-    "name": "夕凪万夜",
-    "youtubeid": "UCJLYktDEOak1rSOGRVRKlLQ",
-    "title": "【定期雑談/初見◎】#ゆうなぎ放送局 第26回 ７月1発目配信【パレデミア学園/夕凪万夜】#vtuber #新人vtuber #雑談",
-    "date": "2026-07-02T16:06:12.000+09:00",
-    "status": "archive",
-    "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/Bqbexs3akfw/mqdefault.jpg",
-    "channelIcon": "https://yt3.ggpht.com/zOlQ66VHDdW9B1w3cRbHlo-3cfkYBLVHzYpXS_xLbOv9bHe72uv-bD246R7gCEfD_7wGBc-6vQ=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=Bqbexs3akfw"
-  },
-  {
-    "name": "相栖るじゅ",
-    "youtubeid": "UCrpdBoGpa6g2WEtRWsIlhDQ",
-    "title": "【歌雑】悪役令嬢ではなくて聖女な、見た目はお嬢様、中身はかぉすわいい魔法少女アイドルVTubeです【相栖るじゅ/パレデミア学園】",
-    "date": "2026-07-02T16:35:07.000+09:00",
-    "status": "archive",
-    "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/sBLn801Iydw/mqdefault.jpg",
-    "channelIcon": "https://yt3.ggpht.com/yQbh9vEEgS_UapoQhIxxoTSy13bDxlHYC-ncTcO9VIDBN2NvrLTAWeKGQ72CN2fhOOrHqYaFDA=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=sBLn801Iydw"
-  },
-  {
-    "name": "無月いお",
-    "youtubeid": "UC2X_mAVGw8e3N9JQZZDVBfQ",
-    "title": "【アーカイブ】大量のエビの雨が降った夜",
-    "date": "2026-07-02T16:45:09.000+09:00",
-    "status": "archive",
-    "type": "video",
-    "thumbnail": "https://i.ytimg.com/vi/qCB475qB0hc/mqdefault.jpg",
-    "channelIcon": "https://yt3.ggpht.com/Z7PlAWhweuycNXNXoQ6etyDTkduySM-Kqy8kQW-AD19JuRdxT3HSdIxogPw3GPD5NHw_vZlf=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=qCB475qB0hc"
-  },
-  {
     "name": "天辻ゆらぐ",
     "youtubeid": "UCeOFQCn_QZJMTszlRYRg3rQ",
     "title": "【縦型/雑談歌枠】低音×癒し×お姉さんと夕方のChill Time🪼🌇【天辻ゆらぐ/パレデミア学園】 #新人Vtuber #ゆらぐっどたいむ",
@@ -1392,7 +1348,7 @@
     "date": "2026-07-04T23:07:58.000+09:00",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/oeUfqEX9Er4/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/oeUfqEX9Er4/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/oX8bu2EfV0AJmmDPuA74S-Ky2XAUOxd1IXHEpX5jFDLltMrVNknI1FkpYdhb9VrLGtpUCm3Xvg=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=oeUfqEX9Er4"
   },
@@ -1403,7 +1359,7 @@
     "date": "2026-07-04T23:36:51.000+09:00",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/99HPlcAebl4/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/99HPlcAebl4/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/3KzF3YSQvjRpSMpFZEEsaGlIcETMW03ZmdKQy_TjJIm8t9vC4AjNwLLR5hNqXi0M9qnyszb0PCY=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=99HPlcAebl4"
   },
@@ -1488,12 +1444,45 @@
     "name": "犬丸なでこ",
     "youtubeid": "UCdJmJxMfXrlnZabUkuss2EA",
     "title": "【＃２】めっちゃカメレオン【パレデミア学園/犬丸なでこ】",
-    "date": "2026-07-05T14:00:00.000+09:00",
-    "status": "upcoming",
+    "date": "2026-07-05T13:59:37.000+09:00",
+    "status": "live",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/PkwdupXsW4o/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/HZPUrbSwGcllAbUtx6xggJ6lKfMfnAWDxWOCc01tpthiDipSqQP48TK5Jqz4GRzUdwKMUsxlsg=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=PkwdupXsW4o"
+  },
+  {
+    "name": "天堂ライラ",
+    "youtubeid": "UCpdWNjSU-onhmcARqgHIfpg",
+    "title": "2026年7月5日",
+    "date": "2026-07-05T14:00:39.000+09:00",
+    "status": "archive",
+    "type": "video",
+    "thumbnail": "https://i.ytimg.com/vi/cBk3BSmfZPY/mqdefault.jpg",
+    "channelIcon": "https://yt3.ggpht.com/JA8QqThoUnCNAgJASH3p_wPyWJBf2ILiUfpIvArr6592NkkrFntPQ4EgPsahnLpPCMP4mk93ig=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=cBk3BSmfZPY"
+  },
+  {
+    "name": "花晴りら",
+    "youtubeid": "UCqcnlq8uJqnGml6hcIrMCZw",
+    "title": "【雑談/歌枠】ひさしぶりの歌枠！？まったり喋ったり💭【花晴りら/ #パレデミア学園 】#れりライブ",
+    "date": "2026-07-05T15:01:25.000+09:00",
+    "status": "live",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/gVN0Gg0xmtA/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/CH5JMWVQZ_RtloaXoj6W-yXjo9x8UxXSBG_vMyDnfk7M2QTOApVE1zOesu_aDrSAqvDbGrUyxs0=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=gVN0Gg0xmtA"
+  },
+  {
+    "name": "夏渚まはろ",
+    "youtubeid": "UC_a00ml_EVDXSrtY8ZuyqGQ",
+    "title": "【大魔界村クリア耐久】二周目！20時まで走る！やっぱナイフよ【#夏渚まはろ￤#パレプロ】",
+    "date": "2026-07-05T15:45:55.000+09:00",
+    "status": "live",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/60nhxeBBYds/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/iktv-39nC7NDASD1WeXms-DEuHuVqB5RhwTtdDe26w-BCvqf6yq3r_8zBiv2i2CfNXCK0uE8=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=60nhxeBBYds"
   },
   {
     "name": "犬丸なでこ",

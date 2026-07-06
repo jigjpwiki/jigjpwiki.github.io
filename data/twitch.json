@@ -30,19 +30,19 @@
     "name": "李じゅぴ汰",
     "twitchid": "lee_jupita",
     "title": "【APEX参加型】虎島めら。ちゃんとコラボ！！",
-    "date": "2026-07-06T19:03:46.000+09:00",
-    "status": "live",
+    "date": "2026-07-06T19:03:51.000+09:00",
+    "status": "archive",
     "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/5706bc75-6841-4954-8894-7b7bfba16adb-profile_image-300x300.png",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lee_jupita-320x180.jpg"
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/c89f5ed07a42ccf99609_lee_jupita_316195737971_1783332226//thumb/thumb0-320x180.jpg"
   },
   {
     "name": "水透ユウ",
     "twitchid": "minato_yu_",
     "title": "【 #R6S 】病み上がりunrank Let's go!! むかちっく杯参加者募集【水透ユウ/ぷろのゔぁ】 #ユウおんらいぶ",
-    "date": "2026-07-06T20:39:46.000+09:00",
-    "status": "live",
+    "date": "2026-07-06T20:39:51.000+09:00",
+    "status": "archive",
     "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/fc4f961e-29c3-4f2e-9880-161fbf3b98eb-profile_image-300x300.png",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_minato_yu_-320x180.jpg"
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/d83934adb4c39e5024d0_minato_yu__316196142451_1783337986//thumb/thumb0-320x180.jpg"
   },
   {
     "name": "火乃晴るい",
@@ -52,5 +52,14 @@
     "status": "live",
     "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/9e02effe-cf25-4ba0-9fe7-da457d4e8c87-profile_image-300x300.png",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_hinoha_rui-320x180.jpg"
+  },
+  {
+    "name": "真昼ねる",
+    "twitchid": "mahiruneru",
+    "title": "〚 DbD 〛夏の深夜は雑談でっばい🔪【ぷろのゔぁ￤VTuber￤真昼ねる】",
+    "date": "2026-07-07T00:03:58.000+09:00",
+    "status": "live",
+    "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/90e97ba8-20ac-4d1d-861a-d27ed84b5d70-profile_image-300x300.png",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_mahiruneru-320x180.jpg"
   }
 ]

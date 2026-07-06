@@ -1,16 +1,5 @@
 [
   {
-    "name": "新巻るろな",
-    "youtubeid": "UCUd4wJjvPQflbLnsk_YHleA",
-    "title": "【 #朝活 】マスター、いつもの【新巻るろな／パレデミア学園】#VTuber #雑談",
-    "date": "2026-07-03T08:50:04.000+09:00",
-    "status": "archive",
-    "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/buW7AdrfICY/mqdefault.jpg",
-    "channelIcon": "https://yt3.ggpht.com/-4sLuWCih-DlfhpwpDQEuB6eupCB6kTImkIPmKnh54vu5I0F49RkveNQGiqy0p8t0GDU6eiegGE=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=buW7AdrfICY"
-  },
-  {
     "name": "緋雨柚",
     "youtubeid": "UCrB-SfrqB5ChY8aAT99grXw",
     "title": "【R.E.P.O.】かわいいスキンを求む【パレデミア学園/緋雨柚】",
@@ -1302,11 +1291,22 @@
     "youtubeid": "UCqcnlq8uJqnGml6hcIrMCZw",
     "title": "【毎日朝活/雑談】初見さん歓迎🌷150人におはよう言いたい月曜の朝活🔆【花晴りら/ #パレデミア学園 】#れりライブ",
     "date": "2026-07-06T07:00:08.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/dp5-SN8SCIQ/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/CH5JMWVQZ_RtloaXoj6W-yXjo9x8UxXSBG_vMyDnfk7M2QTOApVE1zOesu_aDrSAqvDbGrUyxs0=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=dp5-SN8SCIQ"
+  },
+  {
+    "name": "相栖るじゅ",
+    "youtubeid": "UCrpdBoGpa6g2WEtRWsIlhDQ",
+    "title": "自称正統派アイドルがOBF踊ってみた #shorts #新人vtuber #推しをお探しですか #cover #dance",
+    "date": "2026-07-06T07:00:28.000+09:00",
+    "status": "archive",
+    "type": "video",
+    "thumbnail": "https://i.ytimg.com/vi/QO2wGSnwZlU/mqdefault.jpg",
+    "channelIcon": "https://yt3.ggpht.com/yQbh9vEEgS_UapoQhIxxoTSy13bDxlHYC-ncTcO9VIDBN2NvrLTAWeKGQ72CN2fhOOrHqYaFDA=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=QO2wGSnwZlU"
   },
   {
     "name": "犬丸なでこ",
@@ -1324,9 +1324,9 @@
     "youtubeid": "UCpdWNjSU-onhmcARqgHIfpg",
     "title": "【#朝活】今日もがんばろうのおはよう！7/6(月) #天堂観測【パレデミア学園/天堂ライラ】",
     "date": "2026-07-06T07:29:22.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/R4E-hjlX4k0/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/R4E-hjlX4k0/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/JA8QqThoUnCNAgJASH3p_wPyWJBf2ILiUfpIvArr6592NkkrFntPQ4EgPsahnLpPCMP4mk93ig=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=R4E-hjlX4k0"
   },
@@ -1340,6 +1340,28 @@
     "thumbnail": "https://i.ytimg.com/vi/p0_7EZm_95M/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/eW_Hug0M6zFk9QSbAmOUWLMSfzBlCHmes-8yAksvfUNzyLgY6TSsE_eW8ncfE4bHYZXKoTWxmQ=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=p0_7EZm_95M"
+  },
+  {
+    "name": "虎島めら。",
+    "youtubeid": "UCqewFfi_wwydw6fpazmlAFA",
+    "title": "経験値稼ぐ!!デジモンストーリー タイムストレンジャー初見プレイ!! day2.5　※ネタバレ注意",
+    "date": "2026-07-06T09:37:58.000+09:00",
+    "status": "live",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/pC8QNcAO83A/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/GTQLrgAFGtGBsfbiwqAP-vnRRHXDfXAKiZIGJAO-p4hzLfenIewQmuXdsBmgPfnz_hf0WsI62Q=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=pC8QNcAO83A"
+  },
+  {
+    "name": "花晴りら",
+    "youtubeid": "UCqcnlq8uJqnGml6hcIrMCZw",
+    "title": "【縦型雑談/昼活】お久しぶりのランランランチ🎶初見さん/ROM歓迎🌷【花晴りら/パレデミア学園】#れりライブ #vtuber",
+    "date": "2026-07-06T12:00:00.000+09:00",
+    "status": "upcoming",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/mbxwvNG3zo4/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/CH5JMWVQZ_RtloaXoj6W-yXjo9x8UxXSBG_vMyDnfk7M2QTOApVE1zOesu_aDrSAqvDbGrUyxs0=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=mbxwvNG3zo4"
   },
   {
     "name": "無月いお",

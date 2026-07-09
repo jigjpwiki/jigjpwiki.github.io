@@ -1,23 +1,5 @@
 [
   {
-    "name": "李じゅぴ汰",
-    "twitchid": "lee_jupita",
-    "title": "【APEX参加型】虎島めら。ちゃんとコラボ！！",
-    "date": "2026-07-06T19:03:51.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/5706bc75-6841-4954-8894-7b7bfba16adb-profile_image-300x300.png",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/c89f5ed07a42ccf99609_lee_jupita_316195737971_1783332226//thumb/thumb0-320x180.jpg"
-  },
-  {
-    "name": "水透ユウ",
-    "twitchid": "minato_yu_",
-    "title": "【 #R6S 】病み上がりunrank Let's go!! むかちっく杯参加者募集【水透ユウ/ぷろのゔぁ】 #ユウおんらいぶ",
-    "date": "2026-07-06T20:39:51.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/fc4f961e-29c3-4f2e-9880-161fbf3b98eb-profile_image-300x300.png",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/d83934adb4c39e5024d0_minato_yu__316196142451_1783337986//thumb/thumb0-320x180.jpg"
-  },
-  {
     "name": "火乃晴るい",
     "twitchid": "hinoha_rui",
     "title": "【 #POE2 】ルーンシーカーの呼び声を見つけたからビルド変えた！！！！！！",
@@ -129,18 +111,36 @@
     "name": "李じゅぴ汰",
     "twitchid": "lee_jupita",
     "title": "【ミカクテイ事件の観測者】今日も特定特定特定！④【ネタバレ注意/謎解き/ネット探偵】",
-    "date": "2026-07-09T16:15:30.000+09:00",
-    "status": "live",
+    "date": "2026-07-09T16:15:35.000+09:00",
+    "status": "archive",
     "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/5706bc75-6841-4954-8894-7b7bfba16adb-profile_image-300x300.png",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lee_jupita-320x180.jpg"
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/bf16fc18d742c6335f83_lee_jupita_316144864497_1783581330//thumb/thumb0-320x180.jpg"
   },
   {
     "name": "なかもとおまち",
     "twitchid": "41futon",
     "title": "MR1474~ネクサス・おまち出航！！",
-    "date": "2026-07-09T16:37:58.000+09:00",
-    "status": "live",
+    "date": "2026-07-09T16:38:04.000+09:00",
+    "status": "archive",
     "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/1405880b-e945-4720-98c9-6a08c6400cae-profile_image-300x300.png",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_41futon-320x180.jpg"
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/12cb65ce02365a953a8c_41futon_316208410611_1783582678//thumb/thumb0-320x180.jpg"
+  },
+  {
+    "name": "水透ユウ",
+    "twitchid": "minato_yu_",
+    "title": "【 #R6S 】Drops? solo rank お前も仲間にならないか【水透ユウ/ぷろのゔぁ】 #ユウおんらいぶ",
+    "date": "2026-07-09T19:36:58.000+09:00",
+    "status": "live",
+    "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/fc4f961e-29c3-4f2e-9880-161fbf3b98eb-profile_image-300x300.png",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_minato_yu_-320x180.jpg"
+  },
+  {
+    "name": "銘兎目あう",
+    "twitchid": "Metome_Au",
+    "title": "【Crab Game】最後に生き残るのは誰？🦀【8人】ななりーちゃん/花岡ももちゃん/茶ばしら(17)さん/がおにゃちゃん/満月しおちゃん/月詠めぇぷる。ちゃん/れもんきゃんでぃちゃん",
+    "date": "2026-07-09T20:01:01.000+09:00",
+    "status": "live",
+    "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/6eea4ef4-a33b-4c66-9378-ad3aa84b1187-profile_image-300x300.png",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_Metome_Au-320x180.jpg"
   }
 ]

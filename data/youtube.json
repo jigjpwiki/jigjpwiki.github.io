@@ -1,27 +1,5 @@
 [
   {
-    "name": "堂下さとり",
-    "youtubeid": "UCBq6MSUL-Ermvnoj3PtX7Iw",
-    "title": "【運動】ランニングマシンVSワイ【堂下さとり/パレデミア学園】",
-    "date": "2026-07-06T09:00:00.000+09:00",
-    "status": "upcoming",
-    "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/p0_7EZm_95M/mqdefault_live.jpg",
-    "channelIcon": "https://yt3.ggpht.com/eW_Hug0M6zFk9QSbAmOUWLMSfzBlCHmes-8yAksvfUNzyLgY6TSsE_eW8ncfE4bHYZXKoTWxmQ=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=p0_7EZm_95M"
-  },
-  {
-    "name": "虎島めら。",
-    "youtubeid": "UCqewFfi_wwydw6fpazmlAFA",
-    "title": "経験値稼ぐ!!デジモンストーリー タイムストレンジャー初見プレイ!! day2.5　※ネタバレ注意",
-    "date": "2026-07-06T09:37:58.000+09:00",
-    "status": "archive",
-    "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/pC8QNcAO83A/mqdefault.jpg",
-    "channelIcon": "https://yt3.ggpht.com/GTQLrgAFGtGBsfbiwqAP-vnRRHXDfXAKiZIGJAO-p4hzLfenIewQmuXdsBmgPfnz_hf0WsI62Q=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=pC8QNcAO83A"
-  },
-  {
     "name": "花晴りら",
     "youtubeid": "UCqcnlq8uJqnGml6hcIrMCZw",
     "title": "【縦型雑談/昼活】お久しぶりのランランランチ🎶初見さん/ROM歓迎🌷【花晴りら/パレデミア学園】#れりライブ #vtuber",
@@ -1577,9 +1555,9 @@
     "youtubeid": "UCqcnlq8uJqnGml6hcIrMCZw",
     "title": "【毎日朝活/雑談】3時間で250人におはよう言いたい朝活🔆初見さん大歓迎🌷【花晴りら/ #パレデミア学園 】#れりライブ",
     "date": "2026-07-09T07:00:05.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/ZKhv8GrdZVI/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/ZKhv8GrdZVI/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/CH5JMWVQZ_RtloaXoj6W-yXjo9x8UxXSBG_vMyDnfk7M2QTOApVE1zOesu_aDrSAqvDbGrUyxs0=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=ZKhv8GrdZVI"
   },
@@ -1628,6 +1606,17 @@
     "url": "https://www.youtube.com/watch?v=8e84eaU1j7I"
   },
   {
+    "name": "虎島めら。",
+    "youtubeid": "UCqewFfi_wwydw6fpazmlAFA",
+    "title": "ニューキャッスル専のランク 【虎島めら。ぷろのゔぁ】 #apex",
+    "date": "2026-07-09T09:53:32.000+09:00",
+    "status": "live",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/gu_1YEaoQ24/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/GTQLrgAFGtGBsfbiwqAP-vnRRHXDfXAKiZIGJAO-p4hzLfenIewQmuXdsBmgPfnz_hf0WsI62Q=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=gu_1YEaoQ24"
+  },
+  {
     "name": "緋雨柚",
     "youtubeid": "UCrB-SfrqB5ChY8aAT99grXw",
     "title": "【FF13-2】コクーンを守った末の世界  #1【パレデミア学園/緋雨柚】",
@@ -1650,6 +1639,17 @@
     "url": "https://www.youtube.com/watch?v=tgBYenabsM0"
   },
   {
+    "name": "天堂ライラ",
+    "youtubeid": "UCpdWNjSU-onhmcARqgHIfpg",
+    "title": "【#同時視聴】昼カツしながらアニメ版イニD一緒にみよう！第13話 #天堂観測【パレデミア学園/天堂ライラ】",
+    "date": "2026-07-09T12:00:00.000+09:00",
+    "status": "upcoming",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/fIA39jyyGJ4/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/JA8QqThoUnCNAgJASH3p_wPyWJBf2ILiUfpIvArr6592NkkrFntPQ4EgPsahnLpPCMP4mk93ig=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=fIA39jyyGJ4"
+  },
+  {
     "name": "無月いお",
     "youtubeid": "UC2X_mAVGw8e3N9JQZZDVBfQ",
     "title": "【#低音女子】休憩時間をうちにください《#パレデミア学園》",
@@ -1670,6 +1670,17 @@
     "thumbnail": "https://i.ytimg.com/vi/yHslJZXG6N0/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/traR_yWe-AOGyM2wjo8h2FJO9JWBcbjfrL13X-umeD6BtNPopSZ2Q3YmdJq_5K9gWgHf_j64iQ=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=yHslJZXG6N0"
+  },
+  {
+    "name": "夏渚まはろ",
+    "youtubeid": "UC_a00ml_EVDXSrtY8ZuyqGQ",
+    "title": "【めっちゃカメレオン】お絵描きかくれんぼ！擬態せよ！【#妖縁NEW組￤#夏渚まはろ￤#パレプロ】",
+    "date": "2026-07-09T18:00:00.000+09:00",
+    "status": "upcoming",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/gPKdRIEP6f0/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/iktv-39nC7NDASD1WeXms-DEuHuVqB5RhwTtdDe26w-BCvqf6yq3r_8zBiv2i2CfNXCK0uE8=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=gPKdRIEP6f0"
   },
   {
     "name": "銘兎目あう",

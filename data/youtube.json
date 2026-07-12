@@ -1,27 +1,5 @@
 [
   {
-    "name": "ニコ・ダークウェル",
-    "youtubeid": "UCwSq7LbTyR1lXLJphsHKy2A",
-    "title": "【事務所イベ３日目】 飛べない豚はただの豚だよ...KVを添えて 　日本列島防衛　 初見さん◎　#新人vtuber #vtuber #ニコニコダークストリーム #パレデミア学園",
-    "date": "2026-07-09T18:27:57.000+09:00",
-    "status": "archive",
-    "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/X43dpJsh1oo/mqdefault.jpg",
-    "channelIcon": "https://yt3.ggpht.com/FZAApPZQQXHgHOVY8RCKI0eGvcyJ19mHBpWOT-a_pR_rY6LC8Z2Z9K0gpd4zuwNnYxA-XkKF=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=X43dpJsh1oo"
-  },
-  {
-    "name": "七海ロナ",
-    "youtubeid": "UCIaZylf5L9MsCMOJX3BdTEg",
-    "title": "ムムム…Doなる！？ドリル！ #vtuber #shorts #踊ってみた",
-    "date": "2026-07-09T19:00:35.000+09:00",
-    "status": "archive",
-    "type": "video",
-    "thumbnail": "https://i.ytimg.com/vi/mgCpDSzOYgk/mqdefault.jpg",
-    "channelIcon": "https://yt3.ggpht.com/86cM_4q1A56pIYgdKxh776hM0nropjiZIlmXbfroWHXQ-MjdGGsjLcL5hMDOFL-T2EJHmybT=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=mgCpDSzOYgk"
-  },
-  {
     "name": "桜堂ねる",
     "youtubeid": "UC0H7dRRqhfOifbYQ2TURdAg",
     "title": "7月9日【桜堂ねる】#今日は何の日 #ねる道場 #vtuber #shorts",
@@ -1078,17 +1056,6 @@
     "url": "https://www.youtube.com/watch?v=YI5J3BVDG_4"
   },
   {
-    "name": "愛乃宮ゆめ",
-    "youtubeid": "UCttSjPiwPYpiPuCrgxK7c1g",
-    "title": "【マイクラ】かわいいのためなら困難もいとわない！ドリームハウス作戦 ＃５ 【愛乃宮ゆめ/パレデミア学園】",
-    "date": "2026-07-11T21:00:00.000+09:00",
-    "status": "upcoming",
-    "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/QwMPln_wK2w/mqdefault_live.jpg",
-    "channelIcon": "https://yt3.ggpht.com/Gwr7KJNWnI6CEgmIfEeMZahF5pbGNKlRhQXBEkuMWE0D66--IJE77z-5Zu2i5LFBc_CA6ZkqY4Y=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=QwMPln_wK2w"
-  },
-  {
     "name": "瀬奈りるか",
     "youtubeid": "UCWi_ztz8Xuz4XfzhoG6ZfyA",
     "title": "※ネタバレ注意【#12 魔法少女ノ魔女裁判】完全初見！🌟２章第４話🪄ひさしぶりの魔女裁判🎶４話クリアまで！🎶【#まのさば実況 】",
@@ -1109,6 +1076,17 @@
     "thumbnail": "https://i.ytimg.com/vi/cpmHcUWfhl0/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/CH5JMWVQZ_RtloaXoj6W-yXjo9x8UxXSBG_vMyDnfk7M2QTOApVE1zOesu_aDrSAqvDbGrUyxs0=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=cpmHcUWfhl0"
+  },
+  {
+    "name": "愛乃宮ゆめ",
+    "youtubeid": "UCttSjPiwPYpiPuCrgxK7c1g",
+    "title": "【マイクラ】かわいいのためなら困難もいとわない！ドリームハウス作戦 ＃５ 【愛乃宮ゆめ/パレデミア学園】",
+    "date": "2026-07-11T21:16:51.000+09:00",
+    "status": "archive",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/QwMPln_wK2w/mqdefault.jpg",
+    "channelIcon": "https://yt3.ggpht.com/Gwr7KJNWnI6CEgmIfEeMZahF5pbGNKlRhQXBEkuMWE0D66--IJE77z-5Zu2i5LFBc_CA6ZkqY4Y=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=QwMPln_wK2w"
   },
   {
     "name": "香桜あんにん",
@@ -1386,13 +1364,24 @@
     "url": "https://www.youtube.com/watch?v=5HLrGE988hg"
   },
   {
+    "name": "ローズ・ダマスクハート",
+    "youtubeid": "UCyY_NaAfv6k0CdHFcmYDqCA",
+    "title": "【初心者】視聴者参加型apexどなたでも！チャンピオンめざす！【ローズ・ダマスクハート／＃パレデミア学園　】#apex",
+    "date": "2026-07-12T14:18:08.000+09:00",
+    "status": "live",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/_rQCLKPxnaM/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/FR4hUBx4CbKSNHsSFNmOirsxutWwh99UiqdUFXaZQ4UmcMzTmlq3Wmbo-anCzIRenl3bojZ8Pg=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=_rQCLKPxnaM"
+  },
+  {
     "name": "花晴りら",
     "youtubeid": "UCqcnlq8uJqnGml6hcIrMCZw",
     "title": "【APEX】初めてのAPEX、初めてのFPSゲーム【花晴りら/ #パレデミア学園 】#れりライブ",
     "date": "2026-07-12T15:00:27.000+09:00",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/WmddwI7IzMg/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/WmddwI7IzMg/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/CH5JMWVQZ_RtloaXoj6W-yXjo9x8UxXSBG_vMyDnfk7M2QTOApVE1zOesu_aDrSAqvDbGrUyxs0=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=WmddwI7IzMg"
   },

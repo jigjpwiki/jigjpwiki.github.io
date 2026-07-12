@@ -1214,9 +1214,9 @@
     "youtubeid": "UC8zjZBqGnx_j55ZJzluhW8A",
     "title": "【コラボ雑談】クゥ寮2期生でわちゃわちゃお話！#あんにんたいむ #46 【パレデミア学園/香桜あんにん/＃新人VTuber】",
     "date": "2026-07-12T22:02:36.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/Esqp09yvLfA/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/Esqp09yvLfA/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/LL8h8c1rjBm_CimsOmJqxMtfMpzaEZCJ56jM4iOTOaEaDLQ7f6fYwkAWggiJNEwh-aeggh3L-w=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=Esqp09yvLfA"
   },
@@ -1225,9 +1225,9 @@
     "youtubeid": "UCJLYktDEOak1rSOGRVRKlLQ",
     "title": "【コラボ】ここはクゥ寮談話室。クゥとーーーーく～～～～～っ！！！！【パレデミア学園/夕凪万夜】#vtuber  #新人vtuber #コラボ",
     "date": "2026-07-12T22:03:38.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/ISigmP0d3Gg/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/ISigmP0d3Gg/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/zOlQ66VHDdW9B1w3cRbHlo-3cfkYBLVHzYpXS_xLbOv9bHe72uv-bD246R7gCEfD_7wGBc-6vQ=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=ISigmP0d3Gg"
   },
@@ -1236,9 +1236,9 @@
     "youtubeid": "UCpdWNjSU-onhmcARqgHIfpg",
     "title": "【#コラボ雑談】クゥ寮2期ちゃんズゆるっとおはなしするよ #天堂観測【パレデミア学園/天堂ライラ】",
     "date": "2026-07-12T22:15:57.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/twMKsG8WJd8/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/twMKsG8WJd8/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/JA8QqThoUnCNAgJASH3p_wPyWJBf2ILiUfpIvArr6592NkkrFntPQ4EgPsahnLpPCMP4mk93ig=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=twMKsG8WJd8"
   },
@@ -1274,6 +1274,17 @@
     "thumbnail": "https://i.ytimg.com/vi/PsxGRPoyJuM/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/Z7PlAWhweuycNXNXoQ6etyDTkduySM-Kqy8kQW-AD19JuRdxT3HSdIxogPw3GPD5NHw_vZlf=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=PsxGRPoyJuM"
+  },
+  {
+    "name": "桜堂ねる",
+    "youtubeid": "UC0H7dRRqhfOifbYQ2TURdAg",
+    "title": "【弾き語り】クリームソーダとシャンデリア【桜堂ねる】",
+    "date": "2026-07-13T00:39:31.000+09:00",
+    "status": "archive",
+    "type": "video",
+    "thumbnail": "https://i.ytimg.com/vi/nb7thxlpZVg/mqdefault.jpg",
+    "channelIcon": "https://yt3.ggpht.com/hBz75E3AEST1Dzv5vOTHAqoJfayd30WIWWQ3ZFLlWMHDsyZ_QD6ZVVUtLTKSizalT3APPtdpFGI=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=nb7thxlpZVg"
   },
   {
     "name": "桜庭羽奈",

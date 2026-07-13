@@ -1,16 +1,5 @@
 [
   {
-    "name": "相栖るじゅ",
-    "youtubeid": "UCrpdBoGpa6g2WEtRWsIlhDQ",
-    "title": "【歌雑】あいすちゃんだよ！【相栖るじゅ/パレデミア学園】",
-    "date": "2026-07-10T16:46:38.000+09:00",
-    "status": "archive",
-    "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/OulBZb9JHXo/mqdefault.jpg",
-    "channelIcon": "https://yt3.ggpht.com/yQbh9vEEgS_UapoQhIxxoTSy13bDxlHYC-ncTcO9VIDBN2NvrLTAWeKGQ72CN2fhOOrHqYaFDA=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=OulBZb9JHXo"
-  },
-  {
     "name": "七海ロナ",
     "youtubeid": "UCIaZylf5L9MsCMOJX3BdTEg",
     "title": "可愛いは正義なの、ごめんね？😉🙏 #vtuber #shorts #踊ってみた #p丸様",
@@ -1194,7 +1183,7 @@
     "date": "2026-07-13T00:12:17.000+09:00",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/PsxGRPoyJuM/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/PsxGRPoyJuM/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/Z7PlAWhweuycNXNXoQ6etyDTkduySM-Kqy8kQW-AD19JuRdxT3HSdIxogPw3GPD5NHw_vZlf=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=PsxGRPoyJuM"
   },
@@ -1280,11 +1269,44 @@
     "youtubeid": "UCrB-SfrqB5ChY8aAT99grXw",
     "title": "【FF13-2】アルカキルティはチョコボ草原　#3【パレデミア学園/緋雨柚】",
     "date": "2026-07-13T11:00:45.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/2nATI0TtKOs/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/2nATI0TtKOs/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/dPJHngNTeEfD_K0Mus141-We4xIuAhttm2pgEBl3VdGXqWvxGfy5mJfDMDbBmwI6UGc17dXb-g=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=2nATI0TtKOs"
+  },
+  {
+    "name": "夕凪万夜",
+    "youtubeid": "UCJLYktDEOak1rSOGRVRKlLQ",
+    "title": "【定期雑談/初見◎】#ゆうなぎ放送局 第28回　7月残り数日を。【パレデミア学園/夕凪万夜】#vtuber #新人vtuber #雑談",
+    "date": "2026-07-13T16:02:05.000+09:00",
+    "status": "archive",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/sV7Hf5Q3jAI/mqdefault.jpg",
+    "channelIcon": "https://yt3.ggpht.com/zOlQ66VHDdW9B1w3cRbHlo-3cfkYBLVHzYpXS_xLbOv9bHe72uv-bD246R7gCEfD_7wGBc-6vQ=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=sV7Hf5Q3jAI"
+  },
+  {
+    "name": "相栖るじゅ",
+    "youtubeid": "UCrpdBoGpa6g2WEtRWsIlhDQ",
+    "title": "【歌雑】昨日誕生日だった人です！【相栖るじゅ/パレデミア学園】",
+    "date": "2026-07-13T16:07:29.000+09:00",
+    "status": "live",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/Hvb0w2cehtc/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/yQbh9vEEgS_UapoQhIxxoTSy13bDxlHYC-ncTcO9VIDBN2NvrLTAWeKGQ72CN2fhOOrHqYaFDA=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=Hvb0w2cehtc"
+  },
+  {
+    "name": "夕凪万夜",
+    "youtubeid": "UCJLYktDEOak1rSOGRVRKlLQ",
+    "title": "【定期雑談/初見◎】#ゆうなぎ放送局 第28回 仕切り直し。7月残り数日を。【パレデミア学園/夕凪万夜】#vtuber #新人vtuber #雑談",
+    "date": "2026-07-13T16:30:48.000+09:00",
+    "status": "live",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/IT-iuzq3BEM/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/zOlQ66VHDdW9B1w3cRbHlo-3cfkYBLVHzYpXS_xLbOv9bHe72uv-bD246R7gCEfD_7wGBc-6vQ=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=IT-iuzq3BEM"
   },
   {
     "name": "鬼多見アユム",

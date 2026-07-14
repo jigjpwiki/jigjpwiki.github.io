@@ -1357,9 +1357,9 @@
     "youtubeid": "UChpkyQ3O21OnkcMcgCoNHCg",
     "title": "꒰ঌ 歌枠 ┆ 初見さん大歓迎！✨パリからただいま歌枠～！【 #江波キョウカ / パレプロ 】 #shorts #vtuber",
     "date": "2026-07-14T22:00:44.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/qIh2Y1RX9Hs/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/qIh2Y1RX9Hs/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/pM4ZefnBFJ2qlBEqknYCFHdW6dLH29KptwG0OYSu1-mAVAIy5M1IjwpMwC24-A_v07nluGGrlQ=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=qIh2Y1RX9Hs"
   },
@@ -1395,6 +1395,17 @@
     "thumbnail": "https://i.ytimg.com/vi/6UOPaDdSD2Y/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/3KzF3YSQvjRpSMpFZEEsaGlIcETMW03ZmdKQy_TjJIm8t9vC4AjNwLLR5hNqXi0M9qnyszb0PCY=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=6UOPaDdSD2Y"
+  },
+  {
+    "name": "陰山アゲハ",
+    "youtubeid": "UCIw8aQVRBwi72yOrPLgkbRQ",
+    "title": "【雑談】色々お話したいことがございまして【#vtuber #パレデミア学園 】",
+    "date": "2026-07-14T22:35:30.000+09:00",
+    "status": "archive",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/AlzabEznQ3Y/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/XWKUawU_WoX_xINkx3TMSF3fj0RbdiwNezFiEAGcmHfQYvwkjMUM1mvyOmgsbK8LxHoo6aEKJA=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=AlzabEznQ3Y"
   },
   {
     "name": "さくさくさく",
@@ -1518,6 +1529,17 @@
     "url": "https://www.youtube.com/watch?v=sgsqTUXND80"
   },
   {
+    "name": "無月いお",
+    "youtubeid": "UC2X_mAVGw8e3N9JQZZDVBfQ",
+    "title": "【#低音女子】ハロウィンイベ２日目かぁ《#パレデミア学園》",
+    "date": "2026-07-15T12:00:00.000+09:00",
+    "status": "upcoming",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/XWASbpXlHBI/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/Z7PlAWhweuycNXNXoQ6etyDTkduySM-Kqy8kQW-AD19JuRdxT3HSdIxogPw3GPD5NHw_vZlf=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=XWASbpXlHBI"
+  },
+  {
     "name": "秋桜しゅお",
     "youtubeid": "UCPjtwOeRQV5EFkCwUycZsgw",
     "title": "【初オリジナル曲お披露目配信！】皆さんにやっとお届け！素敵なオリソンだ！！【秋桜しゅお/登龍門BOX】",
@@ -1549,6 +1571,17 @@
     "thumbnail": "https://i.ytimg.com/vi/DWiSS2K21Z8/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/Gwr7KJNWnI6CEgmIfEeMZahF5pbGNKlRhQXBEkuMWE0D66--IJE77z-5Zu2i5LFBc_CA6ZkqY4Y=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=DWiSS2K21Z8"
+  },
+  {
+    "name": "無月いお",
+    "youtubeid": "UC2X_mAVGw8e3N9JQZZDVBfQ",
+    "title": "【#低音女子】配信デビュー二か月記念とメンバーシップ解禁の会。《#パレデミア学園》",
+    "date": "2026-07-16T00:45:00.000+09:00",
+    "status": "upcoming",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/X2ShYgEJ0_k/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/Z7PlAWhweuycNXNXoQ6etyDTkduySM-Kqy8kQW-AD19JuRdxT3HSdIxogPw3GPD5NHw_vZlf=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=X2ShYgEJ0_k"
   },
   {
     "name": "愛乃宮ゆめ",

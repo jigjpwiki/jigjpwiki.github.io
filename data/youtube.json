@@ -1007,7 +1007,7 @@
     "date": "2026-07-13T20:00:01.000+09:00",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/shffdCGXyU0/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/shffdCGXyU0/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/4RbHGCHx02xQ2ze4g7UCTvuUPlQCpbk6bHIb5cdqO4JNzTe5qsq4sDTt6m-xVKMm476vJiMF7A=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=shffdCGXyU0"
   },
@@ -1018,7 +1018,7 @@
     "date": "2026-07-13T20:00:39.000+09:00",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/ggabQDuyPhI/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/ggabQDuyPhI/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/Me8I_Op8OlIy8Vuj387_Hdi6gnrZ-qiY1yDDt1Q5yKMKA51ISagT76HE01gw8xbLcef0vpsPgoc=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=ggabQDuyPhI"
   },
@@ -1243,6 +1243,17 @@
     "url": "https://www.youtube.com/watch?v=K0YsXt1t0FM"
   },
   {
+    "name": "夏凪はつみ",
+    "youtubeid": "UCjGfpZuK6__30b6IpMhR_SQ",
+    "title": "雑談",
+    "date": "2026-07-14T06:13:32.000+09:00",
+    "status": "archive",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/LJCVUFeu2Aw/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/INy08-sy4lc_VdFTnVS-UPNN_GEq6QlR7G4csb265LOfP97BLr1C7Z8uqU9CX28UILGPsrqTmiQ=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=LJCVUFeu2Aw"
+  },
+  {
     "name": "桜庭羽奈",
     "youtubeid": "UCPgg_A08ksSYP-VivJGniRw",
     "title": "【おはよう100人待ってます！】踏ん張りどころの火曜日！！初見さん大歓迎！💛【新人VTuberの雑談／歌枠】🐻",
@@ -1258,7 +1269,7 @@
     "youtubeid": "UCqcnlq8uJqnGml6hcIrMCZw",
     "title": "【毎日朝活/雑談】150人におはよう言いたい火曜日の朝活🔆初見さん大歓迎🌷【花晴りら/ #パレデミア学園 】#れりライブ",
     "date": "2026-07-14T06:59:47.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/cMRo3WsglPw/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/CH5JMWVQZ_RtloaXoj6W-yXjo9x8UxXSBG_vMyDnfk7M2QTOApVE1zOesu_aDrSAqvDbGrUyxs0=s240-c-k-c0x00ffffff-no-rj",
@@ -1269,11 +1280,22 @@
     "youtubeid": "UCpdWNjSU-onhmcARqgHIfpg",
     "title": "【#朝活】今日もがんばろうのおはよう！7/14(火) #天堂観測【パレデミア学園/天堂ライラ】",
     "date": "2026-07-14T07:29:58.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/CqXY7zdyqss/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/CqXY7zdyqss/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/JA8QqThoUnCNAgJASH3p_wPyWJBf2ILiUfpIvArr6592NkkrFntPQ4EgPsahnLpPCMP4mk93ig=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=CqXY7zdyqss"
+  },
+  {
+    "name": "夏凪はつみ",
+    "youtubeid": "UCjGfpZuK6__30b6IpMhR_SQ",
+    "title": "雑談",
+    "date": "2026-07-14T07:42:12.000+09:00",
+    "status": "archive",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/DRtN_dA5-GE/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/INy08-sy4lc_VdFTnVS-UPNN_GEq6QlR7G4csb265LOfP97BLr1C7Z8uqU9CX28UILGPsrqTmiQ=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=DRtN_dA5-GE"
   },
   {
     "name": "天辻ゆらぐ",
@@ -1318,6 +1340,17 @@
     "thumbnail": "https://i.ytimg.com/vi/TQ74k_N62D4/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/traR_yWe-AOGyM2wjo8h2FJO9JWBcbjfrL13X-umeD6BtNPopSZ2Q3YmdJq_5K9gWgHf_j64iQ=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=TQ74k_N62D4"
+  },
+  {
+    "name": "さくさくさく",
+    "youtubeid": "UC9zEgqk0yVvX3nqRLCJXGGg",
+    "title": "ハロプロ歌枠＠パレデミア学園さくさくさく",
+    "date": "2026-07-14T20:00:00.000+09:00",
+    "status": "upcoming",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/DrbnUG1z9HI/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/XPoBTJELcobaMFIaRg_qVPbA2B8qzIloNvNNOoG_OkksZJ9JkGiZvRh8Rl3YbU4iV4sxqhZ8=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=DrbnUG1z9HI"
   },
   {
     "name": "Palette Project",

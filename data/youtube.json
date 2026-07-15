@@ -1172,7 +1172,7 @@
     "date": "2026-07-15T12:02:00.000+09:00",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/XWASbpXlHBI/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/XWASbpXlHBI/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/Z7PlAWhweuycNXNXoQ6etyDTkduySM-Kqy8kQW-AD19JuRdxT3HSdIxogPw3GPD5NHw_vZlf=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=XWASbpXlHBI"
   },
@@ -1183,7 +1183,7 @@
     "date": "2026-07-15T12:07:59.000+09:00",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/6dGRZvsGGFM/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/6dGRZvsGGFM/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/eW_Hug0M6zFk9QSbAmOUWLMSfzBlCHmes-8yAksvfUNzyLgY6TSsE_eW8ncfE4bHYZXKoTWxmQ=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=6dGRZvsGGFM"
   },
@@ -1313,9 +1313,9 @@
     "youtubeid": "UC9zEgqk0yVvX3nqRLCJXGGg",
     "title": "マイクラ初心者が家を建てたい！その5＠パレデミア学園さくさくさく",
     "date": "2026-07-15T20:00:55.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/j8FL-ExI9rc/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/j8FL-ExI9rc/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/XPoBTJELcobaMFIaRg_qVPbA2B8qzIloNvNNOoG_OkksZJ9JkGiZvRh8Rl3YbU4iV4sxqhZ8=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=j8FL-ExI9rc"
   },
@@ -1408,6 +1408,17 @@
     "url": "https://www.youtube.com/watch?v=NWf6qi10aDg"
   },
   {
+    "name": "夜雨ねむる",
+    "youtubeid": "UC1hxdM37vjjqr-IfZuDn1iw",
+    "title": "【歌枠】すこし歌おう。　夜雨ねむる【パレデミア学園】",
+    "date": "2026-07-15T21:57:02.000+09:00",
+    "status": "archive",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/qSLe1Qt7YQE/mqdefault.jpg",
+    "channelIcon": "https://yt3.ggpht.com/oX8bu2EfV0AJmmDPuA74S-Ky2XAUOxd1IXHEpX5jFDLltMrVNknI1FkpYdhb9VrLGtpUCm3Xvg=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=qSLe1Qt7YQE"
+  },
+  {
     "name": "露草なぎ",
     "youtubeid": "UC9nhm1B-XhPaUO8W8oc4thQ",
     "title": "【雑談】なんかする【露草なぎ/パレデミア学園】",
@@ -1428,6 +1439,17 @@
     "thumbnail": "https://i.ytimg.com/vi/I8p6hYswEzw/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/yQbh9vEEgS_UapoQhIxxoTSy13bDxlHYC-ncTcO9VIDBN2NvrLTAWeKGQ72CN2fhOOrHqYaFDA=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=I8p6hYswEzw"
+  },
+  {
+    "name": "香鳴ハノン",
+    "youtubeid": "UCay6Y3oEoiC6ZEE2G0UZu_A",
+    "title": "【アキネイター風クイズ】ハノンが考えているものは何でしょう！？みんなで当てて～～～！！【#パレプロ #香鳴ハノン】",
+    "date": "2026-07-15T22:09:00.000+09:00",
+    "status": "archive",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/YEivW8ypnOA/mqdefault.jpg",
+    "channelIcon": "https://yt3.ggpht.com/qvbeb9E-gYc822fxxzi6Ug5QyjhqZAWbUskHANcwDWP5W8iTsK3LcQJnjS4CVBuFJ6fONsM9F7M=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=YEivW8ypnOA"
   },
   {
     "name": "新巻るろな",
@@ -1456,9 +1478,9 @@
     "youtubeid": "UCNb9zRVc1coFKxJAn9lVtsw",
     "title": "【縦型雑談配信】初見さん歓迎！なんか話す！！【フローレ・ブランカ/パレデミア学園】",
     "date": "2026-07-15T23:00:31.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/hATTjkb-YZ8/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/hATTjkb-YZ8/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/xqdNSKZCNQ6ekbqgjixeOR0aTymLfmP_ILAFQ4sBF7ln-ZWxQYkVjGBun2pF1PwVC6nmwi2KFxE=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=hATTjkb-YZ8"
   },
@@ -1478,9 +1500,9 @@
     "youtubeid": "UCrpdBoGpa6g2WEtRWsIlhDQ",
     "title": "【同時視聴】完全初見「ひぐらしがなく頃に」【相栖るじゅ/パレデミア学園】",
     "date": "2026-07-15T23:33:44.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/HTycF81Egf4/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/HTycF81Egf4/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/yQbh9vEEgS_UapoQhIxxoTSy13bDxlHYC-ncTcO9VIDBN2NvrLTAWeKGQ72CN2fhOOrHqYaFDA=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=HTycF81Egf4"
   },
@@ -1500,7 +1522,7 @@
     "youtubeid": "UCv2IYO-4waCpHvn50SWWY2A",
     "title": "【#雑談配信 】オムライス作った日の雑談。【七音うら】",
     "date": "2026-07-16T00:02:32.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/BrTA5j113U8/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/T655ATpSd2gkjZBrokvlkaUH0f5-fCpQdcJpwxmmNdy6fxCYffAlq2sMhPOtFk_CvVyOkEPY8Q=s240-c-k-c0x00ffffff-no-rj",
@@ -1511,7 +1533,7 @@
     "youtubeid": "UCAhdxmsdngH4noySdpVAVWQ",
     "title": "【APEX】エイム良くなりたいですね～😉ちょびっとだけ練習【#新人vtuber 】#apex  #ちとせらいぶ #パレデミア学園",
     "date": "2026-07-16T00:14:54.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/3AzA-sw3FIQ/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/traR_yWe-AOGyM2wjo8h2FJO9JWBcbjfrL13X-umeD6BtNPopSZ2Q3YmdJq_5K9gWgHf_j64iQ=s240-c-k-c0x00ffffff-no-rj",
@@ -1543,12 +1565,23 @@
     "name": "無月いお",
     "youtubeid": "UC2X_mAVGw8e3N9JQZZDVBfQ",
     "title": "【#低音女子】配信デビュー二か月記念とメンバーシップ解禁の会。《#パレデミア学園》",
-    "date": "2026-07-16T00:45:00.000+09:00",
-    "status": "upcoming",
+    "date": "2026-07-16T00:48:44.000+09:00",
+    "status": "live",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/X2ShYgEJ0_k/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/Z7PlAWhweuycNXNXoQ6etyDTkduySM-Kqy8kQW-AD19JuRdxT3HSdIxogPw3GPD5NHw_vZlf=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=X2ShYgEJ0_k"
+  },
+  {
+    "name": "桜堂ねる",
+    "youtubeid": "UC0H7dRRqhfOifbYQ2TURdAg",
+    "title": "7月15日【桜堂ねる】#今日は何の日 #ねる道場 #vtuber #shorts",
+    "date": "2026-07-16T01:18:51.000+09:00",
+    "status": "archive",
+    "type": "video",
+    "thumbnail": "https://i.ytimg.com/vi/M89jD8Ufgq0/mqdefault.jpg",
+    "channelIcon": "https://yt3.ggpht.com/hBz75E3AEST1Dzv5vOTHAqoJfayd30WIWWQ3ZFLlWMHDsyZ_QD6ZVVUtLTKSizalT3APPtdpFGI=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=M89jD8Ufgq0"
   },
   {
     "name": "雪紫誉",
@@ -1582,6 +1615,17 @@
     "thumbnail": "https://i.ytimg.com/vi/jlOl85u-KQc/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/CH5JMWVQZ_RtloaXoj6W-yXjo9x8UxXSBG_vMyDnfk7M2QTOApVE1zOesu_aDrSAqvDbGrUyxs0=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=jlOl85u-KQc"
+  },
+  {
+    "name": "夏渚まはろ",
+    "youtubeid": "UC_a00ml_EVDXSrtY8ZuyqGQ",
+    "title": "【リズム天国 ミラクルスターズ＃5】裏面メダルコンプ目指す！くっしん菌が好きです【#夏渚まはろ￤#パレプロ】",
+    "date": "2026-07-16T18:00:00.000+09:00",
+    "status": "upcoming",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/VdFk3P2Fn_M/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/iktv-39nC7NDASD1WeXms-DEuHuVqB5RhwTtdDe26w-BCvqf6yq3r_8zBiv2i2CfNXCK0uE8=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=VdFk3P2Fn_M"
   },
   {
     "name": "雪紫誉",

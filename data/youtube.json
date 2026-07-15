@@ -1194,7 +1194,7 @@
     "date": "2026-07-15T12:08:55.000+09:00",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/iO950ztiTOk/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/iO950ztiTOk/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/JA8QqThoUnCNAgJASH3p_wPyWJBf2ILiUfpIvArr6592NkkrFntPQ4EgPsahnLpPCMP4mk93ig=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=iO950ztiTOk"
   },
@@ -1309,17 +1309,6 @@
     "url": "https://www.youtube.com/watch?v=f1R2jXdmwFg"
   },
   {
-    "name": "さくさくさく",
-    "youtubeid": "UC9zEgqk0yVvX3nqRLCJXGGg",
-    "title": "マイクラ初心者が家を建てたい！その5＠パレデミア学園さくさくさく",
-    "date": "2026-07-15T20:00:55.000+09:00",
-    "status": "archive",
-    "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/j8FL-ExI9rc/mqdefault.jpg",
-    "channelIcon": "https://yt3.ggpht.com/XPoBTJELcobaMFIaRg_qVPbA2B8qzIloNvNNOoG_OkksZJ9JkGiZvRh8Rl3YbU4iV4sxqhZ8=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=j8FL-ExI9rc"
-  },
-  {
     "name": "雪紫誉",
     "youtubeid": "UCdbYinKlpkB_uMt_wPmYcsw",
     "title": "【事務所イベ2日目】【#雑談#ゲーム 】指でドーン！な心理テスト#初見さん大歓迎 ◎【#パレデミア学園/#ゆきむらじお】＃新人VTuber",
@@ -1329,6 +1318,17 @@
     "thumbnail": "https://i.ytimg.com/vi/6vNeG4S1jWg/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/4RbHGCHx02xQ2ze4g7UCTvuUPlQCpbk6bHIb5cdqO4JNzTe5qsq4sDTt6m-xVKMm476vJiMF7A=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=6vNeG4S1jWg"
+  },
+  {
+    "name": "さくさくさく",
+    "youtubeid": "UC9zEgqk0yVvX3nqRLCJXGGg",
+    "title": "マイクラ初心者が家を建てたい！その5＠パレデミア学園さくさくさく",
+    "date": "2026-07-15T20:00:55.000+09:00",
+    "status": "archive",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/j8FL-ExI9rc/mqdefault.jpg",
+    "channelIcon": "https://yt3.ggpht.com/XPoBTJELcobaMFIaRg_qVPbA2B8qzIloNvNNOoG_OkksZJ9JkGiZvRh8Rl3YbU4iV4sxqhZ8=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=j8FL-ExI9rc"
   },
   {
     "name": "秋桜しゅお",
@@ -1555,9 +1555,9 @@
     "youtubeid": "UC8zjZBqGnx_j55ZJzluhW8A",
     "title": "【ささやき睡眠導入ASMR】眠れない人も一緒にひそひそお話しよ#あんにんたいむ #50 【パレデミア学園/香桜あんにん/＃新人VTuber】",
     "date": "2026-07-16T00:43:05.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/XU0KjCfOSyc/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/XU0KjCfOSyc/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/LL8h8c1rjBm_CimsOmJqxMtfMpzaEZCJ56jM4iOTOaEaDLQ7f6fYwkAWggiJNEwh-aeggh3L-w=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=XU0KjCfOSyc"
   },
@@ -1626,6 +1626,17 @@
     "thumbnail": "https://i.ytimg.com/vi/ZvZBrb1eIAI/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/XPoBTJELcobaMFIaRg_qVPbA2B8qzIloNvNNOoG_OkksZJ9JkGiZvRh8Rl3YbU4iV4sxqhZ8=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=ZvZBrb1eIAI"
+  },
+  {
+    "name": "藤森ちとせ",
+    "youtubeid": "UCAhdxmsdngH4noySdpVAVWQ",
+    "title": "【青ウパ耐久？！】超低確率で産まれる青色のウーパールーパーゲットしたいですね～✨作業用にも😉ROM歓迎🎉【#Minecraft】【#新人vtuber 】#ちとせらいぶ #パレデミア学園",
+    "date": "2026-07-16T13:00:00.000+09:00",
+    "status": "upcoming",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/f9p6oSkP0Xg/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/traR_yWe-AOGyM2wjo8h2FJO9JWBcbjfrL13X-umeD6BtNPopSZ2Q3YmdJq_5K9gWgHf_j64iQ=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=f9p6oSkP0Xg"
   },
   {
     "name": "夏渚まはろ",

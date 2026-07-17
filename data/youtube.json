@@ -1194,7 +1194,7 @@
     "date": "2026-07-17T12:05:28.000+09:00",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/f9VLhjwIHpI/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/f9VLhjwIHpI/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/eW_Hug0M6zFk9QSbAmOUWLMSfzBlCHmes-8yAksvfUNzyLgY6TSsE_eW8ncfE4bHYZXKoTWxmQ=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=f9VLhjwIHpI"
   },
@@ -1456,11 +1456,22 @@
     "youtubeid": "UCIaZylf5L9MsCMOJX3BdTEg",
     "title": "#3【シュレディンガーズ・コール】世界が終わる時、あなたが話したい人は誰ですか？【パレプロ／七海ロナ】",
     "date": "2026-07-17T21:30:52.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/OGWrIzA5xn4/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/86cM_4q1A56pIYgdKxh776hM0nropjiZIlmXbfroWHXQ-MjdGGsjLcL5hMDOFL-T2EJHmybT=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=OGWrIzA5xn4"
+  },
+  {
+    "name": "鈴木沙透",
+    "youtubeid": "UCj5nRzNFXZn9GRhITRkKElA",
+    "title": "【めっちゃカメレオン】バケモノエンカウント# #vtuber #鈴木沙透 #緋雨柚",
+    "date": "2026-07-17T21:34:22.000+09:00",
+    "status": "archive",
+    "type": "video",
+    "thumbnail": "https://i.ytimg.com/vi/XBovS7gi5I4/mqdefault.jpg",
+    "channelIcon": "https://yt3.ggpht.com/h4kuTtFCGhkDV4nmk6qjQt8auhkqLEqWwB9Il3NZR6op3ph-a0YElRfLcXkZVPp6xqvGmZHy3w=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=XBovS7gi5I4"
   },
   {
     "name": "瀬奈りるか",
@@ -1500,9 +1511,9 @@
     "youtubeid": "UCldoz5HLh6BMW29HGnRpC0Q",
     "title": "🌃華金スナックぺけ🌃初見さん/ROMさん大歓迎💥≪パレデミア学園 / 灯野ぺけ。≫ #vtuber #karaoke   #雑談",
     "date": "2026-07-17T22:07:08.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/gp-m4SgQudg/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/gp-m4SgQudg/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/sYbvo_2nSCW162VEArIwu7v1B3bl159gmEnGgGei8I8drc4l7huPP7q6aWZ4AfXi5wTMACmGow=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=gp-m4SgQudg"
   },
@@ -1551,6 +1562,17 @@
     "url": "https://www.youtube.com/watch?v=QTsvwkElXjQ"
   },
   {
+    "name": "鈴木沙透",
+    "youtubeid": "UCj5nRzNFXZn9GRhITRkKElA",
+    "title": "【#歌枠 】エモい曲ってどんな曲？【鈴木沙透/パレデミア学園】",
+    "date": "2026-07-17T22:40:27.000+09:00",
+    "status": "archive",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/LdghLGvl8AA/mqdefault.jpg",
+    "channelIcon": "https://yt3.ggpht.com/h4kuTtFCGhkDV4nmk6qjQt8auhkqLEqWwB9Il3NZR6op3ph-a0YElRfLcXkZVPp6xqvGmZHy3w=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=LdghLGvl8AA"
+  },
+  {
     "name": "新巻るろな",
     "youtubeid": "UCUd4wJjvPQflbLnsk_YHleA",
     "title": "【 コミュ力に難のある #雑談 】夏祭りグッズ発売されました🎆【新巻るろな／パレデミア学園】#VTuber",
@@ -1573,13 +1595,24 @@
     "url": "https://www.youtube.com/watch?v=GaClaTTKjjc"
   },
   {
+    "name": "夕凪万夜",
+    "youtubeid": "UCJLYktDEOak1rSOGRVRKlLQ",
+    "title": "【#雑談 /2か月記念】滑り込みで２か月記念【パレデミア学園/夕凪万夜】#vtuber #新人vtuber  #ゆうなぎ放送局 #初見さん大歓迎",
+    "date": "2026-07-17T23:17:14.000+09:00",
+    "status": "archive",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/v5JMtCQZvKI/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/zOlQ66VHDdW9B1w3cRbHlo-3cfkYBLVHzYpXS_xLbOv9bHe72uv-bD246R7gCEfD_7wGBc-6vQ=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=v5JMtCQZvKI"
+  },
+  {
     "name": "相栖るじゅ",
     "youtubeid": "UCrpdBoGpa6g2WEtRWsIlhDQ",
     "title": "【同時視聴】完全初見「ひぐらしがなく頃に」【相栖るじゅ/パレデミア学園】",
     "date": "2026-07-17T23:58:05.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/DPgiaShDl2E/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/DPgiaShDl2E/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/yQbh9vEEgS_UapoQhIxxoTSy13bDxlHYC-ncTcO9VIDBN2NvrLTAWeKGQ72CN2fhOOrHqYaFDA=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=DPgiaShDl2E"
   },

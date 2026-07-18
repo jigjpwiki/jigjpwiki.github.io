@@ -1183,7 +1183,7 @@
     "date": "2026-07-18T12:43:31.000+09:00",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/JXS6w62hVHM/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/JXS6w62hVHM/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/dPJHngNTeEfD_K0Mus141-We4xIuAhttm2pgEBl3VdGXqWvxGfy5mJfDMDbBmwI6UGc17dXb-g=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=JXS6w62hVHM"
   },
@@ -1225,7 +1225,7 @@
     "youtubeid": "UCqewFfi_wwydw6fpazmlAFA",
     "title": "ニューキャッスルだったりジブラルタルだったり爆乳ソロランク 【虎島めら。】 #apexlegends",
     "date": "2026-07-18T14:58:04.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/NXm2q5DY5_k/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/GTQLrgAFGtGBsfbiwqAP-vnRRHXDfXAKiZIGJAO-p4hzLfenIewQmuXdsBmgPfnz_hf0WsI62Q=s240-c-k-c0x00ffffff-no-rj",
@@ -1375,17 +1375,6 @@
     "url": "https://www.youtube.com/watch?v=hOXah7YJjXM"
   },
   {
-    "name": "愛乃宮ゆめ",
-    "youtubeid": "UCttSjPiwPYpiPuCrgxK7c1g",
-    "title": "【マイクラ】フロッグライトが欲しい！！ドリームハウス作戦 番外編 【愛乃宮ゆめ/パレデミア学園】",
-    "date": "2026-07-18T21:00:00.000+09:00",
-    "status": "upcoming",
-    "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/zYWzrcBGBSc/mqdefault_live.jpg",
-    "channelIcon": "https://yt3.ggpht.com/Gwr7KJNWnI6CEgmIfEeMZahF5pbGNKlRhQXBEkuMWE0D66--IJE77z-5Zu2i5LFBc_CA6ZkqY4Y=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=zYWzrcBGBSc"
-  },
-  {
     "name": "天透あわ",
     "youtubeid": "UCXI0W_Os-BCIngpCb1YnOow",
     "title": "【深夜廻】絶対に怖がらない深夜廻/初見プレイ【ネタバレ注意】",
@@ -1406,6 +1395,17 @@
     "thumbnail": "https://i.ytimg.com/vi/Q16njnbQXfA/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/4RbHGCHx02xQ2ze4g7UCTvuUPlQCpbk6bHIb5cdqO4JNzTe5qsq4sDTt6m-xVKMm476vJiMF7A=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=Q16njnbQXfA"
+  },
+  {
+    "name": "愛乃宮ゆめ",
+    "youtubeid": "UCttSjPiwPYpiPuCrgxK7c1g",
+    "title": "【マイクラ】フロッグライトが欲しい！！ドリームハウス作戦 番外編 【愛乃宮ゆめ/パレデミア学園】",
+    "date": "2026-07-18T21:00:41.000+09:00",
+    "status": "archive",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/zYWzrcBGBSc/mqdefault.jpg",
+    "channelIcon": "https://yt3.ggpht.com/Gwr7KJNWnI6CEgmIfEeMZahF5pbGNKlRhQXBEkuMWE0D66--IJE77z-5Zu2i5LFBc_CA6ZkqY4Y=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=zYWzrcBGBSc"
   },
   {
     "name": "陰山アゲハ",
@@ -1535,7 +1535,7 @@
     "date": "2026-07-18T23:31:19.000+09:00",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/jG3713Igf_o/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/jG3713Igf_o/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/yQbh9vEEgS_UapoQhIxxoTSy13bDxlHYC-ncTcO9VIDBN2NvrLTAWeKGQ72CN2fhOOrHqYaFDA=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=jG3713Igf_o"
   },
@@ -1555,9 +1555,9 @@
     "youtubeid": "UC2X_mAVGw8e3N9JQZZDVBfQ",
     "title": "【#低音女子】1600名様ありがとう配信《#パレデミア学園》",
     "date": "2026-07-19T00:02:57.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/D2oyrBQI-pY/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/D2oyrBQI-pY/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/Z7PlAWhweuycNXNXoQ6etyDTkduySM-Kqy8kQW-AD19JuRdxT3HSdIxogPw3GPD5NHw_vZlf=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=D2oyrBQI-pY"
   },

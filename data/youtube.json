@@ -1,38 +1,5 @@
 [
   {
-    "name": "香桜あんにん",
-    "youtubeid": "UC8zjZBqGnx_j55ZJzluhW8A",
-    "title": "テスト",
-    "date": "2026-07-15T19:04:28.000+09:00",
-    "status": "archive",
-    "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/1Zzja_AMg3k/mqdefault.jpg",
-    "channelIcon": "https://yt3.ggpht.com/LL8h8c1rjBm_CimsOmJqxMtfMpzaEZCJ56jM4iOTOaEaDLQ7f6fYwkAWggiJNEwh-aeggh3L-w=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=1Zzja_AMg3k"
-  },
-  {
-    "name": "堂下さとり",
-    "youtubeid": "UCBq6MSUL-Ermvnoj3PtX7Iw",
-    "title": "【手元配信】 結果発表　話題のアイスを作る！【堂下さとり/パレデミア学園】",
-    "date": "2026-07-15T19:10:04.000+09:00",
-    "status": "archive",
-    "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/zJ0fA3X3PwE/mqdefault.jpg",
-    "channelIcon": "https://yt3.ggpht.com/eW_Hug0M6zFk9QSbAmOUWLMSfzBlCHmes-8yAksvfUNzyLgY6TSsE_eW8ncfE4bHYZXKoTWxmQ=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=zJ0fA3X3PwE"
-  },
-  {
-    "name": "雛菊のん",
-    "youtubeid": "UChccV6U0Tkx9de4YjXbEelw",
-    "title": "夏に勝てないギャル雑談💕#新人vtuber #雑談",
-    "date": "2026-07-15T19:29:50.000+09:00",
-    "status": "archive",
-    "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/f1R2jXdmwFg/mqdefault.jpg",
-    "channelIcon": "https://yt3.ggpht.com/-7v40HQCqllHpJD69LHIo2n5lUt-pZ-bLtfrKAXhZk9OF06nj4Lno3gwBvO8d1jBSl5dCCxAxQ=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=f1R2jXdmwFg"
-  },
-  {
     "name": "雪紫誉",
     "youtubeid": "UCdbYinKlpkB_uMt_wPmYcsw",
     "title": "【事務所イベ2日目】【#雑談#ゲーム 】指でドーン！な心理テスト#初見さん大歓迎 ◎【#パレデミア学園/#ゆきむらじお】＃新人VTuber",
@@ -1659,6 +1626,28 @@
     "thumbnail": "https://i.ytimg.com/vi/1EDFTxR1DkA/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/xqdNSKZCNQ6ekbqgjixeOR0aTymLfmP_ILAFQ4sBF7ln-ZWxQYkVjGBun2pF1PwVC6nmwi2KFxE=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=1EDFTxR1DkA"
+  },
+  {
+    "name": "夏渚まはろ",
+    "youtubeid": "UC_a00ml_EVDXSrtY8ZuyqGQ",
+    "title": "【お絵描き】20時の生誕ライブまでに常磐カナメ先輩を描きます！【#夏渚まはろ￤#パレプロ】",
+    "date": "2026-07-18T18:00:56.000+09:00",
+    "status": "live",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/9SurhY8XeuM/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/iktv-39nC7NDASD1WeXms-DEuHuVqB5RhwTtdDe26w-BCvqf6yq3r_8zBiv2i2CfNXCK0uE8=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=9SurhY8XeuM"
+  },
+  {
+    "name": "雛菊のん",
+    "youtubeid": "UChccV6U0Tkx9de4YjXbEelw",
+    "title": "しゃべりすぎかもしれないギャル雑談💕#新人vtuber #雑談",
+    "date": "2026-07-18T19:06:02.000+09:00",
+    "status": "live",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/q4l53Zg-vCI/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/-7v40HQCqllHpJD69LHIo2n5lUt-pZ-bLtfrKAXhZk9OF06nj4Lno3gwBvO8d1jBSl5dCCxAxQ=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=q4l53Zg-vCI"
   },
   {
     "name": "桜庭羽奈",

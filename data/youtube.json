@@ -1139,7 +1139,7 @@
     "date": "2026-07-18T11:12:04.000+09:00",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/AtLnW1bG96k/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/AtLnW1bG96k/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/eW_Hug0M6zFk9QSbAmOUWLMSfzBlCHmes-8yAksvfUNzyLgY6TSsE_eW8ncfE4bHYZXKoTWxmQ=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=AtLnW1bG96k"
   },
@@ -1401,7 +1401,7 @@
     "youtubeid": "UCdbYinKlpkB_uMt_wPmYcsw",
     "title": "【事務所イベ5日目】【#雑談】爆睡かましててジムいけてないから、家でできる筋トレ教えて#初見さん大歓迎 ◎【#パレデミア学園/#ゆきむらじお】＃新人VTuber",
     "date": "2026-07-18T21:00:15.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/Q16njnbQXfA/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/4RbHGCHx02xQ2ze4g7UCTvuUPlQCpbk6bHIb5cdqO4JNzTe5qsq4sDTt6m-xVKMm476vJiMF7A=s240-c-k-c0x00ffffff-no-rj",
@@ -1533,7 +1533,7 @@
     "youtubeid": "UCrpdBoGpa6g2WEtRWsIlhDQ",
     "title": "【同時視聴】完全初見「ひぐらしがなく頃に」【相栖るじゅ/パレデミア学園】",
     "date": "2026-07-18T23:31:19.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/jG3713Igf_o/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/yQbh9vEEgS_UapoQhIxxoTSy13bDxlHYC-ncTcO9VIDBN2NvrLTAWeKGQ72CN2fhOOrHqYaFDA=s240-c-k-c0x00ffffff-no-rj",
@@ -1560,6 +1560,17 @@
     "thumbnail": "https://i.ytimg.com/vi/D2oyrBQI-pY/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/Z7PlAWhweuycNXNXoQ6etyDTkduySM-Kqy8kQW-AD19JuRdxT3HSdIxogPw3GPD5NHw_vZlf=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=D2oyrBQI-pY"
+  },
+  {
+    "name": "汐月永遠",
+    "youtubeid": "UCCCm2ueQtW3mYUMB7Excq8g",
+    "title": "【#雑談  】やっぱ雑談のほうが寝れるよねの会【汐月永遠/パレデミア学園】#永遠との時間",
+    "date": "2026-07-19T00:45:01.000+09:00",
+    "status": "archive",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/aeMMdwCiPVg/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/68oh3mZjSYRleiuocaxnF9VcHdbaxLQzjCq4QgdPlHe3083eTdmNkfXZ6YV81vTUA51qoNXH_g=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=aeMMdwCiPVg"
   },
   {
     "name": "花晴りら",

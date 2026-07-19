@@ -1,27 +1,5 @@
 [
   {
-    "name": "七海ロナ",
-    "youtubeid": "UCIaZylf5L9MsCMOJX3BdTEg",
-    "title": "スキピオ🫶 #vtuber #shorts #踊ってみた",
-    "date": "2026-07-16T19:00:26.000+09:00",
-    "status": "archive",
-    "type": "video",
-    "thumbnail": "https://i.ytimg.com/vi/pUSWuuPUUSI/mqdefault.jpg",
-    "channelIcon": "https://yt3.ggpht.com/86cM_4q1A56pIYgdKxh776hM0nropjiZIlmXbfroWHXQ-MjdGGsjLcL5hMDOFL-T2EJHmybT=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=pUSWuuPUUSI"
-  },
-  {
-    "name": "雛菊のん",
-    "youtubeid": "UChccV6U0Tkx9de4YjXbEelw",
-    "title": "熱中症に打ち勝つギャル雑談💕#新人vtuber #雑談",
-    "date": "2026-07-16T19:30:27.000+09:00",
-    "status": "archive",
-    "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/CBhdcGoztQ8/mqdefault.jpg",
-    "channelIcon": "https://yt3.ggpht.com/-7v40HQCqllHpJD69LHIo2n5lUt-pZ-bLtfrKAXhZk9OF06nj4Lno3gwBvO8d1jBSl5dCCxAxQ=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=CBhdcGoztQ8"
-  },
-  {
     "name": "泡清みる",
     "youtubeid": "UC0pz1TaDyqeO5p8_gbdeunw",
     "title": "【第五人格】手記の加筆初見プレイ💎【ぷろのゔぁ/泡清みる】",
@@ -1645,7 +1623,7 @@
     "date": "2026-07-19T16:05:45.000+09:00",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/HrKMN79vsNE/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/HrKMN79vsNE/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/Z7PlAWhweuycNXNXoQ6etyDTkduySM-Kqy8kQW-AD19JuRdxT3HSdIxogPw3GPD5NHw_vZlf=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=HrKMN79vsNE"
   },
@@ -1659,6 +1637,17 @@
     "thumbnail": "https://i.ytimg.com/vi/7h9a7hpS4T0/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/GTQLrgAFGtGBsfbiwqAP-vnRRHXDfXAKiZIGJAO-p4hzLfenIewQmuXdsBmgPfnz_hf0WsI62Q=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=7h9a7hpS4T0"
+  },
+  {
+    "name": "相栖るじゅ",
+    "youtubeid": "UCrpdBoGpa6g2WEtRWsIlhDQ",
+    "title": "【歌雑】優しい魔（法少）女【相栖るじゅ/パレデミア学園】",
+    "date": "2026-07-19T16:59:25.000+09:00",
+    "status": "archive",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/ion7cLbkWlQ/mqdefault.jpg",
+    "channelIcon": "https://yt3.ggpht.com/yQbh9vEEgS_UapoQhIxxoTSy13bDxlHYC-ncTcO9VIDBN2NvrLTAWeKGQ72CN2fhOOrHqYaFDA=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=ion7cLbkWlQ"
   },
   {
     "name": "Palette Project",
@@ -1694,6 +1683,17 @@
     "url": "https://www.youtube.com/watch?v=5-BEAorKfyw"
   },
   {
+    "name": "相栖るじゅ",
+    "youtubeid": "UCrpdBoGpa6g2WEtRWsIlhDQ",
+    "title": "【歌雑】優しい魔（法少）女【相栖るじゅ/パレデミア学園】",
+    "date": "2026-07-19T17:08:35.000+09:00",
+    "status": "archive",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/HemmJiBP1Ik/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/yQbh9vEEgS_UapoQhIxxoTSy13bDxlHYC-ncTcO9VIDBN2NvrLTAWeKGQ72CN2fhOOrHqYaFDA=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=HemmJiBP1Ik"
+  },
+  {
     "name": "瀬奈りるか",
     "youtubeid": "UCWi_ztz8Xuz4XfzhoG6ZfyA",
     "title": "【同時視聴/雑談】DAY19/アベンジャーズ/インフィニティ・ウォー✨スパイダーマン新作公開記念30日連続MCU＋スパイダーマン同時視聴🌟※吹き替え版・タイマーあり🎶＃せなりるライブ",
@@ -1705,6 +1705,17 @@
     "url": "https://www.youtube.com/watch?v=MJt2MV-xzME"
   },
   {
+    "name": "鈴木沙透",
+    "youtubeid": "UCj5nRzNFXZn9GRhITRkKElA",
+    "title": "【ヴァロ雑】～雑談＋VALORANT～【鈴木沙透/パレデミア学園】",
+    "date": "2026-07-19T19:32:56.000+09:00",
+    "status": "live",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/tfHPhXqMmkk/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/h4kuTtFCGhkDV4nmk6qjQt8auhkqLEqWwB9Il3NZR6op3ph-a0YElRfLcXkZVPp6xqvGmZHy3w=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=tfHPhXqMmkk"
+  },
+  {
     "name": "愛乃宮ゆめ",
     "youtubeid": "UCttSjPiwPYpiPuCrgxK7c1g",
     "title": "【Neva】白いふわふわちゃんと冒険！【愛乃宮ゆめ/パレデミア学園】",
@@ -1714,5 +1725,27 @@
     "thumbnail": "https://i.ytimg.com/vi/NXqEVyX94fQ/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/Gwr7KJNWnI6CEgmIfEeMZahF5pbGNKlRhQXBEkuMWE0D66--IJE77z-5Zu2i5LFBc_CA6ZkqY4Y=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=NXqEVyX94fQ"
+  },
+  {
+    "name": "七海ロナ",
+    "youtubeid": "UCIaZylf5L9MsCMOJX3BdTEg",
+    "title": "【逆転裁判】完全初見！！！異議あり！！！って言いに来ました【パレプロ／七海ロナ】",
+    "date": "2026-07-19T21:30:00.000+09:00",
+    "status": "upcoming",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/3LMCRwYd_wk/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/86cM_4q1A56pIYgdKxh776hM0nropjiZIlmXbfroWHXQ-MjdGGsjLcL5hMDOFL-T2EJHmybT=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=3LMCRwYd_wk"
+  },
+  {
+    "name": "桜庭羽奈",
+    "youtubeid": "UCPgg_A08ksSYP-VivJGniRw",
+    "title": "⑧【ネタバレ注意】完全初見プレイ！新人Vtuberがテイルズシリーズを実況プレイしてみた！【テイルズ オブ ベルセリア リマスター／ゲーム実況配信】",
+    "date": "2026-07-19T22:00:00.000+09:00",
+    "status": "upcoming",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/rvJdnvRIZcg/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/04zALH6pYL7mkWILHajvBzfzg4hrwRCLBONme3K1PjuEeYJIRC6RYxPmJzVZRuN42skHEDNRGmo=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=rvJdnvRIZcg"
   }
 ]

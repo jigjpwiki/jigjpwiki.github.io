@@ -1216,7 +1216,7 @@
     "date": "2026-07-20T17:10:25.000+09:00",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/U4SKvnXydVA/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/U4SKvnXydVA/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/yQbh9vEEgS_UapoQhIxxoTSy13bDxlHYC-ncTcO9VIDBN2NvrLTAWeKGQ72CN2fhOOrHqYaFDA=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=U4SKvnXydVA"
   },
@@ -1650,6 +1650,17 @@
     "url": "https://www.youtube.com/watch?v=77-o4ZkYSyI"
   },
   {
+    "name": "天辻ゆらぐ",
+    "youtubeid": "UCeOFQCn_QZJMTszlRYRg3rQ",
+    "title": "【雑談歌枠】深夜チル枠🌙初見歓迎✨️あなたのお姉さんアイドルVtuber🪼💜【天辻ゆらぐ/パレデミア学園】 #新人Vtuber #ゆらぐっどたいむ",
+    "date": "2026-07-21T01:32:40.000+09:00",
+    "status": "archive",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/ZliXJAtuah4/mqdefault.jpg",
+    "channelIcon": "https://yt3.ggpht.com/4AFFu60kFJqix-OhtDW3EJdQ0jQa1LrK56tGpvqvbGodMQFpkH-_qtvL_66dPGD3kl4LW9N4=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=ZliXJAtuah4"
+  },
+  {
     "name": "無月いお",
     "youtubeid": "UC2X_mAVGw8e3N9JQZZDVBfQ",
     "title": "【#低音女子】最強になったはずだった。2《#パレデミア学園》",
@@ -1675,8 +1686,8 @@
     "name": "桜庭羽奈",
     "youtubeid": "UCPgg_A08ksSYP-VivJGniRw",
     "title": "【おはよう100人待ってます！】休み明けが一番つらいよね・・・！初見さん大歓迎！💛【新人VTuberの雑談／歌枠】🐻",
-    "date": "2026-07-21T06:30:00.000+09:00",
-    "status": "upcoming",
+    "date": "2026-07-21T06:30:11.000+09:00",
+    "status": "live",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/NUDhS9CijH0/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/04zALH6pYL7mkWILHajvBzfzg4hrwRCLBONme3K1PjuEeYJIRC6RYxPmJzVZRuN42skHEDNRGmo=s240-c-k-c0x00ffffff-no-rj",

@@ -1161,7 +1161,7 @@
     "date": "2026-07-20T12:20:20.000+09:00",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/Yvzc5FGTFi4/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/Yvzc5FGTFi4/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/eW_Hug0M6zFk9QSbAmOUWLMSfzBlCHmes-8yAksvfUNzyLgY6TSsE_eW8ncfE4bHYZXKoTWxmQ=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=Yvzc5FGTFi4"
   },
@@ -1298,6 +1298,17 @@
     "url": "https://www.youtube.com/watch?v=z0wgPvEicyM"
   },
   {
+    "name": "亀城ちかり",
+    "youtubeid": "UCn67GGb_NB7P17BVTduGkEw",
+    "title": "恋心は突然に#vtuber #apex #パレデミア学園",
+    "date": "2026-07-20T20:00:30.000+09:00",
+    "status": "archive",
+    "type": "video",
+    "thumbnail": "https://i.ytimg.com/vi/qj_fwrPi94Y/mqdefault.jpg",
+    "channelIcon": "https://yt3.ggpht.com/FoMfSB8j5DfKLhYyYkZTiSDODTCNEaOlBJykfWqc56jsEvGHgPNq9b8UPkYdtAE6xHe9ZTCVrQ=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=qj_fwrPi94Y"
+  },
+  {
     "name": "天麗らん",
     "youtubeid": "UCAa19AEBEEvh2tZ_FJKt5Rw",
     "title": "#1【はじめまして！「らんじお。」始まるよ～！】#VTuber　#雑談",
@@ -1381,7 +1392,7 @@
     "date": "2026-07-20T21:15:52.000+09:00",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/z9eBF9XXXjc/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/z9eBF9XXXjc/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/86cM_4q1A56pIYgdKxh776hM0nropjiZIlmXbfroWHXQ-MjdGGsjLcL5hMDOFL-T2EJHmybT=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=z9eBF9XXXjc"
   },
@@ -1441,6 +1452,17 @@
     "url": "https://www.youtube.com/watch?v=lDRdCXyKlLg"
   },
   {
+    "name": "常磐カナメ",
+    "youtubeid": "UCbNEgJIF_ADD9e8-q7SoxCg",
+    "title": "生誕記念グッズ紹介配信！【パレプロ/常磐カナメ】",
+    "date": "2026-07-20T22:00:17.000+09:00",
+    "status": "archive",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/849WQykeTD0/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/vb_kLF_4hQ7UdEtOnEtL-_pI320ZMQ-lVQ9OV3xMvdTQitHXX1zk0b6GKQ977dawvfoB5Sb8OQ=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=849WQykeTD0"
+  },
+  {
     "name": "瀬奈りるか",
     "youtubeid": "UCWi_ztz8Xuz4XfzhoG6ZfyA",
     "title": "【♯10アイコン描き】イベントのお礼！🎶海の日の思い出はないからアイコン描きしながらまったり雑談🪄✨【＃パレデミア学園】＃せなりるライブ #vtuber",
@@ -1489,11 +1511,22 @@
     "youtubeid": "UCnrJK-sb3gSn3kRLkmpmzaw",
     "title": "【VCR Rust】#1 はじめてのRust.....だぁ【鬼多見アユム👹🍊】",
     "date": "2026-07-20T22:34:11.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/Z4aGoQw2Kqk/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/Z4aGoQw2Kqk/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/5l_IDFvbCkoc_xXy5i5YH24NcAgRR9bYZM9hu30Hm8may2x-7GiLIxkQ3DHQ4vI9uKwRUcbR6Q=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=Z4aGoQw2Kqk"
+  },
+  {
+    "name": "常磐カナメ",
+    "youtubeid": "UCbNEgJIF_ADD9e8-q7SoxCg",
+    "title": "【とりまざんげ】ママ作のゲームで遊んでみる！【パレプロ/常磐カナメ】",
+    "date": "2026-07-20T23:21:16.000+09:00",
+    "status": "archive",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/sAQ1nFPq3u8/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/vb_kLF_4hQ7UdEtOnEtL-_pI320ZMQ-lVQ9OV3xMvdTQitHXX1zk0b6GKQ977dawvfoB5Sb8OQ=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=sAQ1nFPq3u8"
   },
   {
     "name": "雛菊のん",
@@ -1522,9 +1555,9 @@
     "youtubeid": "UCldoz5HLh6BMW29HGnRpC0Q",
     "title": "🌃その日の症状その日のうちに🌃初見さん/ROMさん大歓迎💥≪パレデミア学園 / 灯野ぺけ。≫ #vtuber #深夜 #雑談",
     "date": "2026-07-21T00:00:36.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/Y5AV7_G7KDU/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/Y5AV7_G7KDU/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/sYbvo_2nSCW162VEArIwu7v1B3bl159gmEnGgGei8I8drc4l7huPP7q6aWZ4AfXi5wTMACmGow=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=Y5AV7_G7KDU"
   },
@@ -1577,7 +1610,7 @@
     "youtubeid": "UCrpdBoGpa6g2WEtRWsIlhDQ",
     "title": "【雑談】清楚な蛸さん【相栖るじゅ/パレデミア学園】",
     "date": "2026-07-21T01:29:39.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/V709o8oA6H8/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/yQbh9vEEgS_UapoQhIxxoTSy13bDxlHYC-ncTcO9VIDBN2NvrLTAWeKGQ72CN2fhOOrHqYaFDA=s240-c-k-c0x00ffffff-no-rj",
@@ -1593,6 +1626,17 @@
     "thumbnail": "https://i.ytimg.com/vi/77-o4ZkYSyI/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/BaxFKUrCc4gGKc1wwAHt4ebjk8C69NdTl3fMz9LoR5SUm_Tpvv2yixsbJhp8qsld6S0tdgup=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=77-o4ZkYSyI"
+  },
+  {
+    "name": "無月いお",
+    "youtubeid": "UC2X_mAVGw8e3N9JQZZDVBfQ",
+    "title": "【#低音女子】最強になったはずだった。2《#パレデミア学園》",
+    "date": "2026-07-21T02:29:46.000+09:00",
+    "status": "archive",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/XG4H5rLiYTk/mqdefault.jpg",
+    "channelIcon": "https://yt3.ggpht.com/Z7PlAWhweuycNXNXoQ6etyDTkduySM-Kqy8kQW-AD19JuRdxT3HSdIxogPw3GPD5NHw_vZlf=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=XG4H5rLiYTk"
   },
   {
     "name": "雪紫誉",
@@ -1714,5 +1758,16 @@
     "thumbnail": "https://i.ytimg.com/vi/OZY7Dd6MiH0/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/5RjyRMN46n0H9J0TOI1YqqBw_yJR8_qeqcODZnv_K6ZrKrQal9p_2BGVa_V824-DDz1TrZqprxQ=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=OZY7Dd6MiH0"
+  },
+  {
+    "name": "江波キョウカ",
+    "youtubeid": "UChpkyQ3O21OnkcMcgCoNHCg",
+    "title": "꒰ঌ #アイマス最高歌枠リレー┆この歌が、誰かのための魔法になりますように🪄【 #江波キョウカ / パレプロ 】",
+    "date": "2026-07-25T18:30:00.000+09:00",
+    "status": "upcoming",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/9BoBR-S93Hw/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/pM4ZefnBFJ2qlBEqknYCFHdW6dLH29KptwG0OYSu1-mAVAIy5M1IjwpMwC24-A_v07nluGGrlQ=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=9BoBR-S93Hw"
   }
 ]

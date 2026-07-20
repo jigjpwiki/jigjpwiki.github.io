@@ -1271,7 +1271,7 @@
     "date": "2026-07-20T19:12:23.000+09:00",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/JS4uMfNWjq8/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/JS4uMfNWjq8/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/-4sLuWCih-DlfhpwpDQEuB6eupCB6kTImkIPmKnh54vu5I0F49RkveNQGiqy0p8t0GDU6eiegGE=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=JS4uMfNWjq8"
   },
@@ -1687,7 +1687,7 @@
     "youtubeid": "UCqcnlq8uJqnGml6hcIrMCZw",
     "title": "【毎日朝活/雑談】150人におはよう言いたい朝活🔆初見さん大歓迎🌷【花晴りら/ #パレデミア学園 】#れりライブ",
     "date": "2026-07-21T07:00:16.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/Jn3zslX3GB8/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/CH5JMWVQZ_RtloaXoj6W-yXjo9x8UxXSBG_vMyDnfk7M2QTOApVE1zOesu_aDrSAqvDbGrUyxs0=s240-c-k-c0x00ffffff-no-rj",
@@ -1703,6 +1703,17 @@
     "thumbnail": "https://i.ytimg.com/vi/bM-B0cJfU48/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/eW_Hug0M6zFk9QSbAmOUWLMSfzBlCHmes-8yAksvfUNzyLgY6TSsE_eW8ncfE4bHYZXKoTWxmQ=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=bM-B0cJfU48"
+  },
+  {
+    "name": "藤森ちとせ",
+    "youtubeid": "UCAhdxmsdngH4noySdpVAVWQ",
+    "title": "青ウパ探し中にクリーパーに爆破されてびっくりするVtuber🐟 #ゲーム実況 #切り抜き #shorts #vtuber #マイクラ #minecraft",
+    "date": "2026-07-21T08:15:19.000+09:00",
+    "status": "archive",
+    "type": "video",
+    "thumbnail": "https://i.ytimg.com/vi/uUfMfX04soc/mqdefault.jpg",
+    "channelIcon": "https://yt3.ggpht.com/traR_yWe-AOGyM2wjo8h2FJO9JWBcbjfrL13X-umeD6BtNPopSZ2Q3YmdJq_5K9gWgHf_j64iQ=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=uUfMfX04soc"
   },
   {
     "name": "藤森ちとせ",

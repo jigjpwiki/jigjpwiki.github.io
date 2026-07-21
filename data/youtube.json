@@ -1628,6 +1628,17 @@
     "url": "https://www.youtube.com/watch?v=2021FqnnU1g"
   },
   {
+    "name": "新巻るろな",
+    "youtubeid": "UCUd4wJjvPQflbLnsk_YHleA",
+    "title": "【コミュ力に難のある #雑談 ?】いいたいこというだけの配信【新巻るろな／パレデミア学園】#VTuber",
+    "date": "2026-07-21T22:23:05.000+09:00",
+    "status": "archive",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/oFTPiYIUybI/mqdefault.jpg",
+    "channelIcon": "https://yt3.ggpht.com/-4sLuWCih-DlfhpwpDQEuB6eupCB6kTImkIPmKnh54vu5I0F49RkveNQGiqy0p8t0GDU6eiegGE=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=oFTPiYIUybI"
+  },
+  {
     "name": "灯野ぺけ。",
     "youtubeid": "UCldoz5HLh6BMW29HGnRpC0Q",
     "title": "🌃歌ったり喋ったり🌃初見さん/ROMさん大歓迎💥≪パレデミア学園 / 灯野ぺけ。≫ #vtuber #歌枠  #雑談",
@@ -1661,6 +1672,28 @@
     "url": "https://www.youtube.com/watch?v=4PGYd7RatLc"
   },
   {
+    "name": "暁月クララ",
+    "youtubeid": "UCn4XvlTXjGSvDynpxpOYZPQ",
+    "title": "夏休みはこれ踊るの.ᐟ.ᐟ☀️#にじさんじ体操第一 #にじさんじ #踊ってみた #暁月クララ",
+    "date": "2026-07-21T23:37:22.000+09:00",
+    "status": "archive",
+    "type": "video",
+    "thumbnail": "https://i.ytimg.com/vi/7IekbcJZKTY/mqdefault.jpg",
+    "channelIcon": "https://yt3.ggpht.com/8tcStp-WzdZPtf6bPq1DtUnFSd2Eq5AppSd3_CEQ7hNNpnRND8InaWdPCz6T1wIWWkGJuFrbT94=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=7IekbcJZKTY"
+  },
+  {
+    "name": "暁月クララ",
+    "youtubeid": "UCn4XvlTXjGSvDynpxpOYZPQ",
+    "title": "Vアイドルの理想と現実。現実でファンが減る⁉️www #shorts #vtuber #暁月クララ",
+    "date": "2026-07-22T00:01:21.000+09:00",
+    "status": "archive",
+    "type": "video",
+    "thumbnail": "https://i.ytimg.com/vi/C39VlXJ-7Ho/mqdefault.jpg",
+    "channelIcon": "https://yt3.ggpht.com/8tcStp-WzdZPtf6bPq1DtUnFSd2Eq5AppSd3_CEQ7hNNpnRND8InaWdPCz6T1wIWWkGJuFrbT94=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=C39VlXJ-7Ho"
+  },
+  {
     "name": "七音うら",
     "youtubeid": "UCv2IYO-4waCpHvn50SWWY2A",
     "title": "【#雑談配信  】やよい軒いきました雑談。【七音うら】",
@@ -1687,9 +1720,9 @@
     "youtubeid": "UC8zjZBqGnx_j55ZJzluhW8A",
     "title": "【ささやき添い寝ASMR】眠れない人は一緒にひそひそお話しよ#あんにんたいむ #58 【パレデミア学園/香桜あんにん/＃新人VTuber】",
     "date": "2026-07-22T00:53:20.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/qEC4OPxxtyc/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/qEC4OPxxtyc/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/LL8h8c1rjBm_CimsOmJqxMtfMpzaEZCJ56jM4iOTOaEaDLQ7f6fYwkAWggiJNEwh-aeggh3L-w=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=qEC4OPxxtyc"
   },
@@ -1698,9 +1731,9 @@
     "youtubeid": "UCWi_ztz8Xuz4XfzhoG6ZfyA",
     "title": "【大決戦】4003↑目指してラスチケ貫通TA✨ホド最終日🌟並走･ROM･寝落ち大歓迎🎶人のTLを参考にチナト目指す作業配信🎶【ブルーアーカイブ】＃せなりるライブ",
     "date": "2026-07-22T02:00:10.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/3nmYagoS_gQ/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/3nmYagoS_gQ/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/BaxFKUrCc4gGKc1wwAHt4ebjk8C69NdTl3fMz9LoR5SUm_Tpvv2yixsbJhp8qsld6S0tdgup=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=3nmYagoS_gQ"
   },
@@ -1720,7 +1753,7 @@
     "youtubeid": "UCpdWNjSU-onhmcARqgHIfpg",
     "title": "【#作業雑談】コメント大歓迎！眠くなるまで作業したい #天堂観測【パレデミア学園/天堂ライラ】",
     "date": "2026-07-22T02:36:37.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/1kKYK-UGiqg/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/JA8QqThoUnCNAgJASH3p_wPyWJBf2ILiUfpIvArr6592NkkrFntPQ4EgPsahnLpPCMP4mk93ig=s240-c-k-c0x00ffffff-no-rj",
@@ -1758,6 +1791,17 @@
     "thumbnail": "https://i.ytimg.com/vi/XV1Ioe7gxjY/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/HZPUrbSwGcllAbUtx6xggJ6lKfMfnAWDxWOCc01tpthiDipSqQP48TK5Jqz4GRzUdwKMUsxlsg=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=XV1Ioe7gxjY"
+  },
+  {
+    "name": "天堂ライラ",
+    "youtubeid": "UCpdWNjSU-onhmcARqgHIfpg",
+    "title": "【#朝活】作業をしながら今日もがんばろうのおはよう！7/22(水) #天堂観測【パレデミア学園/天堂ライラ】",
+    "date": "2026-07-22T07:30:00.000+09:00",
+    "status": "upcoming",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/N3pHQhqFSO0/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/JA8QqThoUnCNAgJASH3p_wPyWJBf2ILiUfpIvArr6592NkkrFntPQ4EgPsahnLpPCMP4mk93ig=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=N3pHQhqFSO0"
   },
   {
     "name": "夏渚まはろ",

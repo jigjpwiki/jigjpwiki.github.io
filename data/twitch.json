@@ -1,32 +1,5 @@
 [
   {
-    "name": "なかもとおまち",
-    "twitchid": "41futon",
-    "title": "【ドラゴンボールZKAKAROT】＃１完全初見★DBシリーズ開幕するぜ！！ミリ知らです！",
-    "date": "2026-07-18T12:43:12.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/1405880b-e945-4720-98c9-6a08c6400cae-profile_image-300x300.png",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/fdec1b58a96588e6ba88_41futon_316248298611_1784346186//thumb/thumb0-320x180.jpg"
-  },
-  {
-    "name": "銘兎目あう",
-    "twitchid": "Metome_Au",
-    "title": "【スト６】1645MR～Mケン🥋グラマスいこっ✊🐰🔥",
-    "date": "2026-07-18T14:01:21.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/6eea4ef4-a33b-4c66-9378-ad3aa84b1187-profile_image-300x300.png",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/e9b8d6cbefd9af9c53ef_metome_au_316248556403_1784350876//thumb/thumb0-320x180.jpg"
-  },
-  {
-    "name": "銘兎目あう",
-    "twitchid": "Metome_Au",
-    "title": "【スト６】1645MR～Mケン🥋グラマスいこっ✊🐰🔥",
-    "date": "2026-07-18T14:37:36.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/6eea4ef4-a33b-4c66-9378-ad3aa84b1187-profile_image-300x300.png",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/281af9ad06ed0502a3ec_metome_au_316193582834_1784353051//thumb/thumb0-320x180.jpg"
-  },
-  {
     "name": "月皇ちな",
     "twitchid": "chi7_v",
     "title": "水縹杯本番がんばる！！#ADCWIN w/ミノリ,さーもんちゅ,PIRA,kutoto #chi7live",
@@ -70,5 +43,14 @@
     "status": "archive",
     "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/6eea4ef4-a33b-4c66-9378-ad3aa84b1187-profile_image-300x300.png",
     "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/340257a47cb06f61bde4_metome_au_316259027827_1784545262//thumb/thumb0-320x180.jpg"
+  },
+  {
+    "name": "なかもとおまち",
+    "twitchid": "41futon",
+    "title": "アルマスをめざして",
+    "date": "2026-07-21T15:00:35.000+09:00",
+    "status": "live",
+    "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/1405880b-e945-4720-98c9-6a08c6400cae-profile_image-300x300.png",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_41futon-320x180.jpg"
   }
 ]

@@ -1359,7 +1359,7 @@
     "date": "2026-07-22T18:16:08.000+09:00",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/j_sFWchISdc/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/j_sFWchISdc/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/lTdispopc8pOEncTx9kn4np7w6VU3-cPBCzBs9ZGkfC2n57SHCgY9XyqR_Gs6cpBD7aqpYPGdHE=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=j_sFWchISdc"
   },
@@ -1392,7 +1392,7 @@
     "date": "2026-07-22T18:58:27.000+09:00",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/_90iD4eSCSA/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/_90iD4eSCSA/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/FZAApPZQQXHgHOVY8RCKI0eGvcyJ19mHBpWOT-a_pR_rY6LC8Z2Z9K0gpd4zuwNnYxA-XkKF=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=_90iD4eSCSA"
   },
@@ -1643,7 +1643,7 @@
     "youtubeid": "UCPgg_A08ksSYP-VivJGniRw",
     "title": "【おはよう100人待ってます！】早起き偉い！初見さん大歓迎！💛【新人VTuberの雑談／歌枠】🐻",
     "date": "2026-07-23T06:30:23.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/XWcpFS6SEIo/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/04zALH6pYL7mkWILHajvBzfzg4hrwRCLBONme3K1PjuEeYJIRC6RYxPmJzVZRuN42skHEDNRGmo=s240-c-k-c0x00ffffff-no-rj",
@@ -1681,6 +1681,17 @@
     "thumbnail": "https://i.ytimg.com/vi/SRYCqO_RFoU/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/CH5JMWVQZ_RtloaXoj6W-yXjo9x8UxXSBG_vMyDnfk7M2QTOApVE1zOesu_aDrSAqvDbGrUyxs0=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=SRYCqO_RFoU"
+  },
+  {
+    "name": "天堂ライラ",
+    "youtubeid": "UCpdWNjSU-onhmcARqgHIfpg",
+    "title": "【#朝活】今日もがんばろうのおはよう！チャンネル登録者さん900人いきたいっ！7/23(木) #天堂観測【パレデミア学園/天堂ライラ】",
+    "date": "2026-07-23T07:31:31.000+09:00",
+    "status": "live",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/eEmY8fw6hv0/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/JA8QqThoUnCNAgJASH3p_wPyWJBf2ILiUfpIvArr6592NkkrFntPQ4EgPsahnLpPCMP4mk93ig=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=eEmY8fw6hv0"
   },
   {
     "name": "藤森ちとせ",

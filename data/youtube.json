@@ -1,27 +1,5 @@
 [
   {
-    "name": "鈴木沙透",
-    "youtubeid": "UCj5nRzNFXZn9GRhITRkKElA",
-    "title": "【ヴァロ雑】～雑談＋VALORANT～【鈴木沙透/パレデミア学園】",
-    "date": "2026-07-19T19:32:56.000+09:00",
-    "status": "archive",
-    "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/tfHPhXqMmkk/mqdefault.jpg",
-    "channelIcon": "https://yt3.ggpht.com/h4kuTtFCGhkDV4nmk6qjQt8auhkqLEqWwB9Il3NZR6op3ph-a0YElRfLcXkZVPp6xqvGmZHy3w=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=tfHPhXqMmkk"
-  },
-  {
-    "name": "桜庭羽奈",
-    "youtubeid": "UCPgg_A08ksSYP-VivJGniRw",
-    "title": "【初見さん20人と会いたい】xのアカウントがブロックされました。慰めてください・・・初見さん大歓迎！💛【新人VTuberの雑談／歌枠】🐻",
-    "date": "2026-07-19T20:00:03.000+09:00",
-    "status": "archive",
-    "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/cCOgVT4NOR4/mqdefault.jpg",
-    "channelIcon": "https://yt3.ggpht.com/04zALH6pYL7mkWILHajvBzfzg4hrwRCLBONme3K1PjuEeYJIRC6RYxPmJzVZRuN42skHEDNRGmo=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=cCOgVT4NOR4"
-  },
-  {
     "name": "愛乃宮ゆめ",
     "youtubeid": "UCttSjPiwPYpiPuCrgxK7c1g",
     "title": "【Neva】白いふわふわちゃんと冒険！【愛乃宮ゆめ/パレデミア学園】",
@@ -1513,7 +1491,7 @@
     "date": "2026-07-22T06:29:57.000+09:00",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/5udTjxAR5kI/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/5udTjxAR5kI/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/04zALH6pYL7mkWILHajvBzfzg4hrwRCLBONme3K1PjuEeYJIRC6RYxPmJzVZRuN42skHEDNRGmo=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=5udTjxAR5kI"
   },
@@ -1524,7 +1502,7 @@
     "date": "2026-07-22T06:35:57.000+09:00",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/pwIA4krxYQY/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/pwIA4krxYQY/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/oX8bu2EfV0AJmmDPuA74S-Ky2XAUOxd1IXHEpX5jFDLltMrVNknI1FkpYdhb9VrLGtpUCm3Xvg=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=pwIA4krxYQY"
   },
@@ -1672,15 +1650,48 @@
     "url": "https://www.youtube.com/watch?v=YtknAzqMyZY"
   },
   {
+    "name": "黄金つむぎ",
+    "youtubeid": "UCCqDErkWNs8yWjKS7zHYZBA",
+    "title": "【歌みた作業】#２ 歌下手V、生収録に挑む。",
+    "date": "2026-07-22T18:16:08.000+09:00",
+    "status": "archive",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/j_sFWchISdc/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/lTdispopc8pOEncTx9kn4np7w6VU3-cPBCzBs9ZGkfC2n57SHCgY9XyqR_Gs6cpBD7aqpYPGdHE=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=j_sFWchISdc"
+  },
+  {
+    "name": "鬼多見アユム",
+    "youtubeid": "UCnrJK-sb3gSn3kRLkmpmzaw",
+    "title": "【VCR Rust】#3 色々見てみたいしボスも倒したいきもち【鬼多見アユム👹🍊】",
+    "date": "2026-07-22T18:31:31.000+09:00",
+    "status": "live",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/avdiOjFjHGo/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/5l_IDFvbCkoc_xXy5i5YH24NcAgRR9bYZM9hu30Hm8may2x-7GiLIxkQ3DHQ4vI9uKwRUcbR6Q=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=avdiOjFjHGo"
+  },
+  {
     "name": "虎島めら。",
     "youtubeid": "UCqewFfi_wwydw6fpazmlAFA",
     "title": "2度目の今後についてお話します。　　　　【虎島めら。】",
-    "date": "2026-07-22T19:00:00.000+09:00",
-    "status": "upcoming",
+    "date": "2026-07-22T18:56:52.000+09:00",
+    "status": "archive",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/wgAtVpPpI6g/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/GTQLrgAFGtGBsfbiwqAP-vnRRHXDfXAKiZIGJAO-p4hzLfenIewQmuXdsBmgPfnz_hf0WsI62Q=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=wgAtVpPpI6g"
+  },
+  {
+    "name": "ニコ・ダークウェル",
+    "youtubeid": "UCwSq7LbTyR1lXLJphsHKy2A",
+    "title": "【事務所イベ】オムライス初見  初見さん◎　#新人vtuber #vtuber #ニコニコダークストリーム #パレデミア学園",
+    "date": "2026-07-22T18:58:27.000+09:00",
+    "status": "archive",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/_90iD4eSCSA/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/FZAApPZQQXHgHOVY8RCKI0eGvcyJ19mHBpWOT-a_pR_rY6LC8Z2Z9K0gpd4zuwNnYxA-XkKF=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=_90iD4eSCSA"
   },
   {
     "name": "夏渚まはろ",
@@ -1694,26 +1705,81 @@
     "url": "https://www.youtube.com/watch?v=OZdkZgnE8hk"
   },
   {
+    "name": "七海ロナ",
+    "youtubeid": "UCIaZylf5L9MsCMOJX3BdTEg",
+    "title": "あまりにも疑惑の判定",
+    "date": "2026-07-22T19:00:05.000+09:00",
+    "status": "archive",
+    "type": "video",
+    "thumbnail": "https://i.ytimg.com/vi/tjVKAJhWYbo/mqdefault.jpg",
+    "channelIcon": "https://yt3.ggpht.com/86cM_4q1A56pIYgdKxh776hM0nropjiZIlmXbfroWHXQ-MjdGGsjLcL5hMDOFL-T2EJHmybT=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=tjVKAJhWYbo"
+  },
+  {
+    "name": "相栖るじゅ",
+    "youtubeid": "UCrpdBoGpa6g2WEtRWsIlhDQ",
+    "title": "お願いマッスル-covered by 相栖るじゅ　#shorts #新人vtuber #推しをお探しですか #cover #歌ってみた #お願いマッスル",
+    "date": "2026-07-22T19:00:27.000+09:00",
+    "status": "archive",
+    "type": "video",
+    "thumbnail": "https://i.ytimg.com/vi/b0DXKnKTtb4/mqdefault.jpg",
+    "channelIcon": "https://yt3.ggpht.com/yQbh9vEEgS_UapoQhIxxoTSy13bDxlHYC-ncTcO9VIDBN2NvrLTAWeKGQ72CN2fhOOrHqYaFDA=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=b0DXKnKTtb4"
+  },
+  {
+    "name": "雛菊のん",
+    "youtubeid": "UChccV6U0Tkx9de4YjXbEelw",
+    "title": "夏と闘うギャル雑談💕#新人vtuber #雑談",
+    "date": "2026-07-22T19:31:29.000+09:00",
+    "status": "live",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/aWZ0oYxcj5A/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/-7v40HQCqllHpJD69LHIo2n5lUt-pZ-bLtfrKAXhZk9OF06nj4Lno3gwBvO8d1jBSl5dCCxAxQ=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=aWZ0oYxcj5A"
+  },
+  {
+    "name": "犬丸なでこ",
+    "youtubeid": "UCdJmJxMfXrlnZabUkuss2EA",
+    "title": "【MyVoiceZoo】楽しい動物園をつくるわんね！【パレデミア学園/犬丸なでこ】",
+    "date": "2026-07-22T20:00:19.000+09:00",
+    "status": "live",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/u5w318PYVaM/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/HZPUrbSwGcllAbUtx6xggJ6lKfMfnAWDxWOCc01tpthiDipSqQP48TK5Jqz4GRzUdwKMUsxlsg=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=u5w318PYVaM"
+  },
+  {
     "name": "緋雨柚",
     "youtubeid": "UCrB-SfrqB5ChY8aAT99grXw",
     "title": "【ソーセージについての奇妙なゲーム】ゲームセンスのない女。無事クリアできるのか【パレデミア学園/緋雨柚】",
-    "date": "2026-07-22T20:00:00.000+09:00",
-    "status": "upcoming",
+    "date": "2026-07-22T20:04:46.000+09:00",
+    "status": "live",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/2-7a6wHUuRk/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/dPJHngNTeEfD_K0Mus141-We4xIuAhttm2pgEBl3VdGXqWvxGfy5mJfDMDbBmwI6UGc17dXb-g=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=2-7a6wHUuRk"
   },
   {
-    "name": "犬丸なでこ",
-    "youtubeid": "UCdJmJxMfXrlnZabUkuss2EA",
-    "title": "【MyVoiceZoo】楽しい動物園をつくるわんね！【パレデミア学園/犬丸なでこ】",
-    "date": "2026-07-22T20:00:00.000+09:00",
+    "name": "陰山アゲハ",
+    "youtubeid": "UCIw8aQVRBwi72yOrPLgkbRQ",
+    "title": "【夜勤事件】夜勤経験ある？陰山はほぼないんだけどさ【陰山アゲハ/#パレデミア学園 】",
+    "date": "2026-07-22T21:00:00.000+09:00",
     "status": "upcoming",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/u5w318PYVaM/mqdefault_live.jpg",
-    "channelIcon": "https://yt3.ggpht.com/HZPUrbSwGcllAbUtx6xggJ6lKfMfnAWDxWOCc01tpthiDipSqQP48TK5Jqz4GRzUdwKMUsxlsg=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=u5w318PYVaM"
+    "thumbnail": "https://i.ytimg.com/vi/-_0paFbr6q4/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/XWKUawU_WoX_xINkx3TMSF3fj0RbdiwNezFiEAGcmHfQYvwkjMUM1mvyOmgsbK8LxHoo6aEKJA=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=-_0paFbr6q4"
+  },
+  {
+    "name": "花晴りら",
+    "youtubeid": "UCqcnlq8uJqnGml6hcIrMCZw",
+    "title": "【毎日朝活/雑談】ch登録者様4700目標！250人におはよう言いたい朝活🔆初見さん大歓迎🌷【花晴りら/ #パレデミア学園 】#れりライブ",
+    "date": "2026-07-23T07:00:00.000+09:00",
+    "status": "upcoming",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/SRYCqO_RFoU/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/CH5JMWVQZ_RtloaXoj6W-yXjo9x8UxXSBG_vMyDnfk7M2QTOApVE1zOesu_aDrSAqvDbGrUyxs0=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=SRYCqO_RFoU"
   },
   {
     "name": "藤森ちとせ",

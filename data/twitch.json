@@ -102,9 +102,27 @@
     "name": "火乃晴るい",
     "twitchid": "hinoha_rui",
     "title": "【 #ローモバ 】久しぶり～ローモバちょとやるぞ！ #PR",
-    "date": "2026-07-22T20:24:21.000+09:00",
-    "status": "live",
+    "date": "2026-07-22T20:24:26.000+09:00",
+    "status": "archive",
     "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/9e02effe-cf25-4ba0-9fe7-da457d4e8c87-profile_image-300x300.png",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_hinoha_rui-320x180.jpg"
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/dafd3b7aa634ae6c6e1a_hinoha_rui_316212476786_1784719461//thumb/thumb0-320x180.jpg"
+  },
+  {
+    "name": "月皇ちな",
+    "twitchid": "chi7_v",
+    "title": "ぷろのゔぁ卒業とこれからについて！",
+    "date": "2026-07-22T21:00:19.000+09:00",
+    "status": "live",
+    "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/76f2958e-cab4-41b8-98c1-cc4d275b2ca5-profile_image-300x300.png",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_chi7_v-320x180.jpg"
+  },
+  {
+    "name": "銘兎目あう",
+    "twitchid": "Metome_Au",
+    "title": "【スト６】顔合わせ #格ゲーV甲子園 Aチーム🐰🔥本番は8月2日(日)⭐",
+    "date": "2026-07-22T21:00:59.000+09:00",
+    "status": "live",
+    "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/6eea4ef4-a33b-4c66-9378-ad3aa84b1187-profile_image-300x300.png",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_Metome_Au-320x180.jpg"
   }
 ]

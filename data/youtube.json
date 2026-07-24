@@ -1,27 +1,5 @@
 [
   {
-    "name": "緋雨柚",
-    "youtubeid": "UCrB-SfrqB5ChY8aAT99grXw",
-    "title": "【FF13-2】アガスティアタワーの200年前の事件と対面　#2【パレデミア学園/緋雨柚】",
-    "date": "2026-07-21T11:00:32.000+09:00",
-    "status": "archive",
-    "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/i81JzI_xTEI/mqdefault.jpg",
-    "channelIcon": "https://yt3.ggpht.com/dPJHngNTeEfD_K0Mus141-We4xIuAhttm2pgEBl3VdGXqWvxGfy5mJfDMDbBmwI6UGc17dXb-g=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=i81JzI_xTEI"
-  },
-  {
-    "name": "無月いお",
-    "youtubeid": "UC2X_mAVGw8e3N9JQZZDVBfQ",
-    "title": "【#低音女子】耐えてくれええええ《#パレデミア学園》",
-    "date": "2026-07-21T12:02:38.000+09:00",
-    "status": "archive",
-    "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/JZanIN2KFtc/mqdefault.jpg",
-    "channelIcon": "https://yt3.ggpht.com/Z7PlAWhweuycNXNXoQ6etyDTkduySM-Kqy8kQW-AD19JuRdxT3HSdIxogPw3GPD5NHw_vZlf=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=JZanIN2KFtc"
-  },
-  {
     "name": "さくさくさく",
     "youtubeid": "UC9zEgqk0yVvX3nqRLCJXGGg",
     "title": "ニコさく鳩行為しりとり＠パレデミア学園さくさくさく",
@@ -1023,17 +1001,6 @@
     "url": "https://www.youtube.com/watch?v=XWcpFS6SEIo"
   },
   {
-    "name": "犬丸なでこ",
-    "youtubeid": "UCdJmJxMfXrlnZabUkuss2EA",
-    "title": "【 #朝活】５０人におはようを言いたい！【犬丸なでこ/パレデミア学園】",
-    "date": "2026-07-23T07:00:00.000+09:00",
-    "status": "upcoming",
-    "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/VM0MOjS9xfA/mqdefault_live.jpg",
-    "channelIcon": "https://yt3.ggpht.com/HZPUrbSwGcllAbUtx6xggJ6lKfMfnAWDxWOCc01tpthiDipSqQP48TK5Jqz4GRzUdwKMUsxlsg=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=VM0MOjS9xfA"
-  },
-  {
     "name": "相栖るじゅ",
     "youtubeid": "UCrpdBoGpa6g2WEtRWsIlhDQ",
     "title": "お願いマッスル-covered by 相栖るじゅ　#shorts #新人vtuber #推しをお探しですか #cover #歌ってみた #お願いマッスル",
@@ -1337,7 +1304,7 @@
     "date": "2026-07-23T21:22:37.000+09:00",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/p3sMPBOCWgc/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/p3sMPBOCWgc/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/zOlQ66VHDdW9B1w3cRbHlo-3cfkYBLVHzYpXS_xLbOv9bHe72uv-bD246R7gCEfD_7wGBc-6vQ=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=p3sMPBOCWgc"
   },
@@ -1353,13 +1320,24 @@
     "url": "https://www.youtube.com/watch?v=je2WbmUDVLw"
   },
   {
+    "name": "変幻リメ",
+    "youtubeid": "UC5bCRde8xRrNS7s6GjCNCyQ",
+    "title": "【歌枠】縦型！銀魂！歌いまくろ！[#変幻リメ][#vsinger ]",
+    "date": "2026-07-23T21:45:24.000+09:00",
+    "status": "archive",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/9bzOYxrLmmk/mqdefault.jpg",
+    "channelIcon": "https://yt3.ggpht.com/4hssn4EXW2lORXRfiuYTjmYfnlZoQ2h72sdEompqX7GQwAKCsBx7eL0joCFSook1rfCKIcpykg=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=9bzOYxrLmmk"
+  },
+  {
     "name": "ニコ・ダークウェル",
     "youtubeid": "UCwSq7LbTyR1lXLJphsHKy2A",
     "title": "【高時給】2026年7/23 怪しい求人を見つけました。  初見さん◎　#新人vtuber #vtuber #ニコニコダークストリーム #パレデミア学園",
     "date": "2026-07-23T22:00:19.000+09:00",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/CvGPq1hLuBM/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/CvGPq1hLuBM/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/FZAApPZQQXHgHOVY8RCKI0eGvcyJ19mHBpWOT-a_pR_rY6LC8Z2Z9K0gpd4zuwNnYxA-XkKF=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=CvGPq1hLuBM"
   },
@@ -1392,7 +1370,7 @@
     "date": "2026-07-23T22:01:36.000+09:00",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/pjsoYBLsmQY/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/pjsoYBLsmQY/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/3KzF3YSQvjRpSMpFZEEsaGlIcETMW03ZmdKQy_TjJIm8t9vC4AjNwLLR5hNqXi0M9qnyszb0PCY=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=pjsoYBLsmQY"
   },
@@ -1425,7 +1403,7 @@
     "date": "2026-07-23T22:17:25.000+09:00",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/2-W0QbvtWRw/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/2-W0QbvtWRw/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/-4sLuWCih-DlfhpwpDQEuB6eupCB6kTImkIPmKnh54vu5I0F49RkveNQGiqy0p8t0GDU6eiegGE=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=2-W0QbvtWRw"
   },
@@ -1533,9 +1511,9 @@
     "youtubeid": "UCqcnlq8uJqnGml6hcIrMCZw",
     "title": "【毎日朝活/雑談】250人におはよう言いたい金曜日の朝活🔆初見さん大歓迎🌷【花晴りら/ #パレデミア学園 】#れりライブ",
     "date": "2026-07-24T07:00:31.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/sBN0yzLwVwQ/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/sBN0yzLwVwQ/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/CH5JMWVQZ_RtloaXoj6W-yXjo9x8UxXSBG_vMyDnfk7M2QTOApVE1zOesu_aDrSAqvDbGrUyxs0=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=sBN0yzLwVwQ"
   },
@@ -1562,6 +1540,17 @@
     "url": "https://www.youtube.com/watch?v=F88kPuix7s8"
   },
   {
+    "name": "犬丸なでこ",
+    "youtubeid": "UCdJmJxMfXrlnZabUkuss2EA",
+    "title": "【 #朝活】５０人におはようを言いたい！【犬丸なでこ/パレデミア学園】",
+    "date": "2026-07-24T07:01:04.000+09:00",
+    "status": "archive",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/VM0MOjS9xfA/mqdefault.jpg",
+    "channelIcon": "https://yt3.ggpht.com/HZPUrbSwGcllAbUtx6xggJ6lKfMfnAWDxWOCc01tpthiDipSqQP48TK5Jqz4GRzUdwKMUsxlsg=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=VM0MOjS9xfA"
+  },
+  {
     "name": "堂下さとり",
     "youtubeid": "UCBq6MSUL-Ermvnoj3PtX7Iw",
     "title": "にんべん つゆの素 アイス!? 【日本橋だし場】",
@@ -1577,11 +1566,22 @@
     "youtubeid": "UCpdWNjSU-onhmcARqgHIfpg",
     "title": "【#朝活】マッチョを助けながら今日もがんばろうのおはよう！7/24(金) #天堂観測【パレデミア学園/天堂ライラ】",
     "date": "2026-07-24T07:36:52.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/NjkoEQSmOQY/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/NjkoEQSmOQY/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/JA8QqThoUnCNAgJASH3p_wPyWJBf2ILiUfpIvArr6592NkkrFntPQ4EgPsahnLpPCMP4mk93ig=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=NjkoEQSmOQY"
+  },
+  {
+    "name": "犬丸なでこ",
+    "youtubeid": "UCdJmJxMfXrlnZabUkuss2EA",
+    "title": "【＃５】めっちゃカメレオン【パレデミア学園/犬丸なでこ】",
+    "date": "2026-07-24T20:00:00.000+09:00",
+    "status": "upcoming",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/nWF0jL7Ho8Y/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/HZPUrbSwGcllAbUtx6xggJ6lKfMfnAWDxWOCc01tpthiDipSqQP48TK5Jqz4GRzUdwKMUsxlsg=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=nWF0jL7Ho8Y"
   },
   {
     "name": "山田スバル",
@@ -1604,6 +1604,17 @@
     "thumbnail": "https://i.ytimg.com/vi/PeJnLFoy0BU/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/traR_yWe-AOGyM2wjo8h2FJO9JWBcbjfrL13X-umeD6BtNPopSZ2Q3YmdJq_5K9gWgHf_j64iQ=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=PeJnLFoy0BU"
+  },
+  {
+    "name": "天堂ライラ",
+    "youtubeid": "UCpdWNjSU-onhmcARqgHIfpg",
+    "title": "【#朝活】お寿司を食べるゲームをしながらおはよう！7/25(土) #天堂観測【パレデミア学園/天堂ライラ】",
+    "date": "2026-07-25T07:30:00.000+09:00",
+    "status": "upcoming",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/Azmqw1507jg/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/JA8QqThoUnCNAgJASH3p_wPyWJBf2ILiUfpIvArr6592NkkrFntPQ4EgPsahnLpPCMP4mk93ig=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=Azmqw1507jg"
   },
   {
     "name": "藤森ちとせ",

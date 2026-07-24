@@ -1,32 +1,5 @@
 [
   {
-    "name": "銘兎目あう",
-    "twitchid": "Metome_Au",
-    "title": "【スト６】1700MR～Mケン🥋アルマスと最高MR更新目指すよ🐰🔥",
-    "date": "2026-07-21T19:59:57.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/6eea4ef4-a33b-4c66-9378-ad3aa84b1187-profile_image-300x300.png",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/78b74cecba81324266b0_metome_au_316208041074_1784631592//thumb/thumb0-320x180.jpg"
-  },
-  {
-    "name": "水透ユウ",
-    "twitchid": "minato_yu_",
-    "title": "【 #R6S 】solo rank 台パン配信【水透ユウ/ぷろのゔぁ】 #ユウおんらいぶ",
-    "date": "2026-07-21T20:54:29.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/fc4f961e-29c3-4f2e-9880-161fbf3b98eb-profile_image-300x300.png",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/02290e6a465197febeae_minato_yu__316263522419_1784634863//thumb/thumb0-320x180.jpg"
-  },
-  {
-    "name": "月皇ちな",
-    "twitchid": "chi7_v",
-    "title": "黒猫日和でめっちゃカメレオン！ #chi7live",
-    "date": "2026-07-21T21:00:25.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/76f2958e-cab4-41b8-98c1-cc4d275b2ca5-profile_image-300x300.png",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/b74afc12abd34f381f4f_chi7_v_316263563891_1784635220//thumb/thumb0-320x180.jpg"
-  },
-  {
     "name": "真昼ねる",
     "twitchid": "mahiruneru",
     "title": "【スト6】潜在的関東規模他責少女 、ダイヤにゆく【ぷろのゔぁ￤VTuber￤真昼ねる】",
@@ -124,5 +97,23 @@
     "status": "archive",
     "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/9e02effe-cf25-4ba0-9fe7-da457d4e8c87-profile_image-300x300.png",
     "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/74d8eceb4a1d5213cd26_hinoha_rui_316275889395_1784881163//thumb/thumb0-320x180.jpg"
+  },
+  {
+    "name": "水透ユウ",
+    "twitchid": "minato_yu_",
+    "title": "【 #R6S 】solo rank 台パン配信【水透ユウ/ぷろのゔぁ】 #ユウおんらいぶ",
+    "date": "2026-07-24T20:37:10.000+09:00",
+    "status": "live",
+    "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/fc4f961e-29c3-4f2e-9880-161fbf3b98eb-profile_image-300x300.png",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_minato_yu_-320x180.jpg"
+  },
+  {
+    "name": "銘兎目あう",
+    "twitchid": "Metome_Au",
+    "title": "【スト６】1748MR～🥋初アルマス🔥チャレンジだぁ👊🐰！！！",
+    "date": "2026-07-24T20:57:29.000+09:00",
+    "status": "live",
+    "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/6eea4ef4-a33b-4c66-9378-ad3aa84b1187-profile_image-300x300.png",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_Metome_Au-320x180.jpg"
   }
 ]

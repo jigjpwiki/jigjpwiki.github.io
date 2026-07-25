@@ -1205,7 +1205,7 @@
     "date": "2026-07-25T15:05:09.000+09:00",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/Of89iErYydU/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/Of89iErYydU/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/eW_Hug0M6zFk9QSbAmOUWLMSfzBlCHmes-8yAksvfUNzyLgY6TSsE_eW8ncfE4bHYZXKoTWxmQ=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=Of89iErYydU"
   },
@@ -1236,9 +1236,9 @@
     "youtubeid": "UCnrJK-sb3gSn3kRLkmpmzaw",
     "title": "【VCR Rust】#4 新しいことがあるかな？　【鬼多見アユム👹🍊】",
     "date": "2026-07-25T17:44:42.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/70RAFQDsBbY/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/70RAFQDsBbY/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/5l_IDFvbCkoc_xXy5i5YH24NcAgRR9bYZM9hu30Hm8may2x-7GiLIxkQ3DHQ4vI9uKwRUcbR6Q=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=70RAFQDsBbY"
   },
@@ -1670,6 +1670,17 @@
     "thumbnail": "https://i.ytimg.com/vi/ipPqx0oxh2k/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/Me8I_Op8OlIy8Vuj387_Hdi6gnrZ-qiY1yDDt1Q5yKMKA51ISagT76HE01gw8xbLcef0vpsPgoc=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=ipPqx0oxh2k"
+  },
+  {
+    "name": "天辻ゆらぐ",
+    "youtubeid": "UCeOFQCn_QZJMTszlRYRg3rQ",
+    "title": "【朝活/雑談歌枠】初見歓迎✨️100人におはよう目標☀あなたのお姉さんアイドルVtuber🪼💜【天辻ゆらぐ/パレデミア学園】 #新人Vtuber #ゆらぐっどたいむ",
+    "date": "2026-07-26T08:00:00.000+09:00",
+    "status": "upcoming",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/6_N1-SH6Td8/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/4AFFu60kFJqix-OhtDW3EJdQ0jQa1LrK56tGpvqvbGodMQFpkH-_qtvL_66dPGD3kl4LW9N4=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=6_N1-SH6Td8"
   },
   {
     "name": "藤森ちとせ",

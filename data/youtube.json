@@ -1,16 +1,5 @@
 [
   {
-    "name": "新巻るろな",
-    "youtubeid": "UCUd4wJjvPQflbLnsk_YHleA",
-    "title": "【 #朝活 】９時って、朝だと思う【新巻るろな／パレデミア学園】#VTuber #雑談",
-    "date": "2026-07-22T09:14:28.000+09:00",
-    "status": "archive",
-    "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/8U9nB_XqX_I/mqdefault.jpg",
-    "channelIcon": "https://yt3.ggpht.com/-4sLuWCih-DlfhpwpDQEuB6eupCB6kTImkIPmKnh54vu5I0F49RkveNQGiqy0p8t0GDU6eiegGE=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=8U9nB_XqX_I"
-  },
-  {
     "name": "緋雨柚",
     "youtubeid": "UCrB-SfrqB5ChY8aAT99grXw",
     "title": "【FF13-2】ワイルドオーパーツはいずこへ　#4【パレデミア学園/緋雨柚】",
@@ -1095,7 +1084,7 @@
     "date": "2026-07-24T19:34:40.000+09:00",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/iTTKFbmbXuo/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/iTTKFbmbXuo/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/-7v40HQCqllHpJD69LHIo2n5lUt-pZ-bLtfrKAXhZk9OF06nj4Lno3gwBvO8d1jBSl5dCCxAxQ=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=iTTKFbmbXuo"
   },
@@ -1128,7 +1117,7 @@
     "date": "2026-07-24T20:01:09.000+09:00",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/BRc-z81GpfU/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/BRc-z81GpfU/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/4RbHGCHx02xQ2ze4g7UCTvuUPlQCpbk6bHIb5cdqO4JNzTe5qsq4sDTt6m-xVKMm476vJiMF7A=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=BRc-z81GpfU"
   },
@@ -1205,7 +1194,7 @@
     "date": "2026-07-24T21:00:16.000+09:00",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/S1lxeaE6bRc/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/S1lxeaE6bRc/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/CH5JMWVQZ_RtloaXoj6W-yXjo9x8UxXSBG_vMyDnfk7M2QTOApVE1zOesu_aDrSAqvDbGrUyxs0=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=S1lxeaE6bRc"
   },
@@ -1236,7 +1225,7 @@
     "youtubeid": "UCHBPF4eBZEAQ5MmiddmhM2w",
     "title": "【パレデミア学園】爽やかな顔で挑んでいく【Keep Talking and Nobody Explodes】",
     "date": "2026-07-24T21:03:21.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/WVdn5W7FnDA/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/3p9jAiFZNvnKiFnz-hu-u03CwwXSshaxv5bexFCUmNuZbW2W93YCg5BQ6OeqfUAzvBcxSeSKR74=s240-c-k-c0x00ffffff-no-rj",
@@ -1401,9 +1390,9 @@
     "youtubeid": "UC8zjZBqGnx_j55ZJzluhW8A",
     "title": "【初見さんおはよう耐久】二度寝推奨朝枠！みんなのおはよう待ってるよ！#あんにんたいむ #61 【パレデミア学園/香桜あんにん/＃新人VTuber】",
     "date": "2026-07-25T01:02:50.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/pZmC2AQYsQU/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/pZmC2AQYsQU/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/LL8h8c1rjBm_CimsOmJqxMtfMpzaEZCJ56jM4iOTOaEaDLQ7f6fYwkAWggiJNEwh-aeggh3L-w=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=pZmC2AQYsQU"
   },
@@ -1467,11 +1456,22 @@
     "youtubeid": "UCpdWNjSU-onhmcARqgHIfpg",
     "title": "【#朝活】お寿司を食べるゲームをしながらおはよう！7/25(土) #天堂観測【パレデミア学園/天堂ライラ】",
     "date": "2026-07-25T07:35:46.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/Azmqw1507jg/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/JA8QqThoUnCNAgJASH3p_wPyWJBf2ILiUfpIvArr6592NkkrFntPQ4EgPsahnLpPCMP4mk93ig=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=Azmqw1507jg"
+  },
+  {
+    "name": "雪紫誉",
+    "youtubeid": "UCdbYinKlpkB_uMt_wPmYcsw",
+    "title": "【ビンゴ中級編】【事務所イベ12日目】【#雑談】これが本物の耐久ってやつか……#初見さん大歓迎 ◎【#パレデミア学園/#ゆきむらじお】＃新人VTuber",
+    "date": "2026-07-25T10:45:00.000+09:00",
+    "status": "upcoming",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/4kQ3jZA9ysg/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/4RbHGCHx02xQ2ze4g7UCTvuUPlQCpbk6bHIb5cdqO4JNzTe5qsq4sDTt6m-xVKMm476vJiMF7A=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=4kQ3jZA9ysg"
   },
   {
     "name": "香鳴ハノン",
@@ -1538,6 +1538,17 @@
     "thumbnail": "https://i.ytimg.com/vi/9BoBR-S93Hw/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/pM4ZefnBFJ2qlBEqknYCFHdW6dLH29KptwG0OYSu1-mAVAIy5M1IjwpMwC24-A_v07nluGGrlQ=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=9BoBR-S93Hw"
+  },
+  {
+    "name": "天堂ライラ",
+    "youtubeid": "UCpdWNjSU-onhmcARqgHIfpg",
+    "title": "【#朝活】1000円WIN5！今日のレース予測しながらおはよう！ #天堂観測【パレデミア学園/天堂ライラ】",
+    "date": "2026-07-26T06:00:00.000+09:00",
+    "status": "upcoming",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/to4yQM5k5gI/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/JA8QqThoUnCNAgJASH3p_wPyWJBf2ILiUfpIvArr6592NkkrFntPQ4EgPsahnLpPCMP4mk93ig=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=to4yQM5k5gI"
   },
   {
     "name": "藤森ちとせ",

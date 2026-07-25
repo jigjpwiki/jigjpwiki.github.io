@@ -1,16 +1,5 @@
 [
   {
-    "name": "天堂ライラ",
-    "youtubeid": "UCpdWNjSU-onhmcARqgHIfpg",
-    "title": "【#朝活】今日もがんばろうのおはよう！チャンネル登録者さん900人いきたいっ！7/23(木) #天堂観測【パレデミア学園/天堂ライラ】",
-    "date": "2026-07-23T07:31:31.000+09:00",
-    "status": "archive",
-    "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/eEmY8fw6hv0/mqdefault.jpg",
-    "channelIcon": "https://yt3.ggpht.com/JA8QqThoUnCNAgJASH3p_wPyWJBf2ILiUfpIvArr6592NkkrFntPQ4EgPsahnLpPCMP4mk93ig=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=eEmY8fw6hv0"
-  },
-  {
     "name": "新巻るろな",
     "youtubeid": "UCUd4wJjvPQflbLnsk_YHleA",
     "title": "【 #朝活 】8時半って、朝だと思う【新巻るろな／パレデミア学園】#VTuber #雑談",
@@ -1249,7 +1238,7 @@
     "date": "2026-07-25T18:30:35.000+09:00",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/Bz4yk55TWZI/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/Bz4yk55TWZI/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/4RbHGCHx02xQ2ze4g7UCTvuUPlQCpbk6bHIb5cdqO4JNzTe5qsq4sDTt6m-xVKMm476vJiMF7A=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=Bz4yk55TWZI"
   },
@@ -1621,7 +1610,7 @@
     "youtubeid": "UCpdWNjSU-onhmcARqgHIfpg",
     "title": "【#朝活】1000円WIN5！今日のレース予測しながらおはよう！ #天堂観測【パレデミア学園/天堂ライラ】",
     "date": "2026-07-26T06:59:39.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/to4yQM5k5gI/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/JA8QqThoUnCNAgJASH3p_wPyWJBf2ILiUfpIvArr6592NkkrFntPQ4EgPsahnLpPCMP4mk93ig=s240-c-k-c0x00ffffff-no-rj",
@@ -1642,8 +1631,8 @@
     "name": "桜庭羽奈",
     "youtubeid": "UCPgg_A08ksSYP-VivJGniRw",
     "title": "【おはよう１００人待ってます！】雑談もしたいけど歌も歌いたい！初見さん大歓迎！💛【新人VTuberの雑談／歌枠】🐻",
-    "date": "2026-07-26T07:30:00.000+09:00",
-    "status": "upcoming",
+    "date": "2026-07-26T07:30:09.000+09:00",
+    "status": "live",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/kd6crXsY6vc/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/04zALH6pYL7mkWILHajvBzfzg4hrwRCLBONme3K1PjuEeYJIRC6RYxPmJzVZRuN42skHEDNRGmo=s240-c-k-c0x00ffffff-no-rj",
@@ -1653,12 +1642,23 @@
     "name": "天透あわ",
     "youtubeid": "UCXI0W_Os-BCIngpCb1YnOow",
     "title": "【朝活】合法朝活配信🌞",
-    "date": "2026-07-26T07:30:00.000+09:00",
-    "status": "upcoming",
+    "date": "2026-07-26T07:30:43.000+09:00",
+    "status": "live",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/ipPqx0oxh2k/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/Me8I_Op8OlIy8Vuj387_Hdi6gnrZ-qiY1yDDt1Q5yKMKA51ISagT76HE01gw8xbLcef0vpsPgoc=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=ipPqx0oxh2k"
+  },
+  {
+    "name": "新巻るろな",
+    "youtubeid": "UCUd4wJjvPQflbLnsk_YHleA",
+    "title": "【 #朝活 】ハロウィンイベントラースト！！【新巻るろな／パレデミア学園】#VTuber #雑談",
+    "date": "2026-07-26T07:32:49.000+09:00",
+    "status": "live",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/iCYvFo1BqQI/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/-4sLuWCih-DlfhpwpDQEuB6eupCB6kTImkIPmKnh54vu5I0F49RkveNQGiqy0p8t0GDU6eiegGE=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=iCYvFo1BqQI"
   },
   {
     "name": "天辻ゆらぐ",

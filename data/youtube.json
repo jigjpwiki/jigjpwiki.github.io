@@ -1,16 +1,5 @@
 [
   {
-    "name": "汐月永遠",
-    "youtubeid": "UCCCm2ueQtW3mYUMB7Excq8g",
-    "title": "【#雑談 】マシュマロ、ついに解凍【汐月永遠/パレデミア学園】#永遠との時間",
-    "date": "2026-07-24T02:25:53.000+09:00",
-    "status": "archive",
-    "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/ob7mV1eIqC4/mqdefault.jpg",
-    "channelIcon": "https://yt3.ggpht.com/68oh3mZjSYRleiuocaxnF9VcHdbaxLQzjCq4QgdPlHe3083eTdmNkfXZ6YV81vTUA51qoNXH_g=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=ob7mV1eIqC4"
-  },
-  {
     "name": "堂下さとり",
     "youtubeid": "UCBq6MSUL-Ermvnoj3PtX7Iw",
     "title": "【雑談】かぼちゃ料理の相談【堂下さとり/パレデミア学園】",
@@ -1478,11 +1467,33 @@
     "youtubeid": "UCv2IYO-4waCpHvn50SWWY2A",
     "title": "【#雑談配信  】結局うなぎ食べれなかった日の雑談。【七音うら】",
     "date": "2026-07-27T00:01:36.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/uWPZ6-pcbjQ/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/T655ATpSd2gkjZBrokvlkaUH0f5-fCpQdcJpwxmmNdy6fxCYffAlq2sMhPOtFk_CvVyOkEPY8Q=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=uWPZ6-pcbjQ"
+  },
+  {
+    "name": "汐月永遠",
+    "youtubeid": "UCCCm2ueQtW3mYUMB7Excq8g",
+    "title": "【#雑談 】梅干しを崇め奉り【汐月永遠/パレデミア学園】#永遠との時間",
+    "date": "2026-07-27T01:00:09.000+09:00",
+    "status": "live",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/ceFTWUIxUKs/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/68oh3mZjSYRleiuocaxnF9VcHdbaxLQzjCq4QgdPlHe3083eTdmNkfXZ6YV81vTUA51qoNXH_g=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=ceFTWUIxUKs"
+  },
+  {
+    "name": "香桜あんにん",
+    "youtubeid": "UC8zjZBqGnx_j55ZJzluhW8A",
+    "title": "【ささやき作業ASMR】眠れない人は一緒にひそひそお話しよ#あんにんたいむ #64 【パレデミア学園/香桜あんにん/＃新人VTuber】",
+    "date": "2026-07-27T01:41:32.000+09:00",
+    "status": "live",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/zwWiOhKtBbM/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/LL8h8c1rjBm_CimsOmJqxMtfMpzaEZCJ56jM4iOTOaEaDLQ7f6fYwkAWggiJNEwh-aeggh3L-w=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=zwWiOhKtBbM"
   },
   {
     "name": "桜庭羽奈",

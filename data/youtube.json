@@ -1,38 +1,5 @@
 [
   {
-    "name": "無月いお",
-    "youtubeid": "UC2X_mAVGw8e3N9JQZZDVBfQ",
-    "title": "【#低音女子】1700名様ありがとう配信《#パレデミア学園》",
-    "date": "2026-07-24T00:02:28.000+09:00",
-    "status": "archive",
-    "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/Qtcc4vfhwNQ/mqdefault.jpg",
-    "channelIcon": "https://yt3.ggpht.com/Z7PlAWhweuycNXNXoQ6etyDTkduySM-Kqy8kQW-AD19JuRdxT3HSdIxogPw3GPD5NHw_vZlf=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=Qtcc4vfhwNQ"
-  },
-  {
-    "name": "七音うら",
-    "youtubeid": "UCv2IYO-4waCpHvn50SWWY2A",
-    "title": "【#雑談配信  】なんか知らんけどほぼ1日寝てた日の雑談。【七音うら】",
-    "date": "2026-07-24T00:03:54.000+09:00",
-    "status": "archive",
-    "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/d0DsRoPwhCU/mqdefault.jpg",
-    "channelIcon": "https://yt3.ggpht.com/T655ATpSd2gkjZBrokvlkaUH0f5-fCpQdcJpwxmmNdy6fxCYffAlq2sMhPOtFk_CvVyOkEPY8Q=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=d0DsRoPwhCU"
-  },
-  {
-    "name": "天堂ライラ",
-    "youtubeid": "UCpdWNjSU-onhmcARqgHIfpg",
-    "title": "【#雀魂】まったり麻雀がしたい(大遅刻) #天堂観測【パレデミア学園/天堂ライラ】",
-    "date": "2026-07-24T00:15:55.000+09:00",
-    "status": "archive",
-    "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/6CnzY6z_Wk0/mqdefault.jpg",
-    "channelIcon": "https://yt3.ggpht.com/JA8QqThoUnCNAgJASH3p_wPyWJBf2ILiUfpIvArr6592NkkrFntPQ4EgPsahnLpPCMP4mk93ig=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=6CnzY6z_Wk0"
-  },
-  {
     "name": "汐月永遠",
     "youtubeid": "UCCCm2ueQtW3mYUMB7Excq8g",
     "title": "【#雑談 】マシュマロ、ついに解凍【汐月永遠/パレデミア学園】#永遠との時間",
@@ -1467,7 +1434,7 @@
     "youtubeid": "UCttSjPiwPYpiPuCrgxK7c1g",
     "title": "【雑談】もう７月終わるらしい…？【愛乃宮ゆめ/パレデミア学園】",
     "date": "2026-07-26T21:02:22.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/lj6xlAtIpoo/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/Gwr7KJNWnI6CEgmIfEeMZahF5pbGNKlRhQXBEkuMWE0D66--IJE77z-5Zu2i5LFBc_CA6ZkqY4Y=s240-c-k-c0x00ffffff-no-rj",
@@ -1489,7 +1456,7 @@
     "youtubeid": "UC8zjZBqGnx_j55ZJzluhW8A",
     "title": "【初見さん求む！】みんなの夕飯を教えて～#雑談#あんにんたいむ #63 【パレデミア学園/香桜あんにん/＃新人VTuber】",
     "date": "2026-07-26T22:36:05.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/4E33UsK5-lo/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/LL8h8c1rjBm_CimsOmJqxMtfMpzaEZCJ56jM4iOTOaEaDLQ7f6fYwkAWggiJNEwh-aeggh3L-w=s240-c-k-c0x00ffffff-no-rj",
@@ -1500,11 +1467,22 @@
     "youtubeid": "UCldoz5HLh6BMW29HGnRpC0Q",
     "title": "ガンダムSEED同時視聴【9話～】🛰️🚀🌌初見さん/ROMさん大歓迎💥≪パレデミア学園 / 灯野ぺけ。≫ #vtuber #ガンダム  #同時視聴",
     "date": "2026-07-26T23:01:43.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/9EyCNdkOhnM/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/sYbvo_2nSCW162VEArIwu7v1B3bl159gmEnGgGei8I8drc4l7huPP7q6aWZ4AfXi5wTMACmGow=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=9EyCNdkOhnM"
+  },
+  {
+    "name": "七音うら",
+    "youtubeid": "UCv2IYO-4waCpHvn50SWWY2A",
+    "title": "【#雑談配信  】結局うなぎ食べれなかった日の雑談。【七音うら】",
+    "date": "2026-07-27T00:01:36.000+09:00",
+    "status": "live",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/uWPZ6-pcbjQ/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/T655ATpSd2gkjZBrokvlkaUH0f5-fCpQdcJpwxmmNdy6fxCYffAlq2sMhPOtFk_CvVyOkEPY8Q=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=uWPZ6-pcbjQ"
   },
   {
     "name": "桜庭羽奈",
@@ -1516,6 +1494,17 @@
     "thumbnail": "https://i.ytimg.com/vi/FZamU26-FJQ/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/04zALH6pYL7mkWILHajvBzfzg4hrwRCLBONme3K1PjuEeYJIRC6RYxPmJzVZRuN42skHEDNRGmo=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=FZamU26-FJQ"
+  },
+  {
+    "name": "花晴りら",
+    "youtubeid": "UCqcnlq8uJqnGml6hcIrMCZw",
+    "title": "【毎日朝活/雑談】150人におはよう言いたい月曜日の朝活🔆初見さん大歓迎🌷【花晴りら/ #パレデミア学園 】#れりライブ",
+    "date": "2026-07-27T07:00:00.000+09:00",
+    "status": "upcoming",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/xUYl0KX5llM/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/CH5JMWVQZ_RtloaXoj6W-yXjo9x8UxXSBG_vMyDnfk7M2QTOApVE1zOesu_aDrSAqvDbGrUyxs0=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=xUYl0KX5llM"
   },
   {
     "name": "天堂ライラ",
@@ -1562,6 +1551,17 @@
     "url": "https://www.youtube.com/watch?v=yfpbCIn5Sh8"
   },
   {
+    "name": "犬丸なでこ",
+    "youtubeid": "UCdJmJxMfXrlnZabUkuss2EA",
+    "title": "【 #朝活】５０人におはようを言いたい！【犬丸なでこ/パレデミア学園】",
+    "date": "2026-07-28T07:00:00.000+09:00",
+    "status": "upcoming",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/WDm6POQiWHo/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/HZPUrbSwGcllAbUtx6xggJ6lKfMfnAWDxWOCc01tpthiDipSqQP48TK5Jqz4GRzUdwKMUsxlsg=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=WDm6POQiWHo"
+  },
+  {
     "name": "愛乃宮ゆめ",
     "youtubeid": "UCttSjPiwPYpiPuCrgxK7c1g",
     "title": "【LIBRARIAN】寝落ち、ROM歓迎！激チルNight☆【愛乃宮ゆめ/パレデミア学園】",
@@ -1571,5 +1571,27 @@
     "thumbnail": "https://i.ytimg.com/vi/uLclRdZSqRE/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/Gwr7KJNWnI6CEgmIfEeMZahF5pbGNKlRhQXBEkuMWE0D66--IJE77z-5Zu2i5LFBc_CA6ZkqY4Y=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=uLclRdZSqRE"
+  },
+  {
+    "name": "常磐カナメ",
+    "youtubeid": "UCbNEgJIF_ADD9e8-q7SoxCg",
+    "title": "【めっちゃカメレオン】文学少女は擬態が得意なのだよﾌﾌﾝ【パレプロ/常磐カナメ】",
+    "date": "2026-07-28T21:15:00.000+09:00",
+    "status": "upcoming",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/_aRzkVwXKo8/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/vb_kLF_4hQ7UdEtOnEtL-_pI320ZMQ-lVQ9OV3xMvdTQitHXX1zk0b6GKQ977dawvfoB5Sb8OQ=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=_aRzkVwXKo8"
+  },
+  {
+    "name": "常磐カナメ",
+    "youtubeid": "UCbNEgJIF_ADD9e8-q7SoxCg",
+    "title": "【 #歌で繋がるぱらすとコラボ歌枠リレー】楽しんでってね～！【パレプロ/常磐カナメ】",
+    "date": "2026-07-29T21:00:00.000+09:00",
+    "status": "upcoming",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/Jht12P-tBIw/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/vb_kLF_4hQ7UdEtOnEtL-_pI320ZMQ-lVQ9OV3xMvdTQitHXX1zk0b6GKQ977dawvfoB5Sb8OQ=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=Jht12P-tBIw"
   }
 ]

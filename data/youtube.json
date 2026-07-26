@@ -1,38 +1,5 @@
 [
   {
-    "name": "七海ロナ",
-    "youtubeid": "UCIaZylf5L9MsCMOJX3BdTEg",
-    "title": "今日もお疲れさ〜ん🎇 #shorts #vtuber #踊ってみた",
-    "date": "2026-07-23T19:00:32.000+09:00",
-    "status": "archive",
-    "type": "video",
-    "thumbnail": "https://i.ytimg.com/vi/a0u2TswxCak/mqdefault.jpg",
-    "channelIcon": "https://yt3.ggpht.com/86cM_4q1A56pIYgdKxh776hM0nropjiZIlmXbfroWHXQ-MjdGGsjLcL5hMDOFL-T2EJHmybT=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=a0u2TswxCak"
-  },
-  {
-    "name": "江波キョウカ",
-    "youtubeid": "UChpkyQ3O21OnkcMcgCoNHCg",
-    "title": "ミュージック・アワーの変な踊り踊ってみた / ポルノグラフィティ ໒꒱⋆ #江波キョウカ / パレプロ",
-    "date": "2026-07-23T19:06:01.000+09:00",
-    "status": "archive",
-    "type": "video",
-    "thumbnail": "https://i.ytimg.com/vi/5lqVGrNe3nM/mqdefault.jpg",
-    "channelIcon": "https://yt3.ggpht.com/pM4ZefnBFJ2qlBEqknYCFHdW6dLH29KptwG0OYSu1-mAVAIy5M1IjwpMwC24-A_v07nluGGrlQ=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=5lqVGrNe3nM"
-  },
-  {
-    "name": "雛菊のん",
-    "youtubeid": "UChccV6U0Tkx9de4YjXbEelw",
-    "title": "メロつき必至❣男性曲縛りうた雑談🎤💕#新人vtuber #歌雑談",
-    "date": "2026-07-23T19:37:39.000+09:00",
-    "status": "archive",
-    "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/rBTypkxqkiM/mqdefault.jpg",
-    "channelIcon": "https://yt3.ggpht.com/-7v40HQCqllHpJD69LHIo2n5lUt-pZ-bLtfrKAXhZk9OF06nj4Lno3gwBvO8d1jBSl5dCCxAxQ=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=rBTypkxqkiM"
-  },
-  {
     "name": "犬丸なでこ",
     "youtubeid": "UCdJmJxMfXrlnZabUkuss2EA",
     "title": "【絨毯を洗うゲーム】ピカピカにするわんね！【パレデミア学園/犬丸なでこ】",
@@ -1577,9 +1544,9 @@
     "youtubeid": "UCqcnlq8uJqnGml6hcIrMCZw",
     "title": "【Minecraft/雑談】風車の周りに小麦をうえて小麦畑をつくる🌾🌷初見さん/ROM勢大歓迎【花晴りら/ #パレデミア学園 】#れりライブ",
     "date": "2026-07-26T14:59:41.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/0EutnopUuxY/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/0EutnopUuxY/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/CH5JMWVQZ_RtloaXoj6W-yXjo9x8UxXSBG_vMyDnfk7M2QTOApVE1zOesu_aDrSAqvDbGrUyxs0=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=0EutnopUuxY"
   },
@@ -1617,15 +1584,59 @@
     "url": "https://www.youtube.com/watch?v=Ysm12urW8l4"
   },
   {
+    "name": "鬼多見アユム",
+    "youtubeid": "UCnrJK-sb3gSn3kRLkmpmzaw",
+    "title": "【VCR Rust】#5 姫が帰還されたぞ！！　【鬼多見アユム👹🍊】",
+    "date": "2026-07-26T18:47:51.000+09:00",
+    "status": "live",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/LGMj7GkJE7M/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/5l_IDFvbCkoc_xXy5i5YH24NcAgRR9bYZM9hu30Hm8may2x-7GiLIxkQ3DHQ4vI9uKwRUcbR6Q=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=LGMj7GkJE7M"
+  },
+  {
+    "name": "牡丹雪",
+    "youtubeid": "UCl-qrfygvCjyA_lMR5lJzig",
+    "title": "【シチュボ】飲み会から帰ってきた彼氏を迎える彼女裏ver.【麻雀ぶっ飛び罰ゲームvol.8】",
+    "date": "2026-07-26T19:00:09.000+09:00",
+    "status": "archive",
+    "type": "video",
+    "thumbnail": "https://i.ytimg.com/vi/q4_BYfczir8/mqdefault.jpg",
+    "channelIcon": "https://yt3.ggpht.com/K9NG8yMDYt1GGoQjhc9c-XEBm1PxGVkEhIQxos6ODhB_pk5HpUvETjUOe5LLkzzJ3biot_nWwQ=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=q4_BYfczir8"
+  },
+  {
+    "name": "七海ロナ",
+    "youtubeid": "UCIaZylf5L9MsCMOJX3BdTEg",
+    "title": "せーの！虹のファンファーレ🌈 #vtuber #shorts #踊ってみた",
+    "date": "2026-07-26T19:00:19.000+09:00",
+    "status": "archive",
+    "type": "video",
+    "thumbnail": "https://i.ytimg.com/vi/UPWzli-T0CM/mqdefault.jpg",
+    "channelIcon": "https://yt3.ggpht.com/86cM_4q1A56pIYgdKxh776hM0nropjiZIlmXbfroWHXQ-MjdGGsjLcL5hMDOFL-T2EJHmybT=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=UPWzli-T0CM"
+  },
+  {
     "name": "香鳴ハノン",
     "youtubeid": "UCay6Y3oEoiC6ZEE2G0UZu_A",
     "title": "【歌枠】配信の最後に個人的に重大な発表があります！！！うれしいお知らせだよ～！📢🎶【#パレプロ #香鳴ハノン】",
-    "date": "2026-07-26T19:00:00.000+09:00",
-    "status": "upcoming",
+    "date": "2026-07-26T19:00:47.000+09:00",
+    "status": "live",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/5E7xztWEwPM/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/qvbeb9E-gYc822fxxzi6Ug5QyjhqZAWbUskHANcwDWP5W8iTsK3LcQJnjS4CVBuFJ6fONsM9F7M=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=5E7xztWEwPM"
+  },
+  {
+    "name": "犬丸なでこ",
+    "youtubeid": "UCdJmJxMfXrlnZabUkuss2EA",
+    "title": "【＃６】めっちゃカメレオン【パレデミア学園/犬丸なでこ】",
+    "date": "2026-07-26T19:15:20.000+09:00",
+    "status": "live",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/klgITHioQso/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/HZPUrbSwGcllAbUtx6xggJ6lKfMfnAWDxWOCc01tpthiDipSqQP48TK5Jqz4GRzUdwKMUsxlsg=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=klgITHioQso"
   },
   {
     "name": "藤森ちとせ",

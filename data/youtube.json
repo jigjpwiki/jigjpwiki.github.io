@@ -1,27 +1,5 @@
 [
   {
-    "name": "堂下さとり",
-    "youtubeid": "UCBq6MSUL-Ermvnoj3PtX7Iw",
-    "title": "【雑談】謝罪　寝坊【堂下さとり/パレデミア学園】",
-    "date": "2026-07-24T13:32:23.000+09:00",
-    "status": "archive",
-    "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/vbCUyXqe5D8/mqdefault.jpg",
-    "channelIcon": "https://yt3.ggpht.com/eW_Hug0M6zFk9QSbAmOUWLMSfzBlCHmes-8yAksvfUNzyLgY6TSsE_eW8ncfE4bHYZXKoTWxmQ=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=vbCUyXqe5D8"
-  },
-  {
-    "name": "無月いお",
-    "youtubeid": "UC2X_mAVGw8e3N9JQZZDVBfQ",
-    "title": "【#低音女子】うえん。《#パレデミア学園》",
-    "date": "2026-07-24T16:26:39.000+09:00",
-    "status": "archive",
-    "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/Nud-1enTbnw/mqdefault.jpg",
-    "channelIcon": "https://yt3.ggpht.com/Z7PlAWhweuycNXNXoQ6etyDTkduySM-Kqy8kQW-AD19JuRdxT3HSdIxogPw3GPD5NHw_vZlf=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=Nud-1enTbnw"
-  },
-  {
     "name": "天辻ゆらぐ",
     "youtubeid": "UCeOFQCn_QZJMTszlRYRg3rQ",
     "title": "【雑談歌枠】低音×癒し×お姉さんのまったり夕方チル枠🌇初見歓迎✨️【天辻ゆらぐ/パレデミア学園】 #新人Vtuber #ゆらぐっどたいむ",
@@ -1381,9 +1359,20 @@
     "date": "2026-07-27T00:01:36.000+09:00",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/uWPZ6-pcbjQ/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/uWPZ6-pcbjQ/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/T655ATpSd2gkjZBrokvlkaUH0f5-fCpQdcJpwxmmNdy6fxCYffAlq2sMhPOtFk_CvVyOkEPY8Q=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=uWPZ6-pcbjQ"
+  },
+  {
+    "name": "灯野ぺけ。",
+    "youtubeid": "UCldoz5HLh6BMW29HGnRpC0Q",
+    "title": "🌃歌ったり喋ったり🌃初見さん/ROMさん大歓迎💥≪パレデミア学園 / 灯野ぺけ。≫ #vtuber #歌枠  #雑談",
+    "date": "2026-07-27T00:48:32.000+09:00",
+    "status": "archive",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/LF5HgHgCNq0/mqdefault.jpg",
+    "channelIcon": "https://yt3.ggpht.com/sYbvo_2nSCW162VEArIwu7v1B3bl159gmEnGgGei8I8drc4l7huPP7q6aWZ4AfXi5wTMACmGow=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=LF5HgHgCNq0"
   },
   {
     "name": "汐月永遠",
@@ -1489,7 +1478,7 @@
     "youtubeid": "UCBq6MSUL-Ermvnoj3PtX7Iw",
     "title": "【雑談】今週の個人的ニュース【堂下さとり/パレデミア学園】",
     "date": "2026-07-27T12:02:15.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/kBMqBvbyW6g/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/eW_Hug0M6zFk9QSbAmOUWLMSfzBlCHmes-8yAksvfUNzyLgY6TSsE_eW8ncfE4bHYZXKoTWxmQ=s240-c-k-c0x00ffffff-no-rj",
@@ -1500,7 +1489,7 @@
     "youtubeid": "UC2X_mAVGw8e3N9JQZZDVBfQ",
     "title": "【#低音女子】休憩時間をうちにください《#パレデミア学園》",
     "date": "2026-07-27T12:04:17.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/wvDAX34w83Q/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/Z7PlAWhweuycNXNXoQ6etyDTkduySM-Kqy8kQW-AD19JuRdxT3HSdIxogPw3GPD5NHw_vZlf=s240-c-k-c0x00ffffff-no-rj",
@@ -1521,8 +1510,8 @@
     "name": "花晴りら",
     "youtubeid": "UCqcnlq8uJqnGml6hcIrMCZw",
     "title": "【司書のお仕事：魔導図書館を片付けろ！ #2】縛りありでゆるゆるチルお片付け📚作業用/ROM歓迎📖【花晴りら/ #パレデミア学園 】#れりライブ",
-    "date": "2026-07-27T14:00:00.000+09:00",
-    "status": "upcoming",
+    "date": "2026-07-27T13:59:55.000+09:00",
+    "status": "live",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/n9XE9Lnom7k/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/CH5JMWVQZ_RtloaXoj6W-yXjo9x8UxXSBG_vMyDnfk7M2QTOApVE1zOesu_aDrSAqvDbGrUyxs0=s240-c-k-c0x00ffffff-no-rj",

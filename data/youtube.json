@@ -1,16 +1,5 @@
 [
   {
-    "name": "堂下さとり",
-    "youtubeid": "UCBq6MSUL-Ermvnoj3PtX7Iw",
-    "title": "【実写】バケツかぼちゃプリン作りたい🎃+かぼちゃ料理【手元配信】【パレデミア学園/堂下さとり】",
-    "date": "2026-07-25T05:22:17.000+09:00",
-    "status": "archive",
-    "type": "video",
-    "thumbnail": "https://i.ytimg.com/vi/4Hs0WqC_WLk/mqdefault.jpg",
-    "channelIcon": "https://yt3.ggpht.com/eW_Hug0M6zFk9QSbAmOUWLMSfzBlCHmes-8yAksvfUNzyLgY6TSsE_eW8ncfE4bHYZXKoTWxmQ=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=4Hs0WqC_WLk"
-  },
-  {
     "name": "花晴りら",
     "youtubeid": "UCqcnlq8uJqnGml6hcIrMCZw",
     "title": "【毎日朝活/雑談】250人におはよう言いたい土曜日の朝活🔆初見さん大歓迎🌷【花晴りら/ #パレデミア学園 】#れりライブ",
@@ -1408,6 +1397,17 @@
     "url": "https://www.youtube.com/watch?v=U6DnH1fREu8"
   },
   {
+    "name": "香鳴ハノン",
+    "youtubeid": "UCay6Y3oEoiC6ZEE2G0UZu_A",
+    "title": "【歌枠｜KARAOKE】2次元アイドル楽曲縛りで歌う🎤💗【#パレプロ #香鳴ハノン】",
+    "date": "2026-07-27T23:14:27.000+09:00",
+    "status": "archive",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/ypPdNCXh_Mk/mqdefault.jpg",
+    "channelIcon": "https://yt3.ggpht.com/qvbeb9E-gYc822fxxzi6Ug5QyjhqZAWbUskHANcwDWP5W8iTsK3LcQJnjS4CVBuFJ6fONsM9F7M=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=ypPdNCXh_Mk"
+  },
+  {
     "name": "暁月クララ",
     "youtubeid": "UCn4XvlTXjGSvDynpxpOYZPQ",
     "title": "✧︎*.〖 初見さん歓迎 〗Xで見つけてくれた方…指に…なりませんか…？⋆꙳〖#暁月クララ┊︎#パレプロ〗",
@@ -1461,6 +1461,17 @@
     "thumbnail": "https://i.ytimg.com/vi/6AlZfs0jbp8/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/CH5JMWVQZ_RtloaXoj6W-yXjo9x8UxXSBG_vMyDnfk7M2QTOApVE1zOesu_aDrSAqvDbGrUyxs0=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=6AlZfs0jbp8"
+  },
+  {
+    "name": "無月いお",
+    "youtubeid": "UC2X_mAVGw8e3N9JQZZDVBfQ",
+    "title": "【#低音女子】休憩時間をうちにください。《#パレデミア学園》",
+    "date": "2026-07-28T12:00:00.000+09:00",
+    "status": "upcoming",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/YDKMIrt21t0/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/Z7PlAWhweuycNXNXoQ6etyDTkduySM-Kqy8kQW-AD19JuRdxT3HSdIxogPw3GPD5NHw_vZlf=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=YDKMIrt21t0"
   },
   {
     "name": "Palette Project",

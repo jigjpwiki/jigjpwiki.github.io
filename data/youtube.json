@@ -1,27 +1,5 @@
 [
   {
-    "name": "堂下さとり",
-    "youtubeid": "UCBq6MSUL-Ermvnoj3PtX7Iw",
-    "title": "【ゲーム】寿司打【堂下さとり/パレデミア学園】",
-    "date": "2026-07-26T00:49:27.000+09:00",
-    "status": "archive",
-    "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/Bw3Hljqxg0Y/mqdefault_live.jpg",
-    "channelIcon": "https://yt3.ggpht.com/eW_Hug0M6zFk9QSbAmOUWLMSfzBlCHmes-8yAksvfUNzyLgY6TSsE_eW8ncfE4bHYZXKoTWxmQ=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=Bw3Hljqxg0Y"
-  },
-  {
-    "name": "犬丸なでこ",
-    "youtubeid": "UCdJmJxMfXrlnZabUkuss2EA",
-    "title": "【ホラー】MiSide : ミサイド【※ネタバレ注意】【パレデミア学園/犬丸なでこ】",
-    "date": "2026-07-26T01:39:29.000+09:00",
-    "status": "archive",
-    "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/Gx6L-BqHhFc/mqdefault.jpg",
-    "channelIcon": "https://yt3.ggpht.com/HZPUrbSwGcllAbUtx6xggJ6lKfMfnAWDxWOCc01tpthiDipSqQP48TK5Jqz4GRzUdwKMUsxlsg=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=Gx6L-BqHhFc"
-  },
-  {
     "name": "桜堂ねる",
     "youtubeid": "UC0H7dRRqhfOifbYQ2TURdAg",
     "title": "7月25日【桜堂ねる】#今日は何の日 #ねる道場 #vtuber #shorts",
@@ -1144,6 +1122,17 @@
     "url": "https://www.youtube.com/watch?v=_aRzkVwXKo8"
   },
   {
+    "name": "灯野ぺけ。",
+    "youtubeid": "UCldoz5HLh6BMW29HGnRpC0Q",
+    "title": "雰囲気は台無し…⁉︎ #切り抜き #shorts #vtuber",
+    "date": "2026-07-28T21:39:42.000+09:00",
+    "status": "archive",
+    "type": "video",
+    "thumbnail": "https://i.ytimg.com/vi/_m-Qc0IS9Sg/mqdefault.jpg",
+    "channelIcon": "https://yt3.ggpht.com/sYbvo_2nSCW162VEArIwu7v1B3bl159gmEnGgGei8I8drc4l7huPP7q6aWZ4AfXi5wTMACmGow=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=_m-Qc0IS9Sg"
+  },
+  {
     "name": "天堂ライラ",
     "youtubeid": "UCpdWNjSU-onhmcARqgHIfpg",
     "title": "【#龍が如く6】広島出身Vtuberが龍ごく6初見プレイ！【#01】",
@@ -1181,7 +1170,7 @@
     "youtubeid": "UC2X_mAVGw8e3N9JQZZDVBfQ",
     "title": "【#低音女子】1800名様ありがとう記念焚火《#パレデミア学園》",
     "date": "2026-07-29T00:03:45.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/4FV2R121nt0/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/Z7PlAWhweuycNXNXoQ6etyDTkduySM-Kqy8kQW-AD19JuRdxT3HSdIxogPw3GPD5NHw_vZlf=s240-c-k-c0x00ffffff-no-rj",
@@ -1197,6 +1186,17 @@
     "thumbnail": "https://i.ytimg.com/vi/n5G51klYDP8/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/iktv-39nC7NDASD1WeXms-DEuHuVqB5RhwTtdDe26w-BCvqf6yq3r_8zBiv2i2CfNXCK0uE8=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=n5G51klYDP8"
+  },
+  {
+    "name": "桜堂ねる",
+    "youtubeid": "UC0H7dRRqhfOifbYQ2TURdAg",
+    "title": "空手家Vtuberの #夜活",
+    "date": "2026-07-29T00:37:32.000+09:00",
+    "status": "live",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/zO2JDGSIOpo/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/hBz75E3AEST1Dzv5vOTHAqoJfayd30WIWWQ3ZFLlWMHDsyZ_QD6ZVVUtLTKSizalT3APPtdpFGI=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=zO2JDGSIOpo"
   },
   {
     "name": "桜庭羽奈",

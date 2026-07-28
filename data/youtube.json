@@ -1,16 +1,5 @@
 [
   {
-    "name": "桜堂ねる",
-    "youtubeid": "UC0H7dRRqhfOifbYQ2TURdAg",
-    "title": "7月25日【桜堂ねる】#今日は何の日 #ねる道場 #vtuber #shorts",
-    "date": "2026-07-26T02:51:16.000+09:00",
-    "status": "archive",
-    "type": "video",
-    "thumbnail": "https://i.ytimg.com/vi/HUamztFIjAg/mqdefault.jpg",
-    "channelIcon": "https://yt3.ggpht.com/hBz75E3AEST1Dzv5vOTHAqoJfayd30WIWWQ3ZFLlWMHDsyZ_QD6ZVVUtLTKSizalT3APPtdpFGI=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=HUamztFIjAg"
-  },
-  {
     "name": "犬丸なでこ",
     "youtubeid": "UCdJmJxMfXrlnZabUkuss2EA",
     "title": "＃２【絨毯を洗うゲーム】ピカピカにするわんね！【パレデミア学園/犬丸なでこ】",
@@ -930,7 +919,7 @@
     "date": "2026-07-28T12:00:35.000+09:00",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/IalR3xhQD3g/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/IalR3xhQD3g/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/JA8QqThoUnCNAgJASH3p_wPyWJBf2ILiUfpIvArr6592NkkrFntPQ4EgPsahnLpPCMP4mk93ig=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=IalR3xhQD3g"
   },
@@ -941,7 +930,7 @@
     "date": "2026-07-28T12:05:31.000+09:00",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/YDKMIrt21t0/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/YDKMIrt21t0/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/Z7PlAWhweuycNXNXoQ6etyDTkduySM-Kqy8kQW-AD19JuRdxT3HSdIxogPw3GPD5NHw_vZlf=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=YDKMIrt21t0"
   },
@@ -952,7 +941,7 @@
     "date": "2026-07-28T14:20:52.000+09:00",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/CwRM7Ctx1LU/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/CwRM7Ctx1LU/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/eW_Hug0M6zFk9QSbAmOUWLMSfzBlCHmes-8yAksvfUNzyLgY6TSsE_eW8ncfE4bHYZXKoTWxmQ=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=CwRM7Ctx1LU"
   },
@@ -1067,6 +1056,17 @@
     "url": "https://www.youtube.com/watch?v=4Z-_LWfLdwA"
   },
   {
+    "name": "黄金つむぎ",
+    "youtubeid": "UCCqDErkWNs8yWjKS7zHYZBA",
+    "title": "【歌みた作業】#5 イラスト解像度ミスで描き直し！？",
+    "date": "2026-07-28T20:21:13.000+09:00",
+    "status": "archive",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/MH-P7BgdegE/mqdefault.jpg",
+    "channelIcon": "https://yt3.ggpht.com/lTdispopc8pOEncTx9kn4np7w6VU3-cPBCzBs9ZGkfC2n57SHCgY9XyqR_Gs6cpBD7aqpYPGdHE=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=MH-P7BgdegE"
+  },
+  {
     "name": "桜庭羽奈",
     "youtubeid": "UCPgg_A08ksSYP-VivJGniRw",
     "title": "【高評価123を目指す！】ツッコミ力を上げていくぞ！ボケコメ待ってます！初見さん大歓迎！💛【新人VTuberの雑談／歌枠】🐻",
@@ -1122,6 +1122,17 @@
     "url": "https://www.youtube.com/watch?v=_aRzkVwXKo8"
   },
   {
+    "name": "変幻リメ",
+    "youtubeid": "UC5bCRde8xRrNS7s6GjCNCyQ",
+    "title": "【歌枠】盛り上がれ！ROCK歌枠！[#変幻リメ][#vsinger ]",
+    "date": "2026-07-28T21:15:54.000+09:00",
+    "status": "archive",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/EXDxS1zOVf4/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/4hssn4EXW2lORXRfiuYTjmYfnlZoQ2h72sdEompqX7GQwAKCsBx7eL0joCFSook1rfCKIcpykg=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=EXDxS1zOVf4"
+  },
+  {
     "name": "灯野ぺけ。",
     "youtubeid": "UCldoz5HLh6BMW29HGnRpC0Q",
     "title": "雰囲気は台無し…⁉︎ #切り抜き #shorts #vtuber",
@@ -1137,9 +1148,9 @@
     "youtubeid": "UCpdWNjSU-onhmcARqgHIfpg",
     "title": "【#龍が如く6】広島出身Vtuberが龍ごく6初見プレイ！【#01】",
     "date": "2026-07-28T21:57:06.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/wcBirTPyRLo/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/wcBirTPyRLo/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/JA8QqThoUnCNAgJASH3p_wPyWJBf2ILiUfpIvArr6592NkkrFntPQ4EgPsahnLpPCMP4mk93ig=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=wcBirTPyRLo"
   },
@@ -1219,6 +1230,17 @@
     "thumbnail": "https://i.ytimg.com/vi/GuT_Gcs0Cn0/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/CH5JMWVQZ_RtloaXoj6W-yXjo9x8UxXSBG_vMyDnfk7M2QTOApVE1zOesu_aDrSAqvDbGrUyxs0=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=GuT_Gcs0Cn0"
+  },
+  {
+    "name": "天堂ライラ",
+    "youtubeid": "UCpdWNjSU-onhmcARqgHIfpg",
+    "title": "【#朝活】今日もがんばろうのおはよう！7/29(水) #天堂観測【パレデミア学園/天堂ライラ】",
+    "date": "2026-07-29T07:00:00.000+09:00",
+    "status": "upcoming",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/14e1QxERgQg/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/JA8QqThoUnCNAgJASH3p_wPyWJBf2ILiUfpIvArr6592NkkrFntPQ4EgPsahnLpPCMP4mk93ig=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=14e1QxERgQg"
   },
   {
     "name": "夏渚まはろ",

@@ -952,7 +952,7 @@
     "date": "2026-07-30T12:04:36.000+09:00",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/SpSEi2W1618/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/SpSEi2W1618/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/eW_Hug0M6zFk9QSbAmOUWLMSfzBlCHmes-8yAksvfUNzyLgY6TSsE_eW8ncfE4bHYZXKoTWxmQ=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=SpSEi2W1618"
   },
@@ -963,7 +963,7 @@
     "date": "2026-07-30T12:25:20.000+09:00",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/YKzLvY415Qg/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/YKzLvY415Qg/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/Z7PlAWhweuycNXNXoQ6etyDTkduySM-Kqy8kQW-AD19JuRdxT3HSdIxogPw3GPD5NHw_vZlf=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=YKzLvY415Qg"
   },
@@ -1082,9 +1082,9 @@
     "youtubeid": "UChpkyQ3O21OnkcMcgCoNHCg",
     "title": "꒰ঌ 歌枠 ┆ パレプロ感謝祭2026 現地チケット完売までもう少し！ぷち耐久歌枠【 #江波キョウカ / パレプロ 】",
     "date": "2026-07-30T19:00:36.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/kNjVYQEiFx8/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/kNjVYQEiFx8/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/pM4ZefnBFJ2qlBEqknYCFHdW6dLH29KptwG0OYSu1-mAVAIy5M1IjwpMwC24-A_v07nluGGrlQ=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=kNjVYQEiFx8"
   },
@@ -1177,6 +1177,17 @@
     "url": "https://www.youtube.com/watch?v=wPxsogAdYGs"
   },
   {
+    "name": "雪紫誉",
+    "youtubeid": "UCdbYinKlpkB_uMt_wPmYcsw",
+    "title": "【ビンゴ#耐久】【#雑談】これ初見さんがいないと終われません……#初見さん大歓迎 ◎【#パレデミア学園/#ゆきむらじお】＃新人VTuber",
+    "date": "2026-07-30T21:15:25.000+09:00",
+    "status": "archive",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/HlhfsFyP0kk/mqdefault.jpg",
+    "channelIcon": "https://yt3.ggpht.com/4RbHGCHx02xQ2ze4g7UCTvuUPlQCpbk6bHIb5cdqO4JNzTe5qsq4sDTt6m-xVKMm476vJiMF7A=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=HlhfsFyP0kk"
+  },
+  {
     "name": "香桜あんにん",
     "youtubeid": "UC8zjZBqGnx_j55ZJzluhW8A",
     "title": "【初見さん大歓迎！】韓国のグルテンフリーもちもち野菜パン！ジョンナンミミョンガを食す！#あんにんたいむ #68 【パレデミア学園/香桜あんにん/＃新人VTuber】",
@@ -1199,6 +1210,17 @@
     "url": "https://www.youtube.com/watch?v=O2z4IalMWjw"
   },
   {
+    "name": "変幻リメ",
+    "youtubeid": "UC5bCRde8xRrNS7s6GjCNCyQ",
+    "title": "【歌枠】懐かしい曲もあるかも！？ボカロ＆ボカロP歌枠！[#変幻リメ][#vsinger ]",
+    "date": "2026-07-30T22:00:48.000+09:00",
+    "status": "archive",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/L6S1p1MtxVY/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/4hssn4EXW2lORXRfiuYTjmYfnlZoQ2h72sdEompqX7GQwAKCsBx7eL0joCFSook1rfCKIcpykg=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=L6S1p1MtxVY"
+  },
+  {
     "name": "露草なぎ",
     "youtubeid": "UC9nhm1B-XhPaUO8W8oc4thQ",
     "title": "【雑談】こんこん【露草なぎ/パレデミア学園】",
@@ -1208,6 +1230,28 @@
     "thumbnail": "https://i.ytimg.com/vi/svw698qpaKA/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/3KzF3YSQvjRpSMpFZEEsaGlIcETMW03ZmdKQy_TjJIm8t9vC4AjNwLLR5hNqXi0M9qnyszb0PCY=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=svw698qpaKA"
+  },
+  {
+    "name": "白尾すず",
+    "youtubeid": "UCAbXhpEu49k6t3HE3qqpFCg",
+    "title": "初(？)歌枠！！【広告入ったのでリベンジ！！】#vtuver",
+    "date": "2026-07-30T22:10:41.000+09:00",
+    "status": "archive",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/2R3Xt6TkL98/mqdefault.jpg",
+    "channelIcon": "https://yt3.ggpht.com/HZ3YCHg83nmisfw0Cui5jLKF3g9u9lERdI8ZLN9qTDrNZDkP39piI7bMaaAm7gNS5B3F-UHe9g=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=2R3Xt6TkL98"
+  },
+  {
+    "name": "藤宮コトハ",
+    "youtubeid": "UCGndc74kfWb_A-8hZBG534Q",
+    "title": "【 リズム天国 ミラクルスターズ 】ダンスはできるのにリズム感はなくて。？【パレプロ／藤宮コトハ】",
+    "date": "2026-07-30T22:31:14.000+09:00",
+    "status": "archive",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/qe83LDIo7GM/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/rthBXvqjNFcVwEp-AWpiZDXnNjBodSXlsDTa-sjW6uR6Ssv3wuOw2dMXDZLlYaf_c4YiKfItHXU=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=qe83LDIo7GM"
   },
   {
     "name": "天透あわ",
@@ -1225,9 +1269,9 @@
     "youtubeid": "UCUd4wJjvPQflbLnsk_YHleA",
     "title": "【作業】ただの作業【新巻るろな／パレデミア学園】",
     "date": "2026-07-30T23:02:15.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/1NE8mNmBPTM/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/1NE8mNmBPTM/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/-4sLuWCih-DlfhpwpDQEuB6eupCB6kTImkIPmKnh54vu5I0F49RkveNQGiqy0p8t0GDU6eiegGE=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=1NE8mNmBPTM"
   },
@@ -1269,9 +1313,9 @@
     "youtubeid": "UC2X_mAVGw8e3N9JQZZDVBfQ",
     "title": "【#低音女子】焚火を囲んで寝ようの会《#パレデミア学園》",
     "date": "2026-07-31T00:22:17.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/qRp0M5j9uL4/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/qRp0M5j9uL4/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/Z7PlAWhweuycNXNXoQ6etyDTkduySM-Kqy8kQW-AD19JuRdxT3HSdIxogPw3GPD5NHw_vZlf=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=qRp0M5j9uL4"
   },
@@ -1285,6 +1329,17 @@
     "thumbnail": "https://i.ytimg.com/vi/0x75QAuCGuM/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/sYbvo_2nSCW162VEArIwu7v1B3bl159gmEnGgGei8I8drc4l7huPP7q6aWZ4AfXi5wTMACmGow=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=0x75QAuCGuM"
+  },
+  {
+    "name": "汐月永遠",
+    "youtubeid": "UCCCm2ueQtW3mYUMB7Excq8g",
+    "title": "【#雑談 】とても素敵な７月でしたってことよ【汐月永遠/パレデミア学園】#永遠との時間",
+    "date": "2026-07-31T00:58:23.000+09:00",
+    "status": "live",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/VNCy8TXW5d4/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/68oh3mZjSYRleiuocaxnF9VcHdbaxLQzjCq4QgdPlHe3083eTdmNkfXZ6YV81vTUA51qoNXH_g=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=VNCy8TXW5d4"
   },
   {
     "name": "香桜あんにん",

@@ -985,7 +985,7 @@
     "date": "2026-07-30T15:02:36.000+09:00",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/g1Gku95uYT4/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/g1Gku95uYT4/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/Me8I_Op8OlIy8Vuj387_Hdi6gnrZ-qiY1yDDt1Q5yKMKA51ISagT76HE01gw8xbLcef0vpsPgoc=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=g1Gku95uYT4"
   },
@@ -1243,6 +1243,17 @@
     "url": "https://www.youtube.com/watch?v=2R3Xt6TkL98"
   },
   {
+    "name": "鈴木沙透",
+    "youtubeid": "UCj5nRzNFXZn9GRhITRkKElA",
+    "title": "【VALORANT】今日はだめでした【鈴木沙透/パレデミア学園】",
+    "date": "2026-07-30T22:28:11.000+09:00",
+    "status": "archive",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/UrfiqvsoMRA/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/h4kuTtFCGhkDV4nmk6qjQt8auhkqLEqWwB9Il3NZR6op3ph-a0YElRfLcXkZVPp6xqvGmZHy3w=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=UrfiqvsoMRA"
+  },
+  {
     "name": "藤宮コトハ",
     "youtubeid": "UCGndc74kfWb_A-8hZBG534Q",
     "title": "【 リズム天国 ミラクルスターズ 】ダンスはできるのにリズム感はなくて。？【パレプロ／藤宮コトハ】",
@@ -1335,9 +1346,9 @@
     "youtubeid": "UCCCm2ueQtW3mYUMB7Excq8g",
     "title": "【#雑談 】とても素敵な７月でしたってことよ【汐月永遠/パレデミア学園】#永遠との時間",
     "date": "2026-07-31T00:58:23.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/VNCy8TXW5d4/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/VNCy8TXW5d4/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/68oh3mZjSYRleiuocaxnF9VcHdbaxLQzjCq4QgdPlHe3083eTdmNkfXZ6YV81vTUA51qoNXH_g=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=VNCy8TXW5d4"
   },
@@ -1346,11 +1357,22 @@
     "youtubeid": "UC8zjZBqGnx_j55ZJzluhW8A",
     "title": "【ささやき作業ASMR】眠れない人は一緒にひそひそお話しよ#あんにんたいむ #69 【パレデミア学園/香桜あんにん/＃新人VTuber】",
     "date": "2026-07-31T01:21:22.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/x-FOUEhNX2o/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/x-FOUEhNX2o/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/LL8h8c1rjBm_CimsOmJqxMtfMpzaEZCJ56jM4iOTOaEaDLQ7f6fYwkAWggiJNEwh-aeggh3L-w=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=x-FOUEhNX2o"
+  },
+  {
+    "name": "鈴木沙透",
+    "youtubeid": "UCj5nRzNFXZn9GRhITRkKElA",
+    "title": "【歌ってみた】歌枠で『ブリキノダンス』#鈴木沙透 #vtuber",
+    "date": "2026-07-31T01:45:02.000+09:00",
+    "status": "archive",
+    "type": "video",
+    "thumbnail": "https://i.ytimg.com/vi/OO_EFLePEMM/mqdefault.jpg",
+    "channelIcon": "https://yt3.ggpht.com/h4kuTtFCGhkDV4nmk6qjQt8auhkqLEqWwB9Il3NZR6op3ph-a0YElRfLcXkZVPp6xqvGmZHy3w=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=OO_EFLePEMM"
   },
   {
     "name": "花晴りら",

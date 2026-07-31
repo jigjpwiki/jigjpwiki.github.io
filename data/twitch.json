@@ -1,14 +1,5 @@
 [
   {
-    "name": "銘兎目あう",
-    "twitchid": "Metome_Au",
-    "title": "【スト６】1706MR～Mケン🥋初めてのアルマスいけるかっ🔥👊🐰",
-    "date": "2026-07-28T19:59:45.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/6eea4ef4-a33b-4c66-9378-ad3aa84b1187-profile_image-300x300.png",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/94df2e2eaab66e499c10_metome_au_316238973554_1785236380//thumb/thumb0-320x180.jpg"
-  },
-  {
     "name": "なかもとおまち",
     "twitchid": "41futon",
     "title": "スキマ時間に佳境ランクマ",
@@ -84,9 +75,18 @@
     "name": "なかもとおまち",
     "twitchid": "41futon",
     "title": "ちくしょう…！！！ちくしょおおおおーーーっ！！！！",
-    "date": "2026-07-31T18:08:23.000+09:00",
-    "status": "live",
+    "date": "2026-07-31T18:08:28.000+09:00",
+    "status": "archive",
     "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/1405880b-e945-4720-98c9-6a08c6400cae-profile_image-300x300.png",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_41futon-320x180.jpg"
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/8d77600ae22398a84144_41futon_316307533555_1785488903//thumb/thumb0-320x180.jpg"
+  },
+  {
+    "name": "銘兎目あう",
+    "twitchid": "Metome_Au",
+    "title": "【スト６】EWC2026 Day3ミラー配信✊🐰※許諾済",
+    "date": "2026-07-31T19:53:10.000+09:00",
+    "status": "live",
+    "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/6eea4ef4-a33b-4c66-9378-ad3aa84b1187-profile_image-300x300.png",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_Metome_Au-320x180.jpg"
   }
 ]

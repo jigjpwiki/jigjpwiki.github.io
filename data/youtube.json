@@ -1,16 +1,5 @@
 [
   {
-    "name": "堂下さとり",
-    "youtubeid": "UCBq6MSUL-Ermvnoj3PtX7Iw",
-    "title": "【雑談】はい【堂下さとり/パレデミア学園】",
-    "date": "2026-07-28T14:20:52.000+09:00",
-    "status": "archive",
-    "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/CwRM7Ctx1LU/mqdefault.jpg",
-    "channelIcon": "https://yt3.ggpht.com/eW_Hug0M6zFk9QSbAmOUWLMSfzBlCHmes-8yAksvfUNzyLgY6TSsE_eW8ncfE4bHYZXKoTWxmQ=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=CwRM7Ctx1LU"
-  },
-  {
     "name": "銘兎目あう",
     "youtubeid": "UCpr-9ssUUgSb0EpDA8bRuTA",
     "title": "【スト６雑談】時々言葉が出なくなる不思議なVTuber🐰【銘兎目あう】#shorts #vtuber #おすすめ #スト6 #ストリートファイター6  #sf6 #StreetFighter6",
@@ -1357,9 +1346,9 @@
     "youtubeid": "UCdJmJxMfXrlnZabUkuss2EA",
     "title": "【 #歌枠 】寝起きのお歌わんね【犬丸なでこ/パレデミア学園】",
     "date": "2026-07-31T10:56:27.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/-zTRVZYBSqM/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/-zTRVZYBSqM/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/HZPUrbSwGcllAbUtx6xggJ6lKfMfnAWDxWOCc01tpthiDipSqQP48TK5Jqz4GRzUdwKMUsxlsg=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=-zTRVZYBSqM"
   },
@@ -1390,11 +1379,33 @@
     "youtubeid": "UCrB-SfrqB5ChY8aAT99grXw",
     "title": "【R.E.P.O.】Lv.22～　最新記録更新中！どこまでいけるんだ【パレデミア学園/緋雨柚】",
     "date": "2026-07-31T13:07:29.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/LaDLFy8bG4o/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/dPJHngNTeEfD_K0Mus141-We4xIuAhttm2pgEBl3VdGXqWvxGfy5mJfDMDbBmwI6UGc17dXb-g=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=LaDLFy8bG4o"
+  },
+  {
+    "name": "ニコ・ダークウェル",
+    "youtubeid": "UCwSq7LbTyR1lXLJphsHKy2A",
+    "title": "【ご報告】リスナーさんとつながりましたｗｗｗ #VTuber #新人VTuber #MEMECOFFEE",
+    "date": "2026-07-31T13:54:10.000+09:00",
+    "status": "archive",
+    "type": "video",
+    "thumbnail": "https://i.ytimg.com/vi/v7vwaIlbLOs/mqdefault.jpg",
+    "channelIcon": "https://yt3.ggpht.com/FZAApPZQQXHgHOVY8RCKI0eGvcyJ19mHBpWOT-a_pR_rY6LC8Z2Z9K0gpd4zuwNnYxA-XkKF=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=v7vwaIlbLOs"
+  },
+  {
+    "name": "ニコ・ダークウェル",
+    "youtubeid": "UCwSq7LbTyR1lXLJphsHKy2A",
+    "title": "コーラ大好きデブの日常ｗｗｗ #VTuber #新人VTuber #MEMECOFFEE",
+    "date": "2026-07-31T13:59:13.000+09:00",
+    "status": "archive",
+    "type": "video",
+    "thumbnail": "https://i.ytimg.com/vi/Y3_PsNnJbR4/mqdefault.jpg",
+    "channelIcon": "https://yt3.ggpht.com/FZAApPZQQXHgHOVY8RCKI0eGvcyJ19mHBpWOT-a_pR_rY6LC8Z2Z9K0gpd4zuwNnYxA-XkKF=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=Y3_PsNnJbR4"
   },
   {
     "name": "新巻るろな",

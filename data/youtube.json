@@ -1051,7 +1051,7 @@
     "date": "2026-07-31T12:14:33.000+09:00",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/oQEnuERpw2M/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/oQEnuERpw2M/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/eW_Hug0M6zFk9QSbAmOUWLMSfzBlCHmes-8yAksvfUNzyLgY6TSsE_eW8ncfE4bHYZXKoTWxmQ=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=oQEnuERpw2M"
   },
@@ -1401,9 +1401,9 @@
     "youtubeid": "UCWi_ztz8Xuz4XfzhoG6ZfyA",
     "title": "【♯12アイコン描き】イベントのお礼！🎶7月最終日のまったりアイコン描き＆雑談🪄✨【＃パレデミア学園】＃せなりるライブ #vtuber",
     "date": "2026-07-31T22:44:56.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/lhrczo0Cz-o/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/lhrczo0Cz-o/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/BaxFKUrCc4gGKc1wwAHt4ebjk8C69NdTl3fMz9LoR5SUm_Tpvv2yixsbJhp8qsld6S0tdgup=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=lhrczo0Cz-o"
   },
@@ -1423,7 +1423,7 @@
     "youtubeid": "UC9nhm1B-XhPaUO8W8oc4thQ",
     "title": "【アクアリウムは踊らない】ホラー苦手でも水族館には行きたい【露草なぎ/パレデミア学園】",
     "date": "2026-07-31T23:01:26.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/bdz4yVZKXhI/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/3KzF3YSQvjRpSMpFZEEsaGlIcETMW03ZmdKQy_TjJIm8t9vC4AjNwLLR5hNqXi0M9qnyszb0PCY=s240-c-k-c0x00ffffff-no-rj",
@@ -1472,5 +1472,16 @@
     "thumbnail": "https://i.ytimg.com/vi/NZyPAXNIur4/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/Gwr7KJNWnI6CEgmIfEeMZahF5pbGNKlRhQXBEkuMWE0D66--IJE77z-5Zu2i5LFBc_CA6ZkqY4Y=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=NZyPAXNIur4"
+  },
+  {
+    "name": "藤森ちとせ",
+    "youtubeid": "UCAhdxmsdngH4noySdpVAVWQ",
+    "title": "【メン限参加型ワールド配信】夏祭りしたいですね～😉✨どんな感じに建築しましょうね？⛏【#新人vtuber 】#ちとせらいぶ",
+    "date": "2026-08-02T13:00:00.000+09:00",
+    "status": "upcoming",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/TKEGzfEX3f4/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/traR_yWe-AOGyM2wjo8h2FJO9JWBcbjfrL13X-umeD6BtNPopSZ2Q3YmdJq_5K9gWgHf_j64iQ=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=TKEGzfEX3f4"
   }
 ]

@@ -1,16 +1,5 @@
 [
   {
-    "name": "鈴木沙透",
-    "youtubeid": "UCj5nRzNFXZn9GRhITRkKElA",
-    "title": "【歌ってみた】歌枠で『ブリキノダンス』#鈴木沙透 #vtuber",
-    "date": "2026-07-31T01:45:02.000+09:00",
-    "status": "archive",
-    "type": "video",
-    "thumbnail": "https://i.ytimg.com/vi/OO_EFLePEMM/mqdefault.jpg",
-    "channelIcon": "https://yt3.ggpht.com/h4kuTtFCGhkDV4nmk6qjQt8auhkqLEqWwB9Il3NZR6op3ph-a0YElRfLcXkZVPp6xqvGmZHy3w=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=OO_EFLePEMM"
-  },
-  {
     "name": "シグマ・イングラム",
     "youtubeid": "UCnQFkIgH-2IURW--34owWIw",
     "title": "【#子ども向け】しぐまといっしょ🧸🎶",
@@ -924,6 +913,17 @@
     "url": "https://www.youtube.com/watch?v=FC1sBrzciJA"
   },
   {
+    "name": "Palette Project",
+    "youtubeid": "UC_cCW1xmXwRFp1tX-RD2X1Q",
+    "title": "【冒頭無料配信】🎨ファンミーティングA ✨【 #パレプロ感謝祭2026 】",
+    "date": "2026-08-02T12:57:43.000+09:00",
+    "status": "archive",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/N0wpbX2iLGc/mqdefault.jpg",
+    "channelIcon": "https://yt3.ggpht.com/ytc/AIdro_nuv43BXc-JNRM-omFed0brcXGTD8qvA8313ZeQa8PfviA=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=N0wpbX2iLGc"
+  },
+  {
     "name": "藤森ちとせ",
     "youtubeid": "UCAhdxmsdngH4noySdpVAVWQ",
     "title": "【メン限参加型ワールド配信】夏祭りしたいですね～😉✨どんな感じに建築しましょうね？⛏【#新人vtuber 】#ちとせらいぶ",
@@ -1214,9 +1214,9 @@
     "youtubeid": "UC9zEgqk0yVvX3nqRLCJXGGg",
     "title": "雑談＠パレデミア学園さくさくさく",
     "date": "2026-08-02T23:42:10.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/gRNhDngGme0/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/gRNhDngGme0/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/XPoBTJELcobaMFIaRg_qVPbA2B8qzIloNvNNOoG_OkksZJ9JkGiZvRh8Rl3YbU4iV4sxqhZ8=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=gRNhDngGme0"
   },
@@ -1225,7 +1225,7 @@
     "youtubeid": "UCv2IYO-4waCpHvn50SWWY2A",
     "title": "【#雑談配信  】KFC食べた日の雑談。【七音うら】",
     "date": "2026-08-03T00:04:25.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/O6-mFNxvmEY/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/T655ATpSd2gkjZBrokvlkaUH0f5-fCpQdcJpwxmmNdy6fxCYffAlq2sMhPOtFk_CvVyOkEPY8Q=s240-c-k-c0x00ffffff-no-rj",
@@ -1236,11 +1236,22 @@
     "youtubeid": "UC2X_mAVGw8e3N9JQZZDVBfQ",
     "title": "【#低音女子】うちの３時間が消えた話《#パレデミア学園》",
     "date": "2026-08-03T00:05:40.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/mGbICZfj06A/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/mGbICZfj06A/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/Z7PlAWhweuycNXNXoQ6etyDTkduySM-Kqy8kQW-AD19JuRdxT3HSdIxogPw3GPD5NHw_vZlf=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=mGbICZfj06A"
+  },
+  {
+    "name": "雛菊のん",
+    "youtubeid": "UChccV6U0Tkx9de4YjXbEelw",
+    "title": "チルってむずい💕#新人vtuber #睡眠導入",
+    "date": "2026-08-03T01:32:59.000+09:00",
+    "status": "live",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/qefZ4_YTYbQ/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/-7v40HQCqllHpJD69LHIo2n5lUt-pZ-bLtfrKAXhZk9OF06nj4Lno3gwBvO8d1jBSl5dCCxAxQ=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=qefZ4_YTYbQ"
   },
   {
     "name": "桜庭羽奈",
@@ -1285,5 +1296,27 @@
     "thumbnail": "https://i.ytimg.com/vi/JTY7VayBD5w/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/HZPUrbSwGcllAbUtx6xggJ6lKfMfnAWDxWOCc01tpthiDipSqQP48TK5Jqz4GRzUdwKMUsxlsg=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=JTY7VayBD5w"
+  },
+  {
+    "name": "無月いお",
+    "youtubeid": "UC2X_mAVGw8e3N9JQZZDVBfQ",
+    "title": "【#低音女子】休憩時間をうちにください。《#パレデミア学園》",
+    "date": "2026-08-03T12:00:00.000+09:00",
+    "status": "upcoming",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/OZP84usU_D8/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/Z7PlAWhweuycNXNXoQ6etyDTkduySM-Kqy8kQW-AD19JuRdxT3HSdIxogPw3GPD5NHw_vZlf=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=OZP84usU_D8"
+  },
+  {
+    "name": "藤森ちとせ",
+    "youtubeid": "UCAhdxmsdngH4noySdpVAVWQ",
+    "title": "【露天掘り雑談】トライアルチャンバー掘りぬいちゃう配信16チャンク目⛏✨作業用にも😉ROM歓迎🎉【#Minecraft】【#新人vtuber 】#ちとせらいぶ #パレデミア学園",
+    "date": "2026-08-03T13:00:00.000+09:00",
+    "status": "upcoming",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/ZkIULRQAZbk/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/traR_yWe-AOGyM2wjo8h2FJO9JWBcbjfrL13X-umeD6BtNPopSZ2Q3YmdJq_5K9gWgHf_j64iQ=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=ZkIULRQAZbk"
   }
 ]

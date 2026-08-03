@@ -1,16 +1,5 @@
 [
   {
-    "name": "鈴木沙透",
-    "youtubeid": "UCj5nRzNFXZn9GRhITRkKElA",
-    "title": "【#karaoke 】寝落ちにどうですか？歌枠【鈴木沙透/パレデミア学園】",
-    "date": "2026-08-01T01:48:16.000+09:00",
-    "status": "archive",
-    "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/Mc9JROLk-Fk/mqdefault.jpg",
-    "channelIcon": "https://yt3.ggpht.com/h4kuTtFCGhkDV4nmk6qjQt8auhkqLEqWwB9Il3NZR6op3ph-a0YElRfLcXkZVPp6xqvGmZHy3w=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=Mc9JROLk-Fk"
-  },
-  {
     "name": "堂下さとり",
     "youtubeid": "UCBq6MSUL-Ermvnoj3PtX7Iw",
     "title": "ハロウィン🎃事務所イベラスラン【パレデミア学園/堂下さとり】",
@@ -875,7 +864,7 @@
     "date": "2026-08-03T12:02:17.000+09:00",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/OZP84usU_D8/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/OZP84usU_D8/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/Z7PlAWhweuycNXNXoQ6etyDTkduySM-Kqy8kQW-AD19JuRdxT3HSdIxogPw3GPD5NHw_vZlf=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=OZP84usU_D8"
   },
@@ -886,7 +875,7 @@
     "date": "2026-08-03T12:07:16.000+09:00",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/vj1Ot-cLdzQ/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/vj1Ot-cLdzQ/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/eW_Hug0M6zFk9QSbAmOUWLMSfzBlCHmes-8yAksvfUNzyLgY6TSsE_eW8ncfE4bHYZXKoTWxmQ=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=vj1Ot-cLdzQ"
   },
@@ -897,7 +886,7 @@
     "date": "2026-08-03T12:32:13.000+09:00",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/ORnlkXud6CE/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/ORnlkXud6CE/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/dPJHngNTeEfD_K0Mus141-We4xIuAhttm2pgEBl3VdGXqWvxGfy5mJfDMDbBmwI6UGc17dXb-g=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=ORnlkXud6CE"
   },
@@ -1062,7 +1051,7 @@
     "date": "2026-08-03T21:21:24.000+09:00",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/qxbYqKGe7YE/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/qxbYqKGe7YE/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/HZPUrbSwGcllAbUtx6xggJ6lKfMfnAWDxWOCc01tpthiDipSqQP48TK5Jqz4GRzUdwKMUsxlsg=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=qxbYqKGe7YE"
   },
@@ -1122,13 +1111,24 @@
     "url": "https://www.youtube.com/watch?v=98owLEmir28"
   },
   {
+    "name": "真昼ねる",
+    "youtubeid": "UCI-8WyYqMymGPw9vg55HXDQ",
+    "title": "〚 スト6 〛ヤスミンかなーやっぱりww自分は思わないんだけど周りにヤスミン顔ってよく言われるwww ＃スト6【ぷろのゔぁ￤VTuber￤真昼ねる】",
+    "date": "2026-08-03T22:24:24.000+09:00",
+    "status": "live",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/PiSYUWqzI9Q/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/Cu6AMAZAEC_DTANKoaloA_4iLCuEUQ8BiAwyHGuOUG9GtoIw6s7mXCv1-49LV1IgODYZfGowzQ=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=PiSYUWqzI9Q"
+  },
+  {
     "name": "天透あわ",
     "youtubeid": "UCXI0W_Os-BCIngpCb1YnOow",
     "title": "【 #ほの暮しの庭 】平和な村には、秘密がある。４日目【新人Vtuber/ゲーム実況】",
     "date": "2026-08-03T22:30:20.000+09:00",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/W3fL8sj-iN4/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/W3fL8sj-iN4/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/Me8I_Op8OlIy8Vuj387_Hdi6gnrZ-qiY1yDDt1Q5yKMKA51ISagT76HE01gw8xbLcef0vpsPgoc=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=W3fL8sj-iN4"
   },
@@ -1148,9 +1148,9 @@
     "youtubeid": "UC9zEgqk0yVvX3nqRLCJXGGg",
     "title": "歌枠＠パレデミア学園さくさくさく",
     "date": "2026-08-03T23:00:43.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/x2SiUO4jT8c/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/x2SiUO4jT8c/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/XPoBTJELcobaMFIaRg_qVPbA2B8qzIloNvNNOoG_OkksZJ9JkGiZvRh8Rl3YbU4iV4sxqhZ8=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=x2SiUO4jT8c"
   },
@@ -1159,7 +1159,7 @@
     "youtubeid": "UCIaZylf5L9MsCMOJX3BdTEg",
     "title": "パレプロ感謝祭2026たのしかったねえ【七海ロナ／パレプロ】",
     "date": "2026-08-03T23:02:31.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/WETIIRUpCPc/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/86cM_4q1A56pIYgdKxh776hM0nropjiZIlmXbfroWHXQ-MjdGGsjLcL5hMDOFL-T2EJHmybT=s240-c-k-c0x00ffffff-no-rj",
@@ -1170,7 +1170,7 @@
     "youtubeid": "UChccV6U0Tkx9de4YjXbEelw",
     "title": "謝罪会見#新人vtuber #雑談",
     "date": "2026-08-03T23:06:52.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/k89Eliq9NTA/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/-7v40HQCqllHpJD69LHIo2n5lUt-pZ-bLtfrKAXhZk9OF06nj4Lno3gwBvO8d1jBSl5dCCxAxQ=s240-c-k-c0x00ffffff-no-rj",
@@ -1192,7 +1192,7 @@
     "youtubeid": "UCv2IYO-4waCpHvn50SWWY2A",
     "title": "【#雑談配信  】背骨と大地を一体化した日の雑談。【七音うら】",
     "date": "2026-08-04T00:04:06.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/GvXtYoLu6Fw/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/T655ATpSd2gkjZBrokvlkaUH0f5-fCpQdcJpwxmmNdy6fxCYffAlq2sMhPOtFk_CvVyOkEPY8Q=s240-c-k-c0x00ffffff-no-rj",
@@ -1203,11 +1203,22 @@
     "youtubeid": "UC2X_mAVGw8e3N9JQZZDVBfQ",
     "title": "【#低音女子】ここ涼しいよぉ！！かもん！！《#パレデミア学園》",
     "date": "2026-08-04T00:04:28.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/uvhe8aBe8uo/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/Z7PlAWhweuycNXNXoQ6etyDTkduySM-Kqy8kQW-AD19JuRdxT3HSdIxogPw3GPD5NHw_vZlf=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=uvhe8aBe8uo"
+  },
+  {
+    "name": "香鳴ハノン",
+    "youtubeid": "UCay6Y3oEoiC6ZEE2G0UZu_A",
+    "title": "【本人が踊ってみた】新曲「ギミラビ」香鳴ハノン担当パート🩵 #香鳴ハノン #パレプロ",
+    "date": "2026-08-04T01:39:05.000+09:00",
+    "status": "archive",
+    "type": "video",
+    "thumbnail": "https://i.ytimg.com/vi/lUVhvTwljJw/mqdefault.jpg",
+    "channelIcon": "https://yt3.ggpht.com/qvbeb9E-gYc822fxxzi6Ug5QyjhqZAWbUskHANcwDWP5W8iTsK3LcQJnjS4CVBuFJ6fONsM9F7M=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=lUVhvTwljJw"
   },
   {
     "name": "桜庭羽奈",

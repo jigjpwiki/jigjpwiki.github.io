@@ -1489,9 +1489,9 @@
     "youtubeid": "UCJLYktDEOak1rSOGRVRKlLQ",
     "title": "【#雑談/初見◎】ゆるっと650人目指しながら深夜雑談だしゆるっと。【パレデミア学園/夕凪万夜】",
     "date": "2026-08-05T00:44:51.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/nhdVA9WQd0Q/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/nhdVA9WQd0Q/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/zOlQ66VHDdW9B1w3cRbHlo-3cfkYBLVHzYpXS_xLbOv9bHe72uv-bD246R7gCEfD_7wGBc-6vQ=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=nhdVA9WQd0Q"
   },
@@ -1538,6 +1538,17 @@
     "thumbnail": "https://i.ytimg.com/vi/YkiWs5Zdw_g/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/CH5JMWVQZ_RtloaXoj6W-yXjo9x8UxXSBG_vMyDnfk7M2QTOApVE1zOesu_aDrSAqvDbGrUyxs0=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=YkiWs5Zdw_g"
+  },
+  {
+    "name": "夕凪万夜",
+    "youtubeid": "UCJLYktDEOak1rSOGRVRKlLQ",
+    "title": "【朝活/初見さん◎】初見さん20人と会いたい朝活【パレデミア学園/夕凪万夜】",
+    "date": "2026-08-05T07:00:00.000+09:00",
+    "status": "upcoming",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/S7RmySlpFGs/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/zOlQ66VHDdW9B1w3cRbHlo-3cfkYBLVHzYpXS_xLbOv9bHe72uv-bD246R7gCEfD_7wGBc-6vQ=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=S7RmySlpFGs"
   },
   {
     "name": "天堂ライラ",

@@ -1,16 +1,5 @@
 [
   {
-    "name": "雛菊のん",
-    "youtubeid": "UChccV6U0Tkx9de4YjXbEelw",
-    "title": "チルってむずい💕#新人vtuber #睡眠導入",
-    "date": "2026-08-03T01:32:59.000+09:00",
-    "status": "archive",
-    "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/qefZ4_YTYbQ/mqdefault.jpg",
-    "channelIcon": "https://yt3.ggpht.com/-7v40HQCqllHpJD69LHIo2n5lUt-pZ-bLtfrKAXhZk9OF06nj4Lno3gwBvO8d1jBSl5dCCxAxQ=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=qefZ4_YTYbQ"
-  },
-  {
     "name": "桜庭羽奈",
     "youtubeid": "UCPgg_A08ksSYP-VivJGniRw",
     "title": "【おはよう100人待ってます！】月曜の朝からおはよう待ってます！！初見さん大歓迎！💛【新人VTuberの雑談／歌枠】🐻",
@@ -1183,7 +1172,7 @@
     "date": "2026-08-05T12:03:17.000+09:00",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/4x_TlnBM-Rg/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/4x_TlnBM-Rg/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/Z7PlAWhweuycNXNXoQ6etyDTkduySM-Kqy8kQW-AD19JuRdxT3HSdIxogPw3GPD5NHw_vZlf=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=4x_TlnBM-Rg"
   },
@@ -1205,7 +1194,7 @@
     "date": "2026-08-05T12:58:12.000+09:00",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/wAsUNC3Q-x0/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/wAsUNC3Q-x0/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/traR_yWe-AOGyM2wjo8h2FJO9JWBcbjfrL13X-umeD6BtNPopSZ2Q3YmdJq_5K9gWgHf_j64iQ=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=wAsUNC3Q-x0"
   },
@@ -1260,7 +1249,7 @@
     "date": "2026-08-05T18:13:14.000+09:00",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/0R11U1PdhSU/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/0R11U1PdhSU/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/5l_IDFvbCkoc_xXy5i5YH24NcAgRR9bYZM9hu30Hm8may2x-7GiLIxkQ3DHQ4vI9uKwRUcbR6Q=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=0R11U1PdhSU"
   },
@@ -1335,7 +1324,7 @@
     "youtubeid": "UCdbYinKlpkB_uMt_wPmYcsw",
     "title": "【#雑談】ここはみんなの雑談枠だ#初見さん大歓迎 ◎【#パレデミア学園/#ゆきむらじお】＃新人VTuber",
     "date": "2026-08-05T20:59:18.000+09:00",
-    "status": "archive",
+    "status": "live",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/Vwte4N92CJg/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/4RbHGCHx02xQ2ze4g7UCTvuUPlQCpbk6bHIb5cdqO4JNzTe5qsq4sDTt6m-xVKMm476vJiMF7A=s240-c-k-c0x00ffffff-no-rj",
@@ -1456,9 +1445,9 @@
     "youtubeid": "UC2X_mAVGw8e3N9JQZZDVBfQ",
     "title": "【#低音女子】2000名様耐久だぁあ《#パレデミア学園》",
     "date": "2026-08-06T00:01:00.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/Tab9aBV0OMo/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/Tab9aBV0OMo/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/Z7PlAWhweuycNXNXoQ6etyDTkduySM-Kqy8kQW-AD19JuRdxT3HSdIxogPw3GPD5NHw_vZlf=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=Tab9aBV0OMo"
   },
@@ -1466,12 +1455,23 @@
     "name": "天堂ライラ",
     "youtubeid": "UCpdWNjSU-onhmcARqgHIfpg",
     "title": "【幽限会社わらし不動産】初見プレイ！不思議な内見をしてみない？2軒目 #天堂観測【パレデミア学園/天堂ライラ】",
-    "date": "2026-08-06T01:30:00.000+09:00",
-    "status": "upcoming",
+    "date": "2026-08-06T01:28:15.000+09:00",
+    "status": "live",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/1Vx2-7EvnpM/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/JA8QqThoUnCNAgJASH3p_wPyWJBf2ILiUfpIvArr6592NkkrFntPQ4EgPsahnLpPCMP4mk93ig=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=1Vx2-7EvnpM"
+  },
+  {
+    "name": "雛菊のん",
+    "youtubeid": "UChccV6U0Tkx9de4YjXbEelw",
+    "title": "ひそひそ配信💤おやすみを届ける💕#新人vtuber #雑談 #睡眠導入",
+    "date": "2026-08-06T01:31:07.000+09:00",
+    "status": "live",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/9zo_-qyYlFE/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/-7v40HQCqllHpJD69LHIo2n5lUt-pZ-bLtfrKAXhZk9OF06nj4Lno3gwBvO8d1jBSl5dCCxAxQ=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=9zo_-qyYlFE"
   },
   {
     "name": "花晴りら",

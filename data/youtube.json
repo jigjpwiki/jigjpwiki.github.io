@@ -1,16 +1,5 @@
 [
   {
-    "name": "桜庭羽奈",
-    "youtubeid": "UCPgg_A08ksSYP-VivJGniRw",
-    "title": "何をしている時がみんな幸せ？ #推しをお探しですか #切り抜き #vtuber  #新人vtuberと繋がりたい #shorts",
-    "date": "2026-08-03T18:00:14.000+09:00",
-    "status": "archive",
-    "type": "video",
-    "thumbnail": "https://i.ytimg.com/vi/zJhJRfRlebE/mqdefault.jpg",
-    "channelIcon": "https://yt3.ggpht.com/04zALH6pYL7mkWILHajvBzfzg4hrwRCLBONme3K1PjuEeYJIRC6RYxPmJzVZRuN42skHEDNRGmo=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=zJhJRfRlebE"
-  },
-  {
     "name": "無月いお",
     "youtubeid": "UC2X_mAVGw8e3N9JQZZDVBfQ",
     "title": "いや…早いよぉ泣#パレデミア学園#新人Vtuber#低音女子#切り抜き",
@@ -1359,7 +1348,7 @@
     "date": "2026-08-06T01:28:15.000+09:00",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/1Vx2-7EvnpM/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/1Vx2-7EvnpM/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/JA8QqThoUnCNAgJASH3p_wPyWJBf2ILiUfpIvArr6592NkkrFntPQ4EgPsahnLpPCMP4mk93ig=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=1Vx2-7EvnpM"
   },
@@ -1381,7 +1370,7 @@
     "date": "2026-08-06T01:32:36.000+09:00",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/YlI2lMUwvrU/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/YlI2lMUwvrU/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/4AFFu60kFJqix-OhtDW3EJdQ0jQa1LrK56tGpvqvbGodMQFpkH-_qtvL_66dPGD3kl4LW9N4=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=YlI2lMUwvrU"
   },
@@ -1434,7 +1423,7 @@
     "youtubeid": "UCpdWNjSU-onhmcARqgHIfpg",
     "title": "【#龍が如く6】広島出身Vtuberが龍が如く6を初見プレイ！【#03】",
     "date": "2026-08-06T11:54:59.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/I7kDRwrwBmM/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/JA8QqThoUnCNAgJASH3p_wPyWJBf2ILiUfpIvArr6592NkkrFntPQ4EgPsahnLpPCMP4mk93ig=s240-c-k-c0x00ffffff-no-rj",
@@ -1478,9 +1467,9 @@
     "youtubeid": "UCAhdxmsdngH4noySdpVAVWQ",
     "title": "【露天掘り雑談】19チャンク目に突入しましたね～⛏トライアルチャンバーの全貌を見たいのもり👀✨作業用にも😉ROM歓迎🎉【#Minecraft】【#新人vtuber 】#ちとせらいぶ #パレデミア学園",
     "date": "2026-08-06T12:59:04.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/TlAQxtTL2Ns/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/TlAQxtTL2Ns/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/traR_yWe-AOGyM2wjo8h2FJO9JWBcbjfrL13X-umeD6BtNPopSZ2Q3YmdJq_5K9gWgHf_j64iQ=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=TlAQxtTL2Ns"
   },
@@ -1489,11 +1478,77 @@
     "youtubeid": "UCWi_ztz8Xuz4XfzhoG6ZfyA",
     "title": "【作業/雑談】いっしょに作業しよ～！🎶スパチャのお礼描きします！✨まったり作業、たまに雑談🎶【＃パレデミア学園】＃せなりるライブ",
     "date": "2026-08-06T13:40:05.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/yK4qBMuO3Bo/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/yK4qBMuO3Bo/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/BaxFKUrCc4gGKc1wwAHt4ebjk8C69NdTl3fMz9LoR5SUm_Tpvv2yixsbJhp8qsld6S0tdgup=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=yK4qBMuO3Bo"
+  },
+  {
+    "name": "花晴りら",
+    "youtubeid": "UCqcnlq8uJqnGml6hcIrMCZw",
+    "title": "【雑談】夕方だけどみんなと話したいっ！【花晴りら/ #パレデミア学園 】#れりライブ",
+    "date": "2026-08-06T17:00:28.000+09:00",
+    "status": "live",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/ULCoZpttcKw/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/CH5JMWVQZ_RtloaXoj6W-yXjo9x8UxXSBG_vMyDnfk7M2QTOApVE1zOesu_aDrSAqvDbGrUyxs0=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=ULCoZpttcKw"
+  },
+  {
+    "name": "銘兎目あう",
+    "youtubeid": "UCpr-9ssUUgSb0EpDA8bRuTA",
+    "title": "【スト６雑談】全日本が首を傾げたｗｗ【銘兎目あう】#shorts #vtuber #おすすめ #スト6 #ストリートファイター6  #sf6 #StreetFighter6",
+    "date": "2026-08-06T17:04:07.000+09:00",
+    "status": "archive",
+    "type": "video",
+    "thumbnail": "https://i.ytimg.com/vi/vrOUvGjwcQI/mqdefault.jpg",
+    "channelIcon": "https://yt3.ggpht.com/VB97J8AMHex_rkfd6hDhfiGhhVvrL-NNkseP2mMYSWh75sxA_oXctmxK5tV4FYgkM17RUAx6GQ=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=vrOUvGjwcQI"
+  },
+  {
+    "name": "香桜あんにん",
+    "youtubeid": "UC8zjZBqGnx_j55ZJzluhW8A",
+    "title": "きゅうりの一本釣り #shorts #切り抜き #新人vtuber",
+    "date": "2026-08-06T18:00:01.000+09:00",
+    "status": "archive",
+    "type": "video",
+    "thumbnail": "https://i.ytimg.com/vi/TUaDy3qyMCA/mqdefault.jpg",
+    "channelIcon": "https://yt3.ggpht.com/LL8h8c1rjBm_CimsOmJqxMtfMpzaEZCJ56jM4iOTOaEaDLQ7f6fYwkAWggiJNEwh-aeggh3L-w=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=TUaDy3qyMCA"
+  },
+  {
+    "name": "夜雨ねむる",
+    "youtubeid": "UC1hxdM37vjjqr-IfZuDn1iw",
+    "title": "キャットラビング/香椎モイミ【歌わせていただきました】by夜雨ねむる",
+    "date": "2026-08-06T18:00:18.000+09:00",
+    "status": "archive",
+    "type": "video",
+    "thumbnail": "https://i.ytimg.com/vi/0snpaTUbUUA/mqdefault.jpg",
+    "channelIcon": "https://yt3.ggpht.com/oX8bu2EfV0AJmmDPuA74S-Ky2XAUOxd1IXHEpX5jFDLltMrVNknI1FkpYdhb9VrLGtpUCm3Xvg=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=0snpaTUbUUA"
+  },
+  {
+    "name": "李じゅぴ汰",
+    "youtubeid": "UCHsAAyHJhPXuLS6N3Kig6PQ",
+    "title": "【雑談】やめるらしい人のゆるい雑談",
+    "date": "2026-08-06T18:30:00.000+09:00",
+    "status": "upcoming",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/IcAfPgglcgU/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/QQqec9A1J7eLk9RrRYD9vvk51BBJzcE1leGkU9n4YkwHqht9gmGT1ktmSlKItQtbuMSGuklAFxM=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=IcAfPgglcgU"
+  },
+  {
+    "name": "七海ロナ",
+    "youtubeid": "UCIaZylf5L9MsCMOJX3BdTEg",
+    "title": "#5【逆転裁判】完全初見！！！異議あり！！！って言いに来ました【パレプロ／七海ロナ】",
+    "date": "2026-08-06T19:00:00.000+09:00",
+    "status": "upcoming",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/Y3Kk2x39mBs/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/86cM_4q1A56pIYgdKxh776hM0nropjiZIlmXbfroWHXQ-MjdGGsjLcL5hMDOFL-T2EJHmybT=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=Y3Kk2x39mBs"
   },
   {
     "name": "泡清みる",

@@ -1,16 +1,5 @@
 [
   {
-    "name": "桜庭羽奈",
-    "youtubeid": "UCPgg_A08ksSYP-VivJGniRw",
-    "title": "【おはよう100人待ってます！】朝から50音歌枠！！初見さん大歓迎！💛【新人VTuberの雑談／歌枠】🐻",
-    "date": "2026-08-05T06:31:19.000+09:00",
-    "status": "archive",
-    "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/WQygh42W5V0/mqdefault.jpg",
-    "channelIcon": "https://yt3.ggpht.com/04zALH6pYL7mkWILHajvBzfzg4hrwRCLBONme3K1PjuEeYJIRC6RYxPmJzVZRuN42skHEDNRGmo=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=WQygh42W5V0"
-  },
-  {
     "name": "夕凪万夜",
     "youtubeid": "UCJLYktDEOak1rSOGRVRKlLQ",
     "title": "【朝活/初見さん◎】初見さん20人と会いたい朝活【パレデミア学園/夕凪万夜】",
@@ -1115,9 +1104,9 @@
     "youtubeid": "UCIaZylf5L9MsCMOJX3BdTEg",
     "title": "#6【逆転裁判】完全初見！！！異議あり！！！って言いに来ました【パレプロ／七海ロナ】",
     "date": "2026-08-07T19:00:12.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/30xJzEZQUWo/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/30xJzEZQUWo/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/86cM_4q1A56pIYgdKxh776hM0nropjiZIlmXbfroWHXQ-MjdGGsjLcL5hMDOFL-T2EJHmybT=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=30xJzEZQUWo"
   },
@@ -1353,6 +1342,17 @@
     "url": "https://www.youtube.com/watch?v=e4TyMZpVqwk"
   },
   {
+    "name": "香鳴ハノン",
+    "youtubeid": "UCay6Y3oEoiC6ZEE2G0UZu_A",
+    "title": "【同時視聴】パレプロ感謝祭2026のファンミBのアーカイブを一緒に観ませんか？【#パレプロ #香鳴ハノン】",
+    "date": "2026-08-07T23:44:09.000+09:00",
+    "status": "archive",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/AzpRlqEmWLc/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/qvbeb9E-gYc822fxxzi6Ug5QyjhqZAWbUskHANcwDWP5W8iTsK3LcQJnjS4CVBuFJ6fONsM9F7M=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=AzpRlqEmWLc"
+  },
+  {
     "name": "無月いお",
     "youtubeid": "UC2X_mAVGw8e3N9JQZZDVBfQ",
     "title": "【#低音女子】イベントラストラン！！《#パレデミア学園》",
@@ -1362,6 +1362,17 @@
     "thumbnail": "https://i.ytimg.com/vi/GM2-EhYcBF4/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/Z7PlAWhweuycNXNXoQ6etyDTkduySM-Kqy8kQW-AD19JuRdxT3HSdIxogPw3GPD5NHw_vZlf=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=GM2-EhYcBF4"
+  },
+  {
+    "name": "露草なぎ",
+    "youtubeid": "UC9nhm1B-XhPaUO8W8oc4thQ",
+    "title": "【雑談】夜中【露草なぎ/パレデミア学園】",
+    "date": "2026-08-08T00:03:31.000+09:00",
+    "status": "archive",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/werI4bryPCA/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/3KzF3YSQvjRpSMpFZEEsaGlIcETMW03ZmdKQy_TjJIm8t9vC4AjNwLLR5hNqXi0M9qnyszb0PCY=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=werI4bryPCA"
   },
   {
     "name": "七音うら",

@@ -1,16 +1,5 @@
 [
   {
-    "name": "藤森ちとせ",
-    "youtubeid": "UCAhdxmsdngH4noySdpVAVWQ",
-    "title": "がびがびエフェクトで遊ぶ藤森ちとせ #vtuber #切り抜き #朝活 #雑談",
-    "date": "2026-08-07T00:27:19.000+09:00",
-    "status": "archive",
-    "type": "video",
-    "thumbnail": "https://i.ytimg.com/vi/kjEemiNSO9w/mqdefault.jpg",
-    "channelIcon": "https://yt3.ggpht.com/traR_yWe-AOGyM2wjo8h2FJO9JWBcbjfrL13X-umeD6BtNPopSZ2Q3YmdJq_5K9gWgHf_j64iQ=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=kjEemiNSO9w"
-  },
-  {
     "name": "桜庭羽奈",
     "youtubeid": "UCPgg_A08ksSYP-VivJGniRw",
     "title": "【おはよう100人待ってます！】夏休み前の金曜日かな？！！初見さん大歓迎！💛【新人VTuberの雑談／歌枠】🐻",
@@ -1126,7 +1115,7 @@
     "youtubeid": "UCAhdxmsdngH4noySdpVAVWQ",
     "title": "【#minecraft 】露天掘り雑談｜今日もゆるゆる3チャンク同時掘り～⛏寝落ち・作業用にも😉ROM歓迎🎉【#新人vtuber 】#ちとせらいぶ #パレデミア学園",
     "date": "2026-08-09T19:58:09.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/H8A96uG9AoA/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/traR_yWe-AOGyM2wjo8h2FJO9JWBcbjfrL13X-umeD6BtNPopSZ2Q3YmdJq_5K9gWgHf_j64iQ=s240-c-k-c0x00ffffff-no-rj",
@@ -1221,11 +1210,22 @@
     "url": "https://www.youtube.com/watch?v=VebjYhhLjdo"
   },
   {
+    "name": "灯野ぺけ。",
+    "youtubeid": "UCldoz5HLh6BMW29HGnRpC0Q",
+    "title": "ガンダムSEED同時視聴【16話～】🛰️🚀🌌初見さん/ROMさん大歓迎💥≪パレデミア学園 / 灯野ぺけ。≫ #vtuber #ガンダムSEED  #同時視聴",
+    "date": "2026-08-09T22:01:41.000+09:00",
+    "status": "archive",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/kyQFImQzt3Q/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/sYbvo_2nSCW162VEArIwu7v1B3bl159gmEnGgGei8I8drc4l7huPP7q6aWZ4AfXi5wTMACmGow=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=kyQFImQzt3Q"
+  },
+  {
     "name": "香桜あんにん",
     "youtubeid": "UC8zjZBqGnx_j55ZJzluhW8A",
     "title": "【祝！！】グッズ化イベント初入賞！！#あんにんたいむ #79 【パレデミア学園/香桜あんにん/＃新人VTuber】",
     "date": "2026-08-09T22:42:37.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/mmoT4hhtkDI/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/LL8h8c1rjBm_CimsOmJqxMtfMpzaEZCJ56jM4iOTOaEaDLQ7f6fYwkAWggiJNEwh-aeggh3L-w=s240-c-k-c0x00ffffff-no-rj",
@@ -1279,8 +1279,8 @@
     "name": "天透あわ",
     "youtubeid": "UCXI0W_Os-BCIngpCb1YnOow",
     "title": "【初見歓迎】寝る前におはなししよ🐑💤【パレデミア学園/天透あわ 】",
-    "date": "2026-08-10T00:00:00.000+09:00",
-    "status": "upcoming",
+    "date": "2026-08-09T23:59:32.000+09:00",
+    "status": "live",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/9QSAM_0K1T8/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/Me8I_Op8OlIy8Vuj387_Hdi6gnrZ-qiY1yDDt1Q5yKMKA51ISagT76HE01gw8xbLcef0vpsPgoc=s240-c-k-c0x00ffffff-no-rj",
@@ -1296,6 +1296,17 @@
     "thumbnail": "https://i.ytimg.com/vi/nz0glD-htgs/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/04zALH6pYL7mkWILHajvBzfzg4hrwRCLBONme3K1PjuEeYJIRC6RYxPmJzVZRuN42skHEDNRGmo=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=nz0glD-htgs"
+  },
+  {
+    "name": "花晴りら",
+    "youtubeid": "UCqcnlq8uJqnGml6hcIrMCZw",
+    "title": "【毎日朝活/雑談】200人におはよう言いたい朝活🔆初見さん大歓迎🌷【花晴りら/ #パレデミア学園 】#れりライブ",
+    "date": "2026-08-10T07:00:00.000+09:00",
+    "status": "upcoming",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/Rvn-6thJz6w/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/CH5JMWVQZ_RtloaXoj6W-yXjo9x8UxXSBG_vMyDnfk7M2QTOApVE1zOesu_aDrSAqvDbGrUyxs0=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=Rvn-6thJz6w"
   },
   {
     "name": "雪紫誉",

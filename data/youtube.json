@@ -1117,7 +1117,7 @@
     "date": "2026-08-09T19:58:09.000+09:00",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/H8A96uG9AoA/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/H8A96uG9AoA/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/traR_yWe-AOGyM2wjo8h2FJO9JWBcbjfrL13X-umeD6BtNPopSZ2Q3YmdJq_5K9gWgHf_j64iQ=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=H8A96uG9AoA"
   },
@@ -1280,7 +1280,7 @@
     "youtubeid": "UCeOFQCn_QZJMTszlRYRg3rQ",
     "title": "【記念配信/雑談歌枠】初見歓迎🪼✨️秋の大運動会グッズ化イベント１位ありがとう🏃🏅【天辻ゆらぐ/パレデミア学園】 #新人Vtuber #ゆらぐっどたいむ",
     "date": "2026-08-09T23:45:37.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/2yFPHQW7Kho/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/4AFFu60kFJqix-OhtDW3EJdQ0jQa1LrK56tGpvqvbGodMQFpkH-_qtvL_66dPGD3kl4LW9N4=s240-c-k-c0x00ffffff-no-rj",
@@ -1296,6 +1296,17 @@
     "thumbnail": "https://i.ytimg.com/vi/9QSAM_0K1T8/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/Me8I_Op8OlIy8Vuj387_Hdi6gnrZ-qiY1yDDt1Q5yKMKA51ISagT76HE01gw8xbLcef0vpsPgoc=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=9QSAM_0K1T8"
+  },
+  {
+    "name": "香鳴ハノン",
+    "youtubeid": "UCay6Y3oEoiC6ZEE2G0UZu_A",
+    "title": "【首振りダンス】どの表情がすき？🩵 #巴巴贝斯 #香鳴ハノン #パレプロ",
+    "date": "2026-08-10T01:32:36.000+09:00",
+    "status": "archive",
+    "type": "video",
+    "thumbnail": "https://i.ytimg.com/vi/xsCRDiyLMy4/mqdefault.jpg",
+    "channelIcon": "https://yt3.ggpht.com/qvbeb9E-gYc822fxxzi6Ug5QyjhqZAWbUskHANcwDWP5W8iTsK3LcQJnjS4CVBuFJ6fONsM9F7M=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=xsCRDiyLMy4"
   },
   {
     "name": "桜庭羽奈",
@@ -1329,6 +1340,17 @@
     "thumbnail": "https://i.ytimg.com/vi/GmOR_-AlkyE/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/4RbHGCHx02xQ2ze4g7UCTvuUPlQCpbk6bHIb5cdqO4JNzTe5qsq4sDTt6m-xVKMm476vJiMF7A=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=GmOR_-AlkyE"
+  },
+  {
+    "name": "花晴りら",
+    "youtubeid": "UCqcnlq8uJqnGml6hcIrMCZw",
+    "title": "【司書のお仕事：魔導図書館を片付けろ！#3】宝物以外の魔法禁止🪄魔導書お片付け耐久📚作業用/ROM歓迎📖【花晴りら/ #パレデミア学園 】#れりライブ #Librarian",
+    "date": "2026-08-10T14:00:00.000+09:00",
+    "status": "upcoming",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/G4XBj7gkdsY/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/CH5JMWVQZ_RtloaXoj6W-yXjo9x8UxXSBG_vMyDnfk7M2QTOApVE1zOesu_aDrSAqvDbGrUyxs0=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=G4XBj7gkdsY"
   },
   {
     "name": "常磐カナメ",

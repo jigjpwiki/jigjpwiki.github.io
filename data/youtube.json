@@ -1,16 +1,5 @@
 [
   {
-    "name": "天透あわ",
-    "youtubeid": "UCXI0W_Os-BCIngpCb1YnOow",
-    "title": "【ほの暮しの庭】買うものが主婦すぎる🍛",
-    "date": "2026-08-06T16:33:18.000+09:00",
-    "status": "archive",
-    "type": "video",
-    "thumbnail": "https://i.ytimg.com/vi/WPmVCgrbuE0/mqdefault.jpg",
-    "channelIcon": "https://yt3.ggpht.com/Me8I_Op8OlIy8Vuj387_Hdi6gnrZ-qiY1yDDt1Q5yKMKA51ISagT76HE01gw8xbLcef0vpsPgoc=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=WPmVCgrbuE0"
-  },
-  {
     "name": "花晴りら",
     "youtubeid": "UCqcnlq8uJqnGml6hcIrMCZw",
     "title": "【雑談】夕方だけどみんなと話したいっ！【花晴りら/ #パレデミア学園 】#れりライブ",
@@ -1100,17 +1089,6 @@
     "url": "https://www.youtube.com/watch?v=vnyRycyn34g"
   },
   {
-    "name": "愛乃宮ゆめ",
-    "youtubeid": "UCttSjPiwPYpiPuCrgxK7c1g",
-    "title": "【マイクラ】お部屋のレイアウトはセンスが問われます。 まじゅい。ドリームハウス作戦 ＃７ 【愛乃宮ゆめ/パレデミア学園】",
-    "date": "2026-08-08T21:00:00.000+09:00",
-    "status": "upcoming",
-    "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/UhKGs-QQBqQ/mqdefault_live.jpg",
-    "channelIcon": "https://yt3.ggpht.com/Gwr7KJNWnI6CEgmIfEeMZahF5pbGNKlRhQXBEkuMWE0D66--IJE77z-5Zu2i5LFBc_CA6ZkqY4Y=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=UhKGs-QQBqQ"
-  },
-  {
     "name": "犬丸なでこ",
     "youtubeid": "UCdJmJxMfXrlnZabUkuss2EA",
     "title": "【ホラー】つぐのひ１話～３話【パレデミア学園/犬丸なでこ】",
@@ -1254,13 +1232,24 @@
     "url": "https://www.youtube.com/watch?v=x4cIoq0NmhM"
   },
   {
+    "name": "愛乃宮ゆめ",
+    "youtubeid": "UCttSjPiwPYpiPuCrgxK7c1g",
+    "title": "【マイクラ】お部屋のレイアウトはセンスが問われます。 まじゅい。ドリームハウス作戦 ＃７ 【愛乃宮ゆめ/パレデミア学園】",
+    "date": "2026-08-09T00:47:47.000+09:00",
+    "status": "archive",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/UhKGs-QQBqQ/mqdefault.jpg",
+    "channelIcon": "https://yt3.ggpht.com/Gwr7KJNWnI6CEgmIfEeMZahF5pbGNKlRhQXBEkuMWE0D66--IJE77z-5Zu2i5LFBc_CA6ZkqY4Y=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=UhKGs-QQBqQ"
+  },
+  {
     "name": "相栖るじゅ",
     "youtubeid": "UCrpdBoGpa6g2WEtRWsIlhDQ",
     "title": "【雑談】ひさしぶりだ！【相栖るじゅ/パレデミア学園】",
     "date": "2026-08-09T01:08:53.000+09:00",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/8Ki8rE8MLNM/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/8Ki8rE8MLNM/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/yQbh9vEEgS_UapoQhIxxoTSy13bDxlHYC-ncTcO9VIDBN2NvrLTAWeKGQ72CN2fhOOrHqYaFDA=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=8Ki8rE8MLNM"
   },
@@ -1419,15 +1408,37 @@
     "url": "https://www.youtube.com/watch?v=ui1-UiII_EM"
   },
   {
+    "name": "香鳴ハノン",
+    "youtubeid": "UCay6Y3oEoiC6ZEE2G0UZu_A",
+    "title": "【同時視聴】パレプロ感謝祭2026のライブパートを見ながら振り返り✨【#パレプロ #香鳴ハノン】",
+    "date": "2026-08-09T16:05:33.000+09:00",
+    "status": "live",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/BTgsgvU2N-E/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/qvbeb9E-gYc822fxxzi6Ug5QyjhqZAWbUskHANcwDWP5W8iTsK3LcQJnjS4CVBuFJ6fONsM9F7M=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=BTgsgvU2N-E"
+  },
+  {
     "name": "夏渚まはろ",
     "youtubeid": "UC_a00ml_EVDXSrtY8ZuyqGQ",
     "title": "【#夏渚まはろアイドル成長日記 ＃1】ライブデビューまであと139日。僕、アイドルになります！【#夏渚まはろ￤#パレプロ】",
-    "date": "2026-08-09T16:00:00.000+09:00",
-    "status": "upcoming",
+    "date": "2026-08-09T16:09:52.000+09:00",
+    "status": "live",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/Fxqxh7EXD8E/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/iktv-39nC7NDASD1WeXms-DEuHuVqB5RhwTtdDe26w-BCvqf6yq3r_8zBiv2i2CfNXCK0uE8=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=Fxqxh7EXD8E"
+  },
+  {
+    "name": "天透あわ",
+    "youtubeid": "UCXI0W_Os-BCIngpCb1YnOow",
+    "title": "【初見さん歓迎】夜のまったり雑談🌙*ﾟ【パレデミア学園/天透あわ 】",
+    "date": "2026-08-09T18:00:00.000+09:00",
+    "status": "upcoming",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/RzXSstzFR54/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/Me8I_Op8OlIy8Vuj387_Hdi6gnrZ-qiY1yDDt1Q5yKMKA51ISagT76HE01gw8xbLcef0vpsPgoc=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=RzXSstzFR54"
   },
   {
     "name": "夏渚まはろ",

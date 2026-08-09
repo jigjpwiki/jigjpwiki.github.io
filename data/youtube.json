@@ -1,16 +1,5 @@
 [
   {
-    "name": "桜庭羽奈",
-    "youtubeid": "UCPgg_A08ksSYP-VivJGniRw",
-    "title": "【高評価100を目指す！！】夏休みどこ行きたい？初見さん大歓迎！💛【新人VTuberの雑談／歌枠】🐻",
-    "date": "2026-08-06T20:30:15.000+09:00",
-    "status": "archive",
-    "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/Vn93kaV6PQo/mqdefault.jpg",
-    "channelIcon": "https://yt3.ggpht.com/04zALH6pYL7mkWILHajvBzfzg4hrwRCLBONme3K1PjuEeYJIRC6RYxPmJzVZRuN42skHEDNRGmo=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=Vn93kaV6PQo"
-  },
-  {
     "name": "雪紫誉",
     "youtubeid": "UCdbYinKlpkB_uMt_wPmYcsw",
     "title": "【#雑談】サムネの画質悪くね？（いつも）なんでも雑談枠#初見さん大歓迎 ◎【#パレデミア学園/#ゆきむらじお】＃新人VTuber",
@@ -1260,7 +1249,7 @@
     "date": "2026-08-09T16:05:33.000+09:00",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/BTgsgvU2N-E/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/BTgsgvU2N-E/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/qvbeb9E-gYc822fxxzi6Ug5QyjhqZAWbUskHANcwDWP5W8iTsK3LcQJnjS4CVBuFJ6fONsM9F7M=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=BTgsgvU2N-E"
   },
@@ -1291,9 +1280,9 @@
     "youtubeid": "UCXI0W_Os-BCIngpCb1YnOow",
     "title": "【初見さん歓迎】夜のまったり雑談🌙*ﾟ【パレデミア学園/天透あわ 】",
     "date": "2026-08-09T18:00:51.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/RzXSstzFR54/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/RzXSstzFR54/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/Me8I_Op8OlIy8Vuj387_Hdi6gnrZ-qiY1yDDt1Q5yKMKA51ISagT76HE01gw8xbLcef0vpsPgoc=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=RzXSstzFR54"
   },
@@ -1313,9 +1302,9 @@
     "youtubeid": "UC_a00ml_EVDXSrtY8ZuyqGQ",
     "title": "【霊迷の湯】この温泉、絶対に何かいる。【#夏渚まはろ￤#パレプロ】",
     "date": "2026-08-09T18:01:13.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/BDaxF2Z7e8U/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/BDaxF2Z7e8U/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/iktv-39nC7NDASD1WeXms-DEuHuVqB5RhwTtdDe26w-BCvqf6yq3r_8zBiv2i2CfNXCK0uE8=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=BDaxF2Z7e8U"
   },
@@ -1342,15 +1331,59 @@
     "url": "https://www.youtube.com/watch?v=jTFKVhL2JGo"
   },
   {
+    "name": "虎島めら。",
+    "youtubeid": "UCqewFfi_wwydw6fpazmlAFA",
+    "title": "ニューキャッスルだったりジブラルタルだったり爆乳ソロランク 【虎島めら。】 #apexlegends",
+    "date": "2026-08-09T19:41:38.000+09:00",
+    "status": "live",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/XplJI_t2X6Q/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/GTQLrgAFGtGBsfbiwqAP-vnRRHXDfXAKiZIGJAO-p4hzLfenIewQmuXdsBmgPfnz_hf0WsI62Q=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=XplJI_t2X6Q"
+  },
+  {
+    "name": "藤森ちとせ",
+    "youtubeid": "UCAhdxmsdngH4noySdpVAVWQ",
+    "title": "【#minecraft 】露天掘り雑談｜今日もゆるゆる3チャンク同時掘り～⛏寝落ち・作業用にも😉ROM歓迎🎉【#新人vtuber 】#ちとせらいぶ #パレデミア学園",
+    "date": "2026-08-09T19:58:09.000+09:00",
+    "status": "live",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/H8A96uG9AoA/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/traR_yWe-AOGyM2wjo8h2FJO9JWBcbjfrL13X-umeD6BtNPopSZ2Q3YmdJq_5K9gWgHf_j64iQ=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=H8A96uG9AoA"
+  },
+  {
     "name": "桜庭羽奈",
     "youtubeid": "UCPgg_A08ksSYP-VivJGniRw",
     "title": "⑩【ネタバレ注意】完全初見プレイ！新人Vtuberがテイルズシリーズを実況プレイしてみた！【テイルズ オブ ベルセリア リマスター／ゲーム実況配信】",
-    "date": "2026-08-09T20:00:00.000+09:00",
-    "status": "upcoming",
+    "date": "2026-08-09T19:59:54.000+09:00",
+    "status": "live",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/RlOSfZXYyXo/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/04zALH6pYL7mkWILHajvBzfzg4hrwRCLBONme3K1PjuEeYJIRC6RYxPmJzVZRuN42skHEDNRGmo=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=RlOSfZXYyXo"
+  },
+  {
+    "name": "無月いお",
+    "youtubeid": "UC2X_mAVGw8e3N9JQZZDVBfQ",
+    "title": "【実写】激ゆる静岡旅行Vlog",
+    "date": "2026-08-09T20:00:26.000+09:00",
+    "status": "archive",
+    "type": "video",
+    "thumbnail": "https://i.ytimg.com/vi/bj3tRdM-E-g/mqdefault.jpg",
+    "channelIcon": "https://yt3.ggpht.com/Z7PlAWhweuycNXNXoQ6etyDTkduySM-Kqy8kQW-AD19JuRdxT3HSdIxogPw3GPD5NHw_vZlf=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=bj3tRdM-E-g"
+  },
+  {
+    "name": "水凪るぅ",
+    "youtubeid": "UCxAVEiT5nj07iqZo4Ymka0Q",
+    "title": "【#歌ってみた】めざせポケモンマスター/松本梨香【水凪るぅ】#パレデミア学園#新人VTuber",
+    "date": "2026-08-09T20:00:37.000+09:00",
+    "status": "archive",
+    "type": "video",
+    "thumbnail": "https://i.ytimg.com/vi/94vvcvVyd-E/mqdefault.jpg",
+    "channelIcon": "https://yt3.ggpht.com/UWKN-YZPLehhOew0000E-A8P4FZ5TB7C48g2KZGY4UDiheuj7UAI-IiS9m8v4nzuifg6JwdGKA=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=94vvcvVyd-E"
   },
   {
     "name": "しーはむ",

@@ -1205,7 +1205,7 @@
     "date": "2026-08-08T23:56:51.000+09:00",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/EhK5oiI9ygE/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/EhK5oiI9ygE/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/3KzF3YSQvjRpSMpFZEEsaGlIcETMW03ZmdKQy_TjJIm8t9vC4AjNwLLR5hNqXi0M9qnyszb0PCY=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=EhK5oiI9ygE"
   },
@@ -1406,6 +1406,28 @@
     "thumbnail": "https://i.ytimg.com/vi/bxfNWo-IwDY/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/traR_yWe-AOGyM2wjo8h2FJO9JWBcbjfrL13X-umeD6BtNPopSZ2Q3YmdJq_5K9gWgHf_j64iQ=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=bxfNWo-IwDY"
+  },
+  {
+    "name": "花晴りら",
+    "youtubeid": "UCqcnlq8uJqnGml6hcIrMCZw",
+    "title": "【APEX】#3 初心者APEX：今日も今日とて射撃訓練🔫【花晴りら/ #パレデミア学園 】#れりライブ",
+    "date": "2026-08-09T15:00:01.000+09:00",
+    "status": "live",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/ui1-UiII_EM/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/CH5JMWVQZ_RtloaXoj6W-yXjo9x8UxXSBG_vMyDnfk7M2QTOApVE1zOesu_aDrSAqvDbGrUyxs0=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=ui1-UiII_EM"
+  },
+  {
+    "name": "夏渚まはろ",
+    "youtubeid": "UC_a00ml_EVDXSrtY8ZuyqGQ",
+    "title": "【#夏渚まはろアイドル成長日記 ＃1】ライブデビューまであと139日。僕、アイドルになります！【#夏渚まはろ￤#パレプロ】",
+    "date": "2026-08-09T16:00:00.000+09:00",
+    "status": "upcoming",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/Fxqxh7EXD8E/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/iktv-39nC7NDASD1WeXms-DEuHuVqB5RhwTtdDe26w-BCvqf6yq3r_8zBiv2i2CfNXCK0uE8=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=Fxqxh7EXD8E"
   },
   {
     "name": "夏渚まはろ",

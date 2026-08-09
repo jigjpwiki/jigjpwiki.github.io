@@ -1,16 +1,5 @@
 [
   {
-    "name": "花晴りら",
-    "youtubeid": "UCqcnlq8uJqnGml6hcIrMCZw",
-    "title": "【毎日朝活/雑談】ch登録者4900名様耐久＆5時間で300人におはよう言いたい朝活🔆初見さん大歓迎🌷【花晴りら/ #パレデミア学園 】#れりライブ",
-    "date": "2026-08-07T07:01:33.000+09:00",
-    "status": "archive",
-    "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/EHdGnVnwzjU/mqdefault.jpg",
-    "channelIcon": "https://yt3.ggpht.com/CH5JMWVQZ_RtloaXoj6W-yXjo9x8UxXSBG_vMyDnfk7M2QTOApVE1zOesu_aDrSAqvDbGrUyxs0=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=EHdGnVnwzjU"
-  },
-  {
     "name": "雛菊のん",
     "youtubeid": "UChccV6U0Tkx9de4YjXbEelw",
     "title": "おはよーが聞きたい💕#新人vtuber #雑談 #朝活",
@@ -1018,7 +1007,7 @@
     "date": "2026-08-09T16:09:52.000+09:00",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/Fxqxh7EXD8E/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/Fxqxh7EXD8E/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/iktv-39nC7NDASD1WeXms-DEuHuVqB5RhwTtdDe26w-BCvqf6yq3r_8zBiv2i2CfNXCK0uE8=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=Fxqxh7EXD8E"
   },
@@ -1312,12 +1301,23 @@
     "name": "桜庭羽奈",
     "youtubeid": "UCPgg_A08ksSYP-VivJGniRw",
     "title": "【おはよう100人待ってます！】四連休の人も明日仕事の人もおはよう待ってます！初見さん大歓迎！💛【新人VTuberの雑談／歌枠】🐻",
-    "date": "2026-08-10T06:30:00.000+09:00",
-    "status": "upcoming",
+    "date": "2026-08-10T06:30:25.000+09:00",
+    "status": "live",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/nz0glD-htgs/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/04zALH6pYL7mkWILHajvBzfzg4hrwRCLBONme3K1PjuEeYJIRC6RYxPmJzVZRuN42skHEDNRGmo=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=nz0glD-htgs"
+  },
+  {
+    "name": "雛菊のん",
+    "youtubeid": "UChccV6U0Tkx9de4YjXbEelw",
+    "title": "おはよーを届ける💕#新人vtuber #雑談 #朝活",
+    "date": "2026-08-10T06:33:28.000+09:00",
+    "status": "live",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/sSbNy2YK3FU/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/-7v40HQCqllHpJD69LHIo2n5lUt-pZ-bLtfrKAXhZk9OF06nj4Lno3gwBvO8d1jBSl5dCCxAxQ=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=sSbNy2YK3FU"
   },
   {
     "name": "花晴りら",

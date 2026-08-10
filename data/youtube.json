@@ -1,16 +1,5 @@
 [
   {
-    "name": "さくさくさく",
-    "youtubeid": "UC9zEgqk0yVvX3nqRLCJXGGg",
-    "title": "すごろく配信＠パレデミア学園さくさくさく",
-    "date": "2026-08-08T00:39:18.000+09:00",
-    "status": "archive",
-    "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/RXr_T_dtAz0/mqdefault.jpg",
-    "channelIcon": "https://yt3.ggpht.com/XPoBTJELcobaMFIaRg_qVPbA2B8qzIloNvNNOoG_OkksZJ9JkGiZvRh8Rl3YbU4iV4sxqhZ8=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=RXr_T_dtAz0"
-  },
-  {
     "name": "暁月クララ",
     "youtubeid": "UCn4XvlTXjGSvDynpxpOYZPQ",
     "title": "じゃんぴじゃんぴごん跳ねて‼️#踊ってみた #暁月クララ #パレプロ",
@@ -1100,6 +1089,17 @@
     "url": "https://www.youtube.com/watch?v=s-YcmyEIfYU"
   },
   {
+    "name": "鈴木沙透",
+    "youtubeid": "UCj5nRzNFXZn9GRhITRkKElA",
+    "title": "EASY3秒で全滅#臓器女 #パレデミア学園 #vtuber",
+    "date": "2026-08-10T21:39:59.000+09:00",
+    "status": "archive",
+    "type": "video",
+    "thumbnail": "https://i.ytimg.com/vi/20iwhW3JWJ8/mqdefault.jpg",
+    "channelIcon": "https://yt3.ggpht.com/h4kuTtFCGhkDV4nmk6qjQt8auhkqLEqWwB9Il3NZR6op3ph-a0YElRfLcXkZVPp6xqvGmZHy3w=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=20iwhW3JWJ8"
+  },
+  {
     "name": "新巻るろな",
     "youtubeid": "UCUd4wJjvPQflbLnsk_YHleA",
     "title": "【お知らせ】メンバーシップ解禁します＋a【新巻るろな／パレデミア学園】#VTuber",
@@ -1131,6 +1131,17 @@
     "thumbnail": "https://i.ytimg.com/vi/f62jIObKYM0/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/-7v40HQCqllHpJD69LHIo2n5lUt-pZ-bLtfrKAXhZk9OF06nj4Lno3gwBvO8d1jBSl5dCCxAxQ=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=f62jIObKYM0"
+  },
+  {
+    "name": "露草なぎ",
+    "youtubeid": "UC9nhm1B-XhPaUO8W8oc4thQ",
+    "title": "【雑談】グッズがいっぱい出ます【露草なぎ/パレデミア学園】",
+    "date": "2026-08-11T00:02:36.000+09:00",
+    "status": "live",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/2vwhBbXXCz8/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/3KzF3YSQvjRpSMpFZEEsaGlIcETMW03ZmdKQy_TjJIm8t9vC4AjNwLLR5hNqXi0M9qnyszb0PCY=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=2vwhBbXXCz8"
   },
   {
     "name": "無月いお",

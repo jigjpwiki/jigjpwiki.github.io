@@ -1269,9 +1269,9 @@
     "youtubeid": "UC2X_mAVGw8e3N9JQZZDVBfQ",
     "title": "【#低音女子】運動会イベ1位ありがとう！《#パレデミア学園》",
     "date": "2026-08-10T12:03:08.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/AXMypyiyUTM/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/AXMypyiyUTM/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/Z7PlAWhweuycNXNXoQ6etyDTkduySM-Kqy8kQW-AD19JuRdxT3HSdIxogPw3GPD5NHw_vZlf=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=AXMypyiyUTM"
   },
@@ -1290,8 +1290,8 @@
     "name": "花晴りら",
     "youtubeid": "UCqcnlq8uJqnGml6hcIrMCZw",
     "title": "【司書のお仕事：魔導図書館を片付けろ！#3】宝物以外の魔法禁止🪄魔導書お片付け耐久📚作業用/ROM歓迎📖【花晴りら/ #パレデミア学園 】#れりライブ #Librarian",
-    "date": "2026-08-10T14:00:00.000+09:00",
-    "status": "upcoming",
+    "date": "2026-08-10T13:59:37.000+09:00",
+    "status": "live",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/G4XBj7gkdsY/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/CH5JMWVQZ_RtloaXoj6W-yXjo9x8UxXSBG_vMyDnfk7M2QTOApVE1zOesu_aDrSAqvDbGrUyxs0=s240-c-k-c0x00ffffff-no-rj",
@@ -1318,6 +1318,17 @@
     "thumbnail": "https://i.ytimg.com/vi/aVzEar80s-c/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/JA8QqThoUnCNAgJASH3p_wPyWJBf2ILiUfpIvArr6592NkkrFntPQ4EgPsahnLpPCMP4mk93ig=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=aVzEar80s-c"
+  },
+  {
+    "name": "七海ロナ",
+    "youtubeid": "UCIaZylf5L9MsCMOJX3BdTEg",
+    "title": "【めっちゃカメレオン】参加型めっちゃカメレオン！みんなで遊ぼ～！【パレプロ／七海ロナ】",
+    "date": "2026-08-11T19:00:00.000+09:00",
+    "status": "upcoming",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/qUvxXswo2eU/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/86cM_4q1A56pIYgdKxh776hM0nropjiZIlmXbfroWHXQ-MjdGGsjLcL5hMDOFL-T2EJHmybT=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=qUvxXswo2eU"
   },
   {
     "name": "夏渚まはろ",

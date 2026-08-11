@@ -1,16 +1,5 @@
 [
   {
-    "name": "瀬奈りるか",
-    "youtubeid": "UCWi_ztz8Xuz4XfzhoG6ZfyA",
-    "title": "【総力戦】ヒエロニムスルナクリアしたい🌙アタッカー限界育成で頑張ってみます！🌟並走･ROM･寝落ち大歓迎🎶人のTLを参考にチナトロ目指す作業配信🎶【ブルーアーカイブ】＃せなりるライブ",
-    "date": "2026-08-09T01:30:44.000+09:00",
-    "status": "archive",
-    "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/4mOAXeAl78Y/mqdefault.jpg",
-    "channelIcon": "https://yt3.ggpht.com/BaxFKUrCc4gGKc1wwAHt4ebjk8C69NdTl3fMz9LoR5SUm_Tpvv2yixsbJhp8qsld6S0tdgup=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=4mOAXeAl78Y"
-  },
-  {
     "name": "香鳴ハノン",
     "youtubeid": "UCay6Y3oEoiC6ZEE2G0UZu_A",
     "title": "【新衣装で】「DISCOTHEQUE」踊ってみた🩵セクシー…？ #香鳴ハノン #パレプロ",
@@ -858,6 +847,17 @@
     "url": "https://www.youtube.com/watch?v=eXfLvnoUWtM"
   },
   {
+    "name": "愛乃宮ゆめ",
+    "youtubeid": "UCttSjPiwPYpiPuCrgxK7c1g",
+    "title": "【ペンギンウォーズ】３日目はおねぇさんと思い出を紡ぎたい。【愛乃宮ゆめ/パレデミア学園】",
+    "date": "2026-08-11T11:59:57.000+09:00",
+    "status": "archive",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/PsjrB6Dt-UA/mqdefault.jpg",
+    "channelIcon": "https://yt3.ggpht.com/Gwr7KJNWnI6CEgmIfEeMZahF5pbGNKlRhQXBEkuMWE0D66--IJE77z-5Zu2i5LFBc_CA6ZkqY4Y=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=PsjrB6Dt-UA"
+  },
+  {
     "name": "鬼多見アユム",
     "youtubeid": "UCnrJK-sb3gSn3kRLkmpmzaw",
     "title": "【#雑談 】祝日ってやつですか？【鬼多見アユム🍊👹】",
@@ -1104,7 +1104,7 @@
     "youtubeid": "UC9nhm1B-XhPaUO8W8oc4thQ",
     "title": "【雑談】obon【露草なぎ/パレデミア学園】",
     "date": "2026-08-11T21:59:56.000+09:00",
-    "status": "archive",
+    "status": "live",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/HQwp5pW7Hwc/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/3KzF3YSQvjRpSMpFZEEsaGlIcETMW03ZmdKQy_TjJIm8t9vC4AjNwLLR5hNqXi0M9qnyszb0PCY=s240-c-k-c0x00ffffff-no-rj",
@@ -1126,9 +1126,9 @@
     "youtubeid": "UCldoz5HLh6BMW29HGnRpC0Q",
     "title": "【 VIVANT(2026)第3話 】同時視聴！初見さん/ROMさん大歓迎☆≪パレデミア学園 / 灯野ぺけ。≫ #vtuber #ドラマ   #同時視聴",
     "date": "2026-08-11T22:01:43.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/a34vW3MbLzQ/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/a34vW3MbLzQ/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/sYbvo_2nSCW162VEArIwu7v1B3bl159gmEnGgGei8I8drc4l7huPP7q6aWZ4AfXi5wTMACmGow=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=a34vW3MbLzQ"
   },
@@ -1139,7 +1139,7 @@
     "date": "2026-08-11T22:15:57.000+09:00",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/7-8rBhLnleg/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/7-8rBhLnleg/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/8tcStp-WzdZPtf6bPq1DtUnFSd2Eq5AppSd3_CEQ7hNNpnRND8InaWdPCz6T1wIWWkGJuFrbT94=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=7-8rBhLnleg"
   },

@@ -787,7 +787,7 @@
     "date": "2026-08-12T12:00:40.000+09:00",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/qBG3MldNeb4/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/qBG3MldNeb4/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/eW_Hug0M6zFk9QSbAmOUWLMSfzBlCHmes-8yAksvfUNzyLgY6TSsE_eW8ncfE4bHYZXKoTWxmQ=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=qBG3MldNeb4"
   },
@@ -798,7 +798,7 @@
     "date": "2026-08-12T12:01:58.000+09:00",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/RvaLtjHrSe0/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/RvaLtjHrSe0/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/Z7PlAWhweuycNXNXoQ6etyDTkduySM-Kqy8kQW-AD19JuRdxT3HSdIxogPw3GPD5NHw_vZlf=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=RvaLtjHrSe0"
   },
@@ -842,7 +842,7 @@
     "date": "2026-08-12T14:36:12.000+09:00",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/DsJZpJwQGFM/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/DsJZpJwQGFM/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/GTQLrgAFGtGBsfbiwqAP-vnRRHXDfXAKiZIGJAO-p4hzLfenIewQmuXdsBmgPfnz_hf0WsI62Q=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=DsJZpJwQGFM"
   },
@@ -1186,6 +1186,17 @@
     "thumbnail": "https://i.ytimg.com/vi/3THw2gEdWaA/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/CH5JMWVQZ_RtloaXoj6W-yXjo9x8UxXSBG_vMyDnfk7M2QTOApVE1zOesu_aDrSAqvDbGrUyxs0=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=3THw2gEdWaA"
+  },
+  {
+    "name": "天堂ライラ",
+    "youtubeid": "UCpdWNjSU-onhmcARqgHIfpg",
+    "title": "【#朝活】コメント大歓迎！作業しながらおはよう！8/13(木) #天堂観測【パレデミア学園/天堂ライラ】",
+    "date": "2026-08-13T07:30:00.000+09:00",
+    "status": "upcoming",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/XpzonQdZXT4/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/JA8QqThoUnCNAgJASH3p_wPyWJBf2ILiUfpIvArr6592NkkrFntPQ4EgPsahnLpPCMP4mk93ig=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=XpzonQdZXT4"
   },
   {
     "name": "暁月クララ",

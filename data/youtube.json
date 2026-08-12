@@ -781,17 +781,6 @@
     "url": "https://www.youtube.com/watch?v=VBDnU4F2NyM"
   },
   {
-    "name": "愛乃宮ゆめ",
-    "youtubeid": "UCttSjPiwPYpiPuCrgxK7c1g",
-    "title": "【ペンギンウォーズ】４日目、今日は何をしようか。【愛乃宮ゆめ/パレデミア学園】",
-    "date": "2026-08-12T12:00:00.000+09:00",
-    "status": "upcoming",
-    "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/B47XSlPxqP0/mqdefault_live.jpg",
-    "channelIcon": "https://yt3.ggpht.com/Gwr7KJNWnI6CEgmIfEeMZahF5pbGNKlRhQXBEkuMWE0D66--IJE77z-5Zu2i5LFBc_CA6ZkqY4Y=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=B47XSlPxqP0"
-  },
-  {
     "name": "堂下さとり",
     "youtubeid": "UCBq6MSUL-Ermvnoj3PtX7Iw",
     "title": "【雑談】肩幅ガンダムな新人Vtuber【堂下さとり/パレデミア学園】",
@@ -814,13 +803,24 @@
     "url": "https://www.youtube.com/watch?v=RvaLtjHrSe0"
   },
   {
+    "name": "愛乃宮ゆめ",
+    "youtubeid": "UCttSjPiwPYpiPuCrgxK7c1g",
+    "title": "【ペンギンウォーズ】４日目、河川敷にて待つ者ありけり。【愛乃宮ゆめ/パレデミア学園】",
+    "date": "2026-08-12T12:06:38.000+09:00",
+    "status": "archive",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/B47XSlPxqP0/mqdefault.jpg",
+    "channelIcon": "https://yt3.ggpht.com/Gwr7KJNWnI6CEgmIfEeMZahF5pbGNKlRhQXBEkuMWE0D66--IJE77z-5Zu2i5LFBc_CA6ZkqY4Y=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=B47XSlPxqP0"
+  },
+  {
     "name": "緋雨柚",
     "youtubeid": "UCrB-SfrqB5ChY8aAT99grXw",
     "title": "【APEX】練習えぺぺ【パレデミア学園/緋雨柚】",
     "date": "2026-08-12T12:30:55.000+09:00",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/pCyI3LATmGY/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/pCyI3LATmGY/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/dPJHngNTeEfD_K0Mus141-We4xIuAhttm2pgEBl3VdGXqWvxGfy5mJfDMDbBmwI6UGc17dXb-g=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=pCyI3LATmGY"
   },
@@ -1023,6 +1023,17 @@
     "url": "https://www.youtube.com/watch?v=j3rrqO0zl0Y"
   },
   {
+    "name": "相栖るじゅ",
+    "youtubeid": "UCrpdBoGpa6g2WEtRWsIlhDQ",
+    "title": "【歌雑】お盆もお歌！【相栖るじゅ/パレデミア学園】",
+    "date": "2026-08-12T21:04:57.000+09:00",
+    "status": "archive",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/gG3NLx0bkFE/mqdefault.jpg",
+    "channelIcon": "https://yt3.ggpht.com/yQbh9vEEgS_UapoQhIxxoTSy13bDxlHYC-ncTcO9VIDBN2NvrLTAWeKGQ72CN2fhOOrHqYaFDA=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=gG3NLx0bkFE"
+  },
+  {
     "name": "しーはむ",
     "youtubeid": "UC5xSDiB2WG4pO_zUZ_t-n0Q",
     "title": "〘夜勤事件〙実は初見！超有名ホラゲにアプデ入ったらしいしやってみるか！〘VTuber│#しーはむ│ぷろのゔぁ〙",
@@ -1038,9 +1049,9 @@
     "youtubeid": "UCWi_ztz8Xuz4XfzhoG6ZfyA",
     "title": "【JSP3】新作プレイ！事故物件を監視するだけの簡単なお仕事が帰ってきた👻✨いっぱい稼ぐ！叫ばずにクリアします！🌙【日本事故物件監視協会】＃せなりるライブ",
     "date": "2026-08-12T22:00:27.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/zMopXLFkOjg/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/zMopXLFkOjg/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/BaxFKUrCc4gGKc1wwAHt4ebjk8C69NdTl3fMz9LoR5SUm_Tpvv2yixsbJhp8qsld6S0tdgup=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=zMopXLFkOjg"
   },
@@ -1126,9 +1137,9 @@
     "youtubeid": "UChccV6U0Tkx9de4YjXbEelw",
     "title": "ひそひそ配信💤おやすみを届ける💕#新人vtuber #雑談 #睡眠導入",
     "date": "2026-08-12T23:37:50.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/BUm33IK0M_U/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/BUm33IK0M_U/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/-7v40HQCqllHpJD69LHIo2n5lUt-pZ-bLtfrKAXhZk9OF06nj4Lno3gwBvO8d1jBSl5dCCxAxQ=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=BUm33IK0M_U"
   },
@@ -1137,7 +1148,7 @@
     "youtubeid": "UCBq6MSUL-Ermvnoj3PtX7Iw",
     "title": "【雑談】ナス好き苦手？ナス好きはおすすめ料理もよろしく【堂下さとり/パレデミア学園】",
     "date": "2026-08-12T23:50:57.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/6k3bZdifRFs/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/eW_Hug0M6zFk9QSbAmOUWLMSfzBlCHmes-8yAksvfUNzyLgY6TSsE_eW8ncfE4bHYZXKoTWxmQ=s240-c-k-c0x00ffffff-no-rj",
@@ -1148,9 +1159,9 @@
     "youtubeid": "UC2X_mAVGw8e3N9JQZZDVBfQ",
     "title": "【#低音女子】水着姿はず。《#パレデミア学園》",
     "date": "2026-08-13T00:04:01.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/9nlwJ9-lH2M/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/9nlwJ9-lH2M/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/Z7PlAWhweuycNXNXoQ6etyDTkduySM-Kqy8kQW-AD19JuRdxT3HSdIxogPw3GPD5NHw_vZlf=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=9nlwJ9-lH2M"
   },
@@ -1186,6 +1197,17 @@
     "thumbnail": "https://i.ytimg.com/vi/RRIuhGYqKPk/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/8tcStp-WzdZPtf6bPq1DtUnFSd2Eq5AppSd3_CEQ7hNNpnRND8InaWdPCz6T1wIWWkGJuFrbT94=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=RRIuhGYqKPk"
+  },
+  {
+    "name": "変幻リメ",
+    "youtubeid": "UC5bCRde8xRrNS7s6GjCNCyQ",
+    "title": "【#ぶいのね歌枠リレー 】この夜を、ロックで撃ち抜けっ！！！【#変幻リメ/#VTuber 】",
+    "date": "2026-08-15T20:00:00.000+09:00",
+    "status": "upcoming",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/OI2Ki4-AsJQ/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/4hssn4EXW2lORXRfiuYTjmYfnlZoQ2h72sdEompqX7GQwAKCsBx7eL0joCFSook1rfCKIcpykg=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=OI2Ki4-AsJQ"
   },
   {
     "name": "愛乃宮ゆめ",

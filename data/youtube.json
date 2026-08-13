@@ -864,7 +864,7 @@
     "date": "2026-08-12T20:01:07.000+09:00",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/6JPlAURAPOI/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/6JPlAURAPOI/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/WBGP05KaXeA21IzCbCeM0QHa0v9maVvVUBDZ2DyfTT62F1wGaW3hLOQBy1gCfuQfEnDNgwbsrQ=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=6JPlAURAPOI"
   },
@@ -919,7 +919,7 @@
     "date": "2026-08-12T20:59:41.000+09:00",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/-O5Y7aLiA3s/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/-O5Y7aLiA3s/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/CH5JMWVQZ_RtloaXoj6W-yXjo9x8UxXSBG_vMyDnfk7M2QTOApVE1zOesu_aDrSAqvDbGrUyxs0=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=-O5Y7aLiA3s"
   },
@@ -928,7 +928,7 @@
     "youtubeid": "UCttSjPiwPYpiPuCrgxK7c1g",
     "title": "【雑談】水着グッズが可愛くて投票イベントが激アツな件について‼️【愛乃宮ゆめ/パレデミア学園】",
     "date": "2026-08-12T21:00:17.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/fhwMrWz8qB0/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/Gwr7KJNWnI6CEgmIfEeMZahF5pbGNKlRhQXBEkuMWE0D66--IJE77z-5Zu2i5LFBc_CA6ZkqY4Y=s240-c-k-c0x00ffffff-no-rj",
@@ -1126,11 +1126,22 @@
     "youtubeid": "UCpdWNjSU-onhmcARqgHIfpg",
     "title": "【#朝活】コメント大歓迎！作業しながらおはよう！8/13(木) #天堂観測【パレデミア学園/天堂ライラ】",
     "date": "2026-08-13T07:40:02.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/XpzonQdZXT4/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/JA8QqThoUnCNAgJASH3p_wPyWJBf2ILiUfpIvArr6592NkkrFntPQ4EgPsahnLpPCMP4mk93ig=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=XpzonQdZXT4"
+  },
+  {
+    "name": "雪紫誉",
+    "youtubeid": "UCdbYinKlpkB_uMt_wPmYcsw",
+    "title": "【#雑談】仲良しくん募集中な狼の配信#初見さん大歓迎 ◎【#パレデミア学園/#ゆきむらじお】＃新人VTuber",
+    "date": "2026-08-13T10:15:37.000+09:00",
+    "status": "live",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/_d0lY1ERIBk/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/4RbHGCHx02xQ2ze4g7UCTvuUPlQCpbk6bHIb5cdqO4JNzTe5qsq4sDTt6m-xVKMm476vJiMF7A=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=_d0lY1ERIBk"
   },
   {
     "name": "暁月クララ",

@@ -1203,7 +1203,7 @@
     "youtubeid": "UCaolaxqG55OJhU8qwRHHtQg",
     "title": "【 #火狐むい 】STARDEW VALLEYまったり実況【 #パレデミア学園 】",
     "date": "2026-08-13T15:03:32.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/aTxZP7w87lk/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/Ft5mSjImEah_xri4b9k0p2Olyhy6T_vj1ZxyglCcVbk2FqN-nrWqSMm5YoM_hEjeRQ9aaMjelV0=s240-c-k-c0x00ffffff-no-rj",
@@ -1230,6 +1230,28 @@
     "thumbnail": "https://i.ytimg.com/vi/XCoTy6vc9kk/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/Z7PlAWhweuycNXNXoQ6etyDTkduySM-Kqy8kQW-AD19JuRdxT3HSdIxogPw3GPD5NHw_vZlf=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=XCoTy6vc9kk"
+  },
+  {
+    "name": "花晴りら",
+    "youtubeid": "UCqcnlq8uJqnGml6hcIrMCZw",
+    "title": "【雑談】お盆だね！夕方チル雑談！【花晴りら/ #パレデミア学園 】#れりライブ",
+    "date": "2026-08-13T16:59:49.000+09:00",
+    "status": "live",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/EYlwuEumREs/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/CH5JMWVQZ_RtloaXoj6W-yXjo9x8UxXSBG_vMyDnfk7M2QTOApVE1zOesu_aDrSAqvDbGrUyxs0=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=EYlwuEumREs"
+  },
+  {
+    "name": "瀬奈りるか",
+    "youtubeid": "UCWi_ztz8Xuz4XfzhoG6ZfyA",
+    "title": "【縦型雑談】初見さん10人耐久✨お盆休み期間新たなりる民に出会いたい！まったり縦型雑談✨【＃パレデミア学園】＃せなりるライブ",
+    "date": "2026-08-13T18:00:00.000+09:00",
+    "status": "upcoming",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/hZ9V3syWmH8/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/BaxFKUrCc4gGKc1wwAHt4ebjk8C69NdTl3fMz9LoR5SUm_Tpvv2yixsbJhp8qsld6S0tdgup=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=hZ9V3syWmH8"
   },
   {
     "name": "藤森ちとせ",

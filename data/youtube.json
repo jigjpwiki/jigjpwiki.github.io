@@ -1161,7 +1161,7 @@
     "date": "2026-08-13T23:02:05.000+09:00",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/Mt_rSc36-3A/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/Mt_rSc36-3A/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/rthBXvqjNFcVwEp-AWpiZDXnNjBodSXlsDTa-sjW6uR6Ssv3wuOw2dMXDZLlYaf_c4YiKfItHXU=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=Mt_rSc36-3A"
   },
@@ -1342,13 +1342,24 @@
     "url": "https://www.youtube.com/watch?v=QQy2gQkPw5I"
   },
   {
+    "name": "夕凪万夜",
+    "youtubeid": "UCJLYktDEOak1rSOGRVRKlLQ",
+    "title": "【マインクラフト】パレ学2期生サーバーできたから。いろいろ【パレデミア学園/夕凪万夜】",
+    "date": "2026-08-14T10:35:40.000+09:00",
+    "status": "archive",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/u6SQpbvoIqk/mqdefault.jpg",
+    "channelIcon": "https://yt3.ggpht.com/zOlQ66VHDdW9B1w3cRbHlo-3cfkYBLVHzYpXS_xLbOv9bHe72uv-bD246R7gCEfD_7wGBc-6vQ=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=u6SQpbvoIqk"
+  },
+  {
     "name": "火狐むい",
     "youtubeid": "UCaolaxqG55OJhU8qwRHHtQg",
     "title": "【 #火狐むい 】誕生日ケーキを食べるよ【 #パレデミア学園 】",
     "date": "2026-08-14T12:03:13.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/v3TjE1Oy7E4/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/v3TjE1Oy7E4/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/Ft5mSjImEah_xri4b9k0p2Olyhy6T_vj1ZxyglCcVbk2FqN-nrWqSMm5YoM_hEjeRQ9aaMjelV0=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=v3TjE1Oy7E4"
   },
@@ -1366,9 +1377,9 @@
   {
     "name": "堂下さとり",
     "youtubeid": "UCBq6MSUL-Ermvnoj3PtX7Iw",
-    "title": "【雑談】投票　といえば…？？【堂下さとり/パレデミア学園】",
+    "title": "【雑談】恋愛とOPと臭い【堂下さとり/パレデミア学園】",
     "date": "2026-08-14T12:13:01.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/0B4sumwe75E/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/eW_Hug0M6zFk9QSbAmOUWLMSfzBlCHmes-8yAksvfUNzyLgY6TSsE_eW8ncfE4bHYZXKoTWxmQ=s240-c-k-c0x00ffffff-no-rj",
@@ -1390,9 +1401,9 @@
     "youtubeid": "UCnrJK-sb3gSn3kRLkmpmzaw",
     "title": "【#雑談 】あまりにも寝起きすぎる配信【鬼多見アユム🍊👹】",
     "date": "2026-08-14T12:48:38.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/HhUBPoEKrTY/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/HhUBPoEKrTY/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/5l_IDFvbCkoc_xXy5i5YH24NcAgRR9bYZM9hu30Hm8may2x-7GiLIxkQ3DHQ4vI9uKwRUcbR6Q=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=HhUBPoEKrTY"
   },
@@ -1406,6 +1417,28 @@
     "thumbnail": "https://i.ytimg.com/vi/bJm2DQlm5R0/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/Ft5mSjImEah_xri4b9k0p2Olyhy6T_vj1ZxyglCcVbk2FqN-nrWqSMm5YoM_hEjeRQ9aaMjelV0=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=bJm2DQlm5R0"
+  },
+  {
+    "name": "夏渚まはろ",
+    "youtubeid": "UC_a00ml_EVDXSrtY8ZuyqGQ",
+    "title": "【リズム天国 ミラクルスターズ】＃8 全ステージパーフェクト挑戦！100%クリアへの道！【#夏渚まはろ￤#パレプロ】",
+    "date": "2026-08-14T18:00:00.000+09:00",
+    "status": "upcoming",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/QDZdwrZAbGc/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/iktv-39nC7NDASD1WeXms-DEuHuVqB5RhwTtdDe26w-BCvqf6yq3r_8zBiv2i2CfNXCK0uE8=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=QDZdwrZAbGc"
+  },
+  {
+    "name": "ProForma Nova",
+    "youtubeid": "UC6dbYB8hZyZe15ofN-KI6sg",
+    "title": "【デビュー】eスポーツVTuber事務所『ProForma Nova』STAR 2期生 ティザーPV",
+    "date": "2026-08-14T19:00:00.000+09:00",
+    "status": "upcoming",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/lVxD81tSlpM/mqdefault.jpg",
+    "channelIcon": "https://yt3.ggpht.com/IhK6g43kPjoF6g396c9PsC7qrQOmkEGqgvK_JXiTVk7g2xV2QyTJhJdPmEEDKx7TO7quPDzQxnI=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=lVxD81tSlpM"
   },
   {
     "name": "火狐むい",

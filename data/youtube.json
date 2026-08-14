@@ -1139,7 +1139,7 @@
     "date": "2026-08-14T15:53:14.000+09:00",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/P6jYsVl54Z8/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/P6jYsVl54Z8/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/sYbvo_2nSCW162VEArIwu7v1B3bl159gmEnGgGei8I8drc4l7huPP7q6aWZ4AfXi5wTMACmGow=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=P6jYsVl54Z8"
   },
@@ -1522,9 +1522,9 @@
     "youtubeid": "UC2X_mAVGw8e3N9JQZZDVBfQ",
     "title": "【#低音女子】飲みの二次会会場はこちら《#パレデミア学園》",
     "date": "2026-08-15T00:02:03.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/S0kS0ve5E8Y/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/S0kS0ve5E8Y/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/Z7PlAWhweuycNXNXoQ6etyDTkduySM-Kqy8kQW-AD19JuRdxT3HSdIxogPw3GPD5NHw_vZlf=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=S0kS0ve5E8Y"
   },
@@ -1593,6 +1593,17 @@
     "thumbnail": "https://i.ytimg.com/vi/LP4WGeAl53I/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/JA8QqThoUnCNAgJASH3p_wPyWJBf2ILiUfpIvArr6592NkkrFntPQ4EgPsahnLpPCMP4mk93ig=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=LP4WGeAl53I"
+  },
+  {
+    "name": "無月いお",
+    "youtubeid": "UC2X_mAVGw8e3N9JQZZDVBfQ",
+    "title": "【#低音女子】喉がっさがさです。ｗ《#パレデミア学園》",
+    "date": "2026-08-15T12:00:00.000+09:00",
+    "status": "upcoming",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/7CcOjWTsMrM/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/Z7PlAWhweuycNXNXoQ6etyDTkduySM-Kqy8kQW-AD19JuRdxT3HSdIxogPw3GPD5NHw_vZlf=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=7CcOjWTsMrM"
   },
   {
     "name": "暁月クララ",

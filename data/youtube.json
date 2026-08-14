@@ -1445,9 +1445,9 @@
     "youtubeid": "UC8zjZBqGnx_j55ZJzluhW8A",
     "title": "【眠れる雑談】おっとり癒しボイスとお話しよ！#あんにんたいむ #86 【パレデミア学園/香桜あんにん/＃新人VTuber】",
     "date": "2026-08-14T23:26:51.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/tqstKblbtfs/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/tqstKblbtfs/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/LL8h8c1rjBm_CimsOmJqxMtfMpzaEZCJ56jM4iOTOaEaDLQ7f6fYwkAWggiJNEwh-aeggh3L-w=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=tqstKblbtfs"
   },
@@ -1478,7 +1478,7 @@
     "youtubeid": "UCv2IYO-4waCpHvn50SWWY2A",
     "title": "【#雑談配信  】いっぱい寝たのに眠い日の雑談。【七音うら】",
     "date": "2026-08-15T00:01:55.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/WRhcikTweaI/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/T655ATpSd2gkjZBrokvlkaUH0f5-fCpQdcJpwxmmNdy6fxCYffAlq2sMhPOtFk_CvVyOkEPY8Q=s240-c-k-c0x00ffffff-no-rj",
@@ -1511,11 +1511,22 @@
     "youtubeid": "UCpdWNjSU-onhmcARqgHIfpg",
     "title": "【#龍が如く6】広島出身Vtuberが龍が如く6を初見プレイ！少しだけストーリーを進めたい！【#05】",
     "date": "2026-08-15T00:31:24.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/RYZLKF-bOPQ/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/JA8QqThoUnCNAgJASH3p_wPyWJBf2ILiUfpIvArr6592NkkrFntPQ4EgPsahnLpPCMP4mk93ig=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=RYZLKF-bOPQ"
+  },
+  {
+    "name": "露草なぎ",
+    "youtubeid": "UC9nhm1B-XhPaUO8W8oc4thQ",
+    "title": "【配信切り抜き】少女レイ【パレデミア学園】 #vtuber #切り抜き#歌ってみた #パレデミア学園 #つゆくさらいぶ",
+    "date": "2026-08-15T01:05:36.000+09:00",
+    "status": "archive",
+    "type": "video",
+    "thumbnail": "https://i.ytimg.com/vi/lWjy9fNvzgA/mqdefault.jpg",
+    "channelIcon": "https://yt3.ggpht.com/3KzF3YSQvjRpSMpFZEEsaGlIcETMW03ZmdKQy_TjJIm8t9vC4AjNwLLR5hNqXi0M9qnyszb0PCY=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=lWjy9fNvzgA"
   },
   {
     "name": "桜庭羽奈",
@@ -1538,6 +1549,17 @@
     "thumbnail": "https://i.ytimg.com/vi/gpO-xJR6kdI/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/CH5JMWVQZ_RtloaXoj6W-yXjo9x8UxXSBG_vMyDnfk7M2QTOApVE1zOesu_aDrSAqvDbGrUyxs0=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=gpO-xJR6kdI"
+  },
+  {
+    "name": "天堂ライラ",
+    "youtubeid": "UCpdWNjSU-onhmcARqgHIfpg",
+    "title": "【#龍が如く6】朝から広島出身Vtuberが龍が如く6を初見プレイ！【#06】",
+    "date": "2026-08-15T07:30:00.000+09:00",
+    "status": "upcoming",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/LP4WGeAl53I/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/JA8QqThoUnCNAgJASH3p_wPyWJBf2ILiUfpIvArr6592NkkrFntPQ4EgPsahnLpPCMP4mk93ig=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=LP4WGeAl53I"
   },
   {
     "name": "暁月クララ",
@@ -1615,5 +1637,38 @@
     "thumbnail": "https://i.ytimg.com/vi/WlVWSQfgPMc/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/Gwr7KJNWnI6CEgmIfEeMZahF5pbGNKlRhQXBEkuMWE0D66--IJE77z-5Zu2i5LFBc_CA6ZkqY4Y=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=WlVWSQfgPMc"
+  },
+  {
+    "name": "しーはむ",
+    "youtubeid": "UC5xSDiB2WG4pO_zUZ_t-n0Q",
+    "title": "〘Hariti〙この夏一番怖いホラーゲームみーつけた〘VTuber│#しーはむ│ぷろのゔぁ〙",
+    "date": "2026-08-17T21:30:00.000+09:00",
+    "status": "upcoming",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/-7QJFRiyo9w/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/y0zP0Uz7HSLx5dv3xo488Suxk8rJQQUC1wXaymjUBIQIwa25WlVu_VmrsT1xAyVD-jgeL7hs=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=-7QJFRiyo9w"
+  },
+  {
+    "name": "しーはむ",
+    "youtubeid": "UC5xSDiB2WG4pO_zUZ_t-n0Q",
+    "title": "〘ほの暮らしの庭〙雑談しながらこの村の秘密に迫る⑦〘VTuber│#しーはむ│ぷろのゔぁ〙",
+    "date": "2026-08-18T11:00:00.000+09:00",
+    "status": "upcoming",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/g9fjq9U31EQ/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/y0zP0Uz7HSLx5dv3xo488Suxk8rJQQUC1wXaymjUBIQIwa25WlVu_VmrsT1xAyVD-jgeL7hs=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=g9fjq9U31EQ"
+  },
+  {
+    "name": "しーはむ",
+    "youtubeid": "UC5xSDiB2WG4pO_zUZ_t-n0Q",
+    "title": "〘ほの暮らしの庭〙雑談しながら秋を目指す！折り返し地点かな？⑧〘VTuber│#しーはむ│ぷろのゔぁ〙",
+    "date": "2026-08-19T11:00:00.000+09:00",
+    "status": "upcoming",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/L_TEJus3uHo/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/y0zP0Uz7HSLx5dv3xo488Suxk8rJQQUC1wXaymjUBIQIwa25WlVu_VmrsT1xAyVD-jgeL7hs=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=L_TEJus3uHo"
   }
 ]

@@ -1,38 +1,5 @@
 [
   {
-    "name": "花晴りら",
-    "youtubeid": "UCqcnlq8uJqnGml6hcIrMCZw",
-    "title": "【パラソーシャル】完全初見：配信者が主人公らしい……【花晴りら/ #パレデミア学園 】#れりライブ",
-    "date": "2026-08-11T20:59:37.000+09:00",
-    "status": "archive",
-    "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/2w4OXBvCTIw/mqdefault.jpg",
-    "channelIcon": "https://yt3.ggpht.com/CH5JMWVQZ_RtloaXoj6W-yXjo9x8UxXSBG_vMyDnfk7M2QTOApVE1zOesu_aDrSAqvDbGrUyxs0=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=2w4OXBvCTIw"
-  },
-  {
-    "name": "火狐むい",
-    "youtubeid": "UCaolaxqG55OJhU8qwRHHtQg",
-    "title": "【 #火狐むい 】はじめての歌枠！【 #パレデミア学園 】",
-    "date": "2026-08-11T21:00:57.000+09:00",
-    "status": "archive",
-    "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/B3joMGKEkag/mqdefault.jpg",
-    "channelIcon": "https://yt3.ggpht.com/Ft5mSjImEah_xri4b9k0p2Olyhy6T_vj1ZxyglCcVbk2FqN-nrWqSMm5YoM_hEjeRQ9aaMjelV0=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=B3joMGKEkag"
-  },
-  {
-    "name": "愛乃宮ゆめ",
-    "youtubeid": "UCttSjPiwPYpiPuCrgxK7c1g",
-    "title": "【Apex】脱ブロンズが先か、タイムリミットが先か。【愛乃宮ゆめ/パレデミア学園】",
-    "date": "2026-08-11T21:01:17.000+09:00",
-    "status": "archive",
-    "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/TdOcAgwZd90/mqdefault.jpg",
-    "channelIcon": "https://yt3.ggpht.com/Gwr7KJNWnI6CEgmIfEeMZahF5pbGNKlRhQXBEkuMWE0D66--IJE77z-5Zu2i5LFBc_CA6ZkqY4Y=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=TdOcAgwZd90"
-  },
-  {
     "name": "露草なぎ",
     "youtubeid": "UC9nhm1B-XhPaUO8W8oc4thQ",
     "title": "【雑談】obon【露草なぎ/パレデミア学園】",
@@ -1260,7 +1227,7 @@
     "date": "2026-08-14T16:47:22.000+09:00",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/C_-n4AcWXTU/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/C_-n4AcWXTU/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/hBz75E3AEST1Dzv5vOTHAqoJfayd30WIWWQ3ZFLlWMHDsyZ_QD6ZVVUtLTKSizalT3APPtdpFGI=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=C_-n4AcWXTU"
   },
@@ -1278,22 +1245,11 @@
   {
     "name": "夏渚まはろ",
     "youtubeid": "UC_a00ml_EVDXSrtY8ZuyqGQ",
-    "title": "【リズム天国 ミラクルスターズ】＃8 全ステージパーフェクト挑戦！100%クリアへの道！【#夏渚まはろ￤#パレプロ】",
-    "date": "2026-08-14T18:00:00.000+09:00",
-    "status": "upcoming",
-    "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/QDZdwrZAbGc/mqdefault_live.jpg",
-    "channelIcon": "https://yt3.ggpht.com/iktv-39nC7NDASD1WeXms-DEuHuVqB5RhwTtdDe26w-BCvqf6yq3r_8zBiv2i2CfNXCK0uE8=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=QDZdwrZAbGc"
-  },
-  {
-    "name": "夏渚まはろ",
-    "youtubeid": "UC_a00ml_EVDXSrtY8ZuyqGQ",
     "title": "【雑談】冷夏ですね。やる気40%くらいで近況をお送りします。【#夏渚まはろ￤#パレプロ】",
     "date": "2026-08-14T18:01:46.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/aH2i1v0X1Z4/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/aH2i1v0X1Z4/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/iktv-39nC7NDASD1WeXms-DEuHuVqB5RhwTtdDe26w-BCvqf6yq3r_8zBiv2i2CfNXCK0uE8=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=aH2i1v0X1Z4"
   },
@@ -1320,13 +1276,24 @@
     "url": "https://www.youtube.com/watch?v=lVxD81tSlpM"
   },
   {
+    "name": "緋月・ローズ・ブレイド",
+    "youtubeid": "UCDutDfyKbX_ah4GF6kPNKmw",
+    "title": "【#イナクロ】夏がやってくる歌ってみた。【パレデミア学園】",
+    "date": "2026-08-14T19:00:06.000+09:00",
+    "status": "archive",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/pmARLHPY6Pk/mqdefault.jpg",
+    "channelIcon": "https://yt3.ggpht.com/W_G4fcoLegJdQmhWclC6RKHdrx9DJLGZ4WcLyCKgJxzyZZ3MUd-tNZ90LYQGVAbt7NzXl5GUJQ=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=pmARLHPY6Pk"
+  },
+  {
     "name": "火狐むい",
     "youtubeid": "UCaolaxqG55OJhU8qwRHHtQg",
     "title": "【 #火狐むい 】誕生日凸待ち！【 #パレデミア学園 】",
     "date": "2026-08-14T19:00:36.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/JsB5K5wFi1Y/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/JsB5K5wFi1Y/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/Ft5mSjImEah_xri4b9k0p2Olyhy6T_vj1ZxyglCcVbk2FqN-nrWqSMm5YoM_hEjeRQ9aaMjelV0=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=JsB5K5wFi1Y"
   },
@@ -1377,7 +1344,7 @@
   {
     "name": "堂下さとり",
     "youtubeid": "UCBq6MSUL-Ermvnoj3PtX7Iw",
-    "title": "【歌ってみた】ダイクマ  【懐かしいCM】",
+    "title": "【歌ってみた】ダイクマ  【懐かしいCM】アカペラ",
     "date": "2026-08-14T19:50:26.000+09:00",
     "status": "archive",
     "type": "video",
@@ -1386,22 +1353,77 @@
     "url": "https://www.youtube.com/watch?v=YznvB6tjKW8"
   },
   {
+    "name": "牡丹雪",
+    "youtubeid": "UCl-qrfygvCjyA_lMR5lJzig",
+    "title": "愛煙家VTuberのアカペラで、ブリキノダンス(？) #アカペラ #新人vtuber #切り抜き #うたってみた",
+    "date": "2026-08-14T20:00:06.000+09:00",
+    "status": "archive",
+    "type": "video",
+    "thumbnail": "https://i.ytimg.com/vi/aBcmO3WKbM4/mqdefault.jpg",
+    "channelIcon": "https://yt3.ggpht.com/K9NG8yMDYt1GGoQjhc9c-XEBm1PxGVkEhIQxos6ODhB_pk5HpUvETjUOe5LLkzzJ3biot_nWwQ=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=aBcmO3WKbM4"
+  },
+  {
     "name": "七海ロナ",
     "youtubeid": "UCIaZylf5L9MsCMOJX3BdTEg",
     "title": "【ほの暮らしの庭】野草爆食スローライフ【パレプロ／七海ロナ】",
-    "date": "2026-08-14T20:00:00.000+09:00",
-    "status": "upcoming",
+    "date": "2026-08-14T20:02:03.000+09:00",
+    "status": "live",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/yCByEzjJHco/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/86cM_4q1A56pIYgdKxh776hM0nropjiZIlmXbfroWHXQ-MjdGGsjLcL5hMDOFL-T2EJHmybT=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=yCByEzjJHco"
   },
   {
+    "name": "犬丸なでこ",
+    "youtubeid": "UCdJmJxMfXrlnZabUkuss2EA",
+    "title": "投票イベント＆新作グッズのお話わんね！！【パレデミア学園/犬丸なでこ】",
+    "date": "2026-08-14T20:02:23.000+09:00",
+    "status": "live",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/7yn2FvSYZJE/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/HZPUrbSwGcllAbUtx6xggJ6lKfMfnAWDxWOCc01tpthiDipSqQP48TK5Jqz4GRzUdwKMUsxlsg=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=7yn2FvSYZJE"
+  },
+  {
+    "name": "暁月クララ",
+    "youtubeid": "UCn4XvlTXjGSvDynpxpOYZPQ",
+    "title": "✧︎*.〖 雑談 〗ぽしゃけのこと、教えてください🍻⋆꙳〖#暁月クララ┊︎#パレプロ〗",
+    "date": "2026-08-14T20:20:23.000+09:00",
+    "status": "live",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/WJcMC2AyUyE/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/8tcStp-WzdZPtf6bPq1DtUnFSd2Eq5AppSd3_CEQ7hNNpnRND8InaWdPCz6T1wIWWkGJuFrbT94=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=WJcMC2AyUyE"
+  },
+  {
+    "name": "桜庭羽奈",
+    "youtubeid": "UCPgg_A08ksSYP-VivJGniRw",
+    "title": "【高評価123目指す！】みんなの「恋愛ソング」は？初見さん大歓迎！💛【新人VTuberの雑談／歌枠】🐻",
+    "date": "2026-08-14T20:30:07.000+09:00",
+    "status": "live",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/3PSMdGX6piw/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/04zALH6pYL7mkWILHajvBzfzg4hrwRCLBONme3K1PjuEeYJIRC6RYxPmJzVZRuN42skHEDNRGmo=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=3PSMdGX6piw"
+  },
+  {
+    "name": "常磐カナメ",
+    "youtubeid": "UCbNEgJIF_ADD9e8-q7SoxCg",
+    "title": "lucky train!踊ってみた！ #アイカツ #shorts #常磐カナメ",
+    "date": "2026-08-14T20:54:41.000+09:00",
+    "status": "archive",
+    "type": "video",
+    "thumbnail": "https://i.ytimg.com/vi/ITyyTfPJUII/mqdefault.jpg",
+    "channelIcon": "https://yt3.ggpht.com/vb_kLF_4hQ7UdEtOnEtL-_pI320ZMQ-lVQ9OV3xMvdTQitHXX1zk0b6GKQ977dawvfoB5Sb8OQ=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=ITyyTfPJUII"
+  },
+  {
     "name": "花晴りら",
     "youtubeid": "UCqcnlq8uJqnGml6hcIrMCZw",
     "title": "【FF #3】完全初見！人生初ファイナルファンタジー🎮【花晴りら/ #パレデミア学園 】#れりライブ",
-    "date": "2026-08-14T21:00:00.000+09:00",
-    "status": "upcoming",
+    "date": "2026-08-14T20:59:34.000+09:00",
+    "status": "live",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/OEH7135Z_Kw/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/CH5JMWVQZ_RtloaXoj6W-yXjo9x8UxXSBG_vMyDnfk7M2QTOApVE1zOesu_aDrSAqvDbGrUyxs0=s240-c-k-c0x00ffffff-no-rj",
@@ -1411,12 +1433,34 @@
     "name": "陰山アゲハ",
     "youtubeid": "UCIw8aQVRBwi72yOrPLgkbRQ",
     "title": "【歌枠】お盆休み楽しんでる？一曲聴いてってよね🫵【陰山アゲハ #パレデミア学園 】",
-    "date": "2026-08-14T21:00:00.000+09:00",
-    "status": "upcoming",
+    "date": "2026-08-14T21:00:13.000+09:00",
+    "status": "live",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/1ozD_VD5CoU/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/XWKUawU_WoX_xINkx3TMSF3fj0RbdiwNezFiEAGcmHfQYvwkjMUM1mvyOmgsbK8LxHoo6aEKJA=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=1ozD_VD5CoU"
+  },
+  {
+    "name": "香桜あんにん",
+    "youtubeid": "UC8zjZBqGnx_j55ZJzluhW8A",
+    "title": "【同時視聴】『ドラゴンボール』19～21話一緒にみよ！#あんにんたいむ #85 【パレデミア学園/香桜あんにん/＃新人VTuber】",
+    "date": "2026-08-14T21:30:00.000+09:00",
+    "status": "upcoming",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/hVzYRebYRQg/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/LL8h8c1rjBm_CimsOmJqxMtfMpzaEZCJ56jM4iOTOaEaDLQ7f6fYwkAWggiJNEwh-aeggh3L-w=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=hVzYRebYRQg"
+  },
+  {
+    "name": "瀬奈りるか",
+    "youtubeid": "UCWi_ztz8Xuz4XfzhoG6ZfyA",
+    "title": "【♯2 近畿霊務局】幽霊にやり返せるゲーム！？🎮✨全力で幽霊退治をしてクリアまでプレイ👻✨完全初見プレイ！🎶【＃パレデミア学園】＃せなりるライブ",
+    "date": "2026-08-14T22:00:00.000+09:00",
+    "status": "upcoming",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/sP-ynLrx8Oc/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/BaxFKUrCc4gGKc1wwAHt4ebjk8C69NdTl3fMz9LoR5SUm_Tpvv2yixsbJhp8qsld6S0tdgup=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=sP-ynLrx8Oc"
   },
   {
     "name": "火狐むい",
@@ -1450,6 +1494,17 @@
     "thumbnail": "https://i.ytimg.com/vi/RRIuhGYqKPk/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/8tcStp-WzdZPtf6bPq1DtUnFSd2Eq5AppSd3_CEQ7hNNpnRND8InaWdPCz6T1wIWWkGJuFrbT94=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=RRIuhGYqKPk"
+  },
+  {
+    "name": "夏渚まはろ",
+    "youtubeid": "UC_a00ml_EVDXSrtY8ZuyqGQ",
+    "title": "【リズム天国 ミラクルスターズ】＃8 全ステージパーフェクト挑戦！100%クリアへの道！【#夏渚まはろ￤#パレプロ】",
+    "date": "2026-08-15T18:00:00.000+09:00",
+    "status": "upcoming",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/QDZdwrZAbGc/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/iktv-39nC7NDASD1WeXms-DEuHuVqB5RhwTtdDe26w-BCvqf6yq3r_8zBiv2i2CfNXCK0uE8=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=QDZdwrZAbGc"
   },
   {
     "name": "変幻リメ",

@@ -1392,7 +1392,7 @@
     "date": "2026-08-14T23:27:57.000+09:00",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/AP5Ywxpxngo/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/AP5Ywxpxngo/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/sYbvo_2nSCW162VEArIwu7v1B3bl159gmEnGgGei8I8drc4l7huPP7q6aWZ4AfXi5wTMACmGow=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=AP5Ywxpxngo"
   },
@@ -1414,7 +1414,7 @@
     "date": "2026-08-15T00:01:55.000+09:00",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/WRhcikTweaI/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/WRhcikTweaI/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/T655ATpSd2gkjZBrokvlkaUH0f5-fCpQdcJpwxmmNdy6fxCYffAlq2sMhPOtFk_CvVyOkEPY8Q=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=WRhcikTweaI"
   },
@@ -1480,7 +1480,7 @@
     "date": "2026-08-15T07:02:14.000+09:00",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/gpO-xJR6kdI/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/gpO-xJR6kdI/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/CH5JMWVQZ_RtloaXoj6W-yXjo9x8UxXSBG_vMyDnfk7M2QTOApVE1zOesu_aDrSAqvDbGrUyxs0=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=gpO-xJR6kdI"
   },
@@ -1500,9 +1500,9 @@
     "youtubeid": "UCnrJK-sb3gSn3kRLkmpmzaw",
     "title": "【#雑談 】おはよおおお土曜日おではオールｗ【鬼多見アユム🍊👹】",
     "date": "2026-08-15T10:47:21.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/n8Ypdvmztak/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/n8Ypdvmztak/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/5l_IDFvbCkoc_xXy5i5YH24NcAgRR9bYZM9hu30Hm8may2x-7GiLIxkQ3DHQ4vI9uKwRUcbR6Q=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=n8Ypdvmztak"
   },
@@ -1533,11 +1533,33 @@
     "youtubeid": "UCBq6MSUL-Ermvnoj3PtX7Iw",
     "title": "【雑談】今週のスケジュール【堂下さとり/パレデミア学園】",
     "date": "2026-08-15T12:08:34.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/MabRQEV0V7M/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/eW_Hug0M6zFk9QSbAmOUWLMSfzBlCHmes-8yAksvfUNzyLgY6TSsE_eW8ncfE4bHYZXKoTWxmQ=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=MabRQEV0V7M"
+  },
+  {
+    "name": "桜庭羽奈",
+    "youtubeid": "UCPgg_A08ksSYP-VivJGniRw",
+    "title": "【全MBTI耐久！】いろんな人と友達になりたい！初見さん大歓迎！💛【新人VTuberの雑談／歌枠】🐻",
+    "date": "2026-08-15T13:01:09.000+09:00",
+    "status": "live",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/1eDxWwmBmOY/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/04zALH6pYL7mkWILHajvBzfzg4hrwRCLBONme3K1PjuEeYJIRC6RYxPmJzVZRuN42skHEDNRGmo=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=1eDxWwmBmOY"
+  },
+  {
+    "name": "陰山アゲハ",
+    "youtubeid": "UCIw8aQVRBwi72yOrPLgkbRQ",
+    "title": "【apex】8/30リスナー参加型追加抽選！そのあとは一緒にエペしてあそぶ！【陰山アゲハ/#パレデミア学園 】",
+    "date": "2026-08-15T14:00:00.000+09:00",
+    "status": "upcoming",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/VSyfr-mt0-A/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/XWKUawU_WoX_xINkx3TMSF3fj0RbdiwNezFiEAGcmHfQYvwkjMUM1mvyOmgsbK8LxHoo6aEKJA=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=VSyfr-mt0-A"
   },
   {
     "name": "暁月クララ",

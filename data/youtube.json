@@ -1,16 +1,5 @@
 [
   {
-    "name": "堂下さとり",
-    "youtubeid": "UCBq6MSUL-Ermvnoj3PtX7Iw",
-    "title": "漢方4種と太田胃散全部混ぜカレー 完結編【新人Vtuber】",
-    "date": "2026-08-12T23:03:10.000+09:00",
-    "status": "archive",
-    "type": "video",
-    "thumbnail": "https://i.ytimg.com/vi/4TwlgthLmjQ/mqdefault.jpg",
-    "channelIcon": "https://yt3.ggpht.com/eW_Hug0M6zFk9QSbAmOUWLMSfzBlCHmes-8yAksvfUNzyLgY6TSsE_eW8ncfE4bHYZXKoTWxmQ=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=4TwlgthLmjQ"
-  },
-  {
     "name": "雛菊のん",
     "youtubeid": "UChccV6U0Tkx9de4YjXbEelw",
     "title": "ひそひそ配信💤おやすみを届ける💕#新人vtuber #雑談 #睡眠導入",
@@ -1194,7 +1183,7 @@
     "date": "2026-08-15T07:39:31.000+09:00",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/LP4WGeAl53I/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/LP4WGeAl53I/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/JA8QqThoUnCNAgJASH3p_wPyWJBf2ILiUfpIvArr6592NkkrFntPQ4EgPsahnLpPCMP4mk93ig=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=LP4WGeAl53I"
   },
@@ -1456,7 +1445,7 @@
     "youtubeid": "UCqewFfi_wwydw6fpazmlAFA",
     "title": "モノクロカスタム【虎島めら。】 #apex",
     "date": "2026-08-15T21:33:13.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/3ZK1nuS5en4/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/GTQLrgAFGtGBsfbiwqAP-vnRRHXDfXAKiZIGJAO-p4hzLfenIewQmuXdsBmgPfnz_hf0WsI62Q=s240-c-k-c0x00ffffff-no-rj",
@@ -1505,6 +1494,72 @@
     "thumbnail": "https://i.ytimg.com/vi/6FcCE4e0jzI/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/XWKUawU_WoX_xINkx3TMSF3fj0RbdiwNezFiEAGcmHfQYvwkjMUM1mvyOmgsbK8LxHoo6aEKJA=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=6FcCE4e0jzI"
+  },
+  {
+    "name": "灯野ぺけ。",
+    "youtubeid": "UCldoz5HLh6BMW29HGnRpC0Q",
+    "title": "【迷子にならずにストーリーを進められるのか！】ホグワーツレガシーpart4 初見さん/ROMさんもおいで～💥≪パレデミア学園 / 灯野ぺけ。≫ #vtuber #ゲーム配信 #ホグワーツレガシー",
+    "date": "2026-08-15T22:03:52.000+09:00",
+    "status": "live",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/OqQkGuXPWP8/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/sYbvo_2nSCW162VEArIwu7v1B3bl159gmEnGgGei8I8drc4l7huPP7q6aWZ4AfXi5wTMACmGow=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=OqQkGuXPWP8"
+  },
+  {
+    "name": "火狐むい",
+    "youtubeid": "UCaolaxqG55OJhU8qwRHHtQg",
+    "title": "【 #火狐むい 】なんでもない日の雑談【 #パレデミア学園 】",
+    "date": "2026-08-15T22:06:33.000+09:00",
+    "status": "live",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/dpFJRjudi5c/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/Ft5mSjImEah_xri4b9k0p2Olyhy6T_vj1ZxyglCcVbk2FqN-nrWqSMm5YoM_hEjeRQ9aaMjelV0=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=dpFJRjudi5c"
+  },
+  {
+    "name": "暁月クララ",
+    "youtubeid": "UCn4XvlTXjGSvDynpxpOYZPQ",
+    "title": "①~③を当ててください️💯📝#shorts #vtuber #暁月クララ",
+    "date": "2026-08-15T22:20:09.000+09:00",
+    "status": "archive",
+    "type": "video",
+    "thumbnail": "https://i.ytimg.com/vi/F6dCLsb4EW8/mqdefault.jpg",
+    "channelIcon": "https://yt3.ggpht.com/8tcStp-WzdZPtf6bPq1DtUnFSd2Eq5AppSd3_CEQ7hNNpnRND8InaWdPCz6T1wIWWkGJuFrbT94=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=F6dCLsb4EW8"
+  },
+  {
+    "name": "相栖るじゅ",
+    "youtubeid": "UCrpdBoGpa6g2WEtRWsIlhDQ",
+    "title": "【歌雑】他認めいちゃんです！【相栖るじゅ/パレデミア学園】",
+    "date": "2026-08-15T22:37:03.000+09:00",
+    "status": "live",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/vt1RtjBbqrk/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/yQbh9vEEgS_UapoQhIxxoTSy13bDxlHYC-ncTcO9VIDBN2NvrLTAWeKGQ72CN2fhOOrHqYaFDA=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=vt1RtjBbqrk"
+  },
+  {
+    "name": "香鳴ハノン",
+    "youtubeid": "UCay6Y3oEoiC6ZEE2G0UZu_A",
+    "title": "【雑談】ゆっくり帰省してきました！シール交換はできたのか、BBQと焼き鳥は──！？【#パレプロ #香鳴ハノン】",
+    "date": "2026-08-15T23:02:53.000+09:00",
+    "status": "live",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/VImsfaF2UFI/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/qvbeb9E-gYc822fxxzi6Ug5QyjhqZAWbUskHANcwDWP5W8iTsK3LcQJnjS4CVBuFJ6fONsM9F7M=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=VImsfaF2UFI"
+  },
+  {
+    "name": "無月いお",
+    "youtubeid": "UC2X_mAVGw8e3N9JQZZDVBfQ",
+    "title": "【#低音女子】配信３ヵ月記念日🌟《#パレデミア学園》",
+    "date": "2026-08-16T00:00:00.000+09:00",
+    "status": "upcoming",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/BsC7T5YH8vM/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/Z7PlAWhweuycNXNXoQ6etyDTkduySM-Kqy8kQW-AD19JuRdxT3HSdIxogPw3GPD5NHw_vZlf=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=BsC7T5YH8vM"
   },
   {
     "name": "天堂ライラ",

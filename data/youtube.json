@@ -1172,7 +1172,7 @@
     "date": "2026-08-15T12:08:34.000+09:00",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/MabRQEV0V7M/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/MabRQEV0V7M/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/eW_Hug0M6zFk9QSbAmOUWLMSfzBlCHmes-8yAksvfUNzyLgY6TSsE_eW8ncfE4bHYZXKoTWxmQ=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=MabRQEV0V7M"
   },
@@ -1489,7 +1489,7 @@
     "youtubeid": "UCay6Y3oEoiC6ZEE2G0UZu_A",
     "title": "【雑談】ゆっくり帰省してきました！シール交換はできたのか、BBQと焼き鳥は──！？【#パレプロ #香鳴ハノン】",
     "date": "2026-08-15T23:02:53.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/VImsfaF2UFI/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/qvbeb9E-gYc822fxxzi6Ug5QyjhqZAWbUskHANcwDWP5W8iTsK3LcQJnjS4CVBuFJ6fONsM9F7M=s240-c-k-c0x00ffffff-no-rj",
@@ -1511,7 +1511,7 @@
     "youtubeid": "UCv2IYO-4waCpHvn50SWWY2A",
     "title": "【#雑談配信  】がちゃがちゃした日の雑談。【七音うら】",
     "date": "2026-08-16T00:00:50.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/ZOjJ5WojXuI/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/T655ATpSd2gkjZBrokvlkaUH0f5-fCpQdcJpwxmmNdy6fxCYffAlq2sMhPOtFk_CvVyOkEPY8Q=s240-c-k-c0x00ffffff-no-rj",
@@ -1529,17 +1529,6 @@
     "url": "https://www.youtube.com/watch?v=BsC7T5YH8vM"
   },
   {
-    "name": "天堂ライラ",
-    "youtubeid": "UCpdWNjSU-onhmcARqgHIfpg",
-    "title": "【#作業雑談】内容は未定！多分作業をしながら雑談すると思う！ #天堂観測【パレデミア学園/天堂ライラ】",
-    "date": "2026-08-16T00:30:00.000+09:00",
-    "status": "upcoming",
-    "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/u_irPN0lSMw/mqdefault_live.jpg",
-    "channelIcon": "https://yt3.ggpht.com/JA8QqThoUnCNAgJASH3p_wPyWJBf2ILiUfpIvArr6592NkkrFntPQ4EgPsahnLpPCMP4mk93ig=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=u_irPN0lSMw"
-  },
-  {
     "name": "花晴りら",
     "youtubeid": "UCqcnlq8uJqnGml6hcIrMCZw",
     "title": "【毎日朝活/雑談】お盆休み連休最終日？！300人におはよう言いたい🔆初見さん大歓迎🌷【花晴りら/ #パレデミア学園 】#れりライブ",
@@ -1551,6 +1540,17 @@
     "url": "https://www.youtube.com/watch?v=XeDgXWJg--c"
   },
   {
+    "name": "天堂ライラ",
+    "youtubeid": "UCpdWNjSU-onhmcARqgHIfpg",
+    "title": "【#朝活/#作業雑談】作業しながらおはようしたい！ #天堂観測【パレデミア学園/天堂ライラ】",
+    "date": "2026-08-16T07:30:00.000+09:00",
+    "status": "upcoming",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/u_irPN0lSMw/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/JA8QqThoUnCNAgJASH3p_wPyWJBf2ILiUfpIvArr6592NkkrFntPQ4EgPsahnLpPCMP4mk93ig=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=u_irPN0lSMw"
+  },
+  {
     "name": "愛乃宮ゆめ",
     "youtubeid": "UCttSjPiwPYpiPuCrgxK7c1g",
     "title": "【ペンギンウォーズ】５日目、やり残したことはないかな？【愛乃宮ゆめ/パレデミア学園】",
@@ -1560,6 +1560,17 @@
     "thumbnail": "https://i.ytimg.com/vi/gDvepNCwdgI/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/Gwr7KJNWnI6CEgmIfEeMZahF5pbGNKlRhQXBEkuMWE0D66--IJE77z-5Zu2i5LFBc_CA6ZkqY4Y=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=gDvepNCwdgI"
+  },
+  {
+    "name": "花晴りら",
+    "youtubeid": "UCqcnlq8uJqnGml6hcIrMCZw",
+    "title": "【APEX】#4 初心者APEX：操作練習！ボットロイヤル参加型🔫【花晴りら/ #パレデミア学園 】#れりライブ",
+    "date": "2026-08-16T15:00:00.000+09:00",
+    "status": "upcoming",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/oEFyKw4QnwE/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/CH5JMWVQZ_RtloaXoj6W-yXjo9x8UxXSBG_vMyDnfk7M2QTOApVE1zOesu_aDrSAqvDbGrUyxs0=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=oEFyKw4QnwE"
   },
   {
     "name": "夏渚まはろ",

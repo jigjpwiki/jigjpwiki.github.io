@@ -1337,7 +1337,7 @@
     "date": "2026-08-15T21:33:13.000+09:00",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/3ZK1nuS5en4/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/3ZK1nuS5en4/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/GTQLrgAFGtGBsfbiwqAP-vnRRHXDfXAKiZIGJAO-p4hzLfenIewQmuXdsBmgPfnz_hf0WsI62Q=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=3ZK1nuS5en4"
   },
@@ -1593,6 +1593,17 @@
     "thumbnail": "https://i.ytimg.com/vi/WlVWSQfgPMc/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/Gwr7KJNWnI6CEgmIfEeMZahF5pbGNKlRhQXBEkuMWE0D66--IJE77z-5Zu2i5LFBc_CA6ZkqY4Y=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=WlVWSQfgPMc"
+  },
+  {
+    "name": "銘兎目あう",
+    "youtubeid": "UCpr-9ssUUgSb0EpDA8bRuTA",
+    "title": "【朗読】赤ずきん🐺｜グリム童話🐰📖【読み聞かせ】【#銘兎目あう/ぷろのゔぁ】#VTuber",
+    "date": "2026-08-16T23:00:00.000+09:00",
+    "status": "upcoming",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/ahk1alyeMbU/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/VB97J8AMHex_rkfd6hDhfiGhhVvrL-NNkseP2mMYSWh75sxA_oXctmxK5tV4FYgkM17RUAx6GQ=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=ahk1alyeMbU"
   },
   {
     "name": "天堂ライラ",

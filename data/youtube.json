@@ -1,16 +1,5 @@
 [
   {
-    "name": "花晴りら",
-    "youtubeid": "UCqcnlq8uJqnGml6hcIrMCZw",
-    "title": "【雑談】お盆だね！夕方チル雑談！【花晴りら/ #パレデミア学園 】#れりライブ",
-    "date": "2026-08-13T16:59:49.000+09:00",
-    "status": "archive",
-    "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/EYlwuEumREs/mqdefault.jpg",
-    "channelIcon": "https://yt3.ggpht.com/CH5JMWVQZ_RtloaXoj6W-yXjo9x8UxXSBG_vMyDnfk7M2QTOApVE1zOesu_aDrSAqvDbGrUyxs0=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=EYlwuEumREs"
-  },
-  {
     "name": "無月いお",
     "youtubeid": "UC2X_mAVGw8e3N9JQZZDVBfQ",
     "title": "新しい世界線作るのやめてｗ#パレデミア学園#新人Vtuber#低音女子#切り抜き",
@@ -1522,7 +1511,7 @@
     "youtubeid": "UCAhdxmsdngH4noySdpVAVWQ",
     "title": "【メン限参加型ワールド配信】花火作りたいのもり🎆夏祭りの屋台建築！今日はどんなの作りましょうね～？✨【#新人vtuber 】#ちとせらいぶ",
     "date": "2026-08-16T12:59:41.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/P334Z0iYRnk/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/traR_yWe-AOGyM2wjo8h2FJO9JWBcbjfrL13X-umeD6BtNPopSZ2Q3YmdJq_5K9gWgHf_j64iQ=s240-c-k-c0x00ffffff-no-rj",
@@ -1544,9 +1533,9 @@
     "youtubeid": "UCBq6MSUL-Ermvnoj3PtX7Iw",
     "title": "【雑談】食欲を取り戻せ！！【堂下さとり/パレデミア学園】",
     "date": "2026-08-16T14:11:48.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/v4E45kBflzE/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/v4E45kBflzE/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/eW_Hug0M6zFk9QSbAmOUWLMSfzBlCHmes-8yAksvfUNzyLgY6TSsE_eW8ncfE4bHYZXKoTWxmQ=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=v4E45kBflzE"
   },
@@ -1582,6 +1571,17 @@
     "thumbnail": "https://i.ytimg.com/vi/EgsgZpb5bXg/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/GTQLrgAFGtGBsfbiwqAP-vnRRHXDfXAKiZIGJAO-p4hzLfenIewQmuXdsBmgPfnz_hf0WsI62Q=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=EgsgZpb5bXg"
+  },
+  {
+    "name": "桜堂ねる",
+    "youtubeid": "UC0H7dRRqhfOifbYQ2TURdAg",
+    "title": "コラボ歌枠 #弾き語り コラボ【ごぼモン（仮）】",
+    "date": "2026-08-16T18:00:00.000+09:00",
+    "status": "upcoming",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/eZ0TrQdiPe0/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/hBz75E3AEST1Dzv5vOTHAqoJfayd30WIWWQ3ZFLlWMHDsyZ_QD6ZVVUtLTKSizalT3APPtdpFGI=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=eZ0TrQdiPe0"
   },
   {
     "name": "夏渚まはろ",

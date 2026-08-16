@@ -1,27 +1,5 @@
 [
   {
-    "name": "藤森ちとせ",
-    "youtubeid": "UCAhdxmsdngH4noySdpVAVWQ",
-    "title": "【#雑談 】朝活……？いつもより早く起きれましたね～✨うれしみ☺【#新人vtuber 】#ちとせらいぶ #パレデミア学園",
-    "date": "2026-08-13T10:04:13.000+09:00",
-    "status": "archive",
-    "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/QYjKt_EWjaw/mqdefault.jpg",
-    "channelIcon": "https://yt3.ggpht.com/traR_yWe-AOGyM2wjo8h2FJO9JWBcbjfrL13X-umeD6BtNPopSZ2Q3YmdJq_5K9gWgHf_j64iQ=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=QYjKt_EWjaw"
-  },
-  {
-    "name": "雪紫誉",
-    "youtubeid": "UCdbYinKlpkB_uMt_wPmYcsw",
-    "title": "【#雑談】仲良しくん募集中な狼の配信#初見さん大歓迎 ◎【#パレデミア学園/#ゆきむらじお】＃新人VTuber",
-    "date": "2026-08-13T10:15:37.000+09:00",
-    "status": "archive",
-    "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/_d0lY1ERIBk/mqdefault.jpg",
-    "channelIcon": "https://yt3.ggpht.com/4RbHGCHx02xQ2ze4g7UCTvuUPlQCpbk6bHIb5cdqO4JNzTe5qsq4sDTt6m-xVKMm476vJiMF7A=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=_d0lY1ERIBk"
-  },
-  {
     "name": "堂下さとり",
     "youtubeid": "UCBq6MSUL-Ermvnoj3PtX7Iw",
     "title": "【雑談】最近あったいいこと【堂下さとり/パレデミア学園】",
@@ -1282,7 +1260,7 @@
     "date": "2026-08-15T19:30:13.000+09:00",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/_8RR34_hx-Q/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/_8RR34_hx-Q/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/-7v40HQCqllHpJD69LHIo2n5lUt-pZ-bLtfrKAXhZk9OF06nj4Lno3gwBvO8d1jBSl5dCCxAxQ=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=_8RR34_hx-Q"
   },
@@ -1304,7 +1282,7 @@
     "date": "2026-08-15T19:51:54.000+09:00",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/qEkWoMLB808/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/qEkWoMLB808/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/vb_kLF_4hQ7UdEtOnEtL-_pI320ZMQ-lVQ9OV3xMvdTQitHXX1zk0b6GKQ977dawvfoB5Sb8OQ=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=qEkWoMLB808"
   },
@@ -1555,9 +1533,9 @@
     "youtubeid": "UCpdWNjSU-onhmcARqgHIfpg",
     "title": "【#朝活】WIN5予測しながらおはようしたい！ #天堂観測【パレデミア学園/天堂ライラ】",
     "date": "2026-08-16T07:40:37.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/u_irPN0lSMw/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/u_irPN0lSMw/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/JA8QqThoUnCNAgJASH3p_wPyWJBf2ILiUfpIvArr6592NkkrFntPQ4EgPsahnLpPCMP4mk93ig=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=u_irPN0lSMw"
   },
@@ -1615,6 +1593,17 @@
     "thumbnail": "https://i.ytimg.com/vi/WlVWSQfgPMc/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/Gwr7KJNWnI6CEgmIfEeMZahF5pbGNKlRhQXBEkuMWE0D66--IJE77z-5Zu2i5LFBc_CA6ZkqY4Y=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=WlVWSQfgPMc"
+  },
+  {
+    "name": "天堂ライラ",
+    "youtubeid": "UCpdWNjSU-onhmcARqgHIfpg",
+    "title": "【#雑談】とりあえず枠だけ！夜活か朝活になる枠 #天堂観測【パレデミア学園/天堂ライラ】",
+    "date": "2026-08-16T23:00:00.000+09:00",
+    "status": "upcoming",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/eGTl3x83SEo/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/JA8QqThoUnCNAgJASH3p_wPyWJBf2ILiUfpIvArr6592NkkrFntPQ4EgPsahnLpPCMP4mk93ig=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=eGTl3x83SEo"
   },
   {
     "name": "しーはむ",

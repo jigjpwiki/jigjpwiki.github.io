@@ -1337,7 +1337,7 @@
     "date": "2026-08-15T22:00:38.000+09:00",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/6FcCE4e0jzI/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/6FcCE4e0jzI/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/XWKUawU_WoX_xINkx3TMSF3fj0RbdiwNezFiEAGcmHfQYvwkjMUM1mvyOmgsbK8LxHoo6aEKJA=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=6FcCE4e0jzI"
   },
@@ -1370,7 +1370,7 @@
     "date": "2026-08-15T22:06:33.000+09:00",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/dpFJRjudi5c/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/dpFJRjudi5c/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/Ft5mSjImEah_xri4b9k0p2Olyhy6T_vj1ZxyglCcVbk2FqN-nrWqSMm5YoM_hEjeRQ9aaMjelV0=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=dpFJRjudi5c"
   },
@@ -1392,7 +1392,7 @@
     "date": "2026-08-15T22:37:03.000+09:00",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/vt1RtjBbqrk/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/vt1RtjBbqrk/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/yQbh9vEEgS_UapoQhIxxoTSy13bDxlHYC-ncTcO9VIDBN2NvrLTAWeKGQ72CN2fhOOrHqYaFDA=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=vt1RtjBbqrk"
   },
@@ -1425,7 +1425,7 @@
     "date": "2026-08-16T00:00:50.000+09:00",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/ZOjJ5WojXuI/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/ZOjJ5WojXuI/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/T655ATpSd2gkjZBrokvlkaUH0f5-fCpQdcJpwxmmNdy6fxCYffAlq2sMhPOtFk_CvVyOkEPY8Q=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=ZOjJ5WojXuI"
   },
@@ -1507,17 +1507,6 @@
     "url": "https://www.youtube.com/watch?v=AZ5Vnj9ES1A"
   },
   {
-    "name": "無月いお",
-    "youtubeid": "UC2X_mAVGw8e3N9JQZZDVBfQ",
-    "title": "【#低音女子】にちひる《#パレデミア学園》",
-    "date": "2026-08-16T12:00:00.000+09:00",
-    "status": "upcoming",
-    "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/VQN3Smsu144/mqdefault_live.jpg",
-    "channelIcon": "https://yt3.ggpht.com/Z7PlAWhweuycNXNXoQ6etyDTkduySM-Kqy8kQW-AD19JuRdxT3HSdIxogPw3GPD5NHw_vZlf=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=VQN3Smsu144"
-  },
-  {
     "name": "愛乃宮ゆめ",
     "youtubeid": "UCttSjPiwPYpiPuCrgxK7c1g",
     "title": "【ペンギンウォーズ】５日目、やり残したことはないかな？【愛乃宮ゆめ/パレデミア学園】",
@@ -1527,6 +1516,72 @@
     "thumbnail": "https://i.ytimg.com/vi/gDvepNCwdgI/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/Gwr7KJNWnI6CEgmIfEeMZahF5pbGNKlRhQXBEkuMWE0D66--IJE77z-5Zu2i5LFBc_CA6ZkqY4Y=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=gDvepNCwdgI"
+  },
+  {
+    "name": "露草なぎ",
+    "youtubeid": "UC9nhm1B-XhPaUO8W8oc4thQ",
+    "title": "【販売中！】水着グッズが出たぞー！！【パレデミア学園/露草なぎ】 #vtuber #パレテミア学園",
+    "date": "2026-08-16T12:03:31.000+09:00",
+    "status": "archive",
+    "type": "video",
+    "thumbnail": "https://i.ytimg.com/vi/FhRJQjg-cOA/mqdefault.jpg",
+    "channelIcon": "https://yt3.ggpht.com/3KzF3YSQvjRpSMpFZEEsaGlIcETMW03ZmdKQy_TjJIm8t9vC4AjNwLLR5hNqXi0M9qnyszb0PCY=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=FhRJQjg-cOA"
+  },
+  {
+    "name": "露草なぎ",
+    "youtubeid": "UC9nhm1B-XhPaUO8W8oc4thQ",
+    "title": "【販売中！】KVグッズも♡♡【パレデミア学園/露草なぎ】 #vtuber #パレデミア学園",
+    "date": "2026-08-16T12:07:35.000+09:00",
+    "status": "archive",
+    "type": "video",
+    "thumbnail": "https://i.ytimg.com/vi/pc-0-DxhG18/mqdefault.jpg",
+    "channelIcon": "https://yt3.ggpht.com/3KzF3YSQvjRpSMpFZEEsaGlIcETMW03ZmdKQy_TjJIm8t9vC4AjNwLLR5hNqXi0M9qnyszb0PCY=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=pc-0-DxhG18"
+  },
+  {
+    "name": "無月いお",
+    "youtubeid": "UC2X_mAVGw8e3N9JQZZDVBfQ",
+    "title": "【#低音女子】にちひる《#パレデミア学園》",
+    "date": "2026-08-16T12:12:56.000+09:00",
+    "status": "archive",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/VQN3Smsu144/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/Z7PlAWhweuycNXNXoQ6etyDTkduySM-Kqy8kQW-AD19JuRdxT3HSdIxogPw3GPD5NHw_vZlf=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=VQN3Smsu144"
+  },
+  {
+    "name": "陰山アゲハ",
+    "youtubeid": "UCIw8aQVRBwi72yOrPLgkbRQ",
+    "title": "【雑談】お盆休み終了のお知らせ【陰山アゲハ/#パレデミア学園 】",
+    "date": "2026-08-16T12:16:29.000+09:00",
+    "status": "live",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/d_seYf98G6c/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/XWKUawU_WoX_xINkx3TMSF3fj0RbdiwNezFiEAGcmHfQYvwkjMUM1mvyOmgsbK8LxHoo6aEKJA=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=d_seYf98G6c"
+  },
+  {
+    "name": "藤森ちとせ",
+    "youtubeid": "UCAhdxmsdngH4noySdpVAVWQ",
+    "title": "【メン限参加型ワールド配信】花火作りたいのもり🎆夏祭りの屋台建築！今日はどんなの作りましょうね～？✨【#新人vtuber 】#ちとせらいぶ",
+    "date": "2026-08-16T12:59:41.000+09:00",
+    "status": "live",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/P334Z0iYRnk/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/traR_yWe-AOGyM2wjo8h2FJO9JWBcbjfrL13X-umeD6BtNPopSZ2Q3YmdJq_5K9gWgHf_j64iQ=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=P334Z0iYRnk"
+  },
+  {
+    "name": "陰山アゲハ",
+    "youtubeid": "UCIw8aQVRBwi72yOrPLgkbRQ",
+    "title": "【apex】みんなで行けば高レート帯も怖くない。(俺は即ダウン)【陰山アゲハ/#パレデミア学園 】",
+    "date": "2026-08-16T14:00:00.000+09:00",
+    "status": "upcoming",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/c55r17wuCRo/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/XWKUawU_WoX_xINkx3TMSF3fj0RbdiwNezFiEAGcmHfQYvwkjMUM1mvyOmgsbK8LxHoo6aEKJA=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=c55r17wuCRo"
   },
   {
     "name": "花晴りら",

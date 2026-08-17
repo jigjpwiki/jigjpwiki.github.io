@@ -1,16 +1,5 @@
 [
   {
-    "name": "夕凪万夜",
-    "youtubeid": "UCJLYktDEOak1rSOGRVRKlLQ",
-    "title": "【マインクラフト】パレ学2期生サーバーできたから。いろいろ【パレデミア学園/夕凪万夜】",
-    "date": "2026-08-14T10:35:40.000+09:00",
-    "status": "archive",
-    "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/u6SQpbvoIqk/mqdefault.jpg",
-    "channelIcon": "https://yt3.ggpht.com/zOlQ66VHDdW9B1w3cRbHlo-3cfkYBLVHzYpXS_xLbOv9bHe72uv-bD246R7gCEfD_7wGBc-6vQ=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=u6SQpbvoIqk"
-  },
-  {
     "name": "火狐むい",
     "youtubeid": "UCaolaxqG55OJhU8qwRHHtQg",
     "title": "【 #火狐むい 】誕生日ケーキを食べるよ【 #パレデミア学園 】",
@@ -1370,7 +1359,7 @@
     "date": "2026-08-16T21:56:58.000+09:00",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/ECQTHXvMCP8/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/ECQTHXvMCP8/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/eW_Hug0M6zFk9QSbAmOUWLMSfzBlCHmes-8yAksvfUNzyLgY6TSsE_eW8ncfE4bHYZXKoTWxmQ=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=ECQTHXvMCP8"
   },
@@ -1485,6 +1474,17 @@
     "url": "https://www.youtube.com/watch?v=4Elubh_JpsM"
   },
   {
+    "name": "藤森ちとせ",
+    "youtubeid": "UCAhdxmsdngH4noySdpVAVWQ",
+    "title": "【#Minecraft 】深夜のゆるゆる雑談｜建築のための木材集めします🌙✨【#新人vtuber 】#ちとせらいぶ #パレデミア学園",
+    "date": "2026-08-17T00:00:27.000+09:00",
+    "status": "archive",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/Ug4SgTlrNXw/mqdefault.jpg",
+    "channelIcon": "https://yt3.ggpht.com/traR_yWe-AOGyM2wjo8h2FJO9JWBcbjfrL13X-umeD6BtNPopSZ2Q3YmdJq_5K9gWgHf_j64iQ=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=Ug4SgTlrNXw"
+  },
+  {
     "name": "無月いお",
     "youtubeid": "UC2X_mAVGw8e3N9JQZZDVBfQ",
     "title": "【#低音女子】投票イベ1stステージ突破！！《#パレデミア学園》",
@@ -1505,6 +1505,17 @@
     "thumbnail": "https://i.ytimg.com/vi/6ic7xdKUUP4/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/-7v40HQCqllHpJD69LHIo2n5lUt-pZ-bLtfrKAXhZk9OF06nj4Lno3gwBvO8d1jBSl5dCCxAxQ=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=6ic7xdKUUP4"
+  },
+  {
+    "name": "七音うら",
+    "youtubeid": "UCv2IYO-4waCpHvn50SWWY2A",
+    "title": "【#雑談配信 】回線ぐるぐるな日の雑談。【七音うら】",
+    "date": "2026-08-17T00:25:39.000+09:00",
+    "status": "archive",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/Pg0Q8oewfes/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/T655ATpSd2gkjZBrokvlkaUH0f5-fCpQdcJpwxmmNdy6fxCYffAlq2sMhPOtFk_CvVyOkEPY8Q=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=Pg0Q8oewfes"
   },
   {
     "name": "桜庭羽奈",
@@ -1544,11 +1555,22 @@
     "youtubeid": "UCpdWNjSU-onhmcARqgHIfpg",
     "title": "【#朝活】60人の人とおはようしたい！ #天堂観測【パレデミア学園/天堂ライラ】",
     "date": "2026-08-17T07:43:20.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/eGTl3x83SEo/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/eGTl3x83SEo/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/JA8QqThoUnCNAgJASH3p_wPyWJBf2ILiUfpIvArr6592NkkrFntPQ4EgPsahnLpPCMP4mk93ig=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=eGTl3x83SEo"
+  },
+  {
+    "name": "花晴りら",
+    "youtubeid": "UCqcnlq8uJqnGml6hcIrMCZw",
+    "title": "【縦型雑談/昼活】昼マック食べる🍔ランランランチ会🎶初見さん/ROM歓迎🌷【花晴りら/パレデミア学園】#れりライブ #vtuber",
+    "date": "2026-08-17T12:00:00.000+09:00",
+    "status": "upcoming",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/PrHhyqHwbAM/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/CH5JMWVQZ_RtloaXoj6W-yXjo9x8UxXSBG_vMyDnfk7M2QTOApVE1zOesu_aDrSAqvDbGrUyxs0=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=PrHhyqHwbAM"
   },
   {
     "name": "しーはむ",
@@ -1571,6 +1593,28 @@
     "thumbnail": "https://i.ytimg.com/vi/YhxJSPDoa5w/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/vb_kLF_4hQ7UdEtOnEtL-_pI320ZMQ-lVQ9OV3xMvdTQitHXX1zk0b6GKQ977dawvfoB5Sb8OQ=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=YhxJSPDoa5w"
+  },
+  {
+    "name": "天堂ライラ",
+    "youtubeid": "UCpdWNjSU-onhmcARqgHIfpg",
+    "title": "【#ゲーム】帰宅次第ゲームしたい枠！何するかは未定 #天堂観測【パレデミア学園/天堂ライラ】",
+    "date": "2026-08-17T22:30:00.000+09:00",
+    "status": "upcoming",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/8wHHlV1HQrw/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/JA8QqThoUnCNAgJASH3p_wPyWJBf2ILiUfpIvArr6592NkkrFntPQ4EgPsahnLpPCMP4mk93ig=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=8wHHlV1HQrw"
+  },
+  {
+    "name": "香鳴ハノン",
+    "youtubeid": "UCay6Y3oEoiC6ZEE2G0UZu_A",
+    "title": "【#香鳴ハノン6周年】活動6周年を一緒に迎えたい！カウントダウンで乾杯しよっ💗応援への感謝＆ライブの振り返り【#パレプロ #香鳴ハノン】",
+    "date": "2026-08-18T00:00:00.000+09:00",
+    "status": "upcoming",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/K8NIeMx7yOc/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/qvbeb9E-gYc822fxxzi6Ug5QyjhqZAWbUskHANcwDWP5W8iTsK3LcQJnjS4CVBuFJ6fONsM9F7M=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=K8NIeMx7yOc"
   },
   {
     "name": "しーはむ",

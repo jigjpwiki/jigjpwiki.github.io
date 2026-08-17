@@ -1128,7 +1128,7 @@
     "date": "2026-08-17T12:01:47.000+09:00",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/2xPkmZWuxgc/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/2xPkmZWuxgc/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/Z7PlAWhweuycNXNXoQ6etyDTkduySM-Kqy8kQW-AD19JuRdxT3HSdIxogPw3GPD5NHw_vZlf=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=2xPkmZWuxgc"
   },
@@ -1192,9 +1192,9 @@
     "youtubeid": "UCAhdxmsdngH4noySdpVAVWQ",
     "title": "【#Minecraft 】深夜のゆるゆる雑談｜ゴーレムトラップあると便利ですよね～🌙✨寝落ち・作業用にも💤ROM歓迎🎉【#新人vtuber 】#ちとせらいぶ #パレデミア学園",
     "date": "2026-08-17T18:59:27.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/PEzMnwrV1aA/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/PEzMnwrV1aA/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/traR_yWe-AOGyM2wjo8h2FJO9JWBcbjfrL13X-umeD6BtNPopSZ2Q3YmdJq_5K9gWgHf_j64iQ=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=PEzMnwrV1aA"
   },
@@ -1386,17 +1386,6 @@
     "url": "https://www.youtube.com/watch?v=htnCBvjhcjM"
   },
   {
-    "name": "天麗らん",
-    "youtubeid": "UCAa19AEBEEvh2tZ_FJKt5Rw",
-    "title": "【朗読】夢十夜　第九夜・第十夜/夏目漱石",
-    "date": "2026-08-17T22:00:23.000+09:00",
-    "status": "archive",
-    "type": "video",
-    "thumbnail": "https://i.ytimg.com/vi/7MmaSWR62CA/mqdefault.jpg",
-    "channelIcon": "https://yt3.ggpht.com/MS1hSixShoy77GfMxg8KL38vfYzD2NRZ5VnPyLyf5-Xg6WENZiAbydPV7YJLYECwRfp6rKNR8Q=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=7MmaSWR62CA"
-  },
-  {
     "name": "陰山アゲハ",
     "youtubeid": "UCIw8aQVRBwi72yOrPLgkbRQ",
     "title": "【雑談】無性に甘いものが食べたい女の雑談 初見/ROM歓迎👍【陰山アゲハ/#パレデミア学園 】",
@@ -1406,6 +1395,17 @@
     "thumbnail": "https://i.ytimg.com/vi/QOsBh9TVoCw/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/XWKUawU_WoX_xINkx3TMSF3fj0RbdiwNezFiEAGcmHfQYvwkjMUM1mvyOmgsbK8LxHoo6aEKJA=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=QOsBh9TVoCw"
+  },
+  {
+    "name": "天麗らん",
+    "youtubeid": "UCAa19AEBEEvh2tZ_FJKt5Rw",
+    "title": "【朗読】夢十夜　第九夜・第十夜/夏目漱石",
+    "date": "2026-08-17T22:00:23.000+09:00",
+    "status": "archive",
+    "type": "video",
+    "thumbnail": "https://i.ytimg.com/vi/7MmaSWR62CA/mqdefault.jpg",
+    "channelIcon": "https://yt3.ggpht.com/MS1hSixShoy77GfMxg8KL38vfYzD2NRZ5VnPyLyf5-Xg6WENZiAbydPV7YJLYECwRfp6rKNR8Q=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=7MmaSWR62CA"
   },
   {
     "name": "常磐カナメ",
@@ -1456,20 +1456,31 @@
     "youtubeid": "UCrpdBoGpa6g2WEtRWsIlhDQ",
     "title": "【歌雑】アイドルいっぱい！【相栖るじゅ/パレデミア学園】",
     "date": "2026-08-17T23:05:39.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/J9wSah4tM4E/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/J9wSah4tM4E/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/yQbh9vEEgS_UapoQhIxxoTSy13bDxlHYC-ncTcO9VIDBN2NvrLTAWeKGQ72CN2fhOOrHqYaFDA=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=J9wSah4tM4E"
+  },
+  {
+    "name": "雛菊のん",
+    "youtubeid": "UChccV6U0Tkx9de4YjXbEelw",
+    "title": "ドパガキでしょうか？#shorts #vtuber #新人vtuber #おしゃべり #おすすめにのりたい #バズれ",
+    "date": "2026-08-17T23:16:47.000+09:00",
+    "status": "archive",
+    "type": "video",
+    "thumbnail": "https://i.ytimg.com/vi/l1PYx7a-Wog/mqdefault.jpg",
+    "channelIcon": "https://yt3.ggpht.com/-7v40HQCqllHpJD69LHIo2n5lUt-pZ-bLtfrKAXhZk9OF06nj4Lno3gwBvO8d1jBSl5dCCxAxQ=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=l1PYx7a-Wog"
   },
   {
     "name": "香鳴ハノン",
     "youtubeid": "UCay6Y3oEoiC6ZEE2G0UZu_A",
     "title": "【#香鳴ハノン6周年】活動6周年を一緒に迎えたい！カウントダウンで乾杯しよっ💗応援への感謝＆ライブの振り返り【#パレプロ #香鳴ハノン】",
     "date": "2026-08-17T23:34:41.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/K8NIeMx7yOc/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/K8NIeMx7yOc/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/qvbeb9E-gYc822fxxzi6Ug5QyjhqZAWbUskHANcwDWP5W8iTsK3LcQJnjS4CVBuFJ6fONsM9F7M=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=K8NIeMx7yOc"
   },
@@ -1478,7 +1489,7 @@
     "youtubeid": "UC2X_mAVGw8e3N9JQZZDVBfQ",
     "title": "【#低音女子】ちる雑談をめざして《#パレデミア学園》",
     "date": "2026-08-18T00:02:04.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/rsuEWn-cAc4/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/Z7PlAWhweuycNXNXoQ6etyDTkduySM-Kqy8kQW-AD19JuRdxT3HSdIxogPw3GPD5NHw_vZlf=s240-c-k-c0x00ffffff-no-rj",
@@ -1500,11 +1511,22 @@
     "youtubeid": "UCpdWNjSU-onhmcARqgHIfpg",
     "title": "【#龍が如く6】広島出身Vtuberが龍が如く6を初見プレイ！ #07【天堂ライラ/パレデミア学園】",
     "date": "2026-08-18T00:30:28.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/8wHHlV1HQrw/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/JA8QqThoUnCNAgJASH3p_wPyWJBf2ILiUfpIvArr6592NkkrFntPQ4EgPsahnLpPCMP4mk93ig=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=8wHHlV1HQrw"
+  },
+  {
+    "name": "ローズ・ダマスクハート",
+    "youtubeid": "UCyY_NaAfv6k0CdHFcmYDqCA",
+    "title": "【#minecraft 】パレ学サーバーで遊ぶ＃２初見さん・rom専さん◎【ローズ・ダマスクハート／パレデミア学園ma　#shorts　#マインクラフト",
+    "date": "2026-08-18T01:48:30.000+09:00",
+    "status": "live",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/1FDCBYLLIJU/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/FR4hUBx4CbKSNHsSFNmOirsxutWwh99UiqdUFXaZQ4UmcMzTmlq3Wmbo-anCzIRenl3bojZ8Pg=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=1FDCBYLLIJU"
   },
   {
     "name": "桜庭羽奈",

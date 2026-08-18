@@ -1,27 +1,5 @@
 [
   {
-    "name": "陰山アゲハ",
-    "youtubeid": "UCIw8aQVRBwi72yOrPLgkbRQ",
-    "title": "【apex】8/30リスナー参加型追加抽選！そのあとは一緒にエペしてあそぶ！【陰山アゲハ/#パレデミア学園 】",
-    "date": "2026-08-15T14:00:34.000+09:00",
-    "status": "archive",
-    "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/VSyfr-mt0-A/mqdefault.jpg",
-    "channelIcon": "https://yt3.ggpht.com/XWKUawU_WoX_xINkx3TMSF3fj0RbdiwNezFiEAGcmHfQYvwkjMUM1mvyOmgsbK8LxHoo6aEKJA=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=VSyfr-mt0-A"
-  },
-  {
-    "name": "天透あわ",
-    "youtubeid": "UCXI0W_Os-BCIngpCb1YnOow",
-    "title": "【縦型雑談】いいお天気の日はだれかとお話したくなる🌞【パレデミア学園/天透あわ】",
-    "date": "2026-08-15T14:01:57.000+09:00",
-    "status": "archive",
-    "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/oada-jff5_U/mqdefault.jpg",
-    "channelIcon": "https://yt3.ggpht.com/Me8I_Op8OlIy8Vuj387_Hdi6gnrZ-qiY1yDDt1Q5yKMKA51ISagT76HE01gw8xbLcef0vpsPgoc=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=oada-jff5_U"
-  },
-  {
     "name": "七海ロナ",
     "youtubeid": "UCIaZylf5L9MsCMOJX3BdTEg",
     "title": "【ほの暮らしの庭】もうすぐ春が終わりますが、今日も今日とて働きます。※ネタバレあり【パレプロ／七海ロナ】",
@@ -1447,7 +1425,7 @@
     "date": "2026-08-18T00:03:15.000+09:00",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/qLmgt0OQmnY/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/qLmgt0OQmnY/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/T655ATpSd2gkjZBrokvlkaUH0f5-fCpQdcJpwxmmNdy6fxCYffAlq2sMhPOtFk_CvVyOkEPY8Q=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=qLmgt0OQmnY"
   },
@@ -1533,7 +1511,7 @@
     "youtubeid": "UCttSjPiwPYpiPuCrgxK7c1g",
     "title": "【ペンギンウォーズ】6日目、世界滅亡の元凶とご対面！！【愛乃宮ゆめ/パレデミア学園】",
     "date": "2026-08-18T11:59:46.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/KL3I0bxWNII/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/Gwr7KJNWnI6CEgmIfEeMZahF5pbGNKlRhQXBEkuMWE0D66--IJE77z-5Zu2i5LFBc_CA6ZkqY4Y=s240-c-k-c0x00ffffff-no-rj",
@@ -1555,7 +1533,7 @@
     "youtubeid": "UCnrJK-sb3gSn3kRLkmpmzaw",
     "title": "【#雑談 】お出かけ前にお話ししよおおお【鬼多見アユム🍊👹】",
     "date": "2026-08-18T12:00:36.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/PIZf4WOLutY/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/5l_IDFvbCkoc_xXy5i5YH24NcAgRR9bYZM9hu30Hm8may2x-7GiLIxkQ3DHQ4vI9uKwRUcbR6Q=s240-c-k-c0x00ffffff-no-rj",
@@ -1582,6 +1560,17 @@
     "thumbnail": "https://i.ytimg.com/vi/oTfJMacpPis/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/Ft5mSjImEah_xri4b9k0p2Olyhy6T_vj1ZxyglCcVbk2FqN-nrWqSMm5YoM_hEjeRQ9aaMjelV0=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=oTfJMacpPis"
+  },
+  {
+    "name": "緋雨柚",
+    "youtubeid": "UCrB-SfrqB5ChY8aAT99grXw",
+    "title": "【FF13-2】コア全部集めてその先へ　#５【パレデミア学園/緋雨柚】",
+    "date": "2026-08-18T13:03:16.000+09:00",
+    "status": "live",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/J0VlWqNOI1c/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/dPJHngNTeEfD_K0Mus141-We4xIuAhttm2pgEBl3VdGXqWvxGfy5mJfDMDbBmwI6UGc17dXb-g=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=J0VlWqNOI1c"
   },
   {
     "name": "火狐むい",

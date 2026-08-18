@@ -1,27 +1,5 @@
 [
   {
-    "name": "堂下さとり",
-    "youtubeid": "UCBq6MSUL-Ermvnoj3PtX7Iw",
-    "title": "【歌ってみた】大阪屋ショップ 店内BGM【アカペラ】",
-    "date": "2026-08-16T07:37:48.000+09:00",
-    "status": "archive",
-    "type": "video",
-    "thumbnail": "https://i.ytimg.com/vi/Eh2utNYFnkU/mqdefault.jpg",
-    "channelIcon": "https://yt3.ggpht.com/eW_Hug0M6zFk9QSbAmOUWLMSfzBlCHmes-8yAksvfUNzyLgY6TSsE_eW8ncfE4bHYZXKoTWxmQ=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=Eh2utNYFnkU"
-  },
-  {
-    "name": "天堂ライラ",
-    "youtubeid": "UCpdWNjSU-onhmcARqgHIfpg",
-    "title": "【#朝活】WIN5予測しながらおはようしたい！ #天堂観測【パレデミア学園/天堂ライラ】",
-    "date": "2026-08-16T07:40:37.000+09:00",
-    "status": "archive",
-    "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/u_irPN0lSMw/mqdefault.jpg",
-    "channelIcon": "https://yt3.ggpht.com/JA8QqThoUnCNAgJASH3p_wPyWJBf2ILiUfpIvArr6592NkkrFntPQ4EgPsahnLpPCMP4mk93ig=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=u_irPN0lSMw"
-  },
-  {
     "name": "江波キョウカ",
     "youtubeid": "UChpkyQ3O21OnkcMcgCoNHCg",
     "title": "꒰ঌ 歌枠 ┆ 初見さん60人と出会いたい✨#おはぴよ朝活 2026/08/16【 #江波キョウカ / パレプロ 】 #shorts #vtuber",
@@ -1271,7 +1249,7 @@
     "date": "2026-08-18T17:25:21.000+09:00",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/VpRYV8oJXLw/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/VpRYV8oJXLw/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/Me8I_Op8OlIy8Vuj387_Hdi6gnrZ-qiY1yDDt1Q5yKMKA51ISagT76HE01gw8xbLcef0vpsPgoc=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=VpRYV8oJXLw"
   },
@@ -1588,7 +1566,7 @@
     "youtubeid": "UCPgg_A08ksSYP-VivJGniRw",
     "title": "【おはよう100人待ってます！】水曜日乗り切れば勝ち組！初見さん大歓迎！💛【新人VTuberの雑談／歌枠】🐻",
     "date": "2026-08-19T06:29:37.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/4V4uZ_icJCY/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/04zALH6pYL7mkWILHajvBzfzg4hrwRCLBONme3K1PjuEeYJIRC6RYxPmJzVZRuN42skHEDNRGmo=s240-c-k-c0x00ffffff-no-rj",
@@ -1598,12 +1576,34 @@
     "name": "花晴りら",
     "youtubeid": "UCqcnlq8uJqnGml6hcIrMCZw",
     "title": "【毎日朝活/雑談】週のまんなか水曜日！200人におはよう言いたい朝活🔆初見さん大歓迎🌷【花晴りら/ #パレデミア学園 】#れりライブ",
-    "date": "2026-08-19T07:00:00.000+09:00",
-    "status": "upcoming",
+    "date": "2026-08-19T06:59:12.000+09:00",
+    "status": "live",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/kbHC0qpx9j0/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/CH5JMWVQZ_RtloaXoj6W-yXjo9x8UxXSBG_vMyDnfk7M2QTOApVE1zOesu_aDrSAqvDbGrUyxs0=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=kbHC0qpx9j0"
+  },
+  {
+    "name": "雛菊のん",
+    "youtubeid": "UChccV6U0Tkx9de4YjXbEelw",
+    "title": "朝のギャルは高カロリー？#新人vtuber #雑談",
+    "date": "2026-08-19T07:00:17.000+09:00",
+    "status": "live",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/ffoz5DY3eZA/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/-7v40HQCqllHpJD69LHIo2n5lUt-pZ-bLtfrKAXhZk9OF06nj4Lno3gwBvO8d1jBSl5dCCxAxQ=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=ffoz5DY3eZA"
+  },
+  {
+    "name": "天堂ライラ",
+    "youtubeid": "UCpdWNjSU-onhmcARqgHIfpg",
+    "title": "【#朝活】60人の人とおはようしたい！ #天堂観測【パレデミア学園/天堂ライラ】",
+    "date": "2026-08-19T07:30:23.000+09:00",
+    "status": "live",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/yKzh0M4DQms/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/JA8QqThoUnCNAgJASH3p_wPyWJBf2ILiUfpIvArr6592NkkrFntPQ4EgPsahnLpPCMP4mk93ig=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=yKzh0M4DQms"
   },
   {
     "name": "しーはむ",

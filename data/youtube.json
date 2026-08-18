@@ -1,16 +1,5 @@
 [
   {
-    "name": "鈴木沙透",
-    "youtubeid": "UCj5nRzNFXZn9GRhITRkKElA",
-    "title": "ホラゲでおばけを煽り散らかす#vtuber #パレデミア学園",
-    "date": "2026-08-15T23:25:24.000+09:00",
-    "status": "archive",
-    "type": "video",
-    "thumbnail": "https://i.ytimg.com/vi/w9ylr0xqUPg/mqdefault.jpg",
-    "channelIcon": "https://yt3.ggpht.com/h4kuTtFCGhkDV4nmk6qjQt8auhkqLEqWwB9Il3NZR6op3ph-a0YElRfLcXkZVPp6xqvGmZHy3w=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=w9ylr0xqUPg"
-  },
-  {
     "name": "七音うら",
     "youtubeid": "UCv2IYO-4waCpHvn50SWWY2A",
     "title": "【#雑談配信  】がちゃがちゃした日の雑談。【七音うら】",
@@ -1452,6 +1441,17 @@
     "url": "https://www.youtube.com/watch?v=UARLn1dpiDk"
   },
   {
+    "name": "水凪るぅ",
+    "youtubeid": "UCxAVEiT5nj07iqZo4Ymka0Q",
+    "title": "【Gartic Phone】ストーリーで遊んでたら店長ドMになった件。#新人VTuber#パレデミア学園",
+    "date": "2026-08-18T20:00:32.000+09:00",
+    "status": "archive",
+    "type": "video",
+    "thumbnail": "https://i.ytimg.com/vi/ancsJloJ3wU/mqdefault.jpg",
+    "channelIcon": "https://yt3.ggpht.com/UWKN-YZPLehhOew0000E-A8P4FZ5TB7C48g2KZGY4UDiheuj7UAI-IiS9m8v4nzuifg6JwdGKA=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=ancsJloJ3wU"
+  },
+  {
     "name": "銘兎目あう",
     "youtubeid": "UCpr-9ssUUgSb0EpDA8bRuTA",
     "title": "【Twitchアーカイブ】日本事故物件監視協会2 Japan Stigmatized Property👻【#銘兎目あう/ぷろのゔぁ】#ホラゲー",
@@ -1516,6 +1516,17 @@
     "thumbnail": "https://i.ytimg.com/vi/30jZ6DUW4yA/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/-7v40HQCqllHpJD69LHIo2n5lUt-pZ-bLtfrKAXhZk9OF06nj4Lno3gwBvO8d1jBSl5dCCxAxQ=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=30jZ6DUW4yA"
+  },
+  {
+    "name": "露草なぎ",
+    "youtubeid": "UC9nhm1B-XhPaUO8W8oc4thQ",
+    "title": "【雑談】yoru【露草なぎ/パレデミア学園】",
+    "date": "2026-08-18T22:00:36.000+09:00",
+    "status": "archive",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/TZgOYHeNpOg/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/3KzF3YSQvjRpSMpFZEEsaGlIcETMW03ZmdKQy_TjJIm8t9vC4AjNwLLR5hNqXi0M9qnyszb0PCY=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=TZgOYHeNpOg"
   },
   {
     "name": "火狐むい",

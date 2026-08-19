@@ -1,38 +1,5 @@
 [
   {
-    "name": "銘兎目あう",
-    "youtubeid": "UCpr-9ssUUgSb0EpDA8bRuTA",
-    "title": "【朗読】赤ずきん🐺｜グリム童話🐰📖【読み聞かせ】【#銘兎目あう/ぷろのゔぁ】#VTuber",
-    "date": "2026-08-16T23:02:02.000+09:00",
-    "status": "archive",
-    "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/ahk1alyeMbU/mqdefault.jpg",
-    "channelIcon": "https://yt3.ggpht.com/VB97J8AMHex_rkfd6hDhfiGhhVvrL-NNkseP2mMYSWh75sxA_oXctmxK5tV4FYgkM17RUAx6GQ=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=ahk1alyeMbU"
-  },
-  {
-    "name": "鬼多見アユム",
-    "youtubeid": "UCnrJK-sb3gSn3kRLkmpmzaw",
-    "title": "【#歌枠  】君の安眠用に【鬼多見アユム】",
-    "date": "2026-08-16T23:02:59.000+09:00",
-    "status": "archive",
-    "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/drqgLdr3HdY/mqdefault.jpg",
-    "channelIcon": "https://yt3.ggpht.com/5l_IDFvbCkoc_xXy5i5YH24NcAgRR9bYZM9hu30Hm8may2x-7GiLIxkQ3DHQ4vI9uKwRUcbR6Q=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=drqgLdr3HdY"
-  },
-  {
-    "name": "露草なぎ",
-    "youtubeid": "UC9nhm1B-XhPaUO8W8oc4thQ",
-    "title": "【雑談】旅行行ってきた！【露草なぎ/パレデミア学園】",
-    "date": "2026-08-16T23:28:16.000+09:00",
-    "status": "archive",
-    "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/4Elubh_JpsM/mqdefault.jpg",
-    "channelIcon": "https://yt3.ggpht.com/3KzF3YSQvjRpSMpFZEEsaGlIcETMW03ZmdKQy_TjJIm8t9vC4AjNwLLR5hNqXi0M9qnyszb0PCY=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=4Elubh_JpsM"
-  },
-  {
     "name": "Palette Project",
     "youtubeid": "UC_cCW1xmXwRFp1tX-RD2X1Q",
     "title": "絞りに絞って出した答えが…ｗ【パレプロ切り抜き】#shorts",
@@ -1201,7 +1168,7 @@
   {
     "name": "堂下さとり",
     "youtubeid": "UCBq6MSUL-Ermvnoj3PtX7Iw",
-    "title": "【雑談】ステージで歌いたい！！【堂下さとり/パレデミア学園】",
+    "title": "【歌枠】ステージで歌いたい！！【堂下さとり/パレデミア学園】",
     "date": "2026-08-19T12:11:19.000+09:00",
     "status": "archive",
     "type": "stream",
@@ -1357,9 +1324,9 @@
     "youtubeid": "UC0pz1TaDyqeO5p8_gbdeunw",
     "title": "【日本事故物件監視協会3（JSP3）】じゅぴ汰ちゃんと2人で事故物件調査‼️【ぷろのゔぁ/泡清みる】",
     "date": "2026-08-19T20:09:17.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/YY2OeEIOjKg/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/YY2OeEIOjKg/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/XefzBgTJORQ_8-p4C-a-57IHhaUNpY9becOfXRTDmQ4ezWFTtdBtXQ5H2tJlgUTnYBXUgwZ3dg=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=YY2OeEIOjKg"
   },
@@ -1368,9 +1335,9 @@
     "youtubeid": "UCHsAAyHJhPXuLS6N3Kig6PQ",
     "title": "【JSP3 日本事故物件監視協会3】泡清みるちゃんと協力して異常を見つけよう！【ホラゲー】",
     "date": "2026-08-19T20:17:41.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/OG90bKdkpEk/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/OG90bKdkpEk/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/QQqec9A1J7eLk9RrRYD9vvk51BBJzcE1leGkU9n4YkwHqht9gmGT1ktmSlKItQtbuMSGuklAFxM=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=OG90bKdkpEk"
   },
@@ -1485,15 +1452,37 @@
     "url": "https://www.youtube.com/watch?v=Qf3Hw6kkjq0"
   },
   {
+    "name": "常磐カナメ",
+    "youtubeid": "UCbNEgJIF_ADD9e8-q7SoxCg",
+    "title": "【踊ってみた】あやかき＊かしまし Tea Party！/いずれ菖蒲か杜若 #Shorts #常磐カナメ",
+    "date": "2026-08-19T22:07:06.000+09:00",
+    "status": "archive",
+    "type": "video",
+    "thumbnail": "https://i.ytimg.com/vi/HViCxf1e2oQ/mqdefault.jpg",
+    "channelIcon": "https://yt3.ggpht.com/vb_kLF_4hQ7UdEtOnEtL-_pI320ZMQ-lVQ9OV3xMvdTQitHXX1zk0b6GKQ977dawvfoB5Sb8OQ=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=HViCxf1e2oQ"
+  },
+  {
     "name": "灯野ぺけ。",
     "youtubeid": "UCldoz5HLh6BMW29HGnRpC0Q",
     "title": "チームデスマッチ参加型【ど初心者のよちよちApex💥】part20 初見さん/ROMさんもおいで～💥≪パレデミア学園 / 灯野ぺけ。≫ #vtuber #ゲーム配信 #apex",
-    "date": "2026-08-19T22:10:00.000+09:00",
-    "status": "upcoming",
+    "date": "2026-08-19T22:11:02.000+09:00",
+    "status": "live",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/s69M_c-yYFo/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/sYbvo_2nSCW162VEArIwu7v1B3bl159gmEnGgGei8I8drc4l7huPP7q6aWZ4AfXi5wTMACmGow=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=s69M_c-yYFo"
+  },
+  {
+    "name": "桜庭羽奈",
+    "youtubeid": "UCPgg_A08ksSYP-VivJGniRw",
+    "title": "【おはよう100人待ってます！】初のおは１００連続達成中！どこまで記録を伸ばせるか！初見さん大歓迎！💛【新人VTuberの雑談／歌枠】🐻",
+    "date": "2026-08-20T06:30:00.000+09:00",
+    "status": "upcoming",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/m4f_K6qPd4s/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/04zALH6pYL7mkWILHajvBzfzg4hrwRCLBONme3K1PjuEeYJIRC6RYxPmJzVZRuN42skHEDNRGmo=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=m4f_K6qPd4s"
   },
   {
     "name": "しーはむ",

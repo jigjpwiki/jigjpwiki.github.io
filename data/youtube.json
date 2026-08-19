@@ -1258,9 +1258,9 @@
     "youtubeid": "UCpdWNjSU-onhmcARqgHIfpg",
     "title": "【#龍が如く6】広島出身Vtuberが龍が如く6を初見プレイ！ #08【天堂ライラ/パレデミア学園】",
     "date": "2026-08-19T20:00:41.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/GycAF-V1Xh8/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/GycAF-V1Xh8/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/JA8QqThoUnCNAgJASH3p_wPyWJBf2ILiUfpIvArr6592NkkrFntPQ4EgPsahnLpPCMP4mk93ig=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=GycAF-V1Xh8"
   },
@@ -1425,7 +1425,7 @@
     "date": "2026-08-19T22:00:12.000+09:00",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/iVqjd9IiAbg/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/iVqjd9IiAbg/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/BaxFKUrCc4gGKc1wwAHt4ebjk8C69NdTl3fMz9LoR5SUm_Tpvv2yixsbJhp8qsld6S0tdgup=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=iVqjd9IiAbg"
   },
@@ -1505,6 +1505,28 @@
     "thumbnail": "https://i.ytimg.com/vi/DnVuibJGiN8/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/CH5JMWVQZ_RtloaXoj6W-yXjo9x8UxXSBG_vMyDnfk7M2QTOApVE1zOesu_aDrSAqvDbGrUyxs0=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=DnVuibJGiN8"
+  },
+  {
+    "name": "天堂ライラ",
+    "youtubeid": "UCpdWNjSU-onhmcARqgHIfpg",
+    "title": "【#作業雑談】コメント大歓迎！作業をしながらおはようしたい！8/20(木) #天堂観測【パレデミア学園/天堂ライラ】",
+    "date": "2026-08-20T07:30:00.000+09:00",
+    "status": "upcoming",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/QkJpt9oK7mQ/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/JA8QqThoUnCNAgJASH3p_wPyWJBf2ILiUfpIvArr6592NkkrFntPQ4EgPsahnLpPCMP4mk93ig=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=QkJpt9oK7mQ"
+  },
+  {
+    "name": "無月いお",
+    "youtubeid": "UC2X_mAVGw8e3N9JQZZDVBfQ",
+    "title": "【#低音女子】休憩時間をうちにください《#パレデミア学園》",
+    "date": "2026-08-20T12:00:00.000+09:00",
+    "status": "upcoming",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/ltytigxOVJg/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/Z7PlAWhweuycNXNXoQ6etyDTkduySM-Kqy8kQW-AD19JuRdxT3HSdIxogPw3GPD5NHw_vZlf=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=ltytigxOVJg"
   },
   {
     "name": "江波キョウカ",

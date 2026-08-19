@@ -1414,7 +1414,7 @@
     "date": "2026-08-19T02:18:14.000+09:00",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/4mWJJqm3P8A/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/4mWJJqm3P8A/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/Z7PlAWhweuycNXNXoQ6etyDTkduySM-Kqy8kQW-AD19JuRdxT3HSdIxogPw3GPD5NHw_vZlf=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=4mWJJqm3P8A"
   },
@@ -1538,6 +1538,28 @@
     "thumbnail": "https://i.ytimg.com/vi/IVJPMPK2LQI/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/rthBXvqjNFcVwEp-AWpiZDXnNjBodSXlsDTa-sjW6uR6Ssv3wuOw2dMXDZLlYaf_c4YiKfItHXU=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=IVJPMPK2LQI"
+  },
+  {
+    "name": "火狐むい",
+    "youtubeid": "UCaolaxqG55OJhU8qwRHHtQg",
+    "title": "【 #火狐むい 】STARDEW VALLEYまったり実況#4【 #パレデミア学園 】",
+    "date": "2026-08-19T16:03:04.000+09:00",
+    "status": "live",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/IoxFIU1AArE/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/Ft5mSjImEah_xri4b9k0p2Olyhy6T_vj1ZxyglCcVbk2FqN-nrWqSMm5YoM_hEjeRQ9aaMjelV0=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=IoxFIU1AArE"
+  },
+  {
+    "name": "花晴りら",
+    "youtubeid": "UCqcnlq8uJqnGml6hcIrMCZw",
+    "title": "【雑談】みんなで話そう！また～～り夕方チル雑談！【花晴りら/ #パレデミア学園 】#れりライブ",
+    "date": "2026-08-19T16:59:09.000+09:00",
+    "status": "live",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/TM5uExZHCpU/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/CH5JMWVQZ_RtloaXoj6W-yXjo9x8UxXSBG_vMyDnfk7M2QTOApVE1zOesu_aDrSAqvDbGrUyxs0=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=TM5uExZHCpU"
   },
   {
     "name": "香鳴ハノン",

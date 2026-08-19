@@ -1293,7 +1293,7 @@
     "date": "2026-08-19T06:29:37.000+09:00",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/4V4uZ_icJCY/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/4V4uZ_icJCY/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/04zALH6pYL7mkWILHajvBzfzg4hrwRCLBONme3K1PjuEeYJIRC6RYxPmJzVZRuN42skHEDNRGmo=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=4V4uZ_icJCY"
   },
@@ -1315,7 +1315,7 @@
     "date": "2026-08-19T07:00:17.000+09:00",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/ffoz5DY3eZA/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/ffoz5DY3eZA/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/-7v40HQCqllHpJD69LHIo2n5lUt-pZ-bLtfrKAXhZk9OF06nj4Lno3gwBvO8d1jBSl5dCCxAxQ=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=ffoz5DY3eZA"
   },
@@ -1489,7 +1489,7 @@
     "youtubeid": "UCay6Y3oEoiC6ZEE2G0UZu_A",
     "title": "【#ミズイロノオト 追加情報】1stワンマンのライブグッズ紹介＆事前販売について🩵【#パレプロ #香鳴ハノン】",
     "date": "2026-08-19T19:01:03.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/QJHYw1JNojs/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/qvbeb9E-gYc822fxxzi6Ug5QyjhqZAWbUskHANcwDWP5W8iTsK3LcQJnjS4CVBuFJ6fONsM9F7M=s240-c-k-c0x00ffffff-no-rj",
@@ -1507,37 +1507,15 @@
     "url": "https://www.youtube.com/watch?v=w6922R0ENIo"
   },
   {
-    "name": "泡清みる",
-    "youtubeid": "UC0pz1TaDyqeO5p8_gbdeunw",
-    "title": "【日本事故物件監視協会3（JSP3）】じゅぴ汰ちゃんと2人で事故物件調査‼️【ぷろのゔぁ/泡清みる】",
-    "date": "2026-08-19T20:00:00.000+09:00",
-    "status": "upcoming",
-    "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/YY2OeEIOjKg/mqdefault_live.jpg",
-    "channelIcon": "https://yt3.ggpht.com/XefzBgTJORQ_8-p4C-a-57IHhaUNpY9becOfXRTDmQ4ezWFTtdBtXQ5H2tJlgUTnYBXUgwZ3dg=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=YY2OeEIOjKg"
-  },
-  {
     "name": "天透あわ",
     "youtubeid": "UCXI0W_Os-BCIngpCb1YnOow",
     "title": "【初見歓迎】ちょこっと買い物してきた🛍【パレデミア学園/天透あわ】",
-    "date": "2026-08-19T20:00:00.000+09:00",
-    "status": "upcoming",
+    "date": "2026-08-19T19:59:23.000+09:00",
+    "status": "live",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/UARLn1dpiDk/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/Me8I_Op8OlIy8Vuj387_Hdi6gnrZ-qiY1yDDt1Q5yKMKA51ISagT76HE01gw8xbLcef0vpsPgoc=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=UARLn1dpiDk"
-  },
-  {
-    "name": "天堂ライラ",
-    "youtubeid": "UCpdWNjSU-onhmcARqgHIfpg",
-    "title": "【#龍が如く6】広島出身Vtuberが龍が如く6を初見プレイ！ #08【天堂ライラ/パレデミア学園】",
-    "date": "2026-08-19T20:00:00.000+09:00",
-    "status": "upcoming",
-    "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/GycAF-V1Xh8/mqdefault_live.jpg",
-    "channelIcon": "https://yt3.ggpht.com/JA8QqThoUnCNAgJASH3p_wPyWJBf2ILiUfpIvArr6592NkkrFntPQ4EgPsahnLpPCMP4mk93ig=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=GycAF-V1Xh8"
   },
   {
     "name": "李じゅぴ汰",
@@ -1551,6 +1529,39 @@
     "url": "https://www.youtube.com/watch?v=OG90bKdkpEk"
   },
   {
+    "name": "瀬奈りるか",
+    "youtubeid": "UCWi_ztz8Xuz4XfzhoG6ZfyA",
+    "title": "チルパズル配信のはずが...知能が追いつかないVTuber #vtuber #切り抜き #せなりるライブ",
+    "date": "2026-08-19T20:00:06.000+09:00",
+    "status": "archive",
+    "type": "video",
+    "thumbnail": "https://i.ytimg.com/vi/kyaEQFec_O8/mqdefault.jpg",
+    "channelIcon": "https://yt3.ggpht.com/BaxFKUrCc4gGKc1wwAHt4ebjk8C69NdTl3fMz9LoR5SUm_Tpvv2yixsbJhp8qsld6S0tdgup=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=kyaEQFec_O8"
+  },
+  {
+    "name": "天堂ライラ",
+    "youtubeid": "UCpdWNjSU-onhmcARqgHIfpg",
+    "title": "【#龍が如く6】広島出身Vtuberが龍が如く6を初見プレイ！ #08【天堂ライラ/パレデミア学園】",
+    "date": "2026-08-19T20:00:41.000+09:00",
+    "status": "live",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/GycAF-V1Xh8/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/JA8QqThoUnCNAgJASH3p_wPyWJBf2ILiUfpIvArr6592NkkrFntPQ4EgPsahnLpPCMP4mk93ig=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=GycAF-V1Xh8"
+  },
+  {
+    "name": "泡清みる",
+    "youtubeid": "UC0pz1TaDyqeO5p8_gbdeunw",
+    "title": "【日本事故物件監視協会3（JSP3）】じゅぴ汰ちゃんと2人で事故物件調査‼️【ぷろのゔぁ/泡清みる】",
+    "date": "2026-08-19T20:09:17.000+09:00",
+    "status": "live",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/YY2OeEIOjKg/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/XefzBgTJORQ_8-p4C-a-57IHhaUNpY9becOfXRTDmQ4ezWFTtdBtXQ5H2tJlgUTnYBXUgwZ3dg=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=YY2OeEIOjKg"
+  },
+  {
     "name": "花晴りら",
     "youtubeid": "UCqcnlq8uJqnGml6hcIrMCZw",
     "title": "【雑談】本日3回目の雑談！みんなが思う理想の朝活配信教えて！🔆💭【花晴りら/ #パレデミア学園 】#れりライブ",
@@ -1560,6 +1571,17 @@
     "thumbnail": "https://i.ytimg.com/vi/A9tUL5dmTAw/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/CH5JMWVQZ_RtloaXoj6W-yXjo9x8UxXSBG_vMyDnfk7M2QTOApVE1zOesu_aDrSAqvDbGrUyxs0=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=A9tUL5dmTAw"
+  },
+  {
+    "name": "露草なぎ",
+    "youtubeid": "UC9nhm1B-XhPaUO8W8oc4thQ",
+    "title": "【雑談】マイクラしてみる【露草なぎ/パレデミア学園】",
+    "date": "2026-08-19T22:00:00.000+09:00",
+    "status": "upcoming",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/SSLkbAlZQDU/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/3KzF3YSQvjRpSMpFZEEsaGlIcETMW03ZmdKQy_TjJIm8t9vC4AjNwLLR5hNqXi0M9qnyszb0PCY=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=SSLkbAlZQDU"
   },
   {
     "name": "しーはむ",

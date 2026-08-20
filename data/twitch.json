@@ -1,14 +1,5 @@
 [
   {
-    "name": "李じゅぴ汰",
-    "twitchid": "lee_jupita",
-    "title": "【リ・ストーリー: 思い出修理屋】お盆雑談多め！の修理屋さん【ずっと発売待ってた～！】",
-    "date": "2026-08-17T19:34:25.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/5706bc75-6841-4954-8894-7b7bfba16adb-profile_image-300x300.png",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/8d36774a4342b1755030_lee_jupita_316320124273_1786962859//thumb/thumb0-320x180.jpg"
-  },
-  {
     "name": "銘兎目あう",
     "twitchid": "Metome_Au",
     "title": "【スト６】1614MR～Mケン🥋久しぶりのカスタム参加型👊🐰🔥",
@@ -97,5 +88,14 @@
     "status": "archive",
     "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/76f2958e-cab4-41b8-98c1-cc4d275b2ca5-profile_image-300x300.png",
     "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/4eaead05ea26ce73189c_chi7_v_316396302707_1787147755//thumb/thumb0-320x180.jpg"
+  },
+  {
+    "name": "水透ユウ",
+    "twitchid": "minato_yu_",
+    "title": "【 Mブランカ 】大会、出ます🧸⚡【 #スト6 】",
+    "date": "2026-08-20T19:33:11.000+09:00",
+    "status": "live",
+    "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/fc4f961e-29c3-4f2e-9880-161fbf3b98eb-profile_image-300x300.png",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_minato_yu_-320x180.jpg"
   }
 ]

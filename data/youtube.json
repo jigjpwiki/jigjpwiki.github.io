@@ -1425,7 +1425,7 @@
     "date": "2026-08-20T01:34:22.000+09:00",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/yHp7NdXnl-w/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/yHp7NdXnl-w/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/dPJHngNTeEfD_K0Mus141-We4xIuAhttm2pgEBl3VdGXqWvxGfy5mJfDMDbBmwI6UGc17dXb-g=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=yHp7NdXnl-w"
   },
@@ -1507,6 +1507,17 @@
     "url": "https://www.youtube.com/watch?v=m0sYtKZ_DGQ"
   },
   {
+    "name": "堂下さとり",
+    "youtubeid": "UCBq6MSUL-Ermvnoj3PtX7Iw",
+    "title": "【ゲーム】　コラボ　めっちゃカメレオン　堂下さとり視点【堂下さとり/パレデミア学園】",
+    "date": "2026-08-20T21:00:00.000+09:00",
+    "status": "upcoming",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/4WNarGFbotg/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/eW_Hug0M6zFk9QSbAmOUWLMSfzBlCHmes-8yAksvfUNzyLgY6TSsE_eW8ncfE4bHYZXKoTWxmQ=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=4WNarGFbotg"
+  },
+  {
     "name": "江波キョウカ",
     "youtubeid": "UChpkyQ3O21OnkcMcgCoNHCg",
     "title": "꒰ঌ  視聴者参加型 #マリオカート8dx ┆#しらせきょんち と爆走ドライブにしゅっぱ～つ！🚗🚗 【 #江波キョウカ / 白河しらせ 】",
@@ -1531,7 +1542,7 @@
   {
     "name": "常磐カナメ",
     "youtubeid": "UCbNEgJIF_ADD9e8-q7SoxCg",
-    "title": "図書館で必要な知識が書かれた本を探し、謎を解け！【林檎は上を向く】【パレプロ/常磐カナメ】",
+    "title": "必要な知識が書かれた本を探し、謎を解け！【林檎は上を向く】【パレプロ/常磐カナメ】",
     "date": "2026-08-20T23:00:00.000+09:00",
     "status": "upcoming",
     "type": "stream",
@@ -1593,5 +1604,16 @@
     "thumbnail": "https://i.ytimg.com/vi/TgO7sJ3p8dA/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/Gwr7KJNWnI6CEgmIfEeMZahF5pbGNKlRhQXBEkuMWE0D66--IJE77z-5Zu2i5LFBc_CA6ZkqY4Y=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=TgO7sJ3p8dA"
+  },
+  {
+    "name": "しーはむ",
+    "youtubeid": "UC5xSDiB2WG4pO_zUZ_t-n0Q",
+    "title": "〘ほの暮らしの庭〙雑談しながら！秋の村でもほの暮らし⑩〘VTuber│#しーはむ│ぷろのゔぁ〙",
+    "date": "2026-08-25T11:00:00.000+09:00",
+    "status": "upcoming",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/pgysF5bewKU/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/y0zP0Uz7HSLx5dv3xo488Suxk8rJQQUC1wXaymjUBIQIwa25WlVu_VmrsT1xAyVD-jgeL7hs=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=pgysF5bewKU"
   }
 ]

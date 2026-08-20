@@ -1,38 +1,5 @@
 [
   {
-    "name": "香鳴ハノン",
-    "youtubeid": "UCay6Y3oEoiC6ZEE2G0UZu_A",
-    "title": "【3D LIVE】香鳴ハノン活動6周年記念ライブ！#モシモノハノ誕2026【#パレプロ #香鳴ハノン】",
-    "date": "2026-08-17T19:55:11.000+09:00",
-    "status": "archive",
-    "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/GpTaddOW2Is/mqdefault.jpg",
-    "channelIcon": "https://yt3.ggpht.com/qvbeb9E-gYc822fxxzi6Ug5QyjhqZAWbUskHANcwDWP5W8iTsK3LcQJnjS4CVBuFJ6fONsM9F7M=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=GpTaddOW2Is"
-  },
-  {
-    "name": "亀城ちかり",
-    "youtubeid": "UCn67GGb_NB7P17BVTduGkEw",
-    "title": "おじいちゃんの影響？#vtuber #切り抜き #パレデミア学園",
-    "date": "2026-08-17T20:00:15.000+09:00",
-    "status": "archive",
-    "type": "video",
-    "thumbnail": "https://i.ytimg.com/vi/IzIXGCa6aBA/mqdefault.jpg",
-    "channelIcon": "https://yt3.ggpht.com/FoMfSB8j5DfKLhYyYkZTiSDODTCNEaOlBJykfWqc56jsEvGHgPNq9b8UPkYdtAE6xHe9ZTCVrQ=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=IzIXGCa6aBA"
-  },
-  {
-    "name": "秋桜しゅお",
-    "youtubeid": "UCPjtwOeRQV5EFkCwUycZsgw",
-    "title": "【#歌枠配信 】同接80目標！#初見歓迎 連休明けだけどたのしく過ごそうぜ🧡【秋桜しゅお/登龍門BOX】#歌枠配信 #karaoke  #vtuber #vsinger  #懐メロ",
-    "date": "2026-08-17T20:03:40.000+09:00",
-    "status": "archive",
-    "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/N7XRjOUdPc4/mqdefault.jpg",
-    "channelIcon": "https://yt3.ggpht.com/WBGP05KaXeA21IzCbCeM0QHa0v9maVvVUBDZ2DyfTT62F1wGaW3hLOQBy1gCfuQfEnDNgwbsrQ=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=N7XRjOUdPc4"
-  },
-  {
     "name": "桜庭羽奈",
     "youtubeid": "UCPgg_A08ksSYP-VivJGniRw",
     "title": "【初見さん20人と会いたい！！】自分の説明って得意ですか？初見さん大歓迎！💛【新人VTuberの雑談／歌枠】🐻",
@@ -1326,7 +1293,7 @@
     "date": "2026-08-20T06:30:05.000+09:00",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/m4f_K6qPd4s/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/m4f_K6qPd4s/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/04zALH6pYL7mkWILHajvBzfzg4hrwRCLBONme3K1PjuEeYJIRC6RYxPmJzVZRuN42skHEDNRGmo=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=m4f_K6qPd4s"
   },
@@ -1441,15 +1408,70 @@
     "url": "https://www.youtube.com/watch?v=FZ_xmmq9FRQ"
   },
   {
+    "name": "天辻ゆらぐ",
+    "youtubeid": "UCeOFQCn_QZJMTszlRYRg3rQ",
+    "title": "【テスト雑談】アーカイブ残らないかも【天辻ゆらぐ/パレデミア学園】 #新人Vtuber #ゆらぐっどたいむ",
+    "date": "2026-08-20T18:23:46.000+09:00",
+    "status": "live",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/z3Z8ai_Wb3g/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/4AFFu60kFJqix-OhtDW3EJdQ0jQa1LrK56tGpvqvbGodMQFpkH-_qtvL_66dPGD3kl4LW9N4=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=z3Z8ai_Wb3g"
+  },
+  {
     "name": "七海ロナ",
     "youtubeid": "UCIaZylf5L9MsCMOJX3BdTEg",
     "title": "【ほの暮らしの庭】ダンボールベッドの暖かみを感じる、そんな秋 ※ネタバレあり【パレプロ／七海ロナ】",
-    "date": "2026-08-20T19:30:00.000+09:00",
-    "status": "upcoming",
+    "date": "2026-08-20T19:30:17.000+09:00",
+    "status": "live",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/12WOfvT7rMU/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/86cM_4q1A56pIYgdKxh776hM0nropjiZIlmXbfroWHXQ-MjdGGsjLcL5hMDOFL-T2EJHmybT=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=12WOfvT7rMU"
+  },
+  {
+    "name": "雛菊のん",
+    "youtubeid": "UChccV6U0Tkx9de4YjXbEelw",
+    "title": "帰宅した時に思うこと#shorts #vtuber #新人vtuber #おしゃべり #おすすめにのりたい #バズれ",
+    "date": "2026-08-20T19:59:49.000+09:00",
+    "status": "archive",
+    "type": "video",
+    "thumbnail": "https://i.ytimg.com/vi/g-E5z4EA2Yc/mqdefault.jpg",
+    "channelIcon": "https://yt3.ggpht.com/-7v40HQCqllHpJD69LHIo2n5lUt-pZ-bLtfrKAXhZk9OF06nj4Lno3gwBvO8d1jBSl5dCCxAxQ=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=g-E5z4EA2Yc"
+  },
+  {
+    "name": "瀬奈りるか",
+    "youtubeid": "UCWi_ztz8Xuz4XfzhoG6ZfyA",
+    "title": "とんでもない悪口マシュマロにびっくりするVTuber #vtuber #切り抜き #せなりるライブ",
+    "date": "2026-08-20T20:00:20.000+09:00",
+    "status": "archive",
+    "type": "video",
+    "thumbnail": "https://i.ytimg.com/vi/nRjZ_uk0tU0/mqdefault.jpg",
+    "channelIcon": "https://yt3.ggpht.com/BaxFKUrCc4gGKc1wwAHt4ebjk8C69NdTl3fMz9LoR5SUm_Tpvv2yixsbJhp8qsld6S0tdgup=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=nRjZ_uk0tU0"
+  },
+  {
+    "name": "秋桜しゅお",
+    "youtubeid": "UCPjtwOeRQV5EFkCwUycZsgw",
+    "title": "【#雑談配信 】#初見歓迎 疥癬はほぼ治ったけど最近社畜のVTuber【秋桜しゅお/登龍門BOX】#新人vtuber",
+    "date": "2026-08-20T20:01:01.000+09:00",
+    "status": "live",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/WA_JKayWvOQ/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/WBGP05KaXeA21IzCbCeM0QHa0v9maVvVUBDZ2DyfTT62F1wGaW3hLOQBy1gCfuQfEnDNgwbsrQ=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=WA_JKayWvOQ"
+  },
+  {
+    "name": "泡清みる",
+    "youtubeid": "UC0pz1TaDyqeO5p8_gbdeunw",
+    "title": "【第五人格】今日こそ！新ハンター心の獣に挑戦🔰【ぷろのゔぁ/泡清みる】",
+    "date": "2026-08-20T20:02:54.000+09:00",
+    "status": "live",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/lZpwJl1bOKs/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/XefzBgTJORQ_8-p4C-a-57IHhaUNpY9becOfXRTDmQ4ezWFTtdBtXQ5H2tJlgUTnYBXUgwZ3dg=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=lZpwJl1bOKs"
   },
   {
     "name": "花晴りら",
@@ -1505,6 +1527,17 @@
     "thumbnail": "https://i.ytimg.com/vi/E30JpewPbmU/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/vb_kLF_4hQ7UdEtOnEtL-_pI320ZMQ-lVQ9OV3xMvdTQitHXX1zk0b6GKQ977dawvfoB5Sb8OQ=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=E30JpewPbmU"
+  },
+  {
+    "name": "花晴りら",
+    "youtubeid": "UCqcnlq8uJqnGml6hcIrMCZw",
+    "title": "【毎日朝活/雑談】誕生日前日！300人におはよう言いたい朝活🔆初見さん大歓迎🌷【花晴りら/ #パレデミア学園 】#れりライブ",
+    "date": "2026-08-21T07:00:00.000+09:00",
+    "status": "upcoming",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/0mZQSVDBtjs/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/CH5JMWVQZ_RtloaXoj6W-yXjo9x8UxXSBG_vMyDnfk7M2QTOApVE1zOesu_aDrSAqvDbGrUyxs0=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=0mZQSVDBtjs"
   },
   {
     "name": "しーはむ",

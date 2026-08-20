@@ -1238,7 +1238,7 @@
     "date": "2026-08-19T20:01:07.000+09:00",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/vmhSmouoAm0/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/vmhSmouoAm0/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/WBGP05KaXeA21IzCbCeM0QHa0v9maVvVUBDZ2DyfTT62F1wGaW3hLOQBy1gCfuQfEnDNgwbsrQ=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=vmhSmouoAm0"
   },
@@ -1428,6 +1428,17 @@
     "thumbnail": "https://i.ytimg.com/vi/Qf3Hw6kkjq0/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/Ft5mSjImEah_xri4b9k0p2Olyhy6T_vj1ZxyglCcVbk2FqN-nrWqSMm5YoM_hEjeRQ9aaMjelV0=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=Qf3Hw6kkjq0"
+  },
+  {
+    "name": "氷雨セイ",
+    "youtubeid": "UCL66HaXfxrR23G8sCU5-cnA",
+    "title": "【#ミリシタ 】真、ごはん食べた？【#パレデミア学園】",
+    "date": "2026-08-19T22:03:52.000+09:00",
+    "status": "archive",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/UWRzSxU-eZA/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/4t0lTung_X29I2abs2pm5ds33Xmo4umZzRJdmvSfMlI639aZhci-OjxB65nuoH447t3wS99z6N4=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=UWRzSxU-eZA"
   },
   {
     "name": "常磐カナメ",

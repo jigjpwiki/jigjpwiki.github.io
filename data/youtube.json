@@ -1,27 +1,5 @@
 [
   {
-    "name": "緋雨柚",
-    "youtubeid": "UCrB-SfrqB5ChY8aAT99grXw",
-    "title": "【#雑談】今週の予定をきめます【パレデミア学園/緋雨柚】",
-    "date": "2026-08-17T13:00:31.000+09:00",
-    "status": "archive",
-    "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/jqB8tGtB5V0/mqdefault.jpg",
-    "channelIcon": "https://yt3.ggpht.com/dPJHngNTeEfD_K0Mus141-We4xIuAhttm2pgEBl3VdGXqWvxGfy5mJfDMDbBmwI6UGc17dXb-g=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=jqB8tGtB5V0"
-  },
-  {
-    "name": "堂下さとり",
-    "youtubeid": "UCBq6MSUL-Ermvnoj3PtX7Iw",
-    "title": "【歌ってみた】岩手コンポスト CM【新人Vtuber】アカペラ",
-    "date": "2026-08-17T13:09:01.000+09:00",
-    "status": "archive",
-    "type": "video",
-    "thumbnail": "https://i.ytimg.com/vi/nAAW3vh3ovQ/mqdefault.jpg",
-    "channelIcon": "https://yt3.ggpht.com/eW_Hug0M6zFk9QSbAmOUWLMSfzBlCHmes-8yAksvfUNzyLgY6TSsE_eW8ncfE4bHYZXKoTWxmQ=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=nAAW3vh3ovQ"
-  },
-  {
     "name": "常磐カナメ",
     "youtubeid": "UCbNEgJIF_ADD9e8-q7SoxCg",
     "title": "先輩で遊んでみた♡＄ #shorts #パレプロ",
@@ -1348,7 +1326,7 @@
     "date": "2026-08-19T22:00:21.000+09:00",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/SSLkbAlZQDU/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/SSLkbAlZQDU/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/3KzF3YSQvjRpSMpFZEEsaGlIcETMW03ZmdKQy_TjJIm8t9vC4AjNwLLR5hNqXi0M9qnyszb0PCY=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=SSLkbAlZQDU"
   },
@@ -1370,7 +1348,7 @@
     "date": "2026-08-19T22:00:43.000+09:00",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/Qf3Hw6kkjq0/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/Qf3Hw6kkjq0/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/Ft5mSjImEah_xri4b9k0p2Olyhy6T_vj1ZxyglCcVbk2FqN-nrWqSMm5YoM_hEjeRQ9aaMjelV0=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=Qf3Hw6kkjq0"
   },
@@ -1403,7 +1381,7 @@
     "date": "2026-08-19T22:11:02.000+09:00",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/s69M_c-yYFo/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/s69M_c-yYFo/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/sYbvo_2nSCW162VEArIwu7v1B3bl159gmEnGgGei8I8drc4l7huPP7q6aWZ4AfXi5wTMACmGow=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=s69M_c-yYFo"
   },
@@ -1419,13 +1397,24 @@
     "url": "https://www.youtube.com/watch?v=fkD_iKX3cDE"
   },
   {
+    "name": "鈴木沙透",
+    "youtubeid": "UCj5nRzNFXZn9GRhITRkKElA",
+    "title": "【#歌枠】初見も常連もお待ちしている！【鈴木沙透/パレデミア学園】",
+    "date": "2026-08-19T22:41:06.000+09:00",
+    "status": "archive",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/ijHZ18Fax3o/mqdefault.jpg",
+    "channelIcon": "https://yt3.ggpht.com/h4kuTtFCGhkDV4nmk6qjQt8auhkqLEqWwB9Il3NZR6op3ph-a0YElRfLcXkZVPp6xqvGmZHy3w=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=ijHZ18Fax3o"
+  },
+  {
     "name": "七音うら",
     "youtubeid": "UCv2IYO-4waCpHvn50SWWY2A",
     "title": "【#雑談配信 】お風呂あがりすぎる日の雑談。【七音うら】",
     "date": "2026-08-20T00:03:27.000+09:00",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/V2_mS5h0mK0/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/V2_mS5h0mK0/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/T655ATpSd2gkjZBrokvlkaUH0f5-fCpQdcJpwxmmNdy6fxCYffAlq2sMhPOtFk_CvVyOkEPY8Q=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=V2_mS5h0mK0"
   },
@@ -1456,9 +1445,9 @@
     "youtubeid": "UCqcnlq8uJqnGml6hcIrMCZw",
     "title": "【毎日朝活/雑談】今日も元気に昼まで朝活！300人におはよう言いたい朝活🔆初見さん大歓迎🌷【花晴りら/ #パレデミア学園 】#れりライブ",
     "date": "2026-08-20T06:59:45.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/DnVuibJGiN8/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/DnVuibJGiN8/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/CH5JMWVQZ_RtloaXoj6W-yXjo9x8UxXSBG_vMyDnfk7M2QTOApVE1zOesu_aDrSAqvDbGrUyxs0=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=DnVuibJGiN8"
   },
@@ -1500,11 +1489,22 @@
     "youtubeid": "UC2X_mAVGw8e3N9JQZZDVBfQ",
     "title": "【#低音女子】休憩時間をうちにください《#パレデミア学園》",
     "date": "2026-08-20T12:02:28.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/ltytigxOVJg/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/Z7PlAWhweuycNXNXoQ6etyDTkduySM-Kqy8kQW-AD19JuRdxT3HSdIxogPw3GPD5NHw_vZlf=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=ltytigxOVJg"
+  },
+  {
+    "name": "藤森ちとせ",
+    "youtubeid": "UCAhdxmsdngH4noySdpVAVWQ",
+    "title": "【#Minecraft 】お昼のゆるゆる雑談｜今日もゆるゆる露天掘りしちゃいましょうね～⛏作業用にも💤ROM歓迎🎉【#新人vtuber 】#ちとせらいぶ #パレデミア学園",
+    "date": "2026-08-20T13:04:58.000+09:00",
+    "status": "live",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/m0sYtKZ_DGQ/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/traR_yWe-AOGyM2wjo8h2FJO9JWBcbjfrL13X-umeD6BtNPopSZ2Q3YmdJq_5K9gWgHf_j64iQ=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=m0sYtKZ_DGQ"
   },
   {
     "name": "江波キョウカ",

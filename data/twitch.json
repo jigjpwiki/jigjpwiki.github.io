@@ -2,24 +2,6 @@
   {
     "name": "なかもとおまち",
     "twitchid": "41futon",
-    "title": "#８完全初見★DBシリーズ！～魔人ブウ編～ 天下一武道会に出場します",
-    "date": "2026-08-18T21:03:50.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/1405880b-e945-4720-98c9-6a08c6400cae-profile_image-300x300.png",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/cd736cfd028e141eb056_41futon_316334439026_1787054625//thumb/thumb0-320x180.jpg"
-  },
-  {
-    "name": "真昼ねる",
-    "twitchid": "mahiruneru",
-    "title": "〚 スト6 〛GO！Mジュリ！～ 他責連打ネキ誕生 ～【ぷろのゔぁ￤VTuber￤真昼ねる】",
-    "date": "2026-08-18T22:01:55.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/90e97ba8-20ac-4d1d-861a-d27ed84b5d70-profile_image-300x300.png",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/b9038943e93a3e508ca6_mahiruneru_316391625587_1787058110//thumb/thumb0-320x180.jpg"
-  },
-  {
-    "name": "なかもとおまち",
-    "twitchid": "41futon",
     "title": "さざ波の音で癒しランクマッチすなわちMRモリモリ作戦",
     "date": "2026-08-19T13:26:06.000+09:00",
     "status": "archive",
@@ -79,5 +61,23 @@
     "status": "archive",
     "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/1405880b-e945-4720-98c9-6a08c6400cae-profile_image-300x300.png",
     "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/d7269b5b5885bea0b614_41futon_316343333106_1787227793//thumb/thumb0-320x180.jpg"
+  },
+  {
+    "name": "李じゅぴ汰",
+    "twitchid": "lee_jupita",
+    "title": "【リ・ストーリー: 思い出修理屋】後輩のデビューを観る枠【同時視聴】",
+    "date": "2026-08-21T21:00:59.000+09:00",
+    "status": "live",
+    "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/5706bc75-6841-4954-8894-7b7bfba16adb-profile_image-300x300.png",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lee_jupita-320x180.jpg"
+  },
+  {
+    "name": "李じゅぴ汰",
+    "twitchid": "lee_jupita",
+    "title": "【リ・ストーリー: 思い出修理屋】後輩を観る枠",
+    "date": "2026-08-21T21:01:04.000+09:00",
+    "status": "archive",
+    "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/5706bc75-6841-4954-8894-7b7bfba16adb-profile_image-300x300.png",
+    "thumbnail": "https://vod-secure.twitch.tv/_404/404_processing_320x180.png"
   }
 ]

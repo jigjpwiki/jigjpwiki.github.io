@@ -1291,9 +1291,9 @@
     "youtubeid": "UCbNEgJIF_ADD9e8-q7SoxCg",
     "title": "本読むのが楽しくて全然進まない図書室謎とき！【林檎は上を向く#2】【パレプロ/常磐カナメ】",
     "date": "2026-08-21T20:00:06.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/Ju9syAwFBJc/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/Ju9syAwFBJc/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/vb_kLF_4hQ7UdEtOnEtL-_pI320ZMQ-lVQ9OV3xMvdTQitHXX1zk0b6GKQ977dawvfoB5Sb8OQ=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=Ju9syAwFBJc"
   },
@@ -1313,9 +1313,9 @@
     "youtubeid": "UCPgg_A08ksSYP-VivJGniRw",
     "title": "【高評価123目指す！】久々のテーマなし歌枠です！初見さん大歓迎！💛【新人VTuberの雑談／歌枠】🐻",
     "date": "2026-08-21T20:30:07.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/M9FANR7MlhQ/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/M9FANR7MlhQ/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/04zALH6pYL7mkWILHajvBzfzg4hrwRCLBONme3K1PjuEeYJIRC6RYxPmJzVZRuN42skHEDNRGmo=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=M9FANR7MlhQ"
   },
@@ -1357,7 +1357,7 @@
     "youtubeid": "UC8zjZBqGnx_j55ZJzluhW8A",
     "title": "【同時視聴】『ドラゴンボール』22～24話一緒にみよ！#あんにんたいむ #93 【パレデミア学園/香桜あんにん/＃新人VTuber】",
     "date": "2026-08-21T21:10:05.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/xYi15bbyy3o/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/LL8h8c1rjBm_CimsOmJqxMtfMpzaEZCJ56jM4iOTOaEaDLQ7f6fYwkAWggiJNEwh-aeggh3L-w=s240-c-k-c0x00ffffff-no-rj",
@@ -1375,17 +1375,6 @@
     "url": "https://www.youtube.com/watch?v=xei_oTkccGE"
   },
   {
-    "name": "泡清みる",
-    "youtubeid": "UC0pz1TaDyqeO5p8_gbdeunw",
-    "title": "【原神】アルハイゼンの伝説任務をやっていく🌱【ぷろのゔぁ/泡清みる】",
-    "date": "2026-08-21T22:00:00.000+09:00",
-    "status": "upcoming",
-    "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/4kABbmmKpL4/mqdefault_live.jpg",
-    "channelIcon": "https://yt3.ggpht.com/XefzBgTJORQ_8-p4C-a-57IHhaUNpY9becOfXRTDmQ4ezWFTtdBtXQ5H2tJlgUTnYBXUgwZ3dg=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=4kABbmmKpL4"
-  },
-  {
     "name": "瀬奈りるか",
     "youtubeid": "UCWi_ztz8Xuz4XfzhoG6ZfyA",
     "title": "【ゲヘナ2章】初めてのブルアカストーリー読み配信🌟ヒナちゃん最推し先生がゲヘナメインストーリーを初見で読む！✨【ブルーアーカイブ】※ネタバレ禁止 ＃せなりるライブ",
@@ -1401,7 +1390,7 @@
     "youtubeid": "UC9nhm1B-XhPaUO8W8oc4thQ",
     "title": "【雑談】明日休み？【露草なぎ/パレデミア学園】",
     "date": "2026-08-21T22:08:11.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/XXHR5umwPGo/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/3KzF3YSQvjRpSMpFZEEsaGlIcETMW03ZmdKQy_TjJIm8t9vC4AjNwLLR5hNqXi0M9qnyszb0PCY=s240-c-k-c0x00ffffff-no-rj",
@@ -1419,26 +1408,92 @@
     "url": "https://www.youtube.com/watch?v=XtAT1ug5pbo"
   },
   {
+    "name": "灯野ぺけ。",
+    "youtubeid": "UCldoz5HLh6BMW29HGnRpC0Q",
+    "title": "🌃華金スナックぺけ🌃初見さん/ROMさん大歓迎💥≪パレデミア学園 / 灯野ぺけ。≫ #vtuber #飲酒配信  #雑談",
+    "date": "2026-08-21T22:16:39.000+09:00",
+    "status": "live",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/bz8Y_5Ht6cU/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/sYbvo_2nSCW162VEArIwu7v1B3bl159gmEnGgGei8I8drc4l7huPP7q6aWZ4AfXi5wTMACmGow=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=bz8Y_5Ht6cU"
+  },
+  {
+    "name": "雛菊のん",
+    "youtubeid": "UChccV6U0Tkx9de4YjXbEelw",
+    "title": "お風呂上がりに思うこと#shorts #vtuber #新人vtuber #おしゃべり #おすすめにのりたい #バズれ",
+    "date": "2026-08-21T22:30:25.000+09:00",
+    "status": "archive",
+    "type": "video",
+    "thumbnail": "https://i.ytimg.com/vi/vesVwfNNgQ8/mqdefault.jpg",
+    "channelIcon": "https://yt3.ggpht.com/-7v40HQCqllHpJD69LHIo2n5lUt-pZ-bLtfrKAXhZk9OF06nj4Lno3gwBvO8d1jBSl5dCCxAxQ=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=vesVwfNNgQ8"
+  },
+  {
     "name": "藤森ちとせ",
     "youtubeid": "UCAhdxmsdngH4noySdpVAVWQ",
     "title": "【初心者APEX】もうそろそろチャンピオンを取りたいAPEX練習配信🔫✨【#新人vtuber 】#apex  #ちとせらいぶ #パレデミア学園",
-    "date": "2026-08-21T22:30:00.000+09:00",
-    "status": "upcoming",
+    "date": "2026-08-21T22:30:35.000+09:00",
+    "status": "archive",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/LyRqhdBKhCo/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/traR_yWe-AOGyM2wjo8h2FJO9JWBcbjfrL13X-umeD6BtNPopSZ2Q3YmdJq_5K9gWgHf_j64iQ=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=LyRqhdBKhCo"
   },
   {
+    "name": "ローズ・ダマスクハート",
+    "youtubeid": "UCyY_NaAfv6k0CdHFcmYDqCA",
+    "title": "【#apex 】きるきるきるっぴでキルしたいっぴ/桜堂、藤森【ローズ・ダマスクハート／パレデミア学園　】 #apexlegends  #新人vtuber",
+    "date": "2026-08-21T22:31:55.000+09:00",
+    "status": "archive",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/wTB2afOaGUk/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/FR4hUBx4CbKSNHsSFNmOirsxutWwh99UiqdUFXaZQ4UmcMzTmlq3Wmbo-anCzIRenl3bojZ8Pg=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=wTB2afOaGUk"
+  },
+  {
     "name": "桜堂ねる",
     "youtubeid": "UC0H7dRRqhfOifbYQ2TURdAg",
     "title": "圧倒的自由な！3人で #apex",
-    "date": "2026-08-21T22:30:00.000+09:00",
-    "status": "upcoming",
+    "date": "2026-08-21T22:32:49.000+09:00",
+    "status": "archive",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/nUj_w680dvY/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/hBz75E3AEST1Dzv5vOTHAqoJfayd30WIWWQ3ZFLlWMHDsyZ_QD6ZVVUtLTKSizalT3APPtdpFGI=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=nUj_w680dvY"
+  },
+  {
+    "name": "相栖るじゅ",
+    "youtubeid": "UCrpdBoGpa6g2WEtRWsIlhDQ",
+    "title": "【歌雑】あるこう！あいすはげんき！【相栖るじゅ/パレデミア学園】",
+    "date": "2026-08-21T22:37:47.000+09:00",
+    "status": "live",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/VZxxcarsvtA/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/yQbh9vEEgS_UapoQhIxxoTSy13bDxlHYC-ncTcO9VIDBN2NvrLTAWeKGQ72CN2fhOOrHqYaFDA=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=VZxxcarsvtA"
+  },
+  {
+    "name": "泡清みる",
+    "youtubeid": "UC0pz1TaDyqeO5p8_gbdeunw",
+    "title": "【原神】アルハイゼンの伝説任務をやっていく🌱【ぷろのゔぁ/泡清みる】",
+    "date": "2026-08-21T22:42:07.000+09:00",
+    "status": "live",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/4kABbmmKpL4/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/XefzBgTJORQ_8-p4C-a-57IHhaUNpY9becOfXRTDmQ4ezWFTtdBtXQ5H2tJlgUTnYBXUgwZ3dg=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=4kABbmmKpL4"
+  },
+  {
+    "name": "無月いお",
+    "youtubeid": "UC2X_mAVGw8e3N9JQZZDVBfQ",
+    "title": "【#低音女子】てすてす#パレデミア学園》",
+    "date": "2026-08-21T23:26:56.000+09:00",
+    "status": "live",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/X2KZb70Fr50/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/Z7PlAWhweuycNXNXoQ6etyDTkduySM-Kqy8kQW-AD19JuRdxT3HSdIxogPw3GPD5NHw_vZlf=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=X2KZb70Fr50"
   },
   {
     "name": "無月いお",
@@ -1452,6 +1507,17 @@
     "url": "https://www.youtube.com/watch?v=gHBMg7bjGDg"
   },
   {
+    "name": "桜庭羽奈",
+    "youtubeid": "UCPgg_A08ksSYP-VivJGniRw",
+    "title": "【おはよう100人待ってます！】朝枠強化の休日臨時開催！初見さん大歓迎！💛【新人VTuberの雑談／歌枠】🐻",
+    "date": "2026-08-22T06:30:00.000+09:00",
+    "status": "upcoming",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/CMHilnMlKf0/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/04zALH6pYL7mkWILHajvBzfzg4hrwRCLBONme3K1PjuEeYJIRC6RYxPmJzVZRuN42skHEDNRGmo=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=CMHilnMlKf0"
+  },
+  {
     "name": "雛菊のん",
     "youtubeid": "UChccV6U0Tkx9de4YjXbEelw",
     "title": "【#PR #100時間カレー 】新人ぎゃうvtuberが初手元配信✨初食レポに挑戦❣【パレデミア学園/雛菊のん/#新人vtuber 】",
@@ -1461,6 +1527,17 @@
     "thumbnail": "https://i.ytimg.com/vi/TrcyuEfAF3E/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/-7v40HQCqllHpJD69LHIo2n5lUt-pZ-bLtfrKAXhZk9OF06nj4Lno3gwBvO8d1jBSl5dCCxAxQ=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=TrcyuEfAF3E"
+  },
+  {
+    "name": "七海ロナ",
+    "youtubeid": "UCIaZylf5L9MsCMOJX3BdTEg",
+    "title": "【8周年記念🎉】大感謝雑談！9年目も生きていこう【パレプロ／七海ロナ】",
+    "date": "2026-08-22T19:30:00.000+09:00",
+    "status": "upcoming",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/omyJr_E3218/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/86cM_4q1A56pIYgdKxh776hM0nropjiZIlmXbfroWHXQ-MjdGGsjLcL5hMDOFL-T2EJHmybT=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=omyJr_E3218"
   },
   {
     "name": "愛乃宮ゆめ",
@@ -1494,5 +1571,16 @@
     "thumbnail": "https://i.ytimg.com/vi/pgysF5bewKU/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/y0zP0Uz7HSLx5dv3xo488Suxk8rJQQUC1wXaymjUBIQIwa25WlVu_VmrsT1xAyVD-jgeL7hs=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=pgysF5bewKU"
+  },
+  {
+    "name": "しーはむ",
+    "youtubeid": "UC5xSDiB2WG4pO_zUZ_t-n0Q",
+    "title": "〘ほの暮らしの庭〙雑談しながら！秋も折り返し地点！！⑪〘VTuber│#しーはむ│ぷろのゔぁ〙",
+    "date": "2026-08-26T11:00:00.000+09:00",
+    "status": "upcoming",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/e1YxFHGsjyA/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/y0zP0Uz7HSLx5dv3xo488Suxk8rJQQUC1wXaymjUBIQIwa25WlVu_VmrsT1xAyVD-jgeL7hs=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=e1YxFHGsjyA"
   }
 ]

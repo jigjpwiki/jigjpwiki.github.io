@@ -1423,9 +1423,9 @@
     "youtubeid": "UCrpdBoGpa6g2WEtRWsIlhDQ",
     "title": "【歌雑】あるこう！あいすはげんき！【相栖るじゅ/パレデミア学園】",
     "date": "2026-08-21T22:37:47.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/VZxxcarsvtA/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/VZxxcarsvtA/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/yQbh9vEEgS_UapoQhIxxoTSy13bDxlHYC-ncTcO9VIDBN2NvrLTAWeKGQ72CN2fhOOrHqYaFDA=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=VZxxcarsvtA"
   },
@@ -1434,9 +1434,9 @@
     "youtubeid": "UC0pz1TaDyqeO5p8_gbdeunw",
     "title": "【原神】アルハイゼンの伝説任務をやっていく🌱【ぷろのゔぁ/泡清みる】",
     "date": "2026-08-21T22:42:07.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/4kABbmmKpL4/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/4kABbmmKpL4/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/XefzBgTJORQ_8-p4C-a-57IHhaUNpY9becOfXRTDmQ4ezWFTtdBtXQ5H2tJlgUTnYBXUgwZ3dg=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=4kABbmmKpL4"
   },
@@ -1476,7 +1476,7 @@
   {
     "name": "花晴りら",
     "youtubeid": "UCqcnlq8uJqnGml6hcIrMCZw",
-    "title": "本日誕生日！私のこと、知ってください！【花晴りら】",
+    "title": "私のこと、知ってください！【花晴りら】 #新人vtuber",
     "date": "2026-08-22T00:00:33.000+09:00",
     "status": "archive",
     "type": "video",
@@ -1496,6 +1496,28 @@
     "url": "https://www.youtube.com/watch?v=gHBMg7bjGDg"
   },
   {
+    "name": "七音うら",
+    "youtubeid": "UCv2IYO-4waCpHvn50SWWY2A",
+    "title": "【#雑談配信 】残業ってなにそれ美味しいの？雑談。【七音うら】",
+    "date": "2026-08-22T01:03:02.000+09:00",
+    "status": "archive",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/YbOwNkdnvQY/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/T655ATpSd2gkjZBrokvlkaUH0f5-fCpQdcJpwxmmNdy6fxCYffAlq2sMhPOtFk_CvVyOkEPY8Q=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=YbOwNkdnvQY"
+  },
+  {
+    "name": "七音うら",
+    "youtubeid": "UCv2IYO-4waCpHvn50SWWY2A",
+    "title": "【#雑談配信 】残業ってなにそれ美味しいの？雑談。【七音うら】",
+    "date": "2026-08-22T01:47:20.000+09:00",
+    "status": "live",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/EKh4mNMd5-k/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/T655ATpSd2gkjZBrokvlkaUH0f5-fCpQdcJpwxmmNdy6fxCYffAlq2sMhPOtFk_CvVyOkEPY8Q=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=EKh4mNMd5-k"
+  },
+  {
     "name": "桜庭羽奈",
     "youtubeid": "UCPgg_A08ksSYP-VivJGniRw",
     "title": "【おはよう100人待ってます！】朝枠強化の休日臨時開催！初見さん大歓迎！💛【新人VTuberの雑談／歌枠】🐻",
@@ -1505,6 +1527,17 @@
     "thumbnail": "https://i.ytimg.com/vi/CMHilnMlKf0/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/04zALH6pYL7mkWILHajvBzfzg4hrwRCLBONme3K1PjuEeYJIRC6RYxPmJzVZRuN42skHEDNRGmo=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=CMHilnMlKf0"
+  },
+  {
+    "name": "花晴りら",
+    "youtubeid": "UCqcnlq8uJqnGml6hcIrMCZw",
+    "title": "【視聴者参加型/朝活】本日誕生日！コメ全部スパチャで3000万目指す耐久🔆初見さん大歓迎🌷【花晴りら/ #パレデミア学園 】#れりライブ",
+    "date": "2026-08-22T07:00:00.000+09:00",
+    "status": "upcoming",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/4b9_4mLmXXI/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/CH5JMWVQZ_RtloaXoj6W-yXjo9x8UxXSBG_vMyDnfk7M2QTOApVE1zOesu_aDrSAqvDbGrUyxs0=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=4b9_4mLmXXI"
   },
   {
     "name": "雛菊のん",

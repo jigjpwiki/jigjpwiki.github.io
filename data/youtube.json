@@ -1,38 +1,5 @@
 [
   {
-    "name": "瀬奈りるか",
-    "youtubeid": "UCWi_ztz8Xuz4XfzhoG6ZfyA",
-    "title": "自信満々めっちゃカメレオン🎨🖌【パレデミア学園コラボ】 #vtuber #せなりるライブ",
-    "date": "2026-08-18T19:00:05.000+09:00",
-    "status": "archive",
-    "type": "video",
-    "thumbnail": "https://i.ytimg.com/vi/d7DKTlgyRbY/mqdefault.jpg",
-    "channelIcon": "https://yt3.ggpht.com/BaxFKUrCc4gGKc1wwAHt4ebjk8C69NdTl3fMz9LoR5SUm_Tpvv2yixsbJhp8qsld6S0tdgup=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=d7DKTlgyRbY"
-  },
-  {
-    "name": "香鳴ハノン",
-    "youtubeid": "UCay6Y3oEoiC6ZEE2G0UZu_A",
-    "title": "【1st オリジナル楽曲MV】ミズイロノオト / 香鳴ハノン【パレプロ】",
-    "date": "2026-08-18T19:00:06.000+09:00",
-    "status": "archive",
-    "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/C1idHbTqYuA/mqdefault.jpg",
-    "channelIcon": "https://yt3.ggpht.com/qvbeb9E-gYc822fxxzi6Ug5QyjhqZAWbUskHANcwDWP5W8iTsK3LcQJnjS4CVBuFJ6fONsM9F7M=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=C1idHbTqYuA"
-  },
-  {
-    "name": "雪紫誉",
-    "youtubeid": "UCdbYinKlpkB_uMt_wPmYcsw",
-    "title": "【登録者1000人耐久！！】オオカミ系VTuberは耐久が怖い！#初見さん大歓迎 ◎【#パレデミア学園/#ゆきむらじお】【投票イベ開催中】＃新人VTuber＃雑談#耐久",
-    "date": "2026-08-18T19:00:49.000+09:00",
-    "status": "archive",
-    "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/KOufurhSyPQ/mqdefault.jpg",
-    "channelIcon": "https://yt3.ggpht.com/4RbHGCHx02xQ2ze4g7UCTvuUPlQCpbk6bHIb5cdqO4JNzTe5qsq4sDTt6m-xVKMm476vJiMF7A=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=KOufurhSyPQ"
-  },
-  {
     "name": "雛菊のん",
     "youtubeid": "UChccV6U0Tkx9de4YjXbEelw",
     "title": "語尾とお知らせ💕#新人vtuber #雑談",
@@ -1430,26 +1397,70 @@
     "url": "https://www.youtube.com/watch?v=U9qx2Cvrv6U"
   },
   {
+    "name": "香桜あんにん",
+    "youtubeid": "UC8zjZBqGnx_j55ZJzluhW8A",
+    "title": "次いつ会えるの？駄々っ子彼女シチュボ #shorts #新人vtuber",
+    "date": "2026-08-21T18:00:13.000+09:00",
+    "status": "archive",
+    "type": "video",
+    "thumbnail": "https://i.ytimg.com/vi/18Z2GneCumg/mqdefault.jpg",
+    "channelIcon": "https://yt3.ggpht.com/LL8h8c1rjBm_CimsOmJqxMtfMpzaEZCJ56jM4iOTOaEaDLQ7f6fYwkAWggiJNEwh-aeggh3L-w=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=18Z2GneCumg"
+  },
+  {
+    "name": "藤森ちとせ",
+    "youtubeid": "UCAhdxmsdngH4noySdpVAVWQ",
+    "title": "【#yapyap  】ゆらぐちゃんと初コラボ🎉｜たくさん魔法で壊しちゃいましょうね～✨【#新人vtuber 】#ちとせらいぶ #パレデミア学園",
+    "date": "2026-08-21T19:00:17.000+09:00",
+    "status": "live",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/SL8U_2944uc/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/traR_yWe-AOGyM2wjo8h2FJO9JWBcbjfrL13X-umeD6BtNPopSZ2Q3YmdJq_5K9gWgHf_j64iQ=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=SL8U_2944uc"
+  },
+  {
     "name": "天辻ゆらぐ",
     "youtubeid": "UCeOFQCn_QZJMTszlRYRg3rQ",
     "title": "【 #yapyap 】魔法協力型ホラーゲームを４人で実況【天辻ゆらぐ/パレデミア学園】 #新人Vtuber #ゆらぐっどたいむ",
-    "date": "2026-08-21T19:00:00.000+09:00",
-    "status": "upcoming",
+    "date": "2026-08-21T19:00:26.000+09:00",
+    "status": "live",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/rEn2Aki2jrs/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/4AFFu60kFJqix-OhtDW3EJdQ0jQa1LrK56tGpvqvbGodMQFpkH-_qtvL_66dPGD3kl4LW9N4=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=rEn2Aki2jrs"
   },
   {
-    "name": "藤森ちとせ",
-    "youtubeid": "UCAhdxmsdngH4noySdpVAVWQ",
-    "title": "【#yapyap  】ゆらぐちゃんと初コラボ🎉｜たくさん魔法で壊しちゃいましょうね～✨【#新人vtuber 】#ちとせらいぶ #パレデミア学園",
-    "date": "2026-08-21T19:00:00.000+09:00",
+    "name": "ローズ・ダマスクハート",
+    "youtubeid": "UCyY_NaAfv6k0CdHFcmYDqCA",
+    "title": "【#minecraft  】深夜にコソコソ雑談パレ学サーバー＃3 初見さん・rom専さん◎【ローズ・ダマスクハート／パレデミア学園】　#shorts　#雑談　#睡眠",
+    "date": "2026-08-21T19:01:15.000+09:00",
+    "status": "archive",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/_HnbXEkv70o/mqdefault.jpg",
+    "channelIcon": "https://yt3.ggpht.com/FR4hUBx4CbKSNHsSFNmOirsxutWwh99UiqdUFXaZQ4UmcMzTmlq3Wmbo-anCzIRenl3bojZ8Pg=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=_HnbXEkv70o"
+  },
+  {
+    "name": "ローズ・ダマスクハート",
+    "youtubeid": "UCyY_NaAfv6k0CdHFcmYDqCA",
+    "title": "【#yapyap 】初めましてメンバーで呪文唱えて敵を倒す！/藤森、天辻、桜堂【ローズ・ダマスクハート／#パレデミア学園　】 #ゲーム配信  #新人vtuber",
+    "date": "2026-08-21T19:03:44.000+09:00",
+    "status": "live",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/pCAkFw4_8FQ/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/FR4hUBx4CbKSNHsSFNmOirsxutWwh99UiqdUFXaZQ4UmcMzTmlq3Wmbo-anCzIRenl3bojZ8Pg=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=pCAkFw4_8FQ"
+  },
+  {
+    "name": "常磐カナメ",
+    "youtubeid": "UCbNEgJIF_ADD9e8-q7SoxCg",
+    "title": "本読むのが楽しくて全然進まない図書室謎とき！【林檎は上を向く#2】【パレプロ/常磐カナメ】",
+    "date": "2026-08-21T20:00:00.000+09:00",
     "status": "upcoming",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/SL8U_2944uc/mqdefault_live.jpg",
-    "channelIcon": "https://yt3.ggpht.com/traR_yWe-AOGyM2wjo8h2FJO9JWBcbjfrL13X-umeD6BtNPopSZ2Q3YmdJq_5K9gWgHf_j64iQ=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=SL8U_2944uc"
+    "thumbnail": "https://i.ytimg.com/vi/Ju9syAwFBJc/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/vb_kLF_4hQ7UdEtOnEtL-_pI320ZMQ-lVQ9OV3xMvdTQitHXX1zk0b6GKQ977dawvfoB5Sb8OQ=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=Ju9syAwFBJc"
   },
   {
     "name": "花晴りら",
@@ -1494,6 +1505,17 @@
     "thumbnail": "https://i.ytimg.com/vi/sMXL2jRxiVI/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/Gwr7KJNWnI6CEgmIfEeMZahF5pbGNKlRhQXBEkuMWE0D66--IJE77z-5Zu2i5LFBc_CA6ZkqY4Y=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=sMXL2jRxiVI"
+  },
+  {
+    "name": "無月いお",
+    "youtubeid": "UC2X_mAVGw8e3N9JQZZDVBfQ",
+    "title": "【#低音女子】いろいろ変えたからテスト雑談《#パレデミア学園》",
+    "date": "2026-08-22T00:00:00.000+09:00",
+    "status": "upcoming",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/gHBMg7bjGDg/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/Z7PlAWhweuycNXNXoQ6etyDTkduySM-Kqy8kQW-AD19JuRdxT3HSdIxogPw3GPD5NHw_vZlf=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=gHBMg7bjGDg"
   },
   {
     "name": "雛菊のん",

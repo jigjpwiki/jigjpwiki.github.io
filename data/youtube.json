@@ -1161,7 +1161,7 @@
     "date": "2026-08-20T20:01:01.000+09:00",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/WA_JKayWvOQ/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/WA_JKayWvOQ/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/WBGP05KaXeA21IzCbCeM0QHa0v9maVvVUBDZ2DyfTT62F1wGaW3hLOQBy1gCfuQfEnDNgwbsrQ=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=WA_JKayWvOQ"
   },
@@ -1434,9 +1434,9 @@
     "youtubeid": "UCpdWNjSU-onhmcARqgHIfpg",
     "title": "【#作業雑談】コメント大歓迎！作業をしながらおはようしたい！8/21(金) #天堂観測【パレデミア学園/天堂ライラ】",
     "date": "2026-08-21T07:34:29.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/FwNHirCqJaw/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/FwNHirCqJaw/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/JA8QqThoUnCNAgJASH3p_wPyWJBf2ILiUfpIvArr6592NkkrFntPQ4EgPsahnLpPCMP4mk93ig=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=FwNHirCqJaw"
   },
@@ -1450,6 +1450,17 @@
     "thumbnail": "https://i.ytimg.com/vi/mhDTv3-V0hc/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/y0zP0Uz7HSLx5dv3xo488Suxk8rJQQUC1wXaymjUBIQIwa25WlVu_VmrsT1xAyVD-jgeL7hs=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=mhDTv3-V0hc"
+  },
+  {
+    "name": "天堂ライラ",
+    "youtubeid": "UCpdWNjSU-onhmcARqgHIfpg",
+    "title": "【#龍が如く6】広島出身Vtuberが龍が如く6を初見プレイ！ #09【天堂ライラ/パレデミア学園】",
+    "date": "2026-08-21T12:00:00.000+09:00",
+    "status": "upcoming",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/5nnq7nzeVeI/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/JA8QqThoUnCNAgJASH3p_wPyWJBf2ILiUfpIvArr6592NkkrFntPQ4EgPsahnLpPCMP4mk93ig=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=5nnq7nzeVeI"
   },
   {
     "name": "愛乃宮ゆめ",

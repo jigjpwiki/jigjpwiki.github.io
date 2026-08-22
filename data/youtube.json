@@ -1,16 +1,5 @@
 [
   {
-    "name": "七海ロナ",
-    "youtubeid": "UCIaZylf5L9MsCMOJX3BdTEg",
-    "title": "【ほの暮らしの庭】夏真っ盛り🌞 ※ネタバレあり【パレプロ／七海ロナ】",
-    "date": "2026-08-19T19:12:00.000+09:00",
-    "status": "archive",
-    "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/w6922R0ENIo/mqdefault.jpg",
-    "channelIcon": "https://yt3.ggpht.com/86cM_4q1A56pIYgdKxh776hM0nropjiZIlmXbfroWHXQ-MjdGGsjLcL5hMDOFL-T2EJHmybT=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=w6922R0ENIo"
-  },
-  {
     "name": "天透あわ",
     "youtubeid": "UCXI0W_Os-BCIngpCb1YnOow",
     "title": "【初見歓迎】ちょこっと買い物してきた🛍【パレデミア学園/天透あわ】",
@@ -1419,6 +1408,17 @@
     "url": "https://www.youtube.com/watch?v=6l8meTFdjz8"
   },
   {
+    "name": "巳野みこと",
+    "youtubeid": "UCHBPF4eBZEAQ5MmiddmhM2w",
+    "title": "30分だけマイクラをやる配信【パレデミア学園】",
+    "date": "2026-08-22T15:09:25.000+09:00",
+    "status": "archive",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/sIIDxIJX3ug/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/3p9jAiFZNvnKiFnz-hu-u03CwwXSshaxv5bexFCUmNuZbW2W93YCg5BQ6OeqfUAzvBcxSeSKR74=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=sIIDxIJX3ug"
+  },
+  {
     "name": "桜庭羽奈",
     "youtubeid": "UCPgg_A08ksSYP-VivJGniRw",
     "title": "⑫【ネタバレ注意】完全初見プレイ！新人Vtuberがテイルズシリーズを実況プレイしてみた！【テイルズ オブ ベルセリア リマスター／ゲーム実況配信】",
@@ -1472,6 +1472,17 @@
     "thumbnail": "https://i.ytimg.com/vi/j-43jwQ_MBE/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/Me8I_Op8OlIy8Vuj387_Hdi6gnrZ-qiY1yDDt1Q5yKMKA51ISagT76HE01gw8xbLcef0vpsPgoc=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=j-43jwQ_MBE"
+  },
+  {
+    "name": "月皇ちな",
+    "youtubeid": "UCQ9ojibvAX4UXCMeDzuc68g",
+    "title": "CHO-DARI- 月皇ちな cover",
+    "date": "2026-08-22T21:00:00.000+09:00",
+    "status": "upcoming",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/LRJx7TFICtc/mqdefault.jpg",
+    "channelIcon": "https://yt3.ggpht.com/dPtSb9jgOlWAvy3_pEFIVzTc5iOd4OGhJQIVwjT6RpMAjOmJQHDzs0g2gYCjNEnlpcgQO8fb5-k=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=LRJx7TFICtc"
   },
   {
     "name": "愛乃宮ゆめ",

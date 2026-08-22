@@ -1,16 +1,5 @@
 [
   {
-    "name": "無月いお",
-    "youtubeid": "UC2X_mAVGw8e3N9JQZZDVBfQ",
-    "title": "エブリデイ誕生日#パレデミア学園#新人Vtuber#低音女子#切り抜き",
-    "date": "2026-08-19T18:30:14.000+09:00",
-    "status": "archive",
-    "type": "video",
-    "thumbnail": "https://i.ytimg.com/vi/boKNW2N1f4o/mqdefault.jpg",
-    "channelIcon": "https://yt3.ggpht.com/Z7PlAWhweuycNXNXoQ6etyDTkduySM-Kqy8kQW-AD19JuRdxT3HSdIxogPw3GPD5NHw_vZlf=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=boKNW2N1f4o"
-  },
-  {
     "name": "七海ロナ",
     "youtubeid": "UCIaZylf5L9MsCMOJX3BdTEg",
     "title": ":,-(",
@@ -1430,13 +1419,24 @@
     "url": "https://www.youtube.com/watch?v=D_KfCgzxNh0"
   },
   {
+    "name": "銘兎目あう",
+    "youtubeid": "UCpr-9ssUUgSb0EpDA8bRuTA",
+    "title": "【スト６】1608MR～Mケン🥋9月5日の大会に向けて練習👊🐰🔥【#銘兎目あう/ぷろのゔぁ】#スト6 #VTuber #スト6 #銘兎目あう #shorts",
+    "date": "2026-08-22T14:34:16.000+09:00",
+    "status": "archive",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/Z1rvoEejMy0/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/VB97J8AMHex_rkfd6hDhfiGhhVvrL-NNkseP2mMYSWh75sxA_oXctmxK5tV4FYgkM17RUAx6GQ=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=Z1rvoEejMy0"
+  },
+  {
     "name": "花晴りら",
     "youtubeid": "UCqcnlq8uJqnGml6hcIrMCZw",
     "title": "【雑談/歌枠】誕生日🎂みんなのリクエストソング歌う🎤🎶【花晴りら/ #パレデミア学園 】#れりライブ",
     "date": "2026-08-22T14:59:33.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/6l8meTFdjz8/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/6l8meTFdjz8/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/CH5JMWVQZ_RtloaXoj6W-yXjo9x8UxXSBG_vMyDnfk7M2QTOApVE1zOesu_aDrSAqvDbGrUyxs0=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=6l8meTFdjz8"
   },
@@ -1450,6 +1450,17 @@
     "thumbnail": "https://i.ytimg.com/vi/W335vvdr_rE/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/04zALH6pYL7mkWILHajvBzfzg4hrwRCLBONme3K1PjuEeYJIRC6RYxPmJzVZRuN42skHEDNRGmo=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=W335vvdr_rE"
+  },
+  {
+    "name": "堂下さとり",
+    "youtubeid": "UCBq6MSUL-Ermvnoj3PtX7Iw",
+    "title": "【雑談】30分だけやりまーす【堂下さとり/パレデミア学園】",
+    "date": "2026-08-22T18:24:40.000+09:00",
+    "status": "live",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/7p7AzAZtXD8/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/eW_Hug0M6zFk9QSbAmOUWLMSfzBlCHmes-8yAksvfUNzyLgY6TSsE_eW8ncfE4bHYZXKoTWxmQ=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=7p7AzAZtXD8"
   },
   {
     "name": "雛菊のん",
@@ -1472,6 +1483,17 @@
     "thumbnail": "https://i.ytimg.com/vi/omyJr_E3218/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/86cM_4q1A56pIYgdKxh776hM0nropjiZIlmXbfroWHXQ-MjdGGsjLcL5hMDOFL-T2EJHmybT=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=omyJr_E3218"
+  },
+  {
+    "name": "天透あわ",
+    "youtubeid": "UCXI0W_Os-BCIngpCb1YnOow",
+    "title": "【初見さん大歓迎】いろいろやる配信🌟",
+    "date": "2026-08-22T20:00:00.000+09:00",
+    "status": "upcoming",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/j-43jwQ_MBE/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/Me8I_Op8OlIy8Vuj387_Hdi6gnrZ-qiY1yDDt1Q5yKMKA51ISagT76HE01gw8xbLcef0vpsPgoc=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=j-43jwQ_MBE"
   },
   {
     "name": "愛乃宮ゆめ",

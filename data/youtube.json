@@ -1390,7 +1390,7 @@
     "youtubeid": "UCNb9zRVc1coFKxJAn9lVtsw",
     "title": "【縦型雑談配信】リアイベに出たいんだよ！！初見さん歓迎！【フローレ・ブランカ/パレデミア学園】",
     "date": "2026-08-22T22:47:11.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/Pte7F8vx7fY/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/xqdNSKZCNQ6ekbqgjixeOR0aTymLfmP_ILAFQ4sBF7ln-ZWxQYkVjGBun2pF1PwVC6nmwi2KFxE=s240-c-k-c0x00ffffff-no-rj",
@@ -1417,6 +1417,17 @@
     "thumbnail": "https://i.ytimg.com/vi/g1EvJ_Sc0z8/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/h4kuTtFCGhkDV4nmk6qjQt8auhkqLEqWwB9Il3NZR6op3ph-a0YElRfLcXkZVPp6xqvGmZHy3w=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=g1EvJ_Sc0z8"
+  },
+  {
+    "name": "雪紫誉",
+    "youtubeid": "UCdbYinKlpkB_uMt_wPmYcsw",
+    "title": "【#参加型麻雀 】超超超‼ド初心者がやる三人麻雀#初見さん大歓迎 ◎【#パレデミア学園/#ゆきむらじお】【投票イベ開催中】＃新人VTuber＃雑談#耐久",
+    "date": "2026-08-22T23:35:35.000+09:00",
+    "status": "live",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/UUVxSefPCaI/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/4RbHGCHx02xQ2ze4g7UCTvuUPlQCpbk6bHIb5cdqO4JNzTe5qsq4sDTt6m-xVKMm476vJiMF7A=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=UUVxSefPCaI"
   },
   {
     "name": "無月いお",

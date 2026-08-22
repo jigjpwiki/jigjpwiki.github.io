@@ -1313,7 +1313,7 @@
     "youtubeid": "UC2X_mAVGw8e3N9JQZZDVBfQ",
     "title": "【#低音女子】ぶち切れVALO《#パレデミア学園》",
     "date": "2026-08-22T21:38:53.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/5UGM16LynAc/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/Z7PlAWhweuycNXNXoQ6etyDTkduySM-Kqy8kQW-AD19JuRdxT3HSdIxogPw3GPD5NHw_vZlf=s240-c-k-c0x00ffffff-no-rj",
@@ -1335,7 +1335,7 @@
     "youtubeid": "UCldoz5HLh6BMW29HGnRpC0Q",
     "title": "ガンダムSEED同時視聴【21話～】🛰️🚀🌌初見さん/ROMさん大歓迎💥≪パレデミア学園 / 灯野ぺけ。≫ #vtuber #ガンダムSEED  #同時視聴",
     "date": "2026-08-22T22:01:46.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/CSAeF5JU0Gg/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/sYbvo_2nSCW162VEArIwu7v1B3bl159gmEnGgGei8I8drc4l7huPP7q6aWZ4AfXi5wTMACmGow=s240-c-k-c0x00ffffff-no-rj",
@@ -1353,6 +1353,28 @@
     "url": "https://www.youtube.com/watch?v=XYN48fE--1E"
   },
   {
+    "name": "相栖るじゅ",
+    "youtubeid": "UCrpdBoGpa6g2WEtRWsIlhDQ",
+    "title": "【歌雑】投票イベントらすと！【相栖るじゅ/パレデミア学園】",
+    "date": "2026-08-22T22:40:53.000+09:00",
+    "status": "live",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/ftkv1srz2D4/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/yQbh9vEEgS_UapoQhIxxoTSy13bDxlHYC-ncTcO9VIDBN2NvrLTAWeKGQ72CN2fhOOrHqYaFDA=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=ftkv1srz2D4"
+  },
+  {
+    "name": "雛菊のん",
+    "youtubeid": "UChccV6U0Tkx9de4YjXbEelw",
+    "title": "100時間カレーとコラボしたギャル#shorts #100時間カレー #PR #vtuber #新人vtuber #おしゃべり #おすすめにのりたい #バズれ",
+    "date": "2026-08-22T22:44:42.000+09:00",
+    "status": "archive",
+    "type": "video",
+    "thumbnail": "https://i.ytimg.com/vi/cOkIrjlbXv8/mqdefault.jpg",
+    "channelIcon": "https://yt3.ggpht.com/-7v40HQCqllHpJD69LHIo2n5lUt-pZ-bLtfrKAXhZk9OF06nj4Lno3gwBvO8d1jBSl5dCCxAxQ=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=cOkIrjlbXv8"
+  },
+  {
     "name": "フローレ・ブランカ",
     "youtubeid": "UCNb9zRVc1coFKxJAn9lVtsw",
     "title": "【縦型雑談配信】リアイベに出たいんだよ！！初見さん歓迎！【フローレ・ブランカ/パレデミア学園】",
@@ -1362,6 +1384,28 @@
     "thumbnail": "https://i.ytimg.com/vi/Pte7F8vx7fY/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/xqdNSKZCNQ6ekbqgjixeOR0aTymLfmP_ILAFQ4sBF7ln-ZWxQYkVjGBun2pF1PwVC6nmwi2KFxE=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=Pte7F8vx7fY"
+  },
+  {
+    "name": "天堂ライラ",
+    "youtubeid": "UCpdWNjSU-onhmcARqgHIfpg",
+    "title": "【#雑談】久しぶりにただお話をするだけ！投票イベ3rd進みたい！ #天堂観測【パレデミア学園/天堂ライラ】",
+    "date": "2026-08-22T22:59:20.000+09:00",
+    "status": "live",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/zuwgOp80564/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/JA8QqThoUnCNAgJASH3p_wPyWJBf2ILiUfpIvArr6592NkkrFntPQ4EgPsahnLpPCMP4mk93ig=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=zuwgOp80564"
+  },
+  {
+    "name": "鈴木沙透",
+    "youtubeid": "UCj5nRzNFXZn9GRhITRkKElA",
+    "title": "【#歌枠 】明日歌枠リレーあるから練習【鈴木沙透/パレデミア学園】",
+    "date": "2026-08-22T23:10:07.000+09:00",
+    "status": "live",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/g1EvJ_Sc0z8/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/h4kuTtFCGhkDV4nmk6qjQt8auhkqLEqWwB9Il3NZR6op3ph-a0YElRfLcXkZVPp6xqvGmZHy3w=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=g1EvJ_Sc0z8"
   },
   {
     "name": "無月いお",

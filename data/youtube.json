@@ -1,38 +1,5 @@
 [
   {
-    "name": "露草なぎ",
-    "youtubeid": "UC9nhm1B-XhPaUO8W8oc4thQ",
-    "title": "【雑談】雑談するんよ【露草なぎ/パレデミア学園】",
-    "date": "2026-08-20T21:59:16.000+09:00",
-    "status": "archive",
-    "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/BRjwF_wfEl0/mqdefault.jpg",
-    "channelIcon": "https://yt3.ggpht.com/3KzF3YSQvjRpSMpFZEEsaGlIcETMW03ZmdKQy_TjJIm8t9vC4AjNwLLR5hNqXi0M9qnyszb0PCY=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=BRjwF_wfEl0"
-  },
-  {
-    "name": "火狐むい",
-    "youtubeid": "UCaolaxqG55OJhU8qwRHHtQg",
-    "title": "【 火狐むい 】涼宮ハルヒの憂鬱同時視聴＃４＆雑談【 パレデミア学園 】#新人VTuber #初見さん歓迎",
-    "date": "2026-08-20T22:00:31.000+09:00",
-    "status": "archive",
-    "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/cGzN5NPdj0g/mqdefault.jpg",
-    "channelIcon": "https://yt3.ggpht.com/Ft5mSjImEah_xri4b9k0p2Olyhy6T_vj1ZxyglCcVbk2FqN-nrWqSMm5YoM_hEjeRQ9aaMjelV0=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=cGzN5NPdj0g"
-  },
-  {
-    "name": "変幻リメ",
-    "youtubeid": "UC5bCRde8xRrNS7s6GjCNCyQ",
-    "title": "【スプラトゥーン3】完全初見！メイン武器探していく！🦑【#変幻リメ】",
-    "date": "2026-08-20T22:02:21.000+09:00",
-    "status": "archive",
-    "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/rx8KO0NVmWA/mqdefault.jpg",
-    "channelIcon": "https://yt3.ggpht.com/4hssn4EXW2lORXRfiuYTjmYfnlZoQ2h72sdEompqX7GQwAKCsBx7eL0joCFSook1rfCKIcpykg=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=rx8KO0NVmWA"
-  },
-  {
     "name": "相栖るじゅ",
     "youtubeid": "UCrpdBoGpa6g2WEtRWsIlhDQ",
     "title": "【歌雑】甲子園が楽しみな、おなご【相栖るじゅ/パレデミア学園】",
@@ -1379,11 +1346,22 @@
     "youtubeid": "UChccV6U0Tkx9de4YjXbEelw",
     "title": "ミュゥ寮歌枠リレー！！２番目！！雛菊のん❣#新人vtuber #歌枠",
     "date": "2026-08-23T20:30:12.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/3NzkDC25O4Q/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/-7v40HQCqllHpJD69LHIo2n5lUt-pZ-bLtfrKAXhZk9OF06nj4Lno3gwBvO8d1jBSl5dCCxAxQ=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=3NzkDC25O4Q"
+  },
+  {
+    "name": "藤森ちとせ",
+    "youtubeid": "UCAhdxmsdngH4noySdpVAVWQ",
+    "title": "【#Minecraft 】メサ露天掘り雑談｜金を求めて1チャンク掘ります⛏✨寝落ち・作業用にも☺ROM歓迎🎉【#新人vtuber 】#ちとせらいぶ #パレデミア学園",
+    "date": "2026-08-23T20:58:31.000+09:00",
+    "status": "live",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/ymZpWwgLxOA/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/traR_yWe-AOGyM2wjo8h2FJO9JWBcbjfrL13X-umeD6BtNPopSZ2Q3YmdJq_5K9gWgHf_j64iQ=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=ymZpWwgLxOA"
   },
   {
     "name": "愛乃宮ゆめ",
@@ -1397,15 +1375,81 @@
     "url": "https://www.youtube.com/watch?v=TgO7sJ3p8dA"
   },
   {
+    "name": "鈴木沙透",
+    "youtubeid": "UCj5nRzNFXZn9GRhITRkKElA",
+    "title": "【#歌枠 】ミュゥ寮夏の歌枠リレー配信【鈴木沙透/パレデミア学園】",
+    "date": "2026-08-23T21:30:26.000+09:00",
+    "status": "archive",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/4BQN05PvIpM/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/h4kuTtFCGhkDV4nmk6qjQt8auhkqLEqWwB9Il3NZR6op3ph-a0YElRfLcXkZVPp6xqvGmZHy3w=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=4BQN05PvIpM"
+  },
+  {
+    "name": "香桜あんにん",
+    "youtubeid": "UC8zjZBqGnx_j55ZJzluhW8A",
+    "title": "【めざせ！チャンネル登録1000人】1000人目はあなた？#あんにんたいむ #95 【パレデミア学園/香桜あんにん/＃新人VTuber】",
+    "date": "2026-08-23T21:32:29.000+09:00",
+    "status": "live",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/ZHUa5wGZR-w/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/LL8h8c1rjBm_CimsOmJqxMtfMpzaEZCJ56jM4iOTOaEaDLQ7f6fYwkAWggiJNEwh-aeggh3L-w=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=ZHUa5wGZR-w"
+  },
+  {
+    "name": "堂下さとり",
+    "youtubeid": "UCBq6MSUL-Ermvnoj3PtX7Iw",
+    "title": "【参加型】8月23日大喜利茶屋 【堂下さとり/パレデミア学園】",
+    "date": "2026-08-23T21:50:40.000+09:00",
+    "status": "live",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/hBW1YqH-4Wo/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/eW_Hug0M6zFk9QSbAmOUWLMSfzBlCHmes-8yAksvfUNzyLgY6TSsE_eW8ncfE4bHYZXKoTWxmQ=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=hBW1YqH-4Wo"
+  },
+  {
+    "name": "陰山アゲハ",
+    "youtubeid": "UCIw8aQVRBwi72yOrPLgkbRQ",
+    "title": "【#歌枠 】ミュゥ寮歌枠リレー🎶陰山の時間！【陰山アゲハ #パレデミア学園 】",
+    "date": "2026-08-23T22:00:08.000+09:00",
+    "status": "live",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/Z2FL_FFia5s/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/XWKUawU_WoX_xINkx3TMSF3fj0RbdiwNezFiEAGcmHfQYvwkjMUM1mvyOmgsbK8LxHoo6aEKJA=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=Z2FL_FFia5s"
+  },
+  {
     "name": "小澄くろまる",
     "youtubeid": "UC1Eq7ExEH0XO380it8cZYZg",
     "title": "【鉄拳8】侵略！ギャラクティカ鉄拳#1【小澄くろまる /ぷろのゔぁ】",
-    "date": "2026-08-23T22:00:00.000+09:00",
-    "status": "upcoming",
+    "date": "2026-08-23T22:02:54.000+09:00",
+    "status": "live",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/oOQhFL8pI_k/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/_pGNq0-SYZiXjomeCnQRygINoA2PKkUJMbRtwuSIL83vUAny58me1QY1WttWypAIwJFrE5hh0w=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=oOQhFL8pI_k"
+  },
+  {
+    "name": "無月いお",
+    "youtubeid": "UC2X_mAVGw8e3N9JQZZDVBfQ",
+    "title": "【#低音女子】飲酒VALOですよ《#パレデミア学園》",
+    "date": "2026-08-23T22:03:06.000+09:00",
+    "status": "live",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/b9AqtRinK5k/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/Z7PlAWhweuycNXNXoQ6etyDTkduySM-Kqy8kQW-AD19JuRdxT3HSdIxogPw3GPD5NHw_vZlf=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=b9AqtRinK5k"
+  },
+  {
+    "name": "暁月クララ",
+    "youtubeid": "UCn4XvlTXjGSvDynpxpOYZPQ",
+    "title": "このV、かわいい？#shorts #vtuber #暁月クララ",
+    "date": "2026-08-23T22:09:00.000+09:00",
+    "status": "archive",
+    "type": "video",
+    "thumbnail": "https://i.ytimg.com/vi/c1JracXoNgE/mqdefault.jpg",
+    "channelIcon": "https://yt3.ggpht.com/8tcStp-WzdZPtf6bPq1DtUnFSd2Eq5AppSd3_CEQ7hNNpnRND8InaWdPCz6T1wIWWkGJuFrbT94=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=c1JracXoNgE"
   },
   {
     "name": "天堂ライラ",

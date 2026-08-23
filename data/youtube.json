@@ -1,38 +1,5 @@
 [
   {
-    "name": "牡丹雪",
-    "youtubeid": "UCl-qrfygvCjyA_lMR5lJzig",
-    "title": "【シチュボ】君だけのアイドルを育てよう！新作アイドル育成ゲーム(偽)【麻雀ぶっ飛び罰ゲームvol.10】",
-    "date": "2026-08-20T12:00:14.000+09:00",
-    "status": "archive",
-    "type": "video",
-    "thumbnail": "https://i.ytimg.com/vi/y-IZ600W2D4/mqdefault.jpg",
-    "channelIcon": "https://yt3.ggpht.com/K9NG8yMDYt1GGoQjhc9c-XEBm1PxGVkEhIQxos6ODhB_pk5HpUvETjUOe5LLkzzJ3biot_nWwQ=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=y-IZ600W2D4"
-  },
-  {
-    "name": "鬼多見アユム",
-    "youtubeid": "UCnrJK-sb3gSn3kRLkmpmzaw",
-    "title": "【#雑談 】暑いし虫は元気だし夏早く終わってええ【鬼多見アユム🍊👹】",
-    "date": "2026-08-20T12:01:19.000+09:00",
-    "status": "archive",
-    "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/yzL4nDQ1j0w/mqdefault.jpg",
-    "channelIcon": "https://yt3.ggpht.com/5l_IDFvbCkoc_xXy5i5YH24NcAgRR9bYZM9hu30Hm8may2x-7GiLIxkQ3DHQ4vI9uKwRUcbR6Q=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=yzL4nDQ1j0w"
-  },
-  {
-    "name": "無月いお",
-    "youtubeid": "UC2X_mAVGw8e3N9JQZZDVBfQ",
-    "title": "【#低音女子】休憩時間をうちにください《#パレデミア学園》",
-    "date": "2026-08-20T12:02:28.000+09:00",
-    "status": "archive",
-    "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/ltytigxOVJg/mqdefault.jpg",
-    "channelIcon": "https://yt3.ggpht.com/Z7PlAWhweuycNXNXoQ6etyDTkduySM-Kqy8kQW-AD19JuRdxT3HSdIxogPw3GPD5NHw_vZlf=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=ltytigxOVJg"
-  },
-  {
     "name": "藤森ちとせ",
     "youtubeid": "UCAhdxmsdngH4noySdpVAVWQ",
     "title": "【#Minecraft 】お昼のゆるゆる雑談｜今日もゆるゆる露天掘りしちゃいましょうね～⛏作業用にも💤ROM歓迎🎉【#新人vtuber 】#ちとせらいぶ #パレデミア学園",
@@ -1423,7 +1390,7 @@
     "youtubeid": "UC2X_mAVGw8e3N9JQZZDVBfQ",
     "title": "【#低音女子】なんか日曜日の気分だな《#パレデミア学園》",
     "date": "2026-08-23T00:01:03.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/Ez203tPCSVY/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/Z7PlAWhweuycNXNXoQ6etyDTkduySM-Kqy8kQW-AD19JuRdxT3HSdIxogPw3GPD5NHw_vZlf=s240-c-k-c0x00ffffff-no-rj",
@@ -1527,6 +1494,17 @@
     "thumbnail": "https://i.ytimg.com/vi/ckKjkfj6THM/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/Z7PlAWhweuycNXNXoQ6etyDTkduySM-Kqy8kQW-AD19JuRdxT3HSdIxogPw3GPD5NHw_vZlf=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=ckKjkfj6THM"
+  },
+  {
+    "name": "藤森ちとせ",
+    "youtubeid": "UCAhdxmsdngH4noySdpVAVWQ",
+    "title": "【メン限参加型ワールド配信】会場を作り切りたいですね～✨屋台いっぱい作っちゃう建築配信⛏【#新人vtuber 】#ちとせらいぶ",
+    "date": "2026-08-23T13:00:00.000+09:00",
+    "status": "upcoming",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/e2pc4Uc37cU/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/traR_yWe-AOGyM2wjo8h2FJO9JWBcbjfrL13X-umeD6BtNPopSZ2Q3YmdJq_5K9gWgHf_j64iQ=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=e2pc4Uc37cU"
   },
   {
     "name": "愛乃宮ゆめ",

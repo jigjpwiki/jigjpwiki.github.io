@@ -1403,7 +1403,7 @@
     "date": "2026-08-23T00:30:51.000+09:00",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/4BFoyIC2a1s/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/4BFoyIC2a1s/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/zOlQ66VHDdW9B1w3cRbHlo-3cfkYBLVHzYpXS_xLbOv9bHe72uv-bD246R7gCEfD_7wGBc-6vQ=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=4BFoyIC2a1s"
   },
@@ -1467,9 +1467,9 @@
     "youtubeid": "UCnrJK-sb3gSn3kRLkmpmzaw",
     "title": "【#雑談 】血糖値スパイクでも配信するっぴ【鬼多見アユム🍊👹】",
     "date": "2026-08-23T12:01:09.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/Fl6jJOGS5EQ/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/Fl6jJOGS5EQ/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/5l_IDFvbCkoc_xXy5i5YH24NcAgRR9bYZM9hu30Hm8may2x-7GiLIxkQ3DHQ4vI9uKwRUcbR6Q=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=Fl6jJOGS5EQ"
   },
@@ -1500,11 +1500,22 @@
     "youtubeid": "UCdbYinKlpkB_uMt_wPmYcsw",
     "title": "【#雑談】暇してる子おいでよ#初見さん大歓迎 ◎【#パレデミア学園/#ゆきむらじお】【投票イベ開催中】＃新人VTuber＃雑談#耐久",
     "date": "2026-08-23T13:30:57.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/h18WTH9Jrp8/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/4RbHGCHx02xQ2ze4g7UCTvuUPlQCpbk6bHIb5cdqO4JNzTe5qsq4sDTt6m-xVKMm476vJiMF7A=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=h18WTH9Jrp8"
+  },
+  {
+    "name": "花晴りら",
+    "youtubeid": "UCqcnlq8uJqnGml6hcIrMCZw",
+    "title": "【APEX】#5 初心者APEX：大会前練習🔰チーデス参加型🔫【花晴りら/ #パレデミア学園 】#れりライブ",
+    "date": "2026-08-23T15:00:00.000+09:00",
+    "status": "upcoming",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/6LIrPAm0mro/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/CH5JMWVQZ_RtloaXoj6W-yXjo9x8UxXSBG_vMyDnfk7M2QTOApVE1zOesu_aDrSAqvDbGrUyxs0=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=6LIrPAm0mro"
   },
   {
     "name": "愛乃宮ゆめ",

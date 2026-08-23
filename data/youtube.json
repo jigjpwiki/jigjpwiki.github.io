@@ -1445,9 +1445,9 @@
     "youtubeid": "UCIw8aQVRBwi72yOrPLgkbRQ",
     "title": "【apex】俺このゲームがわからなくなってきちゃ【陰山アゲハ/#パレデミア学園 】",
     "date": "2026-08-23T14:00:34.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/sU1tQR3weOg/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/sU1tQR3weOg/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/XWKUawU_WoX_xINkx3TMSF3fj0RbdiwNezFiEAGcmHfQYvwkjMUM1mvyOmgsbK8LxHoo6aEKJA=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=sU1tQR3weOg"
   },
@@ -1472,6 +1472,17 @@
     "thumbnail": "https://i.ytimg.com/vi/N8i5cnV_N38/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/Me8I_Op8OlIy8Vuj387_Hdi6gnrZ-qiY1yDDt1Q5yKMKA51ISagT76HE01gw8xbLcef0vpsPgoc=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=N8i5cnV_N38"
+  },
+  {
+    "name": "常磐カナメ",
+    "youtubeid": "UCbNEgJIF_ADD9e8-q7SoxCg",
+    "title": "【絵本読み聞かせ】手作りのオリジナル絵本でメンバーに楽しんでもらおう！【 #パレプロ 】",
+    "date": "2026-08-23T17:00:06.000+09:00",
+    "status": "archive",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/JHFjs39Bg5I/mqdefault.jpg",
+    "channelIcon": "https://yt3.ggpht.com/vb_kLF_4hQ7UdEtOnEtL-_pI320ZMQ-lVQ9OV3xMvdTQitHXX1zk0b6GKQ977dawvfoB5Sb8OQ=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=JHFjs39Bg5I"
   },
   {
     "name": "亀城ちかり",

@@ -1,16 +1,5 @@
 [
   {
-    "name": "汐月永遠",
-    "youtubeid": "UCCCm2ueQtW3mYUMB7Excq8g",
-    "title": "歌雑談、雑談多めの会【汐月永遠/パレデミア学園】#永遠との時間",
-    "date": "2026-08-21T01:06:01.000+09:00",
-    "status": "archive",
-    "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/8OidhHC3OyY/mqdefault.jpg",
-    "channelIcon": "https://yt3.ggpht.com/68oh3mZjSYRleiuocaxnF9VcHdbaxLQzjCq4QgdPlHe3083eTdmNkfXZ6YV81vTUA51qoNXH_g=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=8OidhHC3OyY"
-  },
-  {
     "name": "ローズ・ダマスクハート",
     "youtubeid": "UCyY_NaAfv6k0CdHFcmYDqCA",
     "title": "【#minecraft  】深夜にコソコソ雑談パレ学サーバー＃3 初見さん・rom専さん◎【ローズ・ダマスクハート／パレデミア学園】　#shorts　#雑談　#睡眠",
@@ -1265,6 +1254,17 @@
     "url": "https://www.youtube.com/watch?v=raiXE8CmTws"
   },
   {
+    "name": "緋雨柚",
+    "youtubeid": "UCrB-SfrqB5ChY8aAT99grXw",
+    "title": "【#歌枠 】ミュゥ寮歌枠リレー！！トップバッターあげてくぞ！！！！【パレデミア学園/緋雨柚】",
+    "date": "2026-08-23T20:00:17.000+09:00",
+    "status": "archive",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/e8Gmwt_fAew/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/dPJHngNTeEfD_K0Mus141-We4xIuAhttm2pgEBl3VdGXqWvxGfy5mJfDMDbBmwI6UGc17dXb-g=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=e8Gmwt_fAew"
+  },
+  {
     "name": "堂下さとり",
     "youtubeid": "UCBq6MSUL-Ermvnoj3PtX7Iw",
     "title": "投票イベント2ndステージ通過ありがとうございます！＆意気込み！！！",
@@ -1298,6 +1298,17 @@
     "url": "https://www.youtube.com/watch?v=ymZpWwgLxOA"
   },
   {
+    "name": "猫吸はぴ",
+    "youtubeid": "UCgod8po0u4P5hdCsLhJWFPQ",
+    "title": "【 初配信振り返り 】ノイキャンすぎた初配信の振り返り…【 猫吸 はぴ / ぷろのゔぁ 】",
+    "date": "2026-08-23T20:59:55.000+09:00",
+    "status": "archive",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/cO79xCwOC_Y/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/iALNmPjASsV2xJnNlRrlE2BGkGuehDoiW74MrfdHkHclqVJ7nn94i6z_D22LxzIK3Afilovs9w=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=cO79xCwOC_Y"
+  },
+  {
     "name": "愛乃宮ゆめ",
     "youtubeid": "UCttSjPiwPYpiPuCrgxK7c1g",
     "title": "【雑談】初見さん１０人かもーーーん！な雑談【愛乃宮ゆめ/パレデミア学園】",
@@ -1307,6 +1318,28 @@
     "thumbnail": "https://i.ytimg.com/vi/TgO7sJ3p8dA/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/Gwr7KJNWnI6CEgmIfEeMZahF5pbGNKlRhQXBEkuMWE0D66--IJE77z-5Zu2i5LFBc_CA6ZkqY4Y=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=TgO7sJ3p8dA"
+  },
+  {
+    "name": "新巻るろな",
+    "youtubeid": "UCUd4wJjvPQflbLnsk_YHleA",
+    "title": "【#歌枠】ミュゥ寮歌枠リレー！るろなのターン！【新巻るろな／#パレデミア学園】　#vtuber",
+    "date": "2026-08-23T21:00:48.000+09:00",
+    "status": "archive",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/g7g2lRLqicw/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/-4sLuWCih-DlfhpwpDQEuB6eupCB6kTImkIPmKnh54vu5I0F49RkveNQGiqy0p8t0GDU6eiegGE=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=g7g2lRLqicw"
+  },
+  {
+    "name": "夏渚まはろ",
+    "youtubeid": "UC_a00ml_EVDXSrtY8ZuyqGQ",
+    "title": "【#夏渚まはろアイドル成長日記 ＃3】ライブデビューまであと125日。僕、アイドルになります！【#夏渚まはろ￤#パレプロ】",
+    "date": "2026-08-23T21:03:17.000+09:00",
+    "status": "archive",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/jH_gfU_ZIjg/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/iktv-39nC7NDASD1WeXms-DEuHuVqB5RhwTtdDe26w-BCvqf6yq3r_8zBiv2i2CfNXCK0uE8=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=jH_gfU_ZIjg"
   },
   {
     "name": "鈴木沙透",
@@ -1340,6 +1373,17 @@
     "thumbnail": "https://i.ytimg.com/vi/hBW1YqH-4Wo/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/eW_Hug0M6zFk9QSbAmOUWLMSfzBlCHmes-8yAksvfUNzyLgY6TSsE_eW8ncfE4bHYZXKoTWxmQ=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=hBW1YqH-4Wo"
+  },
+  {
+    "name": "瀬奈りるか",
+    "youtubeid": "UCWi_ztz8Xuz4XfzhoG6ZfyA",
+    "title": "【雑談】日曜夜はまったりスケジュール決め🎀ゆっくりお話ししよう🌙🐏✨【＃パレデミア学園】＃せなりるライブ",
+    "date": "2026-08-23T21:59:58.000+09:00",
+    "status": "archive",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/a1vi6t9AkVI/mqdefault.jpg",
+    "channelIcon": "https://yt3.ggpht.com/BaxFKUrCc4gGKc1wwAHt4ebjk8C69NdTl3fMz9LoR5SUm_Tpvv2yixsbJhp8qsld6S0tdgup=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=a1vi6t9AkVI"
   },
   {
     "name": "陰山アゲハ",

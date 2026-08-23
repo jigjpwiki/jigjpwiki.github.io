@@ -1051,7 +1051,7 @@
     "date": "2026-08-22T14:34:16.000+09:00",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/Z1rvoEejMy0/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/Z1rvoEejMy0/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/VB97J8AMHex_rkfd6hDhfiGhhVvrL-NNkseP2mMYSWh75sxA_oXctmxK5tV4FYgkM17RUAx6GQ=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=Z1rvoEejMy0"
   },
@@ -1227,7 +1227,7 @@
     "date": "2026-08-22T20:01:07.000+09:00",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/mTmWHTjAnu4/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/mTmWHTjAnu4/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/av9H0_OxG16zI7tQKGwYEwhIZd1RXZQKGjkWfgHslvYRTV5aJBEInW2q0qDzb51lttFjkJ_pBw=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=mTmWHTjAnu4"
   },
@@ -1282,7 +1282,7 @@
     "date": "2026-08-22T21:18:11.000+09:00",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/JlQZMENuk4k/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/JlQZMENuk4k/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/h4kuTtFCGhkDV4nmk6qjQt8auhkqLEqWwB9Il3NZR6op3ph-a0YElRfLcXkZVPp6xqvGmZHy3w=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=JlQZMENuk4k"
   },
@@ -1326,7 +1326,7 @@
     "date": "2026-08-22T22:01:46.000+09:00",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/CSAeF5JU0Gg/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/CSAeF5JU0Gg/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/sYbvo_2nSCW162VEArIwu7v1B3bl159gmEnGgGei8I8drc4l7huPP7q6aWZ4AfXi5wTMACmGow=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=CSAeF5JU0Gg"
   },
@@ -1467,9 +1467,9 @@
     "youtubeid": "UCpdWNjSU-onhmcARqgHIfpg",
     "title": "【#朝活】1000円分だけWIN5予測しながらおはよう！8/23(日) #天堂観測【パレデミア学園/天堂ライラ】",
     "date": "2026-08-23T07:30:59.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/U021A-64AZs/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/U021A-64AZs/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/JA8QqThoUnCNAgJASH3p_wPyWJBf2ILiUfpIvArr6592NkkrFntPQ4EgPsahnLpPCMP4mk93ig=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=U021A-64AZs"
   },
@@ -1507,6 +1507,17 @@
     "url": "https://www.youtube.com/watch?v=AJgtiYFgQLE"
   },
   {
+    "name": "鬼多見アユム",
+    "youtubeid": "UCnrJK-sb3gSn3kRLkmpmzaw",
+    "title": "【#雑談 】血糖値スパイクでも配信するっぴ【鬼多見アユム🍊👹】",
+    "date": "2026-08-23T12:00:00.000+09:00",
+    "status": "upcoming",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/Fl6jJOGS5EQ/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/5l_IDFvbCkoc_xXy5i5YH24NcAgRR9bYZM9hu30Hm8may2x-7GiLIxkQ3DHQ4vI9uKwRUcbR6Q=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=Fl6jJOGS5EQ"
+  },
+  {
     "name": "無月いお",
     "youtubeid": "UC2X_mAVGw8e3N9JQZZDVBfQ",
     "title": "【#低音女子】おひるんるん《#パレデミア学園》",
@@ -1527,6 +1538,17 @@
     "thumbnail": "https://i.ytimg.com/vi/TgO7sJ3p8dA/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/Gwr7KJNWnI6CEgmIfEeMZahF5pbGNKlRhQXBEkuMWE0D66--IJE77z-5Zu2i5LFBc_CA6ZkqY4Y=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=TgO7sJ3p8dA"
+  },
+  {
+    "name": "天堂ライラ",
+    "youtubeid": "UCpdWNjSU-onhmcARqgHIfpg",
+    "title": "【#朝活】60人の人とおはようしたい！8/24(月) #天堂観測【パレデミア学園/天堂ライラ】",
+    "date": "2026-08-24T07:30:00.000+09:00",
+    "status": "upcoming",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/mV_BEoNeDMM/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/JA8QqThoUnCNAgJASH3p_wPyWJBf2ILiUfpIvArr6592NkkrFntPQ4EgPsahnLpPCMP4mk93ig=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=mV_BEoNeDMM"
   },
   {
     "name": "しーはむ",

@@ -1133,17 +1133,6 @@
     "url": "https://www.youtube.com/watch?v=7p7AzAZtXD8"
   },
   {
-    "name": "雛菊のん",
-    "youtubeid": "UChccV6U0Tkx9de4YjXbEelw",
-    "title": "【#PR #100時間カレー 】新人ぎゃうvtuberが初手元配信✨初食レポに挑戦❣【パレデミア学園/雛菊のん/#新人vtuber 】",
-    "date": "2026-08-22T19:00:00.000+09:00",
-    "status": "upcoming",
-    "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/TrcyuEfAF3E/mqdefault_live.jpg",
-    "channelIcon": "https://yt3.ggpht.com/-7v40HQCqllHpJD69LHIo2n5lUt-pZ-bLtfrKAXhZk9OF06nj4Lno3gwBvO8d1jBSl5dCCxAxQ=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=TrcyuEfAF3E"
-  },
-  {
     "name": "変幻リメ",
     "youtubeid": "UC5bCRde8xRrNS7s6GjCNCyQ",
     "title": "HANABI/いきものがかり歌ってみた#vtuber #shorts #変幻リメ",
@@ -1153,6 +1142,17 @@
     "thumbnail": "https://i.ytimg.com/vi/5fgZLCXS7Tk/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/4hssn4EXW2lORXRfiuYTjmYfnlZoQ2h72sdEompqX7GQwAKCsBx7eL0joCFSook1rfCKIcpykg=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=5fgZLCXS7Tk"
+  },
+  {
+    "name": "雛菊のん",
+    "youtubeid": "UChccV6U0Tkx9de4YjXbEelw",
+    "title": "【#PR #100時間カレー 】新人ぎゃうvtuberが初手元配信✨初食レポに挑戦❣【パレデミア学園/雛菊のん/#新人vtuber 】",
+    "date": "2026-08-22T19:03:07.000+09:00",
+    "status": "archive",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/TrcyuEfAF3E/mqdefault.jpg",
+    "channelIcon": "https://yt3.ggpht.com/-7v40HQCqllHpJD69LHIo2n5lUt-pZ-bLtfrKAXhZk9OF06nj4Lno3gwBvO8d1jBSl5dCCxAxQ=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=TrcyuEfAF3E"
   },
   {
     "name": "七海ロナ",
@@ -1205,7 +1205,7 @@
     "date": "2026-08-22T20:00:27.000+09:00",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/A7C40E0ZPYs/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/A7C40E0ZPYs/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/04zALH6pYL7mkWILHajvBzfzg4hrwRCLBONme3K1PjuEeYJIRC6RYxPmJzVZRuN42skHEDNRGmo=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=A7C40E0ZPYs"
   },
@@ -1488,12 +1488,23 @@
     "name": "橙葉ぽん",
     "youtubeid": "UC0aNUh8VfQwgqj0taB8MDpg",
     "title": "【縦型配信🧡】初めての朝雑談☀️みんなにおはようする【 橙葉ぽん/ぷろのゔぁ 】",
-    "date": "2026-08-23T09:00:00.000+09:00",
-    "status": "upcoming",
+    "date": "2026-08-23T09:02:51.000+09:00",
+    "status": "live",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/NVbMWeKeYsg/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/av9H0_OxG16zI7tQKGwYEwhIZd1RXZQKGjkWfgHslvYRTV5aJBEInW2q0qDzb51lttFjkJ_pBw=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=NVbMWeKeYsg"
+  },
+  {
+    "name": "桜庭羽奈",
+    "youtubeid": "UCPgg_A08ksSYP-VivJGniRw",
+    "title": "どっちが好き？#推しをお探しですか #切り抜き #vtuber  #新人vtuberと繋がりたい #shorts",
+    "date": "2026-08-23T10:00:25.000+09:00",
+    "status": "archive",
+    "type": "video",
+    "thumbnail": "https://i.ytimg.com/vi/AJgtiYFgQLE/mqdefault.jpg",
+    "channelIcon": "https://yt3.ggpht.com/04zALH6pYL7mkWILHajvBzfzg4hrwRCLBONme3K1PjuEeYJIRC6RYxPmJzVZRuN42skHEDNRGmo=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=AJgtiYFgQLE"
   },
   {
     "name": "無月いお",

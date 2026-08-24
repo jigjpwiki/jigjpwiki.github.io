@@ -1029,7 +1029,7 @@
     "date": "2026-08-24T12:03:19.000+09:00",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/umcyPuQ4_yw/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/umcyPuQ4_yw/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/Z7PlAWhweuycNXNXoQ6etyDTkduySM-Kqy8kQW-AD19JuRdxT3HSdIxogPw3GPD5NHw_vZlf=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=umcyPuQ4_yw"
   },
@@ -1258,9 +1258,9 @@
     "youtubeid": "UCAhdxmsdngH4noySdpVAVWQ",
     "title": "【#Minecraft 】メサ掘り雑談｜金を求めて地下を掘ります⛏✨寝落ち・作業用にも☺ROM歓迎🎉【#新人vtuber 】#ちとせらいぶ #パレデミア学園",
     "date": "2026-08-24T20:13:33.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/81W-QM7oGN4/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/81W-QM7oGN4/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/traR_yWe-AOGyM2wjo8h2FJO9JWBcbjfrL13X-umeD6BtNPopSZ2Q3YmdJq_5K9gWgHf_j64iQ=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=81W-QM7oGN4"
   },
@@ -1353,6 +1353,17 @@
     "url": "https://www.youtube.com/watch?v=OERJotDUAeA"
   },
   {
+    "name": "天透あわ",
+    "youtubeid": "UCXI0W_Os-BCIngpCb1YnOow",
+    "title": "【寝落ちにどうぞ💤】チルいBGMの不思議なパズルを解き明かそう💡【HER TREES】",
+    "date": "2026-08-24T22:29:47.000+09:00",
+    "status": "archive",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/570mzFoBwVI/mqdefault.jpg",
+    "channelIcon": "https://yt3.ggpht.com/Me8I_Op8OlIy8Vuj387_Hdi6gnrZ-qiY1yDDt1Q5yKMKA51ISagT76HE01gw8xbLcef0vpsPgoc=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=570mzFoBwVI"
+  },
+  {
     "name": "香桜あんにん",
     "youtubeid": "UC8zjZBqGnx_j55ZJzluhW8A",
     "title": "【祝チャンネル登録1000人】1000人をお祝いしよう！#あんにんたいむ #96 【パレデミア学園/香桜あんにん/＃新人VTuber】",
@@ -1392,7 +1403,7 @@
     "date": "2026-08-25T00:08:45.000+09:00",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/1BtStEQuiEE/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/1BtStEQuiEE/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/Z7PlAWhweuycNXNXoQ6etyDTkduySM-Kqy8kQW-AD19JuRdxT3HSdIxogPw3GPD5NHw_vZlf=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=1BtStEQuiEE"
   },
@@ -1450,6 +1461,17 @@
     "thumbnail": "https://i.ytimg.com/vi/pgysF5bewKU/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/y0zP0Uz7HSLx5dv3xo488Suxk8rJQQUC1wXaymjUBIQIwa25WlVu_VmrsT1xAyVD-jgeL7hs=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=pgysF5bewKU"
+  },
+  {
+    "name": "橙葉ぽん",
+    "youtubeid": "UC0aNUh8VfQwgqj0taB8MDpg",
+    "title": "【Scritchy Scratchy】#2 スクラッチ削ってお金稼ぐ💰【 橙葉ぽん/ぷろのゔぁ 】",
+    "date": "2026-08-25T20:00:00.000+09:00",
+    "status": "upcoming",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/aD9h2aEHNuA/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/av9H0_OxG16zI7tQKGwYEwhIZd1RXZQKGjkWfgHslvYRTV5aJBEInW2q0qDzb51lttFjkJ_pBw=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=aD9h2aEHNuA"
   },
   {
     "name": "しーはむ",

@@ -1,27 +1,5 @@
 [
   {
-    "name": "七音うら",
-    "youtubeid": "UCv2IYO-4waCpHvn50SWWY2A",
-    "title": "【#雑談配信 】残業ってなにそれ美味しいの？雑談。【七音うら】",
-    "date": "2026-08-22T01:47:20.000+09:00",
-    "status": "archive",
-    "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/EKh4mNMd5-k/mqdefault.jpg",
-    "channelIcon": "https://yt3.ggpht.com/T655ATpSd2gkjZBrokvlkaUH0f5-fCpQdcJpwxmmNdy6fxCYffAlq2sMhPOtFk_CvVyOkEPY8Q=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=EKh4mNMd5-k"
-  },
-  {
-    "name": "鈴木沙透",
-    "youtubeid": "UCj5nRzNFXZn9GRhITRkKElA",
-    "title": "【#歌枠】華金仕事頑張った【鈴木沙透/パレデミア学園】",
-    "date": "2026-08-22T01:51:34.000+09:00",
-    "status": "archive",
-    "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/oBYBDoDeF_E/mqdefault.jpg",
-    "channelIcon": "https://yt3.ggpht.com/h4kuTtFCGhkDV4nmk6qjQt8auhkqLEqWwB9Il3NZR6op3ph-a0YElRfLcXkZVPp6xqvGmZHy3w=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=oBYBDoDeF_E"
-  },
-  {
     "name": "桜庭羽奈",
     "youtubeid": "UCPgg_A08ksSYP-VivJGniRw",
     "title": "【おはよう100人待ってます！】朝枠強化の休日臨時開催！初見さん大歓迎！💛【新人VTuberの雑談／歌枠】🐻",
@@ -1340,6 +1318,17 @@
     "thumbnail": "https://i.ytimg.com/vi/R0CrsFpjfx8/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/-4sLuWCih-DlfhpwpDQEuB6eupCB6kTImkIPmKnh54vu5I0F49RkveNQGiqy0p8t0GDU6eiegGE=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=R0CrsFpjfx8"
+  },
+  {
+    "name": "露草なぎ",
+    "youtubeid": "UC9nhm1B-XhPaUO8W8oc4thQ",
+    "title": "【雑談】お話ししよん【露草なぎ/パレデミア学園】#初見さん大歓迎",
+    "date": "2026-08-24T21:59:11.000+09:00",
+    "status": "archive",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/uGuFHRzOYX4/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/3KzF3YSQvjRpSMpFZEEsaGlIcETMW03ZmdKQy_TjJIm8t9vC4AjNwLLR5hNqXi0M9qnyszb0PCY=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=uGuFHRzOYX4"
   },
   {
     "name": "小澄くろまる",

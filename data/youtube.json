@@ -1144,17 +1144,6 @@
     "url": "https://www.youtube.com/watch?v=cO79xCwOC_Y"
   },
   {
-    "name": "愛乃宮ゆめ",
-    "youtubeid": "UCttSjPiwPYpiPuCrgxK7c1g",
-    "title": "【雑談】初見さん１０人かもーーーん！な雑談【愛乃宮ゆめ/パレデミア学園】",
-    "date": "2026-08-23T21:00:00.000+09:00",
-    "status": "upcoming",
-    "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/TgO7sJ3p8dA/mqdefault_live.jpg",
-    "channelIcon": "https://yt3.ggpht.com/Gwr7KJNWnI6CEgmIfEeMZahF5pbGNKlRhQXBEkuMWE0D66--IJE77z-5Zu2i5LFBc_CA6ZkqY4Y=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=TgO7sJ3p8dA"
-  },
-  {
     "name": "新巻るろな",
     "youtubeid": "UCUd4wJjvPQflbLnsk_YHleA",
     "title": "【#歌枠】ミュゥ寮歌枠リレー！るろなのターン！【新巻るろな／#パレデミア学園】　#vtuber",
@@ -1164,6 +1153,17 @@
     "thumbnail": "https://i.ytimg.com/vi/g7g2lRLqicw/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/-4sLuWCih-DlfhpwpDQEuB6eupCB6kTImkIPmKnh54vu5I0F49RkveNQGiqy0p8t0GDU6eiegGE=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=g7g2lRLqicw"
+  },
+  {
+    "name": "愛乃宮ゆめ",
+    "youtubeid": "UCttSjPiwPYpiPuCrgxK7c1g",
+    "title": "【雑談】初見さん１０人からこんゆめもらうまで耐久雑談【愛乃宮ゆめ/パレデミア学園】",
+    "date": "2026-08-23T21:00:51.000+09:00",
+    "status": "archive",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/TgO7sJ3p8dA/mqdefault.jpg",
+    "channelIcon": "https://yt3.ggpht.com/Gwr7KJNWnI6CEgmIfEeMZahF5pbGNKlRhQXBEkuMWE0D66--IJE77z-5Zu2i5LFBc_CA6ZkqY4Y=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=TgO7sJ3p8dA"
   },
   {
     "name": "夏渚まはろ",
@@ -1348,7 +1348,7 @@
     "date": "2026-08-23T23:42:47.000+09:00",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/YPKDpbMOjXg/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/YPKDpbMOjXg/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/sYbvo_2nSCW162VEArIwu7v1B3bl159gmEnGgGei8I8drc4l7huPP7q6aWZ4AfXi5wTMACmGow=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=YPKDpbMOjXg"
   },
@@ -1370,7 +1370,7 @@
     "date": "2026-08-24T00:17:58.000+09:00",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/G3gRpM-XCDs/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/G3gRpM-XCDs/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/T655ATpSd2gkjZBrokvlkaUH0f5-fCpQdcJpwxmmNdy6fxCYffAlq2sMhPOtFk_CvVyOkEPY8Q=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=G3gRpM-XCDs"
   },
@@ -1467,11 +1467,33 @@
     "youtubeid": "UC2X_mAVGw8e3N9JQZZDVBfQ",
     "title": "【#低音女子】休憩時間をうちにください《#パレデミア学園》",
     "date": "2026-08-24T12:03:19.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/umcyPuQ4_yw/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/Z7PlAWhweuycNXNXoQ6etyDTkduySM-Kqy8kQW-AD19JuRdxT3HSdIxogPw3GPD5NHw_vZlf=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=umcyPuQ4_yw"
+  },
+  {
+    "name": "藤森ちとせ",
+    "youtubeid": "UCAhdxmsdngH4noySdpVAVWQ",
+    "title": "【#Minecraft 】メサ露天掘り雑談｜金を求めて1チャンク掘ります⛏✨作業用にも☺ROM歓迎🎉【#新人vtuber 】#ちとせらいぶ #パレデミア学園",
+    "date": "2026-08-24T12:58:38.000+09:00",
+    "status": "live",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/GxPB4cY1A4Q/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/traR_yWe-AOGyM2wjo8h2FJO9JWBcbjfrL13X-umeD6BtNPopSZ2Q3YmdJq_5K9gWgHf_j64iQ=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=GxPB4cY1A4Q"
+  },
+  {
+    "name": "火狐むい",
+    "youtubeid": "UCaolaxqG55OJhU8qwRHHtQg",
+    "title": "【 #火狐むい 】雀魂参加型！【 #パレデミア学園 】#初見さん大歓迎 #新人vtuber",
+    "date": "2026-08-24T13:59:43.000+09:00",
+    "status": "live",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/araDeSQT1RY/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/Ft5mSjImEah_xri4b9k0p2Olyhy6T_vj1ZxyglCcVbk2FqN-nrWqSMm5YoM_hEjeRQ9aaMjelV0=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=araDeSQT1RY"
   },
   {
     "name": "橙葉ぽん",

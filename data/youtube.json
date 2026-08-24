@@ -1159,9 +1159,9 @@
     "youtubeid": "UCpdWNjSU-onhmcARqgHIfpg",
     "title": "【#龍が如く6】広島出身Vtuberが龍が如く6を初見プレイ！ #10【天堂ライラ/パレデミア学園】",
     "date": "2026-08-24T19:04:13.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/Ox45ezTS3WU/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/Ox45ezTS3WU/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/JA8QqThoUnCNAgJASH3p_wPyWJBf2ILiUfpIvArr6592NkkrFntPQ4EgPsahnLpPCMP4mk93ig=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=Ox45ezTS3WU"
   },
@@ -1236,9 +1236,9 @@
     "youtubeid": "UC0aNUh8VfQwgqj0taB8MDpg",
     "title": "【Scritchy Scratchy】スクラッチ削ってお金稼ぐ💰【 橙葉ぽん/ぷろのゔぁ 】",
     "date": "2026-08-24T20:02:52.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/PJyT8fmOMdg/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/PJyT8fmOMdg/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/av9H0_OxG16zI7tQKGwYEwhIZd1RXZQKGjkWfgHslvYRTV5aJBEInW2q0qDzb51lttFjkJ_pBw=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=PJyT8fmOMdg"
   },
@@ -1357,9 +1357,9 @@
     "youtubeid": "UC8zjZBqGnx_j55ZJzluhW8A",
     "title": "【祝チャンネル登録1000人】1000人をお祝いしよう！#あんにんたいむ #96 【パレデミア学園/香桜あんにん/＃新人VTuber】",
     "date": "2026-08-24T22:37:01.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/sOX4srKDJ9o/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/sOX4srKDJ9o/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/LL8h8c1rjBm_CimsOmJqxMtfMpzaEZCJ56jM4iOTOaEaDLQ7f6fYwkAWggiJNEwh-aeggh3L-w=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=sOX4srKDJ9o"
   },
@@ -1390,7 +1390,7 @@
     "youtubeid": "UC2X_mAVGw8e3N9JQZZDVBfQ",
     "title": "【#低音女子】休みの日って何してるの？《#パレデミア学園》",
     "date": "2026-08-25T00:08:45.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/1BtStEQuiEE/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/Z7PlAWhweuycNXNXoQ6etyDTkduySM-Kqy8kQW-AD19JuRdxT3HSdIxogPw3GPD5NHw_vZlf=s240-c-k-c0x00ffffff-no-rj",
@@ -1417,6 +1417,17 @@
     "thumbnail": "https://i.ytimg.com/vi/eMDl4Aseb-Y/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/CH5JMWVQZ_RtloaXoj6W-yXjo9x8UxXSBG_vMyDnfk7M2QTOApVE1zOesu_aDrSAqvDbGrUyxs0=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=eMDl4Aseb-Y"
+  },
+  {
+    "name": "天堂ライラ",
+    "youtubeid": "UCpdWNjSU-onhmcARqgHIfpg",
+    "title": "【#朝活】今日は8:30まで！いつもより短いけどおはようしようね！8/25(火) #天堂観測【パレデミア学園/天堂ライラ】",
+    "date": "2026-08-25T07:30:00.000+09:00",
+    "status": "upcoming",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/TuYEa5OaDtg/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/JA8QqThoUnCNAgJASH3p_wPyWJBf2ILiUfpIvArr6592NkkrFntPQ4EgPsahnLpPCMP4mk93ig=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=TuYEa5OaDtg"
   },
   {
     "name": "しーはむ",

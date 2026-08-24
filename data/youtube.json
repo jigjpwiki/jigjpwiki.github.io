@@ -1,16 +1,5 @@
 [
   {
-    "name": "雛菊のん",
-    "youtubeid": "UChccV6U0Tkx9de4YjXbEelw",
-    "title": "華金を支えるギャル❣#新人vtuber #雑談",
-    "date": "2026-08-21T19:50:35.000+09:00",
-    "status": "archive",
-    "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/Rl5QDLKNByE/mqdefault.jpg",
-    "channelIcon": "https://yt3.ggpht.com/-7v40HQCqllHpJD69LHIo2n5lUt-pZ-bLtfrKAXhZk9OF06nj4Lno3gwBvO8d1jBSl5dCCxAxQ=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=Rl5QDLKNByE"
-  },
-  {
     "name": "常磐カナメ",
     "youtubeid": "UCbNEgJIF_ADD9e8-q7SoxCg",
     "title": "本読むのが楽しくて全然進まない図書室謎とき！【林檎は上を向く#2】【パレプロ/常磐カナメ】",
@@ -1293,7 +1282,7 @@
     "date": "2026-08-24T06:30:11.000+09:00",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/N-SpM_0DOZY/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/N-SpM_0DOZY/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/04zALH6pYL7mkWILHajvBzfzg4hrwRCLBONme3K1PjuEeYJIRC6RYxPmJzVZRuN42skHEDNRGmo=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=N-SpM_0DOZY"
   },
@@ -1412,9 +1401,9 @@
     "youtubeid": "UCXI0W_Os-BCIngpCb1YnOow",
     "title": "【 #ほの暮しの庭 】平和な村には、秘密がある。1３日目【新人Vtuber/ゲーム実況】",
     "date": "2026-08-24T17:00:18.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/U4pMVdBtfGg/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/U4pMVdBtfGg/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/Me8I_Op8OlIy8Vuj387_Hdi6gnrZ-qiY1yDDt1Q5yKMKA51ISagT76HE01gw8xbLcef0vpsPgoc=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=U4pMVdBtfGg"
   },
@@ -1452,15 +1441,48 @@
     "url": "https://www.youtube.com/watch?v=mxynM6J3orA"
   },
   {
+    "name": "無月いお",
+    "youtubeid": "UC2X_mAVGw8e3N9JQZZDVBfQ",
+    "title": "【#低音女子】すこーしだけ作業配信《#パレデミア学園》",
+    "date": "2026-08-24T18:32:21.000+09:00",
+    "status": "live",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/GKyTnzg9I9g/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/Z7PlAWhweuycNXNXoQ6etyDTkduySM-Kqy8kQW-AD19JuRdxT3HSdIxogPw3GPD5NHw_vZlf=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=GKyTnzg9I9g"
+  },
+  {
+    "name": "橙葉ぽん",
+    "youtubeid": "UC0aNUh8VfQwgqj0taB8MDpg",
+    "title": "【vtuber好み2択ゲーム🧡】どっちがすき？【 橙葉ぽん/ぷろのゔぁ 】#新人vtuber #shorts #vtuber #ぷろのゔぁ",
+    "date": "2026-08-24T19:00:21.000+09:00",
+    "status": "archive",
+    "type": "video",
+    "thumbnail": "https://i.ytimg.com/vi/JRTTACTjXl8/mqdefault.jpg",
+    "channelIcon": "https://yt3.ggpht.com/av9H0_OxG16zI7tQKGwYEwhIZd1RXZQKGjkWfgHslvYRTV5aJBEInW2q0qDzb51lttFjkJ_pBw=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=JRTTACTjXl8"
+  },
+  {
     "name": "天堂ライラ",
     "youtubeid": "UCpdWNjSU-onhmcARqgHIfpg",
     "title": "【#龍が如く6】広島出身Vtuberが龍が如く6を初見プレイ！ #10【天堂ライラ/パレデミア学園】",
-    "date": "2026-08-24T19:00:00.000+09:00",
-    "status": "upcoming",
+    "date": "2026-08-24T19:04:13.000+09:00",
+    "status": "live",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/Ox45ezTS3WU/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/JA8QqThoUnCNAgJASH3p_wPyWJBf2ILiUfpIvArr6592NkkrFntPQ4EgPsahnLpPCMP4mk93ig=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=Ox45ezTS3WU"
+  },
+  {
+    "name": "雛菊のん",
+    "youtubeid": "UChccV6U0Tkx9de4YjXbEelw",
+    "title": "AIとしゃべりはじめて大爆笑したギャル#新人vtuber #雑談",
+    "date": "2026-08-24T19:40:26.000+09:00",
+    "status": "live",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/v7dYn8EdoDI/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/-7v40HQCqllHpJD69LHIo2n5lUt-pZ-bLtfrKAXhZk9OF06nj4Lno3gwBvO8d1jBSl5dCCxAxQ=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=v7dYn8EdoDI"
   },
   {
     "name": "橙葉ぽん",
@@ -1474,9 +1496,20 @@
     "url": "https://www.youtube.com/watch?v=PJyT8fmOMdg"
   },
   {
+    "name": "常磐カナメ",
+    "youtubeid": "UCbNEgJIF_ADD9e8-q7SoxCg",
+    "title": "【めっちゃカメレオン】お年頃的に隠れたいよね、うんうん【パレプロ/常磐カナメ】",
+    "date": "2026-08-24T20:00:00.000+09:00",
+    "status": "upcoming",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/r2zAp4bJTQA/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/vb_kLF_4hQ7UdEtOnEtL-_pI320ZMQ-lVQ9OV3xMvdTQitHXX1zk0b6GKQ977dawvfoB5Sb8OQ=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=r2zAp4bJTQA"
+  },
+  {
     "name": "花晴りら",
     "youtubeid": "UCqcnlq8uJqnGml6hcIrMCZw",
-    "title": "【FF #4】完全初見：人生初ファイナルファンタジー！お砂場の塔に行くぞ！【花晴りら/ #パレデミア学園 】#れりライブ",
+    "title": "【FF #4】完全初見：人生初ファイナルファンタジー！お砂場の塔に行くぞ！【花晴りら/パレデミア学園 】#れりライブ",
     "date": "2026-08-24T21:00:00.000+09:00",
     "status": "upcoming",
     "type": "stream",
@@ -1498,7 +1531,7 @@
   {
     "name": "花晴りら",
     "youtubeid": "UCqcnlq8uJqnGml6hcIrMCZw",
-    "title": "【毎日朝活/雑談】火曜！元気に200人におはよう言いたい朝活🔆初見さん大歓迎🌷【花晴りら/ #パレデミア学園 】#れりライブ",
+    "title": "【毎日朝活/雑談】火曜！元気に200人におはよう言いたい朝活🔆初見さん大歓迎🌷【花晴りら/パレデミア学園 】#れりライブ",
     "date": "2026-08-25T07:00:00.000+09:00",
     "status": "upcoming",
     "type": "stream",

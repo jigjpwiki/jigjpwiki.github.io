@@ -1,16 +1,5 @@
 [
   {
-    "name": "Palette Project",
-    "youtubeid": "UC_cCW1xmXwRFp1tX-RD2X1Q",
-    "title": "大切なセリフを嚙み倒しツボるアイドルwww【パレプロ切り抜き】#shorts",
-    "date": "2026-08-23T18:00:17.000+09:00",
-    "status": "archive",
-    "type": "video",
-    "thumbnail": "https://i.ytimg.com/vi/LK4IcxEM74A/mqdefault.jpg",
-    "channelIcon": "https://yt3.ggpht.com/ytc/AIdro_nuv43BXc-JNRM-omFed0brcXGTD8qvA8313ZeQa8PfviA=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=LK4IcxEM74A"
-  },
-  {
     "name": "銘兎目あう",
     "youtubeid": "UCpr-9ssUUgSb0EpDA8bRuTA",
     "title": "あうのおめめ「はーと」見つけてくれた？👀🩷【 #銘兎目あう】#shorts #vtuber",
@@ -1518,15 +1507,59 @@
     "url": "https://www.youtube.com/watch?v=gOm_FO0lT6g"
   },
   {
+    "name": "夏渚まはろ",
+    "youtubeid": "UC_a00ml_EVDXSrtY8ZuyqGQ",
+    "title": "【ゲリラ縦型歌枠】誕生日まであと数時間！前夜祭で歌う🎤✨【#夏渚まはろ￤#パレプロ】",
+    "date": "2026-08-26T16:56:14.000+09:00",
+    "status": "live",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/tBfzU4Lj73g/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/iktv-39nC7NDASD1WeXms-DEuHuVqB5RhwTtdDe26w-BCvqf6yq3r_8zBiv2i2CfNXCK0uE8=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=tBfzU4Lj73g"
+  },
+  {
     "name": "花晴りら",
     "youtubeid": "UCqcnlq8uJqnGml6hcIrMCZw",
     "title": "【 #雑談 】週の真ん中！今週最後の夕方雑談！【花晴りら/ #パレデミア学園 】#れりライブ",
-    "date": "2026-08-26T17:00:00.000+09:00",
-    "status": "upcoming",
+    "date": "2026-08-26T16:59:45.000+09:00",
+    "status": "live",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/egqmsNW_Fj0/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/CH5JMWVQZ_RtloaXoj6W-yXjo9x8UxXSBG_vMyDnfk7M2QTOApVE1zOesu_aDrSAqvDbGrUyxs0=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=egqmsNW_Fj0"
+  },
+  {
+    "name": "天透あわ",
+    "youtubeid": "UCXI0W_Os-BCIngpCb1YnOow",
+    "title": "【 #ほの暮しの庭 】平和な村には、秘密がある。14日目【新人Vtuber/ゲーム実況】",
+    "date": "2026-08-26T17:01:11.000+09:00",
+    "status": "live",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/xQ8keEIr9Qs/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/Me8I_Op8OlIy8Vuj387_Hdi6gnrZ-qiY1yDDt1Q5yKMKA51ISagT76HE01gw8xbLcef0vpsPgoc=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=xQ8keEIr9Qs"
+  },
+  {
+    "name": "無月いお",
+    "youtubeid": "UC2X_mAVGw8e3N9JQZZDVBfQ",
+    "title": "あれ？最後もお前チャレンジされてね？#パレデミア学園#新人Vtuber#低音女子#切り抜き",
+    "date": "2026-08-26T18:00:17.000+09:00",
+    "status": "archive",
+    "type": "video",
+    "thumbnail": "https://i.ytimg.com/vi/aHYG8FmKzLg/mqdefault.jpg",
+    "channelIcon": "https://yt3.ggpht.com/Z7PlAWhweuycNXNXoQ6etyDTkduySM-Kqy8kQW-AD19JuRdxT3HSdIxogPw3GPD5NHw_vZlf=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=aHYG8FmKzLg"
+  },
+  {
+    "name": "銘兎目あう",
+    "youtubeid": "UCpr-9ssUUgSb0EpDA8bRuTA",
+    "title": "【スト６】リリー対策&コーチング🌼花岡ももちゃん先生🍑【#銘兎目あう/ぷろのゔぁ】#スト6 #VTuber #スト6 #銘兎目あう #shorts",
+    "date": "2026-08-26T20:00:00.000+09:00",
+    "status": "upcoming",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/HmDEE-bJ-6U/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/VB97J8AMHex_rkfd6hDhfiGhhVvrL-NNkseP2mMYSWh75sxA_oXctmxK5tV4FYgkM17RUAx6GQ=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=HmDEE-bJ-6U"
   },
   {
     "name": "橙葉ぽん",

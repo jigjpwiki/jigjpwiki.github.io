@@ -1337,7 +1337,7 @@
     "date": "2026-08-29T14:31:15.000+09:00",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/ledGNgBlxPw/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/ledGNgBlxPw/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/FZAApPZQQXHgHOVY8RCKI0eGvcyJ19mHBpWOT-a_pR_rY6LC8Z2Z9K0gpd4zuwNnYxA-XkKF=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=ledGNgBlxPw"
   },
@@ -1775,9 +1775,9 @@
     "youtubeid": "UCAhdxmsdngH4noySdpVAVWQ",
     "title": "【初心者APEX練習配信🔰】明日本番！チームデスマッチオンリーソロ練習配信🔫✨【#新人vtuber 】#apex  #ちとせらいぶ #パレデミア学園",
     "date": "2026-08-30T00:53:36.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/xrKYWTbAJJ0/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/xrKYWTbAJJ0/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/traR_yWe-AOGyM2wjo8h2FJO9JWBcbjfrL13X-umeD6BtNPopSZ2Q3YmdJq_5K9gWgHf_j64iQ=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=xrKYWTbAJJ0"
   },
@@ -1795,7 +1795,7 @@
   {
     "name": "夕凪万夜",
     "youtubeid": "UCJLYktDEOak1rSOGRVRKlLQ",
-    "title": "【#雑談 /初見さん◎】少しだけ【パレデミア学園/夕凪万夜】",
+    "title": "【#雑談 /初見さん◎】初見さんと40人と会いたい朝活、のんびり760人めざす！【パレデミア学園/夕凪万夜】",
     "date": "2026-08-30T03:37:11.000+09:00",
     "status": "live",
     "type": "stream",
@@ -1857,6 +1857,17 @@
     "thumbnail": "https://i.ytimg.com/vi/duhkY6tmghE/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/iktv-39nC7NDASD1WeXms-DEuHuVqB5RhwTtdDe26w-BCvqf6yq3r_8zBiv2i2CfNXCK0uE8=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=duhkY6tmghE"
+  },
+  {
+    "name": "橙葉ぽん",
+    "youtubeid": "UC0aNUh8VfQwgqj0taB8MDpg",
+    "title": "【Supermarket Chaos】9999個...？！散らかりすぎの大型スーパー全部片付ける！【 橙葉ぽん/ぷろのゔぁ 】",
+    "date": "2026-08-30T21:00:00.000+09:00",
+    "status": "upcoming",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/HTPeRg1-Os4/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/av9H0_OxG16zI7tQKGwYEwhIZd1RXZQKGjkWfgHslvYRTV5aJBEInW2q0qDzb51lttFjkJ_pBw=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=HTPeRg1-Os4"
   },
   {
     "name": "変幻リメ",

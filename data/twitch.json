@@ -1,14 +1,5 @@
 [
   {
-    "name": "月皇ちな",
-    "twitchid": "chi7_v",
-    "title": "OW認定つける",
-    "date": "2026-08-29T16:58:44.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/76f2958e-cab4-41b8-98c1-cc4d275b2ca5-profile_image-300x300.png",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/b61762f86489aaba30ac_chi7_v_316383304306_1787990319//thumb/thumb0-320x180.jpg"
-  },
-  {
     "name": "銘兎目あう",
     "twitchid": "Metome_Au",
     "title": "【#釣りクラ】チーム対抗🔥釣りバトル🎣【メンバー】星鳳ともりちゃん、赤衣アカメちゃん",
@@ -66,9 +57,18 @@
     "name": "なかもとおまち",
     "twitchid": "41futon",
     "title": "カレーは2日目がおいしい←これほんと？",
-    "date": "2026-09-01T15:02:44.000+09:00",
-    "status": "live",
+    "date": "2026-09-01T15:02:49.000+09:00",
+    "status": "archive",
     "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/1405880b-e945-4720-98c9-6a08c6400cae-profile_image-300x300.png",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_41futon-320x180.jpg"
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/e07b20ce966ed988da48_41futon_316396225906_1788242564//thumb/thumb0-320x180.jpg"
+  },
+  {
+    "name": "銘兎目あう",
+    "twitchid": "Metome_Au",
+    "title": "【 スト６ 】Division S 第2節 同時視聴一緒にしよっ 👊🐰",
+    "date": "2026-09-01T18:40:41.000+09:00",
+    "status": "live",
+    "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/6eea4ef4-a33b-4c66-9378-ad3aa84b1187-profile_image-300x300.png",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_Metome_Au-320x180.jpg"
   }
 ]

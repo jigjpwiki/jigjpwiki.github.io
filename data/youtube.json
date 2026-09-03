@@ -1,16 +1,5 @@
 [
   {
-    "name": "夏凪はつみ",
-    "youtubeid": "UCjGfpZuK6__30b6IpMhR_SQ",
-    "title": "誕生日前夜祭",
-    "date": "2026-09-01T03:52:58.000+09:00",
-    "status": "archive",
-    "type": "video",
-    "thumbnail": "https://i.ytimg.com/vi/vgUP9yysq-g/mqdefault.jpg",
-    "channelIcon": "https://yt3.ggpht.com/INy08-sy4lc_VdFTnVS-UPNN_GEq6QlR7G4csb265LOfP97BLr1C7Z8uqU9CX28UILGPsrqTmiQ=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=vgUP9yysq-g"
-  },
-  {
     "name": "桜庭羽奈",
     "youtubeid": "UCPgg_A08ksSYP-VivJGniRw",
     "title": "【おはよう100目標！】9月最初のおはよう待ってます！！初見さん大歓迎！💛【新人VTuberの雑談／歌枠】🐻",
@@ -1117,7 +1106,7 @@
     "date": "2026-09-03T12:39:05.000+09:00",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/W_qtHp2mT_w/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/W_qtHp2mT_w/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/eW_Hug0M6zFk9QSbAmOUWLMSfzBlCHmes-8yAksvfUNzyLgY6TSsE_eW8ncfE4bHYZXKoTWxmQ=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=W_qtHp2mT_w"
   },
@@ -1463,6 +1452,17 @@
     "url": "https://www.youtube.com/watch?v=6CdL8pT3jMM"
   },
   {
+    "name": "瀬奈りるか",
+    "youtubeid": "UCWi_ztz8Xuz4XfzhoG6ZfyA",
+    "title": "オタクに優しいギャルは存在しました #vtuber #切り抜き #パレデミア学園",
+    "date": "2026-09-03T23:04:20.000+09:00",
+    "status": "archive",
+    "type": "video",
+    "thumbnail": "https://i.ytimg.com/vi/KxUw88djNKU/mqdefault.jpg",
+    "channelIcon": "https://yt3.ggpht.com/BaxFKUrCc4gGKc1wwAHt4ebjk8C69NdTl3fMz9LoR5SUm_Tpvv2yixsbJhp8qsld6S0tdgup=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=KxUw88djNKU"
+  },
+  {
     "name": "雛菊のん",
     "youtubeid": "UChccV6U0Tkx9de4YjXbEelw",
     "title": "9月入って思うこと#shorts #vtuber #新人vtuber #おしゃべり #おすすめにのりたい #バズれ",
@@ -1472,6 +1472,17 @@
     "thumbnail": "https://i.ytimg.com/vi/L8fhyF439zw/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/-7v40HQCqllHpJD69LHIo2n5lUt-pZ-bLtfrKAXhZk9OF06nj4Lno3gwBvO8d1jBSl5dCCxAxQ=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=L8fhyF439zw"
+  },
+  {
+    "name": "フローレ・ブランカ",
+    "youtubeid": "UCNb9zRVc1coFKxJAn9lVtsw",
+    "title": "【縦型雑談配信】作業(編集)をします！【フローレ・ブランカ/パレデミア学園】",
+    "date": "2026-09-03T23:16:37.000+09:00",
+    "status": "archive",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/AUpMyRvaUOQ/mqdefault.jpg",
+    "channelIcon": "https://yt3.ggpht.com/xqdNSKZCNQ6ekbqgjixeOR0aTymLfmP_ILAFQ4sBF7ln-ZWxQYkVjGBun2pF1PwVC6nmwi2KFxE=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=AUpMyRvaUOQ"
   },
   {
     "name": "堂下さとり",
@@ -1516,6 +1527,28 @@
     "thumbnail": "https://i.ytimg.com/vi/np9Hk3mdK_Q/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/T655ATpSd2gkjZBrokvlkaUH0f5-fCpQdcJpwxmmNdy6fxCYffAlq2sMhPOtFk_CvVyOkEPY8Q=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=np9Hk3mdK_Q"
+  },
+  {
+    "name": "汐月永遠",
+    "youtubeid": "UCCCm2ueQtW3mYUMB7Excq8g",
+    "title": "【#雑談 】大体縦配信やんってな【汐月永遠/パレデミア学園】#永遠との時間",
+    "date": "2026-09-04T00:59:51.000+09:00",
+    "status": "archive",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/2JGa3TF6jj0/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/68oh3mZjSYRleiuocaxnF9VcHdbaxLQzjCq4QgdPlHe3083eTdmNkfXZ6YV81vTUA51qoNXH_g=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=2JGa3TF6jj0"
+  },
+  {
+    "name": "瀬奈りるか",
+    "youtubeid": "UCWi_ztz8Xuz4XfzhoG6ZfyA",
+    "title": "【200票】りる民へのお礼ボイス【投票イベお礼】",
+    "date": "2026-09-04T02:13:39.000+09:00",
+    "status": "archive",
+    "type": "video",
+    "thumbnail": "https://i.ytimg.com/vi/ItfAQTc-9sA/mqdefault.jpg",
+    "channelIcon": "https://yt3.ggpht.com/BaxFKUrCc4gGKc1wwAHt4ebjk8C69NdTl3fMz9LoR5SUm_Tpvv2yixsbJhp8qsld6S0tdgup=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=ItfAQTc-9sA"
   },
   {
     "name": "桜庭羽奈",

@@ -1,14 +1,5 @@
 [
   {
-    "name": "しーはむ",
-    "twitchid": "siyham",
-    "title": "操作を手になじませる初心者",
-    "date": "2026-09-01T21:43:10.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/e1c097ec-5528-472a-a299-4dc50a979373-profile_image-300x300.png",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/d3eaf3f91e0c22cc147d_siyham_316454981747_1788266585//thumb/thumb0-320x180.jpg"
-  },
-  {
     "name": "水透ユウ",
     "twitchid": "minato_yu_",
     "title": "【 Mブランカ 】Cマスターガイル募集MR～1599ﾏﾃﾞ【 #スト6 】",
@@ -129,9 +120,36 @@
     "name": "李じゅぴ汰",
     "twitchid": "lee_jupita",
     "title": "【スト6】ジェイミーを対策したりいろいろ【Mキンバリー】",
-    "date": "2026-09-04T18:24:31.000+09:00",
-    "status": "live",
+    "date": "2026-09-04T18:24:36.000+09:00",
+    "status": "archive",
     "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/5706bc75-6841-4954-8894-7b7bfba16adb-profile_image-300x300.png",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lee_jupita-320x180.jpg"
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/9e62e6d25bf8e4b92b69_lee_jupita_316467386099_1788513871//thumb/thumb0-320x180.jpg"
+  },
+  {
+    "name": "水透ユウ",
+    "twitchid": "minato_yu_",
+    "title": "【 Mブランカ 】ガイル募集(※MR～1599) 9/5本番に向けて【 #スト6 】",
+    "date": "2026-09-04T20:49:45.000+09:00",
+    "status": "live",
+    "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/fc4f961e-29c3-4f2e-9880-161fbf3b98eb-profile_image-300x300.png",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_minato_yu_-320x180.jpg"
+  },
+  {
+    "name": "銘兎目あう",
+    "twitchid": "Metome_Au",
+    "title": "【スト６】大会本番🔥ベガ立ちファイトクラブ 「Aチーム」頑張りますっ✊🐰",
+    "date": "2026-09-04T20:59:31.000+09:00",
+    "status": "live",
+    "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/6eea4ef4-a33b-4c66-9378-ad3aa84b1187-profile_image-300x300.png",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_Metome_Au-320x180.jpg"
+  },
+  {
+    "name": "火乃晴るい",
+    "twitchid": "hinoha_rui",
+    "title": "【 #VALORANT 】腹パンスクリム 明日大会👀",
+    "date": "2026-09-04T21:05:02.000+09:00",
+    "status": "live",
+    "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/9e02effe-cf25-4ba0-9fe7-da457d4e8c87-profile_image-300x300.png",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_hinoha_rui-320x180.jpg"
   }
 ]

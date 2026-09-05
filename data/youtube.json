@@ -1084,7 +1084,7 @@
     "date": "2026-09-05T15:05:26.000+09:00",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/pc6YgctF4gg/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/pc6YgctF4gg/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/3p9jAiFZNvnKiFnz-hu-u03CwwXSshaxv5bexFCUmNuZbW2W93YCg5BQ6OeqfUAzvBcxSeSKR74=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=pc6YgctF4gg"
   },
@@ -1095,7 +1095,7 @@
     "date": "2026-09-05T15:14:47.000+09:00",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/PMKVSCV20oM/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/PMKVSCV20oM/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/5l_IDFvbCkoc_xXy5i5YH24NcAgRR9bYZM9hu30Hm8may2x-7GiLIxkQ3DHQ4vI9uKwRUcbR6Q=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=PMKVSCV20oM"
   },
@@ -1375,6 +1375,28 @@
     "url": "https://www.youtube.com/watch?v=U7XxZ8Z1I6Q"
   },
   {
+    "name": "暁月クララ",
+    "youtubeid": "UCn4XvlTXjGSvDynpxpOYZPQ",
+    "title": "恋、はじめました。 / ＝LOVE【#踊ってみた 】#イコラブ #暁月クララ",
+    "date": "2026-09-05T22:09:30.000+09:00",
+    "status": "archive",
+    "type": "video",
+    "thumbnail": "https://i.ytimg.com/vi/Q6ZejijmxyM/mqdefault.jpg",
+    "channelIcon": "https://yt3.ggpht.com/8tcStp-WzdZPtf6bPq1DtUnFSd2Eq5AppSd3_CEQ7hNNpnRND8InaWdPCz6T1wIWWkGJuFrbT94=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=Q6ZejijmxyM"
+  },
+  {
+    "name": "新巻るろな",
+    "youtubeid": "UCUd4wJjvPQflbLnsk_YHleA",
+    "title": "【 コミュ力に難のある #雑談 】まどマギの話してぇ～！あとスマホ壊れた【新巻るろな／パレデミア学園】#VTuber",
+    "date": "2026-09-05T22:16:01.000+09:00",
+    "status": "archive",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/eXKqy9ByMiw/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/-4sLuWCih-DlfhpwpDQEuB6eupCB6kTImkIPmKnh54vu5I0F49RkveNQGiqy0p8t0GDU6eiegGE=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=eXKqy9ByMiw"
+  },
+  {
     "name": "雛菊のん",
     "youtubeid": "UChccV6U0Tkx9de4YjXbEelw",
     "title": "メイクしながら思う事#shorts #vtuber #新人vtuber #おしゃべり #おすすめにのりたい #バズれ",
@@ -1423,9 +1445,9 @@
     "youtubeid": "UCXI0W_Os-BCIngpCb1YnOow",
     "title": "【Don't Drop The Cake】ケーキ運ぶだけとか楽勝じゃ〜ん‼️余裕余裕😁👊🏻💥【天透あわ/パレデミア学園】",
     "date": "2026-09-06T00:09:17.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/F1KMjSKD6IA/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/F1KMjSKD6IA/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/Me8I_Op8OlIy8Vuj387_Hdi6gnrZ-qiY1yDDt1Q5yKMKA51ISagT76HE01gw8xbLcef0vpsPgoc=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=F1KMjSKD6IA"
   },
@@ -1461,6 +1483,28 @@
     "thumbnail": "https://i.ytimg.com/vi/vhe0uebf7BQ/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/zOlQ66VHDdW9B1w3cRbHlo-3cfkYBLVHzYpXS_xLbOv9bHe72uv-bD246R7gCEfD_7wGBc-6vQ=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=vhe0uebf7BQ"
+  },
+  {
+    "name": "常磐カナメ",
+    "youtubeid": "UCbNEgJIF_ADD9e8-q7SoxCg",
+    "title": "【踊ってみた】オペラ!スペースオペラ! #shorts #常磐カナメ #プロセカ",
+    "date": "2026-09-06T02:02:24.000+09:00",
+    "status": "archive",
+    "type": "video",
+    "thumbnail": "https://i.ytimg.com/vi/UTJa7DD1kWU/mqdefault.jpg",
+    "channelIcon": "https://yt3.ggpht.com/vb_kLF_4hQ7UdEtOnEtL-_pI320ZMQ-lVQ9OV3xMvdTQitHXX1zk0b6GKQ977dawvfoB5Sb8OQ=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=UTJa7DD1kWU"
+  },
+  {
+    "name": "香鳴ハノン",
+    "youtubeid": "UCay6Y3oEoiC6ZEE2G0UZu_A",
+    "title": "【踊ってみた】「ひとりごつ」…途中、様子がおかしい？ #香鳴ハノン #パレプロ",
+    "date": "2026-09-06T02:55:04.000+09:00",
+    "status": "archive",
+    "type": "video",
+    "thumbnail": "https://i.ytimg.com/vi/mQfhLwx5BcY/mqdefault.jpg",
+    "channelIcon": "https://yt3.ggpht.com/qvbeb9E-gYc822fxxzi6Ug5QyjhqZAWbUskHANcwDWP5W8iTsK3LcQJnjS4CVBuFJ6fONsM9F7M=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=mQfhLwx5BcY"
   },
   {
     "name": "花晴りら",

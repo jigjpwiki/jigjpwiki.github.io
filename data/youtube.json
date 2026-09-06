@@ -1,16 +1,5 @@
 [
   {
-    "name": "桜庭羽奈",
-    "youtubeid": "UCPgg_A08ksSYP-VivJGniRw",
-    "title": "【おはよう100目標！】君のおはよう待ってます！！初見さん大歓迎！💛【新人VTuberの雑談／歌枠】🐻",
-    "date": "2026-09-04T06:30:41.000+09:00",
-    "status": "archive",
-    "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/X_iZ3NSHfp0/mqdefault.jpg",
-    "channelIcon": "https://yt3.ggpht.com/04zALH6pYL7mkWILHajvBzfzg4hrwRCLBONme3K1PjuEeYJIRC6RYxPmJzVZRuN42skHEDNRGmo=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=X_iZ3NSHfp0"
-  },
-  {
     "name": "花晴りら",
     "youtubeid": "UCqcnlq8uJqnGml6hcIrMCZw",
     "title": "【 朝活/雑談 】初見さん大歓迎🔆週末！雨の日も昼まで一緒にはなそう🎶【 花晴りら/パレデミア学園 】#れりライブ",
@@ -1117,7 +1106,7 @@
     "date": "2026-09-06T16:01:36.000+09:00",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/OeZLPeXjcVM/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/OeZLPeXjcVM/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/4RbHGCHx02xQ2ze4g7UCTvuUPlQCpbk6bHIb5cdqO4JNzTe5qsq4sDTt6m-xVKMm476vJiMF7A=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=OeZLPeXjcVM"
   },
@@ -1128,7 +1117,7 @@
     "date": "2026-09-06T16:32:58.000+09:00",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/qholEZOf5_I/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/qholEZOf5_I/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/xqdNSKZCNQ6ekbqgjixeOR0aTymLfmP_ILAFQ4sBF7ln-ZWxQYkVjGBun2pF1PwVC6nmwi2KFxE=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=qholEZOf5_I"
   },
@@ -1522,18 +1511,51 @@
     "youtubeid": "UCJLYktDEOak1rSOGRVRKlLQ",
     "title": "【Chill With You】今？さとねと一緒に作業中。一緒にどう？【パレデミア学園/夕凪万夜】",
     "date": "2026-09-07T00:55:42.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/3C6b0KJtMcM/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/3C6b0KJtMcM/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/zOlQ66VHDdW9B1w3cRbHlo-3cfkYBLVHzYpXS_xLbOv9bHe72uv-bD246R7gCEfD_7wGBc-6vQ=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=3C6b0KJtMcM"
+  },
+  {
+    "name": "夕凪万夜",
+    "youtubeid": "UCJLYktDEOak1rSOGRVRKlLQ",
+    "title": "【#マイクラ 】のんびりまったり整地する【パレデミア学園/夕凪万夜】",
+    "date": "2026-09-07T05:05:54.000+09:00",
+    "status": "archive",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/k6mNBuwivFM/mqdefault.jpg",
+    "channelIcon": "https://yt3.ggpht.com/zOlQ66VHDdW9B1w3cRbHlo-3cfkYBLVHzYpXS_xLbOv9bHe72uv-bD246R7gCEfD_7wGBc-6vQ=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=k6mNBuwivFM"
+  },
+  {
+    "name": "夕凪万夜",
+    "youtubeid": "UCJLYktDEOak1rSOGRVRKlLQ",
+    "title": "【#マイクラ 】朝活整地【パレデミア学園/夕凪万夜】",
+    "date": "2026-09-07T05:30:46.000+09:00",
+    "status": "live",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/bCqq29HJWtE/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/zOlQ66VHDdW9B1w3cRbHlo-3cfkYBLVHzYpXS_xLbOv9bHe72uv-bD246R7gCEfD_7wGBc-6vQ=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=bCqq29HJWtE"
+  },
+  {
+    "name": "堂下さとり",
+    "youtubeid": "UCBq6MSUL-Ermvnoj3PtX7Iw",
+    "title": "わたあめ自販機 やってみた【不運】",
+    "date": "2026-09-07T05:38:38.000+09:00",
+    "status": "archive",
+    "type": "video",
+    "thumbnail": "https://i.ytimg.com/vi/G2Efj7fvRng/mqdefault.jpg",
+    "channelIcon": "https://yt3.ggpht.com/eW_Hug0M6zFk9QSbAmOUWLMSfzBlCHmes-8yAksvfUNzyLgY6TSsE_eW8ncfE4bHYZXKoTWxmQ=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=G2Efj7fvRng"
   },
   {
     "name": "桜庭羽奈",
     "youtubeid": "UCPgg_A08ksSYP-VivJGniRw",
     "title": "【おはよう100目標！】今週もはじまったぜ！元気に頑張ろう！！初見さん大歓迎！💛【新人VTuberの雑談／歌枠】🐻",
-    "date": "2026-09-07T06:30:00.000+09:00",
-    "status": "upcoming",
+    "date": "2026-09-07T06:31:39.000+09:00",
+    "status": "live",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/Rkk3vBdyuCI/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/04zALH6pYL7mkWILHajvBzfzg4hrwRCLBONme3K1PjuEeYJIRC6RYxPmJzVZRuN42skHEDNRGmo=s240-c-k-c0x00ffffff-no-rj",

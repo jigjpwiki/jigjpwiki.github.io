@@ -88,5 +88,23 @@
     "status": "live",
     "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/fc4f961e-29c3-4f2e-9880-161fbf3b98eb-profile_image-300x300.png",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_minato_yu_-320x180.jpg"
+  },
+  {
+    "name": "火乃晴るい",
+    "twitchid": "hinoha_rui",
+    "title": "【 #マイクラ 】ｳｯｽ‼ #ぷろのゔぁマイクラ鯖やるぞ～！",
+    "date": "2026-09-09T22:48:20.000+09:00",
+    "status": "archive",
+    "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/9e02effe-cf25-4ba0-9fe7-da457d4e8c87-profile_image-300x300.png",
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/244c26e9987800387263_hinoha_rui_316491682035_1788961695//thumb/thumb0-320x180.jpg"
+  },
+  {
+    "name": "真昼ねる",
+    "twitchid": "mahiruneru",
+    "title": "〚 Minecraft 〛ぷろのゔぁ鯖開幕🌠Day1🔰 #マイクラ【ぷろのゔぁ￤VTuber￤真昼ねる】",
+    "date": "2026-09-09T23:14:49.000+09:00",
+    "status": "archive",
+    "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/90e97ba8-20ac-4d1d-861a-d27ed84b5d70-profile_image-300x300.png",
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/ddc9841d16c66926529f_mahiruneru_316434446066_1788963284//thumb/thumb0-320x180.jpg"
   }
 ]

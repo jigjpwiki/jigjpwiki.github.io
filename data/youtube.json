@@ -1359,7 +1359,7 @@
     "date": "2026-09-08T20:01:19.000+09:00",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/M2huGf6JH8s/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/M2huGf6JH8s/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/WBGP05KaXeA21IzCbCeM0QHa0v9maVvVUBDZ2DyfTT62F1wGaW3hLOQBy1gCfuQfEnDNgwbsrQ=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=M2huGf6JH8s"
   },
@@ -1610,7 +1610,7 @@
     "youtubeid": "UCqcnlq8uJqnGml6hcIrMCZw",
     "title": "【 朝活/雑談 】お仕事・学校前＆夜勤終わりに🔆200人におはよう言いたい朝活✨初見さん大歓迎🌷【 花晴りら/パレデミア学園 】#れりライブ",
     "date": "2026-09-09T06:59:59.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/rDLmMKUWwSA/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/CH5JMWVQZ_RtloaXoj6W-yXjo9x8UxXSBG_vMyDnfk7M2QTOApVE1zOesu_aDrSAqvDbGrUyxs0=s240-c-k-c0x00ffffff-no-rj",
@@ -1714,6 +1714,17 @@
     "thumbnail": "https://i.ytimg.com/vi/LOje3m0CyTc/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/y0zP0Uz7HSLx5dv3xo488Suxk8rJQQUC1wXaymjUBIQIwa25WlVu_VmrsT1xAyVD-jgeL7hs=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=LOje3m0CyTc"
+  },
+  {
+    "name": "小澄くろまる",
+    "youtubeid": "UC1Eq7ExEH0XO380it8cZYZg",
+    "title": "【マイクラ】この星もみんなのハートもボクのモ・ノ♡ぷろのゔぁコラボ#1【小澄くろまる /ぷろのゔぁ】",
+    "date": "2026-09-09T21:30:00.000+09:00",
+    "status": "upcoming",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/MYAs5GBx-TE/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/_pGNq0-SYZiXjomeCnQRygINoA2PKkUJMbRtwuSIL83vUAny58me1QY1WttWypAIwJFrE5hh0w=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=MYAs5GBx-TE"
   },
   {
     "name": "Palette Project",

@@ -1,16 +1,5 @@
 [
   {
-    "name": "夕凪万夜",
-    "youtubeid": "UCJLYktDEOak1rSOGRVRKlLQ",
-    "title": "【#マイクラ 】みんなのおはよう、地下帝国にてまつ。【パレデミア学園/夕凪万夜】",
-    "date": "2026-09-08T03:24:50.000+09:00",
-    "status": "archive",
-    "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/ggAomgOhKgo/mqdefault.jpg",
-    "channelIcon": "https://yt3.ggpht.com/zOlQ66VHDdW9B1w3cRbHlo-3cfkYBLVHzYpXS_xLbOv9bHe72uv-bD246R7gCEfD_7wGBc-6vQ=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=ggAomgOhKgo"
-  },
-  {
     "name": "堂下さとり",
     "youtubeid": "UCBq6MSUL-Ermvnoj3PtX7Iw",
     "title": "【実写】なす🍆料理8品 スイーツもあるよ【手元配信】",
@@ -1205,7 +1194,7 @@
     "date": "2026-09-10T06:59:33.000+09:00",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/U4a77mWrW_0/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/U4a77mWrW_0/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/HZPUrbSwGcllAbUtx6xggJ6lKfMfnAWDxWOCc01tpthiDipSqQP48TK5Jqz4GRzUdwKMUsxlsg=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=U4a77mWrW_0"
   },
@@ -1293,7 +1282,7 @@
     "date": "2026-09-10T15:36:41.000+09:00",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/xxM7BnBn_5Y/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/xxM7BnBn_5Y/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/eW_Hug0M6zFk9QSbAmOUWLMSfzBlCHmes-8yAksvfUNzyLgY6TSsE_eW8ncfE4bHYZXKoTWxmQ=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=xxM7BnBn_5Y"
   },
@@ -1628,6 +1617,28 @@
     "url": "https://www.youtube.com/watch?v=Ti_K22Pa24U"
   },
   {
+    "name": "無月いお",
+    "youtubeid": "UC2X_mAVGw8e3N9JQZZDVBfQ",
+    "title": "【#低音女子】一人旅したことある？《#パレデミア学園》#雑談#新人VTuber#vtuber#観月いお#無月いお",
+    "date": "2026-09-11T12:00:00.000+09:00",
+    "status": "upcoming",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/6C5pTX2R0qI/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/Z7PlAWhweuycNXNXoQ6etyDTkduySM-Kqy8kQW-AD19JuRdxT3HSdIxogPw3GPD5NHw_vZlf=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=6C5pTX2R0qI"
+  },
+  {
+    "name": "無月いお",
+    "youtubeid": "UC2X_mAVGw8e3N9JQZZDVBfQ",
+    "title": "【#低音女子】一人旅したことある？《#パレデミア学園》#雑談#新人VTuber#vtuber#縦型Live#観月いお#無月いお",
+    "date": "2026-09-11T12:00:00.000+09:00",
+    "status": "upcoming",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/vklWUyCTmyY/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/Z7PlAWhweuycNXNXoQ6etyDTkduySM-Kqy8kQW-AD19JuRdxT3HSdIxogPw3GPD5NHw_vZlf=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=vklWUyCTmyY"
+  },
+  {
     "name": "夏渚まはろ",
     "youtubeid": "UC_a00ml_EVDXSrtY8ZuyqGQ",
     "title": "【メン限くじら隊美術部】9月壁紙イラストお絵描き＆お名前書き配信【#夏渚まはろ￤#パレプロ】",
@@ -1637,6 +1648,28 @@
     "thumbnail": "https://i.ytimg.com/vi/hPaSEYsb2eY/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/iktv-39nC7NDASD1WeXms-DEuHuVqB5RhwTtdDe26w-BCvqf6yq3r_8zBiv2i2CfNXCK0uE8=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=hPaSEYsb2eY"
+  },
+  {
+    "name": "変幻リメ",
+    "youtubeid": "UC5bCRde8xRrNS7s6GjCNCyQ",
+    "title": "【#SURGETown】今日からPARADOX。ここから全部ひっくり返す。【変幻リメ】",
+    "date": "2026-09-11T19:00:00.000+09:00",
+    "status": "upcoming",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/O9GfahHCc98/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/4hssn4EXW2lORXRfiuYTjmYfnlZoQ2h72sdEompqX7GQwAKCsBx7eL0joCFSook1rfCKIcpykg=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=O9GfahHCc98"
+  },
+  {
+    "name": "橙葉ぽん",
+    "youtubeid": "UC0aNUh8VfQwgqj0taB8MDpg",
+    "title": "【Minecraft#2】ぷろのゔぁ鯖！はじめてのマイクラ🔰【 橙葉ぽん/ぷろのゔぁ 】",
+    "date": "2026-09-11T21:00:00.000+09:00",
+    "status": "upcoming",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/J5F5rMCwbG0/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/av9H0_OxG16zI7tQKGwYEwhIZd1RXZQKGjkWfgHslvYRTV5aJBEInW2q0qDzb51lttFjkJ_pBw=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=J5F5rMCwbG0"
   },
   {
     "name": "江波キョウカ",

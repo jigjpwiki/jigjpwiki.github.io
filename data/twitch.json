@@ -1,41 +1,5 @@
 [
   {
-    "name": "銘兎目あう",
-    "twitchid": "Metome_Au",
-    "title": "【スト6】Division S 第3節 同時視聴一緒にしよっ 👊🐰",
-    "date": "2026-09-08T19:01:18.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/6eea4ef4-a33b-4c66-9378-ad3aa84b1187-profile_image-300x300.png",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/815de9eef0a1856cf17a_metome_au_316428737650_1788861673//thumb/thumb0-320x180.jpg"
-  },
-  {
-    "name": "水透ユウ",
-    "twitchid": "minato_yu_",
-    "title": "【飲酒雑談】李じゅぴ汰と同期でお話する【ぷろのゔぁ/水透ユウ 】",
-    "date": "2026-09-08T21:05:15.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/fc4f961e-29c3-4f2e-9880-161fbf3b98eb-profile_image-300x300.png",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/537fdb3153bc73dff86b_minato_yu__316486593011_1788869110//thumb/thumb0-320x180.jpg"
-  },
-  {
-    "name": "李じゅぴ汰",
-    "twitchid": "lee_jupita",
-    "title": "【酒飲み雑談】ユウちゃんと飲みながらしゃべるよ～！！",
-    "date": "2026-09-08T21:05:57.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/5706bc75-6841-4954-8894-7b7bfba16adb-profile_image-300x300.png",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/d0911a51c70d4690632c_lee_jupita_316429326578_1788869152//thumb/thumb0-320x180.jpg"
-  },
-  {
-    "name": "李じゅぴ汰",
-    "twitchid": "lee_jupita",
-    "title": "【酒飲み雑談】ユウちゃんと飲みながらしゃべるよ～！！",
-    "date": "2026-09-08T22:38:59.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/5706bc75-6841-4954-8894-7b7bfba16adb-profile_image-300x300.png",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/d65d11f26b7bf44d083d_lee_jupita_316419832561_1788874734//thumb/thumb0-320x180.jpg"
-  },
-  {
     "name": "なかもとおまち",
     "twitchid": "41futon",
     "title": "焼肉焼く前に3分ランクマッチ",
@@ -120,7 +84,25 @@
     "name": "火乃晴るい",
     "twitchid": "hinoha_rui",
     "title": "【 #マイクラ 】水上拠点作りたい！ #ぷろのゔぁ マイクラ鯖🌟 夕飯まで！",
-    "date": "2026-09-11T18:25:30.000+09:00",
+    "date": "2026-09-11T18:25:35.000+09:00",
+    "status": "archive",
+    "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/9e02effe-cf25-4ba0-9fe7-da457d4e8c87-profile_image-300x300.png",
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/8bdf67500a4db720961c_hinoha_rui_316431647345_1789118730//thumb/thumb0-320x180.jpg"
+  },
+  {
+    "name": "銘兎目あう",
+    "twitchid": "Metome_Au",
+    "title": "【JSP3】日本事故物件監視協会3🚨協力監視員👮‍♂️花岡ももちゃん",
+    "date": "2026-09-11T20:01:55.000+09:00",
+    "status": "live",
+    "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/6eea4ef4-a33b-4c66-9378-ad3aa84b1187-profile_image-300x300.png",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_Metome_Au-320x180.jpg"
+  },
+  {
+    "name": "火乃晴るい",
+    "twitchid": "hinoha_rui",
+    "title": "【 #VALORANT 】明日の大会に向けてスクリムすぞ！",
+    "date": "2026-09-11T21:06:17.000+09:00",
     "status": "live",
     "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/9e02effe-cf25-4ba0-9fe7-da457d4e8c87-profile_image-300x300.png",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_hinoha_rui-320x180.jpg"

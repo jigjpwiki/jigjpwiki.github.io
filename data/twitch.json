@@ -93,18 +93,36 @@
     "name": "銘兎目あう",
     "twitchid": "Metome_Au",
     "title": "【JSP3】日本事故物件監視協会3🚨協力監視員👮‍♂️花岡ももちゃん",
-    "date": "2026-09-11T20:01:55.000+09:00",
-    "status": "live",
+    "date": "2026-09-11T20:02:00.000+09:00",
+    "status": "archive",
     "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/6eea4ef4-a33b-4c66-9378-ad3aa84b1187-profile_image-300x300.png",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_Metome_Au-320x180.jpg"
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/2471b2d590cc6b3636c2_metome_au_316499451635_1789124515//thumb/thumb0-320x180.jpg"
   },
   {
     "name": "火乃晴るい",
     "twitchid": "hinoha_rui",
     "title": "【 #VALORANT 】明日の大会に向けてスクリムすぞ！",
-    "date": "2026-09-11T21:06:17.000+09:00",
-    "status": "live",
+    "date": "2026-09-11T21:06:22.000+09:00",
+    "status": "archive",
     "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/9e02effe-cf25-4ba0-9fe7-da457d4e8c87-profile_image-300x300.png",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_hinoha_rui-320x180.jpg"
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/0cba8eb0676507406fd0_hinoha_rui_316432361329_1789128377//thumb/thumb0-320x180.jpg"
+  },
+  {
+    "name": "水透ユウ",
+    "twitchid": "minato_yu_",
+    "title": "【 #Minecraft 】深夜にチル作業（昨日鯖破壊されました）【ぷろのゔぁ/水透ユウ 】",
+    "date": "2026-09-11T23:27:39.000+09:00",
+    "status": "live",
+    "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/fc4f961e-29c3-4f2e-9880-161fbf3b98eb-profile_image-300x300.png",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_minato_yu_-320x180.jpg"
+  },
+  {
+    "name": "水透ユウ",
+    "twitchid": "minato_yu_",
+    "title": "【 #Minecraft 】どうも、新進気鋭の匠です【ぷろのゔぁ/水透ユウ 】",
+    "date": "2026-09-11T23:27:45.000+09:00",
+    "status": "archive",
+    "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/fc4f961e-29c3-4f2e-9880-161fbf3b98eb-profile_image-300x300.png",
+    "thumbnail": "https://vod-secure.twitch.tv/_404/404_processing_320x180.png"
   }
 ]

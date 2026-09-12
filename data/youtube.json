@@ -1166,17 +1166,6 @@
     "url": "https://www.youtube.com/watch?v=TTyn_d-8oew"
   },
   {
-    "name": "夏渚まはろ",
-    "youtubeid": "UC_a00ml_EVDXSrtY8ZuyqGQ",
-    "title": "【メン限くじら隊美術部】9月壁紙イラストお絵描き＆お名前書き配信【#夏渚まはろ￤#パレプロ】",
-    "date": "2026-09-11T18:00:00.000+09:00",
-    "status": "upcoming",
-    "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/hPaSEYsb2eY/mqdefault_live.jpg",
-    "channelIcon": "https://yt3.ggpht.com/iktv-39nC7NDASD1WeXms-DEuHuVqB5RhwTtdDe26w-BCvqf6yq3r_8zBiv2i2CfNXCK0uE8=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=hPaSEYsb2eY"
-  },
-  {
     "name": "無月いお",
     "youtubeid": "UC2X_mAVGw8e3N9JQZZDVBfQ",
     "title": "新人Vのお盆といえば#パレデミア学園#新人Vtuber#低音女子#切り抜き",
@@ -1287,13 +1276,24 @@
     "url": "https://www.youtube.com/watch?v=-N8SSgJupm8"
   },
   {
+    "name": "夏渚まはろ",
+    "youtubeid": "UC_a00ml_EVDXSrtY8ZuyqGQ",
+    "title": "【メン限くじら隊美術部】9月壁紙イラストお絵描き＆お名前書き配信【#夏渚まはろ￤#パレプロ】",
+    "date": "2026-09-11T20:14:54.000+09:00",
+    "status": "archive",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/hPaSEYsb2eY/mqdefault.jpg",
+    "channelIcon": "https://yt3.ggpht.com/iktv-39nC7NDASD1WeXms-DEuHuVqB5RhwTtdDe26w-BCvqf6yq3r_8zBiv2i2CfNXCK0uE8=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=hPaSEYsb2eY"
+  },
+  {
     "name": "氷雨セイ",
     "youtubeid": "UCL66HaXfxrR23G8sCU5-cnA",
     "title": "【#歌枠 】だれも止められねぇ【#パレデミア学園 #氷雨セイ】",
     "date": "2026-09-11T20:17:12.000+09:00",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/s3mBGw0WmZQ/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/s3mBGw0WmZQ/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/4t0lTung_X29I2abs2pm5ds33Xmo4umZzRJdmvSfMlI639aZhci-OjxB65nuoH447t3wS99z6N4=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=s3mBGw0WmZQ"
   },
@@ -1643,11 +1643,33 @@
     "youtubeid": "UCpdWNjSU-onhmcARqgHIfpg",
     "title": "【#朝活】今日は1時間だけ！縦横デュアルストリームでおはよう！9/12(土) #天堂観測【パレデミア学園/天堂ライラ】",
     "date": "2026-09-12T07:31:21.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/eHtpevY2HPo/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/JA8QqThoUnCNAgJASH3p_wPyWJBf2ILiUfpIvArr6592NkkrFntPQ4EgPsahnLpPCMP4mk93ig=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=eHtpevY2HPo"
+  },
+  {
+    "name": "江波キョウカ",
+    "youtubeid": "UChpkyQ3O21OnkcMcgCoNHCg",
+    "title": "꒰ঌ 歌枠 ┆ 初見さん60人と出会いたい✨#おはぴよ朝活 2026/09/12【 #江波キョウカ / パレプロ 】 #shorts #vtuber",
+    "date": "2026-09-12T09:01:55.000+09:00",
+    "status": "live",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/XbAYQfFgFeg/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/pM4ZefnBFJ2qlBEqknYCFHdW6dLH29KptwG0OYSu1-mAVAIy5M1IjwpMwC24-A_v07nluGGrlQ=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=XbAYQfFgFeg"
+  },
+  {
+    "name": "フローレ・ブランカ",
+    "youtubeid": "UCNb9zRVc1coFKxJAn9lVtsw",
+    "title": "【縦型雑談配信】久しぶりの朝活！！【フローレ・ブランカ/パレデミア学園】",
+    "date": "2026-09-12T09:03:33.000+09:00",
+    "status": "live",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/i-j1XC9ezG8/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/xqdNSKZCNQ6ekbqgjixeOR0aTymLfmP_ILAFQ4sBF7ln-ZWxQYkVjGBun2pF1PwVC6nmwi2KFxE=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=i-j1XC9ezG8"
   },
   {
     "name": "変幻リメ",
@@ -1681,6 +1703,17 @@
     "thumbnail": "https://i.ytimg.com/vi/HcT7PnJl9ME/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/rthBXvqjNFcVwEp-AWpiZDXnNjBodSXlsDTa-sjW6uR6Ssv3wuOw2dMXDZLlYaf_c4YiKfItHXU=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=HcT7PnJl9ME"
+  },
+  {
+    "name": "天堂ライラ",
+    "youtubeid": "UCpdWNjSU-onhmcARqgHIfpg",
+    "title": "【#雑談 ?】帰ってきたら何かする！！！※開始時間は仮です #天堂観測【パレデミア学園/天堂ライラ】",
+    "date": "2026-09-13T00:30:00.000+09:00",
+    "status": "upcoming",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/4cM_w_FbxsU/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/JA8QqThoUnCNAgJASH3p_wPyWJBf2ILiUfpIvArr6592NkkrFntPQ4EgPsahnLpPCMP4mk93ig=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=4cM_w_FbxsU"
   },
   {
     "name": "愛乃宮ゆめ",

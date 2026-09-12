@@ -1216,7 +1216,7 @@
     "date": "2026-09-12T14:09:49.000+09:00",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/Bf89eAveD-o/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/Bf89eAveD-o/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/h4kuTtFCGhkDV4nmk6qjQt8auhkqLEqWwB9Il3NZR6op3ph-a0YElRfLcXkZVPp6xqvGmZHy3w=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=Bf89eAveD-o"
   },
@@ -1392,7 +1392,7 @@
     "date": "2026-09-12T21:02:39.000+09:00",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/Kwx3jAxm-cA/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/Kwx3jAxm-cA/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/HZPUrbSwGcllAbUtx6xggJ6lKfMfnAWDxWOCc01tpthiDipSqQP48TK5Jqz4GRzUdwKMUsxlsg=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=Kwx3jAxm-cA"
   },
@@ -1489,9 +1489,9 @@
     "youtubeid": "UC5bCRde8xRrNS7s6GjCNCyQ",
     "title": "【#SURGETown】もちろんやるでしょ。この最高のメンバーで【変幻リメ】",
     "date": "2026-09-12T21:56:02.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/EsH05MP0VRY/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/EsH05MP0VRY/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/4hssn4EXW2lORXRfiuYTjmYfnlZoQ2h72sdEompqX7GQwAKCsBx7eL0joCFSook1rfCKIcpykg=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=EsH05MP0VRY"
   },
@@ -1500,7 +1500,7 @@
     "youtubeid": "UCNb9zRVc1coFKxJAn9lVtsw",
     "title": "【企画会議】私に配信で何をやってほしいと思いますか？【フローレ・ブランカ/パレデミア学園】",
     "date": "2026-09-12T22:00:53.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/BxaOgX4b58U/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/xqdNSKZCNQ6ekbqgjixeOR0aTymLfmP_ILAFQ4sBF7ln-ZWxQYkVjGBun2pF1PwVC6nmwi2KFxE=s240-c-k-c0x00ffffff-no-rj",
@@ -1522,16 +1522,16 @@
     "youtubeid": "UCWi_ztz8Xuz4XfzhoG6ZfyA",
     "title": "【オデュッセイア1章後半】メインストーリーの続きを読む！📚✨ミナトミナトミナトミナト【ブルーアーカイブ】※ネタバレ禁止 ＃せなりるライブ",
     "date": "2026-09-12T22:30:25.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/3l3PehaVfhY/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/3l3PehaVfhY/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/BaxFKUrCc4gGKc1wwAHt4ebjk8C69NdTl3fMz9LoR5SUm_Tpvv2yixsbJhp8qsld6S0tdgup=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=3l3PehaVfhY"
   },
   {
     "name": "夕凪万夜",
     "youtubeid": "UCJLYktDEOak1rSOGRVRKlLQ",
-    "title": "【#雑談/#耐久  /初見さん20人＆高評価60＆チャンネル登録830人目標】雑談って、雑に話すから雑談だよね、知らんけど【パレデミア学園/夕凪万夜】",
+    "title": "【#雑談/#耐久  /チャンネル登録850人目標】雑談って、雑に話すから雑談だよね、知らんけど【パレデミア学園/夕凪万夜】",
     "date": "2026-09-12T22:30:35.000+09:00",
     "status": "live",
     "type": "stream",
@@ -1542,11 +1542,11 @@
   {
     "name": "橙葉ぽん",
     "youtubeid": "UC0aNUh8VfQwgqj0taB8MDpg",
-    "title": "【Minecraft#3】ぷろのゔぁ鯖！はじめてのマイクラ🔰【 橙葉ぽん/ぷろのゔぁ 】",
+    "title": "【Minecraft#3】ぷろのゔぁ鯖！はじめてのマイクラ🔰鉄集め探索【 橙葉ぽん/ぷろのゔぁ 】",
     "date": "2026-09-12T23:17:30.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/hiQrf5iBgeM/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/hiQrf5iBgeM/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/av9H0_OxG16zI7tQKGwYEwhIZd1RXZQKGjkWfgHslvYRTV5aJBEInW2q0qDzb51lttFjkJ_pBw=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=hiQrf5iBgeM"
   },
@@ -1595,6 +1595,17 @@
     "url": "https://www.youtube.com/watch?v=4cM_w_FbxsU"
   },
   {
+    "name": "変幻リメ",
+    "youtubeid": "UC5bCRde8xRrNS7s6GjCNCyQ",
+    "title": "【#SURGETown】練習サーバー！！！【変幻リメ】",
+    "date": "2026-09-13T02:35:59.000+09:00",
+    "status": "live",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/7npEewh8R9Y/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/4hssn4EXW2lORXRfiuYTjmYfnlZoQ2h72sdEompqX7GQwAKCsBx7eL0joCFSook1rfCKIcpykg=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=7npEewh8R9Y"
+  },
+  {
     "name": "花晴りら",
     "youtubeid": "UCqcnlq8uJqnGml6hcIrMCZw",
     "title": "【 朝活/雑談 】日曜も早き起きの方全員集合🔆300人におはよう言いたい昼まで朝活✨初見さん大歓迎🌷【 花晴りら/パレデミア学園 】#れりライブ",
@@ -1604,6 +1615,17 @@
     "thumbnail": "https://i.ytimg.com/vi/y4Az3dP6ZL4/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/CH5JMWVQZ_RtloaXoj6W-yXjo9x8UxXSBG_vMyDnfk7M2QTOApVE1zOesu_aDrSAqvDbGrUyxs0=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=y4Az3dP6ZL4"
+  },
+  {
+    "name": "堂下さとり",
+    "youtubeid": "UCBq6MSUL-Ermvnoj3PtX7Iw",
+    "title": "【ゲーム配信】たぶんすぐ〇ぬマインクラフト【堂下さとり/パレデミア学園】",
+    "date": "2026-09-13T12:00:00.000+09:00",
+    "status": "upcoming",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/vJnlBHiztd8/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/eW_Hug0M6zFk9QSbAmOUWLMSfzBlCHmes-8yAksvfUNzyLgY6TSsE_eW8ncfE4bHYZXKoTWxmQ=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=vJnlBHiztd8"
   },
   {
     "name": "江波キョウカ",
@@ -1626,6 +1648,17 @@
     "thumbnail": "https://i.ytimg.com/vi/8JbN-ptkHck/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/XWKUawU_WoX_xINkx3TMSF3fj0RbdiwNezFiEAGcmHfQYvwkjMUM1mvyOmgsbK8LxHoo6aEKJA=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=8JbN-ptkHck"
+  },
+  {
+    "name": "橙葉ぽん",
+    "youtubeid": "UC0aNUh8VfQwgqj0taB8MDpg",
+    "title": "【Minecraft#4】ぷろのゔぁ鯖！はじめてのマイクラ🔰雪原行きたい❄【 橙葉ぽん/ぷろのゔぁ 】",
+    "date": "2026-09-13T21:00:00.000+09:00",
+    "status": "upcoming",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/Q3n8AENvSjw/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/av9H0_OxG16zI7tQKGwYEwhIZd1RXZQKGjkWfgHslvYRTV5aJBEInW2q0qDzb51lttFjkJ_pBw=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=Q3n8AENvSjw"
   },
   {
     "name": "愛乃宮ゆめ",

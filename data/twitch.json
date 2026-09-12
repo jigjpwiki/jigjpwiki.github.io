@@ -1,32 +1,5 @@
 [
   {
-    "name": "李じゅぴ汰",
-    "twitchid": "lee_jupita",
-    "title": "【ぷろのゔぁマイクラ企画！】初日！皆と遊ぶよ～！！！【Minecraft】",
-    "date": "2026-09-09T20:05:51.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/5706bc75-6841-4954-8894-7b7bfba16adb-profile_image-300x300.png",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/257458be5100c34d73c6_lee_jupita_316433413490_1788951946//thumb/thumb0-320x180.jpg"
-  },
-  {
-    "name": "水透ユウ",
-    "twitchid": "minato_yu_",
-    "title": "【 #Minecraft 】初心者はこのゲームなにすればええんや【ぷろのゔぁ/水透ユウ 】",
-    "date": "2026-09-09T20:06:13.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/fc4f961e-29c3-4f2e-9880-161fbf3b98eb-profile_image-300x300.png",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/87694e36b0741a05747e_minato_yu__316490688499_1788951967//thumb/thumb0-320x180.jpg"
-  },
-  {
-    "name": "火乃晴るい",
-    "twitchid": "hinoha_rui",
-    "title": "【 #マイクラ 】ｳｯｽ‼ #ぷろのゔぁマイクラ鯖やるぞ～！",
-    "date": "2026-09-09T22:48:20.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/9e02effe-cf25-4ba0-9fe7-da457d4e8c87-profile_image-300x300.png",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/244c26e9987800387263_hinoha_rui_316491682035_1788961695//thumb/thumb0-320x180.jpg"
-  },
-  {
     "name": "真昼ねる",
     "twitchid": "mahiruneru",
     "title": "〚 Minecraft 〛ぷろのゔぁ鯖開幕🌠Day1🔰 #マイクラ【ぷろのゔぁ￤VTuber￤真昼ねる】",
@@ -106,5 +79,32 @@
     "status": "archive",
     "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/fc4f961e-29c3-4f2e-9880-161fbf3b98eb-profile_image-300x300.png",
     "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/598d13e75642c15b4245_minato_yu__316500635635_1789136859//thumb/thumb0-320x180.jpg"
+  },
+  {
+    "name": "火乃晴るい",
+    "twitchid": "hinoha_rui",
+    "title": "【 #VALORANT 】#恐竜CUP 本番✊応援してね！※遅延あり",
+    "date": "2026-09-12T21:03:59.000+09:00",
+    "status": "live",
+    "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/9e02effe-cf25-4ba0-9fe7-da457d4e8c87-profile_image-300x300.png",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_hinoha_rui-320x180.jpg"
+  },
+  {
+    "name": "李じゅぴ汰",
+    "twitchid": "lee_jupita",
+    "title": "【雑談コラボ】小澄くろまるちゃんとましゅまろもぐもぐするよ～！",
+    "date": "2026-09-12T21:36:35.000+09:00",
+    "status": "live",
+    "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/5706bc75-6841-4954-8894-7b7bfba16adb-profile_image-300x300.png",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lee_jupita-320x180.jpg"
+  },
+  {
+    "name": "なかもとおまち",
+    "twitchid": "41futon",
+    "title": "労働後ni ランクマをひとかじり",
+    "date": "2026-09-12T22:52:06.000+09:00",
+    "status": "live",
+    "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/1405880b-e945-4720-98c9-6a08c6400cae-profile_image-300x300.png",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_41futon-320x180.jpg"
   }
 ]

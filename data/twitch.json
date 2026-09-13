@@ -1,32 +1,5 @@
 [
   {
-    "name": "銘兎目あう",
-    "twitchid": "Metome_Au",
-    "title": "【 スト６】1642MR～Mケン🥋 グラマスへGOGOGO👊🐰🔥",
-    "date": "2026-09-10T21:00:02.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/6eea4ef4-a33b-4c66-9378-ad3aa84b1187-profile_image-300x300.png",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/ac3ee6542c906fa30325_metome_au_316495372275_1789041597//thumb/thumb0-320x180.jpg"
-  },
-  {
-    "name": "なかもとおまち",
-    "twitchid": "41futon",
-    "title": "#10 完全初見★DBシリーズ！～そして10年後～  最後までしゃぶりつくすぞ！！！",
-    "date": "2026-09-10T21:04:13.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/1405880b-e945-4720-98c9-6a08c6400cae-profile_image-300x300.png",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/3d355cda4ff0c42c8c0d_41futon_316438099186_1789041848//thumb/thumb0-320x180.jpg"
-  },
-  {
-    "name": "水透ユウ",
-    "twitchid": "minato_yu_",
-    "title": "【 #Minecraft 】ハッカーにすべて破壊されて一かららしい。【ぷろのゔぁ/水透ユウ 】",
-    "date": "2026-09-10T21:51:01.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/fc4f961e-29c3-4f2e-9880-161fbf3b98eb-profile_image-300x300.png",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/1c13c2588a1ca9460c02_minato_yu__316438358770_1789044656//thumb/thumb0-320x180.jpg"
-  },
-  {
     "name": "火乃晴るい",
     "twitchid": "hinoha_rui",
     "title": "【 #マイクラ 】水上拠点作りたい！ #ぷろのゔぁ マイクラ鯖🌟 夕飯まで！",
@@ -102,9 +75,27 @@
     "name": "李じゅぴ汰",
     "twitchid": "lee_jupita",
     "title": "【ぷろのゔぁ鯖】ハッカーに破壊された街で李の家作り！【Minecraft】",
-    "date": "2026-09-13T18:22:07.000+09:00",
-    "status": "live",
+    "date": "2026-09-13T18:22:12.000+09:00",
+    "status": "archive",
     "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/5706bc75-6841-4954-8894-7b7bfba16adb-profile_image-300x300.png",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lee_jupita-320x180.jpg"
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/8f7f4f2f2e0c01b6cbce_lee_jupita_316508401139_1789291327//thumb/thumb0-320x180.jpg"
+  },
+  {
+    "name": "銘兎目あう",
+    "twitchid": "Metome_Au",
+    "title": "【スト6】1664MR～Mケン🥋グラマス👊🐰",
+    "date": "2026-09-13T21:02:39.000+09:00",
+    "status": "live",
+    "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/6eea4ef4-a33b-4c66-9378-ad3aa84b1187-profile_image-300x300.png",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_Metome_Au-320x180.jpg"
+  },
+  {
+    "name": "火乃晴るい",
+    "twitchid": "hinoha_rui",
+    "title": "【 #VALORANT 】#恐竜CUP 決勝戦🔥 昨日に引き続き応援してね！※遅延あり",
+    "date": "2026-09-13T21:06:05.000+09:00",
+    "status": "archive",
+    "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/9e02effe-cf25-4ba0-9fe7-da457d4e8c87-profile_image-300x300.png",
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/7e2d0b63a5624ebb5977_hinoha_rui_316509100147_1789301160//thumb/thumb0-320x180.jpg"
   }
 ]

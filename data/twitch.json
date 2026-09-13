@@ -84,10 +84,10 @@
     "name": "銘兎目あう",
     "twitchid": "Metome_Au",
     "title": "【スト6】1664MR～Mケン🥋グラマス👊🐰",
-    "date": "2026-09-13T21:02:39.000+09:00",
-    "status": "live",
+    "date": "2026-09-13T21:02:44.000+09:00",
+    "status": "archive",
     "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/6eea4ef4-a33b-4c66-9378-ad3aa84b1187-profile_image-300x300.png",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_Metome_Au-320x180.jpg"
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/50c858dbede58af3ca4d_metome_au_316509075187_1789300959//thumb/thumb0-320x180.jpg"
   },
   {
     "name": "火乃晴るい",
@@ -97,5 +97,23 @@
     "status": "archive",
     "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/9e02effe-cf25-4ba0-9fe7-da457d4e8c87-profile_image-300x300.png",
     "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/7e2d0b63a5624ebb5977_hinoha_rui_316509100147_1789301160//thumb/thumb0-320x180.jpg"
+  },
+  {
+    "name": "火乃晴るい",
+    "twitchid": "hinoha_rui",
+    "title": "【 #VALORANT 】優勝したしソロコンペいくぞー！うえーい👆",
+    "date": "2026-09-13T23:30:56.000+09:00",
+    "status": "archive",
+    "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/9e02effe-cf25-4ba0-9fe7-da457d4e8c87-profile_image-300x300.png",
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/43d71be700ff6ecfb7e8_hinoha_rui_316453247858_1789309850//thumb/thumb0-320x180.jpg"
+  },
+  {
+    "name": "水透ユウ",
+    "twitchid": "minato_yu_",
+    "title": "【 #Minecraft 】木こりの悪魔【ぷろのゔぁ/水透ユウ 】",
+    "date": "2026-09-13T23:33:28.000+09:00",
+    "status": "live",
+    "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/fc4f961e-29c3-4f2e-9880-161fbf3b98eb-profile_image-300x300.png",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_minato_yu_-320x180.jpg"
   }
 ]

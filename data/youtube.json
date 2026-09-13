@@ -1282,7 +1282,7 @@
     "date": "2026-09-13T12:38:23.000+09:00",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/vJnlBHiztd8/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/vJnlBHiztd8/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/eW_Hug0M6zFk9QSbAmOUWLMSfzBlCHmes-8yAksvfUNzyLgY6TSsE_eW8ncfE4bHYZXKoTWxmQ=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=vJnlBHiztd8"
   },
@@ -1425,7 +1425,7 @@
     "date": "2026-09-13T19:00:55.000+09:00",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/6keRPjvtDRs/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/6keRPjvtDRs/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/4hssn4EXW2lORXRfiuYTjmYfnlZoQ2h72sdEompqX7GQwAKCsBx7eL0joCFSook1rfCKIcpykg=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=6keRPjvtDRs"
   },
@@ -1524,7 +1524,7 @@
     "date": "2026-09-13T20:38:47.000+09:00",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/g1aF2BNiOf0/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/g1aF2BNiOf0/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/K9NG8yMDYt1GGoQjhc9c-XEBm1PxGVkEhIQxos6ODhB_pk5HpUvETjUOe5LLkzzJ3biot_nWwQ=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=g1aF2BNiOf0"
   },
@@ -1796,10 +1796,10 @@
     "name": "変幻リメ",
     "youtubeid": "UC5bCRde8xRrNS7s6GjCNCyQ",
     "title": "【#SURGETown】練習する！！！やれること少しでも！【変幻リメ】",
-    "date": "2026-09-14T02:45:00.000+09:00",
-    "status": "upcoming",
+    "date": "2026-09-14T02:40:49.000+09:00",
+    "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/nYbAmPbmUUc/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/nYbAmPbmUUc/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/4hssn4EXW2lORXRfiuYTjmYfnlZoQ2h72sdEompqX7GQwAKCsBx7eL0joCFSook1rfCKIcpykg=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=nYbAmPbmUUc"
   },
@@ -1857,5 +1857,27 @@
     "thumbnail": "https://i.ytimg.com/vi/pC-zMlZC4A4/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/iktv-39nC7NDASD1WeXms-DEuHuVqB5RhwTtdDe26w-BCvqf6yq3r_8zBiv2i2CfNXCK0uE8=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=pC-zMlZC4A4"
+  },
+  {
+    "name": "変幻リメ",
+    "youtubeid": "UC5bCRde8xRrNS7s6GjCNCyQ",
+    "title": "【#SURGETown】レベルアップしたい！！！【変幻リメ】",
+    "date": "2026-09-14T19:00:00.000+09:00",
+    "status": "upcoming",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/kC06Mj8OSsk/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/4hssn4EXW2lORXRfiuYTjmYfnlZoQ2h72sdEompqX7GQwAKCsBx7eL0joCFSook1rfCKIcpykg=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=kC06Mj8OSsk"
+  },
+  {
+    "name": "橙葉ぽん",
+    "youtubeid": "UC0aNUh8VfQwgqj0taB8MDpg",
+    "title": "【Billies Wheelie】じゅぴた先輩コラボ🧡ハムスター転がす🐹【 橙葉ぽん/ぷろのゔぁ 】",
+    "date": "2026-09-14T21:00:00.000+09:00",
+    "status": "upcoming",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/nHPjVnOst50/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/av9H0_OxG16zI7tQKGwYEwhIZd1RXZQKGjkWfgHslvYRTV5aJBEInW2q0qDzb51lttFjkJ_pBw=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=nHPjVnOst50"
   }
 ]

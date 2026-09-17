@@ -1425,7 +1425,7 @@
     "date": "2026-09-16T19:30:19.000+09:00",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/z-PbC6FJRyE/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/z-PbC6FJRyE/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/4RbHGCHx02xQ2ze4g7UCTvuUPlQCpbk6bHIb5cdqO4JNzTe5qsq4sDTt6m-xVKMm476vJiMF7A=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=z-PbC6FJRyE"
   },
@@ -1480,7 +1480,7 @@
     "date": "2026-09-16T20:07:02.000+09:00",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/jZsdZ7HQ9u0/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/jZsdZ7HQ9u0/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/-7v40HQCqllHpJD69LHIo2n5lUt-pZ-bLtfrKAXhZk9OF06nj4Lno3gwBvO8d1jBSl5dCCxAxQ=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=jZsdZ7HQ9u0"
   },
@@ -1557,7 +1557,7 @@
     "date": "2026-09-16T21:01:59.000+09:00",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/dcA8Gheokuc/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/dcA8Gheokuc/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/T655ATpSd2gkjZBrokvlkaUH0f5-fCpQdcJpwxmmNdy6fxCYffAlq2sMhPOtFk_CvVyOkEPY8Q=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=dcA8Gheokuc"
   },
@@ -1764,9 +1764,9 @@
     "youtubeid": "UCAhdxmsdngH4noySdpVAVWQ",
     "title": "【漢字でGOGO!】眠りにつくことができなかったVtuberのねむねむ漢字書き取り配信😉✨【#vtuber 】#ちとせらいぶ #パレデミア学園",
     "date": "2026-09-17T06:03:57.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/7Yf5uBoz7w8/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/7Yf5uBoz7w8/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/traR_yWe-AOGyM2wjo8h2FJO9JWBcbjfrL13X-umeD6BtNPopSZ2Q3YmdJq_5K9gWgHf_j64iQ=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=7Yf5uBoz7w8"
   },
@@ -1830,11 +1830,22 @@
     "youtubeid": "UCpdWNjSU-onhmcARqgHIfpg",
     "title": "【#朝活】初配信から4か月！おはようしに来てね！9/17(木) #天堂観測【パレデミア学園/天堂ライラ】",
     "date": "2026-09-17T07:36:08.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/zJcJ9uPWvUc/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/zJcJ9uPWvUc/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/JA8QqThoUnCNAgJASH3p_wPyWJBf2ILiUfpIvArr6592NkkrFntPQ4EgPsahnLpPCMP4mk93ig=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=zJcJ9uPWvUc"
+  },
+  {
+    "name": "藤森ちとせ",
+    "youtubeid": "UCAhdxmsdngH4noySdpVAVWQ",
+    "title": "【#Minecraft 】古代の残骸集め作業雑談配信｜マグマ怖すぎますね～⛏✨作業用にも☺ROM歓迎🎉【#vtuber 】#ちとせらいぶ #パレデミア学園",
+    "date": "2026-09-17T13:00:00.000+09:00",
+    "status": "upcoming",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/3GpQu3zyK7Y/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/traR_yWe-AOGyM2wjo8h2FJO9JWBcbjfrL13X-umeD6BtNPopSZ2Q3YmdJq_5K9gWgHf_j64iQ=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=3GpQu3zyK7Y"
   },
   {
     "name": "犬丸なでこ",

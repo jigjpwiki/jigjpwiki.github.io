@@ -1,41 +1,5 @@
 [
   {
-    "name": "銘兎目あう",
-    "twitchid": "Metome_Au",
-    "title": "【スト6】3on3よるラジ杯🐰🔥天宮ちほさん/花岡ももちゃん",
-    "date": "2026-09-16T20:26:57.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/6eea4ef4-a33b-4c66-9378-ad3aa84b1187-profile_image-300x300.png",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/fcd70d6a74d593748026_metome_au_316465105010_1789558012//thumb/thumb0-320x180.jpg"
-  },
-  {
-    "name": "水透ユウ",
-    "twitchid": "minato_yu_",
-    "title": "【 #R6S 】対戦相手募集！3vs.3の練習します久しぶりに起動【ぷろのゔぁ/水透ユウ 】",
-    "date": "2026-09-16T20:53:58.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/fc4f961e-29c3-4f2e-9880-161fbf3b98eb-profile_image-300x300.png",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/7e860a594cd0281eaeb1_minato_yu__316521668723_1789559632//thumb/thumb0-320x180.jpg"
-  },
-  {
-    "name": "水透ユウ",
-    "twitchid": "minato_yu_",
-    "title": "【 #R6S 】対戦相手募集！3vs.3の練習します久しぶりに起動【ぷろのゔぁ/水透ユウ 】",
-    "date": "2026-09-16T21:03:51.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/fc4f961e-29c3-4f2e-9880-161fbf3b98eb-profile_image-300x300.png",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/c2f25158cf6a55a94328_minato_yu__316521751027_1789560225//thumb/thumb0-320x180.jpg"
-  },
-  {
-    "name": "なかもとおまち",
-    "twitchid": "41futon",
-    "title": "今日も出航します！！！いくぞおおお！！！！",
-    "date": "2026-09-16T21:48:11.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/1405880b-e945-4720-98c9-6a08c6400cae-profile_image-300x300.png",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/828ba95ff976ff761e2f_41futon_316521994995_1789562885//thumb/thumb0-320x180.jpg"
-  },
-  {
     "name": "なかもとおまち",
     "twitchid": "41futon",
     "title": "いまのランクみんなつよすぎる；；",
@@ -66,9 +30,27 @@
     "name": "火乃晴るい",
     "twitchid": "hinoha_rui",
     "title": "【 #ヒンタウン 】一日目 初心者🔰まずは何をしたら…？",
-    "date": "2026-09-19T16:24:38.000+09:00",
-    "status": "live",
+    "date": "2026-09-19T16:24:43.000+09:00",
+    "status": "archive",
     "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/9e02effe-cf25-4ba0-9fe7-da457d4e8c87-profile_image-300x300.png",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_hinoha_rui-320x180.jpg"
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/cd4feaa3b0381ce597f5_hinoha_rui_316477920498_1789802678//thumb/thumb0-320x180.jpg"
+  },
+  {
+    "name": "真昼ねる",
+    "twitchid": "mahiruneru",
+    "title": "〚 R6S 〛3v3大会本番じゃ🔥w/まゆずみ©、水透ユウ【ぷろのゔぁ￤VTuber￤真昼ねる】",
+    "date": "2026-09-19T20:19:58.000+09:00",
+    "status": "live",
+    "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/90e97ba8-20ac-4d1d-861a-d27ed84b5d70-profile_image-300x300.png",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_mahiruneru-320x180.jpg"
+  },
+  {
+    "name": "水透ユウ",
+    "twitchid": "minato_yu_",
+    "title": "【 #R6S 】3vs.3カスタム本番！🔥【ぷろのゔぁ/水透ユウ 】",
+    "date": "2026-09-19T20:20:06.000+09:00",
+    "status": "live",
+    "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/fc4f961e-29c3-4f2e-9880-161fbf3b98eb-profile_image-300x300.png",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_minato_yu_-320x180.jpg"
   }
 ]

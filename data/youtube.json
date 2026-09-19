@@ -1,27 +1,5 @@
 [
   {
-    "name": "藤森ちとせ",
-    "youtubeid": "UCAhdxmsdngH4noySdpVAVWQ",
-    "title": "【漢字でGOGO!】眠りにつくことができなかったVtuberのねむねむ漢字書き取り配信😉✨【#vtuber 】#ちとせらいぶ #パレデミア学園",
-    "date": "2026-09-17T06:03:57.000+09:00",
-    "status": "archive",
-    "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/7Yf5uBoz7w8/mqdefault.jpg",
-    "channelIcon": "https://yt3.ggpht.com/traR_yWe-AOGyM2wjo8h2FJO9JWBcbjfrL13X-umeD6BtNPopSZ2Q3YmdJq_5K9gWgHf_j64iQ=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=7Yf5uBoz7w8"
-  },
-  {
-    "name": "桜庭羽奈",
-    "youtubeid": "UCPgg_A08ksSYP-VivJGniRw",
-    "title": "【おはよう100目標！】朝の時間をちょっとちょうだい！初見さん大歓迎！💛【新人VTuberの雑談／歌枠】🐻",
-    "date": "2026-09-17T06:30:01.000+09:00",
-    "status": "archive",
-    "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/WSrNX6jw-cg/mqdefault.jpg",
-    "channelIcon": "https://yt3.ggpht.com/04zALH6pYL7mkWILHajvBzfzg4hrwRCLBONme3K1PjuEeYJIRC6RYxPmJzVZRuN42skHEDNRGmo=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=WSrNX6jw-cg"
-  },
-  {
     "name": "犬丸なでこ",
     "youtubeid": "UCdJmJxMfXrlnZabUkuss2EA",
     "title": "【＃朝活】元気を摂取してわんね！わんわんわーー！【パレデミア学園/犬丸なでこ】",
@@ -1150,7 +1128,7 @@
     "date": "2026-09-19T14:34:12.000+09:00",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/wjEXpxC4SJM/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/wjEXpxC4SJM/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/eVD8Ygm7KVyh3dvWnyebfYlbYpD13ZYQ-Bos8WdR5LDE61A3svHVHCLEY-rM3IQgw9O4uvdd=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=wjEXpxC4SJM"
   },
@@ -1469,7 +1447,7 @@
     "date": "2026-09-19T22:46:59.000+09:00",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/LUscMJ4-GRU/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/LUscMJ4-GRU/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/traR_yWe-AOGyM2wjo8h2FJO9JWBcbjfrL13X-umeD6BtNPopSZ2Q3YmdJq_5K9gWgHf_j64iQ=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=LUscMJ4-GRU"
   },
@@ -1595,6 +1573,17 @@
     "url": "https://www.youtube.com/watch?v=IKCAvpPG1gc"
   },
   {
+    "name": "水透ユウ",
+    "youtubeid": "UCOah55SQYynzPgQQ4wxuzkA",
+    "title": "【#Aniimo 】朝活レベル上げ！100名VTuber対抗イベントに参戦中！【PR】",
+    "date": "2026-09-20T06:29:11.000+09:00",
+    "status": "live",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/gCJNCPMjPcc/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/eVD8Ygm7KVyh3dvWnyebfYlbYpD13ZYQ-Bos8WdR5LDE61A3svHVHCLEY-rM3IQgw9O4uvdd=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=gCJNCPMjPcc"
+  },
+  {
     "name": "花晴りら",
     "youtubeid": "UCqcnlq8uJqnGml6hcIrMCZw",
     "title": "【 朝活/雑談 】午前中に起きる方集合🔆登録者5400名を目指して朝活✨初見さん大歓迎🌷【 花晴りら/パレデミア学園 】#れりライブ",
@@ -1648,6 +1637,17 @@
     "thumbnail": "https://i.ytimg.com/vi/gVWxGyEfUcw/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/sYbvo_2nSCW162VEArIwu7v1B3bl159gmEnGgGei8I8drc4l7huPP7q6aWZ4AfXi5wTMACmGow=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=gVWxGyEfUcw"
+  },
+  {
+    "name": "牡丹雪",
+    "youtubeid": "UCl-qrfygvCjyA_lMR5lJzig",
+    "title": "【 #コラボ 】予想外の話が飛び出す！？灯野ぺけ。先輩と初コラボ雑談！！【 牡丹雪 / #パレデミア学園 】",
+    "date": "2026-09-20T22:00:00.000+09:00",
+    "status": "upcoming",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/akY1GWY3O48/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/K9NG8yMDYt1GGoQjhc9c-XEBm1PxGVkEhIQxos6ODhB_pk5HpUvETjUOe5LLkzzJ3biot_nWwQ=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=akY1GWY3O48"
   },
   {
     "name": "橙葉ぽん",

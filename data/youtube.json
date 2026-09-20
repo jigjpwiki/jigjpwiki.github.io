@@ -1282,7 +1282,7 @@
     "date": "2026-09-19T21:43:00.000+09:00",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/et8akZxWEtw/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/et8akZxWEtw/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/eW_Hug0M6zFk9QSbAmOUWLMSfzBlCHmes-8yAksvfUNzyLgY6TSsE_eW8ncfE4bHYZXKoTWxmQ=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=et8akZxWEtw"
   },
@@ -1544,11 +1544,22 @@
     "youtubeid": "UCPgg_A08ksSYP-VivJGniRw",
     "title": "【おはよう100目標！】珍しいニチアサ配信！初見さん大歓迎！💛【新人VTuberの雑談／歌枠】🐻",
     "date": "2026-09-20T07:30:22.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/j1v7tNLeHGo/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/j1v7tNLeHGo/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/04zALH6pYL7mkWILHajvBzfzg4hrwRCLBONme3K1PjuEeYJIRC6RYxPmJzVZRuN42skHEDNRGmo=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=j1v7tNLeHGo"
+  },
+  {
+    "name": "桜庭羽奈",
+    "youtubeid": "UCPgg_A08ksSYP-VivJGniRw",
+    "title": "【耐久リベンジ！】47都道府県埋まるまで終われません！初見さん大歓迎！💛【新人VTuberの雑談／歌枠】🐻",
+    "date": "2026-09-20T12:00:00.000+09:00",
+    "status": "upcoming",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/Qmku_I3_hb4/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/04zALH6pYL7mkWILHajvBzfzg4hrwRCLBONme3K1PjuEeYJIRC6RYxPmJzVZRuN42skHEDNRGmo=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=Qmku_I3_hb4"
   },
   {
     "name": "変幻リメ",

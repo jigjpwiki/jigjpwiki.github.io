@@ -1,27 +1,5 @@
 [
   {
-    "name": "暁月クララ",
-    "youtubeid": "UCn4XvlTXjGSvDynpxpOYZPQ",
-    "title": "Vアイドルに声かけてみた‼️#shorts #vtuber #暁月クララ",
-    "date": "2026-09-19T05:50:11.000+09:00",
-    "status": "archive",
-    "type": "video",
-    "thumbnail": "https://i.ytimg.com/vi/nrZ0o5CdkiE/mqdefault.jpg",
-    "channelIcon": "https://yt3.ggpht.com/8tcStp-WzdZPtf6bPq1DtUnFSd2Eq5AppSd3_CEQ7hNNpnRND8InaWdPCz6T1wIWWkGJuFrbT94=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=nrZ0o5CdkiE"
-  },
-  {
-    "name": "花晴りら",
-    "youtubeid": "UCqcnlq8uJqnGml6hcIrMCZw",
-    "title": "【 朝活/雑談 】土曜日早起きの方集合🔆250人におはよう言いたい朝活✨初見さん大歓迎🌷【 花晴りら/パレデミア学園 】#れりライブ",
-    "date": "2026-09-19T06:59:40.000+09:00",
-    "status": "archive",
-    "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/-1Yhpn-htTs/mqdefault.jpg",
-    "channelIcon": "https://yt3.ggpht.com/CH5JMWVQZ_RtloaXoj6W-yXjo9x8UxXSBG_vMyDnfk7M2QTOApVE1zOesu_aDrSAqvDbGrUyxs0=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=-1Yhpn-htTs"
-  },
-  {
     "name": "瀬奈りるか",
     "youtubeid": "UCWi_ztz8Xuz4XfzhoG6ZfyA",
     "title": "【ブルアカ大決戦】3桁取りたい！4012↑目指して神秘TA！✨人のTLを参考に3桁目指す作業配信🪄ROM・並走大歓迎✨【ブルーアーカイブ】 ＃せなりるライブ",
@@ -1216,7 +1194,7 @@
     "date": "2026-09-21T17:00:42.000+09:00",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/TZ7Up-WEkwg/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/TZ7Up-WEkwg/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/oX8bu2EfV0AJmmDPuA74S-Ky2XAUOxd1IXHEpX5jFDLltMrVNknI1FkpYdhb9VrLGtpUCm3Xvg=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=TZ7Up-WEkwg"
   },
@@ -1302,7 +1280,7 @@
     "youtubeid": "UCdJmJxMfXrlnZabUkuss2EA",
     "title": "【＃実況】かまいたちの夜×3【＃ホラー】【パレデミア学園/犬丸なでこ】",
     "date": "2026-09-21T19:00:44.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/Dipa7ob_RVQ/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/HZPUrbSwGcllAbUtx6xggJ6lKfMfnAWDxWOCc01tpthiDipSqQP48TK5Jqz4GRzUdwKMUsxlsg=s240-c-k-c0x00ffffff-no-rj",
@@ -1518,6 +1496,17 @@
     "url": "https://www.youtube.com/watch?v=6vV4EaAN1Sg"
   },
   {
+    "name": "相栖るじゅ",
+    "youtubeid": "UCrpdBoGpa6g2WEtRWsIlhDQ",
+    "title": "【歌枠/雑談】食べないで～！【相栖るじゅ/パレデミア学園】",
+    "date": "2026-09-21T22:36:57.000+09:00",
+    "status": "archive",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/Bm1bM-oZ-Dk/mqdefault.jpg",
+    "channelIcon": "https://yt3.ggpht.com/yQbh9vEEgS_UapoQhIxxoTSy13bDxlHYC-ncTcO9VIDBN2NvrLTAWeKGQ72CN2fhOOrHqYaFDA=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=Bm1bM-oZ-Dk"
+  },
+  {
     "name": "天辻ゆらぐ",
     "youtubeid": "UCeOFQCn_QZJMTszlRYRg3rQ",
     "title": "【歌ってみた】冠菊/初星学園【学園アイドルマスター】星神かぐや＆天辻ゆらぐ #shorts #歌ってみた #新人vtuber #学マス",
@@ -1540,37 +1529,125 @@
     "url": "https://www.youtube.com/watch?v=i5IY-v-Ooos"
   },
   {
+    "name": "暁月クララ",
+    "youtubeid": "UCn4XvlTXjGSvDynpxpOYZPQ",
+    "title": "Vアイドルの理想と現実ww #shorts #vtuber #暁月クララ",
+    "date": "2026-09-21T23:37:01.000+09:00",
+    "status": "archive",
+    "type": "video",
+    "thumbnail": "https://i.ytimg.com/vi/ToxxaGbrt6I/mqdefault.jpg",
+    "channelIcon": "https://yt3.ggpht.com/8tcStp-WzdZPtf6bPq1DtUnFSd2Eq5AppSd3_CEQ7hNNpnRND8InaWdPCz6T1wIWWkGJuFrbT94=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=ToxxaGbrt6I"
+  },
+  {
+    "name": "香鳴ハノン",
+    "youtubeid": "UCay6Y3oEoiC6ZEE2G0UZu_A",
+    "title": "【歌枠｜KARAOKE】ノープランで何曲か歌うよ～～🎤✨【#パレプロ #香鳴ハノン】",
+    "date": "2026-09-21T23:52:17.000+09:00",
+    "status": "archive",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/d93Dwg4bum4/mqdefault.jpg",
+    "channelIcon": "https://yt3.ggpht.com/qvbeb9E-gYc822fxxzi6Ug5QyjhqZAWbUskHANcwDWP5W8iTsK3LcQJnjS4CVBuFJ6fONsM9F7M=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=d93Dwg4bum4"
+  },
+  {
+    "name": "常磐カナメ",
+    "youtubeid": "UCbNEgJIF_ADD9e8-q7SoxCg",
+    "title": "ソロ曲『HORA  HORA Dance』踊った！ #shorts #常磐カナメ",
+    "date": "2026-09-22T00:48:00.000+09:00",
+    "status": "archive",
+    "type": "video",
+    "thumbnail": "https://i.ytimg.com/vi/dnFQzTzIUpg/mqdefault.jpg",
+    "channelIcon": "https://yt3.ggpht.com/vb_kLF_4hQ7UdEtOnEtL-_pI320ZMQ-lVQ9OV3xMvdTQitHXX1zk0b6GKQ977dawvfoB5Sb8OQ=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=dnFQzTzIUpg"
+  },
+  {
     "name": "雛菊のん",
     "youtubeid": "UChccV6U0Tkx9de4YjXbEelw",
     "title": "夜更かししよ💕　#新人vtuber #雑談 #睡眠導入",
     "date": "2026-09-22T01:04:58.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/gZDMpyeOhnM/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/gZDMpyeOhnM/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/-7v40HQCqllHpJD69LHIo2n5lUt-pZ-bLtfrKAXhZk9OF06nj4Lno3gwBvO8d1jBSl5dCCxAxQ=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=gZDMpyeOhnM"
+  },
+  {
+    "name": "汐月永遠",
+    "youtubeid": "UCCCm2ueQtW3mYUMB7Excq8g",
+    "title": "雑談もするうろ覚え歌枠の会【汐月永遠/パレデミア学園】#永遠との時間",
+    "date": "2026-09-22T01:14:14.000+09:00",
+    "status": "archive",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/ZuV3hezaGc8/mqdefault.jpg",
+    "channelIcon": "https://yt3.ggpht.com/68oh3mZjSYRleiuocaxnF9VcHdbaxLQzjCq4QgdPlHe3083eTdmNkfXZ6YV81vTUA51qoNXH_g=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=ZuV3hezaGc8"
   },
   {
     "name": "天辻ゆらぐ",
     "youtubeid": "UCeOFQCn_QZJMTszlRYRg3rQ",
     "title": "【雀魂雑談】深夜のゆるゆる雀魂参加型～～※参加は早いもの勝ち！【天辻ゆらぐ/パレデミア学園】 #新人Vtuber #ゆらぐっどたいむ",
     "date": "2026-09-22T01:35:44.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/AYJqIBF5B1Y/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/AYJqIBF5B1Y/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/4AFFu60kFJqix-OhtDW3EJdQ0jQa1LrK56tGpvqvbGodMQFpkH-_qtvL_66dPGD3kl4LW9N4=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=AYJqIBF5B1Y"
   },
   {
+    "name": "天堂ライラ",
+    "youtubeid": "UCpdWNjSU-onhmcARqgHIfpg",
+    "title": "【#雑談】配信画面ちょっと触りながら雑談！&クリスマスイベ追い込み！ #天堂観測【パレデミア学園/天堂ライラ】",
+    "date": "2026-09-22T02:02:39.000+09:00",
+    "status": "archive",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/6jH7q4cmw2U/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/JA8QqThoUnCNAgJASH3p_wPyWJBf2ILiUfpIvArr6592NkkrFntPQ4EgPsahnLpPCMP4mk93ig=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=6jH7q4cmw2U"
+  },
+  {
+    "name": "藤森ちとせ",
+    "youtubeid": "UCAhdxmsdngH4noySdpVAVWQ",
+    "title": "古代の残骸発見発見したVtuber #切り抜き #minecraft #vtuber #古代の残骸 #ネザー",
+    "date": "2026-09-22T05:37:13.000+09:00",
+    "status": "archive",
+    "type": "video",
+    "thumbnail": "https://i.ytimg.com/vi/bW1sH7G9QWo/mqdefault.jpg",
+    "channelIcon": "https://yt3.ggpht.com/traR_yWe-AOGyM2wjo8h2FJO9JWBcbjfrL13X-umeD6BtNPopSZ2Q3YmdJq_5K9gWgHf_j64iQ=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=bW1sH7G9QWo"
+  },
+  {
+    "name": "水透ユウ",
+    "youtubeid": "UCOah55SQYynzPgQQ4wxuzkA",
+    "title": "【#Aniimo 】朝活おはようLv.58アニモ☀️100名VTuber対抗イベントに参戦中！【PR/水透ユウ】",
+    "date": "2026-09-22T06:12:31.000+09:00",
+    "status": "live",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/iBRR1xO28LI/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/eVD8Ygm7KVyh3dvWnyebfYlbYpD13ZYQ-Bos8WdR5LDE61A3svHVHCLEY-rM3IQgw9O4uvdd=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=iBRR1xO28LI"
+  },
+  {
     "name": "花晴りら",
     "youtubeid": "UCqcnlq8uJqnGml6hcIrMCZw",
-    "title": "【 朝活/雑談 】国民の休日🔆祝日も早起きな方集合！200人におはよう言いたい朝活✨初見さん大歓迎🌷【 花晴りら/パレデミア学園 】#れりライブ",
-    "date": "2026-09-22T07:00:00.000+09:00",
-    "status": "upcoming",
+    "title": "【 朝活/雑談 】国民の休日🔆祝日も早起きな方集合！250人におはよう言いたい朝活✨初見さん大歓迎🌷【 花晴りら/パレデミア学園 】#れりライブ",
+    "date": "2026-09-22T06:59:23.000+09:00",
+    "status": "live",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/-JTdax0tKdc/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/CH5JMWVQZ_RtloaXoj6W-yXjo9x8UxXSBG_vMyDnfk7M2QTOApVE1zOesu_aDrSAqvDbGrUyxs0=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=-JTdax0tKdc"
+  },
+  {
+    "name": "天堂ライラ",
+    "youtubeid": "UCpdWNjSU-onhmcARqgHIfpg",
+    "title": "【#朝活】久しぶりな気がする！おはようしに来てね！9/22(火祝) #天堂観測【パレデミア学園/天堂ライラ】",
+    "date": "2026-09-22T07:30:00.000+09:00",
+    "status": "upcoming",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/6jvOg66DKOU/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/JA8QqThoUnCNAgJASH3p_wPyWJBf2ILiUfpIvArr6592NkkrFntPQ4EgPsahnLpPCMP4mk93ig=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=6jvOg66DKOU"
   },
   {
     "name": "橙葉ぽん",
@@ -1582,6 +1659,17 @@
     "thumbnail": "https://i.ytimg.com/vi/bVFx1Xg4-2I/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/av9H0_OxG16zI7tQKGwYEwhIZd1RXZQKGjkWfgHslvYRTV5aJBEInW2q0qDzb51lttFjkJ_pBw=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=bVFx1Xg4-2I"
+  },
+  {
+    "name": "常磐カナメ",
+    "youtubeid": "UCbNEgJIF_ADD9e8-q7SoxCg",
+    "title": "【Don't Drop The Cake】ケーキを落としたら何かが起こるホラゲ【パレプロ/常磐カナメ】",
+    "date": "2026-09-22T19:00:00.000+09:00",
+    "status": "upcoming",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/B7xQVdHolQQ/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/vb_kLF_4hQ7UdEtOnEtL-_pI320ZMQ-lVQ9OV3xMvdTQitHXX1zk0b6GKQ977dawvfoB5Sb8OQ=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=B7xQVdHolQQ"
   },
   {
     "name": "小澄くろまる",

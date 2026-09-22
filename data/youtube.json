@@ -1216,7 +1216,7 @@
     "date": "2026-09-21T17:38:31.000+09:00",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/aWXHzgfyDi0/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/aWXHzgfyDi0/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/4AFFu60kFJqix-OhtDW3EJdQ0jQa1LrK56tGpvqvbGodMQFpkH-_qtvL_66dPGD3kl4LW9N4=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=aWXHzgfyDi0"
   },
@@ -1282,7 +1282,7 @@
     "date": "2026-09-21T19:00:44.000+09:00",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/Dipa7ob_RVQ/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/Dipa7ob_RVQ/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/HZPUrbSwGcllAbUtx6xggJ6lKfMfnAWDxWOCc01tpthiDipSqQP48TK5Jqz4GRzUdwKMUsxlsg=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=Dipa7ob_RVQ"
   },
@@ -1621,7 +1621,7 @@
     "youtubeid": "UCOah55SQYynzPgQQ4wxuzkA",
     "title": "【#Aniimo 】朝活おはようLv.58アニモ☀️100名VTuber対抗イベントに参戦中！【PR/水透ユウ】",
     "date": "2026-09-22T06:12:31.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/iBRR1xO28LI/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/eVD8Ygm7KVyh3dvWnyebfYlbYpD13ZYQ-Bos8WdR5LDE61A3svHVHCLEY-rM3IQgw9O4uvdd=s240-c-k-c0x00ffffff-no-rj",
@@ -1641,13 +1641,24 @@
   {
     "name": "天堂ライラ",
     "youtubeid": "UCpdWNjSU-onhmcARqgHIfpg",
-    "title": "【#朝活】久しぶりな気がする！おはようしに来てね！9/22(火祝) #天堂観測【パレデミア学園/天堂ライラ】",
-    "date": "2026-09-22T07:30:00.000+09:00",
-    "status": "upcoming",
+    "title": "【#朝活】久しぶりな気がする！70人とおはようしたい！9/22(火祝) #天堂観測【パレデミア学園/天堂ライラ】",
+    "date": "2026-09-22T07:30:12.000+09:00",
+    "status": "live",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/6jvOg66DKOU/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/JA8QqThoUnCNAgJASH3p_wPyWJBf2ILiUfpIvArr6592NkkrFntPQ4EgPsahnLpPCMP4mk93ig=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=6jvOg66DKOU"
+  },
+  {
+    "name": "しーはむ",
+    "youtubeid": "UC5xSDiB2WG4pO_zUZ_t-n0Q",
+    "title": "〘ほの暮らしの庭〙雑談しながら！鵺の皮を剥ぎに行く⑰〘VTuber│#しーはむ│ぷろのゔぁ〙",
+    "date": "2026-09-22T11:00:00.000+09:00",
+    "status": "upcoming",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/ixh3xYcYcjw/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/y0zP0Uz7HSLx5dv3xo488Suxk8rJQQUC1wXaymjUBIQIwa25WlVu_VmrsT1xAyVD-jgeL7hs=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=ixh3xYcYcjw"
   },
   {
     "name": "橙葉ぽん",

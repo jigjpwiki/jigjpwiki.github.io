@@ -1,14 +1,5 @@
 [
   {
-    "name": "火乃晴るい",
-    "twitchid": "hinoha_rui",
-    "title": "【 #ヒンタウン 】二日目 初心者🔰ワルになったぞ！！！！",
-    "date": "2026-09-20T16:14:12.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/9e02effe-cf25-4ba0-9fe7-da457d4e8c87-profile_image-300x300.png",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/412408706cc98a3cf022_hinoha_rui_316482487922_1789888447//thumb/thumb0-320x180.jpg"
-  },
-  {
     "name": "なかもとおまち",
     "twitchid": "41futon",
     "title": "みんな強すぎる；ランクマ；グラマスいく；",
@@ -74,20 +65,11 @@
   {
     "name": "なかもとおまち",
     "twitchid": "41futon",
-    "title": "🍥24時間耐久配信🍥ラスト！！🌟100人組手！！！参加だれでもおＫ！PASS4141",
-    "date": "2026-09-22T18:02:09.000+09:00",
-    "status": "live",
-    "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/1405880b-e945-4720-98c9-6a08c6400cae-profile_image-300x300.png",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_41futon-320x180.jpg"
-  },
-  {
-    "name": "なかもとおまち",
-    "twitchid": "41futon",
     "title": "🍥24時間耐久配信🍥まずは開会のあいさつ！！そしてタイムスケジュールの確認！！",
     "date": "2026-09-22T18:02:14.000+09:00",
     "status": "archive",
     "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/1405880b-e945-4720-98c9-6a08c6400cae-profile_image-300x300.png",
-    "thumbnail": "https://vod-secure.twitch.tv/_404/404_processing_320x180.png"
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/e83c55b423b45458d598_41futon_316547253619_1790067729//thumb/thumb0-320x180.jpg"
   },
   {
     "name": "銘兎目あう",
@@ -106,5 +88,23 @@
     "status": "archive",
     "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/9e02effe-cf25-4ba0-9fe7-da457d4e8c87-profile_image-300x300.png",
     "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/9f749ec33269247ced14_hinoha_rui_316492931186_1790087170//thumb/thumb0-320x180.jpg"
+  },
+  {
+    "name": "李じゅぴ汰",
+    "twitchid": "lee_jupita",
+    "title": "【Life is Strangeリユニオン】集大成って感じになってきた！③",
+    "date": "2026-09-23T16:47:45.000+09:00",
+    "status": "archive",
+    "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/5706bc75-6841-4954-8894-7b7bfba16adb-profile_image-300x300.png",
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/9bcb2dbc185c7ebb7028_lee_jupita_316495724018_1790149660//thumb/thumb0-320x180.jpg"
+  },
+  {
+    "name": "銘兎目あう",
+    "twitchid": "Metome_Au",
+    "title": "【スト6】1637MR～Mケン🥋短めだよっ✊🐰",
+    "date": "2026-09-23T20:01:07.000+09:00",
+    "status": "live",
+    "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/6eea4ef4-a33b-4c66-9378-ad3aa84b1187-profile_image-300x300.png",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_Metome_Au-320x180.jpg"
   }
 ]

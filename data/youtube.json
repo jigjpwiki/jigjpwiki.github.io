@@ -1,27 +1,5 @@
 [
   {
-    "name": "藤森ちとせ",
-    "youtubeid": "UCAhdxmsdngH4noySdpVAVWQ",
-    "title": "古代の残骸発見発見したVtuber #切り抜き #minecraft #vtuber #古代の残骸 #ネザー",
-    "date": "2026-09-22T05:37:13.000+09:00",
-    "status": "archive",
-    "type": "video",
-    "thumbnail": "https://i.ytimg.com/vi/bW1sH7G9QWo/mqdefault.jpg",
-    "channelIcon": "https://yt3.ggpht.com/traR_yWe-AOGyM2wjo8h2FJO9JWBcbjfrL13X-umeD6BtNPopSZ2Q3YmdJq_5K9gWgHf_j64iQ=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=bW1sH7G9QWo"
-  },
-  {
-    "name": "水透ユウ",
-    "youtubeid": "UCOah55SQYynzPgQQ4wxuzkA",
-    "title": "【#Aniimo 】朝活おはようLv.58アニモ☀️100名VTuber対抗イベントに参戦中！【PR/水透ユウ】",
-    "date": "2026-09-22T06:12:31.000+09:00",
-    "status": "archive",
-    "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/iBRR1xO28LI/mqdefault.jpg",
-    "channelIcon": "https://yt3.ggpht.com/eVD8Ygm7KVyh3dvWnyebfYlbYpD13ZYQ-Bos8WdR5LDE61A3svHVHCLEY-rM3IQgw9O4uvdd=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=iBRR1xO28LI"
-  },
-  {
     "name": "花晴りら",
     "youtubeid": "UCqcnlq8uJqnGml6hcIrMCZw",
     "title": "【 朝活/雑談 】国民の休日🔆祝日も早起きな方集合！250人におはよう言いたい朝活✨初見さん大歓迎🌷【 花晴りら/パレデミア学園 】#れりライブ",
@@ -1665,9 +1643,9 @@
     "youtubeid": "UCHsAAyHJhPXuLS6N3Kig6PQ",
     "title": "【Life is Strangeリユニオン】クリアするぞー！！！解き明かす！！④",
     "date": "2026-09-24T22:10:24.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/fQyCwK49JiA/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/fQyCwK49JiA/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/QQqec9A1J7eLk9RrRYD9vvk51BBJzcE1leGkU9n4YkwHqht9gmGT1ktmSlKItQtbuMSGuklAFxM=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=fQyCwK49JiA"
   },
@@ -1738,11 +1716,44 @@
     "url": "https://www.youtube.com/watch?v=8IQoMpTeyHM"
   },
   {
+    "name": "緋雨柚",
+    "youtubeid": "UCrB-SfrqB5ChY8aAT99grXw",
+    "title": "【#雑談】なにも考えない夜があったっていいよね【パレデミア学園/緋雨柚】",
+    "date": "2026-09-25T01:17:19.000+09:00",
+    "status": "archive",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/RPYA0V7JQmE/mqdefault.jpg",
+    "channelIcon": "https://yt3.ggpht.com/dPJHngNTeEfD_K0Mus141-We4xIuAhttm2pgEBl3VdGXqWvxGfy5mJfDMDbBmwI6UGc17dXb-g=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=RPYA0V7JQmE"
+  },
+  {
+    "name": "桜堂ねる",
+    "youtubeid": "UC0H7dRRqhfOifbYQ2TURdAg",
+    "title": "空手かVtuberの朝活0925",
+    "date": "2026-09-25T03:22:04.000+09:00",
+    "status": "archive",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/rgv5t0qXgqs/mqdefault.jpg",
+    "channelIcon": "https://yt3.ggpht.com/hBz75E3AEST1Dzv5vOTHAqoJfayd30WIWWQ3ZFLlWMHDsyZ_QD6ZVVUtLTKSizalT3APPtdpFGI=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=rgv5t0qXgqs"
+  },
+  {
+    "name": "水透ユウ",
+    "youtubeid": "UCOah55SQYynzPgQQ4wxuzkA",
+    "title": "【#Aniimo 】今日も朝活アニモ！100名VTuber対抗イベントに参戦中！【PR/水透ユウ】",
+    "date": "2026-09-25T06:24:25.000+09:00",
+    "status": "live",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/j4rlmD0yeGg/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/eVD8Ygm7KVyh3dvWnyebfYlbYpD13ZYQ-Bos8WdR5LDE61A3svHVHCLEY-rM3IQgw9O4uvdd=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=j4rlmD0yeGg"
+  },
+  {
     "name": "桜庭羽奈",
     "youtubeid": "UCPgg_A08ksSYP-VivJGniRw",
     "title": "【おはよう100目標！】金曜日もお仕事・学校お疲れ様！初見さん大歓迎！💛【新人VTuberの雑談／歌枠】🐻",
-    "date": "2026-09-25T06:30:00.000+09:00",
-    "status": "upcoming",
+    "date": "2026-09-25T06:30:26.000+09:00",
+    "status": "live",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/bVpLZcBj8qY/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/04zALH6pYL7mkWILHajvBzfzg4hrwRCLBONme3K1PjuEeYJIRC6RYxPmJzVZRuN42skHEDNRGmo=s240-c-k-c0x00ffffff-no-rj",
@@ -1813,5 +1824,16 @@
     "thumbnail": "https://i.ytimg.com/vi/u8o3pyyV6GM/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/zOlQ66VHDdW9B1w3cRbHlo-3cfkYBLVHzYpXS_xLbOv9bHe72uv-bD246R7gCEfD_7wGBc-6vQ=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=u8o3pyyV6GM"
+  },
+  {
+    "name": "しーはむ",
+    "youtubeid": "UC5xSDiB2WG4pO_zUZ_t-n0Q",
+    "title": "〘GUEST：小澄くろまる〙はむのもっと仲良し大作戦！〘VTuber│#しーはむ│ぷろのゔぁ〙",
+    "date": "2026-09-28T21:30:00.000+09:00",
+    "status": "upcoming",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/DjcKi2FjAho/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/y0zP0Uz7HSLx5dv3xo488Suxk8rJQQUC1wXaymjUBIQIwa25WlVu_VmrsT1xAyVD-jgeL7hs=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=DjcKi2FjAho"
   }
 ]

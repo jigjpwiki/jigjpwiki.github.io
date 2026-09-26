@@ -2,15 +2,6 @@
   {
     "name": "銘兎目あう",
     "twitchid": "Metome_Au",
-    "title": "【スト6】1637MR～Mケン🥋短めだよっ✊🐰",
-    "date": "2026-09-23T20:01:13.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/6eea4ef4-a33b-4c66-9378-ad3aa84b1187-profile_image-300x300.png",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/5aa6200b0d409c24e3f2_metome_au_316496384626_1790161267//thumb/thumb0-320x180.jpg"
-  },
-  {
-    "name": "銘兎目あう",
-    "twitchid": "Metome_Au",
     "title": "【スト6】1621MR～Mケン👊🐰🔥22:00までカスタム『Mケン＆Mテリー』募集",
     "date": "2026-09-24T21:00:22.000+09:00",
     "status": "archive",
@@ -93,9 +84,27 @@
     "name": "真昼ねる",
     "twitchid": "mahiruneru",
     "title": "〚 VALO 〛e-VALT Custom本番いくぞ🔥w/ナコイコナ©,ゆるねひぐ©,偉雷アマエ©,沙月リク©【ぷろのゔぁ￤VTuber￤真昼ねる】",
-    "date": "2026-09-26T17:00:02.000+09:00",
-    "status": "live",
+    "date": "2026-09-26T17:00:08.000+09:00",
+    "status": "archive",
     "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/90e97ba8-20ac-4d1d-861a-d27ed84b5d70-profile_image-300x300.png",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_mahiruneru-320x180.jpg"
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/245342322206f6c24b58_mahiruneru_316508746610_1790409602//thumb/thumb0-320x180.jpg"
+  },
+  {
+    "name": "火乃晴るい",
+    "twitchid": "hinoha_rui",
+    "title": "【 #ヒンタウン 】七日目 初心者🔰 今日こそは大犯罪をするぞ…",
+    "date": "2026-09-26T21:09:14.000+09:00",
+    "status": "live",
+    "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/9e02effe-cf25-4ba0-9fe7-da457d4e8c87-profile_image-300x300.png",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_hinoha_rui-320x180.jpg"
+  },
+  {
+    "name": "なかもとおまち",
+    "twitchid": "41futon",
+    "title": "MR1652～今晩は調子がいいのでがんばるぞ！",
+    "date": "2026-09-26T22:12:46.000+09:00",
+    "status": "live",
+    "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/1405880b-e945-4720-98c9-6a08c6400cae-profile_image-300x300.png",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_41futon-320x180.jpg"
   }
 ]

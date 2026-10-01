@@ -1,16 +1,5 @@
 [
   {
-    "name": "犬丸なでこ",
-    "youtubeid": "UCdJmJxMfXrlnZabUkuss2EA",
-    "title": "I'm lovin' it❣️❣️ #マクドナルド #朝活　#雑談　#vtuber",
-    "date": "2026-09-28T09:05:38.000+09:00",
-    "status": "archive",
-    "type": "video",
-    "thumbnail": "https://i.ytimg.com/vi/IKmP8nB4lfk/mqdefault.jpg",
-    "channelIcon": "https://yt3.ggpht.com/HZPUrbSwGcllAbUtx6xggJ6lKfMfnAWDxWOCc01tpthiDipSqQP48TK5Jqz4GRzUdwKMUsxlsg=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=IKmP8nB4lfk"
-  },
-  {
     "name": "瀬奈りるか",
     "youtubeid": "UCWi_ztz8Xuz4XfzhoG6ZfyA",
     "title": "【#5 空の軌跡 the 1st】完全初見！1章の続きをプレイ！消えた飛行船の行方調査をします🎮✨※ネタバレ注意【＃パレデミア学園】＃せなりるライブ",
@@ -1205,7 +1194,7 @@
     "date": "2026-09-30T19:46:25.000+09:00",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/DLWMdNRIbtk/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/DLWMdNRIbtk/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/4RbHGCHx02xQ2ze4g7UCTvuUPlQCpbk6bHIb5cdqO4JNzTe5qsq4sDTt6m-xVKMm476vJiMF7A=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=DLWMdNRIbtk"
   },
@@ -1238,7 +1227,7 @@
     "date": "2026-09-30T20:59:14.000+09:00",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/LToJNOBI7Dg/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/LToJNOBI7Dg/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/oX8bu2EfV0AJmmDPuA74S-Ky2XAUOxd1IXHEpX5jFDLltMrVNknI1FkpYdhb9VrLGtpUCm3Xvg=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=LToJNOBI7Dg"
   },
@@ -1265,6 +1254,17 @@
     "url": "https://www.youtube.com/watch?v=l08U5tIe004"
   },
   {
+    "name": "愛乃宮ゆめ",
+    "youtubeid": "UCttSjPiwPYpiPuCrgxK7c1g",
+    "title": "【雑談】みんなは秋冬の準備、なにする？【愛乃宮ゆめ/パレデミア学園】",
+    "date": "2026-09-30T21:00:25.000+09:00",
+    "status": "archive",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/mU1z7lk5afY/mqdefault.jpg",
+    "channelIcon": "https://yt3.ggpht.com/Gwr7KJNWnI6CEgmIfEeMZahF5pbGNKlRhQXBEkuMWE0D66--IJE77z-5Zu2i5LFBc_CA6ZkqY4Y=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=mU1z7lk5afY"
+  },
+  {
     "name": "桜庭羽奈",
     "youtubeid": "UCPgg_A08ksSYP-VivJGniRw",
     "title": "【高評価123を目指す！】寝落ち歓迎！癒しの歌枠！初見さん大歓迎！💛【新人VTuberの雑談／歌枠】🐻",
@@ -1274,17 +1274,6 @@
     "thumbnail": "https://i.ytimg.com/vi/JgkunrHDsAE/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/04zALH6pYL7mkWILHajvBzfzg4hrwRCLBONme3K1PjuEeYJIRC6RYxPmJzVZRuN42skHEDNRGmo=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=JgkunrHDsAE"
-  },
-  {
-    "name": "愛乃宮ゆめ",
-    "youtubeid": "UCttSjPiwPYpiPuCrgxK7c1g",
-    "title": "【雑談】みんなは秋冬の準備、なにする？【愛乃宮ゆめ/パレデミア学園】",
-    "date": "2026-09-30T21:15:00.000+09:00",
-    "status": "upcoming",
-    "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/mU1z7lk5afY/mqdefault_live.jpg",
-    "channelIcon": "https://yt3.ggpht.com/Gwr7KJNWnI6CEgmIfEeMZahF5pbGNKlRhQXBEkuMWE0D66--IJE77z-5Zu2i5LFBc_CA6ZkqY4Y=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=mU1z7lk5afY"
   },
   {
     "name": "露草なぎ",
@@ -1500,7 +1489,7 @@
     "youtubeid": "UCpdWNjSU-onhmcARqgHIfpg",
     "title": "【#朝活】今日も9:00まで！登録者1500人目指しながらおはようしたい！10/1(木) #天堂観測【パレデミア学園/天堂ライラ】",
     "date": "2026-10-01T07:33:53.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/nrsLyEzQI8w/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/JA8QqThoUnCNAgJASH3p_wPyWJBf2ILiUfpIvArr6592NkkrFntPQ4EgPsahnLpPCMP4mk93ig=s240-c-k-c0x00ffffff-no-rj",
@@ -1511,9 +1500,9 @@
     "youtubeid": "UCXI0W_Os-BCIngpCb1YnOow",
     "title": "【朝活】10月が来た🍁早起きして雑談したりお買い物する🛍【天透あわ/パレデミア学園】",
     "date": "2026-10-01T08:01:32.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/Jtv22JMJ9Cg/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/Jtv22JMJ9Cg/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/Me8I_Op8OlIy8Vuj387_Hdi6gnrZ-qiY1yDDt1Q5yKMKA51ISagT76HE01gw8xbLcef0vpsPgoc=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=Jtv22JMJ9Cg"
   },

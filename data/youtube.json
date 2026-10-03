@@ -1007,7 +1007,7 @@
     "date": "2026-10-02T18:00:33.000+09:00",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/xF-FFNtK1l8/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/xF-FFNtK1l8/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/nMtec5z3KY5RUGCSbQENm9culC2VpB7Ate_dUueAINpAJdFK4wwe7Q6eH88QiMXqjImAleLI=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=xF-FFNtK1l8"
   },
@@ -1029,7 +1029,7 @@
     "date": "2026-10-02T18:59:09.000+09:00",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/dy-yagK4-NE/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/dy-yagK4-NE/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/3KzF3YSQvjRpSMpFZEEsaGlIcETMW03ZmdKQy_TjJIm8t9vC4AjNwLLR5hNqXi0M9qnyszb0PCY=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=dy-yagK4-NE"
   },
@@ -1062,7 +1062,7 @@
     "date": "2026-10-02T19:47:16.000+09:00",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/ILnEWNQTCHo/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/ILnEWNQTCHo/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/-7v40HQCqllHpJD69LHIo2n5lUt-pZ-bLtfrKAXhZk9OF06nj4Lno3gwBvO8d1jBSl5dCCxAxQ=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=ILnEWNQTCHo"
   },
@@ -1106,7 +1106,7 @@
     "date": "2026-10-02T20:30:09.000+09:00",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/Mstvu9YjacU/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/Mstvu9YjacU/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/04zALH6pYL7mkWILHajvBzfzg4hrwRCLBONme3K1PjuEeYJIRC6RYxPmJzVZRuN42skHEDNRGmo=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=Mstvu9YjacU"
   },
@@ -1170,7 +1170,7 @@
     "youtubeid": "UC1Eq7ExEH0XO380it8cZYZg",
     "title": "【鉄拳8】侵略！ギャラクティカ鉄拳#15【小澄くろまる /ぷろのゔぁ】",
     "date": "2026-10-02T21:42:40.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/cAma_s1VT9I/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/_pGNq0-SYZiXjomeCnQRygINoA2PKkUJMbRtwuSIL83vUAny58me1QY1WttWypAIwJFrE5hh0w=s240-c-k-c0x00ffffff-no-rj",
@@ -1335,11 +1335,44 @@
     "youtubeid": "UCpdWNjSU-onhmcARqgHIfpg",
     "title": "【#朝活】70人とおはようしたい！10/3(土) #天堂観測【パレデミア学園/天堂ライラ】",
     "date": "2026-10-03T07:29:22.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/IX804ymowbw/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/JA8QqThoUnCNAgJASH3p_wPyWJBf2ILiUfpIvArr6592NkkrFntPQ4EgPsahnLpPCMP4mk93ig=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=IX804ymowbw"
+  },
+  {
+    "name": "新巻るろな",
+    "youtubeid": "UCUd4wJjvPQflbLnsk_YHleA",
+    "title": "【 #朝活 】パン食べながらコメントした人におはようを言う配信【新巻るろな／パレデミア学園】#VTuber #雑談",
+    "date": "2026-10-03T08:11:44.000+09:00",
+    "status": "archive",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/JloixRTdNoo/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/-4sLuWCih-DlfhpwpDQEuB6eupCB6kTImkIPmKnh54vu5I0F49RkveNQGiqy0p8t0GDU6eiegGE=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=JloixRTdNoo"
+  },
+  {
+    "name": "桜庭羽奈",
+    "youtubeid": "UCPgg_A08ksSYP-VivJGniRw",
+    "title": "はいはい。らぶちゅ#推しをお探しですか #切り抜き #vtuber  #新人vtuberと繋がりたい #shorts",
+    "date": "2026-10-03T09:00:01.000+09:00",
+    "status": "archive",
+    "type": "video",
+    "thumbnail": "https://i.ytimg.com/vi/O3lbB-St06k/mqdefault.jpg",
+    "channelIcon": "https://yt3.ggpht.com/04zALH6pYL7mkWILHajvBzfzg4hrwRCLBONme3K1PjuEeYJIRC6RYxPmJzVZRuN42skHEDNRGmo=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=O3lbB-St06k"
+  },
+  {
+    "name": "天堂ライラ",
+    "youtubeid": "UCpdWNjSU-onhmcARqgHIfpg",
+    "title": "【#Minecraft 】パレ学2期生サーバーで遊ぶ！少しだけ雪山探しに出る！ #天堂観測【パレデミア学園/天堂ライラ】",
+    "date": "2026-10-03T09:26:36.000+09:00",
+    "status": "live",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/S5Y3BhvGOYg/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/JA8QqThoUnCNAgJASH3p_wPyWJBf2ILiUfpIvArr6592NkkrFntPQ4EgPsahnLpPCMP4mk93ig=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=S5Y3BhvGOYg"
   },
   {
     "name": "江波キョウカ",

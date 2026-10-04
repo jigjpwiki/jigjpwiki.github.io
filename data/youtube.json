@@ -1,16 +1,5 @@
 [
   {
-    "name": "牡丹雪",
-    "youtubeid": "UCl-qrfygvCjyA_lMR5lJzig",
-    "title": "【 #vampiresurvivors 】割と深夜に始まりがちヴァンサバ。今日もなぜか外が明るい【 牡丹雪 /#パレデミア学園 】#牡丹の雪宿り",
-    "date": "2026-10-02T03:01:00.000+09:00",
-    "status": "archive",
-    "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/qgSNwqRwK3s/mqdefault.jpg",
-    "channelIcon": "https://yt3.ggpht.com/K9NG8yMDYt1GGoQjhc9c-XEBm1PxGVkEhIQxos6ODhB_pk5HpUvETjUOe5LLkzzJ3biot_nWwQ=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=qgSNwqRwK3s"
-  },
-  {
     "name": "堂下さとり",
     "youtubeid": "UCBq6MSUL-Ermvnoj3PtX7Iw",
     "title": "【実写】たのしいピクニック【自宅で】縦型【新人Vtuber】【パレデミア学園/堂下さとり】",
@@ -726,17 +715,6 @@
     "url": "https://www.youtube.com/watch?v=2oQ9v7_XWkY"
   },
   {
-    "name": "愛乃宮ゆめ",
-    "youtubeid": "UCttSjPiwPYpiPuCrgxK7c1g",
-    "title": "【マイクラ】顔に負けないくらいでかい心を持ち合わせているので！！！【愛乃宮ゆめ/パレデミア学園】",
-    "date": "2026-10-03T21:00:00.000+09:00",
-    "status": "upcoming",
-    "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/1thvAI-6rwI/mqdefault_live.jpg",
-    "channelIcon": "https://yt3.ggpht.com/Gwr7KJNWnI6CEgmIfEeMZahF5pbGNKlRhQXBEkuMWE0D66--IJE77z-5Zu2i5LFBc_CA6ZkqY4Y=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=1thvAI-6rwI"
-  },
-  {
     "name": "夕凪万夜",
     "youtubeid": "UCJLYktDEOak1rSOGRVRKlLQ",
     "title": "【#NTE】メインストーリー、落札？落札！を読む！！【パレデミア学園/夕凪万夜】",
@@ -1040,7 +1018,7 @@
     "date": "2026-10-04T12:05:44.000+09:00",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/SkMwcEQxR08/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/SkMwcEQxR08/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/Z7PlAWhweuycNXNXoQ6etyDTkduySM-Kqy8kQW-AD19JuRdxT3HSdIxogPw3GPD5NHw_vZlf=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=SkMwcEQxR08"
   },
@@ -1076,6 +1054,17 @@
     "thumbnail": "https://i.ytimg.com/vi/2s0qlzdKgSI/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/Me8I_Op8OlIy8Vuj387_Hdi6gnrZ-qiY1yDDt1Q5yKMKA51ISagT76HE01gw8xbLcef0vpsPgoc=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=2s0qlzdKgSI"
+  },
+  {
+    "name": "愛乃宮ゆめ",
+    "youtubeid": "UCttSjPiwPYpiPuCrgxK7c1g",
+    "title": "【マイクラ】顔に負けないくらいでかい心を持ち合わせているので！！！【愛乃宮ゆめ/パレデミア学園】",
+    "date": "2026-10-04T12:56:39.000+09:00",
+    "status": "archive",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/1thvAI-6rwI/mqdefault.jpg",
+    "channelIcon": "https://yt3.ggpht.com/Gwr7KJNWnI6CEgmIfEeMZahF5pbGNKlRhQXBEkuMWE0D66--IJE77z-5Zu2i5LFBc_CA6ZkqY4Y=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=1thvAI-6rwI"
   },
   {
     "name": "藤森ちとせ",
@@ -1128,7 +1117,7 @@
     "date": "2026-10-04T16:59:57.000+09:00",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/PJqNehbC2Ys/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/PJqNehbC2Ys/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/HZPUrbSwGcllAbUtx6xggJ6lKfMfnAWDxWOCc01tpthiDipSqQP48TK5Jqz4GRzUdwKMUsxlsg=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=PJqNehbC2Ys"
   },
@@ -1146,9 +1135,9 @@
   {
     "name": "橙葉ぽん",
     "youtubeid": "UC0aNUh8VfQwgqj0taB8MDpg",
-    "title": "【完全初見！】今日からBIOHAZARD VILLAGEはじめる🧡怖いですか...?【 橙葉ぽん/ぷろのゔぁ 】",
+    "title": "【完全初見！】今日からBIOHAZARD VILLAGEはじめる#1🧡怖いですか...?【 橙葉ぽん/ぷろのゔぁ 】",
     "date": "2026-10-04T19:02:32.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/jOJz3gIp228/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/av9H0_OxG16zI7tQKGwYEwhIZd1RXZQKGjkWfgHslvYRTV5aJBEInW2q0qDzb51lttFjkJ_pBw=s240-c-k-c0x00ffffff-no-rj",
@@ -1276,6 +1265,28 @@
     "url": "https://www.youtube.com/watch?v=EPUIcnSWS8c"
   },
   {
+    "name": "相栖るじゅ",
+    "youtubeid": "UCrpdBoGpa6g2WEtRWsIlhDQ",
+    "title": "【雑談】すき家たべる！【相栖るじゅ/パレデミア学園】",
+    "date": "2026-10-04T22:28:21.000+09:00",
+    "status": "archive",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/8uxFeZ_K1Sg/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/yQbh9vEEgS_UapoQhIxxoTSy13bDxlHYC-ncTcO9VIDBN2NvrLTAWeKGQ72CN2fhOOrHqYaFDA=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=8uxFeZ_K1Sg"
+  },
+  {
+    "name": "香桜あんにん",
+    "youtubeid": "UC8zjZBqGnx_j55ZJzluhW8A",
+    "title": "【寝落ち歓迎】おっとり癒しボイスがおにぎり屋さんを開く！#あんにんたいむ #139【パレデミア学園/香桜あんにん/＃新人VTuber】",
+    "date": "2026-10-04T22:48:38.000+09:00",
+    "status": "archive",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/vzrugV7u9jE/mqdefault.jpg",
+    "channelIcon": "https://yt3.ggpht.com/LL8h8c1rjBm_CimsOmJqxMtfMpzaEZCJ56jM4iOTOaEaDLQ7f6fYwkAWggiJNEwh-aeggh3L-w=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=vzrugV7u9jE"
+  },
+  {
     "name": "雛菊のん",
     "youtubeid": "UChccV6U0Tkx9de4YjXbEelw",
     "title": "衣替えの時に起こること#shorts #vtuber #新人vtuber #おしゃべり #おすすめにのりたい #バズれ",
@@ -1342,6 +1353,17 @@
     "url": "https://www.youtube.com/watch?v=tkXzAMawaS0"
   },
   {
+    "name": "水透ユウ",
+    "youtubeid": "UCOah55SQYynzPgQQ4wxuzkA",
+    "title": "【#Aniimo 】月曜早朝キャンパーする【水透ユウ】",
+    "date": "2026-10-05T06:00:00.000+09:00",
+    "status": "upcoming",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/DPZF7u53Tqs/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/eVD8Ygm7KVyh3dvWnyebfYlbYpD13ZYQ-Bos8WdR5LDE61A3svHVHCLEY-rM3IQgw9O4uvdd=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=DPZF7u53Tqs"
+  },
+  {
     "name": "桜庭羽奈",
     "youtubeid": "UCPgg_A08ksSYP-VivJGniRw",
     "title": "【おはよう100目標！】6時台におはよう100チャレンジ！初見さん大歓迎！💛【新人VTuberの雑談／歌枠】🐻",
@@ -1373,6 +1395,17 @@
     "thumbnail": "https://i.ytimg.com/vi/xfInMr46YoQ/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/HZPUrbSwGcllAbUtx6xggJ6lKfMfnAWDxWOCc01tpthiDipSqQP48TK5Jqz4GRzUdwKMUsxlsg=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=xfInMr46YoQ"
+  },
+  {
+    "name": "橙葉ぽん",
+    "youtubeid": "UC0aNUh8VfQwgqj0taB8MDpg",
+    "title": "【完全初見！】BIOHAZARD VILLAGEはじめる#2🧡ラストまで...?【 橙葉ぽん/ぷろのゔぁ 】",
+    "date": "2026-10-05T19:00:00.000+09:00",
+    "status": "upcoming",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/zFkct1K5Ai4/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/av9H0_OxG16zI7tQKGwYEwhIZd1RXZQKGjkWfgHslvYRTV5aJBEInW2q0qDzb51lttFjkJ_pBw=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=zFkct1K5Ai4"
   },
   {
     "name": "江波キョウカ",

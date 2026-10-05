@@ -1095,7 +1095,7 @@
     "date": "2026-10-04T20:30:20.000+09:00",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/YCf5ynXIx3w/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/YCf5ynXIx3w/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/3KzF3YSQvjRpSMpFZEEsaGlIcETMW03ZmdKQy_TjJIm8t9vC4AjNwLLR5hNqXi0M9qnyszb0PCY=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=YCf5ynXIx3w"
   },
@@ -1115,7 +1115,7 @@
     "youtubeid": "UCpr-9ssUUgSb0EpDA8bRuTA",
     "title": "【#スト6】1643MR～Mケン🥋モダンケンシティサーバーについに侵入成功👊🐰🔥Twitch同時配信【#銘兎目あう/ぷろのゔぁ】 #vtuber",
     "date": "2026-10-04T21:03:50.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/GHxQfB8SSgU/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/VB97J8AMHex_rkfd6hDhfiGhhVvrL-NNkseP2mMYSWh75sxA_oXctmxK5tV4FYgkM17RUAx6GQ=s240-c-k-c0x00ffffff-no-rj",
@@ -1159,7 +1159,7 @@
     "youtubeid": "UCWi_ztz8Xuz4XfzhoG6ZfyA",
     "title": "【雑談】回線復活しました🌙まったり雑談しながら来週のスケジュールを考えます！🎶【＃パレデミア学園】＃せなりるライブ",
     "date": "2026-10-04T21:56:23.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/lf7oGgpj_gM/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/BaxFKUrCc4gGKc1wwAHt4ebjk8C69NdTl3fMz9LoR5SUm_Tpvv2yixsbJhp8qsld6S0tdgup=s240-c-k-c0x00ffffff-no-rj",
@@ -1302,7 +1302,7 @@
     "youtubeid": "UCqcnlq8uJqnGml6hcIrMCZw",
     "title": "【 朝活/雑談 】初見さん大歓迎🌷月曜日もゆるふぁい✊200人におはよう言いたい朝活✨【 花晴りら/パレデミア学園 】#れりライブ",
     "date": "2026-10-05T06:59:16.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/Rj2adq9MW-g/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/CH5JMWVQZ_RtloaXoj6W-yXjo9x8UxXSBG_vMyDnfk7M2QTOApVE1zOesu_aDrSAqvDbGrUyxs0=s240-c-k-c0x00ffffff-no-rj",
@@ -1318,6 +1318,17 @@
     "thumbnail": "https://i.ytimg.com/vi/xfInMr46YoQ/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/HZPUrbSwGcllAbUtx6xggJ6lKfMfnAWDxWOCc01tpthiDipSqQP48TK5Jqz4GRzUdwKMUsxlsg=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=xfInMr46YoQ"
+  },
+  {
+    "name": "堂下さとり",
+    "youtubeid": "UCBq6MSUL-Ermvnoj3PtX7Iw",
+    "title": "【ゲーム配信】マイクラ8日目【堂下さとり/パレデミア学園】",
+    "date": "2026-10-05T10:44:39.000+09:00",
+    "status": "live",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/wWwbumeVFPk/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/eW_Hug0M6zFk9QSbAmOUWLMSfzBlCHmes-8yAksvfUNzyLgY6TSsE_eW8ncfE4bHYZXKoTWxmQ=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=wWwbumeVFPk"
   },
   {
     "name": "橙葉ぽん",

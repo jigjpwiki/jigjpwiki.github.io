@@ -1,23 +1,5 @@
 [
   {
-    "name": "なかもとおまち",
-    "twitchid": "41futon",
-    "title": "妹が妹に運転を教えます。わたしは運転ができます。",
-    "date": "2026-10-02T22:05:45.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/1405880b-e945-4720-98c9-6a08c6400cae-profile_image-300x300.png",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/d1669c7df4a4bad897c1_41futon_316592327923_1790946340//thumb/thumb0-320x180.jpg"
-  },
-  {
-    "name": "水透ユウ",
-    "twitchid": "minato_yu_",
-    "title": "【 #Minecraft 】みなさんのPrimeサブスクを水透にください【ぷろのゔぁ/水透ユウ 】",
-    "date": "2026-10-02T23:21:14.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/fc4f961e-29c3-4f2e-9880-161fbf3b98eb-profile_image-300x300.png",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/037da6da960211b6779a_minato_yu__316592681971_1790950869//thumb/thumb0-320x180.jpg"
-  },
-  {
     "name": "火乃晴るい",
     "twitchid": "hinoha_rui",
     "title": "【 #ヒンタウン 】12日目 初心者🔰 なんとまさかの最終日！前半🌟",
@@ -84,9 +66,27 @@
     "name": "銘兎目あう",
     "twitchid": "Metome_Au",
     "title": "【妹に運転を教える】先生の経験あり♡優しく教えてあげる🐰🩷",
-    "date": "2026-10-05T20:00:51.000+09:00",
-    "status": "live",
+    "date": "2026-10-05T20:00:56.000+09:00",
+    "status": "archive",
     "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/6eea4ef4-a33b-4c66-9378-ad3aa84b1187-profile_image-300x300.png",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_Metome_Au-320x180.jpg"
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/6d105c2513f14dc27222_metome_au_316548911474_1791198051//thumb/thumb0-320x180.jpg"
+  },
+  {
+    "name": "なかもとおまち",
+    "twitchid": "41futon",
+    "title": "MR1668～返して！MR！返して！",
+    "date": "2026-10-05T21:52:45.000+09:00",
+    "status": "archive",
+    "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/1405880b-e945-4720-98c9-6a08c6400cae-profile_image-300x300.png",
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/ef931791486da9850a91_41futon_316549477746_1791204760//thumb/thumb0-320x180.jpg"
+  },
+  {
+    "name": "火乃晴るい",
+    "twitchid": "hinoha_rui",
+    "title": "【 #VALORANT 】ヒンタウンでお世話になった潮江いさみ( #UshioIsami_V )さんとVALOコラボすべ！！！！！",
+    "date": "2026-10-05T22:04:04.000+09:00",
+    "status": "archive",
+    "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/9e02effe-cf25-4ba0-9fe7-da457d4e8c87-profile_image-300x300.png",
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/0ca06038eeecbf8b8f99_hinoha_rui_316549548914_1791205439//thumb/thumb0-320x180.jpg"
   }
 ]

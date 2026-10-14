@@ -1,16 +1,5 @@
 [
   {
-    "name": "橙葉ぽん",
-    "youtubeid": "UC0aNUh8VfQwgqj0taB8MDpg",
-    "title": "【完全初見！！クリア耐久！2枠目予備】biohazard HD REMASTER🧡初代バイオハザード！クリアするまで終わらない！【 橙葉ぽん/ぷろのゔぁ 】",
-    "date": "2026-10-12T05:44:58.000+09:00",
-    "status": "archive",
-    "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/xOZ9BRTAvug/mqdefault.jpg",
-    "channelIcon": "https://yt3.ggpht.com/av9H0_OxG16zI7tQKGwYEwhIZd1RXZQKGjkWfgHslvYRTV5aJBEInW2q0qDzb51lttFjkJ_pBw=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=xOZ9BRTAvug"
-  },
-  {
     "name": "花晴りら",
     "youtubeid": "UCqcnlq8uJqnGml6hcIrMCZw",
     "title": "【 朝活雑談 / 視聴者参加型 】スポーツの日🍁健康企画：みんなの行動で今週の歩数を決める朝活✨【 花晴りら / パレデミア学園 】#れりライブ #新人vtuber",
@@ -1073,7 +1062,7 @@
     "date": "2026-10-14T10:00:58.000+09:00",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/fN4C_065HVI/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/fN4C_065HVI/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/rthBXvqjNFcVwEp-AWpiZDXnNjBodSXlsDTa-sjW6uR6Ssv3wuOw2dMXDZLlYaf_c4YiKfItHXU=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=fN4C_065HVI"
   },
@@ -1095,7 +1084,7 @@
     "date": "2026-10-14T12:02:59.000+09:00",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/rJ513P__CbY/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/rJ513P__CbY/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/Z7PlAWhweuycNXNXoQ6etyDTkduySM-Kqy8kQW-AD19JuRdxT3HSdIxogPw3GPD5NHw_vZlf=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=rJ513P__CbY"
   },
@@ -1106,7 +1095,7 @@
     "date": "2026-10-14T12:05:59.000+09:00",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/8E4-B6_5TLQ/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/8E4-B6_5TLQ/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/Z7PlAWhweuycNXNXoQ6etyDTkduySM-Kqy8kQW-AD19JuRdxT3HSdIxogPw3GPD5NHw_vZlf=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=8E4-B6_5TLQ"
   },
@@ -1199,17 +1188,6 @@
     "url": "https://www.youtube.com/watch?v=DqC5ea6-jSo"
   },
   {
-    "name": "牡丹雪",
-    "youtubeid": "UCl-qrfygvCjyA_lMR5lJzig",
-    "title": "【 #遊戯王MD / 参加型 】デュエリスト集合！！キミの名勝負を見せてくれ！！【 牡丹雪 / #パレデミア学園 】#牡丹の雪宿り",
-    "date": "2026-10-14T20:00:00.000+09:00",
-    "status": "upcoming",
-    "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/_vl1p35Hkl8/mqdefault_live.jpg",
-    "channelIcon": "https://yt3.ggpht.com/K9NG8yMDYt1GGoQjhc9c-XEBm1PxGVkEhIQxos6ODhB_pk5HpUvETjUOe5LLkzzJ3biot_nWwQ=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=_vl1p35Hkl8"
-  },
-  {
     "name": "雪紫誉",
     "youtubeid": "UCdbYinKlpkB_uMt_wPmYcsw",
     "title": "【#雑談】よわよわ回線最終回配信！？#初見さん大歓迎 ◎【#パレデミア学園/#ゆきむらじお】＃新人VTuber＃雑談#耐久",
@@ -1219,6 +1197,17 @@
     "thumbnail": "https://i.ytimg.com/vi/qB0O6d0pm7g/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/4RbHGCHx02xQ2ze4g7UCTvuUPlQCpbk6bHIb5cdqO4JNzTe5qsq4sDTt6m-xVKMm476vJiMF7A=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=qB0O6d0pm7g"
+  },
+  {
+    "name": "牡丹雪",
+    "youtubeid": "UCl-qrfygvCjyA_lMR5lJzig",
+    "title": "【 #遊戯王MD / 参加型 】デュエリスト集合！！キミの名勝負を見せてくれ！！【 牡丹雪 / #パレデミア学園 】#牡丹の雪宿り",
+    "date": "2026-10-14T20:00:26.000+09:00",
+    "status": "archive",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/_vl1p35Hkl8/mqdefault.jpg",
+    "channelIcon": "https://yt3.ggpht.com/K9NG8yMDYt1GGoQjhc9c-XEBm1PxGVkEhIQxos6ODhB_pk5HpUvETjUOe5LLkzzJ3biot_nWwQ=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=_vl1p35Hkl8"
   },
   {
     "name": "銘兎目あう",
@@ -1249,7 +1238,7 @@
     "date": "2026-10-14T20:04:41.000+09:00",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/HVmnKza2BxM/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/HVmnKza2BxM/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/av9H0_OxG16zI7tQKGwYEwhIZd1RXZQKGjkWfgHslvYRTV5aJBEInW2q0qDzb51lttFjkJ_pBw=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=HVmnKza2BxM"
   },
@@ -1477,8 +1466,8 @@
     "name": "桜庭羽奈",
     "youtubeid": "UCPgg_A08ksSYP-VivJGniRw",
     "title": "【おはよう100目標！】夜配信お休みだからみんなとお話ししたい！初見さん大歓迎！💛【新人VTuberの雑談／歌枠】🐻",
-    "date": "2026-10-15T06:30:00.000+09:00",
-    "status": "upcoming",
+    "date": "2026-10-15T06:30:06.000+09:00",
+    "status": "live",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/Ke_BlVKK2uc/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/04zALH6pYL7mkWILHajvBzfzg4hrwRCLBONme3K1PjuEeYJIRC6RYxPmJzVZRuN42skHEDNRGmo=s240-c-k-c0x00ffffff-no-rj",
@@ -1518,6 +1507,17 @@
     "url": "https://www.youtube.com/watch?v=IRXiMoOWQnM"
   },
   {
+    "name": "変幻リメ",
+    "youtubeid": "UC5bCRde8xRrNS7s6GjCNCyQ",
+    "title": "【#SURGE City】大型成功させたい！！！DAY6【変幻リメ】",
+    "date": "2026-10-15T19:00:00.000+09:00",
+    "status": "upcoming",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/_KPRkLuRp0E/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/4hssn4EXW2lORXRfiuYTjmYfnlZoQ2h72sdEompqX7GQwAKCsBx7eL0joCFSook1rfCKIcpykg=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=_KPRkLuRp0E"
+  },
+  {
     "name": "銘兎目あう",
     "youtubeid": "UCpr-9ssUUgSb0EpDA8bRuTA",
     "title": "【#スト6】1612MR～Mケン🥋大会に向けて練習だぁ👊🐰🔥Twitch同時配信【#銘兎目あう/ぷろのゔぁ】 #vtuber",
@@ -1527,6 +1527,17 @@
     "thumbnail": "https://i.ytimg.com/vi/-xHXDF5c70Q/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/VB97J8AMHex_rkfd6hDhfiGhhVvrL-NNkseP2mMYSWh75sxA_oXctmxK5tV4FYgkM17RUAx6GQ=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=-xHXDF5c70Q"
+  },
+  {
+    "name": "橙葉ぽん",
+    "youtubeid": "UC0aNUh8VfQwgqj0taB8MDpg",
+    "title": "【MIMESIS】ぷろのゔぁでミメシス🧡偽物がいる...?【 橙葉ぽん/ぷろのゔぁ 】",
+    "date": "2026-10-15T21:30:00.000+09:00",
+    "status": "upcoming",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/crcnCU84kjg/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/av9H0_OxG16zI7tQKGwYEwhIZd1RXZQKGjkWfgHslvYRTV5aJBEInW2q0qDzb51lttFjkJ_pBw=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=crcnCU84kjg"
   },
   {
     "name": "しーはむ",

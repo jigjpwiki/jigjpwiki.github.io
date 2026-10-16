@@ -1183,7 +1183,7 @@
     "date": "2026-10-16T12:00:26.000+09:00",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/QAhZ3sDLEmA/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/QAhZ3sDLEmA/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/Gwr7KJNWnI6CEgmIfEeMZahF5pbGNKlRhQXBEkuMWE0D66--IJE77z-5Zu2i5LFBc_CA6ZkqY4Y=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=QAhZ3sDLEmA"
   },
@@ -1194,7 +1194,7 @@
     "date": "2026-10-16T12:09:51.000+09:00",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/0cLW2CmIsPE/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/0cLW2CmIsPE/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/Z7PlAWhweuycNXNXoQ6etyDTkduySM-Kqy8kQW-AD19JuRdxT3HSdIxogPw3GPD5NHw_vZlf=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=0cLW2CmIsPE"
   },
@@ -1302,11 +1302,22 @@
     "youtubeid": "UC5bCRde8xRrNS7s6GjCNCyQ",
     "title": "【#SURGE City】いっぱい稼ぐぞおおおおおお！！！DAY7【変幻リメ】",
     "date": "2026-10-16T19:15:55.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/qawk2pF9-4Q/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/qawk2pF9-4Q/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/4hssn4EXW2lORXRfiuYTjmYfnlZoQ2h72sdEompqX7GQwAKCsBx7eL0joCFSook1rfCKIcpykg=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=qawk2pF9-4Q"
+  },
+  {
+    "name": "雛菊のん",
+    "youtubeid": "UChccV6U0Tkx9de4YjXbEelw",
+    "title": "可愛い魔女になりました💕#新人vtuber #雑談",
+    "date": "2026-10-16T19:34:31.000+09:00",
+    "status": "archive",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/iDDkRIaRi7U/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/-7v40HQCqllHpJD69LHIo2n5lUt-pZ-bLtfrKAXhZk9OF06nj4Lno3gwBvO8d1jBSl5dCCxAxQ=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=iDDkRIaRi7U"
   },
   {
     "name": "新巻るろな",
@@ -1381,7 +1392,7 @@
     "date": "2026-10-16T21:05:36.000+09:00",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/i0vImkqKDhE/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/i0vImkqKDhE/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/av9H0_OxG16zI7tQKGwYEwhIZd1RXZQKGjkWfgHslvYRTV5aJBEInW2q0qDzb51lttFjkJ_pBw=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=i0vImkqKDhE"
   },
@@ -1390,9 +1401,9 @@
     "youtubeid": "UC_a00ml_EVDXSrtY8ZuyqGQ",
     "title": "【How to Fish】ぶいせか前に5人で釣り大会！一番釣れるのは誰だ！？【#ぶいせか前釣り大会￤#夏渚まはろ￤#パレプロ】",
     "date": "2026-10-16T21:09:35.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/-olh51kxS5c/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/-olh51kxS5c/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/iktv-39nC7NDASD1WeXms-DEuHuVqB5RhwTtdDe26w-BCvqf6yq3r_8zBiv2i2CfNXCK0uE8=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=-olh51kxS5c"
   },
@@ -1474,6 +1485,17 @@
     "url": "https://www.youtube.com/watch?v=QknIgaXNmTU"
   },
   {
+    "name": "露草なぎ",
+    "youtubeid": "UC9nhm1B-XhPaUO8W8oc4thQ",
+    "title": "【ゼンゼロ#2】ストーリー気になり【露草なぎ/パレデミア学園】#初見さん大歓迎　#ゼンレスゾーンゼロ",
+    "date": "2026-10-16T22:00:09.000+09:00",
+    "status": "archive",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/VOnnNEonps4/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/3KzF3YSQvjRpSMpFZEEsaGlIcETMW03ZmdKQy_TjJIm8t9vC4AjNwLLR5hNqXi0M9qnyszb0PCY=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=VOnnNEonps4"
+  },
+  {
     "name": "秋桜しゅお",
     "youtubeid": "UCPjtwOeRQV5EFkCwUycZsgw",
     "title": "【誕生日カウントダウン配信！ 】VTuberになって二回目のお誕生日！一緒に向かえよ🧡【秋桜しゅお/登龍門BOX】#新人vtuber",
@@ -1502,20 +1524,86 @@
     "date": "2026-10-16T22:01:29.000+09:00",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/yyiSiCK5EKs/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/yyiSiCK5EKs/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/sYbvo_2nSCW162VEArIwu7v1B3bl159gmEnGgGei8I8drc4l7huPP7q6aWZ4AfXi5wTMACmGow=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=yyiSiCK5EKs"
+  },
+  {
+    "name": "香桜あんにん",
+    "youtubeid": "UC8zjZBqGnx_j55ZJzluhW8A",
+    "title": "【同時視聴】『ドラゴンボール』51～54話一緒にみよ！#あんにんたいむ #151【パレデミア学園/香桜あんにん/＃新人VTuber】",
+    "date": "2026-10-16T22:02:22.000+09:00",
+    "status": "archive",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/A_vC7Vey4zc/mqdefault.jpg",
+    "channelIcon": "https://yt3.ggpht.com/LL8h8c1rjBm_CimsOmJqxMtfMpzaEZCJ56jM4iOTOaEaDLQ7f6fYwkAWggiJNEwh-aeggh3L-w=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=A_vC7Vey4zc"
+  },
+  {
+    "name": "陰山アゲハ",
+    "youtubeid": "UCIw8aQVRBwi72yOrPLgkbRQ",
+    "title": "【歌枠/雑談 】秋歌とかそんなもんは知らねえ【陰山アゲハ #パレデミア学園 】",
+    "date": "2026-10-16T22:05:55.000+09:00",
+    "status": "archive",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/buOcYxZxEFY/mqdefault.jpg",
+    "channelIcon": "https://yt3.ggpht.com/XWKUawU_WoX_xINkx3TMSF3fj0RbdiwNezFiEAGcmHfQYvwkjMUM1mvyOmgsbK8LxHoo6aEKJA=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=buOcYxZxEFY"
+  },
+  {
+    "name": "香鳴ハノン",
+    "youtubeid": "UCay6Y3oEoiC6ZEE2G0UZu_A",
+    "title": "【歌枠｜KARAOKE】華金だしやっぱり歌おうかなあって～～～！アニソンだっ！！【#パレプロ #香鳴ハノン】",
+    "date": "2026-10-16T22:26:31.000+09:00",
+    "status": "archive",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/ovst6AkWG5c/mqdefault.jpg",
+    "channelIcon": "https://yt3.ggpht.com/qvbeb9E-gYc822fxxzi6Ug5QyjhqZAWbUskHANcwDWP5W8iTsK3LcQJnjS4CVBuFJ6fONsM9F7M=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=ovst6AkWG5c"
+  },
+  {
+    "name": "相栖るじゅ",
+    "youtubeid": "UCrpdBoGpa6g2WEtRWsIlhDQ",
+    "title": "【妹に運転を教える】世界のために運転しないほうがいい、あいすが教えちゃいますかっ！！！【相栖るじゅ/パレデミア学園】",
+    "date": "2026-10-16T22:46:55.000+09:00",
+    "status": "archive",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/E0DLqiegn3s/mqdefault.jpg",
+    "channelIcon": "https://yt3.ggpht.com/yQbh9vEEgS_UapoQhIxxoTSy13bDxlHYC-ncTcO9VIDBN2NvrLTAWeKGQ72CN2fhOOrHqYaFDA=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=E0DLqiegn3s"
+  },
+  {
+    "name": "夕凪万夜",
+    "youtubeid": "UCJLYktDEOak1rSOGRVRKlLQ",
+    "title": "【#雑談/初見さん◎】OBS再ダウンロードからのテスト配信みたいな【パレデミア学園/夕凪万夜】",
+    "date": "2026-10-16T22:58:24.000+09:00",
+    "status": "archive",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/xTsoHVYpwME/mqdefault.jpg",
+    "channelIcon": "https://yt3.ggpht.com/zOlQ66VHDdW9B1w3cRbHlo-3cfkYBLVHzYpXS_xLbOv9bHe72uv-bD246R7gCEfD_7wGBc-6vQ=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=xTsoHVYpwME"
   },
   {
     "name": "常磐カナメ",
     "youtubeid": "UCbNEgJIF_ADD9e8-q7SoxCg",
     "title": "【鏡のマジョリティア】主人公がルールを知らないカードゲームをTCG初心者の文学少女が解読攻略する！【パレプロ/常磐カナメ】",
     "date": "2026-10-16T22:58:37.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/PaVcoTai-uw/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/PaVcoTai-uw/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/vb_kLF_4hQ7UdEtOnEtL-_pI320ZMQ-lVQ9OV3xMvdTQitHXX1zk0b6GKQ977dawvfoB5Sb8OQ=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=PaVcoTai-uw"
+  },
+  {
+    "name": "牡丹雪",
+    "youtubeid": "UCl-qrfygvCjyA_lMR5lJzig",
+    "title": "【 #雑談 】初心に帰ってチル雑談。そういや私の雑談っていつも突然始まるんだったわ【 牡丹雪 / #パレデミア学園 】#牡丹の雪宿り",
+    "date": "2026-10-16T23:14:22.000+09:00",
+    "status": "archive",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/73VJneCRnus/mqdefault.jpg",
+    "channelIcon": "https://yt3.ggpht.com/K9NG8yMDYt1GGoQjhc9c-XEBm1PxGVkEhIQxos6ODhB_pk5HpUvETjUOe5LLkzzJ3biot_nWwQ=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=73VJneCRnus"
   },
   {
     "name": "鬼多見アユム",
@@ -1538,6 +1626,61 @@
     "thumbnail": "https://i.ytimg.com/vi/4rATAPmUzuw/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/eVD8Ygm7KVyh3dvWnyebfYlbYpD13ZYQ-Bos8WdR5LDE61A3svHVHCLEY-rM3IQgw9O4uvdd=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=4rATAPmUzuw"
+  },
+  {
+    "name": "雛菊のん",
+    "youtubeid": "UChccV6U0Tkx9de4YjXbEelw",
+    "title": "魔女っ子ギャル#shorts #vtuber #新人vtuber #おしゃべり #おすすめにのりたい #バズれ",
+    "date": "2026-10-16T23:45:37.000+09:00",
+    "status": "archive",
+    "type": "video",
+    "thumbnail": "https://i.ytimg.com/vi/9HALKy8_3GM/mqdefault.jpg",
+    "channelIcon": "https://yt3.ggpht.com/-7v40HQCqllHpJD69LHIo2n5lUt-pZ-bLtfrKAXhZk9OF06nj4Lno3gwBvO8d1jBSl5dCCxAxQ=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=9HALKy8_3GM"
+  },
+  {
+    "name": "宵坂伊織",
+    "youtubeid": "UCa1C15g_z1k5oQIYCeD2Hdw",
+    "title": "お久しぶり～～！！",
+    "date": "2026-10-16T23:54:31.000+09:00",
+    "status": "archive",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/oGbibuo0yS0/mqdefault.jpg",
+    "channelIcon": "https://yt3.ggpht.com/fOSQN7R8b2LFTwHpvzc3RfsR_nJ02TIUKscIIj-hYwqWAsmMmqiixAt7XTbJTuH5MRqir4oC9Q=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=oGbibuo0yS0"
+  },
+  {
+    "name": "七音うら",
+    "youtubeid": "UCv2IYO-4waCpHvn50SWWY2A",
+    "title": "【#雑談配信  】元気だよ！(？)【七音うら】",
+    "date": "2026-10-17T00:00:44.000+09:00",
+    "status": "archive",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/jlBnPc8xt9M/mqdefault.jpg",
+    "channelIcon": "https://yt3.ggpht.com/T655ATpSd2gkjZBrokvlkaUH0f5-fCpQdcJpwxmmNdy6fxCYffAlq2sMhPOtFk_CvVyOkEPY8Q=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=jlBnPc8xt9M"
+  },
+  {
+    "name": "藤森ちとせ",
+    "youtubeid": "UCAhdxmsdngH4noySdpVAVWQ",
+    "title": "✨Mr.Sandman cat🐈✨ #MrSandman #Vtuber #shorts",
+    "date": "2026-10-17T00:15:29.000+09:00",
+    "status": "archive",
+    "type": "video",
+    "thumbnail": "https://i.ytimg.com/vi/0PQf-D7w-8s/mqdefault.jpg",
+    "channelIcon": "https://yt3.ggpht.com/traR_yWe-AOGyM2wjo8h2FJO9JWBcbjfrL13X-umeD6BtNPopSZ2Q3YmdJq_5K9gWgHf_j64iQ=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=0PQf-D7w-8s"
+  },
+  {
+    "name": "相栖るじゅ",
+    "youtubeid": "UCrpdBoGpa6g2WEtRWsIlhDQ",
+    "title": "【雑談/歌枠】まったりしていきませんか？【相栖るじゅ/パレデミア学園】",
+    "date": "2026-10-17T01:16:01.000+09:00",
+    "status": "archive",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/al76Qckm60I/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/yQbh9vEEgS_UapoQhIxxoTSy13bDxlHYC-ncTcO9VIDBN2NvrLTAWeKGQ72CN2fhOOrHqYaFDA=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=al76Qckm60I"
   },
   {
     "name": "桜庭羽奈",

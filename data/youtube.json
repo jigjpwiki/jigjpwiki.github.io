@@ -1,27 +1,5 @@
 [
   {
-    "name": "天堂ライラ",
-    "youtubeid": "UCpdWNjSU-onhmcARqgHIfpg",
-    "title": "【#朝活】今日は9:00まで！とりあえずおはよう何人できるかな？！10/14(水) #天堂観測【パレデミア学園/天堂ライラ】",
-    "date": "2026-10-14T07:30:38.000+09:00",
-    "status": "archive",
-    "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/qWH5129VJ7c/mqdefault.jpg",
-    "channelIcon": "https://yt3.ggpht.com/JA8QqThoUnCNAgJASH3p_wPyWJBf2ILiUfpIvArr6592NkkrFntPQ4EgPsahnLpPCMP4mk93ig=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=qWH5129VJ7c"
-  },
-  {
-    "name": "堂下さとり",
-    "youtubeid": "UCBq6MSUL-Ermvnoj3PtX7Iw",
-    "title": "【マイクラ】立てたフラグをすぐに回収しすぎる新人Vtuber【初心者】",
-    "date": "2026-10-14T07:40:32.000+09:00",
-    "status": "archive",
-    "type": "video",
-    "thumbnail": "https://i.ytimg.com/vi/RLwjjBMbHMo/mqdefault.jpg",
-    "channelIcon": "https://yt3.ggpht.com/eW_Hug0M6zFk9QSbAmOUWLMSfzBlCHmes-8yAksvfUNzyLgY6TSsE_eW8ncfE4bHYZXKoTWxmQ=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=RLwjjBMbHMo"
-  },
-  {
     "name": "藤宮コトハ",
     "youtubeid": "UCGndc74kfWb_A-8hZBG534Q",
     "title": "【雑談】おはよう☀【藤宮コトハ / パレプロ】",
@@ -1194,7 +1172,7 @@
     "date": "2026-10-16T18:00:31.000+09:00",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/WudQyElGY-w/mqdefault_live.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/WudQyElGY-w/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/nMtec5z3KY5RUGCSbQENm9culC2VpB7Ate_dUueAINpAJdFK4wwe7Q6eH88QiMXqjImAleLI=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=WudQyElGY-w"
   },
@@ -1632,7 +1610,7 @@
     "youtubeid": "UCPgg_A08ksSYP-VivJGniRw",
     "title": "【おはよう100目標！】土曜日だけど特別朝枠！みんなおはよう！初見さん大歓迎！💛【新人VTuberの雑談／歌枠】🐻",
     "date": "2026-10-17T06:30:11.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/rSNoFjuYvko/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/04zALH6pYL7mkWILHajvBzfzg4hrwRCLBONme3K1PjuEeYJIRC6RYxPmJzVZRuN42skHEDNRGmo=s240-c-k-c0x00ffffff-no-rj",
@@ -1654,7 +1632,7 @@
     "youtubeid": "UC2X_mAVGw8e3N9JQZZDVBfQ",
     "title": "【#低音女子】土曜日も朝ごはんチャンネル《#パレデミア学園》#雑談#新人VTuber#朝活#朝食",
     "date": "2026-10-17T07:03:09.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/vnDB5DqxTf4/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/Z7PlAWhweuycNXNXoQ6etyDTkduySM-Kqy8kQW-AD19JuRdxT3HSdIxogPw3GPD5NHw_vZlf=s240-c-k-c0x00ffffff-no-rj",
@@ -1665,11 +1643,33 @@
     "youtubeid": "UC2X_mAVGw8e3N9JQZZDVBfQ",
     "title": "【#低音女子】土曜日も朝ごはんチャンネル！《#パレデミア学園》#雑談#新人VTuber#vtuber#縦型Live#朝活#朝食",
     "date": "2026-10-17T07:04:02.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/YeVaYsTwn48/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/Z7PlAWhweuycNXNXoQ6etyDTkduySM-Kqy8kQW-AD19JuRdxT3HSdIxogPw3GPD5NHw_vZlf=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=YeVaYsTwn48"
+  },
+  {
+    "name": "堂下さとり",
+    "youtubeid": "UCBq6MSUL-Ermvnoj3PtX7Iw",
+    "title": "【雑談】おはよ【堂下さとり/パレデミア学園】",
+    "date": "2026-10-17T08:07:50.000+09:00",
+    "status": "archive",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/BorNn9i4kS0/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/eW_Hug0M6zFk9QSbAmOUWLMSfzBlCHmes-8yAksvfUNzyLgY6TSsE_eW8ncfE4bHYZXKoTWxmQ=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=BorNn9i4kS0"
+  },
+  {
+    "name": "天堂ライラ",
+    "youtubeid": "UCpdWNjSU-onhmcARqgHIfpg",
+    "title": "【#朝活】メイクしながら少しだけおはようしよっ！10/17(土) #天堂観測【パレデミア学園/天堂ライラ】",
+    "date": "2026-10-17T08:11:16.000+09:00",
+    "status": "live",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/aF3aj7hSNbg/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/JA8QqThoUnCNAgJASH3p_wPyWJBf2ILiUfpIvArr6592NkkrFntPQ4EgPsahnLpPCMP4mk93ig=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=aF3aj7hSNbg"
   },
   {
     "name": "水透ユウ",
@@ -1703,6 +1703,17 @@
     "thumbnail": "https://i.ytimg.com/vi/g0R7fJdla38/mqdefault_live.jpg",
     "channelIcon": "https://yt3.ggpht.com/av9H0_OxG16zI7tQKGwYEwhIZd1RXZQKGjkWfgHslvYRTV5aJBEInW2q0qDzb51lttFjkJ_pBw=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=g0R7fJdla38"
+  },
+  {
+    "name": "変幻リメ",
+    "youtubeid": "UC5bCRde8xRrNS7s6GjCNCyQ",
+    "title": "【#SURGE City】最後の日！楽しくいこう！！！LAST DAY【変幻リメ】",
+    "date": "2026-10-17T19:00:00.000+09:00",
+    "status": "upcoming",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/JhTOO6R_-4M/mqdefault_live.jpg",
+    "channelIcon": "https://yt3.ggpht.com/4hssn4EXW2lORXRfiuYTjmYfnlZoQ2h72sdEompqX7GQwAKCsBx7eL0joCFSook1rfCKIcpykg=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=JhTOO6R_-4M"
   },
   {
     "name": "しーはむ",

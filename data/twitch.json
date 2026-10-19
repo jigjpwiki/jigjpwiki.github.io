@@ -1,23 +1,5 @@
 [
   {
-    "name": "火乃晴るい",
-    "twitchid": "hinoha_rui",
-    "title": "【 #マイクラ 】超チル！久しぶりのマイクラだ～✨",
-    "date": "2026-10-16T23:23:49.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/9e02effe-cf25-4ba0-9fe7-da457d4e8c87-profile_image-300x300.png",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/be50bba7b45e76b54ff0_hinoha_rui_316654687475_1792160624//thumb/thumb0-320x180.jpg"
-  },
-  {
-    "name": "なかもとおまち",
-    "twitchid": "41futon",
-    "title": "ちょいジェイミからの",
-    "date": "2026-10-16T23:45:02.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/1405880b-e945-4720-98c9-6a08c6400cae-profile_image-300x300.png",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/de7966df6d156ab16d38_41futon_316596995058_1792161897//thumb/thumb0-320x180.jpg"
-  },
-  {
     "name": "なかもとおまち",
     "twitchid": "41futon",
     "title": "明日のイベントの準備をだな、するんだよ",
@@ -57,9 +39,18 @@
     "name": "銘兎目あう",
     "twitchid": "Metome_Au",
     "title": "【 スト6 】ガウにい杯5on5本番👊🐰ななりーちゃん/花岡ももちゃん/がおにゃちゃん/米炊らいずちゃん🩷",
-    "date": "2026-10-19T19:30:59.000+09:00",
-    "status": "live",
+    "date": "2026-10-19T19:31:05.000+09:00",
+    "status": "archive",
     "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/6eea4ef4-a33b-4c66-9378-ad3aa84b1187-profile_image-300x300.png",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_Metome_Au-320x180.jpg"
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/1f35f2f5ad017b3dcb29_metome_au_316667075571_1792405859//thumb/thumb0-320x180.jpg"
+  },
+  {
+    "name": "火乃晴るい",
+    "twitchid": "hinoha_rui",
+    "title": "【 #VALORANT 】Jadeに向けてスクリムすべ！",
+    "date": "2026-10-19T21:05:03.000+09:00",
+    "status": "archive",
+    "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/9e02effe-cf25-4ba0-9fe7-da457d4e8c87-profile_image-300x300.png",
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/e50255430a62bec07c2a_hinoha_rui_316609355250_1792411498//thumb/thumb0-320x180.jpg"
   }
 ]

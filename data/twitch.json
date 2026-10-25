@@ -2,15 +2,6 @@
   {
     "name": "銘兎目あう",
     "twitchid": "Metome_Au",
-    "title": "【 スト6 】ゆなっこ杯🏆久しぶりどきどきっ🫶💗",
-    "date": "2026-10-22T20:30:15.000+09:00",
-    "status": "archive",
-    "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/6eea4ef4-a33b-4c66-9378-ad3aa84b1187-profile_image-300x300.png",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/d50e8a4fd1fdf5b0b1f6_metome_au_316621785074_1792668609//thumb/thumb0-320x180.jpg"
-  },
-  {
-    "name": "銘兎目あう",
-    "twitchid": "Metome_Au",
     "title": "【Don't Drop The Cake】ケーキ落としたら･･･ダメ！絶対🎂🐰",
     "date": "2026-10-23T20:29:27.000+09:00",
     "status": "archive",
@@ -75,9 +66,27 @@
     "name": "しーはむ",
     "twitchid": "siyham",
     "title": "※遅延あり！大会に出ます！コメントすごくうれしいよありがと💙#マスターズリフト2026",
-    "date": "2026-10-25T19:06:06.000+09:00",
-    "status": "live",
+    "date": "2026-10-25T19:06:11.000+09:00",
+    "status": "archive",
     "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/e1c097ec-5528-472a-a299-4dc50a979373-profile_image-300x300.png",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_siyham-320x180.jpg"
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/3669404f89daa234cf63_siyham_316624079217_1792922766//thumb/thumb0-320x180.jpg"
+  },
+  {
+    "name": "火乃晴るい",
+    "twitchid": "hinoha_rui",
+    "title": "【 #JadeVALORANTCup 】21時～ 今日で1位が決まるぞ…！！🔥遅延あり",
+    "date": "2026-10-25T21:02:41.000+09:00",
+    "status": "archive",
+    "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/9e02effe-cf25-4ba0-9fe7-da457d4e8c87-profile_image-300x300.png",
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/647c404cd8e59ca9b2c5_hinoha_rui_316624588401_1792929755//thumb/thumb0-320x180.jpg"
+  },
+  {
+    "name": "火乃晴るい",
+    "twitchid": "hinoha_rui",
+    "title": "【 #LoL 】い・つ・も・の 大会お疲れ様二次会✊",
+    "date": "2026-10-25T21:51:54.000+09:00",
+    "status": "live",
+    "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/9e02effe-cf25-4ba0-9fe7-da457d4e8c87-profile_image-300x300.png",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_hinoha_rui-320x180.jpg"
   }
 ]

@@ -1238,7 +1238,7 @@
     "date": "2026-10-31T18:00:48.000+09:00",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/EIzTEwb4ClY/mqdefault.jpg?v=6ae5a529",
+    "thumbnail": "https://i.ytimg.com/vi/EIzTEwb4ClY/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/yQbh9vEEgS_UapoQhIxxoTSy13bDxlHYC-ncTcO9VIDBN2NvrLTAWeKGQ72CN2fhOOrHqYaFDA=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=EIzTEwb4ClY"
   },
@@ -1249,7 +1249,7 @@
     "date": "2026-10-31T18:01:28.000+09:00",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/tb--ERw1hQo/mqdefault.jpg?v=6ae555df",
+    "thumbnail": "https://i.ytimg.com/vi/tb--ERw1hQo/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/iktv-39nC7NDASD1WeXms-DEuHuVqB5RhwTtdDe26w-BCvqf6yq3r_8zBiv2i2CfNXCK0uE8=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=tb--ERw1hQo"
   },
@@ -1337,7 +1337,7 @@
     "date": "2026-10-31T20:01:32.000+09:00",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/37RNXM2SJkQ/mqdefault.jpg?v=6ae5bce7",
+    "thumbnail": "https://i.ytimg.com/vi/37RNXM2SJkQ/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/04zALH6pYL7mkWILHajvBzfzg4hrwRCLBONme3K1PjuEeYJIRC6RYxPmJzVZRuN42skHEDNRGmo=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=37RNXM2SJkQ"
   },
@@ -1348,7 +1348,7 @@
     "date": "2026-10-31T20:03:54.000+09:00",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/t5MVP_oNIvU/mqdefault.jpg?v=6ae4d708",
+    "thumbnail": "https://i.ytimg.com/vi/t5MVP_oNIvU/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/av9H0_OxG16zI7tQKGwYEwhIZd1RXZQKGjkWfgHslvYRTV5aJBEInW2q0qDzb51lttFjkJ_pBw=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=t5MVP_oNIvU"
   },
@@ -1390,9 +1390,9 @@
     "youtubeid": "UC2X_mAVGw8e3N9JQZZDVBfQ",
     "title": "【#低音女子】焚火囲んでイベントお疲れ様会《#パレデミア学園》#雑談#新人VTuber#寝落ち#焚火",
     "date": "2026-10-31T21:02:39.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/l56etBVuioU/mqdefault.jpg?v=6ae4b8a6",
+    "thumbnail": "https://i.ytimg.com/vi/l56etBVuioU/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/Z7PlAWhweuycNXNXoQ6etyDTkduySM-Kqy8kQW-AD19JuRdxT3HSdIxogPw3GPD5NHw_vZlf=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=l56etBVuioU"
   },
@@ -1436,7 +1436,7 @@
     "date": "2026-10-31T21:39:45.000+09:00",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/f8NQ1cAn4ks/mqdefault.jpg?v=6ae59f99",
+    "thumbnail": "https://i.ytimg.com/vi/f8NQ1cAn4ks/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/_pGNq0-SYZiXjomeCnQRygINoA2PKkUJMbRtwuSIL83vUAny58me1QY1WttWypAIwJFrE5hh0w=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=f8NQ1cAn4ks"
   },
@@ -1447,7 +1447,7 @@
     "date": "2026-10-31T21:39:49.000+09:00",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/VZMXc2Kxt_M/mqdefault.jpg?v=6ae5dff6",
+    "thumbnail": "https://i.ytimg.com/vi/VZMXc2Kxt_M/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/LL8h8c1rjBm_CimsOmJqxMtfMpzaEZCJ56jM4iOTOaEaDLQ7f6fYwkAWggiJNEwh-aeggh3L-w=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=VZMXc2Kxt_M"
   },
@@ -1461,6 +1461,17 @@
     "thumbnail": "https://i.ytimg.com/vi/5vVNa14-qB0/mqdefault.jpg?v=6ae5d4f9",
     "channelIcon": "https://yt3.ggpht.com/-4sLuWCih-DlfhpwpDQEuB6eupCB6kTImkIPmKnh54vu5I0F49RkveNQGiqy0p8t0GDU6eiegGE=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=5vVNa14-qB0"
+  },
+  {
+    "name": "変幻リメ",
+    "youtubeid": "UC5bCRde8xRrNS7s6GjCNCyQ",
+    "title": "【雑談】ハロウィン雑談！！！【＃変幻リメ】",
+    "date": "2026-10-31T22:32:05.000+09:00",
+    "status": "archive",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/Imh3ePEMcr8/mqdefault.jpg?v=6ae5ebdb",
+    "channelIcon": "https://yt3.ggpht.com/4hssn4EXW2lORXRfiuYTjmYfnlZoQ2h72sdEompqX7GQwAKCsBx7eL0joCFSook1rfCKIcpykg=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=Imh3ePEMcr8"
   },
   {
     "name": "天堂ライラ",
@@ -1507,6 +1518,28 @@
     "url": "https://www.youtube.com/watch?v=EZvFr3UOISY"
   },
   {
+    "name": "露草なぎ",
+    "youtubeid": "UC9nhm1B-XhPaUO8W8oc4thQ",
+    "title": "【minecraft】洋館いく！ハロウィンだからね【露草なぎ/パレデミア学園】#初見さん大歓迎",
+    "date": "2026-10-31T23:11:18.000+09:00",
+    "status": "archive",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/6DjdmMJep48/mqdefault.jpg?v=6ae5f51e",
+    "channelIcon": "https://yt3.ggpht.com/3KzF3YSQvjRpSMpFZEEsaGlIcETMW03ZmdKQy_TjJIm8t9vC4AjNwLLR5hNqXi0M9qnyszb0PCY=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=6DjdmMJep48"
+  },
+  {
+    "name": "火狐むい",
+    "youtubeid": "UCaolaxqG55OJhU8qwRHHtQg",
+    "title": "【 #雑談  】まったり夜雑談【 #パレデミア学園 】#新人vtuber #初見さん歓迎",
+    "date": "2026-10-31T23:11:31.000+09:00",
+    "status": "archive",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/TcItS8MHeD4/mqdefault.jpg",
+    "channelIcon": "https://yt3.ggpht.com/Ft5mSjImEah_xri4b9k0p2Olyhy6T_vj1ZxyglCcVbk2FqN-nrWqSMm5YoM_hEjeRQ9aaMjelV0=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=TcItS8MHeD4"
+  },
+  {
     "name": "夕凪万夜",
     "youtubeid": "UCJLYktDEOak1rSOGRVRKlLQ",
     "title": "【#マイクラ/初見さん◎ 】ハッピーハロウィン【パレデミア学園/夕凪万夜】",
@@ -1522,11 +1555,33 @@
     "youtubeid": "UCj5nRzNFXZn9GRhITRkKElA",
     "title": "【#歌枠 】今からでも入れるハロウィンはありますか？？？【鈴木沙透/パレデミア学園】",
     "date": "2026-10-31T23:50:25.000+09:00",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/z4zkT-5vxBU/mqdefault.jpg?v=6ae5ffa1",
     "channelIcon": "https://yt3.ggpht.com/h4kuTtFCGhkDV4nmk6qjQt8auhkqLEqWwB9Il3NZR6op3ph-a0YElRfLcXkZVPp6xqvGmZHy3w=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=z4zkT-5vxBU"
+  },
+  {
+    "name": "灯野ぺけ。",
+    "youtubeid": "UCldoz5HLh6BMW29HGnRpC0Q",
+    "title": "【#第五人格 】 夜更かしして遊んじゃおう！ ≪パレデミア学園 / 灯野ぺけ。≫ #vtuber #ゲーム配信",
+    "date": "2026-11-01T01:23:33.000+09:00",
+    "status": "archive",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/RcRufiw1iLo/mqdefault.jpg?v=6ae61342",
+    "channelIcon": "https://yt3.ggpht.com/sYbvo_2nSCW162VEArIwu7v1B3bl159gmEnGgGei8I8drc4l7huPP7q6aWZ4AfXi5wTMACmGow=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=RcRufiw1iLo"
+  },
+  {
+    "name": "巳野みこと",
+    "youtubeid": "UCHBPF4eBZEAQ5MmiddmhM2w",
+    "title": "出遅れハロウィン～優秀ゾンビ賞のみなさまを添えて～【パレデミア学園】【DBD】",
+    "date": "2026-11-01T05:22:21.000+09:00",
+    "status": "archive",
+    "type": "video",
+    "thumbnail": "https://i.ytimg.com/vi/axplPZp21Vc/mqdefault.jpg",
+    "channelIcon": "https://yt3.ggpht.com/3p9jAiFZNvnKiFnz-hu-u03CwwXSshaxv5bexFCUmNuZbW2W93YCg5BQ6OeqfUAzvBcxSeSKR74=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=axplPZp21Vc"
   },
   {
     "name": "花晴りら",
@@ -1571,6 +1626,17 @@
     "thumbnail": "https://i.ytimg.com/vi/ckh330hPm8U/mqdefault.jpg?v=6ae60e68",
     "channelIcon": "https://yt3.ggpht.com/Z7PlAWhweuycNXNXoQ6etyDTkduySM-Kqy8kQW-AD19JuRdxT3HSdIxogPw3GPD5NHw_vZlf=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=ckh330hPm8U"
+  },
+  {
+    "name": "夏渚まはろ",
+    "youtubeid": "UC_a00ml_EVDXSrtY8ZuyqGQ",
+    "title": "【#ぶいせかマイクラ￤10日目】みんなとの思い出を巡る、最後の鯖観光【#夏渚まはろ￤#パレプロ】",
+    "date": "2026-11-01T18:00:00.000+09:00",
+    "status": "upcoming",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/zPbwUcv_IsY/mqdefault.jpg?v=6ae64418",
+    "channelIcon": "https://yt3.ggpht.com/iktv-39nC7NDASD1WeXms-DEuHuVqB5RhwTtdDe26w-BCvqf6yq3r_8zBiv2i2CfNXCK0uE8=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=zPbwUcv_IsY"
   },
   {
     "name": "橙葉ぽん",

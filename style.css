@@ -41,7 +41,7 @@ main {
 
 /* ———————header css———————— */
 header {
-  max-height: 12%;
+  flex-shrink: 0;
   background-color: #ffffff;
   padding-top: 15px;
   padding-bottom: 15px;
@@ -51,7 +51,6 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100%;
 }
 
 .logo {
@@ -59,7 +58,7 @@ header {
   justify-content: center;
   align-items: center;
   width: 160px;
-  margin-top: 15px;
+  margin: 0;
 }
 
 .logo img {
@@ -113,7 +112,15 @@ header {
 }
 
 .content-type-toggle input[type="checkbox"] {
-  display: none;
+  position: absolute;
+  opacity: 0;
+  width: 1px;
+  height: 1px;
+}
+
+.content-type-toggle input:focus-visible ~ .toggle-track {
+  outline: 3px solid #1a6fd4;
+  outline-offset: 3px;
 }
 
 .toggle-track {
@@ -201,9 +208,7 @@ header {
   background-color: #ecf0f6;
 }
 
-.windows .today-block {
-  width: 1193px; /* Windowsの場合は幅を調整(スクロールバー分) */
-}
+
 
 .today-block .video-list {
   display: flex;
@@ -231,11 +236,11 @@ header {
   gap: 6px;
 }
 
-.date-heading--sat h2 {
+.date-heading h2.date-heading--sat {
   color: #1a6fd4;
 }
 
-.date-heading--sun h2 {
+.date-heading h2.date-heading--sun {
   color: #e00;
 }
 
@@ -423,7 +428,7 @@ header {
 .formatted-time p {
   font-size: 17px;
   font-family: roboto, sans-serif;
-  color: #999999;
+  color: #666666;
   font-weight: 700;
 }
 
@@ -464,11 +469,7 @@ header {
   right: 24px;
 }
 
-.swipe-button {
-  .fa-solid {
-    color: #fff;
-  }
-}
+.swipe-button { color: #fff; font-size: 26px; line-height: 1; }
 
 
 /* ────────scroll bar──────── */
@@ -480,28 +481,24 @@ html::-webkit-scrollbar {
 
 /* ────────version───────── */
 .version {
-  position: absolute;
-  bottom: 10px;
-  right: 10px;
+  padding: 4px 12px;
+  background: #fff;
   font-size: 12px;
-  color: #999;
+  color: #666;
   display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  gap: 2px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 4px 12px;
 }
 
 .debug-time {
   font-size: 10px;
-  color: #999;
+  color: #666;
 }
 
 
-@media (max-width: 1024px) {
-  .content-type-toggle {
-    display: none;
-  }
-}
+
 
 @media (max-width: 600px) {
   .day-block {
@@ -524,7 +521,7 @@ html::-webkit-scrollbar {
   }
 
   .live-wrapper {
-    width: calc(50vw - 24px);
+    width: calc(50% - 6px);
     max-height: none;
   }
 
@@ -642,3 +639,54 @@ html::-webkit-scrollbar {
   line-height: 1.4;
 }
 
+
+/* Data feedback and progressive fallback when the carousel CDN is unavailable. */
+[hidden] { display: none !important; }
+.data-status { font-size: 12px; padding: 6px 12px; background: #fff; }
+.empty-day { padding: 24px; color: #555; text-align: center; }
+.native-scroll { overflow-x: auto; width: 100%; }
+.native-scroll > .swiper-wrapper { display: flex; }
+@media (max-width: 600px) {
+  .content-type-toggle { margin: 0; }
+  .thumbnail-wrapper { min-width: 0; }
+  .day-block { height: calc(100dvh - 210px); }
+}
+
+/* Keep day scrolling inside the remaining height, including status messages. */
+body { height: 100dvh; }
+main { display: flex; flex-direction: column; min-height: 0; }
+.data-status { flex-shrink: 0; }
+.videocontainer { flex: 1; min-height: 0; height: auto; width: 100%; }
+.videoswipe-inner { height: 100%; }
+.videolist-container { width: 100%; height: 100%; padding-bottom: 0; }
+.day-block { height: 100%; box-sizing: border-box; padding-bottom: 24px; }
+
+/* Keep cards within their day column, including narrow and zoomed screens. */
+header { position: relative; min-height: 62px; }
+.logo { font-size: inherit; }
+.live-info, .live-info-inner, .description { min-width: 0; }
+.live-info-inner { flex: 1; }
+.platform-border { flex: 0 0 5px; }
+.face-icon { align-self: center; height: auto; }
+.thumbnail-wrapper { flex-shrink: 0; }
+a:focus-visible, button:focus-visible { outline: 3px solid #1a6fd4; outline-offset: 3px; }
+button { font: inherit; }
+footer { flex-shrink: 0; }
+@media (max-width: 600px) {
+  header { padding: 12px 0 8px; gap: 8px; min-height: 0; }
+  .header-policy { padding-bottom: 0; font-size: 12px; align-items: center; }
+  .day-block { width: 100%; min-width: 100%; }
+  .face-icon { margin-left: 0; width: auto; min-width: 0; justify-content: center; }
+  .live-info { flex: 1; }
+  .live-info-inner { flex: auto; }
+  .liver-name { max-width: 100%; font-size: 14px; overflow-wrap: anywhere; }
+  .thumbnail-wrapper { min-width: 0; }
+  .update-banner { width: calc(100% - 64px); max-width: 520px; bottom: 64px; }
+  .version { justify-content: center; }
+}
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
+}
+
+.swipe-button { font-size: 26px; }
+.update-close-btn { font-size: 24px; min-width: 32px; min-height: 32px; }

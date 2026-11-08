@@ -1,252 +1,151 @@
 'use strict';
 
-const fs = require('fs').promises;
-const fetch = require('node-fetch');
+const path = require('node:path');
+const { requestJson, arrayField, readJson, dateWindow, saveResult } = require('./lib/collection');
 
-const YOUTUBE_API_KEY = process.env.YOUTUBE_API_KEY;
-const DATA_FILE  = 'data/youtube.json';          // ページが読む本体
-const CACHE_FILE = 'data/youtube_cache.json';    // 取得間引き用キャッシュ（lastChecked）
-
-async function fetchChannelIcon(channelId, apiKey) {
-  const url =
-    `https://www.googleapis.com/youtube/v3/channels?` +
-    `part=snippet&id=${channelId}&key=${apiKey}`;
-  const res = await fetch(url);
-  const json = await res.json();
-  return json.items?.[0]?.snippet?.thumbnails?.medium?.url || '';
+function videoId(item) {
+  if (item.videoId) return item.videoId;
+  try { return new URL(item.url).searchParams.get('v'); } catch { return null; }
 }
 
-function toJstISOString(utcString) {
-  const date = new Date(utcString);
-  const jstOffset = 9 * 60;
-  const jstDate = new Date(date.getTime() + jstOffset * 60 * 1000);
-  return jstDate.toISOString().replace('Z', '+09:00');
-}
-
-(async () => {
-  try {
-    // 入力（配信者リスト）
-    const streamers = JSON.parse(await fs.readFile('data/youtube_streamers.json', 'utf8'));
-
-    const now = new Date();
-    const threeDaysAgo   = new Date(now.getTime() - 3 * 24 * 60 * 60 * 1000);
-    const threeDaysLater = new Date(now.getTime() + 5 * 24 * 60 * 60 * 1000);
-
-    // 当日・前日の範囲 (JST基準)
-    const jstNow = new Date(now.getTime() + 9 * 60 * 60 * 1000);
-    const todayJstMidnight = new Date(Date.UTC(jstNow.getUTCFullYear(), jstNow.getUTCMonth(), jstNow.getUTCDate()) - 9 * 60 * 60 * 1000);
-    const yesterdayJstMidnight = new Date(todayJstMidnight.getTime() - 24 * 60 * 60 * 1000);
-
-    // キャッシュ読み込み
-    let cache = {};
-    try {
-      cache = JSON.parse(await fs.readFile(CACHE_FILE, 'utf8'));
-    } catch {
-      console.log('📁 No cache found, starting fresh.');
-    }
-    if (!cache.__channelIcons__) cache.__channelIcons__ = {};
-
-    // 既存の出力（上書き事故を避けるため先に読む）
-    let existing = [];
-    try {
-      existing = JSON.parse(await fs.readFile(DATA_FILE, 'utf8'));
-      if (!Array.isArray(existing)) {
-        console.warn('⚠️ Existing youtube.json is not an array. Resetting to [].');
-        existing = [];
-      }
-    } catch {
-      existing = [];
-    }
-
-    // 取得ループ
-    let combined = [];
-    console.log(`streamers: ${streamers.length}`);
-    let processed = 0, skippedByCache = 0, hitChannels = 0;
-
-    for (const s of streamers) {
-      if (!s.youtubeChannelId) continue;
-      processed++;
-
-      // チャンネルアイコン取得（未キャッシュなら API から取得）
-      if (!cache.__channelIcons__[s.youtubeChannelId]) {
-        const icon = await fetchChannelIcon(s.youtubeChannelId, YOUTUBE_API_KEY);
-        if (icon) cache.__channelIcons__[s.youtubeChannelId] = icon;
-      }
-      const channelIcon = cache.__channelIcons__[s.youtubeChannelId] || '';
-
-      const lastChecked = cache[s.youtubeChannelId];
-      const lastCheckedAge = lastChecked ? (now - new Date(lastChecked)) : Infinity;
-
-      // 1時間以内にチェック済みはスキップ
-      if (lastCheckedAge < 1 * 60 * 60 * 1000) {
-        skippedByCache++;
-        continue;
-      }
-
-      // 当日・前日にデータがないチャンネルは6時間キャッシュ（クォータ節約）
-      const hasRecentEntry = existing.some(
-        item => item.youtubeid === s.youtubeChannelId && new Date(item.date) >= yesterdayJstMidnight
-      );
-      if (!hasRecentEntry && lastCheckedAge < 6 * 60 * 60 * 1000) {
-        skippedByCache++;
-        continue;
-      }
-
-      // 最新動画検索（当日・前日分のみ、最大5件）
-      const searchUrl =
-        `https://www.googleapis.com/youtube/v3/search?` +
-        `part=id&channelId=${s.youtubeChannelId}&maxResults=5&order=date&type=video` +
-        `&publishedAfter=${yesterdayJstMidnight.toISOString()}&key=${YOUTUBE_API_KEY}`;
-
-      const searchRes = await fetch(searchUrl);
-      const searchJson = await searchRes.json();
-      const videoIds = (searchJson.items || [])
-        .map(item => item && item.id && item.id.videoId)
-        .filter(Boolean)
-        .join(',');
-
-      if (!videoIds) {
-        cache[s.youtubeChannelId] = now.toISOString();
-        continue;
-      }
-
-      // 動画詳細
-      const videosUrl =
-        `https://www.googleapis.com/youtube/v3/videos?` +
-        `part=snippet,liveStreamingDetails&id=${videoIds}&key=${YOUTUBE_API_KEY}`;
-
-      const videosRes = await fetch(videosUrl);
-      const videosJson = await videosRes.json();
-      const items = videosJson.items || [];
-      if (items.length > 0) hitChannels++;
-
-      for (const video of items) {
-        const snippet = video.snippet || {};
-        const details = video.liveStreamingDetails || {};
-        const title = snippet.title || '';
-        const thumbnail = snippet.thumbnails?.medium?.url || '';
-        const videoUrl = `https://www.youtube.com/watch?v=${video.id}`;
-
-        if (details.actualStartTime) {
-          const actual = new Date(details.actualStartTime);
-          if (actual >= yesterdayJstMidnight && actual <= now) {
-            // liveBroadcastContent が 'live' かつ actualEndTime がなければ配信中
-            const isLive = snippet.liveBroadcastContent === 'live' && !details.actualEndTime;
-            combined.push({
-              name: s.name,
-              youtubeid: s.youtubeChannelId,
-              title,
-              date: toJstISOString(details.actualStartTime),
-              status: isLive ? 'live' : 'archive',
-              type: 'stream',
-              thumbnail,
-              channelIcon,
-              url: videoUrl
-            });
-          }
-        } else if (details.scheduledStartTime) {
-          const scheduled = new Date(details.scheduledStartTime);
-          if (scheduled >= now && scheduled <= threeDaysLater) {
-            combined.push({
-              name: s.name,
-              youtubeid: s.youtubeChannelId,
-              title,
-              date: toJstISOString(details.scheduledStartTime),
-              status: 'upcoming',
-              type: 'stream',
-              thumbnail,
-              channelIcon,
-              url: videoUrl
-            });
-          }
-        } else {
-          const publishedAt = new Date(snippet.publishedAt);
-          if (publishedAt >= yesterdayJstMidnight && publishedAt <= now) {
-            combined.push({
-              name: s.name,
-              youtubeid: s.youtubeChannelId,
-              title,
-              date: toJstISOString(snippet.publishedAt),
-              status: 'archive',
-              type: 'video',
-              thumbnail,
-              channelIcon,
-              url: videoUrl
-            });
-          }
-        }
-      }
-
-      // チェック済みとして記録
-      cache[s.youtubeChannelId] = now.toISOString();
-    }
-
-    console.log(`processed: ${processed}, skippedByCache: ${skippedByCache}, hitChannels: ${hitChannels}, newItems: ${combined.length}`);
-
-    // live と archive の重複（同一配信が二重）を除去
-    combined = combined.filter((item, _idx, arr) => {
-      if (item.status !== 'archive') return true;
-      const dup = arr.find(other =>
-        other.status === 'live' &&
-        other.name === item.name &&
-        other.title === item.title &&
-        Math.abs(new Date(other.date) - new Date(item.date)) < 60 * 1000
-      );
-      return !dup;
-    });
-
-    // 既存とマージし、±3日ウィンドウに制限
-    const windowStart = new Date(threeDaysAgo);
-    const windowEnd   = new Date(threeDaysLater);
-
-    const merged = [...combined, ...existing].filter(item => {
-      const d = new Date(item.date);
-      return d >= windowStart && d <= windowEnd;
-    });
-
-    // URL（なければ name|title|date）で重複除去
-    const seen = new Set();
-    const deduped = merged.filter(x => {
-      const key = x.url ? `url:${x.url}` : `ntd:${x.name}|${x.title}|${x.date}`;
-      if (seen.has(key)) return false;
-      seen.add(key);
-      return true;
-    });
-
-    // 12時間以上経過した live エントリを archive に降格（キャッシュ中に配信が終了した場合の補正）
-    const liveStaleThreshold = new Date(now.getTime() - 12 * 60 * 60 * 1000);
-    deduped.forEach(item => {
-      if (item.status === 'live' && new Date(item.date) < liveStaleThreshold) {
-        item.status = 'archive';
-      }
-    });
-
-    // 昇順ソート
-    deduped.sort((a, b) => new Date(a.date) - new Date(b.date));
-
-    // 変更があるときだけ data を書き込む（空で上書きしない）
-    const prevJson = JSON.stringify(existing, null, 2);
-    const nextJson = JSON.stringify(deduped,  null, 2);
-    if (prevJson !== nextJson) {
-      await fs.writeFile(DATA_FILE, nextJson, 'utf8');
-      console.log(`✅ ${DATA_FILE} updated (+${combined.length} new, total ${deduped.length}).`);
-    } else {
-      console.log('ℹ️ No changes for youtube.json; keeping current file.');
-    }
-
-    // キャッシュは毎回更新
-    await fs.writeFile(CACHE_FILE, JSON.stringify(cache, null, 2), 'utf8');
-    console.log('✅ cache saved.');
-
-    // 最終更新日時を記録
-    const META_FILE = 'data/last_updated.json';
-    let meta = {};
-    try { meta = JSON.parse(await fs.readFile(META_FILE, 'utf8')); } catch { /* 初回 */ }
-    meta.youtube = now.toISOString();
-    await fs.writeFile(META_FILE, JSON.stringify(meta, null, 2), 'utf8');
-    console.log('✅ last_updated.json (youtube) saved.');
-  } catch (err) {
-    console.error('❌ Error:', err?.message || err);
-    process.exitCode = 1;
+async function collect({ streamers, existing, cache, apiKey, now, request = requestJson }) {
+  if (!apiKey) throw new Error('YOUTUBE_API_KEY is required');
+  if (!Array.isArray(streamers) || !Array.isArray(existing) || !cache || Array.isArray(cache) || typeof cache !== 'object') {
+    throw new Error('Invalid YouTube input data');
   }
-})();
+  const nextCache = structuredClone(cache);
+  nextCache.__channelIcons__ ||= {};
+  const channels = new Map(streamers.filter(s => s.youtubeChannelId).map(s => [s.youtubeChannelId, s]));
+  const ids = new Set(existing.filter(x => channels.has(x.youtubeid)).map(videoId).filter(Boolean));
+  const api = async (endpoint, params) => {
+    const url = new URL(`https://www.googleapis.com/youtube/v3/${endpoint}`);
+    url.search = new URLSearchParams({ ...params, key: apiKey }).toString();
+    return request(url.toString());
+  };
+
+  // Uploads playlists are cheap to poll; do not use search.list for every channel.
+  nextCache.__uploads__ ||= {};
+  nextCache.__upcoming__ ||= {};
+  nextCache.__unavailable__ ||= {};
+  const missing = [...channels.keys()].filter(id => !nextCache.__uploads__[id] && (!nextCache.__unavailable__[id] || now - new Date(nextCache.__unavailable__[id]) >= 86400000));
+  for (let offset = 0; offset < missing.length; offset += 50) {
+    const items = arrayField(await api('channels', { part: 'snippet,contentDetails', id: missing.slice(offset, offset + 50).join(',') }), 'items');
+    for (const item of items) {
+      if (!item.id || !item.contentDetails?.relatedPlaylists?.uploads) throw new Error('Invalid YouTube channel');
+      nextCache.__uploads__[item.id] = item.contentDetails.relatedPlaylists.uploads;
+      delete nextCache.__unavailable__[item.id];
+      nextCache.__channelIcons__[item.id] = item.snippet?.thumbnails?.medium?.url || '';
+    }
+    for (const id of missing.slice(offset, offset + 50)) {
+      if (!nextCache.__uploads__[id]) nextCache.__unavailable__[id] = now.toISOString();
+    }
+  }
+  for (const [id] of channels) {
+    if (!nextCache.__uploads__[id]) continue;
+    const age = now - new Date(cache[id] || 0);
+    const recentlyActive = existing.some(x => x.youtubeid === id && (x.status === 'live' || x.status === 'upcoming' || now - new Date(x.date) < 2 * 86400000));
+    if (age >= 0 && age < (recentlyActive ? 1 : 6) * 3600000) continue;
+    let pageToken = '';
+    const tokens = new Set();
+    do {
+      let result;
+      try {
+        result = await api('playlistItems', {
+          part: 'contentDetails', playlistId: nextCache.__uploads__[id], maxResults: '50',
+          ...(pageToken ? { pageToken } : {})
+        });
+      } catch (error) {
+        // YouTube returns 404 for uploads playlists with no public uploads.
+        // The channel may still have upcoming streams; search it below.
+        if (error.message !== 'API HTTP 404') throw error;
+        break;
+      }
+      const items = arrayField(result, 'items');
+      for (const item of items) {
+        if (!item.contentDetails?.videoId) throw new Error('Invalid YouTube playlist item');
+        ids.add(item.contentDetails.videoId);
+      }
+      const lastDate = Date.parse(items.at(-1)?.contentDetails?.videoPublishedAt);
+      pageToken = items.length && (!Number.isFinite(lastDate) || lastDate >= now - 8 * 86400000) ? result.nextPageToken || '' : '';
+      if (pageToken && tokens.has(pageToken)) throw new Error('Repeated YouTube page token');
+      tokens.add(pageToken);
+    } while (pageToken);
+    nextCache[id] = now.toISOString();
+  }
+
+  // Old reservation frames may be absent from uploads. Search upcoming streams
+  // without a publication cutoff, in oldest-checked order, within a daily budget.
+  // Pacific dates follow YouTube's daily quota reset, including daylight saving.
+  const quotaDay = new Intl.DateTimeFormat('en-CA', { timeZone: 'America/Los_Angeles', year: 'numeric', month: '2-digit', day: '2-digit' }).format(now);
+  const budget = nextCache.__searchBudget__?.day === quotaDay ? nextCache.__searchBudget__ : { day: quotaDay, used: 0 };
+  nextCache.__searchBudget__ = budget;
+  const candidates = [...channels.keys()].filter(id => nextCache.__uploads__[id] && (!cache.__upcoming__?.[id] || now - new Date(cache.__upcoming__[id]) >= 48 * 3600000))
+    .sort((a, b) => (Date.parse(cache.__upcoming__?.[a]) || 0) - (Date.parse(cache.__upcoming__?.[b]) || 0));
+  for (const id of candidates.slice(0, 5)) {
+    if (budget.used >= 50) break;
+    let pageToken = nextCache.__upcomingCursor__?.[id] || '';
+    const tokens = new Set();
+    do {
+      if (budget.used >= 50) break;
+      const result = await api('search', { part: 'id', channelId: id, type: 'video', eventType: 'upcoming', maxResults: '50', ...(pageToken ? { pageToken } : {}) });
+      budget.used++;
+      for (const item of arrayField(result, 'items')) {
+        if (!item.id?.videoId) throw new Error('Invalid YouTube search item');
+        ids.add(item.id.videoId);
+      }
+      pageToken = result.nextPageToken || '';
+      if (pageToken && tokens.has(pageToken)) throw new Error('Repeated YouTube page token');
+      tokens.add(pageToken);
+    } while (pageToken);
+    nextCache.__upcomingCursor__ ||= {};
+    if (pageToken) nextCache.__upcomingCursor__[id] = pageToken;
+    else { delete nextCache.__upcomingCursor__[id]; nextCache.__upcoming__[id] = now.toISOString(); }
+  }
+
+  const { start, end } = dateWindow(now);
+  const output = [];
+  const allIds = [...ids];
+  for (let offset = 0; offset < allIds.length; offset += 50) {
+    const items = arrayField(await api('videos', {
+      part: 'snippet,liveStreamingDetails', id: allIds.slice(offset, offset + 50).join(',')
+    }), 'items');
+    for (const video of items) {
+      const s = video.snippet;
+      if (!video.id || !s?.channelId || typeof s.title !== 'string' || !s.publishedAt) throw new Error('Invalid YouTube video item');
+      const channel = channels.get(s.channelId);
+      if (!channel) continue;
+      const details = video.liveStreamingDetails || {};
+      const live = s.liveBroadcastContent === 'live' && !details.actualEndTime;
+      const upcoming = !details.actualStartTime && !!details.scheduledStartTime && !details.actualEndTime;
+      const date = details.actualStartTime || details.scheduledStartTime || s.publishedAt;
+      const timestamp = Date.parse(date);
+      if (!Number.isFinite(timestamp)) throw new Error('Invalid YouTube video date');
+      if (!live && !upcoming && (timestamp < start || timestamp >= end)) continue;
+      output.push({
+        videoId: video.id, name: channel.name, youtubeid: s.channelId, title: s.title,
+        date: new Date(timestamp).toISOString(), status: live ? 'live' : upcoming ? 'upcoming' : 'archive',
+        type: details.actualStartTime || details.scheduledStartTime ? 'stream' : 'video',
+        thumbnail: s.thumbnails?.medium?.url || '', channelIcon: nextCache.__channelIcons__[s.channelId] || '',
+        url: `https://www.youtube.com/watch?v=${encodeURIComponent(video.id)}`
+      });
+    }
+    // IDs omitted by a successful videos.list response are no longer public.
+    // Do not merge their stale entries back into the output.
+  }
+  output.sort((a, b) => Date.parse(a.date) - Date.parse(b.date));
+  return { data: output, cache: nextCache };
+}
+
+async function main({ directory = path.join(__dirname, 'data'), env = process.env, now = new Date(), request = requestJson } = {}) {
+  const result = await collect({
+    streamers: await readJson(path.join(directory, 'youtube_streamers.json'), null),
+    existing: await readJson(path.join(directory, 'youtube.json'), []),
+    cache: await readJson(path.join(directory, 'youtube_cache.json'), {}),
+    apiKey: env.YOUTUBE_API_KEY, now, request
+  });
+  await saveResult(directory, 'youtube', result.data, now, result.cache);
+  console.log(`YouTube: saved ${result.data.length} items; ${Object.keys(result.cache.__unavailable__).length} unavailable channels (retry daily)`);
+}
+
+if (require.main === module) main().catch(error => { console.error(error.message); process.exitCode = 1; });
+module.exports = { collect, main };

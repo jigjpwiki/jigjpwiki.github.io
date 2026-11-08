@@ -1,0 +1,128 @@
+name: Update and publish site
+
+on:
+  schedule:
+    - cron: '2-59/5 * * * *'
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths-ignore:
+      - 'data/youtube.json'
+      - 'data/twitch.json'
+      - 'data/youtube_cache.json'
+      - 'data/last_updated.json'
+  pull_request:
+
+permissions:
+  contents: read
+
+# One writer and one deployment at a time, including manual/code-triggered runs.
+concurrency:
+  group: site-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+      - run: npm ci
+      - run: npm run check
+      - run: npm test
+      - run: npm run build
+      - name: Install browser for UI regression tests
+        if: github.event_name == 'push' || github.event_name == 'pull_request'
+        run: npx playwright install --with-deps chromium
+      - name: Browser regression tests
+        if: github.event_name == 'push' || github.event_name == 'pull_request'
+        run: npm run test:browser
+
+  update:
+    if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
+    needs: test
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    permissions:
+      contents: write
+    outputs:
+      artifact_ready: ${{ steps.artifact.outputs.ready }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+      - run: npm ci
+      - name: Collect YouTube
+        id: youtube
+        continue-on-error: true
+        run: node fetch_youtube.js
+        env:
+          YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
+      - name: Collect Twitch
+        id: twitch
+        continue-on-error: true
+        run: node fetch_twitch.js
+        env:
+          TWITCH_CLIENT_ID: ${{ secrets.TWITCH_CLIENT_ID }}
+          TWITCH_CLIENT_SECRET: ${{ secrets.TWITCH_CLIENT_SECRET }}
+      - name: Commit successful collections
+        env:
+          YOUTUBE_RESULT: ${{ steps.youtube.outcome }}
+          TWITCH_RESULT: ${{ steps.twitch.outcome }}
+        run: |
+          set -euo pipefail
+          # Failed media keep the last known good snapshot, including partial writes.
+          if [ "$YOUTUBE_RESULT" = success ]; then
+            git add data/youtube.json data/youtube_cache.json
+          else
+            git restore -- data/youtube.json data/youtube_cache.json
+          fi
+          if [ "$TWITCH_RESULT" = success ]; then
+            git add data/twitch.json
+          else
+            git restore -- data/twitch.json
+          fi
+          git add data/last_updated.json
+          if ! git diff --cached --quiet; then
+            git config user.name github-actions[bot]
+            git config user.email github-actions[bot]@users.noreply.github.com
+            git commit -m "Update stream data"
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
+      - run: npm run build
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+      - name: Mark artifact ready
+        id: artifact
+        run: echo 'ready=true' >> "$GITHUB_OUTPUT"
+      - name: Report collection failures
+        if: steps.youtube.outcome == 'failure' || steps.twitch.outcome == 'failure'
+        run: |
+          echo 'One or more collectors failed. The site retains their last successful data.' >> "$GITHUB_STEP_SUMMARY"
+          exit 1
+
+  deploy:
+    # Publish successful media and code even when the other collector fails.
+    if: always() && !cancelled() && needs.test.result == 'success' && needs.update.outputs.artifact_ready == 'true'
+    needs: [test, update]
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

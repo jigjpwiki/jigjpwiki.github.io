@@ -2,10 +2,11 @@
 <html lang="ja">
     <head>
         <meta charset="UTF-8">
+        <link rel="canonical" href="https://www.jigdule.jp/">
         <title>じぐじゅーる｜jig.jp非公式配信スケジュール</title>
 
         <!-- CSSの読み込み -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+        <link rel="stylesheet" href="/assets/vendor/swiper/swiper-bundle.min.css" />
         <link rel="stylesheet" href="style.css">
 
         <!-- Google Fontsの読み込み -->
@@ -23,8 +24,8 @@
         <!-- Open Graph Protocol (OGP) メタタグ -->
         <meta property="og:title" content="じぐじゅーる｜jig.jp非公式配信スケジュール" />
         <meta property="og:description" content="じぐじゅーるは、jig.jp非公式Wiki記載ライバーのスケジュールを簡単に見ることができる非公式ツールです。" />
-        <meta property="og:image" content="https://github.com/jigjpwiki/jigjpwiki.github.io/blob/main/assets/ogp-image.png?raw=true" />
-        <meta property="og:url" content="https://jigdule.jp" />
+        <meta property="og:image" content="https://www.jigdule.jp/assets/ogp-image.png" />
+        <meta property="og:url" content="https://www.jigdule.jp/" />
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content="じぐじゅーる" />
 
@@ -32,7 +33,7 @@
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="じぐじゅーる｜jig.jp非公式配信スケジュール" />
         <meta name="twitter:description" content="じぐじゅーるは、jig.jp非公式Wiki記載ライバーのスケジュールを簡単に見ることができる非公式ツールです。" />
-        <meta name="twitter:image" content="https://github.com/jigjpwiki/jigjpwiki.github.io/blob/main/assets/ogp-image.png?raw=true" />
+        <meta name="twitter:image" content="https://www.jigdule.jp/assets/ogp-image.png" />
         <meta name="twitter:site" content="@Jigjpwiki" />
 
         <!-- ページに表示するアイコン (ファビコン) -->
@@ -42,8 +43,7 @@
         <link rel="manifest" href="/assets/site.webmanifest">
 
 
-        <!-- Font Awesomeの読み込み -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
 
         <!-- Google tag (gtag.js) -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-8SBJKHRBRJ"></script>
@@ -60,7 +60,7 @@
         <header>
 
             <div class="header-wrapper">
-                <div class="logo"><img src="assets/logo.png" alt="じぐじゅーる"></div>
+                <h1 class="logo"><img src="assets/logo.png" alt="じぐじゅーる"></h1>
             </div>
             <div class="header-policy">
                 <label class="content-type-toggle" for="show-videos-toggle">
@@ -68,47 +68,42 @@
                     <span class="toggle-label">動画も表示</span>
                     <span class="toggle-track"></span>
                 </label>
-                <a href="/privacy-policy" class="link-underline">プライバシーポリシー</a>
-                <a href="/terms" class="link-underline">利用規約</a>
+                <a href="/privacy-policy/" class="link-underline">プライバシーポリシー</a>
+                <a href="/terms/" class="link-underline">利用規約</a>
                 <!--<a href="https://wikiwiki.jp/jigjp/" class="link-underline" target="_blank">jig.jp非公式Wiki</a>-->
             </div>
         </header>
         <main>
-            <header>
-
-            </header>
+            <div class="data-status" role="status" aria-live="polite"><span id="data-message">配信情報を読み込んでいます…</span> <button id="retry-data" type="button" hidden>再試行</button></div>
+            <noscript><p class="empty-day">スケジュールの表示にはJavaScriptを有効にしてください。</p></noscript>
             <div class="videocontainer swiper">
                 <div class="videoswipe-inner">
-                    <button class="swipe-button prev" id="prev-button"><i class="fa-solid fa-chevron-left"></i></button>
-                    <button class="swipe-button next" id="next-button"><i class="fa-solid fa-chevron-right"></i></button>
+                    <div class="swiper videolist-container"><div id="videolist" class="swiper-wrapper"></div></div>
+                    <button class="swipe-button prev" id="prev-button" aria-label="前の日へ"><span aria-hidden="true">‹</span></button>
+                    <button class="swipe-button next" id="next-button" aria-label="次の日へ"><span aria-hidden="true">›</span></button>
                 </div>
-                <div id="videolist" class="swiper-wrapper"></div>
             </div>
         </main>
         <!-- アップデート情報バナー -->
         <div id="update-banner" class="update-banner" style="display: none;">
             <span id="update-message"></span>
             <button id="update-close-btn" class="update-close-btn" aria-label="バナーを閉じる">
-                <i class="fa-solid fa-xmark"></i>
+                <span aria-hidden="true">×</span>
             </button>
         </div>
         <footer>
             <!-- バージョン表記(絶対位置) -->
             <div class="version">
-                <span>Version 2.4.6-beta</span>
+                <span>Version 2.5.0</span>
                 <span class="debug-time" id="debug-jst">--</span>
                 <span class="debug-time" id="debug-yt-updated">YouTube最終更新: --</span>
                 <span class="debug-time" id="debug-tw-updated">Twitch最終更新: --</span>
             </div>
         </footer>
-        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
-        <script src="comitter.js" defer></script>
-        <script src="script.js" defer></script>
+        <script src="/assets/vendor/swiper/swiper-bundle.min.js" defer></script>
+        <script src="assets/js/schedule.js" defer></script>
+        <script src="assets/js/ui.js" defer></script>
+        <script src="assets/js/app.js" defer></script>
 
-        <script>
-        if (/Windows/i.test(navigator.userAgent)) {
-            document.documentElement.classList.add("windows");
-        }
-        </script>
     </body>
 </html>

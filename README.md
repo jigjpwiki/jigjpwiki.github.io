@@ -16,23 +16,23 @@ YouTube / Twitch / TikTok の情報をまとめて読み込み、日付ごとに
 
 このリポジトリでは、フロントエンドは主に以下のファイルで構成されています。
 
-- `index.html`  
+- `index.html`
   サイト本体。メタ情報、OGP、外部ライブラリの読み込み、表示領域の定義を行います。
-- `comitter.js`  
+- `assets/js/app.js`
   `data/tiktok.json` / `data/twitch.json` / `data/youtube.json` を読み込み、データを統合して画面に描画します。
-- `script.js`  
+- `assets/js/ui.js`
   カルーセル初期化処理を担当します。
-- `style.css`  
+- `style.css`
   見た目のスタイルを定義します。
-- `data/*.json`  
+- `data/*.json`
   各配信プラットフォームごとの配信データです。
-- `assets/`  
+- `assets/`
   ロゴ、OGP画像、サムネイルテンプレート、アイコンなどを格納します。
 
 ## データの流れ
 
 1. `index.html` 読み込み
-2. `comitter.js` が各JSONファイルを取得
+2. `assets/js/app.js` が各JSONファイルを取得
 3. YouTube / Twitch / TikTok のデータを共通形式に整形
 4. 1つの配列にまとめて日時順にソート
 5. 日付ごとにグループ化
@@ -71,3 +71,52 @@ YouTube / Twitch / TikTok の情報をまとめて読み込み、日付ごとに
 - Frontend Library：Swiper.js
 - Hosting：GitHub Pages
 - Special Thanks：配信情報の公開・発信を行っているすべてのライバーの皆さま
+
+## 開発・検証
+
+Node.js 22以降を使用します（CIはNode.js 24 LTS）。
+
+```sh
+npm ci
+npm run check
+npm test
+npm run build
+python3 -m http.server 8000 --directory _site
+```
+
+`npm run check` はJavaScript構文とJSONを検証します。`npm test` は外部APIや実データを変更せず、HTTPエラー時の保存抑止、レスポンス検証、配信状態・録画URL、JST境界、リンク検証を確認します。
+ブラウザーではスマートフォン幅とデスクトップ幅で、媒体JSONの取得失敗・再試行、動画切替のキーボード操作、Asia/Tokyo以外のタイムゾーンを確認してください。
+
+### データ更新
+
+`.github/workflows/update-streams.yml` がYouTubeとTwitchを順に取得し、成功した媒体の変更をまとめてコミットします。コードのmainへのpush時にも更新します。同時実行は直列化されます。一方が失敗しても他方は更新し、最終的なワークフロー結果は失敗として通知します。cronの5分間隔は実行頻度の指定であり、GitHub Actionsの遅延を含む更新保証ではありません。
+
+必要なGitHub Actions Secrets:
+
+- `YOUTUBE_API_KEY`
+- `TWITCH_CLIENT_ID`
+- `TWITCH_CLIENT_SECRET`
+
+認証情報はコード・公開JSONへ保存しないでください。取得スクリプトはAPIのHTTPステータス・レスポンスを検証し、途中で失敗した場合は媒体の保存と成功日時の更新を行いません。ファイルは一時ファイルからrenameして書き込みます。ローカルで実APIを実行すると `data/` が変更されます。
+
+YouTubeの新着動画は uploads プレイリストから取得します。活動中チャンネルは1時間、その他は6時間間隔とし、直近8日間の動画をページングして探索します。**既知の動画IDは毎回最大50件ずつ再取得**し、時刻・状態を更新します。非公開・削除された動画は成功したAPI応答から除外し、表示期間外へ延期された予約は保持します。経過時間だけで終了とは判断しません。
+
+古く作られた予約枠は、公開日の制限を付けない `eventType=upcoming` 検索で補います。最終探索が古いチャンネルから1回最大5チャンネル、48時間以上の間隔で走査します。検索は太平洋時間の日付単位で最大50リクエストに制限し、ページング途中なら翌日に継続します。登録チャンネル全体の初回走査には複数日かかり、実際にはActionsの実行間隔に応じてさらに時間がかかります。現在公開されていないチャンネルは全体を失敗にせず、翌日以降に再確認します。これは新着検出を即時保証するものではありません。検索予算を使い切っても、既知動画の状態更新は続けます。YouTube APIプロジェクトを他サービスと共用する場合は、合計クォータを確認してください。
+
+ブラウザーからYouTube APIは呼び出しません。公開JSONを5分ごと・タブ復帰時に再取得し、媒体別に前回成功したデータを保持します。30分以上更新されていない媒体、取得失敗、データ0件を画面で区別します。日時は端末設定によらずJSTです。
+
+TikTokの自動更新は停止中です。`data/tiktok.json` の表示機能は維持しています。
+
+### 既存公開キーの移行
+
+旧 `data/cfg_a.json` / `data/cfg_b.json` とブラウザー側のキー復元処理を削除しました。ただし過去のGit履歴や配信キャッシュから既存キーを回収することはできません。管理者はGoogle Cloudで旧キーの制限と利用量を確認し、必要に応じて失効・再発行してください。旧公開キーとActionsのキーが同一なら、Actions Secretを新キーへ更新してから旧キーを失効させます。この変更自体はクラウド側のキー設定を変更しません。
+
+### 公開と運用
+
+GitHub Pagesの **Build and deployment / Source は GitHub Actions** を使用します。更新ワークフローがデータ収集・コミット後に公開ファイルだけを `_site/` へコピーし、Pagesへデプロイします。`GITHUB_TOKEN`によるデータコミットが別のPagesビルドを起動しない制約に依存しません。取得失敗時はその媒体の旧データを残し、他媒体とサイト本体は公開したうえでワークフローを失敗として報告します。通知先はGitHubのActions通知設定に従います。
+
+公開対象はHTML/CSS、assets、3媒体のJSON・更新日時・お知らせのみです。収集コード、キャッシュ、配信者設定、node_modules、旧公開キーは配信しません。Actionsの遅延を検知したら画面に警告を表示します。数分以内の更新保証が必要な場合は、別途専用スケジューラーを用意する必要があります。
+
+公開後の確認: トップと規約2ページの200、旧キーJSONの404、JST時刻、モバイルの動画切替、媒体別更新日時、Actionsのtest/update/deploy結果を確認してください。
+
+ブラウザー回帰テストは `npx playwright install chromium` の後に `npm run build && npm run test:browser` で実行します。CIではコードのpushとPRで実行します。320/390/1440px、JST/UTC/米国時間、媒体の部分失敗・再試行・定期更新、キーボード操作、HTML文字列の安全な表示、規約ページを検証します。Swiper 11.2.10はMITライセンスを同梱してローカル配信し、実行時のCDN依存を減らしています。

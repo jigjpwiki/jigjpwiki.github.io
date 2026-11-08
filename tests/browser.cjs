@@ -33,7 +33,8 @@ const fixture = [
       const apiCalls = [], errors = [];
       await context.route('**/*', route => {
         const url = new URL(route.request().url());
-        if (url.hostname === 'www.googleapis.com') apiCalls.push(url.pathname);
+        if (url.hostname === 'www.googleapis.com') { apiCalls.push(url.pathname); return route.fulfill({json:{items:[{id:'live',snippet:{liveBroadcastContent:'none'},liveStreamingDetails:{actualEndTime:stamp}}]}}); }
+        if (url.pathname === '/data/youtube_client.json') return route.fulfill({json:{apiKey:'fixture'}});
         if (url.origin !== base) return route.abort();
         if (url.pathname === '/data/tiktok.json') return route.fulfill({ status: failTiktok ? 503 : 200, json: [] });
         if (url.pathname === '/data/youtube.json') {
@@ -103,7 +104,8 @@ const fixture = [
       await page.evaluate(() => document.dispatchEvent(new Event('visibilitychange')));
       await page.waitForFunction(count => window.__renderCount > count, beforeRender);
       assert.ok(dataRequests > beforeResume);
-      assert.deepEqual(errors, []); assert.deepEqual(apiCalls, []);
+      await page.waitForFunction(() => !document.querySelector('a[href="https://www.youtube.com/watch?v=live"]').classList.contains('is-live'));
+      assert.deepEqual(errors, []); assert.equal(apiCalls.length, 1);
       if (process.env.BROWSER_SCREENSHOT_DIR) {
         fs.mkdirSync(process.env.BROWSER_SCREENSHOT_DIR, { recursive: true });
         await page.screenshot({ path: path.join(process.env.BROWSER_SCREENSHOT_DIR, `site-${width}.png`) });

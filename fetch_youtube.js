@@ -136,15 +136,18 @@ async function collect({ streamers, existing, cache, apiKey, now, request = requ
     // Do not merge their stale entries back into the output.
   }
   output.sort((a, b) => Date.parse(a.date) - Date.parse(b.date));
+  if (!refreshOnly) nextCache.__lastDiscovery__ = now.toISOString();
   return { data: output, cache: nextCache };
 }
 
 async function main({ directory = path.join(__dirname, 'data'), env = process.env, now = new Date(), request = requestJson } = {}) {
+  const previousCache = await readJson(path.join(directory, 'youtube_cache.json'), {});
+  const refreshOnly = env.YOUTUBE_REFRESH_ONLY === 'true' || (env.YOUTUBE_REFRESH_ONLY === 'auto' && now - new Date(previousCache.__lastDiscovery__ || 0) < 3600000);
   const result = await collect({
     streamers: await readJson(path.join(directory, 'youtube_streamers.json'), null),
     existing: await readJson(path.join(directory, 'youtube.json'), []),
-    cache: await readJson(path.join(directory, 'youtube_cache.json'), {}),
-    apiKey: env.YOUTUBE_API_KEY, now, request, refreshOnly: env.YOUTUBE_REFRESH_ONLY === 'true'
+    cache: previousCache,
+    apiKey: env.YOUTUBE_API_KEY, now, request, refreshOnly
   });
   await saveResult(directory, 'youtube', result.data, now, result.cache);
   console.log(`YouTube: saved ${result.data.length} items; ${Object.keys(result.cache.__unavailable__).length} unavailable channels (retry daily)`);

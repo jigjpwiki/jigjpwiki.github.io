@@ -9,7 +9,7 @@ for (const entry of ['index.html', 'style.css', 'assets', 'privacy-policy', 'ter
   fs.cpSync(path.join(__dirname, '..', entry), path.join(output, entry), { recursive: true });
 }
 fs.mkdirSync(path.join(output, 'data'));
-for (const name of ['youtube', 'twitch', 'tiktok', 'last_updated', 'update_info']) {
+for (const name of ['youtube', 'twitch', 'tiktok', 'last_updated', 'update_info', 'youtube_client']) {
   fs.copyFileSync(path.join(__dirname, '..', 'data', `${name}.json`), path.join(output, 'data', `${name}.json`));
 }
 fs.writeFileSync(path.join(output, '.nojekyll'), '');

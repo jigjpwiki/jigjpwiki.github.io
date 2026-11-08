@@ -4,6 +4,15 @@
   const fallback = 'assets/thumbnail/placeholder.svg';
   const sources = ['tiktok', 'twitch', 'youtube'];
   const cached = new Map();
+  let storage;
+  try { storage = localStorage; } catch {}
+  const checkYouTube = YouTubeStatus.create({ storage });
+  async function updateYouTube() {
+    const rows = cached.get('youtube');
+    if (!rows) return;
+    const updated = await checkYouTube(rows);
+    if (JSON.stringify(updated) !== JSON.stringify(cached.get('youtube'))) { cached.set('youtube', updated); render(); }
+  }
   let busy = false;
   let initialized = false;
   let showVideos = false;
@@ -158,6 +167,7 @@
       }));
       await loadLastUpdated();
       render();
+      await updateYouTube();
     } finally { busy = false; }
   }
   toggle.addEventListener('change', () => {
@@ -166,6 +176,7 @@
     applyFilter();
   });
   refresh();
+  setInterval(() => { if (!document.hidden) updateYouTube(); }, 60000);
   setInterval(() => { if (!document.hidden) refresh(); }, 5 * 60000);
   document.addEventListener('visibilitychange', () => { if (!document.hidden) refresh(); });
 })();

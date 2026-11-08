@@ -2,8 +2,7 @@ name: Update and publish site
 
 on:
   schedule:
-    - cron: '2-59/5 * * * *'
-    - cron: '17 * * * *'
+    - cron: '*/5 * * * *'
   workflow_dispatch:
     inputs:
       refresh_only:
@@ -72,7 +71,7 @@ jobs:
         run: node fetch_youtube.js
         env:
           YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
-          YOUTUBE_REFRESH_ONLY: ${{ github.event.schedule == '2-59/5 * * * *' || (github.event_name == 'workflow_dispatch' && inputs.refresh_only) }}
+          YOUTUBE_REFRESH_ONLY: ${{ github.event_name == 'schedule' && 'auto' || (github.event_name == 'workflow_dispatch' && inputs.refresh_only && 'true' || 'false') }}
       - name: Collect Twitch
         id: twitch
         continue-on-error: true

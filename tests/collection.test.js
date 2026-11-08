@@ -77,8 +77,8 @@ test('Twitch saves archive permalink and deduplicates live recording by stream I
   const result = await twitch.collect({ streamers: [channel], clientId: 'fixture', clientSecret: 'fixture', now, request: async (value, options) => {
     const url = new URL(value);
     if (url.pathname.endsWith('/token')) { assert.equal(url.search, ''); assert.ok(options.body instanceof URLSearchParams); return { access_token: 'fixture' }; }
-    if (url.pathname.endsWith('/users')) return { data: [{ id: 'user' }] };
-    if (url.pathname.endsWith('/streams')) return { data: [{ id: 'stream', started_at: now.toISOString(), title: 'live' }] };
+    if (url.pathname.endsWith('/users')) return { data: [{ id: 'user', login: 'fixture' }] };
+    if (url.pathname.endsWith('/streams')) return { data: [{ id: 'stream', user_login: 'fixture', started_at: now.toISOString(), title: 'live' }] };
     return { data: [{ id: 'archive', stream_id: 'previous', created_at: now.toISOString(), title: 'recording' }, { id: 'in-progress', stream_id: 'stream', created_at: now.toISOString(), title: 'changed title' }] };
   } });
   assert.equal(result.length, 2);
@@ -88,7 +88,7 @@ test('successful zero-result Twitch update clears old data and advances only Twi
   const { directory } = await fixture(t);
   await twitch.main({ directory, now, env: { TWITCH_CLIENT_ID: 'fixture', TWITCH_CLIENT_SECRET: 'fixture' }, request: async value => {
     if (value.includes('/token')) return { access_token: 'fixture' };
-    if (value.includes('/users')) return { data: [{ id: 'user' }] };
+    if (value.includes('/users')) return { data: [{ id: 'user', login: 'fixture' }] };
     return { data: [] };
   } });
   assert.deepEqual(JSON.parse(await fs.readFile(path.join(directory, 'twitch.json'))), []);
@@ -206,4 +206,18 @@ test('status-only refresh bypasses discovery and updates live/ended states even 
     request: async value => { assert.ok(new URL(value).pathname.endsWith('/videos')); return { items: [video('ended', { actualStartTime: now.toISOString(), actualEndTime: now.toISOString() })] }; }
   });
   assert.equal(result.data[0].status, 'archive');
+});
+
+test('Twitch batches multiple logins and matches users regardless of response order and login case', async () => {
+  const calls = [];
+  const result = await twitch.collect({streamers:[{name:'A',twitchUserLogin:'Alpha'},{name:'B',twitchUserLogin:'beta'}],clientId:'fixture',clientSecret:'fixture',now,
+    request:async value=>{
+      const url=new URL(value); calls.push(url);
+      if(url.pathname.endsWith('/token')) return {access_token:'fixture'};
+      if(url.pathname.endsWith('/users')) {assert.deepEqual(url.searchParams.getAll('login'),['Alpha','beta']);return {data:[{id:'b',login:'beta'},{id:'a',login:'alpha'}]};}
+      if(url.pathname.endsWith('/streams')) {assert.equal(url.searchParams.getAll('user_login').length,2);return {data:[{id:'live',user_login:'alpha',title:'live',started_at:now.toISOString()}]};}
+      return {data:[]};
+    }});
+  assert.equal(calls.length,5);
+  assert.equal(result[0].name,'A');
 });

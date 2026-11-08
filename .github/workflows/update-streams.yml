@@ -2,7 +2,7 @@ name: Update and publish site
 
 on:
   schedule:
-    - cron: '*/5 * * * *'
+    - cron: '7,22,37,52 * * * *'
   workflow_dispatch:
     inputs:
       refresh_only:
@@ -28,6 +28,7 @@ concurrency:
 
 jobs:
   test:
+    if: github.event_name == 'push' || github.event_name == 'pull_request'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -47,7 +48,7 @@ jobs:
         run: npm run test:browser
 
   update:
-    if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
+    if: always() && !cancelled() && github.ref == 'refs/heads/main' && github.event_name != 'pull_request' && (needs.test.result == 'success' || needs.test.result == 'skipped')
     needs: test
     runs-on: ubuntu-latest
     timeout-minutes: 20
@@ -64,9 +65,14 @@ jobs:
         with:
           node-version: '24'
           cache: npm
-      - run: npm ci
+      - run: npm ci --omit=dev
+      - name: Check YouTube collection interval
+        id: due
+        run: |
+          node -e "const fs=require('fs');const m=JSON.parse(fs.readFileSync('data/youtube_cache.json'));fs.appendFileSync(process.env.GITHUB_OUTPUT,'youtube='+(!m.__lastStatusCheck__ || Date.now()-Date.parse(m.__lastStatusCheck__)>=30*60000)+'\n');"
       - name: Collect YouTube
         id: youtube
+        if: github.event_name != 'schedule' || steps.due.outputs.youtube == 'true'
         continue-on-error: true
         run: node fetch_youtube.js
         env:
@@ -80,6 +86,7 @@ jobs:
           TWITCH_CLIENT_ID: ${{ secrets.TWITCH_CLIENT_ID }}
           TWITCH_CLIENT_SECRET: ${{ secrets.TWITCH_CLIENT_SECRET }}
       - name: Commit successful collections
+        id: changes
         env:
           YOUTUBE_RESULT: ${{ steps.youtube.outcome }}
           TWITCH_RESULT: ${{ steps.twitch.outcome }}
@@ -96,20 +103,30 @@ jobs:
           else
             git restore -- data/twitch.json
           fi
-          git add data/last_updated.json
+          # Metadata alone must not create a commit or a Pages deployment.
+          publish=false
+          if ! git diff --cached --quiet -- data/youtube.json data/twitch.json; then publish=true; fi
+          if [ "${{ github.event_name }}" = push ]; then publish=true; fi
+          echo "publish=$publish" >> "$GITHUB_OUTPUT"
           if ! git diff --cached --quiet; then
+            git add data/last_updated.json
             git config user.name github-actions[bot]
             git config user.email github-actions[bot]@users.noreply.github.com
             git commit -m "Update stream data"
             git pull --rebase origin main
             git push origin HEAD:main
+          else
+            git restore -- data/last_updated.json
           fi
       - run: npm run build
+        if: steps.changes.outputs.publish == 'true'
       - uses: actions/upload-pages-artifact@v3
+        if: steps.changes.outputs.publish == 'true'
         with:
           path: _site
       - name: Mark artifact ready
         id: artifact
+        if: steps.changes.outputs.publish == 'true'
         run: echo 'ready=true' >> "$GITHUB_OUTPUT"
       - name: Report collection failures
         if: steps.youtube.outcome == 'failure' || steps.twitch.outcome == 'failure'
@@ -119,7 +136,7 @@ jobs:
 
   deploy:
     # Publish successful media and code even when the other collector fails.
-    if: always() && !cancelled() && needs.test.result == 'success' && needs.update.outputs.artifact_ready == 'true'
+    if: always() && !cancelled() && (needs.test.result == 'success' || needs.test.result == 'skipped') && needs.update.outputs.artifact_ready == 'true'
     needs: [test, update]
     runs-on: ubuntu-latest
     permissions:

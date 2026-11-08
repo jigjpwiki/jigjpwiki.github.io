@@ -149,6 +149,7 @@ async function main({ directory = path.join(__dirname, 'data'), env = process.en
     cache: previousCache,
     apiKey: env.YOUTUBE_API_KEY, now, request, refreshOnly
   });
+  result.cache.__lastStatusCheck__ = now.toISOString();
   await saveResult(directory, 'youtube', result.data, now, result.cache);
   console.log(`YouTube: saved ${result.data.length} items; ${Object.keys(result.cache.__unavailable__).length} unavailable channels (retry daily)`);
 }

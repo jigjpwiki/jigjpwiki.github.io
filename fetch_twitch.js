@@ -15,14 +15,25 @@ async function collect({ streamers, clientId, clientSecret, now, request = reque
   });
   const { start } = dateWindow(now);
   const output = new Map();
-  for (const s of streamers) {
-    if (!s.twitchUserLogin) continue;
-    const users = arrayField(await api('users', { login: s.twitchUserLogin }), 'data');
-    const user = users[0];
+  const configured = streamers.filter(s => s.twitchUserLogin);
+  const usersByLogin = new Map(), streamsByLogin = new Map();
+  for (let offset = 0; offset < configured.length; offset += 100) {
+    const batch = configured.slice(offset, offset + 100);
+    const users = arrayField(await api('users', batch.map(s => ['login', s.twitchUserLogin])), 'data');
+    const streams = arrayField(await api('streams', [...batch.map(s => ['user_login', s.twitchUserLogin]), ['first', '100']]), 'data');
+    for (const user of users) {
+      if (!user.id || !user.login) throw new Error('Invalid Twitch user');
+      usersByLogin.set(user.login.toLowerCase(), user);
+    }
+    for (const stream of streams) {
+      if (!stream.user_login) throw new Error('Invalid Twitch stream login');
+      streamsByLogin.set(stream.user_login.toLowerCase(), stream);
+    }
+  }
+  for (const s of configured) {
+    const user = usersByLogin.get(s.twitchUserLogin.toLowerCase());
     if (!user) { console.warn('Configured Twitch user is no longer public; skipping'); continue; }
-    if (!user.id) throw new Error('Invalid Twitch user');
-    const streams = arrayField(await api('streams', { user_login: s.twitchUserLogin }), 'data');
-    const stream = streams[0];
+    const stream = streamsByLogin.get(s.twitchUserLogin.toLowerCase());
     if (stream) {
       if (!stream.id || !Number.isFinite(Date.parse(stream.started_at)) || typeof stream.title !== 'string') throw new Error('Invalid Twitch stream');
       output.set(`live:${stream.id}`, {

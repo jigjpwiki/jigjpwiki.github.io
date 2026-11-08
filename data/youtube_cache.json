@@ -336,7 +336,12 @@
     "UCv2IYO-4waCpHvn50SWWY2A": "2026-11-08T14:37:54.681Z",
     "UC0H7dRRqhfOifbYQ2TURdAg": "2026-11-08T14:37:54.681Z",
     "UChccV6U0Tkx9de4YjXbEelw": "2026-11-08T14:37:54.681Z",
-    "UC0O_8Ssx5exycwGvuF5S6_Q": "2026-11-08T14:37:54.681Z"
+    "UC0O_8Ssx5exycwGvuF5S6_Q": "2026-11-08T14:37:54.681Z",
+    "UCz339ZwPv-i_PaBi_FVCF6w": "2026-11-08T14:56:16.798Z",
+    "UCUd4wJjvPQflbLnsk_YHleA": "2026-11-08T14:56:16.798Z",
+    "UCIw8aQVRBwi72yOrPLgkbRQ": "2026-11-08T14:56:16.798Z",
+    "UCj5nRzNFXZn9GRhITRkKElA": "2026-11-08T14:56:16.798Z",
+    "UCrB-SfrqB5ChY8aAT99grXw": "2026-11-08T14:56:16.798Z"
   },
   "__unavailable__": {
     "UCOH9jshsynMeCSRlPhiC": "2026-11-08T11:43:35.864Z",
@@ -346,8 +351,9 @@
   },
   "__searchBudget__": {
     "day": "2026-11-08",
-    "used": 30
+    "used": 35
   },
   "__upcomingCursor__": {},
-  "__lastDiscovery__": "2026-11-08T14:37:54.681Z"
+  "__lastDiscovery__": "2026-11-08T14:56:16.798Z",
+  "__lastStatusCheck__": "2026-11-08T14:56:16.798Z"
 }

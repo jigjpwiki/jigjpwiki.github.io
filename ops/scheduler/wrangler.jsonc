@@ -1,0 +1,34 @@
+{
+  "name": "jigdule-scheduler",
+  "main": "worker.mjs",
+  "compatibility_date": "2026-11-01",
+  "workers_dev": true,
+  "triggers": {
+    "crons": [
+      "8,23,38,53 * * * *"
+    ]
+  },
+  "vars": {
+    "ENABLED": "false",
+    "REPOSITORY": "jigjpwiki/jigjpwiki.github.io",
+    "WORKFLOW": "update-streams.yml",
+    "INTERVAL_MINUTES": "15",
+    "SUCCESS_JOB": "update"
+  },
+  "durable_objects": {
+    "bindings": [
+      {
+        "name": "SCHEDULER",
+        "class_name": "Scheduler"
+      }
+    ]
+  },
+  "migrations": [
+    {
+      "tag": "v1",
+      "new_sqlite_classes": [
+        "Scheduler"
+      ]
+    }
+  ]
+}

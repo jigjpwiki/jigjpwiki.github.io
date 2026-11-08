@@ -1,10 +1,16 @@
 name: Update and publish site
 
+run-name: ${{ (github.event_name == 'schedule' || inputs.periodic) && '[periodic]' || '[interactive]' }} ${{ github.workflow }}
+
 on:
   schedule:
-    - cron: '7,22,37,52 * * * *'
+    - cron: '8,23,38,53 * * * *'
   workflow_dispatch:
     inputs:
+      periodic:
+        description: 'External scheduler: use scheduled collection semantics'
+        type: boolean
+        default: false
       refresh_only:
         description: Refresh known YouTube statuses without discovery
         type: boolean
@@ -39,6 +45,7 @@ jobs:
       - run: npm ci
       - run: npm run check
       - run: npm test
+      - run: node --test ops/scheduler/worker.test.mjs
       - run: npm run build
       - name: Install browser for UI regression tests
         if: github.event_name == 'push' || github.event_name == 'pull_request'
@@ -48,7 +55,7 @@ jobs:
         run: npm run test:browser
 
   update:
-    if: always() && !cancelled() && github.ref == 'refs/heads/main' && github.event_name != 'pull_request' && (needs.test.result == 'success' || needs.test.result == 'skipped')
+    if: (github.event_name != 'schedule' || vars.SCHEDULE_DRIVER != 'cloudflare') && (github.event_name != 'workflow_dispatch' || !inputs.periodic || vars.SCHEDULE_DRIVER == 'cloudflare') && always() && !cancelled() && github.ref == 'refs/heads/main' && github.event_name != 'pull_request' && (needs.test.result == 'success' || needs.test.result == 'skipped')
     needs: test
     runs-on: ubuntu-latest
     timeout-minutes: 20
@@ -72,12 +79,12 @@ jobs:
           node -e "const fs=require('fs');const m=JSON.parse(fs.readFileSync('data/youtube_cache.json'));fs.appendFileSync(process.env.GITHUB_OUTPUT,'youtube='+(!m.__lastStatusCheck__ || Date.now()-Date.parse(m.__lastStatusCheck__)>=30*60000)+'\n');"
       - name: Collect YouTube
         id: youtube
-        if: github.event_name != 'schedule' || steps.due.outputs.youtube == 'true'
+        if: (github.event_name != 'schedule' && !inputs.periodic) || steps.due.outputs.youtube == 'true'
         continue-on-error: true
         run: node fetch_youtube.js
         env:
           YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
-          YOUTUBE_REFRESH_ONLY: ${{ github.event_name == 'schedule' && 'auto' || (github.event_name == 'workflow_dispatch' && inputs.refresh_only && 'true' || 'false') }}
+          YOUTUBE_REFRESH_ONLY: ${{ (github.event_name == 'schedule' || inputs.periodic) && 'auto' || (github.event_name == 'workflow_dispatch' && inputs.refresh_only && 'true' || 'false') }}
       - name: Collect Twitch
         id: twitch
         continue-on-error: true

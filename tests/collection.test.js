@@ -200,3 +200,10 @@ test('HTTP diagnostics contain endpoint but never credentials or query parameter
     return true;
   });
 });
+
+test('status-only refresh bypasses discovery and updates live/ended states even without channel cache', async () => {
+  const result = await youtube.collect({ streamers: [channel], existing: [{ youtubeid: 'channel', videoId: 'ended' }], cache: {}, apiKey: 'fixture', now, refreshOnly: true,
+    request: async value => { assert.ok(new URL(value).pathname.endsWith('/videos')); return { items: [video('ended', { actualStartTime: now.toISOString(), actualEndTime: now.toISOString() })] }; }
+  });
+  assert.equal(result.data[0].status, 'archive');
+});

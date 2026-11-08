@@ -3,7 +3,6 @@
 (() => {
   const fallback = 'assets/thumbnail/placeholder.svg';
   const sources = ['tiktok', 'twitch', 'youtube'];
-  const names = { tiktok: 'TikTok', twitch: 'Twitch', youtube: 'YouTube' };
   const cached = new Map();
   let busy = false;
   let initialized = false;
@@ -149,33 +148,23 @@
   async function refresh() {
     if (busy) return;
     busy = true;
-    const retry = document.getElementById('retry-data');
-    retry.disabled = true;
     try {
-      const results = await Promise.allSettled(sources.map(async platform => {
+      await Promise.allSettled(sources.map(async platform => {
         const response = await fetch(`data/${platform}.json`, { cache: 'no-cache', signal: AbortSignal.timeout(15000) });
         if (!response.ok) throw new Error('HTTP failure');
         const rows = await response.json();
         if (!Array.isArray(rows) || rows.some(row => !row || typeof row.name !== 'string' || typeof row.title !== 'string' || !Number.isFinite(Date.parse(row.date)))) throw new Error('Invalid data');
         cached.set(platform, rows);
       }));
-      const failed = sources.filter((_, i) => results[i].status === 'rejected');
-      const meta = await loadLastUpdated();
-      const stale = ['youtube', 'twitch'].filter(p => !meta?.[p] || !Number.isFinite(Date.parse(meta[p])) || Date.now() - Date.parse(meta[p]) > 30 * 60000);
-      const messages = [];
-      if (failed.length) messages.push(`${failed.map(p => names[p]).join('・')}を取得できませんでした。取得済みの情報があれば表示しています。`);
-      if (stale.length) messages.push(`${stale.map(p => names[p]).join('・')}の更新状況を確認できないか、最終更新から30分以上経過しています。`);
-      document.getElementById('data-message').textContent = messages.join(' ') || '配信時刻は日本時間（JST）です。';
-      retry.hidden = !messages.length;
+      await loadLastUpdated();
       render();
-    } finally { busy = false; retry.disabled = false; }
+    } finally { busy = false; }
   }
   toggle.addEventListener('change', () => {
     showVideos = toggle.checked;
     try { localStorage.setItem('showVideos', String(showVideos)); } catch { /* optional preference */ }
     applyFilter();
   });
-  document.getElementById('retry-data').addEventListener('click', refresh);
   refresh();
   setInterval(() => { if (!document.hidden) refresh(); }, 5 * 60000);
   document.addEventListener('visibilitychange', () => { if (!document.hidden) refresh(); });

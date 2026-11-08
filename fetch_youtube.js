@@ -8,7 +8,7 @@ function videoId(item) {
   try { return new URL(item.url).searchParams.get('v'); } catch { return null; }
 }
 
-async function collect({ streamers, existing, cache, apiKey, now, request = requestJson }) {
+async function collect({ streamers, existing, cache, apiKey, now, request = requestJson, refreshOnly = false }) {
   if (!apiKey) throw new Error('YOUTUBE_API_KEY is required');
   if (!Array.isArray(streamers) || !Array.isArray(existing) || !cache || Array.isArray(cache) || typeof cache !== 'object') {
     throw new Error('Invalid YouTube input data');
@@ -27,6 +27,7 @@ async function collect({ streamers, existing, cache, apiKey, now, request = requ
   nextCache.__uploads__ ||= {};
   nextCache.__upcoming__ ||= {};
   nextCache.__unavailable__ ||= {};
+  if (!refreshOnly) {
   const missing = [...channels.keys()].filter(id => !nextCache.__uploads__[id] && (!nextCache.__unavailable__[id] || now - new Date(nextCache.__unavailable__[id]) >= 86400000));
   for (let offset = 0; offset < missing.length; offset += 50) {
     const items = arrayField(await api('channels', { part: 'snippet,contentDetails', id: missing.slice(offset, offset + 50).join(',') }), 'items');
@@ -102,6 +103,8 @@ async function collect({ streamers, existing, cache, apiKey, now, request = requ
     else { delete nextCache.__upcomingCursor__[id]; nextCache.__upcoming__[id] = now.toISOString(); }
   }
 
+  }
+
   const { start, end } = dateWindow(now);
   const output = [];
   const allIds = [...ids];
@@ -141,7 +144,7 @@ async function main({ directory = path.join(__dirname, 'data'), env = process.en
     streamers: await readJson(path.join(directory, 'youtube_streamers.json'), null),
     existing: await readJson(path.join(directory, 'youtube.json'), []),
     cache: await readJson(path.join(directory, 'youtube_cache.json'), {}),
-    apiKey: env.YOUTUBE_API_KEY, now, request
+    apiKey: env.YOUTUBE_API_KEY, now, request, refreshOnly: env.YOUTUBE_REFRESH_ONLY === 'true'
   });
   await saveResult(directory, 'youtube', result.data, now, result.cache);
   console.log(`YouTube: saved ${result.data.length} items; ${Object.keys(result.cache.__unavailable__).length} unavailable channels (retry daily)`);

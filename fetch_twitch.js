@@ -7,7 +7,7 @@ async function collect({ streamers, clientId, clientSecret, now, request = reque
   if (!clientId || !clientSecret) throw new Error('TWITCH_CLIENT_ID and TWITCH_CLIENT_SECRET are required');
   if (!Array.isArray(streamers)) throw new Error('Invalid Twitch streamer list');
   const auth = await request('https://id.twitch.tv/oauth2/token', {
-    method: 'POST', body: new URLSearchParams({ client_id: clientId, client_secret: clientSecret, grant_type: 'client_credentials' })
+    method: 'POST', headers: { 'Content-Type': 'application/x-www-form-urlencoded' }, body: new URLSearchParams({ client_id: clientId, client_secret: clientSecret, grant_type: 'client_credentials' })
   });
   if (typeof auth.access_token !== 'string' || !auth.access_token) throw new Error('Missing Twitch access token');
   const api = async (endpoint, params) => request(`https://api.twitch.tv/helix/${endpoint}?${new URLSearchParams(params)}`, {
@@ -64,5 +64,5 @@ async function main({ directory = path.join(__dirname, 'data'), env = process.en
   console.log(`Twitch: saved ${data.length} items`);
 }
 
-if (require.main === module) main().catch(error => { console.error(error.message); process.exitCode = 1; });
+if (require.main === module) main().catch(error => { console.error(error.message, error.endpoint || ''); process.exitCode = 1; });
 module.exports = { collect, main };

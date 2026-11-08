@@ -1,0 +1,16 @@
+# Also protect the public surface if the legacy branch Pages build runs.
+exclude:
+  - README.md
+  - package.json
+  - package-lock.json
+  - node_modules
+  - lib
+  - scripts
+  - tests
+  - fetch_youtube.js
+  - fetch_twitch.js
+  - data/youtube_cache.json
+  - data/youtube_streamers.json
+  - data/twitch_streamers.json
+  - data/cfg_a.json
+  - data/cfg_b.json

@@ -147,5 +147,5 @@ async function main({ directory = path.join(__dirname, 'data'), env = process.en
   console.log(`YouTube: saved ${result.data.length} items; ${Object.keys(result.cache.__unavailable__).length} unavailable channels (retry daily)`);
 }
 
-if (require.main === module) main().catch(error => { console.error(error.message); process.exitCode = 1; });
+if (require.main === module) main().catch(error => { console.error(error.message, error.endpoint || ''); process.exitCode = 1; });
 module.exports = { collect, main };

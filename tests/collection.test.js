@@ -191,3 +191,12 @@ test('missing uploads playlist still allows upcoming discovery; auth errors rema
   assert.ok(calls.some(x => x.endsWith('/search')));
   await assert.rejects(youtube.collect({ ...input, request: async () => { throw Error('API HTTP 403'); } }), /403/);
 });
+
+test('HTTP diagnostics contain endpoint but never credentials or query parameters', async () => {
+  await assert.rejects(requestJson('https://example.test/oauth2/token?client_secret=private', {}, async () => ({ ok: false, status: 403 })), error => {
+    assert.equal(error.message, 'API HTTP 403');
+    assert.equal(error.endpoint, 'https://example.test/oauth2/token');
+    assert.equal(JSON.stringify(error).includes('private'), false);
+    return true;
+  });
+});

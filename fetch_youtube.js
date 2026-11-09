@@ -1,7 +1,7 @@
 'use strict';
 
 const path = require('node:path');
-const { requestJson, arrayField, readJson, dateWindow, saveResult } = require('./lib/collection');
+const { requestJson, youtubeList, youtubeDiagnostics, arrayField, readJson, dateWindow, saveResult } = require('./lib/collection');
 
 function videoId(item) {
   if (item.videoId) return item.videoId;
@@ -20,7 +20,10 @@ async function collect({ streamers, existing, cache, apiKey, now, request = requ
   const api = async (endpoint, params) => {
     const url = new URL(`https://www.googleapis.com/youtube/v3/${endpoint}`);
     url.search = new URLSearchParams({ ...params, key: apiKey }).toString();
-    return request(url.toString());
+    const response = await request(url.toString());
+    const result = youtubeList(response, endpoint);
+    if (result !== response) console.log('YouTube empty list:', JSON.stringify(youtubeDiagnostics(response, endpoint)));
+    return result;
   };
 
   // Uploads playlists are cheap to poll; do not use search.list for every channel.
@@ -154,5 +157,5 @@ async function main({ directory = path.join(__dirname, 'data'), env = process.en
   console.log(`YouTube: saved ${result.data.length} items; ${Object.keys(result.cache.__unavailable__).length} unavailable channels (retry daily)`);
 }
 
-if (require.main === module) main().catch(error => { console.error(error.message, error.endpoint || ''); process.exitCode = 1; });
+if (require.main === module) main().catch(error => { console.error(error.message, error.diagnostics ? JSON.stringify(error.diagnostics) : ''); process.exitCode = 1; });
 module.exports = { collect, main };

@@ -9,7 +9,7 @@
     ]
   },
   "vars": {
-    "ENABLED": "false",
+    "ENABLED": "true",
     "REPOSITORY": "jigjpwiki/jigjpwiki.github.io",
     "WORKFLOW": "update-streams.yml",
     "INTERVAL_MINUTES": "15",

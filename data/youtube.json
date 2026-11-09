@@ -1123,7 +1123,7 @@
     "date": "2026-11-09T03:31:20.000Z",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/273TzLlLek8/mqdefault.jpg?v=6af13e43",
+    "thumbnail": "https://i.ytimg.com/vi/273TzLlLek8/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/dPJHngNTeEfD_K0Mus141-We4xIuAhttm2pgEBl3VdGXqWvxGfy5mJfDMDbBmwI6UGc17dXb-g=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=273TzLlLek8"
   },
@@ -1135,7 +1135,7 @@
     "date": "2026-11-09T03:58:41.000Z",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/OwOwPAcETQU/mqdefault.jpg?v=6af13a81",
+    "thumbnail": "https://i.ytimg.com/vi/OwOwPAcETQU/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/traR_yWe-AOGyM2wjo8h2FJO9JWBcbjfrL13X-umeD6BtNPopSZ2Q3YmdJq_5K9gWgHf_j64iQ=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=OwOwPAcETQU"
   },
@@ -1279,7 +1279,7 @@
     "date": "2026-11-09T10:00:35.000Z",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/EGcF4utFvp4/mqdefault.jpg?v=6af18180",
+    "thumbnail": "https://i.ytimg.com/vi/EGcF4utFvp4/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/K9NG8yMDYt1GGoQjhc9c-XEBm1PxGVkEhIQxos6ODhB_pk5HpUvETjUOe5LLkzzJ3biot_nWwQ=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=EGcF4utFvp4"
   },
@@ -1289,7 +1289,7 @@
     "youtubeid": "UC5bCRde8xRrNS7s6GjCNCyQ",
     "title": "【#パレットタウン】ときわさ！今日もやってやりましょ！Day9【変幻リメ】",
     "date": "2026-11-09T10:15:35.000Z",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/hwezJZFlcjQ/mqdefault.jpg?v=6af19ccf",
     "channelIcon": "https://yt3.ggpht.com/4hssn4EXW2lORXRfiuYTjmYfnlZoQ2h72sdEompqX7GQwAKCsBx7eL0joCFSook1rfCKIcpykg=s240-c-k-c0x00ffffff-no-rj",
@@ -1409,7 +1409,7 @@
     "youtubeid": "UC8zjZBqGnx_j55ZJzluhW8A",
     "title": "【睡眠導入ASMR】おっとり癒しボイスでささやき・耳かき#あんにんたいむ #175【パレデミア学園/香桜あんにん/＃新人VTuber】",
     "date": "2026-11-09T14:03:06.000Z",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/ZW5kvof31hM/mqdefault.jpg?v=6af1d1dd",
     "channelIcon": "https://yt3.ggpht.com/JRXqD91MsPhrWJ3aAvhpK919pr-WhzNdFUbaFPe-t6CSCnNPLrd1Z74jKYTCiJwp62BaAvrpUQ=s240-c-k-c0x00ffffff-no-rj",
@@ -1450,6 +1450,42 @@
     "thumbnail": "https://i.ytimg.com/vi/X74U0ScBVEs/mqdefault.jpg?v=6af1ef9b",
     "channelIcon": "https://yt3.ggpht.com/HS-52_p7fIqMPokM5Wq_16ALyGWaJMB31ChyEb02uLUl-GpABw-FVtvMCQrkLrJ4i1xrmRS4Ug=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=X74U0ScBVEs"
+  },
+  {
+    "videoId": "_Z2oa4Ltxfc",
+    "name": "鈴木沙透",
+    "youtubeid": "UCj5nRzNFXZn9GRhITRkKElA",
+    "title": "【#歌枠】労働はごみです【鈴木沙透/パレデミア学園】",
+    "date": "2026-11-09T17:31:54.000Z",
+    "status": "archive",
+    "type": "video",
+    "thumbnail": "https://i.ytimg.com/vi/_Z2oa4Ltxfc/mqdefault.jpg?v=6af2038a",
+    "channelIcon": "https://yt3.ggpht.com/HS-52_p7fIqMPokM5Wq_16ALyGWaJMB31ChyEb02uLUl-GpABw-FVtvMCQrkLrJ4i1xrmRS4Ug=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=_Z2oa4Ltxfc"
+  },
+  {
+    "videoId": "f7J2aLXWrNk",
+    "name": "香桜あんにん",
+    "youtubeid": "UC8zjZBqGnx_j55ZJzluhW8A",
+    "title": "【睡眠導入ASMR】おっとり癒しボイスでささやき・耳かき#あんにんたいむ #175【パレデミア学園/香桜あんにん/＃新人VTuber】",
+    "date": "2026-11-09T18:01:16.000Z",
+    "status": "archive",
+    "type": "video",
+    "thumbnail": "https://i.ytimg.com/vi/f7J2aLXWrNk/mqdefault.jpg?v=6af20a6c",
+    "channelIcon": "https://yt3.ggpht.com/JRXqD91MsPhrWJ3aAvhpK919pr-WhzNdFUbaFPe-t6CSCnNPLrd1Z74jKYTCiJwp62BaAvrpUQ=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=f7J2aLXWrNk"
+  },
+  {
+    "videoId": "w0eLfPO_8BY",
+    "name": "夜雨ねむる",
+    "youtubeid": "UC1hxdM37vjjqr-IfZuDn1iw",
+    "title": "【雑談】深夜に枠が立つ。即ち眠れぬということ。【パレデミア学園】",
+    "date": "2026-11-09T18:38:54.000Z",
+    "status": "live",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/w0eLfPO_8BY/mqdefault.jpg?v=6af210a1",
+    "channelIcon": "https://yt3.ggpht.com/1if2rdJdkKHQBsQt5RZ4twlSmWQPwGGt0mxNiloT9Ee7L8caGbGaIVy3HnJdXX-BUhHUeBAo-xY=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=w0eLfPO_8BY"
   },
   {
     "videoId": "2dXAw10Eso8",
@@ -1546,6 +1582,18 @@
     "thumbnail": "https://i.ytimg.com/vi/X-UTKHv1Ajk/mqdefault.jpg?v=6af1814d",
     "channelIcon": "https://yt3.ggpht.com/VB97J8AMHex_rkfd6hDhfiGhhVvrL-NNkseP2mMYSWh75sxA_oXctmxK5tV4FYgkM17RUAx6GQ=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=X-UTKHv1Ajk"
+  },
+  {
+    "videoId": "0Ef7h5Vjyp0",
+    "name": "香鳴ハノン",
+    "youtubeid": "UCay6Y3oEoiC6ZEE2G0UZu_A",
+    "title": "夢結いレター - 香鳴ハノン【Dance Practice】",
+    "date": "2026-11-10T12:30:00.000Z",
+    "status": "upcoming",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/0Ef7h5Vjyp0/mqdefault.jpg",
+    "channelIcon": "https://yt3.ggpht.com/qvbeb9E-gYc822fxxzi6Ug5QyjhqZAWbUskHANcwDWP5W8iTsK3LcQJnjS4CVBuFJ6fONsM9F7M=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=0Ef7h5Vjyp0"
   },
   {
     "videoId": "rdo-xOXoRVs",

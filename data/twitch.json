@@ -2,19 +2,6 @@
   {
     "name": "なかもとおまち",
     "twitchid": "41futon",
-    "videoId": "2920875098",
-    "streamId": "316744392819",
-    "title": "今act初スト６、リハビリ",
-    "date": "2026-11-06T04:21:02.000Z",
-    "status": "archive",
-    "type": "stream",
-    "url": "https://www.twitch.tv/videos/2920875098",
-    "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/1405880b-e945-4720-98c9-6a08c6400cae-profile_image-300x300.png",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/15c63564df3bcf96e4dd_41futon_316744392819_1793938857//thumb/thumb0-320x180.jpg"
-  },
-  {
-    "name": "なかもとおまち",
-    "twitchid": "41futon",
     "videoId": "2922057551",
     "streamId": "316750775667",
     "title": "年内にMR1800いくの目標",
@@ -28,25 +15,39 @@
   {
     "name": "銘兎目あう",
     "twitchid": "Metome_Au",
+    "videoId": "2923970316",
     "streamId": "316689722481",
     "title": "【スト6】1544MR～Mケン🥋ハイマスいけるかなっ･･･!!✊🔥",
-    "date": "2026-11-09T12:00:14.000Z",
-    "status": "live",
+    "date": "2026-11-09T12:00:19.000Z",
+    "status": "archive",
     "type": "stream",
-    "url": "https://www.twitch.tv/Metome_Au",
+    "url": "https://www.twitch.tv/videos/2923970316",
     "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/6eea4ef4-a33b-4c66-9378-ad3aa84b1187-profile_image-300x300.png",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_Metome_Au-320x180.jpg"
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/e34fbb5c82c38d0701b4_metome_au_316689722481_1794225614//thumb/thumb0-320x180.jpg"
   },
   {
     "name": "火乃晴るい",
     "twitchid": "hinoha_rui",
+    "videoId": "2923978255",
     "streamId": "316760409715",
     "title": "【 #crasylife 】ひっさしぶりのメンバーでコラボするよ🌟",
-    "date": "2026-11-09T12:16:05.000Z",
+    "date": "2026-11-09T12:16:10.000Z",
+    "status": "archive",
+    "type": "stream",
+    "url": "https://www.twitch.tv/videos/2923978255",
+    "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/9e02effe-cf25-4ba0-9fe7-da457d4e8c87-profile_image-300x300.png",
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/119e8746d3a5cb620e0d_hinoha_rui_316760409715_1794226565//thumb/thumb0-320x180.jpg"
+  },
+  {
+    "name": "なかもとおまち",
+    "twitchid": "41futon",
+    "streamId": "316690353265",
+    "title": "今日のBlazみてジェイミーやらないやついる？！いねえよなあ！？",
+    "date": "2026-11-09T13:53:06.000Z",
     "status": "live",
     "type": "stream",
-    "url": "https://www.twitch.tv/hinoha_rui",
-    "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/9e02effe-cf25-4ba0-9fe7-da457d4e8c87-profile_image-300x300.png",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_hinoha_rui-320x180.jpg"
+    "url": "https://www.twitch.tv/41futon",
+    "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/1405880b-e945-4720-98c9-6a08c6400cae-profile_image-300x300.png",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_41futon-320x180.jpg"
   }
 ]

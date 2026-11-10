@@ -337,11 +337,11 @@
     "UC0H7dRRqhfOifbYQ2TURdAg": "2026-11-10T16:38:09.096Z",
     "UChccV6U0Tkx9de4YjXbEelw": "2026-11-10T16:38:09.096Z",
     "UC0O_8Ssx5exycwGvuF5S6_Q": "2026-11-10T16:38:09.096Z",
-    "UCz339ZwPv-i_PaBi_FVCF6w": "2026-11-08T14:56:16.798Z",
-    "UCUd4wJjvPQflbLnsk_YHleA": "2026-11-08T14:56:16.798Z",
-    "UCIw8aQVRBwi72yOrPLgkbRQ": "2026-11-08T14:56:16.798Z",
-    "UCj5nRzNFXZn9GRhITRkKElA": "2026-11-08T14:56:16.798Z",
-    "UCrB-SfrqB5ChY8aAT99grXw": "2026-11-08T14:56:16.798Z",
+    "UCz339ZwPv-i_PaBi_FVCF6w": "2026-11-10T16:39:05.379Z",
+    "UCUd4wJjvPQflbLnsk_YHleA": "2026-11-10T16:39:05.379Z",
+    "UCIw8aQVRBwi72yOrPLgkbRQ": "2026-11-10T16:39:05.379Z",
+    "UCj5nRzNFXZn9GRhITRkKElA": "2026-11-10T16:39:05.379Z",
+    "UCrB-SfrqB5ChY8aAT99grXw": "2026-11-10T16:39:05.379Z",
     "UCttSjPiwPYpiPuCrgxK7c1g": "2026-11-08T15:20:17.168Z",
     "UCPgg_A08ksSYP-VivJGniRw": "2026-11-08T15:20:17.168Z",
     "UCwxQdxFJW67WGv-s5_z030w": "2026-11-08T15:20:17.168Z",
@@ -407,9 +407,9 @@
   },
   "__searchBudget__": {
     "day": "2026-11-10",
-    "used": 30
+    "used": 35
   },
   "__upcomingCursor__": {},
-  "__lastDiscovery__": "2026-11-10T16:38:09.096Z",
-  "__lastStatusCheck__": "2026-11-10T16:38:09.096Z"
+  "__lastDiscovery__": "2026-11-10T16:39:05.379Z",
+  "__lastStatusCheck__": "2026-11-10T16:39:05.379Z"
 }

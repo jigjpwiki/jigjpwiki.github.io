@@ -1471,7 +1471,7 @@
     "date": "2026-11-09T21:31:11.000Z",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/2dXAw10Eso8/mqdefault.jpg?v=6af1c9ac",
+    "thumbnail": "https://i.ytimg.com/vi/2dXAw10Eso8/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/Iqa8kv9Rtxo6WwJDofayPUFNXpzczylLfnLo7PZFqtgBos31fl5FH1bEldVwBn04oSSbmN8D=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=2dXAw10Eso8"
   },
@@ -1685,7 +1685,7 @@
     "youtubeid": "UC2X_mAVGw8e3N9JQZZDVBfQ",
     "title": "【#低音女子】ひっそりぶち切れ初心者の森。《#パレデミア学園》#lol  #新人VTuber",
     "date": "2026-11-10T07:40:44.000Z",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/YKnN3GfinSs/mqdefault.jpg?v=6af2c7a7",
     "channelIcon": "https://yt3.ggpht.com/Z7PlAWhweuycNXNXoQ6etyDTkduySM-Kqy8kQW-AD19JuRdxT3HSdIxogPw3GPD5NHw_vZlf=s240-c-k-c0x00ffffff-no-rj",
@@ -1704,12 +1704,36 @@
     "url": "https://www.youtube.com/watch?v=rQ4roZpybKY"
   },
   {
+    "videoId": "lbWd0yq04zA",
+    "name": "夜雨ねむる",
+    "youtubeid": "UC1hxdM37vjjqr-IfZuDn1iw",
+    "title": "【雑談】深夜に枠が立つ。即ち眠れぬということ。【パレデミア学園】",
+    "date": "2026-11-10T09:26:21.000Z",
+    "status": "archive",
+    "type": "video",
+    "thumbnail": "https://i.ytimg.com/vi/lbWd0yq04zA/mqdefault.jpg?v=6af2e33d",
+    "channelIcon": "https://yt3.ggpht.com/1if2rdJdkKHQBsQt5RZ4twlSmWQPwGGt0mxNiloT9Ee7L8caGbGaIVy3HnJdXX-BUhHUeBAo-xY=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=lbWd0yq04zA"
+  },
+  {
+    "videoId": "WF_LKRgIh4M",
+    "name": "香鳴ハノン",
+    "youtubeid": "UCay6Y3oEoiC6ZEE2G0UZu_A",
+    "title": "【Vアイドルが】『好きish』踊ってみた #AKB48 #好きish #香鳴ハノン #パレプロ",
+    "date": "2026-11-10T10:44:12.000Z",
+    "status": "archive",
+    "type": "video",
+    "thumbnail": "https://i.ytimg.com/vi/WF_LKRgIh4M/mqdefault.jpg",
+    "channelIcon": "https://yt3.ggpht.com/qvbeb9E-gYc822fxxzi6Ug5QyjhqZAWbUskHANcwDWP5W8iTsK3LcQJnjS4CVBuFJ6fONsM9F7M=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=WF_LKRgIh4M"
+  },
+  {
     "videoId": "0H8IXBQeVQs",
     "name": "変幻リメ",
     "youtubeid": "UC5bCRde8xRrNS7s6GjCNCyQ",
     "title": "【#パレットタウン】大型！やりますか！？？Day10【変幻リメ】",
-    "date": "2026-11-10T10:15:00.000Z",
-    "status": "upcoming",
+    "date": "2026-11-10T10:49:52.000Z",
+    "status": "live",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/0H8IXBQeVQs/mqdefault.jpg?v=6af278c2",
     "channelIcon": "https://yt3.ggpht.com/4hssn4EXW2lORXRfiuYTjmYfnlZoQ2h72sdEompqX7GQwAKCsBx7eL0joCFSook1rfCKIcpykg=s240-c-k-c0x00ffffff-no-rj",
@@ -1752,6 +1776,30 @@
     "url": "https://www.youtube.com/watch?v=lZ81DnUJYR0"
   },
   {
+    "videoId": "gAt8nd1pJkA",
+    "name": "秋桜しゅお",
+    "youtubeid": "UCPjtwOeRQV5EFkCwUycZsgw",
+    "title": "【のんびりおしゃべり#歌枠配信 】#初見歓迎 🧡病みあがりしゅおちゃんののんびりおうた🧡【秋桜しゅお/登龍門BOX】#歌枠配信 #karaoke  #vtuber #vsinger  #懐メロ",
+    "date": "2026-11-10T11:00:00.000Z",
+    "status": "upcoming",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/gAt8nd1pJkA/mqdefault.jpg?v=6af2f576",
+    "channelIcon": "https://yt3.ggpht.com/u5rqPd8D8vLQReEaGmA0CA5qZc2FZ2RUZs2610mdwRbAQeJblw6pjRYLfqjT5__bkDMyM5Ky_8w=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=gAt8nd1pJkA"
+  },
+  {
+    "videoId": "wYQCT3B78Jg",
+    "name": "牡丹雪",
+    "youtubeid": "UCl-qrfygvCjyA_lMR5lJzig",
+    "title": "【ネタバレあり/ #クロノクロス 】やばい全然記憶にない！何とか攻略したいぞ古龍の砦！【 牡丹雪 / #パレデミア学園 】#牡丹の雪宿り",
+    "date": "2026-11-10T11:30:00.000Z",
+    "status": "upcoming",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/wYQCT3B78Jg/mqdefault.jpg?v=6af2edcd",
+    "channelIcon": "https://yt3.ggpht.com/K9NG8yMDYt1GGoQjhc9c-XEBm1PxGVkEhIQxos6ODhB_pk5HpUvETjUOe5LLkzzJ3biot_nWwQ=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=wYQCT3B78Jg"
+  },
+  {
     "videoId": "X-UTKHv1Ajk",
     "name": "銘兎目あう",
     "youtubeid": "UCpr-9ssUUgSb0EpDA8bRuTA",
@@ -1774,6 +1822,30 @@
     "thumbnail": "https://i.ytimg.com/vi/U6pwwyz10Vk/mqdefault.jpg?v=6af2ab90",
     "channelIcon": "https://yt3.ggpht.com/CH5JMWVQZ_RtloaXoj6W-yXjo9x8UxXSBG_vMyDnfk7M2QTOApVE1zOesu_aDrSAqvDbGrUyxs0=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=U6pwwyz10Vk"
+  },
+  {
+    "videoId": "MmESQHMKfI4",
+    "name": "夜雨ねむる",
+    "youtubeid": "UC1hxdM37vjjqr-IfZuDn1iw",
+    "title": "【1999トコヨビル】#1　人が消える遊園地があるらしい。【夜雨ねむる】",
+    "date": "2026-11-10T12:00:00.000Z",
+    "status": "upcoming",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/MmESQHMKfI4/mqdefault.jpg?v=6af2e468",
+    "channelIcon": "https://yt3.ggpht.com/1if2rdJdkKHQBsQt5RZ4twlSmWQPwGGt0mxNiloT9Ee7L8caGbGaIVy3HnJdXX-BUhHUeBAo-xY=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=MmESQHMKfI4"
+  },
+  {
+    "videoId": "AOhr_IlVQzI",
+    "name": "鬼多見アユム",
+    "youtubeid": "UCnrJK-sb3gSn3kRLkmpmzaw",
+    "title": "【#雑談 】ねこねこかまってねこにゃー【鬼多見アユム🍊👹】",
+    "date": "2026-11-10T12:05:00.000Z",
+    "status": "upcoming",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/AOhr_IlVQzI/mqdefault.jpg?v=6af2f779",
+    "channelIcon": "https://yt3.ggpht.com/MwFtS4Atq-VZX_p-mgdnGa95NMQAnQCz9boYbtkLbNvkbA_kgvqLMOMU3J34uFX1FCrvzyP3_g=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=AOhr_IlVQzI"
   },
   {
     "videoId": "8uT-zoO6hV8",
@@ -1810,6 +1882,18 @@
     "thumbnail": "https://i.ytimg.com/vi/lD_rJ4uZq6I/mqdefault.jpg?v=6af2bc6b",
     "channelIcon": "https://yt3.ggpht.com/_pGNq0-SYZiXjomeCnQRygINoA2PKkUJMbRtwuSIL83vUAny58me1QY1WttWypAIwJFrE5hh0w=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=lD_rJ4uZq6I"
+  },
+  {
+    "videoId": "EX5Pulytz90",
+    "name": "天透あわ",
+    "youtubeid": "UCXI0W_Os-BCIngpCb1YnOow",
+    "title": "【雑談】よわよわ回線と戦いながら雑談配信👊🏻❕寝落ちにどうぞ🐑💤【天透あわ/パレデミア学園】",
+    "date": "2026-11-10T14:00:00.000Z",
+    "status": "upcoming",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/EX5Pulytz90/mqdefault.jpg?v=6af2f478",
+    "channelIcon": "https://yt3.ggpht.com/Me8I_Op8OlIy8Vuj387_Hdi6gnrZ-qiY1yDDt1Q5yKMKA51ISagT76HE01gw8xbLcef0vpsPgoc=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=EX5Pulytz90"
   },
   {
     "videoId": "rdo-xOXoRVs",
@@ -1887,11 +1971,11 @@
     "videoId": "39HqX4SyL1Y",
     "name": "無月いお",
     "youtubeid": "UC2X_mAVGw8e3N9JQZZDVBfQ",
-    "title": "【#低音女子】段位戦で雀士３になりたい初心者《#パレデミア学園》#雑談#新人VTuber#麻雀#雀魂",
+    "title": "【#低音女子】雀士３になりたい初心者《#パレデミア学園》#雑談#新人VTuber#麻雀#雀魂",
     "date": "2026-11-11T12:30:00.000Z",
     "status": "upcoming",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/39HqX4SyL1Y/mqdefault.jpg?v=6af1ebb5",
+    "thumbnail": "https://i.ytimg.com/vi/39HqX4SyL1Y/mqdefault.jpg?v=6af2f31b",
     "channelIcon": "https://yt3.ggpht.com/Z7PlAWhweuycNXNXoQ6etyDTkduySM-Kqy8kQW-AD19JuRdxT3HSdIxogPw3GPD5NHw_vZlf=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=39HqX4SyL1Y"
   },

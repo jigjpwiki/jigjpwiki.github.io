@@ -1440,18 +1440,6 @@
     "url": "https://www.youtube.com/watch?v=_Z2oa4Ltxfc"
   },
   {
-    "videoId": "f7J2aLXWrNk",
-    "name": "香桜あんにん",
-    "youtubeid": "UC8zjZBqGnx_j55ZJzluhW8A",
-    "title": "【睡眠導入ASMR】おっとり癒しボイスでささやき・耳かき#あんにんたいむ #175【パレデミア学園/香桜あんにん/＃新人VTuber】",
-    "date": "2026-11-09T18:01:16.000Z",
-    "status": "archive",
-    "type": "video",
-    "thumbnail": "https://i.ytimg.com/vi/f7J2aLXWrNk/mqdefault.jpg?v=6af20a6c",
-    "channelIcon": "https://yt3.ggpht.com/JRXqD91MsPhrWJ3aAvhpK919pr-WhzNdFUbaFPe-t6CSCnNPLrd1Z74jKYTCiJwp62BaAvrpUQ=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=f7J2aLXWrNk"
-  },
-  {
     "videoId": "w0eLfPO_8BY",
     "name": "夜雨ねむる",
     "youtubeid": "UC1hxdM37vjjqr-IfZuDn1iw",
@@ -1841,7 +1829,7 @@
     "youtubeid": "UCpr-9ssUUgSb0EpDA8bRuTA",
     "title": "【0.0035%】妻の死に隠された真実とは･･･？深夜の病院を探索するよ🏥【#銘兎目あう/ぷろのゔぁ】 #VTuber #shorts",
     "date": "2026-11-10T11:59:33.000Z",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/X-UTKHv1Ajk/mqdefault.jpg?v=6af1814d",
     "channelIcon": "https://yt3.ggpht.com/VB97J8AMHex_rkfd6hDhfiGhhVvrL-NNkseP2mMYSWh75sxA_oXctmxK5tV4FYgkM17RUAx6GQ=s240-c-k-c0x00ffffff-no-rj",
@@ -1985,7 +1973,7 @@
     "youtubeid": "UCj5nRzNFXZn9GRhITRkKElA",
     "title": "【VALORANT】雑談しながら【鈴木沙透/パレデミア学園】",
     "date": "2026-11-10T13:03:34.000Z",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/KUCLMVCN15E/mqdefault.jpg?v=6af311e3",
     "channelIcon": "https://yt3.ggpht.com/HS-52_p7fIqMPokM5Wq_16ALyGWaJMB31ChyEb02uLUl-GpABw-FVtvMCQrkLrJ4i1xrmRS4Ug=s240-c-k-c0x00ffffff-no-rj",
@@ -2002,6 +1990,18 @@
     "thumbnail": "https://i.ytimg.com/vi/39HqX4SyL1Y/mqdefault.jpg?v=6af2f31b",
     "channelIcon": "https://yt3.ggpht.com/Z7PlAWhweuycNXNXoQ6etyDTkduySM-Kqy8kQW-AD19JuRdxT3HSdIxogPw3GPD5NHw_vZlf=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=39HqX4SyL1Y"
+  },
+  {
+    "videoId": "f7J2aLXWrNk",
+    "name": "香桜あんにん",
+    "youtubeid": "UC8zjZBqGnx_j55ZJzluhW8A",
+    "title": "【寝落ち枠】おっとり癒しボイスがお届けするほの暮しの庭あんにんたいむ #176【パレデミア学園/香桜あんにん/＃新人VTuber】",
+    "date": "2026-11-10T13:38:28.000Z",
+    "status": "live",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/f7J2aLXWrNk/mqdefault.jpg?v=6af31dcf",
+    "channelIcon": "https://yt3.ggpht.com/JRXqD91MsPhrWJ3aAvhpK919pr-WhzNdFUbaFPe-t6CSCnNPLrd1Z74jKYTCiJwp62BaAvrpUQ=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=f7J2aLXWrNk"
   },
   {
     "videoId": "EX5Pulytz90",

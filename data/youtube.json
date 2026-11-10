@@ -1399,7 +1399,7 @@
     "date": "2026-11-09T13:43:43.000Z",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/_AmT3UTYubg/mqdefault.jpg?v=6af1cd4b",
+    "thumbnail": "https://i.ytimg.com/vi/_AmT3UTYubg/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/HZPUrbSwGcllAbUtx6xggJ6lKfMfnAWDxWOCc01tpthiDipSqQP48TK5Jqz4GRzUdwKMUsxlsg=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=_AmT3UTYubg"
   },
@@ -1600,12 +1600,24 @@
     "name": "花晴りら",
     "youtubeid": "UCqcnlq8uJqnGml6hcIrMCZw",
     "title": "【 #雑談 / #昼活 】初見さん大歓迎！みんなで一緒にごはんを食べよう🍔✨【花晴りら/パレデミア学園 】#れりライブ #新人vtuber",
-    "date": "2026-11-10T03:00:00.000Z",
-    "status": "upcoming",
+    "date": "2026-11-10T02:59:02.000Z",
+    "status": "live",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/-g1tJSRv8eI/mqdefault.jpg?v=6af25d28",
     "channelIcon": "https://yt3.ggpht.com/CH5JMWVQZ_RtloaXoj6W-yXjo9x8UxXSBG_vMyDnfk7M2QTOApVE1zOesu_aDrSAqvDbGrUyxs0=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=-g1tJSRv8eI"
+  },
+  {
+    "videoId": "5MoUYStwwXA",
+    "name": "無月いお",
+    "youtubeid": "UC2X_mAVGw8e3N9JQZZDVBfQ",
+    "title": "【#低音女子】コーヒー飲みながら雑談しよ《#パレデミア学園》#雑談#新人VTuber#vtuber#縦型Live#初見さん大歓迎",
+    "date": "2026-11-10T03:02:17.000Z",
+    "status": "live",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/5MoUYStwwXA/mqdefault.jpg?v=6af1eb8d",
+    "channelIcon": "https://yt3.ggpht.com/Z7PlAWhweuycNXNXoQ6etyDTkduySM-Kqy8kQW-AD19JuRdxT3HSdIxogPw3GPD5NHw_vZlf=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=5MoUYStwwXA"
   },
   {
     "videoId": "YQjnMHHhbP0",
@@ -1618,6 +1630,18 @@
     "thumbnail": "https://i.ytimg.com/vi/YQjnMHHhbP0/mqdefault.jpg?v=6af261f7",
     "channelIcon": "https://yt3.ggpht.com/eW_Hug0M6zFk9QSbAmOUWLMSfzBlCHmes-8yAksvfUNzyLgY6TSsE_eW8ncfE4bHYZXKoTWxmQ=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=YQjnMHHhbP0"
+  },
+  {
+    "videoId": "FmB5WybhRHs",
+    "name": "緋雨柚",
+    "youtubeid": "UCrB-SfrqB5ChY8aAT99grXw",
+    "title": "【R.E.P.O.】NEW敵に会いたい！！！！！【パレデミア学園/緋雨柚】",
+    "date": "2026-11-10T03:30:25.000Z",
+    "status": "live",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/FmB5WybhRHs/mqdefault.jpg?v=6af28e9e",
+    "channelIcon": "https://yt3.ggpht.com/dPJHngNTeEfD_K0Mus141-We4xIuAhttm2pgEBl3VdGXqWvxGfy5mJfDMDbBmwI6UGc17dXb-g=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=FmB5WybhRHs"
   },
   {
     "videoId": "0H8IXBQeVQs",
@@ -1740,18 +1764,6 @@
     "url": "https://www.youtube.com/watch?v=1LQWrG_SUtY"
   },
   {
-    "videoId": "5MoUYStwwXA",
-    "name": "無月いお",
-    "youtubeid": "UC2X_mAVGw8e3N9JQZZDVBfQ",
-    "title": "【#低音女子】コーヒー飲みながら雑談しよ《#パレデミア学園》#雑談#新人VTuber#vtuber#縦型Live#初見さん大歓迎",
-    "date": "2026-11-11T03:00:00.000Z",
-    "status": "upcoming",
-    "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/5MoUYStwwXA/mqdefault.jpg?v=6af1eb8d",
-    "channelIcon": "https://yt3.ggpht.com/Z7PlAWhweuycNXNXoQ6etyDTkduySM-Kqy8kQW-AD19JuRdxT3HSdIxogPw3GPD5NHw_vZlf=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=5MoUYStwwXA"
-  },
-  {
     "videoId": "UFtjxwvC10Q",
     "name": "藤宮コトハ",
     "youtubeid": "UCGndc74kfWb_A-8hZBG534Q",
@@ -1798,6 +1810,18 @@
     "thumbnail": "https://i.ytimg.com/vi/i3SvyhIuBSE/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/Am7YiPKV2mx_EEJ8AGa3NXbU8sHgrB6sX4AnL75tKxTJq2MtA18t3NVK3S9-h6d3UKZHy7Bh=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=i3SvyhIuBSE"
+  },
+  {
+    "videoId": "AAvlGEBxCd0",
+    "name": "七海ロナ",
+    "youtubeid": "UCIaZylf5L9MsCMOJX3BdTEg",
+    "title": "#5【JUDGE EYES:死神の遺言 Remastered】僭越ながら完全初見でジャッジさせて頂きます！※ネタバレ注意【七海ロナ／パレプロ】",
+    "date": "2026-11-12T10:00:00.000Z",
+    "status": "upcoming",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/AAvlGEBxCd0/mqdefault.jpg?v=6af28274",
+    "channelIcon": "https://yt3.ggpht.com/86cM_4q1A56pIYgdKxh776hM0nropjiZIlmXbfroWHXQ-MjdGGsjLcL5hMDOFL-T2EJHmybT=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=AAvlGEBxCd0"
   },
   {
     "videoId": "35HWP0Nz7XE",

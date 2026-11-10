@@ -62,5 +62,17 @@
     "url": "https://www.twitch.tv/hinoha_rui",
     "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/9e02effe-cf25-4ba0-9fe7-da457d4e8c87-profile_image-300x300.png",
     "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_hinoha_rui-320x180.jpg"
+  },
+  {
+    "name": "なかもとおまち",
+    "twitchid": "41futon",
+    "streamId": "316704860274",
+    "title": "差し替えしれんしゅうちゅう！千里も道も一歩から♪",
+    "date": "2026-11-10T08:26:32.000Z",
+    "status": "live",
+    "type": "stream",
+    "url": "https://www.twitch.tv/41futon",
+    "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/1405880b-e945-4720-98c9-6a08c6400cae-profile_image-300x300.png",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_41futon-320x180.jpg"
   }
 ]

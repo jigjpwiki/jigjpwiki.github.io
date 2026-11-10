@@ -1099,7 +1099,7 @@
     "date": "2026-11-10T03:02:17.000Z",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/5MoUYStwwXA/mqdefault.jpg?v=6af1eb8d",
+    "thumbnail": "https://i.ytimg.com/vi/5MoUYStwwXA/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/Z7PlAWhweuycNXNXoQ6etyDTkduySM-Kqy8kQW-AD19JuRdxT3HSdIxogPw3GPD5NHw_vZlf=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=5MoUYStwwXA"
   },
@@ -1123,7 +1123,7 @@
     "date": "2026-11-10T04:24:18.000Z",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/YQjnMHHhbP0/mqdefault.jpg?v=6af261f7",
+    "thumbnail": "https://i.ytimg.com/vi/YQjnMHHhbP0/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/eW_Hug0M6zFk9QSbAmOUWLMSfzBlCHmes-8yAksvfUNzyLgY6TSsE_eW8ncfE4bHYZXKoTWxmQ=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=YQjnMHHhbP0"
   },
@@ -1253,7 +1253,7 @@
     "youtubeid": "UC5bCRde8xRrNS7s6GjCNCyQ",
     "title": "【#パレットタウン】大型！やりますか！？？Day10【変幻リメ】",
     "date": "2026-11-10T10:49:52.000Z",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/0H8IXBQeVQs/mqdefault.jpg?v=6af278c2",
     "channelIcon": "https://yt3.ggpht.com/4hssn4EXW2lORXRfiuYTjmYfnlZoQ2h72sdEompqX7GQwAKCsBx7eL0joCFSook1rfCKIcpykg=s240-c-k-c0x00ffffff-no-rj",
@@ -1529,7 +1529,7 @@
     "youtubeid": "UC8zjZBqGnx_j55ZJzluhW8A",
     "title": "【寝落ち枠】おっとり癒しボイスがお届けするほの暮しの庭あんにんたいむ #176【パレデミア学園/香桜あんにん/＃新人VTuber】",
     "date": "2026-11-10T13:38:28.000Z",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/f7J2aLXWrNk/mqdefault.jpg?v=6af31dcf",
     "channelIcon": "https://yt3.ggpht.com/JRXqD91MsPhrWJ3aAvhpK919pr-WhzNdFUbaFPe-t6CSCnNPLrd1Z74jKYTCiJwp62BaAvrpUQ=s240-c-k-c0x00ffffff-no-rj",
@@ -1582,6 +1582,18 @@
     "thumbnail": "https://i.ytimg.com/vi/cciBBtG7AOo/mqdefault.jpg?v=6af05435",
     "channelIcon": "https://yt3.ggpht.com/yQbh9vEEgS_UapoQhIxxoTSy13bDxlHYC-ncTcO9VIDBN2NvrLTAWeKGQ72CN2fhOOrHqYaFDA=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=cciBBtG7AOo"
+  },
+  {
+    "videoId": "rXJD7GL-lfc",
+    "name": "香桜あんにん",
+    "youtubeid": "UC8zjZBqGnx_j55ZJzluhW8A",
+    "title": "【寝落ち枠】おっとり癒しボイスがお届けするほの暮しの庭あんにんたいむ #176【パレデミア学園/香桜あんにん/＃新人VTuber】",
+    "date": "2026-11-10T18:06:43.000Z",
+    "status": "archive",
+    "type": "video",
+    "thumbnail": "https://i.ytimg.com/vi/rXJD7GL-lfc/mqdefault.jpg?v=6af35d33",
+    "channelIcon": "https://yt3.ggpht.com/JRXqD91MsPhrWJ3aAvhpK919pr-WhzNdFUbaFPe-t6CSCnNPLrd1Z74jKYTCiJwp62BaAvrpUQ=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=rXJD7GL-lfc"
   },
   {
     "videoId": "JffghFbia-4",
@@ -1762,6 +1774,18 @@
     "thumbnail": "https://i.ytimg.com/vi/35HWP0Nz7XE/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/Am7YiPKV2mx_EEJ8AGa3NXbU8sHgrB6sX4AnL75tKxTJq2MtA18t3NVK3S9-h6d3UKZHy7Bh=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=35HWP0Nz7XE"
+  },
+  {
+    "videoId": "vxIXyOl3R2A",
+    "name": "藤森ちとせ",
+    "youtubeid": "UCAhdxmsdngH4noySdpVAVWQ",
+    "title": "【新髪型お披露目 】ﾃﾞﾃﾞﾃﾞｰﾝ【#vtuber 】#ちとせらいぶ #パレデミア学園",
+    "date": "2026-11-13T09:00:00.000Z",
+    "status": "upcoming",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/vxIXyOl3R2A/mqdefault.jpg?v=6af349ef",
+    "channelIcon": "https://yt3.ggpht.com/traR_yWe-AOGyM2wjo8h2FJO9JWBcbjfrL13X-umeD6BtNPopSZ2Q3YmdJq_5K9gWgHf_j64iQ=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=vxIXyOl3R2A"
   },
   {
     "videoId": "cPlW8cxQJ90",

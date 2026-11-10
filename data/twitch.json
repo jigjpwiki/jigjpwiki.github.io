@@ -50,5 +50,17 @@
     "url": "https://www.twitch.tv/videos/2924026413",
     "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/1405880b-e945-4720-98c9-6a08c6400cae-profile_image-300x300.png",
     "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/69e6bfe627eda682cfd4_41futon_316690353265_1794232386//thumb/thumb0-320x180.jpg"
+  },
+  {
+    "name": "火乃晴るい",
+    "twitchid": "hinoha_rui",
+    "streamId": "316704388210",
+    "title": "【 #MW4 】キャンペーンをやていくぞっ！",
+    "date": "2026-11-10T05:34:50.000Z",
+    "status": "live",
+    "type": "stream",
+    "url": "https://www.twitch.tv/hinoha_rui",
+    "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/9e02effe-cf25-4ba0-9fe7-da457d4e8c87-profile_image-300x300.png",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_hinoha_rui-320x180.jpg"
   }
 ]

@@ -1603,9 +1603,21 @@
     "date": "2026-11-10T15:00:49.000Z",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/1DA7lLHO_w8/mqdefault.jpg?v=6af329ce",
+    "thumbnail": "https://i.ytimg.com/vi/1DA7lLHO_w8/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/BaxFKUrCc4gGKc1wwAHt4ebjk8C69NdTl3fMz9LoR5SUm_Tpvv2yixsbJhp8qsld6S0tdgup=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=1DA7lLHO_w8"
+  },
+  {
+    "videoId": "fiqaAauXwOQ",
+    "name": "七音うら",
+    "youtubeid": "UCv2IYO-4waCpHvn50SWWY2A",
+    "title": "【#雑談配信】冬眠しちゃうかもしれない日の雑談。【七音うら】",
+    "date": "2026-11-10T15:05:51.000Z",
+    "status": "archive",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/fiqaAauXwOQ/mqdefault.jpg?v=6af33184",
+    "channelIcon": "https://yt3.ggpht.com/62ws-Q3hPuNjc64T5sz41MNbFqxlI7Gefwnsrysdn2FNYqlxH5E5VifRCMtsFIUyZe5lsHJmxA=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=fiqaAauXwOQ"
   },
   {
     "videoId": "cciBBtG7AOo",

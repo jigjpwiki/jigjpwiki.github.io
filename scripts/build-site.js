@@ -1,6 +1,8 @@
 'use strict';
+const started = performance.now();
 const fs = require('node:fs');
 const path = require('node:path');
+const { writeManifest } = require('../lib/publication');
 const output = path.join(__dirname, '..', '_site');
 fs.rmSync(output, { recursive: true, force: true });
 fs.mkdirSync(output);
@@ -13,4 +15,7 @@ for (const name of ['youtube', 'twitch', 'tiktok', 'last_updated', 'update_info'
   fs.copyFileSync(path.join(__dirname, '..', 'data', `${name}.json`), path.join(output, 'data', `${name}.json`));
 }
 fs.writeFileSync(path.join(output, '.nojekyll'), '');
-console.log('Public site prepared in _site/');
+writeManifest(output);
+const elapsed = Math.round(performance.now() - started);
+console.log(`Public site prepared in _site/; build_ms=${elapsed}`);
+if (process.env.GITHUB_STEP_SUMMARY) fs.appendFileSync(process.env.GITHUB_STEP_SUMMARY, `Local site build: ${elapsed} ms (copy + manifest; excludes Pages queue/sync).\n`);

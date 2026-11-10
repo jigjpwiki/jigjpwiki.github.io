@@ -110,11 +110,6 @@ jobs:
           else
             git restore -- data/twitch.json
           fi
-          # Metadata alone must not create a commit or a Pages deployment.
-          publish=false
-          if ! git diff --cached --quiet -- data/youtube.json data/twitch.json; then publish=true; fi
-          if [ "${{ github.event_name }}" = push ]; then publish=true; fi
-          echo "publish=$publish" >> "$GITHUB_OUTPUT"
           if ! git diff --cached --quiet; then
             git add data/last_updated.json
             git config user.name github-actions[bot]
@@ -125,15 +120,20 @@ jobs:
           else
             git restore -- data/last_updated.json
           fi
+      # Always rebuild the committed snapshot; a previous deployment may have failed.
       - run: npm run build
-        if: steps.changes.outputs.publish == 'true'
+      - name: Measure public artifact
+        run: node scripts/report-artifact.js
+      - name: Check published content (retry unpublished snapshots)
+        id: publication
+        run: node scripts/check-publication.js
       - uses: actions/upload-pages-artifact@v3
-        if: steps.changes.outputs.publish == 'true'
+        if: steps.publication.outputs.publish == 'true'
         with:
           path: _site
       - name: Mark artifact ready
         id: artifact
-        if: steps.changes.outputs.publish == 'true'
+        if: steps.publication.outputs.publish == 'true'
         run: echo 'ready=true' >> "$GITHUB_OUTPUT"
       - name: Report collection failures
         if: steps.youtube.outcome == 'failure' || steps.twitch.outcome == 'failure'

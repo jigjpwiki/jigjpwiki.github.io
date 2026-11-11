@@ -1363,7 +1363,7 @@
     "date": "2026-11-11T06:15:20.000Z",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/vuPWZLJesZ8/mqdefault.jpg?v=6af4026d",
+    "thumbnail": "https://i.ytimg.com/vi/vuPWZLJesZ8/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/Me8I_Op8OlIy8Vuj387_Hdi6gnrZ-qiY1yDDt1Q5yKMKA51ISagT76HE01gw8xbLcef0vpsPgoc=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=vuPWZLJesZ8"
   },
@@ -1488,18 +1488,6 @@
     "url": "https://www.youtube.com/watch?v=UFtjxwvC10Q"
   },
   {
-    "videoId": "2FmR9nIAnqM",
-    "name": "夜雨ねむる",
-    "youtubeid": "UC1hxdM37vjjqr-IfZuDn1iw",
-    "title": "【雀魂】雀傑上がるまで終われません！【夜雨ねむる】",
-    "date": "2026-11-11T11:01:28.000Z",
-    "status": "archive",
-    "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/2FmR9nIAnqM/mqdefault.jpg",
-    "channelIcon": "https://yt3.ggpht.com/1if2rdJdkKHQBsQt5RZ4twlSmWQPwGGt0mxNiloT9Ee7L8caGbGaIVy3HnJdXX-BUhHUeBAo-xY=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=2FmR9nIAnqM"
-  },
-  {
     "videoId": "ONoGaFCglN4",
     "name": "夜雨ねむる",
     "youtubeid": "UC1hxdM37vjjqr-IfZuDn1iw",
@@ -1567,7 +1555,7 @@
     "date": "2026-11-11T12:10:54.000Z",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/pOwggi2fEDw/mqdefault.jpg?v=6af36ccf",
+    "thumbnail": "https://i.ytimg.com/vi/pOwggi2fEDw/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/4hssn4EXW2lORXRfiuYTjmYfnlZoQ2h72sdEompqX7GQwAKCsBx7eL0joCFSook1rfCKIcpykg=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=pOwggi2fEDw"
   },
@@ -1639,7 +1627,7 @@
     "date": "2026-11-11T13:15:15.000Z",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/V7rqKdplFNs/mqdefault.jpg?v=6af464eb",
+    "thumbnail": "https://i.ytimg.com/vi/V7rqKdplFNs/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/sYbvo_2nSCW162VEArIwu7v1B3bl159gmEnGgGei8I8drc4l7huPP7q6aWZ4AfXi5wTMACmGow=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=V7rqKdplFNs"
   },
@@ -1685,7 +1673,7 @@
     "youtubeid": "UCAhdxmsdngH4noySdpVAVWQ",
     "title": "【#Minecraft 】朝までネザーをいい感じにする配信⛏✨｜整地雑談配信💬作業用にも☺ROM歓迎🎉【#vtuber 】#ちとせらいぶ #パレデミア学園",
     "date": "2026-11-11T13:58:31.000Z",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/mj0oYl9C1Xw/mqdefault.jpg?v=6af4702c",
     "channelIcon": "https://yt3.ggpht.com/traR_yWe-AOGyM2wjo8h2FJO9JWBcbjfrL13X-umeD6BtNPopSZ2Q3YmdJq_5K9gWgHf_j64iQ=s240-c-k-c0x00ffffff-no-rj",
@@ -1702,6 +1690,18 @@
     "thumbnail": "https://i.ytimg.com/vi/_Ki41nwqlJY/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/-7v40HQCqllHpJD69LHIo2n5lUt-pZ-bLtfrKAXhZk9OF06nj4Lno3gwBvO8d1jBSl5dCCxAxQ=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=_Ki41nwqlJY"
+  },
+  {
+    "videoId": "69OEqQBCyF8",
+    "name": "露草なぎ",
+    "youtubeid": "UC9nhm1B-XhPaUO8W8oc4thQ",
+    "title": "【雑談】かぜひいた【露草なぎ/パレデミア学園】#初見さん大歓迎",
+    "date": "2026-11-11T14:44:29.000Z",
+    "status": "archive",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/69OEqQBCyF8/mqdefault.jpg?v=6af47d54",
+    "channelIcon": "https://yt3.ggpht.com/IDANEjX1oOsVujBMpgQ5ykYQTADCpm-3nTt5xRq57ANTyeS-Y4bs0PHI2ETag99WXNrjqOYBoA=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=69OEqQBCyF8"
   },
   {
     "videoId": "k3QI95iATEk",
@@ -1750,6 +1750,18 @@
     "thumbnail": "https://i.ytimg.com/vi/VozprIIosKk/mqdefault.jpg?v=6af4414b",
     "channelIcon": "https://yt3.ggpht.com/yQbh9vEEgS_UapoQhIxxoTSy13bDxlHYC-ncTcO9VIDBN2NvrLTAWeKGQ72CN2fhOOrHqYaFDA=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=VozprIIosKk"
+  },
+  {
+    "videoId": "z3IGuxhMQdQ",
+    "name": "夜雨ねむる",
+    "youtubeid": "UC1hxdM37vjjqr-IfZuDn1iw",
+    "title": "【雀魂】雀傑上がるまで終われません！【夜雨ねむる】",
+    "date": "2026-11-11T19:38:54.000Z",
+    "status": "archive",
+    "type": "video",
+    "thumbnail": "https://i.ytimg.com/vi/z3IGuxhMQdQ/mqdefault.jpg?v=6af4c44e",
+    "channelIcon": "https://yt3.ggpht.com/1if2rdJdkKHQBsQt5RZ4twlSmWQPwGGt0mxNiloT9Ee7L8caGbGaIVy3HnJdXX-BUhHUeBAo-xY=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=z3IGuxhMQdQ"
   },
   {
     "videoId": "HunBJn-2TEc",
@@ -1870,6 +1882,18 @@
     "thumbnail": "https://i.ytimg.com/vi/AAvlGEBxCd0/mqdefault.jpg?v=6af28274",
     "channelIcon": "https://yt3.ggpht.com/86cM_4q1A56pIYgdKxh776hM0nropjiZIlmXbfroWHXQ-MjdGGsjLcL5hMDOFL-T2EJHmybT=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=AAvlGEBxCd0"
+  },
+  {
+    "videoId": "n9tPYePPZC0",
+    "name": "変幻リメ",
+    "youtubeid": "UC5bCRde8xRrNS7s6GjCNCyQ",
+    "title": "【#パレットタウン】ときわさ！ジャストおおおおお！Day12【変幻リメ】",
+    "date": "2026-11-12T10:30:00.000Z",
+    "status": "upcoming",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/n9tPYePPZC0/mqdefault.jpg?v=6af4c7f8",
+    "channelIcon": "https://yt3.ggpht.com/4hssn4EXW2lORXRfiuYTjmYfnlZoQ2h72sdEompqX7GQwAKCsBx7eL0joCFSook1rfCKIcpykg=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=n9tPYePPZC0"
   },
   {
     "videoId": "kG8KooOGEWU",

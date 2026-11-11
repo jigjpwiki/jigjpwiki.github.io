@@ -1663,7 +1663,7 @@
     "date": "2026-11-10T22:00:12.000Z",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/Lsqj9fNXmGM/mqdefault.jpg?v=6ac72a1e",
+    "thumbnail": "https://i.ytimg.com/vi/Lsqj9fNXmGM/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/8I1SuqBXvb4dRY9bcXYc8xxSxL-L2CAe4YvBx2x3kOkyboXRq-G0rVo7pYflUmvo0UKIyxnlRA=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=Lsqj9fNXmGM"
   },
@@ -1810,6 +1810,30 @@
     "thumbnail": "https://i.ytimg.com/vi/TE0cEbDdMpg/mqdefault.jpg?v=6af3f124",
     "channelIcon": "https://yt3.ggpht.com/hl89JE2NAP5BVl-HV8uv5_W8GUXgnmJdhxXZv6En8GqzHMsdWHWRbxLsti6amESp6V-Uu0oZBmc=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=TE0cEbDdMpg"
+  },
+  {
+    "videoId": "vuPWZLJesZ8",
+    "name": "天透あわ",
+    "youtubeid": "UCXI0W_Os-BCIngpCb1YnOow",
+    "title": "【雑談】11月11日🍫おやつ食べながら雑談するよ〜🍪☕️✨️【天透あわ/パレデミア学園】",
+    "date": "2026-11-11T06:15:00.000Z",
+    "status": "upcoming",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/vuPWZLJesZ8/mqdefault.jpg?v=6af4026d",
+    "channelIcon": "https://yt3.ggpht.com/Me8I_Op8OlIy8Vuj387_Hdi6gnrZ-qiY1yDDt1Q5yKMKA51ISagT76HE01gw8xbLcef0vpsPgoc=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=vuPWZLJesZ8"
+  },
+  {
+    "videoId": "9TtZiy5alQ0",
+    "name": "火狐むい",
+    "youtubeid": "UCaolaxqG55OJhU8qwRHHtQg",
+    "title": "【 #雑談  】ポッキーの日！【 #パレデミア学園 】#新人vtuber #初見さん歓迎",
+    "date": "2026-11-11T09:00:00.000Z",
+    "status": "upcoming",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/9TtZiy5alQ0/mqdefault.jpg?v=6af3f7e6",
+    "channelIcon": "https://yt3.ggpht.com/hl89JE2NAP5BVl-HV8uv5_W8GUXgnmJdhxXZv6En8GqzHMsdWHWRbxLsti6amESp6V-Uu0oZBmc=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=9TtZiy5alQ0"
   },
   {
     "videoId": "pOwggi2fEDw",

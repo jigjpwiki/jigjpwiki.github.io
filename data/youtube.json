@@ -1363,7 +1363,7 @@
     "date": "2026-11-10T12:01:47.000Z",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/MmESQHMKfI4/mqdefault.jpg?v=6af2e468",
+    "thumbnail": "https://i.ytimg.com/vi/MmESQHMKfI4/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/1if2rdJdkKHQBsQt5RZ4twlSmWQPwGGt0mxNiloT9Ee7L8caGbGaIVy3HnJdXX-BUhHUeBAo-xY=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=MmESQHMKfI4"
   },
@@ -1387,7 +1387,7 @@
     "date": "2026-11-10T12:06:25.000Z",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/AOhr_IlVQzI/mqdefault.jpg?v=6af2f779",
+    "thumbnail": "https://i.ytimg.com/vi/AOhr_IlVQzI/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/MwFtS4Atq-VZX_p-mgdnGa95NMQAnQCz9boYbtkLbNvkbA_kgvqLMOMU3J34uFX1FCrvzyP3_g=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=AOhr_IlVQzI"
   },
@@ -1483,7 +1483,7 @@
     "date": "2026-11-10T13:03:34.000Z",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/KUCLMVCN15E/mqdefault.jpg?v=6af311e3",
+    "thumbnail": "https://i.ytimg.com/vi/KUCLMVCN15E/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/HS-52_p7fIqMPokM5Wq_16ALyGWaJMB31ChyEb02uLUl-GpABw-FVtvMCQrkLrJ4i1xrmRS4Ug=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=KUCLMVCN15E"
   },
@@ -1668,6 +1668,18 @@
     "url": "https://www.youtube.com/watch?v=1LQWrG_SUtY"
   },
   {
+    "videoId": "Lsqj9fNXmGM",
+    "name": "飛渡ココ",
+    "youtubeid": "UCMElh_FlHyzp_obVe-b3Qrg",
+    "title": "【マイクラ】なんか溝を掘る",
+    "date": "2026-11-10T22:00:12.000Z",
+    "status": "live",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/Lsqj9fNXmGM/mqdefault.jpg?v=6ac72a1e",
+    "channelIcon": "https://yt3.ggpht.com/8I1SuqBXvb4dRY9bcXYc8xxSxL-L2CAe4YvBx2x3kOkyboXRq-G0rVo7pYflUmvo0UKIyxnlRA=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=Lsqj9fNXmGM"
+  },
+  {
     "videoId": "oalu8ZMMIVE",
     "name": "無月いお",
     "youtubeid": "UC2X_mAVGw8e3N9JQZZDVBfQ",
@@ -1709,7 +1721,7 @@
     "youtubeid": "UC0H7dRRqhfOifbYQ2TURdAg",
     "title": "空手家Vtuberの朝活1111",
     "date": "2026-11-10T22:30:05.000Z",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/z2m09dts8zU/mqdefault.jpg?v=6af396be",
     "channelIcon": "https://yt3.ggpht.com/hBz75E3AEST1Dzv5vOTHAqoJfayd30WIWWQ3ZFLlWMHDsyZ_QD6ZVVUtLTKSizalT3APPtdpFGI=s240-c-k-c0x00ffffff-no-rj",

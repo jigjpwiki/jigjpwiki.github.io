@@ -1152,18 +1152,6 @@
     "url": "https://www.youtube.com/watch?v=GQ6H42bjzrQ"
   },
   {
-    "videoId": "TE0cEbDdMpg",
-    "name": "火狐むい",
-    "youtubeid": "UCaolaxqG55OJhU8qwRHHtQg",
-    "title": "【 #雑談  】初見さん10人と会いたい！【 #パレデミア学園 】#新人vtuber #初見さん歓迎",
-    "date": "2026-11-10T06:10:26.000Z",
-    "status": "archive",
-    "type": "video",
-    "thumbnail": "https://i.ytimg.com/vi/TE0cEbDdMpg/mqdefault.jpg?v=6af3f124",
-    "channelIcon": "https://yt3.ggpht.com/hl89JE2NAP5BVl-HV8uv5_W8GUXgnmJdhxXZv6En8GqzHMsdWHWRbxLsti6amESp6V-Uu0oZBmc=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=TE0cEbDdMpg"
-  },
-  {
     "videoId": "bpu2x4nNmA4",
     "name": "犬丸なでこ",
     "youtubeid": "UCdJmJxMfXrlnZabUkuss2EA",
@@ -1567,7 +1555,7 @@
     "date": "2026-11-10T14:40:40.000Z",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/AFrLGysXAT4/mqdefault.jpg?v=6af32a72",
+    "thumbnail": "https://i.ytimg.com/vi/AFrLGysXAT4/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/xqdNSKZCNQ6ekbqgjixeOR0aTymLfmP_ILAFQ4sBF7ln-ZWxQYkVjGBun2pF1PwVC6nmwi2KFxE=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=AFrLGysXAT4"
   },
@@ -1792,8 +1780,8 @@
     "name": "鬼多見アユム",
     "youtubeid": "UCnrJK-sb3gSn3kRLkmpmzaw",
     "title": "【PICK A BOO】なにやらゲームをやるぞおお！ｗ、つもりん、ちなさん、けんきさん、Ｐさん【鬼多見アユム👹🍊】",
-    "date": "2026-11-11T04:30:00.000Z",
-    "status": "upcoming",
+    "date": "2026-11-11T04:40:27.000Z",
+    "status": "live",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/4rzLKodgQ98/mqdefault.jpg?v=6af3eb6c",
     "channelIcon": "https://yt3.ggpht.com/MwFtS4Atq-VZX_p-mgdnGa95NMQAnQCz9boYbtkLbNvkbA_kgvqLMOMU3J34uFX1FCrvzyP3_g=s240-c-k-c0x00ffffff-no-rj",
@@ -1804,12 +1792,24 @@
     "name": "火狐むい",
     "youtubeid": "UCaolaxqG55OJhU8qwRHHtQg",
     "title": "【 #雑談  】初見さん10人と会いたい！【 #パレデミア学園 】#新人vtuber #初見さん歓迎",
-    "date": "2026-11-11T04:35:00.000Z",
-    "status": "upcoming",
+    "date": "2026-11-11T04:43:06.000Z",
+    "status": "live",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/ELom_cU3920/mqdefault.jpg?v=6af3f10c",
     "channelIcon": "https://yt3.ggpht.com/hl89JE2NAP5BVl-HV8uv5_W8GUXgnmJdhxXZv6En8GqzHMsdWHWRbxLsti6amESp6V-Uu0oZBmc=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=ELom_cU3920"
+  },
+  {
+    "videoId": "TE0cEbDdMpg",
+    "name": "火狐むい",
+    "youtubeid": "UCaolaxqG55OJhU8qwRHHtQg",
+    "title": "【 #雑談  】初見さん10人と会いたい！【 #パレデミア学園 】#新人vtuber #初見さん歓迎",
+    "date": "2026-11-11T04:43:20.000Z",
+    "status": "live",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/TE0cEbDdMpg/mqdefault.jpg?v=6af3f124",
+    "channelIcon": "https://yt3.ggpht.com/hl89JE2NAP5BVl-HV8uv5_W8GUXgnmJdhxXZv6En8GqzHMsdWHWRbxLsti6amESp6V-Uu0oZBmc=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=TE0cEbDdMpg"
   },
   {
     "videoId": "pOwggi2fEDw",

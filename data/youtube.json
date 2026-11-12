@@ -1711,7 +1711,7 @@
     "date": "2026-11-11T15:03:22.000Z",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/k3QI95iATEk/mqdefault.jpg?v=6af48312",
+    "thumbnail": "https://i.ytimg.com/vi/k3QI95iATEk/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/62ws-Q3hPuNjc64T5sz41MNbFqxlI7Gefwnsrysdn2FNYqlxH5E5VifRCMtsFIUyZe5lsHJmxA=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=k3QI95iATEk"
   },
@@ -1889,11 +1889,23 @@
     "youtubeid": "UCXI0W_Os-BCIngpCb1YnOow",
     "title": "【雑談】初見さん歓迎！お昼ご飯食べながら雑談🍚【天透あわ/パレデミア学園】",
     "date": "2026-11-12T03:15:23.000Z",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/OcnmgUG6sbs/mqdefault.jpg?v=6af528c1",
     "channelIcon": "https://yt3.ggpht.com/Me8I_Op8OlIy8Vuj387_Hdi6gnrZ-qiY1yDDt1Q5yKMKA51ISagT76HE01gw8xbLcef0vpsPgoc=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=OcnmgUG6sbs"
+  },
+  {
+    "videoId": "fRhNJmBybRo",
+    "name": "藤森ちとせ",
+    "youtubeid": "UCAhdxmsdngH4noySdpVAVWQ",
+    "title": "【#Minecraft 】今日もネザーをいい感じにしちゃいましょうね～🔥あとガストの涙も欲しいのもり｜整地雑談配信💬作業用にも☺ROM歓迎🎉【#vtuber 】#ちとせらいぶ #パレデミア学園",
+    "date": "2026-11-12T04:07:11.000Z",
+    "status": "live",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/fRhNJmBybRo/mqdefault.jpg?v=6af53b0e",
+    "channelIcon": "https://yt3.ggpht.com/traR_yWe-AOGyM2wjo8h2FJO9JWBcbjfrL13X-umeD6BtNPopSZ2Q3YmdJq_5K9gWgHf_j64iQ=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=fRhNJmBybRo"
   },
   {
     "videoId": "w7E-oj1HOfc",

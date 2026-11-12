@@ -1747,7 +1747,7 @@
     "date": "2026-11-11T17:20:29.000Z",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/VozprIIosKk/mqdefault.jpg?v=6af4414b",
+    "thumbnail": "https://i.ytimg.com/vi/VozprIIosKk/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/yQbh9vEEgS_UapoQhIxxoTSy13bDxlHYC-ncTcO9VIDBN2NvrLTAWeKGQ72CN2fhOOrHqYaFDA=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=VozprIIosKk"
   },
@@ -1901,11 +1901,35 @@
     "youtubeid": "UCAhdxmsdngH4noySdpVAVWQ",
     "title": "【#Minecraft 】今日もネザーをいい感じにしちゃいましょうね～🔥あとガストの涙も欲しいのもり｜整地雑談配信💬作業用にも☺ROM歓迎🎉【#vtuber 】#ちとせらいぶ #パレデミア学園",
     "date": "2026-11-12T04:07:11.000Z",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/fRhNJmBybRo/mqdefault.jpg?v=6af53b0e",
     "channelIcon": "https://yt3.ggpht.com/traR_yWe-AOGyM2wjo8h2FJO9JWBcbjfrL13X-umeD6BtNPopSZ2Q3YmdJq_5K9gWgHf_j64iQ=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=fRhNJmBybRo"
+  },
+  {
+    "videoId": "ZWDArdvJPN4",
+    "name": "犬丸なでこ",
+    "youtubeid": "UCdJmJxMfXrlnZabUkuss2EA",
+    "title": "「お水飲むよ♡」って言って❗️😡💦　#vtuber #切り抜き #雑談",
+    "date": "2026-11-12T08:13:49.000Z",
+    "status": "archive",
+    "type": "video",
+    "thumbnail": "https://i.ytimg.com/vi/ZWDArdvJPN4/mqdefault.jpg",
+    "channelIcon": "https://yt3.ggpht.com/HZPUrbSwGcllAbUtx6xggJ6lKfMfnAWDxWOCc01tpthiDipSqQP48TK5Jqz4GRzUdwKMUsxlsg=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=ZWDArdvJPN4"
+  },
+  {
+    "videoId": "8qpCtuQEDyQ",
+    "name": "桜堂ねる",
+    "youtubeid": "UC0H7dRRqhfOifbYQ2TURdAg",
+    "title": "空手家Vtuberの朝活1111",
+    "date": "2026-11-12T08:14:42.000Z",
+    "status": "archive",
+    "type": "video",
+    "thumbnail": "https://i.ytimg.com/vi/8qpCtuQEDyQ/mqdefault.jpg?v=6af57572",
+    "channelIcon": "https://yt3.ggpht.com/hBz75E3AEST1Dzv5vOTHAqoJfayd30WIWWQ3ZFLlWMHDsyZ_QD6ZVVUtLTKSizalT3APPtdpFGI=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=8qpCtuQEDyQ"
   },
   {
     "videoId": "w7E-oj1HOfc",
@@ -1918,6 +1942,18 @@
     "thumbnail": "https://i.ytimg.com/vi/w7E-oj1HOfc/mqdefault.jpg?v=6af1e67e",
     "channelIcon": "https://yt3.ggpht.com/iktv-39nC7NDASD1WeXms-DEuHuVqB5RhwTtdDe26w-BCvqf6yq3r_8zBiv2i2CfNXCK0uE8=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=w7E-oj1HOfc"
+  },
+  {
+    "videoId": "tncP2ltUEnQ",
+    "name": "藤森ちとせ",
+    "youtubeid": "UCAhdxmsdngH4noySdpVAVWQ",
+    "title": "【#repo  】ハロウィンレポドキドキですね～🎃✨｜久しぶりレポコラボ配信！【#vtuber 】#ちとせらいぶ #パレデミア学園",
+    "date": "2026-11-12T09:00:00.000Z",
+    "status": "upcoming",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/tncP2ltUEnQ/mqdefault.jpg?v=6af57407",
+    "channelIcon": "https://yt3.ggpht.com/traR_yWe-AOGyM2wjo8h2FJO9JWBcbjfrL13X-umeD6BtNPopSZ2Q3YmdJq_5K9gWgHf_j64iQ=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=tncP2ltUEnQ"
   },
   {
     "videoId": "AAvlGEBxCd0",

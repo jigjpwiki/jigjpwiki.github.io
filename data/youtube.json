@@ -1603,7 +1603,7 @@
     "date": "2026-11-12T10:31:23.000Z",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/AAvlGEBxCd0/mqdefault.jpg?v=6af28274",
+    "thumbnail": "https://i.ytimg.com/vi/AAvlGEBxCd0/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/86cM_4q1A56pIYgdKxh776hM0nropjiZIlmXbfroWHXQ-MjdGGsjLcL5hMDOFL-T2EJHmybT=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=AAvlGEBxCd0"
   },
@@ -1651,7 +1651,7 @@
     "date": "2026-11-12T12:00:54.000Z",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/ZziqSReV7c0/mqdefault.jpg?v=6af5a681",
+    "thumbnail": "https://i.ytimg.com/vi/ZziqSReV7c0/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/nMtec5z3KY5RUGCSbQENm9culC2VpB7Ate_dUueAINpAJdFK4wwe7Q6eH88QiMXqjImAleLI=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=ZziqSReV7c0"
   },
@@ -1853,7 +1853,7 @@
     "youtubeid": "UCrpdBoGpa6g2WEtRWsIlhDQ",
     "title": "【儚い/歌枠/雑談】寝落ちしちゃいなっ！【相栖るじゅ/パレデミア学園】",
     "date": "2026-11-12T17:32:35.000Z",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/118uzumjDFM/mqdefault.jpg?v=6af5f1c4",
     "channelIcon": "https://yt3.ggpht.com/yQbh9vEEgS_UapoQhIxxoTSy13bDxlHYC-ncTcO9VIDBN2NvrLTAWeKGQ72CN2fhOOrHqYaFDA=s240-c-k-c0x00ffffff-no-rj",
@@ -1978,6 +1978,18 @@
     "thumbnail": "https://i.ytimg.com/vi/cPlW8cxQJ90/mqdefault.jpg?v=6af25e1d",
     "channelIcon": "https://yt3.ggpht.com/av9H0_OxG16zI7tQKGwYEwhIZd1RXZQKGjkWfgHslvYRTV5aJBEInW2q0qDzb51lttFjkJ_pBw=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=cPlW8cxQJ90"
+  },
+  {
+    "videoId": "GQn4lReu_CU",
+    "name": "変幻リメ",
+    "youtubeid": "UC5bCRde8xRrNS7s6GjCNCyQ",
+    "title": "【#パレットタウン】大型大型っ！！！！！Day13【変幻リメ】",
+    "date": "2026-11-13T11:00:00.000Z",
+    "status": "upcoming",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/GQn4lReu_CU/mqdefault.jpg?v=6af6039f",
+    "channelIcon": "https://yt3.ggpht.com/4hssn4EXW2lORXRfiuYTjmYfnlZoQ2h72sdEompqX7GQwAKCsBx7eL0joCFSook1rfCKIcpykg=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=GQn4lReu_CU"
   },
   {
     "videoId": "_NvlM6U2X5Q",

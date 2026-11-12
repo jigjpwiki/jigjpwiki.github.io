@@ -1728,18 +1728,6 @@
     "url": "https://www.youtube.com/watch?v=VozprIIosKk"
   },
   {
-    "videoId": "z3IGuxhMQdQ",
-    "name": "夜雨ねむる",
-    "youtubeid": "UC1hxdM37vjjqr-IfZuDn1iw",
-    "title": "【雑談】すこし。【夜雨ねむる】",
-    "date": "2026-11-11T19:38:54.000Z",
-    "status": "archive",
-    "type": "video",
-    "thumbnail": "https://i.ytimg.com/vi/z3IGuxhMQdQ/mqdefault.jpg?v=6af5c7ef",
-    "channelIcon": "https://yt3.ggpht.com/1if2rdJdkKHQBsQt5RZ4twlSmWQPwGGt0mxNiloT9Ee7L8caGbGaIVy3HnJdXX-BUhHUeBAo-xY=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=z3IGuxhMQdQ"
-  },
-  {
     "videoId": "HunBJn-2TEc",
     "name": "桜庭羽奈",
     "youtubeid": "UCPgg_A08ksSYP-VivJGniRw",
@@ -2021,7 +2009,7 @@
     "youtubeid": "UCdJmJxMfXrlnZabUkuss2EA",
     "title": "【＃歌枠 ＃雑談】歌おう話そう♡(*^_^*)【パレデミア学園/犬丸なでこ】",
     "date": "2026-11-12T11:00:15.000Z",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/rezpcqV9n74/mqdefault.jpg?v=6af59a5f",
     "channelIcon": "https://yt3.ggpht.com/HZPUrbSwGcllAbUtx6xggJ6lKfMfnAWDxWOCc01tpthiDipSqQP48TK5Jqz4GRzUdwKMUsxlsg=s240-c-k-c0x00ffffff-no-rj",
@@ -2081,7 +2069,7 @@
     "youtubeid": "UC2X_mAVGw8e3N9JQZZDVBfQ",
     "title": "【#低音女子】焚火しつつ2700名様耐久するぞ《#パレデミア学園》#雑談#新人VTuber#寝落ち#焚火",
     "date": "2026-11-12T12:58:22.000Z",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/a6tG3StB_fI/mqdefault.jpg?v=6af5b7ce",
     "channelIcon": "https://yt3.ggpht.com/Z7PlAWhweuycNXNXoQ6etyDTkduySM-Kqy8kQW-AD19JuRdxT3HSdIxogPw3GPD5NHw_vZlf=s240-c-k-c0x00ffffff-no-rj",
@@ -2170,6 +2158,18 @@
     "thumbnail": "https://i.ytimg.com/vi/Gtj6VUcjVGM/mqdefault.jpg?v=6af5c799",
     "channelIcon": "https://yt3.ggpht.com/qvbeb9E-gYc822fxxzi6Ug5QyjhqZAWbUskHANcwDWP5W8iTsK3LcQJnjS4CVBuFJ6fONsM9F7M=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=Gtj6VUcjVGM"
+  },
+  {
+    "videoId": "z3IGuxhMQdQ",
+    "name": "夜雨ねむる",
+    "youtubeid": "UC1hxdM37vjjqr-IfZuDn1iw",
+    "title": "【雑談】すこし。【夜雨ねむる】",
+    "date": "2026-11-12T14:11:03.000Z",
+    "status": "live",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/z3IGuxhMQdQ/mqdefault.jpg?v=6af5c7ef",
+    "channelIcon": "https://yt3.ggpht.com/1if2rdJdkKHQBsQt5RZ4twlSmWQPwGGt0mxNiloT9Ee7L8caGbGaIVy3HnJdXX-BUhHUeBAo-xY=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=z3IGuxhMQdQ"
   },
   {
     "videoId": "T7aTJoO55Pk",

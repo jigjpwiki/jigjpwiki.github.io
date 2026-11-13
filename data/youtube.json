@@ -1459,7 +1459,7 @@
     "date": "2026-11-13T09:00:39.000Z",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/k7_rPjkIL5w/mqdefault.jpg?v=6af75715",
+    "thumbnail": "https://i.ytimg.com/vi/k7_rPjkIL5w/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/pM4ZefnBFJ2qlBEqknYCFHdW6dLH29KptwG0OYSu1-mAVAIy5M1IjwpMwC24-A_v07nluGGrlQ=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=k7_rPjkIL5w"
   },
@@ -1567,7 +1567,7 @@
     "date": "2026-11-13T11:00:33.000Z",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/bPiUhgTOas4/mqdefault.jpg?v=6af6ec46",
+    "thumbnail": "https://i.ytimg.com/vi/bPiUhgTOas4/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/HZPUrbSwGcllAbUtx6xggJ6lKfMfnAWDxWOCc01tpthiDipSqQP48TK5Jqz4GRzUdwKMUsxlsg=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=bPiUhgTOas4"
   },
@@ -1759,7 +1759,7 @@
     "date": "2026-11-13T13:41:29.000Z",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/NxJhNOYRwgw/mqdefault.jpg?v=6af7120a",
+    "thumbnail": "https://i.ytimg.com/vi/NxJhNOYRwgw/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/4t0lTung_X29I2abs2pm5ds33Xmo4umZzRJdmvSfMlI639aZhci-OjxB65nuoH447t3wS99z6N4=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=NxJhNOYRwgw"
   },
@@ -1920,6 +1920,18 @@
     "url": "https://www.youtube.com/watch?v=IvzkvYbIWYo"
   },
   {
+    "videoId": "QA5Ng08wtE4",
+    "name": "橙葉ぽん",
+    "youtubeid": "UC0aNUh8VfQwgqj0taB8MDpg",
+    "title": "【 ポケモンHGSS 】完全初見！！！人生初めてのポケモン...！ハートゴールドします！少しポケモン集め昼の部☀【橙葉ぽん/ぷろのゔぁ 】",
+    "date": "2026-11-14T05:00:00.000Z",
+    "status": "upcoming",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/QA5Ng08wtE4/mqdefault.jpg?v=6af7586c",
+    "channelIcon": "https://yt3.ggpht.com/av9H0_OxG16zI7tQKGwYEwhIZd1RXZQKGjkWfgHslvYRTV5aJBEInW2q0qDzb51lttFjkJ_pBw=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=QA5Ng08wtE4"
+  },
+  {
     "videoId": "-kR7Kqqy6Vs",
     "name": "天透あわ",
     "youtubeid": "UCXI0W_Os-BCIngpCb1YnOow",
@@ -1942,6 +1954,18 @@
     "thumbnail": "https://i.ytimg.com/vi/eBP7WdN-Epw/mqdefault.jpg?v=6af72753",
     "channelIcon": "https://yt3.ggpht.com/iktv-39nC7NDASD1WeXms-DEuHuVqB5RhwTtdDe26w-BCvqf6yq3r_8zBiv2i2CfNXCK0uE8=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=eBP7WdN-Epw"
+  },
+  {
+    "videoId": "2XgaJ22GD0w",
+    "name": "変幻リメ",
+    "youtubeid": "UC5bCRde8xRrNS7s6GjCNCyQ",
+    "title": "【#パレットタウン】カヨぺリコ作戦っ！！！！！Day14【変幻リメ】",
+    "date": "2026-11-14T10:30:00.000Z",
+    "status": "upcoming",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/2XgaJ22GD0w/mqdefault.jpg?v=6af76045",
+    "channelIcon": "https://yt3.ggpht.com/4hssn4EXW2lORXRfiuYTjmYfnlZoQ2h72sdEompqX7GQwAKCsBx7eL0joCFSook1rfCKIcpykg=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=2XgaJ22GD0w"
   },
   {
     "videoId": "PZCDfujBu44",

@@ -1483,7 +1483,7 @@
     "date": "2026-11-13T09:03:33.000Z",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/_WtoARAFlM8/mqdefault.jpg?v=6af6c61b",
+    "thumbnail": "https://i.ytimg.com/vi/_WtoARAFlM8/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/nMtec5z3KY5RUGCSbQENm9culC2VpB7Ate_dUueAINpAJdFK4wwe7Q6eH88QiMXqjImAleLI=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=_WtoARAFlM8"
   },
@@ -1531,7 +1531,7 @@
     "date": "2026-11-13T10:45:34.000Z",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/oNqd6oLgsf0/mqdefault.jpg?v=6af6d3c3",
+    "thumbnail": "https://i.ytimg.com/vi/oNqd6oLgsf0/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/86cM_4q1A56pIYgdKxh776hM0nropjiZIlmXbfroWHXQ-MjdGGsjLcL5hMDOFL-T2EJHmybT=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=oNqd6oLgsf0"
   },
@@ -1759,7 +1759,7 @@
     "date": "2026-11-13T13:41:29.000Z",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/NxJhNOYRwgw/mqdefault.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/NxJhNOYRwgw/mqdefault.jpg?v=6af7120a",
     "channelIcon": "https://yt3.ggpht.com/4t0lTung_X29I2abs2pm5ds33Xmo4umZzRJdmvSfMlI639aZhci-OjxB65nuoH447t3wS99z6N4=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=NxJhNOYRwgw"
   },
@@ -1884,28 +1884,28 @@
     "url": "https://www.youtube.com/watch?v=ENMDuHvZGaU"
   },
   {
-    "videoId": "5P1mI3AoYFE",
-    "name": "無月いお",
-    "youtubeid": "UC2X_mAVGw8e3N9JQZZDVBfQ",
-    "title": "【#低音女子】11/14 寝坊したくない朝枠《#パレデミア学園》#雑談#新人VTuber#朝活#朝食#初見さん大歓迎",
-    "date": "2026-11-13T22:00:00.000Z",
-    "status": "upcoming",
-    "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/5P1mI3AoYFE/mqdefault.jpg?v=6af7246b",
-    "channelIcon": "https://yt3.ggpht.com/Z7PlAWhweuycNXNXoQ6etyDTkduySM-Kqy8kQW-AD19JuRdxT3HSdIxogPw3GPD5NHw_vZlf=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=5P1mI3AoYFE"
-  },
-  {
     "videoId": "v1xyB5AAXUg",
     "name": "無月いお",
     "youtubeid": "UC2X_mAVGw8e3N9JQZZDVBfQ",
     "title": "【#低音女子】11/14 寝坊したくない朝枠《#パレデミア学園》#雑談#新人VTuber#朝活#朝食#初見さん大歓迎",
-    "date": "2026-11-13T22:00:00.000Z",
-    "status": "upcoming",
+    "date": "2026-11-13T22:19:02.000Z",
+    "status": "live",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/v1xyB5AAXUg/mqdefault.jpg?v=6af72449",
     "channelIcon": "https://yt3.ggpht.com/Z7PlAWhweuycNXNXoQ6etyDTkduySM-Kqy8kQW-AD19JuRdxT3HSdIxogPw3GPD5NHw_vZlf=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=v1xyB5AAXUg"
+  },
+  {
+    "videoId": "5P1mI3AoYFE",
+    "name": "無月いお",
+    "youtubeid": "UC2X_mAVGw8e3N9JQZZDVBfQ",
+    "title": "【#低音女子】11/14 寝坊したくない朝枠《#パレデミア学園》#雑談#新人VTuber#朝活#朝食#初見さん大歓迎",
+    "date": "2026-11-13T22:20:43.000Z",
+    "status": "live",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/5P1mI3AoYFE/mqdefault.jpg?v=6af7246b",
+    "channelIcon": "https://yt3.ggpht.com/Z7PlAWhweuycNXNXoQ6etyDTkduySM-Kqy8kQW-AD19JuRdxT3HSdIxogPw3GPD5NHw_vZlf=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=5P1mI3AoYFE"
   },
   {
     "videoId": "IvzkvYbIWYo",

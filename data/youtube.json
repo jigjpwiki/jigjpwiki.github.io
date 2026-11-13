@@ -1879,7 +1879,7 @@
     "date": "2026-11-12T21:30:00.000Z",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/YJCRoIlqzP0/mqdefault.jpg?v=6af5d29b",
+    "thumbnail": "https://i.ytimg.com/vi/YJCRoIlqzP0/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/Iqa8kv9Rtxo6WwJDofayPUFNXpzczylLfnLo7PZFqtgBos31fl5FH1bEldVwBn04oSSbmN8D=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=YJCRoIlqzP0"
   },
@@ -2045,9 +2045,9 @@
     "youtubeid": "UCAhdxmsdngH4noySdpVAVWQ",
     "title": "【新髪型お披露目 】ﾃﾞﾃﾞﾃﾞｰﾝ【#vtuber 】#ちとせらいぶ #パレデミア学園",
     "date": "2026-11-13T08:59:50.000Z",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/vxIXyOl3R2A/mqdefault.jpg?v=6af349ef",
+    "thumbnail": "https://i.ytimg.com/vi/vxIXyOl3R2A/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/traR_yWe-AOGyM2wjo8h2FJO9JWBcbjfrL13X-umeD6BtNPopSZ2Q3YmdJq_5K9gWgHf_j64iQ=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=vxIXyOl3R2A"
   },
@@ -2071,7 +2071,7 @@
     "date": "2026-11-13T09:00:23.000Z",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/DY-TFqTW580/mqdefault.jpg?v=6af6cabb",
+    "thumbnail": "https://i.ytimg.com/vi/DY-TFqTW580/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/MwFtS4Atq-VZX_p-mgdnGa95NMQAnQCz9boYbtkLbNvkbA_kgvqLMOMU3J34uFX1FCrvzyP3_g=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=DY-TFqTW580"
   },
@@ -2152,12 +2152,24 @@
     "name": "七海ロナ",
     "youtubeid": "UCIaZylf5L9MsCMOJX3BdTEg",
     "title": "#6【JUDGE EYES:死神の遺言 Remastered】僭越ながら完全初見でジャッジさせて頂きます！※ネタバレ注意【七海ロナ／パレプロ】",
-    "date": "2026-11-13T10:45:00.000Z",
-    "status": "upcoming",
+    "date": "2026-11-13T10:45:34.000Z",
+    "status": "live",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/oNqd6oLgsf0/mqdefault.jpg?v=6af6d3c3",
     "channelIcon": "https://yt3.ggpht.com/86cM_4q1A56pIYgdKxh776hM0nropjiZIlmXbfroWHXQ-MjdGGsjLcL5hMDOFL-T2EJHmybT=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=oNqd6oLgsf0"
+  },
+  {
+    "videoId": "bQ_onIgYzkM",
+    "name": "雪紫誉",
+    "youtubeid": "UCdbYinKlpkB_uMt_wPmYcsw",
+    "title": "【#雑談】耐久！１３００人さんにしたい！！！！#初見さん大歓迎 ◎【#パレデミア学園/#ゆきむらじお】＃新人VTuber＃雑談#耐久",
+    "date": "2026-11-13T10:59:34.000Z",
+    "status": "live",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/bQ_onIgYzkM/mqdefault.jpg?v=6af6e1b5",
+    "channelIcon": "https://yt3.ggpht.com/kc8qx6FtYx06iGCCSrpiWKAxzIVVbLeADEuF2JEPwkqv_HCMQpb2jxGhgjLi5EFi9bytVp_o=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=bQ_onIgYzkM"
   },
   {
     "videoId": "cPlW8cxQJ90",
@@ -2182,18 +2194,6 @@
     "thumbnail": "https://i.ytimg.com/vi/GQn4lReu_CU/mqdefault.jpg?v=6af6039f",
     "channelIcon": "https://yt3.ggpht.com/4hssn4EXW2lORXRfiuYTjmYfnlZoQ2h72sdEompqX7GQwAKCsBx7eL0joCFSook1rfCKIcpykg=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=GQn4lReu_CU"
-  },
-  {
-    "videoId": "bQ_onIgYzkM",
-    "name": "雪紫誉",
-    "youtubeid": "UCdbYinKlpkB_uMt_wPmYcsw",
-    "title": "【#雑談】耐久！１３００人さんにしたい！！！！#初見さん大歓迎 ◎【#パレデミア学園/#ゆきむらじお】＃新人VTuber＃雑談#耐久",
-    "date": "2026-11-13T11:00:00.000Z",
-    "status": "upcoming",
-    "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/bQ_onIgYzkM/mqdefault.jpg?v=6af6e1b5",
-    "channelIcon": "https://yt3.ggpht.com/kc8qx6FtYx06iGCCSrpiWKAxzIVVbLeADEuF2JEPwkqv_HCMQpb2jxGhgjLi5EFi9bytVp_o=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=bQ_onIgYzkM"
   },
   {
     "videoId": "_NvlM6U2X5Q",

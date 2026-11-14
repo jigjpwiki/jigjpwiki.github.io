@@ -1,0 +1,262 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "products",
+    "campaigns",
+    "offers"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": 1
+    },
+    "products": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "title",
+          "talentIds",
+          "groupIds",
+          "image",
+          "sourceRefs",
+          "visibility"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^product-[0-9]{6}$"
+          },
+          "title": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 240
+          },
+          "talentIds": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^tal-[0-9]{6}$"
+            },
+            "uniqueItems": true
+          },
+          "groupIds": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^group-[0-9]{6}$"
+            },
+            "uniqueItems": true
+          },
+          "image": {
+            "anyOf": [
+              {
+                "type": "string",
+                "format": "image-ref"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "sourceRefs": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^src-[a-z0-9-]+$"
+            },
+            "minItems": 1,
+            "uniqueItems": true
+          },
+          "visibility": {
+            "enum": [
+              "public",
+              "draft"
+            ]
+          }
+        }
+      }
+    },
+    "campaigns": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "title",
+          "sourceRefs",
+          "visibility"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^campaign-[0-9]{6}$"
+          },
+          "title": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 240
+          },
+          "sourceRefs": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^src-[a-z0-9-]+$"
+            },
+            "minItems": 1,
+            "uniqueItems": true
+          },
+          "visibility": {
+            "enum": [
+              "public",
+              "draft"
+            ]
+          }
+        }
+      }
+    },
+    "offers": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "productId",
+          "campaignId",
+          "price",
+          "startsAt",
+          "endsAt",
+          "periodNote",
+          "url",
+          "status",
+          "sourceRefs",
+          "visibility"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^offer-[0-9]{6}$"
+          },
+          "productId": {
+            "type": "string",
+            "pattern": "^product-[0-9]{6}$"
+          },
+          "campaignId": {
+            "anyOf": [
+              {
+                "type": "string",
+                "pattern": "^campaign-[0-9]{6}$"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "price": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "amount",
+              "currency"
+            ],
+            "properties": {
+              "amount": {
+                "anyOf": [
+                  {
+                    "type": "number",
+                    "minimum": 0
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "currency": {
+                "anyOf": [
+                  {
+                    "enum": [
+                      "JPY",
+                      "USD",
+                      "EUR"
+                    ]
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              }
+            }
+          },
+          "startsAt": {
+            "anyOf": [
+              {
+                "type": "string",
+                "format": "date-time"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "endsAt": {
+            "anyOf": [
+              {
+                "type": "string",
+                "format": "date-time"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "periodNote": {
+            "anyOf": [
+              {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 240
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "url": {
+            "type": "string",
+            "format": "public-url"
+          },
+          "status": {
+            "enum": [
+              "scheduled",
+              "on_sale",
+              "ended",
+              "sold_out",
+              "unknown"
+            ]
+          },
+          "sourceRefs": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^src-[a-z0-9-]+$"
+            },
+            "minItems": 1,
+            "uniqueItems": true
+          },
+          "visibility": {
+            "enum": [
+              "public",
+              "draft"
+            ]
+          }
+        }
+      }
+    }
+  }
+}

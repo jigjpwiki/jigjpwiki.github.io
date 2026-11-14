@@ -1,0 +1,112 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "sources",
+    "groups"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": 1
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "kind",
+          "url",
+          "checkedAt"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^src-[a-z0-9-]+$"
+          },
+          "kind": {
+            "enum": [
+              "official",
+              "wiki"
+            ]
+          },
+          "url": {
+            "type": "string",
+            "format": "public-url"
+          },
+          "checkedAt": {
+            "type": "string",
+            "format": "date-time"
+          }
+        }
+      }
+    },
+    "groups": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "name",
+          "organizationId",
+          "talentIds",
+          "membersComplete",
+          "sourceRefs",
+          "visibility"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^group-[0-9]{6}$"
+          },
+          "name": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 240
+          },
+          "organizationId": {
+            "anyOf": [
+              {
+                "type": "string",
+                "pattern": "^org-[0-9]{6}$"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "talentIds": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^tal-[0-9]{6}$"
+            },
+            "uniqueItems": true
+          },
+          "membersComplete": {
+            "type": "boolean"
+          },
+          "sourceRefs": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^src-[a-z0-9-]+$"
+            },
+            "minItems": 1,
+            "uniqueItems": true
+          },
+          "visibility": {
+            "enum": [
+              "public",
+              "draft"
+            ]
+          }
+        }
+      }
+    }
+  }
+}

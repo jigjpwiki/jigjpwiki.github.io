@@ -26,6 +26,12 @@ const root=path.resolve(__dirname,'../_site');
    assert.equal(await page.locator('#month-label').innerText(),'2027-02');
    assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth),false);
    if(process.env.BROWSER_SCREENSHOT_DIR){fs.mkdirSync(process.env.BROWSER_SCREENSHOT_DIR,{recursive:true});await page.screenshot({path:path.join(process.env.BROWSER_SCREENSHOT_DIR,`calendar-${width}.png`),fullPage:true});}
+   await page.goto(base+'/talents/');await page.getByRole('link',{name:'真昼ねる',exact:true}).click();await page.waitForURL(base+'/talents/tal-000001/');
+   assert.equal(await page.getByRole('heading',{name:'真昼ねる',exact:true}).count(),1);
+   assert.doesNotMatch(await page.locator('main').innerText(),/tal-000001|activityStatus|VTuber活動：/);
+   await page.goto(base+'/talents/tal-000004/');assert.match(await page.locator('main').innerText(),/旧所属：ProForma Nova/);assert.doesNotMatch(await page.locator('main').innerText(),/引退|活動終了/);
+   assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth),false);
+   if(process.env.BROWSER_SCREENSHOT_DIR)await page.screenshot({path:path.join(process.env.BROWSER_SCREENSHOT_DIR,`profile-${width}.png`),fullPage:true});
    assert.deepEqual(errors,[]);await context.close();console.log(`Phase 2 browser passed: ${width}px, JST, month movement, filters, keyboard, no overflow`);
   }
   const context=await browser.newContext({javaScriptEnabled:false});const page=await context.newPage();await page.goto(base+'/anniversaries/');assert.equal(await page.locator('.anniversary-calendar').count(),1);assert.equal(await page.locator('#calendar-tools').isVisible(),false);await context.close();

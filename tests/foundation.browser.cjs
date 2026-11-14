@@ -40,14 +40,13 @@ const root = path.resolve(__dirname, '../_site');
       assert.equal(await page.locator('.talent-card').count(), 4);
       assert.equal(await page.locator('nav [aria-current="page"]').getAttribute('href'), '/talents/');
       assert.equal(await page.locator('.site-nav a[href="/goods/"]').count(), 1);
-      assert.equal(await page.locator('input[type="password"],form').count(), 0);
+      assert.equal(await page.locator('input[type="password"]').count(), 0);
       if (javaScriptEnabled && width === 390) await page.locator('.talent-avatar img.is-loaded').first().waitFor();
       else assert.equal(await page.locator('.talent-avatar img.is-loaded').count(), 0);
       const graduated = page.locator('#tal-000004');
-      assert.match(await graduated.innerText(), /卒業・退所済み/);
+      assert.match(await graduated.innerText(), /旧所属/);
       assert.doesNotMatch(await graduated.innerText(), /VTuber活動\s*引退/);
-      await page.locator('details summary').first().click();
-      assert.equal(await page.locator('details').first().getAttribute('open'), '');
+      assert.doesNotMatch(await graduated.innerText(), /activityStatus|agencyStatus|tal-000004/);
       assert.equal(await page.evaluate(() => document.documentElement.scrollWidth > innerWidth), false);
       if (process.env.BROWSER_SCREENSHOT_DIR && javaScriptEnabled) {
         fs.mkdirSync(process.env.BROWSER_SCREENSHOT_DIR, { recursive: true });

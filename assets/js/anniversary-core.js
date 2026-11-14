@@ -47,7 +47,7 @@
   }
   function eventHtml(item, model, compact = false) {
     const years = item.years > 0 ? ` <span>${item.years}周年</span>` : '';
-    return `<li data-event-id="${escape(item.event.id)}"><span class="category">${types[item.event.type]}</span> <strong>${escape(item.event.title)}</strong>${years}<div>${subjectLinks(item.event, model)}</div>${compact ? '' : `<small>${sourceLinks(item.event, model)}</small>`}</li>`;
+    return `<li data-event-id="${escape(item.event.id)}"><span class="category">${types[item.event.type]}</span> <strong>${escape(item.event.title)}</strong>${years}<div>${subjectLinks(item.event, model)}</div>${compact ? `<details><summary>出典</summary><small>${sourceLinks(item.event, model)}</small></details>` : `<small>${sourceLinks(item.event, model)}</small>`}</li>`;
   }
   function calendar(model, month, today, filters = {}) {
     const events = filtered(model, filters); const first = month + '-01'; const next = monthShift(month, 1) + '-01';

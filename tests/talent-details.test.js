@@ -16,7 +16,7 @@ test('mismatched URL, unsafe host/protocol, missing fields and duplicates cannot
 test('public profile works with missing optional data and keeps graduation separate from retirement',()=>{
  const data=publicCatalog(loadCatalog(master));const former=master.talents[3];const html=talentPage(former,master,data,{});
  assert.match(html,/旧所属：ProForma Nova/);assert.doesNotMatch(html,/>引退<|>活動終了<|agencyStatus|activityStatus|<small>tal-/);
- assert.match(html,/関連付けできる配信/);assert.match(html,/画像未確認/);
+ assert.match(html,/関連する配信・動画情報はありません/);assert.match(html,/画像未確認/);
  const t=structuredClone(person);t.profileImage=null;t.accounts=[];t.wiki=null;t.affiliations=[];
  assert.match(talentPage(t,master,{...data,events:[]},{}),/記念日はまだ登録/);
 });
@@ -24,4 +24,14 @@ test('profile escapes names and titles, links verified anniversaries, and never 
  const t=structuredClone(person);t.displayName='<img onerror=alert(1)>';
  const html=talentPage(t,master,publicCatalog(loadCatalog(master)),{youtube:[{...video,title:'<script>alert(1)</script>'}]});
  assert.doesNotMatch(html,/<img onerror|<script>alert/);assert.match(html,/&lt;script/);assert.doesNotMatch(html,/\d+歳/);
+});
+
+test('saved stream rows cannot be mistaken for current live status',()=>{
+ const data=publicCatalog(loadCatalog(master));
+ for(const status of ['live','upcoming','archive']){
+  const html=talentPage(person,master,data,{youtube:[{...video,status}]});
+  assert.match(html,/サイト公開時点の保存データ/);assert.match(html,/リアルタイムの配信状態ではありません/);
+  assert.doesNotMatch(html,/配信中|配信予定（収集時点）/);assert.match(html,/配信・公開日時（予定を含む）/);
+  assert.match(html,/プロフィール等の出典確認日/);
+ }
 });

@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "sources": [
+    {
+      "id": "src-star-debut",
+      "kind": "official",
+      "url": "https://www.proforma-production.jp/news/n/q1rm0p3exwy3",
+      "checkedAt": "2026-11-14T18:08:59Z"
+    }
+  ],
+  "groups": [
+    {
+      "id": "group-000001",
+      "name": "ProForma Nova STAR 1期生",
+      "organizationId": "org-000001",
+      "talentIds": [
+        "tal-000002",
+        "tal-000003",
+        "tal-000004"
+      ],
+      "membersComplete": false,
+      "sourceRefs": [
+        "src-star-debut"
+      ],
+      "visibility": "public"
+    }
+  ]
+}

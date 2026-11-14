@@ -1,0 +1,169 @@
+{
+  "schemaVersion": 1,
+  "events": [
+    {
+      "id": "ann-000001",
+      "type": "birthday",
+      "title": "真昼ねる 誕生日",
+      "talentIds": [
+        "tal-000001"
+      ],
+      "groupIds": [],
+      "date": {
+        "month": 1,
+        "day": 18,
+        "year": null
+      },
+      "recursYearly": true,
+      "countYears": false,
+      "sourceRefs": [
+        "src-mahiru-neru",
+        "src-wiki-mahiru-neru"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "ann-000002",
+      "type": "birthday",
+      "title": "火乃晴るい 誕生日",
+      "talentIds": [
+        "tal-000002"
+      ],
+      "groupIds": [],
+      "date": {
+        "month": 8,
+        "day": 3,
+        "year": null
+      },
+      "recursYearly": true,
+      "countYears": false,
+      "sourceRefs": [
+        "src-hinoha-rui",
+        "src-wiki-hinoha-rui"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "ann-000003",
+      "type": "birthday",
+      "title": "水透ユウ 誕生日",
+      "talentIds": [
+        "tal-000003"
+      ],
+      "groupIds": [],
+      "date": {
+        "month": 4,
+        "day": 11,
+        "year": null
+      },
+      "recursYearly": true,
+      "countYears": false,
+      "sourceRefs": [
+        "src-minato-yu",
+        "src-wiki-minato-yu"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "ann-000004",
+      "type": "birthday",
+      "title": "李じゅぴ汰 誕生日",
+      "talentIds": [
+        "tal-000004"
+      ],
+      "groupIds": [],
+      "date": {
+        "month": 11,
+        "day": 29,
+        "year": null
+      },
+      "recursYearly": true,
+      "countYears": false,
+      "sourceRefs": [
+        "src-lee-jupita",
+        "src-wiki-lee-jupita"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "ann-000005",
+      "type": "debut",
+      "title": "火乃晴るい デビュー記念日",
+      "talentIds": [
+        "tal-000002"
+      ],
+      "groupIds": [],
+      "date": {
+        "month": 3,
+        "day": 7,
+        "year": 2025
+      },
+      "recursYearly": true,
+      "countYears": true,
+      "sourceRefs": [
+        "src-star-debut"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "ann-000006",
+      "type": "debut",
+      "title": "水透ユウ デビュー記念日",
+      "talentIds": [
+        "tal-000003"
+      ],
+      "groupIds": [],
+      "date": {
+        "month": 3,
+        "day": 7,
+        "year": 2025
+      },
+      "recursYearly": true,
+      "countYears": true,
+      "sourceRefs": [
+        "src-star-debut"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "ann-000007",
+      "type": "debut",
+      "title": "李じゅぴ汰 デビュー記念日",
+      "talentIds": [
+        "tal-000004"
+      ],
+      "groupIds": [],
+      "date": {
+        "month": 3,
+        "day": 7,
+        "year": 2025
+      },
+      "recursYearly": true,
+      "countYears": true,
+      "sourceRefs": [
+        "src-star-debut"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "ann-000008",
+      "type": "group",
+      "title": "ProForma Nova STAR 1期生 デビュー記念日",
+      "talentIds": [],
+      "groupIds": [
+        "group-000001"
+      ],
+      "date": {
+        "month": 3,
+        "day": 7,
+        "year": 2025
+      },
+      "recursYearly": true,
+      "countYears": true,
+      "sourceRefs": [
+        "src-star-debut"
+      ],
+      "visibility": "public"
+    }
+  ]
+}

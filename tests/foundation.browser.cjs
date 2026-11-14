@@ -33,13 +33,13 @@ const root = path.resolve(__dirname, '../_site');
       const page = await context.newPage();
       await page.goto(base);
       const nav = page.getByRole('navigation', { name: 'メインナビゲーション' });
-      assert.equal(await nav.getByRole('link').count(), 2);
+      assert.equal(await nav.getByRole('link').count(), 3);
       assert.equal(await nav.locator('[aria-current="page"]').getAttribute('href'), '/');
       await nav.getByRole('link', { name: 'タレント一覧' }).focus();
       await Promise.all([page.waitForURL(base + '/talents/'), page.keyboard.press('Enter')]);
       assert.equal(await page.locator('.talent-card').count(), 4);
       assert.equal(await page.locator('nav [aria-current="page"]').getAttribute('href'), '/talents/');
-      assert.equal(await page.locator('a[href^="/talents/tal-"],a[href="/goods/"],a[href="/anniversaries/"]').count(), 0);
+      assert.equal(await page.locator('a[href^="/talents/tal-"],a[href="/goods/"]').count(), 0);
       assert.equal(await page.locator('input[type="password"],form').count(), 0);
       if (javaScriptEnabled && width === 390) await page.locator('.talent-avatar img.is-loaded').first().waitFor();
       else assert.equal(await page.locator('.talent-avatar img.is-loaded').count(), 0);
@@ -59,7 +59,7 @@ const root = path.resolve(__dirname, '../_site');
       assert.equal(await page.locator('#videolist.swiper-wrapper').count(), 1);
       for (const route of ['/terms/', '/privacy-policy/']) {
         await page.goto(base + route);
-        assert.equal(await page.getByRole('navigation', { name: 'メインナビゲーション' }).getByRole('link').count(), 2);
+        assert.equal(await page.getByRole('navigation', { name: 'メインナビゲーション' }).getByRole('link').count(), 3);
         assert.equal(await page.evaluate(() => document.documentElement.scrollWidth > innerWidth), false);
       }
       await context.close();

@@ -71,7 +71,7 @@ test('private fields, unsafe URLs and broken local images cannot enter the publi
 test('ready navigation routes only and escaping prevent dead links and HTML injection', () => {
   const nav = navigation('/talents/');
   assert.match(nav, /href="\/talents\/" aria-current="page"/);
-  assert.doesNotMatch(nav, /anniversaries|goods|tal-000001/);
+  assert.doesNotMatch(nav, /goods|tal-000001/);
   const m = copy(); m.talents[0].displayName = '<img src=x onerror=alert(1)>';
   const html = talentCards(m); assert.doesNotMatch(html, /<img src=x/); assert.match(html, /&lt;img/);
 });
@@ -82,7 +82,9 @@ test('build publishes only ready pages/public data and keeps schedule implementa
   execFileSync(process.execPath, [path.join(__dirname, '../scripts/build-site.js')]);
   const read = file => fs.readFileSync(path.join(root, file), 'utf8');
   assert.deepEqual(JSON.parse(read('data/talents.json')), master);
-  for (const file of ['data/talent-id-registry.json', 'data/youtube_cache.json', 'data/youtube_streamers.json', 'schemas', 'pages', 'docs', 'lib', 'node_modules', '.env', '.github', 'anniversaries', 'goods', 'talents/detail']) {
+  assert(fs.existsSync(path.join(root, 'anniversaries/index.html')));
+  assert(JSON.parse(read('data/catalog.json')).groups.every(g => g.visibility === 'public'));
+  for (const file of ['data/talent-id-registry.json', 'data/youtube_cache.json', 'data/youtube_streamers.json', 'schemas', 'pages', 'docs', 'lib', 'node_modules', '.env', '.github', 'data/catalog-id-registry.json', 'data/goods.json', 'goods', 'talents/detail']) {
     assert.equal(fs.existsSync(path.join(root, file)), false, file);
   }
   for (const file of ['index.html', 'talents/index.html', 'privacy-policy/index.html', 'terms/index.html']) {

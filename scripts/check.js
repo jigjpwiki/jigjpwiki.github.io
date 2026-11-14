@@ -12,5 +12,6 @@ function walk(dir) {
   }
 }
 walk('.');
-require('../lib/talents').loadTalents();
+const talents = require('../lib/talents').loadTalents();
+require('../lib/catalog').loadCatalog(talents);
 console.log('JavaScript syntax and JSON checks passed.');

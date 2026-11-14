@@ -1,3 +1,3 @@
-# /anniversaries/ 記念日
+# /anniversaries/
 
-次段階用の非公開設計ディレクトリ。第1段階ではHTMLを生成せず、ナビゲーションにもリンクを出さない。URLに使うIDはtalents.jsonの変更しない内部ID。
+第2段階Aで公開。lib/info-pages.jsと共通anniversary-coreから静的生成し、同じロジックで月移動・JST更新を拡張する。

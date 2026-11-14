@@ -10,7 +10,7 @@
     "check": "node scripts/check.js",
     "test": "node --test tests/*.test.js",
     "build": "node scripts/build-site.js",
-    "test:browser": "node tests/browser.cjs && node tests/foundation.browser.cjs",
+    "test:browser": "node tests/browser.cjs && node tests/foundation.browser.cjs && node tests/phase2.browser.cjs",
     "validate:talents": "node scripts/validate-talents.js"
   },
   "engines": {

@@ -8,6 +8,9 @@ const { applyNavigation, talentCards } = require('../lib/site-pages');
 const root = path.join(__dirname, '..');
 // Validate before touching the prior build output. Never publish unvalidated data.
 const talents = loadTalents(root);
+const { loadCatalog, publicCatalog } = require('../lib/catalog');
+const { anniversaryPage } = require('../lib/info-pages');
+const catalog = publicCatalog(loadCatalog(talents, root));
 const output = path.join(__dirname, '..', '_site');
 fs.rmSync(output, { recursive: true, force: true });
 fs.mkdirSync(output);
@@ -28,6 +31,10 @@ const talentPage = fs.readFileSync(path.join(root, 'pages/talents/index.html'), 
 fs.writeFileSync(path.join(output, 'talents/index.html'), applyNavigation(talentPage, '/talents/').replace('<!-- jigdule:talents -->', talentCards(talents)));
 // Publish only the schema-validated public master, never its registry or sources' raw responses.
 fs.writeFileSync(path.join(output, 'data/talents.json'), JSON.stringify(talents, null, 2) + '\n');
+fs.writeFileSync(path.join(output, 'data/catalog.json'), JSON.stringify({ schemaVersion: 1, sources: catalog.sources, groups: catalog.groups }) + '\n');
+fs.mkdirSync(path.join(output, 'anniversaries'));
+fs.writeFileSync(path.join(output, 'anniversaries/index.html'), anniversaryPage(talents, catalog));
+fs.writeFileSync(path.join(output, 'data/anniversaries.json'), JSON.stringify({ schemaVersion: 1, events: catalog.events }) + '\n');
 fs.writeFileSync(path.join(output, '.nojekyll'), '');
 writeManifest(output);
 const elapsed = Math.round(performance.now() - started);

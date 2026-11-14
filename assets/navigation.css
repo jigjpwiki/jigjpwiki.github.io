@@ -1,0 +1,7 @@
+/* Shared navigation is static HTML, usable without JavaScript. */
+.site-nav { display: flex; justify-content: center; align-items: center; flex-wrap: wrap; gap: 4px 12px; padding: 8px 12px 0; font: 14px/1.4 sans-serif; }
+.site-nav a { display: inline-flex; align-items: center; min-height: 32px; padding: 4px 12px; box-sizing: border-box; color: #333; text-decoration: none; border-radius: 6px; }
+.site-nav a:hover { background: #eef2f8; }
+.site-nav a[aria-current="page"] { background: #e5edf8; color: #174d92; font-weight: 700; }
+.site-nav a:focus-visible { outline: 3px solid #1a6fd4; outline-offset: 2px; }
+@media (max-width: 600px) { .site-nav { font-size: 13px; padding-top: 4px; gap: 4px; } }

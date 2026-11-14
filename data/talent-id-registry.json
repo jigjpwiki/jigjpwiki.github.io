@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "issued": [
+    {
+      "id": "tal-000001",
+      "youtubeChannelId": "UCI-8WyYqMymGPw9vg55HXDQ",
+      "officialProfileUrl": "https://www.proforma-production.jp/t/mahiru-neru"
+    },
+    {
+      "id": "tal-000002",
+      "youtubeChannelId": "UCVI8oEcv0MArpjPdwlRgYRw",
+      "officialProfileUrl": "https://www.proforma-production.jp/t/hinoha-rui"
+    },
+    {
+      "id": "tal-000003",
+      "youtubeChannelId": "UCOah55SQYynzPgQQ4wxuzkA",
+      "officialProfileUrl": "https://www.proforma-production.jp/t/minato-yu"
+    },
+    {
+      "id": "tal-000004",
+      "youtubeChannelId": null,
+      "officialProfileUrl": "https://www.proforma-production.jp/t/lee-jupita"
+    }
+  ]
+}

@@ -47,9 +47,9 @@
   }
   function eventHtml(item, model, compact = false) {
     const years = item.years > 0 ? ` <span>${item.years}周年</span>` : '';
-    return `<li data-event-id="${escape(item.event.id)}"><span class="category">${types[item.event.type]}</span> <strong>${escape(item.event.title)}</strong>${years}<div>${subjectLinks(item.event, model)}</div>${compact ? `<details><summary>出典</summary><small>${sourceLinks(item.event, model)}</small></details>` : `<small>${sourceLinks(item.event, model)}</small>`}</li>`;
+    return `<li data-event-id="${escape(item.event.id)}"><span class="category">${types[item.event.type]}</span> <strong>${escape(item.event.title)}</strong>${years}<div>${subjectLinks(item.event, model)}</div><details><summary>出典</summary><small>${sourceLinks(item.event, model)}</small></details></li>`;
   }
-  function calendar(model, month, today, filters = {}) {
+  function calendar(model, month, today, filters = {}, selected = today, interactive = false) {
     const events = filtered(model, filters); const first = month + '-01'; const next = monthShift(month, 1) + '-01';
     const items = between(events, first, next); const [year, m] = month.split('-').map(Number);
     const weekday = new Date(first + 'T00:00:00Z').getUTCDay(); const days = new Date(Date.UTC(year, m, 0)).getUTCDate();
@@ -60,15 +60,22 @@
       if (day < 1 || day > days) html += '<td class="outside"></td>';
       else {
         const date = `${month}-${String(day).padStart(2, '0')}`;
-        html += `<td${date === today ? ' class="calendar-today"' : ''}><time datetime="${date}"${date === today ? ' aria-current="date"' : ''}>${day}</time><ul>${items.filter(e => e.day === date).map(e => eventHtml(e, model, true)).join('')}</ul></td>`;
+        const onDay = items.filter(e => e.day === date);
+        const content = `<time datetime="${date}"${date === today ? ' aria-current="date"' : ''}>${day}</time><span class="day-markers" aria-hidden="true">${[...new Set(onDay.map(i=>i.event.type))].map(type=>`<span class="dot ${type}"></span>`).join('')}</span><span class="day-count">${onDay.length?`${onDay.length}件`:''}</span>`;
+        const label = `${year}年${m}月${day}日${date===today?' 今日':''}、記念日${onDay.length}件`;
+        html += `<td${date === today ? ' class="calendar-today"' : ''}>${interactive ? `<button type="button" class="day-button" data-day="${date}" aria-label="${label}" aria-pressed="${date===selected}">${content}</button>` : onDay.length ? `<a class="day-static" href="#ann-day-${date}" aria-label="${label}">${content}</a>` : `<span class="day-static">${content}</span>`}</td>`;
       }
       if (i % 7 === 6) html += '</tr>';
     }
-    return html + '</tbody></table>' + (items.length ? '' : '<p class="empty-state">この月の確認済み記念日はありません。</p>');
+    return html + '</tbody></table>' + (!interactive && items.length ? `<div class="month-fallback">${[...new Set(items.map(i=>i.day))].map(day=>`<section id="ann-day-${day}">${dayDetails(model,day,filters)}</section>`).join('')}</div>` : '') + (items.length ? '' : '<p class="empty-state">この月の確認済み記念日はありません。</p>');
+  }
+  function dayDetails(model, day, filters = {}) {
+    const items = between(filtered(model,filters),day,addDays(day,1));
+    return `<h2><time datetime="${day}">${day.replaceAll('-','/')}</time> の記念日</h2>${items.length ? `<ul>${items.map(item=>eventHtml(item,model,true)).join('')}</ul>` : '<p>この日の確認済み記念日はありません。</p>'}`;
   }
   function upcoming(model, today, filters = {}) {
     const items = between(filtered(model, filters), today, addDays(today, 30)); // today + 29 days, inclusive
     return items.length ? `<ul class="event-list">${items.map(item => `<li><time datetime="${item.day}">${item.day.replaceAll('-', '/')}</time><ul>${eventHtml(item, model)}</ul></li>`).join('')}</ul>` : '<p class="empty-state">直近30日間の確認済み記念日はありません。</p>';
   }
-  return { types, escape, jstToday, addDays, monthShift, occurrence, between, filtered, calendar, upcoming, eventHtml, sourceLinks, subjectLinks };
+  return { types, escape, jstToday, addDays, monthShift, occurrence, between, filtered, calendar, upcoming, eventHtml, sourceLinks, subjectLinks, dayDetails };
 });

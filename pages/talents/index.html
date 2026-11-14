@@ -8,18 +8,23 @@
 <link rel="canonical" href="https://www.jigdule.jp/talents/">
 <link rel="icon" href="/assets/favicon-32x32.png">
 <link rel="stylesheet" href="/assets/talents.css">
-<link rel="stylesheet" href="/assets/navigation.css">
+<link rel="stylesheet" href="/assets/navigation.css"><link rel="stylesheet" href="/assets/browse.css">
 </head>
 <body>
 <header><a class="brand" href="/" aria-label="じぐじゅーる 配信スケジュール"><img src="/assets/logo.png" alt="じぐじゅーる" width="160" height="58"></a><!-- jigdule:navigation --></header>
 <main id="main-content">
 <h1>タレント一覧</h1>
-<p class="intro">jig.jp関連VTuberの情報を、公式情報と非公式Wikiで確認できた範囲から掲載しています。現在は一部のタレントのみの掲載です。事務所の卒業・退所と、VTuberとしての引退・活動終了は別々に扱います。</p>
-<p>不明な情報は推測せず「不明」「未確認」と表示しています。情報の管理はじぐじゅーる独自で行い、閲覧にログインは不要です。</p>
+<p class="intro">気になるタレントのプロフィールや記念日を探してみましょう。確認済みの情報から、一部のタレントを掲載しています。</p>
+<form id="talent-filters" class="browse-filters" hidden role="search" aria-label="タレントを探す">
+<label>名前・別名<input id="talent-search" type="search" placeholder="タレント名を入力" autocomplete="off"></label>
+<label>事務所<select id="talent-organization"><option value="">すべて</option></select></label>
+<label>所属の区分<select id="talent-relation"><option value="">すべて</option><option value="current">現在所属</option><option value="former">旧所属</option><option value="unaffiliated">無所属（確認済み）</option><option value="unknown">所属未確認</option></select></label>
+<label>グループ（確認済みの関連）<select id="talent-group"><option value="">すべて</option></select></label><button type="reset">条件を解除</button></form>
+<p id="talent-count" role="status" aria-live="polite"></p><p id="talent-empty" class="empty-state" hidden>該当するタレントはいません。検索語や条件を変更してください。</p><noscript><p>すべての登録タレントを表示しています。検索と絞り込みにはJavaScriptが必要です。</p></noscript>
 <ul class="talent-grid"><!-- jigdule:talents --></ul>
 <p>確認済みの記念日・グッズ情報は各タレントの詳細ページからも確認できます。</p>
 </main>
 <footer><a href="/">配信スケジュール</a><a href="/privacy-policy/">プライバシーポリシー</a><a href="/terms/">利用規約</a></footer>
 <script src="/assets/js/talents.js" defer></script>
-</body>
+<script src="/assets/js/talent-directory.js" defer></script></body>
 </html>

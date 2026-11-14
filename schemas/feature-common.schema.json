@@ -1,0 +1,116 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://www.jigdule.jp/schemas/feature-common",
+  "definitions": {
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "kind",
+        "url",
+        "checkedAt"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^src-[a-z0-9-]+$"
+        },
+        "kind": {
+          "enum": [
+            "official",
+            "wiki"
+          ]
+        },
+        "url": {
+          "type": "string",
+          "format": "public-url"
+        },
+        "checkedAt": {
+          "type": "string",
+          "format": "date-time"
+        }
+      }
+    },
+    "refs": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "pattern": "^src-[a-z0-9-]+$"
+      },
+      "minItems": 1
+    },
+    "time": {
+      "anyOf": [
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "precision",
+            "value"
+          ],
+          "properties": {
+            "precision": {
+              "const": "instant"
+            },
+            "value": {
+              "type": "string",
+              "format": "date-time"
+            }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "precision",
+            "value"
+          ],
+          "properties": {
+            "precision": {
+              "const": "date"
+            },
+            "value": {
+              "type": "string",
+              "format": "date"
+            }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "precision",
+            "value"
+          ],
+          "properties": {
+            "precision": {
+              "const": "month"
+            },
+            "value": {
+              "type": "string",
+              "pattern": "^[0-9]{4}-(0[1-9]|1[0-2])$"
+            }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "precision",
+            "value"
+          ],
+          "properties": {
+            "precision": {
+              "const": "unknown"
+            },
+            "value": {
+              "type": "null"
+            }
+          }
+        }
+      ]
+    }
+  }
+}

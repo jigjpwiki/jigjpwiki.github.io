@@ -15,6 +15,12 @@ const { talentPage: renderTalentPage } = require('../lib/talent-details');
 const optionalFeed = name => { try { const value = JSON.parse(fs.readFileSync(path.join(root, 'data', name + '.json'), 'utf8')); return Array.isArray(value) ? value : []; } catch { return []; } };
 const { goodsPage, relatedGoods } = require('../lib/goods-pages');
 const feeds = { youtube: optionalFeed('youtube'), twitch: optionalFeed('twitch') };
+const { loadEvents, projectEvents } = require('../lib/feature-data');
+const { eventList, eventPage, talentEvents } = require('../lib/feature-pages');
+const eventModel = loadEvents(talents, catalog, root);
+const eventData = { ...projectEvents(eventModel), groups:catalog.groups };
+const { loadRelease, publishRelease } = require('../lib/release');
+const release = loadRelease(root);
 const output = path.join(__dirname, '..', '_site');
 fs.rmSync(output, { recursive: true, force: true });
 fs.mkdirSync(output);
@@ -23,7 +29,7 @@ for (const entry of ['index.html', 'style.css', 'assets', 'privacy-policy', 'ter
   fs.cpSync(path.join(__dirname, '..', entry), path.join(output, entry), { recursive: true });
 }
 fs.mkdirSync(path.join(output, 'data'));
-for (const name of ['youtube', 'twitch', 'tiktok', 'last_updated', 'update_info', 'youtube_client']) {
+for (const name of ['youtube', 'twitch', 'tiktok', 'last_updated', 'youtube_client']) {
   fs.copyFileSync(path.join(__dirname, '..', 'data', `${name}.json`), path.join(output, 'data', `${name}.json`));
 }
 for (const [file, route] of [['index.html', '/'], ['privacy-policy/index.html', '/privacy-policy/'], ['terms/index.html', '/terms/']]) {
@@ -41,14 +47,19 @@ fs.writeFileSync(path.join(output, 'anniversaries/index.html'), anniversaryPage(
 fs.writeFileSync(path.join(output, 'data/anniversaries.json'), JSON.stringify({ schemaVersion: 1, events: catalog.events }) + '\n');
 for (const talent of talents.talents) {
   fs.mkdirSync(path.join(output, 'talents', talent.id));
-  fs.writeFileSync(path.join(output, 'talents', talent.id, 'index.html'), renderTalentPage(talent, talents, catalog, feeds, id => relatedGoods(id, talents, catalog)));
+  fs.writeFileSync(path.join(output, 'talents', talent.id, 'index.html'), renderTalentPage(talent, talents, catalog, feeds, id => relatedGoods(id, talents, catalog), id => talentEvents(id, talents, eventData)));
 }
-const sitemap = fs.readFileSync(path.join(output, 'sitemap.xml'), 'utf8').replace('</urlset>', talents.talents.map(t => `<url><loc>https://www.jigdule.jp/talents/${t.id}/</loc></url>`).join('\n') + '\n</urlset>');
+fs.mkdirSync(path.join(output,'events'));
+fs.writeFileSync(path.join(output,'events/index.html'), eventList(talents,eventData));
+for(const event of eventData.events){ fs.mkdirSync(path.join(output,'events',event.id)); fs.writeFileSync(path.join(output,'events',event.id,'index.html'),eventPage(event,talents,eventData)); }
+fs.writeFileSync(path.join(output,'data/events.json'),JSON.stringify(eventData)+'\n');
+const sitemap = fs.readFileSync(path.join(output, 'sitemap.xml'), 'utf8').replace('</urlset>', talents.talents.map(t => `<url><loc>https://www.jigdule.jp/talents/${t.id}/</loc></url>`).join('\n') + '\n'+['/events/',...eventData.events.map(e=>'/events/'+e.id+'/')].map(route=>`<url><loc>https://www.jigdule.jp${route}</loc></url>`).join('\n')+'\n</urlset>');
 fs.writeFileSync(path.join(output, 'sitemap.xml'), sitemap);
 fs.mkdirSync(path.join(output, 'goods'));
 fs.writeFileSync(path.join(output, 'goods/index.html'), goodsPage(talents, catalog));
 fs.writeFileSync(path.join(output, 'data/goods.json'), JSON.stringify({ schemaVersion: 1, products: catalog.products, campaigns: catalog.campaigns, offers: catalog.offers }) + '\n');
 fs.writeFileSync(path.join(output, '.nojekyll'), '');
+publishRelease(output,release);
 writeManifest(output);
 const elapsed = Math.round(performance.now() - started);
 console.log(`Public site prepared in _site/; build_ms=${elapsed}`);

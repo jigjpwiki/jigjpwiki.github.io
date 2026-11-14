@@ -14,4 +14,6 @@ function walk(dir) {
 walk('.');
 const talents = require('../lib/talents').loadTalents();
 require('../lib/catalog').loadCatalog(talents);
+require('../lib/feature-data').loadEvents(talents, require('../lib/catalog').publicCatalog(require('../lib/catalog').loadCatalog(talents)));
+require('./check-release');
 console.log('JavaScript syntax and JSON checks passed.');

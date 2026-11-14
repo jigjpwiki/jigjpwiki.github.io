@@ -6,6 +6,7 @@ const path = require('node:path');
 const http = require('node:http');
 const root = path.resolve(__dirname, '../_site');
 const master = require('../data/talents.json');
+const navigationCount=require('../lib/site-pages').pages.filter(p=>p.ready).length;
 (async () => {
   const server = http.createServer((req, res) => {
     const pathname = decodeURIComponent(new URL(req.url, 'http://localhost').pathname);
@@ -34,7 +35,7 @@ const master = require('../data/talents.json');
       const page = await context.newPage();
       await page.goto(base);
       const nav = page.getByRole('navigation', { name: 'メインナビゲーション' });
-      assert.equal(await nav.getByRole('link').count(), 4);
+      assert.equal(await nav.getByRole('link').count(), navigationCount);
       assert.equal(await nav.locator('[aria-current="page"]').getAttribute('href'), '/');
       await nav.getByRole('link', { name: 'タレント一覧' }).focus();
       await Promise.all([page.waitForURL(base + '/talents/'), page.keyboard.press('Enter')]);
@@ -59,7 +60,7 @@ const master = require('../data/talents.json');
       assert.equal(await page.locator('#videolist.swiper-wrapper').count(), 1);
       for (const route of ['/terms/', '/privacy-policy/']) {
         await page.goto(base + route);
-        assert.equal(await page.getByRole('navigation', { name: 'メインナビゲーション' }).getByRole('link').count(), 4);
+        assert.equal(await page.getByRole('navigation', { name: 'メインナビゲーション' }).getByRole('link').count(), navigationCount);
         assert.equal(await page.evaluate(() => document.documentElement.scrollWidth > innerWidth), false);
       }
       await context.close();

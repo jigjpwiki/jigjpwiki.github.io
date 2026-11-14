@@ -1,6 +1,7 @@
 'use strict';
 const {chromium}=require('playwright');const fs=require('node:fs'),path=require('node:path'),http=require('node:http'),assert=require('node:assert/strict');
 const root=path.resolve(__dirname,'../_site'),release=require('../data/release.json');
+const music=require('../data/music.json');
 (async()=>{
  const server=http.createServer((req,res)=>{let f=path.resolve(root,'.'+new URL(req.url,'http://localhost').pathname);if(f!==root&&!f.startsWith(root+path.sep))return res.writeHead(403).end();if(fs.existsSync(f)&&fs.statSync(f).isDirectory())f=path.join(f,'index.html');if(!fs.existsSync(f))return res.writeHead(404).end();res.setHeader('Content-Type',({'.html':'text/html','.js':'text/javascript','.css':'text/css','.json':'application/json','.png':'image/png'})[path.extname(f)]||'application/octet-stream');res.end(fs.readFileSync(f));});await new Promise(r=>server.listen(0,'127.0.0.1',r));const base=`http://127.0.0.1:${server.address().port}`;
  const browser=await chromium.launch({headless:true,...(process.env.CHROMIUM_PATH?{executablePath:process.env.CHROMIUM_PATH}:{})});
@@ -11,6 +12,9 @@ const root=path.resolve(__dirname,'../_site'),release=require('../data/release.j
   await p.getByRole('navigation',{name:'メインナビゲーション'}).getByRole('link',{name:'イベント',exact:true}).click();await p.waitForURL(base+'/events/');assert.equal(await p.locator('[data-filter-row]').count(),2);
   if(javaScriptEnabled){await p.locator('[name=q]').fill('天透');assert.equal(await p.locator('[data-filter-row]:visible').count(),1);await p.locator('[name=organization]').selectOption('org-000003');assert.equal(await p.locator('#catalog-empty').isVisible(),true);await p.getByRole('button',{name:'条件を解除'}).click();await p.waitForFunction(()=>document.getElementById('catalog-empty').hidden);}
   await noOverflow();await p.getByRole('link',{name:'天透あわ 初めての新髪型お披露目',exact:true}).click();await p.waitForURL(base+'/events/evt-000002/');assert.match(await p.locator('main').innerText(),/2026\/11\/14.*15:00.*JST/);await noOverflow();await p.getByRole('link',{name:'天透あわ',exact:true}).click();await p.waitForURL(base+'/talents/tal-000036/');assert.equal(await p.getByRole('link',{name:'天透あわ 初めての新髪型お披露目',exact:true}).count(),1);
+  await p.getByRole('navigation',{name:'メインナビゲーション'}).getByRole('link',{name:'音楽',exact:true}).click();await p.waitForURL(base+'/music/');
+  if(javaScriptEnabled){await p.locator('[name=q]').fill('柿崎');assert.equal(await p.locator('[data-filter-row]:visible').count(),2);await p.locator('[name=talent]').selectOption('tal-000097');assert.equal(await p.locator('#catalog-empty').isVisible(),true);await p.getByRole('button',{name:'条件を解除'}).click();await p.waitForFunction(()=>document.getElementById('catalog-empty').hidden);}
+  await noOverflow();await p.locator('h2').getByRole('link',{name:'月が綺麗ねと言われたい！',exact:true}).click();await p.waitForURL(base+'/music/songs/song-000001/');assert.match(await p.locator('main').innerText(),/柿崎ユウタ/);assert.equal(await p.locator('a[href="https://www.youtube.com/watch?v=d7SWtQptcpw"]').count()>0,true);await noOverflow();
   assert.deepEqual(errors,[]);await context.close();console.log(`Features browser passed: ${width}px, JS=${javaScriptEnabled}, release banner, events, filters, profile links, JST`);
  } }finally{await browser.close();await new Promise(r=>server.close(r));}
 })().catch(e=>{console.error(e);process.exitCode=1;});

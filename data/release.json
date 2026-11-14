@@ -1,5 +1,10 @@
 {
-  "version": "2.6.0",
-  "changes": ["イベント一覧・詳細ページを追加しました。"],
-  "featurePaths": ["/events/"]
+  "version": "2.7.0",
+  "changes": [
+    "楽曲検索・歌ってみた動画・タレント別の音楽情報を追加しました。"
+  ],
+  "featurePaths": [
+    "/events/",
+    "/music/"
+  ]
 }

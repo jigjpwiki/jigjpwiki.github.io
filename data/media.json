@@ -12,6 +12,30 @@
       "kind": "official",
       "url": "https://paletteproject.jp/makeitluminous/",
       "checkedAt": "2026-11-14T23:06:14.974778Z"
+    },
+    {
+      "id": "src-music-d7swtqptcpw",
+      "kind": "official",
+      "url": "https://www.youtube.com/watch?v=d7SWtQptcpw",
+      "checkedAt": "2026-11-14T23:02:16.705410Z"
+    },
+    {
+      "id": "src-music-e0jemzb45s8",
+      "kind": "official",
+      "url": "https://www.youtube.com/watch?v=e0JemZb45s8",
+      "checkedAt": "2026-11-14T23:02:16.705410Z"
+    },
+    {
+      "id": "src-original-jornadlorgg",
+      "kind": "official",
+      "url": "https://www.youtube.com/watch?v=jorNAdLoRGg",
+      "checkedAt": "2026-11-14T23:17:03.857033Z"
+    },
+    {
+      "id": "src-original-5jja39-69g8",
+      "kind": "official",
+      "url": "https://www.youtube.com/watch?v=5Jja39-69G8",
+      "checkedAt": "2026-11-14T23:17:03.857033Z"
     }
   ],
   "videos": [
@@ -26,6 +50,34 @@
       "availability": "public",
       "sourceRefs": [
         "src-event-awa-reveal"
+      ],
+      "visibility": "public"
+    },
+    {
+      "youtubeId": "d7SWtQptcpw",
+      "channelId": "UCbNEgJIF_ADD9e8-q7SoxCg",
+      "title": "月が綺麗ねと言われたい！ - yuta kakizaki 　cover.常磐カナメ",
+      "publishedAt": "2026-11-14T11:00:08Z",
+      "startedAt": "2026-11-14T11:00:08Z",
+      "endedAt": "2026-11-14T11:03:33Z",
+      "durationSeconds": 148,
+      "availability": "public",
+      "sourceRefs": [
+        "src-music-d7swtqptcpw"
+      ],
+      "visibility": "public"
+    },
+    {
+      "youtubeId": "e0JemZb45s8",
+      "channelId": "UCMX0Mn5PTjojdQL8MN1B5Vg",
+      "title": "【歌ってみた】レクイエム #shorts #vtuber準備中 #Vtuberなる",
+      "publishedAt": "2026-11-12T10:00:11Z",
+      "startedAt": null,
+      "endedAt": null,
+      "durationSeconds": 38,
+      "availability": "public",
+      "sourceRefs": [
+        "src-music-e0jemzb45s8"
       ],
       "visibility": "public"
     }

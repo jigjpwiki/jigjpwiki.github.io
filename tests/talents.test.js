@@ -82,6 +82,8 @@ test('build publishes only ready pages/public data and keeps schedule implementa
   execFileSync(process.execPath, [path.join(__dirname, '../scripts/build-site.js')]);
   const read = file => fs.readFileSync(path.join(root, file), 'utf8');
   assert.deepEqual(JSON.parse(read('data/talents.json')), master);
+  assert(fs.existsSync(path.join(root, 'anniversaries/index.html')));
+  assert(JSON.parse(read('data/catalog.json')).groups.every(g => g.visibility === 'public'));
   for (const file of ['data/talent-id-registry.json', 'data/youtube_cache.json', 'data/youtube_streamers.json', 'schemas', 'pages', 'docs', 'lib', 'node_modules', '.env', '.github', 'data/catalog-id-registry.json', 'data/goods.json', 'goods', 'talents/detail']) {
     assert.equal(fs.existsSync(path.join(root, file)), false, file);
   }

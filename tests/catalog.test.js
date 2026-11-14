@@ -50,10 +50,3 @@ test('calendar filters, empty states, HTML escaping and unsafe external URL supp
   m.sources=[{id:'src-x',url:'javascript:alert(1)',checkedAt:'2026-01-01T00:00:00Z'}];
   assert.equal(core.sourceLinks({sourceRefs:['src-x']},m),'');
 });
-test('published catalog files contain no ID registry, schemas, drafts or unimplemented goods', () => {
- const fs=require('node:fs');const path=require('node:path');const root=path.join(__dirname,'../_site');
- assert(fs.existsSync(path.join(root,'anniversaries/index.html')));
- const data=JSON.parse(fs.readFileSync(path.join(root,'data/catalog.json')));
- assert(data.groups.every(g=>g.visibility==='public'));
- for(const file of ['data/catalog-id-registry.json','data/goods.json','schemas/catalog.schema.json','data/talent-id-registry.json']) assert(!fs.existsSync(path.join(root,file)));
-});

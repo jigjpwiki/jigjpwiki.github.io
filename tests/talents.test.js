@@ -96,5 +96,6 @@ test('build publishes only ready pages/public data and keeps schedule implementa
   for (const file of ['assets/js/app.js', 'assets/js/schedule.js', 'assets/js/ui.js', 'assets/js/youtube-status.js']) {
     assert.equal(read(file), fs.readFileSync(path.join(__dirname, '..', file), 'utf8'));
   }
+  for (const talent of master.talents) { assert(fs.existsSync(path.join(root, 'talents', talent.id, 'index.html'))); assert.match(read('sitemap.xml'), new RegExp('/talents/' + talent.id + '/')); }
   assert.equal((read('talents/index.html').match(/class="talent-card"/g) || []).length, 4);
 });

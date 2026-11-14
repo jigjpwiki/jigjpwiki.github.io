@@ -11,6 +11,9 @@ const talents = loadTalents(root);
 const { loadCatalog, publicCatalog } = require('../lib/catalog');
 const { anniversaryPage } = require('../lib/info-pages');
 const catalog = publicCatalog(loadCatalog(talents, root));
+const { talentPage: renderTalentPage } = require('../lib/talent-details');
+const optionalFeed = name => { try { const value = JSON.parse(fs.readFileSync(path.join(root, 'data', name + '.json'), 'utf8')); return Array.isArray(value) ? value : []; } catch { return []; } };
+const feeds = { youtube: optionalFeed('youtube'), twitch: optionalFeed('twitch') };
 const output = path.join(__dirname, '..', '_site');
 fs.rmSync(output, { recursive: true, force: true });
 fs.mkdirSync(output);
@@ -33,8 +36,14 @@ fs.writeFileSync(path.join(output, 'talents/index.html'), applyNavigation(talent
 fs.writeFileSync(path.join(output, 'data/talents.json'), JSON.stringify(talents, null, 2) + '\n');
 fs.writeFileSync(path.join(output, 'data/catalog.json'), JSON.stringify({ schemaVersion: 1, sources: catalog.sources, groups: catalog.groups }) + '\n');
 fs.mkdirSync(path.join(output, 'anniversaries'));
-fs.writeFileSync(path.join(output, 'anniversaries/index.html'), anniversaryPage(talents, catalog));
+fs.writeFileSync(path.join(output, 'anniversaries/index.html'), anniversaryPage(talents, catalog, true));
 fs.writeFileSync(path.join(output, 'data/anniversaries.json'), JSON.stringify({ schemaVersion: 1, events: catalog.events }) + '\n');
+for (const talent of talents.talents) {
+  fs.mkdirSync(path.join(output, 'talents', talent.id));
+  fs.writeFileSync(path.join(output, 'talents', talent.id, 'index.html'), renderTalentPage(talent, talents, catalog, feeds));
+}
+const sitemap = fs.readFileSync(path.join(output, 'sitemap.xml'), 'utf8').replace('</urlset>', talents.talents.map(t => `<url><loc>https://www.jigdule.jp/talents/${t.id}/</loc></url>`).join('\n') + '\n</urlset>');
+fs.writeFileSync(path.join(output, 'sitemap.xml'), sitemap);
 fs.writeFileSync(path.join(output, '.nojekyll'), '');
 writeManifest(output);
 const elapsed = Math.round(performance.now() - started);

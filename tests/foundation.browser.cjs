@@ -39,7 +39,7 @@ const root = path.resolve(__dirname, '../_site');
       await Promise.all([page.waitForURL(base + '/talents/'), page.keyboard.press('Enter')]);
       assert.equal(await page.locator('.talent-card').count(), 4);
       assert.equal(await page.locator('nav [aria-current="page"]').getAttribute('href'), '/talents/');
-      assert.equal(await page.locator('a[href^="/talents/tal-"],a[href="/goods/"]').count(), 0);
+      assert.equal(await page.locator('a[href="/goods/"]').count(), 0);
       assert.equal(await page.locator('input[type="password"],form').count(), 0);
       if (javaScriptEnabled && width === 390) await page.locator('.talent-avatar img.is-loaded').first().waitFor();
       else assert.equal(await page.locator('.talent-avatar img.is-loaded').count(), 0);

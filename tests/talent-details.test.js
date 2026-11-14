@@ -16,7 +16,7 @@ test('mismatched URL, unsafe host/protocol, missing fields and duplicates cannot
 test('public profile works with missing optional data and keeps graduation separate from retirement',()=>{
  const data=publicCatalog(loadCatalog(master));const former=master.talents[3];const html=talentPage(former,master,data,{});
  assert.match(html,/旧所属：ProForma Nova/);assert.doesNotMatch(html,/>引退<|>活動終了<|agencyStatus|activityStatus|<small>tal-/);
- assert.match(html,/関連付けできる配信/);assert.match(html,/画像未確認/);
+ assert.match(html,/関連する配信・動画情報はありません/);assert.match(html,/画像未確認/);
  const t=structuredClone(person);t.profileImage=null;t.accounts=[];t.wiki=null;t.affiliations=[];
  assert.match(talentPage(t,master,{...data,events:[]},{}),/記念日はまだ登録/);
 });

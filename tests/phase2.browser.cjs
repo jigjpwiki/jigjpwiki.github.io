@@ -18,6 +18,13 @@ const root=path.resolve(__dirname,'../_site');
    await page.clock.install({time:new Date('2026-12-25T00:00:00Z')});await page.goto(base+'/anniversaries/');
    await page.waitForFunction(()=>document.getElementById('month-label').textContent==='2026-12');
    assert.match(await page.locator('#upcoming').innerText(),/真昼ねる/);
+   assert.equal(await page.locator('#calendar-reference').isVisible(),false);
+   await page.clock.setFixedTime(new Date('2026-12-31T15:00:00Z'));
+   await page.evaluate(()=>document.dispatchEvent(new Event('visibilitychange')));
+   assert.equal(await page.locator('#month-label').innerText(),'2027-01');
+   assert.match(await page.locator('#upcoming-range').innerText(),/2027-01-01から2027-01-30/);
+   await page.clock.setFixedTime(new Date('2026-12-25T00:00:00Z'));
+   await page.getByRole('button',{name:'今月',exact:true}).click();
    await page.getByRole('button',{name:'翌月',exact:true}).click();assert.equal(await page.locator('#month-label').innerText(),'2027-01');
    for(let i=0;i<2;i++)await page.getByRole('button',{name:'翌月',exact:true}).click();
    assert.equal(await page.locator('#calendar [data-event-id]').count(),4);assert.match(await page.locator('#calendar').innerText(),/2周年/);
@@ -28,12 +35,13 @@ const root=path.resolve(__dirname,'../_site');
    if(process.env.BROWSER_SCREENSHOT_DIR){fs.mkdirSync(process.env.BROWSER_SCREENSHOT_DIR,{recursive:true});await page.screenshot({path:path.join(process.env.BROWSER_SCREENSHOT_DIR,`calendar-${width}.png`),fullPage:true});}
    await page.goto(base+'/talents/');await page.getByRole('link',{name:'真昼ねる',exact:true}).click();await page.waitForURL(base+'/talents/tal-000001/');
    assert.equal(await page.getByRole('heading',{name:'真昼ねる',exact:true}).count(),1);
+   assert.match(await page.locator('main').innerText(),/サイト公開時点の保存データ/);
    assert.doesNotMatch(await page.locator('main').innerText(),/tal-000001|activityStatus|VTuber活動：/);
    await page.goto(base+'/talents/tal-000004/');assert.match(await page.locator('main').innerText(),/旧所属：ProForma Nova/);assert.doesNotMatch(await page.locator('main').innerText(),/引退|活動終了/);
    assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth),false);
    if(process.env.BROWSER_SCREENSHOT_DIR)await page.screenshot({path:path.join(process.env.BROWSER_SCREENSHOT_DIR,`profile-${width}.png`),fullPage:true});
    assert.deepEqual(errors,[]);await context.close();console.log(`Phase 2 browser passed: ${width}px, JST, month movement, filters, keyboard, no overflow`);
   }
-  const context=await browser.newContext({javaScriptEnabled:false});const page=await context.newPage();await page.goto(base+'/anniversaries/');assert.equal(await page.locator('.anniversary-calendar').count(),1);assert.equal(await page.locator('#calendar-tools').isVisible(),false);await context.close();
+  const context=await browser.newContext({javaScriptEnabled:false});const page=await context.newPage();await page.goto(base+'/anniversaries/');assert.equal(await page.locator('.anniversary-calendar').count(),1);assert.equal(await page.locator('#calendar-tools').isVisible(),false);assert.match(await page.locator('#calendar-reference').innerText(),/現在の暦ではありません/);assert.equal(await page.locator('#upcoming-heading').innerText(),'基準日から30日間');await context.close();
  }finally{await browser.close();await new Promise(r=>server.close(r));}
 })().catch(e=>{console.error(e);process.exitCode=1});

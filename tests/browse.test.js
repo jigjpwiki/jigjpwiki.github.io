@@ -9,6 +9,8 @@ test('directory combines normalized verified aliases, current/former multi-agenc
  for(const f of [{organization:'c',relation:'current'},{relation:'unknown'},{group:'missing'},{q:'internal-id'}])assert.equal(matches(p,f),false);
  assert.equal(matches({...p,current:[],former:[],groups:[]},{relation:'unknown'}),true);
  assert.equal(matches({...p,current:[],former:['c']},{relation:'former'}),true);
+ assert.equal(matches({...p,current:[],former:[],unaffiliated:true},{relation:'unknown'}),false);
+ assert.equal(matches({...p,current:[],former:[],unaffiliated:true},{relation:'unaffiliated'}),true);
 });
 test('compact calendar keeps multiple events out of cells, accessible day selection and static fallback anchors',()=>{
  const event={id:'ann-test',title:'<script>alert(1)</script>',type:'birthday',date:{year:null,month:2,day:29},recursYearly:true,countYears:false,talentIds:[],groupIds:[],sourceRefs:[]};
@@ -27,4 +29,7 @@ test('visitor cards keep current affiliations ahead of former, unknown and safe 
  assert.doesNotMatch(html,/<script>alert|<img src=x|agencyStatus|activityStatus|所属履歴/);
  const encoded=html.match(/id="directory-data">(.*?)<\/script>/)[1];
  assert.equal(JSON.parse(encoded).organizations[0].name,master.organizations[0].name);
+ master.talents[0].agencyStatus.value='unaffiliated';
+ assert.match(talentCards(master),/無所属（確認済み）/);
+ assert.doesNotMatch(talentCards(master),/所属情報は未確認/);
 });

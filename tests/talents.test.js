@@ -10,7 +10,7 @@ const registry = require('../data/talent-id-registry.json');
 const copy = () => structuredClone(master);
 const invalid = mutate => { const m = copy(); mutate(m); assert.throws(() => validateTalents(m)); };
 test('curated master and reserved identity anchors validate; official channels are excluded', () => {
-  assert.equal(loadTalents().talents.length, 4);
+  assert.equal(loadTalents().talents.length, master.talents.length);
   assert.equal(master.talents.some(t => t.displayName === 'ProForma Production'), false);
   assert.equal(master.talents.some(t => t.accounts.some(a => a.accountId === 'UClUMpS4UZ_2VrKk3HdNtIBA')), false);
   assert.equal(master.talents[3].agencyStatus.value, 'unknown');
@@ -31,8 +31,8 @@ test('rename, multiple agencies, departure, independent activity and retirement 
   const m = copy(); const t = m.talents[0]; const before = structuredClone(master);
   t.aliases.push({ name: t.displayName, type: 'former_name', from: null, to: null, sourceRefs: t.displayNameSourceRefs });
   t.displayName = '検証用の改名';
-  m.organizations.push({ id: 'org-000002', name: '検証用別事務所', sourceRefs: m.organizations[0].sourceRefs });
-  t.affiliations.push({ ...t.affiliations[0], organizationId: 'org-000002' });
+  m.organizations.push({ id: 'org-999998', name: '検証用別事務所', sourceRefs: m.organizations[0].sourceRefs });
+  t.affiliations.push({ ...t.affiliations[0], organizationId: 'org-999998' });
   assert.equal(validateTalents(m, { previous: before }).talents[0].id, master.talents[0].id);
   t.affiliations.forEach(a => { a.status = 'former'; });
   t.agencyStatus.value = 'unaffiliated'; // verified state is independent from activity
@@ -99,5 +99,5 @@ test('build publishes only ready pages/public data and keeps schedule implementa
     assert.equal(read(file), fs.readFileSync(path.join(__dirname, '..', file), 'utf8'));
   }
   for (const talent of master.talents) { assert(fs.existsSync(path.join(root, 'talents', talent.id, 'index.html'))); assert.match(read('sitemap.xml'), new RegExp('/talents/' + talent.id + '/')); }
-  assert.equal((read('talents/index.html').match(/class="talent-card"/g) || []).length, 4);
+  assert.equal((read('talents/index.html').match(/class="talent-card"/g) || []).length, master.talents.length);
 });

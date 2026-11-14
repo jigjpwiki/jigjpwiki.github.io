@@ -16,11 +16,214 @@
       "talentIds": [
         "tal-000002",
         "tal-000003",
-        "tal-000004"
+        "tal-000004",
+        "tal-000018"
       ],
       "membersComplete": false,
       "sourceRefs": [
         "src-star-debut"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "group-000002",
+      "name": "パレデミア学園 バゥ寮",
+      "organizationId": "org-000002",
+      "talentIds": [
+        "tal-000021",
+        "tal-000026",
+        "tal-000028",
+        "tal-000033",
+        "tal-000036",
+        "tal-000040",
+        "tal-000043",
+        "tal-000051",
+        "tal-000060",
+        "tal-000061",
+        "tal-000064",
+        "tal-000065",
+        "tal-000068",
+        "tal-000075",
+        "tal-000079",
+        "tal-000081"
+      ],
+      "membersComplete": false,
+      "sourceRefs": [
+        "src-v4-0274"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "group-000003",
+      "name": "パレデミア学園 ミュゥ寮",
+      "organizationId": "org-000002",
+      "talentIds": [
+        "tal-000019",
+        "tal-000025",
+        "tal-000031",
+        "tal-000037",
+        "tal-000042",
+        "tal-000045",
+        "tal-000046",
+        "tal-000047",
+        "tal-000053",
+        "tal-000054",
+        "tal-000057",
+        "tal-000059",
+        "tal-000067",
+        "tal-000071",
+        "tal-000072",
+        "tal-000073",
+        "tal-000074",
+        "tal-000078"
+      ],
+      "membersComplete": false,
+      "sourceRefs": [
+        "src-v4-0275"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "group-000004",
+      "name": "パレデミア学園 クゥ寮",
+      "organizationId": "org-000002",
+      "talentIds": [
+        "tal-000020",
+        "tal-000029",
+        "tal-000030",
+        "tal-000032",
+        "tal-000034",
+        "tal-000035",
+        "tal-000038",
+        "tal-000039",
+        "tal-000041",
+        "tal-000044",
+        "tal-000049",
+        "tal-000050",
+        "tal-000055",
+        "tal-000062",
+        "tal-000063",
+        "tal-000080"
+      ],
+      "membersComplete": false,
+      "sourceRefs": [
+        "src-v4-0276"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "group-000005",
+      "name": "パレデミア学園 ウィニー寮",
+      "organizationId": "org-000002",
+      "talentIds": [
+        "tal-000022",
+        "tal-000023",
+        "tal-000024",
+        "tal-000027",
+        "tal-000048",
+        "tal-000052",
+        "tal-000056",
+        "tal-000058",
+        "tal-000066",
+        "tal-000069",
+        "tal-000070",
+        "tal-000076",
+        "tal-000077",
+        "tal-000082"
+      ],
+      "membersComplete": false,
+      "sourceRefs": [
+        "src-v4-0277"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "group-000006",
+      "name": "ProForma Nova MOON",
+      "organizationId": "org-000001",
+      "talentIds": [
+        "tal-000001",
+        "tal-000013"
+      ],
+      "membersComplete": false,
+      "sourceRefs": [
+        "src-v4-0278",
+        "src-v4-0029"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "group-000007",
+      "name": "ProForma Nova METEOR",
+      "organizationId": "org-000001",
+      "talentIds": [
+        "tal-000014"
+      ],
+      "membersComplete": false,
+      "sourceRefs": [
+        "src-v4-0279"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "group-000008",
+      "name": "ProForma Nova STAR 2期生",
+      "organizationId": "org-000001",
+      "talentIds": [
+        "tal-000015",
+        "tal-000017",
+        "tal-000016"
+      ],
+      "membersComplete": false,
+      "sourceRefs": [
+        "src-v4-0280",
+        "src-v4-0036",
+        "src-v4-0042"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "group-000009",
+      "name": "RouteHeart",
+      "organizationId": "org-000003",
+      "talentIds": [
+        "tal-000005",
+        "tal-000010"
+      ],
+      "membersComplete": false,
+      "sourceRefs": [
+        "src-v4-0002"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "group-000010",
+      "name": "REGALILIA",
+      "organizationId": "org-000003",
+      "talentIds": [
+        "tal-000009",
+        "tal-000012",
+        "tal-000085"
+      ],
+      "membersComplete": false,
+      "sourceRefs": [
+        "src-v4-0002",
+        "src-v4-0245"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "group-000011",
+      "name": "Sputrip",
+      "organizationId": "org-000003",
+      "talentIds": [
+        "tal-000007",
+        "tal-000008",
+        "tal-000011"
+      ],
+      "membersComplete": false,
+      "sourceRefs": [
+        "src-v4-0002"
       ],
       "visibility": "public"
     }

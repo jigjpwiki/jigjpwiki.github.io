@@ -164,6 +164,1666 @@
         "src-star-debut"
       ],
       "visibility": "public"
+    },
+    {
+      "id": "ann-000009",
+      "type": "birthday",
+      "title": "七海ロナ 誕生日",
+      "talentIds": [
+        "tal-000005"
+      ],
+      "groupIds": [],
+      "date": {
+        "year": null,
+        "month": 1,
+        "day": 27
+      },
+      "recursYearly": true,
+      "countYears": false,
+      "sourceRefs": [
+        "src-v4-0005"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "ann-000010",
+      "type": "birthday",
+      "title": "夏渚まはろ 誕生日",
+      "talentIds": [
+        "tal-000006"
+      ],
+      "groupIds": [],
+      "date": {
+        "year": null,
+        "month": 8,
+        "day": 27
+      },
+      "recursYearly": true,
+      "countYears": false,
+      "sourceRefs": [
+        "src-v4-0008"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "ann-000011",
+      "type": "birthday",
+      "title": "常磐カナメ 誕生日",
+      "talentIds": [
+        "tal-000007"
+      ],
+      "groupIds": [],
+      "date": {
+        "year": null,
+        "month": 7,
+        "day": 13
+      },
+      "recursYearly": true,
+      "countYears": false,
+      "sourceRefs": [
+        "src-v4-0011"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "ann-000012",
+      "type": "birthday",
+      "title": "暁月クララ 誕生日",
+      "talentIds": [
+        "tal-000008"
+      ],
+      "groupIds": [],
+      "date": {
+        "year": null,
+        "month": 5,
+        "day": 11
+      },
+      "recursYearly": true,
+      "countYears": false,
+      "sourceRefs": [
+        "src-v4-0014"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "ann-000013",
+      "type": "birthday",
+      "title": "江波キョウカ 誕生日",
+      "talentIds": [
+        "tal-000009"
+      ],
+      "groupIds": [],
+      "date": {
+        "year": null,
+        "month": 4,
+        "day": 4
+      },
+      "recursYearly": true,
+      "countYears": false,
+      "sourceRefs": [
+        "src-v4-0017"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "ann-000014",
+      "type": "birthday",
+      "title": "藤宮コトハ 誕生日",
+      "talentIds": [
+        "tal-000010"
+      ],
+      "groupIds": [],
+      "date": {
+        "year": null,
+        "month": 11,
+        "day": 11
+      },
+      "recursYearly": true,
+      "countYears": false,
+      "sourceRefs": [
+        "src-v4-0020"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "ann-000015",
+      "type": "birthday",
+      "title": "香鳴ハノン 誕生日",
+      "talentIds": [
+        "tal-000011"
+      ],
+      "groupIds": [],
+      "date": {
+        "year": null,
+        "month": 3,
+        "day": 3
+      },
+      "recursYearly": true,
+      "countYears": false,
+      "sourceRefs": [
+        "src-v4-0023"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "ann-000016",
+      "type": "birthday",
+      "title": "鬼多見アユム 誕生日",
+      "talentIds": [
+        "tal-000012"
+      ],
+      "groupIds": [],
+      "date": {
+        "year": null,
+        "month": 9,
+        "day": 25
+      },
+      "recursYearly": true,
+      "countYears": false,
+      "sourceRefs": [
+        "src-v4-0026"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "ann-000017",
+      "type": "birthday",
+      "title": "しーはむ 誕生日",
+      "talentIds": [
+        "tal-000013"
+      ],
+      "groupIds": [],
+      "date": {
+        "year": null,
+        "month": 11,
+        "day": 27
+      },
+      "recursYearly": true,
+      "countYears": false,
+      "sourceRefs": [
+        "src-v4-0029"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "ann-000018",
+      "type": "birthday",
+      "title": "なかもとおまち 誕生日",
+      "talentIds": [
+        "tal-000014"
+      ],
+      "groupIds": [],
+      "date": {
+        "year": null,
+        "month": 8,
+        "day": 9
+      },
+      "recursYearly": true,
+      "countYears": false,
+      "sourceRefs": [
+        "src-v4-0032"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "ann-000019",
+      "type": "birthday",
+      "title": "小澄くろまる 誕生日",
+      "talentIds": [
+        "tal-000015"
+      ],
+      "groupIds": [],
+      "date": {
+        "year": null,
+        "month": 9,
+        "day": 6
+      },
+      "recursYearly": true,
+      "countYears": false,
+      "sourceRefs": [
+        "src-v4-0035"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "ann-000020",
+      "type": "birthday",
+      "title": "橙葉ぽん 誕生日",
+      "talentIds": [
+        "tal-000016"
+      ],
+      "groupIds": [],
+      "date": {
+        "year": null,
+        "month": 10,
+        "day": 8
+      },
+      "recursYearly": true,
+      "countYears": false,
+      "sourceRefs": [
+        "src-v4-0038"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "ann-000021",
+      "type": "birthday",
+      "title": "猫吸はぴ 誕生日",
+      "talentIds": [
+        "tal-000017"
+      ],
+      "groupIds": [],
+      "date": {
+        "year": null,
+        "month": 3,
+        "day": 12
+      },
+      "recursYearly": true,
+      "countYears": false,
+      "sourceRefs": [
+        "src-v4-0041"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "ann-000022",
+      "type": "birthday",
+      "title": "銘兎目あう 誕生日",
+      "talentIds": [
+        "tal-000018"
+      ],
+      "groupIds": [],
+      "date": {
+        "year": null,
+        "month": 5,
+        "day": 25
+      },
+      "recursYearly": true,
+      "countYears": false,
+      "sourceRefs": [
+        "src-v4-0044"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "ann-000023",
+      "type": "birthday",
+      "title": "さくさくさく 誕生日",
+      "talentIds": [
+        "tal-000019"
+      ],
+      "groupIds": [],
+      "date": {
+        "year": null,
+        "month": 10,
+        "day": 7
+      },
+      "recursYearly": true,
+      "countYears": false,
+      "sourceRefs": [
+        "src-v4-0047"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "ann-000024",
+      "type": "birthday",
+      "title": "シグマ・イングラム 誕生日",
+      "talentIds": [
+        "tal-000020"
+      ],
+      "groupIds": [],
+      "date": {
+        "year": null,
+        "month": 4,
+        "day": 2
+      },
+      "recursYearly": true,
+      "countYears": false,
+      "sourceRefs": [
+        "src-v4-0050"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "ann-000025",
+      "type": "birthday",
+      "title": "フローレ・ブランカ 誕生日",
+      "talentIds": [
+        "tal-000021"
+      ],
+      "groupIds": [],
+      "date": {
+        "year": null,
+        "month": 9,
+        "day": 30
+      },
+      "recursYearly": true,
+      "countYears": false,
+      "sourceRefs": [
+        "src-v4-0053"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "ann-000026",
+      "type": "birthday",
+      "title": "ローズ・ダマスクハート 誕生日",
+      "talentIds": [
+        "tal-000022"
+      ],
+      "groupIds": [],
+      "date": {
+        "year": null,
+        "month": 2,
+        "day": 7
+      },
+      "recursYearly": true,
+      "countYears": false,
+      "sourceRefs": [
+        "src-v4-0056"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "ann-000027",
+      "type": "birthday",
+      "title": "七音うら 誕生日",
+      "talentIds": [
+        "tal-000023"
+      ],
+      "groupIds": [],
+      "date": {
+        "year": null,
+        "month": 5,
+        "day": 17
+      },
+      "recursYearly": true,
+      "countYears": false,
+      "sourceRefs": [
+        "src-v4-0059"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "ann-000028",
+      "type": "birthday",
+      "title": "久堂れしあ 誕生日",
+      "talentIds": [
+        "tal-000024"
+      ],
+      "groupIds": [],
+      "date": {
+        "year": null,
+        "month": 12,
+        "day": 5
+      },
+      "recursYearly": true,
+      "countYears": false,
+      "sourceRefs": [
+        "src-v4-0062"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "ann-000029",
+      "type": "birthday",
+      "title": "亀城ちかり 誕生日",
+      "talentIds": [
+        "tal-000025"
+      ],
+      "groupIds": [],
+      "date": {
+        "year": null,
+        "month": 3,
+        "day": 13
+      },
+      "recursYearly": true,
+      "countYears": false,
+      "sourceRefs": [
+        "src-v4-0065"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "ann-000030",
+      "type": "birthday",
+      "title": "冬星れんこん 誕生日",
+      "talentIds": [
+        "tal-000026"
+      ],
+      "groupIds": [],
+      "date": {
+        "year": null,
+        "month": 1,
+        "day": 15
+      },
+      "recursYearly": true,
+      "countYears": false,
+      "sourceRefs": [
+        "src-v4-0068"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "ann-000031",
+      "type": "birthday",
+      "title": "四葉みっけ 誕生日",
+      "talentIds": [
+        "tal-000027"
+      ],
+      "groupIds": [],
+      "date": {
+        "year": null,
+        "month": 4,
+        "day": 3
+      },
+      "recursYearly": true,
+      "countYears": false,
+      "sourceRefs": [
+        "src-v4-0071"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "ann-000032",
+      "type": "birthday",
+      "title": "堂下さとり 誕生日",
+      "talentIds": [
+        "tal-000028"
+      ],
+      "groupIds": [],
+      "date": {
+        "year": null,
+        "month": 6,
+        "day": 24
+      },
+      "recursYearly": true,
+      "countYears": false,
+      "sourceRefs": [
+        "src-v4-0074"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "ann-000033",
+      "type": "birthday",
+      "title": "夏凪はつみ 誕生日",
+      "talentIds": [
+        "tal-000029"
+      ],
+      "groupIds": [],
+      "date": {
+        "year": null,
+        "month": 8,
+        "day": 23
+      },
+      "recursYearly": true,
+      "countYears": false,
+      "sourceRefs": [
+        "src-v4-0077"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "ann-000034",
+      "type": "birthday",
+      "title": "夕凪万夜 誕生日",
+      "talentIds": [
+        "tal-000030"
+      ],
+      "groupIds": [],
+      "date": {
+        "year": null,
+        "month": 7,
+        "day": 21
+      },
+      "recursYearly": true,
+      "countYears": false,
+      "sourceRefs": [
+        "src-v4-0080"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "ann-000035",
+      "type": "birthday",
+      "title": "夜宵カレン 誕生日",
+      "talentIds": [
+        "tal-000031"
+      ],
+      "groupIds": [],
+      "date": {
+        "year": null,
+        "month": 7,
+        "day": 26
+      },
+      "recursYearly": true,
+      "countYears": false,
+      "sourceRefs": [
+        "src-v4-0083"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "ann-000036",
+      "type": "birthday",
+      "title": "夜雨ねむる 誕生日",
+      "talentIds": [
+        "tal-000032"
+      ],
+      "groupIds": [],
+      "date": {
+        "year": null,
+        "month": 8,
+        "day": 6
+      },
+      "recursYearly": true,
+      "countYears": false,
+      "sourceRefs": [
+        "src-v4-0086"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "ann-000037",
+      "type": "birthday",
+      "title": "夢ト見りんね 誕生日",
+      "talentIds": [
+        "tal-000033"
+      ],
+      "groupIds": [],
+      "date": {
+        "year": null,
+        "month": 9,
+        "day": 5
+      },
+      "recursYearly": true,
+      "countYears": false,
+      "sourceRefs": [
+        "src-v4-0089"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "ann-000038",
+      "type": "birthday",
+      "title": "天堂ライラ 誕生日",
+      "talentIds": [
+        "tal-000034"
+      ],
+      "groupIds": [],
+      "date": {
+        "year": null,
+        "month": 4,
+        "day": 17
+      },
+      "recursYearly": true,
+      "countYears": false,
+      "sourceRefs": [
+        "src-v4-0092"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "ann-000039",
+      "type": "birthday",
+      "title": "天辻ゆらぐ 誕生日",
+      "talentIds": [
+        "tal-000035"
+      ],
+      "groupIds": [],
+      "date": {
+        "year": null,
+        "month": 5,
+        "day": 12
+      },
+      "recursYearly": true,
+      "countYears": false,
+      "sourceRefs": [
+        "src-v4-0095"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "ann-000040",
+      "type": "birthday",
+      "title": "天透あわ 誕生日",
+      "talentIds": [
+        "tal-000036"
+      ],
+      "groupIds": [],
+      "date": {
+        "year": null,
+        "month": 3,
+        "day": 8
+      },
+      "recursYearly": true,
+      "countYears": false,
+      "sourceRefs": [
+        "src-v4-0098"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "ann-000041",
+      "type": "birthday",
+      "title": "天麗らん 誕生日",
+      "talentIds": [
+        "tal-000037"
+      ],
+      "groupIds": [],
+      "date": {
+        "year": null,
+        "month": 9,
+        "day": 23
+      },
+      "recursYearly": true,
+      "countYears": false,
+      "sourceRefs": [
+        "src-v4-0101"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "ann-000042",
+      "type": "birthday",
+      "title": "宵坂伊織 誕生日",
+      "talentIds": [
+        "tal-000038"
+      ],
+      "groupIds": [],
+      "date": {
+        "year": null,
+        "month": 5,
+        "day": 10
+      },
+      "recursYearly": true,
+      "countYears": false,
+      "sourceRefs": [
+        "src-v4-0104"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "ann-000043",
+      "type": "birthday",
+      "title": "山田スバル 誕生日",
+      "talentIds": [
+        "tal-000039"
+      ],
+      "groupIds": [],
+      "date": {
+        "year": null,
+        "month": 9,
+        "day": 1
+      },
+      "recursYearly": true,
+      "countYears": false,
+      "sourceRefs": [
+        "src-v4-0107"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "ann-000044",
+      "type": "birthday",
+      "title": "巳野みこと 誕生日",
+      "talentIds": [
+        "tal-000040"
+      ],
+      "groupIds": [],
+      "date": {
+        "year": null,
+        "month": 11,
+        "day": 19
+      },
+      "recursYearly": true,
+      "countYears": false,
+      "sourceRefs": [
+        "src-v4-0110"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "ann-000045",
+      "type": "birthday",
+      "title": "彼方ルカ 誕生日",
+      "talentIds": [
+        "tal-000041"
+      ],
+      "groupIds": [],
+      "date": {
+        "year": null,
+        "month": 2,
+        "day": 20
+      },
+      "recursYearly": true,
+      "countYears": false,
+      "sourceRefs": [
+        "src-v4-0113"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "ann-000046",
+      "type": "birthday",
+      "title": "恋歌さわこ 誕生日",
+      "talentIds": [
+        "tal-000042"
+      ],
+      "groupIds": [],
+      "date": {
+        "year": null,
+        "month": 6,
+        "day": 2
+      },
+      "recursYearly": true,
+      "countYears": false,
+      "sourceRefs": [
+        "src-v4-0116"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "ann-000047",
+      "type": "birthday",
+      "title": "愛上オハナ 誕生日",
+      "talentIds": [
+        "tal-000043"
+      ],
+      "groupIds": [],
+      "date": {
+        "year": null,
+        "month": 8,
+        "day": 7
+      },
+      "recursYearly": true,
+      "countYears": false,
+      "sourceRefs": [
+        "src-v4-0119"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "ann-000048",
+      "type": "birthday",
+      "title": "愛乃宮ゆめ 誕生日",
+      "talentIds": [
+        "tal-000044"
+      ],
+      "groupIds": [],
+      "date": {
+        "year": null,
+        "month": 5,
+        "day": 14
+      },
+      "recursYearly": true,
+      "countYears": false,
+      "sourceRefs": [
+        "src-v4-0122"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "ann-000049",
+      "type": "birthday",
+      "title": "愛葉はな 誕生日",
+      "talentIds": [
+        "tal-000045"
+      ],
+      "groupIds": [],
+      "date": {
+        "year": null,
+        "month": 11,
+        "day": 1
+      },
+      "recursYearly": true,
+      "countYears": false,
+      "sourceRefs": [
+        "src-v4-0125"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "ann-000050",
+      "type": "birthday",
+      "title": "新巻るろな 誕生日",
+      "talentIds": [
+        "tal-000046"
+      ],
+      "groupIds": [],
+      "date": {
+        "year": null,
+        "month": 2,
+        "day": 22
+      },
+      "recursYearly": true,
+      "countYears": false,
+      "sourceRefs": [
+        "src-v4-0128"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "ann-000051",
+      "type": "birthday",
+      "title": "東雲アカリ 誕生日",
+      "talentIds": [
+        "tal-000047"
+      ],
+      "groupIds": [],
+      "date": {
+        "year": null,
+        "month": 5,
+        "day": 30
+      },
+      "recursYearly": true,
+      "countYears": false,
+      "sourceRefs": [
+        "src-v4-0131"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "ann-000052",
+      "type": "birthday",
+      "title": "桜堂ねる 誕生日",
+      "talentIds": [
+        "tal-000048"
+      ],
+      "groupIds": [],
+      "date": {
+        "year": null,
+        "month": 9,
+        "day": 20
+      },
+      "recursYearly": true,
+      "countYears": false,
+      "sourceRefs": [
+        "src-v4-0134"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "ann-000053",
+      "type": "birthday",
+      "title": "桜庭羽奈 誕生日",
+      "talentIds": [
+        "tal-000049"
+      ],
+      "groupIds": [],
+      "date": {
+        "year": null,
+        "month": 7,
+        "day": 18
+      },
+      "recursYearly": true,
+      "countYears": false,
+      "sourceRefs": [
+        "src-v4-0137"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "ann-000054",
+      "type": "birthday",
+      "title": "桜雲ほわり 誕生日",
+      "talentIds": [
+        "tal-000050"
+      ],
+      "groupIds": [],
+      "date": {
+        "year": null,
+        "month": 1,
+        "day": 20
+      },
+      "recursYearly": true,
+      "countYears": false,
+      "sourceRefs": [
+        "src-v4-0140"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "ann-000055",
+      "type": "birthday",
+      "title": "水凪るぅ 誕生日",
+      "talentIds": [
+        "tal-000051"
+      ],
+      "groupIds": [],
+      "date": {
+        "year": null,
+        "month": 10,
+        "day": 21
+      },
+      "recursYearly": true,
+      "countYears": false,
+      "sourceRefs": [
+        "src-v4-0143"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "ann-000056",
+      "type": "birthday",
+      "title": "水無瀬天 誕生日",
+      "talentIds": [
+        "tal-000052"
+      ],
+      "groupIds": [],
+      "date": {
+        "year": null,
+        "month": 3,
+        "day": 29
+      },
+      "recursYearly": true,
+      "countYears": false,
+      "sourceRefs": [
+        "src-v4-0146"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "ann-000057",
+      "type": "birthday",
+      "title": "氷雨セイ 誕生日",
+      "talentIds": [
+        "tal-000053"
+      ],
+      "groupIds": [],
+      "date": {
+        "year": null,
+        "month": 4,
+        "day": 18
+      },
+      "recursYearly": true,
+      "countYears": false,
+      "sourceRefs": [
+        "src-v4-0149"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "ann-000058",
+      "type": "birthday",
+      "title": "汐月永遠 誕生日",
+      "talentIds": [
+        "tal-000054"
+      ],
+      "groupIds": [],
+      "date": {
+        "year": null,
+        "month": 6,
+        "day": 17
+      },
+      "recursYearly": true,
+      "countYears": false,
+      "sourceRefs": [
+        "src-v4-0152"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "ann-000059",
+      "type": "birthday",
+      "title": "瀬奈りるか 誕生日",
+      "talentIds": [
+        "tal-000055"
+      ],
+      "groupIds": [],
+      "date": {
+        "year": null,
+        "month": 7,
+        "day": 3
+      },
+      "recursYearly": true,
+      "countYears": false,
+      "sourceRefs": [
+        "src-v4-0155"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "ann-000060",
+      "type": "birthday",
+      "title": "火狐むい 誕生日",
+      "talentIds": [
+        "tal-000056"
+      ],
+      "groupIds": [],
+      "date": {
+        "year": null,
+        "month": 8,
+        "day": 14
+      },
+      "recursYearly": true,
+      "countYears": false,
+      "sourceRefs": [
+        "src-v4-0158"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "ann-000061",
+      "type": "birthday",
+      "title": "灯野ぺけ。 誕生日",
+      "talentIds": [
+        "tal-000057"
+      ],
+      "groupIds": [],
+      "date": {
+        "year": null,
+        "month": 9,
+        "day": 3
+      },
+      "recursYearly": true,
+      "countYears": false,
+      "sourceRefs": [
+        "src-v4-0161"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "ann-000062",
+      "type": "birthday",
+      "title": "無月いお 誕生日",
+      "talentIds": [
+        "tal-000058"
+      ],
+      "groupIds": [],
+      "date": {
+        "year": null,
+        "month": 3,
+        "day": 9
+      },
+      "recursYearly": true,
+      "countYears": false,
+      "sourceRefs": [
+        "src-v4-0164"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "ann-000063",
+      "type": "birthday",
+      "title": "牡丹雪 誕生日",
+      "talentIds": [
+        "tal-000059"
+      ],
+      "groupIds": [],
+      "date": {
+        "year": null,
+        "month": 11,
+        "day": 9
+      },
+      "recursYearly": true,
+      "countYears": false,
+      "sourceRefs": [
+        "src-v4-0167"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "ann-000064",
+      "type": "birthday",
+      "title": "犬丸なでこ 誕生日",
+      "talentIds": [
+        "tal-000060"
+      ],
+      "groupIds": [],
+      "date": {
+        "year": null,
+        "month": 1,
+        "day": 25
+      },
+      "recursYearly": true,
+      "countYears": false,
+      "sourceRefs": [
+        "src-v4-0170"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "ann-000065",
+      "type": "birthday",
+      "title": "狛社なの 誕生日",
+      "talentIds": [
+        "tal-000061"
+      ],
+      "groupIds": [],
+      "date": {
+        "year": null,
+        "month": 11,
+        "day": 15
+      },
+      "recursYearly": true,
+      "countYears": false,
+      "sourceRefs": [
+        "src-v4-0173"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "ann-000066",
+      "type": "birthday",
+      "title": "猫乃間うと 誕生日",
+      "talentIds": [
+        "tal-000062"
+      ],
+      "groupIds": [],
+      "date": {
+        "year": null,
+        "month": 12,
+        "day": 22
+      },
+      "recursYearly": true,
+      "countYears": false,
+      "sourceRefs": [
+        "src-v4-0176"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "ann-000067",
+      "type": "birthday",
+      "title": "畑スイカ 誕生日",
+      "talentIds": [
+        "tal-000063"
+      ],
+      "groupIds": [],
+      "date": {
+        "year": null,
+        "month": 8,
+        "day": 8
+      },
+      "recursYearly": true,
+      "countYears": false,
+      "sourceRefs": [
+        "src-v4-0179"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "ann-000068",
+      "type": "birthday",
+      "title": "白尾すず 誕生日",
+      "talentIds": [
+        "tal-000064"
+      ],
+      "groupIds": [],
+      "date": {
+        "year": null,
+        "month": 2,
+        "day": 18
+      },
+      "recursYearly": true,
+      "countYears": false,
+      "sourceRefs": [
+        "src-v4-0182"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "ann-000069",
+      "type": "birthday",
+      "title": "相栖るじゅ 誕生日",
+      "talentIds": [
+        "tal-000065"
+      ],
+      "groupIds": [],
+      "date": {
+        "year": null,
+        "month": 7,
+        "day": 12
+      },
+      "recursYearly": true,
+      "countYears": false,
+      "sourceRefs": [
+        "src-v4-0185"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "ann-000070",
+      "type": "birthday",
+      "title": "緋月・ローズ・ブレイド 誕生日",
+      "talentIds": [
+        "tal-000066"
+      ],
+      "groupIds": [],
+      "date": {
+        "year": null,
+        "month": 11,
+        "day": 26
+      },
+      "recursYearly": true,
+      "countYears": false,
+      "sourceRefs": [
+        "src-v4-0188"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "ann-000071",
+      "type": "birthday",
+      "title": "緋雨柚 誕生日",
+      "talentIds": [
+        "tal-000067"
+      ],
+      "groupIds": [],
+      "date": {
+        "year": null,
+        "month": 6,
+        "day": 21
+      },
+      "recursYearly": true,
+      "countYears": false,
+      "sourceRefs": [
+        "src-v4-0191"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "ann-000072",
+      "type": "birthday",
+      "title": "翡翠あかね 誕生日",
+      "talentIds": [
+        "tal-000068"
+      ],
+      "groupIds": [],
+      "date": {
+        "year": null,
+        "month": 5,
+        "day": 23
+      },
+      "recursYearly": true,
+      "countYears": false,
+      "sourceRefs": [
+        "src-v4-0194"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "ann-000073",
+      "type": "birthday",
+      "title": "花晴りら 誕生日",
+      "talentIds": [
+        "tal-000069"
+      ],
+      "groupIds": [],
+      "date": {
+        "year": null,
+        "month": 8,
+        "day": 22
+      },
+      "recursYearly": true,
+      "countYears": false,
+      "sourceRefs": [
+        "src-v4-0197"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "ann-000074",
+      "type": "birthday",
+      "title": "藤森ちとせ 誕生日",
+      "talentIds": [
+        "tal-000070"
+      ],
+      "groupIds": [],
+      "date": {
+        "year": null,
+        "month": 1,
+        "day": 31
+      },
+      "recursYearly": true,
+      "countYears": false,
+      "sourceRefs": [
+        "src-v4-0200"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "ann-000075",
+      "type": "birthday",
+      "title": "鈴木沙透 誕生日",
+      "talentIds": [
+        "tal-000071"
+      ],
+      "groupIds": [],
+      "date": {
+        "year": null,
+        "month": 3,
+        "day": 31
+      },
+      "recursYearly": true,
+      "countYears": false,
+      "sourceRefs": [
+        "src-v4-0203"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "ann-000076",
+      "type": "birthday",
+      "title": "銀河キララ 誕生日",
+      "talentIds": [
+        "tal-000072"
+      ],
+      "groupIds": [],
+      "date": {
+        "year": null,
+        "month": 7,
+        "day": 7
+      },
+      "recursYearly": true,
+      "countYears": false,
+      "sourceRefs": [
+        "src-v4-0206"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "ann-000077",
+      "type": "birthday",
+      "title": "陰山アゲハ 誕生日",
+      "talentIds": [
+        "tal-000073"
+      ],
+      "groupIds": [],
+      "date": {
+        "year": null,
+        "month": 10,
+        "day": 11
+      },
+      "recursYearly": true,
+      "countYears": false,
+      "sourceRefs": [
+        "src-v4-0209"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "ann-000078",
+      "type": "birthday",
+      "title": "雛菊のん 誕生日",
+      "talentIds": [
+        "tal-000074"
+      ],
+      "groupIds": [],
+      "date": {
+        "year": null,
+        "month": 2,
+        "day": 25
+      },
+      "recursYearly": true,
+      "countYears": false,
+      "sourceRefs": [
+        "src-v4-0212"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "ann-000079",
+      "type": "birthday",
+      "title": "雨海まる 誕生日",
+      "talentIds": [
+        "tal-000075"
+      ],
+      "groupIds": [],
+      "date": {
+        "year": null,
+        "month": 2,
+        "day": 28
+      },
+      "recursYearly": true,
+      "countYears": false,
+      "sourceRefs": [
+        "src-v4-0215"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "ann-000080",
+      "type": "birthday",
+      "title": "雪紫誉 誕生日",
+      "talentIds": [
+        "tal-000076"
+      ],
+      "groupIds": [],
+      "date": {
+        "year": null,
+        "month": 2,
+        "day": 17
+      },
+      "recursYearly": true,
+      "countYears": false,
+      "sourceRefs": [
+        "src-v4-0218"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "ann-000081",
+      "type": "birthday",
+      "title": "露草なぎ 誕生日",
+      "talentIds": [
+        "tal-000077"
+      ],
+      "groupIds": [],
+      "date": {
+        "year": null,
+        "month": 1,
+        "day": 11
+      },
+      "recursYearly": true,
+      "countYears": false,
+      "sourceRefs": [
+        "src-v4-0221"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "ann-000082",
+      "type": "birthday",
+      "title": "音海まいる 誕生日",
+      "talentIds": [
+        "tal-000078"
+      ],
+      "groupIds": [],
+      "date": {
+        "year": null,
+        "month": 12,
+        "day": 9
+      },
+      "recursYearly": true,
+      "countYears": false,
+      "sourceRefs": [
+        "src-v4-0224"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "ann-000083",
+      "type": "birthday",
+      "title": "飛渡ココ 誕生日",
+      "talentIds": [
+        "tal-000079"
+      ],
+      "groupIds": [],
+      "date": {
+        "year": null,
+        "month": 8,
+        "day": 10
+      },
+      "recursYearly": true,
+      "countYears": false,
+      "sourceRefs": [
+        "src-v4-0227"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "ann-000084",
+      "type": "birthday",
+      "title": "香桜あんにん 誕生日",
+      "talentIds": [
+        "tal-000080"
+      ],
+      "groupIds": [],
+      "date": {
+        "year": null,
+        "month": 3,
+        "day": 27
+      },
+      "recursYearly": true,
+      "countYears": false,
+      "sourceRefs": [
+        "src-v4-0230"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "ann-000085",
+      "type": "birthday",
+      "title": "黄金つむぎ 誕生日",
+      "talentIds": [
+        "tal-000081"
+      ],
+      "groupIds": [],
+      "date": {
+        "year": null,
+        "month": 11,
+        "day": 30
+      },
+      "recursYearly": true,
+      "countYears": false,
+      "sourceRefs": [
+        "src-v4-0233"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "ann-000086",
+      "type": "birthday",
+      "title": "黒鋼亜華 誕生日",
+      "talentIds": [
+        "tal-000082"
+      ],
+      "groupIds": [],
+      "date": {
+        "year": null,
+        "month": 11,
+        "day": 8
+      },
+      "recursYearly": true,
+      "countYears": false,
+      "sourceRefs": [
+        "src-v4-0236"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "ann-000087",
+      "type": "debut",
+      "title": "銘兎目あう デビュー記念日",
+      "talentIds": [
+        "tal-000018"
+      ],
+      "groupIds": [],
+      "date": {
+        "year": 2025,
+        "month": 3,
+        "day": 7
+      },
+      "recursYearly": true,
+      "countYears": true,
+      "sourceRefs": [
+        "src-v4-0281"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "ann-000088",
+      "type": "debut",
+      "title": "小澄くろまる デビュー記念日",
+      "talentIds": [
+        "tal-000015"
+      ],
+      "groupIds": [],
+      "date": {
+        "year": 2026,
+        "month": 8,
+        "day": 21
+      },
+      "recursYearly": true,
+      "countYears": true,
+      "sourceRefs": [
+        "src-v4-0036"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "ann-000089",
+      "type": "debut",
+      "title": "しーはむ デビュー記念日",
+      "talentIds": [
+        "tal-000013"
+      ],
+      "groupIds": [],
+      "date": {
+        "year": null,
+        "month": 2,
+        "day": 10
+      },
+      "recursYearly": true,
+      "countYears": false,
+      "sourceRefs": [
+        "src-v4-0030"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "ann-000090",
+      "type": "debut",
+      "title": "橙葉ぽん デビュー記念日",
+      "talentIds": [
+        "tal-000016"
+      ],
+      "groupIds": [],
+      "date": {
+        "year": null,
+        "month": 8,
+        "day": 21
+      },
+      "recursYearly": true,
+      "countYears": false,
+      "sourceRefs": [
+        "src-v4-0039"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "ann-000091",
+      "type": "debut",
+      "title": "秋桜しゅお デビュー記念日",
+      "talentIds": [
+        "tal-000083"
+      ],
+      "groupIds": [],
+      "date": {
+        "year": 2024,
+        "month": 12,
+        "day": 1
+      },
+      "recursYearly": true,
+      "countYears": true,
+      "sourceRefs": [
+        "src-v4-0240"
+      ],
+      "visibility": "public"
     }
   ]
 }

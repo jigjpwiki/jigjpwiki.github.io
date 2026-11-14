@@ -1855,7 +1855,7 @@
     "date": "2026-11-13T17:00:29.000Z",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/vS97VrYmRgo/mqdefault.jpg?v=6af73f91",
+    "thumbnail": "https://i.ytimg.com/vi/vS97VrYmRgo/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/1if2rdJdkKHQBsQt5RZ4twlSmWQPwGGt0mxNiloT9Ee7L8caGbGaIVy3HnJdXX-BUhHUeBAo-xY=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=vS97VrYmRgo"
   },
@@ -1867,7 +1867,7 @@
     "date": "2026-11-13T21:59:44.000Z",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/ENMDuHvZGaU/mqdefault.jpg?v=6af7343f",
+    "thumbnail": "https://i.ytimg.com/vi/ENMDuHvZGaU/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/CH5JMWVQZ_RtloaXoj6W-yXjo9x8UxXSBG_vMyDnfk7M2QTOApVE1zOesu_aDrSAqvDbGrUyxs0=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=ENMDuHvZGaU"
   },
@@ -1927,7 +1927,7 @@
     "date": "2026-11-14T03:35:48.000Z",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/USO9u5UQ4GY/mqdefault.jpg?v=6af7d649",
+    "thumbnail": "https://i.ytimg.com/vi/USO9u5UQ4GY/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/dPJHngNTeEfD_K0Mus141-We4xIuAhttm2pgEBl3VdGXqWvxGfy5mJfDMDbBmwI6UGc17dXb-g=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=USO9u5UQ4GY"
   },
@@ -1956,28 +1956,28 @@
     "url": "https://www.youtube.com/watch?v=QA5Ng08wtE4"
   },
   {
-    "videoId": "-kR7Kqqy6Vs",
-    "name": "天透あわ",
-    "youtubeid": "UCXI0W_Os-BCIngpCb1YnOow",
-    "title": "【新髪型お披露目】初めての新髪型🫧✨️スクショタイムもあるよ📸【天透あわ/パレデミア学園】",
-    "date": "2026-11-14T06:00:00.000Z",
-    "status": "upcoming",
-    "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/-kR7Kqqy6Vs/mqdefault.jpg?v=6af2efa7",
-    "channelIcon": "https://yt3.ggpht.com/Me8I_Op8OlIy8Vuj387_Hdi6gnrZ-qiY1yDDt1Q5yKMKA51ISagT76HE01gw8xbLcef0vpsPgoc=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=-kR7Kqqy6Vs"
-  },
-  {
     "videoId": "SSdhMKa-kSo",
     "name": "江波キョウカ",
     "youtubeid": "UChpkyQ3O21OnkcMcgCoNHCg",
     "title": "꒰ঌ ATMOSFAR #PR┆天空のオープンワールド！探索の相棒は小型飛行艇！？【 #江波キョウカ / パレプロ 】",
-    "date": "2026-11-14T06:00:00.000Z",
-    "status": "upcoming",
+    "date": "2026-11-14T06:00:25.000Z",
+    "status": "live",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/SSdhMKa-kSo/mqdefault.jpg?v=6af7eb96",
     "channelIcon": "https://yt3.ggpht.com/pM4ZefnBFJ2qlBEqknYCFHdW6dLH29KptwG0OYSu1-mAVAIy5M1IjwpMwC24-A_v07nluGGrlQ=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=SSdhMKa-kSo"
+  },
+  {
+    "videoId": "-kR7Kqqy6Vs",
+    "name": "天透あわ",
+    "youtubeid": "UCXI0W_Os-BCIngpCb1YnOow",
+    "title": "【新髪型お披露目】初めての新髪型🫧✨️スクショタイムもあるよ📸【天透あわ/パレデミア学園】",
+    "date": "2026-11-14T06:00:26.000Z",
+    "status": "archive",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/-kR7Kqqy6Vs/mqdefault.jpg?v=6af2efa7",
+    "channelIcon": "https://yt3.ggpht.com/Me8I_Op8OlIy8Vuj387_Hdi6gnrZ-qiY1yDDt1Q5yKMKA51ISagT76HE01gw8xbLcef0vpsPgoc=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=-kR7Kqqy6Vs"
   },
   {
     "videoId": "eBP7WdN-Epw",

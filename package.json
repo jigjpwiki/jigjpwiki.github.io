@@ -3,13 +3,15 @@
   "version": "1.0.0",
   "main": "fetch_twitch.js",
   "dependencies": {
+    "ajv": "8.17.1",
     "node-fetch": "^2.6.11"
   },
   "scripts": {
     "check": "node scripts/check.js",
     "test": "node --test tests/*.test.js",
     "build": "node scripts/build-site.js",
-    "test:browser": "node tests/browser.cjs"
+    "test:browser": "node tests/browser.cjs && node tests/foundation.browser.cjs",
+    "validate:talents": "node scripts/validate-talents.js"
   },
   "engines": {
     "node": ">=22"

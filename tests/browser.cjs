@@ -82,6 +82,11 @@ const fixture = [
         assert.ok(positions[1].x >= positions[0].x + positions[0].width, 'columns do not overlap');
         assert.ok(positions[2].y > positions[0].y, 'third card starts the next row');
       }
+      // Common navigation must not interfere with the existing Swiper controls.
+      await page.locator('#next-button').click();
+      await page.waitForFunction(() => document.querySelector('.videolist-container').swiper.activeIndex === 4);
+      await page.locator('#prev-button').click();
+      await page.waitForFunction(() => document.querySelector('.videolist-container').swiper.activeIndex === 3);
       await page.evaluate(() => {
         window.__renderCount = 0;
         new MutationObserver(() => window.__renderCount++).observe(document.getElementById('videolist'), { childList: true });

@@ -1,0 +1,370 @@
+{
+  "schemaVersion": 1,
+  "sources": [
+    {
+      "id": "src-proforma-roster",
+      "kind": "official",
+      "url": "https://www.proforma-production.jp/talents",
+      "checkedAt": "2026-11-14T17:29:58.579Z"
+    },
+    {
+      "id": "src-mahiru-neru",
+      "kind": "official",
+      "url": "https://www.proforma-production.jp/t/mahiru-neru",
+      "checkedAt": "2026-11-14T17:29:58.579Z"
+    },
+    {
+      "id": "src-wiki-mahiru-neru",
+      "kind": "wiki",
+      "url": "https://wikiwiki.jp/jigjp/%E7%9C%9F%E6%98%BC%E3%81%AD%E3%82%8B",
+      "checkedAt": "2026-11-14T17:29:58.579Z"
+    },
+    {
+      "id": "src-youtube-mahiru-neru",
+      "kind": "official",
+      "url": "https://www.youtube.com/channel/UCI-8WyYqMymGPw9vg55HXDQ",
+      "checkedAt": "2026-11-14T17:29:58.579Z"
+    },
+    {
+      "id": "src-hinoha-rui",
+      "kind": "official",
+      "url": "https://www.proforma-production.jp/t/hinoha-rui",
+      "checkedAt": "2026-11-14T17:29:58.579Z"
+    },
+    {
+      "id": "src-wiki-hinoha-rui",
+      "kind": "wiki",
+      "url": "https://wikiwiki.jp/jigjp/%E7%81%AB%E4%B9%83%E6%99%B4%E3%82%8B%E3%81%84",
+      "checkedAt": "2026-11-14T17:29:58.579Z"
+    },
+    {
+      "id": "src-youtube-hinoha-rui",
+      "kind": "official",
+      "url": "https://www.youtube.com/channel/UCVI8oEcv0MArpjPdwlRgYRw",
+      "checkedAt": "2026-11-14T17:29:58.579Z"
+    },
+    {
+      "id": "src-minato-yu",
+      "kind": "official",
+      "url": "https://www.proforma-production.jp/t/minato-yu",
+      "checkedAt": "2026-11-14T17:29:58.579Z"
+    },
+    {
+      "id": "src-wiki-minato-yu",
+      "kind": "wiki",
+      "url": "https://wikiwiki.jp/jigjp/%E6%B0%B4%E9%80%8F%E3%83%A6%E3%82%A6",
+      "checkedAt": "2026-11-14T17:29:58.579Z"
+    },
+    {
+      "id": "src-youtube-minato-yu",
+      "kind": "official",
+      "url": "https://www.youtube.com/channel/UCOah55SQYynzPgQQ4wxuzkA",
+      "checkedAt": "2026-11-14T17:29:58.579Z"
+    },
+    {
+      "id": "src-lee-jupita",
+      "kind": "official",
+      "url": "https://www.proforma-production.jp/t/lee-jupita",
+      "checkedAt": "2026-11-14T17:29:58.579Z"
+    },
+    {
+      "id": "src-wiki-lee-jupita",
+      "kind": "wiki",
+      "url": "https://wikiwiki.jp/jigjp/%E6%9D%8E%E3%81%98%E3%82%85%E3%81%B4%E6%B1%B0",
+      "checkedAt": "2026-11-14T17:29:58.579Z"
+    }
+  ],
+  "organizations": [
+    {
+      "id": "org-000001",
+      "name": "ProForma Nova",
+      "sourceRefs": [
+        "src-proforma-roster"
+      ]
+    }
+  ],
+  "talents": [
+    {
+      "id": "tal-000001",
+      "displayName": "真昼ねる",
+      "displayNameSourceRefs": [
+        "src-mahiru-neru",
+        "src-wiki-mahiru-neru"
+      ],
+      "aliases": [],
+      "affiliations": [
+        {
+          "organizationId": "org-000001",
+          "status": "current",
+          "from": null,
+          "to": null,
+          "sourceRefs": [
+            "src-proforma-roster"
+          ]
+        }
+      ],
+      "agencyStatus": {
+        "value": "affiliated",
+        "sourceRefs": [
+          "src-proforma-roster"
+        ]
+      },
+      "activityStatus": {
+        "value": "active",
+        "sourceRefs": [
+          "src-youtube-mahiru-neru"
+        ]
+      },
+      "accounts": [
+        {
+          "service": "youtube",
+          "accountId": "UCI-8WyYqMymGPw9vg55HXDQ",
+          "url": "https://www.youtube.com/channel/UCI-8WyYqMymGPw9vg55HXDQ",
+          "sourceRefs": [
+            "src-mahiru-neru",
+            "src-youtube-mahiru-neru"
+          ]
+        },
+        {
+          "service": "twitch",
+          "accountId": "mahiruneru",
+          "url": "https://www.twitch.tv/mahiruneru",
+          "sourceRefs": [
+            "src-mahiru-neru",
+            "src-wiki-mahiru-neru"
+          ]
+        },
+        {
+          "service": "x",
+          "accountId": "Mahiru_zzZ",
+          "url": "https://x.com/Mahiru_zzZ",
+          "sourceRefs": [
+            "src-mahiru-neru",
+            "src-wiki-mahiru-neru"
+          ]
+        }
+      ],
+      "wiki": {
+        "url": "https://wikiwiki.jp/jigjp/%E7%9C%9F%E6%98%BC%E3%81%AD%E3%82%8B",
+        "sourceRefs": [
+          "src-wiki-mahiru-neru"
+        ]
+      },
+      "profileImage": {
+        "url": "https://yt3.ggpht.com/Cu6AMAZAEC_DTANKoaloA_4iLCuEUQ8BiAwyHGuOUG9GtoIw6s7mXCv1-49LV1IgODYZfGowzQ=s240-c-k-c0x00ffffff-no-rj",
+        "sourceRefs": [
+          "src-youtube-mahiru-neru"
+        ]
+      }
+    },
+    {
+      "id": "tal-000002",
+      "displayName": "火乃晴るい",
+      "displayNameSourceRefs": [
+        "src-hinoha-rui",
+        "src-wiki-hinoha-rui"
+      ],
+      "aliases": [],
+      "affiliations": [
+        {
+          "organizationId": "org-000001",
+          "status": "current",
+          "from": null,
+          "to": null,
+          "sourceRefs": [
+            "src-proforma-roster"
+          ]
+        }
+      ],
+      "agencyStatus": {
+        "value": "affiliated",
+        "sourceRefs": [
+          "src-proforma-roster"
+        ]
+      },
+      "activityStatus": {
+        "value": "active",
+        "sourceRefs": [
+          "src-youtube-hinoha-rui"
+        ]
+      },
+      "accounts": [
+        {
+          "service": "youtube",
+          "accountId": "UCVI8oEcv0MArpjPdwlRgYRw",
+          "url": "https://www.youtube.com/channel/UCVI8oEcv0MArpjPdwlRgYRw",
+          "sourceRefs": [
+            "src-hinoha-rui",
+            "src-youtube-hinoha-rui"
+          ]
+        },
+        {
+          "service": "twitch",
+          "accountId": "hinoha_rui",
+          "url": "https://www.twitch.tv/hinoha_rui",
+          "sourceRefs": [
+            "src-hinoha-rui",
+            "src-wiki-hinoha-rui"
+          ]
+        },
+        {
+          "service": "x",
+          "accountId": "Hinoha_Rui",
+          "url": "https://x.com/Hinoha_Rui",
+          "sourceRefs": [
+            "src-hinoha-rui",
+            "src-wiki-hinoha-rui"
+          ]
+        }
+      ],
+      "wiki": {
+        "url": "https://wikiwiki.jp/jigjp/%E7%81%AB%E4%B9%83%E6%99%B4%E3%82%8B%E3%81%84",
+        "sourceRefs": [
+          "src-wiki-hinoha-rui"
+        ]
+      },
+      "profileImage": {
+        "url": "https://yt3.ggpht.com/YiF8s5Lf3qcrv-pTWzX36dQDpbJrdwUPL_Z1retyx4TniYGmP0u2hN2pRDd66jq99h5RJMui=s240-c-k-c0x00ffffff-no-rj",
+        "sourceRefs": [
+          "src-youtube-hinoha-rui"
+        ]
+      }
+    },
+    {
+      "id": "tal-000003",
+      "displayName": "水透ユウ",
+      "displayNameSourceRefs": [
+        "src-minato-yu",
+        "src-wiki-minato-yu"
+      ],
+      "aliases": [],
+      "affiliations": [
+        {
+          "organizationId": "org-000001",
+          "status": "current",
+          "from": null,
+          "to": null,
+          "sourceRefs": [
+            "src-proforma-roster"
+          ]
+        }
+      ],
+      "agencyStatus": {
+        "value": "affiliated",
+        "sourceRefs": [
+          "src-proforma-roster"
+        ]
+      },
+      "activityStatus": {
+        "value": "active",
+        "sourceRefs": [
+          "src-youtube-minato-yu"
+        ]
+      },
+      "accounts": [
+        {
+          "service": "youtube",
+          "accountId": "UCOah55SQYynzPgQQ4wxuzkA",
+          "url": "https://www.youtube.com/channel/UCOah55SQYynzPgQQ4wxuzkA",
+          "sourceRefs": [
+            "src-minato-yu",
+            "src-youtube-minato-yu"
+          ]
+        },
+        {
+          "service": "twitch",
+          "accountId": "minato_yu_",
+          "url": "https://www.twitch.tv/Minato_Yu_",
+          "sourceRefs": [
+            "src-minato-yu",
+            "src-wiki-minato-yu"
+          ]
+        },
+        {
+          "service": "x",
+          "accountId": "Minato_Yu_",
+          "url": "https://x.com/Minato_Yu_",
+          "sourceRefs": [
+            "src-minato-yu",
+            "src-wiki-minato-yu"
+          ]
+        }
+      ],
+      "wiki": {
+        "url": "https://wikiwiki.jp/jigjp/%E6%B0%B4%E9%80%8F%E3%83%A6%E3%82%A6",
+        "sourceRefs": [
+          "src-wiki-minato-yu"
+        ]
+      },
+      "profileImage": {
+        "url": "https://yt3.ggpht.com/eVD8Ygm7KVyh3dvWnyebfYlbYpD13ZYQ-Bos8WdR5LDE61A3svHVHCLEY-rM3IQgw9O4uvdd=s240-c-k-c0x00ffffff-no-rj",
+        "sourceRefs": [
+          "src-youtube-minato-yu"
+        ]
+      }
+    },
+    {
+      "id": "tal-000004",
+      "displayName": "李じゅぴ汰",
+      "displayNameSourceRefs": [
+        "src-lee-jupita",
+        "src-wiki-lee-jupita"
+      ],
+      "aliases": [],
+      "affiliations": [
+        {
+          "organizationId": "org-000001",
+          "status": "former",
+          "from": null,
+          "to": null,
+          "sourceRefs": [
+            "src-proforma-roster"
+          ]
+        }
+      ],
+      "agencyStatus": {
+        "value": "unknown",
+        "sourceRefs": []
+      },
+      "activityStatus": {
+        "value": "unknown",
+        "sourceRefs": []
+      },
+      "accounts": [
+        {
+          "service": "youtube",
+          "accountId": null,
+          "url": "https://www.youtube.com/@%E6%9D%8E%E3%81%98%E3%82%85%E3%81%B4%E6%B1%B0",
+          "sourceRefs": [
+            "src-lee-jupita"
+          ]
+        },
+        {
+          "service": "twitch",
+          "accountId": "lee_jupita",
+          "url": "https://www.twitch.tv/lee_jupita",
+          "sourceRefs": [
+            "src-lee-jupita",
+            "src-wiki-lee-jupita"
+          ]
+        },
+        {
+          "service": "x",
+          "accountId": "Lee_Jupita",
+          "url": "https://x.com/Lee_Jupita",
+          "sourceRefs": [
+            "src-lee-jupita",
+            "src-wiki-lee-jupita"
+          ]
+        }
+      ],
+      "wiki": {
+        "url": "https://wikiwiki.jp/jigjp/%E6%9D%8E%E3%81%98%E3%82%85%E3%81%B4%E6%B1%B0",
+        "sourceRefs": [
+          "src-wiki-lee-jupita"
+        ]
+      },
+      "profileImage": null
+    }
+  ]
+}

@@ -3,6 +3,11 @@ const started = performance.now();
 const fs = require('node:fs');
 const path = require('node:path');
 const { writeManifest } = require('../lib/publication');
+const { loadTalents } = require('../lib/talents');
+const { applyNavigation, talentCards } = require('../lib/site-pages');
+const root = path.join(__dirname, '..');
+// Validate before touching the prior build output. Never publish unvalidated data.
+const talents = loadTalents(root);
 const output = path.join(__dirname, '..', '_site');
 fs.rmSync(output, { recursive: true, force: true });
 fs.mkdirSync(output);
@@ -14,6 +19,15 @@ fs.mkdirSync(path.join(output, 'data'));
 for (const name of ['youtube', 'twitch', 'tiktok', 'last_updated', 'update_info', 'youtube_client']) {
   fs.copyFileSync(path.join(__dirname, '..', 'data', `${name}.json`), path.join(output, 'data', `${name}.json`));
 }
+for (const [file, route] of [['index.html', '/'], ['privacy-policy/index.html', '/privacy-policy/'], ['terms/index.html', '/terms/']]) {
+  const target = path.join(output, file);
+  fs.writeFileSync(target, applyNavigation(fs.readFileSync(target, 'utf8'), route));
+}
+fs.mkdirSync(path.join(output, 'talents'));
+const talentPage = fs.readFileSync(path.join(root, 'pages/talents/index.html'), 'utf8');
+fs.writeFileSync(path.join(output, 'talents/index.html'), applyNavigation(talentPage, '/talents/').replace('<!-- jigdule:talents -->', talentCards(talents)));
+// Publish only the schema-validated public master, never its registry or sources' raw responses.
+fs.writeFileSync(path.join(output, 'data/talents.json'), JSON.stringify(talents, null, 2) + '\n');
 fs.writeFileSync(path.join(output, '.nojekyll'), '');
 writeManifest(output);
 const elapsed = Math.round(performance.now() - started);

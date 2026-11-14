@@ -12,4 +12,5 @@ function walk(dir) {
   }
 }
 walk('.');
+require('../lib/talents').loadTalents();
 console.log('JavaScript syntax and JSON checks passed.');

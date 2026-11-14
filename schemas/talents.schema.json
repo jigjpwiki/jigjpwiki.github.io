@@ -1,0 +1,431 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "jigdule public talent master v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "sources",
+    "organizations",
+    "talents"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": 1
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/source"
+      }
+    },
+    "organizations": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/organization"
+      }
+    },
+    "talents": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/talent"
+      }
+    }
+  },
+  "$defs": {
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "kind",
+        "url",
+        "checkedAt"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^src-[a-z0-9-]+$"
+        },
+        "kind": {
+          "enum": [
+            "official",
+            "wiki"
+          ]
+        },
+        "url": {
+          "type": "string",
+          "format": "public-url"
+        },
+        "checkedAt": {
+          "type": "string",
+          "format": "date-time"
+        }
+      }
+    },
+    "organization": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "name",
+        "sourceRefs"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^org-[0-9]{6}$"
+        },
+        "name": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 160
+        },
+        "sourceRefs": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^src-[a-z0-9-]+$"
+          },
+          "uniqueItems": true,
+          "minItems": 1
+        }
+      }
+    },
+    "alias": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "name",
+        "type",
+        "from",
+        "to",
+        "sourceRefs"
+      ],
+      "properties": {
+        "name": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 160
+        },
+        "type": {
+          "enum": [
+            "former_name",
+            "alias"
+          ]
+        },
+        "from": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "date"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "to": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "date"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "sourceRefs": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^src-[a-z0-9-]+$"
+          },
+          "uniqueItems": true,
+          "minItems": 1
+        }
+      }
+    },
+    "affiliation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "organizationId",
+        "status",
+        "from",
+        "to",
+        "sourceRefs"
+      ],
+      "properties": {
+        "organizationId": {
+          "type": "string",
+          "pattern": "^org-[0-9]{6}$"
+        },
+        "status": {
+          "enum": [
+            "current",
+            "former",
+            "unknown"
+          ]
+        },
+        "from": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "date"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "to": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "date"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "sourceRefs": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^src-[a-z0-9-]+$"
+          },
+          "uniqueItems": true,
+          "minItems": 1
+        }
+      }
+    },
+    "agencyState": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "value",
+        "sourceRefs"
+      ],
+      "properties": {
+        "value": {
+          "enum": [
+            "affiliated",
+            "unaffiliated",
+            "unknown"
+          ]
+        },
+        "sourceRefs": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^src-[a-z0-9-]+$"
+          },
+          "uniqueItems": true,
+          "minItems": 0
+        }
+      }
+    },
+    "activityState": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "value",
+        "sourceRefs"
+      ],
+      "properties": {
+        "value": {
+          "enum": [
+            "active",
+            "hiatus",
+            "retired",
+            "ended",
+            "unknown"
+          ]
+        },
+        "sourceRefs": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^src-[a-z0-9-]+$"
+          },
+          "uniqueItems": true,
+          "minItems": 0
+        }
+      }
+    },
+    "account": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "service",
+        "accountId",
+        "url",
+        "sourceRefs"
+      ],
+      "properties": {
+        "service": {
+          "enum": [
+            "youtube",
+            "x",
+            "twitch",
+            "tiktok"
+          ]
+        },
+        "accountId": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 100
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "url": {
+          "type": "string",
+          "format": "public-url"
+        },
+        "sourceRefs": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^src-[a-z0-9-]+$"
+          },
+          "uniqueItems": true,
+          "minItems": 1
+        }
+      }
+    },
+    "wiki": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "url",
+        "sourceRefs"
+      ],
+      "properties": {
+        "url": {
+          "type": "string",
+          "format": "public-url"
+        },
+        "sourceRefs": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^src-[a-z0-9-]+$"
+          },
+          "uniqueItems": true,
+          "minItems": 1
+        }
+      }
+    },
+    "image": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "url",
+        "sourceRefs"
+      ],
+      "properties": {
+        "url": {
+          "type": "string",
+          "format": "image-ref"
+        },
+        "sourceRefs": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^src-[a-z0-9-]+$"
+          },
+          "uniqueItems": true,
+          "minItems": 1
+        }
+      }
+    },
+    "talent": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "displayName",
+        "displayNameSourceRefs",
+        "aliases",
+        "affiliations",
+        "agencyStatus",
+        "activityStatus",
+        "accounts",
+        "wiki",
+        "profileImage"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^tal-[0-9]{6}$"
+        },
+        "displayName": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 160
+        },
+        "displayNameSourceRefs": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^src-[a-z0-9-]+$"
+          },
+          "uniqueItems": true,
+          "minItems": 1
+        },
+        "aliases": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/alias"
+          }
+        },
+        "affiliations": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/affiliation"
+          }
+        },
+        "agencyStatus": {
+          "$ref": "#/$defs/agencyState"
+        },
+        "activityStatus": {
+          "$ref": "#/$defs/activityState"
+        },
+        "accounts": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/account"
+          }
+        },
+        "wiki": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/wiki"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "profileImage": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/image"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

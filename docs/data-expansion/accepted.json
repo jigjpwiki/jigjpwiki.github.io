@@ -1,0 +1,1901 @@
+[
+  {
+    "id": "tal-000005",
+    "name": "七海ロナ",
+    "identityUrl": "https://paletteproject.jp/member/case-rona/",
+    "wikiUrl": "https://wikiwiki.jp/jigjp/Palette%20Project/%E4%B8%83%E6%B5%B7%E3%83%AD%E3%83%8A",
+    "identityBasis": "official profile links + Wiki SNS/ID reconciliation",
+    "affiliations": [
+      {
+        "organizationId": "org-000003",
+        "status": "current",
+        "from": null,
+        "to": null
+      }
+    ],
+    "accountIds": {
+      "x": "nanamirona",
+      "youtube": "UCIaZylf5L9MsCMOJX3BdTEg"
+    },
+    "activityStatus": "unknown"
+  },
+  {
+    "id": "tal-000006",
+    "name": "夏渚まはろ",
+    "identityUrl": "https://paletteproject.jp/member/case-mahalo/",
+    "wikiUrl": "https://wikiwiki.jp/jigjp/Palette%20Project/%E5%A4%8F%E6%B8%9A%E3%81%BE%E3%81%AF%E3%82%8D",
+    "identityBasis": "official profile links + Wiki SNS/ID reconciliation",
+    "affiliations": [
+      {
+        "organizationId": "org-000003",
+        "status": "current",
+        "from": null,
+        "to": null
+      }
+    ],
+    "accountIds": {
+      "x": "nanagisamahalo",
+      "youtube": "UC_a00ml_EVDXSrtY8ZuyqGQ"
+    },
+    "activityStatus": "unknown"
+  },
+  {
+    "id": "tal-000007",
+    "name": "常磐カナメ",
+    "identityUrl": "https://paletteproject.jp/member/case-kaname/",
+    "wikiUrl": "https://wikiwiki.jp/jigjp/Palette%20Project/%E5%B8%B8%E7%A3%90%E3%82%AB%E3%83%8A%E3%83%A1",
+    "identityBasis": "official profile links + Wiki SNS/ID reconciliation",
+    "affiliations": [
+      {
+        "organizationId": "org-000003",
+        "status": "current",
+        "from": null,
+        "to": null
+      }
+    ],
+    "accountIds": {
+      "x": "tokiwakaname",
+      "youtube": "UCbNEgJIF_ADD9e8-q7SoxCg"
+    },
+    "activityStatus": "unknown"
+  },
+  {
+    "id": "tal-000008",
+    "name": "暁月クララ",
+    "identityUrl": "https://paletteproject.jp/member/case-clara/",
+    "wikiUrl": "https://wikiwiki.jp/jigjp/Palette%20Project/%E6%9A%81%E6%9C%88%E3%82%AF%E3%83%A9%E3%83%A9",
+    "identityBasis": "official profile links + Wiki SNS/ID reconciliation",
+    "affiliations": [
+      {
+        "organizationId": "org-000003",
+        "status": "current",
+        "from": null,
+        "to": null
+      }
+    ],
+    "accountIds": {
+      "x": "akatsukiclara",
+      "youtube": "UCn4XvlTXjGSvDynpxpOYZPQ"
+    },
+    "activityStatus": "unknown"
+  },
+  {
+    "id": "tal-000009",
+    "name": "江波キョウカ",
+    "identityUrl": "https://paletteproject.jp/member/case-kyouka/",
+    "wikiUrl": "https://wikiwiki.jp/jigjp/Palette%20Project/%E6%B1%9F%E6%B3%A2%E3%82%AD%E3%83%A7%E3%82%A6%E3%82%AB",
+    "identityBasis": "official profile links + Wiki SNS/ID reconciliation",
+    "affiliations": [
+      {
+        "organizationId": "org-000003",
+        "status": "current",
+        "from": null,
+        "to": null
+      }
+    ],
+    "accountIds": {
+      "x": "ebakyouka",
+      "youtube": "UChpkyQ3O21OnkcMcgCoNHCg"
+    },
+    "activityStatus": "unknown"
+  },
+  {
+    "id": "tal-000010",
+    "name": "藤宮コトハ",
+    "identityUrl": "https://paletteproject.jp/member/case-kotoha/",
+    "wikiUrl": "https://wikiwiki.jp/jigjp/Palette%20Project/%E8%97%A4%E5%AE%AE%E3%82%B3%E3%83%88%E3%83%8F",
+    "identityBasis": "official profile links + Wiki SNS/ID reconciliation",
+    "affiliations": [
+      {
+        "organizationId": "org-000003",
+        "status": "current",
+        "from": null,
+        "to": null
+      }
+    ],
+    "accountIds": {
+      "x": "fujimiyakotoha",
+      "youtube": "UCGndc74kfWb_A-8hZBG534Q"
+    },
+    "activityStatus": "unknown"
+  },
+  {
+    "id": "tal-000011",
+    "name": "香鳴ハノン",
+    "identityUrl": "https://paletteproject.jp/member/case-hanon/",
+    "wikiUrl": "https://wikiwiki.jp/jigjp/Palette%20Project/%E9%A6%99%E9%B3%B4%E3%83%8F%E3%83%8E%E3%83%B3",
+    "identityBasis": "official profile links + Wiki SNS/ID reconciliation",
+    "affiliations": [
+      {
+        "organizationId": "org-000003",
+        "status": "current",
+        "from": null,
+        "to": null
+      }
+    ],
+    "accountIds": {
+      "x": "kanaruhanon",
+      "youtube": "UCay6Y3oEoiC6ZEE2G0UZu_A"
+    },
+    "activityStatus": "unknown"
+  },
+  {
+    "id": "tal-000012",
+    "name": "鬼多見アユム",
+    "identityUrl": "https://paletteproject.jp/member/case-ayumu/",
+    "wikiUrl": "https://wikiwiki.jp/jigjp/Palette%20Project/%E9%AC%BC%E5%A4%9A%E8%A6%8B%E3%82%A2%E3%83%A6%E3%83%A0",
+    "identityBasis": "official profile links + Wiki SNS/ID reconciliation",
+    "affiliations": [
+      {
+        "organizationId": "org-000003",
+        "status": "current",
+        "from": null,
+        "to": null
+      }
+    ],
+    "accountIds": {
+      "x": "kitamiayumu",
+      "youtube": "UCnrJK-sb3gSn3kRLkmpmzaw"
+    },
+    "activityStatus": "unknown"
+  },
+  {
+    "id": "tal-000013",
+    "name": "しーはむ",
+    "identityUrl": "https://www.proforma-production.jp/t/siyham",
+    "wikiUrl": "https://wikiwiki.jp/jigjp/%E3%81%97%E3%83%BC%E3%81%AF%E3%82%80",
+    "identityBasis": "official profile links + Wiki SNS/ID reconciliation",
+    "affiliations": [
+      {
+        "organizationId": "org-000001",
+        "status": "current",
+        "from": null,
+        "to": null
+      }
+    ],
+    "accountIds": {
+      "x": "siyham_",
+      "youtube": "UC5xSDiB2WG4pO_zUZ_t-n0Q",
+      "twitch": "siyham"
+    },
+    "activityStatus": "unknown"
+  },
+  {
+    "id": "tal-000014",
+    "name": "なかもとおまち",
+    "identityUrl": "https://www.proforma-production.jp/t/nakamotoomachi",
+    "wikiUrl": "https://wikiwiki.jp/jigjp/%E3%81%AA%E3%81%8B%E3%82%82%E3%81%A8%E3%81%8A%E3%81%BE%E3%81%A1",
+    "identityBasis": "official profile links + Wiki SNS/ID reconciliation",
+    "affiliations": [
+      {
+        "organizationId": "org-000001",
+        "status": "current",
+        "from": null,
+        "to": null
+      }
+    ],
+    "accountIds": {
+      "x": "41futon",
+      "youtube": "UCvTAG-S8KykNcWTneGLNpnw",
+      "twitch": "41futon"
+    },
+    "activityStatus": "unknown"
+  },
+  {
+    "id": "tal-000015",
+    "name": "小澄くろまる",
+    "identityUrl": "https://www.proforma-production.jp/t/kozumi-kuromaru",
+    "wikiUrl": "https://wikiwiki.jp/jigjp/%E5%B0%8F%E6%BE%84%E3%81%8F%E3%82%8D%E3%81%BE%E3%82%8B",
+    "identityBasis": "official profile + Wiki linked profile/channel + channels.list ID and explicit self-described ProForma Nova affiliation; X only from that channel description",
+    "affiliations": [
+      {
+        "organizationId": "org-000001",
+        "status": "current",
+        "from": null,
+        "to": null
+      }
+    ],
+    "accountIds": {
+      "youtube": "UC1Eq7ExEH0XO380it8cZYZg",
+      "x": "KZM960"
+    },
+    "activityStatus": "unknown"
+  },
+  {
+    "id": "tal-000016",
+    "name": "橙葉ぽん",
+    "identityUrl": "https://www.proforma-production.jp/t/touha-pon",
+    "wikiUrl": "https://wikiwiki.jp/jigjp/%E6%A9%99%E8%91%89%E3%81%BD%E3%82%93",
+    "identityBasis": "official profile + Wiki linked profile/channel + channels.list ID and explicit self-described ProForma Nova affiliation; X only from that channel description",
+    "affiliations": [
+      {
+        "organizationId": "org-000001",
+        "status": "current",
+        "from": null,
+        "to": null
+      }
+    ],
+    "accountIds": {
+      "youtube": "UC0aNUh8VfQwgqj0taB8MDpg",
+      "x": "touha_pon"
+    },
+    "activityStatus": "unknown"
+  },
+  {
+    "id": "tal-000017",
+    "name": "猫吸はぴ",
+    "identityUrl": "https://www.proforma-production.jp/t/nekosui-hapi",
+    "wikiUrl": "https://wikiwiki.jp/jigjp/%E7%8C%AB%E5%90%B8%E3%81%AF%E3%81%B4",
+    "identityBasis": "official profile + Wiki linked profile/channel + channels.list ID and explicit self-described ProForma Nova affiliation; X only from that channel description",
+    "affiliations": [
+      {
+        "organizationId": "org-000001",
+        "status": "current",
+        "from": null,
+        "to": null
+      }
+    ],
+    "accountIds": {
+      "youtube": "UCgod8po0u4P5hdCsLhJWFPQ",
+      "x": "nekosuihapi"
+    },
+    "activityStatus": "unknown"
+  },
+  {
+    "id": "tal-000018",
+    "name": "銘兎目あう",
+    "identityUrl": "https://www.proforma-production.jp/t/metome-au",
+    "wikiUrl": "https://wikiwiki.jp/jigjp/%E9%8A%98%E5%85%8E%E7%9B%AE%E3%81%82%E3%81%86",
+    "identityBasis": "official profile links + Wiki SNS/ID reconciliation",
+    "affiliations": [
+      {
+        "organizationId": "org-000001",
+        "status": "current",
+        "from": null,
+        "to": null
+      }
+    ],
+    "accountIds": {
+      "x": "Metome_Au",
+      "youtube": "UCpr-9ssUUgSb0EpDA8bRuTA",
+      "twitch": "metome_au"
+    },
+    "activityStatus": "unknown"
+  },
+  {
+    "id": "tal-000019",
+    "name": "さくさくさく",
+    "identityUrl": "https://www.parerdemia.jp/students/26ME004",
+    "wikiUrl": "https://wikiwiki.jp/jigjp/%E3%81%95%E3%81%8F%E3%81%95%E3%81%8F%E3%81%95%E3%81%8F",
+    "identityBasis": "official profile links + Wiki SNS/ID reconciliation",
+    "affiliations": [
+      {
+        "organizationId": "org-000002",
+        "status": "current",
+        "from": null,
+        "to": null
+      }
+    ],
+    "accountIds": {
+      "tiktok": "sakusakusaku107",
+      "youtube": "UC9zEgqk0yVvX3nqRLCJXGGg",
+      "x": "Sakusakusaku107"
+    },
+    "activityStatus": "unknown"
+  },
+  {
+    "id": "tal-000020",
+    "name": "シグマ・イングラム",
+    "identityUrl": "https://www.parerdemia.jp/students/25CO002",
+    "wikiUrl": "https://wikiwiki.jp/jigjp/%E3%82%B7%E3%82%B0%E3%83%9E%E3%83%BB%E3%82%A4%E3%83%B3%E3%82%B0%E3%83%A9%E3%83%A0",
+    "identityBasis": "official profile links + Wiki SNS/ID reconciliation",
+    "affiliations": [
+      {
+        "organizationId": "org-000002",
+        "status": "current",
+        "from": null,
+        "to": null
+      }
+    ],
+    "accountIds": {
+      "tiktok": "sigma_no_live",
+      "youtube": "UCnQFkIgH-2IURW--34owWIw",
+      "x": "sigma_inging"
+    },
+    "activityStatus": "unknown"
+  },
+  {
+    "id": "tal-000021",
+    "name": "フローレ・ブランカ",
+    "identityUrl": "https://www.parerdemia.jp/students/25WA004",
+    "wikiUrl": "https://wikiwiki.jp/jigjp/%E3%83%95%E3%83%AD%E3%83%BC%E3%83%AC%E3%83%BB%E3%83%96%E3%83%A9%E3%83%B3%E3%82%AB",
+    "identityBasis": "official profile links + Wiki SNS/ID reconciliation",
+    "affiliations": [
+      {
+        "organizationId": "org-000002",
+        "status": "current",
+        "from": null,
+        "to": null
+      }
+    ],
+    "accountIds": {
+      "tiktok": "flore_blanka",
+      "youtube": "UCNb9zRVc1coFKxJAn9lVtsw",
+      "x": "flore_blanka"
+    },
+    "activityStatus": "unknown"
+  },
+  {
+    "id": "tal-000022",
+    "name": "ローズ・ダマスクハート",
+    "identityUrl": "https://www.parerdemia.jp/students/25WH012",
+    "wikiUrl": "https://wikiwiki.jp/jigjp/%E3%83%AD%E3%83%BC%E3%82%BA%E3%83%BB%E3%83%80%E3%83%9E%E3%82%B9%E3%82%AF%E3%83%8F%E3%83%BC%E3%83%88",
+    "identityBasis": "official profile links + Wiki SNS/ID reconciliation",
+    "affiliations": [
+      {
+        "organizationId": "org-000002",
+        "status": "current",
+        "from": null,
+        "to": null
+      }
+    ],
+    "accountIds": {
+      "tiktok": "rose.damaskht",
+      "youtube": "UCyY_NaAfv6k0CdHFcmYDqCA",
+      "x": "rose_damaskht"
+    },
+    "activityStatus": "unknown"
+  },
+  {
+    "id": "tal-000023",
+    "name": "七音うら",
+    "identityUrl": "https://www.parerdemia.jp/students/25WH015",
+    "wikiUrl": "https://wikiwiki.jp/jigjp/%E4%B8%83%E9%9F%B3%E3%81%86%E3%82%89",
+    "identityBasis": "official profile links + Wiki SNS/ID reconciliation",
+    "affiliations": [
+      {
+        "organizationId": "org-000002",
+        "status": "current",
+        "from": null,
+        "to": null
+      }
+    ],
+    "accountIds": {
+      "tiktok": "nanaotoura",
+      "youtube": "UCv2IYO-4waCpHvn50SWWY2A",
+      "x": "NanaotoUra"
+    },
+    "activityStatus": "unknown"
+  },
+  {
+    "id": "tal-000024",
+    "name": "久堂れしあ",
+    "identityUrl": "https://www.parerdemia.jp/students/25WH007",
+    "wikiUrl": "https://wikiwiki.jp/jigjp/%E4%B9%85%E5%A0%82%E3%82%8C%E3%81%97%E3%81%82",
+    "identityBasis": "official profile links + Wiki SNS/ID reconciliation",
+    "affiliations": [
+      {
+        "organizationId": "org-000002",
+        "status": "current",
+        "from": null,
+        "to": null
+      }
+    ],
+    "accountIds": {
+      "tiktok": "kudoureshia",
+      "youtube": "UC0O_8Ssx5exycwGvuF5S6_Q",
+      "x": "reshia_kudou"
+    },
+    "activityStatus": "unknown"
+  },
+  {
+    "id": "tal-000025",
+    "name": "亀城ちかり",
+    "identityUrl": "https://www.parerdemia.jp/students/25ME011",
+    "wikiUrl": "https://wikiwiki.jp/jigjp/%E4%BA%80%E5%9F%8E%E3%81%A1%E3%81%8B%E3%82%8A",
+    "identityBasis": "official profile links + Wiki SNS/ID reconciliation",
+    "affiliations": [
+      {
+        "organizationId": "org-000002",
+        "status": "current",
+        "from": null,
+        "to": null
+      }
+    ],
+    "accountIds": {
+      "tiktok": "kamekichikari",
+      "youtube": "UCn67GGb_NB7P17BVTduGkEw",
+      "x": "kamekichikari"
+    },
+    "activityStatus": "unknown"
+  },
+  {
+    "id": "tal-000026",
+    "name": "冬星れんこん",
+    "identityUrl": "https://www.parerdemia.jp/students/26WA003",
+    "wikiUrl": "https://wikiwiki.jp/jigjp/%E5%86%AC%E6%98%9F%E3%82%8C%E3%82%93%E3%81%93%E3%82%93",
+    "identityBasis": "official profile links + Wiki SNS/ID reconciliation",
+    "affiliations": [
+      {
+        "organizationId": "org-000002",
+        "status": "current",
+        "from": null,
+        "to": null
+      }
+    ],
+    "accountIds": {
+      "tiktok": "huyuboshi.renkon",
+      "youtube": "UCy4tS4QJSyI-VOr9ImBEveg",
+      "x": "Renkon_f"
+    },
+    "activityStatus": "unknown"
+  },
+  {
+    "id": "tal-000027",
+    "name": "四葉みっけ",
+    "identityUrl": "https://www.parerdemia.jp/students/26WH004",
+    "wikiUrl": "https://wikiwiki.jp/jigjp/%E5%9B%9B%E8%91%89%E3%81%BF%E3%81%A3%E3%81%91",
+    "identityBasis": "official profile links + Wiki SNS/ID reconciliation",
+    "affiliations": [
+      {
+        "organizationId": "org-000002",
+        "status": "current",
+        "from": null,
+        "to": null
+      }
+    ],
+    "accountIds": {
+      "tiktok": "yotuba_mikke",
+      "youtube": "UCObfu1e9xeIzisKCslx_XQA",
+      "x": "Yotuba_mikke"
+    },
+    "activityStatus": "unknown"
+  },
+  {
+    "id": "tal-000028",
+    "name": "堂下さとり",
+    "identityUrl": "https://www.parerdemia.jp/students/25WA008",
+    "wikiUrl": "https://wikiwiki.jp/jigjp/%E5%A0%82%E4%B8%8B%E3%81%95%E3%81%A8%E3%82%8A",
+    "identityBasis": "official profile links + Wiki SNS/ID reconciliation",
+    "affiliations": [
+      {
+        "organizationId": "org-000002",
+        "status": "current",
+        "from": null,
+        "to": null
+      }
+    ],
+    "accountIds": {
+      "tiktok": "satoridoushita",
+      "youtube": "UCBq6MSUL-Ermvnoj3PtX7Iw",
+      "x": "doushitasatori"
+    },
+    "activityStatus": "unknown"
+  },
+  {
+    "id": "tal-000029",
+    "name": "夏凪はつみ",
+    "identityUrl": "https://www.parerdemia.jp/students/26CO006",
+    "wikiUrl": "https://wikiwiki.jp/jigjp/%E5%A4%8F%E5%87%AA%E3%81%AF%E3%81%A4%E3%81%BF",
+    "identityBasis": "official profile links + Wiki SNS/ID reconciliation",
+    "affiliations": [
+      {
+        "organizationId": "org-000002",
+        "status": "current",
+        "from": null,
+        "to": null
+      }
+    ],
+    "accountIds": {
+      "tiktok": "natsunagi823",
+      "youtube": "UCjGfpZuK6__30b6IpMhR_SQ",
+      "x": "Natsunagi823"
+    },
+    "activityStatus": "unknown"
+  },
+  {
+    "id": "tal-000030",
+    "name": "夕凪万夜",
+    "identityUrl": "https://www.parerdemia.jp/students/26CO005",
+    "wikiUrl": "https://wikiwiki.jp/jigjp/%E5%A4%95%E5%87%AA%E4%B8%87%E5%A4%9C",
+    "identityBasis": "official profile links + Wiki SNS/ID reconciliation",
+    "affiliations": [
+      {
+        "organizationId": "org-000002",
+        "status": "current",
+        "from": null,
+        "to": null
+      }
+    ],
+    "accountIds": {
+      "tiktok": "mayo_yunagi",
+      "youtube": "UCJLYktDEOak1rSOGRVRKlLQ",
+      "x": "mayo_yunagi"
+    },
+    "activityStatus": "unknown"
+  },
+  {
+    "id": "tal-000031",
+    "name": "夜宵カレン",
+    "identityUrl": "https://www.parerdemia.jp/students/25ME013",
+    "wikiUrl": "https://wikiwiki.jp/jigjp/%E5%A4%9C%E5%AE%B5%E3%82%AB%E3%83%AC%E3%83%B3",
+    "identityBasis": "official profile links + Wiki SNS/ID reconciliation",
+    "affiliations": [
+      {
+        "organizationId": "org-000002",
+        "status": "current",
+        "from": null,
+        "to": null
+      }
+    ],
+    "accountIds": {
+      "tiktok": "yayoi_karen",
+      "youtube": "UCiPOaOGhMEXaq0tiVftObBw",
+      "x": "yayoikaren"
+    },
+    "activityStatus": "unknown"
+  },
+  {
+    "id": "tal-000032",
+    "name": "夜雨ねむる",
+    "identityUrl": "https://www.parerdemia.jp/students/26CO001",
+    "wikiUrl": "https://wikiwiki.jp/jigjp/%E5%A4%9C%E9%9B%A8%E3%81%AD%E3%82%80%E3%82%8B",
+    "identityBasis": "official profile links + Wiki SNS/ID reconciliation",
+    "affiliations": [
+      {
+        "organizationId": "org-000002",
+        "status": "current",
+        "from": null,
+        "to": null
+      }
+    ],
+    "accountIds": {
+      "tiktok": "yaunemuru",
+      "youtube": "UC1hxdM37vjjqr-IfZuDn1iw",
+      "x": "Yaunemuru"
+    },
+    "activityStatus": "unknown"
+  },
+  {
+    "id": "tal-000033",
+    "name": "夢ト見りんね",
+    "identityUrl": "https://www.parerdemia.jp/students/25WA011",
+    "wikiUrl": "https://wikiwiki.jp/jigjp/%E5%A4%A2%E3%83%88%E8%A6%8B%E3%82%8A%E3%82%93%E3%81%AD",
+    "identityBasis": "official profile links + Wiki SNS/ID reconciliation",
+    "affiliations": [
+      {
+        "organizationId": "org-000002",
+        "status": "current",
+        "from": null,
+        "to": null
+      }
+    ],
+    "accountIds": {
+      "tiktok": "yumetomi_rinne",
+      "youtube": "UCPuZO9f0ai8szY72XagL_eQ",
+      "x": "Yumetomi_Rinne"
+    },
+    "activityStatus": "unknown"
+  },
+  {
+    "id": "tal-000034",
+    "name": "天堂ライラ",
+    "identityUrl": "https://www.parerdemia.jp/students/26CO004",
+    "wikiUrl": "https://wikiwiki.jp/jigjp/%E5%A4%A9%E5%A0%82%E3%83%A9%E3%82%A4%E3%83%A9",
+    "identityBasis": "official profile links + Wiki SNS/ID reconciliation",
+    "affiliations": [
+      {
+        "organizationId": "org-000002",
+        "status": "current",
+        "from": null,
+        "to": null
+      }
+    ],
+    "accountIds": {
+      "tiktok": "tendo_lyra",
+      "youtube": "UCpdWNjSU-onhmcARqgHIfpg",
+      "x": "tendo_lyra"
+    },
+    "activityStatus": "unknown"
+  },
+  {
+    "id": "tal-000035",
+    "name": "天辻ゆらぐ",
+    "identityUrl": "https://www.parerdemia.jp/students/25CO014",
+    "wikiUrl": "https://wikiwiki.jp/jigjp/%E5%A4%A9%E8%BE%BB%E3%82%86%E3%82%89%E3%81%90",
+    "identityBasis": "official profile links + Wiki SNS/ID reconciliation",
+    "affiliations": [
+      {
+        "organizationId": "org-000002",
+        "status": "current",
+        "from": null,
+        "to": null
+      }
+    ],
+    "accountIds": {
+      "tiktok": "yuragu_amatsuji",
+      "youtube": "UCeOFQCn_QZJMTszlRYRg3rQ",
+      "x": "YuraguAmatsuji"
+    },
+    "activityStatus": "unknown"
+  },
+  {
+    "id": "tal-000036",
+    "name": "天透あわ",
+    "identityUrl": "https://www.parerdemia.jp/students/25WA009",
+    "wikiUrl": "https://wikiwiki.jp/jigjp/%E5%A4%A9%E9%80%8F%E3%81%82%E3%82%8F",
+    "identityBasis": "official profile links + Wiki SNS/ID reconciliation",
+    "affiliations": [
+      {
+        "organizationId": "org-000002",
+        "status": "current",
+        "from": null,
+        "to": null
+      }
+    ],
+    "accountIds": {
+      "tiktok": "amatoawa",
+      "youtube": "UCXI0W_Os-BCIngpCb1YnOow",
+      "x": "Amatoawa"
+    },
+    "activityStatus": "unknown"
+  },
+  {
+    "id": "tal-000037",
+    "name": "天麗らん",
+    "identityUrl": "https://www.parerdemia.jp/students/26ME001",
+    "wikiUrl": "https://wikiwiki.jp/jigjp/%E5%A4%A9%E9%BA%97%E3%82%89%E3%82%93",
+    "identityBasis": "official profile links + Wiki SNS/ID reconciliation",
+    "affiliations": [
+      {
+        "organizationId": "org-000002",
+        "status": "current",
+        "from": null,
+        "to": null
+      }
+    ],
+    "accountIds": {
+      "tiktok": "ran_run_tenrei",
+      "youtube": "UCAa19AEBEEvh2tZ_FJKt5Rw",
+      "x": "Ran_tenRei"
+    },
+    "activityStatus": "unknown"
+  },
+  {
+    "id": "tal-000038",
+    "name": "宵坂伊織",
+    "identityUrl": "https://www.parerdemia.jp/students/26CO002",
+    "wikiUrl": "https://wikiwiki.jp/jigjp/%E5%AE%B5%E5%9D%82%E4%BC%8A%E7%B9%94",
+    "identityBasis": "official profile links + Wiki SNS/ID reconciliation",
+    "affiliations": [
+      {
+        "organizationId": "org-000002",
+        "status": "current",
+        "from": null,
+        "to": null
+      }
+    ],
+    "accountIds": {
+      "tiktok": "yoizaka_iori",
+      "youtube": "UCa1C15g_z1k5oQIYCeD2Hdw",
+      "x": "yoizaka_iori"
+    },
+    "activityStatus": "unknown"
+  },
+  {
+    "id": "tal-000039",
+    "name": "山田スバル",
+    "identityUrl": "https://www.parerdemia.jp/students/25CO010",
+    "wikiUrl": "https://wikiwiki.jp/jigjp/%E5%B1%B1%E7%94%B0%E3%82%B9%E3%83%90%E3%83%AB",
+    "identityBasis": "official profile links + Wiki SNS/ID reconciliation",
+    "affiliations": [
+      {
+        "organizationId": "org-000002",
+        "status": "current",
+        "from": null,
+        "to": null
+      }
+    ],
+    "accountIds": {
+      "tiktok": "co25yamada",
+      "youtube": "UCpC109d73Mw2GDp0cAodr2w",
+      "x": "subaru_yamada10"
+    },
+    "activityStatus": "unknown"
+  },
+  {
+    "id": "tal-000040",
+    "name": "巳野みこと",
+    "identityUrl": "https://www.parerdemia.jp/students/26WA006",
+    "wikiUrl": "https://wikiwiki.jp/jigjp/%E5%B7%B3%E9%87%8E%E3%81%BF%E3%81%93%E3%81%A8",
+    "identityBasis": "official profile links + Wiki SNS/ID reconciliation",
+    "affiliations": [
+      {
+        "organizationId": "org-000002",
+        "status": "current",
+        "from": null,
+        "to": null
+      }
+    ],
+    "accountIds": {
+      "tiktok": "mino_micoto",
+      "youtube": "UCHBPF4eBZEAQ5MmiddmhM2w",
+      "x": "mino_micoto"
+    },
+    "activityStatus": "unknown"
+  },
+  {
+    "id": "tal-000041",
+    "name": "彼方ルカ",
+    "identityUrl": "https://www.parerdemia.jp/students/25CO013",
+    "wikiUrl": "https://wikiwiki.jp/jigjp/%E5%BD%BC%E6%96%B9%E3%83%AB%E3%82%AB",
+    "identityBasis": "official profile links + Wiki SNS/ID reconciliation",
+    "affiliations": [
+      {
+        "organizationId": "org-000002",
+        "status": "current",
+        "from": null,
+        "to": null
+      }
+    ],
+    "accountIds": {
+      "tiktok": "kanata_ruka07",
+      "youtube": "UCDDYyCAWxccRh1QbjMd1NlQ",
+      "x": "Ruka__Kanata"
+    },
+    "activityStatus": "unknown"
+  },
+  {
+    "id": "tal-000042",
+    "name": "恋歌さわこ",
+    "identityUrl": "https://www.parerdemia.jp/students/25ME010",
+    "wikiUrl": "https://wikiwiki.jp/jigjp/%E6%81%8B%E6%AD%8C%E3%81%95%E3%82%8F%E3%81%93",
+    "identityBasis": "official profile links + Wiki SNS/ID reconciliation",
+    "affiliations": [
+      {
+        "organizationId": "org-000002",
+        "status": "current",
+        "from": null,
+        "to": null
+      }
+    ],
+    "accountIds": {
+      "tiktok": "sawako_4649",
+      "youtube": "UCtmMsFjXCXSUqdg6dehYKnA",
+      "x": "koiuta_sawako"
+    },
+    "activityStatus": "unknown"
+  },
+  {
+    "id": "tal-000043",
+    "name": "愛上オハナ",
+    "identityUrl": "https://www.parerdemia.jp/students/25WA013",
+    "wikiUrl": "https://wikiwiki.jp/jigjp/%E6%84%9B%E4%B8%8A%E3%82%AA%E3%83%8F%E3%83%8A",
+    "identityBasis": "official profile links + Wiki SNS/ID reconciliation",
+    "affiliations": [
+      {
+        "organizationId": "org-000002",
+        "status": "current",
+        "from": null,
+        "to": null
+      }
+    ],
+    "accountIds": {
+      "tiktok": "aiue_ohana",
+      "youtube": "UCwxQdxFJW67WGv-s5_z030w",
+      "x": "aiue_ohana"
+    },
+    "activityStatus": "unknown"
+  },
+  {
+    "id": "tal-000044",
+    "name": "愛乃宮ゆめ",
+    "identityUrl": "https://www.parerdemia.jp/students/25CO003",
+    "wikiUrl": "https://wikiwiki.jp/jigjp/%E6%84%9B%E4%B9%83%E5%AE%AE%E3%82%86%E3%82%81",
+    "identityBasis": "official profile links + Wiki SNS/ID reconciliation",
+    "affiliations": [
+      {
+        "organizationId": "org-000002",
+        "status": "current",
+        "from": null,
+        "to": null
+      }
+    ],
+    "accountIds": {
+      "tiktok": "enomiya_yume",
+      "youtube": "UCttSjPiwPYpiPuCrgxK7c1g",
+      "x": "enomiya_yume"
+    },
+    "activityStatus": "unknown"
+  },
+  {
+    "id": "tal-000045",
+    "name": "愛葉はな",
+    "identityUrl": "https://www.parerdemia.jp/students/25ME005",
+    "wikiUrl": "https://wikiwiki.jp/jigjp/%E6%84%9B%E8%91%89%E3%81%AF%E3%81%AA",
+    "identityBasis": "official profile links + Wiki SNS/ID reconciliation",
+    "affiliations": [
+      {
+        "organizationId": "org-000002",
+        "status": "current",
+        "from": null,
+        "to": null
+      }
+    ],
+    "accountIds": {
+      "tiktok": "aibahana005",
+      "youtube": "UC5G2BLvcdLvBwBqgShrag9A",
+      "x": "aibahana005"
+    },
+    "activityStatus": "unknown"
+  },
+  {
+    "id": "tal-000046",
+    "name": "新巻るろな",
+    "identityUrl": "https://www.parerdemia.jp/students/25ME001",
+    "wikiUrl": "https://wikiwiki.jp/jigjp/%E6%96%B0%E5%B7%BB%E3%82%8B%E3%82%8D%E3%81%AA",
+    "identityBasis": "official profile links + Wiki SNS/ID reconciliation",
+    "affiliations": [
+      {
+        "organizationId": "org-000002",
+        "status": "current",
+        "from": null,
+        "to": null
+      }
+    ],
+    "accountIds": {
+      "tiktok": "aramaki_rurona",
+      "youtube": "UCUd4wJjvPQflbLnsk_YHleA",
+      "x": "Aramaki_ruronA"
+    },
+    "activityStatus": "unknown"
+  },
+  {
+    "id": "tal-000047",
+    "name": "東雲アカリ",
+    "identityUrl": "https://www.parerdemia.jp/students/25ME014",
+    "wikiUrl": "https://wikiwiki.jp/jigjp/%E6%9D%B1%E9%9B%B2%E3%82%A2%E3%82%AB%E3%83%AA",
+    "identityBasis": "official profile links + Wiki SNS/ID reconciliation",
+    "affiliations": [
+      {
+        "organizationId": "org-000002",
+        "status": "current",
+        "from": null,
+        "to": null
+      }
+    ],
+    "accountIds": {
+      "tiktok": "shinonome_akari",
+      "youtube": "UCghTiBLhbEGJv-RQwI5BgOg",
+      "x": "shinonome_akari"
+    },
+    "activityStatus": "unknown"
+  },
+  {
+    "id": "tal-000048",
+    "name": "桜堂ねる",
+    "identityUrl": "https://www.parerdemia.jp/students/25WH006",
+    "wikiUrl": "https://wikiwiki.jp/jigjp/%E6%A1%9C%E5%A0%82%E3%81%AD%E3%82%8B",
+    "identityBasis": "official profile links + Wiki SNS/ID reconciliation",
+    "affiliations": [
+      {
+        "organizationId": "org-000002",
+        "status": "current",
+        "from": null,
+        "to": null
+      }
+    ],
+    "accountIds": {
+      "tiktok": "neruoudo_wh006",
+      "youtube": "UC0H7dRRqhfOifbYQ2TURdAg",
+      "x": "oudoneru"
+    },
+    "activityStatus": "unknown"
+  },
+  {
+    "id": "tal-000049",
+    "name": "桜庭羽奈",
+    "identityUrl": "https://www.parerdemia.jp/students/25CO004",
+    "wikiUrl": "https://wikiwiki.jp/jigjp/%E6%A1%9C%E5%BA%AD%E7%BE%BD%E5%A5%88",
+    "identityBasis": "official profile links + Wiki SNS/ID reconciliation",
+    "affiliations": [
+      {
+        "organizationId": "org-000002",
+        "status": "current",
+        "from": null,
+        "to": null
+      }
+    ],
+    "accountIds": {
+      "tiktok": "unaunasakura",
+      "youtube": "UCPgg_A08ksSYP-VivJGniRw",
+      "x": "unaunasakura"
+    },
+    "activityStatus": "unknown"
+  },
+  {
+    "id": "tal-000050",
+    "name": "桜雲ほわり",
+    "identityUrl": "https://www.parerdemia.jp/students/25CO011",
+    "wikiUrl": "https://wikiwiki.jp/jigjp/%E6%A1%9C%E9%9B%B2%E3%81%BB%E3%82%8F%E3%82%8A",
+    "identityBasis": "official profile links + Wiki SNS/ID reconciliation",
+    "affiliations": [
+      {
+        "organizationId": "org-000002",
+        "status": "current",
+        "from": null,
+        "to": null
+      }
+    ],
+    "accountIds": {
+      "tiktok": "ouun_howari",
+      "youtube": "UCDoAYyzd9aNnYOrURDuy3ww",
+      "x": "ouun_howari"
+    },
+    "activityStatus": "unknown"
+  },
+  {
+    "id": "tal-000051",
+    "name": "水凪るぅ",
+    "identityUrl": "https://www.parerdemia.jp/students/26WA004",
+    "wikiUrl": "https://wikiwiki.jp/jigjp/%E6%B0%B4%E5%87%AA%E3%82%8B%E3%81%85",
+    "identityBasis": "official profile links + Wiki SNS/ID reconciliation",
+    "affiliations": [
+      {
+        "organizationId": "org-000002",
+        "status": "current",
+        "from": null,
+        "to": null
+      }
+    ],
+    "accountIds": {
+      "tiktok": "minagi_ruu",
+      "youtube": "UCxAVEiT5nj07iqZo4Ymka0Q",
+      "x": "Minagi_Ruu"
+    },
+    "activityStatus": "unknown"
+  },
+  {
+    "id": "tal-000052",
+    "name": "水無瀬天",
+    "identityUrl": "https://www.parerdemia.jp/students/25WH011",
+    "wikiUrl": "https://wikiwiki.jp/jigjp/%E6%B0%B4%E7%84%A1%E7%80%AC%E5%A4%A9",
+    "identityBasis": "official profile links + Wiki SNS/ID reconciliation",
+    "affiliations": [
+      {
+        "organizationId": "org-000002",
+        "status": "current",
+        "from": null,
+        "to": null
+      }
+    ],
+    "accountIds": {
+      "tiktok": "potsu.shito.zaa",
+      "youtube": "UCT-r3Sqvmoxd_uZYmQEABJg",
+      "x": "Minase_Ame"
+    },
+    "activityStatus": "unknown"
+  },
+  {
+    "id": "tal-000053",
+    "name": "氷雨セイ",
+    "identityUrl": "https://www.parerdemia.jp/students/25ME003",
+    "wikiUrl": "https://wikiwiki.jp/jigjp/%E6%B0%B7%E9%9B%A8%E3%82%BB%E3%82%A4",
+    "identityBasis": "official profile links + Wiki SNS/ID reconciliation",
+    "affiliations": [
+      {
+        "organizationId": "org-000002",
+        "status": "current",
+        "from": null,
+        "to": null
+      }
+    ],
+    "accountIds": {
+      "tiktok": "say_hisame",
+      "youtube": "UCL66HaXfxrR23G8sCU5-cnA",
+      "x": "Say_Hisame"
+    },
+    "activityStatus": "unknown"
+  },
+  {
+    "id": "tal-000054",
+    "name": "汐月永遠",
+    "identityUrl": "https://www.parerdemia.jp/students/26ME002",
+    "wikiUrl": "https://wikiwiki.jp/jigjp/%E6%B1%90%E6%9C%88%E6%B0%B8%E9%81%A0",
+    "identityBasis": "official profile links + Wiki SNS/ID reconciliation",
+    "affiliations": [
+      {
+        "organizationId": "org-000002",
+        "status": "current",
+        "from": null,
+        "to": null
+      }
+    ],
+    "accountIds": {
+      "tiktok": "eternal_par2604",
+      "youtube": "UCCCm2ueQtW3mYUMB7Excq8g",
+      "x": "SizukiTowa2641"
+    },
+    "activityStatus": "unknown"
+  },
+  {
+    "id": "tal-000055",
+    "name": "瀬奈りるか",
+    "identityUrl": "https://www.parerdemia.jp/students/25CO005",
+    "wikiUrl": "https://wikiwiki.jp/jigjp/%E7%80%AC%E5%A5%88%E3%82%8A%E3%82%8B%E3%81%8B",
+    "identityBasis": "official profile links + Wiki SNS/ID reconciliation",
+    "affiliations": [
+      {
+        "organizationId": "org-000002",
+        "status": "current",
+        "from": null,
+        "to": null
+      }
+    ],
+    "accountIds": {
+      "tiktok": "riruka_sena",
+      "youtube": "UCWi_ztz8Xuz4XfzhoG6ZfyA",
+      "x": "senariruka"
+    },
+    "activityStatus": "unknown"
+  },
+  {
+    "id": "tal-000056",
+    "name": "火狐むい",
+    "identityUrl": "https://www.parerdemia.jp/students/26WH005",
+    "wikiUrl": "https://wikiwiki.jp/jigjp/%E7%81%AB%E7%8B%90%E3%82%80%E3%81%84",
+    "identityBasis": "official profile links + Wiki SNS/ID reconciliation",
+    "affiliations": [
+      {
+        "organizationId": "org-000002",
+        "status": "current",
+        "from": null,
+        "to": null
+      }
+    ],
+    "accountIds": {
+      "tiktok": "kako_mui",
+      "youtube": "UCaolaxqG55OJhU8qwRHHtQg",
+      "x": "kako_mui"
+    },
+    "activityStatus": "unknown"
+  },
+  {
+    "id": "tal-000057",
+    "name": "灯野ぺけ。",
+    "identityUrl": "https://www.parerdemia.jp/students/25ME006",
+    "wikiUrl": "https://wikiwiki.jp/jigjp/%E7%81%AF%E9%87%8E%E3%81%BA%E3%81%91%E3%80%82",
+    "identityBasis": "official profile links + Wiki SNS/ID reconciliation",
+    "affiliations": [
+      {
+        "organizationId": "org-000002",
+        "status": "current",
+        "from": null,
+        "to": null
+      }
+    ],
+    "accountIds": {
+      "tiktok": "pekemmobznd",
+      "youtube": "UCldoz5HLh6BMW29HGnRpC0Q",
+      "x": "hino_pekemaru"
+    },
+    "activityStatus": "unknown"
+  },
+  {
+    "id": "tal-000058",
+    "name": "無月いお",
+    "identityUrl": "https://www.parerdemia.jp/students/26WH003",
+    "wikiUrl": "https://wikiwiki.jp/jigjp/%E7%84%A1%E6%9C%88%E3%81%84%E3%81%8A",
+    "identityBasis": "official profile links + Wiki SNS/ID reconciliation",
+    "affiliations": [
+      {
+        "organizationId": "org-000002",
+        "status": "current",
+        "from": null,
+        "to": null
+      }
+    ],
+    "accountIds": {
+      "tiktok": "62ki_10",
+      "youtube": "UC2X_mAVGw8e3N9JQZZDVBfQ",
+      "x": "62ki_10"
+    },
+    "activityStatus": "unknown"
+  },
+  {
+    "id": "tal-000059",
+    "name": "牡丹雪",
+    "identityUrl": "https://www.parerdemia.jp/students/26ME003",
+    "wikiUrl": "https://wikiwiki.jp/jigjp/%E7%89%A1%E4%B8%B9%E9%9B%AA",
+    "identityBasis": "official profile links + Wiki SNS/ID reconciliation",
+    "affiliations": [
+      {
+        "organizationId": "org-000002",
+        "status": "current",
+        "from": null,
+        "to": null
+      }
+    ],
+    "accountIds": {
+      "tiktok": "botan_setu119",
+      "youtube": "UCl-qrfygvCjyA_lMR5lJzig",
+      "x": "botan_setu119"
+    },
+    "activityStatus": "unknown"
+  },
+  {
+    "id": "tal-000060",
+    "name": "犬丸なでこ",
+    "identityUrl": "https://www.parerdemia.jp/students/25WA001",
+    "wikiUrl": "https://wikiwiki.jp/jigjp/%E7%8A%AC%E4%B8%B8%E3%81%AA%E3%81%A7%E3%81%93",
+    "identityBasis": "official profile links + Wiki SNS/ID reconciliation",
+    "affiliations": [
+      {
+        "organizationId": "org-000002",
+        "status": "current",
+        "from": null,
+        "to": null
+      }
+    ],
+    "accountIds": {
+      "tiktok": "nadeko_inumaru",
+      "youtube": "UCdJmJxMfXrlnZabUkuss2EA",
+      "x": "nadeko_inumaru"
+    },
+    "activityStatus": "unknown"
+  },
+  {
+    "id": "tal-000061",
+    "name": "狛社なの",
+    "identityUrl": "https://www.parerdemia.jp/students/26WA005",
+    "wikiUrl": "https://wikiwiki.jp/jigjp/%E7%8B%9B%E7%A4%BE%E3%81%AA%E3%81%AE",
+    "identityBasis": "official profile links + Wiki SNS/ID reconciliation",
+    "affiliations": [
+      {
+        "organizationId": "org-000002",
+        "status": "current",
+        "from": null,
+        "to": null
+      }
+    ],
+    "accountIds": {
+      "tiktok": "komashironano",
+      "youtube": "UCXhHHxwH94cuHv4N1cAYQeA",
+      "x": "komashirobmxf"
+    },
+    "activityStatus": "unknown"
+  },
+  {
+    "id": "tal-000062",
+    "name": "猫乃間うと",
+    "identityUrl": "https://www.parerdemia.jp/students/25CO012",
+    "wikiUrl": "https://wikiwiki.jp/jigjp/%E7%8C%AB%E4%B9%83%E9%96%93%E3%81%86%E3%81%A8",
+    "identityBasis": "official profile links + Wiki SNS/ID reconciliation",
+    "affiliations": [
+      {
+        "organizationId": "org-000002",
+        "status": "current",
+        "from": null,
+        "to": null
+      }
+    ],
+    "accountIds": {
+      "tiktok": "nekonoma_uto",
+      "youtube": "UCOH9jshsynMeCSRlPhiCSvw",
+      "x": "nekonoma_uto"
+    },
+    "activityStatus": "unknown"
+  },
+  {
+    "id": "tal-000063",
+    "name": "畑スイカ",
+    "identityUrl": "https://www.parerdemia.jp/students/25CO009",
+    "wikiUrl": "https://wikiwiki.jp/jigjp/%E7%95%91%E3%82%B9%E3%82%A4%E3%82%AB",
+    "identityBasis": "official profile links + Wiki SNS/ID reconciliation",
+    "affiliations": [
+      {
+        "organizationId": "org-000002",
+        "status": "current",
+        "from": null,
+        "to": null
+      }
+    ],
+    "accountIds": {
+      "tiktok": "hatasuica",
+      "youtube": "UCLUfaErD7KcjYkwshbqdk8g",
+      "x": "HATASUIKA"
+    },
+    "activityStatus": "unknown"
+  },
+  {
+    "id": "tal-000064",
+    "name": "白尾すず",
+    "identityUrl": "https://www.parerdemia.jp/students/26WA001",
+    "wikiUrl": "https://wikiwiki.jp/jigjp/%E7%99%BD%E5%B0%BE%E3%81%99%E3%81%9A",
+    "identityBasis": "official profile links + Wiki SNS/ID reconciliation",
+    "affiliations": [
+      {
+        "organizationId": "org-000002",
+        "status": "current",
+        "from": null,
+        "to": null
+      }
+    ],
+    "accountIds": {
+      "tiktok": "suzu_shirao_",
+      "youtube": "UCAbXhpEu49k6t3HE3qqpFCg",
+      "x": "suzu_shirao"
+    },
+    "activityStatus": "unknown"
+  },
+  {
+    "id": "tal-000065",
+    "name": "相栖るじゅ",
+    "identityUrl": "https://www.parerdemia.jp/students/25WA010",
+    "wikiUrl": "https://wikiwiki.jp/jigjp/%E7%9B%B8%E6%A0%96%E3%82%8B%E3%81%98%E3%82%85",
+    "identityBasis": "official profile links + Wiki SNS/ID reconciliation",
+    "affiliations": [
+      {
+        "organizationId": "org-000002",
+        "status": "current",
+        "from": null,
+        "to": null
+      }
+    ],
+    "accountIds": {
+      "tiktok": "aisu._.ruju",
+      "youtube": "UCrpdBoGpa6g2WEtRWsIlhDQ",
+      "x": "aisu_ruju"
+    },
+    "activityStatus": "unknown"
+  },
+  {
+    "id": "tal-000066",
+    "name": "緋月・ローズ・ブレイド",
+    "identityUrl": "https://www.parerdemia.jp/students/25WH010",
+    "wikiUrl": "https://wikiwiki.jp/jigjp/%E7%B7%8B%E6%9C%88%E3%83%BB%E3%83%AD%E3%83%BC%E3%82%BA%E3%83%BB%E3%83%96%E3%83%AC%E3%82%A4%E3%83%89",
+    "identityBasis": "official profile links + Wiki SNS/ID reconciliation",
+    "affiliations": [
+      {
+        "organizationId": "org-000002",
+        "status": "current",
+        "from": null,
+        "to": null
+      }
+    ],
+    "accountIds": {
+      "tiktok": "hidukirosebraid",
+      "youtube": "UCDutDfyKbX_ah4GF6kPNKmw",
+      "x": "hizukiroseblade"
+    },
+    "activityStatus": "unknown"
+  },
+  {
+    "id": "tal-000067",
+    "name": "緋雨柚",
+    "identityUrl": "https://www.parerdemia.jp/students/25ME004",
+    "wikiUrl": "https://wikiwiki.jp/jigjp/%E7%B7%8B%E9%9B%A8%E6%9F%9A",
+    "identityBasis": "official profile links + Wiki SNS/ID reconciliation",
+    "affiliations": [
+      {
+        "organizationId": "org-000002",
+        "status": "current",
+        "from": null,
+        "to": null
+      }
+    ],
+    "accountIds": {
+      "tiktok": "hisame_yuzu",
+      "youtube": "UCrB-SfrqB5ChY8aAT99grXw",
+      "x": "Hisame_Yuzu"
+    },
+    "activityStatus": "unknown"
+  },
+  {
+    "id": "tal-000068",
+    "name": "翡翠あかね",
+    "identityUrl": "https://www.parerdemia.jp/students/26WA002",
+    "wikiUrl": "https://wikiwiki.jp/jigjp/%E7%BF%A1%E7%BF%A0%E3%81%82%E3%81%8B%E3%81%AD",
+    "identityBasis": "official profile links + Wiki SNS/ID reconciliation",
+    "affiliations": [
+      {
+        "organizationId": "org-000002",
+        "status": "current",
+        "from": null,
+        "to": null
+      }
+    ],
+    "accountIds": {
+      "tiktok": "hisui_ak4ne",
+      "youtube": "UCaADm-qI6khKDIX8AIek1-w",
+      "x": "Hisui_Ak4ne"
+    },
+    "activityStatus": "unknown"
+  },
+  {
+    "id": "tal-000069",
+    "name": "花晴りら",
+    "identityUrl": "https://www.parerdemia.jp/students/25WH005",
+    "wikiUrl": "https://wikiwiki.jp/jigjp/%E8%8A%B1%E6%99%B4%E3%82%8A%E3%82%89",
+    "identityBasis": "official profile links + Wiki SNS/ID reconciliation",
+    "affiliations": [
+      {
+        "organizationId": "org-000002",
+        "status": "current",
+        "from": null,
+        "to": null
+      }
+    ],
+    "accountIds": {
+      "tiktok": "hanaharelila",
+      "youtube": "UCqcnlq8uJqnGml6hcIrMCZw",
+      "x": "LilaHanahare"
+    },
+    "activityStatus": "unknown"
+  },
+  {
+    "id": "tal-000070",
+    "name": "藤森ちとせ",
+    "identityUrl": "https://www.parerdemia.jp/students/25WH004",
+    "wikiUrl": "https://wikiwiki.jp/jigjp/%E8%97%A4%E6%A3%AE%E3%81%A1%E3%81%A8%E3%81%9B",
+    "identityBasis": "official profile links + Wiki SNS/ID reconciliation",
+    "affiliations": [
+      {
+        "organizationId": "org-000002",
+        "status": "current",
+        "from": null,
+        "to": null
+      }
+    ],
+    "accountIds": {
+      "tiktok": "fujinomorichitose",
+      "youtube": "UCAhdxmsdngH4noySdpVAVWQ",
+      "x": "Fujinomori_WH"
+    },
+    "activityStatus": "unknown"
+  },
+  {
+    "id": "tal-000071",
+    "name": "鈴木沙透",
+    "identityUrl": "https://www.parerdemia.jp/students/25ME009",
+    "wikiUrl": "https://wikiwiki.jp/jigjp/%E9%88%B4%E6%9C%A8%E6%B2%99%E9%80%8F",
+    "identityBasis": "official profile links + Wiki SNS/ID reconciliation",
+    "affiliations": [
+      {
+        "organizationId": "org-000002",
+        "status": "current",
+        "from": null,
+        "to": null
+      }
+    ],
+    "accountIds": {
+      "tiktok": "seabass_sugar",
+      "youtube": "UCj5nRzNFXZn9GRhITRkKElA",
+      "x": "seabass_sugar"
+    },
+    "activityStatus": "unknown"
+  },
+  {
+    "id": "tal-000072",
+    "name": "銀河キララ",
+    "identityUrl": "https://www.parerdemia.jp/students/26ME005",
+    "wikiUrl": "https://wikiwiki.jp/jigjp/%E9%8A%80%E6%B2%B3%E3%82%AD%E3%83%A9%E3%83%A9",
+    "identityBasis": "official profile links + Wiki SNS/ID reconciliation",
+    "affiliations": [
+      {
+        "organizationId": "org-000002",
+        "status": "current",
+        "from": null,
+        "to": null
+      }
+    ],
+    "accountIds": {
+      "tiktok": "kirara_ginga",
+      "youtube": "UCRuWA3zi9BB3pm4J0vLan_A",
+      "x": "kirara_ginga"
+    },
+    "activityStatus": "unknown"
+  },
+  {
+    "id": "tal-000073",
+    "name": "陰山アゲハ",
+    "identityUrl": "https://www.parerdemia.jp/students/25ME007",
+    "wikiUrl": "https://wikiwiki.jp/jigjp/%E9%99%B0%E5%B1%B1%E3%82%A2%E3%82%B2%E3%83%8F",
+    "identityBasis": "official profile links + Wiki SNS/ID reconciliation",
+    "affiliations": [
+      {
+        "organizationId": "org-000002",
+        "status": "current",
+        "from": null,
+        "to": null
+      }
+    ],
+    "accountIds": {
+      "tiktok": "kageyama_ageha3",
+      "youtube": "UCIw8aQVRBwi72yOrPLgkbRQ",
+      "x": "Ageha_kageyama"
+    },
+    "activityStatus": "unknown"
+  },
+  {
+    "id": "tal-000074",
+    "name": "雛菊のん",
+    "identityUrl": "https://www.parerdemia.jp/students/25ME012",
+    "wikiUrl": "https://wikiwiki.jp/jigjp/%E9%9B%9B%E8%8F%8A%E3%81%AE%E3%82%93",
+    "identityBasis": "official profile links + Wiki SNS/ID reconciliation",
+    "affiliations": [
+      {
+        "organizationId": "org-000002",
+        "status": "current",
+        "from": null,
+        "to": null
+      }
+    ],
+    "accountIds": {
+      "tiktok": "hinagiku_non",
+      "youtube": "UChccV6U0Tkx9de4YjXbEelw",
+      "x": "Hinagiku_Non"
+    },
+    "activityStatus": "unknown"
+  },
+  {
+    "id": "tal-000075",
+    "name": "雨海まる",
+    "identityUrl": "https://www.parerdemia.jp/students/25WA005",
+    "wikiUrl": "https://wikiwiki.jp/jigjp/%E9%9B%A8%E6%B5%B7%E3%81%BE%E3%82%8B",
+    "identityBasis": "official profile links + Wiki SNS/ID reconciliation",
+    "affiliations": [
+      {
+        "organizationId": "org-000002",
+        "status": "current",
+        "from": null,
+        "to": null
+      }
+    ],
+    "accountIds": {
+      "tiktok": "amamimaru",
+      "youtube": "UCLuPxPlM1v6IOTLxM1TRPzA",
+      "x": "maru_amami"
+    },
+    "activityStatus": "unknown"
+  },
+  {
+    "id": "tal-000076",
+    "name": "雪紫誉",
+    "identityUrl": "https://www.parerdemia.jp/students/26WH002",
+    "wikiUrl": "https://wikiwiki.jp/jigjp/%E9%9B%AA%E7%B4%AB%E8%AA%89",
+    "identityBasis": "official profile links + Wiki SNS/ID reconciliation",
+    "affiliations": [
+      {
+        "organizationId": "org-000002",
+        "status": "current",
+        "from": null,
+        "to": null
+      }
+    ],
+    "accountIds": {
+      "tiktok": "parerapbcc1",
+      "youtube": "UCdbYinKlpkB_uMt_wPmYcsw",
+      "x": "yukimurahomare"
+    },
+    "activityStatus": "unknown"
+  },
+  {
+    "id": "tal-000077",
+    "name": "露草なぎ",
+    "identityUrl": "https://www.parerdemia.jp/students/26WH001",
+    "wikiUrl": "https://wikiwiki.jp/jigjp/%E9%9C%B2%E8%8D%89%E3%81%AA%E3%81%8E",
+    "identityBasis": "official profile links + Wiki SNS/ID reconciliation",
+    "affiliations": [
+      {
+        "organizationId": "org-000002",
+        "status": "current",
+        "from": null,
+        "to": null
+      }
+    ],
+    "accountIds": {
+      "tiktok": "nagi_tsuyukusa",
+      "youtube": "UC9nhm1B-XhPaUO8W8oc4thQ",
+      "x": "Nagi_tsuyukusa"
+    },
+    "activityStatus": "unknown"
+  },
+  {
+    "id": "tal-000078",
+    "name": "音海まいる",
+    "identityUrl": "https://www.parerdemia.jp/students/25ME008",
+    "wikiUrl": "https://wikiwiki.jp/jigjp/%E9%9F%B3%E6%B5%B7%E3%81%BE%E3%81%84%E3%82%8B",
+    "identityBasis": "official profile links + Wiki SNS/ID reconciliation",
+    "affiliations": [
+      {
+        "organizationId": "org-000002",
+        "status": "current",
+        "from": null,
+        "to": null
+      }
+    ],
+    "accountIds": {
+      "tiktok": "mewmairu008",
+      "youtube": "UCz339ZwPv-i_PaBi_FVCF6w",
+      "x": "me_mairu"
+    },
+    "activityStatus": "unknown"
+  },
+  {
+    "id": "tal-000079",
+    "name": "飛渡ココ",
+    "identityUrl": "https://www.parerdemia.jp/students/25WA002",
+    "wikiUrl": "https://wikiwiki.jp/jigjp/%E9%A3%9B%E6%B8%A1%E3%82%B3%E3%82%B3",
+    "identityBasis": "official profile links + Wiki SNS/ID reconciliation",
+    "affiliations": [
+      {
+        "organizationId": "org-000002",
+        "status": "current",
+        "from": null,
+        "to": null
+      }
+    ],
+    "accountIds": {
+      "tiktok": "totococopopo",
+      "youtube": "UCMElh_FlHyzp_obVe-b3Qrg",
+      "x": "totococopopo"
+    },
+    "activityStatus": "unknown"
+  },
+  {
+    "id": "tal-000080",
+    "name": "香桜あんにん",
+    "identityUrl": "https://www.parerdemia.jp/students/26CO003",
+    "wikiUrl": "https://wikiwiki.jp/jigjp/%E9%A6%99%E6%A1%9C%E3%81%82%E3%82%93%E3%81%AB%E3%82%93",
+    "identityBasis": "official profile links + Wiki SNS/ID reconciliation",
+    "affiliations": [
+      {
+        "organizationId": "org-000002",
+        "status": "current",
+        "from": null,
+        "to": null
+      }
+    ],
+    "accountIds": {
+      "tiktok": "annin_kosakura",
+      "youtube": "UC8zjZBqGnx_j55ZJzluhW8A",
+      "x": "annin_kosakura"
+    },
+    "activityStatus": "unknown"
+  },
+  {
+    "id": "tal-000081",
+    "name": "黄金つむぎ",
+    "identityUrl": "https://www.parerdemia.jp/students/25WA012",
+    "wikiUrl": "https://wikiwiki.jp/jigjp/%E9%BB%84%E9%87%91%E3%81%A4%E3%82%80%E3%81%8E",
+    "identityBasis": "official profile links + Wiki SNS/ID reconciliation",
+    "affiliations": [
+      {
+        "organizationId": "org-000002",
+        "status": "current",
+        "from": null,
+        "to": null
+      }
+    ],
+    "accountIds": {
+      "tiktok": "tsumugyu_1130",
+      "youtube": "UCCqDErkWNs8yWjKS7zHYZBA",
+      "x": "tsumugyu_gold"
+    },
+    "activityStatus": "unknown"
+  },
+  {
+    "id": "tal-000082",
+    "name": "黒鋼亜華",
+    "identityUrl": "https://www.parerdemia.jp/students/25WH001",
+    "wikiUrl": "https://wikiwiki.jp/jigjp/%E9%BB%92%E9%8B%BC%E4%BA%9C%E8%8F%AF",
+    "identityBasis": "official profile links + Wiki SNS/ID reconciliation",
+    "affiliations": [
+      {
+        "organizationId": "org-000002",
+        "status": "current",
+        "from": null,
+        "to": null
+      }
+    ],
+    "accountIds": {
+      "tiktok": "akakujoeg6e",
+      "youtube": "UCEJSKIlp0XitVYFjJG7eYBg",
+      "x": "Aka_kurogane_"
+    },
+    "activityStatus": "unknown"
+  },
+  {
+    "id": "tal-000083",
+    "name": "秋桜しゅお",
+    "identityUrl": "https://www.vmon.jp/box-talents/profile/syuou-syuo",
+    "wikiUrl": "https://wikiwiki.jp/jigjp/%E7%A7%8B%E6%A1%9C%E3%81%97%E3%82%85%E3%81%8A",
+    "identityBasis": "official profile links + Wiki SNS/ID reconciliation",
+    "affiliations": [
+      {
+        "organizationId": "org-000004",
+        "status": "current",
+        "from": null,
+        "to": null
+      }
+    ],
+    "accountIds": {
+      "youtube": "UCPjtwOeRQV5EFkCwUycZsgw",
+      "x": "SyuouSyuo",
+      "tiktok": "syuousyuo"
+    },
+    "activityStatus": "unknown"
+  },
+  {
+    "id": "tal-000084",
+    "name": "白銀ヘレナ",
+    "identityUrl": "https://paletteproject.jp/shiroganeherena_20191106/",
+    "wikiUrl": "https://wikiwiki.jp/jigjp/Palette%20Project/%E7%99%BD%E9%8A%80%E3%83%98%E3%83%AC%E3%83%8A",
+    "identityBasis": "official profile links + Wiki SNS/ID reconciliation",
+    "affiliations": [
+      {
+        "organizationId": "org-000003",
+        "status": "former",
+        "from": null,
+        "to": "2019-11-06"
+      }
+    ],
+    "accountIds": {
+      "youtube": "UC9wTdox728Y2lp3WR7dhoVw"
+    },
+    "activityStatus": "unknown"
+  },
+  {
+    "id": "tal-000085",
+    "name": "遠坂ユラ",
+    "identityUrl": "https://x.com/PaletteProject_/status/1371797985168744452",
+    "wikiUrl": "https://wikiwiki.jp/jigjp/Palette%20Project/%E9%81%A0%E5%9D%82%E3%83%A6%E3%83%A9",
+    "identityBasis": "official profile links + Wiki SNS/ID reconciliation",
+    "affiliations": [
+      {
+        "organizationId": "org-000003",
+        "status": "former",
+        "from": null,
+        "to": null
+      }
+    ],
+    "accountIds": {
+      "youtube": "UCeAjLbNpaB4v5oHGUCuQaBA"
+    },
+    "activityStatus": "unknown"
+  },
+  {
+    "id": "tal-000086",
+    "name": "神菜コハネ",
+    "identityUrl": "https://x.com/KaminaKohane/status/1612839371039977473",
+    "wikiUrl": "https://wikiwiki.jp/jigjp/Palette%20Project/%E7%A5%9E%E8%8F%9C%E3%82%B3%E3%83%8F%E3%83%8D",
+    "identityBasis": "official profile links + Wiki SNS/ID reconciliation",
+    "affiliations": [
+      {
+        "organizationId": "org-000003",
+        "status": "former",
+        "from": null,
+        "to": "2023-01-31"
+      }
+    ],
+    "accountIds": {
+      "youtube": "UCbVzOA4KOmAoJuZP65gOLEQ"
+    },
+    "activityStatus": "unknown"
+  },
+  {
+    "id": "tal-000087",
+    "name": "日本晴ここ",
+    "identityUrl": "https://x.com/PaletteProject_/status/1889147349370306783",
+    "wikiUrl": "https://wikiwiki.jp/jigjp/Palette%20Project/%E6%97%A5%E6%9C%AC%E6%99%B4%E3%81%93%E3%81%93",
+    "identityBasis": "official announcement naming this person + linked Wiki history; unverifiable accounts omitted",
+    "affiliations": [
+      {
+        "organizationId": "org-000003",
+        "status": "former",
+        "from": null,
+        "to": "2025-03-19"
+      }
+    ],
+    "accountIds": {},
+    "activityStatus": "ended"
+  },
+  {
+    "id": "tal-000088",
+    "name": "六連星なる",
+    "identityUrl": "https://x.com/PaletteProject_/status/1961640022593212818",
+    "wikiUrl": "https://wikiwiki.jp/jigjp/Palette%20Project/%E5%85%AD%E9%80%A3%E6%98%9F%E3%81%AA%E3%82%8B",
+    "identityBasis": "official announcement naming this person + linked Wiki history; unverifiable accounts omitted",
+    "affiliations": [
+      {
+        "organizationId": "org-000003",
+        "status": "former",
+        "from": null,
+        "to": null
+      }
+    ],
+    "accountIds": {},
+    "activityStatus": "ended"
+  },
+  {
+    "id": "tal-000089",
+    "name": "月宮あお",
+    "identityUrl": "https://x.com/PaletteProject_/status/1961640022593212818",
+    "wikiUrl": "https://wikiwiki.jp/jigjp/Palette%20Project/%E6%9C%88%E5%AE%AE%E3%81%82%E3%81%8A",
+    "identityBasis": "official announcement naming this person + linked Wiki history; unverifiable accounts omitted",
+    "affiliations": [
+      {
+        "organizationId": "org-000003",
+        "status": "former",
+        "from": null,
+        "to": null
+      }
+    ],
+    "accountIds": {},
+    "activityStatus": "ended"
+  },
+  {
+    "id": "tal-000090",
+    "name": "鎖乙女がぶ",
+    "identityUrl": "https://x.com/PaletteProject_/status/2008750443074383895",
+    "wikiUrl": "https://wikiwiki.jp/jigjp/Palette%20Project/%E9%8E%96%E4%B9%99%E5%A5%B3%E3%81%8C%E3%81%B6",
+    "identityBasis": "official announcement naming this person + linked Wiki history; unverifiable accounts omitted",
+    "affiliations": [
+      {
+        "organizationId": "org-000003",
+        "status": "former",
+        "from": null,
+        "to": "2026-01-22"
+      }
+    ],
+    "accountIds": {},
+    "activityStatus": "ended"
+  },
+  {
+    "id": "tal-000091",
+    "name": "彩音るか",
+    "identityUrl": "https://x.com/PaletteProject_/status/2008750443074383895",
+    "wikiUrl": "https://wikiwiki.jp/jigjp/Palette%20Project/%E5%BD%A9%E9%9F%B3%E3%82%8B%E3%81%8B",
+    "identityBasis": "official announcement naming this person + linked Wiki history; unverifiable accounts omitted",
+    "affiliations": [
+      {
+        "organizationId": "org-000003",
+        "status": "former",
+        "from": null,
+        "to": "2026-01-22"
+      }
+    ],
+    "accountIds": {},
+    "activityStatus": "ended"
+  },
+  {
+    "id": "tal-000092",
+    "name": "愛染アネラ",
+    "identityUrl": "https://x.com/PaletteProject_/status/2042452515547910253",
+    "wikiUrl": "https://wikiwiki.jp/jigjp/Palette%20Project/%E6%84%9B%E6%9F%93%E3%82%A2%E3%83%8D%E3%83%A9",
+    "identityBasis": "official announcement naming this person + linked Wiki history; unverifiable accounts omitted",
+    "affiliations": [
+      {
+        "organizationId": "org-000003",
+        "status": "former",
+        "from": null,
+        "to": "2026-06-29"
+      }
+    ],
+    "accountIds": {},
+    "activityStatus": "ended"
+  },
+  {
+    "id": "tal-000093",
+    "name": "采多しゆあ",
+    "identityUrl": "https://x.com/parerdemia/status/2086648736919474488",
+    "wikiUrl": "https://wikiwiki.jp/jigjp/%E9%87%87%E5%A4%9A%E3%81%97%E3%82%86%E3%81%82",
+    "identityBasis": "official exit notice naming person + Wiki linked X identity + same self-linked X in channels.list description",
+    "affiliations": [
+      {
+        "organizationId": "org-000002",
+        "status": "former",
+        "from": null,
+        "to": null
+      }
+    ],
+    "accountIds": {
+      "youtube": "UCH-y5TRNvToQpVKZ9JrD5WA",
+      "x": "cider_siyua"
+    },
+    "activityStatus": "unknown"
+  },
+  {
+    "id": "tal-000094",
+    "name": "神童めしあ",
+    "identityUrl": "https://x.com/parerdemia/status/2097203279608320171",
+    "wikiUrl": "https://wikiwiki.jp/jigjp/%E7%A5%9E%E7%AB%A5%E3%82%81%E3%81%97%E3%81%82",
+    "identityBasis": "official announcement naming this person + linked Wiki history; unverifiable accounts omitted",
+    "affiliations": [
+      {
+        "organizationId": "org-000002",
+        "status": "former",
+        "from": null,
+        "to": null
+      }
+    ],
+    "accountIds": {},
+    "activityStatus": "unknown"
+  },
+  {
+    "id": "tal-000095",
+    "name": "斗瀬ひおり",
+    "identityUrl": "https://x.com/parerdemia/status/2066438060133220843",
+    "wikiUrl": "https://wikiwiki.jp/jigjp/%E6%96%97%E7%80%AC%E3%81%B2%E3%81%8A%E3%82%8A",
+    "identityBasis": "official exit notice naming person + Wiki citation and YouTube handle + channels.list exact customUrl/ID match",
+    "affiliations": [
+      {
+        "organizationId": "org-000002",
+        "status": "former",
+        "from": null,
+        "to": null
+      }
+    ],
+    "accountIds": {
+      "youtube": "UC08QpBje15pNUqtG9_SivMw"
+    },
+    "activityStatus": "unknown"
+  },
+  {
+    "id": "tal-000096",
+    "name": "ニコ・ダークウェル",
+    "identityUrl": "https://x.com/parerdemia/status/2110249242853888337",
+    "wikiUrl": "https://wikiwiki.jp/jigjp/%E3%83%8B%E3%82%B3%E3%83%BB%E3%83%80%E3%83%BC%E3%82%AF%E3%82%A6%E3%82%A7%E3%83%AB",
+    "identityBasis": "official announcement naming this person + linked Wiki history; unverifiable accounts omitted",
+    "affiliations": [
+      {
+        "organizationId": "org-000002",
+        "status": "former",
+        "from": null,
+        "to": null
+      }
+    ],
+    "accountIds": {},
+    "activityStatus": "unknown"
+  },
+  {
+    "id": "tal-000097",
+    "name": "なる",
+    "identityUrl": "https://www.youtube.com/channel/UCMX0Mn5PTjojdQL8MN1B5Vg",
+    "wikiUrl": "https://wikiwiki.jp/jigjp/%E3%81%AA%E3%82%8B",
+    "identityBasis": "official profile links + Wiki SNS/ID reconciliation",
+    "affiliations": [
+      {
+        "organizationId": "org-000005",
+        "status": "current",
+        "from": null,
+        "to": null
+      }
+    ],
+    "accountIds": {
+      "youtube": "UCMX0Mn5PTjojdQL8MN1B5Vg"
+    },
+    "activityStatus": "unknown"
+  }
+]

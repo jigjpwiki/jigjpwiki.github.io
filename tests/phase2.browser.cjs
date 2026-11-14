@@ -1,6 +1,11 @@
 'use strict';
 const { chromium }=require('playwright'); const assert=require('node:assert/strict'); const fs=require('node:fs'); const path=require('node:path');const http=require('node:http');
 const root=path.resolve(__dirname,'../_site');
+const master=require('../data/talents.json');const catalog=require('../data/catalog.json');const events=require('../data/anniversaries.json').events;
+const core=require('../assets/js/anniversary-core');
+const formerCount=master.talents.filter(t=>t.affiliations.some(a=>a.status==='former')).length;
+const orgCurrent=master.talents.filter(t=>t.affiliations.some(a=>a.organizationId==='org-000001'&&a.status==='current')).length;
+const firstGroupCurrent=catalog.groups[0].talentIds.filter(id=>master.talents.find(t=>t.id===id).affiliations.some(a=>a.status==='current'&&a.organizationId==='org-000001')).length;
 (async()=>{
  const server=http.createServer((req,res)=>{
   if(req.url==='/fixture-goods/'||req.url==='/fixture-profile/') {
@@ -38,9 +43,9 @@ const root=path.resolve(__dirname,'../_site');
    await page.getByRole('button',{name:'翌月',exact:true}).click();assert.equal(await page.locator('#month-label').innerText(),'2027-01');
    for(let i=0;i<2;i++)await page.getByRole('button',{name:'翌月',exact:true}).click();
    await page.locator('[data-day="2027-03-07"]').click();
-   await page.keyboard.press('ArrowRight');assert.equal(await page.locator('[data-day="2027-03-08"]').getAttribute('aria-pressed'),'true');assert.match(await page.locator('#day-details').innerText(),/確認済み記念日はありません/);
+   await page.keyboard.press('ArrowRight');assert.equal(await page.locator('[data-day="2027-03-08"]').getAttribute('aria-pressed'),'true');assert.equal(await page.locator('#day-details [data-event-id]').count(),core.between(events,'2027-03-08','2027-03-09').length);
    await page.keyboard.press('ArrowLeft');
-   assert.equal(await page.locator('#day-details [data-event-id]').count(),4);assert.match(await page.locator('#day-details').innerText(),/2周年/);
+   assert.equal(await page.locator('#day-details [data-event-id]').count(),core.between(events,'2027-03-07','2027-03-08').length);assert.match(await page.locator('#day-details').innerText(),/2周年/);
    await page.locator('#day-details details summary').first().click();assert.equal(await page.locator('#day-details details[open] a').first().getAttribute('href'),'https://www.proforma-production.jp/news/n/q1rm0p3exwy3');
    if(process.env.BROWSER_SCREENSHOT_DIR)await page.screenshot({path:path.join(process.env.BROWSER_SCREENSHOT_DIR,`calendar-filled-${width}.png`),fullPage:true});
    await page.locator('#event-type').selectOption('birthday');assert.equal(await page.locator('#day-details [data-event-id]').count(),0);
@@ -49,14 +54,23 @@ const root=path.resolve(__dirname,'../_site');
    assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth),false);
    if(process.env.BROWSER_SCREENSHOT_DIR){fs.mkdirSync(process.env.BROWSER_SCREENSHOT_DIR,{recursive:true});await page.screenshot({path:path.join(process.env.BROWSER_SCREENSHOT_DIR,`calendar-${width}.png`),fullPage:true});}
    await page.goto(base+'/talents/');
-   assert.match(await page.locator('#talent-relation option[value="former"]').innerText(),/\(1\)/);
-   await page.locator('#talent-search').fill('ねる');assert.equal(await page.locator('.talent-card:visible').count(),1);
+   assert.equal(await page.locator('#talent-relation option[value="former"]').innerText(),`旧所属 (${formerCount})`);
+   await page.locator('#talent-search').fill('真昼');assert.equal(await page.locator('.talent-card:visible').count(),1);
    await page.locator('#talent-relation').selectOption('former');assert.equal(await page.locator('.talent-card:visible').count(),0);assert.equal(await page.locator('#talent-empty').isVisible(),true);
    await page.getByRole('button',{name:'条件を解除'}).click();await page.waitForFunction(()=>!document.querySelector('#tal-000004').hidden);
-   await page.locator('#talent-organization').selectOption('org-000001');await page.locator('#talent-relation').selectOption('current');assert.equal(await page.locator('.talent-card:visible').count(),3);
-   await page.locator('#talent-group').selectOption('group-000001');assert.equal(await page.locator('.talent-card:visible').count(),2);
+   await page.locator('#talent-organization').selectOption('org-000001');await page.locator('#talent-relation').selectOption('current');assert.equal(await page.locator('.talent-card:visible').count(),orgCurrent);
+   await page.locator('#talent-group').selectOption('group-000001');assert.equal(await page.locator('.talent-card:visible').count(),firstGroupCurrent);
    await page.locator('#talent-relation').selectOption('former');assert.equal(await page.locator('.talent-card:visible').count(),1);assert.match(await page.locator('.talent-card:visible').innerText(),/旧所属/);
    await page.getByRole('button',{name:'条件を解除'}).click();await page.waitForFunction(()=>!document.querySelector('#tal-000001').hidden);
+   // Exercise every expanded agency and group against independently curated ID sets.
+   const visibleIds=async()=>page.locator('[data-person]:visible').evaluateAll(nodes=>nodes.map(n=>n.id).sort());
+   for(const org of master.organizations){
+    await page.locator('#talent-organization').selectOption(org.id);
+    assert.deepEqual(await visibleIds(),master.talents.filter(t=>t.affiliations.some(a=>a.organizationId===org.id&&['current','former'].includes(a.status))).map(t=>t.id).sort());
+   }
+   await page.locator('#talent-organization').selectOption('');
+   for(const group of catalog.groups){await page.locator('#talent-group').selectOption(group.id);assert.deepEqual(await visibleIds(),[...group.talentIds].sort());}
+   await page.locator('#talent-group').selectOption('');
    await page.getByRole('link',{name:'真昼ねる',exact:true}).click();await page.waitForURL(base+'/talents/tal-000001/');
    assert.equal(await page.getByRole('heading',{name:'真昼ねる',exact:true}).count(),1);
    assert.match(await page.locator('main').innerText(),/サイト公開時点の保存データ/);

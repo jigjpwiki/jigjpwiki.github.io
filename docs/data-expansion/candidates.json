@@ -1,0 +1,1209 @@
+[
+  {
+    "name": "さくさくさく",
+    "scopes": [
+      "youtube_streamers",
+      "パレデミア学園"
+    ],
+    "result": "registered",
+    "id": "tal-000019"
+  },
+  {
+    "name": "しろはとこはね",
+    "scopes": [
+      "ProForma Nova / ProForma Production"
+    ],
+    "result": "held",
+    "reason": "旧ProForma Wikiへの外部リンク中心。現Wikiプロフィール・公式の本人/在籍根拠を取得できず、外部旧ページも要調査。",
+    "wikiUrls": [
+      "https://wikiwiki.jp/jigjp/%E3%81%97%E3%82%8D%E3%81%AF%E3%81%A8%E3%81%93%E3%81%AF%E3%81%AD"
+    ]
+  },
+  {
+    "name": "しーはむ",
+    "scopes": [
+      "ProForma Nova",
+      "twitch_streamers",
+      "youtube_streamers"
+    ],
+    "result": "registered",
+    "id": "tal-000013"
+  },
+  {
+    "name": "なかもとおまち",
+    "scopes": [
+      "ProForma Nova",
+      "twitch_streamers",
+      "youtube_streamers"
+    ],
+    "result": "registered",
+    "id": "tal-000014"
+  },
+  {
+    "name": "なる",
+    "scopes": [
+      "jig.jp所属",
+      "youtube_streamers"
+    ],
+    "result": "registered",
+    "id": "tal-000097"
+  },
+  {
+    "name": "シグマ・イングラム",
+    "scopes": [
+      "youtube_streamers",
+      "パレデミア学園"
+    ],
+    "result": "registered",
+    "id": "tal-000020"
+  },
+  {
+    "name": "ニコ・ダークウェル",
+    "scopes": [
+      "パレデミア学園"
+    ],
+    "result": "registered",
+    "id": "tal-000096"
+  },
+  {
+    "name": "フローレ・ブランカ",
+    "scopes": [
+      "youtube_streamers",
+      "パレデミア学園"
+    ],
+    "result": "registered",
+    "id": "tal-000021"
+  },
+  {
+    "name": "ローズ・ダマスクハート",
+    "scopes": [
+      "youtube_streamers",
+      "パレデミア学園"
+    ],
+    "result": "registered",
+    "id": "tal-000022"
+  },
+  {
+    "name": "七扇ヲトメ",
+    "scopes": [
+      "パレデミア学園"
+    ],
+    "result": "held",
+    "reason": "Wikiの卒業寮生一覧・プロフィールを確認。現公式名簿からの欠落やリンク404は卒業の根拠にせず、本人名と退学/契約終了を結びつける公式告知本文の確認待ち。",
+    "wikiUrls": [
+      "https://wikiwiki.jp/jigjp/%E4%B8%83%E6%89%87%E3%83%B2%E3%83%88%E3%83%A1"
+    ]
+  },
+  {
+    "name": "七海ロナ",
+    "scopes": [
+      "Palette Project",
+      "youtube_streamers"
+    ],
+    "result": "registered",
+    "id": "tal-000005"
+  },
+  {
+    "name": "七音うら",
+    "scopes": [
+      "youtube_streamers",
+      "パレデミア学園"
+    ],
+    "result": "registered",
+    "id": "tal-000023"
+  },
+  {
+    "name": "久堂れしあ",
+    "scopes": [
+      "youtube_streamers",
+      "パレデミア学園"
+    ],
+    "result": "registered",
+    "id": "tal-000024"
+  },
+  {
+    "name": "乙女きゅん",
+    "scopes": [
+      "パレデミア学園"
+    ],
+    "result": "held",
+    "reason": "Wikiの卒業寮生一覧・プロフィールを確認。現公式名簿からの欠落やリンク404は卒業の根拠にせず、本人名と退学/契約終了を結びつける公式告知本文の確認待ち。",
+    "wikiUrls": [
+      "https://wikiwiki.jp/jigjp/%E4%B9%99%E5%A5%B3%E3%81%8D%E3%82%85%E3%82%93"
+    ]
+  },
+  {
+    "name": "亀城ちかり",
+    "scopes": [
+      "youtube_streamers",
+      "パレデミア学園"
+    ],
+    "result": "registered",
+    "id": "tal-000025"
+  },
+  {
+    "name": "八千代あさ",
+    "scopes": [
+      "jig.jp所属",
+      "youtube_streamers"
+    ],
+    "result": "held",
+    "reason": "Wiki・監視JSON・YouTube IDは確認。今回取得した公式ページ/チャンネル説明ではjig.jp所属の明示的な根拠を確認できず保留。",
+    "wikiUrls": [
+      "https://wikiwiki.jp/jigjp/%E5%85%AB%E5%8D%83%E4%BB%A3%E3%81%82%E3%81%95"
+    ]
+  },
+  {
+    "name": "八千代よる",
+    "scopes": [
+      "jig.jp所属",
+      "youtube_streamers"
+    ],
+    "result": "held",
+    "reason": "Wiki・監視JSON・YouTube IDは確認。今回取得した公式ページ/チャンネル説明ではjig.jp所属の明示的な根拠を確認できず保留。",
+    "wikiUrls": [
+      "https://wikiwiki.jp/jigjp/%E5%85%AB%E5%8D%83%E4%BB%A3%E3%82%88%E3%82%8B"
+    ]
+  },
+  {
+    "name": "八重森ふゆの",
+    "scopes": [
+      "youtube_streamers",
+      "パレデミア学園"
+    ],
+    "result": "held",
+    "reason": "Wikiの卒業寮生一覧・プロフィールを確認。現公式名簿からの欠落やリンク404は卒業の根拠にせず、本人名と退学/契約終了を結びつける公式告知本文の確認待ち。",
+    "wikiUrls": [
+      "https://wikiwiki.jp/jigjp/%E5%85%AB%E9%87%8D%E6%A3%AE%E3%81%B5%E3%82%86%E3%81%AE"
+    ]
+  },
+  {
+    "name": "六連星なる",
+    "scopes": [
+      "Palette Project"
+    ],
+    "result": "registered",
+    "id": "tal-000088"
+  },
+  {
+    "name": "冬星れんこん",
+    "scopes": [
+      "youtube_streamers",
+      "パレデミア学園"
+    ],
+    "result": "registered",
+    "id": "tal-000026"
+  },
+  {
+    "name": "千歳ゆうり",
+    "scopes": [
+      "ProForma Nova / ProForma Production"
+    ],
+    "result": "held",
+    "reason": "旧ProForma Wikiへの外部リンク中心。現Wikiプロフィール・公式の本人/在籍根拠を取得できず、外部旧ページも要調査。",
+    "wikiUrls": [
+      "https://wikiwiki.jp/jigjp/%E5%8D%83%E6%AD%B3%E3%82%86%E3%81%86%E3%82%8A"
+    ]
+  },
+  {
+    "name": "四葉みっけ",
+    "scopes": [
+      "youtube_streamers",
+      "パレデミア学園"
+    ],
+    "result": "registered",
+    "id": "tal-000027"
+  },
+  {
+    "name": "堂下さとり",
+    "scopes": [
+      "youtube_streamers",
+      "パレデミア学園"
+    ],
+    "result": "registered",
+    "id": "tal-000028"
+  },
+  {
+    "name": "変幻リメ",
+    "scopes": [
+      "Palette Project",
+      "jig.jp所属",
+      "youtube_streamers"
+    ],
+    "result": "held",
+    "reason": "Wikiの旧研究生ページと現ページは同じYouTube IDへ照合。公式X告知は本人名を含むが埋め込み本文では所属変更の画像内容を取得できず、jig.jp直轄への移籍日/所属状態を確定できない。お問い合わせメールだけから所属を推定しない。",
+    "wikiUrls": [
+      "https://wikiwiki.jp/jigjp/Palette%20Project/%E5%A4%89%E5%B9%BB%E3%83%AA%E3%83%A1"
+    ]
+  },
+  {
+    "name": "夏凪はつみ",
+    "scopes": [
+      "youtube_streamers",
+      "パレデミア学園"
+    ],
+    "result": "registered",
+    "id": "tal-000029"
+  },
+  {
+    "name": "夏渚まはろ",
+    "scopes": [
+      "Palette Project",
+      "youtube_streamers"
+    ],
+    "result": "registered",
+    "id": "tal-000006"
+  },
+  {
+    "name": "夕凪万夜",
+    "scopes": [
+      "youtube_streamers",
+      "パレデミア学園"
+    ],
+    "result": "registered",
+    "id": "tal-000030"
+  },
+  {
+    "name": "夜宵カレン",
+    "scopes": [
+      "youtube_streamers",
+      "パレデミア学園"
+    ],
+    "result": "registered",
+    "id": "tal-000031"
+  },
+  {
+    "name": "夜雨ねむる",
+    "scopes": [
+      "youtube_streamers",
+      "パレデミア学園"
+    ],
+    "result": "registered",
+    "id": "tal-000032"
+  },
+  {
+    "name": "夢ト見りんね",
+    "scopes": [
+      "youtube_streamers",
+      "パレデミア学園"
+    ],
+    "result": "registered",
+    "id": "tal-000033"
+  },
+  {
+    "name": "天堂ライラ",
+    "scopes": [
+      "youtube_streamers",
+      "パレデミア学園"
+    ],
+    "result": "registered",
+    "id": "tal-000034"
+  },
+  {
+    "name": "天辻ゆらぐ",
+    "scopes": [
+      "youtube_streamers",
+      "パレデミア学園"
+    ],
+    "result": "registered",
+    "id": "tal-000035"
+  },
+  {
+    "name": "天透あわ",
+    "scopes": [
+      "youtube_streamers",
+      "パレデミア学園"
+    ],
+    "result": "registered",
+    "id": "tal-000036"
+  },
+  {
+    "name": "天野ディアーヌ",
+    "scopes": [
+      "パレデミア学園"
+    ],
+    "result": "held",
+    "reason": "Wikiの卒業寮生一覧・プロフィールを確認。現公式名簿からの欠落やリンク404は卒業の根拠にせず、本人名と退学/契約終了を結びつける公式告知本文の確認待ち。",
+    "wikiUrls": [
+      "https://wikiwiki.jp/jigjp/%E5%A4%A9%E9%87%8E%E3%83%87%E3%82%A3%E3%82%A2%E3%83%BC%E3%83%8C"
+    ]
+  },
+  {
+    "name": "天麗らん",
+    "scopes": [
+      "youtube_streamers",
+      "パレデミア学園"
+    ],
+    "result": "registered",
+    "id": "tal-000037"
+  },
+  {
+    "name": "宵坂伊織",
+    "scopes": [
+      "youtube_streamers",
+      "パレデミア学園"
+    ],
+    "result": "registered",
+    "id": "tal-000038"
+  },
+  {
+    "name": "小澄くろまる",
+    "scopes": [
+      "ProForma Nova",
+      "youtube_streamers"
+    ],
+    "result": "registered",
+    "id": "tal-000015"
+  },
+  {
+    "name": "山田スバル",
+    "scopes": [
+      "youtube_streamers",
+      "パレデミア学園"
+    ],
+    "result": "registered",
+    "id": "tal-000039"
+  },
+  {
+    "name": "巳野みこと",
+    "scopes": [
+      "youtube_streamers",
+      "パレデミア学園"
+    ],
+    "result": "registered",
+    "id": "tal-000040"
+  },
+  {
+    "name": "常磐カナメ",
+    "scopes": [
+      "Palette Project",
+      "youtube_streamers"
+    ],
+    "result": "registered",
+    "id": "tal-000007"
+  },
+  {
+    "name": "彩音るか",
+    "scopes": [
+      "Palette Project"
+    ],
+    "result": "registered",
+    "id": "tal-000091"
+  },
+  {
+    "name": "彼方ルカ",
+    "scopes": [
+      "youtube_streamers",
+      "パレデミア学園"
+    ],
+    "result": "registered",
+    "id": "tal-000041"
+  },
+  {
+    "name": "恋歌さわこ",
+    "scopes": [
+      "パレデミア学園"
+    ],
+    "result": "registered",
+    "id": "tal-000042"
+  },
+  {
+    "name": "愛上オハナ",
+    "scopes": [
+      "youtube_streamers",
+      "パレデミア学園"
+    ],
+    "result": "registered",
+    "id": "tal-000043"
+  },
+  {
+    "name": "愛乃宮ゆめ",
+    "scopes": [
+      "youtube_streamers",
+      "パレデミア学園"
+    ],
+    "result": "registered",
+    "id": "tal-000044"
+  },
+  {
+    "name": "愛染アネラ",
+    "scopes": [
+      "Palette Project"
+    ],
+    "result": "registered",
+    "id": "tal-000092"
+  },
+  {
+    "name": "愛葉はな",
+    "scopes": [
+      "youtube_streamers",
+      "パレデミア学園"
+    ],
+    "result": "registered",
+    "id": "tal-000045"
+  },
+  {
+    "name": "斗瀬ひおり",
+    "scopes": [
+      "youtube_streamers",
+      "パレデミア学園"
+    ],
+    "result": "registered",
+    "id": "tal-000095"
+  },
+  {
+    "name": "新巻るろな",
+    "scopes": [
+      "youtube_streamers",
+      "パレデミア学園"
+    ],
+    "result": "registered",
+    "id": "tal-000046"
+  },
+  {
+    "name": "日本晴ここ",
+    "scopes": [
+      "Palette Project"
+    ],
+    "result": "registered",
+    "id": "tal-000087"
+  },
+  {
+    "name": "星ノ夢みよ",
+    "scopes": [
+      "パレデミア学園"
+    ],
+    "result": "held",
+    "reason": "Wikiの卒業寮生一覧・プロフィールを確認。現公式名簿からの欠落やリンク404は卒業の根拠にせず、本人名と退学/契約終了を結びつける公式告知本文の確認待ち。",
+    "wikiUrls": [
+      "https://wikiwiki.jp/jigjp/%E6%98%9F%E3%83%8E%E5%A4%A2%E3%81%BF%E3%82%88"
+    ]
+  },
+  {
+    "name": "暁月クララ",
+    "scopes": [
+      "Palette Project",
+      "youtube_streamers"
+    ],
+    "result": "registered",
+    "id": "tal-000008"
+  },
+  {
+    "name": "月宮あお",
+    "scopes": [
+      "Palette Project"
+    ],
+    "result": "registered",
+    "id": "tal-000089"
+  },
+  {
+    "name": "月百ぷかり",
+    "scopes": [
+      "youtube_streamers",
+      "パレデミア学園"
+    ],
+    "result": "held",
+    "reason": "Wikiの卒業寮生一覧・プロフィールを確認。現公式名簿からの欠落やリンク404は卒業の根拠にせず、本人名と退学/契約終了を結びつける公式告知本文の確認待ち。",
+    "wikiUrls": [
+      "https://wikiwiki.jp/jigjp/%E6%9C%88%E7%99%BE%E3%81%B7%E3%81%8B%E3%82%8A"
+    ]
+  },
+  {
+    "name": "月皇ちな",
+    "scopes": [
+      "ProForma Nova / ProForma Production",
+      "twitch_streamers"
+    ],
+    "result": "held",
+    "reason": "2026-01-13の加入は公式ニュースで確認。Wikiは卒業済みとするが現公式プロフィールは404。卒業告知本文・現在/旧所属の確定が未確認のため登録保留。",
+    "wikiUrls": [
+      "https://wikiwiki.jp/jigjp/%E6%9C%88%E7%9A%87%E3%81%A1%E3%81%AA"
+    ]
+  },
+  {
+    "name": "朧月ひかる",
+    "scopes": [
+      "パレデミア学園"
+    ],
+    "result": "held",
+    "reason": "Wikiの卒業寮生一覧・プロフィールを確認。現公式名簿からの欠落やリンク404は卒業の根拠にせず、本人名と退学/契約終了を結びつける公式告知本文の確認待ち。",
+    "wikiUrls": [
+      "https://wikiwiki.jp/jigjp/%E6%9C%A7%E6%9C%88%E3%81%B2%E3%81%8B%E3%82%8B"
+    ]
+  },
+  {
+    "name": "李じゅぴ汰",
+    "scopes": [
+      "ProForma Nova",
+      "ProForma Nova / ProForma Production",
+      "twitch_streamers"
+    ],
+    "result": "registered",
+    "id": "tal-000004"
+  },
+  {
+    "name": "東雲アカリ",
+    "scopes": [
+      "youtube_streamers",
+      "パレデミア学園"
+    ],
+    "result": "registered",
+    "id": "tal-000047"
+  },
+  {
+    "name": "桜堂ねる",
+    "scopes": [
+      "youtube_streamers",
+      "パレデミア学園"
+    ],
+    "result": "registered",
+    "id": "tal-000048"
+  },
+  {
+    "name": "桜庭羽奈",
+    "scopes": [
+      "youtube_streamers",
+      "パレデミア学園"
+    ],
+    "result": "registered",
+    "id": "tal-000049"
+  },
+  {
+    "name": "桜雲ほわり",
+    "scopes": [
+      "youtube_streamers",
+      "パレデミア学園"
+    ],
+    "result": "registered",
+    "id": "tal-000050"
+  },
+  {
+    "name": "橙葉ぽん",
+    "scopes": [
+      "ProForma Nova",
+      "youtube_streamers"
+    ],
+    "result": "registered",
+    "id": "tal-000016"
+  },
+  {
+    "name": "水凪るぅ",
+    "scopes": [
+      "youtube_streamers",
+      "パレデミア学園"
+    ],
+    "result": "registered",
+    "id": "tal-000051"
+  },
+  {
+    "name": "水無瀬天",
+    "scopes": [
+      "youtube_streamers",
+      "パレデミア学園"
+    ],
+    "result": "registered",
+    "id": "tal-000052"
+  },
+  {
+    "name": "水透ユウ",
+    "scopes": [
+      "ProForma Nova",
+      "twitch_streamers",
+      "youtube_streamers"
+    ],
+    "result": "registered",
+    "id": "tal-000003"
+  },
+  {
+    "name": "氷雨セイ",
+    "scopes": [
+      "youtube_streamers",
+      "パレデミア学園"
+    ],
+    "result": "registered",
+    "id": "tal-000053"
+  },
+  {
+    "name": "汐月永遠",
+    "scopes": [
+      "youtube_streamers",
+      "パレデミア学園"
+    ],
+    "result": "registered",
+    "id": "tal-000054"
+  },
+  {
+    "name": "江波キョウカ",
+    "scopes": [
+      "Palette Project",
+      "youtube_streamers"
+    ],
+    "result": "registered",
+    "id": "tal-000009"
+  },
+  {
+    "name": "泡清みる",
+    "scopes": [
+      "ProForma Nova / ProForma Production"
+    ],
+    "result": "held",
+    "reason": "2026-01-13の加入は公式ニュースで確認。Wikiは卒業済みとするが現公式プロフィールは404。卒業告知本文・現在/旧所属の確定が未確認のため登録保留。",
+    "wikiUrls": [
+      "https://wikiwiki.jp/jigjp/%E6%B3%A1%E6%B8%85%E3%81%BF%E3%82%8B"
+    ]
+  },
+  {
+    "name": "満力きぃ",
+    "scopes": [
+      "パレデミア学園"
+    ],
+    "result": "held",
+    "reason": "Wikiの卒業寮生一覧・プロフィールを確認。現公式名簿からの欠落やリンク404は卒業の根拠にせず、本人名と退学/契約終了を結びつける公式告知本文の確認待ち。",
+    "wikiUrls": [
+      "https://wikiwiki.jp/jigjp/%E6%BA%80%E5%8A%9B%E3%81%8D%E3%81%83"
+    ]
+  },
+  {
+    "name": "瀬奈りるか",
+    "scopes": [
+      "youtube_streamers",
+      "パレデミア学園"
+    ],
+    "result": "registered",
+    "id": "tal-000055"
+  },
+  {
+    "name": "火乃晴るい",
+    "scopes": [
+      "ProForma Nova",
+      "twitch_streamers",
+      "youtube_streamers"
+    ],
+    "result": "registered",
+    "id": "tal-000002"
+  },
+  {
+    "name": "火狐むい",
+    "scopes": [
+      "youtube_streamers",
+      "パレデミア学園"
+    ],
+    "result": "registered",
+    "id": "tal-000056"
+  },
+  {
+    "name": "灯野ぺけ。",
+    "scopes": [
+      "youtube_streamers",
+      "パレデミア学園"
+    ],
+    "result": "registered",
+    "id": "tal-000057"
+  },
+  {
+    "name": "無月いお",
+    "scopes": [
+      "youtube_streamers",
+      "パレデミア学園"
+    ],
+    "result": "registered",
+    "id": "tal-000058"
+  },
+  {
+    "name": "牡丹雪",
+    "scopes": [
+      "youtube_streamers",
+      "パレデミア学園"
+    ],
+    "result": "registered",
+    "id": "tal-000059"
+  },
+  {
+    "name": "犬丸なでこ",
+    "scopes": [
+      "youtube_streamers",
+      "パレデミア学園"
+    ],
+    "result": "registered",
+    "id": "tal-000060"
+  },
+  {
+    "name": "狛社なの",
+    "scopes": [
+      "youtube_streamers",
+      "パレデミア学園"
+    ],
+    "result": "registered",
+    "id": "tal-000061"
+  },
+  {
+    "name": "猫乃間うと",
+    "scopes": [
+      "youtube_streamers",
+      "パレデミア学園"
+    ],
+    "result": "registered",
+    "id": "tal-000062"
+  },
+  {
+    "name": "猫吸はぴ",
+    "scopes": [
+      "ProForma Nova",
+      "youtube_streamers"
+    ],
+    "result": "registered",
+    "id": "tal-000017"
+  },
+  {
+    "name": "璃乃瀬りあ",
+    "scopes": [
+      "パレデミア学園"
+    ],
+    "result": "held",
+    "reason": "Wikiの卒業寮生一覧・プロフィールを確認。現公式名簿からの欠落やリンク404は卒業の根拠にせず、本人名と退学/契約終了を結びつける公式告知本文の確認待ち。",
+    "wikiUrls": [
+      "https://wikiwiki.jp/jigjp/%E7%92%83%E4%B9%83%E7%80%AC%E3%82%8A%E3%81%82"
+    ]
+  },
+  {
+    "name": "畑スイカ",
+    "scopes": [
+      "youtube_streamers",
+      "パレデミア学園"
+    ],
+    "result": "registered",
+    "id": "tal-000063"
+  },
+  {
+    "name": "白尾すず",
+    "scopes": [
+      "youtube_streamers",
+      "パレデミア学園"
+    ],
+    "result": "registered",
+    "id": "tal-000064"
+  },
+  {
+    "name": "白銀ヘレナ",
+    "scopes": [
+      "Palette Project"
+    ],
+    "result": "registered",
+    "id": "tal-000084"
+  },
+  {
+    "name": "相栖るじゅ",
+    "scopes": [
+      "youtube_streamers",
+      "パレデミア学園"
+    ],
+    "result": "registered",
+    "id": "tal-000065"
+  },
+  {
+    "name": "真昼ねる",
+    "scopes": [
+      "ProForma Nova",
+      "twitch_streamers",
+      "youtube_streamers"
+    ],
+    "result": "registered",
+    "id": "tal-000001"
+  },
+  {
+    "name": "神童めしあ",
+    "scopes": [
+      "youtube_streamers",
+      "パレデミア学園"
+    ],
+    "result": "registered",
+    "id": "tal-000094"
+  },
+  {
+    "name": "神菜コハネ",
+    "scopes": [
+      "Palette Project"
+    ],
+    "result": "registered",
+    "id": "tal-000086"
+  },
+  {
+    "name": "秋桜しゅお",
+    "scopes": [
+      "youtube_streamers",
+      "登龍門BOX"
+    ],
+    "result": "registered",
+    "id": "tal-000083"
+  },
+  {
+    "name": "紫煙くゆり",
+    "scopes": [
+      "ProForma Nova / ProForma Production"
+    ],
+    "result": "held",
+    "reason": "公式は2026-08-14にデビュー取りやめを告知。予定チャンネル・本人ID・在籍履歴を確定できず、卒業/引退/デビュー記念日へ変換しない。",
+    "wikiUrls": [
+      "https://wikiwiki.jp/jigjp/%E7%B4%AB%E7%85%99%E3%81%8F%E3%82%86%E3%82%8A"
+    ]
+  },
+  {
+    "name": "緋月・ローズ・ブレイド",
+    "scopes": [
+      "youtube_streamers",
+      "パレデミア学園"
+    ],
+    "result": "registered",
+    "id": "tal-000066"
+  },
+  {
+    "name": "緋雨柚",
+    "scopes": [
+      "youtube_streamers",
+      "パレデミア学園"
+    ],
+    "result": "registered",
+    "id": "tal-000067"
+  },
+  {
+    "name": "翅城灰子",
+    "scopes": [
+      "ProForma Nova / ProForma Production"
+    ],
+    "result": "held",
+    "reason": "旧ProForma Wikiへの外部リンク中心。現Wikiプロフィール・公式の本人/在籍根拠を取得できず、外部旧ページも要調査。",
+    "wikiUrls": [
+      "https://wikiwiki.jp/jigjp/%E7%BF%85%E5%9F%8E%E7%81%B0%E5%AD%90"
+    ]
+  },
+  {
+    "name": "翡翠あかね",
+    "scopes": [
+      "youtube_streamers",
+      "パレデミア学園"
+    ],
+    "result": "registered",
+    "id": "tal-000068"
+  },
+  {
+    "name": "肇明日空",
+    "scopes": [
+      "パレデミア学園"
+    ],
+    "result": "held",
+    "reason": "Wikiの卒業寮生一覧・プロフィールを確認。現公式名簿からの欠落やリンク404は卒業の根拠にせず、本人名と退学/契約終了を結びつける公式告知本文の確認待ち。",
+    "wikiUrls": [
+      "https://wikiwiki.jp/jigjp/%E8%82%87%E6%98%8E%E6%97%A5%E7%A9%BA"
+    ]
+  },
+  {
+    "name": "艶島カオル",
+    "scopes": [
+      "パレデミア学園"
+    ],
+    "result": "held",
+    "reason": "Wikiの卒業寮生一覧・プロフィールを確認。現公式名簿からの欠落やリンク404は卒業の根拠にせず、本人名と退学/契約終了を結びつける公式告知本文の確認待ち。",
+    "wikiUrls": [
+      "https://wikiwiki.jp/jigjp/%E8%89%B6%E5%B3%B6%E3%82%AB%E3%82%AA%E3%83%AB"
+    ]
+  },
+  {
+    "name": "花晴りら",
+    "scopes": [
+      "youtube_streamers",
+      "パレデミア学園"
+    ],
+    "result": "registered",
+    "id": "tal-000069"
+  },
+  {
+    "name": "茉白モモナ",
+    "scopes": [
+      "Palette Project"
+    ],
+    "result": "held",
+    "reason": "ENILIS公式で2025-08-10活動終了を確認。Palette Project公式の本人名付き今後の活動告知も確認したが、画像内のMateReal転向内容・jig.jp事業対象となる所属履歴の検証が未完了。活動終了だけを根拠にPalette Project旧所属を補完しない。",
+    "wikiUrls": [
+      "https://wikiwiki.jp/jigjp/Palette%20Project/%E8%8C%89%E7%99%BD%E3%83%A2%E3%83%A2%E3%83%8A"
+    ]
+  },
+  {
+    "name": "薄麗",
+    "scopes": [
+      "ProForma Nova / ProForma Production"
+    ],
+    "result": "held",
+    "reason": "MOON加入ニュースに本人とリンクあり。Wikiの卒業日はあるが公式卒業根拠・現在の所属状態の照合が未完了。加入告知日を初デビュー日として採用しない。",
+    "wikiUrls": [
+      "https://wikiwiki.jp/jigjp/%E8%96%84%E9%BA%97"
+    ]
+  },
+  {
+    "name": "藤宮コトハ",
+    "scopes": [
+      "Palette Project",
+      "youtube_streamers"
+    ],
+    "result": "registered",
+    "id": "tal-000010"
+  },
+  {
+    "name": "藤影トヲカ",
+    "scopes": [
+      "パレデミア学園"
+    ],
+    "result": "held",
+    "reason": "Wikiの卒業寮生一覧・プロフィールを確認。現公式名簿からの欠落やリンク404は卒業の根拠にせず、本人名と退学/契約終了を結びつける公式告知本文の確認待ち。",
+    "wikiUrls": [
+      "https://wikiwiki.jp/jigjp/%E8%97%A4%E5%BD%B1%E3%83%88%E3%83%B2%E3%82%AB"
+    ]
+  },
+  {
+    "name": "藤森ちとせ",
+    "scopes": [
+      "youtube_streamers",
+      "パレデミア学園"
+    ],
+    "result": "registered",
+    "id": "tal-000070"
+  },
+  {
+    "name": "虎島めら。",
+    "scopes": [
+      "ProForma Nova / ProForma Production"
+    ],
+    "result": "held",
+    "reason": "2026-01-13の加入は公式ニュースで確認。Wikiは卒業済みとするが現公式プロフィールは404。卒業告知本文・現在/旧所属の確定が未確認のため登録保留。",
+    "wikiUrls": [
+      "https://wikiwiki.jp/jigjp/%E8%99%8E%E5%B3%B6%E3%82%81%E3%82%89%E3%80%82"
+    ]
+  },
+  {
+    "name": "遠坂ユラ",
+    "scopes": [
+      "Palette Project"
+    ],
+    "result": "registered",
+    "id": "tal-000085"
+  },
+  {
+    "name": "采多しゆあ",
+    "scopes": [
+      "youtube_streamers",
+      "パレデミア学園"
+    ],
+    "result": "registered",
+    "id": "tal-000093"
+  },
+  {
+    "name": "鈴木沙透",
+    "scopes": [
+      "youtube_streamers",
+      "パレデミア学園"
+    ],
+    "result": "registered",
+    "id": "tal-000071"
+  },
+  {
+    "name": "銀河キララ",
+    "scopes": [
+      "youtube_streamers",
+      "パレデミア学園"
+    ],
+    "result": "registered",
+    "id": "tal-000072"
+  },
+  {
+    "name": "銘兎目あう",
+    "scopes": [
+      "ProForma Nova",
+      "twitch_streamers",
+      "youtube_streamers"
+    ],
+    "result": "registered",
+    "id": "tal-000018"
+  },
+  {
+    "name": "鎖乙女がぶ",
+    "scopes": [
+      "Palette Project"
+    ],
+    "result": "registered",
+    "id": "tal-000090"
+  },
+  {
+    "name": "陰山アゲハ",
+    "scopes": [
+      "youtube_streamers",
+      "パレデミア学園"
+    ],
+    "result": "registered",
+    "id": "tal-000073"
+  },
+  {
+    "name": "雛菊のん",
+    "scopes": [
+      "youtube_streamers",
+      "パレデミア学園"
+    ],
+    "result": "registered",
+    "id": "tal-000074"
+  },
+  {
+    "name": "雨ヶ崎笑虹",
+    "scopes": [
+      "Palette Project"
+    ],
+    "result": "held",
+    "reason": "Wikiに卒業履歴はあるが公式の卒業・本人アカウントの根拠を今回確認できず。",
+    "wikiUrls": [
+      "https://wikiwiki.jp/jigjp/Palette%20Project/%E9%9B%A8%E3%83%B6%E5%B4%8E%E7%AC%91%E8%99%B9"
+    ]
+  },
+  {
+    "name": "雨宮愛結猫",
+    "scopes": [
+      "ProForma Nova / ProForma Production"
+    ],
+    "result": "held",
+    "reason": "MOON加入ニュースに本人とリンクあり。Wikiの卒業日はあるが公式卒業根拠・現在の所属状態の照合が未完了。加入告知日を初デビュー日として採用しない。",
+    "wikiUrls": [
+      "https://wikiwiki.jp/jigjp/%E9%9B%A8%E5%AE%AE%E6%84%9B%E7%B5%90%E7%8C%AB"
+    ]
+  },
+  {
+    "name": "雨海まる",
+    "scopes": [
+      "youtube_streamers",
+      "パレデミア学園"
+    ],
+    "result": "registered",
+    "id": "tal-000075"
+  },
+  {
+    "name": "雪城まぐね",
+    "scopes": [
+      "パレデミア学園"
+    ],
+    "result": "held",
+    "reason": "Wikiの卒業寮生一覧・プロフィールを確認。現公式名簿からの欠落やリンク404は卒業の根拠にせず、本人名と退学/契約終了を結びつける公式告知本文の確認待ち。",
+    "wikiUrls": [
+      "https://wikiwiki.jp/jigjp/%E9%9B%AA%E5%9F%8E%E3%81%BE%E3%81%90%E3%81%AD"
+    ]
+  },
+  {
+    "name": "雪紫誉",
+    "scopes": [
+      "youtube_streamers",
+      "パレデミア学園"
+    ],
+    "result": "registered",
+    "id": "tal-000076"
+  },
+  {
+    "name": "露草なぎ",
+    "scopes": [
+      "youtube_streamers",
+      "パレデミア学園"
+    ],
+    "result": "registered",
+    "id": "tal-000077"
+  },
+  {
+    "name": "音海まいる",
+    "scopes": [
+      "youtube_streamers",
+      "パレデミア学園"
+    ],
+    "result": "registered",
+    "id": "tal-000078"
+  },
+  {
+    "name": "風野かなめ",
+    "scopes": [
+      "パレデミア学園"
+    ],
+    "result": "held",
+    "reason": "Wikiの卒業寮生一覧・プロフィールを確認。現公式名簿からの欠落やリンク404は卒業の根拠にせず、本人名と退学/契約終了を結びつける公式告知本文の確認待ち。",
+    "wikiUrls": [
+      "https://wikiwiki.jp/jigjp/%E9%A2%A8%E9%87%8E%E3%81%8B%E3%81%AA%E3%82%81"
+    ]
+  },
+  {
+    "name": "飛渡ココ",
+    "scopes": [
+      "youtube_streamers",
+      "パレデミア学園"
+    ],
+    "result": "registered",
+    "id": "tal-000079"
+  },
+  {
+    "name": "香桜あんにん",
+    "scopes": [
+      "youtube_streamers",
+      "パレデミア学園"
+    ],
+    "result": "registered",
+    "id": "tal-000080"
+  },
+  {
+    "name": "香鳴ハノン",
+    "scopes": [
+      "Palette Project",
+      "youtube_streamers"
+    ],
+    "result": "registered",
+    "id": "tal-000011"
+  },
+  {
+    "name": "鬼多見アユム",
+    "scopes": [
+      "Palette Project",
+      "twitch_streamers",
+      "youtube_streamers"
+    ],
+    "result": "registered",
+    "id": "tal-000012"
+  },
+  {
+    "name": "鯨波不明",
+    "scopes": [
+      "ProForma Nova / ProForma Production"
+    ],
+    "result": "held",
+    "reason": "旧ProForma Wikiへの外部リンク中心。現Wikiプロフィール・公式の本人/在籍根拠を取得できず、外部旧ページも要調査。",
+    "wikiUrls": [
+      "https://wikiwiki.jp/jigjp/%E9%AF%A8%E6%B3%A2%E4%B8%8D%E6%98%8E"
+    ]
+  },
+  {
+    "name": "鶴乃院光",
+    "scopes": [
+      "パレデミア学園"
+    ],
+    "result": "held",
+    "reason": "Wikiの卒業寮生一覧・プロフィールを確認。現公式名簿からの欠落やリンク404は卒業の根拠にせず、本人名と退学/契約終了を結びつける公式告知本文の確認待ち。",
+    "wikiUrls": [
+      "https://wikiwiki.jp/jigjp/%E9%B6%B4%E4%B9%83%E9%99%A2%E5%85%89"
+    ]
+  },
+  {
+    "name": "黄金つむぎ",
+    "scopes": [
+      "youtube_streamers",
+      "パレデミア学園"
+    ],
+    "result": "registered",
+    "id": "tal-000081"
+  },
+  {
+    "name": "黒鋼亜華",
+    "scopes": [
+      "youtube_streamers",
+      "パレデミア学園"
+    ],
+    "result": "registered",
+    "id": "tal-000082"
+  }
+]

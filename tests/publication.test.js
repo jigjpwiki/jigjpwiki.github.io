@@ -47,3 +47,38 @@ test('fingerprint covers content/path changes while metadata alone stays unchang
   fs.renameSync(path.join(directory, 'index.html'), path.join(directory, 'renamed.html'));
   assert.notEqual(fingerprint(directory), next);
 });
+test('JST day/month/year changes cannot change the static calendar fingerprint; real inputs and retries remain effective', async t => {
+  const { anniversaryPage } = require('../lib/info-pages');
+  const { loadTalents } = require('../lib/talents');
+  const { loadCatalog, publicCatalog } = require('../lib/catalog');
+  const master = loadTalents(); const data = publicCatalog(loadCatalog(master));
+  const RealDate = Date;
+  const at = instant => {
+    global.Date = class extends RealDate { constructor(...args) { super(...(args.length ? args : [instant])); } static now() { return RealDate.parse(instant); } };
+    try { return anniversaryPage(master, data); } finally { global.Date = RealDate; }
+  };
+  const html = at('2026-12-31T14:59:59Z');
+  assert.equal(at('2026-12-31T15:00:00Z'), html);
+  assert.equal(at('2027-02-01T00:00:00Z'), html);
+  assert.match(html, /現在の暦ではありません/);
+  const empty = anniversaryPage(master, { ...data, events: [] });
+  assert.match(empty, /基準日は未設定/);
+  assert.doesNotMatch(empty, /2000年1月/);
+  const directory = fs.mkdtempSync(path.join(os.tmpdir(), 'calendar-publication-'));
+  t.after(() => fs.rmSync(directory, { recursive: true, force: true }));
+  fs.mkdirSync(path.join(directory, 'data')); fs.writeFileSync(path.join(directory, 'index.html'), html);
+  fs.writeFileSync(path.join(directory, 'data/youtube.json'), '[]'); fs.writeFileSync(path.join(directory, 'data/twitch.json'), '[]');
+  const before = writeManifest(directory);
+  fs.writeFileSync(path.join(directory, 'index.html'), at('2027-01-15T00:00:00Z'));
+  assert.equal(fingerprint(directory), before.fingerprint);
+  assert.equal((await publicationNeeded({ ...options, manifest: before, fetchImpl: response(before) })).publish, false);
+  data.events[0].title += '（訂正）';
+  fs.writeFileSync(path.join(directory, 'index.html'), at('2027-01-15T00:00:00Z'));
+  const corrected = writeManifest(directory); assert.notEqual(corrected.fingerprint, before.fingerprint);
+  for (let i = 0; i < 2; i++) assert.equal((await publicationNeeded({ ...options, manifest: corrected, fetchImpl: response(before) })).publish, true);
+  for (const platform of ['youtube', 'twitch']) {
+    const previous = fingerprint(directory);
+    fs.writeFileSync(path.join(directory, `data/${platform}.json`), '[{"title":"updated"}]');
+    assert.notEqual(fingerprint(directory), previous);
+  }
+});

@@ -25,3 +25,13 @@ test('profile escapes names and titles, links verified anniversaries, and never 
  const html=talentPage(t,master,publicCatalog(loadCatalog(master)),{youtube:[{...video,title:'<script>alert(1)</script>'}]});
  assert.doesNotMatch(html,/<img onerror|<script>alert/);assert.match(html,/&lt;script/);assert.doesNotMatch(html,/\d+歳/);
 });
+
+test('saved stream rows cannot be mistaken for current live status',()=>{
+ const data=publicCatalog(loadCatalog(master));
+ for(const status of ['live','upcoming','archive']){
+  const html=talentPage(person,master,data,{youtube:[{...video,status}]});
+  assert.match(html,/サイト公開時点の保存データ/);assert.match(html,/リアルタイムの配信状態ではありません/);
+  assert.doesNotMatch(html,/配信中|配信予定（収集時点）/);assert.match(html,/配信・公開日時（予定を含む）/);
+  assert.match(html,/プロフィール等の出典確認日/);
+ }
+});

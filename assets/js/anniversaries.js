@@ -6,8 +6,11 @@
     let today = core.jstToday(); let month = today.slice(0, 7);
     const filters = () => ({ type: document.getElementById('event-type').value, organization: document.getElementById('event-organization').value });
     const draw = () => {
-      today = core.jstToday();
+      const nextToday = core.jstToday();
+      if (nextToday !== today && month === today.slice(0, 7)) month = nextToday.slice(0, 7);
+      today = nextToday;
       document.getElementById('month-label').textContent = month;
+      document.getElementById('upcoming-heading').textContent = '直近30日間';
       document.getElementById('calendar').innerHTML = core.calendar(model, month, today, filters());
       document.getElementById('upcoming').innerHTML = core.upcoming(model, today, filters());
       document.getElementById('upcoming-range').textContent = `${today}から${core.addDays(today,29)}まで（当日を含む30日間）`;
@@ -20,6 +23,7 @@
     for (const id of ['event-type','event-organization']) document.getElementById(id).onchange = draw;
     document.getElementById('calendar-tools').hidden = false;
     draw();
+    document.getElementById('calendar-reference').hidden = true;
     document.addEventListener('visibilitychange', () => { if (!document.hidden) draw(); });
     setInterval(() => { if (core.jstToday() !== today) draw(); }, 60000);
   } catch { document.getElementById('calendar-status').textContent = '操作機能を読み込めませんでした。静的カレンダーと一覧をご利用ください。'; }

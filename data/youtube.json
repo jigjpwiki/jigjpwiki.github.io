@@ -1351,7 +1351,7 @@
     "date": "2026-11-14T06:13:28.000Z",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/Hk_j2zpNT0s/mqdefault.jpg?v=6af7fca3",
+    "thumbnail": "https://i.ytimg.com/vi/Hk_j2zpNT0s/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/hl89JE2NAP5BVl-HV8uv5_W8GUXgnmJdhxXZv6En8GqzHMsdWHWRbxLsti6amESp6V-Uu0oZBmc=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=Hk_j2zpNT0s"
   },
@@ -1363,7 +1363,7 @@
     "date": "2026-11-14T06:15:26.000Z",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/QxW-02RlRsI/mqdefault.jpg?v=6af7faea",
+    "thumbnail": "https://i.ytimg.com/vi/QxW-02RlRsI/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/hl89JE2NAP5BVl-HV8uv5_W8GUXgnmJdhxXZv6En8GqzHMsdWHWRbxLsti6amESp6V-Uu0oZBmc=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=QxW-02RlRsI"
   },
@@ -1447,7 +1447,7 @@
     "date": "2026-11-14T11:12:08.000Z",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/PZCDfujBu44/mqdefault.jpg?v=6af2642d",
+    "thumbnail": "https://i.ytimg.com/vi/PZCDfujBu44/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/av9H0_OxG16zI7tQKGwYEwhIZd1RXZQKGjkWfgHslvYRTV5aJBEInW2q0qDzb51lttFjkJ_pBw=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=PZCDfujBu44"
   },
@@ -1495,7 +1495,7 @@
     "date": "2026-11-14T11:59:51.000Z",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/16F7OcbVlak/mqdefault.jpg?v=6af81887",
+    "thumbnail": "https://i.ytimg.com/vi/16F7OcbVlak/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/CH5JMWVQZ_RtloaXoj6W-yXjo9x8UxXSBG_vMyDnfk7M2QTOApVE1zOesu_aDrSAqvDbGrUyxs0=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=16F7OcbVlak"
   },
@@ -1519,7 +1519,7 @@
     "date": "2026-11-14T12:00:29.000Z",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/lXtn5UuYTMk/mqdefault.jpg?v=6af73816",
+    "thumbnail": "https://i.ytimg.com/vi/lXtn5UuYTMk/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/nMtec5z3KY5RUGCSbQENm9culC2VpB7Ate_dUueAINpAJdFK4wwe7Q6eH88QiMXqjImAleLI=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=lXtn5UuYTMk"
   },
@@ -1651,9 +1651,21 @@
     "date": "2026-11-14T14:45:18.000Z",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/qsrrxw1TZDk/mqdefault.jpg?v=6af87221",
+    "thumbnail": "https://i.ytimg.com/vi/qsrrxw1TZDk/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/BaxFKUrCc4gGKc1wwAHt4ebjk8C69NdTl3fMz9LoR5SUm_Tpvv2yixsbJhp8qsld6S0tdgup=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=qsrrxw1TZDk"
+  },
+  {
+    "videoId": "bb_IK2D31sY",
+    "name": "露草なぎ",
+    "youtubeid": "UC9nhm1B-XhPaUO8W8oc4thQ",
+    "title": "【雑談】部屋片づけた【露草なぎ/パレデミア学園】#初見さん大歓迎",
+    "date": "2026-11-14T14:59:40.000Z",
+    "status": "archive",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/bb_IK2D31sY/mqdefault.jpg",
+    "channelIcon": "https://yt3.ggpht.com/IDANEjX1oOsVujBMpgQ5ykYQTADCpm-3nTt5xRq57ANTyeS-Y4bs0PHI2ETag99WXNrjqOYBoA=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=bb_IK2D31sY"
   },
   {
     "videoId": "fd-od63gb8w",
@@ -1704,6 +1716,18 @@
     "url": "https://www.youtube.com/watch?v=K2LtoszHQTE"
   },
   {
+    "videoId": "VkdRcb2B0cM",
+    "name": "露草なぎ",
+    "youtubeid": "UC9nhm1B-XhPaUO8W8oc4thQ",
+    "title": "【雑談】枠立て直し【露草なぎ/パレデミア学園】#初見さん大歓迎",
+    "date": "2026-11-14T16:02:21.000Z",
+    "status": "archive",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/VkdRcb2B0cM/mqdefault.jpg?v=6af8814e",
+    "channelIcon": "https://yt3.ggpht.com/IDANEjX1oOsVujBMpgQ5ykYQTADCpm-3nTt5xRq57ANTyeS-Y4bs0PHI2ETag99WXNrjqOYBoA=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=VkdRcb2B0cM"
+  },
+  {
     "videoId": "P4SkvfwrfWA",
     "name": "七音うら",
     "youtubeid": "UCv2IYO-4waCpHvn50SWWY2A",
@@ -1723,7 +1747,7 @@
     "date": "2026-11-14T16:06:57.000Z",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/MMWtEiP-4Ww/mqdefault.jpg?v=6af87d50",
+    "thumbnail": "https://i.ytimg.com/vi/MMWtEiP-4Ww/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/HS-52_p7fIqMPokM5Wq_16ALyGWaJMB31ChyEb02uLUl-GpABw-FVtvMCQrkLrJ4i1xrmRS4Ug=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=MMWtEiP-4Ww"
   },

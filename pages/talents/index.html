@@ -18,7 +18,7 @@
 <form id="talent-filters" class="browse-filters" hidden role="search" aria-label="タレントを探す">
 <label>名前・別名<input id="talent-search" type="search" placeholder="タレント名を入力" autocomplete="off"></label>
 <label>事務所<select id="talent-organization"><option value="">すべて</option></select></label>
-<label>所属の区分<select id="talent-relation"><option value="">すべて</option><option value="current">現在所属</option><option value="former">旧所属</option><option value="unknown">所属未確認</option></select></label>
+<label>所属の区分<select id="talent-relation"><option value="">すべて</option><option value="current">現在所属</option><option value="former">旧所属</option><option value="unaffiliated">無所属（確認済み）</option><option value="unknown">所属未確認</option></select></label>
 <label>グループ（確認済みの関連）<select id="talent-group"><option value="">すべて</option></select></label><button type="reset">条件を解除</button></form>
 <p id="talent-count" role="status" aria-live="polite"></p><p id="talent-empty" class="empty-state" hidden>該当するタレントはいません。検索語や条件を変更してください。</p><noscript><p>すべての登録タレントを表示しています。検索と絞り込みにはJavaScriptが必要です。</p></noscript>
 <ul class="talent-grid"><!-- jigdule:talents --></ul>

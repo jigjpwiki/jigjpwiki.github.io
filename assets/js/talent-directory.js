@@ -9,7 +9,7 @@
     return (!f.q || [p.name,...p.aliases].some(s=>normalize(s).includes(normalize(f.q)))) &&
       (!f.organization || (f.relation==='current'?p.current:f.relation==='former'?p.former:[...p.current,...p.former]).includes(f.organization)) &&
       (!f.group || p.groups.includes(f.group)) &&
-      (!f.relation || (f.relation==='unknown' ? !p.current.length&&!p.former.length : p[f.relation].length>0));
+      (!f.relation || (f.relation==='unknown' ? !p.current.length&&!p.former.length&&!p.unaffiliated : f.relation==='unaffiliated' ? p.unaffiliated===true : p[f.relation].length>0));
   }
   function mount() {
     const form = document.getElementById('talent-filters'); if (!form) return;

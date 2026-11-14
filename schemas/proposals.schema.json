@@ -1,0 +1,183 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "generatedAt",
+    "notice",
+    "candidates"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": 1
+    },
+    "generatedAt": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "notice": {
+      "type": "string",
+      "maxLength": 300
+    },
+    "candidates": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "key",
+          "youtubeId",
+          "channelId",
+          "title",
+          "talentIds",
+          "hints",
+          "sourceUrl",
+          "sourceExcerpt",
+          "method",
+          "proposedSetlist",
+          "existingIds",
+          "reviewStatus",
+          "change"
+        ],
+        "properties": {
+          "key": {
+            "type": "string",
+            "pattern": "^(youtube:[A-Za-z0-9_-]{11}|announcement:[a-f0-9]{16})$"
+          },
+          "youtubeId": {
+            "anyOf": [
+              {
+                "type": "string",
+                "pattern": "^[A-Za-z0-9_-]{11}$"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "channelId": {
+            "anyOf": [
+              {
+                "type": "string",
+                "pattern": "^UC[\\w-]{22}$"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "title": {
+            "type": "string",
+            "maxLength": 500
+          },
+          "talentIds": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^tal-[0-9]{6}$"
+            }
+          },
+          "hints": {
+            "type": "array",
+            "uniqueItems": true,
+            "minItems": 1,
+            "items": {
+              "enum": [
+                "karaoke",
+                "music-video",
+                "event"
+              ]
+            }
+          },
+          "sourceUrl": {
+            "type": "string",
+            "format": "public-url"
+          },
+          "sourceExcerpt": {
+            "type": "string",
+            "maxLength": 240
+          },
+          "method": {
+            "enum": [
+              "title-keyword-and-channel-id",
+              "provided-announcement-link"
+            ]
+          },
+          "proposedSetlist": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "rawLabel",
+                "order",
+                "startsAtSeconds",
+                "endsAtSeconds",
+                "songId",
+                "method",
+                "verification"
+              ],
+              "properties": {
+                "rawLabel": {
+                  "type": "string",
+                  "maxLength": 240
+                },
+                "order": {
+                  "anyOf": [
+                    {
+                      "type": "integer",
+                      "minimum": 0
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                },
+                "startsAtSeconds": {
+                  "type": "integer",
+                  "minimum": 0
+                },
+                "endsAtSeconds": {
+                  "type": "null"
+                },
+                "songId": {
+                  "type": "null"
+                },
+                "method": {
+                  "const": "description-timestamp"
+                },
+                "verification": {
+                  "const": "pending"
+                }
+              }
+            }
+          },
+          "existingIds": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^(mv|karaoke|evt)-[0-9]{6}$"
+            }
+          },
+          "reviewStatus": {
+            "enum": [
+              "pending",
+              "confirmed",
+              "rejected"
+            ]
+          },
+          "change": {
+            "enum": [
+              "new",
+              "changed",
+              "unchanged",
+              "registered",
+              "missing_from_input"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "$schema": "http://json-schema.org/draft-07/schema#"
+}

@@ -1,7 +1,7 @@
 (function(root,factory){const api=factory();if(typeof module==='object'&&module.exports)module.exports=api;else api.mount();})(typeof globalThis!=='undefined'?globalThis:this,function(){
   'use strict';
   const normalize=s=>String(s).normalize('NFKC').toLowerCase().replace(/\s+/g,' ').trim();
-  function matches(row,f){return (!f.q||normalize(row.search).includes(normalize(f.q)))&&(!f.type||row.type===f.type)&&(!f.talent||row.talent.includes(f.talent))&&(!f.organization||row.organization.includes(f.organization))&&(!f.from||row.date&&row.date>=f.from)&&(!f.to||row.date&&row.date<=f.to)&&(!f.setlist||row.setlist===f.setlist);}
+  function matches(row,f){return Boolean((!f.q||normalize(row.search).includes(normalize(f.q)))&&(!f.type||row.type===f.type)&&(!f.talent||row.talent.includes(f.talent))&&(!f.organization||row.organization.includes(f.organization))&&(!f.from||row.date&&row.date>=f.from)&&(!f.to||row.date&&row.date<=f.to)&&(!f.setlist||row.setlist===f.setlist));}
   function mount(){
     const form=document.getElementById('catalog-filters');if(!form)return;
     try {

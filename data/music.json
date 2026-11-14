@@ -35,6 +35,54 @@
         "src-music-e0jemzb45s8"
       ],
       "visibility": "public"
+    },
+    {
+      "id": "song-000003",
+      "title": "金曜日のおはよう",
+      "originalArtists": [
+        "HoneyWorks"
+      ],
+      "aliases": [],
+      "readings": [],
+      "identityUrl": "https://www.youtube.com/watch?v=w7E-oj1HOfc&t=485s",
+      "artistEvidence": "performer_description",
+      "sourceRefs": [
+        "src-song-setlist-3",
+        "src-karaoke-1"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "song-000004",
+      "title": "世界は恋に落ちている",
+      "originalArtists": [
+        "CHiCO with HoneyWorks"
+      ],
+      "aliases": [],
+      "readings": [],
+      "identityUrl": "https://www.youtube.com/watch?v=w7E-oj1HOfc&t=982s",
+      "artistEvidence": "performer_description",
+      "sourceRefs": [
+        "src-song-setlist-4",
+        "src-karaoke-1"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "song-000005",
+      "title": "すないぱー。",
+      "originalArtists": [
+        "『ユイカ』"
+      ],
+      "aliases": [],
+      "readings": [],
+      "identityUrl": "https://www.youtube.com/watch?v=w7E-oj1HOfc&t=1603s",
+      "artistEvidence": "performer_description",
+      "sourceRefs": [
+        "src-song-setlist-5",
+        "src-karaoke-1"
+      ],
+      "visibility": "public"
     }
   ],
   "musicVideos": [

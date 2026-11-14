@@ -1,0 +1,95 @@
+{
+  "schemaVersion": 1,
+  "karaokes": [
+    {
+      "id": "karaoke-000001",
+      "youtubeId": "w7E-oj1HOfc",
+      "talentIds": [
+        "tal-000006"
+      ],
+      "setlistStatus": "partial",
+      "expectedCount": 31,
+      "registeredAt": "2026-11-14T23:02:16.705410Z",
+      "sourceRefs": [
+        "src-karaoke-1"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "karaoke-000002",
+      "youtubeId": "Gtj6VUcjVGM",
+      "talentIds": [
+        "tal-000011"
+      ],
+      "setlistStatus": "unreviewed",
+      "expectedCount": null,
+      "registeredAt": "2026-11-14T23:02:16.705410Z",
+      "sourceRefs": [
+        "src-karaoke-2"
+      ],
+      "visibility": "public"
+    }
+  ],
+  "performances": [
+    {
+      "id": "perf-000001",
+      "karaokeId": "karaoke-000001",
+      "songId": "song-000003",
+      "order": 1,
+      "startsAtSeconds": 485,
+      "endsAtSeconds": null,
+      "talentIds": [
+        "tal-000006"
+      ],
+      "rawLabel": "01. 金曜日のおはよう / HoneyWorks",
+      "note": "本人の公式動画説明欄のセットリスト表記を確認。原曲アーティストは配信者の表記。",
+      "verification": "verified",
+      "sourceRefs": [
+        "src-karaoke-1",
+        "src-song-setlist-3"
+      ],
+      "visibility": "public",
+      "verificationMethod": "official_description"
+    },
+    {
+      "id": "perf-000002",
+      "karaokeId": "karaoke-000001",
+      "songId": "song-000004",
+      "order": 2,
+      "startsAtSeconds": 982,
+      "endsAtSeconds": null,
+      "talentIds": [
+        "tal-000006"
+      ],
+      "rawLabel": "02. 世界は恋に落ちている / CHiCO with HoneyWorks",
+      "note": "本人の公式動画説明欄のセットリスト表記を確認。原曲アーティストは配信者の表記。",
+      "verification": "verified",
+      "sourceRefs": [
+        "src-karaoke-1",
+        "src-song-setlist-4"
+      ],
+      "visibility": "public",
+      "verificationMethod": "official_description"
+    },
+    {
+      "id": "perf-000003",
+      "karaokeId": "karaoke-000001",
+      "songId": "song-000005",
+      "order": 3,
+      "startsAtSeconds": 1603,
+      "endsAtSeconds": null,
+      "talentIds": [
+        "tal-000006"
+      ],
+      "rawLabel": "03. すないぱー。 / 『ユイカ』",
+      "note": "本人の公式動画説明欄のセットリスト表記を確認。原曲アーティストは配信者の表記。",
+      "verification": "verified",
+      "sourceRefs": [
+        "src-karaoke-1",
+        "src-song-setlist-5"
+      ],
+      "visibility": "public",
+      "verificationMethod": "official_description"
+    }
+  ]
+}

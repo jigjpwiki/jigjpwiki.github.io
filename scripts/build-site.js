@@ -22,6 +22,10 @@ const eventData = { ...projectEvents(eventModel), groups:catalog.groups };
 const { loadMusic, projectMusic } = require('../lib/music-data');
 const { musicTop, songPage, talentMusic } = require('../lib/music-pages');
 const musicData = projectMusic(loadMusic(talents,catalog,root));
+const { loadKaraoke, projectKaraoke, karaokeLinks } = require('../lib/karaoke-data');
+const { karaokeList, karaokePage, songHistory, recentKaraoke, talentKaraoke } = require('../lib/karaoke-pages');
+const karaokeData = projectKaraoke(loadKaraoke(talents,catalog,root));
+const musicView = { ...musicData, performances:karaokeData.performances };
 const { loadRelease, publishRelease } = require('../lib/release');
 const release = loadRelease(root);
 const output = path.join(__dirname, '..', '_site');
@@ -50,17 +54,22 @@ fs.writeFileSync(path.join(output, 'anniversaries/index.html'), anniversaryPage(
 fs.writeFileSync(path.join(output, 'data/anniversaries.json'), JSON.stringify({ schemaVersion: 1, events: catalog.events }) + '\n');
 for (const talent of talents.talents) {
   fs.mkdirSync(path.join(output, 'talents', talent.id));
-  fs.writeFileSync(path.join(output, 'talents', talent.id, 'index.html'), renderTalentPage(talent, talents, catalog, feeds, id => relatedGoods(id, talents, catalog), id => talentEvents(id, talents, eventData)+talentMusic(id,talents,musicData)));
+  fs.writeFileSync(path.join(output, 'talents', talent.id, 'index.html'), renderTalentPage(talent, talents, catalog, feeds, id => relatedGoods(id, talents, catalog), id => talentEvents(id, talents, eventData)+talentMusic(id,talents,musicView,talentKaraoke(id,talents,karaokeData,musicData))));
 }
 fs.mkdirSync(path.join(output,'events'));
 fs.writeFileSync(path.join(output,'events/index.html'), eventList(talents,eventData));
-for(const event of eventData.events){ fs.mkdirSync(path.join(output,'events',event.id)); fs.writeFileSync(path.join(output,'events',event.id,'index.html'),eventPage(event,talents,eventData)); }
+for(const event of eventData.events){ fs.mkdirSync(path.join(output,'events',event.id)); fs.writeFileSync(path.join(output,'events',event.id,'index.html'),eventPage(event,talents,{...eventData,karaokes:karaokeData.karaokes})); }
 fs.writeFileSync(path.join(output,'data/events.json'),JSON.stringify(eventData)+'\n');
 fs.mkdirSync(path.join(output,'music/songs'),{recursive:true});
-fs.writeFileSync(path.join(output,'music/index.html'),musicTop(talents,musicData));
-for(const song of musicData.songs){fs.mkdirSync(path.join(output,'music/songs',song.id));fs.writeFileSync(path.join(output,'music/songs',song.id,'index.html'),songPage(song,talents,musicData));}
+fs.writeFileSync(path.join(output,'music/index.html'),musicTop(talents,musicView,recentKaraoke(talents,karaokeData)));
+for(const song of musicData.songs){fs.mkdirSync(path.join(output,'music/songs',song.id));fs.writeFileSync(path.join(output,'music/songs',song.id,'index.html'),songPage(song,talents,musicView,songHistory(song,talents,karaokeData)));}
 fs.writeFileSync(path.join(output,'data/music.json'),JSON.stringify(musicData)+'\n');
-const sitemap = fs.readFileSync(path.join(output, 'sitemap.xml'), 'utf8').replace('</urlset>', talents.talents.map(t => `<url><loc>https://www.jigdule.jp/talents/${t.id}/</loc></url>`).join('\n') + '\n'+['/events/',...eventData.events.map(e=>'/events/'+e.id+'/'),'/music/',...musicData.songs.map(s=>'/music/songs/'+s.id+'/')].map(route=>`<url><loc>https://www.jigdule.jp${route}</loc></url>`).join('\n')+'\n</urlset>');
+fs.mkdirSync(path.join(output,'music/karaoke'),{recursive:true});
+fs.writeFileSync(path.join(output,'music/karaoke/index.html'),karaokeList(talents,karaokeData));
+for(const k of karaokeData.karaokes){fs.mkdirSync(path.join(output,'music/karaoke',k.id));fs.writeFileSync(path.join(output,'music/karaoke',k.id,'index.html'),karaokePage(k,talents,karaokeData,musicData));}
+fs.writeFileSync(path.join(output,'data/karaoke.json'),JSON.stringify(karaokeData)+'\n');
+fs.writeFileSync(path.join(output,'data/karaoke-links.json'),JSON.stringify(karaokeLinks(karaokeData))+'\n');
+const sitemap = fs.readFileSync(path.join(output, 'sitemap.xml'), 'utf8').replace('</urlset>', talents.talents.map(t => `<url><loc>https://www.jigdule.jp/talents/${t.id}/</loc></url>`).join('\n') + '\n'+['/events/',...eventData.events.map(e=>'/events/'+e.id+'/'),'/music/',...musicData.songs.map(s=>'/music/songs/'+s.id+'/'),'/music/karaoke/',...karaokeData.karaokes.map(k=>'/music/karaoke/'+k.id+'/')].map(route=>`<url><loc>https://www.jigdule.jp${route}</loc></url>`).join('\n')+'\n</urlset>');
 fs.writeFileSync(path.join(output, 'sitemap.xml'), sitemap);
 fs.mkdirSync(path.join(output, 'goods'));
 fs.writeFileSync(path.join(output, 'goods/index.html'), goodsPage(talents, catalog));

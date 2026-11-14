@@ -1,0 +1,458 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-11-14T23:55:18.313Z",
+  "notice": "候補のみ。タイトルやチャプターだけでは楽曲/歌唱/開催内容を確定しない。入力からの欠落は削除や非公開の確定ではない。",
+  "candidates": [
+    {
+      "key": "announcement:42a38e8c262131ac",
+      "youtubeId": null,
+      "channelId": null,
+      "title": "Palette Project 6th One Man Live -Make it Luminous-",
+      "talentIds": [],
+      "hints": [
+        "event"
+      ],
+      "sourceUrl": "https://paletteproject.jp/makeitluminous/",
+      "sourceExcerpt": "Palette Project 6th One Man Live -Make it Luminous-",
+      "method": "provided-announcement-link",
+      "proposedSetlist": [],
+      "existingIds": [
+        "evt-000001"
+      ],
+      "reviewStatus": "pending",
+      "change": "registered"
+    },
+    {
+      "key": "youtube:-kR7Kqqy6Vs",
+      "youtubeId": "-kR7Kqqy6Vs",
+      "channelId": "UCXI0W_Os-BCIngpCb1YnOow",
+      "title": "【新髪型お披露目】初めての新髪型🫧✨️スクショタイムもあるよ📸【天透あわ/パレデミア学園】",
+      "talentIds": [
+        "tal-000036"
+      ],
+      "hints": [
+        "event"
+      ],
+      "sourceUrl": "https://www.youtube.com/watch?v=-kR7Kqqy6Vs",
+      "sourceExcerpt": "【新髪型お披露目】初めての新髪型🫧✨️スクショタイムもあるよ📸【天透あわ/パレデミア学園】",
+      "method": "title-keyword-and-channel-id",
+      "proposedSetlist": [],
+      "existingIds": [
+        "evt-000002"
+      ],
+      "reviewStatus": "pending",
+      "change": "registered"
+    },
+    {
+      "key": "youtube:ajhOF3k5I_Q",
+      "youtubeId": "ajhOF3k5I_Q",
+      "channelId": "UCrB-SfrqB5ChY8aAT99grXw",
+      "title": "【新髪型お披露目 】はじめてのお披露目【パレデミア学園/緋雨柚】",
+      "talentIds": [
+        "tal-000067"
+      ],
+      "hints": [
+        "event"
+      ],
+      "sourceUrl": "https://www.youtube.com/watch?v=ajhOF3k5I_Q",
+      "sourceExcerpt": "【新髪型お披露目 】はじめてのお披露目【パレデミア学園/緋雨柚】",
+      "method": "title-keyword-and-channel-id",
+      "proposedSetlist": [],
+      "existingIds": [],
+      "reviewStatus": "pending",
+      "change": "new"
+    },
+    {
+      "key": "youtube:d7SWtQptcpw",
+      "youtubeId": "d7SWtQptcpw",
+      "channelId": "UCbNEgJIF_ADD9e8-q7SoxCg",
+      "title": "月が綺麗ねと言われたい！ - yuta kakizaki 　cover.常磐カナメ",
+      "talentIds": [
+        "tal-000007"
+      ],
+      "hints": [
+        "music-video"
+      ],
+      "sourceUrl": "https://www.youtube.com/watch?v=d7SWtQptcpw",
+      "sourceExcerpt": "月が綺麗ねと言われたい！ - yuta kakizaki 　cover.常磐カナメ",
+      "method": "title-keyword-and-channel-id",
+      "proposedSetlist": [],
+      "existingIds": [
+        "mv-000001"
+      ],
+      "reviewStatus": "pending",
+      "change": "registered"
+    },
+    {
+      "key": "youtube:e0JemZb45s8",
+      "youtubeId": "e0JemZb45s8",
+      "channelId": "UCMX0Mn5PTjojdQL8MN1B5Vg",
+      "title": "【歌ってみた】レクイエム #shorts #vtuber準備中 #Vtuberなる",
+      "talentIds": [
+        "tal-000097"
+      ],
+      "hints": [
+        "music-video"
+      ],
+      "sourceUrl": "https://www.youtube.com/watch?v=e0JemZb45s8",
+      "sourceExcerpt": "【歌ってみた】レクイエム #shorts #vtuber準備中 #Vtuberなる",
+      "method": "title-keyword-and-channel-id",
+      "proposedSetlist": [],
+      "existingIds": [
+        "mv-000002"
+      ],
+      "reviewStatus": "pending",
+      "change": "registered"
+    },
+    {
+      "key": "youtube:Gtj6VUcjVGM",
+      "youtubeId": "Gtj6VUcjVGM",
+      "channelId": "UCay6Y3oEoiC6ZEE2G0UZu_A",
+      "title": "【歌枠｜KARAOKE】久しぶりの歌枠！アイドル縛りでいくよ～！！！【#パレプロ #香鳴ハノン】",
+      "talentIds": [
+        "tal-000011"
+      ],
+      "hints": [
+        "karaoke"
+      ],
+      "sourceUrl": "https://www.youtube.com/watch?v=Gtj6VUcjVGM",
+      "sourceExcerpt": "【歌枠｜KARAOKE】久しぶりの歌枠！アイドル縛りでいくよ～！！！【#パレプロ #香鳴ハノン】",
+      "method": "title-keyword-and-channel-id",
+      "proposedSetlist": [],
+      "existingIds": [
+        "karaoke-000002"
+      ],
+      "reviewStatus": "pending",
+      "change": "registered"
+    },
+    {
+      "key": "youtube:jQ-HWJJn4nc",
+      "youtubeId": "jQ-HWJJn4nc",
+      "channelId": "UCay6Y3oEoiC6ZEE2G0UZu_A",
+      "title": "【歌枠｜KARAOKE】アイドル縛り！！アカイロ衣装に合いそうな曲を歌ってみる！💗【#パレプロ #香鳴ハノン】",
+      "talentIds": [
+        "tal-000011"
+      ],
+      "hints": [
+        "karaoke"
+      ],
+      "sourceUrl": "https://www.youtube.com/watch?v=jQ-HWJJn4nc",
+      "sourceExcerpt": "【歌枠｜KARAOKE】アイドル縛り！！アカイロ衣装に合いそうな曲を歌ってみる！💗【#パレプロ #香鳴ハノン】",
+      "method": "title-keyword-and-channel-id",
+      "proposedSetlist": [],
+      "existingIds": [],
+      "reviewStatus": "pending",
+      "change": "new"
+    },
+    {
+      "key": "youtube:w7E-oj1HOfc",
+      "youtubeId": "w7E-oj1HOfc",
+      "channelId": "UC_a00ml_EVDXSrtY8ZuyqGQ",
+      "title": "【歌枠】文化祭後夜祭風歌枠！まだ帰りたくない夜に歌う🎤【#夏渚まはろ￤#パレプロ】",
+      "talentIds": [
+        "tal-000006"
+      ],
+      "hints": [
+        "karaoke"
+      ],
+      "sourceUrl": "https://www.youtube.com/watch?v=w7E-oj1HOfc",
+      "sourceExcerpt": "【歌枠】文化祭後夜祭風歌枠！まだ帰りたくない夜に歌う🎤【#夏渚まはろ￤#パレプロ】",
+      "method": "title-keyword-and-channel-id",
+      "proposedSetlist": [
+        {
+          "rawLabel": "OP",
+          "order": null,
+          "startsAtSeconds": 0,
+          "endsAtSeconds": null,
+          "songId": null,
+          "method": "description-timestamp",
+          "verification": "pending"
+        },
+        {
+          "rawLabel": "01. 金曜日のおはよう / HoneyWorks",
+          "order": 1,
+          "startsAtSeconds": 485,
+          "endsAtSeconds": null,
+          "songId": null,
+          "method": "description-timestamp",
+          "verification": "pending"
+        },
+        {
+          "rawLabel": "02. 世界は恋に落ちている / CHiCO with HoneyWorks",
+          "order": 2,
+          "startsAtSeconds": 982,
+          "endsAtSeconds": null,
+          "songId": null,
+          "method": "description-timestamp",
+          "verification": "pending"
+        },
+        {
+          "rawLabel": "03. すないぱー。 / 『ユイカ』",
+          "order": 3,
+          "startsAtSeconds": 1603,
+          "endsAtSeconds": null,
+          "songId": null,
+          "method": "description-timestamp",
+          "verification": "pending"
+        },
+        {
+          "rawLabel": "04. 好きだから。 / 『ユイカ』",
+          "order": 4,
+          "startsAtSeconds": 2143,
+          "endsAtSeconds": null,
+          "songId": null,
+          "method": "description-timestamp",
+          "verification": "pending"
+        },
+        {
+          "rawLabel": "05. 可愛いあの子が気にゐらない / なるみや",
+          "order": 5,
+          "startsAtSeconds": 2577,
+          "endsAtSeconds": null,
+          "songId": null,
+          "method": "description-timestamp",
+          "verification": "pending"
+        },
+        {
+          "rawLabel": "06. さくらんぼ / 大塚愛",
+          "order": 6,
+          "startsAtSeconds": 2852,
+          "endsAtSeconds": null,
+          "songId": null,
+          "method": "description-timestamp",
+          "verification": "pending"
+        },
+        {
+          "rawLabel": "07.小さな恋のうた / MONGOL800",
+          "order": 7,
+          "startsAtSeconds": 3294,
+          "endsAtSeconds": null,
+          "songId": null,
+          "method": "description-timestamp",
+          "verification": "pending"
+        },
+        {
+          "rawLabel": "08. ハレ晴レユカイ / 涼宮ハルヒ(CV.平野綾)、長門有希(CV.茅原実里)、朝比奈みくる(CV.後藤邑子)",
+          "order": 8,
+          "startsAtSeconds": 3780,
+          "endsAtSeconds": null,
+          "songId": null,
+          "method": "description-timestamp",
+          "verification": "pending"
+        },
+        {
+          "rawLabel": "09. God knows... / 涼宮ハルヒ(C.V.平野綾)",
+          "order": 9,
+          "startsAtSeconds": 4156,
+          "endsAtSeconds": null,
+          "songId": null,
+          "method": "description-timestamp",
+          "verification": "pending"
+        },
+        {
+          "rawLabel": "10. 学園天国 / フィンガー5",
+          "order": 10,
+          "startsAtSeconds": 4714,
+          "endsAtSeconds": null,
+          "songId": null,
+          "method": "description-timestamp",
+          "verification": "pending"
+        },
+        {
+          "rawLabel": "11. ふわふわ時間 / 放課後ティータイム",
+          "order": 11,
+          "startsAtSeconds": 4974,
+          "endsAtSeconds": null,
+          "songId": null,
+          "method": "description-timestamp",
+          "verification": "pending"
+        },
+        {
+          "rawLabel": "12. SAYONARA MAYBE / NOMELON NOLEMON",
+          "order": 12,
+          "startsAtSeconds": 5302,
+          "endsAtSeconds": null,
+          "songId": null,
+          "method": "description-timestamp",
+          "verification": "pending"
+        },
+        {
+          "rawLabel": "13. 八月の夜 / Silent Siren",
+          "order": 13,
+          "startsAtSeconds": 5642,
+          "endsAtSeconds": null,
+          "songId": null,
+          "method": "description-timestamp",
+          "verification": "pending"
+        },
+        {
+          "rawLabel": "14. 瞬間センチメンタル / SCANDAL",
+          "order": 14,
+          "startsAtSeconds": 5992,
+          "endsAtSeconds": null,
+          "songId": null,
+          "method": "description-timestamp",
+          "verification": "pending"
+        },
+        {
+          "rawLabel": "15. ギターと孤独と蒼い惑星 / 結束バンド",
+          "order": 15,
+          "startsAtSeconds": 6423,
+          "endsAtSeconds": null,
+          "songId": null,
+          "method": "description-timestamp",
+          "verification": "pending"
+        },
+        {
+          "rawLabel": "16. 星座になれたら / 結束バンド",
+          "order": 16,
+          "startsAtSeconds": 6794,
+          "endsAtSeconds": null,
+          "songId": null,
+          "method": "description-timestamp",
+          "verification": "pending"
+        },
+        {
+          "rawLabel": "17. 青春コンプレックス / 結束バンド",
+          "order": 17,
+          "startsAtSeconds": 7113,
+          "endsAtSeconds": null,
+          "songId": null,
+          "method": "description-timestamp",
+          "verification": "pending"
+        },
+        {
+          "rawLabel": "18. 君の知らない物語 / supercell",
+          "order": 18,
+          "startsAtSeconds": 7407,
+          "endsAtSeconds": null,
+          "songId": null,
+          "method": "description-timestamp",
+          "verification": "pending"
+        },
+        {
+          "rawLabel": "19. ブラック★ロックシューター / supercell",
+          "order": 19,
+          "startsAtSeconds": 8010,
+          "endsAtSeconds": null,
+          "songId": null,
+          "method": "description-timestamp",
+          "verification": "pending"
+        },
+        {
+          "rawLabel": "20. 拍手喝采歌合 / supercell",
+          "order": 20,
+          "startsAtSeconds": 8400,
+          "endsAtSeconds": null,
+          "songId": null,
+          "method": "description-timestamp",
+          "verification": "pending"
+        },
+        {
+          "rawLabel": "21. 天体観測 / BUMP OF CHICKEN",
+          "order": 21,
+          "startsAtSeconds": 8884,
+          "endsAtSeconds": null,
+          "songId": null,
+          "method": "description-timestamp",
+          "verification": "pending"
+        },
+        {
+          "rawLabel": "22. じょいふる / いきものがかり",
+          "order": 22,
+          "startsAtSeconds": 9235,
+          "endsAtSeconds": null,
+          "songId": null,
+          "method": "description-timestamp",
+          "verification": "pending"
+        },
+        {
+          "rawLabel": "23. イケナイ太陽 / ORANGE RANGE",
+          "order": 23,
+          "startsAtSeconds": 9493,
+          "endsAtSeconds": null,
+          "songId": null,
+          "method": "description-timestamp",
+          "verification": "pending"
+        },
+        {
+          "rawLabel": "24. 青と夏 / Mrs.GREEN APPLE",
+          "order": 24,
+          "startsAtSeconds": 9840,
+          "endsAtSeconds": null,
+          "songId": null,
+          "method": "description-timestamp",
+          "verification": "pending"
+        },
+        {
+          "rawLabel": "25. 夏色えがおで1,2,Jump! / μ's",
+          "order": 25,
+          "startsAtSeconds": 10216,
+          "endsAtSeconds": null,
+          "songId": null,
+          "method": "description-timestamp",
+          "verification": "pending"
+        },
+        {
+          "rawLabel": "26. 初恋サイダー / Buono!",
+          "order": 26,
+          "startsAtSeconds": 10603,
+          "endsAtSeconds": null,
+          "songId": null,
+          "method": "description-timestamp",
+          "verification": "pending"
+        },
+        {
+          "rawLabel": "27. 大声ダイヤモンド / AKB48",
+          "order": 27,
+          "startsAtSeconds": 10910,
+          "endsAtSeconds": null,
+          "songId": null,
+          "method": "description-timestamp",
+          "verification": "pending"
+        },
+        {
+          "rawLabel": "28. only my railgun / fripSide",
+          "order": 28,
+          "startsAtSeconds": 11284,
+          "endsAtSeconds": null,
+          "songId": null,
+          "method": "description-timestamp",
+          "verification": "pending"
+        },
+        {
+          "rawLabel": "29. スパークル [original ver.] / RADWIMPS",
+          "order": 29,
+          "startsAtSeconds": 11637,
+          "endsAtSeconds": null,
+          "songId": null,
+          "method": "description-timestamp",
+          "verification": "pending"
+        },
+        {
+          "rawLabel": "30. なんでもないや (movie ver.) / 上白石萌音",
+          "order": 30,
+          "startsAtSeconds": 12151,
+          "endsAtSeconds": null,
+          "songId": null,
+          "method": "description-timestamp",
+          "verification": "pending"
+        },
+        {
+          "rawLabel": "31. ライオン / May'n/中島愛",
+          "order": 31,
+          "startsAtSeconds": 12843,
+          "endsAtSeconds": null,
+          "songId": null,
+          "method": "description-timestamp",
+          "verification": "pending"
+        }
+      ],
+      "existingIds": [
+        "karaoke-000001"
+      ],
+      "reviewStatus": "pending",
+      "change": "registered"
+    }
+  ]
+}

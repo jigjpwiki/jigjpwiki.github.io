@@ -18,6 +18,7 @@ test('time determines planned/end only, never invents sold-out or availability',
  assert.equal(core.status({...o,status:'unknown'},new Date('2026-11-15')),'unknown');
  assert.equal(core.status({...o,endsAt:'2026-11-10T00:00:00Z'},new Date('2026-11-15')),'ended');
  assert.equal(core.status({...o,status:'sold_out'},new Date('2026-11-15')),'sold_out');
+ assert.equal(core.status({...o,status:'sold_out',endsAt:'2026-11-10T00:00:00Z'},new Date('2026-11-15')),'ended');
  assert.equal(core.status(o,new Date('2026-11-15')),'on_sale');assert.equal(core.date(null),null);
  assert.match(core.date('2026-12-31T15:00:00Z'),/2027\/01\/01 00:00/);
  assert.equal(core.price({amount:null,currency:null}),'価格未確認');

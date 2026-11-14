@@ -2,8 +2,9 @@
  'use strict';
  const labels={scheduled:'販売予定',on_sale:'販売中',ended:'販売終了',sold_out:'売り切れ（確認時点）',unknown:'不明'};
  function status(offer,now=new Date()){
-  if(['sold_out','ended'].includes(offer.status))return offer.status;
+  if(offer.status==='ended')return 'ended';
   if(offer.endsAt&&now.getTime()>=Date.parse(offer.endsAt))return 'ended';
+  if(offer.status==='sold_out')return 'sold_out';
   if(offer.startsAt&&now.getTime()<Date.parse(offer.startsAt))return 'scheduled';
   return offer.status; // dates alone never imply stock availability or on-sale status
  }

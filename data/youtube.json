@@ -1687,7 +1687,7 @@
     "date": "2026-11-13T12:30:35.000Z",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/M1XW9KPPIxA/mqdefault.jpg?v=6af6f3c9",
+    "thumbnail": "https://i.ytimg.com/vi/M1XW9KPPIxA/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/vb_kLF_4hQ7UdEtOnEtL-_pI320ZMQ-lVQ9OV3xMvdTQitHXX1zk0b6GKQ977dawvfoB5Sb8OQ=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=M1XW9KPPIxA"
   },
@@ -1831,7 +1831,7 @@
     "date": "2026-11-13T15:39:18.000Z",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/_Z2oa4Ltxfc/mqdefault.jpg?v=6af72a1f",
+    "thumbnail": "https://i.ytimg.com/vi/_Z2oa4Ltxfc/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/HS-52_p7fIqMPokM5Wq_16ALyGWaJMB31ChyEb02uLUl-GpABw-FVtvMCQrkLrJ4i1xrmRS4Ug=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=_Z2oa4Ltxfc"
   },
@@ -1913,11 +1913,35 @@
     "youtubeid": "UC2X_mAVGw8e3N9JQZZDVBfQ",
     "title": "【#低音女子】コーヒー飲みながら雑談しよ《#パレデミア学園》#雑談#新人VTuber#vtuber#縦型Live#初見さん大歓迎",
     "date": "2026-11-14T03:02:52.000Z",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/IvzkvYbIWYo/mqdefault.jpg?v=6af724bc",
     "channelIcon": "https://yt3.ggpht.com/Z7PlAWhweuycNXNXoQ6etyDTkduySM-Kqy8kQW-AD19JuRdxT3HSdIxogPw3GPD5NHw_vZlf=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=IvzkvYbIWYo"
+  },
+  {
+    "videoId": "USO9u5UQ4GY",
+    "name": "緋雨柚",
+    "youtubeid": "UCrB-SfrqB5ChY8aAT99grXw",
+    "title": "【#歌枠 】リクエストあり！久しぶりな気がする歌枠【パレデミア学園/緋雨柚】",
+    "date": "2026-11-14T03:35:48.000Z",
+    "status": "live",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/USO9u5UQ4GY/mqdefault.jpg?v=6af7d649",
+    "channelIcon": "https://yt3.ggpht.com/dPJHngNTeEfD_K0Mus141-We4xIuAhttm2pgEBl3VdGXqWvxGfy5mJfDMDbBmwI6UGc17dXb-g=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=USO9u5UQ4GY"
+  },
+  {
+    "videoId": "JUHh6qsxSzw",
+    "name": "犬丸なでこ",
+    "youtubeid": "UCdJmJxMfXrlnZabUkuss2EA",
+    "title": "【わんちゃん☆エブリデイ！】コール練習動画！※概要欄に歌詞とコールが載っています♪",
+    "date": "2026-11-14T04:00:14.000Z",
+    "status": "archive",
+    "type": "video",
+    "thumbnail": "https://i.ytimg.com/vi/JUHh6qsxSzw/mqdefault.jpg",
+    "channelIcon": "https://yt3.ggpht.com/HZPUrbSwGcllAbUtx6xggJ6lKfMfnAWDxWOCc01tpthiDipSqQP48TK5Jqz4GRzUdwKMUsxlsg=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=JUHh6qsxSzw"
   },
   {
     "videoId": "QA5Ng08wtE4",
@@ -2038,6 +2062,18 @@
     "thumbnail": "https://i.ytimg.com/vi/vPTh0Kl66pw/mqdefault.jpg?v=6af725c0",
     "channelIcon": "https://yt3.ggpht.com/Z7PlAWhweuycNXNXoQ6etyDTkduySM-Kqy8kQW-AD19JuRdxT3HSdIxogPw3GPD5NHw_vZlf=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=vPTh0Kl66pw"
+  },
+  {
+    "videoId": "W1FdzPo57Z4",
+    "name": "鈴木沙透",
+    "youtubeid": "UCj5nRzNFXZn9GRhITRkKElA",
+    "title": "【妹に運転を教える】ペーパー長女なので。",
+    "date": "2026-11-14T13:00:00.000Z",
+    "status": "upcoming",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/W1FdzPo57Z4/mqdefault.jpg?v=6af7e5b7",
+    "channelIcon": "https://yt3.ggpht.com/HS-52_p7fIqMPokM5Wq_16ALyGWaJMB31ChyEb02uLUl-GpABw-FVtvMCQrkLrJ4i1xrmRS4Ug=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=W1FdzPo57Z4"
   },
   {
     "videoId": "UwVePsItbH4",

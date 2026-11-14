@@ -1,3 +1,3 @@
-# /talents/{id}/ 個別詳細
+# /talents/{id}/
 
-次段階用の非公開設計ディレクトリ。第1段階ではHTMLを生成せず、ナビゲーションにもリンクを出さない。URLに使うIDはtalents.jsonの変更しない内部ID。
+第2段階Bで公開。talents.jsonを正本としlib/talent-details.jsから静的生成。内部IDや活動管理状態を主要なプロフィールとして表示しない。

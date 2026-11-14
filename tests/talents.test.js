@@ -71,7 +71,7 @@ test('private fields, unsafe URLs and broken local images cannot enter the publi
 test('ready navigation routes only and escaping prevent dead links and HTML injection', () => {
   const nav = navigation('/talents/');
   assert.match(nav, /href="\/talents\/" aria-current="page"/);
-  assert.doesNotMatch(nav, /goods|tal-000001/);
+  assert.doesNotMatch(nav, /tal-000001/);
   const m = copy(); m.talents[0].displayName = '<img src=x onerror=alert(1)>';
   const html = talentCards(m); assert.doesNotMatch(html, /<img src=x/); assert.match(html, /&lt;img/);
 });
@@ -83,8 +83,10 @@ test('build publishes only ready pages/public data and keeps schedule implementa
   const read = file => fs.readFileSync(path.join(root, file), 'utf8');
   assert.deepEqual(JSON.parse(read('data/talents.json')), master);
   assert(fs.existsSync(path.join(root, 'anniversaries/index.html')));
+  assert(fs.existsSync(path.join(root, 'goods/index.html')));
+  assert.deepEqual(JSON.parse(read('data/goods.json')).products, []);
   assert(JSON.parse(read('data/catalog.json')).groups.every(g => g.visibility === 'public'));
-  for (const file of ['data/talent-id-registry.json', 'data/youtube_cache.json', 'data/youtube_streamers.json', 'schemas', 'pages', 'docs', 'lib', 'node_modules', '.env', '.github', 'data/catalog-id-registry.json', 'data/goods.json', 'goods', 'talents/detail']) {
+  for (const file of ['data/talent-id-registry.json', 'data/youtube_cache.json', 'data/youtube_streamers.json', 'schemas', 'pages', 'docs', 'tests', 'fixture-goods', 'fixture-profile', 'lib', 'node_modules', '.env', '.github', 'data/catalog-id-registry.json', 'talents/detail']) {
     assert.equal(fs.existsSync(path.join(root, file)), false, file);
   }
   for (const file of ['index.html', 'talents/index.html', 'privacy-policy/index.html', 'terms/index.html']) {
@@ -96,5 +98,6 @@ test('build publishes only ready pages/public data and keeps schedule implementa
   for (const file of ['assets/js/app.js', 'assets/js/schedule.js', 'assets/js/ui.js', 'assets/js/youtube-status.js']) {
     assert.equal(read(file), fs.readFileSync(path.join(__dirname, '..', file), 'utf8'));
   }
+  for (const talent of master.talents) { assert(fs.existsSync(path.join(root, 'talents', talent.id, 'index.html'))); assert.match(read('sitemap.xml'), new RegExp('/talents/' + talent.id + '/')); }
   assert.equal((read('talents/index.html').match(/class="talent-card"/g) || []).length, 4);
 });

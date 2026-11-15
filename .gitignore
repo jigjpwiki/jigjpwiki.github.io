@@ -11,5 +11,6 @@ ops/proposals/runtime/
 ops/registration/runtime/
 
 ops/external-music/runtime*.json
+ops/official-discovery/runtime*.json
 
 /node_modules

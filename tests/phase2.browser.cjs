@@ -83,7 +83,7 @@ const firstGroupCurrent=catalog.groups[0].talentIds.filter(id=>master.talents.fi
    await page.locator('#day-details').getByRole('link',{name:'李じゅぴ汰',exact:true}).click();await page.waitForURL(base+'/talents/tal-000004/');
    await page.getByRole('link',{name:'← タレント一覧へ'}).click();await page.waitForURL(base+'/talents/');
    if(process.env.BROWSER_SCREENSHOT_DIR)await page.screenshot({path:path.join(process.env.BROWSER_SCREENSHOT_DIR,`profile-${width}.png`),fullPage:true});
-   await page.goto(base+'/goods/');assert.match(await page.locator('main').innerText(),/まだ登録されていません/);
+   await page.goto(base+'/goods/');assert.equal(await page.locator('.goods-card').count(),41);await page.locator('.goods-card h2 a').first().click();await page.waitForURL('**/goods/product-000001/');assert.equal(await page.locator('.goods-card').count(),1);
    await page.goto(base+'/fixture-goods/');
    assert.equal(await page.locator('.goods-card').count(),1);assert.match(await page.locator('.goods-card').innerText(),/販売中/);assert.match(await page.locator('.goods-card').innerText(),/販売予定/);assert.match(await page.locator('.goods-card').innerText(),/売り切れ/);
    assert.match(await page.locator('.goods-card').innerText(),/終了：日時不明/);assert.equal(await page.locator('.goods-image img.is-loaded').count(),0);

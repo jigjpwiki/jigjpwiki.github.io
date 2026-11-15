@@ -77,6 +77,10 @@
               "public",
               "draft"
             ]
+          },
+          "identityUrl": {
+            "type": "string",
+            "format": "public-url"
           }
         }
       }

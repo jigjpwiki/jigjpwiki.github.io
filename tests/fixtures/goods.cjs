@@ -2,6 +2,7 @@
 const { loadCatalog }=require('../../lib/catalog'); const { loadTalents }=require('../../lib/talents');
 function fixture(){
  const m=structuredClone(loadCatalog(loadTalents()));
+ m.goods={schemaVersion:1,products:[],campaigns:[],offers:[]};
  m.catalog.sources.push({id:'src-fixture-store',kind:'official',url:'https://store.example/items/1',checkedAt:'2026-11-01T00:00:00Z'});
  m.goods.products.push({id:'product-000001',title:'検証専用 <img onerror=x>',talentIds:['tal-000001'],groupIds:[],image:null,sourceRefs:['src-fixture-store'],visibility:'public'});
  m.goods.campaigns.push({id:'campaign-000001',title:'検証用販売企画',sourceRefs:['src-fixture-store'],visibility:'public'});

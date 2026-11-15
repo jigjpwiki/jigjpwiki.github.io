@@ -1,0 +1,3 @@
+'use strict';
+const fs=require('node:fs'),path=require('node:path');const {names,planRegistration}=require('../lib/catalog-registration');const {loadTalents}=require('../lib/talents');
+const root=path.join(__dirname,'..');if(process.argv.length!==4)throw new Error('Usage: node scripts/plan-catalog-registration.js REVIEW.json OUTPUT.json (dry-run only)');const read=n=>JSON.parse(fs.readFileSync(path.join(root,'data',n+'.json')));const before=Object.fromEntries(names.map(n=>[n,read(n)]));const plan=planRegistration(before,JSON.parse(fs.readFileSync(process.argv[2])),loadTalents(root),read('anniversaries'));fs.writeFileSync(process.argv[3],JSON.stringify(plan,null,2)+'\n');console.log('Dry-run: '+plan.changes.length+' changes; no master modified');

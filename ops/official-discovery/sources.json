@@ -1,0 +1,29 @@
+{
+  "version": 1,
+  "sources": [
+    {
+      "id": "palette-news",
+      "url": "https://paletteproject.jp/feed/",
+      "organizationIds": [
+        "org-000003"
+      ],
+      "talentIds": [],
+      "groupIds": [],
+      "kind": "official_news",
+      "method": "rss",
+      "permission": "needs_review",
+      "allowedHosts": [
+        "paletteproject.jp"
+      ],
+      "allowedPaths": [
+        "/feed/"
+      ],
+      "policy": {
+        "robots": "https://paletteproject.jp/robots.txt",
+        "terms": "https://paletteproject.jp/",
+        "checkedAt": "2026-11-15T18:18:10Z",
+        "note": "robots permits public paths, but footer prohibits reproduction. Automation stays disabled until feed/terms permission review; store/BOOTH/X/TikTok manual URLs only."
+      }
+    }
+  ]
+}

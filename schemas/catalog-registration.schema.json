@@ -1,0 +1,83 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "version",
+    "baseHash",
+    "patches"
+  ],
+  "properties": {
+    "version": {
+      "const": 1
+    },
+    "baseHash": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "resultHash": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "patches": {
+      "type": "array",
+      "maxItems": 2000,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "file",
+          "collection",
+          "record",
+          "status",
+          "sourceUrl",
+          "checkedAt",
+          "evidenceHash",
+          "expectedHash"
+        ],
+        "properties": {
+          "file": {
+            "enum": [
+              "events",
+              "goods",
+              "media",
+              "catalog"
+            ]
+          },
+          "collection": {
+            "enum": [
+              "events",
+              "products",
+              "campaigns",
+              "offers",
+              "videos",
+              "sources",
+              "groups"
+            ]
+          },
+          "record": {
+            "type": "object"
+          },
+          "status": {
+            "const": "confirmed"
+          },
+          "sourceUrl": {
+            "type": "string",
+            "format": "public-url"
+          },
+          "checkedAt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "evidenceHash": {
+            "type": "string",
+            "pattern": "^[a-f0-9]{64}$"
+          },
+          "expectedHash": {
+            "type": "string",
+            "pattern": "^[a-f0-9]{64}$"
+          }
+        }
+      }
+    }
+  }
+}

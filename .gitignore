@@ -21,3 +21,5 @@ admin/.wrangler/
 admin/.dev.vars
 
 admin/.wrangler-config/
+
+/admin/node_modules

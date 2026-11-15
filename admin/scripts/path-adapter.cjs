@@ -1,1 +1,1 @@
-exports.join=(...parts)=>parts.join('/').replace(/\/+/g,'/');
+exports.join = (...parts) => parts.join("/").replace(/\/+/g, "/");

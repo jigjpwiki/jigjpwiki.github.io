@@ -1,23 +1,337 @@
-import {Failure,fail,json,headers,random,hash,seal,open,cookie,cookies,body,allow,csrf} from './security.mjs';
-import {GitHub,repository} from './github.mjs';
-import {preview,forms} from './model.mjs';
-export default {async fetch(request,env){const url=new URL(request.url);if(url.pathname.startsWith('/api/')||url.pathname.startsWith('/auth/')){if(env.ADMIN_ENABLED!=='true')return json({error:'admin_not_enabled'},503);return env.ADMIN.get(env.ADMIN.idFromName('jigwiki-admin-v1')).fetch(request);}const response=await env.ASSETS.fetch(request);const h=new Headers(response.headers);h.set('Content-Security-Policy',"default-src 'self'; connect-src 'self'; img-src 'self' https:; script-src 'self'; style-src 'self'; frame-ancestors 'none'; base-uri 'none'; form-action 'self'");h.set('Referrer-Policy','no-referrer');h.set('X-Content-Type-Options','nosniff');return new Response(response.body,{status:response.status,headers:h});}};
+import {
+  Failure,
+  fail,
+  json,
+  headers,
+  random,
+  hash,
+  seal,
+  open,
+  cookie,
+  cookies,
+  body,
+  allow,
+  csrf,
+} from "./security.mjs";
+import { GitHub, repository } from "./github.mjs";
+import { preview, forms } from "./model.mjs";
+export default {
+  async fetch(request, env) {
+    const url = new URL(request.url);
+    if (url.pathname.startsWith("/api/") || url.pathname.startsWith("/auth/")) {
+      if (env.ADMIN_ENABLED !== "true")
+        return json({ error: "admin_not_enabled" }, 503);
+      return env.ADMIN.get(env.ADMIN.idFromName("jigwiki-admin-v1")).fetch(
+        request,
+      );
+    }
+    const response = await env.ASSETS.fetch(request);
+    const h = new Headers(response.headers);
+    h.set(
+      "Content-Security-Policy",
+      "default-src 'self'; connect-src 'self'; img-src 'self' https:; script-src 'self'; style-src 'self'; frame-ancestors 'none'; base-uri 'none'; form-action 'self'",
+    );
+    h.set("Referrer-Policy", "no-referrer");
+    h.set("X-Content-Type-Options", "nosniff");
+    return new Response(response.body, { status: response.status, headers: h });
+  },
+};
 export class Admin {
- constructor(state,env){this.state=state;this.env=env;this.transport=env.__testFetch||((...args)=>fetch(...args));if(env.__testStore)this.store=env.__testStore;else{state.storage.sql.exec('CREATE TABLE IF NOT EXISTS entries (key TEXT PRIMARY KEY,value TEXT NOT NULL,expires INTEGER NOT NULL)');const sql=state.storage.sql;this.store={get:async key=>{const row=[...sql.exec('SELECT value,expires FROM entries WHERE key=?',key)][0];return row&&row.expires>Date.now()?JSON.parse(row.value):null;},put:async(key,value,expires)=>{sql.exec('INSERT OR REPLACE INTO entries(key,value,expires) VALUES(?,?,?)',key,JSON.stringify(value),expires);},delete:async key=>{sql.exec('DELETE FROM entries WHERE key=?',key);},clean:async()=>sql.exec('DELETE FROM entries WHERE expires<?',Date.now())};}}
- async fetch(request){try{return await this.handle(request);}catch(e){return json({error:e instanceof Failure?e.message:'internal_error'},e instanceof Failure?e.status:500);}}
- async handle(request){const url=new URL(request.url),now=Date.now();await this.store.clean?.();if(!this.env.GITHUB_CLIENT_ID||!this.env.GITHUB_CLIENT_SECRET||!this.env.SESSION_KEY||!this.env.ADMIN_USER_IDS)fail(503,'auth_configuration');
-  if(url.pathname==='/auth/login'&&request.method==='GET'){if(url.protocol!=='https:'&&!this.env.__testStore)fail(400,'https_required');const state=random(),verifier=random();await this.store.put('oauth:'+state,{verifier,origin:url.origin},now+300000);const login=new URL('https://github.com/login/oauth/authorize');login.search=new URLSearchParams({client_id:this.env.GITHUB_CLIENT_ID,redirect_uri:url.origin+'/auth/callback',state,code_challenge:await hash(verifier),code_challenge_method:'S256'}).toString();return new Response(null,{status:302,headers:{...headers,Location:login.href,'Set-Cookie':cookie('__Host-admin-oauth',state,300)}});}
-  if(url.pathname==='/auth/callback'&&request.method==='GET'){const state=url.searchParams.get('state'),saved=state&&await this.store.get('oauth:'+state);if(!saved||cookies(request)['__Host-admin-oauth']!==state||saved.origin!==url.origin||!url.searchParams.get('code'))fail(403,'oauth_state_invalid');await this.store.delete('oauth:'+state);let response;try{response=await this.transport('https://github.com/login/oauth/access_token',{method:'POST',redirect:'manual',signal:AbortSignal.timeout(10000),headers:{Accept:'application/json','Content-Type':'application/json'},body:JSON.stringify({client_id:this.env.GITHUB_CLIENT_ID,client_secret:this.env.GITHUB_CLIENT_SECRET,code:url.searchParams.get('code'),redirect_uri:url.origin+'/auth/callback',code_verifier:saved.verifier})});}catch{fail(503,'oauth_unavailable');}if(response.status>=300&&response.status<400)fail(503,'oauth_redirect_rejected');const token=await response.json();if(!response.ok||typeof token.access_token!=='string'||token.error)fail(401,'oauth_exchange_failed');const github=new GitHub(token.access_token,this.transport),user=await github.identity();allow(user,this.env);const id=random();const session={id:String(user.id),login:user.login,csrf:random(),token:await seal(token.access_token,this.env.SESSION_KEY),expires:now+1800000};await this.store.put('session:'+id,session,session.expires);const out=new Response(null,{status:302,headers:{...headers,Location:url.origin+'/'}});out.headers.append('Set-Cookie',cookie('__Host-admin-session',id,1800));out.headers.append('Set-Cookie',cookie('__Host-admin-oauth','',0));return out;}
-  const sid=cookies(request)['__Host-admin-session'];const session=sid&&/^[\w-]{43}$/.test(sid)&&await this.store.get('session:'+sid);if(!session||session.expires<=now)fail(401,'login_required');allow(session,this.env);if(!['GET','HEAD'].includes(request.method))csrf(request,session);
-  if(url.pathname==='/auth/logout'&&request.method==='POST'){await this.store.delete('session:'+sid);return json({ok:true},200,{'Set-Cookie':cookie('__Host-admin-session','',0)});}
-  const github=new GitHub(await open(session.token,this.env.SESSION_KEY),this.transport);const identity=await github.identity();if(String(identity.id)!==session.id)fail(403,'session_identity_changed');allow(identity,this.env);
-  if(url.pathname==='/api/me'&&request.method==='GET')return json({id:session.id,login:session.login,role:'owner',csrf:session.csrf,expires:session.expires,repository});
-  const rateKey='rate:'+sid;const rate=await this.store.get(rateKey)||{count:0,start:now};if(rate.count>=30)fail(429,'admin_request_limit');rate.count++;await this.store.put(rateKey,rate,rate.start+60000);
-  if(url.pathname==='/api/forms'&&request.method==='GET')return json(forms);
-  if(url.pathname==='/api/masters'&&request.method==='GET'){const snapshot=await github.snapshot();return json({sha:snapshot.sha,shas:snapshot.shas,models:snapshot.models});}
-  if(url.pathname==='/api/change-requests/preview'&&request.method==='POST'){const input=await body(request),snapshot=await github.snapshot();if(input.sha!==snapshot.sha)fail(409,'main_changed_reload');const plan=await preview(snapshot,input,{actor:session.id});const id=await hash({actor:session.id,sha:snapshot.sha,input:{...input,evidence:{...input.evidence,checkedAt:undefined}}});if(await this.store.get('operation:'+id))fail(409,'operation_already_submitted');const cached=await this.store.get('preview:'+id);if(cached)return json({id,title:cached.title,summary:cached.summary,diff:cached.diff,impact:cached.impact,files:Object.keys(cached.files)});plan.sha=snapshot.sha;plan.tree=snapshot.tree;plan.shas=snapshot.shas;plan.actor=session.id;plan.key=id;await this.store.put('preview:'+id,plan,now+600000);return json({id,title:plan.title,summary:plan.summary,diff:plan.diff,impact:plan.impact,files:Object.keys(plan.files),expires:now+600000});}
-  if(url.pathname==='/api/change-requests'&&request.method==='POST'){const input=await body(request,2048);if(Object.keys(input).some(k=>k!=='previewId')||!/^[\w-]{43}$/.test(input.previewId||''))fail(400,'preview_id_required');return this.state.blockConcurrencyWhile(async()=>{try{const key=input.previewId;let record=await this.store.get('operation:'+key);if(record?.actor!==undefined&&record.actor!==session.id)fail(403,'operation_owner');if(record?.result)return json(record.result);const plan=await this.store.get('preview:'+key)||record?.plan;if(!plan||plan.actor!==session.id)fail(409,'preview_expired');if(!record){const current=await github.call('/repos/'+repository+'/git/ref/heads/main');if(current.object.sha!==plan.sha)fail(409,'main_changed_reload');record={actor:session.id,plan:{sha:plan.sha,tree:plan.tree,files:plan.files,title:plan.title,summary:plan.summary,actor:plan.actor,key}};await this.store.put('operation:'+key,record,now+86400000);}const save=async value=>this.store.put('operation:'+key,value,now+86400000);const result=await github.publish(plan,key,record,save);record.result=result;await save(record);return json(result);}catch(e){return json({error:e instanceof Failure?e.message:'internal_error'},e instanceof Failure?e.status:500);}});}
-  if(/^\/api\/pull-requests\/\d+$/.test(url.pathname)&&request.method==='GET'){const pr=await github.call('/repos/'+repository+'/pulls/'+url.pathname.split('/').pop());if(!pr.head.ref.startsWith('admin/change-')||pr.base.ref!=='main')fail(403,'not_admin_pull_request');return json({url:pr.html_url,state:pr.state,merged:pr.merged});}
-  fail(404,'route_not_found');
- }
+  constructor(state, env) {
+    this.state = state;
+    this.env = env;
+    this.transport = env.__testFetch || ((...args) => fetch(...args));
+    if (env.__testStore) this.store = env.__testStore;
+    else {
+      state.storage.sql.exec(
+        "CREATE TABLE IF NOT EXISTS entries (key TEXT PRIMARY KEY,value TEXT NOT NULL,expires INTEGER NOT NULL)",
+      );
+      const sql = state.storage.sql;
+      this.store = {
+        get: async (key) => {
+          const row = [
+            ...sql.exec("SELECT value,expires FROM entries WHERE key=?", key),
+          ][0];
+          return row && row.expires > Date.now() ? JSON.parse(row.value) : null;
+        },
+        put: async (key, value, expires) => {
+          sql.exec(
+            "INSERT OR REPLACE INTO entries(key,value,expires) VALUES(?,?,?)",
+            key,
+            JSON.stringify(value),
+            expires,
+          );
+        },
+        delete: async (key) => {
+          sql.exec("DELETE FROM entries WHERE key=?", key);
+        },
+        clean: async () =>
+          sql.exec("DELETE FROM entries WHERE expires<?", Date.now()),
+      };
+    }
+  }
+  async fetch(request) {
+    try {
+      return await this.handle(request);
+    } catch (e) {
+      return json(
+        { error: e instanceof Failure ? e.message : "internal_error" },
+        e instanceof Failure ? e.status : 500,
+      );
+    }
+  }
+  async handle(request) {
+    const url = new URL(request.url),
+      now = Date.now();
+    await this.store.clean?.();
+    if (
+      !this.env.GITHUB_CLIENT_ID ||
+      !this.env.GITHUB_CLIENT_SECRET ||
+      !this.env.SESSION_KEY ||
+      !this.env.ADMIN_USER_IDS
+    )
+      fail(503, "auth_configuration");
+    if (url.pathname === "/auth/login" && request.method === "GET") {
+      if (url.protocol !== "https:" && !this.env.__testStore)
+        fail(400, "https_required");
+      const state = random(),
+        verifier = random();
+      await this.store.put(
+        "oauth:" + state,
+        { verifier, origin: url.origin },
+        now + 300000,
+      );
+      const login = new URL("https://github.com/login/oauth/authorize");
+      login.search = new URLSearchParams({
+        client_id: this.env.GITHUB_CLIENT_ID,
+        redirect_uri: url.origin + "/auth/callback",
+        state,
+        code_challenge: await hash(verifier),
+        code_challenge_method: "S256",
+      }).toString();
+      return new Response(null, {
+        status: 302,
+        headers: {
+          ...headers,
+          Location: login.href,
+          "Set-Cookie": cookie("__Host-admin-oauth", state, 300),
+        },
+      });
+    }
+    if (url.pathname === "/auth/callback" && request.method === "GET") {
+      const state = url.searchParams.get("state"),
+        saved = state && (await this.store.get("oauth:" + state));
+      if (
+        !saved ||
+        cookies(request)["__Host-admin-oauth"] !== state ||
+        saved.origin !== url.origin ||
+        !url.searchParams.get("code")
+      )
+        fail(403, "oauth_state_invalid");
+      await this.store.delete("oauth:" + state);
+      let response;
+      try {
+        response = await this.transport(
+          "https://github.com/login/oauth/access_token",
+          {
+            method: "POST",
+            redirect: "manual",
+            signal: AbortSignal.timeout(10000),
+            headers: {
+              Accept: "application/json",
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify({
+              client_id: this.env.GITHUB_CLIENT_ID,
+              client_secret: this.env.GITHUB_CLIENT_SECRET,
+              code: url.searchParams.get("code"),
+              redirect_uri: url.origin + "/auth/callback",
+              code_verifier: saved.verifier,
+            }),
+          },
+        );
+      } catch {
+        fail(503, "oauth_unavailable");
+      }
+      if (response.status >= 300 && response.status < 400)
+        fail(503, "oauth_redirect_rejected");
+      const token = await response.json();
+      if (!response.ok || typeof token.access_token !== "string" || token.error)
+        fail(401, "oauth_exchange_failed");
+      const github = new GitHub(token.access_token, this.transport),
+        user = await github.identity();
+      allow(user, this.env);
+      const id = random();
+      const session = {
+        id: String(user.id),
+        login: user.login,
+        csrf: random(),
+        token: await seal(token.access_token, this.env.SESSION_KEY),
+        expires: now + 1800000,
+      };
+      await this.store.put("session:" + id, session, session.expires);
+      const out = new Response(null, {
+        status: 302,
+        headers: { ...headers, Location: url.origin + "/" },
+      });
+      out.headers.append(
+        "Set-Cookie",
+        cookie("__Host-admin-session", id, 1800),
+      );
+      out.headers.append("Set-Cookie", cookie("__Host-admin-oauth", "", 0));
+      return out;
+    }
+    const sid = cookies(request)["__Host-admin-session"];
+    const session =
+      sid &&
+      /^[\w-]{43}$/.test(sid) &&
+      (await this.store.get("session:" + sid));
+    if (!session || session.expires <= now) fail(401, "login_required");
+    allow(session, this.env);
+    if (!["GET", "HEAD"].includes(request.method)) csrf(request, session);
+    if (url.pathname === "/auth/logout" && request.method === "POST") {
+      await this.store.delete("session:" + sid);
+      return json({ ok: true }, 200, {
+        "Set-Cookie": cookie("__Host-admin-session", "", 0),
+      });
+    }
+    const github = new GitHub(
+      await open(session.token, this.env.SESSION_KEY),
+      this.transport,
+    );
+    const identity = await github.identity();
+    if (String(identity.id) !== session.id)
+      fail(403, "session_identity_changed");
+    allow(identity, this.env);
+    if (url.pathname === "/api/me" && request.method === "GET")
+      return json({
+        id: session.id,
+        login: session.login,
+        role: "owner",
+        csrf: session.csrf,
+        expires: session.expires,
+        repository,
+      });
+    const rateKey = "rate:" + sid;
+    const rate = (await this.store.get(rateKey)) || { count: 0, start: now };
+    if (rate.count >= 30) fail(429, "admin_request_limit");
+    rate.count++;
+    await this.store.put(rateKey, rate, rate.start + 60000);
+    if (url.pathname === "/api/forms" && request.method === "GET")
+      return json(forms);
+    if (url.pathname === "/api/masters" && request.method === "GET") {
+      const snapshot = await github.snapshot();
+      return json({
+        sha: snapshot.sha,
+        shas: snapshot.shas,
+        models: snapshot.models,
+      });
+    }
+    if (
+      url.pathname === "/api/change-requests/preview" &&
+      request.method === "POST"
+    ) {
+      const input = await body(request),
+        snapshot = await github.snapshot();
+      if (input.sha !== snapshot.sha) fail(409, "main_changed_reload");
+      const plan = await preview(snapshot, input, { actor: session.id });
+      const id = await hash({
+        actor: session.id,
+        sha: snapshot.sha,
+        input: {
+          ...input,
+          evidence: { ...input.evidence, checkedAt: undefined },
+        },
+      });
+      if (await this.store.get("operation:" + id))
+        fail(409, "operation_already_submitted");
+      const cached = await this.store.get("preview:" + id);
+      if (cached)
+        return json({
+          id,
+          title: cached.title,
+          summary: cached.summary,
+          diff: cached.diff,
+          impact: cached.impact,
+          files: Object.keys(cached.files),
+        });
+      plan.sha = snapshot.sha;
+      plan.tree = snapshot.tree;
+      plan.shas = snapshot.shas;
+      plan.actor = session.id;
+      plan.key = id;
+      await this.store.put("preview:" + id, plan, now + 600000);
+      return json({
+        id,
+        title: plan.title,
+        summary: plan.summary,
+        diff: plan.diff,
+        impact: plan.impact,
+        files: Object.keys(plan.files),
+        expires: now + 600000,
+      });
+    }
+    if (url.pathname === "/api/change-requests" && request.method === "POST") {
+      const input = await body(request, 2048);
+      if (
+        Object.keys(input).some((k) => k !== "previewId") ||
+        !/^[\w-]{43}$/.test(input.previewId || "")
+      )
+        fail(400, "preview_id_required");
+      return this.state.blockConcurrencyWhile(async () => {
+        try {
+          const key = input.previewId;
+          let record = await this.store.get("operation:" + key);
+          if (record?.actor !== undefined && record.actor !== session.id)
+            fail(403, "operation_owner");
+          if (record?.result) return json(record.result);
+          const plan = (await this.store.get("preview:" + key)) || record?.plan;
+          if (!plan || plan.actor !== session.id) fail(409, "preview_expired");
+          if (!record) {
+            const current = await github.call(
+              "/repos/" + repository + "/git/ref/heads/main",
+            );
+            if (current.object.sha !== plan.sha)
+              fail(409, "main_changed_reload");
+            record = {
+              actor: session.id,
+              plan: {
+                sha: plan.sha,
+                tree: plan.tree,
+                files: plan.files,
+                title: plan.title,
+                summary: plan.summary,
+                actor: plan.actor,
+                key,
+              },
+            };
+            await this.store.put("operation:" + key, record, now + 86400000);
+          }
+          const save = async (value) =>
+            this.store.put("operation:" + key, value, now + 86400000);
+          const result = await github.publish(plan, key, record, save);
+          record.result = result;
+          await save(record);
+          return json(result);
+        } catch (e) {
+          return json(
+            { error: e instanceof Failure ? e.message : "internal_error" },
+            e instanceof Failure ? e.status : 500,
+          );
+        }
+      });
+    }
+    if (
+      /^\/api\/pull-requests\/\d+$/.test(url.pathname) &&
+      request.method === "GET"
+    ) {
+      const pr = await github.call(
+        "/repos/" + repository + "/pulls/" + url.pathname.split("/").pop(),
+      );
+      if (!pr.head.ref.startsWith("admin/change-") || pr.base.ref !== "main")
+        fail(403, "not_admin_pull_request");
+      return json({ url: pr.html_url, state: pr.state, merged: pr.merged });
+    }
+    fail(404, "route_not_found");
+  }
 }

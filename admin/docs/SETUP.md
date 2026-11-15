@@ -26,7 +26,7 @@
 
 ## ローカル・CI
 
-`cd admin && npm ci && npm test && npm run check`。checkはbuildとwrangler **dry-run**のみ。`npm run dev`はローカルWorkerを起動する。`.dev.vars.example`を`.dev.vars`へ複製し、値をローカルのみ設定。開発環境も認証を省略しない。秘密値のない自動テストではfetch/storageをモックし、実GitHubへの書込を行わない。
+`cd admin && npm ci && npm test && npm run check`。checkはbuildとwrangler **dry-run**のみ。`npm run dev`はhttps://localhost:8787のローカルWorkerを起動する（Secure CookieとHTTPS強制のためHTTPS。ローカル証明書は開発端末で確認する）。ローカルで実OAuthを使う場合だけ、このURLの/auth/callbackをAppに追加する。`.dev.vars.example`を`.dev.vars`へ複製し、値をローカルのみ設定。開発環境も認証を省略しない。秘密値のない自動テストではfetch/storageをモックし、実GitHubへの書込を行わない。
 
 ## セキュリティと費用
 

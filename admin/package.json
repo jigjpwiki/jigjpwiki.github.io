@@ -5,7 +5,7 @@
   "scripts": {
     "build": "node scripts/build.cjs",
     "test": "node --test tests/*.test.mjs",
-    "dev": "npm run build && WRANGLER_SEND_METRICS=false XDG_CONFIG_HOME=\"$PWD/.wrangler-config\" wrangler dev --config wrangler.jsonc --local",
+    "dev": "npm run build && WRANGLER_SEND_METRICS=false XDG_CONFIG_HOME=\"$PWD/.wrangler-config\" wrangler dev --config wrangler.jsonc --local --local-protocol https --port 8787",
     "check": "npm run build && WRANGLER_SEND_METRICS=false XDG_CONFIG_HOME=\"$PWD/.wrangler-config\" wrangler deploy --dry-run --config wrangler.jsonc --outdir build/dry-run",
     "test:worker": "npm run build && node tests/workerd.mjs"
   },

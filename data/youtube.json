@@ -1723,7 +1723,7 @@
     "date": "2026-11-14T16:02:21.000Z",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/VkdRcb2B0cM/mqdefault.jpg?v=6af8814e",
+    "thumbnail": "https://i.ytimg.com/vi/VkdRcb2B0cM/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/IDANEjX1oOsVujBMpgQ5ykYQTADCpm-3nTt5xRq57ANTyeS-Y4bs0PHI2ETag99WXNrjqOYBoA=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=VkdRcb2B0cM"
   },
@@ -1925,11 +1925,35 @@
     "youtubeid": "UCay6Y3oEoiC6ZEE2G0UZu_A",
     "title": "【究極の二択】選ぶならどっち！？みんなも一緒に選んでみてね！価値観の差はいかほどか──【#パレプロ #香鳴ハノン】",
     "date": "2026-11-15T04:06:21.000Z",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/rq0GJr2smCE/mqdefault.jpg?v=6af92fc7",
     "channelIcon": "https://yt3.ggpht.com/qvbeb9E-gYc822fxxzi6Ug5QyjhqZAWbUskHANcwDWP5W8iTsK3LcQJnjS4CVBuFJ6fONsM9F7M=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=rq0GJr2smCE"
+  },
+  {
+    "videoId": "iJo7VcFEq-0",
+    "name": "火狐むい",
+    "youtubeid": "UCaolaxqG55OJhU8qwRHHtQg",
+    "title": "【 #雑談  】初見さん10人と会いたい！【 #パレデミア学園 】#新人vtuber #初見さん歓迎",
+    "date": "2026-11-15T05:22:04.000Z",
+    "status": "live",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/iJo7VcFEq-0/mqdefault.jpg?v=6af940ad",
+    "channelIcon": "https://yt3.ggpht.com/hl89JE2NAP5BVl-HV8uv5_W8GUXgnmJdhxXZv6En8GqzHMsdWHWRbxLsti6amESp6V-Uu0oZBmc=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=iJo7VcFEq-0"
+  },
+  {
+    "videoId": "SwImVtN2trs",
+    "name": "火狐むい",
+    "youtubeid": "UCaolaxqG55OJhU8qwRHHtQg",
+    "title": "【 #雑談  】初見さん10人と会いたい！【 #パレデミア学園 】#新人vtuber #初見さん歓迎",
+    "date": "2026-11-15T05:22:12.000Z",
+    "status": "live",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/SwImVtN2trs/mqdefault.jpg?v=6af94079",
+    "channelIcon": "https://yt3.ggpht.com/hl89JE2NAP5BVl-HV8uv5_W8GUXgnmJdhxXZv6En8GqzHMsdWHWRbxLsti6amESp6V-Uu0oZBmc=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=SwImVtN2trs"
   },
   {
     "videoId": "VB8kGfulBYw",

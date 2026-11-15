@@ -1,0 +1,78 @@
+{
+  "inputCandidates": 69,
+  "requestedVideos": 68,
+  "returnedVideos": 67,
+  "unreturnedVideoIds": [
+    "HMgIYeuPi98"
+  ],
+  "commentEligibleVideos": 32,
+  "commentRequests": 32,
+  "commentsInspected": 189,
+  "commentsWithSetlists": 25,
+  "commentVideosWithSetlists": 17,
+  "commentRows": 361,
+  "commentOnlyVideos": 13,
+  "commentOnlyRows": 293,
+  "officialRows": 55,
+  "duplicateEvidence": 78,
+  "conflictingGroups": 32,
+  "officialCommentConflictGroups": 3,
+  "commentRowsAgreeingOfficial": 56,
+  "commentDerivedPublicPerformances": 0,
+  "newSongs": 52,
+  "newMusicVideos": 2,
+  "newKaraokes": 15,
+  "newPerformances": 52,
+  "existingPerformanceUpdates": 0,
+  "existingKaraokeAddedPerformances": 28,
+  "publicTotals": {
+    "songs": 57,
+    "musicVideos": 4,
+    "karaokes": 17,
+    "performances": 55
+  },
+  "api": {
+    "videosList": 2,
+    "commentThreadsList": 32,
+    "commentsList": 0,
+    "totalRequests": 34,
+    "estimatedUnits": 34
+  },
+  "expectedUnavailableComments": [
+    {
+      "youtubeId": "Cw94wqexG54",
+      "httpStatus": 403,
+      "reason": "commentsDisabled"
+    },
+    {
+      "youtubeId": "sFwe-eg_-Zo",
+      "httpStatus": 403,
+      "reason": "commentsDisabled"
+    }
+  ],
+  "confirmedPublicSources": [
+    "w7E-oj1HOfc",
+    "B_EKfTqecQw",
+    "R3PYpVPHF54",
+    "xfLfXL-X9zs",
+    "nNyroittCT0",
+    "TV7XXZDZQ0g"
+  ],
+  "notice": "Counts are candidate evidence, not verified songs. Comment-only entries remain unpublished. Duplicate/conflict counts depend on conservative title+artist+position grouping; not exhaustive.",
+  "confirmedKaraokes": 17,
+  "commentOnlyArchivesRegisteredWithoutPerformances": 12,
+  "performanceWithUnresolvedSongIdentity": 1,
+  "publicArtifact": {
+    "before": {
+      "files": 311,
+      "bytes": 37929949
+    },
+    "after": {
+      "files": 378,
+      "bytes": 38267011
+    },
+    "increaseBytes": 337062,
+    "topHtmlUnchanged": true
+  },
+  "existingKaraokeCompletenessUpdates": 1
+}

@@ -1,0 +1,395 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "inputCandidates",
+    "generatedAt",
+    "rows",
+    "groups",
+    "notice"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": 1
+    },
+    "inputCandidates": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "generatedAt": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "rows": {
+      "type": "array",
+      "maxItems": 200000,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "key": {
+            "type": "string",
+            "pattern": "^[a-f0-9]{24}$"
+          },
+          "youtubeId": {
+            "type": "string",
+            "pattern": "^[A-Za-z0-9_-]{11}$"
+          },
+          "order": {
+            "anyOf": [
+              {
+                "type": "integer",
+                "minimum": 1
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "startsAtSeconds": {
+            "anyOf": [
+              {
+                "type": "integer",
+                "minimum": 0
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "endsAtSeconds": {
+            "type": "null"
+          },
+          "title": {
+            "type": "string",
+            "maxLength": 240
+          },
+          "artist": {
+            "anyOf": [
+              {
+                "type": "string",
+                "maxLength": 240
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "talentIds": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^tal-[0-9]{6}$"
+            },
+            "maxItems": 100
+          },
+          "rawLabel": {
+            "type": "string",
+            "maxLength": 400
+          },
+          "sourceType": {
+            "enum": [
+              "official_description",
+              "official_chapter",
+              "viewer_comment",
+              "manual_review"
+            ]
+          },
+          "sourceUrl": {
+            "type": "string",
+            "format": "public-url"
+          },
+          "method": {
+            "const": "setlist-line-v1"
+          },
+          "verification": {
+            "const": "pending"
+          },
+          "category": {
+            "enum": [
+              "song_candidate",
+              "non_song"
+            ]
+          },
+          "warnings": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "maxLength": 80
+            },
+            "maxItems": 20
+          },
+          "evidenceHash": {
+            "type": "string",
+            "pattern": "^[a-f0-9]{64}$"
+          },
+          "match": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "classification",
+              "matches"
+            ],
+            "properties": {
+              "classification": {
+                "enum": [
+                  "high_confidence_candidate",
+                  "ambiguous",
+                  "new_song",
+                  "insufficient"
+                ]
+              },
+              "matches": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "songId",
+                    "fields",
+                    "reasons",
+                    "artistMatch"
+                  ],
+                  "properties": {
+                    "songId": {
+                      "type": "string",
+                      "pattern": "^song-[0-9]{6}$"
+                    },
+                    "fields": {
+                      "type": "array",
+                      "items": {
+                        "enum": [
+                          "title",
+                          "aliases",
+                          "readings"
+                        ]
+                      }
+                    },
+                    "reasons": {
+                      "type": "array",
+                      "items": {
+                        "enum": [
+                          "normalized_title",
+                          "normalized_aliases",
+                          "normalized_readings",
+                          "artist_agrees",
+                          "artist_not_established"
+                        ]
+                      }
+                    },
+                    "artistMatch": {
+                      "type": "boolean"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "required": [
+          "key",
+          "youtubeId",
+          "order",
+          "startsAtSeconds",
+          "endsAtSeconds",
+          "title",
+          "artist",
+          "talentIds",
+          "rawLabel",
+          "sourceType",
+          "sourceUrl",
+          "method",
+          "verification",
+          "category",
+          "warnings",
+          "evidenceHash",
+          "match"
+        ]
+      }
+    },
+    "groups": {
+      "type": "array",
+      "maxItems": 200000,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "title",
+          "artist",
+          "order",
+          "duplicates",
+          "conflict",
+          "evidence",
+          "verification"
+        ],
+        "properties": {
+          "title": {
+            "type": "string",
+            "maxLength": 240
+          },
+          "artist": {
+            "anyOf": [
+              {
+                "type": "string",
+                "maxLength": 240
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "order": {
+            "anyOf": [
+              {
+                "type": "integer",
+                "minimum": 1
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "duplicates": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "conflict": {
+            "type": "boolean"
+          },
+          "evidence": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "key": {
+                  "type": "string",
+                  "pattern": "^[a-f0-9]{24}$"
+                },
+                "youtubeId": {
+                  "type": "string",
+                  "pattern": "^[A-Za-z0-9_-]{11}$"
+                },
+                "order": {
+                  "anyOf": [
+                    {
+                      "type": "integer",
+                      "minimum": 1
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                },
+                "startsAtSeconds": {
+                  "anyOf": [
+                    {
+                      "type": "integer",
+                      "minimum": 0
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                },
+                "endsAtSeconds": {
+                  "type": "null"
+                },
+                "title": {
+                  "type": "string",
+                  "maxLength": 240
+                },
+                "artist": {
+                  "anyOf": [
+                    {
+                      "type": "string",
+                      "maxLength": 240
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                },
+                "talentIds": {
+                  "type": "array",
+                  "items": {
+                    "type": "string",
+                    "pattern": "^tal-[0-9]{6}$"
+                  },
+                  "maxItems": 100
+                },
+                "rawLabel": {
+                  "type": "string",
+                  "maxLength": 400
+                },
+                "sourceType": {
+                  "enum": [
+                    "official_description",
+                    "official_chapter",
+                    "viewer_comment",
+                    "manual_review"
+                  ]
+                },
+                "sourceUrl": {
+                  "type": "string",
+                  "format": "public-url"
+                },
+                "method": {
+                  "const": "setlist-line-v1"
+                },
+                "verification": {
+                  "const": "pending"
+                },
+                "category": {
+                  "enum": [
+                    "song_candidate",
+                    "non_song"
+                  ]
+                },
+                "warnings": {
+                  "type": "array",
+                  "items": {
+                    "type": "string",
+                    "maxLength": 80
+                  },
+                  "maxItems": 20
+                },
+                "evidenceHash": {
+                  "type": "string",
+                  "pattern": "^[a-f0-9]{64}$"
+                }
+              },
+              "required": [
+                "key",
+                "youtubeId",
+                "order",
+                "startsAtSeconds",
+                "endsAtSeconds",
+                "title",
+                "artist",
+                "talentIds",
+                "rawLabel",
+                "sourceType",
+                "sourceUrl",
+                "method",
+                "verification",
+                "category",
+                "warnings",
+                "evidenceHash"
+              ]
+            }
+          },
+          "verification": {
+            "const": "pending"
+          }
+        }
+      }
+    },
+    "notice": {
+      "type": "string",
+      "maxLength": 500
+    }
+  }
+}

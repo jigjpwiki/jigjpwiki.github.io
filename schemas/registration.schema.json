@@ -1,0 +1,670 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "schemaVersion": {
+      "const": 1
+    },
+    "baseHash": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "resultHash": {
+      "anyOf": [
+        {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "allocated": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "string",
+        "pattern": "^(song|mv|karaoke|perf)-[0-9]{6}$"
+      }
+    },
+    "videos": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "youtubeId": {
+            "type": "string",
+            "pattern": "^[A-Za-z0-9_-]{11}$"
+          },
+          "candidateEvidenceHash": {
+            "anyOf": [
+              {
+                "type": "string",
+                "pattern": "^[a-f0-9]{64}$"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "evidenceHash": {
+            "type": "string",
+            "pattern": "^[a-f0-9]{64}$"
+          },
+          "evidenceHistory": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^[a-f0-9]{64}$"
+            }
+          },
+          "kind": {
+            "enum": [
+              "karaoke",
+              "music-video"
+            ]
+          },
+          "talentIds": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^tal-[0-9]{6}$"
+            },
+            "minItems": 1,
+            "uniqueItems": true
+          },
+          "media": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "channelId",
+              "title",
+              "publishedAt",
+              "startedAt",
+              "endedAt",
+              "durationSeconds",
+              "availability"
+            ],
+            "properties": {
+              "channelId": {
+                "type": "string",
+                "pattern": "^UC[\\w-]{22}$"
+              },
+              "title": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 500
+              },
+              "publishedAt": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "format": "date-time"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "startedAt": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "format": "date-time"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "endedAt": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "format": "date-time"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "durationSeconds": {
+                "anyOf": [
+                  {
+                    "type": "integer",
+                    "minimum": 0
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "availability": {
+                "enum": [
+                  "public",
+                  "unavailable",
+                  "unknown"
+                ]
+              }
+            }
+          },
+          "registeredAt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "videoType": {
+            "enum": [
+              "original",
+              "cover",
+              "other",
+              null
+            ]
+          },
+          "song": {
+            "anyOf": [
+              {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "existingId": {
+                    "anyOf": [
+                      {
+                        "type": "string",
+                        "pattern": "^song-[0-9]{6}$"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "title": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 200
+                  },
+                  "originalArtists": {
+                    "anyOf": [
+                      {
+                        "type": "array",
+                        "items": {
+                          "type": "string",
+                          "minLength": 1,
+                          "maxLength": 200
+                        },
+                        "minItems": 1
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "identityUrl": {
+                    "type": "string",
+                    "format": "public-url"
+                  },
+                  "artistEvidence": {
+                    "enum": [
+                      "original_source",
+                      "performer_description",
+                      "unknown"
+                    ]
+                  }
+                },
+                "required": [
+                  "existingId",
+                  "title",
+                  "originalArtists",
+                  "identityUrl",
+                  "artistEvidence"
+                ]
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "entries": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "youtubeId": {
+                  "type": "string",
+                  "pattern": "^[A-Za-z0-9_-]{11}$"
+                },
+                "key": {
+                  "type": "string",
+                  "pattern": "^[a-f0-9]{24}$"
+                },
+                "evidenceHash": {
+                  "type": "string",
+                  "pattern": "^[a-f0-9]{64}$"
+                },
+                "evidenceHistory": {
+                  "type": "array",
+                  "items": {
+                    "type": "string",
+                    "pattern": "^[a-f0-9]{64}$"
+                  }
+                },
+                "sourceType": {
+                  "enum": [
+                    "official_description",
+                    "official_chapter",
+                    "viewer_comment",
+                    "manual_review"
+                  ]
+                },
+                "rawLabel": {
+                  "type": "string",
+                  "minLength": 1,
+                  "maxLength": 400
+                },
+                "song": {
+                  "anyOf": [
+                    {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "properties": {
+                        "existingId": {
+                          "anyOf": [
+                            {
+                              "type": "string",
+                              "pattern": "^song-[0-9]{6}$"
+                            },
+                            {
+                              "type": "null"
+                            }
+                          ]
+                        },
+                        "title": {
+                          "type": "string",
+                          "minLength": 1,
+                          "maxLength": 200
+                        },
+                        "originalArtists": {
+                          "anyOf": [
+                            {
+                              "type": "array",
+                              "items": {
+                                "type": "string",
+                                "minLength": 1,
+                                "maxLength": 200
+                              },
+                              "minItems": 1
+                            },
+                            {
+                              "type": "null"
+                            }
+                          ]
+                        },
+                        "identityUrl": {
+                          "type": "string",
+                          "format": "public-url"
+                        },
+                        "artistEvidence": {
+                          "enum": [
+                            "original_source",
+                            "performer_description",
+                            "unknown"
+                          ]
+                        }
+                      },
+                      "required": [
+                        "existingId",
+                        "title",
+                        "originalArtists",
+                        "identityUrl",
+                        "artistEvidence"
+                      ]
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                },
+                "order": {
+                  "anyOf": [
+                    {
+                      "type": "integer",
+                      "minimum": 1
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                },
+                "startsAtSeconds": {
+                  "anyOf": [
+                    {
+                      "type": "integer",
+                      "minimum": 0
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                },
+                "talentIds": {
+                  "type": "array",
+                  "items": {
+                    "type": "string",
+                    "pattern": "^tal-[0-9]{6}$"
+                  },
+                  "minItems": 1,
+                  "uniqueItems": true
+                },
+                "approvals": {
+                  "type": "object",
+                  "propertyNames": {
+                    "enum": [
+                      "kind",
+                      "talentIds",
+                      "media",
+                      "song",
+                      "videoType",
+                      "completeness",
+                      "order",
+                      "startsAtSeconds",
+                      "value"
+                    ]
+                  },
+                  "additionalProperties": {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "properties": {
+                      "status": {
+                        "const": "verified"
+                      },
+                      "valueHash": {
+                        "type": "string",
+                        "pattern": "^[a-f0-9]{64}$"
+                      },
+                      "evidenceHash": {
+                        "type": "string",
+                        "pattern": "^[a-f0-9]{64}$"
+                      },
+                      "sourceUrl": {
+                        "type": "string",
+                        "format": "public-url"
+                      },
+                      "checkedAt": {
+                        "type": "string",
+                        "format": "date-time"
+                      }
+                    },
+                    "required": [
+                      "status",
+                      "valueHash",
+                      "evidenceHash",
+                      "sourceUrl",
+                      "checkedAt"
+                    ]
+                  }
+                },
+                "manualReview": {
+                  "anyOf": [
+                    {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "properties": {
+                        "status": {
+                          "const": "verified"
+                        },
+                        "evidenceHash": {
+                          "type": "string",
+                          "pattern": "^[a-f0-9]{64}$"
+                        },
+                        "sourceUrl": {
+                          "type": "string",
+                          "format": "public-url"
+                        },
+                        "checkedAt": {
+                          "type": "string",
+                          "format": "date-time"
+                        }
+                      },
+                      "required": [
+                        "status",
+                        "evidenceHash",
+                        "sourceUrl",
+                        "checkedAt"
+                      ]
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                }
+              },
+              "required": [
+                "youtubeId",
+                "key",
+                "evidenceHash",
+                "evidenceHistory",
+                "sourceType",
+                "rawLabel",
+                "song",
+                "order",
+                "startsAtSeconds",
+                "talentIds",
+                "approvals",
+                "manualReview"
+              ]
+            },
+            "maxItems": 200
+          },
+          "completeness": {
+            "anyOf": [
+              {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "complete": {
+                    "type": "boolean"
+                  },
+                  "expectedCount": {
+                    "anyOf": [
+                      {
+                        "type": "integer",
+                        "minimum": 0
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  }
+                },
+                "required": [
+                  "complete",
+                  "expectedCount"
+                ]
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "approvals": {
+            "type": "object",
+            "propertyNames": {
+              "enum": [
+                "kind",
+                "talentIds",
+                "media",
+                "song",
+                "videoType",
+                "completeness",
+                "order",
+                "startsAtSeconds",
+                "value"
+              ]
+            },
+            "additionalProperties": {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "status": {
+                  "const": "verified"
+                },
+                "valueHash": {
+                  "type": "string",
+                  "pattern": "^[a-f0-9]{64}$"
+                },
+                "evidenceHash": {
+                  "type": "string",
+                  "pattern": "^[a-f0-9]{64}$"
+                },
+                "sourceUrl": {
+                  "type": "string",
+                  "format": "public-url"
+                },
+                "checkedAt": {
+                  "type": "string",
+                  "format": "date-time"
+                }
+              },
+              "required": [
+                "status",
+                "valueHash",
+                "evidenceHash",
+                "sourceUrl",
+                "checkedAt"
+              ]
+            }
+          }
+        },
+        "required": [
+          "youtubeId",
+          "candidateEvidenceHash",
+          "evidenceHash",
+          "evidenceHistory",
+          "kind",
+          "talentIds",
+          "media",
+          "registeredAt",
+          "videoType",
+          "song",
+          "entries",
+          "completeness",
+          "approvals"
+        ]
+      },
+      "maxItems": 100
+    },
+    "patches": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "master": {
+            "enum": [
+              "music",
+              "karaoke"
+            ]
+          },
+          "collection": {
+            "enum": [
+              "songs",
+              "musicVideos",
+              "karaokes",
+              "performances"
+            ]
+          },
+          "id": {
+            "type": "string"
+          },
+          "expectedHash": {
+            "type": "string",
+            "pattern": "^[a-f0-9]{64}$"
+          },
+          "evidenceHash": {
+            "type": "string",
+            "pattern": "^[a-f0-9]{64}$"
+          },
+          "evidenceHistory": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^[a-f0-9]{64}$"
+            }
+          },
+          "value": {
+            "type": "object"
+          },
+          "approvals": {
+            "type": "object",
+            "propertyNames": {
+              "enum": [
+                "kind",
+                "talentIds",
+                "media",
+                "song",
+                "videoType",
+                "completeness",
+                "order",
+                "startsAtSeconds",
+                "value"
+              ]
+            },
+            "additionalProperties": {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "status": {
+                  "const": "verified"
+                },
+                "valueHash": {
+                  "type": "string",
+                  "pattern": "^[a-f0-9]{64}$"
+                },
+                "evidenceHash": {
+                  "type": "string",
+                  "pattern": "^[a-f0-9]{64}$"
+                },
+                "sourceUrl": {
+                  "type": "string",
+                  "format": "public-url"
+                },
+                "checkedAt": {
+                  "type": "string",
+                  "format": "date-time"
+                }
+              },
+              "required": [
+                "status",
+                "valueHash",
+                "evidenceHash",
+                "sourceUrl",
+                "checkedAt"
+              ]
+            }
+          }
+        },
+        "required": [
+          "master",
+          "collection",
+          "id",
+          "expectedHash",
+          "evidenceHash",
+          "evidenceHistory",
+          "value",
+          "approvals"
+        ]
+      },
+      "maxItems": 200
+    }
+  },
+  "required": [
+    "schemaVersion",
+    "baseHash",
+    "resultHash",
+    "allocated",
+    "videos",
+    "patches"
+  ],
+  "$schema": "http://json-schema.org/draft-07/schema#"
+}

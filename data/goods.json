@@ -1,6 +1,1508 @@
 {
   "schemaVersion": 1,
-  "products": [],
-  "campaigns": [],
-  "offers": []
+  "products": [
+    {
+      "id": "product-000001",
+      "title": "藤宮コトハ誕生日2026 アクリルジオラマ",
+      "talentIds": [
+        "tal-000010"
+      ],
+      "groupIds": [],
+      "image": null,
+      "identityUrl": "https://paletteproject.jp/goods_kotohabd2026/",
+      "sourceRefs": [
+        "src-c-goods-1"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "product-000002",
+      "title": "藤宮コトハ誕生日2026 ホログラム缶バッジ",
+      "talentIds": [
+        "tal-000010"
+      ],
+      "groupIds": [],
+      "image": null,
+      "identityUrl": "https://paletteproject.jp/goods_kotohabd2026/",
+      "sourceRefs": [
+        "src-c-goods-1"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "product-000003",
+      "title": "藤宮コトハ誕生日2026 アクリルキーホルダー",
+      "talentIds": [
+        "tal-000010"
+      ],
+      "groupIds": [],
+      "image": null,
+      "identityUrl": "https://paletteproject.jp/goods_kotohabd2026/",
+      "sourceRefs": [
+        "src-c-goods-1"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "product-000004",
+      "title": "藤宮コトハ誕生日2026 フォトアルバム",
+      "talentIds": [
+        "tal-000010"
+      ],
+      "groupIds": [],
+      "image": null,
+      "identityUrl": "https://paletteproject.jp/goods_kotohabd2026/",
+      "sourceRefs": [
+        "src-c-goods-1"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "product-000005",
+      "title": "藤宮コトハ誕生日2026 耐熱ガラスマグ",
+      "talentIds": [
+        "tal-000010"
+      ],
+      "groupIds": [],
+      "image": null,
+      "identityUrl": "https://paletteproject.jp/goods_kotohabd2026/",
+      "sourceRefs": [
+        "src-c-goods-1"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "product-000006",
+      "title": "藤宮コトハ誕生日2026 誕生日グッズフルセット",
+      "talentIds": [
+        "tal-000010"
+      ],
+      "groupIds": [],
+      "image": null,
+      "identityUrl": "https://paletteproject.jp/goods_kotohabd2026/",
+      "sourceRefs": [
+        "src-c-goods-1"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "product-000007",
+      "title": "藤宮コトハ誕生日2026 【期間&数量限定】　藤宮コトハ誕生日グッズ 2026 直筆メッセージ入りチェキ風カード付きフルセット",
+      "talentIds": [
+        "tal-000010"
+      ],
+      "groupIds": [],
+      "image": null,
+      "identityUrl": "https://paletteproject.jp/goods_kotohabd2026/",
+      "sourceRefs": [
+        "src-c-goods-1"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "product-000008",
+      "title": "Palette Project 6thワンマンライブ ペンライト",
+      "talentIds": [
+        "tal-000005",
+        "tal-000006",
+        "tal-000007",
+        "tal-000008",
+        "tal-000009",
+        "tal-000010",
+        "tal-000011",
+        "tal-000012"
+      ],
+      "groupIds": [],
+      "image": null,
+      "identityUrl": "https://paletteproject.jp/goods_6th_onemanlive/",
+      "sourceRefs": [
+        "src-c-goods-2"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "product-000009",
+      "title": "Palette Project 6thワンマンライブ マフラータオル",
+      "talentIds": [
+        "tal-000005",
+        "tal-000006",
+        "tal-000007",
+        "tal-000008",
+        "tal-000009",
+        "tal-000010",
+        "tal-000011",
+        "tal-000012"
+      ],
+      "groupIds": [],
+      "image": null,
+      "identityUrl": "https://paletteproject.jp/goods_6th_onemanlive/",
+      "sourceRefs": [
+        "src-c-goods-2"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "product-000010",
+      "title": "Palette Project 6thワンマンライブ クリアマルチケース",
+      "talentIds": [
+        "tal-000005",
+        "tal-000006",
+        "tal-000007",
+        "tal-000008",
+        "tal-000009",
+        "tal-000010",
+        "tal-000011",
+        "tal-000012"
+      ],
+      "groupIds": [],
+      "image": null,
+      "identityUrl": "https://paletteproject.jp/goods_6th_onemanlive/",
+      "sourceRefs": [
+        "src-c-goods-2"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "product-000011",
+      "title": "Palette Project 6thワンマンライブ おそろいシルバーメタルブローチ",
+      "talentIds": [
+        "tal-000005",
+        "tal-000006",
+        "tal-000007",
+        "tal-000008",
+        "tal-000009",
+        "tal-000010",
+        "tal-000011",
+        "tal-000012"
+      ],
+      "groupIds": [],
+      "image": null,
+      "identityUrl": "https://paletteproject.jp/goods_6th_onemanlive/",
+      "sourceRefs": [
+        "src-c-goods-2"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "product-000012",
+      "title": "Palette Project 6thワンマンライブ ホログラムアクリルスタンド",
+      "talentIds": [
+        "tal-000005",
+        "tal-000006",
+        "tal-000007",
+        "tal-000008",
+        "tal-000009",
+        "tal-000010",
+        "tal-000011",
+        "tal-000012"
+      ],
+      "groupIds": [],
+      "image": null,
+      "identityUrl": "https://paletteproject.jp/goods_6th_onemanlive/",
+      "sourceRefs": [
+        "src-c-goods-2"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "product-000013",
+      "title": "Palette Project 6thワンマンライブ ジップパーカー",
+      "talentIds": [
+        "tal-000005",
+        "tal-000006",
+        "tal-000007",
+        "tal-000008",
+        "tal-000009",
+        "tal-000010",
+        "tal-000011",
+        "tal-000012"
+      ],
+      "groupIds": [],
+      "image": null,
+      "identityUrl": "https://paletteproject.jp/goods_6th_onemanlive/",
+      "sourceRefs": [
+        "src-c-goods-2"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "product-000014",
+      "title": "Palette Project 6thワンマンライブ Tシャツ",
+      "talentIds": [
+        "tal-000005",
+        "tal-000006",
+        "tal-000007",
+        "tal-000008",
+        "tal-000009",
+        "tal-000010",
+        "tal-000011",
+        "tal-000012"
+      ],
+      "groupIds": [],
+      "image": null,
+      "identityUrl": "https://paletteproject.jp/goods_6th_onemanlive/",
+      "sourceRefs": [
+        "src-c-goods-2"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "product-000015",
+      "title": "Palette Project 6thワンマンライブ アクリルジオラマ",
+      "talentIds": [
+        "tal-000005",
+        "tal-000006",
+        "tal-000007",
+        "tal-000008",
+        "tal-000009",
+        "tal-000010",
+        "tal-000011",
+        "tal-000012"
+      ],
+      "groupIds": [],
+      "image": null,
+      "identityUrl": "https://paletteproject.jp/goods_6th_onemanlive/",
+      "sourceRefs": [
+        "src-c-goods-2"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "product-000016",
+      "title": "Palette Project 6thワンマンライブ ブランケット",
+      "talentIds": [
+        "tal-000005",
+        "tal-000006",
+        "tal-000007",
+        "tal-000008",
+        "tal-000009",
+        "tal-000010",
+        "tal-000011",
+        "tal-000012"
+      ],
+      "groupIds": [],
+      "image": null,
+      "identityUrl": "https://paletteproject.jp/goods_6th_onemanlive/",
+      "sourceRefs": [
+        "src-c-goods-2"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "product-000017",
+      "title": "Palette Project 6thワンマンライブ ランダム缶バッジ（単品）",
+      "talentIds": [
+        "tal-000005",
+        "tal-000006",
+        "tal-000007",
+        "tal-000008",
+        "tal-000009",
+        "tal-000010",
+        "tal-000011",
+        "tal-000012"
+      ],
+      "groupIds": [],
+      "image": null,
+      "identityUrl": "https://paletteproject.jp/goods_6th_onemanlive/",
+      "sourceRefs": [
+        "src-c-goods-2"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "product-000018",
+      "title": "Palette Project 6thワンマンライブ ランダム缶バッジ（BOX）",
+      "talentIds": [
+        "tal-000005",
+        "tal-000006",
+        "tal-000007",
+        "tal-000008",
+        "tal-000009",
+        "tal-000010",
+        "tal-000011",
+        "tal-000012"
+      ],
+      "groupIds": [],
+      "image": null,
+      "identityUrl": "https://paletteproject.jp/goods_6th_onemanlive/",
+      "sourceRefs": [
+        "src-c-goods-2"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "product-000019",
+      "title": "Palette Project 6thワンマンライブ ランダムクリアファイル",
+      "talentIds": [
+        "tal-000005",
+        "tal-000006",
+        "tal-000007",
+        "tal-000008",
+        "tal-000009",
+        "tal-000010",
+        "tal-000011",
+        "tal-000012"
+      ],
+      "groupIds": [],
+      "image": null,
+      "identityUrl": "https://paletteproject.jp/goods_6th_onemanlive/",
+      "sourceRefs": [
+        "src-c-goods-2"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "product-000020",
+      "title": "鬼多見アユム誕生日2026 アクリルジオラマ",
+      "talentIds": [
+        "tal-000012"
+      ],
+      "groupIds": [],
+      "image": null,
+      "identityUrl": "https://paletteproject.jp/goods_ayumubd2026/",
+      "sourceRefs": [
+        "src-c-goods-3"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "product-000021",
+      "title": "鬼多見アユム誕生日2026 パッケージ風アクリルキーホルダー",
+      "talentIds": [
+        "tal-000012"
+      ],
+      "groupIds": [],
+      "image": null,
+      "identityUrl": "https://paletteproject.jp/goods_ayumubd2026/",
+      "sourceRefs": [
+        "src-c-goods-3"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "product-000022",
+      "title": "鬼多見アユム誕生日2026 ホログラム缶バッジセット",
+      "talentIds": [
+        "tal-000012"
+      ],
+      "groupIds": [],
+      "image": null,
+      "identityUrl": "https://paletteproject.jp/goods_ayumubd2026/",
+      "sourceRefs": [
+        "src-c-goods-3"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "product-000023",
+      "title": "鬼多見アユム誕生日2026 フォトアルバム",
+      "talentIds": [
+        "tal-000012"
+      ],
+      "groupIds": [],
+      "image": null,
+      "identityUrl": "https://paletteproject.jp/goods_ayumubd2026/",
+      "sourceRefs": [
+        "src-c-goods-3"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "product-000024",
+      "title": "鬼多見アユム誕生日2026 A3クリアポスター",
+      "talentIds": [
+        "tal-000012"
+      ],
+      "groupIds": [],
+      "image": null,
+      "identityUrl": "https://paletteproject.jp/goods_ayumubd2026/",
+      "sourceRefs": [
+        "src-c-goods-3"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "product-000025",
+      "title": "鬼多見アユム誕生日2026 誕生日グッズフルセット",
+      "talentIds": [
+        "tal-000012"
+      ],
+      "groupIds": [],
+      "image": null,
+      "identityUrl": "https://paletteproject.jp/goods_ayumubd2026/",
+      "sourceRefs": [
+        "src-c-goods-3"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "product-000026",
+      "title": "鬼多見アユム誕生日2026 【期間&数量限定】鬼多見アユム誕生日グッズ 2026 直筆メッセージ入りチェキ風カード付きフルセット",
+      "talentIds": [
+        "tal-000012"
+      ],
+      "groupIds": [],
+      "image": null,
+      "identityUrl": "https://paletteproject.jp/goods_ayumubd2026/",
+      "sourceRefs": [
+        "src-c-goods-3"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "product-000027",
+      "title": "Sputrip6周年 B2タペストリー",
+      "talentIds": [],
+      "groupIds": [
+        "group-000011"
+      ],
+      "image": null,
+      "identityUrl": "https://paletteproject.jp/goods_sputrip6th/",
+      "sourceRefs": [
+        "src-c-goods-4"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "product-000028",
+      "title": "Sputrip6周年 スクエア缶バッジ",
+      "talentIds": [],
+      "groupIds": [
+        "group-000011"
+      ],
+      "image": null,
+      "identityUrl": "https://paletteproject.jp/goods_sputrip6th/",
+      "sourceRefs": [
+        "src-c-goods-4"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "product-000029",
+      "title": "Sputrip6周年 アクリルスタンド",
+      "talentIds": [],
+      "groupIds": [
+        "group-000011"
+      ],
+      "image": null,
+      "identityUrl": "https://paletteproject.jp/goods_sputrip6th/",
+      "sourceRefs": [
+        "src-c-goods-4"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "product-000030",
+      "title": "Sputrip6周年 Sputrip 6周年記念グッズフルセット",
+      "talentIds": [],
+      "groupIds": [
+        "group-000011"
+      ],
+      "image": null,
+      "identityUrl": "https://paletteproject.jp/goods_sputrip6th/",
+      "sourceRefs": [
+        "src-c-goods-4"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "product-000031",
+      "title": "Palette Project-Canvas- Tシャツ",
+      "talentIds": [
+        "tal-000005",
+        "tal-000006",
+        "tal-000007",
+        "tal-000008",
+        "tal-000009",
+        "tal-000010",
+        "tal-000011",
+        "tal-000012"
+      ],
+      "groupIds": [],
+      "image": null,
+      "identityUrl": "https://paletteproject.jp/goods_ppnc2026/",
+      "sourceRefs": [
+        "src-c-goods-5"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "product-000032",
+      "title": "Palette Project-Canvas- ペンライト",
+      "talentIds": [
+        "tal-000005",
+        "tal-000006",
+        "tal-000007",
+        "tal-000008",
+        "tal-000009",
+        "tal-000010",
+        "tal-000011",
+        "tal-000012"
+      ],
+      "groupIds": [],
+      "image": null,
+      "identityUrl": "https://paletteproject.jp/goods_ppnc2026/",
+      "sourceRefs": [
+        "src-c-goods-5"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "product-000033",
+      "title": "夏渚まはろ誕生日2026 マグカップ",
+      "talentIds": [
+        "tal-000006"
+      ],
+      "groupIds": [],
+      "image": null,
+      "identityUrl": "https://paletteproject.jp/goods_bd2026mahalo/",
+      "sourceRefs": [
+        "src-c-goods-6"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "product-000034",
+      "title": "夏渚まはろ誕生日2026 タペストリー",
+      "talentIds": [
+        "tal-000006"
+      ],
+      "groupIds": [],
+      "image": null,
+      "identityUrl": "https://paletteproject.jp/goods_bd2026mahalo/",
+      "sourceRefs": [
+        "src-c-goods-6"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "product-000035",
+      "title": "夏渚まはろ誕生日2026 アクリルパネル",
+      "talentIds": [
+        "tal-000006"
+      ],
+      "groupIds": [],
+      "image": null,
+      "identityUrl": "https://paletteproject.jp/goods_bd2026mahalo/",
+      "sourceRefs": [
+        "src-c-goods-6"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "product-000036",
+      "title": "夏渚まはろ誕生日2026 アクリルキーホルダー",
+      "talentIds": [
+        "tal-000006"
+      ],
+      "groupIds": [],
+      "image": null,
+      "identityUrl": "https://paletteproject.jp/goods_bd2026mahalo/",
+      "sourceRefs": [
+        "src-c-goods-6"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "product-000037",
+      "title": "夏渚まはろ誕生日2026 アクリルおなまえバッジ",
+      "talentIds": [
+        "tal-000006"
+      ],
+      "groupIds": [],
+      "image": null,
+      "identityUrl": "https://paletteproject.jp/goods_bd2026mahalo/",
+      "sourceRefs": [
+        "src-c-goods-6"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "product-000038",
+      "title": "夏渚まはろ誕生日2026 クリアペンライトシート",
+      "talentIds": [
+        "tal-000006"
+      ],
+      "groupIds": [],
+      "image": null,
+      "identityUrl": "https://paletteproject.jp/goods_bd2026mahalo/",
+      "sourceRefs": [
+        "src-c-goods-6"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "product-000039",
+      "title": "夏渚まはろ誕生日2026 ホログラム缶バッジ",
+      "talentIds": [
+        "tal-000006"
+      ],
+      "groupIds": [],
+      "image": null,
+      "identityUrl": "https://paletteproject.jp/goods_bd2026mahalo/",
+      "sourceRefs": [
+        "src-c-goods-6"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "product-000040",
+      "title": "夏渚まはろ誕生日2026 誕生日グッズフルセット",
+      "talentIds": [
+        "tal-000006"
+      ],
+      "groupIds": [],
+      "image": null,
+      "identityUrl": "https://paletteproject.jp/goods_bd2026mahalo/",
+      "sourceRefs": [
+        "src-c-goods-6"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "product-000041",
+      "title": "夏渚まはろ誕生日2026 【期間&数量限定】夏渚まはろ誕生日グッズ 2026 直筆メッセージ入りチェキ風カード付きフルセット",
+      "talentIds": [
+        "tal-000006"
+      ],
+      "groupIds": [],
+      "image": null,
+      "identityUrl": "https://paletteproject.jp/goods_bd2026mahalo/",
+      "sourceRefs": [
+        "src-c-goods-6"
+      ],
+      "visibility": "public"
+    }
+  ],
+  "campaigns": [
+    {
+      "id": "campaign-000001",
+      "title": "藤宮コトハ誕生日2026",
+      "sourceRefs": [
+        "src-c-goods-1"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "campaign-000002",
+      "title": "Palette Project 6thワンマンライブ",
+      "sourceRefs": [
+        "src-c-goods-2"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "campaign-000003",
+      "title": "鬼多見アユム誕生日2026",
+      "sourceRefs": [
+        "src-c-goods-3"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "campaign-000004",
+      "title": "Sputrip6周年",
+      "sourceRefs": [
+        "src-c-goods-4"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "campaign-000005",
+      "title": "Palette Project-Canvas-",
+      "sourceRefs": [
+        "src-c-goods-5"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "campaign-000006",
+      "title": "夏渚まはろ誕生日2026",
+      "sourceRefs": [
+        "src-c-goods-6"
+      ],
+      "visibility": "public"
+    }
+  ],
+  "offers": [
+    {
+      "id": "offer-000001",
+      "productId": "product-000001",
+      "campaignId": "campaign-000001",
+      "price": {
+        "amount": 3700,
+        "currency": "JPY"
+      },
+      "startsAt": "2026-11-15T12:00:00Z",
+      "endsAt": "2026-11-25T14:59:00Z",
+      "periodNote": "公式告知記載の税込価格・受注期間。在庫と現在の受付状態は未確認。",
+      "url": "https://store.paletteproject.jp/products/fzmyk-goods-20261115",
+      "status": "unknown",
+      "sourceRefs": [
+        "src-c-goods-1",
+        "src-c-sale-1"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "offer-000002",
+      "productId": "product-000002",
+      "campaignId": "campaign-000001",
+      "price": {
+        "amount": 700,
+        "currency": "JPY"
+      },
+      "startsAt": "2026-11-15T12:00:00Z",
+      "endsAt": "2026-11-25T14:59:00Z",
+      "periodNote": "公式告知記載の税込価格・受注期間。在庫と現在の受付状態は未確認。",
+      "url": "https://store.paletteproject.jp/products/fzmyk-goods-20261115",
+      "status": "unknown",
+      "sourceRefs": [
+        "src-c-goods-1",
+        "src-c-sale-2"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "offer-000003",
+      "productId": "product-000003",
+      "campaignId": "campaign-000001",
+      "price": {
+        "amount": 2100,
+        "currency": "JPY"
+      },
+      "startsAt": "2026-11-15T12:00:00Z",
+      "endsAt": "2026-11-25T14:59:00Z",
+      "periodNote": "公式告知記載の税込価格・受注期間。在庫と現在の受付状態は未確認。",
+      "url": "https://store.paletteproject.jp/products/fzmyk-goods-20261115",
+      "status": "unknown",
+      "sourceRefs": [
+        "src-c-goods-1",
+        "src-c-sale-3"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "offer-000004",
+      "productId": "product-000004",
+      "campaignId": "campaign-000001",
+      "price": {
+        "amount": 3800,
+        "currency": "JPY"
+      },
+      "startsAt": "2026-11-15T12:00:00Z",
+      "endsAt": "2026-11-25T14:59:00Z",
+      "periodNote": "公式告知記載の税込価格・受注期間。在庫と現在の受付状態は未確認。",
+      "url": "https://store.paletteproject.jp/products/fzmyk-goods-20261115",
+      "status": "unknown",
+      "sourceRefs": [
+        "src-c-goods-1",
+        "src-c-sale-4"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "offer-000005",
+      "productId": "product-000005",
+      "campaignId": "campaign-000001",
+      "price": {
+        "amount": 4200,
+        "currency": "JPY"
+      },
+      "startsAt": "2026-11-15T12:00:00Z",
+      "endsAt": "2026-11-25T14:59:00Z",
+      "periodNote": "公式告知記載の税込価格・受注期間。在庫と現在の受付状態は未確認。",
+      "url": "https://store.paletteproject.jp/products/fzmyk-goods-20261115",
+      "status": "unknown",
+      "sourceRefs": [
+        "src-c-goods-1",
+        "src-c-sale-5"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "offer-000006",
+      "productId": "product-000006",
+      "campaignId": "campaign-000001",
+      "price": {
+        "amount": 14800,
+        "currency": "JPY"
+      },
+      "startsAt": "2026-11-15T12:00:00Z",
+      "endsAt": "2026-11-25T14:59:00Z",
+      "periodNote": "公式告知記載の税込価格・受注期間。在庫と現在の受付状態は未確認。",
+      "url": "https://store.paletteproject.jp/products/fzmyk-goods-20261115",
+      "status": "unknown",
+      "sourceRefs": [
+        "src-c-goods-1",
+        "src-c-sale-6"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "offer-000007",
+      "productId": "product-000007",
+      "campaignId": "campaign-000001",
+      "price": {
+        "amount": 19800,
+        "currency": "JPY"
+      },
+      "startsAt": "2026-11-16T12:00:00Z",
+      "endsAt": "2026-11-17T12:00:00Z",
+      "periodNote": "公式告知記載の税込価格・受注期間。在庫と現在の受付状態は未確認。",
+      "url": "https://paletteproject.booth.pm/items/8803373",
+      "status": "unknown",
+      "sourceRefs": [
+        "src-c-goods-1",
+        "src-c-sale-7"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "offer-000008",
+      "productId": "product-000008",
+      "campaignId": "campaign-000002",
+      "price": {
+        "amount": 4500,
+        "currency": "JPY"
+      },
+      "startsAt": "2026-10-20T12:00:00Z",
+      "endsAt": "2026-11-08T14:59:00Z",
+      "periodNote": "公式告知記載の税込価格・受注期間。在庫と現在の受付状態は未確認。",
+      "url": "https://store.paletteproject.jp/collections/pp-goods-ev20261020",
+      "status": "unknown",
+      "sourceRefs": [
+        "src-c-goods-2",
+        "src-c-sale-8"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "offer-000009",
+      "productId": "product-000009",
+      "campaignId": "campaign-000002",
+      "price": {
+        "amount": 3500,
+        "currency": "JPY"
+      },
+      "startsAt": "2026-10-20T12:00:00Z",
+      "endsAt": "2026-11-08T14:59:00Z",
+      "periodNote": "公式告知記載の税込価格・受注期間。在庫と現在の受付状態は未確認。",
+      "url": "https://store.paletteproject.jp/collections/pp-goods-ev20261020",
+      "status": "unknown",
+      "sourceRefs": [
+        "src-c-goods-2",
+        "src-c-sale-9"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "offer-000010",
+      "productId": "product-000010",
+      "campaignId": "campaign-000002",
+      "price": {
+        "amount": 2000,
+        "currency": "JPY"
+      },
+      "startsAt": "2026-10-20T12:00:00Z",
+      "endsAt": "2026-11-08T14:59:00Z",
+      "periodNote": "公式告知記載の税込価格・受注期間。在庫と現在の受付状態は未確認。",
+      "url": "https://store.paletteproject.jp/collections/pp-goods-ev20261020",
+      "status": "unknown",
+      "sourceRefs": [
+        "src-c-goods-2",
+        "src-c-sale-10"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "offer-000011",
+      "productId": "product-000011",
+      "campaignId": "campaign-000002",
+      "price": {
+        "amount": 3600,
+        "currency": "JPY"
+      },
+      "startsAt": "2026-10-20T12:00:00Z",
+      "endsAt": "2026-11-08T14:59:00Z",
+      "periodNote": "公式告知記載の税込価格・受注期間。在庫と現在の受付状態は未確認。",
+      "url": "https://store.paletteproject.jp/collections/pp-goods-ev20261020",
+      "status": "unknown",
+      "sourceRefs": [
+        "src-c-goods-2",
+        "src-c-sale-11"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "offer-000012",
+      "productId": "product-000012",
+      "campaignId": "campaign-000002",
+      "price": {
+        "amount": 2500,
+        "currency": "JPY"
+      },
+      "startsAt": "2026-10-20T12:00:00Z",
+      "endsAt": "2026-11-08T14:59:00Z",
+      "periodNote": "公式告知記載の税込価格・受注期間。在庫と現在の受付状態は未確認。",
+      "url": "https://store.paletteproject.jp/collections/pp-goods-ev20261020",
+      "status": "unknown",
+      "sourceRefs": [
+        "src-c-goods-2",
+        "src-c-sale-12"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "offer-000013",
+      "productId": "product-000013",
+      "campaignId": "campaign-000002",
+      "price": {
+        "amount": 13000,
+        "currency": "JPY"
+      },
+      "startsAt": "2026-10-20T12:00:00Z",
+      "endsAt": "2026-11-08T14:59:00Z",
+      "periodNote": "公式告知記載の税込価格・受注期間。在庫と現在の受付状態は未確認。",
+      "url": "https://store.paletteproject.jp/collections/pp-goods-ev20261020",
+      "status": "unknown",
+      "sourceRefs": [
+        "src-c-goods-2",
+        "src-c-sale-13"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "offer-000014",
+      "productId": "product-000014",
+      "campaignId": "campaign-000002",
+      "price": {
+        "amount": 5000,
+        "currency": "JPY"
+      },
+      "startsAt": "2026-10-20T12:00:00Z",
+      "endsAt": "2026-11-08T14:59:00Z",
+      "periodNote": "公式告知記載の税込価格・受注期間。在庫と現在の受付状態は未確認。",
+      "url": "https://store.paletteproject.jp/collections/pp-goods-ev20261020",
+      "status": "unknown",
+      "sourceRefs": [
+        "src-c-goods-2",
+        "src-c-sale-14"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "offer-000015",
+      "productId": "product-000015",
+      "campaignId": "campaign-000002",
+      "price": {
+        "amount": 9000,
+        "currency": "JPY"
+      },
+      "startsAt": "2026-10-20T12:00:00Z",
+      "endsAt": "2026-11-08T14:59:00Z",
+      "periodNote": "公式告知記載の税込価格・受注期間。在庫と現在の受付状態は未確認。",
+      "url": "https://store.paletteproject.jp/collections/pp-goods-ev20261020",
+      "status": "unknown",
+      "sourceRefs": [
+        "src-c-goods-2",
+        "src-c-sale-15"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "offer-000016",
+      "productId": "product-000016",
+      "campaignId": "campaign-000002",
+      "price": {
+        "amount": 6500,
+        "currency": "JPY"
+      },
+      "startsAt": "2026-10-20T12:00:00Z",
+      "endsAt": "2026-11-08T14:59:00Z",
+      "periodNote": "公式告知記載の税込価格・受注期間。在庫と現在の受付状態は未確認。",
+      "url": "https://store.paletteproject.jp/collections/pp-goods-ev20261020",
+      "status": "unknown",
+      "sourceRefs": [
+        "src-c-goods-2",
+        "src-c-sale-16"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "offer-000017",
+      "productId": "product-000017",
+      "campaignId": "campaign-000002",
+      "price": {
+        "amount": 700,
+        "currency": "JPY"
+      },
+      "startsAt": "2026-10-20T12:00:00Z",
+      "endsAt": "2026-11-08T14:59:00Z",
+      "periodNote": "公式告知記載の税込価格・受注期間。在庫と現在の受付状態は未確認。",
+      "url": "https://store.paletteproject.jp/collections/pp-goods-ev20261020",
+      "status": "unknown",
+      "sourceRefs": [
+        "src-c-goods-2",
+        "src-c-sale-17"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "offer-000018",
+      "productId": "product-000018",
+      "campaignId": "campaign-000002",
+      "price": {
+        "amount": 11200,
+        "currency": "JPY"
+      },
+      "startsAt": "2026-10-20T12:00:00Z",
+      "endsAt": "2026-11-08T14:59:00Z",
+      "periodNote": "公式告知記載の税込価格・受注期間。在庫と現在の受付状態は未確認。",
+      "url": "https://store.paletteproject.jp/collections/pp-goods-ev20261020",
+      "status": "unknown",
+      "sourceRefs": [
+        "src-c-goods-2",
+        "src-c-sale-18"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "offer-000019",
+      "productId": "product-000019",
+      "campaignId": "campaign-000002",
+      "price": {
+        "amount": 1000,
+        "currency": "JPY"
+      },
+      "startsAt": "2026-10-20T12:00:00Z",
+      "endsAt": "2026-11-08T14:59:00Z",
+      "periodNote": "公式告知記載の税込価格・受注期間。在庫と現在の受付状態は未確認。",
+      "url": "https://store.paletteproject.jp/collections/pp-goods-ev20261020",
+      "status": "unknown",
+      "sourceRefs": [
+        "src-c-goods-2",
+        "src-c-sale-19"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "offer-000020",
+      "productId": "product-000020",
+      "campaignId": "campaign-000003",
+      "price": {
+        "amount": 3500,
+        "currency": "JPY"
+      },
+      "startsAt": "2026-09-27T12:00:00Z",
+      "endsAt": "2026-10-07T14:59:00Z",
+      "periodNote": "公式告知記載の税込価格・受注期間。在庫と現在の受付状態は未確認。",
+      "url": "https://store.paletteproject.jp/products/ktmay-goods-20260927",
+      "status": "unknown",
+      "sourceRefs": [
+        "src-c-goods-3",
+        "src-c-sale-20"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "offer-000021",
+      "productId": "product-000021",
+      "campaignId": "campaign-000003",
+      "price": {
+        "amount": 3300,
+        "currency": "JPY"
+      },
+      "startsAt": "2026-09-27T12:00:00Z",
+      "endsAt": "2026-10-07T14:59:00Z",
+      "periodNote": "公式告知記載の税込価格・受注期間。在庫と現在の受付状態は未確認。",
+      "url": "https://store.paletteproject.jp/products/ktmay-goods-20260927",
+      "status": "unknown",
+      "sourceRefs": [
+        "src-c-goods-3",
+        "src-c-sale-21"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "offer-000022",
+      "productId": "product-000022",
+      "campaignId": "campaign-000003",
+      "price": {
+        "amount": 1200,
+        "currency": "JPY"
+      },
+      "startsAt": "2026-09-27T12:00:00Z",
+      "endsAt": "2026-10-07T14:59:00Z",
+      "periodNote": "公式告知記載の税込価格・受注期間。在庫と現在の受付状態は未確認。",
+      "url": "https://store.paletteproject.jp/products/ktmay-goods-20260927",
+      "status": "unknown",
+      "sourceRefs": [
+        "src-c-goods-3",
+        "src-c-sale-22"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "offer-000023",
+      "productId": "product-000023",
+      "campaignId": "campaign-000003",
+      "price": {
+        "amount": 3000,
+        "currency": "JPY"
+      },
+      "startsAt": "2026-09-27T12:00:00Z",
+      "endsAt": "2026-10-07T14:59:00Z",
+      "periodNote": "公式告知記載の税込価格・受注期間。在庫と現在の受付状態は未確認。",
+      "url": "https://store.paletteproject.jp/products/ktmay-goods-20260927",
+      "status": "unknown",
+      "sourceRefs": [
+        "src-c-goods-3",
+        "src-c-sale-23"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "offer-000024",
+      "productId": "product-000024",
+      "campaignId": "campaign-000003",
+      "price": {
+        "amount": 1200,
+        "currency": "JPY"
+      },
+      "startsAt": "2026-09-27T12:00:00Z",
+      "endsAt": "2026-10-07T14:59:00Z",
+      "periodNote": "公式告知記載の税込価格・受注期間。在庫と現在の受付状態は未確認。",
+      "url": "https://store.paletteproject.jp/products/ktmay-goods-20260927",
+      "status": "unknown",
+      "sourceRefs": [
+        "src-c-goods-3",
+        "src-c-sale-24"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "offer-000025",
+      "productId": "product-000025",
+      "campaignId": "campaign-000003",
+      "price": {
+        "amount": 12000,
+        "currency": "JPY"
+      },
+      "startsAt": "2026-09-27T12:00:00Z",
+      "endsAt": "2026-10-07T14:59:00Z",
+      "periodNote": "公式告知記載の税込価格・受注期間。在庫と現在の受付状態は未確認。",
+      "url": "https://store.paletteproject.jp/products/ktmay-goods-20260927",
+      "status": "unknown",
+      "sourceRefs": [
+        "src-c-goods-3",
+        "src-c-sale-25"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "offer-000026",
+      "productId": "product-000026",
+      "campaignId": "campaign-000003",
+      "price": {
+        "amount": 17000,
+        "currency": "JPY"
+      },
+      "startsAt": "2026-09-28T12:00:00Z",
+      "endsAt": "2026-09-29T12:00:00Z",
+      "periodNote": "公式告知記載の税込価格・受注期間。在庫と現在の受付状態は未確認。",
+      "url": "https://paletteproject.booth.pm/items/8740582",
+      "status": "unknown",
+      "sourceRefs": [
+        "src-c-goods-3",
+        "src-c-sale-26"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "offer-000027",
+      "productId": "product-000027",
+      "campaignId": "campaign-000004",
+      "price": {
+        "amount": 4000,
+        "currency": "JPY"
+      },
+      "startsAt": "2026-09-05T12:00:00Z",
+      "endsAt": "2026-09-15T14:59:00Z",
+      "periodNote": "公式告知記載の税込価格・受注期間。在庫と現在の受付状態は未確認。",
+      "url": "https://store.paletteproject.jp/",
+      "status": "unknown",
+      "sourceRefs": [
+        "src-c-goods-4",
+        "src-c-sale-27"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "offer-000028",
+      "productId": "product-000028",
+      "campaignId": "campaign-000004",
+      "price": {
+        "amount": 600,
+        "currency": "JPY"
+      },
+      "startsAt": "2026-09-05T12:00:00Z",
+      "endsAt": "2026-09-15T14:59:00Z",
+      "periodNote": "公式告知記載の税込価格・受注期間。在庫と現在の受付状態は未確認。",
+      "url": "https://store.paletteproject.jp/",
+      "status": "unknown",
+      "sourceRefs": [
+        "src-c-goods-4",
+        "src-c-sale-28"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "offer-000029",
+      "productId": "product-000029",
+      "campaignId": "campaign-000004",
+      "price": {
+        "amount": 2000,
+        "currency": "JPY"
+      },
+      "startsAt": "2026-09-05T12:00:00Z",
+      "endsAt": "2026-09-15T14:59:00Z",
+      "periodNote": "公式告知記載の税込価格・受注期間。在庫と現在の受付状態は未確認。",
+      "url": "https://store.paletteproject.jp/",
+      "status": "unknown",
+      "sourceRefs": [
+        "src-c-goods-4",
+        "src-c-sale-29"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "offer-000030",
+      "productId": "product-000030",
+      "campaignId": "campaign-000004",
+      "price": {
+        "amount": 23800,
+        "currency": "JPY"
+      },
+      "startsAt": "2026-09-05T12:00:00Z",
+      "endsAt": "2026-09-15T14:59:00Z",
+      "periodNote": "公式告知記載の税込価格・受注期間。在庫と現在の受付状態は未確認。",
+      "url": "https://store.paletteproject.jp/",
+      "status": "unknown",
+      "sourceRefs": [
+        "src-c-goods-4",
+        "src-c-sale-30"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "offer-000031",
+      "productId": "product-000031",
+      "campaignId": "campaign-000005",
+      "price": {
+        "amount": 3500,
+        "currency": "JPY"
+      },
+      "startsAt": "2026-09-01T12:00:00Z",
+      "endsAt": null,
+      "periodNote": "公式告知記載の税込価格・受注期間。在庫と現在の受付状態は未確認。",
+      "url": "https://store.paletteproject.jp/",
+      "status": "unknown",
+      "sourceRefs": [
+        "src-c-goods-5",
+        "src-c-sale-31"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "offer-000032",
+      "productId": "product-000032",
+      "campaignId": "campaign-000005",
+      "price": {
+        "amount": 3500,
+        "currency": "JPY"
+      },
+      "startsAt": "2026-09-01T12:00:00Z",
+      "endsAt": null,
+      "periodNote": "公式告知記載の税込価格・受注期間。在庫と現在の受付状態は未確認。",
+      "url": "https://store.paletteproject.jp/",
+      "status": "unknown",
+      "sourceRefs": [
+        "src-c-goods-5",
+        "src-c-sale-32"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "offer-000033",
+      "productId": "product-000033",
+      "campaignId": "campaign-000006",
+      "price": {
+        "amount": 2900,
+        "currency": "JPY"
+      },
+      "startsAt": "2026-08-27T12:00:00Z",
+      "endsAt": "2026-09-06T14:59:00Z",
+      "periodNote": "公式告知記載の税込価格・受注期間。在庫と現在の受付状態は未確認。",
+      "url": "https://store.paletteproject.jp/products/ntngm-goods-20260827",
+      "status": "unknown",
+      "sourceRefs": [
+        "src-c-goods-6",
+        "src-c-sale-33"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "offer-000034",
+      "productId": "product-000034",
+      "campaignId": "campaign-000006",
+      "price": {
+        "amount": 4000,
+        "currency": "JPY"
+      },
+      "startsAt": "2026-08-27T12:00:00Z",
+      "endsAt": "2026-09-06T14:59:00Z",
+      "periodNote": "公式告知記載の税込価格・受注期間。在庫と現在の受付状態は未確認。",
+      "url": "https://store.paletteproject.jp/products/ntngm-goods-20260827",
+      "status": "unknown",
+      "sourceRefs": [
+        "src-c-goods-6",
+        "src-c-sale-34"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "offer-000035",
+      "productId": "product-000035",
+      "campaignId": "campaign-000006",
+      "price": {
+        "amount": 3500,
+        "currency": "JPY"
+      },
+      "startsAt": "2026-08-27T12:00:00Z",
+      "endsAt": "2026-09-06T14:59:00Z",
+      "periodNote": "公式告知記載の税込価格・受注期間。在庫と現在の受付状態は未確認。",
+      "url": "https://store.paletteproject.jp/products/ntngm-goods-20260827",
+      "status": "unknown",
+      "sourceRefs": [
+        "src-c-goods-6",
+        "src-c-sale-35"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "offer-000036",
+      "productId": "product-000036",
+      "campaignId": "campaign-000006",
+      "price": {
+        "amount": 1400,
+        "currency": "JPY"
+      },
+      "startsAt": "2026-08-27T12:00:00Z",
+      "endsAt": "2026-09-06T14:59:00Z",
+      "periodNote": "公式告知記載の税込価格・受注期間。在庫と現在の受付状態は未確認。",
+      "url": "https://store.paletteproject.jp/products/ntngm-goods-20260827",
+      "status": "unknown",
+      "sourceRefs": [
+        "src-c-goods-6",
+        "src-c-sale-36"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "offer-000037",
+      "productId": "product-000037",
+      "campaignId": "campaign-000006",
+      "price": {
+        "amount": 1400,
+        "currency": "JPY"
+      },
+      "startsAt": "2026-08-27T12:00:00Z",
+      "endsAt": "2026-09-06T14:59:00Z",
+      "periodNote": "公式告知記載の税込価格・受注期間。在庫と現在の受付状態は未確認。",
+      "url": "https://store.paletteproject.jp/products/ntngm-goods-20260827",
+      "status": "unknown",
+      "sourceRefs": [
+        "src-c-goods-6",
+        "src-c-sale-37"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "offer-000038",
+      "productId": "product-000038",
+      "campaignId": "campaign-000006",
+      "price": {
+        "amount": 1200,
+        "currency": "JPY"
+      },
+      "startsAt": "2026-08-27T12:00:00Z",
+      "endsAt": "2026-09-06T14:59:00Z",
+      "periodNote": "公式告知記載の税込価格・受注期間。在庫と現在の受付状態は未確認。",
+      "url": "https://store.paletteproject.jp/products/ntngm-goods-20260827",
+      "status": "unknown",
+      "sourceRefs": [
+        "src-c-goods-6",
+        "src-c-sale-38"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "offer-000039",
+      "productId": "product-000039",
+      "campaignId": "campaign-000006",
+      "price": {
+        "amount": 600,
+        "currency": "JPY"
+      },
+      "startsAt": "2026-08-27T12:00:00Z",
+      "endsAt": "2026-09-06T14:59:00Z",
+      "periodNote": "公式告知記載の税込価格・受注期間。在庫と現在の受付状態は未確認。",
+      "url": "https://store.paletteproject.jp/products/ntngm-goods-20260827",
+      "status": "unknown",
+      "sourceRefs": [
+        "src-c-goods-6",
+        "src-c-sale-39"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "offer-000040",
+      "productId": "product-000040",
+      "campaignId": "campaign-000006",
+      "price": {
+        "amount": 15000,
+        "currency": "JPY"
+      },
+      "startsAt": "2026-08-27T12:00:00Z",
+      "endsAt": "2026-09-06T14:59:00Z",
+      "periodNote": "公式告知記載の税込価格・受注期間。在庫と現在の受付状態は未確認。",
+      "url": "https://store.paletteproject.jp/products/ntngm-goods-20260827",
+      "status": "unknown",
+      "sourceRefs": [
+        "src-c-goods-6",
+        "src-c-sale-40"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "offer-000041",
+      "productId": "product-000041",
+      "campaignId": "campaign-000006",
+      "price": {
+        "amount": 20000,
+        "currency": "JPY"
+      },
+      "startsAt": "2026-08-28T12:00:00Z",
+      "endsAt": "2026-08-29T12:00:00Z",
+      "periodNote": "公式告知記載の税込価格・受注期間。在庫と現在の受付状態は未確認。",
+      "url": "https://paletteproject.booth.pm/items/8736841",
+      "status": "unknown",
+      "sourceRefs": [
+        "src-c-goods-6",
+        "src-c-sale-41"
+      ],
+      "visibility": "public"
+    }
+  ]
 }

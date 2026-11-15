@@ -9,3 +9,7 @@ _site/
 # Private runtime checkpoints are restored from CI cache, never published/committed.
 ops/proposals/runtime/
 ops/registration/runtime/
+
+ops/official-discovery/runtime*.json
+
+/node_modules

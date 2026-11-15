@@ -34,7 +34,25 @@
         "src-original-5jja39-69g8",
         "src-music-e0jemzb45s8"
       ],
-      "visibility": "public"
+      "visibility": "public",
+      "externalIds": [
+        {
+          "provider": "musicbrainz",
+          "entityType": "recording",
+          "id": "47377af8-f295-4480-a36d-84b05938dd67",
+          "sourceUrl": "https://musicbrainz.org/recording/47377af8-f295-4480-a36d-84b05938dd67",
+          "status": "verified",
+          "checkedAt": "2026-11-15T18:13:23Z"
+        },
+        {
+          "provider": "musicbrainz",
+          "entityType": "work",
+          "id": "19671e69-4607-40d1-a70a-3a13c8d343c3",
+          "sourceUrl": "https://musicbrainz.org/work/19671e69-4607-40d1-a70a-3a13c8d343c3",
+          "status": "verified",
+          "checkedAt": "2026-11-15T18:13:23Z"
+        }
+      ]
     },
     {
       "id": "song-000003",

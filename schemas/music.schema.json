@@ -111,6 +111,50 @@
               "type": "string",
               "format": "public-url"
             }
+          },
+          "externalIds": {
+            "type": "array",
+            "maxItems": 20,
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "provider",
+                "entityType",
+                "id",
+                "sourceUrl",
+                "status",
+                "checkedAt"
+              ],
+              "properties": {
+                "provider": {
+                  "const": "musicbrainz"
+                },
+                "entityType": {
+                  "enum": [
+                    "work",
+                    "recording",
+                    "release-group",
+                    "artist"
+                  ]
+                },
+                "id": {
+                  "type": "string",
+                  "pattern": "^[0-9a-f-]{36}$"
+                },
+                "sourceUrl": {
+                  "type": "string",
+                  "format": "public-url"
+                },
+                "status": {
+                  "const": "verified"
+                },
+                "checkedAt": {
+                  "type": "string",
+                  "format": "date-time"
+                }
+              }
+            }
           }
         },
         "allOf": [

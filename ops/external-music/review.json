@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "baseHash": "554ec57dbec234f6511ff93eb69f9ea950841cca907617c93aae6925e5c90f1c",
+  "resultHash": "2e27c5744442a4548d0133ff655c16a0682d071912454b50be1edc3104c2af2c",
+  "allocated": {},
+  "videos": [],
+  "patches": [
+    {
+      "master": "music",
+      "collection": "songs",
+      "id": "song-000002",
+      "expectedHash": "15288c71645fa19ecda003802b41eb90044c1f4bd1e0a75967095c577e1b34b9",
+      "value": {
+        "id": "song-000002",
+        "title": "レクイエム",
+        "originalArtists": [
+          "Kanaria",
+          "星街すいせい"
+        ],
+        "aliases": [],
+        "readings": [],
+        "identityUrl": "https://www.youtube.com/watch?v=5Jja39-69G8",
+        "artistEvidence": "original_source",
+        "sourceRefs": [
+          "src-original-5jja39-69g8",
+          "src-music-e0jemzb45s8"
+        ],
+        "visibility": "public",
+        "externalIds": [
+          {
+            "provider": "musicbrainz",
+            "entityType": "recording",
+            "id": "47377af8-f295-4480-a36d-84b05938dd67",
+            "sourceUrl": "https://musicbrainz.org/recording/47377af8-f295-4480-a36d-84b05938dd67",
+            "status": "verified",
+            "checkedAt": "2026-11-15T18:13:23Z"
+          },
+          {
+            "provider": "musicbrainz",
+            "entityType": "work",
+            "id": "19671e69-4607-40d1-a70a-3a13c8d343c3",
+            "sourceUrl": "https://musicbrainz.org/work/19671e69-4607-40d1-a70a-3a13c8d343c3",
+            "status": "verified",
+            "checkedAt": "2026-11-15T18:13:23Z"
+          }
+        ]
+      },
+      "evidenceHash": "b13719aab9af7511ffdb2fe8822dfa490be7cc2c210d52bf819873f6b3453960",
+      "evidenceHistory": [],
+      "approvals": {
+        "value": {
+          "status": "verified",
+          "evidenceHash": "b13719aab9af7511ffdb2fe8822dfa490be7cc2c210d52bf819873f6b3453960",
+          "valueHash": "580c107139165d8b99a7cb448a6cfed16cd37c8c69f4ac5e3eda74f17dfaa919",
+          "checkedAt": "2026-11-15T18:13:23Z",
+          "sourceUrl": "https://www.youtube.com/watch?v=5Jja39-69G8"
+        }
+      }
+    }
+  ]
+}

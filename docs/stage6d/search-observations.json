@@ -1,0 +1,96 @@
+{
+  "initial": [
+    {
+      "title": "ブラック★ロックシューター",
+      "artist": "supercell",
+      "status": 503,
+      "candidates": []
+    },
+    {
+      "title": "エアロピクルス",
+      "artist": "コメアニメ",
+      "status": 503,
+      "candidates": []
+    },
+    {
+      "title": "エゴロック",
+      "artist": "すりぃ",
+      "status": 200,
+      "count": 4,
+      "candidates": [
+        {
+          "id": "f56a2d49-9299-420f-a523-db5e5c503555",
+          "title": "エゴロック",
+          "score": 100,
+          "artists": [
+            "すりぃ"
+          ]
+        },
+        {
+          "id": "30a6fec9-fef7-4309-8801-4fcad26d3587",
+          "title": "エゴロック",
+          "score": 100,
+          "artists": [
+            "すりぃ"
+          ]
+        },
+        {
+          "id": "6f8eb830-4f88-45c1-926c-6a29b7408c11",
+          "title": "エゴロック",
+          "score": 75,
+          "artists": [
+            "すりぃ",
+            "鏡音レン V4X (Power)"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "君の知らない物語",
+      "artist": "supercell",
+      "status": 503,
+      "candidates": []
+    }
+  ],
+  "followup": [
+    {
+      "title": "レクイエム",
+      "status": 503
+    },
+    {
+      "title": "ブラック★ロックシューター",
+      "status": 503
+    },
+    {
+      "title": "エアロピクルス",
+      "status": 200,
+      "candidates": [
+        {
+          "id": "93409307-993a-4172-9239-f1710b22a25f",
+          "title": "エアロピクルス",
+          "score": 100,
+          "artists": [
+            "コメアニメ"
+          ]
+        }
+      ]
+    }
+  ],
+  "decisions": [
+    {
+      "songId": "song-000021",
+      "status": "hold",
+      "reason": "No original/version correspondence established; HTTP503"
+    },
+    {
+      "songId": "song-000045",
+      "status": "hold",
+      "reason": "One score100 recording candidate is not proof of karaoke original/version"
+    },
+    {
+      "songId": "song-000049",
+      "status": "hold",
+      "reason": "Four recordings returned; studio/live/arrangement must not be collapsed"
+    }
+  ]
+}

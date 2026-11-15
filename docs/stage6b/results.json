@@ -50,14 +50,6 @@
       "reason": "commentsDisabled"
     }
   ],
-  "confirmedPublicSources": [
-    "w7E-oj1HOfc",
-    "B_EKfTqecQw",
-    "R3PYpVPHF54",
-    "xfLfXL-X9zs",
-    "nNyroittCT0",
-    "TV7XXZDZQ0g"
-  ],
   "notice": "Counts are candidate evidence, not verified songs. Comment-only entries remain unpublished. Duplicate/conflict counts depend on conservative title+artist+position grouping; not exhaustive.",
   "confirmedKaraokes": 17,
   "commentOnlyArchivesRegisteredWithoutPerformances": 12,
@@ -74,5 +66,32 @@
     "increaseBytes": 337062,
     "topHtmlUnchanged": true
   },
-  "existingKaraokeCompletenessUpdates": 1
+  "existingKaraokeCompletenessUpdates": 1,
+  "setlistAndMusicSources": [
+    "w7E-oj1HOfc",
+    "B_EKfTqecQw",
+    "R3PYpVPHF54",
+    "xfLfXL-X9zs",
+    "nNyroittCT0",
+    "TV7XXZDZQ0g"
+  ],
+  "archiveSources": [
+    "w7E-oj1HOfc",
+    "B_EKfTqecQw",
+    "R3PYpVPHF54",
+    "xfLfXL-X9zs",
+    "00sa1oSLwXY",
+    "fV0_OrZus_Y",
+    "Gtj6VUcjVGM",
+    "IJM1zTYzTDA",
+    "jQ-HWJJn4nc",
+    "KURWSmjpxOM",
+    "Mr9PnfIbkBk",
+    "NPgTbr_P2VE",
+    "ovst6AkWG5c",
+    "USO9u5UQ4GY",
+    "Ux0D79_w9uc",
+    "X4ka0PABvb0",
+    "ZkuFxRNvUPA"
+  ]
 }

@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "sources": [
+    {
+      "id": "src-event-awa-reveal",
+      "kind": "official",
+      "url": "https://www.youtube.com/watch?v=-kR7Kqqy6Vs",
+      "checkedAt": "2026-11-14T23:02:16.705410Z"
+    },
+    {
+      "id": "src-event-luminous",
+      "kind": "official",
+      "url": "https://paletteproject.jp/makeitluminous/",
+      "checkedAt": "2026-11-14T23:06:14.974778Z"
+    }
+  ],
+  "videos": [
+    {
+      "youtubeId": "-kR7Kqqy6Vs",
+      "channelId": "UCXI0W_Os-BCIngpCb1YnOow",
+      "title": "【新髪型お披露目】初めての新髪型🫧✨️スクショタイムもあるよ📸【天透あわ/パレデミア学園】",
+      "publishedAt": "2026-11-14T18:52:21Z",
+      "startedAt": "2026-11-14T06:00:26Z",
+      "endedAt": "2026-11-14T06:32:23Z",
+      "durationSeconds": 1925,
+      "availability": "public",
+      "sourceRefs": [
+        "src-event-awa-reveal"
+      ],
+      "visibility": "public"
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+{
+  "version": "2.6.0",
+  "changes": ["イベント一覧・詳細ページを追加しました。"],
+  "featurePaths": ["/events/"]
+}

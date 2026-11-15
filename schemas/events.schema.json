@@ -1,0 +1,274 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "events"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": 1
+    },
+    "events": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "title",
+          "type",
+          "starts",
+          "ends",
+          "timing",
+          "talentIds",
+          "lineupComplete",
+          "organizerIds",
+          "relatedOrganizationIds",
+          "groupIds",
+          "announcementUrl",
+          "videoIds",
+          "streamUrls",
+          "format",
+          "venue",
+          "fee",
+          "summary",
+          "slots",
+          "sourceRefs",
+          "visibility"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^evt-[0-9]{6}$"
+          },
+          "title": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 240
+          },
+          "type": {
+            "enum": [
+              "concert",
+              "relay",
+              "reveal_3d",
+              "debut",
+              "anniversary_stream",
+              "special",
+              "other"
+            ]
+          },
+          "starts": {
+            "$ref": "https://www.jigdule.jp/schemas/feature-common#/definitions/time"
+          },
+          "ends": {
+            "$ref": "https://www.jigdule.jp/schemas/feature-common#/definitions/time"
+          },
+          "timing": {
+            "enum": [
+              "scheduled",
+              "actual",
+              "unknown"
+            ]
+          },
+          "talentIds": {
+            "type": "array",
+            "uniqueItems": true,
+            "items": {
+              "type": "string",
+              "pattern": "^tal-[0-9]{6}$"
+            }
+          },
+          "lineupComplete": {
+            "type": "boolean"
+          },
+          "organizerIds": {
+            "type": "array",
+            "uniqueItems": true,
+            "items": {
+              "type": "string",
+              "pattern": "^org-[0-9]{6}$"
+            }
+          },
+          "relatedOrganizationIds": {
+            "type": "array",
+            "uniqueItems": true,
+            "items": {
+              "type": "string",
+              "pattern": "^org-[0-9]{6}$"
+            }
+          },
+          "groupIds": {
+            "type": "array",
+            "uniqueItems": true,
+            "items": {
+              "type": "string",
+              "pattern": "^group-[0-9]{6}$"
+            }
+          },
+          "announcementUrl": {
+            "type": "string",
+            "format": "public-url"
+          },
+          "videoIds": {
+            "type": "array",
+            "uniqueItems": true,
+            "items": {
+              "type": "string",
+              "pattern": "^[A-Za-z0-9_-]{11}$"
+            }
+          },
+          "streamUrls": {
+            "type": "array",
+            "uniqueItems": true,
+            "items": {
+              "type": "string",
+              "format": "public-url"
+            }
+          },
+          "format": {
+            "enum": [
+              "online",
+              "onsite",
+              "hybrid",
+              "unknown"
+            ]
+          },
+          "venue": {
+            "anyOf": [
+              {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 240
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "fee": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "amount",
+              "currency",
+              "note"
+            ],
+            "properties": {
+              "amount": {
+                "anyOf": [
+                  {
+                    "type": "number",
+                    "minimum": 0
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "currency": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "pattern": "^[A-Z]{3}$"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "note": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 400
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              }
+            }
+          },
+          "summary": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 1200
+          },
+          "slots": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "id",
+                "title",
+                "starts",
+                "ends",
+                "talentIds",
+                "videoIds",
+                "streamUrls",
+                "sourceRefs"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string",
+                  "pattern": "^slot-[0-9]{6}$"
+                },
+                "title": {
+                  "type": "string",
+                  "minLength": 1,
+                  "maxLength": 240
+                },
+                "starts": {
+                  "$ref": "https://www.jigdule.jp/schemas/feature-common#/definitions/time"
+                },
+                "ends": {
+                  "$ref": "https://www.jigdule.jp/schemas/feature-common#/definitions/time"
+                },
+                "talentIds": {
+                  "type": "array",
+                  "uniqueItems": true,
+                  "items": {
+                    "type": "string",
+                    "pattern": "^tal-[0-9]{6}$"
+                  }
+                },
+                "videoIds": {
+                  "type": "array",
+                  "uniqueItems": true,
+                  "items": {
+                    "type": "string",
+                    "pattern": "^[A-Za-z0-9_-]{11}$"
+                  }
+                },
+                "streamUrls": {
+                  "type": "array",
+                  "uniqueItems": true,
+                  "items": {
+                    "type": "string",
+                    "format": "public-url"
+                  }
+                },
+                "sourceRefs": {
+                  "$ref": "https://www.jigdule.jp/schemas/feature-common#/definitions/refs"
+                }
+              }
+            }
+          },
+          "sourceRefs": {
+            "$ref": "https://www.jigdule.jp/schemas/feature-common#/definitions/refs"
+          },
+          "visibility": {
+            "enum": [
+              "public",
+              "draft"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "$schema": "http://json-schema.org/draft-07/schema#"
+}

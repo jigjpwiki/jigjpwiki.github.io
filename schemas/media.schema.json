@@ -1,0 +1,115 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "sources",
+    "videos"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": 1
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "$ref": "https://www.jigdule.jp/schemas/feature-common#/definitions/source"
+      }
+    },
+    "videos": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "youtubeId",
+          "channelId",
+          "title",
+          "publishedAt",
+          "startedAt",
+          "endedAt",
+          "durationSeconds",
+          "availability",
+          "sourceRefs",
+          "visibility"
+        ],
+        "properties": {
+          "youtubeId": {
+            "type": "string",
+            "pattern": "^[A-Za-z0-9_-]{11}$"
+          },
+          "channelId": {
+            "type": "string",
+            "pattern": "^UC[\\w-]{22}$"
+          },
+          "title": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 500
+          },
+          "publishedAt": {
+            "anyOf": [
+              {
+                "type": "string",
+                "format": "date-time"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "startedAt": {
+            "anyOf": [
+              {
+                "type": "string",
+                "format": "date-time"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "endedAt": {
+            "anyOf": [
+              {
+                "type": "string",
+                "format": "date-time"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "durationSeconds": {
+            "anyOf": [
+              {
+                "type": "integer",
+                "minimum": 0
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "availability": {
+            "enum": [
+              "public",
+              "unavailable",
+              "unknown"
+            ]
+          },
+          "sourceRefs": {
+            "$ref": "https://www.jigdule.jp/schemas/feature-common#/definitions/refs"
+          },
+          "visibility": {
+            "enum": [
+              "public",
+              "draft"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "$schema": "http://json-schema.org/draft-07/schema#"
+}

@@ -1,0 +1,123 @@
+{
+  "inputCandidates": 69,
+  "requestedVideos": 68,
+  "returnedVideos": 67,
+  "unreturnedVideoIds": [
+    "HMgIYeuPi98"
+  ],
+  "commentEligibleVideos": 32,
+  "commentRequests": 32,
+  "commentsInspected": 189,
+  "commentsWithSetlists": 25,
+  "commentVideosWithSetlists": 17,
+  "commentRows": 361,
+  "commentOnlyVideos": 13,
+  "commentOnlyRows": 293,
+  "officialRows": 55,
+  "duplicateEvidence": 78,
+  "conflictingGroups": 32,
+  "officialCommentConflictGroups": 3,
+  "commentRowsAgreeingOfficial": 56,
+  "commentDerivedPublicPerformances": 0,
+  "newSongs": 49,
+  "newMusicVideos": 2,
+  "newKaraokes": 15,
+  "newPerformances": 52,
+  "existingPerformanceUpdates": 0,
+  "existingKaraokeAddedPerformances": 28,
+  "publicTotals": {
+    "songs": 54,
+    "musicVideos": 4,
+    "karaokes": 17,
+    "performances": 55
+  },
+  "api": {
+    "videosList": 6,
+    "commentThreadsList": 32,
+    "commentsList": 0,
+    "initialRequests": 34,
+    "identityCorrectionRequests": 4,
+    "totalRequests": 38,
+    "estimatedUnits": 38
+  },
+  "expectedUnavailableComments": [
+    {
+      "youtubeId": "Cw94wqexG54",
+      "httpStatus": 403,
+      "reason": "commentsDisabled"
+    },
+    {
+      "youtubeId": "sFwe-eg_-Zo",
+      "httpStatus": 403,
+      "reason": "commentsDisabled"
+    }
+  ],
+  "notice": "Counts are candidate evidence, not verified songs. Comment-only entries remain unpublished. Duplicate/conflict counts depend on conservative title+artist+position grouping; not exhaustive.",
+  "confirmedKaraokes": 17,
+  "commentOnlyArchivesRegisteredWithoutPerformances": 12,
+  "performanceWithUnresolvedSongIdentity": 1,
+  "publicArtifact": {
+    "before": {
+      "files": 311,
+      "bytes": 37929949
+    },
+    "after": {
+      "files": 378,
+      "bytes": 38267011
+    },
+    "increaseBytes": 337062,
+    "topHtmlUnchanged": true
+  },
+  "existingKaraokeCompletenessUpdates": 1,
+  "setlistAndMusicSources": [
+    "w7E-oj1HOfc",
+    "B_EKfTqecQw",
+    "R3PYpVPHF54",
+    "xfLfXL-X9zs",
+    "nNyroittCT0",
+    "TV7XXZDZQ0g"
+  ],
+  "archiveSources": [
+    "w7E-oj1HOfc",
+    "B_EKfTqecQw",
+    "R3PYpVPHF54",
+    "xfLfXL-X9zs",
+    "00sa1oSLwXY",
+    "fV0_OrZus_Y",
+    "Gtj6VUcjVGM",
+    "IJM1zTYzTDA",
+    "jQ-HWJJn4nc",
+    "KURWSmjpxOM",
+    "Mr9PnfIbkBk",
+    "NPgTbr_P2VE",
+    "ovst6AkWG5c",
+    "USO9u5UQ4GY",
+    "Ux0D79_w9uc",
+    "X4ka0PABvb0",
+    "ZkuFxRNvUPA"
+  ],
+  "newSongRecords": 52,
+  "draftSongRecords": 3,
+  "unresolvedPerformanceWithSongIdNull": 3,
+  "identityCorrection": {
+    "examinedNewSongs": 50,
+    "newVerifiedOriginals": 47,
+    "examinedLegacySongs": 3,
+    "legacyVerifiedOriginals": 3,
+    "songRecords": 57,
+    "publicSongs": 54,
+    "performances": 55,
+    "linkedPerformances": 52,
+    "idsReassigned": 0,
+    "originalSourcesPreserved": true,
+    "beforeArtifact": {
+      "files": 378,
+      "bytes": 38266030
+    },
+    "afterArtifact": {
+      "files": 375,
+      "bytes": 38272378
+    },
+    "additionalApiRequests": 4
+  }
+}

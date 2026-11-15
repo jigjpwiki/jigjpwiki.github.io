@@ -1,0 +1,884 @@
+{
+  "checkedAt": "2026-11-15T17:08:01.057Z",
+  "reviewed": 53,
+  "newSongsReviewed": 50,
+  "legacySongsReviewed": 3,
+  "verified": 50,
+  "unresolved": [
+    "song-000021",
+    "song-000045",
+    "song-000049"
+  ],
+  "allSongRecords": 57,
+  "publicSongs": 54,
+  "performances": 55,
+  "linkedPerformances": 52,
+  "unresolvedPerformances": [
+    "perf-000019",
+    "perf-000044",
+    "perf-000049"
+  ],
+  "preservedIds": true,
+  "newlyResolvedPerformance": "perf-000037",
+  "apiRequests": 4,
+  "rows": [
+    {
+      "id": "song-000003",
+      "title": "金曜日のおはよう",
+      "beforeUrl": "https://www.youtube.com/watch?v=w7E-oj1HOfc&t=485s",
+      "previousSourceRefs": [
+        "src-song-setlist-3",
+        "src-karaoke-1"
+      ],
+      "status": "verified",
+      "canonicalUrl": "https://www.youtube.com/watch?v=Nm0R9kIGjbs",
+      "publisher": "NBCUniversal Anime/Music",
+      "kind": "official_mv",
+      "checkedAt": "2026-11-15T17:08:01.057Z",
+      "observedTitle": "┗|∵|┓金曜日のおはよう／HoneyWorks feat.Gero",
+      "verificationRoute": "official page/API metadata",
+      "directHttpStatus": 200
+    },
+    {
+      "id": "song-000004",
+      "title": "世界は恋に落ちている",
+      "beforeUrl": "https://www.youtube.com/watch?v=w7E-oj1HOfc&t=982s",
+      "previousSourceRefs": [
+        "src-song-setlist-4",
+        "src-karaoke-1"
+      ],
+      "status": "verified",
+      "canonicalUrl": "https://honeyworks.jp/release/cwhw_1stsg/",
+      "publisher": "honeyworks.jp",
+      "kind": "official_release",
+      "checkedAt": "2026-11-15T17:08:01.057Z",
+      "observedTitle": "世界は恋に落ちている | RELEASE | HoneyWorks Official web site",
+      "verificationRoute": "official page/API metadata",
+      "directHttpStatus": 200
+    },
+    {
+      "id": "song-000005",
+      "title": "すないぱー。",
+      "beforeUrl": "https://www.youtube.com/watch?v=w7E-oj1HOfc&t=1603s",
+      "previousSourceRefs": [
+        "src-song-setlist-5",
+        "src-karaoke-1"
+      ],
+      "status": "verified",
+      "canonicalUrl": "https://www.youtube.com/watch?v=nvQN56D8RYo",
+      "publisher": "『ユイカ』",
+      "kind": "official_mv",
+      "checkedAt": "2026-11-15T17:08:01.057Z",
+      "observedTitle": "すないぱー。 / 『ユイカ』【MV】",
+      "verificationRoute": "official page/API metadata",
+      "directHttpStatus": 200
+    },
+    {
+      "id": "song-000006",
+      "title": "好きだから。",
+      "beforeUrl": "https://www.youtube.com/watch?v=w7E-oj1HOfc&t=2143s",
+      "previousSourceRefs": [
+        "src-v6b-4b3d931d3c1016af"
+      ],
+      "status": "verified",
+      "canonicalUrl": "https://www.youtube.com/watch?v=eYAd4uDotF0",
+      "publisher": "『ユイカ』",
+      "kind": "official_mv",
+      "checkedAt": "2026-11-15T17:08:01.057Z",
+      "observedTitle": "好きだから。/ 『ユイカ』【MV】",
+      "verificationRoute": "official page/API metadata",
+      "directHttpStatus": 200
+    },
+    {
+      "id": "song-000007",
+      "title": "可愛いあの子が気にゐらない",
+      "beforeUrl": "https://www.youtube.com/watch?v=w7E-oj1HOfc&t=2577s",
+      "previousSourceRefs": [
+        "src-v6b-b71b4c0819e50081"
+      ],
+      "status": "verified",
+      "canonicalUrl": "https://narumiya-official.jp/news/005/",
+      "publisher": "narumiya-official.jp",
+      "kind": "official_release",
+      "checkedAt": "2026-11-15T17:08:01.057Z",
+      "observedTitle": "9/5(火)0:00～「可愛いあの子が気にゐらない」各DL/STREAMING配信開始 | なるみや／おねんねアカデミー",
+      "verificationRoute": "official page/API metadata",
+      "directHttpStatus": 200
+    },
+    {
+      "id": "song-000008",
+      "title": "さくらんぼ",
+      "beforeUrl": "https://www.youtube.com/watch?v=w7E-oj1HOfc&t=2852s",
+      "previousSourceRefs": [
+        "src-v6b-cb158bbb318600d1"
+      ],
+      "status": "verified",
+      "canonicalUrl": "https://avexnet.jp/release/20",
+      "publisher": "avexnet.jp",
+      "kind": "official_release",
+      "checkedAt": "2026-11-15T17:08:01.057Z",
+      "observedTitle": "さくらんぼ | リリース | エイベックス・ポータル",
+      "verificationRoute": "official page/API metadata",
+      "directHttpStatus": 200
+    },
+    {
+      "id": "song-000009",
+      "title": "小さな恋のうた",
+      "beforeUrl": "https://www.youtube.com/watch?v=w7E-oj1HOfc&t=3294s",
+      "previousSourceRefs": [
+        "src-v6b-2ab76ffd1fb84de9"
+      ],
+      "status": "verified",
+      "canonicalUrl": "https://www.youtube.com/watch?v=JoJ6lnF07U4",
+      "publisher": "MONGOL800 - Topic",
+      "kind": "official_release",
+      "checkedAt": "2026-11-15T17:08:01.057Z",
+      "observedTitle": "小さな恋のうた",
+      "verificationRoute": "official page/API metadata",
+      "directHttpStatus": 200
+    },
+    {
+      "id": "song-000010",
+      "title": "ハレ晴レユカイ",
+      "beforeUrl": "https://www.youtube.com/watch?v=w7E-oj1HOfc&t=3780s",
+      "previousSourceRefs": [
+        "src-v6b-7ed9ed852359ff44"
+      ],
+      "status": "verified",
+      "canonicalUrl": "https://akihata.jp/works/music/8124/",
+      "publisher": "akihata.jp",
+      "kind": "official_song_page",
+      "checkedAt": "2026-11-15T17:08:01.057Z",
+      "observedTitle": "AKI HATA official website",
+      "verificationRoute": "official page/API metadata",
+      "directHttpStatus": 200
+    },
+    {
+      "id": "song-000011",
+      "title": "God knows...",
+      "beforeUrl": "https://www.youtube.com/watch?v=w7E-oj1HOfc&t=4156s",
+      "previousSourceRefs": [
+        "src-v6b-cc12d719835b8fb9"
+      ],
+      "status": "verified",
+      "canonicalUrl": "https://catalog.bandainamcomusiclive.co.jp/release/63493/",
+      "publisher": "catalog.bandainamcomusiclive.co.jp",
+      "kind": "official_release",
+      "checkedAt": "2026-11-15T17:08:01.057Z",
+      "observedTitle": "バンダイナムコミュージックライブ　カタログサイト",
+      "verificationRoute": "official page/API metadata",
+      "directHttpStatus": 200
+    },
+    {
+      "id": "song-000012",
+      "title": "学園天国",
+      "beforeUrl": "https://www.youtube.com/watch?v=w7E-oj1HOfc&t=4714s",
+      "previousSourceRefs": [
+        "src-v6b-4a119580c6bcc840"
+      ],
+      "status": "verified",
+      "canonicalUrl": "https://www.universal-music.co.jp/finger5/products/uicz-6036/",
+      "publisher": "www.universal-music.co.jp",
+      "kind": "official_release",
+      "checkedAt": "2026-11-15T17:08:01.057Z",
+      "observedTitle": "ゴールデン☆ベスト フィンガー5[CD] - フィンガー5 - UNIVERSAL MUSIC JAPAN",
+      "verificationRoute": "official page/API metadata",
+      "directHttpStatus": 200
+    },
+    {
+      "id": "song-000013",
+      "title": "ふわふわ時間",
+      "beforeUrl": "https://www.youtube.com/watch?v=w7E-oj1HOfc&t=4974s",
+      "previousSourceRefs": [
+        "src-v6b-d0d12ad48b01ef9b"
+      ],
+      "status": "verified",
+      "canonicalUrl": "https://www.youtube.com/watch?v=I0xRbWqIohQ",
+      "publisher": "Houkago Teatime - Topic",
+      "kind": "official_release",
+      "checkedAt": "2026-11-15T17:08:01.057Z",
+      "observedTitle": "ふわふわ時間",
+      "verificationRoute": "official page/API metadata",
+      "directHttpStatus": 200
+    },
+    {
+      "id": "song-000014",
+      "title": "SAYONARA MAYBE",
+      "beforeUrl": "https://www.youtube.com/watch?v=w7E-oj1HOfc&t=5302s",
+      "previousSourceRefs": [
+        "src-v6b-b334990f9df1d422"
+      ],
+      "status": "verified",
+      "canonicalUrl": "https://www.youtube.com/watch?v=fuc6X46FIiM",
+      "publisher": "NOMELON NOLEMON - Topic",
+      "kind": "official_release",
+      "checkedAt": "2026-11-15T17:08:01.057Z",
+      "observedTitle": "SAYONARA MAYBE",
+      "verificationRoute": "official page/API metadata",
+      "directHttpStatus": 200
+    },
+    {
+      "id": "song-000015",
+      "title": "八月の夜",
+      "beforeUrl": "https://www.youtube.com/watch?v=w7E-oj1HOfc&t=5642s",
+      "previousSourceRefs": [
+        "src-v6b-1f7244f34b30ab2e"
+      ],
+      "status": "verified",
+      "canonicalUrl": "https://www.youtube.com/watch?v=TuRm1JzAsVg",
+      "publisher": "dreamusic",
+      "kind": "official_mv",
+      "checkedAt": "2026-11-15T17:08:01.057Z",
+      "observedTitle": "【Silent Siren】「八月の夜」MUSIC VIDEO full ver.【サイレントサイレン】",
+      "verificationRoute": "official page/API metadata",
+      "directHttpStatus": 200
+    },
+    {
+      "id": "song-000016",
+      "title": "瞬間センチメンタル",
+      "beforeUrl": "https://www.youtube.com/watch?v=w7E-oj1HOfc&t=5992s",
+      "previousSourceRefs": [
+        "src-v6b-997404866fc5902d"
+      ],
+      "status": "verified",
+      "canonicalUrl": "https://www.youtube.com/watch?v=38bhs0MnvxI",
+      "publisher": "SCANDAL YouTube Official Channel",
+      "kind": "official_mv",
+      "checkedAt": "2026-11-15T17:08:01.057Z",
+      "observedTitle": "SCANDAL 「瞬間センチメンタル」/ Shunkan Sentimental ‐Music Video",
+      "verificationRoute": "official page/API metadata",
+      "directHttpStatus": 200
+    },
+    {
+      "id": "song-000017",
+      "title": "ギターと孤独と蒼い惑星",
+      "beforeUrl": "https://www.youtube.com/watch?v=w7E-oj1HOfc&t=6423s",
+      "previousSourceRefs": [
+        "src-v6b-331045d50137820c"
+      ],
+      "status": "verified",
+      "canonicalUrl": "https://bocchi.rocks/kessokuband/info/?article_id=61863",
+      "publisher": "bocchi.rocks",
+      "kind": "official_release",
+      "checkedAt": "2026-11-15T17:08:01.057Z",
+      "observedTitle": "第5話劇中曲「ギターと孤独と蒼い惑星」 配信スタート！リリックビデオ＆ライブ映像も！ - INFO | 結束バンド OFFICIAL SITE",
+      "verificationRoute": "official page/API metadata",
+      "directHttpStatus": 200
+    },
+    {
+      "id": "song-000018",
+      "title": "星座になれたら",
+      "beforeUrl": "https://www.youtube.com/watch?v=w7E-oj1HOfc&t=6794s",
+      "previousSourceRefs": [
+        "src-v6b-69b4f9893385dd80"
+      ],
+      "status": "verified",
+      "canonicalUrl": "https://bocchi.rocks/kessokuband/info/?article_id=62218",
+      "publisher": "bocchi.rocks",
+      "kind": "official_release",
+      "checkedAt": "2026-11-15T17:08:01.057Z",
+      "observedTitle": "第12話劇中曲「忘れてやらない」「星座になれたら」配信スタート！リリックビデオ＆ライブ映像も！ - INFO | 結束バンド OFFICIAL SITE",
+      "verificationRoute": "official page/API metadata",
+      "directHttpStatus": 200
+    },
+    {
+      "id": "song-000019",
+      "title": "青春コンプレックス",
+      "beforeUrl": "https://www.youtube.com/watch?v=w7E-oj1HOfc&t=7113s",
+      "previousSourceRefs": [
+        "src-v6b-29dd6a5e7d0d60be"
+      ],
+      "status": "verified",
+      "canonicalUrl": "https://bocchi.rocks/kessokuband/info/?article_id=61499",
+      "publisher": "bocchi.rocks",
+      "kind": "official_release",
+      "checkedAt": "2026-11-15T17:08:01.057Z",
+      "observedTitle": "【MUSIC】OPシングル 『青春コンプレックス』発売決定！ - INFO | 結束バンド OFFICIAL SITE",
+      "verificationRoute": "official page/API metadata",
+      "directHttpStatus": 200
+    },
+    {
+      "id": "song-000020",
+      "title": "君の知らない物語",
+      "beforeUrl": "https://www.youtube.com/watch?v=w7E-oj1HOfc&t=7407s",
+      "previousSourceRefs": [
+        "src-v6b-7f8ef7faa0de9320"
+      ],
+      "status": "verified",
+      "canonicalUrl": "https://www.ryo-supercell.com/supercell/%E5%90%9B%E3%81%AE%E7%9F%A5%E3%82%89%E3%81%AA%E3%81%84%E7%89%A9%E8%AA%9E",
+      "publisher": "www.ryo-supercell.com",
+      "kind": "official_song_page",
+      "checkedAt": "2026-11-15T17:08:01.057Z",
+      "observedTitle": "君の知らない物語",
+      "verificationRoute": "official page/API metadata",
+      "directHttpStatus": 200
+    },
+    {
+      "id": "song-000021",
+      "title": "ブラック★ロックシューター",
+      "beforeUrl": "https://www.youtube.com/watch?v=w7E-oj1HOfc&t=8010s",
+      "previousSourceRefs": [
+        "src-v6b-9f2aff41dd9a2497"
+      ],
+      "status": "unresolved",
+      "canonicalUrl": null,
+      "reason": "公式原典の曲別ページを直接確認できず、アニメ作品紹介と楽曲を混同しないため保留。"
+    },
+    {
+      "id": "song-000022",
+      "title": "拍手喝采歌合",
+      "beforeUrl": "https://www.youtube.com/watch?v=w7E-oj1HOfc&t=8400s",
+      "previousSourceRefs": [
+        "src-v6b-544f3687e2416eff"
+      ],
+      "status": "verified",
+      "canonicalUrl": "https://www.youtube.com/watch?v=gifxbyjWElY",
+      "publisher": "spcl ryo",
+      "kind": "official_mv",
+      "checkedAt": "2026-11-15T17:08:01.057Z",
+      "observedTitle": "supercell - 拍手喝采歌合",
+      "verificationRoute": "official page/API metadata",
+      "directHttpStatus": 200
+    },
+    {
+      "id": "song-000023",
+      "title": "天体観測",
+      "beforeUrl": "https://www.youtube.com/watch?v=w7E-oj1HOfc&t=8884s",
+      "previousSourceRefs": [
+        "src-v6b-c44ddf1a4760585d"
+      ],
+      "status": "verified",
+      "canonicalUrl": "https://www.bumpofchicken.com/discographies/16",
+      "publisher": "www.bumpofchicken.com",
+      "kind": "official_release",
+      "checkedAt": "2026-11-15T17:08:01.057Z",
+      "observedTitle": "天体観測 | BUMP OF CHICKEN official website",
+      "verificationRoute": "official page/API metadata",
+      "directHttpStatus": 200
+    },
+    {
+      "id": "song-000024",
+      "title": "じょいふる",
+      "beforeUrl": "https://www.youtube.com/watch?v=w7E-oj1HOfc&t=9235s",
+      "previousSourceRefs": [
+        "src-v6b-7cf7a727d55b8345"
+      ],
+      "status": "verified",
+      "canonicalUrl": "https://www.sonymusic.co.jp/artist/Ikimonogakari/discography/ESCL-3280",
+      "publisher": "www.sonymusic.co.jp",
+      "kind": "official_release",
+      "checkedAt": "2026-11-15T17:08:01.057Z",
+      "observedTitle": "YELL/じょいふる | いきものがかり | ソニーミュージックオフィシャルサイト",
+      "verificationRoute": "official search index and web open release header",
+      "directHttpStatus": 403
+    },
+    {
+      "id": "song-000025",
+      "title": "イケナイ太陽",
+      "beforeUrl": "https://www.youtube.com/watch?v=w7E-oj1HOfc&t=9493s",
+      "previousSourceRefs": [
+        "src-v6b-7bc60b92c1d1e1e2"
+      ],
+      "status": "verified",
+      "canonicalUrl": "https://orangerange.com/news/detail/4228",
+      "publisher": "orangerange.com",
+      "kind": "official_release",
+      "checkedAt": "2026-11-15T17:08:01.057Z",
+      "observedTitle": "『イケナイ太陽』MVをYouTube公開!!｜ORANGE RANGE OFFICIAL FANCLUB RANGE AID+",
+      "verificationRoute": "official page/API metadata",
+      "directHttpStatus": 200
+    },
+    {
+      "id": "song-000026",
+      "title": "青と夏",
+      "beforeUrl": "https://www.youtube.com/watch?v=w7E-oj1HOfc&t=9840s",
+      "previousSourceRefs": [
+        "src-v6b-6e2ad2e0b46e469c"
+      ],
+      "status": "verified",
+      "canonicalUrl": "https://mrsgreenapple.com/discography/detail/126/",
+      "publisher": "mrsgreenapple.com",
+      "kind": "official_release",
+      "checkedAt": "2026-11-15T17:08:01.057Z",
+      "observedTitle": "青と夏 （通常盤） -Mrs. GREEN APPLE OFFICIAL SITE｜OFFICIAL FAN CLUB 「Ringo Jam」",
+      "verificationRoute": "official page/API metadata",
+      "directHttpStatus": 200
+    },
+    {
+      "id": "song-000027",
+      "title": "夏色えがおで1,2,Jump!",
+      "beforeUrl": "https://www.youtube.com/watch?v=w7E-oj1HOfc&t=10216s",
+      "previousSourceRefs": [
+        "src-v6b-dad0f4b5e0bd218c"
+      ],
+      "status": "verified",
+      "canonicalUrl": "https://www.youtube.com/watch?v=mWbaljmJh-M",
+      "publisher": "μ's - Topic",
+      "kind": "official_release",
+      "checkedAt": "2026-11-15T17:08:01.057Z",
+      "observedTitle": "夏色えがおで1,2,Jump!",
+      "verificationRoute": "official page/API metadata",
+      "directHttpStatus": 200
+    },
+    {
+      "id": "song-000028",
+      "title": "初恋サイダー",
+      "beforeUrl": "https://www.youtube.com/watch?v=w7E-oj1HOfc&t=10603s",
+      "previousSourceRefs": [
+        "src-v6b-9348cbadd024524c"
+      ],
+      "status": "verified",
+      "canonicalUrl": "https://helloproject.com/release/879/",
+      "publisher": "helloproject.com",
+      "kind": "official_release",
+      "checkedAt": "2026-11-15T17:08:01.057Z",
+      "observedTitle": "初恋サイダー/DEEP MIND - ハロー！プロジェクト公式サイト",
+      "verificationRoute": "official page/API metadata",
+      "directHttpStatus": 200
+    },
+    {
+      "id": "song-000029",
+      "title": "大声ダイヤモンド",
+      "beforeUrl": "https://www.youtube.com/watch?v=w7E-oj1HOfc&t=10910s",
+      "previousSourceRefs": [
+        "src-v6b-1f4ddf0da1d5337a"
+      ],
+      "status": "verified",
+      "canonicalUrl": "https://www.youtube.com/watch?v=F32epua9VQs",
+      "publisher": "AKB48",
+      "kind": "official_mv",
+      "checkedAt": "2026-11-15T17:08:01.057Z",
+      "observedTitle": "【MV full】 大声ダイヤモンド / AKB48 [公式]",
+      "verificationRoute": "official page/API metadata",
+      "directHttpStatus": 200
+    },
+    {
+      "id": "song-000030",
+      "title": "only my railgun",
+      "beforeUrl": "https://www.youtube.com/watch?v=w7E-oj1HOfc&t=11284s",
+      "previousSourceRefs": [
+        "src-v6b-5b1b0257b7011d08"
+      ],
+      "status": "verified",
+      "canonicalUrl": "https://fripside.net/musics/11716",
+      "publisher": "fripside.net",
+      "kind": "official_release",
+      "checkedAt": "2026-11-15T17:08:01.057Z",
+      "observedTitle": "only my railgun | fripSide OFFICIAL SITE",
+      "verificationRoute": "official page/API metadata",
+      "directHttpStatus": 200
+    },
+    {
+      "id": "song-000031",
+      "title": "スパークル [original ver.]",
+      "beforeUrl": "https://www.youtube.com/watch?v=w7E-oj1HOfc&t=11637s",
+      "previousSourceRefs": [
+        "src-v6b-1a0015f1427e6f4c"
+      ],
+      "status": "verified",
+      "canonicalUrl": "https://radwimps.jp/news/8701/",
+      "publisher": "radwimps.jp",
+      "kind": "official_release",
+      "checkedAt": "2026-11-15T17:08:01.057Z",
+      "observedTitle": "11/23発売ニューアルバム「人間開花」の初回限定盤DVDに、新海誠監督による「スパークル [original ver.] 」ミュージックビデオの収録が決定！予告編公開！ | RADWIMPS OFFICIAL SITE",
+      "verificationRoute": "official page/API metadata",
+      "directHttpStatus": 200
+    },
+    {
+      "id": "song-000032",
+      "title": "なんでもないや (movie ver.)",
+      "beforeUrl": "https://www.youtube.com/watch?v=w7E-oj1HOfc&t=12151s",
+      "previousSourceRefs": [
+        "src-v6b-8e04983973983e90"
+      ],
+      "status": "verified",
+      "canonicalUrl": "https://www.ponycanyon.co.jp/music/PCCA000004426",
+      "publisher": "www.ponycanyon.co.jp",
+      "kind": "official_release",
+      "checkedAt": "2026-11-15T17:08:01.057Z",
+      "observedTitle": "chouchou-上白石萌音 | ポニーキャニオン",
+      "verificationRoute": "official page/API metadata",
+      "directHttpStatus": 200
+    },
+    {
+      "id": "song-000033",
+      "title": "ライオン",
+      "beforeUrl": "https://www.youtube.com/watch?v=w7E-oj1HOfc&t=12843s",
+      "previousSourceRefs": [
+        "src-v6b-f548340b6052a46d"
+      ],
+      "status": "verified",
+      "canonicalUrl": "https://mayn.jp/discography/single/lion/",
+      "publisher": "mayn.jp",
+      "kind": "official_release",
+      "checkedAt": "2026-11-15T17:08:01.057Z",
+      "observedTitle": "Single 『ライオン』　May’n／中島愛  |  May'n Official Site",
+      "verificationRoute": "official page/API metadata",
+      "directHttpStatus": 200
+    },
+    {
+      "id": "song-000034",
+      "title": "言って。",
+      "beforeUrl": "https://www.youtube.com/watch?v=B_EKfTqecQw&t=584s",
+      "previousSourceRefs": [
+        "src-v6b-9cabbc6c91b8716f"
+      ],
+      "status": "verified",
+      "canonicalUrl": "https://yorushika.com/news/detail/10074",
+      "publisher": "yorushika.com",
+      "kind": "official_release",
+      "checkedAt": "2026-11-15T17:08:01.057Z",
+      "observedTitle": "【ヨルシカ】新曲「言って。」ミュージックビデオを公開。｜ヨルシカ OFFICIAL SITE",
+      "verificationRoute": "official page/API metadata",
+      "directHttpStatus": 200
+    },
+    {
+      "id": "song-000035",
+      "title": "Calc.",
+      "beforeUrl": "https://www.youtube.com/watch?v=B_EKfTqecQw&t=1100s",
+      "previousSourceRefs": [
+        "src-v6b-912cab59b1ad1cdb"
+      ],
+      "status": "verified",
+      "canonicalUrl": "https://piapro.jp/t/iF0M",
+      "publisher": "piapro.jp",
+      "kind": "official_song_page",
+      "checkedAt": "2026-11-15T17:08:01.057Z",
+      "observedTitle": "オンガク「Calc.」",
+      "verificationRoute": "official page/API metadata",
+      "directHttpStatus": 200
+    },
+    {
+      "id": "song-000036",
+      "title": "ロミオとシンデレラ",
+      "beforeUrl": "https://www.youtube.com/watch?v=B_EKfTqecQw&t=1464s",
+      "previousSourceRefs": [
+        "src-v6b-65754521b7ead3d3"
+      ],
+      "status": "verified",
+      "canonicalUrl": "https://karent.jp/album/58",
+      "publisher": "karent.jp",
+      "kind": "official_release",
+      "checkedAt": "2026-11-15T17:08:01.057Z",
+      "observedTitle": "ロミオとシンデレラ / doriko | KARENT",
+      "verificationRoute": "official page/API metadata",
+      "directHttpStatus": 200
+    },
+    {
+      "id": "song-000037",
+      "title": "メランコリック",
+      "beforeUrl": "https://www.youtube.com/watch?v=B_EKfTqecQw&t=1937s",
+      "previousSourceRefs": [
+        "src-v6b-1ec14e04aa96c4ed"
+      ],
+      "status": "verified",
+      "canonicalUrl": "https://karent.jp/album/597",
+      "publisher": "karent.jp",
+      "kind": "official_release",
+      "checkedAt": "2026-11-15T17:08:01.057Z",
+      "observedTitle": "Quarter / Junky | KARENT",
+      "verificationRoute": "official page/API metadata",
+      "directHttpStatus": 200
+    },
+    {
+      "id": "song-000038",
+      "title": "乙女解剖",
+      "beforeUrl": "https://www.youtube.com/watch?v=B_EKfTqecQw&t=2320s",
+      "previousSourceRefs": [
+        "src-v6b-0f7d17cb3ad66571"
+      ],
+      "status": "verified",
+      "canonicalUrl": "https://www.youtube.com/watch?v=7zwCIz-Ohn4",
+      "publisher": "DECO*27",
+      "kind": "official_mv",
+      "checkedAt": "2026-11-15T17:08:01.057Z",
+      "observedTitle": "DECO*27 - 乙女解剖 feat. 初音ミク",
+      "verificationRoute": "official page/API metadata",
+      "directHttpStatus": 200
+    },
+    {
+      "id": "song-000039",
+      "title": "とても素敵な六月でした",
+      "beforeUrl": "https://www.youtube.com/watch?v=B_EKfTqecQw&t=3060s",
+      "previousSourceRefs": [
+        "src-v6b-b6927d7d8ce53a5a"
+      ],
+      "status": "verified",
+      "canonicalUrl": "https://www.youtube.com/watch?v=qejMJ6YrS3E",
+      "publisher": "Eight - Topic",
+      "kind": "official_release",
+      "checkedAt": "2026-11-15T17:08:01.057Z",
+      "observedTitle": "とても素敵な六月でした",
+      "verificationRoute": "official page/API metadata",
+      "directHttpStatus": 200
+    },
+    {
+      "id": "song-000040",
+      "title": "Fire◎Flower",
+      "beforeUrl": "https://www.youtube.com/watch?v=B_EKfTqecQw&t=3478s",
+      "previousSourceRefs": [
+        "src-v6b-ce9d403d72db01af"
+      ],
+      "status": "verified",
+      "canonicalUrl": "https://halyosy.com/fireflower",
+      "publisher": "halyosy.com",
+      "kind": "official_song_page",
+      "checkedAt": "2026-11-15T17:08:01.057Z",
+      "observedTitle": "Fire◎Flower – halyosy official website",
+      "verificationRoute": "official page/API metadata",
+      "directHttpStatus": 200
+    },
+    {
+      "id": "song-000041",
+      "title": "又三郎",
+      "beforeUrl": "https://www.youtube.com/watch?v=B_EKfTqecQw&t=4055s",
+      "previousSourceRefs": [
+        "src-v6b-80c8269a784f3266"
+      ],
+      "status": "verified",
+      "canonicalUrl": "https://yorushika.com/news/detail/11290",
+      "publisher": "yorushika.com",
+      "kind": "official_release",
+      "checkedAt": "2026-11-15T17:08:01.057Z",
+      "observedTitle": "新曲「又三郎」のミュージックビデオを公開｜ヨルシカ OFFICIAL SITE",
+      "verificationRoute": "official page/API metadata",
+      "directHttpStatus": 200
+    },
+    {
+      "id": "song-000042",
+      "title": "リードコントロール",
+      "beforeUrl": "https://www.youtube.com/watch?v=B_EKfTqecQw&t=4384s",
+      "previousSourceRefs": [
+        "src-v6b-852ea15901ad602d"
+      ],
+      "status": "verified",
+      "canonicalUrl": "https://www.universal-music.co.jp/narumiya/products/uu1as-02178/",
+      "publisher": "www.universal-music.co.jp",
+      "kind": "official_release",
+      "checkedAt": "2026-11-15T17:08:01.057Z",
+      "observedTitle": "リードコントロール[デジタル配信] - なるみや - UNIVERSAL MUSIC JAPAN",
+      "verificationRoute": "official page/API metadata",
+      "directHttpStatus": 200
+    },
+    {
+      "id": "song-000043",
+      "title": "夜に駆ける",
+      "beforeUrl": "https://www.youtube.com/watch?v=B_EKfTqecQw&t=4690s",
+      "previousSourceRefs": [
+        "src-v6b-8648840251a05a1a"
+      ],
+      "status": "verified",
+      "canonicalUrl": "https://www.youtube.com/watch?v=x8VYWazR5mE",
+      "publisher": "YOASOBI",
+      "kind": "official_mv",
+      "checkedAt": "2026-11-15T17:08:01.057Z",
+      "observedTitle": "YOASOBI「夜に駆ける」 Official Music Video",
+      "verificationRoute": "official page/API metadata",
+      "directHttpStatus": 200
+    },
+    {
+      "id": "song-000044",
+      "title": "もしも命が描けたら",
+      "beforeUrl": "https://www.youtube.com/watch?v=B_EKfTqecQw&t=5190s",
+      "previousSourceRefs": [
+        "src-v6b-ed954f1ec02473a0"
+      ],
+      "status": "verified",
+      "canonicalUrl": "https://www.youtube.com/watch?v=I0kytvnHG-Q",
+      "publisher": "YOASOBI",
+      "kind": "official_mv",
+      "checkedAt": "2026-11-15T17:08:01.057Z",
+      "observedTitle": "YOASOBI「もしも命が描けたら」Official Music Video",
+      "verificationRoute": "official page/API metadata",
+      "directHttpStatus": 200
+    },
+    {
+      "id": "song-000045",
+      "title": "エアロピクルス",
+      "beforeUrl": "https://www.youtube.com/watch?v=B_EKfTqecQw&t=5543s",
+      "previousSourceRefs": [
+        "src-v6b-4ebc8432f2d7427c"
+      ],
+      "status": "unresolved",
+      "canonicalUrl": null,
+      "reason": "同名に近い広告曲・二次情報は見つかったが、コメアニメの公式原曲を特定できず保留。"
+    },
+    {
+      "id": "song-000046",
+      "title": "ダダダダ天使",
+      "beforeUrl": "https://www.youtube.com/watch?v=B_EKfTqecQw&t=5983s",
+      "previousSourceRefs": [
+        "src-v6b-ac0ce1096fd03595"
+      ],
+      "status": "verified",
+      "canonicalUrl": "https://www.youtube.com/watch?v=ANp0qch3XVM",
+      "publisher": "ナナヲアカリ OFFICIAL",
+      "kind": "official_mv",
+      "checkedAt": "2026-11-15T17:08:01.057Z",
+      "observedTitle": "ダダダダ天使 / ナナヲアカリ",
+      "verificationRoute": "official page/API metadata",
+      "directHttpStatus": 200
+    },
+    {
+      "id": "song-000047",
+      "title": "シル・ヴ・プレジデント",
+      "beforeUrl": "https://www.youtube.com/watch?v=R3PYpVPHF54&t=590s",
+      "previousSourceRefs": [
+        "src-v6b-d4b5db35c75c0b3c"
+      ],
+      "status": "verified",
+      "canonicalUrl": "https://www.youtube.com/watch?v=3V9952osjnc",
+      "publisher": "P丸様。",
+      "kind": "official_mv",
+      "checkedAt": "2026-11-15T17:08:01.057Z",
+      "observedTitle": "【MV】シル・ヴ・プレジデント／P丸様。【大統領になったらね！】",
+      "verificationRoute": "official page/API metadata",
+      "directHttpStatus": 200
+    },
+    {
+      "id": "song-000048",
+      "title": "誇り高きアイドル",
+      "beforeUrl": "https://www.youtube.com/watch?v=R3PYpVPHF54&t=882s",
+      "previousSourceRefs": [
+        "src-v6b-ca272e0a0638677c"
+      ],
+      "status": "verified",
+      "canonicalUrl": "https://honeyworks.jp/news/7247/",
+      "publisher": "honeyworks.jp",
+      "kind": "official_release",
+      "checkedAt": "2026-11-15T17:08:01.057Z",
+      "observedTitle": "┗|∵|┓誇り高きアイドル／HoneyWorks feat. Kotoha を投稿しました。 | NEWS | HoneyWorks Official web site",
+      "verificationRoute": "official page/API metadata",
+      "directHttpStatus": 200
+    },
+    {
+      "id": "song-000049",
+      "title": "エゴロック",
+      "beforeUrl": "https://www.youtube.com/watch?v=R3PYpVPHF54&t=1248s",
+      "previousSourceRefs": [
+        "src-v6b-6a429af1b5277e77"
+      ],
+      "status": "unresolved",
+      "canonicalUrl": null,
+      "reason": "公式long ver.は確認したが、配信の無印表記が同じ版である根拠は不足。版を推測せず保留。"
+    },
+    {
+      "id": "song-000050",
+      "title": "私は最強",
+      "beforeUrl": "https://www.youtube.com/watch?v=R3PYpVPHF54&t=1475s",
+      "previousSourceRefs": [
+        "src-v6b-70b5bd924e6cc08b"
+      ],
+      "status": "verified",
+      "canonicalUrl": "https://www.youtube.com/watch?v=sk1Z-Hqwwog",
+      "publisher": "Ado",
+      "kind": "official_mv",
+      "checkedAt": "2026-11-15T17:08:01.057Z",
+      "observedTitle": "【Ado】私は最強 (ウタ from ONE PIECE FILM RED)",
+      "verificationRoute": "official page/API metadata",
+      "directHttpStatus": 200
+    },
+    {
+      "id": "song-000051",
+      "title": "departure!",
+      "beforeUrl": "https://www.youtube.com/watch?v=xfLfXL-X9zs&t=290s",
+      "previousSourceRefs": [
+        "src-v6b-d8e7f0a17f315390"
+      ],
+      "status": "verified",
+      "canonicalUrl": "https://www.vap.co.jp/hunterhunter/cd01.html",
+      "publisher": "www.vap.co.jp",
+      "kind": "official_release",
+      "checkedAt": "2026-11-15T17:08:01.057Z",
+      "observedTitle": "=VAP= 『HUNTER×HUNTER』プロモーションサイト",
+      "verificationRoute": "official page/API metadata",
+      "directHttpStatus": 200
+    },
+    {
+      "id": "song-000052",
+      "title": "旅人の唄",
+      "beforeUrl": "https://www.youtube.com/watch?v=xfLfXL-X9zs&t=633s",
+      "previousSourceRefs": [
+        "src-v6b-25517115c7aba518"
+      ],
+      "status": "verified",
+      "canonicalUrl": "https://yuiko-ohara.com/news/201218/",
+      "publisher": "yuiko-ohara.com",
+      "kind": "official_release",
+      "checkedAt": "2026-11-15T17:08:01.057Z",
+      "observedTitle": "大原ゆい子オフィシャルサイト｜「ちるあうとくらぶ」 | TVアニメ「無職転生 ~異世界行ったら本気だす~」最新PV公開！",
+      "verificationRoute": "official page/API metadata",
+      "directHttpStatus": 200
+    },
+    {
+      "id": "song-000053",
+      "title": "RPG",
+      "beforeUrl": "https://www.youtube.com/watch?v=xfLfXL-X9zs&t=959s",
+      "previousSourceRefs": [
+        "src-v6b-049a28c15666a7e6"
+      ],
+      "status": "verified",
+      "canonicalUrl": "https://www.youtube.com/watch?v=Mi9uNu35Gmk",
+      "publisher": "sekainoowarijp",
+      "kind": "official_mv",
+      "checkedAt": "2026-11-15T17:08:01.057Z",
+      "observedTitle": "SEKAI NO OWARI「RPG」",
+      "verificationRoute": "official page/API metadata",
+      "directHttpStatus": 200
+    },
+    {
+      "id": "song-000054",
+      "title": "アフターエポックス",
+      "beforeUrl": "https://www.youtube.com/watch?v=xfLfXL-X9zs&t=1278s",
+      "previousSourceRefs": [
+        "src-v6b-cb5de580775e5e50"
+      ],
+      "status": "verified",
+      "canonicalUrl": "https://karent.jp/album/4156",
+      "publisher": "karent.jp",
+      "kind": "official_release",
+      "checkedAt": "2026-11-15T17:08:01.057Z",
+      "observedTitle": "アフターエポックス / sasakure.UK | KARENT",
+      "verificationRoute": "official page/API metadata",
+      "directHttpStatus": 200
+    },
+    {
+      "id": "song-000055",
+      "title": "Journey",
+      "beforeUrl": "https://www.youtube.com/watch?v=xfLfXL-X9zs&t=1544s",
+      "previousSourceRefs": [
+        "src-v6b-fc504841e20e3165"
+      ],
+      "status": "verified",
+      "canonicalUrl": "https://otoiro.co.jp/topics/97213/",
+      "publisher": "otoiro.co.jp",
+      "kind": "official_release",
+      "checkedAt": "2026-11-15T17:08:01.057Z",
+      "observedTitle": "『DECO*27 – Journey feat. 初音ミク』Music Video公開 | OTOIRO",
+      "verificationRoute": "official page/API metadata",
+      "directHttpStatus": 200
+    }
+  ],
+  "performanceLinkCorrections": [
+    {
+      "id": "perf-000019",
+      "beforeSongId": "song-000021",
+      "afterSongId": null
+    },
+    {
+      "id": "perf-000037",
+      "beforeSongId": null,
+      "afterSongId": "song-000003"
+    },
+    {
+      "id": "perf-000044",
+      "beforeSongId": "song-000045",
+      "afterSongId": null
+    },
+    {
+      "id": "perf-000049",
+      "beforeSongId": "song-000049",
+      "afterSongId": null
+    }
+  ]
+}

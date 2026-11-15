@@ -1,0 +1,325 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "schemaVersion": {
+      "const": 1
+    },
+    "videos": {
+      "type": "object",
+      "maxProperties": 10000,
+      "additionalProperties": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "pageToken": {
+            "anyOf": [
+              {
+                "type": "string",
+                "maxLength": 2048
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "checkedAt": {
+            "anyOf": [
+              {
+                "type": "string",
+                "format": "date-time"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "unavailable": {
+            "type": "boolean"
+          }
+        },
+        "required": [
+          "pageToken",
+          "checkedAt"
+        ]
+      }
+    },
+    "comments": {
+      "type": "object",
+      "maxProperties": 10000,
+      "propertyNames": {
+        "type": "string",
+        "pattern": "^U[A-Za-z0-9_.-]{2,199}$"
+      },
+      "additionalProperties": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "commentId": {
+            "type": "string",
+            "pattern": "^U[A-Za-z0-9_.-]{2,199}$"
+          },
+          "youtubeId": {
+            "type": "string",
+            "pattern": "^[A-Za-z0-9_-]{11}$"
+          },
+          "publishedAt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "updatedAt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "retrievedAt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "sourceUrl": {
+            "type": "string",
+            "format": "public-url"
+          },
+          "contentHash": {
+            "type": "string",
+            "pattern": "^[a-f0-9]{64}$"
+          },
+          "parserVersion": {
+            "const": 1
+          },
+          "history": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "contentHash": {
+                  "type": "string",
+                  "pattern": "^[a-f0-9]{64}$"
+                },
+                "updatedAt": {
+                  "type": "string",
+                  "format": "date-time"
+                }
+              },
+              "required": [
+                "contentHash",
+                "updatedAt"
+              ]
+            },
+            "maxItems": 100
+          },
+          "hasSetlist": {
+            "type": "boolean"
+          },
+          "songCount": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "timestampCount": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "entries": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "key": {
+                  "type": "string",
+                  "pattern": "^[a-f0-9]{24}$"
+                },
+                "youtubeId": {
+                  "type": "string",
+                  "pattern": "^[A-Za-z0-9_-]{11}$"
+                },
+                "order": {
+                  "anyOf": [
+                    {
+                      "type": "integer",
+                      "minimum": 1
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                },
+                "startsAtSeconds": {
+                  "anyOf": [
+                    {
+                      "type": "integer",
+                      "minimum": 0
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                },
+                "endsAtSeconds": {
+                  "type": "null"
+                },
+                "title": {
+                  "type": "string",
+                  "maxLength": 240
+                },
+                "artist": {
+                  "anyOf": [
+                    {
+                      "type": "string",
+                      "maxLength": 240
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                },
+                "talentIds": {
+                  "type": "array",
+                  "items": {
+                    "type": "string",
+                    "pattern": "^tal-[0-9]{6}$"
+                  },
+                  "maxItems": 100
+                },
+                "rawLabel": {
+                  "type": "string",
+                  "maxLength": 400
+                },
+                "sourceType": {
+                  "const": "viewer_comment"
+                },
+                "sourceUrl": {
+                  "type": "string",
+                  "format": "public-url"
+                },
+                "method": {
+                  "const": "setlist-line-v1"
+                },
+                "verification": {
+                  "const": "pending"
+                },
+                "category": {
+                  "const": "song_candidate"
+                },
+                "warnings": {
+                  "type": "array",
+                  "items": {
+                    "type": "string",
+                    "maxLength": 80
+                  },
+                  "maxItems": 20
+                },
+                "evidenceHash": {
+                  "type": "string",
+                  "pattern": "^[a-f0-9]{64}$"
+                }
+              },
+              "required": [
+                "key",
+                "youtubeId",
+                "order",
+                "startsAtSeconds",
+                "endsAtSeconds",
+                "title",
+                "artist",
+                "talentIds",
+                "rawLabel",
+                "sourceType",
+                "sourceUrl",
+                "method",
+                "verification",
+                "category",
+                "warnings",
+                "evidenceHash"
+              ]
+            },
+            "maxItems": 200
+          },
+          "verification": {
+            "enum": [
+              "pending",
+              "needs_review",
+              "confirmed",
+              "rejected"
+            ]
+          }
+        },
+        "required": [
+          "commentId",
+          "youtubeId",
+          "publishedAt",
+          "updatedAt",
+          "retrievedAt",
+          "sourceUrl",
+          "contentHash",
+          "parserVersion",
+          "history",
+          "hasSetlist",
+          "songCount",
+          "timestampCount",
+          "entries",
+          "verification"
+        ]
+      }
+    },
+    "budget": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "day": {
+          "anyOf": [
+            {
+              "type": "string",
+              "maxLength": 20
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "used": {
+          "type": "integer",
+          "minimum": 0
+        }
+      },
+      "required": [
+        "day",
+        "used"
+      ]
+    },
+    "lastAttemptAt": {
+      "anyOf": [
+        {
+          "type": "string",
+          "format": "date-time"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "lastSuccessAt": {
+      "anyOf": [
+        {
+          "type": "string",
+          "format": "date-time"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "report": {
+      "type": "object"
+    }
+  },
+  "required": [
+    "schemaVersion",
+    "videos",
+    "comments",
+    "budget",
+    "lastAttemptAt",
+    "lastSuccessAt"
+  ],
+  "$schema": "http://json-schema.org/draft-07/schema#"
+}

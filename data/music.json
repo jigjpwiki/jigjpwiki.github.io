@@ -44,11 +44,12 @@
       ],
       "aliases": [],
       "readings": [],
-      "identityUrl": "https://www.youtube.com/watch?v=w7E-oj1HOfc&t=485s",
+      "identityUrl": "https://www.youtube.com/watch?v=Nm0R9kIGjbs",
       "artistEvidence": "performer_description",
       "sourceRefs": [
         "src-song-setlist-3",
-        "src-karaoke-1"
+        "src-karaoke-1",
+        "src-work-ad31a91408c96d60"
       ],
       "visibility": "public"
     },
@@ -60,11 +61,12 @@
       ],
       "aliases": [],
       "readings": [],
-      "identityUrl": "https://www.youtube.com/watch?v=w7E-oj1HOfc&t=982s",
+      "identityUrl": "https://honeyworks.jp/release/cwhw_1stsg/",
       "artistEvidence": "performer_description",
       "sourceRefs": [
         "src-song-setlist-4",
-        "src-karaoke-1"
+        "src-karaoke-1",
+        "src-work-f786de4d7c6c1234"
       ],
       "visibility": "public"
     },
@@ -76,11 +78,842 @@
       ],
       "aliases": [],
       "readings": [],
-      "identityUrl": "https://www.youtube.com/watch?v=w7E-oj1HOfc&t=1603s",
+      "identityUrl": "https://www.youtube.com/watch?v=nvQN56D8RYo",
       "artistEvidence": "performer_description",
       "sourceRefs": [
         "src-song-setlist-5",
-        "src-karaoke-1"
+        "src-karaoke-1",
+        "src-work-754e8d672cd24897"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "song-000006",
+      "title": "好きだから。",
+      "originalArtists": [
+        "『ユイカ』"
+      ],
+      "aliases": [],
+      "readings": [],
+      "identityUrl": "https://www.youtube.com/watch?v=eYAd4uDotF0",
+      "artistEvidence": "performer_description",
+      "sourceRefs": [
+        "src-v6b-4b3d931d3c1016af",
+        "src-work-e6b86b76b4d72de0"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "song-000007",
+      "title": "可愛いあの子が気にゐらない",
+      "originalArtists": [
+        "なるみや"
+      ],
+      "aliases": [],
+      "readings": [],
+      "identityUrl": "https://narumiya-official.jp/news/005/",
+      "artistEvidence": "performer_description",
+      "sourceRefs": [
+        "src-v6b-b71b4c0819e50081",
+        "src-work-f836e34e017f4667"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "song-000008",
+      "title": "さくらんぼ",
+      "originalArtists": [
+        "大塚愛"
+      ],
+      "aliases": [],
+      "readings": [],
+      "identityUrl": "https://avexnet.jp/release/20",
+      "artistEvidence": "performer_description",
+      "sourceRefs": [
+        "src-v6b-cb158bbb318600d1",
+        "src-work-3fbd43904241ae4e"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "song-000009",
+      "title": "小さな恋のうた",
+      "originalArtists": [
+        "MONGOL800"
+      ],
+      "aliases": [],
+      "readings": [],
+      "identityUrl": "https://www.youtube.com/watch?v=JoJ6lnF07U4",
+      "artistEvidence": "performer_description",
+      "sourceRefs": [
+        "src-v6b-2ab76ffd1fb84de9",
+        "src-work-4674f763002c6080"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "song-000010",
+      "title": "ハレ晴レユカイ",
+      "originalArtists": [
+        "涼宮ハルヒ(CV.平野綾)、長門有希(CV.茅原実里)、朝比奈みくる(CV.後藤邑子)"
+      ],
+      "aliases": [],
+      "readings": [],
+      "identityUrl": "https://akihata.jp/works/music/8124/",
+      "artistEvidence": "performer_description",
+      "sourceRefs": [
+        "src-v6b-7ed9ed852359ff44",
+        "src-work-06e464fd80fa0c87"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "song-000011",
+      "title": "God knows...",
+      "originalArtists": [
+        "涼宮ハルヒ(C.V.平野綾)"
+      ],
+      "aliases": [],
+      "readings": [],
+      "identityUrl": "https://catalog.bandainamcomusiclive.co.jp/release/63493/",
+      "artistEvidence": "performer_description",
+      "sourceRefs": [
+        "src-v6b-cc12d719835b8fb9",
+        "src-work-430a0b7b6a03c2c4"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "song-000012",
+      "title": "学園天国",
+      "originalArtists": [
+        "フィンガー5"
+      ],
+      "aliases": [],
+      "readings": [],
+      "identityUrl": "https://www.universal-music.co.jp/finger5/products/uicz-6036/",
+      "artistEvidence": "performer_description",
+      "sourceRefs": [
+        "src-v6b-4a119580c6bcc840",
+        "src-work-ea54014649a5f8bb"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "song-000013",
+      "title": "ふわふわ時間",
+      "originalArtists": [
+        "放課後ティータイム"
+      ],
+      "aliases": [],
+      "readings": [],
+      "identityUrl": "https://www.youtube.com/watch?v=I0xRbWqIohQ",
+      "artistEvidence": "performer_description",
+      "sourceRefs": [
+        "src-v6b-d0d12ad48b01ef9b",
+        "src-work-1b1fec6ec5211d1e"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "song-000014",
+      "title": "SAYONARA MAYBE",
+      "originalArtists": [
+        "NOMELON NOLEMON"
+      ],
+      "aliases": [],
+      "readings": [],
+      "identityUrl": "https://www.youtube.com/watch?v=fuc6X46FIiM",
+      "artistEvidence": "performer_description",
+      "sourceRefs": [
+        "src-v6b-b334990f9df1d422",
+        "src-work-292b15dd46017553"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "song-000015",
+      "title": "八月の夜",
+      "originalArtists": [
+        "Silent Siren"
+      ],
+      "aliases": [],
+      "readings": [],
+      "identityUrl": "https://www.youtube.com/watch?v=TuRm1JzAsVg",
+      "artistEvidence": "performer_description",
+      "sourceRefs": [
+        "src-v6b-1f7244f34b30ab2e",
+        "src-work-e7c934789195cce9"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "song-000016",
+      "title": "瞬間センチメンタル",
+      "originalArtists": [
+        "SCANDAL"
+      ],
+      "aliases": [],
+      "readings": [],
+      "identityUrl": "https://www.youtube.com/watch?v=38bhs0MnvxI",
+      "artistEvidence": "performer_description",
+      "sourceRefs": [
+        "src-v6b-997404866fc5902d",
+        "src-work-52beaa3c95dc0189"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "song-000017",
+      "title": "ギターと孤独と蒼い惑星",
+      "originalArtists": [
+        "結束バンド"
+      ],
+      "aliases": [],
+      "readings": [],
+      "identityUrl": "https://bocchi.rocks/kessokuband/info/?article_id=61863",
+      "artistEvidence": "performer_description",
+      "sourceRefs": [
+        "src-v6b-331045d50137820c",
+        "src-work-46b95372b51bf8d5"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "song-000018",
+      "title": "星座になれたら",
+      "originalArtists": [
+        "結束バンド"
+      ],
+      "aliases": [],
+      "readings": [],
+      "identityUrl": "https://bocchi.rocks/kessokuband/info/?article_id=62218",
+      "artistEvidence": "performer_description",
+      "sourceRefs": [
+        "src-v6b-69b4f9893385dd80",
+        "src-work-4a873c639407c47b"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "song-000019",
+      "title": "青春コンプレックス",
+      "originalArtists": [
+        "結束バンド"
+      ],
+      "aliases": [],
+      "readings": [],
+      "identityUrl": "https://bocchi.rocks/kessokuband/info/?article_id=61499",
+      "artistEvidence": "performer_description",
+      "sourceRefs": [
+        "src-v6b-29dd6a5e7d0d60be",
+        "src-work-cb0f88eb9a704028"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "song-000020",
+      "title": "君の知らない物語",
+      "originalArtists": [
+        "supercell"
+      ],
+      "aliases": [],
+      "readings": [],
+      "identityUrl": "https://www.ryo-supercell.com/supercell/%E5%90%9B%E3%81%AE%E7%9F%A5%E3%82%89%E3%81%AA%E3%81%84%E7%89%A9%E8%AA%9E",
+      "artistEvidence": "performer_description",
+      "sourceRefs": [
+        "src-v6b-7f8ef7faa0de9320",
+        "src-work-711029bc3f8d31a6"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "song-000021",
+      "title": "ブラック★ロックシューター",
+      "originalArtists": [
+        "supercell"
+      ],
+      "aliases": [],
+      "readings": [],
+      "identityUrl": null,
+      "artistEvidence": "performer_description",
+      "sourceRefs": [
+        "src-v6b-9f2aff41dd9a2497"
+      ],
+      "visibility": "draft",
+      "identityStatus": "unresolved"
+    },
+    {
+      "id": "song-000022",
+      "title": "拍手喝采歌合",
+      "originalArtists": [
+        "supercell"
+      ],
+      "aliases": [],
+      "readings": [],
+      "identityUrl": "https://www.youtube.com/watch?v=gifxbyjWElY",
+      "artistEvidence": "performer_description",
+      "sourceRefs": [
+        "src-v6b-544f3687e2416eff",
+        "src-work-e2b838c036892cc0"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "song-000023",
+      "title": "天体観測",
+      "originalArtists": [
+        "BUMP OF CHICKEN"
+      ],
+      "aliases": [],
+      "readings": [],
+      "identityUrl": "https://www.bumpofchicken.com/discographies/16",
+      "artistEvidence": "performer_description",
+      "sourceRefs": [
+        "src-v6b-c44ddf1a4760585d",
+        "src-work-b954170da386efe4"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "song-000024",
+      "title": "じょいふる",
+      "originalArtists": [
+        "いきものがかり"
+      ],
+      "aliases": [],
+      "readings": [],
+      "identityUrl": "https://www.sonymusic.co.jp/artist/Ikimonogakari/discography/ESCL-3280",
+      "artistEvidence": "performer_description",
+      "sourceRefs": [
+        "src-v6b-7cf7a727d55b8345",
+        "src-work-96945a40be1a5887"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "song-000025",
+      "title": "イケナイ太陽",
+      "originalArtists": [
+        "ORANGE RANGE"
+      ],
+      "aliases": [],
+      "readings": [],
+      "identityUrl": "https://orangerange.com/news/detail/4228",
+      "artistEvidence": "performer_description",
+      "sourceRefs": [
+        "src-v6b-7bc60b92c1d1e1e2",
+        "src-work-26a08b8b368c97bc"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "song-000026",
+      "title": "青と夏",
+      "originalArtists": [
+        "Mrs.GREEN APPLE"
+      ],
+      "aliases": [],
+      "readings": [],
+      "identityUrl": "https://mrsgreenapple.com/discography/detail/126/",
+      "artistEvidence": "performer_description",
+      "sourceRefs": [
+        "src-v6b-6e2ad2e0b46e469c",
+        "src-work-c4f0fa8afb9e0617"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "song-000027",
+      "title": "夏色えがおで1,2,Jump!",
+      "originalArtists": [
+        "μ's"
+      ],
+      "aliases": [],
+      "readings": [],
+      "identityUrl": "https://www.youtube.com/watch?v=mWbaljmJh-M",
+      "artistEvidence": "performer_description",
+      "sourceRefs": [
+        "src-v6b-dad0f4b5e0bd218c",
+        "src-work-cff8fbec1443386f"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "song-000028",
+      "title": "初恋サイダー",
+      "originalArtists": [
+        "Buono!"
+      ],
+      "aliases": [],
+      "readings": [],
+      "identityUrl": "https://helloproject.com/release/879/",
+      "artistEvidence": "performer_description",
+      "sourceRefs": [
+        "src-v6b-9348cbadd024524c",
+        "src-work-b7dfad769207cb58"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "song-000029",
+      "title": "大声ダイヤモンド",
+      "originalArtists": [
+        "AKB48"
+      ],
+      "aliases": [],
+      "readings": [],
+      "identityUrl": "https://www.youtube.com/watch?v=F32epua9VQs",
+      "artistEvidence": "performer_description",
+      "sourceRefs": [
+        "src-v6b-1f4ddf0da1d5337a",
+        "src-work-75abd3c8e4a2cd04"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "song-000030",
+      "title": "only my railgun",
+      "originalArtists": [
+        "fripSide"
+      ],
+      "aliases": [],
+      "readings": [],
+      "identityUrl": "https://fripside.net/musics/11716",
+      "artistEvidence": "performer_description",
+      "sourceRefs": [
+        "src-v6b-5b1b0257b7011d08",
+        "src-work-ef4af9dafeffc98d"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "song-000031",
+      "title": "スパークル [original ver.]",
+      "originalArtists": [
+        "RADWIMPS"
+      ],
+      "aliases": [],
+      "readings": [],
+      "identityUrl": "https://radwimps.jp/news/8701/",
+      "artistEvidence": "performer_description",
+      "sourceRefs": [
+        "src-v6b-1a0015f1427e6f4c",
+        "src-work-10909d98ce1d300b"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "song-000032",
+      "title": "なんでもないや (movie ver.)",
+      "originalArtists": [
+        "上白石萌音"
+      ],
+      "aliases": [],
+      "readings": [],
+      "identityUrl": "https://www.ponycanyon.co.jp/music/PCCA000004426",
+      "artistEvidence": "performer_description",
+      "sourceRefs": [
+        "src-v6b-8e04983973983e90",
+        "src-work-422003b7b78b1998"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "song-000033",
+      "title": "ライオン",
+      "originalArtists": [
+        "May'n/中島愛"
+      ],
+      "aliases": [],
+      "readings": [],
+      "identityUrl": "https://mayn.jp/discography/single/lion/",
+      "artistEvidence": "performer_description",
+      "sourceRefs": [
+        "src-v6b-f548340b6052a46d",
+        "src-work-265eeda104cb097e"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "song-000034",
+      "title": "言って。",
+      "originalArtists": [
+        "ヨルシカ"
+      ],
+      "aliases": [],
+      "readings": [],
+      "identityUrl": "https://yorushika.com/news/detail/10074",
+      "artistEvidence": "performer_description",
+      "sourceRefs": [
+        "src-v6b-9cabbc6c91b8716f",
+        "src-work-ffea428a5c125f49"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "song-000035",
+      "title": "Calc.",
+      "originalArtists": [
+        "ジミーサムP"
+      ],
+      "aliases": [],
+      "readings": [],
+      "identityUrl": "https://piapro.jp/t/iF0M",
+      "artistEvidence": "performer_description",
+      "sourceRefs": [
+        "src-v6b-912cab59b1ad1cdb",
+        "src-work-8cacf13bb3f6a1be"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "song-000036",
+      "title": "ロミオとシンデレラ",
+      "originalArtists": [
+        "doriko"
+      ],
+      "aliases": [],
+      "readings": [],
+      "identityUrl": "https://karent.jp/album/58",
+      "artistEvidence": "performer_description",
+      "sourceRefs": [
+        "src-v6b-65754521b7ead3d3",
+        "src-work-1db5d21b7cb8e068"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "song-000037",
+      "title": "メランコリック",
+      "originalArtists": [
+        "Junky"
+      ],
+      "aliases": [],
+      "readings": [],
+      "identityUrl": "https://karent.jp/album/597",
+      "artistEvidence": "performer_description",
+      "sourceRefs": [
+        "src-v6b-1ec14e04aa96c4ed",
+        "src-work-4071794c32e12a37"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "song-000038",
+      "title": "乙女解剖",
+      "originalArtists": [
+        "DECO*27"
+      ],
+      "aliases": [],
+      "readings": [],
+      "identityUrl": "https://www.youtube.com/watch?v=7zwCIz-Ohn4",
+      "artistEvidence": "performer_description",
+      "sourceRefs": [
+        "src-v6b-0f7d17cb3ad66571",
+        "src-work-cf0d1b2a23d74635"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "song-000039",
+      "title": "とても素敵な六月でした",
+      "originalArtists": [
+        "Eight"
+      ],
+      "aliases": [],
+      "readings": [],
+      "identityUrl": "https://www.youtube.com/watch?v=qejMJ6YrS3E",
+      "artistEvidence": "performer_description",
+      "sourceRefs": [
+        "src-v6b-b6927d7d8ce53a5a",
+        "src-work-3dba89a8543a0ea6"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "song-000040",
+      "title": "Fire◎Flower",
+      "originalArtists": [
+        "halyosy"
+      ],
+      "aliases": [],
+      "readings": [],
+      "identityUrl": "https://halyosy.com/fireflower",
+      "artistEvidence": "performer_description",
+      "sourceRefs": [
+        "src-v6b-ce9d403d72db01af",
+        "src-work-4edb9a1a2534199a"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "song-000041",
+      "title": "又三郎",
+      "originalArtists": [
+        "ヨルシカ"
+      ],
+      "aliases": [],
+      "readings": [],
+      "identityUrl": "https://yorushika.com/news/detail/11290",
+      "artistEvidence": "performer_description",
+      "sourceRefs": [
+        "src-v6b-80c8269a784f3266",
+        "src-work-7393800ad52677c6"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "song-000042",
+      "title": "リードコントロール",
+      "originalArtists": [
+        "なるみや"
+      ],
+      "aliases": [],
+      "readings": [],
+      "identityUrl": "https://www.universal-music.co.jp/narumiya/products/uu1as-02178/",
+      "artistEvidence": "performer_description",
+      "sourceRefs": [
+        "src-v6b-852ea15901ad602d",
+        "src-work-2895dd19481e5721"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "song-000043",
+      "title": "夜に駆ける",
+      "originalArtists": [
+        "YOASOBI"
+      ],
+      "aliases": [],
+      "readings": [],
+      "identityUrl": "https://www.youtube.com/watch?v=x8VYWazR5mE",
+      "artistEvidence": "performer_description",
+      "sourceRefs": [
+        "src-v6b-8648840251a05a1a",
+        "src-work-08024cec26282e3e"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "song-000044",
+      "title": "もしも命が描けたら",
+      "originalArtists": [
+        "YOASOBI"
+      ],
+      "aliases": [],
+      "readings": [],
+      "identityUrl": "https://www.youtube.com/watch?v=I0kytvnHG-Q",
+      "artistEvidence": "performer_description",
+      "sourceRefs": [
+        "src-v6b-ed954f1ec02473a0",
+        "src-work-93b71824728d3f06"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "song-000045",
+      "title": "エアロピクルス",
+      "originalArtists": [
+        "コメアニメ"
+      ],
+      "aliases": [],
+      "readings": [],
+      "identityUrl": null,
+      "artistEvidence": "performer_description",
+      "sourceRefs": [
+        "src-v6b-4ebc8432f2d7427c"
+      ],
+      "visibility": "draft",
+      "identityStatus": "unresolved"
+    },
+    {
+      "id": "song-000046",
+      "title": "ダダダダ天使",
+      "originalArtists": [
+        "ナナヲアカリ"
+      ],
+      "aliases": [],
+      "readings": [],
+      "identityUrl": "https://www.youtube.com/watch?v=ANp0qch3XVM",
+      "artistEvidence": "performer_description",
+      "sourceRefs": [
+        "src-v6b-ac0ce1096fd03595",
+        "src-work-a2dc484f24919395"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "song-000047",
+      "title": "シル・ヴ・プレジデント",
+      "originalArtists": [
+        "P丸様。"
+      ],
+      "aliases": [],
+      "readings": [],
+      "identityUrl": "https://www.youtube.com/watch?v=3V9952osjnc",
+      "artistEvidence": "performer_description",
+      "sourceRefs": [
+        "src-v6b-d4b5db35c75c0b3c",
+        "src-work-3bc9e5d5daee74ec"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "song-000048",
+      "title": "誇り高きアイドル",
+      "originalArtists": [
+        "HoneyWorks"
+      ],
+      "aliases": [],
+      "readings": [],
+      "identityUrl": "https://honeyworks.jp/news/7247/",
+      "artistEvidence": "performer_description",
+      "sourceRefs": [
+        "src-v6b-ca272e0a0638677c",
+        "src-work-db2e5ceeaedad640"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "song-000049",
+      "title": "エゴロック",
+      "originalArtists": [
+        "すりぃ"
+      ],
+      "aliases": [],
+      "readings": [],
+      "identityUrl": null,
+      "artistEvidence": "performer_description",
+      "sourceRefs": [
+        "src-v6b-6a429af1b5277e77"
+      ],
+      "visibility": "draft",
+      "identityStatus": "unresolved"
+    },
+    {
+      "id": "song-000050",
+      "title": "私は最強",
+      "originalArtists": [
+        "Ado"
+      ],
+      "aliases": [],
+      "readings": [],
+      "identityUrl": "https://www.youtube.com/watch?v=sk1Z-Hqwwog",
+      "artistEvidence": "performer_description",
+      "sourceRefs": [
+        "src-v6b-70b5bd924e6cc08b",
+        "src-work-27307fa6b12f803f"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "song-000051",
+      "title": "departure!",
+      "originalArtists": [
+        "小野正利"
+      ],
+      "aliases": [],
+      "readings": [],
+      "identityUrl": "https://www.vap.co.jp/hunterhunter/cd01.html",
+      "artistEvidence": "performer_description",
+      "sourceRefs": [
+        "src-v6b-d8e7f0a17f315390",
+        "src-work-1c4445cb4f7dce03"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "song-000052",
+      "title": "旅人の唄",
+      "originalArtists": [
+        "大原ゆい子"
+      ],
+      "aliases": [],
+      "readings": [],
+      "identityUrl": "https://yuiko-ohara.com/news/201218/",
+      "artistEvidence": "performer_description",
+      "sourceRefs": [
+        "src-v6b-25517115c7aba518",
+        "src-work-fd029f6d0696aed2"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "song-000053",
+      "title": "RPG",
+      "originalArtists": [
+        "SEKAI NO OWARI"
+      ],
+      "aliases": [],
+      "readings": [],
+      "identityUrl": "https://www.youtube.com/watch?v=Mi9uNu35Gmk",
+      "artistEvidence": "performer_description",
+      "sourceRefs": [
+        "src-v6b-049a28c15666a7e6",
+        "src-work-88c36a3f3cc002f6"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "song-000054",
+      "title": "アフターエポックス",
+      "originalArtists": [
+        "sasakure.UK"
+      ],
+      "aliases": [],
+      "readings": [],
+      "identityUrl": "https://karent.jp/album/4156",
+      "artistEvidence": "performer_description",
+      "sourceRefs": [
+        "src-v6b-cb5de580775e5e50",
+        "src-work-af17c47df70bc174"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "song-000055",
+      "title": "Journey",
+      "originalArtists": [
+        "DECO*27"
+      ],
+      "aliases": [],
+      "readings": [],
+      "identityUrl": "https://otoiro.co.jp/topics/97213/",
+      "artistEvidence": "performer_description",
+      "sourceRefs": [
+        "src-v6b-fc504841e20e3165",
+        "src-work-ed1a1fb1d851f8da"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "song-000056",
+      "title": "夢結いレター",
+      "originalArtists": [
+        "香鳴ハノン"
+      ],
+      "aliases": [],
+      "readings": [],
+      "identityUrl": "https://www.youtube.com/watch?v=nNyroittCT0",
+      "artistEvidence": "original_source",
+      "sourceRefs": [
+        "src-v6b-8e0925b5e8731f60"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "song-000057",
+      "title": "凸凹デコダイアリー",
+      "originalArtists": [
+        "香鳴ハノン"
+      ],
+      "aliases": [],
+      "readings": [],
+      "identityUrl": "https://www.youtube.com/watch?v=TV7XXZDZQ0g",
+      "artistEvidence": "original_source",
+      "sourceRefs": [
+        "src-v6b-b993f49c974976a4"
       ],
       "visibility": "public"
     }
@@ -113,6 +946,36 @@
       "registeredAt": "2026-11-14T23:02:16.705410Z",
       "sourceRefs": [
         "src-music-e0jemzb45s8"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "mv-000003",
+      "type": "original",
+      "songId": "song-000056",
+      "rawSongTitle": "夢結いレター",
+      "talentIds": [
+        "tal-000011"
+      ],
+      "youtubeId": "nNyroittCT0",
+      "registeredAt": "2026-11-15T16:29:28.738Z",
+      "sourceRefs": [
+        "src-v6b-8e0925b5e8731f60"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "mv-000004",
+      "type": "original",
+      "songId": "song-000057",
+      "rawSongTitle": "凸凹デコダイアリー",
+      "talentIds": [
+        "tal-000011"
+      ],
+      "youtubeId": "TV7XXZDZQ0g",
+      "registeredAt": "2026-11-15T16:29:28.738Z",
+      "sourceRefs": [
+        "src-v6b-b993f49c974976a4"
       ],
       "visibility": "public"
     }

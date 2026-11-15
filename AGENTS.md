@@ -5,3 +5,5 @@
 - Run `npm run check`, `npm test`, `npm run build`, and `npm run test:browser`. Check the version/footer and update banner on mobile and desktop. CI compares visitor-facing changes against the PR base to catch omitted release updates.
 - Dependencies: merge the preceding PR into main first, retarget the following PR to main, inspect Files changed and re-run CI before merging. Never merge a dependent PR into a feature branch to finish the work.
 - Preserve the schedule controls, collectors, data safeguards and publishing allowlist. Do not publish candidate ledgers, registries, schemas, fixtures or secrets. Do not merge, push main, write to the Wiki or change production settings without explicit authorization.
+
+- A Song identity must use verified work-level original/official release evidence. Karaoke timestamps and comments are Performance provenance, never Song identity. Unknown work identities stay draft with identityUrl=null and public performances keep songId=null; retain issued IDs. Reuse canonical identity/verified aliases across archives and singers; never infer identity from title alone.

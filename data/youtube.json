@@ -1915,7 +1915,7 @@
     "date": "2026-11-15T04:05:01.000Z",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/kqXESb0SdBI/mqdefault.jpg?v=6af92f43",
+    "thumbnail": "https://i.ytimg.com/vi/kqXESb0SdBI/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/traR_yWe-AOGyM2wjo8h2FJO9JWBcbjfrL13X-umeD6BtNPopSZ2Q3YmdJq_5K9gWgHf_j64iQ=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=kqXESb0SdBI"
   },
@@ -1975,7 +1975,7 @@
     "date": "2026-11-15T06:12:40.000Z",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/4VLFxT8cnmc/mqdefault.jpg?v=6af929d2",
+    "thumbnail": "https://i.ytimg.com/vi/4VLFxT8cnmc/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/CH5JMWVQZ_RtloaXoj6W-yXjo9x8UxXSBG_vMyDnfk7M2QTOApVE1zOesu_aDrSAqvDbGrUyxs0=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=4VLFxT8cnmc"
   },
@@ -2021,7 +2021,7 @@
     "youtubeid": "UC_a00ml_EVDXSrtY8ZuyqGQ",
     "title": "【お絵描き】藤宮コトハ先輩のSDイラストを描いてお祝いするぞ～！🎂🎨【#夏渚まはろ￤#パレプロ】",
     "date": "2026-11-15T09:00:06.000Z",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/o2gsc_vi-kE/mqdefault.jpg?v=6af3aa69",
     "channelIcon": "https://yt3.ggpht.com/iktv-39nC7NDASD1WeXms-DEuHuVqB5RhwTtdDe26w-BCvqf6yq3r_8zBiv2i2CfNXCK0uE8=s240-c-k-c0x00ffffff-no-rj",
@@ -2052,6 +2052,18 @@
     "url": "https://www.youtube.com/watch?v=9QFYBcK3x2k"
   },
   {
+    "videoId": "NZIY42TwAmA",
+    "name": "なる",
+    "youtubeid": "UCMX0Mn5PTjojdQL8MN1B5Vg",
+    "title": "【歌ってみた】拝啓、少年よ #shorts #vtuber準備中 #Vtuberなる",
+    "date": "2026-11-15T10:00:17.000Z",
+    "status": "archive",
+    "type": "video",
+    "thumbnail": "https://i.ytimg.com/vi/NZIY42TwAmA/mqdefault.jpg",
+    "channelIcon": "https://yt3.ggpht.com/WpUR8zmDIYc32TI4TaCs4phlED_DjAO1EIivl_xFlgtMIvFtgusJGiYN9-PBeLpTkFlq2oUhm1U=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=NZIY42TwAmA"
+  },
+  {
     "videoId": "w9ZiW4E2clQ",
     "name": "変幻リメ",
     "youtubeid": "UC5bCRde8xRrNS7s6GjCNCyQ",
@@ -2068,8 +2080,8 @@
     "name": "桜庭羽奈",
     "youtubeid": "UCPgg_A08ksSYP-VivJGniRw",
     "title": "#2　完全初見プレイ！新人Vtuberがテイルズシリーズを実況プレイしてみた！【テイルズ オブ グレイセス エフ リマスター／ゲーム実況配信】",
-    "date": "2026-11-15T10:30:00.000Z",
-    "status": "upcoming",
+    "date": "2026-11-15T10:33:24.000Z",
+    "status": "live",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/pzIfgSeTBso/mqdefault.jpg?v=6af972ed",
     "channelIcon": "https://yt3.ggpht.com/Iqa8kv9Rtxo6WwJDofayPUFNXpzczylLfnLo7PZFqtgBos31fl5FH1bEldVwBn04oSSbmN8D=s240-c-k-c0x00ffffff-no-rj",
@@ -2080,12 +2092,24 @@
     "name": "Palette Project",
     "youtubeid": "UC_cCW1xmXwRFp1tX-RD2X1Q",
     "title": "【 #藤宮コトハ生誕祭2026】Good Luck【パレプロ / Palette Project】",
-    "date": "2026-11-15T11:00:00.000Z",
-    "status": "upcoming",
+    "date": "2026-11-15T10:56:53.000Z",
+    "status": "live",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/cCaF5xDZ8Lc/mqdefault.jpg?v=6af364ef",
     "channelIcon": "https://yt3.ggpht.com/ytc/AIdro_nuv43BXc-JNRM-omFed0brcXGTD8qvA8313ZeQa8PfviA=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=cCaF5xDZ8Lc"
+  },
+  {
+    "videoId": "ox60KWIkies",
+    "name": "鈴木沙透",
+    "youtubeid": "UCj5nRzNFXZn9GRhITRkKElA",
+    "title": "スタジオで点描の唄歌ってみた #アカペラ #vtuber #パレデミア学園",
+    "date": "2026-11-15T11:00:28.000Z",
+    "status": "archive",
+    "type": "video",
+    "thumbnail": "https://i.ytimg.com/vi/ox60KWIkies/mqdefault.jpg",
+    "channelIcon": "https://yt3.ggpht.com/HS-52_p7fIqMPokM5Wq_16ALyGWaJMB31ChyEb02uLUl-GpABw-FVtvMCQrkLrJ4i1xrmRS4Ug=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=ox60KWIkies"
   },
   {
     "videoId": "XBsho3uXWLM",

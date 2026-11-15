@@ -195,3 +195,11 @@ test("an invalid cross-master reference blocks unrelated talent edits", async ()
   value.displayName += "確認";
   await assert.rejects(preview(s, await input(s, "save", value)), /validation/);
 });
+test("unchanged saves cannot create audit-only PRs or bypass fresh verification", async () => {
+  const s = snapshot();
+  const value = structuredClone(s.models.talents.talents[0]);
+  const request = await input(s, "save", value);
+  await assert.rejects(preview(s, request, { actor: "123" }), /no_changes/);
+  delete request.evidence;
+  await assert.rejects(preview(s, request, { actor: "123" }), /confirmation/);
+});

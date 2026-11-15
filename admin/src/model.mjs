@@ -362,11 +362,7 @@ export async function preview(snapshot, input, { actor } = {}) {
     changed = record
       ? Object.keys(record).filter((k) => !equal(old?.[k], record[k]))
       : [];
-  const needsApproval =
-    changed.length ||
-    ["delete", "merge", "visibility", "collection", "wiki"].includes(
-      input.action,
-    );
+  const needsApproval = true; // Even metadata-only changes require fresh evidence.
   if (needsApproval) {
     if (
       !input.evidence ||
@@ -433,7 +429,17 @@ export async function preview(snapshot, input, { actor } = {}) {
       files[name] = models[name];
       diff.push({ file: name, before: before[name], after: models[name] });
     }
-  if (!diff.length) fail(400, "no_changes");
+  if (
+    !diff.some((d) => d.file !== "admin-ledger") &&
+    !(
+      input.action === "wiki" &&
+      !equal(
+        before["admin-ledger"].wikiExclusions,
+        models["admin-ledger"].wikiExclusions,
+      )
+    )
+  )
+    fail(400, "no_changes");
   const title =
     (old?.displayName ||
       old?.name ||

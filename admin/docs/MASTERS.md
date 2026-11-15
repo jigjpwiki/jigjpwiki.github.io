@@ -39,4 +39,4 @@ rootでnpm ci、adminでnpm ci。rootのcheck/test/build/test:browserに加え�
 
 B/Cへはowner以外のrole、候補一括承認、監視・API予算ダッシュボード、外部Wiki同期policy連携、参照付きレコードの匿名化・公開履歴維持方針を引き継ぐ。今回の安全側の保留を無条件に外さない。
 
-実行結果：admin単体/結合16件成功、公開サイト169件成功、check/build/既存browser成功。workerd/SQLite DOではmock OAuthからstatic Schema全体検証・PR作成・二重送信まで成功。管理E2Eは4画面幅で新規と編集を各1回、320pxではPR403失敗→再送も確認。スクリーンショット: [詳細390px](screens/admin-detail-390.png)、[詳細1440px](screens/admin-detail-1440.png)、[PR結果390px](screens/admin-result-390.png)、[PR結果1440px](screens/admin-result-1440.png)。ローカルfixture認証であり、本番GitHub/Cloudflareへは書き込んでいない。
+実行結果：admin単体/結合17件成功、公開サイト169件成功、check/build/既存browser成功。workerd/SQLite DOではmock OAuthからstatic Schema全体検証・PR作成・二重送信まで成功。管理E2Eは4画面幅で新規と編集を各1回、320pxではPR403失敗→再送も確認。スクリーンショット: [詳細390px](screens/admin-detail-390.png)、[詳細1440px](screens/admin-detail-1440.png)、[PR結果390px](screens/admin-result-390.png)、[PR結果1440px](screens/admin-result-1440.png)。ローカルfixture認証であり、本番GitHub/Cloudflareへは書き込んでいない。

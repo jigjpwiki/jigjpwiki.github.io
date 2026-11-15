@@ -1,0 +1,3 @@
+const date=v=>/^\d{4}-\d\d-\d\d$/.test(v)&&Number.isFinite(Date.parse(v))&&new Date(v).toISOString().slice(0,10)===v;
+const publicUrl=v=>{try{const u=new URL(v);return u.protocol==='https:'&&!u.username&&!u.password&&!u.port&&![...u.searchParams.keys()].some(k=>/key|token|password|secret|auth/i.test(k));}catch{return false;}};
+module.exports={'date':date,'date-time':v=>/^\d{4}-\d\d-\d\dT\d\d:\d\d:\d\d(?:\.\d+)?Z$/.test(v)&&date(v.slice(0,10))&&Number.isFinite(Date.parse(v)),'public-url':publicUrl,'image-ref':v=>publicUrl(v)||(/^\/assets\/[a-zA-Z0-9_./-]+\.(?:png|svg|webp|jpg)$/.test(v)&&!v.split('/').some(p=>p==='..'||p==='.'))};

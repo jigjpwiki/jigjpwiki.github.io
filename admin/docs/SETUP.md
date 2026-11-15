@@ -26,7 +26,7 @@
 
 ## ローカル・CI
 
-`cd admin && npm ci && npm test && npm run check`。checkはbuildとwrangler **dry-run**のみ。`npm run dev`はローカルWorkerを起動する。`.dev.vars.example`を`.dev.vars`へ複製し、値をローカルのみ設定。開発環境も認証を省略しない。秘密値のない自動テストではfetch/storageをモックし、実GitHubへの書込を行わない。
+`npm ci && npm ci --prefix admin`の後、`cd admin && npm test && npm run check`。checkはbuildとwrangler **dry-run**のみ。`npm run dev`はローカルWorkerを起動する。`.dev.vars.example`を`.dev.vars`へ複製し、値をローカルのみ設定。開発環境も認証を省略しない。秘密値のない自動テストではfetch/storageをモックし、実GitHubへの書込を行わない。
 
 ## セキュリティと費用
 
@@ -43,3 +43,5 @@ A1は認証・固定GitHub連携・安全なPR送信の基盤です。編集用p
 OAuth公式根拠（取得200/PKCE記載確認）: https://docs.github.com/en/apps/creating-github-apps/authenticating-with-a-github-app/generating-a-user-access-token-for-a-github-app 。この接続ではCloudflare dashboardを操作していないため、既存アカウントID・本番worker.dev名・残枠・既存Appの再利用可否の最終確認は所有者が行う。
 
 A1検証: 管理基盤6テスト、既存168テスト、check/build/browser成功。wrangler deploy --dry-run成功（新Worker専用ADMIN/ASSETS bindingのみ）。実GitHub書込はモックで検証し、App作成やCloudflareへデプロイはしていない。
+
+A2ではMASTERS.mdの編集・公開射影を追加する。A1の基盤のみの説明はA1差分の範囲であり、A2適用後は認証→編集→preview→PR作成が有効になる。公開データ保護のpatch releaseは2.9.1。本番の管理画面公開を告知するものではない。

@@ -424,6 +424,12 @@
               "type": "null"
             }
           ]
+        },
+        "visibility": {
+          "enum": [
+            "public",
+            "draft"
+          ]
         }
       }
     }

@@ -604,7 +604,7 @@
     {
       "id": "perf-000019",
       "karaokeId": "karaoke-000001",
-      "songId": "song-000021",
+      "songId": null,
       "order": 19,
       "startsAtSeconds": 8010,
       "endsAtSeconds": null,
@@ -964,7 +964,7 @@
     {
       "id": "perf-000037",
       "karaokeId": "karaoke-000003",
-      "songId": null,
+      "songId": "song-000003",
       "order": 6,
       "startsAtSeconds": 2672,
       "endsAtSeconds": null,
@@ -1104,7 +1104,7 @@
     {
       "id": "perf-000044",
       "karaokeId": "karaoke-000003",
-      "songId": "song-000045",
+      "songId": null,
       "order": 13,
       "startsAtSeconds": 5543,
       "endsAtSeconds": null,
@@ -1204,7 +1204,7 @@
     {
       "id": "perf-000049",
       "karaokeId": "karaoke-000004",
-      "songId": "song-000049",
+      "songId": null,
       "order": 4,
       "startsAtSeconds": 1248,
       "endsAtSeconds": null,

@@ -8,7 +8,7 @@
 
 | 公開マスターへの変更 | 新規 | 合計 |
 |---|---:|---:|
-| 楽曲 | **52**（公式オリジナル2、公式歌枠説明欄の表記50） | 57 |
+| 楽曲 | **49公開＋3未確定**（発行IDは52） | 54公開 / 57レコード |
 | 歌動画 | **2**（オリジナル、カバー追加0） | 4 |
 | 歌枠 | **15** | 17 |
 | 歌唱記録 | **52** | 55 |
@@ -17,7 +17,7 @@
 
 曲・時刻は本人の公式説明欄の番号付きリストを出典として確認した。音声を聴いて全編を検証したという意味ではない。4本の公式リスト計55行を転記し、OP/開始挨拶は除外。既知の全31行を確認したw7は**complete（31/31）**へ更新。他の3本は全体の既知件数を確定せずpartialとする。完全性は公式説明欄のセットリストを基準とし、音声から未記載の歌唱まで検証したという意味ではない。「31曲登録済み」は「配信内の歌唱が漏れなく31曲だった」という保証ではない。
 
-楽曲同一性の確認対象は新規52＋既存3の55 ID。説明欄出典のアーティスト名は`artistEvidence=performer_description`を維持し、作曲者/原歌唱者を独自に訂正しない。`金曜日のおはよう / HoneyWorks feat.Gero`は既存HoneyWorks表記への同一性を確定せず、歌唱記録のsongId=nullで原文を保持した。同名作品へ無理にリンクせず、新規Songの重複作成も避けた。版指定（original ver./movie ver.）は承認データから削除していない。
+楽曲同一性は[レビュー修正記録](SONG-IDENTITY.md)の方式へ改修した。新規50件と既存3件の仮の歌枠identityUrlを個別照合し、計50件を公式原典へ変更。残る3件はIDを保持したdraft/unresolvedとし、PerformanceはsongId=nullで残した。Songは全57レコード、公開54件、Performanceは55件を維持。配信表記由来のartistEvidenceは独立に保持する。
 
 ## コメントから何が増えたか
 
@@ -81,7 +81,7 @@ baseHash/resultHashで既存マスター全体の変更を検知する。並行P
 
 本文全文・投稿者の情報・いいね数は保存しない。必要な曲名/時刻/元行/コメントID/投稿更新日時/根拠URL/ハッシュだけを非公開runtimeに保持し、取得から30日で削除/再取得対象にする。期限切れデータを使う前に破棄する。API由来候補の全文/キャッシュをGit履歴へ恒久保存せず、runtimeはgitignore/Pages allowlist外。今回のコメント候補もGitには追加していない。根拠URLは公のコメントへの参照であって、投稿者プロフィールの収集ではない。作業後の一時メタデータ全文も削除する。既存の正式な確認記録と、期限付きAPIキャッシュを分離する。
 
-今回の実利用はvideos.list 2＋commentThreads.list 32＝**34要求/推定34単位**。返信0、検索API0、追加の有料サービス0。取得検証では環境のHTTPプロキシに合わせたワークスペース内のurllib transport注入を使い、Secret値/URL全体/API本文はログに出していない。プロジェクトの実際の割当/残量はGCP権限がなく未確認。同じGCPを使う可能性があるため別stateの予算はプロジェクト全体を拘束しない。20単位は余裕の保証ではなく、403等で停止して既存データを保持する。
+初回の実利用はvideos.list 2＋commentThreads.list 32＝34要求/推定34単位。原典修正でvideos.list 4要求を追加し、累計**38要求/推定38単位**。返信0、検索API0、追加の有料サービス0。取得検証では環境のHTTPプロキシに合わせたワークスペース内のurllib transport注入を使い、Secret値/URL全体/API本文はログに出していない。プロジェクトの実際の割当/残量はGCP権限がなく未確認。同じGCPを使う可能性があるため別stateの予算はプロジェクト全体を拘束しない。20単位は余裕の保証ではなく、403等で停止して既存データを保持する。
 
 ## 表示・公開・検証
 
@@ -96,8 +96,8 @@ baseHash/resultHashで既存マスター全体の変更を検知する。並行P
 |音楽|[前](screens/before/-music-390.png) / [後](screens/after/-music-390.png)|[前](screens/before/-music-1440.png) / [後](screens/after/-music-1440.png)|
 |既存歌枠|[前](screens/before/-music-karaoke-karaoke-000001-390.png) / [後](screens/after/-music-karaoke-karaoke-000001-390.png)|[前](screens/before/-music-karaoke-karaoke-000001-1440.png) / [後](screens/after/-music-karaoke-karaoke-000001-1440.png)|
 
-公開容量は[results.json](results.json)の同一データsnapshot比較。画像/音声/動画本体の追加は0、主な増分は52曲詳細と15歌枠詳細・JSON。Pages側のキュー/同期速度が改善したとは主張しない。内部レビュー/Schema/runtime/docs/Secretsが成果物へ入らないことを確認する。
+公開容量は[results.json](results.json)の同一データsnapshot比較。画像/音声/動画本体の追加は0、初回比較の主な増分は52曲詳細と15歌枠詳細・JSON。原典修正後は未確定の曲詳細3件を非公開にし、同一配信snapshotでの修正前後容量をresults.jsonのidentityCorrectionへ追記した。Pages側のキュー/同期速度が改善したとは主張しない。内部レビュー/Schema/runtime/docs/Secretsが成果物へ入らないことを確認する。
 
 未実装・保留：コメントだけの293行を含む独立検証、検出した32矛盾の解消、残り候補の種別/作品同一性、返却されなかった1動画、全編の完全性確認、全返信/全過去コメント、音声認識、ダッシュボード、イベント・グッズ収集（第6段階C）。件数を増やすためにこれらを承認扱いにしない。
 
-最終ローカル検証：`npm run check`、`npm test`（150件）、`npm run build`、`CHROMIUM_PATH=/usr/bin/chromium npm run test:browser`。全4幅/JS有無の回帰と、390/1440pxのスクリーンショットを確認。登録案の再実行は新規0/変更0。公開allowlistに内部ファイル・Secret値が混入しないことを確認した。
+最終ローカル検証：`npm run check`、`npm test`（156件）、`npm run build`、`CHROMIUM_PATH=/usr/bin/chromium npm run test:browser`。全4幅/JS有無の回帰と、390/1440pxのスクリーンショットを確認。登録案の再実行は新規0/変更0。公開allowlistに内部ファイル・Secret値が混入しないことを確認した。

@@ -209,6 +209,42 @@
                       "performer_description",
                       "unknown"
                     ]
+                  },
+                  "identityEvidence": {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "required": [
+                      "status",
+                      "kind",
+                      "sourceUrl",
+                      "publisher",
+                      "checkedAt"
+                    ],
+                    "properties": {
+                      "status": {
+                        "const": "verified"
+                      },
+                      "kind": {
+                        "enum": [
+                          "official_mv",
+                          "official_release",
+                          "official_song_page"
+                        ]
+                      },
+                      "sourceUrl": {
+                        "type": "string",
+                        "format": "public-url"
+                      },
+                      "publisher": {
+                        "type": "string",
+                        "minLength": 1,
+                        "maxLength": 200
+                      },
+                      "checkedAt": {
+                        "type": "string",
+                        "format": "date-time"
+                      }
+                    }
                   }
                 },
                 "required": [
@@ -310,6 +346,42 @@
                             "performer_description",
                             "unknown"
                           ]
+                        },
+                        "identityEvidence": {
+                          "type": "object",
+                          "additionalProperties": false,
+                          "required": [
+                            "status",
+                            "kind",
+                            "sourceUrl",
+                            "publisher",
+                            "checkedAt"
+                          ],
+                          "properties": {
+                            "status": {
+                              "const": "verified"
+                            },
+                            "kind": {
+                              "enum": [
+                                "official_mv",
+                                "official_release",
+                                "official_song_page"
+                              ]
+                            },
+                            "sourceUrl": {
+                              "type": "string",
+                              "format": "public-url"
+                            },
+                            "publisher": {
+                              "type": "string",
+                              "minLength": 1,
+                              "maxLength": 200
+                            },
+                            "checkedAt": {
+                              "type": "string",
+                              "format": "date-time"
+                            }
+                          }
                         }
                       },
                       "required": [
@@ -656,6 +728,13 @@
         ]
       },
       "maxItems": 200
+    },
+    "sources": {
+      "type": "array",
+      "maxItems": 200,
+      "items": {
+        "$ref": "https://www.jigdule.jp/schemas/feature-common#/definitions/source"
+      }
     }
   },
   "required": [

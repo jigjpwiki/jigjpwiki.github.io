@@ -63,6 +63,7 @@
   function card(item) {
     const wrapper = element('div', 'live-wrapper');
     wrapper.dataset.contentType = item.type;
+    if (item.platform === 'youtube') { wrapper.dataset.videoId = item.videoId || ''; wrapper.dataset.youtubeid = item.youtubeid || ''; }
     const live = item.status === 'live';
     const anchor = element(item.url ? 'a' : 'div', `live-block${live ? ' is-live' : ''}`);
     if (item.url) { anchor.href = item.url; anchor.target = '_blank'; anchor.rel = 'noopener noreferrer'; }

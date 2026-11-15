@@ -1,0 +1,206 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "karaokes",
+    "performances"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": 1
+    },
+    "karaokes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "youtubeId",
+          "talentIds",
+          "setlistStatus",
+          "expectedCount",
+          "registeredAt",
+          "sourceRefs",
+          "visibility"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^karaoke-[0-9]{6}$"
+          },
+          "youtubeId": {
+            "type": "string",
+            "pattern": "^[A-Za-z0-9_-]{11}$"
+          },
+          "talentIds": {
+            "type": "array",
+            "uniqueItems": true,
+            "items": {
+              "type": "string",
+              "pattern": "^tal-[0-9]{6}$"
+            },
+            "minItems": 1
+          },
+          "setlistStatus": {
+            "enum": [
+              "unreviewed",
+              "partial",
+              "complete"
+            ]
+          },
+          "expectedCount": {
+            "anyOf": [
+              {
+                "type": "integer",
+                "minimum": 0
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "registeredAt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "sourceRefs": {
+            "$ref": "https://www.jigdule.jp/schemas/feature-common#/definitions/refs"
+          },
+          "visibility": {
+            "enum": [
+              "public",
+              "draft"
+            ]
+          }
+        }
+      }
+    },
+    "performances": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "karaokeId",
+          "songId",
+          "order",
+          "startsAtSeconds",
+          "endsAtSeconds",
+          "talentIds",
+          "rawLabel",
+          "note",
+          "verification",
+          "sourceRefs",
+          "visibility",
+          "verificationMethod"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^perf-[0-9]{6}$"
+          },
+          "karaokeId": {
+            "type": "string",
+            "pattern": "^karaoke-[0-9]{6}$"
+          },
+          "songId": {
+            "anyOf": [
+              {
+                "type": "string",
+                "pattern": "^song-[0-9]{6}$"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "order": {
+            "anyOf": [
+              {
+                "type": "integer",
+                "minimum": 1
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "startsAtSeconds": {
+            "anyOf": [
+              {
+                "type": "integer",
+                "minimum": 0
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "endsAtSeconds": {
+            "anyOf": [
+              {
+                "type": "integer",
+                "minimum": 0
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "talentIds": {
+            "type": "array",
+            "uniqueItems": true,
+            "items": {
+              "type": "string",
+              "pattern": "^tal-[0-9]{6}$"
+            },
+            "minItems": 1
+          },
+          "rawLabel": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 400
+          },
+          "note": {
+            "anyOf": [
+              {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 800
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "verification": {
+            "enum": [
+              "verified",
+              "unreviewed",
+              "rejected"
+            ]
+          },
+          "sourceRefs": {
+            "$ref": "https://www.jigdule.jp/schemas/feature-common#/definitions/refs"
+          },
+          "visibility": {
+            "enum": [
+              "public",
+              "draft"
+            ]
+          },
+          "verificationMethod": {
+            "enum": [
+              "official_description",
+              "manual_review"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "$schema": "http://json-schema.org/draft-07/schema#"
+}

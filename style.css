@@ -702,3 +702,7 @@ footer { flex-shrink: 0; }
     min-width: 0;
   }
 }
+
+/* Optional verified karaoke destination; the original video card/link stays intact. */
+.karaoke-link { display:block; margin:4px 0 8px; padding:3px 2px; min-height:24px; font-size:11px; line-height:1.5; text-align:right; color:#185497; }
+.karaoke-link:focus-visible { outline:3px solid #1765ae; outline-offset:2px; }

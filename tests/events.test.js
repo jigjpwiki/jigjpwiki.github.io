@@ -12,7 +12,7 @@ test('event and media validation rejects dangling IDs, duplicate videos, unsafe 
 });
 test('relay slots support distinct performers, unknown times, archive links and validate against event period',()=>{
  const m=model(),e=m.events.events[1];e.type='relay';const slot={id:'slot-000001',title:'出演枠',starts:{precision:'unknown',value:null},ends:{precision:'unknown',value:null},talentIds:e.talentIds,videoIds:e.videoIds,streamUrls:[],sourceRefs:e.sourceRefs};e.slots=[slot,{...structuredClone(slot),id:'slot-000002',talentIds:[t.talents[0].id]}];assert.equal(check(m).events[1].slots.length,2);
- slot.starts={precision:'instant',value:'2020-01-01T00:00:00Z'};assert.throws(()=>check(m),/outside/);
+ slot.starts={precision:'instant',value:'2020-01-01T00:00:00Z'};assert.throws(()=>check(m),/outside/);slot.starts={precision:'instant',value:'2030-01-01T00:00:00Z'};assert.throws(()=>check(m),/outside/);
 });
 test('unknown/month/date times do not imply midnight, JST is explicit, draft sources never enter public projection',()=>{
  assert.match(timeLabel({precision:'instant',value:'2026-12-31T15:00:00Z'}),/2027\/01\/01.*00:00.*JST/);assert.match(timeLabel({precision:'date',value:'2026-12-26'}),/時刻未定/);assert.match(timeLabel({precision:'month',value:'2026-12'}),/日付未定/);assert.match(timeLabel({precision:'unknown',value:null}),/未定/);

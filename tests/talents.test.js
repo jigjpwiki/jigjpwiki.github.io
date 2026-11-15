@@ -101,3 +101,15 @@ test('build publishes only ready pages/public data and keeps schedule implementa
   for (const talent of master.talents) { assert(fs.existsSync(path.join(root, 'talents', talent.id, 'index.html'))); assert.match(read('sitemap.xml'), new RegExp('/talents/' + talent.id + '/')); }
   assert.equal((read('talents/index.html').match(/class="talent-card"/g) || []).length, master.talents.length);
 });
+
+test('feature pages and published JSON are allowlisted while candidates, registries and raw metadata stay out',()=>{
+ const root=path.join(__dirname,'../_site');
+ // The normal suite's build checks also verify every talent. Avoid concurrent build mutations here.
+ const source=fs.readFileSync(path.join(__dirname,'../scripts/build-site.js'),'utf8');
+ for(const privatePath of ['ops','schemas','docs','tests','lib','data/feature-id-registry.json','data/media.json','data/release.json'])assert(!fs.existsSync(path.join(root,privatePath)),privatePath);
+ for(const route of ['events','events/evt-000001','music','music/songs/song-000001','music/karaoke','music/karaoke/karaoke-000001'])assert(fs.existsSync(path.join(root,route,'index.html')),route);
+ for(const name of ['events','music','karaoke','karaoke-links']){const raw=fs.readFileSync(path.join(root,'data',name+'.json'),'utf8');assert.doesNotMatch(raw,/"(?:description|apiKey|password|token|privateNotes|reviewStatus)"/);}
+ const sitemap=fs.readFileSync(path.join(root,'sitemap.xml'),'utf8');
+ for(const [file,key,prefix]of [['events','events','events'],['music','songs','music/songs'],['karaoke','karaokes','music/karaoke']])for(const row of JSON.parse(fs.readFileSync(path.join(root,'data',file+'.json'),'utf8'))[key]){assert(fs.existsSync(path.join(root,prefix,row.id,'index.html')));assert(sitemap.includes(`https://www.jigdule.jp/${prefix}/${row.id}/`));}
+ assert.match(source,/projectKaraoke/);assert.match(source,/projectMusic/);
+});

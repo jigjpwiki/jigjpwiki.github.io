@@ -1,0 +1,10 @@
+'use strict';
+const fs=require('node:fs'),path=require('node:path');const {propose}=require('../lib/proposals');const {loadTalents}=require('../lib/talents');
+const root=path.resolve(__dirname,'..');const [inputFile,outputFile,previousFile]=process.argv.slice(2);
+if(!inputFile||!outputFile)throw new Error('Usage: node scripts/propose-media.cjs input.json ops/proposals/review.json [previous.json]');
+const output=path.resolve(outputFile),allowed=path.join(root,'ops/proposals')+path.sep;
+if(!output.startsWith(allowed))throw new Error('Candidate output must stay under ops/proposals; never write public data or _site');
+const read=file=>JSON.parse(fs.readFileSync(file,'utf8'));const optional=name=>{try{return read(path.join(root,'data',name+'.json'));}catch{return {};}};
+const media=optional('media'),music=optional('music'),karaoke=optional('karaoke'),events=optional('events');
+const result=propose(read(inputFile),loadTalents(root),{videos:media.videos,musicVideos:music.musicVideos,karaokes:karaoke.karaokes,events:events.events},previousFile?read(previousFile):undefined);
+fs.mkdirSync(path.dirname(output),{recursive:true});fs.writeFileSync(output,JSON.stringify(result,null,2)+'\n');console.log(`Wrote ${result.candidates.length} private review candidates. No approved master was modified; no API request was made.`);

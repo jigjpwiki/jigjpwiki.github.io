@@ -36,6 +36,36 @@
       "kind": "official",
       "url": "https://www.youtube.com/watch?v=5Jja39-69G8",
       "checkedAt": "2026-11-14T23:17:03.857033Z"
+    },
+    {
+      "id": "src-karaoke-1",
+      "kind": "official",
+      "url": "https://www.youtube.com/watch?v=w7E-oj1HOfc",
+      "checkedAt": "2026-11-14T23:02:16.705410Z"
+    },
+    {
+      "id": "src-karaoke-2",
+      "kind": "official",
+      "url": "https://www.youtube.com/watch?v=Gtj6VUcjVGM",
+      "checkedAt": "2026-11-14T23:02:16.705410Z"
+    },
+    {
+      "id": "src-song-setlist-3",
+      "kind": "official",
+      "url": "https://www.youtube.com/watch?v=w7E-oj1HOfc&t=485s",
+      "checkedAt": "2026-11-14T23:02:16.705410Z"
+    },
+    {
+      "id": "src-song-setlist-4",
+      "kind": "official",
+      "url": "https://www.youtube.com/watch?v=w7E-oj1HOfc&t=982s",
+      "checkedAt": "2026-11-14T23:02:16.705410Z"
+    },
+    {
+      "id": "src-song-setlist-5",
+      "kind": "official",
+      "url": "https://www.youtube.com/watch?v=w7E-oj1HOfc&t=1603s",
+      "checkedAt": "2026-11-14T23:02:16.705410Z"
     }
   ],
   "videos": [
@@ -78,6 +108,34 @@
       "availability": "public",
       "sourceRefs": [
         "src-music-e0jemzb45s8"
+      ],
+      "visibility": "public"
+    },
+    {
+      "youtubeId": "w7E-oj1HOfc",
+      "channelId": "UC_a00ml_EVDXSrtY8ZuyqGQ",
+      "title": "【歌枠】文化祭後夜祭風歌枠！まだ帰りたくない夜に歌う🎤【#夏渚まはろ￤#パレプロ】",
+      "publishedAt": "2026-11-12T17:41:45Z",
+      "startedAt": "2026-11-12T09:00:41Z",
+      "endedAt": "2026-11-12T12:45:15Z",
+      "durationSeconds": 13493,
+      "availability": "public",
+      "sourceRefs": [
+        "src-karaoke-1"
+      ],
+      "visibility": "public"
+    },
+    {
+      "youtubeId": "Gtj6VUcjVGM",
+      "channelId": "UCay6Y3oEoiC6ZEE2G0UZu_A",
+      "title": "【歌枠｜KARAOKE】久しぶりの歌枠！アイドル縛りでいくよ～！！！【#パレプロ #香鳴ハノン】",
+      "publishedAt": "2026-11-13T04:03:11Z",
+      "startedAt": "2026-11-12T14:08:22Z",
+      "endedAt": "2026-11-12T15:41:10Z",
+      "durationSeconds": 5575,
+      "availability": "public",
+      "sourceRefs": [
+        "src-karaoke-2"
       ],
       "visibility": "public"
     }

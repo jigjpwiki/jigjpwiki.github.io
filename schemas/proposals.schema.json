@@ -100,7 +100,8 @@
           "method": {
             "enum": [
               "title-keyword-and-channel-id",
-              "provided-announcement-link"
+              "provided-announcement-link",
+              "official-metadata-and-channel-id"
             ]
           },
           "proposedSetlist": {
@@ -163,7 +164,8 @@
             "enum": [
               "pending",
               "confirmed",
-              "rejected"
+              "rejected",
+              "needs_review"
             ]
           },
           "change": {
@@ -174,6 +176,69 @@
               "registered",
               "missing_from_input"
             ]
+          },
+          "publishedAt": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "format": "date-time"
+          },
+          "startedAt": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "format": "date-time"
+          },
+          "retrievedAt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "evidenceHash": {
+            "type": "string",
+            "pattern": "^[a-f0-9]{64}$"
+          },
+          "detectionMethods": {
+            "type": "array",
+            "items": {
+              "enum": [
+                "title-keyword",
+                "description-keyword",
+                "description-timestamp",
+                "registered-video"
+              ]
+            }
+          },
+          "history": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "evidenceHash",
+                "reviewStatus",
+                "observedAt"
+              ],
+              "properties": {
+                "evidenceHash": {
+                  "type": "string",
+                  "pattern": "^[a-f0-9]{64}$"
+                },
+                "reviewStatus": {
+                  "enum": [
+                    "pending",
+                    "confirmed",
+                    "rejected",
+                    "needs_review"
+                  ]
+                },
+                "observedAt": {
+                  "type": "string",
+                  "format": "date-time"
+                }
+              }
+            }
           }
         }
       }

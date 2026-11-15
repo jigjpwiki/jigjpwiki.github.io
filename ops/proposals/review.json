@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-14T23:55:18.313Z",
+  "generatedAt": "2026-11-15T13:51:54.094Z",
   "notice": "候補のみ。タイトルやチャプターだけでは楽曲/歌唱/開催内容を確定しない。入力からの欠落は削除や非公開の確定ではない。",
   "candidates": [
     {
@@ -44,6 +44,60 @@
       "change": "registered"
     },
     {
+      "key": "youtube:-PaYU2lrtBM",
+      "youtubeId": "-PaYU2lrtBM",
+      "channelId": "UCay6Y3oEoiC6ZEE2G0UZu_A",
+      "title": "【コール練習会】1stワンマン「ミズイロノオト」に向けて楽曲予習＆コール練習をしよう！④【#パレプロ #香鳴ハノン】",
+      "talentIds": [
+        "tal-000011"
+      ],
+      "hints": [
+        "event"
+      ],
+      "sourceUrl": "https://www.youtube.com/watch?v=-PaYU2lrtBM",
+      "sourceExcerpt": "【コール練習会】1stワンマン「ミズイロノオト」に向けて楽曲予習＆コール練習をしよう！④【#パレプロ #香鳴ハノン】",
+      "method": "official-metadata-and-channel-id",
+      "proposedSetlist": [],
+      "existingIds": [],
+      "reviewStatus": "pending",
+      "publishedAt": "2026-10-22T20:20:13Z",
+      "startedAt": "2026-10-22T13:18:27Z",
+      "retrievedAt": "2026-11-15T13:51:54.094Z",
+      "evidenceHash": "12c60cb5cf65b6d072b7ad3528d49129f52d8f0ab8c3c573a4139f6a47fb32c5",
+      "detectionMethods": [
+        "title-keyword"
+      ],
+      "history": [],
+      "change": "new"
+    },
+    {
+      "key": "youtube:5v8Kl-ghY4I",
+      "youtubeId": "5v8Kl-ghY4I",
+      "channelId": "UCay6Y3oEoiC6ZEE2G0UZu_A",
+      "title": "【必見】7秒で伝わる現地ライブの一体感──！！ #ミズイロノオト #香鳴ハノン",
+      "talentIds": [
+        "tal-000011"
+      ],
+      "hints": [
+        "event"
+      ],
+      "sourceUrl": "https://www.youtube.com/watch?v=5v8Kl-ghY4I",
+      "sourceExcerpt": "【必見】7秒で伝わる現地ライブの一体感──！！ #ミズイロノオト #香鳴ハノン",
+      "method": "official-metadata-and-channel-id",
+      "proposedSetlist": [],
+      "existingIds": [],
+      "reviewStatus": "pending",
+      "publishedAt": "2026-10-31T23:12:38Z",
+      "startedAt": null,
+      "retrievedAt": "2026-11-15T13:51:54.094Z",
+      "evidenceHash": "2788663128ec8295dd4b9eca1ba762cee8ce61de1670777628e16b2e909897ad",
+      "detectionMethods": [
+        "title-keyword"
+      ],
+      "history": [],
+      "change": "new"
+    },
+    {
       "key": "youtube:ajhOF3k5I_Q",
       "youtubeId": "ajhOF3k5I_Q",
       "channelId": "UCrB-SfrqB5ChY8aAT99grXw",
@@ -63,6 +117,179 @@
       "change": "new"
     },
     {
+      "key": "youtube:B_EKfTqecQw",
+      "youtubeId": "B_EKfTqecQw",
+      "channelId": "UC_a00ml_EVDXSrtY8ZuyqGQ",
+      "title": "【歌枠】声の出し方がまた変わった気がする【#夏渚まはろ￤#パレプロ】",
+      "talentIds": [
+        "tal-000006"
+      ],
+      "hints": [
+        "karaoke"
+      ],
+      "sourceUrl": "https://www.youtube.com/watch?v=B_EKfTqecQw",
+      "sourceExcerpt": "【歌枠】声の出し方がまた変わった気がする【#夏渚まはろ￤#パレプロ】",
+      "method": "official-metadata-and-channel-id",
+      "proposedSetlist": [
+        {
+          "rawLabel": "OP",
+          "order": null,
+          "startsAtSeconds": 0,
+          "endsAtSeconds": null,
+          "songId": null,
+          "method": "description-timestamp",
+          "verification": "pending"
+        },
+        {
+          "rawLabel": "開始",
+          "order": null,
+          "startsAtSeconds": 52,
+          "endsAtSeconds": null,
+          "songId": null,
+          "method": "description-timestamp",
+          "verification": "pending"
+        },
+        {
+          "rawLabel": "01. 言って。 / ヨルシカ",
+          "order": 1,
+          "startsAtSeconds": 584,
+          "endsAtSeconds": null,
+          "songId": null,
+          "method": "description-timestamp",
+          "verification": "pending"
+        },
+        {
+          "rawLabel": "02. Calc. / ジミーサムP",
+          "order": 2,
+          "startsAtSeconds": 1100,
+          "endsAtSeconds": null,
+          "songId": null,
+          "method": "description-timestamp",
+          "verification": "pending"
+        },
+        {
+          "rawLabel": "03. ロミオとシンデレラ / doriko",
+          "order": 3,
+          "startsAtSeconds": 1464,
+          "endsAtSeconds": null,
+          "songId": null,
+          "method": "description-timestamp",
+          "verification": "pending"
+        },
+        {
+          "rawLabel": "04. メランコリック / Junky",
+          "order": 4,
+          "startsAtSeconds": 1937,
+          "endsAtSeconds": null,
+          "songId": null,
+          "method": "description-timestamp",
+          "verification": "pending"
+        },
+        {
+          "rawLabel": "05. 乙女解剖 / DECO*27",
+          "order": 5,
+          "startsAtSeconds": 2320,
+          "endsAtSeconds": null,
+          "songId": null,
+          "method": "description-timestamp",
+          "verification": "pending"
+        },
+        {
+          "rawLabel": "06. 金曜日のおはよう / HoneyWorks feat.Gero",
+          "order": 6,
+          "startsAtSeconds": 2672,
+          "endsAtSeconds": null,
+          "songId": null,
+          "method": "description-timestamp",
+          "verification": "pending"
+        },
+        {
+          "rawLabel": "07. とても素敵な六月でした / Eight",
+          "order": 7,
+          "startsAtSeconds": 3060,
+          "endsAtSeconds": null,
+          "songId": null,
+          "method": "description-timestamp",
+          "verification": "pending"
+        },
+        {
+          "rawLabel": "08. Fire◎Flower / halyosy",
+          "order": 8,
+          "startsAtSeconds": 3478,
+          "endsAtSeconds": null,
+          "songId": null,
+          "method": "description-timestamp",
+          "verification": "pending"
+        },
+        {
+          "rawLabel": "09. 又三郎 / ヨルシカ",
+          "order": 9,
+          "startsAtSeconds": 4055,
+          "endsAtSeconds": null,
+          "songId": null,
+          "method": "description-timestamp",
+          "verification": "pending"
+        },
+        {
+          "rawLabel": "10. リードコントロール / なるみや",
+          "order": 10,
+          "startsAtSeconds": 4384,
+          "endsAtSeconds": null,
+          "songId": null,
+          "method": "description-timestamp",
+          "verification": "pending"
+        },
+        {
+          "rawLabel": "11. 夜に駆ける / YOASOBI",
+          "order": 11,
+          "startsAtSeconds": 4690,
+          "endsAtSeconds": null,
+          "songId": null,
+          "method": "description-timestamp",
+          "verification": "pending"
+        },
+        {
+          "rawLabel": "12. もしも命が描けたら / YOASOBI",
+          "order": 12,
+          "startsAtSeconds": 5190,
+          "endsAtSeconds": null,
+          "songId": null,
+          "method": "description-timestamp",
+          "verification": "pending"
+        },
+        {
+          "rawLabel": "13. エアロピクルス / コメアニメ",
+          "order": 13,
+          "startsAtSeconds": 5543,
+          "endsAtSeconds": null,
+          "songId": null,
+          "method": "description-timestamp",
+          "verification": "pending"
+        },
+        {
+          "rawLabel": "14. ダダダダ天使 / ナナヲアカリ",
+          "order": 14,
+          "startsAtSeconds": 5983,
+          "endsAtSeconds": null,
+          "songId": null,
+          "method": "description-timestamp",
+          "verification": "pending"
+        }
+      ],
+      "existingIds": [],
+      "reviewStatus": "pending",
+      "publishedAt": "2026-10-06T02:30:32Z",
+      "startedAt": "2026-10-05T11:24:34Z",
+      "retrievedAt": "2026-11-15T13:51:54.094Z",
+      "evidenceHash": "54a7994dfb6b726bb5dde52c3e9fd325812c9367b506d0e1586fa8e993cc751a",
+      "detectionMethods": [
+        "title-keyword",
+        "description-timestamp"
+      ],
+      "history": [],
+      "change": "new"
+    },
+    {
       "key": "youtube:d7SWtQptcpw",
       "youtubeId": "d7SWtQptcpw",
       "channelId": "UCbNEgJIF_ADD9e8-q7SoxCg",
@@ -75,13 +302,22 @@
       ],
       "sourceUrl": "https://www.youtube.com/watch?v=d7SWtQptcpw",
       "sourceExcerpt": "月が綺麗ねと言われたい！ - yuta kakizaki 　cover.常磐カナメ",
-      "method": "title-keyword-and-channel-id",
+      "method": "official-metadata-and-channel-id",
       "proposedSetlist": [],
       "existingIds": [
         "mv-000001"
       ],
-      "reviewStatus": "pending",
-      "change": "registered"
+      "reviewStatus": "needs_review",
+      "publishedAt": "2026-11-14T11:00:08Z",
+      "startedAt": "2026-11-14T11:00:08Z",
+      "retrievedAt": "2026-11-15T13:51:54.094Z",
+      "evidenceHash": "0e69a50a942b30bd340b9f2738bc4805137b034c8553f37acac1c1811d7b27de",
+      "detectionMethods": [
+        "title-keyword",
+        "registered-video"
+      ],
+      "history": [],
+      "change": "changed"
     },
     {
       "key": "youtube:e0JemZb45s8",
@@ -105,6 +341,33 @@
       "change": "registered"
     },
     {
+      "key": "youtube:fV0_OrZus_Y",
+      "youtubeId": "fV0_OrZus_Y",
+      "channelId": "UCbNEgJIF_ADD9e8-q7SoxCg",
+      "title": "JPOP縛り定期歌枠♡【パレプロ/常磐カナメ】",
+      "talentIds": [
+        "tal-000007"
+      ],
+      "hints": [
+        "karaoke"
+      ],
+      "sourceUrl": "https://www.youtube.com/watch?v=fV0_OrZus_Y",
+      "sourceExcerpt": "JPOP縛り定期歌枠♡【パレプロ/常磐カナメ】",
+      "method": "official-metadata-and-channel-id",
+      "proposedSetlist": [],
+      "existingIds": [],
+      "reviewStatus": "pending",
+      "publishedAt": "2026-10-11T01:05:29Z",
+      "startedAt": "2026-10-10T11:14:30Z",
+      "retrievedAt": "2026-11-15T13:51:54.094Z",
+      "evidenceHash": "7eeecf7e2c20122c0a90c532cf5a40258532157028f07bfc0099614b15b740f0",
+      "detectionMethods": [
+        "title-keyword"
+      ],
+      "history": [],
+      "change": "new"
+    },
+    {
       "key": "youtube:Gtj6VUcjVGM",
       "youtubeId": "Gtj6VUcjVGM",
       "channelId": "UCay6Y3oEoiC6ZEE2G0UZu_A",
@@ -117,13 +380,79 @@
       ],
       "sourceUrl": "https://www.youtube.com/watch?v=Gtj6VUcjVGM",
       "sourceExcerpt": "【歌枠｜KARAOKE】久しぶりの歌枠！アイドル縛りでいくよ～！！！【#パレプロ #香鳴ハノン】",
-      "method": "title-keyword-and-channel-id",
+      "method": "official-metadata-and-channel-id",
       "proposedSetlist": [],
       "existingIds": [
         "karaoke-000002"
       ],
+      "reviewStatus": "needs_review",
+      "publishedAt": "2026-11-13T04:03:11Z",
+      "startedAt": "2026-11-12T14:08:22Z",
+      "retrievedAt": "2026-11-15T13:51:54.094Z",
+      "evidenceHash": "7c95658b14314e28b39f24d1643e976a74b1db7212bddbaa967b5fb13371d54b",
+      "detectionMethods": [
+        "title-keyword",
+        "registered-video"
+      ],
+      "history": [],
+      "change": "changed"
+    },
+    {
+      "key": "youtube:HSo5D7rQ6ig",
+      "youtubeId": "HSo5D7rQ6ig",
+      "channelId": "UCay6Y3oEoiC6ZEE2G0UZu_A",
+      "title": "【打ち上げ】1stワンマン #ミズイロノオト をパーッと打ち上げよう！🍰✨【#パレプロ #香鳴ハノン】",
+      "talentIds": [
+        "tal-000011"
+      ],
+      "hints": [
+        "event"
+      ],
+      "sourceUrl": "https://www.youtube.com/watch?v=HSo5D7rQ6ig",
+      "sourceExcerpt": "【打ち上げ】1stワンマン #ミズイロノオト をパーッと打ち上げよう！🍰✨【#パレプロ #香鳴ハノン】",
+      "method": "official-metadata-and-channel-id",
+      "proposedSetlist": [],
+      "existingIds": [],
       "reviewStatus": "pending",
-      "change": "registered"
+      "publishedAt": "2026-11-06T19:24:35Z",
+      "startedAt": "2026-11-06T13:27:37Z",
+      "retrievedAt": "2026-11-15T13:51:54.094Z",
+      "evidenceHash": "5c205bbd4951ecf6ced288adb3f3afd23c426bafa7746f77969e54a18f35e650",
+      "detectionMethods": [
+        "title-keyword"
+      ],
+      "history": [],
+      "change": "new"
+    },
+    {
+      "key": "youtube:idxzn6gE5YU",
+      "youtubeId": "idxzn6gE5YU",
+      "channelId": "UC_a00ml_EVDXSrtY8ZuyqGQ",
+      "title": "【雑談】歌枠リレー振り返り＆3日後に異世界へ！～ぶいせかマイクラ楽しみ雑談～【#夏渚まはろ￤#パレプロ】",
+      "talentIds": [
+        "tal-000006"
+      ],
+      "hints": [
+        "karaoke",
+        "event",
+        "music-video"
+      ],
+      "sourceUrl": "https://www.youtube.com/watch?v=idxzn6gE5YU",
+      "sourceExcerpt": "【雑談】歌枠リレー振り返り＆3日後に異世界へ！～ぶいせかマイクラ楽しみ雑談～【#夏渚まはろ￤#パレプロ】",
+      "method": "official-metadata-and-channel-id",
+      "proposedSetlist": [],
+      "existingIds": [],
+      "reviewStatus": "pending",
+      "publishedAt": "2026-10-19T09:42:45Z",
+      "startedAt": "2026-10-19T07:00:22Z",
+      "retrievedAt": "2026-11-15T13:51:54.094Z",
+      "evidenceHash": "9419fe11dca77b3b58461a62f9adaebf5713caf0496f88617981b96b67986bd0",
+      "detectionMethods": [
+        "title-keyword",
+        "description-keyword"
+      ],
+      "history": [],
+      "change": "new"
     },
     {
       "key": "youtube:jQ-HWJJn4nc",
@@ -138,10 +467,466 @@
       ],
       "sourceUrl": "https://www.youtube.com/watch?v=jQ-HWJJn4nc",
       "sourceExcerpt": "【歌枠｜KARAOKE】アイドル縛り！！アカイロ衣装に合いそうな曲を歌ってみる！💗【#パレプロ #香鳴ハノン】",
-      "method": "title-keyword-and-channel-id",
+      "method": "official-metadata-and-channel-id",
+      "proposedSetlist": [],
+      "existingIds": [],
+      "reviewStatus": "needs_review",
+      "publishedAt": "2026-11-14T18:48:54Z",
+      "startedAt": "2026-11-14T12:06:10Z",
+      "retrievedAt": "2026-11-15T13:51:54.094Z",
+      "evidenceHash": "683b1782e41588497f75b5aafae0c6546864213fbb6fe1656b552a769f690f36",
+      "detectionMethods": [
+        "title-keyword"
+      ],
+      "history": [],
+      "change": "changed"
+    },
+    {
+      "key": "youtube:KURWSmjpxOM",
+      "youtubeId": "KURWSmjpxOM",
+      "channelId": "UCbNEgJIF_ADD9e8-q7SoxCg",
+      "title": "【#サンリオ楽曲歌枠リレー】クロミ様のお誕生日を…楽しくお祝い！♡盛り上げてくぞ～！【パレプロ/常磐カナメ】",
+      "talentIds": [
+        "tal-000007"
+      ],
+      "hints": [
+        "karaoke",
+        "event"
+      ],
+      "sourceUrl": "https://www.youtube.com/watch?v=KURWSmjpxOM",
+      "sourceExcerpt": "【#サンリオ楽曲歌枠リレー】クロミ様のお誕生日を…楽しくお祝い！♡盛り上げてくぞ～！【パレプロ/常磐カナメ】",
+      "method": "official-metadata-and-channel-id",
       "proposedSetlist": [],
       "existingIds": [],
       "reviewStatus": "pending",
+      "publishedAt": "2026-10-31T11:22:45Z",
+      "startedAt": "2026-10-31T10:28:28Z",
+      "retrievedAt": "2026-11-15T13:51:54.094Z",
+      "evidenceHash": "9515758ec069fbb5a6e8b33914013c802058cde6bcb1283610881e25e2e4017d",
+      "detectionMethods": [
+        "title-keyword",
+        "description-keyword"
+      ],
+      "history": [],
+      "change": "new"
+    },
+    {
+      "key": "youtube:L1sm212b87c",
+      "youtubeId": "L1sm212b87c",
+      "channelId": "UCay6Y3oEoiC6ZEE2G0UZu_A",
+      "title": "【耐久】1stワンマンオンラインチケット50枚手売りするまで終われない！？魅力を発信✨現地は満員御礼ありがとう🩵【#パレプロ #香鳴ハノン】",
+      "talentIds": [
+        "tal-000011"
+      ],
+      "hints": [
+        "event"
+      ],
+      "sourceUrl": "https://www.youtube.com/watch?v=L1sm212b87c",
+      "sourceExcerpt": "【耐久】1stワンマンオンラインチケット50枚手売りするまで終われない！？魅力を発信✨現地は満員御礼ありがとう🩵【#パレプロ #香鳴ハノン】",
+      "method": "official-metadata-and-channel-id",
+      "proposedSetlist": [],
+      "existingIds": [],
+      "reviewStatus": "pending",
+      "publishedAt": "2026-10-23T15:32:24Z",
+      "startedAt": "2026-10-23T12:03:43Z",
+      "retrievedAt": "2026-11-15T13:51:54.094Z",
+      "evidenceHash": "12bf312fd6ea633e7c57dffa760f3b968cd28f96d45157f7f495286307edcc4f",
+      "detectionMethods": [
+        "title-keyword"
+      ],
+      "history": [],
+      "change": "new"
+    },
+    {
+      "key": "youtube:MARQ5NqI1rk",
+      "youtubeId": "MARQ5NqI1rk",
+      "channelId": "UCay6Y3oEoiC6ZEE2G0UZu_A",
+      "title": "【ライブ前日！】ミズイロノオト、短めの前夜祭！忘れ物はないですか？【#パレプロ #香鳴ハノン】",
+      "talentIds": [
+        "tal-000011"
+      ],
+      "hints": [
+        "event"
+      ],
+      "sourceUrl": "https://www.youtube.com/watch?v=MARQ5NqI1rk",
+      "sourceExcerpt": "【ライブ前日！】ミズイロノオト、短めの前夜祭！忘れ物はないですか？【#パレプロ #香鳴ハノン】",
+      "method": "official-metadata-and-channel-id",
+      "proposedSetlist": [],
+      "existingIds": [],
+      "reviewStatus": "pending",
+      "publishedAt": "2026-10-24T15:45:51Z",
+      "startedAt": "2026-10-24T14:35:34Z",
+      "retrievedAt": "2026-11-15T13:51:54.094Z",
+      "evidenceHash": "6d424bfe123d6a8b468f2e8f38477ad8f4c4d4023034096ddecd04e73e0d1d59",
+      "detectionMethods": [
+        "title-keyword"
+      ],
+      "history": [],
+      "change": "new"
+    },
+    {
+      "key": "youtube:MPSx7R10Cso",
+      "youtubeId": "MPSx7R10Cso",
+      "channelId": "UC_a00ml_EVDXSrtY8ZuyqGQ",
+      "title": "【#夏渚まはろアイドル成長日記 ＃9】初ライブまであと83日！ダンスの先生登場！【#はのまはろん￤#夏渚まはろ￤#香鳴ハノン￤#パレプロ】",
+      "talentIds": [
+        "tal-000006"
+      ],
+      "hints": [
+        "event"
+      ],
+      "sourceUrl": "https://www.youtube.com/watch?v=MPSx7R10Cso",
+      "sourceExcerpt": "【#夏渚まはろアイドル成長日記 ＃9】初ライブまであと83日！ダンスの先生登場！【#はのまはろん￤#夏渚まはろ￤#香鳴ハノン￤#パレプロ】",
+      "method": "official-metadata-and-channel-id",
+      "proposedSetlist": [],
+      "existingIds": [],
+      "reviewStatus": "pending",
+      "publishedAt": "2026-10-04T14:03:40Z",
+      "startedAt": "2026-10-04T09:01:14Z",
+      "retrievedAt": "2026-11-15T13:51:54.094Z",
+      "evidenceHash": "464790ccdbeedac6f585bc248c30fac2ddc5a3908adf7d94f387b631c8ef8f41",
+      "detectionMethods": [
+        "title-keyword"
+      ],
+      "history": [],
+      "change": "new"
+    },
+    {
+      "key": "youtube:Mr9PnfIbkBk",
+      "youtubeId": "Mr9PnfIbkBk",
+      "channelId": "UCbNEgJIF_ADD9e8-q7SoxCg",
+      "title": "衣装お披露目しながら定期歌枠【パレプロ/常磐カナメ】",
+      "talentIds": [
+        "tal-000007"
+      ],
+      "hints": [
+        "karaoke",
+        "event"
+      ],
+      "sourceUrl": "https://www.youtube.com/watch?v=Mr9PnfIbkBk",
+      "sourceExcerpt": "衣装お披露目しながら定期歌枠【パレプロ/常磐カナメ】",
+      "method": "official-metadata-and-channel-id",
+      "proposedSetlist": [],
+      "existingIds": [],
+      "reviewStatus": "pending",
+      "publishedAt": "2026-10-04T01:04:14Z",
+      "startedAt": "2026-10-03T10:30:29Z",
+      "retrievedAt": "2026-11-15T13:51:54.094Z",
+      "evidenceHash": "333ec52200ab55e52da40e8f60127d8041cbd16c414780b644b2e04f7f6017b2",
+      "detectionMethods": [
+        "title-keyword"
+      ],
+      "history": [],
+      "change": "new"
+    },
+    {
+      "key": "youtube:NJF8mr5AQT4",
+      "youtubeId": "NJF8mr5AQT4",
+      "channelId": "UCay6Y3oEoiC6ZEE2G0UZu_A",
+      "title": "【コール練習会】1stワンマン「ミズイロノオト」に向けて楽曲予習＆コール練習をしよう！②【#パレプロ #香鳴ハノン】",
+      "talentIds": [
+        "tal-000011"
+      ],
+      "hints": [
+        "event"
+      ],
+      "sourceUrl": "https://www.youtube.com/watch?v=NJF8mr5AQT4",
+      "sourceExcerpt": "【コール練習会】1stワンマン「ミズイロノオト」に向けて楽曲予習＆コール練習をしよう！②【#パレプロ #香鳴ハノン】",
+      "method": "official-metadata-and-channel-id",
+      "proposedSetlist": [],
+      "existingIds": [],
+      "reviewStatus": "pending",
+      "publishedAt": "2026-10-12T00:51:03Z",
+      "startedAt": "2026-10-11T11:17:58Z",
+      "retrievedAt": "2026-11-15T13:51:54.094Z",
+      "evidenceHash": "fd19ce02c749e136cf5a414431b67629804437d1a78d305c9bd33ae08907dfd0",
+      "detectionMethods": [
+        "title-keyword"
+      ],
+      "history": [],
+      "change": "new"
+    },
+    {
+      "key": "youtube:Nk04u2hOYHA",
+      "youtubeId": "Nk04u2hOYHA",
+      "channelId": "UCbNEgJIF_ADD9e8-q7SoxCg",
+      "title": "【歌ってみた】 月が綺麗ねと言われたい！- cover.常磐カナメ #shorts",
+      "talentIds": [
+        "tal-000007"
+      ],
+      "hints": [
+        "music-video"
+      ],
+      "sourceUrl": "https://www.youtube.com/watch?v=Nk04u2hOYHA",
+      "sourceExcerpt": "【歌ってみた】 月が綺麗ねと言われたい！- cover.常磐カナメ #shorts",
+      "method": "official-metadata-and-channel-id",
+      "proposedSetlist": [],
+      "existingIds": [],
+      "reviewStatus": "pending",
+      "publishedAt": "2026-11-14T12:30:05Z",
+      "startedAt": null,
+      "retrievedAt": "2026-11-15T13:51:54.094Z",
+      "evidenceHash": "61b6631a3ad7a17f4e2efc2206a8a12bf92c8a70304c60a3117e344ea985e61c",
+      "detectionMethods": [
+        "title-keyword"
+      ],
+      "history": [],
+      "change": "new"
+    },
+    {
+      "key": "youtube:nNyroittCT0",
+      "youtubeId": "nNyroittCT0",
+      "channelId": "UCay6Y3oEoiC6ZEE2G0UZu_A",
+      "title": "夢結いレター - 香鳴ハノン【2nd Original Song / MV】",
+      "talentIds": [
+        "tal-000011"
+      ],
+      "hints": [
+        "music-video"
+      ],
+      "sourceUrl": "https://www.youtube.com/watch?v=nNyroittCT0",
+      "sourceExcerpt": "夢結いレター - 香鳴ハノン【2nd Original Song / MV】",
+      "method": "official-metadata-and-channel-id",
+      "proposedSetlist": [],
+      "existingIds": [],
+      "reviewStatus": "pending",
+      "publishedAt": "2026-11-06T12:00:09Z",
+      "startedAt": "2026-11-06T12:00:09Z",
+      "retrievedAt": "2026-11-15T13:51:54.094Z",
+      "evidenceHash": "f43f74ad9ac31683a6ce44449f795c19989aff4da96e81b14dac03dca6898373",
+      "detectionMethods": [
+        "title-keyword"
+      ],
+      "history": [],
+      "change": "new"
+    },
+    {
+      "key": "youtube:ovst6AkWG5c",
+      "youtubeId": "ovst6AkWG5c",
+      "channelId": "UCay6Y3oEoiC6ZEE2G0UZu_A",
+      "title": "【歌枠｜KARAOKE】華金だしやっぱり歌おうかなあって～～～！アニソンだっ！！【#パレプロ #香鳴ハノン】",
+      "talentIds": [
+        "tal-000011"
+      ],
+      "hints": [
+        "karaoke"
+      ],
+      "sourceUrl": "https://www.youtube.com/watch?v=ovst6AkWG5c",
+      "sourceExcerpt": "【歌枠｜KARAOKE】華金だしやっぱり歌おうかなあって～～～！アニソンだっ！！【#パレプロ #香鳴ハノン】",
+      "method": "official-metadata-and-channel-id",
+      "proposedSetlist": [],
+      "existingIds": [],
+      "reviewStatus": "pending",
+      "publishedAt": "2026-10-16T17:11:24Z",
+      "startedAt": "2026-10-16T13:26:31Z",
+      "retrievedAt": "2026-11-15T13:51:54.094Z",
+      "evidenceHash": "5248a5bd47afed7b796002e231a3ee2f23ba121339114fc869cfd796fb885438",
+      "detectionMethods": [
+        "title-keyword"
+      ],
+      "history": [],
+      "change": "new"
+    },
+    {
+      "key": "youtube:qIl9-A4lW6U",
+      "youtubeId": "qIl9-A4lW6U",
+      "channelId": "UCbNEgJIF_ADD9e8-q7SoxCg",
+      "title": "楽しいオリジナル曲「カラフル☆パンチライン」ダンス動画👊 #shorts #常磐カナメ",
+      "talentIds": [
+        "tal-000007"
+      ],
+      "hints": [
+        "music-video"
+      ],
+      "sourceUrl": "https://www.youtube.com/watch?v=qIl9-A4lW6U",
+      "sourceExcerpt": "楽しいオリジナル曲「カラフル☆パンチライン」ダンス動画👊 #shorts #常磐カナメ",
+      "method": "official-metadata-and-channel-id",
+      "proposedSetlist": [],
+      "existingIds": [],
+      "reviewStatus": "pending",
+      "publishedAt": "2026-11-03T14:58:02Z",
+      "startedAt": null,
+      "retrievedAt": "2026-11-15T13:51:54.094Z",
+      "evidenceHash": "984b14e327e40aee61e0097c35f79e9140af652bde5736515f547d4a6b597339",
+      "detectionMethods": [
+        "title-keyword"
+      ],
+      "history": [],
+      "change": "new"
+    },
+    {
+      "key": "youtube:R3PYpVPHF54",
+      "youtubeId": "R3PYpVPHF54",
+      "channelId": "UC_a00ml_EVDXSrtY8ZuyqGQ",
+      "title": "【#ぶいせかマイクラ歌枠リレー￤Day2】大トリ！ぶいせかのみんなと歌のバトンをつなぐぞ～！🎤🫧【#夏渚まはろ￤#パレプロ】",
+      "talentIds": [
+        "tal-000006"
+      ],
+      "hints": [
+        "karaoke",
+        "event"
+      ],
+      "sourceUrl": "https://www.youtube.com/watch?v=R3PYpVPHF54",
+      "sourceExcerpt": "【#ぶいせかマイクラ歌枠リレー￤Day2】大トリ！ぶいせかのみんなと歌のバトンをつなぐぞ～！🎤🫧【#夏渚まはろ￤#パレプロ】",
+      "method": "official-metadata-and-channel-id",
+      "proposedSetlist": [
+        {
+          "rawLabel": "OP",
+          "order": null,
+          "startsAtSeconds": 0,
+          "endsAtSeconds": null,
+          "songId": null,
+          "method": "description-timestamp",
+          "verification": "pending"
+        },
+        {
+          "rawLabel": "まっはろー！",
+          "order": null,
+          "startsAtSeconds": 44,
+          "endsAtSeconds": null,
+          "songId": null,
+          "method": "description-timestamp",
+          "verification": "pending"
+        },
+        {
+          "rawLabel": "01. 君の知らない物語 / supercell",
+          "order": 1,
+          "startsAtSeconds": 174,
+          "endsAtSeconds": null,
+          "songId": null,
+          "method": "description-timestamp",
+          "verification": "pending"
+        },
+        {
+          "rawLabel": "02. シル・ヴ・プレジデント / P丸様。",
+          "order": 2,
+          "startsAtSeconds": 590,
+          "endsAtSeconds": null,
+          "songId": null,
+          "method": "description-timestamp",
+          "verification": "pending"
+        },
+        {
+          "rawLabel": "03. 誇り高きアイドル / HoneyWorks",
+          "order": 3,
+          "startsAtSeconds": 882,
+          "endsAtSeconds": null,
+          "songId": null,
+          "method": "description-timestamp",
+          "verification": "pending"
+        },
+        {
+          "rawLabel": "04. エゴロック / すりぃ",
+          "order": 4,
+          "startsAtSeconds": 1248,
+          "endsAtSeconds": null,
+          "songId": null,
+          "method": "description-timestamp",
+          "verification": "pending"
+        },
+        {
+          "rawLabel": "05. 私は最強 / Ado",
+          "order": 5,
+          "startsAtSeconds": 1475,
+          "endsAtSeconds": null,
+          "songId": null,
+          "method": "description-timestamp",
+          "verification": "pending"
+        }
+      ],
+      "existingIds": [],
+      "reviewStatus": "pending",
+      "publishedAt": "2026-10-18T14:16:54Z",
+      "startedAt": "2026-10-18T12:59:36Z",
+      "retrievedAt": "2026-11-15T13:51:54.094Z",
+      "evidenceHash": "383ed9fa3c194fd691eea275ab331a8925b9d4cc08bde5ce6bbce7667a2700c3",
+      "detectionMethods": [
+        "title-keyword",
+        "description-keyword",
+        "description-timestamp"
+      ],
+      "history": [],
+      "change": "new"
+    },
+    {
+      "key": "youtube:sAcKzrBOrLg",
+      "youtubeId": "sAcKzrBOrLg",
+      "channelId": "UCay6Y3oEoiC6ZEE2G0UZu_A",
+      "title": "【コール練習会】1stワンマン「ミズイロノオト」に向けて楽曲予習＆コール練習をしよう！⑤【#パレプロ #香鳴ハノン】",
+      "talentIds": [
+        "tal-000011"
+      ],
+      "hints": [
+        "event"
+      ],
+      "sourceUrl": "https://www.youtube.com/watch?v=sAcKzrBOrLg",
+      "sourceExcerpt": "【コール練習会】1stワンマン「ミズイロノオト」に向けて楽曲予習＆コール練習をしよう！⑤【#パレプロ #香鳴ハノン】",
+      "method": "official-metadata-and-channel-id",
+      "proposedSetlist": [],
+      "existingIds": [],
+      "reviewStatus": "pending",
+      "publishedAt": "2026-10-23T12:18:42Z",
+      "startedAt": "2026-10-23T09:13:39Z",
+      "retrievedAt": "2026-11-15T13:51:54.094Z",
+      "evidenceHash": "9e76c3f0215e6e2d90de2a7fdb8824800fd82b2aaea75ab45219c649d86c757c",
+      "detectionMethods": [
+        "title-keyword"
+      ],
+      "history": [],
+      "change": "new"
+    },
+    {
+      "key": "youtube:TV7XXZDZQ0g",
+      "youtubeId": "TV7XXZDZQ0g",
+      "channelId": "UCay6Y3oEoiC6ZEE2G0UZu_A",
+      "title": "凸凹デコダイアリー - 香鳴ハノン【3rd Original Song / MV】",
+      "talentIds": [
+        "tal-000011"
+      ],
+      "hints": [
+        "music-video"
+      ],
+      "sourceUrl": "https://www.youtube.com/watch?v=TV7XXZDZQ0g",
+      "sourceExcerpt": "凸凹デコダイアリー - 香鳴ハノン【3rd Original Song / MV】",
+      "method": "official-metadata-and-channel-id",
+      "proposedSetlist": [],
+      "existingIds": [],
+      "reviewStatus": "pending",
+      "publishedAt": "2026-11-13T12:00:11Z",
+      "startedAt": "2026-11-13T12:00:11Z",
+      "retrievedAt": "2026-11-15T13:51:54.094Z",
+      "evidenceHash": "a250221d3de137b09ba8bb96fada835556a1915faf19a9259a39037855da038a",
+      "detectionMethods": [
+        "title-keyword"
+      ],
+      "history": [],
+      "change": "new"
+    },
+    {
+      "key": "youtube:Ux0D79_w9uc",
+      "youtubeId": "Ux0D79_w9uc",
+      "channelId": "UCbNEgJIF_ADD9e8-q7SoxCg",
+      "title": "【歌枠】透明感ある曲歌枠！fu～【パレプロ/常磐カナメ】",
+      "talentIds": [
+        "tal-000007"
+      ],
+      "hints": [
+        "karaoke"
+      ],
+      "sourceUrl": "https://www.youtube.com/watch?v=Ux0D79_w9uc",
+      "sourceExcerpt": "【歌枠】透明感ある曲歌枠！fu～【パレプロ/常磐カナメ】",
+      "method": "official-metadata-and-channel-id",
+      "proposedSetlist": [],
+      "existingIds": [],
+      "reviewStatus": "pending",
+      "publishedAt": "2026-10-25T00:57:48Z",
+      "startedAt": "2026-10-24T10:44:47Z",
+      "retrievedAt": "2026-11-15T13:51:54.094Z",
+      "evidenceHash": "4a4b6c886e980e7a5c6af1cf359764bfcd1f73c80399cf5073033079397ac300",
+      "detectionMethods": [
+        "title-keyword"
+      ],
+      "history": [],
       "change": "new"
     },
     {
@@ -157,7 +942,7 @@
       ],
       "sourceUrl": "https://www.youtube.com/watch?v=w7E-oj1HOfc",
       "sourceExcerpt": "【歌枠】文化祭後夜祭風歌枠！まだ帰りたくない夜に歌う🎤【#夏渚まはろ￤#パレプロ】",
-      "method": "title-keyword-and-channel-id",
+      "method": "official-metadata-and-channel-id",
       "proposedSetlist": [
         {
           "rawLabel": "OP",
@@ -451,8 +1236,194 @@
       "existingIds": [
         "karaoke-000001"
       ],
+      "reviewStatus": "needs_review",
+      "publishedAt": "2026-11-12T17:41:45Z",
+      "startedAt": "2026-11-12T09:00:41Z",
+      "retrievedAt": "2026-11-15T13:51:54.094Z",
+      "evidenceHash": "d0303dbd30b8942fa102e9f4b0e9ce411ac30c3df0e3973954ca9fc13c6bd47a",
+      "detectionMethods": [
+        "title-keyword",
+        "description-keyword",
+        "description-timestamp",
+        "registered-video"
+      ],
+      "history": [],
+      "change": "changed"
+    },
+    {
+      "key": "youtube:X4ka0PABvb0",
+      "youtubeId": "X4ka0PABvb0",
+      "channelId": "UCay6Y3oEoiC6ZEE2G0UZu_A",
+      "title": "【歌枠｜KARAOKE】ひさしぶりの個人配信だよ！！！会いに来て～～～！！！【#パレプロ #香鳴ハノン】",
+      "talentIds": [
+        "tal-000011"
+      ],
+      "hints": [
+        "karaoke"
+      ],
+      "sourceUrl": "https://www.youtube.com/watch?v=X4ka0PABvb0",
+      "sourceExcerpt": "【歌枠｜KARAOKE】ひさしぶりの個人配信だよ！！！会いに来て～～～！！！【#パレプロ #香鳴ハノン】",
+      "method": "official-metadata-and-channel-id",
+      "proposedSetlist": [],
+      "existingIds": [],
       "reviewStatus": "pending",
-      "change": "registered"
+      "publishedAt": "2026-10-07T16:51:53Z",
+      "startedAt": "2026-10-07T13:11:20Z",
+      "retrievedAt": "2026-11-15T13:51:54.094Z",
+      "evidenceHash": "62849f297da80501860ad0ff61dcacf22ecde36219ebe465764b2c3242354dd3",
+      "detectionMethods": [
+        "title-keyword"
+      ],
+      "history": [],
+      "change": "new"
+    },
+    {
+      "key": "youtube:xfLfXL-X9zs",
+      "youtubeId": "xfLfXL-X9zs",
+      "channelId": "UC_a00ml_EVDXSrtY8ZuyqGQ",
+      "title": "【#ぶいのね歌枠リレー Vol.8】旅立ち・出会い・未来へ！【#夏渚まはろ￤#パレプロ】",
+      "talentIds": [
+        "tal-000006"
+      ],
+      "hints": [
+        "karaoke",
+        "event"
+      ],
+      "sourceUrl": "https://www.youtube.com/watch?v=xfLfXL-X9zs",
+      "sourceExcerpt": "【#ぶいのね歌枠リレー Vol.8】旅立ち・出会い・未来へ！【#夏渚まはろ￤#パレプロ】",
+      "method": "official-metadata-and-channel-id",
+      "proposedSetlist": [
+        {
+          "rawLabel": "OP",
+          "order": null,
+          "startsAtSeconds": 0,
+          "endsAtSeconds": null,
+          "songId": null,
+          "method": "description-timestamp",
+          "verification": "pending"
+        },
+        {
+          "rawLabel": "開始",
+          "order": null,
+          "startsAtSeconds": 102,
+          "endsAtSeconds": null,
+          "songId": null,
+          "method": "description-timestamp",
+          "verification": "pending"
+        },
+        {
+          "rawLabel": "01. departure! / 小野正利",
+          "order": 1,
+          "startsAtSeconds": 290,
+          "endsAtSeconds": null,
+          "songId": null,
+          "method": "description-timestamp",
+          "verification": "pending"
+        },
+        {
+          "rawLabel": "02. 旅人の唄 / 大原ゆい子",
+          "order": 2,
+          "startsAtSeconds": 633,
+          "endsAtSeconds": null,
+          "songId": null,
+          "method": "description-timestamp",
+          "verification": "pending"
+        },
+        {
+          "rawLabel": "03.  RPG / SEKAI NO OWARI",
+          "order": 3,
+          "startsAtSeconds": 959,
+          "endsAtSeconds": null,
+          "songId": null,
+          "method": "description-timestamp",
+          "verification": "pending"
+        },
+        {
+          "rawLabel": "04. アフターエポックス / sasakure.UK",
+          "order": 4,
+          "startsAtSeconds": 1278,
+          "endsAtSeconds": null,
+          "songId": null,
+          "method": "description-timestamp",
+          "verification": "pending"
+        },
+        {
+          "rawLabel": "05. Journey / DECO*27",
+          "order": 5,
+          "startsAtSeconds": 1544,
+          "endsAtSeconds": null,
+          "songId": null,
+          "method": "description-timestamp",
+          "verification": "pending"
+        }
+      ],
+      "existingIds": [],
+      "reviewStatus": "pending",
+      "publishedAt": "2026-10-17T11:17:59Z",
+      "startedAt": "2026-10-17T10:29:02Z",
+      "retrievedAt": "2026-11-15T13:51:54.094Z",
+      "evidenceHash": "00de7018f1a1eeb6490a2c4f234f2ede63020fc928fcf510fc602af7154e9aeb",
+      "detectionMethods": [
+        "title-keyword",
+        "description-keyword",
+        "description-timestamp"
+      ],
+      "history": [],
+      "change": "new"
+    },
+    {
+      "key": "youtube:yGwo83GzHX4",
+      "youtubeId": "yGwo83GzHX4",
+      "channelId": "UCay6Y3oEoiC6ZEE2G0UZu_A",
+      "title": "【コール練習会】1stワンマン「ミズイロノオト」に向けて楽曲予習＆コール練習をしよう！③【#パレプロ #香鳴ハノン】",
+      "talentIds": [
+        "tal-000011"
+      ],
+      "hints": [
+        "event"
+      ],
+      "sourceUrl": "https://www.youtube.com/watch?v=yGwo83GzHX4",
+      "sourceExcerpt": "【コール練習会】1stワンマン「ミズイロノオト」に向けて楽曲予習＆コール練習をしよう！③【#パレプロ #香鳴ハノン】",
+      "method": "official-metadata-and-channel-id",
+      "proposedSetlist": [],
+      "existingIds": [],
+      "reviewStatus": "pending",
+      "publishedAt": "2026-10-20T19:20:38Z",
+      "startedAt": "2026-10-20T13:02:20Z",
+      "retrievedAt": "2026-11-15T13:51:54.094Z",
+      "evidenceHash": "6b22102fec99aec8621f3f3f8575be0214dea082b11cc9d7ba24b5f2e3676e7a",
+      "detectionMethods": [
+        "title-keyword"
+      ],
+      "history": [],
+      "change": "new"
+    },
+    {
+      "key": "youtube:ZkuFxRNvUPA",
+      "youtubeId": "ZkuFxRNvUPA",
+      "channelId": "UCay6Y3oEoiC6ZEE2G0UZu_A",
+      "title": "【歌枠｜KARAOKE】はじめて歌う曲あり！短め歌枠です【#パレプロ #香鳴ハノン】",
+      "talentIds": [
+        "tal-000011"
+      ],
+      "hints": [
+        "karaoke"
+      ],
+      "sourceUrl": "https://www.youtube.com/watch?v=ZkuFxRNvUPA",
+      "sourceExcerpt": "【歌枠｜KARAOKE】はじめて歌う曲あり！短め歌枠です【#パレプロ #香鳴ハノン】",
+      "method": "official-metadata-and-channel-id",
+      "proposedSetlist": [],
+      "existingIds": [],
+      "reviewStatus": "pending",
+      "publishedAt": "2026-10-12T15:27:40Z",
+      "startedAt": "2026-10-12T14:06:53Z",
+      "retrievedAt": "2026-11-15T13:51:54.094Z",
+      "evidenceHash": "4ebea30a158dcb666671d91cc3039b4e7a4d670a03f35adb5aad19896ba64c72",
+      "detectionMethods": [
+        "title-keyword"
+      ],
+      "history": [],
+      "change": "new"
     }
   ]
 }

@@ -21,8 +21,9 @@ async function main(){
  const reviewed=read('ops/proposals/review.json');
  if(!fs.existsSync(file))state.queue=reviewed;else state.queue=require('../lib/proposals').applyReviews(state.queue,reviewed);
  const media=read('data/media.json'),music=read('data/music.json'),karaoke=read('data/karaoke.json'),events=read('data/events.json');
- const {report}=await discover({talents:loadTalents(root),approved:{videos:media.videos,musicVideos:music.musicVideos,karaokes:karaoke.karaokes,events:events.events},feed:read('data/youtube.json'),uploads:read('data/youtube_cache.json').__uploads__||{},state,config,apiKey:process.env.YOUTUBE_API_KEY,save:s=>writeJson(file,s)});
+ const {report}=await discover({talents:loadTalents(root),approved:{videos:media.videos,musicVideos:music.musicVideos,karaokes:karaoke.karaokes,events:events.events},feed:read('data/youtube.json'),uploads:read('data/youtube_cache.json').__uploads__||{},state,config,apiKey:process.env.YOUTUBE_API_KEY,onDiagnostic:d=>console.error('Discovery diagnostic: '+JSON.stringify(d)),save:s=>writeJson(file,s)});
  console.log(JSON.stringify(report,null,2));
+ if(report.errors)process.exitCode=1;
  if(process.env.GITHUB_STEP_SUMMARY)fs.appendFileSync(process.env.GITHUB_STEP_SUMMARY,'### Private music discovery\n```json\n'+JSON.stringify(report,null,2)+'\n```\nNo approved master or Pages artifact changed.\n');
  }finally{fs.closeSync(fd);fs.rmSync(lock,{force:true});}
 }

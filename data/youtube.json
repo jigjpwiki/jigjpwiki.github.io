@@ -1807,7 +1807,7 @@
     "date": "2026-11-14T22:03:06.000Z",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/8jgNfaGxtDI/mqdefault.jpg?v=6af8d8ce",
+    "thumbnail": "https://i.ytimg.com/vi/8jgNfaGxtDI/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/sYbvo_2nSCW162VEArIwu7v1B3bl159gmEnGgGei8I8drc4l7huPP7q6aWZ4AfXi5wTMACmGow=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=8jgNfaGxtDI"
   },
@@ -2093,9 +2093,9 @@
     "youtubeid": "UC_cCW1xmXwRFp1tX-RD2X1Q",
     "title": "【 #藤宮コトハ生誕祭2026】Good Luck【パレプロ / Palette Project】",
     "date": "2026-11-15T10:56:53.000Z",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/cCaF5xDZ8Lc/mqdefault.jpg?v=6af364ef",
+    "thumbnail": "https://i.ytimg.com/vi/cCaF5xDZ8Lc/mqdefault.jpg?v=6af9a3f1",
     "channelIcon": "https://yt3.ggpht.com/ytc/AIdro_nuv43BXc-JNRM-omFed0brcXGTD8qvA8313ZeQa8PfviA=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=cCaF5xDZ8Lc"
   },
@@ -2158,6 +2158,18 @@
     "thumbnail": "https://i.ytimg.com/vi/mgEi4VpJcGM/mqdefault.jpg?v=6af881cb",
     "channelIcon": "https://yt3.ggpht.com/86cM_4q1A56pIYgdKxh776hM0nropjiZIlmXbfroWHXQ-MjdGGsjLcL5hMDOFL-T2EJHmybT=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=mgEi4VpJcGM"
+  },
+  {
+    "videoId": "ShaL4z_-5No",
+    "name": "夏渚まはろ",
+    "youtubeid": "UC_a00ml_EVDXSrtY8ZuyqGQ",
+    "title": "【ラタタン ＃3】旋律を集めて新章を進める！初クリアの先の物語へ【#夏渚まはろ￤#パレプロ】",
+    "date": "2026-11-16T09:00:00.000Z",
+    "status": "upcoming",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/ShaL4z_-5No/mqdefault.jpg?v=6af94fbd",
+    "channelIcon": "https://yt3.ggpht.com/iktv-39nC7NDASD1WeXms-DEuHuVqB5RhwTtdDe26w-BCvqf6yq3r_8zBiv2i2CfNXCK0uE8=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=ShaL4z_-5No"
   },
   {
     "videoId": "tLgQZ-Z9WPk",

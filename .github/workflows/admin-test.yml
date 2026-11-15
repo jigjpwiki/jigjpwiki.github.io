@@ -21,3 +21,4 @@ jobs:
       - run: npm ci --prefix admin
       - run: npm test --prefix admin
       - run: npm run check --prefix admin
+      - run: npm run test:worker --prefix admin

@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "songs": [
+    {
+      "id": "song-000001",
+      "title": "月が綺麗ねと言われたい！",
+      "originalArtists": [
+        "柿崎ユウタ"
+      ],
+      "aliases": [
+        "I Want You to Tell Me the Moon is Beautiful!"
+      ],
+      "readings": [],
+      "identityUrl": "https://www.youtube.com/watch?v=jorNAdLoRGg",
+      "artistEvidence": "original_source",
+      "sourceRefs": [
+        "src-original-jornadlorgg",
+        "src-music-d7swtqptcpw"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "song-000002",
+      "title": "レクイエム",
+      "originalArtists": [
+        "Kanaria",
+        "星街すいせい"
+      ],
+      "aliases": [],
+      "readings": [],
+      "identityUrl": "https://www.youtube.com/watch?v=5Jja39-69G8",
+      "artistEvidence": "original_source",
+      "sourceRefs": [
+        "src-original-5jja39-69g8",
+        "src-music-e0jemzb45s8"
+      ],
+      "visibility": "public"
+    }
+  ],
+  "musicVideos": [
+    {
+      "id": "mv-000001",
+      "type": "cover",
+      "songId": "song-000001",
+      "rawSongTitle": "月が綺麗ねと言われたい！",
+      "talentIds": [
+        "tal-000007"
+      ],
+      "youtubeId": "d7SWtQptcpw",
+      "registeredAt": "2026-11-14T23:02:16.705410Z",
+      "sourceRefs": [
+        "src-music-d7swtqptcpw"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "mv-000002",
+      "type": "cover",
+      "songId": "song-000002",
+      "rawSongTitle": "レクイエム",
+      "talentIds": [
+        "tal-000097"
+      ],
+      "youtubeId": "e0JemZb45s8",
+      "registeredAt": "2026-11-14T23:02:16.705410Z",
+      "sourceRefs": [
+        "src-music-e0jemzb45s8"
+      ],
+      "visibility": "public"
+    }
+  ]
+}

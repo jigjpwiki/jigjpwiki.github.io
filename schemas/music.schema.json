@@ -1,0 +1,172 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "songs",
+    "musicVideos"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": 1
+    },
+    "songs": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "title",
+          "originalArtists",
+          "aliases",
+          "readings",
+          "identityUrl",
+          "artistEvidence",
+          "sourceRefs",
+          "visibility"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^song-[0-9]{6}$"
+          },
+          "title": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 240
+          },
+          "originalArtists": {
+            "anyOf": [
+              {
+                "type": "array",
+                "uniqueItems": true,
+                "items": {
+                  "type": "string",
+                  "minLength": 1,
+                  "maxLength": 160
+                },
+                "minItems": 1
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "aliases": {
+            "type": "array",
+            "uniqueItems": true,
+            "items": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 240
+            }
+          },
+          "readings": {
+            "type": "array",
+            "uniqueItems": true,
+            "items": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 240
+            }
+          },
+          "identityUrl": {
+            "type": "string",
+            "format": "public-url"
+          },
+          "artistEvidence": {
+            "enum": [
+              "original_source",
+              "performer_description",
+              "unknown"
+            ]
+          },
+          "sourceRefs": {
+            "$ref": "https://www.jigdule.jp/schemas/feature-common#/definitions/refs"
+          },
+          "visibility": {
+            "enum": [
+              "public",
+              "draft"
+            ]
+          }
+        }
+      }
+    },
+    "musicVideos": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "type",
+          "songId",
+          "rawSongTitle",
+          "talentIds",
+          "youtubeId",
+          "registeredAt",
+          "sourceRefs",
+          "visibility"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^mv-[0-9]{6}$"
+          },
+          "type": {
+            "enum": [
+              "original",
+              "cover",
+              "other"
+            ]
+          },
+          "songId": {
+            "anyOf": [
+              {
+                "type": "string",
+                "pattern": "^song-[0-9]{6}$"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "rawSongTitle": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 240
+          },
+          "talentIds": {
+            "type": "array",
+            "uniqueItems": true,
+            "items": {
+              "type": "string",
+              "pattern": "^tal-[0-9]{6}$"
+            },
+            "minItems": 1
+          },
+          "youtubeId": {
+            "type": "string",
+            "pattern": "^[A-Za-z0-9_-]{11}$"
+          },
+          "registeredAt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "sourceRefs": {
+            "$ref": "https://www.jigdule.jp/schemas/feature-common#/definitions/refs"
+          },
+          "visibility": {
+            "enum": [
+              "public",
+              "draft"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "$schema": "http://json-schema.org/draft-07/schema#"
+}

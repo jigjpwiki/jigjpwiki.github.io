@@ -1,0 +1,66 @@
+name: Discover private music candidates
+on:
+  schedule:
+    - cron: '41 19 * * *' # 04:41 JST; independent of the schedule/Pages writer
+  workflow_dispatch:
+    inputs:
+      mode:
+        type: choice
+        options: [daily, backfill]
+        default: daily
+      from:
+        description: 'Backfill start ISO instant (inclusive)'
+        type: string
+      to:
+        description: 'Backfill end ISO instant (exclusive); repeat the same period to resume'
+        type: string
+permissions:
+  contents: read
+concurrency:
+  group: music-discovery
+  cancel-in-progress: false
+jobs:
+  collect:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+      - run: npm ci --omit=dev
+      - name: Restore private discovery checkpoint
+        id: restore
+        uses: actions/cache/restore@v4
+        with:
+          path: ops/proposals/runtime/*.json
+          key: music-discovery-v1-${{ github.run_id }}-${{ github.run_attempt }}
+          restore-keys: music-discovery-v1-
+      - name: Collect bounded official metadata
+        env:
+          YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
+          MODE: ${{ inputs.mode || 'daily' }}
+          FROM: ${{ inputs.from }}
+          TO: ${{ inputs.to }}
+        shell: bash
+        run: |
+          args=(--mode "$MODE" --max-units 60 --max-videos 200 --max-pages 30 --max-channels 20 --max-seconds 240)
+          if [ -n "$FROM" ]; then args+=(--from "$FROM"); fi
+          if [ -n "$TO" ]; then args+=(--to "$TO"); fi
+          node scripts/discover-media.cjs "${args[@]}"
+      - name: Preserve resumable checkpoint, including failed attempts
+        if: always()
+        uses: actions/cache/save@v4
+        with:
+          path: ops/proposals/runtime/*.json
+          key: music-discovery-v1-${{ github.run_id }}-${{ github.run_attempt }}
+      - name: Upload private review queue and health report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: music-discovery-${{ github.run_id }}-${{ github.run_attempt }}
+          path: ops/proposals/runtime/*.json
+          retention-days: 30
+          if-no-files-found: warn

@@ -5,3 +5,6 @@ node_modules/
 data/*.tmp
 
 _site/
+
+# Private runtime checkpoints are restored from CI cache, never published/committed.
+ops/proposals/runtime/

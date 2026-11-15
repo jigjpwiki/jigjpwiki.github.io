@@ -1,0 +1,62 @@
+{
+  "scope": {
+    "talentIds": [
+      "tal-000006",
+      "tal-000007",
+      "tal-000011"
+    ],
+    "from": "2026-10-01T00:00:00Z",
+    "toExclusive": "2026-11-16T00:00:00Z",
+    "maxPagesPerChannel": 2
+  },
+  "collection": {
+    "mode": "backfill",
+    "startedAt": "2026-11-15T13:51:54.094Z",
+    "requests": 10,
+    "estimatedUnits": 10,
+    "pages": 6,
+    "examinedVideos": 112,
+    "metadataFetched": 112,
+    "metadataReused": 12,
+    "notReturned": 0,
+    "retries": 0,
+    "errors": 0,
+    "stopReason": "complete",
+    "channels": 3,
+    "incompleteJobs": 3,
+    "observedCandidates": 28,
+    "observedVideos": 34
+  },
+  "results": {
+    "officialVideosFetched": 112,
+    "uploadsEntriesExamined": 300,
+    "previousCandidates": 8,
+    "totalCandidates": 32,
+    "newCandidates": 24,
+    "refreshedExistingCandidates": 4,
+    "registeredVideoMatches": 3,
+    "unobservedCandidatesRetained": 4,
+    "pending": 28,
+    "needsReview": 4,
+    "confirmed": 0,
+    "rejected": 0,
+    "approvedMasterAdditions": 0,
+    "chapterSuggestions": 62,
+    "chapterSuggestionsAreSongs": false
+  },
+  "apiAccounting": {
+    "finalBackfillRequests": 10,
+    "finalBackfillEstimatedUnits": 10,
+    "earlierExplorationSuccessfulRequests": 10,
+    "proxylessFailedAttempts": 3,
+    "totalAttemptedRequestsUpperBound": 23,
+    "remainingProjectQuotaVerified": false
+  },
+  "limitations": [
+    "Only first two uploads pages per channel; all three backfill cursors remain resumable.",
+    "Candidate categories overlap and include contextual mentions, promotional shorts and post-event talk; no automatic content verification.",
+    "Four legacy candidates gained metadata/evidence hashes and require review; this alone does not prove an official source changed.",
+    "No original song identity, artist credit or chapter has been approved from keyword extraction.",
+    "Full API response and descriptions are not retained in repository or Pages."
+  ]
+}

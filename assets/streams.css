@@ -23,18 +23,94 @@
   color: var(--jigdule-text);
   text-decoration: none;
 }
-.talent-stream-card > img,
-.stream-image-fallback {
+.stream-media {
   display: block;
-  width: 100%;
+  position: relative;
   aspect-ratio: 16/9;
-  object-fit: cover;
+  overflow: hidden;
   background: var(--jigdule-muted-surface);
 }
+.stream-media > img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 .stream-image-fallback {
+  position: absolute;
+  inset: 0;
   display: grid;
   place-items: center;
   color: var(--jigdule-muted-text);
+  font-size: 12px;
+}
+.stream-state {
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  padding: 2px 8px;
+  background: #fff;
+  border-radius: 3px;
+  font-size: 12px;
+  color: #333 !important;
+}
+.is-live .stream-state {
+  background: #e00;
+  color: #fff !important;
+  border-radius: 12px;
+  font-weight: 700;
+}
+.talent-stream-card.is-live {
+  border-color: #e00;
+}
+.talent-stream-card.service-youtube {
+  border-left: 4px solid #f00;
+}
+.talent-stream-card.service-twitch {
+  border-left: 4px solid #6441a5;
+}
+.stream-byline {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  min-width: 0;
+  color: #555;
+}
+.stream-byline > span:nth-child(2) {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.stream-avatar {
+  position: relative;
+  display: grid;
+  place-items: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  overflow: hidden;
+  flex: 0 0 28px;
+  background: #ecf0f6;
+}
+.stream-avatar img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.stream-platform {
+  margin-left: auto;
+  white-space: nowrap;
+  font-size: 11px;
+}
+.service-youtube .stream-platform {
+  color: #bc0000;
+}
+.service-twitch .stream-platform {
+  color: #6441a5;
 }
 .talent-stream-card > div {
   padding: 12px;

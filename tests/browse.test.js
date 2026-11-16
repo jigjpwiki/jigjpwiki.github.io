@@ -25,11 +25,11 @@ test('visitor cards keep current affiliations ahead of former, unknown and safe 
  master.talents=[{...master.talents[0],displayName:'</script><script>alert(1)</script>',affiliations:[]}];
  master.organizations[0].name='</script><img src=x onerror=alert(1)>';
  const html=talentCards(master);
- assert.match(html,/所属情報は未確認/);assert.match(html,/aria-labelledby=/);
+ assert.match(html,/所属不明/);assert.match(html,/aria-labelledby=/);
  assert.doesNotMatch(html,/<script>alert|<img src=x|agencyStatus|activityStatus|所属履歴/);
  const encoded=html.match(/id="directory-data">(.*?)<\/script>/)[1];
  assert.equal(JSON.parse(encoded).organizations[0].name,master.organizations[0].name);
  master.talents[0].agencyStatus.value='unaffiliated';
- assert.match(talentCards(master),/無所属（確認済み）/);
- assert.doesNotMatch(talentCards(master),/所属情報は未確認/);
+ assert.match(talentCards(master),/無所属/);
+ assert.doesNotMatch(talentCards(master),/所属不明/);
 });

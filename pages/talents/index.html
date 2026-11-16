@@ -4,25 +4,25 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>タレント一覧｜じぐじゅーる</title>
-<meta name="description" content="jig.jp関連VTuberの確認済みプロフィールと情報源。事務所の所属状態とVTuberとしての活動状態を分けて掲載しています。">
+<meta name="description" content="jig.jp関連VTuberのプロフィール・配信・記念日を探せます。">
 <link rel="canonical" href="https://www.jigdule.jp/talents/">
 <link rel="icon" href="/assets/favicon-32x32.png">
 <link rel="stylesheet" href="/assets/talents.css">
-<link rel="stylesheet" href="/assets/navigation.css"><link rel="stylesheet" href="/assets/browse.css">
+<link rel="stylesheet" href="/assets/navigation.css"><link rel="stylesheet" href="/assets/browse.css"><link rel="stylesheet" href="/assets/talent-ux.css">
 </head>
 <body>
 <header><a class="brand" href="/" aria-label="じぐじゅーる 配信スケジュール"><img src="/assets/logo.png" alt="じぐじゅーる" width="160" height="58"></a><!-- jigdule:navigation --></header>
-<main id="main-content">
+<main id="main-content" class="talent-directory">
 <h1>タレント一覧</h1>
-<p class="intro">気になるタレントのプロフィールや記念日を探してみましょう。確認済みの情報から、一部のタレントを掲載しています。</p>
+<p class="intro">気になるタレントを見つけよう。</p>
 <form id="talent-filters" class="browse-filters" hidden role="search" aria-label="タレントを探す">
 <label>名前・別名<input id="talent-search" type="search" placeholder="タレント名を入力" autocomplete="off"></label>
 <label>事務所<select id="talent-organization"><option value="">すべて</option></select></label>
-<label>所属の区分<select id="talent-relation"><option value="">すべて</option><option value="current">現在所属</option><option value="former">旧所属</option><option value="unaffiliated">無所属（確認済み）</option><option value="unknown">所属未確認</option></select></label>
-<label>グループ（確認済みの関連）<select id="talent-group"><option value="">すべて</option></select></label><button type="reset">条件を解除</button></form>
+<label>所属の区分<select id="talent-relation"><option value="">すべて</option><option value="current">現在所属</option><option value="former">旧所属</option><option value="unaffiliated">無所属</option><option value="unknown">所属不明</option></select></label>
+<label>グループ<select id="talent-group"><option value="">すべて</option></select></label><label>並び順<select id="talent-sort"><option value="agency">事務所別</option><option value="name">名前順</option><option value="registered">登録順</option></select></label><button type="reset">条件を解除</button></form>
 <p id="talent-count" role="status" aria-live="polite"></p><p id="talent-empty" class="empty-state" hidden>該当するタレントはいません。検索語や条件を変更してください。</p><noscript><p>すべての登録タレントを表示しています。検索と絞り込みにはJavaScriptが必要です。</p></noscript>
-<ul class="talent-grid"><!-- jigdule:talents --></ul>
-<p>確認済みの記念日・グッズ情報は各タレントの詳細ページからも確認できます。</p>
+<div id="talent-results"><!-- jigdule:talents --></div>
+
 </main>
 <footer><a href="/">配信スケジュール</a><a href="/privacy-policy/">プライバシーポリシー</a><a href="/terms/">利用規約</a></footer>
 <script src="/assets/js/talents.js" defer></script>

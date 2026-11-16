@@ -7,12 +7,19 @@
       if (cls) e.className = cls;
       return e;
     };
-  function cards(rows) {
+  function cards(rows, talent) {
     const grid = node("div", undefined, "talent-stream-grid");
     for (const row of rows) {
-      const a = node("a", undefined, "talent-stream-card");
+      const a = node(
+        "a",
+        undefined,
+        `talent-stream-card service-${row.service}${row.status === "live" ? " is-live" : ""}`,
+      );
       a.href = row.url;
       a.rel = "noreferrer";
+      const media = node("span", undefined, "stream-media");
+      const placeholder = () =>
+        node("span", "画像なし", "stream-image-fallback");
       if (row.thumbnail) {
         const img = node("img");
         img.src = row.thumbnail;
@@ -21,24 +28,54 @@
         img.height = 180;
         img.loading = "lazy";
         img.referrerPolicy = "no-referrer";
-        img.onerror = () =>
-          img.replaceWith(
-            node("span", "画像を表示できません", "stream-image-fallback"),
-          );
-        a.append(img);
-      } else
-        a.append(node("span", "サムネイル未登録", "stream-image-fallback"));
-      const text = node("div");
-      text.append(
+        img.onerror = () => img.replaceWith(placeholder());
+        media.append(img);
+      } else media.append(placeholder());
+      const state = node(
+        "span",
+        { live: "ON AIR", upcoming: "配信予定", archive: "アーカイブ" }[
+          row.status
+        ],
+        "stream-state",
+      );
+      media.append(state);
+      a.append(media);
+      const text = node("div", undefined, "stream-card-body"),
+        byline = node("div", undefined, "stream-byline"),
+        avatar = node(
+          "span",
+          [...(talent.displayName || "")][0] || "",
+          "stream-avatar",
+        );
+      avatar.setAttribute("aria-hidden", "true");
+      if (talent.profileImageUrl) {
+        try {
+          const u = new URL(talent.profileImageUrl, location.href);
+          if (
+            !u.username &&
+            !u.password &&
+            (u.protocol === "https:" || u.origin === location.origin)
+          ) {
+            const img = node("img");
+            img.src = u.href;
+            img.alt = "";
+            img.loading = "lazy";
+            img.referrerPolicy = "no-referrer";
+            img.onerror = () => img.remove();
+            avatar.append(img);
+          }
+        } catch {}
+      }
+      byline.append(
+        avatar,
+        node("span", talent.displayName || ""),
         node(
           "span",
-          (row.service === "youtube" ? "YouTube" : "Twitch") +
-            "・" +
-            core.states[row.status],
-          "stream-state",
+          row.service === "youtube" ? "YouTube" : "Twitch",
+          "stream-platform",
         ),
-        node("h4", row.title),
       );
+      text.append(byline, node("h4", row.title));
       const time = node(
         "time",
         new Date(row.date).toLocaleString("ja-JP", {
@@ -72,7 +109,7 @@
       if (busy) return;
       busy = true;
       refresh.disabled = true;
-      status.textContent = "配信情報を読み込んでいます…";
+      status.textContent = "読み込み中…";
       profile.setAttribute("aria-busy", "true");
       const fetchJson = async (path) => {
         const r = await fetch(path, {
@@ -136,31 +173,34 @@
           saved.get("twitch")?.rows,
           people,
         );
-        for (const [state, label] of [
-          ["live", "配信中"],
-          ["upcoming", "これからの配信"],
-          ["archive", "最近の配信・動画"],
-        ]) {
-          const matches = rows.filter((r) => r.status === state);
-          if (!matches.length) continue;
-          const section = node("section");
-          section.append(node("h3", label), cards(matches));
-          output.append(section);
+        const registered = config.talent.accounts.some((a) =>
+          core.accountId(a.service, a.accountId),
+        );
+        if (!registered)
+          output.append(node("p", "配信情報は未登録です。", "empty-state"));
+        else {
+          for (const [state, label, empty] of [
+            ["live", "配信中", ""],
+            ["upcoming", "配信予定", "配信予定はありません。"],
+            ["archive", "最近の配信・アーカイブ", "アーカイブはありません。"],
+          ]) {
+            const matches = rows.filter((r) => r.status === state);
+            if (!matches.length && (state === "live" || feedFailed)) continue;
+            const section = node("section");
+            section.dataset.streamGroup = state;
+            section.append(node("h3", label));
+            section.append(
+              matches.length
+                ? cards(matches, config.talent)
+                : node("p", empty, "empty-state"),
+            );
+            output.append(section);
+          }
+          if (!rows.length && feedFailed)
+            output.append(
+              node("p", "保存データをご確認ください。", "empty-state"),
+            );
         }
-        if (!rows.length)
-          output.append(
-            node(
-              "p",
-              config.talent.accounts.some((a) =>
-                core.accountId(a.service, a.accountId),
-              )
-                ? feedFailed
-                  ? "取得できていない配信情報があります。配信の有無を確認できないため、保存データも確認してください。"
-                  : "公開フィードに紐づく配信情報はありません。過去の活動がないことを意味しません。"
-                : "照合できる公式アカウントが未登録です。",
-              "empty-state",
-            ),
-          );
         fallback.open = feedFailed;
       } else {
         fallback.open = true;
@@ -169,7 +209,30 @@
             "アカウント照合情報を取得できませんでした。保存データを表示しています。",
           );
       }
-      status.textContent = notices.join(" ");
+      const metadataText = profile.querySelector("[data-stream-meta]");
+      if (metadataText) metadataText.textContent = notices.join(" ");
+      const failures = result
+        .slice(0, 2)
+        .flatMap((r, i) =>
+          r.status === "fulfilled" && Array.isArray(r.value)
+            ? []
+            : [["YouTube", "Twitch"][i] + "：取得できませんでした。"],
+        );
+      status.textContent = !people
+        ? "配信情報を取得できませんでした。保存データを表示しています。"
+        : failures.join(" ") +
+          (feedFailed && saved.size
+            ? "前回の情報がある場合は残しています。"
+            : "");
+      if (people && !feedFailed) {
+        const freshness = [...saved.values()].map((entry) =>
+          core.freshness(entry.stamp),
+        );
+        if (freshness.includes("stale"))
+          status.textContent = "更新が古い可能性があります。";
+        else if (freshness.includes("unknown"))
+          status.textContent = "更新日時は不明です。";
+      }
       refresh.disabled = false;
       profile.removeAttribute("aria-busy");
       busy = false;

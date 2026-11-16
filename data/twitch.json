@@ -76,5 +76,17 @@
     "url": "https://www.twitch.tv/videos/2930348666",
     "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/9e02effe-cf25-4ba0-9fe7-da457d4e8c87-profile_image-300x300.png",
     "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/8b869516108f48d9e194_hinoha_rui_316792494323_1794813952//thumb/thumb0-320x180.jpg"
+  },
+  {
+    "name": "なかもとおまち",
+    "twitchid": "41futon",
+    "streamId": "316720178545",
+    "title": "ぷろのゔぁ卒業します！",
+    "date": "2026-11-16T12:02:10.000Z",
+    "status": "live",
+    "type": "stream",
+    "url": "https://www.twitch.tv/41futon",
+    "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/1405880b-e945-4720-98c9-6a08c6400cae-profile_image-300x300.png",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_41futon-320x180.jpg"
   }
 ]

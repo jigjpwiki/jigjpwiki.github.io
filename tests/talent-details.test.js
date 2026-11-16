@@ -36,7 +36,7 @@ test('saved stream rows cannot be mistaken for current live status',()=>{
  }
 });
 
-test('profile image presence is independent of live master values and requires valid provenance',()=>{
+test('profile image presence is independent of live master values and requires safe URLs',()=>{
  const fixture=structuredClone(master);const talent=fixture.talents.find(t=>t.id==='tal-000004');
  const image={url:'https://images.example/fixture-avatar.png'};
  const data=publicCatalog(loadCatalog(fixture));

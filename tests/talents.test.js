@@ -16,7 +16,7 @@ test('curated master and reserved identity anchors validate; official channels a
   assert.equal(master.talents[3].agencyStatus.value, 'unknown');
   assert.equal(master.talents[3].activityStatus.value, 'unknown');
 });
-test('unique IDs, accounts, source references and organization references are enforced', () => {
+test('unique IDs/accounts/organizations are enforced and retired source fields are rejected', () => {
   invalid(m => m.talents.push(structuredClone(m.talents[0])));
   invalid(m => m.sources = []);
   invalid(m => m.organizations.push(structuredClone(m.organizations[0])));
@@ -45,7 +45,7 @@ test('rename, multiple agencies, departure, independent activity and retirement 
   assert.throws(() => validateTalents(m, { previous: before }), /internal ID/);
   assert.throws(() => validateTalents(m, { registry }), /unissued/);
 });
-test('unknown values, chronology, current affiliation contradictions and evidence are checked', () => {
+test('unknown values, chronology, current affiliations and closed state objects are checked', () => {
   invalid(m => m.talents[0].activityStatus.value = 'graduated');
   invalid(m => m.talents[0].agencyStatus.value = 'retired');
   invalid(m => m.talents[0].activityStatus.sourceRefs = []);

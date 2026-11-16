@@ -29,14 +29,14 @@ main SHAが変わったら**保守的にreload/再確認を要求**し、自動�
 
 ## 公開・バージョン
 
-管理アプリと台帳/Schema/候補/SecretはPages allowlistへ追加しない。Schema射影と非公開参照のbuild停止を追加したため、AGENTS.mdに従い公開データ保護修正を2.9.1として記載。管理画面が本番公開済みだとは告知しない。既存のイベント5件/商品41件/配信トップUIを保持。現物マスターに人物/組織/所属/活動状態の変更はない。
+管理アプリと台帳/Schema/候補/SecretはPages allowlistへ追加しない。出典管理の撤去に伴う公開表示変更をAGENTS.mdに従い2.12.0へ更新する。管理アプリのデプロイは所有者が別途行う。既存のイベント5件/商品41件/配信トップUIを保持。現物マスターに人物/組織/所属/活動状態の変更はない。
 
 ## 検証と導入
 
 rootでnpm ci、adminでnpm ci。rootのcheck/test/build/test:browserに加え、adminのnpm test（認証/編集/ID/参照/競合/403・409・422・429/応答不明復旧）、npm run check（dry-run）、npm run test:worker（workerd＋SQLite DOでmock OAuth→実際の全master static validator→preview→mock PR→重複再送）、npm run test:browser（ローカルfake OAuth/GitHub、320/390/768/1440px、新規/編集/PR失敗再試行/ログアウト）を使う。実GitHub書込・実Cloudflare・課金・Wikiへの副作用はない。
 
-静的bundle約0.84MiB（圧縮はdry-run出力参照）。本番の無料枠残高/実CPU/実App設定は所有者が確認する。既存Cloudflareアカウントで、複数アカウントを使う所有者はCLOUDFLARE_ACCOUNT_IDに**既存**IDを指定して対象を明示する。新規アカウントは不要。callback/client ID/numeric user IDs、jigwiki-admin専用のClient Secret/SESSION_KEY、ADMIN_ENABLEDの設定だけ。デプロイは所有者承認後のみ。詳細はSETUP.md。
+静的bundle約700KiB（gzip約71KiB、今回のdry-run計測）（圧縮はdry-run出力参照）。本番の無料枠残高/実CPU/実App設定は所有者が確認する。既存Cloudflareアカウントで、複数アカウントを使う所有者はCLOUDFLARE_ACCOUNT_IDに**既存**IDを指定して対象を明示する。新規アカウントは不要。callback/client ID/numeric user IDs、jigwiki-admin専用のClient Secret/SESSION_KEY、ADMIN_ENABLEDの設定だけ。デプロイは所有者承認後のみ。詳細はSETUP.md。
 
 B/Cへはowner以外のrole、候補一括承認、監視・API予算ダッシュボード、外部Wiki同期policy連携、参照付きレコードの匿名化・公開履歴維持方針を引き継ぐ。今回の安全側の保留を無条件に外さない。
 
-実行結果：admin単体/結合17件成功、公開サイト169件成功、check/build/既存browser成功。workerd/SQLite DOではmock OAuthからstatic Schema全体検証・PR作成・二重送信まで成功。管理E2Eは4画面幅で新規と編集を各1回、320pxではPR403失敗→再送も確認。スクリーンショット: [詳細390px](screens/admin-detail-390.png)、[詳細1440px](screens/admin-detail-1440.png)、[PR結果390px](screens/admin-result-390.png)、[PR結果1440px](screens/admin-result-1440.png)。ローカルfixture認証であり、本番GitHub/Cloudflareへは書き込んでいない。
+今回の実行結果：admin単体/結合27件成功、公開サイト185件成功、check/build/既存browser成功。workerd/SQLite DOではmock OAuthからstatic Schema全体検証・PR作成・二重送信まで成功。管理E2Eは4画面幅で新規と編集を各1回、320pxではPR403失敗→再送も確認。スクリーンショット: [詳細390px](screens/admin-detail-390.png)、[詳細1440px](screens/admin-detail-1440.png)、[PR結果390px](screens/admin-result-390.png)、[PR結果1440px](screens/admin-result-1440.png)。ローカルfixture認証であり、本番GitHub/Cloudflareへは書き込んでいない。

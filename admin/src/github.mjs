@@ -1,6 +1,9 @@
 import { fail } from "./security.mjs";
 export const repository = "jigjpwiki/jigjpwiki.github.io";
+export const filePath = (name) =>
+  name === "admin-ledger" ? "ops/admin/ledger.json" : "data/" + name + ".json";
 export const files = [
+  "admin-ledger",
   "talents",
   "talent-id-registry",
   "catalog",
@@ -15,6 +18,7 @@ export const files = [
   "youtube_streamers",
   "twitch_streamers",
 ];
+export const readFiles = [...files, "youtube_cache", "youtube", "twitch"];
 export class GitHub {
   constructor(token, transport = (...args) => fetch(...args)) {
     this.token = token;
@@ -75,8 +79,8 @@ export class GitHub {
     const models = {},
       shas = {};
     await Promise.all(
-      files.map(async (name) => {
-        const file = "data/" + name + ".json",
+      readFiles.map(async (name) => {
+        const file = filePath(name),
           entry = tree.tree.find((x) => x.path === file && x.type === "blob");
         if (!entry) fail(409, "missing_master");
         const blob = await this.call(
@@ -122,7 +126,7 @@ export class GitHub {
       const tree = await this.call(base + "/git/trees", "POST", {
         base_tree: plan.tree,
         tree: Object.entries(plan.files).map(([name, value]) => ({
-          path: "data/" + name + ".json",
+          path: filePath(name),
           mode: "100644",
           type: "blob",
           content: JSON.stringify(value, null, 2) + "\n",

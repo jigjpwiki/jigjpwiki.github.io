@@ -22,3 +22,6 @@ jobs:
       - run: npm test --prefix admin
       - run: npm run check --prefix admin
       - run: npm run test:worker --prefix admin
+      - run: npx playwright install --with-deps chromium
+      - name: Admin browser E2E (mock GitHub only)
+        run: npm run test:browser --prefix admin

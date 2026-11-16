@@ -14,7 +14,7 @@ import {
   csrf,
 } from "./security.mjs";
 import { GitHub, repository } from "./github.mjs";
-import { preview } from "./model.mjs";
+import { preview, forms } from "./model.mjs";
 export default {
   async fetch(request, env) {
     const url = new URL(request.url);
@@ -217,6 +217,8 @@ export class Admin {
     if (rate.count >= 30) fail(429, "admin_request_limit");
     rate.count++;
     await this.store.put(rateKey, rate, rate.start + 60000);
+    if (url.pathname === "/api/forms" && request.method === "GET")
+      return json(forms);
     if (url.pathname === "/api/masters" && request.method === "GET") {
       const snapshot = await github.snapshot();
       return json({
@@ -232,8 +234,27 @@ export class Admin {
       const input = await body(request),
         snapshot = await github.snapshot();
       if (input.sha !== snapshot.sha) fail(409, "main_changed_reload");
-      const plan = await preview(snapshot, input);
-      const id = random();
+      const plan = await preview(snapshot, input, { actor: session.id });
+      const id = await hash({
+        actor: session.id,
+        sha: snapshot.sha,
+        input: {
+          ...input,
+          evidence: { ...input.evidence, checkedAt: undefined },
+        },
+      });
+      if (await this.store.get("operation:" + id))
+        fail(409, "operation_already_submitted");
+      const cached = await this.store.get("preview:" + id);
+      if (cached)
+        return json({
+          id,
+          title: cached.title,
+          summary: cached.summary,
+          diff: cached.diff,
+          impact: cached.impact,
+          files: Object.keys(cached.files),
+        });
       plan.sha = snapshot.sha;
       plan.tree = snapshot.tree;
       plan.shas = snapshot.shas;
@@ -264,7 +285,7 @@ export class Admin {
           if (record?.actor !== undefined && record.actor !== session.id)
             fail(403, "operation_owner");
           if (record?.result) return json(record.result);
-          const plan = await this.store.get("preview:" + key);
+          const plan = (await this.store.get("preview:" + key)) || record?.plan;
           if (!plan || plan.actor !== session.id) fail(409, "preview_expired");
           if (!record) {
             const current = await github.call(
@@ -272,7 +293,18 @@ export class Admin {
             );
             if (current.object.sha !== plan.sha)
               fail(409, "main_changed_reload");
-            record = { actor: session.id };
+            record = {
+              actor: session.id,
+              plan: {
+                sha: plan.sha,
+                tree: plan.tree,
+                files: plan.files,
+                title: plan.title,
+                summary: plan.summary,
+                actor: plan.actor,
+                key,
+              },
+            };
             await this.store.put("operation:" + key, record, now + 86400000);
           }
           const save = async (value) =>

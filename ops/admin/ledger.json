@@ -12,6 +12,19 @@
         "profileImage"
       ],
       "at": "2026-11-16T05:48:13.949Z"
+    },
+    {
+      "id": "9Tj4w1FL_lT3S-dd2bD3v1A_w1QLrM5m80WJXR7K6-g",
+      "actor": "160498891",
+      "entity": "talent",
+      "subject": "tal-000004",
+      "action": "save",
+      "reason": "所属状態・活動状態を更新",
+      "changedFields": [
+        "agencyStatus",
+        "activityStatus"
+      ],
+      "at": "2026-11-16T20:17:41.933Z"
     }
   ],
   "wikiExclusions": [],

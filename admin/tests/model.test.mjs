@@ -203,3 +203,40 @@ test("unchanged saves cannot create audit-only PRs or bypass fresh verification"
   delete request.evidence;
   await assert.rejects(preview(s, request, { actor: "123" }), /confirmation/);
 });
+
+test("Lee image draft passes full validation without changing Wiki refs, other talents or other masters", async () => {
+  const { createDraft } = await import("../public/draft.js");
+  const s = snapshot(),
+    before = structuredClone(s.models);
+  const record = s.models.talents.talents.find((t) => t.id === "tal-000004");
+  const draft = createDraft(record);
+  draft.optionalUrl("wiki", "");
+  draft.optionalUrl("wiki", record.wiki.url);
+  draft.optionalUrl(
+    "profileImage",
+    "https://pbs.twimg.com/media/fixture-image.png",
+  );
+  const request = await input(s, "save", draft.payload(), record.id);
+  request.evidence.url = s.models.talents.sources.find(
+    (source) => source.id === "src-lee-jupita",
+  ).url;
+  const plan = await preview(s, request, { actor: "123" });
+  assert.deepEqual(
+    plan.files.talents.talents.find((t) => t.id === record.id).wiki,
+    record.wiki,
+  );
+  assert.deepEqual(
+    plan.files.talents.talents.filter((t) => t.id !== record.id),
+    before.talents.talents.filter((t) => t.id !== record.id),
+  );
+  assert.deepEqual(s.models, before);
+  assert.deepEqual(Object.keys(plan.files).sort(), ["admin-ledger", "talents"]);
+  draft.setOptionalRefs("wiki", []);
+  await assert.rejects(
+    preview(s, {
+      ...(await input(s, "save", draft.payload(), record.id)),
+      evidence: { ...request.evidence, valueHash: await hash(draft.payload()) },
+    }),
+    /validation/,
+  );
+});

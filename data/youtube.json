@@ -1615,7 +1615,7 @@
     "date": "2026-11-15T13:31:40.000Z",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/HdPA3xR0Dns/mqdefault.jpg?v=6af9b3a8",
+    "thumbnail": "https://i.ytimg.com/vi/HdPA3xR0Dns/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/nMtec5z3KY5RUGCSbQENm9culC2VpB7Ate_dUueAINpAJdFK4wwe7Q6eH88QiMXqjImAleLI=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=HdPA3xR0Dns"
   },
@@ -1639,7 +1639,7 @@
     "date": "2026-11-15T15:01:13.000Z",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/P4SkvfwrfWA/mqdefault.jpg?v=6af9c605",
+    "thumbnail": "https://i.ytimg.com/vi/P4SkvfwrfWA/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/62ws-Q3hPuNjc64T5sz41MNbFqxlI7Gefwnsrysdn2FNYqlxH5E5VifRCMtsFIUyZe5lsHJmxA=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=P4SkvfwrfWA"
   },
@@ -1663,7 +1663,7 @@
     "date": "2026-11-15T15:07:13.000Z",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/jDkSPjyrOcM/mqdefault.jpg?v=6af9c8fa",
+    "thumbnail": "https://i.ytimg.com/vi/jDkSPjyrOcM/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/-4sLuWCih-DlfhpwpDQEuB6eupCB6kTImkIPmKnh54vu5I0F49RkveNQGiqy0p8t0GDU6eiegGE=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=jDkSPjyrOcM"
   },
@@ -1805,11 +1805,35 @@
     "youtubeid": "UCqcnlq8uJqnGml6hcIrMCZw",
     "title": "【 #雑談 / #昼活 】初見さん大歓迎！口内炎と戦う昼活🍽️【花晴りら/パレデミア学園 】#れりライブ #新人vtuber",
     "date": "2026-11-16T02:59:52.000Z",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/Cml4sLrSiN8/mqdefault.jpg?v=6afa50af",
     "channelIcon": "https://yt3.ggpht.com/CH5JMWVQZ_RtloaXoj6W-yXjo9x8UxXSBG_vMyDnfk7M2QTOApVE1zOesu_aDrSAqvDbGrUyxs0=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=Cml4sLrSiN8"
+  },
+  {
+    "videoId": "nAdfaoBW584",
+    "name": "藤森ちとせ",
+    "youtubeid": "UCAhdxmsdngH4noySdpVAVWQ",
+    "title": "【#Minecraft 】巨大な土台作っちゃいましたね～🏠｜建築雑談配信💬作業用にも☺ROM歓迎🎉【#vtuber 】#ちとせらいぶ #パレデミア学園",
+    "date": "2026-11-16T03:59:37.000Z",
+    "status": "live",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/nAdfaoBW584/mqdefault.jpg?v=6afa7d1b",
+    "channelIcon": "https://yt3.ggpht.com/traR_yWe-AOGyM2wjo8h2FJO9JWBcbjfrL13X-umeD6BtNPopSZ2Q3YmdJq_5K9gWgHf_j64iQ=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=nAdfaoBW584"
+  },
+  {
+    "videoId": "AGzDLkObhDs",
+    "name": "瀬奈りるか",
+    "youtubeid": "UCWi_ztz8Xuz4XfzhoG6ZfyA",
+    "title": "【#10 空の軌跡 the 1st】完全初見！3章の続きをプレイしていく🎮✨可愛いロリと一緒にサブクエ進める🎶※ネタバレ注意【＃パレデミア学園】＃せなりるライブ",
+    "date": "2026-11-16T04:15:01.000Z",
+    "status": "live",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/AGzDLkObhDs/mqdefault.jpg?v=6afa7f5b",
+    "channelIcon": "https://yt3.ggpht.com/BaxFKUrCc4gGKc1wwAHt4ebjk8C69NdTl3fMz9LoR5SUm_Tpvv2yixsbJhp8qsld6S0tdgup=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=AGzDLkObhDs"
   },
   {
     "videoId": "_J6OJ2gFss8",

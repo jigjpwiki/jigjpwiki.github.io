@@ -192,20 +192,24 @@
         if (!Array.isArray(people)) return;
         const draw = () => {
           for (const card of list.querySelectorAll(".live-wrapper")) {
-            if (card.querySelector(".stream-talent-link")) continue;
+            if (card.querySelector(".stream-profile-link")) continue;
             const person = core.owner(
               card.dataset,
               card.dataset.platform,
               people,
             );
             if (!person) continue;
-            const link = node(
-              "a",
-              person.displayName + "のプロフィール →",
-              "stream-talent-link",
-            );
+            const face = card.querySelector(".face-icon");
+            if (!face) return;
+            const link = node("a", undefined, "face-icon stream-profile-link");
             link.href = "/talents/" + person.id + "/";
-            card.append(link);
+            link.setAttribute(
+              "aria-label",
+              person.displayName + "のプロフィール",
+            );
+            link.title = person.displayName + "のプロフィール";
+            link.append(...face.childNodes);
+            face.replaceWith(link);
           }
         };
         draw();

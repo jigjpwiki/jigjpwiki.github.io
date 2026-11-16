@@ -54,7 +54,7 @@ const fixture = [
       assert.equal(await page.locator('.day-block').count(), 9);
       assert.equal(await page.locator('.today-block .live-wrapper').count(), 3);
       assert.equal(await page.locator('.today-block .formatted-time').first().innerText(), '20:00');
-      assert.equal(await page.locator('a[href="https://www.youtube.com/watch?v=live"] .live-title').innerText(), title);
+      assert.equal(await page.locator('.live-block:has(a[href="https://www.youtube.com/watch?v=live"]) .live-title').innerText(), title);
       assert.equal(await page.evaluate(() => window.__injected), undefined);
       assert.equal(await page.locator('a[href="https://www.twitch.tv/videos/123"]').count(), 1);
       assert.equal(await page.locator('#data-message, #retry-data, .data-status').count(), 0);
@@ -109,7 +109,7 @@ const fixture = [
       await page.evaluate(() => document.dispatchEvent(new Event('visibilitychange')));
       await page.waitForFunction(count => window.__renderCount > count, beforeRender);
       assert.ok(dataRequests > beforeResume);
-      await page.waitForFunction(() => !document.querySelector('a[href="https://www.youtube.com/watch?v=live"]').classList.contains('is-live'));
+      await page.waitForFunction(() => !document.querySelector('a[href="https://www.youtube.com/watch?v=live"]').closest('.live-block').classList.contains('is-live'));
       assert.deepEqual(errors, []); assert.equal(apiCalls.length, 1);
       if (process.env.BROWSER_SCREENSHOT_DIR) {
         fs.mkdirSync(process.env.BROWSER_SCREENSHOT_DIR, { recursive: true });

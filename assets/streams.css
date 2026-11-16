@@ -56,18 +56,11 @@
   border-color: var(--jigdule-link);
 }
 .talent-stream-card:focus-visible,
-.stream-talent-link:focus-visible {
+.stream-profile-link:focus-visible {
   outline: 3px solid var(--jigdule-focus);
   outline-offset: 3px;
 }
-.stream-talent-link {
-  display: block;
-  padding: 6px 10px;
-  font-size: 12px;
-  line-height: 1.5;
-  color: var(--jigdule-link);
-  text-decoration: underline;
-}
+
 .stream-feedback {
   font-size: 0.9rem;
   color: var(--jigdule-muted-text);

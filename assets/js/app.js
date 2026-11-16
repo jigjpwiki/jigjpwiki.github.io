@@ -67,18 +67,28 @@
     if(item.platform==='twitch')wrapper.dataset.twitchid=item.twitchid||'';
     if (item.platform === 'youtube') { wrapper.dataset.videoId = item.videoId || ''; wrapper.dataset.youtubeid = item.youtubeid || ''; }
     const live = item.status === 'live';
-    const anchor = element(item.url ? 'a' : 'div', `live-block${live ? ' is-live' : ''}`);
-    if (item.url) { anchor.href = item.url; anchor.target = '_blank'; anchor.rel = 'noopener noreferrer'; }
+    const block = element('div', `live-block${live ? ' is-live' : ''}`);
+    if (item.url) {
+      const destination = element('a', 'stream-destination');
+      destination.href = item.url; destination.target = '_blank'; destination.rel = 'noopener noreferrer';
+      destination.setAttribute('aria-label', `${item.name || ''}：${item.title || ''}（配信先を開く）`);
+      block.append(destination);
+    }
     const time = element('div', 'formatted-time');
     time.append(element('p', '', Schedule.time(item.date)));
-    anchor.append(time);
-    if (live) { const badge = element('div', 'on-air-badge'); badge.append(element('p', '', 'ON AIR')); anchor.append(badge); }
+    block.append(time);
+    if (live) { const badge = element('div', 'on-air-badge'); badge.append(element('p', '', 'ON AIR')); block.append(badge); }
     const badge = element('div', `live-badge ${item.platform}`);
     badge.append(element('div', `${item.platform}-badge platform-border`));
     const info = element('div', 'live-info');
     const inner = element('div', 'live-info-inner');
     const face = element('div', 'face-icon');
-    if (item.faceIcon) { const img = image(item.faceIcon, '', ''); img.width = 68; img.height = 68; face.append(img); }
+    face.append(element('span', 'face-fallback', [...(item.name || '？')][0]));
+    if (item.faceIcon) {
+      const img = image(item.faceIcon, '', ''); img.width = 68; img.height = 68;
+      // Keep a same-size initial behind the image, including when it fails to load.
+      img.addEventListener('error', () => img.remove(), { once: true }); face.append(img);
+    }
     const description = element('div', 'description');
     const name = element('div', 'liver-name');
     name.append(element('p', '', item.name));
@@ -88,7 +98,7 @@
     const thumbnail = element('div', 'thumbnail-wrapper');
     const poster = image(item.thumbnail, 'thumbnail', ''); poster.width = 320; poster.height = 180;
     thumbnail.append(poster);
-    info.append(inner, thumbnail); badge.append(info); anchor.append(badge); wrapper.append(anchor);
+    info.append(inner, thumbnail); badge.append(info); block.append(badge); wrapper.append(block);
     return wrapper;
   }
 
@@ -105,7 +115,8 @@
   }
 
   function render() {
-    const focusedHref = document.activeElement?.closest('.live-block')?.getAttribute('href');
+    const focusedHref = document.activeElement?.closest('.live-wrapper a')?.getAttribute('href');
+    const focusedStream = document.activeElement?.closest('.live-wrapper')?.querySelector('.stream-destination')?.getAttribute('href');
     const oldDays = [...document.querySelectorAll('.day-block')];
     const scrolls = new Map(oldDays.map(d => [d.dataset.date, d.scrollTop]));
     const active = oldDays[window._swiperInstance?.activeIndex]?.dataset.date;
@@ -153,7 +164,7 @@
         .filter(node => Number(node.className.match(/time-(\d+)/)?.[1]) <= hour).pop();
       if (list) today.scrollTop = list.previousElementSibling.offsetTop - 90;
     }
-    if (focusedHref) [...container.querySelectorAll('a.live-block')].find(a => a.getAttribute('href') === focusedHref)?.focus({ preventScroll: true });
+    if (focusedHref) requestAnimationFrame(() => [...container.querySelectorAll('.live-wrapper a')].find(a => a.getAttribute('href') === focusedHref && a.closest('.live-wrapper').querySelector('.stream-destination')?.getAttribute('href') === focusedStream)?.focus({ preventScroll: true }));
     initialized = true;
   }
 

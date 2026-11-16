@@ -12,6 +12,7 @@ const root = path.resolve(process.env.STREAM_SITE || "_site"),
 const now = new Date("2026-11-16T06:00:00Z"),
   stamp = now.toISOString();
 const video = {
+  channelIcon: "https://example.com/avatar.png",
   videoId: "abcDEFG1234",
   youtubeid: yt,
   title: "YouTube <img src=x> 予定",
@@ -22,6 +23,7 @@ const video = {
   thumbnail: "https://i.ytimg.com/vi/abcDEFG1234/mqdefault.jpg",
 };
 const twitch = {
+  channelIcon: "https://example.com/avatar.png",
   twitchid: tw.toUpperCase(),
   title: "Twitch配信中",
   name: "別の表示名",
@@ -67,6 +69,7 @@ const twitch = {
         badIndex = false;
       const context = await browser.newContext({
           viewport: { width, height: 900 },
+          hasTouch: width <= 600,
         }),
         p = await context.newPage(),
         errors = [];
@@ -279,9 +282,9 @@ const twitch = {
         failed = false;
 
         await p.goto(base + "/");
-        await p.locator(".stream-talent-link").first().waitFor();
+        await p.locator(".stream-profile-link").first().waitFor();
         assert.equal(
-          await p.locator(".stream-talent-link").first().getAttribute("href"),
+          await p.locator(".stream-profile-link").first().getAttribute("href"),
           "/talents/" + person.id + "/",
         );
         if (process.env.STREAM_SCREENSHOTS)
@@ -292,7 +295,147 @@ const twitch = {
             ),
             fullPage: true,
           });
-        await p.locator(".stream-talent-link").first().focus();
+        if (process.env.STREAM_SCREENSHOTS)
+          fs.writeFileSync(
+            path.join(process.env.STREAM_SCREENSHOTS, `geometry-${width}.json`),
+            JSON.stringify(
+              await p
+                .locator(".live-block")
+                .first()
+                .evaluate((e) => ({
+                  width: e.getBoundingClientRect().width,
+                  height: e.getBoundingClientRect().height,
+                })),
+            ),
+          );
+        const icon = p.locator(".stream-profile-link").first(),
+          card = icon.locator(
+            'xpath=ancestor::*[contains(@class,"live-wrapper")]',
+          );
+        assert.equal(await p.locator(".stream-talent-link").count(), 0);
+        assert.equal(
+          await p
+            .locator(".live-wrapper")
+            .filter({ hasText: "別人" })
+            .locator(".stream-profile-link")
+            .count(),
+          0,
+          "Unknown IDs receive no profile link",
+        );
+        await p.waitForFunction(
+          () => !document.querySelector(".stream-profile-link img"),
+        );
+
+        assert.equal(await p.locator(".live-block a a").count(), 0);
+        assert.equal(
+          await card.locator(".stream-destination").getAttribute("target"),
+          "_blank",
+        );
+        await icon.scrollIntoViewIfNeeded();
+        await icon.hover();
+        assert(
+          await icon.evaluate((e) => {
+            const r = e.getBoundingClientRect();
+            return e.contains(
+              document.elementFromPoint(r.x + r.width / 2, r.y + r.height / 2),
+            );
+          }),
+          "Icon is above the stream overlay even while hovering",
+        );
+        const box = await icon.boundingBox();
+        assert(
+          box.width >= 44 && box.height >= 44,
+          "Missing images retain a touch-size icon",
+        );
+        const poster = card.locator(".thumbnail-wrapper");
+        await poster.hover({ force: true });
+        const thumbnailBox = await poster.boundingBox();
+        assert(
+          Math.abs(thumbnailBox.width / thumbnailBox.height - 16 / 9) < 0.01,
+          "Schedule thumbnails remain 16:9",
+        );
+        assert(
+          await poster.evaluate((e) => {
+            const r = e.getBoundingClientRect();
+            return document
+              .elementFromPoint(r.x + r.width / 2, r.y + r.height / 2)
+              ?.classList.contains("stream-destination");
+          }),
+          "Non-icon card region belongs to stream destination",
+        );
+        const [popup] = await Promise.all([
+          p.waitForEvent("popup"),
+          card.locator(".stream-destination").press("Enter"),
+        ]);
+        await popup.close();
+        await card.locator(".stream-destination").focus();
+        assert.equal(
+          await p.evaluate(() => document.activeElement.className),
+          "stream-destination",
+        );
+        await p.keyboard.press("Tab");
+        assert.equal(
+          await icon.evaluate((e) => e === document.activeElement),
+          true,
+          "Both links are independent keyboard targets",
+        );
+        await p.locator(".stream-profile-link").last().focus();
+        await p.evaluate(() => {
+          window.iconRedraws = 0;
+          new MutationObserver(() => window.iconRedraws++).observe(
+            document.getElementById("videolist"),
+            { childList: true },
+          );
+          document.dispatchEvent(new Event("visibilitychange"));
+        });
+        await p.waitForFunction(
+          () =>
+            window.iconRedraws > 0 &&
+            document.activeElement?.matches(".stream-profile-link") &&
+            document.activeElement.closest(".live-wrapper").dataset.platform ===
+              "twitch",
+        );
+        if (width <= 600) {
+          const client = await context.newCDPSession(p),
+            r = await icon.boundingBox(),
+            x = r.x + r.width / 2,
+            y = r.y + r.height / 2;
+          const initial = await p.evaluate(
+            () => window._swiperInstance.activeIndex,
+          );
+          await client.send("Input.dispatchTouchEvent", {
+            type: "touchStart",
+            touchPoints: [{ x, y }],
+          });
+          for (let i = 1; i <= 6; i++)
+            await client.send("Input.dispatchTouchEvent", {
+              type: "touchMove",
+              touchPoints: [{ x: x + ((width - x - 15) * i) / 6, y }],
+            });
+          await client.send("Input.dispatchTouchEvent", {
+            type: "touchEnd",
+            touchPoints: [],
+          });
+          await p.waitForFunction(
+            (index) => window._swiperInstance.activeIndex !== index,
+            initial,
+          );
+          assert.equal(
+            new URL(p.url()).pathname,
+            "/",
+            "Swipe starting on the icon must not navigate",
+          );
+          await p.evaluate(
+            (index) => window._swiperInstance.slideTo(index, 0),
+            initial,
+          );
+          await icon.scrollIntoViewIfNeeded();
+          await icon.tap();
+          await p.waitForURL("**/talents/" + person.id + "/");
+          await p.goto(base + "/");
+          await p.locator(".stream-profile-link").first().waitFor();
+        }
+        await p.locator(".stream-profile-link").first().focus();
         await p.keyboard.press("Enter");
         await p.waitForURL("**/talents/" + person.id + "/");
         assert.deepEqual(errors, []);
@@ -309,6 +452,18 @@ const twitch = {
       if (process.env.STREAM_BEFORE && process.env.STREAM_SCREENSHOTS) {
         await p.goto(base + "/");
         await p.locator(".live-wrapper").first().waitFor();
+        fs.writeFileSync(
+          path.join(process.env.STREAM_SCREENSHOTS, `geometry-${width}.json`),
+          JSON.stringify(
+            await p
+              .locator(".live-block")
+              .first()
+              .evaluate((e) => ({
+                width: e.getBoundingClientRect().width,
+                height: e.getBoundingClientRect().height,
+              })),
+          ),
+        );
         await p.screenshot({
           path: path.join(
             process.env.STREAM_SCREENSHOTS,

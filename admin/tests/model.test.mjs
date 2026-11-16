@@ -266,3 +266,34 @@ test("a new talent with unknown accounts can be proposed without an invented sou
     null,
   );
 });
+
+test("v2 status edits preserve other people, affiliations and IDs without source input", async () => {
+  for (const agency of ["unknown", "unaffiliated"]) {
+    for (const activity of ["unknown", "active", "hiatus", "retired", "ended"]) {
+      const s = snapshot();
+      const baseline = s.models.talents.talents.find(t => t.id === "tal-000004");
+      baseline.affiliations = [{ organizationId: "org-000001", status: "former", from: null, to: null }];
+      baseline.agencyStatus = { value: "unknown" };
+      baseline.activityStatus = { value: activity === "unknown" ? "active" : "unknown" };
+      const original = structuredClone(s.models.talents);
+      const value = structuredClone(s.models.talents.talents.find(t => t.id === "tal-000004"));
+      // Fixed state scenario: former membership is independent of current activity.
+      value.affiliations = [{ organizationId: "org-000001", status: "former", from: null, to: null }];
+      value.agencyStatus = { value: agency };
+      value.activityStatus = { value: activity };
+      const request = await input(s, "save", value, value.id);
+      const plan = await preview(s, request, { actor: "123" });
+      const updated = plan.files.talents;
+      assert.equal(updated.schemaVersion, 2);
+      assert.deepEqual(updated.talents.find(t => t.id === value.id), value);
+      assert.deepEqual(updated.talents.filter(t => t.id !== value.id), original.talents.filter(t => t.id !== value.id));
+      assert.deepEqual(s.models.talents, original);
+      assert(!plan.files["talent-id-registry"]);
+      assert(!JSON.stringify(value).includes("sourceRefs"));
+      const bad = structuredClone(request);
+      bad.value.affiliations[0].status = "current";
+      bad.confirmation.valueHash = await hash(bad.value);
+      await assert.rejects(preview(s, bad), /validation/);
+    }
+  }
+});

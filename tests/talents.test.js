@@ -7,14 +7,15 @@ const { validateTalents, loadTalents } = require('../lib/talents');
 const { navigation, talentCards } = require('../lib/site-pages');
 const master = require('../data/talents.json');
 const registry = require('../data/talent-id-registry.json');
-const copy = () => structuredClone(master);
+// Rule tests use the fixed v2 foundation seed, not Admin-editable production values.
+const fixture = () => ({ schemaVersion: 2, organizations: [{ id: 'org-000001', name: 'ProForma Nova' }], talents: structuredClone(require('./fixtures/foundation-talents.json')) });
+const copy = fixture;
 const invalid = mutate => { const m = copy(); mutate(m); assert.throws(() => validateTalents(m)); };
 test('curated master and reserved identity anchors validate; official channels are excluded', () => {
   assert.equal(loadTalents().talents.length, master.talents.length);
   assert.equal(master.talents.some(t => t.displayName === 'ProForma Production'), false);
   assert.equal(master.talents.some(t => t.accounts.some(a => a.accountId === 'UClUMpS4UZ_2VrKk3HdNtIBA')), false);
-  assert.equal(master.talents[3].agencyStatus.value, 'unknown');
-  assert.equal(master.talents[3].activityStatus.value, 'unknown');
+  assert.doesNotThrow(() => validateTalents(master, { registry }));
 });
 test('unique IDs/accounts/organizations are enforced and retired source fields are rejected', () => {
   invalid(m => m.talents.push(structuredClone(m.talents[0])));
@@ -28,7 +29,7 @@ test('unique IDs/accounts/organizations are enforced and retired source fields a
   invalid(m => m.talents[0].accounts[1].accountId = 'somebody_else');
 });
 test('rename, multiple agencies, departure, independent activity and retirement retain internal identity', () => {
-  const m = copy(); const t = m.talents[0]; const before = structuredClone(master);
+  const m = copy(); const t = m.talents[0]; const before = copy();
   t.aliases.push({ name: t.displayName, type: 'former_name', from: null, to: null });
   t.displayName = '検証用の改名';
   m.organizations.push({ id: 'org-999998', name: '検証用別事務所' });

@@ -2,9 +2,13 @@
 const test=require('node:test');const assert=require('node:assert/strict');
 const {loadTalents,validateTalents}=require('../lib/talents');
 const {loadCatalog,validateCatalog}=require('../lib/catalog');
+// Historical expansion snapshot from main immediately before PR #36 (parent of e0e73c1df).
+// Admin may update today's states; this fixture records the original migration expectations.
+const historical=require('./fixtures/expansion-states.json');
 const master=loadTalents();const catalog=loadCatalog(master);const accepted=require('../docs/data-expansion/accepted.json');const candidates=require('../docs/data-expansion/candidates.json');
 test('verified expansion retains the four original identities and independently records candidate outcomes',()=>{
- assert.equal(master.talents.length,97);
+ assert.equal(historical.length,97);
+ for(const row of historical)assert(master.talents.some(t=>t.id===row.id));
  // Identity anchors are immutable; names, images and other verified profile fields may evolve.
  const registry=require('../data/talent-id-registry.json');
  const identities=require('./fixtures/foundation-identities.json');
@@ -18,11 +22,11 @@ test('verified expansion retains the four original identities and independently 
  for(const r of accepted){const t=master.talents.find(t=>t.id===r.id);assert.equal(t.displayName,r.name);assert.equal(candidates.find(c=>c.id===r.id)?.result,'registered');assert.equal(registry.issued.find(a=>a.id===t.id)?.officialProfileUrl,r.identityUrl);}
  for(const r of candidates.filter(r=>r.result==='held'))assert(!master.talents.some(t=>t.displayName===r.name));
 });
-test('retired affiliations never imply retirement; confirmed activity endings have independent official notices',()=>{
- const added=master.talents.slice(4);assert.equal(added.filter(t=>t.affiliations.some(a=>a.status==='former')).length,13);
+test('historical expansion keeps former affiliations and separately confirmed activity endings',()=>{
+ const added=historical.slice(4);assert.equal(added.filter(t=>t.affiliations.some(a=>a.status==='former')).length,13);
  const knownEnded=new Set(['日本晴ここ','六連星なる','月宮あお','鎖乙女がぶ','彩音るか','愛染アネラ']);
  for(const t of added){assert.equal(t.activityStatus.value,knownEnded.has(t.displayName)?'ended':'unknown');if(t.affiliations.some(a=>a.status==='former'))assert.equal(t.agencyStatus.value,'unknown');}
- const naru=master.talents.find(t=>t.displayName==='なる'),old=master.talents.find(t=>t.displayName==='六連星なる');assert.notEqual(naru.id,old.id);assert.equal(naru.activityStatus.value,'unknown');assert.equal(naru.accounts[0].accountId,'UCMX0Mn5PTjojdQL8MN1B5Vg');
+ const naru=master.talents.find(t=>t.displayName==='なる'),old=master.talents.find(t=>t.displayName==='六連星なる');assert.notEqual(naru.id,old.id);assert.equal(historical.find(t=>t.id===naru.id).activityStatus.value,'unknown');assert.equal(naru.accounts[0].accountId,'UCMX0Mn5PTjojdQL8MN1B5Vg');
  assert(!catalog.anniversaries.events.some(e=>e.talentIds.includes(naru.id)));
 });
 test('official organization channels and duplicate monitor rows cannot become individual talents',()=>{

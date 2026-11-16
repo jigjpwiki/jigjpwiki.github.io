@@ -10,7 +10,9 @@ const bad = mutate => { const m = model(); mutate(m); assert.throws(() => check(
 test('verified seed has eight events, no birth years, and independent talent state', () => {
   const m = model(); assert.equal(m.anniversaries.events.length,8);
   assert(m.anniversaries.events.filter(e=>e.type==='birthday').every(e=>e.date.year===null&&!e.countYears));
-  assert.equal(m.talents.talents[3].activityStatus.value,'unknown'); assert.equal(m.talents.talents[3].affiliations[0].status,'former');
+  const before = structuredClone(m.talents);
+  check(m); publicCatalog(m);
+  assert.deepEqual(m.talents, before); // Catalog projection must not infer or rewrite activity.
 });
 test('catalog schemas and cross references reject invalid IDs, subjects, sources and dates', () => {
   bad(m=>m.anniversaries.events.push(structuredClone(m.anniversaries.events[0])));

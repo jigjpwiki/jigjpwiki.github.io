@@ -104,12 +104,12 @@ test("server renders static grouped cards once, excludes drafts and escapes all 
   assert(!withoutPrivateGroup.includes(privateGroup.id));
   assert(!withoutPrivateGroup.includes(privateGroup.name));
 });
-test("sparse profiles omit unrelated empty sections and keep sources and human-confirmed activity separate", () => {
+test("sparse profiles omit unrelated empty sections and keep Wiki links and human-confirmed activity separate", () => {
   const { loadTalents } = require("../lib/talents"),
     { loadCatalog, publicCatalog } = require("../lib/catalog"),
     { talentPage } = require("../lib/talent-details");
   const master = loadTalents(),
-    person = structuredClone(master.talents[3]);
+    person = structuredClone(require("./fixtures/foundation-talents.json")[3]);
   person.profileImage = null;
   const html = talentPage(person, master, {
     ...publicCatalog(loadCatalog(master)),
@@ -124,9 +124,8 @@ test("sparse profiles omit unrelated empty sections and keep sources and human-c
   assert(
     html.indexOf('id="talent-streams"') < html.indexOf("profile-biography"),
   );
-  person.affiliations = [
-    { ...person.affiliations[0], organizationId: null, status: "current" },
-  ];
+  person.affiliations = [];
+  person.agencyStatus = { value: "unknown" };
   const unknown = talentPage(person, master, {
     ...publicCatalog(loadCatalog(master)),
     events: [],

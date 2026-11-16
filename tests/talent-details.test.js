@@ -14,7 +14,7 @@ test('mismatched URL, unsafe host/protocol, missing fields and duplicates cannot
  assert.equal(relatedStreams(person,[video,video],[]).length,1);
 });
 test('public profile works with missing optional data and keeps graduation separate from retirement',()=>{
- const data=publicCatalog(loadCatalog(master));const former=structuredClone(master.talents.find(t=>t.id==='tal-000004'));former.profileImage=null;const html=talentPage(former,master,data,{});
+ const data=publicCatalog(loadCatalog(master));const former=structuredClone(require('./fixtures/foundation-talents.json').find(t=>t.id==='tal-000004'));former.profileImage=null;const html=talentPage(former,master,data,{});
  assert.match(html,/旧所属：ProForma Nova/);assert.doesNotMatch(html,/>引退<|>活動終了<|agencyStatus|activityStatus|<small>tal-/);
  assert.match(html,/配信・動画はありません/);assert.match(html,/class="talent-avatar"/);
  const t=structuredClone(person);t.profileImage=null;t.accounts=[];t.wiki=null;t.affiliations=[];

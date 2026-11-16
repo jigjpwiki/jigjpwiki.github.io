@@ -8,6 +8,15 @@ const orgCurrent=master.talents.filter(t=>t.affiliations.some(a=>a.organizationI
 const firstGroupCurrent=catalog.groups[0].talentIds.filter(id=>master.talents.find(t=>t.id===id).affiliations.some(a=>a.status==='current'&&a.organizationId==='org-000001')).length;
 (async()=>{
  const server=http.createServer((req,res)=>{
+  // Optional-image behavior is a deterministic fixture, not an assumption about live talents.
+  if(['/fixture-profile-image/','/fixture-profile-no-image/'].includes(req.url)){
+   const fixture=structuredClone(master),talent=fixture.talents.find(t=>t.id==='tal-000004');
+   const source=talent.displayNameSourceRefs.find(id=>fixture.sources.some(s=>s.id===id&&s.kind==='official'));
+   talent.profileImage=req.url==='/fixture-profile-image/'?{url:'https://images.example/fixture-avatar.png',sourceRefs:[source]}:null;
+   require('../lib/talents').validateTalents(fixture,{registry:require('../data/talent-id-registry.json')});
+   const data=require('../lib/catalog').publicCatalog(require('../lib/catalog').loadCatalog(fixture));
+   res.setHeader('Content-Type','text/html');return res.end(require('../lib/talent-details').talentPage(talent,fixture,data,{}));
+  }
   if(req.url==='/fixture-goods/'||req.url==='/fixture-profile/') {
    const m=require('./fixtures/goods.cjs')();
    m.goods.products[0].image='https://images.example/unavailable.png';
@@ -29,6 +38,7 @@ const firstGroupCurrent=catalog.groups[0].talentIds.filter(id=>master.talents.fi
   for(const width of [1440,768,390,320]){
    const context=await browser.newContext({viewport:{width,height:900},timezoneId:'America/Los_Angeles'});
    await context.route('**/*',r=>new URL(r.request().url()).origin===base?r.continue():r.abort());
+   await context.route('https://images.example/fixture-avatar.png',r=>r.fulfill({contentType:'image/png',body:fs.readFileSync(path.join(root,'assets/favicon-32x32.png'))}));
    const page=await context.newPage();const errors=[];page.on('pageerror',e=>errors.push(e.message));
    await page.clock.install({time:new Date('2026-12-25T00:00:00Z')});await page.goto(base+'/anniversaries/');
    await page.waitForFunction(()=>document.getElementById('month-label').textContent==='2026-12');
@@ -75,6 +85,14 @@ const firstGroupCurrent=catalog.groups[0].talentIds.filter(id=>master.talents.fi
    assert.equal(await page.getByRole('heading',{name:'真昼ねる',exact:true}).count(),1);
    assert.match(await page.locator('main').innerText(),/サイト公開時点の保存データ/);
    assert.doesNotMatch(await page.locator('main').innerText(),/tal-000001|activityStatus|VTuber活動：/);
+   for(const withImage of [true,false]){
+    await page.goto(base+(withImage?'/fixture-profile-image/':'/fixture-profile-no-image/'));
+    const hero=page.locator('.profile-hero');
+    assert.equal(await hero.locator('img').count(),withImage?1:0);
+    if(withImage){assert.equal(await hero.locator('img').getAttribute('src'),'https://images.example/fixture-avatar.png');await hero.locator('img.is-loaded').waitFor();assert.doesNotMatch(await hero.innerText(),/画像未確認/);}
+    else assert.match(await hero.innerText(),/画像未確認/);
+    assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth),false);
+   }
    await page.goto(base+'/talents/tal-000004/');assert.match(await page.locator('main').innerText(),/旧所属：ProForma Nova/);assert.doesNotMatch(await page.locator('main').innerText(),/引退|活動終了/);
    assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth),false);
    await page.getByRole('link',{name:'記念日カレンダー'}).first().click();
@@ -92,6 +110,7 @@ const firstGroupCurrent=catalog.groups[0].talentIds.filter(id=>master.talents.fi
    await page.goto(base+'/fixture-profile/');assert.equal(await page.getByRole('heading',{name:'関連グッズ',exact:true}).count(),1);assert.match(await page.locator('.goods-offer').first().innerText(),/販売中/);
    assert.deepEqual(errors,[]);await context.close();console.log(`Phase 2 browser passed: ${width}px, JST, month movement, filters, keyboard, no overflow`);
   }
-  const context=await browser.newContext({javaScriptEnabled:false});const page=await context.newPage();await page.goto(base+'/anniversaries/');assert.equal(await page.locator('.anniversary-calendar').count(),1);assert.equal(await page.locator('#calendar-tools').isVisible(),false);assert.match(await page.locator('#calendar-reference').innerText(),/現在の暦ではありません/);assert.equal(await page.locator('#upcoming-heading').innerText(),'基準日から30日間');await context.close();
+  const context=await browser.newContext({javaScriptEnabled:false});await context.route('https://images.example/fixture-avatar.png',r=>r.fulfill({contentType:'image/png',body:fs.readFileSync(path.join(root,'assets/favicon-32x32.png'))}));
+   const page=await context.newPage();await page.goto(base+'/anniversaries/');assert.equal(await page.locator('.anniversary-calendar').count(),1);assert.equal(await page.locator('#calendar-tools').isVisible(),false);assert.match(await page.locator('#calendar-reference').innerText(),/現在の暦ではありません/);assert.equal(await page.locator('#upcoming-heading').innerText(),'基準日から30日間');await context.close();
  }finally{await browser.close();await new Promise(r=>server.close(r));}
 })().catch(e=>{console.error(e);process.exitCode=1});

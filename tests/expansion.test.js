@@ -4,7 +4,15 @@ const {loadTalents,validateTalents}=require('../lib/talents');
 const {loadCatalog,validateCatalog}=require('../lib/catalog');
 const master=loadTalents();const catalog=loadCatalog(master);const accepted=require('../docs/data-expansion/accepted.json');const candidates=require('../docs/data-expansion/candidates.json');
 test('verified expansion retains the four original identities and independently records candidate outcomes',()=>{
- assert.equal(master.talents.length,97);assert.deepEqual(master.talents.slice(0,4),require('./fixtures/foundation-talents.json'));
+ assert.equal(master.talents.length,97);
+ // Identity anchors are immutable; names, images and other verified profile fields may evolve.
+ const registry=require('../data/talent-id-registry.json');
+ const identities=require('./fixtures/foundation-identities.json');
+ for(const identity of identities){
+  assert(master.talents.some(t=>t.id===identity.id));
+  assert.deepEqual(registry.issued.find(row=>row.id===identity.id),identity);
+ }
+ assert.doesNotThrow(()=>validateTalents(master,{registry,previous:{...master,talents:require('./fixtures/foundation-talents.json')}}));
  assert.equal(accepted.length,93);assert.equal(candidates.length,127);assert.equal(candidates.filter(r=>r.result==='held').length,30);
  assert.equal(new Set(candidates.map(r=>r.name)).size,candidates.length);
  for(const r of accepted){const t=master.talents.find(t=>t.id===r.id);assert.equal(t.displayName,r.name);assert.equal(candidates.find(c=>c.id===r.id)?.result,'registered');assert(t.displayNameSourceRefs.some(id=>master.sources.find(s=>s.id===id)?.url===r.identityUrl));}

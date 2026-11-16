@@ -14,7 +14,7 @@ test('mismatched URL, unsafe host/protocol, missing fields and duplicates cannot
  assert.equal(relatedStreams(person,[video,video],[]).length,1);
 });
 test('public profile works with missing optional data and keeps graduation separate from retirement',()=>{
- const data=publicCatalog(loadCatalog(master));const former=master.talents[3];const html=talentPage(former,master,data,{});
+ const data=publicCatalog(loadCatalog(master));const former=structuredClone(master.talents.find(t=>t.id==='tal-000004'));former.profileImage=null;const html=talentPage(former,master,data,{});
  assert.match(html,/旧所属：ProForma Nova/);assert.doesNotMatch(html,/>引退<|>活動終了<|agencyStatus|activityStatus|<small>tal-/);
  assert.match(html,/関連する配信・動画情報はありません/);assert.match(html,/画像未確認/);
  const t=structuredClone(person);t.profileImage=null;t.accounts=[];t.wiki=null;t.affiliations=[];
@@ -33,5 +33,23 @@ test('saved stream rows cannot be mistaken for current live status',()=>{
   assert.match(html,/サイト公開時点の保存データ/);assert.match(html,/リアルタイムの配信状態ではありません/);
   assert.doesNotMatch(html,/配信中|配信予定（収集時点）/);assert.match(html,/配信・公開日時（予定を含む）/);
   assert.match(html,/プロフィール等の出典確認日/);
+ }
+});
+
+test('profile image presence is independent of live master values and requires valid provenance',()=>{
+ const fixture=structuredClone(master);const talent=fixture.talents.find(t=>t.id==='tal-000004');
+ const source=talent.displayNameSourceRefs.find(id=>fixture.sources.some(s=>s.id===id&&s.kind==='official'));
+ const image={url:'https://images.example/fixture-avatar.png',sourceRefs:[source]};
+ const data=publicCatalog(loadCatalog(fixture));
+ for(const profileImage of [null,image]){
+  talent.profileImage=structuredClone(profileImage);const before=structuredClone(fixture);
+  assert.doesNotThrow(()=>require('../lib/talents').validateTalents(fixture,{registry:require('../data/talent-id-registry.json')}));
+  const html=talentPage(talent,fixture,data,{});
+  if(profileImage){assert.match(html,/src="https:\/\/images\.example\/fixture-avatar\.png"/);assert.doesNotMatch(html,/画像未確認/);}
+  else{assert.match(html,/画像未確認/);assert.doesNotMatch(require('../lib/talent-details').avatar(talent),/<img /);}
+  assert.deepEqual(fixture,before);
+ }
+ for(const invalid of [{...image,sourceRefs:[]},{...image,sourceRefs:['src-missing']},{...image,url:'javascript:alert(1)'},{...image,url:'https://images.example/avatar.png?token=secret'}]){
+  talent.profileImage=invalid;assert.throws(()=>require('../lib/talents').validateTalents(fixture));
  }
 });

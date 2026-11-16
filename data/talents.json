@@ -1764,6 +1764,36 @@
       "kind": "official",
       "url": "https://x.com/Lee_Jupita/photo",
       "checkedAt": "2026-11-16T05:47:49.105Z"
+    },
+    {
+      "id": "src-admin-04db3ec716b2c7b6a5b7",
+      "kind": "official",
+      "url": "https://www.youtube.com/@hengerime",
+      "checkedAt": "2026-11-16T16:40:40.318Z"
+    },
+    {
+      "id": "src-admin-3fd6aa7916d4538844a6",
+      "kind": "wiki",
+      "url": "https://wikiwiki.jp/jigjp/%E5%A4%89%E5%B9%BB%E3%83%AA%E3%83%A1",
+      "checkedAt": "2026-11-16T16:42:04.135Z"
+    },
+    {
+      "id": "src-admin-2d53e6c042419df5f9be",
+      "kind": "official",
+      "url": "https://www.youtube.com/watch?v=nvY0jooyXVk",
+      "checkedAt": "2026-11-16T16:46:36.619Z"
+    },
+    {
+      "id": "src-admin-1363118a44c32605442f",
+      "kind": "official",
+      "url": "https://www.youtube.com/watch?v=RWM4SdTZ1t8",
+      "checkedAt": "2026-11-16T16:47:08.457Z"
+    },
+    {
+      "id": "src-admin-1762d8d5625710f4b002",
+      "kind": "official",
+      "url": "https://x.com/hengerime",
+      "checkedAt": "2026-11-16T16:47:58.965Z"
     }
   ],
   "organizations": [
@@ -8112,6 +8142,78 @@
         ]
       },
       "profileImage": null
+    },
+    {
+      "displayName": "変幻リメ",
+      "displayNameSourceRefs": [
+        "src-admin-04db3ec716b2c7b6a5b7"
+      ],
+      "aliases": [],
+      "affiliations": [
+        {
+          "organizationId": "org-000005",
+          "status": "current",
+          "from": "2026-05-15",
+          "to": null,
+          "sourceRefs": [
+            "src-admin-2d53e6c042419df5f9be"
+          ]
+        },
+        {
+          "organizationId": "org-000003",
+          "status": "former",
+          "from": "2025-01-04",
+          "to": "2026-05-14",
+          "sourceRefs": [
+            "src-admin-2d53e6c042419df5f9be",
+            "src-admin-1363118a44c32605442f"
+          ]
+        }
+      ],
+      "agencyStatus": {
+        "value": "affiliated",
+        "sourceRefs": [
+          "src-admin-04db3ec716b2c7b6a5b7"
+        ]
+      },
+      "activityStatus": {
+        "value": "active",
+        "sourceRefs": [
+          "src-admin-04db3ec716b2c7b6a5b7"
+        ]
+      },
+      "accounts": [
+        {
+          "service": "youtube",
+          "accountId": null,
+          "url": "https://www.youtube.com/@hengerime",
+          "sourceRefs": [
+            "src-admin-04db3ec716b2c7b6a5b7"
+          ]
+        },
+        {
+          "service": "x",
+          "accountId": null,
+          "url": "https://x.com/hengerime",
+          "sourceRefs": [
+            "src-admin-1762d8d5625710f4b002"
+          ]
+        }
+      ],
+      "wiki": {
+        "sourceRefs": [
+          "src-admin-3fd6aa7916d4538844a6"
+        ],
+        "url": "https://wikiwiki.jp/jigjp/%E5%A4%89%E5%B9%BB%E3%83%AA%E3%83%A1"
+      },
+      "profileImage": {
+        "sourceRefs": [
+          "src-admin-04db3ec716b2c7b6a5b7"
+        ],
+        "url": "https://yt3.googleusercontent.com/4hssn4EXW2lORXRfiuYTjmYfnlZoQ2h72sdEompqX7GQwAKCsBx7eL0joCFSook1rfCKIcpykg=s160-c-k-c0x00ffffff-no-rj"
+      },
+      "visibility": "public",
+      "id": "tal-000098"
     }
   ]
 }

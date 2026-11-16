@@ -18,6 +18,34 @@
         "profileImage"
       ],
       "at": "2026-11-16T05:48:13.949Z"
+    },
+    {
+      "id": "PRu0R_s7q9e_NkH_Q6kpleapFaDaP7x5SJH6lK3SSSs",
+      "actor": "160498891",
+      "entity": "talent",
+      "subject": "tal-000098",
+      "action": "save",
+      "reason": "新規追加",
+      "evidence": {
+        "status": "verified",
+        "url": "https://www.youtube.com/@hengerime",
+        "checkedAt": "2026-11-16T16:50:31.061Z",
+        "valueHash": "_zBGwz1TALkJDcNl5Fql4p6pu-jZyTinFzlgA_PdpkY"
+      },
+      "changedFields": [
+        "displayName",
+        "displayNameSourceRefs",
+        "aliases",
+        "affiliations",
+        "agencyStatus",
+        "activityStatus",
+        "accounts",
+        "wiki",
+        "profileImage",
+        "visibility",
+        "id"
+      ],
+      "at": "2026-11-16T16:50:33.884Z"
     }
   ],
   "wikiExclusions": [],

@@ -11,7 +11,7 @@
 /* Shared with the schedule: neutral surfaces, blue links, compact typography. */
 .talent-stream-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(min(240px, 100%), 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(min(240px, 100%), 1fr));
   gap: 16px;
 }
 .talent-stream-card {

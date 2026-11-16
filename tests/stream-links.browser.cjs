@@ -128,6 +128,12 @@ const twitch = {
             fullPage: true,
           });
         }
+        if (width >= 768)
+          assert(
+            (await region.locator(".talent-stream-card").first().boundingBox())
+              .width <= 400,
+            "Single stream cards stay compact on desktop",
+          );
         stale = true;
         await region.getByRole("button", { name: "配信情報を更新" }).click();
         await p.waitForFunction(() =>

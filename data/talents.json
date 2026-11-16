@@ -1758,6 +1758,12 @@
       "kind": "official",
       "url": "https://www.proforma-production.jp/news/n/q1rm0p3exwy3",
       "checkedAt": "2026-11-14T20:10:53.582582Z"
+    },
+    {
+      "id": "src-admin-n9qnion3k7fnatzs",
+      "kind": "official",
+      "url": "https://x.com/Lee_Jupita/photo",
+      "checkedAt": "2026-11-16T05:47:49.105Z"
     }
   ],
   "organizations": [
@@ -2078,7 +2084,12 @@
           "src-wiki-lee-jupita"
         ]
       },
-      "profileImage": null
+      "profileImage": {
+        "url": "https://pbs.twimg.com/profile_images/2098804137848930304/ZvU5aude_400x400.jpg",
+        "sourceRefs": [
+          "src-admin-n9qnion3k7fnatzs"
+        ]
+      }
     },
     {
       "id": "tal-000005",

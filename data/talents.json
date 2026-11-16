@@ -165,10 +165,10 @@
         }
       ],
       "agencyStatus": {
-        "value": "unknown"
+        "value": "unaffiliated"
       },
       "activityStatus": {
-        "value": "unknown"
+        "value": "ended"
       },
       "accounts": [
         {

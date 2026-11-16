@@ -1,1 +1,31 @@
-{"version":1,"entries":[],"wikiExclusions":[]}
+{
+  "version": 1,
+  "entries": [
+    {
+      "id": "FIUvHRH8ePpnsBSNofIOUHEkuvy1ArVW7Q4fJUQ9JnI",
+      "actor": "160498891",
+      "entity": "talent",
+      "subject": "tal-000004",
+      "action": "save",
+      "reason": "アイコンの画像変更",
+      "evidence": {
+        "status": "verified",
+        "url": "https://x.com/Lee_Jupita/photo",
+        "checkedAt": "2026-11-16T05:48:11.054Z",
+        "valueHash": "0DPbGyyKCmJ-mBr-FHxVBj9DyU7jQOsNETRs0eZgHaA"
+      },
+      "changedFields": [
+        "profileImage"
+      ],
+      "at": "2026-11-16T05:48:13.949Z"
+    }
+  ],
+  "wikiExclusions": [],
+  "issuedOrganizations": [
+    "org-000001",
+    "org-000002",
+    "org-000003",
+    "org-000004",
+    "org-000005"
+  ]
+}

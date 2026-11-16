@@ -1,0 +1,104 @@
+:root {
+  --jigdule-surface: #fff;
+  --jigdule-text: #333;
+  --jigdule-line: #dedede;
+  --jigdule-muted-surface: #ecf0f6;
+  --jigdule-muted-text: #555;
+  --jigdule-link: #185497;
+  --jigdule-focus: #1765ae;
+  --jigdule-control-line: #aaa;
+}
+/* Shared with the schedule: neutral surfaces, blue links, compact typography. */
+.talent-stream-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(240px, 100%), 1fr));
+  gap: 16px;
+}
+.talent-stream-card {
+  display: block;
+  overflow: hidden;
+  border: 1px solid var(--jigdule-line);
+  border-radius: 4px;
+  background: var(--jigdule-surface);
+  color: var(--jigdule-text);
+  text-decoration: none;
+}
+.talent-stream-card > img,
+.stream-image-fallback {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  background: var(--jigdule-muted-surface);
+}
+.stream-image-fallback {
+  display: grid;
+  place-items: center;
+  color: var(--jigdule-muted-text);
+}
+.talent-stream-card > div {
+  padding: 12px;
+}
+.talent-stream-card h4 {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin: 8px 0;
+  overflow-wrap: anywhere;
+}
+.stream-state,
+.talent-stream-card time {
+  font-size: 0.85rem;
+}
+.stream-state {
+  color: var(--jigdule-link);
+}
+.talent-stream-card:hover {
+  border-color: var(--jigdule-link);
+}
+.talent-stream-card:focus-visible,
+.stream-talent-link:focus-visible {
+  outline: 3px solid var(--jigdule-focus);
+  outline-offset: 3px;
+}
+.stream-talent-link {
+  display: block;
+  padding: 6px 10px;
+  font-size: 12px;
+  line-height: 1.5;
+  color: var(--jigdule-link);
+  text-decoration: underline;
+}
+.stream-feedback {
+  font-size: 0.9rem;
+  color: var(--jigdule-muted-text);
+  line-height: 1.75;
+}
+.stream-controls {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.stream-controls button {
+  min-height: 44px;
+  padding: 8px 16px;
+  border: 1px solid var(--jigdule-control-line);
+  border-radius: 4px;
+  background: var(--jigdule-surface);
+  color: var(--jigdule-link);
+  font: inherit;
+  cursor: pointer;
+}
+#talent-streams details {
+  margin-top: 20px;
+}
+#talent-streams summary {
+  cursor: pointer;
+  padding: 8px 0;
+}
+#talent-streams h3 {
+  font-size: 1.1rem;
+}
+#talent-streams [data-stream-output]:empty {
+  display: none;
+}

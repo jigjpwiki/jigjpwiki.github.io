@@ -51,6 +51,7 @@ const talentPage = fs.readFileSync(path.join(root, 'pages/talents/index.html'), 
 fs.writeFileSync(path.join(output, 'talents/index.html'), applyNavigation(talentPage, '/talents/').replace('<!-- jigdule:talents -->', talentCards(talents, catalog.groups)));
 // Publish only the schema-validated public master, never its registry or sources' raw responses.
 fs.writeFileSync(path.join(output, 'data/talents.json'), JSON.stringify(talents, null, 2) + '\n');
+fs.writeFileSync(path.join(output,'data/stream-talents.json'),JSON.stringify(require('../assets/js/stream-core').identityIndex(talents.talents))+'\n');
 fs.writeFileSync(path.join(output, 'data/catalog.json'), JSON.stringify({ schemaVersion: 1, sources: catalog.sources, groups: catalog.groups }) + '\n');
 fs.mkdirSync(path.join(output, 'anniversaries'));
 fs.writeFileSync(path.join(output, 'anniversaries/index.html'), anniversaryPage(talents, catalog, true));

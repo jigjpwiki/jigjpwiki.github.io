@@ -1663,7 +1663,7 @@
     "date": "2026-11-15T15:59:10.000Z",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/pqoVOoKX_Wc/mqdefault.jpg?v=6af9c343",
+    "thumbnail": "https://i.ytimg.com/vi/pqoVOoKX_Wc/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/1if2rdJdkKHQBsQt5RZ4twlSmWQPwGGt0mxNiloT9Ee7L8caGbGaIVy3HnJdXX-BUhHUeBAo-xY=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=pqoVOoKX_Wc"
   },
@@ -1805,7 +1805,7 @@
     "youtubeid": "UCAhdxmsdngH4noySdpVAVWQ",
     "title": "【#Minecraft 】巨大な土台作っちゃいましたね～🏠｜建築雑談配信💬作業用にも☺ROM歓迎🎉【#vtuber 】#ちとせらいぶ #パレデミア学園",
     "date": "2026-11-16T03:59:37.000Z",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/nAdfaoBW584/mqdefault.jpg?v=6afa7d1b",
     "channelIcon": "https://yt3.ggpht.com/traR_yWe-AOGyM2wjo8h2FJO9JWBcbjfrL13X-umeD6BtNPopSZ2Q3YmdJq_5K9gWgHf_j64iQ=s240-c-k-c0x00ffffff-no-rj",
@@ -1843,7 +1843,7 @@
     "date": "2026-11-16T05:01:29.000Z",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/z5ITYqIdMkw/mqdefault.jpg?v=6afa8be0",
+    "thumbnail": "https://i.ytimg.com/vi/z5ITYqIdMkw/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/hl89JE2NAP5BVl-HV8uv5_W8GUXgnmJdhxXZv6En8GqzHMsdWHWRbxLsti6amESp6V-Uu0oZBmc=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=z5ITYqIdMkw"
   },
@@ -1858,6 +1858,18 @@
     "thumbnail": "https://i.ytimg.com/vi/_J6OJ2gFss8/mqdefault.jpg?v=6af9f25c",
     "channelIcon": "https://yt3.ggpht.com/4hssn4EXW2lORXRfiuYTjmYfnlZoQ2h72sdEompqX7GQwAKCsBx7eL0joCFSook1rfCKIcpykg=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=_J6OJ2gFss8"
+  },
+  {
+    "videoId": "tHYednUJ_9I",
+    "name": "相栖るじゅ",
+    "youtubeid": "UCrpdBoGpa6g2WEtRWsIlhDQ",
+    "title": "【夕活/雑談】夕方を一緒に過ごそう～☕【相栖るじゅ/パレデミア学園】",
+    "date": "2026-11-16T07:50:31.000Z",
+    "status": "live",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/tHYednUJ_9I/mqdefault.jpg?v=6afab4b0",
+    "channelIcon": "https://yt3.ggpht.com/yQbh9vEEgS_UapoQhIxxoTSy13bDxlHYC-ncTcO9VIDBN2NvrLTAWeKGQ72CN2fhOOrHqYaFDA=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=tHYednUJ_9I"
   },
   {
     "videoId": "ShaL4z_-5No",
@@ -1920,6 +1932,18 @@
     "url": "https://www.youtube.com/watch?v=CL34UOao1R0"
   },
   {
+    "videoId": "N4RGeqXT5IU",
+    "name": "花晴りら",
+    "youtubeid": "UCqcnlq8uJqnGml6hcIrMCZw",
+    "title": "【FF3】#5 FFを完全初見で1からプレイ：ラストスパート！クリスタルタワー突入💎✨【花晴りら/パレデミア学園 】#れりライブ #新人vtuber",
+    "date": "2026-11-16T12:00:00.000Z",
+    "status": "upcoming",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/N4RGeqXT5IU/mqdefault.jpg?v=6afaa847",
+    "channelIcon": "https://yt3.ggpht.com/CH5JMWVQZ_RtloaXoj6W-yXjo9x8UxXSBG_vMyDnfk7M2QTOApVE1zOesu_aDrSAqvDbGrUyxs0=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=N4RGeqXT5IU"
+  },
+  {
     "videoId": "-szTtsZXzkI",
     "name": "小澄くろまる",
     "youtubeid": "UC1Eq7ExEH0XO380it8cZYZg",
@@ -1930,6 +1954,18 @@
     "thumbnail": "https://i.ytimg.com/vi/-szTtsZXzkI/mqdefault.jpg?v=6afaa342",
     "channelIcon": "https://yt3.ggpht.com/_pGNq0-SYZiXjomeCnQRygINoA2PKkUJMbRtwuSIL83vUAny58me1QY1WttWypAIwJFrE5hh0w=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=-szTtsZXzkI"
+  },
+  {
+    "videoId": "skAUv2-vDWA",
+    "name": "花晴りら",
+    "youtubeid": "UCqcnlq8uJqnGml6hcIrMCZw",
+    "title": "【 初見歓迎 / 朝活雑談 】火曜朝もみんなに会いたいっ✨200人におはよう＆全員のお名前呼ぶ🌷【 花晴りら / パレデミア学園 】#れりライブ #新人vtuber",
+    "date": "2026-11-16T22:00:00.000Z",
+    "status": "upcoming",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/skAUv2-vDWA/mqdefault.jpg?v=6afaae59",
+    "channelIcon": "https://yt3.ggpht.com/CH5JMWVQZ_RtloaXoj6W-yXjo9x8UxXSBG_vMyDnfk7M2QTOApVE1zOesu_aDrSAqvDbGrUyxs0=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=skAUv2-vDWA"
   },
   {
     "videoId": "tLgQZ-Z9WPk",

@@ -59,7 +59,9 @@ const twitch = {
     });
   try {
     for (const width of [320, 390, 768, 1440]) {
-      let empty = false;
+      let empty = false,
+        failedService = null,
+        revision = "";
       let failed = false,
         stale = false,
         badIndex = false;
@@ -77,15 +79,17 @@ const twitch = {
           url.pathname === "/data/youtube.json" ||
           url.pathname === "/data/twitch.json"
         ) {
+          if (failedService && url.pathname === `/data/${failedService}.json`)
+            return r.fulfill({ status: 503, body: "{}" });
           if (empty) return r.fulfill({ json: [] });
           if (failed) return r.fulfill({ status: 503, body: "{}" });
           return r.fulfill({
             json: url.pathname.includes("youtube")
               ? [
-                  video,
+                  { ...video, title: video.title + revision },
                   { ...video, youtubeid: "UC" + "z".repeat(22), title: "別人" },
                 ]
-              : [twitch],
+              : [{ ...twitch, title: twitch.title + revision }],
           });
         }
         if (url.pathname === "/data/last_updated.json")
@@ -134,6 +138,85 @@ const twitch = {
               .width <= 400,
             "Single stream cards stay compact on desktop",
           );
+        const fallback = region.locator("[data-stream-fallback]");
+        assert.equal(
+          await fallback.getAttribute("open"),
+          null,
+          "Both successful feeds collapse fallback",
+        );
+        for (const service of ["youtube", "twitch"]) {
+          failedService = service;
+          await p.reload();
+          await region
+            .getByText(
+              new RegExp(
+                (service === "youtube" ? "YouTube" : "Twitch") +
+                  "の取得に失敗しました",
+              ),
+            )
+            .waitFor();
+          assert.equal(
+            await fallback.getAttribute("open"),
+            "",
+            "Partial initial failure keeps fallback open",
+          );
+          assert.equal(
+            await region.locator(".talent-stream-card").count(),
+            1,
+            "Successful platform still renders",
+          );
+          assert.doesNotMatch(
+            await region.locator("[data-stream-output]").innerText(),
+            /公開フィードに紐づく配信情報はありません/,
+          );
+          empty = true;
+          await p.reload();
+          await region
+            .getByText(/取得できていない配信情報があります/)
+            .waitFor();
+          assert.equal(
+            await fallback.getAttribute("open"),
+            "",
+            "Empty success plus failed feed is not a global empty result",
+          );
+          empty = false;
+          failedService = null;
+          await region.getByRole("button", { name: "配信情報を更新" }).click();
+          await p.waitForFunction(
+            () =>
+              !document
+                .querySelector("#talent-streams")
+                .hasAttribute("aria-busy"),
+          );
+          assert.equal(
+            await fallback.getAttribute("open"),
+            null,
+            "Manual successful recovery collapses fallback",
+          );
+          failedService = service;
+          revision = " 更新";
+          await region.getByRole("button", { name: "配信情報を更新" }).click();
+          await region.getByText(/前回取得した情報を残しています/).waitFor();
+          assert.equal(
+            await fallback.getAttribute("open"),
+            "",
+            "Partial retry keeps fallback accessible",
+          );
+          assert.equal(
+            await region.locator(".talent-stream-card").count(),
+            2,
+            "Previous failed-side data is retained",
+          );
+          assert.equal(
+            await region.locator("h4").filter({ hasText: "更新" }).count(),
+            1,
+            "Successful side receives fresh data",
+          );
+          failedService = null;
+          revision = "";
+          await p.reload();
+          await region.getByRole("link", { name: /Twitch・配信中/ }).waitFor();
+        }
         stale = true;
         await region.getByRole("button", { name: "配信情報を更新" }).click();
         await p.waitForFunction(() =>
@@ -151,6 +234,11 @@ const twitch = {
         assert.equal(
           await region.getByRole("link", { name: /Twitch・配信中/ }).count(),
           1,
+        );
+        assert.equal(
+          await fallback.getAttribute("open"),
+          "",
+          "Both failed retries retain fallback",
         );
         failed = false;
         badIndex = true;
@@ -174,7 +262,21 @@ const twitch = {
         await region
           .getByText(/公開フィードに紐づく配信情報はありません/)
           .waitFor();
+        assert.equal(
+          await fallback.getAttribute("open"),
+          null,
+          "Both successful empty arrays are a normal empty result",
+        );
         empty = false;
+        failed = true;
+        await region.getByRole("button", { name: "配信情報を更新" }).click();
+        await region.getByText(/取得できていない配信情報があります/).waitFor();
+        assert.equal(
+          await fallback.getAttribute("open"),
+          "",
+          "Failed retries after empty success remain unknown, not empty",
+        );
+        failed = false;
 
         await p.goto(base + "/");
         await p.locator(".stream-talent-link").first().waitFor();

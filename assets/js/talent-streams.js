@@ -94,6 +94,9 @@
           ? result[3].value
           : null;
       const notices = [];
+      const feedFailed = result
+        .slice(0, 2)
+        .some((r) => r.status !== "fulfilled" || !Array.isArray(r.value));
       result.slice(0, 2).forEach((r, i) => {
         const service = ["youtube", "twitch"][i],
           label = service === "youtube" ? "YouTube" : "Twitch";
@@ -151,12 +154,14 @@
               config.talent.accounts.some((a) =>
                 core.accountId(a.service, a.accountId),
               )
-                ? "公開フィードに紐づく配信情報はありません。過去の活動がないことを意味しません。"
+                ? feedFailed
+                  ? "取得できていない配信情報があります。配信の有無を確認できないため、保存データも確認してください。"
+                  : "公開フィードに紐づく配信情報はありません。過去の活動がないことを意味しません。"
                 : "照合できる公式アカウントが未登録です。",
               "empty-state",
             ),
           );
-        fallback.open = false;
+        fallback.open = feedFailed;
       } else {
         fallback.open = true;
         if (!people)

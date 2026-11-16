@@ -80,13 +80,14 @@
   {
     "name": "なかもとおまち",
     "twitchid": "41futon",
+    "videoId": "2930445341",
     "streamId": "316720178545",
     "title": "ぷろのゔぁ卒業します！",
-    "date": "2026-11-16T12:02:10.000Z",
-    "status": "live",
+    "date": "2026-11-16T12:02:15.000Z",
+    "status": "archive",
     "type": "stream",
-    "url": "https://www.twitch.tv/41futon",
+    "url": "https://www.twitch.tv/videos/2930445341",
     "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/1405880b-e945-4720-98c9-6a08c6400cae-profile_image-300x300.png",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_41futon-320x180.jpg"
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/950d6c20ccb0fc8f9782_41futon_316720178545_1794830530//thumb/thumb0-320x180.jpg"
   }
 ]

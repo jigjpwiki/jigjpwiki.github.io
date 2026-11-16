@@ -18,6 +18,24 @@
         "profileImage"
       ],
       "at": "2026-11-16T05:48:13.949Z"
+    },
+    {
+      "id": "jm3XZQmz7RkJQh6EOLxZ-PTRJEnI3TdFfOzsVMUpQIw",
+      "actor": "160498891",
+      "entity": "talent",
+      "subject": "tal-000004",
+      "action": "save",
+      "reason": "活動状況更新",
+      "evidence": {
+        "status": "verified",
+        "url": "https://www.proforma-production.jp/talents",
+        "checkedAt": "2026-11-16T20:00:12.376Z",
+        "valueHash": "z23aB5WrYO4kWE4J7L-BqWls8eyCQkAwD27FCX5fml8"
+      },
+      "changedFields": [
+        "agencyStatus"
+      ],
+      "at": "2026-11-16T20:00:15.724Z"
     }
   ],
   "wikiExclusions": [],

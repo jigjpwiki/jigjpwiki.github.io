@@ -2043,8 +2043,10 @@
         }
       ],
       "agencyStatus": {
-        "value": "unknown",
-        "sourceRefs": []
+        "value": "unaffiliated",
+        "sourceRefs": [
+          "src-lee-jupita"
+        ]
       },
       "activityStatus": {
         "value": "unknown",

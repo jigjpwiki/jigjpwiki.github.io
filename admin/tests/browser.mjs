@@ -16,6 +16,8 @@ const root = path.resolve(import.meta.dirname, "../.."),
     ]),
   );
 const data = new Map();
+let lastPreview;
+const originalModels = JSON.stringify(models);
 let writes = 0,
   created = false,
   rejectPR = false;
@@ -105,6 +107,8 @@ const server = http.createServer(async (req, res) => {
         req.on("data", (c) => chunks.push(c));
         req.on("end", () => resolve(Buffer.concat(chunks)));
       });
+      if (req.url === "/api/change-requests/preview")
+        lastPreview = JSON.parse(body.toString());
       const response = await worker.fetch(
         new Request(base + req.url, {
           method: req.method,
@@ -134,7 +138,7 @@ const server = http.createServer(async (req, res) => {
     }
     const file = path.join(
       root,
-      "admin/public",
+      process.env.ADMIN_PUBLIC_ROOT || "admin/public",
       req.url === "/" ? "index.html" : req.url,
     );
     res.setHeader(
@@ -206,6 +210,102 @@ try {
       .getByRole("link", { name: "VTuber・事務所・グループ", exact: true })
       .focus();
     await p.keyboard.press("Enter");
+    // Edit Lee through the actual form: optional URL round-trip must preserve Wiki refs.
+    await p
+      .getByRole("searchbox", { name: "名前・IDで検索" })
+      .fill("李じゅぴ汰");
+    await p.getByRole("button", { name: "李じゅぴ汰", exact: true }).click();
+    await p.getByRole("button", { name: "編集", exact: true }).click();
+    const lee = models.talents.talents.find((t) => t.id === "tal-000004");
+    const image = p.getByRole("textbox", {
+      name: "プロフィール画像URL",
+      exact: true,
+    });
+    await image.fill("https://example.com/unavailable.png");
+    await p.getByRole("tab", { name: "SNS・リンク", exact: true }).click();
+    const wiki = p.getByRole("textbox", { name: "非公式WikiURL", exact: true });
+    await wiki.fill("");
+    await wiki.fill(lee.wiki.url);
+    await p.locator(".source-picker > summary").last().click();
+    assert.match(
+      await p.locator(".source-chips").last().innerText(),
+      /非公式Wiki/,
+    );
+    await p.getByRole("tab", { name: "所属・活動", exact: true }).click();
+    await p
+      .getByRole("button", { name: "所属履歴を追加", exact: true })
+      .click();
+    const affiliation = p.locator(".array-card").last();
+    await affiliation
+      .getByRole("searchbox", { name: "事務所を検索" })
+      .fill(models.talents.organizations[0].name);
+    await affiliation
+      .getByRole("combobox", { name: "事務所", exact: true })
+      .selectOption(models.talents.organizations[0].id);
+    p.once("dialog", (d) => d.accept());
+    await affiliation.getByRole("button", { name: /を削除$/ }).click();
+    await p.getByRole("tab", { name: "SNS・リンク", exact: true }).click();
+    await p
+      .getByRole("button", { name: "SNS・公式アカウントを追加", exact: true })
+      .click();
+    const account = p.locator(".array-card").last();
+    await account
+      .getByRole("combobox", { name: "サービス", exact: true })
+      .selectOption("twitch");
+    p.once("dialog", (d) => d.accept());
+    await account.getByRole("button", { name: /を削除$/ }).click();
+    await p.getByRole("button", { name: "変更を確認", exact: true }).click();
+    // Missing evidence errors link to the offending field, including keyboard activation.
+    await p
+      .getByRole("button", { name: "変更プレビュー", exact: true })
+      .click();
+    await p.locator(".error-summary button").first().focus();
+    await p.keyboard.press("Enter");
+    assert.equal(
+      await p
+        .getByRole("textbox", { name: "変更理由", exact: true })
+        .getAttribute("aria-invalid"),
+      "true",
+    );
+    await p
+      .getByRole("textbox", { name: "変更理由", exact: true })
+      .fill("画像のみの変更・出典保持の回帰検証");
+    await p
+      .getByRole("combobox", { name: "確認した公式出典", exact: true })
+      .selectOption({ index: 1 });
+    await p.locator("#evidence-confirmed").check();
+    await p
+      .getByRole("button", { name: "変更プレビュー", exact: true })
+      .click();
+    await p
+      .getByRole("heading", { name: "変更プレビュー", exact: true })
+      .waitFor();
+    if (process.env.ADMIN_SCREENSHOTS)
+      await p.screenshot({
+        path: path.join(
+          process.env.ADMIN_SCREENSHOTS,
+          `admin-image-preview-${width}.png`,
+        ),
+        fullPage: true,
+      });
+    const expected = structuredClone(lee);
+    expected.profileImage.url = "https://example.com/unavailable.png";
+    assert.deepEqual(lastPreview.value, expected);
+    assert.deepEqual(lastPreview.value.wiki.sourceRefs, [
+      "src-wiki-lee-jupita",
+    ]);
+    assert.equal(JSON.stringify(models), originalModels);
+    await p
+      .getByRole("button", {
+        name: "編集に戻る（再プレビューが必要）",
+        exact: true,
+      })
+      .click();
+    p.once("dialog", (d) => d.dismiss());
+    await p.getByRole("button", { name: "一覧へ戻る", exact: true }).click();
+    await p.getByRole("tab", { name: "基本情報", exact: true }).waitFor();
+    p.once("dialog", (d) => d.accept());
+    await p.getByRole("button", { name: "一覧へ戻る", exact: true }).click();
     await p.getByRole("searchbox", { name: "名前・IDで検索" }).fill("真昼ねる");
     assert.equal(
       await p.evaluate(() => document.documentElement.scrollWidth > innerWidth),
@@ -223,6 +323,28 @@ try {
       });
     }
     await p.getByRole("button", { name: "編集", exact: true }).click();
+    if (process.env.ADMIN_SCREENSHOTS)
+      await p.screenshot({
+        path: path.join(
+          process.env.ADMIN_SCREENSHOTS,
+          `admin-editor-${width}.png`,
+        ),
+        fullPage: true,
+      });
+    await p.emulateMedia({ colorScheme: "dark" });
+    if (process.env.ADMIN_SCREENSHOTS)
+      await p.screenshot({
+        path: path.join(
+          process.env.ADMIN_SCREENSHOTS,
+          `admin-editor-dark-${width}.png`,
+        ),
+        fullPage: true,
+      });
+    assert.equal(
+      await p.evaluate(() => document.documentElement.scrollWidth > innerWidth),
+      false,
+    );
+    await p.emulateMedia({ colorScheme: "light" });
     const name = p.getByRole("textbox", { name: "表示名", exact: true });
     await name.fill("真昼ねる（確認）");
     await name.press("Tab");
@@ -230,6 +352,10 @@ try {
       await p.evaluate(() => document.documentElement.scrollWidth > innerWidth),
       false,
     );
+    await p.getByRole("button", { name: "変更を確認", exact: true }).click();
+    await p
+      .getByRole("combobox", { name: "確認した公式出典", exact: true })
+      .selectOption({ index: 1 });
     await p
       .getByRole("textbox", { name: "変更理由", exact: true })
       .fill("ブラウザーE2Eの検証");
@@ -241,6 +367,21 @@ try {
       .getByRole("heading", { name: "変更プレビュー", exact: true })
       .waitFor();
     assert.match(await p.locator("#status").innerText(), /プレビュー済み/);
+    assert.equal(
+      await p
+        .getByRole("button", { name: "確認した変更でPRを作成", exact: true })
+        .isEnabled(),
+      false,
+    );
+    if (process.env.ADMIN_SCREENSHOTS)
+      await p.screenshot({
+        path: path.join(
+          process.env.ADMIN_SCREENSHOTS,
+          `admin-preview-${width}.png`,
+        ),
+        fullPage: true,
+      });
+    await p.locator("#preview-confirmed").check();
     if (width === 320) rejectPR = true;
     await p
       .getByRole("button", { name: "確認した変更でPRを作成", exact: true })
@@ -285,10 +426,19 @@ try {
       .fill("テスト専用VTuber");
     await p.getByRole("textbox", { name: "表示名", exact: true }).press("Tab");
     const official = "https://www.youtube.com/channel/UC" + "z".repeat(22);
+    await p.locator(".source-picker > summary").first().click();
     await p
-      .getByRole("textbox", { name: "追加する公式URL", exact: true })
+      .getByText("新しい出典を登録して選択", { exact: true })
+      .first()
+      .click();
+    await p
+      .getByRole("textbox", { name: "名前の出典の新しい出典URL", exact: true })
       .fill(official);
-    await p.getByRole("button", { name: "出典を追加", exact: true }).click();
+    await p
+      .getByRole("button", { name: "この出典を登録", exact: true })
+      .first()
+      .click();
+    await p.getByRole("button", { name: "変更を確認", exact: true }).click();
     await p
       .getByRole("combobox", { name: "確認した公式出典", exact: true })
       .selectOption(official);
@@ -302,6 +452,7 @@ try {
     await p
       .getByRole("heading", { name: "変更プレビュー", exact: true })
       .waitFor();
+    await p.locator("#preview-confirmed").check();
     if (width === 320) rejectPR = true;
     await p
       .getByRole("button", { name: "確認した変更でPRを作成", exact: true })
@@ -318,6 +469,47 @@ try {
         .click();
     }
     await p.getByRole("heading", { name: "PRを作成しました" }).waitFor();
+    await p.getByRole("button", { name: "一覧へ戻る", exact: true }).click();
+    await p.getByRole("button", { name: "事務所", exact: true }).click();
+    const organization = models.talents.organizations[0];
+    await p
+      .getByRole("searchbox", { name: "名前・IDで検索" })
+      .fill(organization.name);
+    await p
+      .getByRole("button", { name: organization.name, exact: true })
+      .click();
+    await p.getByRole("button", { name: "編集", exact: true }).click();
+    assert.equal(
+      await p.getByRole("textbox", { name: "名前", exact: true }).inputValue(),
+      organization.name,
+    );
+    await p.getByRole("button", { name: "一覧へ戻る", exact: true }).click();
+    await p.getByRole("button", { name: "グループ", exact: true }).click();
+    const group = models.catalog.groups[0];
+    await p.getByRole("searchbox", { name: "名前・IDで検索" }).fill(group.name);
+    await p.getByRole("button", { name: group.name, exact: true }).click();
+    await p.getByRole("button", { name: "編集", exact: true }).click();
+    assert.deepEqual(
+      await p
+        .getByRole("listbox", { name: "メンバー", exact: true })
+        .evaluate((e) => [...e.selectedOptions].map((o) => o.value)),
+      group.talentIds,
+    );
+    await p.getByRole("tab", { name: "基本情報", exact: true }).focus();
+    await p.keyboard.press("ArrowRight");
+    assert.equal(
+      await p
+        .getByRole("tab", { name: "出典・履歴", exact: true })
+        .getAttribute("aria-selected"),
+      "true",
+    );
+    await p.emulateMedia({ colorScheme: "dark" });
+    assert.equal(
+      await p.evaluate(() => document.documentElement.scrollWidth > innerWidth),
+      false,
+    );
+    await p.getByRole("button", { name: "一覧へ戻る", exact: true }).click();
+    await p.getByRole("button", { name: "VTuber", exact: true }).click();
     await p.getByRole("button", { name: "ログアウト", exact: true }).click();
     await p.getByRole("link", { name: "GitHubでログイン" }).waitFor();
     assert.deepEqual(errors, []);

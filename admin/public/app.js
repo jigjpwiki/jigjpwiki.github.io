@@ -1,3 +1,6 @@
+import { createEditor } from "./editor.js";
+import { fieldChanges, fieldLabel } from "./draft.js";
+import { portrait } from "./controls.js";
 const $ = (s) => document.querySelector(s);
 let me;
 export async function api(path, method = "GET", value) {
@@ -22,6 +25,10 @@ export async function api(path, method = "GET", value) {
           "公開済みの参照が残っています。履歴を維持する対応方針を先にレビューしてください。",
         official_profile_identity_already_registered:
           "同じ公式プロフィールのIDが登録済みです。重複と改名を確認してください。",
+        evidence_must_match_record_source:
+          "編集したレコードに紐づく公式出典を確認してください。",
+        field_confirmation_required:
+          "変更後の値と公式出典をもう一度確認してください。",
         confirmation_name_and_id_required:
           "対象IDと表示名を正確に入力してください。",
       }[data.error] ||
@@ -40,6 +47,11 @@ export const node = (tag, text) => {
 };
 function screen() {
   if (!me) return;
+  for (const a of document.querySelectorAll("nav a")) {
+    if (a.hash === (location.hash || "#dashboard"))
+      a.setAttribute("aria-current", "page");
+    else a.removeAttribute("aria-current");
+  }
   const settings = location.hash === "#settings";
   $("#view").replaceChildren(
     node("h2", settings ? "設定" : "管理トップ"),
@@ -51,7 +63,16 @@ function screen() {
     ),
   );
 }
-window.addEventListener("hashchange", () => screen());
+let acceptedHash = location.hash;
+window.addEventListener("hashchange", () => {
+  if (activeEditor?.dirty && !mayLeave()) {
+    history.replaceState(null, "", acceptedHash || "#masters");
+    return;
+  }
+  activeEditor = null;
+  acceptedHash = location.hash;
+  screen();
+});
 async function start() {
   try {
     me = await api("/api/me");
@@ -59,6 +80,8 @@ async function start() {
     $("#app").hidden = false;
     $("#identity").textContent = `${me.login} / 管理者 / ${me.repository}`;
     $("#logout").onclick = async () => {
+      if (!mayLeave()) return;
+      activeEditor = null;
       await api("/auth/logout", "POST", {});
       location.reload();
     };
@@ -115,6 +138,7 @@ const enumLabels = {
   former: "旧所属",
   active: "活動中",
   hiatus: "活動休止",
+  retired: "引退（確認済み）",
   ended: "活動終了",
   affiliated: "所属中",
   unaffiliated: "未所属",
@@ -183,142 +207,16 @@ const sourcesView = (refs) => {
   for (const id of refs) {
     const s = allSources().find((s) => s.id === id);
     d.append(
-      s ? link(`${id} / ${s.kind} / ${s.checkedAt}`, s.url) : node("p", id),
+      s
+        ? link(
+            `${s.kind === "official" ? "公式" : "非公式Wiki"} / ${s.url} / ${s.checkedAt}`,
+            s.url,
+          )
+        : node("p", id),
     );
   }
   return d;
 };
-function resolve(shape) {
-  if (shape.$ref)
-    return resolve(schemas.definitions[shape.$ref.split("/").pop()]);
-  return shape;
-}
-function empty(shape) {
-  shape = resolve(shape);
-  if (shape.anyOf) return empty(shape.anyOf.find((s) => s.type !== "null"));
-  if (shape.enum) return shape.enum[0];
-  if (shape.type === "array") return [];
-  if (shape.type === "object")
-    return Object.fromEntries(
-      Object.entries(shape.properties)
-        .filter(([k]) => k !== "id")
-        .map(([k, s]) => [k, empty(s)]),
-    );
-  if (shape.type === "boolean") return false;
-  if (shape.type === "number" || shape.type === "integer") return 0;
-  return "";
-}
-function field(shape, value, set, key = "value", changed = () => {}) {
-  shape = resolve(shape);
-  const wrap = node("fieldset");
-  wrap.append(node("legend", labels[key] || key));
-  if (shape.anyOf) {
-    const option = shape.anyOf.find((s) => s.type !== "null"),
-      nullable = shape.anyOf.some((s) => s.type === "null");
-    if (nullable) {
-      const label = node("label"),
-        toggle = node("input");
-      toggle.type = "checkbox";
-      toggle.checked = value === null;
-      label.append(toggle, document.createTextNode("不明・未登録（null）"));
-      wrap.append(label);
-      toggle.onchange = () => {
-        set(toggle.checked ? null : empty(option));
-        changed();
-      };
-      if (value === null) return wrap;
-    }
-    wrap.append(field(option, value, set, key, changed));
-    return wrap;
-  }
-  if (shape.type === "object") {
-    const object = value || {};
-    for (const [k, s] of Object.entries(shape.properties || {})) {
-      if (!(k in object) && !(shape.required || []).includes(k)) continue;
-      wrap.append(
-        field(
-          s,
-          object[k],
-          (v) => {
-            object[k] = v;
-            set(object);
-          },
-          k,
-          changed,
-        ),
-      );
-    }
-    return wrap;
-  }
-  if (shape.type === "array") {
-    const list = value || [];
-    list.forEach((v, i) => {
-      const item = node("div");
-      item.append(
-        field(
-          shape.items,
-          v,
-          (x) => {
-            list[i] = x;
-            set(list);
-          },
-          key,
-          changed,
-        ),
-        button("この項目を削除", () => {
-          list.splice(i, 1);
-          set(list);
-          changed();
-        }),
-      );
-      wrap.append(item);
-    });
-    wrap.append(
-      button("項目を追加", () => {
-        list.push(empty(shape.items));
-        set(list);
-        changed();
-      }),
-    );
-    if (key === "sourceRefs" || key === "displayNameSourceRefs")
-      wrap.append(sourcesView(list));
-    return wrap;
-  }
-  const label = node("label", labels[key] || key);
-  const input = node(shape.enum ? "select" : "input");
-  input.setAttribute("aria-label", labels[key] || key);
-  if (shape.enum) {
-    for (const value of shape.enum) {
-      const option = node("option", enumLabels[value] || String(value));
-      option.value = String(value);
-      input.append(option);
-    }
-    input.value = String(value ?? shape.enum[0]);
-  } else if (shape.type === "boolean") {
-    input.type = "checkbox";
-    input.checked = !!value;
-  } else {
-    input.type =
-      shape.type === "number" || shape.type === "integer" ? "number" : "text";
-    input.value = value ?? "";
-    if (["sourceRefs", "displayNameSourceRefs"].includes(key))
-      input.setAttribute("list", "source-ids");
-    if (key === "id") input.readOnly = true;
-  }
-  input.onchange = () => {
-    set(
-      shape.type === "boolean"
-        ? input.checked
-        : shape.type === "number" || shape.type === "integer"
-          ? Number(input.value)
-          : input.value,
-    );
-    changed(false);
-  };
-  label.append(input);
-  wrap.append(label);
-  return wrap;
-}
 let referenceIndex;
 function related(id) {
   if (!referenceIndex) {
@@ -490,25 +388,15 @@ function listView() {
     const table = node("table");
     const thead = node("thead"),
       tr = node("tr");
-    ["ID・名前", "所属・状態", "関連情報"].forEach((s) =>
-      tr.append(node("th", s)),
-    );
+    ["名前", "所属・状態", "関連情報"].forEach((s) => tr.append(node("th", s)));
     thead.append(tr);
     table.append(thead);
     const tbody = node("tbody");
     for (const r of list.slice(page * 30, page * 30 + 30)) {
       const row = node("tr"),
         name = node("td");
-      if (r.profileImage?.url?.startsWith("https:")) {
-        const image = node("img");
-        image.src = r.profileImage.url;
-        image.alt = "";
-        image.referrerPolicy = "no-referrer";
-        image.onerror = () => image.remove();
-        name.append(image);
-      }
       name.append(
-        node("p", r.id),
+        portrait(r.profileImage?.url, r.displayName || r.name),
         button(r.displayName || r.name, () => detail(r)),
       );
       const affiliations =
@@ -528,7 +416,14 @@ function listView() {
           entity === "talent"
             ? affiliations +
                 " / " +
-                r.activityStatus.value +
+                ({
+                  unknown: "活動状態不明",
+                  active: "活動中",
+                  hiatus: "活動休止",
+                  retired: "引退（確認済み）",
+                  retired: "引退（確認済み）",
+                  ended: "活動終了",
+                }[r.activityStatus.value] || r.activityStatus.value) +
                 " / " +
                 (r.visibility || "public")
             : r.name,
@@ -677,89 +572,62 @@ async function digest(value) {
     .replace(/\//g, "_")
     .replace(/=+$/, "");
 }
-function edit(record) {
-  let value = structuredClone(record || initial[entity]),
-    sources = [];
-  const view = $("#view");
-  const draw = () => {
-    const savedReason =
-      view.querySelector('textarea[aria-label="変更理由"]')?.value || "";
-    view.replaceChildren(
-      button("一覧へ戻る", listView),
-      node("h2", labels[entity] + (record ? "編集" : "新規登録")),
-    );
-    const editor = field(
-      schemas[entity],
-      value,
-      (v) => (value = v),
-      "value",
-      (redraw) => {
-        const check = $("#evidence-confirmed");
-        if (check) check.checked = false;
-        if (redraw !== false) draw();
-      },
-    );
-    view.append(editor);
-    const ids = node("datalist");
-    ids.id = "source-ids";
-    for (const s of [...allSources(), ...sources]) {
-      const o = node("option");
-      o.value = s.id;
-      o.label = s.url;
-      ids.append(o);
+let activeEditor = null;
+function mayLeave() {
+  if (activeEditor?.pending) {
+    showStatus("検証が終わるまでお待ちください。");
+    return false;
+  }
+  return (
+    !activeEditor?.dirty ||
+    window.confirm("未保存の変更があります。破棄して移動しますか？")
+  );
+}
+window.addEventListener("beforeunload", (e) => {
+  if (activeEditor?.dirty) {
+    e.preventDefault();
+    e.returnValue = "";
+  }
+});
+document
+  .querySelector('nav[aria-label="管理ナビゲーション"]')
+  .addEventListener("click", (e) => {
+    if (e.target.closest("a") && activeEditor) {
+      if (!mayLeave()) {
+        e.preventDefault();
+        return;
+      }
+      activeEditor = null;
+      if (e.target.closest("a").hash === location.hash) {
+        e.preventDefault();
+        screen();
+      }
     }
-    view.append(ids);
-    view.append(node("h3", "新しい出典（既存IDは上書きしません）"));
-    const sourceUrl = node("input");
-    sourceUrl.type = "url";
-    sourceUrl.setAttribute("aria-label", "追加する公式URL");
-    const sourceKind = node("select");
-    sourceKind.setAttribute("aria-label", "追加する出典の種類");
-    sourceKind.append(
-      new Option("公式", "official"),
-      new Option("非公式Wiki", "wiki"),
-    );
-    view.append(
-      sourceUrl,
-      sourceKind,
-      button("出典を追加", async () => {
-        const u = new URL(sourceUrl.value);
-        if (u.protocol !== "https:")
-          throw new Error("HTTPSの公式URLを指定してください");
-        const s = {
-          id:
-            "src-admin-" +
-            (await digest(u.href))
-              .slice(0, 16)
-              .toLowerCase()
-              .replace(/_/g, "a"),
-          kind: sourceKind.value,
-          url: u.href,
-          checkedAt: new Date().toISOString(),
-        };
-        sources.push(s);
-        if (!record && entity === "talent" && s.kind === "official") {
-          value.displayNameSourceRefs = [s.id];
-          if (["youtube.com", "www.youtube.com"].includes(u.hostname)) {
-            const channel =
-              u.pathname.match(/^\/channel\/(UC[\w-]{22})$/)?.[1] || null;
-            if (channel || /^\/@[^/]+$/.test(u.pathname))
-              value.accounts.push({
-                service: "youtube",
-                accountId: channel,
-                url: u.href,
-                sourceRefs: [s.id],
-              });
-          }
+  });
+function edit(record) {
+  showStatus("編集中の変更は、PR作成までGitHubへ保存されません。");
+  const view = $("#view");
+  const open = () => {
+    activeEditor = createEditor({
+      container: view,
+      entity,
+      record,
+      initial: initial[entity],
+      models: snapshot.models,
+      schemas,
+      onCancel: () => {
+        if (mayLeave()) {
+          activeEditor = null;
+          listView();
         }
-        draw();
-      }),
-    );
-    sources.forEach((s) => view.append(link(s.id, s.url)));
-    approval(
-      view,
-      () => value,
-      async (evidence, reason) =>
+      },
+      onSelectRecord: (id) => {
+        if (mayLeave()) {
+          const other = rows().find((r) => r.id === id);
+          if (other) edit(other);
+        }
+      },
+      onPreview: async ({ value, sources, reason, evidenceUrl, checkedAt }) =>
         showPreview({
           sha: snapshot.sha,
           entity,
@@ -767,14 +635,17 @@ function edit(record) {
           ...(record ? { id: record.id } : {}),
           value,
           sources,
-          evidence,
           reason,
+          evidence: {
+            status: "verified",
+            url: evidenceUrl,
+            checkedAt,
+            valueHash: await digest(value),
+          },
         }),
-      sources,
-    );
-    view.querySelector('textarea[aria-label="変更理由"]').value = savedReason;
+    });
   };
-  draw();
+  open();
 }
 function manage(record) {
   const view = $("#view");
@@ -863,37 +734,165 @@ function manage(record) {
     }),
   );
 }
+function displayValue(value, path) {
+  if (value === null || value === undefined || value === "")
+    return "未登録・不明";
+  if (typeof value === "boolean") return value ? "確認済み" : "未確認";
+  if (Array.isArray(value))
+    return value.length
+      ? value.map((v) => displayValue(v, path)).join("、")
+      : "登録なし";
+  if (typeof value === "object")
+    return (
+      value.name ||
+      value.displayName ||
+      (value.url
+        ? value.url
+        : Object.entries(value)
+            .map(
+              ([k, v]) => fieldLabel("/" + k) + "：" + displayValue(v, "/" + k),
+            )
+            .join(" / "))
+    );
+  if (path.includes("sourceRefs") || path.includes("SourceRefs"))
+    return allSources().find((s) => s.id === value)?.url || "未確認の出典";
+  if (path.endsWith("organizationId"))
+    return (
+      snapshot.models.talents.organizations.find((o) => o.id === value)?.name ||
+      "所属不明"
+    );
+  if (path.endsWith("talentIds"))
+    return (
+      snapshot.models.talents.talents.find((t) => t.id === value)
+        ?.displayName || "未確認のメンバー"
+    );
+  return enumLabels[value] || String(value);
+}
 async function showPreview(input) {
   showStatus("Schema・全参照を検証中…");
-  const plan = await api("/api/change-requests/preview", "POST", input);
-  const view = $("#view");
-  view.replaceChildren(
-    node("h2", "変更プレビュー"),
-    node("p", plan.title),
-    node("pre", plan.summary),
-    node("h3", "影響"),
+  const plan = await api("/api/change-requests/preview", "POST", input),
+    view = $("#view");
+  const group = input.entity === "group",
+    collection = group
+      ? "groups"
+      : input.entity === "organization"
+        ? "organizations"
+        : "talents",
+    file = group ? "catalog" : "talents";
+  const diff = plan.diff.find((d) => d.file === file),
+    before = diff?.before?.[collection]?.find((r) => r.id === input.id),
+    after =
+      diff?.after?.[collection]?.find((r) => r.id === input.id) ||
+      diff?.after?.[collection]?.find(
+        (r) => !diff.before[collection].some((b) => b.id === r.id),
+      );
+  view.replaceChildren(node("h2", "変更プレビュー"));
+  const intro = node("section");
+  intro.className = "review-intro";
+  intro.append(
+    node(
+      "h3",
+      after?.displayName || after?.name || before?.displayName || plan.title,
+    ),
+    node("p", "変更理由：" + input.reason),
+  );
+  const proof = input.evidence || {};
+  intro.append(
+    link(
+      "確認した公式出典：" + (proof.url || proof.sourceUrl || ""),
+      proof.url || proof.sourceUrl,
+    ),
+  );
+  // The server's frozen preview timestamp is authoritative on idempotent retries.
+  const checkedAt =
+    plan.summary.match(/確認: ([^\n]+)/)?.[1] || proof.checkedAt;
+  intro.append(
+    node(
+      "p",
+      "確認日時：" +
+        new Date(checkedAt).toLocaleString("ja-JP", {
+          timeZone: "Asia/Tokyo",
+        }) +
+        "（日本時間）",
+    ),
+  );
+  view.append(intro);
+  const comparison = node("section");
+  comparison.className = "change-comparison";
+  comparison.append(node("h3", "項目ごとの変更"));
+  for (const c of fieldChanges(before, after)) {
+    const row = node("article");
+    row.className = "change-row";
+    row.append(node("h4", c.kind + "：" + fieldLabel(c.path)));
+    const cells = node("div");
+    cells.className = "comparison-grid";
+    for (const [label, value] of [
+      ["変更前", c.before],
+      ["変更後", c.after],
+    ]) {
+      const cell = node("div");
+      cell.append(node("strong", label));
+      if (c.path === "/profileImage")
+        cell.append(
+          portrait(value?.url, label),
+          node("p", value?.url || "画像未登録"),
+        );
+      else cell.append(node("p", displayValue(value, c.path)));
+      cells.append(cell);
+    }
+    row.append(cells);
+    comparison.append(row);
+  }
+  if (!comparison.querySelector("article"))
+    comparison.append(
+      node(
+        "p",
+        "対象の管理状態・参照を変更します。詳しい差分を確認してください。",
+      ),
+    );
+  view.append(comparison);
+  const impact = node("details");
+  impact.append(
+    node(
+      "summary",
+      `参照影響：${plan.impact.references?.length || 0}件 / 収集・キャッシュ：${plan.impact.accountReferences?.length || 0}件`,
+    ),
+    node("p", plan.impact.note || ""),
     node("pre", JSON.stringify(plan.impact, null, 2)),
   );
-  for (const change of plan.diff) {
-    const section = node("details");
-    section.append(
-      node("summary", change.file),
-      node("h3", "変更前"),
-      node("pre", JSON.stringify(change.before, null, 2)),
-      node("h3", "変更後"),
-      node("pre", JSON.stringify(change.after, null, 2)),
+  view.append(impact);
+  const raw = node("details");
+  raw.append(node("summary", "詳細データを確認"), node("pre", plan.summary));
+  for (const c of plan.diff)
+    raw.append(
+      node("h4", c.file),
+      node(
+        "pre",
+        JSON.stringify({ 変更前: c.before, 変更後: c.after }, null, 2),
+      ),
     );
-    view.append(section);
-  }
+  view.append(raw);
   let submitted = false;
+  const confirm = node("input");
+  confirm.type = "checkbox";
+  confirm.id = "preview-confirmed";
+  const label = node("label");
+  label.className = "review-confirm";
+  label.append(
+    confirm,
+    document.createTextNode("差分と参照影響を確認しました"),
+  );
+  view.append(label);
   const submit = button("確認した変更でPRを作成", async () => {
-    if (submitted) return;
+    if (submitted || !confirm.checked) return;
     submitted = true;
     submit.disabled = true;
+    submit.textContent = "PRを作成中…";
     try {
       const result = await api("/api/change-requests", "POST", {
         previewId: plan.id,
       });
+      activeEditor = null;
       view.replaceChildren(
         node("h2", "PRを作成しました"),
         link("GitHubでPR #" + result.number + "を確認", result.url),
@@ -904,15 +903,31 @@ async function showPreview(input) {
     } catch (e) {
       submitted = false;
       submit.disabled = false;
+      submit.textContent = "確認した変更でPRを作成";
       throw e;
     }
   });
-  view.append(submit, button("編集に戻る（再プレビューが必要）", listView));
+  submit.disabled = true;
+  confirm.onchange = () => (submit.disabled = !confirm.checked || submitted);
+  view.append(
+    submit,
+    button("編集に戻る（再プレビューが必要）", () => {
+      if (activeEditor) activeEditor.show();
+      else listView();
+    }),
+  );
   showStatus("プレビュー済み。まだGitHubへ書き込んでいません。");
+  view.querySelector("h2").tabIndex = -1;
+  view.querySelector("h2").focus();
 }
 const oldScreen = screen;
 screen = function () {
   if (!me) return;
+  for (const a of document.querySelectorAll("nav a")) {
+    if (a.hash === (location.hash || "#dashboard"))
+      a.setAttribute("aria-current", "page");
+    else a.removeAttribute("aria-current");
+  }
   if (location.hash === "#masters") {
     if (snapshot) listView();
     else loadMasters().catch((e) => showStatus(e.message));

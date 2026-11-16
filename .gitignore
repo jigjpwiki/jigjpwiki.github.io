@@ -14,3 +14,12 @@ ops/external-music/runtime*.json
 ops/official-discovery/runtime*.json
 
 /node_modules
+
+admin/node_modules/
+admin/build/
+admin/.wrangler/
+admin/.dev.vars
+
+admin/.wrangler-config/
+
+/admin/node_modules

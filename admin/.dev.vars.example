@@ -1,0 +1,8 @@
+# Set these locally using the existing account. Never commit actual values.
+GITHUB_CLIENT_SECRET="replace-with-app-client-secret"
+SESSION_KEY="replace-with-32-byte-base64url-key"
+# Nonsecret vars: ADMIN_ENABLED=true, GITHUB_CLIENT_ID and ADMIN_USER_IDS in local config override.
+
+ADMIN_ENABLED="false"
+GITHUB_CLIENT_ID="replace-with-owned-app-client-id"
+ADMIN_USER_IDS="replace-with-numeric-github-user-id"

@@ -1,0 +1,169 @@
+import { fail } from "./security.mjs";
+export const repository = "jigjpwiki/jigjpwiki.github.io";
+export const files = [
+  "talents",
+  "talent-id-registry",
+  "catalog",
+  "catalog-id-registry",
+  "anniversaries",
+  "events",
+  "goods",
+  "media",
+  "music",
+  "karaoke",
+  "feature-id-registry",
+  "youtube_streamers",
+  "twitch_streamers",
+];
+export class GitHub {
+  constructor(token, transport = (...args) => fetch(...args)) {
+    this.token = token;
+    this.transport = transport;
+    this.count = 0;
+  }
+  async call(path, method = "GET", value) {
+    if (++this.count > 45) fail(429, "request_budget");
+    let r;
+    try {
+      r = await this.transport("https://api.github.com" + path, {
+        method,
+        redirect: "manual",
+        signal: AbortSignal.timeout(10000),
+        headers: {
+          Authorization: "Bearer " + this.token,
+          "User-Agent": "jigwiki-admin",
+          "X-GitHub-Api-Version": "2022-11-28",
+          Accept: "application/vnd.github+json",
+          "Content-Type": "application/json",
+        },
+        body: value === undefined ? undefined : JSON.stringify(value),
+      });
+    } catch {
+      fail(503, "github_unavailable");
+    }
+    if (!r.ok)
+      fail(
+        r.status === 401
+          ? 401
+          : [403, 404, 409, 422, 429].includes(r.status)
+            ? r.status
+            : 503,
+        "github_" + r.status,
+      );
+    try {
+      return await r.json();
+    } catch {
+      fail(503, "github_response_invalid");
+    }
+  }
+  async identity() {
+    const user = await this.call("/user"),
+      repo = await this.call("/repos/" + repository);
+    if (repo.default_branch !== "main" || !repo.permissions?.push)
+      fail(403, "repository_write_not_authorized");
+    return user;
+  }
+  async snapshot() {
+    const ref = await this.call("/repos/" + repository + "/git/ref/heads/main");
+    const commit = await this.call(
+      "/repos/" + repository + "/git/commits/" + ref.object.sha,
+    );
+    const tree = await this.call(
+      "/repos/" + repository + "/git/trees/" + commit.tree.sha + "?recursive=1",
+    );
+    if (tree.truncated) fail(503, "repository_tree_limit");
+    const models = {},
+      shas = {};
+    await Promise.all(
+      files.map(async (name) => {
+        const file = "data/" + name + ".json",
+          entry = tree.tree.find((x) => x.path === file && x.type === "blob");
+        if (!entry) fail(409, "missing_master");
+        const blob = await this.call(
+          "/repos/" + repository + "/git/blobs/" + entry.sha,
+        );
+        if (blob.size > 1500000 || blob.encoding !== "base64")
+          fail(413, "master_size_limit");
+        try {
+          models[name] = JSON.parse(
+            new TextDecoder().decode(
+              Uint8Array.from(atob(blob.content.replace(/\s/g, "")), (c) =>
+                c.charCodeAt(0),
+              ),
+            ),
+          );
+        } catch {
+          fail(503, "master_invalid");
+        }
+        shas[name] = entry.sha;
+      }),
+    );
+    return { sha: ref.object.sha, tree: commit.tree.sha, models, shas };
+  }
+  async publish(plan, key, record, save) {
+    if (
+      !/^[\w-]{1,64}$/.test(key) ||
+      Object.keys(plan.files).some((n) => !files.includes(n))
+    )
+      fail(400, "invalid_write_target");
+    const branch = "admin/change-" + key;
+    const base = "/repos/" + repository;
+    const existing = await this.call(
+      base + "/pulls?state=all&head=jigjpwiki:" + branch + "&base=main",
+    );
+    if (existing.length)
+      return {
+        url: existing[0].html_url,
+        number: existing[0].number,
+        recovered: true,
+      };
+    // A commit/ref journal is persisted before each uncertain remote write; retries recover by deterministic ref.
+    if (!record.commit) {
+      const tree = await this.call(base + "/git/trees", "POST", {
+        base_tree: plan.tree,
+        tree: Object.entries(plan.files).map(([name, value]) => ({
+          path: "data/" + name + ".json",
+          mode: "100644",
+          type: "blob",
+          content: JSON.stringify(value, null, 2) + "\n",
+        })),
+      });
+      const commit = await this.call(base + "/git/commits", "POST", {
+        message: "admin: " + plan.title,
+        tree: tree.sha,
+        parents: [plan.sha],
+      });
+      record.commit = commit.sha;
+      await save(record);
+    }
+    let ref;
+    try {
+      ref = await this.call(base + "/git/ref/heads/" + branch);
+    } catch (e) {
+      if (e.message !== "github_404") throw e;
+    }
+    if (ref && ref.object.sha !== record.commit)
+      fail(409, "admin_branch_conflict");
+    if (!ref) {
+      try {
+        await this.call(base + "/git/refs", "POST", {
+          ref: "refs/heads/" + branch,
+          sha: record.commit,
+        });
+      } catch (e) {
+        record.uncertain = true;
+        await save(record);
+        throw e;
+      }
+    }
+    const pr = await this.call(base + "/pulls", "POST", {
+      base: "main",
+      head: branch,
+      title: "admin: " + plan.title,
+      body:
+        plan.summary +
+        "\n\n管理者がWebで確認した変更案です。人間が差分とCIをレビューしてマージしてください。自動マージ・Wiki書込みは行いません。",
+    });
+    return { url: pr.html_url, number: pr.number };
+  }
+}

@@ -1,0 +1,24 @@
+name: Admin isolated checks
+on:
+  pull_request:
+    paths: ['admin/**', '.github/workflows/admin-test.yml', 'lib/**', 'schemas/**']
+permissions:
+  contents: read
+jobs:
+  admin:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    env:
+      WRANGLER_SEND_METRICS: 'false'
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+          cache-dependency-path: admin/package-lock.json
+      - run: npm ci
+      - run: npm ci --prefix admin
+      - run: npm test --prefix admin
+      - run: npm run check --prefix admin
+      - run: npm run test:worker --prefix admin

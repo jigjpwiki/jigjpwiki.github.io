@@ -1,0 +1,231 @@
+import { test } from "node:test";
+import assert from "node:assert/strict";
+import { seal, open, random, csrf, allow, body } from "../src/security.mjs";
+import { Admin } from "../src/worker.mjs";
+import { GitHub } from "../src/github.mjs";
+const key = random();
+const store = () => {
+  const map = new Map();
+  return {
+    map,
+    get: async (k) => {
+      const v = map.get(k);
+      return v?.expiry > Date.now() ? v.value : null;
+    },
+    put: async (k, value, expiry) => map.set(k, { value, expiry }),
+    delete: async (k) => map.delete(k),
+  };
+};
+const env = () => ({
+  GITHUB_CLIENT_ID: "fixture",
+  GITHUB_CLIENT_SECRET: "not-real",
+  SESSION_KEY: key,
+  ADMIN_USER_IDS: "123",
+  __testStore: store(),
+  __testFetch: async (url) =>
+    new Response(
+      JSON.stringify(
+        url.endsWith("/user")
+          ? { id: 123, login: "test" }
+          : { default_branch: "main", permissions: { push: true } },
+      ),
+      { headers: { "Content-Type": "application/json" } },
+    ),
+});
+const state = { blockConcurrencyWhile: (fn) => fn() };
+test("encrypted token, tampered session, numeric allowlist and CSRF fail closed", async () => {
+  const secret = await seal("test-token", key);
+  assert.equal(await open(secret, key), "test-token");
+  await assert.rejects(open(secret, random()));
+  assert.throws(() => allow({ id: 999 }, { ADMIN_USER_IDS: "123" }));
+  assert.throws(() =>
+    csrf(
+      new Request("https://admin.example/api", {
+        method: "POST",
+        headers: { Origin: "https://evil.example", "X-CSRF-Token": "csrf" },
+      }),
+      { csrf: "csrf" },
+    ),
+  );
+});
+test("anonymous API and bad/expired sessions are rejected", async () => {
+  const e = env(),
+    worker = new Admin(state, e);
+  for (const value of ["", random(), "tampered"]) {
+    const r = await worker.fetch(
+      new Request("https://admin.example/api/me", {
+        headers: { Cookie: "__Host-admin-session=" + value },
+      }),
+    );
+    assert.equal(r.status, 401);
+  }
+  const id = random();
+  await e.__testStore.put(
+    "session:" + id,
+    { id: "123", expires: Date.now() - 1 },
+    Date.now() + 10000,
+  );
+  assert.equal(
+    (
+      await worker.fetch(
+        new Request("https://admin.example/api/me", {
+          headers: { Cookie: "__Host-admin-session=" + id },
+        }),
+      )
+    ).status,
+    401,
+  );
+});
+test("OAuth state is bound to the browser, consumed once, no token reaches response; logout revokes", async () => {
+  const e = env();
+  e.__testFetch = async (url, opts) => {
+    if (url.includes("/access_token"))
+      return Response.json({ access_token: "test-token" });
+    if (url.endsWith("/user")) return Response.json({ id: 123, login: "test" });
+    return Response.json({
+      default_branch: "main",
+      permissions: { push: true },
+    });
+  };
+  const worker = new Admin(state, e),
+    login = await worker.fetch(new Request("https://admin.example/auth/login"));
+  const stateValue = new URL(login.headers.get("Location")).searchParams.get(
+    "state",
+  );
+  assert(
+    new URL(login.headers.get("Location")).searchParams.get("code_challenge"),
+  );
+  assert.equal(
+    (
+      await worker.fetch(
+        new Request(
+          "https://admin.example/auth/callback?code=x&state=" + stateValue,
+        ),
+      )
+    ).status,
+    403,
+  );
+  const callback = await worker.fetch(
+    new Request(
+      "https://admin.example/auth/callback?code=x&state=" + stateValue,
+      { headers: { Cookie: "__Host-admin-oauth=" + stateValue } },
+    ),
+  );
+  assert.equal(callback.status, 302);
+  const sid = callback.headers
+    .get("Set-Cookie")
+    .match(/__Host-admin-session=([\w-]+)/)[1];
+  const request = (path) =>
+    new Request("https://admin.example" + path, {
+      headers: { Cookie: "__Host-admin-session=" + sid },
+    });
+  const me = await (await worker.fetch(request("/api/me"))).json();
+  assert.equal(me.id, "123");
+  assert(!JSON.stringify(me).includes("test-token"));
+  const out = await worker.fetch(
+    new Request("https://admin.example/auth/logout", {
+      method: "POST",
+      headers: {
+        Cookie: "__Host-admin-session=" + sid,
+        Origin: "https://admin.example",
+        "X-CSRF-Token": me.csrf,
+      },
+    }),
+  );
+  assert.equal(out.status, 200);
+  assert.equal((await worker.fetch(request("/api/me"))).status, 401);
+});
+test("disallowed numeric user, missing repo write permission and GitHub errors cannot log in", async () => {
+  const g = new GitHub("x", async (url) =>
+    Response.json(
+      url.endsWith("/user")
+        ? { id: 123 }
+        : { default_branch: "main", permissions: { push: false } },
+    ),
+  );
+  await assert.rejects(g.identity(), /repository_write_not_authorized/);
+  const failed = new GitHub(
+    "x",
+    async () => new Response("PRIVATE BODY", { status: 403 }),
+  );
+  await assert.rejects(
+    failed.identity(),
+    (e) => e.status === 403 && !e.message.includes("PRIVATE"),
+  );
+});
+test("bounded JSON and forbidden write routes never dispatch arbitrary workflows", async () => {
+  await assert.rejects(
+    body(
+      new Request("https://a.test", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: '{"x":"' + "x".repeat(500) + '"}',
+      }),
+      100,
+    ),
+  );
+  const e = env(),
+    worker = new Admin(state, e);
+  assert.equal(
+    (
+      await worker.fetch(
+        new Request("https://admin.example/api/workflows", { method: "POST" }),
+      )
+    ).status,
+    401,
+  );
+});
+test("PR gateway uses deterministic dedicated branch/main base and recovers existing PR", async () => {
+  const calls = [],
+    plan = {
+      sha: "main-sha",
+      tree: "base-tree",
+      title: "検証",
+      summary: "根拠確認済み",
+      files: { talents: { schemaVersion: 1 } },
+    };
+  let exists = false;
+  const github = new GitHub("fixture", async (url, opts) => {
+    calls.push([url, opts.method, opts.body && JSON.parse(opts.body)]);
+    if (url.includes("/pulls?"))
+      return Response.json(
+        exists
+          ? [
+              {
+                html_url:
+                  "https://github.com/jigjpwiki/jigjpwiki.github.io/pull/999",
+                number: 999,
+              },
+            ]
+          : [],
+      );
+    if (url.includes("/git/trees")) return Response.json({ sha: "new-tree" });
+    if (url.includes("/git/commits"))
+      return Response.json({ sha: "new-commit" });
+    if (url.includes("/git/ref/")) return new Response("{}", { status: 404 });
+    if (url.endsWith("/pulls")) {
+      exists = true;
+      return Response.json({
+        html_url: "https://github.com/jigjpwiki/jigjpwiki.github.io/pull/999",
+        number: 999,
+      });
+    }
+    return Response.json({});
+  });
+  const record = {};
+  const result = await github.publish(plan, "test-key", record, async () => {});
+  assert.equal(result.number, 999);
+  const again = await github.publish(plan, "test-key", record, async () => {});
+  assert.equal(again.recovered, true);
+  assert.equal(
+    calls.filter((c) => c[0].endsWith("/pulls") && c[1] === "POST").length,
+    1,
+  );
+  assert(calls.some((c) => c[2]?.ref === "refs/heads/admin/change-test-key"));
+  assert(calls.some((c) => c[2]?.base === "main"));
+  assert(
+    !calls.some(
+      (c) => c[0].includes("/actions/") || c[2]?.ref === "refs/heads/main",
+    ),
+  );
+});

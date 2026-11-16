@@ -12,7 +12,6 @@ import {
   textField,
   choice,
   namePicker,
-  sourcePicker,
   safeLink,
 } from "./controls.js";
 const names = { talent: "VTuber", organization: "事務所", group: "グループ" };
@@ -56,8 +55,7 @@ export function createEditor({
   let tab = "basic",
     confirmed = false,
     busy = false;
-  let reason = "",
-    evidenceUrl = "";
+  let reason = "";
   const errorSummary = el("div", undefined, "error-summary");
   errorSummary.hidden = true;
   errorSummary.tabIndex = -1;
@@ -79,51 +77,8 @@ export function createEditor({
     status.textContent = draft.dirty
       ? "未保存の変更があります"
       : "変更はありません";
-    const check = container.querySelector("#evidence-confirmed");
+    const check = container.querySelector("#change-confirmed");
     if (check) check.checked = false;
-  };
-  const allSources = () => [
-    ...models.talents.sources,
-    ...models.catalog.sources,
-    ...draft.sources,
-  ];
-  const addSource = async (url, kind) => {
-    const u = new URL(url);
-    if (
-      u.protocol !== "https:" ||
-      u.username ||
-      u.password ||
-      u.port ||
-      [...u.searchParams.keys()].some((k) =>
-        /token|key|secret|auth|password/i.test(k),
-      )
-    )
-      throw new Error("認証情報を含まないHTTPSの出典URLを入力してください。");
-    if (kind === "wiki" && !u.href.startsWith("https://wikiwiki.jp/jigjp/"))
-      throw new Error("非公式Wikiの出典はjig.jp WikiのURLを指定してください。");
-    const existing = allSources().find(
-      (s) => s.url === u.href && s.kind === kind,
-    );
-    if (existing) return existing;
-    const bytes = await crypto.subtle.digest(
-      "SHA-256",
-      new TextEncoder().encode(u.href),
-    );
-    const id =
-      "src-admin-" +
-      [...new Uint8Array(bytes)]
-        .map((b) => b.toString(16).padStart(2, "0"))
-        .join("")
-        .slice(0, 20);
-    const source = {
-      id,
-      kind,
-      url: u.href,
-      checkedAt: new Date().toISOString(),
-    };
-    draft.sources.push(source);
-    changed();
-    return source;
   };
   const set = (key, value) => {
     v[key] = value;
@@ -140,19 +95,6 @@ export function createEditor({
       prefix + "/" + key,
       fields,
       type,
-    );
-  const refs = (label, object, key, path) =>
-    sourcePicker(
-      label,
-      object[key] || [],
-      allSources,
-      (ids) => {
-        object[key] = ids;
-        changed();
-      },
-      addSource,
-      path,
-      fields,
     );
   const select = (label, key, values, object = v, prefix = "") =>
     choice(
@@ -173,10 +115,7 @@ export function createEditor({
     return card;
   };
   const optional = (key, title) => {
-    const card = section(
-      title,
-      "URLが空の場合は未登録です。URLを入れ直しても既存の出典は保持します。",
-    );
+    const card = section(title, "URLが空の場合は未登録です。");
     const preview = el("div");
     const redrawImage = () =>
       preview.replaceChildren(portrait(v[key]?.url, v.displayName || ""));
@@ -198,23 +137,6 @@ export function createEditor({
       redrawImage();
       card.append(preview);
     }
-    const saved = draft.optionalValue(key);
-    card.append(
-      sourcePicker(
-        title + "の出典",
-        saved.sourceRefs,
-        allSources,
-        (ids) => {
-          saved.sourceRefs = ids;
-          if (v[key]) v[key].sourceRefs = [...ids];
-          draft.setOptionalRefs(key, ids);
-          changed();
-        },
-        addSource,
-        "/" + key + "/sourceRefs",
-        fields,
-      ),
-    );
     return card;
   };
   function arrays(title, key, template, display, render) {
@@ -283,14 +205,6 @@ export function createEditor({
       base.append(
         el("p", "固定内部ID：" + record.id + "（変更できません）", "muted"),
       );
-    base.append(
-      refs(
-        "名前の出典",
-        v,
-        entity === "talent" ? "displayNameSourceRefs" : "sourceRefs",
-        "/" + (entity === "talent" ? "displayNameSourceRefs" : "sourceRefs"),
-      ),
-    );
     grid.append(base);
     if (entity === "talent") {
       grid.append(optional("profileImage", "プロフィール画像"));
@@ -298,7 +212,7 @@ export function createEditor({
         arrays(
           "別名・旧名",
           "aliases",
-          { name: "", type: "alias", from: null, to: null, sourceRefs: [] },
+          { name: "", type: "alias", from: null, to: null },
           (r, i) => r.name || `別名 ${i + 1}`,
           (item, row, i) => {
             item.append(
@@ -312,7 +226,6 @@ export function createEditor({
               ),
               date("使用開始日", "from", row, `/aliases/${i}`),
               date("使用終了日", "to", row, `/aliases/${i}`),
-              refs("別名の出典", row, "sourceRefs", `/aliases/${i}/sourceRefs`),
             );
           },
         ),
@@ -385,7 +298,6 @@ export function createEditor({
           v[key],
           "/" + key,
         ),
-        refs(title + "の出典", v[key], "sourceRefs", "/" + key + "/sourceRefs"),
       );
       grid.append(card);
     }
@@ -398,7 +310,6 @@ export function createEditor({
           status: "unknown",
           from: null,
           to: null,
-          sourceRefs: [],
         },
         (r, i) =>
           models.talents.organizations.find((o) => o.id === r.organizationId)
@@ -424,12 +335,6 @@ export function createEditor({
             ),
             date("所属開始日", "from", row, `/affiliations/${i}`),
             date("所属終了日", "to", row, `/affiliations/${i}`),
-            refs(
-              "所属の出典",
-              row,
-              "sourceRefs",
-              `/affiliations/${i}/sourceRefs`,
-            ),
           );
         },
       ),
@@ -442,7 +347,7 @@ export function createEditor({
       arrays(
         "SNS・公式アカウント",
         "accounts",
-        { service: "youtube", accountId: null, url: "", sourceRefs: [] },
+        { service: "youtube", accountId: null, url: "" },
         (r, i) =>
           services.find(([k]) => k === r.service)?.[1] || `アカウント ${i + 1}`,
         (item, row, i) => {
@@ -469,12 +374,6 @@ export function createEditor({
               `/accounts/${i}/accountId`,
               fields,
             ),
-            refs(
-              "アカウントの出典",
-              row,
-              "sourceRefs",
-              `/accounts/${i}/sourceRefs`,
-            ),
           );
         },
       ),
@@ -483,10 +382,7 @@ export function createEditor({
     return grid;
   }
   function panelHistory() {
-    const card = section(
-      "出典と変更履歴",
-      "出典は該当する項目の中から追加・選択できます。変更した値には再確認が必要です。",
-    );
+    const card = section("変更履歴");
     const history = models["admin-ledger"].entries.filter(
       (e) => e.subject === record?.id,
     );
@@ -507,57 +403,25 @@ export function createEditor({
   function panelReview() {
     const card = section(
       "確認・プレビュー",
-      "この操作ではまだPRを作成しません。変更理由と公式の根拠を確認して、全マスターの検証へ進みます。",
+      "この操作ではまだPRを作成しません。変更内容と理由を確認して、全マスターの検証へ進みます。",
     );
     const changes = fieldChanges(draft.original, v);
     for (const c of changes)
       card.append(el("p", `${c.kind}：${fieldLabel(c.path)}`));
-    if (!changes.length && !draft.sources.length)
-      card.append(el("p", "変更はまだありません。"));
+    if (!changes.length) card.append(el("p", "変更はまだありません。"));
     const input = el("textarea");
     input.value = reason;
     input.oninput = () => {
       reason = input.value;
     };
     card.append(labelledReview("変更理由", input));
-    const used = new Set();
-    const collect = (value) => {
-      if (!value || typeof value !== "object") return;
-      for (const [key, item] of Object.entries(value)) {
-        if (key === "sourceRefs" || key === "displayNameSourceRefs")
-          for (const id of item) used.add(id);
-        else collect(item);
-      }
-    };
-    collect(v);
-    const official = allSources().filter(
-      (s) => s.kind === "official" && used.has(s.id),
-    );
-    const choose = el("select");
-    choose.setAttribute("aria-label", "確認した公式出典");
-    choose.append(new Option("公式出典を選択してください", ""));
-    for (const s of official)
-      choose.append(
-        new Option(`${s.url} · ${s.checkedAt.slice(0, 10)}`, s.url),
-      );
-    choose.value = evidenceUrl;
-    choose.onchange = () => {
-      evidenceUrl = choose.value;
-      confirmed = false;
-      const c = container.querySelector("#evidence-confirmed");
-      if (c) c.checked = false;
-    };
-    card.append(labelledReview("確認した公式出典", choose));
     const check = el("input");
     check.type = "checkbox";
-    check.id = "evidence-confirmed";
+    check.id = "change-confirmed";
     check.checked = confirmed;
     check.onchange = () => (confirmed = check.checked);
     const label = el("label");
-    label.append(
-      check,
-      document.createTextNode("変更する値と公式出典を確認しました"),
-    );
+    label.append(check, document.createTextNode("変更内容を確認しました"));
     card.append(label);
     const submit = action("変更プレビュー", async () => {
       if (busy) return;
@@ -569,10 +433,10 @@ export function createEditor({
           message: "変更理由を入力してください。",
           tab: "review",
         });
-      if (!confirmed || !evidenceUrl)
+      if (!confirmed)
         problems.push({
-          path: "/evidence",
-          message: "公式出典を選び、確認にチェックしてください。",
+          path: "/confirmation",
+          message: "変更内容を確認してチェックしてください。",
           tab: "review",
         });
       if (problems.length) {
@@ -590,10 +454,7 @@ export function createEditor({
       try {
         await onPreview({
           value: draft.payload(),
-          sources: structuredClone(draft.sources),
           reason,
-          evidenceUrl,
-          checkedAt: new Date().toISOString(),
         });
       } catch (e) {
         renderErrors(validationIssues(e.message, models, record?.id));
@@ -611,7 +472,7 @@ export function createEditor({
   function labelledReview(text, input) {
     return text === "変更理由"
       ? registerReview("/reason", text, input)
-      : registerReview("/evidence", text, input);
+      : registerReview("/confirmation", text, input);
   }
   function registerReview(path, text, input) {
     const wrapper = el("div", undefined, "form-field"),
@@ -635,13 +496,6 @@ export function createEditor({
         message: "名前を入力してください。",
         tab: "basic",
       });
-    for (const key of ["wiki", "profileImage"])
-      if (v[key] && !v[key].sourceRefs?.length)
-        result.push({
-          path: `/${key}/sourceRefs`,
-          message: "出典を1件以上選択してください。",
-          tab: tabFor("/" + key),
-        });
     return result;
   }
   function clearErrors() {
@@ -708,12 +562,12 @@ export function createEditor({
           ["basic", "基本情報"],
           ["affiliation", "所属・活動"],
           ["links", "SNS・リンク"],
-          ["history", "出典・履歴"],
+          ["history", "変更履歴"],
           ["review", "確認・プレビュー"],
         ]
       : [
           ["basic", "基本情報"],
-          ["history", "出典・履歴"],
+          ["history", "変更履歴"],
           ["review", "確認・プレビュー"],
         ];
   function draw() {

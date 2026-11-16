@@ -1,0 +1,128 @@
+{
+  "base": "ed9d5e5688bfa11c77e24e7eb1597e094e065425",
+  "masters": {
+    "talents": {
+      "collections": {
+        "organizations": {
+          "before": 5,
+          "after": 5,
+          "identityHash": "db157aa1708701208aba5093af2ffaaad2b4f804b6cf5bfaf3547552ecf17715"
+        },
+        "talents": {
+          "before": 97,
+          "after": 97,
+          "identityHash": "506c36086b0a91365318f7e81e809cb32d166a4b46afe123c6ddac2ca15195c0"
+        }
+      },
+      "beforeHash": "d873a220856c97d1a593b4e837473e791928ac164e83a9dd62d9b90687747eac",
+      "afterHash": "60639584379365cf7a7c5ebee2db9d71b4cea491ab4befda6ab606df56a86c08"
+    },
+    "catalog": {
+      "collections": {
+        "groups": {
+          "before": 11,
+          "after": 11,
+          "identityHash": "b1da42829c7f70dd7c08da2b4fc96559b219fbe0841dfb9942f5034ef4dabb19"
+        }
+      },
+      "beforeHash": "4b256562ae6591ed926448406d1b566a3bfc9681bb6d192cac5fc9398dd12ab9",
+      "afterHash": "536b6fbd6b580ab5574229a6797c089303ff1dd57b459f6b87023dc133472609"
+    },
+    "anniversaries": {
+      "collections": {
+        "events": {
+          "before": 91,
+          "after": 91,
+          "identityHash": "65186b75189ff1bd4c9863d6c67a736e21e3eb925cd9ffbf0883436e4043a370"
+        }
+      },
+      "beforeHash": "e26a3e091a6bd2f9c56ff6b01c3e26a7a79316eab12d8f448027c264b2d3e6e9",
+      "afterHash": "c6e9c36f364816c1a1092a761daa9b2c129f9f455483e64b8c3dd2dff88afac9"
+    },
+    "goods": {
+      "collections": {
+        "products": {
+          "before": 41,
+          "after": 41,
+          "identityHash": "0356856fefd08bca47512c8a943d513f9c84d20659a0cc409e3008ac52c9849e"
+        },
+        "campaigns": {
+          "before": 6,
+          "after": 6,
+          "identityHash": "8c251f96306f310b2d3e371331f2c0724cb7848b5d7f9c65e0c040e032bf6499"
+        },
+        "offers": {
+          "before": 41,
+          "after": 41,
+          "identityHash": "d6b0e19740e504bded2fed0c848472a8f37635fdbbf8b59cac7d38e81d440d70"
+        }
+      },
+      "beforeHash": "174265d0fae831f8aa104eecb28ef2a4c80372fd1a3b857817464a3e24a7cd5d",
+      "afterHash": "5ae33a4bab842a436731f4a3025bf7879247b8ec137d0d54b9add66e64254a8d"
+    },
+    "events": {
+      "collections": {
+        "events": {
+          "before": 5,
+          "after": 5,
+          "identityHash": "8a4f45a659a6b13a8bb6ac1954e6602b0cc258d14a2dace81799276bab8962e9"
+        }
+      },
+      "beforeHash": "988d59f932a9880f397c56a62985526407764681faae3de52f7f4200d0e4c3fc",
+      "afterHash": "bf26f42693bbf8260a98bdca1765107e30c1e70a2d54cc6b4c7cfeb9c2a14f1d"
+    },
+    "media": {
+      "collections": {
+        "videos": {
+          "before": 22,
+          "after": 22,
+          "identityHash": "b955b708646841917b8678ccc0550e4dccfc45c57e82ca36d89af781c316bddf"
+        }
+      },
+      "beforeHash": "c6208b66b1261e41ec1cbf403bce4a6a5066b1714d628047ef62a590e5fa8f8f",
+      "afterHash": "6c5008951fdc5fdce83c72c72c6f90899ebad9334b6b7209595560102a00584b"
+    },
+    "music": {
+      "collections": {
+        "songs": {
+          "before": 57,
+          "after": 57,
+          "identityHash": "1d1fe13d8b8987aa0668a625006aad49b954629e06d7bc16e60767fc0bd08a99"
+        },
+        "musicVideos": {
+          "before": 4,
+          "after": 4,
+          "identityHash": "04e456b1704366507826fb29b01beae5dbebd79e9011de58ff746f191a000d25"
+        }
+      },
+      "beforeHash": "9f046b8436083df1ba1716ad9f547fd4ff242792ec734fe44de29f13e2cace70",
+      "afterHash": "3ce7f81d90291a07e583ce4b321f9b38dfe97ae5de4df99d6dfa2142657d0779"
+    },
+    "karaoke": {
+      "collections": {
+        "karaokes": {
+          "before": 17,
+          "after": 17,
+          "identityHash": "205fb4124fff6da0bba8138b07bf55525f01019f5259dbc9e405a07dea2d40b3"
+        },
+        "performances": {
+          "before": 55,
+          "after": 55,
+          "identityHash": "a6bf30453981b5f4c7ce1631ced5ea0b13aec691ded48eab0891df83ce76a8d0"
+        }
+      },
+      "beforeHash": "f6ff91f58b3aeabc7f00c385925d51f9049b673d196e010ae454090e13484f10",
+      "afterHash": "7819cbf6d4ae64837fc657041ca7ccdb3dc64f8150935c5c9d8fa7fb36ef1913"
+    }
+  },
+  "removedFields": {
+    "sources": 3,
+    "checkedAt": 482,
+    "sourceRefs": 1086,
+    "displayNameSourceRefs": 97,
+    "artistEvidence": 57,
+    "verificationMethod": 55
+  },
+  "sourceRecords": 480,
+  "contentUnchanged": true
+}

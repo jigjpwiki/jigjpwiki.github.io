@@ -32,14 +32,13 @@ test('saved stream rows cannot be mistaken for current live status',()=>{
   const html=talentPage(person,master,data,{youtube:[{...video,status}]});
   assert.match(html,/サイト公開時点の保存データ/);assert.match(html,/サイト公開時点の保存データです/);
   assert.doesNotMatch(html.match(/<details data-stream-fallback[\s\S]*?<\/details>/)[0],/配信中|配信予定（収集時点）/);assert.match(html,/<time datetime=/);
-  assert.match(html,/最終確認/);
+  assert.doesNotMatch(html,/情報源・確認日|sourceRefs/);
  }
 });
 
 test('profile image presence is independent of live master values and requires valid provenance',()=>{
  const fixture=structuredClone(master);const talent=fixture.talents.find(t=>t.id==='tal-000004');
- const source=talent.displayNameSourceRefs.find(id=>fixture.sources.some(s=>s.id===id&&s.kind==='official'));
- const image={url:'https://images.example/fixture-avatar.png',sourceRefs:[source]};
+ const image={url:'https://images.example/fixture-avatar.png'};
  const data=publicCatalog(loadCatalog(fixture));
  for(const profileImage of [null,image]){
   talent.profileImage=structuredClone(profileImage);const before=structuredClone(fixture);
@@ -49,7 +48,7 @@ test('profile image presence is independent of live master values and requires v
   else{assert.match(html,/class="talent-avatar"/);assert.doesNotMatch(require('../lib/talent-details').avatar(talent),/<img /);}
   assert.deepEqual(fixture,before);
  }
- for(const invalid of [{...image,sourceRefs:[]},{...image,sourceRefs:['src-missing']},{...image,url:'javascript:alert(1)'},{...image,url:'https://images.example/avatar.png?token=secret'}]){
+ for(const invalid of [{...image,url:'http://images.example/avatar.png'},{...image,url:'javascript:alert(1)'},{...image,url:'https://images.example/avatar.png?token=secret'}]){
   talent.profileImage=invalid;assert.throws(()=>require('../lib/talents').validateTalents(fixture));
  }
 });

@@ -15,7 +15,7 @@ test('verified expansion retains the four original identities and independently 
  assert.doesNotThrow(()=>validateTalents(master,{registry,previous:{...master,talents:require('./fixtures/foundation-talents.json')}}));
  assert.equal(accepted.length,93);assert.equal(candidates.length,127);assert.equal(candidates.filter(r=>r.result==='held').length,30);
  assert.equal(new Set(candidates.map(r=>r.name)).size,candidates.length);
- for(const r of accepted){const t=master.talents.find(t=>t.id===r.id);assert.equal(t.displayName,r.name);assert.equal(candidates.find(c=>c.id===r.id)?.result,'registered');assert(t.displayNameSourceRefs.some(id=>master.sources.find(s=>s.id===id)?.url===r.identityUrl));}
+ for(const r of accepted){const t=master.talents.find(t=>t.id===r.id);assert.equal(t.displayName,r.name);assert.equal(candidates.find(c=>c.id===r.id)?.result,'registered');assert.equal(registry.issued.find(a=>a.id===t.id)?.officialProfileUrl,r.identityUrl);}
  for(const r of candidates.filter(r=>r.result==='held'))assert(!master.talents.some(t=>t.displayName===r.name));
 });
 test('retired affiliations never imply retirement; confirmed activity endings have independent official notices',()=>{

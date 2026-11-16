@@ -101,10 +101,8 @@ try {
     id: value.id,
     value,
     reason: "ローカルWorkerの検証",
-    evidence: {
-      status: "verified",
-      url: models.talents.sources.find((s) => s.id === "src-mahiru-neru").url,
-      checkedAt: new Date().toISOString(),
+    confirmation: {
+      status: "confirmed",
       valueHash: await hash(value),
     },
   };

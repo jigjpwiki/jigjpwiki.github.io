@@ -8,7 +8,7 @@
   ],
   "properties": {
     "schemaVersion": {
-      "const": 1
+      "const": 2
     },
     "karaokes": {
       "type": "array",
@@ -22,7 +22,6 @@
           "setlistStatus",
           "expectedCount",
           "registeredAt",
-          "sourceRefs",
           "visibility"
         ],
         "properties": {
@@ -65,9 +64,6 @@
             "type": "string",
             "format": "date-time"
           },
-          "sourceRefs": {
-            "$ref": "https://www.jigdule.jp/schemas/feature-common#/definitions/refs"
-          },
           "visibility": {
             "enum": [
               "public",
@@ -93,9 +89,7 @@
           "rawLabel",
           "note",
           "verification",
-          "sourceRefs",
-          "visibility",
-          "verificationMethod"
+          "visibility"
         ],
         "properties": {
           "id": {
@@ -183,19 +177,10 @@
               "rejected"
             ]
           },
-          "sourceRefs": {
-            "$ref": "https://www.jigdule.jp/schemas/feature-common#/definitions/refs"
-          },
           "visibility": {
             "enum": [
               "public",
               "draft"
-            ]
-          },
-          "verificationMethod": {
-            "enum": [
-              "official_description",
-              "manual_review"
             ]
           }
         }

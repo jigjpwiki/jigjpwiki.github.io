@@ -226,11 +226,7 @@ try {
     const wiki = p.getByRole("textbox", { name: "非公式WikiURL", exact: true });
     await wiki.fill("");
     await wiki.fill(lee.wiki.url);
-    await p.locator(".source-picker > summary").last().click();
-    assert.match(
-      await p.locator(".source-chips").last().innerText(),
-      /非公式Wiki/,
-    );
+    assert.equal(await p.locator(".source-picker").count(), 0);
     await p.getByRole("tab", { name: "所属・活動", exact: true }).click();
     await p
       .getByRole("button", { name: "所属履歴を追加", exact: true })
@@ -255,7 +251,7 @@ try {
     p.once("dialog", (d) => d.accept());
     await account.getByRole("button", { name: /を削除$/ }).click();
     await p.getByRole("button", { name: "変更を確認", exact: true }).click();
-    // Missing evidence errors link to the offending field, including keyboard activation.
+    // Missing reason/confirmation errors link to the offending field, including keyboard activation.
     await p
       .getByRole("button", { name: "変更プレビュー", exact: true })
       .click();
@@ -269,11 +265,8 @@ try {
     );
     await p
       .getByRole("textbox", { name: "変更理由", exact: true })
-      .fill("画像のみの変更・出典保持の回帰検証");
-    await p
-      .getByRole("combobox", { name: "確認した公式出典", exact: true })
-      .selectOption({ index: 1 });
-    await p.locator("#evidence-confirmed").check();
+      .fill("画像のみの変更・他の項目保持の回帰検証");
+    await p.locator("#change-confirmed").check();
     await p
       .getByRole("button", { name: "変更プレビュー", exact: true })
       .click();
@@ -291,9 +284,8 @@ try {
     const expected = structuredClone(lee);
     expected.profileImage.url = "https://example.com/unavailable.png";
     assert.deepEqual(lastPreview.value, expected);
-    assert.deepEqual(lastPreview.value.wiki.sourceRefs, [
-      "src-wiki-lee-jupita",
-    ]);
+    assert.deepEqual(lastPreview.value.wiki, lee.wiki);
+    assert(!JSON.stringify(lastPreview).includes("sourceRefs"));
     assert.equal(JSON.stringify(models), originalModels);
     await p
       .getByRole("button", {
@@ -354,12 +346,9 @@ try {
     );
     await p.getByRole("button", { name: "変更を確認", exact: true }).click();
     await p
-      .getByRole("combobox", { name: "確認した公式出典", exact: true })
-      .selectOption({ index: 1 });
-    await p
       .getByRole("textbox", { name: "変更理由", exact: true })
       .fill("ブラウザーE2Eの検証");
-    await p.locator("#evidence-confirmed").check();
+    await p.locator("#change-confirmed").check();
     await p
       .getByRole("button", { name: "変更プレビュー", exact: true })
       .click();
@@ -425,27 +414,12 @@ try {
       .getByRole("textbox", { name: "表示名", exact: true })
       .fill("テスト専用VTuber");
     await p.getByRole("textbox", { name: "表示名", exact: true }).press("Tab");
-    const official = "https://www.youtube.com/channel/UC" + "z".repeat(22);
-    await p.locator(".source-picker > summary").first().click();
-    await p
-      .getByText("新しい出典を登録して選択", { exact: true })
-      .first()
-      .click();
-    await p
-      .getByRole("textbox", { name: "名前の出典の新しい出典URL", exact: true })
-      .fill(official);
-    await p
-      .getByRole("button", { name: "この出典を登録", exact: true })
-      .first()
-      .click();
+    assert.equal(await p.locator(".source-picker").count(), 0);
     await p.getByRole("button", { name: "変更を確認", exact: true }).click();
-    await p
-      .getByRole("combobox", { name: "確認した公式出典", exact: true })
-      .selectOption(official);
     await p
       .getByRole("textbox", { name: "変更理由", exact: true })
       .fill("新規登録E2E fixture");
-    await p.locator("#evidence-confirmed").check();
+    await p.locator("#change-confirmed").check();
     await p
       .getByRole("button", { name: "変更プレビュー", exact: true })
       .click();
@@ -499,7 +473,7 @@ try {
     await p.keyboard.press("ArrowRight");
     assert.equal(
       await p
-        .getByRole("tab", { name: "出典・履歴", exact: true })
+        .getByRole("tab", { name: "変更履歴", exact: true })
         .getAttribute("aria-selected"),
       "true",
     );

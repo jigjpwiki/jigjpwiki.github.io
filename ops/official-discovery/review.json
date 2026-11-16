@@ -3,756 +3,6 @@
   "baseHash": "1bf8d79f8eb3cf415844d7a5a6f57155fa975c4b91ee4023f336a0b8850c5095",
   "patches": [
     {
-      "file": "catalog",
-      "collection": "sources",
-      "record": {
-        "id": "src-c-goods-1",
-        "kind": "official",
-        "url": "https://paletteproject.jp/goods_kotohabd2026/",
-        "checkedAt": "2026-11-15T18:09:46Z"
-      },
-      "expectedHash": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
-      "status": "confirmed",
-      "sourceUrl": "https://paletteproject.jp/goods_kotohabd2026/",
-      "checkedAt": "2026-11-15T18:14:28.534Z",
-      "evidenceHash": "ca227b34ee4acdefdca30fe7c9c03d1b4f5e8d10a90d4e88fca58f2210b227cb"
-    },
-    {
-      "file": "catalog",
-      "collection": "sources",
-      "record": {
-        "id": "src-c-sale-1",
-        "kind": "official",
-        "url": "https://store.paletteproject.jp/products/fzmyk-goods-20261115",
-        "checkedAt": "2026-11-15T18:09:46Z"
-      },
-      "expectedHash": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
-      "status": "confirmed",
-      "sourceUrl": "https://store.paletteproject.jp/products/fzmyk-goods-20261115",
-      "checkedAt": "2026-11-15T18:14:28.534Z",
-      "evidenceHash": "2f7862a6e9489eef8c2c649519d2c1d026dce5edb0798e0bf887c63b18e58e18"
-    },
-    {
-      "file": "catalog",
-      "collection": "sources",
-      "record": {
-        "id": "src-c-sale-2",
-        "kind": "official",
-        "url": "https://store.paletteproject.jp/products/fzmyk-goods-20261115",
-        "checkedAt": "2026-11-15T18:09:46Z"
-      },
-      "expectedHash": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
-      "status": "confirmed",
-      "sourceUrl": "https://store.paletteproject.jp/products/fzmyk-goods-20261115",
-      "checkedAt": "2026-11-15T18:14:28.534Z",
-      "evidenceHash": "ade6c3752581852f65bc1fc67b1f90f205dc36d6c08af7270f7aebac17475037"
-    },
-    {
-      "file": "catalog",
-      "collection": "sources",
-      "record": {
-        "id": "src-c-sale-3",
-        "kind": "official",
-        "url": "https://store.paletteproject.jp/products/fzmyk-goods-20261115",
-        "checkedAt": "2026-11-15T18:09:46Z"
-      },
-      "expectedHash": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
-      "status": "confirmed",
-      "sourceUrl": "https://store.paletteproject.jp/products/fzmyk-goods-20261115",
-      "checkedAt": "2026-11-15T18:14:28.534Z",
-      "evidenceHash": "ef8f47ff761d1bbc7a5d86cc963a1530156f61d0892922093a69b6cbb0e6be7c"
-    },
-    {
-      "file": "catalog",
-      "collection": "sources",
-      "record": {
-        "id": "src-c-sale-4",
-        "kind": "official",
-        "url": "https://store.paletteproject.jp/products/fzmyk-goods-20261115",
-        "checkedAt": "2026-11-15T18:09:46Z"
-      },
-      "expectedHash": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
-      "status": "confirmed",
-      "sourceUrl": "https://store.paletteproject.jp/products/fzmyk-goods-20261115",
-      "checkedAt": "2026-11-15T18:14:28.534Z",
-      "evidenceHash": "af0d4de0f7c1e356f2bf2495b5ad47f5668c19c2722900f8e05e44167febebea"
-    },
-    {
-      "file": "catalog",
-      "collection": "sources",
-      "record": {
-        "id": "src-c-sale-5",
-        "kind": "official",
-        "url": "https://store.paletteproject.jp/products/fzmyk-goods-20261115",
-        "checkedAt": "2026-11-15T18:09:46Z"
-      },
-      "expectedHash": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
-      "status": "confirmed",
-      "sourceUrl": "https://store.paletteproject.jp/products/fzmyk-goods-20261115",
-      "checkedAt": "2026-11-15T18:14:28.534Z",
-      "evidenceHash": "98dab6dac0c85612fc4b5d322a80154ee9cf19eda95810257746ddb6bf72a921"
-    },
-    {
-      "file": "catalog",
-      "collection": "sources",
-      "record": {
-        "id": "src-c-sale-6",
-        "kind": "official",
-        "url": "https://store.paletteproject.jp/products/fzmyk-goods-20261115",
-        "checkedAt": "2026-11-15T18:09:46Z"
-      },
-      "expectedHash": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
-      "status": "confirmed",
-      "sourceUrl": "https://store.paletteproject.jp/products/fzmyk-goods-20261115",
-      "checkedAt": "2026-11-15T18:14:28.534Z",
-      "evidenceHash": "6767f81c2fd3b85c3b7e1cf9263e3804c85c461317cc925f568bc0f272915c5e"
-    },
-    {
-      "file": "catalog",
-      "collection": "sources",
-      "record": {
-        "id": "src-c-sale-7",
-        "kind": "official",
-        "url": "https://paletteproject.booth.pm/items/8803373",
-        "checkedAt": "2026-11-15T18:09:46Z"
-      },
-      "expectedHash": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
-      "status": "confirmed",
-      "sourceUrl": "https://paletteproject.booth.pm/items/8803373",
-      "checkedAt": "2026-11-15T18:14:28.534Z",
-      "evidenceHash": "5c6fbf304af06c27077bee5e074d8b5ff0671ecb745b12b75aa6448d1669aa1c"
-    },
-    {
-      "file": "catalog",
-      "collection": "sources",
-      "record": {
-        "id": "src-c-goods-2",
-        "kind": "official",
-        "url": "https://paletteproject.jp/goods_6th_onemanlive/",
-        "checkedAt": "2026-11-15T18:09:46Z"
-      },
-      "expectedHash": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
-      "status": "confirmed",
-      "sourceUrl": "https://paletteproject.jp/goods_6th_onemanlive/",
-      "checkedAt": "2026-11-15T18:14:28.534Z",
-      "evidenceHash": "61b0b7bc8e0e9188657c8e5a3497b021008f4b15a4aac6446e5681371a588e33"
-    },
-    {
-      "file": "catalog",
-      "collection": "sources",
-      "record": {
-        "id": "src-c-sale-8",
-        "kind": "official",
-        "url": "https://store.paletteproject.jp/collections/pp-goods-ev20261020",
-        "checkedAt": "2026-11-15T18:09:46Z"
-      },
-      "expectedHash": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
-      "status": "confirmed",
-      "sourceUrl": "https://store.paletteproject.jp/collections/pp-goods-ev20261020",
-      "checkedAt": "2026-11-15T18:14:28.534Z",
-      "evidenceHash": "cba471f1cf382670dd470e1f16570485823c6499c429af7652765055ad344c26"
-    },
-    {
-      "file": "catalog",
-      "collection": "sources",
-      "record": {
-        "id": "src-c-sale-9",
-        "kind": "official",
-        "url": "https://store.paletteproject.jp/collections/pp-goods-ev20261020",
-        "checkedAt": "2026-11-15T18:09:46Z"
-      },
-      "expectedHash": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
-      "status": "confirmed",
-      "sourceUrl": "https://store.paletteproject.jp/collections/pp-goods-ev20261020",
-      "checkedAt": "2026-11-15T18:14:28.534Z",
-      "evidenceHash": "402237b038ea309e3fcadab42d527882f2d2ed89474263bac3c60847c2295c8e"
-    },
-    {
-      "file": "catalog",
-      "collection": "sources",
-      "record": {
-        "id": "src-c-sale-10",
-        "kind": "official",
-        "url": "https://store.paletteproject.jp/collections/pp-goods-ev20261020",
-        "checkedAt": "2026-11-15T18:09:46Z"
-      },
-      "expectedHash": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
-      "status": "confirmed",
-      "sourceUrl": "https://store.paletteproject.jp/collections/pp-goods-ev20261020",
-      "checkedAt": "2026-11-15T18:14:28.534Z",
-      "evidenceHash": "e436aed28c02b87c679a15db87adba4c7b34818acf4e931771aa8ac63721147d"
-    },
-    {
-      "file": "catalog",
-      "collection": "sources",
-      "record": {
-        "id": "src-c-sale-11",
-        "kind": "official",
-        "url": "https://store.paletteproject.jp/collections/pp-goods-ev20261020",
-        "checkedAt": "2026-11-15T18:09:46Z"
-      },
-      "expectedHash": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
-      "status": "confirmed",
-      "sourceUrl": "https://store.paletteproject.jp/collections/pp-goods-ev20261020",
-      "checkedAt": "2026-11-15T18:14:28.534Z",
-      "evidenceHash": "d2b4f502e1629b43b0735a3200c9479a201d9cef9869c9f63a1f60b7e49be9c7"
-    },
-    {
-      "file": "catalog",
-      "collection": "sources",
-      "record": {
-        "id": "src-c-sale-12",
-        "kind": "official",
-        "url": "https://store.paletteproject.jp/collections/pp-goods-ev20261020",
-        "checkedAt": "2026-11-15T18:09:46Z"
-      },
-      "expectedHash": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
-      "status": "confirmed",
-      "sourceUrl": "https://store.paletteproject.jp/collections/pp-goods-ev20261020",
-      "checkedAt": "2026-11-15T18:14:28.534Z",
-      "evidenceHash": "2d8e73f1aa2a6853d316145af4a2ccec54c335e0a247489599d8782366170717"
-    },
-    {
-      "file": "catalog",
-      "collection": "sources",
-      "record": {
-        "id": "src-c-sale-13",
-        "kind": "official",
-        "url": "https://store.paletteproject.jp/collections/pp-goods-ev20261020",
-        "checkedAt": "2026-11-15T18:09:46Z"
-      },
-      "expectedHash": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
-      "status": "confirmed",
-      "sourceUrl": "https://store.paletteproject.jp/collections/pp-goods-ev20261020",
-      "checkedAt": "2026-11-15T18:14:28.534Z",
-      "evidenceHash": "f95582e129c4063e576570e1512dbeb9f3aa1b66f98c8726a824ff6ec3691dff"
-    },
-    {
-      "file": "catalog",
-      "collection": "sources",
-      "record": {
-        "id": "src-c-sale-14",
-        "kind": "official",
-        "url": "https://store.paletteproject.jp/collections/pp-goods-ev20261020",
-        "checkedAt": "2026-11-15T18:09:46Z"
-      },
-      "expectedHash": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
-      "status": "confirmed",
-      "sourceUrl": "https://store.paletteproject.jp/collections/pp-goods-ev20261020",
-      "checkedAt": "2026-11-15T18:14:28.534Z",
-      "evidenceHash": "fe39c96c19a73a0ea490ddcdf1647c35d2dd977fb2c359b29df44b1996dba8e5"
-    },
-    {
-      "file": "catalog",
-      "collection": "sources",
-      "record": {
-        "id": "src-c-sale-15",
-        "kind": "official",
-        "url": "https://store.paletteproject.jp/collections/pp-goods-ev20261020",
-        "checkedAt": "2026-11-15T18:09:46Z"
-      },
-      "expectedHash": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
-      "status": "confirmed",
-      "sourceUrl": "https://store.paletteproject.jp/collections/pp-goods-ev20261020",
-      "checkedAt": "2026-11-15T18:14:28.534Z",
-      "evidenceHash": "ad980f9d1ece002b1b50538a37019dfc62bface34647e58d7d14dbca0f7bb7aa"
-    },
-    {
-      "file": "catalog",
-      "collection": "sources",
-      "record": {
-        "id": "src-c-sale-16",
-        "kind": "official",
-        "url": "https://store.paletteproject.jp/collections/pp-goods-ev20261020",
-        "checkedAt": "2026-11-15T18:09:46Z"
-      },
-      "expectedHash": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
-      "status": "confirmed",
-      "sourceUrl": "https://store.paletteproject.jp/collections/pp-goods-ev20261020",
-      "checkedAt": "2026-11-15T18:14:28.534Z",
-      "evidenceHash": "f4d1a909ae72e154f1b143875a6e0a09cf9af581fb54a6b6e107746bbe08cade"
-    },
-    {
-      "file": "catalog",
-      "collection": "sources",
-      "record": {
-        "id": "src-c-sale-17",
-        "kind": "official",
-        "url": "https://store.paletteproject.jp/collections/pp-goods-ev20261020",
-        "checkedAt": "2026-11-15T18:09:46Z"
-      },
-      "expectedHash": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
-      "status": "confirmed",
-      "sourceUrl": "https://store.paletteproject.jp/collections/pp-goods-ev20261020",
-      "checkedAt": "2026-11-15T18:14:28.534Z",
-      "evidenceHash": "114f6bd8c5777ccf3e0179a82af39aa2135c5ab1da42e6720008d8c4156d5452"
-    },
-    {
-      "file": "catalog",
-      "collection": "sources",
-      "record": {
-        "id": "src-c-sale-18",
-        "kind": "official",
-        "url": "https://store.paletteproject.jp/collections/pp-goods-ev20261020",
-        "checkedAt": "2026-11-15T18:09:46Z"
-      },
-      "expectedHash": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
-      "status": "confirmed",
-      "sourceUrl": "https://store.paletteproject.jp/collections/pp-goods-ev20261020",
-      "checkedAt": "2026-11-15T18:14:28.534Z",
-      "evidenceHash": "661ea5764ab78e4fb06744570a98a506f40df9f9f7834ef259d0da153564291c"
-    },
-    {
-      "file": "catalog",
-      "collection": "sources",
-      "record": {
-        "id": "src-c-sale-19",
-        "kind": "official",
-        "url": "https://store.paletteproject.jp/collections/pp-goods-ev20261020",
-        "checkedAt": "2026-11-15T18:09:46Z"
-      },
-      "expectedHash": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
-      "status": "confirmed",
-      "sourceUrl": "https://store.paletteproject.jp/collections/pp-goods-ev20261020",
-      "checkedAt": "2026-11-15T18:14:28.534Z",
-      "evidenceHash": "8b0ab162136f0b7e014e4e5a4fa7bc5f41c9de6a124790929e281651e77862d1"
-    },
-    {
-      "file": "catalog",
-      "collection": "sources",
-      "record": {
-        "id": "src-c-goods-3",
-        "kind": "official",
-        "url": "https://paletteproject.jp/goods_ayumubd2026/",
-        "checkedAt": "2026-11-15T18:09:46Z"
-      },
-      "expectedHash": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
-      "status": "confirmed",
-      "sourceUrl": "https://paletteproject.jp/goods_ayumubd2026/",
-      "checkedAt": "2026-11-15T18:14:28.534Z",
-      "evidenceHash": "300ee0788867922e138099a260d953f116188197ab4e79ea9c86cc6a287ebe11"
-    },
-    {
-      "file": "catalog",
-      "collection": "sources",
-      "record": {
-        "id": "src-c-sale-20",
-        "kind": "official",
-        "url": "https://store.paletteproject.jp/products/ktmay-goods-20260927",
-        "checkedAt": "2026-11-15T18:09:46Z"
-      },
-      "expectedHash": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
-      "status": "confirmed",
-      "sourceUrl": "https://store.paletteproject.jp/products/ktmay-goods-20260927",
-      "checkedAt": "2026-11-15T18:14:28.534Z",
-      "evidenceHash": "7cd3dcefb220cdb0c8187a40c36562c59857934e60370cc04d1b6df31e5acdc8"
-    },
-    {
-      "file": "catalog",
-      "collection": "sources",
-      "record": {
-        "id": "src-c-sale-21",
-        "kind": "official",
-        "url": "https://store.paletteproject.jp/products/ktmay-goods-20260927",
-        "checkedAt": "2026-11-15T18:09:46Z"
-      },
-      "expectedHash": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
-      "status": "confirmed",
-      "sourceUrl": "https://store.paletteproject.jp/products/ktmay-goods-20260927",
-      "checkedAt": "2026-11-15T18:14:28.534Z",
-      "evidenceHash": "d3ae67c090bd01f847ec837ebc13d59824cfd932362a9c3ff5ef6281fa42eca4"
-    },
-    {
-      "file": "catalog",
-      "collection": "sources",
-      "record": {
-        "id": "src-c-sale-22",
-        "kind": "official",
-        "url": "https://store.paletteproject.jp/products/ktmay-goods-20260927",
-        "checkedAt": "2026-11-15T18:09:46Z"
-      },
-      "expectedHash": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
-      "status": "confirmed",
-      "sourceUrl": "https://store.paletteproject.jp/products/ktmay-goods-20260927",
-      "checkedAt": "2026-11-15T18:14:28.534Z",
-      "evidenceHash": "8c8b40b2fcb2c899bdb2995be0d3e256daf97efb87a1ddcd5279b6966d8a3371"
-    },
-    {
-      "file": "catalog",
-      "collection": "sources",
-      "record": {
-        "id": "src-c-sale-23",
-        "kind": "official",
-        "url": "https://store.paletteproject.jp/products/ktmay-goods-20260927",
-        "checkedAt": "2026-11-15T18:09:46Z"
-      },
-      "expectedHash": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
-      "status": "confirmed",
-      "sourceUrl": "https://store.paletteproject.jp/products/ktmay-goods-20260927",
-      "checkedAt": "2026-11-15T18:14:28.534Z",
-      "evidenceHash": "d82f6c637dac9b3700ce071760d1f2bdc82ae6ca372543f2df3785d1e1a173ee"
-    },
-    {
-      "file": "catalog",
-      "collection": "sources",
-      "record": {
-        "id": "src-c-sale-24",
-        "kind": "official",
-        "url": "https://store.paletteproject.jp/products/ktmay-goods-20260927",
-        "checkedAt": "2026-11-15T18:09:46Z"
-      },
-      "expectedHash": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
-      "status": "confirmed",
-      "sourceUrl": "https://store.paletteproject.jp/products/ktmay-goods-20260927",
-      "checkedAt": "2026-11-15T18:14:28.534Z",
-      "evidenceHash": "cf0ef3dcf294fbc656298daf11c3d9a379a1aa65052d76b54f34c34922a9cb0b"
-    },
-    {
-      "file": "catalog",
-      "collection": "sources",
-      "record": {
-        "id": "src-c-sale-25",
-        "kind": "official",
-        "url": "https://store.paletteproject.jp/products/ktmay-goods-20260927",
-        "checkedAt": "2026-11-15T18:09:46Z"
-      },
-      "expectedHash": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
-      "status": "confirmed",
-      "sourceUrl": "https://store.paletteproject.jp/products/ktmay-goods-20260927",
-      "checkedAt": "2026-11-15T18:14:28.534Z",
-      "evidenceHash": "642968703191f9575e44a0f6d3e4b7e45b1c2c11c5185552d99083cd3a2170d3"
-    },
-    {
-      "file": "catalog",
-      "collection": "sources",
-      "record": {
-        "id": "src-c-sale-26",
-        "kind": "official",
-        "url": "https://paletteproject.booth.pm/items/8740582",
-        "checkedAt": "2026-11-15T18:09:46Z"
-      },
-      "expectedHash": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
-      "status": "confirmed",
-      "sourceUrl": "https://paletteproject.booth.pm/items/8740582",
-      "checkedAt": "2026-11-15T18:14:28.534Z",
-      "evidenceHash": "9efde3858951d9ca51caaa0456636b5789f226019963276ef3878e2700c824fb"
-    },
-    {
-      "file": "catalog",
-      "collection": "sources",
-      "record": {
-        "id": "src-c-goods-4",
-        "kind": "official",
-        "url": "https://paletteproject.jp/goods_sputrip6th/",
-        "checkedAt": "2026-11-15T18:09:46Z"
-      },
-      "expectedHash": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
-      "status": "confirmed",
-      "sourceUrl": "https://paletteproject.jp/goods_sputrip6th/",
-      "checkedAt": "2026-11-15T18:14:28.534Z",
-      "evidenceHash": "f596ad032700b6b753aae9c727baba31abd5d294032ef9e7c24e902e06a0b2a1"
-    },
-    {
-      "file": "catalog",
-      "collection": "sources",
-      "record": {
-        "id": "src-c-sale-27",
-        "kind": "official",
-        "url": "https://store.paletteproject.jp/",
-        "checkedAt": "2026-11-15T18:09:46Z"
-      },
-      "expectedHash": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
-      "status": "confirmed",
-      "sourceUrl": "https://store.paletteproject.jp/",
-      "checkedAt": "2026-11-15T18:14:28.534Z",
-      "evidenceHash": "ec186251a7f1b6a1387dd26772b3fda8e8928003d487515b8aeb7a5e6cf39ddf"
-    },
-    {
-      "file": "catalog",
-      "collection": "sources",
-      "record": {
-        "id": "src-c-sale-28",
-        "kind": "official",
-        "url": "https://store.paletteproject.jp/",
-        "checkedAt": "2026-11-15T18:09:46Z"
-      },
-      "expectedHash": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
-      "status": "confirmed",
-      "sourceUrl": "https://store.paletteproject.jp/",
-      "checkedAt": "2026-11-15T18:14:28.534Z",
-      "evidenceHash": "b29c81ddad56520704cd132d677eb7da5594140a09a269cf6bfcceaad0c165dd"
-    },
-    {
-      "file": "catalog",
-      "collection": "sources",
-      "record": {
-        "id": "src-c-sale-29",
-        "kind": "official",
-        "url": "https://store.paletteproject.jp/",
-        "checkedAt": "2026-11-15T18:09:46Z"
-      },
-      "expectedHash": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
-      "status": "confirmed",
-      "sourceUrl": "https://store.paletteproject.jp/",
-      "checkedAt": "2026-11-15T18:14:28.534Z",
-      "evidenceHash": "2dfb7e2431059c330d6d4d0c887fec3afe38be9b8f0a2ab3f529ec56fe140bba"
-    },
-    {
-      "file": "catalog",
-      "collection": "sources",
-      "record": {
-        "id": "src-c-sale-30",
-        "kind": "official",
-        "url": "https://store.paletteproject.jp/",
-        "checkedAt": "2026-11-15T18:09:46Z"
-      },
-      "expectedHash": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
-      "status": "confirmed",
-      "sourceUrl": "https://store.paletteproject.jp/",
-      "checkedAt": "2026-11-15T18:14:28.534Z",
-      "evidenceHash": "03bb20ed2d9dbe4d633fcd3a191016d015ddcb1d8148a19f90426c6cda9b3763"
-    },
-    {
-      "file": "catalog",
-      "collection": "sources",
-      "record": {
-        "id": "src-c-goods-5",
-        "kind": "official",
-        "url": "https://paletteproject.jp/goods_ppnc2026/",
-        "checkedAt": "2026-11-15T18:09:46Z"
-      },
-      "expectedHash": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
-      "status": "confirmed",
-      "sourceUrl": "https://paletteproject.jp/goods_ppnc2026/",
-      "checkedAt": "2026-11-15T18:14:28.534Z",
-      "evidenceHash": "c308e4126899b53e28ef1da8c977c1acff5ba099e5edfbc67ff018b0419bff84"
-    },
-    {
-      "file": "catalog",
-      "collection": "sources",
-      "record": {
-        "id": "src-c-sale-31",
-        "kind": "official",
-        "url": "https://store.paletteproject.jp/",
-        "checkedAt": "2026-11-15T18:09:46Z"
-      },
-      "expectedHash": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
-      "status": "confirmed",
-      "sourceUrl": "https://store.paletteproject.jp/",
-      "checkedAt": "2026-11-15T18:14:28.534Z",
-      "evidenceHash": "52cac7b3e1cc0d29e8c69ad0c6a44c0ade48fc147e653261f1c9034f822d02be"
-    },
-    {
-      "file": "catalog",
-      "collection": "sources",
-      "record": {
-        "id": "src-c-sale-32",
-        "kind": "official",
-        "url": "https://store.paletteproject.jp/",
-        "checkedAt": "2026-11-15T18:09:46Z"
-      },
-      "expectedHash": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
-      "status": "confirmed",
-      "sourceUrl": "https://store.paletteproject.jp/",
-      "checkedAt": "2026-11-15T18:14:28.534Z",
-      "evidenceHash": "805e6c8a4b3d53825b25db36f8b41ac6a6ba4f6768b4869ffade5b55397e321d"
-    },
-    {
-      "file": "catalog",
-      "collection": "sources",
-      "record": {
-        "id": "src-c-goods-6",
-        "kind": "official",
-        "url": "https://paletteproject.jp/goods_bd2026mahalo/",
-        "checkedAt": "2026-11-15T18:09:46Z"
-      },
-      "expectedHash": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
-      "status": "confirmed",
-      "sourceUrl": "https://paletteproject.jp/goods_bd2026mahalo/",
-      "checkedAt": "2026-11-15T18:14:28.535Z",
-      "evidenceHash": "0af5f4b28151fef5b507fe2b2d1f571999c45786be6cba9c11d8dfefa8016472"
-    },
-    {
-      "file": "catalog",
-      "collection": "sources",
-      "record": {
-        "id": "src-c-sale-33",
-        "kind": "official",
-        "url": "https://store.paletteproject.jp/products/ntngm-goods-20260827",
-        "checkedAt": "2026-11-15T18:09:46Z"
-      },
-      "expectedHash": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
-      "status": "confirmed",
-      "sourceUrl": "https://store.paletteproject.jp/products/ntngm-goods-20260827",
-      "checkedAt": "2026-11-15T18:14:28.535Z",
-      "evidenceHash": "120b0605be4f83c6077fd736978d4d030405c6cd9b8717e76dcc0c1f46ac17cd"
-    },
-    {
-      "file": "catalog",
-      "collection": "sources",
-      "record": {
-        "id": "src-c-sale-34",
-        "kind": "official",
-        "url": "https://store.paletteproject.jp/products/ntngm-goods-20260827",
-        "checkedAt": "2026-11-15T18:09:46Z"
-      },
-      "expectedHash": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
-      "status": "confirmed",
-      "sourceUrl": "https://store.paletteproject.jp/products/ntngm-goods-20260827",
-      "checkedAt": "2026-11-15T18:14:28.535Z",
-      "evidenceHash": "c2d40eab2785f17f26058172558dc96a3ffe46d5759614b73fbfb9ac831fa79d"
-    },
-    {
-      "file": "catalog",
-      "collection": "sources",
-      "record": {
-        "id": "src-c-sale-35",
-        "kind": "official",
-        "url": "https://store.paletteproject.jp/products/ntngm-goods-20260827",
-        "checkedAt": "2026-11-15T18:09:46Z"
-      },
-      "expectedHash": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
-      "status": "confirmed",
-      "sourceUrl": "https://store.paletteproject.jp/products/ntngm-goods-20260827",
-      "checkedAt": "2026-11-15T18:14:28.535Z",
-      "evidenceHash": "2daf429e2b5ca70f86511865945c244c77aa140cbf304411d003b43e9b7f3648"
-    },
-    {
-      "file": "catalog",
-      "collection": "sources",
-      "record": {
-        "id": "src-c-sale-36",
-        "kind": "official",
-        "url": "https://store.paletteproject.jp/products/ntngm-goods-20260827",
-        "checkedAt": "2026-11-15T18:09:46Z"
-      },
-      "expectedHash": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
-      "status": "confirmed",
-      "sourceUrl": "https://store.paletteproject.jp/products/ntngm-goods-20260827",
-      "checkedAt": "2026-11-15T18:14:28.535Z",
-      "evidenceHash": "8cdcd286c600463af3f4ed4eb9521393fee84eda52d3c5d519d246402a527329"
-    },
-    {
-      "file": "catalog",
-      "collection": "sources",
-      "record": {
-        "id": "src-c-sale-37",
-        "kind": "official",
-        "url": "https://store.paletteproject.jp/products/ntngm-goods-20260827",
-        "checkedAt": "2026-11-15T18:09:46Z"
-      },
-      "expectedHash": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
-      "status": "confirmed",
-      "sourceUrl": "https://store.paletteproject.jp/products/ntngm-goods-20260827",
-      "checkedAt": "2026-11-15T18:14:28.535Z",
-      "evidenceHash": "e785734c2af37326d9c2f9381ebe1ba82a6e2c6b02cf602c621ecca6b0a36642"
-    },
-    {
-      "file": "catalog",
-      "collection": "sources",
-      "record": {
-        "id": "src-c-sale-38",
-        "kind": "official",
-        "url": "https://store.paletteproject.jp/products/ntngm-goods-20260827",
-        "checkedAt": "2026-11-15T18:09:46Z"
-      },
-      "expectedHash": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
-      "status": "confirmed",
-      "sourceUrl": "https://store.paletteproject.jp/products/ntngm-goods-20260827",
-      "checkedAt": "2026-11-15T18:14:28.535Z",
-      "evidenceHash": "021f3937c1e7a2337f2af185365c821045636c39c65f2dc86a5c7c59c3539e2b"
-    },
-    {
-      "file": "catalog",
-      "collection": "sources",
-      "record": {
-        "id": "src-c-sale-39",
-        "kind": "official",
-        "url": "https://store.paletteproject.jp/products/ntngm-goods-20260827",
-        "checkedAt": "2026-11-15T18:09:46Z"
-      },
-      "expectedHash": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
-      "status": "confirmed",
-      "sourceUrl": "https://store.paletteproject.jp/products/ntngm-goods-20260827",
-      "checkedAt": "2026-11-15T18:14:28.535Z",
-      "evidenceHash": "88b9c9b011633479afb80586217a06057e6d01080739c3c4d131612557feef29"
-    },
-    {
-      "file": "catalog",
-      "collection": "sources",
-      "record": {
-        "id": "src-c-sale-40",
-        "kind": "official",
-        "url": "https://store.paletteproject.jp/products/ntngm-goods-20260827",
-        "checkedAt": "2026-11-15T18:09:46Z"
-      },
-      "expectedHash": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
-      "status": "confirmed",
-      "sourceUrl": "https://store.paletteproject.jp/products/ntngm-goods-20260827",
-      "checkedAt": "2026-11-15T18:14:28.535Z",
-      "evidenceHash": "a49044c7236c89388fad3029443891deaa654ff54c463e5db395ef3c67bdc3e9"
-    },
-    {
-      "file": "catalog",
-      "collection": "sources",
-      "record": {
-        "id": "src-c-sale-41",
-        "kind": "official",
-        "url": "https://paletteproject.booth.pm/items/8736841",
-        "checkedAt": "2026-11-15T18:09:46Z"
-      },
-      "expectedHash": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
-      "status": "confirmed",
-      "sourceUrl": "https://paletteproject.booth.pm/items/8736841",
-      "checkedAt": "2026-11-15T18:14:28.535Z",
-      "evidenceHash": "0012de46517f93d86e8f9a489e7c134e43bae12844f9adc87b3d584fdf56f473"
-    },
-    {
-      "file": "media",
-      "collection": "sources",
-      "record": {
-        "id": "src-c-event-3",
-        "kind": "official",
-        "url": "https://paletteproject.jp/bd2026_kotoha/",
-        "checkedAt": "2026-11-15T18:09:46Z"
-      },
-      "expectedHash": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
-      "status": "confirmed",
-      "sourceUrl": "https://paletteproject.jp/bd2026_kotoha/",
-      "checkedAt": "2026-11-15T18:14:28.536Z",
-      "evidenceHash": "b8da33c34a0be9af86f7921d21fac0865e1b83ff86017b584e74d8b9cf21f1e1"
-    },
-    {
-      "file": "media",
-      "collection": "sources",
-      "record": {
-        "id": "src-c-event-4",
-        "kind": "official",
-        "url": "https://paletteproject.jp/bd2026_ayumu/",
-        "checkedAt": "2026-11-15T18:09:46Z"
-      },
-      "expectedHash": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
-      "status": "confirmed",
-      "sourceUrl": "https://paletteproject.jp/bd2026_ayumu/",
-      "checkedAt": "2026-11-15T18:14:28.536Z",
-      "evidenceHash": "567d920f7976937ca89b2ace8399d2bbef2a7b41d1f224ea8b2bfaf0145522cb"
-    },
-    {
-      "file": "media",
-      "collection": "sources",
-      "record": {
-        "id": "src-c-event-5",
-        "kind": "official",
-        "url": "https://paletteproject.jp/hanon-1st-oneman-live-report/",
-        "checkedAt": "2026-11-15T18:09:46Z"
-      },
-      "expectedHash": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
-      "status": "confirmed",
-      "sourceUrl": "https://paletteproject.jp/hanon-1st-oneman-live-report/",
-      "checkedAt": "2026-11-15T18:14:28.536Z",
-      "evidenceHash": "ea65946631507241543f8ef60afb981eaee53c25ea95bb4e73a07c5b22de11d5"
-    },
-    {
       "file": "goods",
       "collection": "products",
       "record": {
@@ -764,16 +14,11 @@
         "groupIds": [],
         "image": null,
         "identityUrl": "https://paletteproject.jp/goods_kotohabd2026/",
-        "sourceRefs": [
-          "src-c-goods-1"
-        ],
         "visibility": "public"
       },
       "expectedHash": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
       "status": "confirmed",
-      "sourceUrl": "https://paletteproject.jp/goods_kotohabd2026/",
-      "checkedAt": "2026-11-15T18:14:28.537Z",
-      "evidenceHash": "5f1ad83321d194da6875e6c38cfe2e005e313e12022703556993dd39f4fc2bf8"
+      "evidenceHash": "f05574448f53a13a9d3225ae75f66a05e7101c7197159ea16799c5b0e3bd58c9"
     },
     {
       "file": "goods",
@@ -787,16 +32,11 @@
         "groupIds": [],
         "image": null,
         "identityUrl": "https://paletteproject.jp/goods_kotohabd2026/",
-        "sourceRefs": [
-          "src-c-goods-1"
-        ],
         "visibility": "public"
       },
       "expectedHash": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
       "status": "confirmed",
-      "sourceUrl": "https://paletteproject.jp/goods_kotohabd2026/",
-      "checkedAt": "2026-11-15T18:14:28.537Z",
-      "evidenceHash": "07a1c9ec3fd47f2a24b2ff3f3a80523261156e9220fd1c9a4d4f8540635543e5"
+      "evidenceHash": "b29f10724bc43c7187654f397ec5b41731355162e562fae02e6d062add3cc15a"
     },
     {
       "file": "goods",
@@ -810,16 +50,11 @@
         "groupIds": [],
         "image": null,
         "identityUrl": "https://paletteproject.jp/goods_kotohabd2026/",
-        "sourceRefs": [
-          "src-c-goods-1"
-        ],
         "visibility": "public"
       },
       "expectedHash": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
       "status": "confirmed",
-      "sourceUrl": "https://paletteproject.jp/goods_kotohabd2026/",
-      "checkedAt": "2026-11-15T18:14:28.537Z",
-      "evidenceHash": "7d12b922f8fc372000000d7c4e2cd67b5d5af2976f8832f167160aa212c07e0d"
+      "evidenceHash": "4422bb588c15b5572024ef03c704565fb165a5e2f54eae4048326a9fcdef1a52"
     },
     {
       "file": "goods",
@@ -833,16 +68,11 @@
         "groupIds": [],
         "image": null,
         "identityUrl": "https://paletteproject.jp/goods_kotohabd2026/",
-        "sourceRefs": [
-          "src-c-goods-1"
-        ],
         "visibility": "public"
       },
       "expectedHash": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
       "status": "confirmed",
-      "sourceUrl": "https://paletteproject.jp/goods_kotohabd2026/",
-      "checkedAt": "2026-11-15T18:14:28.537Z",
-      "evidenceHash": "2bdd7dfb59bb96e8483897e1a44f5ec6a8e5b01f8b815544d7fb90ef474981ec"
+      "evidenceHash": "8dbdc0bec3cfe3e2f50ffa40aecf3bb1c6a6ed4d71917cd2ddc62ec9920a4f56"
     },
     {
       "file": "goods",
@@ -856,16 +86,11 @@
         "groupIds": [],
         "image": null,
         "identityUrl": "https://paletteproject.jp/goods_kotohabd2026/",
-        "sourceRefs": [
-          "src-c-goods-1"
-        ],
         "visibility": "public"
       },
       "expectedHash": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
       "status": "confirmed",
-      "sourceUrl": "https://paletteproject.jp/goods_kotohabd2026/",
-      "checkedAt": "2026-11-15T18:14:28.537Z",
-      "evidenceHash": "bbe0355a11b8ca3d8195988ed4c1dd14cc5d835610b3051d624561b318f23905"
+      "evidenceHash": "0419f3fd2311af05a9f4e07dbcbbe6212326c168423d6a7fa03c1c1a4c36817a"
     },
     {
       "file": "goods",
@@ -879,16 +104,11 @@
         "groupIds": [],
         "image": null,
         "identityUrl": "https://paletteproject.jp/goods_kotohabd2026/",
-        "sourceRefs": [
-          "src-c-goods-1"
-        ],
         "visibility": "public"
       },
       "expectedHash": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
       "status": "confirmed",
-      "sourceUrl": "https://paletteproject.jp/goods_kotohabd2026/",
-      "checkedAt": "2026-11-15T18:14:28.537Z",
-      "evidenceHash": "2122f96462b69c5973185c6bf5b2a4bce6527c0eef64815ec3760ce542a00610"
+      "evidenceHash": "ed7f509a295351456560469a7d8cb497266eb2d40758b880c58a1f0deaaf3957"
     },
     {
       "file": "goods",
@@ -902,16 +122,11 @@
         "groupIds": [],
         "image": null,
         "identityUrl": "https://paletteproject.jp/goods_kotohabd2026/",
-        "sourceRefs": [
-          "src-c-goods-1"
-        ],
         "visibility": "public"
       },
       "expectedHash": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
       "status": "confirmed",
-      "sourceUrl": "https://paletteproject.jp/goods_kotohabd2026/",
-      "checkedAt": "2026-11-15T18:14:28.537Z",
-      "evidenceHash": "a9472f71bfbaf12cfeb7c1fcc85df29631d1d56af1f02a8d5772a017c3e002a2"
+      "evidenceHash": "ec2de876bff42da80c21dc97ecc165621b7549af6ba730afd8abc8cd642a1add"
     },
     {
       "file": "goods",
@@ -932,16 +147,11 @@
         "groupIds": [],
         "image": null,
         "identityUrl": "https://paletteproject.jp/goods_6th_onemanlive/",
-        "sourceRefs": [
-          "src-c-goods-2"
-        ],
         "visibility": "public"
       },
       "expectedHash": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
       "status": "confirmed",
-      "sourceUrl": "https://paletteproject.jp/goods_6th_onemanlive/",
-      "checkedAt": "2026-11-15T18:14:28.537Z",
-      "evidenceHash": "bd026c52adbda8bf963239e60d1b171a0c3abbfb6cc6d0ddaa048a2b1a29b726"
+      "evidenceHash": "12516ab0a18684fbb430174ef92cd5d7cceca6f03a1e979286575c82f51e9715"
     },
     {
       "file": "goods",
@@ -962,16 +172,11 @@
         "groupIds": [],
         "image": null,
         "identityUrl": "https://paletteproject.jp/goods_6th_onemanlive/",
-        "sourceRefs": [
-          "src-c-goods-2"
-        ],
         "visibility": "public"
       },
       "expectedHash": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
       "status": "confirmed",
-      "sourceUrl": "https://paletteproject.jp/goods_6th_onemanlive/",
-      "checkedAt": "2026-11-15T18:14:28.537Z",
-      "evidenceHash": "68402ea388cf8e09c15cdf92faf5a6887e593cfda5cc17a897fd613c875ebf51"
+      "evidenceHash": "6e784e94af36bcce6b39ffea7eb75f748a615922403023ba909da4e5e38f01e0"
     },
     {
       "file": "goods",
@@ -992,16 +197,11 @@
         "groupIds": [],
         "image": null,
         "identityUrl": "https://paletteproject.jp/goods_6th_onemanlive/",
-        "sourceRefs": [
-          "src-c-goods-2"
-        ],
         "visibility": "public"
       },
       "expectedHash": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
       "status": "confirmed",
-      "sourceUrl": "https://paletteproject.jp/goods_6th_onemanlive/",
-      "checkedAt": "2026-11-15T18:14:28.537Z",
-      "evidenceHash": "948c74f86c4e1944264b91b5c6ab7b222d7871a23b6b389cf58b928637e10ef1"
+      "evidenceHash": "37a34c8049b1ba16987c7f37a0db196aa42caa924ab7bfb09e963b985180b414"
     },
     {
       "file": "goods",
@@ -1022,16 +222,11 @@
         "groupIds": [],
         "image": null,
         "identityUrl": "https://paletteproject.jp/goods_6th_onemanlive/",
-        "sourceRefs": [
-          "src-c-goods-2"
-        ],
         "visibility": "public"
       },
       "expectedHash": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
       "status": "confirmed",
-      "sourceUrl": "https://paletteproject.jp/goods_6th_onemanlive/",
-      "checkedAt": "2026-11-15T18:14:28.537Z",
-      "evidenceHash": "74ee25af4756c8a169fa2f36913fe430719257baddb6fb53f75482b593271fe4"
+      "evidenceHash": "b3e7c757792e5901d740b1558756907c5433b5457fc3e3800387e3452e1d9de5"
     },
     {
       "file": "goods",
@@ -1052,16 +247,11 @@
         "groupIds": [],
         "image": null,
         "identityUrl": "https://paletteproject.jp/goods_6th_onemanlive/",
-        "sourceRefs": [
-          "src-c-goods-2"
-        ],
         "visibility": "public"
       },
       "expectedHash": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
       "status": "confirmed",
-      "sourceUrl": "https://paletteproject.jp/goods_6th_onemanlive/",
-      "checkedAt": "2026-11-15T18:14:28.537Z",
-      "evidenceHash": "6fe2809ffe8c53c4453dae5768d43fe00d2196c328c084bbd066184eb91d8482"
+      "evidenceHash": "1f147790371654e42ed26dcc04594c9e6520cdcfa8df7fe7aa413a391c4a323a"
     },
     {
       "file": "goods",
@@ -1082,16 +272,11 @@
         "groupIds": [],
         "image": null,
         "identityUrl": "https://paletteproject.jp/goods_6th_onemanlive/",
-        "sourceRefs": [
-          "src-c-goods-2"
-        ],
         "visibility": "public"
       },
       "expectedHash": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
       "status": "confirmed",
-      "sourceUrl": "https://paletteproject.jp/goods_6th_onemanlive/",
-      "checkedAt": "2026-11-15T18:14:28.537Z",
-      "evidenceHash": "d55e5fa20b46e697e18ac41e07baea4132a529cc7158cb90557f22c2d7bf648a"
+      "evidenceHash": "53f6948bcf1c848f8013b000d70d39a8ad4668238818815ec8a52d8a8cb437ac"
     },
     {
       "file": "goods",
@@ -1112,16 +297,11 @@
         "groupIds": [],
         "image": null,
         "identityUrl": "https://paletteproject.jp/goods_6th_onemanlive/",
-        "sourceRefs": [
-          "src-c-goods-2"
-        ],
         "visibility": "public"
       },
       "expectedHash": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
       "status": "confirmed",
-      "sourceUrl": "https://paletteproject.jp/goods_6th_onemanlive/",
-      "checkedAt": "2026-11-15T18:14:28.537Z",
-      "evidenceHash": "a2ed379a838418fc5026db9266665a175b44708018e3c65373a3af8e16a71fad"
+      "evidenceHash": "b7e92bed88a7225b394e00fc0cc5a6ca8b2e68e07307af3aef3a0b04359bd509"
     },
     {
       "file": "goods",
@@ -1142,16 +322,11 @@
         "groupIds": [],
         "image": null,
         "identityUrl": "https://paletteproject.jp/goods_6th_onemanlive/",
-        "sourceRefs": [
-          "src-c-goods-2"
-        ],
         "visibility": "public"
       },
       "expectedHash": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
       "status": "confirmed",
-      "sourceUrl": "https://paletteproject.jp/goods_6th_onemanlive/",
-      "checkedAt": "2026-11-15T18:14:28.537Z",
-      "evidenceHash": "8a0e328c5f7bb2515d2ec7b8b1af5f2f6adf637d9b79b9d86f58601a25e7e468"
+      "evidenceHash": "2f948ebf3544d58541ff9a8056b4e23d3c9dc26a3bc8f226b1a8f23b72e4a5df"
     },
     {
       "file": "goods",
@@ -1172,16 +347,11 @@
         "groupIds": [],
         "image": null,
         "identityUrl": "https://paletteproject.jp/goods_6th_onemanlive/",
-        "sourceRefs": [
-          "src-c-goods-2"
-        ],
         "visibility": "public"
       },
       "expectedHash": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
       "status": "confirmed",
-      "sourceUrl": "https://paletteproject.jp/goods_6th_onemanlive/",
-      "checkedAt": "2026-11-15T18:14:28.537Z",
-      "evidenceHash": "d39e838c2e4e56b7848f9b261f16025fe2df426dcf9874d3c90fb107a1183eaa"
+      "evidenceHash": "bcba0bb12e3b3b246629ca8ec94504c1b3b85630fde84051b2662aa6922ef4de"
     },
     {
       "file": "goods",
@@ -1202,16 +372,11 @@
         "groupIds": [],
         "image": null,
         "identityUrl": "https://paletteproject.jp/goods_6th_onemanlive/",
-        "sourceRefs": [
-          "src-c-goods-2"
-        ],
         "visibility": "public"
       },
       "expectedHash": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
       "status": "confirmed",
-      "sourceUrl": "https://paletteproject.jp/goods_6th_onemanlive/",
-      "checkedAt": "2026-11-15T18:14:28.537Z",
-      "evidenceHash": "811507f27f139637099bd7f0afe4fa0ead9f17e0ed0a447734cf8e6507c42af3"
+      "evidenceHash": "dab73b3e5e2103ef0292e3d7abacabc33a28daa2eb6626413164031b8754ff75"
     },
     {
       "file": "goods",
@@ -1232,16 +397,11 @@
         "groupIds": [],
         "image": null,
         "identityUrl": "https://paletteproject.jp/goods_6th_onemanlive/",
-        "sourceRefs": [
-          "src-c-goods-2"
-        ],
         "visibility": "public"
       },
       "expectedHash": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
       "status": "confirmed",
-      "sourceUrl": "https://paletteproject.jp/goods_6th_onemanlive/",
-      "checkedAt": "2026-11-15T18:14:28.537Z",
-      "evidenceHash": "9b27ce222ec7491421ea65bcb06bfc9aea505837fd29944df537c2e12297a1f0"
+      "evidenceHash": "5a7561cdd97a43f522a41b7a974b4608f38e9cbade1b22f0ae4a045c047d5498"
     },
     {
       "file": "goods",
@@ -1262,16 +422,11 @@
         "groupIds": [],
         "image": null,
         "identityUrl": "https://paletteproject.jp/goods_6th_onemanlive/",
-        "sourceRefs": [
-          "src-c-goods-2"
-        ],
         "visibility": "public"
       },
       "expectedHash": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
       "status": "confirmed",
-      "sourceUrl": "https://paletteproject.jp/goods_6th_onemanlive/",
-      "checkedAt": "2026-11-15T18:14:28.537Z",
-      "evidenceHash": "07fe2fd60449c083e9dc11feb75515ddc6b0bd6dad5478a489b949dbaa804e6d"
+      "evidenceHash": "c0e92a75d0444908c39586c13c536a7758a72bf4f5f4d07d8f3b32c923be8e7e"
     },
     {
       "file": "goods",
@@ -1285,16 +440,11 @@
         "groupIds": [],
         "image": null,
         "identityUrl": "https://paletteproject.jp/goods_ayumubd2026/",
-        "sourceRefs": [
-          "src-c-goods-3"
-        ],
         "visibility": "public"
       },
       "expectedHash": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
       "status": "confirmed",
-      "sourceUrl": "https://paletteproject.jp/goods_ayumubd2026/",
-      "checkedAt": "2026-11-15T18:14:28.537Z",
-      "evidenceHash": "791154da8243860c1bf0f48fab3da7b8beb60a87072b3879915487532bf29d95"
+      "evidenceHash": "a534220ca95498900d6acbacdc4ea03e838d57418445396475a49e85189f6460"
     },
     {
       "file": "goods",
@@ -1308,16 +458,11 @@
         "groupIds": [],
         "image": null,
         "identityUrl": "https://paletteproject.jp/goods_ayumubd2026/",
-        "sourceRefs": [
-          "src-c-goods-3"
-        ],
         "visibility": "public"
       },
       "expectedHash": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
       "status": "confirmed",
-      "sourceUrl": "https://paletteproject.jp/goods_ayumubd2026/",
-      "checkedAt": "2026-11-15T18:14:28.537Z",
-      "evidenceHash": "eb76c7b2f8860fd83e99d52ba108db259e4e14588a45bc60954a6e9a5fbee54e"
+      "evidenceHash": "41aeeaddee7b40a96784da5cb1298532dd08fe6a9736d54206667252381e240a"
     },
     {
       "file": "goods",
@@ -1331,16 +476,11 @@
         "groupIds": [],
         "image": null,
         "identityUrl": "https://paletteproject.jp/goods_ayumubd2026/",
-        "sourceRefs": [
-          "src-c-goods-3"
-        ],
         "visibility": "public"
       },
       "expectedHash": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
       "status": "confirmed",
-      "sourceUrl": "https://paletteproject.jp/goods_ayumubd2026/",
-      "checkedAt": "2026-11-15T18:14:28.537Z",
-      "evidenceHash": "28c6f26389f8bb33368f8c1f2d8a0bdd7de6b261a58834f04177cf81dac65e56"
+      "evidenceHash": "f9fdc5064597e14179c79d920a667e56d59e33f51cee5f03d2b9f321ce4652d4"
     },
     {
       "file": "goods",
@@ -1354,16 +494,11 @@
         "groupIds": [],
         "image": null,
         "identityUrl": "https://paletteproject.jp/goods_ayumubd2026/",
-        "sourceRefs": [
-          "src-c-goods-3"
-        ],
         "visibility": "public"
       },
       "expectedHash": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
       "status": "confirmed",
-      "sourceUrl": "https://paletteproject.jp/goods_ayumubd2026/",
-      "checkedAt": "2026-11-15T18:14:28.537Z",
-      "evidenceHash": "8d180c96dba0729eeee1aff4262f63d388f50031f92184010f27e2f302bf5b60"
+      "evidenceHash": "42041e110deaf68d2c371fb52ea544d7728588d7d8a9045969481e5fac42b336"
     },
     {
       "file": "goods",
@@ -1377,16 +512,11 @@
         "groupIds": [],
         "image": null,
         "identityUrl": "https://paletteproject.jp/goods_ayumubd2026/",
-        "sourceRefs": [
-          "src-c-goods-3"
-        ],
         "visibility": "public"
       },
       "expectedHash": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
       "status": "confirmed",
-      "sourceUrl": "https://paletteproject.jp/goods_ayumubd2026/",
-      "checkedAt": "2026-11-15T18:14:28.537Z",
-      "evidenceHash": "ae62b659e25e112c0a2c37ea558469a34f4a9d1b7d3dd29f7166414f3a6c6de0"
+      "evidenceHash": "4591280d3503b486bcbf0cf5add48a66b6f72108dcbc6269ac79db9995e465f6"
     },
     {
       "file": "goods",
@@ -1400,16 +530,11 @@
         "groupIds": [],
         "image": null,
         "identityUrl": "https://paletteproject.jp/goods_ayumubd2026/",
-        "sourceRefs": [
-          "src-c-goods-3"
-        ],
         "visibility": "public"
       },
       "expectedHash": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
       "status": "confirmed",
-      "sourceUrl": "https://paletteproject.jp/goods_ayumubd2026/",
-      "checkedAt": "2026-11-15T18:14:28.537Z",
-      "evidenceHash": "38a3a7050f137a22c3d7a391c701c7e9b69410051d5c69b2869dd191c588fde1"
+      "evidenceHash": "80cae2f78d465c1bdf4b94e576821b79521008f9a225a31036201c0c28490e5e"
     },
     {
       "file": "goods",
@@ -1423,16 +548,11 @@
         "groupIds": [],
         "image": null,
         "identityUrl": "https://paletteproject.jp/goods_ayumubd2026/",
-        "sourceRefs": [
-          "src-c-goods-3"
-        ],
         "visibility": "public"
       },
       "expectedHash": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
       "status": "confirmed",
-      "sourceUrl": "https://paletteproject.jp/goods_ayumubd2026/",
-      "checkedAt": "2026-11-15T18:14:28.537Z",
-      "evidenceHash": "63c425a33e4be3075382f8c5c2c94affc4071ba369d55330a5293467b9154cbc"
+      "evidenceHash": "f5ae8bf4810b7fb9ad7aaa3ef84ca31c9f57f994a48fbefc72d70de4d8d4f8f7"
     },
     {
       "file": "goods",
@@ -1446,16 +566,11 @@
         ],
         "image": null,
         "identityUrl": "https://paletteproject.jp/goods_sputrip6th/",
-        "sourceRefs": [
-          "src-c-goods-4"
-        ],
         "visibility": "public"
       },
       "expectedHash": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
       "status": "confirmed",
-      "sourceUrl": "https://paletteproject.jp/goods_sputrip6th/",
-      "checkedAt": "2026-11-15T18:14:28.537Z",
-      "evidenceHash": "366447c930dc1eccfbb907e4ae5df5ab2c3e6fd62dfb71e1da517f7df23ad1eb"
+      "evidenceHash": "a429c554171ce1ee0cde069e836eaff3febbd3a7eee1d66e19494beb6eb59260"
     },
     {
       "file": "goods",
@@ -1469,16 +584,11 @@
         ],
         "image": null,
         "identityUrl": "https://paletteproject.jp/goods_sputrip6th/",
-        "sourceRefs": [
-          "src-c-goods-4"
-        ],
         "visibility": "public"
       },
       "expectedHash": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
       "status": "confirmed",
-      "sourceUrl": "https://paletteproject.jp/goods_sputrip6th/",
-      "checkedAt": "2026-11-15T18:14:28.537Z",
-      "evidenceHash": "e26d47aec1e4b3f017383c02e1f83bf9d8dbf7ede6aceb15e84c8142ca8b484a"
+      "evidenceHash": "8303224423f0ba9e827c62bd09248c1690af76fab23420e4ea2c0d12e2c6e554"
     },
     {
       "file": "goods",
@@ -1492,16 +602,11 @@
         ],
         "image": null,
         "identityUrl": "https://paletteproject.jp/goods_sputrip6th/",
-        "sourceRefs": [
-          "src-c-goods-4"
-        ],
         "visibility": "public"
       },
       "expectedHash": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
       "status": "confirmed",
-      "sourceUrl": "https://paletteproject.jp/goods_sputrip6th/",
-      "checkedAt": "2026-11-15T18:14:28.537Z",
-      "evidenceHash": "cf2ba7062c76c831ed7525da4e4912476571e5b0b96169c0c75d58f17dbd013f"
+      "evidenceHash": "1fedaeeb48818f024198a7a6ef5f3a5d9080b5ea54702a70abe4d8ac93ea04a3"
     },
     {
       "file": "goods",
@@ -1515,16 +620,11 @@
         ],
         "image": null,
         "identityUrl": "https://paletteproject.jp/goods_sputrip6th/",
-        "sourceRefs": [
-          "src-c-goods-4"
-        ],
         "visibility": "public"
       },
       "expectedHash": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
       "status": "confirmed",
-      "sourceUrl": "https://paletteproject.jp/goods_sputrip6th/",
-      "checkedAt": "2026-11-15T18:14:28.537Z",
-      "evidenceHash": "058c603ff80cd949a2e367f61e1f0a79291c1d8d14795fc42e71bf6005a945b7"
+      "evidenceHash": "364a95dfc24c4afc554e92d497c851da30e925186a60ee14affeb7d23300d798"
     },
     {
       "file": "goods",
@@ -1545,16 +645,11 @@
         "groupIds": [],
         "image": null,
         "identityUrl": "https://paletteproject.jp/goods_ppnc2026/",
-        "sourceRefs": [
-          "src-c-goods-5"
-        ],
         "visibility": "public"
       },
       "expectedHash": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
       "status": "confirmed",
-      "sourceUrl": "https://paletteproject.jp/goods_ppnc2026/",
-      "checkedAt": "2026-11-15T18:14:28.537Z",
-      "evidenceHash": "23e41646ffb81c2ed71e0a595cc3ace21d7b0bd5937c233a75bdffa388929001"
+      "evidenceHash": "63e109f5907dc8cebbd8154d916c077b80d334a11dd12ae0bf0b1e8e64ebdf4d"
     },
     {
       "file": "goods",
@@ -1575,16 +670,11 @@
         "groupIds": [],
         "image": null,
         "identityUrl": "https://paletteproject.jp/goods_ppnc2026/",
-        "sourceRefs": [
-          "src-c-goods-5"
-        ],
         "visibility": "public"
       },
       "expectedHash": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
       "status": "confirmed",
-      "sourceUrl": "https://paletteproject.jp/goods_ppnc2026/",
-      "checkedAt": "2026-11-15T18:14:28.537Z",
-      "evidenceHash": "77ca13f856bdea12422aa2d81de001ad9c8b5719064d70de672daf5176e2f959"
+      "evidenceHash": "0bdd420976432ded2ad133dfa7072a3c9e4608e30d39c61d7ce8a25cae58da3d"
     },
     {
       "file": "goods",
@@ -1598,16 +688,11 @@
         "groupIds": [],
         "image": null,
         "identityUrl": "https://paletteproject.jp/goods_bd2026mahalo/",
-        "sourceRefs": [
-          "src-c-goods-6"
-        ],
         "visibility": "public"
       },
       "expectedHash": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
       "status": "confirmed",
-      "sourceUrl": "https://paletteproject.jp/goods_bd2026mahalo/",
-      "checkedAt": "2026-11-15T18:14:28.537Z",
-      "evidenceHash": "858f332784c2e6b6ddb418fbfd076da470e7af4c3e58bb7b4579855a38ee5386"
+      "evidenceHash": "bd88662df1a172d382b55aa3c19b7edb3602abaa5c1884c72e8604bc3109bd4e"
     },
     {
       "file": "goods",
@@ -1621,16 +706,11 @@
         "groupIds": [],
         "image": null,
         "identityUrl": "https://paletteproject.jp/goods_bd2026mahalo/",
-        "sourceRefs": [
-          "src-c-goods-6"
-        ],
         "visibility": "public"
       },
       "expectedHash": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
       "status": "confirmed",
-      "sourceUrl": "https://paletteproject.jp/goods_bd2026mahalo/",
-      "checkedAt": "2026-11-15T18:14:28.538Z",
-      "evidenceHash": "39cf3f4f9847ab8485d55c6a92c0903d04f1418f732a2c936c120c048761b5b5"
+      "evidenceHash": "31a7cd852ac64c89b93e46b0cdd4f0d897abbe1f9db43b0ea2941e4f53488293"
     },
     {
       "file": "goods",
@@ -1644,16 +724,11 @@
         "groupIds": [],
         "image": null,
         "identityUrl": "https://paletteproject.jp/goods_bd2026mahalo/",
-        "sourceRefs": [
-          "src-c-goods-6"
-        ],
         "visibility": "public"
       },
       "expectedHash": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
       "status": "confirmed",
-      "sourceUrl": "https://paletteproject.jp/goods_bd2026mahalo/",
-      "checkedAt": "2026-11-15T18:14:28.538Z",
-      "evidenceHash": "8f06c86251174c9c51e824b3ebb06680f7db46f73862036f2c8bd1080d5ae5f4"
+      "evidenceHash": "38e91a39cf64c247a33524146f26d424f26887b71c829117457f9638926bb904"
     },
     {
       "file": "goods",
@@ -1667,16 +742,11 @@
         "groupIds": [],
         "image": null,
         "identityUrl": "https://paletteproject.jp/goods_bd2026mahalo/",
-        "sourceRefs": [
-          "src-c-goods-6"
-        ],
         "visibility": "public"
       },
       "expectedHash": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
       "status": "confirmed",
-      "sourceUrl": "https://paletteproject.jp/goods_bd2026mahalo/",
-      "checkedAt": "2026-11-15T18:14:28.538Z",
-      "evidenceHash": "fbcd99b1ea6cbff52bea0f82f41b9c044f478ba150448d5cc845e153e7f9a7c9"
+      "evidenceHash": "ac63456d179ec2b70c38ee4dd9380a37c3862e69a2a7222acdd821930b8d2988"
     },
     {
       "file": "goods",
@@ -1690,16 +760,11 @@
         "groupIds": [],
         "image": null,
         "identityUrl": "https://paletteproject.jp/goods_bd2026mahalo/",
-        "sourceRefs": [
-          "src-c-goods-6"
-        ],
         "visibility": "public"
       },
       "expectedHash": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
       "status": "confirmed",
-      "sourceUrl": "https://paletteproject.jp/goods_bd2026mahalo/",
-      "checkedAt": "2026-11-15T18:14:28.538Z",
-      "evidenceHash": "19d6588cb5c2556c4b74309c5374dac3e6662a23ed8c44f6846097ef660451de"
+      "evidenceHash": "e0191928c6a0b9efc99183de05110e535dac51aabdf82c4582d869c9509cdfc2"
     },
     {
       "file": "goods",
@@ -1713,16 +778,11 @@
         "groupIds": [],
         "image": null,
         "identityUrl": "https://paletteproject.jp/goods_bd2026mahalo/",
-        "sourceRefs": [
-          "src-c-goods-6"
-        ],
         "visibility": "public"
       },
       "expectedHash": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
       "status": "confirmed",
-      "sourceUrl": "https://paletteproject.jp/goods_bd2026mahalo/",
-      "checkedAt": "2026-11-15T18:14:28.538Z",
-      "evidenceHash": "5e91290d3cfc147a9bbf2b8e6958188e2dd096dedb28890e6b973d56a2880b8a"
+      "evidenceHash": "2f5c34770845b1344989c829e2bf4be3021d192a2843ae7820ccafddacdf4f36"
     },
     {
       "file": "goods",
@@ -1736,16 +796,11 @@
         "groupIds": [],
         "image": null,
         "identityUrl": "https://paletteproject.jp/goods_bd2026mahalo/",
-        "sourceRefs": [
-          "src-c-goods-6"
-        ],
         "visibility": "public"
       },
       "expectedHash": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
       "status": "confirmed",
-      "sourceUrl": "https://paletteproject.jp/goods_bd2026mahalo/",
-      "checkedAt": "2026-11-15T18:14:28.538Z",
-      "evidenceHash": "76af943f2468283ff9f08c379b91443b635a26d529d9d44e3f83353686fc9263"
+      "evidenceHash": "d5fabada3f96e6a2a0f9a17a52a32779ecd84b2998194c42f18790484f0ab421"
     },
     {
       "file": "goods",
@@ -1759,16 +814,11 @@
         "groupIds": [],
         "image": null,
         "identityUrl": "https://paletteproject.jp/goods_bd2026mahalo/",
-        "sourceRefs": [
-          "src-c-goods-6"
-        ],
         "visibility": "public"
       },
       "expectedHash": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
       "status": "confirmed",
-      "sourceUrl": "https://paletteproject.jp/goods_bd2026mahalo/",
-      "checkedAt": "2026-11-15T18:14:28.538Z",
-      "evidenceHash": "dde61bbfd207e129f0773ab6b885452a536af2c4b9cd7f52540edd65cafd8242"
+      "evidenceHash": "184dbd293c6528eb582390ae16a070932cf7d3a49e69b4af6b053ebc586c6cb4"
     },
     {
       "file": "goods",
@@ -1782,16 +832,11 @@
         "groupIds": [],
         "image": null,
         "identityUrl": "https://paletteproject.jp/goods_bd2026mahalo/",
-        "sourceRefs": [
-          "src-c-goods-6"
-        ],
         "visibility": "public"
       },
       "expectedHash": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
       "status": "confirmed",
-      "sourceUrl": "https://paletteproject.jp/goods_bd2026mahalo/",
-      "checkedAt": "2026-11-15T18:14:28.538Z",
-      "evidenceHash": "7a460c5dc2a8dccfa7a69f290d8f0d9de982bb66547b968048bb19f7d087a771"
+      "evidenceHash": "15870ae9bd3609a2470aa56cf67e694bf241a0402b0c9141eea5dda107b75207"
     },
     {
       "file": "goods",
@@ -1799,16 +844,11 @@
       "record": {
         "id": "campaign-000001",
         "title": "藤宮コトハ誕生日2026",
-        "sourceRefs": [
-          "src-c-goods-1"
-        ],
         "visibility": "public"
       },
       "expectedHash": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
       "status": "confirmed",
-      "sourceUrl": "https://paletteproject.jp/goods_kotohabd2026/",
-      "checkedAt": "2026-11-15T18:14:28.538Z",
-      "evidenceHash": "c493956bc6794308f6b91d06dcabe913b88994189a4e5dac70149c273353dcd6"
+      "evidenceHash": "3263c7a17f6d16b8ad49173155f1a7825792a8c9e6f12b0facd7cd23e7346e3e"
     },
     {
       "file": "goods",
@@ -1816,16 +856,11 @@
       "record": {
         "id": "campaign-000002",
         "title": "Palette Project 6thワンマンライブ",
-        "sourceRefs": [
-          "src-c-goods-2"
-        ],
         "visibility": "public"
       },
       "expectedHash": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
       "status": "confirmed",
-      "sourceUrl": "https://paletteproject.jp/goods_6th_onemanlive/",
-      "checkedAt": "2026-11-15T18:14:28.538Z",
-      "evidenceHash": "d55918ad10065b74f682e26343016e20950e28de10bf68d66a6b6d4f98d88914"
+      "evidenceHash": "3148a68a30c0571a0bfb3a51e4f163866c98d773a0bb4bc2cca2ccf71bda9ae4"
     },
     {
       "file": "goods",
@@ -1833,16 +868,11 @@
       "record": {
         "id": "campaign-000003",
         "title": "鬼多見アユム誕生日2026",
-        "sourceRefs": [
-          "src-c-goods-3"
-        ],
         "visibility": "public"
       },
       "expectedHash": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
       "status": "confirmed",
-      "sourceUrl": "https://paletteproject.jp/goods_ayumubd2026/",
-      "checkedAt": "2026-11-15T18:14:28.538Z",
-      "evidenceHash": "251c239e1b922a45afa95024b166266ffabcdc13d8d0e86148613e5463a8f3da"
+      "evidenceHash": "7cf7fff3fe0caf24ba512e28d58e9097991078451ae89ae238373ac94351a133"
     },
     {
       "file": "goods",
@@ -1850,16 +880,11 @@
       "record": {
         "id": "campaign-000004",
         "title": "Sputrip6周年",
-        "sourceRefs": [
-          "src-c-goods-4"
-        ],
         "visibility": "public"
       },
       "expectedHash": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
       "status": "confirmed",
-      "sourceUrl": "https://paletteproject.jp/goods_sputrip6th/",
-      "checkedAt": "2026-11-15T18:14:28.538Z",
-      "evidenceHash": "ca9170a490e162a59af27d59ce091028ea97f9e03f31908ad053d16c6b4aa772"
+      "evidenceHash": "95353e99d6e21d7b5dc6f4ae178a62d4f0b3616434a9566420206e622ee98ad1"
     },
     {
       "file": "goods",
@@ -1867,16 +892,11 @@
       "record": {
         "id": "campaign-000005",
         "title": "Palette Project-Canvas-",
-        "sourceRefs": [
-          "src-c-goods-5"
-        ],
         "visibility": "public"
       },
       "expectedHash": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
       "status": "confirmed",
-      "sourceUrl": "https://paletteproject.jp/goods_ppnc2026/",
-      "checkedAt": "2026-11-15T18:14:28.538Z",
-      "evidenceHash": "1c5ba52ae1f5373df1b20211fdb1cf76e387afdab864ff670cf2cca32b644ea5"
+      "evidenceHash": "9b70436bb3a7ea4443c00fcd4986ed6c7ccef1d8dfd2fec6357b6e3c1e79feaf"
     },
     {
       "file": "goods",
@@ -1884,16 +904,11 @@
       "record": {
         "id": "campaign-000006",
         "title": "夏渚まはろ誕生日2026",
-        "sourceRefs": [
-          "src-c-goods-6"
-        ],
         "visibility": "public"
       },
       "expectedHash": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
       "status": "confirmed",
-      "sourceUrl": "https://paletteproject.jp/goods_bd2026mahalo/",
-      "checkedAt": "2026-11-15T18:14:28.538Z",
-      "evidenceHash": "0c06e7ef4906844ced92a06827b99ad82a7a8212fb4bef6dde4bec2c075fcb15"
+      "evidenceHash": "3a0a57723361c09050eae0778e752326391bf3ac8617b9a2653aa068f2e2cf65"
     },
     {
       "file": "goods",
@@ -1911,17 +926,11 @@
         "periodNote": "公式告知記載の税込価格・受注期間。在庫と現在の受付状態は未確認。",
         "url": "https://store.paletteproject.jp/products/fzmyk-goods-20261115",
         "status": "unknown",
-        "sourceRefs": [
-          "src-c-goods-1",
-          "src-c-sale-1"
-        ],
         "visibility": "public"
       },
       "expectedHash": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
       "status": "confirmed",
-      "sourceUrl": "https://store.paletteproject.jp/products/fzmyk-goods-20261115",
-      "checkedAt": "2026-11-15T18:14:28.538Z",
-      "evidenceHash": "0c51874c741c87f243bc31148e1d3695868d57c1ffed04c2869090659eb8eaf4"
+      "evidenceHash": "4a0cef0cb23bc105ce0d4a67d1147088e260c1e112b1e510c578da2d3296cd15"
     },
     {
       "file": "goods",
@@ -1939,17 +948,11 @@
         "periodNote": "公式告知記載の税込価格・受注期間。在庫と現在の受付状態は未確認。",
         "url": "https://store.paletteproject.jp/products/fzmyk-goods-20261115",
         "status": "unknown",
-        "sourceRefs": [
-          "src-c-goods-1",
-          "src-c-sale-2"
-        ],
         "visibility": "public"
       },
       "expectedHash": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
       "status": "confirmed",
-      "sourceUrl": "https://store.paletteproject.jp/products/fzmyk-goods-20261115",
-      "checkedAt": "2026-11-15T18:14:28.538Z",
-      "evidenceHash": "c3f1a2e047eb8aae12051d272f53156e7a3ad61c76d39f91776e10bac7844510"
+      "evidenceHash": "4eb7b29e4752833af881bc515136084c0b1c08d0db95d7a628ff55cbb35662a7"
     },
     {
       "file": "goods",
@@ -1967,17 +970,11 @@
         "periodNote": "公式告知記載の税込価格・受注期間。在庫と現在の受付状態は未確認。",
         "url": "https://store.paletteproject.jp/products/fzmyk-goods-20261115",
         "status": "unknown",
-        "sourceRefs": [
-          "src-c-goods-1",
-          "src-c-sale-3"
-        ],
         "visibility": "public"
       },
       "expectedHash": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
       "status": "confirmed",
-      "sourceUrl": "https://store.paletteproject.jp/products/fzmyk-goods-20261115",
-      "checkedAt": "2026-11-15T18:14:28.538Z",
-      "evidenceHash": "d42183b645e752e8ce2150afc24614fb2bd6bf5b03d2c67967df1e49a41491fe"
+      "evidenceHash": "8f8386e27aaa3b2edf4efc98368fae9c323e2fa210c6ecb4289c1d46121d2e8e"
     },
     {
       "file": "goods",
@@ -1995,17 +992,11 @@
         "periodNote": "公式告知記載の税込価格・受注期間。在庫と現在の受付状態は未確認。",
         "url": "https://store.paletteproject.jp/products/fzmyk-goods-20261115",
         "status": "unknown",
-        "sourceRefs": [
-          "src-c-goods-1",
-          "src-c-sale-4"
-        ],
         "visibility": "public"
       },
       "expectedHash": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
       "status": "confirmed",
-      "sourceUrl": "https://store.paletteproject.jp/products/fzmyk-goods-20261115",
-      "checkedAt": "2026-11-15T18:14:28.538Z",
-      "evidenceHash": "3b3bedcb397f728c139fe742906f0c6a8fb8b448100290c4c636c582d8c4ee4e"
+      "evidenceHash": "0caf3f9aa387653713b9a8738c9d71b4fa0752efa0518d33c2ca6424553ace91"
     },
     {
       "file": "goods",
@@ -2023,17 +1014,11 @@
         "periodNote": "公式告知記載の税込価格・受注期間。在庫と現在の受付状態は未確認。",
         "url": "https://store.paletteproject.jp/products/fzmyk-goods-20261115",
         "status": "unknown",
-        "sourceRefs": [
-          "src-c-goods-1",
-          "src-c-sale-5"
-        ],
         "visibility": "public"
       },
       "expectedHash": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
       "status": "confirmed",
-      "sourceUrl": "https://store.paletteproject.jp/products/fzmyk-goods-20261115",
-      "checkedAt": "2026-11-15T18:14:28.538Z",
-      "evidenceHash": "243352b8e7adfd6737ef1cbbc600b1492d1fba1114e926dfc4d0fed850c03a7a"
+      "evidenceHash": "b22408d22c42fea6ef21f429ce0320d1ffc2c5d9ac9d8ef65ef1c623dfbc0f3a"
     },
     {
       "file": "goods",
@@ -2051,17 +1036,11 @@
         "periodNote": "公式告知記載の税込価格・受注期間。在庫と現在の受付状態は未確認。",
         "url": "https://store.paletteproject.jp/products/fzmyk-goods-20261115",
         "status": "unknown",
-        "sourceRefs": [
-          "src-c-goods-1",
-          "src-c-sale-6"
-        ],
         "visibility": "public"
       },
       "expectedHash": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
       "status": "confirmed",
-      "sourceUrl": "https://store.paletteproject.jp/products/fzmyk-goods-20261115",
-      "checkedAt": "2026-11-15T18:14:28.538Z",
-      "evidenceHash": "2e78598d55fcdbd5b91ec938319f7eddb2de531b13429548bc15b27ef2d26b7d"
+      "evidenceHash": "a3366afb9732f61e997f137022c587792fad1c0286a05b2f7ae9b3ccf4da163c"
     },
     {
       "file": "goods",
@@ -2079,17 +1058,11 @@
         "periodNote": "公式告知記載の税込価格・受注期間。在庫と現在の受付状態は未確認。",
         "url": "https://paletteproject.booth.pm/items/8803373",
         "status": "unknown",
-        "sourceRefs": [
-          "src-c-goods-1",
-          "src-c-sale-7"
-        ],
         "visibility": "public"
       },
       "expectedHash": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
       "status": "confirmed",
-      "sourceUrl": "https://paletteproject.booth.pm/items/8803373",
-      "checkedAt": "2026-11-15T18:14:28.538Z",
-      "evidenceHash": "179918f16cd50467b7fe4acf258a96f833e01d3712aa56ef6580cbe2096afcdb"
+      "evidenceHash": "f9f373717b095469e256595e5d8e5d150c4ae7438884b9900b0468379a66510d"
     },
     {
       "file": "goods",
@@ -2107,17 +1080,11 @@
         "periodNote": "公式告知記載の税込価格・受注期間。在庫と現在の受付状態は未確認。",
         "url": "https://store.paletteproject.jp/collections/pp-goods-ev20261020",
         "status": "unknown",
-        "sourceRefs": [
-          "src-c-goods-2",
-          "src-c-sale-8"
-        ],
         "visibility": "public"
       },
       "expectedHash": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
       "status": "confirmed",
-      "sourceUrl": "https://store.paletteproject.jp/collections/pp-goods-ev20261020",
-      "checkedAt": "2026-11-15T18:14:28.538Z",
-      "evidenceHash": "6366d394e93add71c9473820e85d8ca490576d1b4efefebcbcbb5d21c5618f50"
+      "evidenceHash": "f998bf05ec07c347025846c322d34faadd13c6c26bfa139239dda9d5d7fa9664"
     },
     {
       "file": "goods",
@@ -2135,17 +1102,11 @@
         "periodNote": "公式告知記載の税込価格・受注期間。在庫と現在の受付状態は未確認。",
         "url": "https://store.paletteproject.jp/collections/pp-goods-ev20261020",
         "status": "unknown",
-        "sourceRefs": [
-          "src-c-goods-2",
-          "src-c-sale-9"
-        ],
         "visibility": "public"
       },
       "expectedHash": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
       "status": "confirmed",
-      "sourceUrl": "https://store.paletteproject.jp/collections/pp-goods-ev20261020",
-      "checkedAt": "2026-11-15T18:14:28.538Z",
-      "evidenceHash": "0ccb0f9f6ee12fcbfd86dc8cab6d13f7758d12a7dfb1f8823cd2aa332a414060"
+      "evidenceHash": "0e72148f0bf99f97a77fb174dfd75da607452367b529883cd6fa7d308696d08e"
     },
     {
       "file": "goods",
@@ -2163,17 +1124,11 @@
         "periodNote": "公式告知記載の税込価格・受注期間。在庫と現在の受付状態は未確認。",
         "url": "https://store.paletteproject.jp/collections/pp-goods-ev20261020",
         "status": "unknown",
-        "sourceRefs": [
-          "src-c-goods-2",
-          "src-c-sale-10"
-        ],
         "visibility": "public"
       },
       "expectedHash": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
       "status": "confirmed",
-      "sourceUrl": "https://store.paletteproject.jp/collections/pp-goods-ev20261020",
-      "checkedAt": "2026-11-15T18:14:28.538Z",
-      "evidenceHash": "6b6f0eea3c62d64c848419e2c04060447f08f6b3aa7deef666a1f436c9f51be3"
+      "evidenceHash": "1bb0e2e1a772c5573fbed35804abbd968ad8f9145c8cdc5251466d625c4cb259"
     },
     {
       "file": "goods",
@@ -2191,17 +1146,11 @@
         "periodNote": "公式告知記載の税込価格・受注期間。在庫と現在の受付状態は未確認。",
         "url": "https://store.paletteproject.jp/collections/pp-goods-ev20261020",
         "status": "unknown",
-        "sourceRefs": [
-          "src-c-goods-2",
-          "src-c-sale-11"
-        ],
         "visibility": "public"
       },
       "expectedHash": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
       "status": "confirmed",
-      "sourceUrl": "https://store.paletteproject.jp/collections/pp-goods-ev20261020",
-      "checkedAt": "2026-11-15T18:14:28.538Z",
-      "evidenceHash": "b9d71501617ea5d730abd0f86525c9de8a28d91b8ea578cc41d24d6ff5566305"
+      "evidenceHash": "5edc39bffb788834d13043b3fceb9280e9162af76f9cb07943561d872d5093a3"
     },
     {
       "file": "goods",
@@ -2219,17 +1168,11 @@
         "periodNote": "公式告知記載の税込価格・受注期間。在庫と現在の受付状態は未確認。",
         "url": "https://store.paletteproject.jp/collections/pp-goods-ev20261020",
         "status": "unknown",
-        "sourceRefs": [
-          "src-c-goods-2",
-          "src-c-sale-12"
-        ],
         "visibility": "public"
       },
       "expectedHash": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
       "status": "confirmed",
-      "sourceUrl": "https://store.paletteproject.jp/collections/pp-goods-ev20261020",
-      "checkedAt": "2026-11-15T18:14:28.538Z",
-      "evidenceHash": "95d3aad1a7be2fc50d2e3af1ff76e6b7b759195899e1fbf718d7d1cf3e99d94f"
+      "evidenceHash": "80538e6da3355f66d3ef615490c29b8df2bf948a16ecc77d932da35dc12616a0"
     },
     {
       "file": "goods",
@@ -2247,17 +1190,11 @@
         "periodNote": "公式告知記載の税込価格・受注期間。在庫と現在の受付状態は未確認。",
         "url": "https://store.paletteproject.jp/collections/pp-goods-ev20261020",
         "status": "unknown",
-        "sourceRefs": [
-          "src-c-goods-2",
-          "src-c-sale-13"
-        ],
         "visibility": "public"
       },
       "expectedHash": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
       "status": "confirmed",
-      "sourceUrl": "https://store.paletteproject.jp/collections/pp-goods-ev20261020",
-      "checkedAt": "2026-11-15T18:14:28.538Z",
-      "evidenceHash": "f60d49feae0953e420b484cad52381e56d6bac90203f3172b106433056ffdb06"
+      "evidenceHash": "7a4fb3f4f1f7566c1354d4ad81f4c64a336c06d9a5beef04f0d227124f247260"
     },
     {
       "file": "goods",
@@ -2275,17 +1212,11 @@
         "periodNote": "公式告知記載の税込価格・受注期間。在庫と現在の受付状態は未確認。",
         "url": "https://store.paletteproject.jp/collections/pp-goods-ev20261020",
         "status": "unknown",
-        "sourceRefs": [
-          "src-c-goods-2",
-          "src-c-sale-14"
-        ],
         "visibility": "public"
       },
       "expectedHash": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
       "status": "confirmed",
-      "sourceUrl": "https://store.paletteproject.jp/collections/pp-goods-ev20261020",
-      "checkedAt": "2026-11-15T18:14:28.538Z",
-      "evidenceHash": "4b46ca188a9f4cd07756ba860ea89a94fe27679f201a4bfa0aef66ecaa1a697b"
+      "evidenceHash": "fe8d071425f7000ff838c361fcd4766cb01b197da2b88ff5e782409228fd5f11"
     },
     {
       "file": "goods",
@@ -2303,17 +1234,11 @@
         "periodNote": "公式告知記載の税込価格・受注期間。在庫と現在の受付状態は未確認。",
         "url": "https://store.paletteproject.jp/collections/pp-goods-ev20261020",
         "status": "unknown",
-        "sourceRefs": [
-          "src-c-goods-2",
-          "src-c-sale-15"
-        ],
         "visibility": "public"
       },
       "expectedHash": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
       "status": "confirmed",
-      "sourceUrl": "https://store.paletteproject.jp/collections/pp-goods-ev20261020",
-      "checkedAt": "2026-11-15T18:14:28.538Z",
-      "evidenceHash": "19c63093fc2f39baf5d496356214050cbc63c9e55bbe9ace514c666d8165c611"
+      "evidenceHash": "0b97dc61919b0a07c3241cf3f3b1e9b87a391163060899ca3189426e52eeeeea"
     },
     {
       "file": "goods",
@@ -2331,17 +1256,11 @@
         "periodNote": "公式告知記載の税込価格・受注期間。在庫と現在の受付状態は未確認。",
         "url": "https://store.paletteproject.jp/collections/pp-goods-ev20261020",
         "status": "unknown",
-        "sourceRefs": [
-          "src-c-goods-2",
-          "src-c-sale-16"
-        ],
         "visibility": "public"
       },
       "expectedHash": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
       "status": "confirmed",
-      "sourceUrl": "https://store.paletteproject.jp/collections/pp-goods-ev20261020",
-      "checkedAt": "2026-11-15T18:14:28.538Z",
-      "evidenceHash": "437a781a9936b0a928c486d2f5169bd7beb035eb28431f10d5a7bff5261d7868"
+      "evidenceHash": "0a6c14d2b448d5ac4c06f00e90231dd01bb124f159bb610c7a9e2c67d1908303"
     },
     {
       "file": "goods",
@@ -2359,17 +1278,11 @@
         "periodNote": "公式告知記載の税込価格・受注期間。在庫と現在の受付状態は未確認。",
         "url": "https://store.paletteproject.jp/collections/pp-goods-ev20261020",
         "status": "unknown",
-        "sourceRefs": [
-          "src-c-goods-2",
-          "src-c-sale-17"
-        ],
         "visibility": "public"
       },
       "expectedHash": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
       "status": "confirmed",
-      "sourceUrl": "https://store.paletteproject.jp/collections/pp-goods-ev20261020",
-      "checkedAt": "2026-11-15T18:14:28.538Z",
-      "evidenceHash": "f951ef673fe511838f289724d7c421c3289aafc63958f6bc16e68de60eb08dd4"
+      "evidenceHash": "71410d767d0fa3e78af4a30a7e9ca04a12bc13bc6eb6816bcb38c7b6b1bfcf19"
     },
     {
       "file": "goods",
@@ -2387,17 +1300,11 @@
         "periodNote": "公式告知記載の税込価格・受注期間。在庫と現在の受付状態は未確認。",
         "url": "https://store.paletteproject.jp/collections/pp-goods-ev20261020",
         "status": "unknown",
-        "sourceRefs": [
-          "src-c-goods-2",
-          "src-c-sale-18"
-        ],
         "visibility": "public"
       },
       "expectedHash": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
       "status": "confirmed",
-      "sourceUrl": "https://store.paletteproject.jp/collections/pp-goods-ev20261020",
-      "checkedAt": "2026-11-15T18:14:28.538Z",
-      "evidenceHash": "e034a5b511a32ef7083331b221c345bce277352a288d209ed8c51dd9c4f27efb"
+      "evidenceHash": "2091e57dec75a953d4c2701b74ddc7d6a932a68922ca7aa8fe33f8bd3c80cb4d"
     },
     {
       "file": "goods",
@@ -2415,17 +1322,11 @@
         "periodNote": "公式告知記載の税込価格・受注期間。在庫と現在の受付状態は未確認。",
         "url": "https://store.paletteproject.jp/collections/pp-goods-ev20261020",
         "status": "unknown",
-        "sourceRefs": [
-          "src-c-goods-2",
-          "src-c-sale-19"
-        ],
         "visibility": "public"
       },
       "expectedHash": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
       "status": "confirmed",
-      "sourceUrl": "https://store.paletteproject.jp/collections/pp-goods-ev20261020",
-      "checkedAt": "2026-11-15T18:14:28.538Z",
-      "evidenceHash": "1d9b8f1162eb24369862a43b985341e44329e0771e11e7ee62499965fddbffdf"
+      "evidenceHash": "5870cc6dcf4289ae82f7fb0e9a29fc2ac1e661a870c843b7ae0f9d7f50c97156"
     },
     {
       "file": "goods",
@@ -2443,17 +1344,11 @@
         "periodNote": "公式告知記載の税込価格・受注期間。在庫と現在の受付状態は未確認。",
         "url": "https://store.paletteproject.jp/products/ktmay-goods-20260927",
         "status": "unknown",
-        "sourceRefs": [
-          "src-c-goods-3",
-          "src-c-sale-20"
-        ],
         "visibility": "public"
       },
       "expectedHash": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
       "status": "confirmed",
-      "sourceUrl": "https://store.paletteproject.jp/products/ktmay-goods-20260927",
-      "checkedAt": "2026-11-15T18:14:28.538Z",
-      "evidenceHash": "3356cd43f1557c998dad9a1060bd28ecc8dda3fd25e72fd57f747f74ce4fe0e1"
+      "evidenceHash": "aefbb97e845b4fc4c4fed09523a9e2e9b732fbf5486f20fae9f55e65447b88a2"
     },
     {
       "file": "goods",
@@ -2471,17 +1366,11 @@
         "periodNote": "公式告知記載の税込価格・受注期間。在庫と現在の受付状態は未確認。",
         "url": "https://store.paletteproject.jp/products/ktmay-goods-20260927",
         "status": "unknown",
-        "sourceRefs": [
-          "src-c-goods-3",
-          "src-c-sale-21"
-        ],
         "visibility": "public"
       },
       "expectedHash": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
       "status": "confirmed",
-      "sourceUrl": "https://store.paletteproject.jp/products/ktmay-goods-20260927",
-      "checkedAt": "2026-11-15T18:14:28.538Z",
-      "evidenceHash": "08569b4c2df3012d2d2d5ecdb8276321d5894d42342553b56a7d10a85b608cda"
+      "evidenceHash": "64a4bff36fbfb93feda1db6cf2b508a733359992910fd2f4591141c22c57de5b"
     },
     {
       "file": "goods",
@@ -2499,17 +1388,11 @@
         "periodNote": "公式告知記載の税込価格・受注期間。在庫と現在の受付状態は未確認。",
         "url": "https://store.paletteproject.jp/products/ktmay-goods-20260927",
         "status": "unknown",
-        "sourceRefs": [
-          "src-c-goods-3",
-          "src-c-sale-22"
-        ],
         "visibility": "public"
       },
       "expectedHash": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
       "status": "confirmed",
-      "sourceUrl": "https://store.paletteproject.jp/products/ktmay-goods-20260927",
-      "checkedAt": "2026-11-15T18:14:28.538Z",
-      "evidenceHash": "0a1d2723e64e23ee9047f54fe20a2dd2a192235b9e7766ccd1276326cedd4a2e"
+      "evidenceHash": "ab0dd94be8dea5efd7240f257bb30fb9f116382ba98c0d3632993d10a79a5488"
     },
     {
       "file": "goods",
@@ -2527,17 +1410,11 @@
         "periodNote": "公式告知記載の税込価格・受注期間。在庫と現在の受付状態は未確認。",
         "url": "https://store.paletteproject.jp/products/ktmay-goods-20260927",
         "status": "unknown",
-        "sourceRefs": [
-          "src-c-goods-3",
-          "src-c-sale-23"
-        ],
         "visibility": "public"
       },
       "expectedHash": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
       "status": "confirmed",
-      "sourceUrl": "https://store.paletteproject.jp/products/ktmay-goods-20260927",
-      "checkedAt": "2026-11-15T18:14:28.539Z",
-      "evidenceHash": "b1f3c02b991e493f27eb17f2f58b71f80e2cad401bee23caaa2211e0722dd0a1"
+      "evidenceHash": "1753be755612a12eb358e0687a5ca451521dd6c5f59b614fea7094941ea719c0"
     },
     {
       "file": "goods",
@@ -2555,17 +1432,11 @@
         "periodNote": "公式告知記載の税込価格・受注期間。在庫と現在の受付状態は未確認。",
         "url": "https://store.paletteproject.jp/products/ktmay-goods-20260927",
         "status": "unknown",
-        "sourceRefs": [
-          "src-c-goods-3",
-          "src-c-sale-24"
-        ],
         "visibility": "public"
       },
       "expectedHash": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
       "status": "confirmed",
-      "sourceUrl": "https://store.paletteproject.jp/products/ktmay-goods-20260927",
-      "checkedAt": "2026-11-15T18:14:28.539Z",
-      "evidenceHash": "341fdb8a58e7d92ba870196756c442bd052635d8f2d42c6fa11568c6d21644f1"
+      "evidenceHash": "1d0e24b38d19eb5ce3ceff94e5b05d383eb0f27db8500d1797f70f96a44ddd45"
     },
     {
       "file": "goods",
@@ -2583,17 +1454,11 @@
         "periodNote": "公式告知記載の税込価格・受注期間。在庫と現在の受付状態は未確認。",
         "url": "https://store.paletteproject.jp/products/ktmay-goods-20260927",
         "status": "unknown",
-        "sourceRefs": [
-          "src-c-goods-3",
-          "src-c-sale-25"
-        ],
         "visibility": "public"
       },
       "expectedHash": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
       "status": "confirmed",
-      "sourceUrl": "https://store.paletteproject.jp/products/ktmay-goods-20260927",
-      "checkedAt": "2026-11-15T18:14:28.539Z",
-      "evidenceHash": "8e69e63d512ef991f40a7bcfb41104640c0a372e2bfec0a897788c46cf330952"
+      "evidenceHash": "71056051ce72a5ef4050bb62a3527d1f4ac93addbdc9d91d13b4c9a45b00b1b8"
     },
     {
       "file": "goods",
@@ -2611,17 +1476,11 @@
         "periodNote": "公式告知記載の税込価格・受注期間。在庫と現在の受付状態は未確認。",
         "url": "https://paletteproject.booth.pm/items/8740582",
         "status": "unknown",
-        "sourceRefs": [
-          "src-c-goods-3",
-          "src-c-sale-26"
-        ],
         "visibility": "public"
       },
       "expectedHash": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
       "status": "confirmed",
-      "sourceUrl": "https://paletteproject.booth.pm/items/8740582",
-      "checkedAt": "2026-11-15T18:14:28.539Z",
-      "evidenceHash": "818b4ee500973ba04bd82581d12fa9d3fdfe1cae4941de43e4b37c74fb815015"
+      "evidenceHash": "071ae206156db5a80067edce641e0c3c157dc28ebac4751b3cd8ba2f60eba088"
     },
     {
       "file": "goods",
@@ -2639,17 +1498,11 @@
         "periodNote": "公式告知記載の税込価格・受注期間。在庫と現在の受付状態は未確認。",
         "url": "https://store.paletteproject.jp/",
         "status": "unknown",
-        "sourceRefs": [
-          "src-c-goods-4",
-          "src-c-sale-27"
-        ],
         "visibility": "public"
       },
       "expectedHash": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
       "status": "confirmed",
-      "sourceUrl": "https://store.paletteproject.jp/",
-      "checkedAt": "2026-11-15T18:14:28.539Z",
-      "evidenceHash": "4fd64e5eb46ecea270d49f724346f505c43049be1fa102cfc1df85c3f53c1e4f"
+      "evidenceHash": "4ab50c43fe33e444d6c39f8fbd78fa523fa6295923aaffa4282f83ceacf75572"
     },
     {
       "file": "goods",
@@ -2667,17 +1520,11 @@
         "periodNote": "公式告知記載の税込価格・受注期間。在庫と現在の受付状態は未確認。",
         "url": "https://store.paletteproject.jp/",
         "status": "unknown",
-        "sourceRefs": [
-          "src-c-goods-4",
-          "src-c-sale-28"
-        ],
         "visibility": "public"
       },
       "expectedHash": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
       "status": "confirmed",
-      "sourceUrl": "https://store.paletteproject.jp/",
-      "checkedAt": "2026-11-15T18:14:28.539Z",
-      "evidenceHash": "9e085cd5421552b3c569aa3fe707b7ff77d951527041e0da745359af3600fc7d"
+      "evidenceHash": "306b7fc76a7f4e8c5d7677802ca8f3637b1ca805ea83a513a3e84ef1c93654e4"
     },
     {
       "file": "goods",
@@ -2695,17 +1542,11 @@
         "periodNote": "公式告知記載の税込価格・受注期間。在庫と現在の受付状態は未確認。",
         "url": "https://store.paletteproject.jp/",
         "status": "unknown",
-        "sourceRefs": [
-          "src-c-goods-4",
-          "src-c-sale-29"
-        ],
         "visibility": "public"
       },
       "expectedHash": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
       "status": "confirmed",
-      "sourceUrl": "https://store.paletteproject.jp/",
-      "checkedAt": "2026-11-15T18:14:28.539Z",
-      "evidenceHash": "c4fe3ddb5551305b26fec7c474ede8c0d5f5630f2c071618f32383292953435c"
+      "evidenceHash": "35d11aea88c85bcb9f69afbe5714f9cde17ab850852cd4bba8102f8f9e7ecfd0"
     },
     {
       "file": "goods",
@@ -2723,17 +1564,11 @@
         "periodNote": "公式告知記載の税込価格・受注期間。在庫と現在の受付状態は未確認。",
         "url": "https://store.paletteproject.jp/",
         "status": "unknown",
-        "sourceRefs": [
-          "src-c-goods-4",
-          "src-c-sale-30"
-        ],
         "visibility": "public"
       },
       "expectedHash": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
       "status": "confirmed",
-      "sourceUrl": "https://store.paletteproject.jp/",
-      "checkedAt": "2026-11-15T18:14:28.539Z",
-      "evidenceHash": "798270d03ea0bcf1437d4c79f293935b5d691c0fd6463cff5bf7587ff297ba42"
+      "evidenceHash": "964aeadf97cc849a31c3a7841ff1c5071fdcd5c579e0156dbfb376ab9e4b046f"
     },
     {
       "file": "goods",
@@ -2751,17 +1586,11 @@
         "periodNote": "公式告知記載の税込価格・受注期間。在庫と現在の受付状態は未確認。",
         "url": "https://store.paletteproject.jp/",
         "status": "unknown",
-        "sourceRefs": [
-          "src-c-goods-5",
-          "src-c-sale-31"
-        ],
         "visibility": "public"
       },
       "expectedHash": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
       "status": "confirmed",
-      "sourceUrl": "https://store.paletteproject.jp/",
-      "checkedAt": "2026-11-15T18:14:28.539Z",
-      "evidenceHash": "87fa1ad19d08d72ac9cf81aae96b01680bd16cbbe2c054f8c8bc199c1864fdbf"
+      "evidenceHash": "ebb0830b284233745d4cbef3b85c4d08b32467f9875d88bbb4af45721e137a5c"
     },
     {
       "file": "goods",
@@ -2779,17 +1608,11 @@
         "periodNote": "公式告知記載の税込価格・受注期間。在庫と現在の受付状態は未確認。",
         "url": "https://store.paletteproject.jp/",
         "status": "unknown",
-        "sourceRefs": [
-          "src-c-goods-5",
-          "src-c-sale-32"
-        ],
         "visibility": "public"
       },
       "expectedHash": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
       "status": "confirmed",
-      "sourceUrl": "https://store.paletteproject.jp/",
-      "checkedAt": "2026-11-15T18:14:28.539Z",
-      "evidenceHash": "04f6b012d9363ba409f254a5f8dd20acf56b5db26ec7ddb131ae22493aab256f"
+      "evidenceHash": "414b31244472e1d6b1141220d6dcf329a48c807c0defd8c9b722ab8640c0d0c8"
     },
     {
       "file": "goods",
@@ -2807,17 +1630,11 @@
         "periodNote": "公式告知記載の税込価格・受注期間。在庫と現在の受付状態は未確認。",
         "url": "https://store.paletteproject.jp/products/ntngm-goods-20260827",
         "status": "unknown",
-        "sourceRefs": [
-          "src-c-goods-6",
-          "src-c-sale-33"
-        ],
         "visibility": "public"
       },
       "expectedHash": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
       "status": "confirmed",
-      "sourceUrl": "https://store.paletteproject.jp/products/ntngm-goods-20260827",
-      "checkedAt": "2026-11-15T18:14:28.539Z",
-      "evidenceHash": "a6987ce7b842a73f87c1013b0a020d6a0631a990bc88e6533c654f0c48c48c91"
+      "evidenceHash": "f7e04d88c56c36c34eb3c9891295975efbe85cddb3d1c4eb246b17e40bbbd993"
     },
     {
       "file": "goods",
@@ -2835,17 +1652,11 @@
         "periodNote": "公式告知記載の税込価格・受注期間。在庫と現在の受付状態は未確認。",
         "url": "https://store.paletteproject.jp/products/ntngm-goods-20260827",
         "status": "unknown",
-        "sourceRefs": [
-          "src-c-goods-6",
-          "src-c-sale-34"
-        ],
         "visibility": "public"
       },
       "expectedHash": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
       "status": "confirmed",
-      "sourceUrl": "https://store.paletteproject.jp/products/ntngm-goods-20260827",
-      "checkedAt": "2026-11-15T18:14:28.539Z",
-      "evidenceHash": "8a221237f02a5aa89581fb76be7c3bbfda917d2e09571fc170fd5364534b17d4"
+      "evidenceHash": "24120901044d3a433f9a6cc4b02f40b40d619ec25397cb05c41de02863fbf18d"
     },
     {
       "file": "goods",
@@ -2863,17 +1674,11 @@
         "periodNote": "公式告知記載の税込価格・受注期間。在庫と現在の受付状態は未確認。",
         "url": "https://store.paletteproject.jp/products/ntngm-goods-20260827",
         "status": "unknown",
-        "sourceRefs": [
-          "src-c-goods-6",
-          "src-c-sale-35"
-        ],
         "visibility": "public"
       },
       "expectedHash": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
       "status": "confirmed",
-      "sourceUrl": "https://store.paletteproject.jp/products/ntngm-goods-20260827",
-      "checkedAt": "2026-11-15T18:14:28.539Z",
-      "evidenceHash": "41ae721ced6cbe65180d3734a8735b2e0d3da2b7e992236eedb8b85e0900a2c8"
+      "evidenceHash": "4fbf05e41caa5222a1d702b28302ef8c498c96d7299ef12b924701ab2aaf711f"
     },
     {
       "file": "goods",
@@ -2891,17 +1696,11 @@
         "periodNote": "公式告知記載の税込価格・受注期間。在庫と現在の受付状態は未確認。",
         "url": "https://store.paletteproject.jp/products/ntngm-goods-20260827",
         "status": "unknown",
-        "sourceRefs": [
-          "src-c-goods-6",
-          "src-c-sale-36"
-        ],
         "visibility": "public"
       },
       "expectedHash": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
       "status": "confirmed",
-      "sourceUrl": "https://store.paletteproject.jp/products/ntngm-goods-20260827",
-      "checkedAt": "2026-11-15T18:14:28.539Z",
-      "evidenceHash": "8050ac8be97a00181c5ed66ecc48092933533943a43c1e8d6673e94204e7b61b"
+      "evidenceHash": "9b2a9db55558849ac5185c150895d485a5a7c477944676e86ad5d4d9dcd78639"
     },
     {
       "file": "goods",
@@ -2919,17 +1718,11 @@
         "periodNote": "公式告知記載の税込価格・受注期間。在庫と現在の受付状態は未確認。",
         "url": "https://store.paletteproject.jp/products/ntngm-goods-20260827",
         "status": "unknown",
-        "sourceRefs": [
-          "src-c-goods-6",
-          "src-c-sale-37"
-        ],
         "visibility": "public"
       },
       "expectedHash": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
       "status": "confirmed",
-      "sourceUrl": "https://store.paletteproject.jp/products/ntngm-goods-20260827",
-      "checkedAt": "2026-11-15T18:14:28.539Z",
-      "evidenceHash": "108bf49fb9ca5e7f22da15373474d2e7845e8ef692b673ccadc330bf9feea7fa"
+      "evidenceHash": "5047b9c6d663c7e83910e949852bb74e1d5bab67c9d63045854f472cd8adb601"
     },
     {
       "file": "goods",
@@ -2947,17 +1740,11 @@
         "periodNote": "公式告知記載の税込価格・受注期間。在庫と現在の受付状態は未確認。",
         "url": "https://store.paletteproject.jp/products/ntngm-goods-20260827",
         "status": "unknown",
-        "sourceRefs": [
-          "src-c-goods-6",
-          "src-c-sale-38"
-        ],
         "visibility": "public"
       },
       "expectedHash": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
       "status": "confirmed",
-      "sourceUrl": "https://store.paletteproject.jp/products/ntngm-goods-20260827",
-      "checkedAt": "2026-11-15T18:14:28.539Z",
-      "evidenceHash": "9b6f2f7ab9dda39f9c022f47c0096db25d36046471e2409f43e4279258323ce3"
+      "evidenceHash": "b6f03b55e6c6ad75bc370e5fb0fadd17df80d2d00a6ccf1b23133b960acac2e0"
     },
     {
       "file": "goods",
@@ -2975,17 +1762,11 @@
         "periodNote": "公式告知記載の税込価格・受注期間。在庫と現在の受付状態は未確認。",
         "url": "https://store.paletteproject.jp/products/ntngm-goods-20260827",
         "status": "unknown",
-        "sourceRefs": [
-          "src-c-goods-6",
-          "src-c-sale-39"
-        ],
         "visibility": "public"
       },
       "expectedHash": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
       "status": "confirmed",
-      "sourceUrl": "https://store.paletteproject.jp/products/ntngm-goods-20260827",
-      "checkedAt": "2026-11-15T18:14:28.539Z",
-      "evidenceHash": "4ce694d0cecfcc41eb741a54a7d877a7f34efc6578834880a856e902ee280615"
+      "evidenceHash": "d30ee3f172ad4ea6a8f32fa5882b5cebf7f512d15efa3ae0ad921380f8c085b3"
     },
     {
       "file": "goods",
@@ -3003,17 +1784,11 @@
         "periodNote": "公式告知記載の税込価格・受注期間。在庫と現在の受付状態は未確認。",
         "url": "https://store.paletteproject.jp/products/ntngm-goods-20260827",
         "status": "unknown",
-        "sourceRefs": [
-          "src-c-goods-6",
-          "src-c-sale-40"
-        ],
         "visibility": "public"
       },
       "expectedHash": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
       "status": "confirmed",
-      "sourceUrl": "https://store.paletteproject.jp/products/ntngm-goods-20260827",
-      "checkedAt": "2026-11-15T18:14:28.539Z",
-      "evidenceHash": "41ee682f0a98089bda1022e4644b49133fb8484fe42944b00ff6cc583376dd75"
+      "evidenceHash": "eb8113bc8e64baa60d30a6002b3f6684618d0dc1ade667ea7d682bf47842033f"
     },
     {
       "file": "goods",
@@ -3031,17 +1806,11 @@
         "periodNote": "公式告知記載の税込価格・受注期間。在庫と現在の受付状態は未確認。",
         "url": "https://paletteproject.booth.pm/items/8736841",
         "status": "unknown",
-        "sourceRefs": [
-          "src-c-goods-6",
-          "src-c-sale-41"
-        ],
         "visibility": "public"
       },
       "expectedHash": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
       "status": "confirmed",
-      "sourceUrl": "https://paletteproject.booth.pm/items/8736841",
-      "checkedAt": "2026-11-15T18:14:28.539Z",
-      "evidenceHash": "8bc7aa5264364a9bc78b02282f3ed30eeeb854444ee706a16ccbcace97e65eb6"
+      "evidenceHash": "d5b373fc545e6fcbebb927c41541370dd3c81d1b04bff0f3b7e457007abea196"
     },
     {
       "file": "events",
@@ -3082,16 +1851,11 @@
           "currency": null,
           "note": "料金未確認"
         },
-        "summary": "公式告知の開催情報。終了時刻は未確認。",
-        "sourceRefs": [
-          "src-c-event-3"
-        ]
+        "summary": "公式告知の開催情報。終了時刻は未確認。"
       },
       "expectedHash": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
       "status": "confirmed",
-      "sourceUrl": "https://paletteproject.jp/bd2026_kotoha/",
-      "checkedAt": "2026-11-15T18:14:28.539Z",
-      "evidenceHash": "a33c637e28e93c49d6e553c1685d5f2dd0f2ea014647b3dace2f678c8b87efc1"
+      "evidenceHash": "781f1414b4d4396f096a6e3f54fc0c5738692f9ded36ea90037a7ac7169d67ee"
     },
     {
       "file": "events",
@@ -3132,16 +1896,11 @@
           "currency": null,
           "note": "料金未確認"
         },
-        "summary": "公式告知の開催情報。終了時刻は未確認。",
-        "sourceRefs": [
-          "src-c-event-4"
-        ]
+        "summary": "公式告知の開催情報。終了時刻は未確認。"
       },
       "expectedHash": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
       "status": "confirmed",
-      "sourceUrl": "https://paletteproject.jp/bd2026_ayumu/",
-      "checkedAt": "2026-11-15T18:14:28.540Z",
-      "evidenceHash": "c422c9233c5f9c328e7fe2698f04e984ada437241706450d2288c11aa2f5200b"
+      "evidenceHash": "8a700078dd19f582544de3ef423458562f99e2cf90a19283c7bd0d8f87e387cb"
     },
     {
       "file": "events",
@@ -3180,17 +1939,12 @@
           "currency": null,
           "note": "料金未確認"
         },
-        "summary": "公式開催レポートで実施日・会場を確認。開始・終了時刻は未確認。",
-        "sourceRefs": [
-          "src-c-event-5"
-        ]
+        "summary": "公式開催レポートで実施日・会場を確認。開始・終了時刻は未確認。"
       },
       "expectedHash": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
       "status": "confirmed",
-      "sourceUrl": "https://paletteproject.jp/hanon-1st-oneman-live-report/",
-      "checkedAt": "2026-11-15T18:14:28.540Z",
-      "evidenceHash": "ad99f18af496f58fdb7dff153ca4f4ce707bf7250d3e3377ef99f016fb6fbf1c"
+      "evidenceHash": "78ddea476b78676eb80a525268fb072ed99a88188d4befa16e9a27c69861ec59"
     }
   ],
-  "resultHash": "dc1f213e6daec7cf253e0157983e018d14c63dd5f8aab658741db5012ad2f35e"
+  "resultHash": "d67ebdbbed5291d3586f59d0099da169c25192a2841b754c9679637105486b04"
 }

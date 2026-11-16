@@ -3,18 +3,11 @@
   "additionalProperties": false,
   "required": [
     "schemaVersion",
-    "sources",
     "videos"
   ],
   "properties": {
     "schemaVersion": {
-      "const": 1
-    },
-    "sources": {
-      "type": "array",
-      "items": {
-        "$ref": "https://www.jigdule.jp/schemas/feature-common#/definitions/source"
-      }
+      "const": 2
     },
     "videos": {
       "type": "array",
@@ -30,7 +23,6 @@
           "endedAt",
           "durationSeconds",
           "availability",
-          "sourceRefs",
           "visibility"
         ],
         "properties": {
@@ -97,9 +89,6 @@
               "unavailable",
               "unknown"
             ]
-          },
-          "sourceRefs": {
-            "$ref": "https://www.jigdule.jp/schemas/feature-common#/definitions/refs"
           },
           "visibility": {
             "enum": [

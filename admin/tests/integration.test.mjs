@@ -79,10 +79,8 @@ async function setup() {
     id: value.id,
     value,
     reason: "検証",
-    evidence: {
-      status: "verified",
-      url: models.talents.sources.find((s) => s.id === "src-mahiru-neru").url,
-      checkedAt: new Date().toISOString(),
+    confirmation: {
+      status: "confirmed",
       valueHash: await hash(value),
     },
   };
@@ -99,7 +97,20 @@ async function setup() {
         body: JSON.stringify(input),
       }),
     );
-  return { call, input, map, main: (v) => (main = v), writes: () => writes };
+  return {
+    call,
+    input,
+    map,
+    models,
+    get: (route) =>
+      worker.fetch(
+        new Request("https://admin.example" + route, {
+          headers: { Cookie: "__Host-admin-session=" + sid },
+        }),
+      ),
+    main: (v) => (main = v),
+    writes: () => writes,
+  };
 }
 test("preview is immutable/idempotent and main changes stop writes; no arbitrary paths", async () => {
   const s = await setup();
@@ -125,7 +136,7 @@ test("preview is immutable/idempotent and main changes stop writes; no arbitrary
   assert.equal(first.status, 200);
   const plan = await first.json();
   const changedTime = structuredClone(s.input);
-  changedTime.evidence.checkedAt = new Date(Date.now() + 1000).toISOString();
+
   const second = await (
     await s.call("/api/change-requests/preview", changedTime)
   ).json();
@@ -207,4 +218,59 @@ test("uncertain PR response recovers by deterministic branch without duplicate P
     ),
     /invalid_write_target/,
   );
+});
+
+test("bridge reads legacy masters and previews without sources, but blocks PR writes until data migration", async () => {
+  const s = await setup();
+  s.models.talents.schemaVersion = 1;
+  s.models.talents.sources = [
+    {
+      id: "src-legacy",
+      kind: "official",
+      url: "https://example.com/",
+      checkedAt: "2026-01-01T00:00:00Z",
+    },
+  ];
+  s.models.talents.talents[0].displayNameSourceRefs = ["src-legacy"];
+  const response = await s.get("/api/masters"),
+    snapshot = await response.json();
+  assert.equal(response.status, 200);
+  assert.equal(snapshot.models.talents.schemaVersion, 2);
+  assert(snapshot.migrationPending);
+  assert(!JSON.stringify(snapshot.models).includes("sourceRefs"));
+  const previewResponse = await s.call("/api/change-requests/preview", s.input);
+  assert.equal(previewResponse.status, 200);
+  const plan = await previewResponse.json();
+  const submit = await s.call("/api/change-requests", { previewId: plan.id });
+  assert.equal(submit.status, 409);
+  assert.equal((await submit.json()).error, "migration_pending_reload");
+  assert.equal(s.writes(), 0);
+});
+test("a pre-migration cached preview cannot write legacy schemas after the bridge deploy", async () => {
+  const s = await setup();
+  const response = await s.call("/api/change-requests/preview", s.input),
+    plan = await response.json();
+  const cached = s.map.get("preview:" + plan.id);
+  delete cached.sourceFreeProtocol;
+  const submit = await s.call("/api/change-requests", { previewId: plan.id });
+  assert.equal(submit.status, 409);
+  assert.equal(s.writes(), 0);
+});
+
+test("partially migrated masters and old clients cannot submit inconsistent PRs", async () => {
+  const s = await setup();
+  s.models.catalog.schemaVersion = 1;
+  s.models.catalog.sources = [];
+  const old = await s.call("/api/change-requests/preview", {
+    ...s.input,
+    evidence: { status: "verified" },
+  });
+  assert.equal(old.status, 409);
+  assert.equal((await old.json()).error, "admin_updated_reload");
+  const response = await s.call("/api/change-requests/preview", s.input);
+  assert.equal(response.status, 200);
+  const plan = await response.json();
+  const submit = await s.call("/api/change-requests", { previewId: plan.id });
+  assert.equal(submit.status, 409);
+  assert.equal(s.writes(), 0);
 });

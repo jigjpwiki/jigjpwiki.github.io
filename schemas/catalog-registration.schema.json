@@ -29,8 +29,6 @@
           "collection",
           "record",
           "status",
-          "sourceUrl",
-          "checkedAt",
           "evidenceHash",
           "expectedHash"
         ],
@@ -50,7 +48,6 @@
               "campaigns",
               "offers",
               "videos",
-              "sources",
               "groups"
             ]
           },
@@ -59,14 +56,6 @@
           },
           "status": {
             "const": "confirmed"
-          },
-          "sourceUrl": {
-            "type": "string",
-            "format": "public-url"
-          },
-          "checkedAt": {
-            "type": "string",
-            "format": "date-time"
           },
           "evidenceHash": {
             "type": "string",

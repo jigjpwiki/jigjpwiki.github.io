@@ -280,27 +280,6 @@ summary {
   margin: 0 0 6px;
   font-weight: 600;
 }
-.source-picker {
-  border-top: 1px solid var(--line);
-  margin-top: 16px;
-  padding-top: 8px;
-  min-width: 0;
-}
-.source-chip {
-  padding: 10px;
-  background: var(--soft);
-  border-radius: 8px;
-  margin: 8px 0;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-  align-items: center;
-}
-.source-chip a {
-  flex: 1;
-  min-width: 120px;
-  font-size: 0.85rem;
-}
 .quiet {
   background: var(--surface);
   color: var(--accent);
@@ -444,10 +423,6 @@ table .portrait {
   }
 }
 
-.source-picker > summary {
-  font-size: 0.9rem;
-  font-weight: 600;
-}
 .portrait span {
   font-size: 0.75rem;
   line-height: 1.35;

@@ -1,5 +1,5 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "events": [
     {
       "organizerIds": [],
@@ -42,10 +42,7 @@
         "currency": "JPY",
         "note": "通常チケット。別券種・手数料・販売条件は公式サイトをご確認ください。"
       },
-      "summary": "公式特設サイト掲載のワンマンライブ。開場17:00、開演18:00、終了20:00の予定（JST）。出演者はCast欄の公式プロフィールリンクで照合。",
-      "sourceRefs": [
-        "src-event-luminous"
-      ]
+      "summary": "公式特設サイト掲載のワンマンライブ。開場17:00、開演18:00、終了20:00の予定（JST）。出演者はCast欄の公式プロフィールリンクで照合。"
     },
     {
       "organizerIds": [],
@@ -83,10 +80,7 @@
         "currency": null,
         "note": null
       },
-      "summary": "本人の公式チャンネルで公開された新髪型お披露目配信。3Dお披露目とは区別しています。",
-      "sourceRefs": [
-        "src-event-awa-reveal"
-      ]
+      "summary": "本人の公式チャンネルで公開された新髪型お披露目配信。3Dお披露目とは区別しています。"
     },
     {
       "organizerIds": [],
@@ -124,10 +118,7 @@
         "currency": null,
         "note": "料金未確認"
       },
-      "summary": "公式告知の開催情報。終了時刻は未確認。",
-      "sourceRefs": [
-        "src-c-event-3"
-      ]
+      "summary": "公式告知の開催情報。終了時刻は未確認。"
     },
     {
       "organizerIds": [],
@@ -165,10 +156,7 @@
         "currency": null,
         "note": "料金未確認"
       },
-      "summary": "公式告知の開催情報。終了時刻は未確認。",
-      "sourceRefs": [
-        "src-c-event-4"
-      ]
+      "summary": "公式告知の開催情報。終了時刻は未確認。"
     },
     {
       "organizerIds": [],
@@ -204,10 +192,7 @@
         "currency": null,
         "note": "料金未確認"
       },
-      "summary": "公式開催レポートで実施日・会場を確認。開始・終了時刻は未確認。",
-      "sourceRefs": [
-        "src-c-event-5"
-      ]
+      "summary": "公式開催レポートで実施日・会場を確認。開始・終了時刻は未確認。"
     }
   ]
 }

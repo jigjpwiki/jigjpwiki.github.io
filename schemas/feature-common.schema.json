@@ -2,45 +2,6 @@
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "https://www.jigdule.jp/schemas/feature-common",
   "definitions": {
-    "source": {
-      "type": "object",
-      "additionalProperties": false,
-      "required": [
-        "id",
-        "kind",
-        "url",
-        "checkedAt"
-      ],
-      "properties": {
-        "id": {
-          "type": "string",
-          "pattern": "^src-[a-z0-9-]+$"
-        },
-        "kind": {
-          "enum": [
-            "official",
-            "wiki"
-          ]
-        },
-        "url": {
-          "type": "string",
-          "format": "public-url"
-        },
-        "checkedAt": {
-          "type": "string",
-          "format": "date-time"
-        }
-      }
-    },
-    "refs": {
-      "type": "array",
-      "uniqueItems": true,
-      "items": {
-        "type": "string",
-        "pattern": "^src-[a-z0-9-]+$"
-      },
-      "minItems": 1
-    },
     "time": {
       "anyOf": [
         {

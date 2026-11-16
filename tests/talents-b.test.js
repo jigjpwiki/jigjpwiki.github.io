@@ -118,7 +118,7 @@ test("sparse profiles omit unrelated empty sections and keep sources and human-c
   assert(!html.includes("profile-anniversaries"));
   assert(!html.includes("画像未確認"));
   assert(!html.includes("<h2>音楽</h2>"));
-  assert(html.includes("profile-provenance"));
+  assert(!html.includes("profile-provenance"));
   assert(html.includes(person.wiki.url.replaceAll("&", "&amp;")));
   assert(!html.includes(">引退<"));
   assert(

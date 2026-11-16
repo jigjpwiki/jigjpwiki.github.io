@@ -1,5 +1,5 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "karaokes": [
     {
       "id": "karaoke-000001",
@@ -10,9 +10,6 @@
       "setlistStatus": "complete",
       "expectedCount": 31,
       "registeredAt": "2026-11-14T23:02:16.705410Z",
-      "sourceRefs": [
-        "src-karaoke-1"
-      ],
       "visibility": "public"
     },
     {
@@ -24,9 +21,6 @@
       "setlistStatus": "unreviewed",
       "expectedCount": null,
       "registeredAt": "2026-11-14T23:02:16.705410Z",
-      "sourceRefs": [
-        "src-karaoke-2"
-      ],
       "visibility": "public"
     },
     {
@@ -38,9 +32,6 @@
       "setlistStatus": "partial",
       "expectedCount": null,
       "registeredAt": "2026-11-15T16:29:28.738Z",
-      "sourceRefs": [
-        "src-v6b-ce3cf69c7daab36c"
-      ],
       "visibility": "public"
     },
     {
@@ -52,9 +43,6 @@
       "setlistStatus": "partial",
       "expectedCount": null,
       "registeredAt": "2026-11-15T16:29:28.738Z",
-      "sourceRefs": [
-        "src-v6b-17f43fef0289d0a8"
-      ],
       "visibility": "public"
     },
     {
@@ -66,9 +54,6 @@
       "setlistStatus": "partial",
       "expectedCount": null,
       "registeredAt": "2026-11-15T16:29:28.738Z",
-      "sourceRefs": [
-        "src-v6b-9595f2223eb2986e"
-      ],
       "visibility": "public"
     },
     {
@@ -80,9 +65,6 @@
       "setlistStatus": "unreviewed",
       "expectedCount": null,
       "registeredAt": "2026-11-15T16:29:28.738Z",
-      "sourceRefs": [
-        "src-v6b-2bc982a14eea16ac"
-      ],
       "visibility": "public"
     },
     {
@@ -94,9 +76,6 @@
       "setlistStatus": "unreviewed",
       "expectedCount": null,
       "registeredAt": "2026-11-15T16:29:28.738Z",
-      "sourceRefs": [
-        "src-v6b-f82734ab4024e2e7"
-      ],
       "visibility": "public"
     },
     {
@@ -108,9 +87,6 @@
       "setlistStatus": "unreviewed",
       "expectedCount": null,
       "registeredAt": "2026-11-15T16:29:28.738Z",
-      "sourceRefs": [
-        "src-v6b-e7e83f8cbed45de2"
-      ],
       "visibility": "public"
     },
     {
@@ -122,9 +98,6 @@
       "setlistStatus": "unreviewed",
       "expectedCount": null,
       "registeredAt": "2026-11-15T16:29:28.738Z",
-      "sourceRefs": [
-        "src-v6b-c272bfef6a03a63d"
-      ],
       "visibility": "public"
     },
     {
@@ -136,9 +109,6 @@
       "setlistStatus": "unreviewed",
       "expectedCount": null,
       "registeredAt": "2026-11-15T16:29:28.738Z",
-      "sourceRefs": [
-        "src-v6b-ddef089cd9309755"
-      ],
       "visibility": "public"
     },
     {
@@ -150,9 +120,6 @@
       "setlistStatus": "unreviewed",
       "expectedCount": null,
       "registeredAt": "2026-11-15T16:29:28.738Z",
-      "sourceRefs": [
-        "src-v6b-a6b5d0088e3a8eff"
-      ],
       "visibility": "public"
     },
     {
@@ -164,9 +131,6 @@
       "setlistStatus": "unreviewed",
       "expectedCount": null,
       "registeredAt": "2026-11-15T16:29:28.738Z",
-      "sourceRefs": [
-        "src-v6b-bc75210a581491f8"
-      ],
       "visibility": "public"
     },
     {
@@ -178,9 +142,6 @@
       "setlistStatus": "unreviewed",
       "expectedCount": null,
       "registeredAt": "2026-11-15T16:29:28.738Z",
-      "sourceRefs": [
-        "src-v6b-7a66dc54127af705"
-      ],
       "visibility": "public"
     },
     {
@@ -192,9 +153,6 @@
       "setlistStatus": "unreviewed",
       "expectedCount": null,
       "registeredAt": "2026-11-15T16:29:28.738Z",
-      "sourceRefs": [
-        "src-v6b-508132a4b3d080b8"
-      ],
       "visibility": "public"
     },
     {
@@ -206,9 +164,6 @@
       "setlistStatus": "unreviewed",
       "expectedCount": null,
       "registeredAt": "2026-11-15T16:29:28.738Z",
-      "sourceRefs": [
-        "src-v6b-b4901463d9cd6920"
-      ],
       "visibility": "public"
     },
     {
@@ -220,9 +175,6 @@
       "setlistStatus": "unreviewed",
       "expectedCount": null,
       "registeredAt": "2026-11-15T16:29:28.738Z",
-      "sourceRefs": [
-        "src-v6b-bb5c5b6c1ebf4c8f"
-      ],
       "visibility": "public"
     },
     {
@@ -234,9 +186,6 @@
       "setlistStatus": "unreviewed",
       "expectedCount": null,
       "registeredAt": "2026-11-15T16:29:28.738Z",
-      "sourceRefs": [
-        "src-v6b-3f5e77203a3413a8"
-      ],
       "visibility": "public"
     }
   ],
@@ -252,14 +201,9 @@
         "tal-000006"
       ],
       "rawLabel": "01. 金曜日のおはよう / HoneyWorks",
-      "note": "本人の公式動画説明欄のセットリスト表記を確認。原曲アーティストは配信者の表記。",
+      "note": null,
       "verification": "verified",
-      "sourceRefs": [
-        "src-karaoke-1",
-        "src-song-setlist-3"
-      ],
-      "visibility": "public",
-      "verificationMethod": "official_description"
+      "visibility": "public"
     },
     {
       "id": "perf-000002",
@@ -272,14 +216,9 @@
         "tal-000006"
       ],
       "rawLabel": "02. 世界は恋に落ちている / CHiCO with HoneyWorks",
-      "note": "本人の公式動画説明欄のセットリスト表記を確認。原曲アーティストは配信者の表記。",
+      "note": null,
       "verification": "verified",
-      "sourceRefs": [
-        "src-karaoke-1",
-        "src-song-setlist-4"
-      ],
-      "visibility": "public",
-      "verificationMethod": "official_description"
+      "visibility": "public"
     },
     {
       "id": "perf-000003",
@@ -292,14 +231,9 @@
         "tal-000006"
       ],
       "rawLabel": "03. すないぱー。 / 『ユイカ』",
-      "note": "本人の公式動画説明欄のセットリスト表記を確認。原曲アーティストは配信者の表記。",
+      "note": null,
       "verification": "verified",
-      "sourceRefs": [
-        "src-karaoke-1",
-        "src-song-setlist-5"
-      ],
-      "visibility": "public",
-      "verificationMethod": "official_description"
+      "visibility": "public"
     },
     {
       "id": "perf-000004",
@@ -312,13 +246,8 @@
         "tal-000006"
       ],
       "rawLabel": "0:35:43 04. 好きだから。 / 『ユイカ』",
-      "note": "本人の公式動画説明欄の曲目・時刻表記を確認。アーティストは配信者の表記。",
+      "note": null,
       "verification": "verified",
-      "verificationMethod": "official_description",
-      "sourceRefs": [
-        "src-v6b-0bd1ac481101a295",
-        "src-v6b-4b3d931d3c1016af"
-      ],
       "visibility": "public"
     },
     {
@@ -332,13 +261,8 @@
         "tal-000006"
       ],
       "rawLabel": "0:42:57 05. 可愛いあの子が気にゐらない / なるみや",
-      "note": "本人の公式動画説明欄の曲目・時刻表記を確認。アーティストは配信者の表記。",
+      "note": null,
       "verification": "verified",
-      "verificationMethod": "official_description",
-      "sourceRefs": [
-        "src-v6b-0bd1ac481101a295",
-        "src-v6b-b71b4c0819e50081"
-      ],
       "visibility": "public"
     },
     {
@@ -352,13 +276,8 @@
         "tal-000006"
       ],
       "rawLabel": "0:47:32 06. さくらんぼ / 大塚愛",
-      "note": "本人の公式動画説明欄の曲目・時刻表記を確認。アーティストは配信者の表記。",
+      "note": null,
       "verification": "verified",
-      "verificationMethod": "official_description",
-      "sourceRefs": [
-        "src-v6b-0bd1ac481101a295",
-        "src-v6b-cb158bbb318600d1"
-      ],
       "visibility": "public"
     },
     {
@@ -372,13 +291,8 @@
         "tal-000006"
       ],
       "rawLabel": "0:54:54 07.小さな恋のうた / MONGOL800",
-      "note": "本人の公式動画説明欄の曲目・時刻表記を確認。アーティストは配信者の表記。",
+      "note": null,
       "verification": "verified",
-      "verificationMethod": "official_description",
-      "sourceRefs": [
-        "src-v6b-0bd1ac481101a295",
-        "src-v6b-2ab76ffd1fb84de9"
-      ],
       "visibility": "public"
     },
     {
@@ -392,13 +306,8 @@
         "tal-000006"
       ],
       "rawLabel": "1:03:00 08. ハレ晴レユカイ / 涼宮ハルヒ(CV.平野綾)、長門有希(CV.茅原実里)、朝比奈みくる(CV.後藤邑子)",
-      "note": "本人の公式動画説明欄の曲目・時刻表記を確認。アーティストは配信者の表記。",
+      "note": null,
       "verification": "verified",
-      "verificationMethod": "official_description",
-      "sourceRefs": [
-        "src-v6b-0bd1ac481101a295",
-        "src-v6b-7ed9ed852359ff44"
-      ],
       "visibility": "public"
     },
     {
@@ -412,13 +321,8 @@
         "tal-000006"
       ],
       "rawLabel": "1:09:16 09. God knows... / 涼宮ハルヒ(C.V.平野綾)",
-      "note": "本人の公式動画説明欄の曲目・時刻表記を確認。アーティストは配信者の表記。",
+      "note": null,
       "verification": "verified",
-      "verificationMethod": "official_description",
-      "sourceRefs": [
-        "src-v6b-0bd1ac481101a295",
-        "src-v6b-cc12d719835b8fb9"
-      ],
       "visibility": "public"
     },
     {
@@ -432,13 +336,8 @@
         "tal-000006"
       ],
       "rawLabel": "1:18:34 10. 学園天国 / フィンガー5",
-      "note": "本人の公式動画説明欄の曲目・時刻表記を確認。アーティストは配信者の表記。",
+      "note": null,
       "verification": "verified",
-      "verificationMethod": "official_description",
-      "sourceRefs": [
-        "src-v6b-0bd1ac481101a295",
-        "src-v6b-4a119580c6bcc840"
-      ],
       "visibility": "public"
     },
     {
@@ -452,13 +351,8 @@
         "tal-000006"
       ],
       "rawLabel": "1:22:54 11. ふわふわ時間 / 放課後ティータイム",
-      "note": "本人の公式動画説明欄の曲目・時刻表記を確認。アーティストは配信者の表記。",
+      "note": null,
       "verification": "verified",
-      "verificationMethod": "official_description",
-      "sourceRefs": [
-        "src-v6b-0bd1ac481101a295",
-        "src-v6b-d0d12ad48b01ef9b"
-      ],
       "visibility": "public"
     },
     {
@@ -472,13 +366,8 @@
         "tal-000006"
       ],
       "rawLabel": "1:28:22 12. SAYONARA MAYBE / NOMELON NOLEMON",
-      "note": "本人の公式動画説明欄の曲目・時刻表記を確認。アーティストは配信者の表記。",
+      "note": null,
       "verification": "verified",
-      "verificationMethod": "official_description",
-      "sourceRefs": [
-        "src-v6b-0bd1ac481101a295",
-        "src-v6b-b334990f9df1d422"
-      ],
       "visibility": "public"
     },
     {
@@ -492,13 +381,8 @@
         "tal-000006"
       ],
       "rawLabel": "1:34:02 13. 八月の夜 / Silent Siren",
-      "note": "本人の公式動画説明欄の曲目・時刻表記を確認。アーティストは配信者の表記。",
+      "note": null,
       "verification": "verified",
-      "verificationMethod": "official_description",
-      "sourceRefs": [
-        "src-v6b-0bd1ac481101a295",
-        "src-v6b-1f7244f34b30ab2e"
-      ],
       "visibility": "public"
     },
     {
@@ -512,13 +396,8 @@
         "tal-000006"
       ],
       "rawLabel": "1:39:52 14. 瞬間センチメンタル / SCANDAL",
-      "note": "本人の公式動画説明欄の曲目・時刻表記を確認。アーティストは配信者の表記。",
+      "note": null,
       "verification": "verified",
-      "verificationMethod": "official_description",
-      "sourceRefs": [
-        "src-v6b-0bd1ac481101a295",
-        "src-v6b-997404866fc5902d"
-      ],
       "visibility": "public"
     },
     {
@@ -532,13 +411,8 @@
         "tal-000006"
       ],
       "rawLabel": "1:47:03 15. ギターと孤独と蒼い惑星 / 結束バンド",
-      "note": "本人の公式動画説明欄の曲目・時刻表記を確認。アーティストは配信者の表記。",
+      "note": null,
       "verification": "verified",
-      "verificationMethod": "official_description",
-      "sourceRefs": [
-        "src-v6b-0bd1ac481101a295",
-        "src-v6b-331045d50137820c"
-      ],
       "visibility": "public"
     },
     {
@@ -552,13 +426,8 @@
         "tal-000006"
       ],
       "rawLabel": "1:53:14 16. 星座になれたら / 結束バンド",
-      "note": "本人の公式動画説明欄の曲目・時刻表記を確認。アーティストは配信者の表記。",
+      "note": null,
       "verification": "verified",
-      "verificationMethod": "official_description",
-      "sourceRefs": [
-        "src-v6b-0bd1ac481101a295",
-        "src-v6b-69b4f9893385dd80"
-      ],
       "visibility": "public"
     },
     {
@@ -572,13 +441,8 @@
         "tal-000006"
       ],
       "rawLabel": "1:58:33 17. 青春コンプレックス / 結束バンド",
-      "note": "本人の公式動画説明欄の曲目・時刻表記を確認。アーティストは配信者の表記。",
+      "note": null,
       "verification": "verified",
-      "verificationMethod": "official_description",
-      "sourceRefs": [
-        "src-v6b-0bd1ac481101a295",
-        "src-v6b-29dd6a5e7d0d60be"
-      ],
       "visibility": "public"
     },
     {
@@ -592,13 +456,8 @@
         "tal-000006"
       ],
       "rawLabel": "2:03:27 18. 君の知らない物語 / supercell",
-      "note": "本人の公式動画説明欄の曲目・時刻表記を確認。アーティストは配信者の表記。",
+      "note": null,
       "verification": "verified",
-      "verificationMethod": "official_description",
-      "sourceRefs": [
-        "src-v6b-0bd1ac481101a295",
-        "src-v6b-7f8ef7faa0de9320"
-      ],
       "visibility": "public"
     },
     {
@@ -612,13 +471,8 @@
         "tal-000006"
       ],
       "rawLabel": "2:13:30 19. ブラック★ロックシューター / supercell",
-      "note": "本人の公式動画説明欄の曲目・時刻表記を確認。アーティストは配信者の表記。",
+      "note": null,
       "verification": "verified",
-      "verificationMethod": "official_description",
-      "sourceRefs": [
-        "src-v6b-0bd1ac481101a295",
-        "src-v6b-9f2aff41dd9a2497"
-      ],
       "visibility": "public"
     },
     {
@@ -632,13 +486,8 @@
         "tal-000006"
       ],
       "rawLabel": "2:20:00 20. 拍手喝采歌合 / supercell",
-      "note": "本人の公式動画説明欄の曲目・時刻表記を確認。アーティストは配信者の表記。",
+      "note": null,
       "verification": "verified",
-      "verificationMethod": "official_description",
-      "sourceRefs": [
-        "src-v6b-0bd1ac481101a295",
-        "src-v6b-544f3687e2416eff"
-      ],
       "visibility": "public"
     },
     {
@@ -652,13 +501,8 @@
         "tal-000006"
       ],
       "rawLabel": "2:28:04 21. 天体観測 / BUMP OF CHICKEN",
-      "note": "本人の公式動画説明欄の曲目・時刻表記を確認。アーティストは配信者の表記。",
+      "note": null,
       "verification": "verified",
-      "verificationMethod": "official_description",
-      "sourceRefs": [
-        "src-v6b-0bd1ac481101a295",
-        "src-v6b-c44ddf1a4760585d"
-      ],
       "visibility": "public"
     },
     {
@@ -672,13 +516,8 @@
         "tal-000006"
       ],
       "rawLabel": "2:33:55 22. じょいふる / いきものがかり",
-      "note": "本人の公式動画説明欄の曲目・時刻表記を確認。アーティストは配信者の表記。",
+      "note": null,
       "verification": "verified",
-      "verificationMethod": "official_description",
-      "sourceRefs": [
-        "src-v6b-0bd1ac481101a295",
-        "src-v6b-7cf7a727d55b8345"
-      ],
       "visibility": "public"
     },
     {
@@ -692,13 +531,8 @@
         "tal-000006"
       ],
       "rawLabel": "2:38:13 23. イケナイ太陽 / ORANGE RANGE",
-      "note": "本人の公式動画説明欄の曲目・時刻表記を確認。アーティストは配信者の表記。",
+      "note": null,
       "verification": "verified",
-      "verificationMethod": "official_description",
-      "sourceRefs": [
-        "src-v6b-0bd1ac481101a295",
-        "src-v6b-7bc60b92c1d1e1e2"
-      ],
       "visibility": "public"
     },
     {
@@ -712,13 +546,8 @@
         "tal-000006"
       ],
       "rawLabel": "2:44:00 24. 青と夏 / Mrs.GREEN APPLE",
-      "note": "本人の公式動画説明欄の曲目・時刻表記を確認。アーティストは配信者の表記。",
+      "note": null,
       "verification": "verified",
-      "verificationMethod": "official_description",
-      "sourceRefs": [
-        "src-v6b-0bd1ac481101a295",
-        "src-v6b-6e2ad2e0b46e469c"
-      ],
       "visibility": "public"
     },
     {
@@ -732,13 +561,8 @@
         "tal-000006"
       ],
       "rawLabel": "2:50:16 25. 夏色えがおで1,2,Jump! / μ's",
-      "note": "本人の公式動画説明欄の曲目・時刻表記を確認。アーティストは配信者の表記。",
+      "note": null,
       "verification": "verified",
-      "verificationMethod": "official_description",
-      "sourceRefs": [
-        "src-v6b-0bd1ac481101a295",
-        "src-v6b-dad0f4b5e0bd218c"
-      ],
       "visibility": "public"
     },
     {
@@ -752,13 +576,8 @@
         "tal-000006"
       ],
       "rawLabel": "2:56:43 26. 初恋サイダー / Buono!",
-      "note": "本人の公式動画説明欄の曲目・時刻表記を確認。アーティストは配信者の表記。",
+      "note": null,
       "verification": "verified",
-      "verificationMethod": "official_description",
-      "sourceRefs": [
-        "src-v6b-0bd1ac481101a295",
-        "src-v6b-9348cbadd024524c"
-      ],
       "visibility": "public"
     },
     {
@@ -772,13 +591,8 @@
         "tal-000006"
       ],
       "rawLabel": "3:01:50 27. 大声ダイヤモンド / AKB48",
-      "note": "本人の公式動画説明欄の曲目・時刻表記を確認。アーティストは配信者の表記。",
+      "note": null,
       "verification": "verified",
-      "verificationMethod": "official_description",
-      "sourceRefs": [
-        "src-v6b-0bd1ac481101a295",
-        "src-v6b-1f4ddf0da1d5337a"
-      ],
       "visibility": "public"
     },
     {
@@ -792,13 +606,8 @@
         "tal-000006"
       ],
       "rawLabel": "3:08:04 28. only my railgun / fripSide",
-      "note": "本人の公式動画説明欄の曲目・時刻表記を確認。アーティストは配信者の表記。",
+      "note": null,
       "verification": "verified",
-      "verificationMethod": "official_description",
-      "sourceRefs": [
-        "src-v6b-0bd1ac481101a295",
-        "src-v6b-5b1b0257b7011d08"
-      ],
       "visibility": "public"
     },
     {
@@ -812,13 +621,8 @@
         "tal-000006"
       ],
       "rawLabel": "3:13:57 29. スパークル [original ver.] / RADWIMPS",
-      "note": "本人の公式動画説明欄の曲目・時刻表記を確認。アーティストは配信者の表記。",
+      "note": null,
       "verification": "verified",
-      "verificationMethod": "official_description",
-      "sourceRefs": [
-        "src-v6b-0bd1ac481101a295",
-        "src-v6b-1a0015f1427e6f4c"
-      ],
       "visibility": "public"
     },
     {
@@ -832,13 +636,8 @@
         "tal-000006"
       ],
       "rawLabel": "3:22:31 30. なんでもないや (movie ver.) / 上白石萌音",
-      "note": "本人の公式動画説明欄の曲目・時刻表記を確認。アーティストは配信者の表記。",
+      "note": null,
       "verification": "verified",
-      "verificationMethod": "official_description",
-      "sourceRefs": [
-        "src-v6b-0bd1ac481101a295",
-        "src-v6b-8e04983973983e90"
-      ],
       "visibility": "public"
     },
     {
@@ -852,13 +651,8 @@
         "tal-000006"
       ],
       "rawLabel": "3:34:03 31. ライオン / May'n/中島愛",
-      "note": "本人の公式動画説明欄の曲目・時刻表記を確認。アーティストは配信者の表記。",
+      "note": null,
       "verification": "verified",
-      "verificationMethod": "official_description",
-      "sourceRefs": [
-        "src-v6b-0bd1ac481101a295",
-        "src-v6b-f548340b6052a46d"
-      ],
       "visibility": "public"
     },
     {
@@ -872,13 +666,8 @@
         "tal-000006"
       ],
       "rawLabel": "0:09:44 01. 言って。 / ヨルシカ",
-      "note": "本人の公式動画説明欄の曲目・時刻表記を確認。アーティストは配信者の表記。",
+      "note": null,
       "verification": "verified",
-      "verificationMethod": "official_description",
-      "sourceRefs": [
-        "src-v6b-ce3cf69c7daab36c",
-        "src-v6b-9cabbc6c91b8716f"
-      ],
       "visibility": "public"
     },
     {
@@ -892,13 +681,8 @@
         "tal-000006"
       ],
       "rawLabel": "0:18:20 02. Calc. / ジミーサムP",
-      "note": "本人の公式動画説明欄の曲目・時刻表記を確認。アーティストは配信者の表記。",
+      "note": null,
       "verification": "verified",
-      "verificationMethod": "official_description",
-      "sourceRefs": [
-        "src-v6b-ce3cf69c7daab36c",
-        "src-v6b-912cab59b1ad1cdb"
-      ],
       "visibility": "public"
     },
     {
@@ -912,13 +696,8 @@
         "tal-000006"
       ],
       "rawLabel": "0:24:24 03. ロミオとシンデレラ / doriko",
-      "note": "本人の公式動画説明欄の曲目・時刻表記を確認。アーティストは配信者の表記。",
+      "note": null,
       "verification": "verified",
-      "verificationMethod": "official_description",
-      "sourceRefs": [
-        "src-v6b-ce3cf69c7daab36c",
-        "src-v6b-65754521b7ead3d3"
-      ],
       "visibility": "public"
     },
     {
@@ -932,13 +711,8 @@
         "tal-000006"
       ],
       "rawLabel": "0:32:17 04. メランコリック / Junky",
-      "note": "本人の公式動画説明欄の曲目・時刻表記を確認。アーティストは配信者の表記。",
+      "note": null,
       "verification": "verified",
-      "verificationMethod": "official_description",
-      "sourceRefs": [
-        "src-v6b-ce3cf69c7daab36c",
-        "src-v6b-1ec14e04aa96c4ed"
-      ],
       "visibility": "public"
     },
     {
@@ -952,13 +726,8 @@
         "tal-000006"
       ],
       "rawLabel": "0:38:40 05. 乙女解剖 / DECO*27",
-      "note": "本人の公式動画説明欄の曲目・時刻表記を確認。アーティストは配信者の表記。",
+      "note": null,
       "verification": "verified",
-      "verificationMethod": "official_description",
-      "sourceRefs": [
-        "src-v6b-ce3cf69c7daab36c",
-        "src-v6b-0f7d17cb3ad66571"
-      ],
       "visibility": "public"
     },
     {
@@ -972,13 +741,8 @@
         "tal-000006"
       ],
       "rawLabel": "0:44:32 06. 金曜日のおはよう / HoneyWorks feat.Gero",
-      "note": "本人の公式動画説明欄の曲目・時刻表記を確認。アーティストは配信者の表記。",
+      "note": null,
       "verification": "verified",
-      "verificationMethod": "official_description",
-      "sourceRefs": [
-        "src-v6b-ce3cf69c7daab36c",
-        "src-v6b-292b7d317c9ac96c"
-      ],
       "visibility": "public"
     },
     {
@@ -992,13 +756,8 @@
         "tal-000006"
       ],
       "rawLabel": "0:51:00 07. とても素敵な六月でした / Eight",
-      "note": "本人の公式動画説明欄の曲目・時刻表記を確認。アーティストは配信者の表記。",
+      "note": null,
       "verification": "verified",
-      "verificationMethod": "official_description",
-      "sourceRefs": [
-        "src-v6b-ce3cf69c7daab36c",
-        "src-v6b-b6927d7d8ce53a5a"
-      ],
       "visibility": "public"
     },
     {
@@ -1012,13 +771,8 @@
         "tal-000006"
       ],
       "rawLabel": "0:57:58 08. Fire◎Flower / halyosy",
-      "note": "本人の公式動画説明欄の曲目・時刻表記を確認。アーティストは配信者の表記。",
+      "note": null,
       "verification": "verified",
-      "verificationMethod": "official_description",
-      "sourceRefs": [
-        "src-v6b-ce3cf69c7daab36c",
-        "src-v6b-ce9d403d72db01af"
-      ],
       "visibility": "public"
     },
     {
@@ -1032,13 +786,8 @@
         "tal-000006"
       ],
       "rawLabel": "1:07:35 09. 又三郎 / ヨルシカ",
-      "note": "本人の公式動画説明欄の曲目・時刻表記を確認。アーティストは配信者の表記。",
+      "note": null,
       "verification": "verified",
-      "verificationMethod": "official_description",
-      "sourceRefs": [
-        "src-v6b-ce3cf69c7daab36c",
-        "src-v6b-80c8269a784f3266"
-      ],
       "visibility": "public"
     },
     {
@@ -1052,13 +801,8 @@
         "tal-000006"
       ],
       "rawLabel": "1:13:04 10. リードコントロール / なるみや",
-      "note": "本人の公式動画説明欄の曲目・時刻表記を確認。アーティストは配信者の表記。",
+      "note": null,
       "verification": "verified",
-      "verificationMethod": "official_description",
-      "sourceRefs": [
-        "src-v6b-ce3cf69c7daab36c",
-        "src-v6b-852ea15901ad602d"
-      ],
       "visibility": "public"
     },
     {
@@ -1072,13 +816,8 @@
         "tal-000006"
       ],
       "rawLabel": "1:18:10 11. 夜に駆ける / YOASOBI",
-      "note": "本人の公式動画説明欄の曲目・時刻表記を確認。アーティストは配信者の表記。",
+      "note": null,
       "verification": "verified",
-      "verificationMethod": "official_description",
-      "sourceRefs": [
-        "src-v6b-ce3cf69c7daab36c",
-        "src-v6b-8648840251a05a1a"
-      ],
       "visibility": "public"
     },
     {
@@ -1092,13 +831,8 @@
         "tal-000006"
       ],
       "rawLabel": "1:26:30 12. もしも命が描けたら / YOASOBI",
-      "note": "本人の公式動画説明欄の曲目・時刻表記を確認。アーティストは配信者の表記。",
+      "note": null,
       "verification": "verified",
-      "verificationMethod": "official_description",
-      "sourceRefs": [
-        "src-v6b-ce3cf69c7daab36c",
-        "src-v6b-ed954f1ec02473a0"
-      ],
       "visibility": "public"
     },
     {
@@ -1112,13 +846,8 @@
         "tal-000006"
       ],
       "rawLabel": "1:32:23 13. エアロピクルス / コメアニメ",
-      "note": "本人の公式動画説明欄の曲目・時刻表記を確認。アーティストは配信者の表記。",
+      "note": null,
       "verification": "verified",
-      "verificationMethod": "official_description",
-      "sourceRefs": [
-        "src-v6b-ce3cf69c7daab36c",
-        "src-v6b-4ebc8432f2d7427c"
-      ],
       "visibility": "public"
     },
     {
@@ -1132,13 +861,8 @@
         "tal-000006"
       ],
       "rawLabel": "1:39:43 14. ダダダダ天使 / ナナヲアカリ",
-      "note": "本人の公式動画説明欄の曲目・時刻表記を確認。アーティストは配信者の表記。",
+      "note": null,
       "verification": "verified",
-      "verificationMethod": "official_description",
-      "sourceRefs": [
-        "src-v6b-ce3cf69c7daab36c",
-        "src-v6b-ac0ce1096fd03595"
-      ],
       "visibility": "public"
     },
     {
@@ -1152,13 +876,8 @@
         "tal-000006"
       ],
       "rawLabel": "0:02:54 01. 君の知らない物語 / supercell",
-      "note": "本人の公式動画説明欄の曲目・時刻表記を確認。アーティストは配信者の表記。",
+      "note": null,
       "verification": "verified",
-      "verificationMethod": "official_description",
-      "sourceRefs": [
-        "src-v6b-17f43fef0289d0a8",
-        "src-v6b-21ad714c0f6d1b8e"
-      ],
       "visibility": "public"
     },
     {
@@ -1172,13 +891,8 @@
         "tal-000006"
       ],
       "rawLabel": "0:09:50 02. シル・ヴ・プレジデント / P丸様。",
-      "note": "本人の公式動画説明欄の曲目・時刻表記を確認。アーティストは配信者の表記。",
+      "note": null,
       "verification": "verified",
-      "verificationMethod": "official_description",
-      "sourceRefs": [
-        "src-v6b-17f43fef0289d0a8",
-        "src-v6b-d4b5db35c75c0b3c"
-      ],
       "visibility": "public"
     },
     {
@@ -1192,13 +906,8 @@
         "tal-000006"
       ],
       "rawLabel": "0:14:42 03. 誇り高きアイドル / HoneyWorks",
-      "note": "本人の公式動画説明欄の曲目・時刻表記を確認。アーティストは配信者の表記。",
+      "note": null,
       "verification": "verified",
-      "verificationMethod": "official_description",
-      "sourceRefs": [
-        "src-v6b-17f43fef0289d0a8",
-        "src-v6b-ca272e0a0638677c"
-      ],
       "visibility": "public"
     },
     {
@@ -1212,13 +921,8 @@
         "tal-000006"
       ],
       "rawLabel": "0:20:48 04. エゴロック / すりぃ",
-      "note": "本人の公式動画説明欄の曲目・時刻表記を確認。アーティストは配信者の表記。",
+      "note": null,
       "verification": "verified",
-      "verificationMethod": "official_description",
-      "sourceRefs": [
-        "src-v6b-17f43fef0289d0a8",
-        "src-v6b-6a429af1b5277e77"
-      ],
       "visibility": "public"
     },
     {
@@ -1232,13 +936,8 @@
         "tal-000006"
       ],
       "rawLabel": "0:24:35 05. 私は最強 / Ado",
-      "note": "本人の公式動画説明欄の曲目・時刻表記を確認。アーティストは配信者の表記。",
+      "note": null,
       "verification": "verified",
-      "verificationMethod": "official_description",
-      "sourceRefs": [
-        "src-v6b-17f43fef0289d0a8",
-        "src-v6b-70b5bd924e6cc08b"
-      ],
       "visibility": "public"
     },
     {
@@ -1252,13 +951,8 @@
         "tal-000006"
       ],
       "rawLabel": "0:04:50 01. departure! / 小野正利",
-      "note": "本人の公式動画説明欄の曲目・時刻表記を確認。アーティストは配信者の表記。",
+      "note": null,
       "verification": "verified",
-      "verificationMethod": "official_description",
-      "sourceRefs": [
-        "src-v6b-9595f2223eb2986e",
-        "src-v6b-d8e7f0a17f315390"
-      ],
       "visibility": "public"
     },
     {
@@ -1272,13 +966,8 @@
         "tal-000006"
       ],
       "rawLabel": "0:10:33 02. 旅人の唄 / 大原ゆい子",
-      "note": "本人の公式動画説明欄の曲目・時刻表記を確認。アーティストは配信者の表記。",
+      "note": null,
       "verification": "verified",
-      "verificationMethod": "official_description",
-      "sourceRefs": [
-        "src-v6b-9595f2223eb2986e",
-        "src-v6b-25517115c7aba518"
-      ],
       "visibility": "public"
     },
     {
@@ -1292,13 +981,8 @@
         "tal-000006"
       ],
       "rawLabel": "0:15:59 03.  RPG / SEKAI NO OWARI",
-      "note": "本人の公式動画説明欄の曲目・時刻表記を確認。アーティストは配信者の表記。",
+      "note": null,
       "verification": "verified",
-      "verificationMethod": "official_description",
-      "sourceRefs": [
-        "src-v6b-9595f2223eb2986e",
-        "src-v6b-049a28c15666a7e6"
-      ],
       "visibility": "public"
     },
     {
@@ -1312,13 +996,8 @@
         "tal-000006"
       ],
       "rawLabel": "0:21:18 04. アフターエポックス / sasakure.UK",
-      "note": "本人の公式動画説明欄の曲目・時刻表記を確認。アーティストは配信者の表記。",
+      "note": null,
       "verification": "verified",
-      "verificationMethod": "official_description",
-      "sourceRefs": [
-        "src-v6b-9595f2223eb2986e",
-        "src-v6b-cb5de580775e5e50"
-      ],
       "visibility": "public"
     },
     {
@@ -1332,13 +1011,8 @@
         "tal-000006"
       ],
       "rawLabel": "0:25:44 05. Journey / DECO*27",
-      "note": "本人の公式動画説明欄の曲目・時刻表記を確認。アーティストは配信者の表記。",
+      "note": null,
       "verification": "verified",
-      "verificationMethod": "official_description",
-      "sourceRefs": [
-        "src-v6b-9595f2223eb2986e",
-        "src-v6b-fc504841e20e3165"
-      ],
       "visibility": "public"
     }
   ]

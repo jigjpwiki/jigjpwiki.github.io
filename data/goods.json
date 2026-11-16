@@ -1,5 +1,5 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "products": [
     {
       "id": "product-000001",
@@ -10,9 +10,6 @@
       "groupIds": [],
       "image": null,
       "identityUrl": "https://paletteproject.jp/goods_kotohabd2026/",
-      "sourceRefs": [
-        "src-c-goods-1"
-      ],
       "visibility": "public"
     },
     {
@@ -24,9 +21,6 @@
       "groupIds": [],
       "image": null,
       "identityUrl": "https://paletteproject.jp/goods_kotohabd2026/",
-      "sourceRefs": [
-        "src-c-goods-1"
-      ],
       "visibility": "public"
     },
     {
@@ -38,9 +32,6 @@
       "groupIds": [],
       "image": null,
       "identityUrl": "https://paletteproject.jp/goods_kotohabd2026/",
-      "sourceRefs": [
-        "src-c-goods-1"
-      ],
       "visibility": "public"
     },
     {
@@ -52,9 +43,6 @@
       "groupIds": [],
       "image": null,
       "identityUrl": "https://paletteproject.jp/goods_kotohabd2026/",
-      "sourceRefs": [
-        "src-c-goods-1"
-      ],
       "visibility": "public"
     },
     {
@@ -66,9 +54,6 @@
       "groupIds": [],
       "image": null,
       "identityUrl": "https://paletteproject.jp/goods_kotohabd2026/",
-      "sourceRefs": [
-        "src-c-goods-1"
-      ],
       "visibility": "public"
     },
     {
@@ -80,9 +65,6 @@
       "groupIds": [],
       "image": null,
       "identityUrl": "https://paletteproject.jp/goods_kotohabd2026/",
-      "sourceRefs": [
-        "src-c-goods-1"
-      ],
       "visibility": "public"
     },
     {
@@ -94,9 +76,6 @@
       "groupIds": [],
       "image": null,
       "identityUrl": "https://paletteproject.jp/goods_kotohabd2026/",
-      "sourceRefs": [
-        "src-c-goods-1"
-      ],
       "visibility": "public"
     },
     {
@@ -115,9 +94,6 @@
       "groupIds": [],
       "image": null,
       "identityUrl": "https://paletteproject.jp/goods_6th_onemanlive/",
-      "sourceRefs": [
-        "src-c-goods-2"
-      ],
       "visibility": "public"
     },
     {
@@ -136,9 +112,6 @@
       "groupIds": [],
       "image": null,
       "identityUrl": "https://paletteproject.jp/goods_6th_onemanlive/",
-      "sourceRefs": [
-        "src-c-goods-2"
-      ],
       "visibility": "public"
     },
     {
@@ -157,9 +130,6 @@
       "groupIds": [],
       "image": null,
       "identityUrl": "https://paletteproject.jp/goods_6th_onemanlive/",
-      "sourceRefs": [
-        "src-c-goods-2"
-      ],
       "visibility": "public"
     },
     {
@@ -178,9 +148,6 @@
       "groupIds": [],
       "image": null,
       "identityUrl": "https://paletteproject.jp/goods_6th_onemanlive/",
-      "sourceRefs": [
-        "src-c-goods-2"
-      ],
       "visibility": "public"
     },
     {
@@ -199,9 +166,6 @@
       "groupIds": [],
       "image": null,
       "identityUrl": "https://paletteproject.jp/goods_6th_onemanlive/",
-      "sourceRefs": [
-        "src-c-goods-2"
-      ],
       "visibility": "public"
     },
     {
@@ -220,9 +184,6 @@
       "groupIds": [],
       "image": null,
       "identityUrl": "https://paletteproject.jp/goods_6th_onemanlive/",
-      "sourceRefs": [
-        "src-c-goods-2"
-      ],
       "visibility": "public"
     },
     {
@@ -241,9 +202,6 @@
       "groupIds": [],
       "image": null,
       "identityUrl": "https://paletteproject.jp/goods_6th_onemanlive/",
-      "sourceRefs": [
-        "src-c-goods-2"
-      ],
       "visibility": "public"
     },
     {
@@ -262,9 +220,6 @@
       "groupIds": [],
       "image": null,
       "identityUrl": "https://paletteproject.jp/goods_6th_onemanlive/",
-      "sourceRefs": [
-        "src-c-goods-2"
-      ],
       "visibility": "public"
     },
     {
@@ -283,9 +238,6 @@
       "groupIds": [],
       "image": null,
       "identityUrl": "https://paletteproject.jp/goods_6th_onemanlive/",
-      "sourceRefs": [
-        "src-c-goods-2"
-      ],
       "visibility": "public"
     },
     {
@@ -304,9 +256,6 @@
       "groupIds": [],
       "image": null,
       "identityUrl": "https://paletteproject.jp/goods_6th_onemanlive/",
-      "sourceRefs": [
-        "src-c-goods-2"
-      ],
       "visibility": "public"
     },
     {
@@ -325,9 +274,6 @@
       "groupIds": [],
       "image": null,
       "identityUrl": "https://paletteproject.jp/goods_6th_onemanlive/",
-      "sourceRefs": [
-        "src-c-goods-2"
-      ],
       "visibility": "public"
     },
     {
@@ -346,9 +292,6 @@
       "groupIds": [],
       "image": null,
       "identityUrl": "https://paletteproject.jp/goods_6th_onemanlive/",
-      "sourceRefs": [
-        "src-c-goods-2"
-      ],
       "visibility": "public"
     },
     {
@@ -360,9 +303,6 @@
       "groupIds": [],
       "image": null,
       "identityUrl": "https://paletteproject.jp/goods_ayumubd2026/",
-      "sourceRefs": [
-        "src-c-goods-3"
-      ],
       "visibility": "public"
     },
     {
@@ -374,9 +314,6 @@
       "groupIds": [],
       "image": null,
       "identityUrl": "https://paletteproject.jp/goods_ayumubd2026/",
-      "sourceRefs": [
-        "src-c-goods-3"
-      ],
       "visibility": "public"
     },
     {
@@ -388,9 +325,6 @@
       "groupIds": [],
       "image": null,
       "identityUrl": "https://paletteproject.jp/goods_ayumubd2026/",
-      "sourceRefs": [
-        "src-c-goods-3"
-      ],
       "visibility": "public"
     },
     {
@@ -402,9 +336,6 @@
       "groupIds": [],
       "image": null,
       "identityUrl": "https://paletteproject.jp/goods_ayumubd2026/",
-      "sourceRefs": [
-        "src-c-goods-3"
-      ],
       "visibility": "public"
     },
     {
@@ -416,9 +347,6 @@
       "groupIds": [],
       "image": null,
       "identityUrl": "https://paletteproject.jp/goods_ayumubd2026/",
-      "sourceRefs": [
-        "src-c-goods-3"
-      ],
       "visibility": "public"
     },
     {
@@ -430,9 +358,6 @@
       "groupIds": [],
       "image": null,
       "identityUrl": "https://paletteproject.jp/goods_ayumubd2026/",
-      "sourceRefs": [
-        "src-c-goods-3"
-      ],
       "visibility": "public"
     },
     {
@@ -444,9 +369,6 @@
       "groupIds": [],
       "image": null,
       "identityUrl": "https://paletteproject.jp/goods_ayumubd2026/",
-      "sourceRefs": [
-        "src-c-goods-3"
-      ],
       "visibility": "public"
     },
     {
@@ -458,9 +380,6 @@
       ],
       "image": null,
       "identityUrl": "https://paletteproject.jp/goods_sputrip6th/",
-      "sourceRefs": [
-        "src-c-goods-4"
-      ],
       "visibility": "public"
     },
     {
@@ -472,9 +391,6 @@
       ],
       "image": null,
       "identityUrl": "https://paletteproject.jp/goods_sputrip6th/",
-      "sourceRefs": [
-        "src-c-goods-4"
-      ],
       "visibility": "public"
     },
     {
@@ -486,9 +402,6 @@
       ],
       "image": null,
       "identityUrl": "https://paletteproject.jp/goods_sputrip6th/",
-      "sourceRefs": [
-        "src-c-goods-4"
-      ],
       "visibility": "public"
     },
     {
@@ -500,9 +413,6 @@
       ],
       "image": null,
       "identityUrl": "https://paletteproject.jp/goods_sputrip6th/",
-      "sourceRefs": [
-        "src-c-goods-4"
-      ],
       "visibility": "public"
     },
     {
@@ -521,9 +431,6 @@
       "groupIds": [],
       "image": null,
       "identityUrl": "https://paletteproject.jp/goods_ppnc2026/",
-      "sourceRefs": [
-        "src-c-goods-5"
-      ],
       "visibility": "public"
     },
     {
@@ -542,9 +449,6 @@
       "groupIds": [],
       "image": null,
       "identityUrl": "https://paletteproject.jp/goods_ppnc2026/",
-      "sourceRefs": [
-        "src-c-goods-5"
-      ],
       "visibility": "public"
     },
     {
@@ -556,9 +460,6 @@
       "groupIds": [],
       "image": null,
       "identityUrl": "https://paletteproject.jp/goods_bd2026mahalo/",
-      "sourceRefs": [
-        "src-c-goods-6"
-      ],
       "visibility": "public"
     },
     {
@@ -570,9 +471,6 @@
       "groupIds": [],
       "image": null,
       "identityUrl": "https://paletteproject.jp/goods_bd2026mahalo/",
-      "sourceRefs": [
-        "src-c-goods-6"
-      ],
       "visibility": "public"
     },
     {
@@ -584,9 +482,6 @@
       "groupIds": [],
       "image": null,
       "identityUrl": "https://paletteproject.jp/goods_bd2026mahalo/",
-      "sourceRefs": [
-        "src-c-goods-6"
-      ],
       "visibility": "public"
     },
     {
@@ -598,9 +493,6 @@
       "groupIds": [],
       "image": null,
       "identityUrl": "https://paletteproject.jp/goods_bd2026mahalo/",
-      "sourceRefs": [
-        "src-c-goods-6"
-      ],
       "visibility": "public"
     },
     {
@@ -612,9 +504,6 @@
       "groupIds": [],
       "image": null,
       "identityUrl": "https://paletteproject.jp/goods_bd2026mahalo/",
-      "sourceRefs": [
-        "src-c-goods-6"
-      ],
       "visibility": "public"
     },
     {
@@ -626,9 +515,6 @@
       "groupIds": [],
       "image": null,
       "identityUrl": "https://paletteproject.jp/goods_bd2026mahalo/",
-      "sourceRefs": [
-        "src-c-goods-6"
-      ],
       "visibility": "public"
     },
     {
@@ -640,9 +526,6 @@
       "groupIds": [],
       "image": null,
       "identityUrl": "https://paletteproject.jp/goods_bd2026mahalo/",
-      "sourceRefs": [
-        "src-c-goods-6"
-      ],
       "visibility": "public"
     },
     {
@@ -654,9 +537,6 @@
       "groupIds": [],
       "image": null,
       "identityUrl": "https://paletteproject.jp/goods_bd2026mahalo/",
-      "sourceRefs": [
-        "src-c-goods-6"
-      ],
       "visibility": "public"
     },
     {
@@ -668,9 +548,6 @@
       "groupIds": [],
       "image": null,
       "identityUrl": "https://paletteproject.jp/goods_bd2026mahalo/",
-      "sourceRefs": [
-        "src-c-goods-6"
-      ],
       "visibility": "public"
     }
   ],
@@ -678,49 +555,31 @@
     {
       "id": "campaign-000001",
       "title": "藤宮コトハ誕生日2026",
-      "sourceRefs": [
-        "src-c-goods-1"
-      ],
       "visibility": "public"
     },
     {
       "id": "campaign-000002",
       "title": "Palette Project 6thワンマンライブ",
-      "sourceRefs": [
-        "src-c-goods-2"
-      ],
       "visibility": "public"
     },
     {
       "id": "campaign-000003",
       "title": "鬼多見アユム誕生日2026",
-      "sourceRefs": [
-        "src-c-goods-3"
-      ],
       "visibility": "public"
     },
     {
       "id": "campaign-000004",
       "title": "Sputrip6周年",
-      "sourceRefs": [
-        "src-c-goods-4"
-      ],
       "visibility": "public"
     },
     {
       "id": "campaign-000005",
       "title": "Palette Project-Canvas-",
-      "sourceRefs": [
-        "src-c-goods-5"
-      ],
       "visibility": "public"
     },
     {
       "id": "campaign-000006",
       "title": "夏渚まはろ誕生日2026",
-      "sourceRefs": [
-        "src-c-goods-6"
-      ],
       "visibility": "public"
     }
   ],
@@ -738,10 +597,6 @@
       "periodNote": "公式告知記載の税込価格・受注期間。在庫と現在の受付状態は未確認。",
       "url": "https://store.paletteproject.jp/products/fzmyk-goods-20261115",
       "status": "unknown",
-      "sourceRefs": [
-        "src-c-goods-1",
-        "src-c-sale-1"
-      ],
       "visibility": "public"
     },
     {
@@ -757,10 +612,6 @@
       "periodNote": "公式告知記載の税込価格・受注期間。在庫と現在の受付状態は未確認。",
       "url": "https://store.paletteproject.jp/products/fzmyk-goods-20261115",
       "status": "unknown",
-      "sourceRefs": [
-        "src-c-goods-1",
-        "src-c-sale-2"
-      ],
       "visibility": "public"
     },
     {
@@ -776,10 +627,6 @@
       "periodNote": "公式告知記載の税込価格・受注期間。在庫と現在の受付状態は未確認。",
       "url": "https://store.paletteproject.jp/products/fzmyk-goods-20261115",
       "status": "unknown",
-      "sourceRefs": [
-        "src-c-goods-1",
-        "src-c-sale-3"
-      ],
       "visibility": "public"
     },
     {
@@ -795,10 +642,6 @@
       "periodNote": "公式告知記載の税込価格・受注期間。在庫と現在の受付状態は未確認。",
       "url": "https://store.paletteproject.jp/products/fzmyk-goods-20261115",
       "status": "unknown",
-      "sourceRefs": [
-        "src-c-goods-1",
-        "src-c-sale-4"
-      ],
       "visibility": "public"
     },
     {
@@ -814,10 +657,6 @@
       "periodNote": "公式告知記載の税込価格・受注期間。在庫と現在の受付状態は未確認。",
       "url": "https://store.paletteproject.jp/products/fzmyk-goods-20261115",
       "status": "unknown",
-      "sourceRefs": [
-        "src-c-goods-1",
-        "src-c-sale-5"
-      ],
       "visibility": "public"
     },
     {
@@ -833,10 +672,6 @@
       "periodNote": "公式告知記載の税込価格・受注期間。在庫と現在の受付状態は未確認。",
       "url": "https://store.paletteproject.jp/products/fzmyk-goods-20261115",
       "status": "unknown",
-      "sourceRefs": [
-        "src-c-goods-1",
-        "src-c-sale-6"
-      ],
       "visibility": "public"
     },
     {
@@ -852,10 +687,6 @@
       "periodNote": "公式告知記載の税込価格・受注期間。在庫と現在の受付状態は未確認。",
       "url": "https://paletteproject.booth.pm/items/8803373",
       "status": "unknown",
-      "sourceRefs": [
-        "src-c-goods-1",
-        "src-c-sale-7"
-      ],
       "visibility": "public"
     },
     {
@@ -871,10 +702,6 @@
       "periodNote": "公式告知記載の税込価格・受注期間。在庫と現在の受付状態は未確認。",
       "url": "https://store.paletteproject.jp/collections/pp-goods-ev20261020",
       "status": "unknown",
-      "sourceRefs": [
-        "src-c-goods-2",
-        "src-c-sale-8"
-      ],
       "visibility": "public"
     },
     {
@@ -890,10 +717,6 @@
       "periodNote": "公式告知記載の税込価格・受注期間。在庫と現在の受付状態は未確認。",
       "url": "https://store.paletteproject.jp/collections/pp-goods-ev20261020",
       "status": "unknown",
-      "sourceRefs": [
-        "src-c-goods-2",
-        "src-c-sale-9"
-      ],
       "visibility": "public"
     },
     {
@@ -909,10 +732,6 @@
       "periodNote": "公式告知記載の税込価格・受注期間。在庫と現在の受付状態は未確認。",
       "url": "https://store.paletteproject.jp/collections/pp-goods-ev20261020",
       "status": "unknown",
-      "sourceRefs": [
-        "src-c-goods-2",
-        "src-c-sale-10"
-      ],
       "visibility": "public"
     },
     {
@@ -928,10 +747,6 @@
       "periodNote": "公式告知記載の税込価格・受注期間。在庫と現在の受付状態は未確認。",
       "url": "https://store.paletteproject.jp/collections/pp-goods-ev20261020",
       "status": "unknown",
-      "sourceRefs": [
-        "src-c-goods-2",
-        "src-c-sale-11"
-      ],
       "visibility": "public"
     },
     {
@@ -947,10 +762,6 @@
       "periodNote": "公式告知記載の税込価格・受注期間。在庫と現在の受付状態は未確認。",
       "url": "https://store.paletteproject.jp/collections/pp-goods-ev20261020",
       "status": "unknown",
-      "sourceRefs": [
-        "src-c-goods-2",
-        "src-c-sale-12"
-      ],
       "visibility": "public"
     },
     {
@@ -966,10 +777,6 @@
       "periodNote": "公式告知記載の税込価格・受注期間。在庫と現在の受付状態は未確認。",
       "url": "https://store.paletteproject.jp/collections/pp-goods-ev20261020",
       "status": "unknown",
-      "sourceRefs": [
-        "src-c-goods-2",
-        "src-c-sale-13"
-      ],
       "visibility": "public"
     },
     {
@@ -985,10 +792,6 @@
       "periodNote": "公式告知記載の税込価格・受注期間。在庫と現在の受付状態は未確認。",
       "url": "https://store.paletteproject.jp/collections/pp-goods-ev20261020",
       "status": "unknown",
-      "sourceRefs": [
-        "src-c-goods-2",
-        "src-c-sale-14"
-      ],
       "visibility": "public"
     },
     {
@@ -1004,10 +807,6 @@
       "periodNote": "公式告知記載の税込価格・受注期間。在庫と現在の受付状態は未確認。",
       "url": "https://store.paletteproject.jp/collections/pp-goods-ev20261020",
       "status": "unknown",
-      "sourceRefs": [
-        "src-c-goods-2",
-        "src-c-sale-15"
-      ],
       "visibility": "public"
     },
     {
@@ -1023,10 +822,6 @@
       "periodNote": "公式告知記載の税込価格・受注期間。在庫と現在の受付状態は未確認。",
       "url": "https://store.paletteproject.jp/collections/pp-goods-ev20261020",
       "status": "unknown",
-      "sourceRefs": [
-        "src-c-goods-2",
-        "src-c-sale-16"
-      ],
       "visibility": "public"
     },
     {
@@ -1042,10 +837,6 @@
       "periodNote": "公式告知記載の税込価格・受注期間。在庫と現在の受付状態は未確認。",
       "url": "https://store.paletteproject.jp/collections/pp-goods-ev20261020",
       "status": "unknown",
-      "sourceRefs": [
-        "src-c-goods-2",
-        "src-c-sale-17"
-      ],
       "visibility": "public"
     },
     {
@@ -1061,10 +852,6 @@
       "periodNote": "公式告知記載の税込価格・受注期間。在庫と現在の受付状態は未確認。",
       "url": "https://store.paletteproject.jp/collections/pp-goods-ev20261020",
       "status": "unknown",
-      "sourceRefs": [
-        "src-c-goods-2",
-        "src-c-sale-18"
-      ],
       "visibility": "public"
     },
     {
@@ -1080,10 +867,6 @@
       "periodNote": "公式告知記載の税込価格・受注期間。在庫と現在の受付状態は未確認。",
       "url": "https://store.paletteproject.jp/collections/pp-goods-ev20261020",
       "status": "unknown",
-      "sourceRefs": [
-        "src-c-goods-2",
-        "src-c-sale-19"
-      ],
       "visibility": "public"
     },
     {
@@ -1099,10 +882,6 @@
       "periodNote": "公式告知記載の税込価格・受注期間。在庫と現在の受付状態は未確認。",
       "url": "https://store.paletteproject.jp/products/ktmay-goods-20260927",
       "status": "unknown",
-      "sourceRefs": [
-        "src-c-goods-3",
-        "src-c-sale-20"
-      ],
       "visibility": "public"
     },
     {
@@ -1118,10 +897,6 @@
       "periodNote": "公式告知記載の税込価格・受注期間。在庫と現在の受付状態は未確認。",
       "url": "https://store.paletteproject.jp/products/ktmay-goods-20260927",
       "status": "unknown",
-      "sourceRefs": [
-        "src-c-goods-3",
-        "src-c-sale-21"
-      ],
       "visibility": "public"
     },
     {
@@ -1137,10 +912,6 @@
       "periodNote": "公式告知記載の税込価格・受注期間。在庫と現在の受付状態は未確認。",
       "url": "https://store.paletteproject.jp/products/ktmay-goods-20260927",
       "status": "unknown",
-      "sourceRefs": [
-        "src-c-goods-3",
-        "src-c-sale-22"
-      ],
       "visibility": "public"
     },
     {
@@ -1156,10 +927,6 @@
       "periodNote": "公式告知記載の税込価格・受注期間。在庫と現在の受付状態は未確認。",
       "url": "https://store.paletteproject.jp/products/ktmay-goods-20260927",
       "status": "unknown",
-      "sourceRefs": [
-        "src-c-goods-3",
-        "src-c-sale-23"
-      ],
       "visibility": "public"
     },
     {
@@ -1175,10 +942,6 @@
       "periodNote": "公式告知記載の税込価格・受注期間。在庫と現在の受付状態は未確認。",
       "url": "https://store.paletteproject.jp/products/ktmay-goods-20260927",
       "status": "unknown",
-      "sourceRefs": [
-        "src-c-goods-3",
-        "src-c-sale-24"
-      ],
       "visibility": "public"
     },
     {
@@ -1194,10 +957,6 @@
       "periodNote": "公式告知記載の税込価格・受注期間。在庫と現在の受付状態は未確認。",
       "url": "https://store.paletteproject.jp/products/ktmay-goods-20260927",
       "status": "unknown",
-      "sourceRefs": [
-        "src-c-goods-3",
-        "src-c-sale-25"
-      ],
       "visibility": "public"
     },
     {
@@ -1213,10 +972,6 @@
       "periodNote": "公式告知記載の税込価格・受注期間。在庫と現在の受付状態は未確認。",
       "url": "https://paletteproject.booth.pm/items/8740582",
       "status": "unknown",
-      "sourceRefs": [
-        "src-c-goods-3",
-        "src-c-sale-26"
-      ],
       "visibility": "public"
     },
     {
@@ -1232,10 +987,6 @@
       "periodNote": "公式告知記載の税込価格・受注期間。在庫と現在の受付状態は未確認。",
       "url": "https://store.paletteproject.jp/",
       "status": "unknown",
-      "sourceRefs": [
-        "src-c-goods-4",
-        "src-c-sale-27"
-      ],
       "visibility": "public"
     },
     {
@@ -1251,10 +1002,6 @@
       "periodNote": "公式告知記載の税込価格・受注期間。在庫と現在の受付状態は未確認。",
       "url": "https://store.paletteproject.jp/",
       "status": "unknown",
-      "sourceRefs": [
-        "src-c-goods-4",
-        "src-c-sale-28"
-      ],
       "visibility": "public"
     },
     {
@@ -1270,10 +1017,6 @@
       "periodNote": "公式告知記載の税込価格・受注期間。在庫と現在の受付状態は未確認。",
       "url": "https://store.paletteproject.jp/",
       "status": "unknown",
-      "sourceRefs": [
-        "src-c-goods-4",
-        "src-c-sale-29"
-      ],
       "visibility": "public"
     },
     {
@@ -1289,10 +1032,6 @@
       "periodNote": "公式告知記載の税込価格・受注期間。在庫と現在の受付状態は未確認。",
       "url": "https://store.paletteproject.jp/",
       "status": "unknown",
-      "sourceRefs": [
-        "src-c-goods-4",
-        "src-c-sale-30"
-      ],
       "visibility": "public"
     },
     {
@@ -1308,10 +1047,6 @@
       "periodNote": "公式告知記載の税込価格・受注期間。在庫と現在の受付状態は未確認。",
       "url": "https://store.paletteproject.jp/",
       "status": "unknown",
-      "sourceRefs": [
-        "src-c-goods-5",
-        "src-c-sale-31"
-      ],
       "visibility": "public"
     },
     {
@@ -1327,10 +1062,6 @@
       "periodNote": "公式告知記載の税込価格・受注期間。在庫と現在の受付状態は未確認。",
       "url": "https://store.paletteproject.jp/",
       "status": "unknown",
-      "sourceRefs": [
-        "src-c-goods-5",
-        "src-c-sale-32"
-      ],
       "visibility": "public"
     },
     {
@@ -1346,10 +1077,6 @@
       "periodNote": "公式告知記載の税込価格・受注期間。在庫と現在の受付状態は未確認。",
       "url": "https://store.paletteproject.jp/products/ntngm-goods-20260827",
       "status": "unknown",
-      "sourceRefs": [
-        "src-c-goods-6",
-        "src-c-sale-33"
-      ],
       "visibility": "public"
     },
     {
@@ -1365,10 +1092,6 @@
       "periodNote": "公式告知記載の税込価格・受注期間。在庫と現在の受付状態は未確認。",
       "url": "https://store.paletteproject.jp/products/ntngm-goods-20260827",
       "status": "unknown",
-      "sourceRefs": [
-        "src-c-goods-6",
-        "src-c-sale-34"
-      ],
       "visibility": "public"
     },
     {
@@ -1384,10 +1107,6 @@
       "periodNote": "公式告知記載の税込価格・受注期間。在庫と現在の受付状態は未確認。",
       "url": "https://store.paletteproject.jp/products/ntngm-goods-20260827",
       "status": "unknown",
-      "sourceRefs": [
-        "src-c-goods-6",
-        "src-c-sale-35"
-      ],
       "visibility": "public"
     },
     {
@@ -1403,10 +1122,6 @@
       "periodNote": "公式告知記載の税込価格・受注期間。在庫と現在の受付状態は未確認。",
       "url": "https://store.paletteproject.jp/products/ntngm-goods-20260827",
       "status": "unknown",
-      "sourceRefs": [
-        "src-c-goods-6",
-        "src-c-sale-36"
-      ],
       "visibility": "public"
     },
     {
@@ -1422,10 +1137,6 @@
       "periodNote": "公式告知記載の税込価格・受注期間。在庫と現在の受付状態は未確認。",
       "url": "https://store.paletteproject.jp/products/ntngm-goods-20260827",
       "status": "unknown",
-      "sourceRefs": [
-        "src-c-goods-6",
-        "src-c-sale-37"
-      ],
       "visibility": "public"
     },
     {
@@ -1441,10 +1152,6 @@
       "periodNote": "公式告知記載の税込価格・受注期間。在庫と現在の受付状態は未確認。",
       "url": "https://store.paletteproject.jp/products/ntngm-goods-20260827",
       "status": "unknown",
-      "sourceRefs": [
-        "src-c-goods-6",
-        "src-c-sale-38"
-      ],
       "visibility": "public"
     },
     {
@@ -1460,10 +1167,6 @@
       "periodNote": "公式告知記載の税込価格・受注期間。在庫と現在の受付状態は未確認。",
       "url": "https://store.paletteproject.jp/products/ntngm-goods-20260827",
       "status": "unknown",
-      "sourceRefs": [
-        "src-c-goods-6",
-        "src-c-sale-39"
-      ],
       "visibility": "public"
     },
     {
@@ -1479,10 +1182,6 @@
       "periodNote": "公式告知記載の税込価格・受注期間。在庫と現在の受付状態は未確認。",
       "url": "https://store.paletteproject.jp/products/ntngm-goods-20260827",
       "status": "unknown",
-      "sourceRefs": [
-        "src-c-goods-6",
-        "src-c-sale-40"
-      ],
       "visibility": "public"
     },
     {
@@ -1498,10 +1197,6 @@
       "periodNote": "公式告知記載の税込価格・受注期間。在庫と現在の受付状態は未確認。",
       "url": "https://paletteproject.booth.pm/items/8736841",
       "status": "unknown",
-      "sourceRefs": [
-        "src-c-goods-6",
-        "src-c-sale-41"
-      ],
       "visibility": "public"
     }
   ]

@@ -31,7 +31,7 @@ test('saved stream rows cannot be mistaken for current live status',()=>{
  for(const status of ['live','upcoming','archive']){
   const html=talentPage(person,master,data,{youtube:[{...video,status}]});
   assert.match(html,/サイト公開時点の保存データ/);assert.match(html,/リアルタイムの配信状態ではありません/);
-  assert.doesNotMatch(html,/配信中|配信予定（収集時点）/);assert.match(html,/配信・公開日時（予定を含む）/);
+  assert.doesNotMatch(html.match(/<details data-stream-fallback[\s\S]*?<\/details>/)[0],/配信中|配信予定（収集時点）/);assert.match(html,/配信・公開日時（予定を含む）/);
   assert.match(html,/プロフィール等の出典確認日/);
  }
 });

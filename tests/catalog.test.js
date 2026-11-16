@@ -21,7 +21,7 @@ test('catalog schemas and cross references reject invalid IDs, subjects, sources
   bad(m=>m.anniversaries.events[0].countYears=true);
   bad(m=>m.anniversaries.events[0].recursYearly=false);
   bad(m=>m.anniversaries.events[0].privateNotes='secret');
-  bad(m=>m.catalog.sources[0].url='https://user:password@example.com/');
+  bad(m=>m.catalog.groups[0].privateNotes='secret');
 });
 test('public projections exclude drafts and their sources; public/draft references are rejected', () => {
   const m=model(); m.anniversaries.events[0].visibility='draft';
@@ -48,6 +48,5 @@ test('calendar filters, empty states, HTML escaping and unsafe external URL supp
   assert.match(core.calendar({...m,events:[]},'2026-11','2026-11-15'),/確認済み記念日はありません/);
   m.events[0].title='<img onerror=alert(1)>';
   assert.doesNotMatch(core.calendar(m,'2027-01','2026-11-15'),/<img onerror/);
-  m.sources=[{id:'src-x',url:'javascript:alert(1)',checkedAt:'2026-01-01T00:00:00Z'}];
-  assert.equal(core.sourceLinks({sourceRefs:['src-x']},m),'');
+  assert.doesNotMatch(core.upcoming(m,'2027-01-01'),/出典|sourceRefs/);
 });

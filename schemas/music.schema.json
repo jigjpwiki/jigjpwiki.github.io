@@ -8,7 +8,7 @@
   ],
   "properties": {
     "schemaVersion": {
-      "const": 1
+      "const": 2
     },
     "songs": {
       "type": "array",
@@ -22,8 +22,6 @@
           "aliases",
           "readings",
           "identityUrl",
-          "artistEvidence",
-          "sourceRefs",
           "visibility"
         ],
         "properties": {
@@ -82,16 +80,6 @@
               }
             ]
           },
-          "artistEvidence": {
-            "enum": [
-              "original_source",
-              "performer_description",
-              "unknown"
-            ]
-          },
-          "sourceRefs": {
-            "$ref": "https://www.jigdule.jp/schemas/feature-common#/definitions/refs"
-          },
           "visibility": {
             "enum": [
               "public",
@@ -123,8 +111,7 @@
                 "entityType",
                 "id",
                 "sourceUrl",
-                "status",
-                "checkedAt"
+                "status"
               ],
               "properties": {
                 "provider": {
@@ -148,10 +135,6 @@
                 },
                 "status": {
                   "const": "verified"
-                },
-                "checkedAt": {
-                  "type": "string",
-                  "format": "date-time"
                 }
               }
             }
@@ -207,7 +190,6 @@
           "talentIds",
           "youtubeId",
           "registeredAt",
-          "sourceRefs",
           "visibility"
         ],
         "properties": {
@@ -254,9 +236,6 @@
           "registeredAt": {
             "type": "string",
             "format": "date-time"
-          },
-          "sourceRefs": {
-            "$ref": "https://www.jigdule.jp/schemas/feature-common#/definitions/refs"
           },
           "visibility": {
             "enum": [

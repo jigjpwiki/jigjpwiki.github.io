@@ -8,6 +8,7 @@ export const forms = {
 };
 import validate from "./validate.cjs";
 import talentLib from "../../lib/talents.js";
+import migration from "../../lib/source-migration.js";
 import { hash, fail } from "./security.mjs";
 const lists = {
   talent: ["talents", "talents", "tal"],
@@ -60,19 +61,6 @@ export function accountUsage(models, talent) {
     if (models[file]) scan(models[file], "", file);
   return out;
 }
-const refsOf = (row) => [
-  ...new Set(
-    Object.entries(row || {}).flatMap(([k, v]) =>
-      k.endsWith("SourceRefs") || k === "sourceRefs"
-        ? v
-        : Array.isArray(v)
-          ? v.flatMap((x) => (typeof x === "object" ? refsOf(x) : []))
-          : v && typeof v === "object"
-            ? refsOf(v)
-            : [],
-    ),
-  ),
-];
 function rewire(value, from, to) {
   if (value === from) return to;
   if (Array.isArray(value)) {
@@ -117,10 +105,9 @@ export async function preview(snapshot, input, { actor } = {}) {
           "id",
           "targetId",
           "value",
-          "sources",
           "reason",
           "confirm",
-          "evidence",
+          "confirmation",
           "collection",
         ].includes(k),
     ) ||
@@ -133,7 +120,7 @@ export async function preview(snapshot, input, { actor } = {}) {
     input.reason.length > 500
   )
     fail(400, "invalid_operation");
-  const before = snapshot.models,
+  const before = migration.migrateModels(snapshot.models),
     models = structuredClone(before),
     [file, list, kind] = lists[input.entity],
     rows = models[file][list];
@@ -144,18 +131,6 @@ export async function preview(snapshot, input, { actor } = {}) {
       ...before.talents.organizations.map((o) => o.id),
     ]),
   ];
-  const sourceRows =
-    input.entity === "group" ? models.catalog.sources : models.talents.sources;
-  if (input.sources !== undefined) {
-    if (!Array.isArray(input.sources) || input.sources.length > 10)
-      fail(400, "invalid_sources");
-    for (const source of input.sources) {
-      const previous = sourceRows.find((s) => s.id === source.id);
-      if (previous && !equal(previous, source))
-        fail(409, "source_id_conflict_use_new_id");
-      if (!previous) sourceRows.push(source);
-    }
-  }
   let target,
     id = old?.id;
   if (input.action === "save") {
@@ -165,7 +140,7 @@ export async function preview(snapshot, input, { actor } = {}) {
       (input.value.id && input.value.id !== input.id)
     )
       fail(400, "stable_id_required");
-    const record = structuredClone(input.value);
+    const record = migration.withoutSources(input.value);
     if (!String(record.displayName ?? record.name ?? "").trim())
       fail(400, "name_required");
     if (
@@ -206,12 +181,12 @@ export async function preview(snapshot, input, { actor } = {}) {
         const channel =
           record.accounts?.find((a) => a.service === "youtube" && a.accountId)
             ?.accountId || null;
-        const source = models.talents.sources.find(
-          (s) =>
-            record.displayNameSourceRefs?.includes(s.id) &&
-            s.kind === "official",
-        );
-        if (!source) fail(400, "official_identity_required");
+        const profileUrl =
+          record.officialProfileUrl ||
+          record.accounts?.find((a) => talentLib.publicUrl(a.url))?.url;
+        if (profileUrl && !talentLib.publicUrl(profileUrl))
+          fail(400, "invalid_identity_url");
+        if (!channel && profileUrl) record.officialProfileUrl = profileUrl;
         if (
           channel &&
           models["talent-id-registry"].issued.some(
@@ -221,15 +196,16 @@ export async function preview(snapshot, input, { actor } = {}) {
           fail(409, "identity_already_reserved");
         if (
           !channel &&
+          profileUrl &&
           models["talent-id-registry"].issued.some(
-            (r) => r.officialProfileUrl === source.url,
+            (r) => r.officialProfileUrl === profileUrl,
           )
         )
           fail(409, "official_profile_identity_already_registered");
         models["talent-id-registry"].issued.push({
           id,
           youtubeChannelId: channel,
-          officialProfileUrl: source.url,
+          officialProfileUrl: profileUrl || null,
         });
       } else if (kind === "group")
         models["catalog-id-registry"].issued.push(id);
@@ -288,7 +264,6 @@ export async function preview(snapshot, input, { actor } = {}) {
             type: "alias",
             from: null,
             to: null,
-            sourceRefs: old.displayNameSourceRefs,
           });
       }
       rows.splice(rows.indexOf(old), 1);
@@ -362,38 +337,21 @@ export async function preview(snapshot, input, { actor } = {}) {
     changed = record
       ? Object.keys(record).filter((k) => !equal(old?.[k], record[k]))
       : [];
-  const needsApproval = true; // Even metadata-only changes require fresh evidence.
-  if (needsApproval) {
-    if (
-      !input.evidence ||
-      input.evidence.status !== "verified" ||
-      input.evidence.valueHash !==
-        (await hash(
-          input.value ?? {
-            action: input.action,
-            id: input.id,
-            targetId: input.targetId ?? null,
-            collection: input.collection ?? null,
-          },
-        )) ||
-      !talentLib.publicUrl(input.evidence.url) ||
-      !Number.isFinite(Date.parse(input.evidence.checkedAt)) ||
-      Date.parse(input.evidence.checkedAt) > Date.now() + 300000
-    )
-      fail(400, "field_confirmation_required");
-    if (record && input.action === "save") {
-      const sources = [...models.talents.sources, ...models.catalog.sources];
-      const proof = refsOf(record)
-        .map((id) => sources.find((s) => s.id === id))
-        .filter(Boolean);
-      if (
-        !proof.some(
-          (s) => s.kind === "official" && s.url === input.evidence.url,
-        )
-      )
-        fail(400, "evidence_must_match_record_source");
-    }
-  }
+  // Confirmation is bound to the exact submitted change, independently of provenance.
+  if (
+    !input.confirmation ||
+    input.confirmation.status !== "confirmed" ||
+    input.confirmation.valueHash !==
+      (await hash(
+        input.value ?? {
+          action: input.action,
+          id: input.id,
+          targetId: input.targetId ?? null,
+          collection: input.collection ?? null,
+        },
+      ))
+  )
+    fail(400, "field_confirmation_required");
   try {
     const previous =
       input.action === "merge" && kind === "tal"
@@ -457,7 +415,6 @@ export async function preview(snapshot, input, { actor } = {}) {
     subject: id,
     action: input.action,
     reason: input.reason,
-    evidence: input.evidence,
     changedFields: changed,
     at: new Date().toISOString(),
   });
@@ -469,10 +426,13 @@ export async function preview(snapshot, input, { actor } = {}) {
       after: ledger,
     });
   return {
+    migrationPending: migration.names.some(
+      (name) => snapshot.models[name]?.schemaVersion !== 2,
+    ),
     files,
     diff,
     title,
     impact,
-    summary: `対象: ${id}\n操作: ${input.action}\n理由: ${input.reason}\n出典: ${input.evidence.url}\n確認: ${input.evidence.checkedAt}\n変更: ${Object.keys(files).join(", ")}\n全masterのSchema/意味的整合性を検証済み。参照影響${impact.references.length}件。`,
+    summary: `対象: ${id}\n操作: ${input.action}\n理由: ${input.reason}\n変更: ${Object.keys(files).join(", ")}\n全masterのSchema/意味的整合性を検証済み。参照影響${impact.references.length}件。`,
   };
 }

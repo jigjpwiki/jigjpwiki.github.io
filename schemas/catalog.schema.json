@@ -4,45 +4,11 @@
   "additionalProperties": false,
   "required": [
     "schemaVersion",
-    "sources",
     "groups"
   ],
   "properties": {
     "schemaVersion": {
-      "const": 1
-    },
-    "sources": {
-      "type": "array",
-      "items": {
-        "type": "object",
-        "additionalProperties": false,
-        "required": [
-          "id",
-          "kind",
-          "url",
-          "checkedAt"
-        ],
-        "properties": {
-          "id": {
-            "type": "string",
-            "pattern": "^src-[a-z0-9-]+$"
-          },
-          "kind": {
-            "enum": [
-              "official",
-              "wiki"
-            ]
-          },
-          "url": {
-            "type": "string",
-            "format": "public-url"
-          },
-          "checkedAt": {
-            "type": "string",
-            "format": "date-time"
-          }
-        }
-      }
+      "const": 2
     },
     "groups": {
       "type": "array",
@@ -55,7 +21,6 @@
           "organizationId",
           "talentIds",
           "membersComplete",
-          "sourceRefs",
           "visibility"
         ],
         "properties": {
@@ -89,15 +54,6 @@
           },
           "membersComplete": {
             "type": "boolean"
-          },
-          "sourceRefs": {
-            "type": "array",
-            "items": {
-              "type": "string",
-              "pattern": "^src-[a-z0-9-]+$"
-            },
-            "minItems": 1,
-            "uniqueItems": true
           },
           "visibility": {
             "enum": [

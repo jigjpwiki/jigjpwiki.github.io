@@ -17,6 +17,10 @@ export async function api(path, method = "GET", value) {
   if (!r.ok)
     throw new Error(
       {
+        admin_updated_reload:
+          "管理画面が更新されました。再読み込みしてください。",
+        migration_pending_reload:
+          "データ移行中です。移行完了後に再読み込みしてプレビューし直してください。",
         main_changed_reload:
           "mainが更新されました。最新mainを再読み込みし、変更を再確認してください。",
         references_prevent_deletion:
@@ -25,10 +29,7 @@ export async function api(path, method = "GET", value) {
           "公開済みの参照が残っています。履歴を維持する対応方針を先にレビューしてください。",
         official_profile_identity_already_registered:
           "同じ公式プロフィールのIDが登録済みです。重複と改名を確認してください。",
-        evidence_must_match_record_source:
-          "編集したレコードに紐づく公式出典を確認してください。",
-        field_confirmation_required:
-          "変更後の値と公式出典をもう一度確認してください。",
+        field_confirmation_required: "変更内容をもう一度確認してください。",
         confirmation_name_and_id_required:
           "対象IDと表示名を正確に入力してください。",
       }[data.error] ||
@@ -119,16 +120,12 @@ const labels = {
   service: "サービス",
   accountId: "アカウントID（不明ならnull）",
   url: "URL",
-  sourceRefs: "出典ID",
-  displayNameSourceRefs: "名前の出典ID",
   wiki: "非公式Wiki",
   profileImage: "プロフィール画像",
   talentIds: "メンバーID",
   membersComplete: "メンバー一覧確認済み",
   visibility: "公開状態",
   id: "固定内部ID",
-  kind: "出典の種類",
-  checkedAt: "確認日時（UTC）",
 };
 const enumLabels = {
   unknown: "不明",
@@ -152,23 +149,21 @@ const enumLabels = {
 const initial = {
   talent: {
     displayName: "",
-    displayNameSourceRefs: [],
     aliases: [],
     affiliations: [],
-    agencyStatus: { value: "unknown", sourceRefs: [] },
-    activityStatus: { value: "unknown", sourceRefs: [] },
+    agencyStatus: { value: "unknown" },
+    activityStatus: { value: "unknown" },
     accounts: [],
     wiki: null,
     profileImage: null,
     visibility: "public",
   },
-  organization: { name: "", sourceRefs: [] },
+  organization: { name: "" },
   group: {
     name: "",
     organizationId: null,
     talentIds: [],
     membersComplete: false,
-    sourceRefs: [],
     visibility: "draft",
   },
 };
@@ -178,10 +173,6 @@ const rows = () =>
     : entity === "organization"
       ? snapshot.models.talents.organizations
       : snapshot.models.catalog.groups;
-const allSources = () => [
-  ...snapshot.models.talents.sources,
-  ...snapshot.models.catalog.sources,
-];
 const button = (text, fn) => {
   const b = node("button", text);
   b.type = "button";
@@ -199,23 +190,6 @@ const link = (text, url) => {
     }
   } catch {}
   return a;
-};
-const sourcesView = (refs) => {
-  const d = node("details"),
-    summary = node("summary", "出典・確認日時");
-  d.append(summary);
-  for (const id of refs) {
-    const s = allSources().find((s) => s.id === id);
-    d.append(
-      s
-        ? link(
-            `${s.kind === "official" ? "公式" : "非公式Wiki"} / ${s.url} / ${s.checkedAt}`,
-            s.url,
-          )
-        : node("p", id),
-    );
-  }
-  return d;
 };
 let referenceIndex;
 function related(id) {
@@ -490,7 +464,6 @@ function detail(record) {
   view.append(
     node("h3", "関連情報・削除前の影響"),
     node("pre", refs.join("\n") || "ID参照なし"),
-    sourcesView(record.displayNameSourceRefs || record.sourceRefs || []),
   );
   if (record.accounts)
     for (const a of record.accounts)
@@ -519,37 +492,25 @@ function detail(record) {
   );
   view.append(button("非公開化・統合・削除・対象変更", () => manage(record)));
 }
-function approval(form, value, onPreview, extraSources = []) {
+function approval(form, value, onPreview) {
   const reason = node("textarea");
   reason.setAttribute("aria-label", "変更理由");
   form.append(node("label", "変更理由"), reason);
-  const source = node("select");
-  source.setAttribute("aria-label", "確認した公式出典");
-  for (const s of [...allSources(), ...extraSources].filter(
-    (s) => s.kind === "official",
-  ))
-    source.append(new Option(s.url, s.url));
   const checked = node("input");
   checked.type = "checkbox";
-  checked.id = "evidence-confirmed";
+  checked.id = "change-confirmed";
   const label = node("label");
   label.append(
     checked,
-    document.createTextNode(
-      "変更する値と公式出典を確認しました（値変更時は再確認）",
-    ),
+    document.createTextNode("変更内容を確認しました（値変更時は再確認）"),
   );
   form.append(
-    source,
     label,
     button("変更プレビュー", async () => {
-      if (!checked.checked)
-        throw new Error("公式出典と変更内容の確認が必要です");
+      if (!checked.checked) throw new Error("変更内容の確認が必要です");
       await onPreview(
         {
-          status: "verified",
-          url: source.value,
-          checkedAt: new Date().toISOString(),
+          status: "confirmed",
           valueHash: await digest(value()),
         },
         reason.value,
@@ -627,19 +588,16 @@ function edit(record) {
           if (other) edit(other);
         }
       },
-      onPreview: async ({ value, sources, reason, evidenceUrl, checkedAt }) =>
+      onPreview: async ({ value, reason }) =>
         showPreview({
           sha: snapshot.sha,
           entity,
           action: "save",
           ...(record ? { id: record.id } : {}),
           value,
-          sources,
           reason,
-          evidence: {
-            status: "verified",
-            url: evidenceUrl,
-            checkedAt,
+          confirmation: {
+            status: "confirmed",
             valueHash: await digest(value),
           },
         }),
@@ -685,7 +643,7 @@ function manage(record) {
   };
   action.onchange = () => {
     modes();
-    const c = $("#evidence-confirmed");
+    const c = $("#change-confirmed");
     if (c) c.checked = false;
   };
   modes();
@@ -717,7 +675,7 @@ function manage(record) {
             targetId: action.value === "merge" ? target.value : null,
             collection: action.value === "collection" ? mode.value : null,
           };
-  approval(view, data, (evidence, reason) =>
+  approval(view, data, (confirmation, reason) =>
     showPreview({
       sha: snapshot.sha,
       entity,
@@ -729,7 +687,7 @@ function manage(record) {
         ? { value: data() }
         : {}),
       confirm: confirm.value,
-      evidence,
+      confirmation,
       reason,
     }),
   );
@@ -754,8 +712,6 @@ function displayValue(value, path) {
             )
             .join(" / "))
     );
-  if (path.includes("sourceRefs") || path.includes("SourceRefs"))
-    return allSources().find((s) => s.id === value)?.url || "未確認の出典";
   if (path.endsWith("organizationId"))
     return (
       snapshot.models.talents.organizations.find((o) => o.id === value)?.name ||
@@ -795,26 +751,6 @@ async function showPreview(input) {
       after?.displayName || after?.name || before?.displayName || plan.title,
     ),
     node("p", "変更理由：" + input.reason),
-  );
-  const proof = input.evidence || {};
-  intro.append(
-    link(
-      "確認した公式出典：" + (proof.url || proof.sourceUrl || ""),
-      proof.url || proof.sourceUrl,
-    ),
-  );
-  // The server's frozen preview timestamp is authoritative on idempotent retries.
-  const checkedAt =
-    plan.summary.match(/確認: ([^\n]+)/)?.[1] || proof.checkedAt;
-  intro.append(
-    node(
-      "p",
-      "確認日時：" +
-        new Date(checkedAt).toLocaleString("ja-JP", {
-          timeZone: "Asia/Tokyo",
-        }) +
-        "（日本時間）",
-    ),
   );
   view.append(intro);
   const comparison = node("section");
@@ -884,7 +820,7 @@ async function showPreview(input) {
   );
   view.append(label);
   const submit = button("確認した変更でPRを作成", async () => {
-    if (submitted || !confirm.checked) return;
+    if (submitted || !confirm.checked || snapshot.migrationPending) return;
     submitted = true;
     submit.disabled = true;
     submit.textContent = "PRを作成中…";
@@ -908,7 +844,9 @@ async function showPreview(input) {
     }
   });
   submit.disabled = true;
-  confirm.onchange = () => (submit.disabled = !confirm.checked || submitted);
+  confirm.onchange = () =>
+    (submit.disabled =
+      !confirm.checked || submitted || snapshot.migrationPending);
   view.append(
     submit,
     button("編集に戻る（再プレビューが必要）", () => {
@@ -916,7 +854,11 @@ async function showPreview(input) {
       else listView();
     }),
   );
-  showStatus("プレビュー済み。まだGitHubへ書き込んでいません。");
+  showStatus(
+    snapshot.migrationPending
+      ? "データ移行中です。プレビューできますが、PR作成は移行後に再読み込みしてください。"
+      : "プレビュー済み。まだGitHubへ書き込んでいません。",
+  );
   view.querySelector("h2").tabIndex = -1;
   view.querySelector("h2").focus();
 }

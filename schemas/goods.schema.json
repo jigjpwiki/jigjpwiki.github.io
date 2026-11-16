@@ -10,7 +10,7 @@
   ],
   "properties": {
     "schemaVersion": {
-      "const": 1
+      "const": 2
     },
     "products": {
       "type": "array",
@@ -23,7 +23,6 @@
           "talentIds",
           "groupIds",
           "image",
-          "sourceRefs",
           "visibility"
         ],
         "properties": {
@@ -63,15 +62,6 @@
               }
             ]
           },
-          "sourceRefs": {
-            "type": "array",
-            "items": {
-              "type": "string",
-              "pattern": "^src-[a-z0-9-]+$"
-            },
-            "minItems": 1,
-            "uniqueItems": true
-          },
           "visibility": {
             "enum": [
               "public",
@@ -93,7 +83,6 @@
         "required": [
           "id",
           "title",
-          "sourceRefs",
           "visibility"
         ],
         "properties": {
@@ -105,15 +94,6 @@
             "type": "string",
             "minLength": 1,
             "maxLength": 240
-          },
-          "sourceRefs": {
-            "type": "array",
-            "items": {
-              "type": "string",
-              "pattern": "^src-[a-z0-9-]+$"
-            },
-            "minItems": 1,
-            "uniqueItems": true
           },
           "visibility": {
             "enum": [
@@ -139,7 +119,6 @@
           "periodNote",
           "url",
           "status",
-          "sourceRefs",
           "visibility"
         ],
         "properties": {
@@ -243,15 +222,6 @@
               "sold_out",
               "unknown"
             ]
-          },
-          "sourceRefs": {
-            "type": "array",
-            "items": {
-              "type": "string",
-              "pattern": "^src-[a-z0-9-]+$"
-            },
-            "minItems": 1,
-            "uniqueItems": true
           },
           "visibility": {
             "enum": [

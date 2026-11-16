@@ -31,10 +31,8 @@ async function input(s, action = "save", value, id = "tal-000001", extra = {}) {
     ...(value !== undefined ? { value } : {}),
     ...extra,
     reason: "公式情報と照合して確認",
-    evidence: {
-      status: "verified",
-      url: s.models.talents.sources.find((s) => s.id === "src-mahiru-neru").url,
-      checkedAt: new Date().toISOString(),
+    confirmation: {
+      status: "confirmed",
       valueHash: await hash(proof),
     },
   };
@@ -53,31 +51,22 @@ test("edit validates all related masters, detects stale confirmation and stable 
   await assert.rejects(preview(s, stale), /confirmation/);
   const bad = structuredClone(request);
   bad.value.accounts[0].accountId = "UC" + "x".repeat(22);
-  bad.evidence.valueHash = await hash(bad.value);
+  bad.confirmation.valueHash = await hash(bad.value);
   await assert.rejects(preview(s, bad), /validation/);
 });
-test("new identity issues next reserved ID, handles same names and unknown states, validates sources", async () => {
+test("new identity issues next reserved ID, handles same names and unknown states, needs no source input", async () => {
   const s = snapshot(),
     value = structuredClone(s.models.talents.talents[0]);
   delete value.id;
   value.accounts = [];
   value.affiliations = [];
-  value.agencyStatus = { value: "unknown", sourceRefs: [] };
-  value.activityStatus = { value: "unknown", sourceRefs: [] };
+  value.agencyStatus = { value: "unknown" };
+  value.activityStatus = { value: "unknown" };
   value.wiki = null;
   value.profileImage = null;
-  value.displayNameSourceRefs = ["src-fixture-new"];
+  value.officialProfileUrl = "https://official.example/second-person";
   const req = await input(s, "save", value, undefined);
   delete req.id;
-  req.sources = [
-    {
-      id: "src-fixture-new",
-      kind: "official",
-      url: "https://official.example/second-person",
-      checkedAt: new Date().toISOString(),
-    },
-  ];
-  req.evidence.url = req.sources[0].url;
   const plan = await preview(s, req, { actor: "123" });
   assert.equal(plan.files.talents.talents.length, 98);
   assert.equal(plan.files.talents.talents.at(-1).id, "tal-000098");
@@ -85,8 +74,6 @@ test("new identity issues next reserved ID, handles same names and unknown state
   value.accounts = s.models.talents.talents[0].accounts;
   const duplicate = await input(s, "save", value);
   delete duplicate.id;
-  duplicate.sources = req.sources;
-  duplicate.evidence.url = req.sources[0].url;
   await assert.rejects(
     preview(s, duplicate),
     /duplicate account|identity_already_reserved/,
@@ -134,17 +121,16 @@ function addIsolated(s, n) {
       id: "src-fixture-" + n,
       kind: "official",
       url: "https://official.example/person/" + n,
-      checkedAt: new Date().toISOString(),
     };
-  s.models.talents.sources.push(source);
   const t = {
     id,
     displayName: "検証専用" + n,
-    displayNameSourceRefs: [source.id],
+    officialProfileUrl: source.url,
+
     aliases: [],
     affiliations: [],
-    agencyStatus: { value: "unknown", sourceRefs: [] },
-    activityStatus: { value: "unknown", sourceRefs: [] },
+    agencyStatus: { value: "unknown" },
+    activityStatus: { value: "unknown" },
     accounts: [],
     wiki: null,
     profileImage: null,
@@ -195,16 +181,16 @@ test("an invalid cross-master reference blocks unrelated talent edits", async ()
   value.displayName += "確認";
   await assert.rejects(preview(s, await input(s, "save", value)), /validation/);
 });
-test("unchanged saves cannot create audit-only PRs or bypass fresh verification", async () => {
+test("unchanged saves cannot create audit-only PRs or bypass fresh change confirmation", async () => {
   const s = snapshot();
   const value = structuredClone(s.models.talents.talents[0]);
   const request = await input(s, "save", value);
   await assert.rejects(preview(s, request, { actor: "123" }), /no_changes/);
-  delete request.evidence;
+  delete request.confirmation;
   await assert.rejects(preview(s, request, { actor: "123" }), /confirmation/);
 });
 
-test("Lee image draft passes full validation without changing Wiki refs, other talents or other masters", async () => {
+test("Lee image draft passes full validation without changing Wiki URL, other talents or other masters", async () => {
   const { createDraft } = await import("../public/draft.js");
   const s = snapshot(),
     before = structuredClone(s.models);
@@ -217,9 +203,6 @@ test("Lee image draft passes full validation without changing Wiki refs, other t
     "https://pbs.twimg.com/media/fixture-image.png",
   );
   const request = await input(s, "save", draft.payload(), record.id);
-  request.evidence.url = s.models.talents.sources.find(
-    (source) => source.id === "src-lee-jupita",
-  ).url;
   const plan = await preview(s, request, { actor: "123" });
   assert.deepEqual(
     plan.files.talents.talents.find((t) => t.id === record.id).wiki,
@@ -231,12 +214,55 @@ test("Lee image draft passes full validation without changing Wiki refs, other t
   );
   assert.deepEqual(s.models, before);
   assert.deepEqual(Object.keys(plan.files).sort(), ["admin-ledger", "talents"]);
-  draft.setOptionalRefs("wiki", []);
+  // Invalid content URLs still fail, independently of source management.
+  draft.optionalUrl("wiki", "javascript:alert(1)");
   await assert.rejects(
-    preview(s, {
-      ...(await input(s, "save", draft.payload(), record.id)),
-      evidence: { ...request.evidence, valueHash: await hash(draft.payload()) },
-    }),
+    preview(s, await input(s, "save", draft.payload(), record.id)),
     /validation/,
+  );
+});
+
+test("organization and group saves need no sources and preserve every other master", async () => {
+  for (const [entity, file, list] of [
+    ["organization", "talents", "organizations"],
+    ["group", "catalog", "groups"],
+  ]) {
+    const s = snapshot(),
+      before = structuredClone(s.models),
+      value = structuredClone(s.models[file][list][0]);
+    value.name += "（編集）";
+    const request = await input(s, "save", value, value.id, { entity });
+    const plan = await preview(s, request, { actor: "123" });
+    assert.equal(plan.files[file][list][0].name, value.name);
+    assert.deepEqual(s.models, before);
+    for (const name of Object.keys(before))
+      if (name !== file && name !== "admin-ledger") assert(!plan.files[name]);
+    const audit = plan.files["admin-ledger"].entries.at(-1);
+    assert.equal(audit.actor, "123");
+    assert(audit.reason);
+    assert(audit.at);
+    assert(!("evidence" in audit));
+  }
+});
+test("a new talent with unknown accounts can be proposed without an invented source or identity URL", async () => {
+  const s = snapshot(),
+    value = {
+      displayName: "未登録の人物",
+      aliases: [],
+      affiliations: [],
+      agencyStatus: { value: "unknown" },
+      activityStatus: { value: "unknown" },
+      accounts: [],
+      wiki: null,
+      profileImage: null,
+      visibility: "draft",
+    };
+  const request = await input(s, "save", value);
+  delete request.id;
+  const plan = await preview(s, request, { actor: "123" });
+  assert.equal(plan.files.talents.talents.at(-1).id, "tal-000098");
+  assert.equal(
+    plan.files["talent-id-registry"].issued.at(-1).officialProfileUrl,
+    null,
   );
 });

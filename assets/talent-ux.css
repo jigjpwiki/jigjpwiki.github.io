@@ -146,11 +146,6 @@
   border: 0;
   padding: 0;
 }
-.talent-profile .profile-provenance {
-  border-top: 1px solid #dedede !important;
-  padding-top: 20px !important;
-}
-.profile-provenance details,
 .profile-biography details {
   font-size: 13px;
 }

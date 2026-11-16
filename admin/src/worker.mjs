@@ -15,6 +15,7 @@ import {
 } from "./security.mjs";
 import { GitHub, repository } from "./github.mjs";
 import { preview, forms } from "./model.mjs";
+import migration from "../../lib/source-migration.js";
 export default {
   async fetch(request, env) {
     const url = new URL(request.url);
@@ -224,7 +225,10 @@ export class Admin {
       return json({
         sha: snapshot.sha,
         shas: snapshot.shas,
-        models: snapshot.models,
+        models: migration.migrateModels(snapshot.models),
+        migrationPending: migration.names.some(
+          (name) => snapshot.models[name]?.schemaVersion !== 2,
+        ),
       });
     }
     if (
@@ -233,6 +237,7 @@ export class Admin {
     ) {
       const input = await body(request),
         snapshot = await github.snapshot();
+      if (input.evidence || input.sources) fail(409, "admin_updated_reload");
       if (input.sha !== snapshot.sha) fail(409, "main_changed_reload");
       const plan = await preview(snapshot, input, { actor: session.id });
       const id = await hash({
@@ -240,7 +245,6 @@ export class Admin {
         sha: snapshot.sha,
         input: {
           ...input,
-          evidence: { ...input.evidence, checkedAt: undefined },
         },
       });
       if (await this.store.get("operation:" + id))
@@ -255,6 +259,7 @@ export class Admin {
           impact: cached.impact,
           files: Object.keys(cached.files),
         });
+      plan.sourceFreeProtocol = 1;
       plan.sha = snapshot.sha;
       plan.tree = snapshot.tree;
       plan.shas = snapshot.shas;
@@ -287,6 +292,12 @@ export class Admin {
           if (record?.result) return json(record.result);
           const plan = (await this.store.get("preview:" + key)) || record?.plan;
           if (!plan || plan.actor !== session.id) fail(409, "preview_expired");
+          if (
+            plan.sourceFreeProtocol !== 1 ||
+            plan.migrationPending ||
+            (record && !record.plan?.sourceFreeProtocol)
+          )
+            fail(409, "migration_pending_reload");
           if (!record) {
             const current = await github.call(
               "/repos/" + repository + "/git/ref/heads/main",
@@ -296,6 +307,7 @@ export class Admin {
             record = {
               actor: session.id,
               plan: {
+                sourceFreeProtocol: plan.sourceFreeProtocol,
                 sha: plan.sha,
                 tree: plan.tree,
                 files: plan.files,

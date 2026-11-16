@@ -1,23 +1,16 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "title": "jigdule public talent master v1",
+  "title": "jigdule public talent master v2",
   "type": "object",
   "additionalProperties": false,
   "required": [
     "schemaVersion",
-    "sources",
     "organizations",
     "talents"
   ],
   "properties": {
     "schemaVersion": {
-      "const": 1
-    },
-    "sources": {
-      "type": "array",
-      "items": {
-        "$ref": "#/$defs/source"
-      }
+      "const": 2
     },
     "organizations": {
       "type": "array",
@@ -33,43 +26,12 @@
     }
   },
   "$defs": {
-    "source": {
-      "type": "object",
-      "additionalProperties": false,
-      "required": [
-        "id",
-        "kind",
-        "url",
-        "checkedAt"
-      ],
-      "properties": {
-        "id": {
-          "type": "string",
-          "pattern": "^src-[a-z0-9-]+$"
-        },
-        "kind": {
-          "enum": [
-            "official",
-            "wiki"
-          ]
-        },
-        "url": {
-          "type": "string",
-          "format": "public-url"
-        },
-        "checkedAt": {
-          "type": "string",
-          "format": "date-time"
-        }
-      }
-    },
     "organization": {
       "type": "object",
       "additionalProperties": false,
       "required": [
         "id",
-        "name",
-        "sourceRefs"
+        "name"
       ],
       "properties": {
         "id": {
@@ -80,15 +42,6 @@
           "type": "string",
           "minLength": 1,
           "maxLength": 160
-        },
-        "sourceRefs": {
-          "type": "array",
-          "items": {
-            "type": "string",
-            "pattern": "^src-[a-z0-9-]+$"
-          },
-          "uniqueItems": true,
-          "minItems": 1
         }
       }
     },
@@ -99,8 +52,7 @@
         "name",
         "type",
         "from",
-        "to",
-        "sourceRefs"
+        "to"
       ],
       "properties": {
         "name": {
@@ -135,15 +87,6 @@
               "type": "null"
             }
           ]
-        },
-        "sourceRefs": {
-          "type": "array",
-          "items": {
-            "type": "string",
-            "pattern": "^src-[a-z0-9-]+$"
-          },
-          "uniqueItems": true,
-          "minItems": 1
         }
       }
     },
@@ -154,8 +97,7 @@
         "organizationId",
         "status",
         "from",
-        "to",
-        "sourceRefs"
+        "to"
       ],
       "properties": {
         "organizationId": {
@@ -190,15 +132,6 @@
               "type": "null"
             }
           ]
-        },
-        "sourceRefs": {
-          "type": "array",
-          "items": {
-            "type": "string",
-            "pattern": "^src-[a-z0-9-]+$"
-          },
-          "uniqueItems": true,
-          "minItems": 1
         }
       }
     },
@@ -206,8 +139,7 @@
       "type": "object",
       "additionalProperties": false,
       "required": [
-        "value",
-        "sourceRefs"
+        "value"
       ],
       "properties": {
         "value": {
@@ -216,15 +148,6 @@
             "unaffiliated",
             "unknown"
           ]
-        },
-        "sourceRefs": {
-          "type": "array",
-          "items": {
-            "type": "string",
-            "pattern": "^src-[a-z0-9-]+$"
-          },
-          "uniqueItems": true,
-          "minItems": 0
         }
       }
     },
@@ -232,8 +155,7 @@
       "type": "object",
       "additionalProperties": false,
       "required": [
-        "value",
-        "sourceRefs"
+        "value"
       ],
       "properties": {
         "value": {
@@ -244,15 +166,6 @@
             "ended",
             "unknown"
           ]
-        },
-        "sourceRefs": {
-          "type": "array",
-          "items": {
-            "type": "string",
-            "pattern": "^src-[a-z0-9-]+$"
-          },
-          "uniqueItems": true,
-          "minItems": 0
         }
       }
     },
@@ -262,8 +175,7 @@
       "required": [
         "service",
         "accountId",
-        "url",
-        "sourceRefs"
+        "url"
       ],
       "properties": {
         "service": {
@@ -289,15 +201,6 @@
         "url": {
           "type": "string",
           "format": "public-url"
-        },
-        "sourceRefs": {
-          "type": "array",
-          "items": {
-            "type": "string",
-            "pattern": "^src-[a-z0-9-]+$"
-          },
-          "uniqueItems": true,
-          "minItems": 1
         }
       }
     },
@@ -305,22 +208,12 @@
       "type": "object",
       "additionalProperties": false,
       "required": [
-        "url",
-        "sourceRefs"
+        "url"
       ],
       "properties": {
         "url": {
           "type": "string",
           "format": "public-url"
-        },
-        "sourceRefs": {
-          "type": "array",
-          "items": {
-            "type": "string",
-            "pattern": "^src-[a-z0-9-]+$"
-          },
-          "uniqueItems": true,
-          "minItems": 1
         }
       }
     },
@@ -328,22 +221,12 @@
       "type": "object",
       "additionalProperties": false,
       "required": [
-        "url",
-        "sourceRefs"
+        "url"
       ],
       "properties": {
         "url": {
           "type": "string",
           "format": "image-ref"
-        },
-        "sourceRefs": {
-          "type": "array",
-          "items": {
-            "type": "string",
-            "pattern": "^src-[a-z0-9-]+$"
-          },
-          "uniqueItems": true,
-          "minItems": 1
         }
       }
     },
@@ -353,7 +236,6 @@
       "required": [
         "id",
         "displayName",
-        "displayNameSourceRefs",
         "aliases",
         "affiliations",
         "agencyStatus",
@@ -371,15 +253,6 @@
           "type": "string",
           "minLength": 1,
           "maxLength": 160
-        },
-        "displayNameSourceRefs": {
-          "type": "array",
-          "items": {
-            "type": "string",
-            "pattern": "^src-[a-z0-9-]+$"
-          },
-          "uniqueItems": true,
-          "minItems": 1
         },
         "aliases": {
           "type": "array",
@@ -430,6 +303,10 @@
             "public",
             "draft"
           ]
+        },
+        "officialProfileUrl": {
+          "type": "string",
+          "format": "public-url"
         }
       }
     }

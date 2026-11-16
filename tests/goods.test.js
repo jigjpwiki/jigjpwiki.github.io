@@ -3,7 +3,7 @@ const test=require('node:test');const assert=require('node:assert/strict');const
 const fixture=require('./fixtures/goods.cjs');
 const check=m=>validateCatalog(m.talents,m.catalog,m.anniversaries,m.goods);
 test('product/campaign/offer references, unsafe URLs, duplicate IDs and periods are validated',()=>{
- for(const change of [m=>m.goods.offers[0].productId='product-999999',m=>m.goods.offers[0].campaignId='campaign-999999',m=>m.goods.products[0].talentIds=['tal-999999'],m=>m.goods.products[0].groupIds=['group-999999'],m=>m.goods.offers[0].url='javascript:alert(1)',m=>m.goods.offers[0].url='https://wrong.example/',m=>m.goods.offers[0].endsAt='2026-10-01T00:00:00Z',m=>m.goods.offers.push(structuredClone(m.goods.offers[0])),m=>m.goods.products[0].privateNote='secret',m=>m.goods.offers[0].price.amount=-1]){
+ for(const change of [m=>m.goods.offers[0].productId='product-999999',m=>m.goods.offers[0].campaignId='campaign-999999',m=>m.goods.products[0].talentIds=['tal-999999'],m=>m.goods.products[0].groupIds=['group-999999'],m=>m.goods.offers[0].url='javascript:alert(1)',m=>m.goods.offers[0].url='https://wrong.example/?token=secret',m=>m.goods.offers[0].endsAt='2026-10-01T00:00:00Z',m=>m.goods.offers.push(structuredClone(m.goods.offers[0])),m=>m.goods.products[0].privateNote='secret',m=>m.goods.offers[0].price.amount=-1]){
   const m=fixture();change(m);assert.throws(()=>check(m));
  }
  assert.equal(check(fixture()).goods.products.length,1);

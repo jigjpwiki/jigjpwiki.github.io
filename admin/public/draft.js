@@ -8,12 +8,8 @@ export function createDraft(record) {
   return {
     original,
     value,
-    sources: [],
     get dirty() {
-      return (
-        JSON.stringify(original) !== JSON.stringify(value) ||
-        this.sources.length > 0
-      );
+      return JSON.stringify(original) !== JSON.stringify(value);
     },
     optionalUrl(key, url) {
       if (!url.trim()) {
@@ -22,22 +18,13 @@ export function createDraft(record) {
         return;
       }
       value[key] = {
-        ...(value[key] ||
-          structuredClone(retained.get(key) || { sourceRefs: [] })),
+        ...(value[key] || structuredClone(retained.get(key) || {})),
         url,
       };
       retained.set(key, structuredClone(value[key]));
     },
     optionalValue(key) {
-      return structuredClone(
-        value[key] || retained.get(key) || { url: "", sourceRefs: [] },
-      );
-    },
-    setOptionalRefs(key, refs) {
-      const saved = value[key] ||
-        retained.get(key) || { url: "", sourceRefs: [] };
-      saved.sourceRefs = [...refs];
-      retained.set(key, structuredClone(saved));
+      return structuredClone(value[key] || retained.get(key) || { url: "" });
     },
     payload() {
       return structuredClone(value);
@@ -90,12 +77,10 @@ const fieldNames = {
   accountId: "アカウントID",
   type: "種類",
   reason: "変更理由",
-  evidence: "確認した公式出典",
+  confirmation: "変更内容の確認",
   displayName: "表示名",
   profileImage: "プロフィール画像",
   url: "URL",
-  sourceRefs: "出典",
-  displayNameSourceRefs: "名前の出典",
   wiki: "非公式Wiki",
   aliases: "別名",
   affiliations: "所属履歴",
@@ -147,9 +132,7 @@ export function validationIssues(message, models, selectedId) {
       external: !!row && row.id !== selectedId,
       tab: tabFor(path),
       message: m[4].includes("fewer than")
-        ? /sourceRefs|displayNameSourceRefs/.test(path)
-          ? "出典を1件以上選択してください。"
-          : "1件以上登録してください。"
+        ? "1件以上登録してください。"
         : m[4].includes("required property")
           ? "必須項目を入力してください。"
           : m[4].includes("format")

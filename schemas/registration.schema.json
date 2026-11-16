@@ -203,49 +203,6 @@
                     "type": "string",
                     "format": "public-url"
                   },
-                  "artistEvidence": {
-                    "enum": [
-                      "original_source",
-                      "performer_description",
-                      "unknown"
-                    ]
-                  },
-                  "identityEvidence": {
-                    "type": "object",
-                    "additionalProperties": false,
-                    "required": [
-                      "status",
-                      "kind",
-                      "sourceUrl",
-                      "publisher",
-                      "checkedAt"
-                    ],
-                    "properties": {
-                      "status": {
-                        "const": "verified"
-                      },
-                      "kind": {
-                        "enum": [
-                          "official_mv",
-                          "official_release",
-                          "official_song_page"
-                        ]
-                      },
-                      "sourceUrl": {
-                        "type": "string",
-                        "format": "public-url"
-                      },
-                      "publisher": {
-                        "type": "string",
-                        "minLength": 1,
-                        "maxLength": 200
-                      },
-                      "checkedAt": {
-                        "type": "string",
-                        "format": "date-time"
-                      }
-                    }
-                  },
                   "externalIds": {
                     "type": "array",
                     "maxItems": 20,
@@ -256,9 +213,8 @@
                         "provider",
                         "entityType",
                         "id",
-                        "sourceUrl",
                         "status",
-                        "checkedAt"
+                        "sourceUrl"
                       ],
                       "properties": {
                         "provider": {
@@ -276,16 +232,12 @@
                           "type": "string",
                           "pattern": "^[0-9a-f-]{36}$"
                         },
-                        "sourceUrl": {
-                          "type": "string",
-                          "format": "public-url"
-                        },
                         "status": {
                           "const": "verified"
                         },
-                        "checkedAt": {
+                        "sourceUrl": {
                           "type": "string",
-                          "format": "date-time"
+                          "format": "public-url"
                         }
                       }
                     }
@@ -295,8 +247,7 @@
                   "existingId",
                   "title",
                   "originalArtists",
-                  "identityUrl",
-                  "artistEvidence"
+                  "identityUrl"
                 ]
               },
               {
@@ -384,49 +335,6 @@
                           "type": "string",
                           "format": "public-url"
                         },
-                        "artistEvidence": {
-                          "enum": [
-                            "original_source",
-                            "performer_description",
-                            "unknown"
-                          ]
-                        },
-                        "identityEvidence": {
-                          "type": "object",
-                          "additionalProperties": false,
-                          "required": [
-                            "status",
-                            "kind",
-                            "sourceUrl",
-                            "publisher",
-                            "checkedAt"
-                          ],
-                          "properties": {
-                            "status": {
-                              "const": "verified"
-                            },
-                            "kind": {
-                              "enum": [
-                                "official_mv",
-                                "official_release",
-                                "official_song_page"
-                              ]
-                            },
-                            "sourceUrl": {
-                              "type": "string",
-                              "format": "public-url"
-                            },
-                            "publisher": {
-                              "type": "string",
-                              "minLength": 1,
-                              "maxLength": 200
-                            },
-                            "checkedAt": {
-                              "type": "string",
-                              "format": "date-time"
-                            }
-                          }
-                        },
                         "externalIds": {
                           "type": "array",
                           "maxItems": 20,
@@ -437,9 +345,8 @@
                               "provider",
                               "entityType",
                               "id",
-                              "sourceUrl",
                               "status",
-                              "checkedAt"
+                              "sourceUrl"
                             ],
                             "properties": {
                               "provider": {
@@ -457,16 +364,12 @@
                                 "type": "string",
                                 "pattern": "^[0-9a-f-]{36}$"
                               },
-                              "sourceUrl": {
-                                "type": "string",
-                                "format": "public-url"
-                              },
                               "status": {
                                 "const": "verified"
                               },
-                              "checkedAt": {
+                              "sourceUrl": {
                                 "type": "string",
-                                "format": "date-time"
+                                "format": "public-url"
                               }
                             }
                           }
@@ -476,8 +379,7 @@
                         "existingId",
                         "title",
                         "originalArtists",
-                        "identityUrl",
-                        "artistEvidence"
+                        "identityUrl"
                       ]
                     },
                     {
@@ -545,22 +447,12 @@
                       "evidenceHash": {
                         "type": "string",
                         "pattern": "^[a-f0-9]{64}$"
-                      },
-                      "sourceUrl": {
-                        "type": "string",
-                        "format": "public-url"
-                      },
-                      "checkedAt": {
-                        "type": "string",
-                        "format": "date-time"
                       }
                     },
                     "required": [
                       "status",
                       "valueHash",
-                      "evidenceHash",
-                      "sourceUrl",
-                      "checkedAt"
+                      "evidenceHash"
                     ]
                   }
                 },
@@ -576,21 +468,11 @@
                         "evidenceHash": {
                           "type": "string",
                           "pattern": "^[a-f0-9]{64}$"
-                        },
-                        "sourceUrl": {
-                          "type": "string",
-                          "format": "public-url"
-                        },
-                        "checkedAt": {
-                          "type": "string",
-                          "format": "date-time"
                         }
                       },
                       "required": [
                         "status",
-                        "evidenceHash",
-                        "sourceUrl",
-                        "checkedAt"
+                        "evidenceHash"
                       ]
                     },
                     {
@@ -676,22 +558,12 @@
                 "evidenceHash": {
                   "type": "string",
                   "pattern": "^[a-f0-9]{64}$"
-                },
-                "sourceUrl": {
-                  "type": "string",
-                  "format": "public-url"
-                },
-                "checkedAt": {
-                  "type": "string",
-                  "format": "date-time"
                 }
               },
               "required": [
                 "status",
                 "valueHash",
-                "evidenceHash",
-                "sourceUrl",
-                "checkedAt"
+                "evidenceHash"
               ]
             }
           }
@@ -784,22 +656,12 @@
                 "evidenceHash": {
                   "type": "string",
                   "pattern": "^[a-f0-9]{64}$"
-                },
-                "sourceUrl": {
-                  "type": "string",
-                  "format": "public-url"
-                },
-                "checkedAt": {
-                  "type": "string",
-                  "format": "date-time"
                 }
               },
               "required": [
                 "status",
                 "valueHash",
-                "evidenceHash",
-                "sourceUrl",
-                "checkedAt"
+                "evidenceHash"
               ]
             }
           }
@@ -816,13 +678,6 @@
         ]
       },
       "maxItems": 200
-    },
-    "sources": {
-      "type": "array",
-      "maxItems": 200,
-      "items": {
-        "$ref": "https://www.jigdule.jp/schemas/feature-common#/definitions/source"
-      }
     }
   },
   "required": [

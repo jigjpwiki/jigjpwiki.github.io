@@ -280,9 +280,7 @@ const yt = [
           ),
           false,
         );
-        await p.getByText("情報源・確認日を見る", { exact: true }).click();
-        assert((await p.locator(".profile-provenance a").count()) > 0);
-        await p.getByText("情報源・確認日を見る", { exact: true }).click();
+        assert.equal(await p.locator(".profile-provenance").count(),0);
       }
       await capture("profile");
       if (!before) {

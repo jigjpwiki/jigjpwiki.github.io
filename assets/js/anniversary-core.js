@@ -39,15 +39,9 @@
       return talent ? `<a href="${model.detailsReady ? `/talents/${id}/` : `/talents/#${id}`}">${escape(talent.displayName)}</a>` : '';
     }).join('・');
   }
-  function sourceLinks(event, model) {
-    return event.sourceRefs.map(id => model.sources.find(s => s.id === id)).filter(Boolean).map(source => {
-      let url; try { url = new URL(source.url); if (url.protocol !== 'https:' || url.username || url.password) return ''; } catch { return ''; }
-      return `<a href="${escape(url.href)}" rel="noreferrer">${source.kind === 'official' ? '公式' : 'Wiki'}</a> <time datetime="${escape(source.checkedAt)}">${escape(jstToday(new Date(source.checkedAt)))}確認</time>`;
-    }).join(' / ');
-  }
   function eventHtml(item, model, compact = false) {
     const years = item.years > 0 ? ` <span>${item.years}周年</span>` : '';
-    return `<li data-event-id="${escape(item.event.id)}"><span class="category">${types[item.event.type]}</span> <strong>${escape(item.event.title)}</strong>${years}<div>${subjectLinks(item.event, model)}</div><details><summary>出典</summary><small>${sourceLinks(item.event, model)}</small></details></li>`;
+    return `<li data-event-id="${escape(item.event.id)}"><span class="category">${types[item.event.type]}</span> <strong>${escape(item.event.title)}</strong>${years}<div>${subjectLinks(item.event, model)}</div></li>`;
   }
   function calendar(model, month, today, filters = {}, selected = today, interactive = false) {
     const events = filtered(model, filters); const first = month + '-01'; const next = monthShift(month, 1) + '-01';
@@ -77,5 +71,5 @@
     const items = between(filtered(model, filters), today, addDays(today, 30)); // today + 29 days, inclusive
     return items.length ? `<ul class="event-list">${items.map(item => `<li><time datetime="${item.day}">${item.day.replaceAll('-', '/')}</time><ul>${eventHtml(item, model)}</ul></li>`).join('')}</ul>` : '<p class="empty-state">直近30日間の確認済み記念日はありません。</p>';
   }
-  return { types, escape, jstToday, addDays, monthShift, occurrence, between, filtered, calendar, upcoming, eventHtml, sourceLinks, subjectLinks, dayDetails };
+  return { types, escape, jstToday, addDays, monthShift, occurrence, between, filtered, calendar, upcoming, eventHtml, subjectLinks, dayDetails };
 });

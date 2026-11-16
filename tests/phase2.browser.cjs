@@ -11,8 +11,7 @@ const firstGroupCurrent=catalog.groups[0].talentIds.filter(id=>master.talents.fi
   // Optional-image behavior is a deterministic fixture, not an assumption about live talents.
   if(['/fixture-profile-image/','/fixture-profile-no-image/'].includes(req.url)){
    const fixture=structuredClone(master),talent=fixture.talents.find(t=>t.id==='tal-000004');
-   const source=talent.displayNameSourceRefs.find(id=>fixture.sources.some(s=>s.id===id&&s.kind==='official'));
-   talent.profileImage=req.url==='/fixture-profile-image/'?{url:'https://images.example/fixture-avatar.png',sourceRefs:[source]}:null;
+   talent.profileImage=req.url==='/fixture-profile-image/'?{url:'https://images.example/fixture-avatar.png'}:null;
    require('../lib/talents').validateTalents(fixture,{registry:require('../data/talent-id-registry.json')});
    const data=require('../lib/catalog').publicCatalog(require('../lib/catalog').loadCatalog(fixture));
    res.setHeader('Content-Type','text/html');return res.end(require('../lib/talent-details').talentPage(talent,fixture,data,{}));
@@ -56,7 +55,7 @@ const firstGroupCurrent=catalog.groups[0].talentIds.filter(id=>master.talents.fi
    await page.keyboard.press('ArrowRight');assert.equal(await page.locator('[data-day="2027-03-08"]').getAttribute('aria-pressed'),'true');assert.equal(await page.locator('#day-details [data-event-id]').count(),core.between(events,'2027-03-08','2027-03-09').length);
    await page.keyboard.press('ArrowLeft');
    assert.equal(await page.locator('#day-details [data-event-id]').count(),core.between(events,'2027-03-07','2027-03-08').length);assert.match(await page.locator('#day-details').innerText(),/2周年/);
-   await page.locator('#day-details details summary').first().click();assert.equal(await page.locator('#day-details details[open] a').first().getAttribute('href'),'https://www.proforma-production.jp/news/n/q1rm0p3exwy3');
+   assert.equal(await page.locator('#day-details details').count(),0);
    if(process.env.BROWSER_SCREENSHOT_DIR)await page.screenshot({path:path.join(process.env.BROWSER_SCREENSHOT_DIR,`calendar-filled-${width}.png`),fullPage:true});
    await page.locator('#event-type').selectOption('birthday');assert.equal(await page.locator('#day-details [data-event-id]').count(),0);
    await page.locator('#event-type').selectOption('');await page.getByRole('button',{name:'前月',exact:true}).focus();await page.keyboard.press('Enter');

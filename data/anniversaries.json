@@ -1,5 +1,5 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "events": [
     {
       "id": "ann-000001",
@@ -16,10 +16,6 @@
       },
       "recursYearly": true,
       "countYears": false,
-      "sourceRefs": [
-        "src-mahiru-neru",
-        "src-wiki-mahiru-neru"
-      ],
       "visibility": "public"
     },
     {
@@ -37,10 +33,6 @@
       },
       "recursYearly": true,
       "countYears": false,
-      "sourceRefs": [
-        "src-hinoha-rui",
-        "src-wiki-hinoha-rui"
-      ],
       "visibility": "public"
     },
     {
@@ -58,10 +50,6 @@
       },
       "recursYearly": true,
       "countYears": false,
-      "sourceRefs": [
-        "src-minato-yu",
-        "src-wiki-minato-yu"
-      ],
       "visibility": "public"
     },
     {
@@ -79,10 +67,6 @@
       },
       "recursYearly": true,
       "countYears": false,
-      "sourceRefs": [
-        "src-lee-jupita",
-        "src-wiki-lee-jupita"
-      ],
       "visibility": "public"
     },
     {
@@ -100,9 +84,6 @@
       },
       "recursYearly": true,
       "countYears": true,
-      "sourceRefs": [
-        "src-star-debut"
-      ],
       "visibility": "public"
     },
     {
@@ -120,9 +101,6 @@
       },
       "recursYearly": true,
       "countYears": true,
-      "sourceRefs": [
-        "src-star-debut"
-      ],
       "visibility": "public"
     },
     {
@@ -140,9 +118,6 @@
       },
       "recursYearly": true,
       "countYears": true,
-      "sourceRefs": [
-        "src-star-debut"
-      ],
       "visibility": "public"
     },
     {
@@ -160,9 +135,6 @@
       },
       "recursYearly": true,
       "countYears": true,
-      "sourceRefs": [
-        "src-star-debut"
-      ],
       "visibility": "public"
     },
     {
@@ -180,9 +152,6 @@
       },
       "recursYearly": true,
       "countYears": false,
-      "sourceRefs": [
-        "src-v4-0005"
-      ],
       "visibility": "public"
     },
     {
@@ -200,9 +169,6 @@
       },
       "recursYearly": true,
       "countYears": false,
-      "sourceRefs": [
-        "src-v4-0008"
-      ],
       "visibility": "public"
     },
     {
@@ -220,9 +186,6 @@
       },
       "recursYearly": true,
       "countYears": false,
-      "sourceRefs": [
-        "src-v4-0011"
-      ],
       "visibility": "public"
     },
     {
@@ -240,9 +203,6 @@
       },
       "recursYearly": true,
       "countYears": false,
-      "sourceRefs": [
-        "src-v4-0014"
-      ],
       "visibility": "public"
     },
     {
@@ -260,9 +220,6 @@
       },
       "recursYearly": true,
       "countYears": false,
-      "sourceRefs": [
-        "src-v4-0017"
-      ],
       "visibility": "public"
     },
     {
@@ -280,9 +237,6 @@
       },
       "recursYearly": true,
       "countYears": false,
-      "sourceRefs": [
-        "src-v4-0020"
-      ],
       "visibility": "public"
     },
     {
@@ -300,9 +254,6 @@
       },
       "recursYearly": true,
       "countYears": false,
-      "sourceRefs": [
-        "src-v4-0023"
-      ],
       "visibility": "public"
     },
     {
@@ -320,9 +271,6 @@
       },
       "recursYearly": true,
       "countYears": false,
-      "sourceRefs": [
-        "src-v4-0026"
-      ],
       "visibility": "public"
     },
     {
@@ -340,9 +288,6 @@
       },
       "recursYearly": true,
       "countYears": false,
-      "sourceRefs": [
-        "src-v4-0029"
-      ],
       "visibility": "public"
     },
     {
@@ -360,9 +305,6 @@
       },
       "recursYearly": true,
       "countYears": false,
-      "sourceRefs": [
-        "src-v4-0032"
-      ],
       "visibility": "public"
     },
     {
@@ -380,9 +322,6 @@
       },
       "recursYearly": true,
       "countYears": false,
-      "sourceRefs": [
-        "src-v4-0035"
-      ],
       "visibility": "public"
     },
     {
@@ -400,9 +339,6 @@
       },
       "recursYearly": true,
       "countYears": false,
-      "sourceRefs": [
-        "src-v4-0038"
-      ],
       "visibility": "public"
     },
     {
@@ -420,9 +356,6 @@
       },
       "recursYearly": true,
       "countYears": false,
-      "sourceRefs": [
-        "src-v4-0041"
-      ],
       "visibility": "public"
     },
     {
@@ -440,9 +373,6 @@
       },
       "recursYearly": true,
       "countYears": false,
-      "sourceRefs": [
-        "src-v4-0044"
-      ],
       "visibility": "public"
     },
     {
@@ -460,9 +390,6 @@
       },
       "recursYearly": true,
       "countYears": false,
-      "sourceRefs": [
-        "src-v4-0047"
-      ],
       "visibility": "public"
     },
     {
@@ -480,9 +407,6 @@
       },
       "recursYearly": true,
       "countYears": false,
-      "sourceRefs": [
-        "src-v4-0050"
-      ],
       "visibility": "public"
     },
     {
@@ -500,9 +424,6 @@
       },
       "recursYearly": true,
       "countYears": false,
-      "sourceRefs": [
-        "src-v4-0053"
-      ],
       "visibility": "public"
     },
     {
@@ -520,9 +441,6 @@
       },
       "recursYearly": true,
       "countYears": false,
-      "sourceRefs": [
-        "src-v4-0056"
-      ],
       "visibility": "public"
     },
     {
@@ -540,9 +458,6 @@
       },
       "recursYearly": true,
       "countYears": false,
-      "sourceRefs": [
-        "src-v4-0059"
-      ],
       "visibility": "public"
     },
     {
@@ -560,9 +475,6 @@
       },
       "recursYearly": true,
       "countYears": false,
-      "sourceRefs": [
-        "src-v4-0062"
-      ],
       "visibility": "public"
     },
     {
@@ -580,9 +492,6 @@
       },
       "recursYearly": true,
       "countYears": false,
-      "sourceRefs": [
-        "src-v4-0065"
-      ],
       "visibility": "public"
     },
     {
@@ -600,9 +509,6 @@
       },
       "recursYearly": true,
       "countYears": false,
-      "sourceRefs": [
-        "src-v4-0068"
-      ],
       "visibility": "public"
     },
     {
@@ -620,9 +526,6 @@
       },
       "recursYearly": true,
       "countYears": false,
-      "sourceRefs": [
-        "src-v4-0071"
-      ],
       "visibility": "public"
     },
     {
@@ -640,9 +543,6 @@
       },
       "recursYearly": true,
       "countYears": false,
-      "sourceRefs": [
-        "src-v4-0074"
-      ],
       "visibility": "public"
     },
     {
@@ -660,9 +560,6 @@
       },
       "recursYearly": true,
       "countYears": false,
-      "sourceRefs": [
-        "src-v4-0077"
-      ],
       "visibility": "public"
     },
     {
@@ -680,9 +577,6 @@
       },
       "recursYearly": true,
       "countYears": false,
-      "sourceRefs": [
-        "src-v4-0080"
-      ],
       "visibility": "public"
     },
     {
@@ -700,9 +594,6 @@
       },
       "recursYearly": true,
       "countYears": false,
-      "sourceRefs": [
-        "src-v4-0083"
-      ],
       "visibility": "public"
     },
     {
@@ -720,9 +611,6 @@
       },
       "recursYearly": true,
       "countYears": false,
-      "sourceRefs": [
-        "src-v4-0086"
-      ],
       "visibility": "public"
     },
     {
@@ -740,9 +628,6 @@
       },
       "recursYearly": true,
       "countYears": false,
-      "sourceRefs": [
-        "src-v4-0089"
-      ],
       "visibility": "public"
     },
     {
@@ -760,9 +645,6 @@
       },
       "recursYearly": true,
       "countYears": false,
-      "sourceRefs": [
-        "src-v4-0092"
-      ],
       "visibility": "public"
     },
     {
@@ -780,9 +662,6 @@
       },
       "recursYearly": true,
       "countYears": false,
-      "sourceRefs": [
-        "src-v4-0095"
-      ],
       "visibility": "public"
     },
     {
@@ -800,9 +679,6 @@
       },
       "recursYearly": true,
       "countYears": false,
-      "sourceRefs": [
-        "src-v4-0098"
-      ],
       "visibility": "public"
     },
     {
@@ -820,9 +696,6 @@
       },
       "recursYearly": true,
       "countYears": false,
-      "sourceRefs": [
-        "src-v4-0101"
-      ],
       "visibility": "public"
     },
     {
@@ -840,9 +713,6 @@
       },
       "recursYearly": true,
       "countYears": false,
-      "sourceRefs": [
-        "src-v4-0104"
-      ],
       "visibility": "public"
     },
     {
@@ -860,9 +730,6 @@
       },
       "recursYearly": true,
       "countYears": false,
-      "sourceRefs": [
-        "src-v4-0107"
-      ],
       "visibility": "public"
     },
     {
@@ -880,9 +747,6 @@
       },
       "recursYearly": true,
       "countYears": false,
-      "sourceRefs": [
-        "src-v4-0110"
-      ],
       "visibility": "public"
     },
     {
@@ -900,9 +764,6 @@
       },
       "recursYearly": true,
       "countYears": false,
-      "sourceRefs": [
-        "src-v4-0113"
-      ],
       "visibility": "public"
     },
     {
@@ -920,9 +781,6 @@
       },
       "recursYearly": true,
       "countYears": false,
-      "sourceRefs": [
-        "src-v4-0116"
-      ],
       "visibility": "public"
     },
     {
@@ -940,9 +798,6 @@
       },
       "recursYearly": true,
       "countYears": false,
-      "sourceRefs": [
-        "src-v4-0119"
-      ],
       "visibility": "public"
     },
     {
@@ -960,9 +815,6 @@
       },
       "recursYearly": true,
       "countYears": false,
-      "sourceRefs": [
-        "src-v4-0122"
-      ],
       "visibility": "public"
     },
     {
@@ -980,9 +832,6 @@
       },
       "recursYearly": true,
       "countYears": false,
-      "sourceRefs": [
-        "src-v4-0125"
-      ],
       "visibility": "public"
     },
     {
@@ -1000,9 +849,6 @@
       },
       "recursYearly": true,
       "countYears": false,
-      "sourceRefs": [
-        "src-v4-0128"
-      ],
       "visibility": "public"
     },
     {
@@ -1020,9 +866,6 @@
       },
       "recursYearly": true,
       "countYears": false,
-      "sourceRefs": [
-        "src-v4-0131"
-      ],
       "visibility": "public"
     },
     {
@@ -1040,9 +883,6 @@
       },
       "recursYearly": true,
       "countYears": false,
-      "sourceRefs": [
-        "src-v4-0134"
-      ],
       "visibility": "public"
     },
     {
@@ -1060,9 +900,6 @@
       },
       "recursYearly": true,
       "countYears": false,
-      "sourceRefs": [
-        "src-v4-0137"
-      ],
       "visibility": "public"
     },
     {
@@ -1080,9 +917,6 @@
       },
       "recursYearly": true,
       "countYears": false,
-      "sourceRefs": [
-        "src-v4-0140"
-      ],
       "visibility": "public"
     },
     {
@@ -1100,9 +934,6 @@
       },
       "recursYearly": true,
       "countYears": false,
-      "sourceRefs": [
-        "src-v4-0143"
-      ],
       "visibility": "public"
     },
     {
@@ -1120,9 +951,6 @@
       },
       "recursYearly": true,
       "countYears": false,
-      "sourceRefs": [
-        "src-v4-0146"
-      ],
       "visibility": "public"
     },
     {
@@ -1140,9 +968,6 @@
       },
       "recursYearly": true,
       "countYears": false,
-      "sourceRefs": [
-        "src-v4-0149"
-      ],
       "visibility": "public"
     },
     {
@@ -1160,9 +985,6 @@
       },
       "recursYearly": true,
       "countYears": false,
-      "sourceRefs": [
-        "src-v4-0152"
-      ],
       "visibility": "public"
     },
     {
@@ -1180,9 +1002,6 @@
       },
       "recursYearly": true,
       "countYears": false,
-      "sourceRefs": [
-        "src-v4-0155"
-      ],
       "visibility": "public"
     },
     {
@@ -1200,9 +1019,6 @@
       },
       "recursYearly": true,
       "countYears": false,
-      "sourceRefs": [
-        "src-v4-0158"
-      ],
       "visibility": "public"
     },
     {
@@ -1220,9 +1036,6 @@
       },
       "recursYearly": true,
       "countYears": false,
-      "sourceRefs": [
-        "src-v4-0161"
-      ],
       "visibility": "public"
     },
     {
@@ -1240,9 +1053,6 @@
       },
       "recursYearly": true,
       "countYears": false,
-      "sourceRefs": [
-        "src-v4-0164"
-      ],
       "visibility": "public"
     },
     {
@@ -1260,9 +1070,6 @@
       },
       "recursYearly": true,
       "countYears": false,
-      "sourceRefs": [
-        "src-v4-0167"
-      ],
       "visibility": "public"
     },
     {
@@ -1280,9 +1087,6 @@
       },
       "recursYearly": true,
       "countYears": false,
-      "sourceRefs": [
-        "src-v4-0170"
-      ],
       "visibility": "public"
     },
     {
@@ -1300,9 +1104,6 @@
       },
       "recursYearly": true,
       "countYears": false,
-      "sourceRefs": [
-        "src-v4-0173"
-      ],
       "visibility": "public"
     },
     {
@@ -1320,9 +1121,6 @@
       },
       "recursYearly": true,
       "countYears": false,
-      "sourceRefs": [
-        "src-v4-0176"
-      ],
       "visibility": "public"
     },
     {
@@ -1340,9 +1138,6 @@
       },
       "recursYearly": true,
       "countYears": false,
-      "sourceRefs": [
-        "src-v4-0179"
-      ],
       "visibility": "public"
     },
     {
@@ -1360,9 +1155,6 @@
       },
       "recursYearly": true,
       "countYears": false,
-      "sourceRefs": [
-        "src-v4-0182"
-      ],
       "visibility": "public"
     },
     {
@@ -1380,9 +1172,6 @@
       },
       "recursYearly": true,
       "countYears": false,
-      "sourceRefs": [
-        "src-v4-0185"
-      ],
       "visibility": "public"
     },
     {
@@ -1400,9 +1189,6 @@
       },
       "recursYearly": true,
       "countYears": false,
-      "sourceRefs": [
-        "src-v4-0188"
-      ],
       "visibility": "public"
     },
     {
@@ -1420,9 +1206,6 @@
       },
       "recursYearly": true,
       "countYears": false,
-      "sourceRefs": [
-        "src-v4-0191"
-      ],
       "visibility": "public"
     },
     {
@@ -1440,9 +1223,6 @@
       },
       "recursYearly": true,
       "countYears": false,
-      "sourceRefs": [
-        "src-v4-0194"
-      ],
       "visibility": "public"
     },
     {
@@ -1460,9 +1240,6 @@
       },
       "recursYearly": true,
       "countYears": false,
-      "sourceRefs": [
-        "src-v4-0197"
-      ],
       "visibility": "public"
     },
     {
@@ -1480,9 +1257,6 @@
       },
       "recursYearly": true,
       "countYears": false,
-      "sourceRefs": [
-        "src-v4-0200"
-      ],
       "visibility": "public"
     },
     {
@@ -1500,9 +1274,6 @@
       },
       "recursYearly": true,
       "countYears": false,
-      "sourceRefs": [
-        "src-v4-0203"
-      ],
       "visibility": "public"
     },
     {
@@ -1520,9 +1291,6 @@
       },
       "recursYearly": true,
       "countYears": false,
-      "sourceRefs": [
-        "src-v4-0206"
-      ],
       "visibility": "public"
     },
     {
@@ -1540,9 +1308,6 @@
       },
       "recursYearly": true,
       "countYears": false,
-      "sourceRefs": [
-        "src-v4-0209"
-      ],
       "visibility": "public"
     },
     {
@@ -1560,9 +1325,6 @@
       },
       "recursYearly": true,
       "countYears": false,
-      "sourceRefs": [
-        "src-v4-0212"
-      ],
       "visibility": "public"
     },
     {
@@ -1580,9 +1342,6 @@
       },
       "recursYearly": true,
       "countYears": false,
-      "sourceRefs": [
-        "src-v4-0215"
-      ],
       "visibility": "public"
     },
     {
@@ -1600,9 +1359,6 @@
       },
       "recursYearly": true,
       "countYears": false,
-      "sourceRefs": [
-        "src-v4-0218"
-      ],
       "visibility": "public"
     },
     {
@@ -1620,9 +1376,6 @@
       },
       "recursYearly": true,
       "countYears": false,
-      "sourceRefs": [
-        "src-v4-0221"
-      ],
       "visibility": "public"
     },
     {
@@ -1640,9 +1393,6 @@
       },
       "recursYearly": true,
       "countYears": false,
-      "sourceRefs": [
-        "src-v4-0224"
-      ],
       "visibility": "public"
     },
     {
@@ -1660,9 +1410,6 @@
       },
       "recursYearly": true,
       "countYears": false,
-      "sourceRefs": [
-        "src-v4-0227"
-      ],
       "visibility": "public"
     },
     {
@@ -1680,9 +1427,6 @@
       },
       "recursYearly": true,
       "countYears": false,
-      "sourceRefs": [
-        "src-v4-0230"
-      ],
       "visibility": "public"
     },
     {
@@ -1700,9 +1444,6 @@
       },
       "recursYearly": true,
       "countYears": false,
-      "sourceRefs": [
-        "src-v4-0233"
-      ],
       "visibility": "public"
     },
     {
@@ -1720,9 +1461,6 @@
       },
       "recursYearly": true,
       "countYears": false,
-      "sourceRefs": [
-        "src-v4-0236"
-      ],
       "visibility": "public"
     },
     {
@@ -1740,9 +1478,6 @@
       },
       "recursYearly": true,
       "countYears": true,
-      "sourceRefs": [
-        "src-v4-0281"
-      ],
       "visibility": "public"
     },
     {
@@ -1760,9 +1495,6 @@
       },
       "recursYearly": true,
       "countYears": true,
-      "sourceRefs": [
-        "src-v4-0036"
-      ],
       "visibility": "public"
     },
     {
@@ -1780,9 +1512,6 @@
       },
       "recursYearly": true,
       "countYears": false,
-      "sourceRefs": [
-        "src-v4-0030"
-      ],
       "visibility": "public"
     },
     {
@@ -1800,9 +1529,6 @@
       },
       "recursYearly": true,
       "countYears": false,
-      "sourceRefs": [
-        "src-v4-0039"
-      ],
       "visibility": "public"
     },
     {
@@ -1820,10 +1546,8 @@
       },
       "recursYearly": true,
       "countYears": true,
-      "sourceRefs": [
-        "src-v4-0240"
-      ],
       "visibility": "public"
     }
-  ]
+  ],
+  "fallbackDate": "2026-11-15"
 }

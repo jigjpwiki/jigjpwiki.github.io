@@ -83,19 +83,19 @@ const firstGroupCurrent=catalog.groups[0].talentIds.filter(id=>master.talents.fi
    await page.locator('#talent-group').selectOption('');
    await page.getByRole('link',{name:'真昼ねる',exact:true}).click();await page.waitForURL(base+'/talents/tal-000001/');
    assert.equal(await page.getByRole('heading',{name:'真昼ねる',exact:true}).count(),1);
-   assert.match(await page.locator('main').innerText(),/サイト公開時点の保存データ/);
+   assert.match(await page.locator('main').innerText(),/保存された配信・動画/);
    assert.doesNotMatch(await page.locator('main').innerText(),/tal-000001|activityStatus|VTuber活動：/);
    for(const withImage of [true,false]){
     await page.goto(base+(withImage?'/fixture-profile-image/':'/fixture-profile-no-image/'));
     const hero=page.locator('.profile-hero');
     assert.equal(await hero.locator('img').count(),withImage?1:0);
     if(withImage){assert.equal(await hero.locator('img').getAttribute('src'),'https://images.example/fixture-avatar.png');await hero.locator('img.is-loaded').waitFor();assert.doesNotMatch(await hero.innerText(),/画像未確認/);}
-    else assert.match(await hero.innerText(),/画像未確認/);
+    else {assert.doesNotMatch(await hero.innerText(),/画像未確認/);assert.equal(await hero.locator('.talent-avatar>span').innerText(),'李');}
     assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth),false);
    }
    await page.goto(base+'/talents/tal-000004/');assert.match(await page.locator('main').innerText(),/旧所属：ProForma Nova/);assert.doesNotMatch(await page.locator('main').innerText(),/引退|活動終了/);
    assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth),false);
-   await page.getByRole('link',{name:'記念日カレンダー'}).first().click();
+   await page.getByRole('link',{name:/記念日カレンダー/}).first().click();
    await page.waitForFunction(()=>!document.getElementById('day-details').hidden);
    assert.match(await page.locator('#day-details').innerText(),/李じゅぴ汰/);
    await page.locator('#day-details').getByRole('link',{name:'李じゅぴ汰',exact:true}).click();await page.waitForURL(base+'/talents/tal-000004/');

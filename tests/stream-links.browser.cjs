@@ -109,9 +109,13 @@ const twitch = {
       await p.goto(base + "/talents/" + person.id + "/");
       if (!process.env.STREAM_BEFORE) {
         const region = p.locator("#talent-streams");
-        await region.getByRole("link", { name: /Twitch・配信中/ }).waitFor();
+        await region
+          .getByRole("link", { name: /ON AIR.*Twitch|Twitch.*ON AIR/ })
+          .waitFor();
         assert.equal(
-          await region.getByRole("link", { name: /YouTube・配信予定/ }).count(),
+          await region
+            .getByRole("link", { name: /配信予定.*YouTube|YouTube.*配信予定/ })
+            .count(),
           1,
         );
         assert.equal(
@@ -154,7 +158,7 @@ const twitch = {
             .getByText(
               new RegExp(
                 (service === "youtube" ? "YouTube" : "Twitch") +
-                  "の取得に失敗しました",
+                  "：取得できませんでした",
               ),
             )
             .waitFor();
@@ -170,13 +174,11 @@ const twitch = {
           );
           assert.doesNotMatch(
             await region.locator("[data-stream-output]").innerText(),
-            /公開フィードに紐づく配信情報はありません/,
+            /配信予定はありません。/,
           );
           empty = true;
           await p.reload();
-          await region
-            .getByText(/取得できていない配信情報があります/)
-            .waitFor();
+          await region.getByText(/保存データをご確認ください/).waitFor();
           assert.equal(
             await fallback.getAttribute("open"),
             "",
@@ -199,7 +201,9 @@ const twitch = {
           failedService = service;
           revision = " 更新";
           await region.getByRole("button", { name: "配信情報を更新" }).click();
-          await region.getByText(/前回取得した情報を残しています/).waitFor();
+          await region
+            .getByText(/前回の情報がある場合は残しています/)
+            .waitFor();
           assert.equal(
             await fallback.getAttribute("open"),
             "",
@@ -218,24 +222,32 @@ const twitch = {
           failedService = null;
           revision = "";
           await p.reload();
-          await region.getByRole("link", { name: /Twitch・配信中/ }).waitFor();
+          await region
+            .getByRole("link", { name: /ON AIR.*Twitch|Twitch.*ON AIR/ })
+            .waitFor();
         }
         stale = true;
         await region.getByRole("button", { name: "配信情報を更新" }).click();
         await p.waitForFunction(() =>
           document
-            .querySelector("[data-stream-status]")
+            .querySelector("[data-stream-meta]")
             .textContent.includes("1時間以上"),
+        );
+        assert.equal(
+          await region.locator("[data-stream-status]").innerText(),
+          "更新が古い可能性があります。",
         );
         failed = true;
         await region.getByRole("button", { name: "配信情報を更新" }).click();
         await p.waitForFunction(() =>
           document
             .querySelector("[data-stream-status]")
-            .textContent.includes("前回取得した情報"),
+            .textContent.includes("前回の情報"),
         );
         assert.equal(
-          await region.getByRole("link", { name: /Twitch・配信中/ }).count(),
+          await region
+            .getByRole("link", { name: /ON AIR.*Twitch|Twitch.*ON AIR/ })
+            .count(),
           1,
         );
         assert.equal(
@@ -246,7 +258,7 @@ const twitch = {
         failed = false;
         badIndex = true;
         await p.reload();
-        await region.getByText(/アカウント照合情報を取得できません/).waitFor();
+        await region.getByText(/配信情報を取得できません/).waitFor();
         assert.equal(
           await region.locator("[data-stream-fallback]").getAttribute("open"),
           "",
@@ -254,7 +266,7 @@ const twitch = {
         badIndex = false;
         failed = true;
         await p.reload();
-        await region.getByText(/YouTubeの取得に失敗しました/).waitFor();
+        await region.getByText(/YouTube：取得できませんでした/).waitFor();
         assert.equal(
           await region.locator("[data-stream-fallback]").getAttribute("open"),
           "",
@@ -262,9 +274,7 @@ const twitch = {
         failed = false;
         empty = true;
         await p.reload();
-        await region
-          .getByText(/公開フィードに紐づく配信情報はありません/)
-          .waitFor();
+        await region.getByText(/配信予定はありません。/).waitFor();
         assert.equal(
           await fallback.getAttribute("open"),
           null,
@@ -273,7 +283,7 @@ const twitch = {
         empty = false;
         failed = true;
         await region.getByRole("button", { name: "配信情報を更新" }).click();
-        await region.getByText(/取得できていない配信情報があります/).waitFor();
+        await region.getByText(/保存データをご確認ください/).waitFor();
         assert.equal(
           await fallback.getAttribute("open"),
           "",
@@ -481,10 +491,7 @@ const twitch = {
       }),
       p = await context.newPage();
     await p.goto(base + "/talents/" + person.id + "/");
-    assert.match(
-      await p.locator("main").innerText(),
-      /サイト公開時点の保存データ/,
-    );
+    assert.match(await p.locator("main").innerText(), /保存された配信・動画/);
     assert.equal(
       await p.getByRole("button", { name: "配信情報を更新" }).count(),
       0,

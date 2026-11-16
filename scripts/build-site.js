@@ -30,6 +30,8 @@ const karaokeData = projectKaraoke(loadKaraoke(fullTalents,catalog,root));
 const musicView = { ...musicData, performances:karaokeData.performances };
 const { loadRelease, publishRelease } = require('../lib/release');
 const release = loadRelease(root);
+// Couple redesigned talent markup to its matching CSS/JS release, without changing feed caching.
+const talentAssets = html => html.replace(/(\/assets\/(?:js\/talent-directory\.js|js\/talent-streams\.js|talent-ux\.css|streams\.css))"/g, `$1?v=${release.version}"`);
 assertPrivateUnreferenced(fullTalents,[catalog,eventData,musicData,karaokeData]);
 const output = path.join(__dirname, '..', '_site');
 fs.rmSync(output, { recursive: true, force: true });
@@ -48,7 +50,7 @@ for (const [file, route] of [['index.html', '/'], ['privacy-policy/index.html', 
 }
 fs.mkdirSync(path.join(output, 'talents'));
 const talentPage = fs.readFileSync(path.join(root, 'pages/talents/index.html'), 'utf8');
-fs.writeFileSync(path.join(output, 'talents/index.html'), applyNavigation(talentPage, '/talents/').replace('<!-- jigdule:talents -->', talentCards(talents, catalog.groups)));
+fs.writeFileSync(path.join(output, 'talents/index.html'), talentAssets(applyNavigation(talentPage, '/talents/').replace('<!-- jigdule:talents -->', talentCards(talents, catalog.groups))));
 // Publish only the schema-validated public master, never its registry or sources' raw responses.
 fs.writeFileSync(path.join(output, 'data/talents.json'), JSON.stringify(talents, null, 2) + '\n');
 fs.writeFileSync(path.join(output,'data/stream-talents.json'),JSON.stringify(require('../assets/js/stream-core').identityIndex(talents.talents))+'\n');
@@ -58,7 +60,7 @@ fs.writeFileSync(path.join(output, 'anniversaries/index.html'), anniversaryPage(
 fs.writeFileSync(path.join(output, 'data/anniversaries.json'), JSON.stringify({ schemaVersion: 1, events: catalog.events }) + '\n');
 for (const talent of talents.talents) {
   fs.mkdirSync(path.join(output, 'talents', talent.id));
-  fs.writeFileSync(path.join(output, 'talents', talent.id, 'index.html'), renderTalentPage(talent, talents, catalog, feeds, id => relatedGoods(id, talents, catalog), id => talentEvents(id, talents, eventData)+talentMusic(id,talents,musicView,talentKaraoke(id,talents,karaokeData,musicData))));
+  fs.writeFileSync(path.join(output, 'talents', talent.id, 'index.html'), talentAssets(renderTalentPage(talent, talents, catalog, feeds, id => relatedGoods(id, talents, catalog), id => talentMusic(id,talents,musicView,talentKaraoke(id,talents,karaokeData,musicData))+talentEvents(id, talents, eventData))));
 }
 fs.mkdirSync(path.join(output,'events'));
 fs.writeFileSync(path.join(output,'events/index.html'), eventList(talents,eventData));

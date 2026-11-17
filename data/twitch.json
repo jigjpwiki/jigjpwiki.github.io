@@ -1,44 +1,5 @@
 [
   {
-    "name": "なかもとおまち",
-    "twitchid": "41futon",
-    "videoId": "2928285946",
-    "streamId": "316709692017",
-    "title": "第三回ジェイミー村対抗戦に乗り込みます！！！！！！",
-    "date": "2026-11-14T04:00:48.000Z",
-    "status": "archive",
-    "type": "stream",
-    "url": "https://www.twitch.tv/videos/2928285946",
-    "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/1405880b-e945-4720-98c9-6a08c6400cae-profile_image-300x300.png",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/b872316989a57c0d498c_41futon_316709692017_1794628843//thumb/thumb0-320x180.jpg"
-  },
-  {
-    "name": "火乃晴るい",
-    "twitchid": "hinoha_rui",
-    "videoId": "2928480127",
-    "streamId": "316784064755",
-    "title": "【 #DeltaForce 】#FFL 本番🌟 初心者頑張ります；；🔥",
-    "date": "2026-11-14T10:57:23.000Z",
-    "status": "archive",
-    "type": "stream",
-    "url": "https://www.twitch.tv/videos/2928480127",
-    "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/9e02effe-cf25-4ba0-9fe7-da457d4e8c87-profile_image-300x300.png",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/86f98dbd5279c1e2c6e8_hinoha_rui_316784064755_1794653838//thumb/thumb0-320x180.jpg"
-  },
-  {
-    "name": "銘兎目あう",
-    "twitchid": "Metome_Au",
-    "videoId": "2928512668",
-    "streamId": "316711448433",
-    "title": "【スト6】1609MR～Mケン🥋ちょこっとカスタム👊🐰🔥22：15締切!!",
-    "date": "2026-11-14T12:00:49.000Z",
-    "status": "archive",
-    "type": "stream",
-    "url": "https://www.twitch.tv/videos/2928512668",
-    "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/6eea4ef4-a33b-4c66-9378-ad3aa84b1187-profile_image-300x300.png",
-    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/9f926251af8d67281c20_metome_au_316711448433_1794657644//thumb/thumb0-320x180.jpg"
-  },
-  {
     "name": "火乃晴るい",
     "twitchid": "hinoha_rui",
     "videoId": "2929496425",
@@ -106,25 +67,27 @@
   {
     "name": "なかもとおまち",
     "twitchid": "41futon",
+    "videoId": "2931336122",
     "streamId": "316724432113",
     "title": "差し替えしとラッシュ止め修行中ですん",
-    "date": "2026-11-17T12:11:18.000Z",
-    "status": "live",
+    "date": "2026-11-17T12:11:23.000Z",
+    "status": "archive",
     "type": "stream",
-    "url": "https://www.twitch.tv/41futon",
+    "url": "https://www.twitch.tv/videos/2931336122",
     "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/1405880b-e945-4720-98c9-6a08c6400cae-profile_image-300x300.png",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_41futon-320x180.jpg"
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/8a2deb3193b81b708913_41futon_316724432113_1794917478//thumb/thumb0-320x180.jpg"
   },
   {
     "name": "火乃晴るい",
     "twitchid": "hinoha_rui",
+    "videoId": "2931364390",
     "streamId": "316736722546",
     "title": "【 #リトルナイトメア3 】DLCをやていくぞ🌟 いさみさんとコラボ！",
-    "date": "2026-11-17T13:06:43.000Z",
-    "status": "live",
+    "date": "2026-11-17T13:06:48.000Z",
+    "status": "archive",
     "type": "stream",
-    "url": "https://www.twitch.tv/hinoha_rui",
+    "url": "https://www.twitch.tv/videos/2931364390",
     "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/9e02effe-cf25-4ba0-9fe7-da457d4e8c87-profile_image-300x300.png",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_hinoha_rui-320x180.jpg"
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/f1a7004e3ca08a214779_hinoha_rui_316736722546_1794920803//thumb/thumb0-320x180.jpg"
   }
 ]

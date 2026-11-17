@@ -4,8 +4,8 @@ const assert = require('node:assert/strict');
 const fs = require('node:fs');
 const path = require('node:path');
 const http = require('node:http');
-const root = path.resolve(__dirname, '../_site');
-const master = require('../data/talents.json');
+const root = require('./fixtures/browser-site.cjs')();
+const master = require('./fixtures/admin-vnext-baseline.json').talents;
 const navigationCount=require('../lib/site-pages').pages.filter(p=>p.ready).length;
 (async () => {
   const server = http.createServer((req, res) => {

@@ -41,6 +41,32 @@ export function changedValue(row, column, raw) {
   column.set(next, value);
   return next;
 }
+export function prepareChanges(targets, column, raw) {
+  return targets.map((record) => {
+    try {
+      return { record, value: changedValue(record, column, raw) };
+    } catch (e) {
+      throw new Error(
+        `${record.id || record._reference || "対象行"} / ${column.label}: ${e.message}`,
+      );
+    }
+  });
+}
+export function prepareCurrentChanges(
+  targets,
+  current,
+  column,
+  raw,
+  key = (r) => r.id || r._reference,
+) {
+  const latest = new Map(current.map((r) => [key(r), r]));
+  for (const r of targets)
+    if (JSON.stringify(latest.get(key(r))) !== JSON.stringify(r))
+      throw Error(
+        "確認中に対象の下書きが変更されました。キャンセルして対象を再確認してください。",
+      );
+  return prepareChanges(targets, column, raw);
+}
 export function confirmDialog({ title, description, onConfirm }) {
   const d = el("dialog", undefined, "confirmation-dialog"),
     h = el("h2", title),
@@ -109,6 +135,7 @@ export function mountDataTable({
       sort: null,
       descending: false,
       page: 0,
+      selectedOnly: false,
     },
     selected = new Set(),
     visible = new Set(columns.filter((c) => !c.hidden).map((c) => c.key)),
@@ -211,6 +238,17 @@ export function mountDataTable({
       selected.clear();
       draw();
     });
+  let selectionPage = 0;
+  const selectedOnly = action("選択中の項目だけを表示", () => {
+      state.selectedOnly = !state.selectedOnly;
+      state.page = 0;
+      draw();
+    }),
+    selectionDetails = el("details"),
+    selectionSummary = el("summary"),
+    selectionList = el("ul");
+  const selectionPager = el("div", undefined, "row");
+  selectionDetails.append(selectionSummary, selectionList, selectionPager);
   const field = el("select"),
     valueBox = el("span"),
     selectionCount = el("span");
@@ -229,9 +267,17 @@ export function mountDataTable({
   drawBulkValue();
   const apply = action("選択行に一括適用", () => {
     const c = editable.find((c) => c.key === field.value),
-      targets = rows().filter((r) => selected.has(key(r)));
+      targets = structuredClone(rows().filter((r) => selected.has(key(r))));
     if (!targets.length || !c) return;
-    confirmDialog({
+    if (targets.length > 120) {
+      errors.textContent =
+        "一括変更は120件以下に分けてください。選択と入力は保持しています。";
+      onError(new Error("bulk_operation_limit"));
+      return;
+    }
+    errors.textContent = "";
+    const raw = bulkInput.value;
+    const dialog = confirmDialog({
       title: `${targets.length}件の${c.label}を変更`,
       description: `${targets
         .slice(0, 5)
@@ -240,16 +286,21 @@ export function mountDataTable({
           "、",
         )}${targets.length > 5 ? " ほか" : ""} → ${c.options?.find(([v]) => v === bulkInput.value)?.[1] || bulkInput.value}。下書きのみ変更し、PRは作成しません。`,
       onConfirm: () => {
-        const changes = targets.map((r) => ({
-          record: r,
-          value: changedValue(r, c, bulkInput.value),
-        }));
+        const changes = prepareCurrentChanges(targets, rows(), c, raw, key);
         onChange(changes);
         draw();
       },
     });
+    const names = el("details"),
+      heading = el("summary", "全対象を確認"),
+      list = el("ul");
+    list.append(
+      ...targets.map((r) => el("li", String(columns[0].get(r) || key(r)))),
+    );
+    names.append(heading, list);
+    dialog.insertBefore(names, dialog.querySelector("[role=alert]"));
   });
-  bulk.append(all, none, selectionCount);
+  bulk.append(all, none, selectionCount, selectedOnly, selectionDetails);
   if (editable.length) bulk.append(field, valueBox, apply);
   const hint = el(
     "p",
@@ -282,13 +333,21 @@ export function mountDataTable({
       draw();
     }
   };
-  function filtered() {
+  function filtered(snapshot = rows()) {
+    if (state.selectedOnly)
+      return tableRows(
+        snapshot.filter((r) => selected.has(key(r))),
+        columns,
+        { ...state, query: "", filters: {} },
+      );
     return tableRows(
-      rows().filter((r) =>
-        extra.every(
-          (f) => !state.filters[f.key] || f.test(r, state.filters[f.key]),
+      snapshot
+        .filter((r) => !state.selectedOnly || selected.has(key(r)))
+        .filter((r) =>
+          extra.every(
+            (f) => !state.filters[f.key] || f.test(r, state.filters[f.key]),
+          ),
         ),
-      ),
       columns,
       { ...state, filters: {} },
     );
@@ -401,7 +460,8 @@ export function mountDataTable({
       if (!pending.done) return;
     }
     pendingCell = undefined;
-    const list = filtered();
+    const snapshot = rows(),
+      list = filtered(snapshot);
     state.page = Math.min(
       state.page,
       Math.max(0, Math.ceil(list.length / pageSize) - 1),
@@ -412,13 +472,45 @@ export function mountDataTable({
       ),
       cols = columns.filter((c) => visible.has(c.key));
     count.textContent =
-      `${list.length}件 / 登録${rows().length}件` +
-      (rows().some((r) => "visibility" in r)
-        ? `（公開${rows().filter((r) => r.visibility === "public").length}件）`
+      `${list.length}件 / 登録${snapshot.length}件` +
+      (snapshot.some((r) => "visibility" in r)
+        ? `（公開${snapshot.filter((r) => r.visibility === "public").length}件）`
         : "");
-    const hiddenSelection = [...selected].filter(
-      (id) => !list.some((r) => key(r) === id),
-    ).length;
+    const visibleKeys = new Set(list.map(key)),
+      hiddenSelection = [...selected].filter(
+        (id) => !visibleKeys.has(id),
+      ).length;
+    const chosen = snapshot.filter((r) => selected.has(key(r)));
+    selectionPage = Math.min(
+      selectionPage,
+      Math.max(0, Math.ceil(chosen.length / 50) - 1),
+    );
+    selectionList.replaceChildren(
+      ...chosen
+        .slice(selectionPage * 50, (selectionPage + 1) * 50)
+        .map((r) =>
+          el("li", `${columns[0].get(r) || "名称未入力"}（${key(r)}）`),
+        ),
+    );
+    selectionPager.replaceChildren(
+      action("選択対象の前ページ", () => {
+        selectionPage = Math.max(0, selectionPage - 1);
+        draw();
+      }),
+      el(
+        "span",
+        `${selectionPage + 1} / ${Math.max(1, Math.ceil(chosen.length / 50))}`,
+      ),
+      action("選択対象の次ページ", () => {
+        if ((selectionPage + 1) * 50 < chosen.length) selectionPage++;
+        draw();
+      }),
+    );
+    selectionSummary.textContent = `選択対象を確認（${selected.size}件）`;
+    selectedOnly.textContent = state.selectedOnly
+      ? "すべての行を表示"
+      : "選択中の項目だけを表示";
+    selectedOnly.setAttribute("aria-pressed", String(state.selectedOnly));
     selectionCount.textContent =
       `${selected.size}件選択` +
       (hiddenSelection ? `（条件外${hiddenSelection}件を含む）` : "");

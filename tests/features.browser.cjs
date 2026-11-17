@@ -1,8 +1,8 @@
 'use strict';
 const {chromium}=require('playwright');const fs=require('node:fs'),path=require('node:path'),http=require('node:http'),assert=require('node:assert/strict');
-const root=path.resolve(__dirname,'../_site'),release=require('../data/release.json');
-const music=require('../data/music.json');
-const karaoke=require('../data/karaoke.json');
+const root=require('./fixtures/browser-site.cjs')(),release=require('../data/release.json');
+const music=require('./fixtures/admin-vnext-baseline.json').music;
+const karaoke=require('./fixtures/admin-vnext-baseline.json').karaoke;
 const publishedGoods=JSON.parse(fs.readFileSync(path.join(root,'data/goods.json')));
 const campaignProducts=id=>publishedGoods.products.filter(p=>publishedGoods.offers.some(o=>o.campaignId===id&&o.productId===p.id)).length;
 const goodsListingCount=publishedGoods.campaigns.length+publishedGoods.products.filter(p=>!publishedGoods.offers.some(o=>o.productId===p.id)||publishedGoods.offers.some(o=>o.productId===p.id&&o.campaignId===null)).length;

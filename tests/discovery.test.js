@@ -2,7 +2,7 @@
 const test=require('node:test'),assert=require('node:assert/strict');
 const {discover,emptyState,options,selectChannels}=require('../lib/discovery');
 const {propose}=require('../lib/proposals');
-const talents=require('../data/talents.json');
+const talents=require('./fixtures/catalog-review-history.json').talents;
 const owner=talents.talents.find(t=>t.displayName==='夏渚まはろ'),channel=owner.accounts.find(a=>a.service==='youtube').accountId;
 const id='w7E-oj1HOfc',playlist='UU'+channel.slice(2),now=new Date('2026-11-15T03:00:00Z');
 const config={mode:'backfill',from:'2026-11-01T00:00:00Z',to:'2026-11-16T00:00:00Z',talentIds:[owner.id]};

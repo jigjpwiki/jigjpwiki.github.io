@@ -21,7 +21,7 @@ test('compact calendar keeps multiple events out of cells, accessible day select
  assert.match(core.dayDetails(m,'2028-02-29'),/&lt;script&gt;/);assert.doesNotMatch(core.dayDetails(m,'2027-02-28'),/周年|alert/);
 });
 test('visitor cards keep current affiliations ahead of former, unknown and safe embedded data without management fields',()=>{
- const {talentCards}=require('../lib/site-pages');const master=structuredClone(require('../data/talents.json'));
+ const {talentCards}=require('../lib/site-pages');const master=structuredClone(require('./fixtures/admin-vnext-baseline.json').talents);
  master.talents=[{...master.talents[0],displayName:'</script><script>alert(1)</script>',affiliations:[]}];
  master.organizations[0].name='</script><img src=x onerror=alert(1)>';
  const html=talentCards(master);

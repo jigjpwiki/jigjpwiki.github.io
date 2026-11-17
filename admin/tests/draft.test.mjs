@@ -1,3 +1,4 @@
+import {baselineModels} from './baseline.mjs';
 import { test } from "node:test";
 import assert from "node:assert/strict";
 import fs from "node:fs";
@@ -6,12 +7,8 @@ import {
   fieldChanges,
   validationIssues,
 } from "../public/draft.js";
-const talents = JSON.parse(
-  fs.readFileSync(new URL("../../data/talents.json", import.meta.url)),
-);
-const catalog = JSON.parse(
-  fs.readFileSync(new URL("../../data/catalog.json", import.meta.url)),
-);
+const talents = baselineModels().talents;
+const catalog = baselineModels().catalog;
 test("image editing, nullable URLs and repeated serialization preserve Wiki URL and every other record", () => {
   const before = structuredClone(talents);
   for (const id of ["tal-000001", "tal-000004"]) {

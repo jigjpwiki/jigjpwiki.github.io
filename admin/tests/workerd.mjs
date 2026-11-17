@@ -1,3 +1,4 @@
+import { baselineModels, currentModels } from "./baseline.mjs";
 import { Miniflare, Response as MFResponse } from "miniflare";
 import assert from "node:assert/strict";
 import path from "node:path";
@@ -6,12 +7,7 @@ import { files, readFiles, filePath } from "../src/github.mjs";
 import { campaign, input as contentInput } from "./content-fixtures.mjs";
 import { hash } from "../src/security.mjs";
 const root = path.resolve(".."),
-  models = Object.fromEntries(
-    readFiles.map((n) => [
-      n,
-      JSON.parse(fs.readFileSync(path.join(root, filePath(n)))),
-    ]),
-  );
+  models = baselineModels();
 let writes = 0;
 const transport = async (request) => {
   if (request.method !== "GET" && request.body) await request.text();
@@ -53,7 +49,7 @@ const transport = async (request) => {
   else result = { default_branch: "main", permissions: { push: true } };
   return MFResponse.json(result);
 };
-const mf = new Miniflare({
+const mfOptions = {
   modules: true,
   scriptPath: path.resolve("build/worker.mjs"),
   compatibilityDate: "2026-06-18",
@@ -66,7 +62,8 @@ const mf = new Miniflare({
     ADMIN_USER_IDS: "123",
     SESSION_KEY: "a".repeat(43),
   },
-});
+};
+const mf = new Miniflare(mfOptions);
 try {
   const r = await mf.dispatchFetch("https://jigwiki-admin.local/api/me");
   assert.equal(r.status, 401);
@@ -260,6 +257,79 @@ try {
     })
   ).json();
   assert.equal(remaining.workspace.operations.length, 0);
+  const capacity = Array.from({ length: 120 }, (_, i) => ({
+    key: "capacity-" + i,
+    entity: "campaign",
+    baseCommit: "main-sha",
+    before: null,
+    value: { title: "capacity-" + i + "x".repeat(3000), visibility: "draft" },
+  }));
+  const savedAt = performance.now(),
+    capacityResponse = await mf.dispatchFetch(
+      "https://jigwiki-admin.local/api/workspace",
+      {
+        method: "PUT",
+        headers,
+        body: JSON.stringify({
+          protocol: 1,
+          revision: remaining.workspace.revision,
+          operations: capacity,
+        }),
+      },
+    );
+  assert.equal(
+    capacityResponse.status,
+    200,
+    await capacityResponse.clone().text(),
+  );
+  const stored = (await capacityResponse.json()).workspace;
+  assert.equal(stored.operations.length, 120);
+  const denied = await mf.dispatchFetch(
+    "https://jigwiki-admin.local/api/workspace",
+    {
+      method: "PUT",
+      headers,
+      body: JSON.stringify({
+        protocol: 1,
+        revision: stored.revision,
+        operations: [...capacity, { ...capacity[0], key: "capacity-over" }],
+      }),
+    },
+  );
+  assert.equal(denied.status, 413);
+  await mf.setOptions({ ...mfOptions });
+  const restored = await (
+    await mf.dispatchFetch("https://jigwiki-admin.local/api/workspace", {
+      headers,
+    })
+  ).json();
+  assert.equal(restored.workspace.revision, stored.revision);
+  assert.equal(restored.workspace.operations.length, 120);
+  assert.equal(
+    restored.workspace.operations[119].value.title,
+    capacity[119].value.title,
+  );
+  const invalidPreview = await mf.dispatchFetch(
+    "https://jigwiki-admin.local/api/submissions/preview",
+    {
+      method: "POST",
+      headers,
+      body: JSON.stringify({
+        protocol: 2,
+        revision: stored.revision,
+        keys: capacity.map((o) => o.key),
+      }),
+    },
+  );
+  assert.equal(invalidPreview.status, 400);
+  assert.equal(writes, 3);
+  console.log(
+    "Local workerd/SQLite Phase4 120 drafts / runtime restart / 121 refusal / invalid preview safe:",
+    JSON.stringify({
+      bodyBytes: Buffer.byteLength(JSON.stringify(capacity)),
+      elapsedMs: Math.round(performance.now() - savedAt),
+    }),
+  );
   console.log(
     "Local workerd/SQLite Phase 2: 20 mixed drafts, optional reason, one mocked PR, atomic cleanup and journal recovery passed.",
   );

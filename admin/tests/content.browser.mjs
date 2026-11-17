@@ -1,3 +1,6 @@
+import {AsyncLocalStorage} from 'node:async_hooks';
+import {qualityBrowser} from './quality.browser.mjs';
+import {baselineModels,currentModels} from './baseline.mjs';
 import { phase3Browser } from './phase3.browser.mjs';
 import { submissionBrowser } from "./submission.browser.mjs";
 import { workspaceBrowser } from "./workspace.browser.mjs";
@@ -12,13 +15,8 @@ import { readFiles as files, filePath } from "../src/github.mjs";
 const require = createRequire(import.meta.url),
   { chromium } = require("../../node_modules/playwright");
 const root = path.resolve(import.meta.dirname, "../.."),
-  models = Object.fromEntries(
-    files.map((n) => [
-      n,
-      JSON.parse(fs.readFileSync(path.join(root, filePath(n)))),
-    ]),
-  );
-const data = new Map();
+  models = process.env.ADMIN_QUALITY_ONLY?currentModels():baselineModels();
+const data = new Map(),requestScope=new AsyncLocalStorage(),requestMetrics=[];
 let lastPreview, lastSubmissionPlan;
 let mainSha = "main-sha";
 let mainModels = structuredClone(models),
@@ -30,6 +28,7 @@ let writes = 0,
   created = false,
   rejectPR = false;
 const transport = async (url, opts = {}) => {
+  const active=requestScope.getStore();if(active)active.githubCalls++;
   const u = new URL(url),
     p = u.pathname;
   let result;
@@ -168,13 +167,14 @@ const server = http.createServer(async (req, res) => {
         )
       )
         lastPreview = JSON.parse(body.toString());
-      const response = await worker.fetch(
+      const metric={path:req.url,method:req.method,bodyBytes:body.length,githubCalls:0},start=performance.now();
+      const response = await requestScope.run(metric,()=>worker.fetch(
         new Request(base + req.url, {
           method: req.method,
           headers: req.headers,
           ...(body.length ? { body } : {}),
         }),
-      );
+      ));metric.ms=performance.now()-start;requestMetrics.push(metric);
       if (req.url === "/api/submissions/preview" && response.ok)
         lastSubmissionPlan = await response.clone().json();
       res.statusCode = response.status;
@@ -500,7 +500,9 @@ const cases = [
   ],
 ];
 try {
-  if(process.env.ADMIN_PHASE3_ONLY){
+  if(process.env.ADMIN_QUALITY_ONLY){
+    await qualityBrowser({browser,base,models,reset:()=>{data.clear();mainSha='main-sha';mainModels=structuredClone(models);createdBranches.clear();commitSerial=0;created=false;writes=0;requestMetrics.splice(0);},advance:()=>{mainSha='new-main-sha';mainModels.talents.talents[0].displayName+=' main';},writes:()=>writes,metrics:()=>structuredClone(requestMetrics),dir:process.env.ADMIN_QUALITY_DIR,before:!!process.env.ADMIN_PUBLIC_ROOT});
+  }else if(process.env.ADMIN_PHASE3_ONLY){
     await phase3Browser({browser,base,models,reset:()=>{data.clear();mainSha='main-sha';mainModels=structuredClone(models);createdBranches.clear();commitSerial=0;created=false;},shotDir:process.env.ADMIN_PHASE3_SCREENSHOTS,before:!!process.env.ADMIN_PUBLIC_ROOT});
   } else {
   for (const width of (process.env.ADMIN_CONTENT_WIDTHS || "320,390,768,1440")

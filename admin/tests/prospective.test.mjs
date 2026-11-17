@@ -11,7 +11,7 @@ import { hash } from "../src/security.mjs";
 test("legitimate mixed Admin output passes current master validation and historical review/rule tests without rewriting review hashes", async () => {
   const root = path.resolve(import.meta.dirname, "../.."),
     temp = fs.mkdtempSync(path.join(os.tmpdir(), "jigwiki-prospective-")),
-    s = snapshot();
+    s = snapshot({ current: true });
   try {
     for (const dir of [
       "lib",
@@ -102,6 +102,28 @@ test("legitimate mixed Admin output passes current master validation and histori
       baseCommit: s.sha,
       before: null,
     });
+    for (const [entity, file, list, field] of [
+      ["organization", "talents", "organizations", "name"],
+      ["group", "catalog", "groups", "name"],
+      ["anniversary", "anniversaries", "events", "title"],
+      ["event", "events", "events", "title"],
+      ["song", "music", "songs", "title"],
+      ["video", "media", "videos", "title"],
+      ["product", "goods", "products", "title"],
+      ["campaign", "goods", "campaigns", "title"],
+    ]) {
+      const before = structuredClone(s.models[file][list][0]),
+        id = entity === "video" ? before.youtubeId : before.id,
+        value = { ...before, [field]: before[field] + " 正規更新" };
+      operations.push({
+        key: "live-" + entity,
+        entity,
+        id,
+        baseCommit: s.sha,
+        before,
+        value,
+      });
+    }
     const plan = await planSubmission(s, operations, {
       actor: "123",
       batchId: await hash("prospective"),
@@ -131,6 +153,20 @@ test("legitimate mixed Admin output passes current master validation and histori
       { cwd: temp, env, stdio: "pipe", timeout: 60000 },
     );
     assert.match(String(result), /(?:tests) [1-9]\d*/);
+    const talentPath = path.join(temp, "data/talents.json"),
+      valid = fs.readFileSync(talentPath, "utf8"),
+      bad = JSON.parse(valid);
+    bad.talents.push(structuredClone(bad.talents[0]));
+    fs.writeFileSync(talentPath, JSON.stringify(bad));
+    assert.throws(() =>
+      execFileSync(process.execPath, ["scripts/check.js"], {
+        cwd: temp,
+        env,
+        stdio: "pipe",
+        timeout: 60000,
+      }),
+    );
+    fs.writeFileSync(talentPath, valid);
     assert.deepEqual(
       JSON.parse(
         fs.readFileSync(path.join(temp, "ops/official-discovery/review.json")),

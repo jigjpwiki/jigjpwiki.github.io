@@ -1,3 +1,4 @@
+import {baselineModels,currentModels} from './baseline.mjs';
 import { test } from "node:test";
 import assert from "node:assert/strict";
 import fs from "node:fs";
@@ -8,14 +9,7 @@ import { Submissions } from "../src/submissions.mjs";
 import { threeWay, planSubmission } from "../src/submission-plan.mjs";
 import audit from "../src/audit.cjs";
 const models = () =>
-  Object.fromEntries(
-    readFiles.map((n) => [
-      n,
-      JSON.parse(
-        fs.readFileSync(new URL("../../" + filePath(n), import.meta.url)),
-      ),
-    ]),
-  );
+  baselineModels();
 const edit = (m, entity, list, file, i = 0) => ({
   key: entity + "-" + i,
   entity,
@@ -784,4 +778,11 @@ test("CI API permission failures preserve actual PR metadata but never claim suc
   assert.equal(detail.status.ci, "unknown");
   assert.equal(detail.status.ciError, "github_403");
   assert.equal(detail.status.canMerge, false);
+});
+
+test('closed/merged/retargeted/foreign PRs cannot be updated and never write refs',async()=>{
+ for(const change of[{state:'closed'},{merged:true},{base:{ref:'other'}},{head:{ref:'foreign',sha:'head',repo:{full_name:'outside/repo'}}}]){
+  const s=await setup(),ops=operations(s.original);await s.save(ops);const p=await s.service.preview({protocol:2,revision:1,keys:[ops[0].key]});await s.service.submit({protocol:2,previewId:p.id,confirmationHash:p.confirmationHash});s.advance();const original=s.github.call;
+  s.github.call=async(path,...args)=>{const result=await original(path,...args);return /\/pulls\/\d+$/.test(path)?{...result,...change}:result;};const before=s.writes();await assert.rejects(s.service.updatePreview(p.id),/branch|closed|PR|pr|conflict/);assert.equal(s.writes(),before);
+ }
 });

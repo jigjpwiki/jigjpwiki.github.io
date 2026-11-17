@@ -1,0 +1,90 @@
+{
+  "environment": {
+    "node": "v24.22.1",
+    "chromium": "156.0.8078.79",
+    "viewport": "1440x1000",
+    "backend": "Node mock Worker + encrypted store; not production Cloudflare"
+  },
+  "performance": [
+    {
+      "entity": "talent",
+      "count": 1000,
+      "initialMs": 19.400000005960464,
+      "searchMs": 11.899999991059303,
+      "filterMs": 61.70000000298023,
+      "sortMs": 35,
+      "pageMs": 23,
+      "editMs": 66.79999999701977,
+      "domRows": 50,
+      "heapMiB": 9.222969055175781
+    },
+    {
+      "entity": "anniversary",
+      "count": 5000,
+      "initialMs": 65.79999999701977,
+      "searchMs": 83.3999999910593,
+      "filterMs": 23,
+      "sortMs": 23.200000002980232,
+      "pageMs": 76,
+      "editMs": 72.5,
+      "domRows": 50,
+      "heapMiB": 6.557788848876953
+    },
+    {
+      "entity": "event",
+      "count": 2000,
+      "initialMs": 29.400000005960464,
+      "searchMs": 363.09999999403954,
+      "filterMs": 768.3000000119209,
+      "sortMs": 625,
+      "pageMs": 427.09999999403954,
+      "editMs": 66.09999999403954,
+      "domRows": 50,
+      "heapMiB": 8.716751098632812
+    },
+    {
+      "entity": "product",
+      "count": 5000,
+      "initialMs": 78.1000000089407,
+      "searchMs": 1048.199999988079,
+      "filterMs": 977.3000000119209,
+      "sortMs": 1935.0999999940395,
+      "pageMs": 910.5999999940395,
+      "editMs": 51.80000001192093,
+      "domRows": 50,
+      "heapMiB": 9.150993347167969
+    },
+    {
+      "entity": "performance",
+      "count": 10000,
+      "initialMs": 49.20000000298023,
+      "searchMs": 2198.5,
+      "filterMs": 1854.5,
+      "sortMs": 1613.2000000029802,
+      "pageMs": 1552.3999999910593,
+      "editMs": 33.5,
+      "domRows": 50,
+      "heapMiB": 10.89697265625
+    },
+    {
+      "entity": "offer",
+      "count": 250,
+      "initialMs": 3365.199999988079,
+      "searchMs": 5812.5,
+      "filterMs": 5371.899999991059,
+      "sortMs": 10547.5,
+      "pageMs": 9067.60000000894,
+      "editMs": 31.399999991059303,
+      "domRows": 50,
+      "heapMiB": 19.95754623413086
+    }
+  ],
+  "scenarios": [],
+  "accessibility": [],
+  "limits": {
+    "initialMs": 1500,
+    "interactionMs": 1000,
+    "heapMiB": 128
+  },
+  "before": true
+}

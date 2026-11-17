@@ -841,3 +841,31 @@ h4 {
   line-height: 36px;
   min-height: 36px;
 }
+.table-bulk details {
+  padding: 0;
+  margin: 0;
+}
+.table-bulk details[open] {
+  flex: 1 1 100%;
+  padding: 8px;
+  border: 1px solid var(--line);
+  background: var(--surface);
+}
+.table-bulk ul {
+  max-height: 240px;
+  overflow: auto;
+  margin: 8px 0;
+  padding-left: 24px;
+}
+.confirmation-dialog {
+  max-height: 85dvh;
+  overflow: auto;
+}
+.confirmation-dialog ul {
+  max-height: 240px;
+  overflow: auto;
+}
+.table-bulk [aria-pressed="true"] {
+  border: 2px solid var(--accent);
+  font-weight: 700;
+}

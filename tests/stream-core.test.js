@@ -1,3 +1,4 @@
+const ruleRoot=require('./fixtures/historical-root.cjs')();
 "use strict";
 const test = require("node:test"),
   assert = require("node:assert/strict"),
@@ -78,7 +79,7 @@ test("feed freshness depends on collection metadata, never the stream date or re
 });
 test("public mapping is projected after private-master filtering without provenance or extra fields", () => {
   const { publicTalents } = require("../lib/talent-publication"),
-    master = require("../lib/talents").loadTalents();
+    master = require("../lib/talents").loadTalents(ruleRoot);
   const hidden = structuredClone(master.talents[0]);
   hidden.visibility = "draft";
   const projected = publicTalents({

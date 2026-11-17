@@ -1,3 +1,4 @@
+const ruleRoot=require('./fixtures/historical-root.cjs')();
 "use strict";
 const test = require("node:test"),
   assert = require("node:assert/strict"),
@@ -86,7 +87,7 @@ test("combined filters preserve representative grouping and distinguish past, un
   assert(directory.matches(unaffiliated, { relation: "unaffiliated" }));
 });
 test("server renders static grouped cards once, excludes drafts and escapes all public labels", () => {
-  const master = structuredClone(require("../data/talents.json"));
+  const master = structuredClone(require("./fixtures/admin-vnext-baseline.json").talents);
   master.talents[0].visibility = "draft";
   master.talents[1].displayName = "<script>fixture</script>";
   const html = talentCards(master);
@@ -97,7 +98,7 @@ test("server renders static grouped cards once, excludes drafts and escapes all 
   assert(!html.includes("プロフィールを見る"));
   assert(html.includes("data-directory-section="));
   const privateGroup = {
-    ...require("../data/catalog.json").groups[0],
+    ...require("./fixtures/admin-vnext-baseline.json").catalog.groups[0],
     visibility: "draft",
   };
   const withoutPrivateGroup = talentCards(master, [privateGroup]);
@@ -108,11 +109,11 @@ test("sparse profiles omit unrelated empty sections and keep Wiki links and huma
   const { loadTalents } = require("../lib/talents"),
     { loadCatalog, publicCatalog } = require("../lib/catalog"),
     { talentPage } = require("../lib/talent-details");
-  const master = loadTalents(),
+  const master = loadTalents(ruleRoot),
     person = structuredClone(require("./fixtures/foundation-talents.json")[3]);
   person.profileImage = null;
   const html = talentPage(person, master, {
-    ...publicCatalog(loadCatalog(master)),
+    ...publicCatalog(loadCatalog(master,ruleRoot)),
     events: [],
   });
   assert(!html.includes("profile-anniversaries"));
@@ -127,7 +128,7 @@ test("sparse profiles omit unrelated empty sections and keep Wiki links and huma
   person.affiliations = [];
   person.agencyStatus = { value: "unknown" };
   const unknown = talentPage(person, master, {
-    ...publicCatalog(loadCatalog(master)),
+    ...publicCatalog(loadCatalog(master,ruleRoot)),
     events: [],
   });
   assert(unknown.includes("所属不明"));

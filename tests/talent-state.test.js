@@ -1,3 +1,4 @@
+const ruleRoot=require('./fixtures/historical-root.cjs')();
 'use strict';
 const test = require('node:test');
 const assert = require('node:assert/strict');
@@ -42,8 +43,8 @@ test('current affiliations still reject unknown/unaffiliated agency state and in
 });
 
 test('current public master validates and rendering/catalog projection preserve every recorded state', () => {
-  const m = loadTalents(), before = structuredClone(m);
-  const data = publicCatalog(loadCatalog(m));
+  const m = loadTalents(ruleRoot), before = structuredClone(m);
+  const data = publicCatalog(loadCatalog(m,ruleRoot));
   for (const t of m.talents.filter(t => t.visibility === 'public')) talentPage(t, m, data, {});
   assert.deepEqual(m, before);
 });

@@ -1,3 +1,4 @@
+import { referenceIndex } from "./row-projection.js";
 import { portrait } from "./controls.js";
 import { enums } from "./content-fields.js";
 export const states = {
@@ -53,24 +54,51 @@ export function anniversaryDate(raw) {
     throw Error("存在する日付を入力してください。");
   return { year, month, day };
 }
+const jstFormatter = new Intl.DateTimeFormat("ja-JP", {
+  timeZone: "Asia/Tokyo",
+  dateStyle: "short",
+  timeStyle: "short",
+});
 export function formatJst(value) {
   if (!value) return "未登録・不明";
   const date = new Date(value);
   return Number.isFinite(date.getTime())
-    ? new Intl.DateTimeFormat("ja-JP", {
-        timeZone: "Asia/Tokyo",
-        dateStyle: "short",
-        timeStyle: "short",
-      }).format(date)
+    ? jstFormatter.format(date)
     : "日時未入力・要確認";
 }
 export function columnsFor(entity, { models, forms, rowsFor = () => [] } = {}) {
+  const talents = referenceIndex(models.talents.talents),
+    organizations = referenceIndex(models.talents.organizations),
+    indices = new Map();
+  function lookup(type, id) {
+    const rows = rowsFor(type),
+      saved = indices.get(type);
+    if (saved?.rows !== rows)
+      indices.set(type, { rows, index: referenceIndex(rows) });
+    return indices.get(type).index.get(id);
+  }
+  let offerRows, byCampaign, byProduct;
+  function offers(field, id) {
+    const rows = rowsFor("offer");
+    if (rows !== offerRows) {
+      offerRows = rows;
+      byCampaign = new Map();
+      byProduct = new Map();
+      for (const r of rows) {
+        for (const [map, key] of [
+          [byCampaign, r.campaignId],
+          [byProduct, r.productId],
+        ]) {
+          if (!map.has(key)) map.set(key, []);
+          map.get(key).push(r);
+        }
+      }
+    }
+    return (field === "campaignId" ? byCampaign : byProduct).get(id) || [];
+  }
   const talentNames = (ids) =>
-    (ids || [])
-      .map(
-        (id) =>
-          models.talents.talents.find((t) => t.id === id)?.displayName || id,
-      )
+    (Array.isArray(ids) ? ids : [])
+      .map((id) => talents.get(id)?.displayName || id)
       .join("・");
   const title = column(
     "title",
@@ -94,23 +122,16 @@ export function columnsFor(entity, { models, forms, rowsFor = () => [] } = {}) {
     },
   );
   if (entity === "karaoke") {
-    title.get = (r) =>
-      rowsFor("video").find(
-        (v) => v.youtubeId === r.youtubeId || v._reference === r.youtubeId,
-      )?.title || r.youtubeId;
+    title.get = (r) => lookup("video", r.youtubeId)?.title || r.youtubeId;
     delete title.set;
   }
   if (entity === "musicVideo") {
     title.get = (r) =>
-      r.rawSongTitle ||
-      rowsFor("video").find((v) => v.youtubeId === r.youtubeId)?.title ||
-      r.youtubeId;
+      r.rawSongTitle || lookup("video", r.youtubeId)?.title || r.youtubeId;
     title.set = (r, v) => (r.rawSongTitle = v);
   }
   if (entity === "offer") {
-    title.get = (r) =>
-      rowsFor("product").find((p) => (p._reference || p.id) === r.productId)
-        ?.title || r.productId;
+    title.get = (r) => lookup("product", r.productId)?.title || r.productId;
     delete title.set;
   }
   title.search = (r) =>
@@ -150,9 +171,7 @@ export function columnsFor(entity, { models, forms, rowsFor = () => [] } = {}) {
             .map(
               (a) =>
                 (a.status === "former" ? "旧：" : "") +
-                (models.talents.organizations.find(
-                  (o) => o.id === a.organizationId,
-                )?.name || "不明"),
+                (organizations.get(a.organizationId)?.name || "不明"),
             )
             .join("・"),
         width: 210,
@@ -205,7 +224,11 @@ export function columnsFor(entity, { models, forms, rowsFor = () => [] } = {}) {
     });
   else if (entity === "group")
     columns.push(
-      { key: "members", label: "メンバー数", get: (r) => r.talentIds.length },
+      {
+        key: "members",
+        label: "メンバー数",
+        get: (r) => (r.talentIds || []).length,
+      },
       visibility,
     );
   else if (entity === "anniversary")
@@ -214,15 +237,15 @@ export function columnsFor(entity, { models, forms, rowsFor = () => [] } = {}) {
       {
         ...column("date", "日付"),
         get: (r) =>
-          (r.date.year ? r.date.year + "-" : "") +
-          String(r.date.month).padStart(2, "0") +
+          (r.date?.year ? String(r.date.year).padStart(4, "0") + "-" : "") +
+          String(r.date?.month ?? "").padStart(2, "0") +
           "-" +
-          String(r.date.day).padStart(2, "0"),
+          String(r.date?.day ?? "").padStart(2, "0"),
         set: (r, v) => (r.date = v),
         parse: anniversaryDate,
         sort: (r) =>
-          String(r.date.month).padStart(2, "0") +
-          String(r.date.day).padStart(2, "0"),
+          String(r.date?.month ?? "").padStart(2, "0") +
+          String(r.date?.day ?? "").padStart(2, "0"),
         width: 160,
       },
       enumColumn("type", "種類"),
@@ -252,29 +275,22 @@ export function columnsFor(entity, { models, forms, rowsFor = () => [] } = {}) {
         label: "商品数",
         get: (r) =>
           new Set(
-            rowsFor("offer")
-              .filter((o) => o.campaignId === (r._reference || r.id))
-              .map((o) => o.productId),
+            offers("campaignId", r._reference || r.id).map((o) => o.productId),
           ).size,
       },
       {
         key: "sales",
         label: "販売状況",
         get: (r) =>
-          window.Goods?.aggregate(
-            rowsFor("offer").filter(
-              (o) => o.campaignId === (r._reference || r.id),
-            ),
-          ).label || "未確認",
+          window.Goods?.aggregate(offers("campaignId", r._reference || r.id))
+            .label || "未確認",
       },
     );
   else if (entity === "product")
     columns.push(people, visibility, {
       key: "offers",
       label: "販売情報",
-      get: (r) =>
-        rowsFor("offer").filter((o) => o.productId === (r._reference || r.id))
-          .length,
+      get: (r) => offers("productId", r._reference || r.id).length,
     });
   else if (entity === "offer")
     columns.push(
@@ -311,8 +327,7 @@ export function columnsFor(entity, { models, forms, rowsFor = () => [] } = {}) {
       {
         key: "song",
         label: "対応楽曲",
-        get: (r) =>
-          rowsFor("song").find((s) => s.id === r.songId)?.title || "未確定",
+        get: (r) => lookup("song", r.songId)?.title || "未確定",
       },
       column("startsAtSeconds", "開始（秒）", {
         parse: number,

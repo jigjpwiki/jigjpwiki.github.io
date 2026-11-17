@@ -1,3 +1,4 @@
+import { mountSubmissions } from "./submissions.js";
 import { Workspace, withoutSubmitted } from "./workspace.js";
 import { mountContent } from "./content-manager.js";
 import { labels as contentLabels } from "./content-fields.js";
@@ -59,85 +60,30 @@ function setupWorkspaceBar() {
   $("#app").insertBefore(bar, $("#view"));
   renderSaveState();
 }
+function submissionView(options = {}) {
+  const previous = activeEditor;
+  activeEditor = mountSubmissions({
+    container: $("#view"),
+    workspace,
+    api,
+    ...options,
+    onRefresh: renderSaveState,
+    onStatus: showStatus,
+    resume: (op) => {
+      if (["talent", "organization", "group"].includes(op.entity)) {
+        entity = op.entity;
+        edit(op.before, op);
+      } else {
+        const category = schemas.content.types[op.entity].category;
+        resumeOperationKey = op.key;
+        if (location.hash === "#" + category) screen();
+        else location.hash = "#" + category;
+      }
+    },
+  });
+}
 function workspaceView() {
-  const view = $("#view");
-  view.replaceChildren(
-    node("h2", "変更ワークスペース"),
-    node(
-      "p",
-      "下書きは管理者専用・保存から30日間です（120件・512KiBまで）。保存では公開されません。一括PR提出は次のPhaseで追加します。",
-    ),
-  );
-  const table = node("table"),
-    head = node("tr");
-  for (const label of ["種類", "対象", "検証", "操作"])
-    head.append(node("th", label));
-  const thead = node("thead");
-  thead.append(head);
-  table.append(thead);
-  const body = node("tbody");
-  for (const op of workspace.operations) {
-    const row = node("tr"),
-      title =
-        op.value.displayName ||
-        op.value.name ||
-        op.value.title ||
-        op.value.rawSongTitle ||
-        op.id ||
-        "新規登録";
-    row.append(
-      node(
-        "td",
-        labels[op.entity] ||
-          schemas?.content.types[op.entity]?.label ||
-          op.entity,
-      ),
-      node("td", title),
-      node("td", "未検証"),
-    );
-    const cell = node("td");
-    cell.append(
-      button("編集を再開", () => {
-        if (["talent", "organization", "group"].includes(op.entity)) {
-          entity = op.entity;
-          edit(op.before, op);
-        } else {
-          const category = schemas.content.types[op.entity].category;
-          resumeOperationKey = op.key;
-          if (location.hash === "#" + category) screen();
-          else location.hash = "#" + category;
-        }
-      }),
-      button("下書きから除外", () => {
-        if (confirm(title + "の下書きを除外しますか？")) {
-          workspace.replace(
-            workspace.operations.filter((o) => o.key !== op.key),
-          );
-          workspaceView();
-        }
-      }),
-    );
-    row.append(cell);
-    body.append(row);
-  }
-  table.append(body);
-  const tableRegion = node("div");
-  tableRegion.className = "workspace-table";
-  tableRegion.tabIndex = 0;
-  tableRegion.setAttribute("role", "region");
-  tableRegion.setAttribute("aria-label", "保存した変更一覧");
-  tableRegion.append(table);
-  view.append(tableRegion);
-  if (workspace.state === "conflict" || workspace.state === "failed")
-    view.append(
-      node("p", workspace.error || "保存できませんでした。"),
-      button("保存済み下書きを読み直す", async () => {
-        if (confirm("未保存の入力を破棄して保存済み下書きを読み直しますか？")) {
-          await workspace.load();
-          workspaceView();
-        }
-      }),
-    );
+  submissionView();
 }
 
 export async function api(path, method = "GET", value) {
@@ -154,6 +100,23 @@ export async function api(path, method = "GET", value) {
   if (!r.ok) {
     const error = new Error(
       {
+        submission_protocol:
+          "管理画面を再読み込みし、もう一度確認してください。",
+        unknown_operation:
+          "選択した下書きが見つかりません。保存済み変更を確認してください。",
+        missing_dependency:
+          "必要な関連変更が選択されていません。「関連変更も選択」を利用してください。",
+        baseline_mismatch:
+          "編集開始時の値がGitHubの履歴と一致しません。下書きを確認してください。",
+        baseline_budget_split:
+          "編集開始時点が多いためAPI予算を超えます。選択を分けてください。",
+        submission_size_split:
+          "提出データが上限を超えました。選択を分けてください。",
+        admin_branch_conflict:
+          "PRブランチまたはmainが更新されました。差分を再確認してください。",
+        no_main_change: "mainは前回の確認時点から更新されていません。",
+        preview_expired:
+          "プレビューの有効期限が切れました。もう一度プレビューしてください。",
         temporary_failure:
           "一時的に保存できませんでした。再度保存してください。",
         workspace_revision_conflict:
@@ -187,7 +150,7 @@ export async function api(path, method = "GET", value) {
         field_confirmation_required: "変更内容をもう一度確認してください。",
         confirmation_name_and_id_required:
           "対象IDと表示名を正確に入力してください。",
-      }[data.error] ||
+      }[data.error?.split(":")[0]] ||
         data.error ||
         "通信に失敗しました",
     );
@@ -716,7 +679,11 @@ function mayLeave() {
   );
 }
 window.addEventListener("beforeunload", (e) => {
-  if (workspace?.dirty || (activeEditor?.dirty && !workspace)) {
+  if (
+    activeEditor?.pending ||
+    workspace?.dirty ||
+    (activeEditor?.dirty && !workspace)
+  ) {
     e.preventDefault();
     e.returnValue = "";
   }
@@ -937,6 +904,37 @@ function displayValue(value, path) {
   return enumLabels[value] || String(value);
 }
 async function showPreview(input, workspaceKey) {
+  if (workspace && (input.action === "save" || input.entity === "content")) {
+    await workspace.flush();
+    const keys =
+      input.entity === "content"
+        ? input.value.operations.filter(o=>{
+          if(workspace.operations.some(w=>w.key===o.key))return true;
+          const t=schemas.content.types[o.entity],old=o.id && snapshot.models[t.file][t.list].find(r=>r[t.field || "id"]===o.id);
+          if(old&&!fieldChanges(old,o.value).length)return false;
+          throw new Error("保存されていない変更があります。下書きを確認してください。");
+        }).map((o) => o.key)
+        : [workspaceKey];
+    if (!keys.length || keys.some((k) => !k || !workspace.operations.some((o) => o.key === k)))
+      throw new Error("変更がありません。下書きを確認してください。");
+    const previous = activeEditor;
+    submissionView({
+      initialKeys: keys,
+      initialReason: input.reason || "",
+      autoPreview: true,
+      onDone: () => {
+        activeEditor = null;
+        if (input.entity === "content") screen();
+        else listView();
+      },
+      onBack: () => {
+        activeEditor = previous;
+        previous?.show();
+      },
+    });
+    return;
+  }
+
   // Phase 1 does not perform a rebase. Never submit a saved old record against a new main.
   const staged =
     workspace?.operations.filter((o) =>
@@ -1151,6 +1149,12 @@ screen = function () {
     if (a.hash === (location.hash || "#dashboard"))
       a.setAttribute("aria-current", "page");
     else a.removeAttribute("aria-current");
+  }
+  if (location.hash === "#submitted") {
+    const open = () => submissionView({ mode: "submitted" });
+    if (snapshot) open();
+    else loadMasters(open).catch((e) => showStatus(e.message));
+    return;
   }
   if (location.hash === "#workspace") {
     if (snapshot) workspaceView();

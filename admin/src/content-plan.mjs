@@ -5,6 +5,10 @@ import { assertPrivateUnreferenced } from "../../lib/talent-publication.js";
 import { hash, fail } from "./security.mjs";
 const equal = (a, b) => JSON.stringify(a) === JSON.stringify(b);
 const refFields = new Set([
+  "talentIds",
+  "organizationIds",
+  "organizationId",
+  "groupIds",
   "songId",
   "karaokeId",
   "productId",
@@ -13,11 +17,13 @@ const refFields = new Set([
   "videoIds",
 ]);
 const types = contentTypes;
-function nextId(models, prefix, registry) {
+export function nextId(models, prefix, registry) {
   const issued = models[registry].issued;
   // Reserved IDs and all extant IDs (including nested event slots) are both considered.
   const ids = [
     ...issued,
+    ...models.talents.organizations.map((o) => o.id),
+    ...(models["admin-ledger"].issuedOrganizations || []),
     ...Object.values(types)
       .filter((t) => t.prefix)
       .flatMap((t) => models[t.file][t.list].map((r) => r.id)),
@@ -32,7 +38,7 @@ function nextId(models, prefix, registry) {
   issued.push(id);
   return id;
 }
-function resolveRefs(value, ids, field) {
+export function resolveRefs(value, ids, field) {
   if (
     typeof value === "string" &&
     value.startsWith("@") &&
@@ -48,7 +54,7 @@ function resolveRefs(value, ids, field) {
     );
   return value;
 }
-function slots(models, record, old) {
+export function slots(models, record, old) {
   if (
     !Array.isArray(record.slots) ||
     record.slots.some((s) => !s || typeof s !== "object" || Array.isArray(s))
@@ -79,9 +85,8 @@ export async function contentPreview(snapshot, input, { actor, references }) {
         ].includes(k),
     ) ||
     input.action !== "batch" ||
-    typeof input.reason !== "string" ||
-    !input.reason.trim() ||
-    input.reason.length > 500 ||
+    (input.reason != null && typeof input.reason !== "string") ||
+    (input.reason?.length || 0) > 500 ||
     !input.value ||
     Object.keys(input.value).some((k) => k !== "operations") ||
     !Array.isArray(input.value.operations) ||
@@ -236,7 +241,7 @@ export async function contentPreview(snapshot, input, { actor, references }) {
     entity: "content",
     subject: records.map((r) => r.id).join(", "),
     action: "batch",
-    reason: input.reason,
+    reason: input.reason?.trim() || null,
     changedFields: records.flatMap((r) =>
       r.fields.map((f) => r.entity + "/" + r.id + "/" + f),
     ),

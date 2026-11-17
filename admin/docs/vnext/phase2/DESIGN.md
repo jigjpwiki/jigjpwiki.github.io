@@ -1,0 +1,15 @@
+# Phase 2 設計
+
+基準main 891287add、Phase 1を継続。#42は取り込まない。保存protocol1は不変。新提出protocol2はworkspace revision/選択keyを受け取り、内容はDOから取得する。preview hashを確認して決定的branchへ提出。旧preview/journalとはprefixとprotocolを分離する。
+
+3-wayはobjectのfield単位、配列は原子的なfieldとして比較する。ID付き配列の要素を推測で対応付けない。競合にはBase/Ours/Theirsを返す。BaseはGitHubの該当commitのrecordと照合し、クライアント申告だけを信用しない。最新registryで新規IDを発行、一時参照を解決し、全体を一度に検証する。
+
+監査はops/admin/audit/<batchId>.json。サーバー生成、任意file入力なし、旧ledger entriesは保持し通常の編集では追記しない。registry/収集除外等の既存運用データは維持する。新監査をroot/Adminで検証し公開allowlistに入れない。
+
+提出はDO journalと既存GitHub publish gatewayを共用。PRの存在を確認するまでsubmitted扱いにしない。提出後はkeyと操作hashが一致するdraftのみ消し、revisionが進んだ他tabの変更は残す。submissionを別prefixで180日保持、索引上限100件。OAuth tokenは保存しない。
+
+PR更新はownerの既知branch/headだけ。最新main上のtreeから検証済み変更を作り、旧headと最新mainを親とするmerge commitをfast-forward-onlyで適用する。GitHub ref PATCHにはexpected SHAパラメータがないため、直前head照合と旧headを親にする非force更新で他commitの置換を防ぐ。手動変更/closed/mergedは拒否。確認後にもmain/headを再検査する。auditは元recordを保持し更新attemptを別fileに追加する。
+
+PR/CIは手動更新＋60秒cache、自動pollなし。mergeable=trueだけで「マージ可能」にしない。checks/statusesの空・失敗・未取得・GitHub判定待ちは別表示。required checksを取得できない場合は承認可能と断定しない。
+
+既存Worker/class/binding/Secrets/Schema/public dataを変更しない。SESSION_KEYはphase1互換、ローテーション時は旧鍵で復号してから再暗号化する別作業が必要。旧Workerは新prefixを無視し送信できない。新DO schema migration不要。deployは本PRに含まない。

@@ -16,7 +16,7 @@ const root = path.resolve(import.meta.dirname, "../.."),
     ]),
   );
 const data = new Map();
-let lastPreview;
+let lastPreview, lastSubmissionPlan;
 const originalModels = JSON.stringify(models);
 let writes = 0,
   created = false,
@@ -107,7 +107,11 @@ const server = http.createServer(async (req, res) => {
         req.on("data", (c) => chunks.push(c));
         req.on("end", () => resolve(Buffer.concat(chunks)));
       });
-      if (req.url === "/api/change-requests/preview")
+      if (
+        ["/api/change-requests/preview", "/api/submissions/preview"].includes(
+          req.url,
+        )
+      )
         lastPreview = JSON.parse(body.toString());
       const response = await worker.fetch(
         new Request(base + req.url, {
@@ -116,6 +120,8 @@ const server = http.createServer(async (req, res) => {
           ...(body.length ? { body } : {}),
         }),
       );
+      if (req.url === "/api/submissions/preview" && response.ok)
+        lastSubmissionPlan = await response.clone().json();
       res.statusCode = response.status;
       response.headers.forEach((v, k) => {
         if (k !== "set-cookie") res.setHeader(k, v);
@@ -206,9 +212,7 @@ try {
       console.error("UI", await p.locator("body").innerText());
       throw e;
     }
-    await p
-      .getByRole("link", { name: "VTuber", exact: true })
-      .focus();
+    await p.getByRole("link", { name: "VTuber", exact: true }).focus();
     await p.keyboard.press("Enter");
     // Edit Lee through the actual form: optional URL round-trip must preserve Wiki refs.
     await p
@@ -251,16 +255,14 @@ try {
     p.once("dialog", (d) => d.accept());
     await account.getByRole("button", { name: /を削除$/ }).click();
     await p.getByRole("button", { name: "変更を確認", exact: true }).click();
-    // Missing reason/confirmation errors link to the offending field, including keyboard activation.
+    // Missing confirmation errors link to the offending field, including keyboard activation.
     await p
       .getByRole("button", { name: "変更プレビュー", exact: true })
       .click();
     await p.locator(".error-summary button").first().focus();
     await p.keyboard.press("Enter");
     assert.equal(
-      await p
-        .getByRole("textbox", { name: "変更理由", exact: true })
-        .getAttribute("aria-invalid"),
+      await p.locator("#change-confirmed").getAttribute("aria-invalid"),
       "true",
     );
     await p
@@ -283,8 +285,15 @@ try {
       });
     const expected = structuredClone(lee);
     expected.profileImage.url = "https://example.com/unavailable.png";
-    assert.deepEqual(lastPreview.value, expected);
-    assert.deepEqual(lastPreview.value.wiki, lee.wiki);
+    assert.equal(lastPreview.protocol, 2);
+    assert.deepEqual(
+      lastSubmissionPlan.records.find((r) => r.id === lee.id).value,
+      expected,
+    );
+    assert.deepEqual(
+      lastSubmissionPlan.records.find((r) => r.id === lee.id).value.wiki,
+      lee.wiki,
+    );
     assert(!JSON.stringify(lastPreview).includes("sourceRefs"));
     assert.equal(JSON.stringify(models), originalModels);
     await p
@@ -293,10 +302,7 @@ try {
         exact: true,
       })
       .click();
-    p.once("dialog", (d) => d.dismiss());
-    await p.getByRole("button", { name: "一覧へ戻る", exact: true }).click();
-    await p.getByRole("tab", { name: "基本情報", exact: true }).waitFor();
-    p.once("dialog", (d) => d.accept());
+    // Preview flushes the draft; leaving an already saved editor does not discard data or need a warning.
     await p.getByRole("button", { name: "一覧へ戻る", exact: true }).click();
     await p.getByRole("searchbox", { name: "名前・IDで検索" }).fill("真昼ねる");
     assert.equal(
@@ -370,7 +376,7 @@ try {
         ),
         fullPage: true,
       });
-    await p.locator("#preview-confirmed").check();
+    await p.getByLabel("差分と参照影響を確認しました",{exact:true}).check();
     if (width === 320) rejectPR = true;
     await p
       .getByRole("button", { name: "確認した変更でPRを作成", exact: true })
@@ -426,7 +432,7 @@ try {
     await p
       .getByRole("heading", { name: "変更プレビュー", exact: true })
       .waitFor();
-    await p.locator("#preview-confirmed").check();
+    await p.getByLabel("差分と参照影響を確認しました",{exact:true}).check();
     if (width === 320) rejectPR = true;
     await p
       .getByRole("button", { name: "確認した変更でPRを作成", exact: true })

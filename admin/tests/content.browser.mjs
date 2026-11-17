@@ -1,3 +1,4 @@
+import { submissionBrowser } from "./submission.browser.mjs";
 import { workspaceBrowser } from "./workspace.browser.mjs";
 import fs from "node:fs";
 import http from "node:http";
@@ -17,8 +18,11 @@ const root = path.resolve(import.meta.dirname, "../.."),
     ]),
   );
 const data = new Map();
-let lastPreview;
+let lastPreview, lastSubmissionPlan;
 let mainSha = "main-sha";
+let mainModels = structuredClone(models),
+  headSha = "new-commit",
+  commitSerial = 0;
 const createdBranches = new Set();
 const originalModels = JSON.stringify(models);
 let writes = 0,
@@ -43,6 +47,45 @@ const transport = async (url, opts = {}) => {
       number: 999,
       html_url: "https://github.com/jigjpwiki/jigjpwiki.github.io/pull/999",
     };
+  } else if (/\/pulls\/\d+$/.test(p))
+    result = {
+      number: 999,
+      title: "Admin fixture",
+      html_url: "https://github.com/jigjpwiki/jigjpwiki.github.io/pull/999",
+      state: "open",
+      merged: false,
+      base: { ref: "main" },
+      head: {
+        repo: { full_name: "jigjpwiki/jigjpwiki.github.io" },
+        ref: [...createdBranches].at(-1),
+        sha: headSha,
+      },
+      mergeable: true,
+      mergeable_state: "clean",
+    };
+  else if (p.includes("/check-runs"))
+    result = {
+      check_runs: [
+        {
+          name: "test",
+          status: "completed",
+          conclusion: "success",
+          html_url:
+            "https://github.com/jigjpwiki/jigjpwiki.github.io/actions/runs/1",
+        },
+      ],
+    };
+  else if (p.includes("/status")) result = { statuses: [] };
+  else if (p.includes("/protection/")) result = { contexts: ["test"] };
+  else if (p.includes("/rules/branches/")) result = [];
+  else if (p.includes("/git/refs/heads/") && opts.method === "PATCH") {
+    const v = JSON.parse(opts.body);
+    assert.equal(v.force, false);
+    headSha = v.sha;
+    result = { object: { sha: headSha } };
+  } else if (p.endsWith("/git/refs") && opts.method === "POST") {
+    headSha = JSON.parse(opts.body).sha;
+    result = {};
   } else if (p.endsWith("/pulls"))
     result = createdBranches.has(u.searchParams.get("head")?.split(":")[1])
       ? [
@@ -60,16 +103,23 @@ const transport = async (url, opts = {}) => {
   else if (p.includes("/git/commits/") || p.endsWith("/git/commits"))
     result =
       opts.method === "POST"
-        ? { sha: "new-commit" }
-        : { tree: { sha: "main-tree" } };
-  else if (p.endsWith("/git/trees/main-tree"))
+        ? { sha: "new-commit-" + ++commitSerial }
+        : { tree: { sha: "tree--" + p.split("/").pop() } };
+  else if (p.includes("/git/trees/tree--")) {
+    const revision = p.split("tree--")[1];
     result = {
-      tree: files.map((n) => ({ path: filePath(n), type: "blob", sha: n })),
+      tree: files.map((n) => ({
+        path: filePath(n),
+        type: "blob",
+        sha: "blob--" + revision + "--" + n,
+      })),
       truncated: false,
     };
-  else if (p.includes("/git/blobs/")) {
-    const n = p.split("/").pop(),
-      content = JSON.stringify(models[n]);
+  } else if (p.includes("/git/blobs/")) {
+    const [_, revision, n] = p.split("/").pop().split("--");
+    const content = JSON.stringify(
+      (revision === "main-sha" ? models : mainModels)[n],
+    );
     result = {
       size: Buffer.byteLength(content),
       encoding: "base64",
@@ -111,7 +161,11 @@ const server = http.createServer(async (req, res) => {
         req.on("data", (c) => chunks.push(c));
         req.on("end", () => resolve(Buffer.concat(chunks)));
       });
-      if (req.url === "/api/change-requests/preview")
+      if (
+        ["/api/change-requests/preview", "/api/submissions/preview"].includes(
+          req.url,
+        )
+      )
         lastPreview = JSON.parse(body.toString());
       const response = await worker.fetch(
         new Request(base + req.url, {
@@ -120,6 +174,8 @@ const server = http.createServer(async (req, res) => {
           ...(body.length ? { body } : {}),
         }),
       );
+      if (req.url === "/api/submissions/preview" && response.ok)
+        lastSubmissionPlan = await response.clone().json();
       res.statusCode = response.status;
       response.headers.forEach((v, k) => {
         if (k !== "set-cookie") res.setHeader(k, v);
@@ -240,9 +296,8 @@ async function review(p, name, width) {
     console.error("Review failure", name, await p.locator("body").innerText());
     throw e;
   }
-  assert.equal(lastPreview.entity, "content");
-  assert.equal(lastPreview.action, "batch");
-  assert(lastPreview.confirmation.valueHash);
+  assert.equal(lastPreview.protocol, 2);
+  assert(lastSubmissionPlan.confirmationHash);
   assert.equal(
     await p.evaluate(() => document.documentElement.scrollWidth > innerWidth),
     false,
@@ -454,6 +509,8 @@ try {
     )) {
       data.clear();
       mainSha = "main-sha";
+      mainModels = structuredClone(models);
+      commitSerial = 0;
       createdBranches.clear();
       const context = await browser.newContext({
         viewport: { width, height: 900 },
@@ -525,16 +582,16 @@ try {
         throw e;
       }
       if (name === "campaign-bundle") {
-        assert.equal(lastPreview.value.operations.length, 5);
+        assert.equal(lastSubmissionPlan.records.length, 5);
         assert.equal(
-          lastPreview.value.operations.filter((o) => o.entity === "product")
+          lastSubmissionPlan.records.filter((o) => o.entity === "product")
             .length,
           2,
         );
       }
       if (name === "karaoke-setlist")
         assert.equal(
-          lastPreview.value.operations.find((o) => o.entity === "performance")
+          lastSubmissionPlan.records.find((o) => o.entity === "performance")
             .value.startsAtSeconds,
           null,
         );
@@ -551,8 +608,31 @@ try {
       reset: () => {
         data.clear();
         mainSha = "main-sha";
+        mainModels = structuredClone(models);
+        commitSerial = 0;
       },
       shotDir: process.env.ADMIN_WORKSPACE_SCREENSHOTS,
+    });
+  if (!process.env.ADMIN_PUBLIC_ROOT)
+    await submissionBrowser({
+      browser,
+      base,
+      models,
+      reset: () => {
+        data.clear();
+        mainSha = "main-sha";
+        mainModels = structuredClone(models);
+        createdBranches.clear();
+        commitSerial = 0;
+      },
+      advance: (conflict) => {
+        mainSha = "new-main-sha";
+        mainModels.talents.talents[conflict ? 0 : 6].displayName += " main";
+      },
+      reject: () => {
+        rejectPR = true;
+      },
+      shotDir: process.env.ADMIN_SUBMISSION_SCREENSHOTS,
     });
   // The same authenticated write endpoint must reject CSRF and a newer main SHA.
   data.clear();
@@ -579,7 +659,10 @@ try {
   mainSha = "new-main-sha";
   await p.getByLabel("差分と参照影響を確認しました").check();
   await tab(p, "確認した変更でPRを作成");
-  await p.getByText(/mainが更新されました/).waitFor();
+  await p
+    .getByText(/mainが更新されました/)
+    .first()
+    .waitFor();
   assert.equal(
     await p.getByRole("heading", { name: "PRを作成しました" }).count(),
     0,

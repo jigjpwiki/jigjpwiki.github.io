@@ -11,11 +11,12 @@ export const random = () => {
   const b = crypto.getRandomValues(new Uint8Array(32));
   return b64(b);
 };
-export const b64 = (b) =>
-  btoa(String.fromCharCode(...b))
-    .replace(/\+/g, "-")
-    .replace(/\//g, "_")
-    .replace(/=+$/, "");
+export const b64 = (b) => {
+  let value = "";
+  for (let i = 0; i < b.length; i += 8192)
+    value += String.fromCharCode(...b.subarray(i, i + 8192));
+  return btoa(value).replace(/\+/g, "-").replace(/\//g, "_").replace(/=+$/, "");
+};
 export const unb64 = (s) =>
   Uint8Array.from(atob(s.replace(/-/g, "+").replace(/_/g, "/")), (c) =>
     c.charCodeAt(0),

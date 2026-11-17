@@ -1,8 +1,10 @@
 'use strict';
+// Business-rule examples use an immutable baseline; current masters are checked separately.
+const historicalRoot=require('./fixtures/historical-root.cjs')();
 const test=require('node:test'),assert=require('node:assert/strict');
 const {loadTalents}=require('../lib/talents');const {loadCatalog,publicCatalog}=require('../lib/catalog');
 const {loadEvents,validateEvents,projectEvents}=require('../lib/feature-data');const {timeLabel,eventPage}=require('../lib/feature-pages');
-const t=loadTalents(),c=publicCatalog(loadCatalog(t));const model=()=>{const m=loadEvents(t,c);return {media:structuredClone(m.media),events:structuredClone({schemaVersion:2,events:m.events})};};
+const t=loadTalents(historicalRoot),c=publicCatalog(loadCatalog(t,historicalRoot));const model=()=>{const m=loadEvents(t,c,historicalRoot);return {media:structuredClone(m.media),events:structuredClone({schemaVersion:2,events:m.events})};};
 const check=m=>validateEvents(t,c,m.media,m.events);
 const bad=mutate=>{const m=model();mutate(m);assert.throws(()=>check(m));};
 test('verified events use performer/profile links and actual broadcast ID without changing anniversaries',()=>{const m=model();assert.equal(m.events.events.length,5);assert.equal(m.events.events[0].talentIds.length,8);assert.equal(m.events.events[1].type,'special');assert.equal(m.media.videos[0].youtubeId,'-kR7Kqqy6Vs');assert.equal(check(m).events[1].timing,'actual');});

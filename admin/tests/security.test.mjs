@@ -229,3 +229,10 @@ test("PR gateway uses deterministic dedicated branch/main base and recovers exis
     ),
   );
 });
+
+test("large draft encryption is chunked without changing existing AES-GCM/base64url compatibility", async () => {
+  const { seal, open, random } = await import("../src/security.mjs");
+  const key = random(),
+    value = { text: "x".repeat(512000) };
+  assert.deepEqual(await open(await seal(value, key), key), value);
+});

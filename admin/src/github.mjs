@@ -1,7 +1,11 @@
 import { fail } from "./security.mjs";
 export const repository = "jigjpwiki/jigjpwiki.github.io";
 export const filePath = (name) =>
-  name === "admin-ledger" ? "ops/admin/ledger.json" : "data/" + name + ".json";
+  name.startsWith("audit:") && /^[\w-]{43}$/.test(name.slice(6))
+    ? "ops/admin/audit/" + name.slice(6) + ".json"
+    : name === "admin-ledger"
+      ? "ops/admin/ledger.json"
+      : "data/" + name + ".json";
 export const files = [
   "admin-ledger",
   "talents",
@@ -19,6 +23,9 @@ export const files = [
   "twitch_streamers",
 ];
 export const readFiles = [...files, "youtube_cache", "youtube", "twitch"];
+export const prDescription = (plan) =>
+  plan.summary +
+  "\n\n管理者がWebで確認した変更案です。人間が差分とCIをレビューしてマージしてください。自動マージ・Wiki書込みは行いません。";
 export class GitHub {
   constructor(token, transport = (...args) => fetch(...args)) {
     this.token = token;
@@ -67,8 +74,14 @@ export class GitHub {
       fail(403, "repository_write_not_authorized");
     return user;
   }
-  async snapshot() {
-    const ref = await this.call("/repos/" + repository + "/git/ref/heads/main");
+  async snapshot(revision, requested = readFiles) {
+    if (revision && !/^[\w-]{1,64}$/.test(revision))
+      fail(400, "invalid_commit");
+    if (requested.some((n) => !readFiles.includes(n)))
+      fail(400, "invalid_read_target");
+    const ref = revision
+      ? { object: { sha: revision } }
+      : await this.call("/repos/" + repository + "/git/ref/heads/main");
     const commit = await this.call(
       "/repos/" + repository + "/git/commits/" + ref.object.sha,
     );
@@ -79,7 +92,7 @@ export class GitHub {
     const models = {},
       shas = {};
     await Promise.all(
-      readFiles.map(async (name) => {
+      requested.map(async (name) => {
         const file = filePath(name),
           entry = tree.tree.find((x) => x.path === file && x.type === "blob");
         if (!entry) fail(409, "missing_master");
@@ -102,12 +115,34 @@ export class GitHub {
         shas[name] = entry.sha;
       }),
     );
-    return { sha: ref.object.sha, tree: commit.tree.sha, models, shas };
+    return {
+      sha: ref.object.sha,
+      tree: commit.tree.sha,
+      models,
+      shas,
+      auditShas: Object.fromEntries(
+        tree.tree
+          .filter(
+            (e) =>
+              e.type === "blob" &&
+              /^ops\/admin\/audit\/[\w-]{43}\.json$/.test(e.path),
+          )
+          .map((e) => [e.path, e.sha]),
+      ),
+    };
   }
   async publish(plan, key, record, save) {
     if (
       !/^[\w-]{1,64}$/.test(key) ||
-      Object.keys(plan.files).some((n) => !files.includes(n))
+      Object.keys(plan.files).some(
+        (n) =>
+          !files.includes(n) &&
+          !(
+            n === "audit:" + key &&
+            plan.files[n]?.batchId === key &&
+            plan.files[n]?.version === 2
+          ),
+      )
     )
       fail(400, "invalid_write_target");
     const branch = "admin/change-" + key;
@@ -164,9 +199,7 @@ export class GitHub {
       base: "main",
       head: branch,
       title: "admin: " + plan.title,
-      body:
-        plan.summary +
-        "\n\n管理者がWebで確認した変更案です。人間が差分とCIをレビューしてマージしてください。自動マージ・Wiki書込みは行いません。",
+      body: prDescription(plan),
     });
     return { url: pr.html_url, number: pr.number };
   }

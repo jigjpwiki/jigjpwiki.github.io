@@ -15,6 +15,8 @@ import {
 } from "./security.mjs";
 import { GitHub, repository } from "./github.mjs";
 import { preview, forms } from "./model.mjs";
+import { Submissions } from "./submissions.mjs";
+import { finalizeAudit } from "./submission-plan.mjs";
 import { WorkspaceStore, workspaceLimits } from "./workspace.mjs";
 import migration from "../../lib/source-migration.js";
 export default {
@@ -219,6 +221,67 @@ export class Admin {
     if (rate.count >= 30) fail(429, "admin_request_limit");
     rate.count++;
     await this.store.put(rateKey, rate, rate.start + 60000);
+    if (url.pathname.startsWith("/api/submissions")) {
+      const service = new Submissions(
+        this.store,
+        this.env.SESSION_KEY,
+        github,
+        session.id,
+      );
+      const route = url.pathname;
+      if (route === "/api/submissions" && request.method === "GET")
+        return json({
+          submissions: await service.list(
+            Number(url.searchParams.get("cursor") || 0),
+          ),
+          legacy: await service.legacyList(),
+          total: (await service.ids()).length,
+        });
+      const legacy = route.match(/^\/api\/submissions\/legacy\/(\d+)$/);
+      if (legacy && request.method === "GET")
+        return json(await service.legacyStatus(Number(legacy[1])));
+      const match = route.match(
+        /^\/api\/submissions\/([\w-]{43})(?:\/(update-preview|update))?$/,
+      );
+      if (match && request.method === "GET" && !match[2])
+        return json(
+          await service.status(
+            match[1],
+            url.searchParams.get("refresh") === "1",
+          ),
+        );
+      if (request.method !== "POST") fail(404, "route_not_found");
+      const input = await body(
+        request,
+        match?.[2] === "update-preview" ? workspaceLimits.bytes : 16000,
+      );
+      if (route === "/api/submissions/preview")
+        return json(await service.preview(input));
+      if (match?.[2] === "update-preview") {
+        if (
+          input.protocol !== 2 ||
+          Object.keys(input).some(
+            (k) => !["protocol", "resolutions"].includes(k),
+          )
+        )
+          fail(400, "submission_protocol");
+        return json(await service.updatePreview(match[1], input.resolutions));
+      }
+      return this.state.blockConcurrencyWhile(async () => {
+        try {
+          if (route === "/api/submissions")
+            return json(await service.submit(input));
+          if (match?.[2] === "update")
+            return json(await service.update(match[1], input));
+          fail(404, "route_not_found");
+        } catch (e) {
+          return json(
+            { error: e instanceof Failure ? e.message : "internal_error" },
+            e instanceof Failure ? e.status : 500,
+          );
+        }
+      });
+    }
     if (url.pathname === "/api/workspace") {
       const workspace = new WorkspaceStore(this.store, this.env.SESSION_KEY);
       if (request.method === "GET")
@@ -285,7 +348,13 @@ export class Admin {
           impact: cached.impact,
           files: Object.keys(cached.files),
         });
-      plan.sourceFreeProtocol = plan.contentProtocol === 1 ? 2 : 1;
+      await finalizeAudit(plan, snapshot, {
+        actor: session.id,
+        batchId: id,
+        reason: input.reason,
+      });
+      plan.auditProtocol = 2;
+      plan.sourceFreeProtocol = 3;
       plan.sha = snapshot.sha;
       plan.tree = snapshot.tree;
       plan.shas = snapshot.shas;
@@ -321,7 +390,10 @@ export class Admin {
           if (
             !(
               (plan.sourceFreeProtocol === 1 && !plan.contentProtocol) ||
-              (plan.sourceFreeProtocol === 2 && plan.contentProtocol === 1)
+              (plan.sourceFreeProtocol === 2 && plan.contentProtocol === 1) ||
+              (plan.sourceFreeProtocol === 3 &&
+                plan.auditProtocol === 2 &&
+                [undefined, 1].includes(plan.contentProtocol))
             ) ||
             plan.migrationPending ||
             (record && !record.plan?.sourceFreeProtocol)
@@ -337,6 +409,7 @@ export class Admin {
               actor: session.id,
               plan: {
                 sourceFreeProtocol: plan.sourceFreeProtocol,
+                auditProtocol: plan.auditProtocol,
                 contentProtocol: plan.contentProtocol,
                 sha: plan.sha,
                 tree: plan.tree,

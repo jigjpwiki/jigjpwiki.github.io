@@ -435,3 +435,101 @@ nav a[aria-current="page"] {
   font-weight: 700;
   text-decoration-thickness: 3px;
 }
+
+/* Content workspaces share the existing editor/review components. */
+.content-dashboard {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 12px;
+  margin: 24px 0;
+}
+.content-dashboard button {
+  padding: 24px 14px;
+  font-size: 17px;
+}
+.content-toolbar,
+.content-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 16px 0;
+}
+.content-filters input,
+.content-filters select {
+  flex: 1 1 150px;
+  min-width: 0;
+}
+.content-list-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--border, #ccd3da);
+}
+.content-list-row button {
+  flex: 1 1 230px;
+  text-align: left;
+}
+.content-related {
+  margin: 20px 0;
+  padding: 16px;
+  border: 1px solid var(--border, #ccd3da);
+  border-radius: 4px;
+}
+.content-related button {
+  margin: 4px;
+}
+.content-related h3 {
+  margin-top: 0;
+}
+[data-content-tab] fieldset {
+  min-width: 0;
+  margin: 14px 0;
+  padding: 14px;
+  border: 1px solid var(--border, #ccd3da);
+}
+[data-content-tab] .form-field {
+  margin: 12px 0;
+}
+.array-card {
+  min-width: 0;
+}
+.content-list-row span {
+  font-size: 13px;
+}
+.field-hint {
+  font-size: 12px;
+  color: var(--muted, #596574);
+}
+[data-content-tab] input {
+  max-width: 100%;
+  box-sizing: border-box;
+}
+.content-toolbar button {
+  font-size: 13px;
+}
+#view > label {
+  display: block;
+  margin: 16px 0 6px;
+}
+.content-filters select {
+  max-width: 100%;
+}
+@media (max-width: 500px) {
+  .content-toolbar button {
+    flex: 1 1 125px;
+  }
+  .editor-tabs {
+    flex-wrap: wrap;
+  }
+  .content-dashboard {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  [data-content-tab] fieldset {
+    padding: 10px;
+  }
+  .name-picker select {
+    width: 100%;
+  }
+}

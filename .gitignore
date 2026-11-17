@@ -23,3 +23,6 @@ admin/.dev.vars
 admin/.wrangler-config/
 
 /admin/node_modules
+
+# Shared pure goods status logic is copied during the isolated Admin build.
+admin/public/goods-core.js

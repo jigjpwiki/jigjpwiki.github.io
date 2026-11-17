@@ -5,6 +5,7 @@ const esbuild = require("esbuild"),
   standalone = require("ajv/dist/standalone").default,
   { _ } = require("ajv/dist/compile/codegen");
 fs.mkdirSync("build", { recursive: true });
+fs.copyFileSync("../assets/js/goods-core.js", "public/goods-core.js");
 const ajv = new Ajv({
   allErrors: true,
   strict: true,

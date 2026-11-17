@@ -47,7 +47,7 @@ test('leap birthdays stay on Feb 29, no inferred age, first year and multiple sa
 test('calendar filters, empty states, HTML escaping and unsafe external URL suppression', () => {
   const pub=publicCatalog(model());const m={...pub,people:talents.talents,organizations:talents.organizations,detailsReady:false};
   assert.equal(core.filtered(m,{type:'debut'}).length,3);assert.equal(core.filtered(m,{organization:'org-000001'}).length,8);
-  assert.match(core.calendar({...m,events:[]},'2026-11','2026-11-15'),/確認済み記念日はありません/);
+  assert.match(core.calendar({...m,events:[]},'2026-11','2026-11-15'),/記念日はありません/);
   m.events[0].title='<img onerror=alert(1)>';
   assert.doesNotMatch(core.calendar(m,'2027-01','2026-11-15'),/<img onerror/);
   assert.doesNotMatch(core.upcoming(m,'2027-01-01'),/出典|sourceRefs/);

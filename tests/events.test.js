@@ -15,7 +15,7 @@ test('relay slots support distinct performers, unknown times, archive links and 
  slot.starts={precision:'instant',value:'2020-01-01T00:00:00Z'};assert.throws(()=>check(m),/outside/);slot.starts={precision:'instant',value:'2030-01-01T00:00:00Z'};assert.throws(()=>check(m),/outside/);
 });
 test('unknown/month/date times do not imply midnight, JST is explicit, draft sources never enter public projection',()=>{
- assert.match(timeLabel({precision:'instant',value:'2026-12-31T15:00:00Z'}),/2027\/01\/01.*00:00.*JST/);assert.match(timeLabel({precision:'date',value:'2026-12-26'}),/時刻未定/);assert.match(timeLabel({precision:'month',value:'2026-12'}),/日付未定/);assert.match(timeLabel({precision:'unknown',value:null}),/未定/);
+ assert.match(timeLabel({precision:'instant',value:'2026-12-31T15:00:00Z'}),/2027\/01\/01.*00:00.*JST/);assert.match(timeLabel({precision:'date',value:'2026-12-26'}),/時刻未定/);assert.match(timeLabel({precision:'month',value:'2026-12'}),/日付未定/);assert.match(timeLabel({precision:'unknown',value:null}),/日時不明/);
  const m=model();m.events.events[1].visibility='draft';const data=projectEvents(check(m));assert.equal(data.events.length,4);assert.equal(data.videos.length,0);assert(!('sources' in data));
 });
 test('event pages escape untrusted text, retain availability history and have real internal destinations',()=>{const m=model(),e=m.events.events[1];e.title='<script>bad()</script>';m.media.videos[0].availability='unavailable';const data=projectEvents(check(m));const html=eventPage(e,t,data);assert.doesNotMatch(html,/<script>bad/);assert.match(html,/&lt;script&gt;/);assert.match(html,/現在の視聴不可/);assert.match(html,/\/talents\/tal-000036\//);});

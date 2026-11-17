@@ -1,0 +1,522 @@
+[
+  {
+    "width": 320,
+    "javaScriptEnabled": true,
+    "page": "goods",
+    "scroll": 320
+  },
+  {
+    "width": 320,
+    "javaScriptEnabled": true,
+    "page": "campaign",
+    "scroll": 320
+  },
+  {
+    "width": 320,
+    "javaScriptEnabled": true,
+    "page": "product",
+    "scroll": 320
+  },
+  {
+    "width": 320,
+    "javaScriptEnabled": true,
+    "page": "product-image",
+    "scroll": 320
+  },
+  {
+    "width": 320,
+    "javaScriptEnabled": true,
+    "page": "talent",
+    "scroll": 320
+  },
+  {
+    "width": 320,
+    "page": "video-thumbnail",
+    "ratio": 1.7777777777777777
+  },
+  {
+    "width": 320,
+    "javaScriptEnabled": true,
+    "page": "music",
+    "scroll": 320
+  },
+  {
+    "width": 320,
+    "javaScriptEnabled": true,
+    "page": "karaoke-list",
+    "scroll": 320
+  },
+  {
+    "width": 320,
+    "javaScriptEnabled": true,
+    "page": "setlist",
+    "scroll": 320
+  },
+  {
+    "width": 320,
+    "javaScriptEnabled": true,
+    "page": "events",
+    "scroll": 320
+  },
+  {
+    "width": 320,
+    "javaScriptEnabled": true,
+    "page": "anniversaries",
+    "scroll": 320
+  },
+  {
+    "width": 320,
+    "javaScriptEnabled": false,
+    "page": "goods",
+    "scroll": 320
+  },
+  {
+    "width": 320,
+    "javaScriptEnabled": false,
+    "page": "campaign",
+    "scroll": 320
+  },
+  {
+    "width": 320,
+    "javaScriptEnabled": false,
+    "page": "product",
+    "scroll": 320
+  },
+  {
+    "width": 320,
+    "javaScriptEnabled": false,
+    "page": "product-image",
+    "scroll": 320
+  },
+  {
+    "width": 320,
+    "javaScriptEnabled": false,
+    "page": "talent",
+    "scroll": 320
+  },
+  {
+    "width": 320,
+    "page": "video-thumbnail",
+    "ratio": 1.7777777777777777
+  },
+  {
+    "width": 320,
+    "javaScriptEnabled": false,
+    "page": "music",
+    "scroll": 320
+  },
+  {
+    "width": 320,
+    "javaScriptEnabled": false,
+    "page": "karaoke-list",
+    "scroll": 320
+  },
+  {
+    "width": 320,
+    "javaScriptEnabled": false,
+    "page": "setlist",
+    "scroll": 320
+  },
+  {
+    "width": 320,
+    "javaScriptEnabled": false,
+    "page": "events",
+    "scroll": 320
+  },
+  {
+    "width": 320,
+    "javaScriptEnabled": false,
+    "page": "anniversaries",
+    "scroll": 320
+  },
+  {
+    "width": 390,
+    "javaScriptEnabled": true,
+    "page": "goods",
+    "scroll": 390
+  },
+  {
+    "width": 390,
+    "javaScriptEnabled": true,
+    "page": "campaign",
+    "scroll": 390
+  },
+  {
+    "width": 390,
+    "javaScriptEnabled": true,
+    "page": "product",
+    "scroll": 390
+  },
+  {
+    "width": 390,
+    "javaScriptEnabled": true,
+    "page": "product-image",
+    "scroll": 390
+  },
+  {
+    "width": 390,
+    "javaScriptEnabled": true,
+    "page": "talent",
+    "scroll": 390
+  },
+  {
+    "width": 390,
+    "page": "video-thumbnail",
+    "ratio": 1.7777777777777777
+  },
+  {
+    "width": 390,
+    "javaScriptEnabled": true,
+    "page": "music",
+    "scroll": 390
+  },
+  {
+    "width": 390,
+    "javaScriptEnabled": true,
+    "page": "karaoke-list",
+    "scroll": 390
+  },
+  {
+    "width": 390,
+    "javaScriptEnabled": true,
+    "page": "setlist",
+    "scroll": 390
+  },
+  {
+    "width": 390,
+    "javaScriptEnabled": true,
+    "page": "events",
+    "scroll": 390
+  },
+  {
+    "width": 390,
+    "javaScriptEnabled": true,
+    "page": "anniversaries",
+    "scroll": 390
+  },
+  {
+    "width": 390,
+    "javaScriptEnabled": false,
+    "page": "goods",
+    "scroll": 390
+  },
+  {
+    "width": 390,
+    "javaScriptEnabled": false,
+    "page": "campaign",
+    "scroll": 390
+  },
+  {
+    "width": 390,
+    "javaScriptEnabled": false,
+    "page": "product",
+    "scroll": 390
+  },
+  {
+    "width": 390,
+    "javaScriptEnabled": false,
+    "page": "product-image",
+    "scroll": 390
+  },
+  {
+    "width": 390,
+    "javaScriptEnabled": false,
+    "page": "talent",
+    "scroll": 390
+  },
+  {
+    "width": 390,
+    "page": "video-thumbnail",
+    "ratio": 1.7777777777777777
+  },
+  {
+    "width": 390,
+    "javaScriptEnabled": false,
+    "page": "music",
+    "scroll": 390
+  },
+  {
+    "width": 390,
+    "javaScriptEnabled": false,
+    "page": "karaoke-list",
+    "scroll": 390
+  },
+  {
+    "width": 390,
+    "javaScriptEnabled": false,
+    "page": "setlist",
+    "scroll": 390
+  },
+  {
+    "width": 390,
+    "javaScriptEnabled": false,
+    "page": "events",
+    "scroll": 390
+  },
+  {
+    "width": 390,
+    "javaScriptEnabled": false,
+    "page": "anniversaries",
+    "scroll": 390
+  },
+  {
+    "width": 768,
+    "javaScriptEnabled": true,
+    "page": "goods",
+    "scroll": 768
+  },
+  {
+    "width": 768,
+    "javaScriptEnabled": true,
+    "page": "campaign",
+    "scroll": 768
+  },
+  {
+    "width": 768,
+    "javaScriptEnabled": true,
+    "page": "product",
+    "scroll": 768
+  },
+  {
+    "width": 768,
+    "javaScriptEnabled": true,
+    "page": "product-image",
+    "scroll": 768
+  },
+  {
+    "width": 768,
+    "javaScriptEnabled": true,
+    "page": "talent",
+    "scroll": 768
+  },
+  {
+    "width": 768,
+    "page": "video-thumbnail",
+    "ratio": 1.7777777777777777
+  },
+  {
+    "width": 768,
+    "javaScriptEnabled": true,
+    "page": "music",
+    "scroll": 768
+  },
+  {
+    "width": 768,
+    "javaScriptEnabled": true,
+    "page": "karaoke-list",
+    "scroll": 768
+  },
+  {
+    "width": 768,
+    "javaScriptEnabled": true,
+    "page": "setlist",
+    "scroll": 768
+  },
+  {
+    "width": 768,
+    "javaScriptEnabled": true,
+    "page": "events",
+    "scroll": 768
+  },
+  {
+    "width": 768,
+    "javaScriptEnabled": true,
+    "page": "anniversaries",
+    "scroll": 768
+  },
+  {
+    "width": 768,
+    "javaScriptEnabled": false,
+    "page": "goods",
+    "scroll": 768
+  },
+  {
+    "width": 768,
+    "javaScriptEnabled": false,
+    "page": "campaign",
+    "scroll": 768
+  },
+  {
+    "width": 768,
+    "javaScriptEnabled": false,
+    "page": "product",
+    "scroll": 768
+  },
+  {
+    "width": 768,
+    "javaScriptEnabled": false,
+    "page": "product-image",
+    "scroll": 768
+  },
+  {
+    "width": 768,
+    "javaScriptEnabled": false,
+    "page": "talent",
+    "scroll": 768
+  },
+  {
+    "width": 768,
+    "page": "video-thumbnail",
+    "ratio": 1.7777777777777777
+  },
+  {
+    "width": 768,
+    "javaScriptEnabled": false,
+    "page": "music",
+    "scroll": 768
+  },
+  {
+    "width": 768,
+    "javaScriptEnabled": false,
+    "page": "karaoke-list",
+    "scroll": 768
+  },
+  {
+    "width": 768,
+    "javaScriptEnabled": false,
+    "page": "setlist",
+    "scroll": 768
+  },
+  {
+    "width": 768,
+    "javaScriptEnabled": false,
+    "page": "events",
+    "scroll": 768
+  },
+  {
+    "width": 768,
+    "javaScriptEnabled": false,
+    "page": "anniversaries",
+    "scroll": 768
+  },
+  {
+    "width": 1440,
+    "javaScriptEnabled": true,
+    "page": "goods",
+    "scroll": 1440
+  },
+  {
+    "width": 1440,
+    "javaScriptEnabled": true,
+    "page": "campaign",
+    "scroll": 1440
+  },
+  {
+    "width": 1440,
+    "javaScriptEnabled": true,
+    "page": "product",
+    "scroll": 1440
+  },
+  {
+    "width": 1440,
+    "javaScriptEnabled": true,
+    "page": "product-image",
+    "scroll": 1440
+  },
+  {
+    "width": 1440,
+    "javaScriptEnabled": true,
+    "page": "talent",
+    "scroll": 1440
+  },
+  {
+    "width": 1440,
+    "page": "video-thumbnail",
+    "ratio": 1.7777777777777777
+  },
+  {
+    "width": 1440,
+    "javaScriptEnabled": true,
+    "page": "music",
+    "scroll": 1440
+  },
+  {
+    "width": 1440,
+    "javaScriptEnabled": true,
+    "page": "karaoke-list",
+    "scroll": 1440
+  },
+  {
+    "width": 1440,
+    "javaScriptEnabled": true,
+    "page": "setlist",
+    "scroll": 1440
+  },
+  {
+    "width": 1440,
+    "javaScriptEnabled": true,
+    "page": "events",
+    "scroll": 1440
+  },
+  {
+    "width": 1440,
+    "javaScriptEnabled": true,
+    "page": "anniversaries",
+    "scroll": 1440
+  },
+  {
+    "width": 1440,
+    "javaScriptEnabled": false,
+    "page": "goods",
+    "scroll": 1440
+  },
+  {
+    "width": 1440,
+    "javaScriptEnabled": false,
+    "page": "campaign",
+    "scroll": 1440
+  },
+  {
+    "width": 1440,
+    "javaScriptEnabled": false,
+    "page": "product",
+    "scroll": 1440
+  },
+  {
+    "width": 1440,
+    "javaScriptEnabled": false,
+    "page": "product-image",
+    "scroll": 1440
+  },
+  {
+    "width": 1440,
+    "javaScriptEnabled": false,
+    "page": "talent",
+    "scroll": 1440
+  },
+  {
+    "width": 1440,
+    "page": "video-thumbnail",
+    "ratio": 1.7777777777777777
+  },
+  {
+    "width": 1440,
+    "javaScriptEnabled": false,
+    "page": "music",
+    "scroll": 1440
+  },
+  {
+    "width": 1440,
+    "javaScriptEnabled": false,
+    "page": "karaoke-list",
+    "scroll": 1440
+  },
+  {
+    "width": 1440,
+    "javaScriptEnabled": false,
+    "page": "setlist",
+    "scroll": 1440
+  },
+  {
+    "width": 1440,
+    "javaScriptEnabled": false,
+    "page": "events",
+    "scroll": 1440
+  },
+  {
+    "width": 1440,
+    "javaScriptEnabled": false,
+    "page": "anniversaries",
+    "scroll": 1440
+  }
+]

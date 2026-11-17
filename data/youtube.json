@@ -1303,7 +1303,7 @@
     "date": "2026-11-16T09:00:51.000Z",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/oRwC3HPTk0Y/mqdefault.jpg?v=6afac2f4",
+    "thumbnail": "https://i.ytimg.com/vi/oRwC3HPTk0Y/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/hBz75E3AEST1Dzv5vOTHAqoJfayd30WIWWQ3ZFLlWMHDsyZ_QD6ZVVUtLTKSizalT3APPtdpFGI=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=oRwC3HPTk0Y"
   },
@@ -1858,6 +1858,18 @@
     "thumbnail": "https://i.ytimg.com/vi/M8bflpXcahM/mqdefault.jpg?v=6afb23ca",
     "channelIcon": "https://yt3.ggpht.com/_pGNq0-SYZiXjomeCnQRygINoA2PKkUJMbRtwuSIL83vUAny58me1QY1WttWypAIwJFrE5hh0w=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=M8bflpXcahM"
+  },
+  {
+    "videoId": "eu5QwdpjiZk",
+    "name": "相栖るじゅ",
+    "youtubeid": "UCrpdBoGpa6g2WEtRWsIlhDQ",
+    "title": "【1000人耐久】千切りしてます！【相栖るじゅ/パレデミア学園】",
+    "date": "2026-11-17T13:30:00.000Z",
+    "status": "upcoming",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/eu5QwdpjiZk/mqdefault.jpg?v=6afbf35a",
+    "channelIcon": "https://yt3.ggpht.com/yQbh9vEEgS_UapoQhIxxoTSy13bDxlHYC-ncTcO9VIDBN2NvrLTAWeKGQ72CN2fhOOrHqYaFDA=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=eu5QwdpjiZk"
   },
   {
     "videoId": "ba3mumKGlFk",

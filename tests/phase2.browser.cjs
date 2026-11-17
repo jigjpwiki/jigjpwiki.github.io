@@ -1,7 +1,7 @@
 'use strict';
 const { chromium }=require('playwright'); const assert=require('node:assert/strict'); const fs=require('node:fs'); const path=require('node:path');const http=require('node:http');
-const root=path.resolve(__dirname,'../_site');
-const master=require('../data/talents.json');const catalog=require('../data/catalog.json');const events=require('../data/anniversaries.json').events;
+const root=require('./fixtures/browser-site.cjs')();
+const master=require('./fixtures/admin-vnext-baseline.json').talents;const catalog=require('./fixtures/admin-vnext-baseline.json').catalog;const events=require('./fixtures/admin-vnext-baseline.json').anniversaries.events;
 const core=require('../assets/js/anniversary-core');
 const formerCount=master.talents.filter(t=>t.affiliations.some(a=>a.status==='former')).length;
 const orgCurrent=master.talents.filter(t=>t.affiliations.some(a=>a.organizationId==='org-000001'&&a.status==='current')).length;
@@ -16,8 +16,8 @@ const goodsListingCount=publishedGoods.campaigns.length+publishedGoods.products.
    const fixture=structuredClone(master),talent=fixture.talents.find(t=>t.id==='tal-000004');
    if(req.url==='/fixture-profile-former/') Object.assign(talent,structuredClone(require('./fixtures/foundation-talents.json')[3]));
    talent.profileImage=req.url==='/fixture-profile-image/'?{url:'https://images.example/fixture-avatar.png'}:null;
-   require('../lib/talents').validateTalents(fixture,{registry:require('../data/talent-id-registry.json')});
-   const data=require('../lib/catalog').publicCatalog(require('../lib/catalog').loadCatalog(fixture));
+   require('../lib/talents').validateTalents(fixture,{registry:require('./fixtures/admin-vnext-baseline.json')['talent-id-registry']});
+   const data=require('../lib/catalog').publicCatalog(require('../lib/catalog').loadCatalog(fixture,path.dirname(root)));
    res.setHeader('Content-Type','text/html');return res.end(require('../lib/talent-details').talentPage(talent,fixture,data,{}));
   }
   if(req.url==='/fixture-goods/'||req.url==='/fixture-profile/') {

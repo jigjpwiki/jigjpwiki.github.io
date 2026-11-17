@@ -1,19 +1,13 @@
+import {baselineModels,currentModels} from './baseline.mjs';
 import fs from "node:fs";
 import { readFiles, filePath } from "../src/github.mjs";
 import { hash } from "../src/security.mjs";
 import { forms, preview } from "../src/model.mjs";
 import { initialContent } from "../public/content-utils.js";
-export const snapshot = () => ({
+export const snapshot = ({current=false}={}) => ({
   sha: "main-sha",
   tree: "main-tree",
-  models: Object.fromEntries(
-    readFiles.map((n) => [
-      n,
-      JSON.parse(
-        fs.readFileSync(new URL("../../" + filePath(n), import.meta.url)),
-      ),
-    ]),
-  ),
+  models: current?currentModels():baselineModels(),
 });
 // Resolve relative to repository rather than tests/ for copied runners.
 export const draft = (entity, values = {}) => ({

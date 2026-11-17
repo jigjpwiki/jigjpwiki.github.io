@@ -1,3 +1,4 @@
+import { projectionCache } from "./row-projection.js";
 import { mountDataTable } from "./data-table.js";
 import { columnsFor } from "./table-columns.js";
 import { detailPanel } from "./detail-panel.js";
@@ -17,6 +18,7 @@ export function mountContent({
   container: host,
   category,
   models,
+  referenceModels = models,
   forms,
   onPreview,
   onReload,
@@ -66,7 +68,7 @@ export function mountContent({
             (v) => v.youtubeId === r.youtubeId || v._reference === r.youtubeId,
           )?.title || "動画未選択"
         : baseTitle(r);
-  const rowsFor = (type) => {
+  const projection = projectionCache((type) => {
     const t = types[type],
       rows = structuredClone(baseline[t.file][t.list]).map((r) => ({
         ...r,
@@ -80,9 +82,11 @@ export function mountContent({
       else rows[index] = r;
     }
     return rows;
-  };
+  });
+  const rowsFor = (type) => projection.get(type);
   const ref = (op) => op.id || "@" + op.key;
   const changed = () => {
+    projection.clear();
     for (const field of registry.values()) {
       field.error.hidden = true;
       field.input.removeAttribute("aria-invalid");
@@ -144,6 +148,7 @@ export function mountContent({
     },
     show: () => (current ? drawEditor() : drawList()),
     refresh: () => {
+      projection.clear();
       if (getWorkspaceOperations) {
         operations.splice(
           0,
@@ -448,12 +453,16 @@ export function mountContent({
         );
       const names = [...new Set(ps.flatMap((p) => p.talentIds))]
         .map(
-          (id) => models.talents.talents.find((t) => t.id === id)?.displayName,
+          (id) =>
+            referenceModels.talents.talents.find((t) => t.id === id)
+              ?.displayName,
         )
         .filter(Boolean);
       if (names.length) box.append(el("p", names.join("・")));
       const groupNames = [...new Set(ps.flatMap((p) => p.groupIds))]
-        .map((id) => models.catalog.groups.find((g) => g.id === id)?.name)
+        .map(
+          (id) => referenceModels.catalog.groups.find((g) => g.id === id)?.name,
+        )
         .filter(Boolean);
       if (groupNames.length) box.append(el("p", groupNames.join("・")));
       box.append(
@@ -507,7 +516,7 @@ export function mountContent({
               : r.productId === reference,
           ),
         key: (r) => r._reference,
-        columns: columnsFor(kind, { models, forms, rowsFor }),
+        columns: columnsFor(kind, { models: referenceModels, forms, rowsFor }),
         baseline: (r) =>
           baseline[types[kind].file][types[kind].list].find(
             (b) => b.id === r._reference,
@@ -542,7 +551,11 @@ export function mountContent({
           rows: () =>
             rowsFor("offer").filter((o) => o.campaignId === reference),
           key: (r) => r._reference,
-          columns: columnsFor("offer", { models, forms, rowsFor }),
+          columns: columnsFor("offer", {
+            models: referenceModels,
+            forms,
+            rowsFor,
+          }),
           baseline: (r) =>
             baseline.goods.offers.find((b) => b.id === r._reference),
           onChange: (changes) => applyTableChanges(changes, "offer"),
@@ -694,7 +707,7 @@ export function mountContent({
       entity: op.entity,
       record: op.value,
       schema: forms.schemas[op.entity],
-      models,
+      models: referenceModels,
       types,
       allRows: rowsFor,
       registry,
@@ -768,6 +781,7 @@ export function mountContent({
     changed();
   }
   function drawList() {
+    projection.clear();
     container = host;
     host.classList.remove("with-detail", "detail-full");
     current = null;
@@ -801,7 +815,7 @@ export function mountContent({
     tableController = mountDataTable({
       container: result,
       title: types[entity].label,
-      columns: columnsFor(entity, { models, forms, rowsFor }),
+      columns: columnsFor(entity, { models: referenceModels, forms, rowsFor }),
       rows: () => rowsFor(entity),
       key: (r) => r._reference,
       baseline: (r) =>
@@ -824,7 +838,10 @@ export function mountContent({
         {
           key: "people-filter",
           label: "人物で絞り込み",
-          options: models.talents.talents.map((t) => [t.id, t.displayName]),
+          options: referenceModels.talents.talents.map((t) => [
+            t.id,
+            t.displayName,
+          ]),
           test: (r, id) => {
             if (entity === "campaign") {
               const ids = rowsFor("offer")

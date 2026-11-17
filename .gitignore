@@ -26,3 +26,5 @@ admin/.wrangler-config/
 
 # Shared pure goods status logic is copied during the isolated Admin build.
 admin/public/goods-core.js
+# Owner-only deployment metadata/config, never commit real production settings.
+admin/.production*.json

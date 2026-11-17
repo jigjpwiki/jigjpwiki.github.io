@@ -18,9 +18,9 @@ const current = Object.fromEntries(
     "talent-id-registry",
     "catalog-id-registry",
     "feature-id-registry",
-  ].map((name) => [name, require("../data/" + name + ".json")]),
+  ].map((name) => [name, require("./fixtures/admin-vnext-baseline.json")[name]]),
 );
-current["admin-ledger"] = require("../ops/admin/ledger.json");
+current["admin-ledger"] = require("./fixtures/admin-vnext-baseline.json")["admin-ledger"];
 function legacy() {
   const models = structuredClone(current);
   for (const name of names) models[name].schemaVersion = 1;

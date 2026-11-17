@@ -1,3 +1,4 @@
+import { referenceModels } from "./row-projection.js";
 import { mountDataTable } from "./data-table.js";
 import { columnsFor, overlayRows } from "./table-columns.js";
 import { detailPanel } from "./detail-panel.js";
@@ -136,6 +137,7 @@ export async function api(path, method = "GET", value) {
   });
   const data = await r.json();
   if (!r.ok) {
+    if (r.status === 401 && me && workspace) showAuthRecovery();
     const error = new Error(
       {
         submission_protocol:
@@ -196,6 +198,49 @@ export async function api(path, method = "GET", value) {
     throw error;
   }
   return data;
+}
+function showAuthRecovery() {
+  if (document.querySelector("#auth-recovery")) return;
+  const panel = node("section");
+  panel.id = "auth-recovery";
+  panel.className = "error-summary";
+  panel.setAttribute("role", "alert");
+  const title = node("h2", "ログインの有効期限が切れました"),
+    message = node(
+      "p",
+      "入力はこのタブに保持しています。再読み込みせず、別タブで同じ管理者としてログインしてください。",
+    ),
+    login = node("a", "別タブで再ログイン");
+  login.href = "/auth/login";
+  login.target = "_blank";
+  login.rel = "noopener";
+  panel.append(
+    title,
+    message,
+    login,
+    button("ログインを確認して保存を再試行", async () => {
+      const next = await api("/api/me");
+      if (
+        String(next.id) !== String(me.id) ||
+        next.repository !== me.repository
+      ) {
+        message.textContent =
+          "別の管理者では再開できません。元のアカウントでログインしてください。入力は保持しています。";
+        return;
+      }
+      me = next;
+      try {
+        await workspace.flush();
+        panel.remove();
+        showStatus("認証を確認し、下書きを保存しました。");
+      } catch (e) {
+        message.textContent =
+          "認証は確認できましたが保存できませんでした。入力を保持しています。" +
+          e.message;
+      }
+    }),
+  );
+  $("#workspace-bar").after(panel);
 }
 export const showStatus = (value) => {
   $("#status").textContent = value;
@@ -484,7 +529,9 @@ function listView() {
     container: table,
     title: labels[entity],
     queryLabel: "名前・IDで検索",
-    columns: columnsFor(entity, { models: snapshot.models }),
+    columns: columnsFor(entity, {
+      models: referenceModels(snapshot.models, workspace.operations),
+    }),
     rows: masterRows,
     key: (r) => r.id || r._reference,
     baseline: (r) => rows().find((b) => b.id === r.id),
@@ -685,12 +732,12 @@ function mayLeave() {
     showStatus("検証が終わるまでお待ちください。");
     return false;
   }
+  // Internal category navigation keeps the same Workspace and its retry state.
+  // Page exit still warns; logout still flushes successfully before revocation.
   return (
+    Boolean(workspace) ||
     !activeEditor?.dirty ||
-    workspace?.state === "saved" ||
-    window.confirm(
-      "下書きの保存が完了していません。入力を保持して移動しますか？",
-    )
+    window.confirm("未保存の変更を確認してください。")
   );
 }
 window.addEventListener("beforeunload", (e) => {
@@ -755,7 +802,7 @@ function edit(record, savedOperation) {
           value,
         });
       },
-      models: snapshot.models,
+      models: referenceModels(snapshot.models, workspace.operations),
       schemas,
       onCancel: () => {
         if (mayLeave()) {
@@ -1246,6 +1293,7 @@ screen = function () {
             ...operations,
           ]),
         models: snapshot.models,
+        referenceModels: referenceModels(snapshot.models, workspace.operations),
         forms: schemas.content,
         onReload: () => loadMasters(open),
         onPreview: async (value, reason) =>
@@ -1296,7 +1344,8 @@ window.addEventListener("keydown", (e) => {
     !(e.ctrlKey || e.metaKey) ||
     e.altKey ||
     ["INPUT", "TEXTAREA", "SELECT"].includes(e.target.tagName) ||
-    activeEditor?.pending
+    activeEditor?.pending ||
+    document.querySelector("dialog[open]")
   )
     return;
   if (e.key.toLowerCase() === "z") {

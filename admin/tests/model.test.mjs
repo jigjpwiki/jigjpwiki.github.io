@@ -1,3 +1,4 @@
+import {baselineModels,currentModels} from './baseline.mjs';
 import { test } from "node:test";
 import assert from "node:assert/strict";
 import fs from "node:fs";
@@ -9,12 +10,7 @@ const root = path.resolve(import.meta.dirname, "../..");
 const snapshot = () => ({
   sha: "main-sha",
   tree: "main-tree",
-  models: Object.fromEntries(
-    files.map((name) => [
-      name,
-      JSON.parse(fs.readFileSync(path.join(root, filePath(name)))),
-    ]),
-  ),
+  models: baselineModels(),
 });
 async function input(s, action = "save", value, id = "tal-000001", extra = {}) {
   const proof = value ?? {

@@ -1,6 +1,7 @@
+const ruleRoot=require('./fixtures/historical-root.cjs')();
 'use strict';
 const test=require('node:test');const assert=require('node:assert/strict');const { relatedStreams }=require('../lib/related');const { talentPage }=require('../lib/talent-details');const { loadTalents }=require('../lib/talents');const { loadCatalog,publicCatalog }=require('../lib/catalog');
-const master=loadTalents();const person=master.talents[0];const channel=person.accounts.find(a=>a.service==='youtube').accountId;
+const master=loadTalents(ruleRoot);const person=master.talents[0];const channel=person.accounts.find(a=>a.service==='youtube').accountId;
 const video={youtubeid:channel,name:'different name',videoId:'abcDEFG1234',title:'verified',date:'2026-11-15T00:00:00Z',status:'archive',url:'https://www.youtube.com/watch?v=abcDEFG1234'};
 test('related streams use exact YouTube IDs and normalized Twitch account IDs, never display names',()=>{
  const wrong={...video,youtubeid:'UC_somebody_else',name:person.displayName};
@@ -14,7 +15,7 @@ test('mismatched URL, unsafe host/protocol, missing fields and duplicates cannot
  assert.equal(relatedStreams(person,[video,video],[]).length,1);
 });
 test('public profile works with missing optional data and keeps graduation separate from retirement',()=>{
- const data=publicCatalog(loadCatalog(master));const former=structuredClone(require('./fixtures/foundation-talents.json').find(t=>t.id==='tal-000004'));former.profileImage=null;const html=talentPage(former,master,data,{});
+ const data=publicCatalog(loadCatalog(master,ruleRoot));const former=structuredClone(require('./fixtures/foundation-talents.json').find(t=>t.id==='tal-000004'));former.profileImage=null;const html=talentPage(former,master,data,{});
  assert.match(html,/旧所属：ProForma Nova/);assert.doesNotMatch(html,/>引退<|>活動終了<|agencyStatus|activityStatus|<small>tal-/);
  assert.match(html,/配信・動画はありません/);assert.match(html,/class="talent-avatar"/);
  const t=structuredClone(person);t.profileImage=null;t.accounts=[];t.wiki=null;t.affiliations=[];
@@ -22,12 +23,12 @@ test('public profile works with missing optional data and keeps graduation separ
 });
 test('profile escapes names and titles, links verified anniversaries, and never displays inferred age',()=>{
  const t=structuredClone(person);t.displayName='<img onerror=alert(1)>';
- const html=talentPage(t,master,publicCatalog(loadCatalog(master)),{youtube:[{...video,title:'<script>alert(1)</script>'}]});
+ const html=talentPage(t,master,publicCatalog(loadCatalog(master,ruleRoot)),{youtube:[{...video,title:'<script>alert(1)</script>'}]});
  assert.doesNotMatch(html,/<img onerror|<script>alert/);assert.match(html,/&lt;script/);assert.doesNotMatch(html,/\d+歳/);
 });
 
 test('saved stream rows cannot be mistaken for current live status',()=>{
- const data=publicCatalog(loadCatalog(master));
+ const data=publicCatalog(loadCatalog(master,ruleRoot));
  for(const status of ['live','upcoming','archive']){
   const html=talentPage(person,master,data,{youtube:[{...video,status}]});
   assert.match(html,/サイト公開時点の保存データ/);assert.match(html,/サイト公開時点の保存データです/);
@@ -39,10 +40,10 @@ test('saved stream rows cannot be mistaken for current live status',()=>{
 test('profile image presence is independent of live master values and requires safe URLs',()=>{
  const fixture=structuredClone(master);const talent=fixture.talents.find(t=>t.id==='tal-000004');
  const image={url:'https://images.example/fixture-avatar.png'};
- const data=publicCatalog(loadCatalog(fixture));
+ const data=publicCatalog(loadCatalog(fixture,ruleRoot));
  for(const profileImage of [null,image]){
   talent.profileImage=structuredClone(profileImage);const before=structuredClone(fixture);
-  assert.doesNotThrow(()=>require('../lib/talents').validateTalents(fixture,{registry:require('../data/talent-id-registry.json')}));
+  assert.doesNotThrow(()=>require('../lib/talents').validateTalents(fixture,{registry:require('./fixtures/catalog-review-history.json')['talent-id-registry']}));
   const html=talentPage(talent,fixture,data,{});
   if(profileImage){assert.match(html,/src="https:\/\/images\.example\/fixture-avatar\.png"/);assert.doesNotMatch(html,/画像未確認/);}
   else{assert.match(html,/class="talent-avatar"/);assert.doesNotMatch(require('../lib/talent-details').avatar(talent),/<img /);}

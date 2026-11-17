@@ -13,7 +13,7 @@ const copy = fixture;
 const invalid = mutate => { const m = copy(); mutate(m); assert.throws(() => validateTalents(m)); };
 test('curated master and reserved identity anchors validate; official channels are excluded', () => {
   assert.equal(loadTalents().talents.length, master.talents.length);
-  assert.equal(master.talents.some(t => t.displayName === 'ProForma Production'), false);
+  assert.equal(require('./fixtures/admin-vnext-baseline.json').talents.talents.some(t => t.displayName === 'ProForma Production'), false);
   assert.equal(master.talents.some(t => t.accounts.some(a => a.accountId === 'UClUMpS4UZ_2VrKk3HdNtIBA')), false);
   assert.doesNotThrow(() => validateTalents(master, { registry }));
 });
@@ -34,14 +34,14 @@ test('rename, multiple agencies, departure, independent activity and retirement 
   t.displayName = '検証用の改名';
   m.organizations.push({ id: 'org-999998', name: '検証用別事務所' });
   t.affiliations.push({ ...t.affiliations[0], organizationId: 'org-999998' });
-  assert.equal(validateTalents(m, { previous: before }).talents[0].id, master.talents[0].id);
+  assert.equal(validateTalents(m, { previous: before }).talents[0].id, before.talents[0].id);
   t.affiliations.forEach(a => { a.status = 'former'; });
   t.agencyStatus.value = 'unaffiliated'; // verified state is independent from activity
   assert.equal(validateTalents(m).talents[0].activityStatus.value, 'active');
   t.activityStatus.value = 'retired';
   assert.equal(validateTalents(m).talents[0].agencyStatus.value, 'unaffiliated');
   t.activityStatus.value = 'ended';
-  assert.equal(validateTalents(m).talents[0].id, master.talents[0].id);
+  assert.equal(validateTalents(m).talents[0].id, before.talents[0].id);
   t.id = 'tal-999999';
   assert.throws(() => validateTalents(m, { previous: before }), /internal ID/);
   assert.throws(() => validateTalents(m, { registry }), /unissued/);

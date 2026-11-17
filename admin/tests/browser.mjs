@@ -1,3 +1,4 @@
+import {baselineModels,currentModels} from './baseline.mjs';
 import fs from "node:fs";
 import http from "node:http";
 import path from "node:path";
@@ -9,12 +10,7 @@ import { readFiles as files, filePath } from "../src/github.mjs";
 const require = createRequire(import.meta.url),
   { chromium } = require("../../node_modules/playwright");
 const root = path.resolve(import.meta.dirname, "../.."),
-  models = Object.fromEntries(
-    files.map((n) => [
-      n,
-      JSON.parse(fs.readFileSync(path.join(root, filePath(n)))),
-    ]),
-  );
+  models = baselineModels();
 const data = new Map();
 let lastPreview, lastSubmissionPlan;
 const originalModels = JSON.stringify(models);

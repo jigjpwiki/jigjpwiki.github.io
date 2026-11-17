@@ -1,3 +1,4 @@
+import {baselineModels,currentModels} from './baseline.mjs';
 import { test } from "node:test";
 import assert from "node:assert/strict";
 import fs from "node:fs";
@@ -8,12 +9,7 @@ import { GitHub, readFiles, filePath } from "../src/github.mjs";
 import { random, seal, hash } from "../src/security.mjs";
 const root = path.resolve(import.meta.dirname, "../..");
 export async function setup() {
-  const models = Object.fromEntries(
-      readFiles.map((n) => [
-        n,
-        JSON.parse(fs.readFileSync(path.join(root, filePath(n)))),
-      ]),
-    ),
+  const models = baselineModels(),
     map = new Map(),
     sid = random(),
     key = random();

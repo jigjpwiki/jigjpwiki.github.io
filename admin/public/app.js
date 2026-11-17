@@ -1,10 +1,145 @@
+import { Workspace, withoutSubmitted } from "./workspace.js";
 import { mountContent } from "./content-manager.js";
 import { labels as contentLabels } from "./content-fields.js";
 import { createEditor } from "./editor.js";
 import { fieldChanges, fieldLabel } from "./draft.js";
 import { portrait } from "./controls.js";
 const $ = (s) => document.querySelector(s);
-let me;
+let me, workspace, resumeOperationKey;
+const workspaceLabels = {
+  saved: "保存済み",
+  unsaved: "未保存",
+  saving: "自動保存中…",
+  failed: "保存失敗（入力は保持しています）",
+  conflict: "別タブと競合しています",
+  loading: "下書きを読み込み中…",
+};
+function renderSaveState() {
+  const bar = document.querySelector("#workspace-bar");
+  if (!bar || !workspace) return;
+  bar.querySelector("[data-save-state]").textContent =
+    `${workspaceLabels[workspace.state]} / ${workspace.operations.length}件`;
+  bar.querySelector("[data-save-state]").dataset.state = workspace.state;
+  if (workspace.updatedAt)
+    bar.querySelector("[data-save-state]").title =
+      "最終保存 " +
+      new Intl.DateTimeFormat("ja-JP", {
+        timeZone: "Asia/Tokyo",
+        dateStyle: "short",
+        timeStyle: "short",
+      }).format(workspace.updatedAt) +
+      " JST";
+  if (workspace.state === "saved")
+    showStatus("下書きは保存済みです。公開データは変更していません。");
+}
+function setupWorkspaceBar() {
+  const bar = node("section");
+  bar.id = "workspace-bar";
+  bar.setAttribute("aria-label", "変更ワークスペース");
+  const state = node("span");
+  state.dataset.saveState = "";
+  state.setAttribute("role", "status");
+  bar.append(
+    state,
+    button("下書きを保存", () => workspace.save()),
+    button("元に戻す", () => {
+      workspace.history("undo");
+      activeEditor = null;
+      screen();
+    }),
+    button("やり直す", () => {
+      workspace.history("redo");
+      activeEditor = null;
+      screen();
+    }),
+  );
+  const a = node("a", "変更内容");
+  a.href = "#workspace";
+  bar.append(a);
+  $("#app").insertBefore(bar, $("#view"));
+  renderSaveState();
+}
+function workspaceView() {
+  const view = $("#view");
+  view.replaceChildren(
+    node("h2", "変更ワークスペース"),
+    node(
+      "p",
+      "下書きは管理者専用・保存から30日間です（120件・512KiBまで）。保存では公開されません。一括PR提出は次のPhaseで追加します。",
+    ),
+  );
+  const table = node("table"),
+    head = node("tr");
+  for (const label of ["種類", "対象", "検証", "操作"])
+    head.append(node("th", label));
+  const thead = node("thead");
+  thead.append(head);
+  table.append(thead);
+  const body = node("tbody");
+  for (const op of workspace.operations) {
+    const row = node("tr"),
+      title =
+        op.value.displayName ||
+        op.value.name ||
+        op.value.title ||
+        op.value.rawSongTitle ||
+        op.id ||
+        "新規登録";
+    row.append(
+      node(
+        "td",
+        labels[op.entity] ||
+          schemas?.content.types[op.entity]?.label ||
+          op.entity,
+      ),
+      node("td", title),
+      node("td", "未検証"),
+    );
+    const cell = node("td");
+    cell.append(
+      button("編集を再開", () => {
+        if (["talent", "organization", "group"].includes(op.entity)) {
+          entity = op.entity;
+          edit(op.before, op);
+        } else {
+          const category = schemas.content.types[op.entity].category;
+          resumeOperationKey = op.key;
+          if (location.hash === "#" + category) screen();
+          else location.hash = "#" + category;
+        }
+      }),
+      button("下書きから除外", () => {
+        if (confirm(title + "の下書きを除外しますか？")) {
+          workspace.replace(
+            workspace.operations.filter((o) => o.key !== op.key),
+          );
+          workspaceView();
+        }
+      }),
+    );
+    row.append(cell);
+    body.append(row);
+  }
+  table.append(body);
+  const tableRegion = node("div");
+  tableRegion.className = "workspace-table";
+  tableRegion.tabIndex = 0;
+  tableRegion.setAttribute("role", "region");
+  tableRegion.setAttribute("aria-label", "保存した変更一覧");
+  tableRegion.append(table);
+  view.append(tableRegion);
+  if (workspace.state === "conflict" || workspace.state === "failed")
+    view.append(
+      node("p", workspace.error || "保存できませんでした。"),
+      button("保存済み下書きを読み直す", async () => {
+        if (confirm("未保存の入力を破棄して保存済み下書きを読み直しますか？")) {
+          await workspace.load();
+          workspaceView();
+        }
+      }),
+    );
+}
+
 export async function api(path, method = "GET", value) {
   const r = await fetch(path, {
     method,
@@ -16,9 +151,19 @@ export async function api(path, method = "GET", value) {
     body: value === undefined ? undefined : JSON.stringify(value),
   });
   const data = await r.json();
-  if (!r.ok)
-    throw new Error(
+  if (!r.ok) {
+    const error = new Error(
       {
+        temporary_failure:
+          "一時的に保存できませんでした。再度保存してください。",
+        workspace_revision_conflict:
+          "別タブに新しい保存があります。入力は保持しました。変更内容画面から確認してください。",
+        workspace_operation_limit:
+          "下書きは120件までです。変更を分割してください。",
+        workspace_size_limit:
+          "下書きの容量上限を超えました。変更を分割してください。",
+        payload_limit:
+          "送信できる容量の上限を超えました。入力は保持しています。",
         admin_updated_reload:
           "管理画面が更新されました。再読み込みしてください。",
         migration_pending_reload:
@@ -46,6 +191,9 @@ export async function api(path, method = "GET", value) {
         data.error ||
         "通信に失敗しました",
     );
+    error.code = data.error;
+    throw error;
+  }
   return data;
 }
 export const showStatus = (value) => {
@@ -92,10 +240,20 @@ async function start() {
     $("#identity").textContent = `${me.login} / 管理者 / ${me.repository}`;
     $("#logout").onclick = async () => {
       if (!mayLeave()) return;
+      if (workspace?.dirty) await workspace.flush();
       activeEditor = null;
       await api("/auth/logout", "POST", {});
       location.reload();
     };
+    workspace = new Workspace(api, renderSaveState);
+    setupWorkspaceBar();
+    try {
+      await workspace.load();
+    } catch (e) {
+      workspace.state = "failed";
+      workspace.error = e.message;
+      renderSaveState();
+    }
     screen();
   } catch (e) {
     showStatus(
@@ -551,11 +709,14 @@ function mayLeave() {
   }
   return (
     !activeEditor?.dirty ||
-    window.confirm("未保存の変更があります。破棄して移動しますか？")
+    workspace?.state === "saved" ||
+    window.confirm(
+      "下書きの保存が完了していません。入力を保持して移動しますか？",
+    )
   );
 }
 window.addEventListener("beforeunload", (e) => {
-  if (activeEditor?.dirty) {
+  if (workspace?.dirty || (activeEditor?.dirty && !workspace)) {
     e.preventDefault();
     e.returnValue = "";
   }
@@ -575,7 +736,15 @@ document
       }
     }
   });
-function edit(record) {
+function edit(record, savedOperation) {
+  const staged =
+    savedOperation ||
+    (record?.id
+      ? workspace?.operations.find(
+          (o) => o.entity === entity && o.id === record.id,
+        )
+      : undefined);
+  const operationKey = staged?.key || "draft-" + crypto.randomUUID();
   showStatus("編集中の変更は、PR作成までGitHubへ保存されません。");
   const view = $("#view");
   const open = () => {
@@ -584,6 +753,19 @@ function edit(record) {
       entity,
       record,
       initial: initial[entity],
+      savedValue: staged?.value,
+      onDirty: () => {
+        const value = activeEditor?.draft?.payload();
+        if (!value) return;
+        workspace?.upsert({
+          key: operationKey,
+          entity,
+          ...(record ? { id: record.id } : {}),
+          baseCommit: staged?.baseCommit || snapshot.sha,
+          before: staged?.before || record || null,
+          value,
+        });
+      },
       models: snapshot.models,
       schemas,
       onCancel: () => {
@@ -599,18 +781,21 @@ function edit(record) {
         }
       },
       onPreview: async ({ value, reason }) =>
-        showPreview({
-          sha: snapshot.sha,
-          entity,
-          action: "save",
-          ...(record ? { id: record.id } : {}),
-          value,
-          reason,
-          confirmation: {
-            status: "confirmed",
-            valueHash: await digest(value),
+        showPreview(
+          {
+            sha: snapshot.sha,
+            entity,
+            action: "save",
+            ...(record ? { id: record.id } : {}),
+            value,
+            reason,
+            confirmation: {
+              status: "confirmed",
+              valueHash: await digest(value),
+            },
           },
-        }),
+          operationKey,
+        ),
     });
   };
   open();
@@ -751,7 +936,21 @@ function displayValue(value, path) {
   }
   return enumLabels[value] || String(value);
 }
-async function showPreview(input) {
+async function showPreview(input, workspaceKey) {
+  // Phase 1 does not perform a rebase. Never submit a saved old record against a new main.
+  const staged =
+    workspace?.operations.filter((o) =>
+      input.entity === "content"
+        ? input.value.operations.some((v) => v.key === o.key)
+        : o.entity === input.entity &&
+          (workspaceKey
+            ? o.key === workspaceKey
+            : Boolean(input.id) && o.id === input.id),
+    ) || [];
+  if (staged.some((o) => o.baseCommit !== snapshot.sha))
+    throw new Error(
+      "保存後にmainが更新されています。下書きは保持しました。自動再適用はせず、最新データとの差分確認が必要です。",
+    );
   showStatus("Schema・全参照を検証中…");
   const plan = await api("/api/change-requests/preview", "POST", input),
     view = $("#view");
@@ -892,6 +1091,25 @@ async function showPreview(input) {
       const result = await api("/api/change-requests", "POST", {
         previewId: plan.id,
       });
+      if (workspace) {
+        const submittedOps =
+          input.entity === "content"
+            ? input.value.operations
+            : [
+                {
+                  entity: input.entity,
+                  id: input.id,
+                  key: workspaceKey,
+                  value: input.value,
+                },
+              ];
+        workspace.replace(withoutSubmitted(workspace.operations, submittedOps));
+        workspace
+          .save()
+          .catch((e) =>
+            showStatus("PRは作成済みですが、下書き整理の保存に失敗しました。"),
+          );
+      }
       activeEditor = null;
       view.replaceChildren(
         node("h2", "PRを作成しました"),
@@ -934,6 +1152,11 @@ screen = function () {
       a.setAttribute("aria-current", "page");
     else a.removeAttribute("aria-current");
   }
+  if (location.hash === "#workspace") {
+    if (snapshot) workspaceView();
+    else loadMasters(workspaceView).catch((e) => showStatus(e.message));
+    return;
+  }
   if (
     ["#anniversaries", "#music", "#events", "#goods"].includes(location.hash)
   ) {
@@ -941,6 +1164,16 @@ screen = function () {
       activeEditor = mountContent({
         container: $("#view"),
         category: location.hash.slice(1),
+        baseCommit: snapshot.sha,
+        resumeKey: resumeOperationKey,
+        workspaceOperations: workspace?.operations || [],
+        onWorkspaceChange: (operations) =>
+          workspace?.replace([
+            ...workspace.operations.filter(
+              (o) => !schemas.content.types[o.entity],
+            ),
+            ...operations,
+          ]),
         models: snapshot.models,
         forms: schemas.content,
         onReload: () => loadMasters(open),
@@ -957,6 +1190,7 @@ screen = function () {
             },
           }),
       });
+      resumeOperationKey = undefined;
     };
     if (snapshot) open();
     else loadMasters(open).catch((e) => showStatus(e.message));

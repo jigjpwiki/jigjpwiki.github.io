@@ -47,11 +47,13 @@ export function createEditor({
   onPreview,
   onCancel,
   onDirty,
+  savedValue,
   onSelectRecord,
 }) {
   const draft = createDraft(record || initial),
     v = draft.value,
     fields = new Map();
+  if (savedValue) Object.assign(v, structuredClone(savedValue));
   let tab = "basic",
     confirmed = false,
     busy = false;

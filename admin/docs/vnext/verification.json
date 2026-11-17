@@ -1,0 +1,27 @@
+{
+  "baseline": "15cea1304",
+  "scope": "Phase 1 only; Phase 2-4 require subsequent independent main-based PRs",
+  "rootTests": 195,
+  "adminTests": 45,
+  "rootBrowserSuites": 7,
+  "adminLegacyViewports": [
+    320,
+    390,
+    768,
+    1440
+  ],
+  "adminContentCases": 10,
+  "workspaceViewports": [
+    320,
+    390,
+    768,
+    1440,
+    1920
+  ],
+  "workspaceMixedDrafts": 20,
+  "masterOrSchemaChanges": false,
+  "productionDeployment": false,
+  "publicVersion": "2.13.0",
+  "dadsReference": "2.18.2",
+  "newRuntimeDependencies": 0
+}

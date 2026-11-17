@@ -1,0 +1,37 @@
+[
+  {
+    "width": 320,
+    "mainWidth": 320,
+    "visibleRows": 2,
+    "rowHeight": 57,
+    "horizontalOverflow": false
+  },
+  {
+    "width": 390,
+    "mainWidth": 390,
+    "visibleRows": 3,
+    "rowHeight": 57,
+    "horizontalOverflow": false
+  },
+  {
+    "width": 768,
+    "mainWidth": 768,
+    "visibleRows": 4,
+    "rowHeight": 67,
+    "horizontalOverflow": false
+  },
+  {
+    "width": 1440,
+    "mainWidth": 1120,
+    "visibleRows": 5,
+    "rowHeight": 67,
+    "horizontalOverflow": false
+  },
+  {
+    "width": 1920,
+    "mainWidth": 1120,
+    "visibleRows": 5,
+    "rowHeight": 67,
+    "horizontalOverflow": false
+  }
+]

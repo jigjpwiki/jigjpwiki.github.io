@@ -1,3 +1,6 @@
+import { mountDataTable } from "./data-table.js";
+import { columnsFor, overlayRows } from "./table-columns.js";
+import { detailPanel } from "./detail-panel.js";
 import { mountSubmissions } from "./submissions.js";
 import { Workspace, withoutSubmitted } from "./workspace.js";
 import { mountContent } from "./content-manager.js";
@@ -6,6 +9,10 @@ import { createEditor } from "./editor.js";
 import { fieldChanges, fieldLabel } from "./draft.js";
 import { portrait } from "./controls.js";
 const $ = (s) => document.querySelector(s);
+document.querySelector(".skip-link")?.addEventListener("click", (e) => {
+  e.preventDefault();
+  $("#main-content").focus();
+});
 let me, workspace, resumeOperationKey;
 const workspaceLabels = {
   saved: "保存済み",
@@ -15,12 +22,18 @@ const workspaceLabels = {
   conflict: "別タブと競合しています",
   loading: "下書きを読み込み中…",
 };
+document.addEventListener("inline-state", () => renderSaveState());
+function inlinePending() {
+  return Boolean(document.querySelector("[data-uncommitted-cell]"));
+}
 function renderSaveState() {
   const bar = document.querySelector("#workspace-bar");
   if (!bar || !workspace) return;
   bar.querySelector("[data-save-state]").textContent =
-    `${workspaceLabels[workspace.state]} / ${workspace.operations.length}件`;
-  bar.querySelector("[data-save-state]").dataset.state = workspace.state;
+    `${inlinePending() ? "セルを編集中（Enterで確定 / Escで取消）" : workspaceLabels[workspace.state]} / ${workspace.operations.length}件`;
+  bar.querySelector("[data-save-state]").dataset.state = inlinePending()
+    ? "editing"
+    : workspace.state;
   if (workspace.updatedAt)
     bar.querySelector("[data-save-state]").title =
       "最終保存 " +
@@ -30,8 +43,17 @@ function renderSaveState() {
         timeStyle: "short",
       }).format(workspace.updatedAt) +
       " JST";
-  if (workspace.state === "saved")
+  if (inlinePending())
+    showStatus("セルをEnterで確定するか、Escで取り消してください。");
+  else if (workspace.state === "saved")
     showStatus("下書きは保存済みです。公開データは変更していません。");
+  else if (workspace.state === "unsaved")
+    showStatus(
+      "変更は下書きです。自動保存を待つか「下書きを保存」を押してください。",
+    );
+  else if (workspace.state === "saving") showStatus("下書きを保存中です。");
+  else if (workspace.state === "failed" || workspace.state === "conflict")
+    showStatus(workspace.error || workspaceLabels[workspace.state]);
 }
 function setupWorkspaceBar() {
   const bar = node("section");
@@ -42,16 +64,32 @@ function setupWorkspaceBar() {
   state.setAttribute("role", "status");
   bar.append(
     state,
-    button("下書きを保存", () => workspace.save()),
+    button("下書きを保存", () => {
+      if (inlinePending()) {
+        showStatus("セルをEnterで確定するか、Escで取り消してください。");
+        return;
+      }
+      return workspace.save();
+    }),
     button("元に戻す", () => {
+      if (inlinePending())
+        return showStatus("編集中のセルを確定または取り消してください。");
       workspace.history("undo");
-      activeEditor = null;
-      screen();
+      if (activeEditor?.refresh) activeEditor.refresh();
+      else {
+        activeEditor = null;
+        screen();
+      }
     }),
     button("やり直す", () => {
+      if (inlinePending())
+        return showStatus("編集中のセルを確定または取り消してください。");
       workspace.history("redo");
-      activeEditor = null;
-      screen();
+      if (activeEditor?.refresh) activeEditor.refresh();
+      else {
+        activeEditor = null;
+        screen();
+      }
     }),
   );
   const a = node("a", "変更内容");
@@ -387,190 +425,163 @@ async function loadMasters(render = listView) {
   showStatus("最新main: " + snapshot.sha.slice(0, 10));
   render();
 }
+let masterTable, masterPanel;
+function masterRows() {
+  return overlayRows(rows(), workspace.operations, entity);
+}
+function masterChanges(changes) {
+  const next = structuredClone(workspace.operations);
+  for (const { record, value } of changes) {
+    const old = next.find(
+      (o) =>
+        o.entity === entity &&
+        ((record.id && o.id === record.id) ||
+          (o.id || "@" + o.key) === record._reference),
+    );
+    const op = {
+      key: old?.key || "draft-" + crypto.randomUUID(),
+      entity,
+      ...(record.id ? { id: record.id } : {}),
+      baseCommit: old?.baseCommit || snapshot.sha,
+      before: old?.before ?? rows().find((r) => r.id === record.id) ?? null,
+      value,
+    };
+    const i = next.findIndex((o) => o.key === op.key);
+    if (i < 0) next.push(op);
+    else next[i] = op;
+  }
+  workspace.replace(next);
+  renderSaveState();
+}
 function listView() {
   const view = $("#view");
-  view.replaceChildren(node("h2", labels[entity] + "管理"));
+  view.className = "management-layout";
+  view.replaceChildren();
+  const list = node("div");
+  list.className = "list-region";
+  view.append(list);
+  const heading = node("div");
+  heading.className = "page-header";
+  heading.append(node("h2", labels[entity] + "管理"));
   const menu = node("div");
+  menu.className = "content-toolbar";
   for (const type of Object.keys(initial))
     menu.append(
       button(labels[type], () => {
         entity = type;
-        page = 0;
         listView();
       }),
     );
-  view.append(
+  heading.append(
     menu,
     button("新規登録", () => edit()),
     button("最新mainを再読み込み", loadMasters),
   );
-  const filters = node("div");
-  filters.className = "grid";
-  const query = node("input");
-  query.type = "search";
-  query.setAttribute("aria-label", "名前・IDで検索");
-  query.placeholder = "名前・IDで検索";
-  const org = node("select");
-  org.setAttribute("aria-label", "事務所で絞り込み");
-  org.append(new Option("すべての事務所", ""));
-  snapshot.models.talents.organizations.forEach((o) =>
-    org.append(new Option(o.name, o.id)),
-  );
-  const group = node("select");
-  group.setAttribute("aria-label", "グループで絞り込み");
-  group.append(new Option("すべてのグループ", ""));
-  snapshot.models.catalog.groups.forEach((g) =>
-    group.append(new Option(g.name, g.id)),
-  );
-  const activity = node("select");
-  activity.setAttribute("aria-label", "活動状態");
-  ["", "unknown", "active", "hiatus", "ended", "retired"].forEach((s) =>
-    activity.append(new Option(s || "すべての活動状態", s)),
-  );
-  const youtube = node("select");
-  youtube.setAttribute("aria-label", "YouTube登録");
-  youtube.append(
-    new Option("YouTube：すべて", ""),
-    new Option("ID登録あり", "yes"),
-    new Option("未登録・不明", "no"),
-  );
-  const wiki = node("select");
-  wiki.setAttribute("aria-label", "Wiki登録");
-  wiki.append(
-    new Option("Wiki：すべて", ""),
-    new Option("登録あり", "yes"),
-    new Option("登録なし", "no"),
-  );
-  const missing = node("select");
-  missing.setAttribute("aria-label", "情報不足");
-  missing.append(
-    new Option("情報の充足：すべて", ""),
-    new Option("未確認・未登録項目あり", "yes"),
-  );
-  const agency = node("select");
-  agency.setAttribute("aria-label", "所属状態");
-  agency.append(new Option("所属状態：すべて", ""));
-  schemas.definitions.agencyState.properties.value.enum.forEach((v) =>
-    agency.append(new Option(enumLabels[v] || v, v)),
-  );
-  filters.append(query, org, group, activity, youtube, wiki, agency, missing);
-  view.append(filters);
-  const count = node("p"),
-    result = node("div"),
-    pager = node("div");
-  view.append(count, result, pager);
-  const render = () => {
-    let list = rows().filter((r) =>
-      [r.id, r.displayName || r.name, ...(r.aliases || []).map((a) => a.name)]
-        .join(" ")
-        .normalize("NFKC")
-        .toLowerCase()
-        .includes(query.value.normalize("NFKC").toLowerCase()),
-    );
-    if (entity === "talent") {
-      list = list.filter(
-        (t) =>
-          (!org.value ||
-            t.affiliations.some((a) => a.organizationId === org.value)) &&
-          (!group.value ||
-            snapshot.models.catalog.groups
-              .find((g) => g.id === group.value)
-              ?.talentIds.includes(t.id)) &&
-          (!activity.value || t.activityStatus.value === activity.value) &&
-          (!youtube.value ||
-            t.accounts.some((a) => a.service === "youtube" && a.accountId) ===
-              (youtube.value === "yes")) &&
-          (!wiki.value || !!t.wiki === (wiki.value === "yes")) &&
-          (!agency.value || t.agencyStatus.value === agency.value) &&
-          (!missing.value ||
-            !t.wiki ||
-            !t.profileImage ||
-            t.activityStatus.value === "unknown" ||
-            !t.accounts.some((a) => a.service === "youtube" && a.accountId)),
-      );
-    }
-    count.textContent = `${list.length}件 / 全${rows().length}件`;
-    const table = node("table");
-    const thead = node("thead"),
-      tr = node("tr");
-    ["名前", "所属・状態", "関連情報"].forEach((s) => tr.append(node("th", s)));
-    thead.append(tr);
-    table.append(thead);
-    const tbody = node("tbody");
-    for (const r of list.slice(page * 30, page * 30 + 30)) {
-      const row = node("tr"),
-        name = node("td");
-      name.append(
-        portrait(r.profileImage?.url, r.displayName || r.name),
-        button(r.displayName || r.name, () => detail(r)),
-      );
-      const affiliations =
-        r.affiliations
-          ?.map(
-            (a) =>
-              (a.status === "former" ? "旧所属：" : "") +
-              (snapshot.models.talents.organizations.find(
-                (o) => o.id === a.organizationId,
-              )?.name || "所属不明"),
-          )
-          .join("・") || "所属未登録";
-      row.append(
-        name,
-        node(
-          "td",
-          entity === "talent"
-            ? affiliations +
-                " / " +
-                ({
-                  unknown: "活動状態不明",
-                  active: "活動中",
-                  hiatus: "活動休止",
-                  retired: "引退（確認済み）",
-                  retired: "引退（確認済み）",
-                  ended: "活動終了",
-                }[r.activityStatus.value] || r.activityStatus.value) +
-                " / " +
-                (r.visibility || "public")
-            : r.name,
-        ),
-        node("td", related(r.id).length + "参照"),
-      );
-      tbody.append(row);
-    }
-    table.append(tbody);
-    result.replaceChildren(
-      list.length
-        ? table
-        : node("p", "該当する登録がありません。条件を解除してください。"),
-    );
-    pager.replaceChildren(
-      button("前へ", () => {
-        page = Math.max(0, page - 1);
-        render();
-      }),
-      node("span", page + 1 + "ページ"),
-      button("次へ", () => {
-        if ((page + 1) * 30 < list.length) page++;
-        render();
-      }),
-    );
+  list.append(heading);
+  const table = node("div");
+  list.append(table);
+  masterTable = mountDataTable({
+    container: table,
+    title: labels[entity],
+    queryLabel: "名前・IDで検索",
+    columns: columnsFor(entity, { models: snapshot.models }),
+    rows: masterRows,
+    key: (r) => r.id || r._reference,
+    baseline: (r) => rows().find((b) => b.id === r.id),
+    onChange: masterChanges,
+    onOpen: detail,
+    filters:
+      entity === "talent"
+        ? [
+            {
+              key: "org-filter",
+              label: "事務所で絞り込み",
+              options: snapshot.models.talents.organizations.map((o) => [
+                o.id,
+                o.name,
+              ]),
+              test: (r, v) =>
+                r.affiliations.some((a) => a.organizationId === v),
+            },
+            {
+              key: "group-filter",
+              label: "グループで絞り込み",
+              options: snapshot.models.catalog.groups.map((g) => [
+                g.id,
+                g.name,
+              ]),
+              test: (r, v) =>
+                snapshot.models.catalog.groups
+                  .find((g) => g.id === v)
+                  ?.talentIds.includes(r.id),
+            },
+            {
+              key: "youtube-filter",
+              label: "YouTube登録",
+              options: [
+                ["yes", "ID登録あり"],
+                ["no", "未登録・不明"],
+              ],
+              test: (r, v) =>
+                r.accounts.some(
+                  (a) => a.service === "youtube" && a.accountId,
+                ) ===
+                (v === "yes"),
+            },
+            {
+              key: "wiki-filter",
+              label: "Wiki登録",
+              options: [
+                ["yes", "登録あり"],
+                ["no", "登録なし"],
+              ],
+              test: (r, v) => !!r.wiki === (v === "yes"),
+            },
+            {
+              key: "missing-filter",
+              label: "情報不足",
+              options: [["yes", "未確認・未登録項目あり"]],
+              test: (r) =>
+                !r.wiki ||
+                !r.profileImage ||
+                r.activityStatus.value === "unknown" ||
+                !r.accounts.some((a) => a.service === "youtube" && a.accountId),
+            },
+          ]
+        : [],
+  });
+  activeEditor = {
+    get dirty() {
+      return workspace.dirty;
+    },
+    refresh: () => masterTable.refresh(),
   };
-  for (const input of filters.children)
-    input.oninput = () => {
-      page = 0;
-      render();
-    };
-  view.append(
-    button("条件を解除", () => {
-      for (const input of filters.children) input.value = "";
-      page = 0;
-      render();
-    }),
-  );
-  render();
 }
 function detail(record) {
-  const view = $("#view");
+  if (!record.id) {
+    edit(
+      undefined,
+      workspace.operations.find(
+        (o) => o.entity === entity && "@" + o.key === record._reference,
+      ),
+    );
+    return;
+  }
+  masterPanel?.panel.remove();
+  masterPanel = detailPanel($("#view"), {
+    title: record.displayName || record.name,
+    onClose: () => {
+      masterTable?.refresh();
+      activeEditor = {
+        get dirty() {
+          return workspace.dirty;
+        },
+        refresh: () => masterTable.refresh(),
+      };
+      return true;
+    },
+  });
+  const view = masterPanel.content;
   view.replaceChildren(
     button("一覧へ戻る", listView),
     node("h2", record.displayName || record.name),
@@ -666,6 +677,10 @@ async function digest(value) {
 }
 let activeEditor = null;
 function mayLeave() {
+  if (inlinePending()) {
+    showStatus("編集中のセルをEnterで確定するか、Escで取り消してください。");
+    return false;
+  }
   if (activeEditor?.pending) {
     showStatus("検証が終わるまでお待ちください。");
     return false;
@@ -681,6 +696,7 @@ function mayLeave() {
 window.addEventListener("beforeunload", (e) => {
   if (
     activeEditor?.pending ||
+    inlinePending() ||
     workspace?.dirty ||
     (activeEditor?.dirty && !workspace)
   ) {
@@ -704,6 +720,10 @@ document
     }
   });
 function edit(record, savedOperation) {
+  if (record) {
+    record = structuredClone(rows().find((r) => r.id === record.id) || record);
+    delete record._reference;
+  }
   const staged =
     savedOperation ||
     (record?.id
@@ -713,7 +733,9 @@ function edit(record, savedOperation) {
       : undefined);
   const operationKey = staged?.key || "draft-" + crypto.randomUUID();
   showStatus("編集中の変更は、PR作成までGitHubへ保存されません。");
-  const view = $("#view");
+  const view = masterPanel?.panel.isConnected
+    ? masterPanel.content
+    : $("#view");
   const open = () => {
     activeEditor = createEditor({
       container: view,
@@ -738,7 +760,8 @@ function edit(record, savedOperation) {
       onCancel: () => {
         if (mayLeave()) {
           activeEditor = null;
-          listView();
+          if (masterPanel?.panel.isConnected) masterPanel.close();
+          else listView();
         }
       },
       onSelectRecord: (id) => {
@@ -908,14 +931,27 @@ async function showPreview(input, workspaceKey) {
     await workspace.flush();
     const keys =
       input.entity === "content"
-        ? input.value.operations.filter(o=>{
-          if(workspace.operations.some(w=>w.key===o.key))return true;
-          const t=schemas.content.types[o.entity],old=o.id && snapshot.models[t.file][t.list].find(r=>r[t.field || "id"]===o.id);
-          if(old&&!fieldChanges(old,o.value).length)return false;
-          throw new Error("保存されていない変更があります。下書きを確認してください。");
-        }).map((o) => o.key)
+        ? input.value.operations
+            .filter((o) => {
+              if (workspace.operations.some((w) => w.key === o.key))
+                return true;
+              const t = schemas.content.types[o.entity],
+                old =
+                  o.id &&
+                  snapshot.models[t.file][t.list].find(
+                    (r) => r[t.field || "id"] === o.id,
+                  );
+              if (old && !fieldChanges(old, o.value).length) return false;
+              throw new Error(
+                "保存されていない変更があります。下書きを確認してください。",
+              );
+            })
+            .map((o) => o.key)
         : [workspaceKey];
-    if (!keys.length || keys.some((k) => !k || !workspace.operations.some((o) => o.key === k)))
+    if (
+      !keys.length ||
+      keys.some((k) => !k || !workspace.operations.some((o) => o.key === k))
+    )
       throw new Error("変更がありません。下書きを確認してください。");
     const previous = activeEditor;
     submissionView({
@@ -928,8 +964,23 @@ async function showPreview(input, workspaceKey) {
         else listView();
       },
       onBack: () => {
-        activeEditor = previous;
-        previous?.show();
+        if (input.entity === "content") {
+          resumeOperationKey = keys[0];
+          screen();
+        } else {
+          listView();
+          masterPanel = detailPanel($("#view"), {
+            title: labels[entity] + "編集",
+            onClose: () => {
+              masterTable?.refresh();
+              return true;
+            },
+          });
+          edit(
+            rows().find((r) => r.id === input.id),
+            workspace.operations.find((o) => o.key === workspaceKey),
+          );
+        }
       },
     });
     return;
@@ -1145,6 +1196,21 @@ async function showPreview(input, workspaceKey) {
 const oldScreen = screen;
 screen = function () {
   if (!me) return;
+  $("#view").className = "";
+  const route = location.hash || "#dashboard";
+  $("#page-title").textContent =
+    {
+      "#dashboard": "ダッシュボード",
+      "#masters": "VTuber",
+      "#organizations": "事務所・グループ",
+      "#anniversaries": "記念日",
+      "#music": "音楽",
+      "#events": "イベント",
+      "#goods": "グッズ",
+      "#workspace": "変更内容",
+      "#submitted": "提出済みPR",
+      "#settings": "設定",
+    }[route] || "管理";
   for (const a of document.querySelectorAll("nav a")) {
     if (a.hash === (location.hash || "#dashboard"))
       a.setAttribute("aria-current", "page");
@@ -1170,6 +1236,7 @@ screen = function () {
         category: location.hash.slice(1),
         baseCommit: snapshot.sha,
         resumeKey: resumeOperationKey,
+        getWorkspaceOperations: () => workspace.operations,
         workspaceOperations: workspace?.operations || [],
         onWorkspaceChange: (operations) =>
           workspace?.replace([
@@ -1198,7 +1265,8 @@ screen = function () {
     };
     if (snapshot) open();
     else loadMasters(open).catch((e) => showStatus(e.message));
-  } else if (location.hash === "#masters") {
+  } else if (["#masters", "#organizations"].includes(location.hash)) {
+    entity = location.hash === "#organizations" ? "organization" : "talent";
     if (snapshot) listView();
     else loadMasters().catch((e) => showStatus(e.message));
   } else {
@@ -1222,3 +1290,19 @@ screen = function () {
 };
 if (me && location.hash === "#masters")
   loadMasters().catch((e) => showStatus(e.message));
+
+window.addEventListener("keydown", (e) => {
+  if (
+    !(e.ctrlKey || e.metaKey) ||
+    e.altKey ||
+    ["INPUT", "TEXTAREA", "SELECT"].includes(e.target.tagName) ||
+    activeEditor?.pending
+  )
+    return;
+  if (e.key.toLowerCase() === "z") {
+    e.preventDefault();
+    workspace.history(e.shiftKey ? "redo" : "undo");
+    if (activeEditor?.refresh) activeEditor.refresh();
+    else screen();
+  }
+});

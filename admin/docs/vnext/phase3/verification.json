@@ -1,0 +1,30 @@
+{
+  "base": "57cefb1217f62f8492e82ef9e4b48821b1cea559",
+  "root": {
+    "check": "passed",
+    "unitTests": 195,
+    "buildMs": 1848,
+    "browserSuites": 7
+  },
+  "admin": {
+    "unitTests": 71,
+    "check": "dry-run passed",
+    "worker": "local workerd/SQLite passed",
+    "browser": "existing suites and Phase3 mocked E2E; final CI linked in PR"
+  },
+  "viewports": [
+    320,
+    390,
+    768,
+    1440,
+    1920
+  ],
+  "publicMastersChanged": false,
+  "backendChanged": false,
+  "productionDeployed": false,
+  "measurements": {
+    "before": "screens/before-metrics.json",
+    "after": "screens/after-metrics.json"
+  },
+  "phase4": "full fixture and assistive-technology review deferred"
+}

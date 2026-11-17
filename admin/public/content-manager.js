@@ -1,3 +1,6 @@
+import { mountDataTable } from "./data-table.js";
+import { columnsFor } from "./table-columns.js";
+import { detailPanel } from "./detail-panel.js";
 import { el, action, namePicker } from "./controls.js";
 import { fields, labels, enums } from "./content-fields.js";
 import { initialContent, reorder } from "./content-utils.js";
@@ -11,7 +14,7 @@ const baseTitle = (r) =>
   r?.title || r?.rawSongTitle || r?.rawLabel || r?.youtubeId || "新規登録";
 const same = (a, b) => JSON.stringify(a) === JSON.stringify(b);
 export function mountContent({
-  container,
+  container: host,
   category,
   models,
   forms,
@@ -22,7 +25,9 @@ export function mountContent({
   onWorkspaceChange,
   baseCommit,
   resumeKey,
+  getWorkspaceOperations,
 }) {
+  let container = host;
   if (!forms?.types) {
     container.replaceChildren(
       el("p", "管理サーバーを更新してから再読み込みしてください。"),
@@ -84,6 +89,10 @@ export function mountContent({
     }
     container.querySelector("[data-content-errors]")?.remove();
     confirmed = false;
+    host.querySelectorAll("[data-primary-toolbar] button").forEach((b) => {
+      if (b.textContent.startsWith("一括プレビュー"))
+        b.textContent = `一括プレビュー（${operations.length}件保留）`;
+    });
     onDirty?.(true);
     if (onWorkspaceChange) {
       const pending = structuredClone(operations);
@@ -134,9 +143,35 @@ export function mountContent({
       return busy;
     },
     show: () => (current ? drawEditor() : drawList()),
+    refresh: () => {
+      if (getWorkspaceOperations) {
+        operations.splice(
+          0,
+          operations.length,
+          ...getWorkspaceOperations()
+            .filter((o) => types[o.entity])
+            .map(({ before, baseCommit, ...o }) => structuredClone(o)),
+        );
+      }
+      if (current) {
+        const saved = operations.find((o) => o.key === current.key);
+        current.value = structuredClone(
+          saved?.value ||
+            baseline[types[current.entity].file][
+              types[current.entity].list
+            ].find(
+              (r) => r[types[current.entity].field || "id"] === current.id,
+            ) ||
+            initialContent(current.entity, forms.schemas[current.entity]),
+        );
+        current.original = structuredClone(current.value);
+        drawEditor();
+      } else tableController?.refresh();
+    },
   };
-  function toolbar() {
+  function toolbar(inList = false) {
     const bar = el("div", undefined, "content-toolbar");
+    bar.dataset.primaryToolbar = "";
     bar.append(
       action("一覧へ", () => {
         if (current && !stash()) return;
@@ -166,6 +201,12 @@ export function mountContent({
         }
       }),
     );
+    if (inList) {
+      const more = el("details"),
+        label = el("summary", "追加操作");
+      more.append(label, bar.firstChild, bar.lastChild);
+      bar.append(more);
+    }
     return bar;
   }
   function showError(error) {
@@ -242,7 +283,6 @@ export function mountContent({
     return true;
   }
   function open(type, record, id, key, context) {
-    entity = type;
     key ||= "record-" + ++serial;
     const staged =
       operations.find((o) => o.key === key) ||
@@ -267,6 +307,22 @@ export function mountContent({
     };
     tab = "basic";
     registry = new Map();
+    if (!panel?.panel.isConnected) {
+      panel = detailPanel(host, {
+        title: types[type].label + "編集",
+        onClose: () => {
+          if (current) stash();
+          current = null;
+          container = host;
+          host
+            .querySelector("[data-primary-toolbar]")
+            ?.removeAttribute("hidden");
+          tableController?.refresh();
+          return true;
+        },
+      });
+    }
+    container = panel.content;
     drawEditor();
   }
   function returnToParent(applyChild = true) {
@@ -315,6 +371,8 @@ export function mountContent({
     }
   }
   function drawReview() {
+    container = host;
+    host.classList.remove("with-detail", "detail-full");
     current = null;
     registry = new Map();
     container.replaceChildren(
@@ -435,6 +493,107 @@ export function mountContent({
       );
       linked = performances.map((r) => ["performance", r]);
     }
+    if (type === "campaign" || type === "product") {
+      const kind = type === "campaign" ? "product" : "offer",
+        table = el("div");
+      box.append(table);
+      mountDataTable({
+        container: table,
+        title: types[kind].label,
+        rows: () =>
+          rowsFor(kind).filter((r) =>
+            kind === "product"
+              ? linked.some(([, p]) => p._reference === r._reference)
+              : r.productId === reference,
+          ),
+        key: (r) => r._reference,
+        columns: columnsFor(kind, { models, forms, rowsFor }),
+        baseline: (r) =>
+          baseline[types[kind].file][types[kind].list].find(
+            (b) => b.id === r._reference,
+          ),
+        onChange: (changes) => {
+          applyTableChanges(changes, kind);
+        },
+        openLabel: (r) => title(r) + "を編集",
+        onOpen: (r) => {
+          if (!stash()) return;
+          stack.push({ editor: structuredClone(current), tab });
+          const staged = operations.find(
+            (o) => ref(o) === r._reference && o.entity === kind,
+          );
+          open(
+            kind,
+            r,
+            r.id,
+            staged?.key,
+            kind === "product"
+              ? { parent: { entity: "campaign", reference } }
+              : undefined,
+          );
+        },
+      });
+      if (type === "campaign") {
+        const offersTable = el("div");
+        box.append(el("h3", "キャンペーン内の販売情報"), offersTable);
+        mountDataTable({
+          container: offersTable,
+          title: "キャンペーンの販売情報",
+          rows: () =>
+            rowsFor("offer").filter((o) => o.campaignId === reference),
+          key: (r) => r._reference,
+          columns: columnsFor("offer", { models, forms, rowsFor }),
+          baseline: (r) =>
+            baseline.goods.offers.find((b) => b.id === r._reference),
+          onChange: (changes) => applyTableChanges(changes, "offer"),
+          openLabel: (r) => title(r) + "を編集",
+          onOpen: (r) => {
+            if (!stash()) return;
+            stack.push({ editor: structuredClone(current), tab });
+            open(
+              "offer",
+              r,
+              r.id,
+              operations.find((o) => ref(o) === r._reference)?.key,
+            );
+          },
+        });
+        let existing = null;
+        box.append(
+          namePicker(
+            "既存商品を再利用",
+            null,
+            rowsFor("product").map((r) => ({
+              id: r._reference,
+              name: r.title,
+            })),
+            (id) => (existing = id),
+            { path: "/reuseProduct" },
+          ),
+          action("選んだ商品の販売情報を追加", () => {
+            if (!existing) return;
+            child("offer", {
+              parent: { entity: "product", reference: existing },
+              preset: { productId: existing, campaignId: reference },
+            });
+          }),
+        );
+      }
+      if (type === "product")
+        box.append(
+          action("商品を複製して新規下書き", () => {
+            if (!stash()) return;
+            const value = structuredClone(op.value);
+            delete value.id;
+            value.title += "（複製）";
+            value.visibility = "draft";
+            value.identityUrl = "";
+            stack.push({ editor: structuredClone(current), tab });
+            open("product", value, null, null, contexts.get(op.key));
+          }),
+        );
+      return box;
+    }
     for (const [index, [kind, r]] of linked.entries()) {
       const row = el("article", undefined, "content-list-row");
       row.append(
@@ -513,6 +672,11 @@ export function mountContent({
       op.original = structuredClone(op.value);
     }
     registry = new Map();
+    const ph = panel?.panel.querySelector(".panel-heading h2");
+    if (ph) ph.textContent = title(op.value) + " / " + (op.id || "新規下書き");
+    host
+      .querySelector(".list-region [data-primary-toolbar]")
+      ?.setAttribute("hidden", "");
     container.replaceChildren(
       toolbar(),
       el("h2", t.label + "：" + title(op.value)),
@@ -582,147 +746,102 @@ export function mountContent({
     );
     showTab();
   }
+  let tableController, panel;
+  function applyTableChanges(changes, type = entity) {
+    for (const { record, value } of changes) {
+      const existing = operations.find(
+        (o) => ref(o) === record._reference && o.entity === type,
+      );
+      const op = {
+        key: existing?.key || "record-" + crypto.randomUUID(),
+        entity: type,
+        ...(existing?.id || record[types[type].field || "id"]
+          ? { id: existing?.id || record[types[type].field || "id"] }
+          : {}),
+        value,
+      };
+      if (existing?.parent) op.parent = existing.parent;
+      const i = operations.findIndex((o) => o.key === op.key);
+      if (i < 0) operations.push(op);
+      else operations[i] = op;
+    }
+    changed();
+  }
   function drawList() {
+    container = host;
+    host.classList.remove("with-detail", "detail-full");
     current = null;
     registry = new Map();
-    container.replaceChildren(el("h2", categories[category] + "管理"));
+    host.replaceChildren();
+    const list = el("div", undefined, "list-region");
+    host.append(list);
+    host.classList.add("management-layout");
+    const heading = el("div", undefined, "page-header");
+    heading.append(el("h2", categories[category] + "管理"));
     const menu = el("div", undefined, "content-toolbar");
+    menu.setAttribute("aria-label", categories[category] + "のデータ種類");
     for (const [key, t] of Object.entries(types).filter(
       ([, t]) => t.category === category,
-    ))
-      menu.append(
-        action(t.label, () => {
-          entity = key;
-          drawList();
-        }),
-      );
-    container.append(
+    )) {
+      const b = action(t.label, () => {
+        entity = key;
+        drawList();
+      });
+      b.setAttribute("aria-pressed", String(key === entity));
+      menu.append(b);
+    }
+    heading.append(
       menu,
-      toolbar(),
+      toolbar(true),
       action("新規" + types[entity].label + "登録", () => open(entity)),
     );
-    const query = el("input");
-    query.type = "search";
-    query.setAttribute("aria-label", "タイトルで検索");
-    query.placeholder = "タイトル・名前で検索";
-    const state = el("select");
-    state.setAttribute("aria-label", "公開状態");
-    state.append(
-      new Option("公開状態：すべて", ""),
-      new Option("公開", "public"),
-      new Option("非公開", "draft"),
-    );
-    const kind = el("select");
-    kind.setAttribute("aria-label", "種類・状態");
-    kind.append(new Option("種類・状態：すべて", ""));
-    for (const v of [
-      ...new Set(
-        rowsFor(entity)
-          .map((r) => r.type || r.status || r.setlistStatus || r.verification)
-          .filter(Boolean),
-      ),
-    ])
-      kind.append(new Option(enums[v] || v, v));
-    const people = el("select");
-    people.setAttribute("aria-label", "人物で絞り込み");
-    people.append(new Option("タレント：すべて", ""));
-    for (const t of models.talents.talents)
-      people.append(new Option(t.displayName, t.id));
-    const filters = el("div", undefined, "content-filters");
-    filters.append(query, state, kind, people);
-    const count = el("p"),
-      result = el("div");
-    container.append(filters, count, result);
-    const draw = () => {
-      const rows = rowsFor(entity),
-        q = query.value.normalize("NFKC").toLowerCase();
-      const selected = rows.filter((r) => {
-        let ids = r.talentIds || [];
-        if (entity === "campaign") {
-          const products = rowsFor("product"),
-            offers = rowsFor("offer").filter(
-              (o) => o.campaignId === r._reference,
-            );
-          ids = [
-            ...new Set(
-              products
-                .filter((p) => offers.some((o) => o.productId === p._reference))
-                .flatMap((p) => p.talentIds),
-            ),
-          ];
-        }
-        const names = ids.map(
-          (id) =>
-            models.talents.talents.find((t) => t.id === id)?.displayName || "",
+    list.append(heading);
+    const result = el("div");
+    list.append(result);
+    tableController = mountDataTable({
+      container: result,
+      title: types[entity].label,
+      columns: columnsFor(entity, { models, forms, rowsFor }),
+      rows: () => rowsFor(entity),
+      key: (r) => r._reference,
+      baseline: (r) =>
+        baseline[types[entity].file][types[entity].list].find(
+          (b) => b[types[entity].field || "id"] === r._reference,
+        ),
+      onChange: applyTableChanges,
+      onOpen: (r) => {
+        const pending = operations.find(
+          (o) => ref(o) === r._reference && o.entity === entity,
         );
-        return (
-          [
-            title(r),
-            ...(r.aliases || []),
-            ...(r.readings || []),
-            ...(r.originalArtists || []),
-            ...names,
-          ]
-            .join(" ")
-            .normalize("NFKC")
-            .toLowerCase()
-            .includes(q) &&
-          (!state.value || r.visibility === state.value) &&
-          (!kind.value ||
-            (r.type || r.status || r.setlistStatus || r.verification) ===
-              kind.value) &&
-          (!people.value || ids.includes(people.value))
+        open(
+          entity,
+          r,
+          pending?.id || r[types[entity].field || "id"],
+          pending?.key,
         );
-      });
-      count.textContent = `${selected.length}件 / 登録${rows.length}件（公開${rows.filter((r) => r.visibility === "public").length}件）`;
-      result.replaceChildren();
-      if (!selected.length)
-        result.append(el("p", "該当する登録はありません。"));
-      for (const r of selected) {
-        const card = el("article", undefined, "content-list-row");
-        card.append(
-          action(title(r), () => {
-            const pending = operations.find(
-              (o) => ref(o) === r._reference && o.entity === entity,
-            );
-            open(entity, r, r[types[entity].field || "id"], pending?.key);
-          }),
-          el("span", r.visibility === "public" ? "公開" : "非公開"),
-        );
-        if (entity === "campaign" && window.Goods)
-          card.append(
-            el(
-              "span",
-              window.Goods.aggregate(
-                rowsFor("offer").filter((o) => o.campaignId === r._reference),
-              ).label,
-            ),
-          );
-        result.append(card);
-      }
-    };
-    let composing = false;
-    filters.addEventListener("compositionstart", () => (composing = true));
-    filters.addEventListener("compositionend", () => {
-      composing = false;
-      draw();
+      },
+      filters: [
+        {
+          key: "people-filter",
+          label: "人物で絞り込み",
+          options: models.talents.talents.map((t) => [t.id, t.displayName]),
+          test: (r, id) => {
+            if (entity === "campaign") {
+              const ids = rowsFor("offer")
+                .filter((o) => o.campaignId === r._reference)
+                .map((o) => o.productId);
+              return rowsFor("product").some(
+                (p) => ids.includes(p._reference) && p.talentIds.includes(id),
+              );
+            }
+            return (r.talentIds || []).includes(id);
+          },
+        },
+      ],
     });
-    filters.oninput = (e) => {
-      if (!composing && !e.isComposing) draw();
-    };
-    filters.onchange = (e) => {
-      if (e.target.tagName === "SELECT") draw();
-    };
-    container.append(
-      action("条件を解除", () => {
-        query.value = state.value = kind.value = people.value = "";
-        draw();
-      }),
-    );
-    draw();
   }
+  drawList();
   const resumed = operations.find((o) => o.key === resumeKey);
   if (resumed) open(resumed.entity, resumed.value, resumed.id, resumed.key);
-  else drawList();
   return controller;
 }

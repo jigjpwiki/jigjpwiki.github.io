@@ -1,3 +1,5 @@
+> 記念日・音楽・イベント・グッズ管理の追加仕様は[コンテンツ管理](content/README.md)を参照。以下の既存VTuber・組織・グループ仕様も引き続き有効。
+
 # VTuber・組織・グループ管理（出典管理廃止後）
 
 現行の管理仕様。出典管理の移行・旧PRの扱い・必須デプロイ順序は [出典管理廃止](../../docs/source-retirement/README.md) を参照。Cloudflare/既存配信Worker/Secrets/Wikiは自動変更しない。

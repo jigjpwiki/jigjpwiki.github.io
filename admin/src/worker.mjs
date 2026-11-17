@@ -15,6 +15,7 @@ import {
 } from "./security.mjs";
 import { GitHub, repository } from "./github.mjs";
 import { preview, forms } from "./model.mjs";
+import { WorkspaceStore, workspaceLimits } from "./workspace.mjs";
 import migration from "../../lib/source-migration.js";
 export default {
   async fetch(request, env) {
@@ -218,6 +219,31 @@ export class Admin {
     if (rate.count >= 30) fail(429, "admin_request_limit");
     rate.count++;
     await this.store.put(rateKey, rate, rate.start + 60000);
+    if (url.pathname === "/api/workspace") {
+      const workspace = new WorkspaceStore(this.store, this.env.SESSION_KEY);
+      if (request.method === "GET")
+        return json({
+          workspace: await workspace.get(session.id),
+          limits: workspaceLimits,
+        });
+      if (request.method === "PUT") {
+        const input = await body(request, workspaceLimits.bytes);
+        return this.state.blockConcurrencyWhile(async () => {
+          try {
+            return json({
+              workspace: await workspace.save(session.id, input),
+              limits: workspaceLimits,
+            });
+          } catch (e) {
+            return json(
+              { error: e instanceof Failure ? e.message : "internal_error" },
+              e instanceof Failure ? e.status : 500,
+            );
+          }
+        });
+      }
+      fail(405, "method_not_allowed");
+    }
     if (url.pathname === "/api/forms" && request.method === "GET")
       return json(forms);
     if (url.pathname === "/api/masters" && request.method === "GET") {

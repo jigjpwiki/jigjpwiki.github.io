@@ -1,3 +1,4 @@
+import { workspaceBrowser } from "./workspace.browser.mjs";
 import fs from "node:fs";
 import http from "node:http";
 import path from "node:path";
@@ -542,6 +543,17 @@ try {
       await context.close();
       console.log(`Content Admin E2E passed ${width} ${name}`);
     }
+  if (!process.env.ADMIN_PUBLIC_ROOT)
+    await workspaceBrowser({
+      browser,
+      base,
+      models,
+      reset: () => {
+        data.clear();
+        mainSha = "main-sha";
+      },
+      shotDir: process.env.ADMIN_WORKSPACE_SCREENSHOTS,
+    });
   // The same authenticated write endpoint must reject CSRF and a newer main SHA.
   data.clear();
   mainSha = "main-sha";

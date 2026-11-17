@@ -93,6 +93,35 @@ try {
   headers["X-CSRF-Token"] = me.csrf;
   headers.Origin = "https://jigwiki-admin.local";
   headers["Content-Type"] = "application/json";
+  const draft = {
+    protocol: 1,
+    revision: 0,
+    operations: [
+      {
+        key: "draft-one",
+        entity: "campaign",
+        baseCommit: "main-sha",
+        before: null,
+        value: { title: "永続下書き", visibility: "draft" },
+      },
+    ],
+  };
+  const saveDraft = () =>
+    mf.dispatchFetch("https://jigwiki-admin.local/api/workspace", {
+      method: "PUT",
+      headers,
+      body: JSON.stringify(draft),
+    });
+  const parallel = await Promise.all([saveDraft(), saveDraft()]);
+  assert.deepEqual(parallel.map((r) => r.status).sort(), [200, 409]);
+  const saved = await (
+    await mf.dispatchFetch("https://jigwiki-admin.local/api/workspace", {
+      headers,
+    })
+  ).json();
+  assert.equal(saved.workspace.operations[0].value.title, "永続下書き");
+  assert.equal(saved.workspace.revision, 1);
+  assert.equal(writes, 0);
   const value = structuredClone(models.talents.talents[0]);
   value.displayName += "（検証）";
   const input = {

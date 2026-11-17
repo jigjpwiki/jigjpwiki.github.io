@@ -18,6 +18,10 @@ export function mountContent({
   onPreview,
   onReload,
   onDirty,
+  workspaceOperations = [],
+  onWorkspaceChange,
+  baseCommit,
+  resumeKey,
 }) {
   if (!forms?.types) {
     container.replaceChildren(
@@ -26,10 +30,15 @@ export function mountContent({
     return { dirty: false };
   }
   const types = forms.types,
-    operations = [],
+    operations = workspaceOperations
+      .filter((o) => forms.types[o.entity])
+      .map((o) => {
+        const { before, baseCommit, ...value } = o;
+        return structuredClone(value);
+      }),
     contexts = new Map(),
     stack = [];
-  let serial = 0,
+  let serial = Date.now(),
     entity = Object.keys(types).find((t) => types[t].category === category),
     current = null,
     tab = "basic",
@@ -38,6 +47,8 @@ export function mountContent({
     busy = false,
     registry = new Map(),
     currentForm;
+  for (const op of operations)
+    if (op.parent) contexts.set(op.key, { parent: op.parent });
   const baseline = structuredClone(models);
   const title = (r) =>
     r?.productId
@@ -74,6 +85,41 @@ export function mountContent({
     container.querySelector("[data-content-errors]")?.remove();
     confirmed = false;
     onDirty?.(true);
+    if (onWorkspaceChange) {
+      const pending = structuredClone(operations);
+      if (current && !same(current.value, current.original)) {
+        const op = {
+          entity: current.entity,
+          key: current.key,
+          ...(current.id ? { id: current.id } : {}),
+          value: structuredClone(current.value),
+        };
+        const context = contexts.get(current.key);
+        if (context?.parent) op.parent = context.parent;
+        const index = pending.findIndex((o) => o.key === op.key);
+        if (index < 0) pending.push(op);
+        else pending[index] = op;
+      }
+      onWorkspaceChange(
+        pending.map((op) => {
+          const saved = workspaceOperations.find((o) => o.key === op.key),
+            t = types[op.entity];
+          return {
+            ...op,
+            baseCommit: saved?.baseCommit || baseCommit,
+            before:
+              saved?.before ??
+              (op.id
+                ? structuredClone(
+                    baseline[t.file][t.list].find(
+                      (r) => r[t.field || "id"] === op.id,
+                    ),
+                  )
+                : null),
+          };
+        }),
+      );
+    }
     const c = container.querySelector("#content-confirmed");
     if (c) c.checked = false;
   };
@@ -115,6 +161,7 @@ export function mountContent({
           stack.splice(0);
           current = null;
           confirmed = false;
+          changed();
           drawList();
         }
       }),
@@ -199,7 +246,9 @@ export function mountContent({
     key ||= "record-" + ++serial;
     const staged =
       operations.find((o) => o.key === key) ||
-      operations.find((o) => o.entity === type && o.id === id);
+      (id
+        ? operations.find((o) => o.entity === type && o.id === id)
+        : undefined);
     if (staged) {
       key = staged.key;
       id = staged.id;
@@ -672,6 +721,8 @@ export function mountContent({
     );
     draw();
   }
-  drawList();
+  const resumed = operations.find((o) => o.key === resumeKey);
+  if (resumed) open(resumed.entity, resumed.value, resumed.id, resumed.key);
+  else drawList();
   return controller;
 }

@@ -533,3 +533,77 @@ nav a[aria-current="page"] {
     width: 100%;
   }
 }
+
+/* Admin-local tokens informed by DADS; no shared/public-site CSS changes. */
+:root {
+  --admin-space: 8px;
+  --admin-action: #0031d8;
+  --admin-error: #b30000;
+  --admin-line: #949494;
+  --admin-focus: #ffd43d;
+}
+#workspace-bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--admin-space);
+  padding: var(--admin-space) 0;
+  margin-block: var(--admin-space) calc(2 * var(--admin-space));
+  border-block: 1px solid var(--admin-line);
+}
+#workspace-bar [data-save-state] {
+  flex: 1 1 240px;
+  font-weight: 700;
+}
+#workspace-bar button {
+  min-height: 36px;
+  padding: 8px 12px;
+  margin: 0;
+}
+#workspace-bar [data-state="failed"],
+#workspace-bar [data-state="conflict"] {
+  color: var(--admin-error);
+}
+#workspace-bar :focus-visible {
+  outline: 3px solid var(--admin-focus);
+  outline-offset: 2px;
+  box-shadow: 0 0 0 5px #111;
+}
+@media (max-width: 600px) {
+  #workspace-bar button,
+  #workspace-bar a {
+    min-height: 44px;
+  }
+  #workspace-bar a {
+    display: inline-flex;
+    align-items: center;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --admin-error: #ffb3b3;
+    --admin-action: #9ecaff;
+  }
+}
+.workspace-table {
+  max-width: 100%;
+  overflow-x: auto;
+}
+.workspace-table table {
+  min-width: 560px;
+  width: 100%;
+}
+.workspace-table th {
+  text-align: left;
+}
+.workspace-table td {
+  overflow-wrap: anywhere;
+}
+.workspace-table td:last-child {
+  min-width: 160px;
+}
+/* The legacy talent table hides its reference column on phones. Draft actions stay available. */
+.workspace-table th:last-child,
+.workspace-table td:last-child {
+  display: table-cell;
+}

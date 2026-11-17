@@ -7,7 +7,7 @@ import { Admin } from "../src/worker.mjs";
 import { GitHub, readFiles, filePath } from "../src/github.mjs";
 import { random, seal, hash } from "../src/security.mjs";
 const root = path.resolve(import.meta.dirname, "../..");
-async function setup() {
+export async function setup() {
   const models = Object.fromEntries(
       readFiles.map((n) => [
         n,
@@ -85,10 +85,10 @@ async function setup() {
       valueHash: await hash(value),
     },
   };
-  const call = (route, input, csrf = "csrf") =>
+  const call = (route, input, csrf = "csrf", method = "POST") =>
     worker.fetch(
       new Request("https://admin.example" + route, {
-        method: "POST",
+        method,
         headers: {
           Cookie: "__Host-admin-session=" + sid,
           Origin: "https://admin.example",
@@ -295,4 +295,43 @@ test("new batch previews have a rollback-safe protocol and malformed cached form
   response = await s.call("/api/change-requests", { previewId: plan.id });
   assert.equal(response.status, 409);
   assert.equal(s.writes(), 0);
+});
+
+test("workspace uses existing auth/CSRF, encrypts drafts, isolates tabs, never calls GitHub writes", async () => {
+  const s = await setup(),
+    value = {
+      protocol: 1,
+      revision: 0,
+      operations: [
+        {
+          entity: "talent",
+          key: "draft-one",
+          id: s.input.id,
+          baseCommit: s.input.sha,
+          before: structuredClone(s.models.talents.talents[0]),
+          value: s.input.value,
+        },
+      ],
+    };
+  assert.equal(
+    (await s.call("/api/workspace", value, "wrong", "PUT")).status,
+    403,
+  );
+  const response = await s.call("/api/workspace", value, "csrf", "PUT");
+  assert.equal(response.status, 200);
+  const saved = (await response.json()).workspace;
+  assert.equal(saved.ownerId, "123");
+  assert.equal(saved.operations.length, 1);
+  assert.equal(
+    (await s.call("/api/workspace", value, "csrf", "PUT")).status,
+    409,
+  );
+  assert.equal(
+    (await (await s.get("/api/workspace")).json()).workspace.revision,
+    1,
+  );
+  assert.equal(s.writes(), 0);
+  const raw = s.map.get("workspace-v1:123");
+  assert.deepEqual(Object.keys(raw), ["encrypted"]);
+  assert.ok(!JSON.stringify(raw).includes(s.input.value.displayName));
 });

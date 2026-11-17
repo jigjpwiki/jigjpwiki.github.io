@@ -349,8 +349,8 @@ export function mountContent({
       document.createTextNode("変更内容と関連付けを確認しました"),
     );
     const preview = action("変更プレビュー", async () => {
-      if (!check.checked || !reason.trim()) {
-        showError(new Error("変更理由を入力し、内容を確認してください。"));
+      if (!check.checked) {
+        showError(new Error("変更内容を確認してください。"));
         return;
       }
       preview.disabled = true;
@@ -360,7 +360,7 @@ export function mountContent({
         preview.disabled = false;
       }
     });
-    container.append(el("label", "変更理由"), input, label, preview);
+    container.append(el("label", "変更理由（任意）"), input, label, preview);
   }
   function relatedPanel(op) {
     const box = el("section", undefined, "content-related");

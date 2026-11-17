@@ -76,13 +76,13 @@ export async function workspaceBrowser({
     await p
       .getByRole("heading", { name: "変更ワークスペース", exact: true })
       .waitFor();
-    assert.equal(await p.locator("#view tbody tr").count(), 2);
+    assert.equal(await p.locator("#view table[data-workspace-operations] > tbody > tr").count(), 2);
     await p.reload();
     await saved();
     await p
       .getByRole("heading", { name: "変更ワークスペース", exact: true })
       .waitFor();
-    assert.equal(await p.locator("#view tbody tr").count(), 2);
+    assert.equal(await p.locator("#view table[data-workspace-operations] > tbody > tr").count(), 2);
     await click("ログアウト");
     await p
       .getByRole("link", { name: "GitHubでログイン", exact: true })
@@ -92,16 +92,16 @@ export async function workspaceBrowser({
     await p
       .getByRole("heading", { name: "変更ワークスペース", exact: true })
       .waitFor();
-    assert.equal(await p.locator("#view tbody tr").count(), 2);
+    assert.equal(await p.locator("#view table[data-workspace-operations] > tbody > tr").count(), 2);
     await p
       .getByRole("button", { name: "下書きから除外", exact: true })
       .last()
       .click();
-    assert.equal(await p.locator("#view tbody tr").count(), 1);
+    assert.equal(await p.locator("#view table[data-workspace-operations] > tbody > tr").count(), 1);
     await click("元に戻す");
-    assert.equal(await p.locator("#view tbody tr").count(), 2);
+    assert.equal(await p.locator("#view table[data-workspace-operations] > tbody > tr").count(), 2);
     await click("やり直す");
-    assert.equal(await p.locator("#view tbody tr").count(), 1);
+    assert.equal(await p.locator("#view table[data-workspace-operations] > tbody > tr").count(), 1);
     await click("下書きを保存");
     await saved();
     await p.getByRole("button", { name: "編集を再開", exact: true }).click();
@@ -207,16 +207,16 @@ export async function workspaceBrowser({
     await p
       .getByRole("heading", { name: "変更ワークスペース", exact: true })
       .waitFor();
-    assert.equal(await p.locator("#view tbody tr").count(), 20);
+    assert.equal(await p.locator("#view table[data-workspace-operations] > tbody > tr").count(), 20);
     measurements.push(
       await p.evaluate(() => ({
         width: innerWidth,
         mainWidth: document.querySelector("main").getBoundingClientRect().width,
-        visibleRows: [...document.querySelectorAll("#view tbody tr")].filter(
+        visibleRows: [...document.querySelectorAll("#view table[data-workspace-operations] > tbody > tr")].filter(
           (r) => r.getBoundingClientRect().bottom <= innerHeight,
         ).length,
         rowHeight: document
-          .querySelector("#view tbody tr")
+          .querySelector("#view table[data-workspace-operations] > tbody > tr")
           .getBoundingClientRect().height,
         horizontalOverflow: document.documentElement.scrollWidth > innerWidth,
       })),
@@ -240,9 +240,9 @@ export async function workspaceBrowser({
     await p
       .getByRole("heading", { name: "変更ワークスペース", exact: true })
       .waitFor();
-    assert.equal(await p.locator("#view tbody tr").count(), 21);
+    assert.equal(await p.locator("#view table[data-workspace-operations] > tbody > tr").count(), 21);
     await p
-      .locator("#view tbody tr")
+      .locator("#view table[data-workspace-operations] > tbody > tr")
       .filter({ hasText: person.displayName + " 保存テスト" })
       .getByRole("button", { name: "編集を再開", exact: true })
       .click();

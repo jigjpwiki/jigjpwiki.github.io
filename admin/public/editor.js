@@ -424,17 +424,21 @@ export function createEditor({
     check.onchange = () => (confirmed = check.checked);
     const label = el("label");
     label.append(check, document.createTextNode("変更内容を確認しました"));
-    card.append(label);
+    const confirmationError = el("p", undefined, "field-error");
+    confirmationError.hidden = true;
+    confirmationError.id = "confirmation-error";
+    check.setAttribute("aria-describedby", confirmationError.id);
+    fields.set("/confirmation", {
+      input: check,
+      error: confirmationError,
+      box: label,
+    });
+    card.append(label, confirmationError);
     const submit = action("変更プレビュー", async () => {
       if (busy) return;
       clearErrors();
       const problems = localIssues();
-      if (!reason.trim())
-        problems.push({
-          path: "/reason",
-          message: "変更理由を入力してください。",
-          tab: "review",
-        });
+
       if (!confirmed)
         problems.push({
           path: "/confirmation",
@@ -478,7 +482,7 @@ export function createEditor({
   }
   function registerReview(path, text, input) {
     const wrapper = el("div", undefined, "form-field"),
-      label = el("label", text),
+      label = el("label", text === "変更理由" ? "変更理由（任意）" : text),
       error = el("p", undefined, "field-error");
     input.id = "edit-" + path.slice(1);
     label.htmlFor = input.id;

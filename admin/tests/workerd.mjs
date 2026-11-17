@@ -183,6 +183,86 @@ try {
   );
   assert.equal(recovered.status, 200);
   assert.equal(writes, 2);
+  const mixed = Array.from({ length: 20 }, (_, i) => {
+    if (i < 5) {
+      const before = structuredClone(models.talents.talents[i]);
+      return {
+        key: "talent-" + i,
+        entity: "talent",
+        id: before.id,
+        baseCommit: "main-sha",
+        before,
+        value: { ...before, displayName: before.displayName + " Worker" },
+      };
+    }
+    if (i < 10) {
+      const before = structuredClone(models.anniversaries.events[i - 5]);
+      return {
+        key: "ann-" + i,
+        entity: "anniversary",
+        id: before.id,
+        baseCommit: "main-sha",
+        before,
+        value: { ...before, title: before.title + " Worker" },
+      };
+    }
+    return {
+      key: "campaign-" + i,
+      entity: "campaign",
+      baseCommit: "main-sha",
+      before: null,
+      value: { title: "Worker " + i, visibility: "draft" },
+    };
+  });
+  const save = await mf.dispatchFetch(
+    "https://jigwiki-admin.local/api/workspace",
+    {
+      method: "PUT",
+      headers,
+      body: JSON.stringify({ protocol: 1, revision: 1, operations: mixed }),
+    },
+  );
+  assert.equal(save.status, 200, await save.clone().text());
+  const sp = await mf.dispatchFetch(
+    "https://jigwiki-admin.local/api/submissions/preview",
+    {
+      method: "POST",
+      headers,
+      body: JSON.stringify({
+        protocol: 2,
+        revision: 2,
+        keys: mixed.map((o) => o.key),
+      }),
+    },
+  );
+  const selection = await sp.json();
+  assert.equal(sp.status, 200, JSON.stringify(selection));
+  assert.equal(selection.records.length, 20);
+  const submitInput = {
+    protocol: 2,
+    previewId: selection.id,
+    confirmationHash: selection.confirmationHash,
+  };
+  const response = await mf.dispatchFetch(
+    "https://jigwiki-admin.local/api/submissions",
+    { method: "POST", headers, body: JSON.stringify(submitInput) },
+  );
+  assert.equal(response.status, 200, await response.clone().text());
+  const repeated = await mf.dispatchFetch(
+    "https://jigwiki-admin.local/api/submissions",
+    { method: "POST", headers, body: JSON.stringify(submitInput) },
+  );
+  assert.equal(repeated.status, 200);
+  assert.equal(writes, 3);
+  const remaining = await (
+    await mf.dispatchFetch("https://jigwiki-admin.local/api/workspace", {
+      headers,
+    })
+  ).json();
+  assert.equal(remaining.workspace.operations.length, 0);
+  console.log(
+    "Local workerd/SQLite Phase 2: 20 mixed drafts, optional reason, one mocked PR, atomic cleanup and journal recovery passed.",
+  );
   console.log(
     "Local workerd/SQLite content batch: Campaign/Product/Offer plus ID reservations and idempotent mocked PR passed.",
   );

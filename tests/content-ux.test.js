@@ -1,8 +1,10 @@
 'use strict';
+// Business-rule examples use an immutable baseline; current masters are checked separately.
+const historicalRoot=require('./fixtures/historical-root.cjs')();
 const test=require('node:test'),assert=require('node:assert/strict');
 const goods=require('../assets/js/goods-core'),events=require('../assets/js/events-core'),ann=require('../assets/js/anniversary-core'),filters=require('../assets/js/catalog-filter');
 const {loadTalents}=require('../lib/talents'),{loadCatalog,publicCatalog}=require('../lib/catalog');
-const pages=require('../lib/goods-pages'),master=loadTalents(),data=publicCatalog(loadCatalog(master));
+const pages=require('../lib/goods-pages'),master=loadTalents(historicalRoot),data=publicCatalog(loadCatalog(master,historicalRoot));
 const now=new Date('2026-11-20T00:00:00Z');
 const offer=(status,extra={})=>({status,startsAt:null,endsAt:null,...extra});
 test('campaign view groups all seven Kotoha products without changing IDs, prices or offers',()=>{

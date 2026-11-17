@@ -142,3 +142,43 @@ export function withoutSubmitted(operations, submitted) {
       ),
   );
 }
+
+// Shared by the client selector and the server validator; never resolve names as IDs.
+export function operationDependencies(operations) {
+  const fields = new Set([
+      "talentIds",
+      "organizationIds",
+      "organizationId",
+      "groupIds",
+      "songId",
+      "youtubeId",
+      "videoIds",
+      "karaokeId",
+      "productId",
+      "campaignId",
+      "reference",
+    ]),
+    result = {};
+  function scan(value, field, set) {
+    if (typeof value === "string" && value.startsWith("@") && fields.has(field))
+      set.add(value.slice(1));
+    else if (Array.isArray(value)) value.forEach((v) => scan(v, field, set));
+    else if (value && typeof value === "object")
+      for (const [k, v] of Object.entries(value)) scan(v, k, set);
+  }
+  for (const op of operations) {
+    const keys = new Set();
+    scan(op.value, "", keys);
+    scan(op.parent, "", keys);
+    if (op.entity === "product" && op.parent?.entity === "campaign")
+      for (const offer of operations.filter(
+        (o) =>
+          o.entity === "offer" &&
+          o.value.productId === (op.id || "@" + op.key) &&
+          o.value.campaignId === op.parent.reference,
+      ))
+        keys.add(offer.key);
+    result[op.key] = [...keys];
+  }
+  return result;
+}

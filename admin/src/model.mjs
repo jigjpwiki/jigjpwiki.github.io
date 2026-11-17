@@ -120,9 +120,8 @@ export async function preview(snapshot, input, { actor } = {}) {
     !["save", "delete", "merge", "visibility", "collection", "wiki"].includes(
       input.action,
     ) ||
-    typeof input.reason !== "string" ||
-    !input.reason.trim() ||
-    input.reason.length > 500
+    (input.reason != null && typeof input.reason !== "string") ||
+    (input.reason?.length || 0) > 500
   )
     fail(400, "invalid_operation");
   const before = migration.migrateModels(snapshot.models),
@@ -166,7 +165,12 @@ export async function preview(snapshot, input, { actor } = {}) {
           ? models["talent-id-registry"].issued
           : kind === "group"
             ? models["catalog-id-registry"].issued
-            : models["admin-ledger"].issuedOrganizations || [];
+            : [
+                ...(models["admin-ledger"].issuedOrganizations || []),
+                ...models["catalog-id-registry"].issued.filter((id) =>
+                  id.startsWith("org-"),
+                ),
+              ];
       const issued = (
         kind === "tal" ? registry.map((r) => r.id) : registry
       ).concat(rows.map((r) => r.id));
@@ -419,7 +423,7 @@ export async function preview(snapshot, input, { actor } = {}) {
     entity: input.entity,
     subject: id,
     action: input.action,
-    reason: input.reason,
+    reason: input.reason?.trim() || null,
     changedFields: changed,
     at: new Date().toISOString(),
   });

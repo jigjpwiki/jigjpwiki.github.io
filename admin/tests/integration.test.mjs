@@ -283,15 +283,16 @@ test("new batch previews have a rollback-safe protocol and malformed cached form
   assert.equal(r.status, 200);
   const plan = await r.json();
   const cached = s.map.get("preview:" + plan.id);
-  assert.equal(cached.sourceFreeProtocol, 2);
+  assert.equal(cached.sourceFreeProtocol, 3);
+  assert.equal(cached.auditProtocol, 2);
   assert.equal(cached.contentProtocol, 1);
   // Previous production accepts only sourceFreeProtocol=1, so it cannot submit this batch on rollback.
   cached.sourceFreeProtocol = 1;
   let response = await s.call("/api/change-requests", { previewId: plan.id });
   assert.equal(response.status, 409);
   assert.equal(s.writes(), 0);
-  cached.sourceFreeProtocol = 2;
-  delete cached.contentProtocol;
+  cached.sourceFreeProtocol = 3;
+  delete cached.auditProtocol;
   response = await s.call("/api/change-requests", { previewId: plan.id });
   assert.equal(response.status, 409);
   assert.equal(s.writes(), 0);
@@ -334,4 +335,53 @@ test("workspace uses existing auth/CSRF, encrypts drafts, isolates tabs, never c
   const raw = s.map.get("workspace-v1:123");
   assert.deepEqual(Object.keys(raw), ["encrypted"]);
   assert.ok(!JSON.stringify(raw).includes(s.input.value.displayName));
+});
+
+test("new submission routes enforce existing CSRF and reject old protocol/unknown selection without writes", async () => {
+  const s = await setup();
+  assert.equal(
+    (
+      await s.call(
+        "/api/submissions/preview",
+        { protocol: 2, revision: 0, keys: ["unknown"] },
+        "wrong",
+      )
+    ).status,
+    403,
+  );
+  assert.equal(
+    (
+      await s.call("/api/submissions/preview", {
+        protocol: 1,
+        revision: 0,
+        keys: ["unknown"],
+      })
+    ).status,
+    400,
+  );
+  assert.equal(
+    (
+      await s.call("/api/submissions/preview", {
+        protocol: 2,
+        revision: 0,
+        keys: ["unknown"],
+        files: { "data/talents.json": {} },
+      })
+    ).status,
+    400,
+  );
+  assert.equal(
+    (
+      await s.call("/api/submissions", {
+        protocol: 1,
+        previewId: "a".repeat(43),
+      })
+    ).status,
+    400,
+  );
+  assert.equal(
+    (await s.call("/api/submissions/legacy/42/update", { protocol: 2 })).status,
+    404,
+  );
+  assert.equal(s.writes(), 0);
 });

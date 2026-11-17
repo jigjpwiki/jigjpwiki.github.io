@@ -607,3 +607,49 @@ nav a[aria-current="page"] {
 .workspace-table td:last-child {
   display: table-cell;
 }
+
+/* Phase 2 change management, using the Admin-local DADS-informed tokens. */
+#view[data-submission-view] p,
+#view[data-submission-view] summary,
+#view[data-submission-view] h3 {
+  overflow-wrap: anywhere;
+}
+.submission-selection {
+  display: inline-flex;
+  min-width: 44px;
+  min-height: 44px;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.submission-selection input {
+  margin: 0;
+}
+.submission-primary {
+  background: var(--admin-action);
+  color: #fff;
+  border-color: var(--admin-action);
+  font-weight: 700;
+}
+.submission-primary:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+.conflict-field {
+  min-width: 0;
+  overflow-wrap: anywhere;
+  border-top: 1px solid var(--admin-line);
+  padding-block: 16px;
+}
+.conflict-field h4 {
+  margin-block: 16px 8px;
+}
+@media (prefers-color-scheme: dark) {
+  .submission-primary {
+    color: #111;
+  }
+}
+.submission-state {
+  display: block;
+  overflow-wrap: anywhere;
+}

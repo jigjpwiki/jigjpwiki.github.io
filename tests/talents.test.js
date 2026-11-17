@@ -85,7 +85,7 @@ test('build publishes only ready pages/public data and keeps schedule implementa
   assert.deepEqual(JSON.parse(read('data/talents.json')), master);
   assert(fs.existsSync(path.join(root, 'anniversaries/index.html')));
   assert(fs.existsSync(path.join(root, 'goods/index.html')));
-  assert.equal(JSON.parse(read('data/goods.json')).products.length, 41);
+  const publicGoods=require('../lib/catalog').publicCatalog(require('../lib/catalog').loadCatalog(loadTalents()));for(const field of ['products','campaigns','offers'])assert.deepEqual(JSON.parse(read('data/goods.json'))[field],publicGoods[field]);
   assert(fs.existsSync(path.join(root,'goods/product-000001/index.html')));
   assert(JSON.parse(read('data/catalog.json')).groups.every(g => g.visibility === 'public'));
   for (const file of ['data/talent-id-registry.json', 'data/youtube_cache.json', 'data/youtube_streamers.json', 'schemas', 'pages', 'docs', 'tests', 'fixture-goods', 'fixture-profile', 'lib', 'node_modules', '.env', '.github', 'data/catalog-id-registry.json', 'talents/detail']) {

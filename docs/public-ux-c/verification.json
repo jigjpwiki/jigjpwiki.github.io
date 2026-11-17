@@ -1,0 +1,61 @@
+{
+  "baseline": "e28471cbc",
+  "before": {
+    "files": 424,
+    "html": 223,
+    "bytes": 38461855
+  },
+  "after": {
+    "files": 434,
+    "html": 229,
+    "bytes": 38593632
+  },
+  "newRoutes": [
+    "goods/campaigns/campaign-000001/index.html",
+    "goods/campaigns/campaign-000002/index.html",
+    "goods/campaigns/campaign-000003/index.html",
+    "goods/campaigns/campaign-000004/index.html",
+    "goods/campaigns/campaign-000005/index.html",
+    "goods/campaigns/campaign-000006/index.html"
+  ],
+  "removedRoutes": [],
+  "publicCounts": {
+    "talents": {
+      "organizations": 5,
+      "talents": 97
+    },
+    "catalog": {
+      "groups": 11
+    },
+    "anniversaries": {
+      "events": 91
+    },
+    "music": {
+      "songs": 54,
+      "musicVideos": 4,
+      "videos": 4
+    },
+    "karaoke": {
+      "karaokes": 17,
+      "performances": 55,
+      "videos": 17
+    },
+    "goods": {
+      "products": 41,
+      "campaigns": 6,
+      "offers": 41
+    },
+    "events": {
+      "events": 5,
+      "videos": 1,
+      "groups": 11
+    }
+  },
+  "brokenInternalLinks": 0,
+  "businessMasterChanges": false,
+  "goodsPublishedSchemaCorrection": "1 -> 2 (content unchanged)",
+  "buildLog": [
+    "Public site prepared in _site/; build_ms=532"
+  ],
+  "deltaBytes": 131777
+}

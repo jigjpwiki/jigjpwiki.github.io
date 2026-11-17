@@ -15,7 +15,7 @@ const { anniversaryPage } = require('../lib/info-pages');
 const catalog = publicCatalog(loadCatalog(fullTalents, root));
 const { talentPage: renderTalentPage } = require('../lib/talent-details');
 const optionalFeed = name => { try { const value = JSON.parse(fs.readFileSync(path.join(root, 'data', name + '.json'), 'utf8')); return Array.isArray(value) ? value : []; } catch { return []; } };
-const { goodsPage, relatedGoods, productPage } = require('../lib/goods-pages');
+const { goodsPage, relatedGoods, productPage, campaignPage } = require('../lib/goods-pages');
 const feeds = { youtube: optionalFeed('youtube'), twitch: optionalFeed('twitch') };
 const { loadEvents, projectEvents } = require('../lib/feature-data');
 const { eventList, eventPage, talentEvents } = require('../lib/feature-pages');
@@ -63,7 +63,7 @@ for (const talent of talents.talents) {
   fs.writeFileSync(path.join(output, 'talents', talent.id, 'index.html'), talentAssets(renderTalentPage(talent, talents, catalog, feeds, id => relatedGoods(id, talents, catalog), id => talentMusic(id,talents,musicView,talentKaraoke(id,talents,karaokeData,musicData))+talentEvents(id, talents, eventData))));
 }
 fs.mkdirSync(path.join(output,'events'));
-fs.writeFileSync(path.join(output,'events/index.html'), eventList(talents,eventData));
+fs.writeFileSync(path.join(output,'events/index.html'), eventList(talents,eventData,catalog.fallbackDate));
 for(const event of eventData.events){ fs.mkdirSync(path.join(output,'events',event.id)); fs.writeFileSync(path.join(output,'events',event.id,'index.html'),eventPage(event,talents,{...eventData,karaokes:karaokeData.karaokes})); }
 fs.writeFileSync(path.join(output,'data/events.json'),JSON.stringify(eventData)+'\n');
 fs.mkdirSync(path.join(output,'music/songs'),{recursive:true});
@@ -75,12 +75,14 @@ fs.writeFileSync(path.join(output,'music/karaoke/index.html'),karaokeList(talent
 for(const k of karaokeData.karaokes){fs.mkdirSync(path.join(output,'music/karaoke',k.id));fs.writeFileSync(path.join(output,'music/karaoke',k.id,'index.html'),karaokePage(k,talents,karaokeData,musicData));}
 fs.writeFileSync(path.join(output,'data/karaoke.json'),JSON.stringify(karaokeData)+'\n');
 fs.writeFileSync(path.join(output,'data/karaoke-links.json'),JSON.stringify(karaokeLinks(karaokeData))+'\n');
-const sitemap = fs.readFileSync(path.join(output, 'sitemap.xml'), 'utf8').replace('</urlset>', talents.talents.map(t => `<url><loc>https://www.jigdule.jp/talents/${t.id}/</loc></url>`).join('\n') + '\n'+[...catalog.products.map(p=>'/goods/'+p.id+'/'),'/events/',...eventData.events.map(e=>'/events/'+e.id+'/'),'/music/',...musicData.songs.map(s=>'/music/songs/'+s.id+'/'),'/music/karaoke/',...karaokeData.karaokes.map(k=>'/music/karaoke/'+k.id+'/')].map(route=>`<url><loc>https://www.jigdule.jp${route}</loc></url>`).join('\n')+'\n</urlset>');
+const sitemap = fs.readFileSync(path.join(output, 'sitemap.xml'), 'utf8').replace('</urlset>', talents.talents.map(t => `<url><loc>https://www.jigdule.jp/talents/${t.id}/</loc></url>`).join('\n') + '\n'+[...catalog.products.map(p=>'/goods/'+p.id+'/'),...catalog.campaigns.map(c=>'/goods/campaigns/'+c.id+'/'),'/events/',...eventData.events.map(e=>'/events/'+e.id+'/'),'/music/',...musicData.songs.map(s=>'/music/songs/'+s.id+'/'),'/music/karaoke/',...karaokeData.karaokes.map(k=>'/music/karaoke/'+k.id+'/')].map(route=>`<url><loc>https://www.jigdule.jp${route}</loc></url>`).join('\n')+'\n</urlset>');
 fs.writeFileSync(path.join(output, 'sitemap.xml'), sitemap);
 fs.mkdirSync(path.join(output, 'goods'));
 fs.writeFileSync(path.join(output, 'goods/index.html'), goodsPage(talents, catalog));
 for(const product of catalog.products){fs.mkdirSync(path.join(output,'goods',product.id));fs.writeFileSync(path.join(output,'goods',product.id,'index.html'),productPage(product,talents,catalog));}
-fs.writeFileSync(path.join(output, 'data/goods.json'), JSON.stringify({ schemaVersion: 1, products: catalog.products, campaigns: catalog.campaigns, offers: catalog.offers }) + '\n');
+fs.mkdirSync(path.join(output,'goods/campaigns'),{recursive:true});
+for(const c of catalog.campaigns){fs.mkdirSync(path.join(output,'goods/campaigns',c.id));fs.writeFileSync(path.join(output,'goods/campaigns',c.id,'index.html'),campaignPage(c,talents,catalog));}
+fs.writeFileSync(path.join(output, 'data/goods.json'), JSON.stringify({ schemaVersion: 2, products: catalog.products, campaigns: catalog.campaigns, offers: catalog.offers }) + '\n');
 fs.writeFileSync(path.join(output, '.nojekyll'), '');
 publishRelease(output,release);
 writeManifest(output);

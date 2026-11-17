@@ -25,7 +25,7 @@ const firstGroupCurrent=catalog.groups[0].talentIds.filter(id=>master.talents.fi
    const data=require('../lib/catalog').publicCatalog(m);
    res.setHeader('Content-Type','text/html');
    if(req.url==='/fixture-profile/')return res.end(require('../lib/talent-details').talentPage(m.talents.talents[0],m.talents,data,{},id=>require('../lib/goods-pages').relatedGoods(id,m.talents,data)));
-   return res.end(require('../lib/goods-pages').goodsPage(m.talents,data,new Date('2026-12-25T00:00:00Z')));
+   return res.end(require('../lib/goods-pages').productPage(data.products[0],m.talents,data,new Date('2026-12-25T00:00:00Z')));
   }
   const p=decodeURIComponent(new URL(req.url,'http://localhost').pathname);let file=path.resolve(root,'.'+p);
   if(file!==root&&!file.startsWith(root+path.sep))return res.writeHead(403).end();
@@ -107,13 +107,13 @@ const firstGroupCurrent=catalog.groups[0].talentIds.filter(id=>master.talents.fi
    await page.locator('#day-details').getByRole('link',{name:'李じゅぴ汰',exact:true}).click();await page.waitForURL(base+'/talents/tal-000004/');
    await page.getByRole('link',{name:'← タレント一覧へ'}).click();await page.waitForURL(base+'/talents/');
    if(process.env.BROWSER_SCREENSHOT_DIR)await page.screenshot({path:path.join(process.env.BROWSER_SCREENSHOT_DIR,`profile-${width}.png`),fullPage:true});
-   await page.goto(base+'/goods/');assert.equal(await page.locator('.goods-card').count(),41);await page.locator('.goods-card h2 a').first().click();await page.waitForURL('**/goods/product-000001/');assert.equal(await page.locator('.goods-card').count(),1);
+   await page.goto(base+'/goods/');assert.equal(await page.locator('.goods-card').count(),6);await page.locator('.goods-card h2 a').first().click();await page.waitForURL('**/goods/campaigns/campaign-000001/');assert.equal(await page.locator('[data-product-id]').count(),7);await page.locator('a[href="/goods/product-000001/"]').click();await page.waitForURL('**/goods/product-000001/');assert.equal(await page.locator('.goods-card').count(),1);
    await page.goto(base+'/fixture-goods/');
    assert.equal(await page.locator('.goods-card').count(),1);assert.match(await page.locator('.goods-card').innerText(),/販売中/);assert.match(await page.locator('.goods-card').innerText(),/販売予定/);assert.match(await page.locator('.goods-card').innerText(),/売り切れ/);
    assert.match(await page.locator('.goods-card').innerText(),/終了：日時不明/);assert.equal(await page.locator('.goods-image img.is-loaded').count(),0);
    assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth),false);
    if(process.env.BROWSER_SCREENSHOT_DIR)await page.screenshot({path:path.join(process.env.BROWSER_SCREENSHOT_DIR,`goods-fixture-${width}.png`),fullPage:true});
-   await page.goto(base+'/fixture-profile/');assert.equal(await page.getByRole('heading',{name:'関連グッズ',exact:true}).count(),1);assert.match(await page.locator('.goods-offer').first().innerText(),/販売中/);
+   await page.goto(base+'/fixture-profile/');assert.equal(await page.getByRole('heading',{name:'関連グッズ',exact:true}).count(),1);assert.match(await page.locator('.goods-status').first().innerText(),/販売中/);
    assert.deepEqual(errors,[]);await context.close();console.log(`Phase 2 browser passed: ${width}px, JST, month movement, filters, keyboard, no overflow`);
   }
   const context=await browser.newContext({javaScriptEnabled:false});await context.route('https://images.example/fixture-avatar.png',r=>r.fulfill({contentType:'image/png',body:fs.readFileSync(path.join(root,'assets/favicon-32x32.png'))}));

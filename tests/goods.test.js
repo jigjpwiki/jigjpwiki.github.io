@@ -25,8 +25,8 @@ test('time determines planned/end only, never invents sold-out or availability',
 });
 test('empty/missing optional product fields and hostile titles are safe, draft data stays private',()=>{
  const m=check(fixture());const data=publicCatalog(m);const html=goodsCards(data.products,m.talents,data);
- assert.match(html,/日時不明/);assert.match(html,/商品画像未確認/);assert.doesNotMatch(html,/<img onerror/);assert.match(html,/&lt;img/);
- assert.match(goodsPage(m.talents,{...data,products:[],offers:[]}),/販売中の商品がないことを意味しません/);
+ assert.match(html,/日時不明/);assert.match(html,/商品画像なし/);assert.doesNotMatch(html,/<img onerror/);assert.match(html,/&lt;img/);
+ assert.match(goodsPage(m.talents,{...data,products:[],offers:[],campaigns:[]}),/グッズは登録されていません/);
  const draft=fixture();draft.goods.products[0].visibility='draft';assert.throws(()=>check(draft),/draft/);
  draft.goods.offers[0].visibility='draft';assert.equal(publicCatalog(check(draft)).products.length,0);
 });

@@ -34,9 +34,10 @@
   }
   function subjectLinks(event, model) {
     const groupPeople = model.groups.filter(g => event.groupIds.includes(g.id)).flatMap(g => g.talentIds);
-    return [...new Set([...event.talentIds, ...groupPeople])].map(id => {
+    return model.groups.filter(g=>event.groupIds.includes(g.id)).map(g=>`<a class="anniversary-group" href="/talents/?group=${encodeURIComponent(g.id)}">${escape(g.name)}</a>`).join('・') + [...new Set([...event.talentIds, ...groupPeople])].map(id => {
       const talent = model.people.find(p => p.id === id);
-      return talent ? `<a href="${model.detailsReady ? `/talents/${id}/` : `/talents/#${id}`}">${escape(talent.displayName)}</a>` : '';
+      const image=talent?.image;let safe=false;try{const u=new URL(image,'https://www.jigdule.jp');safe=Boolean(image)&&u.protocol==='https:'&&!u.username&&!u.password&&!/[<>"']/.test(image);}catch{}
+      return talent ? `<a class="anniversary-person" href="${model.detailsReady ? `/talents/${id}/` : `/talents/#${id}`}">${safe?`<span class="anniversary-avatar" aria-hidden="true"><span>${escape(talent.displayName.slice(0,1))}</span><img src="${escape(image)}" alt="" loading="lazy" referrerpolicy="no-referrer"></span>`:''}${escape(talent.displayName)}</a>` : '';
     }).join('・');
   }
   function eventHtml(item, model, compact = false) {
@@ -61,15 +62,23 @@
       }
       if (i % 7 === 6) html += '</tr>';
     }
-    return html + '</tbody></table>' + (!interactive && items.length ? `<div class="month-fallback">${[...new Set(items.map(i=>i.day))].map(day=>`<section id="ann-day-${day}">${dayDetails(model,day,filters)}</section>`).join('')}</div>` : '') + (items.length ? '' : '<p class="empty-state">この月の確認済み記念日はありません。</p>');
+    return html + '</tbody></table>' + (!interactive && items.length ? `<div class="month-fallback">${[...new Set(items.map(i=>i.day))].map(day=>`<section id="ann-day-${day}">${dayDetails(model,day,filters)}</section>`).join('')}</div>` : '') + (items.length ? '' : '<p class="empty-state">この月の記念日はありません。</p>');
   }
   function dayDetails(model, day, filters = {}) {
     const items = between(filtered(model,filters),day,addDays(day,1));
-    return `<h2><time datetime="${day}">${day.replaceAll('-','/')}</time> の記念日</h2>${items.length ? `<ul>${items.map(item=>eventHtml(item,model,true)).join('')}</ul>` : '<p>この日の確認済み記念日はありません。</p>'}`;
+    return `<h2><time datetime="${day}">${day.replaceAll('-','/')}</time> の記念日</h2>${items.length ? `<ul>${items.map(item=>eventHtml(item,model,true)).join('')}</ul>` : '<p>この日の記念日はありません。</p>'}`;
   }
   function upcoming(model, today, filters = {}) {
     const items = between(filtered(model, filters), today, addDays(today, 30)); // today + 29 days, inclusive
-    return items.length ? `<ul class="event-list">${items.map(item => `<li><time datetime="${item.day}">${item.day.replaceAll('-', '/')}</time><ul>${eventHtml(item, model)}</ul></li>`).join('')}</ul>` : '<p class="empty-state">直近30日間の確認済み記念日はありません。</p>';
+    return items.length ? `<ul class="event-list">${items.map(item => `<li><time datetime="${item.day}">${item.day.replaceAll('-', '/')}</time><ul>${eventHtml(item, model)}</ul></li>`).join('')}</ul>` : '<p class="empty-state">直近30日間の記念日はありません。</p>';
   }
-  return { types, escape, jstToday, addDays, monthShift, occurrence, between, filtered, calendar, upcoming, eventHtml, subjectLinks, dayDetails };
+  function viewFromQuery(query,model,today=jstToday()) {
+    const p=new URLSearchParams(query),validDay=s=>/^\d{4}-\d{2}-\d{2}$/.test(s||'')&&Number(s.slice(0,4))>=1900&&Number(s.slice(0,4))<=2200&&!Number.isNaN(Date.parse(s))&&iso(new Date(s+'T00:00:00Z'))===s;
+    let day=validDay(p.get('date'))?p.get('date'):today;
+    const linked=model.events.find(e=>e.id===p.get('event'));
+    if(linked&&!p.has('date')&&!p.has('month'))for(let y=Math.max(Number(today.slice(0,4)),linked.date.year||0);y<=2200;y++){const item=occurrence(linked,y);if(item){day=item.day;break;}}
+    let month=day.slice(0,7);if(validDay(p.get('month')+'-01'))month=p.get('month');if(day.slice(0,7)!==month)day=month+'-01';
+    return {day,month,type:Object.hasOwn(types,p.get('type'))?p.get('type'):'',organization:(model.organizations||[]).some(o=>o.id===p.get('organization'))?p.get('organization'):''};
+  }
+  return { viewFromQuery, types, escape, jstToday, addDays, monthShift, occurrence, between, filtered, calendar, upcoming, eventHtml, subjectLinks, dayDetails };
 });

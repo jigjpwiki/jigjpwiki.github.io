@@ -1,3 +1,5 @@
+> Phase 3: [高密度編集UI・実測・導入](phase3/README.md)
+
 # Admin vNext / Phase 1: 保存ワークスペース
 
 後続の[Phase 2（選択一括PR・監査・再適用・提出管理）](phase2/README.md)を追加しました。以下はPhase 1時点の記録です。

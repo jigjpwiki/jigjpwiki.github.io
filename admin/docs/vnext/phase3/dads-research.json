@@ -1,0 +1,77 @@
+[
+  {
+    "url": "https://design.digital.go.jp/dads/foundations/typography/",
+    "status": 200,
+    "title": "タイポグラフィ（概要）｜デジタル庁デザインシステムβ版"
+  },
+  {
+    "url": "https://design.digital.go.jp/dads/foundations/color/",
+    "status": 200,
+    "title": "カラー（概要）｜デジタル庁デザインシステムβ版"
+  },
+  {
+    "url": "https://design.digital.go.jp/dads/foundations/spacing/",
+    "status": 200,
+    "title": "余白（概要）｜デジタル庁デザインシステムβ版"
+  },
+  {
+    "url": "https://design.digital.go.jp/dads/components/button/",
+    "status": 200,
+    "title": "ボタン（概要）｜デジタル庁デザインシステムβ版"
+  },
+  {
+    "url": "https://design.digital.go.jp/dads/components/input-text/",
+    "status": 200,
+    "title": "インプットテキスト（概要）｜デジタル庁デザインシステムβ版"
+  },
+  {
+    "url": "https://design.digital.go.jp/dads/components/select/",
+    "status": 200,
+    "title": "セレクトボックス（概要）｜デジタル庁デザインシステムβ版"
+  },
+  {
+    "url": "https://design.digital.go.jp/dads/components/combobox/",
+    "status": 200,
+    "title": "コンボボックス（概要）｜デジタル庁デザインシステムβ版"
+  },
+  {
+    "url": "https://design.digital.go.jp/dads/components/checkbox/",
+    "status": 200,
+    "title": "チェックボックス（概要）｜デジタル庁デザインシステムβ版"
+  },
+  {
+    "url": "https://design.digital.go.jp/dads/components/tab/",
+    "status": 200,
+    "title": "タブ（概要）｜デジタル庁デザインシステムβ版"
+  },
+  {
+    "url": "https://design.digital.go.jp/dads/components/menu-list/",
+    "status": 200,
+    "title": "メニューリスト（概要）｜デジタル庁デザインシステムβ版"
+  },
+  {
+    "url": "https://design.digital.go.jp/dads/components/notification-banner/",
+    "status": 200,
+    "title": "ノティフィケーションバナー（概要）｜デジタル庁デザインシステムβ版"
+  },
+  {
+    "url": "https://design.digital.go.jp/dads/components/table/",
+    "status": 200,
+    "title": "テーブル／データテーブル（概要）｜デジタル庁デザインシステムβ版"
+  },
+  {
+    "url": "https://design.digital.go.jp/dads/webaccessibility/",
+    "status": 200,
+    "title": "ウェブアクセシビリティ（方針）｜デジタル庁デザインシステムβ版"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/digital-go-jp/design-system-example-components-html/main/LICENSE",
+    "status": 200,
+    "title": "MIT License"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/digital-go-jp/design-system-example-components-react/main/LICENSE",
+    "status": 200,
+    "title": "MIT License"
+  }
+]

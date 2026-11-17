@@ -1,3 +1,4 @@
+import { phase3Browser } from './phase3.browser.mjs';
 import { submissionBrowser } from "./submission.browser.mjs";
 import { workspaceBrowser } from "./workspace.browser.mjs";
 import fs from "node:fs";
@@ -491,7 +492,7 @@ const cases = [
       await p
         .getByRole("searchbox", { name: "タイトルで検索" })
         .fill(product.title);
-      await p.locator(".content-list-row button").first().click();
+      await p.locator(".list-region .data-table tbody .record-open").first().click();
       await tab(p, "日時・詳細");
       await set(p, "販売条件・補足", "fixture 過去の履歴を保持した補足");
       await stage(p);
@@ -499,6 +500,9 @@ const cases = [
   ],
 ];
 try {
+  if(process.env.ADMIN_PHASE3_ONLY){
+    await phase3Browser({browser,base,models,reset:()=>{data.clear();mainSha='main-sha';mainModels=structuredClone(models);createdBranches.clear();commitSerial=0;created=false;},shotDir:process.env.ADMIN_PHASE3_SCREENSHOTS,before:!!process.env.ADMIN_PUBLIC_ROOT});
+  } else {
   for (const width of (process.env.ADMIN_CONTENT_WIDTHS || "320,390,768,1440")
     .split(",")
     .map(Number))
@@ -671,6 +675,8 @@ try {
   console.log(
     "Content Admin CSRF/main change protection passed; GitHub and production were mocked.",
   );
+  if(!process.env.ADMIN_PUBLIC_ROOT)await phase3Browser({browser,base,models,reset:()=>{data.clear();mainSha='main-sha';mainModels=structuredClone(models);createdBranches.clear();commitSerial=0;created=false;},shotDir:process.env.ADMIN_PHASE3_SCREENSHOTS});
+  }
 } finally {
   await browser.close();
   await new Promise((r) => server.close(r));

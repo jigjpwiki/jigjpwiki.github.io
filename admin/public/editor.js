@@ -67,7 +67,11 @@ export function createEditor({
       "h2",
       `${record ? "編集" : "新規登録"}：${record?.displayName || record?.name || names[entity]}`,
     ),
-    status = el("p", "変更はありません", "draft-status");
+    status = el(
+      "p",
+      draft.dirty ? "下書きの変更があります" : "変更はありません",
+      "draft-status",
+    );
   status.setAttribute("role", "status");
   const body = el("div", undefined, "editor-body"),
     tabs = el("div", undefined, "editor-tabs");
@@ -77,7 +81,7 @@ export function createEditor({
     confirmed = false;
     onDirty?.(draft.dirty);
     status.textContent = draft.dirty
-      ? "未保存の変更があります"
+      ? "下書きの変更があります"
       : "変更はありません";
     const check = container.querySelector("#change-confirmed");
     if (check) check.checked = false;

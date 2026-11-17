@@ -1,1 +1,49 @@
-<!doctype html><html lang="ja"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>jigwiki Admin</title><link rel="stylesheet" href="/app.css"><header><h1>jigwiki Admin</h1><nav aria-label="管理ナビゲーション"><a href="#dashboard">ダッシュボード</a><a href="#masters">VTuber</a><a href="#anniversaries">記念日</a><a href="#music">音楽</a><a href="#events">イベント</a><a href="#goods">グッズ</a><a href="#workspace">変更内容</a><a href="#submitted">提出済みPR</a><a href="#settings">設定</a></nav></header><main><noscript>管理画面の編集にはJavaScriptが必要です。</noscript><p id="status" role="status" aria-live="polite"></p><section id="login"><h2>管理者ログイン</h2><p>許可されたGitHub管理者のみ利用できます。編集はPR経由で反映します。</p><a class="button" href="/auth/login">GitHubでログイン</a></section><section id="app" hidden><p id="identity"></p><button id="logout">ログアウト</button><div id="view"></div></section></main><script src="/goods-core.js" defer></script><script type="module" src="/app.js"></script></html>
+<!doctype html>
+<html lang="ja">
+  <meta charset="utf-8" /><meta
+    name="viewport"
+    content="width=device-width,initial-scale=1"
+  /><title>jigwiki Admin</title
+  ><link rel="stylesheet" href="/app.css" /><link
+    rel="stylesheet"
+    href="/workbench.css"
+  />
+  <body>
+    <a href="#main-content" class="skip-link">本文へ移動</a>
+    <header class="app-sidebar">
+      <h1>jigwiki Admin</h1>
+      <p class="sidebar-caption">編集ワークスペース</p>
+      <nav aria-label="管理ナビゲーション">
+        <a href="#dashboard">ダッシュボード</a><a href="#masters">VTuber</a
+        ><a href="#organizations">事務所・グループ</a
+        ><a href="#anniversaries">記念日</a><a href="#music">音楽</a
+        ><a href="#events">イベント</a><a href="#goods">グッズ</a
+        ><a href="#workspace">変更内容</a><a href="#submitted">提出済みPR</a
+        ><a href="#settings">設定</a>
+      </nav>
+    </header>
+    <main id="main-content" tabindex="-1">
+      <div class="app-page-header">
+        <span>管理 / <strong id="page-title">ダッシュボード</strong></span>
+        <p id="status" role="status" aria-live="polite"></p>
+      </div>
+      <noscript>管理画面の編集にはJavaScriptが必要です。</noscript>
+      <section id="login">
+        <h2>管理者ログイン</h2>
+        <p>
+          許可されたGitHub管理者のみ利用できます。編集はPR経由で反映します。
+        </p>
+        <a class="button" href="/auth/login">GitHubでログイン</a>
+      </section>
+      <section id="app" hidden>
+        <div class="identity-bar">
+          <p id="identity"></p>
+          <button id="logout">ログアウト</button>
+        </div>
+        <div id="view"></div>
+      </section>
+    </main>
+    <script src="/goods-core.js" defer></script>
+    <script type="module" src="/app.js"></script>
+  </body>
+</html>

@@ -37,6 +37,18 @@
         "activityStatus"
       ],
       "at": "2026-11-17T04:58:23.193Z"
+    },
+    {
+      "id": "Svo0iZbvxieSJ_wn-dYwTXN_ipkGi_yFL1g7ef7mdIc",
+      "actor": "160498891",
+      "entity": "talent",
+      "subject": "tal-000006",
+      "action": "save",
+      "reason": "活動状態を更新",
+      "changedFields": [
+        "activityStatus"
+      ],
+      "at": "2026-11-17T05:03:56.064Z"
     }
   ],
   "wikiExclusions": [],

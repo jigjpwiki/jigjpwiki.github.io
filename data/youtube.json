@@ -1255,7 +1255,7 @@
     "date": "2026-11-17T03:33:10.000Z",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/1o1dS6cyOBY/mqdefault.jpg?v=6afbcaa6",
+    "thumbnail": "https://i.ytimg.com/vi/1o1dS6cyOBY/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/eW_Hug0M6zFk9QSbAmOUWLMSfzBlCHmes-8yAksvfUNzyLgY6TSsE_eW8ncfE4bHYZXKoTWxmQ=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=1o1dS6cyOBY"
   },
@@ -1519,7 +1519,7 @@
     "date": "2026-11-17T13:36:06.000Z",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/AwuQ_n5jOZ0/mqdefault.jpg?v=6afc553c",
+    "thumbnail": "https://i.ytimg.com/vi/AwuQ_n5jOZ0/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/JRXqD91MsPhrWJ3aAvhpK919pr-WhzNdFUbaFPe-t6CSCnNPLrd1Z74jKYTCiJwp62BaAvrpUQ=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=AwuQ_n5jOZ0"
   },
@@ -1546,6 +1546,18 @@
     "thumbnail": "https://i.ytimg.com/vi/G4MjplptQxg/mqdefault.jpg?v=6afc6b9c",
     "channelIcon": "https://yt3.ggpht.com/62ws-Q3hPuNjc64T5sz41MNbFqxlI7Gefwnsrysdn2FNYqlxH5E5VifRCMtsFIUyZe5lsHJmxA=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=G4MjplptQxg"
+  },
+  {
+    "videoId": "TnZkh4iAvWg",
+    "name": "フローレ・ブランカ",
+    "youtubeid": "UCNb9zRVc1coFKxJAn9lVtsw",
+    "title": "【縦型雑談配信】バレンタインイベが始まった！！！【フローレ・ブランカ/パレデミア学園】",
+    "date": "2026-11-17T15:59:42.000Z",
+    "status": "archive",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/TnZkh4iAvWg/mqdefault.jpg",
+    "channelIcon": "https://yt3.ggpht.com/xqdNSKZCNQ6ekbqgjixeOR0aTymLfmP_ILAFQ4sBF7ln-ZWxQYkVjGBun2pF1PwVC6nmwi2KFxE=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=TnZkh4iAvWg"
   },
   {
     "videoId": "zy0bf8VPjgA",

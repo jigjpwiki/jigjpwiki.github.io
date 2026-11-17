@@ -1,0 +1,22 @@
+{
+  "baseline": "9157888c4",
+  "publicVersionUnchanged": "2.13.0",
+  "businessDataAndSchemasChanged": false,
+  "githubTransportAndSecurityModulesChanged": false,
+  "rootTests": 195,
+  "schedulerTests": 7,
+  "rootBrowserSuites": 7,
+  "adminTests": 39,
+  "adminLegacyBrowserWidths": [
+    320,
+    390,
+    768,
+    1440
+  ],
+  "adminContentBrowserCases": 10,
+  "adminContentBrowserFlows": 40,
+  "screenshots": 54,
+  "workerDryRun": "Total Upload: 739.78 KiB / gzip: 76.78 KiB",
+  "deployed": false,
+  "schemaMigrationRequired": false
+}

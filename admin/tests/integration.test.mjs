@@ -2,6 +2,7 @@ import { test } from "node:test";
 import assert from "node:assert/strict";
 import fs from "node:fs";
 import path from "node:path";
+import { campaign, input as contentInput } from "./content-fixtures.mjs";
 import { Admin } from "../src/worker.mjs";
 import { GitHub, readFiles, filePath } from "../src/github.mjs";
 import { random, seal, hash } from "../src/security.mjs";
@@ -272,5 +273,26 @@ test("partially migrated masters and old clients cannot submit inconsistent PRs"
   const plan = await response.json();
   const submit = await s.call("/api/change-requests", { previewId: plan.id });
   assert.equal(submit.status, 409);
+  assert.equal(s.writes(), 0);
+});
+
+test("new batch previews have a rollback-safe protocol and malformed cached formats never write", async () => {
+  const s = await setup(),
+    request = await contentInput({ sha: "main-sha" }, campaign());
+  const r = await s.call("/api/change-requests/preview", request);
+  assert.equal(r.status, 200);
+  const plan = await r.json();
+  const cached = s.map.get("preview:" + plan.id);
+  assert.equal(cached.sourceFreeProtocol, 2);
+  assert.equal(cached.contentProtocol, 1);
+  // Previous production accepts only sourceFreeProtocol=1, so it cannot submit this batch on rollback.
+  cached.sourceFreeProtocol = 1;
+  let response = await s.call("/api/change-requests", { previewId: plan.id });
+  assert.equal(response.status, 409);
+  assert.equal(s.writes(), 0);
+  cached.sourceFreeProtocol = 2;
+  delete cached.contentProtocol;
+  response = await s.call("/api/change-requests", { previewId: plan.id });
+  assert.equal(response.status, 409);
   assert.equal(s.writes(), 0);
 });

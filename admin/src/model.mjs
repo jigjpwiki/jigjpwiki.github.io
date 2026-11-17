@@ -1,6 +1,9 @@
 import talentsSchema from "../../schemas/talents.schema.json" with { type: "json" };
 import catalogSchema from "../../schemas/catalog.schema.json" with { type: "json" };
+import { contentForms } from "./content-definitions.mjs";
+import { contentPreview } from "./content-plan.mjs";
 export const forms = {
+  content: contentForms,
   talent: talentsSchema.$defs.talent,
   organization: talentsSchema.$defs.organization,
   group: catalogSchema.properties.groups.items,
@@ -94,6 +97,8 @@ function accountTargets(models, talent) {
   };
 }
 export async function preview(snapshot, input, { actor } = {}) {
+  if (input?.entity === "content")
+    return contentPreview(snapshot, input, { actor, references });
   if (
     !input ||
     Object.keys(input).some(

@@ -1,3 +1,5 @@
+import { mountContent } from "./content-manager.js";
+import { labels as contentLabels } from "./content-fields.js";
 import { createEditor } from "./editor.js";
 import { fieldChanges, fieldLabel } from "./draft.js";
 import { portrait } from "./controls.js";
@@ -29,6 +31,14 @@ export async function api(path, method = "GET", value) {
           "公開済みの参照が残っています。履歴を維持する対応方針を先にレビューしてください。",
         official_profile_identity_already_registered:
           "同じ公式プロフィールのIDが登録済みです。重複と改名を確認してください。",
+        duplicate_offer:
+          "同じ商品の販売情報が重複しています。既存Offerの編集か、異なる販売期間かを確認してください。",
+        parent_relationship_mismatch:
+          "商品・販売情報・歌唱記録の関連先が編集中の親レコードと一致しません。",
+        record_exists_select_existing:
+          "動画は登録済みです。既存の動画情報を選択して再利用してください。",
+        slot_history_must_be_retained:
+          "登録済みの出演枠は削除できません。過去の履歴を保持してください。",
         field_confirmation_required: "変更内容をもう一度確認してください。",
         confirmation_name_and_id_required:
           "対象IDと表示名を正確に入力してください。",
@@ -246,7 +256,7 @@ function accountReferences(record) {
     visit(snapshot.models[f], "", f);
   return out;
 }
-async function loadMasters() {
+async function loadMasters(render = listView) {
   referenceIndex = undefined;
   showStatus("最新mainを読み込み中…");
   [snapshot, schemas] = await Promise.all([
@@ -254,7 +264,7 @@ async function loadMasters() {
     api("/api/forms"),
   ]);
   showStatus("最新main: " + snapshot.sha.slice(0, 10));
-  listView();
+  render();
 }
 function listView() {
   const view = $("#view");
@@ -692,6 +702,7 @@ function manage(record) {
     }),
   );
 }
+let previewNames = new Map();
 function displayValue(value, path) {
   if (value === null || value === undefined || value === "")
     return "未登録・不明";
@@ -708,7 +719,10 @@ function displayValue(value, path) {
         ? value.url
         : Object.entries(value)
             .map(
-              ([k, v]) => fieldLabel("/" + k) + "：" + displayValue(v, "/" + k),
+              ([k, v]) =>
+                (contentLabels[k] || fieldLabel("/" + k)) +
+                "：" +
+                displayValue(v, "/" + k),
             )
             .join(" / "))
     );
@@ -722,12 +736,28 @@ function displayValue(value, path) {
       snapshot.models.talents.talents.find((t) => t.id === value)
         ?.displayName || "未確認のメンバー"
     );
+  if (typeof value === "string" && !path.endsWith("/id")) {
+    const item = [
+      ...snapshot.models.talents.talents,
+      ...snapshot.models.talents.organizations,
+      ...snapshot.models.catalog.groups,
+      ...snapshot.models.music.songs,
+      ...snapshot.models.media.videos,
+      ...snapshot.models.goods.campaigns,
+      ...snapshot.models.goods.products,
+    ].find((r) => (r.id || r.youtubeId) === value);
+    if (item) return item.displayName || item.name || item.title || value;
+    if (previewNames.has(value)) return previewNames.get(value);
+  }
   return enumLabels[value] || String(value);
 }
 async function showPreview(input) {
   showStatus("Schema・全参照を検証中…");
   const plan = await api("/api/change-requests/preview", "POST", input),
     view = $("#view");
+  previewNames = new Map(
+    (plan.impact.records || []).map((r) => [r.id, r.label]),
+  );
   const group = input.entity === "group",
     collection = group
       ? "groups"
@@ -756,28 +786,55 @@ async function showPreview(input) {
   const comparison = node("section");
   comparison.className = "change-comparison";
   comparison.append(node("h3", "項目ごとの変更"));
-  for (const c of fieldChanges(before, after)) {
-    const row = node("article");
-    row.className = "change-row";
-    row.append(node("h4", c.kind + "：" + fieldLabel(c.path)));
-    const cells = node("div");
-    cells.className = "comparison-grid";
-    for (const [label, value] of [
-      ["変更前", c.before],
-      ["変更後", c.after],
-    ]) {
-      const cell = node("div");
-      cell.append(node("strong", label));
-      if (c.path === "/profileImage")
-        cell.append(
-          portrait(value?.url, label),
-          node("p", value?.url || "画像未登録"),
-        );
-      else cell.append(node("p", displayValue(value, c.path)));
-      cells.append(cell);
+  const comparisons =
+    input.entity === "content"
+      ? (plan.impact.records || []).map((record) => {
+          const type = schemas.content.types[record.entity],
+            d = plan.diff.find((d) => d.file === type.file),
+            key = type.field || "id";
+          return {
+            label: record.label,
+            before: d?.before?.[type.list]?.find((r) => r[key] === record.id),
+            after: d?.after?.[type.list]?.find((r) => r[key] === record.id),
+          };
+        })
+      : [{ before, after }];
+  for (const record of comparisons) {
+    if (record.label) comparison.append(node("h3", record.label));
+    for (const c of fieldChanges(record.before, record.after)) {
+      const row = node("article");
+      row.className = "change-row";
+      row.append(
+        node(
+          "h4",
+          c.kind +
+            "：" +
+            c.path
+              .split("/")
+              .filter(Boolean)
+              .map((k) => contentLabels[k] || fieldLabel("/" + k))
+              .join(" / "),
+        ),
+      );
+      const cells = node("div");
+      cells.className = "comparison-grid";
+      for (const [label, value] of [
+        ["変更前", c.before],
+        ["変更後", c.after],
+      ]) {
+        const cell = node("div");
+        cell.append(node("strong", label));
+        if (c.path === "/profileImage")
+          cell.append(
+            portrait(value?.url, label),
+            node("p", value?.url || "画像未登録"),
+          );
+        else cell.append(node("p", displayValue(value, c.path)));
+        cells.append(cell);
+      }
+      row.append(cells);
+      comparison.append(row);
     }
-    row.append(cells);
-    comparison.append(row);
   }
   if (!comparison.querySelector("article"))
     comparison.append(
@@ -808,6 +865,13 @@ async function showPreview(input) {
       ),
     );
   view.append(raw);
+  const returnList =
+    input.entity === "content"
+      ? () => {
+          activeEditor = null;
+          screen();
+        }
+      : listView;
   let submitted = false;
   const confirm = node("input");
   confirm.type = "checkbox";
@@ -833,7 +897,7 @@ async function showPreview(input) {
         node("h2", "PRを作成しました"),
         link("GitHubでPR #" + result.number + "を確認", result.url),
         node("p", "差分とCIを人間が確認してマージしてください。"),
-        button("一覧へ戻る", listView),
+        button("一覧へ戻る", returnList),
       );
       showStatus("PR作成成功");
     } catch (e) {
@@ -851,7 +915,7 @@ async function showPreview(input) {
     submit,
     button("編集に戻る（再プレビューが必要）", () => {
       if (activeEditor) activeEditor.show();
-      else listView();
+      else returnList();
     }),
   );
   showStatus(
@@ -870,10 +934,53 @@ screen = function () {
       a.setAttribute("aria-current", "page");
     else a.removeAttribute("aria-current");
   }
-  if (location.hash === "#masters") {
+  if (
+    ["#anniversaries", "#music", "#events", "#goods"].includes(location.hash)
+  ) {
+    const open = () => {
+      activeEditor = mountContent({
+        container: $("#view"),
+        category: location.hash.slice(1),
+        models: snapshot.models,
+        forms: schemas.content,
+        onReload: () => loadMasters(open),
+        onPreview: async (value, reason) =>
+          showPreview({
+            sha: snapshot.sha,
+            entity: "content",
+            action: "batch",
+            value,
+            reason,
+            confirmation: {
+              status: "confirmed",
+              valueHash: await digest(value),
+            },
+          }),
+      });
+    };
+    if (snapshot) open();
+    else loadMasters(open).catch((e) => showStatus(e.message));
+  } else if (location.hash === "#masters") {
     if (snapshot) listView();
     else loadMasters().catch((e) => showStatus(e.message));
-  } else oldScreen();
+  } else {
+    oldScreen();
+    if (!location.hash || location.hash === "#dashboard") {
+      const cards = node("div");
+      cards.className = "content-dashboard";
+      for (const [route, name] of [
+        ["masters", "VTuber"],
+        ["anniversaries", "記念日"],
+        ["music", "音楽"],
+        ["events", "イベント"],
+        ["goods", "グッズ"],
+      ])
+        cards.append(
+          button(name + "管理", () => (location.hash = "#" + route)),
+        );
+      $("#view").append(cards);
+    }
+  }
 };
 if (me && location.hash === "#masters")
   loadMasters().catch((e) => showStatus(e.message));

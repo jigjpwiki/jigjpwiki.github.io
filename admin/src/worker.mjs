@@ -259,7 +259,7 @@ export class Admin {
           impact: cached.impact,
           files: Object.keys(cached.files),
         });
-      plan.sourceFreeProtocol = 1;
+      plan.sourceFreeProtocol = plan.contentProtocol === 1 ? 2 : 1;
       plan.sha = snapshot.sha;
       plan.tree = snapshot.tree;
       plan.shas = snapshot.shas;
@@ -293,7 +293,10 @@ export class Admin {
           const plan = (await this.store.get("preview:" + key)) || record?.plan;
           if (!plan || plan.actor !== session.id) fail(409, "preview_expired");
           if (
-            plan.sourceFreeProtocol !== 1 ||
+            !(
+              (plan.sourceFreeProtocol === 1 && !plan.contentProtocol) ||
+              (plan.sourceFreeProtocol === 2 && plan.contentProtocol === 1)
+            ) ||
             plan.migrationPending ||
             (record && !record.plan?.sourceFreeProtocol)
           )
@@ -308,6 +311,7 @@ export class Admin {
               actor: session.id,
               plan: {
                 sourceFreeProtocol: plan.sourceFreeProtocol,
+                contentProtocol: plan.contentProtocol,
                 sha: plan.sha,
                 tree: plan.tree,
                 files: plan.files,

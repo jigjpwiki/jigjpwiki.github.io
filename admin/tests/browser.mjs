@@ -207,7 +207,7 @@ try {
       throw e;
     }
     await p
-      .getByRole("link", { name: "VTuber・事務所・グループ", exact: true })
+      .getByRole("link", { name: "VTuber", exact: true })
       .focus();
     await p.keyboard.press("Enter");
     // Edit Lee through the actual form: optional URL round-trip must preserve Wiki refs.

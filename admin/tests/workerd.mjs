@@ -3,6 +3,7 @@ import assert from "node:assert/strict";
 import path from "node:path";
 import fs from "node:fs";
 import { files, readFiles, filePath } from "../src/github.mjs";
+import { campaign, input as contentInput } from "./content-fixtures.mjs";
 import { hash } from "../src/security.mjs";
 const root = path.resolve(".."),
   models = Object.fromEntries(
@@ -124,6 +125,38 @@ try {
   );
   assert.equal(again.status, 200);
   assert.equal(writes, 1);
+  const content = await contentInput({ sha: "main-sha" }, campaign());
+  const cp = await mf.dispatchFetch(
+    "https://jigwiki-admin.local/api/change-requests/preview",
+    { method: "POST", headers, body: JSON.stringify(content) },
+  );
+  const contentPlan = await cp.json();
+  assert.equal(cp.status, 200, JSON.stringify(contentPlan));
+  assert(contentPlan.files.includes("goods"));
+  assert(contentPlan.files.includes("catalog-id-registry"));
+  assert.equal(contentPlan.impact.records.length, 3);
+  const committed = await mf.dispatchFetch(
+    "https://jigwiki-admin.local/api/change-requests",
+    {
+      method: "POST",
+      headers,
+      body: JSON.stringify({ previewId: contentPlan.id }),
+    },
+  );
+  assert.equal(committed.status, 200, await committed.clone().text());
+  const recovered = await mf.dispatchFetch(
+    "https://jigwiki-admin.local/api/change-requests",
+    {
+      method: "POST",
+      headers,
+      body: JSON.stringify({ previewId: contentPlan.id }),
+    },
+  );
+  assert.equal(recovered.status, 200);
+  assert.equal(writes, 2);
+  console.log(
+    "Local workerd/SQLite content batch: Campaign/Product/Offer plus ID reservations and idempotent mocked PR passed.",
+  );
   console.log(
     "Local workerd/SQLite DO: OAuth, statically compiled full-master validation, preview, mocked PR and idempotent retry passed; no real external requests.",
   );

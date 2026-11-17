@@ -107,7 +107,7 @@ const { chromium } = require("playwright"),
     for (const route of routes)
       assert.equal((await p.request.get(base + route)).status(), 200, route);
     for (const t of require("../data/talents.json").talents.filter(
-      (t) => t.visibility !== "public",
+      (t) => (t.visibility ?? "public") !== "public",
     )) {
       assert(!people.some((p) => p.id === t.id));
       assert.equal(

@@ -220,7 +220,7 @@ export function mountContent({
     registry = new Map();
     drawEditor();
   }
-  function returnToParent() {
+  function returnToParent(applyChild = true) {
     if (!stack.length) {
       current = null;
       drawList();
@@ -228,7 +228,8 @@ export function mountContent({
     }
     const child = current,
       parent = stack.pop();
-    if (parent.assign) parent.editor.value[parent.assign] = ref(child);
+    if (parent.assign && applyChild)
+      parent.editor.value[parent.assign] = ref(child);
     current = parent.editor;
     tab = parent.tab;
     drawEditor();
@@ -520,7 +521,7 @@ export function mountContent({
           same(op.value, op.original) ||
           confirm("編集中の変更を破棄しますか？")
         )
-          returnToParent();
+          returnToParent(false);
       }),
       relatedPanel(op),
       action("編集内容を保留", () => {

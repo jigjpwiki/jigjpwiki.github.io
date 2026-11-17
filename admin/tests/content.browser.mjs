@@ -324,6 +324,13 @@ const cases = [
       await newRecord(p, "歌動画");
       await set(p, "曲名（動画の表記）（必須）", "fixture cover");
       await select(p, "YouTube動画", existingVideo.youtubeId);
+      // Cancel a nested new video without replacing the parent's existing link with a missing temporary ID.
+      await tab(p, "動画情報を追加");
+      await tab(p, "編集を取り消す");
+      assert.equal(
+        await p.getByLabel("YouTube動画", { exact: true }).inputValue(),
+        existingVideo.youtubeId,
+      );
       await select(p, "対応する楽曲", "song-000001");
       await cast(p, [singer]);
       await publicState(p);

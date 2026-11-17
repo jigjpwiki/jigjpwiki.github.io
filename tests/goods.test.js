@@ -31,12 +31,12 @@ test('empty/missing optional product fields and hostile titles are safe, draft d
  draft.goods.offers[0].visibility='draft';assert.equal(publicCatalog(check(draft)).products.length,0);
 });
 test('related goods use talent/group IDs without modifying talent activity',()=>{
- const m=check(fixture());const data=publicCatalog(m);
+ const m=check(fixture());const before=structuredClone(m.talents);const data=publicCatalog(m);
  assert.equal(relatedProducts('tal-000001',m.talents,data).length,1);assert.equal(relatedProducts('tal-000004',m.talents,data).length,0);
  assert.match(relatedGoods('tal-000001',m.talents,data),/関連グッズ/);
  assert.equal(relatedGoods('tal-000004',m.talents,data),'');
  data.products[0].talentIds=[];data.products[0].groupIds=['group-000001'];
- assert.equal(relatedProducts('tal-000004',m.talents,data).length,1);assert.equal(m.talents.talents[3].activityStatus.value,'unknown');
+ assert.equal(relatedProducts('tal-000004',m.talents,data).length,1);assert.deepEqual(m.talents,before);
 });
 test('inline public JSON escapes script terminators and round trips without changing content',()=>{
  const { inlineJson }=require('../lib/info-pages');const value={note:'</script><img src=x onerror=alert(1)>'};const encoded=inlineJson(value);

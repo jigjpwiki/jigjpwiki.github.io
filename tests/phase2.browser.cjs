@@ -9,8 +9,9 @@ const firstGroupCurrent=catalog.groups[0].talentIds.filter(id=>master.talents.fi
 (async()=>{
  const server=http.createServer((req,res)=>{
   // Optional-image behavior is a deterministic fixture, not an assumption about live talents.
-  if(['/fixture-profile-image/','/fixture-profile-no-image/'].includes(req.url)){
+  if(['/fixture-profile-image/','/fixture-profile-no-image/','/fixture-profile-former/'].includes(req.url)){
    const fixture=structuredClone(master),talent=fixture.talents.find(t=>t.id==='tal-000004');
+   if(req.url==='/fixture-profile-former/') Object.assign(talent,structuredClone(require('./fixtures/foundation-talents.json')[3]));
    talent.profileImage=req.url==='/fixture-profile-image/'?{url:'https://images.example/fixture-avatar.png'}:null;
    require('../lib/talents').validateTalents(fixture,{registry:require('../data/talent-id-registry.json')});
    const data=require('../lib/catalog').publicCatalog(require('../lib/catalog').loadCatalog(fixture));
@@ -92,7 +93,13 @@ const firstGroupCurrent=catalog.groups[0].talentIds.filter(id=>master.talents.fi
     else {assert.doesNotMatch(await hero.innerText(),/画像未確認/);assert.equal(await hero.locator('.talent-avatar>span').innerText(),'李');}
     assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth),false);
    }
-   await page.goto(base+'/talents/tal-000004/');assert.match(await page.locator('main').innerText(),/旧所属：ProForma Nova/);assert.doesNotMatch(await page.locator('main').innerText(),/引退|活動終了/);
+   await page.goto(base+'/talents/tal-000004/');
+   const recordedActivity=master.talents.find(t=>t.id==='tal-000004').activityStatus.value;
+   const activityLabel={active:'活動中',hiatus:'活動休止',retired:'引退',ended:'活動終了'}[recordedActivity];
+   const biography=await page.locator('.profile-biography').textContent();
+   if(activityLabel)assert(biography.includes(activityLabel));
+   else assert.doesNotMatch(biography,/活動中|活動休止|引退|活動終了/);
+   await page.goto(base+'/fixture-profile-former/');assert.match(await page.locator('main').innerText(),/旧所属：ProForma Nova/);assert.doesNotMatch(await page.locator('main').innerText(),/引退|活動終了/);
    assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth),false);
    await page.getByRole('link',{name:/記念日カレンダー/}).first().click();
    await page.waitForFunction(()=>!document.getElementById('day-details').hidden);

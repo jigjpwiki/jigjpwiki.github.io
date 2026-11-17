@@ -37,6 +37,18 @@
         "activityStatus"
       ],
       "at": "2026-11-17T04:58:23.193Z"
+    },
+    {
+      "id": "p_h-Pto7oHfBwUFHO8JeXOmQfYkaaNnPWgQtMZYbxa8",
+      "actor": "160498891",
+      "entity": "content",
+      "subject": "evt-000002",
+      "action": "batch",
+      "reason": "終了により非公開",
+      "changedFields": [
+        "event/evt-000002/visibility"
+      ],
+      "at": "2026-11-17T07:59:05.097Z"
     }
   ],
   "wikiExclusions": [],

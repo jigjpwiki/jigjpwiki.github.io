@@ -1,3 +1,4 @@
+import { renderOutcome } from "./review-outcome.js";
 import { el, action, safeLink } from "./controls.js";
 import { operationDependencies } from "./workspace.js";
 import { fieldChanges, fieldLabel } from "./draft.js";
@@ -439,17 +440,18 @@ export function mountSubmissions({
             );
             await workspace.load();
             onRefresh?.();
-            container.replaceChildren(
-              el("h2", updateId ? "PRを更新しました" : "PRを作成しました"),
-              safeLink("GitHubでPR #" + result.number + "を確認", result.url),
-              action("提出済みPRを確認", () => {
+            renderOutcome(container, {
+              number: result.number,
+              url: result.url,
+              updated: !!updateId,
+              onSubmitted: () => {
                 location.hash = "#submitted";
-              }),
-              action("一覧へ戻る", () => {
+              },
+              onBack: () => {
                 if (onDone) onDone();
                 else draw();
-              }),
-            );
+              },
+            });
           } finally {
             submit.disabled = false;
           }

@@ -237,10 +237,12 @@ export function columnsFor(entity, { models, forms, rowsFor = () => [] } = {}) {
       {
         ...column("date", "日付"),
         get: (r) =>
-          (r.date?.year ? String(r.date.year).padStart(4, "0") + "-" : "") +
-          String(r.date?.month ?? "").padStart(2, "0") +
-          "-" +
-          String(r.date?.day ?? "").padStart(2, "0"),
+          !r.date?.month || !r.date?.day
+            ? "日付未登録"
+            : (r.date?.year ? String(r.date.year).padStart(4, "0") + "-" : "") +
+              String(r.date?.month ?? "").padStart(2, "0") +
+              "-" +
+              String(r.date?.day ?? "").padStart(2, "0"),
         set: (r, v) => (r.date = v),
         parse: anniversaryDate,
         sort: (r) =>

@@ -1,0 +1,197 @@
+{
+  "environment": {
+    "node": "v24.22.1",
+    "chromium": "156.0.8078.79",
+    "viewport": "1440x1000",
+    "backend": "Node mock Worker + encrypted store; not production Cloudflare"
+  },
+  "performance": [
+    {
+      "entity": "talent",
+      "count": 1000,
+      "initialMs": 43,
+      "searchMs": 18.399999976158142,
+      "filterMs": 15.400000005960464,
+      "sortMs": 16.099999994039536,
+      "pageMs": 11.5,
+      "editMs": 70.5,
+      "domRows": 50,
+      "heapMiB": 6.17816162109375
+    },
+    {
+      "entity": "anniversary",
+      "count": 5000,
+      "initialMs": 12.900000005960464,
+      "searchMs": 34.69999998807907,
+      "filterMs": 38.5,
+      "sortMs": 22.5,
+      "pageMs": 26.900000005960464,
+      "editMs": 78.09999999403954,
+      "domRows": 50,
+      "heapMiB": 7.592754364013672
+    },
+    {
+      "entity": "event",
+      "count": 2000,
+      "initialMs": 41,
+      "searchMs": 31.30000001192093,
+      "filterMs": 15.299999982118607,
+      "sortMs": 15,
+      "pageMs": 41.20000001788139,
+      "editMs": 28,
+      "domRows": 50,
+      "heapMiB": 9.41714096069336
+    },
+    {
+      "entity": "product",
+      "count": 5000,
+      "initialMs": 12,
+      "searchMs": 62.900000005960464,
+      "filterMs": 21.099999994039536,
+      "sortMs": 14.100000023841858,
+      "pageMs": 17.899999976158142,
+      "editMs": 28.5,
+      "domRows": 50,
+      "heapMiB": 9.156898498535156
+    },
+    {
+      "entity": "performance",
+      "count": 10000,
+      "initialMs": 46.80000001192093,
+      "searchMs": 44.30000001192093,
+      "filterMs": 81.5,
+      "sortMs": 66.19999998807907,
+      "pageMs": 29.599999994039536,
+      "editMs": 20.600000023841858,
+      "domRows": 50,
+      "heapMiB": 13.093132019042969
+    },
+    {
+      "entity": "offer",
+      "count": 5000,
+      "initialMs": 49.39999997615814,
+      "searchMs": 57.400000005960464,
+      "filterMs": 78.30000001192093,
+      "sortMs": 100.2999999821186,
+      "pageMs": 81.7000000178814,
+      "editMs": 28,
+      "domRows": 50,
+      "heapMiB": 11.027168273925781
+    }
+  ],
+  "scenarios": [
+    {
+      "name": "A",
+      "ms": 4352,
+      "clicks": 30,
+      "requests": 18,
+      "maxGithubCalls": 22,
+      "largestBodyBytes": 23188,
+      "unexpectedPageErrors": 0,
+      "expectedFailureModes": []
+    },
+    {
+      "name": "B",
+      "ms": 5036,
+      "clicks": 30,
+      "requests": 23,
+      "maxGithubCalls": 22,
+      "largestBodyBytes": 23188,
+      "unexpectedPageErrors": 0,
+      "expectedFailureModes": []
+    },
+    {
+      "name": "C",
+      "ms": 1171,
+      "clicks": 10,
+      "requests": 13,
+      "maxGithubCalls": 25,
+      "largestBodyBytes": 1842,
+      "unexpectedPageErrors": 0,
+      "expectedFailureModes": [
+        "same-field conflict"
+      ]
+    },
+    {
+      "name": "D",
+      "ms": 4502,
+      "clicks": 30,
+      "requests": 20,
+      "maxGithubCalls": 22,
+      "largestBodyBytes": 23771,
+      "unexpectedPageErrors": 0,
+      "expectedFailureModes": [
+        "save 429",
+        "successful PR response lost"
+      ]
+    },
+    {
+      "name": "E",
+      "ms": 15989,
+      "clicks": 183,
+      "requests": 17,
+      "maxGithubCalls": 22,
+      "largestBodyBytes": 89666,
+      "unexpectedPageErrors": 0,
+      "expectedFailureModes": []
+    }
+  ],
+  "accessibility": [
+    {
+      "width": 320,
+      "mode": "light",
+      "documentOverflow": false,
+      "ariaTree": "native table, names, statuses verified",
+      "keyboard": "skip, native controls, dialog; Phase3 arrow/Enter/Esc/Tab regressions retained"
+    },
+    {
+      "width": 390,
+      "mode": "light",
+      "documentOverflow": false,
+      "ariaTree": "native table, names, statuses verified",
+      "keyboard": "skip, native controls, dialog; Phase3 arrow/Enter/Esc/Tab regressions retained"
+    },
+    {
+      "width": 768,
+      "mode": "light",
+      "documentOverflow": false,
+      "ariaTree": "native table, names, statuses verified",
+      "keyboard": "skip, native controls, dialog; Phase3 arrow/Enter/Esc/Tab regressions retained"
+    },
+    {
+      "width": 1024,
+      "mode": "dark",
+      "documentOverflow": false,
+      "ariaTree": "native table, names, statuses verified",
+      "keyboard": "skip, native controls, dialog; Phase3 arrow/Enter/Esc/Tab regressions retained"
+    },
+    {
+      "width": 1440,
+      "mode": "light",
+      "documentOverflow": false,
+      "ariaTree": "native table, names, statuses verified",
+      "keyboard": "skip, native controls, dialog; Phase3 arrow/Enter/Esc/Tab regressions retained"
+    },
+    {
+      "width": 1920,
+      "mode": "light",
+      "documentOverflow": false,
+      "ariaTree": "native table, names, statuses verified",
+      "keyboard": "skip, native controls, dialog; Phase3 arrow/Enter/Esc/Tab regressions retained"
+    },
+    {
+      "width": 720,
+      "evaluation": "200% reflow-equivalent of 1440 CSS pixels; not actual browser zoom or screen-reader certification",
+      "documentOverflow": false
+    }
+  ],
+  "limits": {
+    "initialMs": 1500,
+    "interactionMs": 1000,
+    "heapMiB": 128
+  },
+  "before": false,
+  "sessionRecovery": "expired cookie → same-owner login/new CSRF → save; different-owner rejected without PUT",
+  "currentCategories": "13 entity types edited through UI in one current-master PR",
+  "newLinkedTalent": "unissued talent selected by name in new anniversary; one atomic PR"
+}

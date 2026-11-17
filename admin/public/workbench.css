@@ -1,18 +1,5 @@
 /* Admin-local DADS-informed workbench; does not affect public-site CSS. */
-:root {
-  --surface: #fff;
-  --soft: #f5f6f8;
-  --line: #b8bec8;
-  --ink: #1a1a1a;
-  --accent: #0031d8;
-  --admin-action: #0031d8;
-  --sidebar: 224px;
-  --changed: #fff5ce;
-  --focus: #ffd43d;
-  line-height: 1.5;
-  color: var(--ink);
-  background: var(--soft);
-}
+
 body {
   display: grid;
   grid-template-columns: var(--sidebar) minmax(0, 1fr);
@@ -126,7 +113,7 @@ main {
 }
 .content-toolbar {
   margin: 8px 0;
-  gap: 6px;
+  gap: var(--space-2);
 }
 .content-toolbar button {
   min-height: 36px;
@@ -557,7 +544,7 @@ h4 {
   }
   #workspace-bar {
     position: relative;
-    gap: 6px;
+    gap: var(--space-2);
     padding: 8px 0;
   }
   #workspace-bar [data-save-state] {
@@ -621,15 +608,6 @@ h4 {
   }
 }
 @media (prefers-color-scheme: dark) {
-  :root {
-    --surface: #20252c;
-    --soft: #151a21;
-    --line: #637083;
-    --ink: #f4f4f4;
-    --accent: #9ecaff;
-    --admin-action: #9ecaff;
-    --changed: #494025;
-  }
   a {
     color: var(--accent);
   }

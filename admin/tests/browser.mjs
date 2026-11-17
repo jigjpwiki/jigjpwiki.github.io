@@ -212,7 +212,7 @@ try {
     await p.keyboard.press("Enter");
     // Edit Lee through the actual form: optional URL round-trip must preserve Wiki refs.
     await p
-      .getByRole("searchbox", { name: "名前・IDで検索" })
+      .getByRole("searchbox", { name: "名前・タイトルで検索" })
       .fill("李じゅぴ汰");
     await p.getByRole("button", { name: "李じゅぴ汰", exact: true }).click();
     await p.getByRole("button", { name: "編集", exact: true }).click();
@@ -300,7 +300,7 @@ try {
       .click();
     // Preview flushes the draft; leaving an already saved editor does not discard data or need a warning.
     await p.getByRole("button", { name: "一覧へ戻る", exact: true }).click();
-    await p.getByRole("searchbox", { name: "名前・IDで検索" }).fill("真昼ねる");
+    await p.getByRole("searchbox", { name: "名前・タイトルで検索" }).fill("真昼ねる");
     assert.equal(
       await p.evaluate(() => document.documentElement.scrollWidth > innerWidth),
       false,
@@ -391,7 +391,7 @@ try {
     await p.getByRole("heading", { name: "PRを作成しました" }).waitFor();
     assert.equal(
       await p
-        .getByRole("link", { name: "GitHubでPR #999を確認" })
+        .getByRole("link", { name: "GitHubでPRを開く" })
         .getAttribute("href"),
       "https://github.com/jigjpwiki/jigjpwiki.github.io/pull/999",
     );
@@ -449,7 +449,7 @@ try {
     await p.getByRole("button", { name: "事務所", exact: true }).click();
     const organization = models.talents.organizations[0];
     await p
-      .getByRole("searchbox", { name: "名前・IDで検索" })
+      .getByRole("searchbox", { name: "名前・タイトルで検索" })
       .fill(organization.name);
     await p
       .getByRole("button", { name: organization.name, exact: true })
@@ -462,7 +462,7 @@ try {
     await p.getByRole("button", { name: "一覧へ戻る", exact: true }).click();
     await p.getByRole("button", { name: "グループ", exact: true }).click();
     const group = models.catalog.groups[0];
-    await p.getByRole("searchbox", { name: "名前・IDで検索" }).fill(group.name);
+    await p.getByRole("searchbox", { name: "名前・タイトルで検索" }).fill(group.name);
     await p.getByRole("button", { name: group.name, exact: true }).click();
     await p.getByRole("button", { name: "編集", exact: true }).click();
     assert.deepEqual(

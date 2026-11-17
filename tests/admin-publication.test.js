@@ -6,6 +6,6 @@ test('source-free public projection preserves content and excludes private talen
  assert.deepEqual(publicTalents(master),master);
  master.talents[1].visibility='draft';const projected=publicTalents(master);
  assert.equal(projected.talents.length,1);assert(!JSON.stringify(projected).includes('private'));
- assert.throws(()=>assertPrivateUnreferenced(master,[{event:{talentIds:['tal-000002']}}]),/Draft talent/);
+ assert.throws(()=>assertPrivateUnreferenced(master,[{event:{talentIds:['tal-000002']}}]),/公開停止の影響が未解決/);
  assert.doesNotThrow(()=>assertPrivateUnreferenced(master,[{event:{talentIds:['tal-000001']}}]));
 });

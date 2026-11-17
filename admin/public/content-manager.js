@@ -1,3 +1,6 @@
+import { projectedModels } from "./talent-actions.js";
+import { mountRecordBrowser } from "./record-browser.js";
+const browserStates = {};
 import { projectionCache } from "./row-projection.js";
 import { mountDataTable } from "./data-table.js";
 import { columnsFor } from "./table-columns.js";
@@ -759,7 +762,9 @@ export function mountContent({
     );
     showTab();
   }
-  let tableController, panel;
+  let tableController,
+    panel,
+    bulkMode = false;
   function applyTableChanges(changes, type = entity) {
     for (const { record, value } of changes) {
       const existing = operations.find(
@@ -807,11 +812,52 @@ export function mountContent({
     heading.append(
       menu,
       toolbar(true),
-      action("新規" + types[entity].label + "登録", () => open(entity)),
+      action(
+        "新規" + types[entity].label + "登録",
+        () => open(entity),
+        "primary",
+      ),
     );
     list.append(heading);
     const result = el("div");
     list.append(result);
+    if (!bulkMode) {
+      tableController = mountRecordBrowser({
+        container: result,
+        title: types[entity].label,
+        entity,
+        models: projectedModels(referenceModels, operations),
+        columns: columnsFor(entity, {
+          models: referenceModels,
+          forms,
+          rowsFor,
+        }),
+        rows: () => rowsFor(entity),
+        state: (browserStates[entity] ??= {}),
+        onBulk: () => {
+          bulkMode = true;
+          drawList();
+        },
+        onOpen: (r) => {
+          const pending = operations.find(
+            (o) => ref(o) === r._reference && o.entity === entity,
+          );
+          open(
+            entity,
+            r,
+            pending?.id || r[types[entity].field || "id"],
+            pending?.key,
+          );
+        },
+      });
+      return;
+    }
+    heading.append(
+      action("通常一覧へ戻る", () => {
+        bulkMode = false;
+        drawList();
+      }),
+    );
     tableController = mountDataTable({
       container: result,
       title: types[entity].label,

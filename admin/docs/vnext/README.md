@@ -1,3 +1,5 @@
+> Admin vNext 5: [最新の操作・公開制御・検証・導入手順](phase5/README.md)。通常一覧は全件連続表示、一括編集表のみページングを維持。以下は過去段階の記録を含みます。
+
 > Phase 3: [高密度編集UI・実測・導入](phase3/README.md)
 
 # Admin vNext / Phase 1: 保存ワークスペース

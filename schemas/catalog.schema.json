@@ -60,6 +60,15 @@
               "public",
               "draft"
             ]
+          },
+          "formerTalentIds": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^tal-[0-9]{6}$"
+            },
+            "uniqueItems": true,
+            "description": "過去に在籍した人物。現所属一覧とは分離して履歴を保持。"
           }
         }
       }

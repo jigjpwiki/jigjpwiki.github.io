@@ -1,0 +1,63 @@
+{
+  "screens": [
+    {
+      "name": "VTuber",
+      "w": 390,
+      "theme": "light"
+    },
+    {
+      "name": "記念日",
+      "w": 390,
+      "theme": "light"
+    },
+    {
+      "name": "グッズ",
+      "w": 390,
+      "theme": "light"
+    },
+    {
+      "name": "VTuber",
+      "w": 1440,
+      "theme": "light"
+    },
+    {
+      "name": "記念日",
+      "w": 1440,
+      "theme": "light"
+    },
+    {
+      "name": "グッズ",
+      "w": 1440,
+      "theme": "light"
+    },
+    {
+      "name": "非公開エラー",
+      "w": 1440,
+      "theme": "light"
+    }
+  ],
+  "scenarios": [
+    {
+      "name": "A 10人の引退・Undo（旧直接テーブル）",
+      "clicks": 16,
+      "ms": 2058
+    },
+    {
+      "name": "hide",
+      "clicks": 7,
+      "ms": 1098,
+      "outcome": "blocked public references"
+    },
+    {
+      "name": "transfer",
+      "clicks": 10,
+      "ms": 1121,
+      "outcome": "PR created"
+    }
+  ],
+  "layout": [],
+  "environment": {
+    "browser": "156.0.8078.79",
+    "mock": true
+  }
+}

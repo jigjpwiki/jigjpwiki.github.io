@@ -1,3 +1,11 @@
+import { renderOutcome } from "./review-outcome.js";
+import { mountRecordBrowser } from "./record-browser.js";
+import { mountIntentEditor } from "./intent-editor.js";
+import {
+  localIssues,
+  projectedModels,
+  referencesTo,
+} from "./talent-actions.js";
 import { referenceModels } from "./row-projection.js";
 import { mountDataTable } from "./data-table.js";
 import { columnsFor, overlayRows } from "./table-columns.js";
@@ -30,6 +38,38 @@ function inlinePending() {
 function renderSaveState() {
   const bar = document.querySelector("#workspace-bar");
   if (!bar || !workspace) return;
+  let checks = document.querySelector("#local-checks");
+  if (!checks) {
+    checks = node("section");
+    checks.id = "local-checks";
+    checks.setAttribute("role", "status");
+    bar.after(checks);
+  }
+  const issues = snapshot?.models
+    ? localIssues(projectedModels(snapshot.models, workspace.operations))
+    : [];
+  checks.replaceChildren();
+  checks.hidden = !issues.length;
+  if (issues.length) {
+    checks.className = "validation-message stack";
+    checks.append(node("h3", "下書きに確認が必要です"));
+    for (const issue of issues) {
+      checks.append(
+        node("p", `${issue.name} / ${issue.field}：${issue.message}`),
+      );
+      if (issue.references?.length)
+        checks.append(
+          node(
+            "p",
+            issue.references.map((r) => `${r.title}（${r.id}）`).join("・"),
+          ),
+        );
+      checks.append(
+        button("掲載方針を確認：" + issue.name, () => intentScreen([issue.id])),
+      );
+    }
+  }
+
   bar.querySelector("[data-save-state]").textContent =
     `${inlinePending() ? "セルを編集中（Enterで確定 / Escで取消）" : workspaceLabels[workspace.state]} / ${workspace.operations.length}件`;
   bar.querySelector("[data-save-state]").dataset.state = inlinePending()
@@ -175,6 +215,8 @@ export async function api(path, method = "GET", value) {
           "mainが更新されました。最新mainを再読み込みし、変更を再確認してください。",
         references_prevent_deletion:
           "関連データまたは収集・キャッシュの参照が残るため削除できません。",
+        draft_has_public_references:
+          "公開状態の影響確認が必要です。状態・掲載を変更から、公開履歴への名前掲載または関連情報の非公開を確認してください。",
         references_prevent_hiding_review_history_first:
           "公開済みの参照が残っています。履歴を維持する対応方針を先にレビューしてください。",
         official_profile_identity_already_registered:
@@ -259,12 +301,12 @@ function screen() {
   }
   const settings = location.hash === "#settings";
   $("#view").replaceChildren(
-    node("h2", settings ? "設定" : "管理トップ"),
+    node("h2", settings ? "設定" : "ダッシュボード"),
     node(
       "p",
       settings
         ? "認証と数値ユーザーIDの許可リストはサーバーで管理します。Secretsの表示・変更機能はありません。"
-        : "GitHubのJSONが正本です。変更は確認後にPRとして提出し、人間がマージします。",
+        : "編集は下書きとして保存されます。変更内容を確認してPRを作成し、人間がレビュー・マージします。",
     ),
   );
 }
@@ -471,6 +513,35 @@ async function loadMasters(render = listView) {
   render();
 }
 let masterTable, masterPanel;
+let masterBulk = false;
+const browseStates = {};
+function intentScreen(ids) {
+  if (!ids.length) {
+    showStatus("タレントを選択してください。一括編集から複数選択できます。");
+    return;
+  }
+  masterPanel?.close();
+  const host = $("#view");
+  host.className = "intent-workspace";
+  mountIntentEditor({
+    container: host,
+    models: snapshot.models,
+    getOperations: () => workspace.operations,
+    baseCommit: snapshot.sha,
+    ids,
+    onApply: (ops) => {
+      workspace.replace(ops);
+      listView();
+      showStatus("変更案を下書きへ追加しました。まだ公開されていません。");
+    },
+    onBack: listView,
+  });
+  activeEditor = {
+    get dirty() {
+      return workspace.dirty;
+    },
+  };
+}
 function masterRows() {
   return overlayRows(rows(), workspace.operations, entity);
 }
@@ -495,6 +566,11 @@ function masterChanges(changes) {
     if (i < 0) next.push(op);
     else next[i] = op;
   }
+  const issues = localIssues(projectedModels(snapshot.models, next));
+  if (issues.length)
+    throw Error(
+      issues.map((e) => `${e.name} / ${e.field}：${e.message}`).join("\n"),
+    );
   workspace.replace(next);
   renderSaveState();
 }
@@ -519,12 +595,50 @@ function listView() {
     );
   heading.append(
     menu,
-    button("新規登録", () => edit()),
+    Object.assign(
+      button("新規登録", () => edit()),
+      { className: "primary" },
+    ),
     button("最新mainを再読み込み", loadMasters),
   );
   list.append(heading);
   const table = node("div");
   list.append(table);
+  if (masterBulk && entity === "talent")
+    heading.append(
+      button("選択した人物の状態・掲載を変更", () =>
+        intentScreen(masterTable?.selected || []),
+      ),
+    );
+  if (!masterBulk) {
+    masterTable = mountRecordBrowser({
+      container: table,
+      title: labels[entity],
+      entity,
+      rows: masterRows,
+      models: projectedModels(snapshot.models, workspace.operations),
+      state: (browseStates[entity] ??= {}),
+      columns: columnsFor(entity, { models: snapshot.models }),
+      onOpen: detail,
+      onBulk: () => {
+        masterBulk = true;
+        listView();
+      },
+    });
+    activeEditor = {
+      get dirty() {
+        return workspace.dirty;
+      },
+      refresh: () => masterTable.refresh(),
+    };
+    return;
+  }
+  heading.append(
+    button("通常一覧へ戻る", () => {
+      masterBulk = false;
+      listView();
+    }),
+  );
   masterTable = mountDataTable({
     container: table,
     title: labels[entity],
@@ -618,7 +732,9 @@ function detail(record) {
   masterPanel = detailPanel($("#view"), {
     title: record.displayName || record.name,
     onClose: () => {
+      const restore = browseStates[entity]?.scroll ?? window.scrollY;
       masterTable?.refresh();
+      requestAnimationFrame(() => window.scrollTo(0, restore));
       activeEditor = {
         get dirty() {
           return workspace.dirty;
@@ -629,57 +745,200 @@ function detail(record) {
     },
   });
   const view = masterPanel.content;
-  view.replaceChildren(
-    button("一覧へ戻る", listView),
-    node("h2", record.displayName || record.name),
-    node("p", record.id),
+  view.classList.add("stack");
+  const section = (name) => {
+    const box = node("section");
+    box.className = "page-section stack";
+    box.append(node("h3", name));
+    return box;
+  };
+  const model = projectedModels(snapshot.models, workspace.operations),
+    profile = section("基本情報"),
+    header = node("div");
+  header.className = "inline profile-summary";
+  if (entity === "talent")
+    header.append(portrait(record.profileImage?.url, record.displayName));
+  const identity = node("div");
+  identity.className = "stack";
+  identity.append(node("strong", record.displayName || record.name));
+  if (record.aliases?.length)
+    identity.append(
+      node("span", "別名：" + record.aliases.map((a) => a.name).join("・")),
+    );
+  header.append(identity);
+  profile.append(header);
+  const actions = node("div");
+  actions.className = "button-group";
+  if (entity === "talent")
+    actions.append(
+      Object.assign(
+        button("状態・掲載を変更", () => intentScreen([record.id])),
+        { className: "primary" },
+      ),
+    );
+  actions.append(
     button("編集", () => edit(record)),
+    button("一覧へ戻る", listView),
   );
-  const refs = [...related(record.id), ...accountReferences(record)];
-  view.append(
-    node(
-      "p",
-      "掲載: " +
-        (record.visibility || "public") +
-        " / 管理レコード保持: はい / Wiki管理対象: " +
-        (snapshot.models["admin-ledger"].wikiExclusions.includes(record.id)
-          ? "除外"
-          : "対象") +
-        " / 収集・キャッシュ参照: " +
-        accountReferences(record).length +
-        "件",
-    ),
-  );
-  view.append(
-    node("h3", "関連情報・削除前の影響"),
-    node("pre", refs.join("\n") || "ID参照なし"),
-  );
-  if (record.accounts)
+  view.replaceChildren(actions, profile);
+  if (entity === "talent") {
+    const status = section("活動・掲載");
+    status.append(
+      node("p", "活動：" + (enumLabels[record.activityStatus.value] || "不明")),
+      node(
+        "p",
+        "所属状態：" + (enumLabels[record.agencyStatus.value] || "不明"),
+      ),
+      node(
+        "p",
+        "掲載：" +
+          (record.visibility === "draft"
+            ? record.historyNamePublic
+              ? "プロフィール非表示・公開履歴に名前を掲載"
+              : "非公開"
+            : "公開"),
+      ),
+    );
+    const affiliation = section("所属・グループ");
+    for (const kind of ["current", "former"]) {
+      const labels = record.affiliations
+        .filter((a) => a.status === kind)
+        .map(
+          (a) =>
+            model.talents.organizations.find((o) => o.id === a.organizationId)
+              ?.name || "所属不明",
+        );
+      affiliation.append(
+        node(
+          "p",
+          (kind === "current" ? "現在の事務所：" : "旧所属：") +
+            (labels.join("・") || "登録なし"),
+        ),
+      );
+    }
+    const groups = model.catalog.groups
+        .filter((g) => g.talentIds.includes(record.id))
+        .map((g) => g.name),
+      old = model.catalog.groups
+        .filter((g) => g.formerTalentIds?.includes(record.id))
+        .map((g) => g.name);
+    affiliation.append(
+      node("p", "現在のグループ：" + (groups.join("・") || "登録なし")),
+    );
+    if (old.length)
+      affiliation.append(node("p", "過去のグループ：" + old.join("・")));
+    const accounts = section("公式アカウント・リンク"),
+      links = node("div");
+    links.className = "inline";
     for (const a of record.accounts)
-      view.append(link(a.service + ": " + (a.accountId || "ID未確認"), a.url));
-  if (record.wiki) view.append(link("非公式Wiki", record.wiki.url));
-  const history = snapshot.models["admin-ledger"].entries.filter(
-    (e) => e.subject === record.id,
+      links.append(
+        link(
+          { youtube: "YouTube", x: "X", twitch: "Twitch", tiktok: "TikTok" }[
+            a.service
+          ] || a.service,
+          a.url,
+        ),
+      );
+    if (record.wiki) links.append(link("非公式Wiki", record.wiki.url));
+    if (record.officialProfileUrl)
+      links.append(link("公式プロフィール", record.officialProfileUrl));
+    accounts.append(
+      links.children.length ? links : node("p", "リンクは登録されていません。"),
+    );
+    view.append(status, affiliation, accounts);
+  } else if (entity === "group") {
+    const membership = section("メンバー");
+    for (const [k, label] of [
+      ["talentIds", "現在の名簿"],
+      ["formerTalentIds", "過去の名簿"],
+    ])
+      membership.append(
+        node(
+          "p",
+          label +
+            "：" +
+            ((record[k] || [])
+              .map(
+                (id) =>
+                  model.talents.talents.find((t) => t.id === id)?.displayName ||
+                  "未登録",
+              )
+              .join("・") || "登録なし"),
+        ),
+      );
+    view.append(membership);
+  }
+  const references = referencesTo(model, record.id),
+    relatedBox = node("details");
+  relatedBox.className = "page-section stack";
+  relatedBox.append(
+    node("summary", "履歴・関連情報（" + references.length + "件）"),
   );
-  view.append(
+  const names = {
+    group: "グループ",
+    anniversary: "記念日",
+    event: "イベント",
+    musicVideo: "歌動画",
+    karaoke: "歌枠",
+    performance: "歌唱記録",
+    product: "商品",
+    offer: "販売情報",
+  };
+  const list = node("ul");
+  for (const ref of references)
+    list.append(
+      node(
+        "li",
+        (names[ref.entity] || "関連情報") +
+          "：" +
+          ref.title +
+          "（" +
+          ref.id +
+          "）",
+      ),
+    );
+  relatedBox.append(
+    list,
     link(
-      "GitHubで過去の変更履歴を確認",
+      "GitHubで変更履歴を確認",
       "https://github.com/jigjpwiki/jigjpwiki.github.io/commits/main/data/" +
         (entity === "group" ? "catalog" : "talents") +
         ".json",
     ),
   );
-  view.append(
-    node("h3", "管理変更履歴"),
-    node(
-      "pre",
-      history
-        .map((h) => h.at + " / " + h.action + " / " + h.reason)
-        .join("\n") ||
-        "管理画面経由の変更履歴なし（既存データはGit履歴で確認）",
-    ),
+  const history = snapshot.models["admin-ledger"].entries.filter(
+    (e) => e.subject === record.id,
   );
-  view.append(button("非公開化・統合・削除・対象変更", () => manage(record)));
+  for (const h of history)
+    relatedBox.append(
+      node(
+        "p",
+        h.at +
+          " / " +
+          ({
+            edit: "編集",
+            create: "新規登録",
+            visibility: "掲載変更",
+            merge: "重複統合",
+            delete: "削除",
+          }[h.action] || "管理操作") +
+          " / " +
+          (h.reason || "理由の記載なし"),
+      ),
+    );
+  view.append(relatedBox);
+  const advanced = node("details");
+  advanced.className = "page-section stack";
+  advanced.append(
+    node("summary", "高度な管理"),
+    node("p", "固定ID：" + record.id + "（変更できません）"),
+    node(
+      "p",
+      "配信収集・キャッシュ参照：" + accountReferences(record).length + "件",
+    ),
+    button("高度な管理（統合・削除等）", () => manage(record)),
+  );
+  view.append(advanced);
 }
 function approval(form, value, onPreview) {
   const reason = node("textarea");
@@ -850,7 +1109,6 @@ function manage(record) {
   const action = node("select");
   action.setAttribute("aria-label", "管理操作");
   for (const [v, n] of [
-    ["visibility", "公開対象の変更"],
     ["merge", "重複統合"],
     ["delete", "完全削除案"],
     ["collection", "配信収集対象の変更"],
@@ -1207,12 +1465,14 @@ async function showPreview(input, workspaceKey) {
           );
       }
       activeEditor = null;
-      view.replaceChildren(
-        node("h2", "PRを作成しました"),
-        link("GitHubでPR #" + result.number + "を確認", result.url),
-        node("p", "差分とCIを人間が確認してマージしてください。"),
-        button("一覧へ戻る", returnList),
-      );
+      renderOutcome(view, {
+        number: result.number,
+        url: result.url,
+        onSubmitted: () => {
+          location.hash = "#submitted";
+        },
+        onBack: returnList,
+      });
       showStatus("PR作成成功");
     } catch (e) {
       submitted = false;

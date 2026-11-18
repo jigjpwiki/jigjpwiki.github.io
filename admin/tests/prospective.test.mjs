@@ -38,6 +38,9 @@ test("legitimate mixed Admin output passes current master validation and histori
       if (fs.existsSync(path.join(root, name)))
         fs.copyFileSync(path.join(root, name), path.join(temp, name));
     fs.mkdirSync(path.join(temp, "admin/src"), { recursive: true });
+    fs.cpSync(path.join(root,"admin/public"),path.join(temp,"admin/public"),{recursive:true});
+    fs.copyFileSync(path.join(root,"admin/package.json"),path.join(temp,"admin/package.json"));
+    fs.copyFileSync(path.join(root,"admin/src/validate.cjs"),path.join(temp,"admin/src/validate.cjs"));
     fs.copyFileSync(
       path.join(root, "admin/src/audit.cjs"),
       path.join(temp, "admin/src/audit.cjs"),
@@ -63,7 +66,7 @@ test("legitimate mixed Admin output passes current master validation and histori
         id: before.id,
         baseCommit: s.sha,
         before,
-        value: { ...before, displayName: before.displayName + " 正規編集" },
+        value: { ...before, displayName: before.displayName + " 正規編集",...(i===0?{visibility:"draft",historyNamePublic:true}:{}) },
       });
     }
     operations.push({

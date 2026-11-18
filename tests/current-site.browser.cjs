@@ -8,7 +8,7 @@ const { chromium } = require("playwright"),
   const root = path.resolve("_site"),
     read = (n) =>
       JSON.parse(fs.readFileSync(path.join(root, "data", n + ".json"))),
-    people = read("talents").talents;
+    people = read("talents").talents.filter(t=>!t.profileHidden);
   const server = http.createServer((req, res) => {
     const name = path.resolve(
       root,
@@ -110,6 +110,9 @@ const { chromium } = require("playwright"),
       (t) => (t.visibility ?? "public") !== "public",
     )) {
       assert(!people.some((p) => p.id === t.id));
+      const exported=read('talents').talents.find(p=>p.id===t.id);
+      if(t.historyNamePublic)assert.deepEqual(exported,{id:t.id,displayName:t.displayName,profileHidden:true});
+      else assert.equal(exported,undefined);
       assert.equal(
         (await p.request.get(base + "/talents/" + t.id + "/")).status(),
         404,

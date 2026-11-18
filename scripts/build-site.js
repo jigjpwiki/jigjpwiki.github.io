@@ -8,15 +8,15 @@ const { applyNavigation, talentCards } = require('../lib/site-pages');
 const root = path.join(__dirname, '..');
 // Validate before touching the prior build output. Never publish unvalidated data.
 const fullTalents = loadTalents(root);
-const {publicTalents,assertPrivateUnreferenced}=require('../lib/talent-publication');
+const {publicTalents,assertPrivateUnreferenced,publicFeed,privateAssetPaths}=require('../lib/talent-publication');
 const talents=publicTalents(fullTalents);
 const { loadCatalog, publicCatalog } = require('../lib/catalog');
 const { anniversaryPage } = require('../lib/info-pages');
 const catalog = publicCatalog(loadCatalog(fullTalents, root));
 const { talentPage: renderTalentPage } = require('../lib/talent-details');
-const optionalFeed = name => { try { const value = JSON.parse(fs.readFileSync(path.join(root, 'data', name + '.json'), 'utf8')); return Array.isArray(value) ? value : []; } catch { return []; } };
+const readFeed = name => publicFeed(JSON.parse(fs.readFileSync(path.join(root,'data',name+'.json'),'utf8')),fullTalents);
 const { goodsPage, relatedGoods, productPage, campaignPage } = require('../lib/goods-pages');
-const feeds = { youtube: optionalFeed('youtube'), twitch: optionalFeed('twitch') };
+const feeds = { youtube: readFeed('youtube'), twitch: readFeed('twitch'), tiktok: readFeed('tiktok') };
 const { loadEvents, projectEvents } = require('../lib/feature-data');
 const { eventList, eventPage, talentEvents } = require('../lib/feature-pages');
 const eventModel = loadEvents(fullTalents, catalog, root);
@@ -40,9 +40,13 @@ fs.mkdirSync(output);
 for (const entry of ['index.html', 'style.css', 'assets', 'privacy-policy', 'terms', 'robots.txt', 'sitemap.xml', 'CNAME']) {
   fs.cpSync(path.join(__dirname, '..', entry), path.join(output, entry), { recursive: true });
 }
+// A local avatar must not remain publicly retrievable just because assets are copied.
+const staticTexts=[];const scanStatic=dir=>{for(const e of fs.readdirSync(dir,{withFileTypes:true})){const p=path.join(dir,e.name);if(e.isDirectory())scanStatic(p);else if(/\.(?:html|css|js)$/.test(e.name))staticTexts.push(fs.readFileSync(p,'utf8'));}};scanStatic(output);
+for(const url of privateAssetPaths(fullTalents,[talents,catalog,eventData,musicData,karaokeData,feeds],staticTexts))fs.rmSync(path.join(output,url.slice(1)),{force:true});
 fs.mkdirSync(path.join(output, 'data'));
 for (const name of ['youtube', 'twitch', 'tiktok', 'last_updated', 'youtube_client']) {
-  fs.copyFileSync(path.join(__dirname, '..', 'data', `${name}.json`), path.join(output, 'data', `${name}.json`));
+  if(['youtube','twitch','tiktok'].includes(name)) fs.writeFileSync(path.join(output,'data',`${name}.json`),JSON.stringify(feeds[name],null,2)+'\n');
+  else fs.copyFileSync(path.join(__dirname, '..', 'data', `${name}.json`), path.join(output, 'data', `${name}.json`));
 }
 for (const [file, route] of [['index.html', '/'], ['privacy-policy/index.html', '/privacy-policy/'], ['terms/index.html', '/terms/']]) {
   const target = path.join(output, file);
@@ -58,7 +62,7 @@ fs.writeFileSync(path.join(output, 'data/catalog.json'), JSON.stringify({ schema
 fs.mkdirSync(path.join(output, 'anniversaries'));
 fs.writeFileSync(path.join(output, 'anniversaries/index.html'), anniversaryPage(talents, catalog, true));
 fs.writeFileSync(path.join(output, 'data/anniversaries.json'), JSON.stringify({ schemaVersion: 2, fallbackDate: catalog.fallbackDate, events: catalog.events }) + '\n');
-for (const talent of talents.talents) {
+for (const talent of talents.talents.filter(t=>!t.profileHidden)) {
   fs.mkdirSync(path.join(output, 'talents', talent.id));
   fs.writeFileSync(path.join(output, 'talents', talent.id, 'index.html'), talentAssets(renderTalentPage(talent, talents, catalog, feeds, id => relatedGoods(id, talents, catalog), id => talentMusic(id,talents,musicView,talentKaraoke(id,talents,karaokeData,musicData))+talentEvents(id, talents, eventData))));
 }
@@ -75,7 +79,7 @@ fs.writeFileSync(path.join(output,'music/karaoke/index.html'),karaokeList(talent
 for(const k of karaokeData.karaokes){fs.mkdirSync(path.join(output,'music/karaoke',k.id));fs.writeFileSync(path.join(output,'music/karaoke',k.id,'index.html'),karaokePage(k,talents,karaokeData,musicData));}
 fs.writeFileSync(path.join(output,'data/karaoke.json'),JSON.stringify(karaokeData)+'\n');
 fs.writeFileSync(path.join(output,'data/karaoke-links.json'),JSON.stringify(karaokeLinks(karaokeData))+'\n');
-const sitemap = fs.readFileSync(path.join(output, 'sitemap.xml'), 'utf8').replace('</urlset>', talents.talents.map(t => `<url><loc>https://www.jigdule.jp/talents/${t.id}/</loc></url>`).join('\n') + '\n'+[...catalog.products.map(p=>'/goods/'+p.id+'/'),...catalog.campaigns.map(c=>'/goods/campaigns/'+c.id+'/'),'/events/',...eventData.events.map(e=>'/events/'+e.id+'/'),'/music/',...musicData.songs.map(s=>'/music/songs/'+s.id+'/'),'/music/karaoke/',...karaokeData.karaokes.map(k=>'/music/karaoke/'+k.id+'/')].map(route=>`<url><loc>https://www.jigdule.jp${route}</loc></url>`).join('\n')+'\n</urlset>');
+const sitemap = fs.readFileSync(path.join(output, 'sitemap.xml'), 'utf8').replace('</urlset>', talents.talents.filter(t=>!t.profileHidden).map(t => `<url><loc>https://www.jigdule.jp/talents/${t.id}/</loc></url>`).join('\n') + '\n'+[...catalog.products.map(p=>'/goods/'+p.id+'/'),...catalog.campaigns.map(c=>'/goods/campaigns/'+c.id+'/'),'/events/',...eventData.events.map(e=>'/events/'+e.id+'/'),'/music/',...musicData.songs.map(s=>'/music/songs/'+s.id+'/'),'/music/karaoke/',...karaokeData.karaokes.map(k=>'/music/karaoke/'+k.id+'/')].map(route=>`<url><loc>https://www.jigdule.jp${route}</loc></url>`).join('\n')+'\n</urlset>');
 fs.writeFileSync(path.join(output, 'sitemap.xml'), sitemap);
 fs.mkdirSync(path.join(output, 'goods'));
 fs.writeFileSync(path.join(output, 'goods/index.html'), goodsPage(talents, catalog));

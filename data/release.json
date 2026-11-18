@@ -1,15 +1,14 @@
 {
-  "version": "2.13.0",
+  "version": "2.14.0",
   "changes": [
-    "記念日・音楽・イベントの検索と表示を統一しました。",
-    "グッズをキャンペーン単位で探せるようにし、終了後も商品情報を閲覧できます。"
+    "公開プロフィールと公開履歴の掲載方針を分け、非表示時の情報公開を制御できるようにしました。"
   ],
   "featurePaths": [
+    "/talents/",
     "/anniversaries/",
     "/music/",
     "/music/karaoke/",
     "/events/",
-    "/goods/",
-    "/goods/campaigns/campaign-000001/"
+    "/goods/"
   ]
 }

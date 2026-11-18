@@ -88,7 +88,9 @@ export function confirmDialog({ title, description, onConfirm }) {
   h.id = "confirm-" + crypto.randomUUID();
   d.setAttribute("aria-labelledby", h.id);
   error.setAttribute("role", "alert");
-  d.append(h, p, error, cancel, yes);
+  const actions = el("div", undefined, "button-group");
+  actions.append(cancel, yes);
+  d.append(h, p, error, actions);
   document.body.append(d);
   const previous = document.activeElement;
   d.onclose = () => {

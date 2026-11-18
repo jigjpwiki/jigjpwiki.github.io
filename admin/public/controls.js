@@ -24,7 +24,7 @@ export const safeLink = (text, url) => {
 };
 export function portrait(url, name = "") {
   const box = el("div", undefined, "portrait"),
-    fallback = el("span", name.slice(0, 1) || "画像なし");
+    fallback = el("span", [...name][0] || "画像なし");
   box.append(fallback);
   try {
     const u = new URL(url);
@@ -34,6 +34,8 @@ export function portrait(url, name = "") {
         ? `${name}のプロフィール画像`
         : "プロフィール画像のプレビュー";
       img.referrerPolicy = "no-referrer";
+      img.loading = "lazy";
+      img.decoding = "async";
       img.src = u.href;
       img.onload = () => box.classList.add("loaded");
       img.onerror = () => {

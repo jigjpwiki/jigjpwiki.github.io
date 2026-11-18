@@ -46,7 +46,7 @@ export async function qualityBrowser({
     return { c, p, errors };
   }
   async function shot(p, name, width) {
-    if (!dir) return;
+    if (!dir || process.env.ADMIN_REPORT_ONLY) return;
     fs.mkdirSync(path.join(dir, "screens"), { recursive: true });
     await p.screenshot({
       path: path.join(
@@ -58,6 +58,10 @@ export async function qualityBrowser({
   }
   async function nav(p, name) {
     await p.getByRole("link", { name, exact: true }).first().click();
+    const targetType={VTuber:'talent','事務所・グループ':'organization','記念日':'anniversary','音楽':'song','イベント':'event','グッズ':'campaign'}[name];
+    const targetTitle={VTuber:'VTuber','事務所・グループ':'事務所','記念日':'記念日','音楽':'楽曲','イベント':'イベント','グッズ':'キャンペーン'}[name];
+    await p.locator(`.record-browser[data-entity="${targetType}"],.list-region [data-data-table="${targetTitle}"]`).first().waitFor();
+    if(await p.getByRole("button",{name:"一括編集",exact:true}).count())await p.getByRole("button",{name:"一括編集",exact:true}).click();
     await p.locator(".list-region .data-table").first().waitFor();
   }
   async function save(p) {
@@ -385,8 +389,9 @@ export async function qualityBrowser({
           "#events",
           "#goods",
         ].includes(route)
-      )
-        await p.locator(".list-region .data-table").first().waitFor();
+      ){
+        await nav(p,name);
+      }
       else await p.locator("#view h2").first().waitFor();
       assert.equal(
         await p.evaluate(

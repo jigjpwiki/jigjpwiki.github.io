@@ -1,3 +1,4 @@
+import {assertPrivateUnreferenced} from "../../lib/talent-publication.js";
 import talentsSchema from "../../schemas/talents.schema.json" with { type: "json" };
 import catalogSchema from "../../schemas/catalog.schema.json" with { type: "json" };
 import { contentForms } from "./content-definitions.mjs";
@@ -375,12 +376,7 @@ export async function preview(snapshot, input, { actor } = {}) {
   } catch (error) {
     fail(400, "validation: " + error.message.slice(0, 600));
   }
-  // New draft records cannot leak through source/related public references.
-  for (const hidden of models.talents.talents.filter(
-    (t) => t.visibility === "draft",
-  ))
-    if (references(models, hidden.id).length)
-      fail(409, "draft_has_public_references");
+  try { assertPrivateUnreferenced(models.talents,[models.catalog,models.anniversaries,models.events,models.music,models.karaoke,models.goods]); } catch { fail(409,"draft_has_public_references"); }
   const impact = {
     references: old ? references(before, old.id) : [],
     collection: old && kind === "tal" ? accountTargets(before, old) : null,

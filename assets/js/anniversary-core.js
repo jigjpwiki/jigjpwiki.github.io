@@ -37,6 +37,7 @@
     return model.groups.filter(g=>event.groupIds.includes(g.id)).map(g=>`<a class="anniversary-group" href="/talents/?group=${encodeURIComponent(g.id)}">${escape(g.name)}</a>`).join('・') + [...new Set([...event.talentIds, ...groupPeople])].map(id => {
       const talent = model.people.find(p => p.id === id);
       const image=talent?.image;let safe=false;try{const u=new URL(image,'https://www.jigdule.jp');safe=Boolean(image)&&u.protocol==='https:'&&!u.username&&!u.password&&!/[<>"']/.test(image);}catch{}
+      if(talent?.profileHidden)return `<span class="anniversary-person">${escape(talent.displayName)}</span>`;
       return talent ? `<a class="anniversary-person" href="${model.detailsReady ? `/talents/${id}/` : `/talents/#${id}`}">${safe?`<span class="anniversary-avatar" aria-hidden="true"><span>${escape(talent.displayName.slice(0,1))}</span><img src="${escape(image)}" alt="" loading="lazy" referrerpolicy="no-referrer"></span>`:''}${escape(talent.displayName)}</a>` : '';
     }).join('・');
   }

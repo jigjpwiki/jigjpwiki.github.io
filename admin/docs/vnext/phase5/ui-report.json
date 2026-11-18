@@ -1,0 +1,3048 @@
+{
+  "screens": [
+    {
+      "name": "ダッシュボード",
+      "w": 320,
+      "theme": "light"
+    },
+    {
+      "name": "VTuber",
+      "w": 320,
+      "theme": "light"
+    },
+    {
+      "name": "事務所・グループ",
+      "w": 320,
+      "theme": "light"
+    },
+    {
+      "name": "記念日",
+      "w": 320,
+      "theme": "light"
+    },
+    {
+      "name": "音楽",
+      "w": 320,
+      "theme": "light"
+    },
+    {
+      "name": "イベント",
+      "w": 320,
+      "theme": "light"
+    },
+    {
+      "name": "グッズ",
+      "w": 320,
+      "theme": "light"
+    },
+    {
+      "name": "変更内容",
+      "w": 320,
+      "theme": "light"
+    },
+    {
+      "name": "提出済みPR",
+      "w": 320,
+      "theme": "light"
+    },
+    {
+      "name": "設定",
+      "w": 320,
+      "theme": "light"
+    },
+    {
+      "name": "ローディング",
+      "w": 320,
+      "theme": "light"
+    },
+    {
+      "name": "詳細",
+      "w": 320,
+      "theme": "light"
+    },
+    {
+      "name": "入力エラー",
+      "w": 320,
+      "theme": "light"
+    },
+    {
+      "name": "公開影響",
+      "w": 320,
+      "theme": "light"
+    },
+    {
+      "name": "空データ",
+      "w": 320,
+      "theme": "light"
+    },
+    {
+      "name": "一括編集",
+      "w": 320,
+      "theme": "light"
+    },
+    {
+      "name": "参照エラー",
+      "w": 320,
+      "theme": "light"
+    },
+    {
+      "name": "保存エラー",
+      "w": 320,
+      "theme": "light"
+    },
+    {
+      "name": "競合",
+      "w": 320,
+      "theme": "light"
+    },
+    {
+      "name": "PRプレビュー",
+      "w": 320,
+      "theme": "light"
+    },
+    {
+      "name": "PR完了",
+      "w": 320,
+      "theme": "light"
+    },
+    {
+      "name": "ダッシュボード",
+      "w": 320,
+      "theme": "dark"
+    },
+    {
+      "name": "VTuber",
+      "w": 320,
+      "theme": "dark"
+    },
+    {
+      "name": "事務所・グループ",
+      "w": 320,
+      "theme": "dark"
+    },
+    {
+      "name": "記念日",
+      "w": 320,
+      "theme": "dark"
+    },
+    {
+      "name": "音楽",
+      "w": 320,
+      "theme": "dark"
+    },
+    {
+      "name": "イベント",
+      "w": 320,
+      "theme": "dark"
+    },
+    {
+      "name": "グッズ",
+      "w": 320,
+      "theme": "dark"
+    },
+    {
+      "name": "変更内容",
+      "w": 320,
+      "theme": "dark"
+    },
+    {
+      "name": "提出済みPR",
+      "w": 320,
+      "theme": "dark"
+    },
+    {
+      "name": "設定",
+      "w": 320,
+      "theme": "dark"
+    },
+    {
+      "name": "ローディング",
+      "w": 320,
+      "theme": "dark"
+    },
+    {
+      "name": "詳細",
+      "w": 320,
+      "theme": "dark"
+    },
+    {
+      "name": "入力エラー",
+      "w": 320,
+      "theme": "dark"
+    },
+    {
+      "name": "公開影響",
+      "w": 320,
+      "theme": "dark"
+    },
+    {
+      "name": "空データ",
+      "w": 320,
+      "theme": "dark"
+    },
+    {
+      "name": "一括編集",
+      "w": 320,
+      "theme": "dark"
+    },
+    {
+      "name": "参照エラー",
+      "w": 320,
+      "theme": "dark"
+    },
+    {
+      "name": "保存エラー",
+      "w": 320,
+      "theme": "dark"
+    },
+    {
+      "name": "競合",
+      "w": 320,
+      "theme": "dark"
+    },
+    {
+      "name": "PRプレビュー",
+      "w": 320,
+      "theme": "dark"
+    },
+    {
+      "name": "PR完了",
+      "w": 320,
+      "theme": "dark"
+    },
+    {
+      "name": "ダッシュボード",
+      "w": 390,
+      "theme": "light"
+    },
+    {
+      "name": "VTuber",
+      "w": 390,
+      "theme": "light"
+    },
+    {
+      "name": "事務所・グループ",
+      "w": 390,
+      "theme": "light"
+    },
+    {
+      "name": "記念日",
+      "w": 390,
+      "theme": "light"
+    },
+    {
+      "name": "音楽",
+      "w": 390,
+      "theme": "light"
+    },
+    {
+      "name": "イベント",
+      "w": 390,
+      "theme": "light"
+    },
+    {
+      "name": "グッズ",
+      "w": 390,
+      "theme": "light"
+    },
+    {
+      "name": "変更内容",
+      "w": 390,
+      "theme": "light"
+    },
+    {
+      "name": "提出済みPR",
+      "w": 390,
+      "theme": "light"
+    },
+    {
+      "name": "設定",
+      "w": 390,
+      "theme": "light"
+    },
+    {
+      "name": "ローディング",
+      "w": 390,
+      "theme": "light"
+    },
+    {
+      "name": "詳細",
+      "w": 390,
+      "theme": "light"
+    },
+    {
+      "name": "入力エラー",
+      "w": 390,
+      "theme": "light"
+    },
+    {
+      "name": "公開影響",
+      "w": 390,
+      "theme": "light"
+    },
+    {
+      "name": "空データ",
+      "w": 390,
+      "theme": "light"
+    },
+    {
+      "name": "一括編集",
+      "w": 390,
+      "theme": "light"
+    },
+    {
+      "name": "参照エラー",
+      "w": 390,
+      "theme": "light"
+    },
+    {
+      "name": "保存エラー",
+      "w": 390,
+      "theme": "light"
+    },
+    {
+      "name": "競合",
+      "w": 390,
+      "theme": "light"
+    },
+    {
+      "name": "PRプレビュー",
+      "w": 390,
+      "theme": "light"
+    },
+    {
+      "name": "PR完了",
+      "w": 390,
+      "theme": "light"
+    },
+    {
+      "name": "ダッシュボード",
+      "w": 390,
+      "theme": "dark"
+    },
+    {
+      "name": "VTuber",
+      "w": 390,
+      "theme": "dark"
+    },
+    {
+      "name": "事務所・グループ",
+      "w": 390,
+      "theme": "dark"
+    },
+    {
+      "name": "記念日",
+      "w": 390,
+      "theme": "dark"
+    },
+    {
+      "name": "音楽",
+      "w": 390,
+      "theme": "dark"
+    },
+    {
+      "name": "イベント",
+      "w": 390,
+      "theme": "dark"
+    },
+    {
+      "name": "グッズ",
+      "w": 390,
+      "theme": "dark"
+    },
+    {
+      "name": "変更内容",
+      "w": 390,
+      "theme": "dark"
+    },
+    {
+      "name": "提出済みPR",
+      "w": 390,
+      "theme": "dark"
+    },
+    {
+      "name": "設定",
+      "w": 390,
+      "theme": "dark"
+    },
+    {
+      "name": "ローディング",
+      "w": 390,
+      "theme": "dark"
+    },
+    {
+      "name": "詳細",
+      "w": 390,
+      "theme": "dark"
+    },
+    {
+      "name": "入力エラー",
+      "w": 390,
+      "theme": "dark"
+    },
+    {
+      "name": "公開影響",
+      "w": 390,
+      "theme": "dark"
+    },
+    {
+      "name": "空データ",
+      "w": 390,
+      "theme": "dark"
+    },
+    {
+      "name": "一括編集",
+      "w": 390,
+      "theme": "dark"
+    },
+    {
+      "name": "参照エラー",
+      "w": 390,
+      "theme": "dark"
+    },
+    {
+      "name": "保存エラー",
+      "w": 390,
+      "theme": "dark"
+    },
+    {
+      "name": "競合",
+      "w": 390,
+      "theme": "dark"
+    },
+    {
+      "name": "PRプレビュー",
+      "w": 390,
+      "theme": "dark"
+    },
+    {
+      "name": "PR完了",
+      "w": 390,
+      "theme": "dark"
+    },
+    {
+      "name": "ダッシュボード",
+      "w": 768,
+      "theme": "light"
+    },
+    {
+      "name": "VTuber",
+      "w": 768,
+      "theme": "light"
+    },
+    {
+      "name": "事務所・グループ",
+      "w": 768,
+      "theme": "light"
+    },
+    {
+      "name": "記念日",
+      "w": 768,
+      "theme": "light"
+    },
+    {
+      "name": "音楽",
+      "w": 768,
+      "theme": "light"
+    },
+    {
+      "name": "イベント",
+      "w": 768,
+      "theme": "light"
+    },
+    {
+      "name": "グッズ",
+      "w": 768,
+      "theme": "light"
+    },
+    {
+      "name": "変更内容",
+      "w": 768,
+      "theme": "light"
+    },
+    {
+      "name": "提出済みPR",
+      "w": 768,
+      "theme": "light"
+    },
+    {
+      "name": "設定",
+      "w": 768,
+      "theme": "light"
+    },
+    {
+      "name": "ローディング",
+      "w": 768,
+      "theme": "light"
+    },
+    {
+      "name": "詳細",
+      "w": 768,
+      "theme": "light"
+    },
+    {
+      "name": "入力エラー",
+      "w": 768,
+      "theme": "light"
+    },
+    {
+      "name": "公開影響",
+      "w": 768,
+      "theme": "light"
+    },
+    {
+      "name": "空データ",
+      "w": 768,
+      "theme": "light"
+    },
+    {
+      "name": "一括編集",
+      "w": 768,
+      "theme": "light"
+    },
+    {
+      "name": "参照エラー",
+      "w": 768,
+      "theme": "light"
+    },
+    {
+      "name": "保存エラー",
+      "w": 768,
+      "theme": "light"
+    },
+    {
+      "name": "競合",
+      "w": 768,
+      "theme": "light"
+    },
+    {
+      "name": "PRプレビュー",
+      "w": 768,
+      "theme": "light"
+    },
+    {
+      "name": "PR完了",
+      "w": 768,
+      "theme": "light"
+    },
+    {
+      "name": "ダッシュボード",
+      "w": 768,
+      "theme": "dark"
+    },
+    {
+      "name": "VTuber",
+      "w": 768,
+      "theme": "dark"
+    },
+    {
+      "name": "事務所・グループ",
+      "w": 768,
+      "theme": "dark"
+    },
+    {
+      "name": "記念日",
+      "w": 768,
+      "theme": "dark"
+    },
+    {
+      "name": "音楽",
+      "w": 768,
+      "theme": "dark"
+    },
+    {
+      "name": "イベント",
+      "w": 768,
+      "theme": "dark"
+    },
+    {
+      "name": "グッズ",
+      "w": 768,
+      "theme": "dark"
+    },
+    {
+      "name": "変更内容",
+      "w": 768,
+      "theme": "dark"
+    },
+    {
+      "name": "提出済みPR",
+      "w": 768,
+      "theme": "dark"
+    },
+    {
+      "name": "設定",
+      "w": 768,
+      "theme": "dark"
+    },
+    {
+      "name": "ローディング",
+      "w": 768,
+      "theme": "dark"
+    },
+    {
+      "name": "詳細",
+      "w": 768,
+      "theme": "dark"
+    },
+    {
+      "name": "入力エラー",
+      "w": 768,
+      "theme": "dark"
+    },
+    {
+      "name": "公開影響",
+      "w": 768,
+      "theme": "dark"
+    },
+    {
+      "name": "空データ",
+      "w": 768,
+      "theme": "dark"
+    },
+    {
+      "name": "一括編集",
+      "w": 768,
+      "theme": "dark"
+    },
+    {
+      "name": "参照エラー",
+      "w": 768,
+      "theme": "dark"
+    },
+    {
+      "name": "保存エラー",
+      "w": 768,
+      "theme": "dark"
+    },
+    {
+      "name": "競合",
+      "w": 768,
+      "theme": "dark"
+    },
+    {
+      "name": "PRプレビュー",
+      "w": 768,
+      "theme": "dark"
+    },
+    {
+      "name": "PR完了",
+      "w": 768,
+      "theme": "dark"
+    },
+    {
+      "name": "ダッシュボード",
+      "w": 1440,
+      "theme": "light"
+    },
+    {
+      "name": "VTuber",
+      "w": 1440,
+      "theme": "light"
+    },
+    {
+      "name": "事務所・グループ",
+      "w": 1440,
+      "theme": "light"
+    },
+    {
+      "name": "記念日",
+      "w": 1440,
+      "theme": "light"
+    },
+    {
+      "name": "音楽",
+      "w": 1440,
+      "theme": "light"
+    },
+    {
+      "name": "イベント",
+      "w": 1440,
+      "theme": "light"
+    },
+    {
+      "name": "グッズ",
+      "w": 1440,
+      "theme": "light"
+    },
+    {
+      "name": "変更内容",
+      "w": 1440,
+      "theme": "light"
+    },
+    {
+      "name": "提出済みPR",
+      "w": 1440,
+      "theme": "light"
+    },
+    {
+      "name": "設定",
+      "w": 1440,
+      "theme": "light"
+    },
+    {
+      "name": "ローディング",
+      "w": 1440,
+      "theme": "light"
+    },
+    {
+      "name": "詳細",
+      "w": 1440,
+      "theme": "light"
+    },
+    {
+      "name": "入力エラー",
+      "w": 1440,
+      "theme": "light"
+    },
+    {
+      "name": "公開影響",
+      "w": 1440,
+      "theme": "light"
+    },
+    {
+      "name": "空データ",
+      "w": 1440,
+      "theme": "light"
+    },
+    {
+      "name": "一括編集",
+      "w": 1440,
+      "theme": "light"
+    },
+    {
+      "name": "参照エラー",
+      "w": 1440,
+      "theme": "light"
+    },
+    {
+      "name": "保存エラー",
+      "w": 1440,
+      "theme": "light"
+    },
+    {
+      "name": "競合",
+      "w": 1440,
+      "theme": "light"
+    },
+    {
+      "name": "PRプレビュー",
+      "w": 1440,
+      "theme": "light"
+    },
+    {
+      "name": "PR完了",
+      "w": 1440,
+      "theme": "light"
+    },
+    {
+      "name": "ダッシュボード",
+      "w": 1440,
+      "theme": "dark"
+    },
+    {
+      "name": "VTuber",
+      "w": 1440,
+      "theme": "dark"
+    },
+    {
+      "name": "事務所・グループ",
+      "w": 1440,
+      "theme": "dark"
+    },
+    {
+      "name": "記念日",
+      "w": 1440,
+      "theme": "dark"
+    },
+    {
+      "name": "音楽",
+      "w": 1440,
+      "theme": "dark"
+    },
+    {
+      "name": "イベント",
+      "w": 1440,
+      "theme": "dark"
+    },
+    {
+      "name": "グッズ",
+      "w": 1440,
+      "theme": "dark"
+    },
+    {
+      "name": "変更内容",
+      "w": 1440,
+      "theme": "dark"
+    },
+    {
+      "name": "提出済みPR",
+      "w": 1440,
+      "theme": "dark"
+    },
+    {
+      "name": "設定",
+      "w": 1440,
+      "theme": "dark"
+    },
+    {
+      "name": "ローディング",
+      "w": 1440,
+      "theme": "dark"
+    },
+    {
+      "name": "詳細",
+      "w": 1440,
+      "theme": "dark"
+    },
+    {
+      "name": "入力エラー",
+      "w": 1440,
+      "theme": "dark"
+    },
+    {
+      "name": "公開影響",
+      "w": 1440,
+      "theme": "dark"
+    },
+    {
+      "name": "空データ",
+      "w": 1440,
+      "theme": "dark"
+    },
+    {
+      "name": "一括編集",
+      "w": 1440,
+      "theme": "dark"
+    },
+    {
+      "name": "参照エラー",
+      "w": 1440,
+      "theme": "dark"
+    },
+    {
+      "name": "保存エラー",
+      "w": 1440,
+      "theme": "dark"
+    },
+    {
+      "name": "競合",
+      "w": 1440,
+      "theme": "dark"
+    },
+    {
+      "name": "PRプレビュー",
+      "w": 1440,
+      "theme": "dark"
+    },
+    {
+      "name": "PR完了",
+      "w": 1440,
+      "theme": "dark"
+    },
+    {
+      "name": "ダッシュボード",
+      "w": 1920,
+      "theme": "light"
+    },
+    {
+      "name": "VTuber",
+      "w": 1920,
+      "theme": "light"
+    },
+    {
+      "name": "事務所・グループ",
+      "w": 1920,
+      "theme": "light"
+    },
+    {
+      "name": "記念日",
+      "w": 1920,
+      "theme": "light"
+    },
+    {
+      "name": "音楽",
+      "w": 1920,
+      "theme": "light"
+    },
+    {
+      "name": "イベント",
+      "w": 1920,
+      "theme": "light"
+    },
+    {
+      "name": "グッズ",
+      "w": 1920,
+      "theme": "light"
+    },
+    {
+      "name": "変更内容",
+      "w": 1920,
+      "theme": "light"
+    },
+    {
+      "name": "提出済みPR",
+      "w": 1920,
+      "theme": "light"
+    },
+    {
+      "name": "設定",
+      "w": 1920,
+      "theme": "light"
+    },
+    {
+      "name": "ローディング",
+      "w": 1920,
+      "theme": "light"
+    },
+    {
+      "name": "詳細",
+      "w": 1920,
+      "theme": "light"
+    },
+    {
+      "name": "入力エラー",
+      "w": 1920,
+      "theme": "light"
+    },
+    {
+      "name": "公開影響",
+      "w": 1920,
+      "theme": "light"
+    },
+    {
+      "name": "空データ",
+      "w": 1920,
+      "theme": "light"
+    },
+    {
+      "name": "一括編集",
+      "w": 1920,
+      "theme": "light"
+    },
+    {
+      "name": "参照エラー",
+      "w": 1920,
+      "theme": "light"
+    },
+    {
+      "name": "保存エラー",
+      "w": 1920,
+      "theme": "light"
+    },
+    {
+      "name": "競合",
+      "w": 1920,
+      "theme": "light"
+    },
+    {
+      "name": "PRプレビュー",
+      "w": 1920,
+      "theme": "light"
+    },
+    {
+      "name": "PR完了",
+      "w": 1920,
+      "theme": "light"
+    },
+    {
+      "name": "ダッシュボード",
+      "w": 1920,
+      "theme": "dark"
+    },
+    {
+      "name": "VTuber",
+      "w": 1920,
+      "theme": "dark"
+    },
+    {
+      "name": "事務所・グループ",
+      "w": 1920,
+      "theme": "dark"
+    },
+    {
+      "name": "記念日",
+      "w": 1920,
+      "theme": "dark"
+    },
+    {
+      "name": "音楽",
+      "w": 1920,
+      "theme": "dark"
+    },
+    {
+      "name": "イベント",
+      "w": 1920,
+      "theme": "dark"
+    },
+    {
+      "name": "グッズ",
+      "w": 1920,
+      "theme": "dark"
+    },
+    {
+      "name": "変更内容",
+      "w": 1920,
+      "theme": "dark"
+    },
+    {
+      "name": "提出済みPR",
+      "w": 1920,
+      "theme": "dark"
+    },
+    {
+      "name": "設定",
+      "w": 1920,
+      "theme": "dark"
+    },
+    {
+      "name": "ローディング",
+      "w": 1920,
+      "theme": "dark"
+    },
+    {
+      "name": "詳細",
+      "w": 1920,
+      "theme": "dark"
+    },
+    {
+      "name": "入力エラー",
+      "w": 1920,
+      "theme": "dark"
+    },
+    {
+      "name": "公開影響",
+      "w": 1920,
+      "theme": "dark"
+    },
+    {
+      "name": "空データ",
+      "w": 1920,
+      "theme": "dark"
+    },
+    {
+      "name": "一括編集",
+      "w": 1920,
+      "theme": "dark"
+    },
+    {
+      "name": "参照エラー",
+      "w": 1920,
+      "theme": "dark"
+    },
+    {
+      "name": "保存エラー",
+      "w": 1920,
+      "theme": "dark"
+    },
+    {
+      "name": "競合",
+      "w": 1920,
+      "theme": "dark"
+    },
+    {
+      "name": "PRプレビュー",
+      "w": 1920,
+      "theme": "dark"
+    },
+    {
+      "name": "PR完了",
+      "w": 1920,
+      "theme": "dark"
+    },
+    {
+      "name": "hideHistory-preview",
+      "w": 1440,
+      "theme": "light"
+    },
+    {
+      "name": "PR完了-hideHistory",
+      "w": 1440,
+      "theme": "light"
+    },
+    {
+      "name": "hidePrivate-preview",
+      "w": 1440,
+      "theme": "light"
+    },
+    {
+      "name": "PR完了-hidePrivate",
+      "w": 1440,
+      "theme": "light"
+    },
+    {
+      "name": "transfer-preview",
+      "w": 1440,
+      "theme": "light"
+    },
+    {
+      "name": "PR完了-transfer",
+      "w": 1440,
+      "theme": "light"
+    },
+    {
+      "name": "公開文章の要確認",
+      "w": 1440,
+      "theme": "light"
+    }
+  ],
+  "scenarios": [
+    {
+      "name": "A 10人の引退・Undo",
+      "clicks": 19,
+      "ms": 1934
+    },
+    {
+      "name": "hideHistory",
+      "passed": true,
+      "clicks": 11,
+      "ms": 1357
+    },
+    {
+      "name": "hidePrivate",
+      "passed": true,
+      "clicks": 11,
+      "ms": 1627
+    },
+    {
+      "name": "transfer",
+      "passed": true,
+      "clicks": 11,
+      "ms": 1213
+    },
+    {
+      "name": "unlinked public text requires manual review; zero operations committed",
+      "passed": true
+    }
+  ],
+  "layout": [
+    {
+      "name": "ダッシュボード",
+      "w": 320,
+      "theme": "light",
+      "overflow": false,
+      "overlaps": [],
+      "tight": [],
+      "spacing": "8px"
+    },
+    {
+      "name": "VTuber",
+      "w": 320,
+      "theme": "light",
+      "overflow": false,
+      "overlaps": [],
+      "tight": [],
+      "spacing": "8px"
+    },
+    {
+      "name": "事務所・グループ",
+      "w": 320,
+      "theme": "light",
+      "overflow": false,
+      "overlaps": [],
+      "tight": [],
+      "spacing": "8px"
+    },
+    {
+      "name": "記念日",
+      "w": 320,
+      "theme": "light",
+      "overflow": false,
+      "overlaps": [],
+      "tight": [],
+      "spacing": "8px"
+    },
+    {
+      "name": "音楽",
+      "w": 320,
+      "theme": "light",
+      "overflow": false,
+      "overlaps": [],
+      "tight": [],
+      "spacing": "8px"
+    },
+    {
+      "name": "イベント",
+      "w": 320,
+      "theme": "light",
+      "overflow": false,
+      "overlaps": [],
+      "tight": [],
+      "spacing": "8px"
+    },
+    {
+      "name": "グッズ",
+      "w": 320,
+      "theme": "light",
+      "overflow": false,
+      "overlaps": [],
+      "tight": [],
+      "spacing": "8px"
+    },
+    {
+      "name": "変更内容",
+      "w": 320,
+      "theme": "light",
+      "overflow": false,
+      "overlaps": [],
+      "tight": [],
+      "spacing": "8px"
+    },
+    {
+      "name": "提出済みPR",
+      "w": 320,
+      "theme": "light",
+      "overflow": false,
+      "overlaps": [],
+      "tight": [],
+      "spacing": "8px"
+    },
+    {
+      "name": "設定",
+      "w": 320,
+      "theme": "light",
+      "overflow": false,
+      "overlaps": [],
+      "tight": [],
+      "spacing": "8px"
+    },
+    {
+      "name": "ローディング",
+      "w": 320,
+      "theme": "light",
+      "overflow": false,
+      "overlaps": [],
+      "tight": [],
+      "spacing": "8px"
+    },
+    {
+      "name": "詳細",
+      "w": 320,
+      "theme": "light",
+      "overflow": false,
+      "overlaps": [],
+      "tight": [],
+      "spacing": "8px"
+    },
+    {
+      "name": "公開影響",
+      "w": 320,
+      "theme": "light",
+      "overflow": false,
+      "overlaps": [],
+      "tight": [],
+      "spacing": "8px"
+    },
+    {
+      "name": "入力エラー",
+      "w": 320,
+      "theme": "light",
+      "overflow": false,
+      "overlaps": [],
+      "tight": [],
+      "spacing": "8px"
+    },
+    {
+      "name": "空データ",
+      "w": 320,
+      "theme": "light",
+      "overflow": false,
+      "overlaps": [],
+      "tight": [],
+      "spacing": "8px"
+    },
+    {
+      "name": "一括編集",
+      "w": 320,
+      "theme": "light",
+      "overflow": false,
+      "overlaps": [],
+      "tight": [],
+      "spacing": "8px"
+    },
+    {
+      "name": "参照エラー",
+      "w": 320,
+      "theme": "light",
+      "overflow": false,
+      "overlaps": [],
+      "tight": [],
+      "spacing": "8px"
+    },
+    {
+      "name": "保存エラー",
+      "w": 320,
+      "theme": "light",
+      "overflow": false,
+      "overlaps": [],
+      "tight": [],
+      "spacing": "8px"
+    },
+    {
+      "name": "競合",
+      "w": 320,
+      "theme": "light",
+      "overflow": false,
+      "overlaps": [],
+      "tight": [],
+      "spacing": "8px"
+    },
+    {
+      "name": "PRプレビュー",
+      "w": 320,
+      "theme": "light",
+      "overflow": false,
+      "overlaps": [],
+      "tight": [],
+      "spacing": "8px"
+    },
+    {
+      "name": "PR完了",
+      "w": 320,
+      "theme": "light",
+      "overflow": false,
+      "overlaps": [],
+      "tight": [],
+      "spacing": "8px"
+    },
+    {
+      "name": "ダッシュボード",
+      "w": 320,
+      "theme": "dark",
+      "overflow": false,
+      "overlaps": [],
+      "tight": [],
+      "spacing": "8px"
+    },
+    {
+      "name": "VTuber",
+      "w": 320,
+      "theme": "dark",
+      "overflow": false,
+      "overlaps": [],
+      "tight": [],
+      "spacing": "8px"
+    },
+    {
+      "name": "事務所・グループ",
+      "w": 320,
+      "theme": "dark",
+      "overflow": false,
+      "overlaps": [],
+      "tight": [],
+      "spacing": "8px"
+    },
+    {
+      "name": "記念日",
+      "w": 320,
+      "theme": "dark",
+      "overflow": false,
+      "overlaps": [],
+      "tight": [],
+      "spacing": "8px"
+    },
+    {
+      "name": "音楽",
+      "w": 320,
+      "theme": "dark",
+      "overflow": false,
+      "overlaps": [],
+      "tight": [],
+      "spacing": "8px"
+    },
+    {
+      "name": "イベント",
+      "w": 320,
+      "theme": "dark",
+      "overflow": false,
+      "overlaps": [],
+      "tight": [],
+      "spacing": "8px"
+    },
+    {
+      "name": "グッズ",
+      "w": 320,
+      "theme": "dark",
+      "overflow": false,
+      "overlaps": [],
+      "tight": [],
+      "spacing": "8px"
+    },
+    {
+      "name": "変更内容",
+      "w": 320,
+      "theme": "dark",
+      "overflow": false,
+      "overlaps": [],
+      "tight": [],
+      "spacing": "8px"
+    },
+    {
+      "name": "提出済みPR",
+      "w": 320,
+      "theme": "dark",
+      "overflow": false,
+      "overlaps": [],
+      "tight": [],
+      "spacing": "8px"
+    },
+    {
+      "name": "設定",
+      "w": 320,
+      "theme": "dark",
+      "overflow": false,
+      "overlaps": [],
+      "tight": [],
+      "spacing": "8px"
+    },
+    {
+      "name": "ローディング",
+      "w": 320,
+      "theme": "dark",
+      "overflow": false,
+      "overlaps": [],
+      "tight": [],
+      "spacing": "8px"
+    },
+    {
+      "name": "詳細",
+      "w": 320,
+      "theme": "dark",
+      "overflow": false,
+      "overlaps": [],
+      "tight": [],
+      "spacing": "8px"
+    },
+    {
+      "name": "公開影響",
+      "w": 320,
+      "theme": "dark",
+      "overflow": false,
+      "overlaps": [],
+      "tight": [],
+      "spacing": "8px"
+    },
+    {
+      "name": "入力エラー",
+      "w": 320,
+      "theme": "dark",
+      "overflow": false,
+      "overlaps": [],
+      "tight": [],
+      "spacing": "8px"
+    },
+    {
+      "name": "空データ",
+      "w": 320,
+      "theme": "dark",
+      "overflow": false,
+      "overlaps": [],
+      "tight": [],
+      "spacing": "8px"
+    },
+    {
+      "name": "一括編集",
+      "w": 320,
+      "theme": "dark",
+      "overflow": false,
+      "overlaps": [],
+      "tight": [],
+      "spacing": "8px"
+    },
+    {
+      "name": "参照エラー",
+      "w": 320,
+      "theme": "dark",
+      "overflow": false,
+      "overlaps": [],
+      "tight": [],
+      "spacing": "8px"
+    },
+    {
+      "name": "保存エラー",
+      "w": 320,
+      "theme": "dark",
+      "overflow": false,
+      "overlaps": [],
+      "tight": [],
+      "spacing": "8px"
+    },
+    {
+      "name": "競合",
+      "w": 320,
+      "theme": "dark",
+      "overflow": false,
+      "overlaps": [],
+      "tight": [],
+      "spacing": "8px"
+    },
+    {
+      "name": "PRプレビュー",
+      "w": 320,
+      "theme": "dark",
+      "overflow": false,
+      "overlaps": [],
+      "tight": [],
+      "spacing": "8px"
+    },
+    {
+      "name": "PR完了",
+      "w": 320,
+      "theme": "dark",
+      "overflow": false,
+      "overlaps": [],
+      "tight": [],
+      "spacing": "8px"
+    },
+    {
+      "name": "ダッシュボード",
+      "w": 390,
+      "theme": "light",
+      "overflow": false,
+      "overlaps": [],
+      "tight": [],
+      "spacing": "8px"
+    },
+    {
+      "name": "VTuber",
+      "w": 390,
+      "theme": "light",
+      "overflow": false,
+      "overlaps": [],
+      "tight": [],
+      "spacing": "8px"
+    },
+    {
+      "name": "事務所・グループ",
+      "w": 390,
+      "theme": "light",
+      "overflow": false,
+      "overlaps": [],
+      "tight": [],
+      "spacing": "8px"
+    },
+    {
+      "name": "記念日",
+      "w": 390,
+      "theme": "light",
+      "overflow": false,
+      "overlaps": [],
+      "tight": [],
+      "spacing": "8px"
+    },
+    {
+      "name": "音楽",
+      "w": 390,
+      "theme": "light",
+      "overflow": false,
+      "overlaps": [],
+      "tight": [],
+      "spacing": "8px"
+    },
+    {
+      "name": "イベント",
+      "w": 390,
+      "theme": "light",
+      "overflow": false,
+      "overlaps": [],
+      "tight": [],
+      "spacing": "8px"
+    },
+    {
+      "name": "グッズ",
+      "w": 390,
+      "theme": "light",
+      "overflow": false,
+      "overlaps": [],
+      "tight": [],
+      "spacing": "8px"
+    },
+    {
+      "name": "変更内容",
+      "w": 390,
+      "theme": "light",
+      "overflow": false,
+      "overlaps": [],
+      "tight": [],
+      "spacing": "8px"
+    },
+    {
+      "name": "提出済みPR",
+      "w": 390,
+      "theme": "light",
+      "overflow": false,
+      "overlaps": [],
+      "tight": [],
+      "spacing": "8px"
+    },
+    {
+      "name": "設定",
+      "w": 390,
+      "theme": "light",
+      "overflow": false,
+      "overlaps": [],
+      "tight": [],
+      "spacing": "8px"
+    },
+    {
+      "name": "ローディング",
+      "w": 390,
+      "theme": "light",
+      "overflow": false,
+      "overlaps": [],
+      "tight": [],
+      "spacing": "8px"
+    },
+    {
+      "name": "詳細",
+      "w": 390,
+      "theme": "light",
+      "overflow": false,
+      "overlaps": [],
+      "tight": [],
+      "spacing": "8px"
+    },
+    {
+      "name": "公開影響",
+      "w": 390,
+      "theme": "light",
+      "overflow": false,
+      "overlaps": [],
+      "tight": [],
+      "spacing": "8px"
+    },
+    {
+      "name": "入力エラー",
+      "w": 390,
+      "theme": "light",
+      "overflow": false,
+      "overlaps": [],
+      "tight": [],
+      "spacing": "8px"
+    },
+    {
+      "name": "空データ",
+      "w": 390,
+      "theme": "light",
+      "overflow": false,
+      "overlaps": [],
+      "tight": [],
+      "spacing": "8px"
+    },
+    {
+      "name": "一括編集",
+      "w": 390,
+      "theme": "light",
+      "overflow": false,
+      "overlaps": [],
+      "tight": [],
+      "spacing": "8px"
+    },
+    {
+      "name": "参照エラー",
+      "w": 390,
+      "theme": "light",
+      "overflow": false,
+      "overlaps": [],
+      "tight": [],
+      "spacing": "8px"
+    },
+    {
+      "name": "保存エラー",
+      "w": 390,
+      "theme": "light",
+      "overflow": false,
+      "overlaps": [],
+      "tight": [],
+      "spacing": "8px"
+    },
+    {
+      "name": "競合",
+      "w": 390,
+      "theme": "light",
+      "overflow": false,
+      "overlaps": [],
+      "tight": [],
+      "spacing": "8px"
+    },
+    {
+      "name": "PRプレビュー",
+      "w": 390,
+      "theme": "light",
+      "overflow": false,
+      "overlaps": [],
+      "tight": [],
+      "spacing": "8px"
+    },
+    {
+      "name": "PR完了",
+      "w": 390,
+      "theme": "light",
+      "overflow": false,
+      "overlaps": [],
+      "tight": [],
+      "spacing": "8px"
+    },
+    {
+      "name": "ダッシュボード",
+      "w": 390,
+      "theme": "dark",
+      "overflow": false,
+      "overlaps": [],
+      "tight": [],
+      "spacing": "8px"
+    },
+    {
+      "name": "VTuber",
+      "w": 390,
+      "theme": "dark",
+      "overflow": false,
+      "overlaps": [],
+      "tight": [],
+      "spacing": "8px"
+    },
+    {
+      "name": "事務所・グループ",
+      "w": 390,
+      "theme": "dark",
+      "overflow": false,
+      "overlaps": [],
+      "tight": [],
+      "spacing": "8px"
+    },
+    {
+      "name": "記念日",
+      "w": 390,
+      "theme": "dark",
+      "overflow": false,
+      "overlaps": [],
+      "tight": [],
+      "spacing": "8px"
+    },
+    {
+      "name": "音楽",
+      "w": 390,
+      "theme": "dark",
+      "overflow": false,
+      "overlaps": [],
+      "tight": [],
+      "spacing": "8px"
+    },
+    {
+      "name": "イベント",
+      "w": 390,
+      "theme": "dark",
+      "overflow": false,
+      "overlaps": [],
+      "tight": [],
+      "spacing": "8px"
+    },
+    {
+      "name": "グッズ",
+      "w": 390,
+      "theme": "dark",
+      "overflow": false,
+      "overlaps": [],
+      "tight": [],
+      "spacing": "8px"
+    },
+    {
+      "name": "変更内容",
+      "w": 390,
+      "theme": "dark",
+      "overflow": false,
+      "overlaps": [],
+      "tight": [],
+      "spacing": "8px"
+    },
+    {
+      "name": "提出済みPR",
+      "w": 390,
+      "theme": "dark",
+      "overflow": false,
+      "overlaps": [],
+      "tight": [],
+      "spacing": "8px"
+    },
+    {
+      "name": "設定",
+      "w": 390,
+      "theme": "dark",
+      "overflow": false,
+      "overlaps": [],
+      "tight": [],
+      "spacing": "8px"
+    },
+    {
+      "name": "ローディング",
+      "w": 390,
+      "theme": "dark",
+      "overflow": false,
+      "overlaps": [],
+      "tight": [],
+      "spacing": "8px"
+    },
+    {
+      "name": "詳細",
+      "w": 390,
+      "theme": "dark",
+      "overflow": false,
+      "overlaps": [],
+      "tight": [],
+      "spacing": "8px"
+    },
+    {
+      "name": "公開影響",
+      "w": 390,
+      "theme": "dark",
+      "overflow": false,
+      "overlaps": [],
+      "tight": [],
+      "spacing": "8px"
+    },
+    {
+      "name": "入力エラー",
+      "w": 390,
+      "theme": "dark",
+      "overflow": false,
+      "overlaps": [],
+      "tight": [],
+      "spacing": "8px"
+    },
+    {
+      "name": "空データ",
+      "w": 390,
+      "theme": "dark",
+      "overflow": false,
+      "overlaps": [],
+      "tight": [],
+      "spacing": "8px"
+    },
+    {
+      "name": "一括編集",
+      "w": 390,
+      "theme": "dark",
+      "overflow": false,
+      "overlaps": [],
+      "tight": [],
+      "spacing": "8px"
+    },
+    {
+      "name": "参照エラー",
+      "w": 390,
+      "theme": "dark",
+      "overflow": false,
+      "overlaps": [],
+      "tight": [],
+      "spacing": "8px"
+    },
+    {
+      "name": "保存エラー",
+      "w": 390,
+      "theme": "dark",
+      "overflow": false,
+      "overlaps": [],
+      "tight": [],
+      "spacing": "8px"
+    },
+    {
+      "name": "競合",
+      "w": 390,
+      "theme": "dark",
+      "overflow": false,
+      "overlaps": [],
+      "tight": [],
+      "spacing": "8px"
+    },
+    {
+      "name": "PRプレビュー",
+      "w": 390,
+      "theme": "dark",
+      "overflow": false,
+      "overlaps": [],
+      "tight": [],
+      "spacing": "8px"
+    },
+    {
+      "name": "PR完了",
+      "w": 390,
+      "theme": "dark",
+      "overflow": false,
+      "overlaps": [],
+      "tight": [],
+      "spacing": "8px"
+    },
+    {
+      "name": "ダッシュボード",
+      "w": 768,
+      "theme": "light",
+      "overflow": false,
+      "overlaps": [],
+      "tight": [],
+      "spacing": "8px"
+    },
+    {
+      "name": "VTuber",
+      "w": 768,
+      "theme": "light",
+      "overflow": false,
+      "overlaps": [],
+      "tight": [],
+      "spacing": "8px"
+    },
+    {
+      "name": "事務所・グループ",
+      "w": 768,
+      "theme": "light",
+      "overflow": false,
+      "overlaps": [],
+      "tight": [],
+      "spacing": "8px"
+    },
+    {
+      "name": "記念日",
+      "w": 768,
+      "theme": "light",
+      "overflow": false,
+      "overlaps": [],
+      "tight": [],
+      "spacing": "8px"
+    },
+    {
+      "name": "音楽",
+      "w": 768,
+      "theme": "light",
+      "overflow": false,
+      "overlaps": [],
+      "tight": [],
+      "spacing": "8px"
+    },
+    {
+      "name": "イベント",
+      "w": 768,
+      "theme": "light",
+      "overflow": false,
+      "overlaps": [],
+      "tight": [],
+      "spacing": "8px"
+    },
+    {
+      "name": "グッズ",
+      "w": 768,
+      "theme": "light",
+      "overflow": false,
+      "overlaps": [],
+      "tight": [],
+      "spacing": "8px"
+    },
+    {
+      "name": "変更内容",
+      "w": 768,
+      "theme": "light",
+      "overflow": false,
+      "overlaps": [],
+      "tight": [],
+      "spacing": "8px"
+    },
+    {
+      "name": "提出済みPR",
+      "w": 768,
+      "theme": "light",
+      "overflow": false,
+      "overlaps": [],
+      "tight": [],
+      "spacing": "8px"
+    },
+    {
+      "name": "設定",
+      "w": 768,
+      "theme": "light",
+      "overflow": false,
+      "overlaps": [],
+      "tight": [],
+      "spacing": "8px"
+    },
+    {
+      "name": "ローディング",
+      "w": 768,
+      "theme": "light",
+      "overflow": false,
+      "overlaps": [],
+      "tight": [],
+      "spacing": "8px"
+    },
+    {
+      "name": "詳細",
+      "w": 768,
+      "theme": "light",
+      "overflow": false,
+      "overlaps": [],
+      "tight": [],
+      "spacing": "8px"
+    },
+    {
+      "name": "公開影響",
+      "w": 768,
+      "theme": "light",
+      "overflow": false,
+      "overlaps": [],
+      "tight": [],
+      "spacing": "8px"
+    },
+    {
+      "name": "入力エラー",
+      "w": 768,
+      "theme": "light",
+      "overflow": false,
+      "overlaps": [],
+      "tight": [],
+      "spacing": "8px"
+    },
+    {
+      "name": "空データ",
+      "w": 768,
+      "theme": "light",
+      "overflow": false,
+      "overlaps": [],
+      "tight": [],
+      "spacing": "8px"
+    },
+    {
+      "name": "一括編集",
+      "w": 768,
+      "theme": "light",
+      "overflow": false,
+      "overlaps": [],
+      "tight": [],
+      "spacing": "8px"
+    },
+    {
+      "name": "参照エラー",
+      "w": 768,
+      "theme": "light",
+      "overflow": false,
+      "overlaps": [],
+      "tight": [],
+      "spacing": "8px"
+    },
+    {
+      "name": "保存エラー",
+      "w": 768,
+      "theme": "light",
+      "overflow": false,
+      "overlaps": [],
+      "tight": [],
+      "spacing": "8px"
+    },
+    {
+      "name": "競合",
+      "w": 768,
+      "theme": "light",
+      "overflow": false,
+      "overlaps": [],
+      "tight": [],
+      "spacing": "8px"
+    },
+    {
+      "name": "PRプレビュー",
+      "w": 768,
+      "theme": "light",
+      "overflow": false,
+      "overlaps": [],
+      "tight": [],
+      "spacing": "8px"
+    },
+    {
+      "name": "PR完了",
+      "w": 768,
+      "theme": "light",
+      "overflow": false,
+      "overlaps": [],
+      "tight": [],
+      "spacing": "8px"
+    },
+    {
+      "name": "ダッシュボード",
+      "w": 768,
+      "theme": "dark",
+      "overflow": false,
+      "overlaps": [],
+      "tight": [],
+      "spacing": "8px"
+    },
+    {
+      "name": "VTuber",
+      "w": 768,
+      "theme": "dark",
+      "overflow": false,
+      "overlaps": [],
+      "tight": [],
+      "spacing": "8px"
+    },
+    {
+      "name": "事務所・グループ",
+      "w": 768,
+      "theme": "dark",
+      "overflow": false,
+      "overlaps": [],
+      "tight": [],
+      "spacing": "8px"
+    },
+    {
+      "name": "記念日",
+      "w": 768,
+      "theme": "dark",
+      "overflow": false,
+      "overlaps": [],
+      "tight": [],
+      "spacing": "8px"
+    },
+    {
+      "name": "音楽",
+      "w": 768,
+      "theme": "dark",
+      "overflow": false,
+      "overlaps": [],
+      "tight": [],
+      "spacing": "8px"
+    },
+    {
+      "name": "イベント",
+      "w": 768,
+      "theme": "dark",
+      "overflow": false,
+      "overlaps": [],
+      "tight": [],
+      "spacing": "8px"
+    },
+    {
+      "name": "グッズ",
+      "w": 768,
+      "theme": "dark",
+      "overflow": false,
+      "overlaps": [],
+      "tight": [],
+      "spacing": "8px"
+    },
+    {
+      "name": "変更内容",
+      "w": 768,
+      "theme": "dark",
+      "overflow": false,
+      "overlaps": [],
+      "tight": [],
+      "spacing": "8px"
+    },
+    {
+      "name": "提出済みPR",
+      "w": 768,
+      "theme": "dark",
+      "overflow": false,
+      "overlaps": [],
+      "tight": [],
+      "spacing": "8px"
+    },
+    {
+      "name": "設定",
+      "w": 768,
+      "theme": "dark",
+      "overflow": false,
+      "overlaps": [],
+      "tight": [],
+      "spacing": "8px"
+    },
+    {
+      "name": "ローディング",
+      "w": 768,
+      "theme": "dark",
+      "overflow": false,
+      "overlaps": [],
+      "tight": [],
+      "spacing": "8px"
+    },
+    {
+      "name": "詳細",
+      "w": 768,
+      "theme": "dark",
+      "overflow": false,
+      "overlaps": [],
+      "tight": [],
+      "spacing": "8px"
+    },
+    {
+      "name": "公開影響",
+      "w": 768,
+      "theme": "dark",
+      "overflow": false,
+      "overlaps": [],
+      "tight": [],
+      "spacing": "8px"
+    },
+    {
+      "name": "入力エラー",
+      "w": 768,
+      "theme": "dark",
+      "overflow": false,
+      "overlaps": [],
+      "tight": [],
+      "spacing": "8px"
+    },
+    {
+      "name": "空データ",
+      "w": 768,
+      "theme": "dark",
+      "overflow": false,
+      "overlaps": [],
+      "tight": [],
+      "spacing": "8px"
+    },
+    {
+      "name": "一括編集",
+      "w": 768,
+      "theme": "dark",
+      "overflow": false,
+      "overlaps": [],
+      "tight": [],
+      "spacing": "8px"
+    },
+    {
+      "name": "参照エラー",
+      "w": 768,
+      "theme": "dark",
+      "overflow": false,
+      "overlaps": [],
+      "tight": [],
+      "spacing": "8px"
+    },
+    {
+      "name": "保存エラー",
+      "w": 768,
+      "theme": "dark",
+      "overflow": false,
+      "overlaps": [],
+      "tight": [],
+      "spacing": "8px"
+    },
+    {
+      "name": "競合",
+      "w": 768,
+      "theme": "dark",
+      "overflow": false,
+      "overlaps": [],
+      "tight": [],
+      "spacing": "8px"
+    },
+    {
+      "name": "PRプレビュー",
+      "w": 768,
+      "theme": "dark",
+      "overflow": false,
+      "overlaps": [],
+      "tight": [],
+      "spacing": "8px"
+    },
+    {
+      "name": "PR完了",
+      "w": 768,
+      "theme": "dark",
+      "overflow": false,
+      "overlaps": [],
+      "tight": [],
+      "spacing": "8px"
+    },
+    {
+      "name": "ダッシュボード",
+      "w": 1440,
+      "theme": "light",
+      "overflow": false,
+      "overlaps": [],
+      "tight": [],
+      "spacing": "8px"
+    },
+    {
+      "name": "VTuber",
+      "w": 1440,
+      "theme": "light",
+      "overflow": false,
+      "overlaps": [],
+      "tight": [],
+      "spacing": "8px"
+    },
+    {
+      "name": "事務所・グループ",
+      "w": 1440,
+      "theme": "light",
+      "overflow": false,
+      "overlaps": [],
+      "tight": [],
+      "spacing": "8px"
+    },
+    {
+      "name": "記念日",
+      "w": 1440,
+      "theme": "light",
+      "overflow": false,
+      "overlaps": [],
+      "tight": [],
+      "spacing": "8px"
+    },
+    {
+      "name": "音楽",
+      "w": 1440,
+      "theme": "light",
+      "overflow": false,
+      "overlaps": [],
+      "tight": [],
+      "spacing": "8px"
+    },
+    {
+      "name": "イベント",
+      "w": 1440,
+      "theme": "light",
+      "overflow": false,
+      "overlaps": [],
+      "tight": [],
+      "spacing": "8px"
+    },
+    {
+      "name": "グッズ",
+      "w": 1440,
+      "theme": "light",
+      "overflow": false,
+      "overlaps": [],
+      "tight": [],
+      "spacing": "8px"
+    },
+    {
+      "name": "変更内容",
+      "w": 1440,
+      "theme": "light",
+      "overflow": false,
+      "overlaps": [],
+      "tight": [],
+      "spacing": "8px"
+    },
+    {
+      "name": "提出済みPR",
+      "w": 1440,
+      "theme": "light",
+      "overflow": false,
+      "overlaps": [],
+      "tight": [],
+      "spacing": "8px"
+    },
+    {
+      "name": "設定",
+      "w": 1440,
+      "theme": "light",
+      "overflow": false,
+      "overlaps": [],
+      "tight": [],
+      "spacing": "8px"
+    },
+    {
+      "name": "ローディング",
+      "w": 1440,
+      "theme": "light",
+      "overflow": false,
+      "overlaps": [],
+      "tight": [],
+      "spacing": "8px"
+    },
+    {
+      "name": "詳細",
+      "w": 1440,
+      "theme": "light",
+      "overflow": false,
+      "overlaps": [],
+      "tight": [],
+      "spacing": "8px"
+    },
+    {
+      "name": "公開影響",
+      "w": 1440,
+      "theme": "light",
+      "overflow": false,
+      "overlaps": [],
+      "tight": [],
+      "spacing": "8px"
+    },
+    {
+      "name": "入力エラー",
+      "w": 1440,
+      "theme": "light",
+      "overflow": false,
+      "overlaps": [],
+      "tight": [],
+      "spacing": "8px"
+    },
+    {
+      "name": "空データ",
+      "w": 1440,
+      "theme": "light",
+      "overflow": false,
+      "overlaps": [],
+      "tight": [],
+      "spacing": "8px"
+    },
+    {
+      "name": "一括編集",
+      "w": 1440,
+      "theme": "light",
+      "overflow": false,
+      "overlaps": [],
+      "tight": [],
+      "spacing": "8px"
+    },
+    {
+      "name": "参照エラー",
+      "w": 1440,
+      "theme": "light",
+      "overflow": false,
+      "overlaps": [],
+      "tight": [],
+      "spacing": "8px"
+    },
+    {
+      "name": "保存エラー",
+      "w": 1440,
+      "theme": "light",
+      "overflow": false,
+      "overlaps": [],
+      "tight": [],
+      "spacing": "8px"
+    },
+    {
+      "name": "競合",
+      "w": 1440,
+      "theme": "light",
+      "overflow": false,
+      "overlaps": [],
+      "tight": [],
+      "spacing": "8px"
+    },
+    {
+      "name": "PRプレビュー",
+      "w": 1440,
+      "theme": "light",
+      "overflow": false,
+      "overlaps": [],
+      "tight": [],
+      "spacing": "8px"
+    },
+    {
+      "name": "PR完了",
+      "w": 1440,
+      "theme": "light",
+      "overflow": false,
+      "overlaps": [],
+      "tight": [],
+      "spacing": "8px"
+    },
+    {
+      "name": "ダッシュボード",
+      "w": 1440,
+      "theme": "dark",
+      "overflow": false,
+      "overlaps": [],
+      "tight": [],
+      "spacing": "8px"
+    },
+    {
+      "name": "VTuber",
+      "w": 1440,
+      "theme": "dark",
+      "overflow": false,
+      "overlaps": [],
+      "tight": [],
+      "spacing": "8px"
+    },
+    {
+      "name": "事務所・グループ",
+      "w": 1440,
+      "theme": "dark",
+      "overflow": false,
+      "overlaps": [],
+      "tight": [],
+      "spacing": "8px"
+    },
+    {
+      "name": "記念日",
+      "w": 1440,
+      "theme": "dark",
+      "overflow": false,
+      "overlaps": [],
+      "tight": [],
+      "spacing": "8px"
+    },
+    {
+      "name": "音楽",
+      "w": 1440,
+      "theme": "dark",
+      "overflow": false,
+      "overlaps": [],
+      "tight": [],
+      "spacing": "8px"
+    },
+    {
+      "name": "イベント",
+      "w": 1440,
+      "theme": "dark",
+      "overflow": false,
+      "overlaps": [],
+      "tight": [],
+      "spacing": "8px"
+    },
+    {
+      "name": "グッズ",
+      "w": 1440,
+      "theme": "dark",
+      "overflow": false,
+      "overlaps": [],
+      "tight": [],
+      "spacing": "8px"
+    },
+    {
+      "name": "変更内容",
+      "w": 1440,
+      "theme": "dark",
+      "overflow": false,
+      "overlaps": [],
+      "tight": [],
+      "spacing": "8px"
+    },
+    {
+      "name": "提出済みPR",
+      "w": 1440,
+      "theme": "dark",
+      "overflow": false,
+      "overlaps": [],
+      "tight": [],
+      "spacing": "8px"
+    },
+    {
+      "name": "設定",
+      "w": 1440,
+      "theme": "dark",
+      "overflow": false,
+      "overlaps": [],
+      "tight": [],
+      "spacing": "8px"
+    },
+    {
+      "name": "ローディング",
+      "w": 1440,
+      "theme": "dark",
+      "overflow": false,
+      "overlaps": [],
+      "tight": [],
+      "spacing": "8px"
+    },
+    {
+      "name": "詳細",
+      "w": 1440,
+      "theme": "dark",
+      "overflow": false,
+      "overlaps": [],
+      "tight": [],
+      "spacing": "8px"
+    },
+    {
+      "name": "公開影響",
+      "w": 1440,
+      "theme": "dark",
+      "overflow": false,
+      "overlaps": [],
+      "tight": [],
+      "spacing": "8px"
+    },
+    {
+      "name": "入力エラー",
+      "w": 1440,
+      "theme": "dark",
+      "overflow": false,
+      "overlaps": [],
+      "tight": [],
+      "spacing": "8px"
+    },
+    {
+      "name": "空データ",
+      "w": 1440,
+      "theme": "dark",
+      "overflow": false,
+      "overlaps": [],
+      "tight": [],
+      "spacing": "8px"
+    },
+    {
+      "name": "一括編集",
+      "w": 1440,
+      "theme": "dark",
+      "overflow": false,
+      "overlaps": [],
+      "tight": [],
+      "spacing": "8px"
+    },
+    {
+      "name": "参照エラー",
+      "w": 1440,
+      "theme": "dark",
+      "overflow": false,
+      "overlaps": [],
+      "tight": [],
+      "spacing": "8px"
+    },
+    {
+      "name": "保存エラー",
+      "w": 1440,
+      "theme": "dark",
+      "overflow": false,
+      "overlaps": [],
+      "tight": [],
+      "spacing": "8px"
+    },
+    {
+      "name": "競合",
+      "w": 1440,
+      "theme": "dark",
+      "overflow": false,
+      "overlaps": [],
+      "tight": [],
+      "spacing": "8px"
+    },
+    {
+      "name": "PRプレビュー",
+      "w": 1440,
+      "theme": "dark",
+      "overflow": false,
+      "overlaps": [],
+      "tight": [],
+      "spacing": "8px"
+    },
+    {
+      "name": "PR完了",
+      "w": 1440,
+      "theme": "dark",
+      "overflow": false,
+      "overlaps": [],
+      "tight": [],
+      "spacing": "8px"
+    },
+    {
+      "name": "ダッシュボード",
+      "w": 1920,
+      "theme": "light",
+      "overflow": false,
+      "overlaps": [],
+      "tight": [],
+      "spacing": "8px"
+    },
+    {
+      "name": "VTuber",
+      "w": 1920,
+      "theme": "light",
+      "overflow": false,
+      "overlaps": [],
+      "tight": [],
+      "spacing": "8px"
+    },
+    {
+      "name": "事務所・グループ",
+      "w": 1920,
+      "theme": "light",
+      "overflow": false,
+      "overlaps": [],
+      "tight": [],
+      "spacing": "8px"
+    },
+    {
+      "name": "記念日",
+      "w": 1920,
+      "theme": "light",
+      "overflow": false,
+      "overlaps": [],
+      "tight": [],
+      "spacing": "8px"
+    },
+    {
+      "name": "音楽",
+      "w": 1920,
+      "theme": "light",
+      "overflow": false,
+      "overlaps": [],
+      "tight": [],
+      "spacing": "8px"
+    },
+    {
+      "name": "イベント",
+      "w": 1920,
+      "theme": "light",
+      "overflow": false,
+      "overlaps": [],
+      "tight": [],
+      "spacing": "8px"
+    },
+    {
+      "name": "グッズ",
+      "w": 1920,
+      "theme": "light",
+      "overflow": false,
+      "overlaps": [],
+      "tight": [],
+      "spacing": "8px"
+    },
+    {
+      "name": "変更内容",
+      "w": 1920,
+      "theme": "light",
+      "overflow": false,
+      "overlaps": [],
+      "tight": [],
+      "spacing": "8px"
+    },
+    {
+      "name": "提出済みPR",
+      "w": 1920,
+      "theme": "light",
+      "overflow": false,
+      "overlaps": [],
+      "tight": [],
+      "spacing": "8px"
+    },
+    {
+      "name": "設定",
+      "w": 1920,
+      "theme": "light",
+      "overflow": false,
+      "overlaps": [],
+      "tight": [],
+      "spacing": "8px"
+    },
+    {
+      "name": "ローディング",
+      "w": 1920,
+      "theme": "light",
+      "overflow": false,
+      "overlaps": [],
+      "tight": [],
+      "spacing": "8px"
+    },
+    {
+      "name": "詳細",
+      "w": 1920,
+      "theme": "light",
+      "overflow": false,
+      "overlaps": [],
+      "tight": [],
+      "spacing": "8px"
+    },
+    {
+      "name": "公開影響",
+      "w": 1920,
+      "theme": "light",
+      "overflow": false,
+      "overlaps": [],
+      "tight": [],
+      "spacing": "8px"
+    },
+    {
+      "name": "入力エラー",
+      "w": 1920,
+      "theme": "light",
+      "overflow": false,
+      "overlaps": [],
+      "tight": [],
+      "spacing": "8px"
+    },
+    {
+      "name": "空データ",
+      "w": 1920,
+      "theme": "light",
+      "overflow": false,
+      "overlaps": [],
+      "tight": [],
+      "spacing": "8px"
+    },
+    {
+      "name": "一括編集",
+      "w": 1920,
+      "theme": "light",
+      "overflow": false,
+      "overlaps": [],
+      "tight": [],
+      "spacing": "8px"
+    },
+    {
+      "name": "参照エラー",
+      "w": 1920,
+      "theme": "light",
+      "overflow": false,
+      "overlaps": [],
+      "tight": [],
+      "spacing": "8px"
+    },
+    {
+      "name": "保存エラー",
+      "w": 1920,
+      "theme": "light",
+      "overflow": false,
+      "overlaps": [],
+      "tight": [],
+      "spacing": "8px"
+    },
+    {
+      "name": "競合",
+      "w": 1920,
+      "theme": "light",
+      "overflow": false,
+      "overlaps": [],
+      "tight": [],
+      "spacing": "8px"
+    },
+    {
+      "name": "PRプレビュー",
+      "w": 1920,
+      "theme": "light",
+      "overflow": false,
+      "overlaps": [],
+      "tight": [],
+      "spacing": "8px"
+    },
+    {
+      "name": "PR完了",
+      "w": 1920,
+      "theme": "light",
+      "overflow": false,
+      "overlaps": [],
+      "tight": [],
+      "spacing": "8px"
+    },
+    {
+      "name": "ダッシュボード",
+      "w": 1920,
+      "theme": "dark",
+      "overflow": false,
+      "overlaps": [],
+      "tight": [],
+      "spacing": "8px"
+    },
+    {
+      "name": "VTuber",
+      "w": 1920,
+      "theme": "dark",
+      "overflow": false,
+      "overlaps": [],
+      "tight": [],
+      "spacing": "8px"
+    },
+    {
+      "name": "事務所・グループ",
+      "w": 1920,
+      "theme": "dark",
+      "overflow": false,
+      "overlaps": [],
+      "tight": [],
+      "spacing": "8px"
+    },
+    {
+      "name": "記念日",
+      "w": 1920,
+      "theme": "dark",
+      "overflow": false,
+      "overlaps": [],
+      "tight": [],
+      "spacing": "8px"
+    },
+    {
+      "name": "音楽",
+      "w": 1920,
+      "theme": "dark",
+      "overflow": false,
+      "overlaps": [],
+      "tight": [],
+      "spacing": "8px"
+    },
+    {
+      "name": "イベント",
+      "w": 1920,
+      "theme": "dark",
+      "overflow": false,
+      "overlaps": [],
+      "tight": [],
+      "spacing": "8px"
+    },
+    {
+      "name": "グッズ",
+      "w": 1920,
+      "theme": "dark",
+      "overflow": false,
+      "overlaps": [],
+      "tight": [],
+      "spacing": "8px"
+    },
+    {
+      "name": "変更内容",
+      "w": 1920,
+      "theme": "dark",
+      "overflow": false,
+      "overlaps": [],
+      "tight": [],
+      "spacing": "8px"
+    },
+    {
+      "name": "提出済みPR",
+      "w": 1920,
+      "theme": "dark",
+      "overflow": false,
+      "overlaps": [],
+      "tight": [],
+      "spacing": "8px"
+    },
+    {
+      "name": "設定",
+      "w": 1920,
+      "theme": "dark",
+      "overflow": false,
+      "overlaps": [],
+      "tight": [],
+      "spacing": "8px"
+    },
+    {
+      "name": "ローディング",
+      "w": 1920,
+      "theme": "dark",
+      "overflow": false,
+      "overlaps": [],
+      "tight": [],
+      "spacing": "8px"
+    },
+    {
+      "name": "詳細",
+      "w": 1920,
+      "theme": "dark",
+      "overflow": false,
+      "overlaps": [],
+      "tight": [],
+      "spacing": "8px"
+    },
+    {
+      "name": "公開影響",
+      "w": 1920,
+      "theme": "dark",
+      "overflow": false,
+      "overlaps": [],
+      "tight": [],
+      "spacing": "8px"
+    },
+    {
+      "name": "入力エラー",
+      "w": 1920,
+      "theme": "dark",
+      "overflow": false,
+      "overlaps": [],
+      "tight": [],
+      "spacing": "8px"
+    },
+    {
+      "name": "空データ",
+      "w": 1920,
+      "theme": "dark",
+      "overflow": false,
+      "overlaps": [],
+      "tight": [],
+      "spacing": "8px"
+    },
+    {
+      "name": "一括編集",
+      "w": 1920,
+      "theme": "dark",
+      "overflow": false,
+      "overlaps": [],
+      "tight": [],
+      "spacing": "8px"
+    },
+    {
+      "name": "参照エラー",
+      "w": 1920,
+      "theme": "dark",
+      "overflow": false,
+      "overlaps": [],
+      "tight": [],
+      "spacing": "8px"
+    },
+    {
+      "name": "保存エラー",
+      "w": 1920,
+      "theme": "dark",
+      "overflow": false,
+      "overlaps": [],
+      "tight": [],
+      "spacing": "8px"
+    },
+    {
+      "name": "競合",
+      "w": 1920,
+      "theme": "dark",
+      "overflow": false,
+      "overlaps": [],
+      "tight": [],
+      "spacing": "8px"
+    },
+    {
+      "name": "PRプレビュー",
+      "w": 1920,
+      "theme": "dark",
+      "overflow": false,
+      "overlaps": [],
+      "tight": [],
+      "spacing": "8px"
+    },
+    {
+      "name": "PR完了",
+      "w": 1920,
+      "theme": "dark",
+      "overflow": false,
+      "overlaps": [],
+      "tight": [],
+      "spacing": "8px"
+    },
+    {
+      "name": "PR完了",
+      "w": 1440,
+      "theme": "light",
+      "overflow": false,
+      "overlaps": [],
+      "tight": [],
+      "spacing": "8px"
+    },
+    {
+      "name": "PR完了",
+      "w": 1440,
+      "theme": "light",
+      "overflow": false,
+      "overlaps": [],
+      "tight": [],
+      "spacing": "8px"
+    },
+    {
+      "name": "PR完了",
+      "w": 1440,
+      "theme": "light",
+      "overflow": false,
+      "overlaps": [],
+      "tight": [],
+      "spacing": "8px"
+    }
+  ],
+  "environment": {
+    "browser": "156.0.8078.79",
+    "mock": true
+  },
+  "normalListPerformance": {
+    "count": 1000,
+    "initialMs": 7.699999988079071,
+    "initialRows": 200,
+    "searchMs": 2.300000011920929,
+    "resultRows": 1
+  }
+}

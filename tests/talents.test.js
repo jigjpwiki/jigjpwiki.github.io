@@ -82,11 +82,11 @@ test('build publishes only ready pages/public data and keeps schedule implementa
   const { execFileSync } = require('node:child_process');
   execFileSync(process.execPath, [path.join(__dirname, '../scripts/build-site.js')]);
   const read = file => fs.readFileSync(path.join(root, file), 'utf8');
-  assert.deepEqual(JSON.parse(read('data/talents.json')), master);
+  assert.deepEqual(JSON.parse(read('data/talents.json')), require('../lib/talent-publication').publicTalents(master));
   assert(fs.existsSync(path.join(root, 'anniversaries/index.html')));
   assert(fs.existsSync(path.join(root, 'goods/index.html')));
   const publicGoods=require('../lib/catalog').publicCatalog(require('../lib/catalog').loadCatalog(loadTalents()));for(const field of ['products','campaigns','offers'])assert.deepEqual(JSON.parse(read('data/goods.json'))[field],publicGoods[field]);
-  assert(fs.existsSync(path.join(root,'goods/product-000001/index.html')));
+  for(const product of require('../data/goods.json').products)assert.equal(fs.existsSync(path.join(root,'goods',product.id,'index.html')),product.visibility==='public');
   assert(JSON.parse(read('data/catalog.json')).groups.every(g => g.visibility === 'public'));
   for (const file of ['data/talent-id-registry.json', 'data/youtube_cache.json', 'data/youtube_streamers.json', 'schemas', 'pages', 'docs', 'tests', 'fixture-goods', 'fixture-profile', 'lib', 'node_modules', '.env', '.github', 'data/catalog-id-registry.json', 'talents/detail']) {
     assert.equal(fs.existsSync(path.join(root, file)), false, file);
@@ -100,9 +100,9 @@ test('build publishes only ready pages/public data and keeps schedule implementa
   for (const file of ['assets/js/app.js', 'assets/js/schedule.js', 'assets/js/ui.js', 'assets/js/youtube-status.js']) {
     assert.equal(read(file), fs.readFileSync(path.join(__dirname, '..', file), 'utf8'));
   }
-  for (const talent of master.talents) { assert(fs.existsSync(path.join(root, 'talents', talent.id, 'index.html'))); assert.match(read('sitemap.xml'), new RegExp('/talents/' + talent.id + '/')); }
-  assert.equal((read('talents/index.html').match(/class="talent-card"/g) || []).length, master.talents.length);
-  for(const file of ['talents/tal-000001/index.html','anniversaries/index.html','events/evt-000001/index.html','music/songs/song-000001/index.html','music/karaoke/karaoke-000001/index.html','goods/product-000001/index.html'])assert.doesNotMatch(read(file),/profile-provenance|feature-sources|<summary>出典/);
+  for (const talent of master.talents) { const visible=talent.visibility!=='draft';assert.equal(fs.existsSync(path.join(root, 'talents', talent.id, 'index.html')),visible);assert.equal(read('sitemap.xml').includes('/talents/'+talent.id+'/'),visible); }
+  assert.equal((read('talents/index.html').match(/class="talent-card"/g) || []).length, master.talents.filter(t=>t.visibility!=='draft').length);
+  const generatedHtml=[];const scan=dir=>{for(const e of fs.readdirSync(dir,{withFileTypes:true})){const p=path.join(dir,e.name);if(e.isDirectory())scan(p);else if(e.name.endsWith('.html'))generatedHtml.push(p);}};scan(root);for(const file of generatedHtml)assert.doesNotMatch(fs.readFileSync(file,'utf8'),/profile-provenance|feature-sources|<summary>出典/);
   for(const file of ['talents','catalog','anniversaries','events','music','karaoke','goods'])assert.doesNotMatch(read('data/'+file+'.json'),/"(?:sources|sourceRefs|displayNameSourceRefs|checkedAt|artistEvidence|verificationMethod)"/);
 });
 
@@ -111,7 +111,7 @@ test('feature pages and published JSON are allowlisted while candidates, registr
  // The normal suite's build checks also verify every talent. Avoid concurrent build mutations here.
  const source=fs.readFileSync(path.join(__dirname,'../scripts/build-site.js'),'utf8');
  for(const privatePath of ['ops','schemas','docs','tests','lib','data/feature-id-registry.json','data/media.json','data/release.json'])assert(!fs.existsSync(path.join(root,privatePath)),privatePath);
- for(const route of ['events','events/evt-000001','music','music/songs/song-000001','music/karaoke','music/karaoke/karaoke-000001'])assert(fs.existsSync(path.join(root,route,'index.html')),route);
+ for(const route of ['events','music','music/karaoke'])assert(fs.existsSync(path.join(root,route,'index.html')),route);
  for(const name of ['events','music','karaoke','karaoke-links']){const raw=fs.readFileSync(path.join(root,'data',name+'.json'),'utf8');assert.doesNotMatch(raw,/"(?:description|apiKey|password|token|privateNotes|reviewStatus)"/);}
  const sitemap=fs.readFileSync(path.join(root,'sitemap.xml'),'utf8');
  for(const [file,key,prefix]of [['events','events','events'],['music','songs','music/songs'],['karaoke','karaokes','music/karaoke']])for(const row of JSON.parse(fs.readFileSync(path.join(root,'data',file+'.json'),'utf8'))[key]){assert(fs.existsSync(path.join(root,prefix,row.id,'index.html')));assert(sitemap.includes(`https://www.jigdule.jp/${prefix}/${row.id}/`));}

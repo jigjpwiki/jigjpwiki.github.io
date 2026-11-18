@@ -307,6 +307,10 @@
         "officialProfileUrl": {
           "type": "string",
           "format": "public-url"
+        },
+        "historyNamePublic": {
+          "type": "boolean",
+          "description": "draft時、名前を公開履歴に残すことを明示承認。プロフィールは公開しない。"
         }
       }
     }

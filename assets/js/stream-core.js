@@ -22,7 +22,7 @@
   }
   function identityIndex(people) {
     return people
-      .filter((p) => p.visibility !== "draft")
+      .filter((p) => p.visibility !== "draft" && !p.profileHidden)
       .map((p) => ({
         id: p.id,
         displayName: p.displayName,

@@ -1,3 +1,4 @@
+import {vnext5Browser} from "./vnext5.browser.mjs";
 import {AsyncLocalStorage} from 'node:async_hooks';
 import {qualityBrowser} from './quality.browser.mjs';
 import {baselineModels,currentModels} from './baseline.mjs';
@@ -15,7 +16,7 @@ import { readFiles as files, filePath } from "../src/github.mjs";
 const require = createRequire(import.meta.url),
   { chromium } = require("../../node_modules/playwright");
 const root = path.resolve(import.meta.dirname, "../.."),
-  models = process.env.ADMIN_QUALITY_ONLY?currentModels():baselineModels();
+  models = (process.env.ADMIN_QUALITY_ONLY||process.env.ADMIN_VNEXT5_ONLY)?currentModels():baselineModels();
 const data = new Map(),requestScope=new AsyncLocalStorage(),requestMetrics=[];
 let lastPreview, lastSubmissionPlan;
 let mainSha = "main-sha";
@@ -489,6 +490,7 @@ const cases = [
           (o) => o.endsAt && Date.parse(o.endsAt) < Date.now(),
         ),
         product = models.goods.products.find((r) => r.id === offer.productId);
+      if(await p.getByRole("button",{name:"一括編集",exact:true}).count())await p.getByRole("button",{name:"一括編集",exact:true}).click();
       await p
         .getByRole("searchbox", { name: "タイトルで検索" })
         .fill(product.title);
@@ -500,8 +502,10 @@ const cases = [
   ],
 ];
 try {
-  if(process.env.ADMIN_QUALITY_ONLY){
-    await qualityBrowser({browser,base,models,reset:()=>{data.clear();mainSha='main-sha';mainModels=structuredClone(models);createdBranches.clear();commitSerial=0;created=false;writes=0;requestMetrics.splice(0);},advance:()=>{mainSha='new-main-sha';mainModels.talents.talents[0].displayName+=' main';},writes:()=>writes,metrics:()=>structuredClone(requestMetrics),dir:process.env.ADMIN_QUALITY_DIR,before:!!process.env.ADMIN_PUBLIC_ROOT});
+  if(process.env.ADMIN_VNEXT5_ONLY){
+    await vnext5Browser({browser,base,models,reset:()=>{data.clear();mainSha="main-sha";mainModels=structuredClone(models);createdBranches.clear();commitSerial=0;created=false;writes=0;},writes:()=>writes,addAmbiguous:()=>{mainSha="new-main-sha";mainModels.goods.campaigns[0].title=models.talents.talents.find(t=>t.id===models.karaoke.karaokes[0].talentIds[0]).displayName+" 未リンク文章の品質fixture";},advance:()=>{mainSha="new-main-sha";mainModels.talents.talents[0].displayName+=" main";},before:!!process.env.ADMIN_PUBLIC_ROOT,dir:process.env.ADMIN_VNEXT5_DIR});
+  }else if(process.env.ADMIN_QUALITY_ONLY){
+    await qualityBrowser({browser,base,models,reset:()=>{data.clear();mainSha='main-sha';mainModels=structuredClone(models);createdBranches.clear();commitSerial=0;created=false;writes=0;requestMetrics.splice(0);},advance:()=>{mainSha='new-main-sha';mainModels.talents.talents[0].displayName+=' main';},writes:()=>writes,metrics:()=>structuredClone(requestMetrics),dir:process.env.ADMIN_QUALITY_DIR,before:!!process.env.ADMIN_PUBLIC_ROOT&&!process.env.ADMIN_COMPARE_BULK});
   }else if(process.env.ADMIN_PHASE3_ONLY){
     await phase3Browser({browser,base,models,reset:()=>{data.clear();mainSha='main-sha';mainModels=structuredClone(models);createdBranches.clear();commitSerial=0;created=false;},shotDir:process.env.ADMIN_PHASE3_SCREENSHOTS,before:!!process.env.ADMIN_PUBLIC_ROOT});
   } else {

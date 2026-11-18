@@ -1,0 +1,67 @@
+{
+  "talents": {
+    "equal": true,
+    "records": {
+      "organizations": 5,
+      "talents": 97
+    }
+  },
+  "catalog": {
+    "equal": true,
+    "records": {
+      "groups": 11
+    }
+  },
+  "anniversaries": {
+    "equal": true,
+    "records": {
+      "events": 91
+    }
+  },
+  "music": {
+    "equal": true,
+    "records": {
+      "songs": 54,
+      "musicVideos": 4,
+      "videos": 4
+    }
+  },
+  "karaoke": {
+    "equal": true,
+    "records": {
+      "karaokes": 17,
+      "performances": 55,
+      "videos": 17
+    }
+  },
+  "events": {
+    "equal": true,
+    "records": {
+      "events": 5,
+      "videos": 1,
+      "groups": 11
+    }
+  },
+  "goods": {
+    "equal": true,
+    "records": {
+      "products": 41,
+      "campaigns": 6,
+      "offers": 41
+    }
+  },
+  "youtube": {
+    "equal": true,
+    "records": 171
+  },
+  "twitch": {
+    "equal": true,
+    "records": 7
+  },
+  "tiktok": {
+    "equal": true,
+    "records": 0
+  },
+  "removedFiles": [],
+  "addedFiles": []
+}

@@ -33,5 +33,6 @@ module.exports = function validate(models, previous) {
     models["feature-id-registry"],
   );
   validateKaraoke(m, models.karaoke, models["feature-id-registry"]);
+  require("../../lib/talent-publication").assertPrivateUnreferenced(t,[models.catalog,models.anniversaries,models.events,models.music,models.karaoke,models.goods,models.media]);
   return true;
 };

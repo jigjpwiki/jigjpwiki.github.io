@@ -43,6 +43,10 @@ export async function phase3Browser({
   }
   async function nav(p, name) {
     await p.getByRole("link", { name, exact: true }).click();
+    const targetType={VTuber:'talent','事務所・グループ':'organization','記念日':'anniversary','音楽':'song','イベント':'event','グッズ':'campaign'}[name];
+    const targetTitle={VTuber:'VTuber','事務所・グループ':'事務所','記念日':'記念日','音楽':'楽曲','イベント':'イベント','グッズ':'キャンペーン'}[name];
+    await p.locator(`.record-browser[data-entity="${targetType}"],.list-region [data-data-table="${targetTitle}"]`).first().waitFor();
+    if(await p.getByRole("button",{name:"一括編集",exact:true}).count())await p.getByRole("button",{name:"一括編集",exact:true}).click();
     await p.locator(".data-table table").first().waitFor();
     const route = await p.evaluate(() => location.hash);
     await p.locator(".skip-link").focus();
@@ -160,6 +164,7 @@ export async function phase3Browser({
     await p
       .getByRole("button", { name: "新規記念日登録", exact: true })
       .waitFor();
+    if(!old)await p.getByRole("button",{name:"一括編集",exact:true}).click();
     await start(p);
     for (let i = 0; i < 10; i++) {
       if (old) {
@@ -186,6 +191,7 @@ export async function phase3Browser({
     }
     await save(p);
     await p.getByRole("link", { name: "VTuber", exact: true }).click();
+    if(!old)await p.getByRole("button",{name:"一括編集",exact:true}).click();
     await p.getByRole("button", { name: "新規登録", exact: true }).waitFor();
     if (old) {
       for (let i = 0; i < 10; i++) {
@@ -435,6 +441,7 @@ export async function phase3Browser({
     await save(p);
     await p.reload();
     await p.locator("[data-save-state][data-state=saved]").waitFor();
+    await p.getByRole("button",{name:"一括編集",exact:true}).click();
     await p.locator(".changed-cell").first().waitFor();
     // Search + type + visibility, sort, column preferences and keyboard cell navigation.
     const t = p.locator(".list-region .data-table").first();

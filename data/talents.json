@@ -168,7 +168,7 @@
         }
       ],
       "agencyStatus": {
-        "value": "unaffiliated"
+        "value": "unknown"
       },
       "activityStatus": {
         "value": "ended"
@@ -331,7 +331,7 @@
         "value": "affiliated"
       },
       "activityStatus": {
-        "value": "active"
+        "value": "ended"
       },
       "accounts": [
         {
@@ -383,7 +383,7 @@
         "value": "affiliated"
       },
       "activityStatus": {
-        "value": "active"
+        "value": "ended"
       },
       "accounts": [
         {
@@ -435,7 +435,7 @@
         "value": "affiliated"
       },
       "activityStatus": {
-        "value": "active"
+        "value": "ended"
       },
       "accounts": [
         {
@@ -493,7 +493,7 @@
         "value": "affiliated"
       },
       "activityStatus": {
-        "value": "active"
+        "value": "ended"
       },
       "accounts": [
         {
@@ -539,7 +539,7 @@
         "value": "affiliated"
       },
       "activityStatus": {
-        "value": "active"
+        "value": "ended"
       },
       "accounts": [
         {
@@ -585,7 +585,7 @@
         "value": "affiliated"
       },
       "activityStatus": {
-        "value": "active"
+        "value": "ended"
       },
       "accounts": [
         {
@@ -624,7 +624,7 @@
         "value": "affiliated"
       },
       "activityStatus": {
-        "value": "active"
+        "value": "ended"
       },
       "accounts": [
         {
@@ -668,7 +668,7 @@
         "value": "affiliated"
       },
       "activityStatus": {
-        "value": "active"
+        "value": "ended"
       },
       "accounts": [
         {
@@ -712,7 +712,7 @@
         "value": "affiliated"
       },
       "activityStatus": {
-        "value": "active"
+        "value": "ended"
       },
       "accounts": [
         {
@@ -751,7 +751,7 @@
         "value": "affiliated"
       },
       "activityStatus": {
-        "value": "active"
+        "value": "ended"
       },
       "accounts": [
         {
@@ -790,7 +790,7 @@
         "value": "affiliated"
       },
       "activityStatus": {
-        "value": "active"
+        "value": "ended"
       },
       "accounts": [
         {
@@ -829,7 +829,7 @@
         "value": "affiliated"
       },
       "activityStatus": {
-        "value": "active"
+        "value": "ended"
       },
       "accounts": [
         {
@@ -873,7 +873,7 @@
         "value": "affiliated"
       },
       "activityStatus": {
-        "value": "active"
+        "value": "ended"
       },
       "accounts": [
         {
@@ -917,7 +917,7 @@
         "value": "affiliated"
       },
       "activityStatus": {
-        "value": "active"
+        "value": "ended"
       },
       "accounts": [
         {
@@ -961,7 +961,7 @@
         "value": "affiliated"
       },
       "activityStatus": {
-        "value": "active"
+        "value": "ended"
       },
       "accounts": [
         {
@@ -1005,7 +1005,7 @@
         "value": "affiliated"
       },
       "activityStatus": {
-        "value": "active"
+        "value": "ended"
       },
       "accounts": [
         {
@@ -1049,7 +1049,7 @@
         "value": "affiliated"
       },
       "activityStatus": {
-        "value": "active"
+        "value": "ended"
       },
       "accounts": [
         {
@@ -1093,7 +1093,7 @@
         "value": "affiliated"
       },
       "activityStatus": {
-        "value": "active"
+        "value": "ended"
       },
       "accounts": [
         {
@@ -1137,7 +1137,7 @@
         "value": "affiliated"
       },
       "activityStatus": {
-        "value": "active"
+        "value": "ended"
       },
       "accounts": [
         {
@@ -1181,7 +1181,7 @@
         "value": "affiliated"
       },
       "activityStatus": {
-        "value": "active"
+        "value": "ended"
       },
       "accounts": [
         {
@@ -1225,7 +1225,7 @@
         "value": "affiliated"
       },
       "activityStatus": {
-        "value": "active"
+        "value": "ended"
       },
       "accounts": [
         {
@@ -1269,7 +1269,7 @@
         "value": "affiliated"
       },
       "activityStatus": {
-        "value": "active"
+        "value": "ended"
       },
       "accounts": [
         {
@@ -1313,7 +1313,7 @@
         "value": "affiliated"
       },
       "activityStatus": {
-        "value": "active"
+        "value": "ended"
       },
       "accounts": [
         {
@@ -1357,7 +1357,7 @@
         "value": "affiliated"
       },
       "activityStatus": {
-        "value": "active"
+        "value": "ended"
       },
       "accounts": [
         {
@@ -1401,7 +1401,7 @@
         "value": "affiliated"
       },
       "activityStatus": {
-        "value": "active"
+        "value": "ended"
       },
       "accounts": [
         {
@@ -1445,7 +1445,7 @@
         "value": "affiliated"
       },
       "activityStatus": {
-        "value": "active"
+        "value": "ended"
       },
       "accounts": [
         {
@@ -1489,7 +1489,7 @@
         "value": "affiliated"
       },
       "activityStatus": {
-        "value": "active"
+        "value": "ended"
       },
       "accounts": [
         {
@@ -1533,7 +1533,7 @@
         "value": "affiliated"
       },
       "activityStatus": {
-        "value": "active"
+        "value": "ended"
       },
       "accounts": [
         {
@@ -1577,7 +1577,7 @@
         "value": "affiliated"
       },
       "activityStatus": {
-        "value": "active"
+        "value": "ended"
       },
       "accounts": [
         {
@@ -1621,7 +1621,7 @@
         "value": "affiliated"
       },
       "activityStatus": {
-        "value": "active"
+        "value": "ended"
       },
       "accounts": [
         {
@@ -1665,7 +1665,7 @@
         "value": "affiliated"
       },
       "activityStatus": {
-        "value": "active"
+        "value": "ended"
       },
       "accounts": [
         {
@@ -1709,7 +1709,7 @@
         "value": "affiliated"
       },
       "activityStatus": {
-        "value": "active"
+        "value": "ended"
       },
       "accounts": [
         {
@@ -1753,7 +1753,7 @@
         "value": "affiliated"
       },
       "activityStatus": {
-        "value": "active"
+        "value": "ended"
       },
       "accounts": [
         {
@@ -1797,7 +1797,7 @@
         "value": "affiliated"
       },
       "activityStatus": {
-        "value": "active"
+        "value": "ended"
       },
       "accounts": [
         {
@@ -1841,7 +1841,7 @@
         "value": "affiliated"
       },
       "activityStatus": {
-        "value": "active"
+        "value": "ended"
       },
       "accounts": [
         {
@@ -1885,7 +1885,7 @@
         "value": "affiliated"
       },
       "activityStatus": {
-        "value": "active"
+        "value": "ended"
       },
       "accounts": [
         {
@@ -1929,7 +1929,7 @@
         "value": "affiliated"
       },
       "activityStatus": {
-        "value": "active"
+        "value": "ended"
       },
       "accounts": [
         {
@@ -1973,7 +1973,7 @@
         "value": "affiliated"
       },
       "activityStatus": {
-        "value": "active"
+        "value": "ended"
       },
       "accounts": [
         {
@@ -2017,7 +2017,7 @@
         "value": "affiliated"
       },
       "activityStatus": {
-        "value": "active"
+        "value": "ended"
       },
       "accounts": [
         {
@@ -2061,7 +2061,7 @@
         "value": "affiliated"
       },
       "activityStatus": {
-        "value": "active"
+        "value": "ended"
       },
       "accounts": [
         {
@@ -2105,7 +2105,7 @@
         "value": "affiliated"
       },
       "activityStatus": {
-        "value": "active"
+        "value": "ended"
       },
       "accounts": [
         {
@@ -2149,7 +2149,7 @@
         "value": "affiliated"
       },
       "activityStatus": {
-        "value": "active"
+        "value": "ended"
       },
       "accounts": [
         {
@@ -2193,7 +2193,7 @@
         "value": "affiliated"
       },
       "activityStatus": {
-        "value": "active"
+        "value": "ended"
       },
       "accounts": [
         {
@@ -2237,7 +2237,7 @@
         "value": "affiliated"
       },
       "activityStatus": {
-        "value": "active"
+        "value": "ended"
       },
       "accounts": [
         {
@@ -2281,7 +2281,7 @@
         "value": "affiliated"
       },
       "activityStatus": {
-        "value": "active"
+        "value": "ended"
       },
       "accounts": [
         {
@@ -2324,7 +2324,7 @@
         "value": "affiliated"
       },
       "activityStatus": {
-        "value": "active"
+        "value": "ended"
       },
       "accounts": [
         {
@@ -2367,7 +2367,7 @@
         "value": "affiliated"
       },
       "activityStatus": {
-        "value": "active"
+        "value": "ended"
       },
       "accounts": [
         {
@@ -2410,7 +2410,7 @@
         "value": "affiliated"
       },
       "activityStatus": {
-        "value": "active"
+        "value": "ended"
       },
       "accounts": [
         {
@@ -2453,7 +2453,7 @@
         "value": "affiliated"
       },
       "activityStatus": {
-        "value": "active"
+        "value": "ended"
       },
       "accounts": [
         {
@@ -2496,7 +2496,7 @@
         "value": "affiliated"
       },
       "activityStatus": {
-        "value": "active"
+        "value": "ended"
       },
       "accounts": [
         {
@@ -2539,7 +2539,7 @@
         "value": "affiliated"
       },
       "activityStatus": {
-        "value": "active"
+        "value": "ended"
       },
       "accounts": [
         {
@@ -2582,7 +2582,7 @@
         "value": "affiliated"
       },
       "activityStatus": {
-        "value": "active"
+        "value": "ended"
       },
       "accounts": [
         {
@@ -2625,7 +2625,7 @@
         "value": "affiliated"
       },
       "activityStatus": {
-        "value": "active"
+        "value": "ended"
       },
       "accounts": [
         {
@@ -2668,7 +2668,7 @@
         "value": "affiliated"
       },
       "activityStatus": {
-        "value": "active"
+        "value": "ended"
       },
       "accounts": [
         {
@@ -2711,7 +2711,7 @@
         "value": "affiliated"
       },
       "activityStatus": {
-        "value": "active"
+        "value": "ended"
       },
       "accounts": [
         {
@@ -2754,7 +2754,7 @@
         "value": "affiliated"
       },
       "activityStatus": {
-        "value": "active"
+        "value": "ended"
       },
       "accounts": [
         {
@@ -2797,7 +2797,7 @@
         "value": "affiliated"
       },
       "activityStatus": {
-        "value": "active"
+        "value": "ended"
       },
       "accounts": [
         {
@@ -2840,7 +2840,7 @@
         "value": "affiliated"
       },
       "activityStatus": {
-        "value": "active"
+        "value": "ended"
       },
       "accounts": [
         {
@@ -2883,7 +2883,7 @@
         "value": "affiliated"
       },
       "activityStatus": {
-        "value": "active"
+        "value": "ended"
       },
       "accounts": [
         {
@@ -2926,7 +2926,7 @@
         "value": "affiliated"
       },
       "activityStatus": {
-        "value": "active"
+        "value": "ended"
       },
       "accounts": [
         {
@@ -2969,7 +2969,7 @@
         "value": "affiliated"
       },
       "activityStatus": {
-        "value": "active"
+        "value": "ended"
       },
       "accounts": [
         {
@@ -3012,7 +3012,7 @@
         "value": "affiliated"
       },
       "activityStatus": {
-        "value": "active"
+        "value": "ended"
       },
       "accounts": [
         {
@@ -3055,7 +3055,7 @@
         "value": "affiliated"
       },
       "activityStatus": {
-        "value": "active"
+        "value": "ended"
       },
       "accounts": [
         {
@@ -3098,7 +3098,7 @@
         "value": "affiliated"
       },
       "activityStatus": {
-        "value": "active"
+        "value": "ended"
       },
       "accounts": [
         {
@@ -3141,7 +3141,7 @@
         "value": "affiliated"
       },
       "activityStatus": {
-        "value": "active"
+        "value": "ended"
       },
       "accounts": [
         {
@@ -3184,7 +3184,7 @@
         "value": "affiliated"
       },
       "activityStatus": {
-        "value": "active"
+        "value": "ended"
       },
       "accounts": [
         {
@@ -3227,7 +3227,7 @@
         "value": "affiliated"
       },
       "activityStatus": {
-        "value": "active"
+        "value": "ended"
       },
       "accounts": [
         {
@@ -3270,7 +3270,7 @@
         "value": "affiliated"
       },
       "activityStatus": {
-        "value": "active"
+        "value": "ended"
       },
       "accounts": [
         {
@@ -3313,7 +3313,7 @@
         "value": "affiliated"
       },
       "activityStatus": {
-        "value": "active"
+        "value": "ended"
       },
       "accounts": [
         {
@@ -3356,7 +3356,7 @@
         "value": "affiliated"
       },
       "activityStatus": {
-        "value": "active"
+        "value": "ended"
       },
       "accounts": [
         {
@@ -3399,7 +3399,7 @@
         "value": "affiliated"
       },
       "activityStatus": {
-        "value": "active"
+        "value": "ended"
       },
       "accounts": [
         {
@@ -3442,7 +3442,7 @@
         "value": "affiliated"
       },
       "activityStatus": {
-        "value": "active"
+        "value": "ended"
       },
       "accounts": [
         {
@@ -3485,7 +3485,7 @@
         "value": "affiliated"
       },
       "activityStatus": {
-        "value": "active"
+        "value": "ended"
       },
       "accounts": [
         {
@@ -3528,7 +3528,7 @@
         "value": "affiliated"
       },
       "activityStatus": {
-        "value": "active"
+        "value": "ended"
       },
       "accounts": [
         {
@@ -3571,7 +3571,7 @@
         "value": "affiliated"
       },
       "activityStatus": {
-        "value": "active"
+        "value": "ended"
       },
       "accounts": [
         {
@@ -3614,7 +3614,7 @@
         "value": "affiliated"
       },
       "activityStatus": {
-        "value": "active"
+        "value": "ended"
       },
       "accounts": [
         {
@@ -3712,7 +3712,9 @@
       "wiki": {
         "url": "https://wikiwiki.jp/jigjp/Palette%20Project/%E7%99%BD%E9%8A%80%E3%83%98%E3%83%AC%E3%83%8A"
       },
-      "profileImage": null,
+      "profileImage": {
+        "url": "https://yt3.googleusercontent.com/ytc/AIdro_njPkUs5LHHDZAsfVTN6_Oe-Nv1ViL7KE4l_CiW23Lj6Q=s160-c-k-c0x00ffffff-no-rj"
+      },
       "officialProfileUrl": "https://paletteproject.jp/shiroganeherena_20191106/"
     },
     {
@@ -3743,7 +3745,9 @@
       "wiki": {
         "url": "https://wikiwiki.jp/jigjp/Palette%20Project/%E9%81%A0%E5%9D%82%E3%83%A6%E3%83%A9"
       },
-      "profileImage": null,
+      "profileImage": {
+        "url": "https://asset.panora.tokyo/wp-content/uploads/2021/03/17115859/2kfBEJOg_400x400.jpg"
+      },
       "officialProfileUrl": "https://x.com/PaletteProject_/status/1371797985168744452"
     },
     {
@@ -3774,7 +3778,9 @@
       "wiki": {
         "url": "https://wikiwiki.jp/jigjp/Palette%20Project/%E7%A5%9E%E8%8F%9C%E3%82%B3%E3%83%8F%E3%83%8D"
       },
-      "profileImage": null,
+      "profileImage": {
+        "url": "https://yt3.googleusercontent.com/EkwTclxgy577Wrymr5EoaCOhdI-e2km0kHFEgoT7fLAG9xdbkaKMtDfOlAQ5inzbhvTTasM5=s160-c-k-c0x00ffffff-no-rj"
+      },
       "officialProfileUrl": "https://x.com/KaminaKohane/status/1612839371039977473"
     },
     {
@@ -3799,7 +3805,9 @@
       "wiki": {
         "url": "https://wikiwiki.jp/jigjp/Palette%20Project/%E6%97%A5%E6%9C%AC%E6%99%B4%E3%81%93%E3%81%93"
       },
-      "profileImage": null,
+      "profileImage": {
+        "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQM_r5-lYESbghFCBIsa8-vL-YIzQcLVCs1-QFVzWHLH4wGqQ43G1ozA5Mv&s=10"
+      },
       "officialProfileUrl": "https://x.com/PaletteProject_/status/1889147349370306783"
     },
     {
@@ -3824,7 +3832,9 @@
       "wiki": {
         "url": "https://wikiwiki.jp/jigjp/Palette%20Project/%E5%85%AD%E9%80%A3%E6%98%9F%E3%81%AA%E3%82%8B"
       },
-      "profileImage": null,
+      "profileImage": {
+        "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJJBwQquK2_B8VCiNo7nm3luLir4BUdALgRG5KmeUrz5DrVSLckVGBJg&s=10"
+      },
       "officialProfileUrl": "https://x.com/PaletteProject_/status/1961640022593212818"
     },
     {
@@ -3849,7 +3859,9 @@
       "wiki": {
         "url": "https://wikiwiki.jp/jigjp/Palette%20Project/%E6%9C%88%E5%AE%AE%E3%81%82%E3%81%8A"
       },
-      "profileImage": null,
+      "profileImage": {
+        "url": "https://yt3.googleusercontent.com/H7kn_WUw-fKhxl3CLbpv1-EaqnEwBZYDbw-2ojv4bfkds6bWYmZjT0j4L6kdfWji131060Od=s900-c-k-c0x00ffffff-no-rj"
+      },
       "officialProfileUrl": "https://x.com/PaletteProject_/status/1961640022593212818"
     },
     {
@@ -3874,7 +3886,9 @@
       "wiki": {
         "url": "https://wikiwiki.jp/jigjp/Palette%20Project/%E9%8E%96%E4%B9%99%E5%A5%B3%E3%81%8C%E3%81%B6"
       },
-      "profileImage": null,
+      "profileImage": {
+        "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6QEotikCjs1rpphNf8WSxCYQRm_AjSpnW17ZhnnTJ2w&s"
+      },
       "officialProfileUrl": "https://x.com/PaletteProject_/status/2008750443074383895"
     },
     {
@@ -3899,7 +3913,9 @@
       "wiki": {
         "url": "https://wikiwiki.jp/jigjp/Palette%20Project/%E5%BD%A9%E9%9F%B3%E3%82%8B%E3%81%8B"
       },
-      "profileImage": null,
+      "profileImage": {
+        "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRk0NFLuGUkOqJEVgwlJ_KgTD4pcBTqgwQrKVzxP0vCSg&s=10"
+      },
       "officialProfileUrl": "https://x.com/PaletteProject_/status/2008750443074383895"
     },
     {
@@ -3924,7 +3940,9 @@
       "wiki": {
         "url": "https://wikiwiki.jp/jigjp/Palette%20Project/%E6%84%9B%E6%9F%93%E3%82%A2%E3%83%8D%E3%83%A9"
       },
-      "profileImage": null,
+      "profileImage": {
+        "url": "https://cdn.wikiwiki.jp/to/w/jigjp/%E6%84%9B%E6%9F%93%E3%82%A2%E3%83%8D%E3%83%A9/::ref/face_org.png.webp?rev=5610983e2501e083aa66f0e5b06a80d9&t=20260117192005"
+      },
       "officialProfileUrl": "https://x.com/PaletteProject_/status/2042452515547910253"
     },
     {
@@ -3943,7 +3961,7 @@
         "value": "unknown"
       },
       "activityStatus": {
-        "value": "active"
+        "value": "ended"
       },
       "accounts": [
         {
@@ -4004,7 +4022,7 @@
         "value": "unknown"
       },
       "activityStatus": {
-        "value": "active"
+        "value": "ended"
       },
       "accounts": [
         {
@@ -4035,7 +4053,7 @@
         "value": "unknown"
       },
       "activityStatus": {
-        "value": "active"
+        "value": "ended"
       },
       "accounts": [],
       "wiki": {
@@ -4077,8 +4095,55 @@
       "wiki": {
         "url": "https://wikiwiki.jp/jigjp/%E3%81%AA%E3%82%8B"
       },
-      "profileImage": null,
+      "profileImage": {
+        "url": "https://cdn.wikiwiki.jp/proxy-image/w/jigjp?url=https%3A%2F%2Fpbs.twimg.com%2Fprofile_images%2F2099437676139327488%2FyvKrb3SN_400x400.jpg"
+      },
       "officialProfileUrl": "https://www.youtube.com/channel/UCMX0Mn5PTjojdQL8MN1B5Vg"
+    },
+    {
+      "displayName": "変幻リメ",
+      "aliases": [],
+      "affiliations": [
+        {
+          "organizationId": "org-000003",
+          "status": "former",
+          "from": "2025-01-04",
+          "to": "2026-05-15"
+        },
+        {
+          "organizationId": "org-000005",
+          "status": "current",
+          "from": "2026-05-15",
+          "to": null
+        }
+      ],
+      "agencyStatus": {
+        "value": "affiliated"
+      },
+      "activityStatus": {
+        "value": "active"
+      },
+      "accounts": [
+        {
+          "service": "youtube",
+          "accountId": null,
+          "url": "https://www.youtube.com/@hengerime"
+        },
+        {
+          "service": "x",
+          "accountId": "hengerime",
+          "url": "https://x.com/hengerime"
+        }
+      ],
+      "wiki": {
+        "url": "https://wikiwiki.jp/jigjp/%E5%A4%89%E5%B9%BB%E3%83%AA%E3%83%A1"
+      },
+      "profileImage": {
+        "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoHwKZad_5VjzypYsnZpbFv8AkyG_mjIx7Ljy1raAvkrmRreACbs8ETtk&s=10"
+      },
+      "visibility": "public",
+      "id": "tal-000098",
+      "officialProfileUrl": "https://www.youtube.com/@hengerime"
     }
   ]
 }

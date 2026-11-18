@@ -1,7 +1,8 @@
 name: Admin isolated checks
 on:
   pull_request:
-    paths: ['admin/**', '.github/workflows/admin-test.yml', 'lib/**', 'schemas/**']
+    # Admin prospective tests execute root tests and use their shared fixtures.
+    paths: ['tests/**', 'admin/**', '.github/workflows/admin-test.yml', 'lib/**', 'schemas/**']
 permissions:
   contents: read
 jobs:

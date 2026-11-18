@@ -1,7 +1,7 @@
 'use strict';
 const {chromium}=require('playwright'),assert=require('node:assert/strict'),fs=require('node:fs'),path=require('node:path'),http=require('node:http');
-const root=path.resolve('_site'),goods=require('./fixtures/admin-vnext-baseline.json').goods,master=require('./fixtures/admin-vnext-baseline.json').talents;
-const pages=require('../lib/goods-pages'),{publicCatalog,loadCatalog}=require('../lib/catalog');
+const {root,goods,master,catalog}=require('./fixtures/content-ux.cjs')();
+const pages=require('../lib/goods-pages');
 const now=new Date('2026-11-20T00:00:00Z'),tiny='<svg xmlns="http://www.w3.org/2000/svg" width="120" height="240"><rect width="120" height="240" fill="#6699bb"/></svg>';
 const publishedGoods=JSON.parse(fs.readFileSync(path.join(root,'data/goods.json')));
 const campaignProducts=id=>publishedGoods.products.filter(p=>publishedGoods.offers.some(o=>o.campaignId===id&&o.productId===p.id)).length;
@@ -10,7 +10,7 @@ const goodsListingCount=publishedGoods.campaigns.length+publishedGoods.products.
  const server=http.createServer((req,res)=>{
   const u=new URL(req.url,'http://localhost');
   if(u.pathname==='/fixture-campaign/'){
-   const data=structuredClone(publicCatalog(loadCatalog(master,path.dirname(root))));data.products[0].image='https://images.example/product.svg';
+   const data=structuredClone(catalog);data.products[0].image='https://images.example/product.svg';
    return res.setHeader('Content-Type','text/html').end(pages.campaignPage(data.campaigns[0],master,data,now));
   }
   const f=path.resolve(root,'.'+u.pathname+(u.pathname.endsWith('/')?'index.html':''));if(!f.startsWith(root+path.sep)||!fs.existsSync(f))return res.writeHead(404).end();

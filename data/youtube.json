@@ -1351,7 +1351,7 @@
     "date": "2026-11-18T11:15:36.000Z",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/M6whpFu8f_g/mqdefault.jpg?v=6afce5ec",
+    "thumbnail": "https://i.ytimg.com/vi/M6whpFu8f_g/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/HZPUrbSwGcllAbUtx6xggJ6lKfMfnAWDxWOCc01tpthiDipSqQP48TK5Jqz4GRzUdwKMUsxlsg=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=M6whpFu8f_g"
   },
@@ -1375,7 +1375,7 @@
     "date": "2026-11-18T12:01:20.000Z",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/ifDGbjVSu_Q/mqdefault.jpg?v=6afd81ee",
+    "thumbnail": "https://i.ytimg.com/vi/ifDGbjVSu_Q/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/vb_kLF_4hQ7UdEtOnEtL-_pI320ZMQ-lVQ9OV3xMvdTQitHXX1zk0b6GKQ977dawvfoB5Sb8OQ=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=ifDGbjVSu_Q"
   },
@@ -1385,7 +1385,7 @@
     "youtubeid": "UCqcnlq8uJqnGml6hcIrMCZw",
     "title": "【ほの暮しの庭 #12 】1年目冬⛄村の周辺探索と鉱山に行きたい⛏【花晴りら/パレデミア学園】#れりライブ #新人vtuber",
     "date": "2026-11-18T12:01:33.000Z",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/pZ3l16hgqp0/mqdefault.jpg?v=6afd5ae1",
     "channelIcon": "https://yt3.ggpht.com/CH5JMWVQZ_RtloaXoj6W-yXjo9x8UxXSBG_vMyDnfk7M2QTOApVE1zOesu_aDrSAqvDbGrUyxs0=s240-c-k-c0x00ffffff-no-rj",
@@ -1459,7 +1459,7 @@
     "date": "2026-11-18T12:35:00.000Z",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/5bdchFkNbcw/mqdefault.jpg?v=6afd9948",
+    "thumbnail": "https://i.ytimg.com/vi/5bdchFkNbcw/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/Z7PlAWhweuycNXNXoQ6etyDTkduySM-Kqy8kQW-AD19JuRdxT3HSdIxogPw3GPD5NHw_vZlf=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=5bdchFkNbcw"
   },
@@ -1584,6 +1584,18 @@
     "url": "https://www.youtube.com/watch?v=PvvtKSyAOzk"
   },
   {
+    "videoId": "5Y_RaCKMmqU",
+    "name": "無月いお",
+    "youtubeid": "UC2X_mAVGw8e3N9JQZZDVBfQ",
+    "title": "【#低音女子】ぶいかふぇ前最後の歌枠《#パレデミア学園》#歌枠 #新人VTuber",
+    "date": "2026-11-19T12:30:00.000Z",
+    "status": "upcoming",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/5Y_RaCKMmqU/mqdefault.jpg?v=6afdc2ce",
+    "channelIcon": "https://yt3.ggpht.com/Z7PlAWhweuycNXNXoQ6etyDTkduySM-Kqy8kQW-AD19JuRdxT3HSdIxogPw3GPD5NHw_vZlf=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=5Y_RaCKMmqU"
+  },
+  {
     "videoId": "Cw94wqexG54",
     "name": "藤森ちとせ",
     "youtubeid": "UCAhdxmsdngH4noySdpVAVWQ",
@@ -1594,6 +1606,18 @@
     "thumbnail": "https://i.ytimg.com/vi/Cw94wqexG54/mqdefault.jpg?v=6af870f5",
     "channelIcon": "https://yt3.ggpht.com/traR_yWe-AOGyM2wjo8h2FJO9JWBcbjfrL13X-umeD6BtNPopSZ2Q3YmdJq_5K9gWgHf_j64iQ=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=Cw94wqexG54"
+  },
+  {
+    "videoId": "bZSdXMVDye4",
+    "name": "夏渚まはろ",
+    "youtubeid": "UC_a00ml_EVDXSrtY8ZuyqGQ",
+    "title": "【ReLIFE GTA】警察志望・真ッ波ロン、スローライフの街でマッハを目指す！【#夏渚まはろ￤#パレプロ】",
+    "date": "2026-11-20T09:00:00.000Z",
+    "status": "upcoming",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/bZSdXMVDye4/mqdefault.jpg?v=6af9590c",
+    "channelIcon": "https://yt3.ggpht.com/iktv-39nC7NDASD1WeXms-DEuHuVqB5RhwTtdDe26w-BCvqf6yq3r_8zBiv2i2CfNXCK0uE8=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=bZSdXMVDye4"
   },
   {
     "videoId": "T3_HdpNIvrI",
@@ -1618,6 +1642,18 @@
     "thumbnail": "https://i.ytimg.com/vi/RYeWkHfa8ns/mqdefault.jpg?v=6af2253b",
     "channelIcon": "https://yt3.ggpht.com/Gwr7KJNWnI6CEgmIfEeMZahF5pbGNKlRhQXBEkuMWE0D66--IJE77z-5Zu2i5LFBc_CA6ZkqY4Y=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=RYeWkHfa8ns"
+  },
+  {
+    "videoId": "hivlgyDtdy0",
+    "name": "橙葉ぽん",
+    "youtubeid": "UC0aNUh8VfQwgqj0taB8MDpg",
+    "title": "【 ポケモンHGSS 】完全初見！！！人生初めてのポケモン...！ハートゴールドします！#4 アカネとのバトルが終わったところ🧡【橙葉ぽん/ぷろのゔぁ 】",
+    "date": "2026-11-21T05:00:00.000Z",
+    "status": "upcoming",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/hivlgyDtdy0/mqdefault.jpg?v=6afdca61",
+    "channelIcon": "https://yt3.ggpht.com/av9H0_OxG16zI7tQKGwYEwhIZd1RXZQKGjkWfgHslvYRTV5aJBEInW2q0qDzb51lttFjkJ_pBw=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=hivlgyDtdy0"
   },
   {
     "videoId": "BlzMDwwNkXw",

@@ -45,3 +45,11 @@ bulk同一fixture比較：1000人物/5000記念日/2000イベント/5000商品/1
 未リンクの人物名/アカウントを含む公開自由文は自動判定せず手動確認が必要。非公開化の依存変更が120操作/512KiBを超えれば停止し、危険な自動分割はしない。共有履歴まで隠れる方針は確認画面で承認が必要。履歴名公開は完全な秘密化ではない。Git履歴/外部キャッシュの削除機能はない。
 
 実本番の認証・設定維持・CPU/free quota・デプロイ/rollbackは所有者の承認後に確認する。デプロイ手順は[DEPLOY](DEPLOY.md)。DADSを参考に自前の軽量DOM/CSSで構築し、新依存・有料サービスは追加していない。
+
+## 再開時の最終点検（2026-11-18）
+
+前回のActions root 44169847823/Admin 44169847959はいずれも成功、ローカル最終ログも全browser完了を確認。latest main `682f93ec9`（配信データ更新のみ）を安全に取り込んだ。
+
+生成物を最新mainの別ビルドと実比較し、talents/catalog/anniversaries/music/karaoke/events/goodsとYouTube/Twitch/TikTok feedのJSON内容が一致することを確認。既存公開ファイルの欠落・余分な公開ファイルは0。人物97/グループ11/記念日91/楽曲54/歌枠17/歌唱55/イベント5/商品41/キャンペーン6/Offer41を保持。[比較結果](generated-inspection.json)。fixture/registry/schema/ops/adminの公開混入も検査した。
+
+通常一覧の登録順を独立して選べるよう補い、全画面幅・両テーマのbrowserで登録順/Intl.Collator名前順を検証。最新コードに対するroot/Admin検証とActionsはPR Checksを参照。導入時には新形式下書き・提出中PRもrollback判断に含める。

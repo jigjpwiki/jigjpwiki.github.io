@@ -64,6 +64,7 @@ export function mountRecordBrowser({
     new Option(entity === "talent" ? "事務所別" : "登録順", "standard"),
     new Option("名前順", "name"),
   );
+  if (entity === "talent") sort.append(new Option("登録順", "registration"));
   sort.value = state.sort || "standard";
   org.setAttribute("aria-label", "事務所（旧所属を含む）");
   org.append(new Option("すべての事務所", ""));
@@ -321,7 +322,7 @@ export function mountRecordBrowser({
     state.visibility ||
     state.person ||
     state.extra ||
-    state.sort === "name"
+    (state.sort && state.sort !== "standard")
   )
     more.open = true;
   bar.insertBefore(more, bar.lastChild);

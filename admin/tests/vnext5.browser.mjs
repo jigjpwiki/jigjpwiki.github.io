@@ -347,6 +347,15 @@ export async function vnext5Browser({
         await p.locator(".record-row .portrait").count(),
         models.talents.talents.length,
       );
+      await p.getByText("絞り込み・並び順", { exact: true }).click();
+      await p.getByRole("combobox", { name: "並び順", exact: true }).selectOption("registration");
+      const titles = await p.locator(".record-row").allTextContents();
+      for (const [i, t] of models.talents.talents.entries()) assert(titles[i].includes(t.displayName));
+      await p.getByRole("combobox", { name: "並び順", exact: true }).selectOption("name");
+      const byName = [...models.talents.talents].sort((a, b) => new Intl.Collator("ja").compare(a.displayName, b.displayName));
+      const nameTitles = await p.locator(".record-row").allTextContents();
+      for (const [i, t] of byName.entries()) assert(nameTitles[i].includes(t.displayName));
+      await p.getByRole("combobox", { name: "並び順", exact: true }).selectOption("standard");
       const search = p.getByRole("searchbox", { name: "名前・タイトルで検索" });
       await search.fill(models.talents.talents[0].displayName);
       await p.locator(".record-row").first().click();

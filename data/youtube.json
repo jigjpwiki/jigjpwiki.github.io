@@ -1639,7 +1639,7 @@
     "date": "2026-11-17T23:13:24.000Z",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/nnqGNANlKZ8/mqdefault.jpg?v=6afcddea",
+    "thumbnail": "https://i.ytimg.com/vi/nnqGNANlKZ8/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/rthBXvqjNFcVwEp-AWpiZDXnNjBodSXlsDTa-sjW6uR6Ssv3wuOw2dMXDZLlYaf_c4YiKfItHXU=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=nnqGNANlKZ8"
   },
@@ -1654,6 +1654,30 @@
     "thumbnail": "https://i.ytimg.com/vi/izN391J_onA/mqdefault.jpg?v=6afcdf40",
     "channelIcon": "https://yt3.ggpht.com/MwFtS4Atq-VZX_p-mgdnGa95NMQAnQCz9boYbtkLbNvkbA_kgvqLMOMU3J34uFX1FCrvzyP3_g=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=izN391J_onA"
+  },
+  {
+    "videoId": "emo4sf1ffqk",
+    "name": "堂下さとり",
+    "youtubeid": "UCBq6MSUL-Ermvnoj3PtX7Iw",
+    "title": "【雑談】学園祭文化祭の思い出教えて※嘘OK【堂下さとり/パレデミア学園】",
+    "date": "2026-11-18T03:30:29.000Z",
+    "status": "live",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/emo4sf1ffqk/mqdefault.jpg?v=6afd1ace",
+    "channelIcon": "https://yt3.ggpht.com/eW_Hug0M6zFk9QSbAmOUWLMSfzBlCHmes-8yAksvfUNzyLgY6TSsE_eW8ncfE4bHYZXKoTWxmQ=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=emo4sf1ffqk"
+  },
+  {
+    "videoId": "x9nC1TFoVTc",
+    "name": "相栖るじゅ",
+    "youtubeid": "UCrpdBoGpa6g2WEtRWsIlhDQ",
+    "title": "【昼活/雑談】お昼を一緒に過ごそう～☕【相栖るじゅ/パレデミア学園】",
+    "date": "2026-11-18T03:33:02.000Z",
+    "status": "live",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/x9nC1TFoVTc/mqdefault.jpg?v=6afd19ce",
+    "channelIcon": "https://yt3.ggpht.com/yQbh9vEEgS_UapoQhIxxoTSy13bDxlHYC-ncTcO9VIDBN2NvrLTAWeKGQ72CN2fhOOrHqYaFDA=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=x9nC1TFoVTc"
   },
   {
     "videoId": "No0YjwNrrnk",

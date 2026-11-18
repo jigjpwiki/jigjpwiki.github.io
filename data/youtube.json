@@ -1399,7 +1399,7 @@
     "date": "2026-11-18T12:01:40.000Z",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/m-joZOBQpCs/mqdefault.jpg?v=6afd82cf",
+    "thumbnail": "https://i.ytimg.com/vi/m-joZOBQpCs/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/nMtec5z3KY5RUGCSbQENm9culC2VpB7Ate_dUueAINpAJdFK4wwe7Q6eH88QiMXqjImAleLI=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=m-joZOBQpCs"
   },
@@ -1471,7 +1471,7 @@
     "date": "2026-11-18T13:00:39.000Z",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/N4C-GnHDd0A/mqdefault.jpg?v=6afd8e7a",
+    "thumbnail": "https://i.ytimg.com/vi/N4C-GnHDd0A/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/XWKUawU_WoX_xINkx3TMSF3fj0RbdiwNezFiEAGcmHfQYvwkjMUM1mvyOmgsbK8LxHoo6aEKJA=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=N4C-GnHDd0A"
   },
@@ -1546,6 +1546,54 @@
     "thumbnail": "https://i.ytimg.com/vi/ba3mumKGlFk/mqdefault.jpg?v=6afb18bb",
     "channelIcon": "https://yt3.ggpht.com/Gwr7KJNWnI6CEgmIfEeMZahF5pbGNKlRhQXBEkuMWE0D66--IJE77z-5Zu2i5LFBc_CA6ZkqY4Y=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=ba3mumKGlFk"
+  },
+  {
+    "videoId": "xac1gv9Yskw",
+    "name": "夕凪万夜",
+    "youtubeid": "UCJLYktDEOak1rSOGRVRKlLQ",
+    "title": "夕凪万夜 のライブ配信",
+    "date": "2026-11-18T16:42:59.000Z",
+    "status": "archive",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/xac1gv9Yskw/mqdefault.jpg?v=1",
+    "channelIcon": "https://yt3.ggpht.com/pK9UX6scblRGuvFWEpaABpG_PujpclMwfuBsdfByEuG5SyCZIyfRCHr9nY7Z1JL6olzXSDL8=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=xac1gv9Yskw"
+  },
+  {
+    "videoId": "HV6JZXX8f1E",
+    "name": "夕凪万夜",
+    "youtubeid": "UCJLYktDEOak1rSOGRVRKlLQ",
+    "title": "【#雑談 /初見さん◎】ど深夜リハビリ配信＆半年かぁって配信【パレデミア学園/夕凪万夜】",
+    "date": "2026-11-18T16:43:37.000Z",
+    "status": "archive",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/HV6JZXX8f1E/mqdefault.jpg?v=6afdd3c8",
+    "channelIcon": "https://yt3.ggpht.com/pK9UX6scblRGuvFWEpaABpG_PujpclMwfuBsdfByEuG5SyCZIyfRCHr9nY7Z1JL6olzXSDL8=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=HV6JZXX8f1E"
+  },
+  {
+    "videoId": "AZZkpnGjB7k",
+    "name": "夕凪万夜",
+    "youtubeid": "UCJLYktDEOak1rSOGRVRKlLQ",
+    "title": "夕凪万夜 のライブ配信",
+    "date": "2026-11-18T16:47:44.000Z",
+    "status": "archive",
+    "type": "video",
+    "thumbnail": "https://i.ytimg.com/vi/AZZkpnGjB7k/mqdefault.jpg",
+    "channelIcon": "https://yt3.ggpht.com/pK9UX6scblRGuvFWEpaABpG_PujpclMwfuBsdfByEuG5SyCZIyfRCHr9nY7Z1JL6olzXSDL8=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=AZZkpnGjB7k"
+  },
+  {
+    "videoId": "JV_pOY75A8A",
+    "name": "夕凪万夜",
+    "youtubeid": "UCJLYktDEOak1rSOGRVRKlLQ",
+    "title": "【#雑談 /初見さん◎】１３００人目指すぞ！！ど深夜リハビリ配信＆半年かぁって配信【パレデミア学園/夕凪万夜】",
+    "date": "2026-11-18T16:51:33.000Z",
+    "status": "live",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/JV_pOY75A8A/mqdefault.jpg?v=6afdd70b",
+    "channelIcon": "https://yt3.ggpht.com/pK9UX6scblRGuvFWEpaABpG_PujpclMwfuBsdfByEuG5SyCZIyfRCHr9nY7Z1JL6olzXSDL8=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=JV_pOY75A8A"
   },
   {
     "videoId": "I7fQVU2-FOA",

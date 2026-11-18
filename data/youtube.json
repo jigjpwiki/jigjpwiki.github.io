@@ -1159,7 +1159,7 @@
     "date": "2026-11-18T03:01:54.000Z",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/izN391J_onA/mqdefault.jpg?v=6afcdf40",
+    "thumbnail": "https://i.ytimg.com/vi/izN391J_onA/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/MwFtS4Atq-VZX_p-mgdnGa95NMQAnQCz9boYbtkLbNvkbA_kgvqLMOMU3J34uFX1FCrvzyP3_g=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=izN391J_onA"
   },
@@ -1171,7 +1171,7 @@
     "date": "2026-11-18T03:30:29.000Z",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/emo4sf1ffqk/mqdefault.jpg?v=6afd1ace",
+    "thumbnail": "https://i.ytimg.com/vi/emo4sf1ffqk/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/eW_Hug0M6zFk9QSbAmOUWLMSfzBlCHmes-8yAksvfUNzyLgY6TSsE_eW8ncfE4bHYZXKoTWxmQ=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=emo4sf1ffqk"
   },
@@ -1464,6 +1464,18 @@
     "url": "https://www.youtube.com/watch?v=5bdchFkNbcw"
   },
   {
+    "videoId": "vejki3-PjuU",
+    "name": "銀河キララ",
+    "youtubeid": "UCRuWA3zi9BB3pm4J0vLan_A",
+    "title": "【にゃんにゃんにゃんっ（※名探偵は猫になります）】#shorts #vtuber #ねこ #ねこのいる生活 #cat #にゃんこ #パレデミア学園",
+    "date": "2026-11-18T12:51:54.000Z",
+    "status": "archive",
+    "type": "video",
+    "thumbnail": "https://i.ytimg.com/vi/vejki3-PjuU/mqdefault.jpg",
+    "channelIcon": "https://yt3.ggpht.com/k4a0296Wk9IMGnQ7NNF5zYersof72vkRz0v--jJDnedQCJr0C1Jz7oicxNIVCpuDIUlvrGIUMQ=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=vejki3-PjuU"
+  },
+  {
     "videoId": "N4C-GnHDd0A",
     "name": "陰山アゲハ",
     "youtubeid": "UCIw8aQVRBwi72yOrPLgkbRQ",
@@ -1483,7 +1495,7 @@
     "date": "2026-11-18T13:33:01.000Z",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/ra19nrj5v94/mqdefault.jpg?v=6afda19e",
+    "thumbnail": "https://i.ytimg.com/vi/ra19nrj5v94/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/yQbh9vEEgS_UapoQhIxxoTSy13bDxlHYC-ncTcO9VIDBN2NvrLTAWeKGQ72CN2fhOOrHqYaFDA=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=ra19nrj5v94"
   },

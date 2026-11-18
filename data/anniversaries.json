@@ -1547,6 +1547,40 @@
       "recursYearly": true,
       "countYears": true,
       "visibility": "public"
+    },
+    {
+      "type": "debut",
+      "title": "変幻リメ デビュー記念日",
+      "talentIds": [
+        "tal-000098"
+      ],
+      "groupIds": [],
+      "date": {
+        "month": 1,
+        "day": 1,
+        "year": 2025
+      },
+      "recursYearly": true,
+      "countYears": true,
+      "visibility": "public",
+      "id": "ann-000092"
+    },
+    {
+      "type": "birthday",
+      "title": "変幻リメ 誕生日",
+      "talentIds": [
+        "tal-000098"
+      ],
+      "groupIds": [],
+      "date": {
+        "month": 10,
+        "day": 16,
+        "year": null
+      },
+      "recursYearly": true,
+      "countYears": false,
+      "visibility": "public",
+      "id": "ann-000093"
     }
   ],
   "fallbackDate": "2026-11-15"

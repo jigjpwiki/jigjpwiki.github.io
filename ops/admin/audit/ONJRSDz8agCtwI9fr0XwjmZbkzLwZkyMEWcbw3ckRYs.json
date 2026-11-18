@@ -1,0 +1,182 @@
+{
+  "version": 2,
+  "batchId": "ONJRSDz8agCtwI9fr0XwjmZbkzLwZkyMEWcbw3ckRYs",
+  "actor": "160498891",
+  "createdAt": "2026-11-17T19:05:10.740Z",
+  "baseCommit": "366cb245c737d0cdcdf46b5915f15209e7ad1b82",
+  "reason": "イベント公開情報変更",
+  "submissionId": "ONJRSDz8agCtwI9fr0XwjmZbkzLwZkyMEWcbw3ckRYs",
+  "branch": "admin/change-ONJRSDz8agCtwI9fr0XwjmZbkzLwZkyMEWcbw3ckRYs",
+  "operations": [
+    {
+      "operationId": "record-9ddfa358-fdef-4f10-97b8-6478c43155d6",
+      "entity": "event",
+      "recordId": "evt-000003",
+      "action": "edit",
+      "changedFields": [
+        "timing"
+      ],
+      "before": {
+        "organizerIds": [],
+        "relatedOrganizationIds": [
+          "org-000003"
+        ],
+        "groupIds": [],
+        "lineupComplete": true,
+        "streamUrls": [
+          "https://youtube.com/live/cCaF5xDZ8Lc"
+        ],
+        "slots": [],
+        "visibility": "public",
+        "id": "evt-000003",
+        "title": "Fujimiya Kotoha Birthday Live 2026 Good Luck",
+        "type": "concert",
+        "starts": {
+          "precision": "instant",
+          "value": "2026-11-15T11:00:00Z"
+        },
+        "ends": {
+          "precision": "unknown",
+          "value": null
+        },
+        "timing": "scheduled",
+        "talentIds": [
+          "tal-000010"
+        ],
+        "announcementUrl": "https://paletteproject.jp/bd2026_kotoha/",
+        "videoIds": [],
+        "format": "online",
+        "venue": null,
+        "fee": {
+          "amount": null,
+          "currency": null,
+          "note": "料金未確認"
+        },
+        "summary": "公式告知の開催情報。終了時刻は未確認。"
+      },
+      "after": {
+        "organizerIds": [],
+        "relatedOrganizationIds": [
+          "org-000003"
+        ],
+        "groupIds": [],
+        "lineupComplete": true,
+        "streamUrls": [
+          "https://youtube.com/live/cCaF5xDZ8Lc"
+        ],
+        "slots": [],
+        "visibility": "public",
+        "id": "evt-000003",
+        "title": "Fujimiya Kotoha Birthday Live 2026 Good Luck",
+        "type": "concert",
+        "starts": {
+          "precision": "instant",
+          "value": "2026-11-15T11:00:00Z"
+        },
+        "ends": {
+          "precision": "unknown",
+          "value": null
+        },
+        "timing": "actual",
+        "talentIds": [
+          "tal-000010"
+        ],
+        "announcementUrl": "https://paletteproject.jp/bd2026_kotoha/",
+        "videoIds": [],
+        "format": "online",
+        "venue": null,
+        "fee": {
+          "amount": null,
+          "currency": null,
+          "note": "料金未確認"
+        },
+        "summary": "公式告知の開催情報。終了時刻は未確認。"
+      }
+    },
+    {
+      "operationId": "record-6d6db091-a96c-43bf-9bab-e3f54f1d731f",
+      "entity": "event",
+      "recordId": "evt-000004",
+      "action": "edit",
+      "changedFields": [
+        "timing"
+      ],
+      "before": {
+        "organizerIds": [],
+        "relatedOrganizationIds": [
+          "org-000003"
+        ],
+        "groupIds": [],
+        "lineupComplete": true,
+        "streamUrls": [
+          "https://youtube.com/live/3KG4UbMX2UM"
+        ],
+        "slots": [],
+        "visibility": "public",
+        "id": "evt-000004",
+        "title": "鬼多見アユム生誕祭2026 煌夜ノ夢",
+        "type": "concert",
+        "starts": {
+          "precision": "instant",
+          "value": "2026-09-27T11:00:00Z"
+        },
+        "ends": {
+          "precision": "unknown",
+          "value": null
+        },
+        "timing": "scheduled",
+        "talentIds": [
+          "tal-000012"
+        ],
+        "announcementUrl": "https://paletteproject.jp/bd2026_ayumu/",
+        "videoIds": [],
+        "format": "online",
+        "venue": null,
+        "fee": {
+          "amount": null,
+          "currency": null,
+          "note": "料金未確認"
+        },
+        "summary": "公式告知の開催情報。終了時刻は未確認。"
+      },
+      "after": {
+        "organizerIds": [],
+        "relatedOrganizationIds": [
+          "org-000003"
+        ],
+        "groupIds": [],
+        "lineupComplete": true,
+        "streamUrls": [
+          "https://youtube.com/live/3KG4UbMX2UM"
+        ],
+        "slots": [],
+        "visibility": "public",
+        "id": "evt-000004",
+        "title": "鬼多見アユム生誕祭2026 煌夜ノ夢",
+        "type": "concert",
+        "starts": {
+          "precision": "instant",
+          "value": "2026-09-27T11:00:00Z"
+        },
+        "ends": {
+          "precision": "unknown",
+          "value": null
+        },
+        "timing": "actual",
+        "talentIds": [
+          "tal-000012"
+        ],
+        "announcementUrl": "https://paletteproject.jp/bd2026_ayumu/",
+        "videoIds": [],
+        "format": "online",
+        "venue": null,
+        "fee": {
+          "amount": null,
+          "currency": null,
+          "note": "料金未確認"
+        },
+        "summary": "公式告知の開催情報。終了時刻は未確認。"
+      }
+    }
+  ]
+}

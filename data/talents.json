@@ -64,7 +64,8 @@
       "profileImage": {
         "url": "https://yt3.ggpht.com/Cu6AMAZAEC_DTANKoaloA_4iLCuEUQ8BiAwyHGuOUG9GtoIw6s7mXCv1-49LV1IgODYZfGowzQ=s240-c-k-c0x00ffffff-no-rj"
       },
-      "officialProfileUrl": "https://www.proforma-production.jp/t/mahiru-neru"
+      "officialProfileUrl": "https://www.proforma-production.jp/t/mahiru-neru",
+      "visibility": "public"
     },
     {
       "id": "tal-000002",
@@ -107,7 +108,8 @@
       "profileImage": {
         "url": "https://yt3.ggpht.com/YiF8s5Lf3qcrv-pTWzX36dQDpbJrdwUPL_Z1retyx4TniYGmP0u2hN2pRDd66jq99h5RJMui=s240-c-k-c0x00ffffff-no-rj"
       },
-      "officialProfileUrl": "https://www.proforma-production.jp/t/hinoha-rui"
+      "officialProfileUrl": "https://www.proforma-production.jp/t/hinoha-rui",
+      "visibility": "public"
     },
     {
       "id": "tal-000003",
@@ -150,7 +152,8 @@
       "profileImage": {
         "url": "https://yt3.ggpht.com/eVD8Ygm7KVyh3dvWnyebfYlbYpD13ZYQ-Bos8WdR5LDE61A3svHVHCLEY-rM3IQgw9O4uvdd=s240-c-k-c0x00ffffff-no-rj"
       },
-      "officialProfileUrl": "https://www.proforma-production.jp/t/minato-yu"
+      "officialProfileUrl": "https://www.proforma-production.jp/t/minato-yu",
+      "visibility": "public"
     },
     {
       "id": "tal-000004",
@@ -161,7 +164,7 @@
           "organizationId": "org-000001",
           "status": "former",
           "from": null,
-          "to": null
+          "to": "2026-09-30"
         }
       ],
       "agencyStatus": {
@@ -193,7 +196,8 @@
       "profileImage": {
         "url": "https://pbs.twimg.com/profile_images/2098804137848930304/ZvU5aude_400x400.jpg"
       },
-      "officialProfileUrl": "https://www.proforma-production.jp/t/lee-jupita"
+      "officialProfileUrl": "https://www.proforma-production.jp/t/lee-jupita",
+      "visibility": "public"
     },
     {
       "id": "tal-000005",
@@ -250,7 +254,8 @@
       "profileImage": {
         "url": "https://yt3.ggpht.com/86cM_4q1A56pIYgdKxh776hM0nropjiZIlmXbfroWHXQ-MjdGGsjLcL5hMDOFL-T2EJHmybT=s240-c-k-c0x00ffffff-no-rj"
       },
-      "officialProfileUrl": "https://paletteproject.jp/member/case-rona/"
+      "officialProfileUrl": "https://paletteproject.jp/member/case-rona/",
+      "visibility": "public"
     },
     {
       "id": "tal-000006",
@@ -288,7 +293,8 @@
       "profileImage": {
         "url": "https://yt3.ggpht.com/iktv-39nC7NDASD1WeXms-DEuHuVqB5RhwTtdDe26w-BCvqf6yq3r_8zBiv2i2CfNXCK0uE8=s240-c-k-c0x00ffffff-no-rj"
       },
-      "officialProfileUrl": "https://paletteproject.jp/member/case-mahalo/"
+      "officialProfileUrl": "https://paletteproject.jp/member/case-mahalo/",
+      "visibility": "public"
     },
     {
       "id": "tal-000007",
@@ -325,7 +331,7 @@
         "value": "affiliated"
       },
       "activityStatus": {
-        "value": "unknown"
+        "value": "active"
       },
       "accounts": [
         {
@@ -345,7 +351,8 @@
       "profileImage": {
         "url": "https://yt3.ggpht.com/vb_kLF_4hQ7UdEtOnEtL-_pI320ZMQ-lVQ9OV3xMvdTQitHXX1zk0b6GKQ977dawvfoB5Sb8OQ=s240-c-k-c0x00ffffff-no-rj"
       },
-      "officialProfileUrl": "https://paletteproject.jp/member/case-kaname/"
+      "officialProfileUrl": "https://paletteproject.jp/member/case-kaname/",
+      "visibility": "public"
     },
     {
       "id": "tal-000008",
@@ -376,7 +383,7 @@
         "value": "affiliated"
       },
       "activityStatus": {
-        "value": "unknown"
+        "value": "active"
       },
       "accounts": [
         {
@@ -396,7 +403,8 @@
       "profileImage": {
         "url": "https://yt3.ggpht.com/8tcStp-WzdZPtf6bPq1DtUnFSd2Eq5AppSd3_CEQ7hNNpnRND8InaWdPCz6T1wIWWkGJuFrbT94=s240-c-k-c0x00ffffff-no-rj"
       },
-      "officialProfileUrl": "https://paletteproject.jp/member/case-clara/"
+      "officialProfileUrl": "https://paletteproject.jp/member/case-clara/",
+      "visibility": "public"
     },
     {
       "id": "tal-000009",
@@ -427,7 +435,7 @@
         "value": "affiliated"
       },
       "activityStatus": {
-        "value": "unknown"
+        "value": "active"
       },
       "accounts": [
         {
@@ -447,7 +455,8 @@
       "profileImage": {
         "url": "https://yt3.ggpht.com/pM4ZefnBFJ2qlBEqknYCFHdW6dLH29KptwG0OYSu1-mAVAIy5M1IjwpMwC24-A_v07nluGGrlQ=s240-c-k-c0x00ffffff-no-rj"
       },
-      "officialProfileUrl": "https://paletteproject.jp/member/case-kyouka/"
+      "officialProfileUrl": "https://paletteproject.jp/member/case-kyouka/",
+      "visibility": "public"
     },
     {
       "id": "tal-000010",
@@ -484,7 +493,7 @@
         "value": "affiliated"
       },
       "activityStatus": {
-        "value": "unknown"
+        "value": "active"
       },
       "accounts": [
         {
@@ -504,7 +513,8 @@
       "profileImage": {
         "url": "https://yt3.ggpht.com/rthBXvqjNFcVwEp-AWpiZDXnNjBodSXlsDTa-sjW6uR6Ssv3wuOw2dMXDZLlYaf_c4YiKfItHXU=s240-c-k-c0x00ffffff-no-rj"
       },
-      "officialProfileUrl": "https://paletteproject.jp/member/case-kotoha/"
+      "officialProfileUrl": "https://paletteproject.jp/member/case-kotoha/",
+      "visibility": "public"
     },
     {
       "id": "tal-000011",
@@ -529,7 +539,7 @@
         "value": "affiliated"
       },
       "activityStatus": {
-        "value": "unknown"
+        "value": "active"
       },
       "accounts": [
         {
@@ -549,7 +559,8 @@
       "profileImage": {
         "url": "https://yt3.ggpht.com/qvbeb9E-gYc822fxxzi6Ug5QyjhqZAWbUskHANcwDWP5W8iTsK3LcQJnjS4CVBuFJ6fONsM9F7M=s240-c-k-c0x00ffffff-no-rj"
       },
-      "officialProfileUrl": "https://paletteproject.jp/member/case-hanon/"
+      "officialProfileUrl": "https://paletteproject.jp/member/case-hanon/",
+      "visibility": "public"
     },
     {
       "id": "tal-000012",
@@ -574,7 +585,7 @@
         "value": "affiliated"
       },
       "activityStatus": {
-        "value": "unknown"
+        "value": "active"
       },
       "accounts": [
         {
@@ -594,7 +605,8 @@
       "profileImage": {
         "url": "https://yt3.ggpht.com/MwFtS4Atq-VZX_p-mgdnGa95NMQAnQCz9boYbtkLbNvkbA_kgvqLMOMU3J34uFX1FCrvzyP3_g=s240-c-k-c0x00ffffff-no-rj"
       },
-      "officialProfileUrl": "https://paletteproject.jp/member/case-ayumu/"
+      "officialProfileUrl": "https://paletteproject.jp/member/case-ayumu/",
+      "visibility": "public"
     },
     {
       "id": "tal-000013",
@@ -612,7 +624,7 @@
         "value": "affiliated"
       },
       "activityStatus": {
-        "value": "unknown"
+        "value": "active"
       },
       "accounts": [
         {
@@ -637,7 +649,8 @@
       "profileImage": {
         "url": "https://yt3.ggpht.com/y0zP0Uz7HSLx5dv3xo488Suxk8rJQQUC1wXaymjUBIQIwa25WlVu_VmrsT1xAyVD-jgeL7hs=s240-c-k-c0x00ffffff-no-rj"
       },
-      "officialProfileUrl": "https://www.proforma-production.jp/t/siyham"
+      "officialProfileUrl": "https://www.proforma-production.jp/t/siyham",
+      "visibility": "public"
     },
     {
       "id": "tal-000014",
@@ -655,7 +668,7 @@
         "value": "affiliated"
       },
       "activityStatus": {
-        "value": "unknown"
+        "value": "active"
       },
       "accounts": [
         {
@@ -680,7 +693,8 @@
       "profileImage": {
         "url": "https://yt3.ggpht.com/aVTuoS679xrJA49AHaR2TzjBWLIu2qZKDmBm80Js-YZtBVbU0SylPdXPk45bo438p2VULUXl9w=s240-c-k-c0x00ffffff-no-rj"
       },
-      "officialProfileUrl": "https://www.proforma-production.jp/t/nakamotoomachi"
+      "officialProfileUrl": "https://www.proforma-production.jp/t/nakamotoomachi",
+      "visibility": "public"
     },
     {
       "id": "tal-000015",
@@ -698,7 +712,7 @@
         "value": "affiliated"
       },
       "activityStatus": {
-        "value": "unknown"
+        "value": "active"
       },
       "accounts": [
         {
@@ -718,7 +732,8 @@
       "profileImage": {
         "url": "https://yt3.ggpht.com/_pGNq0-SYZiXjomeCnQRygINoA2PKkUJMbRtwuSIL83vUAny58me1QY1WttWypAIwJFrE5hh0w=s240-c-k-c0x00ffffff-no-rj"
       },
-      "officialProfileUrl": "https://www.proforma-production.jp/t/kozumi-kuromaru"
+      "officialProfileUrl": "https://www.proforma-production.jp/t/kozumi-kuromaru",
+      "visibility": "public"
     },
     {
       "id": "tal-000016",
@@ -736,7 +751,7 @@
         "value": "affiliated"
       },
       "activityStatus": {
-        "value": "unknown"
+        "value": "active"
       },
       "accounts": [
         {
@@ -756,7 +771,8 @@
       "profileImage": {
         "url": "https://yt3.ggpht.com/av9H0_OxG16zI7tQKGwYEwhIZd1RXZQKGjkWfgHslvYRTV5aJBEInW2q0qDzb51lttFjkJ_pBw=s240-c-k-c0x00ffffff-no-rj"
       },
-      "officialProfileUrl": "https://www.proforma-production.jp/t/touha-pon"
+      "officialProfileUrl": "https://www.proforma-production.jp/t/touha-pon",
+      "visibility": "public"
     },
     {
       "id": "tal-000017",
@@ -774,7 +790,7 @@
         "value": "affiliated"
       },
       "activityStatus": {
-        "value": "unknown"
+        "value": "active"
       },
       "accounts": [
         {
@@ -794,7 +810,8 @@
       "profileImage": {
         "url": "https://yt3.ggpht.com/iALNmPjASsV2xJnNlRrlE2BGkGuehDoiW74MrfdHkHclqVJ7nn94i6z_D22LxzIK3Afilovs9w=s240-c-k-c0x00ffffff-no-rj"
       },
-      "officialProfileUrl": "https://www.proforma-production.jp/t/nekosui-hapi"
+      "officialProfileUrl": "https://www.proforma-production.jp/t/nekosui-hapi",
+      "visibility": "public"
     },
     {
       "id": "tal-000018",
@@ -812,7 +829,7 @@
         "value": "affiliated"
       },
       "activityStatus": {
-        "value": "unknown"
+        "value": "active"
       },
       "accounts": [
         {
@@ -837,7 +854,8 @@
       "profileImage": {
         "url": "https://yt3.ggpht.com/VB97J8AMHex_rkfd6hDhfiGhhVvrL-NNkseP2mMYSWh75sxA_oXctmxK5tV4FYgkM17RUAx6GQ=s240-c-k-c0x00ffffff-no-rj"
       },
-      "officialProfileUrl": "https://www.proforma-production.jp/t/metome-au"
+      "officialProfileUrl": "https://www.proforma-production.jp/t/metome-au",
+      "visibility": "public"
     },
     {
       "id": "tal-000019",
@@ -855,7 +873,7 @@
         "value": "affiliated"
       },
       "activityStatus": {
-        "value": "unknown"
+        "value": "active"
       },
       "accounts": [
         {
@@ -880,7 +898,8 @@
       "profileImage": {
         "url": "https://yt3.ggpht.com/XPoBTJELcobaMFIaRg_qVPbA2B8qzIloNvNNOoG_OkksZJ9JkGiZvRh8Rl3YbU4iV4sxqhZ8=s240-c-k-c0x00ffffff-no-rj"
       },
-      "officialProfileUrl": "https://www.parerdemia.jp/students/26ME004"
+      "officialProfileUrl": "https://www.parerdemia.jp/students/26ME004",
+      "visibility": "public"
     },
     {
       "id": "tal-000020",
@@ -898,7 +917,7 @@
         "value": "affiliated"
       },
       "activityStatus": {
-        "value": "unknown"
+        "value": "active"
       },
       "accounts": [
         {
@@ -923,7 +942,8 @@
       "profileImage": {
         "url": "https://yt3.ggpht.com/qbn_sYVG1ZUjL2xgGkLtNaYdyeWSj8hMooE0VqW4jThdOnm2G6ZKRhpBsxV8pGUXkqi6zUq84w=s240-c-k-c0x00ffffff-no-rj"
       },
-      "officialProfileUrl": "https://www.parerdemia.jp/students/25CO002"
+      "officialProfileUrl": "https://www.parerdemia.jp/students/25CO002",
+      "visibility": "public"
     },
     {
       "id": "tal-000021",
@@ -941,7 +961,7 @@
         "value": "affiliated"
       },
       "activityStatus": {
-        "value": "unknown"
+        "value": "active"
       },
       "accounts": [
         {
@@ -966,7 +986,8 @@
       "profileImage": {
         "url": "https://yt3.ggpht.com/xqdNSKZCNQ6ekbqgjixeOR0aTymLfmP_ILAFQ4sBF7ln-ZWxQYkVjGBun2pF1PwVC6nmwi2KFxE=s240-c-k-c0x00ffffff-no-rj"
       },
-      "officialProfileUrl": "https://www.parerdemia.jp/students/25WA004"
+      "officialProfileUrl": "https://www.parerdemia.jp/students/25WA004",
+      "visibility": "public"
     },
     {
       "id": "tal-000022",
@@ -984,7 +1005,7 @@
         "value": "affiliated"
       },
       "activityStatus": {
-        "value": "unknown"
+        "value": "active"
       },
       "accounts": [
         {
@@ -1009,7 +1030,8 @@
       "profileImage": {
         "url": "https://yt3.ggpht.com/FR4hUBx4CbKSNHsSFNmOirsxutWwh99UiqdUFXaZQ4UmcMzTmlq3Wmbo-anCzIRenl3bojZ8Pg=s240-c-k-c0x00ffffff-no-rj"
       },
-      "officialProfileUrl": "https://www.parerdemia.jp/students/25WH012"
+      "officialProfileUrl": "https://www.parerdemia.jp/students/25WH012",
+      "visibility": "public"
     },
     {
       "id": "tal-000023",
@@ -1027,7 +1049,7 @@
         "value": "affiliated"
       },
       "activityStatus": {
-        "value": "unknown"
+        "value": "active"
       },
       "accounts": [
         {
@@ -1052,7 +1074,8 @@
       "profileImage": {
         "url": "https://yt3.ggpht.com/62ws-Q3hPuNjc64T5sz41MNbFqxlI7Gefwnsrysdn2FNYqlxH5E5VifRCMtsFIUyZe5lsHJmxA=s240-c-k-c0x00ffffff-no-rj"
       },
-      "officialProfileUrl": "https://www.parerdemia.jp/students/25WH015"
+      "officialProfileUrl": "https://www.parerdemia.jp/students/25WH015",
+      "visibility": "public"
     },
     {
       "id": "tal-000024",
@@ -1070,7 +1093,7 @@
         "value": "affiliated"
       },
       "activityStatus": {
-        "value": "unknown"
+        "value": "active"
       },
       "accounts": [
         {
@@ -1095,7 +1118,8 @@
       "profileImage": {
         "url": "https://yt3.ggpht.com/0FA2IgWHnUEwOi919LsjtnX-V-MHLKf-wBQMhEkybsNiifpMfrlQ1JAPDf4kb5GLaLna8BmeNA=s240-c-k-c0x00ffffff-no-rj"
       },
-      "officialProfileUrl": "https://www.parerdemia.jp/students/25WH007"
+      "officialProfileUrl": "https://www.parerdemia.jp/students/25WH007",
+      "visibility": "public"
     },
     {
       "id": "tal-000025",
@@ -1113,7 +1137,7 @@
         "value": "affiliated"
       },
       "activityStatus": {
-        "value": "unknown"
+        "value": "active"
       },
       "accounts": [
         {
@@ -1138,7 +1162,8 @@
       "profileImage": {
         "url": "https://yt3.ggpht.com/FoMfSB8j5DfKLhYyYkZTiSDODTCNEaOlBJykfWqc56jsEvGHgPNq9b8UPkYdtAE6xHe9ZTCVrQ=s240-c-k-c0x00ffffff-no-rj"
       },
-      "officialProfileUrl": "https://www.parerdemia.jp/students/25ME011"
+      "officialProfileUrl": "https://www.parerdemia.jp/students/25ME011",
+      "visibility": "public"
     },
     {
       "id": "tal-000026",
@@ -1156,7 +1181,7 @@
         "value": "affiliated"
       },
       "activityStatus": {
-        "value": "unknown"
+        "value": "active"
       },
       "accounts": [
         {
@@ -1181,7 +1206,8 @@
       "profileImage": {
         "url": "https://yt3.ggpht.com/nMtec5z3KY5RUGCSbQENm9culC2VpB7Ate_dUueAINpAJdFK4wwe7Q6eH88QiMXqjImAleLI=s240-c-k-c0x00ffffff-no-rj"
       },
-      "officialProfileUrl": "https://www.parerdemia.jp/students/26WA003"
+      "officialProfileUrl": "https://www.parerdemia.jp/students/26WA003",
+      "visibility": "public"
     },
     {
       "id": "tal-000027",
@@ -1199,7 +1225,7 @@
         "value": "affiliated"
       },
       "activityStatus": {
-        "value": "unknown"
+        "value": "active"
       },
       "accounts": [
         {
@@ -1224,7 +1250,8 @@
       "profileImage": {
         "url": "https://yt3.ggpht.com/GX5900eq9zWhjaH0ed2mHxFSbUs6l-IXI1O5Joa9qp0M5BTw76KhoMpBC31IvZatLYymIatPMho=s240-c-k-c0x00ffffff-no-rj"
       },
-      "officialProfileUrl": "https://www.parerdemia.jp/students/26WH004"
+      "officialProfileUrl": "https://www.parerdemia.jp/students/26WH004",
+      "visibility": "public"
     },
     {
       "id": "tal-000028",
@@ -1242,7 +1269,7 @@
         "value": "affiliated"
       },
       "activityStatus": {
-        "value": "unknown"
+        "value": "active"
       },
       "accounts": [
         {
@@ -1267,7 +1294,8 @@
       "profileImage": {
         "url": "https://yt3.ggpht.com/eW_Hug0M6zFk9QSbAmOUWLMSfzBlCHmes-8yAksvfUNzyLgY6TSsE_eW8ncfE4bHYZXKoTWxmQ=s240-c-k-c0x00ffffff-no-rj"
       },
-      "officialProfileUrl": "https://www.parerdemia.jp/students/25WA008"
+      "officialProfileUrl": "https://www.parerdemia.jp/students/25WA008",
+      "visibility": "public"
     },
     {
       "id": "tal-000029",
@@ -1285,7 +1313,7 @@
         "value": "affiliated"
       },
       "activityStatus": {
-        "value": "unknown"
+        "value": "active"
       },
       "accounts": [
         {
@@ -1310,7 +1338,8 @@
       "profileImage": {
         "url": "https://yt3.ggpht.com/INy08-sy4lc_VdFTnVS-UPNN_GEq6QlR7G4csb265LOfP97BLr1C7Z8uqU9CX28UILGPsrqTmiQ=s240-c-k-c0x00ffffff-no-rj"
       },
-      "officialProfileUrl": "https://www.parerdemia.jp/students/26CO006"
+      "officialProfileUrl": "https://www.parerdemia.jp/students/26CO006",
+      "visibility": "public"
     },
     {
       "id": "tal-000030",
@@ -1328,7 +1357,7 @@
         "value": "affiliated"
       },
       "activityStatus": {
-        "value": "unknown"
+        "value": "active"
       },
       "accounts": [
         {
@@ -1353,7 +1382,8 @@
       "profileImage": {
         "url": "https://yt3.ggpht.com/pK9UX6scblRGuvFWEpaABpG_PujpclMwfuBsdfByEuG5SyCZIyfRCHr9nY7Z1JL6olzXSDL8=s240-c-k-c0x00ffffff-no-rj"
       },
-      "officialProfileUrl": "https://www.parerdemia.jp/students/26CO005"
+      "officialProfileUrl": "https://www.parerdemia.jp/students/26CO005",
+      "visibility": "public"
     },
     {
       "id": "tal-000031",
@@ -1371,7 +1401,7 @@
         "value": "affiliated"
       },
       "activityStatus": {
-        "value": "unknown"
+        "value": "active"
       },
       "accounts": [
         {
@@ -1396,7 +1426,8 @@
       "profileImage": {
         "url": "https://yt3.ggpht.com/av-eYgAU6Km9BhijpF6lMsq7HgaVhhvUhDLH8KEw_OK8RnHMJuGimWP1wNMZRHChMVm2fhyq=s240-c-k-c0x00ffffff-no-rj"
       },
-      "officialProfileUrl": "https://www.parerdemia.jp/students/25ME013"
+      "officialProfileUrl": "https://www.parerdemia.jp/students/25ME013",
+      "visibility": "public"
     },
     {
       "id": "tal-000032",
@@ -1414,7 +1445,7 @@
         "value": "affiliated"
       },
       "activityStatus": {
-        "value": "unknown"
+        "value": "active"
       },
       "accounts": [
         {
@@ -1439,7 +1470,8 @@
       "profileImage": {
         "url": "https://yt3.ggpht.com/1if2rdJdkKHQBsQt5RZ4twlSmWQPwGGt0mxNiloT9Ee7L8caGbGaIVy3HnJdXX-BUhHUeBAo-xY=s240-c-k-c0x00ffffff-no-rj"
       },
-      "officialProfileUrl": "https://www.parerdemia.jp/students/26CO001"
+      "officialProfileUrl": "https://www.parerdemia.jp/students/26CO001",
+      "visibility": "public"
     },
     {
       "id": "tal-000033",
@@ -1457,7 +1489,7 @@
         "value": "affiliated"
       },
       "activityStatus": {
-        "value": "unknown"
+        "value": "active"
       },
       "accounts": [
         {
@@ -1482,7 +1514,8 @@
       "profileImage": {
         "url": "https://yt3.ggpht.com/98YkSrgDDCNjSVPDPIJB66DckYn5SP3m0bN_Ed3rSTqs5PCGRrcL02mFyPDMrm_a7vDnN7KR=s240-c-k-c0x00ffffff-no-rj"
       },
-      "officialProfileUrl": "https://www.parerdemia.jp/students/25WA011"
+      "officialProfileUrl": "https://www.parerdemia.jp/students/25WA011",
+      "visibility": "public"
     },
     {
       "id": "tal-000034",
@@ -1500,7 +1533,7 @@
         "value": "affiliated"
       },
       "activityStatus": {
-        "value": "unknown"
+        "value": "active"
       },
       "accounts": [
         {
@@ -1525,7 +1558,8 @@
       "profileImage": {
         "url": "https://yt3.ggpht.com/6QXGvenKC_ssgHLjSjbxboEcVDgYLRoG529bCe5qbXnBc0Va-2qWJ2xvg3A7hOSQlOG0r5F9=s240-c-k-c0x00ffffff-no-rj"
       },
-      "officialProfileUrl": "https://www.parerdemia.jp/students/26CO004"
+      "officialProfileUrl": "https://www.parerdemia.jp/students/26CO004",
+      "visibility": "public"
     },
     {
       "id": "tal-000035",
@@ -1543,7 +1577,7 @@
         "value": "affiliated"
       },
       "activityStatus": {
-        "value": "unknown"
+        "value": "active"
       },
       "accounts": [
         {
@@ -1568,7 +1602,8 @@
       "profileImage": {
         "url": "https://yt3.ggpht.com/Am7YiPKV2mx_EEJ8AGa3NXbU8sHgrB6sX4AnL75tKxTJq2MtA18t3NVK3S9-h6d3UKZHy7Bh=s240-c-k-c0x00ffffff-no-rj"
       },
-      "officialProfileUrl": "https://www.parerdemia.jp/students/25CO014"
+      "officialProfileUrl": "https://www.parerdemia.jp/students/25CO014",
+      "visibility": "public"
     },
     {
       "id": "tal-000036",
@@ -1586,7 +1621,7 @@
         "value": "affiliated"
       },
       "activityStatus": {
-        "value": "unknown"
+        "value": "active"
       },
       "accounts": [
         {
@@ -1611,7 +1646,8 @@
       "profileImage": {
         "url": "https://yt3.ggpht.com/Me8I_Op8OlIy8Vuj387_Hdi6gnrZ-qiY1yDDt1Q5yKMKA51ISagT76HE01gw8xbLcef0vpsPgoc=s240-c-k-c0x00ffffff-no-rj"
       },
-      "officialProfileUrl": "https://www.parerdemia.jp/students/25WA009"
+      "officialProfileUrl": "https://www.parerdemia.jp/students/25WA009",
+      "visibility": "public"
     },
     {
       "id": "tal-000037",
@@ -1629,7 +1665,7 @@
         "value": "affiliated"
       },
       "activityStatus": {
-        "value": "unknown"
+        "value": "active"
       },
       "accounts": [
         {
@@ -1654,7 +1690,8 @@
       "profileImage": {
         "url": "https://yt3.ggpht.com/MS1hSixShoy77GfMxg8KL38vfYzD2NRZ5VnPyLyf5-Xg6WENZiAbydPV7YJLYECwRfp6rKNR8Q=s240-c-k-c0x00ffffff-no-rj"
       },
-      "officialProfileUrl": "https://www.parerdemia.jp/students/26ME001"
+      "officialProfileUrl": "https://www.parerdemia.jp/students/26ME001",
+      "visibility": "public"
     },
     {
       "id": "tal-000038",
@@ -1672,7 +1709,7 @@
         "value": "affiliated"
       },
       "activityStatus": {
-        "value": "unknown"
+        "value": "active"
       },
       "accounts": [
         {
@@ -1697,7 +1734,8 @@
       "profileImage": {
         "url": "https://yt3.ggpht.com/tmBGliGBXpM_jyfv1zUMa_FtI7PaTObib7iFeAO-Nunaoy2DjOgaem-trDBR_dW7lw7f8JUkeA=s240-c-k-c0x00ffffff-no-rj"
       },
-      "officialProfileUrl": "https://www.parerdemia.jp/students/26CO002"
+      "officialProfileUrl": "https://www.parerdemia.jp/students/26CO002",
+      "visibility": "public"
     },
     {
       "id": "tal-000039",
@@ -1715,7 +1753,7 @@
         "value": "affiliated"
       },
       "activityStatus": {
-        "value": "unknown"
+        "value": "active"
       },
       "accounts": [
         {
@@ -1740,7 +1778,8 @@
       "profileImage": {
         "url": "https://yt3.ggpht.com/5RjyRMN46n0H9J0TOI1YqqBw_yJR8_qeqcODZnv_K6ZrKrQal9p_2BGVa_V824-DDz1TrZqprxQ=s240-c-k-c0x00ffffff-no-rj"
       },
-      "officialProfileUrl": "https://www.parerdemia.jp/students/25CO010"
+      "officialProfileUrl": "https://www.parerdemia.jp/students/25CO010",
+      "visibility": "public"
     },
     {
       "id": "tal-000040",
@@ -1758,7 +1797,7 @@
         "value": "affiliated"
       },
       "activityStatus": {
-        "value": "unknown"
+        "value": "active"
       },
       "accounts": [
         {
@@ -1783,7 +1822,8 @@
       "profileImage": {
         "url": "https://yt3.ggpht.com/UX0iBg3LHsS2SdRWBH98ND8FU-ta6gZuK9aFAa950KopkVle3qKFqFKjX7v1DKsEmsti2lSzVg=s240-c-k-c0x00ffffff-no-rj"
       },
-      "officialProfileUrl": "https://www.parerdemia.jp/students/26WA006"
+      "officialProfileUrl": "https://www.parerdemia.jp/students/26WA006",
+      "visibility": "public"
     },
     {
       "id": "tal-000041",
@@ -1801,7 +1841,7 @@
         "value": "affiliated"
       },
       "activityStatus": {
-        "value": "unknown"
+        "value": "active"
       },
       "accounts": [
         {
@@ -1826,7 +1866,8 @@
       "profileImage": {
         "url": "https://yt3.ggpht.com/nDlRaltNV-_TkUViiBzaAPFBeFSu4ZaC1XcJ4ENiondxy6f8poAi99eoqq9yZQ7yzbzo33Ts=s240-c-k-c0x00ffffff-no-rj"
       },
-      "officialProfileUrl": "https://www.parerdemia.jp/students/25CO013"
+      "officialProfileUrl": "https://www.parerdemia.jp/students/25CO013",
+      "visibility": "public"
     },
     {
       "id": "tal-000042",
@@ -1844,7 +1885,7 @@
         "value": "affiliated"
       },
       "activityStatus": {
-        "value": "unknown"
+        "value": "active"
       },
       "accounts": [
         {
@@ -1869,7 +1910,8 @@
       "profileImage": {
         "url": "https://yt3.ggpht.com/xBDxcsv8xJCJcqMIzU4rgIrGSk8o01nbi61ln8WzxdqZGB-yX4FfgW3_93BcwJvG8_mOnjH3=s240-c-k-c0x00ffffff-no-rj"
       },
-      "officialProfileUrl": "https://www.parerdemia.jp/students/25ME010"
+      "officialProfileUrl": "https://www.parerdemia.jp/students/25ME010",
+      "visibility": "public"
     },
     {
       "id": "tal-000043",
@@ -1887,7 +1929,7 @@
         "value": "affiliated"
       },
       "activityStatus": {
-        "value": "unknown"
+        "value": "active"
       },
       "accounts": [
         {
@@ -1912,7 +1954,8 @@
       "profileImage": {
         "url": "https://yt3.ggpht.com/neZ2Mw2PcuimtH172AaHAlm5eKk_O17aEJ8aMGhme708zPqxyZB6QhS89qzSt30uXnGLLbgdliw=s240-c-k-c0x00ffffff-no-rj"
       },
-      "officialProfileUrl": "https://www.parerdemia.jp/students/25WA013"
+      "officialProfileUrl": "https://www.parerdemia.jp/students/25WA013",
+      "visibility": "public"
     },
     {
       "id": "tal-000044",
@@ -1930,7 +1973,7 @@
         "value": "affiliated"
       },
       "activityStatus": {
-        "value": "unknown"
+        "value": "active"
       },
       "accounts": [
         {
@@ -1955,7 +1998,8 @@
       "profileImage": {
         "url": "https://yt3.ggpht.com/Gwr7KJNWnI6CEgmIfEeMZahF5pbGNKlRhQXBEkuMWE0D66--IJE77z-5Zu2i5LFBc_CA6ZkqY4Y=s240-c-k-c0x00ffffff-no-rj"
       },
-      "officialProfileUrl": "https://www.parerdemia.jp/students/25CO003"
+      "officialProfileUrl": "https://www.parerdemia.jp/students/25CO003",
+      "visibility": "public"
     },
     {
       "id": "tal-000045",
@@ -1973,7 +2017,7 @@
         "value": "affiliated"
       },
       "activityStatus": {
-        "value": "unknown"
+        "value": "active"
       },
       "accounts": [
         {
@@ -1998,7 +2042,8 @@
       "profileImage": {
         "url": "https://yt3.ggpht.com/mKbwHBT1UJD8Ij8p0qV3oQfMuAjXJvWdv0JK-pobKY037reTsV-YHRi3gN1VEMes8rbIagQO=s240-c-k-c0x00ffffff-no-rj"
       },
-      "officialProfileUrl": "https://www.parerdemia.jp/students/25ME005"
+      "officialProfileUrl": "https://www.parerdemia.jp/students/25ME005",
+      "visibility": "public"
     },
     {
       "id": "tal-000046",
@@ -2016,7 +2061,7 @@
         "value": "affiliated"
       },
       "activityStatus": {
-        "value": "unknown"
+        "value": "active"
       },
       "accounts": [
         {
@@ -2041,7 +2086,8 @@
       "profileImage": {
         "url": "https://yt3.ggpht.com/-4sLuWCih-DlfhpwpDQEuB6eupCB6kTImkIPmKnh54vu5I0F49RkveNQGiqy0p8t0GDU6eiegGE=s240-c-k-c0x00ffffff-no-rj"
       },
-      "officialProfileUrl": "https://www.parerdemia.jp/students/25ME001"
+      "officialProfileUrl": "https://www.parerdemia.jp/students/25ME001",
+      "visibility": "public"
     },
     {
       "id": "tal-000047",
@@ -2059,7 +2105,7 @@
         "value": "affiliated"
       },
       "activityStatus": {
-        "value": "unknown"
+        "value": "active"
       },
       "accounts": [
         {
@@ -2084,7 +2130,8 @@
       "profileImage": {
         "url": "https://yt3.ggpht.com/JU03ig3qIM-HHqVqywsKoin3w_hX7ov4-f4sKM8wIRoH72-Ki07veo7XqKyqgurYe0552BD6=s240-c-k-c0x00ffffff-no-rj"
       },
-      "officialProfileUrl": "https://www.parerdemia.jp/students/25ME014"
+      "officialProfileUrl": "https://www.parerdemia.jp/students/25ME014",
+      "visibility": "public"
     },
     {
       "id": "tal-000048",
@@ -2102,7 +2149,7 @@
         "value": "affiliated"
       },
       "activityStatus": {
-        "value": "unknown"
+        "value": "active"
       },
       "accounts": [
         {
@@ -2127,7 +2174,8 @@
       "profileImage": {
         "url": "https://yt3.ggpht.com/hBz75E3AEST1Dzv5vOTHAqoJfayd30WIWWQ3ZFLlWMHDsyZ_QD6ZVVUtLTKSizalT3APPtdpFGI=s240-c-k-c0x00ffffff-no-rj"
       },
-      "officialProfileUrl": "https://www.parerdemia.jp/students/25WH006"
+      "officialProfileUrl": "https://www.parerdemia.jp/students/25WH006",
+      "visibility": "public"
     },
     {
       "id": "tal-000049",
@@ -2145,7 +2193,7 @@
         "value": "affiliated"
       },
       "activityStatus": {
-        "value": "unknown"
+        "value": "active"
       },
       "accounts": [
         {
@@ -2170,7 +2218,8 @@
       "profileImage": {
         "url": "https://yt3.ggpht.com/Iqa8kv9Rtxo6WwJDofayPUFNXpzczylLfnLo7PZFqtgBos31fl5FH1bEldVwBn04oSSbmN8D=s240-c-k-c0x00ffffff-no-rj"
       },
-      "officialProfileUrl": "https://www.parerdemia.jp/students/25CO004"
+      "officialProfileUrl": "https://www.parerdemia.jp/students/25CO004",
+      "visibility": "public"
     },
     {
       "id": "tal-000050",
@@ -2188,7 +2237,7 @@
         "value": "affiliated"
       },
       "activityStatus": {
-        "value": "unknown"
+        "value": "active"
       },
       "accounts": [
         {
@@ -2213,7 +2262,8 @@
       "profileImage": {
         "url": "https://yt3.ggpht.com/oyKaWuwGOWt4Vw5Uare4hOorTt-BfBgcjgrf9EqRGxPclr4mM_r1FvUZ7BjfxU9OjciTVC9F=s240-c-k-c0x00ffffff-no-rj"
       },
-      "officialProfileUrl": "https://www.parerdemia.jp/students/25CO011"
+      "officialProfileUrl": "https://www.parerdemia.jp/students/25CO011",
+      "visibility": "public"
     },
     {
       "id": "tal-000051",
@@ -2231,7 +2281,7 @@
         "value": "affiliated"
       },
       "activityStatus": {
-        "value": "unknown"
+        "value": "active"
       },
       "accounts": [
         {
@@ -2274,7 +2324,7 @@
         "value": "affiliated"
       },
       "activityStatus": {
-        "value": "unknown"
+        "value": "active"
       },
       "accounts": [
         {
@@ -2317,7 +2367,7 @@
         "value": "affiliated"
       },
       "activityStatus": {
-        "value": "unknown"
+        "value": "active"
       },
       "accounts": [
         {
@@ -2360,7 +2410,7 @@
         "value": "affiliated"
       },
       "activityStatus": {
-        "value": "unknown"
+        "value": "active"
       },
       "accounts": [
         {
@@ -2403,7 +2453,7 @@
         "value": "affiliated"
       },
       "activityStatus": {
-        "value": "unknown"
+        "value": "active"
       },
       "accounts": [
         {
@@ -2446,7 +2496,7 @@
         "value": "affiliated"
       },
       "activityStatus": {
-        "value": "unknown"
+        "value": "active"
       },
       "accounts": [
         {
@@ -2489,7 +2539,7 @@
         "value": "affiliated"
       },
       "activityStatus": {
-        "value": "unknown"
+        "value": "active"
       },
       "accounts": [
         {
@@ -2532,7 +2582,7 @@
         "value": "affiliated"
       },
       "activityStatus": {
-        "value": "unknown"
+        "value": "active"
       },
       "accounts": [
         {
@@ -2575,7 +2625,7 @@
         "value": "affiliated"
       },
       "activityStatus": {
-        "value": "unknown"
+        "value": "active"
       },
       "accounts": [
         {
@@ -2618,7 +2668,7 @@
         "value": "affiliated"
       },
       "activityStatus": {
-        "value": "unknown"
+        "value": "active"
       },
       "accounts": [
         {
@@ -2661,7 +2711,7 @@
         "value": "affiliated"
       },
       "activityStatus": {
-        "value": "unknown"
+        "value": "active"
       },
       "accounts": [
         {
@@ -2704,7 +2754,7 @@
         "value": "affiliated"
       },
       "activityStatus": {
-        "value": "unknown"
+        "value": "active"
       },
       "accounts": [
         {
@@ -2747,7 +2797,7 @@
         "value": "affiliated"
       },
       "activityStatus": {
-        "value": "unknown"
+        "value": "active"
       },
       "accounts": [
         {
@@ -2790,7 +2840,7 @@
         "value": "affiliated"
       },
       "activityStatus": {
-        "value": "unknown"
+        "value": "active"
       },
       "accounts": [
         {
@@ -2833,7 +2883,7 @@
         "value": "affiliated"
       },
       "activityStatus": {
-        "value": "unknown"
+        "value": "active"
       },
       "accounts": [
         {
@@ -2876,7 +2926,7 @@
         "value": "affiliated"
       },
       "activityStatus": {
-        "value": "unknown"
+        "value": "active"
       },
       "accounts": [
         {
@@ -2919,7 +2969,7 @@
         "value": "affiliated"
       },
       "activityStatus": {
-        "value": "unknown"
+        "value": "active"
       },
       "accounts": [
         {
@@ -2962,7 +3012,7 @@
         "value": "affiliated"
       },
       "activityStatus": {
-        "value": "unknown"
+        "value": "active"
       },
       "accounts": [
         {
@@ -3005,7 +3055,7 @@
         "value": "affiliated"
       },
       "activityStatus": {
-        "value": "unknown"
+        "value": "active"
       },
       "accounts": [
         {
@@ -3048,7 +3098,7 @@
         "value": "affiliated"
       },
       "activityStatus": {
-        "value": "unknown"
+        "value": "active"
       },
       "accounts": [
         {
@@ -3091,7 +3141,7 @@
         "value": "affiliated"
       },
       "activityStatus": {
-        "value": "unknown"
+        "value": "active"
       },
       "accounts": [
         {
@@ -3134,7 +3184,7 @@
         "value": "affiliated"
       },
       "activityStatus": {
-        "value": "unknown"
+        "value": "active"
       },
       "accounts": [
         {
@@ -3177,7 +3227,7 @@
         "value": "affiliated"
       },
       "activityStatus": {
-        "value": "unknown"
+        "value": "active"
       },
       "accounts": [
         {
@@ -3220,7 +3270,7 @@
         "value": "affiliated"
       },
       "activityStatus": {
-        "value": "unknown"
+        "value": "active"
       },
       "accounts": [
         {
@@ -3263,7 +3313,7 @@
         "value": "affiliated"
       },
       "activityStatus": {
-        "value": "unknown"
+        "value": "active"
       },
       "accounts": [
         {
@@ -3306,7 +3356,7 @@
         "value": "affiliated"
       },
       "activityStatus": {
-        "value": "unknown"
+        "value": "active"
       },
       "accounts": [
         {
@@ -3349,7 +3399,7 @@
         "value": "affiliated"
       },
       "activityStatus": {
-        "value": "unknown"
+        "value": "active"
       },
       "accounts": [
         {
@@ -3392,7 +3442,7 @@
         "value": "affiliated"
       },
       "activityStatus": {
-        "value": "unknown"
+        "value": "active"
       },
       "accounts": [
         {
@@ -3435,7 +3485,7 @@
         "value": "affiliated"
       },
       "activityStatus": {
-        "value": "unknown"
+        "value": "active"
       },
       "accounts": [
         {
@@ -3478,7 +3528,7 @@
         "value": "affiliated"
       },
       "activityStatus": {
-        "value": "unknown"
+        "value": "active"
       },
       "accounts": [
         {
@@ -3521,7 +3571,7 @@
         "value": "affiliated"
       },
       "activityStatus": {
-        "value": "unknown"
+        "value": "active"
       },
       "accounts": [
         {
@@ -3564,7 +3614,7 @@
         "value": "affiliated"
       },
       "activityStatus": {
-        "value": "unknown"
+        "value": "active"
       },
       "accounts": [
         {
@@ -3607,7 +3657,7 @@
         "value": "affiliated"
       },
       "activityStatus": {
-        "value": "unknown"
+        "value": "active"
       },
       "accounts": [
         {
@@ -3650,7 +3700,7 @@
         "value": "unknown"
       },
       "activityStatus": {
-        "value": "unknown"
+        "value": "ended"
       },
       "accounts": [
         {
@@ -3681,7 +3731,7 @@
         "value": "unknown"
       },
       "activityStatus": {
-        "value": "unknown"
+        "value": "ended"
       },
       "accounts": [
         {
@@ -3712,7 +3762,7 @@
         "value": "unknown"
       },
       "activityStatus": {
-        "value": "unknown"
+        "value": "ended"
       },
       "accounts": [
         {
@@ -3893,7 +3943,7 @@
         "value": "unknown"
       },
       "activityStatus": {
-        "value": "unknown"
+        "value": "active"
       },
       "accounts": [
         {
@@ -3929,7 +3979,7 @@
         "value": "unknown"
       },
       "activityStatus": {
-        "value": "unknown"
+        "value": "ended"
       },
       "accounts": [],
       "wiki": {
@@ -3954,7 +4004,7 @@
         "value": "unknown"
       },
       "activityStatus": {
-        "value": "unknown"
+        "value": "active"
       },
       "accounts": [
         {
@@ -3985,7 +4035,7 @@
         "value": "unknown"
       },
       "activityStatus": {
-        "value": "unknown"
+        "value": "active"
       },
       "accounts": [],
       "wiki": {
@@ -4010,13 +4060,18 @@
         "value": "affiliated"
       },
       "activityStatus": {
-        "value": "unknown"
+        "value": "active"
       },
       "accounts": [
         {
           "service": "youtube",
           "accountId": "UCMX0Mn5PTjojdQL8MN1B5Vg",
           "url": "https://www.youtube.com/channel/UCMX0Mn5PTjojdQL8MN1B5Vg"
+        },
+        {
+          "service": "x",
+          "accountId": "narunaru_1203",
+          "url": "https://x.com/narunaru_1203"
         }
       ],
       "wiki": {

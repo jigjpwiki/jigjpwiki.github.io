@@ -1627,7 +1627,7 @@
     "date": "2026-11-19T22:00:12.000Z",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/I_uQqIWu6Uo/mqdefault.jpg?v=6afebcff",
+    "thumbnail": "https://i.ytimg.com/vi/I_uQqIWu6Uo/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/CH5JMWVQZ_RtloaXoj6W-yXjo9x8UxXSBG_vMyDnfk7M2QTOApVE1zOesu_aDrSAqvDbGrUyxs0=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=I_uQqIWu6Uo"
   },
@@ -1728,18 +1728,6 @@
     "url": "https://www.youtube.com/watch?v=VuLM4oXYVIA"
   },
   {
-    "videoId": "iioSWBSUXVk",
-    "name": "堂下さとり",
-    "youtubeid": "UCBq6MSUL-Ermvnoj3PtX7Iw",
-    "title": "【雑談】新髪型って200種類あんねん？【堂下さとり/パレデミア学園】",
-    "date": "2026-11-20T03:30:00.000Z",
-    "status": "upcoming",
-    "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/iioSWBSUXVk/mqdefault.jpg?v=6aff3eb2",
-    "channelIcon": "https://yt3.ggpht.com/eW_Hug0M6zFk9QSbAmOUWLMSfzBlCHmes-8yAksvfUNzyLgY6TSsE_eW8ncfE4bHYZXKoTWxmQ=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=iioSWBSUXVk"
-  },
-  {
     "videoId": "I-A7Ki_lEjg",
     "name": "相栖るじゅ",
     "youtubeid": "UCrpdBoGpa6g2WEtRWsIlhDQ",
@@ -1762,6 +1750,18 @@
     "thumbnail": "https://i.ytimg.com/vi/0O20qrMUdBI/mqdefault.jpg?v=6affcb55",
     "channelIcon": "https://yt3.ggpht.com/traR_yWe-AOGyM2wjo8h2FJO9JWBcbjfrL13X-umeD6BtNPopSZ2Q3YmdJq_5K9gWgHf_j64iQ=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=0O20qrMUdBI"
+  },
+  {
+    "videoId": "iioSWBSUXVk",
+    "name": "堂下さとり",
+    "youtubeid": "UCBq6MSUL-Ermvnoj3PtX7Iw",
+    "title": "【雑談】新髪型って200種類あんねん？【堂下さとり/パレデミア学園】",
+    "date": "2026-11-20T06:09:00.000Z",
+    "status": "live",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/iioSWBSUXVk/mqdefault.jpg?v=6aff3eb2",
+    "channelIcon": "https://yt3.ggpht.com/eW_Hug0M6zFk9QSbAmOUWLMSfzBlCHmes-8yAksvfUNzyLgY6TSsE_eW8ncfE4bHYZXKoTWxmQ=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=iioSWBSUXVk"
   },
   {
     "videoId": "Cw94wqexG54",
@@ -1798,6 +1798,18 @@
     "thumbnail": "https://i.ytimg.com/vi/PVRcqdj6jr0/mqdefault.jpg?v=6afe3fd6",
     "channelIcon": "https://yt3.ggpht.com/rthBXvqjNFcVwEp-AWpiZDXnNjBodSXlsDTa-sjW6uR6Ssv3wuOw2dMXDZLlYaf_c4YiKfItHXU=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=PVRcqdj6jr0"
+  },
+  {
+    "videoId": "TVYn3QFexZQ",
+    "name": "常磐カナメ",
+    "youtubeid": "UCbNEgJIF_ADD9e8-q7SoxCg",
+    "title": "常磐カナメフランス一人旅Vlog",
+    "date": "2026-11-20T11:00:00.000Z",
+    "status": "upcoming",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/TVYn3QFexZQ/mqdefault.jpg",
+    "channelIcon": "https://yt3.ggpht.com/vb_kLF_4hQ7UdEtOnEtL-_pI320ZMQ-lVQ9OV3xMvdTQitHXX1zk0b6GKQ977dawvfoB5Sb8OQ=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=TVYn3QFexZQ"
   },
   {
     "videoId": "T3_HdpNIvrI",

@@ -1591,7 +1591,7 @@
     "date": "2026-11-19T21:30:10.000Z",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/O4bFuZ1pmao/mqdefault.jpg?v=6aff0d71",
+    "thumbnail": "https://i.ytimg.com/vi/O4bFuZ1pmao/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/Iqa8kv9Rtxo6WwJDofayPUFNXpzczylLfnLo7PZFqtgBos31fl5FH1bEldVwBn04oSSbmN8D=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=O4bFuZ1pmao"
   },
@@ -1699,7 +1699,7 @@
     "date": "2026-11-20T03:01:08.000Z",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/mdsU39DQrn4/mqdefault.jpg?v=6affb2cd",
+    "thumbnail": "https://i.ytimg.com/vi/mdsU39DQrn4/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/BaxFKUrCc4gGKc1wwAHt4ebjk8C69NdTl3fMz9LoR5SUm_Tpvv2yixsbJhp8qsld6S0tdgup=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=mdsU39DQrn4"
   },
@@ -1853,7 +1853,7 @@
     "youtubeid": "UCOah55SQYynzPgQQ4wxuzkA",
     "title": "【#ブループロトコルスターレゾナンス  】完全初見🔰～＃２探索編～【水透ユウ】【PR/ぶいきゃす】",
     "date": "2026-11-20T09:35:53.000Z",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/7oxQAbV5Di4/mqdefault.jpg?v=6b0012fe",
     "channelIcon": "https://yt3.ggpht.com/eVD8Ygm7KVyh3dvWnyebfYlbYpD13ZYQ-Bos8WdR5LDE61A3svHVHCLEY-rM3IQgw9O4uvdd=s240-c-k-c0x00ffffff-no-rj",
@@ -1888,24 +1888,12 @@
     "name": "藤宮コトハ",
     "youtubeid": "UCGndc74kfWb_A-8hZBG534Q",
     "title": "#藤宮コトハ生誕祭2026 ライブありがとうございました～！！🍀【藤宮コトハ / パレプロ】",
-    "date": "2026-11-20T11:00:00.000Z",
-    "status": "upcoming",
+    "date": "2026-11-20T10:59:46.000Z",
+    "status": "live",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/PVRcqdj6jr0/mqdefault.jpg?v=6afe3fd6",
     "channelIcon": "https://yt3.ggpht.com/rthBXvqjNFcVwEp-AWpiZDXnNjBodSXlsDTa-sjW6uR6Ssv3wuOw2dMXDZLlYaf_c4YiKfItHXU=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=PVRcqdj6jr0"
-  },
-  {
-    "videoId": "TVYn3QFexZQ",
-    "name": "常磐カナメ",
-    "youtubeid": "UCbNEgJIF_ADD9e8-q7SoxCg",
-    "title": "常磐カナメフランス一人旅Vlog",
-    "date": "2026-11-20T11:00:00.000Z",
-    "status": "upcoming",
-    "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/TVYn3QFexZQ/mqdefault.jpg",
-    "channelIcon": "https://yt3.ggpht.com/vb_kLF_4hQ7UdEtOnEtL-_pI320ZMQ-lVQ9OV3xMvdTQitHXX1zk0b6GKQ977dawvfoB5Sb8OQ=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=TVYn3QFexZQ"
   },
   {
     "videoId": "T3_HdpNIvrI",

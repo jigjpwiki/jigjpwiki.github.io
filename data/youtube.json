@@ -1579,7 +1579,7 @@
     "date": "2026-11-19T16:44:12.000Z",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/ESjtCINfVDg/mqdefault.jpg?v=6aff284f",
+    "thumbnail": "https://i.ytimg.com/vi/ESjtCINfVDg/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/6QXGvenKC_ssgHLjSjbxboEcVDgYLRoG529bCe5qbXnBc0Va-2qWJ2xvg3A7hOSQlOG0r5F9=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=ESjtCINfVDg"
   },
@@ -1771,7 +1771,7 @@
     "date": "2026-11-20T05:22:38.000Z",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/SodK5QODYf0/mqdefault.jpg?v=6affd81a",
+    "thumbnail": "https://i.ytimg.com/vi/SodK5QODYf0/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/hl89JE2NAP5BVl-HV8uv5_W8GUXgnmJdhxXZv6En8GqzHMsdWHWRbxLsti6amESp6V-Uu0oZBmc=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=SodK5QODYf0"
   },
@@ -1783,7 +1783,7 @@
     "date": "2026-11-20T05:22:48.000Z",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/-o3hyYldwCE/mqdefault.jpg?v=6affd7b4",
+    "thumbnail": "https://i.ytimg.com/vi/-o3hyYldwCE/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/hl89JE2NAP5BVl-HV8uv5_W8GUXgnmJdhxXZv6En8GqzHMsdWHWRbxLsti6amESp6V-Uu0oZBmc=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=-o3hyYldwCE"
   },
@@ -1812,18 +1812,6 @@
     "url": "https://www.youtube.com/watch?v=0J5YzxI-Z2Y"
   },
   {
-    "videoId": "Cw94wqexG54",
-    "name": "藤森ちとせ",
-    "youtubeid": "UCAhdxmsdngH4noySdpVAVWQ",
-    "title": "【#歌枠 】17曲歌っちゃう配信～🎵【#vtuber 】#ちとせらいぶ #パレデミア学園",
-    "date": "2026-11-20T09:00:00.000Z",
-    "status": "upcoming",
-    "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/Cw94wqexG54/mqdefault.jpg?v=6af870f5",
-    "channelIcon": "https://yt3.ggpht.com/traR_yWe-AOGyM2wjo8h2FJO9JWBcbjfrL13X-umeD6BtNPopSZ2Q3YmdJq_5K9gWgHf_j64iQ=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=Cw94wqexG54"
-  },
-  {
     "videoId": "bZSdXMVDye4",
     "name": "夏渚まはろ",
     "youtubeid": "UC_a00ml_EVDXSrtY8ZuyqGQ",
@@ -1834,6 +1822,54 @@
     "thumbnail": "https://i.ytimg.com/vi/bZSdXMVDye4/mqdefault.jpg?v=6af9590c",
     "channelIcon": "https://yt3.ggpht.com/iktv-39nC7NDASD1WeXms-DEuHuVqB5RhwTtdDe26w-BCvqf6yq3r_8zBiv2i2CfNXCK0uE8=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=bZSdXMVDye4"
+  },
+  {
+    "videoId": "y8jvGn0RJgY",
+    "name": "藤宮コトハ",
+    "youtubeid": "UCGndc74kfWb_A-8hZBG534Q",
+    "title": "うららやーはやは✨🐰#shorts #藤宮コトハ #パレプロ #ちいかわ",
+    "date": "2026-11-20T09:00:22.000Z",
+    "status": "archive",
+    "type": "video",
+    "thumbnail": "https://i.ytimg.com/vi/y8jvGn0RJgY/mqdefault.jpg",
+    "channelIcon": "https://yt3.ggpht.com/rthBXvqjNFcVwEp-AWpiZDXnNjBodSXlsDTa-sjW6uR6Ssv3wuOw2dMXDZLlYaf_c4YiKfItHXU=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=y8jvGn0RJgY"
+  },
+  {
+    "videoId": "Cw94wqexG54",
+    "name": "藤森ちとせ",
+    "youtubeid": "UCAhdxmsdngH4noySdpVAVWQ",
+    "title": "【#歌枠 】17曲歌っちゃう配信～🎵【#vtuber 】#ちとせらいぶ #パレデミア学園",
+    "date": "2026-11-20T09:00:38.000Z",
+    "status": "live",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/Cw94wqexG54/mqdefault.jpg?v=6af870f5",
+    "channelIcon": "https://yt3.ggpht.com/traR_yWe-AOGyM2wjo8h2FJO9JWBcbjfrL13X-umeD6BtNPopSZ2Q3YmdJq_5K9gWgHf_j64iQ=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=Cw94wqexG54"
+  },
+  {
+    "videoId": "ZBk27RVbpl8",
+    "name": "冬星れんこん",
+    "youtubeid": "UCy4tS4QJSyI-VOr9ImBEveg",
+    "title": "【雑談♡】おはなししよう　冬星れんこん/パレデミア学園　#新人vtuber",
+    "date": "2026-11-20T09:01:05.000Z",
+    "status": "live",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/ZBk27RVbpl8/mqdefault.jpg?v=6b0007d0",
+    "channelIcon": "https://yt3.ggpht.com/nMtec5z3KY5RUGCSbQENm9culC2VpB7Ate_dUueAINpAJdFK4wwe7Q6eH88QiMXqjImAleLI=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=ZBk27RVbpl8"
+  },
+  {
+    "videoId": "7oxQAbV5Di4",
+    "name": "水透ユウ",
+    "youtubeid": "UCOah55SQYynzPgQQ4wxuzkA",
+    "title": "【#ブループロトコルスターレゾナンス  】完全初見🔰～＃２探索編～【水透ユウ】【PR/ぶいきゃす】",
+    "date": "2026-11-20T09:35:53.000Z",
+    "status": "live",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/7oxQAbV5Di4/mqdefault.jpg?v=6b0012fe",
+    "channelIcon": "https://yt3.ggpht.com/eVD8Ygm7KVyh3dvWnyebfYlbYpD13ZYQ-Bos8WdR5LDE61A3svHVHCLEY-rM3IQgw9O4uvdd=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=7oxQAbV5Di4"
   },
   {
     "videoId": "PVRcqdj6jr0",
@@ -1872,6 +1908,30 @@
     "url": "https://www.youtube.com/watch?v=T3_HdpNIvrI"
   },
   {
+    "videoId": "7mgSOqcZ-RI",
+    "name": "花晴りら",
+    "youtubeid": "UCqcnlq8uJqnGml6hcIrMCZw",
+    "title": "【 雑談 】ぶいかふぇ♪直前！予習とか持ち物チェックとか【花晴りら/パレデミア学園 】#れりライブ #新人vtuber",
+    "date": "2026-11-20T12:00:00.000Z",
+    "status": "upcoming",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/7mgSOqcZ-RI/mqdefault.jpg?v=6b00003b",
+    "channelIcon": "https://yt3.ggpht.com/CH5JMWVQZ_RtloaXoj6W-yXjo9x8UxXSBG_vMyDnfk7M2QTOApVE1zOesu_aDrSAqvDbGrUyxs0=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=7mgSOqcZ-RI"
+  },
+  {
+    "videoId": "3GADMVnIKNw",
+    "name": "陰山アゲハ",
+    "youtubeid": "UCIw8aQVRBwi72yOrPLgkbRQ",
+    "title": "【#歌枠 #雑談 】バレンタイングッズ化したいのはさておきレイアースハマった【陰山アゲハ #パレデミア学園 】",
+    "date": "2026-11-20T12:00:00.000Z",
+    "status": "upcoming",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/3GADMVnIKNw/mqdefault.jpg?v=6b000e1e",
+    "channelIcon": "https://yt3.ggpht.com/XWKUawU_WoX_xINkx3TMSF3fj0RbdiwNezFiEAGcmHfQYvwkjMUM1mvyOmgsbK8LxHoo6aEKJA=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=3GADMVnIKNw"
+  },
+  {
     "videoId": "RYeWkHfa8ns",
     "name": "愛乃宮ゆめ",
     "youtubeid": "UCttSjPiwPYpiPuCrgxK7c1g",
@@ -1903,7 +1963,7 @@
     "date": "2026-11-20T13:00:00.000Z",
     "status": "upcoming",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/KjoXApxozrU/mqdefault.jpg?v=6afff3cf",
+    "thumbnail": "https://i.ytimg.com/vi/KjoXApxozrU/mqdefault.jpg?v=6b000db2",
     "channelIcon": "https://yt3.ggpht.com/vb_kLF_4hQ7UdEtOnEtL-_pI320ZMQ-lVQ9OV3xMvdTQitHXX1zk0b6GKQ977dawvfoB5Sb8OQ=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=KjoXApxozrU"
   },
@@ -1918,6 +1978,18 @@
     "thumbnail": "https://i.ytimg.com/vi/pSZyxSs1nos/mqdefault.jpg?v=6aff32a2",
     "channelIcon": "https://yt3.ggpht.com/Am7YiPKV2mx_EEJ8AGa3NXbU8sHgrB6sX4AnL75tKxTJq2MtA18t3NVK3S9-h6d3UKZHy7Bh=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=pSZyxSs1nos"
+  },
+  {
+    "videoId": "WW8RgEWI2Ng",
+    "name": "花晴りら",
+    "youtubeid": "UCqcnlq8uJqnGml6hcIrMCZw",
+    "title": "【 初見歓迎/朝活雑談 】ついにリアイベ前日！出発前にみんなに会いたい朝活🌷【 花晴りら / パレデミア学園 】#れりライブ #新人vtuber",
+    "date": "2026-11-20T22:00:00.000Z",
+    "status": "upcoming",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/WW8RgEWI2Ng/mqdefault.jpg?v=6b00021f",
+    "channelIcon": "https://yt3.ggpht.com/CH5JMWVQZ_RtloaXoj6W-yXjo9x8UxXSBG_vMyDnfk7M2QTOApVE1zOesu_aDrSAqvDbGrUyxs0=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=WW8RgEWI2Ng"
   },
   {
     "videoId": "hivlgyDtdy0",

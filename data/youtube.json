@@ -1709,7 +1709,7 @@
     "youtubeid": "UCrB-SfrqB5ChY8aAT99grXw",
     "title": "【#歌枠 】ぶいかふぇ♪前に声出しとかなきゃねの歌枠【パレデミア学園/緋雨柚】",
     "date": "2026-11-20T03:01:41.000Z",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/k2FN5hQQf5E/mqdefault.jpg?v=6affb59f",
     "channelIcon": "https://yt3.ggpht.com/dPJHngNTeEfD_K0Mus141-We4xIuAhttm2pgEBl3VdGXqWvxGfy5mJfDMDbBmwI6UGc17dXb-g=s240-c-k-c0x00ffffff-no-rj",
@@ -1738,6 +1738,18 @@
     "thumbnail": "https://i.ytimg.com/vi/iioSWBSUXVk/mqdefault.jpg?v=6aff3eb2",
     "channelIcon": "https://yt3.ggpht.com/eW_Hug0M6zFk9QSbAmOUWLMSfzBlCHmes-8yAksvfUNzyLgY6TSsE_eW8ncfE4bHYZXKoTWxmQ=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=iioSWBSUXVk"
+  },
+  {
+    "videoId": "I-A7Ki_lEjg",
+    "name": "相栖るじゅ",
+    "youtubeid": "UCrpdBoGpa6g2WEtRWsIlhDQ",
+    "title": "【昼活/雑談】お昼を一緒に過ごそう～☕【相栖るじゅ/パレデミア学園】",
+    "date": "2026-11-20T03:33:40.000Z",
+    "status": "live",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/I-A7Ki_lEjg/mqdefault.jpg?v=6affb9aa",
+    "channelIcon": "https://yt3.ggpht.com/yQbh9vEEgS_UapoQhIxxoTSy13bDxlHYC-ncTcO9VIDBN2NvrLTAWeKGQ72CN2fhOOrHqYaFDA=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=I-A7Ki_lEjg"
   },
   {
     "videoId": "Cw94wqexG54",
@@ -1798,6 +1810,18 @@
     "thumbnail": "https://i.ytimg.com/vi/RYeWkHfa8ns/mqdefault.jpg?v=6af2253b",
     "channelIcon": "https://yt3.ggpht.com/Gwr7KJNWnI6CEgmIfEeMZahF5pbGNKlRhQXBEkuMWE0D66--IJE77z-5Zu2i5LFBc_CA6ZkqY4Y=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=RYeWkHfa8ns"
+  },
+  {
+    "videoId": "xJjjdVi7rBY",
+    "name": "小澄くろまる",
+    "youtubeid": "UC1Eq7ExEH0XO380it8cZYZg",
+    "title": "【参加型】じゃぁぁぁぁぁ～～～～～～んっﾀﾏｯ【#小澄くろまる /ぷろのゔぁ】",
+    "date": "2026-11-20T12:30:00.000Z",
+    "status": "upcoming",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/xJjjdVi7rBY/mqdefault.jpg?v=6affc2c3",
+    "channelIcon": "https://yt3.ggpht.com/_pGNq0-SYZiXjomeCnQRygINoA2PKkUJMbRtwuSIL83vUAny58me1QY1WttWypAIwJFrE5hh0w=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=xJjjdVi7rBY"
   },
   {
     "videoId": "pSZyxSs1nos",

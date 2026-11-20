@@ -1411,7 +1411,7 @@
     "date": "2026-11-20T09:00:38.000Z",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/Cw94wqexG54/mqdefault.jpg?v=6af870f5",
+    "thumbnail": "https://i.ytimg.com/vi/Cw94wqexG54/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/traR_yWe-AOGyM2wjo8h2FJO9JWBcbjfrL13X-umeD6BtNPopSZ2Q3YmdJq_5K9gWgHf_j64iQ=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=Cw94wqexG54"
   },
@@ -1447,7 +1447,7 @@
     "date": "2026-11-20T10:31:34.000Z",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/M-duqaT3b3o/mqdefault.jpg?v=6afeecb6",
+    "thumbnail": "https://i.ytimg.com/vi/M-duqaT3b3o/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/-7v40HQCqllHpJD69LHIo2n5lUt-pZ-bLtfrKAXhZk9OF06nj4Lno3gwBvO8d1jBSl5dCCxAxQ=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=M-duqaT3b3o"
   },
@@ -1469,7 +1469,7 @@
     "youtubeid": "UCGndc74kfWb_A-8hZBG534Q",
     "title": "#藤宮コトハ生誕祭2026 ライブありがとうございました～！！🍀【藤宮コトハ / パレプロ】",
     "date": "2026-11-20T10:59:46.000Z",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/PVRcqdj6jr0/mqdefault.jpg?v=6afe3fd6",
     "channelIcon": "https://yt3.ggpht.com/rthBXvqjNFcVwEp-AWpiZDXnNjBodSXlsDTa-sjW6uR6Ssv3wuOw2dMXDZLlYaf_c4YiKfItHXU=s240-c-k-c0x00ffffff-no-rj",
@@ -1740,6 +1740,54 @@
     "url": "https://www.youtube.com/watch?v=klsPBHHir1I"
   },
   {
+    "videoId": "OapZ-Z8quMU",
+    "name": "香桜あんにん",
+    "youtubeid": "UC8zjZBqGnx_j55ZJzluhW8A",
+    "title": "【同時視聴】『ドラゴンボール』62～65話一緒にみよ！#あんにんたいむ #186【パレデミア学園/香桜あんにん/＃新人VTuber】",
+    "date": "2026-11-20T14:54:22.000Z",
+    "status": "archive",
+    "type": "video",
+    "thumbnail": "https://i.ytimg.com/vi/OapZ-Z8quMU/mqdefault.jpg?v=6b005f1e",
+    "channelIcon": "https://yt3.ggpht.com/JRXqD91MsPhrWJ3aAvhpK919pr-WhzNdFUbaFPe-t6CSCnNPLrd1Z74jKYTCiJwp62BaAvrpUQ=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=OapZ-Z8quMU"
+  },
+  {
+    "videoId": "72El-YZm_BY",
+    "name": "七音うら",
+    "youtubeid": "UCv2IYO-4waCpHvn50SWWY2A",
+    "title": "【#ラジオ動画】うらちのくーるびゅーてーらじお(仮)#５【七音うら】",
+    "date": "2026-11-20T15:00:27.000Z",
+    "status": "archive",
+    "type": "video",
+    "thumbnail": "https://i.ytimg.com/vi/72El-YZm_BY/mqdefault.jpg",
+    "channelIcon": "https://yt3.ggpht.com/62ws-Q3hPuNjc64T5sz41MNbFqxlI7Gefwnsrysdn2FNYqlxH5E5VifRCMtsFIUyZe5lsHJmxA=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=72El-YZm_BY"
+  },
+  {
+    "videoId": "IGo0vitrIdU",
+    "name": "暁月クララ",
+    "youtubeid": "UCn4XvlTXjGSvDynpxpOYZPQ",
+    "title": "氷渡香名江さんとオタクトークで盛り上がる【#学園アイドルマスター 】#切り抜き #学マス",
+    "date": "2026-11-20T15:09:14.000Z",
+    "status": "archive",
+    "type": "video",
+    "thumbnail": "https://i.ytimg.com/vi/IGo0vitrIdU/mqdefault.jpg",
+    "channelIcon": "https://yt3.ggpht.com/8tcStp-WzdZPtf6bPq1DtUnFSd2Eq5AppSd3_CEQ7hNNpnRND8InaWdPCz6T1wIWWkGJuFrbT94=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=IGo0vitrIdU"
+  },
+  {
+    "videoId": "iaSgMoPokNw",
+    "name": "堂下さとり",
+    "youtubeid": "UCBq6MSUL-Ermvnoj3PtX7Iw",
+    "title": "【参加型】三麻　雀魂　どなたでもどうぞ！【堂下さとり/パレデミア学園】",
+    "date": "2026-11-20T15:13:34.000Z",
+    "status": "live",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/iaSgMoPokNw/mqdefault.jpg?v=6b006184",
+    "channelIcon": "https://yt3.ggpht.com/eW_Hug0M6zFk9QSbAmOUWLMSfzBlCHmes-8yAksvfUNzyLgY6TSsE_eW8ncfE4bHYZXKoTWxmQ=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=iaSgMoPokNw"
+  },
+  {
     "videoId": "WW8RgEWI2Ng",
     "name": "花晴りら",
     "youtubeid": "UCqcnlq8uJqnGml6hcIrMCZw",
@@ -1848,6 +1896,18 @@
     "url": "https://www.youtube.com/watch?v=ifn398C0AQ4"
   },
   {
+    "videoId": "s5Cn-coyLKo",
+    "name": "藤森ちとせ",
+    "youtubeid": "UCAhdxmsdngH4noySdpVAVWQ",
+    "title": "【#minecraft  】床張り地獄👐｜建築雑談配信💬作業用にも☺ROM歓迎🎉【#vtuber 】#ちとせらいぶ #パレデミア学園",
+    "date": "2026-11-23T04:00:00.000Z",
+    "status": "upcoming",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/s5Cn-coyLKo/mqdefault.jpg?v=6b006640",
+    "channelIcon": "https://yt3.ggpht.com/traR_yWe-AOGyM2wjo8h2FJO9JWBcbjfrL13X-umeD6BtNPopSZ2Q3YmdJq_5K9gWgHf_j64iQ=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=s5Cn-coyLKo"
+  },
+  {
     "videoId": "BqfPbcjABj8",
     "name": "花晴りら",
     "youtubeid": "UCqcnlq8uJqnGml6hcIrMCZw",
@@ -1860,6 +1920,18 @@
     "url": "https://www.youtube.com/watch?v=BqfPbcjABj8"
   },
   {
+    "videoId": "rDKOUBHBrUE",
+    "name": "藤森ちとせ",
+    "youtubeid": "UCAhdxmsdngH4noySdpVAVWQ",
+    "title": "【#Minecraft 】ねるちゃんと建築をするかもしれないマイクラコラボ配信🏠💬【#vtuber 】#ちとせらいぶ #パレデミア学園",
+    "date": "2026-11-23T09:00:00.000Z",
+    "status": "upcoming",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/rDKOUBHBrUE/mqdefault.jpg?v=6b0066ec",
+    "channelIcon": "https://yt3.ggpht.com/traR_yWe-AOGyM2wjo8h2FJO9JWBcbjfrL13X-umeD6BtNPopSZ2Q3YmdJq_5K9gWgHf_j64iQ=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=rDKOUBHBrUE"
+  },
+  {
     "videoId": "88mMnaaYWmc",
     "name": "Palette Project",
     "youtubeid": "UC_cCW1xmXwRFp1tX-RD2X1Q",
@@ -1870,6 +1942,18 @@
     "thumbnail": "https://i.ytimg.com/vi/88mMnaaYWmc/mqdefault.jpg?v=6afc4b81",
     "channelIcon": "https://yt3.ggpht.com/ytc/AIdro_nuv43BXc-JNRM-omFed0brcXGTD8qvA8313ZeQa8PfviA=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=88mMnaaYWmc"
+  },
+  {
+    "videoId": "uFwiY_9Ed6k",
+    "name": "藤森ちとせ",
+    "youtubeid": "UCAhdxmsdngH4noySdpVAVWQ",
+    "title": "【#repo 】今日こそいい感じのレベルに到達したいのもり🤖🤖✨｜ねるちゃんとコラボ配信！【#vtuber  】#ちとせらいぶ #パレデミア学園",
+    "date": "2026-11-25T09:00:00.000Z",
+    "status": "upcoming",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/uFwiY_9Ed6k/mqdefault.jpg?v=6b006f34",
+    "channelIcon": "https://yt3.ggpht.com/traR_yWe-AOGyM2wjo8h2FJO9JWBcbjfrL13X-umeD6BtNPopSZ2Q3YmdJq_5K9gWgHf_j64iQ=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=uFwiY_9Ed6k"
   },
   {
     "videoId": "0v2pz3P3Xk8",

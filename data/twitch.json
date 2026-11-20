@@ -102,5 +102,30 @@
     "url": "https://www.twitch.tv/videos/2933665474",
     "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/1405880b-e945-4720-98c9-6a08c6400cae-profile_image-300x300.png",
     "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/66d190f5bff1ec561dc9_41futon_316733481585_1795094637//thumb/thumb0-320x180.jpg"
+  },
+  {
+    "name": "なかもとおまち",
+    "twitchid": "41futon",
+    "videoId": "2934664514",
+    "streamId": "316748042354",
+    "title": "MR1647～今日でグラマス、ゆくよ！",
+    "date": "2026-11-20T05:44:26.000Z",
+    "status": "archive",
+    "type": "stream",
+    "url": "https://www.twitch.tv/videos/2934664514",
+    "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/1405880b-e945-4720-98c9-6a08c6400cae-profile_image-300x300.png",
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/eccae29ec7b23a559cbf_41futon_316748042354_1795153461//thumb/thumb0-320x180.jpg"
+  },
+  {
+    "name": "なかもとおまち",
+    "twitchid": "41futon",
+    "streamId": "316748046450",
+    "title": "久々のお昼ランクマ🐻で気分上々",
+    "date": "2026-11-20T05:45:58.000Z",
+    "status": "live",
+    "type": "stream",
+    "url": "https://www.twitch.tv/41futon",
+    "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/1405880b-e945-4720-98c9-6a08c6400cae-profile_image-300x300.png",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_41futon-320x180.jpg"
   }
 ]

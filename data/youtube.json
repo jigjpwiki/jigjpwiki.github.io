@@ -1915,7 +1915,7 @@
     "date": "2026-11-21T01:04:42.000Z",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/KFM025Ytb7A/mqdefault.jpg?v=6b00e011",
+    "thumbnail": "https://i.ytimg.com/vi/KFM025Ytb7A/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/rthBXvqjNFcVwEp-AWpiZDXnNjBodSXlsDTa-sjW6uR6Ssv3wuOw2dMXDZLlYaf_c4YiKfItHXU=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=KFM025Ytb7A"
   },
@@ -1997,7 +1997,7 @@
     "youtubeid": "UCdJmJxMfXrlnZabUkuss2EA",
     "title": "【 #雑談】ライブ前最後のおしゃべり(*^_^*)【犬丸なでこ/パレデミア学園】",
     "date": "2026-11-21T07:02:19.000Z",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/E-liZIiu294/mqdefault.jpg?v=6b0140ed",
     "channelIcon": "https://yt3.ggpht.com/HZPUrbSwGcllAbUtx6xggJ6lKfMfnAWDxWOCc01tpthiDipSqQP48TK5Jqz4GRzUdwKMUsxlsg=s240-c-k-c0x00ffffff-no-rj",
@@ -2014,6 +2014,54 @@
     "thumbnail": "https://i.ytimg.com/vi/hivlgyDtdy0/mqdefault.jpg?v=6afdca61",
     "channelIcon": "https://yt3.ggpht.com/av9H0_OxG16zI7tQKGwYEwhIZd1RXZQKGjkWfgHslvYRTV5aJBEInW2q0qDzb51lttFjkJ_pBw=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=hivlgyDtdy0"
+  },
+  {
+    "videoId": "zKY_o3KEbNQ",
+    "name": "堂下さとり",
+    "youtubeid": "UCBq6MSUL-Ermvnoj3PtX7Iw",
+    "title": "【手元配信】チョコアイスだけでお菓子の家【堂下さとり/パレデミア学園】",
+    "date": "2026-11-21T08:59:30.000Z",
+    "status": "live",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/zKY_o3KEbNQ/mqdefault.jpg?v=6b015b2a",
+    "channelIcon": "https://yt3.ggpht.com/eW_Hug0M6zFk9QSbAmOUWLMSfzBlCHmes-8yAksvfUNzyLgY6TSsE_eW8ncfE4bHYZXKoTWxmQ=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=zKY_o3KEbNQ"
+  },
+  {
+    "videoId": "vsLcRlJzmw4",
+    "name": "Palette Project",
+    "youtubeid": "UC_cCW1xmXwRFp1tX-RD2X1Q",
+    "title": "全力で\"ボケる\"メンバーたちｗ 【パレプロ切り抜き】#shorts",
+    "date": "2026-11-21T09:00:19.000Z",
+    "status": "archive",
+    "type": "video",
+    "thumbnail": "https://i.ytimg.com/vi/vsLcRlJzmw4/mqdefault.jpg",
+    "channelIcon": "https://yt3.ggpht.com/ytc/AIdro_nuv43BXc-JNRM-omFed0brcXGTD8qvA8313ZeQa8PfviA=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=vsLcRlJzmw4"
+  },
+  {
+    "videoId": "i4b67HLniBc",
+    "name": "鬼多見アユム",
+    "youtubeid": "UCnrJK-sb3gSn3kRLkmpmzaw",
+    "title": "【#雑談 】ラブビームくらっちゃった？【鬼多見アユム🍊👹】",
+    "date": "2026-11-21T09:00:28.000Z",
+    "status": "live",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/i4b67HLniBc/mqdefault.jpg?v=6b0152a4",
+    "channelIcon": "https://yt3.ggpht.com/MwFtS4Atq-VZX_p-mgdnGa95NMQAnQCz9boYbtkLbNvkbA_kgvqLMOMU3J34uFX1FCrvzyP3_g=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=i4b67HLniBc"
+  },
+  {
+    "videoId": "CVzHtJf2GsQ",
+    "name": "夏渚まはろ",
+    "youtubeid": "UC_a00ml_EVDXSrtY8ZuyqGQ",
+    "title": "【Don't Starve Together￤ドンスタ】ウルフギャング（Wolfgang）のケンシキMAXを目指す！有識者求む【#夏渚まはろ￤#パレプロ】",
+    "date": "2026-11-21T10:00:00.000Z",
+    "status": "upcoming",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/CVzHtJf2GsQ/mqdefault.jpg?v=6b015d31",
+    "channelIcon": "https://yt3.ggpht.com/iktv-39nC7NDASD1WeXms-DEuHuVqB5RhwTtdDe26w-BCvqf6yq3r_8zBiv2i2CfNXCK0uE8=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=CVzHtJf2GsQ"
   },
   {
     "videoId": "P9ocyUJzUWg",

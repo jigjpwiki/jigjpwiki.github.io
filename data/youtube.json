@@ -672,18 +672,6 @@
     "url": "https://www.youtube.com/watch?v=zYLA5-JyKFE"
   },
   {
-    "videoId": "Pgy2XwGR3Wo",
-    "name": "鈴木沙透",
-    "youtubeid": "UCj5nRzNFXZn9GRhITRkKElA",
-    "title": "【雑談】20時間ほど寝ていた件について【鈴木沙透/パレデミア学園】",
-    "date": "2026-11-19T15:54:01.000Z",
-    "status": "archive",
-    "type": "video",
-    "thumbnail": "https://i.ytimg.com/vi/Pgy2XwGR3Wo/mqdefault.jpg?v=6aff1b99",
-    "channelIcon": "https://yt3.ggpht.com/HS-52_p7fIqMPokM5Wq_16ALyGWaJMB31ChyEb02uLUl-GpABw-FVtvMCQrkLrJ4i1xrmRS4Ug=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=Pgy2XwGR3Wo"
-  },
-  {
     "videoId": "ESjtCINfVDg",
     "name": "天堂ライラ",
     "youtubeid": "UCpdWNjSU-onhmcARqgHIfpg",
@@ -1174,18 +1162,6 @@
     "thumbnail": "https://i.ytimg.com/vi/xJjjdVi7rBY/mqdefault.jpg?v=6affc2c3",
     "channelIcon": "https://yt3.ggpht.com/_pGNq0-SYZiXjomeCnQRygINoA2PKkUJMbRtwuSIL83vUAny58me1QY1WttWypAIwJFrE5hh0w=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=xJjjdVi7rBY"
-  },
-  {
-    "videoId": "BDwfkcgCY9Y",
-    "name": "香桜あんにん",
-    "youtubeid": "UC8zjZBqGnx_j55ZJzluhW8A",
-    "title": "【同時視聴】『ドラゴンボール』62～65話一緒にみよ！#あんにんたいむ #186【パレデミア学園/香桜あんにん/＃新人VTuber】",
-    "date": "2026-11-20T13:04:41.000Z",
-    "status": "archive",
-    "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/BDwfkcgCY9Y/mqdefault.jpg",
-    "channelIcon": "https://yt3.ggpht.com/JRXqD91MsPhrWJ3aAvhpK919pr-WhzNdFUbaFPe-t6CSCnNPLrd1Z74jKYTCiJwp62BaAvrpUQ=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=BDwfkcgCY9Y"
   },
   {
     "videoId": "FIEE4eZfU8Y",
@@ -1709,7 +1685,7 @@
     "youtubeid": "UC8zjZBqGnx_j55ZJzluhW8A",
     "title": "【初見さん待ち歌枠】心温まる歌を歌おう！#あんにんたいむ #187【パレデミア学園/香桜あんにん/＃新人VTuber】",
     "date": "2026-11-21T12:29:56.000Z",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/OapZ-Z8quMU/mqdefault.jpg?v=6b018d94",
     "channelIcon": "https://yt3.ggpht.com/JRXqD91MsPhrWJ3aAvhpK919pr-WhzNdFUbaFPe-t6CSCnNPLrd1Z74jKYTCiJwp62BaAvrpUQ=s240-c-k-c0x00ffffff-no-rj",
@@ -1786,6 +1762,18 @@
     "thumbnail": "https://i.ytimg.com/vi/AH8y6ggRDN4/mqdefault.jpg?v=6afeea09",
     "channelIcon": "https://yt3.ggpht.com/62ws-Q3hPuNjc64T5sz41MNbFqxlI7Gefwnsrysdn2FNYqlxH5E5VifRCMtsFIUyZe5lsHJmxA=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=AH8y6ggRDN4"
+  },
+  {
+    "videoId": "Pgy2XwGR3Wo",
+    "name": "鈴木沙透",
+    "youtubeid": "UCj5nRzNFXZn9GRhITRkKElA",
+    "title": "【#歌枠 】加湿器炊いたので喉潤ってます【鈴木沙透/パレデミア学園】",
+    "date": "2026-11-21T15:35:06.000Z",
+    "status": "live",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/Pgy2XwGR3Wo/mqdefault.jpg?v=6b01b9c3",
+    "channelIcon": "https://yt3.ggpht.com/HS-52_p7fIqMPokM5Wq_16ALyGWaJMB31ChyEb02uLUl-GpABw-FVtvMCQrkLrJ4i1xrmRS4Ug=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=Pgy2XwGR3Wo"
   },
   {
     "videoId": "jdo1InVtsx4",

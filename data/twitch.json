@@ -106,13 +106,14 @@
   {
     "name": "なかもとおまち",
     "twitchid": "41futon",
+    "videoId": "2936157881",
     "streamId": "316816595827",
     "title": "月で深夜労働をするみたい。",
-    "date": "2026-11-21T14:36:31.000Z",
-    "status": "live",
+    "date": "2026-11-21T14:36:36.000Z",
+    "status": "archive",
     "type": "stream",
-    "url": "https://www.twitch.tv/41futon",
+    "url": "https://www.twitch.tv/videos/2936157881",
     "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/1405880b-e945-4720-98c9-6a08c6400cae-profile_image-300x300.png",
-    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_41futon-320x180.jpg"
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/a5de77596a97e660e9cd_41futon_316816595827_1795271791//thumb/thumb0-320x180.jpg"
   }
 ]

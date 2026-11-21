@@ -1471,7 +1471,7 @@
     "date": "2026-11-21T06:42:24.000Z",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/C8ormGfYfWc/mqdefault.jpg?v=6b013ca8",
+    "thumbnail": "https://i.ytimg.com/vi/C8ormGfYfWc/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/dPJHngNTeEfD_K0Mus141-We4xIuAhttm2pgEBl3VdGXqWvxGfy5mJfDMDbBmwI6UGc17dXb-g=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=C8ormGfYfWc"
   },
@@ -1541,7 +1541,7 @@
     "youtubeid": "UC_a00ml_EVDXSrtY8ZuyqGQ",
     "title": "【Don't Starve Together￤ドンスタ】ウルフギャング（Wolfgang）のケンシキMAXを目指す！有識者求む【#夏渚まはろ￤#パレプロ】",
     "date": "2026-11-21T10:01:47.000Z",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/CVzHtJf2GsQ/mqdefault.jpg?v=6b015d31",
     "channelIcon": "https://yt3.ggpht.com/iktv-39nC7NDASD1WeXms-DEuHuVqB5RhwTtdDe26w-BCvqf6yq3r_8zBiv2i2CfNXCK0uE8=s240-c-k-c0x00ffffff-no-rj",
@@ -1822,6 +1822,18 @@
     "thumbnail": "https://i.ytimg.com/vi/jdo1InVtsx4/mqdefault.jpg?v=6b01a668",
     "channelIcon": "https://yt3.ggpht.com/Iqa8kv9Rtxo6WwJDofayPUFNXpzczylLfnLo7PZFqtgBos31fl5FH1bEldVwBn04oSSbmN8D=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=jdo1InVtsx4"
+  },
+  {
+    "videoId": "-O7lB9xeqJs",
+    "name": "夏渚まはろ",
+    "youtubeid": "UC_a00ml_EVDXSrtY8ZuyqGQ",
+    "title": "【Don't Starve Together￤ドンスタ】ウェンディ（Wendy）のケンシキMAXを目指す！有識者求む【#夏渚まはろ￤#パレプロ】",
+    "date": "2026-11-22T09:00:00.000Z",
+    "status": "upcoming",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/-O7lB9xeqJs/mqdefault.jpg?v=6b020993",
+    "channelIcon": "https://yt3.ggpht.com/iktv-39nC7NDASD1WeXms-DEuHuVqB5RhwTtdDe26w-BCvqf6yq3r_8zBiv2i2CfNXCK0uE8=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=-O7lB9xeqJs"
   },
   {
     "videoId": "EcctMwhFKnk",

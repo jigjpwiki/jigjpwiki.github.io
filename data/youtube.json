@@ -1651,7 +1651,7 @@
     "date": "2026-11-21T12:03:40.000Z",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/A_Hxn8T3JLQ/mqdefault.jpg?v=6b018b54",
+    "thumbnail": "https://i.ytimg.com/vi/A_Hxn8T3JLQ/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/VB97J8AMHex_rkfd6hDhfiGhhVvrL-NNkseP2mMYSWh75sxA_oXctmxK5tV4FYgkM17RUAx6GQ=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=A_Hxn8T3JLQ"
   },
@@ -1894,6 +1894,30 @@
     "thumbnail": "https://i.ytimg.com/vi/ySG87oZd7Fc/mqdefault.jpg?v=6b024adb",
     "channelIcon": "https://yt3.ggpht.com/BaxFKUrCc4gGKc1wwAHt4ebjk8C69NdTl3fMz9LoR5SUm_Tpvv2yixsbJhp8qsld6S0tdgup=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=ySG87oZd7Fc"
+  },
+  {
+    "videoId": "SOeSSpE1Htc",
+    "name": "鬼多見アユム",
+    "youtubeid": "UCnrJK-sb3gSn3kRLkmpmzaw",
+    "title": "【#雑談 】日曜だからお昼おきぽや【鬼多見アユム🍊👹】",
+    "date": "2026-11-22T03:01:24.000Z",
+    "status": "live",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/SOeSSpE1Htc/mqdefault.jpg?v=6b025638",
+    "channelIcon": "https://yt3.ggpht.com/MwFtS4Atq-VZX_p-mgdnGa95NMQAnQCz9boYbtkLbNvkbA_kgvqLMOMU3J34uFX1FCrvzyP3_g=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=SOeSSpE1Htc"
+  },
+  {
+    "videoId": "EW3xzB-LzjE",
+    "name": "陰山アゲハ",
+    "youtubeid": "UCIw8aQVRBwi72yOrPLgkbRQ",
+    "title": "【#apex 】ルーレットでキャラ変参加型えぺその2【陰山アゲハ/#パレデミア学園 】",
+    "date": "2026-11-22T05:00:00.000Z",
+    "status": "upcoming",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/EW3xzB-LzjE/mqdefault.jpg?v=6b026328",
+    "channelIcon": "https://yt3.ggpht.com/XWKUawU_WoX_xINkx3TMSF3fj0RbdiwNezFiEAGcmHfQYvwkjMUM1mvyOmgsbK8LxHoo6aEKJA=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=EW3xzB-LzjE"
   },
   {
     "videoId": "-O7lB9xeqJs",

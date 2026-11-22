@@ -1687,7 +1687,7 @@
     "date": "2026-11-21T12:31:11.000Z",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/24f63gtOCzM/mqdefault.jpg?v=6b018c02",
+    "thumbnail": "https://i.ytimg.com/vi/24f63gtOCzM/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/_pGNq0-SYZiXjomeCnQRygINoA2PKkUJMbRtwuSIL83vUAny58me1QY1WttWypAIwJFrE5hh0w=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=24f63gtOCzM"
   },
@@ -1882,6 +1882,18 @@
     "thumbnail": "https://i.ytimg.com/vi/CP29RsY7Hjo/mqdefault.jpg?v=6b022f95",
     "channelIcon": "https://yt3.ggpht.com/Gwr7KJNWnI6CEgmIfEeMZahF5pbGNKlRhQXBEkuMWE0D66--IJE77z-5Zu2i5LFBc_CA6ZkqY4Y=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=CP29RsY7Hjo"
+  },
+  {
+    "videoId": "ySG87oZd7Fc",
+    "name": "瀬奈りるか",
+    "youtubeid": "UCWi_ztz8Xuz4XfzhoG6ZfyA",
+    "title": "【ブルアカ】続：イベスト読む！ゲヘナカップ！✨イベ終わって10日経ってようやくイベストを読みます🌟【ブルーアーカイブ】 ＃せなりるライブ",
+    "date": "2026-11-22T03:00:00.000Z",
+    "status": "upcoming",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/ySG87oZd7Fc/mqdefault.jpg?v=6b024adb",
+    "channelIcon": "https://yt3.ggpht.com/BaxFKUrCc4gGKc1wwAHt4ebjk8C69NdTl3fMz9LoR5SUm_Tpvv2yixsbJhp8qsld6S0tdgup=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=ySG87oZd7Fc"
   },
   {
     "videoId": "-O7lB9xeqJs",

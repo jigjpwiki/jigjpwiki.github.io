@@ -1807,7 +1807,7 @@
     "date": "2026-11-21T21:32:12.000Z",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/jdo1InVtsx4/mqdefault.jpg?v=6b01a668",
+    "thumbnail": "https://i.ytimg.com/vi/jdo1InVtsx4/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/Iqa8kv9Rtxo6WwJDofayPUFNXpzczylLfnLo7PZFqtgBos31fl5FH1bEldVwBn04oSSbmN8D=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=jdo1InVtsx4"
   },
@@ -1920,18 +1920,6 @@
     "url": "https://www.youtube.com/watch?v=kO04epkJisQ"
   },
   {
-    "videoId": "EW3xzB-LzjE",
-    "name": "陰山アゲハ",
-    "youtubeid": "UCIw8aQVRBwi72yOrPLgkbRQ",
-    "title": "【#apex 】ルーレットでキャラ変参加型えぺその2【陰山アゲハ/#パレデミア学園 】",
-    "date": "2026-11-22T05:01:19.000Z",
-    "status": "archive",
-    "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/EW3xzB-LzjE/mqdefault.jpg?v=6b026328",
-    "channelIcon": "https://yt3.ggpht.com/XWKUawU_WoX_xINkx3TMSF3fj0RbdiwNezFiEAGcmHfQYvwkjMUM1mvyOmgsbK8LxHoo6aEKJA=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=EW3xzB-LzjE"
-  },
-  {
     "videoId": "G6hWV4sgcKk",
     "name": "堂下さとり",
     "youtubeid": "UCBq6MSUL-Ermvnoj3PtX7Iw",
@@ -2040,6 +2028,18 @@
     "url": "https://www.youtube.com/watch?v=upsxiT4k7Yg"
   },
   {
+    "videoId": "1nMecFbJUO4",
+    "name": "七音うら",
+    "youtubeid": "UCv2IYO-4waCpHvn50SWWY2A",
+    "title": "【#雑談配信】やっぱり冬眠したい日の雑談。【七音うら】",
+    "date": "2026-11-22T10:36:31.000Z",
+    "status": "archive",
+    "type": "video",
+    "thumbnail": "https://i.ytimg.com/vi/1nMecFbJUO4/mqdefault.jpg?v=6b02c5af",
+    "channelIcon": "https://yt3.ggpht.com/62ws-Q3hPuNjc64T5sz41MNbFqxlI7Gefwnsrysdn2FNYqlxH5E5VifRCMtsFIUyZe5lsHJmxA=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=1nMecFbJUO4"
+  },
+  {
     "videoId": "ZCMVHazQ340",
     "name": "暁月クララ",
     "youtubeid": "UCn4XvlTXjGSvDynpxpOYZPQ",
@@ -2062,6 +2062,18 @@
     "thumbnail": "https://i.ytimg.com/vi/NgG42rfqIb4/mqdefault.jpg?v=6b0299d2",
     "channelIcon": "https://yt3.ggpht.com/VB97J8AMHex_rkfd6hDhfiGhhVvrL-NNkseP2mMYSWh75sxA_oXctmxK5tV4FYgkM17RUAx6GQ=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=NgG42rfqIb4"
+  },
+  {
+    "videoId": "Cbn4I3Rshp8",
+    "name": "七音うら",
+    "youtubeid": "UCv2IYO-4waCpHvn50SWWY2A",
+    "title": "【#くみたてモルカー 】初めての組み立てキット！大好きなテディを組み立てる！※手元配信【#七音うら】",
+    "date": "2026-11-22T12:00:00.000Z",
+    "status": "upcoming",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/Cbn4I3Rshp8/mqdefault.jpg?v=6b02c600",
+    "channelIcon": "https://yt3.ggpht.com/62ws-Q3hPuNjc64T5sz41MNbFqxlI7Gefwnsrysdn2FNYqlxH5E5VifRCMtsFIUyZe5lsHJmxA=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=Cbn4I3Rshp8"
   },
   {
     "videoId": "ifn398C0AQ4",

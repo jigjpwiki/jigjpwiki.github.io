@@ -141,5 +141,17 @@
     "url": "https://www.twitch.tv/videos/2937220247",
     "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/6eea4ef4-a33b-4c66-9378-ad3aa84b1187-profile_image-300x300.png",
     "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d3vd9lfkzbru3h/8e17f4759e37951722aa_metome_au_316746881393_1795348817//thumb/thumb0-320x180.jpg"
+  },
+  {
+    "name": "なかもとおまち",
+    "twitchid": "41futon",
+    "streamId": "316747640561",
+    "title": "【カメラあり】冬が代～おでんは優勝～",
+    "date": "2026-11-22T14:28:07.000Z",
+    "status": "live",
+    "type": "stream",
+    "url": "https://www.twitch.tv/41futon",
+    "channelIcon": "https://static-cdn.jtvnw.net/jtv_user_pictures/1405880b-e945-4720-98c9-6a08c6400cae-profile_image-300x300.png",
+    "thumbnail": "https://static-cdn.jtvnw.net/previews-ttv/live_user_41futon-320x180.jpg"
   }
 ]

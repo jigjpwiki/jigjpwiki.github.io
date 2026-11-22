@@ -1363,7 +1363,7 @@
     "date": "2026-11-22T04:09:58.000Z",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/zzejaY9WBQo/mqdefault.jpg?v=6b026a8f",
+    "thumbnail": "https://i.ytimg.com/vi/zzejaY9WBQo/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/hl89JE2NAP5BVl-HV8uv5_W8GUXgnmJdhxXZv6En8GqzHMsdWHWRbxLsti6amESp6V-Uu0oZBmc=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=zzejaY9WBQo"
   },
@@ -1375,7 +1375,7 @@
     "date": "2026-11-22T04:10:08.000Z",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/kO04epkJisQ/mqdefault.jpg?v=6b026a5b",
+    "thumbnail": "https://i.ytimg.com/vi/kO04epkJisQ/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/hl89JE2NAP5BVl-HV8uv5_W8GUXgnmJdhxXZv6En8GqzHMsdWHWRbxLsti6amESp6V-Uu0oZBmc=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=kO04epkJisQ"
   },
@@ -1517,7 +1517,7 @@
     "youtubeid": "UCGndc74kfWb_A-8hZBG534Q",
     "title": "さくさく解けないタイプです。ヒントは見るものでしょう？【藤宮コトハ / パレプロ】",
     "date": "2026-11-22T12:14:06.000Z",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/bVc9gESAHjE/mqdefault.jpg?v=6b02dbd8",
     "channelIcon": "https://yt3.ggpht.com/rthBXvqjNFcVwEp-AWpiZDXnNjBodSXlsDTa-sjW6uR6Ssv3wuOw2dMXDZLlYaf_c4YiKfItHXU=s240-c-k-c0x00ffffff-no-rj",
@@ -1567,7 +1567,7 @@
     "date": "2026-11-22T13:01:43.000Z",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/wt-sEhxtp9Q/mqdefault.jpg?v=6b02de39",
+    "thumbnail": "https://i.ytimg.com/vi/wt-sEhxtp9Q/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/K9NG8yMDYt1GGoQjhc9c-XEBm1PxGVkEhIQxos6ODhB_pk5HpUvETjUOe5LLkzzJ3biot_nWwQ=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=wt-sEhxtp9Q"
   },
@@ -1654,6 +1654,18 @@
     "thumbnail": "https://i.ytimg.com/vi/5Xg_5hB3WFA/mqdefault.jpg?v=6b03108f",
     "channelIcon": "https://yt3.ggpht.com/62ws-Q3hPuNjc64T5sz41MNbFqxlI7Gefwnsrysdn2FNYqlxH5E5VifRCMtsFIUyZe5lsHJmxA=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=5Xg_5hB3WFA"
+  },
+  {
+    "videoId": "Esix4Cxmy-M",
+    "name": "藤森ちとせ",
+    "youtubeid": "UCAhdxmsdngH4noySdpVAVWQ",
+    "title": "【#Minecraft 】夜中にいきなり柱破壊配信しましょうね～⛏｜黒曜石採掘雑談配信💬寝落ち・作業用にも☺ROM歓迎🎉【#vtuber 】#ちとせらいぶ #パレデミア学園",
+    "date": "2026-11-22T18:15:00.000Z",
+    "status": "upcoming",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/Esix4Cxmy-M/mqdefault.jpg?v=6b032f63",
+    "channelIcon": "https://yt3.ggpht.com/traR_yWe-AOGyM2wjo8h2FJO9JWBcbjfrL13X-umeD6BtNPopSZ2Q3YmdJq_5K9gWgHf_j64iQ=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=Esix4Cxmy-M"
   },
   {
     "videoId": "s5Cn-coyLKo",

@@ -1627,7 +1627,7 @@
     "date": "2026-11-22T15:00:45.000Z",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/1nMecFbJUO4/mqdefault.jpg?v=6b02c5af",
+    "thumbnail": "https://i.ytimg.com/vi/1nMecFbJUO4/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/62ws-Q3hPuNjc64T5sz41MNbFqxlI7Gefwnsrysdn2FNYqlxH5E5VifRCMtsFIUyZe5lsHJmxA=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=1nMecFbJUO4"
   },
@@ -1752,12 +1752,36 @@
     "url": "https://www.youtube.com/watch?v=RoxC3DBlV10"
   },
   {
+    "videoId": "dnPejr-lPN4",
+    "name": "鬼多見アユム",
+    "youtubeid": "UCnrJK-sb3gSn3kRLkmpmzaw",
+    "title": "【#雑談 】寝起きボイスでもお話してくれる？【鬼多見アユム🍊👹】",
+    "date": "2026-11-23T03:04:46.000Z",
+    "status": "live",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/dnPejr-lPN4/mqdefault.jpg?v=6b03acf2",
+    "channelIcon": "https://yt3.ggpht.com/MwFtS4Atq-VZX_p-mgdnGa95NMQAnQCz9boYbtkLbNvkbA_kgvqLMOMU3J34uFX1FCrvzyP3_g=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=dnPejr-lPN4"
+  },
+  {
+    "videoId": "Dq33N_oC4xs",
+    "name": "雪紫誉",
+    "youtubeid": "UCdbYinKlpkB_uMt_wPmYcsw",
+    "title": "【#雑談】たくさんの人と話がしたいオオカミ#初見さん大歓迎 ◎【#パレデミア学園/#ゆきむらじお】】＃新人VTuber＃雑談#耐久",
+    "date": "2026-11-23T03:29:24.000Z",
+    "status": "live",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/Dq33N_oC4xs/mqdefault.jpg?v=6b03ab71",
+    "channelIcon": "https://yt3.ggpht.com/kc8qx6FtYx06iGCCSrpiWKAxzIVVbLeADEuF2JEPwkqv_HCMQpb2jxGhgjLi5EFi9bytVp_o=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=Dq33N_oC4xs"
+  },
+  {
     "videoId": "s5Cn-coyLKo",
     "name": "藤森ちとせ",
     "youtubeid": "UCAhdxmsdngH4noySdpVAVWQ",
     "title": "【#minecraft  】床張り地獄👐｜建築雑談配信💬作業用にも☺ROM歓迎🎉【#vtuber 】#ちとせらいぶ #パレデミア学園",
-    "date": "2026-11-23T04:00:00.000Z",
-    "status": "upcoming",
+    "date": "2026-11-23T04:04:44.000Z",
+    "status": "live",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/s5Cn-coyLKo/mqdefault.jpg?v=6b006640",
     "channelIcon": "https://yt3.ggpht.com/traR_yWe-AOGyM2wjo8h2FJO9JWBcbjfrL13X-umeD6BtNPopSZ2Q3YmdJq_5K9gWgHf_j64iQ=s240-c-k-c0x00ffffff-no-rj",

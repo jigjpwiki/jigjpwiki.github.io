@@ -1483,7 +1483,7 @@
     "date": "2026-11-22T12:01:10.000Z",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/NgG42rfqIb4/mqdefault.jpg?v=6b0299d2",
+    "thumbnail": "https://i.ytimg.com/vi/NgG42rfqIb4/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/VB97J8AMHex_rkfd6hDhfiGhhVvrL-NNkseP2mMYSWh75sxA_oXctmxK5tV4FYgkM17RUAx6GQ=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=NgG42rfqIb4"
   },
@@ -1757,7 +1757,7 @@
     "youtubeid": "UCnrJK-sb3gSn3kRLkmpmzaw",
     "title": "【#雑談 】寝起きボイスでもお話してくれる？【鬼多見アユム🍊👹】",
     "date": "2026-11-23T03:04:46.000Z",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/dnPejr-lPN4/mqdefault.jpg?v=6b03acf2",
     "channelIcon": "https://yt3.ggpht.com/MwFtS4Atq-VZX_p-mgdnGa95NMQAnQCz9boYbtkLbNvkbA_kgvqLMOMU3J34uFX1FCrvzyP3_g=s240-c-k-c0x00ffffff-no-rj",
@@ -1798,6 +1798,30 @@
     "thumbnail": "https://i.ytimg.com/vi/r9eK0lhIWBU/mqdefault.jpg?v=6b03823a",
     "channelIcon": "https://yt3.ggpht.com/qvbeb9E-gYc822fxxzi6Ug5QyjhqZAWbUskHANcwDWP5W8iTsK3LcQJnjS4CVBuFJ6fONsM9F7M=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=r9eK0lhIWBU"
+  },
+  {
+    "videoId": "LOaNWdho66s",
+    "name": "七海ロナ",
+    "youtubeid": "UCIaZylf5L9MsCMOJX3BdTEg",
+    "title": "【肝試しオンライン】冬の肝試しも乙なもんですよ👻【パレプロ／七海ロナ】",
+    "date": "2026-11-23T07:00:00.000Z",
+    "status": "upcoming",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/LOaNWdho66s/mqdefault.jpg?v=6b03c43c",
+    "channelIcon": "https://yt3.ggpht.com/86cM_4q1A56pIYgdKxh776hM0nropjiZIlmXbfroWHXQ-MjdGGsjLcL5hMDOFL-T2EJHmybT=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=LOaNWdho66s"
+  },
+  {
+    "videoId": "-8T4B3_xv0M",
+    "name": "江波キョウカ",
+    "youtubeid": "UChpkyQ3O21OnkcMcgCoNHCg",
+    "title": "꒰ঌ #肝試しオンライン┆同接伸びるって聞いて肝試しにきたのに裏切者ってなんですか！！？【 #江波キョウカ / #パレプロ肝試し 】",
+    "date": "2026-11-23T07:00:00.000Z",
+    "status": "upcoming",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/-8T4B3_xv0M/mqdefault.jpg?v=6b03bf1a",
+    "channelIcon": "https://yt3.ggpht.com/pM4ZefnBFJ2qlBEqknYCFHdW6dLH29KptwG0OYSu1-mAVAIy5M1IjwpMwC24-A_v07nluGGrlQ=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=-8T4B3_xv0M"
   },
   {
     "videoId": "BqfPbcjABj8",

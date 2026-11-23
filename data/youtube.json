@@ -1265,7 +1265,7 @@
     "youtubeid": "UCAhdxmsdngH4noySdpVAVWQ",
     "title": "【#Minecraft 】ねるちゃんと建築をするかもしれないマイクラコラボ配信🏠💬【#vtuber 】#ちとせらいぶ #パレデミア学園",
     "date": "2026-11-23T09:02:55.000Z",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/rDKOUBHBrUE/mqdefault.jpg?v=6b0066ec",
     "channelIcon": "https://yt3.ggpht.com/traR_yWe-AOGyM2wjo8h2FJO9JWBcbjfrL13X-umeD6BtNPopSZ2Q3YmdJq_5K9gWgHf_j64iQ=s240-c-k-c0x00ffffff-no-rj",
@@ -1510,6 +1510,54 @@
     "thumbnail": "https://i.ytimg.com/vi/mslQN3prIOQ/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/-7v40HQCqllHpJD69LHIo2n5lUt-pZ-bLtfrKAXhZk9OF06nj4Lno3gwBvO8d1jBSl5dCCxAxQ=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=mslQN3prIOQ"
+  },
+  {
+    "videoId": "NClcFHDAl90",
+    "name": "汐月永遠",
+    "youtubeid": "UCCCm2ueQtW3mYUMB7Excq8g",
+    "title": "【#雑談 】久々の配信【汐月永遠/パレデミア学園】#永遠との時間",
+    "date": "2026-11-23T15:30:34.000Z",
+    "status": "live",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/NClcFHDAl90/mqdefault.jpg?v=6b0458e6",
+    "channelIcon": "https://yt3.ggpht.com/68oh3mZjSYRleiuocaxnF9VcHdbaxLQzjCq4QgdPlHe3083eTdmNkfXZ6YV81vTUA51qoNXH_g=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=NClcFHDAl90"
+  },
+  {
+    "videoId": "6c_rnWmCTPg",
+    "name": "桜堂ねる",
+    "youtubeid": "UC0H7dRRqhfOifbYQ2TURdAg",
+    "title": "空手家Vtuberのマイクラ",
+    "date": "2026-11-23T15:42:46.000Z",
+    "status": "archive",
+    "type": "video",
+    "thumbnail": "https://i.ytimg.com/vi/6c_rnWmCTPg/mqdefault.jpg?v=6b045ef6",
+    "channelIcon": "https://yt3.ggpht.com/hBz75E3AEST1Dzv5vOTHAqoJfayd30WIWWQ3ZFLlWMHDsyZ_QD6ZVVUtLTKSizalT3APPtdpFGI=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=6c_rnWmCTPg"
+  },
+  {
+    "videoId": "rXknBw9_xY0",
+    "name": "桜庭羽奈",
+    "youtubeid": "UCPgg_A08ksSYP-VivJGniRw",
+    "title": "【おはよう100目標！】祝日明けの火曜日頑張ろう！初見さん大歓迎！💛【新人VTuberの雑談／歌枠】🐻",
+    "date": "2026-11-23T21:30:00.000Z",
+    "status": "upcoming",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/rXknBw9_xY0/mqdefault.jpg?v=6b0458c8",
+    "channelIcon": "https://yt3.ggpht.com/Iqa8kv9Rtxo6WwJDofayPUFNXpzczylLfnLo7PZFqtgBos31fl5FH1bEldVwBn04oSSbmN8D=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=rXknBw9_xY0"
+  },
+  {
+    "videoId": "5TVM4fAh228",
+    "name": "花晴りら",
+    "youtubeid": "UCqcnlq8uJqnGml6hcIrMCZw",
+    "title": "【 初見歓迎/朝活雑談 】リアイベからただいま！久しぶりにみんなにおはよう言いたい朝活🌷【 花晴りら / パレデミア学園 】#れりライブ #新人vtuber",
+    "date": "2026-11-23T22:00:00.000Z",
+    "status": "upcoming",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/5TVM4fAh228/mqdefault.jpg?v=6b0457a6",
+    "channelIcon": "https://yt3.ggpht.com/CH5JMWVQZ_RtloaXoj6W-yXjo9x8UxXSBG_vMyDnfk7M2QTOApVE1zOesu_aDrSAqvDbGrUyxs0=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=5TVM4fAh228"
   },
   {
     "videoId": "88mMnaaYWmc",

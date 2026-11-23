@@ -1147,7 +1147,7 @@
     "date": "2026-11-23T03:29:24.000Z",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/Dq33N_oC4xs/mqdefault.jpg?v=6b03ab71",
+    "thumbnail": "https://i.ytimg.com/vi/Dq33N_oC4xs/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/kc8qx6FtYx06iGCCSrpiWKAxzIVVbLeADEuF2JEPwkqv_HCMQpb2jxGhgjLi5EFi9bytVp_o=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=Dq33N_oC4xs"
   },
@@ -1327,7 +1327,7 @@
     "date": "2026-11-23T11:10:53.000Z",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/mGRR5W1PwIA/mqdefault.jpg?v=6b01ab86",
+    "thumbnail": "https://i.ytimg.com/vi/mGRR5W1PwIA/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/av9H0_OxG16zI7tQKGwYEwhIZd1RXZQKGjkWfgHslvYRTV5aJBEInW2q0qDzb51lttFjkJ_pBw=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=mGRR5W1PwIA"
   },
@@ -1428,6 +1428,18 @@
     "url": "https://www.youtube.com/watch?v=nOY-KH1Z8mU"
   },
   {
+    "videoId": "AdDZStL3COY",
+    "name": "無月いお",
+    "youtubeid": "UC2X_mAVGw8e3N9JQZZDVBfQ",
+    "title": "【#低音女子】ぶいかふぇの余韻に浸ろうの会《#パレデミア学園》#雑談#新人VTuber#寝落ち",
+    "date": "2026-11-23T13:01:46.000Z",
+    "status": "archive",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/AdDZStL3COY/mqdefault.jpg?v=6b04368e",
+    "channelIcon": "https://yt3.ggpht.com/Z7PlAWhweuycNXNXoQ6etyDTkduySM-Kqy8kQW-AD19JuRdxT3HSdIxogPw3GPD5NHw_vZlf=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=AdDZStL3COY"
+  },
+  {
     "videoId": "myMaqdfw5QE",
     "name": "雛菊のん",
     "youtubeid": "UChccV6U0Tkx9de4YjXbEelw",
@@ -1493,7 +1505,7 @@
     "youtubeid": "UC5bCRde8xRrNS7s6GjCNCyQ",
     "title": "【 7Days to Die 】7Days to Dieみんなでゾンビ大群に立ち向かえ！！！3日間にわたる物語！【変幻リメ】",
     "date": "2026-11-23T14:02:34.000Z",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/etkGNXpvQAs/mqdefault.jpg?v=6b043e12",
     "channelIcon": "https://yt3.ggpht.com/4hssn4EXW2lORXRfiuYTjmYfnlZoQ2h72sdEompqX7GQwAKCsBx7eL0joCFSook1rfCKIcpykg=s240-c-k-c0x00ffffff-no-rj",
@@ -1560,6 +1572,30 @@
     "url": "https://www.youtube.com/watch?v=5TVM4fAh228"
   },
   {
+    "videoId": "akd0bIjznCc",
+    "name": "無月いお",
+    "youtubeid": "UC2X_mAVGw8e3N9JQZZDVBfQ",
+    "title": "【#低音女子】11/24　新しい試み朝枠《#パレデミア学園》#雑談#新人VTuber#朝活#朝食#初見さん大歓迎#縦型配信",
+    "date": "2026-11-23T22:00:00.000Z",
+    "status": "upcoming",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/akd0bIjznCc/mqdefault.jpg?v=6b04524d",
+    "channelIcon": "https://yt3.ggpht.com/Z7PlAWhweuycNXNXoQ6etyDTkduySM-Kqy8kQW-AD19JuRdxT3HSdIxogPw3GPD5NHw_vZlf=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=akd0bIjznCc"
+  },
+  {
+    "videoId": "Iu6yJ7mwBOo",
+    "name": "無月いお",
+    "youtubeid": "UC2X_mAVGw8e3N9JQZZDVBfQ",
+    "title": "【#低音女子】コーヒー飲みながら雑談しよ《#パレデミア学園》#雑談#新人VTuber#vtuber#縦型Live#初見さん大歓迎",
+    "date": "2026-11-24T03:00:00.000Z",
+    "status": "upcoming",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/Iu6yJ7mwBOo/mqdefault.jpg?v=6b04527d",
+    "channelIcon": "https://yt3.ggpht.com/Z7PlAWhweuycNXNXoQ6etyDTkduySM-Kqy8kQW-AD19JuRdxT3HSdIxogPw3GPD5NHw_vZlf=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=Iu6yJ7mwBOo"
+  },
+  {
     "videoId": "88mMnaaYWmc",
     "name": "Palette Project",
     "youtubeid": "UC_cCW1xmXwRFp1tX-RD2X1Q",
@@ -1570,6 +1606,18 @@
     "thumbnail": "https://i.ytimg.com/vi/88mMnaaYWmc/mqdefault.jpg?v=6afc4b81",
     "channelIcon": "https://yt3.ggpht.com/ytc/AIdro_nuv43BXc-JNRM-omFed0brcXGTD8qvA8313ZeQa8PfviA=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=88mMnaaYWmc"
+  },
+  {
+    "videoId": "1J8tXAzOFJE",
+    "name": "無月いお",
+    "youtubeid": "UC2X_mAVGw8e3N9JQZZDVBfQ",
+    "title": "【#低音女子】ユーベルさん頼みましたよ。《#パレデミア学園》#雑談#新人VTuber#麻雀#雀魂",
+    "date": "2026-11-24T12:30:00.000Z",
+    "status": "upcoming",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/1J8tXAzOFJE/mqdefault.jpg?v=6b0452c9",
+    "channelIcon": "https://yt3.ggpht.com/Z7PlAWhweuycNXNXoQ6etyDTkduySM-Kqy8kQW-AD19JuRdxT3HSdIxogPw3GPD5NHw_vZlf=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=1J8tXAzOFJE"
   },
   {
     "videoId": "uFwiY_9Ed6k",

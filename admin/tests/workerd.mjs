@@ -8,16 +8,24 @@ import { campaign, input as contentInput } from "./content-fixtures.mjs";
 import { hash } from "../src/security.mjs";
 const root = path.resolve(".."),
   models = baselineModels();
-let writes = 0;
+const mainSha = "a".repeat(40);
+let writes = 0, cmsRawReads = 0;
 const transport = async (request) => {
   if (request.method !== "GET" && request.body) await request.text();
   const u = new URL(request.url),
     p = u.pathname;
   let result;
-  if (p === "/login/oauth/access_token") result = { access_token: "fixture" };
+  if (u.hostname === "raw.githubusercontent.com") {
+    const name = p.split("/").at(-1).replace(/\.json$/, "");
+    assert.ok(p.includes("/" + mainSha + "/data/"));
+    assert.equal(request.headers.get("Authorization"), null);
+    assert.ok(Object.hasOwn(models, name), "Unexpected CMS file " + name);
+    cmsRawReads++;
+    result = models[name];
+  } else if (p === "/login/oauth/access_token") result = { access_token: "fixture" };
   else if (p === "/user") result = { id: 123, login: "fixture" };
   else if (p.endsWith("/git/ref/heads/main"))
-    result = { object: { sha: "main-sha" } };
+    result = { object: { sha: mainSha } };
   else if (p.includes("/git/ref/heads/admin/"))
     return new MFResponse("{}", { status: 404 });
   else if (p.includes("/git/commits/") || p.endsWith("/git/commits"))
@@ -87,6 +95,19 @@ try {
   const me = await (
     await mf.dispatchFetch("https://jigwiki-admin.local/api/me", { headers })
   ).json();
+  // Exercise actual workerd fetch construction and outbound transport, not just
+  // Node mocks: redirect:"error" is invalid in this runtime.
+  const catalogResponse = await mf.dispatchFetch(
+    "https://jigwiki-admin.local/api/cms/catalog", { headers },
+  );
+  const catalog = await catalogResponse.json();
+  assert.equal(catalogResponse.status, 200, JSON.stringify(catalog));
+  assert.equal(catalog.sha, mainSha);
+  assert.equal(catalog.owner, true);
+  assert.ok(catalog.sections.some((section) => section.items.length > 0));
+  assert.equal(cmsRawReads, 14);
+  assert.equal(writes, 0);
+  console.log("Local workerd: authenticated CMS catalog and all 14 immutable reads passed.");
   headers["X-CSRF-Token"] = me.csrf;
   headers.Origin = "https://jigwiki-admin.local";
   headers["Content-Type"] = "application/json";
@@ -97,7 +118,7 @@ try {
       {
         key: "draft-one",
         entity: "campaign",
-        baseCommit: "main-sha",
+        baseCommit: mainSha,
         before: null,
         value: { title: "永続下書き", visibility: "draft" },
       },
@@ -122,7 +143,7 @@ try {
   const value = structuredClone(models.talents.talents[0]);
   value.displayName += "（検証）";
   const input = {
-    sha: "main-sha",
+    sha: mainSha,
     entity: "talent",
     action: "save",
     id: value.id,
@@ -151,7 +172,7 @@ try {
   );
   assert.equal(again.status, 200);
   assert.equal(writes, 1);
-  const content = await contentInput({ sha: "main-sha" }, campaign());
+  const content = await contentInput({ sha: mainSha }, campaign());
   const cp = await mf.dispatchFetch(
     "https://jigwiki-admin.local/api/change-requests/preview",
     { method: "POST", headers, body: JSON.stringify(content) },
@@ -187,7 +208,7 @@ try {
         key: "talent-" + i,
         entity: "talent",
         id: before.id,
-        baseCommit: "main-sha",
+        baseCommit: mainSha,
         before,
         value: { ...before, displayName: before.displayName + " Worker" },
       };
@@ -198,7 +219,7 @@ try {
         key: "ann-" + i,
         entity: "anniversary",
         id: before.id,
-        baseCommit: "main-sha",
+        baseCommit: mainSha,
         before,
         value: { ...before, title: before.title + " Worker" },
       };
@@ -206,7 +227,7 @@ try {
     return {
       key: "campaign-" + i,
       entity: "campaign",
-      baseCommit: "main-sha",
+      baseCommit: mainSha,
       before: null,
       value: { title: "Worker " + i, visibility: "draft" },
     };
@@ -260,7 +281,7 @@ try {
   const capacity = Array.from({ length: 120 }, (_, i) => ({
     key: "capacity-" + i,
     entity: "campaign",
-    baseCommit: "main-sha",
+    baseCommit: mainSha,
     before: null,
     value: { title: "capacity-" + i + "x".repeat(3000), visibility: "draft" },
   }));

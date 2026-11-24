@@ -127,3 +127,16 @@ test("read-only App token is repository-scoped and independent of publishing", a
   assert.equal(await installationReadToken({}, transport), undefined);
   assert.equal(calls, 1);
 });
+
+test("Worker-compatible manual redirects reject 3xx without following or exposing tokens", async (t) => {
+  t.mock.method(console, "warn", () => {});
+  let calls = 0;
+  const snapshot = createCmsReader(async (url, options) => {
+    calls++;
+    assert.equal(options.redirect, "manual");
+    assert.equal(options.headers.Authorization, "Bearer fixture");
+    return new Response(null, { status: 302, headers: { Location: "https://other.example/" } });
+  });
+  await assert.rejects(snapshot({ getReadToken: () => "fixture" }), /cms_read_unavailable/);
+  assert.equal(calls, 1);
+});

@@ -23,6 +23,8 @@ export async function publicationPlan(snapshot, job, member) {
     if (!["event", "product", "offer", "anniversary", "campaign", "talent", "musicVideo"].includes(op.entity) ||
         (op.id && !before.canRead(op.entity, recordAt(snapshot.models, op))))
       fail(403, "cms_scope_denied");
+    if (op.entity === "musicVideo" && !before.canRead("musicVideo", op.value))
+      fail(403, "cms_scope_denied");
     if (op.entity === "talent" && op.id) {
       const current = recordAt(snapshot.models, op);
       before.assertChange("talent", current, current);

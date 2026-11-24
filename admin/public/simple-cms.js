@@ -17,7 +17,7 @@ const categories = {
   song: { category: "music", label: "楽曲", fields: ["title", "artists", "aliases", "readings"], existingOnly: true },
   musicVideo: { category: "music", label: "歌動画", fields: ["rawSongTitle", "videoUrl", "videoKind"] },
   talent: { category: "talents", label: "VTuber", fields: ["displayName", "image", "activity", "officialProfileUrl", "aliasNames", "youtubeUrl", "xUrl"] },
-  campaign: { category: "goods", label: "キャンペーン", fields: ["title"], existingOnly: true },
+  campaign: { category: "goods", label: "キャンペーン", fields: ["title"] },
   anniversary: { category: "anniversaries", label: "記念日", fields: ["title", "kind", "month", "day", "year"] },
   event: { category: "events", label: "イベント", fields: ["title", "announcementUrl", "summary", "venue", "starts", "ends", "format", "streamUrl", "fee"] },
   product: { category: "goods", label: "グッズ", fields: ["title", "image", "identityUrl"] },
@@ -213,7 +213,7 @@ export async function mountSimpleCms(panel, status, api) {
       }
       add(key, key === "fee" ? "料金（" + (input.feeCurrency || "JPY") + "）" : key === "price" && input.currency ? "価格（" + input.currency + "）" : label, control);
     }
-    if (!input.id || entity === "talent") {
+    if ((!input.id && entity !== "campaign") || entity === "talent") {
       const key = ["talent", "event"].includes(entity) ? "organization" : "talent";
       const choices = key === "organization" ? catalog.organizations : catalog.people;
       const search = el("input");
@@ -242,18 +242,16 @@ export async function mountSimpleCms(panel, status, api) {
       add("campaignId", "既存キャンペーン（任意）", select);
       add("campaignTitle", "新しいキャンペーン名（任意）", el("input"));
     }
-    const sales = [];
-    if (entity === "product") {
+    function saleEditor(initial, productId, chooseCampaign) {
+      const sales = [];
       const fieldset = el("fieldset");
       fieldset.append(el("legend", "販売情報"));
       const rows = el("div");
-      let sequence = 0;
       function appendSale(value = {}) {
         const row = el("fieldset");
         row.append(el("legend", value.id ? "既存の販売枠" : "新しい販売枠"));
         const controls = {};
-        const key = value.key || (value.id ? "cms-sale-" + value.id
-          : "cms-sale-new-" + crypto.randomUUID().slice(0, 12));
+        const key = value.key || ((chooseCampaign ? "cms-sale-" : "") + (value.id || crypto.randomUUID().slice(0, 12)));
         const addSaleField = (name, text, control) => {
           const label = el("label", text);
           label.append(control);
@@ -272,7 +270,7 @@ export async function mountSimpleCms(panel, status, api) {
           }
           addSaleField(name, name === "price" ? "価格（" + (value.currency || "JPY") + "）" : text, control);
         }
-        if (input.id && !value.id) {
+        if (chooseCampaign && productId && !value.id) {
           const campaign = el("select");
           campaign.append(new Option("キャンペーンなし", ""), ...(catalog.sections
             .find(({ entity }) => entity === "campaign")?.items || [])
@@ -284,14 +282,63 @@ export async function mountSimpleCms(panel, status, api) {
           sales.splice(sales.indexOf(sale), 1);
           row.remove();
         }));
-        row.id = "cms-sale-row-" + (++sequence);
         sales.push(sale);
         rows.append(row);
         return controls.url;
       }
-      for (const sale of input.sales || []) appendSale(sale);
+      for (const sale of initial) appendSale(sale);
       fieldset.append(rows, button("販売枠を追加", () => appendSale().focus()));
-      form.append(fieldset);
+      return { fieldset, add: appendSale, read: () => sales.map(({ id, key, controls }) => ({
+        id, key, ...Object.fromEntries(Object.entries(controls).map(([name, control]) => [name, control.value])),
+      })) };
+    }
+    const productSales = entity === "product" ? saleEditor(input.sales || [], input.id, true) : null;
+    if (productSales) form.append(productSales.fieldset);
+    const products = [];
+    if (entity === "campaign") {
+      const group = el("fieldset");
+      group.append(el("legend", "商品と販売情報"));
+      const rows = el("div");
+      function appendProduct(value = {}) {
+        const row = el("fieldset");
+        row.append(el("legend", value.id ? value.title : "新しい商品"));
+        const controls = new Map();
+        function field(name, text, control, required = false) {
+          const label = el("label", text);
+          control.value = value[name] || "";
+          control.required = required;
+          label.append(control);
+          row.append(label);
+          controls.set(name, control);
+        }
+        for (const name of ["title", "identityUrl", "image"]) {
+          const control = el("input");
+          control.type = labels[name][1];
+          field(name, name === "title" ? "商品名" : labels[name][0], control, name !== "image");
+        }
+        if (!value.id) {
+          const select = el("select");
+          select.append(new Option("選択してください", ""), ...catalog.people.map(
+            ({ id, name }) => new Option(name, id),
+          ));
+          field("talent", "関連する人物", select, true);
+        }
+        const editor = saleEditor(value.sales || [], value.id, false);
+        if (!value.id && !value.sales?.length) editor.add();
+        row.append(editor.fieldset);
+        const product = { value, controls, editor, key: value.key || value.id || crypto.randomUUID().slice(0, 12) };
+        if (!value.id) row.append(button("追加した商品を削除", () => {
+          products.splice(products.indexOf(product), 1);
+          row.remove();
+        }));
+        products.push(product);
+        rows.append(row);
+        controls.get("title").focus();
+      }
+      for (const product of input.products || []) appendProduct(product);
+      if (!input.id && !products.length) appendProduct();
+      group.append(rows, button("商品を追加", () => appendProduct()));
+      form.append(group);
     }
     if (entity === "musicVideo") {
       const select = el("select");
@@ -392,6 +439,11 @@ export async function mountSimpleCms(panel, status, api) {
             startsAtSeconds: times[0].control.value, endsAtSeconds: times[1].control.value,
           }));
         }
+        if (productSales) values.sales = productSales.read();
+        if (entity === "campaign") values.products = products.map(({ value, key, controls, editor }) => ({
+          id: value.id, key, sales: editor.read(),
+          ...Object.fromEntries([...controls].map(([name, control]) => [name, control.value])),
+        }));
         const result = await api("/api/cms/draft", "PUT", {
           entity, id: input.id, draftId, sha: input.sha || catalog.sha, revision, ...values,
         });

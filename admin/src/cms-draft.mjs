@@ -1,6 +1,6 @@
 import { collectedVideo, assertSongEdit, newSongOperation, newSongFields } from "./cms-music.mjs";
 import { youtubeId } from "../public/content-utils.js";
-import { planSubmission } from "./submission-plan.mjs";
+import { planSubmission, recordAt } from "./submission-plan.mjs";
 import { contentPreview, resolveRefs } from "./content-plan.mjs";
 import { cmsPermissions, assertExistingCampaign } from "./cms-scope.mjs";
 import { fail, hash } from "./security.mjs";
@@ -89,14 +89,14 @@ export async function prepareDraft(snapshot, member, input) {
     for (const row of plan.impact.records) after.assertChange(entity, row.before, row.value);
     return [operation];
   }
-  if (["campaign", "song"].includes(entity) && !before) fail(400, "cms_invalid_input");
+  if (entity === "song" && !before) fail(400, "cms_invalid_input");
   const value = structuredClone(before || (entity === "event" ? {
     type: "other", timing: "unknown", starts: unknown, ends: unknown,
     organizerIds: [], relatedOrganizationIds: [input.organization],
     groupIds: [], talentIds: [], lineupComplete: false, slots: [], videoIds: [],
     streamUrls: [], format: "unknown", fee: { amount: null, currency: null, note: null },
     visibility: "public",
-  } : { talentIds: [input.talent], groupIds: [], visibility: "public",
+  } : entity === "campaign" ? { visibility: "public" } : { talentIds: [input.talent], groupIds: [], visibility: "public",
     ...(entity === "anniversary" ? { recursYearly: true, countYears: false } : {}),
   }));
   let setlist = [];
@@ -229,57 +229,34 @@ export async function prepareDraft(snapshot, member, input) {
       }
     }
   }
-  if (entity === "product") {
-    const existing = snapshot.models.goods.offers.filter((offer) => offer.productId === id);
-    if (existing.some((offer) => !access.canRead("offer", offer))) fail(403, "cms_shared_goods");
-    if (input.campaignTitle && (id || input.campaignId || typeof input.campaignTitle !== "string"))
-      fail(400, "cms_invalid_input");
-    assertExistingCampaign(snapshot.models, access, input.campaignId || null);
-    const sales = input.sales ?? [{ ...input, id: existing[0]?.id }];
-    if (!Array.isArray(sales) || sales.length > 40) fail(400, "cms_invalid_input");
-    if ((input.campaignId || input.campaignTitle) && !sales.some((sale) => sale?.url))
-      fail(400, "cms_invalid_input");
-    const keys = new Set(), ids = new Set();
-    for (const [index, sale] of sales.entries()) {
-      if (!sale || typeof sale.url !== "string" || typeof sale.price !== "string" ||
-          (sale.price && !/^\d+(?:\.\d+)?$/.test(sale.price))) fail(400, "cms_invalid_input");
-      const old = sale.id && existing.find((offer) => offer.id === sale.id);
-      if (sale.id && (!old || ids.has(sale.id))) fail(403, "cms_scope_denied");
-      if (old) ids.add(old.id);
-      if (!sale.url && !old && (input.sales === undefined || (!sale.price && !sale.startsAt && !sale.endsAt))) continue;
-      if (!sale.url.trim()) fail(400, "cms_invalid_input");
-      const key = sale.key ?? (index === 0 ? "cms-sale" : "cms-sale-" + (old?.id || "new-" + index));
-      if (typeof key !== "string" || !/^cms-sale(?:-[a-z0-9-]{1,23})?$/.test(key) || keys.has(key))
+  if (entity === "product") operations.push(...saleOperations(snapshot, access, input));
+  if (entity === "campaign" && (input.products !== undefined || !id)) {
+    if (!Array.isArray(input.products) || input.products.length > 40 ||
+        (!id && !input.products.length)) fail(400, "cms_invalid_input");
+    const keys = new Set();
+    const seen = new Set();
+    const campaignId = id || "@cms-campaign";
+    for (const [index, product] of input.products.entries()) {
+      if (!product || !Array.isArray(product.sales)) fail(400, "cms_invalid_input");
+      const old = product.id && recordAt(snapshot.models, { entity: "product", id: product.id });
+      if (product.id && (!old || !access.canRead("product", old) || seen.has(product.id) ||
+          !snapshot.models.goods.offers.some((row) => row.productId === product.id && row.campaignId === id)))
+        fail(403, "cms_scope_denied");
+      if (old) seen.add(old.id);
+      const key = product.key ?? (old?.id || "new-" + index);
+      if (typeof key !== "string" || !/^[a-z0-9-]{1,15}$/.test(key) || keys.has(key))
         fail(400, "cms_invalid_input");
       keys.add(key);
-      const campaignId = old ? old.campaignId
-        : input.campaignTitle ? "@cms-campaign" : sale.campaignId || input.campaignId || null;
-      if (!input.campaignTitle || campaignId !== "@cms-campaign")
-        assertExistingCampaign(snapshot.models, access, campaignId);
-      if (campaignId !== "@cms-campaign" && campaignId?.startsWith("@")) fail(400, "cms_invalid_input");
-      const period = {};
-      for (const field of ["startsAt", "endsAt"]) {
-        if (sale[field] === undefined || sale[field] === localInstant(old?.[field])) continue;
-        if (typeof sale[field] !== "string" ||
-            (sale[field] && !/^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}$/.test(sale[field])))
-          fail(400, "cms_invalid_input");
-        const time = Date.parse(sale[field] + ":00+09:00");
-        if (sale[field] && (!Number.isFinite(time) || localInstant(time) !== sale[field]))
-          fail(400, "cms_invalid_input");
-        period[field] = sale[field] ? new Date(time).toISOString() : null;
+      const productKey = "cms-item-" + key;
+      const productValue = structuredClone(old || { talentIds: [product.talent], groupIds: [], visibility: "public" });
+      for (const field of fields.product) {
+        if (typeof product[field] !== "string") fail(400, "cms_invalid_input");
+        productValue[field] = product[field].trim() || null;
       }
-      operations.push({
-        key, entity: "offer", ...(old ? { id: old.id } : {}),
-        value: {
-          ...(old || { productId: id || "@cms-product", campaignId, startsAt: null, endsAt: null,
-            periodNote: null, status: "unknown", visibility: "public" }),
-          ...period, url: sale.url.trim(),
-          price: { amount: sale.price ? Number(sale.price) : null, currency: sale.price ? old?.price.currency || "JPY" : null },
-        },
-      });
+      const sales = saleOperations(snapshot, access, product, { campaignId, productKey });
+      if (!old && !sales.length) fail(400, "cms_invalid_input");
+      operations.push({ key: productKey, entity: "product", ...(old ? { id: old.id } : {}), value: productValue }, ...sales);
     }
-    if (input.campaignTitle) operations.push({ key: "cms-campaign", entity: "campaign",
-      value: { title: input.campaignTitle.trim(), visibility: "public" } });
   }
   const batch = { operations };
   await contentPreview(snapshot, {
@@ -297,9 +274,65 @@ export async function prepareDraft(snapshot, member, input) {
     },
   });
   return operations.map((op) => ({
-    ...op, before: op.entity === "offer" && op.id ? snapshot.models.goods.offers.find((row) => row.id === op.id) : op === operation ? before : op.entity === "performance" && op.id
-      ? snapshot.models.karaoke.performances.find((row) => row.id === op.id) : null, baseCommit: snapshot.sha,
+    ...op, before: op.id ? recordAt(snapshot.models, op) : null, baseCommit: snapshot.sha,
   }));
+}
+
+function saleOperations(snapshot, access, input, context) {
+  const { id } = input;
+  const operations = [];
+  const existing = snapshot.models.goods.offers.filter((offer) => offer.productId === id);
+  if (existing.some((offer) => !access.canRead("offer", offer))) fail(403, "cms_shared_goods");
+  if (input.campaignTitle && (id || input.campaignId || typeof input.campaignTitle !== "string"))
+    fail(400, "cms_invalid_input");
+  if (!context) assertExistingCampaign(snapshot.models, access, input.campaignId || null);
+  const sales = input.sales ?? [{ ...input, id: existing[0]?.id }];
+  if (!Array.isArray(sales) || sales.length > 40) fail(400, "cms_invalid_input");
+  if ((input.campaignId || input.campaignTitle) && !sales.some((sale) => sale?.url))
+    fail(400, "cms_invalid_input");
+  const keys = new Set(), ids = new Set();
+  for (const [index, sale] of sales.entries()) {
+    if (!sale || typeof sale.url !== "string" || typeof sale.price !== "string" ||
+        (sale.price && !/^\d+(?:\.\d+)?$/.test(sale.price))) fail(400, "cms_invalid_input");
+    const old = sale.id && existing.find((offer) => offer.id === sale.id);
+    if (sale.id && (!old || ids.has(sale.id) || (context && old.campaignId !== context.campaignId))) fail(403, "cms_scope_denied");
+    if (old) ids.add(old.id);
+    if (!sale.url && !old && (input.sales === undefined || (!sale.price && !sale.startsAt && !sale.endsAt))) continue;
+    if (!sale.url.trim()) fail(400, "cms_invalid_input");
+    const localKey = sale.key ?? (context ? old?.id || "s" + index : index === 0 ? "cms-sale" : "cms-sale-" + (old?.id || "new-" + index));
+    if (typeof localKey !== "string" || !(context ? /^[a-z0-9-]{1,15}$/ : /^cms-sale(?:-[a-z0-9-]{1,23})?$/).test(localKey) || keys.has(localKey))
+      fail(400, "cms_invalid_input");
+    keys.add(localKey);
+    const key = context ? context.productKey + "-" + localKey : localKey;
+    const campaignId = old ? old.campaignId
+      : context?.campaignId ?? (input.campaignTitle ? "@cms-campaign" : sale.campaignId || input.campaignId || null);
+    if ((!context && !input.campaignTitle) || campaignId !== "@cms-campaign")
+      assertExistingCampaign(snapshot.models, access, campaignId);
+    if (campaignId !== "@cms-campaign" && campaignId?.startsWith("@")) fail(400, "cms_invalid_input");
+    const period = {};
+    for (const field of ["startsAt", "endsAt"]) {
+      if (sale[field] === undefined || sale[field] === localInstant(old?.[field])) continue;
+      if (typeof sale[field] !== "string" ||
+          (sale[field] && !/^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}$/.test(sale[field])))
+        fail(400, "cms_invalid_input");
+      const time = Date.parse(sale[field] + ":00+09:00");
+      if (sale[field] && (!Number.isFinite(time) || localInstant(time) !== sale[field]))
+        fail(400, "cms_invalid_input");
+      period[field] = sale[field] ? new Date(time).toISOString() : null;
+    }
+    operations.push({
+      key, entity: "offer", ...(old ? { id: old.id } : {}),
+      value: {
+        ...(old || { productId: id || "@" + (context?.productKey || "cms-product"), campaignId, startsAt: null, endsAt: null,
+          periodNote: null, status: "unknown", visibility: "public" }),
+        ...period, url: sale.url.trim(),
+        price: { amount: sale.price ? Number(sale.price) : null, currency: sale.price ? old?.price.currency || "JPY" : null },
+      },
+    });
+  }
+  if (!context && input.campaignTitle) operations.push({ key: "cms-campaign", entity: "campaign",
+    value: { title: input.campaignTitle.trim(), visibility: "public" } });
+  return operations;
 }
 
 function localInstant(value) {
@@ -356,6 +389,14 @@ function songFields(record) {
   };
 }
 
+function productFields(record, sales, key) {
+  return {
+    id: record.id, key, talent: record.talentIds[0],
+    ...Object.fromEntries(fields.product.map((field) => [field, record[field] ?? ""])),
+    sales,
+  };
+}
+
 export function draftDetails(snapshot, member, entity, id) {
   if (!Object.hasOwn(draftTypes, entity)) fail(403, "cms_scope_denied");
   const [file, list] = draftTypes[entity];
@@ -375,6 +416,12 @@ export function draftDetails(snapshot, member, entity, id) {
   if (entity === "talent") Object.assign(details, talentFields(record));
   if (entity === "anniversary") Object.assign(details, anniversaryFields(record));
   if (entity === "event") Object.assign(details, eventFields(record));
+  if (entity === "campaign") {
+    const offers = snapshot.models.goods.offers.filter((offer) => offer.campaignId === id);
+    details.products = snapshot.models.goods.products.filter((product) =>
+      offers.some((offer) => offer.productId === product.id)).map((product) =>
+      productFields(product, offers.filter((offer) => offer.productId === product.id).map((offer) => saleFields(offer))));
+  }
   if (entity === "product") {
     const offers = snapshot.models.goods.offers.filter((offer) => offer.productId === id);
     const access = cmsPermissions(snapshot.models, member);
@@ -411,6 +458,14 @@ export function draftInput(workspace) {
     ...(op.entity === "talent" ? talentFields(op.value) : {}),
     ...(op.entity === "anniversary" ? anniversaryFields(op.value) : {}),
     ...(op.entity === "event" ? eventFields(op.value) : {}),
+    ...(op.entity === "campaign" ? {
+      products: workspace.operations.filter((row) => row.entity === "product").map((product) => {
+        const key = product.key.replace(/-[a-f0-9]{24}$/, "");
+        const sales = offers.filter((offer) => offer.value.productId === (product.id || "@" + product.key))
+          .map((offer) => saleFields(offer.value, offer.key.replace(/-[a-f0-9]{24}$/, "").slice(key.length + 1), campaign));
+        return productFields({ ...product.value, id: product.id }, sales, key.slice("cms-item-".length));
+      }),
+    } : {}),
     ...(op.entity === "product" ? {
       startsAt: localInstant(sale?.value.startsAt), endsAt: localInstant(sale?.value.endsAt),
       sales: offers.map(({ key, value }) => saleFields(value, key.replace(/-[a-f0-9]{24}$/, ""), campaign)),

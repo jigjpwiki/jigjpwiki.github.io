@@ -50,3 +50,40 @@ test("sales cannot edit an offer belonging to a different product", async () => 
   input.sales = [{ ...resale, id: otherSale.id }];
   await assert.rejects(prepareDraft(snapshot, editor, input), /cms_scope_denied/);
 });
+
+test("campaign draft restores multiple products and all sale references before publishing", async () => {
+  const products = ["a", "b"].map((key) => ({
+    key, title: "商品 " + key, talent: "tal-000010", image: "", identityUrl: "https://example.com/" + key,
+    sales: ["direct", "resale"].map((saleKey) => ({
+      key: saleKey, url: "https://example.com/" + key + "/" + saleKey, price: "1200",
+    })),
+  }));
+  const input = { entity: "campaign", title: "新しい企画", products, sha: snapshot.sha };
+  const saved = writeDraft([], undefined, await prepareDraft(snapshot, editor, input));
+  const restored = draftInput({ operations: draftGroups(saved.operations).get(saved.id) });
+  assert.deepEqual(restored.products.map(({ key, sales }) => [key, sales.map((sale) => sale.key)]),
+    [["a", ["direct", "resale"]], ["b", ["direct", "resale"]]]);
+  const replay = writeDraft(saved.operations, saved.id, await prepareDraft(snapshot, editor, restored));
+  const { plan } = await publicationPlan(snapshot, job(replay.operations), editor);
+  const campaign = plan.files.goods.campaigns.at(-1);
+  for (const product of products) {
+    const stored = plan.files.goods.products.find((row) => row.title === product.title);
+    const sales = plan.files.goods.offers.filter((row) => row.productId === stored.id);
+    assert.deepEqual(sales.map(({ campaignId }) => campaignId), [campaign.id, campaign.id]);
+    assert.deepEqual(sales.map(({ url }) => url), product.sales.map(({ url }) => url));
+  }
+});
+
+test("campaign batch editing can add a product and resale without replacing existing offers", async () => {
+  const id = "campaign-000001";
+  const input = { ...draftDetails(snapshot, editor, "campaign", id), entity: "campaign", id, sha: snapshot.sha };
+  const original = fixture.goods.offers.filter((offer) => offer.campaignId === id);
+  input.products[0].sales.push({ ...resale, key: "later" });
+  input.products.push({ title: "追加商品", image: "", identityUrl: "https://example.com/new",
+    talent: "tal-000010", sales: [{ ...resale, url: "https://example.com/new/sale", key: "first" }] });
+  const operations = await prepareDraft(snapshot, editor, input);
+  const { plan } = await publicationPlan(snapshot, job(writeDraft([], undefined, operations).operations), editor);
+  const offers = plan.files.goods.offers.filter((offer) => offer.campaignId === id);
+  assert.equal(offers.length, original.length + 2);
+  assert.deepEqual(offers.filter(({ id }) => original.some((offer) => offer.id === id)), original);
+});

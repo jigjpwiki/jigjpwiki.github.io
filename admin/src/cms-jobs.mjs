@@ -69,9 +69,14 @@ export class CmsJobs {
       const guards = await this.get(replayKey(session.id));
       const priorCreates = last?.phase === "published"
         ? draftGroups(last.operations).entries() : [];
+      const groups = draftGroups(workspace.operations);
       const applied = new Set([
         ...(guards?.workspaceId === workspace.workspaceId ? guards.draftIds : []),
-        ...Array.from(priorCreates, ([id, rows]) => rows.some((row) => !row.id) ? id : null),
+        ...Array.from(priorCreates, ([id, rows]) => {
+          const retained = groups.get(id);
+          return rows.some((row) => !row.id &&
+            retained?.some((op) => op.key === row.key && !op.id)) ? id : null;
+        }),
       ]);
       if (ids.some((id) => applied.has(id))) fail(409, "cms_draft_already_applied");
       if (queue.length >= 8) fail(409, "cms_publication_busy");
@@ -101,6 +106,26 @@ export class CmsJobs {
     const queue = await this.get(queueKey) || [];
     return this.summary(queue.find((job) => job.owner === owner && job.id !== active?.id) ||
       (active?.owner === owner ? active : await this.get("cms-publication:" + owner)));
+  }
+
+  async confirmedJob(owner, jobId) {
+    if (typeof jobId !== "string" || !jobId) return null;
+    const active = await this.get(activeKey);
+    const job = active?.owner === owner && active.id === jobId ? active
+      : await this.get("cms-publication:" + owner);
+    if (job?.owner !== owner || job.id !== jobId || !job.mainConfirmed ||
+        !/^[0-9a-f]{40}$/.test(job.commit ?? "")) return null;
+    return job;
+  }
+
+  // The caller has saved the replacement using the workspace revision in the same lock.
+  async markRecovered(owner, workspaceId, draftId) {
+    const key = replayKey(owner);
+    const guards = await this.get(key);
+    if (guards?.workspaceId !== workspaceId || !guards.draftIds.includes(draftId)) return;
+    await this.store.put(key, await seal({
+      workspaceId, draftIds: guards.draftIds.filter((id) => id !== draftId),
+    }, this.env.SESSION_KEY), Number.MAX_SAFE_INTEGER);
   }
 
   async reconcile(session, id) {

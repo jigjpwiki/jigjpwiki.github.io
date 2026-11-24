@@ -57,6 +57,10 @@ test("draft cleanup keeps related operations together when one was edited in fli
   await assert.rejects(restarted.enqueue({ id: "editor" }, {
     draftIds: ["legacy-product"], revision: restored.revision, retry: true,
   }), /cms_draft_already_applied/);
+  await restarted.markRecovered("editor", "wrong-workspace", "legacy-product");
+  assert.deepEqual((await restarted.get("cms-publication-replay:editor")).draftIds, ["legacy-product"]);
+  await restarted.markRecovered("editor", restored.workspaceId, "legacy-product");
+  assert.deepEqual((await restarted.get("cms-publication-replay:editor")).draftIds, []);
 });
 
 test("manual reconciliation only accepts positive main and Pages evidence for the job owner", async () => {
@@ -87,6 +91,7 @@ test("manual reconciliation only accepts positive main and Pages evidence for th
   const uncertain = await jobs.reconcile({ id: "editor" }, job.id);
   assert.equal(uncertain.mainConfirmed, false);
   assert.equal(uncertain.createdRecords, undefined);
+  assert.equal(await jobs.confirmedJob("editor", job.id), null);
   assert.equal(reads, 2);
   await assert.rejects(jobs.reconcile({ id: "editor" }, job.id), /cms_publication_reconcile_wait/);
 
@@ -96,6 +101,8 @@ test("manual reconciliation only accepts positive main and Pages evidence for th
   const confirmed = await jobs.reconcile({ id: "editor" }, job.id);
   assert.equal(confirmed.mainConfirmed, true);
   assert.deepEqual(confirmed.createdRecords, createdRecords);
+  assert.equal((await jobs.confirmedJob("editor", job.id)).commit, sha);
+  assert.equal(await jobs.confirmedJob("other", job.id), null);
   assert.equal(confirmed.phase, "unconfirmed");
   deployed = head;
   assert.equal((await jobs.reconcile({ id: "editor" }, job.id)).phase, "published");

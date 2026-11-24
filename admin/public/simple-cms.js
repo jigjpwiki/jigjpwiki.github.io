@@ -27,6 +27,44 @@ export async function mountSimpleCms(panel, status, api) {
   const list = el("section");
   const draftsArea = el("section");
   panel.append(draftsArea, formArea, list);
+  const publicationArea = el("section");
+  const publicationStatus = el("p");
+  publicationStatus.setAttribute("role", "status");
+  const selectedDrafts = new Set();
+  let publication;
+  if (catalog.editable) {
+    publicationArea.append(el("h3", "公開状況"), publicationStatus);
+    panel.insertBefore(publicationArea, draftsArea);
+  }
+
+  async function refreshPublication() {
+    const result = await api("/api/cms/publication");
+    publication = result.publication;
+    const labels = {
+      queued: "公開の順番待ち", candidate: "変更候補を作成中",
+      checking: "検証中", promoting: "反映中", pages: "公開サイトへの反映待ち",
+      published: "公開サイトへの反映を確認しました", failed: "公開できませんでした。下書きは保存されています。",
+      unconfirmed: "公開サイトへの反映を確認できませんでした。管理者にご連絡ください。",
+    };
+    const errors = {
+      cms_publish_conflict: "他の編集で同じ項目が変更されています。",
+      cms_scope_denied: "現在の担当範囲と公開権限を確認してください。",
+      cms_candidate_ci_failed: "自動検証に失敗しました。",
+    };
+    publicationStatus.textContent = publication
+      ? (labels[publication.phase] || "公開状況を確認中") + (errors[publication.error] || "")
+      : "公開処理はありません。";
+  }
+
+  if (catalog.editable) {
+    publicationArea.append(button("公開状況を更新", async () => {
+      try {
+        await refreshPublication();
+        await refreshDrafts();
+      } catch { publicationStatus.textContent = "公開状況を確認できませんでした。"; }
+    }));
+    refreshPublication().catch(() => { publicationStatus.textContent = "公開状況を確認できませんでした。"; });
+  }
   let revision = 0;
   let saveAvailable = true;
   let saved;
@@ -43,9 +81,40 @@ export async function mountSimpleCms(panel, status, api) {
     saved = await api("/api/cms/draft");
     revision = saved.revision;
     draftsArea.replaceChildren(el("h3", "保存済みの下書き"));
+    const eligible = new Set(saved.drafts.filter(({ conflict }) => !conflict).map(({ draftId }) => draftId));
+    for (const draftId of selectedDrafts) if (!eligible.has(draftId)) selectedDrafts.delete(draftId);
+    if (catalog.publishable) {
+      const publish = button("選択した下書きを公開", async () => {
+        if (!selectedDrafts.size) return;
+        publish.disabled = true;
+        try {
+          await api("/api/cms/publication", "POST", {
+            draftIds: [...selectedDrafts], revision, retry: publication?.phase === "failed",
+          });
+          await refreshPublication();
+        } catch (error) {
+          publicationStatus.textContent = error.message === "cms_publication_busy"
+            ? "別の公開処理が進行中です。完了後にもう一度お試しください。"
+            : "公開を開始できませんでした。下書きを確認してください。";
+        } finally {
+          publish.disabled = false;
+        }
+      });
+      draftsArea.append(el("p", "公開する下書きを選んでください。"), publish);
+    }
     for (const { draftId, input, conflict } of saved.drafts) {
       const row = el("div");
       row.className = "button-group";
+      if (catalog.publishable && !conflict) {
+        const checkbox = el("input");
+        checkbox.type = "checkbox";
+        checkbox.checked = selectedDrafts.has(draftId);
+        checkbox.onchange = () => checkbox.checked ? selectedDrafts.add(draftId) : selectedDrafts.delete(draftId);
+        const label = el("label", "公開する");
+        checkbox.setAttribute("aria-label", input.title + "を公開する");
+        label.prepend(checkbox);
+        row.append(label);
+      }
       if (conflict) row.append(el("p", (input?.title || "下書き") + "：元の情報が変更されたか、現在の担当範囲外です。"));
       else row.append(button(input.title, () => edit(input.entity, input, draftId)));
       row.append(button("この下書きを破棄", async () => {

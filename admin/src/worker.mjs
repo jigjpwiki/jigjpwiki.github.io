@@ -1,3 +1,5 @@
+import { CmsJobs } from "./cms-jobs.mjs";
+import { publishingEnabled } from "./github-app.mjs";
 import { prepareDraft, draftDetails, draftInput, draftGroups, writeDraft } from "./cms-draft.mjs";
 import { cmsPermissions } from "./cms-scope.mjs";
 import { createCmsReader } from "./cms-read.mjs";
@@ -102,6 +104,9 @@ export class Admin {
           return value;
         })
       : callback();
+  }
+  async alarm() {
+    await new CmsJobs(this).alarm();
   }
   async handle(request) {
     const url = new URL(request.url),
@@ -230,6 +235,11 @@ export class Admin {
         fail(401, "login_required");
       if (url.pathname === "/api/me" && request.method === "GET")
         return json({ id: session.id, role: member.role, provider: "google", csrf: session.csrf, expires: session.expires });
+      if (url.pathname === "/api/cms/publication") {
+        const jobs = new CmsJobs(this);
+        if (request.method === "GET") return json({ publication: await jobs.status(session.id) });
+        if (request.method === "POST") return json({ publication: await jobs.enqueue(session, await body(request, 4096)) }, 202);
+      }
       const cmsRoutes = ["/api/cms/catalog", "/api/cms/detail", "/api/cms/draft"];
       if (cmsRoutes.includes(url.pathname)) {
         const snapshot = await this.cmsSnapshot();
@@ -245,7 +255,7 @@ export class Admin {
           } });
           return json({
             sha: snapshot.sha, sections: scopedCatalog(models, member),
-            editable: member.role === "editor", categories: member.scope?.categories ?? [],
+            editable: member.role === "editor", publishable: member.role === "editor" && member.directPublish === true && publishingEnabled(this.env), categories: member.scope?.categories ?? [],
             organizations: models.talents.organizations.filter((row) => member.scope?.organizations.includes(row.id)),
             people: models.talents.talents.filter((row) => access.canRead("talent", row))
               .map((row) => ({ id: row.id, name: row.displayName })),

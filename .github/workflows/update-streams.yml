@@ -16,7 +16,7 @@ on:
         type: boolean
         default: true
   push:
-    branches: [main]
+    branches: [main, 'cms/candidate-*']
     paths-ignore:
       - 'data/youtube.json'
       - 'data/twitch.json'
@@ -127,6 +127,9 @@ jobs:
       - name: Check published content (retry unpublished snapshots)
         id: publication
         run: node scripts/check-publication.js
+      - name: Record the published source commit
+        if: steps.publication.outputs.publish == 'true'
+        run: git rev-parse HEAD > _site/published-commit.txt
       - uses: actions/upload-pages-artifact@v3
         if: steps.publication.outputs.publish == 'true'
         with:

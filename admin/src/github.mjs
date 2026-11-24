@@ -131,7 +131,7 @@ export class GitHub {
       ),
     };
   }
-  async publish(plan, key, record, save) {
+  async publish(plan, key, record, save, { candidateOnly = false } = {}) {
     if (
       !/^[\w-]{1,64}$/.test(key) ||
       Object.keys(plan.files).some(
@@ -145,17 +145,19 @@ export class GitHub {
       )
     )
       fail(400, "invalid_write_target");
-    const branch = "admin/change-" + key;
+    const branch = (candidateOnly ? "cms/candidate-" : "admin/change-") + key;
     const base = "/repos/" + repository;
-    const existing = await this.call(
-      base + "/pulls?state=all&head=jigjpwiki:" + branch + "&base=main",
-    );
-    if (existing.length)
-      return {
-        url: existing[0].html_url,
-        number: existing[0].number,
-        recovered: true,
-      };
+    if (!candidateOnly) {
+      const existing = await this.call(
+        base + "/pulls?state=all&head=jigjpwiki:" + branch + "&base=main",
+      );
+      if (existing.length)
+        return {
+          url: existing[0].html_url,
+          number: existing[0].number,
+          recovered: true,
+        };
+    }
     // A commit/ref journal is persisted before each uncertain remote write; retries recover by deterministic ref.
     if (!record.commit) {
       const tree = await this.call(base + "/git/trees", "POST", {
@@ -168,7 +170,7 @@ export class GitHub {
         })),
       });
       const commit = await this.call(base + "/git/commits", "POST", {
-        message: "admin: " + plan.title,
+        message: (candidateOnly ? "cms: " : "admin: ") + plan.title,
         tree: tree.sha,
         parents: [plan.sha],
       });
@@ -195,6 +197,7 @@ export class GitHub {
         throw e;
       }
     }
+    if (candidateOnly) return { branch, sha: record.commit };
     const pr = await this.call(base + "/pulls", "POST", {
       base: "main",
       head: branch,

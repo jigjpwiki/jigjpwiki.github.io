@@ -61,7 +61,7 @@ export async function mountSimpleCms(panel, status, api) {
   publicationStatus.setAttribute("role", "status");
   const selectedDrafts = new Set();
   let publication;
-  if (catalog.editable) {
+  if (catalog.editable && catalog.publicationTracking !== false) {
     publicationArea.append(el("h3", "公開状況"), publicationStatus);
     panel.insertBefore(publicationArea, draftsArea);
   }
@@ -85,7 +85,7 @@ export async function mountSimpleCms(panel, status, api) {
       : "公開処理はありません。";
   }
 
-  if (catalog.editable) {
+  if (catalog.editable && catalog.publicationTracking !== false) {
     publicationArea.append(button("公開状況を更新", async () => {
       try {
         await refreshPublication();

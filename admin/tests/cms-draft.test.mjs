@@ -241,7 +241,7 @@ test("uncollected videos are verified against YouTube on save and publication", 
     assert.equal(url.searchParams.get("id"), id);
     assert.equal(url.searchParams.has("key"), false);
     assert.equal(options.headers["X-Goog-Api-Key"], "test-key");
-    assert.equal(options.redirect, "error");
+    assert.equal(options.redirect, "manual");
     return Response.json({ items: [{ id, snippet: { title: "未収集動画", channelId }, status: { privacyStatus } }] });
   });
   const editor = { ...member, directPublish: true, scope: { ...member.scope, categories: ["music"] } };

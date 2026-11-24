@@ -71,7 +71,8 @@ export class CmsJobs {
         ? draftGroups(last.operations).entries() : [];
       const groups = draftGroups(workspace.operations);
       const applied = new Set([
-        ...(guards?.workspaceId === workspace.workspaceId ? guards.draftIds : []),
+        ...(guards?.workspaceId === workspace.workspaceId ? guards.draftIds.filter((id) =>
+          !guards.keys?.[id] || groups.get(id)?.some((op) => !op.id && guards.keys[id].includes(op.key))) : []),
         ...Array.from(priorCreates, ([id, rows]) => {
           const retained = groups.get(id);
           return rows.some((row) => !row.id &&
@@ -125,6 +126,7 @@ export class CmsJobs {
     if (guards?.workspaceId !== workspaceId || !guards.draftIds.includes(draftId)) return;
     await this.store.put(key, await seal({
       workspaceId, draftIds: guards.draftIds.filter((id) => id !== draftId),
+      keys: Object.fromEntries(Object.entries(guards.keys ?? {}).filter(([id]) => id !== draftId)),
     }, this.env.SESSION_KEY), Number.MAX_SAFE_INTEGER);
   }
 
@@ -243,8 +245,9 @@ export class CmsJobs {
     const currentGroups = draftGroups(current.operations);
     const remove = new Set();
     const guards = await this.get(replayKey(job.owner));
-    const blocked = new Set(guards?.workspaceId === current.workspaceId
-      ? guards.draftIds.filter((id) => currentGroups.has(id)) : []);
+    const sameWorkspace = guards?.workspaceId === current.workspaceId;
+    const blocked = new Set(sameWorkspace ? guards.draftIds.filter((id) => currentGroups.has(id)) : []);
+    const keys = new Map(sameWorkspace ? Object.entries(guards.keys ?? {}) : []);
     for (const [id, selected] of draftGroups(job.operations)) {
       const group = currentGroups.get(id);
       // In-flight edits can introduce or change sibling operations. Preserve
@@ -256,6 +259,8 @@ export class CmsJobs {
         // This draft still carries temporary identities already materialized
         // by the published commit. Retain it, but never allocate them again.
         blocked.add(id);
+        keys.set(id, [...new Set([...(keys.get(id) ?? []),
+          ...selected.filter((op) => !op.id).map((op) => op.key)])]);
       }
     }
     if (blocked.size) {
@@ -263,6 +268,7 @@ export class CmsJobs {
       // ID and retain them across later publications and idle intervals.
       await this.store.put(replayKey(job.owner), await seal({
         workspaceId: current.workspaceId, draftIds: [...blocked],
+        keys: Object.fromEntries([...keys].filter(([id]) => blocked.has(id))),
       }, this.env.SESSION_KEY), Number.MAX_SAFE_INTEGER);
     }
     const operations = current.operations.filter((op) => !remove.has(op.key));

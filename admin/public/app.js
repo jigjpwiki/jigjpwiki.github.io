@@ -311,7 +311,11 @@ function screen() {
   );
 }
 let acceptedHash = location.hash;
+let navigationRevision = 0;
 window.addEventListener("hashchange", async () => {
+  const revision = ++navigationRevision;
+  const view = $("#view");
+  view.inert = false;
   if ((activeEditor?.dirty || document.querySelector("[data-cms-dirty]")) && !mayLeave()) {
     history.replaceState(null, "", acceptedHash || "#masters");
     return;
@@ -322,13 +326,20 @@ window.addEventListener("hashchange", async () => {
       showStatus("変更内容を保存してから編集モードを切り替えてください。");
       return;
     }
-    if (acceptedHash === "#cms") {
-      try { await workspace.load(); }
-      catch {
-        history.replaceState(null, "", "#cms");
-        showStatus("下書きを取得できませんでした。");
+    if (acceptedHash === "#cms" && location.hash !== "#cms") {
+      view.inert = true;
+      try {
+        await workspace.load();
+      } catch {
+        if (revision === navigationRevision) {
+          history.replaceState(null, "", "#cms");
+          showStatus("下書きを取得できませんでした。");
+        }
         return;
+      } finally {
+        if (revision === navigationRevision) view.inert = false;
       }
+      if (revision !== navigationRevision) return;
     }
   }
   activeEditor = null;

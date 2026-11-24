@@ -101,7 +101,7 @@ function verify(config, version, settings) {
   requireValue(
     !config.secrets &&
       !Object.keys(config.vars || {}).some((k) =>
-        /secret|session_key|token|app_key/i.test(k),
+        /secret|session_key|token|app_key|youtube_api_key/i.test(k),
       ),
     "Never put secret values into config",
   );

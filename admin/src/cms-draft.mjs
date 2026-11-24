@@ -2,9 +2,10 @@ import { contentPreview } from "./content-plan.mjs";
 import { cmsPermissions } from "./cms-scope.mjs";
 import { fail, hash } from "./security.mjs";
 
-export const draftTypes = { event: ["events", "events"], product: ["goods", "products"] };
+export const draftTypes = { event: ["events", "events"], product: ["goods", "products"], anniversary: ["anniversaries", "events"] };
 const unknown = { precision: "unknown", value: null };
 const fields = {
+  anniversary: ["title"],
   event: ["title", "venue", "announcementUrl", "summary"],
   product: ["title", "image", "identityUrl"],
 };
@@ -23,12 +24,29 @@ export async function prepareDraft(snapshot, member, input) {
     groupIds: [], talentIds: [], lineupComplete: false, slots: [], videoIds: [],
     streamUrls: [], format: "unknown", fee: { amount: null, currency: null, note: null },
     visibility: "public",
-  } : { talentIds: [input.talent], groupIds: [], visibility: "public" }));
+  } : { talentIds: [input.talent], groupIds: [], visibility: "public",
+    ...(entity === "anniversary" ? { recursYearly: true, countYears: false } : {}),
+  }));
+  if (entity === "anniversary") {
+    const { month, day, year, kind } = input;
+    if (![month, day, year].every((part) => typeof part === "string" && /^\d*$/.test(part)))
+      fail(400, "cms_invalid_input");
+    value.date = { month: Number(month), day: Number(day), year: year ? Number(year) : null };
+    value.type = kind;
+  }
   for (const key of fields[entity]) {
     if (typeof input[key] !== "string") fail(400, "cms_invalid_input");
     value[key] = input[key].trim() || null;
   }
   if (entity === "event") {
+    if (input.performers !== undefined) {
+      if (!Array.isArray(input.performers) || input.performers.length > 100 ||
+          input.performers.some((id) => typeof id !== "string" || !/^tal-\d{6}$/.test(id)))
+        fail(400, "cms_invalid_input");
+      value.talentIds = [...new Set(input.performers)];
+      if (JSON.stringify(value.talentIds) !== JSON.stringify(before?.talentIds || []))
+        value.lineupComplete = false;
+    }
     for (const key of ["starts", "ends"]) {
       if (input[key] === undefined || (before && input[key] === eventFields(before)[key])) continue;
       if (typeof input[key] !== "string") fail(400, "cms_invalid_input");
@@ -93,10 +111,14 @@ export async function prepareDraft(snapshot, member, input) {
 function eventFields(record) {
   const local = (time) => time.precision === "instant"
     ? new Date(Date.parse(time.value) + 9 * 3600000).toISOString().slice(0, 16) : "";
-  return { starts: local(record.starts), ends: local(record.ends), format: record.format,
+  return { performers: record.talentIds, starts: local(record.starts), ends: local(record.ends), format: record.format,
     streamUrl: record.streamUrls[0] ?? "", fee: String(record.fee.amount ?? ""),
     feeCurrency: record.fee.currency ?? "JPY" };
 }
+
+const anniversaryFields = ({ date, type }) => ({
+  month: String(date.month), day: String(date.day), year: String(date.year ?? ""), kind: type,
+});
 
 export function draftDetails(snapshot, member, entity, id) {
   if (!Object.hasOwn(draftTypes, entity)) fail(403, "cms_scope_denied");
@@ -104,6 +126,7 @@ export function draftDetails(snapshot, member, entity, id) {
   const record = snapshot.models[file][list].find((row) => row.id === id);
   if (!cmsPermissions(snapshot.models, member).canRead(entity, record)) fail(403, "cms_scope_denied");
   const details = Object.fromEntries(fields[entity].map((key) => [key, record[key] ?? ""]));
+  if (entity === "anniversary") Object.assign(details, anniversaryFields(record));
   if (entity === "event") Object.assign(details, eventFields(record));
   if (entity === "product") {
     const offers = snapshot.models.goods.offers.filter((offer) => offer.productId === id);
@@ -124,6 +147,7 @@ export function draftInput(workspace) {
     organization: op.value.relatedOrganizationIds?.[0],
     talent: op.value.talentIds?.[0],
     ...Object.fromEntries(fields[op.entity].map((key) => [key, op.value[key] ?? ""])),
+    ...(op.entity === "anniversary" ? anniversaryFields(op.value) : {}),
     ...(op.entity === "event" ? eventFields(op.value) : {}),
     ...(op.entity === "product" ? {
       url: sale?.value.url ?? "", currency: sale?.value.price.currency ?? "JPY", price: String(sale?.value.price.amount ?? ""),
@@ -134,7 +158,7 @@ export function draftInput(workspace) {
 export function draftGroups(operations = []) {
   const groups = new Map();
   for (const op of operations) {
-    const match = /^cms-(event|product|sale)(?:-([a-f0-9]{24}))?$/.exec(op.key);
+    const match = /^cms-(event|product|sale|anniversary)(?:-([a-f0-9]{24}))?$/.exec(op.key);
     const key = match?.[2] || (match && (match[1] === "event" ? "legacy-event" : "legacy-product"));
     if (!key) continue;
     if (!groups.has(key)) groups.set(key, []);

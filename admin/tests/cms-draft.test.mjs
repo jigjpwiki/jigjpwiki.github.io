@@ -58,3 +58,18 @@ test("editing the amount of a standalone listing preserves its existing currency
   });
   assert.deepEqual(operations[1].value.price, { amount: 12.5, currency: "USD" });
 });
+
+test("anniversary drafts restore date fields and reject people outside the assigned scope", async () => {
+  const editor = { ...member, scope: { ...member.scope, categories: ["anniversaries"] } };
+  const input = { sha: snapshot.sha, entity: "anniversary", talent: "tal-000010",
+    title: "試験記念日", kind: "other", month: "5", day: "12", year: "" };
+  const operations = await prepareDraft(snapshot, editor, input);
+  assert.equal(draftInput({ operations }).month, "5");
+  await assert.rejects(prepareDraft(snapshot, editor, { ...input, talent: "tal-000001" }), /cms_scope_denied/);
+});
+
+test("event performer changes reject out of scope references", async () => {
+  const operations = await prepareDraft(snapshot, member, { ...event, performers: ["tal-000010"] });
+  assert.deepEqual(operations[0].value.talentIds, ["tal-000010"]);
+  await assert.rejects(prepareDraft(snapshot, member, { ...event, performers: ["tal-000001"] }), /cms_scope_denied/);
+});

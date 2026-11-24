@@ -1,4 +1,5 @@
 const labels = {
+  month: ["月", "number"], day: ["日", "number"], year: ["年（任意）", "number"], kind: ["記念日の種類", "select"],
   title: ["名称", "text"], venue: ["会場", "text"], summary: ["概要", "textarea"],
   starts: ["開始日時（日本時間）", "datetime-local"], ends: ["終了日時（日本時間）", "datetime-local"],
   format: ["開催形式", "select"], streamUrl: ["配信URL", "url"], fee: ["料金", "number"],
@@ -6,6 +7,7 @@ const labels = {
   identityUrl: ["公式商品情報URL", "url"], url: ["販売ページURL", "url"], price: ["価格（円）", "number"],
 };
 const categories = {
+  anniversary: { category: "anniversaries", label: "記念日", fields: ["title", "kind", "month", "day", "year"] },
   event: { category: "events", label: "イベント", fields: ["title", "announcementUrl", "summary", "venue", "starts", "ends", "format", "streamUrl", "fee"] },
   product: { category: "goods", label: "グッズ", fields: ["title", "image", "identityUrl", "url", "price"] },
 };
@@ -137,7 +139,7 @@ export async function mountSimpleCms(panel, status, api) {
     const fields = new Map();
     function add(key, label, control) {
       const wrapping = el("label", label);
-      control.value = input[key] ?? (key === "format" ? "unknown" : "");
+      control.value = input[key] ?? (key === "format" ? "unknown" : key === "kind" ? "birthday" : "");
       wrapping.append(control);
       form.append(wrapping);
       fields.set(key, control);
@@ -145,11 +147,11 @@ export async function mountSimpleCms(panel, status, api) {
     for (const key of spec.fields) {
       const [label, type] = labels[key];
       const control = el(["textarea", "select"].includes(type) ? type : "input");
-      if (type === "select") control.append(...Object.entries({
+      if (type === "select") control.append(...Object.entries(key === "kind" ? { birthday: "誕生日", debut: "デビュー記念日", group: "グループ記念日", other: "その他" } : {
         unknown: "未定・不明", onsite: "会場開催", online: "オンライン", hybrid: "会場とオンライン",
       }).map(([value, text]) => new Option(text, value)));
       else if (type !== "textarea") control.type = type;
-      control.required = key === "title" || key === "announcementUrl" || key === "summary" || key === "identityUrl";
+      control.required = ["month", "day"].includes(key) || key === "title" || key === "announcementUrl" || key === "summary" || key === "identityUrl";
       if (key === "price") {
         control.min = "0";
         control.step = input.currency && input.currency !== "JPY" ? "any" : "1";
@@ -180,6 +182,21 @@ export async function mountSimpleCms(panel, status, api) {
       add(key, entity === "event" ? "関連事務所" : "関連する人物", select);
       search.oninput = () => fill(search.value, select.value);
     }
+    if (entity === "event") {
+      const performers = el("fieldset");
+      performers.append(el("legend", "出演者"));
+      for (const person of catalog.people) {
+        const label = el("label", person.name);
+        const checkbox = el("input");
+        checkbox.type = "checkbox";
+        checkbox.name = "performer";
+        checkbox.value = person.id;
+        checkbox.checked = input.performers?.includes(person.id) ?? false;
+        label.prepend(checkbox);
+        performers.append(label);
+      }
+      form.append(performers);
+    }
     const submit = el("button", "下書きを保存");
     submit.disabled = !saveAvailable;
     form.append(submit);
@@ -188,6 +205,13 @@ export async function mountSimpleCms(panel, status, api) {
       submit.disabled = true;
       try {
         const values = Object.fromEntries([...fields].map(([key, control]) => [key, control.value]));
+        if (entity === "event") {
+          const checked = new Set(new FormData(form).getAll("performer"));
+          values.performers = [
+            ...(input.performers || []).filter((id) => checked.delete(id)),
+            ...checked,
+          ];
+        }
         const result = await api("/api/cms/draft", "PUT", {
           entity, id: input.id, draftId, sha: input.sha || catalog.sha, revision, ...values,
         });

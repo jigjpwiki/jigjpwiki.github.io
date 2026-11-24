@@ -417,17 +417,22 @@ export class Admin {
         const workspace = new WorkspaceStore(this.store, this.env.SESSION_KEY);
         if (request.method === "GET") {
           const saved = await workspace.get(session.id);
+          const publication = google && saved?.operations.length
+            ? await new CmsJobs(this).status(session.id) : null;
+          const assignedKeys = new Set(publication?.createdRecords?.map(({ key }) => key));
           const drafts = [];
           for (const [draftId, group] of draftGroups(saved?.operations)) {
+            const reapplyJobId = group.some((row) => !row.id && assignedKeys.has(row.key))
+              ? publication.id : undefined;
             const input = draftInput({ operations: group });
             if (!input) continue;
             try {
               const current = await prepareDraft(snapshot, member, { ...input, sha: snapshot.sha }, this.cmsVideoLookup);
               const conflict = draftConflict(draftId, group, current);
-              drafts.push({ draftId, conflict, input: { ...input, sha: snapshot.sha } });
+              drafts.push({ draftId, conflict, input: { ...input, sha: snapshot.sha }, reapplyJobId });
             } catch (error) {
               if (!(error instanceof Failure)) throw error;
-              drafts.push({ draftId, conflict: true, input: null });
+              drafts.push({ draftId, conflict: true, input: null, reapplyJobId });
             }
           }
           await requireCurrentGrant();

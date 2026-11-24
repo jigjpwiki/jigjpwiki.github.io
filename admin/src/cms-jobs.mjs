@@ -102,6 +102,7 @@ export class CmsJobs {
   }
 
   async reconcile(session, id) {
+    if (typeof id !== "string" || !id) fail(404, "cms_publication_missing");
     const owner = session.id;
     const ownerKey = "cms-publication:" + owner;
     const cooldownKey = "cms-publication-reconcile:" + owner;

@@ -79,6 +79,7 @@ test("manual reconciliation only accepts positive main and Pages evidence for th
   };
   const jobs = new CmsJobs(admin);
   const job = { id: "one", owner: "editor", commit: sha, phase: "unconfirmed", operations: [] };
+  await assert.rejects(jobs.reconcile({ id: "editor" }), /cms_publication_missing/);
   await jobs.report(job);
   await assert.rejects(jobs.reconcile({ id: "other" }, job.id), /cms_publication_missing/);
   assert.equal(reads, 0);

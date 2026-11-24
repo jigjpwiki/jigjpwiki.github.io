@@ -99,7 +99,7 @@ export async function mountSimpleCms(panel, status, api) {
   const reconcileButton = button("公開結果を再確認", async () => {
     reconcileButton.disabled = true;
     try {
-      const result = await api("/api/cms/publication/reconcile", { method: "POST", body: { jobId: publication.id } });
+      const result = await api("/api/cms/publication/reconcile", "POST", { jobId: publication.id });
       showPublication(result.publication);
       await refreshDrafts();
     } catch (error) {

@@ -38,19 +38,22 @@ export function nextId(models, prefix, registry) {
   issued.push(id);
   return id;
 }
-export function resolveRefs(value, ids, field) {
+export function resolveRefs(value, ids, field, keepUnmapped = false) {
   if (
     typeof value === "string" &&
     value.startsWith("@") &&
     refFields.has(field)
   ) {
-    if (!ids.has(value.slice(1))) fail(400, "missing_batch_reference");
+    if (!ids.has(value.slice(1))) {
+      if (keepUnmapped) return value;
+      fail(400, "missing_batch_reference");
+    }
     return ids.get(value.slice(1));
   }
-  if (Array.isArray(value)) return value.map((v) => resolveRefs(v, ids, field));
+  if (Array.isArray(value)) return value.map((v) => resolveRefs(v, ids, field, keepUnmapped));
   if (value && typeof value === "object")
     return Object.fromEntries(
-      Object.entries(value).map(([k, v]) => [k, resolveRefs(v, ids, k)]),
+      Object.entries(value).map(([k, v]) => [k, resolveRefs(v, ids, k, keepUnmapped)]),
     );
   return value;
 }
@@ -70,7 +73,7 @@ export function slots(models, record, old) {
     } else slot.id = nextId(models, "slot", "feature-id-registry");
   }
 }
-export async function contentPreview(snapshot, input, { actor, references }) {
+export async function contentPreview(snapshot, input, { actor, references, authorize }) {
   if (
     !input ||
     Object.keys(input).some(
@@ -201,6 +204,7 @@ export async function contentPreview(snapshot, input, { actor, references }) {
     if (signatures.has(key)) fail(409, "duplicate_offer");
     signatures.add(key);
   }
+  authorize?.(before, models, changes);
   try {
     validate(models, before);
     assertPrivateUnreferenced(models.talents, [

@@ -84,3 +84,20 @@ test("offline deployment preflight preserves actual vars, secret names, DO and U
     checker.verify(config, version, { ...settings, adminNamespaceId: "other" }),
   );
 });
+
+test("vNext 6 requires independently approved vars and existing secret metadata", () => {
+  const { config, version, settings } = sample();
+  const additions = {
+    GOOGLE_AUTH_ENABLED: "true", GOOGLE_CLIENT_ID: "fixture-client",
+    GOOGLE_ADMIN_ORIGIN: "https://admin.example.test", CMS_PUBLISH_ENABLED: "true",
+    CMS_GITHUB_APP_ID: "12", CMS_GITHUB_INSTALLATION_ID: "34",
+  };
+  Object.assign(config.vars, additions);
+  assert.throws(() => checker.verify(config, version, settings), /additions must be approved/);
+  settings.approvedVnext6Vars = additions;
+  assert.throws(() => checker.verify(config, version, settings), /secret binding/);
+  version.resources.bindings.push(...["GOOGLE_CLIENT_SECRET", "CMS_GITHUB_APP_KEY"].map(
+    (name) => ({ name, type: "secret_text" }),
+  ));
+  assert.equal(checker.verify(config, version, settings).secretsVerifiedByName, 4);
+});

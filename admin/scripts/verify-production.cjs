@@ -59,17 +59,41 @@ function verify(config, version, settings) {
       .filter((b) => b.type === "plain_text")
       .map((b) => [b.name, b.text]),
   );
+  const proposed = config.vars || {};
+  const additions = settings.approvedVnext6Vars || {};
+  const allowedAdditions = new Set([
+    "GOOGLE_AUTH_ENABLED", "GOOGLE_CLIENT_ID", "GOOGLE_ADMIN_ORIGIN",
+    "CMS_PUBLISH_ENABLED", "CMS_GITHUB_APP_ID", "CMS_GITHUB_INSTALLATION_ID",
+  ]);
+  requireValue(Object.entries(additions).every(([name, value]) =>
+    allowedAdditions.has(name) && !Object.hasOwn(vars, name) &&
+    typeof value === "string" && value.length > 0),
+    "Only explicitly approved new vNext 6 vars may be added");
   requireValue(
-    JSON.stringify(Object.entries(config.vars || {}).sort()) ===
-      JSON.stringify(Object.entries(vars).sort()),
-    "Plain vars differ from the active version; do not use template values",
+    JSON.stringify(Object.entries(proposed).sort()) ===
+      JSON.stringify(Object.entries({ ...vars, ...additions }).sort()),
+    "Existing plain vars must match the active version and additions must be approved",
   );
+  const requiredSecrets = ["GITHUB_CLIENT_SECRET", "SESSION_KEY"];
+  if (proposed.GOOGLE_AUTH_ENABLED === "true") {
+    requireValue(Boolean(proposed.GOOGLE_CLIENT_ID) &&
+      /^https:\/\/[a-z0-9.-]+$/i.test(proposed.GOOGLE_ADMIN_ORIGIN || ""),
+      "Google authentication requires a client ID and HTTPS origin");
+    requiredSecrets.push("GOOGLE_CLIENT_SECRET");
+  }
+  if (proposed.CMS_PUBLISH_ENABLED === "true") {
+    requireValue(proposed.GOOGLE_AUTH_ENABLED === "true" &&
+      /^\d+$/.test(proposed.CMS_GITHUB_APP_ID || "") &&
+      /^\d+$/.test(proposed.CMS_GITHUB_INSTALLATION_ID || ""),
+      "Publishing requires Google authentication and numeric App identifiers");
+    requiredSecrets.push("CMS_GITHUB_APP_KEY");
+  }
   for (const name of ["ADMIN_ENABLED", "GITHUB_CLIENT_ID", "ADMIN_USER_IDS"])
     requireValue(
       typeof vars[name] === "string" && vars[name] !== "",
       "Required production var metadata is missing",
     );
-  for (const name of ["GITHUB_CLIENT_SECRET", "SESSION_KEY"])
+  for (const name of requiredSecrets)
     requireValue(
       bindings.some((b) => b.name === name && b.type === "secret_text"),
       "Required secret binding metadata is missing",
@@ -77,7 +101,7 @@ function verify(config, version, settings) {
   requireValue(
     !config.secrets &&
       !Object.keys(config.vars || {}).some((k) =>
-        /secret|session_key|token/i.test(k),
+        /secret|session_key|token|app_key|youtube_api_key/i.test(k),
       ),
     "Never put secret values into config",
   );
@@ -152,7 +176,7 @@ function verify(config, version, settings) {
   return {
     worker: config.name,
     versionId: version.id,
-    secretsVerifiedByName: 2,
+    secretsVerifiedByName: requiredSecrets.length,
     namespacePreserved: true,
   };
 }

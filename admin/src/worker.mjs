@@ -1,3 +1,15 @@
+import { recoverAppliedGroup } from "./cms-recover-draft.mjs";
+import { youtubeVideoLookup } from "./cms-music.mjs";
+import { readCmsHistory, prepareAuditReversal, assertReversalRoundTrip } from "./cms-history.mjs";
+import { inspectDraftConflicts } from "./cms-conflicts.mjs";
+import { publicationPlan } from "./cms-publish.mjs";
+import { CmsJobs } from "./cms-jobs.mjs";
+import { publishingEnabled } from "./github-app.mjs";
+import { prepareDraft, draftDetails, draftInput, draftGroups, writeDraft, draftConflict } from "./cms-draft.mjs";
+import { cmsPermissions } from "./cms-scope.mjs";
+import { createCmsReader } from "./cms-read.mjs";
+import { normalizeScope, scopedCatalog } from "./cms-scope.mjs";
+import { googleAuth, googleEnabled, emailKey } from "./google.mjs";
 import {
   Failure,
   fail,
@@ -16,7 +28,7 @@ import {
 import { GitHub, repository } from "./github.mjs";
 import { preview, forms } from "./model.mjs";
 import { Submissions } from "./submissions.mjs";
-import { finalizeAudit } from "./submission-plan.mjs";
+import { finalizeAudit, planSubmission } from "./submission-plan.mjs";
 import { WorkspaceStore, workspaceLimits } from "./workspace.mjs";
 import migration from "../../lib/source-migration.js";
 export default {
@@ -45,6 +57,8 @@ export class Admin {
     this.state = state;
     this.env = env;
     this.transport = env.__testFetch || ((...args) => fetch(...args));
+    this.cmsSnapshot = createCmsReader(this.transport);
+    this.cmsVideoLookup = youtubeVideoLookup(env.YOUTUBE_API_KEY, this.transport);
     if (env.__testStore) this.store = env.__testStore;
     else {
       state.storage.sql.exec(
@@ -69,6 +83,7 @@ export class Admin {
         delete: async (key) => {
           sql.exec("DELETE FROM entries WHERE key=?", key);
         },
+        members: async () => [...sql.exec("SELECT value FROM entries WHERE key GLOB 'member:*' ORDER BY key LIMIT 100")].map((row) => JSON.parse(row.value)),
         clean: async () =>
           sql.exec("DELETE FROM entries WHERE expires<?", Date.now()),
       };
@@ -84,6 +99,21 @@ export class Admin {
       );
     }
   }
+  atomic(callback) {
+    return this.state.blockConcurrencyWhile
+      ? this.state.blockConcurrencyWhile(async () => {
+          // Let the request handler translate expected failures without resetting the object.
+          try { return { value: await callback() }; }
+          catch (error) { return { error }; }
+        }).then(({ value, error }) => {
+          if (error) throw error;
+          return value;
+        })
+      : callback();
+  }
+  async alarm() {
+    await new CmsJobs(this).alarm();
+  }
   async handle(request) {
     const url = new URL(request.url),
       now = Date.now();
@@ -95,6 +125,10 @@ export class Admin {
       !this.env.ADMIN_USER_IDS
     )
       fail(503, "auth_configuration");
+    if (request.method === "GET" && url.pathname === "/auth/options")
+      return json({ google: googleEnabled(this.env) });
+    if (request.method === "GET" && ["/auth/google/login", "/auth/google/callback"].includes(url.pathname))
+      return googleAuth(request, this.env, this.store, this.transport, now, (callback) => this.atomic(callback));
     if (url.pathname === "/auth/login" && request.method === "GET") {
       if (url.protocol !== "https:" && !this.env.__testStore)
         fail(400, "https_required");
@@ -191,7 +225,7 @@ export class Admin {
       /^[\w-]{43}$/.test(sid) &&
       (await this.store.get("session:" + sid));
     if (!session || session.expires <= now) fail(401, "login_required");
-    allow(session, this.env);
+    if (session.provider !== "google") allow(session, this.env);
     if (!["GET", "HEAD"].includes(request.method)) csrf(request, session);
     if (url.pathname === "/auth/logout" && request.method === "POST") {
       await this.store.delete("session:" + sid);
@@ -199,19 +233,252 @@ export class Admin {
         "Set-Cookie": cookie("__Host-admin-session", "", 0),
       });
     }
-    const github = new GitHub(
-      await open(session.token, this.env.SESSION_KEY),
-      this.transport,
-    );
-    const identity = await github.identity();
-    if (String(identity.id) !== session.id)
-      fail(403, "session_identity_changed");
-    allow(identity, this.env);
+    let github;
+    const google = session.provider === "google";
+    if (!google) {
+      github = new GitHub(
+        await open(session.token, this.env.SESSION_KEY),
+        this.transport,
+      );
+      const identity = await github.identity();
+      if (String(identity.id) !== session.id)
+        fail(403, "session_identity_changed");
+      allow(identity, this.env);
+    }
+    let googleMember, entry;
+    if (google) {
+      if (!googleEnabled(this.env)) fail(401, "login_required");
+      entry = await this.store.get(session.memberKey);
+      const member = googleMember = entry && await open(entry, this.env.SESSION_KEY);
+      if (!member || member.disabled || member.id !== session.id || member.revision !== session.revision)
+        fail(401, "login_required");
+      if (url.pathname === "/api/me" && request.method === "GET")
+        return json({ id: session.id, role: member.role, provider: "google", csrf: session.csrf, expires: session.expires });
+      if (url.pathname === "/api/cms/publication/reconcile" && request.method === "POST") {
+        const input = await body(request, 512);
+        return json({ publication: await new CmsJobs(this).reconcile(session, input?.jobId) });
+      }
+      if (url.pathname === "/api/cms/publication") {
+        const jobs = new CmsJobs(this);
+        if (request.method === "GET") return json({ publication: await jobs.status(session.id) });
+        if (request.method === "POST") return json({ publication: await jobs.enqueue(session, await body(request, 4096)) }, 202);
+      }
+    }
+    const cmsRoutes = ["/api/cms/catalog", "/api/cms/detail", "/api/cms/draft", "/api/cms/draft/conflicts", "/api/cms/history", "/api/cms/publication/reapply"];
+    if (cmsRoutes.includes(url.pathname)) {
+      await this.atomic(async () => {
+        const key = "cms-rate:" + sid;
+        const rate = await this.store.get(key) || { count: 0, expires: now + 60000 };
+        if (rate.count >= 30) fail(429, "admin_request_limit");
+        await this.store.put(key, { ...rate, count: rate.count + 1 }, rate.expires);
+      });
+      const snapshot = await this.cmsSnapshot({
+        revalidate: request.method !== "GET" || url.pathname === "/api/cms/draft/conflicts",
+      });
+      const requireCurrentGrant = async () => {
+        if (google ? entry !== await this.store.get(session.memberKey) || !googleEnabled(this.env)
+          : !(await this.store.get("session:" + sid)) || session.expires <= Date.now())
+          fail(401, "login_required");
+      };
+      await requireCurrentGrant();
+      const { models } = snapshot;
+      const member = google ? googleMember : {
+        role: "editor", owner: true, scope: {
+          categories: ["talents", "anniversaries", "events", "music", "goods"],
+          organizations: models.talents.organizations.map(({ id }) => id), groups: [],
+        },
+      };
+      if (url.pathname === "/api/cms/catalog" && request.method === "GET") {
+        const access = cmsPermissions(models, { ...member, scope: {
+          ...member.scope, categories: ["talents"],
+        } });
+        return json({
+          sha: snapshot.sha, sections: scopedCatalog(models, member), owner: member.owner === true,
+          songs: member.scope?.categories.includes("music")
+            ? models.music.songs.filter((song) => song.visibility === "public")
+              .map(({ id, title, originalArtists }) => ({ id, name: title + (originalArtists?.length ? " / " + originalArtists.join("、") : "") }))
+            : [],
+          editable: member.role === "editor", publicationTracking: google, publishable: member.role === "editor" && member.directPublish === true && publishingEnabled(this.env), categories: member.scope?.categories ?? [],
+          organizations: models.talents.organizations.filter((row) => member.scope?.organizations.includes(row.id)),
+          people: models.talents.talents.filter((row) => access.canRead("talent", row))
+            .map((row) => ({ id: row.id, name: row.displayName })),
+        });
+      }
+      if (url.pathname === "/api/cms/detail" && request.method === "GET")
+        return json({ sha: snapshot.sha, fields: draftDetails(snapshot, member, url.searchParams.get("entity"), url.searchParams.get("id")) });
+      if (url.pathname === "/api/cms/publication/reapply" && request.method === "POST") {
+        if (!google || member.role !== "editor") fail(403, "cms_scope_denied");
+        const input = await body(request, 1024);
+        if (typeof input?.draftId !== "string" || !Number.isInteger(input.revision))
+          fail(400, "cms_reapply_invalid");
+        const jobs = new CmsJobs(this);
+        const workspace = new WorkspaceStore(this.store, this.env.SESSION_KEY);
+        const job = await jobs.confirmedJob(session.id, input.jobId);
+        if (!job) fail(409, "cms_reapply_unavailable");
+        const saved = await workspace.get(session.id);
+        if (!saved || saved.revision !== input.revision) fail(409, "workspace_revision_conflict");
+        const group = draftGroups(saved.operations).get(input.draftId);
+        const submitted = draftGroups(job.operations).get(input.draftId);
+        if (!group || !submitted?.some((op) => !op.id)) fail(409, "cms_reapply_unavailable");
+        const published = await this.cmsSnapshot({ revision: job.commit });
+        const recovered = recoverAppliedGroup(group, submitted, job, published);
+        if (!recovered) fail(409, "cms_reapply_unavailable");
+        const editingGrant = { ...member, directPublish: true };
+        const { conflicts } = inspectDraftConflicts(snapshot, member, recovered);
+        if (conflicts.length) {
+          await publicationPlan(published, { ...job, operations: recovered }, editingGrant, this.cmsVideoLookup);
+          const latestChoices = conflicts.map(() => "theirs");
+          const { resolved, unchanged } = inspectDraftConflicts(snapshot, member, recovered, latestChoices);
+          if (!unchanged)
+            await publicationPlan(snapshot, { ...job, operations: resolved }, editingGrant, this.cmsVideoLookup);
+        } else {
+          await publicationPlan(snapshot, { ...job, operations: recovered }, editingGrant, this.cmsVideoLookup);
+        }
+        const replaced = new Map(recovered.map((op) => [op.key, op]));
+        const operations = saved.operations.map(({ validationState, ...op }) => replaced.get(op.key) || op);
+        return this.atomic(async () => {
+          await requireCurrentGrant();
+          const result = await workspace.save(session.id, { protocol: 1, revision: input.revision, operations });
+          await jobs.markRecovered(session.id, saved.workspaceId, input.draftId);
+          return json({ revision: result.revision, needsResolution: conflicts.length > 0 });
+        });
+      }
+      if (url.pathname === "/api/cms/history") {
+        const context = { snapshot, member, github, transport: this.transport, repository };
+        if (request.method === "GET") {
+          const batchId = url.searchParams.get("batchId");
+          const result = await readCmsHistory({
+            ...context, batchId, offset: Number(url.searchParams.get("offset") ?? 0),
+          });
+          await requireCurrentGrant();
+          if (batchId && !result.summary.operations.length) fail(403, "cms_scope_denied");
+          return json(batchId ? { ...result.summary, sha: snapshot.sha } : result);
+        }
+        if (request.method === "POST") {
+          if (member.role !== "editor") fail(403, "cms_scope_denied");
+          const input = await body(request, 1024);
+          if (typeof input?.batchId !== "string" || typeof input.operationId !== "string" || typeof input.recordId !== "string")
+            fail(400, "cms_history_invalid");
+          if (input.sha !== snapshot.sha) fail(409, "main_changed_reload");
+          const { audit } = await readCmsHistory({ ...context, batchId: input.batchId });
+          const operation = prepareAuditReversal(snapshot, member, audit, input.batchId, input.operationId, input.recordId);
+          await assertReversalRoundTrip(snapshot, member, operation, this.cmsVideoLookup);
+          const job = { id: input.batchId, owner: session.id, operations: [operation],
+            createdAt: new Date().toISOString() };
+          if (google) await publicationPlan(snapshot, job, { ...member, directPublish: true }, this.cmsVideoLookup);
+          else await planSubmission(snapshot, job.operations, {
+            actor: String(session.id), batchId: await hash(job.id + snapshot.sha),
+          });
+          const workspace = new WorkspaceStore(this.store, this.env.SESSION_KEY);
+          return this.atomic(async () => {
+            await requireCurrentGrant();
+            const previous = await workspace.get(session.id);
+            if (previous?.operations.some(({ entity, id }) => entity === operation.entity && id === operation.id))
+              fail(409, "cms_history_existing_draft");
+            const batch = writeDraft(previous?.operations || [], undefined, [operation]);
+            const saved = await workspace.save(session.id, {
+              protocol: 1, revision: input.revision, operations: batch.operations,
+            });
+            return json({ revision: saved.revision, draftId: batch.id });
+          });
+        }
+      }
+      if (url.pathname === "/api/cms/draft/conflicts") {
+        const workspace = new WorkspaceStore(this.store, this.env.SESSION_KEY);
+        const saved = await workspace.get(session.id);
+        if (request.method === "GET") {
+          const group = draftGroups(saved?.operations).get(url.searchParams.get("draftId"));
+          const { conflicts } = inspectDraftConflicts(snapshot, member, group);
+          await requireCurrentGrant();
+          return json({ conflicts, revision: saved.revision, sha: snapshot.sha });
+        }
+        if (request.method === "PUT") {
+          const input = await body(request, 16000);
+          if (!Array.isArray(input?.choices)) fail(400, "cms_conflict_choice");
+          if (input.sha !== snapshot.sha) fail(409, "main_changed_reload");
+          if (!saved || saved.revision !== input.revision) fail(409, "workspace_revision_conflict");
+          const group = draftGroups(saved.operations).get(input.draftId);
+          const { resolved, unchanged } = inspectDraftConflicts(snapshot, member, group, input.choices);
+          const changes = resolved.map(({ validationState, ...op }) => op);
+          if (!unchanged) {
+            const job = { id: input.draftId, owner: session.id, operations: changes,
+              createdAt: new Date().toISOString() };
+            if (google) await publicationPlan(snapshot, job, { ...member, directPublish: true }, this.cmsVideoLookup);
+            else await planSubmission(snapshot, changes, {
+              actor: String(session.id), batchId: await hash(job.id + snapshot.sha),
+            });
+          }
+          const replaces = new Map(group.map((op, index) => [op, changes[index]]));
+          const operations = saved.operations.flatMap(({ validationState, ...op }, index) => {
+            const source = saved.operations[index];
+            if (!replaces.has(source)) return [op];
+            return unchanged ? [] : [replaces.get(source)];
+          });
+          return this.atomic(async () => {
+            await requireCurrentGrant();
+            const result = await workspace.save(session.id, { protocol: 1, revision: input.revision, operations });
+            return json({ revision: result.revision });
+          });
+        }
+      }
+      if (url.pathname === "/api/cms/draft") {
+        if (member.role !== "editor") fail(403, "cms_scope_denied");
+        const workspace = new WorkspaceStore(this.store, this.env.SESSION_KEY);
+        if (request.method === "GET") {
+          const saved = await workspace.get(session.id);
+          const publication = google && saved?.operations.length
+            ? await new CmsJobs(this).status(session.id) : null;
+          const assignedKeys = new Set(publication?.createdRecords?.map(({ key }) => key));
+          const drafts = [];
+          for (const [draftId, group] of draftGroups(saved?.operations)) {
+            const reapplyJobId = group.some((row) => !row.id && assignedKeys.has(row.key))
+              ? publication.id : undefined;
+            const input = draftInput({ operations: group });
+            if (!input) continue;
+            try {
+              const current = await prepareDraft(snapshot, member, { ...input, sha: snapshot.sha }, this.cmsVideoLookup);
+              const conflict = draftConflict(draftId, group, current);
+              drafts.push({ draftId, conflict, input: { ...input, sha: snapshot.sha }, reapplyJobId });
+            } catch (error) {
+              if (!(error instanceof Failure)) throw error;
+              drafts.push({ draftId, conflict: true, input: null, reapplyJobId });
+            }
+          }
+          await requireCurrentGrant();
+          return json({ revision: saved?.revision ?? 0, drafts });
+        }
+        if (request.method === "DELETE") {
+          const input = await body(request, 1000);
+          if (typeof input?.draftId !== "string") fail(400, "cms_invalid_input");
+          return this.atomic(async () => {
+            await requireCurrentGrant();
+            const previous = await workspace.get(session.id);
+            const { operations } = writeDraft(previous?.operations || [], input.draftId);
+            const saved = await workspace.save(session.id, { protocol: 1, revision: input.revision, operations });
+            return json({ revision: saved.revision });
+          });
+        }
+        if (request.method === "PUT") {
+          const input = await body(request, 16000);
+          if (!input || typeof input !== "object") fail(400, "cms_invalid_input");
+          const operations = await prepareDraft(snapshot, member, input, this.cmsVideoLookup);
+          return this.atomic(async () => {
+            await requireCurrentGrant();
+            const previous = await workspace.get(session.id);
+            const batch = writeDraft(previous?.operations || [], input.draftId, operations);
+            const saved = await workspace.save(session.id, { protocol: 1, revision: input.revision, operations: batch.operations });
+            return json({ revision: saved.revision, draftId: batch.id });
+          });
+        }
+      }
+    }
+    if (google) fail(403, "google_route_not_enabled");
     if (url.pathname === "/api/me" && request.method === "GET")
       return json({
         id: session.id,
         login: session.login,
         role: "owner",
+        simpleCms: true,
         csrf: session.csrf,
         expires: session.expires,
         repository,
@@ -221,6 +488,49 @@ export class Admin {
     if (rate.count >= 30) fail(429, "admin_request_limit");
     rate.count++;
     await this.store.put(rateKey, rate, rate.start + 60000);
+    if (url.pathname === "/api/members" && request.method === "GET") {
+      const entries = await this.store.members();
+      const members = await Promise.all(entries.map(async (entry) => {
+        const { email, id, role, disabled, sub, expires, scope, directPublish } = await open(entry, this.env.SESSION_KEY);
+        return { email, id, role, disabled, accepted: Boolean(sub), expires, scope: normalizeScope(scope), directPublish: directPublish === true };
+      }));
+      return json({ members });
+    }
+    if (url.pathname === "/api/members" && request.method === "POST") {
+      const input = await body(request, 4096);
+      if (!input || typeof input.email !== "string" || input.email.length > 254 ||
+          !/^[^\s@]+@[^\s@]+$/.test(input.email) ||
+          !["editor", "viewer"].includes(input.role) || typeof input.disabled !== "boolean")
+        fail(400, "invalid_member");
+      const scope = normalizeScope(input.scope);
+      if (input.directPublish !== undefined && typeof input.directPublish !== "boolean")
+        fail(400, "invalid_member_scope");
+      if (scope.organizations.length || scope.groups.length) {
+        const { models } = await github.snapshot(undefined, ["talents", "catalog"]);
+        if (scope.organizations.some((id) => !models.talents.organizations.some((organization) => organization.id === id)) ||
+            scope.groups.some((id) => !models.catalog.groups.some((group) => group.id === id && group.visibility === "public")))
+          fail(400, "invalid_member_scope");
+      }
+      const key = await emailKey(input.email);
+      return this.atomic(async () => {
+        const entry = await this.store.get(key);
+        const previous = entry && await open(entry, this.env.SESSION_KEY);
+        if (!previous && (await this.store.members()).length >= 100) fail(409, "member_limit");
+        const member = {
+          email: input.email.toLowerCase(),
+          id: previous?.id || crypto.randomUUID(),
+          sub: previous?.sub || null,
+          role: input.role,
+          scope,
+          directPublish: input.role === "editor" && input.directPublish === true,
+          disabled: input.disabled,
+          revision: random(),
+          expires: now + 7 * 86400_000,
+        };
+        await this.store.put(key, await seal(member, this.env.SESSION_KEY), Number.MAX_SAFE_INTEGER);
+        return json({ id: member.id, role: member.role, disabled: member.disabled });
+      });
+    }
     if (url.pathname.startsWith("/api/submissions")) {
       const service = new Submissions(
         this.store,

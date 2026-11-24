@@ -311,20 +311,80 @@ function screen() {
   );
 }
 let acceptedHash = location.hash;
-window.addEventListener("hashchange", () => {
-  if (activeEditor?.dirty && !mayLeave()) {
+let navigationRevision = 0;
+window.addEventListener("hashchange", async () => {
+  const revision = ++navigationRevision;
+  const view = $("#view");
+  if (!view) return;
+  view.inert = false;
+  if ((activeEditor?.dirty || document.querySelector("[data-cms-dirty]")) && !mayLeave()) {
     history.replaceState(null, "", acceptedHash || "#masters");
     return;
+  }
+  if (me?.simpleCms && (location.hash === "#cms" || acceptedHash === "#cms")) {
+    if (workspace?.dirty) {
+      history.replaceState(null, "", acceptedHash || "#dashboard");
+      showStatus("変更内容を保存してから編集モードを切り替えてください。");
+      return;
+    }
+    if (acceptedHash === "#cms" && location.hash !== "#cms") {
+      view.inert = true;
+      try {
+        await workspace.load();
+      } catch {
+        if (revision === navigationRevision) {
+          history.replaceState(null, "", "#cms");
+          showStatus("下書きを取得できませんでした。");
+        }
+        return;
+      } finally {
+        if (revision === navigationRevision) view.inert = false;
+      }
+      if (revision !== navigationRevision) return;
+      view.replaceChildren(node("p", "読み込み中…"));
+    }
   }
   activeEditor = null;
   acceptedHash = location.hash;
   screen();
 });
 async function start() {
+  fetch("/auth/options").then((response) => response.json()).then(({ google }) => {
+    $("#google-login").hidden = google !== true;
+  }).catch(() => {});
+
   try {
     me = await api("/api/me");
     $("#login").hidden = true;
     $("#app").hidden = false;
+    if (me.provider === "google") {
+      const panel = node("section");
+      panel.className = "stack";
+      const logout = node("button", "ログアウト");
+      logout.onclick = async () => {
+        if (!mayLeave()) return;
+        try {
+          await api("/auth/logout", "POST", {});
+          location.reload();
+        } catch {
+          showStatus("ログアウトできませんでした。もう一度お試しください。");
+        }
+      };
+      const status = node("p", "担当コンテンツを読み込み中…");
+      status.setAttribute("role", "status");
+      panel.append(node("h2", "担当コンテンツ"), logout, status);
+      import("./simple-cms.js").then(({ mountSimpleCms }) => mountSimpleCms(panel, status, api))
+        .catch(() => { status.textContent = "担当コンテンツを取得できませんでした。"; });
+      $("#app").replaceChildren(panel);
+      return;
+    }
+    if (me.simpleCms) {
+      $("#simple-cms-link").hidden = false;
+      if (!location.hash) {
+        history.replaceState(null, "", "#cms");
+        acceptedHash = "#cms";
+      }
+    }
     $("#identity").textContent = `${me.login} / 管理者 / ${me.repository}`;
     $("#logout").onclick = async () => {
       if (!mayLeave()) return;
@@ -983,6 +1043,8 @@ async function digest(value) {
 }
 let activeEditor = null;
 function mayLeave() {
+  if (document.querySelector("[data-cms-dirty]"))
+    return window.confirm("保存していない入力を破棄して移動しますか？");
   if (inlinePending()) {
     showStatus("編集中のセルをEnterで確定するか、Escで取り消してください。");
     return false;
@@ -1002,6 +1064,7 @@ function mayLeave() {
 window.addEventListener("beforeunload", (e) => {
   if (
     activeEditor?.pending ||
+    document.querySelector("[data-cms-dirty]") ||
     inlinePending() ||
     workspace?.dirty ||
     (activeEditor?.dirty && !workspace)
@@ -1500,6 +1563,110 @@ async function showPreview(input, workspaceKey) {
   view.querySelector("h2").tabIndex = -1;
   view.querySelector("h2").focus();
 }
+async function memberSettings() {
+  const panel = node("section");
+  panel.className = "stack";
+  $("#view").append(panel);
+  panel.append(node("h3", "編集者と招待"));
+  const form = node("form");
+  form.className = "stack";
+  const email = node("input");
+  email.type = "email";
+  email.required = true;
+  email.maxLength = 254;
+  const emailLabel = node("label", "Googleのメールアドレス");
+  emailLabel.append(email);
+  const roleLabel = node("label", "権限");
+  const role = node("select");
+  role.append(new Option("編集者", "editor"), new Option("閲覧者", "viewer"));
+  roleLabel.append(role);
+  const disabled = node("input");
+  disabled.type = "checkbox";
+  const disabledLabel = node("label", "招待を取り消す・アカウントを無効化する");
+  disabledLabel.prepend(disabled);
+  const directPublish = node("input");
+  directPublish.type = "checkbox";
+  const publishLabel = node("label", "直接公開の権限を付与する（公開機能の導入後に適用）");
+  publishLabel.prepend(directPublish);
+  function scopeChoices(title, options) {
+    const group = node("fieldset");
+    group.append(node("legend", title));
+    const inputs = new Map(options.map(([value, label]) => {
+      const input = node("input");
+      input.type = "checkbox";
+      const field = node("label", label);
+      field.prepend(input);
+      group.append(field);
+      return [value, input];
+    }));
+    return {
+      group,
+      read: () => [...inputs].filter(([, input]) => input.checked).map(([value]) => value),
+      fill: (values) => { for (const [value, input] of inputs) input.checked = values?.includes(value) ?? false; },
+    };
+  }
+  let scopeControls;
+  const submit = node("button", "招待・権限を保存");
+  const status = node("p");
+  status.setAttribute("role", "status");
+  const list = node("ul");
+  form.append(emailLabel, roleLabel, disabledLabel, publishLabel, submit);
+  submit.disabled = true;
+  panel.append(form, status, list);
+  async function refresh() {
+    const { members } = await api("/api/members");
+    list.replaceChildren(...members.map((member) => {
+      const row = node("li");
+      const state = member.disabled ? "無効" : member.accepted ? "登録済み" :
+        member.expires <= Date.now() ? "招待期限切れ" : "招待中";
+      const edit = node("button", member.email || member.id);
+      edit.type = "button";
+      edit.onclick = () => {
+        email.value = member.email || "";
+        role.value = member.role;
+        disabled.checked = member.disabled;
+        directPublish.checked = member.directPublish;
+        for (const [key, control] of Object.entries(scopeControls)) control.fill(member.scope?.[key]);
+        email.focus();
+      };
+      row.append(edit, node("span", " " + state + "・" + (member.role === "editor" ? "編集者" : "閲覧者")));
+      return row;
+    }));
+  }
+  form.onsubmit = async (event) => {
+    event.preventDefault();
+    submit.disabled = true;
+    try {
+      await api("/api/members", "POST", {
+        email: email.value, role: role.value, disabled: disabled.checked,
+        directPublish: directPublish.checked,
+        scope: Object.fromEntries(Object.entries(scopeControls).map(([key, control]) => [key, control.read()])),
+      });
+      status.textContent = "保存しました。対象アカウントの既存セッションは失効します。";
+      await refresh();
+    } catch {
+      status.textContent = "招待または権限の更新を完了できませんでした。";
+    } finally {
+      submit.disabled = false;
+    }
+  };
+  try {
+    const { models } = await api("/api/masters");
+    scopeControls = {
+      organizations: scopeChoices("担当事務所", models.talents.organizations.map(({ id, name }) => [id, name])),
+      groups: scopeChoices("担当グループ", models.catalog.groups.filter((group) => group.visibility === "public").map(({ id, name }) => [id, name])),
+      categories: scopeChoices("担当カテゴリ", [
+        ["talents", "VTuber"], ["anniversaries", "記念日"], ["events", "イベント"],
+        ["music", "音楽・歌枠"], ["goods", "グッズ"],
+      ]),
+    };
+    for (const control of Object.values(scopeControls)) form.insertBefore(control.group, submit);
+    await refresh();
+    submit.disabled = false;
+  } catch {
+    status.textContent = "編集者一覧または担当範囲を取得できませんでした。";
+  }
+}
 const oldScreen = screen;
 screen = function () {
   if (!me) return;
@@ -1522,6 +1689,29 @@ screen = function () {
     if (a.hash === (location.hash || "#dashboard"))
       a.setAttribute("aria-current", "page");
     else a.removeAttribute("aria-current");
+  }
+  if (route === "#cms" && me.simpleCms) {
+    $("#page-title").textContent = "簡易CMS";
+    const panel = node("section");
+    panel.className = "stack";
+    const status = node("p", "読み込み中…");
+    status.setAttribute("role", "status");
+    const reviewChanges = node("a", "下書きを確認して公開申請");
+    reviewChanges.href = "#workspace";
+    reviewChanges.className = "button";
+    const actions = node("div");
+    actions.className = "button-group";
+    actions.append(reviewChanges);
+    panel.append(node("h2", "簡易CMS"), actions, status);
+    $("#view").replaceChildren(panel);
+    import("./simple-cms.js").then(({ mountSimpleCms }) => mountSimpleCms(panel, status, api))
+      .catch(() => { status.textContent = "コンテンツを取得できませんでした。"; });
+    return;
+  }
+  if (route === "#settings") {
+    oldScreen();
+    void memberSettings();
+    return;
   }
   if (location.hash === "#submitted") {
     const open = () => submissionView({ mode: "submitted" });

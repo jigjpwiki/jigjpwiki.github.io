@@ -1,7 +1,7 @@
 import test from "node:test";
 import assert from "node:assert/strict";
 import fixture from "../../tests/fixtures/admin-vnext-baseline.json" with { type: "json" };
-import { prepareAuditReversal, readCmsHistory, scopedHistory } from "../src/cms-history.mjs";
+import { assertReversalRoundTrip, prepareAuditReversal, readCmsHistory, scopedHistory } from "../src/cms-history.mjs";
 
 const batchId = "a".repeat(43);
 const member = { role: "editor", owner: true, scope: { categories: ["events"] } };
@@ -21,12 +21,13 @@ function setup() {
   return { snapshot: { sha: "b".repeat(40), models }, audit, current, base };
 }
 
-test("audit reversal keeps an unrelated later edit and refuses overwriting a later change in the same field", () => {
+test("audit reversal keeps an unrelated later edit and refuses overwriting a later change in the same field", async () => {
   const { snapshot, audit, current, base } = setup();
   const op = prepareAuditReversal(snapshot, member, audit, batchId, "event", base.id);
   assert.equal(op.value.title, base.title);
   assert.equal(op.value.venue, current.venue);
   assert.equal(op.before.title, current.title);
+  await assertReversalRoundTrip(snapshot, member, op);
   current.title = "後から同じ項目を変更";
   assert.throws(() => prepareAuditReversal(snapshot, member, audit, batchId, "event", base.id),
     /cms_history_reversal_conflict/);

@@ -1,4 +1,4 @@
-import { draftTypes } from "./cms-draft.mjs";
+import { draftInput, draftTypes, prepareDraft } from "./cms-draft.mjs";
 import { cmsPermissions } from "./cms-scope.mjs";
 import { equal, recordAt, threeWay } from "./submission-plan.mjs";
 import { fail } from "./security.mjs";
@@ -10,9 +10,9 @@ const tracked = new Set(["talent", "anniversary", "song", "musicVideo", "video",
 // Single-record reversals must round-trip through the corresponding CMS form.
 const editableFields = {
   talent: ["displayName", "aliases", "profileImage", "officialProfileUrl", "activityStatus"],
-  anniversary: ["title", "kind", "date", "recursYearly", "countYears"],
-  song: ["title", "originalArtists", "aliases", "readings"],
-  musicVideo: ["rawSongTitle", "songId", "kind"],
+  anniversary: ["title", "type", "date"],
+  song: ["title", "originalArtists", "aliases", "readings", "identityUrl"],
+  musicVideo: ["rawSongTitle", "songId", "type"],
   video: ["title"],
   event: ["title", "announcementUrl", "summary", "venue", "format", "fee", "streamUrls"],
   campaign: ["title"],
@@ -59,6 +59,14 @@ export function prepareAuditReversal(snapshot, member, audit, batchId, operation
   access.assertChange(row.entity, current, merged.value);
   return { ...change, key: row.entity === "video" ? "cms-media" : "cms-" + row.entity.toLowerCase(), before: current,
     value: merged.value, baseCommit: snapshot.sha };
+}
+
+export async function assertReversalRoundTrip(snapshot, member, operation, lookup) {
+  const input = draftInput({ operations: [operation] });
+  const prepared = await prepareDraft(snapshot, member, input, lookup);
+  if (prepared.length !== 1 || prepared[0].key !== operation.key ||
+      !equal(prepared[0].value, operation.value))
+    fail(409, "cms_history_reversal_unavailable");
 }
 
 const auditPath = /^ops\/admin\/audit\/([\w-]{43})\.json$/;

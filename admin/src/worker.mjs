@@ -1,5 +1,5 @@
 import { youtubeVideoLookup } from "./cms-music.mjs";
-import { readCmsHistory, prepareAuditReversal } from "./cms-history.mjs";
+import { readCmsHistory, prepareAuditReversal, assertReversalRoundTrip } from "./cms-history.mjs";
 import { inspectDraftConflicts } from "./cms-conflicts.mjs";
 import { publicationPlan } from "./cms-publish.mjs";
 import { CmsJobs } from "./cms-jobs.mjs";
@@ -322,6 +322,7 @@ export class Admin {
           if (input.sha !== snapshot.sha) fail(409, "main_changed_reload");
           const { audit } = await readCmsHistory({ ...context, batchId: input.batchId });
           const operation = prepareAuditReversal(snapshot, member, audit, input.batchId, input.operationId, input.recordId);
+          await assertReversalRoundTrip(snapshot, member, operation, this.cmsVideoLookup);
           const job = { id: input.batchId, owner: session.id, operations: [operation],
             createdAt: new Date().toISOString() };
           if (google) await publicationPlan(snapshot, job, { ...member, directPublish: true }, this.cmsVideoLookup);

@@ -149,7 +149,13 @@ test("a song video can reuse scoped media but rejects a mismatched registered ch
     videoUrl: "https://youtu.be/" + original.youtubeId };
   const operations = await prepareDraft({ ...snapshot, models }, editor, input);
   assert.equal(draftInput({ operations }).songId, original.songId);
+  const { publicationPlan } = await import("../src/cms-publish.mjs");
+  const job = { id: "video-test", owner: "8ebf4fde-85a4-4d34-9feb-d1ba5c4de026", operations };
+  const publisher = { ...editor, directPublish: true };
+  const { plan } = await publicationPlan({ ...snapshot, models }, job, publisher);
+  assert.equal(plan.files.music.musicVideos.at(-1).youtubeId, original.youtubeId);
   const media = models.media.videos.find(({ youtubeId }) => youtubeId === original.youtubeId);
   media.channelId = models.talents.talents[0].accounts.find(({ service }) => service === "youtube").accountId;
   await assert.rejects(prepareDraft({ ...snapshot, models }, editor, input), /cms_scope_denied/);
+  await assert.rejects(publicationPlan({ ...snapshot, models }, job, publisher), /cms_scope_denied/);
 });

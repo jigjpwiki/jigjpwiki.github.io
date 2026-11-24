@@ -1679,7 +1679,13 @@ screen = function () {
     panel.className = "stack";
     const status = node("p", "読み込み中…");
     status.setAttribute("role", "status");
-    panel.append(node("h2", "簡易CMS"), node("p", "下書きの確認・公開申請は「変更内容」から行えます。"), status);
+    const reviewChanges = node("a", "下書きを確認して公開申請");
+    reviewChanges.href = "#workspace";
+    reviewChanges.className = "button";
+    const actions = node("div");
+    actions.className = "button-group";
+    actions.append(reviewChanges);
+    panel.append(node("h2", "簡易CMS"), actions, status);
     $("#view").replaceChildren(panel);
     import("./simple-cms.js").then(({ mountSimpleCms }) => mountSimpleCms(panel, status, api))
       .catch(() => { status.textContent = "コンテンツを取得できませんでした。"; });

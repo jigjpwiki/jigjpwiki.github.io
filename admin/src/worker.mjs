@@ -1,4 +1,4 @@
-import { googleAuth, emailKey } from "./google.mjs";
+import { googleAuth, googleEnabled, emailKey } from "./google.mjs";
 import {
   Failure,
   fail,
@@ -70,6 +70,7 @@ export class Admin {
         delete: async (key) => {
           sql.exec("DELETE FROM entries WHERE key=?", key);
         },
+        members: async () => [...sql.exec("SELECT value FROM entries WHERE key GLOB 'member:*' ORDER BY key LIMIT 100")].map((row) => JSON.parse(row.value)),
         clean: async () =>
           sql.exec("DELETE FROM entries WHERE expires<?", Date.now()),
       };
@@ -108,6 +109,8 @@ export class Admin {
       !this.env.ADMIN_USER_IDS
     )
       fail(503, "auth_configuration");
+    if (request.method === "GET" && url.pathname === "/auth/options")
+      return json({ google: googleEnabled(this.env) });
     if (request.method === "GET" && ["/auth/google/login", "/auth/google/callback"].includes(url.pathname))
       return googleAuth(request, this.env, this.store, this.transport, now, (callback) => this.atomic(callback));
     if (url.pathname === "/auth/login" && request.method === "GET") {
@@ -215,6 +218,7 @@ export class Admin {
       });
     }
     if (session.provider === "google") {
+      if (!googleEnabled(this.env)) fail(401, "login_required");
       const entry = await this.store.get(session.memberKey);
       const member = entry && await open(entry, this.env.SESSION_KEY);
       if (!member || member.disabled || member.id !== session.id || member.revision !== session.revision)
@@ -245,6 +249,14 @@ export class Admin {
     if (rate.count >= 30) fail(429, "admin_request_limit");
     rate.count++;
     await this.store.put(rateKey, rate, rate.start + 60000);
+    if (url.pathname === "/api/members" && request.method === "GET") {
+      const entries = await this.store.members();
+      const members = await Promise.all(entries.map(async (entry) => {
+        const { email, id, role, disabled, sub, expires } = await open(entry, this.env.SESSION_KEY);
+        return { email, id, role, disabled, accepted: Boolean(sub), expires };
+      }));
+      return json({ members });
+    }
     if (url.pathname === "/api/members" && request.method === "POST") {
       const input = await body(request, 4096);
       if (!input || typeof input.email !== "string" || input.email.length > 254 ||
@@ -253,18 +265,20 @@ export class Admin {
         fail(400, "invalid_member");
       const key = await emailKey(input.email);
       return this.atomic(async () => {
-      const entry = await this.store.get(key);
-      const previous = entry && await open(entry, this.env.SESSION_KEY);
-      const member = {
-        id: previous?.id || crypto.randomUUID(),
-        sub: previous?.sub || null,
-        role: input.role,
-        disabled: input.disabled,
-        revision: random(),
-        expires: now + 7 * 86400_000,
-      };
-      await this.store.put(key, await seal(member, this.env.SESSION_KEY), Number.MAX_SAFE_INTEGER);
-      return json({ id: member.id, role: member.role, disabled: member.disabled });
+        const entry = await this.store.get(key);
+        const previous = entry && await open(entry, this.env.SESSION_KEY);
+        if (!previous && (await this.store.members()).length >= 100) fail(409, "member_limit");
+        const member = {
+          email: input.email.toLowerCase(),
+          id: previous?.id || crypto.randomUUID(),
+          sub: previous?.sub || null,
+          role: input.role,
+          disabled: input.disabled,
+          revision: random(),
+          expires: now + 7 * 86400_000,
+        };
+        await this.store.put(key, await seal(member, this.env.SESSION_KEY), Number.MAX_SAFE_INTEGER);
+        return json({ id: member.id, role: member.role, disabled: member.disabled });
       });
     }
     if (url.pathname.startsWith("/api/submissions")) {

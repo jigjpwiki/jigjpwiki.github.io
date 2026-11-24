@@ -1,7 +1,7 @@
 import test from "node:test";
 import assert from "node:assert/strict";
 import { b64 } from "../src/security.mjs";
-import { verifyGoogle, googleAuth } from "../src/google.mjs";
+import { verifyGoogle, googleAuth, googleControlsEmail } from "../src/google.mjs";
 
 test("Google claims must be signed, intended for this client and bound to the verified invitation identity", async () => {
   const algorithm = { name: "RSASSA-PKCS1-v1_5", hash: "SHA-256", modulusLength: 2048, publicExponent: new Uint8Array([1, 0, 1]) };
@@ -27,7 +27,15 @@ test("a Google callback without matching browser state cannot contact Google", a
   const origin = "https://admin.example.test";
   await assert.rejects(googleAuth(
     new Request(origin + "/auth/google/callback?state=unknown&code=fixture"),
-    { GOOGLE_CLIENT_ID: "client", GOOGLE_CLIENT_SECRET: "fixture", GOOGLE_ADMIN_ORIGIN: origin },
+    { GOOGLE_AUTH_ENABLED: "true", GOOGLE_CLIENT_ID: "client", GOOGLE_CLIENT_SECRET: "fixture", GOOGLE_ADMIN_ORIGIN: origin },
     {}, () => assert.fail("external request"), Date.now(), (callback) => callback(),
   ), /oauth_state_invalid/);
+});
+
+
+test("only Google-managed mailbox addresses can claim invitations", () => {
+  assert.equal(googleControlsEmail({ email: "a@gmail.com" }), true);
+  assert.equal(googleControlsEmail({ email: "a@example.test", hd: "example.test" }), true);
+  assert.equal(googleControlsEmail({ email: "a@example.test", hd: "other.test" }), false);
+  assert.equal(googleControlsEmail({ email: "a@example.test" }), false);
 });

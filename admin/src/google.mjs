@@ -32,14 +32,45 @@ export async function verifyGoogle(token, audience, nonce, keys, now) {
   }
 }
 
+export const googleEnabled = (env) => env.GOOGLE_AUTH_ENABLED === "true" &&
+  Boolean(env.GOOGLE_CLIENT_ID && env.GOOGLE_CLIENT_SECRET && env.GOOGLE_ADMIN_ORIGIN);
+
+export function googleControlsEmail(claims) {
+  const domain = claims.email.toLowerCase().split("@").at(-1);
+  return domain === "gmail.com" || (
+    typeof claims.hd === "string" && claims.hd.toLowerCase() === domain
+  );
+}
+
+async function googleResponse(transport, url, options, failure) {
+  let response;
+  try {
+    response = await transport(url, { ...options, redirect: "error", signal: AbortSignal.timeout(8000) });
+  } catch {
+    fail(503, "google_unavailable");
+  }
+  if (!response.ok) fail(response.status === 400 && failure === "google_exchange_failed" ? 403 : 503, failure);
+  try {
+    return await response.json();
+  } catch {
+    fail(503, "google_response_invalid");
+  }
+}
+
 export async function googleAuth(request, env, store, transport, now, atomic) {
   const url = new URL(request.url);
-  if (!env.GOOGLE_CLIENT_ID || !env.GOOGLE_CLIENT_SECRET) fail(404, "google_disabled");
+  if (!googleEnabled(env)) fail(404, "google_disabled");
   if (url.protocol !== "https:" || url.origin !== env.GOOGLE_ADMIN_ORIGIN) fail(400, "google_origin_invalid");
   const redirect = url.origin + "/auth/google/callback";
   const secureHeaders = new Headers(headers);
   const stateCookie = "__Host-admin-google";
   if (url.pathname === "/auth/google/login") {
+    await atomic(async () => {
+      const key = "google-login-budget";
+      const count = (await store.get(key)) || 0;
+      if (count >= 60) fail(429, "google_login_limit");
+      await store.put(key, count + 1, (Math.floor(now / 60000) + 1) * 60000);
+    });
     const state = random(), verifier = random(), nonce = random();
     await store.put("google-oauth:" + state, { verifier, nonce }, now + 300_000);
     const authorize = new URL(issuer + "/o/oauth2/v2/auth");
@@ -59,17 +90,17 @@ export async function googleAuth(request, env, store, transport, now, atomic) {
     await store.delete("google-oauth:" + state);
     return value;
   });
-  const result = await transport("https://oauth2.googleapis.com/token", {
+  const result = await googleResponse(transport, "https://oauth2.googleapis.com/token", {
     method: "POST", redirect: "error",
     body: new URLSearchParams({
       client_id: env.GOOGLE_CLIENT_ID, client_secret: env.GOOGLE_CLIENT_SECRET,
       redirect_uri: redirect, code_verifier: saved.verifier, grant_type: "authorization_code", code,
     }),
-  });
-  if (!result.ok) fail(403, "google_exchange_failed");
-  const jwks = await transport("https://www.googleapis.com/oauth2/v3/certs", { redirect: "error" });
-  if (!jwks.ok) fail(503, "google_keys_unavailable");
-  const identity = await verifyGoogle((await result.json()).id_token, env.GOOGLE_CLIENT_ID, saved.nonce, (await jwks.json()).keys, now);
+  }, "google_exchange_failed");
+  const jwks = await googleResponse(transport, "https://www.googleapis.com/oauth2/v3/certs", {}, "google_keys_unavailable");
+  const identity = await verifyGoogle(result.id_token, env.GOOGLE_CLIENT_ID, saved.nonce, jwks.keys, now);
+  // Google cannot attest current mailbox ownership for consumer accounts with external mail.
+  if (!googleControlsEmail(identity)) fail(403, "google_mailbox_unverified");
   const memberKey = await emailKey(identity.email);
   const member = await atomic(async () => {
     const entry = await store.get(memberKey);

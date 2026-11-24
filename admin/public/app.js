@@ -321,10 +321,30 @@ window.addEventListener("hashchange", () => {
   screen();
 });
 async function start() {
+  fetch("/auth/options").then((response) => response.json()).then(({ google }) => {
+    $("#google-login").hidden = google !== true;
+  }).catch(() => {});
+
   try {
     me = await api("/api/me");
     $("#login").hidden = true;
     $("#app").hidden = false;
+    if (me.provider === "google") {
+      const panel = node("section");
+      panel.className = "stack";
+      const logout = node("button", "ログアウト");
+      logout.onclick = async () => {
+        try {
+          await api("/auth/logout", "POST", {});
+          location.reload();
+        } catch {
+          showStatus("ログアウトできませんでした。もう一度お試しください。");
+        }
+      };
+      panel.append(node("h2", "編集者アカウント"), node("p", "ログインしました。編集機能は準備中です。"), logout);
+      $("#app").replaceChildren(panel);
+      return;
+    }
     $("#identity").textContent = `${me.login} / 管理者 / ${me.repository}`;
     $("#logout").onclick = async () => {
       if (!mayLeave()) return;
@@ -1500,6 +1520,67 @@ async function showPreview(input, workspaceKey) {
   view.querySelector("h2").tabIndex = -1;
   view.querySelector("h2").focus();
 }
+async function memberSettings() {
+  const panel = node("section");
+  panel.className = "stack";
+  $("#view").append(panel);
+  panel.append(node("h3", "編集者と招待"));
+  const form = node("form");
+  form.className = "stack";
+  const email = node("input");
+  email.type = "email";
+  email.required = true;
+  email.maxLength = 254;
+  const emailLabel = node("label", "Googleのメールアドレス");
+  emailLabel.append(email);
+  const roleLabel = node("label", "権限");
+  const role = node("select");
+  role.append(new Option("編集者", "editor"), new Option("閲覧者", "viewer"));
+  roleLabel.append(role);
+  const disabled = node("input");
+  disabled.type = "checkbox";
+  const disabledLabel = node("label", "招待を取り消す・アカウントを無効化する");
+  disabledLabel.prepend(disabled);
+  const submit = node("button", "招待・権限を保存");
+  const status = node("p");
+  status.setAttribute("role", "status");
+  const list = node("ul");
+  form.append(emailLabel, roleLabel, disabledLabel, submit);
+  panel.append(form, status, list);
+  async function refresh() {
+    const { members } = await api("/api/members");
+    list.replaceChildren(...members.map((member) => {
+      const row = node("li");
+      const state = member.disabled ? "無効" : member.accepted ? "登録済み" :
+        member.expires <= Date.now() ? "招待期限切れ" : "招待中";
+      const edit = node("button", member.email || member.id);
+      edit.type = "button";
+      edit.onclick = () => {
+        email.value = member.email || "";
+        role.value = member.role;
+        disabled.checked = member.disabled;
+        email.focus();
+      };
+      row.append(edit, node("span", " " + state + "・" + (member.role === "editor" ? "編集者" : "閲覧者")));
+      return row;
+    }));
+  }
+  form.onsubmit = async (event) => {
+    event.preventDefault();
+    submit.disabled = true;
+    try {
+      await api("/api/members", "POST", { email: email.value, role: role.value, disabled: disabled.checked });
+      status.textContent = "保存しました。対象アカウントの既存セッションは失効します。";
+      await refresh();
+    } catch {
+      status.textContent = "招待または権限の更新を完了できませんでした。";
+    } finally {
+      submit.disabled = false;
+    }
+  };
+  try { await refresh(); }
+  catch { status.textContent = "編集者一覧を取得できませんでした。"; }
+}
 const oldScreen = screen;
 screen = function () {
   if (!me) return;
@@ -1522,6 +1603,11 @@ screen = function () {
     if (a.hash === (location.hash || "#dashboard"))
       a.setAttribute("aria-current", "page");
     else a.removeAttribute("aria-current");
+  }
+  if (route === "#settings") {
+    oldScreen();
+    void memberSettings();
+    return;
   }
   if (location.hash === "#submitted") {
     const open = () => submissionView({ mode: "submitted" });

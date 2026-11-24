@@ -341,7 +341,21 @@ async function start() {
           showStatus("ログアウトできませんでした。もう一度お試しください。");
         }
       };
-      panel.append(node("h2", "編集者アカウント"), node("p", "ログインしました。編集機能は準備中です。"), logout);
+      const status = node("p", "担当コンテンツを読み込み中…");
+      status.setAttribute("role", "status");
+      panel.append(node("h2", "担当コンテンツ"), logout, status);
+      api("/api/cms/catalog").then(({ sections }) => {
+        status.textContent = sections.some(({ items }) => items.length)
+          ? "担当範囲の公開コンテンツです。"
+          : "担当範囲に表示できる情報がありません。";
+        for (const { label, items } of sections) {
+          const section = node("section");
+          const list = node("ul");
+          for (const item of items) list.append(node("li", item.title || "名称未登録"));
+          section.append(node("h3", label), list);
+          panel.append(section);
+        }
+      }).catch(() => { status.textContent = "担当コンテンツを取得できませんでした。"; });
       $("#app").replaceChildren(panel);
       return;
     }
@@ -1541,11 +1555,34 @@ async function memberSettings() {
   disabled.type = "checkbox";
   const disabledLabel = node("label", "招待を取り消す・アカウントを無効化する");
   disabledLabel.prepend(disabled);
+  const directPublish = node("input");
+  directPublish.type = "checkbox";
+  const publishLabel = node("label", "直接公開の権限を付与する（公開機能の導入後に適用）");
+  publishLabel.prepend(directPublish);
+  function scopeChoices(title, options) {
+    const group = node("fieldset");
+    group.append(node("legend", title));
+    const inputs = new Map(options.map(([value, label]) => {
+      const input = node("input");
+      input.type = "checkbox";
+      const field = node("label", label);
+      field.prepend(input);
+      group.append(field);
+      return [value, input];
+    }));
+    return {
+      group,
+      read: () => [...inputs].filter(([, input]) => input.checked).map(([value]) => value),
+      fill: (values) => { for (const [value, input] of inputs) input.checked = values?.includes(value) ?? false; },
+    };
+  }
+  let scopeControls;
   const submit = node("button", "招待・権限を保存");
   const status = node("p");
   status.setAttribute("role", "status");
   const list = node("ul");
-  form.append(emailLabel, roleLabel, disabledLabel, submit);
+  form.append(emailLabel, roleLabel, disabledLabel, publishLabel, submit);
+  submit.disabled = true;
   panel.append(form, status, list);
   async function refresh() {
     const { members } = await api("/api/members");
@@ -1559,6 +1596,8 @@ async function memberSettings() {
         email.value = member.email || "";
         role.value = member.role;
         disabled.checked = member.disabled;
+        directPublish.checked = member.directPublish;
+        for (const [key, control] of Object.entries(scopeControls)) control.fill(member.scope?.[key]);
         email.focus();
       };
       row.append(edit, node("span", " " + state + "・" + (member.role === "editor" ? "編集者" : "閲覧者")));
@@ -1569,7 +1608,11 @@ async function memberSettings() {
     event.preventDefault();
     submit.disabled = true;
     try {
-      await api("/api/members", "POST", { email: email.value, role: role.value, disabled: disabled.checked });
+      await api("/api/members", "POST", {
+        email: email.value, role: role.value, disabled: disabled.checked,
+        directPublish: directPublish.checked,
+        scope: Object.fromEntries(Object.entries(scopeControls).map(([key, control]) => [key, control.read()])),
+      });
       status.textContent = "保存しました。対象アカウントの既存セッションは失効します。";
       await refresh();
     } catch {
@@ -1578,8 +1621,22 @@ async function memberSettings() {
       submit.disabled = false;
     }
   };
-  try { await refresh(); }
-  catch { status.textContent = "編集者一覧を取得できませんでした。"; }
+  try {
+    const { models } = await api("/api/masters");
+    scopeControls = {
+      organizations: scopeChoices("担当事務所", models.talents.organizations.map(({ id, name }) => [id, name])),
+      groups: scopeChoices("担当グループ", models.catalog.groups.filter((group) => group.visibility === "public").map(({ id, name }) => [id, name])),
+      categories: scopeChoices("担当カテゴリ", [
+        ["talents", "VTuber"], ["anniversaries", "記念日"], ["events", "イベント"],
+        ["music", "音楽・歌枠"], ["goods", "グッズ"],
+      ]),
+    };
+    for (const control of Object.values(scopeControls)) form.insertBefore(control.group, submit);
+    await refresh();
+    submit.disabled = false;
+  } catch {
+    status.textContent = "編集者一覧または担当範囲を取得できませんでした。";
+  }
 }
 const oldScreen = screen;
 screen = function () {

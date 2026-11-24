@@ -1,0 +1,127 @@
+import { fail } from "./security.mjs";
+import { contentTypes } from "./content-definitions.mjs";
+
+const types = {
+  ...contentTypes,
+  talent: { file: "talents", list: "talents", category: "talents" },
+  group: { file: "catalog", list: "groups" },
+};
+const categories = new Set(["talents", ...Object.values(contentTypes).map((type) => type.category)]);
+
+export function normalizeScope(input = {}) {
+  if (!input || typeof input !== "object" || Array.isArray(input))
+    fail(400, "invalid_member_scope");
+  const list = (name, allowed) => {
+    const values = input[name] ?? [];
+    if (!Array.isArray(values) || values.length > 100 || values.some((value) => !allowed(value)))
+      fail(400, "invalid_member_scope");
+    return [...new Set(values)];
+  };
+  return {
+    organizations: list("organizations", (value) => typeof value === "string" && /^org-\d{6}$/.test(value)),
+    groups: list("groups", (value) => typeof value === "string" && /^group-\d{6}$/.test(value)),
+    categories: list("categories", (value) => categories.has(value)),
+  };
+}
+
+const references = {
+  talentId: "talent", talentIds: "talent", formerTalentIds: "talent",
+  groupId: "group", groupIds: "group",
+  productId: "product", campaignId: "campaign",
+  songId: "song", karaokeId: "karaoke", youtubeId: "video", videoIds: "video",
+};
+
+export function cmsPermissions(models, member) {
+  const scope = normalizeScope(member.scope);
+  const managed = new Set(scope.organizations);
+  const groups = new Set(scope.groups);
+  const byType = Object.fromEntries(Object.entries(types).map(([name, type]) => [
+    name,
+    new Map(models[type.file][type.list].map((row) => [row[type.field || "id"], row])),
+  ]));
+  const memberGroups = models.catalog.groups.filter((group) => group.visibility === "public");
+
+  function resolve(entity, row, seen) {
+    if (row.visibility !== "public") return { allowed: false, anchored: false };
+    if (seen.has(row)) return { allowed: true, anchored: false };
+    seen.add(row);
+    let anchored = false;
+    if (entity === "talent") {
+      const current = row.affiliations.filter((affiliation) => affiliation.status === "current");
+      if (current.length > 1 && !current.every((affiliation) => managed.has(affiliation.organizationId)))
+        return { allowed: false, anchored: false };
+      anchored = current.some((affiliation) => managed.has(affiliation.organizationId)) ||
+        memberGroups.some((group) => groups.has(group.id) && group.talentIds.includes(row.id));
+      return { allowed: anchored, anchored };
+    }
+    if (entity === "group" && groups.has(row.id)) anchored = true;
+    if (entity === "video") {
+      const owners = [...byType.talent.values()].filter((person) => person.accounts.some(
+        (account) => account.service === "youtube" && account.accountId === row.channelId,
+      ));
+      if (owners.length !== 1) return { allowed: false, anchored: false };
+      return resolve("talent", owners[0], seen);
+    }
+
+    function visit(value) {
+      if (!value || typeof value !== "object") return true;
+      return Object.entries(value).every(([key, item]) => {
+        if (item === null) return true;
+        if (["organizationId", "organizationIds", "organizerIds", "relatedOrganizationIds"].includes(key)) {
+          const ids = Array.isArray(item) ? item : [item];
+          if (ids.length) anchored = true;
+          return ids.every((id) => managed.has(id) || (
+            entity === "group" && groups.has(row.id) && row.organizationId === id
+          ));
+        }
+        const target = references[key];
+        if (!target || (entity === "video" && key === "youtubeId")) return visit(item);
+        return (Array.isArray(item) ? item : [item]).every((id) => {
+          const related = byType[target].get(id);
+          if (!related) return false;
+          const result = resolve(target, related, seen);
+          anchored ||= result.anchored;
+          return result.allowed;
+        });
+      });
+    }
+
+    const allowed = visit(row);
+    return { allowed, anchored };
+  }
+
+  function canRead(entity, row) {
+    if (!row || !scope.categories.includes(types[entity]?.category)) return false;
+    const result = resolve(entity, row, new Set());
+    return result.allowed && result.anchored;
+  }
+
+  function assertChange(entity, before, after, { publish = false } = {}) {
+    if (member.role !== "editor" || (publish && member.directPublish !== true) ||
+        !after || (before && !canRead(entity, before)) || !canRead(entity, after))
+      fail(403, "cms_scope_denied");
+    // Membership and publication are managed by the owner. New talents require
+    // a separate creation policy because the association grants future access.
+    if (entity === "talent" && (!before ||
+        JSON.stringify(before.affiliations) !== JSON.stringify(after.affiliations)))
+      fail(403, "cms_scope_denied");
+  }
+
+  return { canRead, assertChange };
+}
+
+export function scopedCatalog(models, member) {
+  const permissions = cmsPermissions(models, member);
+  return ["talent", "anniversary", "event", "song", "musicVideo", "karaoke", "product"].map((entity) => {
+    const type = types[entity];
+    return {
+      category: type.category,
+      label: type.label || "VTuber",
+      items: models[type.file][type.list].filter((row) => permissions.canRead(entity, row)).map((row) => ({
+        id: row.id,
+        title: row.displayName || row.title,
+        description: typeof row.description === "string" ? row.description : "",
+      })),
+    };
+  }).filter(({ category }) => member.scope?.categories.includes(category));
+}

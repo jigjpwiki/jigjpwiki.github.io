@@ -1,3 +1,5 @@
+import { createCmsReader } from "./cms-read.mjs";
+import { normalizeScope, scopedCatalog } from "./cms-scope.mjs";
 import { googleAuth, googleEnabled, emailKey } from "./google.mjs";
 import {
   Failure,
@@ -46,6 +48,7 @@ export class Admin {
     this.state = state;
     this.env = env;
     this.transport = env.__testFetch || ((...args) => fetch(...args));
+    this.cmsSnapshot = createCmsReader(this.transport);
     if (env.__testStore) this.store = env.__testStore;
     else {
       state.storage.sql.exec(
@@ -225,6 +228,13 @@ export class Admin {
         fail(401, "login_required");
       if (url.pathname === "/api/me" && request.method === "GET")
         return json({ id: session.id, role: member.role, provider: "google", csrf: session.csrf, expires: session.expires });
+      if (url.pathname === "/api/cms/catalog" && request.method === "GET") {
+        const models = await this.cmsSnapshot();
+        // A role or grant can change while the remote snapshot is loading.
+        const current = await this.store.get(session.memberKey);
+        if (entry !== current || !googleEnabled(this.env)) fail(401, "login_required");
+        return json({ sections: scopedCatalog(models, member) });
+      }
       fail(403, "google_route_not_enabled");
     }
     const github = new GitHub(
@@ -252,8 +262,8 @@ export class Admin {
     if (url.pathname === "/api/members" && request.method === "GET") {
       const entries = await this.store.members();
       const members = await Promise.all(entries.map(async (entry) => {
-        const { email, id, role, disabled, sub, expires } = await open(entry, this.env.SESSION_KEY);
-        return { email, id, role, disabled, accepted: Boolean(sub), expires };
+        const { email, id, role, disabled, sub, expires, scope, directPublish } = await open(entry, this.env.SESSION_KEY);
+        return { email, id, role, disabled, accepted: Boolean(sub), expires, scope: normalizeScope(scope), directPublish: directPublish === true };
       }));
       return json({ members });
     }
@@ -263,6 +273,15 @@ export class Admin {
           !/^[^\s@]+@[^\s@]+$/.test(input.email) ||
           !["editor", "viewer"].includes(input.role) || typeof input.disabled !== "boolean")
         fail(400, "invalid_member");
+      const scope = normalizeScope(input.scope);
+      if (input.directPublish !== undefined && typeof input.directPublish !== "boolean")
+        fail(400, "invalid_member_scope");
+      if (scope.organizations.length || scope.groups.length) {
+        const { models } = await github.snapshot(undefined, ["talents", "catalog"]);
+        if (scope.organizations.some((id) => !models.talents.organizations.some((organization) => organization.id === id)) ||
+            scope.groups.some((id) => !models.catalog.groups.some((group) => group.id === id && group.visibility === "public")))
+          fail(400, "invalid_member_scope");
+      }
       const key = await emailKey(input.email);
       return this.atomic(async () => {
         const entry = await this.store.get(key);
@@ -273,6 +292,8 @@ export class Admin {
           id: previous?.id || crypto.randomUUID(),
           sub: previous?.sub || null,
           role: input.role,
+          scope,
+          directPublish: input.role === "editor" && input.directPublish === true,
           disabled: input.disabled,
           revision: random(),
           expires: now + 7 * 86400_000,

@@ -1,3 +1,4 @@
+import { mountCmsHistory } from "./cms-history.js";
 import { renderDraftConflicts } from "./cms-conflicts.js";
 
 const labels = {
@@ -527,6 +528,7 @@ export async function mountSimpleCms(panel, status, api) {
     form.querySelector("input")?.focus();
   }
   if (saved) await refreshDrafts();
+  panel.append(mountCmsHistory({ api, editable: catalog.editable, revision: () => revision, afterSave: refreshDrafts }));
   for (const [entity, spec] of Object.entries(categories)) {
     if ((!spec.ownerCreate || catalog.owner) && catalog.editable && catalog.categories.includes(spec.category))
       list.append(button(spec.label + "を新規登録", () => edit(entity)));

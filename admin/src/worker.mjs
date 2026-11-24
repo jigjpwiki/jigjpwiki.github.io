@@ -1,4 +1,5 @@
 import { youtubeVideoLookup } from "./cms-music.mjs";
+import { readCmsHistory, prepareAuditReversal } from "./cms-history.mjs";
 import { inspectDraftConflicts } from "./cms-conflicts.mjs";
 import { publicationPlan } from "./cms-publish.mjs";
 import { CmsJobs } from "./cms-jobs.mjs";
@@ -262,7 +263,7 @@ export class Admin {
         if (request.method === "POST") return json({ publication: await jobs.enqueue(session, await body(request, 4096)) }, 202);
       }
     }
-    const cmsRoutes = ["/api/cms/catalog", "/api/cms/detail", "/api/cms/draft", "/api/cms/draft/conflicts"];
+    const cmsRoutes = ["/api/cms/catalog", "/api/cms/detail", "/api/cms/draft", "/api/cms/draft/conflicts", "/api/cms/history"];
     if (cmsRoutes.includes(url.pathname)) {
       await this.atomic(async () => {
         const key = "cms-rate:" + sid;
@@ -302,6 +303,45 @@ export class Admin {
       }
       if (url.pathname === "/api/cms/detail" && request.method === "GET")
         return json({ sha: snapshot.sha, fields: draftDetails(snapshot, member, url.searchParams.get("entity"), url.searchParams.get("id")) });
+      if (url.pathname === "/api/cms/history") {
+        const context = { snapshot, member, github, transport: this.transport, repository };
+        if (request.method === "GET") {
+          const batchId = url.searchParams.get("batchId");
+          const result = await readCmsHistory({
+            ...context, batchId, offset: Number(url.searchParams.get("offset") ?? 0),
+          });
+          await requireCurrentGrant();
+          if (batchId && !result.summary.operations.length) fail(403, "cms_scope_denied");
+          return json(batchId ? { ...result.summary, sha: snapshot.sha } : result);
+        }
+        if (request.method === "POST") {
+          if (member.role !== "editor") fail(403, "cms_scope_denied");
+          const input = await body(request, 1024);
+          if (typeof input?.batchId !== "string" || typeof input.operationId !== "string" || typeof input.recordId !== "string")
+            fail(400, "cms_history_invalid");
+          if (input.sha !== snapshot.sha) fail(409, "main_changed_reload");
+          const { audit } = await readCmsHistory({ ...context, batchId: input.batchId });
+          const operation = prepareAuditReversal(snapshot, member, audit, input.batchId, input.operationId, input.recordId);
+          const job = { id: input.batchId, owner: session.id, operations: [operation],
+            createdAt: new Date().toISOString() };
+          if (google) await publicationPlan(snapshot, job, { ...member, directPublish: true }, this.cmsVideoLookup);
+          else await planSubmission(snapshot, job.operations, {
+            actor: String(session.id), batchId: await hash(job.id + snapshot.sha),
+          });
+          const workspace = new WorkspaceStore(this.store, this.env.SESSION_KEY);
+          return this.atomic(async () => {
+            await requireCurrentGrant();
+            const previous = await workspace.get(session.id);
+            if (previous?.operations.some(({ entity, id }) => entity === operation.entity && id === operation.id))
+              fail(409, "cms_history_existing_draft");
+            const batch = writeDraft(previous?.operations || [], undefined, [operation]);
+            const saved = await workspace.save(session.id, {
+              protocol: 1, revision: input.revision, operations: batch.operations,
+            });
+            return json({ revision: saved.revision, draftId: batch.id });
+          });
+        }
+      }
       if (url.pathname === "/api/cms/draft/conflicts") {
         const workspace = new WorkspaceStore(this.store, this.env.SESSION_KEY);
         const saved = await workspace.get(session.id);
@@ -322,7 +362,7 @@ export class Admin {
           if (!unchanged) {
             const job = { id: input.draftId, owner: session.id, operations: changes,
               createdAt: new Date().toISOString() };
-            if (google) await publicationPlan(snapshot, job, { ...member, directPublish: true });
+            if (google) await publicationPlan(snapshot, job, { ...member, directPublish: true }, this.cmsVideoLookup);
             else await planSubmission(snapshot, changes, {
               actor: String(session.id), batchId: await hash(job.id + snapshot.sha),
             });

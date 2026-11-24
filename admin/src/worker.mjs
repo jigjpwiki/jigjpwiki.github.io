@@ -1,6 +1,6 @@
 import { CmsJobs } from "./cms-jobs.mjs";
 import { publishingEnabled } from "./github-app.mjs";
-import { prepareDraft, draftDetails, draftInput, draftGroups, writeDraft } from "./cms-draft.mjs";
+import { prepareDraft, draftDetails, draftInput, draftGroups, writeDraft, draftConflict } from "./cms-draft.mjs";
 import { cmsPermissions } from "./cms-scope.mjs";
 import { createCmsReader } from "./cms-read.mjs";
 import { normalizeScope, scopedCatalog } from "./cms-scope.mjs";
@@ -274,8 +274,7 @@ export class Admin {
               if (!input) continue;
               try {
                 const current = await prepareDraft(snapshot, member, { ...input, sha: snapshot.sha });
-                const conflict = current.length !== group.length || current.some((op, index) =>
-                  op.id !== group[index].id || JSON.stringify(op.before) !== JSON.stringify(group[index].before));
+                const conflict = draftConflict(draftId, group, current);
                 drafts.push({ draftId, conflict, input: { ...input, sha: snapshot.sha } });
               } catch (error) {
                 if (!(error instanceof Failure)) throw error;

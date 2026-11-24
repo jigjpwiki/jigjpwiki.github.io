@@ -40,7 +40,7 @@ test("saving separate drafts retains both batches and discarding one retains the
   assert.equal(groups.get(first.id)[0].value.title, event.title);
   const kept = writeDraft(second.operations, first.id);
   assert.deepEqual([...draftGroups(kept.operations).keys()], [second.id]);
-  const changed = first.operations.map((op) => ({ ...op, before: { title: "別の編集者による変更" } }));
+  const changed = first.operations.map((op) => ({ ...op, key: "cms-event", before: { title: "別の編集者による変更" } }));
   assert.throws(() => writeDraft(first.operations, first.id, changed), /main_changed_reload/);
 });
 
@@ -106,4 +106,26 @@ test("campaign publication checks the original campaign before adding a product"
       await assert.rejects(publicationPlan({ ...snapshot, models }, job, editor), /cms_scope_denied/);
     }
   }
+});
+
+test("draft batches can reorder and drop child operations without replacing their root", async () => {
+  const { writeDraft, draftGroups } = await import("../src/cms-draft.mjs");
+  const input = { sha: snapshot.sha, entity: "product", talent: "tal-000010",
+    title: "商品試験", image: "", identityUrl: "https://example.com/product",
+    url: "https://example.com/sale", price: "1200", campaignTitle: "試験企画" };
+  const operations = await prepareDraft(snapshot, member, input);
+  const saved = writeDraft([], undefined, operations);
+  const reordered = writeDraft(saved.operations, saved.id, [...operations].reverse());
+  assert.equal(draftGroups(reordered.operations).get(saved.id)[0].entity, "product");
+  const standalone = await prepareDraft(snapshot, member, { ...input, url: "", campaignTitle: "" });
+  assert.equal(writeDraft(reordered.operations, saved.id, standalone).operations.length, 1);
+});
+
+test("an existing campaign title is editable only inside the assigned scope", async () => {
+  const input = { sha: snapshot.sha, entity: "campaign", id: "campaign-000001", title: "新しい企画名" };
+  const edits = await prepareDraft(snapshot, member, input);
+  assert.equal(draftInput({ operations: edits }).title, input.title);
+  await assert.rejects(prepareDraft(snapshot, { ...member, scope: {
+    organizations: ["org-000001"], categories: ["goods"],
+  } }, input), /cms_scope_denied/);
 });

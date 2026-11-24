@@ -8,6 +8,7 @@ const labels = {
   identityUrl: ["公式商品情報URL", "url"], url: ["販売ページURL", "url"], price: ["価格（円）", "number"],
 };
 const categories = {
+  campaign: { category: "goods", label: "キャンペーン", fields: ["title"], existingOnly: true },
   anniversary: { category: "anniversaries", label: "記念日", fields: ["title", "kind", "month", "day", "year"] },
   event: { category: "events", label: "イベント", fields: ["title", "announcementUrl", "summary", "venue", "starts", "ends", "format", "streamUrl", "fee"] },
   product: { category: "goods", label: "グッズ", fields: ["title", "image", "identityUrl", "url", "price", "startsAt", "endsAt"] },
@@ -244,7 +245,7 @@ export async function mountSimpleCms(panel, status, api) {
   }
   if (saved) await refreshDrafts();
   for (const [entity, spec] of Object.entries(categories)) {
-    if (catalog.editable && catalog.categories.includes(spec.category))
+    if (!spec.existingOnly && catalog.editable && catalog.categories.includes(spec.category))
       list.append(button(spec.label + "を新規登録", () => edit(entity)));
   }
   const tools = el("div");

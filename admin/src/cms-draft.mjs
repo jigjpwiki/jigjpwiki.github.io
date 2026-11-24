@@ -2,10 +2,11 @@ import { contentPreview, resolveRefs } from "./content-plan.mjs";
 import { cmsPermissions, assertExistingCampaign } from "./cms-scope.mjs";
 import { fail, hash } from "./security.mjs";
 
-export const draftTypes = { event: ["events", "events"], product: ["goods", "products"], anniversary: ["anniversaries", "events"] };
+export const draftTypes = { event: ["events", "events"], product: ["goods", "products"], anniversary: ["anniversaries", "events"], campaign: ["goods", "campaigns"] };
 const unknown = { precision: "unknown", value: null };
 const fields = {
   anniversary: ["title"],
+  campaign: ["title"],
   event: ["title", "venue", "announcementUrl", "summary"],
   product: ["title", "image", "identityUrl"],
 };
@@ -18,6 +19,7 @@ export async function prepareDraft(snapshot, member, input) {
   const before = id ? snapshot.models[file][list].find((row) => row.id === id) : null;
   const access = cmsPermissions(snapshot.models, member);
   if (id && !access.canRead(entity, before)) fail(403, "cms_scope_denied");
+  if (entity === "campaign" && !before) fail(400, "cms_invalid_input");
   const value = structuredClone(before || (entity === "event" ? {
     type: "other", timing: "unknown", starts: unknown, ends: unknown,
     organizerIds: [], relatedOrganizationIds: [input.organization],
@@ -188,13 +190,25 @@ export function draftInput(workspace) {
 export function draftGroups(operations = []) {
   const groups = new Map();
   for (const op of operations) {
-    const match = /^cms-(event|product|sale|anniversary|campaign)(?:-([a-f0-9]{24}))?$/.exec(op.key);
+    const match = /^cms-([a-z][a-z0-9-]*?)-([a-f0-9]{24})$/.exec(op.key) ||
+      /^cms-(event|product|sale|anniversary|campaign)$/.exec(op.key);
     const key = match?.[2] || (match && (match[1] === "event" ? "legacy-event" : "legacy-product"));
     if (!key) continue;
     if (!groups.has(key)) groups.set(key, []);
     groups.get(key).push(op);
   }
   return groups;
+}
+
+export function draftConflict(draftId, previous, replacement) {
+  const suffix = draftId.startsWith("legacy-") ? "" : "-" + draftId;
+  const saved = new Map(previous.map((op) => [op.key, op]));
+  return replacement.some((op) => {
+    const old = saved.get(op.key + suffix);
+    return old &&
+      (old.entity !== op.entity || old.id !== op.id ||
+       JSON.stringify(old.before) !== JSON.stringify(op.before));
+  });
 }
 
 export function writeDraft(operations, draftId, replacement) {
@@ -205,12 +219,14 @@ export function writeDraft(operations, draftId, replacement) {
   )?.[0]);
   if (draftId && !groups.has(draftId)) fail(409, "workspace_revision_conflict");
   const previous = groups.get(existing);
-  if (previous && primary && (previous[0].id !== primary.id || previous[0].entity !== primary.entity))
+  if (previous && primary && (!replacement.some((op) => op.entity === previous[0].entity && op.id === previous[0].id &&
+      op.key + (existing.startsWith("legacy-") ? "" : "-" + existing) === previous[0].key)))
     fail(409, "cms_draft_target_changed");
-  if (previous && primary && (previous.length > replacement.length ||
-      previous.some((op, index) => op.id !== replacement[index]?.id ||
-        JSON.stringify(op.before) !== JSON.stringify(replacement[index]?.before))))
+  if (previous && primary && draftConflict(existing, previous, replacement))
     fail(409, "main_changed_reload");
+  if (previous && primary) replacement = [...replacement].sort((a, b) =>
+    Number(b.key === previous[0].key.replace(/-[a-f0-9]{24}$/, "")) -
+    Number(a.key === previous[0].key.replace(/-[a-f0-9]{24}$/, "")));
   const id = existing || crypto.randomUUID().replaceAll("-", "").slice(0, 24);
   const suffix = id.startsWith("legacy-") ? "" : "-" + id;
   const names = new Map((replacement || []).map((op) => [op.key, "@" + op.key + suffix]));

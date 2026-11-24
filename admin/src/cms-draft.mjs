@@ -1,12 +1,14 @@
+import { collectedVideo, assertSongEdit } from "./cms-music.mjs";
 import { youtubeId } from "../public/content-utils.js";
 import { planSubmission } from "./submission-plan.mjs";
 import { contentPreview, resolveRefs } from "./content-plan.mjs";
 import { cmsPermissions, assertExistingCampaign } from "./cms-scope.mjs";
 import { fail, hash } from "./security.mjs";
 
-export const draftTypes = { musicVideo: ["music", "musicVideos"], talent: ["talents", "talents"], event: ["events", "events"], product: ["goods", "products"], anniversary: ["anniversaries", "events"], campaign: ["goods", "campaigns"] };
+export const draftTypes = { song: ["music", "songs"], musicVideo: ["music", "musicVideos"], talent: ["talents", "talents"], event: ["events", "events"], product: ["goods", "products"], anniversary: ["anniversaries", "events"], campaign: ["goods", "campaigns"] };
 const unknown = { precision: "unknown", value: null };
 const fields = {
+  song: ["title"],
   musicVideo: ["rawSongTitle"],
   talent: ["displayName"],
   anniversary: ["title"],
@@ -64,9 +66,8 @@ export async function prepareDraft(snapshot, member, input) {
       catch { fail(400, "cms_invalid_input"); }
       const slug = service === "youtube" ? /^\/channel\/(UC[\w-]{22})$/.exec(url.pathname)?.[1]
         : /^\/([a-zA-Z0-9_]+)$/.exec(url.pathname)?.[1];
-      // Channel IDs participate in public association and are recorded as anchors only
-      // on registration. Existing account associations require the owner workflow.
-      if (service === "youtube" && slug && before) fail(403, "cms_identity_anchor");
+      // A channel URL alone does not prove ownership.
+      if (service === "youtube" && slug) fail(403, "cms_identity_anchor");
       const account = { service, accountId: slug ?? null, url: supplied };
       if (old) value.accounts[index] = account;
       else value.accounts.push(account);
@@ -87,7 +88,7 @@ export async function prepareDraft(snapshot, member, input) {
     for (const row of plan.impact.records) after.assertChange(entity, row.before, row.value);
     return [operation];
   }
-  if (entity === "campaign" && !before) fail(400, "cms_invalid_input");
+  if (["campaign", "song"].includes(entity) && !before) fail(400, "cms_invalid_input");
   const value = structuredClone(before || (entity === "event" ? {
     type: "other", timing: "unknown", starts: unknown, ends: unknown,
     organizerIds: [], relatedOrganizationIds: [input.organization],
@@ -97,6 +98,11 @@ export async function prepareDraft(snapshot, member, input) {
   } : { talentIds: [input.talent], groupIds: [], visibility: "public",
     ...(entity === "anniversary" ? { recursYearly: true, countYears: false } : {}),
   }));
+  if (entity === "song") {
+    if (typeof input.artists !== "string") fail(400, "cms_invalid_input");
+    const names = [...new Set(input.artists.split("\n").map((name) => name.trim()).filter(Boolean))];
+    value.originalArtists = names.length ? names : null;
+  }
   if (entity === "musicVideo") {
     if (!before) delete value.groupIds;
     try { value.youtubeId = youtubeId(input.videoUrl); }
@@ -151,6 +157,23 @@ export async function prepareDraft(snapshot, member, input) {
   }
   const operation = { key: "cms-" + entity.toLowerCase(), entity, ...(before ? { id } : {}), value };
   const operations = [operation];
+  if (entity === "musicVideo") {
+    if (!snapshot.models.media.videos.some((row) => row.youtubeId === value.youtubeId)) {
+      const video = collectedVideo(snapshot.models, value.youtubeId);
+      if (!access.canRead("video", video)) fail(403, "cms_scope_denied");
+      operations.push({ key: "cms-media", entity: "video", value: video });
+    }
+    if (input.newSongTitle || input.newSongUrl || input.newSongArtist) {
+      if (value.songId || ![input.newSongTitle, input.newSongUrl, input.newSongArtist].every(
+        (part) => typeof part === "string" && part.trim(),
+      )) fail(400, "cms_invalid_input");
+      operations.push({ key: "cms-new-song", entity: "song", value: {
+        title: input.newSongTitle.trim(), originalArtists: [input.newSongArtist.trim()],
+        identityUrl: input.newSongUrl.trim(), aliases: [], readings: [], visibility: "public",
+      } });
+      value.songId = "@cms-new-song";
+    }
+  }
   let oldOffer;
   if (entity === "product") {
     const offers = snapshot.models.goods.offers.filter((offer) => offer.productId === id);
@@ -200,12 +223,13 @@ export async function prepareDraft(snapshot, member, input) {
       const next = cmsPermissions(afterModels, member);
       for (const { op, old, record } of changes) {
         if (old && !previous.canRead(op.entity, old)) fail(403, "cms_scope_denied");
-        next.assertChange(op.entity, null, record);
+        if (op.entity === "song") assertSongEdit(afterModels, next, record.id);
+        else next.assertChange(op.entity, null, record);
       }
     },
   });
   return operations.map((op) => ({
-    ...op, before: op.entity === "offer" ? oldOffer || null : before, baseCommit: snapshot.sha,
+    ...op, before: op.entity === "offer" ? oldOffer || null : op === operation ? before : null, baseCommit: snapshot.sha,
   }));
 }
 
@@ -248,6 +272,7 @@ export function draftDetails(snapshot, member, entity, id) {
   const record = snapshot.models[file][list].find((row) => row.id === id);
   if (!cmsPermissions(snapshot.models, member).canRead(entity, record)) fail(403, "cms_scope_denied");
   const details = Object.fromEntries(fields[entity].map((key) => [key, record[key] ?? ""]));
+  if (entity === "song") details.artists = (record.originalArtists || []).join("\n");
   if (entity === "musicVideo") Object.assign(details, musicVideoFields(record));
   if (entity === "talent") Object.assign(details, talentFields(record));
   if (entity === "anniversary") Object.assign(details, anniversaryFields(record));
@@ -267,6 +292,7 @@ export function draftDetails(snapshot, member, entity, id) {
 
 export function draftInput(workspace) {
   const [op, sale] = workspace?.operations || [];
+  const song = workspace?.operations.find((row) => row.entity === "song");
   const campaign = workspace?.operations.find((row) => row.entity === "campaign");
   if (!op || !Object.hasOwn(draftTypes, op.entity)) return null;
   return {
@@ -274,7 +300,12 @@ export function draftInput(workspace) {
     organization: op.value.relatedOrganizationIds?.[0],
     talent: op.value.talentIds?.[0],
     ...Object.fromEntries(fields[op.entity].map((key) => [key, op.value[key] ?? ""])),
-    ...(op.entity === "musicVideo" ? musicVideoFields(op.value) : {}),
+    ...(op.entity === "song" ? { artists: (op.value.originalArtists || []).join("\n") } : {}),
+    ...(op.entity === "musicVideo" ? {
+      ...musicVideoFields(op.value),
+      ...(song ? { songId: "", newSongTitle: song.value.title, newSongUrl: song.value.identityUrl,
+        newSongArtist: song.value.originalArtists[0] } : {}),
+    } : {}),
     ...(op.entity === "talent" ? talentFields(op.value) : {}),
     ...(op.entity === "anniversary" ? anniversaryFields(op.value) : {}),
     ...(op.entity === "event" ? eventFields(op.value) : {}),

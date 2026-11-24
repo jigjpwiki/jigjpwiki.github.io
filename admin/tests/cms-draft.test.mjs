@@ -159,3 +159,25 @@ test("a song video can reuse scoped media but rejects a mismatched registered ch
   await assert.rejects(prepareDraft({ ...snapshot, models }, editor, input), /cms_scope_denied/);
   await assert.rejects(publicationPlan({ ...snapshot, models }, job, publisher), /cms_scope_denied/);
 });
+
+test("collected media, new work and song video remain one scoped publication batch", async () => {
+  const { publicationPlan } = await import("../src/cms-publish.mjs");
+  const { writeDraft, draftGroups } = await import("../src/cms-draft.mjs");
+  const models = structuredClone(fixture);
+  const original = models.music.musicVideos[0];
+  const channel = models.media.videos.find((row) => row.youtubeId === original.youtubeId).channelId;
+  const videoId = "fixture-123";
+  models.youtube = [{ videoId, title: "収録済み動画", youtubeid: channel }];
+  const editor = { ...member, directPublish: true, scope: { ...member.scope, categories: ["music"] } };
+  const input = { sha: snapshot.sha, entity: "musicVideo", talent: original.talentIds[0],
+    rawSongTitle: "動画の曲名", videoKind: "cover", videoUrl: "https://youtu.be/" + videoId,
+    newSongTitle: "試験用新曲", newSongArtist: "試験用作曲者", newSongUrl: "https://example.com/original",
+  };
+  const snap = { ...snapshot, models };
+  const stored = writeDraft([], undefined, await prepareDraft(snap, editor, input));
+  assert.equal(draftInput({ operations: draftGroups(stored.operations).get(stored.id) }).newSongTitle, input.newSongTitle);
+  const job = { id: "bundle-test", owner: "8ebf4fde-85a4-4d34-9feb-d1ba5c4de026", operations: stored.operations };
+  const { plan } = await publicationPlan(snap, job, editor);
+  assert.equal(plan.files.music.musicVideos.at(-1).songId, plan.files.music.songs.at(-1).id);
+  assert.equal(plan.files.media.videos.at(-1).channelId, channel);
+});

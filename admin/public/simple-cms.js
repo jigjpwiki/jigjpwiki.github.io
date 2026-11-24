@@ -1,4 +1,5 @@
 const labels = {
+  artists: ["原曲アーティスト（1行に1名）", "textarea"],
   rawSongTitle: ["動画に記載された曲名", "text"], videoUrl: ["YouTube動画URL", "url"], videoKind: ["動画の種類", "select"],
   aliasNames: ["別名（1行に1件）", "textarea"], youtubeUrl: ["YouTubeチャンネルURL", "url"], xUrl: ["XプロフィールURL", "url"],
   displayName: ["表示名", "text"], activity: ["活動状態", "select"], officialProfileUrl: ["公式プロフィールURL", "url"],
@@ -11,6 +12,7 @@ const labels = {
   identityUrl: ["公式商品情報URL", "url"], url: ["販売ページURL", "url"], price: ["価格（円）", "number"],
 };
 const categories = {
+  song: { category: "music", label: "楽曲", fields: ["title", "artists"], existingOnly: true },
   musicVideo: { category: "music", label: "歌動画", fields: ["rawSongTitle", "videoUrl", "videoKind"] },
   talent: { category: "talents", label: "VTuber", fields: ["displayName", "image", "activity", "officialProfileUrl", "aliasNames", "youtubeUrl", "xUrl"] },
   campaign: { category: "goods", label: "キャンペーン", fields: ["title"], existingOnly: true },
@@ -216,6 +218,20 @@ export async function mountSimpleCms(panel, status, api) {
       add("songId", "既存の楽曲", select);
       updateSongs(input.songId);
       search.oninput = () => updateSongs(select.value);
+      const newSong = el("details");
+      newSong.append(el("summary", "新しい楽曲を同時に登録"));
+      newSong.open = Boolean(input.newSongTitle);
+      for (const [key, text, type] of [
+        ["newSongTitle", "原曲の曲名", "text"],
+        ["newSongArtist", "原曲アーティスト", "text"],
+        ["newSongUrl", "原曲の公式URL", "url"],
+      ]) {
+        const control = el("input");
+        control.type = type;
+        add(key, text, control);
+        newSong.append(control.parentElement);
+      }
+      form.append(newSong);
     }
     if (entity === "event") {
       const performers = el("fieldset");

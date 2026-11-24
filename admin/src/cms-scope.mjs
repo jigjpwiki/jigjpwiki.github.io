@@ -1,3 +1,4 @@
+import { canEditSong } from "./cms-music.mjs";
 import { fail } from "./security.mjs";
 import { contentTypes } from "./content-definitions.mjs";
 
@@ -103,6 +104,7 @@ export function cmsPermissions(models, member) {
 
   function canRead(entity, row) {
     if (!row || !scope.categories.includes(types[entity]?.category)) return false;
+    if (entity === "song") return row.visibility === "public" && canEditSong(models, { canRead }, row.id);
     const result = resolve(entity, row, new Set());
     return result.allowed && result.anchored;
   }

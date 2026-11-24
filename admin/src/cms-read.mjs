@@ -1,7 +1,7 @@
 import { fail } from "./security.mjs";
 import { repository } from "./github.mjs";
 
-const files = ["talents", "catalog", "anniversaries", "music", "media", "karaoke", "events", "goods", "talent-id-registry", "catalog-id-registry", "feature-id-registry", "youtube_streamers", "twitch_streamers"];
+const files = ["talents", "catalog", "anniversaries", "music", "media", "karaoke", "events", "goods", "talent-id-registry", "catalog-id-registry", "feature-id-registry", "youtube_streamers", "twitch_streamers", "youtube"];
 
 export function createCmsReader(transport) {
   let cached;

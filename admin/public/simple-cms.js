@@ -1,4 +1,6 @@
 const labels = {
+  rawSongTitle: ["動画に記載された曲名", "text"], videoUrl: ["YouTube動画URL", "url"], videoKind: ["動画の種類", "select"],
+  aliasNames: ["別名（1行に1件）", "textarea"], youtubeUrl: ["YouTubeチャンネルURL", "url"], xUrl: ["XプロフィールURL", "url"],
   displayName: ["表示名", "text"], activity: ["活動状態", "select"], officialProfileUrl: ["公式プロフィールURL", "url"],
   startsAt: ["販売開始（日本時間）", "datetime-local"], endsAt: ["販売終了（日本時間）", "datetime-local"],
   month: ["月", "number"], day: ["日", "number"], year: ["年（任意）", "number"], kind: ["記念日の種類", "select"],
@@ -9,7 +11,8 @@ const labels = {
   identityUrl: ["公式商品情報URL", "url"], url: ["販売ページURL", "url"], price: ["価格（円）", "number"],
 };
 const categories = {
-  talent: { category: "talents", label: "VTuber", fields: ["displayName", "image", "activity", "officialProfileUrl"] },
+  musicVideo: { category: "music", label: "歌動画", fields: ["rawSongTitle", "videoUrl", "videoKind"] },
+  talent: { category: "talents", label: "VTuber", fields: ["displayName", "image", "activity", "officialProfileUrl", "aliasNames", "youtubeUrl", "xUrl"] },
   campaign: { category: "goods", label: "キャンペーン", fields: ["title"], existingOnly: true },
   anniversary: { category: "anniversaries", label: "記念日", fields: ["title", "kind", "month", "day", "year"] },
   event: { category: "events", label: "イベント", fields: ["title", "announcementUrl", "summary", "venue", "starts", "ends", "format", "streamUrl", "fee"] },
@@ -47,7 +50,6 @@ export async function mountSimpleCms(panel, status, api) {
     const result = await api("/api/cms/publication");
     publication = result.publication;
     const labels = {
-  displayName: ["表示名", "text"], activity: ["活動状態", "select"], officialProfileUrl: ["公式プロフィールURL", "url"],
       queued: "公開の順番待ち", candidate: "変更候補を作成中",
       checking: "検証中", promoting: "反映中", pages: "公開サイトへの反映待ち",
       published: "公開サイトへの反映を確認しました", failed: "公開できませんでした。下書きは保存されています。",
@@ -118,12 +120,12 @@ export async function mountSimpleCms(panel, status, api) {
         checkbox.checked = selectedDrafts.has(draftId);
         checkbox.onchange = () => checkbox.checked ? selectedDrafts.add(draftId) : selectedDrafts.delete(draftId);
         const label = el("label", "公開する");
-        checkbox.setAttribute("aria-label", (input.title || input.displayName) + "を公開する");
+        checkbox.setAttribute("aria-label", (input.title || input.displayName || input.rawSongTitle) + "を公開する");
         label.prepend(checkbox);
         row.append(label);
       }
       if (conflict) row.append(el("p", (input?.title || "下書き") + "：元の情報が変更されたか、現在の担当範囲外です。"));
-      else row.append(button(input.title || input.displayName, () => edit(input.entity, input, draftId)));
+      else row.append(button(input.title || input.displayName || input.rawSongTitle, () => edit(input.entity, input, draftId)));
       row.append(button("この下書きを破棄", async () => {
         if (!confirm("この下書きを破棄しますか？")) return;
         try {
@@ -150,14 +152,14 @@ export async function mountSimpleCms(panel, status, api) {
       fields.set(key, control);
     }
     for (const key of spec.fields) {
-      if (entity === "talent" && input.id && key === "officialProfileUrl") continue;
+
       const [label, type] = labels[key];
       const control = el(["textarea", "select"].includes(type) ? type : "input");
-      if (type === "select") control.append(...Object.entries(key === "activity" ? { unknown: "不明", active: "活動中", hiatus: "休止中", retired: "引退", ended: "活動終了" } : key === "kind" ? { birthday: "誕生日", debut: "デビュー記念日", group: "グループ記念日", other: "その他" } : {
+      if (type === "select") control.append(...Object.entries(key === "videoKind" ? { cover: "歌ってみた", original: "オリジナル", other: "その他" } : key === "activity" ? { unknown: "不明", active: "活動中", hiatus: "休止中", retired: "引退", ended: "活動終了" } : key === "kind" ? { birthday: "誕生日", debut: "デビュー記念日", group: "グループ記念日", other: "その他" } : {
         unknown: "未定・不明", onsite: "会場開催", online: "オンライン", hybrid: "会場とオンライン",
       }).map(([value, text]) => new Option(text, value)));
       else if (type !== "textarea") control.type = type;
-      control.required = ["month", "day"].includes(key) || ["title", "displayName"].includes(key) || key === "announcementUrl" || key === "summary" || key === "identityUrl";
+      control.required = ["month", "day"].includes(key) || ["title", "displayName", "rawSongTitle", "videoUrl", "videoKind"].includes(key) || key === "announcementUrl" || key === "summary" || key === "identityUrl";
       if (key === "price") {
         control.min = "0";
         control.step = input.currency && input.currency !== "JPY" ? "any" : "1";
@@ -196,6 +198,24 @@ export async function mountSimpleCms(panel, status, api) {
       ));
       add("campaignId", "既存キャンペーン（任意）", select);
       add("campaignTitle", "新しいキャンペーン名（任意）", el("input"));
+    }
+    if (entity === "musicVideo") {
+      const search = el("input");
+      search.type = "search";
+      const label = el("label", "曲名・原曲アーティストで検索");
+      label.append(search);
+      form.append(label);
+      const select = el("select");
+      const updateSongs = (selected) => {
+        const query = search.value.trim().normalize("NFKC").toLocaleLowerCase("ja");
+        select.replaceChildren(new Option("紐づけなし", ""), ...catalog.songs.filter(({ id, name }) =>
+          id === selected || name.normalize("NFKC").toLocaleLowerCase("ja").includes(query),
+        ).map(({ id, name }) => new Option(name, id)));
+        select.value = selected || "";
+      };
+      add("songId", "既存の楽曲", select);
+      updateSongs(input.songId);
+      search.oninput = () => updateSongs(select.value);
     }
     if (entity === "event") {
       const performers = el("fieldset");

@@ -150,7 +150,7 @@ export function scopedCatalog(models, member) {
       label: type.label || "VTuber",
       items: models[type.file][type.list].filter((row) => permissions.canRead(entity, row)).map((row) => ({
         id: row.id,
-        title: row.displayName || row.title,
+        title: row.displayName || row.title || row.rawSongTitle,
         description: typeof row.description === "string" ? row.description : "",
       })),
     };

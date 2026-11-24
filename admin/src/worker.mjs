@@ -255,6 +255,10 @@ export class Admin {
           } });
           return json({
             sha: snapshot.sha, sections: scopedCatalog(models, member),
+            songs: member.scope?.categories.includes("music")
+              ? models.music.songs.filter((song) => song.visibility === "public")
+                .map(({ id, title, originalArtists }) => ({ id, name: title + (originalArtists?.length ? " / " + originalArtists.join("、") : "") }))
+              : [],
             editable: member.role === "editor", publishable: member.role === "editor" && member.directPublish === true && publishingEnabled(this.env), categories: member.scope?.categories ?? [],
             organizations: models.talents.organizations.filter((row) => member.scope?.organizations.includes(row.id)),
             people: models.talents.talents.filter((row) => access.canRead("talent", row))

@@ -1,11 +1,13 @@
+import { youtubeId } from "../public/content-utils.js";
 import { planSubmission } from "./submission-plan.mjs";
 import { contentPreview, resolveRefs } from "./content-plan.mjs";
 import { cmsPermissions, assertExistingCampaign } from "./cms-scope.mjs";
 import { fail, hash } from "./security.mjs";
 
-export const draftTypes = { talent: ["talents", "talents"], event: ["events", "events"], product: ["goods", "products"], anniversary: ["anniversaries", "events"], campaign: ["goods", "campaigns"] };
+export const draftTypes = { musicVideo: ["music", "musicVideos"], talent: ["talents", "talents"], event: ["events", "events"], product: ["goods", "products"], anniversary: ["anniversaries", "events"], campaign: ["goods", "campaigns"] };
 const unknown = { precision: "unknown", value: null };
 const fields = {
+  musicVideo: ["rawSongTitle"],
   talent: ["displayName"],
   anniversary: ["title"],
   campaign: ["title"],
@@ -31,6 +33,44 @@ export async function prepareDraft(snapshot, member, input) {
       fail(400, "cms_invalid_input");
     value.displayName = input.displayName.trim();
     value.profileImage = input.image.trim() ? { url: input.image.trim() } : null;
+    if (input.officialProfileUrl !== undefined) {
+      if (typeof input.officialProfileUrl !== "string") fail(400, "cms_invalid_input");
+      value.officialProfileUrl = input.officialProfileUrl.trim() || null;
+    }
+    if (input.aliasNames !== undefined) {
+      if (typeof input.aliasNames !== "string") fail(400, "cms_invalid_input");
+      const names = [...new Set(input.aliasNames.split("\n").map((name) => name.trim()).filter(Boolean))];
+      value.aliases = [
+        ...value.aliases.filter((alias) => alias.type !== "alias" || alias.from || alias.to),
+        ...names.filter((name) => !value.aliases.some((alias) =>
+          alias.name === name && (alias.type !== "alias" || alias.from || alias.to)))
+          .map((name) => ({ name, type: "alias", from: null, to: null })),
+      ];
+    }
+    for (const [field, service] of [["youtubeUrl", "youtube"], ["xUrl", "x"]]) {
+      if (input[field] === undefined) continue;
+      if (typeof input[field] !== "string") fail(400, "cms_invalid_input");
+      const supplied = input[field].trim();
+      const index = value.accounts.findIndex((account) => account.service === service);
+      const old = value.accounts[index];
+      if ((old?.url || "") === supplied) continue;
+      if (service === "youtube" && old?.accountId) fail(403, "cms_identity_anchor");
+      if (!supplied) {
+        if (old) value.accounts.splice(index, 1);
+        continue;
+      }
+      let url;
+      try { url = new URL(supplied); }
+      catch { fail(400, "cms_invalid_input"); }
+      const slug = service === "youtube" ? /^\/channel\/(UC[\w-]{22})$/.exec(url.pathname)?.[1]
+        : /^\/([a-zA-Z0-9_]+)$/.exec(url.pathname)?.[1];
+      // Channel IDs participate in public association and are recorded as anchors only
+      // on registration. Existing account associations require the owner workflow.
+      if (service === "youtube" && slug && before) fail(403, "cms_identity_anchor");
+      const account = { service, accountId: slug ?? null, url: supplied };
+      if (old) value.accounts[index] = account;
+      else value.accounts.push(account);
+    }
     value.activityStatus = { value: input.activity };
     if (before && input.organization && input.organization !== talentFields(before).organization) {
       const current = value.affiliations.filter(({ status }) => status === "current");
@@ -57,6 +97,16 @@ export async function prepareDraft(snapshot, member, input) {
   } : { talentIds: [input.talent], groupIds: [], visibility: "public",
     ...(entity === "anniversary" ? { recursYearly: true, countYears: false } : {}),
   }));
+  if (entity === "musicVideo") {
+    if (!before) delete value.groupIds;
+    try { value.youtubeId = youtubeId(input.videoUrl); }
+    catch { fail(400, "cms_invalid_video_url"); }
+    value.type = input.videoKind;
+    value.songId = input.songId || null;
+    // A new association may only reuse an existing, scoped media record.
+    // The shared permission resolver verifies its registered channel owner.
+    if (!before) value.registeredAt = new Date().toISOString();
+  }
   if (entity === "anniversary") {
     const { month, day, year, kind } = input;
     if (![month, day, year].every((part) => typeof part === "string" && /^\d*$/.test(part)))
@@ -99,7 +149,7 @@ export async function prepareDraft(snapshot, member, input) {
         currency: input.fee ? value.fee.currency || "JPY" : null };
     }
   }
-  const operation = { key: "cms-" + entity, entity, ...(before ? { id } : {}), value };
+  const operation = { key: "cms-" + entity.toLowerCase(), entity, ...(before ? { id } : {}), value };
   const operations = [operation];
   let oldOffer;
   if (entity === "product") {
@@ -175,9 +225,19 @@ const anniversaryFields = ({ date, type }) => ({
   month: String(date.month), day: String(date.day), year: String(date.year ?? ""), kind: type,
 });
 
+const musicVideoFields = (record) => ({
+  videoUrl: "https://www.youtube.com/watch?v=" + record.youtubeId,
+  videoKind: record.type,
+  songId: record.songId || "",
+});
+
 const talentFields = (record) => ({
   organization: record.affiliations.find(({ status }) => status === "current")?.organizationId,
   officialProfileUrl: record.officialProfileUrl || "",
+  aliasNames: record.aliases.filter((alias) => alias.type === "alias" && !alias.from && !alias.to)
+    .map(({ name }) => name).join("\n"),
+  youtubeUrl: record.accounts.find(({ service }) => service === "youtube")?.url || "",
+  xUrl: record.accounts.find(({ service }) => service === "x")?.url || "",
   image: record.profileImage?.url || "",
   activity: record.activityStatus.value,
 });
@@ -188,6 +248,7 @@ export function draftDetails(snapshot, member, entity, id) {
   const record = snapshot.models[file][list].find((row) => row.id === id);
   if (!cmsPermissions(snapshot.models, member).canRead(entity, record)) fail(403, "cms_scope_denied");
   const details = Object.fromEntries(fields[entity].map((key) => [key, record[key] ?? ""]));
+  if (entity === "musicVideo") Object.assign(details, musicVideoFields(record));
   if (entity === "talent") Object.assign(details, talentFields(record));
   if (entity === "anniversary") Object.assign(details, anniversaryFields(record));
   if (entity === "event") Object.assign(details, eventFields(record));
@@ -213,6 +274,7 @@ export function draftInput(workspace) {
     organization: op.value.relatedOrganizationIds?.[0],
     talent: op.value.talentIds?.[0],
     ...Object.fromEntries(fields[op.entity].map((key) => [key, op.value[key] ?? ""])),
+    ...(op.entity === "musicVideo" ? musicVideoFields(op.value) : {}),
     ...(op.entity === "talent" ? talentFields(op.value) : {}),
     ...(op.entity === "anniversary" ? anniversaryFields(op.value) : {}),
     ...(op.entity === "event" ? eventFields(op.value) : {}),

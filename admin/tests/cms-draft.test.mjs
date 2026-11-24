@@ -139,3 +139,17 @@ test("a new talent uses the existing ID registry plan and requires an assigned o
   assert.equal(draftInput({ operations }).displayName, input.displayName);
   await assert.rejects(prepareDraft(snapshot, editor, { ...input, organization: "org-000001" }), /cms_scope_denied/);
 });
+
+test("a song video can reuse scoped media but rejects a mismatched registered channel", async () => {
+  const models = structuredClone(fixture);
+  const original = models.music.musicVideos.shift();
+  const editor = { ...member, scope: { ...member.scope, categories: ["music"] } };
+  const input = { sha: snapshot.sha, entity: "musicVideo", talent: original.talentIds[0],
+    rawSongTitle: original.rawSongTitle, songId: original.songId, videoKind: original.type,
+    videoUrl: "https://youtu.be/" + original.youtubeId };
+  const operations = await prepareDraft({ ...snapshot, models }, editor, input);
+  assert.equal(draftInput({ operations }).songId, original.songId);
+  const media = models.media.videos.find(({ youtubeId }) => youtubeId === original.youtubeId);
+  media.channelId = models.talents.talents[0].accounts.find(({ service }) => service === "youtube").accountId;
+  await assert.rejects(prepareDraft({ ...snapshot, models }, editor, input), /cms_scope_denied/);
+});

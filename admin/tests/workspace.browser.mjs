@@ -50,7 +50,9 @@ export async function workspaceBrowser({
       await saved();
     };
     const nav = async (name) => {
-      await p.getByRole("link", { name, exact: true }).first().click();
+      const link = p.getByRole("link", { name, exact: true }).first();
+      await link.click();
+      await link.and(p.locator('[aria-current="page"]')).waitFor();
     };
     await login();
     await nav("記念日");

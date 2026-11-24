@@ -56,6 +56,7 @@ export async function workspaceBrowser({
     };
     await login();
     await nav("記念日");
+    await p.locator("#view .list-region").waitFor();
     const original = models.anniversaries.events[0];
     await p.getByRole("button", { name: original.title, exact: true }).click();
     await p

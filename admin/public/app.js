@@ -341,6 +341,7 @@ window.addEventListener("hashchange", async () => {
         if (revision === navigationRevision) view.inert = false;
       }
       if (revision !== navigationRevision) return;
+      view.replaceChildren(node("p", "読み込み中…"));
     }
   }
   activeEditor = null;

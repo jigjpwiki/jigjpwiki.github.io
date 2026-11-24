@@ -323,15 +323,24 @@ export class Admin {
         const published = await this.cmsSnapshot({ revision: job.commit });
         const recovered = recoverAppliedGroup(group, submitted, job, published);
         if (!recovered) fail(409, "cms_reapply_unavailable");
-        await publicationPlan(snapshot, { ...job, operations: recovered },
-          { ...member, directPublish: true }, this.cmsVideoLookup);
+        const editingGrant = { ...member, directPublish: true };
+        const { conflicts } = inspectDraftConflicts(snapshot, member, recovered);
+        if (conflicts.length) {
+          await publicationPlan(published, { ...job, operations: recovered }, editingGrant, this.cmsVideoLookup);
+          const latestChoices = conflicts.map(() => "theirs");
+          const { resolved, unchanged } = inspectDraftConflicts(snapshot, member, recovered, latestChoices);
+          if (!unchanged)
+            await publicationPlan(snapshot, { ...job, operations: resolved }, editingGrant, this.cmsVideoLookup);
+        } else {
+          await publicationPlan(snapshot, { ...job, operations: recovered }, editingGrant, this.cmsVideoLookup);
+        }
         const replaced = new Map(recovered.map((op) => [op.key, op]));
         const operations = saved.operations.map(({ validationState, ...op }) => replaced.get(op.key) || op);
         return this.atomic(async () => {
           await requireCurrentGrant();
           const result = await workspace.save(session.id, { protocol: 1, revision: input.revision, operations });
           await jobs.markRecovered(session.id, saved.workspaceId, input.draftId);
-          return json({ revision: result.revision });
+          return json({ revision: result.revision, needsResolution: conflicts.length > 0 });
         });
       }
       if (url.pathname === "/api/cms/history") {

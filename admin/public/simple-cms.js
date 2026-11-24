@@ -204,7 +204,9 @@ export async function mountSimpleCms(panel, status, api) {
             });
             revision = result.revision;
             await refreshDrafts();
-            status.textContent = "発行済みレコードに紐づけた下書きを保存しました。";
+            status.textContent = result.needsResolution
+              ? "発行済みレコードに紐づけました。「最新の情報と比較」から重なった変更を確認してください。"
+              : "発行済みレコードに紐づけた下書きを保存しました。";
           } catch {
             status.textContent = "自動で再適用できませんでした。下書きを保持しています。";
           }

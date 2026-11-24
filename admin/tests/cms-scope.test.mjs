@@ -34,7 +34,7 @@ test("viewers cannot edit, and editors cannot claim new talent affiliations", ()
   assert.throws(() => viewer.assertChange("event", event, event), /cms_scope_denied/);
   const talent = baseline.talents.talents[0];
   const editor = cmsPermissions(baseline, member);
-  assert.throws(() => editor.assertChange("talent", null, talent), /cms_scope_denied/);
+  assert.throws(() => editor.assertChange("talent", null, { ...talent, affiliations: [...talent.affiliations, { organizationId: "org-000002", status: "current" }] }), /cms_scope_denied/);
   assert.throws(() => normalizeScope({ organizations: ["*"] }), /invalid_member_scope/);
   assert.equal(cmsPermissions(baseline, { role: "editor" }).canRead("event", event), false);
 });

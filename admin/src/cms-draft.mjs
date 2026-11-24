@@ -1,10 +1,12 @@
+import { planSubmission } from "./submission-plan.mjs";
 import { contentPreview, resolveRefs } from "./content-plan.mjs";
 import { cmsPermissions, assertExistingCampaign } from "./cms-scope.mjs";
 import { fail, hash } from "./security.mjs";
 
-export const draftTypes = { event: ["events", "events"], product: ["goods", "products"], anniversary: ["anniversaries", "events"], campaign: ["goods", "campaigns"] };
+export const draftTypes = { talent: ["talents", "talents"], event: ["events", "events"], product: ["goods", "products"], anniversary: ["anniversaries", "events"], campaign: ["goods", "campaigns"] };
 const unknown = { precision: "unknown", value: null };
 const fields = {
+  talent: ["displayName"],
   anniversary: ["title"],
   campaign: ["title"],
   event: ["title", "venue", "announcementUrl", "summary"],
@@ -19,6 +21,30 @@ export async function prepareDraft(snapshot, member, input) {
   const before = id ? snapshot.models[file][list].find((row) => row.id === id) : null;
   const access = cmsPermissions(snapshot.models, member);
   if (id && !access.canRead(entity, before)) fail(403, "cms_scope_denied");
+  if (entity === "talent") {
+    const value = structuredClone(before || {
+      aliases: [], affiliations: [{ organizationId: input.organization, status: "current", from: null, to: null }],
+      agencyStatus: { value: "affiliated" }, accounts: [], wiki: null,
+      officialProfileUrl: input.officialProfileUrl || null, visibility: "public",
+    });
+    if (typeof input.displayName !== "string" || typeof input.image !== "string")
+      fail(400, "cms_invalid_input");
+    value.displayName = input.displayName.trim();
+    value.profileImage = input.image.trim() ? { url: input.image.trim() } : null;
+    value.activityStatus = { value: input.activity };
+    if (before && input.organization && input.organization !== talentFields(before).organization) {
+      const current = value.affiliations.filter(({ status }) => status === "current");
+      if (current.length !== 1) fail(403, "cms_scope_denied");
+      current[0].status = "former";
+      value.affiliations.push({ organizationId: input.organization, status: "current", from: null, to: null });
+      value.agencyStatus = { value: "affiliated" };
+      access.assertChange(entity, before, before);
+    }
+    access.assertChange(entity, before, value);
+    const operation = { key: "cms-talent", entity, ...(id ? { id } : {}), value, before, baseCommit: snapshot.sha };
+    await planSubmission(snapshot, [operation], { actor: "0", batchId: await hash(operation) });
+    return [operation];
+  }
   if (entity === "campaign" && !before) fail(400, "cms_invalid_input");
   const value = structuredClone(before || (entity === "event" ? {
     type: "other", timing: "unknown", starts: unknown, ends: unknown,
@@ -147,12 +173,20 @@ const anniversaryFields = ({ date, type }) => ({
   month: String(date.month), day: String(date.day), year: String(date.year ?? ""), kind: type,
 });
 
+const talentFields = (record) => ({
+  organization: record.affiliations.find(({ status }) => status === "current")?.organizationId,
+  officialProfileUrl: record.officialProfileUrl || "",
+  image: record.profileImage?.url || "",
+  activity: record.activityStatus.value,
+});
+
 export function draftDetails(snapshot, member, entity, id) {
   if (!Object.hasOwn(draftTypes, entity)) fail(403, "cms_scope_denied");
   const [file, list] = draftTypes[entity];
   const record = snapshot.models[file][list].find((row) => row.id === id);
   if (!cmsPermissions(snapshot.models, member).canRead(entity, record)) fail(403, "cms_scope_denied");
   const details = Object.fromEntries(fields[entity].map((key) => [key, record[key] ?? ""]));
+  if (entity === "talent") Object.assign(details, talentFields(record));
   if (entity === "anniversary") Object.assign(details, anniversaryFields(record));
   if (entity === "event") Object.assign(details, eventFields(record));
   if (entity === "product") {
@@ -177,6 +211,7 @@ export function draftInput(workspace) {
     organization: op.value.relatedOrganizationIds?.[0],
     talent: op.value.talentIds?.[0],
     ...Object.fromEntries(fields[op.entity].map((key) => [key, op.value[key] ?? ""])),
+    ...(op.entity === "talent" ? talentFields(op.value) : {}),
     ...(op.entity === "anniversary" ? anniversaryFields(op.value) : {}),
     ...(op.entity === "event" ? eventFields(op.value) : {}),
     ...(op.entity === "product" ? {

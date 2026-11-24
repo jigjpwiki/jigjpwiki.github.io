@@ -20,9 +20,13 @@ export async function publicationPlan(snapshot, job, member) {
   const batchId = await hash({ id: job.id, base: snapshot.sha });
   const before = cmsPermissions(snapshot.models, member);
   for (const op of job.operations) {
-    if (!["event", "product", "offer", "anniversary", "campaign"].includes(op.entity) ||
+    if (!["event", "product", "offer", "anniversary", "campaign", "talent"].includes(op.entity) ||
         (op.id && !before.canRead(op.entity, recordAt(snapshot.models, op))))
       fail(403, "cms_scope_denied");
+    if (op.entity === "talent" && op.id) {
+      const current = recordAt(snapshot.models, op);
+      before.assertChange("talent", current, current);
+    }
     if (op.entity === "product" && op.id) {
       const offers = snapshot.models.goods.offers.filter((offer) => offer.productId === op.id);
       if (offers.length > 1 || offers.some((offer) => offer.campaignId !== null || !before.canRead("offer", offer)))
@@ -41,8 +45,8 @@ export async function publicationPlan(snapshot, job, member) {
   if (plan.conflicts?.length) fail(409, "cms_publish_conflict");
   const after = cmsPermissions({ ...snapshot.models, ...plan.files }, member);
   for (const row of plan.impact.records) {
-    if (!entities[row.entity] || !["event", "product", "offer", "anniversary", "campaign"].includes(row.entity)) fail(403, "cms_scope_denied");
-    after.assertChange(row.entity, null, row.value, { publish: true });
+    if (!entities[row.entity] || !["event", "product", "offer", "anniversary", "campaign", "talent"].includes(row.entity)) fail(403, "cms_scope_denied");
+    after.assertChange(row.entity, row.before, row.value, { publish: true });
   }
   return { plan: { ...plan, sha: snapshot.sha, tree: snapshot.tree }, batchId };
 }

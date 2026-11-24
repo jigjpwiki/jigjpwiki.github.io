@@ -111,11 +111,28 @@ export function cmsPermissions(models, member) {
     if (member.role !== "editor" || (publish && member.directPublish !== true) ||
         !after || (before && !canRead(entity, before)) || !canRead(entity, after))
       fail(403, "cms_scope_denied");
-    // Membership and publication are managed by the owner. New talents require
-    // a separate creation policy because the association grants future access.
-    if (entity === "talent" && (!before ||
-        JSON.stringify(before.affiliations) !== JSON.stringify(after.affiliations)))
-      fail(403, "cms_scope_denied");
+    if (entity === "talent") {
+      if (!before && (after.affiliations.length !== 1 ||
+          after.affiliations[0].status !== "current" ||
+          !managed.has(after.affiliations[0].organizationId)))
+        fail(403, "cms_scope_denied");
+      if (before && JSON.stringify(before.affiliations) !== JSON.stringify(after.affiliations)) {
+        const current = (record) => record.affiliations.filter((row) => row.status === "current");
+        const old = current(before), next = current(after);
+        if (old.length !== 1 || next.length !== 1 ||
+            ![...old, ...next].every((row) => managed.has(row.organizationId)))
+          fail(403, "cms_scope_denied");
+      }
+      if (before) {
+        for (const type of ["group", "event", "product", "anniversary", "musicVideo", "karaoke", "performance"]) {
+          for (const row of byType[type].values()) {
+            if (row.visibility === "public" && row.talentIds?.includes(before.id) &&
+                !resolve(type, row, new Set()).allowed)
+              fail(403, "cms_scope_denied");
+          }
+        }
+      }
+    }
   }
 
   return { canRead, assertChange };

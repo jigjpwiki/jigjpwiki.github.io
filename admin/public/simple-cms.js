@@ -1,4 +1,5 @@
 const labels = {
+  displayName: ["表示名", "text"], activity: ["活動状態", "select"], officialProfileUrl: ["公式プロフィールURL", "url"],
   startsAt: ["販売開始（日本時間）", "datetime-local"], endsAt: ["販売終了（日本時間）", "datetime-local"],
   month: ["月", "number"], day: ["日", "number"], year: ["年（任意）", "number"], kind: ["記念日の種類", "select"],
   title: ["名称", "text"], venue: ["会場", "text"], summary: ["概要", "textarea"],
@@ -8,6 +9,7 @@ const labels = {
   identityUrl: ["公式商品情報URL", "url"], url: ["販売ページURL", "url"], price: ["価格（円）", "number"],
 };
 const categories = {
+  talent: { category: "talents", label: "VTuber", fields: ["displayName", "image", "activity", "officialProfileUrl"] },
   campaign: { category: "goods", label: "キャンペーン", fields: ["title"], existingOnly: true },
   anniversary: { category: "anniversaries", label: "記念日", fields: ["title", "kind", "month", "day", "year"] },
   event: { category: "events", label: "イベント", fields: ["title", "announcementUrl", "summary", "venue", "starts", "ends", "format", "streamUrl", "fee"] },
@@ -45,6 +47,7 @@ export async function mountSimpleCms(panel, status, api) {
     const result = await api("/api/cms/publication");
     publication = result.publication;
     const labels = {
+  displayName: ["表示名", "text"], activity: ["活動状態", "select"], officialProfileUrl: ["公式プロフィールURL", "url"],
       queued: "公開の順番待ち", candidate: "変更候補を作成中",
       checking: "検証中", promoting: "反映中", pages: "公開サイトへの反映待ち",
       published: "公開サイトへの反映を確認しました", failed: "公開できませんでした。下書きは保存されています。",
@@ -115,12 +118,12 @@ export async function mountSimpleCms(panel, status, api) {
         checkbox.checked = selectedDrafts.has(draftId);
         checkbox.onchange = () => checkbox.checked ? selectedDrafts.add(draftId) : selectedDrafts.delete(draftId);
         const label = el("label", "公開する");
-        checkbox.setAttribute("aria-label", input.title + "を公開する");
+        checkbox.setAttribute("aria-label", (input.title || input.displayName) + "を公開する");
         label.prepend(checkbox);
         row.append(label);
       }
       if (conflict) row.append(el("p", (input?.title || "下書き") + "：元の情報が変更されたか、現在の担当範囲外です。"));
-      else row.append(button(input.title, () => edit(input.entity, input, draftId)));
+      else row.append(button(input.title || input.displayName, () => edit(input.entity, input, draftId)));
       row.append(button("この下書きを破棄", async () => {
         if (!confirm("この下書きを破棄しますか？")) return;
         try {
@@ -141,19 +144,20 @@ export async function mountSimpleCms(panel, status, api) {
     const fields = new Map();
     function add(key, label, control) {
       const wrapping = el("label", label);
-      control.value = input[key] ?? (key === "format" ? "unknown" : key === "kind" ? "birthday" : "");
+      control.value = input[key] ?? (["format", "activity"].includes(key) ? "unknown" : key === "kind" ? "birthday" : "");
       wrapping.append(control);
       form.append(wrapping);
       fields.set(key, control);
     }
     for (const key of spec.fields) {
+      if (entity === "talent" && input.id && key === "officialProfileUrl") continue;
       const [label, type] = labels[key];
       const control = el(["textarea", "select"].includes(type) ? type : "input");
-      if (type === "select") control.append(...Object.entries(key === "kind" ? { birthday: "誕生日", debut: "デビュー記念日", group: "グループ記念日", other: "その他" } : {
+      if (type === "select") control.append(...Object.entries(key === "activity" ? { unknown: "不明", active: "活動中", hiatus: "休止中", retired: "引退", ended: "活動終了" } : key === "kind" ? { birthday: "誕生日", debut: "デビュー記念日", group: "グループ記念日", other: "その他" } : {
         unknown: "未定・不明", onsite: "会場開催", online: "オンライン", hybrid: "会場とオンライン",
       }).map(([value, text]) => new Option(text, value)));
       else if (type !== "textarea") control.type = type;
-      control.required = ["month", "day"].includes(key) || key === "title" || key === "announcementUrl" || key === "summary" || key === "identityUrl";
+      control.required = ["month", "day"].includes(key) || ["title", "displayName"].includes(key) || key === "announcementUrl" || key === "summary" || key === "identityUrl";
       if (key === "price") {
         control.min = "0";
         control.step = input.currency && input.currency !== "JPY" ? "any" : "1";
@@ -164,16 +168,16 @@ export async function mountSimpleCms(panel, status, api) {
       }
       add(key, key === "fee" ? "料金（" + (input.feeCurrency || "JPY") + "）" : key === "price" && input.currency ? "価格（" + input.currency + "）" : label, control);
     }
-    if (!input.id) {
-      const key = entity === "event" ? "organization" : "talent";
-      const choices = entity === "event" ? catalog.organizations : catalog.people;
+    if (!input.id || entity === "talent") {
+      const key = ["talent", "event"].includes(entity) ? "organization" : "talent";
+      const choices = key === "organization" ? catalog.organizations : catalog.people;
       const search = el("input");
       search.type = "search";
       const searchLabel = el("label", "候補を絞り込む");
       searchLabel.append(search);
       form.append(searchLabel);
       const select = el("select");
-      select.required = true;
+      select.required = !input.id;
       function fill(query = "", active = input[key]) {
         select.replaceChildren(new Option("選択してください", ""), ...choices
           .filter((row) => row.name.includes(query) || row.id === active)
@@ -181,7 +185,7 @@ export async function mountSimpleCms(panel, status, api) {
         select.value = active || "";
       }
       fill();
-      add(key, entity === "event" ? "関連事務所" : "関連する人物", select);
+      add(key, key === "organization" ? "関連事務所" : "関連する人物", select);
       search.oninput = () => fill(search.value, select.value);
     }
     if (entity === "product" && !input.id) {

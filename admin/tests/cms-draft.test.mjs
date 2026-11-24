@@ -129,3 +129,13 @@ test("an existing campaign title is editable only inside the assigned scope", as
     organizations: ["org-000001"], categories: ["goods"],
   } }, input), /cms_scope_denied/);
 });
+
+test("a new talent uses the existing ID registry plan and requires an assigned organization", async () => {
+  const input = { entity: "talent", sha: snapshot.sha, organization: "org-000003",
+    displayName: "新人登録試験", image: "", activity: "unknown",
+    officialProfileUrl: "https://example.com/new-talent" };
+  const editor = { ...member, scope: { ...member.scope, categories: ["talents"] } };
+  const operations = await prepareDraft(snapshot, editor, input);
+  assert.equal(draftInput({ operations }).displayName, input.displayName);
+  await assert.rejects(prepareDraft(snapshot, editor, { ...input, organization: "org-000001" }), /cms_scope_denied/);
+});

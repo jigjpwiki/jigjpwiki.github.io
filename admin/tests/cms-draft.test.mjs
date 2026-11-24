@@ -192,3 +192,25 @@ test("an editor cannot obtain a channel association by creating a talent", async
   };
   await assert.rejects(prepareDraft(snapshot, editor, input), /cms_identity_anchor/);
 });
+
+test("a karaoke draft restores multiple tracks and resolves their parent at publication", async () => {
+  const { publicationPlan } = await import("../src/cms-publish.mjs");
+  const { writeDraft, draftGroups } = await import("../src/cms-draft.mjs");
+  const models = structuredClone(fixture);
+  const original = models.karaoke.karaokes[0];
+  const channel = models.media.videos.find((row) => row.youtubeId === original.youtubeId).channelId;
+  const videoId = "fixture-123";
+  models.youtube = [{ videoId, title: "歌枠試験", youtubeid: channel }];
+  const editor = { ...member, directPublish: true, scope: { ...member.scope, categories: ["music"] } };
+  const snap = { ...snapshot, models };
+  const input = { sha: snapshot.sha, entity: "karaoke", talent: original.talentIds[0],
+    videoUrl: "https://youtu.be/" + videoId, setlist: [{ label: "曲一" }, { label: "曲二" }] };
+  const saved = writeDraft([], undefined, await prepareDraft(snap, editor, input));
+  assert.deepEqual(draftInput({ operations: draftGroups(saved.operations).get(saved.id) }).setlist
+    .map((track) => track.label), ["曲一", "曲二"]);
+  const job = { id: "karaoke-test", owner: "8ebf4fde-85a4-4d34-9feb-d1ba5c4de026", operations: saved.operations };
+  const { plan } = await publicationPlan(snap, job, editor);
+  const parent = plan.files.karaoke.karaokes.at(-1);
+  assert.deepEqual(plan.files.karaoke.performances.filter((row) => row.karaokeId === parent.id)
+    .map(({ order }) => order), [1, 2]);
+});

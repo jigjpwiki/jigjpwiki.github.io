@@ -5,9 +5,10 @@ import { contentPreview, resolveRefs } from "./content-plan.mjs";
 import { cmsPermissions, assertExistingCampaign } from "./cms-scope.mjs";
 import { fail, hash } from "./security.mjs";
 
-export const draftTypes = { song: ["music", "songs"], musicVideo: ["music", "musicVideos"], talent: ["talents", "talents"], event: ["events", "events"], product: ["goods", "products"], anniversary: ["anniversaries", "events"], campaign: ["goods", "campaigns"] };
+export const draftTypes = { karaoke: ["karaoke", "karaokes"], song: ["music", "songs"], musicVideo: ["music", "musicVideos"], talent: ["talents", "talents"], event: ["events", "events"], product: ["goods", "products"], anniversary: ["anniversaries", "events"], campaign: ["goods", "campaigns"] };
 const unknown = { precision: "unknown", value: null };
 const fields = {
+  karaoke: [],
   song: ["title"],
   musicVideo: ["rawSongTitle"],
   talent: ["displayName"],
@@ -98,6 +99,37 @@ export async function prepareDraft(snapshot, member, input) {
   } : { talentIds: [input.talent], groupIds: [], visibility: "public",
     ...(entity === "anniversary" ? { recursYearly: true, countYears: false } : {}),
   }));
+  let setlist = [];
+  if (entity === "karaoke") {
+    if (!before) delete value.groupIds;
+    try { value.youtubeId = youtubeId(input.videoUrl); }
+    catch { fail(400, "cms_invalid_video_url"); }
+    if (!before) value.registeredAt = new Date().toISOString();
+    if (!Array.isArray(input.setlist) || input.setlist.length > 55) fail(400, "cms_invalid_input");
+    const existing = id ? snapshot.models.karaoke.performances.filter((row) => row.karaokeId === id) : [];
+    if (existing.some((row) => !access.canRead("performance", row))) fail(403, "cms_scope_denied");
+    const used = new Set();
+    setlist = input.setlist.map((row, index) => {
+      if (!row || typeof row.label !== "string" || !row.label.trim()) fail(400, "cms_invalid_input");
+      const old = row.id && existing.find((item) => item.id === row.id);
+      if (row.id && (!old || used.has(row.id))) fail(403, "cms_scope_denied");
+      if (old) used.add(old.id);
+      return {
+        key: "cms-track-" + (old ? old.id : "new-" + index), entity: "performance",
+        ...(old ? { id: old.id } : {}),
+        value: {
+          ...(old || { karaokeId: id || "@cms-karaoke", startsAtSeconds: null, endsAtSeconds: null,
+            talentIds: value.talentIds, note: null, verification: "verified", visibility: "public" }),
+          songId: row.songId || null, rawLabel: row.label.trim(), order: index + 1,
+        },
+      };
+    });
+    if (used.size !== existing.length) fail(409, "cms_setlist_remove_not_supported");
+    if (before?.setlistStatus !== "complete" || setlist.length !== before.expectedCount) {
+      value.setlistStatus = setlist.length ? "partial" : "unreviewed";
+      value.expectedCount = null;
+    }
+  }
   if (entity === "song") {
     if (typeof input.artists !== "string") fail(400, "cms_invalid_input");
     const names = [...new Set(input.artists.split("\n").map((name) => name.trim()).filter(Boolean))];
@@ -156,14 +188,14 @@ export async function prepareDraft(snapshot, member, input) {
     }
   }
   const operation = { key: "cms-" + entity.toLowerCase(), entity, ...(before ? { id } : {}), value };
-  const operations = [operation];
-  if (entity === "musicVideo") {
+  const operations = [operation, ...setlist];
+  if (["musicVideo", "karaoke"].includes(entity)) {
     if (!snapshot.models.media.videos.some((row) => row.youtubeId === value.youtubeId)) {
       const video = collectedVideo(snapshot.models, value.youtubeId);
       if (!access.canRead("video", video)) fail(403, "cms_scope_denied");
       operations.push({ key: "cms-media", entity: "video", value: video });
     }
-    if (input.newSongTitle || input.newSongUrl || input.newSongArtist) {
+    if (entity === "musicVideo" && (input.newSongTitle || input.newSongUrl || input.newSongArtist)) {
       if (value.songId || ![input.newSongTitle, input.newSongUrl, input.newSongArtist].every(
         (part) => typeof part === "string" && part.trim(),
       )) fail(400, "cms_invalid_input");
@@ -229,7 +261,8 @@ export async function prepareDraft(snapshot, member, input) {
     },
   });
   return operations.map((op) => ({
-    ...op, before: op.entity === "offer" ? oldOffer || null : op === operation ? before : null, baseCommit: snapshot.sha,
+    ...op, before: op.entity === "offer" ? oldOffer || null : op === operation ? before : op.entity === "performance" && op.id
+      ? snapshot.models.karaoke.performances.find((row) => row.id === op.id) : null, baseCommit: snapshot.sha,
   }));
 }
 
@@ -266,12 +299,23 @@ const talentFields = (record) => ({
   activity: record.activityStatus.value,
 });
 
+const setlistFields = (rows) => rows.map((row) => ({
+  id: row.id, label: row.rawLabel, songId: row.songId || "",
+}));
+
 export function draftDetails(snapshot, member, entity, id) {
   if (!Object.hasOwn(draftTypes, entity)) fail(403, "cms_scope_denied");
   const [file, list] = draftTypes[entity];
   const record = snapshot.models[file][list].find((row) => row.id === id);
   if (!cmsPermissions(snapshot.models, member).canRead(entity, record)) fail(403, "cms_scope_denied");
   const details = Object.fromEntries(fields[entity].map((key) => [key, record[key] ?? ""]));
+  if (entity === "karaoke") {
+    const rows = snapshot.models.karaoke.performances.filter((row) => row.karaokeId === id);
+    if (rows.some((row) => !cmsPermissions(snapshot.models, member).canRead("performance", row)))
+      fail(403, "cms_scope_denied");
+    details.videoUrl = musicVideoFields(record).videoUrl;
+    details.setlist = setlistFields(rows.sort((a, b) => (a.order ?? Infinity) - (b.order ?? Infinity)));
+  }
   if (entity === "song") details.artists = (record.originalArtists || []).join("\n");
   if (entity === "musicVideo") Object.assign(details, musicVideoFields(record));
   if (entity === "talent") Object.assign(details, talentFields(record));
@@ -300,6 +344,8 @@ export function draftInput(workspace) {
     organization: op.value.relatedOrganizationIds?.[0],
     talent: op.value.talentIds?.[0],
     ...Object.fromEntries(fields[op.entity].map((key) => [key, op.value[key] ?? ""])),
+    ...(op.entity === "karaoke" ? { videoUrl: musicVideoFields(op.value).videoUrl,
+      setlist: setlistFields(workspace.operations.filter((row) => row.entity === "performance").map((row) => row.value)) } : {}),
     ...(op.entity === "song" ? { artists: (op.value.originalArtists || []).join("\n") } : {}),
     ...(op.entity === "musicVideo" ? {
       ...musicVideoFields(op.value),

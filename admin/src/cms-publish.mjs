@@ -21,18 +21,18 @@ export async function publicationPlan(snapshot, job, member) {
   const batchId = await hash({ id: job.id, base: snapshot.sha });
   const before = cmsPermissions(snapshot.models, member);
   for (const op of job.operations) {
-    if (!["event", "product", "offer", "anniversary", "campaign", "talent", "musicVideo", "video", "song"].includes(op.entity) ||
+    if (!["event", "product", "offer", "anniversary", "campaign", "talent", "musicVideo", "video", "song", "karaoke", "performance"].includes(op.entity) ||
         (op.id && !before.canRead(op.entity, recordAt(snapshot.models, op))))
       fail(403, "cms_scope_denied");
-    if (op.entity === "musicVideo") {
+    if (["musicVideo", "karaoke"].includes(op.entity)) {
       const pending = job.operations.find((row) => row.entity === "video" && !row.id &&
         row.value.youtubeId === op.value.youtubeId);
-      const value = { ...op.value, songId: op.value.songId?.startsWith("@") ? null : op.value.songId };
+      const value = { ...op.value, ...(op.value.songId?.startsWith("@") ? { songId: null } : {}) };
       if (pending) {
         if (!before.canRead("video", pending.value) ||
-            !before.canRead("musicVideo", { ...value, youtubeId: null }))
+            !before.canRead(op.entity, { ...value, youtubeId: null }))
           fail(403, "cms_scope_denied");
-      } else if (!before.canRead("musicVideo", value)) fail(403, "cms_scope_denied");
+      } else if (!before.canRead(op.entity, value)) fail(403, "cms_scope_denied");
     }
     if (op.entity === "video" && (op.id ||
         collectedVideo(snapshot.models, op.value.youtubeId).channelId !== op.value.channelId ||
@@ -61,7 +61,7 @@ export async function publicationPlan(snapshot, job, member) {
   if (plan.conflicts?.length) fail(409, "cms_publish_conflict");
   const after = cmsPermissions({ ...snapshot.models, ...plan.files }, member);
   for (const row of plan.impact.records) {
-    if (!entities[row.entity] || !["event", "product", "offer", "anniversary", "campaign", "talent", "musicVideo", "video", "song"].includes(row.entity)) fail(403, "cms_scope_denied");
+    if (!entities[row.entity] || !["event", "product", "offer", "anniversary", "campaign", "talent", "musicVideo", "video", "song", "karaoke", "performance"].includes(row.entity)) fail(403, "cms_scope_denied");
     if (row.entity === "song") assertSongEdit({ ...snapshot.models, ...plan.files }, after, row.id);
     else after.assertChange(row.entity, row.before, row.value, { publish: true });
   }

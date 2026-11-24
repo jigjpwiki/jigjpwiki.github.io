@@ -152,7 +152,7 @@ export function scopedCatalog(models, member) {
       label: type.label || "VTuber",
       items: models[type.file][type.list].filter((row) => permissions.canRead(entity, row)).map((row) => ({
         id: row.id,
-        title: row.displayName || row.title || row.rawSongTitle,
+        title: row.displayName || row.title || row.rawSongTitle || byTypeVideoTitle(models, row),
         description: typeof row.description === "string" ? row.description : "",
       })),
     };
@@ -164,4 +164,8 @@ export function assertExistingCampaign(models, permissions, id) {
   if (id == null || (typeof id === "string" && id.startsWith("@"))) return;
   const campaign = models.goods.campaigns.find((row) => row.id === id);
   if (!permissions.canRead("campaign", campaign)) fail(403, "cms_scope_denied");
+}
+
+function byTypeVideoTitle(models, row) {
+  return row.youtubeId && models.media.videos.find((video) => video.youtubeId === row.youtubeId)?.title;
 }

@@ -12,6 +12,7 @@ const labels = {
   identityUrl: ["公式商品情報URL", "url"], url: ["販売ページURL", "url"], price: ["価格（円）", "number"],
 };
 const categories = {
+  karaoke: { category: "music", label: "歌枠", fields: ["videoUrl"] },
   song: { category: "music", label: "楽曲", fields: ["title", "artists"], existingOnly: true },
   musicVideo: { category: "music", label: "歌動画", fields: ["rawSongTitle", "videoUrl", "videoKind"] },
   talent: { category: "talents", label: "VTuber", fields: ["displayName", "image", "activity", "officialProfileUrl", "aliasNames", "youtubeUrl", "xUrl"] },
@@ -248,6 +249,44 @@ export async function mountSimpleCms(panel, status, api) {
       }
       form.append(performers);
     }
+    const tracks = [];
+    if (entity === "karaoke") {
+      const fieldset = el("fieldset");
+      fieldset.append(el("legend", "セットリスト"));
+      const rows = el("ol");
+      function appendTrack(track = {}) {
+        const row = el("li");
+        const title = el("input");
+        title.required = true;
+        title.value = track.label || "";
+        const label = el("label", "配信内の曲名");
+        label.append(title);
+        const song = el("select");
+        song.append(new Option("紐づけなし", ""), ...catalog.songs.map(({ id, name }) => new Option(name, id)));
+        song.value = track.songId || "";
+        const songLabel = el("label", "既存の楽曲");
+        songLabel.append(song);
+        const move = (offset) => {
+          const index = tracks.findIndex((item) => item.row === row);
+          const next = index + offset;
+          if (next < 0 || next >= tracks.length) return;
+          [tracks[index], tracks[next]] = [tracks[next], tracks[index]];
+          rows.replaceChildren(...tracks.map((item) => item.row));
+          row.querySelector("button").focus();
+        };
+        row.append(label, songLabel, button("上へ", () => move(-1)), button("下へ", () => move(1)));
+        if (!track.id) row.append(button("追加行を取り除く", () => {
+          tracks.splice(tracks.findIndex((item) => item.row === row), 1);
+          row.remove();
+        }));
+        tracks.push({ row, title, song, id: track.id });
+        rows.append(row);
+        return title;
+      }
+      for (const track of input.setlist || []) appendTrack(track);
+      fieldset.append(rows, button("曲を追加", () => appendTrack().focus()));
+      form.append(fieldset);
+    }
     const submit = el("button", "下書きを保存");
     submit.disabled = !saveAvailable;
     form.append(submit);
@@ -263,6 +302,9 @@ export async function mountSimpleCms(panel, status, api) {
             ...checked,
           ];
         }
+        if (entity === "karaoke") values.setlist = tracks.map(({ id, title, song }) => ({
+          ...(id ? { id } : {}), label: title.value, songId: song.value,
+        }));
         const result = await api("/api/cms/draft", "PUT", {
           entity, id: input.id, draftId, sha: input.sha || catalog.sha, revision, ...values,
         });

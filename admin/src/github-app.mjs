@@ -1,13 +1,28 @@
 import { b64, fail } from "./security.mjs";
 import { GitHub, repository } from "./github.mjs";
 
-export function publishingEnabled(env) {
-  return env.CMS_PUBLISH_ENABLED === "true" && /^\d+$/.test(env.CMS_GITHUB_APP_ID || "") &&
+function appConfigured(env) {
+  return /^\d+$/.test(env.CMS_GITHUB_APP_ID || "") &&
     /^\d+$/.test(env.CMS_GITHUB_INSTALLATION_ID || "") && !!env.CMS_GITHUB_APP_KEY;
+}
+
+export function publishingEnabled(env) {
+  return env.CMS_PUBLISH_ENABLED === "true" && appConfigured(env);
+}
+
+// Separate read-only token issuance from publication. With no App configured,
+// retain the existing public-repository read behavior.
+export async function installationReadToken(env, transport) {
+  if (!appConfigured(env)) return undefined;
+  return installationToken(env, transport, { contents: "read" });
 }
 
 export async function installationClient(env, transport) {
   if (!publishingEnabled(env)) fail(503, "cms_publish_disabled");
+  return new GitHub(await installationToken(env, transport, { contents: "write", actions: "read" }), transport);
+}
+
+async function installationToken(env, transport, permissions) {
   const now = Math.floor(Date.now() / 1000);
   const bytes = new TextEncoder();
   const encode = (value) => b64(bytes.encode(JSON.stringify(value)));
@@ -27,8 +42,8 @@ export async function installationClient(env, transport) {
   const app = new GitHub(payload + "." + signature, transport);
   const result = await app.call("/app/installations/" + env.CMS_GITHUB_INSTALLATION_ID + "/access_tokens", "POST", {
     repositories: [repository.split("/")[1]],
-    permissions: { contents: "write", actions: "read" },
+    permissions,
   });
   if (typeof result.token !== "string" || !result.token) fail(503, "cms_app_token_invalid");
-  return new GitHub(result.token, transport);
+  return result.token;
 }

@@ -171,6 +171,26 @@ export async function mountSimpleCms(panel, status, api) {
       form.append(wrapping);
       fields.set(key, control);
     }
+    function newSongFields(values) {
+      const details = el("details");
+      details.append(el("summary", "新しい楽曲を同時に登録"));
+      details.open = Boolean(values.newSongTitle);
+      const controls = {};
+      for (const [key, text, type] of [
+        ["newSongTitle", "原曲の曲名", "text"],
+        ["newSongArtist", "原曲アーティスト", "text"],
+        ["newSongUrl", "原曲の公式URL", "url"],
+      ]) {
+        const control = el("input");
+        control.type = type;
+        control.value = values[key] || "";
+        const label = el("label", text);
+        label.append(control);
+        details.append(label);
+        controls[key] = control;
+      }
+      return { details, controls };
+    }
     for (const key of spec.fields) {
 
       const [label, type] = labels[key];
@@ -274,20 +294,9 @@ export async function mountSimpleCms(panel, status, api) {
       const select = el("select");
       form.append(songPicker(select, input.songId));
       add("songId", "既存の楽曲", select);
-      const newSong = el("details");
-      newSong.append(el("summary", "新しい楽曲を同時に登録"));
-      newSong.open = Boolean(input.newSongTitle);
-      for (const [key, text, type] of [
-        ["newSongTitle", "原曲の曲名", "text"],
-        ["newSongArtist", "原曲アーティスト", "text"],
-        ["newSongUrl", "原曲の公式URL", "url"],
-      ]) {
-        const control = el("input");
-        control.type = type;
-        add(key, text, control);
-        newSong.append(control.parentElement);
-      }
-      form.append(newSong);
+      const {details, controls} = newSongFields(input);
+      for (const [key, control] of Object.entries(controls)) fields.set(key, control);
+      form.append(details);
     }
     if (entity === "event") {
       const performers = el("fieldset");
@@ -340,12 +349,13 @@ export async function mountSimpleCms(panel, status, api) {
           field.append(control);
           return { field, control };
         });
-        row.append(label, songSearch, songLabel, ...times.map(({ field }) => field), button("上へ", () => move(-1)), button("下へ", () => move(1)));
+        const work = newSongFields(track);
+        row.append(label, songSearch, songLabel, work.details, ...times.map(({ field }) => field), button("上へ", () => move(-1)), button("下へ", () => move(1)));
         if (!track.id) row.append(button("追加行を取り除く", () => {
           tracks.splice(tracks.findIndex((item) => item.row === row), 1);
           row.remove();
         }));
-        tracks.push({ row, title, song, id: track.id, times,
+        tracks.push({ row, title, song, id: track.id, times, work: work.controls,
           key: track.key || crypto.randomUUID().replaceAll("-", "").slice(0, 16) });
         rows.append(row);
         return title;
@@ -373,7 +383,8 @@ export async function mountSimpleCms(panel, status, api) {
         }
         if (entity === "karaoke") {
           values.complete = complete.checked;
-          values.setlist = tracks.map(({ id, key, title, song, times }) => ({
+          values.setlist = tracks.map(({ id, key, title, song, times, work }) => ({
+            ...Object.fromEntries(Object.entries(work).map(([name, control]) => [name, control.value])),
             ...(id ? { id } : {}), key, label: title.value, songId: song.value,
             startsAtSeconds: times[0].control.value, endsAtSeconds: times[1].control.value,
           }));

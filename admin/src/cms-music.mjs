@@ -23,3 +23,22 @@ export function canEditSong(models, permissions, songId) {
 export function assertSongEdit(models, permissions, songId) {
   if (!canEditSong(models, permissions, songId)) fail(403, "cms_scope_denied");
 }
+
+
+// A new work is attached to a scoped song video or performance in the same batch.
+export function newSongOperation(input, key) {
+  const { newSongTitle: title, newSongArtist: artist, newSongUrl: url } = input;
+  if (!title && !artist && !url) return null;
+  if (input.songId || ![title, artist, url].every((part) => typeof part === "string" && part.trim()))
+    fail(400, "cms_invalid_input");
+  return { key, entity: "song", value: {
+    title: title.trim(), originalArtists: [artist.trim()], identityUrl: url.trim(),
+    aliases: [], readings: [], visibility: "public",
+  } };
+}
+
+export function newSongFields(operation) {
+  if (!operation) return {};
+  return { songId: "", newSongTitle: operation.value.title, newSongUrl: operation.value.identityUrl,
+    newSongArtist: operation.value.originalArtists[0] };
+}

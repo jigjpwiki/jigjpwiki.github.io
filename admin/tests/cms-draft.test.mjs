@@ -205,7 +205,8 @@ test("a karaoke draft restores multiple tracks and resolves their parent at publ
   const snap = { ...snapshot, models };
   const input = { sha: snapshot.sha, entity: "karaoke", talent: original.talentIds[0],
     videoUrl: "https://youtu.be/" + videoId, complete: true, setlist: [
-      { key: "first", label: "曲一", startsAtSeconds: "10", endsAtSeconds: "20" },
+      { key: "first", label: "曲一", startsAtSeconds: "10", endsAtSeconds: "20",
+        newSongTitle: "新曲テスト", newSongArtist: "作者テスト", newSongUrl: "https://example.com/karaoke-original" },
       { key: "second", label: "曲二", startsAtSeconds: "30" },
     ] };
   const saved = writeDraft([], undefined, await prepareDraft(snap, editor, input));
@@ -218,6 +219,10 @@ test("a karaoke draft restores multiple tracks and resolves their parent at publ
   assert.equal(parent.expectedCount, 2);
   const restored = draftInput({ operations: draftGroups(saved.operations).get(saved.id) });
   assert.deepEqual(restored.setlist.map(({ key, startsAtSeconds }) => [key, startsAtSeconds]), [["first", "10"], ["second", "30"]]);
-  assert.deepEqual(plan.files.karaoke.performances.filter((row) => row.karaokeId === parent.id)
-    .map(({ order }) => order), [1, 2]);
+  assert.equal(restored.setlist[0].newSongTitle, "新曲テスト");
+  assert.equal(restored.setlist[0].songId, "");
+  const song = plan.files.music.songs.find((row) => row.title === "新曲テスト");
+  const tracks = plan.files.karaoke.performances.filter((row) => row.karaokeId === parent.id);
+  assert.deepEqual(tracks.map(({ order }) => order), [1, 2]);
+  assert.equal(tracks[0].songId, song.id);
 });

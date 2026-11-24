@@ -1,4 +1,4 @@
-import { collectedVideo, assertSongEdit } from "./cms-music.mjs";
+import { collectedVideo, assertSongEdit, newSongOperation, newSongFields } from "./cms-music.mjs";
 import { youtubeId } from "../public/content-utils.js";
 import { planSubmission } from "./submission-plan.mjs";
 import { contentPreview, resolveRefs } from "./content-plan.mjs";
@@ -100,6 +100,7 @@ export async function prepareDraft(snapshot, member, input) {
     ...(entity === "anniversary" ? { recursYearly: true, countYears: false } : {}),
   }));
   let setlist = [];
+  const newTracks = [];
   if (entity === "karaoke") {
     if (!before) delete value.groupIds;
     try { value.youtubeId = youtubeId(input.videoUrl); }
@@ -119,6 +120,8 @@ export async function prepareDraft(snapshot, member, input) {
       if (typeof key !== "string" || !/^[a-z0-9-]{1,20}$/.test(key) || keys.has(key))
         fail(400, "cms_invalid_input");
       keys.add(key);
+      const work = newSongOperation(row, "cms-work-" + key);
+      if (work) newTracks.push(work);
       const time = (name) => {
         const value = row[name];
         if (value === undefined) return old?.[name] ?? null;
@@ -134,7 +137,7 @@ export async function prepareDraft(snapshot, member, input) {
           ...(old || { karaokeId: id || "@cms-karaoke", startsAtSeconds: null, endsAtSeconds: null,
             talentIds: value.talentIds, note: null, verification: "verified", visibility: "public" }),
           startsAtSeconds: time("startsAtSeconds"), endsAtSeconds: time("endsAtSeconds"),
-          songId: row.songId || null, rawLabel: row.label.trim(), order: index + 1,
+          songId: work ? "@" + work.key : row.songId || null, rawLabel: row.label.trim(), order: index + 1,
         },
       };
     });
@@ -205,22 +208,19 @@ export async function prepareDraft(snapshot, member, input) {
     }
   }
   const operation = { key: "cms-" + entity.toLowerCase(), entity, ...(before ? { id } : {}), value };
-  const operations = [operation, ...setlist];
+  const operations = [operation, ...setlist, ...newTracks];
   if (["musicVideo", "karaoke"].includes(entity)) {
     if (!snapshot.models.media.videos.some((row) => row.youtubeId === value.youtubeId)) {
       const video = collectedVideo(snapshot.models, value.youtubeId);
       if (!access.canRead("video", video)) fail(403, "cms_scope_denied");
       operations.push({ key: "cms-media", entity: "video", value: video });
     }
-    if (entity === "musicVideo" && (input.newSongTitle || input.newSongUrl || input.newSongArtist)) {
-      if (value.songId || ![input.newSongTitle, input.newSongUrl, input.newSongArtist].every(
-        (part) => typeof part === "string" && part.trim(),
-      )) fail(400, "cms_invalid_input");
-      operations.push({ key: "cms-new-song", entity: "song", value: {
-        title: input.newSongTitle.trim(), originalArtists: [input.newSongArtist.trim()],
-        identityUrl: input.newSongUrl.trim(), aliases: [], readings: [], visibility: "public",
-      } });
-      value.songId = "@cms-new-song";
+    if (entity === "musicVideo") {
+      const work = newSongOperation(input, "cms-new-song");
+      if (work) {
+        operations.push(work);
+        value.songId = "@" + work.key;
+      }
     }
   }
   if (entity === "product") {
@@ -385,13 +385,14 @@ export function draftInput(workspace) {
     ...(op.entity === "karaoke" ? { videoUrl: musicVideoFields(op.value).videoUrl,
       complete: op.value.setlistStatus === "complete",
       setlist: workspace.operations.filter((row) => row.entity === "performance").map((row) => ({
-        ...setlistFields([row.value])[0], key: row.key.replace(/^cms-track-/, "").replace(/-[a-f0-9]{24}$/, ""),
+        ...setlistFields([row.value])[0],
+        ...newSongFields(workspace.operations.find((work) => work.entity === "song" && "@" + work.key === row.value.songId)),
+        key: row.key.replace(/^cms-track-/, "").replace(/-[a-f0-9]{24}$/, ""),
       })) } : {}),
     ...(op.entity === "song" ? { artists: (op.value.originalArtists || []).join("\n") } : {}),
     ...(op.entity === "musicVideo" ? {
       ...musicVideoFields(op.value),
-      ...(song ? { songId: "", newSongTitle: song.value.title, newSongUrl: song.value.identityUrl,
-        newSongArtist: song.value.originalArtists[0] } : {}),
+      ...newSongFields(song),
     } : {}),
     ...(op.entity === "talent" ? talentFields(op.value) : {}),
     ...(op.entity === "anniversary" ? anniversaryFields(op.value) : {}),

@@ -1,0 +1,19 @@
+# vNext 6 認証基盤のレビュー
+
+この段階はGoogleの認証と招待の基盤。編集者・閲覧者には本人情報とログアウトだけを許可する。既存の管理画面はオーナー向けのまま。CMSの利用開始には後続のフォーム、担当範囲と編集権限、ユーザー管理画面が必要。
+
+## 検証環境の設定
+
+Google CloudでWebアプリケーション種別のOAuthクライアントを作成し、テスト用アカウントを同意画面で許可する。承認済みリダイレクトURIには検証用WorkerのHTTPS originに /auth/google/callback を追加する。GOOGLE_ADMIN_ORIGINには同じoriginを末尾スラッシュなしで設定する。GOOGLE_CLIENT_IDはWorkerの変数、GOOGLE_CLIENT_SECRETはWorkerのSecretとして管理する。既存のGitHub OAuth設定とSESSION_KEYは維持する。
+
+オーナー認証と既存のCSRFヘッダーを利用し、POST /api/members にemail、role（editorまたはviewer）、disabled（boolean）を送る。初回認証の招待有効期間は7日間。承認済みメールは初回にGoogleのsubへ紐づき、同じメールでも別subは拒否される。更新のたびに既存Googleセッションは失効する。招待取消と無効化はdisabled=trueで行う。メール送信は行わない。
+
+## 後続の設計
+
+担当範囲は組織、グループ、コンテンツ区分で判定する。変更前後と参照先の全範囲を検査し、担当外への影響はオーナーのレビューへ送る。範囲の検証をWorkspace保存と提出の両方で行い、公開直前に最新mainで再検証する。
+
+公開にはリポジトリ限定のGitHub Appを候補とする。候補コミットをActionsでビルドして検証し、候補SHAとbase SHAを固定して検証済みの変更だけを昇格する。mainが進んだ場合は再検証か競合解決。ブランチ保護を維持できる昇格方式を導入前に確認する。Pagesのデプロイ成功を確認してから公開済みにする。編集者のメール・Google subをGitHubへ書き込まない。監査には内部IDを使用する。
+
+## 切り戻し
+
+Google設定を無効化すると新規Googleログインを止められる。既存セッションを即座に止める場合はメンバーを無効化するか旧Worker版へ戻す。SQLiteの追加レコードは既存Workspaceと別キー。DOやSESSION_KEYを再作成せず、既存オーナーセッションと下書きを維持する。実環境での導入・切り戻しは未検証。

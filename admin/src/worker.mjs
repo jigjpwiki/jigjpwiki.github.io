@@ -1,3 +1,4 @@
+import { googleAuth, emailKey } from "./google.mjs";
 import {
   Failure,
   fail,
@@ -84,6 +85,18 @@ export class Admin {
       );
     }
   }
+  atomic(callback) {
+    return this.state.blockConcurrencyWhile
+      ? this.state.blockConcurrencyWhile(async () => {
+          // Let the request handler translate expected failures without resetting the object.
+          try { return { value: await callback() }; }
+          catch (error) { return { error }; }
+        }).then(({ value, error }) => {
+          if (error) throw error;
+          return value;
+        })
+      : callback();
+  }
   async handle(request) {
     const url = new URL(request.url),
       now = Date.now();
@@ -95,6 +108,8 @@ export class Admin {
       !this.env.ADMIN_USER_IDS
     )
       fail(503, "auth_configuration");
+    if (request.method === "GET" && ["/auth/google/login", "/auth/google/callback"].includes(url.pathname))
+      return googleAuth(request, this.env, this.store, this.transport, now, (callback) => this.atomic(callback));
     if (url.pathname === "/auth/login" && request.method === "GET") {
       if (url.protocol !== "https:" && !this.env.__testStore)
         fail(400, "https_required");
@@ -191,13 +206,22 @@ export class Admin {
       /^[\w-]{43}$/.test(sid) &&
       (await this.store.get("session:" + sid));
     if (!session || session.expires <= now) fail(401, "login_required");
-    allow(session, this.env);
+    if (session.provider !== "google") allow(session, this.env);
     if (!["GET", "HEAD"].includes(request.method)) csrf(request, session);
     if (url.pathname === "/auth/logout" && request.method === "POST") {
       await this.store.delete("session:" + sid);
       return json({ ok: true }, 200, {
         "Set-Cookie": cookie("__Host-admin-session", "", 0),
       });
+    }
+    if (session.provider === "google") {
+      const entry = await this.store.get(session.memberKey);
+      const member = entry && await open(entry, this.env.SESSION_KEY);
+      if (!member || member.disabled || member.id !== session.id || member.revision !== session.revision)
+        fail(401, "login_required");
+      if (url.pathname === "/api/me" && request.method === "GET")
+        return json({ id: session.id, role: member.role, provider: "google", csrf: session.csrf, expires: session.expires });
+      fail(403, "google_route_not_enabled");
     }
     const github = new GitHub(
       await open(session.token, this.env.SESSION_KEY),
@@ -221,6 +245,28 @@ export class Admin {
     if (rate.count >= 30) fail(429, "admin_request_limit");
     rate.count++;
     await this.store.put(rateKey, rate, rate.start + 60000);
+    if (url.pathname === "/api/members" && request.method === "POST") {
+      const input = await body(request, 4096);
+      if (!input || typeof input.email !== "string" || input.email.length > 254 ||
+          !/^[^\s@]+@[^\s@]+$/.test(input.email) ||
+          !["editor", "viewer"].includes(input.role) || typeof input.disabled !== "boolean")
+        fail(400, "invalid_member");
+      const key = await emailKey(input.email);
+      return this.atomic(async () => {
+      const entry = await this.store.get(key);
+      const previous = entry && await open(entry, this.env.SESSION_KEY);
+      const member = {
+        id: previous?.id || crypto.randomUUID(),
+        sub: previous?.sub || null,
+        role: input.role,
+        disabled: input.disabled,
+        revision: random(),
+        expires: now + 7 * 86400_000,
+      };
+      await this.store.put(key, await seal(member, this.env.SESSION_KEY), Number.MAX_SAFE_INTEGER);
+      return json({ id: member.id, role: member.role, disabled: member.disabled });
+      });
+    }
     if (url.pathname.startsWith("/api/submissions")) {
       const service = new Submissions(
         this.store,

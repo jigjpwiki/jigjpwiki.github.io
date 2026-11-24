@@ -185,7 +185,10 @@ export async function mountSimpleCms(panel, status, api) {
         if (!confirm("この下書きを破棄しますか？")) return;
         try {
           await api("/api/cms/draft", "DELETE", { draftId, revision });
-          if (formArea.dataset.draftId === draftId) formArea.replaceChildren();
+          if (formArea.dataset.draftId === draftId) {
+            formArea.replaceChildren();
+            delete panel.dataset.cmsDirty;
+          }
           await refreshDrafts();
         } catch {
           status.textContent = "下書きを破棄できませんでした。";
@@ -195,6 +198,7 @@ export async function mountSimpleCms(panel, status, api) {
     }
   }
   function edit(entity, input = {}, draftId) {
+    if (panel.dataset.cmsDirty && !confirm("保存していない入力を破棄して別の編集を開きますか？")) return;
     const spec = categories[entity];
     const form = el("form");
     form.className = "stack";

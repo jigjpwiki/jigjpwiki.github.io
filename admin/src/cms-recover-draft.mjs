@@ -9,7 +9,7 @@ export function recoverAppliedGroup(saved, submitted, job, published) {
   const previous = new Map(submitted.map((op) => [op.key, op]));
   const current = new Map(saved.map((op) => [op.key, op]));
   const created = new Map(job.createdRecords?.map((row) => [row.key, row]));
-  const ids = new Map();
+  const ids = new Map([...created].map(([key, row]) => [key, row.id]));
   for (const op of submitted) {
     const latest = current.get(op.key);
     if (!latest || latest.entity !== op.entity || latest.id !== op.id) return null;
@@ -21,8 +21,8 @@ export function recoverAppliedGroup(saved, submitted, job, published) {
   const result = [];
   for (const { validationState, ...op } of saved) {
     const prior = previous.get(op.key);
-    const parent = op.parent && { ...op.parent,
-      reference: ids.get(op.parent.reference.slice(1)) ?? op.parent.reference };
+    const parent = op.parent?.reference.startsWith("@") ? { ...op.parent,
+      reference: ids.get(op.parent.reference.slice(1)) ?? op.parent.reference } : op.parent;
     const value = resolveRefs(op.value, ids, undefined, true);
     if (!prior) {
       if (op.id) return null;

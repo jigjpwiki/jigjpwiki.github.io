@@ -1,3 +1,4 @@
+import { youtubeVideoLookup } from "./cms-music.mjs";
 import { CmsJobs } from "./cms-jobs.mjs";
 import { publishingEnabled } from "./github-app.mjs";
 import { prepareDraft, draftDetails, draftInput, draftGroups, writeDraft, draftConflict } from "./cms-draft.mjs";
@@ -53,6 +54,7 @@ export class Admin {
     this.env = env;
     this.transport = env.__testFetch || ((...args) => fetch(...args));
     this.cmsSnapshot = createCmsReader(this.transport);
+    this.cmsVideoLookup = youtubeVideoLookup(env.YOUTUBE_API_KEY, this.transport);
     if (env.__testStore) this.store = env.__testStore;
     else {
       state.storage.sql.exec(
@@ -248,6 +250,10 @@ export class Admin {
         fail(401, "login_required");
       if (url.pathname === "/api/me" && request.method === "GET")
         return json({ id: session.id, role: member.role, provider: "google", csrf: session.csrf, expires: session.expires });
+      if (url.pathname === "/api/cms/publication/reconcile" && request.method === "POST") {
+        const input = await body(request, 512);
+        return json({ publication: await new CmsJobs(this).reconcile(session, input?.jobId) });
+      }
       if (url.pathname === "/api/cms/publication") {
         const jobs = new CmsJobs(this);
         if (request.method === "GET") return json({ publication: await jobs.status(session.id) });
@@ -304,7 +310,7 @@ export class Admin {
             const input = draftInput({ operations: group });
             if (!input) continue;
             try {
-              const current = await prepareDraft(snapshot, member, { ...input, sha: snapshot.sha });
+              const current = await prepareDraft(snapshot, member, { ...input, sha: snapshot.sha }, this.cmsVideoLookup);
               const conflict = draftConflict(draftId, group, current);
               drafts.push({ draftId, conflict, input: { ...input, sha: snapshot.sha } });
             } catch (error) {
@@ -329,7 +335,7 @@ export class Admin {
         if (request.method === "PUT") {
           const input = await body(request, 16000);
           if (!input || typeof input !== "object") fail(400, "cms_invalid_input");
-          const operations = await prepareDraft(snapshot, member, input);
+          const operations = await prepareDraft(snapshot, member, input, this.cmsVideoLookup);
           return this.atomic(async () => {
             await requireCurrentGrant();
             const previous = await workspace.get(session.id);

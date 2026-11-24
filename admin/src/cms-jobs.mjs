@@ -8,6 +8,7 @@ import { draftGroups } from "./cms-draft.mjs";
 
 const activeKey = "cms-publication-active";
 const queueKey = "cms-publication-queue";
+const replayKey = (owner) => "cms-publication-replay:" + owner;
 const interval = 60_000;
 const lifetime = 86400_000;
 const terminal = new Set(["published", "failed", "unconfirmed"]);
@@ -63,6 +64,14 @@ export class CmsJobs {
         return this.summary(last);
       // Changing the selection cannot make an uncertain promotion safe to repeat.
       if (last?.phase === "unconfirmed") fail(409, "cms_publication_unconfirmed");
+      const guards = await this.get(replayKey(session.id));
+      const priorCreates = last?.phase === "published"
+        ? draftGroups(last.operations).entries() : [];
+      const applied = new Set([
+        ...(guards?.workspaceId === workspace.workspaceId ? guards.draftIds : []),
+        ...Array.from(priorCreates, ([id, rows]) => rows.some((row) => !row.id) ? id : null),
+      ]);
+      if (ids.some((id) => applied.has(id))) fail(409, "cms_draft_already_applied");
       if (queue.length >= 8) fail(409, "cms_publication_busy");
       const createdAt = new Date().toISOString();
       const id = await hash([fingerprint, createdAt]);
@@ -145,13 +154,28 @@ export class CmsJobs {
       if (!current) return;
       const currentGroups = draftGroups(current.operations);
       const remove = new Set();
+      const guards = await this.get(replayKey(job.owner));
+      const blocked = new Set(guards?.workspaceId === current.workspaceId
+        ? guards.draftIds.filter((id) => currentGroups.has(id)) : []);
       for (const [id, selected] of draftGroups(job.operations)) {
         const group = currentGroups.get(id);
         // In-flight edits can introduce or change sibling operations. Preserve
         // the complete group rather than leaving unresolved temporary IDs.
         if (group?.length === selected.length &&
-            selected.every((operation) => group.some((row) => equal(row, operation))))
+            selected.every((operation) => group.some((row) => equal(row, operation)))) {
           for (const operation of group) remove.add(operation.key);
+        } else if (group && selected.some((row) => !row.id)) {
+          // This draft still carries temporary identities already materialized
+          // by the published commit. Retain it, but never allocate them again.
+          blocked.add(id);
+        }
+      }
+      if (blocked.size) {
+        // Workspace expiry extends on every save. Bind guards to its immutable
+        // ID and retain them across later publications and idle intervals.
+        await this.store.put(replayKey(job.owner), await seal({
+          workspaceId: current.workspaceId, draftIds: [...blocked],
+        }, this.env.SESSION_KEY), Number.MAX_SAFE_INTEGER);
       }
       const operations = current.operations.filter((op) => !remove.has(op.key));
       if (operations.length === current.operations.length) return;
@@ -182,6 +206,7 @@ export class CmsJobs {
     if (!job) return;
     try {
       if (Date.now() - Date.parse(job.createdAt) > lifetime) {
+        if (job.phase === "pages") await this.clearAppliedDrafts(job);
         const uncertain = job.phase === "pages" || job.phase === "promoting";
         job.phase = uncertain ? "unconfirmed" : "failed";
         job.error = uncertain ? "cms_publication_unconfirmed" : "cms_publication_timeout";

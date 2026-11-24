@@ -49,4 +49,12 @@ test("draft cleanup keeps related operations together when one was edited in fli
   const restored = await jobs.workspace.get("editor");
   assert.deepEqual(restored.operations.map(({ key }) => key), ["cms-product", "cms-sale"]);
   assert.equal(restored.operations[1].value.url, "https://example.com/b");
+
+  // A later publication can replace the status index, but cannot turn the
+  // retained temporary product into a new product again.
+  await jobs.report({ id: "unrelated", owner: "editor", phase: "published" });
+  const restarted = new CmsJobs(admin);
+  await assert.rejects(restarted.enqueue({ id: "editor" }, {
+    draftIds: ["legacy-product"], revision: restored.revision, retry: true,
+  }), /cms_draft_already_applied/);
 });

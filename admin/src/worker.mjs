@@ -1,4 +1,6 @@
 import { youtubeVideoLookup } from "./cms-music.mjs";
+import { inspectDraftConflicts } from "./cms-conflicts.mjs";
+import { publicationPlan } from "./cms-publish.mjs";
 import { CmsJobs } from "./cms-jobs.mjs";
 import { publishingEnabled } from "./github-app.mjs";
 import { prepareDraft, draftDetails, draftInput, draftGroups, writeDraft, draftConflict } from "./cms-draft.mjs";
@@ -24,7 +26,7 @@ import {
 import { GitHub, repository } from "./github.mjs";
 import { preview, forms } from "./model.mjs";
 import { Submissions } from "./submissions.mjs";
-import { finalizeAudit } from "./submission-plan.mjs";
+import { finalizeAudit, planSubmission } from "./submission-plan.mjs";
 import { WorkspaceStore, workspaceLimits } from "./workspace.mjs";
 import migration from "../../lib/source-migration.js";
 export default {
@@ -260,7 +262,7 @@ export class Admin {
         if (request.method === "POST") return json({ publication: await jobs.enqueue(session, await body(request, 4096)) }, 202);
       }
     }
-    const cmsRoutes = ["/api/cms/catalog", "/api/cms/detail", "/api/cms/draft"];
+    const cmsRoutes = ["/api/cms/catalog", "/api/cms/detail", "/api/cms/draft", "/api/cms/draft/conflicts"];
     if (cmsRoutes.includes(url.pathname)) {
       await this.atomic(async () => {
         const key = "cms-rate:" + sid;
@@ -300,6 +302,44 @@ export class Admin {
       }
       if (url.pathname === "/api/cms/detail" && request.method === "GET")
         return json({ sha: snapshot.sha, fields: draftDetails(snapshot, member, url.searchParams.get("entity"), url.searchParams.get("id")) });
+      if (url.pathname === "/api/cms/draft/conflicts") {
+        const workspace = new WorkspaceStore(this.store, this.env.SESSION_KEY);
+        const saved = await workspace.get(session.id);
+        if (request.method === "GET") {
+          const group = draftGroups(saved?.operations).get(url.searchParams.get("draftId"));
+          const { conflicts } = inspectDraftConflicts(snapshot, member, group);
+          await requireCurrentGrant();
+          return json({ conflicts, revision: saved.revision, sha: snapshot.sha });
+        }
+        if (request.method === "PUT") {
+          const input = await body(request, 16000);
+          if (!Array.isArray(input?.choices)) fail(400, "cms_conflict_choice");
+          if (input.sha !== snapshot.sha) fail(409, "main_changed_reload");
+          if (!saved || saved.revision !== input.revision) fail(409, "workspace_revision_conflict");
+          const group = draftGroups(saved.operations).get(input.draftId);
+          const { resolved, unchanged } = inspectDraftConflicts(snapshot, member, group, input.choices);
+          const changes = resolved.map(({ validationState, ...op }) => op);
+          if (!unchanged) {
+            const job = { id: input.draftId, owner: session.id, operations: changes,
+              createdAt: new Date().toISOString() };
+            if (google) await publicationPlan(snapshot, job, { ...member, directPublish: true });
+            else await planSubmission(snapshot, changes, {
+              actor: String(session.id), batchId: await hash(job.id + snapshot.sha),
+            });
+          }
+          const replaces = new Map(group.map((op, index) => [op, changes[index]]));
+          const operations = saved.operations.flatMap(({ validationState, ...op }, index) => {
+            const source = saved.operations[index];
+            if (!replaces.has(source)) return [op];
+            return unchanged ? [] : [replaces.get(source)];
+          });
+          return this.atomic(async () => {
+            await requireCurrentGrant();
+            const result = await workspace.save(session.id, { protocol: 1, revision: input.revision, operations });
+            return json({ revision: result.revision });
+          });
+        }
+      }
       if (url.pathname === "/api/cms/draft") {
         if (member.role !== "editor") fail(403, "cms_scope_denied");
         const workspace = new WorkspaceStore(this.store, this.env.SESSION_KEY);

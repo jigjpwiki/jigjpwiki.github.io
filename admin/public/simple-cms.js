@@ -1,3 +1,5 @@
+import { renderDraftConflicts } from "./cms-conflicts.js";
+
 const labels = {
   artists: ["原曲アーティスト（1行に1名）", "textarea"],
   aliases: ["曲の別名（1行に1件）", "textarea"], readings: ["曲名の読み（1行に1件）", "textarea"],
@@ -150,6 +152,13 @@ export async function mountSimpleCms(panel, status, api) {
       }
       if (conflict) row.append(el("p", (input?.title || "下書き") + "：元の情報が変更されたか、現在の担当範囲外です。"));
       else row.append(button(input.title || input.displayName || input.rawSongTitle, () => edit(input.entity, input, draftId)));
+      if (conflict) row.append(button("最新の情報と比較", async () => {
+        try {
+          await renderDraftConflicts({ container: row, api, draftId, afterSave: refreshDrafts });
+        } catch {
+          status.textContent = "最新データと比較できませんでした。現在の担当範囲と対象の公開状態をご確認ください。";
+        }
+      }));
       row.append(button("この下書きを破棄", async () => {
         if (!confirm("この下書きを破棄しますか？")) return;
         try {

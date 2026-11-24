@@ -374,7 +374,9 @@ async function start() {
       status.setAttribute("role", "status");
       panel.append(node("h2", "担当コンテンツ"), logout, status);
       import("./simple-cms.js").then(({ mountSimpleCms }) => mountSimpleCms(panel, status, api))
-        .catch(() => { status.textContent = "担当コンテンツを取得できませんでした。"; });
+        .catch((error) => { status.textContent = error.message === "cms_read_unavailable"
+          ? "GitHubから担当コンテンツを取得できませんでした。少し待ってから再読み込みしてください。"
+          : "担当コンテンツを取得できませんでした。"; });
       $("#app").replaceChildren(panel);
       return;
     }
@@ -1705,7 +1707,9 @@ screen = function () {
     panel.append(node("h2", "簡易CMS"), actions, status);
     $("#view").replaceChildren(panel);
     import("./simple-cms.js").then(({ mountSimpleCms }) => mountSimpleCms(panel, status, api))
-      .catch(() => { status.textContent = "コンテンツを取得できませんでした。"; });
+      .catch((error) => { status.textContent = error.message === "cms_read_unavailable"
+        ? "GitHubからコンテンツを取得できませんでした。少し待ってから再読み込みするか、高度な管理画面をご利用ください。"
+        : "コンテンツを取得できませんでした。"; });
     return;
   }
   if (route === "#settings") {

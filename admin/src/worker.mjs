@@ -4,7 +4,7 @@ import { readCmsHistory, prepareAuditReversal, assertReversalRoundTrip } from ".
 import { inspectDraftConflicts } from "./cms-conflicts.mjs";
 import { publicationPlan } from "./cms-publish.mjs";
 import { CmsJobs } from "./cms-jobs.mjs";
-import { publishingEnabled } from "./github-app.mjs";
+import { installationReadToken, publishingEnabled } from "./github-app.mjs";
 import { prepareDraft, draftDetails, draftInput, draftGroups, writeDraft, draftConflict } from "./cms-draft.mjs";
 import { cmsPermissions } from "./cms-scope.mjs";
 import { createCmsReader } from "./cms-read.mjs";
@@ -274,6 +274,9 @@ export class Admin {
       });
       const snapshot = await this.cmsSnapshot({
         revalidate: request.method !== "GET" || url.pathname === "/api/cms/draft/conflicts",
+        getReadToken: google
+          ? () => installationReadToken(this.env, this.transport)
+          : () => github.token,
       });
       const requireCurrentGrant = async () => {
         if (google ? entry !== await this.store.get(session.memberKey) || !googleEnabled(this.env)

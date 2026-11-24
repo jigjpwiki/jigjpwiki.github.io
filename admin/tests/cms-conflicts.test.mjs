@@ -39,3 +39,61 @@ test("revoked roles and current record visibility prevent disclosure of comparis
   snapshot.models.events.events[0].visibility = "draft";
   assert.throws(() => inspectDraftConflicts(snapshot, member, operations), /cms_scope_denied/);
 });
+
+test("Worker applies reviewed choices through Workspace compare-and-swap", async () => {
+  const { Admin } = await import("../src/worker.mjs");
+  const { random, seal } = await import("../src/security.mjs");
+  const { WorkspaceStore } = await import("../src/workspace.mjs");
+  const { snapshot, operations } = setup();
+  const id = "1";
+  const sid = random();
+  const key = random();
+  const expiry = Date.now() + 60000;
+  const csrf = "conflict-test";
+  const rows = new Map();
+  const store = {
+    get: async (item) => rows.get(item),
+    put: async (item, value) => rows.set(item, value),
+    delete: async (item) => rows.delete(item),
+  };
+  await store.put("session:" + sid, { id, token: await seal("fixture-token", key), expires: expiry, csrf });
+  const workspace = new WorkspaceStore(store, key);
+  const draftId = "a".repeat(24);
+  const [operation] = operations;
+  await workspace.save(id, { protocol: 1, revision: 0, operations: [
+    { ...operation, key: operation.key + "-" + draftId },
+  ] });
+  const admin = new Admin({}, {
+    ADMIN_USER_IDS: id, SESSION_KEY: key, GITHUB_CLIENT_ID: "fixture", GITHUB_CLIENT_SECRET: "fixture", __testStore: store,
+    __testFetch: async (url) => url.endsWith("/user")
+      ? Response.json({ id, login: "owner" })
+      : Response.json({ default_branch: "main", permissions: { push: true } }),
+  });
+  admin.cmsSnapshot = async () => snapshot;
+  const origin = "https://admin.test";
+  const headers = {
+    Cookie: "__Host-admin-session=" + sid,
+    Origin: origin,
+    "Content-Type": "application/json",
+    "X-CSRF-Token": csrf,
+  };
+  const url = origin + "/api/cms/draft/conflicts";
+  const preview = await admin.fetch(new Request(url + "?draftId=" + draftId, { headers }));
+  assert.equal(preview.status, 200, await preview.clone().text());
+  const { revision, sha, conflicts } = await preview.json();
+  assert.equal(revision, 1);
+  assert.equal(conflicts[0].field, "/title");
+  const put = (fields) => admin.fetch(new Request(url, {
+    method: "PUT", headers, body: JSON.stringify({ draftId, revision, sha, choices: ["theirs"], ...fields }),
+  }));
+  assert.equal((await put({ sha: "old" })).status, 409);
+  const saved = await put({});
+  assert.equal(saved.status, 200, await saved.clone().text());
+  assert.equal((await put({})).status, 409);
+  const after = await workspace.get(id);
+  assert.equal(after.operations[0].baseCommit, snapshot.sha);
+  assert.equal(after.operations[0].before.title, "最新のイベント名");
+  assert.equal(after.operations[0].value.title, "最新のイベント名");
+  assert.equal(after.operations[0].value.venue, "最新の会場");
+  assert.equal(after.operations[0].value.summary, "自分の概要");
+});

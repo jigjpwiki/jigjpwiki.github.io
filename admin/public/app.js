@@ -311,10 +311,25 @@ function screen() {
   );
 }
 let acceptedHash = location.hash;
-window.addEventListener("hashchange", () => {
+window.addEventListener("hashchange", async () => {
   if (activeEditor?.dirty && !mayLeave()) {
     history.replaceState(null, "", acceptedHash || "#masters");
     return;
+  }
+  if (me?.simpleCms && (location.hash === "#cms" || acceptedHash === "#cms")) {
+    if (workspace?.dirty) {
+      history.replaceState(null, "", acceptedHash || "#dashboard");
+      showStatus("変更内容を保存してから編集モードを切り替えてください。");
+      return;
+    }
+    if (acceptedHash === "#cms") {
+      try { await workspace.load(); }
+      catch {
+        history.replaceState(null, "", "#cms");
+        showStatus("下書きを取得できませんでした。");
+        return;
+      }
+    }
   }
   activeEditor = null;
   acceptedHash = location.hash;
@@ -348,6 +363,13 @@ async function start() {
         .catch(() => { status.textContent = "担当コンテンツを取得できませんでした。"; });
       $("#app").replaceChildren(panel);
       return;
+    }
+    if (me.simpleCms) {
+      $("#simple-cms-link").hidden = false;
+      if (!location.hash) {
+        history.replaceState(null, "", "#cms");
+        acceptedHash = "#cms";
+      }
     }
     $("#identity").textContent = `${me.login} / 管理者 / ${me.repository}`;
     $("#logout").onclick = async () => {
@@ -1650,6 +1672,18 @@ screen = function () {
     if (a.hash === (location.hash || "#dashboard"))
       a.setAttribute("aria-current", "page");
     else a.removeAttribute("aria-current");
+  }
+  if (route === "#cms" && me.simpleCms) {
+    $("#page-title").textContent = "簡易CMS";
+    const panel = node("section");
+    panel.className = "stack";
+    const status = node("p", "読み込み中…");
+    status.setAttribute("role", "status");
+    panel.append(node("h2", "簡易CMS"), node("p", "下書きの確認・公開申請は「変更内容」から行えます。"), status);
+    $("#view").replaceChildren(panel);
+    import("./simple-cms.js").then(({ mountSimpleCms }) => mountSimpleCms(panel, status, api))
+      .catch(() => { status.textContent = "コンテンツを取得できませんでした。"; });
+    return;
   }
   if (route === "#settings") {
     oldScreen();

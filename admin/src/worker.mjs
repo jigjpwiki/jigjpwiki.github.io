@@ -227,10 +227,23 @@ export class Admin {
         "Set-Cookie": cookie("__Host-admin-session", "", 0),
       });
     }
-    if (session.provider === "google") {
+    let github;
+    const google = session.provider === "google";
+    if (!google) {
+      github = new GitHub(
+        await open(session.token, this.env.SESSION_KEY),
+        this.transport,
+      );
+      const identity = await github.identity();
+      if (String(identity.id) !== session.id)
+        fail(403, "session_identity_changed");
+      allow(identity, this.env);
+    }
+    let googleMember, entry;
+    if (google) {
       if (!googleEnabled(this.env)) fail(401, "login_required");
-      const entry = await this.store.get(session.memberKey);
-      const member = entry && await open(entry, this.env.SESSION_KEY);
+      entry = await this.store.get(session.memberKey);
+      const member = googleMember = entry && await open(entry, this.env.SESSION_KEY);
       if (!member || member.disabled || member.id !== session.id || member.revision !== session.revision)
         fail(401, "login_required");
       if (url.pathname === "/api/me" && request.method === "GET")
@@ -240,94 +253,100 @@ export class Admin {
         if (request.method === "GET") return json({ publication: await jobs.status(session.id) });
         if (request.method === "POST") return json({ publication: await jobs.enqueue(session, await body(request, 4096)) }, 202);
       }
-      const cmsRoutes = ["/api/cms/catalog", "/api/cms/detail", "/api/cms/draft"];
-      if (cmsRoutes.includes(url.pathname)) {
-        const snapshot = await this.cmsSnapshot();
-        const requireCurrentGrant = async () => {
-          if (entry !== await this.store.get(session.memberKey) || !googleEnabled(this.env))
-            fail(401, "login_required");
-        };
-        await requireCurrentGrant();
-        const { models } = snapshot;
-        if (url.pathname === "/api/cms/catalog" && request.method === "GET") {
-          const access = cmsPermissions(models, { ...member, scope: {
-            ...member.scope, categories: ["talents"],
-          } });
-          return json({
-            sha: snapshot.sha, sections: scopedCatalog(models, member),
-            songs: member.scope?.categories.includes("music")
-              ? models.music.songs.filter((song) => song.visibility === "public")
-                .map(({ id, title, originalArtists }) => ({ id, name: title + (originalArtists?.length ? " / " + originalArtists.join("、") : "") }))
-              : [],
-            editable: member.role === "editor", publishable: member.role === "editor" && member.directPublish === true && publishingEnabled(this.env), categories: member.scope?.categories ?? [],
-            organizations: models.talents.organizations.filter((row) => member.scope?.organizations.includes(row.id)),
-            people: models.talents.talents.filter((row) => access.canRead("talent", row))
-              .map((row) => ({ id: row.id, name: row.displayName })),
+    }
+    const cmsRoutes = ["/api/cms/catalog", "/api/cms/detail", "/api/cms/draft"];
+    if (cmsRoutes.includes(url.pathname)) {
+      await this.atomic(async () => {
+        const key = "cms-rate:" + sid;
+        const rate = await this.store.get(key) || { count: 0, expires: now + 60000 };
+        if (rate.count >= 30) fail(429, "admin_request_limit");
+        await this.store.put(key, { ...rate, count: rate.count + 1 }, rate.expires);
+      });
+      const snapshot = await this.cmsSnapshot();
+      const requireCurrentGrant = async () => {
+        if (google ? entry !== await this.store.get(session.memberKey) || !googleEnabled(this.env)
+          : !(await this.store.get("session:" + sid)) || session.expires <= Date.now())
+          fail(401, "login_required");
+      };
+      await requireCurrentGrant();
+      const { models } = snapshot;
+      const member = google ? googleMember : {
+        role: "editor", owner: true, scope: {
+          categories: ["talents", "anniversaries", "events", "music", "goods"],
+          organizations: models.talents.organizations.map(({ id }) => id), groups: [],
+        },
+      };
+      if (url.pathname === "/api/cms/catalog" && request.method === "GET") {
+        const access = cmsPermissions(models, { ...member, scope: {
+          ...member.scope, categories: ["talents"],
+        } });
+        return json({
+          sha: snapshot.sha, sections: scopedCatalog(models, member),
+          songs: member.scope?.categories.includes("music")
+            ? models.music.songs.filter((song) => song.visibility === "public")
+              .map(({ id, title, originalArtists }) => ({ id, name: title + (originalArtists?.length ? " / " + originalArtists.join("、") : "") }))
+            : [],
+          editable: member.role === "editor", publicationTracking: google, publishable: member.role === "editor" && member.directPublish === true && publishingEnabled(this.env), categories: member.scope?.categories ?? [],
+          organizations: models.talents.organizations.filter((row) => member.scope?.organizations.includes(row.id)),
+          people: models.talents.talents.filter((row) => access.canRead("talent", row))
+            .map((row) => ({ id: row.id, name: row.displayName })),
+        });
+      }
+      if (url.pathname === "/api/cms/detail" && request.method === "GET")
+        return json({ sha: snapshot.sha, fields: draftDetails(snapshot, member, url.searchParams.get("entity"), url.searchParams.get("id")) });
+      if (url.pathname === "/api/cms/draft") {
+        if (member.role !== "editor") fail(403, "cms_scope_denied");
+        const workspace = new WorkspaceStore(this.store, this.env.SESSION_KEY);
+        if (request.method === "GET") {
+          const saved = await workspace.get(session.id);
+          const drafts = [];
+          for (const [draftId, group] of draftGroups(saved?.operations)) {
+            const input = draftInput({ operations: group });
+            if (!input) continue;
+            try {
+              const current = await prepareDraft(snapshot, member, { ...input, sha: snapshot.sha });
+              const conflict = draftConflict(draftId, group, current);
+              drafts.push({ draftId, conflict, input: { ...input, sha: snapshot.sha } });
+            } catch (error) {
+              if (!(error instanceof Failure)) throw error;
+              drafts.push({ draftId, conflict: true, input: null });
+            }
+          }
+          await requireCurrentGrant();
+          return json({ revision: saved?.revision ?? 0, drafts });
+        }
+        if (request.method === "DELETE") {
+          const input = await body(request, 1000);
+          if (typeof input?.draftId !== "string") fail(400, "cms_invalid_input");
+          return this.atomic(async () => {
+            await requireCurrentGrant();
+            const previous = await workspace.get(session.id);
+            const { operations } = writeDraft(previous?.operations || [], input.draftId);
+            const saved = await workspace.save(session.id, { protocol: 1, revision: input.revision, operations });
+            return json({ revision: saved.revision });
           });
         }
-        if (url.pathname === "/api/cms/detail" && request.method === "GET")
-          return json({ sha: snapshot.sha, fields: draftDetails(snapshot, member, url.searchParams.get("entity"), url.searchParams.get("id")) });
-        if (url.pathname === "/api/cms/draft") {
-          if (member.role !== "editor") fail(403, "cms_scope_denied");
-          const workspace = new WorkspaceStore(this.store, this.env.SESSION_KEY);
-          if (request.method === "GET") {
-            const saved = await workspace.get(session.id);
-            const drafts = [];
-            for (const [draftId, group] of draftGroups(saved?.operations)) {
-              const input = draftInput({ operations: group });
-              if (!input) continue;
-              try {
-                const current = await prepareDraft(snapshot, member, { ...input, sha: snapshot.sha });
-                const conflict = draftConflict(draftId, group, current);
-                drafts.push({ draftId, conflict, input: { ...input, sha: snapshot.sha } });
-              } catch (error) {
-                if (!(error instanceof Failure)) throw error;
-                drafts.push({ draftId, conflict: true, input: null });
-              }
-            }
+        if (request.method === "PUT") {
+          const input = await body(request, 16000);
+          if (!input || typeof input !== "object") fail(400, "cms_invalid_input");
+          const operations = await prepareDraft(snapshot, member, input);
+          return this.atomic(async () => {
             await requireCurrentGrant();
-            return json({ revision: saved?.revision ?? 0, drafts });
-          }
-          if (request.method === "DELETE") {
-            const input = await body(request, 1000);
-            if (typeof input?.draftId !== "string") fail(400, "cms_invalid_input");
-            return this.atomic(async () => {
-              await requireCurrentGrant();
-              const previous = await workspace.get(session.id);
-              const { operations } = writeDraft(previous?.operations || [], input.draftId);
-              const saved = await workspace.save(session.id, { protocol: 1, revision: input.revision, operations });
-              return json({ revision: saved.revision });
-            });
-          }
-          if (request.method === "PUT") {
-            const input = await body(request, 16000);
-            if (!input || typeof input !== "object") fail(400, "cms_invalid_input");
-            const operations = await prepareDraft(snapshot, member, input);
-            return this.atomic(async () => {
-              await requireCurrentGrant();
-              const previous = await workspace.get(session.id);
-              const batch = writeDraft(previous?.operations || [], input.draftId, operations);
-              const saved = await workspace.save(session.id, { protocol: 1, revision: input.revision, operations: batch.operations });
-              return json({ revision: saved.revision, draftId: batch.id });
-            });
-          }
+            const previous = await workspace.get(session.id);
+            const batch = writeDraft(previous?.operations || [], input.draftId, operations);
+            const saved = await workspace.save(session.id, { protocol: 1, revision: input.revision, operations: batch.operations });
+            return json({ revision: saved.revision, draftId: batch.id });
+          });
         }
       }
-      fail(403, "google_route_not_enabled");
     }
-    const github = new GitHub(
-      await open(session.token, this.env.SESSION_KEY),
-      this.transport,
-    );
-    const identity = await github.identity();
-    if (String(identity.id) !== session.id)
-      fail(403, "session_identity_changed");
-    allow(identity, this.env);
+    if (google) fail(403, "google_route_not_enabled");
     if (url.pathname === "/api/me" && request.method === "GET")
       return json({
         id: session.id,
         login: session.login,
         role: "owner",
+        simpleCms: true,
         csrf: session.csrf,
         expires: session.expires,
         repository,

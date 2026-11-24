@@ -104,6 +104,7 @@ export function cmsPermissions(models, member) {
 
   function canRead(entity, row) {
     if (!row || !scope.categories.includes(types[entity]?.category)) return false;
+    if (member.owner === true) return (row.visibility ?? "public") === "public";
     if (entity === "song") return row.visibility === "public" && canEditSong(models, { canRead }, row.id);
     const result = resolve(entity, row, new Set());
     return result.allowed && result.anchored;
@@ -113,6 +114,7 @@ export function cmsPermissions(models, member) {
     if (member.role !== "editor" || (publish && member.directPublish !== true) ||
         !after || (before && !canRead(entity, before)) || !canRead(entity, after))
       fail(403, "cms_scope_denied");
+    if (member.owner === true) return;
     if (entity === "talent") {
       if (!before && (after.affiliations.length !== 1 ||
           after.affiliations[0].status !== "current" ||

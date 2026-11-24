@@ -181,3 +181,14 @@ test("collected media, new work and song video remain one scoped publication bat
   assert.equal(plan.files.music.musicVideos.at(-1).songId, plan.files.music.songs.at(-1).id);
   assert.equal(plan.files.media.videos.at(-1).channelId, channel);
 });
+
+test("an editor cannot obtain a channel association by creating a talent", async () => {
+  const editor = { ...member, scope: { ...member.scope, categories: ["talents"] } };
+  const input = {
+    sha: snapshot.sha, entity: "talent", organization: "org-000003",
+    displayName: "新規登録試験", image: "", activity: "unknown",
+    officialProfileUrl: "https://example.com/profile",
+    youtubeUrl: "https://www.youtube.com/channel/UC1234567890123456789012",
+  };
+  await assert.rejects(prepareDraft(snapshot, editor, input), /cms_identity_anchor/);
+});

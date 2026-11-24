@@ -38,19 +38,22 @@ export function nextId(models, prefix, registry) {
   issued.push(id);
   return id;
 }
-export function resolveRefs(value, ids, field) {
+export function resolveRefs(value, ids, field, keepUnmapped = false) {
   if (
     typeof value === "string" &&
     value.startsWith("@") &&
     refFields.has(field)
   ) {
-    if (!ids.has(value.slice(1))) fail(400, "missing_batch_reference");
+    if (!ids.has(value.slice(1))) {
+      if (keepUnmapped) return value;
+      fail(400, "missing_batch_reference");
+    }
     return ids.get(value.slice(1));
   }
-  if (Array.isArray(value)) return value.map((v) => resolveRefs(v, ids, field));
+  if (Array.isArray(value)) return value.map((v) => resolveRefs(v, ids, field, keepUnmapped));
   if (value && typeof value === "object")
     return Object.fromEntries(
-      Object.entries(value).map(([k, v]) => [k, resolveRefs(v, ids, k)]),
+      Object.entries(value).map(([k, v]) => [k, resolveRefs(v, ids, k, keepUnmapped)]),
     );
   return value;
 }

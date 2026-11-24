@@ -44,7 +44,7 @@ export function cmsPermissions(models, member) {
   function resolve(entity, row, seen) {
     if ((entity === "talent" ? row.visibility ?? "public" : row.visibility) !== "public") return { allowed: false, anchored: false };
     if (seen.has(row)) return { allowed: true, anchored: false };
-    seen.add(row);
+    seen = new Set(seen).add(row);
     let anchored = false;
     if (entity === "talent") {
       const current = row.affiliations.filter((affiliation) => affiliation.status === "current");
@@ -86,6 +86,17 @@ export function cmsPermissions(models, member) {
       });
     }
 
+    if (entity === "campaign") {
+      const offers = models.goods.offers.filter((offer) => offer.campaignId === row.id);
+      if (!offers.length) return { allowed: false, anchored: false };
+      for (const offer of offers) {
+        const product = byType.product.get(offer.productId);
+        if (!product || offer.visibility !== "public") return { allowed: false, anchored: false };
+        const result = resolve("product", product, seen);
+        if (!result.allowed) return { allowed: false, anchored: false };
+        anchored ||= result.anchored;
+      }
+    }
     const allowed = visit(row);
     return { allowed, anchored };
   }
@@ -112,7 +123,7 @@ export function cmsPermissions(models, member) {
 
 export function scopedCatalog(models, member) {
   const permissions = cmsPermissions(models, member);
-  return ["talent", "anniversary", "event", "song", "musicVideo", "karaoke", "product"].map((entity) => {
+  return ["talent", "anniversary", "event", "song", "musicVideo", "karaoke", "product", "campaign"].map((entity) => {
     const type = types[entity];
     return {
       category: type.category,

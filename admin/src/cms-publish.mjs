@@ -20,7 +20,7 @@ export async function publicationPlan(snapshot, job, member) {
   const batchId = await hash({ id: job.id, base: snapshot.sha });
   const before = cmsPermissions(snapshot.models, member);
   for (const op of job.operations) {
-    if (!["event", "product", "offer", "anniversary"].includes(op.entity) ||
+    if (!["event", "product", "offer", "anniversary", "campaign"].includes(op.entity) ||
         (op.id && !before.canRead(op.entity, recordAt(snapshot.models, op))))
       fail(403, "cms_scope_denied");
     if (op.entity === "product" && op.id) {
@@ -28,7 +28,7 @@ export async function publicationPlan(snapshot, job, member) {
       if (offers.length > 1 || offers.some((offer) => offer.campaignId !== null || !before.canRead("offer", offer)))
         fail(403, "cms_shared_goods");
     }
-    if (op.entity === "offer" && op.value.campaignId !== null) fail(403, "cms_shared_goods");
+    if (op.entity === "offer" && op.id && op.value.campaignId !== null) fail(403, "cms_shared_goods");
   }
   // Preserve the numeric audit format with a namespaced opaque internal identifier.
   const uuid = job.owner.replaceAll("-", "");
@@ -40,7 +40,7 @@ export async function publicationPlan(snapshot, job, member) {
   if (plan.conflicts?.length) fail(409, "cms_publish_conflict");
   const after = cmsPermissions({ ...snapshot.models, ...plan.files }, member);
   for (const row of plan.impact.records) {
-    if (!entities[row.entity] || !["event", "product", "offer", "anniversary"].includes(row.entity)) fail(403, "cms_scope_denied");
+    if (!entities[row.entity] || !["event", "product", "offer", "anniversary", "campaign"].includes(row.entity)) fail(403, "cms_scope_denied");
     after.assertChange(row.entity, null, row.value, { publish: true });
   }
   return { plan: { ...plan, sha: snapshot.sha, tree: snapshot.tree }, batchId };

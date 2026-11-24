@@ -182,6 +182,15 @@ export async function mountSimpleCms(panel, status, api) {
       add(key, entity === "event" ? "関連事務所" : "関連する人物", select);
       search.oninput = () => fill(search.value, select.value);
     }
+    if (entity === "product" && !input.id) {
+      const campaigns = catalog.sections.find(({ entity }) => entity === "campaign")?.items || [];
+      const select = el("select");
+      select.append(new Option("キャンペーンなし／新規", ""), ...campaigns.map(
+        ({ id, title }) => new Option(title, id),
+      ));
+      add("campaignId", "既存キャンペーン（任意）", select);
+      add("campaignTitle", "新しいキャンペーン名（任意）", el("input"));
+    }
     if (entity === "event") {
       const performers = el("fieldset");
       performers.append(el("legend", "出演者"));

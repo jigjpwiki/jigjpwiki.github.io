@@ -73,3 +73,16 @@ test("event performer changes reject out of scope references", async () => {
   assert.deepEqual(operations[0].value.talentIds, ["tal-000010"]);
   await assert.rejects(prepareDraft(snapshot, member, { ...event, performers: ["tal-000001"] }), /cms_scope_denied/);
 });
+
+test("campaign and sale references survive saving and restore", async () => {
+  const { writeDraft, draftGroups } = await import("../src/cms-draft.mjs");
+  const input = { sha: snapshot.sha, entity: "product", talent: "tal-000010",
+    title: "キャンペーン商品試験", image: "", identityUrl: "https://example.com/product",
+    url: "https://example.com/sale", price: "1200", campaignTitle: "キャンペーン試験" };
+  const saved = writeDraft([], undefined, await prepareDraft(snapshot, member, input));
+  const group = draftGroups(saved.operations).get(saved.id);
+  assert.equal(group[1].value.productId, "@" + group[0].key);
+  assert.equal(group[1].value.campaignId, "@" + group[2].key);
+  assert.equal(draftInput({ operations: group }).campaignTitle, input.campaignTitle);
+  await prepareDraft(snapshot, member, { ...input, campaignTitle: "", campaignId: "campaign-000001" });
+});

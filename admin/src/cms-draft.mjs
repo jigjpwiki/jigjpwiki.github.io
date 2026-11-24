@@ -1,4 +1,4 @@
-import { contentPreview } from "./content-plan.mjs";
+import { contentPreview, resolveRefs } from "./content-plan.mjs";
 import { cmsPermissions } from "./cms-scope.mjs";
 import { fail, hash } from "./security.mjs";
 
@@ -79,15 +79,23 @@ export async function prepareDraft(snapshot, member, input) {
     [oldOffer] = offers;
     if (typeof input.url !== "string" || typeof input.price !== "string" ||
         (input.price && !/^\d+(?:\.\d+)?$/.test(input.price))) fail(400, "cms_invalid_input");
+    if (input.campaignId && input.campaignTitle) fail(400, "cms_invalid_input");
+    if (id && (input.campaignId || input.campaignTitle)) fail(403, "cms_shared_goods");
+    if ((input.campaignId || input.campaignTitle) && !input.url) fail(400, "cms_invalid_input");
     if (input.url || oldOffer) operations.push({
       key: "cms-sale", entity: "offer", ...(oldOffer ? { id: oldOffer.id } : {}),
       value: {
-        ...(oldOffer || { productId: id || "@cms-product", campaignId: null, startsAt: null, endsAt: null,
+        ...(oldOffer || { productId: id || "@cms-product", campaignId: input.campaignTitle ? "@cms-campaign" : input.campaignId || null, startsAt: null, endsAt: null,
           periodNote: null, status: "unknown", visibility: "public" }),
         url: input.url.trim(),
         price: { amount: input.price ? Number(input.price) : null, currency: input.price ? oldOffer?.price.currency || "JPY" : null },
       },
     });
+    if (input.campaignTitle) {
+      if (typeof input.campaignTitle !== "string") fail(400, "cms_invalid_input");
+      operations.push({ key: "cms-campaign", entity: "campaign",
+        value: { title: input.campaignTitle.trim(), visibility: "public" } });
+    }
   }
   const batch = { operations };
   await contentPreview(snapshot, {
@@ -141,6 +149,7 @@ export function draftDetails(snapshot, member, entity, id) {
 
 export function draftInput(workspace) {
   const [op, sale] = workspace?.operations || [];
+  const campaign = workspace?.operations.find((row) => row.entity === "campaign");
   if (!op || !Object.hasOwn(draftTypes, op.entity)) return null;
   return {
     entity: op.entity, id: op.id, sha: op.baseCommit,
@@ -150,6 +159,7 @@ export function draftInput(workspace) {
     ...(op.entity === "anniversary" ? anniversaryFields(op.value) : {}),
     ...(op.entity === "event" ? eventFields(op.value) : {}),
     ...(op.entity === "product" ? {
+      campaignId: campaign ? "" : sale?.value.campaignId ?? "", campaignTitle: campaign?.value.title ?? "",
       url: sale?.value.url ?? "", currency: sale?.value.price.currency ?? "JPY", price: String(sale?.value.price.amount ?? ""),
     } : {}),
   };
@@ -158,7 +168,7 @@ export function draftInput(workspace) {
 export function draftGroups(operations = []) {
   const groups = new Map();
   for (const op of operations) {
-    const match = /^cms-(event|product|sale|anniversary)(?:-([a-f0-9]{24}))?$/.exec(op.key);
+    const match = /^cms-(event|product|sale|anniversary|campaign)(?:-([a-f0-9]{24}))?$/.exec(op.key);
     const key = match?.[2] || (match && (match[1] === "event" ? "legacy-event" : "legacy-product"));
     if (!key) continue;
     if (!groups.has(key)) groups.set(key, []);
@@ -183,10 +193,11 @@ export function writeDraft(operations, draftId, replacement) {
     fail(409, "main_changed_reload");
   const id = existing || crypto.randomUUID().replaceAll("-", "").slice(0, 24);
   const suffix = id.startsWith("legacy-") ? "" : "-" + id;
+  const names = new Map((replacement || []).map((op) => [op.key, "@" + op.key + suffix]));
   const next = replacement?.map((op) => ({
     ...op, key: op.key + suffix,
-    value: op.entity === "offer" && op.value.productId === "@cms-product"
-      ? { ...op.value, productId: "@cms-product" + suffix } : op.value,
+    value: resolveRefs(op.value, names, undefined, true),
+    ...(op.parent ? { parent: { ...op.parent, reference: names.get(op.parent.reference.slice(1)) ?? op.parent.reference } } : {}),
   })) ?? [];
   return { id, operations: [
     ...operations.filter((op) => !previous?.includes(op)).map(({ validationState, ...op }) => op),

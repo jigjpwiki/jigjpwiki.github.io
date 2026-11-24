@@ -90,7 +90,9 @@ export class CmsJobs {
 
   summary(job) {
     return job ? { id: job.id, phase: job.phase, commit: job.commit ?? null, error: job.error ?? null,
-      createdAt: job.createdAt, mainConfirmed: job.mainConfirmed === true } : null;
+      createdAt: job.createdAt, mainConfirmed: job.mainConfirmed === true,
+      ...((job.mainConfirmed || job.phase === "published") && job.createdRecords?.length
+        ? { createdRecords: job.createdRecords } : {}) } : null;
   }
 
   async status(owner) {
@@ -167,6 +169,10 @@ export class CmsJobs {
         delete job.commit;
       }
       const { plan, batchId } = await publicationPlan(snapshot, job, member, youtubeVideoLookup(this.env.YOUTUBE_API_KEY, this.admin.transport));
+      // The validated plan identifies newly allocated fixed IDs. Keep only
+      // the correspondence, and disclose it after observing the commit on main.
+      job.createdRecords = plan.impact.records.filter((row) => row.action === "create")
+        .map(({ key, entity, id }) => ({ key, entity, id }));
       job.phase = "candidate";
       job.branch = "cms/candidate-" + batchId;
       await this.report(job);
@@ -198,6 +204,7 @@ export class CmsJobs {
     }
 
     job.phase = "pages";
+    job.mainConfirmed = true;
     await this.report(job);
   }
 

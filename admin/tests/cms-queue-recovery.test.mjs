@@ -78,12 +78,15 @@ test("manual reconciliation only accepts positive main and Pages evidence for th
     return new Response(deployed);
   };
   const jobs = new CmsJobs(admin);
-  const job = { id: "one", owner: "editor", commit: sha, phase: "unconfirmed", operations: [] };
+  const createdRecords = [{ key: "cms-product", entity: "product", id: "product-000001" }];
+  const job = { id: "one", owner: "editor", commit: sha, phase: "unconfirmed", operations: [], createdRecords };
   await assert.rejects(jobs.reconcile({ id: "editor" }), /cms_publication_missing/);
   await jobs.report(job);
   await assert.rejects(jobs.reconcile({ id: "other" }, job.id), /cms_publication_missing/);
   assert.equal(reads, 0);
-  assert.equal((await jobs.reconcile({ id: "editor" }, job.id)).mainConfirmed, false);
+  const uncertain = await jobs.reconcile({ id: "editor" }, job.id);
+  assert.equal(uncertain.mainConfirmed, false);
+  assert.equal(uncertain.createdRecords, undefined);
   assert.equal(reads, 2);
   await assert.rejects(jobs.reconcile({ id: "editor" }, job.id), /cms_publication_reconcile_wait/);
 
@@ -92,6 +95,7 @@ test("manual reconciliation only accepts positive main and Pages evidence for th
   included = true;
   const confirmed = await jobs.reconcile({ id: "editor" }, job.id);
   assert.equal(confirmed.mainConfirmed, true);
+  assert.deepEqual(confirmed.createdRecords, createdRecords);
   assert.equal(confirmed.phase, "unconfirmed");
   deployed = head;
   assert.equal((await jobs.reconcile({ id: "editor" }, job.id)).phase, "published");

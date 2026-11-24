@@ -282,7 +282,7 @@ export async function mountSimpleCms(panel, status, api) {
       }
       add(key, key === "fee" ? "料金（" + (input.feeCurrency || "JPY") + "）" : key === "price" && input.currency ? "価格（" + input.currency + "）" : label, control);
     }
-    if ((!input.id && entity !== "campaign") || entity === "talent") {
+    if ((!input.id && !["campaign", "song", "video"].includes(entity)) || entity === "talent") {
       const key = ["talent", "event"].includes(entity) ? "organization" : "talent";
       const choices = key === "organization" ? catalog.organizations : catalog.people;
       const search = el("input");

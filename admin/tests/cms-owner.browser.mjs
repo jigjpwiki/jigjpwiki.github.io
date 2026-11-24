@@ -45,17 +45,35 @@ export async function cmsOwnerBrowser({ browser, base, mainSha }) {
     await page.getByLabel("販売ページURL", { exact: true }).fill("https://example.com/owner-sale");
     await page.locator("#view").getByRole("button", { name: "下書きを保存", exact: true }).click();
     await page.getByText("下書きを保存しました。公開サイトには反映されていません。").waitFor();
+    await page.getByRole("button", { name: "動画情報を新規登録", exact: true }).click();
+    assert.equal(await page.getByLabel("関連する人物").count(), 0);
+    assert.ok(await page.getByLabel("YouTube動画URL", { exact: true }).isVisible());
+
+    const songTitle = "新規のオリジナル楽曲";
+    const songUrl = "https://example.com/original-song";
+    await page.getByRole("button", { name: "楽曲を新規登録", exact: true }).click();
+    assert.equal(await page.getByLabel("関連する人物").count(), 0);
+    await page.getByLabel("名称", { exact: true }).fill(songTitle);
+    await page.getByLabel("原曲アーティスト（1行に1名）", { exact: true }).fill("作者");
+    await page.getByLabel("楽曲の公式情報URL", { exact: true }).fill(songUrl);
+    await page.getByLabel("曲の別名（1行に1件）", { exact: true }).fill("別タイトル");
+    await page.locator("#view").getByRole("button", { name: "下書きを保存", exact: true }).click();
+    const savedSong = page.getByRole("button", { name: songTitle, exact: true });
+    await savedSong.click();
+    assert.equal(await page.getByLabel("楽曲の公式情報URL", { exact: true }).inputValue(), songUrl);
     await reviewLink.click();
     await page.waitForURL("**/#workspace");
     const workspaceTable = page.locator("table[data-workspace-operations]");
     await workspaceTable.waitFor();
     assert.match(await workspaceTable.textContent(), /既存の高度な管理下書き/);
     assert.match(await workspaceTable.textContent(), /未保存の企画名/);
-    assert.equal(await workspaceTable.locator("tbody tr").count(), 4);
+    assert.equal(await workspaceTable.locator("tbody tr").count(), 5);
     const operations = await page.evaluate(async () => (await (await fetch("/api/workspace")).json()).workspace.operations);
     const preserved = operations.find(({ key }) => key === existingOperation.key);
     assert.equal(preserved.value.name, existingOperation.value.name);
-    assert.deepEqual(operations.map(({ entity }) => entity), ["organization", "campaign", "product", "offer"]);
+    assert.deepEqual(operations.map(({ entity }) => entity), ["organization", "campaign", "product", "offer", "song"]);
+    assert.equal(operations.at(-1).value.title, songTitle);
+    assert.deepEqual(operations.at(-1).value.aliases, ["別タイトル"]);
   } finally {
     await context.close();
   }

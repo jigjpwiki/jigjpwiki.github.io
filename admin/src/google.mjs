@@ -45,7 +45,7 @@ export function googleControlsEmail(claims) {
 async function googleResponse(transport, url, options, failure) {
   let response;
   try {
-    response = await transport(url, { ...options, redirect: "error", signal: AbortSignal.timeout(8000) });
+    response = await transport(url, { ...options, redirect: "manual", signal: AbortSignal.timeout(8000) });
   } catch {
     fail(503, "google_unavailable");
   }
@@ -91,7 +91,7 @@ export async function googleAuth(request, env, store, transport, now, atomic) {
     return value;
   });
   const result = await googleResponse(transport, "https://oauth2.googleapis.com/token", {
-    method: "POST", redirect: "error",
+    method: "POST", redirect: "manual",
     body: new URLSearchParams({
       client_id: env.GOOGLE_CLIENT_ID, client_secret: env.GOOGLE_CLIENT_SECRET,
       redirect_uri: redirect, code_verifier: saved.verifier, grant_type: "authorization_code", code,

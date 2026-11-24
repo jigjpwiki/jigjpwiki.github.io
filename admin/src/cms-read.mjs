@@ -15,7 +15,8 @@ export function createCmsReader(transport) {
     let response;
     try {
       response = await transport(url, {
-        signal: AbortSignal.timeout(12000), redirect: "error",
+        // Workers supports manual/follow only. The !ok check below rejects all 3xx.
+        signal: AbortSignal.timeout(12000), redirect: "manual",
         headers: {
           "User-Agent": "jigwiki-admin",
           ...(token ? { Authorization: "Bearer " + token, Accept: "application/vnd.github+json" } : {}),

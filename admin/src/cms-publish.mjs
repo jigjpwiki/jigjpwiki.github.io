@@ -103,7 +103,7 @@ export async function promoteCandidate(github, job, requireGrant, savePromotionI
 
 export async function pagesIncludes(github, sha, transport) {
   const response = await transport("https://www.jigdule.jp/published-commit.txt", {
-    signal: AbortSignal.timeout(8000), redirect: "error", cache: "no-store",
+    signal: AbortSignal.timeout(8000), redirect: "manual", cache: "no-store",
   });
   if (!response.ok) return false;
   const deployed = (await response.text()).trim();

@@ -24,7 +24,7 @@ export function youtubeVideoLookup(apiKey, transport = fetch) {
     try {
       const response = await transport(url, {
         headers: { "X-Goog-Api-Key": apiKey },
-        signal: AbortSignal.timeout(8000), redirect: "error", cache: "no-store",
+        signal: AbortSignal.timeout(8000), redirect: "manual", cache: "no-store",
       });
       if (!response.ok) fail(503, "cms_video_lookup_unavailable");
       ({ items } = await response.json());

@@ -105,3 +105,7 @@ VTuberに別名、X、YouTube URL、公式プロフィールURLの欄を追加�
 ### 本番CMS読み取りの障害対策
 
 本番で `cms_read_unavailable` が発生したため、オーナーは既存の認証済みGitHubトークンでmainのrefを取得する。Google利用者はAppの設定があれば対象リポジトリに限定したContents readのトークンを発行する。読み取りは直接公開のフラグに依存せず、公開側の権限・フラグを変更しない。App未設定時は従来の公開読み取りを維持する。raw.githubusercontent.comへの通信にはトークンを送らず、固定SHAから最大4件ずつ取得する。成功したスナップショットのみ60秒キャッシュし、リクエスト間で未完了の通信Promiseを共有しない。書込み時のmain再検証は維持する。失敗時は固定の取得対象・分類・HTTPステータスだけをWorkerログに出す。公開データ・認証情報・DO・Workspaceは変更しない。本番の直接原因はログ不足により未確定で、修正版の実地確認が必要。
+
+### Workers実行環境の互換性修正
+
+本番ログ `stage: main_ref, reason: transport` とCloudflare Workers Request仕様を照合し、Workersが未対応の `redirect: "error"` を使用していたことを確認。CMS読み取り・Google OAuth・YouTube動画照合・Pages反映確認は `redirect: "manual"` に変更し、既存の `response.ok` 判定で3xxを拒否する。認証情報を別ホストへ転送する自動リダイレクトは許可しない。Nodeのモックテストに加え、実際のworkerd（Miniflare）のOAuth済みセッションからCMS catalogと14ファイルを取得する回帰テストを追加。CI・本番での復旧確認は別途必要。

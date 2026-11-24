@@ -580,7 +580,7 @@ try {
       }
       await p.getByRole("link", { name: category, exact: true }).focus();
       await p.keyboard.press("Enter");
-      await p.getByRole("button", { name: /新規.*登録/ }).waitFor();
+      await p.getByRole("button", { name: /^新規.*登録$/ }).waitFor();
       if (
         shotDir &&
         [390, 1440].includes(width) &&

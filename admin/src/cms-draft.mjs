@@ -42,7 +42,9 @@ export async function prepareDraft(snapshot, member, input) {
     }
     access.assertChange(entity, before, value);
     const operation = { key: "cms-talent", entity, ...(id ? { id } : {}), value, before, baseCommit: snapshot.sha };
-    await planSubmission(snapshot, [operation], { actor: "0", batchId: await hash(operation) });
+    const plan = await planSubmission(snapshot, [operation], { actor: "0", batchId: await hash(operation) });
+    const after = cmsPermissions({ ...snapshot.models, ...plan.files }, member);
+    for (const row of plan.impact.records) after.assertChange(entity, row.before, row.value);
     return [operation];
   }
   if (entity === "campaign" && !before) fail(400, "cms_invalid_input");

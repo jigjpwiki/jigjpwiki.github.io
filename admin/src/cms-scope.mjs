@@ -126,7 +126,9 @@ export function cmsPermissions(models, member) {
       if (before) {
         for (const type of ["group", "event", "product", "anniversary", "musicVideo", "karaoke", "performance"]) {
           for (const row of byType[type].values()) {
-            if (row.visibility === "public" && row.talentIds?.includes(before.id) &&
+            const refersToTalent = row.talentIds?.includes(before.id) ||
+              (type === "event" && row.slots?.some((slot) => slot.talentIds?.includes(before.id)));
+            if (row.visibility === "public" && refersToTalent &&
                 !resolve(type, row, new Set()).allowed)
               fail(403, "cms_scope_denied");
           }

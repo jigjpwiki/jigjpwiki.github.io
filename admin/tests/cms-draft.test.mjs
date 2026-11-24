@@ -28,3 +28,33 @@ test("standalone goods and sale information are prepared as one validated set", 
   assert.equal(draftInput({ operations }).price, "1200");
   assert.equal(operations[1].value.productId, "@cms-product");
 });
+
+test("saving separate drafts retains both batches and discarding one retains the other", async () => {
+  const { draftGroups, writeDraft } = await import("../src/cms-draft.mjs");
+  const first = writeDraft([], undefined, await prepareDraft(snapshot, member, event));
+  const second = writeDraft(first.operations, undefined, await prepareDraft(snapshot, member, {
+    ...event, title: "別のイベント試験",
+  }));
+  const groups = draftGroups(second.operations);
+  assert.equal(groups.size, 2);
+  assert.equal(groups.get(first.id)[0].value.title, event.title);
+  const kept = writeDraft(second.operations, first.id);
+  assert.deepEqual([...draftGroups(kept.operations).keys()], [second.id]);
+  const changed = first.operations.map((op) => ({ ...op, before: { title: "別の編集者による変更" } }));
+  assert.throws(() => writeDraft(first.operations, first.id, changed), /main_changed_reload/);
+});
+
+test("editing the amount of a standalone listing preserves its existing currency", async () => {
+  const models = structuredClone(fixture);
+  const { products, offers } = models.goods;
+  const product = products[0];
+  const offer = offers.find((row) => row.productId === product.id);
+  offer.campaignId = null;
+  offer.price = { amount: 10, currency: "USD" };
+  const operations = await prepareDraft({ ...snapshot, models }, member, {
+    sha: snapshot.sha, entity: "product", id: product.id, title: product.title,
+    image: product.image || "", identityUrl: product.identityUrl,
+    url: offer.url, price: "12.50",
+  });
+  assert.deepEqual(operations[1].value.price, { amount: 12.5, currency: "USD" });
+});

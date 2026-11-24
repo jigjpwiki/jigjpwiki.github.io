@@ -1,4 +1,4 @@
-import { prepareDraft, draftDetails, draftInput } from "./cms-draft.mjs";
+import { prepareDraft, draftDetails, draftInput, draftGroups, writeDraft } from "./cms-draft.mjs";
 import { cmsPermissions } from "./cms-scope.mjs";
 import { createCmsReader } from "./cms-read.mjs";
 import { normalizeScope, scopedCatalog } from "./cms-scope.mjs";
@@ -258,17 +258,33 @@ export class Admin {
           const workspace = new WorkspaceStore(this.store, this.env.SESSION_KEY);
           if (request.method === "GET") {
             const saved = await workspace.get(session.id);
-            const input = draftInput(saved);
-            if (input) {
-              const rebased = await prepareDraft(snapshot, member, { ...input, sha: snapshot.sha });
-              if (rebased.length !== saved.operations.length || rebased.some((op, index) =>
-                  op.id !== saved.operations[index].id ||
-                  JSON.stringify(op.before) !== JSON.stringify(saved.operations[index].before)))
-                fail(409, "main_changed_reload");
-              input.sha = snapshot.sha;
+            const drafts = [];
+            for (const [draftId, group] of draftGroups(saved?.operations)) {
+              const input = draftInput({ operations: group });
+              if (!input) continue;
+              try {
+                const current = await prepareDraft(snapshot, member, { ...input, sha: snapshot.sha });
+                const conflict = current.length !== group.length || current.some((op, index) =>
+                  op.id !== group[index].id || JSON.stringify(op.before) !== JSON.stringify(group[index].before));
+                drafts.push({ draftId, conflict, input: { ...input, sha: snapshot.sha } });
+              } catch (error) {
+                if (!(error instanceof Failure)) throw error;
+                drafts.push({ draftId, conflict: true, input: null });
+              }
             }
             await requireCurrentGrant();
-            return json({ revision: saved?.revision ?? 0, input });
+            return json({ revision: saved?.revision ?? 0, drafts });
+          }
+          if (request.method === "DELETE") {
+            const input = await body(request, 1000);
+            if (typeof input?.draftId !== "string") fail(400, "cms_invalid_input");
+            return this.atomic(async () => {
+              await requireCurrentGrant();
+              const previous = await workspace.get(session.id);
+              const { operations } = writeDraft(previous?.operations || [], input.draftId);
+              const saved = await workspace.save(session.id, { protocol: 1, revision: input.revision, operations });
+              return json({ revision: saved.revision });
+            });
           }
           if (request.method === "PUT") {
             const input = await body(request, 16000);
@@ -276,8 +292,10 @@ export class Admin {
             const operations = await prepareDraft(snapshot, member, input);
             return this.atomic(async () => {
               await requireCurrentGrant();
-              const saved = await workspace.save(session.id, { protocol: 1, revision: input.revision, operations });
-              return json({ revision: saved.revision });
+              const previous = await workspace.get(session.id);
+              const batch = writeDraft(previous?.operations || [], input.draftId, operations);
+              const saved = await workspace.save(session.id, { protocol: 1, revision: input.revision, operations: batch.operations });
+              return json({ revision: saved.revision, draftId: batch.id });
             });
           }
         }

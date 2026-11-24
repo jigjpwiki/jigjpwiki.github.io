@@ -1207,7 +1207,7 @@
     "date": "2026-11-24T11:19:53.000Z",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/dPjWnMxOZWg/mqdefault.jpg?v=6b0571e8",
+    "thumbnail": "https://i.ytimg.com/vi/dPjWnMxOZWg/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/HZPUrbSwGcllAbUtx6xggJ6lKfMfnAWDxWOCc01tpthiDipSqQP48TK5Jqz4GRzUdwKMUsxlsg=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=dPjWnMxOZWg"
   },
@@ -1277,7 +1277,7 @@
     "youtubeid": "UC5bCRde8xRrNS7s6GjCNCyQ",
     "title": "【 7Days to Die 】7Days to Dieみんなでゾンビ大群に立ち向かえ！！！3日間にわたる物語！DAY2【変幻リメ】",
     "date": "2026-11-24T12:04:05.000Z",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/DzYkQQWhP_Y/mqdefault.jpg?v=6b057832",
     "channelIcon": "https://yt3.ggpht.com/4hssn4EXW2lORXRfiuYTjmYfnlZoQ2h72sdEompqX7GQwAKCsBx7eL0joCFSook1rfCKIcpykg=s240-c-k-c0x00ffffff-no-rj",
@@ -1440,6 +1440,18 @@
     "url": "https://www.youtube.com/watch?v=swFNShTnlzA"
   },
   {
+    "videoId": "7v-pX0yQgso",
+    "name": "藤森ちとせ",
+    "youtubeid": "UCAhdxmsdngH4noySdpVAVWQ",
+    "title": "【#じゃんたま 】深夜にゲリラ麻雀🦍🀄✨【#vtuber 】#ちとせらいぶ #パレデミア学園",
+    "date": "2026-11-24T17:41:56.000Z",
+    "status": "live",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/7v-pX0yQgso/mqdefault.jpg?v=6b05cba1",
+    "channelIcon": "https://yt3.ggpht.com/traR_yWe-AOGyM2wjo8h2FJO9JWBcbjfrL13X-umeD6BtNPopSZ2Q3YmdJq_5K9gWgHf_j64iQ=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=7v-pX0yQgso"
+  },
+  {
     "videoId": "ocEu95qKoM0",
     "name": "桜庭羽奈",
     "youtubeid": "UCPgg_A08ksSYP-VivJGniRw",
@@ -1510,6 +1522,18 @@
     "thumbnail": "https://i.ytimg.com/vi/lTFismyMwEE/mqdefault.jpg?v=6b059a22",
     "channelIcon": "https://yt3.ggpht.com/Z7PlAWhweuycNXNXoQ6etyDTkduySM-Kqy8kQW-AD19JuRdxT3HSdIxogPw3GPD5NHw_vZlf=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=lTFismyMwEE"
+  },
+  {
+    "videoId": "7rhEphDF_JM",
+    "name": "藤森ちとせ",
+    "youtubeid": "UCAhdxmsdngH4noySdpVAVWQ",
+    "title": "【#minecraft  】今日も床張り地獄👐｜建築雑談配信💬作業用にも☺ROM歓迎🎉【#vtuber 】#ちとせらいぶ #パレデミア学園",
+    "date": "2026-11-25T04:00:00.000Z",
+    "status": "upcoming",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/7rhEphDF_JM/mqdefault.jpg?v=6b05ca9c",
+    "channelIcon": "https://yt3.ggpht.com/traR_yWe-AOGyM2wjo8h2FJO9JWBcbjfrL13X-umeD6BtNPopSZ2Q3YmdJq_5K9gWgHf_j64iQ=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=7rhEphDF_JM"
   },
   {
     "videoId": "uFwiY_9Ed6k",

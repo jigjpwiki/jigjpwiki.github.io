@@ -57,6 +57,17 @@ test("draft cleanup keeps related operations together when one was edited in fli
   await assert.rejects(restarted.enqueue({ id: "editor" }, {
     draftIds: ["legacy-product"], revision: restored.revision, retry: true,
   }), /cms_draft_already_applied/);
+  const fixed = (op, id, value) => ({ ...op, id, before: { ...value, id }, value: { ...value, id } });
+  const recovered = await restarted.workspace.save("editor", {
+    protocol: 1, revision: restored.revision, operations: [
+      fixed(product, "product-000001", product.value),
+      fixed(offer, "offer-000001", { ...offer.value, productId: "product-000001" }),
+    ],
+  });
+  restarted.requireGrant = async () => ({ role: "editor", directPublish: true });
+  assert.equal((await restarted.enqueue({ id: "editor" }, {
+    draftIds: ["legacy-product"], revision: recovered.revision,
+  })).phase, "queued");
   await restarted.markRecovered("editor", "wrong-workspace", "legacy-product");
   assert.deepEqual((await restarted.get("cms-publication-replay:editor")).draftIds, ["legacy-product"]);
   await restarted.markRecovered("editor", restored.workspaceId, "legacy-product");

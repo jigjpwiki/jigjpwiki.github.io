@@ -315,6 +315,7 @@ let navigationRevision = 0;
 window.addEventListener("hashchange", async () => {
   const revision = ++navigationRevision;
   const view = $("#view");
+  if (!view) return;
   view.inert = false;
   if ((activeEditor?.dirty || document.querySelector("[data-cms-dirty]")) && !mayLeave()) {
     history.replaceState(null, "", acceptedHash || "#masters");

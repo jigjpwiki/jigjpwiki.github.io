@@ -61,7 +61,18 @@ export async function cmsOwnerBrowser({ browser, base, mainSha }) {
     const savedSong = page.getByRole("button", { name: songTitle, exact: true });
     await savedSong.click();
     assert.equal(await page.getByLabel("楽曲の公式情報URL", { exact: true }).inputValue(), songUrl);
-    await reviewLink.click();
+    let releaseWorkspace;
+    const workspaceGate = new Promise((resolve) => { releaseWorkspace = resolve; });
+    await page.route("**/api/workspace", async (route) => {
+      if (route.request().method() === "GET") await workspaceGate;
+      await route.continue();
+    });
+    try {
+      await reviewLink.click();
+      await page.locator("#view[inert]").waitFor();
+    } finally {
+      releaseWorkspace();
+    }
     await page.waitForURL("**/#workspace");
     const workspaceTable = page.locator("table[data-workspace-operations]");
     await workspaceTable.waitFor();

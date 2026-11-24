@@ -91,3 +91,24 @@ test("promotion refuses revoked grants before main write", async () => {
   await assert.rejects(promoteCandidate(github, { base: sha, commit: candidate, phase: "checking" },
     async () => { throw Error("revoked"); }, () => assert.fail("promotion intent")), /revoked/);
 });
+
+test("an interrupted queue handoff does not run the same job twice", async () => {
+  const { b64 } = await import("../src/security.mjs");
+  const rows = new Map();
+  const admin = {
+    env: { SESSION_KEY: b64(new Uint8Array(32)) },
+    store: { get: async (key) => rows.get(key), put: async (key, value) => rows.set(key, value) },
+    atomic: (fn) => fn(),
+    state: { storage: { setAlarm: async () => {} } },
+  };
+  const first = { id: "first", owner: "one", phase: "failed", createdAt: "2001-01-01T00:00:00Z" };
+  const second = { ...first, id: "second", owner: "two", phase: "queued" };
+  const jobs = new CmsJobs(admin);
+  await jobs.report(first);
+  await jobs.put("cms-publication-queue", [{ ...first, phase: "queued" }, second]);
+  const restarted = new CmsJobs(admin);
+  await restarted.alarm();
+  assert.equal((await restarted.status("one")).id, first.id);
+  assert.equal((await restarted.status("two")).error, "cms_publication_timeout");
+  assert.deepEqual(await restarted.get("cms-publication-queue"), []);
+});

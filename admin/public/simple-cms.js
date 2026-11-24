@@ -1,5 +1,6 @@
 const labels = {
   artists: ["原曲アーティスト（1行に1名）", "textarea"],
+  aliases: ["曲の別名（1行に1件）", "textarea"], readings: ["曲名の読み（1行に1件）", "textarea"],
   rawSongTitle: ["動画に記載された曲名", "text"], videoUrl: ["YouTube動画URL", "url"], videoKind: ["動画の種類", "select"],
   aliasNames: ["別名（1行に1件）", "textarea"], youtubeUrl: ["YouTubeチャンネルURL", "url"], xUrl: ["XプロフィールURL", "url"],
   displayName: ["表示名", "text"], activity: ["活動状態", "select"], officialProfileUrl: ["公式プロフィールURL", "url"],
@@ -13,7 +14,7 @@ const labels = {
 };
 const categories = {
   karaoke: { category: "music", label: "歌枠", fields: ["videoUrl"] },
-  song: { category: "music", label: "楽曲", fields: ["title", "artists"], existingOnly: true },
+  song: { category: "music", label: "楽曲", fields: ["title", "artists", "aliases", "readings"], existingOnly: true },
   musicVideo: { category: "music", label: "歌動画", fields: ["rawSongTitle", "videoUrl", "videoKind"] },
   talent: { category: "talents", label: "VTuber", fields: ["displayName", "image", "activity", "officialProfileUrl", "aliasNames", "youtubeUrl", "xUrl"] },
   campaign: { category: "goods", label: "キャンペーン", fields: ["title"], existingOnly: true },
@@ -124,7 +125,9 @@ export async function mountSimpleCms(panel, status, api) {
         } catch (error) {
           publicationStatus.textContent = error.message === "cms_publication_busy"
             ? "別の公開処理が進行中です。完了後にもう一度お試しください。"
-            : "公開を開始できませんでした。下書きを確認してください。";
+            : error.message === "cms_draft_already_applied"
+              ? "この下書きには公開済みの新規登録が含まれます。保存済みの内容を確認し、登録済みのレコードを開いて変更を再適用してください。"
+              : "公開を開始できませんでした。下書きを確認してください。";
         } finally {
           publish.disabled = false;
         }

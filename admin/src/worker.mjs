@@ -271,7 +271,9 @@ export class Admin {
         if (rate.count >= 30) fail(429, "admin_request_limit");
         await this.store.put(key, { ...rate, count: rate.count + 1 }, rate.expires);
       });
-      const snapshot = await this.cmsSnapshot();
+      const snapshot = await this.cmsSnapshot({
+        revalidate: request.method !== "GET" || url.pathname === "/api/cms/draft/conflicts",
+      });
       const requireCurrentGrant = async () => {
         if (google ? entry !== await this.store.get(session.memberKey) || !googleEnabled(this.env)
           : !(await this.store.get("session:" + sid)) || session.expires <= Date.now())

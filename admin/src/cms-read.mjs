@@ -15,13 +15,17 @@ export function createCmsReader(transport) {
       fail(503, "cms_read_unavailable");
     }
   }
-  return async function snapshot() {
-    if (cached?.expires > Date.now()) return cached.models;
+  return async function snapshot({ revalidate = false } = {}) {
+    if (!revalidate && cached?.expires > Date.now()) return cached.models;
     if (!pending) {
       pending = (async () => {
         const ref = await read("https://api.github.com/repos/" + repository + "/git/ref/heads/main");
         const sha = ref.object?.sha;
         if (typeof sha !== "string" || !/^[0-9a-f]{40}$/.test(sha)) fail(503, "cms_read_unavailable");
+        if (cached?.models.sha === sha) {
+          cached.expires = Date.now() + 60000;
+          return cached.models;
+        }
         const base = "https://raw.githubusercontent.com/" + repository + "/" + sha + "/data/";
         const models = Object.fromEntries(await Promise.all(files.map(async (name) => [name, await read(base + name + ".json")])));
         models["admin-ledger"] = { version: 1, entries: [] };

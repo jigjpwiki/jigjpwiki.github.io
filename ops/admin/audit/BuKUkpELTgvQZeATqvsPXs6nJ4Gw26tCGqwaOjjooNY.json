@@ -1,0 +1,109 @@
+{
+  "version": 2,
+  "batchId": "BuKUkpELTgvQZeATqvsPXs6nJ4Gw26tCGqwaOjjooNY",
+  "actor": "900116782922894341339274276841604414178152",
+  "createdAt": "2026-11-24T18:57:58.726Z",
+  "baseCommit": "6cd154ce05f330955371d16928f0a841efddace6",
+  "reason": null,
+  "submissionId": "BuKUkpELTgvQZeATqvsPXs6nJ4Gw26tCGqwaOjjooNY",
+  "branch": "admin/change-BuKUkpELTgvQZeATqvsPXs6nJ4Gw26tCGqwaOjjooNY",
+  "operations": [
+    {
+      "operationId": "cms-talent-b242ba4a635948d6899a61d4",
+      "entity": "talent",
+      "recordId": "tal-000039",
+      "action": "edit",
+      "changedFields": [
+        "activityStatus"
+      ],
+      "before": {
+        "id": "tal-000039",
+        "displayName": "山田スバル",
+        "aliases": [],
+        "affiliations": [
+          {
+            "organizationId": "org-000002",
+            "status": "current",
+            "from": null,
+            "to": null
+          }
+        ],
+        "agencyStatus": {
+          "value": "affiliated"
+        },
+        "activityStatus": {
+          "value": "active"
+        },
+        "accounts": [
+          {
+            "service": "tiktok",
+            "accountId": "co25yamada",
+            "url": "https://www.tiktok.com/@co25yamada"
+          },
+          {
+            "service": "youtube",
+            "accountId": "UCpC109d73Mw2GDp0cAodr2w",
+            "url": "https://www.youtube.com/channel/UCpC109d73Mw2GDp0cAodr2w"
+          },
+          {
+            "service": "x",
+            "accountId": "subaru_yamada10",
+            "url": "https://x.com/subaru_yamada10"
+          }
+        ],
+        "wiki": {
+          "url": "https://wikiwiki.jp/jigjp/%E5%B1%B1%E7%94%B0%E3%82%B9%E3%83%90%E3%83%AB"
+        },
+        "profileImage": {
+          "url": "https://yt3.ggpht.com/5RjyRMN46n0H9J0TOI1YqqBw_yJR8_qeqcODZnv_K6ZrKrQal9p_2BGVa_V824-DDz1TrZqprxQ=s240-c-k-c0x00ffffff-no-rj"
+        },
+        "officialProfileUrl": "https://www.parerdemia.jp/students/25CO010",
+        "visibility": "public"
+      },
+      "after": {
+        "id": "tal-000039",
+        "displayName": "山田スバル",
+        "aliases": [],
+        "affiliations": [
+          {
+            "organizationId": "org-000002",
+            "status": "current",
+            "from": null,
+            "to": null
+          }
+        ],
+        "agencyStatus": {
+          "value": "affiliated"
+        },
+        "activityStatus": {
+          "value": "ended"
+        },
+        "accounts": [
+          {
+            "service": "tiktok",
+            "accountId": "co25yamada",
+            "url": "https://www.tiktok.com/@co25yamada"
+          },
+          {
+            "service": "youtube",
+            "accountId": "UCpC109d73Mw2GDp0cAodr2w",
+            "url": "https://www.youtube.com/channel/UCpC109d73Mw2GDp0cAodr2w"
+          },
+          {
+            "service": "x",
+            "accountId": "subaru_yamada10",
+            "url": "https://x.com/subaru_yamada10"
+          }
+        ],
+        "wiki": {
+          "url": "https://wikiwiki.jp/jigjp/%E5%B1%B1%E7%94%B0%E3%82%B9%E3%83%90%E3%83%AB"
+        },
+        "profileImage": {
+          "url": "https://yt3.ggpht.com/5RjyRMN46n0H9J0TOI1YqqBw_yJR8_qeqcODZnv_K6ZrKrQal9p_2BGVa_V824-DDz1TrZqprxQ=s240-c-k-c0x00ffffff-no-rj"
+        },
+        "officialProfileUrl": "https://www.parerdemia.jp/students/25CO010",
+        "visibility": "public"
+      }
+    }
+  ]
+}

@@ -289,7 +289,7 @@ export class Admin {
           ...member.scope, categories: ["talents"],
         } });
         return json({
-          sha: snapshot.sha, sections: scopedCatalog(models, member),
+          sha: snapshot.sha, sections: scopedCatalog(models, member), owner: member.owner === true,
           songs: member.scope?.categories.includes("music")
             ? models.music.songs.filter((song) => song.visibility === "public")
               .map(({ id, title, originalArtists }) => ({ id, name: title + (originalArtists?.length ? " / " + originalArtists.join("、") : "") }))

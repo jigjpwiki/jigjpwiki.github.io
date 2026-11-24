@@ -137,3 +137,10 @@ export function scopedCatalog(models, member) {
     };
   }).filter(({ category }) => member.scope?.categories.includes(category));
 }
+
+// The new offer itself must not establish the editor's right to attach it.
+export function assertExistingCampaign(models, permissions, id) {
+  if (id == null || (typeof id === "string" && id.startsWith("@"))) return;
+  const campaign = models.goods.campaigns.find((row) => row.id === id);
+  if (!permissions.canRead("campaign", campaign)) fail(403, "cms_scope_denied");
+}

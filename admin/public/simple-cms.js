@@ -1,4 +1,5 @@
 const labels = {
+  startsAt: ["販売開始（日本時間）", "datetime-local"], endsAt: ["販売終了（日本時間）", "datetime-local"],
   month: ["月", "number"], day: ["日", "number"], year: ["年（任意）", "number"], kind: ["記念日の種類", "select"],
   title: ["名称", "text"], venue: ["会場", "text"], summary: ["概要", "textarea"],
   starts: ["開始日時（日本時間）", "datetime-local"], ends: ["終了日時（日本時間）", "datetime-local"],
@@ -9,7 +10,7 @@ const labels = {
 const categories = {
   anniversary: { category: "anniversaries", label: "記念日", fields: ["title", "kind", "month", "day", "year"] },
   event: { category: "events", label: "イベント", fields: ["title", "announcementUrl", "summary", "venue", "starts", "ends", "format", "streamUrl", "fee"] },
-  product: { category: "goods", label: "グッズ", fields: ["title", "image", "identityUrl", "url", "price"] },
+  product: { category: "goods", label: "グッズ", fields: ["title", "image", "identityUrl", "url", "price", "startsAt", "endsAt"] },
 };
 
 export async function mountSimpleCms(panel, status, api) {

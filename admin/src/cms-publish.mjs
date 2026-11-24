@@ -1,5 +1,5 @@
 import { entities, planSubmission, recordAt } from "./submission-plan.mjs";
-import { cmsPermissions } from "./cms-scope.mjs";
+import { cmsPermissions, assertExistingCampaign } from "./cms-scope.mjs";
 import { repository } from "./github.mjs";
 import { fail, hash } from "./security.mjs";
 import { draftGroups } from "./cms-draft.mjs";
@@ -28,6 +28,7 @@ export async function publicationPlan(snapshot, job, member) {
       if (offers.length > 1 || offers.some((offer) => offer.campaignId !== null || !before.canRead("offer", offer)))
         fail(403, "cms_shared_goods");
     }
+    if (op.entity === "offer") assertExistingCampaign(snapshot.models, before, op.value.campaignId);
     if (op.entity === "offer" && op.id && op.value.campaignId !== null) fail(403, "cms_shared_goods");
   }
   // Preserve the numeric audit format with a namespaced opaque internal identifier.

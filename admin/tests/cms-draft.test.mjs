@@ -86,3 +86,24 @@ test("campaign and sale references survive saving and restore", async () => {
   assert.equal(draftInput({ operations: group }).campaignTitle, input.campaignTitle);
   await prepareDraft(snapshot, member, { ...input, campaignTitle: "", campaignId: "campaign-000001" });
 });
+
+test("campaign publication checks the original campaign before adding a product", async () => {
+  const { publicationPlan } = await import("../src/cms-publish.mjs");
+  const { writeDraft } = await import("../src/cms-draft.mjs");
+  const editor = { ...member, directPublish: true };
+  const input = { sha: snapshot.sha, entity: "product", talent: "tal-000010",
+    title: "公開計画試験", image: "", identityUrl: "https://example.com/product",
+    url: "https://example.com/sale", price: "1200", startsAt: "2027-01-01T10:00" };
+  for (const target of [{ campaignTitle: "新規試験" }, { campaignId: "campaign-000001" }]) {
+    const operations = writeDraft([], undefined, await prepareDraft(snapshot, editor, { ...input, ...target })).operations;
+    const job = { id: "test", owner: "8ebf4fde-85a4-4d34-9feb-d1ba5c4de026", operations };
+    const { plan } = await publicationPlan(snapshot, job, editor);
+    assert.equal(plan.files.goods.offers.at(-1).startsAt, "2027-01-01T01:00:00.000Z");
+    if (target.campaignId) {
+      const models = structuredClone(snapshot.models);
+      models.goods.offers = models.goods.offers.filter((offer) => offer.campaignId !== target.campaignId);
+      await assert.rejects(prepareDraft({ ...snapshot, models }, editor, { ...input, ...target }), /cms_scope_denied/);
+      await assert.rejects(publicationPlan({ ...snapshot, models }, job, editor), /cms_scope_denied/);
+    }
+  }
+});

@@ -1,5 +1,5 @@
 import { contentPreview, resolveRefs } from "./content-plan.mjs";
-import { cmsPermissions } from "./cms-scope.mjs";
+import { cmsPermissions, assertExistingCampaign } from "./cms-scope.mjs";
 import { fail, hash } from "./security.mjs";
 
 export const draftTypes = { event: ["events", "events"], product: ["goods", "products"], anniversary: ["anniversaries", "events"] };
@@ -79,14 +79,27 @@ export async function prepareDraft(snapshot, member, input) {
     [oldOffer] = offers;
     if (typeof input.url !== "string" || typeof input.price !== "string" ||
         (input.price && !/^\d+(?:\.\d+)?$/.test(input.price))) fail(400, "cms_invalid_input");
+    assertExistingCampaign(snapshot.models, access, input.campaignId || null);
     if (input.campaignId && input.campaignTitle) fail(400, "cms_invalid_input");
     if (id && (input.campaignId || input.campaignTitle)) fail(403, "cms_shared_goods");
     if ((input.campaignId || input.campaignTitle) && !input.url) fail(400, "cms_invalid_input");
+    const period = {};
+    for (const key of ["startsAt", "endsAt"]) {
+      if (input[key] === undefined || input[key] === localInstant(oldOffer?.[key])) continue;
+      if (typeof input[key] !== "string" ||
+          (input[key] && !/^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}$/.test(input[key])))
+        fail(400, "cms_invalid_input");
+      const time = Date.parse(input[key] + ":00+09:00");
+      if (input[key] && (!Number.isFinite(time) || localInstant(time) !== input[key]))
+        fail(400, "cms_invalid_input");
+      period[key] = input[key] ? new Date(time).toISOString() : null;
+    }
     if (input.url || oldOffer) operations.push({
       key: "cms-sale", entity: "offer", ...(oldOffer ? { id: oldOffer.id } : {}),
       value: {
         ...(oldOffer || { productId: id || "@cms-product", campaignId: input.campaignTitle ? "@cms-campaign" : input.campaignId || null, startsAt: null, endsAt: null,
           periodNote: null, status: "unknown", visibility: "public" }),
+        ...period,
         url: input.url.trim(),
         price: { amount: input.price ? Number(input.price) : null, currency: input.price ? oldOffer?.price.currency || "JPY" : null },
       },
@@ -116,6 +129,10 @@ export async function prepareDraft(snapshot, member, input) {
   }));
 }
 
+function localInstant(value) {
+  return value == null ? "" : new Date(new Date(value).getTime() + 9 * 3600000).toISOString().slice(0, 16);
+}
+
 function eventFields(record) {
   const local = (time) => time.precision === "instant"
     ? new Date(Date.parse(time.value) + 9 * 3600000).toISOString().slice(0, 16) : "";
@@ -140,6 +157,8 @@ export function draftDetails(snapshot, member, entity, id) {
     const offers = snapshot.models.goods.offers.filter((offer) => offer.productId === id);
     if (offers.length > 1 || offers.some((offer) => offer.campaignId !== null || offer.visibility !== "public"))
       fail(403, "cms_shared_goods");
+    details.startsAt = localInstant(offers[0]?.startsAt);
+    details.endsAt = localInstant(offers[0]?.endsAt);
     details.url = offers[0]?.url ?? "";
     details.currency = offers[0]?.price.currency ?? "JPY";
     details.price = String(offers[0]?.price.amount ?? "");
@@ -159,6 +178,7 @@ export function draftInput(workspace) {
     ...(op.entity === "anniversary" ? anniversaryFields(op.value) : {}),
     ...(op.entity === "event" ? eventFields(op.value) : {}),
     ...(op.entity === "product" ? {
+      startsAt: localInstant(sale?.value.startsAt), endsAt: localInstant(sale?.value.endsAt),
       campaignId: campaign ? "" : sale?.value.campaignId ?? "", campaignTitle: campaign?.value.title ?? "",
       url: sale?.value.url ?? "", currency: sale?.value.price.currency ?? "JPY", price: String(sale?.value.price.amount ?? ""),
     } : {}),

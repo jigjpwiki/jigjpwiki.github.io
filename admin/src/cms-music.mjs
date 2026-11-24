@@ -52,6 +52,20 @@ export async function videoForCms(models, id, lookup, { verify = false } = {}) {
   return video;
 }
 
+export function assertVideoEdit(models, permissions, before, after) {
+  if (before.youtubeId !== after.youtubeId || before.channelId !== after.channelId)
+    fail(403, "cms_scope_denied");
+  const id = before.youtubeId;
+  const related = [
+    ...models.music.musicVideos.filter((row) => row.youtubeId === id).map((row) => ["musicVideo", row]),
+    ...models.karaoke.karaokes.filter((row) => row.youtubeId === id).map((row) => ["karaoke", row]),
+    ...models.events.events.filter((row) => row.videoIds.includes(id) ||
+      row.slots.some((slot) => slot.videoIds.includes(id))).map((row) => ["event", row]),
+  ];
+  if (related.some(([entity, row]) => !permissions.canRead(entity, row)))
+    fail(403, "cms_scope_denied");
+}
+
 export function canEditSong(models, permissions, songId) {
   const related = [
     ...models.music.musicVideos.filter((row) => row.songId === songId).map((row) => ["musicVideo", row]),

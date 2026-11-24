@@ -272,3 +272,30 @@ test("standalone works require owner permission and retain their confirmed ident
   const { plan } = await publicationPlan(snapshot, job, owner);
   assert.deepEqual(plan.files.music.songs.at(-1).aliases, [input.aliases]);
 });
+
+test("standalone video registration and title editing use the verified ID and scope", async () => {
+  const { publicationPlan } = await import("../src/cms-publish.mjs");
+  const { draftDetails } = await import("../src/cms-draft.mjs");
+  const models = structuredClone(fixture);
+  const original = models.music.musicVideos[0];
+  const { channelId } = models.media.videos.find((row) => row.youtubeId === original.youtubeId);
+  const id = "standalone1";
+  models.youtube = [{ videoId: id, title: "動画の公式タイトル", youtubeid: channelId }];
+  const editor = { ...member, directPublish: true, scope: { ...member.scope, categories: ["music"] } };
+  const snap = { ...snapshot, models };
+  const owner = "8ebf4fde-85a4-4d34-9feb-d1ba5c4de026";
+  const input = { sha: snapshot.sha, entity: "video", videoUrl: "https://youtu.be/" + id };
+  const operations = await prepareDraft(snap, editor, input);
+  assert.equal(draftInput({ operations }).videoUrl, "https://www.youtube.com/watch?v=" + id);
+  const { plan } = await publicationPlan(snap, { id: "new-video", owner, operations }, editor);
+  const editSnapshot = { ...snap, models: { ...models, ...plan.files } };
+  const detail = draftDetails(editSnapshot, editor, "video", id);
+  assert.equal(detail.title, "動画の公式タイトル");
+  const edit = { ...input, id, title: "更新した動画のタイトル" };
+  const edits = await prepareDraft(editSnapshot, editor, edit);
+  const result = await publicationPlan(editSnapshot, { id: "edit-video", owner, operations: edits }, editor);
+  assert.equal(result.plan.files.media.videos.find((row) => row.youtubeId === id).title, edit.title);
+  await assert.rejects(prepareDraft(editSnapshot, editor, { ...edit, videoUrl: "https://youtu.be/changethis1" }), /cms_invalid_input/);
+  editSnapshot.models.events.events[0].videoIds.push(id);
+  await assert.rejects(prepareDraft(editSnapshot, editor, edit), /cms_scope_denied/);
+});

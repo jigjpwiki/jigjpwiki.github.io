@@ -16,6 +16,7 @@ const labels = {
   identityUrl: ["公式商品情報URL", "url"], url: ["販売ページURL", "url"], price: ["価格（円）", "number"],
 };
 const categories = {
+  video: { category: "music", label: "動画情報", fields: ["videoUrl"] },
   karaoke: { category: "music", label: "歌枠", fields: ["videoUrl"] },
   song: { category: "music", label: "楽曲", fields: ["title", "artists", "aliases", "readings"], ownerCreate: true },
   musicVideo: { category: "music", label: "歌動画", fields: ["rawSongTitle", "videoUrl", "videoKind"] },
@@ -225,7 +226,10 @@ export async function mountSimpleCms(panel, status, api) {
       }
       return { details, controls };
     }
-    for (const key of (entity === "song" && !input.id ? [...spec.fields, "songIdentityUrl"] : spec.fields)) {
+    const fieldNames = [...spec.fields];
+    if (entity === "song" && !input.id) fieldNames.push("songIdentityUrl");
+    if (entity === "video" && input.id) fieldNames.push("title");
+    for (const key of fieldNames) {
 
       const [label, type] = labels[key];
       const control = el(["textarea", "select"].includes(type) ? type : "input");
@@ -233,6 +237,7 @@ export async function mountSimpleCms(panel, status, api) {
         unknown: "未定・不明", onsite: "会場開催", online: "オンライン", hybrid: "会場とオンライン",
       }).map(([value, text]) => new Option(text, value)));
       else if (type !== "textarea") control.type = type;
+      if (entity === "video" && input.id && key === "videoUrl") control.readOnly = true;
       control.required = ["month", "day"].includes(key) || ["title", "displayName", "rawSongTitle", "videoUrl", "videoKind"].includes(key) || key === "announcementUrl" || key === "summary" || key === "identityUrl" || key === "songIdentityUrl";
       if (key === "price") {
         control.min = "0";

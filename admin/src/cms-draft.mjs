@@ -1,13 +1,14 @@
-import { videoForCms, assertSongEdit, newSongOperation, newSongFields } from "./cms-music.mjs";
+import { videoForCms, assertSongEdit, assertVideoEdit, newSongOperation, newSongFields } from "./cms-music.mjs";
 import { youtubeId } from "../public/content-utils.js";
 import { planSubmission, recordAt } from "./submission-plan.mjs";
 import { contentPreview, resolveRefs } from "./content-plan.mjs";
 import { cmsPermissions, assertExistingCampaign } from "./cms-scope.mjs";
 import { fail, hash } from "./security.mjs";
 
-export const draftTypes = { karaoke: ["karaoke", "karaokes"], song: ["music", "songs"], musicVideo: ["music", "musicVideos"], talent: ["talents", "talents"], event: ["events", "events"], product: ["goods", "products"], anniversary: ["anniversaries", "events"], campaign: ["goods", "campaigns"] };
+export const draftTypes = { video: ["media", "videos"], karaoke: ["karaoke", "karaokes"], song: ["music", "songs"], musicVideo: ["music", "musicVideos"], talent: ["talents", "talents"], event: ["events", "events"], product: ["goods", "products"], anniversary: ["anniversaries", "events"], campaign: ["goods", "campaigns"] };
 const unknown = { precision: "unknown", value: null };
 const fields = {
+  video: ["title"],
   karaoke: [],
   song: ["title"],
   musicVideo: ["rawSongTitle"],
@@ -22,10 +23,23 @@ export async function prepareDraft(snapshot, member, input, lookup) {
   const { entity, id } = input;
   if (!Object.hasOwn(draftTypes, entity) || member.role !== "editor") fail(403, "cms_scope_denied");
   if (input.sha !== snapshot.sha) fail(409, "main_changed_reload");
-  const [file, list] = draftTypes[entity];
-  const before = id ? snapshot.models[file][list].find((row) => row.id === id) : null;
+  const before = id ? recordAt(snapshot.models, { entity, id }) : null;
   const access = cmsPermissions(snapshot.models, member);
   if (id && !access.canRead(entity, before)) fail(403, "cms_scope_denied");
+  if (entity === "video") {
+    let videoId;
+    try { videoId = youtubeId(input.videoUrl); }
+    catch { fail(400, "cms_invalid_video_url"); }
+    if (before && (videoId !== id || typeof input.title !== "string" || !input.title.trim()))
+      fail(400, "cms_invalid_input");
+    const value = before ? { ...before, title: input.title.trim() } :
+      await videoForCms(snapshot.models, videoId, lookup);
+    if (before) assertVideoEdit(snapshot.models, access, before, value);
+    access.assertChange("video", before, value);
+    const operation = { key: "cms-media", entity, ...(id ? { id } : {}), value, before, baseCommit: snapshot.sha };
+    await planSubmission(snapshot, [operation], { actor: "0", batchId: await hash(operation) });
+    return [operation];
+  }
   if (entity === "talent") {
     const value = structuredClone(before || {
       aliases: [], affiliations: [{ organizationId: input.organization, status: "current", from: null, to: null }],
@@ -409,8 +423,7 @@ function productFields(record, sales, key) {
 
 export function draftDetails(snapshot, member, entity, id) {
   if (!Object.hasOwn(draftTypes, entity)) fail(403, "cms_scope_denied");
-  const [file, list] = draftTypes[entity];
-  const record = snapshot.models[file][list].find((row) => row.id === id);
+  const record = recordAt(snapshot.models, { entity, id });
   if (!cmsPermissions(snapshot.models, member).canRead(entity, record)) fail(403, "cms_scope_denied");
   const details = Object.fromEntries(fields[entity].map((key) => [key, record[key] ?? ""]));
   if (entity === "karaoke") {
@@ -423,6 +436,7 @@ export function draftDetails(snapshot, member, entity, id) {
   }
   if (entity === "song") Object.assign(details, songFields(record));
   if (entity === "musicVideo") Object.assign(details, musicVideoFields(record));
+  if (entity === "video") details.videoUrl = musicVideoFields(record).videoUrl;
   if (entity === "talent") Object.assign(details, talentFields(record));
   if (entity === "anniversary") Object.assign(details, anniversaryFields(record));
   if (entity === "event") Object.assign(details, eventFields(record));
@@ -461,6 +475,7 @@ export function draftInput(workspace) {
         key: row.key.replace(/^cms-track-/, "").replace(/-[a-f0-9]{24}$/, ""),
       })) } : {}),
     ...(op.entity === "song" ? songFields(op.value) : {}),
+    ...(op.entity === "video" ? { videoUrl: musicVideoFields(op.value).videoUrl } : {}),
     ...(op.entity === "musicVideo" ? {
       ...musicVideoFields(op.value),
       ...newSongFields(song),

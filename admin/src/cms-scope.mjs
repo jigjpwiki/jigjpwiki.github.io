@@ -146,14 +146,14 @@ export function cmsPermissions(models, member) {
 
 export function scopedCatalog(models, member) {
   const permissions = cmsPermissions(models, member);
-  return ["talent", "anniversary", "event", "song", "musicVideo", "karaoke", "product", "campaign"].map((entity) => {
+  return ["talent", "anniversary", "event", "song", "musicVideo", "karaoke", "video", "product", "campaign"].map((entity) => {
     const type = types[entity];
     return {
       category: type.category,
       entity,
       label: type.label || "VTuber",
       items: models[type.file][type.list].filter((row) => permissions.canRead(entity, row)).map((row) => ({
-        id: row.id,
+        id: row[type.field || "id"],
         title: row.displayName || row.title || row.rawSongTitle || byTypeVideoTitle(models, row),
         description: typeof row.description === "string" ? row.description : "",
       })),

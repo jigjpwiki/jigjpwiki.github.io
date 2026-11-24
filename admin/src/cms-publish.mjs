@@ -1,4 +1,4 @@
-import { videoForCms, assertSongEdit } from "./cms-music.mjs";
+import { videoForCms, assertSongEdit, assertVideoEdit } from "./cms-music.mjs";
 import { entities, planSubmission, recordAt } from "./submission-plan.mjs";
 import { cmsPermissions, assertExistingCampaign } from "./cms-scope.mjs";
 import { repository } from "./github.mjs";
@@ -35,9 +35,12 @@ export async function publicationPlan(snapshot, job, member, lookup) {
       } else if (!before.canRead(op.entity, value)) fail(403, "cms_scope_denied");
     }
     if (op.entity === "video") {
-      if (op.id || !before.canRead("video", op.value)) fail(403, "cms_scope_denied");
-      const verified = await videoForCms(snapshot.models, op.value.youtubeId, lookup, { verify: true });
-      if (verified.channelId !== op.value.channelId) fail(403, "cms_scope_denied");
+      if (!before.canRead("video", op.value)) fail(403, "cms_scope_denied");
+      if (op.id) assertVideoEdit(snapshot.models, before, recordAt(snapshot.models, op), op.value);
+      else {
+        const verified = await videoForCms(snapshot.models, op.value.youtubeId, lookup, { verify: true });
+        if (verified.channelId !== op.value.channelId) fail(403, "cms_scope_denied");
+      }
     }
     if (op.entity === "song" && op.id && !member.owner) assertSongEdit(snapshot.models, before, op.id);
     if (op.entity === "talent" && op.id) {

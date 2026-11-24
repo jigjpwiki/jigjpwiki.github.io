@@ -21,7 +21,7 @@ test("campaign batch survives reload and reaches publication planning through th
       draftId, input: draftInput({ operations: group }),
     })),
   });
-  const assets = new Map(await Promise.all(["simple-cms.js", "app.css", "workbench.css"].map(async (name) => [
+  const assets = new Map(await Promise.all(["simple-cms.js", "cms-conflicts.js", "cms-history.js", "app.css", "workbench.css"].map(async (name) => [
     "/" + name, await readFile(new URL("../public/" + name, import.meta.url)),
   ])));
   const server = http.createServer(async (req, res) => {

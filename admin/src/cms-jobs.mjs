@@ -4,6 +4,7 @@ import { candidateResult, pagesIncludes, promoteCandidate, publicationPlan, sele
 import { open, seal, hash, fail, Failure } from "./security.mjs";
 import { equal } from "./submission-plan.mjs";
 import { WorkspaceStore } from "./workspace.mjs";
+import { draftGroups } from "./cms-draft.mjs";
 
 const activeKey = "cms-publication-active";
 const queueKey = "cms-publication-queue";
@@ -27,8 +28,9 @@ export class CmsJobs {
   }
 
   async report(job) {
-    await this.put("cms-publication:" + job.owner, job);
+    // The active journal is authoritative until the owner index is durable.
     await this.put(activeKey, job);
+    await this.put("cms-publication:" + job.owner, job);
   }
 
   async requireGrant(job) {
@@ -49,16 +51,18 @@ export class CmsJobs {
       const operations = selectedOperations(workspace, ids);
       if (workspace.revision !== input.revision) fail(409, "workspace_revision_conflict");
       const fingerprint = await hash({ owner: session.id, operations });
-      const queue = await this.get(queueKey) || [];
       const active = await this.get(activeKey);
+      const queue = (await this.get(queueKey) || []).filter((job) => job.id !== active?.id);
       const pending = [active, ...queue].find((job) => job?.owner === session.id && !terminal.has(job.phase));
       if (pending) {
         if (pending.fingerprint === fingerprint) return this.summary(pending);
         fail(409, "cms_publication_busy");
       }
-      const last = await this.get("cms-publication:" + session.id);
+      const last = active?.owner === session.id ? active : await this.get("cms-publication:" + session.id);
       if (last?.fingerprint === fingerprint && !(retry === true && last.phase === "failed"))
         return this.summary(last);
+      // Changing the selection cannot make an uncertain promotion safe to repeat.
+      if (last?.phase === "unconfirmed") fail(409, "cms_publication_unconfirmed");
       if (queue.length >= 8) fail(409, "cms_publication_busy");
       const createdAt = new Date().toISOString();
       const id = await hash([fingerprint, createdAt]);
@@ -83,7 +87,7 @@ export class CmsJobs {
     if (active?.owner === owner && !terminal.has(active.phase)) return this.summary(active);
     const queue = await this.get(queueKey) || [];
     return this.summary(queue.find((job) => job.owner === owner && job.id !== active?.id) ||
-      await this.get("cms-publication:" + owner));
+      (active?.owner === owner ? active : await this.get("cms-publication:" + owner)));
   }
 
   async step(job, github) {
@@ -139,8 +143,17 @@ export class CmsJobs {
     await this.admin.atomic(async () => {
       const current = await this.workspace.get(job.owner);
       if (!current) return;
-      const operations = current.operations.filter((op) =>
-        !job.operations.some((selected) => selected.key === op.key && equal(selected, op)));
+      const currentGroups = draftGroups(current.operations);
+      const remove = new Set();
+      for (const [id, selected] of draftGroups(job.operations)) {
+        const group = currentGroups.get(id);
+        // In-flight edits can introduce or change sibling operations. Preserve
+        // the complete group rather than leaving unresolved temporary IDs.
+        if (group?.length === selected.length &&
+            selected.every((operation) => group.some((row) => equal(row, operation))))
+          for (const operation of group) remove.add(operation.key);
+      }
+      const operations = current.operations.filter((op) => !remove.has(op.key));
       if (operations.length === current.operations.length) return;
       await this.workspace.save(job.owner, {
         protocol: 1, revision: current.revision,
@@ -154,6 +167,10 @@ export class CmsJobs {
       const active = await this.get(activeKey);
       const queue = (await this.get(queueKey) || []).filter((item) => item.id !== active?.id);
       const next = active && !terminal.has(active.phase) ? active : queue.shift();
+      // Repair a terminal owner index before handing the active slot to the
+      // next job; both the report and this replay are safe to repeat.
+      if (active && terminal.has(active.phase))
+        await this.put("cms-publication:" + active.owner, active);
       if (!next) return null;
       await this.admin.state.storage.setAlarm(Date.now() + interval);
       // Persist the handoff before removing the queue entry. A repeated alarm

@@ -1,3 +1,4 @@
+import { recoverAppliedGroup } from "./cms-recover-draft.mjs";
 import { youtubeVideoLookup } from "./cms-music.mjs";
 import { readCmsHistory, prepareAuditReversal, assertReversalRoundTrip } from "./cms-history.mjs";
 import { inspectDraftConflicts } from "./cms-conflicts.mjs";
@@ -263,7 +264,7 @@ export class Admin {
         if (request.method === "POST") return json({ publication: await jobs.enqueue(session, await body(request, 4096)) }, 202);
       }
     }
-    const cmsRoutes = ["/api/cms/catalog", "/api/cms/detail", "/api/cms/draft", "/api/cms/draft/conflicts", "/api/cms/history"];
+    const cmsRoutes = ["/api/cms/catalog", "/api/cms/detail", "/api/cms/draft", "/api/cms/draft/conflicts", "/api/cms/history", "/api/cms/publication/reapply"];
     if (cmsRoutes.includes(url.pathname)) {
       await this.atomic(async () => {
         const key = "cms-rate:" + sid;
@@ -305,6 +306,34 @@ export class Admin {
       }
       if (url.pathname === "/api/cms/detail" && request.method === "GET")
         return json({ sha: snapshot.sha, fields: draftDetails(snapshot, member, url.searchParams.get("entity"), url.searchParams.get("id")) });
+      if (url.pathname === "/api/cms/publication/reapply" && request.method === "POST") {
+        if (!google || member.role !== "editor") fail(403, "cms_scope_denied");
+        const input = await body(request, 1024);
+        if (typeof input?.draftId !== "string" || !Number.isInteger(input.revision))
+          fail(400, "cms_reapply_invalid");
+        const jobs = new CmsJobs(this);
+        const workspace = new WorkspaceStore(this.store, this.env.SESSION_KEY);
+        const job = await jobs.confirmedJob(session.id, input.jobId);
+        if (!job) fail(409, "cms_reapply_unavailable");
+        const saved = await workspace.get(session.id);
+        if (!saved || saved.revision !== input.revision) fail(409, "workspace_revision_conflict");
+        const group = draftGroups(saved.operations).get(input.draftId);
+        const submitted = draftGroups(job.operations).get(input.draftId);
+        if (!group || !submitted?.some((op) => !op.id)) fail(409, "cms_reapply_unavailable");
+        const published = await this.cmsSnapshot({ revision: job.commit });
+        const recovered = recoverAppliedGroup(group, submitted, job, published);
+        if (!recovered) fail(409, "cms_reapply_unavailable");
+        await publicationPlan(snapshot, { ...job, operations: recovered },
+          { ...member, directPublish: true }, this.cmsVideoLookup);
+        const replaced = new Map(recovered.map((op) => [op.key, op]));
+        const operations = saved.operations.map(({ validationState, ...op }) => replaced.get(op.key) || op);
+        return this.atomic(async () => {
+          await requireCurrentGrant();
+          const result = await workspace.save(session.id, { protocol: 1, revision: input.revision, operations });
+          await jobs.markRecovered(session.id, saved.workspaceId, input.draftId);
+          return json({ revision: result.revision });
+        });
+      }
       if (url.pathname === "/api/cms/history") {
         const context = { snapshot, member, github, transport: this.transport, repository };
         if (request.method === "GET") {

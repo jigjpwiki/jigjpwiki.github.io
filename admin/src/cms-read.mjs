@@ -15,7 +15,15 @@ export function createCmsReader(transport) {
       fail(503, "cms_read_unavailable");
     }
   }
-  return async function snapshot({ revalidate = false } = {}) {
+  async function readSnapshot(sha) {
+    if (typeof sha !== "string" || !/^[0-9a-f]{40}$/.test(sha)) fail(503, "cms_read_unavailable");
+    const base = "https://raw.githubusercontent.com/" + repository + "/" + sha + "/data/";
+    const models = Object.fromEntries(await Promise.all(files.map(async (name) => [name, await read(base + name + ".json")])));
+    models["admin-ledger"] = { version: 1, entries: [] };
+    return { sha, models };
+  }
+  return async function snapshot({ revalidate = false, revision } = {}) {
+    if (revision !== undefined) return cached?.models.sha === revision ? cached.models : readSnapshot(revision);
     if (!revalidate && cached?.expires > Date.now()) return cached.models;
     if (!pending) {
       pending = (async () => {
@@ -26,10 +34,8 @@ export function createCmsReader(transport) {
           cached.expires = Date.now() + 60000;
           return cached.models;
         }
-        const base = "https://raw.githubusercontent.com/" + repository + "/" + sha + "/data/";
-        const models = Object.fromEntries(await Promise.all(files.map(async (name) => [name, await read(base + name + ".json")])));
-        models["admin-ledger"] = { version: 1, entries: [] };
-        cached = { models: { sha, models }, expires: Date.now() + 60000 };
+        const models = await readSnapshot(sha);
+        cached = { models, expires: Date.now() + 60000 };
         return cached.models;
       })().finally(() => { pending = null; });
     }

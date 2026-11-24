@@ -133,7 +133,9 @@ export async function mountSimpleCms(panel, status, api) {
         await refreshDrafts();
       } catch { publicationStatus.textContent = "公開状況を確認できませんでした。"; }
     }), reconcileButton);
-    refreshPublication().catch(() => { publicationStatus.textContent = "公開状況を確認できませんでした。"; });
+    refreshPublication().then(() => {
+      if (saved && publication?.createdRecords?.length) return refreshDrafts();
+    }).catch(() => { publicationStatus.textContent = "公開状況を確認できませんでした。"; });
   }
   let revision = 0;
   let saveAvailable = true;
@@ -196,6 +198,20 @@ export async function mountSimpleCms(panel, status, api) {
           status.textContent = "最新データと比較できませんでした。現在の担当範囲と対象の公開状態をご確認ください。";
         }
       }));
+      if (publication?.createdRecords?.some(({ key }) => key.endsWith("-" + draftId))) {
+        row.append(button("発行済みレコードに再適用", async () => {
+          try {
+            const result = await api("/api/cms/publication/reapply", "POST", {
+              jobId: publication.id, draftId, revision,
+            });
+            revision = result.revision;
+            await refreshDrafts();
+            status.textContent = "発行済みレコードに紐づけた下書きを保存しました。";
+          } catch {
+            status.textContent = "自動で再適用できませんでした。下書きを保持しています。";
+          }
+        }));
+      }
       row.append(button("この下書きを破棄", async () => {
         if (!confirm("この下書きを破棄しますか？")) return;
         try {

@@ -102,7 +102,12 @@ export async function mountSimpleCms(panel, status, api) {
     publishedRecords.hidden = records.length === 0;
     const list = el("ul");
     for (const { entity, id } of records) {
-      list.append(el("li", (categories[entity]?.label || entity) + " — " + id));
+      const label = (categories[entity]?.label || entity) + " — " + id;
+      const row = el("li");
+      if (catalog.editable && Object.hasOwn(categories, entity))
+        row.append(button(label, () => openRecord(entity, id)));
+      else row.textContent = label;
+      list.append(row);
     }
     publishedRecords.replaceChildren(el("summary", "発行済みレコード"), list);
   }
@@ -563,6 +568,16 @@ export async function mountSimpleCms(panel, status, api) {
   search.addEventListener("input", filter);
   category.addEventListener("change", filter);
   order.addEventListener("change", filter);
+  async function openRecord(entity, id) {
+    try {
+      const query = new URLSearchParams({ entity, id });
+      const { fields, sha } = await api("/api/cms/detail?" + query);
+      edit(entity, { ...fields, id, sha });
+    } catch {
+      status.textContent = "この項目は簡易フォームで編集できません。";
+    }
+  }
+
   for (const { entity, label, items } of catalog.sections) {
     const section = el("section");
     const entries = el("ul");
@@ -570,15 +585,7 @@ export async function mountSimpleCms(panel, status, api) {
     for (const item of items) {
       const li = el("li");
       if (!catalog.editable || !Object.hasOwn(categories, entity)) li.textContent = item.title;
-      else li.append(button(item.title, async () => {
-        try {
-          const query = new URLSearchParams({ entity, id: item.id });
-          const { fields, sha } = await api("/api/cms/detail?" + query);
-          edit(entity, { ...fields, id: item.id, sha });
-        } catch {
-          status.textContent = "この項目は簡易フォームで編集できません。";
-        }
-      }));
+      else li.append(button(item.title, () => openRecord(entity, item.id)));
       rows.push({ title: item.title || "名称未登録", li });
     }
     section.append(el("h3", label), entries);

@@ -63,11 +63,13 @@ export async function mountSimpleCms(panel, status, api) {
   panel.append(draftsArea, formArea, list);
   const publicationArea = el("section");
   const publicationStatus = el("p");
+  const publishedRecords = el("details");
+  publishedRecords.hidden = true;
   publicationStatus.setAttribute("role", "status");
   const selectedDrafts = new Set();
   let publication;
   if (catalog.editable && catalog.publicationTracking !== false) {
-    publicationArea.append(el("h3", "公開状況"), publicationStatus);
+    publicationArea.append(el("h3", "公開状況"), publicationStatus, publishedRecords);
     panel.insertBefore(publicationArea, draftsArea);
   }
 
@@ -95,6 +97,13 @@ export async function mountSimpleCms(panel, status, api) {
     publicationStatus.textContent = publication
       ? (labels[publication.phase] || "公開状況を確認中") + (errors[publication.error] || "")
       : "公開処理はありません。";
+    const records = publication?.createdRecords || [];
+    publishedRecords.hidden = records.length === 0;
+    const list = el("ul");
+    for (const { entity, id } of records) {
+      list.append(el("li", (categories[entity]?.label || entity) + " — " + id));
+    }
+    publishedRecords.replaceChildren(el("summary", "発行済みレコード"), list);
   }
 
   const reconcileButton = button("公開結果を再確認", async () => {

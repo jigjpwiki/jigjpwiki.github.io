@@ -312,7 +312,7 @@ function screen() {
 }
 let acceptedHash = location.hash;
 window.addEventListener("hashchange", async () => {
-  if (activeEditor?.dirty && !mayLeave()) {
+  if ((activeEditor?.dirty || document.querySelector("[data-cms-dirty]")) && !mayLeave()) {
     history.replaceState(null, "", acceptedHash || "#masters");
     return;
   }
@@ -349,6 +349,7 @@ async function start() {
       panel.className = "stack";
       const logout = node("button", "ログアウト");
       logout.onclick = async () => {
+        if (!mayLeave()) return;
         try {
           await api("/auth/logout", "POST", {});
           location.reload();
@@ -1029,6 +1030,8 @@ async function digest(value) {
 }
 let activeEditor = null;
 function mayLeave() {
+  if (document.querySelector("[data-cms-dirty]"))
+    return window.confirm("保存していない入力を破棄して移動しますか？");
   if (inlinePending()) {
     showStatus("編集中のセルをEnterで確定するか、Escで取り消してください。");
     return false;
@@ -1048,6 +1051,7 @@ function mayLeave() {
 window.addEventListener("beforeunload", (e) => {
   if (
     activeEditor?.pending ||
+    document.querySelector("[data-cms-dirty]") ||
     inlinePending() ||
     workspace?.dirty ||
     (activeEditor?.dirty && !workspace)

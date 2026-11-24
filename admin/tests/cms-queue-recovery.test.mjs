@@ -58,3 +58,41 @@ test("draft cleanup keeps related operations together when one was edited in fli
     draftIds: ["legacy-product"], revision: restored.revision, retry: true,
   }), /cms_draft_already_applied/);
 });
+
+test("manual reconciliation only accepts positive main and Pages evidence for the job owner", async () => {
+  const { admin } = harness();
+  const sha = "a".repeat(40);
+  const head = "b".repeat(40);
+  let deployed = "";
+  let included = false;
+  let reads = 0;
+  admin.transport = async (url, options) => {
+    reads++;
+    assert.equal(options.method || "GET", "GET");
+    assert.equal(new Headers(options.headers).has("Authorization"), false);
+    if (url.endsWith("/heads/main")) return Response.json({ object: { sha: head } });
+    if (url.endsWith("/compare/" + sha + "..." + head)) {
+      return Response.json({ status: included ? "ahead" : "diverged", merge_base_commit: { sha } });
+    }
+    assert.equal(url, "https://www.jigdule.jp/published-commit.txt");
+    return new Response(deployed);
+  };
+  const jobs = new CmsJobs(admin);
+  const job = { id: "one", owner: "editor", commit: sha, phase: "unconfirmed", operations: [] };
+  await jobs.report(job);
+  await assert.rejects(jobs.reconcile({ id: "other" }, job.id), /cms_publication_missing/);
+  assert.equal(reads, 0);
+  assert.equal((await jobs.reconcile({ id: "editor" }, job.id)).mainConfirmed, false);
+  assert.equal(reads, 2);
+  await assert.rejects(jobs.reconcile({ id: "editor" }, job.id), /cms_publication_reconcile_wait/);
+
+  const get = admin.store.get;
+  admin.store.get = (key) => key.startsWith("cms-publication-reconcile:") ? null : get(key);
+  included = true;
+  const confirmed = await jobs.reconcile({ id: "editor" }, job.id);
+  assert.equal(confirmed.mainConfirmed, true);
+  assert.equal(confirmed.phase, "unconfirmed");
+  deployed = head;
+  assert.equal((await jobs.reconcile({ id: "editor" }, job.id)).phase, "published");
+  assert.equal((await jobs.status(job.owner)).phase, "published");
+});

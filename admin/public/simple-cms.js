@@ -72,12 +72,19 @@ export async function mountSimpleCms(panel, status, api) {
 
   async function refreshPublication() {
     const result = await api("/api/cms/publication");
-    publication = result.publication;
+    showPublication(result.publication);
+  }
+
+  function showPublication(value) {
+    publication = value;
+    reconcileButton.hidden = publication?.phase !== "unconfirmed" || !publication.commit;
     const labels = {
       queued: "公開の順番待ち", candidate: "変更候補を作成中",
       checking: "検証中", promoting: "反映中", pages: "公開サイトへの反映待ち",
       published: "公開サイトへの反映を確認しました", failed: "公開できませんでした。下書きは保存されています。",
-      unconfirmed: "公開サイトへの反映を確認できませんでした。管理者にご連絡ください。",
+      unconfirmed: publication?.mainConfirmed
+        ? "変更は反映済みです。公開サイトへの反映を確認してください。"
+        : "公開結果を確認できませんでした。状況を再確認してください。",
     };
     const errors = {
       cms_publish_conflict: "他の編集で同じ項目が変更されています。",
@@ -89,13 +96,27 @@ export async function mountSimpleCms(panel, status, api) {
       : "公開処理はありません。";
   }
 
+  const reconcileButton = button("公開結果を再確認", async () => {
+    reconcileButton.disabled = true;
+    try {
+      const result = await api("/api/cms/publication/reconcile", { method: "POST", body: { jobId: publication.id } });
+      showPublication(result.publication);
+      await refreshDrafts();
+    } catch (error) {
+      publicationStatus.textContent = error.message === "cms_publication_reconcile_wait"
+        ? "少し待ってから再確認してください。" : "公開結果を確認できませんでした。";
+    } finally {
+      reconcileButton.disabled = false;
+    }
+  });
+  reconcileButton.hidden = true;
   if (catalog.editable && catalog.publicationTracking !== false) {
     publicationArea.append(button("公開状況を更新", async () => {
       try {
         await refreshPublication();
         await refreshDrafts();
       } catch { publicationStatus.textContent = "公開状況を確認できませんでした。"; }
-    }));
+    }), reconcileButton);
     refreshPublication().catch(() => { publicationStatus.textContent = "公開状況を確認できませんでした。"; });
   }
   let revision = 0;
@@ -429,8 +450,19 @@ export async function mountSimpleCms(panel, status, api) {
     const submit = el("button", "下書きを保存");
     submit.disabled = !saveAvailable;
     form.append(submit);
+    let inputRevision = 0;
+    const markDirty = () => {
+      inputRevision++;
+      panel.dataset.cmsDirty = "true";
+    };
+    form.addEventListener("input", markDirty);
+    form.addEventListener("change", markDirty);
+    form.addEventListener("click", (event) => {
+      if (event.target.closest('button[type="button"]')) markDirty();
+    });
     form.onsubmit = async (event) => {
       event.preventDefault();
+      const submittedInputRevision = inputRevision;
       submit.disabled = true;
       try {
         const values = Object.fromEntries([...fields].map(([key, control]) => [key, control.value]));
@@ -460,6 +492,7 @@ export async function mountSimpleCms(panel, status, api) {
         revision = result.revision;
         draftId = result.draftId;
         formArea.dataset.draftId = draftId;
+        if (inputRevision === submittedInputRevision) delete panel.dataset.cmsDirty;
         await refreshDrafts();
         status.textContent = "下書きを保存しました。公開サイトには反映されていません。";
       } catch (error) {
@@ -470,6 +503,7 @@ export async function mountSimpleCms(panel, status, api) {
         submit.disabled = false;
       }
     };
+    delete panel.dataset.cmsDirty;
     formArea.dataset.draftId = draftId || "";
     formArea.replaceChildren(el("h3", spec.label + (input.id ? "を編集" : "を登録")), form);
     form.querySelector("input")?.focus();

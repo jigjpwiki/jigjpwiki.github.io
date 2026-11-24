@@ -1,4 +1,6 @@
 import { installationClient, publishingEnabled } from "./github-app.mjs";
+import { GitHub, repository } from "./github.mjs";
+import { youtubeVideoLookup } from "./cms-music.mjs";
 import { googleEnabled } from "./google.mjs";
 import { candidateResult, pagesIncludes, promoteCandidate, publicationPlan, selectedOperations } from "./cms-publish.mjs";
 import { open, seal, hash, fail, Failure } from "./security.mjs";
@@ -88,7 +90,7 @@ export class CmsJobs {
 
   summary(job) {
     return job ? { id: job.id, phase: job.phase, commit: job.commit ?? null, error: job.error ?? null,
-      createdAt: job.createdAt } : null;
+      createdAt: job.createdAt, mainConfirmed: job.mainConfirmed === true } : null;
   }
 
   async status(owner) {
@@ -97,6 +99,56 @@ export class CmsJobs {
     const queue = await this.get(queueKey) || [];
     return this.summary(queue.find((job) => job.owner === owner && job.id !== active?.id) ||
       (active?.owner === owner ? active : await this.get("cms-publication:" + owner)));
+  }
+
+  async reconcile(session, id) {
+    const owner = session.id;
+    const ownerKey = "cms-publication:" + owner;
+    const cooldownKey = "cms-publication-reconcile:" + owner;
+    const getJob = async () => {
+      const active = await this.get(activeKey);
+      if (active?.id === id && active.owner === owner) return active;
+      const indexed = await this.get(ownerKey);
+      return indexed?.id === id && indexed.owner === owner ? indexed : null;
+    };
+    const job = await this.admin.atomic(async () => {
+      const current = await getJob();
+      if (!current) fail(404, "cms_publication_missing");
+      if (current.phase !== "unconfirmed" || !/^[0-9a-f]{40}$/.test(current.commit ?? "")) return current;
+      if (await this.store.get(cooldownKey)) fail(429, "cms_publication_reconcile_wait");
+      await this.store.put(cooldownKey, "1", Date.now() + 15_000);
+      return current;
+    });
+    if (job.phase !== "unconfirmed" || !/^[0-9a-f]{40}$/.test(job.commit ?? "")) return this.summary(job);
+
+    // Reconciliation uses public repository reads and also works when publishing is disabled.
+    const github = new GitHub("", (url, options) => {
+      const headers = new Headers(options.headers);
+      headers.delete("Authorization");
+      return this.admin.transport(url, { ...options, headers });
+    });
+    const api = "/repos/" + repository;
+    const head = (await github.call(api + "/git/ref/heads/main")).object?.sha;
+    if (!/^[0-9a-f]{40}$/.test(head ?? "")) return this.summary(job);
+    if (head !== job.commit) {
+      const comparison = await github.call(api + "/compare/" + job.commit + "..." + head);
+      if (comparison.status !== "ahead" || comparison.merge_base_commit?.sha !== job.commit) return this.summary(job);
+    }
+    const deployed = await pagesIncludes(github, job.commit, this.admin.transport).catch(() => false);
+    return this.admin.atomic(async () => {
+      const current = await getJob();
+      if (current?.phase !== "unconfirmed" || current.commit !== job.commit) return this.summary(current);
+      await this.clearAppliedDraftsLocked(current);
+      current.mainConfirmed = true;
+      if (deployed) {
+        current.phase = "published";
+        delete current.error;
+      }
+      const active = await this.get(activeKey);
+      if (active?.id === current.id) await this.report(current);
+      else await this.put(ownerKey, current);
+      return this.summary(current);
+    });
   }
 
   async step(job, github) {
@@ -113,7 +165,7 @@ export class CmsJobs {
         job.base = snapshot.sha;
         delete job.commit;
       }
-      const { plan, batchId } = await publicationPlan(snapshot, job, member);
+      const { plan, batchId } = await publicationPlan(snapshot, job, member, youtubeVideoLookup(this.env.YOUTUBE_API_KEY, this.admin.transport));
       job.phase = "candidate";
       job.branch = "cms/candidate-" + batchId;
       await this.report(job);
@@ -149,40 +201,42 @@ export class CmsJobs {
   }
 
   async clearAppliedDrafts(job) {
-    await this.admin.atomic(async () => {
-      const current = await this.workspace.get(job.owner);
-      if (!current) return;
-      const currentGroups = draftGroups(current.operations);
-      const remove = new Set();
-      const guards = await this.get(replayKey(job.owner));
-      const blocked = new Set(guards?.workspaceId === current.workspaceId
-        ? guards.draftIds.filter((id) => currentGroups.has(id)) : []);
-      for (const [id, selected] of draftGroups(job.operations)) {
-        const group = currentGroups.get(id);
-        // In-flight edits can introduce or change sibling operations. Preserve
-        // the complete group rather than leaving unresolved temporary IDs.
-        if (group?.length === selected.length &&
-            selected.every((operation) => group.some((row) => equal(row, operation)))) {
-          for (const operation of group) remove.add(operation.key);
-        } else if (group && selected.some((row) => !row.id)) {
-          // This draft still carries temporary identities already materialized
-          // by the published commit. Retain it, but never allocate them again.
-          blocked.add(id);
-        }
+    await this.admin.atomic(() => this.clearAppliedDraftsLocked(job));
+  }
+
+  async clearAppliedDraftsLocked(job) {
+    const current = await this.workspace.get(job.owner);
+    if (!current) return;
+    const currentGroups = draftGroups(current.operations);
+    const remove = new Set();
+    const guards = await this.get(replayKey(job.owner));
+    const blocked = new Set(guards?.workspaceId === current.workspaceId
+      ? guards.draftIds.filter((id) => currentGroups.has(id)) : []);
+    for (const [id, selected] of draftGroups(job.operations)) {
+      const group = currentGroups.get(id);
+      // In-flight edits can introduce or change sibling operations. Preserve
+      // the complete group rather than leaving unresolved temporary IDs.
+      if (group?.length === selected.length &&
+          selected.every((operation) => group.some((row) => equal(row, operation)))) {
+        for (const operation of group) remove.add(operation.key);
+      } else if (group && selected.some((row) => !row.id)) {
+        // This draft still carries temporary identities already materialized
+        // by the published commit. Retain it, but never allocate them again.
+        blocked.add(id);
       }
-      if (blocked.size) {
-        // Workspace expiry extends on every save. Bind guards to its immutable
-        // ID and retain them across later publications and idle intervals.
-        await this.store.put(replayKey(job.owner), await seal({
-          workspaceId: current.workspaceId, draftIds: [...blocked],
-        }, this.env.SESSION_KEY), Number.MAX_SAFE_INTEGER);
-      }
-      const operations = current.operations.filter((op) => !remove.has(op.key));
-      if (operations.length === current.operations.length) return;
-      await this.workspace.save(job.owner, {
-        protocol: 1, revision: current.revision,
-        operations: operations.map(({ validationState, ...op }) => op),
-      });
+    }
+    if (blocked.size) {
+      // Workspace expiry extends on every save. Bind guards to its immutable
+      // ID and retain them across later publications and idle intervals.
+      await this.store.put(replayKey(job.owner), await seal({
+        workspaceId: current.workspaceId, draftIds: [...blocked],
+      }, this.env.SESSION_KEY), Number.MAX_SAFE_INTEGER);
+    }
+    const operations = current.operations.filter((op) => !remove.has(op.key));
+    if (operations.length === current.operations.length) return;
+    await this.workspace.save(job.owner, {
+      protocol: 1, revision: current.revision,
+      operations: operations.map(({ validationState, ...op }) => op),
     });
   }
 

@@ -45,11 +45,15 @@ export async function publicationPlan(snapshot, job, member) {
     }
     if (op.entity === "product" && op.id) {
       const offers = snapshot.models.goods.offers.filter((offer) => offer.productId === op.id);
-      if (offers.length > 1 || offers.some((offer) => offer.campaignId !== null || !before.canRead("offer", offer)))
+      if (offers.some((offer) => !before.canRead("offer", offer)))
         fail(403, "cms_shared_goods");
     }
     if (op.entity === "offer") assertExistingCampaign(snapshot.models, before, op.value.campaignId);
-    if (op.entity === "offer" && op.id && op.value.campaignId !== null) fail(403, "cms_shared_goods");
+    if (op.entity === "offer" && op.id) {
+      const old = recordAt(snapshot.models, op);
+      if (old.campaignId !== op.value.campaignId || old.productId !== op.value.productId)
+        fail(403, "cms_shared_goods");
+    }
   }
   // Preserve the numeric audit format with a namespaced opaque internal identifier.
   const uuid = job.owner.replaceAll("-", "");

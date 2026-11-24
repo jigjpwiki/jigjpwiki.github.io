@@ -19,7 +19,7 @@ const categories = {
   campaign: { category: "goods", label: "キャンペーン", fields: ["title"], existingOnly: true },
   anniversary: { category: "anniversaries", label: "記念日", fields: ["title", "kind", "month", "day", "year"] },
   event: { category: "events", label: "イベント", fields: ["title", "announcementUrl", "summary", "venue", "starts", "ends", "format", "streamUrl", "fee"] },
-  product: { category: "goods", label: "グッズ", fields: ["title", "image", "identityUrl", "url", "price", "startsAt", "endsAt"] },
+  product: { category: "goods", label: "グッズ", fields: ["title", "image", "identityUrl"] },
 };
 
 export async function mountSimpleCms(panel, status, api) {
@@ -35,6 +35,23 @@ export async function mountSimpleCms(panel, status, api) {
     return node;
   };
   const catalog = await api("/api/cms/catalog");
+  function songPicker(select, selected) {
+    const search = el("input");
+    search.type = "search";
+    const label = el("label", "曲名・原曲アーティストで検索");
+    label.append(search);
+    const refresh = (current) => {
+      const query = search.value.trim().normalize("NFKC").toLocaleLowerCase("ja");
+      select.replaceChildren(new Option("紐づけなし", ""), ...catalog.songs.filter(({ id, name }) =>
+        id === current || name.normalize("NFKC").toLocaleLowerCase("ja").includes(query),
+      ).map(({ id, name }) => new Option(name, id)));
+      select.value = current || "";
+    };
+    refresh(selected);
+    search.oninput = () => refresh(select.value);
+    return label;
+  }
+
   const formArea = el("section");
   const list = el("section");
   const draftsArea = el("section");
@@ -202,23 +219,61 @@ export async function mountSimpleCms(panel, status, api) {
       add("campaignId", "既存キャンペーン（任意）", select);
       add("campaignTitle", "新しいキャンペーン名（任意）", el("input"));
     }
+    const sales = [];
+    if (entity === "product") {
+      const fieldset = el("fieldset");
+      fieldset.append(el("legend", "販売情報"));
+      const rows = el("div");
+      let sequence = 0;
+      function appendSale(value = {}) {
+        const row = el("fieldset");
+        row.append(el("legend", value.id ? "既存の販売枠" : "新しい販売枠"));
+        const controls = {};
+        const key = value.key || (value.id ? "cms-sale-" + value.id
+          : "cms-sale-new-" + crypto.randomUUID().slice(0, 12));
+        const addSaleField = (name, text, control) => {
+          const label = el("label", text);
+          label.append(control);
+          control.value = value[name] || "";
+          row.append(label);
+          controls[name] = control;
+        };
+        for (const name of ["url", "price", "startsAt", "endsAt"]) {
+          const [text, type] = labels[name];
+          const control = el("input");
+          control.type = type;
+          control.required = name === "url";
+          if (name === "price") {
+            control.min = "0";
+            control.step = value.currency && value.currency !== "JPY" ? "any" : "1";
+          }
+          addSaleField(name, name === "price" ? "価格（" + (value.currency || "JPY") + "）" : text, control);
+        }
+        if (input.id && !value.id) {
+          const campaign = el("select");
+          campaign.append(new Option("キャンペーンなし", ""), ...(catalog.sections
+            .find(({ entity }) => entity === "campaign")?.items || [])
+            .map(({ id, title }) => new Option(title, id)));
+          addSaleField("campaignId", "関連キャンペーン", campaign);
+        }
+        const sale = { row, id: value.id, key, controls };
+        if (!value.id) row.append(button("追加した販売枠を削除", () => {
+          sales.splice(sales.indexOf(sale), 1);
+          row.remove();
+        }));
+        row.id = "cms-sale-row-" + (++sequence);
+        sales.push(sale);
+        rows.append(row);
+        return controls.url;
+      }
+      for (const sale of input.sales || []) appendSale(sale);
+      fieldset.append(rows, button("販売枠を追加", () => appendSale().focus()));
+      form.append(fieldset);
+    }
     if (entity === "musicVideo") {
-      const search = el("input");
-      search.type = "search";
-      const label = el("label", "曲名・原曲アーティストで検索");
-      label.append(search);
-      form.append(label);
       const select = el("select");
-      const updateSongs = (selected) => {
-        const query = search.value.trim().normalize("NFKC").toLocaleLowerCase("ja");
-        select.replaceChildren(new Option("紐づけなし", ""), ...catalog.songs.filter(({ id, name }) =>
-          id === selected || name.normalize("NFKC").toLocaleLowerCase("ja").includes(query),
-        ).map(({ id, name }) => new Option(name, id)));
-        select.value = selected || "";
-      };
+      form.append(songPicker(select, input.songId));
       add("songId", "既存の楽曲", select);
-      updateSongs(input.songId);
-      search.oninput = () => updateSongs(select.value);
       const newSong = el("details");
       newSong.append(el("summary", "新しい楽曲を同時に登録"));
       newSong.open = Boolean(input.newSongTitle);
@@ -250,6 +305,9 @@ export async function mountSimpleCms(panel, status, api) {
       form.append(performers);
     }
     const tracks = [];
+    const complete = el("input");
+    complete.type = "checkbox";
+    complete.checked = input.complete === true;
     if (entity === "karaoke") {
       const fieldset = el("fieldset");
       fieldset.append(el("legend", "セットリスト"));
@@ -262,8 +320,7 @@ export async function mountSimpleCms(panel, status, api) {
         const label = el("label", "配信内の曲名");
         label.append(title);
         const song = el("select");
-        song.append(new Option("紐づけなし", ""), ...catalog.songs.map(({ id, name }) => new Option(name, id)));
-        song.value = track.songId || "";
+        const songSearch = songPicker(song, track.songId);
         const songLabel = el("label", "既存の楽曲");
         songLabel.append(song);
         const move = (offset) => {
@@ -274,17 +331,29 @@ export async function mountSimpleCms(panel, status, api) {
           rows.replaceChildren(...tracks.map((item) => item.row));
           row.querySelector("button").focus();
         };
-        row.append(label, songLabel, button("上へ", () => move(-1)), button("下へ", () => move(1)));
+        const times = ["開始時刻（秒）", "終了時刻（秒）"].map((name, index) => {
+          const field = el("label", name);
+          const control = el("input");
+          control.type = "number";
+          control.min = "0";
+          control.value = track[index ? "endsAtSeconds" : "startsAtSeconds"] || "";
+          field.append(control);
+          return { field, control };
+        });
+        row.append(label, songSearch, songLabel, ...times.map(({ field }) => field), button("上へ", () => move(-1)), button("下へ", () => move(1)));
         if (!track.id) row.append(button("追加行を取り除く", () => {
           tracks.splice(tracks.findIndex((item) => item.row === row), 1);
           row.remove();
         }));
-        tracks.push({ row, title, song, id: track.id });
+        tracks.push({ row, title, song, id: track.id, times,
+          key: track.key || crypto.randomUUID().replaceAll("-", "").slice(0, 16) });
         rows.append(row);
         return title;
       }
       for (const track of input.setlist || []) appendTrack(track);
-      fieldset.append(rows, button("曲を追加", () => appendTrack().focus()));
+      const completeLabel = el("label", "セットリスト全曲を確認済み");
+      completeLabel.prepend(complete);
+      fieldset.append(rows, button("曲を追加", () => appendTrack().focus()), completeLabel);
       form.append(fieldset);
     }
     const submit = el("button", "下書きを保存");
@@ -302,9 +371,13 @@ export async function mountSimpleCms(panel, status, api) {
             ...checked,
           ];
         }
-        if (entity === "karaoke") values.setlist = tracks.map(({ id, title, song }) => ({
-          ...(id ? { id } : {}), label: title.value, songId: song.value,
-        }));
+        if (entity === "karaoke") {
+          values.complete = complete.checked;
+          values.setlist = tracks.map(({ id, key, title, song, times }) => ({
+            ...(id ? { id } : {}), key, label: title.value, songId: song.value,
+            startsAtSeconds: times[0].control.value, endsAtSeconds: times[1].control.value,
+          }));
+        }
         const result = await api("/api/cms/draft", "PUT", {
           entity, id: input.id, draftId, sha: input.sha || catalog.sha, revision, ...values,
         });

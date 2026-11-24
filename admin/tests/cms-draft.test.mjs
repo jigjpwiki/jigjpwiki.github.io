@@ -204,13 +204,20 @@ test("a karaoke draft restores multiple tracks and resolves their parent at publ
   const editor = { ...member, directPublish: true, scope: { ...member.scope, categories: ["music"] } };
   const snap = { ...snapshot, models };
   const input = { sha: snapshot.sha, entity: "karaoke", talent: original.talentIds[0],
-    videoUrl: "https://youtu.be/" + videoId, setlist: [{ label: "曲一" }, { label: "曲二" }] };
+    videoUrl: "https://youtu.be/" + videoId, complete: true, setlist: [
+      { key: "first", label: "曲一", startsAtSeconds: "10", endsAtSeconds: "20" },
+      { key: "second", label: "曲二", startsAtSeconds: "30" },
+    ] };
   const saved = writeDraft([], undefined, await prepareDraft(snap, editor, input));
   assert.deepEqual(draftInput({ operations: draftGroups(saved.operations).get(saved.id) }).setlist
     .map((track) => track.label), ["曲一", "曲二"]);
   const job = { id: "karaoke-test", owner: "8ebf4fde-85a4-4d34-9feb-d1ba5c4de026", operations: saved.operations };
   const { plan } = await publicationPlan(snap, job, editor);
   const parent = plan.files.karaoke.karaokes.at(-1);
+  assert.equal(parent.setlistStatus, "complete");
+  assert.equal(parent.expectedCount, 2);
+  const restored = draftInput({ operations: draftGroups(saved.operations).get(saved.id) });
+  assert.deepEqual(restored.setlist.map(({ key, startsAtSeconds }) => [key, startsAtSeconds]), [["first", "10"], ["second", "30"]]);
   assert.deepEqual(plan.files.karaoke.performances.filter((row) => row.karaokeId === parent.id)
     .map(({ order }) => order), [1, 2]);
 });

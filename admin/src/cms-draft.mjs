@@ -152,8 +152,14 @@ export async function prepareDraft(snapshot, member, input) {
   }
   if (entity === "song") {
     if (typeof input.artists !== "string") fail(400, "cms_invalid_input");
-    const names = [...new Set(input.artists.split("\n").map((name) => name.trim()).filter(Boolean))];
+    const lines = (text) => [...new Set(text.split("\n").map((part) => part.trim()).filter(Boolean))];
+    const names = lines(input.artists);
     value.originalArtists = names.length ? names : null;
+    for (const key of ["aliases", "readings"]) {
+      if (input[key] === undefined) continue;
+      if (typeof input[key] !== "string") fail(400, "cms_invalid_input");
+      value[key] = lines(input[key]);
+    }
   }
   if (entity === "musicVideo") {
     if (!before) delete value.groupIds;
@@ -342,6 +348,14 @@ const setlistFields = (rows) => rows.map((row) => ({
   startsAtSeconds: String(row.startsAtSeconds ?? ""), endsAtSeconds: String(row.endsAtSeconds ?? ""),
 }));
 
+function songFields(record) {
+  return {
+    artists: (record.originalArtists || []).join("\n"),
+    aliases: (record.aliases || []).join("\n"),
+    readings: (record.readings || []).join("\n"),
+  };
+}
+
 export function draftDetails(snapshot, member, entity, id) {
   if (!Object.hasOwn(draftTypes, entity)) fail(403, "cms_scope_denied");
   const [file, list] = draftTypes[entity];
@@ -356,7 +370,7 @@ export function draftDetails(snapshot, member, entity, id) {
     details.complete = record.setlistStatus === "complete";
     details.setlist = setlistFields(rows.sort((a, b) => (a.order ?? Infinity) - (b.order ?? Infinity)));
   }
-  if (entity === "song") details.artists = (record.originalArtists || []).join("\n");
+  if (entity === "song") Object.assign(details, songFields(record));
   if (entity === "musicVideo") Object.assign(details, musicVideoFields(record));
   if (entity === "talent") Object.assign(details, talentFields(record));
   if (entity === "anniversary") Object.assign(details, anniversaryFields(record));
@@ -389,7 +403,7 @@ export function draftInput(workspace) {
         ...newSongFields(workspace.operations.find((work) => work.entity === "song" && "@" + work.key === row.value.songId)),
         key: row.key.replace(/^cms-track-/, "").replace(/-[a-f0-9]{24}$/, ""),
       })) } : {}),
-    ...(op.entity === "song" ? { artists: (op.value.originalArtists || []).join("\n") } : {}),
+    ...(op.entity === "song" ? songFields(op.value) : {}),
     ...(op.entity === "musicVideo" ? {
       ...musicVideoFields(op.value),
       ...newSongFields(song),

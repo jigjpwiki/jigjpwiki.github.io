@@ -53,7 +53,7 @@ export function mountCmsHistory({ api, editable, revision, afterSave }) {
         const value = (row) => row && Object.hasOwn(row, field) ? JSON.stringify(row[field], null, 2) : "未設定";
         record.append(node("p", field), node("pre", "変更前 " + value(before)), node("pre", "変更後 " + value(after)));
       }
-      if (editable && operation.action === "edit" && before && after && before.visibility === after.visibility)
+      if (editable && operation.reversible)
         record.append(button("取り消しを下書きに追加", async () => {
           await api("/api/cms/history", "POST", {
             batchId, operationId: operation.operationId, recordId: operation.recordId,

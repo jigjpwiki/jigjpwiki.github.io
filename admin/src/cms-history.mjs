@@ -1,3 +1,4 @@
+import { draftTypes } from "./cms-draft.mjs";
 import { cmsPermissions } from "./cms-scope.mjs";
 import { equal, recordAt, threeWay } from "./submission-plan.mjs";
 import { fail } from "./security.mjs";
@@ -5,6 +6,26 @@ import validateAudit from "./audit.cjs";
 
 const tracked = new Set(["talent", "anniversary", "song", "musicVideo", "video",
   "karaoke", "performance", "event", "campaign", "product", "offer"]);
+
+// Single-record reversals must round-trip through the corresponding CMS form.
+const editableFields = {
+  talent: ["displayName", "aliases", "profileImage", "officialProfileUrl", "activityStatus"],
+  anniversary: ["title", "kind", "date", "recursYearly", "countYears"],
+  song: ["title", "originalArtists", "aliases", "readings"],
+  musicVideo: ["rawSongTitle", "songId", "kind"],
+  video: ["title"],
+  event: ["title", "announcementUrl", "summary", "venue", "format", "fee", "streamUrls"],
+  campaign: ["title"],
+  product: ["title", "image", "identityUrl"],
+};
+function reversible(row) {
+  if (!Object.hasOwn(draftTypes, row.entity) || !Object.hasOwn(editableFields, row.entity) ||
+      row.action !== "edit" || !row.before || !row.after || row.before.visibility !== row.after.visibility)
+    return false;
+  const changed = Object.keys({ ...row.before, ...row.after }).filter((field) =>
+    !equal(row.before[field], row.after[field]));
+  return changed.length > 0 && changed.every((field) => editableFields[row.entity].includes(field));
+}
 
 export function scopedHistory(snapshot, member, audit, batchId) {
   validateAudit(audit, batchId);
@@ -16,7 +37,7 @@ export function scopedHistory(snapshot, member, audit, batchId) {
     return access.canRead(row.entity, current) &&
       (!row.before || access.canRead(row.entity, row.before)) &&
       (!row.after || access.canRead(row.entity, row.after));
-  });
+  }).map((row) => ({ ...row, reversible: member.role === "editor" && reversible(row) }));
   return { batchId, actor: audit.actor, createdAt: audit.createdAt, operations };
 }
 
@@ -26,8 +47,7 @@ export function prepareAuditReversal(snapshot, member, audit, batchId, operation
   const matches = operations.filter((row) => row.operationId === operationId && row.recordId === recordId);
   if (matches.length !== 1) fail(403, "cms_scope_denied");
   const [row] = matches;
-  if (!tracked.has(row.entity) || row.action !== "edit" || !row.before || !row.after ||
-      row.before.visibility !== row.after.visibility)
+  if (!row.reversible)
     fail(409, "cms_history_reversal_unavailable");
   const change = { entity: row.entity, id: row.recordId };
   const current = recordAt(snapshot.models, change);
@@ -37,7 +57,7 @@ export function prepareAuditReversal(snapshot, member, audit, batchId, operation
   if (merged.conflicts.length) fail(409, "cms_history_reversal_conflict");
   if (equal(current, merged.value)) fail(409, "no_changes");
   access.assertChange(row.entity, current, merged.value);
-  return { ...change, key: "cms-" + row.entity.toLowerCase(), before: current,
+  return { ...change, key: row.entity === "video" ? "cms-media" : "cms-" + row.entity.toLowerCase(), before: current,
     value: merged.value, baseCommit: snapshot.sha };
 }
 

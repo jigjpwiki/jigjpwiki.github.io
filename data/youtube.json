@@ -1111,7 +1111,7 @@
     "date": "2026-11-24T02:59:53.000Z",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/XDW3ykQRGT8/mqdefault.jpg?v=6b04f48c",
+    "thumbnail": "https://i.ytimg.com/vi/XDW3ykQRGT8/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/BaxFKUrCc4gGKc1wwAHt4ebjk8C69NdTl3fMz9LoR5SUm_Tpvv2yixsbJhp8qsld6S0tdgup=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=XDW3ykQRGT8"
   },
@@ -1169,7 +1169,7 @@
     "youtubeid": "UCWi_ztz8Xuz4XfzhoG6ZfyA",
     "title": "【ブルアカ大決戦】ゴズ神秘アリス全会心TL！✨最終3桁順位を目指してスコア詰め詰めTA🌟人のTLを参考に3桁順位目指す作業配信🪄ROM・並走・寝落ち大歓迎✨【ブルーアーカイブ】 ＃せなりるライブ",
     "date": "2026-11-24T10:00:12.000Z",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/l1mGDT5v3mo/mqdefault.jpg?v=6b055eda",
     "channelIcon": "https://yt3.ggpht.com/BaxFKUrCc4gGKc1wwAHt4ebjk8C69NdTl3fMz9LoR5SUm_Tpvv2yixsbJhp8qsld6S0tdgup=s240-c-k-c0x00ffffff-no-rj",
@@ -1373,11 +1373,23 @@
     "youtubeid": "UCv2IYO-4waCpHvn50SWWY2A",
     "title": "【#雑談配信】朝からぽんぽんぺいんだった日の雑談。【七音うら】",
     "date": "2026-11-24T15:06:34.000Z",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/5Xg_5hB3WFA/mqdefault.jpg?v=6b03108f",
     "channelIcon": "https://yt3.ggpht.com/62ws-Q3hPuNjc64T5sz41MNbFqxlI7Gefwnsrysdn2FNYqlxH5E5VifRCMtsFIUyZe5lsHJmxA=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=5Xg_5hB3WFA"
+  },
+  {
+    "videoId": "OqTrdLfyTHw",
+    "name": "夜雨ねむる",
+    "youtubeid": "UC1hxdM37vjjqr-IfZuDn1iw",
+    "title": "【ASMR/囁き/耳かき】🌙低音ボイスでリラックス💭寝落ち歓迎【夜雨ねむる】パレデミア学園＃新人Vtuber",
+    "date": "2026-11-24T16:00:01.000Z",
+    "status": "live",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/OqTrdLfyTHw/mqdefault.jpg?v=6b05a67d",
+    "channelIcon": "https://yt3.ggpht.com/1if2rdJdkKHQBsQt5RZ4twlSmWQPwGGt0mxNiloT9Ee7L8caGbGaIVy3HnJdXX-BUhHUeBAo-xY=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=OqTrdLfyTHw"
   },
   {
     "videoId": "ocEu95qKoM0",
@@ -1474,18 +1486,6 @@
     "thumbnail": "https://i.ytimg.com/vi/pzNiYjuTbMA/mqdefault.jpg?v=6b0416a7",
     "channelIcon": "https://yt3.ggpht.com/iktv-39nC7NDASD1WeXms-DEuHuVqB5RhwTtdDe26w-BCvqf6yq3r_8zBiv2i2CfNXCK0uE8=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=pzNiYjuTbMA"
-  },
-  {
-    "videoId": "OqTrdLfyTHw",
-    "name": "夜雨ねむる",
-    "youtubeid": "UC1hxdM37vjjqr-IfZuDn1iw",
-    "title": "【ASMR/囁き/耳かき】🌙低音ボイスでリラックス💭寝落ち歓迎【夜雨ねむる】パレデミア学園＃新人Vtuber",
-    "date": "2026-11-25T16:00:00.000Z",
-    "status": "upcoming",
-    "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/OqTrdLfyTHw/mqdefault.jpg?v=6b05a67d",
-    "channelIcon": "https://yt3.ggpht.com/1if2rdJdkKHQBsQt5RZ4twlSmWQPwGGt0mxNiloT9Ee7L8caGbGaIVy3HnJdXX-BUhHUeBAo-xY=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=OqTrdLfyTHw"
   },
   {
     "videoId": "0v2pz3P3Xk8",

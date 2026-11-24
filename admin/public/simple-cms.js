@@ -237,9 +237,40 @@ export async function mountSimpleCms(panel, status, api) {
     if (catalog.editable && catalog.categories.includes(spec.category))
       list.append(button(spec.label + "を新規登録", () => edit(entity)));
   }
+  const tools = el("div");
+  tools.className = "button-group";
+  const category = el("select");
+  const search = el("input");
+  const order = el("select");
+  search.type = "search";
+  search.placeholder = "名称を検索";
+  search.setAttribute("aria-label", "名称を検索");
+  category.setAttribute("aria-label", "コンテンツの種類");
+  order.setAttribute("aria-label", "並び順");
+  category.append(new Option("すべての種類", ""), ...catalog.sections.map(
+    ({ entity, label }) => new Option(label, entity),
+  ));
+  order.append(new Option("登録順", ""), new Option("名前順", "name"));
+  tools.append(category, search, order);
+  list.append(tools);
+  const views = [];
+  const collator = new Intl.Collator("ja");
+  function filter() {
+    const needle = search.value.trim().normalize("NFKC").toLocaleLowerCase("ja");
+    for (const { entity, section, entries, rows } of views) {
+      const matching = rows.filter(({ title }) => title.normalize("NFKC").toLocaleLowerCase("ja").includes(needle));
+      if (order.value === "name") matching.sort((a, b) => collator.compare(a.title, b.title));
+      entries.replaceChildren(...matching.map(({ li }) => li));
+      section.hidden = Boolean(category.value && category.value !== entity) || matching.length === 0;
+    }
+  }
+  search.addEventListener("input", filter);
+  category.addEventListener("change", filter);
+  order.addEventListener("change", filter);
   for (const { entity, label, items } of catalog.sections) {
     const section = el("section");
     const entries = el("ul");
+    const rows = [];
     for (const item of items) {
       const li = el("li");
       if (!catalog.editable || !Object.hasOwn(categories, entity)) li.textContent = item.title;
@@ -252,10 +283,12 @@ export async function mountSimpleCms(panel, status, api) {
           status.textContent = "この項目は簡易フォームで編集できません。";
         }
       }));
-      entries.append(li);
+      rows.push({ title: item.title || "名称未登録", li });
     }
     section.append(el("h3", label), entries);
     list.append(section);
+    views.push({ entity, section, entries, rows });
   }
+  filter();
   if (saveAvailable) status.textContent = "担当範囲の公開コンテンツです。";
 }

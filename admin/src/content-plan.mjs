@@ -70,7 +70,7 @@ export function slots(models, record, old) {
     } else slot.id = nextId(models, "slot", "feature-id-registry");
   }
 }
-export async function contentPreview(snapshot, input, { actor, references }) {
+export async function contentPreview(snapshot, input, { actor, references, authorize }) {
   if (
     !input ||
     Object.keys(input).some(
@@ -201,6 +201,7 @@ export async function contentPreview(snapshot, input, { actor, references }) {
     if (signatures.has(key)) fail(409, "duplicate_offer");
     signatures.add(key);
   }
+  authorize?.(before, models, changes);
   try {
     validate(models, before);
     assertPrivateUnreferenced(models.talents, [

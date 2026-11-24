@@ -42,7 +42,7 @@ export function cmsPermissions(models, member) {
   const memberGroups = models.catalog.groups.filter((group) => group.visibility === "public");
 
   function resolve(entity, row, seen) {
-    if (row.visibility !== "public") return { allowed: false, anchored: false };
+    if ((entity === "talent" ? row.visibility ?? "public" : row.visibility) !== "public") return { allowed: false, anchored: false };
     if (seen.has(row)) return { allowed: true, anchored: false };
     seen.add(row);
     let anchored = false;
@@ -116,6 +116,7 @@ export function scopedCatalog(models, member) {
     const type = types[entity];
     return {
       category: type.category,
+      entity,
       label: type.label || "VTuber",
       items: models[type.file][type.list].filter((row) => permissions.canRead(entity, row)).map((row) => ({
         id: row.id,

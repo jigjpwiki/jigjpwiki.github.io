@@ -1,3 +1,5 @@
+import { prepareDraft, draftDetails, draftInput } from "./cms-draft.mjs";
+import { cmsPermissions } from "./cms-scope.mjs";
 import { createCmsReader } from "./cms-read.mjs";
 import { normalizeScope, scopedCatalog } from "./cms-scope.mjs";
 import { googleAuth, googleEnabled, emailKey } from "./google.mjs";
@@ -228,12 +230,57 @@ export class Admin {
         fail(401, "login_required");
       if (url.pathname === "/api/me" && request.method === "GET")
         return json({ id: session.id, role: member.role, provider: "google", csrf: session.csrf, expires: session.expires });
-      if (url.pathname === "/api/cms/catalog" && request.method === "GET") {
-        const models = await this.cmsSnapshot();
-        // A role or grant can change while the remote snapshot is loading.
-        const current = await this.store.get(session.memberKey);
-        if (entry !== current || !googleEnabled(this.env)) fail(401, "login_required");
-        return json({ sections: scopedCatalog(models, member) });
+      const cmsRoutes = ["/api/cms/catalog", "/api/cms/detail", "/api/cms/draft"];
+      if (cmsRoutes.includes(url.pathname)) {
+        const snapshot = await this.cmsSnapshot();
+        const requireCurrentGrant = async () => {
+          if (entry !== await this.store.get(session.memberKey) || !googleEnabled(this.env))
+            fail(401, "login_required");
+        };
+        await requireCurrentGrant();
+        const { models } = snapshot;
+        if (url.pathname === "/api/cms/catalog" && request.method === "GET") {
+          const access = cmsPermissions(models, { ...member, scope: {
+            ...member.scope, categories: ["talents"],
+          } });
+          return json({
+            sha: snapshot.sha, sections: scopedCatalog(models, member),
+            editable: member.role === "editor", categories: member.scope?.categories ?? [],
+            organizations: models.talents.organizations.filter((row) => member.scope?.organizations.includes(row.id)),
+            people: models.talents.talents.filter((row) => access.canRead("talent", row))
+              .map((row) => ({ id: row.id, name: row.displayName })),
+          });
+        }
+        if (url.pathname === "/api/cms/detail" && request.method === "GET")
+          return json({ sha: snapshot.sha, fields: draftDetails(snapshot, member, url.searchParams.get("entity"), url.searchParams.get("id")) });
+        if (url.pathname === "/api/cms/draft") {
+          if (member.role !== "editor") fail(403, "cms_scope_denied");
+          const workspace = new WorkspaceStore(this.store, this.env.SESSION_KEY);
+          if (request.method === "GET") {
+            const saved = await workspace.get(session.id);
+            const input = draftInput(saved);
+            if (input) {
+              const rebased = await prepareDraft(snapshot, member, { ...input, sha: snapshot.sha });
+              if (rebased.length !== saved.operations.length || rebased.some((op, index) =>
+                  op.id !== saved.operations[index].id ||
+                  JSON.stringify(op.before) !== JSON.stringify(saved.operations[index].before)))
+                fail(409, "main_changed_reload");
+              input.sha = snapshot.sha;
+            }
+            await requireCurrentGrant();
+            return json({ revision: saved?.revision ?? 0, input });
+          }
+          if (request.method === "PUT") {
+            const input = await body(request, 16000);
+            if (!input || typeof input !== "object") fail(400, "cms_invalid_input");
+            const operations = await prepareDraft(snapshot, member, input);
+            return this.atomic(async () => {
+              await requireCurrentGrant();
+              const saved = await workspace.save(session.id, { protocol: 1, revision: input.revision, operations });
+              return json({ revision: saved.revision });
+            });
+          }
+        }
       }
       fail(403, "google_route_not_enabled");
     }

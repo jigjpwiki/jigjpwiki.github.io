@@ -1,7 +1,7 @@
 import { fail } from "./security.mjs";
 import { repository } from "./github.mjs";
 
-const files = ["talents", "catalog", "anniversaries", "music", "media", "karaoke", "events", "goods"];
+const files = ["talents", "catalog", "anniversaries", "music", "media", "karaoke", "events", "goods", "talent-id-registry", "catalog-id-registry", "feature-id-registry", "youtube_streamers", "twitch_streamers"];
 
 export function createCmsReader(transport) {
   let cached;
@@ -24,8 +24,9 @@ export function createCmsReader(transport) {
         if (typeof sha !== "string" || !/^[0-9a-f]{40}$/.test(sha)) fail(503, "cms_read_unavailable");
         const base = "https://raw.githubusercontent.com/" + repository + "/" + sha + "/data/";
         const models = Object.fromEntries(await Promise.all(files.map(async (name) => [name, await read(base + name + ".json")])));
-        cached = { models, expires: Date.now() + 60000 };
-        return models;
+        models["admin-ledger"] = { version: 1, entries: [] };
+        cached = { models: { sha, models }, expires: Date.now() + 60000 };
+        return cached.models;
       })().finally(() => { pending = null; });
     }
     return pending;

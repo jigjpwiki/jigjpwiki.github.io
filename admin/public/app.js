@@ -344,18 +344,8 @@ async function start() {
       const status = node("p", "担当コンテンツを読み込み中…");
       status.setAttribute("role", "status");
       panel.append(node("h2", "担当コンテンツ"), logout, status);
-      api("/api/cms/catalog").then(({ sections }) => {
-        status.textContent = sections.some(({ items }) => items.length)
-          ? "担当範囲の公開コンテンツです。"
-          : "担当範囲に表示できる情報がありません。";
-        for (const { label, items } of sections) {
-          const section = node("section");
-          const list = node("ul");
-          for (const item of items) list.append(node("li", item.title || "名称未登録"));
-          section.append(node("h3", label), list);
-          panel.append(section);
-        }
-      }).catch(() => { status.textContent = "担当コンテンツを取得できませんでした。"; });
+      import("./simple-cms.js").then(({ mountSimpleCms }) => mountSimpleCms(panel, status, api))
+        .catch(() => { status.textContent = "担当コンテンツを取得できませんでした。"; });
       $("#app").replaceChildren(panel);
       return;
     }

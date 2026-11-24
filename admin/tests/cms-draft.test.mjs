@@ -226,3 +226,49 @@ test("a karaoke draft restores multiple tracks and resolves their parent at publ
   assert.deepEqual(tracks.map(({ order }) => order), [1, 2]);
   assert.equal(tracks[0].songId, song.id);
 });
+
+test("uncollected videos are verified against YouTube on save and publication", async () => {
+  const { publicationPlan } = await import("../src/cms-publish.mjs");
+  const { youtubeVideoLookup } = await import("../src/cms-music.mjs");
+  const original = fixture.music.musicVideos[0];
+  const { channelId } = fixture.media.videos.find((row) => row.youtubeId === original.youtubeId);
+  const id = "external001";
+  let privacyStatus = "public";
+  let calls = 0;
+  const lookup = youtubeVideoLookup("test-key", async (url, options) => {
+    calls++;
+    assert.equal(url.hostname, "www.googleapis.com");
+    assert.equal(url.searchParams.get("id"), id);
+    assert.equal(url.searchParams.has("key"), false);
+    assert.equal(options.headers["X-Goog-Api-Key"], "test-key");
+    assert.equal(options.redirect, "error");
+    return Response.json({ items: [{ id, snippet: { title: "未収集動画", channelId }, status: { privacyStatus } }] });
+  });
+  const editor = { ...member, directPublish: true, scope: { ...member.scope, categories: ["music"] } };
+  const input = { sha: snapshot.sha, entity: "musicVideo", talent: original.talentIds[0],
+    rawSongTitle: "未収集の曲", videoKind: "cover", videoUrl: "https://youtu.be/" + id };
+  const operations = await prepareDraft(snapshot, editor, input, lookup);
+  const job = { id: "external-video", owner: "8ebf4fde-85a4-4d34-9feb-d1ba5c4de026", operations };
+  const { plan } = await publicationPlan(snapshot, job, editor, lookup);
+  assert.equal(plan.files.media.videos.at(-1).youtubeId, id);
+  assert.equal(calls, 2);
+  privacyStatus = "private";
+  await assert.rejects(publicationPlan(snapshot, job, editor, lookup), /cms_video_not_public/);
+  await assert.rejects(prepareDraft(snapshot, editor, input, lookup), /cms_video_not_public/);
+});
+
+test("standalone works require owner permission and retain their confirmed identity", async () => {
+  const { publicationPlan } = await import("../src/cms-publish.mjs");
+  const editor = { ...member, directPublish: true, scope: { ...member.scope, categories: ["music"] } };
+  const owner = { ...editor, owner: true };
+  const input = { sha: snapshot.sha, entity: "song", title: "未使用楽曲の試験",
+    artists: "試験作曲者", aliases: "別名", readings: "べつめい",
+    songIdentityUrl: "https://example.com/standalone-song" };
+  await assert.rejects(prepareDraft(snapshot, editor, input), /cms_scope_denied/);
+  const operations = await prepareDraft(snapshot, owner, input);
+  assert.equal(draftInput({ operations }).songIdentityUrl, input.songIdentityUrl);
+  const job = { id: "standalone-song", owner: "8ebf4fde-85a4-4d34-9feb-d1ba5c4de026", operations };
+  await assert.rejects(publicationPlan(snapshot, job, editor), /cms_scope_denied/);
+  const { plan } = await publicationPlan(snapshot, job, owner);
+  assert.deepEqual(plan.files.music.songs.at(-1).aliases, [input.aliases]);
+});

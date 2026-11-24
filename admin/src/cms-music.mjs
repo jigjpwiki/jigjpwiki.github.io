@@ -2,14 +2,54 @@ import { fail } from "./security.mjs";
 
 export function collectedVideo(models, id) {
   const rows = (models.youtube || []).filter((row) => row.videoId === id);
-  if (rows.length !== 1) fail(400, "cms_video_not_collected");
+  if (rows.length !== 1) return null;
   const { youtubeid: channelId, title } = rows[0];
   if (!/^UC[\w-]{22}$/.test(channelId || "") || typeof title !== "string" || !title.trim())
-    fail(400, "cms_video_not_collected");
+    return null;
   return {
     youtubeId: id, channelId, title, publishedAt: null, startedAt: null,
     endedAt: null, durationSeconds: null, availability: "public", visibility: "public",
   };
+}
+
+export function youtubeVideoLookup(apiKey, transport = fetch) {
+  if (!apiKey) return undefined;
+  return async (id) => {
+    if (!/^[\w-]{11}$/.test(id)) fail(400, "cms_invalid_video_url");
+    const url = new URL("https://www.googleapis.com/youtube/v3/videos");
+    url.search = new URLSearchParams({
+      part: "snippet,status", id, fields: "items(id,snippet(channelId,title,publishedAt),status(privacyStatus))",
+    });
+    let items;
+    try {
+      const response = await transport(url, {
+        headers: { "X-Goog-Api-Key": apiKey },
+        signal: AbortSignal.timeout(8000), redirect: "error", cache: "no-store",
+      });
+      if (!response.ok) fail(503, "cms_video_lookup_unavailable");
+      ({ items } = await response.json());
+      if (!Array.isArray(items)) fail(503, "cms_video_lookup_unavailable");
+    } catch {
+      fail(503, "cms_video_lookup_unavailable");
+    }
+    const row = items.length === 1 ? items[0] : null;
+    if (row?.id !== id || row.status?.privacyStatus !== "public") return null;
+    const { channelId, title, publishedAt } = row.snippet || {};
+    if (!/^UC[\w-]{22}$/.test(channelId || "") || typeof title !== "string" || !title.trim()) return null;
+    return {
+      youtubeId: id, channelId, title,
+      publishedAt: typeof publishedAt === "string" && Number.isFinite(Date.parse(publishedAt))
+        ? new Date(publishedAt).toISOString() : null,
+      startedAt: null, endedAt: null, durationSeconds: null, availability: "public", visibility: "public",
+    };
+  };
+}
+
+export async function videoForCms(models, id, lookup, { verify = false } = {}) {
+  const collected = collectedVideo(models, id);
+  const video = lookup && (verify || !collected) ? await lookup(id) : collected;
+  if (!video) fail(400, lookup ? "cms_video_not_public" : "cms_video_not_collected");
+  return video;
 }
 
 export function canEditSong(models, permissions, songId) {

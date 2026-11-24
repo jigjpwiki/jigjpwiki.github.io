@@ -1,6 +1,7 @@
 const labels = {
   artists: ["原曲アーティスト（1行に1名）", "textarea"],
   aliases: ["曲の別名（1行に1件）", "textarea"], readings: ["曲名の読み（1行に1件）", "textarea"],
+  songIdentityUrl: ["楽曲の公式情報URL", "url"],
   rawSongTitle: ["動画に記載された曲名", "text"], videoUrl: ["YouTube動画URL", "url"], videoKind: ["動画の種類", "select"],
   aliasNames: ["別名（1行に1件）", "textarea"], youtubeUrl: ["YouTubeチャンネルURL", "url"], xUrl: ["XプロフィールURL", "url"],
   displayName: ["表示名", "text"], activity: ["活動状態", "select"], officialProfileUrl: ["公式プロフィールURL", "url"],
@@ -14,7 +15,7 @@ const labels = {
 };
 const categories = {
   karaoke: { category: "music", label: "歌枠", fields: ["videoUrl"] },
-  song: { category: "music", label: "楽曲", fields: ["title", "artists", "aliases", "readings"], existingOnly: true },
+  song: { category: "music", label: "楽曲", fields: ["title", "artists", "aliases", "readings"], ownerCreate: true },
   musicVideo: { category: "music", label: "歌動画", fields: ["rawSongTitle", "videoUrl", "videoKind"] },
   talent: { category: "talents", label: "VTuber", fields: ["displayName", "image", "activity", "officialProfileUrl", "aliasNames", "youtubeUrl", "xUrl"] },
   campaign: { category: "goods", label: "キャンペーン", fields: ["title"] },
@@ -194,7 +195,7 @@ export async function mountSimpleCms(panel, status, api) {
       }
       return { details, controls };
     }
-    for (const key of spec.fields) {
+    for (const key of (entity === "song" && !input.id ? [...spec.fields, "songIdentityUrl"] : spec.fields)) {
 
       const [label, type] = labels[key];
       const control = el(["textarea", "select"].includes(type) ? type : "input");
@@ -202,7 +203,7 @@ export async function mountSimpleCms(panel, status, api) {
         unknown: "未定・不明", onsite: "会場開催", online: "オンライン", hybrid: "会場とオンライン",
       }).map(([value, text]) => new Option(text, value)));
       else if (type !== "textarea") control.type = type;
-      control.required = ["month", "day"].includes(key) || ["title", "displayName", "rawSongTitle", "videoUrl", "videoKind"].includes(key) || key === "announcementUrl" || key === "summary" || key === "identityUrl";
+      control.required = ["month", "day"].includes(key) || ["title", "displayName", "rawSongTitle", "videoUrl", "videoKind"].includes(key) || key === "announcementUrl" || key === "summary" || key === "identityUrl" || key === "songIdentityUrl";
       if (key === "price") {
         control.min = "0";
         control.step = input.currency && input.currency !== "JPY" ? "any" : "1";
@@ -466,7 +467,7 @@ export async function mountSimpleCms(panel, status, api) {
   }
   if (saved) await refreshDrafts();
   for (const [entity, spec] of Object.entries(categories)) {
-    if (!spec.existingOnly && catalog.editable && catalog.categories.includes(spec.category))
+    if ((!spec.ownerCreate || catalog.owner) && catalog.editable && catalog.categories.includes(spec.category))
       list.append(button(spec.label + "を新規登録", () => edit(entity)));
   }
   const tools = el("div");

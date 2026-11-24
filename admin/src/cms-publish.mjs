@@ -1,4 +1,4 @@
-import { collectedVideo, assertSongEdit } from "./cms-music.mjs";
+import { videoForCms, assertSongEdit } from "./cms-music.mjs";
 import { entities, planSubmission, recordAt } from "./submission-plan.mjs";
 import { cmsPermissions, assertExistingCampaign } from "./cms-scope.mjs";
 import { repository } from "./github.mjs";
@@ -16,7 +16,7 @@ export function selectedOperations(workspace, ids) {
   return ids.flatMap((id) => groups.get(id));
 }
 
-export async function publicationPlan(snapshot, job, member) {
+export async function publicationPlan(snapshot, job, member, lookup) {
   if (member.role !== "editor" || member.directPublish !== true) fail(403, "cms_scope_denied");
   const batchId = await hash({ id: job.id, base: snapshot.sha });
   const before = cmsPermissions(snapshot.models, member);
@@ -34,11 +34,12 @@ export async function publicationPlan(snapshot, job, member) {
           fail(403, "cms_scope_denied");
       } else if (!before.canRead(op.entity, value)) fail(403, "cms_scope_denied");
     }
-    if (op.entity === "video" && (op.id ||
-        collectedVideo(snapshot.models, op.value.youtubeId).channelId !== op.value.channelId ||
-        !before.canRead("video", op.value)))
-      fail(403, "cms_scope_denied");
-    if (op.entity === "song" && op.id) assertSongEdit(snapshot.models, before, op.id);
+    if (op.entity === "video") {
+      if (op.id || !before.canRead("video", op.value)) fail(403, "cms_scope_denied");
+      const verified = await videoForCms(snapshot.models, op.value.youtubeId, lookup, { verify: true });
+      if (verified.channelId !== op.value.channelId) fail(403, "cms_scope_denied");
+    }
+    if (op.entity === "song" && op.id && !member.owner) assertSongEdit(snapshot.models, before, op.id);
     if (op.entity === "talent" && op.id) {
       const current = recordAt(snapshot.models, op);
       before.assertChange("talent", current, current);
@@ -66,7 +67,7 @@ export async function publicationPlan(snapshot, job, member) {
   const after = cmsPermissions({ ...snapshot.models, ...plan.files }, member);
   for (const row of plan.impact.records) {
     if (!entities[row.entity] || !["event", "product", "offer", "anniversary", "campaign", "talent", "musicVideo", "video", "song", "karaoke", "performance"].includes(row.entity)) fail(403, "cms_scope_denied");
-    if (row.entity === "song") assertSongEdit({ ...snapshot.models, ...plan.files }, after, row.id);
+    if (row.entity === "song" && !member.owner) assertSongEdit({ ...snapshot.models, ...plan.files }, after, row.id);
     else after.assertChange(row.entity, row.before, row.value, { publish: true });
   }
   return { plan: { ...plan, sha: snapshot.sha, tree: snapshot.tree }, batchId };

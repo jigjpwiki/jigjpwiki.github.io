@@ -1,4 +1,4 @@
-import { collectedVideo, assertSongEdit, newSongOperation, newSongFields } from "./cms-music.mjs";
+import { videoForCms, assertSongEdit, newSongOperation, newSongFields } from "./cms-music.mjs";
 import { youtubeId } from "../public/content-utils.js";
 import { planSubmission, recordAt } from "./submission-plan.mjs";
 import { contentPreview, resolveRefs } from "./content-plan.mjs";
@@ -18,7 +18,7 @@ const fields = {
   product: ["title", "image", "identityUrl"],
 };
 
-export async function prepareDraft(snapshot, member, input) {
+export async function prepareDraft(snapshot, member, input, lookup) {
   const { entity, id } = input;
   if (!Object.hasOwn(draftTypes, entity) || member.role !== "editor") fail(403, "cms_scope_denied");
   if (input.sha !== snapshot.sha) fail(409, "main_changed_reload");
@@ -89,7 +89,7 @@ export async function prepareDraft(snapshot, member, input) {
     for (const row of plan.impact.records) after.assertChange(entity, row.before, row.value);
     return [operation];
   }
-  if (entity === "song" && !before) fail(400, "cms_invalid_input");
+  if (entity === "song" && !before && !member.owner) fail(403, "cms_scope_denied");
   const value = structuredClone(before || (entity === "event" ? {
     type: "other", timing: "unknown", starts: unknown, ends: unknown,
     organizerIds: [], relatedOrganizationIds: [input.organization],
@@ -151,6 +151,15 @@ export async function prepareDraft(snapshot, member, input) {
     }
   }
   if (entity === "song") {
+    if (!before) {
+      if (typeof input.songIdentityUrl !== "string" || !input.songIdentityUrl.trim())
+        fail(400, "cms_invalid_input");
+      delete value.talentIds;
+      delete value.groupIds;
+      value.identityUrl = input.songIdentityUrl.trim();
+      value.aliases = [];
+      value.readings = [];
+    }
     if (typeof input.artists !== "string") fail(400, "cms_invalid_input");
     const lines = (text) => [...new Set(text.split("\n").map((part) => part.trim()).filter(Boolean))];
     const names = lines(input.artists);
@@ -217,7 +226,7 @@ export async function prepareDraft(snapshot, member, input) {
   const operations = [operation, ...setlist, ...newTracks];
   if (["musicVideo", "karaoke"].includes(entity)) {
     if (!snapshot.models.media.videos.some((row) => row.youtubeId === value.youtubeId)) {
-      const video = collectedVideo(snapshot.models, value.youtubeId);
+      const video = await videoForCms(snapshot.models, value.youtubeId, lookup);
       if (!access.canRead("video", video)) fail(403, "cms_scope_denied");
       operations.push({ key: "cms-media", entity: "video", value: video });
     }
@@ -268,7 +277,7 @@ export async function prepareDraft(snapshot, member, input) {
       const next = cmsPermissions(afterModels, member);
       for (const { op, old, record } of changes) {
         if (old && !previous.canRead(op.entity, old)) fail(403, "cms_scope_denied");
-        if (op.entity === "song") assertSongEdit(afterModels, next, record.id);
+        if (op.entity === "song" && !member.owner) assertSongEdit(afterModels, next, record.id);
         else next.assertChange(op.entity, null, record);
       }
     },
@@ -384,6 +393,7 @@ const setlistFields = (rows) => rows.map((row) => ({
 function songFields(record) {
   return {
     artists: (record.originalArtists || []).join("\n"),
+    songIdentityUrl: record.identityUrl || "",
     aliases: (record.aliases || []).join("\n"),
     readings: (record.readings || []).join("\n"),
   };

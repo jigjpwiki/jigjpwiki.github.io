@@ -21,7 +21,8 @@ const transport = async (url, opts = {}) => {
   const u = new URL(url),
     p = u.pathname;
   let result;
-  if (p === "/login/oauth/access_token")
+  if (u.hostname === "raw.githubusercontent.com") result = models[p.split("/").pop().replace(/\.json$/, "")];
+  else if (p === "/login/oauth/access_token")
     result = { access_token: "fixture-not-secret" };
   else if (p === "/user") result = { id: 123, login: "管理者fixture" };
   else if (p.endsWith("/pulls") && opts.method === "POST") {
@@ -46,7 +47,7 @@ const transport = async (url, opts = {}) => {
         ]
       : [];
   else if (p.endsWith("/git/ref/heads/main"))
-    result = { object: { sha: "main-sha" } };
+    result = { object: { sha: "a".repeat(40) } };
   else if (p.includes("/git/ref/heads/admin/"))
     return new Response("{}", { status: 404 });
   else if (p.includes("/git/commits/") || p.endsWith("/git/commits"))
@@ -208,7 +209,8 @@ try {
       console.error("UI", await p.locator("body").innerText());
       throw e;
     }
-    await p.getByRole("link", { name: "VTuber", exact: true }).focus();
+    await p.getByText("高度な管理", { exact: true }).click();
+    await p.getByRole("link", { name: "VTuber一括編集", exact: true }).focus();
     await p.keyboard.press("Enter");
     // Edit Lee through the actual form: optional URL round-trip must preserve Wiki refs.
     await p

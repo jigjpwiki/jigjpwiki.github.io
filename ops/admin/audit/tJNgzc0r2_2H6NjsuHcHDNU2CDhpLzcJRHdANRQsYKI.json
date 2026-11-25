@@ -1,0 +1,86 @@
+{
+  "version": 2,
+  "batchId": "tJNgzc0r2_2H6NjsuHcHDNU2CDhpLzcJRHdANRQsYKI",
+  "actor": "900116782922894341339274276841604414178152",
+  "createdAt": "2026-11-25T04:27:11.198Z",
+  "baseCommit": "1d8e4f11e03c3b40e5a0210068ee8444ee616d4e",
+  "reason": null,
+  "submissionId": "tJNgzc0r2_2H6NjsuHcHDNU2CDhpLzcJRHdANRQsYKI",
+  "branch": "admin/change-tJNgzc0r2_2H6NjsuHcHDNU2CDhpLzcJRHdANRQsYKI",
+  "operations": [
+    {
+      "operationId": "cms-event-23fdc5ac87f140cc87c1a23b",
+      "entity": "event",
+      "recordId": "evt-000006",
+      "action": "create",
+      "changedFields": [
+        "type",
+        "timing",
+        "starts",
+        "ends",
+        "organizerIds",
+        "relatedOrganizationIds",
+        "groupIds",
+        "talentIds",
+        "lineupComplete",
+        "slots",
+        "videoIds",
+        "streamUrls",
+        "format",
+        "fee",
+        "visibility",
+        "title",
+        "venue",
+        "announcementUrl",
+        "summary",
+        "id"
+      ],
+      "before": null,
+      "after": {
+        "type": "other",
+        "timing": "unknown",
+        "starts": {
+          "precision": "instant",
+          "value": "2026-11-22T10:00:00.000Z"
+        },
+        "ends": {
+          "precision": "instant",
+          "value": "2026-11-22T12:00:00.000Z"
+        },
+        "organizerIds": [],
+        "relatedOrganizationIds": [
+          "org-000002"
+        ],
+        "groupIds": [],
+        "talentIds": [
+          "tal-000049",
+          "tal-000057",
+          "tal-000051",
+          "tal-000069",
+          "tal-000062",
+          "tal-000067",
+          "tal-000060",
+          "tal-000058"
+        ],
+        "lineupComplete": false,
+        "slots": [],
+        "videoIds": [],
+        "streamUrls": [
+          "https://jcm-event.bitfan.id/events/23143"
+        ],
+        "format": "hybrid",
+        "fee": {
+          "amount": 3000,
+          "currency": "JPY",
+          "note": null
+        },
+        "visibility": "public",
+        "title": "ぶいかふぇ♪ vol.325",
+        "venue": "LIVE SPACE Q",
+        "announcementUrl": "https://jcm-event.bitfan.id/events/23143",
+        "summary": "パレデミア学園リアルイベント2回目",
+        "id": "evt-000006"
+      }
+    }
+  ]
+}

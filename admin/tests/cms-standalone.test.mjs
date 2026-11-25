@@ -93,3 +93,19 @@ test("bulk editing stages independent drafts atomically and protects existing op
   await assert.rejects(prepareBulkDrafts(snapshot, member, { ...input, field: "accounts" }), /cms_invalid_bulk/);
   await assert.rejects(prepareBulkDrafts(snapshot, member, { ...input, ids: [ids[0], "tal-999999"] }), /cms_scope_denied/);
 });
+
+test("all-content editors retain affiliations and fixed collection identities while editing history", async () => {
+  const record = fixture.talents.talents[0], entity = "talent", id = record.id;
+  const fields = draftDetails(snapshot, member, entity, id);
+  const input = { entity, id, sha: snapshot.sha, ...fields, affiliations: [
+    { ...record.affiliations[0], status: "former", to: "2026-11-01" },
+    { organizationId: fixture.talents.organizations[1].id, status: "current", from: "2026-11-02", to: null },
+  ], agencyState: "affiliated", tiktokUrl: "https://www.tiktok.com/@test.jigdule" };
+  const [operation] = await prepareDraft(snapshot, member, input);
+  assert.deepEqual(operation.value.affiliations, input.affiliations);
+  assert.deepEqual(operation.value.accounts.filter((row) => row.service !== "tiktok"), record.accounts);
+  assert.ok(operation.value.accounts.some((row) => row.service === "tiktok" && row.accountId === "test.jigdule"));
+  assert.deepEqual(draftInput({ operations: [operation] }).affiliations, input.affiliations);
+  await assert.rejects(prepareDraft(snapshot, member, { ...input, affiliations: input.affiliations.slice(1) }), /affiliation_history_must_be_retained/);
+  await assert.rejects(prepareDraft(snapshot, member, { ...input, twitchUrl: "https://www.twitch.tv/another" }), /cms_identity_anchor/);
+});

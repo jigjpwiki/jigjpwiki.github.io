@@ -11,6 +11,7 @@ const labels = {
   songIdentityUrl: ["楽曲の公式情報URL", "url"],
   rawSongTitle: ["動画に記載された曲名", "text"], videoUrl: ["YouTube動画URL", "url"], videoKind: ["動画の種類", "select"],
   aliasNames: ["別名（1行に1件）", "textarea"], youtubeUrl: ["YouTubeチャンネルURL", "url"], xUrl: ["XプロフィールURL", "url"],
+  twitchUrl: ["TwitchチャンネルURL", "url"], tiktokUrl: ["TikTokプロフィールURL", "url"], wikiUrl: ["WikiページURL", "url"],
   displayName: ["表示名", "text"], activity: ["活動状態", "select"], officialProfileUrl: ["公式プロフィールURL", "url"],
   startsAt: ["販売開始（日本時間）", "datetime-local"], endsAt: ["販売終了（日本時間）", "datetime-local"],
   month: ["月", "number"], day: ["日", "number"], year: ["年（任意）", "number"], kind: ["記念日の種類", "select"],
@@ -468,6 +469,8 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
       return { details, controls };
     }
     const fieldNames = [...spec.fields];
+    const fullTalent = entity === "talent" && catalog.contentPolicy === "all-content-v1";
+    if (fullTalent) fieldNames.push("twitchUrl", "tiktokUrl", "wikiUrl");
     if (entity === "song" && !input.id) fieldNames.push("songIdentityUrl");
     if (entity === "video" && input.id) fieldNames.push("title");
     for (const key of fieldNames) {
@@ -479,6 +482,11 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
       }).map(([value, text]) => new Option(text, value)));
       else if (type !== "textarea") control.type = type;
       if (entity === "video" && input.id && key === "videoUrl") control.readOnly = true;
+      if (entity === "talent" && ["youtubeUrl", "twitchUrl"].includes(key) &&
+          input.accounts?.find((account) => account.service === key.slice(0, -3))?.accountId) {
+        control.readOnly = true;
+        control.title = "固定済みの収集アカウントは高度な管理で確認してください。";
+      }
       control.required = ["month", "day"].includes(key) || ["name", "title", "displayName", "rawSongTitle", "rawLabel", "videoUrl", "videoKind"].includes(key) || key === "announcementUrl" || key === "summary" || key === "identityUrl" || key === "songIdentityUrl";
       if (key === "price") {
         control.min = "0";
@@ -495,7 +503,65 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
       visibility.append(new Option("公開", "public"), new Option("非公開・下書き", "draft"));
       add("visibility", "公開サイトへの掲載状態", visibility, basicGrid);
     }
-    if ((!input.id && !["campaign", "song", "video", "organization", "group", "offer", "performance"].includes(entity)) || entity === "talent") {
+    const affiliationRows = [];
+    let agencyState;
+    if (fullTalent) {
+      const section = el("fieldset");
+      section.className = "cms-affiliation-editor";
+      section.append(el("legend", "所属履歴"), el("p", "過去の所属を残したまま、所属状態と期間を編集できます。移籍する場合は現在の所属を終了し、新しい行を追加してください。"));
+      agencyState = el("select");
+      agencyState.append(new Option("所属あり", "affiliated"), new Option("個人・無所属", "unaffiliated"), new Option("不明", "unknown"));
+      agencyState.value = input.agencyState || "unknown";
+      agencyState.setAttribute("aria-label", "事務所所属状態");
+      const agencyLabel = el("label", "事務所所属状態");
+      agencyLabel.append(agencyState);
+      section.append(agencyLabel);
+      const rows = el("div");
+      rows.className = "stack";
+      function affiliation(value = {}, existing = false) {
+        const row = el("fieldset");
+        row.append(el("legend", existing ? "登録済みの所属" : "追加した所属"));
+        const org = el("select");
+        org.required = true;
+        row.append(bindPicker(org, catalog.organizations, value.organizationId, "所属事務所"));
+        if (existing) {
+          org.disabled = true;
+          row.querySelector('input[type="search"]').disabled = true;
+        }
+        const status = el("select");
+        status.append(new Option("現在", "current"), new Option("過去", "former"), new Option("不明", "unknown"));
+        status.value = value.status || "former";
+        const from = el("input"), to = el("input");
+        from.type = to.type = "date";
+        from.value = value.from || "";
+        to.value = value.to || "";
+        for (const [label, field] of [["事務所", org], ["所属状態", status], ["開始日", from], ["終了日", to]]) {
+          const wrapper = el("label", label);
+          wrapper.append(field);
+          row.append(wrapper);
+        }
+        const entry = { row, org, status, from, to };
+        if (!existing) row.append(button("追加した所属を削除", () => {
+          affiliationRows.splice(affiliationRows.indexOf(entry), 1);
+          row.remove();
+        }));
+        affiliationRows.push(entry);
+        rows.append(row);
+      }
+      for (const value of input.affiliations || []) affiliation(value, Boolean(input.id));
+      section.append(rows, button("所属を追加", () => affiliation()));
+      form.append(section);
+      if (input.accounts?.length) {
+        const accounts = el("details");
+        accounts.append(el("summary", "登録済みアカウント・固定ID"));
+        for (const account of input.accounts) {
+          const row = el("p", account.service + " / " + (account.accountId || "固定ID未登録") + " / " + account.url);
+          accounts.append(row);
+        }
+        form.append(accounts);
+      }
+    }
+    if (!fullTalent && ((!input.id && !["campaign", "song", "video", "organization", "group", "offer", "performance"].includes(entity)) || entity === "talent")) {
       const key = ["talent", "event"].includes(entity) ? "organization" : "talent";
       const choices = key === "organization" ? catalog.organizations : catalog.people;
       const select = el("select");
@@ -791,6 +857,12 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
       try {
         const values = Object.fromEntries([...fields].map(([key, control]) => [key, control.value]));
         for (const [key, ids] of relations) values[key] = [...ids];
+        if (fullTalent) {
+          values.agencyState = agencyState.value;
+          values.affiliations = affiliationRows.map(({ org, status, from, to }) => ({
+            organizationId: org.value, status: status.value, from: from.value || null, to: to.value || null,
+          }));
+        }
         if (entity === "karaoke") {
           values.complete = complete.checked;
           values.setlist = tracks.map(({ id, key, title, song, times, work }) => ({
@@ -827,7 +899,8 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
         saveStatus.textContent = "保存失敗・入力保持";
         status.textContent = ["main_changed_reload", "workspace_revision_conflict"].includes(error.message)
           ? "別の更新がありました。入力を控えてから画面を開き直してください。"
-          : error.message === "cms_identity_anchor" ? "固定済みのYouTubeチャンネルIDはこの画面から変更できません。"
+          : error.message === "cms_identity_anchor" ? "固定済みの収集アカウントはこの画面から変更できません。"
+          : error.message === "affiliation_history_must_be_retained" ? "過去の所属を削除することはできません。"
           : "保存できませんでした。入力内容と関連レコードの整合性を確認してください。";
       } finally {
         saving = false;

@@ -132,9 +132,9 @@ export async function prepareDraft(snapshot, member, input, lookup) {
   }
   if (entity === "talent") {
     const value = structuredClone(before || {
-      aliases: [], affiliations: [{ organizationId: input.organization, status: "current", from: null, to: null }],
-      agencyStatus: { value: "affiliated" }, accounts: [], wiki: null,
-      officialProfileUrl: input.officialProfileUrl || null, visibility: "public",
+      aliases: [], affiliations: input.organization ? [{ organizationId: input.organization, status: "current", from: null, to: null }] : [],
+      agencyStatus: { value: input.organization ? "affiliated" : "unknown" }, accounts: [], wiki: null,
+      ...(input.officialProfileUrl ? { officialProfileUrl: input.officialProfileUrl } : {}), visibility: "public",
     });
     if (typeof input.displayName !== "string" || typeof input.image !== "string")
       fail(400, "cms_invalid_input");
@@ -142,7 +142,8 @@ export async function prepareDraft(snapshot, member, input, lookup) {
     value.profileImage = input.image.trim() ? { url: input.image.trim() } : null;
     if (input.officialProfileUrl !== undefined) {
       if (typeof input.officialProfileUrl !== "string") fail(400, "cms_invalid_input");
-      value.officialProfileUrl = input.officialProfileUrl.trim() || null;
+      if (input.officialProfileUrl.trim()) value.officialProfileUrl = input.officialProfileUrl.trim();
+      else delete value.officialProfileUrl;
     }
     if (input.aliasNames !== undefined) {
       if (typeof input.aliasNames !== "string") fail(400, "cms_invalid_input");
@@ -154,14 +155,15 @@ export async function prepareDraft(snapshot, member, input, lookup) {
           .map((name) => ({ name, type: "alias", from: null, to: null })),
       ];
     }
-    for (const [field, service] of [["youtubeUrl", "youtube"], ["xUrl", "x"]]) {
+    for (const [field, service] of [["youtubeUrl", "youtube"], ["xUrl", "x"], ["twitchUrl", "twitch"], ["tiktokUrl", "tiktok"]]) {
       if (input[field] === undefined) continue;
       if (typeof input[field] !== "string") fail(400, "cms_invalid_input");
       const supplied = input[field].trim();
       const index = value.accounts.findIndex((account) => account.service === service);
       const old = value.accounts[index];
       if ((old?.url || "") === supplied) continue;
-      if (service === "youtube" && old?.accountId) fail(403, "cms_identity_anchor");
+      if (["twitch", "tiktok"].includes(service) && !hasAllContent(member)) fail(403, "cms_scope_denied");
+      if (["youtube", "twitch"].includes(service) && old?.accountId) fail(403, "cms_identity_anchor");
       if (!supplied) {
         if (old) value.accounts.splice(index, 1);
         continue;
@@ -170,7 +172,9 @@ export async function prepareDraft(snapshot, member, input, lookup) {
       try { url = new URL(supplied); }
       catch { fail(400, "cms_invalid_input"); }
       const slug = service === "youtube" ? /^\/channel\/(UC[\w-]{22})$/.exec(url.pathname)?.[1]
+        : service === "tiktok" ? /^\/@([a-zA-Z0-9_]+(?:\.[a-zA-Z0-9_]+)*)$/.exec(url.pathname)?.[1]
         : /^\/([a-zA-Z0-9_]+)$/.exec(url.pathname)?.[1];
+      if (["twitch", "tiktok"].includes(service) && !slug) fail(400, "cms_invalid_input");
       // A channel URL alone does not prove ownership.
       if (service === "youtube" && slug) fail(403, "cms_identity_anchor");
       const account = { service, accountId: slug ?? null, url: supplied };
@@ -179,13 +183,33 @@ export async function prepareDraft(snapshot, member, input, lookup) {
     }
     value.activityStatus = { ...value.activityStatus, value: input.activity };
     applyVisibility(entity, value, input, member);
-    if (before && input.organization && input.organization !== talentFields(before).organization) {
+    if (!(hasAllContent(member) && input.affiliations !== undefined) && before && input.organization && input.organization !== talentFields(before).organization) {
       const current = value.affiliations.filter(({ status }) => status === "current");
       if (current.length !== 1) fail(403, "cms_scope_denied");
       current[0].status = "former";
       value.affiliations.push({ organizationId: input.organization, status: "current", from: null, to: null });
       value.agencyStatus = { value: "affiliated" };
       access.assertChange(entity, before, before);
+    }
+    if (hasAllContent(member) && input.affiliations !== undefined) {
+      if (!Array.isArray(input.affiliations) || input.affiliations.length > 50 ||
+          input.affiliations.some((row) => !row || typeof row !== "object" ||
+            !/^org-\d{6}$/.test(row.organizationId || "") ||
+            !["current", "former", "unknown"].includes(row.status) ||
+            [row.from, row.to].some((date) => date !== null && (typeof date !== "string" || !/^\d{4}-\d{2}-\d{2}$/.test(date)))))
+        fail(400, "cms_invalid_input");
+      // Preserve every existing affiliation, including multiple separate periods at the same organization.
+      const count = (rows, id) => rows.filter((row) => row.organizationId === id).length;
+      if (before?.affiliations.some((row) => count(input.affiliations, row.organizationId) < count(before.affiliations, row.organizationId)))
+        fail(409, "affiliation_history_must_be_retained");
+      value.affiliations = input.affiliations.map(({ organizationId, status, from, to }) => ({ organizationId, status, from, to }));
+      const agencyState = input.agencyState ?? (value.affiliations.some((row) => row.status === "current") ? "affiliated" : "unknown");
+      if (!["affiliated", "unaffiliated", "unknown"].includes(agencyState)) fail(400, "cms_invalid_input");
+      value.agencyStatus = { value: agencyState };
+    }
+    if (input.wikiUrl !== undefined && hasAllContent(member)) {
+      if (typeof input.wikiUrl !== "string" || (input.wikiUrl && !input.wikiUrl.startsWith("https://wikiwiki.jp/jigjp/"))) fail(400, "cms_invalid_input");
+      value.wiki = input.wikiUrl.trim() ? { url: input.wikiUrl.trim() } : null;
     }
     access.assertChange(entity, before, value);
     const operation = { key: "cms-talent", entity, ...(id ? { id } : {}), value, before, baseCommit: snapshot.sha };
@@ -488,6 +512,12 @@ const talentFields = (record) => ({
     .map(({ name }) => name).join("\n"),
   youtubeUrl: record.accounts.find(({ service }) => service === "youtube")?.url || "",
   xUrl: record.accounts.find(({ service }) => service === "x")?.url || "",
+  twitchUrl: record.accounts.find(({ service }) => service === "twitch")?.url || "",
+  tiktokUrl: record.accounts.find(({ service }) => service === "tiktok")?.url || "",
+  wikiUrl: record.wiki?.url || "",
+  affiliations: structuredClone(record.affiliations),
+  agencyState: record.agencyStatus.value,
+  accounts: structuredClone(record.accounts),
   image: record.profileImage?.url || "",
   activity: record.activityStatus.value,
 });

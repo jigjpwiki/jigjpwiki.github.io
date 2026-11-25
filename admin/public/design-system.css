@@ -595,3 +595,9 @@ button:hover:not(:disabled), .button:hover { border-color: var(--accent); }
   #admin-nav a { overflow-wrap: anywhere; }
   .sidebar-caption { margin: 0 0 var(--space-2); }
 }
+
+.cms-affiliation-editor > p { font-size: var(--text-small); color: var(--muted); }
+.cms-affiliation-editor fieldset { margin-block: var(--space-1); display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: var(--space-2); }
+.cms-affiliation-editor fieldset > .cms-picker { grid-column: 1 / -1; }
+.cms-affiliation-editor fieldset > label { margin: 0; }
+@media (max-width: 479px) { .cms-affiliation-editor fieldset { grid-template-columns: minmax(0,1fr); } }

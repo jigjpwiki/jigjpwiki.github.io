@@ -1,0 +1,184 @@
+{
+  "version": 2,
+  "batchId": "caxNofgbtGnCh_RUojuo4nQar9RqcpjY-SimaedGiHg",
+  "actor": "900122208316251340881522085640042137117242",
+  "createdAt": "2026-11-25T17:44:46.486Z",
+  "baseCommit": "29a218e955337d570e8d48d3c3b549b03d8de43c",
+  "reason": null,
+  "submissionId": "caxNofgbtGnCh_RUojuo4nQar9RqcpjY-SimaedGiHg",
+  "branch": "admin/change-caxNofgbtGnCh_RUojuo4nQar9RqcpjY-SimaedGiHg",
+  "operations": [
+    {
+      "operationId": "cms-event-758908644a174cb889d3d341",
+      "entity": "event",
+      "recordId": "evt-000003",
+      "action": "edit",
+      "changedFields": [
+        "thumbnailUrl"
+      ],
+      "before": {
+        "organizerIds": [],
+        "relatedOrganizationIds": [
+          "org-000003"
+        ],
+        "groupIds": [],
+        "lineupComplete": true,
+        "streamUrls": [
+          "https://youtube.com/live/cCaF5xDZ8Lc"
+        ],
+        "slots": [],
+        "visibility": "public",
+        "id": "evt-000003",
+        "title": "Fujimiya Kotoha Birthday Live 2026 Good Luck",
+        "type": "concert",
+        "starts": {
+          "precision": "instant",
+          "value": "2026-11-15T11:00:00Z"
+        },
+        "ends": {
+          "precision": "unknown",
+          "value": null
+        },
+        "timing": "actual",
+        "talentIds": [
+          "tal-000010"
+        ],
+        "announcementUrl": "https://paletteproject.jp/bd2026_kotoha/",
+        "videoIds": [],
+        "format": "online",
+        "venue": null,
+        "fee": {
+          "amount": null,
+          "currency": null,
+          "note": "料金未確認"
+        },
+        "summary": "公式告知の開催情報。終了時刻は未確認。"
+      },
+      "after": {
+        "organizerIds": [],
+        "relatedOrganizationIds": [
+          "org-000003"
+        ],
+        "groupIds": [],
+        "lineupComplete": true,
+        "streamUrls": [
+          "https://youtube.com/live/cCaF5xDZ8Lc"
+        ],
+        "slots": [],
+        "visibility": "public",
+        "id": "evt-000003",
+        "title": "Fujimiya Kotoha Birthday Live 2026 Good Luck",
+        "type": "concert",
+        "starts": {
+          "precision": "instant",
+          "value": "2026-11-15T11:00:00Z"
+        },
+        "ends": {
+          "precision": "unknown",
+          "value": null
+        },
+        "timing": "actual",
+        "talentIds": [
+          "tal-000010"
+        ],
+        "announcementUrl": "https://paletteproject.jp/bd2026_kotoha/",
+        "videoIds": [],
+        "format": "online",
+        "venue": null,
+        "fee": {
+          "amount": null,
+          "currency": null,
+          "note": "料金未確認"
+        },
+        "summary": "公式告知の開催情報。終了時刻は未確認。",
+        "thumbnailUrl": "https://i.ytimg.com/vi/cCaF5xDZ8Lc/maxresdefault.jpg"
+      }
+    },
+    {
+      "operationId": "cms-event-88044cda6dce49508a4868e7",
+      "entity": "event",
+      "recordId": "evt-000002",
+      "action": "edit",
+      "changedFields": [
+        "thumbnailUrl"
+      ],
+      "before": {
+        "organizerIds": [],
+        "relatedOrganizationIds": [
+          "org-000002"
+        ],
+        "groupIds": [],
+        "lineupComplete": true,
+        "streamUrls": [],
+        "slots": [],
+        "visibility": "public",
+        "id": "evt-000002",
+        "title": "天透あわ 初めての新髪型お披露目",
+        "type": "special",
+        "starts": {
+          "precision": "instant",
+          "value": "2026-11-14T06:00:26Z"
+        },
+        "ends": {
+          "precision": "instant",
+          "value": "2026-11-14T06:32:23Z"
+        },
+        "timing": "actual",
+        "talentIds": [
+          "tal-000036"
+        ],
+        "announcementUrl": "https://www.youtube.com/watch?v=-kR7Kqqy6Vs",
+        "videoIds": [
+          "-kR7Kqqy6Vs"
+        ],
+        "format": "online",
+        "venue": null,
+        "fee": {
+          "amount": null,
+          "currency": null,
+          "note": null
+        },
+        "summary": "本人の公式チャンネルで公開された新髪型お披露目配信。3Dお披露目とは区別しています。"
+      },
+      "after": {
+        "organizerIds": [],
+        "relatedOrganizationIds": [
+          "org-000002"
+        ],
+        "groupIds": [],
+        "lineupComplete": true,
+        "streamUrls": [],
+        "slots": [],
+        "visibility": "public",
+        "id": "evt-000002",
+        "title": "天透あわ 初めての新髪型お披露目",
+        "type": "special",
+        "starts": {
+          "precision": "instant",
+          "value": "2026-11-14T06:00:26Z"
+        },
+        "ends": {
+          "precision": "instant",
+          "value": "2026-11-14T06:32:23Z"
+        },
+        "timing": "actual",
+        "talentIds": [
+          "tal-000036"
+        ],
+        "announcementUrl": "https://www.youtube.com/watch?v=-kR7Kqqy6Vs",
+        "videoIds": [
+          "-kR7Kqqy6Vs"
+        ],
+        "format": "online",
+        "venue": null,
+        "fee": {
+          "amount": null,
+          "currency": null,
+          "note": null
+        },
+        "summary": "本人の公式チャンネルで公開された新髪型お披露目配信。3Dお披露目とは区別しています。",
+        "thumbnailUrl": "https://i.ytimg.com/vi/-kR7Kqqy6Vs/maxresdefault.jpg"
+      }
+    }
+  ]
+}

@@ -166,7 +166,42 @@ export function cmsPermissions(models, member) {
 
 export function scopedCatalog(models, member) {
   const permissions = cmsPermissions(models, member);
-  return ["organization", "group", "talent", "anniversary", "event", "song", "musicVideo", "karaoke", "performance", "video", "product", "campaign", "offer"].map((entity) => {
+  const allowed = new Set(contentCategories(member));
+  const all = hasAllContent(member);
+  const orgNames = new Map(models.talents.organizations
+    .filter((row) => all || member.scope?.organizations?.includes(row.id))
+    .map((row) => [row.id, row.name]));
+  const people = new Map(models.talents.talents.map((row) => [row.id, row.displayName]));
+  const products = new Map(models.goods.products.map((row) => [row.id, row.title]));
+  const videos = new Map(models.media.videos.map((row) => [row.youtubeId, row.title]));
+  const groupNames = new Map();
+  if (all) for (const group of models.catalog.groups) {
+    for (const id of group.talentIds || []) {
+      if (!groupNames.has(id)) groupNames.set(id, []);
+      groupNames.get(id).push(group.name);
+    }
+  }
+  const compact = (values) => {
+    const names = [...new Set(values.filter(Boolean))];
+    return names.slice(0, 3).join("、") + (names.length > 3 ? " 他" + (names.length - 3) + "件" : "");
+  };
+  const price = (row) => row.price?.amount == null ? "" : row.price.amount + " " + (row.price.currency || "");
+  const metadata = (entity, row) => {
+    const persons = all ? compact((row.talentIds || []).map((id) => people.get(id))) : "";
+    switch (entity) {
+      case "talent": return { context: compact([...(row.affiliations || []).filter((a) => a.status === "current").map((a) => orgNames.get(a.organizationId)), ...(groupNames.get(row.id) || [])]) };
+      case "group": return { context: orgNames.get(row.organizationId) || "" };
+      case "anniversary": return { context: persons, date: row.date?.month && row.date?.day ? (row.date.year ? row.date.year + "/" : "") + row.date.month + "/" + row.date.day : "" };
+      case "event": return { context: compact([...(row.organizerIds || []).map((id) => orgNames.get(id)), ...(row.relatedOrganizationIds || []).map((id) => orgNames.get(id)), row.venue]), date: row.starts?.value || "" };
+      case "song": return { context: compact(row.originalArtists || []) };
+      case "musicVideo": case "karaoke": case "performance": return { context: persons, date: row.registeredAt || "" };
+      case "video": return { date: row.publishedAt || "" };
+      case "product": return { context: persons };
+      case "offer": return { context: price(row), date: row.endsAt || row.startsAt || "" };
+      default: return {};
+    }
+  };
+  return ["organization", "group", "talent", "anniversary", "event", "song", "musicVideo", "karaoke", "performance", "video", "product", "campaign", "offer"].filter((entity) => allowed.has(types[entity].category)).map((entity) => {
     const type = types[entity];
     return {
       category: type.category,
@@ -175,16 +210,17 @@ export function scopedCatalog(models, member) {
       items: models[type.file][type.list].filter((row) => permissions.canRead(entity, row)).map((row) => ({
         id: row[type.field || "id"],
         title: row.displayName || row.name || row.title || row.rawSongTitle || row.rawLabel ||
-          (entity === "offer" ? models.goods.products.find((product) => product.id === row.productId)?.title : null) ||
-          byTypeVideoTitle(models, row) || row[type.field || "id"],
+          (entity === "offer" ? products.get(row.productId) : null) ||
+          videos.get(row.youtubeId) || row[type.field || "id"],
         description: typeof row.description === "string" ? row.description : "",
+        ...metadata(entity, row),
         visibility: row.visibility ?? "public",
         state: row.activityStatus?.value || row.status || row.timing || row.verification || row.setlistStatus || row.availability || "",
         ...(entity === "talent" ? { image: row.profileImage?.url || "" } : {}),
         ...(entity === "product" ? { image: typeof row.image === "string" ? row.image : row.image?.url || "" } : {}),
       })),
     };
-  }).filter(({ category }) => contentCategories(member).includes(category));
+  });
 }
 
 // The new offer itself must not establish the editor's right to attach it.
@@ -194,6 +230,3 @@ export function assertExistingCampaign(models, permissions, id) {
   if (!permissions.canRead("campaign", campaign)) fail(403, "cms_scope_denied");
 }
 
-function byTypeVideoTitle(models, row) {
-  return row.youtubeId && models.media.videos.find((video) => video.youtubeId === row.youtubeId)?.title;
-}

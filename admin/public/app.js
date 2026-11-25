@@ -18,6 +18,39 @@ import { createEditor } from "./editor.js";
 import { fieldChanges, fieldLabel } from "./draft.js";
 import { portrait } from "./controls.js";
 const $ = (s) => document.querySelector(s);
+// Small local SVG icon set; no CDN, fonts or runtime HTML injection.
+const navIcons = {
+  "#dashboard": "M3 3h7v7H3z M14 3h7v7h-7z M3 14h7v7H3z M14 14h7v7h-7z",
+  "#drafts": "M6 3h8l4 4v14H6z M14 3v5h5 M9 13h6 M9 17h6",
+  "#publication": "M12 16V4 M7 9l5-5 5 5 M4 15v5h16v-5",
+  "#history": "M3 12a9 9 0 1 1 3 7 M3 4v8h8 M12 7v5l4 2",
+  "#search": "M16 16l5 5 M18 10a8 8 0 1 1-16 0 8 8 0 0 1 16 0",
+  "#content/talent": "M12 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8 M4 21v-2a8 8 0 0 1 16 0v2",
+  "#content/organization": "M4 21V3h16v18 M2 21h20 M8 7h2 M14 7h2 M8 11h2 M14 11h2 M8 15h2 M14 15h2 M10 21v-3h4v3",
+  "#content/group": "M9 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8 M2 21v-3a7 7 0 0 1 14 0v3 M16 4a4 4 0 0 1 0 7 M18 14a5 5 0 0 1 4 5v2",
+  "#content/anniversary": "M3 6h18v15H3z M7 3v6 M17 3v6 M3 11h18 M7 15h2 M12 15h2 M17 15h1",
+  "#content/event": "M3 5h18v16H3z M7 2v6 M17 2v6 M3 10h18 M10 13l5 3-5 3z",
+  "#content/song": "M9 18V5l12-3v13 M9 18a3 3 0 1 1-3-3h3 M21 15a3 3 0 1 1-3-3h3",
+  "#content/musicVideo": "M3 5h18v14H3z M10 9l5 3-5 3z",
+  "#content/video": "M3 6h12v12H3z M15 10l6-4v12l-6-4",
+  "#content/karaoke": "M9 6a3 3 0 0 1 6 0v6a3 3 0 0 1-6 0z M5 10v2a7 7 0 0 0 14 0v-2 M12 19v3 M8 22h8",
+  "#content/performance": "M4 4h16v16H4z M8 8h8 M8 12h8 M8 16h5",
+  "#content/product": "M3 7l9-4 9 4v10l-9 4-9-4z M3 7l9 4 9-4 M12 11v10",
+  "#content/campaign": "M3 9v6h4l10 4V5L7 9z M7 15l2 6h4 M20 9v6",
+  "#content/offer": "M4 8h16l1 13H3z M8 8V6a4 4 0 0 1 8 0v2",
+  "#settings": "M10 2h4l1 3 3 1 3-1 2 4-2 3 1 3-2 4-3-1-3 1-1 3h-4l-1-3-3-1-3 1-2-4 1-3-2-3 2-4 3 1 3-1z M15 12a3 3 0 1 0-6 0 3 3 0 0 0 6 0",
+};
+for (const link of document.querySelectorAll(".cms-navigation a")) {
+  const path = navIcons[link.hash];
+  if (!path) continue;
+  const ns = "http://www.w3.org/2000/svg";
+  const svg = document.createElementNS(ns, "svg");
+  for (const [key, value] of Object.entries({ viewBox: "0 0 24 24", width: "18", height: "18", fill: "none", stroke: "currentColor", "stroke-width": "1.6", "stroke-linecap": "round", "stroke-linejoin": "round", "aria-hidden": "true", focusable: "false" })) svg.setAttribute(key, value);
+  const line = document.createElementNS(ns, "path");
+  line.setAttribute("d", path);
+  svg.append(line);
+  link.prepend(svg);
+}
 document.querySelector(".skip-link")?.addEventListener("click", (e) => {
   e.preventDefault();
   $("#main-content").focus();

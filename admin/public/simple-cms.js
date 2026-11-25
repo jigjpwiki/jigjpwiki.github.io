@@ -77,6 +77,8 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
   draftsArea.hidden = !["legacy", "drafts", "dashboard"].includes(view);
   list.hidden = !browsing;
   formArea.className = "cms-editor stack";
+  formArea.hidden = true;
+  let refreshList = () => {};
   const publicationArea = el("section");
   const publicationStatus = el("p");
   const publishedRecords = el("details");
@@ -84,7 +86,9 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
   publicationStatus.setAttribute("role", "status");
   const selectedDrafts = new Set();
   let publication;
-  if (catalog.editable && catalog.publicationTracking !== false) {
+  const tracksPublication = catalog.editable && catalog.publicationTracking !== false &&
+    ["legacy", "publication", "dashboard", "drafts"].includes(view);
+  if (tracksPublication) {
     publicationArea.hidden = !["legacy", "publication", "dashboard"].includes(view);
     publicationArea.append(el("h3", "公開状況"), publicationStatus, publishedRecords);
     panel.insertBefore(publicationArea, draftsArea);
@@ -146,7 +150,7 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
     }
   });
   reconcileButton.hidden = true;
-  if (catalog.editable && catalog.publicationTracking !== false) {
+  if (tracksPublication) {
     publicationArea.append(button("公開状況を更新", async () => {
       try {
         await refreshPublication();
@@ -167,10 +171,11 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
       status.textContent = "下書きを読み込めませんでした。既存の下書きを保護するため保存を停止しました。";
     }
   }
-  async function refreshDrafts() {
-    saved = await api("/api/cms/draft");
+  async function refreshDrafts(reuse = false) {
+    if (reuse !== true) saved = await api("/api/cms/draft");
     revision = saved.revision;
     draftsArea.replaceChildren(el("h3", "保存済みの下書き"));
+    refreshList();
     const eligible = new Set(saved.drafts.filter(({ conflict, reapplyJobId }) => !conflict && !reapplyJobId).map(({ draftId }) => draftId));
     for (const draftId of selectedDrafts) if (!eligible.has(draftId)) selectedDrafts.delete(draftId);
     if (catalog.publishable) {
@@ -237,12 +242,13 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
         checkbox.checked = selectedDrafts.has(draftId);
         checkbox.onchange = () => checkbox.checked ? selectedDrafts.add(draftId) : selectedDrafts.delete(draftId);
         const label = el("label", "公開する");
-        checkbox.setAttribute("aria-label", (input.title || input.displayName || input.rawSongTitle) + "を公開する");
+        checkbox.setAttribute("aria-label", (input?.title || input?.displayName || input?.rawSongTitle || input?.name || input?.rawLabel || input?.id || "下書き") + "を公開する");
         label.prepend(checkbox);
         row.append(label);
       }
-      if (conflict) row.append(el("p", (input?.title || "下書き") + "：元の情報が変更されたか、現在の担当範囲外です。"));
-      else row.append(button(input.title || input.displayName || input.rawSongTitle, () => edit(input.entity, input, draftId)));
+      const draftName = input?.title || input?.displayName || input?.rawSongTitle || input?.name || input?.rawLabel || input?.id || "下書き";
+      if (conflict) row.append(el("p", draftName + "：元の情報が変更されたか、現在の担当範囲外です。"));
+      else if (input && Object.hasOwn(categories, input.entity)) row.append(button(draftName, () => edit(input.entity, input, draftId)));
       if (conflict) row.append(button("最新の情報と比較", async () => {
         try {
           await renderDraftConflicts({ container: row, api, draftId, afterSave: refreshDrafts });
@@ -272,6 +278,7 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
           await api("/api/cms/draft", "DELETE", { draftId, revision });
           if (formArea.dataset.draftId === draftId) {
             formArea.replaceChildren();
+            formArea.hidden = true;
             delete panel.dataset.cmsDirty;
           }
           await refreshDrafts();
@@ -654,10 +661,25 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
       for (const control of form.querySelectorAll("input,select,textarea,button")) control.disabled = true;
       submit.hidden = true;
     }
-    formArea.replaceChildren(el("h3", spec.label + (catalog.editable ? input.id ? "を編集" : "を登録" : "の詳細")), form);
-    form.querySelector("input")?.focus();
+    const heading = el("div");
+    heading.className = "cms-editor-heading";
+    const title = el("h3", spec.label + (catalog.editable ? input.id ? "を編集" : "を登録" : "の詳細"));
+    title.tabIndex = -1;
+    heading.append(title);
+    if (input.id) heading.append(el("small", input.id));
+    heading.append(button("閉じる", () => {
+      if (panel.dataset.cmsDirty && !confirm("保存していない入力を破棄しますか？")) return;
+      delete panel.dataset.cmsDirty;
+      delete formArea.dataset.draftId;
+      formArea.replaceChildren();
+      formArea.hidden = true;
+      list.querySelector("button, input")?.focus();
+    }));
+    formArea.replaceChildren(heading, form);
+    formArea.hidden = false;
+    (form.querySelector("input:not(:disabled), textarea:not(:disabled), select:not(:disabled)") || title).focus();
   }
-  if (saved) await refreshDrafts();
+  if (saved) await refreshDrafts(true);
   if (["legacy", "history"].includes(view)) {
     const history = mountCmsHistory({ api, editable: catalog.editable, revision: () => revision, afterSave: refreshDrafts });
     history.open = view === "history";
@@ -673,98 +695,204 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
     }
     panel.append(el("h3", "コンテンツ"), shortcuts);
   }
+  if (!browsing) {
+    if (saveAvailable) status.textContent = "";
+    return;
+  }
+  const actions = el("div");
+  actions.className = "cms-collection-actions";
+  list.append(actions);
   for (const [entity, spec] of Object.entries(categories)) {
     if (["legacy", "content"].includes(view) && (!selectedEntity || selectedEntity === entity) && (!spec.ownerCreate || catalog.owner || catalog.contentPolicy === "all-content-v1") && catalog.editable && catalog.categories.includes(spec.category))
-      list.append(button(spec.label + "を新規登録", () => edit(entity)));
+      {
+        const create = button(spec.label + "を新規登録", () => edit(entity));
+        create.className = "primary cms-create";
+        actions.append(create);
+      }
   }
+  const stateLabels = {
+    public: "公開", private: "非公開", draft: "非公開・下書き",
+    active: "活動中", hiatus: "活動休止", retired: "引退", ended: "終了",
+    on_sale: "販売中", scheduled: "予定", sold_out: "売り切れ", unknown: "不明",
+    verified: "確認済み", unreviewed: "未確認", rejected: "対象外",
+    complete: "確認完了", partial: "一部確認", unavailable: "利用不可",
+    unlisted: "限定公開", cancelled: "中止", postponed: "延期",
+  };
+  const translated = (value) => value ? stateLabels[value] || value : "—";
+  const normal = (value) => String(value ?? "").normalize("NFKC").toLocaleLowerCase("ja");
+  const dateFormat = new Intl.DateTimeFormat("ja-JP", { timeZone: "Asia/Tokyo", year: "numeric", month: "2-digit", day: "2-digit", hour: "2-digit", minute: "2-digit", hourCycle: "h23" });
+  const formatDate = (value) => !value ? "" : /T\d{2}:\d{2}/.test(value) && Number.isFinite(Date.parse(value)) ? dateFormat.format(new Date(value)) : value;
+  const columns = [
+    ["title", "名称"], ["context", "関連情報"], ["date", "日時"],
+    ["state", "状態"], ["visibility", "公開状態"], ["draft", "下書き"], ["id", "固定ID"],
+  ];
+  const hasValue = (key) => sections.some(({ items }) => items.some((item) => Boolean(item[key])));
+  const activeColumns = new Set(["title", "visibility", "draft", "id", ...["context", "date", "state"].filter(hasValue)]);
   const tools = el("div");
-  tools.className = "cms-toolbar button-group";
+  tools.className = "cms-toolbar cms-collection-toolbar";
   const category = el("select");
   const search = el("input");
   const order = el("select");
+  const visibility = el("select");
+  const state = el("select");
+  const draftFilter = el("select");
   search.type = "search";
-  search.placeholder = "名称を検索";
+  search.placeholder = "名称・ID・関連情報を検索";
   search.setAttribute("aria-label", "名称を検索");
   category.setAttribute("aria-label", "コンテンツの種類");
   order.setAttribute("aria-label", "並び順");
-  category.append(new Option("すべての種類", ""), ...sections.map(
-    ({ entity, label }) => new Option(label, entity),
-  ));
-  order.append(new Option("登録順", ""), new Option("名前順", "name"));
+  visibility.setAttribute("aria-label", "公開状態で絞り込む");
+  state.setAttribute("aria-label", "状態で絞り込む");
+  draftFilter.setAttribute("aria-label", "下書きで絞り込む");
+  category.append(new Option("すべての種類", ""), ...sections.map(({ entity, label }) => new Option(label, entity)));
+  order.append(new Option("登録順", ""), new Option("名前順", "name"), new Option("名前順（降順）", "name-desc"), new Option("固定ID順", "id"));
+  visibility.append(new Option("公開状態：すべて", ""), ...[...new Set(sections.flatMap(({ items }) => items.map((row) => row.visibility).filter(Boolean)))].map((value) => new Option(translated(value), value)));
+  state.append(new Option("状態：すべて", ""), ...[...new Set(sections.flatMap(({ items }) => items.map((row) => row.state).filter(Boolean)))].map((value) => new Option(translated(value), value)));
+  draftFilter.append(new Option("下書き：すべて", ""), new Option("下書きあり", "yes"), new Option("下書きなし", "no"));
   category.hidden = Boolean(selectedEntity);
-  tools.append(category, search, order);
+  state.hidden = state.options.length <= 1;
+  draftFilter.hidden = !catalog.editable;
+  const columnMenu = el("details");
+  columnMenu.className = "cms-columns";
+  columnMenu.append(el("summary", "表示列"));
+  for (const [key, label] of columns.slice(1)) {
+    const control = el("input");
+    control.type = "checkbox";
+    control.checked = activeColumns.has(key);
+    control.onchange = () => {
+      if (control.checked) activeColumns.add(key); else activeColumns.delete(key);
+      filter();
+    };
+    const wrapping = el("label", label);
+    wrapping.prepend(control);
+    columnMenu.append(wrapping);
+  }
+  tools.append(category, search, visibility, state, draftFilter, order, columnMenu);
   list.append(tools);
   const views = [];
   const collator = new Intl.Collator("ja");
   let page = 0;
   const pageSize = 50;
   const paging = el("div");
-  paging.className = "cms-toolbar button-group";
+  paging.className = "cms-toolbar cms-paging";
   const count = el("p");
+  count.setAttribute("aria-live", "polite");
   const previous = button("前のページ", () => { page--; filter(); });
   const next = button("次のページ", () => { page++; filter(); });
   paging.append(count, previous, next);
-  list.append(paging);
+  async function openRecord(entity, id) {
+    const draft = saved?.drafts.find(({ input }) => input?.entity === entity && input.id === id);
+    if (draft?.conflict || draft?.reapplyJobId) {
+      status.textContent = "このレコードには確認が必要な下書きがあります。「下書き」から比較・再適用してください。";
+      return;
+    }
+    if (draft?.input) {
+      edit(entity, draft.input, draft.draftId);
+      return;
+    }
+    try {
+      const query = new URLSearchParams({ entity, id });
+      const { fields, sha } = await api("/api/cms/detail?" + query);
+      if (panel.isConnected) edit(entity, { ...fields, id, sha });
+    } catch {
+      status.textContent = "この項目の詳細を取得できませんでした。";
+    }
+  }
+  const makeRow = (entity, item, draft) => {
+    const row = el("tr");
+    for (const [key] of columns.filter(([key]) => activeColumns.has(key))) {
+      const cell = el("td");
+      cell.dataset.column = key;
+      if (key === "title") {
+        const title = button(item.title || item.id, () => openRecord(entity, item.id));
+        title.className = "cms-record-link";
+        if (item.image && /^https:\/\//i.test(item.image)) {
+          const image = el("img");
+          image.src = item.image;
+          image.alt = "";
+          image.loading = "lazy";
+          image.referrerPolicy = "no-referrer";
+          image.className = "cms-record-image";
+          image.onerror = () => image.remove();
+          title.prepend(image);
+        }
+        cell.append(title);
+      } else if (key === "visibility" || key === "state") {
+        const tag = el("span", translated(item[key]));
+        tag.className = "cms-record-state";
+        tag.dataset.state = item[key] || "";
+        cell.append(tag);
+      } else if (key === "draft") {
+        cell.textContent = draft ? draft.conflict ? "要確認" : "下書きあり" : "—";
+      } else cell.textContent = key === "date" ? formatDate(item.date) || "—" : item[key] || "—";
+      row.append(cell);
+    }
+    return row;
+  };
   function filter() {
-    const needle = search.value.trim().normalize("NFKC").toLocaleLowerCase("ja");
-    let total = 0;
-    let longest = 0;
-    for (const { entity, section, entries, rows } of views) {
-      const matching = rows.filter(({ title }) => title.normalize("NFKC").toLocaleLowerCase("ja").includes(needle));
-      if (order.value === "name") matching.sort((a, b) => collator.compare(a.title, b.title));
+    const needle = normal(search.value.trim());
+    const drafts = new Map((saved?.drafts || []).filter(({ input }) => input?.id).map((draft) => [draft.input.entity + ":" + draft.input.id, draft]));
+    let total = 0, longest = 0, offset = 0;
+    for (const { entity, section, headerRow, entries, items } of views) {
       const visible = !category.value || category.value === entity;
-      if (visible) { total += matching.length; longest = Math.max(longest, matching.length); }
-      const windowRows = matching.slice(page * pageSize, (page + 1) * pageSize);
-      entries.replaceChildren(...windowRows.map(({ li }) => li));
       section.hidden = !visible;
-      if (visible && !matching.length) {
+      if (!visible) { entries.replaceChildren(); continue; }
+      const matching = items.filter((item) => {
+        const draft = drafts.get(entity + ":" + item.id);
+        return normal([item.title, item.id, item.context, item.description, formatDate(item.date)].join(" ")).includes(needle) &&
+          (!visibility.value || item.visibility === visibility.value) &&
+          (!state.value || item.state === state.value) &&
+          (!draftFilter.value || Boolean(draft) === (draftFilter.value === "yes"));
+      });
+      if (order.value === "name" || order.value === "name-desc") matching.sort((a, b) => collator.compare(a.title || a.id, b.title || b.id) * (order.value === "name-desc" ? -1 : 1));
+      if (order.value === "id") matching.sort((a, b) => collator.compare(a.id, b.id));
+      total += matching.length;
+      longest = Math.max(longest, matching.length);
+      // Search pages have one global 50-row budget; legacy grouped view retains its separate collections.
+      const lower = page * pageSize - (view === "search" ? offset : 0);
+      const upper = lower + pageSize;
+      offset += matching.length;
+      const windowRows = matching.slice(Math.max(0, lower), Math.max(0, upper));
+      const shown = columns.filter(([key]) => activeColumns.has(key));
+      headerRow.replaceChildren(...shown.map(([key, label]) => { const th = el("th", label); th.scope = "col"; th.dataset.column = key; return th; }));
+      entries.replaceChildren(...windowRows.map((item) => makeRow(entity, item, drafts.get(entity + ":" + item.id))));
+      if (view === "search" && !windowRows.length) section.hidden = true;
+      else if (!windowRows.length) {
         const empty = el("tr");
         const cell = el("td", "該当するコンテンツはありません。");
-        cell.colSpan = 3;
+        cell.colSpan = shown.length;
         empty.append(cell);
         entries.append(empty);
       }
     }
+    const max = view === "search" ? total : longest;
     previous.disabled = page === 0;
-    next.disabled = (page + 1) * pageSize >= longest;
+    next.disabled = (page + 1) * pageSize >= max;
     count.textContent = total + "件 / " + (page + 1) + "ページ";
   }
-  search.addEventListener("input", () => { page = 0; filter(); });
-  category.addEventListener("change", () => { page = 0; filter(); });
-  order.addEventListener("change", filter);
-  async function openRecord(entity, id) {
-    try {
-      const query = new URLSearchParams({ entity, id });
-      const { fields, sha } = await api("/api/cms/detail?" + query);
-      edit(entity, { ...fields, id, sha });
-    } catch {
-      status.textContent = "この項目は簡易フォームで編集できません。";
-    }
-  }
-
+  const reset = () => { page = 0; filter(); };
+  search.addEventListener("input", reset);
+  for (const control of [category, visibility, state, draftFilter, order]) control.addEventListener("change", reset);
   for (const { entity, label, items } of sections) {
     const section = el("section");
+    section.className = "cms-collection";
     const table = el("table");
     table.className = "cms-table";
     const header = el("thead");
     const headerRow = el("tr");
-    for (const title of ["名称", "固定ID", "下書き"]) headerRow.append(el("th", title));
     header.append(headerRow);
     const entries = el("tbody");
     table.append(header, entries);
-    const rows = [];
-    for (const item of items) {
-      const li = el("tr");
-      const name = el("td");
-      if (!Object.hasOwn(categories, entity)) name.textContent = item.title;
-      else name.append(button(item.title, () => openRecord(entity, item.id)));
-      li.append(name, el("td", item.id), el("td", saved?.drafts.some(({ input }) => input?.entity === entity && input.id === item.id) ? "下書きあり" : ""));
-      rows.push({ title: item.title || "名称未登録", li });
-    }
-    section.append(el("h3", label), table);
+    const wrapper = el("div");
+    wrapper.className = "cms-table-wrap";
+    wrapper.append(table);
+    section.append(el("h3", label), wrapper);
     list.append(section);
-    views.push({ entity, section, entries, rows });
+    views.push({ entity, section, headerRow, entries, items });
   }
+  list.append(paging);
+  refreshList = filter;
   filter();
+  if (view === "search") search.focus();
   if (saveAvailable) status.textContent = "";
 }

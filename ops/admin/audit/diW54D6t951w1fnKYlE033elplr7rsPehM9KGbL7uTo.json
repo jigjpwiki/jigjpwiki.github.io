@@ -1,0 +1,105 @@
+{
+  "version": 2,
+  "batchId": "diW54D6t951w1fnKYlE033elplr7rsPehM9KGbL7uTo",
+  "actor": "900122208316251340881522085640042137117242",
+  "createdAt": "2026-11-25T05:55:16.909Z",
+  "baseCommit": "30ae9d816f6de6b80b09aec63392a8d17e46f23d",
+  "reason": null,
+  "submissionId": "diW54D6t951w1fnKYlE033elplr7rsPehM9KGbL7uTo",
+  "branch": "admin/change-diW54D6t951w1fnKYlE033elplr7rsPehM9KGbL7uTo",
+  "operations": [
+    {
+      "operationId": "cms-song-4041757ee10a4e709b4ece88",
+      "entity": "song",
+      "recordId": "song-000058",
+      "action": "create",
+      "changedFields": [
+        "visibility",
+        "identityUrl",
+        "aliases",
+        "readings",
+        "originalArtists",
+        "title",
+        "id"
+      ],
+      "before": null,
+      "after": {
+        "visibility": "public",
+        "identityUrl": "https://www.youtube.com/watch?v=8UE4KHm7sF0",
+        "aliases": [],
+        "readings": [
+          "スタート"
+        ],
+        "originalArtists": [
+          "七海ロナ",
+          "暁月クララ",
+          "遠坂ユラ"
+        ],
+        "title": "StAlt!!",
+        "id": "song-000058"
+      }
+    },
+    {
+      "operationId": "cms-song-25326b32a5ab4ab9b4c83ad4",
+      "entity": "song",
+      "recordId": "song-000059",
+      "action": "create",
+      "changedFields": [
+        "visibility",
+        "identityUrl",
+        "aliases",
+        "readings",
+        "originalArtists",
+        "title",
+        "id"
+      ],
+      "before": null,
+      "after": {
+        "visibility": "public",
+        "identityUrl": "https://www.youtube.com/watch?v=EQybHllR2mQ",
+        "aliases": [],
+        "readings": [
+          "スリーピース"
+        ],
+        "originalArtists": [
+          "七海ロナ",
+          "暁月クララ",
+          "遠坂ユラ"
+        ],
+        "title": "Three Piece",
+        "id": "song-000059"
+      }
+    },
+    {
+      "operationId": "cms-song-1db459162ca7436cae7e6a9c",
+      "entity": "song",
+      "recordId": "song-000060",
+      "action": "create",
+      "changedFields": [
+        "visibility",
+        "identityUrl",
+        "aliases",
+        "readings",
+        "originalArtists",
+        "title",
+        "id"
+      ],
+      "before": null,
+      "after": {
+        "visibility": "public",
+        "identityUrl": "https://www.youtube.com/watch?v=zgJhhzIbWmI",
+        "aliases": [],
+        "readings": [
+          "ハローマイステージ!"
+        ],
+        "originalArtists": [
+          "七海ロナ",
+          "暁月クララ",
+          "遠坂ユラ"
+        ],
+        "title": "Hello My Stage!",
+        "id": "song-000060"
+      }
+    }
+  ]
+}

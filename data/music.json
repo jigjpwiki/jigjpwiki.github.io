@@ -649,6 +649,51 @@
       "readings": [],
       "identityUrl": "https://www.youtube.com/watch?v=TV7XXZDZQ0g",
       "visibility": "public"
+    },
+    {
+      "visibility": "public",
+      "identityUrl": "https://www.youtube.com/watch?v=8UE4KHm7sF0",
+      "aliases": [],
+      "readings": [
+        "スタート"
+      ],
+      "originalArtists": [
+        "七海ロナ",
+        "暁月クララ",
+        "遠坂ユラ"
+      ],
+      "title": "StAlt!!",
+      "id": "song-000058"
+    },
+    {
+      "visibility": "public",
+      "identityUrl": "https://www.youtube.com/watch?v=EQybHllR2mQ",
+      "aliases": [],
+      "readings": [
+        "スリーピース"
+      ],
+      "originalArtists": [
+        "七海ロナ",
+        "暁月クララ",
+        "遠坂ユラ"
+      ],
+      "title": "Three Piece",
+      "id": "song-000059"
+    },
+    {
+      "visibility": "public",
+      "identityUrl": "https://www.youtube.com/watch?v=zgJhhzIbWmI",
+      "aliases": [],
+      "readings": [
+        "ハローマイステージ!"
+      ],
+      "originalArtists": [
+        "七海ロナ",
+        "暁月クララ",
+        "遠坂ユラ"
+      ],
+      "title": "Hello My Stage!",
+      "id": "song-000060"
     }
   ],
   "musicVideos": [

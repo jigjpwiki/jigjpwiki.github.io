@@ -1399,7 +1399,7 @@
     "date": "2026-11-25T11:32:01.000Z",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/NXvo5d8WoZQ/mqdefault.jpg?v=6b06ba9e",
+    "thumbnail": "https://i.ytimg.com/vi/NXvo5d8WoZQ/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/86cM_4q1A56pIYgdKxh776hM0nropjiZIlmXbfroWHXQ-MjdGGsjLcL5hMDOFL-T2EJHmybT=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=NXvo5d8WoZQ"
   },
@@ -1519,7 +1519,7 @@
     "date": "2026-11-25T12:30:52.000Z",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/zDXpkxWG-c8/mqdefault.jpg?v=6b06d066",
+    "thumbnail": "https://i.ytimg.com/vi/zDXpkxWG-c8/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/4hssn4EXW2lORXRfiuYTjmYfnlZoQ2h72sdEompqX7GQwAKCsBx7eL0joCFSook1rfCKIcpykg=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=zDXpkxWG-c8"
   },
@@ -1798,6 +1798,30 @@
     "thumbnail": "https://i.ytimg.com/vi/vkmjbkoUszE/mqdefault.jpg?v=6b071e97",
     "channelIcon": "https://yt3.ggpht.com/-4sLuWCih-DlfhpwpDQEuB6eupCB6kTImkIPmKnh54vu5I0F49RkveNQGiqy0p8t0GDU6eiegGE=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=vkmjbkoUszE"
+  },
+  {
+    "videoId": "OUBaVHNeOoo",
+    "name": "天堂ライラ",
+    "youtubeid": "UCpdWNjSU-onhmcARqgHIfpg",
+    "title": "【#朝活 / 横】70人とおはようしながらエンチャントいっぱいする 11/26(木) #天堂観測【パレデミア学園/天堂ライラ】",
+    "date": "2026-11-25T22:30:00.000Z",
+    "status": "upcoming",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/OUBaVHNeOoo/mqdefault.jpg?v=6b072723",
+    "channelIcon": "https://yt3.ggpht.com/6QXGvenKC_ssgHLjSjbxboEcVDgYLRoG529bCe5qbXnBc0Va-2qWJ2xvg3A7hOSQlOG0r5F9=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=OUBaVHNeOoo"
+  },
+  {
+    "videoId": "ZLRMCCcduAc",
+    "name": "天堂ライラ",
+    "youtubeid": "UCpdWNjSU-onhmcARqgHIfpg",
+    "title": "【#朝活 / 縦】70人とおはようしながらエンチャントいっぱいする 11/26(木) #天堂観測【パレデミア学園/天堂ライラ】",
+    "date": "2026-11-25T22:30:00.000Z",
+    "status": "upcoming",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/ZLRMCCcduAc/mqdefault.jpg?v=6b0726c0",
+    "channelIcon": "https://yt3.ggpht.com/6QXGvenKC_ssgHLjSjbxboEcVDgYLRoG529bCe5qbXnBc0Va-2qWJ2xvg3A7hOSQlOG0r5F9=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=ZLRMCCcduAc"
   },
   {
     "videoId": "ZELodMYreoA",

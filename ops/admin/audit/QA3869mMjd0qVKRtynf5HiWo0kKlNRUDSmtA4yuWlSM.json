@@ -1,0 +1,451 @@
+{
+  "version": 2,
+  "batchId": "QA3869mMjd0qVKRtynf5HiWo0kKlNRUDSmtA4yuWlSM",
+  "actor": "900122208316251340881522085640042137117242",
+  "createdAt": "2026-11-25T06:41:07.287Z",
+  "baseCommit": "646a070bfa6dad85b7f21fe07fb1bc112e520c6d",
+  "reason": null,
+  "submissionId": "QA3869mMjd0qVKRtynf5HiWo0kKlNRUDSmtA4yuWlSM",
+  "branch": "admin/change-QA3869mMjd0qVKRtynf5HiWo0kKlNRUDSmtA4yuWlSM",
+  "operations": [
+    {
+      "operationId": "cms-musicvideo-6dfa50ce000043aab454b6cb",
+      "entity": "musicVideo",
+      "recordId": "mv-000005",
+      "action": "create",
+      "changedFields": [
+        "talentIds",
+        "visibility",
+        "youtubeId",
+        "type",
+        "songId",
+        "registeredAt",
+        "rawSongTitle",
+        "id"
+      ],
+      "before": null,
+      "after": {
+        "talentIds": [
+          "tal-000008",
+          "tal-000005",
+          "tal-000007",
+          "tal-000012",
+          "tal-000011",
+          "tal-000010",
+          "tal-000009"
+        ],
+        "visibility": "public",
+        "youtubeId": "6U3SnYYLbPI",
+        "type": "original",
+        "songId": "song-000064",
+        "registeredAt": "2026-11-25T06:36:21.853Z",
+        "rawSongTitle": "君がいるから",
+        "id": "mv-000005"
+      }
+    },
+    {
+      "operationId": "cms-media-6dfa50ce000043aab454b6cb",
+      "entity": "video",
+      "recordId": "6U3SnYYLbPI",
+      "action": "create",
+      "changedFields": [
+        "youtubeId",
+        "channelId",
+        "title",
+        "publishedAt",
+        "startedAt",
+        "endedAt",
+        "durationSeconds",
+        "availability",
+        "visibility"
+      ],
+      "before": null,
+      "after": {
+        "youtubeId": "6U3SnYYLbPI",
+        "channelId": "UC_cCW1xmXwRFp1tX-RD2X1Q",
+        "title": "【オリジナル曲】『君がいるから』/ Palette Project 1st【公式MV】",
+        "publishedAt": "2020-09-24T12:00:09.000Z",
+        "startedAt": null,
+        "endedAt": null,
+        "durationSeconds": null,
+        "availability": "public",
+        "visibility": "public"
+      }
+    },
+    {
+      "operationId": "cms-new-song-6dfa50ce000043aab454b6cb",
+      "entity": "song",
+      "recordId": "song-000064",
+      "action": "create",
+      "changedFields": [
+        "title",
+        "originalArtists",
+        "identityUrl",
+        "aliases",
+        "readings",
+        "visibility",
+        "id"
+      ],
+      "before": null,
+      "after": {
+        "title": "君がいるから",
+        "originalArtists": [
+          "Palette Project、暁月クララ、七海ロナ、遠坂ユラ、藤宮コトハ、常磐カナメ、神菜コハネ、江波キョウカ、鬼多見アユム、香鳴ハノン"
+        ],
+        "identityUrl": "https://www.youtube.com/watch?v=6U3SnYYLbPI",
+        "aliases": [],
+        "readings": [],
+        "visibility": "public",
+        "id": "song-000064"
+      }
+    },
+    {
+      "operationId": "cms-musicvideo-31b98e80a696466a84500fde",
+      "entity": "musicVideo",
+      "recordId": "mv-000006",
+      "action": "create",
+      "changedFields": [
+        "talentIds",
+        "visibility",
+        "youtubeId",
+        "type",
+        "songId",
+        "registeredAt",
+        "rawSongTitle",
+        "id"
+      ],
+      "before": null,
+      "after": {
+        "talentIds": [
+          "tal-000008"
+        ],
+        "visibility": "public",
+        "youtubeId": "8UE4KHm7sF0",
+        "type": "original",
+        "songId": null,
+        "registeredAt": "2026-11-25T06:38:08.935Z",
+        "rawSongTitle": "StAlt!!",
+        "id": "mv-000006"
+      }
+    },
+    {
+      "operationId": "cms-media-31b98e80a696466a84500fde",
+      "entity": "video",
+      "recordId": "8UE4KHm7sF0",
+      "action": "create",
+      "changedFields": [
+        "youtubeId",
+        "channelId",
+        "title",
+        "publishedAt",
+        "startedAt",
+        "endedAt",
+        "durationSeconds",
+        "availability",
+        "visibility"
+      ],
+      "before": null,
+      "after": {
+        "youtubeId": "8UE4KHm7sF0",
+        "channelId": "UC_cCW1xmXwRFp1tX-RD2X1Q",
+        "title": "【StAlt!! - スタート!!】バーチャルアイドルユニット「Alt!!（アルト）」デビュー曲",
+        "publishedAt": "2018-08-22T04:30:15.000Z",
+        "startedAt": null,
+        "endedAt": null,
+        "durationSeconds": null,
+        "availability": "public",
+        "visibility": "public"
+      }
+    },
+    {
+      "operationId": "cms-musicvideo-62a3cd1d05a14159b030a4c9",
+      "entity": "musicVideo",
+      "recordId": "mv-000007",
+      "action": "create",
+      "changedFields": [
+        "talentIds",
+        "visibility",
+        "youtubeId",
+        "type",
+        "songId",
+        "registeredAt",
+        "rawSongTitle",
+        "id"
+      ],
+      "before": null,
+      "after": {
+        "talentIds": [
+          "tal-000008"
+        ],
+        "visibility": "public",
+        "youtubeId": "EQybHllR2mQ",
+        "type": "original",
+        "songId": null,
+        "registeredAt": "2026-11-25T06:38:44.093Z",
+        "rawSongTitle": "Three Piece",
+        "id": "mv-000007"
+      }
+    },
+    {
+      "operationId": "cms-media-62a3cd1d05a14159b030a4c9",
+      "entity": "video",
+      "recordId": "EQybHllR2mQ",
+      "action": "create",
+      "changedFields": [
+        "youtubeId",
+        "channelId",
+        "title",
+        "publishedAt",
+        "startedAt",
+        "endedAt",
+        "durationSeconds",
+        "availability",
+        "visibility"
+      ],
+      "before": null,
+      "after": {
+        "youtubeId": "EQybHllR2mQ",
+        "channelId": "UC_cCW1xmXwRFp1tX-RD2X1Q",
+        "title": "【Three Piece - スリーピース- 】 バーチャルアイドルユニット 「Alt!! (アルト)」 2nd オリジナルシングル",
+        "publishedAt": "2018-12-09T11:58:28.000Z",
+        "startedAt": null,
+        "endedAt": null,
+        "durationSeconds": null,
+        "availability": "public",
+        "visibility": "public"
+      }
+    },
+    {
+      "operationId": "cms-musicvideo-7411061759d6481db9caf1ee",
+      "entity": "musicVideo",
+      "recordId": "mv-000008",
+      "action": "create",
+      "changedFields": [
+        "talentIds",
+        "visibility",
+        "youtubeId",
+        "type",
+        "songId",
+        "registeredAt",
+        "rawSongTitle",
+        "id"
+      ],
+      "before": null,
+      "after": {
+        "talentIds": [
+          "tal-000008"
+        ],
+        "visibility": "public",
+        "youtubeId": "zgJhhzIbWmI",
+        "type": "original",
+        "songId": null,
+        "registeredAt": "2026-11-25T06:39:16.373Z",
+        "rawSongTitle": "Hello My Stage!",
+        "id": "mv-000008"
+      }
+    },
+    {
+      "operationId": "cms-media-7411061759d6481db9caf1ee",
+      "entity": "video",
+      "recordId": "zgJhhzIbWmI",
+      "action": "create",
+      "changedFields": [
+        "youtubeId",
+        "channelId",
+        "title",
+        "publishedAt",
+        "startedAt",
+        "endedAt",
+        "durationSeconds",
+        "availability",
+        "visibility"
+      ],
+      "before": null,
+      "after": {
+        "youtubeId": "zgJhhzIbWmI",
+        "channelId": "UC_cCW1xmXwRFp1tX-RD2X1Q",
+        "title": "【Alt!! x 40mP】『Hello My Stage!』バーチャルアイドルユニット 「Alt!! (アルト)」 3rdオリジナルシングル",
+        "publishedAt": "2019-03-17T09:58:47.000Z",
+        "startedAt": null,
+        "endedAt": null,
+        "durationSeconds": null,
+        "availability": "public",
+        "visibility": "public"
+      }
+    },
+    {
+      "operationId": "cms-musicvideo-b0cde8a95b2c4142a09429f6",
+      "entity": "musicVideo",
+      "recordId": "mv-000009",
+      "action": "create",
+      "changedFields": [
+        "talentIds",
+        "visibility",
+        "youtubeId",
+        "type",
+        "songId",
+        "registeredAt",
+        "rawSongTitle",
+        "id"
+      ],
+      "before": null,
+      "after": {
+        "talentIds": [
+          "tal-000008"
+        ],
+        "visibility": "public",
+        "youtubeId": "W9J8iokDE9k",
+        "type": "original",
+        "songId": null,
+        "registeredAt": "2026-11-25T06:39:39.929Z",
+        "rawSongTitle": "たのしむーぶ",
+        "id": "mv-000009"
+      }
+    },
+    {
+      "operationId": "cms-media-b0cde8a95b2c4142a09429f6",
+      "entity": "video",
+      "recordId": "W9J8iokDE9k",
+      "action": "create",
+      "changedFields": [
+        "youtubeId",
+        "channelId",
+        "title",
+        "publishedAt",
+        "startedAt",
+        "endedAt",
+        "durationSeconds",
+        "availability",
+        "visibility"
+      ],
+      "before": null,
+      "after": {
+        "youtubeId": "W9J8iokDE9k",
+        "channelId": "UC_cCW1xmXwRFp1tX-RD2X1Q",
+        "title": "【公式MV】『たのしむーぶ』/ Alt!! 4thオリジナルシングル【第2回VTuber最協決定戦 タイアップソング】",
+        "publishedAt": "2019-07-24T10:00:10.000Z",
+        "startedAt": null,
+        "endedAt": null,
+        "durationSeconds": null,
+        "availability": "public",
+        "visibility": "public"
+      }
+    },
+    {
+      "operationId": "cms-musicvideo-f4247762929d43269caa87df",
+      "entity": "musicVideo",
+      "recordId": "mv-000010",
+      "action": "create",
+      "changedFields": [
+        "talentIds",
+        "visibility",
+        "youtubeId",
+        "type",
+        "songId",
+        "registeredAt",
+        "rawSongTitle",
+        "id"
+      ],
+      "before": null,
+      "after": {
+        "talentIds": [
+          "tal-000008"
+        ],
+        "visibility": "public",
+        "youtubeId": "BZBrsxqCPO8",
+        "type": "original",
+        "songId": null,
+        "registeredAt": "2026-11-25T06:39:56.693Z",
+        "rawSongTitle": "Dramatic Parade",
+        "id": "mv-000010"
+      }
+    },
+    {
+      "operationId": "cms-media-f4247762929d43269caa87df",
+      "entity": "video",
+      "recordId": "BZBrsxqCPO8",
+      "action": "create",
+      "changedFields": [
+        "youtubeId",
+        "channelId",
+        "title",
+        "publishedAt",
+        "startedAt",
+        "endedAt",
+        "durationSeconds",
+        "availability",
+        "visibility"
+      ],
+      "before": null,
+      "after": {
+        "youtubeId": "BZBrsxqCPO8",
+        "channelId": "UC_cCW1xmXwRFp1tX-RD2X1Q",
+        "title": "【公式MV】『Dramatic Parade 』Alt!! 5thオリジナル曲【Alt!! x OSTER project】",
+        "publishedAt": "2019-08-05T09:57:46.000Z",
+        "startedAt": null,
+        "endedAt": null,
+        "durationSeconds": null,
+        "availability": "public",
+        "visibility": "public"
+      }
+    },
+    {
+      "operationId": "cms-musicvideo-7065720b1aa0456fa622c33c",
+      "entity": "musicVideo",
+      "recordId": "mv-000011",
+      "action": "create",
+      "changedFields": [
+        "talentIds",
+        "visibility",
+        "youtubeId",
+        "type",
+        "songId",
+        "registeredAt",
+        "rawSongTitle",
+        "id"
+      ],
+      "before": null,
+      "after": {
+        "talentIds": [
+          "tal-000008"
+        ],
+        "visibility": "public",
+        "youtubeId": "BjUYdESsW90",
+        "type": "original",
+        "songId": null,
+        "registeredAt": "2026-11-25T06:40:26.783Z",
+        "rawSongTitle": "アナログハート",
+        "id": "mv-000011"
+      }
+    },
+    {
+      "operationId": "cms-media-7065720b1aa0456fa622c33c",
+      "entity": "video",
+      "recordId": "BjUYdESsW90",
+      "action": "create",
+      "changedFields": [
+        "youtubeId",
+        "channelId",
+        "title",
+        "publishedAt",
+        "startedAt",
+        "endedAt",
+        "durationSeconds",
+        "availability",
+        "visibility"
+      ],
+      "before": null,
+      "after": {
+        "youtubeId": "BjUYdESsW90",
+        "channelId": "UC_cCW1xmXwRFp1tX-RD2X1Q",
+        "title": "【公式MV】『アナログハート』/Alt!! 6th 【オリジナル曲】",
+        "publishedAt": "2019-11-26T11:00:09.000Z",
+        "startedAt": null,
+        "endedAt": null,
+        "durationSeconds": null,
+        "availability": "public",
+        "visibility": "public"
+      }
+    }
+  ]
+}

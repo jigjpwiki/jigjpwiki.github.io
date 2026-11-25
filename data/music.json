@@ -1014,6 +1014,83 @@
       "readings": [],
       "visibility": "public",
       "id": "song-000077"
+    },
+    {
+      "title": "Re:Myself",
+      "originalArtists": [
+        "Altimate!!、七海ロナ、藤宮コトハ、神菜コハネ"
+      ],
+      "identityUrl": "https://www.youtube.com/watch?v=9AhTdybYjtU",
+      "aliases": [],
+      "readings": [],
+      "visibility": "public",
+      "id": "song-000078"
+    },
+    {
+      "title": "Summer is Over",
+      "originalArtists": [
+        "Altimate!!、七海ロナ、藤宮コトハ、神菜コハネ"
+      ],
+      "identityUrl": "https://www.youtube.com/watch?v=n3eU2AijQCc",
+      "aliases": [],
+      "readings": [],
+      "visibility": "public",
+      "id": "song-000079"
+    },
+    {
+      "title": "夢堕ち",
+      "originalArtists": [
+        "Altimate!!、七海ロナ、藤宮コトハ、神菜コハネ"
+      ],
+      "identityUrl": "https://www.youtube.com/watch?v=DOOreKUuWkM",
+      "aliases": [],
+      "readings": [],
+      "visibility": "public",
+      "id": "song-000080"
+    },
+    {
+      "title": "ストロボフラワー",
+      "originalArtists": [
+        "Altimate!!、七海ロナ、藤宮コトハ、神菜コハネ"
+      ],
+      "identityUrl": "https://www.youtube.com/watch?v=eF0TVA_1tpw",
+      "aliases": [],
+      "readings": [],
+      "visibility": "public",
+      "id": "song-000081"
+    },
+    {
+      "title": "Dramatic Parade (Altimate ver.)",
+      "originalArtists": [
+        "Altimate!!、七海ロナ・藤宮コトハ・神菜コハネ"
+      ],
+      "identityUrl": "https://www.youtube.com/watch?v=g-gS0AutHOw",
+      "aliases": [],
+      "readings": [],
+      "visibility": "public",
+      "id": "song-000082"
+    },
+    {
+      "title": "願い星",
+      "originalArtists": [
+        "Altimate!! (七海ロナ・藤宮コトハ・神菜コハネ)"
+      ],
+      "identityUrl": "https://www.youtube.com/watch?v=Fz2vdHZ0VfA",
+      "aliases": [],
+      "readings": [],
+      "visibility": "public",
+      "id": "song-000083"
+    },
+    {
+      "title": "ココロステップ",
+      "originalArtists": [
+        "Altimate!! (七海ロナ・藤宮コトハ)"
+      ],
+      "identityUrl": "https://www.youtube.com/watch?v=BzMa1XylKAs",
+      "aliases": [],
+      "readings": [],
+      "visibility": "public",
+      "id": "song-000084"
     }
   ],
   "musicVideos": [
@@ -1326,6 +1403,102 @@
       "registeredAt": "2026-11-25T10:38:44.481Z",
       "rawSongTitle": "ギミラビ",
       "id": "mv-000024"
+    },
+    {
+      "talentIds": [
+        "tal-000005",
+        "tal-000010",
+        "tal-000086"
+      ],
+      "visibility": "public",
+      "youtubeId": "9AhTdybYjtU",
+      "type": "original",
+      "songId": "song-000078",
+      "registeredAt": "2026-11-25T13:06:59.652Z",
+      "rawSongTitle": "Re:Myself",
+      "id": "mv-000025"
+    },
+    {
+      "talentIds": [
+        "tal-000005",
+        "tal-000010",
+        "tal-000086"
+      ],
+      "visibility": "public",
+      "youtubeId": "n3eU2AijQCc",
+      "type": "original",
+      "songId": "song-000079",
+      "registeredAt": "2026-11-25T13:07:35.026Z",
+      "rawSongTitle": "Summer is Over",
+      "id": "mv-000026"
+    },
+    {
+      "talentIds": [
+        "tal-000005",
+        "tal-000086"
+      ],
+      "visibility": "public",
+      "youtubeId": "DOOreKUuWkM",
+      "type": "original",
+      "songId": "song-000080",
+      "registeredAt": "2026-11-25T13:08:03.161Z",
+      "rawSongTitle": "夢堕ち",
+      "id": "mv-000027"
+    },
+    {
+      "talentIds": [
+        "tal-000005",
+        "tal-000010",
+        "tal-000086"
+      ],
+      "visibility": "public",
+      "youtubeId": "eF0TVA_1tpw",
+      "type": "original",
+      "songId": "song-000081",
+      "registeredAt": "2026-11-25T13:08:32.221Z",
+      "rawSongTitle": "ストロボフラワー",
+      "id": "mv-000028"
+    },
+    {
+      "talentIds": [
+        "tal-000005",
+        "tal-000010",
+        "tal-000086"
+      ],
+      "visibility": "public",
+      "youtubeId": "g-gS0AutHOw",
+      "type": "original",
+      "songId": "song-000082",
+      "registeredAt": "2026-11-25T13:08:54.469Z",
+      "rawSongTitle": "Dramatic Parade (Altimate ver.)",
+      "id": "mv-000029"
+    },
+    {
+      "talentIds": [
+        "tal-000005",
+        "tal-000010",
+        "tal-000086"
+      ],
+      "visibility": "public",
+      "youtubeId": "Fz2vdHZ0VfA",
+      "type": "original",
+      "songId": "song-000083",
+      "registeredAt": "2026-11-25T13:09:16.595Z",
+      "rawSongTitle": "願い星",
+      "id": "mv-000030"
+    },
+    {
+      "talentIds": [
+        "tal-000005",
+        "tal-000010"
+      ],
+      "visibility": "public",
+      "youtubeId": "BzMa1XylKAs",
+      "type": "original",
+      "songId": "song-000084",
+      "registeredAt": "2026-11-25T13:09:33.653Z",
+      "rawSongTitle": "ココロステップ",
+      "id": "mv-000031"
     }
   ]
 }

@@ -1,0 +1,619 @@
+{
+  "version": 2,
+  "batchId": "xNIiN3yUIAHWXuogtT1496K2VrZfXw6f0LnRIdiLv1M",
+  "actor": "900122208316251340881522085640042137117242",
+  "createdAt": "2026-11-25T13:09:51.313Z",
+  "baseCommit": "0179664875576b3ac46a45e53c8f5839b4fe6036",
+  "reason": null,
+  "submissionId": "xNIiN3yUIAHWXuogtT1496K2VrZfXw6f0LnRIdiLv1M",
+  "branch": "admin/change-xNIiN3yUIAHWXuogtT1496K2VrZfXw6f0LnRIdiLv1M",
+  "operations": [
+    {
+      "operationId": "cms-musicvideo-bc24e46d493347819addb44b",
+      "entity": "musicVideo",
+      "recordId": "mv-000025",
+      "action": "create",
+      "changedFields": [
+        "talentIds",
+        "visibility",
+        "youtubeId",
+        "type",
+        "songId",
+        "registeredAt",
+        "rawSongTitle",
+        "id"
+      ],
+      "before": null,
+      "after": {
+        "talentIds": [
+          "tal-000005",
+          "tal-000010",
+          "tal-000086"
+        ],
+        "visibility": "public",
+        "youtubeId": "9AhTdybYjtU",
+        "type": "original",
+        "songId": "song-000078",
+        "registeredAt": "2026-11-25T13:06:59.652Z",
+        "rawSongTitle": "Re:Myself",
+        "id": "mv-000025"
+      }
+    },
+    {
+      "operationId": "cms-media-bc24e46d493347819addb44b",
+      "entity": "video",
+      "recordId": "9AhTdybYjtU",
+      "action": "create",
+      "changedFields": [
+        "youtubeId",
+        "channelId",
+        "title",
+        "publishedAt",
+        "startedAt",
+        "endedAt",
+        "durationSeconds",
+        "availability",
+        "visibility"
+      ],
+      "before": null,
+      "after": {
+        "youtubeId": "9AhTdybYjtU",
+        "channelId": "UC_cCW1xmXwRFp1tX-RD2X1Q",
+        "title": "【オリジナル曲】『Re:Myself』/ Altimate!! 1st【公式MV】",
+        "publishedAt": "2020-09-01T12:00:34.000Z",
+        "startedAt": null,
+        "endedAt": null,
+        "durationSeconds": null,
+        "availability": "public",
+        "visibility": "public"
+      }
+    },
+    {
+      "operationId": "cms-new-song-bc24e46d493347819addb44b",
+      "entity": "song",
+      "recordId": "song-000078",
+      "action": "create",
+      "changedFields": [
+        "title",
+        "originalArtists",
+        "identityUrl",
+        "aliases",
+        "readings",
+        "visibility",
+        "id"
+      ],
+      "before": null,
+      "after": {
+        "title": "Re:Myself",
+        "originalArtists": [
+          "Altimate!!、七海ロナ、藤宮コトハ、神菜コハネ"
+        ],
+        "identityUrl": "https://www.youtube.com/watch?v=9AhTdybYjtU",
+        "aliases": [],
+        "readings": [],
+        "visibility": "public",
+        "id": "song-000078"
+      }
+    },
+    {
+      "operationId": "cms-musicvideo-4fe65aa5281a4937ba3d78e5",
+      "entity": "musicVideo",
+      "recordId": "mv-000026",
+      "action": "create",
+      "changedFields": [
+        "talentIds",
+        "visibility",
+        "youtubeId",
+        "type",
+        "songId",
+        "registeredAt",
+        "rawSongTitle",
+        "id"
+      ],
+      "before": null,
+      "after": {
+        "talentIds": [
+          "tal-000005",
+          "tal-000010",
+          "tal-000086"
+        ],
+        "visibility": "public",
+        "youtubeId": "n3eU2AijQCc",
+        "type": "original",
+        "songId": "song-000079",
+        "registeredAt": "2026-11-25T13:07:35.026Z",
+        "rawSongTitle": "Summer is Over",
+        "id": "mv-000026"
+      }
+    },
+    {
+      "operationId": "cms-media-4fe65aa5281a4937ba3d78e5",
+      "entity": "video",
+      "recordId": "n3eU2AijQCc",
+      "action": "create",
+      "changedFields": [
+        "youtubeId",
+        "channelId",
+        "title",
+        "publishedAt",
+        "startedAt",
+        "endedAt",
+        "durationSeconds",
+        "availability",
+        "visibility"
+      ],
+      "before": null,
+      "after": {
+        "youtubeId": "n3eU2AijQCc",
+        "channelId": "UC_cCW1xmXwRFp1tX-RD2X1Q",
+        "title": "【オリジナル曲】『Summer is Over』/ Altimate!! 2nd【公式MV】",
+        "publishedAt": "2021-01-18T12:00:13.000Z",
+        "startedAt": null,
+        "endedAt": null,
+        "durationSeconds": null,
+        "availability": "public",
+        "visibility": "public"
+      }
+    },
+    {
+      "operationId": "cms-new-song-4fe65aa5281a4937ba3d78e5",
+      "entity": "song",
+      "recordId": "song-000079",
+      "action": "create",
+      "changedFields": [
+        "title",
+        "originalArtists",
+        "identityUrl",
+        "aliases",
+        "readings",
+        "visibility",
+        "id"
+      ],
+      "before": null,
+      "after": {
+        "title": "Summer is Over",
+        "originalArtists": [
+          "Altimate!!、七海ロナ、藤宮コトハ、神菜コハネ"
+        ],
+        "identityUrl": "https://www.youtube.com/watch?v=n3eU2AijQCc",
+        "aliases": [],
+        "readings": [],
+        "visibility": "public",
+        "id": "song-000079"
+      }
+    },
+    {
+      "operationId": "cms-musicvideo-176c89fa6fb64cfe9fbf4763",
+      "entity": "musicVideo",
+      "recordId": "mv-000027",
+      "action": "create",
+      "changedFields": [
+        "talentIds",
+        "visibility",
+        "youtubeId",
+        "type",
+        "songId",
+        "registeredAt",
+        "rawSongTitle",
+        "id"
+      ],
+      "before": null,
+      "after": {
+        "talentIds": [
+          "tal-000005",
+          "tal-000086"
+        ],
+        "visibility": "public",
+        "youtubeId": "DOOreKUuWkM",
+        "type": "original",
+        "songId": "song-000080",
+        "registeredAt": "2026-11-25T13:08:03.161Z",
+        "rawSongTitle": "夢堕ち",
+        "id": "mv-000027"
+      }
+    },
+    {
+      "operationId": "cms-media-176c89fa6fb64cfe9fbf4763",
+      "entity": "video",
+      "recordId": "DOOreKUuWkM",
+      "action": "create",
+      "changedFields": [
+        "youtubeId",
+        "channelId",
+        "title",
+        "publishedAt",
+        "startedAt",
+        "endedAt",
+        "durationSeconds",
+        "availability",
+        "visibility"
+      ],
+      "before": null,
+      "after": {
+        "youtubeId": "DOOreKUuWkM",
+        "channelId": "UC_cCW1xmXwRFp1tX-RD2X1Q",
+        "title": "【オリジナル曲】『夢堕ち』/ Altimate!! 3rd【公式MV】",
+        "publishedAt": "2021-12-27T12:00:15.000Z",
+        "startedAt": null,
+        "endedAt": null,
+        "durationSeconds": null,
+        "availability": "public",
+        "visibility": "public"
+      }
+    },
+    {
+      "operationId": "cms-new-song-176c89fa6fb64cfe9fbf4763",
+      "entity": "song",
+      "recordId": "song-000080",
+      "action": "create",
+      "changedFields": [
+        "title",
+        "originalArtists",
+        "identityUrl",
+        "aliases",
+        "readings",
+        "visibility",
+        "id"
+      ],
+      "before": null,
+      "after": {
+        "title": "夢堕ち",
+        "originalArtists": [
+          "Altimate!!、七海ロナ、藤宮コトハ、神菜コハネ"
+        ],
+        "identityUrl": "https://www.youtube.com/watch?v=DOOreKUuWkM",
+        "aliases": [],
+        "readings": [],
+        "visibility": "public",
+        "id": "song-000080"
+      }
+    },
+    {
+      "operationId": "cms-musicvideo-a5f73937abfa4a0babe77f10",
+      "entity": "musicVideo",
+      "recordId": "mv-000028",
+      "action": "create",
+      "changedFields": [
+        "talentIds",
+        "visibility",
+        "youtubeId",
+        "type",
+        "songId",
+        "registeredAt",
+        "rawSongTitle",
+        "id"
+      ],
+      "before": null,
+      "after": {
+        "talentIds": [
+          "tal-000005",
+          "tal-000010",
+          "tal-000086"
+        ],
+        "visibility": "public",
+        "youtubeId": "eF0TVA_1tpw",
+        "type": "original",
+        "songId": "song-000081",
+        "registeredAt": "2026-11-25T13:08:32.221Z",
+        "rawSongTitle": "ストロボフラワー",
+        "id": "mv-000028"
+      }
+    },
+    {
+      "operationId": "cms-media-a5f73937abfa4a0babe77f10",
+      "entity": "video",
+      "recordId": "eF0TVA_1tpw",
+      "action": "create",
+      "changedFields": [
+        "youtubeId",
+        "channelId",
+        "title",
+        "publishedAt",
+        "startedAt",
+        "endedAt",
+        "durationSeconds",
+        "availability",
+        "visibility"
+      ],
+      "before": null,
+      "after": {
+        "youtubeId": "eF0TVA_1tpw",
+        "channelId": "UC_cCW1xmXwRFp1tX-RD2X1Q",
+        "title": "【オリジナル曲】『ストロボフラワー』/ Altimate!! 4th【公式MV】",
+        "publishedAt": "2022-09-14T11:00:13.000Z",
+        "startedAt": null,
+        "endedAt": null,
+        "durationSeconds": null,
+        "availability": "public",
+        "visibility": "public"
+      }
+    },
+    {
+      "operationId": "cms-new-song-a5f73937abfa4a0babe77f10",
+      "entity": "song",
+      "recordId": "song-000081",
+      "action": "create",
+      "changedFields": [
+        "title",
+        "originalArtists",
+        "identityUrl",
+        "aliases",
+        "readings",
+        "visibility",
+        "id"
+      ],
+      "before": null,
+      "after": {
+        "title": "ストロボフラワー",
+        "originalArtists": [
+          "Altimate!!、七海ロナ、藤宮コトハ、神菜コハネ"
+        ],
+        "identityUrl": "https://www.youtube.com/watch?v=eF0TVA_1tpw",
+        "aliases": [],
+        "readings": [],
+        "visibility": "public",
+        "id": "song-000081"
+      }
+    },
+    {
+      "operationId": "cms-musicvideo-45ac0ba73b4740ecac694dce",
+      "entity": "musicVideo",
+      "recordId": "mv-000029",
+      "action": "create",
+      "changedFields": [
+        "talentIds",
+        "visibility",
+        "youtubeId",
+        "type",
+        "songId",
+        "registeredAt",
+        "rawSongTitle",
+        "id"
+      ],
+      "before": null,
+      "after": {
+        "talentIds": [
+          "tal-000005",
+          "tal-000010",
+          "tal-000086"
+        ],
+        "visibility": "public",
+        "youtubeId": "g-gS0AutHOw",
+        "type": "original",
+        "songId": "song-000082",
+        "registeredAt": "2026-11-25T13:08:54.469Z",
+        "rawSongTitle": "Dramatic Parade (Altimate ver.)",
+        "id": "mv-000029"
+      }
+    },
+    {
+      "operationId": "cms-media-45ac0ba73b4740ecac694dce",
+      "entity": "video",
+      "recordId": "g-gS0AutHOw",
+      "action": "create",
+      "changedFields": [
+        "youtubeId",
+        "channelId",
+        "title",
+        "publishedAt",
+        "startedAt",
+        "endedAt",
+        "durationSeconds",
+        "availability",
+        "visibility"
+      ],
+      "before": null,
+      "after": {
+        "youtubeId": "g-gS0AutHOw",
+        "channelId": "UCXzxo5uiqG9k-9kQAEujlJA",
+        "title": "Dramatic Parade (Altimate ver.)",
+        "publishedAt": "2022-08-20T10:07:08.000Z",
+        "startedAt": null,
+        "endedAt": null,
+        "durationSeconds": null,
+        "availability": "public",
+        "visibility": "public"
+      }
+    },
+    {
+      "operationId": "cms-new-song-45ac0ba73b4740ecac694dce",
+      "entity": "song",
+      "recordId": "song-000082",
+      "action": "create",
+      "changedFields": [
+        "title",
+        "originalArtists",
+        "identityUrl",
+        "aliases",
+        "readings",
+        "visibility",
+        "id"
+      ],
+      "before": null,
+      "after": {
+        "title": "Dramatic Parade (Altimate ver.)",
+        "originalArtists": [
+          "Altimate!!、七海ロナ・藤宮コトハ・神菜コハネ"
+        ],
+        "identityUrl": "https://www.youtube.com/watch?v=g-gS0AutHOw",
+        "aliases": [],
+        "readings": [],
+        "visibility": "public",
+        "id": "song-000082"
+      }
+    },
+    {
+      "operationId": "cms-musicvideo-85b4a4af8bed43a2b5894f3f",
+      "entity": "musicVideo",
+      "recordId": "mv-000030",
+      "action": "create",
+      "changedFields": [
+        "talentIds",
+        "visibility",
+        "youtubeId",
+        "type",
+        "songId",
+        "registeredAt",
+        "rawSongTitle",
+        "id"
+      ],
+      "before": null,
+      "after": {
+        "talentIds": [
+          "tal-000005",
+          "tal-000010",
+          "tal-000086"
+        ],
+        "visibility": "public",
+        "youtubeId": "Fz2vdHZ0VfA",
+        "type": "original",
+        "songId": "song-000083",
+        "registeredAt": "2026-11-25T13:09:16.595Z",
+        "rawSongTitle": "願い星",
+        "id": "mv-000030"
+      }
+    },
+    {
+      "operationId": "cms-media-85b4a4af8bed43a2b5894f3f",
+      "entity": "video",
+      "recordId": "Fz2vdHZ0VfA",
+      "action": "create",
+      "changedFields": [
+        "youtubeId",
+        "channelId",
+        "title",
+        "publishedAt",
+        "startedAt",
+        "endedAt",
+        "durationSeconds",
+        "availability",
+        "visibility"
+      ],
+      "before": null,
+      "after": {
+        "youtubeId": "Fz2vdHZ0VfA",
+        "channelId": "UC_cCW1xmXwRFp1tX-RD2X1Q",
+        "title": "【オリジナル曲】『願い星』/ Altimate!! 5th【公式MV】",
+        "publishedAt": "2022-10-26T12:00:10.000Z",
+        "startedAt": null,
+        "endedAt": null,
+        "durationSeconds": null,
+        "availability": "public",
+        "visibility": "public"
+      }
+    },
+    {
+      "operationId": "cms-new-song-85b4a4af8bed43a2b5894f3f",
+      "entity": "song",
+      "recordId": "song-000083",
+      "action": "create",
+      "changedFields": [
+        "title",
+        "originalArtists",
+        "identityUrl",
+        "aliases",
+        "readings",
+        "visibility",
+        "id"
+      ],
+      "before": null,
+      "after": {
+        "title": "願い星",
+        "originalArtists": [
+          "Altimate!! (七海ロナ・藤宮コトハ・神菜コハネ)"
+        ],
+        "identityUrl": "https://www.youtube.com/watch?v=Fz2vdHZ0VfA",
+        "aliases": [],
+        "readings": [],
+        "visibility": "public",
+        "id": "song-000083"
+      }
+    },
+    {
+      "operationId": "cms-musicvideo-aa34613fda7a42aa8161d3a8",
+      "entity": "musicVideo",
+      "recordId": "mv-000031",
+      "action": "create",
+      "changedFields": [
+        "talentIds",
+        "visibility",
+        "youtubeId",
+        "type",
+        "songId",
+        "registeredAt",
+        "rawSongTitle",
+        "id"
+      ],
+      "before": null,
+      "after": {
+        "talentIds": [
+          "tal-000005",
+          "tal-000010"
+        ],
+        "visibility": "public",
+        "youtubeId": "BzMa1XylKAs",
+        "type": "original",
+        "songId": "song-000084",
+        "registeredAt": "2026-11-25T13:09:33.653Z",
+        "rawSongTitle": "ココロステップ",
+        "id": "mv-000031"
+      }
+    },
+    {
+      "operationId": "cms-media-aa34613fda7a42aa8161d3a8",
+      "entity": "video",
+      "recordId": "BzMa1XylKAs",
+      "action": "create",
+      "changedFields": [
+        "youtubeId",
+        "channelId",
+        "title",
+        "publishedAt",
+        "startedAt",
+        "endedAt",
+        "durationSeconds",
+        "availability",
+        "visibility"
+      ],
+      "before": null,
+      "after": {
+        "youtubeId": "BzMa1XylKAs",
+        "channelId": "UC_cCW1xmXwRFp1tX-RD2X1Q",
+        "title": "【オリジナル曲】『ココロステップ』/ Altimate!! 6th【公式MV】",
+        "publishedAt": "2023-03-01T12:00:10.000Z",
+        "startedAt": null,
+        "endedAt": null,
+        "durationSeconds": null,
+        "availability": "public",
+        "visibility": "public"
+      }
+    },
+    {
+      "operationId": "cms-new-song-aa34613fda7a42aa8161d3a8",
+      "entity": "song",
+      "recordId": "song-000084",
+      "action": "create",
+      "changedFields": [
+        "title",
+        "originalArtists",
+        "identityUrl",
+        "aliases",
+        "readings",
+        "visibility",
+        "id"
+      ],
+      "before": null,
+      "after": {
+        "title": "ココロステップ",
+        "originalArtists": [
+          "Altimate!! (七海ロナ・藤宮コトハ)"
+        ],
+        "identityUrl": "https://www.youtube.com/watch?v=BzMa1XylKAs",
+        "aliases": [],
+        "readings": [],
+        "visibility": "public",
+        "id": "song-000084"
+      }
+    }
+  ]
+}

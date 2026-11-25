@@ -527,7 +527,8 @@ export class Admin {
           sub: previous?.sub || null,
           role: input.role,
           scope: input.scope === undefined && previous ? normalizeScope(previous.scope) : scope,
-          directPublish: input.role === "editor" && (contentPolicy === "all-content-v1" || input.directPublish === true),
+          directPublish: input.role === "editor" && (contentPolicy === "all-content-v1" ||
+            (input.directPublish === undefined ? previous?.directPublish === true : input.directPublish === true)),
           disabled: input.disabled,
           revision: random(),
           expires: now + 7 * 86400_000,

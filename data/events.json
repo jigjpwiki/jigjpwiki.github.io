@@ -156,7 +156,8 @@
         "currency": null,
         "note": "料金未確認"
       },
-      "summary": "公式告知の開催情報。終了時刻は未確認。"
+      "summary": "公式告知の開催情報。終了時刻は未確認。",
+      "thumbnailUrl": "https://i.ytimg.com/vi/3KG4UbMX2UM/maxresdefault.jpg"
     },
     {
       "organizerIds": [],
@@ -192,7 +193,8 @@
         "currency": null,
         "note": "料金未確認"
       },
-      "summary": "公式開催レポートで実施日・会場を確認。開始・終了時刻は未確認。"
+      "summary": "公式開催レポートで実施日・会場を確認。開始・終了時刻は未確認。",
+      "thumbnailUrl": "https://media.zaiko.io/zaiko/w_1200/1_4bhw57nywwmtu2o8a4w9h"
     },
     {
       "type": "other",
@@ -237,7 +239,8 @@
       "venue": "LIVE SPACE Q",
       "announcementUrl": "https://jcm-event.bitfan.id/events/23143",
       "summary": "パレデミア学園リアルイベント2回目",
-      "id": "evt-000006"
+      "id": "evt-000006",
+      "thumbnailUrl": "https://cdn.wikiwiki.jp/proxy-image/w/jigjp?url=https%3A%2F%2Fpbs.twimg.com%2Fmedia%2FHSbzE-Pa8AAFHIR.jpg"
     }
   ]
 }

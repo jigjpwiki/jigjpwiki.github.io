@@ -357,34 +357,25 @@ async function start() {
     me = await api("/api/me");
     $("#login").hidden = true;
     $("#app").hidden = false;
+    me.simpleCms = me.simpleCms || me.provider === "google";
     if (me.provider === "google") {
-      const panel = node("section");
-      panel.className = "stack";
-      const logout = node("button", "ログアウト");
-      logout.onclick = async () => {
+      document.querySelectorAll("[data-owner-only]").forEach((item) => { item.hidden = true; });
+      $("#identity").textContent = me.role === "viewer" ? "閲覧者" : "編集者";
+      $("#logout").onclick = async () => {
         if (!mayLeave()) return;
-        try {
-          await api("/auth/logout", "POST", {});
-          location.reload();
-        } catch {
-          showStatus("ログアウトできませんでした。もう一度お試しください。");
-        }
+        await api("/auth/logout", "POST", {});
+        location.reload();
       };
-      const status = node("p", "担当コンテンツを読み込み中…");
-      status.setAttribute("role", "status");
-      panel.append(node("h2", "担当コンテンツ"), logout, status);
-      import("./simple-cms.js").then(({ mountSimpleCms }) => mountSimpleCms(panel, status, api))
-        .catch((error) => { status.textContent = error.message === "cms_read_unavailable"
-          ? "GitHubから担当コンテンツを取得できませんでした。少し待ってから再読み込みしてください。"
-          : "担当コンテンツを取得できませんでした。"; });
-      $("#app").replaceChildren(panel);
+      if (!location.hash) history.replaceState(null, "", "#dashboard");
+      acceptedHash = location.hash;
+      screen();
       return;
     }
     if (me.simpleCms) {
       $("#simple-cms-link").hidden = false;
       if (!location.hash) {
-        history.replaceState(null, "", "#cms");
-        acceptedHash = "#cms";
+        history.replaceState(null, "", "#dashboard");
+        acceptedHash = "#dashboard";
       }
     }
     $("#identity").textContent = `${me.login} / 管理者 / ${me.repository}`;
@@ -1692,24 +1683,37 @@ screen = function () {
       a.setAttribute("aria-current", "page");
     else a.removeAttribute("aria-current");
   }
-  if (route === "#cms" && me.simpleCms) {
-    $("#page-title").textContent = "簡易CMS";
+  const compatibility = { "#masters": "talent", "#anniversaries": "anniversary", "#events": "event", "#music": "song", "#goods": "product" };
+  const contentEntity = route.startsWith("#content/") ? route.slice(9) : me.provider === "google" ? compatibility[route] : null;
+  const cmsPages = { "#dashboard": "dashboard", "#cms": "dashboard", "#drafts": "drafts", "#publication": "publication", "#history": "history", "#search": "search" };
+  if (me.simpleCms && (contentEntity || cmsPages[route])) {
+    const pageNames = { dashboard: "ダッシュボード", drafts: "下書き", publication: "公開状況", history: "更新履歴", search: "全体検索" };
+    const names = { talent: "VTuber", organization: "事務所", group: "グループ", anniversary: "記念日", event: "イベント", song: "楽曲", musicVideo: "歌動画", video: "動画情報", karaoke: "歌枠", performance: "歌唱記録", product: "商品", campaign: "キャンペーン", offer: "販売情報" };
+    const title = contentEntity ? names[contentEntity] : pageNames[cmsPages[route]];
+    $("#page-title").textContent = title || "コンテンツ";
     const panel = node("section");
-    panel.className = "stack";
+    panel.className = "cms-content stack";
     const status = node("p", "読み込み中…");
     status.setAttribute("role", "status");
-    const reviewChanges = node("a", "下書きを確認して公開申請");
-    reviewChanges.href = "#workspace";
-    reviewChanges.className = "button";
-    const actions = node("div");
-    actions.className = "button-group";
-    actions.append(reviewChanges);
-    panel.append(node("h2", "簡易CMS"), actions, status);
+    panel.append(node("h2", title || "コンテンツ"), status);
+    if (me.provider !== "google" && ["drafts", "publication"].includes(cmsPages[route])) {
+      const review = node("a", "下書きを確認して公開申請");
+      review.href = "#workspace";
+      review.className = "button";
+      panel.append(review);
+    }
     $("#view").replaceChildren(panel);
-    import("./simple-cms.js").then(({ mountSimpleCms }) => mountSimpleCms(panel, status, api))
-      .catch((error) => { status.textContent = error.message === "cms_read_unavailable"
-        ? "GitHubからコンテンツを取得できませんでした。少し待ってから再読み込みするか、高度な管理画面をご利用ください。"
-        : "コンテンツを取得できませんでした。"; });
+    import("./simple-cms.js").then(({ mountSimpleCms }) => mountSimpleCms(panel, status, api, { entity: contentEntity, view: cmsPages[route] || "content" }))
+      .catch(() => {
+        status.textContent = "コンテンツを取得できませんでした。";
+        const retry = node("button", "再試行");
+        retry.onclick = () => screen();
+        panel.append(retry);
+      });
+    return;
+  }
+  if (me.provider === "google") {
+    $("#view").replaceChildren(node("h2", "この画面は利用できません"), node("p", "サイドバーからコンテンツを選んでください。"));
     return;
   }
   if (route === "#settings") {

@@ -28,7 +28,7 @@ const categories = {
   product: { category: "goods", label: "グッズ", fields: ["title", "image", "identityUrl"] },
 };
 
-export async function mountSimpleCms(panel, status, api) {
+export async function mountSimpleCms(panel, status, api, options = {}) {
   const el = (tag, value = "") => {
     const node = document.createElement(tag);
     node.textContent = value;
@@ -41,6 +41,10 @@ export async function mountSimpleCms(panel, status, api) {
     return node;
   };
   const catalog = await api("/api/cms/catalog");
+  const view = options.view || "legacy";
+  const selectedEntity = options.entity;
+  const sections = selectedEntity ? catalog.sections.filter(({ entity }) => entity === selectedEntity) : catalog.sections;
+  const browsing = ["legacy", "content", "search"].includes(view);
   function songPicker(select, selected) {
     const search = el("input");
     search.type = "search";
@@ -62,6 +66,9 @@ export async function mountSimpleCms(panel, status, api) {
   const list = el("section");
   const draftsArea = el("section");
   panel.append(draftsArea, formArea, list);
+  draftsArea.hidden = !["legacy", "drafts", "dashboard"].includes(view);
+  list.hidden = !browsing;
+  formArea.className = "cms-editor stack";
   const publicationArea = el("section");
   const publicationStatus = el("p");
   const publishedRecords = el("details");
@@ -70,6 +77,7 @@ export async function mountSimpleCms(panel, status, api) {
   const selectedDrafts = new Set();
   let publication;
   if (catalog.editable && catalog.publicationTracking !== false) {
+    publicationArea.hidden = !["legacy", "publication", "dashboard"].includes(view);
     publicationArea.append(el("h3", "公開状況"), publicationStatus, publishedRecords);
     panel.insertBefore(publicationArea, draftsArea);
   }
@@ -174,6 +182,7 @@ export async function mountSimpleCms(panel, status, api) {
       });
       draftsArea.append(el("p", "公開する下書きを選んでください。"), publish);
     }
+    if (!saved.drafts.length) draftsArea.append(el("p", "保存済みの下書きはありません。"));
     for (const { draftId, input, conflict, reapplyJobId } of saved.drafts) {
       const row = el("div");
       row.className = "button-group";
@@ -549,13 +558,27 @@ export async function mountSimpleCms(panel, status, api) {
     form.querySelector("input")?.focus();
   }
   if (saved) await refreshDrafts();
-  panel.append(mountCmsHistory({ api, editable: catalog.editable, revision: () => revision, afterSave: refreshDrafts }));
+  if (["legacy", "history"].includes(view)) {
+    const history = mountCmsHistory({ api, editable: catalog.editable, revision: () => revision, afterSave: refreshDrafts });
+    history.open = view === "history";
+    panel.append(history);
+  }
+  if (view === "dashboard") {
+    const shortcuts = el("div");
+    shortcuts.className = "cms-toolbar";
+    for (const { entity, label } of catalog.sections) {
+      const link = el("a", label);
+      link.href = "#content/" + entity;
+      shortcuts.append(link);
+    }
+    panel.append(el("h3", "コンテンツ"), shortcuts);
+  }
   for (const [entity, spec] of Object.entries(categories)) {
-    if ((!spec.ownerCreate || catalog.owner) && catalog.editable && catalog.categories.includes(spec.category))
+    if ((!selectedEntity || selectedEntity === entity) && (!spec.ownerCreate || catalog.owner || catalog.contentPolicy === "all-content-v1") && catalog.editable && catalog.categories.includes(spec.category))
       list.append(button(spec.label + "を新規登録", () => edit(entity)));
   }
   const tools = el("div");
-  tools.className = "button-group";
+  tools.className = "cms-toolbar button-group";
   const category = el("select");
   const search = el("input");
   const order = el("select");
@@ -564,25 +587,50 @@ export async function mountSimpleCms(panel, status, api) {
   search.setAttribute("aria-label", "名称を検索");
   category.setAttribute("aria-label", "コンテンツの種類");
   order.setAttribute("aria-label", "並び順");
-  category.append(new Option("すべての種類", ""), ...catalog.sections.map(
+  category.append(new Option("すべての種類", ""), ...sections.map(
     ({ entity, label }) => new Option(label, entity),
   ));
   order.append(new Option("登録順", ""), new Option("名前順", "name"));
+  category.hidden = Boolean(selectedEntity);
   tools.append(category, search, order);
   list.append(tools);
   const views = [];
   const collator = new Intl.Collator("ja");
+  let page = 0;
+  const pageSize = 50;
+  const paging = el("div");
+  paging.className = "cms-toolbar button-group";
+  const count = el("p");
+  const previous = button("前のページ", () => { page--; filter(); });
+  const next = button("次のページ", () => { page++; filter(); });
+  paging.append(count, previous, next);
+  list.append(paging);
   function filter() {
     const needle = search.value.trim().normalize("NFKC").toLocaleLowerCase("ja");
+    let total = 0;
+    let longest = 0;
     for (const { entity, section, entries, rows } of views) {
       const matching = rows.filter(({ title }) => title.normalize("NFKC").toLocaleLowerCase("ja").includes(needle));
       if (order.value === "name") matching.sort((a, b) => collator.compare(a.title, b.title));
-      entries.replaceChildren(...matching.map(({ li }) => li));
-      section.hidden = Boolean(category.value && category.value !== entity) || matching.length === 0;
+      const visible = !category.value || category.value === entity;
+      if (visible) { total += matching.length; longest = Math.max(longest, matching.length); }
+      const windowRows = matching.slice(page * pageSize, (page + 1) * pageSize);
+      entries.replaceChildren(...windowRows.map(({ li }) => li));
+      section.hidden = !visible;
+      if (visible && !matching.length) {
+        const empty = el("tr");
+        const cell = el("td", "該当するコンテンツはありません。");
+        cell.colSpan = 3;
+        empty.append(cell);
+        entries.append(empty);
+      }
     }
+    previous.disabled = page === 0;
+    next.disabled = (page + 1) * pageSize >= longest;
+    count.textContent = total + "件 / " + (page + 1) + "ページ";
   }
-  search.addEventListener("input", filter);
-  category.addEventListener("change", filter);
+  search.addEventListener("input", () => { page = 0; filter(); });
+  category.addEventListener("change", () => { page = 0; filter(); });
   order.addEventListener("change", filter);
   async function openRecord(entity, id) {
     try {
@@ -594,20 +642,29 @@ export async function mountSimpleCms(panel, status, api) {
     }
   }
 
-  for (const { entity, label, items } of catalog.sections) {
+  for (const { entity, label, items } of sections) {
     const section = el("section");
-    const entries = el("ul");
+    const table = el("table");
+    table.className = "cms-table";
+    const header = el("thead");
+    const headerRow = el("tr");
+    for (const title of ["名称", "固定ID", "下書き"]) headerRow.append(el("th", title));
+    header.append(headerRow);
+    const entries = el("tbody");
+    table.append(header, entries);
     const rows = [];
     for (const item of items) {
-      const li = el("li");
-      if (!catalog.editable || !Object.hasOwn(categories, entity)) li.textContent = item.title;
-      else li.append(button(item.title, () => openRecord(entity, item.id)));
+      const li = el("tr");
+      const name = el("td");
+      if (!catalog.editable || !Object.hasOwn(categories, entity)) name.textContent = item.title;
+      else name.append(button(item.title, () => openRecord(entity, item.id)));
+      li.append(name, el("td", item.id), el("td", saved?.drafts.some(({ input }) => input?.entity === entity && input.id === item.id) ? "下書きあり" : ""));
       rows.push({ title: item.title || "名称未登録", li });
     }
-    section.append(el("h3", label), entries);
+    section.append(el("h3", label), table);
     list.append(section);
     views.push({ entity, section, entries, rows });
   }
   filter();
-  if (saveAvailable) status.textContent = "担当範囲の公開コンテンツです。";
+  if (saveAvailable) status.textContent = "";
 }

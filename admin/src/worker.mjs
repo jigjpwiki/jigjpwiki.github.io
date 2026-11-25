@@ -267,7 +267,11 @@ export class Admin {
       if (url.pathname === "/api/cms/publication") {
         const jobs = new CmsJobs(this);
         if (request.method === "GET") return json({ publication: await jobs.status(session.id) });
-        if (request.method === "POST") return json({ publication: await jobs.enqueue(session, await body(request, 4096)) }, 202);
+        if (request.method === "POST") {
+          if (member.role !== "editor" || member.directPublish !== true) fail(403, "cms_scope_denied");
+          if (!publishingEnabled(this.env)) fail(403, "cms_publish_disabled");
+          return json({ publication: await jobs.enqueue(session, await body(request, 4096)) }, 202);
+        }
       }
     }
     const cmsRoutes = ["/api/cms/catalog", "/api/cms/detail", "/api/cms/draft", "/api/cms/draft/bulk", "/api/cms/draft/conflicts", "/api/cms/history", "/api/cms/publication/reapply", "/api/cms/publication/preview"];

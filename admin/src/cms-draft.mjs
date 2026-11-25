@@ -1,6 +1,6 @@
 import { videoForCms, assertSongEdit, assertVideoEdit, newSongOperation, newSongFields } from "./cms-music.mjs";
 import { youtubeId } from "../public/content-utils.js";
-import { planSubmission, recordAt } from "./submission-plan.mjs";
+import { equal, planSubmission, recordAt } from "./submission-plan.mjs";
 import { contentPreview, resolveRefs } from "./content-plan.mjs";
 import { cmsPermissions, assertExistingCampaign, hasAllContent } from "./cms-scope.mjs";
 import { fail, hash } from "./security.mjs";
@@ -731,13 +731,7 @@ export async function prepareBulkDrafts(snapshot, member, input, existing = []) 
         if (field === "activity") expected.activityStatus = { ...expected.activityStatus, value };
         else expected[field] = value;
       }
-      // Ignore property order, but retain exact array order and field presence.
-      const same = (a, b) => {
-        if (a === b) return true;
-        if (!a || !b || typeof a !== "object" || typeof b !== "object" || Array.isArray(a) !== Array.isArray(b)) return false;
-        return Object.keys(a).length === Object.keys(b).length && Object.keys(a).every((k) => Object.hasOwn(b, k) && same(a[k], b[k]));
-      };
-      if (!same(expected, op.value)) fail(409, "cms_bulk_unsafe_roundtrip");
+      if (!equal(expected, op.value)) fail(409, "cms_bulk_unsafe_roundtrip");
     }
     batches.push(batch);
     operations.push(...batch);

@@ -105,13 +105,13 @@ button:disabled {
 .primary,
 .submission-primary {
   background: var(--accent);
-  color: var(--surface);
+  color: var(--on-accent);
   border-color: var(--accent);
 }
 .primary:hover:not(:disabled),
 .submission-primary:hover:not(:disabled) {
-  background: #0026a3;
-  color: #fff;
+  background: var(--accent-hover);
+  color: var(--on-accent);
 }
 .text-action {
   border-color: transparent;
@@ -269,13 +269,6 @@ label {
   }
 }
 @media (prefers-color-scheme: dark) {
-  .primary,
-  .submission-primary {
-    color: #101820;
-  }
-  .primary:hover:not(:disabled) {
-    color: #fff;
-  }
   .record-copy > span,
   .record-copy > small {
     color: var(--muted);

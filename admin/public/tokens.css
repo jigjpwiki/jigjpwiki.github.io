@@ -19,6 +19,8 @@
   --line: #dce0e5;
   --control-line: #8b929d;
   --accent: #3449b8;
+  --accent-hover: #283991;
+  --on-accent: #ffffff;
   --danger: #b51b22;
   --success: #176633;
   --focus: #ffda44;
@@ -55,6 +57,8 @@
     --line: #414953;
     --control-line: #8d9aaa;
     --accent: #a3ccff;
+    --accent-hover: #c2ddff;
+    --on-accent: #152335;
     --danger: #ff9a9a;
     --success: #8bddaa;
     --admin-error: #ff9a9a;

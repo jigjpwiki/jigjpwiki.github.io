@@ -641,7 +641,7 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
     panel.append(el("h3", "コンテンツ"), shortcuts);
   }
   for (const [entity, spec] of Object.entries(categories)) {
-    if ((!selectedEntity || selectedEntity === entity) && (!spec.ownerCreate || catalog.owner || catalog.contentPolicy === "all-content-v1") && catalog.editable && catalog.categories.includes(spec.category))
+    if (["legacy", "content"].includes(view) && (!selectedEntity || selectedEntity === entity) && (!spec.ownerCreate || catalog.owner || catalog.contentPolicy === "all-content-v1") && catalog.editable && catalog.categories.includes(spec.category))
       list.append(button(spec.label + "を新規登録", () => edit(entity)));
   }
   const tools = el("div");

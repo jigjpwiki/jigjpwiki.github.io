@@ -1720,9 +1720,9 @@ screen = function () {
       a.setAttribute("aria-current", "page");
     else a.removeAttribute("aria-current");
   }
-  const compatibility = { "#masters": "talent", "#anniversaries": "anniversary", "#events": "event", "#music": "song", "#goods": "product" };
+  const compatibility = { "#masters": "talent", "#anniversaries": "anniversary", "#events": "event", "#music": "song", "#goods": "product", "#organizations": "organization" };
   const contentEntity = route.startsWith("#content/") ? route.slice(9) : me.provider === "google" ? compatibility[route] : null;
-  const cmsPages = { "#dashboard": "dashboard", "#cms": "dashboard", "#drafts": "drafts", "#publication": "publication", "#history": "history", "#search": "search" };
+  const cmsPages = { "#dashboard": "dashboard", "#cms": "dashboard", "#drafts": "drafts", "#publication": "publication", "#history": "history", "#search": "search", ...(me.provider === "google" ? { "#workspace": "drafts" } : {}) };
   if (me.simpleCms && (contentEntity || cmsPages[route])) {
     const pageNames = { dashboard: "ダッシュボード", drafts: "下書き", publication: "公開状況", history: "更新履歴", search: "全体検索" };
     const names = { talent: "VTuber", organization: "事務所", group: "グループ", anniversary: "記念日", event: "イベント", song: "楽曲", musicVideo: "歌動画", video: "動画情報", karaoke: "歌枠", performance: "歌唱記録", product: "商品", campaign: "キャンペーン", offer: "販売情報" };

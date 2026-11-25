@@ -976,6 +976,50 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
   ];
   const hasValue = (key) => sections.some(({ items }) => items.some((item) => Boolean(item[key])));
   const activeColumns = new Set(["title", "visibility", "draft", "id", ...["context", "date", "state"].filter(hasValue)]);
+  const bulkAvailable = view === "content" && selectedEntity !== "organization" &&
+    catalog.editable && catalog.contentPolicy === "all-content-v1";
+  const selectedRows = new Set();
+  const bulkBar = el("div");
+  bulkBar.className = "cms-bulk-bar";
+  const bulkCount = el("span");
+  bulkCount.setAttribute("role", "status");
+  const bulkField = el("select");
+  bulkField.setAttribute("aria-label", "一括編集する項目");
+  bulkField.append(new Option("掲載状態", "visibility"));
+  if (selectedEntity === "talent") bulkField.append(new Option("活動状態", "activity"));
+  if (selectedEntity === "performance") bulkField.append(new Option("確認状態", "verification"));
+  const bulkValue = el("select");
+  bulkValue.setAttribute("aria-label", "一括編集の変更後の値");
+  const bulkValues = { visibility: ["public", "draft"], activity: ["active", "hiatus", "retired", "ended", "unknown"], verification: ["verified", "unreviewed", "rejected"] };
+  const populateBulk = () => bulkValue.replaceChildren(...bulkValues[bulkField.value].map((value) => new Option(translated(value), value)));
+  populateBulk();
+  bulkField.onchange = populateBulk;
+  const bulkSave = button("一括で下書きを保存", async () => {
+    if (!saveAvailable || saving || !selectedRows.size || selectedRows.size > 12) return;
+    if (panel.dataset.cmsDirty) { status.textContent = "編集中のレコードを保存または閉じてから一括編集してください。"; return; }
+    if (!confirm(selectedRows.size + "件の「" + bulkField.selectedOptions[0].text + "」を「" + bulkValue.selectedOptions[0].text + "」に変更し、下書きとして保存します。公開は別途確認が必要です。")) return;
+    saving = true;
+    panel.dataset.cmsSaving = "true";
+    bulkSave.disabled = true;
+    try {
+      const result = await api("/api/cms/draft/bulk", "PUT", { entity: selectedEntity, ids: [...selectedRows], field: bulkField.value, value: bulkValue.value, revision, sha: catalog.sha });
+      revision = result.revision;
+      selectedRows.clear();
+      try { await refreshDrafts(); status.textContent = result.draftIds.length + "件の下書きを保存しました。"; }
+      catch { saveAvailable = false; status.textContent = "保存済みですが一覧の再取得に失敗しました。再読み込みしてください。"; }
+    } catch (error) {
+      status.textContent = error.message === "cms_bulk_existing_draft" ? "対象に既存の下書きがあるため保存していません。" : error.message === "no_changes" ? "変更する項目はありません。" : "一括保存できませんでした。変更は反映されていません。";
+    } finally { saving = false; delete panel.dataset.cmsSaving; filter(); }
+  });
+  bulkSave.className = "primary";
+  const clearBulk = button("選択解除", () => { selectedRows.clear(); filter(); });
+  const updateBulk = () => {
+    bulkCount.textContent = selectedRows.size + "件選択中（最大12件）";
+    bulkSave.disabled = saving || !saveAvailable || !selectedRows.size || selectedRows.size > 12;
+    clearBulk.disabled = saving || !selectedRows.size;
+  };
+  bulkBar.append(bulkCount, bulkField, bulkValue, bulkSave, clearBulk);
+  if (bulkAvailable) list.append(bulkBar);
   const tools = el("div");
   tools.className = "cms-toolbar cms-collection-toolbar";
   const category = el("select");
@@ -1050,6 +1094,23 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
   }
   const makeRow = (entity, item, draft) => {
     const row = el("tr");
+    if (bulkAvailable) {
+      const cell = el("td");
+      const check = el("input");
+      check.type = "checkbox";
+      check.setAttribute("aria-label", item.title + "を一括編集の対象にする");
+      check.checked = selectedRows.has(item.id);
+      check.disabled = Boolean(draft) || saving || (!check.checked && selectedRows.size >= 12);
+      check.onchange = () => {
+        if (check.checked) selectedRows.add(item.id); else selectedRows.delete(item.id);
+        filter();
+        const replacement = [...list.querySelectorAll('input[type="checkbox"]')].find((node) => node.getAttribute("aria-label") === check.getAttribute("aria-label"));
+        replacement?.focus();
+      };
+      cell.className = "cms-select-cell";
+      cell.append(check);
+      row.append(cell);
+    }
     for (const [key] of columns.filter(([key]) => activeColumns.has(key))) {
       const cell = el("td");
       cell.dataset.column = key;
@@ -1105,12 +1166,17 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
       const windowRows = matching.slice(Math.max(0, lower), Math.max(0, upper));
       const shown = columns.filter(([key]) => activeColumns.has(key));
       headerRow.replaceChildren(...shown.map(([key, label]) => { const th = el("th", label); th.scope = "col"; th.dataset.column = key; return th; }));
+      if (bulkAvailable) {
+        const th = el("th", "選択");
+        th.scope = "col";
+        headerRow.prepend(th);
+      }
       entries.replaceChildren(...windowRows.map((item) => makeRow(entity, item, drafts.get(entity + ":" + item.id))));
       if (view === "search" && !windowRows.length) section.hidden = true;
       else if (!windowRows.length) {
         const empty = el("tr");
         const cell = el("td", "該当するコンテンツはありません。");
-        cell.colSpan = shown.length;
+        cell.colSpan = shown.length + Number(bulkAvailable);
         empty.append(cell);
         entries.append(empty);
       }
@@ -1119,6 +1185,7 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
     previous.disabled = page === 0;
     next.disabled = (page + 1) * pageSize >= max;
     count.textContent = total + "件 / " + (page + 1) + "ページ";
+    if (bulkAvailable) updateBulk();
   }
   const reset = () => { page = 0; filter(); };
   search.addEventListener("input", reset);

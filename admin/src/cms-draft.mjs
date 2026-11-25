@@ -662,3 +662,47 @@ export function writeDraft(operations, draftId, replacement) {
     ...next,
   ] };
 }
+
+/** A deliberately narrow batch editor. One validated plan, no arbitrary field paths. */
+export async function prepareBulkDrafts(snapshot, member, input, existing = []) {
+  if (member.role !== "editor" || !hasAllContent(member)) fail(403, "cms_scope_denied");
+  if (input?.sha !== snapshot.sha) fail(409, "main_changed_reload");
+  const { entity, ids, field, value } = input;
+  if (!Object.hasOwn(draftTypes, entity) || !Array.isArray(ids) || ids.length < 1 || ids.length > 12 ||
+      new Set(ids).size !== ids.length || ids.some((id) => typeof id !== "string" || !/^[\w-]{1,80}$/.test(id)))
+    fail(400, "cms_invalid_bulk");
+  const allowed = field === "visibility" && entity !== "organization" ? ["public", "draft"]
+    : field === "activity" && entity === "talent" ? ["active", "hiatus", "retired", "ended", "unknown"]
+    : field === "verification" && entity === "performance" ? ["verified", "unreviewed", "rejected"]
+    : null;
+  // Names may be edited row by row; do not bulk-rename unrelated records.
+  if (!allowed?.includes(value)) fail(400, "cms_invalid_bulk");
+  const access = cmsPermissions(snapshot.models, member);
+  const operations = [];
+  for (const id of ids) {
+    if (existing.some((op) => op.entity === entity && op.id === id)) fail(409, "cms_bulk_existing_draft");
+    const before = recordAt(snapshot.models, { entity, id });
+    if (!access.canRead(entity, before)) fail(403, "cms_scope_denied");
+    const next = structuredClone(before);
+    if (field === "activity") next.activityStatus = { ...before.activityStatus, value };
+    else next[field] = value;
+    if (JSON.stringify(before) === JSON.stringify(next)) continue;
+    access.assertChange(entity, before, next);
+    operations.push({ key: entity === "video" ? "cms-media" : "cms-" + entity.toLowerCase(),
+      entity, id, before, value: next, baseCommit: snapshot.sha });
+  }
+  if (!operations.length) fail(409, "no_changes");
+  const combined = operations.map((op, i) => ({ ...op, key: op.key + "-" + i }));
+  const plan = await planSubmission(snapshot, combined, { actor: "0", batchId: await hash(combined) });
+  if (plan.conflicts?.length) fail(409, "main_changed_reload");
+  const after = cmsPermissions({ ...snapshot.models, ...plan.files }, member);
+  for (const row of plan.impact.records) after.assertChange(row.entity, row.before, row.value);
+  let result = existing;
+  const draftIds = [];
+  for (const op of operations) {
+    const batch = writeDraft(result, undefined, [op]);
+    result = batch.operations;
+    draftIds.push(batch.id);
+  }
+  return { operations: result, draftIds };
+}

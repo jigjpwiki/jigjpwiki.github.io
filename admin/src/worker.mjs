@@ -6,7 +6,7 @@ import { inspectDraftConflicts } from "./cms-conflicts.mjs";
 import { publicationPlan } from "./cms-publish.mjs";
 import { CmsJobs } from "./cms-jobs.mjs";
 import { installationReadToken, publishingEnabled } from "./github-app.mjs";
-import { prepareDraft, draftDetails, draftInput, draftGroups, writeDraft, draftConflict } from "./cms-draft.mjs";
+import { prepareDraft, draftDetails, draftInput, draftGroups, writeDraft, draftConflict, prepareBulkDrafts } from "./cms-draft.mjs";
 import { cmsPermissions } from "./cms-scope.mjs";
 import { createCmsReader } from "./cms-read.mjs";
 import { normalizeScope, scopedCatalog, normalizeMemberPolicy, contentCategories, hasAllContent } from "./cms-scope.mjs";
@@ -270,7 +270,7 @@ export class Admin {
         if (request.method === "POST") return json({ publication: await jobs.enqueue(session, await body(request, 4096)) }, 202);
       }
     }
-    const cmsRoutes = ["/api/cms/catalog", "/api/cms/detail", "/api/cms/draft", "/api/cms/draft/conflicts", "/api/cms/history", "/api/cms/publication/reapply", "/api/cms/publication/preview"];
+    const cmsRoutes = ["/api/cms/catalog", "/api/cms/detail", "/api/cms/draft", "/api/cms/draft/bulk", "/api/cms/draft/conflicts", "/api/cms/history", "/api/cms/publication/reapply", "/api/cms/publication/preview"];
     if (cmsRoutes.includes(url.pathname)) {
       await this.atomic(async () => {
         const key = "cms-rate:" + sid;
@@ -435,6 +435,20 @@ export class Admin {
             return json({ revision: result.revision });
           });
         }
+      }
+      if (url.pathname === "/api/cms/draft/bulk" && request.method === "PUT") {
+        if (member.role !== "editor" || !hasAllContent(member)) fail(403, "cms_scope_denied");
+        const input = await body(request, 4096);
+        const workspace = new WorkspaceStore(this.store, this.env.SESSION_KEY);
+        const previous = await workspace.get(session.id);
+        if (!Number.isInteger(input?.revision) || input.revision !== (previous?.revision ?? 0))
+          fail(409, "workspace_revision_conflict");
+        const batch = await prepareBulkDrafts(snapshot, member, input, previous?.operations || []);
+        return this.atomic(async () => {
+          await requireCurrentGrant();
+          const saved = await workspace.save(session.id, { protocol: 1, revision: input.revision, operations: batch.operations });
+          return json({ revision: saved.revision, draftIds: batch.draftIds });
+        });
       }
       if (url.pathname === "/api/cms/draft") {
         if (member.role !== "editor") fail(403, "cms_scope_denied");

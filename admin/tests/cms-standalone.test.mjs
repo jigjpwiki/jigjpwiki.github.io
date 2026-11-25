@@ -2,7 +2,7 @@ import test from "node:test";
 import assert from "node:assert/strict";
 import fixture from "../../tests/fixtures/admin-vnext-baseline.json" with { type: "json" };
 import { publicationPlan } from "../src/cms-publish.mjs";
-import { prepareDraft, draftDetails, draftInput } from "../src/cms-draft.mjs";
+import { prepareDraft, draftDetails, draftInput, prepareBulkDrafts } from "../src/cms-draft.mjs";
 
 const snapshot = { sha: "a".repeat(40), models: fixture };
 const member = { role: "editor", contentPolicy: "all-content-v1", directPublish: true };
@@ -76,4 +76,20 @@ test("existing related talent selections roundtrip without changing other fields
   assert.deepEqual(operations[0].value.date, original.date);
   assert.deepEqual(draftInput({ operations }).talentIds, input.talentIds);
   await assert.rejects(prepareDraft(snapshot, member, { ...input, talentIds: ["invalid"] }), /cms_invalid_input/);
+});
+
+test("bulk editing stages independent drafts atomically and protects existing operations", async () => {
+  const ids = fixture.talents.talents.slice(0, 2).map((row) => row.id);
+  const input = { sha: snapshot.sha, entity: "talent", ids, field: "activity", value: "hiatus" };
+  const result = await prepareBulkDrafts(snapshot, member, input);
+  assert.ok(result.draftIds.length > 0);
+  assert.equal(result.draftIds.length, result.operations.length);
+  for (const op of result.operations) {
+    assert.deepEqual(op.value, { ...op.before, activityStatus: { value: "hiatus" } });
+    assert.equal(draftInput({ operations: [op] }).activity, "hiatus");
+  }
+  await assert.rejects(prepareBulkDrafts(snapshot, member, input, result.operations), /cms_bulk_existing_draft/);
+  await assert.rejects(prepareBulkDrafts(snapshot, { ...member, role: "viewer" }, input), /cms_scope_denied/);
+  await assert.rejects(prepareBulkDrafts(snapshot, member, { ...input, field: "accounts" }), /cms_invalid_bulk/);
+  await assert.rejects(prepareBulkDrafts(snapshot, member, { ...input, ids: [ids[0], "tal-999999"] }), /cms_scope_denied/);
 });

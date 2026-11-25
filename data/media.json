@@ -781,6 +781,50 @@
       "durationSeconds": null,
       "availability": "public",
       "visibility": "public"
+    },
+    {
+      "youtubeId": "qwXwSe7KWwQ",
+      "channelId": "UC_cCW1xmXwRFp1tX-RD2X1Q",
+      "title": "【オリジナル曲】『ラブ・ラビリンス』/ RouteHeart 1st【公式MV】",
+      "publishedAt": "2023-07-19T12:00:10.000Z",
+      "startedAt": null,
+      "endedAt": null,
+      "durationSeconds": null,
+      "availability": "public",
+      "visibility": "public"
+    },
+    {
+      "youtubeId": "RbSMqgMijWg",
+      "channelId": "UC_cCW1xmXwRFp1tX-RD2X1Q",
+      "title": "【オリジナル曲】『トキメキ禁断症状』/ RouteHeart 2nd【公式MV】",
+      "publishedAt": "2024-03-09T13:00:08.000Z",
+      "startedAt": null,
+      "endedAt": null,
+      "durationSeconds": null,
+      "availability": "public",
+      "visibility": "public"
+    },
+    {
+      "youtubeId": "6H5kbqOsyMI",
+      "channelId": "UC_cCW1xmXwRFp1tX-RD2X1Q",
+      "title": "【オリジナル曲】あなたのせいだよ / RouteHeart 3rd Single【パレプロ / MV】",
+      "publishedAt": "2026-07-21T12:00:06.000Z",
+      "startedAt": null,
+      "endedAt": null,
+      "durationSeconds": null,
+      "availability": "public",
+      "visibility": "public"
+    },
+    {
+      "youtubeId": "C1idHbTqYuA",
+      "channelId": "UCay6Y3oEoiC6ZEE2G0UZu_A",
+      "title": "ミズイロノオト - 香鳴ハノン【1st Original Song / MV】",
+      "publishedAt": "2026-08-18T10:00:06.000Z",
+      "startedAt": null,
+      "endedAt": null,
+      "durationSeconds": null,
+      "availability": "public",
+      "visibility": "public"
     }
   ]
 }

@@ -1,0 +1,355 @@
+{
+  "version": 2,
+  "batchId": "U-e8YlCt62Ddyk4uxkSER9cC3nfreOlRMNt-S7gp6aU",
+  "actor": "900122208316251340881522085640042137117242",
+  "createdAt": "2026-11-25T16:41:38.011Z",
+  "baseCommit": "e3e398f1971466485b1dd74c7119f8180dbb6035",
+  "reason": null,
+  "submissionId": "U-e8YlCt62Ddyk4uxkSER9cC3nfreOlRMNt-S7gp6aU",
+  "branch": "admin/change-U-e8YlCt62Ddyk4uxkSER9cC3nfreOlRMNt-S7gp6aU",
+  "operations": [
+    {
+      "operationId": "cms-musicvideo-be3fc0649db945e892be5915",
+      "entity": "musicVideo",
+      "recordId": "mv-000054",
+      "action": "create",
+      "changedFields": [
+        "talentIds",
+        "visibility",
+        "youtubeId",
+        "type",
+        "songId",
+        "registeredAt",
+        "rawSongTitle",
+        "id"
+      ],
+      "before": null,
+      "after": {
+        "talentIds": [
+          "tal-000005",
+          "tal-000010"
+        ],
+        "visibility": "public",
+        "youtubeId": "qwXwSe7KWwQ",
+        "type": "original",
+        "songId": "song-000107",
+        "registeredAt": "2026-11-25T16:40:25.213Z",
+        "rawSongTitle": "ラブ・ラビリンス",
+        "id": "mv-000054"
+      }
+    },
+    {
+      "operationId": "cms-media-be3fc0649db945e892be5915",
+      "entity": "video",
+      "recordId": "qwXwSe7KWwQ",
+      "action": "create",
+      "changedFields": [
+        "youtubeId",
+        "channelId",
+        "title",
+        "publishedAt",
+        "startedAt",
+        "endedAt",
+        "durationSeconds",
+        "availability",
+        "visibility"
+      ],
+      "before": null,
+      "after": {
+        "youtubeId": "qwXwSe7KWwQ",
+        "channelId": "UC_cCW1xmXwRFp1tX-RD2X1Q",
+        "title": "【オリジナル曲】『ラブ・ラビリンス』/ RouteHeart 1st【公式MV】",
+        "publishedAt": "2023-07-19T12:00:10.000Z",
+        "startedAt": null,
+        "endedAt": null,
+        "durationSeconds": null,
+        "availability": "public",
+        "visibility": "public"
+      }
+    },
+    {
+      "operationId": "cms-new-song-be3fc0649db945e892be5915",
+      "entity": "song",
+      "recordId": "song-000107",
+      "action": "create",
+      "changedFields": [
+        "title",
+        "originalArtists",
+        "identityUrl",
+        "aliases",
+        "readings",
+        "visibility",
+        "id"
+      ],
+      "before": null,
+      "after": {
+        "title": "ラブ・ラビリンス",
+        "originalArtists": [
+          "RouteHeart (七海ロナ・藤宮コトハ)"
+        ],
+        "identityUrl": "https://www.youtube.com/watch?v=qwXwSe7KWwQ",
+        "aliases": [],
+        "readings": [],
+        "visibility": "public",
+        "id": "song-000107"
+      }
+    },
+    {
+      "operationId": "cms-musicvideo-e7829e1159ca460ebb3b2e92",
+      "entity": "musicVideo",
+      "recordId": "mv-000055",
+      "action": "create",
+      "changedFields": [
+        "talentIds",
+        "visibility",
+        "youtubeId",
+        "type",
+        "songId",
+        "registeredAt",
+        "rawSongTitle",
+        "id"
+      ],
+      "before": null,
+      "after": {
+        "talentIds": [
+          "tal-000005",
+          "tal-000010"
+        ],
+        "visibility": "public",
+        "youtubeId": "RbSMqgMijWg",
+        "type": "original",
+        "songId": "song-000108",
+        "registeredAt": "2026-11-25T16:40:38.450Z",
+        "rawSongTitle": "トキメキ禁断症状",
+        "id": "mv-000055"
+      }
+    },
+    {
+      "operationId": "cms-media-e7829e1159ca460ebb3b2e92",
+      "entity": "video",
+      "recordId": "RbSMqgMijWg",
+      "action": "create",
+      "changedFields": [
+        "youtubeId",
+        "channelId",
+        "title",
+        "publishedAt",
+        "startedAt",
+        "endedAt",
+        "durationSeconds",
+        "availability",
+        "visibility"
+      ],
+      "before": null,
+      "after": {
+        "youtubeId": "RbSMqgMijWg",
+        "channelId": "UC_cCW1xmXwRFp1tX-RD2X1Q",
+        "title": "【オリジナル曲】『トキメキ禁断症状』/ RouteHeart 2nd【公式MV】",
+        "publishedAt": "2024-03-09T13:00:08.000Z",
+        "startedAt": null,
+        "endedAt": null,
+        "durationSeconds": null,
+        "availability": "public",
+        "visibility": "public"
+      }
+    },
+    {
+      "operationId": "cms-new-song-e7829e1159ca460ebb3b2e92",
+      "entity": "song",
+      "recordId": "song-000108",
+      "action": "create",
+      "changedFields": [
+        "title",
+        "originalArtists",
+        "identityUrl",
+        "aliases",
+        "readings",
+        "visibility",
+        "id"
+      ],
+      "before": null,
+      "after": {
+        "title": "トキメキ禁断症状",
+        "originalArtists": [
+          "RouteHeart (七海ロナ・藤宮コトハ)"
+        ],
+        "identityUrl": "https://www.youtube.com/watch?v=RbSMqgMijWg",
+        "aliases": [],
+        "readings": [],
+        "visibility": "public",
+        "id": "song-000108"
+      }
+    },
+    {
+      "operationId": "cms-musicvideo-fdfe841b546747458a10abd6",
+      "entity": "musicVideo",
+      "recordId": "mv-000056",
+      "action": "create",
+      "changedFields": [
+        "talentIds",
+        "visibility",
+        "youtubeId",
+        "type",
+        "songId",
+        "registeredAt",
+        "rawSongTitle",
+        "id"
+      ],
+      "before": null,
+      "after": {
+        "talentIds": [
+          "tal-000005",
+          "tal-000010"
+        ],
+        "visibility": "public",
+        "youtubeId": "6H5kbqOsyMI",
+        "type": "original",
+        "songId": "song-000109",
+        "registeredAt": "2026-11-25T16:40:47.361Z",
+        "rawSongTitle": "あなたのせいだよ",
+        "id": "mv-000056"
+      }
+    },
+    {
+      "operationId": "cms-media-fdfe841b546747458a10abd6",
+      "entity": "video",
+      "recordId": "6H5kbqOsyMI",
+      "action": "create",
+      "changedFields": [
+        "youtubeId",
+        "channelId",
+        "title",
+        "publishedAt",
+        "startedAt",
+        "endedAt",
+        "durationSeconds",
+        "availability",
+        "visibility"
+      ],
+      "before": null,
+      "after": {
+        "youtubeId": "6H5kbqOsyMI",
+        "channelId": "UC_cCW1xmXwRFp1tX-RD2X1Q",
+        "title": "【オリジナル曲】あなたのせいだよ / RouteHeart 3rd Single【パレプロ / MV】",
+        "publishedAt": "2026-07-21T12:00:06.000Z",
+        "startedAt": null,
+        "endedAt": null,
+        "durationSeconds": null,
+        "availability": "public",
+        "visibility": "public"
+      }
+    },
+    {
+      "operationId": "cms-new-song-fdfe841b546747458a10abd6",
+      "entity": "song",
+      "recordId": "song-000109",
+      "action": "create",
+      "changedFields": [
+        "title",
+        "originalArtists",
+        "identityUrl",
+        "aliases",
+        "readings",
+        "visibility",
+        "id"
+      ],
+      "before": null,
+      "after": {
+        "title": "あなたのせいだよ",
+        "originalArtists": [
+          "RouteHeart (七海ロナ・藤宮コトハ)"
+        ],
+        "identityUrl": "https://www.youtube.com/watch?v=6H5kbqOsyMI",
+        "aliases": [],
+        "readings": [],
+        "visibility": "public",
+        "id": "song-000109"
+      }
+    },
+    {
+      "operationId": "cms-musicvideo-4667bf39b73344f085c832f1",
+      "entity": "musicVideo",
+      "recordId": "mv-000057",
+      "action": "create",
+      "changedFields": [
+        "talentIds",
+        "visibility",
+        "youtubeId",
+        "type",
+        "songId",
+        "registeredAt",
+        "rawSongTitle",
+        "id"
+      ],
+      "before": null,
+      "after": {
+        "talentIds": [
+          "tal-000011"
+        ],
+        "visibility": "public",
+        "youtubeId": "C1idHbTqYuA",
+        "type": "original",
+        "songId": "song-000110",
+        "registeredAt": "2026-11-25T16:41:27.890Z",
+        "rawSongTitle": "ミズイロノオト",
+        "id": "mv-000057"
+      }
+    },
+    {
+      "operationId": "cms-media-4667bf39b73344f085c832f1",
+      "entity": "video",
+      "recordId": "C1idHbTqYuA",
+      "action": "create",
+      "changedFields": [
+        "youtubeId",
+        "channelId",
+        "title",
+        "publishedAt",
+        "startedAt",
+        "endedAt",
+        "durationSeconds",
+        "availability",
+        "visibility"
+      ],
+      "before": null,
+      "after": {
+        "youtubeId": "C1idHbTqYuA",
+        "channelId": "UCay6Y3oEoiC6ZEE2G0UZu_A",
+        "title": "ミズイロノオト - 香鳴ハノン【1st Original Song / MV】",
+        "publishedAt": "2026-08-18T10:00:06.000Z",
+        "startedAt": null,
+        "endedAt": null,
+        "durationSeconds": null,
+        "availability": "public",
+        "visibility": "public"
+      }
+    },
+    {
+      "operationId": "cms-new-song-4667bf39b73344f085c832f1",
+      "entity": "song",
+      "recordId": "song-000110",
+      "action": "create",
+      "changedFields": [
+        "title",
+        "originalArtists",
+        "identityUrl",
+        "aliases",
+        "readings",
+        "visibility",
+        "id"
+      ],
+      "before": null,
+      "after": {
+        "title": "ミズイロノオト",
+        "originalArtists": [
+          "香鳴ハノン"
+        ],
+        "identityUrl": "https://www.youtube.com/watch?v=C1idHbTqYuA",
+        "aliases": [],
+        "readings": [],
+        "visibility": "public",
+        "id": "song-000110"
+      }
+    }
+  ]
+}

@@ -1333,6 +1333,50 @@
       "readings": [],
       "visibility": "public",
       "id": "song-000106"
+    },
+    {
+      "title": "ラブ・ラビリンス",
+      "originalArtists": [
+        "RouteHeart (七海ロナ・藤宮コトハ)"
+      ],
+      "identityUrl": "https://www.youtube.com/watch?v=qwXwSe7KWwQ",
+      "aliases": [],
+      "readings": [],
+      "visibility": "public",
+      "id": "song-000107"
+    },
+    {
+      "title": "トキメキ禁断症状",
+      "originalArtists": [
+        "RouteHeart (七海ロナ・藤宮コトハ)"
+      ],
+      "identityUrl": "https://www.youtube.com/watch?v=RbSMqgMijWg",
+      "aliases": [],
+      "readings": [],
+      "visibility": "public",
+      "id": "song-000108"
+    },
+    {
+      "title": "あなたのせいだよ",
+      "originalArtists": [
+        "RouteHeart (七海ロナ・藤宮コトハ)"
+      ],
+      "identityUrl": "https://www.youtube.com/watch?v=6H5kbqOsyMI",
+      "aliases": [],
+      "readings": [],
+      "visibility": "public",
+      "id": "song-000109"
+    },
+    {
+      "title": "ミズイロノオト",
+      "originalArtists": [
+        "香鳴ハノン"
+      ],
+      "identityUrl": "https://www.youtube.com/watch?v=C1idHbTqYuA",
+      "aliases": [],
+      "readings": [],
+      "visibility": "public",
+      "id": "song-000110"
     }
   ],
   "musicVideos": [
@@ -2039,6 +2083,57 @@
       "registeredAt": "2026-11-25T16:30:15.387Z",
       "rawSongTitle": "浮かれたってムテキ",
       "id": "mv-000053"
+    },
+    {
+      "talentIds": [
+        "tal-000005",
+        "tal-000010"
+      ],
+      "visibility": "public",
+      "youtubeId": "qwXwSe7KWwQ",
+      "type": "original",
+      "songId": "song-000107",
+      "registeredAt": "2026-11-25T16:40:25.213Z",
+      "rawSongTitle": "ラブ・ラビリンス",
+      "id": "mv-000054"
+    },
+    {
+      "talentIds": [
+        "tal-000005",
+        "tal-000010"
+      ],
+      "visibility": "public",
+      "youtubeId": "RbSMqgMijWg",
+      "type": "original",
+      "songId": "song-000108",
+      "registeredAt": "2026-11-25T16:40:38.450Z",
+      "rawSongTitle": "トキメキ禁断症状",
+      "id": "mv-000055"
+    },
+    {
+      "talentIds": [
+        "tal-000005",
+        "tal-000010"
+      ],
+      "visibility": "public",
+      "youtubeId": "6H5kbqOsyMI",
+      "type": "original",
+      "songId": "song-000109",
+      "registeredAt": "2026-11-25T16:40:47.361Z",
+      "rawSongTitle": "あなたのせいだよ",
+      "id": "mv-000056"
+    },
+    {
+      "talentIds": [
+        "tal-000011"
+      ],
+      "visibility": "public",
+      "youtubeId": "C1idHbTqYuA",
+      "type": "original",
+      "songId": "song-000110",
+      "registeredAt": "2026-11-25T16:41:27.890Z",
+      "rawSongTitle": "ミズイロノオト",
+      "id": "mv-000057"
     }
   ]
 }

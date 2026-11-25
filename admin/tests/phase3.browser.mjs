@@ -120,11 +120,10 @@ export async function phase3Browser({
     });
   }
   async function save(p) {
+    const route = await p.evaluate(() => location.hash);
     await p.getByRole("button", { name: "下書きを保存", exact: true }).click();
-    await p.locator("#identity").filter({ hasText: "管理者" }).waitFor();
-    await p.locator("nav details[data-owner-only]").evaluate((node) => { node.open = true; });
-    await p.locator('nav a[href="#workspace"]').click();
     await p.locator("[data-save-state][data-state=saved]").waitFor();
+    assert.equal(await p.evaluate(() => location.hash), route, "Saving must not change the active editing route");
   }
   async function shot(p, name, width) {
     await p.evaluate(() => window.scrollTo(0, 0));

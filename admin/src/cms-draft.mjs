@@ -20,6 +20,42 @@ const fields = {
   product: ["title", "image", "identityUrl"],
 };
 
+function applyVisibility(entity, value, input, member) {
+  if (input.visibility === undefined) return;
+  if (entity === "organization" || !["public", "draft"].includes(input.visibility)) fail(400, "cms_invalid_input");
+  if (input.visibility === (value.visibility ?? "public")) return;
+  if (!hasAllContent(member)) fail(403, "cms_scope_denied");
+  value.visibility = input.visibility;
+}
+
+function applyRelations(entity, value, input, member) {
+  const allowed = {
+    anniversary: ["talentIds", "groupIds"], product: ["talentIds", "groupIds"],
+    musicVideo: ["talentIds"], karaoke: ["talentIds"],
+    event: ["groupIds", "organizerIds", "relatedOrganizationIds"],
+  }[entity] || [];
+  for (const field of allowed) {
+    if (input[field] === undefined) continue;
+    const prefix = field === "talentIds" ? "tal" : field === "groupIds" ? "group" : "org";
+    if (!Array.isArray(input[field]) || input[field].length > 100 ||
+        input[field].some((id) => typeof id !== "string" || !new RegExp("^" + prefix + "-\\d{6}$").test(id)))
+      fail(400, "cms_invalid_input");
+    const ids = [...new Set(input[field])];
+    if (JSON.stringify(ids) === JSON.stringify(value[field] || [])) continue;
+    if (!hasAllContent(member)) fail(403, "cms_scope_denied");
+    value[field] = ids;
+    if (entity === "event") value.lineupComplete = false;
+  }
+}
+
+const relationFields = (entity, record) => Object.fromEntries(
+  ({
+    anniversary: ["talentIds", "groupIds"], product: ["talentIds", "groupIds"],
+    musicVideo: ["talentIds"], karaoke: ["talentIds"],
+    event: ["groupIds", "organizerIds", "relatedOrganizationIds"],
+  }[entity] || []).map((field) => [field, record[field] || []])
+);
+
 export async function prepareDraft(snapshot, member, input, lookup) {
   const { entity, id } = input;
   if (!Object.hasOwn(draftTypes, entity) || member.role !== "editor") fail(403, "cms_scope_denied");
@@ -41,6 +77,8 @@ export async function prepareDraft(snapshot, member, input, lookup) {
       const product = snapshot.models.goods.products.find((row) => row.id === input.productId);
       if (!access.canRead("product", product)) fail(403, "cms_scope_denied");
       assertExistingCampaign(snapshot.models, access, input.campaignId || null);
+      if (before && (before.productId !== input.productId || (before.campaignId || null) !== (input.campaignId || null)))
+        fail(409, "cms_shared_goods");
       value = { ...(before || { visibility: "public", startsAt: null, endsAt: null }),
         productId: input.productId, campaignId: input.campaignId || null,
         url: input.url, status: input.status || "unknown", periodNote: input.periodNote || null,
@@ -67,6 +105,7 @@ export async function prepareDraft(snapshot, member, input, lookup) {
         value[field] = input[field] === "" || input[field] == null ? null : Number(input[field]);
       }
     }
+    applyVisibility(entity, value, input, member);
     access.assertChange(entity, before, value);
     const operation = { key: "cms-" + entity.toLowerCase(), entity, ...(id ? { id } : {}),
       value, before, baseCommit: snapshot.sha };
@@ -84,6 +123,7 @@ export async function prepareDraft(snapshot, member, input, lookup) {
       fail(400, "cms_invalid_input");
     const value = before ? { ...before, title: input.title.trim() } :
       await videoForCms(snapshot.models, videoId, lookup);
+    applyVisibility(entity, value, input, member);
     if (before) assertVideoEdit(snapshot.models, access, before, value);
     access.assertChange("video", before, value);
     const operation = { key: "cms-media", entity, ...(id ? { id } : {}), value, before, baseCommit: snapshot.sha };
@@ -137,7 +177,8 @@ export async function prepareDraft(snapshot, member, input, lookup) {
       if (old) value.accounts[index] = account;
       else value.accounts.push(account);
     }
-    value.activityStatus = { value: input.activity };
+    value.activityStatus = { ...value.activityStatus, value: input.activity };
+    applyVisibility(entity, value, input, member);
     if (before && input.organization && input.organization !== talentFields(before).organization) {
       const current = value.affiliations.filter(({ status }) => status === "current");
       if (current.length !== 1) fail(403, "cms_scope_denied");
@@ -163,6 +204,8 @@ export async function prepareDraft(snapshot, member, input, lookup) {
   } : entity === "campaign" ? { visibility: "public" } : { talentIds: [input.talent], groupIds: [], visibility: "public",
     ...(entity === "anniversary" ? { recursYearly: true, countYears: false } : {}),
   }));
+  applyVisibility(entity, value, input, member);
+  applyRelations(entity, value, input, member);
   let setlist = [];
   const newTracks = [];
   if (entity === "karaoke") {
@@ -488,7 +531,8 @@ export function draftDetails(snapshot, member, entity, id) {
   if (!Object.hasOwn(draftTypes, entity)) fail(403, "cms_scope_denied");
   const record = recordAt(snapshot.models, { entity, id });
   if (!cmsPermissions(snapshot.models, member).canRead(entity, record)) fail(403, "cms_scope_denied");
-  const details = { ...Object.fromEntries(fields[entity].map((key) => [key, record[key] ?? ""])), ...standaloneFields(entity, record) };
+  const details = { ...Object.fromEntries(fields[entity].map((key) => [key, record[key] ?? ""])), ...standaloneFields(entity, record),
+    ...relationFields(entity, record), ...(entity !== "organization" ? { visibility: record.visibility ?? "public" } : {}) };
   if (entity === "karaoke") {
     const rows = snapshot.models.karaoke.performances.filter((row) => row.karaokeId === id);
     if (rows.some((row) => !cmsPermissions(snapshot.models, member).canRead("performance", row)))
@@ -527,6 +571,8 @@ export function draftInput(workspace) {
   if (!op || !Object.hasOwn(draftTypes, op.entity)) return null;
   return {
     entity: op.entity, id: op.id, sha: op.baseCommit, ...standaloneFields(op.entity, op.value),
+    ...relationFields(op.entity, op.value),
+    ...(op.entity !== "organization" ? { visibility: op.value.visibility ?? "public" } : {}),
     organization: op.value.relatedOrganizationIds?.[0],
     talent: op.value.talentIds?.[0],
     ...Object.fromEntries(fields[op.entity].map((key) => [key, op.value[key] ?? ""])),

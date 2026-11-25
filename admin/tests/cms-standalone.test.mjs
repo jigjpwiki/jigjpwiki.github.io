@@ -54,3 +54,26 @@ test("standalone sales and performances cannot point at unknown parents", async 
     entity: "performance", sha: snapshot.sha, karaokeId: "karaoke-999999", rawLabel: "歌唱",
   }), /cms_scope_denied/);
 });
+
+test("shared editor can change record visibility using the existing validated draft and publication path", async () => {
+  const entity = "anniversary", id = fixture.anniversaries.events[0].id;
+  const input = { entity, id, sha: snapshot.sha, ...draftDetails(snapshot, member, entity, id), visibility: "draft" };
+  const operations = await prepareDraft(snapshot, member, input);
+  assert.equal(operations[0].value.visibility, "draft");
+  assert.equal(draftInput({ operations }).visibility, "draft");
+  const { plan } = await publicationPlan(snapshot, { id: "visibility", owner: "8ebf4fde-85a4-4d34-9feb-d1ba5c4de026", createdAt: "2026-11-25T00:00:00Z", operations }, member);
+  assert.equal(plan.files.anniversaries.events.find((row) => row.id === id).visibility, "draft");
+  const scoped = { role: "editor", scope: { organizations: ["org-000001"], categories: ["anniversaries"] } };
+  await assert.rejects(prepareDraft(snapshot, scoped, input), /cms_scope_denied/);
+  await assert.rejects(prepareDraft(snapshot, member, { ...input, visibility: "private" }), /cms_invalid_input/);
+});
+test("existing related talent selections roundtrip without changing other fields", async () => {
+  const entity = "anniversary", id = fixture.anniversaries.events[0].id;
+  const original = fixture.anniversaries.events[0];
+  const input = { entity, id, sha: snapshot.sha, ...draftDetails(snapshot, member, entity, id), talentIds: [fixture.talents.talents[1].id] };
+  const operations = await prepareDraft(snapshot, member, input);
+  assert.deepEqual(operations[0].value.talentIds, input.talentIds);
+  assert.deepEqual(operations[0].value.date, original.date);
+  assert.deepEqual(draftInput({ operations }).talentIds, input.talentIds);
+  await assert.rejects(prepareDraft(snapshot, member, { ...input, talentIds: ["invalid"] }), /cms_invalid_input/);
+});

@@ -82,7 +82,7 @@ function renderSaveState() {
     ? localIssues(projectedModels(snapshot.models, workspace.operations))
     : [];
   checks.replaceChildren();
-  checks.hidden = !issues.length;
+  checks.hidden = bar.hidden || !issues.length;
   if (issues.length) {
     checks.className = "validation-message stack";
     checks.append(node("h3", "下書きに確認が必要です"));
@@ -328,7 +328,7 @@ export const node = (tag, text) => {
 function screen() {
   if (!me) return;
   for (const a of document.querySelectorAll("nav a")) {
-    if (a.hash === (location.hash || "#dashboard")) {
+    if (a.hash === (location.hash.split("?")[0] || "#dashboard")) {
       a.setAttribute("aria-current", "page");
       const group = a.closest("details");
       if (group && !group.hidden) group.open = true;
@@ -353,7 +353,7 @@ window.addEventListener("hashchange", async () => {
   const view = $("#view");
   if (!view) return;
   view.inert = false;
-  if ((activeEditor?.dirty || document.querySelector("[data-cms-dirty]")) && !mayLeave()) {
+  if ((activeEditor?.dirty || document.querySelector("[data-cms-dirty], [data-cms-saving]")) && !mayLeave()) {
     history.replaceState(null, "", acceptedHash || "#masters");
     return;
   }
@@ -383,7 +383,10 @@ window.addEventListener("hashchange", async () => {
   activeEditor = null;
   acceptedHash = location.hash;
   const workspaceBar = $("#workspace-bar");
-  if (workspaceBar) workspaceBar.hidden = usesCms(location.hash);
+  if (workspaceBar) {
+    workspaceBar.hidden = usesCms(location.hash);
+    renderSaveState();
+  }
   screen();
 });
 async function start() {
@@ -426,7 +429,7 @@ async function start() {
     };
     workspace = new Workspace(api, renderSaveState);
     setupWorkspaceBar();
-    $("#workspace-bar").hidden = location.hash === "#dashboard" || location.hash === "#cms" || location.hash.startsWith("#content/");
+    $("#workspace-bar").hidden = ["#dashboard", "#cms", "#drafts", "#publication", "#history", "#search"].includes(location.hash) || location.hash.startsWith("#content/");
     try {
       await workspace.load();
     } catch (e) {
@@ -1075,6 +1078,10 @@ async function digest(value) {
 }
 let activeEditor = null;
 function mayLeave() {
+  if (document.querySelector("[data-cms-saving]")) {
+    showStatus("下書きの保存処理中です。完了してから移動してください。");
+    return false;
+  }
   if (document.querySelector("[data-cms-dirty]"))
     return window.confirm("保存していない入力を破棄して移動しますか？");
   if (inlinePending()) {
@@ -1096,7 +1103,7 @@ function mayLeave() {
 window.addEventListener("beforeunload", (e) => {
   if (
     activeEditor?.pending ||
-    document.querySelector("[data-cms-dirty]") ||
+    document.querySelector("[data-cms-dirty], [data-cms-saving]") ||
     inlinePending() ||
     workspace?.dirty ||
     (activeEditor?.dirty && !workspace)
@@ -1783,14 +1790,15 @@ screen = function () {
       "#settings": "設定",
     }[route] || "管理";
   for (const a of document.querySelectorAll("nav a")) {
-    if (a.hash === (location.hash || "#dashboard")) {
+    if (a.hash === (location.hash.split("?")[0] || "#dashboard")) {
       a.setAttribute("aria-current", "page");
       const group = a.closest("details");
       if (group && !group.hidden) group.open = true;
     } else a.removeAttribute("aria-current");
   }
   const compatibility = { "#masters": "talent", "#anniversaries": "anniversary", "#events": "event", "#music": "song", "#goods": "product", "#organizations": "organization" };
-  const contentEntity = route.startsWith("#content/") ? route.slice(9) : me.provider === "google" ? compatibility[route] : null;
+  const contentEntity = route.startsWith("#content/") ? route.slice(9).split("?")[0] : me.provider === "google" ? compatibility[route] : null;
+  const recordId = route.startsWith("#content/") ? new URLSearchParams(route.split("?")[1] || "").get("record") : null;
   const cmsPages = { "#dashboard": "dashboard", "#cms": "dashboard", "#drafts": "drafts", "#publication": "publication", "#history": "history", "#search": "search", ...(me.provider === "google" ? { "#workspace": "drafts" } : {}) };
   if (me.simpleCms && (contentEntity || cmsPages[route])) {
     const pageNames = { dashboard: "ダッシュボード", drafts: "下書き", publication: "公開状況", history: "更新履歴", search: "全体検索" };
@@ -1809,7 +1817,7 @@ screen = function () {
       panel.append(review);
     }
     $("#view").replaceChildren(panel);
-    import("./simple-cms.js").then(({ mountSimpleCms }) => mountSimpleCms(panel, status, api, { entity: contentEntity, view: cmsPages[route] || "content" }))
+    import("./simple-cms.js").then(({ mountSimpleCms }) => mountSimpleCms(panel, status, api, { entity: contentEntity, recordId, view: cmsPages[route] || "content" }))
       .catch(() => {
         status.textContent = "コンテンツを取得できませんでした。";
         const retry = node("button", "再試行");
@@ -1918,7 +1926,7 @@ window.addEventListener("keydown", (e) => {
     else location.hash = "#search";
     return;
   }
-  if (e.key.toLowerCase() === "z" && workspace) {
+  if (e.key.toLowerCase() === "z" && workspace && !$("#workspace-bar")?.hidden && !document.querySelector("[data-cms-dirty], [data-cms-saving]")) {
     e.preventDefault();
     workspace.history(e.shiftKey ? "redo" : "undo");
     if (activeEditor?.refresh) activeEditor.refresh();

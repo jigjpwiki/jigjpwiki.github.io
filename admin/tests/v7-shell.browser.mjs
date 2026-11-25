@@ -26,9 +26,13 @@ test("all roles share the shell and separate collections while viewers have read
       else if (url.pathname === "/api/cms/catalog") data = {
         sha: "a".repeat(40), editable: role !== "viewer", owner: role === "owner",
         contentPolicy: "all-content-v1", publicationTracking: role !== "owner", publishable: role === "editor",
-        categories: ["talents", "anniversaries", "events", "music", "goods"], songs: [], organizations: [], people: [],
-        sections: collection.map(([entity, label]) => ({ entity, label, items: [{ id: entity + "-001", title: label + "の試験レコード" }] })),
+        categories: ["talents", "organizations", "anniversaries", "events", "music", "goods"], songs: [], organizations: [], people: [],
+        sections: collection.map(([entity, label]) => ({ entity, label, items: [
+          { id: entity + "-001", title: label + "の試験レコード", context: "確認用関連情報", state: "active", visibility: "public" },
+          { id: entity + "-002", title: label + "の別レコード", context: "別の関連情報", state: "hiatus", visibility: "draft" },
+        ] })),
       };
+      else if (url.pathname === "/api/cms/detail") data = { sha: "a".repeat(40), fields: { displayName: "VTuberの試験レコード", activity: "active" } };
       else if (url.pathname === "/api/cms/draft") data = { revision: 0, drafts: [] };
       else if (url.pathname === "/api/cms/publication") data = { publication: null };
       else if (url.pathname === "/api/workspace") data = { workspace: { revision: 0, operations: [] } };
@@ -61,6 +65,7 @@ test("all roles share the shell and separate collections while viewers have read
       await page.goto(base);
       await page.locator("#view h2").getByText("ダッシュボード", { exact: true }).waitFor();
       assert.equal(await page.locator("nav[aria-label='管理ナビゲーション']").count(), 1);
+      assert.ok(await page.locator(".cms-navigation a svg[aria-hidden=true]").count() >= 18);
       assert.equal(await page.locator("[data-owner-only]").isVisible(), role === "owner");
       for (const [entity, label] of collection) {
         await page.goto(base + "/#content/" + entity);
@@ -68,12 +73,38 @@ test("all roles share the shell and separate collections while viewers have read
         assert.equal(await page.locator("#view h2").textContent(), label);
         assert.equal(await page.locator("#view table").count(), 1);
         await page.getByText(label + "の試験レコード", { exact: true }).waitFor();
+        if (entity === "talent") {
+          const table = page.locator("#view table");
+          const search = page.getByRole("searchbox", { name: "名称を検索" });
+          await search.fill("talent-002");
+          assert.equal(await table.locator("tbody tr").count(), 1);
+          await table.getByText(label + "の別レコード", { exact: true }).waitFor();
+          await search.fill("");
+          await page.getByLabel("公開状態で絞り込む").selectOption("public");
+          assert.equal(await table.locator("tbody tr").count(), 1);
+          await page.getByLabel("公開状態で絞り込む").selectOption("");
+          await page.locator(".cms-columns summary").click();
+          await page.locator(".cms-columns").getByLabel("固定ID", { exact: true }).uncheck();
+          assert.equal(await table.locator("th[data-column=id]").count(), 0);
+          await page.locator(".cms-columns").getByLabel("固定ID", { exact: true }).check();
+          await page.locator(".cms-columns summary").click();
+          await table.getByRole("button", { name: label + "の試験レコード", exact: true }).click();
+          await page.getByLabel("表示名", { exact: true }).waitFor();
+          assert.equal(await page.getByLabel("表示名", { exact: true }).isEnabled(), role !== "viewer");
+          await page.getByRole("button", { name: "閉じる", exact: true }).click();
+          assert.equal(await page.locator(".cms-editor").isVisible(), false);
+        }
+        assert.equal(await page.evaluate(() => document.documentElement.scrollWidth > innerWidth), false);
         if (process.env.ADMIN_V7_SCREENSHOTS && ["talent", "campaign"].includes(entity)) {
           await mkdir(process.env.ADMIN_V7_SCREENSHOTS, { recursive: true });
           await page.screenshot({ path: path.join(process.env.ADMIN_V7_SCREENSHOTS, `${role}-${entity}.png`), fullPage: true });
         }
         if (role === "viewer") assert.equal(await page.locator("#view").getByRole("button", { name: /新規登録|下書きを保存|公開/ }).count(), 0);
       }
+      await page.locator("#page-title").click();
+      await page.keyboard.press(process.platform === "darwin" ? "Meta+k" : "Control+k");
+      await page.waitForURL("**/#search");
+      await page.getByRole("searchbox", { name: "名称を検索" }).waitFor();
       await page.goto(base + "/#drafts");
       await page.locator("#view h2").getByText("下書き", { exact: true }).waitFor();
       await page.goto(base + "/#history");

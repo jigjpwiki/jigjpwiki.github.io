@@ -1,6 +1,20 @@
 import assert from "node:assert/strict";
 import fs from "node:fs";
 import path from "node:path";
+const advancedRoutes = { "VTuber": "#masters", "事務所・グループ": "#organizations", "記念日": "#anniversaries", "音楽": "#music", "イベント": "#events", "グッズ": "#goods", "変更内容": "#workspace", "提出済みPR": "#submitted", "設定": "#settings", "ダッシュボード": "#dashboard" };
+async function advancedNav(p, name) {
+  const route = advancedRoutes[name];
+  const details = p.locator("nav details[data-owner-only]");
+  if (route !== "#dashboard" && await details.count())
+    await details.evaluate((node) => { node.open = true; });
+  await p.locator('nav a[href="' + route + '"]').first().click();
+}
+async function enterAdvanced(p) {
+  await p.locator("#identity").waitFor();
+  if (await p.locator("nav details[data-owner-only]").count()) await advancedNav(p, "変更内容");
+  await p.locator("[data-save-state][data-state=saved]").waitFor();
+}
+
 export async function vnext5Browser({
   browser,
   base,
@@ -48,11 +62,11 @@ export async function vnext5Browser({
     await p
       .getByRole("link", { name: "GitHubでログイン", exact: true })
       .click();
-    await p.locator("[data-save-state][data-state=saved]").waitFor();
+    await enterAdvanced(p);
     return { p, c, errors };
   }
   const nav = async (p, n) => {
-    await p.getByRole("link", { name: n, exact: true }).first().click();
+    await advancedNav(p, n);
     const type = {
       VTuber: "talent",
       "事務所・グループ": "organization",
@@ -121,7 +135,7 @@ export async function vnext5Browser({
     for (const w of [390, 1440]) {
       const { p, c } = await session(w);
       for (const name of ["VTuber", "記念日", "グッズ"]) {
-        await p.getByRole("link", { name, exact: true }).first().click();
+        await advancedNav(p, name);
         await p.locator(".list-region .data-table").first().waitFor();
         await shot(p, name, w, "light");
       }
@@ -134,7 +148,7 @@ export async function vnext5Browser({
       document.addEventListener("click", () => window.baselineClick()),
     );
     const started = performance.now();
-    await p.getByRole("link", { name: "VTuber", exact: true }).first().click();
+    await advancedNav(p, "VTuber");
     const table = p.locator(".list-region .data-table");
     await table.waitFor();
     for (let i = 0; i < 10; i++)
@@ -168,10 +182,7 @@ export async function vnext5Browser({
         document.addEventListener("click", () => window.oldFlowClick()),
       );
       const start = performance.now();
-      await p
-        .getByRole("link", { name: "VTuber", exact: true })
-        .first()
-        .click();
+      await advancedNav(p, "VTuber");
       const table = p.locator(".list-region .data-table");
       await table.waitFor();
       if (purpose === "hide") {
@@ -219,10 +230,7 @@ export async function vnext5Browser({
       await p.locator("[data-save-state][data-state=saved]").waitFor();
       await p.reload();
       await p.locator("[data-save-state][data-state=saved]").waitFor();
-      await p
-        .getByRole("link", { name: "変更内容", exact: true })
-        .first()
-        .click();
+      await advancedNav(p, "変更内容");
       const response = p.waitForResponse((r) =>
         r.url().endsWith("/api/submissions/preview"),
       );

@@ -453,8 +453,7 @@ export async function phase3Browser({
     await save(p);
     await p.reload();
     await p.locator("#identity").filter({ hasText: "管理者" }).waitFor();
-    await p.locator("nav details[data-owner-only]").evaluate((node) => { node.open = true; });
-    await p.locator('nav a[href="#workspace"]').click();
+    await p.waitForURL("**/#anniversaries");
     await p.locator("[data-save-state][data-state=saved]").waitFor();
     await p.getByRole("button",{name:"一括編集",exact:true}).click();
     await p.locator(".changed-cell").first().waitFor();

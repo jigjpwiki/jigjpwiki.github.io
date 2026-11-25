@@ -216,6 +216,9 @@ export async function submissionBrowser({
   const p = await context.newPage();
   await p.goto(base);
   await p.getByRole("link", { name: "GitHubでログイン", exact: true }).click();
+  await p.locator("#identity").filter({ hasText: "管理者" }).waitFor();
+  await p.locator("nav details[data-owner-only]").evaluate((node) => { node.open = true; });
+  await p.locator('nav a[href="#workspace"]').click();
   await p.locator('[data-save-state][data-state="saved"]').waitFor();
   const r = structuredClone(models.talents.talents[0]),
     value = { ...r, displayName: r.displayName + " ours" };

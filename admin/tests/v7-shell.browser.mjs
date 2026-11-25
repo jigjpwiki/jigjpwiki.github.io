@@ -34,7 +34,7 @@ test("all roles share the shell and separate collections while viewers have read
         categories: ["talents", "organizations", "anniversaries", "events", "music", "goods"], songs: [
           ...(latestSong ? [{ id: "song-000066", name: "新規登録した曲", search: "新曲別名", visibility: "public" }] : []),
           ...Array.from({ length: 65 }, (_, i) => ({ id: "song-" + String(65 - i).padStart(6, "0"), name: "試験楽曲" + (65 - i), visibility: "public" })),
-        ], people: [],
+        ], people: Array.from({ length: 85 }, (_, i) => ({ id: "tal-" + String(i + 1).padStart(6, "0"), name: "試験ライバー" + (i + 1) })),
         organizations: Array.from({ length: 65 }, (_, i) => ({ id: "org-" + String(i + 1).padStart(6, "0"), name: "試験事務所" + (i + 1) })),
         sections: collection.map(([entity, label]) => ({ entity, label, items: [
           { id: entity + "-001", title: label + "の試験レコード", context: "確認用関連情報", state: "active", visibility: "public" },
@@ -141,15 +141,32 @@ test("all roles share the shell and separate collections while viewers have read
           if (role === "editor") {
             await page.getByRole("button", { name: "所属を追加", exact: true }).click();
             const added = page.locator(".cms-affiliation-editor fieldset").last();
-            assert.ok(await added.locator("select").first().locator("option").count() <= 51);
-            await added.getByRole("searchbox").fill("試験事務所65");
-            await added.locator("select").first().selectOption("org-000065");
-            assert.equal(await added.locator("select").first().inputValue(), "org-000065");
+            const org = added.getByRole("combobox", { name: "事務所", exact: true });
+            await org.fill("試験事務所65");
+            await added.getByRole("option", { name: /試験事務所65/ }).click();
+            assert.equal(await added.locator("select[data-relation-value]").inputValue(), "org-000065");
             await added.getByRole("button", { name: "追加した所属を削除", exact: true }).click();
           }
           if (process.env.ADMIN_V7_SCREENSHOTS) {
             await mkdir(process.env.ADMIN_V7_SCREENSHOTS, { recursive: true });
             await page.screenshot({ path: path.join(process.env.ADMIN_V7_SCREENSHOTS, role + "-editor.png"), fullPage: true });
+          }
+          if (role === "owner") {
+            await page.setViewportSize({ width: 1440, height: 540 });
+            const layout = await page.locator(".cms-form-scroll").evaluate(node => {
+              const footer = document.querySelector(".cms-editor-footer");
+              const before = footer.getBoundingClientRect();
+              const outer = document.scrollingElement.scrollTop;
+              node.scrollTop = node.scrollHeight;
+              const after = footer.getBoundingClientRect();
+              return { scroll: node.scrollTop, remaining: node.scrollHeight - node.clientHeight - node.scrollTop,
+                bottom: after.bottom, height: innerHeight, fixed: Math.abs(before.top - after.top) < 1,
+                outerUnchanged: outer === document.scrollingElement.scrollTop,
+                docHeight: document.scrollingElement.scrollHeight };
+            });
+            assert.ok(layout.scroll > 0, JSON.stringify(layout));
+            assert.ok(layout.remaining < 2 && layout.bottom <= layout.height && layout.fixed && layout.outerUnchanged && layout.docHeight <= layout.height + 1, JSON.stringify(layout));
+            await page.setViewportSize({ width: 1440, height: 900 });
           }
           if (role === "editor") page.once("dialog", (dialog) => dialog.accept());
           await page.getByRole("button", { name: "閉じる", exact: true }).click();
@@ -185,28 +202,84 @@ test("all roles share the shell and separate collections while viewers have read
       await page.getByRole("searchbox", { name: "名称を検索" }).waitFor();
       await page.goto(base + "/#drafts");
       await page.locator("#view h2").getByText("下書き", { exact: true }).waitFor();
+      if (role === "editor") {
+        const drafts = Array.from({length:15}, (_,i) => ({
+          draftId:"draft-"+i, input:{entity:"event",title:"公開候補"+i},
+          ...(i===13 ? {conflict:true} : i===14 ? {reapplyJobId:"old-job"} : {}),
+        }));
+        await page.route("**/api/cms/draft", route => route.fulfill({json:{revision:1,drafts}}));
+        await page.reload();
+        const selectAll = page.getByRole("checkbox", {name:"公開可能な下書きを全選択"});
+        await selectAll.check();
+        const draftChecks = page.locator(".cms-draft-row input[type=checkbox]");
+        assert.equal(await draftChecks.count(), 13);
+        assert.equal(await page.locator(".cms-draft-row input:checked").count(), 13);
+        const preview = page.getByRole("button", {name:"選択した下書きを確認",exact:true});
+        assert.equal(await preview.isEnabled(), false);
+        await page.getByRole("button", {name:"先頭12件を選択",exact:true}).click();
+        assert.equal(await page.locator(".cms-draft-row input:checked").count(), 12);
+        assert.equal(await selectAll.evaluate(node=>node.indeterminate), true);
+        let reviewed;
+        await page.route("**/api/cms/publication/preview", route => {
+          reviewed = route.request().postDataJSON();
+          return route.fulfill({json:{records:[{name:"試験",changes:[]}],review:"test-review"}});
+        });
+        await preview.click();
+        await page.getByRole("checkbox", {name:"変更内容を確認しました"}).waitFor();
+        assert.deepEqual(reviewed.draftIds, drafts.slice(0,12).map(row=>row.draftId));
+        await draftChecks.first().uncheck();
+        assert.equal(await page.getByRole("button", {name:"確認した変更を公開"}).count(),0);
+        await selectAll.click();
+        assert.equal(await page.locator(".cms-draft-row input:checked").count(),13);
+        await selectAll.uncheck();
+        assert.equal(await page.locator(".cms-draft-row input:checked").count(),0);
+        await page.unroute("**/api/cms/draft");
+        await page.unroute("**/api/cms/publication/preview");
+      }
       await page.goto(base + "/#history");
       await page.locator("#view h2").getByText("更新履歴", { exact: true }).waitFor();
       await page.getByRole("button", { name: "履歴を読み込む", exact: true }).click();
       await page.getByText("このページに表示できる編集履歴はありません。", { exact: true }).waitFor();
       if (role === "editor") {
+        await page.goto(base + "/#content/event");
+        await page.getByRole("button", {name:"イベントを新規登録",exact:true}).click();
+        const performers = page.getByRole("combobox", {name:"出演者",exact:true});
+        await performers.fill("試験ライバー85");
+        await page.getByRole("option", {name:/試験ライバー85/}).click();
+        await performers.fill("試験ライバー84");
+        await page.getByRole("option", {name:/試験ライバー84/}).click();
+        assert.equal(await page.getByRole("button", {name:"試験ライバー85の選択を解除"}).count(),1);
+        await page.getByRole("button", {name:"試験ライバー84の選択を解除"}).click();
+        assert.equal(await page.getByRole("button", {name:"試験ライバー84の選択を解除"}).count(),0);
+        page.once("dialog", dialog=>dialog.accept());
+        await page.getByRole("button", {name:"閉じる",exact:true}).click();
         await page.goto(base + "/#content/musicVideo");
         await page.getByRole("button", { name: "歌動画を新規登録", exact: true }).click();
         const song = page.getByRole("combobox", { name: "既存の楽曲", exact: true });
         await song.waitFor();
-        assert.equal(await song.locator("option").count(), 51);
-        await page.getByRole("button", { name: "楽曲候補の次のページ", exact: true }).click();
-        await song.selectOption("song-000001");
-        await page.getByRole("searchbox", { name: "曲名・原曲アーティストを検索", exact: true }).fill("試験楽曲65");
-        assert.equal(await song.inputValue(), "song-000001");
+        await song.click();
+        assert.equal(await page.getByRole("listbox", { name: "既存の楽曲の候補" }).getByRole("option").count(), 40);
+        await song.fill("song-000001");
+        await page.getByRole("option", { name: /song-000001/ }).click();
+        await song.fill("試験楽曲65");
+        assert.equal(await page.locator("select[data-relation-value]").filter({ has: page.locator('option[value="song-000001"]') }).inputValue(), "song-000001");
+        assert.equal(await page.getByRole("button", { name: "試験楽曲1の選択を解除" }).count(), 1);
+        await song.press("Escape");
+        assert.equal(await song.getAttribute("aria-expanded"), "false");
         const rawTitle = page.getByLabel("動画に記載された曲名", { exact: true });
         await rawTitle.fill("入力保持テスト");
         latestSong = true;
         await page.getByRole("button", { name: "最新の楽曲候補を取得", exact: true }).click();
         await page.getByText("最新の楽曲候補に更新しました。", { exact: true }).waitFor();
         assert.equal(await rawTitle.inputValue(), "入力保持テスト");
-        await page.getByRole("searchbox", { name: "曲名・原曲アーティストを検索", exact: true }).fill("新曲別名");
-        await song.selectOption("song-000066");
+        await song.fill("新曲別名");
+        await song.press("ArrowDown");
+        await song.press("Enter");
+        assert.equal(await page.getByRole("button", { name: "新規登録した曲の選択を解除" }).count(), 1);
+        const person = page.getByRole("combobox", { name: "関連する人物", exact: true });
+        await person.fill("試験ライバー85");
+        await page.getByRole("option", { name: /試験ライバー85/ }).click();
+        assert.equal(await page.getByRole("button", { name: "試験ライバー85の選択を解除" }).count(), 1);
         assert.ok(freshReads > 0);
         page.once("dialog", (dialog) => dialog.accept());
         await page.getByRole("button", { name: "閉じる", exact: true }).click();

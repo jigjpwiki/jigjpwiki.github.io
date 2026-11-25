@@ -55,7 +55,201 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
   const catalog = await api("/api/cms/catalog" + (musicView ? "?fresh=1" : ""));
   const sections = selectedEntity ? catalog.sections.filter(({ entity }) => entity === selectedEntity) : catalog.sections;
   const browsing = ["legacy", "content", "search"].includes(view);
+  let pickerSequence = 0;
+  const relationEntries = (rows) => (rows || []).map((row) => ({
+    ...row, name: row.name || row.title || row.id,
+    needle: [row.name || row.title, row.id, row.context, row.search].filter(Boolean).join(" ").normalize("NFKC").toLocaleLowerCase("ja"),
+  }));
+  function relationPicker({ choices, selected, label, multiple = false, onChange, disabled = () => false, empty = "選択してください" }) {
+    const group = el("div");
+    group.className = "cms-picker cms-relation-combobox";
+    const chips = el("div");
+    chips.className = "cms-picker-chips";
+    const search = el("input");
+    search.type = "search";
+    search.placeholder = "名前・別名・IDで検索";
+    search.setAttribute("role", "combobox");
+    search.setAttribute("aria-label", label);
+    search.setAttribute("aria-autocomplete", "list");
+    search.setAttribute("aria-expanded", "false");
+    search.autocomplete = "off";
+    const popup = el("div"), list = el("div"), summary = el("small");
+    popup.className = "cms-picker-popup";
+    popup.hidden = true;
+    list.className = "cms-picker-listbox";
+    list.id = "cms-relation-options-" + (++pickerSequence);
+    list.setAttribute("role", "listbox");
+    list.setAttribute("aria-label", label + "の候補");
+    search.setAttribute("aria-controls", list.id);
+    summary.className = "cms-picker-count";
+    summary.setAttribute("aria-live", "polite");
+    let entries = relationEntries(choices), lookup = new Map(entries.map(row => [row.id, row]));
+    let matching = [], active = -1, rendered = 0;
+    const chunk = 40;
+    const isDisabled = () => !catalog.editable || disabled();
+    const labelFor = (id) => lookup.get(id)?.name || id + "（現在の参照）";
+    function syncChips() {
+      chips.replaceChildren(...[...selected].map(id => {
+        const chip = el("span", labelFor(id));
+        chip.className = "cms-picker-chip";
+        const remove = button("×", () => {
+          if (isDisabled()) return;
+          selected.delete(id); changed(); search.focus();
+        });
+        remove.setAttribute("aria-label", labelFor(id) + "の選択を解除");
+        remove.dataset.pickerNavigation = "";
+        remove.disabled = isDisabled();
+        chip.append(remove);
+        return chip;
+      }));
+      chips.hidden = !selected.size;
+      search.placeholder = selected.size ? multiple ? "さらに追加する" : "別の候補を検索" : label === "曲名・原曲アーティスト" ? "曲名・原曲アーティスト・別名で検索" : "名前・別名・IDで検索";
+      search.disabled = isDisabled();
+    }
+    function close() {
+      popup.hidden = true; search.setAttribute("aria-expanded", "false");
+      search.removeAttribute("aria-activedescendant");
+      active = -1;
+    }
+    function choose(id) {
+      if (isDisabled() || !lookup.has(id)) return;
+      if (!multiple) selected.clear();
+      selected.add(id);
+      search.value = "";
+      changed();
+      search.focus({ preventScroll: true });
+      close();
+    }
+    function changed() {
+      syncChips();
+      onChange([...selected]);
+      if (!popup.hidden) refresh();
+    }
+    function appendChunk() {
+      const end = Math.min(rendered + chunk, matching.length);
+      for (; rendered < end; rendered++) {
+        const row = matching[rendered];
+        const item = button("", () => choose(row.id));
+        item.type = "button";
+        item.id = list.id + "-" + rendered;
+        item.className = "cms-picker-option";
+        item.setAttribute("role", "option");
+        item.setAttribute("aria-selected", "false");
+        item.dataset.pickerNavigation = "";
+        item.tabIndex = -1;
+        item.append(el("span", row.name + (row.visibility === "draft" ? "（非公開）" : "")));
+        if (row.context) item.append(el("small", row.context));
+        item.append(el("small", row.id));
+        item.addEventListener("mousedown", event => event.preventDefault());
+        list.append(item);
+      }
+      more.hidden = rendered >= matching.length;
+      summary.textContent = matching.length + "件の候補・" + selected.size + "件選択中" +
+        (rendered < matching.length ? "（スクロールで続きを表示）" : "");
+    }
+    const more = button("さらに候補を表示", () => { appendChunk(); search.focus({ preventScroll: true }); });
+    more.dataset.pickerNavigation = "";
+    more.addEventListener("mousedown", event => event.preventDefault());
+    function refresh() {
+      const query = search.value.trim().normalize("NFKC").toLocaleLowerCase("ja");
+      matching = entries.filter(row => !selected.has(row.id) && query.split(/\s+/).every(word => row.needle.includes(word)));
+      active = -1; rendered = 0;
+      search.removeAttribute("aria-activedescendant");
+      list.replaceChildren(); list.scrollTop = 0;
+      appendChunk();
+      if (!matching.length) list.append(el("p", "一致する候補がありません"));
+    }
+    function open() {
+      if (isDisabled()) return;
+      if (popup.hidden) {
+        popup.hidden = false; search.setAttribute("aria-expanded", "true"); refresh();
+      }
+    }
+    function move(delta) {
+      open();
+      if (!matching.length) return;
+      active = Math.max(0, Math.min(matching.length - 1, active + delta));
+      while (active >= rendered) appendChunk();
+      const item = list.children[active];
+      for (const node of list.querySelectorAll("[data-active]")) delete node.dataset.active;
+      item.dataset.active = "true";
+      search.setAttribute("aria-activedescendant", item.id);
+      item.scrollIntoView({ block: "nearest" });
+    }
+    list.addEventListener("scroll", () => {
+      if (!popup.hidden && rendered < matching.length && list.scrollTop + list.clientHeight >= list.scrollHeight - 48) appendChunk();
+    });
+    search.addEventListener("focus", open);
+    search.addEventListener("click", open);
+    search.addEventListener("input", () => { open(); refresh(); });
+    search.addEventListener("keydown", event => {
+      if (event.isComposing || isDisabled()) return;
+      if (event.key === "ArrowDown" || event.key === "ArrowUp") {
+        event.preventDefault(); move(event.key === "ArrowDown" ? 1 : -1);
+      } else if (event.key === "Enter" && !popup.hidden) {
+        event.preventDefault();
+        if (active >= 0) choose(matching[active].id);
+      } else if (event.key === "Escape" && !popup.hidden) {
+        event.preventDefault(); event.stopPropagation(); close();
+      }
+    });
+    group.addEventListener("focusout", event => {
+      if (!group.contains(event.relatedTarget)) close();
+    });
+    popup.append(summary, list, more);
+    group.append(chips, search, popup);
+    group.refreshChoices = rows => {
+      entries = relationEntries(rows); lookup = new Map(entries.map(row => [row.id, row]));
+      syncChips(); if (!popup.hidden) refresh();
+    };
+    group.syncDisabled = syncChips;
+    syncChips();
+    return group;
+  }
+  function pickerField(label, control) {
+    const wrapper = el(control.cmsPicker ? "div" : "label", label);
+    if (control.cmsPicker) {
+      wrapper.className = "cms-picker-field";
+      const caption = el("span", label);
+      caption.className = "cms-picker-label";
+      const search = control.cmsPicker.querySelector("input");
+      search.setAttribute("aria-label", label);
+      search.setAttribute("aria-required", String(control.required));
+      control.cmsPicker.querySelector("[role=listbox]").setAttribute("aria-label", label + "の候補");
+      control.cmsPicker.syncDisabled();
+      wrapper.replaceChildren(caption, control.cmsPicker, control);
+    } else wrapper.append(control);
+    return wrapper;
+  }
   function bindPicker(select, choices, selected, label, empty = "選択してください", paged = false) {
+    if (view !== "legacy") {
+      const chosen = new Set(selected ? [selected] : []);
+      const updateValue = (ids) => {
+        select.replaceChildren(new Option(empty, ""), ...ids.map(id => new Option(id, id)));
+        select.value = ids[0] || "";
+      };
+      updateValue([...chosen]);
+      select.hidden = true;
+      select.dataset.relationValue = "";
+      const group = relationPicker({ choices, selected: chosen, label, empty,
+        disabled: () => select.disabled,
+        onChange: ids => {
+          updateValue(ids);
+          select.dispatchEvent(new Event("change", { bubbles: true }));
+        },
+      });
+      if (paged) group.classList.add("cms-song-picker");
+      select.cmsPicker = group;
+      select.addEventListener("invalid", event => {
+        event.preventDefault();
+        const search = group.querySelector("input");
+        search.focus();
+        search.setCustomValidity("候補から選択してください。");
+        search.reportValidity();
+        search.setCustomValidity("");
+      });
+      return group;
+    }
     const search = el("input");
     search.type = "search";
     search.placeholder = paged ? "曲名・原曲アーティスト・別名・ID" : "名前・IDで検索";
@@ -113,6 +307,7 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
   draftsArea.className = "cms-drafts-area stack";
   const workspaceArea = el("div");
   workspaceArea.className = "cms-collection-workspace";
+  if (view !== "legacy") panel.dataset.cmsLayout = browsing ? "collection" : "page";
   if (browsing && view !== "legacy") {
     panel.append(draftsArea, workspaceArea);
     workspaceArea.append(list, formArea);
@@ -273,6 +468,7 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
     const eligible = new Set(saved.drafts.filter(({ conflict, reapplyJobId }) => !conflict && !reapplyJobId).map(({ draftId }) => draftId));
     for (const draftId of selectedDrafts) if (!eligible.has(draftId)) selectedDrafts.delete(draftId);
     let updateSelection = () => {};
+    const selectionChecks = new Map();
     if (catalog.publishable) {
       const reviewArea = el("section");
       reviewArea.className = "stack cms-review-area";
@@ -340,15 +536,36 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
         }
       });
       publish.className = "primary";
+      const all = el("input");
+      all.type = "checkbox";
+      all.setAttribute("aria-label", "公開可能な下書きを全選択");
+      const allLabel = el("label", "全選択");
+      allLabel.prepend(all);
+      const firstBatch = button("先頭12件を選択", () => {
+        selectedDrafts.clear();
+        for (const id of [...eligible].slice(0, 12)) selectedDrafts.add(id);
+        updateSelection();
+      });
+      all.onchange = () => {
+        selectedDrafts.clear();
+        if (all.checked) for (const id of eligible) selectedDrafts.add(id);
+        updateSelection();
+      };
       updateSelection = () => {
-        selection.textContent = selectedDrafts.size + "件選択中（最大12件）";
+        selection.textContent = selectedDrafts.size + " / " + eligible.size + "件選択中（1回最大12件）" +
+          (selectedDrafts.size > 12 ? "・12件以下に絞ってから確認してください。" : "");
+        all.checked = eligible.size > 0 && selectedDrafts.size === eligible.size;
+        all.indeterminate = selectedDrafts.size > 0 && selectedDrafts.size < eligible.size;
+        all.disabled = !eligible.size;
+        firstBatch.hidden = eligible.size <= 12 || selectedDrafts.size <= 12;
+        for (const [id, checkbox] of selectionChecks) checkbox.checked = selectedDrafts.has(id);
         publish.disabled = selectedDrafts.size === 0 || selectedDrafts.size > 12;
         reviewArea.replaceChildren();
       };
       updateSelection();
       const controls = el("div");
       controls.className = "cms-draft-controls";
-      controls.append(selection, publish);
+      controls.append(allLabel, selection, firstBatch, publish);
       draftsArea.append(el("p", "公開する下書きを選んでください。"), controls, reviewArea);
     }
     if (!saved.drafts.length) draftsArea.append(el("p", "保存済みの下書きはありません。"));
@@ -359,6 +576,7 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
         const checkbox = el("input");
         checkbox.type = "checkbox";
         checkbox.checked = selectedDrafts.has(draftId);
+        selectionChecks.set(draftId, checkbox);
         checkbox.onchange = () => {
           if (checkbox.checked) selectedDrafts.add(draftId); else selectedDrafts.delete(draftId);
           updateSelection();
@@ -432,10 +650,9 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
     const relationTargets = { organization: "organization", organizationId: "organization", talent: "talent", productId: "product", campaignId: "campaign", karaokeId: "karaoke", songId: "song" };
     const relationLink = (entity, id) => "#content/" + entity + "?" + new URLSearchParams({ record: id });
     function add(key, label, control, host = form) {
-      const wrapping = el("label", label);
+      const wrapping = pickerField(label, control);
       control.setAttribute("aria-label", label);
       control.value = input[key] ?? (["format", "activity"].includes(key) ? "unknown" : key === "kind" ? "birthday" : key === "visibility" ? "public" : "");
-      wrapping.append(control);
       if (control.required) wrapping.dataset.required = "true";
       const field = el("div");
       field.className = "cms-field";
@@ -560,9 +777,7 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
         from.value = value.from || "";
         to.value = value.to || "";
         for (const [label, field] of [["事務所", org], ["所属状態", status], ["開始日", from], ["終了日", to]]) {
-          const wrapper = el("label", label);
-          wrapper.append(field);
-          row.append(wrapper);
+          row.append(pickerField(label, field));
         }
         const entry = { row, org, status, from, to };
         if (!existing) row.append(button("追加した所属を削除", () => {
@@ -610,6 +825,7 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
       if (entity === "offer" && input.id) {
         select.disabled = true;
         picker.querySelector("input").disabled = true;
+        select.cmsPicker?.syncDisabled();
       }
     }
     const relations = new Map();
@@ -617,6 +833,16 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
       const fieldset = el("fieldset");
       fieldset.className = "cms-relation-picker";
       fieldset.append(el("legend", label));
+      if (view !== "legacy") {
+        const selected = new Set(initial || []);
+        relations.set(key, selected);
+        const picker = relationPicker({ choices, selected, label, multiple: true,
+          onChange: () => fieldset.dispatchEvent(new Event("change", { bubbles: true })),
+        });
+        fieldset.append(picker);
+        form.append(fieldset);
+        return selected;
+      }
       const search = el("input");
       search.type = "search";
       search.placeholder = "名前またはIDで絞り込む";
@@ -681,10 +907,8 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
         const controls = {};
         const key = value.key || ((chooseCampaign ? "cms-sale-" : "") + (value.id || crypto.randomUUID().slice(0, 12)));
         const addSaleField = (name, text, control) => {
-          const label = el("label", text);
-          label.append(control);
           control.value = value[name] || "";
-          row.append(label);
+          row.append(pickerField(text, control));
           controls[name] = control;
         };
         for (const name of ["url", "price", "startsAt", "endsAt"]) {
@@ -730,12 +954,10 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
         row.append(el("legend", value.id ? value.title : "新しい商品"));
         const controls = new Map();
         function field(name, text, control, required = false) {
-          const label = el("label", text);
           control.setAttribute("aria-label", text);
           control.value = value[name] || "";
           control.required = required;
-          label.append(control);
-          row.append(label);
+          row.append(pickerField(text, control));
           controls.set(name, control);
         }
         for (const name of ["title", "identityUrl", "image"]) {
@@ -792,8 +1014,7 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
         label.append(title);
         const song = el("select");
         const songSearch = songPicker(song, track.songId);
-        const songLabel = el("label", "既存の楽曲");
-        songLabel.append(song);
+        const songLabel = pickerField("既存の楽曲", song);
         const move = (offset) => {
           const index = tracks.findIndex((item) => item.row === row);
           const next = index + offset;
@@ -812,7 +1033,7 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
           return { field, control };
         });
         const work = newSongFields(track);
-        row.append(label, songSearch, songLabel, work.details, ...times.map(({ field }) => field), button("上へ", () => move(-1)), button("下へ", () => move(1)));
+        row.append(label, ...(song.cmsPicker ? [] : [songSearch]), songLabel, work.details, ...times.map(({ field }) => field), button("上へ", () => move(-1)), button("下へ", () => move(1)));
         if (!track.id) row.append(button("追加行を取り除く", () => {
           tracks.splice(tracks.findIndex((item) => item.row === row), 1);
           row.remove();
@@ -988,10 +1209,16 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
     heading.append(title);
     if (input.id) heading.append(el("small", input.id));
     heading.append(button("閉じる", () => closeEditor()));
+    if (view !== "legacy") {
+      const body = el("div");
+      body.className = "cms-form-scroll stack";
+      for (const child of [...form.children]) if (child !== footer) body.append(child);
+      form.prepend(body);
+    }
     formArea.replaceChildren(heading, form);
     formArea.hidden = false;
     workspaceArea.classList.add("has-editor");
-    (form.querySelector("input:not(:disabled), textarea:not(:disabled), select:not(:disabled)") || title).focus();
+    (form.querySelector("input:not(:disabled):not([hidden]), textarea:not(:disabled), select:not(:disabled):not([hidden])") || title).focus({ preventScroll: true });
   }
   if (saved) await refreshDrafts(true);
   if (["legacy", "history"].includes(view)) {

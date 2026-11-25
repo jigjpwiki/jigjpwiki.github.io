@@ -318,7 +318,10 @@ export class Admin {
           editable: member.role === "editor", publicationTracking: google, publishable: member.role === "editor" && member.directPublish === true && publishingEnabled(this.env), categories: contentCategories(member),
           organizations: models.talents.organizations.filter((row) => hasAllContent(member) || member.scope?.organizations.includes(row.id)),
           people: models.talents.talents.filter((row) => access.canRead("talent", row))
-            .map((row) => ({ id: row.id, name: row.displayName })),
+            .map((row) => ({ id: row.id, name: row.displayName,
+              search: (row.aliases || []).map(alias => alias.name).join(" "),
+              visibility: row.visibility ?? "public",
+            })),
         });
       }
       if (url.pathname === "/api/cms/detail" && request.method === "GET")

@@ -41,7 +41,8 @@ export async function cmsOwnerBrowser({ browser, base, mainSha }) {
     await page.getByLabel("商品名", { exact: true }).fill("一括公開申請の商品");
     await page.getByLabel("公式商品情報URL").fill("https://example.com/owner-product");
     const person = page.getByRole("combobox", { name: "関連する人物", exact: true });
-    await person.selectOption({ index: 1 });
+    await person.click();
+    await page.getByRole("listbox").getByRole("option").first().click();
     await page.getByLabel("販売ページURL", { exact: true }).fill("https://example.com/owner-sale");
     await page.locator("#view").getByRole("button", { name: "下書きを保存", exact: true }).click();
     await page.getByText("下書きを保存しました。公開サイトには反映されていません。").waitFor();

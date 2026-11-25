@@ -653,3 +653,54 @@ button:hover:not(:disabled), .button:hover { border-color: var(--accent); }
 .cms-event-preview { display:block;width:100%;max-width:440px;aspect-ratio:16/9;object-fit:cover;margin-top:8px;border-radius:8px;background:var(--soft); }
 
 .cms-song-picker-pages{display:flex;flex-wrap:wrap;gap:6px}.cms-song-picker-pages button{font-size:12px;min-height:30px}.cms-song-help{display:flex;flex-wrap:wrap;align-items:center;gap:8px;padding:12px;border:1px solid var(--line);border-radius:8px;background:var(--soft)}.cms-song-help p{flex:1 1 100%;margin:0;font-size:13px;color:var(--muted)}.cms-song-help small{flex:1 1 100%;color:var(--muted)}
+
+/* Searchable shared relation controls; only selected IDs are stored in the form. */
+.cms-picker-field{min-width:0;display:flex;flex-direction:column;gap:4px}
+.cms-picker-label{font-size:var(--text-small);font-weight:600;color:var(--muted)}
+.cms-relation-combobox{min-width:0;gap:6px}
+.cms-relation-combobox input[type=search]{width:100%;min-width:0;min-height:36px;margin:0}
+.cms-picker-chips{display:flex;flex-wrap:wrap;gap:5px}
+.cms-picker-chip{display:inline-flex;align-items:center;gap:6px;min-width:0;max-width:100%;padding:4px 6px 4px 9px;border:1px solid var(--line);border-radius:var(--radius-small);background:var(--soft);color:var(--ink);font-size:var(--text-small);overflow-wrap:anywhere}
+.cms-picker-chip button{min-height:24px;min-width:24px;padding:0 4px;border:0;background:transparent;color:var(--muted);font-size:16px;line-height:1}
+.cms-picker-popup{display:flex;flex-direction:column;gap:4px;border:1px solid var(--line);border-radius:var(--radius);background:var(--surface);padding:6px;box-shadow:0 4px 12px #0000000c}
+.cms-picker-count{padding:4px 6px}
+.cms-picker-listbox{max-height:min(260px,38dvh);overflow:auto;overscroll-behavior:contain;scrollbar-gutter:stable;display:flex;flex-direction:column;gap:2px}
+.cms-picker-listbox p{color:var(--muted);font-size:var(--text-small);padding:8px}
+.cms-picker-listbox .cms-picker-option{flex:0 0 auto;width:100%;min-width:0;display:flex;flex-direction:column;align-items:flex-start;text-align:left;gap:2px;padding:7px 9px;min-height:40px;border:1px solid transparent;background:transparent;color:var(--ink);overflow-wrap:anywhere}
+.cms-picker-listbox .cms-picker-option:hover,.cms-picker-listbox .cms-picker-option[data-active]{background:var(--hover);border-color:var(--line)}
+.cms-picker-option span{font-weight:550;line-height:1.4}
+.cms-picker-option small{font-size:11px;line-height:1.35}
+.cms-picker-popup > button{align-self:center;font-size:var(--text-small)}
+.cms-affiliation-editor fieldset > .cms-picker-field{grid-column:1/-1}
+.cms-draft-controls label{display:inline-flex;align-items:center;gap:6px;margin:0;font-weight:600}
+.cms-draft-controls label input{width:18px;height:18px;min-height:18px;margin:0}
+.cms-form-scroll{min-width:0;gap:var(--space-3)}
+/* Use actual available viewport height, not an estimated header offset.
+   Scope to common CMS: the advanced workspace retains its existing layout. */
+@media(min-width:768px){
+  body:has(#view > .cms-content[data-cms-layout]){height:100dvh;min-height:0;overflow:hidden;grid-template-rows:minmax(0,1fr)}
+  body:has(#view > .cms-content[data-cms-layout]) .app-sidebar{height:100%;min-height:0;overflow:auto;overscroll-behavior:contain;position:static}
+  body:has(#view > .cms-content[data-cms-layout]) #main-content{height:100%;min-height:0;overflow:auto;overscroll-behavior:contain}
+  body:has(#view > .cms-content[data-cms-layout="collection"]) #main-content{display:flex;flex-direction:column;overflow:hidden;padding-bottom:12px}
+  body:has(#view > .cms-content[data-cms-layout="collection"]) .app-page-header,
+  body:has(#view > .cms-content[data-cms-layout="collection"]) .identity-bar,
+  body:has(#view > .cms-content[data-cms-layout="collection"]) #auth-recovery{flex:0 0 auto}
+  body:has(#view > .cms-content[data-cms-layout="collection"]) #app{flex:1;min-height:0;display:flex;flex-direction:column;overflow:hidden}
+  #view:has(> .cms-content[data-cms-layout="collection"]){flex:1;min-height:0;overflow:hidden}
+  #view > .cms-content[data-cms-layout="collection"]{flex:1;min-height:0;overflow:hidden;display:flex;flex-direction:column;margin-bottom:0}
+  .cms-content[data-cms-layout="collection"] > :not(.cms-collection-workspace){flex:0 0 auto}
+  .cms-content[data-cms-layout="collection"] .cms-collection-workspace{flex:1;min-height:0;align-items:stretch;overflow:hidden;grid-template-rows:minmax(0,1fr)}
+  .cms-content[data-cms-layout="collection"] .cms-collection-list{min-height:0;overflow:auto;overscroll-behavior:contain;padding:0 4px 8px 0;scrollbar-gutter:stable}
+  .cms-content[data-cms-layout="collection"] .cms-editor:not([hidden]){position:static;top:auto;max-height:none;min-height:0;overflow:hidden;display:flex;flex-direction:column;padding:0;gap:0}
+  .cms-content[data-cms-layout="collection"] .cms-editor-heading{position:static;flex:0 0 auto;padding:12px 16px}
+  .cms-content[data-cms-layout="collection"] .cms-record-form{flex:1;min-height:0;max-width:none;display:flex;flex-direction:column;gap:0}
+  .cms-content[data-cms-layout="collection"] .cms-form-scroll{flex:1;min-height:0;overflow:auto;overscroll-behavior:contain;padding:14px 16px;scrollbar-gutter:stable}
+  .cms-content[data-cms-layout="collection"] .cms-editor-footer{position:static;flex:0 0 auto;padding:12px 16px}
+}
+@media(min-width:768px) and (max-width:1179px){
+  .cms-content[data-cms-layout="collection"] .cms-collection-workspace.has-editor .cms-collection-list{display:none}
+}
+@media(max-width:767px){
+  .cms-editor-footer{position:sticky;bottom:0;z-index:3;padding-bottom:max(12px,env(safe-area-inset-bottom))}
+  .cms-picker-listbox{max-height:min(240px,38dvh)}
+}

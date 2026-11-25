@@ -119,10 +119,10 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
       }
       if (!multiple) selected.clear();
       selected.add(id);
-      changed();
       search.value = "";
-      close();
+      changed();
       search.focus({ preventScroll: true });
+      close();
     }
     function changed() {
       syncChips();
@@ -216,7 +216,9 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
       wrapper.className = "cms-picker-field";
       const caption = el("span", label);
       caption.className = "cms-picker-label";
-      control.cmsPicker.querySelector("input").setAttribute("aria-label", label);
+      const search = control.cmsPicker.querySelector("input");
+      search.setAttribute("aria-label", label);
+      search.setAttribute("aria-required", String(control.required));
       control.cmsPicker.syncDisabled();
       wrapper.replaceChildren(caption, control.cmsPicker, control);
     } else wrapper.append(control);
@@ -826,6 +828,7 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
       if (entity === "offer" && input.id) {
         select.disabled = true;
         picker.querySelector("input").disabled = true;
+        select.cmsPicker?.syncDisabled();
       }
     }
     const relations = new Map();

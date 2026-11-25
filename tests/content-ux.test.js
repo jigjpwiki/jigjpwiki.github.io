@@ -40,9 +40,14 @@ test('expired campaigns remain rendered, stable static baseline does not depend 
  t.mock.timers.enable({apis:['Date'],now:Date.parse('2026-11-20T00:00:00Z')});
  const first=pages.goodsPage(master,data);t.mock.timers.setTime(Date.parse('2035-01-01T00:00:00Z'));assert.equal(pages.goodsPage(master,data),first);
 });
-test('events require an explicit end to be past; partial dates use JST bounds',()=>{
+test('events use known ends first and otherwise move to past at the latest known start in JST',()=>{
  const instant=value=>({precision:'instant',value}),unknown={precision:'unknown',value:null};
- assert.equal(events.phase({starts:instant('2026-11-19T00:00:00Z'),ends:unknown},now),'unknown');
+ assert.equal(events.phase({starts:instant('2026-11-19T00:00:00Z'),ends:unknown},now),'past');
+  assert.equal(events.phase({starts:instant(now.toISOString()),ends:unknown},now),'past');
+  assert.equal(events.phase({starts:{precision:'date',value:'2026-11-20'},ends:unknown},now),'upcoming');
+  assert.equal(events.phase({starts:{precision:'date',value:'2026-11-20'},ends:unknown},new Date('2026-11-21T00:00:00+09:00')),'past');
+  assert.equal(events.phase({starts:{precision:'month',value:'2026-11'},ends:unknown},now),'upcoming');
+  assert.equal(events.phase({starts:{precision:'month',value:'2026-11'},ends:unknown},new Date('2026-12-01T00:00:00+09:00')),'past');
  assert.equal(events.phase({starts:unknown,ends:unknown},now),'unknown');
  assert.equal(events.phase({starts:instant('2026-11-21T00:00:00Z'),ends:unknown},now),'upcoming');
  assert.equal(events.phase({starts:instant('2026-11-19T00:00:00Z'),ends:instant('2026-11-21T00:00:00Z')},now),'ongoing');

@@ -323,6 +323,13 @@ export async function prepareDraft(snapshot, member, input, lookup) {
     value[key] = input[key].trim() || null;
   }
   if (entity === "event") {
+    // Optional field; omitted input from older clients must not erase it.
+    if (input.thumbnailUrl !== undefined) {
+      if (typeof input.thumbnailUrl !== "string" || input.thumbnailUrl.length > 2048) fail(400, "cms_invalid_input");
+      const url = input.thumbnailUrl.trim();
+      if (url) value.thumbnailUrl = url;
+      else delete value.thumbnailUrl;
+    }
     if (input.performers !== undefined) {
       if (!Array.isArray(input.performers) || input.performers.length > 100 ||
           input.performers.some((id) => typeof id !== "string" || !/^tal-\d{6}$/.test(id)))
@@ -490,7 +497,7 @@ function saleFields(offer, key, campaign) {
 function eventFields(record) {
   const local = (time) => time.precision === "instant"
     ? new Date(Date.parse(time.value) + 9 * 3600000).toISOString().slice(0, 16) : "";
-  return { performers: record.talentIds, starts: local(record.starts), ends: local(record.ends), format: record.format,
+  return { thumbnailUrl: record.thumbnailUrl || "", performers: record.talentIds, starts: local(record.starts), ends: local(record.ends), format: record.format,
     streamUrl: record.streamUrls[0] ?? "", fee: String(record.fee.amount ?? ""),
     feeCurrency: record.fee.currency ?? "JPY" };
 }

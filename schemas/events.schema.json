@@ -257,6 +257,11 @@
               "public",
               "draft"
             ]
+          },
+          "thumbnailUrl": {
+            "type": "string",
+            "format": "public-url",
+            "maxLength": 2048
           }
         }
       }

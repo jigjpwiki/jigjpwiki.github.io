@@ -1,10 +1,30 @@
 'use strict';
 (() => {
+ const dates=window.EventDates;
  const update=()=>{
-  for(const row of document.querySelectorAll('[data-event-times]')){
-   const phase=window.EventDates.phase(JSON.parse(row.dataset.eventTimes)),section=document.querySelector(`[data-event-group="${phase==='ongoing'?'upcoming':phase}"] ul`);
-   const label=row.querySelector('[data-event-phase]');if(label)label.textContent={past:'過去のイベント',upcoming:'開催予定',ongoing:'開催時間内',unknown:'日時・終了時刻未確認'}[phase];
-   if(section)section.append(row);
+  const rows=[...document.querySelectorAll('[data-event-times]')].map(row=>({row,event:JSON.parse(row.dataset.eventTimes)}));
+  const groups={upcoming:[],past:[],unknown:[]};
+  for(const item of rows){
+   const phase=dates.phase(item.event),group=phase==='ongoing'?'upcoming':phase;
+   item.row.dataset.phase=phase;
+   const label=item.row.querySelector('[data-event-phase]');
+   if(label)label.textContent=dates.labels[phase];
+   groups[group].push(item);
+  }
+  for(const [group,items] of Object.entries(groups)){
+   const section=document.querySelector('[data-event-group="'+group+'"]');
+   if(!section)continue;
+   const list=section.querySelector('ul');
+   const ordered=items.sort((a,b)=>dates.compare(a.event,b.event,group)||a.row.dataset.eventId.localeCompare(b.row.dataset.eventId));
+   if(list&&ordered.some((item,i)=>list.children[i]!==item.row))list.append(...ordered.map(item=>item.row));
+   const count=section.querySelector('[data-event-count]');
+   if(count)count.textContent=items.length+'件';
+  }
+  for(const detail of document.querySelectorAll('[data-event-detail-times]')){
+   const phase=dates.phase(JSON.parse(detail.dataset.eventDetailTimes));
+   detail.dataset.phase=phase;
+   const label=detail.querySelector('[data-event-phase]');
+   label.textContent=dates.labels[phase];label.hidden=false;
   }
   document.dispatchEvent(new Event('catalog:refresh'));
  };

@@ -109,3 +109,21 @@ test("all-content editors retain affiliations and fixed collection identities wh
   await assert.rejects(prepareDraft(snapshot, member, { ...input, affiliations: input.affiliations.slice(1) }), /affiliation_history_must_be_retained/);
   await assert.rejects(prepareDraft(snapshot, member, { ...input, twitchUrl: "https://www.twitch.tv/another" }), /cms_identity_anchor/);
 });
+
+test("event thumbnail survives editing, draft reopen and publication, while omission preserves old data", async () => {
+ const entity="event", record=fixture.events.events[0], id=record.id;
+ const input={entity,id,sha:snapshot.sha,...draftDetails(snapshot,member,entity,id),thumbnailUrl:"https://images.example/event.jpg"};
+ const ops=await prepareDraft(snapshot,member,input);
+ assert.equal(ops[0].value.thumbnailUrl,input.thumbnailUrl);
+ assert.equal(draftInput({operations:ops}).thumbnailUrl,input.thumbnailUrl);
+ const {plan}=await publicationPlan(snapshot,{id:"event-thumb",owner:"8ebf4fde-85a4-4d34-9feb-d1ba5c4de026",createdAt:"2026-11-25T00:00:00Z",operations:ops},member);
+ assert.equal(plan.files.events.events.find(row=>row.id===id).thumbnailUrl,input.thumbnailUrl);
+ const next={...snapshot,models:{...snapshot.models,events:plan.files.events}};
+ const details=draftDetails(next,member,entity,id);assert.equal(details.thumbnailUrl,input.thumbnailUrl);
+ const {thumbnailUrl,...legacy}=details;
+ const preserved=await prepareDraft(next,member,{...legacy,entity,id,sha:next.sha,title:record.title+" 更新"});
+ assert.equal(preserved[0].value.thumbnailUrl,input.thumbnailUrl);
+ const removed=await prepareDraft(next,member,{...input,thumbnailUrl:""});assert(!Object.hasOwn(removed[0].value,"thumbnailUrl"));
+ await assert.rejects(prepareDraft(snapshot,member,{...input,thumbnailUrl:"javascript:alert(1)"}));
+ await assert.rejects(prepareDraft(snapshot,{...member,role:"viewer"},input),/cms_scope_denied/);
+});

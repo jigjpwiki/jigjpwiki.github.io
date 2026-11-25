@@ -1,7 +1,6 @@
-import { fail, hash, random, unb64, cookie, cookies, headers, seal, open } from "./security.mjs";
+import { fail, hash, random, unb64, cookie, cookies, headers, seal, open, sessionLifetimeMs, sessionLifetimeSeconds } from "./security.mjs";
 
 const issuer = "https://accounts.google.com";
-const lifetime = 30 * 60_000;
 export const emailKey = async (email) => "member:" + await hash(email.trim().toLowerCase());
 const decode = (value) => JSON.parse(new TextDecoder().decode(unb64(value)));
 
@@ -114,11 +113,11 @@ export async function googleAuth(request, env, store, transport, now, atomic) {
     }
     return value;
   });
-  const session = { id: member.id, provider: "google", memberKey, revision: member.revision, csrf: random(), expires: now + lifetime };
+  const session = { id: member.id, provider: "google", memberKey, revision: member.revision, csrf: random(), expires: Date.now() + sessionLifetimeMs };
   const id = random();
   await store.put("session:" + id, session, session.expires);
   secureHeaders.set("Location", url.origin + "/");
-  secureHeaders.append("Set-Cookie", cookie("__Host-admin-session", id, lifetime / 1000));
+  secureHeaders.append("Set-Cookie", cookie("__Host-admin-session", id, sessionLifetimeSeconds));
   secureHeaders.append("Set-Cookie", cookie(stateCookie, "", 0));
   return new Response(null, { status: 302, headers: secureHeaders });
 }

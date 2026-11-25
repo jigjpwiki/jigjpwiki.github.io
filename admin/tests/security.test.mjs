@@ -112,6 +112,9 @@ test("OAuth state is bound to the browser, consumed once, no token reaches respo
     ),
   );
   assert.equal(callback.status, 302);
+  const sessionCookie = callback.headers.getSetCookie().find((row) => row.startsWith("__Host-admin-session="));
+  assert.match(sessionCookie, /Max-Age=604800(?:;|$)/);
+  assert.match(sessionCookie, /HttpOnly; Secure; SameSite=Lax/);
   const sid = callback.headers
     .get("Set-Cookie")
     .match(/__Host-admin-session=([\w-]+)/)[1];
@@ -121,6 +124,12 @@ test("OAuth state is bound to the browser, consumed once, no token reaches respo
     });
   const me = await (await worker.fetch(request("/api/me"))).json();
   assert.equal(me.id, "123");
+  assert.ok(me.expires > Date.now() + 7 * 86400_000 - 10000);
+  assert.ok(me.expires <= Date.now() + 7 * 86400_000);
+  assert.equal(e.__testStore.map.get("session:" + sid).expiry, me.expires);
+  e.ADMIN_USER_IDS = "999";
+  assert.equal((await worker.fetch(request("/api/me"))).status, 403);
+  e.ADMIN_USER_IDS = "123";
   assert(!JSON.stringify(me).includes("test-token"));
   const out = await worker.fetch(
     new Request("https://admin.example/auth/logout", {

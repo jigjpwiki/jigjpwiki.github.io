@@ -1,0 +1,213 @@
+{
+  "version": 2,
+  "batchId": "zk59fd3IFmqfcNQ8hbq_wClzP8C6FtSahc0EQnNn4tY",
+  "actor": "900116782922894341339274276841604414178152",
+  "createdAt": "2026-11-25T07:34:07.620Z",
+  "baseCommit": "233287c637182048a4f8615c805eea9d4b718918",
+  "reason": null,
+  "submissionId": "zk59fd3IFmqfcNQ8hbq_wClzP8C6FtSahc0EQnNn4tY",
+  "branch": "admin/change-zk59fd3IFmqfcNQ8hbq_wClzP8C6FtSahc0EQnNn4tY",
+  "operations": [
+    {
+      "operationId": "cms-event-9a4994690b624daca8089b20",
+      "entity": "event",
+      "recordId": "evt-000001",
+      "action": "edit",
+      "changedFields": [
+        "organizerIds",
+        "relatedOrganizationIds",
+        "lineupComplete",
+        "thumbnailUrl"
+      ],
+      "before": {
+        "organizerIds": [],
+        "relatedOrganizationIds": [
+          "org-000003"
+        ],
+        "groupIds": [],
+        "lineupComplete": true,
+        "streamUrls": [],
+        "slots": [],
+        "visibility": "public",
+        "id": "evt-000001",
+        "title": "Palette Project 6th One Man Live -Make it Luminous-",
+        "type": "concert",
+        "starts": {
+          "precision": "instant",
+          "value": "2026-12-26T09:00:00Z"
+        },
+        "ends": {
+          "precision": "instant",
+          "value": "2026-12-26T11:00:00Z"
+        },
+        "timing": "scheduled",
+        "talentIds": [
+          "tal-000008",
+          "tal-000005",
+          "tal-000007",
+          "tal-000010",
+          "tal-000009",
+          "tal-000012",
+          "tal-000011",
+          "tal-000006"
+        ],
+        "announcementUrl": "https://paletteproject.jp/makeitluminous/",
+        "videoIds": [],
+        "format": "onsite",
+        "venue": "品川インターシティホール",
+        "fee": {
+          "amount": 8500,
+          "currency": "JPY",
+          "note": "通常チケット。別券種・手数料・販売条件は公式サイトをご確認ください。"
+        },
+        "summary": "公式特設サイト掲載のワンマンライブ。開場17:00、開演18:00、終了20:00の予定（JST）。出演者はCast欄の公式プロフィールリンクで照合。"
+      },
+      "after": {
+        "organizerIds": [
+          "org-000003"
+        ],
+        "relatedOrganizationIds": [],
+        "groupIds": [],
+        "lineupComplete": false,
+        "streamUrls": [],
+        "slots": [],
+        "visibility": "public",
+        "id": "evt-000001",
+        "title": "Palette Project 6th One Man Live -Make it Luminous-",
+        "type": "concert",
+        "starts": {
+          "precision": "instant",
+          "value": "2026-12-26T09:00:00Z"
+        },
+        "ends": {
+          "precision": "instant",
+          "value": "2026-12-26T11:00:00Z"
+        },
+        "timing": "scheduled",
+        "talentIds": [
+          "tal-000008",
+          "tal-000005",
+          "tal-000007",
+          "tal-000010",
+          "tal-000009",
+          "tal-000012",
+          "tal-000011",
+          "tal-000006"
+        ],
+        "announcementUrl": "https://paletteproject.jp/makeitluminous/",
+        "videoIds": [],
+        "format": "onsite",
+        "venue": "品川インターシティホール",
+        "fee": {
+          "amount": 8500,
+          "currency": "JPY",
+          "note": "通常チケット。別券種・手数料・販売条件は公式サイトをご確認ください。"
+        },
+        "summary": "公式特設サイト掲載のワンマンライブ。開場17:00、開演18:00、終了20:00の予定（JST）。出演者はCast欄の公式プロフィールリンクで照合。",
+        "thumbnailUrl": "https://pbs.twimg.com/media/HVEpVQqaUAA8XHA?format=jpg&name=large"
+      }
+    },
+    {
+      "operationId": "cms-event-847db0653de9412abadc2750",
+      "entity": "event",
+      "recordId": "evt-000006",
+      "action": "edit",
+      "changedFields": [
+        "organizerIds",
+        "relatedOrganizationIds"
+      ],
+      "before": {
+        "type": "other",
+        "timing": "unknown",
+        "starts": {
+          "precision": "instant",
+          "value": "2026-11-22T10:00:00.000Z"
+        },
+        "ends": {
+          "precision": "instant",
+          "value": "2026-11-22T12:00:00.000Z"
+        },
+        "organizerIds": [],
+        "relatedOrganizationIds": [
+          "org-000002"
+        ],
+        "groupIds": [],
+        "talentIds": [
+          "tal-000049",
+          "tal-000057",
+          "tal-000051",
+          "tal-000069",
+          "tal-000062",
+          "tal-000067",
+          "tal-000060",
+          "tal-000058"
+        ],
+        "lineupComplete": false,
+        "slots": [],
+        "videoIds": [],
+        "streamUrls": [
+          "https://jcm-event.bitfan.id/events/23143"
+        ],
+        "format": "hybrid",
+        "fee": {
+          "amount": 3000,
+          "currency": "JPY",
+          "note": null
+        },
+        "visibility": "public",
+        "title": "ぶいかふぇ♪ vol.325",
+        "venue": "LIVE SPACE Q",
+        "announcementUrl": "https://jcm-event.bitfan.id/events/23143",
+        "summary": "パレデミア学園リアルイベント2回目",
+        "id": "evt-000006",
+        "thumbnailUrl": "https://cdn.wikiwiki.jp/proxy-image/w/jigjp?url=https%3A%2F%2Fpbs.twimg.com%2Fmedia%2FHSbzE-Pa8AAFHIR.jpg"
+      },
+      "after": {
+        "type": "other",
+        "timing": "unknown",
+        "starts": {
+          "precision": "instant",
+          "value": "2026-11-22T10:00:00.000Z"
+        },
+        "ends": {
+          "precision": "instant",
+          "value": "2026-11-22T12:00:00.000Z"
+        },
+        "organizerIds": [
+          "org-000002"
+        ],
+        "relatedOrganizationIds": [],
+        "groupIds": [],
+        "talentIds": [
+          "tal-000049",
+          "tal-000057",
+          "tal-000051",
+          "tal-000069",
+          "tal-000062",
+          "tal-000067",
+          "tal-000060",
+          "tal-000058"
+        ],
+        "lineupComplete": false,
+        "slots": [],
+        "videoIds": [],
+        "streamUrls": [
+          "https://jcm-event.bitfan.id/events/23143"
+        ],
+        "format": "hybrid",
+        "fee": {
+          "amount": 3000,
+          "currency": "JPY",
+          "note": null
+        },
+        "visibility": "public",
+        "title": "ぶいかふぇ♪ vol.325",
+        "venue": "LIVE SPACE Q",
+        "announcementUrl": "https://jcm-event.bitfan.id/events/23143",
+        "summary": "パレデミア学園リアルイベント2回目",
+        "id": "evt-000006",
+        "thumbnailUrl": "https://cdn.wikiwiki.jp/proxy-image/w/jigjp?url=https%3A%2F%2Fpbs.twimg.com%2Fmedia%2FHSbzE-Pa8AAFHIR.jpg"
+      }
+    }
+  ]
+}

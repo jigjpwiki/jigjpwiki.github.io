@@ -314,6 +314,7 @@ let acceptedHash = location.hash;
 let navigationRevision = 0;
 window.addEventListener("hashchange", async () => {
   const revision = ++navigationRevision;
+  const usesCms = (hash) => hash === "#cms" || hash === "#dashboard" || hash.startsWith("#content/") || ["#drafts", "#publication", "#history", "#search"].includes(hash);
   const view = $("#view");
   if (!view) return;
   view.inert = false;
@@ -321,19 +322,19 @@ window.addEventListener("hashchange", async () => {
     history.replaceState(null, "", acceptedHash || "#masters");
     return;
   }
-  if (me?.simpleCms && (location.hash === "#cms" || acceptedHash === "#cms")) {
+  if (me?.simpleCms && workspace && usesCms(location.hash) !== usesCms(acceptedHash)) {
     if (workspace?.dirty) {
       history.replaceState(null, "", acceptedHash || "#dashboard");
       showStatus("変更内容を保存してから編集モードを切り替えてください。");
       return;
     }
-    if (acceptedHash === "#cms" && location.hash !== "#cms") {
+    if (usesCms(acceptedHash) && !usesCms(location.hash)) {
       view.inert = true;
       try {
         await workspace.load();
       } catch {
         if (revision === navigationRevision) {
-          history.replaceState(null, "", "#cms");
+          history.replaceState(null, "", acceptedHash || "#dashboard");
           showStatus("下書きを取得できませんでした。");
         }
         return;
@@ -346,6 +347,8 @@ window.addEventListener("hashchange", async () => {
   }
   activeEditor = null;
   acceptedHash = location.hash;
+  const workspaceBar = $("#workspace-bar");
+  if (workspaceBar) workspaceBar.hidden = usesCms(location.hash);
   screen();
 });
 async function start() {
@@ -388,6 +391,7 @@ async function start() {
     };
     workspace = new Workspace(api, renderSaveState);
     setupWorkspaceBar();
+    $("#workspace-bar").hidden = location.hash === "#dashboard" || location.hash === "#cms" || location.hash.startsWith("#content/");
     try {
       await workspace.load();
     } catch (e) {
@@ -1599,11 +1603,34 @@ async function memberSettings() {
     };
   }
   let scopeControls;
+  let selectedMember = null;
+  const migration = node("input");
+  migration.type = "checkbox";
+  const migrationLabel = node("label", "既存の担当範囲を保持したまま、全コンテンツの編集・公開を許可する共通ポリシーへ切り替える");
+  migrationLabel.prepend(migration);
+  migrationLabel.hidden = true;
+  const legacyOptions = node("details");
+  legacyOptions.hidden = true;
+  legacyOptions.append(node("summary", "既存の担当範囲"));
+  legacyOptions.append(publishLabel);
+  const reset = node("button", "新しい招待");
+  reset.type = "button";
+  const resetInvitation = () => {
+    selectedMember = null;
+    email.value = "";
+    role.value = "editor";
+    disabled.checked = false;
+    migration.checked = false;
+    migrationLabel.hidden = true;
+    legacyOptions.hidden = true;
+    email.focus();
+  };
+  reset.onclick = resetInvitation;
   const submit = node("button", "招待・権限を保存");
   const status = node("p");
   status.setAttribute("role", "status");
   const list = node("ul");
-  form.append(emailLabel, roleLabel, disabledLabel, publishLabel, submit);
+  form.append(emailLabel, roleLabel, disabledLabel, migrationLabel, legacyOptions, submit, reset);
   submit.disabled = true;
   panel.append(form, status, list);
   async function refresh() {
@@ -1615,6 +1642,11 @@ async function memberSettings() {
       const edit = node("button", member.email || member.id);
       edit.type = "button";
       edit.onclick = () => {
+        selectedMember = member;
+        migration.checked = false;
+        const legacy = member.contentPolicy !== "all-content-v1";
+        migrationLabel.hidden = !legacy;
+        legacyOptions.hidden = !legacy;
         email.value = member.email || "";
         role.value = member.role;
         disabled.checked = member.disabled;
@@ -1632,11 +1664,16 @@ async function memberSettings() {
     try {
       await api("/api/members", "POST", {
         email: email.value, role: role.value, disabled: disabled.checked,
-        directPublish: directPublish.checked,
-        scope: Object.fromEntries(Object.entries(scopeControls).map(([key, control]) => [key, control.read()])),
+        contentPolicy: !selectedMember || selectedMember.contentPolicy === "all-content-v1" || migration.checked ? "all-content-v1" : "scoped-v1",
+        confirmPolicyMigration: Boolean(selectedMember && migration.checked),
+        ...(selectedMember && !migration.checked && selectedMember.contentPolicy !== "all-content-v1" ? {
+          directPublish: directPublish.checked,
+          scope: Object.fromEntries(Object.entries(scopeControls).map(([key, control]) => [key, control.read()])),
+        } : {}),
       });
       status.textContent = "保存しました。対象アカウントの既存セッションは失効します。";
       await refresh();
+      resetInvitation();
     } catch {
       status.textContent = "招待または権限の更新を完了できませんでした。";
     } finally {
@@ -1653,7 +1690,7 @@ async function memberSettings() {
         ["music", "音楽・歌枠"], ["goods", "グッズ"],
       ]),
     };
-    for (const control of Object.values(scopeControls)) form.insertBefore(control.group, submit);
+    for (const control of Object.values(scopeControls)) legacyOptions.append(control.group);
     await refresh();
     submit.disabled = false;
   } catch {

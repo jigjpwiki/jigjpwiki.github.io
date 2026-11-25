@@ -287,10 +287,7 @@ export class Admin {
       await requireCurrentGrant();
       const { models } = snapshot;
       const member = google ? googleMember : {
-        role: "editor", owner: true, scope: {
-          categories: ["talents", "anniversaries", "events", "music", "goods"],
-          organizations: models.talents.organizations.map(({ id }) => id), groups: [],
-        },
+        role: "editor", owner: true, contentPolicy: "all-content-v1", scope: {},
       };
       if (url.pathname === "/api/cms/catalog" && request.method === "GET") {
         const access = cmsPermissions(models, { ...member, scope: {
@@ -299,7 +296,7 @@ export class Admin {
         return json({
           sha: snapshot.sha, sections: scopedCatalog(models, member), contentPolicy: member.contentPolicy || "scoped-v1", owner: member.owner === true,
           songs: contentCategories(member).includes("music")
-            ? models.music.songs.filter((song) => song.visibility === "public")
+            ? models.music.songs.filter((song) => hasAllContent(member) || song.visibility === "public")
               .map(({ id, title, originalArtists }) => ({ id, name: title + (originalArtists?.length ? " / " + originalArtists.join("、") : "") }))
             : [],
           editable: member.role === "editor", publicationTracking: google, publishable: member.role === "editor" && member.directPublish === true && publishingEnabled(this.env), categories: contentCategories(member),

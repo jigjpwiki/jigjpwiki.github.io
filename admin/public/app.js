@@ -295,9 +295,11 @@ export const node = (tag, text) => {
 function screen() {
   if (!me) return;
   for (const a of document.querySelectorAll("nav a")) {
-    if (a.hash === (location.hash || "#dashboard"))
+    if (a.hash === (location.hash || "#dashboard")) {
       a.setAttribute("aria-current", "page");
-    else a.removeAttribute("aria-current");
+      const group = a.closest("details");
+      if (group && !group.hidden) group.open = true;
+    } else a.removeAttribute("aria-current");
   }
   const settings = location.hash === "#settings";
   $("#view").replaceChildren(
@@ -1716,9 +1718,11 @@ screen = function () {
       "#settings": "設定",
     }[route] || "管理";
   for (const a of document.querySelectorAll("nav a")) {
-    if (a.hash === (location.hash || "#dashboard"))
+    if (a.hash === (location.hash || "#dashboard")) {
       a.setAttribute("aria-current", "page");
-    else a.removeAttribute("aria-current");
+      const group = a.closest("details");
+      if (group && !group.hidden) group.open = true;
+    } else a.removeAttribute("aria-current");
   }
   const compatibility = { "#masters": "talent", "#anniversaries": "anniversary", "#events": "event", "#music": "song", "#goods": "product", "#organizations": "organization" };
   const contentEntity = route.startsWith("#content/") ? route.slice(9) : me.provider === "google" ? compatibility[route] : null;
@@ -1843,7 +1847,13 @@ window.addEventListener("keydown", (e) => {
     document.querySelector("dialog[open]")
   )
     return;
-  if (e.key.toLowerCase() === "z") {
+  if (e.key.toLowerCase() === "k" && me?.simpleCms) {
+    e.preventDefault();
+    if (location.hash === "#search") document.querySelector("#view input[type=search]")?.focus();
+    else location.hash = "#search";
+    return;
+  }
+  if (e.key.toLowerCase() === "z" && workspace) {
     e.preventDefault();
     workspace.history(e.shiftKey ? "redo" : "undo");
     if (activeEditor?.refresh) activeEditor.refresh();

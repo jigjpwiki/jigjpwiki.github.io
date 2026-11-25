@@ -104,7 +104,15 @@ try {
   assert.equal(catalogResponse.status, 200, JSON.stringify(catalog));
   assert.equal(catalog.sha, mainSha);
   assert.equal(catalog.owner, true);
-  assert.ok(catalog.sections.some((section) => section.items.length > 0));
+  assert.equal(catalog.sections.length, 13);
+  for (const entity of ["organization", "group", "offer", "performance"]) {
+    const section = catalog.sections.find((row) => row.entity === entity);
+    assert.ok(section?.items.length, entity);
+    assert.ok(section.items.every((row) => typeof row.title === "string" && row.title.length > 0));
+    const query = new URLSearchParams({ entity, id: section.items[0].id });
+    const detail = await mf.dispatchFetch("https://jigwiki-admin.local/api/cms/detail?" + query, { headers });
+    assert.equal(detail.status, 200, await detail.clone().text());
+  }
   assert.equal(cmsRawReads, 14);
   assert.equal(writes, 0);
   console.log("Local workerd: authenticated CMS catalog and all 14 immutable reads passed.");

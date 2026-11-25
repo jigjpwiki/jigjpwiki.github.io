@@ -166,7 +166,7 @@ export function cmsPermissions(models, member) {
 
 export function scopedCatalog(models, member) {
   const permissions = cmsPermissions(models, member);
-  return ["organization", "group", "talent", "anniversary", "event", "song", "musicVideo", "karaoke", "video", "product", "campaign"].map((entity) => {
+  return ["organization", "group", "talent", "anniversary", "event", "song", "musicVideo", "karaoke", "performance", "video", "product", "campaign", "offer"].map((entity) => {
     const type = types[entity];
     return {
       category: type.category,
@@ -174,8 +174,14 @@ export function scopedCatalog(models, member) {
       label: type.label || "VTuber",
       items: models[type.file][type.list].filter((row) => permissions.canRead(entity, row)).map((row) => ({
         id: row[type.field || "id"],
-        title: row.displayName || row.title || row.rawSongTitle || byTypeVideoTitle(models, row),
+        title: row.displayName || row.name || row.title || row.rawSongTitle || row.rawLabel ||
+          (entity === "offer" ? models.goods.products.find((product) => product.id === row.productId)?.title : null) ||
+          byTypeVideoTitle(models, row) || row[type.field || "id"],
         description: typeof row.description === "string" ? row.description : "",
+        visibility: row.visibility ?? "public",
+        state: row.activityStatus?.value || row.status || row.timing || row.verification || row.setlistStatus || row.availability || "",
+        ...(entity === "talent" ? { image: row.profileImage?.url || "" } : {}),
+        ...(entity === "product" ? { image: typeof row.image === "string" ? row.image : row.image?.url || "" } : {}),
       })),
     };
   }).filter(({ category }) => contentCategories(member).includes(category));

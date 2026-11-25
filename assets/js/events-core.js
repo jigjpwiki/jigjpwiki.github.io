@@ -12,7 +12,17 @@
   if(ends&&ends.end<=t)return 'past';
   if(starts&&starts.start>t)return 'upcoming';
   if(starts&&starts.start<=t&&ends&&ends.end>t)return 'ongoing';
-  return 'unknown'; // A past start alone does not prove that the event ended.
+  // With no recorded end, move to past at the known start instant, or
+  // after the last possible start when only a JST day/month is known.
+  if(starts&&!ends)return t>=starts.end?'past':'upcoming';
+  return 'unknown';
  }
- return {bounds,phase};
+ function compare(a,b,group){
+  const x=bounds(a.starts)?.start,y=bounds(b.starts)?.start;
+  if(x==null&&y==null)return 0;
+  if(x==null)return 1;if(y==null)return -1;
+  return group==='past'?y-x:x-y;
+ }
+ const labels={past:'開催終了',upcoming:'開催予定',ongoing:'開催中',unknown:'開催日時未定'};
+ return {bounds,phase,compare,labels};
 });

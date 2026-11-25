@@ -649,3 +649,5 @@ button:hover:not(:disabled), .button:hover { border-color: var(--accent); }
   .cms-collection-workspace.has-editor .cms-collection-list { display: none; }
   .cms-navigation a { min-height: 40px; }
 }
+
+.cms-event-preview { display:block;width:100%;max-width:440px;aspect-ratio:16/9;object-fit:cover;margin-top:8px;border-radius:8px;background:var(--soft); }

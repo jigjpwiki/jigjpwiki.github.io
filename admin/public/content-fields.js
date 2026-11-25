@@ -61,6 +61,7 @@ export const labels = {
   organizerIds: "主催事務所",
   relatedOrganizationIds: "関連事務所",
   announcementUrl: "公式告知URL",
+  thumbnailUrl: "イベントサムネイルURL（16:9・任意）",
   videoIds: "動画・アーカイブ",
   streamUrls: "配信URL",
   format: "開催形式",

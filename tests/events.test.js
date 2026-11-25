@@ -21,3 +21,11 @@ test('unknown/month/date times do not imply midnight, JST is explicit, draft sou
  const m=model();m.events.events[1].visibility='draft';const data=projectEvents(check(m));assert.equal(data.events.length,4);assert.equal(data.videos.length,0);assert(!('sources' in data));
 });
 test('event pages escape untrusted text, retain availability history and have real internal destinations',()=>{const m=model(),e=m.events.events[1];e.title='<script>bad()</script>';m.media.videos[0].availability='unavailable';const data=projectEvents(check(m));const html=eventPage(e,t,data);assert.doesNotMatch(html,/<script>bad/);assert.match(html,/&lt;script&gt;/);assert.match(html,/現在の視聴不可/);assert.match(html,/\/talents\/tal-000036\//);});
+
+test('optional event thumbnails validate and appear in both public card and detail without leaking drafts',()=>{
+ const m=model(),e=m.events.events[0];e.thumbnailUrl='https://images.example/event.jpg';
+ const data=projectEvents(check(m));const {eventCards}=require('../lib/feature-pages');
+ assert.match(eventCards(data.events,t),/class="content-thumbnail event-cover"/);assert.match(eventCards(data.events,t),/src="https:\/\/images.example\/event.jpg"/);assert.match(eventPage(e,t,data),/event-cover-detail/);
+ e.visibility='draft';assert(!projectEvents(check(m)).events.some(row=>row.id===e.id));
+ for(const url of ['javascript:alert(1)','http://images.example/event.jpg','https://images.example/event.jpg?token=secret'])bad(m=>{m.events.events[0].thumbnailUrl=url;});
+});

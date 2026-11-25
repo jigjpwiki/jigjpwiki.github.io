@@ -1,14 +1,9 @@
 {
-  "version": "2.14.0",
+  "version": "2.15.0",
   "changes": [
-    "公開プロフィールと公開履歴の掲載方針を分け、非表示時の情報公開を制御できるようにしました。"
+    "イベント一覧・詳細のデザインを改善し、開催日時に応じた自動分類と16:9のイベントサムネイル表示に対応しました。"
   ],
   "featurePaths": [
-    "/talents/",
-    "/anniversaries/",
-    "/music/",
-    "/music/karaoke/",
-    "/events/",
-    "/goods/"
+    "/events/"
   ]
 }

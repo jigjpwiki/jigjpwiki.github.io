@@ -25,3 +25,26 @@ for (const [entity, id, changes] of [
     await assert.rejects(prepareDraft(snapshot, { ...member, role: "viewer" }, input), /cms_scope_denied/);
   });
 }
+
+test("new standalone organization and group use reservations without changing source records", async () => {
+  const before = JSON.stringify(fixture);
+  for (const input of [
+    { entity: "organization", name: "新規事務所" },
+    { entity: "group", name: "新規グループ", organizationId: fixture.talents.organizations[0].id, talentIds: [] },
+  ]) {
+    const operations = await prepareDraft(snapshot, member, { sha: snapshot.sha, ...input });
+    assert.equal(operations[0].id, undefined);
+    assert.equal(operations[0].value.name, input.name);
+  }
+  assert.equal(JSON.stringify(fixture), before);
+});
+
+test("standalone sales and performances cannot point at unknown parents", async () => {
+  await assert.rejects(prepareDraft(snapshot, member, {
+    entity: "offer", sha: snapshot.sha, productId: "product-999999",
+    url: "https://example.com/shop", price: "100", currency: "JPY",
+  }), /cms_scope_denied/);
+  await assert.rejects(prepareDraft(snapshot, member, {
+    entity: "performance", sha: snapshot.sha, karaokeId: "karaoke-999999", rawLabel: "歌唱",
+  }), /cms_scope_denied/);
+});

@@ -51,7 +51,15 @@ export function mountCmsHistory({ api, editable, revision, afterSave }) {
       record.append(node("h4", title));
       for (const field of changedFields) {
         const value = (row) => row && Object.hasOwn(row, field) ? JSON.stringify(row[field], null, 2) : "未設定";
-        record.append(node("p", field), node("pre", "変更前 " + value(before)), node("pre", "変更後 " + value(after)));
+        const diff = node("div");
+        diff.className = "cms-diff";
+        for (const [label, row, kind] of [["変更前", before, "before"], ["変更後", after, "after"]]) {
+          const cell = node("div");
+          cell.dataset.diff = kind;
+          cell.append(node("small", label), node("pre", value(row)));
+          diff.append(cell);
+        }
+        record.append(node("p", field), diff);
       }
       if (editable && operation.reversible)
         record.append(button("取り消しを下書きに追加", async () => {

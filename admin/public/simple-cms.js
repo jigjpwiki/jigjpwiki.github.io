@@ -73,6 +73,7 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
   const formArea = el("section");
   const list = el("section");
   const draftsArea = el("section");
+  draftsArea.className = "cms-drafts-area stack";
   const workspaceArea = el("div");
   workspaceArea.className = "cms-collection-workspace";
   if (browsing && view !== "legacy") {
@@ -108,7 +109,13 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
   formArea.hidden = true;
   let refreshList = () => {};
   const publicationArea = el("section");
+  publicationArea.className = "cms-publication-area stack";
   const publicationStatus = el("p");
+  publicationStatus.className = "cms-publication-status";
+  const publicationProgress = el("ol");
+  publicationProgress.className = "cms-publication-progress";
+  const publicationMeta = el("div");
+  publicationMeta.className = "cms-publication-meta";
   const publishedRecords = el("details");
   publishedRecords.hidden = true;
   publicationStatus.setAttribute("role", "status");
@@ -118,7 +125,7 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
     ["legacy", "publication", "dashboard", "drafts"].includes(view);
   if (tracksPublication) {
     publicationArea.hidden = !["legacy", "publication", "dashboard"].includes(view);
-    publicationArea.append(el("h3", "公開状況"), publicationStatus, publishedRecords);
+    publicationArea.append(el("h3", "公開状況"), publicationStatus, publicationProgress, publicationMeta, publishedRecords);
     panel.insertBefore(publicationArea, draftsArea);
   }
 
@@ -131,10 +138,6 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
     publication = value;
     reconcileButton.hidden = publication?.phase !== "unconfirmed" || !publication.commit;
     const labels = {
-  name: ["名称", "text"], status: ["販売状態", "select"], periodNote: ["販売条件・補足", "textarea"],
-  currency: ["通貨", "text"], rawLabel: ["曲名・表示名", "text"],
-  order: ["曲順", "number"], startsAtSeconds: ["開始秒（任意）", "number"],
-  endsAtSeconds: ["終了秒（任意）", "number"], verification: ["確認状態", "select"],
       queued: "公開の順番待ち", candidate: "変更候補を作成中",
       checking: "検証中", promoting: "反映中", pages: "公開サイトへの反映待ち",
       published: "公開サイトへの反映を確認しました", failed: "公開できませんでした。下書きは保存されています。",
@@ -150,6 +153,29 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
     publicationStatus.textContent = publication
       ? (labels[publication.phase] || "公開状況を確認中") + (errors[publication.error] || "")
       : "公開処理はありません。";
+    publicationStatus.dataset.phase = publication?.phase || "idle";
+    const stages = [
+      ["queued", "順番待ち"], ["candidate", "候補作成"], ["checking", "CI検証"],
+      ["promoting", "main反映"], ["pages", "サイト反映"], ["published", "完了"],
+    ];
+    const stage = stages.findIndex(([key]) => key === publication?.phase);
+    publicationProgress.hidden = stage < 0;
+    publicationProgress.replaceChildren(...stages.map(([key, label], index) => {
+      const item = el("li", label);
+      item.dataset.progress = index < stage ? "done" : index === stage ? "current" : "pending";
+      if (index === stage) item.setAttribute("aria-current", "step");
+      return item;
+    }));
+    publicationMeta.replaceChildren();
+    if (publication?.createdAt && Number.isFinite(Date.parse(publication.createdAt)))
+      publicationMeta.append(el("p", "受付日時：" + new Date(publication.createdAt).toLocaleString("ja-JP", { timeZone: "Asia/Tokyo" })));
+    if (/^[0-9a-f]{40}$/.test(publication?.commit || "")) {
+      const commit = el("a", "コミット " + publication.commit.slice(0, 8));
+      commit.href = "https://github.com/jigjpwiki/jigjpwiki.github.io/commit/" + publication.commit;
+      commit.target = "_blank";
+      commit.rel = "noopener noreferrer";
+      publicationMeta.append(commit);
+    }
     const records = publication?.createdRecords || [];
     publishedRecords.hidden = records.length === 0;
     const list = el("ul");
@@ -202,20 +228,27 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
   async function refreshDrafts(reuse = false) {
     if (reuse !== true) saved = await api("/api/cms/draft");
     revision = saved.revision;
-    draftsArea.replaceChildren(el("h3", "保存済みの下書き"));
+    const draftHeading = el("div");
+    draftHeading.className = "cms-section-heading";
+    draftHeading.append(el("h3", "保存済みの下書き"), el("span", saved.drafts.length + "件"));
+    draftsArea.replaceChildren(draftHeading);
     refreshList();
     const eligible = new Set(saved.drafts.filter(({ conflict, reapplyJobId }) => !conflict && !reapplyJobId).map(({ draftId }) => draftId));
     for (const draftId of selectedDrafts) if (!eligible.has(draftId)) selectedDrafts.delete(draftId);
+    let updateSelection = () => {};
     if (catalog.publishable) {
       const reviewArea = el("section");
-      reviewArea.className = "stack";
+      reviewArea.className = "stack cms-review-area";
+      const selection = el("span");
+      selection.setAttribute("role", "status");
       const publish = button("選択した下書きを確認", async () => {
-        if (!selectedDrafts.size) return;
+        if (!selectedDrafts.size || selectedDrafts.size > 12) return;
         publish.disabled = true;
         try {
           const draftIds = [...selectedDrafts];
           const checkedRevision = revision;
           const result = await api("/api/cms/publication/preview", "POST", { draftIds, revision });
+          if (checkedRevision !== revision || draftIds.length !== selectedDrafts.size || draftIds.some((id) => !selectedDrafts.has(id))) return;
           reviewArea.replaceChildren(el("h3", "公開する変更"));
           for (const record of result.records) {
             const section = el("section");
@@ -223,9 +256,15 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
             section.append(el("h4", record.name));
             for (const change of record.changes) {
               const format = (value) => value === null ? "未設定" : JSON.stringify(value, null, 2);
-              section.append(el("p", change.field),
-                el("pre", "変更前 " + format(change.before)),
-                el("pre", "変更後 " + format(change.after)));
+              const diff = el("div");
+              diff.className = "cms-diff";
+              for (const [label, value, kind] of [["変更前", change.before, "before"], ["変更後", change.after, "after"]]) {
+                const cell = el("div");
+                cell.dataset.diff = kind;
+                cell.append(el("small", label), el("pre", format(value)));
+                diff.append(cell);
+              }
+              section.append(el("p", change.field), diff);
             }
             reviewArea.append(section);
           }
@@ -234,6 +273,11 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
           const label = el("label", "変更内容を確認しました");
           label.prepend(confirmation);
           const submit = button("確認した変更を公開", async () => {
+            if (!confirmation.checked || checkedRevision !== revision || draftIds.length !== selectedDrafts.size ||
+              draftIds.some((id) => !selectedDrafts.has(id))) {
+              reviewArea.replaceChildren(el("p", "選択または下書きが変更されました。再度差分を確認してください。"));
+              return;
+            }
             submit.disabled = true;
             try {
               await api("/api/cms/publication", "POST", {
@@ -255,26 +299,43 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
             ? "発行済みレコードに紐づけてから変更を確認してください。"
             : "変更を確認できませんでした。最新の下書きと担当範囲を確認してください。";
         } finally {
-          publish.disabled = false;
+          publish.disabled = selectedDrafts.size === 0 || selectedDrafts.size > 12;
         }
       });
-      draftsArea.append(el("p", "公開する下書きを選んでください。"), publish, reviewArea);
+      publish.className = "primary";
+      updateSelection = () => {
+        selection.textContent = selectedDrafts.size + "件選択中（最大12件）";
+        publish.disabled = selectedDrafts.size === 0 || selectedDrafts.size > 12;
+        reviewArea.replaceChildren();
+      };
+      updateSelection();
+      const controls = el("div");
+      controls.className = "cms-draft-controls";
+      controls.append(selection, publish);
+      draftsArea.append(el("p", "公開する下書きを選んでください。"), controls, reviewArea);
     }
     if (!saved.drafts.length) draftsArea.append(el("p", "保存済みの下書きはありません。"));
     for (const { draftId, input, conflict, reapplyJobId } of saved.drafts) {
       const row = el("div");
-      row.className = "button-group";
+      row.className = "cms-draft-row button-group";
       if (catalog.publishable && !conflict && !reapplyJobId) {
         const checkbox = el("input");
         checkbox.type = "checkbox";
         checkbox.checked = selectedDrafts.has(draftId);
-        checkbox.onchange = () => checkbox.checked ? selectedDrafts.add(draftId) : selectedDrafts.delete(draftId);
+        checkbox.onchange = () => {
+          if (checkbox.checked) selectedDrafts.add(draftId); else selectedDrafts.delete(draftId);
+          updateSelection();
+        };
         const label = el("label", "公開する");
         checkbox.setAttribute("aria-label", (input?.title || input?.displayName || input?.rawSongTitle || input?.name || input?.rawLabel || input?.id || "下書き") + "を公開する");
         label.prepend(checkbox);
         row.append(label);
       }
       const draftName = input?.title || input?.displayName || input?.rawSongTitle || input?.name || input?.rawLabel || input?.id || "下書き";
+      const meta = el("span", (categories[input?.entity]?.label || "コンテンツ") + "・" +
+        (input?.id ? "既存更新" : input ? "新規登録" : "要確認") + (conflict ? "・競合あり" : reapplyJobId ? "・再適用が必要" : "・保存済み"));
+      meta.className = "cms-draft-meta";
+      row.append(meta);
       if (conflict) row.append(el("p", draftName + "：元の情報が変更されたか、現在の担当範囲外です。"));
       else if (input && Object.hasOwn(categories, input.entity)) row.append(button(draftName, () => edit(input.entity, input, draftId)));
       if (conflict) row.append(button("最新の情報と比較", async () => {
@@ -301,7 +362,8 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
         }));
       }
       row.append(button("この下書きを破棄", async () => {
-        if (!confirm("この下書きを破棄しますか？")) return;
+        if (saving || !confirm(formArea.dataset.draftId === draftId && panel.dataset.cmsDirty ?
+          "未保存の入力を含め、この下書きを破棄しますか？" : "この下書きを破棄しますか？")) return;
         try {
           await api("/api/cms/draft", "DELETE", { draftId, revision });
           if (formArea.dataset.draftId === draftId) closeEditor(true);
@@ -335,11 +397,7 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
       const wrapping = el("label", label);
       control.value = input[key] ?? (["format", "activity"].includes(key) ? "unknown" : key === "kind" ? "birthday" : key === "visibility" ? "public" : "");
       wrapping.append(control);
-      if (control.required) {
-        const required = el("small", "必須");
-        required.className = "cms-required";
-        wrapping.prepend(required);
-      }
+      if (control.required) wrapping.dataset.required = "true";
       const field = el("div");
       field.className = "cms-field";
       if (control.matches("textarea,input[type=url]") || ["name", "title", "displayName", "rawLabel", "rawSongTitle"].includes(key)) field.classList.add("wide");
@@ -737,6 +795,11 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
     saveStatus.setAttribute("role", "status");
     saveStatus.className = "cms-save-status";
     footer.append(saveStatus, submit);
+    if (catalog.editable && view !== "legacy") {
+      const draftsLink = el("a", "下書きへ");
+      draftsLink.href = "#drafts";
+      footer.append(draftsLink);
+    }
     form.append(footer);
     form.addEventListener("invalid", (event) => {
       const control = event.target;
@@ -854,13 +917,31 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
   }
   if (view === "dashboard") {
     const shortcuts = el("div");
-    shortcuts.className = "cms-toolbar";
-    for (const { entity, label } of catalog.sections) {
-      const link = el("a", label);
+    shortcuts.className = "cms-dashboard-collections";
+    const intro = el("p", "編集するコレクションを選択してください。変更は下書きに保存され、確認・検証後に公開されます。");
+    const summary = el("div");
+    summary.className = "cms-dashboard-summary";
+    if (catalog.editable && saved) {
+      for (const [label, count, route] of [
+        ["保存済みの下書き", saved.drafts.length, "#drafts"],
+        ["要確認の下書き", saved.drafts.filter((item) => item.conflict || item.reapplyJobId).length, "#drafts"],
+      ]) {
+        const link = el("a");
+        link.href = route;
+        link.append(el("span", label), el("strong", String(count)));
+        summary.append(link);
+      }
+    }
+    const heading = el("h3", "コレクション");
+    for (const { entity, label, items } of catalog.sections) {
+      const link = el("a");
       link.href = "#content/" + entity;
+      link.append(el("strong", label), el("span", items.length + "件"));
       shortcuts.append(link);
     }
-    panel.append(el("h3", "コンテンツ"), shortcuts);
+    panel.insertBefore(intro, draftsArea);
+    if (summary.childElementCount) panel.insertBefore(summary, draftsArea);
+    panel.append(heading, shortcuts);
   }
   if (!browsing) {
     if (saveAvailable) status.textContent = "";

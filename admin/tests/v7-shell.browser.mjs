@@ -91,8 +91,18 @@ test("all roles share the shell and separate collections while viewers have read
           await table.getByRole("button", { name: label + "の試験レコード", exact: true }).click();
           await page.getByLabel("表示名", { exact: true }).waitFor();
           assert.equal(await page.getByLabel("表示名", { exact: true }).isEnabled(), role !== "viewer");
+          assert.equal(await page.getByLabel("公開サイトへの掲載状態", { exact: true }).isEnabled(), role !== "viewer");
+          assert.ok(await page.locator(".cms-collection-workspace.has-editor").count());
+          if (process.env.ADMIN_V7_SCREENSHOTS) {
+            await mkdir(process.env.ADMIN_V7_SCREENSHOTS, { recursive: true });
+            await page.screenshot({ path: path.join(process.env.ADMIN_V7_SCREENSHOTS, role + "-editor.png"), fullPage: true });
+          }
           await page.getByRole("button", { name: "閉じる", exact: true }).click();
           assert.equal(await page.locator(".cms-editor").isVisible(), false);
+          await page.goto(base + "/#content/talent?record=talent-001");
+          await page.getByLabel("表示名", { exact: true }).waitFor();
+          assert.equal(await page.locator(".cms-editor").isVisible(), true);
+          await page.getByRole("button", { name: "閉じる", exact: true }).click();
         }
         assert.equal(await page.evaluate(() => document.documentElement.scrollWidth > innerWidth), false);
         if (process.env.ADMIN_V7_SCREENSHOTS && ["talent", "campaign"].includes(entity)) {

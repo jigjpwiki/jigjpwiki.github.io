@@ -7,8 +7,10 @@
     "test": "node --test tests/*.test.mjs",
     "dev": "npm run build && WRANGLER_SEND_METRICS=false XDG_CONFIG_HOME=\"$PWD/.wrangler-config\" wrangler dev --config wrangler.jsonc --local --local-protocol https --port 8787",
     "check": "npm run build && WRANGLER_SEND_METRICS=false XDG_CONFIG_HOME=\"$PWD/.wrangler-config\" wrangler deploy --dry-run --config wrangler.jsonc --outdir build/dry-run",
-    "test:browser": "node tests/browser.mjs && node tests/content.browser.mjs && ADMIN_QUALITY_ONLY=1 node tests/content.browser.mjs && ADMIN_VNEXT5_ONLY=1 node tests/content.browser.mjs && node --test tests/cms.browser.mjs tests/cms-collaboration.browser.mjs && node --test tests/v7-shell.browser.mjs",
-    "test:worker": "npm run build && node tests/workerd.mjs"
+    "test:browser": "npm run test:browser:legacy && npm run test:browser:cms",
+    "test:worker": "npm run build && node tests/workerd.mjs",
+    "test:browser:legacy": "node tests/browser.mjs && node tests/content.browser.mjs && ADMIN_QUALITY_ONLY=1 node tests/content.browser.mjs && ADMIN_VNEXT5_ONLY=1 node tests/content.browser.mjs && node --test tests/cms.browser.mjs tests/cms-collaboration.browser.mjs",
+    "test:browser:cms": "node --test tests/v7-shell.browser.mjs"
   },
   "devDependencies": {
     "esbuild": "0.27.0",

@@ -1,0 +1,265 @@
+{
+  "version": 2,
+  "batchId": "uhiJgr3HbtFGU9sdXPmFS7I1yZWvg8QK98UXb73XF4c",
+  "actor": "900122208316251340881522085640042137117242",
+  "createdAt": "2026-11-25T08:09:02.930Z",
+  "baseCommit": "00e9386dbaef304b193c70610df78879488bb160",
+  "reason": null,
+  "submissionId": "uhiJgr3HbtFGU9sdXPmFS7I1yZWvg8QK98UXb73XF4c",
+  "branch": "admin/change-uhiJgr3HbtFGU9sdXPmFS7I1yZWvg8QK98UXb73XF4c",
+  "operations": [
+    {
+      "operationId": "cms-song-8052b3d24efc4449b1f19e34",
+      "entity": "song",
+      "recordId": "song-000064",
+      "action": "edit",
+      "changedFields": [
+        "originalArtists",
+        "readings"
+      ],
+      "before": {
+        "title": "君がいるから",
+        "originalArtists": [
+          "Palette Project、暁月クララ、七海ロナ、遠坂ユラ、藤宮コトハ、常磐カナメ、神菜コハネ、江波キョウカ、鬼多見アユム、香鳴ハノン"
+        ],
+        "identityUrl": "https://www.youtube.com/watch?v=6U3SnYYLbPI",
+        "aliases": [],
+        "readings": [],
+        "visibility": "public",
+        "id": "song-000064"
+      },
+      "after": {
+        "title": "君がいるから",
+        "originalArtists": [
+          "Palette Project",
+          "暁月クララ",
+          "七海ロナ",
+          "遠坂ユラ",
+          "藤宮コトハ",
+          "常磐カナメ",
+          "神菜コハネ",
+          "江波キョウカ",
+          "鬼多見アユム",
+          "香鳴ハノン"
+        ],
+        "identityUrl": "https://www.youtube.com/watch?v=6U3SnYYLbPI",
+        "aliases": [],
+        "readings": [
+          "きみがいるから"
+        ],
+        "visibility": "public",
+        "id": "song-000064"
+      }
+    },
+    {
+      "operationId": "cms-musicvideo-d50195ca7e3f49ac8a5dd65a",
+      "entity": "musicVideo",
+      "recordId": "mv-000006",
+      "action": "edit",
+      "changedFields": [
+        "talentIds",
+        "songId"
+      ],
+      "before": {
+        "talentIds": [
+          "tal-000008"
+        ],
+        "visibility": "public",
+        "youtubeId": "8UE4KHm7sF0",
+        "type": "original",
+        "songId": null,
+        "registeredAt": "2026-11-25T06:38:08.935Z",
+        "rawSongTitle": "StAlt!!",
+        "id": "mv-000006"
+      },
+      "after": {
+        "talentIds": [
+          "tal-000008",
+          "tal-000005"
+        ],
+        "visibility": "public",
+        "youtubeId": "8UE4KHm7sF0",
+        "type": "original",
+        "songId": "song-000058",
+        "registeredAt": "2026-11-25T06:38:08.935Z",
+        "rawSongTitle": "StAlt!!",
+        "id": "mv-000006"
+      }
+    },
+    {
+      "operationId": "cms-musicvideo-5a0ef8e1049a4996b9dcd945",
+      "entity": "musicVideo",
+      "recordId": "mv-000007",
+      "action": "edit",
+      "changedFields": [
+        "talentIds",
+        "songId"
+      ],
+      "before": {
+        "talentIds": [
+          "tal-000008"
+        ],
+        "visibility": "public",
+        "youtubeId": "EQybHllR2mQ",
+        "type": "original",
+        "songId": null,
+        "registeredAt": "2026-11-25T06:38:44.093Z",
+        "rawSongTitle": "Three Piece",
+        "id": "mv-000007"
+      },
+      "after": {
+        "talentIds": [
+          "tal-000008",
+          "tal-000005"
+        ],
+        "visibility": "public",
+        "youtubeId": "EQybHllR2mQ",
+        "type": "original",
+        "songId": "song-000059",
+        "registeredAt": "2026-11-25T06:38:44.093Z",
+        "rawSongTitle": "Three Piece",
+        "id": "mv-000007"
+      }
+    },
+    {
+      "operationId": "cms-musicvideo-f1fe2c159a81469897c30834",
+      "entity": "musicVideo",
+      "recordId": "mv-000008",
+      "action": "edit",
+      "changedFields": [
+        "talentIds",
+        "songId"
+      ],
+      "before": {
+        "talentIds": [
+          "tal-000008"
+        ],
+        "visibility": "public",
+        "youtubeId": "zgJhhzIbWmI",
+        "type": "original",
+        "songId": null,
+        "registeredAt": "2026-11-25T06:39:16.373Z",
+        "rawSongTitle": "Hello My Stage!",
+        "id": "mv-000008"
+      },
+      "after": {
+        "talentIds": [
+          "tal-000008",
+          "tal-000005"
+        ],
+        "visibility": "public",
+        "youtubeId": "zgJhhzIbWmI",
+        "type": "original",
+        "songId": "song-000060",
+        "registeredAt": "2026-11-25T06:39:16.373Z",
+        "rawSongTitle": "Hello My Stage!",
+        "id": "mv-000008"
+      }
+    },
+    {
+      "operationId": "cms-musicvideo-8717f4c51ad7453098a8b905",
+      "entity": "musicVideo",
+      "recordId": "mv-000009",
+      "action": "edit",
+      "changedFields": [
+        "talentIds",
+        "songId"
+      ],
+      "before": {
+        "talentIds": [
+          "tal-000008"
+        ],
+        "visibility": "public",
+        "youtubeId": "W9J8iokDE9k",
+        "type": "original",
+        "songId": null,
+        "registeredAt": "2026-11-25T06:39:39.929Z",
+        "rawSongTitle": "たのしむーぶ",
+        "id": "mv-000009"
+      },
+      "after": {
+        "talentIds": [
+          "tal-000008",
+          "tal-000005"
+        ],
+        "visibility": "public",
+        "youtubeId": "W9J8iokDE9k",
+        "type": "original",
+        "songId": "song-000061",
+        "registeredAt": "2026-11-25T06:39:39.929Z",
+        "rawSongTitle": "たのしむーぶ",
+        "id": "mv-000009"
+      }
+    },
+    {
+      "operationId": "cms-musicvideo-1c1ea8c59a934085a1429962",
+      "entity": "musicVideo",
+      "recordId": "mv-000010",
+      "action": "edit",
+      "changedFields": [
+        "talentIds",
+        "songId"
+      ],
+      "before": {
+        "talentIds": [
+          "tal-000008"
+        ],
+        "visibility": "public",
+        "youtubeId": "BZBrsxqCPO8",
+        "type": "original",
+        "songId": null,
+        "registeredAt": "2026-11-25T06:39:56.693Z",
+        "rawSongTitle": "Dramatic Parade",
+        "id": "mv-000010"
+      },
+      "after": {
+        "talentIds": [
+          "tal-000008",
+          "tal-000005"
+        ],
+        "visibility": "public",
+        "youtubeId": "BZBrsxqCPO8",
+        "type": "original",
+        "songId": "song-000062",
+        "registeredAt": "2026-11-25T06:39:56.693Z",
+        "rawSongTitle": "Dramatic Parade",
+        "id": "mv-000010"
+      }
+    },
+    {
+      "operationId": "cms-musicvideo-89b84494c5174e15abc68ac8",
+      "entity": "musicVideo",
+      "recordId": "mv-000011",
+      "action": "edit",
+      "changedFields": [
+        "talentIds",
+        "songId"
+      ],
+      "before": {
+        "talentIds": [
+          "tal-000008"
+        ],
+        "visibility": "public",
+        "youtubeId": "BjUYdESsW90",
+        "type": "original",
+        "songId": null,
+        "registeredAt": "2026-11-25T06:40:26.783Z",
+        "rawSongTitle": "アナログハート",
+        "id": "mv-000011"
+      },
+      "after": {
+        "talentIds": [
+          "tal-000008",
+          "tal-000005"
+        ],
+        "visibility": "public",
+        "youtubeId": "BjUYdESsW90",
+        "type": "original",
+        "songId": "song-000063",
+        "registeredAt": "2026-11-25T06:40:26.783Z",
+        "rawSongTitle": "アナログハート",
+        "id": "mv-000011"
+      }
+    }
+  ]
+}

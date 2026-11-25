@@ -742,11 +742,22 @@
     {
       "title": "君がいるから",
       "originalArtists": [
-        "Palette Project、暁月クララ、七海ロナ、遠坂ユラ、藤宮コトハ、常磐カナメ、神菜コハネ、江波キョウカ、鬼多見アユム、香鳴ハノン"
+        "Palette Project",
+        "暁月クララ",
+        "七海ロナ",
+        "遠坂ユラ",
+        "藤宮コトハ",
+        "常磐カナメ",
+        "神菜コハネ",
+        "江波キョウカ",
+        "鬼多見アユム",
+        "香鳴ハノン"
       ],
       "identityUrl": "https://www.youtube.com/watch?v=6U3SnYYLbPI",
       "aliases": [],
-      "readings": [],
+      "readings": [
+        "きみがいるから"
+      ],
       "visibility": "public",
       "id": "song-000064"
     }
@@ -820,72 +831,78 @@
     },
     {
       "talentIds": [
-        "tal-000008"
+        "tal-000008",
+        "tal-000005"
       ],
       "visibility": "public",
       "youtubeId": "8UE4KHm7sF0",
       "type": "original",
-      "songId": null,
+      "songId": "song-000058",
       "registeredAt": "2026-11-25T06:38:08.935Z",
       "rawSongTitle": "StAlt!!",
       "id": "mv-000006"
     },
     {
       "talentIds": [
-        "tal-000008"
+        "tal-000008",
+        "tal-000005"
       ],
       "visibility": "public",
       "youtubeId": "EQybHllR2mQ",
       "type": "original",
-      "songId": null,
+      "songId": "song-000059",
       "registeredAt": "2026-11-25T06:38:44.093Z",
       "rawSongTitle": "Three Piece",
       "id": "mv-000007"
     },
     {
       "talentIds": [
-        "tal-000008"
+        "tal-000008",
+        "tal-000005"
       ],
       "visibility": "public",
       "youtubeId": "zgJhhzIbWmI",
       "type": "original",
-      "songId": null,
+      "songId": "song-000060",
       "registeredAt": "2026-11-25T06:39:16.373Z",
       "rawSongTitle": "Hello My Stage!",
       "id": "mv-000008"
     },
     {
       "talentIds": [
-        "tal-000008"
+        "tal-000008",
+        "tal-000005"
       ],
       "visibility": "public",
       "youtubeId": "W9J8iokDE9k",
       "type": "original",
-      "songId": null,
+      "songId": "song-000061",
       "registeredAt": "2026-11-25T06:39:39.929Z",
       "rawSongTitle": "たのしむーぶ",
       "id": "mv-000009"
     },
     {
       "talentIds": [
-        "tal-000008"
+        "tal-000008",
+        "tal-000005"
       ],
       "visibility": "public",
       "youtubeId": "BZBrsxqCPO8",
       "type": "original",
-      "songId": null,
+      "songId": "song-000062",
       "registeredAt": "2026-11-25T06:39:56.693Z",
       "rawSongTitle": "Dramatic Parade",
       "id": "mv-000010"
     },
     {
       "talentIds": [
-        "tal-000008"
+        "tal-000008",
+        "tal-000005"
       ],
       "visibility": "public",
       "youtubeId": "BjUYdESsW90",
       "type": "original",
-      "songId": null,
+      "songId": "song-000063",
       "registeredAt": "2026-11-25T06:40:26.783Z",
       "rawSongTitle": "アナログハート",
       "id": "mv-000011"

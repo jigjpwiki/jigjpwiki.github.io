@@ -617,7 +617,11 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
     };
     delete panel.dataset.cmsDirty;
     formArea.dataset.draftId = draftId || "";
-    formArea.replaceChildren(el("h3", spec.label + (input.id ? "を編集" : "を登録")), form);
+    if (!catalog.editable) {
+      for (const control of form.querySelectorAll("input,select,textarea,button")) control.disabled = true;
+      submit.hidden = true;
+    }
+    formArea.replaceChildren(el("h3", spec.label + (catalog.editable ? input.id ? "を編集" : "を登録" : "の詳細")), form);
     form.querySelector("input")?.focus();
   }
   if (saved) await refreshDrafts();
@@ -719,7 +723,7 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
     for (const item of items) {
       const li = el("tr");
       const name = el("td");
-      if (!catalog.editable || !Object.hasOwn(categories, entity)) name.textContent = item.title;
+      if (!Object.hasOwn(categories, entity)) name.textContent = item.title;
       else name.append(button(item.title, () => openRecord(entity, item.id)));
       li.append(name, el("td", item.id), el("td", saved?.drafts.some(({ input }) => input?.entity === entity && input.id === item.id) ? "下書きあり" : ""));
       rows.push({ title: item.title || "名称未登録", li });

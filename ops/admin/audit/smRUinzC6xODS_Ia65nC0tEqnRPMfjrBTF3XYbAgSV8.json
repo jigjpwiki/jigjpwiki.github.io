@@ -1,0 +1,495 @@
+{
+  "version": 2,
+  "batchId": "smRUinzC6xODS_Ia65nC0tEqnRPMfjrBTF3XYbAgSV8",
+  "actor": "900122208316251340881522085640042137117242",
+  "createdAt": "2026-11-25T10:55:10.668Z",
+  "baseCommit": "f5166f879ed3fbd2cdf6559f5b3674d8c3969164",
+  "reason": null,
+  "submissionId": "smRUinzC6xODS_Ia65nC0tEqnRPMfjrBTF3XYbAgSV8",
+  "branch": "admin/change-smRUinzC6xODS_Ia65nC0tEqnRPMfjrBTF3XYbAgSV8",
+  "operations": [
+    {
+      "operationId": "cms-song-1f9359ab35fc4c25b2dfe776",
+      "entity": "song",
+      "recordId": "song-000065",
+      "action": "edit",
+      "changedFields": [
+        "originalArtists"
+      ],
+      "before": {
+        "title": "きっと、アイだね",
+        "originalArtists": [
+          "Palette Project"
+        ],
+        "identityUrl": "https://www.youtube.com/watch?v=EPdxY1FtDgw",
+        "aliases": [],
+        "readings": [],
+        "visibility": "public",
+        "id": "song-000065"
+      },
+      "after": {
+        "title": "きっと、アイだね",
+        "originalArtists": [
+          "Palette Project",
+          "暁月クララ",
+          "七海ロナ",
+          "遠坂ユラ",
+          "藤宮コトハ",
+          "常磐カナメ",
+          "神菜コハネ",
+          "江波キョウカ",
+          "鬼多見アユム",
+          "香鳴ハノン"
+        ],
+        "identityUrl": "https://www.youtube.com/watch?v=EPdxY1FtDgw",
+        "aliases": [],
+        "readings": [],
+        "visibility": "public",
+        "id": "song-000065"
+      }
+    },
+    {
+      "operationId": "cms-song-15a672d1e2b94857b3a5b89e",
+      "entity": "song",
+      "recordId": "song-000066",
+      "action": "edit",
+      "changedFields": [
+        "originalArtists",
+        "readings"
+      ],
+      "before": {
+        "title": "君と歌いたい歌がある",
+        "originalArtists": [
+          "Palette Project"
+        ],
+        "identityUrl": "https://www.youtube.com/watch?v=VjxEazY_CDE",
+        "aliases": [],
+        "readings": [],
+        "visibility": "public",
+        "id": "song-000066"
+      },
+      "after": {
+        "title": "君と歌いたい歌がある",
+        "originalArtists": [
+          "Palette Project",
+          "暁月クララ",
+          "七海ロナ",
+          "藤宮コトハ",
+          "常磐カナメ",
+          "神菜コハネ",
+          "江波キョウカ",
+          "鬼多見アユム",
+          "香鳴ハノン"
+        ],
+        "identityUrl": "https://www.youtube.com/watch?v=VjxEazY_CDE",
+        "aliases": [],
+        "readings": [
+          "きみとうたいたいうたがある"
+        ],
+        "visibility": "public",
+        "id": "song-000066"
+      }
+    },
+    {
+      "operationId": "cms-song-7549ff462e3e41fdb2d6974f",
+      "entity": "song",
+      "recordId": "song-000067",
+      "action": "edit",
+      "changedFields": [
+        "originalArtists",
+        "readings"
+      ],
+      "before": {
+        "title": "夏ゆきトキメキHigh Tension!",
+        "originalArtists": [
+          "Palette Project"
+        ],
+        "identityUrl": "https://www.youtube.com/watch?v=9FGRNVDZIz0",
+        "aliases": [],
+        "readings": [],
+        "visibility": "public",
+        "id": "song-000067"
+      },
+      "after": {
+        "title": "夏ゆきトキメキHigh Tension!",
+        "originalArtists": [
+          "Palette Project",
+          "暁月クララ",
+          "七海ロナ",
+          "藤宮コトハ",
+          "常磐カナメ",
+          "神菜コハネ",
+          "江波キョウカ",
+          "鬼多見アユム",
+          "香鳴ハノン"
+        ],
+        "identityUrl": "https://www.youtube.com/watch?v=9FGRNVDZIz0",
+        "aliases": [],
+        "readings": [
+          "なつゆきトキメキハイテンション!"
+        ],
+        "visibility": "public",
+        "id": "song-000067"
+      }
+    },
+    {
+      "operationId": "cms-song-48f8a57f994341fda617a847",
+      "entity": "song",
+      "recordId": "song-000068",
+      "action": "edit",
+      "changedFields": [
+        "originalArtists"
+      ],
+      "before": {
+        "title": "カラフル⭐︎パンチライン",
+        "originalArtists": [
+          "Palette Project"
+        ],
+        "identityUrl": "https://www.youtube.com/watch?v=c-W7UQ8nS-0",
+        "aliases": [],
+        "readings": [],
+        "visibility": "public",
+        "id": "song-000068"
+      },
+      "after": {
+        "title": "カラフル⭐︎パンチライン",
+        "originalArtists": [
+          "Palette Project",
+          "暁月クララ",
+          "七海ロナ",
+          "藤宮コトハ",
+          "常磐カナメ",
+          "神菜コハネ",
+          "江波キョウカ",
+          "鬼多見アユム",
+          "香鳴ハノン"
+        ],
+        "identityUrl": "https://www.youtube.com/watch?v=c-W7UQ8nS-0",
+        "aliases": [],
+        "readings": [],
+        "visibility": "public",
+        "id": "song-000068"
+      }
+    },
+    {
+      "operationId": "cms-song-72c6a41585134203aa87c987",
+      "entity": "song",
+      "recordId": "song-000069",
+      "action": "edit",
+      "changedFields": [
+        "originalArtists"
+      ],
+      "before": {
+        "title": "ドリームインブルーム！",
+        "originalArtists": [
+          "Palette Project"
+        ],
+        "identityUrl": "https://www.youtube.com/watch?v=0M9Y-FUFS78",
+        "aliases": [],
+        "readings": [],
+        "visibility": "public",
+        "id": "song-000069"
+      },
+      "after": {
+        "title": "ドリームインブルーム！",
+        "originalArtists": [
+          "Palette Project",
+          "暁月クララ",
+          "七海ロナ",
+          "藤宮コトハ",
+          "常磐カナメ",
+          "神菜コハネ",
+          "江波キョウカ",
+          "鬼多見アユム",
+          "香鳴ハノン"
+        ],
+        "identityUrl": "https://www.youtube.com/watch?v=0M9Y-FUFS78",
+        "aliases": [],
+        "readings": [],
+        "visibility": "public",
+        "id": "song-000069"
+      }
+    },
+    {
+      "operationId": "cms-song-d747d4e8bb394184b7404de0",
+      "entity": "song",
+      "recordId": "song-000071",
+      "action": "edit",
+      "changedFields": [
+        "originalArtists",
+        "readings"
+      ],
+      "before": {
+        "title": "せーの！虹のファンファーレ",
+        "originalArtists": [
+          "Palette Project"
+        ],
+        "identityUrl": "https://www.youtube.com/watch?v=TFuv-JcyM9w",
+        "aliases": [],
+        "readings": [],
+        "visibility": "public",
+        "id": "song-000071"
+      },
+      "after": {
+        "title": "せーの！虹のファンファーレ",
+        "originalArtists": [
+          "Palette Project",
+          "暁月クララ",
+          "七海ロナ",
+          "藤宮コトハ",
+          "常磐カナメ",
+          "江波キョウカ",
+          "鬼多見アユム",
+          "香鳴ハノン"
+        ],
+        "identityUrl": "https://www.youtube.com/watch?v=TFuv-JcyM9w",
+        "aliases": [],
+        "readings": [
+          "せーの！にじのファンファーレ"
+        ],
+        "visibility": "public",
+        "id": "song-000071"
+      }
+    },
+    {
+      "operationId": "cms-song-6f244b68ffa543cb8be0856f",
+      "entity": "song",
+      "recordId": "song-000070",
+      "action": "edit",
+      "changedFields": [
+        "originalArtists"
+      ],
+      "before": {
+        "title": "キミイロクロニクル",
+        "originalArtists": [
+          "Palette Project"
+        ],
+        "identityUrl": "https://www.youtube.com/watch?v=MAQAR3BjyFg",
+        "aliases": [],
+        "readings": [],
+        "visibility": "public",
+        "id": "song-000070"
+      },
+      "after": {
+        "title": "キミイロクロニクル",
+        "originalArtists": [
+          "Palette Project",
+          "暁月クララ",
+          "七海ロナ",
+          "藤宮コトハ",
+          "常磐カナメ",
+          "江波キョウカ",
+          "鬼多見アユム",
+          "香鳴ハノン"
+        ],
+        "identityUrl": "https://www.youtube.com/watch?v=MAQAR3BjyFg",
+        "aliases": [],
+        "readings": [],
+        "visibility": "public",
+        "id": "song-000070"
+      }
+    },
+    {
+      "operationId": "cms-song-06f3ecc157704cc99c308537",
+      "entity": "song",
+      "recordId": "song-000072",
+      "action": "edit",
+      "changedFields": [
+        "originalArtists",
+        "readings"
+      ],
+      "before": {
+        "title": "Sweet♡Heart☆Palette♪",
+        "originalArtists": [
+          "Palette Project"
+        ],
+        "identityUrl": "https://www.youtube.com/watch?v=YZDFWbzyKp8",
+        "aliases": [],
+        "readings": [],
+        "visibility": "public",
+        "id": "song-000072"
+      },
+      "after": {
+        "title": "Sweet♡Heart☆Palette♪",
+        "originalArtists": [
+          "Palette Project",
+          "暁月クララ",
+          "七海ロナ",
+          "藤宮コトハ",
+          "常磐カナメ",
+          "江波キョウカ",
+          "鬼多見アユム",
+          "香鳴ハノン"
+        ],
+        "identityUrl": "https://www.youtube.com/watch?v=YZDFWbzyKp8",
+        "aliases": [],
+        "readings": [
+          "スウィート♡ハート☆パレット"
+        ],
+        "visibility": "public",
+        "id": "song-000072"
+      }
+    },
+    {
+      "operationId": "cms-song-282a01b7b50c4230bd45a192",
+      "entity": "song",
+      "recordId": "song-000073",
+      "action": "edit",
+      "changedFields": [
+        "originalArtists",
+        "readings"
+      ],
+      "before": {
+        "title": "Realize",
+        "originalArtists": [
+          "Palette Project"
+        ],
+        "identityUrl": "https://www.youtube.com/watch?v=UWi_qGnBHv8",
+        "aliases": [],
+        "readings": [],
+        "visibility": "public",
+        "id": "song-000073"
+      },
+      "after": {
+        "title": "Realize",
+        "originalArtists": [
+          "Palette Project",
+          "暁月クララ",
+          "七海ロナ",
+          "藤宮コトハ",
+          "常磐カナメ",
+          "江波キョウカ",
+          "鬼多見アユム",
+          "香鳴ハノン"
+        ],
+        "identityUrl": "https://www.youtube.com/watch?v=UWi_qGnBHv8",
+        "aliases": [],
+        "readings": [
+          "リアライズ"
+        ],
+        "visibility": "public",
+        "id": "song-000073"
+      }
+    },
+    {
+      "operationId": "cms-song-de2e9bb56dc749a8a5e8fd34",
+      "entity": "song",
+      "recordId": "song-000074",
+      "action": "edit",
+      "changedFields": [
+        "originalArtists",
+        "readings"
+      ],
+      "before": {
+        "title": "Own other side",
+        "originalArtists": [
+          "Palette Project"
+        ],
+        "identityUrl": "https://www.youtube.com/watch?v=wDPJwaXzN4I",
+        "aliases": [],
+        "readings": [],
+        "visibility": "public",
+        "id": "song-000074"
+      },
+      "after": {
+        "title": "Own other side",
+        "originalArtists": [
+          "Palette Project",
+          "暁月クララ",
+          "七海ロナ",
+          "藤宮コトハ",
+          "常磐カナメ",
+          "江波キョウカ",
+          "鬼多見アユム",
+          "香鳴ハノン"
+        ],
+        "identityUrl": "https://www.youtube.com/watch?v=wDPJwaXzN4I",
+        "aliases": [],
+        "readings": [
+          "ワンアザーサイド"
+        ],
+        "visibility": "public",
+        "id": "song-000074"
+      }
+    },
+    {
+      "operationId": "cms-song-2cfbfadf24df4a42a2e41d8f",
+      "entity": "song",
+      "recordId": "song-000075",
+      "action": "edit",
+      "changedFields": [
+        "originalArtists"
+      ],
+      "before": {
+        "title": "ハレバレパレット",
+        "originalArtists": [
+          "Palette Project"
+        ],
+        "identityUrl": "https://www.youtube.com/watch?v=Bv4vfuzcmWc",
+        "aliases": [],
+        "readings": [],
+        "visibility": "public",
+        "id": "song-000075"
+      },
+      "after": {
+        "title": "ハレバレパレット",
+        "originalArtists": [
+          "Palette Project",
+          "暁月クララ",
+          "七海ロナ",
+          "藤宮コトハ",
+          "常磐カナメ",
+          "江波キョウカ",
+          "鬼多見アユム",
+          "香鳴ハノン"
+        ],
+        "identityUrl": "https://www.youtube.com/watch?v=Bv4vfuzcmWc",
+        "aliases": [],
+        "readings": [],
+        "visibility": "public",
+        "id": "song-000075"
+      }
+    },
+    {
+      "operationId": "cms-song-15db0d0584f7407fb74ac757",
+      "entity": "song",
+      "recordId": "song-000076",
+      "action": "edit",
+      "changedFields": [
+        "originalArtists",
+        "readings"
+      ],
+      "before": {
+        "title": "青春の現在地",
+        "originalArtists": [
+          "Palette Project"
+        ],
+        "identityUrl": "https://www.youtube.com/watch?v=JsEbGwNvN6E",
+        "aliases": [],
+        "readings": [],
+        "visibility": "public",
+        "id": "song-000076"
+      },
+      "after": {
+        "title": "青春の現在地",
+        "originalArtists": [
+          "Palette Project",
+          "暁月クララ",
+          "七海ロナ",
+          "藤宮コトハ",
+          "常磐カナメ",
+          "江波キョウカ",
+          "鬼多見アユム",
+          "香鳴ハノン"
+        ],
+        "identityUrl": "https://www.youtube.com/watch?v=JsEbGwNvN6E",
+        "aliases": [],
+        "readings": [
+          "せいしゅんのげんざいち"
+        ],
+        "visibility": "public",
+        "id": "song-000076"
+      }
+    }
+  ]
+}

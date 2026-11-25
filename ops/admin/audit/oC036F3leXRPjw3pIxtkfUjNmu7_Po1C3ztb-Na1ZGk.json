@@ -1,0 +1,1046 @@
+{
+  "version": 2,
+  "batchId": "oC036F3leXRPjw3pIxtkfUjNmu7_Po1C3ztb-Na1ZGk",
+  "actor": "900122208316251340881522085640042137117242",
+  "createdAt": "2026-11-25T13:43:21.246Z",
+  "baseCommit": "c0ee7961725e2bb515efe26a1fa7365e371db82b",
+  "reason": null,
+  "submissionId": "oC036F3leXRPjw3pIxtkfUjNmu7_Po1C3ztb-Na1ZGk",
+  "branch": "admin/change-oC036F3leXRPjw3pIxtkfUjNmu7_Po1C3ztb-Na1ZGk",
+  "operations": [
+    {
+      "operationId": "cms-musicvideo-49b95868d665444babc7650d",
+      "entity": "musicVideo",
+      "recordId": "mv-000032",
+      "action": "create",
+      "changedFields": [
+        "talentIds",
+        "visibility",
+        "youtubeId",
+        "type",
+        "songId",
+        "registeredAt",
+        "rawSongTitle",
+        "id"
+      ],
+      "before": null,
+      "after": {
+        "talentIds": [
+          "tal-000085",
+          "tal-000009",
+          "tal-000012"
+        ],
+        "visibility": "public",
+        "youtubeId": "c6TPK_VNYR4",
+        "type": "original",
+        "songId": "song-000085",
+        "registeredAt": "2026-11-25T13:35:40.175Z",
+        "rawSongTitle": "創造",
+        "id": "mv-000032"
+      }
+    },
+    {
+      "operationId": "cms-media-49b95868d665444babc7650d",
+      "entity": "video",
+      "recordId": "c6TPK_VNYR4",
+      "action": "create",
+      "changedFields": [
+        "youtubeId",
+        "channelId",
+        "title",
+        "publishedAt",
+        "startedAt",
+        "endedAt",
+        "durationSeconds",
+        "availability",
+        "visibility"
+      ],
+      "before": null,
+      "after": {
+        "youtubeId": "c6TPK_VNYR4",
+        "channelId": "UC_cCW1xmXwRFp1tX-RD2X1Q",
+        "title": "【オリジナル曲】『創造』/ REGALILIA 1st【公式MV】",
+        "publishedAt": "2020-09-15T12:00:12.000Z",
+        "startedAt": null,
+        "endedAt": null,
+        "durationSeconds": null,
+        "availability": "public",
+        "visibility": "public"
+      }
+    },
+    {
+      "operationId": "cms-new-song-49b95868d665444babc7650d",
+      "entity": "song",
+      "recordId": "song-000085",
+      "action": "create",
+      "changedFields": [
+        "title",
+        "originalArtists",
+        "identityUrl",
+        "aliases",
+        "readings",
+        "visibility",
+        "id"
+      ],
+      "before": null,
+      "after": {
+        "title": "創造",
+        "originalArtists": [
+          "REGALILIA(遠坂ユラ・江波キョウカ・鬼多見アユム)"
+        ],
+        "identityUrl": "https://www.youtube.com/watch?v=c6TPK_VNYR4",
+        "aliases": [],
+        "readings": [],
+        "visibility": "public",
+        "id": "song-000085"
+      }
+    },
+    {
+      "operationId": "cms-musicvideo-ebb5b315936141399d9b582a",
+      "entity": "musicVideo",
+      "recordId": "mv-000033",
+      "action": "create",
+      "changedFields": [
+        "talentIds",
+        "visibility",
+        "youtubeId",
+        "type",
+        "songId",
+        "registeredAt",
+        "rawSongTitle",
+        "id"
+      ],
+      "before": null,
+      "after": {
+        "talentIds": [
+          "tal-000085",
+          "tal-000009",
+          "tal-000012"
+        ],
+        "visibility": "public",
+        "youtubeId": "-aBAxkT1pJ8",
+        "type": "original",
+        "songId": "song-000086",
+        "registeredAt": "2026-11-25T13:35:57.629Z",
+        "rawSongTitle": "キライラ",
+        "id": "mv-000033"
+      }
+    },
+    {
+      "operationId": "cms-media-ebb5b315936141399d9b582a",
+      "entity": "video",
+      "recordId": "-aBAxkT1pJ8",
+      "action": "create",
+      "changedFields": [
+        "youtubeId",
+        "channelId",
+        "title",
+        "publishedAt",
+        "startedAt",
+        "endedAt",
+        "durationSeconds",
+        "availability",
+        "visibility"
+      ],
+      "before": null,
+      "after": {
+        "youtubeId": "-aBAxkT1pJ8",
+        "channelId": "UC_cCW1xmXwRFp1tX-RD2X1Q",
+        "title": "【オリジナル曲】『キライラ』/ REGALILIA 2nd【公式MV】",
+        "publishedAt": "2020-11-19T12:00:12.000Z",
+        "startedAt": null,
+        "endedAt": null,
+        "durationSeconds": null,
+        "availability": "public",
+        "visibility": "public"
+      }
+    },
+    {
+      "operationId": "cms-new-song-ebb5b315936141399d9b582a",
+      "entity": "song",
+      "recordId": "song-000086",
+      "action": "create",
+      "changedFields": [
+        "title",
+        "originalArtists",
+        "identityUrl",
+        "aliases",
+        "readings",
+        "visibility",
+        "id"
+      ],
+      "before": null,
+      "after": {
+        "title": "キライラ",
+        "originalArtists": [
+          "REGALILIA(遠坂ユラ・江波キョウカ・鬼多見アユム)"
+        ],
+        "identityUrl": "https://www.youtube.com/watch?v=-aBAxkT1pJ8",
+        "aliases": [],
+        "readings": [],
+        "visibility": "public",
+        "id": "song-000086"
+      }
+    },
+    {
+      "operationId": "cms-musicvideo-9bf359e200fa49099839e9e7",
+      "entity": "musicVideo",
+      "recordId": "mv-000034",
+      "action": "create",
+      "changedFields": [
+        "talentIds",
+        "visibility",
+        "youtubeId",
+        "type",
+        "songId",
+        "registeredAt",
+        "rawSongTitle",
+        "id"
+      ],
+      "before": null,
+      "after": {
+        "talentIds": [
+          "tal-000009",
+          "tal-000012"
+        ],
+        "visibility": "public",
+        "youtubeId": "_DH8dSUgPY0",
+        "type": "original",
+        "songId": "song-000087",
+        "registeredAt": "2026-11-25T13:36:30.180Z",
+        "rawSongTitle": "Demon Drivers",
+        "id": "mv-000034"
+      }
+    },
+    {
+      "operationId": "cms-media-9bf359e200fa49099839e9e7",
+      "entity": "video",
+      "recordId": "_DH8dSUgPY0",
+      "action": "create",
+      "changedFields": [
+        "youtubeId",
+        "channelId",
+        "title",
+        "publishedAt",
+        "startedAt",
+        "endedAt",
+        "durationSeconds",
+        "availability",
+        "visibility"
+      ],
+      "before": null,
+      "after": {
+        "youtubeId": "_DH8dSUgPY0",
+        "channelId": "UC_cCW1xmXwRFp1tX-RD2X1Q",
+        "title": "【オリジナル曲】『Demon Drivers』/ REGALILIA 3rd【公式MV】",
+        "publishedAt": "2022-01-14T12:00:11.000Z",
+        "startedAt": null,
+        "endedAt": null,
+        "durationSeconds": null,
+        "availability": "public",
+        "visibility": "public"
+      }
+    },
+    {
+      "operationId": "cms-new-song-9bf359e200fa49099839e9e7",
+      "entity": "song",
+      "recordId": "song-000087",
+      "action": "create",
+      "changedFields": [
+        "title",
+        "originalArtists",
+        "identityUrl",
+        "aliases",
+        "readings",
+        "visibility",
+        "id"
+      ],
+      "before": null,
+      "after": {
+        "title": "Demon Drivers",
+        "originalArtists": [
+          "REGALILIA(江波キョウカ・鬼多見アユム)"
+        ],
+        "identityUrl": "https://www.youtube.com/watch?v=_DH8dSUgPY0",
+        "aliases": [],
+        "readings": [],
+        "visibility": "public",
+        "id": "song-000087"
+      }
+    },
+    {
+      "operationId": "cms-musicvideo-791ed54c19f7480789873df3",
+      "entity": "musicVideo",
+      "recordId": "mv-000035",
+      "action": "create",
+      "changedFields": [
+        "talentIds",
+        "visibility",
+        "youtubeId",
+        "type",
+        "songId",
+        "registeredAt",
+        "rawSongTitle",
+        "id"
+      ],
+      "before": null,
+      "after": {
+        "talentIds": [
+          "tal-000009",
+          "tal-000012"
+        ],
+        "visibility": "public",
+        "youtubeId": "H-MMTZv1Bvo",
+        "type": "original",
+        "songId": "song-000088",
+        "registeredAt": "2026-11-25T13:36:44.020Z",
+        "rawSongTitle": "Tiny Brave",
+        "id": "mv-000035"
+      }
+    },
+    {
+      "operationId": "cms-media-791ed54c19f7480789873df3",
+      "entity": "video",
+      "recordId": "H-MMTZv1Bvo",
+      "action": "create",
+      "changedFields": [
+        "youtubeId",
+        "channelId",
+        "title",
+        "publishedAt",
+        "startedAt",
+        "endedAt",
+        "durationSeconds",
+        "availability",
+        "visibility"
+      ],
+      "before": null,
+      "after": {
+        "youtubeId": "H-MMTZv1Bvo",
+        "channelId": "UC_cCW1xmXwRFp1tX-RD2X1Q",
+        "title": "【オリジナル曲】『Tiny Brave』/ REGALILIA 4th【公式MV】",
+        "publishedAt": "2022-06-26T11:30:11.000Z",
+        "startedAt": null,
+        "endedAt": null,
+        "durationSeconds": null,
+        "availability": "public",
+        "visibility": "public"
+      }
+    },
+    {
+      "operationId": "cms-new-song-791ed54c19f7480789873df3",
+      "entity": "song",
+      "recordId": "song-000088",
+      "action": "create",
+      "changedFields": [
+        "title",
+        "originalArtists",
+        "identityUrl",
+        "aliases",
+        "readings",
+        "visibility",
+        "id"
+      ],
+      "before": null,
+      "after": {
+        "title": "Tiny Brave",
+        "originalArtists": [
+          "REGALILIA(江波キョウカ・鬼多見アユム)"
+        ],
+        "identityUrl": "https://www.youtube.com/watch?v=H-MMTZv1Bvo",
+        "aliases": [],
+        "readings": [],
+        "visibility": "public",
+        "id": "song-000088"
+      }
+    },
+    {
+      "operationId": "cms-musicvideo-38bee90a7bf84066a3396787",
+      "entity": "musicVideo",
+      "recordId": "mv-000036",
+      "action": "create",
+      "changedFields": [
+        "talentIds",
+        "visibility",
+        "youtubeId",
+        "type",
+        "songId",
+        "registeredAt",
+        "rawSongTitle",
+        "id"
+      ],
+      "before": null,
+      "after": {
+        "talentIds": [
+          "tal-000009",
+          "tal-000012"
+        ],
+        "visibility": "public",
+        "youtubeId": "BiCiXFcEIG8",
+        "type": "original",
+        "songId": "song-000089",
+        "registeredAt": "2026-11-25T13:36:57.805Z",
+        "rawSongTitle": "Close to You",
+        "id": "mv-000036"
+      }
+    },
+    {
+      "operationId": "cms-media-38bee90a7bf84066a3396787",
+      "entity": "video",
+      "recordId": "BiCiXFcEIG8",
+      "action": "create",
+      "changedFields": [
+        "youtubeId",
+        "channelId",
+        "title",
+        "publishedAt",
+        "startedAt",
+        "endedAt",
+        "durationSeconds",
+        "availability",
+        "visibility"
+      ],
+      "before": null,
+      "after": {
+        "youtubeId": "BiCiXFcEIG8",
+        "channelId": "UC_cCW1xmXwRFp1tX-RD2X1Q",
+        "title": "【オリジナル曲】『Close to You』/ REGALILIA 5th【公式MV】",
+        "publishedAt": "2022-07-22T10:00:16.000Z",
+        "startedAt": null,
+        "endedAt": null,
+        "durationSeconds": null,
+        "availability": "public",
+        "visibility": "public"
+      }
+    },
+    {
+      "operationId": "cms-new-song-38bee90a7bf84066a3396787",
+      "entity": "song",
+      "recordId": "song-000089",
+      "action": "create",
+      "changedFields": [
+        "title",
+        "originalArtists",
+        "identityUrl",
+        "aliases",
+        "readings",
+        "visibility",
+        "id"
+      ],
+      "before": null,
+      "after": {
+        "title": "Close to You",
+        "originalArtists": [
+          "REGALILIA(江波キョウカ・鬼多見アユム)"
+        ],
+        "identityUrl": "https://www.youtube.com/watch?v=BiCiXFcEIG8",
+        "aliases": [],
+        "readings": [],
+        "visibility": "public",
+        "id": "song-000089"
+      }
+    },
+    {
+      "operationId": "cms-musicvideo-23ebae9fd4ab4126abe0edf8",
+      "entity": "musicVideo",
+      "recordId": "mv-000037",
+      "action": "create",
+      "changedFields": [
+        "talentIds",
+        "visibility",
+        "youtubeId",
+        "type",
+        "songId",
+        "registeredAt",
+        "rawSongTitle",
+        "id"
+      ],
+      "before": null,
+      "after": {
+        "talentIds": [
+          "tal-000009",
+          "tal-000012"
+        ],
+        "visibility": "public",
+        "youtubeId": "agLqIwyJHDA",
+        "type": "original",
+        "songId": "song-000090",
+        "registeredAt": "2026-11-25T13:37:12.410Z",
+        "rawSongTitle": "エンリの花",
+        "id": "mv-000037"
+      }
+    },
+    {
+      "operationId": "cms-media-23ebae9fd4ab4126abe0edf8",
+      "entity": "video",
+      "recordId": "agLqIwyJHDA",
+      "action": "create",
+      "changedFields": [
+        "youtubeId",
+        "channelId",
+        "title",
+        "publishedAt",
+        "startedAt",
+        "endedAt",
+        "durationSeconds",
+        "availability",
+        "visibility"
+      ],
+      "before": null,
+      "after": {
+        "youtubeId": "agLqIwyJHDA",
+        "channelId": "UC_cCW1xmXwRFp1tX-RD2X1Q",
+        "title": "【オリジナル曲】『エンリの花』/ REGALILIA 6th【公式MV】",
+        "publishedAt": "2022-10-25T12:00:07.000Z",
+        "startedAt": null,
+        "endedAt": null,
+        "durationSeconds": null,
+        "availability": "public",
+        "visibility": "public"
+      }
+    },
+    {
+      "operationId": "cms-new-song-23ebae9fd4ab4126abe0edf8",
+      "entity": "song",
+      "recordId": "song-000090",
+      "action": "create",
+      "changedFields": [
+        "title",
+        "originalArtists",
+        "identityUrl",
+        "aliases",
+        "readings",
+        "visibility",
+        "id"
+      ],
+      "before": null,
+      "after": {
+        "title": "エンリの花",
+        "originalArtists": [
+          "REGALILIA(江波キョウカ・鬼多見アユム)"
+        ],
+        "identityUrl": "https://www.youtube.com/watch?v=agLqIwyJHDA",
+        "aliases": [],
+        "readings": [],
+        "visibility": "public",
+        "id": "song-000090"
+      }
+    },
+    {
+      "operationId": "cms-musicvideo-16800edb81b644d6881172bd",
+      "entity": "musicVideo",
+      "recordId": "mv-000038",
+      "action": "create",
+      "changedFields": [
+        "talentIds",
+        "visibility",
+        "youtubeId",
+        "type",
+        "songId",
+        "registeredAt",
+        "rawSongTitle",
+        "id"
+      ],
+      "before": null,
+      "after": {
+        "talentIds": [
+          "tal-000009",
+          "tal-000012"
+        ],
+        "visibility": "public",
+        "youtubeId": "9oPwUx0Qn1w",
+        "type": "original",
+        "songId": "song-000091",
+        "registeredAt": "2026-11-25T13:37:23.691Z",
+        "rawSongTitle": "快進劇",
+        "id": "mv-000038"
+      }
+    },
+    {
+      "operationId": "cms-media-16800edb81b644d6881172bd",
+      "entity": "video",
+      "recordId": "9oPwUx0Qn1w",
+      "action": "create",
+      "changedFields": [
+        "youtubeId",
+        "channelId",
+        "title",
+        "publishedAt",
+        "startedAt",
+        "endedAt",
+        "durationSeconds",
+        "availability",
+        "visibility"
+      ],
+      "before": null,
+      "after": {
+        "youtubeId": "9oPwUx0Qn1w",
+        "channelId": "UC_cCW1xmXwRFp1tX-RD2X1Q",
+        "title": "【オリジナル曲】『快進劇』/ REGALILIA 7th【公式MV】",
+        "publishedAt": "2023-02-25T12:00:11.000Z",
+        "startedAt": null,
+        "endedAt": null,
+        "durationSeconds": null,
+        "availability": "public",
+        "visibility": "public"
+      }
+    },
+    {
+      "operationId": "cms-new-song-16800edb81b644d6881172bd",
+      "entity": "song",
+      "recordId": "song-000091",
+      "action": "create",
+      "changedFields": [
+        "title",
+        "originalArtists",
+        "identityUrl",
+        "aliases",
+        "readings",
+        "visibility",
+        "id"
+      ],
+      "before": null,
+      "after": {
+        "title": "快進劇",
+        "originalArtists": [
+          "REGALILIA(江波キョウカ・鬼多見アユム)"
+        ],
+        "identityUrl": "https://www.youtube.com/watch?v=9oPwUx0Qn1w",
+        "aliases": [],
+        "readings": [],
+        "visibility": "public",
+        "id": "song-000091"
+      }
+    },
+    {
+      "operationId": "cms-musicvideo-3fc4003dabdc4b3b9ea0e957",
+      "entity": "musicVideo",
+      "recordId": "mv-000039",
+      "action": "create",
+      "changedFields": [
+        "talentIds",
+        "visibility",
+        "youtubeId",
+        "type",
+        "songId",
+        "registeredAt",
+        "rawSongTitle",
+        "id"
+      ],
+      "before": null,
+      "after": {
+        "talentIds": [
+          "tal-000009",
+          "tal-000012"
+        ],
+        "visibility": "public",
+        "youtubeId": "5IDgX8x3MC8",
+        "type": "original",
+        "songId": "song-000092",
+        "registeredAt": "2026-11-25T13:37:37.287Z",
+        "rawSongTitle": "創造 (Rearrange ver.)",
+        "id": "mv-000039"
+      }
+    },
+    {
+      "operationId": "cms-media-3fc4003dabdc4b3b9ea0e957",
+      "entity": "video",
+      "recordId": "5IDgX8x3MC8",
+      "action": "create",
+      "changedFields": [
+        "youtubeId",
+        "channelId",
+        "title",
+        "publishedAt",
+        "startedAt",
+        "endedAt",
+        "durationSeconds",
+        "availability",
+        "visibility"
+      ],
+      "before": null,
+      "after": {
+        "youtubeId": "5IDgX8x3MC8",
+        "channelId": "UC_cCW1xmXwRFp1tX-RD2X1Q",
+        "title": "【オリジナル曲】『創造』Rearrange ver. / REGALILIA 1st",
+        "publishedAt": "2023-03-18T15:00:05.000Z",
+        "startedAt": null,
+        "endedAt": null,
+        "durationSeconds": null,
+        "availability": "public",
+        "visibility": "public"
+      }
+    },
+    {
+      "operationId": "cms-new-song-3fc4003dabdc4b3b9ea0e957",
+      "entity": "song",
+      "recordId": "song-000092",
+      "action": "create",
+      "changedFields": [
+        "title",
+        "originalArtists",
+        "identityUrl",
+        "aliases",
+        "readings",
+        "visibility",
+        "id"
+      ],
+      "before": null,
+      "after": {
+        "title": "創造 (Rearrange ver.)",
+        "originalArtists": [
+          "REGALILIA(江波キョウカ・鬼多見アユム)"
+        ],
+        "identityUrl": "https://www.youtube.com/watch?v=5IDgX8x3MC8",
+        "aliases": [],
+        "readings": [],
+        "visibility": "public",
+        "id": "song-000092"
+      }
+    },
+    {
+      "operationId": "cms-musicvideo-e71778403b7d4a69811fc5ca",
+      "entity": "musicVideo",
+      "recordId": "mv-000040",
+      "action": "create",
+      "changedFields": [
+        "talentIds",
+        "visibility",
+        "youtubeId",
+        "type",
+        "songId",
+        "registeredAt",
+        "rawSongTitle",
+        "id"
+      ],
+      "before": null,
+      "after": {
+        "talentIds": [
+          "tal-000009",
+          "tal-000012"
+        ],
+        "visibility": "public",
+        "youtubeId": "mz24j9402Ik",
+        "type": "original",
+        "songId": "song-000093",
+        "registeredAt": "2026-11-25T13:40:39.824Z",
+        "rawSongTitle": "キライラ (Rearrange ver.)",
+        "id": "mv-000040"
+      }
+    },
+    {
+      "operationId": "cms-media-e71778403b7d4a69811fc5ca",
+      "entity": "video",
+      "recordId": "mz24j9402Ik",
+      "action": "create",
+      "changedFields": [
+        "youtubeId",
+        "channelId",
+        "title",
+        "publishedAt",
+        "startedAt",
+        "endedAt",
+        "durationSeconds",
+        "availability",
+        "visibility"
+      ],
+      "before": null,
+      "after": {
+        "youtubeId": "mz24j9402Ik",
+        "channelId": "UC_cCW1xmXwRFp1tX-RD2X1Q",
+        "title": "【オリジナル曲】『キライラ』Rearrange ver. / REGALILIA 2nd",
+        "publishedAt": "2023-03-18T15:00:29.000Z",
+        "startedAt": null,
+        "endedAt": null,
+        "durationSeconds": null,
+        "availability": "public",
+        "visibility": "public"
+      }
+    },
+    {
+      "operationId": "cms-new-song-e71778403b7d4a69811fc5ca",
+      "entity": "song",
+      "recordId": "song-000093",
+      "action": "create",
+      "changedFields": [
+        "title",
+        "originalArtists",
+        "identityUrl",
+        "aliases",
+        "readings",
+        "visibility",
+        "id"
+      ],
+      "before": null,
+      "after": {
+        "title": "キライラ (Rearrange ver.)",
+        "originalArtists": [
+          "REGALILIA(江波キョウカ・鬼多見アユム)"
+        ],
+        "identityUrl": "https://www.youtube.com/watch?v=mz24j9402Ik",
+        "aliases": [],
+        "readings": [],
+        "visibility": "public",
+        "id": "song-000093"
+      }
+    },
+    {
+      "operationId": "cms-musicvideo-c5eea23340844b22a06a9e40",
+      "entity": "musicVideo",
+      "recordId": "mv-000041",
+      "action": "create",
+      "changedFields": [
+        "talentIds",
+        "visibility",
+        "youtubeId",
+        "type",
+        "songId",
+        "registeredAt",
+        "rawSongTitle",
+        "id"
+      ],
+      "before": null,
+      "after": {
+        "talentIds": [
+          "tal-000009",
+          "tal-000012"
+        ],
+        "visibility": "public",
+        "youtubeId": "Use6bRxx7WQ",
+        "type": "original",
+        "songId": "song-000094",
+        "registeredAt": "2026-11-25T13:40:51.199Z",
+        "rawSongTitle": "MORAL",
+        "id": "mv-000041"
+      }
+    },
+    {
+      "operationId": "cms-media-c5eea23340844b22a06a9e40",
+      "entity": "video",
+      "recordId": "Use6bRxx7WQ",
+      "action": "create",
+      "changedFields": [
+        "youtubeId",
+        "channelId",
+        "title",
+        "publishedAt",
+        "startedAt",
+        "endedAt",
+        "durationSeconds",
+        "availability",
+        "visibility"
+      ],
+      "before": null,
+      "after": {
+        "youtubeId": "Use6bRxx7WQ",
+        "channelId": "UC_cCW1xmXwRFp1tX-RD2X1Q",
+        "title": "【オリジナル曲】『MORAL』/ REGALILIA 8th【公式MV】",
+        "publishedAt": "2023-06-24T12:00:09.000Z",
+        "startedAt": null,
+        "endedAt": null,
+        "durationSeconds": null,
+        "availability": "public",
+        "visibility": "public"
+      }
+    },
+    {
+      "operationId": "cms-new-song-c5eea23340844b22a06a9e40",
+      "entity": "song",
+      "recordId": "song-000094",
+      "action": "create",
+      "changedFields": [
+        "title",
+        "originalArtists",
+        "identityUrl",
+        "aliases",
+        "readings",
+        "visibility",
+        "id"
+      ],
+      "before": null,
+      "after": {
+        "title": "MORAL",
+        "originalArtists": [
+          "REGALILIA(江波キョウカ・鬼多見アユム)"
+        ],
+        "identityUrl": "https://www.youtube.com/watch?v=Use6bRxx7WQ",
+        "aliases": [],
+        "readings": [],
+        "visibility": "public",
+        "id": "song-000094"
+      }
+    },
+    {
+      "operationId": "cms-musicvideo-bf64673894794651b175597a",
+      "entity": "musicVideo",
+      "recordId": "mv-000042",
+      "action": "create",
+      "changedFields": [
+        "talentIds",
+        "visibility",
+        "youtubeId",
+        "type",
+        "songId",
+        "registeredAt",
+        "rawSongTitle",
+        "id"
+      ],
+      "before": null,
+      "after": {
+        "talentIds": [
+          "tal-000009",
+          "tal-000012"
+        ],
+        "visibility": "public",
+        "youtubeId": "YKVGN9YACYQ",
+        "type": "original",
+        "songId": "song-000095",
+        "registeredAt": "2026-11-25T13:41:06.780Z",
+        "rawSongTitle": "Einherjar",
+        "id": "mv-000042"
+      }
+    },
+    {
+      "operationId": "cms-media-bf64673894794651b175597a",
+      "entity": "video",
+      "recordId": "YKVGN9YACYQ",
+      "action": "create",
+      "changedFields": [
+        "youtubeId",
+        "channelId",
+        "title",
+        "publishedAt",
+        "startedAt",
+        "endedAt",
+        "durationSeconds",
+        "availability",
+        "visibility"
+      ],
+      "before": null,
+      "after": {
+        "youtubeId": "YKVGN9YACYQ",
+        "channelId": "UC_cCW1xmXwRFp1tX-RD2X1Q",
+        "title": "【オリジナル曲】Einherjar / REGALILIA 9th Single【パレプロ / MV】",
+        "publishedAt": "2024-06-29T13:00:07.000Z",
+        "startedAt": null,
+        "endedAt": null,
+        "durationSeconds": null,
+        "availability": "public",
+        "visibility": "public"
+      }
+    },
+    {
+      "operationId": "cms-new-song-bf64673894794651b175597a",
+      "entity": "song",
+      "recordId": "song-000095",
+      "action": "create",
+      "changedFields": [
+        "title",
+        "originalArtists",
+        "identityUrl",
+        "aliases",
+        "readings",
+        "visibility",
+        "id"
+      ],
+      "before": null,
+      "after": {
+        "title": "Einherjar",
+        "originalArtists": [
+          "REGALILIA(江波キョウカ・鬼多見アユム)"
+        ],
+        "identityUrl": "https://www.youtube.com/watch?v=YKVGN9YACYQ",
+        "aliases": [],
+        "readings": [],
+        "visibility": "public",
+        "id": "song-000095"
+      }
+    },
+    {
+      "operationId": "cms-musicvideo-390d3daf3af1429d89d954aa",
+      "entity": "musicVideo",
+      "recordId": "mv-000043",
+      "action": "create",
+      "changedFields": [
+        "talentIds",
+        "visibility",
+        "youtubeId",
+        "type",
+        "songId",
+        "registeredAt",
+        "rawSongTitle",
+        "id"
+      ],
+      "before": null,
+      "after": {
+        "talentIds": [
+          "tal-000009",
+          "tal-000012"
+        ],
+        "visibility": "public",
+        "youtubeId": "AJjg23ltKs0",
+        "type": "original",
+        "songId": "song-000096",
+        "registeredAt": "2026-11-25T13:43:01.302Z",
+        "rawSongTitle": "RAISE MYSELF",
+        "id": "mv-000043"
+      }
+    },
+    {
+      "operationId": "cms-media-390d3daf3af1429d89d954aa",
+      "entity": "video",
+      "recordId": "AJjg23ltKs0",
+      "action": "create",
+      "changedFields": [
+        "youtubeId",
+        "channelId",
+        "title",
+        "publishedAt",
+        "startedAt",
+        "endedAt",
+        "durationSeconds",
+        "availability",
+        "visibility"
+      ],
+      "before": null,
+      "after": {
+        "youtubeId": "AJjg23ltKs0",
+        "channelId": "UC_cCW1xmXwRFp1tX-RD2X1Q",
+        "title": "【オリジナル曲】RAISE MYSELF / REGALILIA 10th Single【パレプロ / MV】",
+        "publishedAt": "2026-07-14T12:00:06.000Z",
+        "startedAt": null,
+        "endedAt": null,
+        "durationSeconds": null,
+        "availability": "public",
+        "visibility": "public"
+      }
+    },
+    {
+      "operationId": "cms-new-song-390d3daf3af1429d89d954aa",
+      "entity": "song",
+      "recordId": "song-000096",
+      "action": "create",
+      "changedFields": [
+        "title",
+        "originalArtists",
+        "identityUrl",
+        "aliases",
+        "readings",
+        "visibility",
+        "id"
+      ],
+      "before": null,
+      "after": {
+        "title": "RAISE MYSELF",
+        "originalArtists": [
+          "REGALILIA(江波キョウカ・鬼多見アユム)"
+        ],
+        "identityUrl": "https://www.youtube.com/watch?v=AJjg23ltKs0",
+        "aliases": [],
+        "readings": [],
+        "visibility": "public",
+        "id": "song-000096"
+      }
+    }
+  ]
+}

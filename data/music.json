@@ -1091,6 +1091,138 @@
       "readings": [],
       "visibility": "public",
       "id": "song-000084"
+    },
+    {
+      "title": "創造",
+      "originalArtists": [
+        "REGALILIA(遠坂ユラ・江波キョウカ・鬼多見アユム)"
+      ],
+      "identityUrl": "https://www.youtube.com/watch?v=c6TPK_VNYR4",
+      "aliases": [],
+      "readings": [],
+      "visibility": "public",
+      "id": "song-000085"
+    },
+    {
+      "title": "キライラ",
+      "originalArtists": [
+        "REGALILIA(遠坂ユラ・江波キョウカ・鬼多見アユム)"
+      ],
+      "identityUrl": "https://www.youtube.com/watch?v=-aBAxkT1pJ8",
+      "aliases": [],
+      "readings": [],
+      "visibility": "public",
+      "id": "song-000086"
+    },
+    {
+      "title": "Demon Drivers",
+      "originalArtists": [
+        "REGALILIA(江波キョウカ・鬼多見アユム)"
+      ],
+      "identityUrl": "https://www.youtube.com/watch?v=_DH8dSUgPY0",
+      "aliases": [],
+      "readings": [],
+      "visibility": "public",
+      "id": "song-000087"
+    },
+    {
+      "title": "Tiny Brave",
+      "originalArtists": [
+        "REGALILIA(江波キョウカ・鬼多見アユム)"
+      ],
+      "identityUrl": "https://www.youtube.com/watch?v=H-MMTZv1Bvo",
+      "aliases": [],
+      "readings": [],
+      "visibility": "public",
+      "id": "song-000088"
+    },
+    {
+      "title": "Close to You",
+      "originalArtists": [
+        "REGALILIA(江波キョウカ・鬼多見アユム)"
+      ],
+      "identityUrl": "https://www.youtube.com/watch?v=BiCiXFcEIG8",
+      "aliases": [],
+      "readings": [],
+      "visibility": "public",
+      "id": "song-000089"
+    },
+    {
+      "title": "エンリの花",
+      "originalArtists": [
+        "REGALILIA(江波キョウカ・鬼多見アユム)"
+      ],
+      "identityUrl": "https://www.youtube.com/watch?v=agLqIwyJHDA",
+      "aliases": [],
+      "readings": [],
+      "visibility": "public",
+      "id": "song-000090"
+    },
+    {
+      "title": "快進劇",
+      "originalArtists": [
+        "REGALILIA(江波キョウカ・鬼多見アユム)"
+      ],
+      "identityUrl": "https://www.youtube.com/watch?v=9oPwUx0Qn1w",
+      "aliases": [],
+      "readings": [],
+      "visibility": "public",
+      "id": "song-000091"
+    },
+    {
+      "title": "創造 (Rearrange ver.)",
+      "originalArtists": [
+        "REGALILIA(江波キョウカ・鬼多見アユム)"
+      ],
+      "identityUrl": "https://www.youtube.com/watch?v=5IDgX8x3MC8",
+      "aliases": [],
+      "readings": [],
+      "visibility": "public",
+      "id": "song-000092"
+    },
+    {
+      "title": "キライラ (Rearrange ver.)",
+      "originalArtists": [
+        "REGALILIA(江波キョウカ・鬼多見アユム)"
+      ],
+      "identityUrl": "https://www.youtube.com/watch?v=mz24j9402Ik",
+      "aliases": [],
+      "readings": [],
+      "visibility": "public",
+      "id": "song-000093"
+    },
+    {
+      "title": "MORAL",
+      "originalArtists": [
+        "REGALILIA(江波キョウカ・鬼多見アユム)"
+      ],
+      "identityUrl": "https://www.youtube.com/watch?v=Use6bRxx7WQ",
+      "aliases": [],
+      "readings": [],
+      "visibility": "public",
+      "id": "song-000094"
+    },
+    {
+      "title": "Einherjar",
+      "originalArtists": [
+        "REGALILIA(江波キョウカ・鬼多見アユム)"
+      ],
+      "identityUrl": "https://www.youtube.com/watch?v=YKVGN9YACYQ",
+      "aliases": [],
+      "readings": [],
+      "visibility": "public",
+      "id": "song-000095"
+    },
+    {
+      "title": "RAISE MYSELF",
+      "originalArtists": [
+        "REGALILIA(江波キョウカ・鬼多見アユム)"
+      ],
+      "identityUrl": "https://www.youtube.com/watch?v=AJjg23ltKs0",
+      "aliases": [],
+      "readings": [],
+      "visibility": "public",
+      "id": "song-000096"
     }
   ],
   "musicVideos": [
@@ -1499,6 +1631,164 @@
       "registeredAt": "2026-11-25T13:09:33.653Z",
       "rawSongTitle": "ココロステップ",
       "id": "mv-000031"
+    },
+    {
+      "talentIds": [
+        "tal-000085",
+        "tal-000009",
+        "tal-000012"
+      ],
+      "visibility": "public",
+      "youtubeId": "c6TPK_VNYR4",
+      "type": "original",
+      "songId": "song-000085",
+      "registeredAt": "2026-11-25T13:35:40.175Z",
+      "rawSongTitle": "創造",
+      "id": "mv-000032"
+    },
+    {
+      "talentIds": [
+        "tal-000085",
+        "tal-000009",
+        "tal-000012"
+      ],
+      "visibility": "public",
+      "youtubeId": "-aBAxkT1pJ8",
+      "type": "original",
+      "songId": "song-000086",
+      "registeredAt": "2026-11-25T13:35:57.629Z",
+      "rawSongTitle": "キライラ",
+      "id": "mv-000033"
+    },
+    {
+      "talentIds": [
+        "tal-000009",
+        "tal-000012"
+      ],
+      "visibility": "public",
+      "youtubeId": "_DH8dSUgPY0",
+      "type": "original",
+      "songId": "song-000087",
+      "registeredAt": "2026-11-25T13:36:30.180Z",
+      "rawSongTitle": "Demon Drivers",
+      "id": "mv-000034"
+    },
+    {
+      "talentIds": [
+        "tal-000009",
+        "tal-000012"
+      ],
+      "visibility": "public",
+      "youtubeId": "H-MMTZv1Bvo",
+      "type": "original",
+      "songId": "song-000088",
+      "registeredAt": "2026-11-25T13:36:44.020Z",
+      "rawSongTitle": "Tiny Brave",
+      "id": "mv-000035"
+    },
+    {
+      "talentIds": [
+        "tal-000009",
+        "tal-000012"
+      ],
+      "visibility": "public",
+      "youtubeId": "BiCiXFcEIG8",
+      "type": "original",
+      "songId": "song-000089",
+      "registeredAt": "2026-11-25T13:36:57.805Z",
+      "rawSongTitle": "Close to You",
+      "id": "mv-000036"
+    },
+    {
+      "talentIds": [
+        "tal-000009",
+        "tal-000012"
+      ],
+      "visibility": "public",
+      "youtubeId": "agLqIwyJHDA",
+      "type": "original",
+      "songId": "song-000090",
+      "registeredAt": "2026-11-25T13:37:12.410Z",
+      "rawSongTitle": "エンリの花",
+      "id": "mv-000037"
+    },
+    {
+      "talentIds": [
+        "tal-000009",
+        "tal-000012"
+      ],
+      "visibility": "public",
+      "youtubeId": "9oPwUx0Qn1w",
+      "type": "original",
+      "songId": "song-000091",
+      "registeredAt": "2026-11-25T13:37:23.691Z",
+      "rawSongTitle": "快進劇",
+      "id": "mv-000038"
+    },
+    {
+      "talentIds": [
+        "tal-000009",
+        "tal-000012"
+      ],
+      "visibility": "public",
+      "youtubeId": "5IDgX8x3MC8",
+      "type": "original",
+      "songId": "song-000092",
+      "registeredAt": "2026-11-25T13:37:37.287Z",
+      "rawSongTitle": "創造 (Rearrange ver.)",
+      "id": "mv-000039"
+    },
+    {
+      "talentIds": [
+        "tal-000009",
+        "tal-000012"
+      ],
+      "visibility": "public",
+      "youtubeId": "mz24j9402Ik",
+      "type": "original",
+      "songId": "song-000093",
+      "registeredAt": "2026-11-25T13:40:39.824Z",
+      "rawSongTitle": "キライラ (Rearrange ver.)",
+      "id": "mv-000040"
+    },
+    {
+      "talentIds": [
+        "tal-000009",
+        "tal-000012"
+      ],
+      "visibility": "public",
+      "youtubeId": "Use6bRxx7WQ",
+      "type": "original",
+      "songId": "song-000094",
+      "registeredAt": "2026-11-25T13:40:51.199Z",
+      "rawSongTitle": "MORAL",
+      "id": "mv-000041"
+    },
+    {
+      "talentIds": [
+        "tal-000009",
+        "tal-000012"
+      ],
+      "visibility": "public",
+      "youtubeId": "YKVGN9YACYQ",
+      "type": "original",
+      "songId": "song-000095",
+      "registeredAt": "2026-11-25T13:41:06.780Z",
+      "rawSongTitle": "Einherjar",
+      "id": "mv-000042"
+    },
+    {
+      "talentIds": [
+        "tal-000009",
+        "tal-000012"
+      ],
+      "visibility": "public",
+      "youtubeId": "AJjg23ltKs0",
+      "type": "original",
+      "songId": "song-000096",
+      "registeredAt": "2026-11-25T13:43:01.302Z",
+      "rawSongTitle": "RAISE MYSELF",
+      "id": "mv-000043"
     }
   ]
 }

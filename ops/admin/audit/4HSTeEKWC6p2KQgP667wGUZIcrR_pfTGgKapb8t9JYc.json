@@ -1,0 +1,1032 @@
+{
+  "version": 2,
+  "batchId": "4HSTeEKWC6p2KQgP667wGUZIcrR_pfTGgKapb8t9JYc",
+  "actor": "900122208316251340881522085640042137117242",
+  "createdAt": "2026-11-25T10:16:29.792Z",
+  "baseCommit": "c1ad043fbcd56040d88e919346b059fc25b86a3b",
+  "reason": null,
+  "submissionId": "4HSTeEKWC6p2KQgP667wGUZIcrR_pfTGgKapb8t9JYc",
+  "branch": "admin/change-4HSTeEKWC6p2KQgP667wGUZIcrR_pfTGgKapb8t9JYc",
+  "operations": [
+    {
+      "operationId": "cms-musicvideo-857171c525a140f89b3bc7a2",
+      "entity": "musicVideo",
+      "recordId": "mv-000012",
+      "action": "create",
+      "changedFields": [
+        "talentIds",
+        "visibility",
+        "youtubeId",
+        "type",
+        "songId",
+        "registeredAt",
+        "rawSongTitle",
+        "id"
+      ],
+      "before": null,
+      "after": {
+        "talentIds": [
+          "tal-000008"
+        ],
+        "visibility": "public",
+        "youtubeId": "EPdxY1FtDgw",
+        "type": "original",
+        "songId": "song-000065",
+        "registeredAt": "2026-11-25T08:16:03.305Z",
+        "rawSongTitle": "きっと、アイだね",
+        "id": "mv-000012"
+      }
+    },
+    {
+      "operationId": "cms-media-857171c525a140f89b3bc7a2",
+      "entity": "video",
+      "recordId": "EPdxY1FtDgw",
+      "action": "create",
+      "changedFields": [
+        "youtubeId",
+        "channelId",
+        "title",
+        "publishedAt",
+        "startedAt",
+        "endedAt",
+        "durationSeconds",
+        "availability",
+        "visibility"
+      ],
+      "before": null,
+      "after": {
+        "youtubeId": "EPdxY1FtDgw",
+        "channelId": "UCsjlMrR2N2Qbn9wTbWV4GHQ",
+        "title": "きっと、アイだね",
+        "publishedAt": "2020-09-29T10:04:12.000Z",
+        "startedAt": null,
+        "endedAt": null,
+        "durationSeconds": null,
+        "availability": "public",
+        "visibility": "public"
+      }
+    },
+    {
+      "operationId": "cms-new-song-857171c525a140f89b3bc7a2",
+      "entity": "song",
+      "recordId": "song-000065",
+      "action": "create",
+      "changedFields": [
+        "title",
+        "originalArtists",
+        "identityUrl",
+        "aliases",
+        "readings",
+        "visibility",
+        "id"
+      ],
+      "before": null,
+      "after": {
+        "title": "きっと、アイだね",
+        "originalArtists": [
+          "Palette Project"
+        ],
+        "identityUrl": "https://www.youtube.com/watch?v=EPdxY1FtDgw",
+        "aliases": [],
+        "readings": [],
+        "visibility": "public",
+        "id": "song-000065"
+      }
+    },
+    {
+      "operationId": "cms-musicvideo-d5efbc9f43cc4492b4f8f650",
+      "entity": "musicVideo",
+      "recordId": "mv-000013",
+      "action": "create",
+      "changedFields": [
+        "talentIds",
+        "visibility",
+        "youtubeId",
+        "type",
+        "songId",
+        "registeredAt",
+        "rawSongTitle",
+        "id"
+      ],
+      "before": null,
+      "after": {
+        "talentIds": [
+          "tal-000008"
+        ],
+        "visibility": "public",
+        "youtubeId": "VjxEazY_CDE",
+        "type": "original",
+        "songId": "song-000066",
+        "registeredAt": "2026-11-25T10:06:14.430Z",
+        "rawSongTitle": "君と歌いたい歌がある",
+        "id": "mv-000013"
+      }
+    },
+    {
+      "operationId": "cms-media-d5efbc9f43cc4492b4f8f650",
+      "entity": "video",
+      "recordId": "VjxEazY_CDE",
+      "action": "create",
+      "changedFields": [
+        "youtubeId",
+        "channelId",
+        "title",
+        "publishedAt",
+        "startedAt",
+        "endedAt",
+        "durationSeconds",
+        "availability",
+        "visibility"
+      ],
+      "before": null,
+      "after": {
+        "youtubeId": "VjxEazY_CDE",
+        "channelId": "UC_cCW1xmXwRFp1tX-RD2X1Q",
+        "title": "【オリジナル曲】君と歌いたい歌がある / Palette Project 3rd Single【パレプロ / MV】",
+        "publishedAt": "2021-12-28T12:00:13.000Z",
+        "startedAt": null,
+        "endedAt": null,
+        "durationSeconds": null,
+        "availability": "public",
+        "visibility": "public"
+      }
+    },
+    {
+      "operationId": "cms-new-song-d5efbc9f43cc4492b4f8f650",
+      "entity": "song",
+      "recordId": "song-000066",
+      "action": "create",
+      "changedFields": [
+        "title",
+        "originalArtists",
+        "identityUrl",
+        "aliases",
+        "readings",
+        "visibility",
+        "id"
+      ],
+      "before": null,
+      "after": {
+        "title": "君と歌いたい歌がある",
+        "originalArtists": [
+          "Palette Project"
+        ],
+        "identityUrl": "https://www.youtube.com/watch?v=VjxEazY_CDE",
+        "aliases": [],
+        "readings": [],
+        "visibility": "public",
+        "id": "song-000066"
+      }
+    },
+    {
+      "operationId": "cms-musicvideo-b43b7fe1440b4d34b3f848c5",
+      "entity": "musicVideo",
+      "recordId": "mv-000014",
+      "action": "create",
+      "changedFields": [
+        "talentIds",
+        "visibility",
+        "youtubeId",
+        "type",
+        "songId",
+        "registeredAt",
+        "rawSongTitle",
+        "id"
+      ],
+      "before": null,
+      "after": {
+        "talentIds": [
+          "tal-000005"
+        ],
+        "visibility": "public",
+        "youtubeId": "9FGRNVDZIz0",
+        "type": "original",
+        "songId": "song-000067",
+        "registeredAt": "2026-11-25T10:07:13.562Z",
+        "rawSongTitle": "夏ゆきトキメキHigh Tension!",
+        "id": "mv-000014"
+      }
+    },
+    {
+      "operationId": "cms-media-b43b7fe1440b4d34b3f848c5",
+      "entity": "video",
+      "recordId": "9FGRNVDZIz0",
+      "action": "create",
+      "changedFields": [
+        "youtubeId",
+        "channelId",
+        "title",
+        "publishedAt",
+        "startedAt",
+        "endedAt",
+        "durationSeconds",
+        "availability",
+        "visibility"
+      ],
+      "before": null,
+      "after": {
+        "youtubeId": "9FGRNVDZIz0",
+        "channelId": "UC_cCW1xmXwRFp1tX-RD2X1Q",
+        "title": "【オリジナル曲】夏ゆきトキメキHigh Tension! / Palette Project 4th Single【パレプロ / MV】",
+        "publishedAt": "2022-08-31T12:00:14.000Z",
+        "startedAt": null,
+        "endedAt": null,
+        "durationSeconds": null,
+        "availability": "public",
+        "visibility": "public"
+      }
+    },
+    {
+      "operationId": "cms-new-song-b43b7fe1440b4d34b3f848c5",
+      "entity": "song",
+      "recordId": "song-000067",
+      "action": "create",
+      "changedFields": [
+        "title",
+        "originalArtists",
+        "identityUrl",
+        "aliases",
+        "readings",
+        "visibility",
+        "id"
+      ],
+      "before": null,
+      "after": {
+        "title": "夏ゆきトキメキHigh Tension!",
+        "originalArtists": [
+          "Palette Project"
+        ],
+        "identityUrl": "https://www.youtube.com/watch?v=9FGRNVDZIz0",
+        "aliases": [],
+        "readings": [],
+        "visibility": "public",
+        "id": "song-000067"
+      }
+    },
+    {
+      "operationId": "cms-musicvideo-d9a40b7531424d8d8de60930",
+      "entity": "musicVideo",
+      "recordId": "mv-000015",
+      "action": "create",
+      "changedFields": [
+        "talentIds",
+        "visibility",
+        "youtubeId",
+        "type",
+        "songId",
+        "registeredAt",
+        "rawSongTitle",
+        "id"
+      ],
+      "before": null,
+      "after": {
+        "talentIds": [
+          "tal-000008"
+        ],
+        "visibility": "public",
+        "youtubeId": "c-W7UQ8nS-0",
+        "type": "original",
+        "songId": "song-000068",
+        "registeredAt": "2026-11-25T10:08:09.711Z",
+        "rawSongTitle": "カラフル⭐︎パンチライン",
+        "id": "mv-000015"
+      }
+    },
+    {
+      "operationId": "cms-media-d9a40b7531424d8d8de60930",
+      "entity": "video",
+      "recordId": "c-W7UQ8nS-0",
+      "action": "create",
+      "changedFields": [
+        "youtubeId",
+        "channelId",
+        "title",
+        "publishedAt",
+        "startedAt",
+        "endedAt",
+        "durationSeconds",
+        "availability",
+        "visibility"
+      ],
+      "before": null,
+      "after": {
+        "youtubeId": "c-W7UQ8nS-0",
+        "channelId": "UC_cCW1xmXwRFp1tX-RD2X1Q",
+        "title": "【オリジナル曲】カラフル☆パンチライン / Palette Project 5th Single【パレプロ / MV】",
+        "publishedAt": "2022-11-26T12:00:11.000Z",
+        "startedAt": null,
+        "endedAt": null,
+        "durationSeconds": null,
+        "availability": "public",
+        "visibility": "public"
+      }
+    },
+    {
+      "operationId": "cms-new-song-d9a40b7531424d8d8de60930",
+      "entity": "song",
+      "recordId": "song-000068",
+      "action": "create",
+      "changedFields": [
+        "title",
+        "originalArtists",
+        "identityUrl",
+        "aliases",
+        "readings",
+        "visibility",
+        "id"
+      ],
+      "before": null,
+      "after": {
+        "title": "カラフル⭐︎パンチライン",
+        "originalArtists": [
+          "Palette Project"
+        ],
+        "identityUrl": "https://www.youtube.com/watch?v=c-W7UQ8nS-0",
+        "aliases": [],
+        "readings": [],
+        "visibility": "public",
+        "id": "song-000068"
+      }
+    },
+    {
+      "operationId": "cms-musicvideo-58b540134ec84cf9bbe2b861",
+      "entity": "musicVideo",
+      "recordId": "mv-000016",
+      "action": "create",
+      "changedFields": [
+        "talentIds",
+        "visibility",
+        "youtubeId",
+        "type",
+        "songId",
+        "registeredAt",
+        "rawSongTitle",
+        "id"
+      ],
+      "before": null,
+      "after": {
+        "talentIds": [
+          "tal-000008"
+        ],
+        "visibility": "public",
+        "youtubeId": "0M9Y-FUFS78",
+        "type": "original",
+        "songId": "song-000069",
+        "registeredAt": "2026-11-25T10:08:54.219Z",
+        "rawSongTitle": "ドリームインブルーム！",
+        "id": "mv-000016"
+      }
+    },
+    {
+      "operationId": "cms-media-58b540134ec84cf9bbe2b861",
+      "entity": "video",
+      "recordId": "0M9Y-FUFS78",
+      "action": "create",
+      "changedFields": [
+        "youtubeId",
+        "channelId",
+        "title",
+        "publishedAt",
+        "startedAt",
+        "endedAt",
+        "durationSeconds",
+        "availability",
+        "visibility"
+      ],
+      "before": null,
+      "after": {
+        "youtubeId": "0M9Y-FUFS78",
+        "channelId": "UC_cCW1xmXwRFp1tX-RD2X1Q",
+        "title": "【オリジナル曲】ドリームインブルーム！ / Palette Project 6th Single【パレプロ / MV】",
+        "publishedAt": "2022-12-13T12:00:08.000Z",
+        "startedAt": null,
+        "endedAt": null,
+        "durationSeconds": null,
+        "availability": "public",
+        "visibility": "public"
+      }
+    },
+    {
+      "operationId": "cms-new-song-58b540134ec84cf9bbe2b861",
+      "entity": "song",
+      "recordId": "song-000069",
+      "action": "create",
+      "changedFields": [
+        "title",
+        "originalArtists",
+        "identityUrl",
+        "aliases",
+        "readings",
+        "visibility",
+        "id"
+      ],
+      "before": null,
+      "after": {
+        "title": "ドリームインブルーム！",
+        "originalArtists": [
+          "Palette Project"
+        ],
+        "identityUrl": "https://www.youtube.com/watch?v=0M9Y-FUFS78",
+        "aliases": [],
+        "readings": [],
+        "visibility": "public",
+        "id": "song-000069"
+      }
+    },
+    {
+      "operationId": "cms-musicvideo-526aeb9528304181a903b0d4",
+      "entity": "musicVideo",
+      "recordId": "mv-000017",
+      "action": "create",
+      "changedFields": [
+        "talentIds",
+        "visibility",
+        "youtubeId",
+        "type",
+        "songId",
+        "registeredAt",
+        "rawSongTitle",
+        "id"
+      ],
+      "before": null,
+      "after": {
+        "talentIds": [
+          "tal-000008"
+        ],
+        "visibility": "public",
+        "youtubeId": "MAQAR3BjyFg",
+        "type": "original",
+        "songId": "song-000070",
+        "registeredAt": "2026-11-25T10:09:31.951Z",
+        "rawSongTitle": "キミイロクロニクル",
+        "id": "mv-000017"
+      }
+    },
+    {
+      "operationId": "cms-media-526aeb9528304181a903b0d4",
+      "entity": "video",
+      "recordId": "MAQAR3BjyFg",
+      "action": "create",
+      "changedFields": [
+        "youtubeId",
+        "channelId",
+        "title",
+        "publishedAt",
+        "startedAt",
+        "endedAt",
+        "durationSeconds",
+        "availability",
+        "visibility"
+      ],
+      "before": null,
+      "after": {
+        "youtubeId": "MAQAR3BjyFg",
+        "channelId": "UC_cCW1xmXwRFp1tX-RD2X1Q",
+        "title": "【オリジナル曲】キミイロクロニクル / Palette Project 7th Single【パレプロ / MV】",
+        "publishedAt": "2023-10-24T12:00:08.000Z",
+        "startedAt": null,
+        "endedAt": null,
+        "durationSeconds": null,
+        "availability": "public",
+        "visibility": "public"
+      }
+    },
+    {
+      "operationId": "cms-new-song-526aeb9528304181a903b0d4",
+      "entity": "song",
+      "recordId": "song-000070",
+      "action": "create",
+      "changedFields": [
+        "title",
+        "originalArtists",
+        "identityUrl",
+        "aliases",
+        "readings",
+        "visibility",
+        "id"
+      ],
+      "before": null,
+      "after": {
+        "title": "キミイロクロニクル",
+        "originalArtists": [
+          "Palette Project"
+        ],
+        "identityUrl": "https://www.youtube.com/watch?v=MAQAR3BjyFg",
+        "aliases": [],
+        "readings": [],
+        "visibility": "public",
+        "id": "song-000070"
+      }
+    },
+    {
+      "operationId": "cms-musicvideo-802ae42da4d34a228ca71bd4",
+      "entity": "musicVideo",
+      "recordId": "mv-000018",
+      "action": "create",
+      "changedFields": [
+        "talentIds",
+        "visibility",
+        "youtubeId",
+        "type",
+        "songId",
+        "registeredAt",
+        "rawSongTitle",
+        "id"
+      ],
+      "before": null,
+      "after": {
+        "talentIds": [
+          "tal-000008"
+        ],
+        "visibility": "public",
+        "youtubeId": "TFuv-JcyM9w",
+        "type": "original",
+        "songId": "song-000071",
+        "registeredAt": "2026-11-25T10:10:24.476Z",
+        "rawSongTitle": "せーの！虹のファンファーレ",
+        "id": "mv-000018"
+      }
+    },
+    {
+      "operationId": "cms-media-802ae42da4d34a228ca71bd4",
+      "entity": "video",
+      "recordId": "TFuv-JcyM9w",
+      "action": "create",
+      "changedFields": [
+        "youtubeId",
+        "channelId",
+        "title",
+        "publishedAt",
+        "startedAt",
+        "endedAt",
+        "durationSeconds",
+        "availability",
+        "visibility"
+      ],
+      "before": null,
+      "after": {
+        "youtubeId": "TFuv-JcyM9w",
+        "channelId": "UC_cCW1xmXwRFp1tX-RD2X1Q",
+        "title": "【オリジナル曲】せーの！虹のファンファーレ / Palette Project 8th Single【パレプロ / MV】",
+        "publishedAt": "2023-12-19T12:00:09.000Z",
+        "startedAt": null,
+        "endedAt": null,
+        "durationSeconds": null,
+        "availability": "public",
+        "visibility": "public"
+      }
+    },
+    {
+      "operationId": "cms-new-song-802ae42da4d34a228ca71bd4",
+      "entity": "song",
+      "recordId": "song-000071",
+      "action": "create",
+      "changedFields": [
+        "title",
+        "originalArtists",
+        "identityUrl",
+        "aliases",
+        "readings",
+        "visibility",
+        "id"
+      ],
+      "before": null,
+      "after": {
+        "title": "せーの！虹のファンファーレ",
+        "originalArtists": [
+          "Palette Project"
+        ],
+        "identityUrl": "https://www.youtube.com/watch?v=TFuv-JcyM9w",
+        "aliases": [],
+        "readings": [],
+        "visibility": "public",
+        "id": "song-000071"
+      }
+    },
+    {
+      "operationId": "cms-musicvideo-194e3eb62e1249fb87136f53",
+      "entity": "musicVideo",
+      "recordId": "mv-000019",
+      "action": "create",
+      "changedFields": [
+        "talentIds",
+        "visibility",
+        "youtubeId",
+        "type",
+        "songId",
+        "registeredAt",
+        "rawSongTitle",
+        "id"
+      ],
+      "before": null,
+      "after": {
+        "talentIds": [
+          "tal-000008"
+        ],
+        "visibility": "public",
+        "youtubeId": "YZDFWbzyKp8",
+        "type": "original",
+        "songId": "song-000072",
+        "registeredAt": "2026-11-25T10:11:53.798Z",
+        "rawSongTitle": "Sweet♡Heart☆Palette♪",
+        "id": "mv-000019"
+      }
+    },
+    {
+      "operationId": "cms-media-194e3eb62e1249fb87136f53",
+      "entity": "video",
+      "recordId": "YZDFWbzyKp8",
+      "action": "create",
+      "changedFields": [
+        "youtubeId",
+        "channelId",
+        "title",
+        "publishedAt",
+        "startedAt",
+        "endedAt",
+        "durationSeconds",
+        "availability",
+        "visibility"
+      ],
+      "before": null,
+      "after": {
+        "youtubeId": "YZDFWbzyKp8",
+        "channelId": "UC_cCW1xmXwRFp1tX-RD2X1Q",
+        "title": "【オリジナル曲】Sweet♡Heart☆Palette♪ / Palette Project 9th Single【パレプロ / MV】",
+        "publishedAt": "2024-02-01T12:00:07.000Z",
+        "startedAt": null,
+        "endedAt": null,
+        "durationSeconds": null,
+        "availability": "public",
+        "visibility": "public"
+      }
+    },
+    {
+      "operationId": "cms-new-song-194e3eb62e1249fb87136f53",
+      "entity": "song",
+      "recordId": "song-000072",
+      "action": "create",
+      "changedFields": [
+        "title",
+        "originalArtists",
+        "identityUrl",
+        "aliases",
+        "readings",
+        "visibility",
+        "id"
+      ],
+      "before": null,
+      "after": {
+        "title": "Sweet♡Heart☆Palette♪",
+        "originalArtists": [
+          "Palette Project"
+        ],
+        "identityUrl": "https://www.youtube.com/watch?v=YZDFWbzyKp8",
+        "aliases": [],
+        "readings": [],
+        "visibility": "public",
+        "id": "song-000072"
+      }
+    },
+    {
+      "operationId": "cms-musicvideo-ac8e4e9feff8482196d0b882",
+      "entity": "musicVideo",
+      "recordId": "mv-000020",
+      "action": "create",
+      "changedFields": [
+        "talentIds",
+        "visibility",
+        "youtubeId",
+        "type",
+        "songId",
+        "registeredAt",
+        "rawSongTitle",
+        "id"
+      ],
+      "before": null,
+      "after": {
+        "talentIds": [
+          "tal-000005"
+        ],
+        "visibility": "public",
+        "youtubeId": "UWi_qGnBHv8",
+        "type": "original",
+        "songId": "song-000073",
+        "registeredAt": "2026-11-25T10:12:46.243Z",
+        "rawSongTitle": "Realize",
+        "id": "mv-000020"
+      }
+    },
+    {
+      "operationId": "cms-media-ac8e4e9feff8482196d0b882",
+      "entity": "video",
+      "recordId": "UWi_qGnBHv8",
+      "action": "create",
+      "changedFields": [
+        "youtubeId",
+        "channelId",
+        "title",
+        "publishedAt",
+        "startedAt",
+        "endedAt",
+        "durationSeconds",
+        "availability",
+        "visibility"
+      ],
+      "before": null,
+      "after": {
+        "youtubeId": "UWi_qGnBHv8",
+        "channelId": "UC_cCW1xmXwRFp1tX-RD2X1Q",
+        "title": "【オリジナル曲】Realize / Palette Project 10th Single【パレプロ / MV】",
+        "publishedAt": "2024-09-02T10:00:07.000Z",
+        "startedAt": null,
+        "endedAt": null,
+        "durationSeconds": null,
+        "availability": "public",
+        "visibility": "public"
+      }
+    },
+    {
+      "operationId": "cms-new-song-ac8e4e9feff8482196d0b882",
+      "entity": "song",
+      "recordId": "song-000073",
+      "action": "create",
+      "changedFields": [
+        "title",
+        "originalArtists",
+        "identityUrl",
+        "aliases",
+        "readings",
+        "visibility",
+        "id"
+      ],
+      "before": null,
+      "after": {
+        "title": "Realize",
+        "originalArtists": [
+          "Palette Project"
+        ],
+        "identityUrl": "https://www.youtube.com/watch?v=UWi_qGnBHv8",
+        "aliases": [],
+        "readings": [],
+        "visibility": "public",
+        "id": "song-000073"
+      }
+    },
+    {
+      "operationId": "cms-musicvideo-dd041cab2d1749f299954280",
+      "entity": "musicVideo",
+      "recordId": "mv-000021",
+      "action": "create",
+      "changedFields": [
+        "talentIds",
+        "visibility",
+        "youtubeId",
+        "type",
+        "songId",
+        "registeredAt",
+        "rawSongTitle",
+        "id"
+      ],
+      "before": null,
+      "after": {
+        "talentIds": [
+          "tal-000008"
+        ],
+        "visibility": "public",
+        "youtubeId": "wDPJwaXzN4I",
+        "type": "original",
+        "songId": "song-000074",
+        "registeredAt": "2026-11-25T10:13:36.504Z",
+        "rawSongTitle": "Own other side",
+        "id": "mv-000021"
+      }
+    },
+    {
+      "operationId": "cms-media-dd041cab2d1749f299954280",
+      "entity": "video",
+      "recordId": "wDPJwaXzN4I",
+      "action": "create",
+      "changedFields": [
+        "youtubeId",
+        "channelId",
+        "title",
+        "publishedAt",
+        "startedAt",
+        "endedAt",
+        "durationSeconds",
+        "availability",
+        "visibility"
+      ],
+      "before": null,
+      "after": {
+        "youtubeId": "wDPJwaXzN4I",
+        "channelId": "UC_cCW1xmXwRFp1tX-RD2X1Q",
+        "title": "【オリジナル曲】Own other side / Palette Project 11th Single【パレプロ / MV】",
+        "publishedAt": "2024-12-04T10:00:06.000Z",
+        "startedAt": null,
+        "endedAt": null,
+        "durationSeconds": null,
+        "availability": "public",
+        "visibility": "public"
+      }
+    },
+    {
+      "operationId": "cms-new-song-dd041cab2d1749f299954280",
+      "entity": "song",
+      "recordId": "song-000074",
+      "action": "create",
+      "changedFields": [
+        "title",
+        "originalArtists",
+        "identityUrl",
+        "aliases",
+        "readings",
+        "visibility",
+        "id"
+      ],
+      "before": null,
+      "after": {
+        "title": "Own other side",
+        "originalArtists": [
+          "Palette Project"
+        ],
+        "identityUrl": "https://www.youtube.com/watch?v=wDPJwaXzN4I",
+        "aliases": [],
+        "readings": [],
+        "visibility": "public",
+        "id": "song-000074"
+      }
+    },
+    {
+      "operationId": "cms-musicvideo-aa27f1b929574774b68548ad",
+      "entity": "musicVideo",
+      "recordId": "mv-000022",
+      "action": "create",
+      "changedFields": [
+        "talentIds",
+        "visibility",
+        "youtubeId",
+        "type",
+        "songId",
+        "registeredAt",
+        "rawSongTitle",
+        "id"
+      ],
+      "before": null,
+      "after": {
+        "talentIds": [
+          "tal-000008"
+        ],
+        "visibility": "public",
+        "youtubeId": "Bv4vfuzcmWc",
+        "type": "original",
+        "songId": "song-000075",
+        "registeredAt": "2026-11-25T10:14:18.292Z",
+        "rawSongTitle": "ハレバレパレット",
+        "id": "mv-000022"
+      }
+    },
+    {
+      "operationId": "cms-media-aa27f1b929574774b68548ad",
+      "entity": "video",
+      "recordId": "Bv4vfuzcmWc",
+      "action": "create",
+      "changedFields": [
+        "youtubeId",
+        "channelId",
+        "title",
+        "publishedAt",
+        "startedAt",
+        "endedAt",
+        "durationSeconds",
+        "availability",
+        "visibility"
+      ],
+      "before": null,
+      "after": {
+        "youtubeId": "Bv4vfuzcmWc",
+        "channelId": "UC_cCW1xmXwRFp1tX-RD2X1Q",
+        "title": "【オリジナル曲】ハレバレパレット / Palette Project 12th Single【パレプロ / MV】",
+        "publishedAt": "2025-07-29T12:30:06.000Z",
+        "startedAt": null,
+        "endedAt": null,
+        "durationSeconds": null,
+        "availability": "public",
+        "visibility": "public"
+      }
+    },
+    {
+      "operationId": "cms-new-song-aa27f1b929574774b68548ad",
+      "entity": "song",
+      "recordId": "song-000075",
+      "action": "create",
+      "changedFields": [
+        "title",
+        "originalArtists",
+        "identityUrl",
+        "aliases",
+        "readings",
+        "visibility",
+        "id"
+      ],
+      "before": null,
+      "after": {
+        "title": "ハレバレパレット",
+        "originalArtists": [
+          "Palette Project"
+        ],
+        "identityUrl": "https://www.youtube.com/watch?v=Bv4vfuzcmWc",
+        "aliases": [],
+        "readings": [],
+        "visibility": "public",
+        "id": "song-000075"
+      }
+    },
+    {
+      "operationId": "cms-musicvideo-9793a8fa05dc421a9e459313",
+      "entity": "musicVideo",
+      "recordId": "mv-000023",
+      "action": "create",
+      "changedFields": [
+        "talentIds",
+        "visibility",
+        "youtubeId",
+        "type",
+        "songId",
+        "registeredAt",
+        "rawSongTitle",
+        "id"
+      ],
+      "before": null,
+      "after": {
+        "talentIds": [
+          "tal-000008"
+        ],
+        "visibility": "public",
+        "youtubeId": "JsEbGwNvN6E",
+        "type": "original",
+        "songId": "song-000076",
+        "registeredAt": "2026-11-25T10:15:02.802Z",
+        "rawSongTitle": "青春の現在地",
+        "id": "mv-000023"
+      }
+    },
+    {
+      "operationId": "cms-media-9793a8fa05dc421a9e459313",
+      "entity": "video",
+      "recordId": "JsEbGwNvN6E",
+      "action": "create",
+      "changedFields": [
+        "youtubeId",
+        "channelId",
+        "title",
+        "publishedAt",
+        "startedAt",
+        "endedAt",
+        "durationSeconds",
+        "availability",
+        "visibility"
+      ],
+      "before": null,
+      "after": {
+        "youtubeId": "JsEbGwNvN6E",
+        "channelId": "UC_cCW1xmXwRFp1tX-RD2X1Q",
+        "title": "【オリジナル曲】青春の現在地 / Palette Project 13th Single 【パレプロ / MV】",
+        "publishedAt": "2025-12-16T12:00:06.000Z",
+        "startedAt": null,
+        "endedAt": null,
+        "durationSeconds": null,
+        "availability": "public",
+        "visibility": "public"
+      }
+    },
+    {
+      "operationId": "cms-new-song-9793a8fa05dc421a9e459313",
+      "entity": "song",
+      "recordId": "song-000076",
+      "action": "create",
+      "changedFields": [
+        "title",
+        "originalArtists",
+        "identityUrl",
+        "aliases",
+        "readings",
+        "visibility",
+        "id"
+      ],
+      "before": null,
+      "after": {
+        "title": "青春の現在地",
+        "originalArtists": [
+          "Palette Project"
+        ],
+        "identityUrl": "https://www.youtube.com/watch?v=JsEbGwNvN6E",
+        "aliases": [],
+        "readings": [],
+        "visibility": "public",
+        "id": "song-000076"
+      }
+    }
+  ]
+}

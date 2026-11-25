@@ -760,6 +760,138 @@
       ],
       "visibility": "public",
       "id": "song-000064"
+    },
+    {
+      "title": "きっと、アイだね",
+      "originalArtists": [
+        "Palette Project"
+      ],
+      "identityUrl": "https://www.youtube.com/watch?v=EPdxY1FtDgw",
+      "aliases": [],
+      "readings": [],
+      "visibility": "public",
+      "id": "song-000065"
+    },
+    {
+      "title": "君と歌いたい歌がある",
+      "originalArtists": [
+        "Palette Project"
+      ],
+      "identityUrl": "https://www.youtube.com/watch?v=VjxEazY_CDE",
+      "aliases": [],
+      "readings": [],
+      "visibility": "public",
+      "id": "song-000066"
+    },
+    {
+      "title": "夏ゆきトキメキHigh Tension!",
+      "originalArtists": [
+        "Palette Project"
+      ],
+      "identityUrl": "https://www.youtube.com/watch?v=9FGRNVDZIz0",
+      "aliases": [],
+      "readings": [],
+      "visibility": "public",
+      "id": "song-000067"
+    },
+    {
+      "title": "カラフル⭐︎パンチライン",
+      "originalArtists": [
+        "Palette Project"
+      ],
+      "identityUrl": "https://www.youtube.com/watch?v=c-W7UQ8nS-0",
+      "aliases": [],
+      "readings": [],
+      "visibility": "public",
+      "id": "song-000068"
+    },
+    {
+      "title": "ドリームインブルーム！",
+      "originalArtists": [
+        "Palette Project"
+      ],
+      "identityUrl": "https://www.youtube.com/watch?v=0M9Y-FUFS78",
+      "aliases": [],
+      "readings": [],
+      "visibility": "public",
+      "id": "song-000069"
+    },
+    {
+      "title": "キミイロクロニクル",
+      "originalArtists": [
+        "Palette Project"
+      ],
+      "identityUrl": "https://www.youtube.com/watch?v=MAQAR3BjyFg",
+      "aliases": [],
+      "readings": [],
+      "visibility": "public",
+      "id": "song-000070"
+    },
+    {
+      "title": "せーの！虹のファンファーレ",
+      "originalArtists": [
+        "Palette Project"
+      ],
+      "identityUrl": "https://www.youtube.com/watch?v=TFuv-JcyM9w",
+      "aliases": [],
+      "readings": [],
+      "visibility": "public",
+      "id": "song-000071"
+    },
+    {
+      "title": "Sweet♡Heart☆Palette♪",
+      "originalArtists": [
+        "Palette Project"
+      ],
+      "identityUrl": "https://www.youtube.com/watch?v=YZDFWbzyKp8",
+      "aliases": [],
+      "readings": [],
+      "visibility": "public",
+      "id": "song-000072"
+    },
+    {
+      "title": "Realize",
+      "originalArtists": [
+        "Palette Project"
+      ],
+      "identityUrl": "https://www.youtube.com/watch?v=UWi_qGnBHv8",
+      "aliases": [],
+      "readings": [],
+      "visibility": "public",
+      "id": "song-000073"
+    },
+    {
+      "title": "Own other side",
+      "originalArtists": [
+        "Palette Project"
+      ],
+      "identityUrl": "https://www.youtube.com/watch?v=wDPJwaXzN4I",
+      "aliases": [],
+      "readings": [],
+      "visibility": "public",
+      "id": "song-000074"
+    },
+    {
+      "title": "ハレバレパレット",
+      "originalArtists": [
+        "Palette Project"
+      ],
+      "identityUrl": "https://www.youtube.com/watch?v=Bv4vfuzcmWc",
+      "aliases": [],
+      "readings": [],
+      "visibility": "public",
+      "id": "song-000075"
+    },
+    {
+      "title": "青春の現在地",
+      "originalArtists": [
+        "Palette Project"
+      ],
+      "identityUrl": "https://www.youtube.com/watch?v=JsEbGwNvN6E",
+      "aliases": [],
+      "readings": [],
+      "visibility": "public",
+      "id": "song-000076"
     }
   ],
   "musicVideos": [
@@ -906,6 +1038,150 @@
       "registeredAt": "2026-11-25T06:40:26.783Z",
       "rawSongTitle": "アナログハート",
       "id": "mv-000011"
+    },
+    {
+      "talentIds": [
+        "tal-000008"
+      ],
+      "visibility": "public",
+      "youtubeId": "EPdxY1FtDgw",
+      "type": "original",
+      "songId": "song-000065",
+      "registeredAt": "2026-11-25T08:16:03.305Z",
+      "rawSongTitle": "きっと、アイだね",
+      "id": "mv-000012"
+    },
+    {
+      "talentIds": [
+        "tal-000008"
+      ],
+      "visibility": "public",
+      "youtubeId": "VjxEazY_CDE",
+      "type": "original",
+      "songId": "song-000066",
+      "registeredAt": "2026-11-25T10:06:14.430Z",
+      "rawSongTitle": "君と歌いたい歌がある",
+      "id": "mv-000013"
+    },
+    {
+      "talentIds": [
+        "tal-000005"
+      ],
+      "visibility": "public",
+      "youtubeId": "9FGRNVDZIz0",
+      "type": "original",
+      "songId": "song-000067",
+      "registeredAt": "2026-11-25T10:07:13.562Z",
+      "rawSongTitle": "夏ゆきトキメキHigh Tension!",
+      "id": "mv-000014"
+    },
+    {
+      "talentIds": [
+        "tal-000008"
+      ],
+      "visibility": "public",
+      "youtubeId": "c-W7UQ8nS-0",
+      "type": "original",
+      "songId": "song-000068",
+      "registeredAt": "2026-11-25T10:08:09.711Z",
+      "rawSongTitle": "カラフル⭐︎パンチライン",
+      "id": "mv-000015"
+    },
+    {
+      "talentIds": [
+        "tal-000008"
+      ],
+      "visibility": "public",
+      "youtubeId": "0M9Y-FUFS78",
+      "type": "original",
+      "songId": "song-000069",
+      "registeredAt": "2026-11-25T10:08:54.219Z",
+      "rawSongTitle": "ドリームインブルーム！",
+      "id": "mv-000016"
+    },
+    {
+      "talentIds": [
+        "tal-000008"
+      ],
+      "visibility": "public",
+      "youtubeId": "MAQAR3BjyFg",
+      "type": "original",
+      "songId": "song-000070",
+      "registeredAt": "2026-11-25T10:09:31.951Z",
+      "rawSongTitle": "キミイロクロニクル",
+      "id": "mv-000017"
+    },
+    {
+      "talentIds": [
+        "tal-000008"
+      ],
+      "visibility": "public",
+      "youtubeId": "TFuv-JcyM9w",
+      "type": "original",
+      "songId": "song-000071",
+      "registeredAt": "2026-11-25T10:10:24.476Z",
+      "rawSongTitle": "せーの！虹のファンファーレ",
+      "id": "mv-000018"
+    },
+    {
+      "talentIds": [
+        "tal-000008"
+      ],
+      "visibility": "public",
+      "youtubeId": "YZDFWbzyKp8",
+      "type": "original",
+      "songId": "song-000072",
+      "registeredAt": "2026-11-25T10:11:53.798Z",
+      "rawSongTitle": "Sweet♡Heart☆Palette♪",
+      "id": "mv-000019"
+    },
+    {
+      "talentIds": [
+        "tal-000005"
+      ],
+      "visibility": "public",
+      "youtubeId": "UWi_qGnBHv8",
+      "type": "original",
+      "songId": "song-000073",
+      "registeredAt": "2026-11-25T10:12:46.243Z",
+      "rawSongTitle": "Realize",
+      "id": "mv-000020"
+    },
+    {
+      "talentIds": [
+        "tal-000008"
+      ],
+      "visibility": "public",
+      "youtubeId": "wDPJwaXzN4I",
+      "type": "original",
+      "songId": "song-000074",
+      "registeredAt": "2026-11-25T10:13:36.504Z",
+      "rawSongTitle": "Own other side",
+      "id": "mv-000021"
+    },
+    {
+      "talentIds": [
+        "tal-000008"
+      ],
+      "visibility": "public",
+      "youtubeId": "Bv4vfuzcmWc",
+      "type": "original",
+      "songId": "song-000075",
+      "registeredAt": "2026-11-25T10:14:18.292Z",
+      "rawSongTitle": "ハレバレパレット",
+      "id": "mv-000022"
+    },
+    {
+      "talentIds": [
+        "tal-000008"
+      ],
+      "visibility": "public",
+      "youtubeId": "JsEbGwNvN6E",
+      "type": "original",
+      "songId": "song-000076",
+      "registeredAt": "2026-11-25T10:15:02.802Z",
+      "rawSongTitle": "青春の現在地",
+      "id": "mv-000023"
     }
   ]
 }

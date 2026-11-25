@@ -382,3 +382,73 @@ textarea {
   min-width: 24px;
   min-height: 24px;
 }
+
+
+/* Shared CMS surfaces. These rules also keep advanced forms visually aligned. */
+.app-sidebar {
+  padding: var(--space-6) var(--space-3);
+  background: var(--soft);
+}
+.app-sidebar h1 { font-size: 18px; letter-spacing: -.02em; }
+.sidebar-caption { color: var(--muted); }
+.app-sidebar a {
+  min-height: var(--control-height);
+  padding: var(--space-2) var(--space-3);
+  border: 0;
+  border-radius: var(--radius-small);
+  font-weight: 500;
+}
+.app-sidebar a:hover { background: var(--hover); }
+.app-sidebar a[aria-current="page"] {
+  background: var(--surface);
+  color: var(--accent);
+  box-shadow: inset 0 0 0 1px var(--line);
+}
+.app-page-header { min-height: 64px; border-bottom: 1px solid var(--line); }
+.cms-content { min-width: 0; padding-block: var(--space-6); }
+.cms-toolbar, .cms-route-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-2);
+}
+.cms-route-tabs { border-bottom: 1px solid var(--line); padding-bottom: var(--space-3); }
+.cms-route-tabs a {
+  padding: var(--space-2) var(--space-3);
+  text-decoration: none;
+  border-radius: var(--radius-small);
+}
+.cms-route-tabs a[aria-current="page"] { background: var(--hover); font-weight: 600; }
+.cms-table { width: 100%; table-layout: fixed; }
+.cms-table th {
+  color: var(--muted);
+  font-size: var(--text-small);
+  font-weight: 600;
+  background: var(--soft);
+}
+.cms-table th, .cms-table td { padding: var(--space-3); border-bottom: 1px solid var(--line); }
+.cms-table tbody tr { min-height: var(--row-height); }
+.cms-table tbody tr:hover { background: var(--hover); }
+.cms-table button { text-align: left; }
+.cms-navigation-label {
+  margin: var(--space-6) var(--space-3) var(--space-2);
+  color: var(--muted);
+  font-size: var(--text-small);
+  font-weight: 600;
+}
+.cms-toolbar input[type="search"] { flex: 1 1 240px; }
+button, .button, input, select, textarea { border-radius: var(--radius-small); }
+button, .button { transition: background-color var(--motion-fast), border-color var(--motion-fast); }
+button:hover:not(:disabled), .button:hover { border-color: var(--accent); }
+:disabled { cursor: not-allowed; }
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { transition-duration: 0s !important; animation-duration: 0s !important; }
+}
+@media (max-width: 767px) {
+  .app-sidebar { border-right: 0; padding: var(--space-3); }
+  .app-sidebar a { min-height: 44px; }
+  .cms-toolbar { align-items: stretch; }
+  .cms-toolbar input[type="search"] { flex-basis: 100%; }
+  .cms-table th, .cms-table td { padding: var(--space-2); }
+  .cms-navigation-label { margin-block: var(--space-3) var(--space-1); }
+}

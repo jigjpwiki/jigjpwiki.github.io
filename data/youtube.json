@@ -1519,7 +1519,7 @@
     "date": "2026-11-24T22:13:20.000Z",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/akd0bIjznCc/mqdefault.jpg?v=6b04524d",
+    "thumbnail": "https://i.ytimg.com/vi/akd0bIjznCc/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/Z7PlAWhweuycNXNXoQ6etyDTkduySM-Kqy8kQW-AD19JuRdxT3HSdIxogPw3GPD5NHw_vZlf=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=akd0bIjznCc"
   },
@@ -1829,9 +1829,9 @@
     "youtubeid": "UCIw8aQVRBwi72yOrPLgkbRQ",
     "title": "事故物件間違い探しゲーだって【陰山アゲハ/#パレデミア学園 】",
     "date": "2026-11-25T12:01:02.000Z",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/lr37cquawJo/mqdefault.jpg?v=6b06bf56",
+    "thumbnail": "https://i.ytimg.com/vi/lr37cquawJo/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/XWKUawU_WoX_xINkx3TMSF3fj0RbdiwNezFiEAGcmHfQYvwkjMUM1mvyOmgsbK8LxHoo6aEKJA=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=lr37cquawJo"
   },
@@ -1860,40 +1860,28 @@
     "url": "https://www.youtube.com/watch?v=pzNiYjuTbMA"
   },
   {
-    "videoId": "keCDN4Lf0mw",
-    "name": "灯野ぺけ。",
-    "youtubeid": "UCldoz5HLh6BMW29HGnRpC0Q",
-    "title": "【ぶいかふぇ♪Vol.325アーカイブ同時視聴】雪子と見ていく！初見さん/ROMさんもおいで～☆≪ #パレデミア学園 / 灯野ぺけ。≫ #vtuber #雑談 #同時視聴",
-    "date": "2026-11-25T12:15:00.000Z",
-    "status": "upcoming",
-    "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/keCDN4Lf0mw/mqdefault.jpg?v=6b06cd21",
-    "channelIcon": "https://yt3.ggpht.com/sYbvo_2nSCW162VEArIwu7v1B3bl159gmEnGgGei8I8drc4l7huPP7q6aWZ4AfXi5wTMACmGow=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=keCDN4Lf0mw"
-  },
-  {
     "videoId": "DrjT0Q_L0AE",
     "name": "牡丹雪",
     "youtubeid": "UCl-qrfygvCjyA_lMR5lJzig",
     "title": "【 同時視聴 】ぶいかふぇvol.325を振り返ろう！ステージ立ってたバチイケ女と一緒に同時視聴！【 牡丹雪 / #パレデミア学園 】",
-    "date": "2026-11-25T12:15:00.000Z",
-    "status": "upcoming",
+    "date": "2026-11-25T12:16:14.000Z",
+    "status": "live",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/DrjT0Q_L0AE/mqdefault.jpg?v=6b06c7f8",
     "channelIcon": "https://yt3.ggpht.com/K9NG8yMDYt1GGoQjhc9c-XEBm1PxGVkEhIQxos6ODhB_pk5HpUvETjUOe5LLkzzJ3biot_nWwQ=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=DrjT0Q_L0AE"
   },
   {
-    "videoId": "x9whmwnTb1c",
-    "name": "小澄くろまる",
-    "youtubeid": "UC1Eq7ExEH0XO380it8cZYZg",
-    "title": "【鉄拳8】鉄拳プロ2名による大ガヤ ランクマ配信！コーチ：Gさん実況：ゲンヤさん【#小澄くろまる /ぷろのゔぁ】",
-    "date": "2026-11-25T12:30:00.000Z",
-    "status": "upcoming",
+    "videoId": "keCDN4Lf0mw",
+    "name": "灯野ぺけ。",
+    "youtubeid": "UCldoz5HLh6BMW29HGnRpC0Q",
+    "title": "【ぶいかふぇ♪Vol.325アーカイブ同時視聴】雪子と見ていく！初見さん/ROMさんもおいで～☆≪ #パレデミア学園 / 灯野ぺけ。≫ #vtuber #雑談 #同時視聴",
+    "date": "2026-11-25T12:16:29.000Z",
+    "status": "live",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/x9whmwnTb1c/mqdefault.jpg?v=6b06524b",
-    "channelIcon": "https://yt3.ggpht.com/_pGNq0-SYZiXjomeCnQRygINoA2PKkUJMbRtwuSIL83vUAny58me1QY1WttWypAIwJFrE5hh0w=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=x9whmwnTb1c"
+    "thumbnail": "https://i.ytimg.com/vi/keCDN4Lf0mw/mqdefault.jpg?v=6b06cd21",
+    "channelIcon": "https://yt3.ggpht.com/sYbvo_2nSCW162VEArIwu7v1B3bl159gmEnGgGei8I8drc4l7huPP7q6aWZ4AfXi5wTMACmGow=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=keCDN4Lf0mw"
   },
   {
     "videoId": "9t1AfzUZTDE",
@@ -1903,7 +1891,7 @@
     "date": "2026-11-25T12:30:00.000Z",
     "status": "upcoming",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/9t1AfzUZTDE/mqdefault.jpg?v=6b06bc38",
+    "thumbnail": "https://i.ytimg.com/vi/9t1AfzUZTDE/mqdefault.jpg?v=6b06d699",
     "channelIcon": "https://yt3.ggpht.com/Z7PlAWhweuycNXNXoQ6etyDTkduySM-Kqy8kQW-AD19JuRdxT3HSdIxogPw3GPD5NHw_vZlf=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=9t1AfzUZTDE"
   },
@@ -1912,12 +1900,24 @@
     "name": "愛乃宮ゆめ",
     "youtubeid": "UCttSjPiwPYpiPuCrgxK7c1g",
     "title": "【マイクラ/コラボ】海底神殿とやらに行きたいと思います！シーグラタン！！【愛乃宮ゆめ/パレデミア学園】",
-    "date": "2026-11-25T12:30:00.000Z",
-    "status": "upcoming",
+    "date": "2026-11-25T12:32:19.000Z",
+    "status": "live",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/QZB2DmdUlCc/mqdefault.jpg?v=6aff2acd",
     "channelIcon": "https://yt3.ggpht.com/Gwr7KJNWnI6CEgmIfEeMZahF5pbGNKlRhQXBEkuMWE0D66--IJE77z-5Zu2i5LFBc_CA6ZkqY4Y=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=QZB2DmdUlCc"
+  },
+  {
+    "videoId": "x9whmwnTb1c",
+    "name": "小澄くろまる",
+    "youtubeid": "UC1Eq7ExEH0XO380it8cZYZg",
+    "title": "【鉄拳8】鉄拳プロ2名による大ガヤ ランクマ配信！コーチ：Gさん実況：ゲンヤさん【#小澄くろまる /ぷろのゔぁ】",
+    "date": "2026-11-25T12:33:22.000Z",
+    "status": "live",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/x9whmwnTb1c/mqdefault.jpg?v=6b06524b",
+    "channelIcon": "https://yt3.ggpht.com/_pGNq0-SYZiXjomeCnQRygINoA2PKkUJMbRtwuSIL83vUAny58me1QY1WttWypAIwJFrE5hh0w=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=x9whmwnTb1c"
   },
   {
     "videoId": "zDHAMeH2_bA",

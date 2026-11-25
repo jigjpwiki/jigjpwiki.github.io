@@ -15,6 +15,8 @@ const collection = [
 
 test("all roles share the shell and separate collections while viewers have read-only controls", async () => {
   const savedByRole = new Map();
+  let latestSong = false;
+  let freshReads = 0;
   const server = http.createServer(async (req, res) => {
     try {
       const url = new URL(req.url, "http://localhost");
@@ -24,16 +26,22 @@ test("all roles share the shell and separate collections while viewers have read
       else if (url.pathname === "/api/me") data = role === "owner"
         ? { id: "123", login: "fixture", repository: "fixture/repo", simpleCms: true, csrf: "test" }
         : { id: "editor", role, provider: "google", csrf: "test" };
-      else if (url.pathname === "/api/cms/catalog") data = {
+      else if (url.pathname === "/api/cms/catalog") {
+        if (url.searchParams.get("fresh") === "1") freshReads++;
+        data = {
         sha: "a".repeat(40), editable: role !== "viewer", owner: role === "owner",
         contentPolicy: "all-content-v1", publicationTracking: role !== "owner", publishable: role === "editor",
-        categories: ["talents", "organizations", "anniversaries", "events", "music", "goods"], songs: [], people: [],
+        categories: ["talents", "organizations", "anniversaries", "events", "music", "goods"], songs: [
+          ...(latestSong ? [{ id: "song-000066", name: "新規登録した曲", search: "新曲別名", visibility: "public" }] : []),
+          ...Array.from({ length: 65 }, (_, i) => ({ id: "song-" + String(65 - i).padStart(6, "0"), name: "試験楽曲" + (65 - i), visibility: "public" })),
+        ], people: [],
         organizations: Array.from({ length: 65 }, (_, i) => ({ id: "org-" + String(i + 1).padStart(6, "0"), name: "試験事務所" + (i + 1) })),
         sections: collection.map(([entity, label]) => ({ entity, label, items: [
           { id: entity + "-001", title: label + "の試験レコード", context: "確認用関連情報", state: "active", visibility: "public" },
           { id: entity + "-002", title: label + "の別レコード", context: "別の関連情報", state: "hiatus", visibility: "draft" },
         ] })),
       };
+      }
       else if (url.pathname === "/api/cms/detail") data = { sha: "a".repeat(40), fields: {
         displayName: "VTuberの試験レコード", activity: "active", agencyState: "affiliated",
         affiliations: [{ organizationId: "org-000001", status: "current", from: null, to: null }],
@@ -182,6 +190,26 @@ test("all roles share the shell and separate collections while viewers have read
       await page.getByRole("button", { name: "履歴を読み込む", exact: true }).click();
       await page.getByText("このページに表示できる編集履歴はありません。", { exact: true }).waitFor();
       if (role === "editor") {
+        await page.goto(base + "/#content/musicVideo");
+        await page.getByRole("button", { name: "歌動画を新規登録", exact: true }).click();
+        const song = page.getByRole("combobox", { name: "既存の楽曲", exact: true });
+        await song.waitFor();
+        assert.equal(await song.locator("option").count(), 51);
+        await page.getByRole("button", { name: "楽曲候補の次のページ", exact: true }).click();
+        await song.selectOption("song-000001");
+        await page.getByRole("searchbox", { name: "曲名・原曲アーティストを検索", exact: true }).fill("試験楽曲65");
+        assert.equal(await song.inputValue(), "song-000001");
+        const rawTitle = page.getByLabel("動画に記載された曲名", { exact: true });
+        await rawTitle.fill("入力保持テスト");
+        latestSong = true;
+        await page.getByRole("button", { name: "最新の楽曲候補を取得", exact: true }).click();
+        await page.getByText("最新の楽曲候補に更新しました。", { exact: true }).waitFor();
+        assert.equal(await rawTitle.inputValue(), "入力保持テスト");
+        await page.getByRole("searchbox", { name: "曲名・原曲アーティストを検索", exact: true }).fill("新曲別名");
+        await song.selectOption("song-000066");
+        assert.ok(freshReads > 0);
+        page.once("dialog", (dialog) => dialog.accept());
+        await page.getByRole("button", { name: "閉じる", exact: true }).click();
         await page.goto(base + "/#content/talent?record=talent-002");
         const name = page.getByLabel("表示名", { exact: true });
         await name.fill("セッション復旧テスト");

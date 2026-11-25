@@ -49,40 +49,61 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
     node.onclick = handler;
     return node;
   };
-  const catalog = await api("/api/cms/catalog");
   const view = options.view || "legacy";
   const selectedEntity = options.entity;
+  const musicView = ["song", "musicVideo", "karaoke", "performance"].includes(selectedEntity);
+  const catalog = await api("/api/cms/catalog" + (musicView ? "?fresh=1" : ""));
   const sections = selectedEntity ? catalog.sections.filter(({ entity }) => entity === selectedEntity) : catalog.sections;
   const browsing = ["legacy", "content", "search"].includes(view);
-  function bindPicker(select, choices, selected, label, empty = "選択してください") {
+  function bindPicker(select, choices, selected, label, empty = "選択してください", paged = false) {
     const search = el("input");
     search.type = "search";
-    search.placeholder = "名前・IDで検索";
+    search.placeholder = paged ? "曲名・原曲アーティスト・別名・ID" : "名前・IDで検索";
     search.setAttribute("aria-label", label + "を検索");
     const group = el("div");
-    group.className = "cms-picker";
+    group.className = "cms-picker" + (paged ? " cms-song-picker" : "");
     const summary = el("small");
     summary.setAttribute("aria-live", "polite");
     const norm = (text) => String(text ?? "").normalize("NFKC").toLocaleLowerCase("ja");
-    const entries = (choices || []).map((row) => ({ id: row.id, name: row.name || row.title || row.id, context: row.context || "" }));
+    const entriesOf = (rows) => (rows || []).map((row) => ({
+      id: row.id, name: row.name || row.title || row.id, context: row.context || "",
+      search: row.search || "", visibility: row.visibility,
+    }));
+    let entries = entriesOf(choices), page = 0;
+    const pageSize = 50;
+    const previous = button("楽曲候補の前のページ", () => { page--; refresh(select.value); });
+    const next = button("楽曲候補の次のページ", () => { page++; refresh(select.value); });
+    previous.dataset.pickerNavigation = next.dataset.pickerNavigation = "";
     function refresh(current) {
       const query = norm(search.value.trim());
-      const matched = entries.filter((row) => norm(row.name + " " + row.id + " " + row.context).includes(query));
-      const visible = matched.filter((row) => row.id !== current).slice(0, 50);
+      const matched = entries.filter((row) => norm([row.name, row.id, row.context, row.search].join(" ")).includes(query));
+      const candidates = matched.filter((row) => row.id !== current);
+      const maxPage = Math.max(0, Math.ceil(candidates.length / pageSize) - 1);
+      page = Math.max(0, Math.min(page, maxPage));
+      const visible = candidates.slice(page * pageSize, (page + 1) * pageSize);
       const chosen = entries.find((row) => row.id === current);
       if (current) visible.unshift(chosen || { id: current, name: current + "（現在の参照）" });
       select.replaceChildren(new Option(empty, ""), ...visible.map((row) =>
-        new Option(row.name + (row.context ? " / " + row.context : ""), row.id)));
+        new Option(row.name + (row.context ? " / " + row.context : "") + (paged && row.visibility === "draft" ? "（非公開）" : ""), row.id)));
       select.value = current || "";
-      summary.textContent = matched.length + "件の候補" + (matched.length > 50 ? "・検索で絞り込み" : "");
+      summary.textContent = matched.length + "件の候補" + (paged ? "・" + (page + 1) + "/" + (maxPage + 1) + "ページ" : matched.length > pageSize ? "・検索で絞り込み" : "");
+      previous.disabled = page === 0;
+      next.disabled = page >= maxPage;
     }
     refresh(selected);
-    search.oninput = () => refresh(select.value);
+    search.oninput = () => { page = 0; refresh(select.value); };
     group.append(search, summary);
+    if (paged) {
+      const controls = el("div");
+      controls.className = "cms-song-picker-pages";
+      controls.append(previous, next);
+      group.append(controls);
+      group.refreshChoices = (rows) => { entries = entriesOf(rows); page = 0; refresh(select.value); };
+    }
     return group;
   }
-  function songPicker(select, selected) {
-    return bindPicker(select, catalog.songs, selected, "曲名・原曲アーティスト", "紐づけなし");
+  function songPicker(select, selected, label = "曲名・原曲アーティスト") {
+    return bindPicker(select, catalog.songs, selected, label, "紐づけなし", true);
   }
 
   const formArea = el("section");
@@ -397,6 +418,7 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
     requestSerial++;
     if (!formArea.contains(document.activeElement)) restoreFocus = document.activeElement;
     const spec = categories[entity];
+    let formSha = input.sha || catalog.sha;
     const form = el("form");
     form.className = "stack cms-record-form";
     const basic = el("section");
@@ -581,7 +603,7 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
             ["songId", "楽曲", catalog.songs, false]] : []) {
       const select = el("select");
       select.required = required;
-      const picker = bindPicker(select, choices, input[key], label);
+      const picker = key === "songId" ? songPicker(select, input[key], label) : bindPicker(select, choices, input[key], label);
       form.append(picker);
       add(key, label, select);
       if (entity === "offer" && input.id) {
@@ -805,6 +827,45 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
       fieldset.append(rows, button("曲を追加", () => appendTrack().focus()), completeLabel);
       form.append(fieldset);
     }
+    if (["musicVideo", "karaoke", "performance"].includes(entity)) {
+      const help = el("section");
+      help.className = "cms-song-help";
+      const note = el("p", "楽曲はID発行済みの登録情報から選択します。別途保存した未公開の新規下書きは、先に公開してから候補を更新してください。歌動画・歌枠では同じフォームで新しい楽曲を同時登録することもできます。");
+      const pending = (saved?.drafts || []).filter(({ input, conflict, reapplyJobId }) => input?.entity === "song" && !input.id && !conflict && !reapplyJobId);
+      if (pending.length) {
+        const list = el("p", "未発行の楽曲下書き：" + pending.map(({ input }) => input.title).join("、"));
+        help.append(list);
+      }
+      const draftLink = el("a", "楽曲の下書きを確認");
+      draftLink.href = "#drafts";
+      const refreshStatus = el("small");
+      refreshStatus.setAttribute("role", "status");
+      const refresh = button("最新の楽曲候補を取得", async () => {
+        if (saving) return;
+        refresh.disabled = true;
+        try {
+          const latest = await api("/api/cms/catalog?fresh=1");
+          if (!form.isConnected) return;
+          if (latest.contentPolicy !== catalog.contentPolicy || latest.editable !== catalog.editable) {
+            refreshStatus.textContent = "権限が変わりました。入力を控えてから画面を開き直してください。";
+            return;
+          }
+          catalog.songs = latest.songs;
+          for (const picker of form.querySelectorAll(".cms-song-picker")) picker.refreshChoices(latest.songs);
+          // A new unsaved record has no original record to overwrite. Existing
+          // records/drafts retain their base SHA and normal conflict checks.
+          if (!input.id && !draftId) formSha = latest.sha;
+          refreshStatus.textContent = latest.sha === formSha ? "最新の楽曲候補に更新しました。" :
+            "候補を更新しました。既存レコードの保存には最新データで開き直す必要があります。";
+        } catch {
+          refreshStatus.textContent = "候補を取得できませんでした。入力は保持しています。";
+        } finally { refresh.disabled = false; }
+      });
+      refresh.dataset.pickerNavigation = "";
+      if (catalog.editable) help.append(note, draftLink, refresh, refreshStatus);
+      else help.append(note);
+      form.prepend(help);
+    }
     const submit = el("button", "下書きを保存");
     submit.type = "submit";
     submit.className = "primary";
@@ -846,7 +907,7 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
     form.addEventListener("input", markDirty);
     form.addEventListener("change", markDirty);
     form.addEventListener("click", (event) => {
-      if (event.target.closest('button[type="button"]')) markDirty();
+      if (event.target.closest('button[type="button"]:not([data-picker-navigation])')) markDirty();
     });
     form.onsubmit = async (event) => {
       event.preventDefault();
@@ -879,7 +940,7 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
           ...Object.fromEntries([...controls].map(([name, control]) => [name, control.value])),
         }));
         const result = await api("/api/cms/draft", "PUT", {
-          entity, id: input.id, draftId, sha: input.sha || catalog.sha, revision, ...values,
+          entity, id: input.id, draftId, sha: formSha, revision, ...values,
         });
         revision = result.revision;
         draftId = result.draftId;

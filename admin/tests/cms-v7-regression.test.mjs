@@ -141,3 +141,21 @@ test("an empty song archive can be bulk-staged and reconstructed using the norma
   const { plan } = await publicationPlan(snapshot, { id: "bulk-archive", owner, createdAt: "2026-11-25T00:00:00Z", operations: batch.operations }, member);
   assert.equal(plan.files.karaoke.karaokes.find((row) => row.id === record.id).visibility, "draft");
 });
+
+ test("music catalog can explicitly revalidate and exposes every issued song, including searchable aliases", async () => {
+  const h = await harness(), editor = await h.login(member);
+  const freshCalls = [];
+  let current = snapshot;
+  h.admin.cmsSnapshot = async (options) => { freshCalls.push(options.revalidate); return current; };
+  const before = await expect(await editor.request("/api/cms/catalog"), 200);
+  const newSong = { ...fixture.music.songs[0], id: "song-999999", title: "新規登録曲", aliases: ["別表記"], readings: ["しんき"], identityUrl: "https://example.com/new-song" };
+  current = { sha: "b".repeat(40), models: { ...fixture, music: { ...fixture.music, songs: [...fixture.music.songs, newSong] } } };
+  const latest = await expect(await editor.request("/api/cms/catalog?fresh=1"), 200);
+  assert.deepEqual(freshCalls, [false,true]);
+  assert.equal(latest.sha, current.sha);
+  assert.equal(latest.songs.length, before.songs.length + 1);
+  assert.equal(latest.songs[0].id, newSong.id);
+  assert.match(latest.songs[0].search, /別表記.*しんき/);
+  const scoped = await h.login({ ...member, id: "scoped-music", contentPolicy: "scoped-v1", scope: { organizations: ["org-000001"], categories: ["events"] } });
+  assert.deepEqual((await expect(await scoped.request("/api/cms/catalog?fresh=1"), 200)).songs, []);
+ });

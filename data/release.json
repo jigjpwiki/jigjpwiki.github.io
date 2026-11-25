@@ -1,14 +1,10 @@
 {
-  "version": "2.14.0",
+  "version": "2.16.0",
   "changes": [
-    "公開プロフィールと公開履歴の掲載方針を分け、非表示時の情報公開を制御できるようにしました。"
+    "音楽ページの初期表示を歌動画に変更し、歌動画・歌枠アーカイブ・楽曲の順に並べました。"
   ],
   "featurePaths": [
-    "/talents/",
-    "/anniversaries/",
     "/music/",
-    "/music/karaoke/",
-    "/events/",
-    "/goods/"
+    "/music/karaoke/"
   ]
 }

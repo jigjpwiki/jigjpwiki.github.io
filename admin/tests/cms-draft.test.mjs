@@ -299,3 +299,21 @@ test("standalone video registration and title editing use the verified ID and sc
   editSnapshot.models.events.events[0].videoIds.push(id);
   await assert.rejects(prepareDraft(editSnapshot, editor, edit), /cms_scope_denied/);
 });
+
+ test("separately published new song can be selected by its issued ID in a new song video", async () => {
+  const { publicationPlan } = await import("../src/cms-publish.mjs");
+  const all = { role:"editor", contentPolicy:"all-content-v1", directPublish:true };
+  const owner="8ebf4fde-85a4-4d34-9feb-d1ba5c4de026";
+  const models=structuredClone(fixture);
+  const video=models.music.musicVideos.shift();
+  const first={sha:"a".repeat(40),models};
+  const songOps=await prepareDraft(first,all,{entity:"song",sha:first.sha,title:"新曲リンク検証",artists:"試験アーティスト",aliases:"別名",readings:"しんきょく",songIdentityUrl:"https://example.com/standalone-link-test"});
+  const {plan}=await publicationPlan(first,{id:"new-song-link-test",owner,createdAt:"2026-11-25T00:00:00Z",operations:songOps},all);
+  const published=plan.files.music.songs.find(row=>row.title==="新曲リンク検証");assert.ok(published?.id);
+  const next={sha:"b".repeat(40),models:{...models,...plan.files}};
+  const ops=await prepareDraft(next,all,{entity:"musicVideo",sha:next.sha,talent:video.talentIds[0],rawSongTitle:"新曲リンク検証",videoUrl:"https://www.youtube.com/watch?v="+video.youtubeId,videoKind:video.type,songId:published.id});
+  assert.equal(ops[0].value.songId,published.id);
+  assert.equal(draftInput({operations:ops}).songId,published.id);
+  const linked=await publicationPlan(next,{id:"new-video-link-test",owner,createdAt:"2026-11-25T00:00:00Z",operations:ops},all);
+  assert.equal(linked.plan.files.music.musicVideos.find(row=>row.youtubeId===video.youtubeId).songId,published.id);
+ });

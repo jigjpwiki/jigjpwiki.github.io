@@ -1,0 +1,51 @@
+{
+  "version": 2,
+  "batchId": "VyqGAOfczTEReVmN3sf_R-OyrOq3OSO0GlDZrANUh0E",
+  "actor": "900122208316251340881522085640042137117242",
+  "createdAt": "2026-11-25T06:51:08.151Z",
+  "baseCommit": "505bcae460dd2da1bf2fa6ce0cefacf13a6f2825",
+  "reason": null,
+  "submissionId": "VyqGAOfczTEReVmN3sf_R-OyrOq3OSO0GlDZrANUh0E",
+  "branch": "admin/change-VyqGAOfczTEReVmN3sf_R-OyrOq3OSO0GlDZrANUh0E",
+  "operations": [
+    {
+      "operationId": "cms-song-88dc82abb8674c8789e73642",
+      "entity": "song",
+      "recordId": "song-000062",
+      "action": "edit",
+      "changedFields": [
+        "readings"
+      ],
+      "before": {
+        "visibility": "public",
+        "identityUrl": "https://www.youtube.com/watch?v=BZBrsxqCPO8",
+        "aliases": [],
+        "readings": [
+          "ドラマティック・パレード"
+        ],
+        "originalArtists": [
+          "Alt!!",
+          "七海ロナ",
+          "暁月クララ"
+        ],
+        "title": "Dramatic Parade",
+        "id": "song-000062"
+      },
+      "after": {
+        "visibility": "public",
+        "identityUrl": "https://www.youtube.com/watch?v=BZBrsxqCPO8",
+        "aliases": [],
+        "readings": [
+          "ドラマティックパレード"
+        ],
+        "originalArtists": [
+          "Alt!!",
+          "七海ロナ",
+          "暁月クララ"
+        ],
+        "title": "Dramatic Parade",
+        "id": "song-000062"
+      }
+    }
+  ]
+}

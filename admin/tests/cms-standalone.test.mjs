@@ -1,6 +1,7 @@
 import test from "node:test";
 import assert from "node:assert/strict";
 import fixture from "../../tests/fixtures/admin-vnext-baseline.json" with { type: "json" };
+import { publicationPlan } from "../src/cms-publish.mjs";
 import { prepareDraft, draftDetails, draftInput } from "../src/cms-draft.mjs";
 
 const snapshot = { sha: "a".repeat(40), models: fixture };
@@ -21,6 +22,11 @@ for (const [entity, id, changes] of [
     const restored = draftInput({ operations });
     assert.equal(restored.entity, entity);
     assert.equal(restored.id, id);
+    const job = { id: "standalone-" + entity, owner: "8ebf4fde-85a4-4d34-9feb-d1ba5c4de026",
+      createdAt: "2026-11-25T00:00:00Z", operations };
+    const { plan } = await publicationPlan(snapshot, job, member);
+    assert.equal(plan.impact.records.length, 1);
+    assert.equal(plan.impact.records[0].id, id);
     assert.equal(JSON.stringify(fixture), JSON.stringify(snapshot.models));
     await assert.rejects(prepareDraft(snapshot, { ...member, role: "viewer" }, input), /cms_scope_denied/);
   });

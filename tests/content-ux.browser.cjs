@@ -2,6 +2,10 @@
 const {chromium}=require('playwright'),assert=require('node:assert/strict'),fs=require('node:fs'),path=require('node:path'),http=require('node:http');
 const {root,goods,master,catalog}=require('./fixtures/content-ux.cjs')();
 const pages=require('../lib/goods-pages');
+const eventPages=require('../lib/feature-pages');
+const baseline=require('./fixtures/admin-vnext-baseline.json');
+const fixtureEvents={events:structuredClone(baseline.events.events).filter(e=>e.visibility==='public'),videos:baseline.media.videos,groups:baseline.catalog.groups};
+fixtureEvents.events[0].thumbnailUrl='https://images.example/event.svg';
 const now=new Date('2026-11-20T00:00:00Z'),tiny='<svg xmlns="http://www.w3.org/2000/svg" width="120" height="240"><rect width="120" height="240" fill="#6699bb"/></svg>';
 const publishedGoods=JSON.parse(fs.readFileSync(path.join(root,'data/goods.json')));
 const campaignProducts=id=>publishedGoods.products.filter(p=>publishedGoods.offers.some(o=>o.campaignId===id&&o.productId===p.id)).length;
@@ -9,6 +13,8 @@ const goodsListingCount=publishedGoods.campaigns.length+publishedGoods.products.
 (async()=>{
  const server=http.createServer((req,res)=>{
   const u=new URL(req.url,'http://localhost');
+  if(u.pathname==='/fixture-events/')return res.setHeader('Content-Type','text/html').end(eventPages.eventList(master,fixtureEvents,'2026-11-20'));
+  if(u.pathname==='/fixture-event/')return res.setHeader('Content-Type','text/html').end(eventPages.eventPage(fixtureEvents.events[0],master,fixtureEvents));
   if(u.pathname==='/fixture-campaign/'){
    const data=structuredClone(catalog);data.products[0].image='https://images.example/product.svg';
    return res.setHeader('Content-Type','text/html').end(pages.campaignPage(data.campaigns[0],master,data,now));
@@ -35,7 +41,26 @@ const goodsListingCount=publishedGoods.campaigns.length+publishedGoods.products.
   await size('music');
   await p.goto(base+'/music/karaoke/');const kbox=await p.locator('.content-thumbnail').first().boundingBox();assert(Math.abs(kbox.width/kbox.height-16/9)<0.03);await size('karaoke-list');
   await p.goto(base+'/music/karaoke/karaoke-000001/');assert.equal(await p.locator('.feature-setlist>li').count(),31);await size('setlist');
-  await p.goto(base+'/events/');await size('events');if(javaScriptEnabled){assert.equal(await p.locator('[data-event-group="past"] [data-filter-row]').count(),1);assert.equal(await p.locator('[data-event-group="unknown"] [data-filter-row]').count(),3);assert.equal(await p.locator('[data-event-group="upcoming"] [data-filter-row]').count(),1);}
+  await p.goto(base+'/events/');await size('events');if(javaScriptEnabled){assert.equal(await p.locator('[data-event-group="past"] [data-filter-row]').count(),4);assert.equal(await p.locator('[data-event-group="unknown"] [data-filter-row]').count(),0);assert.equal(await p.locator('[data-event-group="unknown"]').isVisible(),false);assert.equal(await p.locator('[data-event-group="upcoming"] [data-filter-row]').count(),1);await p.clock.setFixedTime(new Date('2026-12-26T10:00:00Z'));await p.evaluate(()=>document.dispatchEvent(new Event('visibilitychange')));assert.equal(await p.locator('[data-event-id="evt-000001"]').getAttribute('data-phase'),'ongoing');await p.clock.setFixedTime(new Date('2026-12-26T11:00:00Z'));await p.evaluate(()=>document.dispatchEvent(new Event('visibilitychange')));assert.equal(await p.locator('[data-event-group="past"] [data-filter-row]').count(),5);assert.equal(await p.locator('[data-event-group="upcoming"]').isVisible(),false);assert.equal(await p.locator('[data-event-group="past"] [data-filter-row]').first().getAttribute('data-event-id'),'evt-000001');await p.clock.setFixedTime(now);}
+  await p.goto(base+'/fixture-events/');await size('events-thumbnail');
+  const eventImg=p.locator('.event-cover img').first();await eventImg.scrollIntoViewIfNeeded();await eventImg.evaluate(e=>e.decode());
+  const eventBox=await eventImg.boundingBox();assert(Math.abs(eventBox.width/eventBox.height-16/9)<0.03);
+  assert.equal(await eventImg.evaluate(e=>getComputedStyle(e).objectFit),'cover');
+  if(javaScriptEnabled){
+   await p.locator('[name=q]').fill(fixtureEvents.events[0].title);
+   assert.equal(await p.locator('[data-event-group="upcoming"] [data-event-count]').innerText(),'1件');
+   assert.equal(await p.locator('[data-event-group="past"]').isVisible(),false);
+   await p.getByRole('button',{name:'条件を解除'}).click();await p.waitForFunction(()=>document.querySelector('[data-event-group="past"]').hidden===false);
+  }
+  if(process.env.EVENT_SCREENSHOTS&&javaScriptEnabled&&[390,1440].includes(width)){
+   fs.mkdirSync(process.env.EVENT_SCREENSHOTS,{recursive:true});
+   await p.screenshot({path:path.join(process.env.EVENT_SCREENSHOTS,'events-'+width+'.png'),fullPage:true});
+  }
+  await p.goto(base+'/fixture-event/');await size('event-detail');
+  const detailImage=p.locator('.event-cover-detail img');await detailImage.evaluate(e=>e.decode());
+  const detailBox=await detailImage.boundingBox();assert(Math.abs(detailBox.width/detailBox.height-16/9)<0.03);
+  if(javaScriptEnabled)assert.equal(await p.locator('[data-event-detail-times] [data-event-phase]').innerText(),'開催予定');
+  if(process.env.EVENT_SCREENSHOTS&&javaScriptEnabled&&[390,1440].includes(width))await p.screenshot({path:path.join(process.env.EVENT_SCREENSHOTS,'event-detail-'+width+'.png'),fullPage:true});
   await p.goto(base+'/anniversaries/?date=2027-03-07&type=debut&organization=org-000001');await size('anniversaries');if(javaScriptEnabled){assert.equal(await p.locator('#month-label').innerText(),'2027-03');assert.equal(await p.locator('[data-day="2027-03-07"]').getAttribute('aria-pressed'),'true');await p.locator('#next-month').click();await p.goBack();assert.equal(await p.locator('#month-label').innerText(),'2027-03');await p.locator('[data-day="2027-03-07"]').focus();await p.keyboard.press('ArrowRight');assert.equal(await p.locator('[data-day="2027-03-08"]').getAttribute('aria-pressed'),'true');}
   if(!javaScriptEnabled){await p.goto(base+'/goods/campaigns/campaign-000001/');assert.match(await p.locator('main').innerText(),/販売状態の基準/);}
   assert.deepEqual(errors,[]);await context.close();console.log(`Content UX browser passed ${width}, JS=${javaScriptEnabled}`);

@@ -650,4 +650,6 @@ button:hover:not(:disabled), .button:hover { border-color: var(--accent); }
   .cms-navigation a { min-height: 40px; }
 }
 
+.cms-event-preview { display:block;width:100%;max-width:440px;aspect-ratio:16/9;object-fit:cover;margin-top:8px;border-radius:8px;background:var(--soft); }
+
 .cms-song-picker-pages{display:flex;flex-wrap:wrap;gap:6px}.cms-song-picker-pages button{font-size:12px;min-height:30px}.cms-song-help{display:flex;flex-wrap:wrap;align-items:center;gap:8px;padding:12px;border:1px solid var(--line);border-radius:8px;background:var(--soft)}.cms-song-help p{flex:1 1 100%;margin:0;font-size:13px;color:var(--muted)}.cms-song-help small{flex:1 1 100%;color:var(--muted)}

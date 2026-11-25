@@ -218,6 +218,7 @@ export function scopedCatalog(models, member) {
         state: row.activityStatus?.value || row.status || row.timing || row.verification || row.setlistStatus || row.availability || "",
         ...(entity === "talent" ? { image: row.profileImage?.url || "" } : {}),
         ...(entity === "product" ? { image: typeof row.image === "string" ? row.image : row.image?.url || "" } : {}),
+        ...(entity === "event" ? { image: row.thumbnailUrl || "" } : {}),
       })),
     };
   });

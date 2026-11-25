@@ -19,7 +19,11 @@
     for(const el of rows){const row=JSON.parse(el.dataset.filterRow);row.category=el.closest('[data-category-panel]')?.dataset.categoryPanel||row.category;if(!category||row.category===category)total++;el.hidden=!matches(row,f);if(!el.hidden)count++;}
     for(const panel of panels)panel.hidden=panel.dataset.categoryPanel!==category;
     for(const tab of tabs){const on=tab.dataset.category===category;tab.setAttribute('aria-current',on?'page':'false');}
-    for(const section of document.querySelectorAll('[data-result-section]'))section.hidden=![...section.querySelectorAll('[data-filter-row]')].some(el=>!el.hidden);
+    for(const section of document.querySelectorAll('[data-result-section]')){
+     const visible=[...section.querySelectorAll('[data-filter-row]')].filter(el=>!el.hidden).length;
+     section.hidden=visible===0;
+     const count=section.querySelector('[data-event-count]');if(count)count.textContent=visible+'件';
+    }
     document.getElementById('catalog-status').textContent=`${count}件 ／ 登録${total}件`;document.getElementById('catalog-empty').hidden=count!==0;if(push)url(true);
    }
    for(const tab of tabs)tab.addEventListener('click',e=>{if(e.ctrlKey||e.metaKey||e.shiftKey||e.altKey)return;e.preventDefault();category=tab.dataset.category;draw(true);});

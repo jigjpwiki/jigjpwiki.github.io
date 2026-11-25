@@ -18,7 +18,7 @@ const labels = {
   title: ["名称", "text"], venue: ["会場", "text"], summary: ["概要", "textarea"],
   starts: ["開始日時（日本時間）", "datetime-local"], ends: ["終了日時（日本時間）", "datetime-local"],
   format: ["開催形式", "select"], streamUrl: ["配信URL", "url"], fee: ["料金", "number"],
-  announcementUrl: ["公式告知URL", "url"], image: ["商品画像URL", "url"],
+  announcementUrl: ["公式告知URL", "url"], thumbnailUrl: ["イベントサムネイルURL（16:9・任意）", "url"], image: ["商品画像URL", "url"],
   identityUrl: ["公式商品情報URL", "url"], url: ["販売ページURL", "url"], price: ["価格（円）", "number"],
 };
 const categories = {
@@ -33,7 +33,7 @@ const categories = {
   talent: { category: "talents", label: "VTuber", fields: ["displayName", "image", "activity", "officialProfileUrl", "aliasNames", "youtubeUrl", "xUrl"] },
   campaign: { category: "goods", label: "キャンペーン", fields: ["title"] },
   anniversary: { category: "anniversaries", label: "記念日", fields: ["title", "kind", "month", "day", "year"] },
-  event: { category: "events", label: "イベント", fields: ["title", "announcementUrl", "summary", "venue", "starts", "ends", "format", "streamUrl", "fee"] },
+  event: { category: "events", label: "イベント", fields: ["title", "thumbnailUrl", "announcementUrl", "summary", "venue", "starts", "ends", "format", "streamUrl", "fee"] },
   product: { category: "goods", label: "グッズ", fields: ["title", "image", "identityUrl"] },
 };
 
@@ -453,9 +453,9 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
         update();
         field.append(link);
       }
-      if (key === "image") {
+      if (key === "image" || key === "thumbnailUrl") {
         const preview = el("img");
-        preview.className = "cms-form-image";
+        preview.className = key === "thumbnailUrl" ? "cms-event-preview" : "cms-form-image";
         preview.alt = "登録画像のプレビュー";
         preview.referrerPolicy = "no-referrer";
         const update = () => {
@@ -467,6 +467,7 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
         control.addEventListener("change", update);
         update();
         field.append(preview);
+        if (key === "thumbnailUrl") field.append(el("small", "公式画像など、掲載可能な公開HTTPS画像URLを入力。16:9で表示します。"));
       }
       host.append(field);
       fields.set(key, control);

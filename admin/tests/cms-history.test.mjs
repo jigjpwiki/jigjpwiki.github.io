@@ -65,3 +65,22 @@ test("history loads only tracked paths pinned to the authorized snapshot SHA", a
   assert.deepEqual(result, { records: [{ batchId, actor: audit.actor, createdAt: audit.createdAt, count: 1 }], next: null });
   assert.deepEqual(calls, ["https://raw.githubusercontent.com/owner/repo/" + snapshot.sha + "/ops/admin/audit/" + batchId + ".json"]);
 });
+
+test("common editor can read organization history while legacy category restrictions still apply", () => {
+  const models = structuredClone(fixture);
+  const before = structuredClone(models.talents.organizations[0]);
+  const after = { ...before, name: before.name + " 更新" };
+  models.talents.organizations[0] = after;
+  const audit = {
+    version: 2, batchId, actor: "1234", createdAt: "2026-11-25T00:00:00.000Z", baseCommit: "old",
+    reason: null, branch: "admin/change-" + batchId,
+    operations: [{ operationId: "organization", entity: "organization", recordId: before.id, action: "edit",
+      changedFields: ["name"], before, after }],
+  };
+  const snapshot = { sha: "b".repeat(40), models };
+  const editor = { role: "editor", contentPolicy: "all-content-v1" };
+  assert.equal(scopedHistory(snapshot, editor, audit, batchId).operations.length, 1);
+  assert.equal(editor.owner, undefined);
+  const scoped = { role: "editor", scope: { categories: ["events"], organizations: [before.id] } };
+  assert.equal(scopedHistory(snapshot, scoped, audit, batchId).operations.length, 0);
+});

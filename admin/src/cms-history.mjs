@@ -4,7 +4,7 @@ import { equal, recordAt, threeWay } from "./submission-plan.mjs";
 import { fail } from "./security.mjs";
 import validateAudit from "./audit.cjs";
 
-const tracked = new Set(["talent", "anniversary", "song", "musicVideo", "video",
+const tracked = new Set(["organization", "group", "talent", "anniversary", "song", "musicVideo", "video",
   "karaoke", "performance", "event", "campaign", "product", "offer"]);
 
 // Single-record reversals must round-trip through the corresponding CMS form.

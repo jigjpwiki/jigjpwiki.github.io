@@ -285,7 +285,8 @@ export class Admin {
         await this.store.put(key, { ...rate, count: rate.count + 1 }, rate.expires);
       });
       const snapshot = await this.cmsSnapshot({
-        revalidate: request.method !== "GET" || url.pathname === "/api/cms/draft/conflicts",
+        revalidate: request.method !== "GET" || url.pathname === "/api/cms/draft/conflicts" ||
+          (url.pathname === "/api/cms/catalog" && url.searchParams.get("fresh") === "1"),
         getReadToken: google
           ? () => installationReadToken(this.env, this.transport)
           : () => github.token,
@@ -308,7 +309,11 @@ export class Admin {
           sha: snapshot.sha, sections: scopedCatalog(models, member), contentPolicy: member.contentPolicy || "scoped-v1", owner: member.owner === true,
           songs: contentCategories(member).includes("music")
             ? models.music.songs.filter((song) => hasAllContent(member) || song.visibility === "public")
-              .map(({ id, title, originalArtists }) => ({ id, name: title + (originalArtists?.length ? " / " + originalArtists.join("、") : "") }))
+              .map(({ id, title, originalArtists, aliases, readings, visibility }) => ({
+                id, name: title + (originalArtists?.length ? " / " + originalArtists.join("、") : ""),
+                search: [...(aliases || []), ...(readings || [])].join(" "), visibility,
+              }))
+              .sort((a, b) => b.id.localeCompare(a.id))
             : [],
           editable: member.role === "editor", publicationTracking: google, publishable: member.role === "editor" && member.directPublish === true && publishingEnabled(this.env), categories: contentCategories(member),
           organizations: models.talents.organizations.filter((row) => hasAllContent(member) || member.scope?.organizations.includes(row.id)),

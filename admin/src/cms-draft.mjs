@@ -709,30 +709,52 @@ export async function prepareBulkDrafts(snapshot, member, input, existing = []) 
   if (!allowed?.includes(value)) fail(400, "cms_invalid_bulk");
   const access = cmsPermissions(snapshot.models, member);
   const operations = [];
+  const batches = [];
+  const subjects = new Set(existing.filter((op) => op.id).map((op) => op.entity + ":" + op.id));
   for (const id of ids) {
-    if (existing.some((op) => op.entity === entity && op.id === id)) fail(409, "cms_bulk_existing_draft");
+    if (subjects.has(entity + ":" + id)) fail(409, "cms_bulk_existing_draft");
     const before = recordAt(snapshot.models, { entity, id });
     if (!access.canRead(entity, before)) fail(403, "cms_scope_denied");
-    const next = structuredClone(before);
-    if (field === "activity") next.activityStatus = { ...before.activityStatus, value };
-    else next[field] = value;
-    if (JSON.stringify(before) === JSON.stringify(next)) continue;
-    access.assertChange(entity, before, next);
-    operations.push({ key: entity === "video" ? "cms-media" : "cms-" + entity.toLowerCase(),
-      entity, id, before, value: next, baseCommit: snapshot.sha });
+    const oldValue = field === "activity" ? before.activityStatus.value : field === "visibility" ? before.visibility ?? "public" : before[field];
+    if (oldValue === value) continue;
+    const input = { ...draftDetails(snapshot, member, entity, id), entity, id, sha: snapshot.sha, [field]: value };
+    const batch = await prepareDraft(snapshot, member, input);
+    // The form must be lossless for all untouched fields. Never stage a bulk
+    // edit that would normalize unrelated data or modify children implicitly.
+    for (const op of batch) {
+      if (!op.id || !op.before) fail(409, "cms_bulk_unsafe_roundtrip");
+      const subject = op.entity + ":" + op.id;
+      if (subjects.has(subject)) fail(409, "cms_bulk_existing_draft");
+      subjects.add(subject);
+      const expected = structuredClone(op.before);
+      if (op.entity === entity && op.id === id) {
+        if (field === "activity") expected.activityStatus = { ...expected.activityStatus, value };
+        else expected[field] = value;
+      }
+      // Ignore property order, but retain exact array order and field presence.
+      const same = (a, b) => {
+        if (a === b) return true;
+        if (!a || !b || typeof a !== "object" || typeof b !== "object" || Array.isArray(a) !== Array.isArray(b)) return false;
+        return Object.keys(a).length === Object.keys(b).length && Object.keys(a).every((k) => Object.hasOwn(b, k) && same(a[k], b[k]));
+      };
+      if (!same(expected, op.value)) fail(409, "cms_bulk_unsafe_roundtrip");
+    }
+    batches.push(batch);
+    operations.push(...batch);
   }
   if (!operations.length) fail(409, "no_changes");
-  const combined = operations.map((op, i) => ({ ...op, key: op.key + "-" + i }));
+  let result = existing;
+  const draftIds = [];
+  const combined = [];
+  for (const group of batches) {
+    const batch = writeDraft(result, undefined, group);
+    result = batch.operations;
+    draftIds.push(batch.id);
+    combined.push(...draftGroups(result).get(batch.id));
+  }
   const plan = await planSubmission(snapshot, combined, { actor: "0", batchId: await hash(combined) });
   if (plan.conflicts?.length) fail(409, "main_changed_reload");
   const after = cmsPermissions({ ...snapshot.models, ...plan.files }, member);
   for (const row of plan.impact.records) after.assertChange(row.entity, row.before, row.value);
-  let result = existing;
-  const draftIds = [];
-  for (const op of operations) {
-    const batch = writeDraft(result, undefined, [op]);
-    result = batch.operations;
-    draftIds.push(batch.id);
-  }
   return { operations: result, draftIds };
 }

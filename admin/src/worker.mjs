@@ -285,8 +285,8 @@ export class Admin {
           : () => github.token,
       });
       const requireCurrentGrant = async () => {
-        if (google ? entry !== await this.store.get(session.memberKey) || !googleEnabled(this.env)
-          : !(await this.store.get("session:" + sid)) || session.expires <= Date.now())
+        if (!(await this.store.get("session:" + sid)) || session.expires <= Date.now() ||
+            (google && (entry !== await this.store.get(session.memberKey) || !googleEnabled(this.env))))
           fail(401, "login_required");
       };
       await requireCurrentGrant();

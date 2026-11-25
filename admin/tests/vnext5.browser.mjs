@@ -4,6 +4,8 @@ import path from "node:path";
 const advancedRoutes = { "VTuber": "#masters", "事務所・グループ": "#organizations", "記念日": "#anniversaries", "音楽": "#music", "イベント": "#events", "グッズ": "#goods", "変更内容": "#workspace", "提出済みPR": "#submitted", "設定": "#settings", "ダッシュボード": "#dashboard" };
 async function advancedNav(p, name) {
   const route = advancedRoutes[name];
+  const menu = p.locator("#mobile-nav-toggle");
+  if (await menu.isVisible() && await menu.getAttribute("aria-expanded") === "false") await menu.click();
   const details = p.locator("nav details[data-owner-only]");
   if (route !== "#dashboard" && await details.count())
     await details.evaluate((node) => { node.open = true; });

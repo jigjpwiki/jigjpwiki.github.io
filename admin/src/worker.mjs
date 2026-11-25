@@ -1,3 +1,4 @@
+import { publicationReview } from "./cms-review.mjs";
 import { recoverAppliedGroup } from "./cms-recover-draft.mjs";
 import { youtubeVideoLookup } from "./cms-music.mjs";
 import { readCmsHistory, prepareAuditReversal, assertReversalRoundTrip } from "./cms-history.mjs";
@@ -5,10 +6,10 @@ import { inspectDraftConflicts } from "./cms-conflicts.mjs";
 import { publicationPlan } from "./cms-publish.mjs";
 import { CmsJobs } from "./cms-jobs.mjs";
 import { installationReadToken, publishingEnabled } from "./github-app.mjs";
-import { prepareDraft, draftDetails, draftInput, draftGroups, writeDraft, draftConflict } from "./cms-draft.mjs";
+import { prepareDraft, draftDetails, draftInput, draftGroups, writeDraft, draftConflict, prepareBulkDrafts } from "./cms-draft.mjs";
 import { cmsPermissions } from "./cms-scope.mjs";
 import { createCmsReader } from "./cms-read.mjs";
-import { normalizeScope, scopedCatalog } from "./cms-scope.mjs";
+import { normalizeScope, scopedCatalog, normalizeMemberPolicy, contentCategories, hasAllContent } from "./cms-scope.mjs";
 import { googleAuth, googleEnabled, emailKey } from "./google.mjs";
 import {
   Failure,
@@ -84,6 +85,11 @@ export class Admin {
           sql.exec("DELETE FROM entries WHERE key=?", key);
         },
         members: async () => [...sql.exec("SELECT value FROM entries WHERE key GLOB 'member:*' ORDER BY key LIMIT 100")].map((row) => JSON.parse(row.value)),
+        // All ciphertext is prepared before entering this synchronous transaction.
+        putMemberBatch: async (updates) => state.storage.transactionSync(() => {
+          for (const { key, value } of updates)
+            sql.exec("UPDATE entries SET value=? WHERE key=?", JSON.stringify(value), key);
+        }),
         clean: async () =>
           sql.exec("DELETE FROM entries WHERE expires<?", Date.now()),
       };
@@ -261,10 +267,14 @@ export class Admin {
       if (url.pathname === "/api/cms/publication") {
         const jobs = new CmsJobs(this);
         if (request.method === "GET") return json({ publication: await jobs.status(session.id) });
-        if (request.method === "POST") return json({ publication: await jobs.enqueue(session, await body(request, 4096)) }, 202);
+        if (request.method === "POST") {
+          if (member.role !== "editor" || member.directPublish !== true) fail(403, "cms_scope_denied");
+          if (!publishingEnabled(this.env)) fail(403, "cms_publish_disabled");
+          return json({ publication: await jobs.enqueue(session, await body(request, 4096)) }, 202);
+        }
       }
     }
-    const cmsRoutes = ["/api/cms/catalog", "/api/cms/detail", "/api/cms/draft", "/api/cms/draft/conflicts", "/api/cms/history", "/api/cms/publication/reapply"];
+    const cmsRoutes = ["/api/cms/catalog", "/api/cms/detail", "/api/cms/draft", "/api/cms/draft/bulk", "/api/cms/draft/conflicts", "/api/cms/history", "/api/cms/publication/reapply", "/api/cms/publication/preview"];
     if (cmsRoutes.includes(url.pathname)) {
       await this.atomic(async () => {
         const key = "cms-rate:" + sid;
@@ -279,36 +289,42 @@ export class Admin {
           : () => github.token,
       });
       const requireCurrentGrant = async () => {
-        if (google ? entry !== await this.store.get(session.memberKey) || !googleEnabled(this.env)
-          : !(await this.store.get("session:" + sid)) || session.expires <= Date.now())
+        if (!(await this.store.get("session:" + sid)) || session.expires <= Date.now() ||
+            (google && (entry !== await this.store.get(session.memberKey) || !googleEnabled(this.env))))
           fail(401, "login_required");
       };
       await requireCurrentGrant();
       const { models } = snapshot;
       const member = google ? googleMember : {
-        role: "editor", owner: true, scope: {
-          categories: ["talents", "anniversaries", "events", "music", "goods"],
-          organizations: models.talents.organizations.map(({ id }) => id), groups: [],
-        },
+        role: "editor", owner: true, contentPolicy: "all-content-v1", scope: {},
       };
       if (url.pathname === "/api/cms/catalog" && request.method === "GET") {
         const access = cmsPermissions(models, { ...member, scope: {
           ...member.scope, categories: ["talents"],
         } });
         return json({
-          sha: snapshot.sha, sections: scopedCatalog(models, member), owner: member.owner === true,
-          songs: member.scope?.categories.includes("music")
-            ? models.music.songs.filter((song) => song.visibility === "public")
+          sha: snapshot.sha, sections: scopedCatalog(models, member), contentPolicy: member.contentPolicy || "scoped-v1", owner: member.owner === true,
+          songs: contentCategories(member).includes("music")
+            ? models.music.songs.filter((song) => hasAllContent(member) || song.visibility === "public")
               .map(({ id, title, originalArtists }) => ({ id, name: title + (originalArtists?.length ? " / " + originalArtists.join("、") : "") }))
             : [],
-          editable: member.role === "editor", publicationTracking: google, publishable: member.role === "editor" && member.directPublish === true && publishingEnabled(this.env), categories: member.scope?.categories ?? [],
-          organizations: models.talents.organizations.filter((row) => member.scope?.organizations.includes(row.id)),
+          editable: member.role === "editor", publicationTracking: google, publishable: member.role === "editor" && member.directPublish === true && publishingEnabled(this.env), categories: contentCategories(member),
+          organizations: models.talents.organizations.filter((row) => hasAllContent(member) || member.scope?.organizations.includes(row.id)),
           people: models.talents.talents.filter((row) => access.canRead("talent", row))
             .map((row) => ({ id: row.id, name: row.displayName })),
         });
       }
       if (url.pathname === "/api/cms/detail" && request.method === "GET")
         return json({ sha: snapshot.sha, fields: draftDetails(snapshot, member, url.searchParams.get("entity"), url.searchParams.get("id")) });
+      if (url.pathname === "/api/cms/publication/preview" && request.method === "POST") {
+        if (!google || !publishingEnabled(this.env)) fail(403, "cms_publish_disabled");
+        const input = await body(request, 4096);
+        const saved = await new WorkspaceStore(this.store, this.env.SESSION_KEY).get(session.id);
+        const result = await publicationReview(snapshot, saved, member, session.id, input,
+          this.env.SESSION_KEY, this.cmsVideoLookup);
+        await requireCurrentGrant();
+        return json(result);
+      }
       if (url.pathname === "/api/cms/publication/reapply" && request.method === "POST") {
         if (!google || member.role !== "editor") fail(403, "cms_scope_denied");
         const input = await body(request, 1024);
@@ -424,18 +440,33 @@ export class Admin {
           });
         }
       }
+      if (url.pathname === "/api/cms/draft/bulk" && request.method === "PUT") {
+        if (member.role !== "editor" || !hasAllContent(member)) fail(403, "cms_scope_denied");
+        const input = await body(request, 4096);
+        const workspace = new WorkspaceStore(this.store, this.env.SESSION_KEY);
+        const previous = await workspace.get(session.id);
+        if (!Number.isInteger(input?.revision) || input.revision !== (previous?.revision ?? 0))
+          fail(409, "workspace_revision_conflict");
+        const batch = await prepareBulkDrafts(snapshot, member, input, previous?.operations || []);
+        return this.atomic(async () => {
+          await requireCurrentGrant();
+          const saved = await workspace.save(session.id, { protocol: 1, revision: input.revision, operations: batch.operations });
+          return json({ revision: saved.revision, draftIds: batch.draftIds });
+        });
+      }
       if (url.pathname === "/api/cms/draft") {
         if (member.role !== "editor") fail(403, "cms_scope_denied");
         const workspace = new WorkspaceStore(this.store, this.env.SESSION_KEY);
         if (request.method === "GET") {
           const saved = await workspace.get(session.id);
-          const publication = google && saved?.operations.length
-            ? await new CmsJobs(this).status(session.id) : null;
+          const jobs = google ? new CmsJobs(this) : null;
+          const publication = jobs && saved?.operations.length ? await jobs.status(session.id) : null;
+          const retained = jobs ? await jobs.retainedDraftJobs(session.id, saved) : {};
           const assignedKeys = new Set(publication?.createdRecords?.map(({ key }) => key));
           const drafts = [];
           for (const [draftId, group] of draftGroups(saved?.operations)) {
-            const reapplyJobId = group.some((row) => !row.id && assignedKeys.has(row.key))
-              ? publication.id : undefined;
+            const reapplyJobId = retained[draftId] || (group.some((row) => !row.id && assignedKeys.has(row.key))
+              ? publication.id : undefined);
             const input = draftInput({ operations: group });
             if (!input) continue;
             try {
@@ -458,6 +489,7 @@ export class Admin {
             const previous = await workspace.get(session.id);
             const { operations } = writeDraft(previous?.operations || [], input.draftId);
             const saved = await workspace.save(session.id, { protocol: 1, revision: input.revision, operations });
+            if (google && previous) await new CmsJobs(this).markRecovered(session.id, previous.workspaceId, input.draftId);
             return json({ revision: saved.revision });
           });
         }
@@ -494,10 +526,44 @@ export class Admin {
     if (url.pathname === "/api/members" && request.method === "GET") {
       const entries = await this.store.members();
       const members = await Promise.all(entries.map(async (entry) => {
-        const { email, id, role, disabled, sub, expires, scope, directPublish } = await open(entry, this.env.SESSION_KEY);
-        return { email, id, role, disabled, accepted: Boolean(sub), expires, scope: normalizeScope(scope), directPublish: directPublish === true };
+        const { email, id, role, disabled, sub, expires, scope, directPublish, contentPolicy } = await open(entry, this.env.SESSION_KEY);
+        return { email, id, role, disabled, contentPolicy: contentPolicy || "scoped-v1", accepted: Boolean(sub), expires, scope: normalizeScope(scope), directPublish: directPublish === true };
       }));
       return json({ members });
+    }
+    if (url.pathname === "/api/members/migrate" && request.method === "POST") {
+      const input = await body(request, 12000);
+      if (input?.confirmPolicyMigration !== true || !Array.isArray(input.members) ||
+          input.members.length > 100 || input.members.some((row) =>
+            typeof row?.id !== "string" || row.id.length > 128 || !["editor", "viewer"].includes(row.role)))
+        fail(400, "invalid_member_migration");
+      return this.atomic(async () => {
+        if (!(await this.store.get("session:" + sid)) || session.expires <= Date.now())
+          fail(401, "login_required");
+        const members = await Promise.all((await this.store.members()).map((value) => open(value, this.env.SESSION_KEY)));
+        // Disabled users and expired, unclaimed invitations must not acquire new rights.
+        const eligible = members.filter((member) => !hasAllContent(member) && !member.disabled &&
+          (member.sub || member.expires > Date.now()) && ["editor", "viewer"].includes(member.role));
+        const roster = (rows) => rows.map(({ id, role }) => id + ":" + role).sort();
+        if (JSON.stringify(roster(eligible)) !== JSON.stringify(roster(input.members)))
+          fail(409, "member_migration_roster_changed");
+        const ids = new Set(eligible.map((member) => member.id));
+        const jobs = new CmsJobs(this);
+        const active = await jobs.get("cms-publication-active");
+        const queue = await jobs.get("cms-publication-queue") || [];
+        if ([active, ...queue].some((job) => job && ids.has(job.owner) && !["published", "failed", "unconfirmed"].includes(job.phase)))
+          fail(409, "cms_publication_busy");
+        const updates = await Promise.all(eligible.map(async (member) => {
+          if (typeof member.email !== "string") fail(409, "invalid_member_migration");
+          return { key: await emailKey(member.email), value: await seal({
+            ...member, contentPolicy: "all-content-v1",
+            directPublish: member.role === "editor", revision: random(),
+          }, this.env.SESSION_KEY) };
+        }));
+        if (this.store.putMemberBatch) await this.store.putMemberBatch(updates);
+        else for (const update of updates) await this.store.put(update.key, update.value, Number.MAX_SAFE_INTEGER);
+        return json({ migrated: updates.length });
+      });
     }
     if (url.pathname === "/api/members" && request.method === "POST") {
       const input = await body(request, 4096);
@@ -519,13 +585,16 @@ export class Admin {
         const entry = await this.store.get(key);
         const previous = entry && await open(entry, this.env.SESSION_KEY);
         if (!previous && (await this.store.members()).length >= 100) fail(409, "member_limit");
+        const contentPolicy = normalizeMemberPolicy(input, previous);
         const member = {
           email: input.email.toLowerCase(),
+          contentPolicy,
           id: previous?.id || crypto.randomUUID(),
           sub: previous?.sub || null,
           role: input.role,
-          scope,
-          directPublish: input.role === "editor" && input.directPublish === true,
+          scope: input.scope === undefined && previous ? normalizeScope(previous.scope) : scope,
+          directPublish: input.role === "editor" && (contentPolicy === "all-content-v1" ||
+            (input.directPublish === undefined ? previous?.directPublish === true : input.directPublish === true)),
           disabled: input.disabled,
           revision: random(),
           expires: now + 7 * 86400_000,

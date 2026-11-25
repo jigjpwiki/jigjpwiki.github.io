@@ -1,6 +1,22 @@
 import assert from "node:assert/strict";
 import fs from "node:fs";
 import path from "node:path";
+const advancedRoutes = { "VTuber": "#masters", "事務所・グループ": "#organizations", "記念日": "#anniversaries", "音楽": "#music", "イベント": "#events", "グッズ": "#goods", "変更内容": "#workspace", "提出済みPR": "#submitted", "設定": "#settings", "ダッシュボード": "#dashboard" };
+async function advancedNav(p, name) {
+  const route = advancedRoutes[name];
+  const menu = p.locator("#mobile-nav-toggle");
+  if (await menu.isVisible() && await menu.getAttribute("aria-expanded") === "false") await menu.click();
+  const details = p.locator("nav details[data-owner-only]");
+  if (route !== "#dashboard" && await details.count())
+    await details.evaluate((node) => { node.open = true; });
+  await p.locator('nav a[href="' + route + '"]').first().click();
+}
+async function enterAdvanced(p) {
+  await p.locator("#identity").waitFor();
+  if (await p.locator("nav details[data-owner-only]").count()) await advancedNav(p, "変更内容");
+  await p.locator("[data-save-state][data-state=saved]").waitFor();
+}
+
 export async function qualityBrowser({
   browser,
   base,
@@ -42,7 +58,7 @@ export async function qualityBrowser({
     await p
       .getByRole("link", { name: "GitHubでログイン", exact: true })
       .click();
-    await p.locator("[data-save-state][data-state=saved]").waitFor();
+    await enterAdvanced(p);
     return { c, p, errors };
   }
   async function shot(p, name, width) {
@@ -57,7 +73,7 @@ export async function qualityBrowser({
     });
   }
   async function nav(p, name) {
-    await p.getByRole("link", { name, exact: true }).first().click();
+    await advancedNav(p, name);
     const targetType={VTuber:'talent','事務所・グループ':'organization','記念日':'anniversary','音楽':'song','イベント':'event','グッズ':'campaign'}[name];
     const targetTitle={VTuber:'VTuber','事務所・グループ':'事務所','記念日':'記念日','音楽':'楽曲','イベント':'イベント','グッズ':'キャンペーン'}[name];
     await p.locator(`.record-browser[data-entity="${targetType}"],.list-region [data-data-table="${targetTitle}"]`).first().waitFor();
@@ -88,10 +104,7 @@ export async function qualityBrowser({
     await input.press("Enter");
   }
   async function review(p, partial) {
-    await p
-      .getByRole("link", { name: "変更内容", exact: true })
-      .first()
-      .click();
+    await advancedNav(p, "変更内容");
     await p
       .getByRole("heading", { name: "変更ワークスペース", exact: true })
       .waitFor();
@@ -379,7 +392,7 @@ export async function qualityBrowser({
       ["#submitted", "提出済みPR"],
       ["#settings", "設定"],
     ]) {
-      await p.getByRole("link", { name, exact: true }).first().click();
+      await advancedNav(p, name);
       if (
         [
           "#masters",
@@ -464,7 +477,7 @@ export async function qualityBrowser({
     await shot(p, "expired-session", 1440);
     const login = await c.newPage();
     await login.goto(base + "/auth/login");
-    await login.locator("[data-save-state][data-state=saved]").waitFor();
+    await enterAdvanced(login);
     await login.close();
     let writeAttempts = 0;
     const listener = (req) => {

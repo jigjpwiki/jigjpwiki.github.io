@@ -1,3 +1,4 @@
+const advancedRoutes = {"VTuber": "#masters", "事務所・グループ": "#organizations", "記念日": "#anniversaries", "イベント": "#events", "音楽": "#music", "グッズ": "#goods", "変更内容": "#workspace", "提出済みPR": "#submitted", "設定": "#settings"};
 import assert from "node:assert/strict";
 import fs from "node:fs";
 import path from "node:path";
@@ -47,10 +48,14 @@ export async function workspaceBrowser({
       await p
         .getByRole("link", { name: "GitHubでログイン", exact: true })
         .click();
+      await p.locator("#identity").filter({ hasText: "管理者" }).waitFor();
+      await p.locator("nav details[data-owner-only]").evaluate((node) => { node.open = true; });
+      await p.locator('nav a[href="#workspace"]').click();
       await saved();
     };
     const nav = async (name) => {
-      const link = p.getByRole("link", { name, exact: true }).first();
+      await p.locator("nav details[data-owner-only]").evaluate((node) => { node.open = true; });
+      const link = p.locator('nav a[href="' + advancedRoutes[name] + '"]').first();
       await link.click();
       await link.and(p.locator('[aria-current="page"]')).waitFor();
     };

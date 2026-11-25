@@ -59,7 +59,12 @@ await mountSimpleCms(document.querySelector("#cms"), document.querySelector("#st
           const saved = writeDraft(operations, input.draftId, await prepareDraft(snapshot, member, input));
           operations = saved.operations;
           result = { draftId: saved.id, revision: ++revision };
+        } else if (req.method === "POST" && req.url === "/api/cms/publication/preview") {
+          assert.equal(input.revision, revision);
+          assert.ok(input.draftIds.length);
+          result = { sha: snapshot.sha, records: [{ name: "ブラウザー試験の企画", changes: [{ field: "title", before: null, after: "ブラウザー試験の企画" }] }], review: "browser-review" };
         } else if (req.method === "POST" && req.url === "/api/cms/publication") {
+          assert.equal(input.review, "browser-review");
           const groups = draftGroups(operations);
           const selected = input.draftIds.flatMap((id) => groups.get(id));
           planned = await publicationPlan(snapshot, { id: "browser-goods", owner: "8ebf4fde-85a4-4d34-9feb-d1ba5c4de026",
@@ -89,7 +94,7 @@ await mountSimpleCms(document.querySelector("#cms"), document.querySelector("#st
       const product = page.getByRole("group", { name: "新しい商品", exact: true }).nth(i);
       await product.getByLabel("商品名", { exact: true }).fill("商品 " + i);
       await product.getByLabel("公式商品情報URL").fill("https://example.com/product/" + i);
-      await product.getByLabel("関連する人物").selectOption("tal-000010");
+      await product.getByRole("combobox", { name: "関連する人物", exact: true }).selectOption("tal-000010");
       await product.getByRole("button", { name: "販売枠を追加", exact: true }).click();
       for (let j = 0; j < 2; j++) {
         const sale = product.getByRole("group", { name: "新しい販売枠", exact: true }).nth(j);
@@ -106,7 +111,9 @@ await mountSimpleCms(document.querySelector("#cms"), document.querySelector("#st
     assert.equal(await page.getByLabel("商品名", { exact: true }).nth(1).inputValue(), "商品 1");
     assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth));
     await page.getByRole("checkbox", { name: "ブラウザー試験の企画を公開する" }).check();
-    await page.getByRole("button", { name: "選択した下書きを公開" }).click();
+    await page.getByRole("button", { name: "選択した下書きを確認" }).click();
+    await page.getByRole("checkbox", { name: "変更内容を確認しました" }).check();
+    await page.getByRole("button", { name: "確認した変更を公開" }).click();
     await page.getByText("検証中", { exact: true }).waitFor();
     const campaign = planned.plan.files.goods.campaigns.find(({ title }) => title === "ブラウザー試験の企画");
     const offers = planned.plan.files.goods.offers.filter(({ campaignId }) => campaignId === campaign.id);

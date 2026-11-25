@@ -12,15 +12,24 @@
   <body>
     <a href="#main-content" class="skip-link">本文へ移動</a>
     <header class="app-sidebar">
-      <h1>jigwiki Admin</h1>
+      <div class="cms-brand-row">
+        <h1>jigwiki Admin</h1>
+        <button type="button" id="mobile-nav-toggle" aria-expanded="true" aria-controls="admin-nav">メニュー</button>
+      </div>
       <p class="sidebar-caption">編集ワークスペース</p>
-      <nav aria-label="管理ナビゲーション">
-        <a href="#cms" id="simple-cms-link" hidden>簡易CMS</a><a href="#dashboard">ダッシュボード</a><a href="#masters">VTuber</a
-        ><a href="#organizations">事務所・グループ</a
-        ><a href="#anniversaries">記念日</a><a href="#music">音楽</a
-        ><a href="#events">イベント</a><a href="#goods">グッズ</a
-        ><a href="#workspace">変更内容</a><a href="#submitted">提出済みPR</a
-        ><a href="#settings">設定</a>
+      <nav id="admin-nav" aria-label="管理ナビゲーション" class="cms-navigation">
+        <span class="nav-label">ワークスペース</span>
+        <a href="#dashboard">ダッシュボード</a><a href="#drafts">下書き</a><a href="#publication">公開状況</a><a href="#history">更新履歴</a><a href="#search">全体検索</a>
+        <span class="nav-label">人物・企画</span>
+        <a href="#content/talent">VTuber</a><a href="#content/organization">事務所</a><a href="#content/group">グループ</a><a href="#content/anniversary">記念日</a><a href="#content/event">イベント</a>
+        <span class="nav-label">音楽</span>
+        <a href="#content/song">楽曲</a><a href="#content/musicVideo">歌動画</a><a href="#content/video">動画情報</a><a href="#content/karaoke">歌枠</a><a href="#content/performance">歌唱記録</a>
+        <span class="nav-label">グッズ</span>
+        <a href="#content/product">商品</a><a href="#content/campaign">キャンペーン</a><a href="#content/offer">販売情報</a>
+        <details data-owner-only><summary>高度な管理</summary>
+          <a href="#masters">VTuber一括編集</a><a href="#organizations">事務所・グループ</a><a href="#anniversaries">記念日</a><a href="#music">音楽</a><a href="#events">イベント</a><a href="#goods">グッズ</a><a href="#workspace">変更内容</a><a href="#submitted">提出済みPR</a><a href="#settings">ユーザー・設定</a>
+        </details>
+        <a href="#cms" id="simple-cms-link" hidden>コンテンツ管理</a>
       </nav>
     </header>
     <main id="main-content" tabindex="-1">
@@ -32,7 +41,7 @@
       <section id="login">
         <h2>管理者ログイン</h2>
         <p>
-          許可されたGitHub管理者のみ利用できます。編集はPR経由で反映します。
+          招待済みのアカウントでログインしてください。
         </p>
         <div class="button-group">
           <a class="button" href="/auth/login">GitHubでログイン</a>

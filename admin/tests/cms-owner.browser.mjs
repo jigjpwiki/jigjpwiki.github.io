@@ -6,9 +6,9 @@ export async function cmsOwnerBrowser({ browser, base, mainSha }) {
     const page = await context.newPage();
     await page.goto(base);
     await page.getByRole("link", { name: "GitHubでログイン", exact: true }).click();
-    await page.waitForURL("**/#cms");
+    await page.waitForURL("**/#dashboard");
     const reviewLink = page.getByRole("link", { name: "下書きを確認して公開申請", exact: true });
-    await reviewLink.waitFor();
+    await page.getByRole("link", { name: "下書き", exact: true }).waitFor();
     const existingOperation = {
       key: "existing-advanced-draft", entity: "organization",
       baseCommit: mainSha, before: null, value: { name: "既存の高度な管理下書き" },
@@ -23,7 +23,7 @@ export async function cmsOwnerBrowser({ browser, base, mainSha }) {
       return response.status;
     }, existingOperation);
     assert.equal(seed, 200);
-    await page.reload();
+    await page.goto(base + "/#content/campaign");
     const campaignButton = page.getByRole("button", { name: "キャンペーンを新規登録", exact: true });
     await campaignButton.click();
     const name = page.getByLabel("名称", { exact: true });
@@ -33,31 +33,34 @@ export async function cmsOwnerBrowser({ browser, base, mainSha }) {
       await dialog.dismiss();
       resolve(message);
     }));
-    await reviewLink.click();
+    await page.getByRole("link", { name: "下書き", exact: true }).click();
     assert.match(await confirmation, /保存していない入力を破棄/);
-    await page.waitForURL("**/#cms");
+    await page.waitForURL("**/#content/campaign");
     assert.equal(await name.inputValue(), "未保存の企画名");
 
     await page.getByLabel("商品名", { exact: true }).fill("一括公開申請の商品");
     await page.getByLabel("公式商品情報URL").fill("https://example.com/owner-product");
-    const person = page.getByLabel("関連する人物");
+    const person = page.getByRole("combobox", { name: "関連する人物", exact: true });
     await person.selectOption({ index: 1 });
     await page.getByLabel("販売ページURL", { exact: true }).fill("https://example.com/owner-sale");
     await page.locator("#view").getByRole("button", { name: "下書きを保存", exact: true }).click();
     await page.getByText("下書きを保存しました。公開サイトには反映されていません。").waitFor();
+    await page.goto(base + "/#content/video");
     await page.getByRole("button", { name: "動画情報を新規登録", exact: true }).click();
-    assert.equal(await page.getByLabel("関連する人物").count(), 0);
+    assert.equal(await page.getByRole("combobox", { name: "関連する人物", exact: true }).count(), 0);
     assert.ok(await page.getByLabel("YouTube動画URL", { exact: true }).isVisible());
 
     const songTitle = "新規のオリジナル楽曲";
     const songUrl = "https://example.com/original-song";
+    await page.goto(base + "/#content/song");
     await page.getByRole("button", { name: "楽曲を新規登録", exact: true }).click();
-    assert.equal(await page.getByLabel("関連する人物").count(), 0);
+    assert.equal(await page.getByRole("combobox", { name: "関連する人物", exact: true }).count(), 0);
     await page.getByLabel("名称", { exact: true }).fill(songTitle);
     await page.getByLabel("原曲アーティスト（1行に1名）", { exact: true }).fill("作者");
     await page.getByLabel("楽曲の公式情報URL", { exact: true }).fill(songUrl);
     await page.getByLabel("曲の別名（1行に1件）", { exact: true }).fill("別タイトル");
     await page.locator("#view").getByRole("button", { name: "下書きを保存", exact: true }).click();
+    await page.getByRole("link", { name: "下書き", exact: true }).click();
     const savedSong = page.getByRole("button", { name: songTitle, exact: true });
     await savedSong.click();
     assert.equal(await page.getByLabel("楽曲の公式情報URL", { exact: true }).inputValue(), songUrl);
@@ -69,7 +72,7 @@ export async function cmsOwnerBrowser({ browser, base, mainSha }) {
     });
     try {
       await reviewLink.click();
-      await page.locator("#view[inert]").waitFor();
+      await page.waitForURL("**/#workspace");
     } finally {
       releaseWorkspace();
     }

@@ -1,3 +1,4 @@
+const advancedRoutes = {"VTuber": "#masters", "事務所・グループ": "#organizations", "記念日": "#anniversaries", "イベント": "#events", "音楽": "#music", "グッズ": "#goods", "変更内容": "#workspace", "提出済みPR": "#submitted", "設定": "#settings"};
 import assert from "node:assert/strict";
 import fs from "node:fs";
 import path from "node:path";
@@ -38,11 +39,15 @@ export async function phase3Browser({
     await p
       .getByRole("link", { name: "GitHubでログイン", exact: true })
       .click();
+    await p.locator("#identity").filter({ hasText: "管理者" }).waitFor();
+    await p.locator("nav details[data-owner-only]").evaluate((node) => { node.open = true; });
+    await p.locator('nav a[href="#workspace"]').click();
     await p.locator("[data-save-state][data-state=saved]").waitFor();
     return { context, p, errors };
   }
   async function nav(p, name) {
-    await p.getByRole("link", { name, exact: true }).click();
+    await p.locator("nav details[data-owner-only]").evaluate((node) => { node.open = true; });
+    await p.locator('nav a[href="' + advancedRoutes[name] + '"]').click();
     const targetType={VTuber:'talent','事務所・グループ':'organization','記念日':'anniversary','音楽':'song','イベント':'event','グッズ':'campaign'}[name];
     const targetTitle={VTuber:'VTuber','事務所・グループ':'事務所','記念日':'記念日','音楽':'楽曲','イベント':'イベント','グッズ':'キャンペーン'}[name];
     await p.locator(`.record-browser[data-entity="${targetType}"],.list-region [data-data-table="${targetTitle}"]`).first().waitFor();
@@ -115,8 +120,10 @@ export async function phase3Browser({
     });
   }
   async function save(p) {
+    const route = await p.evaluate(() => location.hash);
     await p.getByRole("button", { name: "下書きを保存", exact: true }).click();
     await p.locator("[data-save-state][data-state=saved]").waitFor();
+    assert.equal(await p.evaluate(() => location.hash), route, "Saving must not change the active editing route");
   }
   async function shot(p, name, width) {
     await p.evaluate(() => window.scrollTo(0, 0));
@@ -142,7 +149,7 @@ export async function phase3Browser({
 
   async function submitMeasured(p, scenario, switches) {
     await p
-      .getByRole("link", { name: "変更内容", exact: true })
+      .locator('nav a[href="#workspace"]')
       .first()
       .click();
     await p
@@ -160,7 +167,8 @@ export async function phase3Browser({
   }
   async function mixedScenario(old) {
     const { p, context } = await session();
-    await p.getByRole("link", { name: "記念日", exact: true }).click();
+    await p.locator("nav details[data-owner-only]").evaluate((node) => { node.open = true; });
+    await p.locator('nav a[href="#anniversaries"]').click();
     await p
       .getByRole("button", { name: "新規記念日登録", exact: true })
       .waitFor();
@@ -190,7 +198,8 @@ export async function phase3Browser({
         );
     }
     await save(p);
-    await p.getByRole("link", { name: "VTuber", exact: true }).click();
+    await p.locator("nav details[data-owner-only]").evaluate((node) => { node.open = true; });
+    await p.locator('nav a[href="#masters"]').click();
     if(!old)await p.getByRole("button",{name:"一括編集",exact:true}).click();
     await p.getByRole("button", { name: "新規登録", exact: true }).waitFor();
     if (old) {
@@ -234,7 +243,7 @@ export async function phase3Browser({
     }
     await save(p);
     await p
-      .getByRole("link", { name: "変更内容", exact: true })
+      .locator('nav a[href="#workspace"]')
       .first()
       .click();
     await p
@@ -327,7 +336,8 @@ export async function phase3Browser({
     }
     {
       const { p, context } = await session();
-      await p.getByRole("link", { name: "グッズ", exact: true }).click();
+      await p.locator("nav details[data-owner-only]").evaluate((node) => { node.open = true; });
+    await p.locator('nav a[href="#goods"]').click();
       await p
         .getByRole("button", { name: "新規キャンペーン登録", exact: true })
         .waitFor();
@@ -388,7 +398,8 @@ export async function phase3Browser({
     }
     for (const width of [390, 1920]) {
       const { context, p } = await session(width);
-      await p.getByRole("link", { name: "記念日", exact: true }).click();
+      await p.locator("nav details[data-owner-only]").evaluate((node) => { node.open = true; });
+    await p.locator('nav a[href="#anniversaries"]').click();
       await p
         .getByRole("button", { name: "新規記念日登録", exact: true })
         .waitFor();
@@ -440,6 +451,8 @@ export async function phase3Browser({
     assert.equal(await table.locator(".changed-cell").count(), 10);
     await save(p);
     await p.reload();
+    await p.locator("#identity").filter({ hasText: "管理者" }).waitFor();
+    await p.waitForURL("**/#anniversaries");
     await p.locator("[data-save-state][data-state=saved]").waitFor();
     await p.getByRole("button",{name:"一括編集",exact:true}).click();
     await p.locator(".changed-cell").first().waitFor();
@@ -532,7 +545,7 @@ export async function phase3Browser({
     );
     // Partial submission uses unchanged Phase 2 confirmation, leaving fifteen.
     await p
-      .getByRole("link", { name: "変更内容", exact: true })
+      .locator('nav a[href="#workspace"]')
       .first()
       .click();
     await p
@@ -583,7 +596,8 @@ export async function phase3Browser({
     await date.locator("input").press("Enter");
     await date.locator("[aria-invalid=true]").waitFor();
     assert.match(await date.innerText(), /存在する日付/);
-    await p.getByRole("link", { name: "音楽", exact: true }).click();
+    await p.locator("nav details[data-owner-only]").evaluate((node) => { node.open = true; });
+    await p.locator('nav a[href="#music"]').click();
     assert.equal(await p.evaluate(() => location.hash), "#anniversaries");
     assert.equal(await date.locator("input").inputValue(), "02-30");
     await date.locator("input").press("Escape");

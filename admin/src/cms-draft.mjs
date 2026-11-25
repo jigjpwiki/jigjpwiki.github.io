@@ -1,13 +1,14 @@
 import { videoForCms, assertSongEdit, assertVideoEdit, newSongOperation, newSongFields } from "./cms-music.mjs";
 import { youtubeId } from "../public/content-utils.js";
-import { planSubmission, recordAt } from "./submission-plan.mjs";
+import { equal, planSubmission, recordAt } from "./submission-plan.mjs";
 import { contentPreview, resolveRefs } from "./content-plan.mjs";
-import { cmsPermissions, assertExistingCampaign } from "./cms-scope.mjs";
+import { cmsPermissions, assertExistingCampaign, hasAllContent } from "./cms-scope.mjs";
 import { fail, hash } from "./security.mjs";
 
-export const draftTypes = { video: ["media", "videos"], karaoke: ["karaoke", "karaokes"], song: ["music", "songs"], musicVideo: ["music", "musicVideos"], talent: ["talents", "talents"], event: ["events", "events"], product: ["goods", "products"], anniversary: ["anniversaries", "events"], campaign: ["goods", "campaigns"] };
+export const draftTypes = { organization: ["talents", "organizations"], group: ["catalog", "groups"], offer: ["goods", "offers"], performance: ["karaoke", "performances"], video: ["media", "videos"], karaoke: ["karaoke", "karaokes"], song: ["music", "songs"], musicVideo: ["music", "musicVideos"], talent: ["talents", "talents"], event: ["events", "events"], product: ["goods", "products"], anniversary: ["anniversaries", "events"], campaign: ["goods", "campaigns"] };
 const unknown = { precision: "unknown", value: null };
 const fields = {
+  organization: ["name"], group: ["name"], offer: ["url", "status", "periodNote"], performance: ["rawLabel", "verification"],
   video: ["title"],
   karaoke: [],
   song: ["title"],
@@ -19,6 +20,42 @@ const fields = {
   product: ["title", "image", "identityUrl"],
 };
 
+function applyVisibility(entity, value, input, member) {
+  if (input.visibility === undefined) return;
+  if (entity === "organization" || !["public", "draft"].includes(input.visibility)) fail(400, "cms_invalid_input");
+  if (input.visibility === (value.visibility ?? "public")) return;
+  if (!hasAllContent(member)) fail(403, "cms_scope_denied");
+  value.visibility = input.visibility;
+}
+
+function applyRelations(entity, value, input, member) {
+  const allowed = {
+    anniversary: ["talentIds", "groupIds"], product: ["talentIds", "groupIds"],
+    musicVideo: ["talentIds"], karaoke: ["talentIds"],
+    event: ["groupIds", "organizerIds", "relatedOrganizationIds"],
+  }[entity] || [];
+  for (const field of allowed) {
+    if (input[field] === undefined) continue;
+    const prefix = field === "talentIds" ? "tal" : field === "groupIds" ? "group" : "org";
+    if (!Array.isArray(input[field]) || input[field].length > 100 ||
+        input[field].some((id) => typeof id !== "string" || !new RegExp("^" + prefix + "-\\d{6}$").test(id)))
+      fail(400, "cms_invalid_input");
+    const ids = [...new Set(input[field])];
+    if (JSON.stringify(ids) === JSON.stringify(value[field] || [])) continue;
+    if (!hasAllContent(member)) fail(403, "cms_scope_denied");
+    value[field] = ids;
+    if (entity === "event") value.lineupComplete = false;
+  }
+}
+
+const relationFields = (entity, record) => Object.fromEntries(
+  ({
+    anniversary: ["talentIds", "groupIds"], product: ["talentIds", "groupIds"],
+    musicVideo: ["talentIds"], karaoke: ["talentIds"],
+    event: ["groupIds", "organizerIds", "relatedOrganizationIds"],
+  }[entity] || []).map((field) => [field, record[field] || []])
+);
+
 export async function prepareDraft(snapshot, member, input, lookup) {
   const { entity, id } = input;
   if (!Object.hasOwn(draftTypes, entity) || member.role !== "editor") fail(403, "cms_scope_denied");
@@ -26,6 +63,58 @@ export async function prepareDraft(snapshot, member, input, lookup) {
   const before = id ? recordAt(snapshot.models, { entity, id }) : null;
   const access = cmsPermissions(snapshot.models, member);
   if (id && !access.canRead(entity, before)) fail(403, "cms_scope_denied");
+  if (["organization", "group", "offer", "performance"].includes(entity)) {
+    let value = structuredClone(before);
+    if (entity === "organization") value = { ...(before || {}), name: input.name };
+    if (entity === "group") value = {
+      ...(before || { visibility: "public", membersComplete: false }),
+      name: input.name, organizationId: input.organizationId || null,
+      talentIds: input.talentIds ?? before?.talentIds ?? [],
+    };
+    if (entity === "offer") {
+      if (!input.productId || typeof input.price !== "string" ||
+          (input.price && !/^\d+(?:\.\d+)?$/.test(input.price))) fail(400, "cms_invalid_input");
+      const product = snapshot.models.goods.products.find((row) => row.id === input.productId);
+      if (!access.canRead("product", product)) fail(403, "cms_scope_denied");
+      assertExistingCampaign(snapshot.models, access, input.campaignId || null);
+      if (before && (before.productId !== input.productId || (before.campaignId || null) !== (input.campaignId || null)))
+        fail(409, "cms_shared_goods");
+      value = { ...(before || { visibility: "public", startsAt: null, endsAt: null }),
+        productId: input.productId, campaignId: input.campaignId || null,
+        url: input.url, status: input.status || "unknown", periodNote: input.periodNote || null,
+        price: { amount: input.price ? Number(input.price) : null,
+          currency: input.price ? input.currency || before?.price.currency || "JPY" : null } };
+      for (const field of ["startsAt", "endsAt"]) {
+        if (input[field] === undefined || input[field] === localInstant(before?.[field])) continue;
+        if (input[field] && !/^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}$/.test(input[field])) fail(400, "cms_invalid_input");
+        const time = Date.parse(input[field] + ":00+09:00");
+        if (input[field] && (!Number.isFinite(time) || localInstant(time) !== input[field])) fail(400, "cms_invalid_input");
+        value[field] = input[field] ? new Date(time).toISOString() : null;
+      }
+    }
+    if (entity === "performance") {
+      const karaoke = snapshot.models.karaoke.karaokes.find((row) => row.id === input.karaokeId);
+      if (!access.canRead("karaoke", karaoke)) fail(403, "cms_scope_denied");
+      value = { ...(before || { visibility: "public", note: null }), karaokeId: input.karaokeId,
+        songId: input.songId || null, rawLabel: input.rawLabel,
+        verification: input.verification || "unreviewed",
+        talentIds: input.talentIds ?? before?.talentIds ?? karaoke.talentIds };
+      for (const field of ["order", "startsAtSeconds", "endsAtSeconds"]) {
+        if (input[field] === undefined && before) continue;
+        if (input[field] && !/^\d+$/.test(String(input[field]))) fail(400, "cms_invalid_input");
+        value[field] = input[field] === "" || input[field] == null ? null : Number(input[field]);
+      }
+    }
+    applyVisibility(entity, value, input, member);
+    access.assertChange(entity, before, value);
+    const operation = { key: "cms-" + entity.toLowerCase(), entity, ...(id ? { id } : {}),
+      value, before, baseCommit: snapshot.sha };
+    const plan = await planSubmission(snapshot, [operation], { actor: "0", batchId: await hash(operation) });
+    const models = { ...snapshot.models, ...plan.files };
+    const after = cmsPermissions(models, member);
+    for (const row of plan.impact.records) after.assertChange(row.entity, row.before, row.value);
+    return [operation];
+  }
   if (entity === "video") {
     let videoId;
     try { videoId = youtubeId(input.videoUrl); }
@@ -34,6 +123,7 @@ export async function prepareDraft(snapshot, member, input, lookup) {
       fail(400, "cms_invalid_input");
     const value = before ? { ...before, title: input.title.trim() } :
       await videoForCms(snapshot.models, videoId, lookup);
+    applyVisibility(entity, value, input, member);
     if (before) assertVideoEdit(snapshot.models, access, before, value);
     access.assertChange("video", before, value);
     const operation = { key: "cms-media", entity, ...(id ? { id } : {}), value, before, baseCommit: snapshot.sha };
@@ -42,9 +132,9 @@ export async function prepareDraft(snapshot, member, input, lookup) {
   }
   if (entity === "talent") {
     const value = structuredClone(before || {
-      aliases: [], affiliations: [{ organizationId: input.organization, status: "current", from: null, to: null }],
-      agencyStatus: { value: "affiliated" }, accounts: [], wiki: null,
-      officialProfileUrl: input.officialProfileUrl || null, visibility: "public",
+      aliases: [], affiliations: input.organization ? [{ organizationId: input.organization, status: "current", from: null, to: null }] : [],
+      agencyStatus: { value: input.organization ? "affiliated" : "unknown" }, accounts: [], wiki: null,
+      ...(input.officialProfileUrl ? { officialProfileUrl: input.officialProfileUrl } : {}), visibility: "public",
     });
     if (typeof input.displayName !== "string" || typeof input.image !== "string")
       fail(400, "cms_invalid_input");
@@ -52,7 +142,8 @@ export async function prepareDraft(snapshot, member, input, lookup) {
     value.profileImage = input.image.trim() ? { url: input.image.trim() } : null;
     if (input.officialProfileUrl !== undefined) {
       if (typeof input.officialProfileUrl !== "string") fail(400, "cms_invalid_input");
-      value.officialProfileUrl = input.officialProfileUrl.trim() || null;
+      if (input.officialProfileUrl.trim()) value.officialProfileUrl = input.officialProfileUrl.trim();
+      else delete value.officialProfileUrl;
     }
     if (input.aliasNames !== undefined) {
       if (typeof input.aliasNames !== "string") fail(400, "cms_invalid_input");
@@ -64,14 +155,15 @@ export async function prepareDraft(snapshot, member, input, lookup) {
           .map((name) => ({ name, type: "alias", from: null, to: null })),
       ];
     }
-    for (const [field, service] of [["youtubeUrl", "youtube"], ["xUrl", "x"]]) {
+    for (const [field, service] of [["youtubeUrl", "youtube"], ["xUrl", "x"], ["twitchUrl", "twitch"], ["tiktokUrl", "tiktok"]]) {
       if (input[field] === undefined) continue;
       if (typeof input[field] !== "string") fail(400, "cms_invalid_input");
       const supplied = input[field].trim();
       const index = value.accounts.findIndex((account) => account.service === service);
       const old = value.accounts[index];
       if ((old?.url || "") === supplied) continue;
-      if (service === "youtube" && old?.accountId) fail(403, "cms_identity_anchor");
+      if (["twitch", "tiktok"].includes(service) && !hasAllContent(member)) fail(403, "cms_scope_denied");
+      if (["youtube", "twitch"].includes(service) && old?.accountId) fail(403, "cms_identity_anchor");
       if (!supplied) {
         if (old) value.accounts.splice(index, 1);
         continue;
@@ -80,21 +172,44 @@ export async function prepareDraft(snapshot, member, input, lookup) {
       try { url = new URL(supplied); }
       catch { fail(400, "cms_invalid_input"); }
       const slug = service === "youtube" ? /^\/channel\/(UC[\w-]{22})$/.exec(url.pathname)?.[1]
+        : service === "tiktok" ? /^\/@([a-zA-Z0-9_]+(?:\.[a-zA-Z0-9_]+)*)$/.exec(url.pathname)?.[1]
         : /^\/([a-zA-Z0-9_]+)$/.exec(url.pathname)?.[1];
+      if (["twitch", "tiktok"].includes(service) && !slug) fail(400, "cms_invalid_input");
       // A channel URL alone does not prove ownership.
       if (service === "youtube" && slug) fail(403, "cms_identity_anchor");
       const account = { service, accountId: slug ?? null, url: supplied };
       if (old) value.accounts[index] = account;
       else value.accounts.push(account);
     }
-    value.activityStatus = { value: input.activity };
-    if (before && input.organization && input.organization !== talentFields(before).organization) {
+    value.activityStatus = { ...value.activityStatus, value: input.activity };
+    applyVisibility(entity, value, input, member);
+    if (!(hasAllContent(member) && input.affiliations !== undefined) && before && input.organization && input.organization !== talentFields(before).organization) {
       const current = value.affiliations.filter(({ status }) => status === "current");
       if (current.length !== 1) fail(403, "cms_scope_denied");
       current[0].status = "former";
       value.affiliations.push({ organizationId: input.organization, status: "current", from: null, to: null });
       value.agencyStatus = { value: "affiliated" };
       access.assertChange(entity, before, before);
+    }
+    if (hasAllContent(member) && input.affiliations !== undefined) {
+      if (!Array.isArray(input.affiliations) || input.affiliations.length > 50 ||
+          input.affiliations.some((row) => !row || typeof row !== "object" ||
+            !/^org-\d{6}$/.test(row.organizationId || "") ||
+            !["current", "former", "unknown"].includes(row.status) ||
+            [row.from, row.to].some((date) => date !== null && (typeof date !== "string" || !/^\d{4}-\d{2}-\d{2}$/.test(date)))))
+        fail(400, "cms_invalid_input");
+      // Preserve every existing affiliation, including multiple separate periods at the same organization.
+      const count = (rows, id) => rows.filter((row) => row.organizationId === id).length;
+      if (before?.affiliations.some((row) => count(input.affiliations, row.organizationId) < count(before.affiliations, row.organizationId)))
+        fail(409, "affiliation_history_must_be_retained");
+      value.affiliations = input.affiliations.map(({ organizationId, status, from, to }) => ({ organizationId, status, from, to }));
+      const agencyState = input.agencyState ?? (value.affiliations.some((row) => row.status === "current") ? "affiliated" : "unknown");
+      if (!["affiliated", "unaffiliated", "unknown"].includes(agencyState)) fail(400, "cms_invalid_input");
+      value.agencyStatus = { value: agencyState };
+    }
+    if (input.wikiUrl !== undefined && hasAllContent(member)) {
+      if (typeof input.wikiUrl !== "string" || (input.wikiUrl && !input.wikiUrl.startsWith("https://wikiwiki.jp/jigjp/"))) fail(400, "cms_invalid_input");
+      value.wiki = input.wikiUrl.trim() ? { url: input.wikiUrl.trim() } : null;
     }
     access.assertChange(entity, before, value);
     const operation = { key: "cms-talent", entity, ...(id ? { id } : {}), value, before, baseCommit: snapshot.sha };
@@ -103,7 +218,7 @@ export async function prepareDraft(snapshot, member, input, lookup) {
     for (const row of plan.impact.records) after.assertChange(entity, row.before, row.value);
     return [operation];
   }
-  if (entity === "song" && !before && !member.owner) fail(403, "cms_scope_denied");
+  if (entity === "song" && !before && !(member.owner || hasAllContent(member))) fail(403, "cms_scope_denied");
   const value = structuredClone(before || (entity === "event" ? {
     type: "other", timing: "unknown", starts: unknown, ends: unknown,
     organizerIds: [], relatedOrganizationIds: [input.organization],
@@ -113,6 +228,8 @@ export async function prepareDraft(snapshot, member, input, lookup) {
   } : entity === "campaign" ? { visibility: "public" } : { talentIds: [input.talent], groupIds: [], visibility: "public",
     ...(entity === "anniversary" ? { recursYearly: true, countYears: false } : {}),
   }));
+  applyVisibility(entity, value, input, member);
+  applyRelations(entity, value, input, member);
   let setlist = [];
   const newTracks = [];
   if (entity === "karaoke") {
@@ -291,7 +408,7 @@ export async function prepareDraft(snapshot, member, input, lookup) {
       const next = cmsPermissions(afterModels, member);
       for (const { op, old, record } of changes) {
         if (old && !previous.canRead(op.entity, old)) fail(403, "cms_scope_denied");
-        if (op.entity === "song" && !member.owner) assertSongEdit(afterModels, next, record.id);
+        if (op.entity === "song" && !(member.owner || hasAllContent(member))) assertSongEdit(afterModels, next, record.id);
         else next.assertChange(op.entity, null, record);
       }
     },
@@ -395,6 +512,12 @@ const talentFields = (record) => ({
     .map(({ name }) => name).join("\n"),
   youtubeUrl: record.accounts.find(({ service }) => service === "youtube")?.url || "",
   xUrl: record.accounts.find(({ service }) => service === "x")?.url || "",
+  twitchUrl: record.accounts.find(({ service }) => service === "twitch")?.url || "",
+  tiktokUrl: record.accounts.find(({ service }) => service === "tiktok")?.url || "",
+  wikiUrl: record.wiki?.url || "",
+  affiliations: structuredClone(record.affiliations),
+  agencyState: record.agencyStatus.value,
+  accounts: structuredClone(record.accounts),
   image: record.profileImage?.url || "",
   activity: record.activityStatus.value,
 });
@@ -421,11 +544,25 @@ function productFields(record, sales, key) {
   };
 }
 
+function standaloneFields(entity, record) {
+  if (entity === "group") return { organizationId: record.organizationId || "", talentIds: record.talentIds };
+  if (entity === "offer") return {
+    productId: record.productId, campaignId: record.campaignId || "", price: String(record.price.amount ?? ""),
+    currency: record.price.currency || "", startsAt: localInstant(record.startsAt), endsAt: localInstant(record.endsAt),
+  };
+  if (entity === "performance") return {
+    karaokeId: record.karaokeId, songId: record.songId || "", talentIds: record.talentIds,
+    ...Object.fromEntries(["order", "startsAtSeconds", "endsAtSeconds"].map((field) => [field, String(record[field] ?? "")])),
+  };
+  return {};
+}
+
 export function draftDetails(snapshot, member, entity, id) {
   if (!Object.hasOwn(draftTypes, entity)) fail(403, "cms_scope_denied");
   const record = recordAt(snapshot.models, { entity, id });
   if (!cmsPermissions(snapshot.models, member).canRead(entity, record)) fail(403, "cms_scope_denied");
-  const details = Object.fromEntries(fields[entity].map((key) => [key, record[key] ?? ""]));
+  const details = { ...Object.fromEntries(fields[entity].map((key) => [key, record[key] ?? ""])), ...standaloneFields(entity, record),
+    ...relationFields(entity, record), ...(entity !== "organization" ? { visibility: record.visibility ?? "public" } : {}) };
   if (entity === "karaoke") {
     const rows = snapshot.models.karaoke.performances.filter((row) => row.karaokeId === id);
     if (rows.some((row) => !cmsPermissions(snapshot.models, member).canRead("performance", row)))
@@ -463,7 +600,9 @@ export function draftInput(workspace) {
   const campaign = workspace?.operations.find((row) => row.entity === "campaign");
   if (!op || !Object.hasOwn(draftTypes, op.entity)) return null;
   return {
-    entity: op.entity, id: op.id, sha: op.baseCommit,
+    entity: op.entity, id: op.id, sha: op.baseCommit, ...standaloneFields(op.entity, op.value),
+    ...relationFields(op.entity, op.value),
+    ...(op.entity !== "organization" ? { visibility: op.value.visibility ?? "public" } : {}),
     organization: op.value.relatedOrganizationIds?.[0],
     talent: op.value.talentIds?.[0],
     ...Object.fromEntries(fields[op.entity].map((key) => [key, op.value[key] ?? ""])),
@@ -552,4 +691,64 @@ export function writeDraft(operations, draftId, replacement) {
     ...operations.filter((op) => !previous?.includes(op)).map(({ validationState, ...op }) => op),
     ...next,
   ] };
+}
+
+/** A deliberately narrow batch editor. One validated plan, no arbitrary field paths. */
+export async function prepareBulkDrafts(snapshot, member, input, existing = []) {
+  if (member.role !== "editor" || !hasAllContent(member)) fail(403, "cms_scope_denied");
+  if (input?.sha !== snapshot.sha) fail(409, "main_changed_reload");
+  const { entity, ids, field, value } = input;
+  if (!Object.hasOwn(draftTypes, entity) || !Array.isArray(ids) || ids.length < 1 || ids.length > 12 ||
+      new Set(ids).size !== ids.length || ids.some((id) => typeof id !== "string" || !/^[\w-]{1,80}$/.test(id)))
+    fail(400, "cms_invalid_bulk");
+  const allowed = field === "visibility" && entity !== "organization" ? ["public", "draft"]
+    : field === "activity" && entity === "talent" ? ["active", "hiatus", "retired", "ended", "unknown"]
+    : field === "verification" && entity === "performance" ? ["verified", "unreviewed", "rejected"]
+    : null;
+  // Names may be edited row by row; do not bulk-rename unrelated records.
+  if (!allowed?.includes(value)) fail(400, "cms_invalid_bulk");
+  const access = cmsPermissions(snapshot.models, member);
+  const operations = [];
+  const batches = [];
+  const subjects = new Set(existing.filter((op) => op.id).map((op) => op.entity + ":" + op.id));
+  for (const id of ids) {
+    if (subjects.has(entity + ":" + id)) fail(409, "cms_bulk_existing_draft");
+    const before = recordAt(snapshot.models, { entity, id });
+    if (!access.canRead(entity, before)) fail(403, "cms_scope_denied");
+    const oldValue = field === "activity" ? before.activityStatus.value : field === "visibility" ? before.visibility ?? "public" : before[field];
+    if (oldValue === value) continue;
+    const input = { ...draftDetails(snapshot, member, entity, id), entity, id, sha: snapshot.sha, [field]: value };
+    const batch = await prepareDraft(snapshot, member, input);
+    // The form must be lossless for all untouched fields. Never stage a bulk
+    // edit that would normalize unrelated data or modify children implicitly.
+    for (const op of batch) {
+      if (!op.id || !op.before) fail(409, "cms_bulk_unsafe_roundtrip");
+      const subject = op.entity + ":" + op.id;
+      if (subjects.has(subject)) fail(409, "cms_bulk_existing_draft");
+      subjects.add(subject);
+      const expected = structuredClone(op.before);
+      if (op.entity === entity && op.id === id) {
+        if (field === "activity") expected.activityStatus = { ...expected.activityStatus, value };
+        else expected[field] = value;
+      }
+      if (!equal(expected, op.value)) fail(409, "cms_bulk_unsafe_roundtrip");
+    }
+    batches.push(batch);
+    operations.push(...batch);
+  }
+  if (!operations.length) fail(409, "no_changes");
+  let result = existing;
+  const draftIds = [];
+  const combined = [];
+  for (const group of batches) {
+    const batch = writeDraft(result, undefined, group);
+    result = batch.operations;
+    draftIds.push(batch.id);
+    combined.push(...draftGroups(result).get(batch.id));
+  }
+  const plan = await planSubmission(snapshot, combined, { actor: "0", batchId: await hash(combined) });
+  if (plan.conflicts?.length) fail(409, "main_changed_reload");
+  const after = cmsPermissions({ ...snapshot.models, ...plan.files }, member);
+  for (const row of plan.impact.records) after.assertChange(row.entity, row.before, row.value);
+  return { operations: result, draftIds };
 }

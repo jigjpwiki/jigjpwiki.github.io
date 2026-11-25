@@ -112,3 +112,18 @@ test("an interrupted queue handoff does not run the same job twice", async () =>
   assert.equal((await restarted.status("two")).error, "cms_publication_timeout");
   assert.deepEqual(await restarted.get("cms-publication-queue"), []);
 });
+
+test("common policy editor publishes across organizations while viewer and missing publish grant fail", async () => {
+  const editor = { ...member, contentPolicy: "all-content-v1", scope: {} };
+  const draft = await prepareDraft(snapshot, editor, {
+    entity: "event", organization: "org-000001", sha, title: "全範囲の編集",
+    venue: "", summary: "説明", announcementUrl: "https://example.com/common-policy",
+  });
+  const job = { id: "common-policy-test", owner, createdAt: "2026-11-25T00:00:00Z",
+    operations: writeDraft([], undefined, draft).operations };
+  const { plan } = await publicationPlan(snapshot, job, editor);
+  assert.equal(plan.files.events.events.at(-1).title, "全範囲の編集");
+  assert.equal(editor.owner, undefined);
+  await assert.rejects(publicationPlan(snapshot, job, { ...editor, role: "viewer" }), /cms_scope_denied/);
+  await assert.rejects(publicationPlan(snapshot, job, { ...editor, directPublish: false }), /cms_scope_denied/);
+});

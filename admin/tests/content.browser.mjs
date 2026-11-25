@@ -1,3 +1,4 @@
+const advancedRoutes = {"VTuber": "#masters", "事務所・グループ": "#organizations", "記念日": "#anniversaries", "イベント": "#events", "音楽": "#music", "グッズ": "#goods", "変更内容": "#workspace", "提出済みPR": "#submitted", "設定": "#settings"};
 import { cmsOwnerBrowser } from "./cms-owner.browser.mjs";
 import {vnext5Browser} from "./vnext5.browser.mjs";
 import {AsyncLocalStorage} from 'node:async_hooks';
@@ -568,6 +569,7 @@ try {
         .getByRole("link", { name: "GitHubでログイン", exact: true })
         .click();
       await p.getByText("管理者fixture / 管理者", { exact: false }).waitFor();
+      await p.locator("nav details[data-owner-only]").evaluate((node) => { node.open = true; });
       if (
         shotDir &&
         name === "campaign-bundle" &&
@@ -578,7 +580,8 @@ try {
           path: path.join(shotDir, `dashboard-${width}.png`),
         });
       }
-      await p.getByRole("link", { name: category, exact: true }).focus();
+      await p.locator("nav details[data-owner-only]").evaluate((node) => { node.open = true; });
+    await p.locator('nav a[href="' + advancedRoutes[category] + '"]').focus();
       await p.keyboard.press("Enter");
       await p.getByRole("button", { name: /^新規.*登録$/ }).waitFor();
       if (
@@ -668,7 +671,8 @@ try {
   await p.goto(base);
   await p.getByRole("link", { name: "GitHubでログイン" }).click();
   await p.getByText("管理者fixture / 管理者", { exact: false }).waitFor();
-  await p.getByRole("link", { name: "記念日", exact: true }).click();
+  await p.locator("nav details[data-owner-only]").evaluate((node) => { node.open = true; });
+    await p.locator('nav a[href="#anniversaries"]').click();
   await p.getByRole("button", { name: "新規記念日登録" }).waitFor();
   await cases[0][2](p);
   await review(p, "conflict", 320);

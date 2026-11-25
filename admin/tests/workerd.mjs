@@ -104,7 +104,15 @@ try {
   assert.equal(catalogResponse.status, 200, JSON.stringify(catalog));
   assert.equal(catalog.sha, mainSha);
   assert.equal(catalog.owner, true);
-  assert.ok(catalog.sections.some((section) => section.items.length > 0));
+  assert.equal(catalog.sections.length, 13);
+  for (const entity of ["organization", "group", "offer", "performance"]) {
+    const section = catalog.sections.find((row) => row.entity === entity);
+    assert.ok(section?.items.length, entity);
+    assert.ok(section.items.every((row) => typeof row.title === "string" && row.title.length > 0));
+    const query = new URLSearchParams({ entity, id: section.items[0].id });
+    const detail = await mf.dispatchFetch("https://jigwiki-admin.local/api/cms/detail?" + query, { headers });
+    assert.equal(detail.status, 200, await detail.clone().text());
+  }
   assert.equal(cmsRawReads, 14);
   assert.equal(writes, 0);
   console.log("Local workerd: authenticated CMS catalog and all 14 immutable reads passed.");
@@ -344,6 +352,22 @@ try {
   );
   assert.equal(invalidPreview.status, 400);
   assert.equal(writes, 3);
+  const cleared = await mf.dispatchFetch("https://jigwiki-admin.local/api/workspace", {
+    method: "PUT", headers, body: JSON.stringify({ protocol: 1, revision: stored.revision, operations: [] }),
+  });
+  assert.equal(cleared.status, 200);
+  const clearedRevision = (await cleared.json()).workspace.revision;
+  const bulk = (revision) => mf.dispatchFetch("https://jigwiki-admin.local/api/cms/draft/bulk", {
+    method: "PUT", headers, body: JSON.stringify({ revision, sha: mainSha, entity: "talent", field: "activity", value: "hiatus",
+      ids: models.talents.talents.slice(0, 2).map((row) => row.id) }),
+  });
+  const bulkResponses = await Promise.all([bulk(clearedRevision), bulk(clearedRevision)]);
+  assert.deepEqual(bulkResponses.map((row) => row.status).sort(), [200, 409]);
+  const bulkState = await (await mf.dispatchFetch("https://jigwiki-admin.local/api/workspace", { headers })).json();
+  assert.equal(bulkState.workspace.operations.length, 2);
+  assert.ok(bulkState.workspace.operations.every((op) => op.value.activityStatus.value === "hiatus"));
+  assert.equal(writes, 3);
+  console.log("Local workerd: atomic bulk draft save, concurrent revision rejection, and no external publication passed.");
   console.log(
     "Local workerd/SQLite Phase4 120 drafts / runtime restart / 121 refusal / invalid preview safe:",
     JSON.stringify({

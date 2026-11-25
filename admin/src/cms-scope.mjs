@@ -5,9 +5,27 @@ import { contentTypes } from "./content-definitions.mjs";
 const types = {
   ...contentTypes,
   talent: { file: "talents", list: "talents", category: "talents" },
-  group: { file: "catalog", list: "groups" },
+  group: { file: "catalog", list: "groups", category: "organizations", label: "グループ" },
+  organization: { file: "talents", list: "organizations", category: "organizations", label: "事務所" },
 };
-const categories = new Set(["talents", ...Object.values(contentTypes).map((type) => type.category)]);
+const categories = new Set(["talents", "organizations", ...Object.values(contentTypes).map((type) => type.category)]);
+
+export const allContentPolicy = "all-content-v1";
+export function hasAllContent(member) {
+  return member?.contentPolicy === allContentPolicy;
+}
+
+export function normalizeMemberPolicy(input, previous) {
+  const policy = input.contentPolicy ?? previous?.contentPolicy ?? (previous ? "scoped-v1" : allContentPolicy);
+  if (!["scoped-v1", allContentPolicy].includes(policy)) fail(400, "invalid_content_policy");
+  if (previous && !hasAllContent(previous) && policy === allContentPolicy &&
+      input.confirmPolicyMigration !== true) fail(409, "content_policy_confirmation_required");
+  return policy;
+}
+
+export function contentCategories(member) {
+  return hasAllContent(member) ? [...categories] : normalizeScope(member.scope).categories;
+}
 
 export function normalizeScope(input = {}) {
   if (!input || typeof input !== "object" || Array.isArray(input))
@@ -103,7 +121,9 @@ export function cmsPermissions(models, member) {
   }
 
   function canRead(entity, row) {
-    if (!row || !scope.categories.includes(types[entity]?.category)) return false;
+    if (!row || !types[entity]) return false;
+    if (hasAllContent(member)) return true;
+    if (!scope.categories.includes(types[entity]?.category)) return false;
     if (member.owner === true) return (row.visibility ?? "public") === "public";
     if (entity === "song") return row.visibility === "public" && canEditSong(models, { canRead }, row.id);
     const result = resolve(entity, row, new Set());
@@ -114,7 +134,7 @@ export function cmsPermissions(models, member) {
     if (member.role !== "editor" || (publish && member.directPublish !== true) ||
         !after || (before && !canRead(entity, before)) || !canRead(entity, after))
       fail(403, "cms_scope_denied");
-    if (member.owner === true) return;
+    if (member.owner === true || hasAllContent(member)) return;
     if (entity === "talent") {
       if (!before && (after.affiliations.length !== 1 ||
           after.affiliations[0].status !== "current" ||
@@ -141,12 +161,47 @@ export function cmsPermissions(models, member) {
     }
   }
 
-  return { canRead, assertChange };
+  return { canRead, assertChange, allContent: hasAllContent(member) };
 }
 
 export function scopedCatalog(models, member) {
   const permissions = cmsPermissions(models, member);
-  return ["talent", "anniversary", "event", "song", "musicVideo", "karaoke", "video", "product", "campaign"].map((entity) => {
+  const allowed = new Set(contentCategories(member));
+  const all = hasAllContent(member);
+  const orgNames = new Map(models.talents.organizations
+    .filter((row) => all || member.scope?.organizations?.includes(row.id))
+    .map((row) => [row.id, row.name]));
+  const people = new Map(models.talents.talents.map((row) => [row.id, row.displayName]));
+  const products = new Map(models.goods.products.map((row) => [row.id, row.title]));
+  const videos = new Map(models.media.videos.map((row) => [row.youtubeId, row.title]));
+  const groupNames = new Map();
+  if (all) for (const group of models.catalog.groups) {
+    for (const id of group.talentIds || []) {
+      if (!groupNames.has(id)) groupNames.set(id, []);
+      groupNames.get(id).push(group.name);
+    }
+  }
+  const compact = (values) => {
+    const names = [...new Set(values.filter(Boolean))];
+    return names.slice(0, 3).join("、") + (names.length > 3 ? " 他" + (names.length - 3) + "件" : "");
+  };
+  const price = (row) => row.price?.amount == null ? "" : row.price.amount + " " + (row.price.currency || "");
+  const metadata = (entity, row) => {
+    const persons = all ? compact((row.talentIds || []).map((id) => people.get(id))) : "";
+    switch (entity) {
+      case "talent": return { context: compact([...(row.affiliations || []).filter((a) => a.status === "current").map((a) => orgNames.get(a.organizationId)), ...(groupNames.get(row.id) || [])]) };
+      case "group": return { context: orgNames.get(row.organizationId) || "" };
+      case "anniversary": return { context: persons, date: row.date?.month && row.date?.day ? (row.date.year ? row.date.year + "/" : "") + row.date.month + "/" + row.date.day : "" };
+      case "event": return { context: compact([...(row.organizerIds || []).map((id) => orgNames.get(id)), ...(row.relatedOrganizationIds || []).map((id) => orgNames.get(id)), row.venue]), date: row.starts?.value || "" };
+      case "song": return { context: compact(row.originalArtists || []) };
+      case "musicVideo": case "karaoke": case "performance": return { context: persons, date: row.registeredAt || "" };
+      case "video": return { date: row.publishedAt || "" };
+      case "product": return { context: persons };
+      case "offer": return { context: price(row), date: row.endsAt || row.startsAt || "" };
+      default: return {};
+    }
+  };
+  return ["organization", "group", "talent", "anniversary", "event", "song", "musicVideo", "karaoke", "performance", "video", "product", "campaign", "offer"].filter((entity) => allowed.has(types[entity].category)).map((entity) => {
     const type = types[entity];
     return {
       category: type.category,
@@ -154,11 +209,18 @@ export function scopedCatalog(models, member) {
       label: type.label || "VTuber",
       items: models[type.file][type.list].filter((row) => permissions.canRead(entity, row)).map((row) => ({
         id: row[type.field || "id"],
-        title: row.displayName || row.title || row.rawSongTitle || byTypeVideoTitle(models, row),
+        title: row.displayName || row.name || row.title || row.rawSongTitle || row.rawLabel ||
+          (entity === "offer" ? products.get(row.productId) : null) ||
+          videos.get(row.youtubeId) || row[type.field || "id"],
         description: typeof row.description === "string" ? row.description : "",
+        ...metadata(entity, row),
+        visibility: row.visibility ?? "public",
+        state: row.activityStatus?.value || row.status || row.timing || row.verification || row.setlistStatus || row.availability || "",
+        ...(entity === "talent" ? { image: row.profileImage?.url || "" } : {}),
+        ...(entity === "product" ? { image: typeof row.image === "string" ? row.image : row.image?.url || "" } : {}),
       })),
     };
-  }).filter(({ category }) => member.scope?.categories.includes(category));
+  });
 }
 
 // The new offer itself must not establish the editor's right to attach it.
@@ -168,6 +230,3 @@ export function assertExistingCampaign(models, permissions, id) {
   if (!permissions.canRead("campaign", campaign)) fail(403, "cms_scope_denied");
 }
 
-function byTypeVideoTitle(models, row) {
-  return row.youtubeId && models.media.videos.find((video) => video.youtubeId === row.youtubeId)?.title;
-}

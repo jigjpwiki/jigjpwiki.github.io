@@ -18,11 +18,65 @@ import { createEditor } from "./editor.js";
 import { fieldChanges, fieldLabel } from "./draft.js";
 import { portrait } from "./controls.js";
 const $ = (s) => document.querySelector(s);
+// Small local SVG icon set; no CDN, fonts or runtime HTML injection.
+const navIcons = {
+  "#dashboard": "M3 3h7v7H3z M14 3h7v7h-7z M3 14h7v7H3z M14 14h7v7h-7z",
+  "#drafts": "M6 3h8l4 4v14H6z M14 3v5h5 M9 13h6 M9 17h6",
+  "#publication": "M12 16V4 M7 9l5-5 5 5 M4 15v5h16v-5",
+  "#history": "M3 12a9 9 0 1 1 3 7 M3 4v8h8 M12 7v5l4 2",
+  "#search": "M16 16l5 5 M18 10a8 8 0 1 1-16 0 8 8 0 0 1 16 0",
+  "#content/talent": "M12 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8 M4 21v-2a8 8 0 0 1 16 0v2",
+  "#content/organization": "M4 21V3h16v18 M2 21h20 M8 7h2 M14 7h2 M8 11h2 M14 11h2 M8 15h2 M14 15h2 M10 21v-3h4v3",
+  "#content/group": "M9 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8 M2 21v-3a7 7 0 0 1 14 0v3 M16 4a4 4 0 0 1 0 7 M18 14a5 5 0 0 1 4 5v2",
+  "#content/anniversary": "M3 6h18v15H3z M7 3v6 M17 3v6 M3 11h18 M7 15h2 M12 15h2 M17 15h1",
+  "#content/event": "M3 5h18v16H3z M7 2v6 M17 2v6 M3 10h18 M10 13l5 3-5 3z",
+  "#content/song": "M9 18V5l12-3v13 M9 18a3 3 0 1 1-3-3h3 M21 15a3 3 0 1 1-3-3h3",
+  "#content/musicVideo": "M3 5h18v14H3z M10 9l5 3-5 3z",
+  "#content/video": "M3 6h12v12H3z M15 10l6-4v12l-6-4",
+  "#content/karaoke": "M9 6a3 3 0 0 1 6 0v6a3 3 0 0 1-6 0z M5 10v2a7 7 0 0 0 14 0v-2 M12 19v3 M8 22h8",
+  "#content/performance": "M4 4h16v16H4z M8 8h8 M8 12h8 M8 16h5",
+  "#content/product": "M3 7l9-4 9 4v10l-9 4-9-4z M3 7l9 4 9-4 M12 11v10",
+  "#content/campaign": "M3 9v6h4l10 4V5L7 9z M7 15l2 6h4 M20 9v6",
+  "#content/offer": "M4 8h16l1 13H3z M8 8V6a4 4 0 0 1 8 0v2",
+  "#settings": "M10 2h4l1 3 3 1 3-1 2 4-2 3 1 3-2 4-3-1-3 1-1 3h-4l-1-3-3-1-3 1-2-4 1-3-2-3 2-4 3 1 3-1z M15 12a3 3 0 1 0-6 0 3 3 0 0 0 6 0",
+};
+for (const link of document.querySelectorAll(".cms-navigation a")) {
+  const path = navIcons[link.hash];
+  if (!path) continue;
+  const ns = "http://www.w3.org/2000/svg";
+  const svg = document.createElementNS(ns, "svg");
+  for (const [key, value] of Object.entries({ viewBox: "0 0 24 24", width: "18", height: "18", fill: "none", stroke: "currentColor", "stroke-width": "1.6", "stroke-linecap": "round", "stroke-linejoin": "round", "aria-hidden": "true", focusable: "false" })) svg.setAttribute(key, value);
+  const line = document.createElementNS(ns, "path");
+  line.setAttribute("d", path);
+  svg.append(line);
+  link.prepend(svg);
+}
 document.querySelector(".skip-link")?.addEventListener("click", (e) => {
   e.preventDefault();
   $("#main-content").focus();
 });
 let me, workspace, resumeOperationKey;
+const mobileNav = $("#admin-nav");
+const mobileToggle = $("#mobile-nav-toggle");
+const smallScreen = matchMedia("(max-width: 767px)");
+function setMobileNav(open, focus = false) {
+  mobileNav.dataset.collapsed = String(!open);
+  mobileToggle.setAttribute("aria-expanded", String(open));
+  if (focus) mobileToggle.focus();
+}
+mobileToggle.onclick = () => setMobileNav(mobileToggle.getAttribute("aria-expanded") !== "true");
+mobileNav.addEventListener("keydown", (event) => {
+  if (event.key === "Escape" && smallScreen.matches) setMobileNav(false, true);
+});
+mobileNav.addEventListener("click", (event) => {
+  const link = event.target.closest("a");
+  if (smallScreen.matches && link && !link.closest("details[data-owner-only]") && me?.simpleCms &&
+      !document.querySelector("[data-cms-dirty], [data-cms-saving]")) setMobileNav(false, true);
+});
+smallScreen.addEventListener("change", () => {
+  if (!smallScreen.matches) setMobileNav(true);
+  else if (me?.provider === "google") setMobileNav(false);
+});
 const workspaceLabels = {
   saved: "保存済み",
   unsaved: "未保存",
@@ -49,7 +103,7 @@ function renderSaveState() {
     ? localIssues(projectedModels(snapshot.models, workspace.operations))
     : [];
   checks.replaceChildren();
-  checks.hidden = !issues.length;
+  checks.hidden = bar.hidden || !issues.length;
   if (issues.length) {
     checks.className = "validation-message stack";
     checks.append(node("h3", "下書きに確認が必要です"));
@@ -295,9 +349,11 @@ export const node = (tag, text) => {
 function screen() {
   if (!me) return;
   for (const a of document.querySelectorAll("nav a")) {
-    if (a.hash === (location.hash || "#dashboard"))
+    if (a.hash === (location.hash.split("?")[0] || "#dashboard")) {
       a.setAttribute("aria-current", "page");
-    else a.removeAttribute("aria-current");
+      const group = a.closest("details");
+      if (group && !group.hidden) group.open = true;
+    } else a.removeAttribute("aria-current");
   }
   const settings = location.hash === "#settings";
   $("#view").replaceChildren(
@@ -314,26 +370,27 @@ let acceptedHash = location.hash;
 let navigationRevision = 0;
 window.addEventListener("hashchange", async () => {
   const revision = ++navigationRevision;
+  const usesCms = (hash) => hash === "#cms" || hash === "#dashboard" || hash.startsWith("#content/") || ["#drafts", "#publication", "#history", "#search"].includes(hash);
   const view = $("#view");
   if (!view) return;
   view.inert = false;
-  if ((activeEditor?.dirty || document.querySelector("[data-cms-dirty]")) && !mayLeave()) {
+  if ((activeEditor?.dirty || document.querySelector("[data-cms-dirty], [data-cms-saving]")) && !mayLeave()) {
     history.replaceState(null, "", acceptedHash || "#masters");
     return;
   }
-  if (me?.simpleCms && (location.hash === "#cms" || acceptedHash === "#cms")) {
+  if (me?.simpleCms && workspace && usesCms(location.hash) !== usesCms(acceptedHash)) {
     if (workspace?.dirty) {
       history.replaceState(null, "", acceptedHash || "#dashboard");
       showStatus("変更内容を保存してから編集モードを切り替えてください。");
       return;
     }
-    if (acceptedHash === "#cms" && location.hash !== "#cms") {
+    if (usesCms(acceptedHash) && !usesCms(location.hash)) {
       view.inert = true;
       try {
         await workspace.load();
       } catch {
         if (revision === navigationRevision) {
-          history.replaceState(null, "", "#cms");
+          history.replaceState(null, "", acceptedHash || "#dashboard");
           showStatus("下書きを取得できませんでした。");
         }
         return;
@@ -346,6 +403,11 @@ window.addEventListener("hashchange", async () => {
   }
   activeEditor = null;
   acceptedHash = location.hash;
+  const workspaceBar = $("#workspace-bar");
+  if (workspaceBar) {
+    workspaceBar.hidden = usesCms(location.hash);
+    renderSaveState();
+  }
   screen();
 });
 async function start() {
@@ -357,34 +419,26 @@ async function start() {
     me = await api("/api/me");
     $("#login").hidden = true;
     $("#app").hidden = false;
+    me.simpleCms = me.simpleCms || me.provider === "google";
     if (me.provider === "google") {
-      const panel = node("section");
-      panel.className = "stack";
-      const logout = node("button", "ログアウト");
-      logout.onclick = async () => {
+      document.querySelectorAll("[data-owner-only]").forEach((item) => { item.hidden = true; });
+      if (smallScreen.matches) setMobileNav(false);
+      $("#identity").textContent = me.role === "viewer" ? "閲覧者" : "編集者";
+      $("#logout").onclick = async () => {
         if (!mayLeave()) return;
-        try {
-          await api("/auth/logout", "POST", {});
-          location.reload();
-        } catch {
-          showStatus("ログアウトできませんでした。もう一度お試しください。");
-        }
+        await api("/auth/logout", "POST", {});
+        location.reload();
       };
-      const status = node("p", "担当コンテンツを読み込み中…");
-      status.setAttribute("role", "status");
-      panel.append(node("h2", "担当コンテンツ"), logout, status);
-      import("./simple-cms.js").then(({ mountSimpleCms }) => mountSimpleCms(panel, status, api))
-        .catch((error) => { status.textContent = error.message === "cms_read_unavailable"
-          ? "GitHubから担当コンテンツを取得できませんでした。少し待ってから再読み込みしてください。"
-          : "担当コンテンツを取得できませんでした。"; });
-      $("#app").replaceChildren(panel);
+      if (!location.hash) history.replaceState(null, "", "#dashboard");
+      acceptedHash = location.hash;
+      screen();
       return;
     }
     if (me.simpleCms) {
       $("#simple-cms-link").hidden = false;
       if (!location.hash) {
-        history.replaceState(null, "", "#cms");
-        acceptedHash = "#cms";
+        history.replaceState(null, "", "#dashboard");
+        acceptedHash = "#dashboard";
       }
     }
     $("#identity").textContent = `${me.login} / 管理者 / ${me.repository}`;
@@ -397,6 +451,7 @@ async function start() {
     };
     workspace = new Workspace(api, renderSaveState);
     setupWorkspaceBar();
+    $("#workspace-bar").hidden = ["#dashboard", "#cms", "#drafts", "#publication", "#history", "#search"].includes(location.hash) || location.hash.startsWith("#content/");
     try {
       await workspace.load();
     } catch (e) {
@@ -1045,6 +1100,10 @@ async function digest(value) {
 }
 let activeEditor = null;
 function mayLeave() {
+  if (document.querySelector("[data-cms-saving]")) {
+    showStatus("下書きの保存処理中です。完了してから移動してください。");
+    return false;
+  }
   if (document.querySelector("[data-cms-dirty]"))
     return window.confirm("保存していない入力を破棄して移動しますか？");
   if (inlinePending()) {
@@ -1066,7 +1125,7 @@ function mayLeave() {
 window.addEventListener("beforeunload", (e) => {
   if (
     activeEditor?.pending ||
-    document.querySelector("[data-cms-dirty]") ||
+    document.querySelector("[data-cms-dirty], [data-cms-saving]") ||
     inlinePending() ||
     workspace?.dirty ||
     (activeEditor?.dirty && !workspace)
@@ -1608,15 +1667,68 @@ async function memberSettings() {
     };
   }
   let scopeControls;
+  let selectedMember = null;
+  const migration = node("input");
+  migration.type = "checkbox";
+  const migrationLabel = node("label", "既存の担当範囲を保持したまま、全コンテンツの編集・公開を許可する共通ポリシーへ切り替える");
+  migrationLabel.prepend(migration);
+  migrationLabel.hidden = true;
+  const legacyOptions = node("details");
+  legacyOptions.hidden = true;
+  legacyOptions.append(node("summary", "既存の担当範囲"));
+  legacyOptions.append(publishLabel);
+  const reset = node("button", "新しい招待");
+  reset.type = "button";
+  const resetInvitation = () => {
+    selectedMember = null;
+    email.value = "";
+    email.readOnly = false;
+    role.value = "editor";
+    disabled.checked = false;
+    migration.checked = false;
+    migrationLabel.hidden = true;
+    legacyOptions.hidden = true;
+    email.focus();
+  };
+  reset.onclick = resetInvitation;
   const submit = node("button", "招待・権限を保存");
   const status = node("p");
   status.setAttribute("role", "status");
   const list = node("ul");
-  form.append(emailLabel, roleLabel, disabledLabel, publishLabel, submit);
+  form.append(emailLabel, roleLabel, disabledLabel, migrationLabel, legacyOptions, submit, reset);
   submit.disabled = true;
-  panel.append(form, status, list);
+  const bulk = node("button", "既存ユーザーを共通権限へ移行");
+  bulk.type = "button";
+  bulk.className = "primary";
+  bulk.hidden = true;
+  panel.append(form, bulk, status, list);
   async function refresh() {
     const { members } = await api("/api/members");
+    const eligible = members.filter((member) => member.contentPolicy !== "all-content-v1" &&
+      !member.disabled && (member.accepted || member.expires > Date.now()));
+    bulk.hidden = eligible.length === 0;
+    bulk.textContent = "既存ユーザー " + eligible.length + " 人を共通権限へ移行";
+    bulk.onclick = async () => {
+      const editors = eligible.filter((member) => member.role === "editor").length;
+      const viewers = eligible.length - editors;
+      if (!confirm("編集者 " + editors + " 人に全コンテンツの編集・直接公開権限を付与し、閲覧者 " + viewers +
+        " 人に全コンテンツの閲覧を許可します。無効・期限切れの招待は対象外です。既存の担当範囲は保持し、対象のログインセッションは失効します。続けますか？")) return;
+      bulk.disabled = true;
+      try {
+        const result = await api("/api/members/migrate", "POST", {
+          confirmPolicyMigration: true,
+          members: eligible.map(({ id, role }) => ({ id, role })),
+        });
+        status.textContent = result.migrated + " 人を共通権限へ移行しました。";
+        await refresh();
+        resetInvitation();
+      } catch (error) {
+        status.textContent = error.message === "cms_publication_busy"
+          ? "公開処理中のユーザーがいます。完了後に移行してください。"
+          : "移行できませんでした。最新のユーザー一覧を確認してください。";
+        await refresh().catch(() => {});
+      } finally { bulk.disabled = false; }
+    };
     list.replaceChildren(...members.map((member) => {
       const row = node("li");
       const state = member.disabled ? "無効" : member.accepted ? "登録済み" :
@@ -1624,14 +1736,21 @@ async function memberSettings() {
       const edit = node("button", member.email || member.id);
       edit.type = "button";
       edit.onclick = () => {
+        selectedMember = member;
+        migration.checked = false;
+        const legacy = member.contentPolicy !== "all-content-v1";
+        migrationLabel.hidden = !legacy;
+        legacyOptions.hidden = !legacy;
         email.value = member.email || "";
+        email.readOnly = true;
         role.value = member.role;
         disabled.checked = member.disabled;
         directPublish.checked = member.directPublish;
         for (const [key, control] of Object.entries(scopeControls)) control.fill(member.scope?.[key]);
         email.focus();
       };
-      row.append(edit, node("span", " " + state + "・" + (member.role === "editor" ? "編集者" : "閲覧者")));
+      row.append(edit, node("span", " " + state + "・" + (member.role === "editor" ? "編集者" : "閲覧者") +
+        "・" + (member.contentPolicy === "all-content-v1" ? "全コンテンツ" : "旧担当範囲")));
       return row;
     }));
   }
@@ -1641,11 +1760,16 @@ async function memberSettings() {
     try {
       await api("/api/members", "POST", {
         email: email.value, role: role.value, disabled: disabled.checked,
-        directPublish: directPublish.checked,
-        scope: Object.fromEntries(Object.entries(scopeControls).map(([key, control]) => [key, control.read()])),
+        contentPolicy: !selectedMember || selectedMember.contentPolicy === "all-content-v1" || migration.checked ? "all-content-v1" : "scoped-v1",
+        confirmPolicyMigration: Boolean(selectedMember && migration.checked),
+        ...(selectedMember && !migration.checked && selectedMember.contentPolicy !== "all-content-v1" ? {
+          directPublish: directPublish.checked,
+          scope: Object.fromEntries(Object.entries(scopeControls).map(([key, control]) => [key, control.read()])),
+        } : {}),
       });
       status.textContent = "保存しました。対象アカウントの既存セッションは失効します。";
       await refresh();
+      resetInvitation();
     } catch {
       status.textContent = "招待または権限の更新を完了できませんでした。";
     } finally {
@@ -1662,7 +1786,7 @@ async function memberSettings() {
         ["music", "音楽・歌枠"], ["goods", "グッズ"],
       ]),
     };
-    for (const control of Object.values(scopeControls)) form.insertBefore(control.group, submit);
+    for (const control of Object.values(scopeControls)) legacyOptions.append(control.group);
     await refresh();
     submit.disabled = false;
   } catch {
@@ -1688,28 +1812,44 @@ screen = function () {
       "#settings": "設定",
     }[route] || "管理";
   for (const a of document.querySelectorAll("nav a")) {
-    if (a.hash === (location.hash || "#dashboard"))
+    if (a.hash === (location.hash.split("?")[0] || "#dashboard")) {
       a.setAttribute("aria-current", "page");
-    else a.removeAttribute("aria-current");
+      const group = a.closest("details");
+      if (group && !group.hidden) group.open = true;
+    } else a.removeAttribute("aria-current");
   }
-  if (route === "#cms" && me.simpleCms) {
-    $("#page-title").textContent = "簡易CMS";
+  const compatibility = { "#masters": "talent", "#anniversaries": "anniversary", "#events": "event", "#music": "song", "#goods": "product", "#organizations": "organization" };
+  const contentEntity = route.startsWith("#content/") ? route.slice(9).split("?")[0] : me.provider === "google" ? compatibility[route] : null;
+  const recordId = route.startsWith("#content/") ? new URLSearchParams(route.split("?")[1] || "").get("record") : null;
+  const cmsPages = { "#dashboard": "dashboard", "#cms": "dashboard", "#drafts": "drafts", "#publication": "publication", "#history": "history", "#search": "search", ...(me.provider === "google" ? { "#workspace": "drafts" } : {}) };
+  if (me.simpleCms && (contentEntity || cmsPages[route])) {
+    const pageNames = { dashboard: "ダッシュボード", drafts: "下書き", publication: "公開状況", history: "更新履歴", search: "全体検索" };
+    const names = { talent: "VTuber", organization: "事務所", group: "グループ", anniversary: "記念日", event: "イベント", song: "楽曲", musicVideo: "歌動画", video: "動画情報", karaoke: "歌枠", performance: "歌唱記録", product: "商品", campaign: "キャンペーン", offer: "販売情報" };
+    const title = contentEntity ? names[contentEntity] : pageNames[cmsPages[route]];
+    $("#page-title").textContent = title || "コンテンツ";
     const panel = node("section");
-    panel.className = "stack";
+    panel.className = "cms-content stack";
     const status = node("p", "読み込み中…");
     status.setAttribute("role", "status");
-    const reviewChanges = node("a", "下書きを確認して公開申請");
-    reviewChanges.href = "#workspace";
-    reviewChanges.className = "button";
-    const actions = node("div");
-    actions.className = "button-group";
-    actions.append(reviewChanges);
-    panel.append(node("h2", "簡易CMS"), actions, status);
+    panel.append(node("h2", title || "コンテンツ"), status);
+    if (me.provider !== "google" && ["drafts", "publication"].includes(cmsPages[route])) {
+      const review = node("a", "下書きを確認して公開申請");
+      review.href = "#workspace";
+      review.className = "button";
+      panel.append(review);
+    }
     $("#view").replaceChildren(panel);
-    import("./simple-cms.js").then(({ mountSimpleCms }) => mountSimpleCms(panel, status, api))
-      .catch((error) => { status.textContent = error.message === "cms_read_unavailable"
-        ? "GitHubからコンテンツを取得できませんでした。少し待ってから再読み込みするか、高度な管理画面をご利用ください。"
-        : "コンテンツを取得できませんでした。"; });
+    import("./simple-cms.js").then(({ mountSimpleCms }) => mountSimpleCms(panel, status, api, { entity: contentEntity, recordId, view: cmsPages[route] || "content" }))
+      .catch(() => {
+        status.textContent = "コンテンツを取得できませんでした。";
+        const retry = node("button", "再試行");
+        retry.onclick = () => screen();
+        panel.append(retry);
+      });
+    return;
+  }
+  if (me.provider === "google") {
+    $("#view").replaceChildren(node("h2", "この画面は利用できません"), node("p", "サイドバーからコンテンツを選んでください。"));
     return;
   }
   if (route === "#settings") {
@@ -1802,7 +1942,13 @@ window.addEventListener("keydown", (e) => {
     document.querySelector("dialog[open]")
   )
     return;
-  if (e.key.toLowerCase() === "z") {
+  if (e.key.toLowerCase() === "k" && me?.simpleCms) {
+    e.preventDefault();
+    if (location.hash === "#search") document.querySelector("#view input[type=search]")?.focus();
+    else location.hash = "#search";
+    return;
+  }
+  if (e.key.toLowerCase() === "z" && workspace && !$("#workspace-bar")?.hidden && !document.querySelector("[data-cms-dirty], [data-cms-saving]")) {
     e.preventDefault();
     workspace.history(e.shiftKey ? "redo" : "undo");
     if (activeEditor?.refresh) activeEditor.refresh();

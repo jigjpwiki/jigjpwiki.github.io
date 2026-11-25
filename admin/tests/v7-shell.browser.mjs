@@ -14,6 +14,7 @@ const collection = [
 ];
 
 test("all roles share the shell and separate collections while viewers have read-only controls", async () => {
+  const savedByRole = new Map();
   const server = http.createServer(async (req, res) => {
     try {
       const url = new URL(req.url, "http://localhost");
@@ -26,14 +27,32 @@ test("all roles share the shell and separate collections while viewers have read
       else if (url.pathname === "/api/cms/catalog") data = {
         sha: "a".repeat(40), editable: role !== "viewer", owner: role === "owner",
         contentPolicy: "all-content-v1", publicationTracking: role !== "owner", publishable: role === "editor",
-        categories: ["talents", "organizations", "anniversaries", "events", "music", "goods"], songs: [], organizations: [], people: [],
+        categories: ["talents", "organizations", "anniversaries", "events", "music", "goods"], songs: [], people: [],
+        organizations: Array.from({ length: 65 }, (_, i) => ({ id: "org-" + String(i + 1).padStart(6, "0"), name: "試験事務所" + (i + 1) })),
         sections: collection.map(([entity, label]) => ({ entity, label, items: [
           { id: entity + "-001", title: label + "の試験レコード", context: "確認用関連情報", state: "active", visibility: "public" },
           { id: entity + "-002", title: label + "の別レコード", context: "別の関連情報", state: "hiatus", visibility: "draft" },
         ] })),
       };
-      else if (url.pathname === "/api/cms/detail") data = { sha: "a".repeat(40), fields: { displayName: "VTuberの試験レコード", activity: "active" } };
-      else if (url.pathname === "/api/cms/draft") data = { revision: 0, drafts: [] };
+      else if (url.pathname === "/api/cms/detail") data = { sha: "a".repeat(40), fields: {
+        displayName: "VTuberの試験レコード", activity: "active", agencyState: "affiliated",
+        affiliations: [{ organizationId: "org-000001", status: "current", from: null, to: null }],
+        accounts: [], visibility: "public",
+      } };
+      else if (url.pathname === "/api/cms/draft/bulk") {
+        const chunks = [];
+        for await (const chunk of req) chunks.push(chunk);
+        const input = JSON.parse(Buffer.concat(chunks).toString());
+        assert.equal(role, "editor");
+        assert.equal(req.method, "PUT");
+        assert.equal(input.revision, 0);
+        assert.deepEqual(input.ids, ["talent-001"]);
+        assert.equal(input.field, "activity");
+        assert.equal(input.value, "hiatus");
+        savedByRole.set(role, { revision: 1, drafts: [{ draftId: "bulk-one", input: { entity: "talent", id: "talent-001", displayName: "VTuberの試験レコード", activity: "hiatus" } }] });
+        data = { revision: 1, draftIds: ["bulk-one"] };
+      }
+      else if (url.pathname === "/api/cms/draft") data = savedByRole.get(role) || { revision: 0, drafts: [] };
       else if (url.pathname === "/api/cms/publication") data = { publication: null };
       else if (url.pathname === "/api/workspace") data = { workspace: { revision: 0, operations: [] } };
       else if (url.pathname === "/api/cms/history") data = { records: [], next: null };
@@ -109,16 +128,41 @@ test("all roles share the shell and separate collections while viewers have read
           assert.equal(await page.getByLabel("表示名", { exact: true }).isEnabled(), role !== "viewer");
           assert.equal(await page.getByLabel("公開サイトへの掲載状態", { exact: true }).isEnabled(), role !== "viewer");
           assert.ok(await page.locator(".cms-collection-workspace.has-editor").count());
+          assert.equal(await page.getByLabel("事務所所属状態", { exact: true }).isEnabled(), role !== "viewer");
+          assert.equal(await page.getByLabel("TwitchチャンネルURL", { exact: true }).isEnabled(), role !== "viewer");
+          if (role === "editor") {
+            await page.getByRole("button", { name: "所属を追加", exact: true }).click();
+            const added = page.locator(".cms-affiliation-editor fieldset").last();
+            assert.ok(await added.locator("select").first().locator("option").count() <= 51);
+            await added.getByRole("searchbox").fill("試験事務所65");
+            await added.locator("select").first().selectOption("org-000065");
+            assert.equal(await added.locator("select").first().inputValue(), "org-000065");
+            await added.getByRole("button", { name: "追加した所属を削除", exact: true }).click();
+          }
           if (process.env.ADMIN_V7_SCREENSHOTS) {
             await mkdir(process.env.ADMIN_V7_SCREENSHOTS, { recursive: true });
             await page.screenshot({ path: path.join(process.env.ADMIN_V7_SCREENSHOTS, role + "-editor.png"), fullPage: true });
           }
+          if (role === "editor") page.once("dialog", (dialog) => dialog.accept());
           await page.getByRole("button", { name: "閉じる", exact: true }).click();
           assert.equal(await page.locator(".cms-editor").isVisible(), false);
           await page.goto(base + "/#content/talent?record=talent-001");
           await page.getByLabel("表示名", { exact: true }).waitFor();
           assert.equal(await page.locator(".cms-editor").isVisible(), true);
           await page.getByRole("button", { name: "閉じる", exact: true }).click();
+          if (role === "editor") {
+            await page.getByRole("checkbox", { name: "VTuberの試験レコードを一括編集の対象にする", exact: true }).check();
+            await page.getByLabel("一括編集する項目").selectOption("activity");
+            await page.getByLabel("一括編集の変更後の値").selectOption("hiatus");
+            page.once("dialog", (dialog) => dialog.accept());
+            await page.getByRole("button", { name: "一括で下書きを保存", exact: true }).click();
+            await page.getByText("1件の下書きを保存しました。", { exact: true }).waitFor();
+            assert.equal(savedByRole.get(role).revision, 1);
+          }
+          if (role === "owner") {
+            const height = await page.locator(".cms-collection-toolbar").evaluate((node) => node.getBoundingClientRect().height);
+            assert.ok(height < 140, "desktop filters must not stack into a tall form");
+          }
         }
         assert.equal(await page.evaluate(() => document.documentElement.scrollWidth > innerWidth), false);
         if (process.env.ADMIN_V7_SCREENSHOTS && ["talent", "campaign"].includes(entity)) {

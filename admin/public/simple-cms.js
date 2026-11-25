@@ -87,6 +87,7 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
 
   const formArea = el("section");
   const list = el("section");
+  list.className = "cms-collection-list";
   const draftsArea = el("section");
   draftsArea.className = "cms-drafts-area stack";
   const workspaceArea = el("div");
@@ -496,7 +497,7 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
         control.min = "0";
         control.step = input.feeCurrency && input.feeCurrency !== "JPY" ? "any" : "1";
       }
-      add(key, key === "fee" ? "料金（" + (input.feeCurrency || "JPY") + "）" : key === "price" && input.currency ? "価格（" + input.currency + "）" : label, control, basicGrid);
+      add(key, entity === "talent" && key === "image" ? "プロフィール画像URL" : key === "fee" ? "料金（" + (input.feeCurrency || "JPY") + "）" : key === "price" && input.currency ? "価格（" + input.currency + "）" : label, control, basicGrid);
     }
     if (entity !== "organization" && catalog.contentPolicy === "all-content-v1") {
       const visibility = el("select");
@@ -966,7 +967,15 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
   }
   const actions = el("div");
   actions.className = "cms-collection-actions";
-  list.append(actions);
+  if (view !== "legacy") {
+    const title = panel.querySelector("h2");
+    if (title) {
+      const heading = el("div");
+      heading.className = "cms-page-heading";
+      title.before(heading);
+      heading.append(title, actions);
+    } else list.append(actions);
+  } else list.append(actions);
   for (const [entity, spec] of Object.entries(categories)) {
     if (["legacy", "content"].includes(view) && (!selectedEntity || selectedEntity === entity) && (!spec.ownerCreate || catalog.owner || catalog.contentPolicy === "all-content-v1") && catalog.editable && catalog.categories.includes(spec.category))
       {
@@ -992,7 +1001,9 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
     ["state", "状態"], ["visibility", "公開状態"], ["draft", "下書き"], ["id", "固定ID"],
   ];
   const hasValue = (key) => sections.some(({ items }) => items.some((item) => Boolean(item[key])));
-  const activeColumns = new Set(["title", "visibility", "draft", "id", ...["context", "date", "state"].filter(hasValue)]);
+  const compactViewport = matchMedia("(max-width: 767px)").matches;
+  const activeColumns = new Set(compactViewport ? ["title", "visibility", ...["state"].filter(hasValue)] :
+    ["title", "visibility", "draft", "id", ...["context", "date", "state"].filter(hasValue)]);
   const bulkAvailable = view === "content" && selectedEntity !== "organization" &&
     catalog.editable && catalog.contentPolicy === "all-content-v1";
   const selectedRows = new Set();
@@ -1015,8 +1026,10 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
     if (!saveAvailable || saving || !selectedRows.size || selectedRows.size > 12) return;
     if (panel.dataset.cmsDirty) { status.textContent = "編集中のレコードを保存または閉じてから一括編集してください。"; return; }
     if (!confirm(selectedRows.size + "件の「" + bulkField.selectedOptions[0].text + "」を「" + bulkValue.selectedOptions[0].text + "」に変更し、下書きとして保存します。公開は別途確認が必要です。")) return;
+    if (!formArea.hidden) closeEditor(true);
     saving = true;
     panel.dataset.cmsSaving = "true";
+    filter();
     bulkSave.disabled = true;
     try {
       const result = await api("/api/cms/draft/bulk", "PUT", { entity: selectedEntity, ids: [...selectedRows], field: bulkField.value, value: bulkValue.value, revision, sha: catalog.sha });
@@ -1031,12 +1044,16 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
   bulkSave.className = "primary";
   const clearBulk = button("選択解除", () => { selectedRows.clear(); filter(); });
   const updateBulk = () => {
+    bulkBar.hidden = selectedRows.size === 0;
     bulkCount.textContent = selectedRows.size + "件選択中（最大12件）";
     bulkSave.disabled = saving || !saveAvailable || !selectedRows.size || selectedRows.size > 12;
     clearBulk.disabled = saving || !selectedRows.size;
   };
   bulkBar.append(bulkCount, bulkField, bulkValue, bulkSave, clearBulk);
-  if (bulkAvailable) list.append(bulkBar);
+  if (bulkAvailable) {
+    bulkBar.hidden = true;
+    list.append(bulkBar);
+  }
   const tools = el("div");
   tools.className = "cms-toolbar cms-collection-toolbar";
   const category = el("select");
@@ -1220,7 +1237,8 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
     const wrapper = el("div");
     wrapper.className = "cms-table-wrap";
     wrapper.append(table);
-    section.append(el("h3", label), wrapper);
+    if (view !== "content") section.append(el("h3", label));
+    section.append(wrapper);
     list.append(section);
     views.push({ entity, section, headerRow, entries, items });
   }

@@ -352,6 +352,22 @@ try {
   );
   assert.equal(invalidPreview.status, 400);
   assert.equal(writes, 3);
+  const cleared = await mf.dispatchFetch("https://jigwiki-admin.local/api/workspace", {
+    method: "PUT", headers, body: JSON.stringify({ protocol: 1, revision: stored.revision, operations: [] }),
+  });
+  assert.equal(cleared.status, 200);
+  const clearedRevision = (await cleared.json()).workspace.revision;
+  const bulk = (revision) => mf.dispatchFetch("https://jigwiki-admin.local/api/cms/draft/bulk", {
+    method: "PUT", headers, body: JSON.stringify({ revision, sha: mainSha, entity: "talent", field: "activity", value: "hiatus",
+      ids: models.talents.talents.slice(0, 2).map((row) => row.id) }),
+  });
+  const bulkResponses = await Promise.all([bulk(clearedRevision), bulk(clearedRevision)]);
+  assert.deepEqual(bulkResponses.map((row) => row.status).sort(), [200, 409]);
+  const bulkState = await (await mf.dispatchFetch("https://jigwiki-admin.local/api/workspace", { headers })).json();
+  assert.equal(bulkState.workspace.operations.length, 2);
+  assert.ok(bulkState.workspace.operations.every((op) => op.value.activityStatus.value === "hiatus"));
+  assert.equal(writes, 3);
+  console.log("Local workerd: atomic bulk draft save, concurrent revision rejection, and no external publication passed.");
   console.log(
     "Local workerd/SQLite Phase4 120 drafts / runtime restart / 121 refusal / invalid preview safe:",
     JSON.stringify({

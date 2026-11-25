@@ -1733,7 +1733,7 @@
     "youtubeid": "UCay6Y3oEoiC6ZEE2G0UZu_A",
     "title": "【歌枠｜KARAOKE】短めのノープラン歌枠だよ～～～！！！【#パレプロ #香鳴ハノン】",
     "date": "2026-11-25T11:06:22.000Z",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/Fg_WquB8iSQ/mqdefault.jpg?v=6b06c027",
     "channelIcon": "https://yt3.ggpht.com/qvbeb9E-gYc822fxxzi6Ug5QyjhqZAWbUskHANcwDWP5W8iTsK3LcQJnjS4CVBuFJ6fONsM9F7M=s240-c-k-c0x00ffffff-no-rj",
@@ -1884,18 +1884,6 @@
     "url": "https://www.youtube.com/watch?v=keCDN4Lf0mw"
   },
   {
-    "videoId": "9t1AfzUZTDE",
-    "name": "無月いお",
-    "youtubeid": "UC2X_mAVGw8e3N9JQZZDVBfQ",
-    "title": "【#低音女子】マイクラ初心者が１ブロックで生き延びるらしい《#パレデミア学園》#雑談#新人VTuber#寝落ち#マイクラ#oneblock",
-    "date": "2026-11-25T12:30:00.000Z",
-    "status": "upcoming",
-    "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/9t1AfzUZTDE/mqdefault.jpg?v=6b06d699",
-    "channelIcon": "https://yt3.ggpht.com/Z7PlAWhweuycNXNXoQ6etyDTkduySM-Kqy8kQW-AD19JuRdxT3HSdIxogPw3GPD5NHw_vZlf=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=9t1AfzUZTDE"
-  },
-  {
     "videoId": "QZB2DmdUlCc",
     "name": "愛乃宮ゆめ",
     "youtubeid": "UCttSjPiwPYpiPuCrgxK7c1g",
@@ -1918,6 +1906,18 @@
     "thumbnail": "https://i.ytimg.com/vi/x9whmwnTb1c/mqdefault.jpg?v=6b06524b",
     "channelIcon": "https://yt3.ggpht.com/_pGNq0-SYZiXjomeCnQRygINoA2PKkUJMbRtwuSIL83vUAny58me1QY1WttWypAIwJFrE5hh0w=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=x9whmwnTb1c"
+  },
+  {
+    "videoId": "9t1AfzUZTDE",
+    "name": "無月いお",
+    "youtubeid": "UC2X_mAVGw8e3N9JQZZDVBfQ",
+    "title": "【#低音女子】マイクラ初心者が１ブロックで生き延びるらしい《#パレデミア学園》#雑談#新人VTuber#寝落ち#マイクラ#oneblock",
+    "date": "2026-11-25T12:40:15.000Z",
+    "status": "live",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/9t1AfzUZTDE/mqdefault.jpg?v=6b06d699",
+    "channelIcon": "https://yt3.ggpht.com/Z7PlAWhweuycNXNXoQ6etyDTkduySM-Kqy8kQW-AD19JuRdxT3HSdIxogPw3GPD5NHw_vZlf=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=9t1AfzUZTDE"
   },
   {
     "videoId": "zDHAMeH2_bA",

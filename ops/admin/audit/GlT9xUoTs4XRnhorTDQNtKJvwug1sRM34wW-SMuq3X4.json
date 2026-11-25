@@ -1,0 +1,50 @@
+{
+  "version": 2,
+  "batchId": "GlT9xUoTs4XRnhorTDQNtKJvwug1sRM34wW-SMuq3X4",
+  "actor": "900122208316251340881522085640042137117242",
+  "createdAt": "2026-11-25T12:49:25.866Z",
+  "baseCommit": "63e72fab8bcd76ce9eec86df1382b53ca8a998bd",
+  "reason": null,
+  "submissionId": "GlT9xUoTs4XRnhorTDQNtKJvwug1sRM34wW-SMuq3X4",
+  "branch": "admin/change-GlT9xUoTs4XRnhorTDQNtKJvwug1sRM34wW-SMuq3X4",
+  "operations": [
+    {
+      "operationId": "cms-song-8b692c747fa649bdac588b32",
+      "entity": "song",
+      "recordId": "song-000077",
+      "action": "edit",
+      "changedFields": [
+        "originalArtists"
+      ],
+      "before": {
+        "title": "ギミラビ",
+        "originalArtists": [
+          "Palette Project"
+        ],
+        "identityUrl": "https://www.youtube.com/watch?v=raoZnNq1ZIU",
+        "aliases": [],
+        "readings": [],
+        "visibility": "public",
+        "id": "song-000077"
+      },
+      "after": {
+        "title": "ギミラビ",
+        "originalArtists": [
+          "Palette Project",
+          "暁月クララ",
+          "七海ロナ",
+          "藤宮コトハ",
+          "常磐カナメ",
+          "江波キョウカ",
+          "鬼多見アユム",
+          "香鳴ハノン"
+        ],
+        "identityUrl": "https://www.youtube.com/watch?v=raoZnNq1ZIU",
+        "aliases": [],
+        "readings": [],
+        "visibility": "public",
+        "id": "song-000077"
+      }
+    }
+  ]
+}

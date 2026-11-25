@@ -1,0 +1,257 @@
+{
+  "version": 2,
+  "batchId": "BLak_SYhpBA3ovh8SVXWE5c5nMUiuobJYkNP1jEQoZM",
+  "actor": "900122208316251340881522085640042137117242",
+  "createdAt": "2026-11-25T10:39:18.137Z",
+  "baseCommit": "f8d45dfd558c364aea8fbb9efdd752482f855c6c",
+  "reason": null,
+  "submissionId": "BLak_SYhpBA3ovh8SVXWE5c5nMUiuobJYkNP1jEQoZM",
+  "branch": "admin/change-BLak_SYhpBA3ovh8SVXWE5c5nMUiuobJYkNP1jEQoZM",
+  "operations": [
+    {
+      "operationId": "cms-musicvideo-dd6b073bdd15459c8ac0c320",
+      "entity": "musicVideo",
+      "recordId": "mv-000005",
+      "action": "edit",
+      "changedFields": [
+        "talentIds"
+      ],
+      "before": {
+        "talentIds": [
+          "tal-000008",
+          "tal-000005",
+          "tal-000007",
+          "tal-000012",
+          "tal-000011",
+          "tal-000010",
+          "tal-000009"
+        ],
+        "visibility": "public",
+        "youtubeId": "6U3SnYYLbPI",
+        "type": "original",
+        "songId": "song-000064",
+        "registeredAt": "2026-11-25T06:36:21.853Z",
+        "rawSongTitle": "君がいるから",
+        "id": "mv-000005"
+      },
+      "after": {
+        "talentIds": [
+          "tal-000008",
+          "tal-000005",
+          "tal-000007",
+          "tal-000012",
+          "tal-000011",
+          "tal-000010",
+          "tal-000009",
+          "tal-000085",
+          "tal-000086"
+        ],
+        "visibility": "public",
+        "youtubeId": "6U3SnYYLbPI",
+        "type": "original",
+        "songId": "song-000064",
+        "registeredAt": "2026-11-25T06:36:21.853Z",
+        "rawSongTitle": "君がいるから",
+        "id": "mv-000005"
+      }
+    },
+    {
+      "operationId": "cms-musicvideo-ef9334441c8d4f9d9597fcec",
+      "entity": "musicVideo",
+      "recordId": "mv-000006",
+      "action": "edit",
+      "changedFields": [
+        "talentIds"
+      ],
+      "before": {
+        "talentIds": [
+          "tal-000008",
+          "tal-000005"
+        ],
+        "visibility": "public",
+        "youtubeId": "8UE4KHm7sF0",
+        "type": "original",
+        "songId": "song-000058",
+        "registeredAt": "2026-11-25T06:38:08.935Z",
+        "rawSongTitle": "StAlt!!",
+        "id": "mv-000006"
+      },
+      "after": {
+        "talentIds": [
+          "tal-000008",
+          "tal-000005",
+          "tal-000085"
+        ],
+        "visibility": "public",
+        "youtubeId": "8UE4KHm7sF0",
+        "type": "original",
+        "songId": "song-000058",
+        "registeredAt": "2026-11-25T06:38:08.935Z",
+        "rawSongTitle": "StAlt!!",
+        "id": "mv-000006"
+      }
+    },
+    {
+      "operationId": "cms-musicvideo-ed5bef5428aa44009ef96282",
+      "entity": "musicVideo",
+      "recordId": "mv-000007",
+      "action": "edit",
+      "changedFields": [
+        "talentIds"
+      ],
+      "before": {
+        "talentIds": [
+          "tal-000008",
+          "tal-000005"
+        ],
+        "visibility": "public",
+        "youtubeId": "EQybHllR2mQ",
+        "type": "original",
+        "songId": "song-000059",
+        "registeredAt": "2026-11-25T06:38:44.093Z",
+        "rawSongTitle": "Three Piece",
+        "id": "mv-000007"
+      },
+      "after": {
+        "talentIds": [
+          "tal-000008",
+          "tal-000005",
+          "tal-000085"
+        ],
+        "visibility": "public",
+        "youtubeId": "EQybHllR2mQ",
+        "type": "original",
+        "songId": "song-000059",
+        "registeredAt": "2026-11-25T06:38:44.093Z",
+        "rawSongTitle": "Three Piece",
+        "id": "mv-000007"
+      }
+    },
+    {
+      "operationId": "cms-musicvideo-b9879fc6b3c74d13a80c64ee",
+      "entity": "musicVideo",
+      "recordId": "mv-000008",
+      "action": "edit",
+      "changedFields": [
+        "talentIds"
+      ],
+      "before": {
+        "talentIds": [
+          "tal-000008",
+          "tal-000005"
+        ],
+        "visibility": "public",
+        "youtubeId": "zgJhhzIbWmI",
+        "type": "original",
+        "songId": "song-000060",
+        "registeredAt": "2026-11-25T06:39:16.373Z",
+        "rawSongTitle": "Hello My Stage!",
+        "id": "mv-000008"
+      },
+      "after": {
+        "talentIds": [
+          "tal-000008",
+          "tal-000005",
+          "tal-000085"
+        ],
+        "visibility": "public",
+        "youtubeId": "zgJhhzIbWmI",
+        "type": "original",
+        "songId": "song-000060",
+        "registeredAt": "2026-11-25T06:39:16.373Z",
+        "rawSongTitle": "Hello My Stage!",
+        "id": "mv-000008"
+      }
+    },
+    {
+      "operationId": "cms-musicvideo-f14345a40a0c4e42a538edf6",
+      "entity": "musicVideo",
+      "recordId": "mv-000024",
+      "action": "create",
+      "changedFields": [
+        "talentIds",
+        "visibility",
+        "youtubeId",
+        "type",
+        "songId",
+        "registeredAt",
+        "rawSongTitle",
+        "id"
+      ],
+      "before": null,
+      "after": {
+        "talentIds": [
+          "tal-000005",
+          "tal-000007",
+          "tal-000010",
+          "tal-000011",
+          "tal-000009",
+          "tal-000012"
+        ],
+        "visibility": "public",
+        "youtubeId": "raoZnNq1ZIU",
+        "type": "original",
+        "songId": "song-000077",
+        "registeredAt": "2026-11-25T10:38:44.481Z",
+        "rawSongTitle": "ギミラビ",
+        "id": "mv-000024"
+      }
+    },
+    {
+      "operationId": "cms-media-f14345a40a0c4e42a538edf6",
+      "entity": "video",
+      "recordId": "raoZnNq1ZIU",
+      "action": "create",
+      "changedFields": [
+        "youtubeId",
+        "channelId",
+        "title",
+        "publishedAt",
+        "startedAt",
+        "endedAt",
+        "durationSeconds",
+        "availability",
+        "visibility"
+      ],
+      "before": null,
+      "after": {
+        "youtubeId": "raoZnNq1ZIU",
+        "channelId": "UC_cCW1xmXwRFp1tX-RD2X1Q",
+        "title": "【オリジナル曲】ギミラビ / Palette Project 14th Single【パレプロ / MV】",
+        "publishedAt": "2026-07-28T12:00:06.000Z",
+        "startedAt": null,
+        "endedAt": null,
+        "durationSeconds": null,
+        "availability": "public",
+        "visibility": "public"
+      }
+    },
+    {
+      "operationId": "cms-new-song-f14345a40a0c4e42a538edf6",
+      "entity": "song",
+      "recordId": "song-000077",
+      "action": "create",
+      "changedFields": [
+        "title",
+        "originalArtists",
+        "identityUrl",
+        "aliases",
+        "readings",
+        "visibility",
+        "id"
+      ],
+      "before": null,
+      "after": {
+        "title": "ギミラビ",
+        "originalArtists": [
+          "Palette Project"
+        ],
+        "identityUrl": "https://www.youtube.com/watch?v=raoZnNq1ZIU",
+        "aliases": [],
+        "readings": [],
+        "visibility": "public",
+        "id": "song-000077"
+      }
+    }
+  ]
+}

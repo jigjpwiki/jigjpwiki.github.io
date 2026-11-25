@@ -892,6 +892,17 @@
       "readings": [],
       "visibility": "public",
       "id": "song-000076"
+    },
+    {
+      "title": "ギミラビ",
+      "originalArtists": [
+        "Palette Project"
+      ],
+      "identityUrl": "https://www.youtube.com/watch?v=raoZnNq1ZIU",
+      "aliases": [],
+      "readings": [],
+      "visibility": "public",
+      "id": "song-000077"
     }
   ],
   "musicVideos": [
@@ -951,7 +962,9 @@
         "tal-000012",
         "tal-000011",
         "tal-000010",
-        "tal-000009"
+        "tal-000009",
+        "tal-000085",
+        "tal-000086"
       ],
       "visibility": "public",
       "youtubeId": "6U3SnYYLbPI",
@@ -964,7 +977,8 @@
     {
       "talentIds": [
         "tal-000008",
-        "tal-000005"
+        "tal-000005",
+        "tal-000085"
       ],
       "visibility": "public",
       "youtubeId": "8UE4KHm7sF0",
@@ -977,7 +991,8 @@
     {
       "talentIds": [
         "tal-000008",
-        "tal-000005"
+        "tal-000005",
+        "tal-000085"
       ],
       "visibility": "public",
       "youtubeId": "EQybHllR2mQ",
@@ -990,7 +1005,8 @@
     {
       "talentIds": [
         "tal-000008",
-        "tal-000005"
+        "tal-000005",
+        "tal-000085"
       ],
       "visibility": "public",
       "youtubeId": "zgJhhzIbWmI",
@@ -1182,6 +1198,23 @@
       "registeredAt": "2026-11-25T10:15:02.802Z",
       "rawSongTitle": "青春の現在地",
       "id": "mv-000023"
+    },
+    {
+      "talentIds": [
+        "tal-000005",
+        "tal-000007",
+        "tal-000010",
+        "tal-000011",
+        "tal-000009",
+        "tal-000012"
+      ],
+      "visibility": "public",
+      "youtubeId": "raoZnNq1ZIU",
+      "type": "original",
+      "songId": "song-000077",
+      "registeredAt": "2026-11-25T10:38:44.481Z",
+      "rawSongTitle": "ギミラビ",
+      "id": "mv-000024"
     }
   ]
 }

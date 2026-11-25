@@ -1488,18 +1488,6 @@
     "url": "https://www.youtube.com/watch?v=vs7UnJ218YQ"
   },
   {
-    "videoId": "YAm3upHrig8",
-    "name": "犬丸なでこ",
-    "youtubeid": "UCdJmJxMfXrlnZabUkuss2EA",
-    "title": "【 #朝活】おはようわん！【犬丸なでこ/パレデミア学園】",
-    "date": "2026-11-24T22:00:00.000Z",
-    "status": "upcoming",
-    "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/YAm3upHrig8/mqdefault.jpg?v=6b05a2d8",
-    "channelIcon": "https://yt3.ggpht.com/HZPUrbSwGcllAbUtx6xggJ6lKfMfnAWDxWOCc01tpthiDipSqQP48TK5Jqz4GRzUdwKMUsxlsg=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=YAm3upHrig8"
-  },
-  {
     "videoId": "V-ZUTBswwhw",
     "name": "冬星れんこん",
     "youtubeid": "UCy4tS4QJSyI-VOr9ImBEveg",
@@ -1745,7 +1733,7 @@
     "youtubeid": "UCdJmJxMfXrlnZabUkuss2EA",
     "title": "【＃歌枠雑談】まーーーーったり(*^_^*)【パレデミア学園/犬丸なでこ】",
     "date": "2026-11-25T11:09:26.000Z",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/ZjrcSCnUByM/mqdefault.jpg?v=6b06be63",
     "channelIcon": "https://yt3.ggpht.com/HZPUrbSwGcllAbUtx6xggJ6lKfMfnAWDxWOCc01tpthiDipSqQP48TK5Jqz4GRzUdwKMUsxlsg=s240-c-k-c0x00ffffff-no-rj",
@@ -1817,7 +1805,7 @@
     "youtubeid": "UCOah55SQYynzPgQQ4wxuzkA",
     "title": "【ローモバ】君も仲間にならないか？～導入編～【水透ユウ】【PR/ぶいきゃす】",
     "date": "2026-11-25T12:00:00.000Z",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/N-G6s8h03RI/mqdefault.jpg?v=6b06ca1e",
     "channelIcon": "https://yt3.ggpht.com/eVD8Ygm7KVyh3dvWnyebfYlbYpD13ZYQ-Bos8WdR5LDE61A3svHVHCLEY-rM3IQgw9O4uvdd=s240-c-k-c0x00ffffff-no-rj",
@@ -2014,6 +2002,18 @@
     "thumbnail": "https://i.ytimg.com/vi/zDHAMeH2_bA/mqdefault.jpg?v=6b067d28",
     "channelIcon": "https://yt3.ggpht.com/BaxFKUrCc4gGKc1wwAHt4ebjk8C69NdTl3fMz9LoR5SUm_Tpvv2yixsbJhp8qsld6S0tdgup=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=zDHAMeH2_bA"
+  },
+  {
+    "videoId": "YAm3upHrig8",
+    "name": "犬丸なでこ",
+    "youtubeid": "UCdJmJxMfXrlnZabUkuss2EA",
+    "title": "【 #朝活】おはようわん！【犬丸なでこ/パレデミア学園】",
+    "date": "2026-11-25T22:00:00.000Z",
+    "status": "upcoming",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/YAm3upHrig8/mqdefault.jpg?v=6b05a2d8",
+    "channelIcon": "https://yt3.ggpht.com/HZPUrbSwGcllAbUtx6xggJ6lKfMfnAWDxWOCc01tpthiDipSqQP48TK5Jqz4GRzUdwKMUsxlsg=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=YAm3upHrig8"
   },
   {
     "videoId": "DG6klBrIM6k",

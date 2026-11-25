@@ -1,3 +1,4 @@
+import { publicationReview } from "./cms-review.mjs";
 import { recoverAppliedGroup } from "./cms-recover-draft.mjs";
 import { youtubeVideoLookup } from "./cms-music.mjs";
 import { readCmsHistory, prepareAuditReversal, assertReversalRoundTrip } from "./cms-history.mjs";
@@ -264,7 +265,7 @@ export class Admin {
         if (request.method === "POST") return json({ publication: await jobs.enqueue(session, await body(request, 4096)) }, 202);
       }
     }
-    const cmsRoutes = ["/api/cms/catalog", "/api/cms/detail", "/api/cms/draft", "/api/cms/draft/conflicts", "/api/cms/history", "/api/cms/publication/reapply"];
+    const cmsRoutes = ["/api/cms/catalog", "/api/cms/detail", "/api/cms/draft", "/api/cms/draft/conflicts", "/api/cms/history", "/api/cms/publication/reapply", "/api/cms/publication/preview"];
     if (cmsRoutes.includes(url.pathname)) {
       await this.atomic(async () => {
         const key = "cms-rate:" + sid;
@@ -309,6 +310,15 @@ export class Admin {
       }
       if (url.pathname === "/api/cms/detail" && request.method === "GET")
         return json({ sha: snapshot.sha, fields: draftDetails(snapshot, member, url.searchParams.get("entity"), url.searchParams.get("id")) });
+      if (url.pathname === "/api/cms/publication/preview" && request.method === "POST") {
+        if (!google || !publishingEnabled(this.env)) fail(403, "cms_publish_disabled");
+        const input = await body(request, 4096);
+        const saved = await new WorkspaceStore(this.store, this.env.SESSION_KEY).get(session.id);
+        const result = await publicationReview(snapshot, saved, member, session.id, input,
+          this.env.SESSION_KEY, this.cmsVideoLookup);
+        await requireCurrentGrant();
+        return json(result);
+      }
       if (url.pathname === "/api/cms/publication/reapply" && request.method === "POST") {
         if (!google || member.role !== "editor") fail(403, "cms_scope_denied");
         const input = await body(request, 1024);

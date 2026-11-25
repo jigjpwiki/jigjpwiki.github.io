@@ -1,4 +1,6 @@
-import { installationClient, publishingEnabled } from "./github-app.mjs";
+import { assertPublicationReview } from "./cms-review.mjs";
+import { hasAllContent } from "./cms-scope.mjs";
+import { installationClient, installationReadToken, publishingEnabled } from "./github-app.mjs";
 import { GitHub, repository } from "./github.mjs";
 import { youtubeVideoLookup } from "./cms-music.mjs";
 import { googleEnabled } from "./google.mjs";
@@ -53,6 +55,15 @@ export class CmsJobs {
       const retry = input?.retry;
       const operations = selectedOperations(workspace, ids);
       if (workspace.revision !== input.revision) fail(409, "workspace_revision_conflict");
+      const memberEntry = await this.store.get(session.memberKey);
+      const member = memberEntry && await open(memberEntry, this.env.SESSION_KEY);
+      if (hasAllContent(member) || input.review) {
+        const snapshot = await this.admin.cmsSnapshot({
+          revalidate: true,
+          getReadToken: () => installationReadToken(this.env, this.admin.transport),
+        });
+        await assertPublicationReview(input.review, snapshot, workspace, session.id, operations, this.env.SESSION_KEY);
+      }
       const fingerprint = await hash({ owner: session.id, operations });
       const active = await this.get(activeKey);
       const queue = (await this.get(queueKey) || []).filter((job) => job.id !== active?.id);

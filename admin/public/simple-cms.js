@@ -174,25 +174,58 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
     const eligible = new Set(saved.drafts.filter(({ conflict, reapplyJobId }) => !conflict && !reapplyJobId).map(({ draftId }) => draftId));
     for (const draftId of selectedDrafts) if (!eligible.has(draftId)) selectedDrafts.delete(draftId);
     if (catalog.publishable) {
-      const publish = button("選択した下書きを公開", async () => {
+      const reviewArea = el("section");
+      reviewArea.className = "stack";
+      const publish = button("選択した下書きを確認", async () => {
         if (!selectedDrafts.size) return;
         publish.disabled = true;
         try {
-          await api("/api/cms/publication", "POST", {
-            draftIds: [...selectedDrafts], revision, retry: publication?.phase === "failed",
+          const draftIds = [...selectedDrafts];
+          const checkedRevision = revision;
+          const result = await api("/api/cms/publication/preview", "POST", { draftIds, revision });
+          reviewArea.replaceChildren(el("h3", "公開する変更"));
+          for (const record of result.records) {
+            const section = el("section");
+            section.className = "stack";
+            section.append(el("h4", record.name));
+            for (const change of record.changes) {
+              const format = (value) => value === null ? "未設定" : JSON.stringify(value, null, 2);
+              section.append(el("p", change.field),
+                el("pre", "変更前 " + format(change.before)),
+                el("pre", "変更後 " + format(change.after)));
+            }
+            reviewArea.append(section);
+          }
+          const confirmation = el("input");
+          confirmation.type = "checkbox";
+          const label = el("label", "変更内容を確認しました");
+          label.prepend(confirmation);
+          const submit = button("確認した変更を公開", async () => {
+            submit.disabled = true;
+            try {
+              await api("/api/cms/publication", "POST", {
+                draftIds, revision: checkedRevision, review: result.review,
+                retry: publication?.phase === "failed",
+              });
+              reviewArea.replaceChildren(el("p", "公開処理を受け付けました。公開状況で確認できます。"));
+              await refreshPublication();
+            } catch {
+              status.textContent = "公開を開始できませんでした。最新の下書きと差分を確認し直してください。";
+            } finally { submit.disabled = !confirmation.checked; }
           });
-          await refreshPublication();
+          submit.disabled = true;
+          confirmation.onchange = () => { submit.disabled = !confirmation.checked; };
+          reviewArea.append(label, submit);
+          confirmation.focus();
         } catch (error) {
-          publicationStatus.textContent = error.message === "cms_publication_busy"
-            ? "別の公開処理が進行中です。完了後にもう一度お試しください。"
-            : error.message === "cms_draft_already_applied"
-              ? "この下書きには公開済みの新規登録が含まれます。保存済みの内容を確認し、登録済みのレコードを開いて変更を再適用してください。"
-              : "公開を開始できませんでした。下書きを確認してください。";
+          status.textContent = error.message === "cms_draft_already_applied"
+            ? "発行済みレコードに紐づけてから変更を確認してください。"
+            : "変更を確認できませんでした。最新の下書きと担当範囲を確認してください。";
         } finally {
           publish.disabled = false;
         }
       });
-      draftsArea.append(el("p", "公開する下書きを選んでください。"), publish);
+      draftsArea.append(el("p", "公開する下書きを選んでください。"), publish, reviewArea);
     }
     if (!saved.drafts.length) draftsArea.append(el("p", "保存済みの下書きはありません。"));
     for (const { draftId, input, conflict, reapplyJobId } of saved.drafts) {

@@ -339,7 +339,9 @@ function showAuthRecovery() {
     } finally { retry.disabled = false; }
   });
   panel.append(title, message, login, retry);
-  $("#workspace-bar").after(panel);
+  // The legacy workspace bar is created only for GitHub owners.
+  // Mount outside #view so both providers retain their editor and recovery state.
+  $("#view").before(panel);
   panel.scrollIntoView({ block: "nearest" });
 }
 export const showStatus = (value) => {

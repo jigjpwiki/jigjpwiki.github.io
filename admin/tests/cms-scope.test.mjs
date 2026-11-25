@@ -38,3 +38,22 @@ test("viewers cannot edit, and editors cannot claim new talent affiliations", ()
   assert.throws(() => normalizeScope({ organizations: ["*"] }), /invalid_member_scope/);
   assert.equal(cmsPermissions(baseline, { role: "editor" }).canRead("event", event), false);
 });
+
+test("explicit all-content grant covers future organizations without granting system ownership", async () => {
+  const { allContentPolicy, normalizeMemberPolicy } = await import("../src/cms-scope.mjs");
+  const editor = { role: "editor", contentPolicy: allContentPolicy, directPublish: true };
+  const access = cmsPermissions(baseline, editor);
+  const future = { ...event, relatedOrganizationIds: ["org-999999"] };
+  assert.equal(access.canRead("event", future), true);
+  assert.doesNotThrow(() => access.assertChange("event", event, future, { publish: true }));
+  assert.equal(editor.owner, undefined);
+  const viewer = cmsPermissions(baseline, { ...editor, role: "viewer" });
+  assert.equal(viewer.canRead("event", future), true);
+  assert.throws(() => viewer.assertChange("event", event, future), /cms_scope_denied/);
+  assert.equal(normalizeMemberPolicy({}, undefined), allContentPolicy);
+  assert.equal(normalizeMemberPolicy({}, member), "scoped-v1");
+  assert.throws(() => normalizeMemberPolicy({ contentPolicy: allContentPolicy }, member),
+    /content_policy_confirmation_required/);
+  assert.equal(normalizeMemberPolicy({ contentPolicy: allContentPolicy, confirmPolicyMigration: true }, member), allContentPolicy);
+  assert.deepEqual(member.scope.organizations, ["org-000001"]);
+});

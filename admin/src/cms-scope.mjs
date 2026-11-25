@@ -9,6 +9,23 @@ const types = {
 };
 const categories = new Set(["talents", ...Object.values(contentTypes).map((type) => type.category)]);
 
+export const allContentPolicy = "all-content-v1";
+export function hasAllContent(member) {
+  return member?.contentPolicy === allContentPolicy;
+}
+
+export function normalizeMemberPolicy(input, previous) {
+  const policy = input.contentPolicy ?? previous?.contentPolicy ?? (previous ? "scoped-v1" : allContentPolicy);
+  if (!["scoped-v1", allContentPolicy].includes(policy)) fail(400, "invalid_content_policy");
+  if (previous && !hasAllContent(previous) && policy === allContentPolicy &&
+      input.confirmPolicyMigration !== true) fail(409, "content_policy_confirmation_required");
+  return policy;
+}
+
+export function contentCategories(member) {
+  return hasAllContent(member) ? [...categories] : normalizeScope(member.scope).categories;
+}
+
 export function normalizeScope(input = {}) {
   if (!input || typeof input !== "object" || Array.isArray(input))
     fail(400, "invalid_member_scope");
@@ -103,7 +120,9 @@ export function cmsPermissions(models, member) {
   }
 
   function canRead(entity, row) {
-    if (!row || !scope.categories.includes(types[entity]?.category)) return false;
+    if (!row || !types[entity]) return false;
+    if (hasAllContent(member)) return true;
+    if (!scope.categories.includes(types[entity]?.category)) return false;
     if (member.owner === true) return (row.visibility ?? "public") === "public";
     if (entity === "song") return row.visibility === "public" && canEditSong(models, { canRead }, row.id);
     const result = resolve(entity, row, new Set());
@@ -114,7 +133,7 @@ export function cmsPermissions(models, member) {
     if (member.role !== "editor" || (publish && member.directPublish !== true) ||
         !after || (before && !canRead(entity, before)) || !canRead(entity, after))
       fail(403, "cms_scope_denied");
-    if (member.owner === true) return;
+    if (member.owner === true || hasAllContent(member)) return;
     if (entity === "talent") {
       if (!before && (after.affiliations.length !== 1 ||
           after.affiliations[0].status !== "current" ||
@@ -141,7 +160,7 @@ export function cmsPermissions(models, member) {
     }
   }
 
-  return { canRead, assertChange };
+  return { canRead, assertChange, allContent: hasAllContent(member) };
 }
 
 export function scopedCatalog(models, member) {
@@ -158,7 +177,7 @@ export function scopedCatalog(models, member) {
         description: typeof row.description === "string" ? row.description : "",
       })),
     };
-  }).filter(({ category }) => member.scope?.categories.includes(category));
+  }).filter(({ category }) => contentCategories(member).includes(category));
 }
 
 // The new offer itself must not establish the editor's right to attach it.

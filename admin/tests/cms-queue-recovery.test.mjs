@@ -10,6 +10,7 @@ function harness() {
     env: { SESSION_KEY: b64(new Uint8Array(32)) },
     store: {
       get: async (key) => rows.get(key),
+      delete: async (key) => rows.delete(key),
       put: async (key, value) => {
         if (faults.rejectIndex && key === "cms-publication:editor") throw Error("interrupted index write");
         rows.set(key, value);
@@ -118,4 +119,26 @@ test("manual reconciliation only accepts positive main and Pages evidence for th
   deployed = head;
   assert.equal((await jobs.reconcile({ id: "editor" }, job.id)).phase, "published");
   assert.equal((await jobs.status(job.owner)).phase, "published");
+});
+
+test("retained draft keeps its confirmed job after newer publications and removes it after recovery", async () => {
+  const { admin } = harness();
+  const jobs = new CmsJobs(admin);
+  const product = { key: "cms-product", entity: "product", baseCommit: "main", before: null, value: { title: "元の商品" } };
+  const saved = await jobs.workspace.save("editor", { protocol: 1, revision: 0, operations: [product] });
+  const first = { id: "first", owner: "editor", phase: "published", mainConfirmed: true,
+    commit: "a".repeat(40), operations: saved.operations, createdRecords: [{ key: "cms-product", entity: "product", id: "product-000001" }] };
+  await jobs.report(first);
+  await jobs.workspace.save("editor", { protocol: 1, revision: saved.revision,
+    operations: [{ ...product, value: { title: "公開中の修正" } }] });
+  await jobs.clearAppliedDrafts(first);
+  await jobs.report({ id: "later", owner: "editor", phase: "published", mainConfirmed: true, commit: "b".repeat(40), operations: [] });
+  const restarted = new CmsJobs(admin);
+  const workspace = await restarted.workspace.get("editor");
+  assert.deepEqual(await restarted.retainedDraftJobs("editor", workspace), { "legacy-product": "first" });
+  assert.equal((await restarted.confirmedJob("editor", "first")).commit, first.commit);
+  assert.equal(await restarted.confirmedJob("other", "first"), null);
+  await restarted.markRecovered("editor", workspace.workspaceId, "legacy-product");
+  assert.deepEqual(await restarted.retainedDraftJobs("editor", workspace), {});
+  assert.equal(await restarted.confirmedJob("editor", "first"), null);
 });

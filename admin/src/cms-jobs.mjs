@@ -13,6 +13,8 @@ import { draftGroups } from "./cms-draft.mjs";
 const activeKey = "cms-publication-active";
 const queueKey = "cms-publication-queue";
 const replayKey = (owner) => "cms-publication-replay:" + owner;
+const retainedJobKey = (owner, id) => "cms-publication-retained:" + owner + ":" + id;
+const validJobId = (id) => typeof id === "string" && /^[\w-]{1,64}$/.test(id);
 const interval = 60_000;
 const lifetime = 86400_000;
 const terminal = new Set(["published", "failed", "unconfirmed"]);
@@ -121,13 +123,24 @@ export class CmsJobs {
   }
 
   async confirmedJob(owner, jobId) {
-    if (typeof jobId !== "string" || !jobId) return null;
+    if (!validJobId(jobId)) return null;
     const active = await this.get(activeKey);
-    const job = active?.owner === owner && active.id === jobId ? active
+    const indexed = active?.owner === owner && active.id === jobId ? active
       : await this.get("cms-publication:" + owner);
+    const job = indexed?.id === jobId ? indexed : await this.get(retainedJobKey(owner, jobId));
     if (job?.owner !== owner || job.id !== jobId || !job.mainConfirmed ||
         !/^[0-9a-f]{40}$/.test(job.commit ?? "")) return null;
     return job;
+  }
+
+  async retainedDraftJobs(owner, workspace) {
+    if (!workspace) return {};
+    const guards = await this.get(replayKey(owner));
+    if (guards?.workspaceId !== workspace.workspaceId) return {};
+    const groups = draftGroups(workspace.operations);
+    return Object.fromEntries(Object.entries(guards.jobIds ?? {}).filter(([draftId, id]) =>
+      validJobId(id) && guards.draftIds.includes(draftId) &&
+      groups.get(draftId)?.some((op) => !op.id && guards.keys?.[draftId]?.includes(op.key))));
   }
 
   // The caller has saved the replacement using the workspace revision in the same lock.
@@ -135,10 +148,15 @@ export class CmsJobs {
     const key = replayKey(owner);
     const guards = await this.get(key);
     if (guards?.workspaceId !== workspaceId || !guards.draftIds.includes(draftId)) return;
+    const jobIds = Object.fromEntries(Object.entries(guards.jobIds ?? {}).filter(([id]) => id !== draftId));
     await this.store.put(key, await seal({
       workspaceId, draftIds: guards.draftIds.filter((id) => id !== draftId),
       keys: Object.fromEntries(Object.entries(guards.keys ?? {}).filter(([id]) => id !== draftId)),
+      jobIds,
     }, this.env.SESSION_KEY), Number.MAX_SAFE_INTEGER);
+    const oldJobId = guards.jobIds?.[draftId];
+    if (validJobId(oldJobId) && !Object.values(jobIds).includes(oldJobId))
+      await this.store.delete?.(retainedJobKey(owner, oldJobId));
   }
 
   async reconcile(session, id) {
@@ -179,8 +197,8 @@ export class CmsJobs {
     return this.admin.atomic(async () => {
       const current = await getJob();
       if (current?.phase !== "unconfirmed" || current.commit !== job.commit) return this.summary(current);
-      await this.clearAppliedDraftsLocked(current);
       current.mainConfirmed = true;
+      await this.clearAppliedDraftsLocked(current);
       if (deployed) {
         current.phase = "published";
         delete current.error;
@@ -259,6 +277,8 @@ export class CmsJobs {
     const sameWorkspace = guards?.workspaceId === current.workspaceId;
     const blocked = new Set(sameWorkspace ? guards.draftIds.filter((id) => currentGroups.has(id)) : []);
     const keys = new Map(sameWorkspace ? Object.entries(guards.keys ?? {}) : []);
+    const jobIds = new Map(sameWorkspace ? Object.entries(guards.jobIds ?? {}) : []);
+    let retainThisJob = false;
     for (const [id, selected] of draftGroups(job.operations)) {
       const group = currentGroups.get(id);
       // In-flight edits can introduce or change sibling operations. Preserve
@@ -272,15 +292,33 @@ export class CmsJobs {
         blocked.add(id);
         keys.set(id, [...new Set([...(keys.get(id) ?? []),
           ...selected.filter((op) => !op.id).map((op) => op.key)])]);
+        // Only archive a positively confirmed commit. Preserve older guards if
+        // their original job could not be reconstructed.
+        if (job.mainConfirmed === true && validJobId(job.id) &&
+            /^[0-9a-f]{40}$/.test(job.commit ?? "") && job.createdRecords?.length) {
+          jobIds.set(id, job.id);
+          retainThisJob = true;
+        }
       }
     }
-    if (blocked.size) {
+    const retainedIds = Object.fromEntries([...jobIds].filter(([id]) => blocked.has(id)));
+    if (retainThisJob) {
+      // Archive before the guard points at it. Retention follows the workspace
+      // rather than the latest publication status, which can be overwritten.
+      await this.store.put(retainedJobKey(job.owner, job.id), await seal(job, this.env.SESSION_KEY), Number.MAX_SAFE_INTEGER);
+    }
+    if (blocked.size || guards) {
       // Workspace expiry extends on every save. Bind guards to its immutable
       // ID and retain them across later publications and idle intervals.
       await this.store.put(replayKey(job.owner), await seal({
         workspaceId: current.workspaceId, draftIds: [...blocked],
         keys: Object.fromEntries([...keys].filter(([id]) => blocked.has(id))),
+        jobIds: retainedIds,
       }, this.env.SESSION_KEY), Number.MAX_SAFE_INTEGER);
+      for (const oldId of new Set(Object.values(guards?.jobIds ?? {}))) {
+        if (validJobId(oldId) && !Object.values(retainedIds).includes(oldId))
+          await this.store.delete?.(retainedJobKey(job.owner, oldId));
+      }
     }
     const operations = current.operations.filter((op) => !remove.has(op.key));
     if (operations.length === current.operations.length) return;

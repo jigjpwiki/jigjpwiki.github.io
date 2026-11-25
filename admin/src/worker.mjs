@@ -441,13 +441,14 @@ export class Admin {
         const workspace = new WorkspaceStore(this.store, this.env.SESSION_KEY);
         if (request.method === "GET") {
           const saved = await workspace.get(session.id);
-          const publication = google && saved?.operations.length
-            ? await new CmsJobs(this).status(session.id) : null;
+          const jobs = google ? new CmsJobs(this) : null;
+          const publication = jobs && saved?.operations.length ? await jobs.status(session.id) : null;
+          const retained = jobs ? await jobs.retainedDraftJobs(session.id, saved) : {};
           const assignedKeys = new Set(publication?.createdRecords?.map(({ key }) => key));
           const drafts = [];
           for (const [draftId, group] of draftGroups(saved?.operations)) {
-            const reapplyJobId = group.some((row) => !row.id && assignedKeys.has(row.key))
-              ? publication.id : undefined;
+            const reapplyJobId = retained[draftId] || (group.some((row) => !row.id && assignedKeys.has(row.key))
+              ? publication.id : undefined);
             const input = draftInput({ operations: group });
             if (!input) continue;
             try {
@@ -470,6 +471,7 @@ export class Admin {
             const previous = await workspace.get(session.id);
             const { operations } = writeDraft(previous?.operations || [], input.draftId);
             const saved = await workspace.save(session.id, { protocol: 1, revision: input.revision, operations });
+            if (google && previous) await new CmsJobs(this).markRecovered(session.id, previous.workspaceId, input.draftId);
             return json({ revision: saved.revision });
           });
         }

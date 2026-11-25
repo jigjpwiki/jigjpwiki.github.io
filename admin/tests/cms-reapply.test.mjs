@@ -48,6 +48,14 @@ for (const overlapping of [false, true]) {
     const changed = operations.map((op) => ({ ...op, value: { ...op.value, title: "公開中に修正した名前" } }));
     const saved = await workspace.save(id, { protocol: 1, revision: 0, operations: changed });
     await jobs.clearAppliedDrafts(job);
+    // A later publication must not remove the old draft's recovery route.
+    await jobs.report({ id: "later-job", owner: id, phase: "published", mainConfirmed: true,
+      commit: "d".repeat(40), operations: [] });
+    const draftList = await admin.fetch(new Request(origin + "/api/cms/draft", {
+      headers: { Cookie: "__Host-admin-session=" + sid },
+    }));
+    assert.equal(draftList.status, 200, await draftList.clone().text());
+    assert.equal((await draftList.json()).drafts.find((row) => row.draftId === draftId).reapplyJobId, job.id);
     const reapply = (revision) => admin.fetch(new Request(origin + "/api/cms/publication/reapply", {
       method: "POST",
       headers: { Cookie: "__Host-admin-session=" + sid, Origin: origin, "X-CSRF-Token": csrf,

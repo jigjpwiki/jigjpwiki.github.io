@@ -85,6 +85,11 @@ export class Admin {
           sql.exec("DELETE FROM entries WHERE key=?", key);
         },
         members: async () => [...sql.exec("SELECT value FROM entries WHERE key GLOB 'member:*' ORDER BY key LIMIT 100")].map((row) => JSON.parse(row.value)),
+        // All ciphertext is prepared before entering this synchronous transaction.
+        putMemberBatch: async (updates) => state.storage.transactionSync(() => {
+          for (const { key, value } of updates)
+            sql.exec("UPDATE entries SET value=? WHERE key=?", JSON.stringify(value), key);
+        }),
         clean: async () =>
           sql.exec("DELETE FROM entries WHERE expires<?", Date.now()),
       };
@@ -505,6 +510,40 @@ export class Admin {
         return { email, id, role, disabled, contentPolicy: contentPolicy || "scoped-v1", accepted: Boolean(sub), expires, scope: normalizeScope(scope), directPublish: directPublish === true };
       }));
       return json({ members });
+    }
+    if (url.pathname === "/api/members/migrate" && request.method === "POST") {
+      const input = await body(request, 12000);
+      if (input?.confirmPolicyMigration !== true || !Array.isArray(input.members) ||
+          input.members.length > 100 || input.members.some((row) =>
+            typeof row?.id !== "string" || row.id.length > 128 || !["editor", "viewer"].includes(row.role)))
+        fail(400, "invalid_member_migration");
+      return this.atomic(async () => {
+        if (!(await this.store.get("session:" + sid)) || session.expires <= Date.now())
+          fail(401, "login_required");
+        const members = await Promise.all((await this.store.members()).map((value) => open(value, this.env.SESSION_KEY)));
+        // Disabled users and expired, unclaimed invitations must not acquire new rights.
+        const eligible = members.filter((member) => !hasAllContent(member) && !member.disabled &&
+          (member.sub || member.expires > Date.now()) && ["editor", "viewer"].includes(member.role));
+        const roster = (rows) => rows.map(({ id, role }) => id + ":" + role).sort();
+        if (JSON.stringify(roster(eligible)) !== JSON.stringify(roster(input.members)))
+          fail(409, "member_migration_roster_changed");
+        const ids = new Set(eligible.map((member) => member.id));
+        const jobs = new CmsJobs(this);
+        const active = await jobs.get("cms-publication-active");
+        const queue = await jobs.get("cms-publication-queue") || [];
+        if ([active, ...queue].some((job) => job && ids.has(job.owner) && !["published", "failed", "unconfirmed"].includes(job.phase)))
+          fail(409, "cms_publication_busy");
+        const updates = await Promise.all(eligible.map(async (member) => {
+          if (typeof member.email !== "string") fail(409, "invalid_member_migration");
+          return { key: await emailKey(member.email), value: await seal({
+            ...member, contentPolicy: "all-content-v1",
+            directPublish: member.role === "editor", revision: random(),
+          }, this.env.SESSION_KEY) };
+        }));
+        if (this.store.putMemberBatch) await this.store.putMemberBatch(updates);
+        else for (const update of updates) await this.store.put(update.key, update.value, Number.MAX_SAFE_INTEGER);
+        return json({ migrated: updates.length });
+      });
     }
     if (url.pathname === "/api/members" && request.method === "POST") {
       const input = await body(request, 4096);

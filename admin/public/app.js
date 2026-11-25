@@ -1653,6 +1653,7 @@ async function memberSettings() {
   const resetInvitation = () => {
     selectedMember = null;
     email.value = "";
+    email.readOnly = false;
     role.value = "editor";
     disabled.checked = false;
     migration.checked = false;
@@ -1667,9 +1668,38 @@ async function memberSettings() {
   const list = node("ul");
   form.append(emailLabel, roleLabel, disabledLabel, migrationLabel, legacyOptions, submit, reset);
   submit.disabled = true;
-  panel.append(form, status, list);
+  const bulk = node("button", "既存ユーザーを共通権限へ移行");
+  bulk.type = "button";
+  bulk.className = "primary";
+  bulk.hidden = true;
+  panel.append(form, bulk, status, list);
   async function refresh() {
     const { members } = await api("/api/members");
+    const eligible = members.filter((member) => member.contentPolicy !== "all-content-v1" &&
+      !member.disabled && (member.accepted || member.expires > Date.now()));
+    bulk.hidden = eligible.length === 0;
+    bulk.textContent = "既存ユーザー " + eligible.length + " 人を共通権限へ移行";
+    bulk.onclick = async () => {
+      const editors = eligible.filter((member) => member.role === "editor").length;
+      const viewers = eligible.length - editors;
+      if (!confirm("編集者 " + editors + " 人に全コンテンツの編集・直接公開権限を付与し、閲覧者 " + viewers +
+        " 人に全コンテンツの閲覧を許可します。無効・期限切れの招待は対象外です。既存の担当範囲は保持し、対象のログインセッションは失効します。続けますか？")) return;
+      bulk.disabled = true;
+      try {
+        const result = await api("/api/members/migrate", "POST", {
+          confirmPolicyMigration: true,
+          members: eligible.map(({ id, role }) => ({ id, role })),
+        });
+        status.textContent = result.migrated + " 人を共通権限へ移行しました。";
+        await refresh();
+        resetInvitation();
+      } catch (error) {
+        status.textContent = error.message === "cms_publication_busy"
+          ? "公開処理中のユーザーがいます。完了後に移行してください。"
+          : "移行できませんでした。最新のユーザー一覧を確認してください。";
+        await refresh().catch(() => {});
+      } finally { bulk.disabled = false; }
+    };
     list.replaceChildren(...members.map((member) => {
       const row = node("li");
       const state = member.disabled ? "無効" : member.accepted ? "登録済み" :
@@ -1683,13 +1713,15 @@ async function memberSettings() {
         migrationLabel.hidden = !legacy;
         legacyOptions.hidden = !legacy;
         email.value = member.email || "";
+        email.readOnly = true;
         role.value = member.role;
         disabled.checked = member.disabled;
         directPublish.checked = member.directPublish;
         for (const [key, control] of Object.entries(scopeControls)) control.fill(member.scope?.[key]);
         email.focus();
       };
-      row.append(edit, node("span", " " + state + "・" + (member.role === "editor" ? "編集者" : "閲覧者")));
+      row.append(edit, node("span", " " + state + "・" + (member.role === "editor" ? "編集者" : "閲覧者") +
+        "・" + (member.contentPolicy === "all-content-v1" ? "全コンテンツ" : "旧担当範囲")));
       return row;
     }));
   }

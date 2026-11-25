@@ -8,7 +8,7 @@ import { installationReadToken, publishingEnabled } from "./github-app.mjs";
 import { prepareDraft, draftDetails, draftInput, draftGroups, writeDraft, draftConflict } from "./cms-draft.mjs";
 import { cmsPermissions } from "./cms-scope.mjs";
 import { createCmsReader } from "./cms-read.mjs";
-import { normalizeScope, scopedCatalog } from "./cms-scope.mjs";
+import { normalizeScope, scopedCatalog, normalizeMemberPolicy, contentCategories, hasAllContent } from "./cms-scope.mjs";
 import { googleAuth, googleEnabled, emailKey } from "./google.mjs";
 import {
   Failure,
@@ -296,13 +296,13 @@ export class Admin {
           ...member.scope, categories: ["talents"],
         } });
         return json({
-          sha: snapshot.sha, sections: scopedCatalog(models, member), owner: member.owner === true,
-          songs: member.scope?.categories.includes("music")
+          sha: snapshot.sha, sections: scopedCatalog(models, member), contentPolicy: member.contentPolicy || "scoped-v1", owner: member.owner === true,
+          songs: contentCategories(member).includes("music")
             ? models.music.songs.filter((song) => song.visibility === "public")
               .map(({ id, title, originalArtists }) => ({ id, name: title + (originalArtists?.length ? " / " + originalArtists.join("、") : "") }))
             : [],
-          editable: member.role === "editor", publicationTracking: google, publishable: member.role === "editor" && member.directPublish === true && publishingEnabled(this.env), categories: member.scope?.categories ?? [],
-          organizations: models.talents.organizations.filter((row) => member.scope?.organizations.includes(row.id)),
+          editable: member.role === "editor", publicationTracking: google, publishable: member.role === "editor" && member.directPublish === true && publishingEnabled(this.env), categories: contentCategories(member),
+          organizations: models.talents.organizations.filter((row) => hasAllContent(member) || member.scope?.organizations.includes(row.id)),
           people: models.talents.talents.filter((row) => access.canRead("talent", row))
             .map((row) => ({ id: row.id, name: row.displayName })),
         });
@@ -494,8 +494,8 @@ export class Admin {
     if (url.pathname === "/api/members" && request.method === "GET") {
       const entries = await this.store.members();
       const members = await Promise.all(entries.map(async (entry) => {
-        const { email, id, role, disabled, sub, expires, scope, directPublish } = await open(entry, this.env.SESSION_KEY);
-        return { email, id, role, disabled, accepted: Boolean(sub), expires, scope: normalizeScope(scope), directPublish: directPublish === true };
+        const { email, id, role, disabled, sub, expires, scope, directPublish, contentPolicy } = await open(entry, this.env.SESSION_KEY);
+        return { email, id, role, disabled, contentPolicy: contentPolicy || "scoped-v1", accepted: Boolean(sub), expires, scope: normalizeScope(scope), directPublish: directPublish === true };
       }));
       return json({ members });
     }
@@ -519,13 +519,15 @@ export class Admin {
         const entry = await this.store.get(key);
         const previous = entry && await open(entry, this.env.SESSION_KEY);
         if (!previous && (await this.store.members()).length >= 100) fail(409, "member_limit");
+        const contentPolicy = normalizeMemberPolicy(input, previous);
         const member = {
           email: input.email.toLowerCase(),
+          contentPolicy,
           id: previous?.id || crypto.randomUUID(),
           sub: previous?.sub || null,
           role: input.role,
-          scope,
-          directPublish: input.role === "editor" && input.directPublish === true,
+          scope: input.scope === undefined && previous ? normalizeScope(previous.scope) : scope,
+          directPublish: input.role === "editor" && (contentPolicy === "all-content-v1" || input.directPublish === true),
           disabled: input.disabled,
           revision: random(),
           expires: now + 7 * 86400_000,

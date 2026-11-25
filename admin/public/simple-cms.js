@@ -2,6 +2,10 @@ import { mountCmsHistory } from "./cms-history.js";
 import { renderDraftConflicts } from "./cms-conflicts.js";
 
 const labels = {
+  name: ["名称", "text"], status: ["販売状態", "select"], periodNote: ["販売条件・補足", "textarea"],
+  currency: ["通貨", "text"], rawLabel: ["曲名・表示名", "text"],
+  order: ["曲順", "number"], startsAtSeconds: ["開始秒（任意）", "number"],
+  endsAtSeconds: ["終了秒（任意）", "number"], verification: ["確認状態", "select"],
   artists: ["原曲アーティスト（1行に1名）", "textarea"],
   aliases: ["曲の別名（1行に1件）", "textarea"], readings: ["曲名の読み（1行に1件）", "textarea"],
   songIdentityUrl: ["楽曲の公式情報URL", "url"],
@@ -17,6 +21,10 @@ const labels = {
   identityUrl: ["公式商品情報URL", "url"], url: ["販売ページURL", "url"], price: ["価格（円）", "number"],
 };
 const categories = {
+  organization: { category: "organizations", label: "事務所", fields: ["name"] },
+  group: { category: "organizations", label: "グループ", fields: ["name"] },
+  offer: { category: "goods", label: "販売情報", fields: ["url", "price", "currency", "startsAt", "endsAt", "status", "periodNote"] },
+  performance: { category: "music", label: "歌唱記録", fields: ["rawLabel", "order", "startsAtSeconds", "endsAtSeconds", "verification"] },
   video: { category: "music", label: "動画情報", fields: ["videoUrl"] },
   karaoke: { category: "music", label: "歌枠", fields: ["videoUrl"] },
   song: { category: "music", label: "楽曲", fields: ["title", "artists", "aliases", "readings"], ownerCreate: true },
@@ -91,6 +99,10 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
     publication = value;
     reconcileButton.hidden = publication?.phase !== "unconfirmed" || !publication.commit;
     const labels = {
+  name: ["名称", "text"], status: ["販売状態", "select"], periodNote: ["販売条件・補足", "textarea"],
+  currency: ["通貨", "text"], rawLabel: ["曲名・表示名", "text"],
+  order: ["曲順", "number"], startsAtSeconds: ["開始秒（任意）", "number"],
+  endsAtSeconds: ["終了秒（任意）", "number"], verification: ["確認状態", "select"],
       queued: "公開の順番待ち", candidate: "変更候補を作成中",
       checking: "検証中", promoting: "反映中", pages: "公開サイトへの反映待ち",
       published: "公開サイトへの反映を確認しました", failed: "公開できませんでした。下書きは保存されています。",
@@ -277,12 +289,12 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
 
       const [label, type] = labels[key];
       const control = el(["textarea", "select"].includes(type) ? type : "input");
-      if (type === "select") control.append(...Object.entries(key === "videoKind" ? { cover: "歌ってみた", original: "オリジナル", other: "その他" } : key === "activity" ? { unknown: "不明", active: "活動中", hiatus: "休止中", retired: "引退", ended: "活動終了" } : key === "kind" ? { birthday: "誕生日", debut: "デビュー記念日", group: "グループ記念日", other: "その他" } : {
+      if (type === "select") control.append(...Object.entries(key === "status" ? { unknown: "不明", available: "販売中", planned: "販売予定", ended: "販売終了", sold_out: "売り切れ" } : key === "verification" ? { unreviewed: "未確認", verified: "確認済み", rejected: "対象外" } : key === "videoKind" ? { cover: "歌ってみた", original: "オリジナル", other: "その他" } : key === "activity" ? { unknown: "不明", active: "活動中", hiatus: "休止中", retired: "引退", ended: "活動終了" } : key === "kind" ? { birthday: "誕生日", debut: "デビュー記念日", group: "グループ記念日", other: "その他" } : {
         unknown: "未定・不明", onsite: "会場開催", online: "オンライン", hybrid: "会場とオンライン",
       }).map(([value, text]) => new Option(text, value)));
       else if (type !== "textarea") control.type = type;
       if (entity === "video" && input.id && key === "videoUrl") control.readOnly = true;
-      control.required = ["month", "day"].includes(key) || ["title", "displayName", "rawSongTitle", "videoUrl", "videoKind"].includes(key) || key === "announcementUrl" || key === "summary" || key === "identityUrl" || key === "songIdentityUrl";
+      control.required = ["month", "day"].includes(key) || ["name", "title", "displayName", "rawSongTitle", "rawLabel", "videoUrl", "videoKind"].includes(key) || key === "announcementUrl" || key === "summary" || key === "identityUrl" || key === "songIdentityUrl";
       if (key === "price") {
         control.min = "0";
         control.step = input.currency && input.currency !== "JPY" ? "any" : "1";
@@ -293,7 +305,7 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
       }
       add(key, key === "fee" ? "料金（" + (input.feeCurrency || "JPY") + "）" : key === "price" && input.currency ? "価格（" + input.currency + "）" : label, control);
     }
-    if ((!input.id && !["campaign", "song", "video"].includes(entity)) || entity === "talent") {
+    if ((!input.id && !["campaign", "song", "video", "organization", "group", "offer", "performance"].includes(entity)) || entity === "talent") {
       const key = ["talent", "event"].includes(entity) ? "organization" : "talent";
       const choices = key === "organization" ? catalog.organizations : catalog.people;
       const search = el("input");
@@ -312,6 +324,30 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
       fill();
       add(key, key === "organization" ? "関連事務所" : "関連する人物", select);
       search.oninput = () => fill(search.value, select.value);
+    }
+    for (const [key, label, choices, required] of entity === "group"
+      ? [["organizationId", "関連事務所", catalog.organizations, false]]
+      : entity === "offer"
+        ? [["productId", "商品", catalog.sections.find((row) => row.entity === "product")?.items, true],
+          ["campaignId", "キャンペーン", catalog.sections.find((row) => row.entity === "campaign")?.items, false]]
+        : entity === "performance"
+          ? [["karaokeId", "歌枠", catalog.sections.find((row) => row.entity === "karaoke")?.items, true],
+            ["songId", "楽曲", catalog.songs, false]] : []) {
+      const search = el("input");
+      search.type = "search";
+      search.setAttribute("aria-label", label + "を検索");
+      const select = el("select");
+      select.required = required;
+      const fill = (query = "", selected = input[key]) => {
+        select.replaceChildren(new Option("選択してください", ""), ...(choices || [])
+          .filter((row) => (row.name || row.title).includes(query) || row.id === selected)
+          .map((row) => new Option(row.name || row.title, row.id)));
+        select.value = selected || "";
+      };
+      fill();
+      search.oninput = () => fill(search.value, select.value);
+      form.append(search);
+      add(key, label, select);
     }
     if (entity === "product" && !input.id) {
       const campaigns = catalog.sections.find(({ entity }) => entity === "campaign")?.items || [];

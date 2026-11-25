@@ -2,12 +2,13 @@ import { videoForCms, assertSongEdit, assertVideoEdit, newSongOperation, newSong
 import { youtubeId } from "../public/content-utils.js";
 import { planSubmission, recordAt } from "./submission-plan.mjs";
 import { contentPreview, resolveRefs } from "./content-plan.mjs";
-import { cmsPermissions, assertExistingCampaign } from "./cms-scope.mjs";
+import { cmsPermissions, assertExistingCampaign, hasAllContent } from "./cms-scope.mjs";
 import { fail, hash } from "./security.mjs";
 
-export const draftTypes = { video: ["media", "videos"], karaoke: ["karaoke", "karaokes"], song: ["music", "songs"], musicVideo: ["music", "musicVideos"], talent: ["talents", "talents"], event: ["events", "events"], product: ["goods", "products"], anniversary: ["anniversaries", "events"], campaign: ["goods", "campaigns"] };
+export const draftTypes = { organization: ["talents", "organizations"], group: ["catalog", "groups"], offer: ["goods", "offers"], performance: ["karaoke", "performances"], video: ["media", "videos"], karaoke: ["karaoke", "karaokes"], song: ["music", "songs"], musicVideo: ["music", "musicVideos"], talent: ["talents", "talents"], event: ["events", "events"], product: ["goods", "products"], anniversary: ["anniversaries", "events"], campaign: ["goods", "campaigns"] };
 const unknown = { precision: "unknown", value: null };
 const fields = {
+  organization: ["name"], group: ["name"], offer: ["url", "status", "periodNote"], performance: ["rawLabel", "verification"],
   video: ["title"],
   karaoke: [],
   song: ["title"],
@@ -26,6 +27,55 @@ export async function prepareDraft(snapshot, member, input, lookup) {
   const before = id ? recordAt(snapshot.models, { entity, id }) : null;
   const access = cmsPermissions(snapshot.models, member);
   if (id && !access.canRead(entity, before)) fail(403, "cms_scope_denied");
+  if (["organization", "group", "offer", "performance"].includes(entity)) {
+    let value = structuredClone(before);
+    if (entity === "organization") value = { ...(before || {}), name: input.name };
+    if (entity === "group") value = {
+      ...(before || { visibility: "public", membersComplete: false }),
+      name: input.name, organizationId: input.organizationId || null,
+      talentIds: input.talentIds ?? before?.talentIds ?? [],
+    };
+    if (entity === "offer") {
+      if (!input.productId || typeof input.price !== "string" ||
+          (input.price && !/^\d+(?:\.\d+)?$/.test(input.price))) fail(400, "cms_invalid_input");
+      const product = snapshot.models.goods.products.find((row) => row.id === input.productId);
+      if (!access.canRead("product", product)) fail(403, "cms_scope_denied");
+      assertExistingCampaign(snapshot.models, access, input.campaignId || null);
+      value = { ...(before || { visibility: "public", startsAt: null, endsAt: null }),
+        productId: input.productId, campaignId: input.campaignId || null,
+        url: input.url, status: input.status || "unknown", periodNote: input.periodNote || null,
+        price: { amount: input.price ? Number(input.price) : null,
+          currency: input.price ? input.currency || before?.price.currency || "JPY" : null } };
+      for (const field of ["startsAt", "endsAt"]) {
+        if (input[field] === undefined || input[field] === localInstant(before?.[field])) continue;
+        if (input[field] && !/^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}$/.test(input[field])) fail(400, "cms_invalid_input");
+        const time = Date.parse(input[field] + ":00+09:00");
+        if (input[field] && (!Number.isFinite(time) || localInstant(time) !== input[field])) fail(400, "cms_invalid_input");
+        value[field] = input[field] ? new Date(time).toISOString() : null;
+      }
+    }
+    if (entity === "performance") {
+      const karaoke = snapshot.models.karaoke.karaokes.find((row) => row.id === input.karaokeId);
+      if (!access.canRead("karaoke", karaoke)) fail(403, "cms_scope_denied");
+      value = { ...(before || { visibility: "public", note: null }), karaokeId: input.karaokeId,
+        songId: input.songId || null, rawLabel: input.rawLabel,
+        verification: input.verification || "unreviewed",
+        talentIds: input.talentIds ?? before?.talentIds ?? karaoke.talentIds };
+      for (const field of ["order", "startsAtSeconds", "endsAtSeconds"]) {
+        if (input[field] === undefined && before) continue;
+        if (input[field] && !/^\d+$/.test(String(input[field]))) fail(400, "cms_invalid_input");
+        value[field] = input[field] === "" || input[field] == null ? null : Number(input[field]);
+      }
+    }
+    access.assertChange(entity, before, value);
+    const operation = { key: "cms-" + entity.toLowerCase(), entity, ...(id ? { id } : {}),
+      value, before, baseCommit: snapshot.sha };
+    const plan = await planSubmission(snapshot, [operation], { actor: "0", batchId: await hash(operation) });
+    const models = { ...snapshot.models, ...plan.files };
+    const after = cmsPermissions(models, member);
+    for (const row of plan.impact.records) after.assertChange(row.entity, row.before, row.value);
+    return [operation];
+  }
   if (entity === "video") {
     let videoId;
     try { videoId = youtubeId(input.videoUrl); }
@@ -103,7 +153,7 @@ export async function prepareDraft(snapshot, member, input, lookup) {
     for (const row of plan.impact.records) after.assertChange(entity, row.before, row.value);
     return [operation];
   }
-  if (entity === "song" && !before && !member.owner) fail(403, "cms_scope_denied");
+  if (entity === "song" && !before && !(member.owner || hasAllContent(member))) fail(403, "cms_scope_denied");
   const value = structuredClone(before || (entity === "event" ? {
     type: "other", timing: "unknown", starts: unknown, ends: unknown,
     organizerIds: [], relatedOrganizationIds: [input.organization],
@@ -291,7 +341,7 @@ export async function prepareDraft(snapshot, member, input, lookup) {
       const next = cmsPermissions(afterModels, member);
       for (const { op, old, record } of changes) {
         if (old && !previous.canRead(op.entity, old)) fail(403, "cms_scope_denied");
-        if (op.entity === "song" && !member.owner) assertSongEdit(afterModels, next, record.id);
+        if (op.entity === "song" && !(member.owner || hasAllContent(member))) assertSongEdit(afterModels, next, record.id);
         else next.assertChange(op.entity, null, record);
       }
     },
@@ -421,11 +471,24 @@ function productFields(record, sales, key) {
   };
 }
 
+function standaloneFields(entity, record) {
+  if (entity === "group") return { organizationId: record.organizationId || "", talentIds: record.talentIds };
+  if (entity === "offer") return {
+    productId: record.productId, campaignId: record.campaignId || "", price: String(record.price.amount ?? ""),
+    currency: record.price.currency || "", startsAt: localInstant(record.startsAt), endsAt: localInstant(record.endsAt),
+  };
+  if (entity === "performance") return {
+    karaokeId: record.karaokeId, songId: record.songId || "", talentIds: record.talentIds,
+    ...Object.fromEntries(["order", "startsAtSeconds", "endsAtSeconds"].map((field) => [field, String(record[field] ?? "")])),
+  };
+  return {};
+}
+
 export function draftDetails(snapshot, member, entity, id) {
   if (!Object.hasOwn(draftTypes, entity)) fail(403, "cms_scope_denied");
   const record = recordAt(snapshot.models, { entity, id });
   if (!cmsPermissions(snapshot.models, member).canRead(entity, record)) fail(403, "cms_scope_denied");
-  const details = Object.fromEntries(fields[entity].map((key) => [key, record[key] ?? ""]));
+  const details = { ...Object.fromEntries(fields[entity].map((key) => [key, record[key] ?? ""])), ...standaloneFields(entity, record) };
   if (entity === "karaoke") {
     const rows = snapshot.models.karaoke.performances.filter((row) => row.karaokeId === id);
     if (rows.some((row) => !cmsPermissions(snapshot.models, member).canRead("performance", row)))
@@ -463,7 +526,7 @@ export function draftInput(workspace) {
   const campaign = workspace?.operations.find((row) => row.entity === "campaign");
   if (!op || !Object.hasOwn(draftTypes, op.entity)) return null;
   return {
-    entity: op.entity, id: op.id, sha: op.baseCommit,
+    entity: op.entity, id: op.id, sha: op.baseCommit, ...standaloneFields(op.entity, op.value),
     organization: op.value.relatedOrganizationIds?.[0],
     talent: op.value.talentIds?.[0],
     ...Object.fromEntries(fields[op.entity].map((key) => [key, op.value[key] ?? ""])),

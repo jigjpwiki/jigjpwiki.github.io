@@ -1,0 +1,522 @@
+{
+  "version": 2,
+  "batchId": "AAhgDgv0bxp-dvEaQFWulSlpprwsCcRI6IkfYdnvuSk",
+  "actor": "900122208316251340881522085640042137117242",
+  "createdAt": "2026-11-25T18:07:28.567Z",
+  "baseCommit": "70a3757b9bf13db2cf209611fdcfbf4dadfeecdb",
+  "reason": null,
+  "submissionId": "AAhgDgv0bxp-dvEaQFWulSlpprwsCcRI6IkfYdnvuSk",
+  "branch": "admin/change-AAhgDgv0bxp-dvEaQFWulSlpprwsCcRI6IkfYdnvuSk",
+  "operations": [
+    {
+      "operationId": "cms-musicvideo-6d99ccdb18794b30a2d555b5",
+      "entity": "musicVideo",
+      "recordId": "mv-000058",
+      "action": "create",
+      "changedFields": [
+        "talentIds",
+        "visibility",
+        "youtubeId",
+        "type",
+        "songId",
+        "registeredAt",
+        "rawSongTitle",
+        "id"
+      ],
+      "before": null,
+      "after": {
+        "talentIds": [
+          "tal-000013"
+        ],
+        "visibility": "public",
+        "youtubeId": "_l9b33Ry3Tk",
+        "type": "original",
+        "songId": "song-000111",
+        "registeredAt": "2026-11-25T17:55:34.217Z",
+        "rawSongTitle": "ただ明日も空で息をして",
+        "id": "mv-000058"
+      }
+    },
+    {
+      "operationId": "cms-media-6d99ccdb18794b30a2d555b5",
+      "entity": "video",
+      "recordId": "_l9b33Ry3Tk",
+      "action": "create",
+      "changedFields": [
+        "youtubeId",
+        "channelId",
+        "title",
+        "publishedAt",
+        "startedAt",
+        "endedAt",
+        "durationSeconds",
+        "availability",
+        "visibility"
+      ],
+      "before": null,
+      "after": {
+        "youtubeId": "_l9b33Ry3Tk",
+        "channelId": "UC5xSDiB2WG4pO_zUZ_t-n0Q",
+        "title": "【 オリジナル曲 】ただ明日も空で息をして【 #しーはむ / #新人Vtuber 】#ただ明日も空で息をして",
+        "publishedAt": "2025-02-10T10:00:06.000Z",
+        "startedAt": null,
+        "endedAt": null,
+        "durationSeconds": null,
+        "availability": "public",
+        "visibility": "public"
+      }
+    },
+    {
+      "operationId": "cms-new-song-6d99ccdb18794b30a2d555b5",
+      "entity": "song",
+      "recordId": "song-000111",
+      "action": "create",
+      "changedFields": [
+        "title",
+        "originalArtists",
+        "identityUrl",
+        "aliases",
+        "readings",
+        "visibility",
+        "id"
+      ],
+      "before": null,
+      "after": {
+        "title": "ただ明日も空で息をして",
+        "originalArtists": [
+          "しーはむ"
+        ],
+        "identityUrl": "https://www.youtube.com/watch?v=_l9b33Ry3Tk",
+        "aliases": [],
+        "readings": [],
+        "visibility": "public",
+        "id": "song-000111"
+      }
+    },
+    {
+      "operationId": "cms-musicvideo-481e216587744c9597a386a8",
+      "entity": "musicVideo",
+      "recordId": "mv-000059",
+      "action": "create",
+      "changedFields": [
+        "talentIds",
+        "visibility",
+        "youtubeId",
+        "type",
+        "songId",
+        "registeredAt",
+        "rawSongTitle",
+        "id"
+      ],
+      "before": null,
+      "after": {
+        "talentIds": [
+          "tal-000049"
+        ],
+        "visibility": "public",
+        "youtubeId": "tBKTH4iDSE0",
+        "type": "original",
+        "songId": "song-000112",
+        "registeredAt": "2026-11-25T18:01:06.553Z",
+        "rawSongTitle": "シャイニングデイズ",
+        "id": "mv-000059"
+      }
+    },
+    {
+      "operationId": "cms-media-481e216587744c9597a386a8",
+      "entity": "video",
+      "recordId": "tBKTH4iDSE0",
+      "action": "create",
+      "changedFields": [
+        "youtubeId",
+        "channelId",
+        "title",
+        "publishedAt",
+        "startedAt",
+        "endedAt",
+        "durationSeconds",
+        "availability",
+        "visibility"
+      ],
+      "before": null,
+      "after": {
+        "youtubeId": "tBKTH4iDSE0",
+        "channelId": "UCPgg_A08ksSYP-VivJGniRw",
+        "title": "【オリジナル曲】シャイニングデイズ",
+        "publishedAt": "2026-05-10T04:15:05.000Z",
+        "startedAt": null,
+        "endedAt": null,
+        "durationSeconds": null,
+        "availability": "public",
+        "visibility": "public"
+      }
+    },
+    {
+      "operationId": "cms-new-song-481e216587744c9597a386a8",
+      "entity": "song",
+      "recordId": "song-000112",
+      "action": "create",
+      "changedFields": [
+        "title",
+        "originalArtists",
+        "identityUrl",
+        "aliases",
+        "readings",
+        "visibility",
+        "id"
+      ],
+      "before": null,
+      "after": {
+        "title": "シャイニングデイズ",
+        "originalArtists": [
+          "桜庭羽奈"
+        ],
+        "identityUrl": "https://www.youtube.com/watch?v=tBKTH4iDSE0",
+        "aliases": [],
+        "readings": [],
+        "visibility": "public",
+        "id": "song-000112"
+      }
+    },
+    {
+      "operationId": "cms-musicvideo-593694efa8d44132a924520d",
+      "entity": "musicVideo",
+      "recordId": "mv-000060",
+      "action": "create",
+      "changedFields": [
+        "talentIds",
+        "visibility",
+        "youtubeId",
+        "type",
+        "songId",
+        "registeredAt",
+        "rawSongTitle",
+        "id"
+      ],
+      "before": null,
+      "after": {
+        "talentIds": [
+          "tal-000060"
+        ],
+        "visibility": "public",
+        "youtubeId": "URF_GrVr2uA",
+        "type": "original",
+        "songId": "song-000113",
+        "registeredAt": "2026-11-25T18:02:00.504Z",
+        "rawSongTitle": "わんちゃん☆エブリデイ！",
+        "id": "mv-000060"
+      }
+    },
+    {
+      "operationId": "cms-media-593694efa8d44132a924520d",
+      "entity": "video",
+      "recordId": "URF_GrVr2uA",
+      "action": "create",
+      "changedFields": [
+        "youtubeId",
+        "channelId",
+        "title",
+        "publishedAt",
+        "startedAt",
+        "endedAt",
+        "durationSeconds",
+        "availability",
+        "visibility"
+      ],
+      "before": null,
+      "after": {
+        "youtubeId": "URF_GrVr2uA",
+        "channelId": "UCdJmJxMfXrlnZabUkuss2EA",
+        "title": "【初オリジナル曲】わんちゃん☆エブリデイ！【#新人vtuber　＃パレデミア学園】",
+        "publishedAt": "2026-05-10T11:00:06.000Z",
+        "startedAt": null,
+        "endedAt": null,
+        "durationSeconds": null,
+        "availability": "public",
+        "visibility": "public"
+      }
+    },
+    {
+      "operationId": "cms-new-song-593694efa8d44132a924520d",
+      "entity": "song",
+      "recordId": "song-000113",
+      "action": "create",
+      "changedFields": [
+        "title",
+        "originalArtists",
+        "identityUrl",
+        "aliases",
+        "readings",
+        "visibility",
+        "id"
+      ],
+      "before": null,
+      "after": {
+        "title": "わんちゃん☆エブリデイ！",
+        "originalArtists": [
+          "犬丸なでこ"
+        ],
+        "identityUrl": "https://www.youtube.com/watch?v=URF_GrVr2uA",
+        "aliases": [],
+        "readings": [],
+        "visibility": "public",
+        "id": "song-000113"
+      }
+    },
+    {
+      "operationId": "cms-musicvideo-a493f40af16b4ff1a814b169",
+      "entity": "musicVideo",
+      "recordId": "mv-000061",
+      "action": "create",
+      "changedFields": [
+        "talentIds",
+        "visibility",
+        "youtubeId",
+        "type",
+        "songId",
+        "registeredAt",
+        "rawSongTitle",
+        "id"
+      ],
+      "before": null,
+      "after": {
+        "talentIds": [
+          "tal-000001"
+        ],
+        "visibility": "public",
+        "youtubeId": "u7UkT-AaYLo",
+        "type": "original",
+        "songId": "song-000114",
+        "registeredAt": "2026-11-25T18:02:46.775Z",
+        "rawSongTitle": "おひるねどりーみんっ！",
+        "id": "mv-000061"
+      }
+    },
+    {
+      "operationId": "cms-media-a493f40af16b4ff1a814b169",
+      "entity": "video",
+      "recordId": "u7UkT-AaYLo",
+      "action": "create",
+      "changedFields": [
+        "youtubeId",
+        "channelId",
+        "title",
+        "publishedAt",
+        "startedAt",
+        "endedAt",
+        "durationSeconds",
+        "availability",
+        "visibility"
+      ],
+      "before": null,
+      "after": {
+        "youtubeId": "u7UkT-AaYLo",
+        "channelId": "UCI-8WyYqMymGPw9vg55HXDQ",
+        "title": "おひるねどりーみんっ！ / すやすや同好会【 #VocaDuo2026 】",
+        "publishedAt": "2026-06-29T08:00:06.000Z",
+        "startedAt": null,
+        "endedAt": null,
+        "durationSeconds": null,
+        "availability": "public",
+        "visibility": "public"
+      }
+    },
+    {
+      "operationId": "cms-new-song-a493f40af16b4ff1a814b169",
+      "entity": "song",
+      "recordId": "song-000114",
+      "action": "create",
+      "changedFields": [
+        "title",
+        "originalArtists",
+        "identityUrl",
+        "aliases",
+        "readings",
+        "visibility",
+        "id"
+      ],
+      "before": null,
+      "after": {
+        "title": "おひるねどりーみんっ！",
+        "originalArtists": [
+          "真昼ねる"
+        ],
+        "identityUrl": "https://www.youtube.com/watch?v=u7UkT-AaYLo",
+        "aliases": [],
+        "readings": [],
+        "visibility": "public",
+        "id": "song-000114"
+      }
+    },
+    {
+      "operationId": "cms-musicvideo-68b03378f23e4ee79d09a395",
+      "entity": "musicVideo",
+      "recordId": "mv-000062",
+      "action": "create",
+      "changedFields": [
+        "talentIds",
+        "visibility",
+        "youtubeId",
+        "type",
+        "songId",
+        "registeredAt",
+        "rawSongTitle",
+        "id"
+      ],
+      "before": null,
+      "after": {
+        "talentIds": [
+          "tal-000083"
+        ],
+        "visibility": "public",
+        "youtubeId": "4jNRViPiov0",
+        "type": "original",
+        "songId": "song-000115",
+        "registeredAt": "2026-11-25T18:03:21.519Z",
+        "rawSongTitle": "シュワシュワ",
+        "id": "mv-000062"
+      }
+    },
+    {
+      "operationId": "cms-media-68b03378f23e4ee79d09a395",
+      "entity": "video",
+      "recordId": "4jNRViPiov0",
+      "action": "create",
+      "changedFields": [
+        "youtubeId",
+        "channelId",
+        "title",
+        "publishedAt",
+        "startedAt",
+        "endedAt",
+        "durationSeconds",
+        "availability",
+        "visibility"
+      ],
+      "before": null,
+      "after": {
+        "youtubeId": "4jNRViPiov0",
+        "channelId": "UCPjtwOeRQV5EFkCwUycZsgw",
+        "title": "【オリジナル曲】シュワシュワ/秋桜しゅお【#vtuber #vsinger #オリジナルソング 】",
+        "publishedAt": "2026-07-15T12:00:06.000Z",
+        "startedAt": null,
+        "endedAt": null,
+        "durationSeconds": null,
+        "availability": "public",
+        "visibility": "public"
+      }
+    },
+    {
+      "operationId": "cms-new-song-68b03378f23e4ee79d09a395",
+      "entity": "song",
+      "recordId": "song-000115",
+      "action": "create",
+      "changedFields": [
+        "title",
+        "originalArtists",
+        "identityUrl",
+        "aliases",
+        "readings",
+        "visibility",
+        "id"
+      ],
+      "before": null,
+      "after": {
+        "title": "シュワシュワ",
+        "originalArtists": [
+          "秋桜しゅお"
+        ],
+        "identityUrl": "https://www.youtube.com/watch?v=4jNRViPiov0",
+        "aliases": [],
+        "readings": [],
+        "visibility": "public",
+        "id": "song-000115"
+      }
+    },
+    {
+      "operationId": "cms-musicvideo-076e9c5869ee4bb4aeb90b18",
+      "entity": "musicVideo",
+      "recordId": "mv-000063",
+      "action": "create",
+      "changedFields": [
+        "talentIds",
+        "visibility",
+        "youtubeId",
+        "type",
+        "songId",
+        "registeredAt",
+        "rawSongTitle",
+        "id"
+      ],
+      "before": null,
+      "after": {
+        "talentIds": [
+          "tal-000035"
+        ],
+        "visibility": "public",
+        "youtubeId": "ZM_tDXd5YNw",
+        "type": "original",
+        "songId": "song-000116",
+        "registeredAt": "2026-11-25T18:07:14.655Z",
+        "rawSongTitle": "My Fluctuation",
+        "id": "mv-000063"
+      }
+    },
+    {
+      "operationId": "cms-media-076e9c5869ee4bb4aeb90b18",
+      "entity": "video",
+      "recordId": "ZM_tDXd5YNw",
+      "action": "create",
+      "changedFields": [
+        "youtubeId",
+        "channelId",
+        "title",
+        "publishedAt",
+        "startedAt",
+        "endedAt",
+        "durationSeconds",
+        "availability",
+        "visibility"
+      ],
+      "before": null,
+      "after": {
+        "youtubeId": "ZM_tDXd5YNw",
+        "channelId": "UCeOFQCn_QZJMTszlRYRg3rQ",
+        "title": "【初オリジナル曲】My Fluctuation【 #天辻ゆらぐ / #新人Vtuber】 #パレデミア学園",
+        "publishedAt": "2026-05-10T14:00:06.000Z",
+        "startedAt": null,
+        "endedAt": null,
+        "durationSeconds": null,
+        "availability": "public",
+        "visibility": "public"
+      }
+    },
+    {
+      "operationId": "cms-new-song-076e9c5869ee4bb4aeb90b18",
+      "entity": "song",
+      "recordId": "song-000116",
+      "action": "create",
+      "changedFields": [
+        "title",
+        "originalArtists",
+        "identityUrl",
+        "aliases",
+        "readings",
+        "visibility",
+        "id"
+      ],
+      "before": null,
+      "after": {
+        "title": "My Fluctuation",
+        "originalArtists": [
+          "天辻ゆらぐ"
+        ],
+        "identityUrl": "https://www.youtube.com/watch?v=ZM_tDXd5YNw",
+        "aliases": [],
+        "readings": [],
+        "visibility": "public",
+        "id": "song-000116"
+      }
+    }
+  ]
+}

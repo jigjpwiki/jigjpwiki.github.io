@@ -1377,6 +1377,72 @@
       "readings": [],
       "visibility": "public",
       "id": "song-000110"
+    },
+    {
+      "title": "ただ明日も空で息をして",
+      "originalArtists": [
+        "しーはむ"
+      ],
+      "identityUrl": "https://www.youtube.com/watch?v=_l9b33Ry3Tk",
+      "aliases": [],
+      "readings": [],
+      "visibility": "public",
+      "id": "song-000111"
+    },
+    {
+      "title": "シャイニングデイズ",
+      "originalArtists": [
+        "桜庭羽奈"
+      ],
+      "identityUrl": "https://www.youtube.com/watch?v=tBKTH4iDSE0",
+      "aliases": [],
+      "readings": [],
+      "visibility": "public",
+      "id": "song-000112"
+    },
+    {
+      "title": "わんちゃん☆エブリデイ！",
+      "originalArtists": [
+        "犬丸なでこ"
+      ],
+      "identityUrl": "https://www.youtube.com/watch?v=URF_GrVr2uA",
+      "aliases": [],
+      "readings": [],
+      "visibility": "public",
+      "id": "song-000113"
+    },
+    {
+      "title": "おひるねどりーみんっ！",
+      "originalArtists": [
+        "真昼ねる"
+      ],
+      "identityUrl": "https://www.youtube.com/watch?v=u7UkT-AaYLo",
+      "aliases": [],
+      "readings": [],
+      "visibility": "public",
+      "id": "song-000114"
+    },
+    {
+      "title": "シュワシュワ",
+      "originalArtists": [
+        "秋桜しゅお"
+      ],
+      "identityUrl": "https://www.youtube.com/watch?v=4jNRViPiov0",
+      "aliases": [],
+      "readings": [],
+      "visibility": "public",
+      "id": "song-000115"
+    },
+    {
+      "title": "My Fluctuation",
+      "originalArtists": [
+        "天辻ゆらぐ"
+      ],
+      "identityUrl": "https://www.youtube.com/watch?v=ZM_tDXd5YNw",
+      "aliases": [],
+      "readings": [],
+      "visibility": "public",
+      "id": "song-000116"
     }
   ],
   "musicVideos": [
@@ -2134,6 +2200,78 @@
       "registeredAt": "2026-11-25T16:41:27.890Z",
       "rawSongTitle": "ミズイロノオト",
       "id": "mv-000057"
+    },
+    {
+      "talentIds": [
+        "tal-000013"
+      ],
+      "visibility": "public",
+      "youtubeId": "_l9b33Ry3Tk",
+      "type": "original",
+      "songId": "song-000111",
+      "registeredAt": "2026-11-25T17:55:34.217Z",
+      "rawSongTitle": "ただ明日も空で息をして",
+      "id": "mv-000058"
+    },
+    {
+      "talentIds": [
+        "tal-000049"
+      ],
+      "visibility": "public",
+      "youtubeId": "tBKTH4iDSE0",
+      "type": "original",
+      "songId": "song-000112",
+      "registeredAt": "2026-11-25T18:01:06.553Z",
+      "rawSongTitle": "シャイニングデイズ",
+      "id": "mv-000059"
+    },
+    {
+      "talentIds": [
+        "tal-000060"
+      ],
+      "visibility": "public",
+      "youtubeId": "URF_GrVr2uA",
+      "type": "original",
+      "songId": "song-000113",
+      "registeredAt": "2026-11-25T18:02:00.504Z",
+      "rawSongTitle": "わんちゃん☆エブリデイ！",
+      "id": "mv-000060"
+    },
+    {
+      "talentIds": [
+        "tal-000001"
+      ],
+      "visibility": "public",
+      "youtubeId": "u7UkT-AaYLo",
+      "type": "original",
+      "songId": "song-000114",
+      "registeredAt": "2026-11-25T18:02:46.775Z",
+      "rawSongTitle": "おひるねどりーみんっ！",
+      "id": "mv-000061"
+    },
+    {
+      "talentIds": [
+        "tal-000083"
+      ],
+      "visibility": "public",
+      "youtubeId": "4jNRViPiov0",
+      "type": "original",
+      "songId": "song-000115",
+      "registeredAt": "2026-11-25T18:03:21.519Z",
+      "rawSongTitle": "シュワシュワ",
+      "id": "mv-000062"
+    },
+    {
+      "talentIds": [
+        "tal-000035"
+      ],
+      "visibility": "public",
+      "youtubeId": "ZM_tDXd5YNw",
+      "type": "original",
+      "songId": "song-000116",
+      "registeredAt": "2026-11-25T18:07:14.655Z",
+      "rawSongTitle": "My Fluctuation",
+      "id": "mv-000063"
     }
   ]
 }

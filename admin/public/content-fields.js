@@ -408,6 +408,7 @@ export function fields({
             input.setCustomValidity("");
             if (key === "image")
               preview.replaceChildren(portrait(result, "商品画像"));
+            if (key === "thumbnailUrl") renderThumbnail(result);
           } catch (e) {
             set(v);
             input.setCustomValidity(e.message);
@@ -431,7 +432,22 @@ export function fields({
     }
     if (type === "datetime-local") input.step = "1";
     const preview = el("div");
-    if (key === "image") {
+    function renderThumbnail(url) {
+      preview.replaceChildren();
+      if (!/^https:\/\//i.test(url || "")) return;
+      const image = el("img");
+      image.className = "cms-event-preview";
+      image.alt = "イベントサムネイルのプレビュー";
+      image.referrerPolicy = "no-referrer";
+      image.onerror = () => image.remove();
+      image.src = url;
+      preview.append(image);
+    }
+    if (key === "thumbnailUrl") {
+      input.placeholder = "公開HTTPS画像URL・未登録なら空欄";
+      renderThumbnail(object[key]);
+      field.append(preview);
+    } else if (key === "image") {
       preview.append(portrait(object[key], "商品画像"));
       field.append(preview);
     } else if (type === "url" && object[key])

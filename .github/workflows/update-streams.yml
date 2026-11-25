@@ -52,7 +52,17 @@ jobs:
         run: npx playwright install --with-deps chromium
       - name: Browser regression tests
         if: github.event_name == 'push' || github.event_name == 'pull_request'
+        env:
+          EVENT_SCREENSHOTS: ${{ runner.temp }}/event-screens
         run: npm run test:browser
+      - name: Event UI screenshots (fixture)
+        if: github.event_name == 'pull_request' && !cancelled()
+        uses: actions/upload-artifact@v4
+        with:
+          name: event-ui-screens
+          path: ${{ runner.temp }}/event-screens
+          if-no-files-found: ignore
+          retention-days: 7
 
   update:
     if: (github.event_name != 'schedule' || vars.SCHEDULE_DRIVER != 'cloudflare') && (github.event_name != 'workflow_dispatch' || !inputs.periodic || vars.SCHEDULE_DRIVER == 'cloudflare') && always() && !cancelled() && github.ref == 'refs/heads/main' && github.event_name != 'pull_request' && (needs.test.result == 'success' || needs.test.result == 'skipped')

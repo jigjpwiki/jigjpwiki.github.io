@@ -20,6 +20,12 @@
    const count=section.querySelector('[data-event-count]');
    if(count)count.textContent=items.length+'件';
   }
+  for(const detail of document.querySelectorAll('[data-event-detail-times]')){
+   const phase=dates.phase(JSON.parse(detail.dataset.eventDetailTimes));
+   detail.dataset.phase=phase;
+   const label=detail.querySelector('[data-event-phase]');
+   label.textContent=dates.labels[phase];label.hidden=false;
+  }
   document.dispatchEvent(new Event('catalog:refresh'));
  };
  update();setInterval(update,60000);document.addEventListener('visibilitychange',()=>{if(!document.hidden)update();});

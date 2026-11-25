@@ -103,7 +103,7 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
         return chip;
       }));
       chips.hidden = !selected.size;
-      search.placeholder = selected.size ? multiple ? "さらに追加する" : "別の候補を検索" : empty + "・検索";
+      search.placeholder = selected.size ? multiple ? "さらに追加する" : "別の候補を検索" : label === "曲名・原曲アーティスト" ? "曲名・原曲アーティスト・別名で検索" : "名前・別名・IDで検索";
       search.disabled = isDisabled();
     }
     function close() {
@@ -113,10 +113,6 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
     }
     function choose(id) {
       if (isDisabled() || !lookup.has(id)) return;
-      if (multiple && selected.size >= 100 && !selected.has(id)) {
-        summary.textContent = "関連レコードは最大100件です。";
-        return;
-      }
       if (!multiple) selected.clear();
       selected.add(id);
       search.value = "";
@@ -219,6 +215,7 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
       const search = control.cmsPicker.querySelector("input");
       search.setAttribute("aria-label", label);
       search.setAttribute("aria-required", String(control.required));
+      control.cmsPicker.querySelector("[role=listbox]").setAttribute("aria-label", label + "の候補");
       control.cmsPicker.syncDisabled();
       wrapper.replaceChildren(caption, control.cmsPicker, control);
     } else wrapper.append(control);

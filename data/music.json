@@ -658,6 +658,7 @@
         "スタート"
       ],
       "originalArtists": [
+        "Alt!!",
         "七海ロナ",
         "暁月クララ",
         "遠坂ユラ"
@@ -673,6 +674,7 @@
         "スリーピース"
       ],
       "originalArtists": [
+        "Alt!!",
         "七海ロナ",
         "暁月クララ",
         "遠坂ユラ"
@@ -688,12 +690,54 @@
         "ハローマイステージ!"
       ],
       "originalArtists": [
+        "Alt!!",
         "七海ロナ",
         "暁月クララ",
         "遠坂ユラ"
       ],
       "title": "Hello My Stage!",
       "id": "song-000060"
+    },
+    {
+      "visibility": "public",
+      "identityUrl": "https://www.youtube.com/watch?v=W9J8iokDE9k",
+      "aliases": [],
+      "readings": [],
+      "originalArtists": [
+        "Alt!!",
+        "七海ロナ",
+        "暁月クララ"
+      ],
+      "title": "たのしむーぶ",
+      "id": "song-000061"
+    },
+    {
+      "visibility": "public",
+      "identityUrl": "https://www.youtube.com/watch?v=BZBrsxqCPO8",
+      "aliases": [],
+      "readings": [
+        "ドラマティック・パレード"
+      ],
+      "originalArtists": [
+        "Alt!!",
+        "七海ロナ",
+        "暁月クララ"
+      ],
+      "title": "Dramatic Parade",
+      "id": "song-000062"
+    },
+    {
+      "visibility": "public",
+      "identityUrl": "https://www.youtube.com/watch?v=BjUYdESsW90",
+      "aliases": [],
+      "readings": [],
+      "originalArtists": [
+        "Alt!!",
+        "七海ロナ",
+        "暁月クララ"
+      ],
+      "title": "アナログハート",
+      "id": "song-000063"
     }
   ],
   "musicVideos": [

@@ -1,0 +1,221 @@
+{
+  "version": 2,
+  "batchId": "ivZRwgouNFs5Kh2cusRlhQ9RRcoTFsnVde6Z77AQajM",
+  "actor": "900122208316251340881522085640042137117242",
+  "createdAt": "2026-11-25T06:07:06.928Z",
+  "baseCommit": "b1a01b30cf5fe27c35d1563c9da3320d56989b00",
+  "reason": null,
+  "submissionId": "ivZRwgouNFs5Kh2cusRlhQ9RRcoTFsnVde6Z77AQajM",
+  "branch": "admin/change-ivZRwgouNFs5Kh2cusRlhQ9RRcoTFsnVde6Z77AQajM",
+  "operations": [
+    {
+      "operationId": "cms-song-9052caf0898946ff8ea61f2e",
+      "entity": "song",
+      "recordId": "song-000058",
+      "action": "edit",
+      "changedFields": [
+        "originalArtists"
+      ],
+      "before": {
+        "visibility": "public",
+        "identityUrl": "https://www.youtube.com/watch?v=8UE4KHm7sF0",
+        "aliases": [],
+        "readings": [
+          "スタート"
+        ],
+        "originalArtists": [
+          "七海ロナ",
+          "暁月クララ",
+          "遠坂ユラ"
+        ],
+        "title": "StAlt!!",
+        "id": "song-000058"
+      },
+      "after": {
+        "visibility": "public",
+        "identityUrl": "https://www.youtube.com/watch?v=8UE4KHm7sF0",
+        "aliases": [],
+        "readings": [
+          "スタート"
+        ],
+        "originalArtists": [
+          "Alt!!",
+          "七海ロナ",
+          "暁月クララ",
+          "遠坂ユラ"
+        ],
+        "title": "StAlt!!",
+        "id": "song-000058"
+      }
+    },
+    {
+      "operationId": "cms-song-106c9c9b29754ec08be3a076",
+      "entity": "song",
+      "recordId": "song-000059",
+      "action": "edit",
+      "changedFields": [
+        "originalArtists"
+      ],
+      "before": {
+        "visibility": "public",
+        "identityUrl": "https://www.youtube.com/watch?v=EQybHllR2mQ",
+        "aliases": [],
+        "readings": [
+          "スリーピース"
+        ],
+        "originalArtists": [
+          "七海ロナ",
+          "暁月クララ",
+          "遠坂ユラ"
+        ],
+        "title": "Three Piece",
+        "id": "song-000059"
+      },
+      "after": {
+        "visibility": "public",
+        "identityUrl": "https://www.youtube.com/watch?v=EQybHllR2mQ",
+        "aliases": [],
+        "readings": [
+          "スリーピース"
+        ],
+        "originalArtists": [
+          "Alt!!",
+          "七海ロナ",
+          "暁月クララ",
+          "遠坂ユラ"
+        ],
+        "title": "Three Piece",
+        "id": "song-000059"
+      }
+    },
+    {
+      "operationId": "cms-song-bd43504728b84d21a4adc7b5",
+      "entity": "song",
+      "recordId": "song-000060",
+      "action": "edit",
+      "changedFields": [
+        "originalArtists"
+      ],
+      "before": {
+        "visibility": "public",
+        "identityUrl": "https://www.youtube.com/watch?v=zgJhhzIbWmI",
+        "aliases": [],
+        "readings": [
+          "ハローマイステージ!"
+        ],
+        "originalArtists": [
+          "七海ロナ",
+          "暁月クララ",
+          "遠坂ユラ"
+        ],
+        "title": "Hello My Stage!",
+        "id": "song-000060"
+      },
+      "after": {
+        "visibility": "public",
+        "identityUrl": "https://www.youtube.com/watch?v=zgJhhzIbWmI",
+        "aliases": [],
+        "readings": [
+          "ハローマイステージ!"
+        ],
+        "originalArtists": [
+          "Alt!!",
+          "七海ロナ",
+          "暁月クララ",
+          "遠坂ユラ"
+        ],
+        "title": "Hello My Stage!",
+        "id": "song-000060"
+      }
+    },
+    {
+      "operationId": "cms-song-a0bef19b3fc44a2bb31f7a18",
+      "entity": "song",
+      "recordId": "song-000061",
+      "action": "create",
+      "changedFields": [
+        "visibility",
+        "identityUrl",
+        "aliases",
+        "readings",
+        "originalArtists",
+        "title",
+        "id"
+      ],
+      "before": null,
+      "after": {
+        "visibility": "public",
+        "identityUrl": "https://www.youtube.com/watch?v=W9J8iokDE9k",
+        "aliases": [],
+        "readings": [],
+        "originalArtists": [
+          "Alt!!",
+          "七海ロナ",
+          "暁月クララ"
+        ],
+        "title": "たのしむーぶ",
+        "id": "song-000061"
+      }
+    },
+    {
+      "operationId": "cms-song-a97c143678b24990a7108585",
+      "entity": "song",
+      "recordId": "song-000062",
+      "action": "create",
+      "changedFields": [
+        "visibility",
+        "identityUrl",
+        "aliases",
+        "readings",
+        "originalArtists",
+        "title",
+        "id"
+      ],
+      "before": null,
+      "after": {
+        "visibility": "public",
+        "identityUrl": "https://www.youtube.com/watch?v=BZBrsxqCPO8",
+        "aliases": [],
+        "readings": [
+          "ドラマティック・パレード"
+        ],
+        "originalArtists": [
+          "Alt!!",
+          "七海ロナ",
+          "暁月クララ"
+        ],
+        "title": "Dramatic Parade",
+        "id": "song-000062"
+      }
+    },
+    {
+      "operationId": "cms-song-c22230cfc3d14f2990416b83",
+      "entity": "song",
+      "recordId": "song-000063",
+      "action": "create",
+      "changedFields": [
+        "visibility",
+        "identityUrl",
+        "aliases",
+        "readings",
+        "originalArtists",
+        "title",
+        "id"
+      ],
+      "before": null,
+      "after": {
+        "visibility": "public",
+        "identityUrl": "https://www.youtube.com/watch?v=BjUYdESsW90",
+        "aliases": [],
+        "readings": [],
+        "originalArtists": [
+          "Alt!!",
+          "七海ロナ",
+          "暁月クララ"
+        ],
+        "title": "アナログハート",
+        "id": "song-000063"
+      }
+    }
+  ]
+}

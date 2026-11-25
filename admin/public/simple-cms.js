@@ -708,6 +708,7 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
         const controls = new Map();
         function field(name, text, control, required = false) {
           const label = el("label", text);
+          control.setAttribute("aria-label", text);
           control.value = value[name] || "";
           control.required = required;
           label.append(control);

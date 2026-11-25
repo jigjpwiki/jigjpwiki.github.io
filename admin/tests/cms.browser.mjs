@@ -94,7 +94,7 @@ await mountSimpleCms(document.querySelector("#cms"), document.querySelector("#st
       const product = page.getByRole("group", { name: "新しい商品", exact: true }).nth(i);
       await product.getByLabel("商品名", { exact: true }).fill("商品 " + i);
       await product.getByLabel("公式商品情報URL").fill("https://example.com/product/" + i);
-      await product.getByLabel("関連する人物").selectOption("tal-000010");
+      await product.getByRole("combobox", { name: "関連する人物", exact: true }).selectOption("tal-000010");
       await product.getByRole("button", { name: "販売枠を追加", exact: true }).click();
       for (let j = 0; j < 2; j++) {
         const sale = product.getByRole("group", { name: "新しい販売枠", exact: true }).nth(j);

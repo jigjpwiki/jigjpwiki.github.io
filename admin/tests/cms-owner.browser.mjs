@@ -40,21 +40,21 @@ export async function cmsOwnerBrowser({ browser, base, mainSha }) {
 
     await page.getByLabel("商品名", { exact: true }).fill("一括公開申請の商品");
     await page.getByLabel("公式商品情報URL").fill("https://example.com/owner-product");
-    const person = page.getByLabel("関連する人物");
+    const person = page.getByRole("combobox", { name: "関連する人物", exact: true });
     await person.selectOption({ index: 1 });
     await page.getByLabel("販売ページURL", { exact: true }).fill("https://example.com/owner-sale");
     await page.locator("#view").getByRole("button", { name: "下書きを保存", exact: true }).click();
     await page.getByText("下書きを保存しました。公開サイトには反映されていません。").waitFor();
     await page.goto(base + "/#content/video");
     await page.getByRole("button", { name: "動画情報を新規登録", exact: true }).click();
-    assert.equal(await page.getByLabel("関連する人物").count(), 0);
+    assert.equal(await page.getByRole("combobox", { name: "関連する人物", exact: true }).count(), 0);
     assert.ok(await page.getByLabel("YouTube動画URL", { exact: true }).isVisible());
 
     const songTitle = "新規のオリジナル楽曲";
     const songUrl = "https://example.com/original-song";
     await page.goto(base + "/#content/song");
     await page.getByRole("button", { name: "楽曲を新規登録", exact: true }).click();
-    assert.equal(await page.getByLabel("関連する人物").count(), 0);
+    assert.equal(await page.getByRole("combobox", { name: "関連する人物", exact: true }).count(), 0);
     await page.getByLabel("名称", { exact: true }).fill(songTitle);
     await page.getByLabel("原曲アーティスト（1行に1名）", { exact: true }).fill("作者");
     await page.getByLabel("楽曲の公式情報URL", { exact: true }).fill(songUrl);

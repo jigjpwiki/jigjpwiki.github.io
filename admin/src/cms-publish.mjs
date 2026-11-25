@@ -1,6 +1,6 @@
 import { videoForCms, assertSongEdit, assertVideoEdit } from "./cms-music.mjs";
 import { entities, planSubmission, recordAt } from "./submission-plan.mjs";
-import { cmsPermissions, assertExistingCampaign } from "./cms-scope.mjs";
+import { cmsPermissions, assertExistingCampaign, hasAllContent } from "./cms-scope.mjs";
 import { repository } from "./github.mjs";
 import { fail, hash } from "./security.mjs";
 import { draftGroups } from "./cms-draft.mjs";
@@ -21,7 +21,7 @@ export async function publicationPlan(snapshot, job, member, lookup) {
   const batchId = await hash({ id: job.id, base: snapshot.sha });
   const before = cmsPermissions(snapshot.models, member);
   for (const op of job.operations) {
-    if (!["event", "product", "offer", "anniversary", "campaign", "talent", "musicVideo", "video", "song", "karaoke", "performance"].includes(op.entity) ||
+    if (!["organization", "group", "event", "product", "offer", "anniversary", "campaign", "talent", "musicVideo", "video", "song", "karaoke", "performance"].includes(op.entity) ||
         (op.id && !before.canRead(op.entity, recordAt(snapshot.models, op))))
       fail(403, "cms_scope_denied");
     if (["musicVideo", "karaoke"].includes(op.entity)) {
@@ -42,7 +42,7 @@ export async function publicationPlan(snapshot, job, member, lookup) {
         if (verified.channelId !== op.value.channelId) fail(403, "cms_scope_denied");
       }
     }
-    if (op.entity === "song" && op.id && !member.owner) assertSongEdit(snapshot.models, before, op.id);
+    if (op.entity === "song" && op.id && !member.owner && !hasAllContent(member)) assertSongEdit(snapshot.models, before, op.id);
     if (op.entity === "talent" && op.id) {
       const current = recordAt(snapshot.models, op);
       before.assertChange("talent", current, current);
@@ -69,8 +69,8 @@ export async function publicationPlan(snapshot, job, member, lookup) {
   if (plan.conflicts?.length) fail(409, "cms_publish_conflict");
   const after = cmsPermissions({ ...snapshot.models, ...plan.files }, member);
   for (const row of plan.impact.records) {
-    if (!entities[row.entity] || !["event", "product", "offer", "anniversary", "campaign", "talent", "musicVideo", "video", "song", "karaoke", "performance"].includes(row.entity)) fail(403, "cms_scope_denied");
-    if (row.entity === "song" && !member.owner) assertSongEdit({ ...snapshot.models, ...plan.files }, after, row.id);
+    if (!entities[row.entity] || !["organization", "group", "event", "product", "offer", "anniversary", "campaign", "talent", "musicVideo", "video", "song", "karaoke", "performance"].includes(row.entity)) fail(403, "cms_scope_denied");
+    if (row.entity === "song" && !member.owner && !hasAllContent(member)) assertSongEdit({ ...snapshot.models, ...plan.files }, after, row.id);
     else after.assertChange(row.entity, row.before, row.value, { publish: true });
   }
   return { plan: { ...plan, sha: snapshot.sha, tree: snapshot.tree }, batchId };

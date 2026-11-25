@@ -5,9 +5,10 @@ import { contentTypes } from "./content-definitions.mjs";
 const types = {
   ...contentTypes,
   talent: { file: "talents", list: "talents", category: "talents" },
-  group: { file: "catalog", list: "groups" },
+  group: { file: "catalog", list: "groups", category: "organizations", label: "グループ" },
+  organization: { file: "talents", list: "organizations", category: "organizations", label: "事務所" },
 };
-const categories = new Set(["talents", ...Object.values(contentTypes).map((type) => type.category)]);
+const categories = new Set(["talents", "organizations", ...Object.values(contentTypes).map((type) => type.category)]);
 
 export const allContentPolicy = "all-content-v1";
 export function hasAllContent(member) {
@@ -165,7 +166,7 @@ export function cmsPermissions(models, member) {
 
 export function scopedCatalog(models, member) {
   const permissions = cmsPermissions(models, member);
-  return ["talent", "anniversary", "event", "song", "musicVideo", "karaoke", "video", "product", "campaign"].map((entity) => {
+  return ["organization", "group", "talent", "anniversary", "event", "song", "musicVideo", "karaoke", "video", "product", "campaign"].map((entity) => {
     const type = types[entity];
     return {
       category: type.category,

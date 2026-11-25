@@ -75,7 +75,7 @@ export function canEditSong(models, permissions, songId) {
 }
 
 export function assertSongEdit(models, permissions, songId) {
-  if (!canEditSong(models, permissions, songId)) fail(403, "cms_scope_denied");
+  if (!permissions.allContent && !canEditSong(models, permissions, songId)) fail(403, "cms_scope_denied");
 }
 
 

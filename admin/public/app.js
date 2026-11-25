@@ -220,6 +220,12 @@ function workspaceView() {
 }
 
 export async function api(path, method = "GET", value) {
+  // A different login in another tab must not be allowed to resume this editor.
+  if (me && $("#auth-recovery") && path !== "/api/me") {
+    const error = new Error("login_required");
+    error.code = "login_required";
+    throw error;
+  }
   const r = await fetch(path, {
     method,
     credentials: "same-origin",
@@ -231,7 +237,7 @@ export async function api(path, method = "GET", value) {
   });
   const data = await r.json();
   if (!r.ok) {
-    if (r.status === 401 && me && workspace) showAuthRecovery();
+    if (me && (r.status === 401 || (r.status === 403 && data.error === "csrf_rejected"))) showAuthRecovery();
     const error = new Error(
       {
         submission_protocol:
@@ -296,47 +302,47 @@ export async function api(path, method = "GET", value) {
   return data;
 }
 function showAuthRecovery() {
-  if (document.querySelector("#auth-recovery")) return;
+  if ($("#auth-recovery")) return;
+  const original = me;
+  const provider = (user) => user.provider || "github";
+  const role = (user) => user.role || (provider(user) === "github" ? "owner" : "");
   const panel = node("section");
   panel.id = "auth-recovery";
-  panel.className = "error-summary";
+  panel.className = "error-summary stack";
   panel.setAttribute("role", "alert");
   const title = node("h2", "ログインの有効期限が切れました"),
-    message = node(
-      "p",
-      "入力はこのタブに保持しています。再読み込みせず、別タブで同じ管理者としてログインしてください。",
-    ),
-    login = node("a", "別タブで再ログイン");
-  login.href = "/auth/login";
+    message = node("p", "入力はこのタブに保持しています。再読み込みせず、別タブで同じアカウントにログインしてください。"),
+    login = node("a", provider(original) === "google" ? "Googleで再ログイン（別タブ）" : "GitHubで再ログイン（別タブ）");
+  login.href = provider(original) === "google" ? "/auth/google/login" : "/auth/login";
   login.target = "_blank";
-  login.rel = "noopener";
-  panel.append(
-    title,
-    message,
-    login,
-    button("ログインを確認して保存を再試行", async () => {
+  login.rel = "noopener noreferrer";
+  const retry = button("ログインを確認して保存を再試行", async () => {
+    retry.disabled = true;
+    try {
       const next = await api("/api/me");
-      if (
-        String(next.id) !== String(me.id) ||
-        next.repository !== me.repository
-      ) {
-        message.textContent =
-          "別の管理者では再開できません。元のアカウントでログインしてください。入力は保持しています。";
+      if (String(next.id) !== String(original.id) || provider(next) !== provider(original) ||
+          role(next) !== role(original) || next.repository !== original.repository || !next.csrf) {
+        message.textContent = "別の管理者では再開できません。元のアカウント・権限でログインしてください。入力は保持しています。";
         return;
       }
-      me = next;
-      try {
+      me = { ...next, simpleCms: next.simpleCms || next.provider === "google" };
+      panel.remove();
+      // Only retry the legacy Workspace's CAS-protected save. Shared CMS forms
+      // retain their exact DOM input; publication and other writes are never replayed.
+      if (workspace?.dirty && !$("#workspace-bar")?.hidden) {
         await workspace.flush();
-        panel.remove();
         showStatus("認証を確認し、下書きを保存しました。");
-      } catch (e) {
-        message.textContent =
-          "認証は確認できましたが保存できませんでした。入力を保持しています。" +
-          e.message;
-      }
-    }),
-  );
-  $("#workspace-bar").after(panel);
+      } else showStatus("再ログインを確認しました。入力を保持しています。もう一度「下書きを保存」を押してください。");
+    } catch (error) {
+      if (panel.isConnected) message.textContent = "ログインを確認できませんでした。同じアカウントで別タブからログインしてください。入力は保持しています。";
+      else showStatus("認証は確認できましたが保存できませんでした。入力を保持しています。" + error.message);
+    } finally { retry.disabled = false; }
+  });
+  panel.append(title, message, login, retry);
+  // The legacy workspace bar is created only for GitHub owners.
+  // Mount outside #view so both providers retain their editor and recovery state.
+  $("#view").before(panel);
+  panel.scrollIntoView({ block: "nearest" });
 }
 export const showStatus = (value) => {
   $("#status").textContent = value;
@@ -463,7 +469,7 @@ async function start() {
   } catch (e) {
     showStatus(
       e.message === "login_required"
-        ? "GitHubでログインしてください。"
+        ? "GitHubまたはGoogleでログインしてください。"
         : e.message,
     );
   }

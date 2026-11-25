@@ -22,6 +22,8 @@ import {
   open,
   cookie,
   cookies,
+  sessionLifetimeMs,
+  sessionLifetimeSeconds,
   body,
   allow,
   csrf,
@@ -211,7 +213,7 @@ export class Admin {
         login: user.login,
         csrf: random(),
         token: await seal(token.access_token, this.env.SESSION_KEY),
-        expires: now + 1800000,
+        expires: Date.now() + sessionLifetimeMs,
       };
       await this.store.put("session:" + id, session, session.expires);
       const out = new Response(null, {
@@ -220,7 +222,7 @@ export class Admin {
       });
       out.headers.append(
         "Set-Cookie",
-        cookie("__Host-admin-session", id, 1800),
+        cookie("__Host-admin-session", id, sessionLifetimeSeconds),
       );
       out.headers.append("Set-Cookie", cookie("__Host-admin-oauth", "", 0));
       return out;

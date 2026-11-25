@@ -898,8 +898,11 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
         }
       } catch (error) {
         panel.dataset.cmsDirty = "true";
-        saveStatus.textContent = "保存失敗・入力保持";
-        status.textContent = ["main_changed_reload", "workspace_revision_conflict"].includes(error.message)
+        const authExpired = ["login_required", "invalid_session", "github_401", "csrf_rejected"].includes(error.code || error.message);
+        saveStatus.textContent = authExpired ? "再ログインが必要・入力保持" : "保存失敗・入力保持";
+        status.textContent = authExpired
+          ? "このタブを閉じず、上の再ログイン案内から認証を確認してから、もう一度下書きを保存してください。"
+          : ["main_changed_reload", "workspace_revision_conflict"].includes(error.message)
           ? "別の更新がありました。入力を控えてから画面を開き直してください。"
           : error.message === "cms_identity_anchor" ? "固定済みの収集アカウントはこの画面から変更できません。"
           : error.message === "affiliation_history_must_be_retained" ? "過去の所属を削除することはできません。"

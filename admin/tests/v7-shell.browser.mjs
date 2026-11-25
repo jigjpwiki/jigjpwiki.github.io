@@ -181,6 +181,42 @@ test("all roles share the shell and separate collections while viewers have read
       await page.locator("#view h2").getByText("更新履歴", { exact: true }).waitFor();
       await page.getByRole("button", { name: "履歴を読み込む", exact: true }).click();
       await page.getByText("このページに表示できる編集履歴はありません。", { exact: true }).waitFor();
+      if (role === "editor") {
+        await page.goto(base + "/#content/talent?record=talent-002");
+        const name = page.getByLabel("表示名", { exact: true });
+        await name.fill("セッション復旧テスト");
+        let attempts = 0;
+        let reauthenticated = false;
+        await page.route("**/api/cms/draft", async (route) => {
+          if (route.request().method() !== "PUT") return route.continue();
+          attempts++;
+          if (!reauthenticated) return route.fulfill({ status: 401, json: { error: "login_required" } });
+          assert.equal(route.request().headers()["x-csrf-token"], "renewed");
+          assert.equal(route.request().postDataJSON().displayName, "セッション復旧テスト");
+          return route.fulfill({ json: { revision: 2, draftId: "recovered" } });
+        });
+        const save = page.getByRole("button", { name: "下書きを保存", exact: true });
+        await save.click();
+        const recovery = page.locator("#auth-recovery");
+        await recovery.waitFor();
+        assert.equal(await recovery.getByRole("link").getAttribute("href"), "/auth/google/login");
+        assert.equal(await name.inputValue(), "セッション復旧テスト");
+        const retry = recovery.getByRole("button", { name: "ログインを確認して保存を再試行" });
+        await page.route("**/api/me", (route) => route.fulfill({ json: { id: "other", role: "editor", provider: "google", csrf: "wrong" } }));
+        await retry.click();
+        await recovery.getByText(/別の管理者では再開できません/).waitFor();
+        assert.equal(attempts, 1);
+        await page.unroute("**/api/me");
+        await page.route("**/api/me", (route) => route.fulfill({ json: { id: "editor", role: "editor", provider: "google", csrf: "renewed" } }));
+        reauthenticated = true;
+        await retry.click();
+        await recovery.waitFor({ state: "detached" });
+        assert.equal(attempts, 1);
+        assert.equal(await name.inputValue(), "セッション復旧テスト");
+        await save.click();
+        await page.getByText("下書きを保存しました。公開サイトには反映されていません。", { exact: true }).waitFor();
+        assert.equal(attempts, 2);
+      }
       assert.deepEqual(errors, []);
       await context.close();
     }

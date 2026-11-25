@@ -30,6 +30,9 @@ export const hash = async (v) =>
       ),
     ),
   );
+// Both providers use a fixed, bounded application session. OAuth state is still 5 minutes.
+export const sessionLifetimeSeconds = 7 * 24 * 60 * 60;
+export const sessionLifetimeMs = sessionLifetimeSeconds * 1000;
 export const cookie = (name, value, age) =>
   `${name}=${value}; Path=/; HttpOnly; Secure; SameSite=Lax; Max-Age=${age}`;
 export const cookies = (request) =>

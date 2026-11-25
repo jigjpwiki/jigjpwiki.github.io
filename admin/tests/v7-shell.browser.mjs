@@ -1,6 +1,8 @@
 import test from "node:test";
 import assert from "node:assert/strict";
 import http from "node:http";
+import { mkdir } from "node:fs/promises";
+import path from "node:path";
 import { readFile } from "node:fs/promises";
 import { chromium } from "../../node_modules/playwright/index.mjs";
 
@@ -66,6 +68,10 @@ test("all roles share the shell and separate collections while viewers have read
         assert.equal(await page.locator("#view h2").textContent(), label);
         assert.equal(await page.locator("#view table").count(), 1);
         await page.getByText(label + "の試験レコード", { exact: true }).waitFor();
+        if (process.env.ADMIN_V7_SCREENSHOTS && ["talent", "campaign"].includes(entity)) {
+          await mkdir(process.env.ADMIN_V7_SCREENSHOTS, { recursive: true });
+          await page.screenshot({ path: path.join(process.env.ADMIN_V7_SCREENSHOTS, `${role}-${entity}.png`), fullPage: true });
+        }
         if (role === "viewer") assert.equal(await page.locator("#view").getByRole("button", { name: /新規登録|下書きを保存|公開/ }).count(), 0);
       }
       await page.goto(base + "/#drafts");

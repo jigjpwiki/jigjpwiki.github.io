@@ -1,0 +1,882 @@
+{
+  "version": 2,
+  "batchId": "wlUCNWYtMZLEYQJxkRF7BvpBIyyYCr-VmuEeKxXYIHo",
+  "actor": "900122208316251340881522085640042137117242",
+  "createdAt": "2026-11-25T16:30:27.151Z",
+  "baseCommit": "21a2ce973c93dd8a082021dad7f374d202a324f5",
+  "reason": null,
+  "submissionId": "wlUCNWYtMZLEYQJxkRF7BvpBIyyYCr-VmuEeKxXYIHo",
+  "branch": "admin/change-wlUCNWYtMZLEYQJxkRF7BvpBIyyYCr-VmuEeKxXYIHo",
+  "operations": [
+    {
+      "operationId": "cms-musicvideo-dddbad683ac04cd89e5e9858",
+      "entity": "musicVideo",
+      "recordId": "mv-000044",
+      "action": "create",
+      "changedFields": [
+        "talentIds",
+        "visibility",
+        "youtubeId",
+        "type",
+        "songId",
+        "registeredAt",
+        "rawSongTitle",
+        "id"
+      ],
+      "before": null,
+      "after": {
+        "talentIds": [
+          "tal-000008",
+          "tal-000007",
+          "tal-000011"
+        ],
+        "visibility": "public",
+        "youtubeId": "PUWeJMDqQR8",
+        "type": "original",
+        "songId": "song-000097",
+        "registeredAt": "2026-11-25T16:27:56.528Z",
+        "rawSongTitle": "Breeze In The Sun",
+        "id": "mv-000044"
+      }
+    },
+    {
+      "operationId": "cms-media-dddbad683ac04cd89e5e9858",
+      "entity": "video",
+      "recordId": "PUWeJMDqQR8",
+      "action": "create",
+      "changedFields": [
+        "youtubeId",
+        "channelId",
+        "title",
+        "publishedAt",
+        "startedAt",
+        "endedAt",
+        "durationSeconds",
+        "availability",
+        "visibility"
+      ],
+      "before": null,
+      "after": {
+        "youtubeId": "PUWeJMDqQR8",
+        "channelId": "UC_cCW1xmXwRFp1tX-RD2X1Q",
+        "title": "【オリジナル曲】『Breeze in the Sun』/ Sputrip 1st【公式MV】",
+        "publishedAt": "2021-04-08T12:00:08.000Z",
+        "startedAt": null,
+        "endedAt": null,
+        "durationSeconds": null,
+        "availability": "public",
+        "visibility": "public"
+      }
+    },
+    {
+      "operationId": "cms-new-song-dddbad683ac04cd89e5e9858",
+      "entity": "song",
+      "recordId": "song-000097",
+      "action": "create",
+      "changedFields": [
+        "title",
+        "originalArtists",
+        "identityUrl",
+        "aliases",
+        "readings",
+        "visibility",
+        "id"
+      ],
+      "before": null,
+      "after": {
+        "title": "Breeze In The Sun",
+        "originalArtists": [
+          "Sputrip(暁月クララ・常磐カナメ・香鳴ハノン)"
+        ],
+        "identityUrl": "https://www.youtube.com/watch?v=PUWeJMDqQR8",
+        "aliases": [],
+        "readings": [],
+        "visibility": "public",
+        "id": "song-000097"
+      }
+    },
+    {
+      "operationId": "cms-musicvideo-3c77f890df4b4d69a760a311",
+      "entity": "musicVideo",
+      "recordId": "mv-000045",
+      "action": "create",
+      "changedFields": [
+        "talentIds",
+        "visibility",
+        "youtubeId",
+        "type",
+        "songId",
+        "registeredAt",
+        "rawSongTitle",
+        "id"
+      ],
+      "before": null,
+      "after": {
+        "talentIds": [
+          "tal-000008",
+          "tal-000007",
+          "tal-000011"
+        ],
+        "visibility": "public",
+        "youtubeId": "KdP6xlOHesM",
+        "type": "original",
+        "songId": "song-000098",
+        "registeredAt": "2026-11-25T16:28:13.351Z",
+        "rawSongTitle": "光の惑星",
+        "id": "mv-000045"
+      }
+    },
+    {
+      "operationId": "cms-media-3c77f890df4b4d69a760a311",
+      "entity": "video",
+      "recordId": "KdP6xlOHesM",
+      "action": "create",
+      "changedFields": [
+        "youtubeId",
+        "channelId",
+        "title",
+        "publishedAt",
+        "startedAt",
+        "endedAt",
+        "durationSeconds",
+        "availability",
+        "visibility"
+      ],
+      "before": null,
+      "after": {
+        "youtubeId": "KdP6xlOHesM",
+        "channelId": "UC_cCW1xmXwRFp1tX-RD2X1Q",
+        "title": "【オリジナル曲】『光の惑星』/ Sputrip 2nd【公式MV】",
+        "publishedAt": "2021-02-23T12:00:14.000Z",
+        "startedAt": null,
+        "endedAt": null,
+        "durationSeconds": null,
+        "availability": "public",
+        "visibility": "public"
+      }
+    },
+    {
+      "operationId": "cms-new-song-3c77f890df4b4d69a760a311",
+      "entity": "song",
+      "recordId": "song-000098",
+      "action": "create",
+      "changedFields": [
+        "title",
+        "originalArtists",
+        "identityUrl",
+        "aliases",
+        "readings",
+        "visibility",
+        "id"
+      ],
+      "before": null,
+      "after": {
+        "title": "光の惑星",
+        "originalArtists": [
+          "Sputrip(暁月クララ・常磐カナメ・香鳴ハノン)"
+        ],
+        "identityUrl": "https://www.youtube.com/watch?v=KdP6xlOHesM",
+        "aliases": [],
+        "readings": [],
+        "visibility": "public",
+        "id": "song-000098"
+      }
+    },
+    {
+      "operationId": "cms-musicvideo-9e8b758dcbdb4650b15a62c7",
+      "entity": "musicVideo",
+      "recordId": "mv-000046",
+      "action": "create",
+      "changedFields": [
+        "talentIds",
+        "visibility",
+        "youtubeId",
+        "type",
+        "songId",
+        "registeredAt",
+        "rawSongTitle",
+        "id"
+      ],
+      "before": null,
+      "after": {
+        "talentIds": [
+          "tal-000008",
+          "tal-000007",
+          "tal-000011"
+        ],
+        "visibility": "public",
+        "youtubeId": "_cjzueb-tZk",
+        "type": "original",
+        "songId": "song-000099",
+        "registeredAt": "2026-11-25T16:28:26.968Z",
+        "rawSongTitle": "Citylight Fantasy",
+        "id": "mv-000046"
+      }
+    },
+    {
+      "operationId": "cms-media-9e8b758dcbdb4650b15a62c7",
+      "entity": "video",
+      "recordId": "_cjzueb-tZk",
+      "action": "create",
+      "changedFields": [
+        "youtubeId",
+        "channelId",
+        "title",
+        "publishedAt",
+        "startedAt",
+        "endedAt",
+        "durationSeconds",
+        "availability",
+        "visibility"
+      ],
+      "before": null,
+      "after": {
+        "youtubeId": "_cjzueb-tZk",
+        "channelId": "UC_cCW1xmXwRFp1tX-RD2X1Q",
+        "title": "【オリジナル曲】『Citylight Fantasy』/ Sputrip 3rd【公式MV】",
+        "publishedAt": "2021-12-26T12:00:15.000Z",
+        "startedAt": null,
+        "endedAt": null,
+        "durationSeconds": null,
+        "availability": "public",
+        "visibility": "public"
+      }
+    },
+    {
+      "operationId": "cms-new-song-9e8b758dcbdb4650b15a62c7",
+      "entity": "song",
+      "recordId": "song-000099",
+      "action": "create",
+      "changedFields": [
+        "title",
+        "originalArtists",
+        "identityUrl",
+        "aliases",
+        "readings",
+        "visibility",
+        "id"
+      ],
+      "before": null,
+      "after": {
+        "title": "Citylight Fantasy",
+        "originalArtists": [
+          "Sputrip(暁月クララ・常磐カナメ・香鳴ハノン)"
+        ],
+        "identityUrl": "https://www.youtube.com/watch?v=_cjzueb-tZk",
+        "aliases": [],
+        "readings": [],
+        "visibility": "public",
+        "id": "song-000099"
+      }
+    },
+    {
+      "operationId": "cms-musicvideo-6bb1b37b45fd49d2bfa0243e",
+      "entity": "musicVideo",
+      "recordId": "mv-000047",
+      "action": "create",
+      "changedFields": [
+        "talentIds",
+        "visibility",
+        "youtubeId",
+        "type",
+        "songId",
+        "registeredAt",
+        "rawSongTitle",
+        "id"
+      ],
+      "before": null,
+      "after": {
+        "talentIds": [
+          "tal-000008",
+          "tal-000007",
+          "tal-000011"
+        ],
+        "visibility": "public",
+        "youtubeId": "uf9aGbBPlqM",
+        "type": "original",
+        "songId": "song-000100",
+        "registeredAt": "2026-11-25T16:28:44.684Z",
+        "rawSongTitle": "Dreamin’Train♡",
+        "id": "mv-000047"
+      }
+    },
+    {
+      "operationId": "cms-media-6bb1b37b45fd49d2bfa0243e",
+      "entity": "video",
+      "recordId": "uf9aGbBPlqM",
+      "action": "create",
+      "changedFields": [
+        "youtubeId",
+        "channelId",
+        "title",
+        "publishedAt",
+        "startedAt",
+        "endedAt",
+        "durationSeconds",
+        "availability",
+        "visibility"
+      ],
+      "before": null,
+      "after": {
+        "youtubeId": "uf9aGbBPlqM",
+        "channelId": "UC_cCW1xmXwRFp1tX-RD2X1Q",
+        "title": "【オリジナル曲】『Dreamin'Train♡』/ Sputrip 4th【公式MV】",
+        "publishedAt": "2022-08-04T12:00:16.000Z",
+        "startedAt": null,
+        "endedAt": null,
+        "durationSeconds": null,
+        "availability": "public",
+        "visibility": "public"
+      }
+    },
+    {
+      "operationId": "cms-new-song-6bb1b37b45fd49d2bfa0243e",
+      "entity": "song",
+      "recordId": "song-000100",
+      "action": "create",
+      "changedFields": [
+        "title",
+        "originalArtists",
+        "identityUrl",
+        "aliases",
+        "readings",
+        "visibility",
+        "id"
+      ],
+      "before": null,
+      "after": {
+        "title": "Dreamin’Train♡",
+        "originalArtists": [
+          "Sputrip(暁月クララ・常磐カナメ・香鳴ハノン)"
+        ],
+        "identityUrl": "https://www.youtube.com/watch?v=uf9aGbBPlqM",
+        "aliases": [],
+        "readings": [],
+        "visibility": "public",
+        "id": "song-000100"
+      }
+    },
+    {
+      "operationId": "cms-musicvideo-d8bf9b5ad05e4e92b21b1c6c",
+      "entity": "musicVideo",
+      "recordId": "mv-000048",
+      "action": "create",
+      "changedFields": [
+        "talentIds",
+        "visibility",
+        "youtubeId",
+        "type",
+        "songId",
+        "registeredAt",
+        "rawSongTitle",
+        "id"
+      ],
+      "before": null,
+      "after": {
+        "talentIds": [
+          "tal-000008",
+          "tal-000007",
+          "tal-000011"
+        ],
+        "visibility": "public",
+        "youtubeId": "S2oZFzXHzX8",
+        "type": "original",
+        "songId": "song-000101",
+        "registeredAt": "2026-11-25T16:29:01.300Z",
+        "rawSongTitle": "with your JOURNEY",
+        "id": "mv-000048"
+      }
+    },
+    {
+      "operationId": "cms-media-d8bf9b5ad05e4e92b21b1c6c",
+      "entity": "video",
+      "recordId": "S2oZFzXHzX8",
+      "action": "create",
+      "changedFields": [
+        "youtubeId",
+        "channelId",
+        "title",
+        "publishedAt",
+        "startedAt",
+        "endedAt",
+        "durationSeconds",
+        "availability",
+        "visibility"
+      ],
+      "before": null,
+      "after": {
+        "youtubeId": "S2oZFzXHzX8",
+        "channelId": "UC_cCW1xmXwRFp1tX-RD2X1Q",
+        "title": "【オリジナル曲】『with your JOURNEY』/ Sputrip 5th【公式MV】",
+        "publishedAt": "2022-08-09T12:00:11.000Z",
+        "startedAt": null,
+        "endedAt": null,
+        "durationSeconds": null,
+        "availability": "public",
+        "visibility": "public"
+      }
+    },
+    {
+      "operationId": "cms-new-song-d8bf9b5ad05e4e92b21b1c6c",
+      "entity": "song",
+      "recordId": "song-000101",
+      "action": "create",
+      "changedFields": [
+        "title",
+        "originalArtists",
+        "identityUrl",
+        "aliases",
+        "readings",
+        "visibility",
+        "id"
+      ],
+      "before": null,
+      "after": {
+        "title": "with your JOURNEY",
+        "originalArtists": [
+          "Sputrip(暁月クララ・常磐カナメ・香鳴ハノン)"
+        ],
+        "identityUrl": "https://www.youtube.com/watch?v=S2oZFzXHzX8",
+        "aliases": [],
+        "readings": [],
+        "visibility": "public",
+        "id": "song-000101"
+      }
+    },
+    {
+      "operationId": "cms-musicvideo-3a61cde5b878449d85aecb41",
+      "entity": "musicVideo",
+      "recordId": "mv-000049",
+      "action": "create",
+      "changedFields": [
+        "talentIds",
+        "visibility",
+        "youtubeId",
+        "type",
+        "songId",
+        "registeredAt",
+        "rawSongTitle",
+        "id"
+      ],
+      "before": null,
+      "after": {
+        "talentIds": [
+          "tal-000008",
+          "tal-000007",
+          "tal-000011"
+        ],
+        "visibility": "public",
+        "youtubeId": "NZk1e68uie8",
+        "type": "original",
+        "songId": "song-000102",
+        "registeredAt": "2026-11-25T16:29:17.449Z",
+        "rawSongTitle": "Starry☆Melody",
+        "id": "mv-000049"
+      }
+    },
+    {
+      "operationId": "cms-media-3a61cde5b878449d85aecb41",
+      "entity": "video",
+      "recordId": "NZk1e68uie8",
+      "action": "create",
+      "changedFields": [
+        "youtubeId",
+        "channelId",
+        "title",
+        "publishedAt",
+        "startedAt",
+        "endedAt",
+        "durationSeconds",
+        "availability",
+        "visibility"
+      ],
+      "before": null,
+      "after": {
+        "youtubeId": "NZk1e68uie8",
+        "channelId": "UC_cCW1xmXwRFp1tX-RD2X1Q",
+        "title": "【オリジナル曲】『Starry☆Melody』/ Sputrip 6th【公式MV】",
+        "publishedAt": "2022-09-04T10:15:11.000Z",
+        "startedAt": null,
+        "endedAt": null,
+        "durationSeconds": null,
+        "availability": "public",
+        "visibility": "public"
+      }
+    },
+    {
+      "operationId": "cms-new-song-3a61cde5b878449d85aecb41",
+      "entity": "song",
+      "recordId": "song-000102",
+      "action": "create",
+      "changedFields": [
+        "title",
+        "originalArtists",
+        "identityUrl",
+        "aliases",
+        "readings",
+        "visibility",
+        "id"
+      ],
+      "before": null,
+      "after": {
+        "title": "Starry☆Melody",
+        "originalArtists": [
+          "Sputrip(暁月クララ・常磐カナメ・香鳴ハノン)"
+        ],
+        "identityUrl": "https://www.youtube.com/watch?v=NZk1e68uie8",
+        "aliases": [],
+        "readings": [],
+        "visibility": "public",
+        "id": "song-000102"
+      }
+    },
+    {
+      "operationId": "cms-musicvideo-bc6f6f6828f24dfdb89145a9",
+      "entity": "musicVideo",
+      "recordId": "mv-000050",
+      "action": "create",
+      "changedFields": [
+        "talentIds",
+        "visibility",
+        "youtubeId",
+        "type",
+        "songId",
+        "registeredAt",
+        "rawSongTitle",
+        "id"
+      ],
+      "before": null,
+      "after": {
+        "talentIds": [
+          "tal-000008",
+          "tal-000007",
+          "tal-000011"
+        ],
+        "visibility": "public",
+        "youtubeId": "pHxVKq8QoTY",
+        "type": "original",
+        "songId": "song-000103",
+        "registeredAt": "2026-11-25T16:29:31.731Z",
+        "rawSongTitle": "アイドライフライト",
+        "id": "mv-000050"
+      }
+    },
+    {
+      "operationId": "cms-media-bc6f6f6828f24dfdb89145a9",
+      "entity": "video",
+      "recordId": "pHxVKq8QoTY",
+      "action": "create",
+      "changedFields": [
+        "youtubeId",
+        "channelId",
+        "title",
+        "publishedAt",
+        "startedAt",
+        "endedAt",
+        "durationSeconds",
+        "availability",
+        "visibility"
+      ],
+      "before": null,
+      "after": {
+        "youtubeId": "pHxVKq8QoTY",
+        "channelId": "UC_cCW1xmXwRFp1tX-RD2X1Q",
+        "title": "【オリジナル曲】『アイドライフライト』/ Sputrip 7th【公式MV】",
+        "publishedAt": "2023-02-24T12:00:07.000Z",
+        "startedAt": null,
+        "endedAt": null,
+        "durationSeconds": null,
+        "availability": "public",
+        "visibility": "public"
+      }
+    },
+    {
+      "operationId": "cms-new-song-bc6f6f6828f24dfdb89145a9",
+      "entity": "song",
+      "recordId": "song-000103",
+      "action": "create",
+      "changedFields": [
+        "title",
+        "originalArtists",
+        "identityUrl",
+        "aliases",
+        "readings",
+        "visibility",
+        "id"
+      ],
+      "before": null,
+      "after": {
+        "title": "アイドライフライト",
+        "originalArtists": [
+          "Sputrip(暁月クララ・常磐カナメ・香鳴ハノン)"
+        ],
+        "identityUrl": "https://www.youtube.com/watch?v=pHxVKq8QoTY",
+        "aliases": [],
+        "readings": [],
+        "visibility": "public",
+        "id": "song-000103"
+      }
+    },
+    {
+      "operationId": "cms-musicvideo-5e0d8e56971d4324aa0dab42",
+      "entity": "musicVideo",
+      "recordId": "mv-000051",
+      "action": "create",
+      "changedFields": [
+        "talentIds",
+        "visibility",
+        "youtubeId",
+        "type",
+        "songId",
+        "registeredAt",
+        "rawSongTitle",
+        "id"
+      ],
+      "before": null,
+      "after": {
+        "talentIds": [
+          "tal-000008",
+          "tal-000007",
+          "tal-000011"
+        ],
+        "visibility": "public",
+        "youtubeId": "WfOjIJFTt_Q",
+        "type": "original",
+        "songId": "song-000104",
+        "registeredAt": "2026-11-25T16:29:45.247Z",
+        "rawSongTitle": "トイ×トイ☆パーティー！",
+        "id": "mv-000051"
+      }
+    },
+    {
+      "operationId": "cms-media-5e0d8e56971d4324aa0dab42",
+      "entity": "video",
+      "recordId": "WfOjIJFTt_Q",
+      "action": "create",
+      "changedFields": [
+        "youtubeId",
+        "channelId",
+        "title",
+        "publishedAt",
+        "startedAt",
+        "endedAt",
+        "durationSeconds",
+        "availability",
+        "visibility"
+      ],
+      "before": null,
+      "after": {
+        "youtubeId": "WfOjIJFTt_Q",
+        "channelId": "UC_cCW1xmXwRFp1tX-RD2X1Q",
+        "title": "【オリジナル曲】『トイ×トイ☆パーティー！』/ Sputrip 8th【公式MV】",
+        "publishedAt": "2023-09-20T11:01:02.000Z",
+        "startedAt": null,
+        "endedAt": null,
+        "durationSeconds": null,
+        "availability": "public",
+        "visibility": "public"
+      }
+    },
+    {
+      "operationId": "cms-new-song-5e0d8e56971d4324aa0dab42",
+      "entity": "song",
+      "recordId": "song-000104",
+      "action": "create",
+      "changedFields": [
+        "title",
+        "originalArtists",
+        "identityUrl",
+        "aliases",
+        "readings",
+        "visibility",
+        "id"
+      ],
+      "before": null,
+      "after": {
+        "title": "トイ×トイ☆パーティー！",
+        "originalArtists": [
+          "Sputrip(暁月クララ・常磐カナメ・香鳴ハノン)"
+        ],
+        "identityUrl": "https://www.youtube.com/watch?v=WfOjIJFTt_Q",
+        "aliases": [],
+        "readings": [],
+        "visibility": "public",
+        "id": "song-000104"
+      }
+    },
+    {
+      "operationId": "cms-musicvideo-31592ca74375405280dc198f",
+      "entity": "musicVideo",
+      "recordId": "mv-000052",
+      "action": "create",
+      "changedFields": [
+        "talentIds",
+        "visibility",
+        "youtubeId",
+        "type",
+        "songId",
+        "registeredAt",
+        "rawSongTitle",
+        "id"
+      ],
+      "before": null,
+      "after": {
+        "talentIds": [
+          "tal-000008",
+          "tal-000007",
+          "tal-000011"
+        ],
+        "visibility": "public",
+        "youtubeId": "qNMoLNr45L8",
+        "type": "original",
+        "songId": "song-000105",
+        "registeredAt": "2026-11-25T16:30:00.235Z",
+        "rawSongTitle": "Like A Night Cruising",
+        "id": "mv-000052"
+      }
+    },
+    {
+      "operationId": "cms-media-31592ca74375405280dc198f",
+      "entity": "video",
+      "recordId": "qNMoLNr45L8",
+      "action": "create",
+      "changedFields": [
+        "youtubeId",
+        "channelId",
+        "title",
+        "publishedAt",
+        "startedAt",
+        "endedAt",
+        "durationSeconds",
+        "availability",
+        "visibility"
+      ],
+      "before": null,
+      "after": {
+        "youtubeId": "qNMoLNr45L8",
+        "channelId": "UC_cCW1xmXwRFp1tX-RD2X1Q",
+        "title": "【オリジナル曲】Like A Night Cruising / Sputrip 9th Single【パレプロ / MV】",
+        "publishedAt": "2024-09-14T13:00:07.000Z",
+        "startedAt": null,
+        "endedAt": null,
+        "durationSeconds": null,
+        "availability": "public",
+        "visibility": "public"
+      }
+    },
+    {
+      "operationId": "cms-new-song-31592ca74375405280dc198f",
+      "entity": "song",
+      "recordId": "song-000105",
+      "action": "create",
+      "changedFields": [
+        "title",
+        "originalArtists",
+        "identityUrl",
+        "aliases",
+        "readings",
+        "visibility",
+        "id"
+      ],
+      "before": null,
+      "after": {
+        "title": "Like A Night Cruising",
+        "originalArtists": [
+          "Sputrip(暁月クララ・常磐カナメ・香鳴ハノン)"
+        ],
+        "identityUrl": "https://www.youtube.com/watch?v=qNMoLNr45L8",
+        "aliases": [],
+        "readings": [],
+        "visibility": "public",
+        "id": "song-000105"
+      }
+    },
+    {
+      "operationId": "cms-musicvideo-42849f73a5e148b093b51df5",
+      "entity": "musicVideo",
+      "recordId": "mv-000053",
+      "action": "create",
+      "changedFields": [
+        "talentIds",
+        "visibility",
+        "youtubeId",
+        "type",
+        "songId",
+        "registeredAt",
+        "rawSongTitle",
+        "id"
+      ],
+      "before": null,
+      "after": {
+        "talentIds": [
+          "tal-000008",
+          "tal-000007",
+          "tal-000011"
+        ],
+        "visibility": "public",
+        "youtubeId": "TmUJZVlLCGY",
+        "type": "original",
+        "songId": "song-000106",
+        "registeredAt": "2026-11-25T16:30:15.387Z",
+        "rawSongTitle": "浮かれたってムテキ",
+        "id": "mv-000053"
+      }
+    },
+    {
+      "operationId": "cms-media-42849f73a5e148b093b51df5",
+      "entity": "video",
+      "recordId": "TmUJZVlLCGY",
+      "action": "create",
+      "changedFields": [
+        "youtubeId",
+        "channelId",
+        "title",
+        "publishedAt",
+        "startedAt",
+        "endedAt",
+        "durationSeconds",
+        "availability",
+        "visibility"
+      ],
+      "before": null,
+      "after": {
+        "youtubeId": "TmUJZVlLCGY",
+        "channelId": "UC_cCW1xmXwRFp1tX-RD2X1Q",
+        "title": "【オリジナル曲】浮かれたってムテキ / Sputrip 10th Single【パレプロ / MV】",
+        "publishedAt": "2026-07-07T11:55:06.000Z",
+        "startedAt": null,
+        "endedAt": null,
+        "durationSeconds": null,
+        "availability": "public",
+        "visibility": "public"
+      }
+    },
+    {
+      "operationId": "cms-new-song-42849f73a5e148b093b51df5",
+      "entity": "song",
+      "recordId": "song-000106",
+      "action": "create",
+      "changedFields": [
+        "title",
+        "originalArtists",
+        "identityUrl",
+        "aliases",
+        "readings",
+        "visibility",
+        "id"
+      ],
+      "before": null,
+      "after": {
+        "title": "浮かれたってムテキ",
+        "originalArtists": [
+          "Sputrip(暁月クララ・常磐カナメ・香鳴ハノン)"
+        ],
+        "identityUrl": "https://www.youtube.com/watch?v=TmUJZVlLCGY",
+        "aliases": [],
+        "readings": [],
+        "visibility": "public",
+        "id": "song-000106"
+      }
+    }
+  ]
+}

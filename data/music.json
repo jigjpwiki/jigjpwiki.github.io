@@ -1223,6 +1223,116 @@
       "readings": [],
       "visibility": "public",
       "id": "song-000096"
+    },
+    {
+      "title": "Breeze In The Sun",
+      "originalArtists": [
+        "Sputrip(暁月クララ・常磐カナメ・香鳴ハノン)"
+      ],
+      "identityUrl": "https://www.youtube.com/watch?v=PUWeJMDqQR8",
+      "aliases": [],
+      "readings": [],
+      "visibility": "public",
+      "id": "song-000097"
+    },
+    {
+      "title": "光の惑星",
+      "originalArtists": [
+        "Sputrip(暁月クララ・常磐カナメ・香鳴ハノン)"
+      ],
+      "identityUrl": "https://www.youtube.com/watch?v=KdP6xlOHesM",
+      "aliases": [],
+      "readings": [],
+      "visibility": "public",
+      "id": "song-000098"
+    },
+    {
+      "title": "Citylight Fantasy",
+      "originalArtists": [
+        "Sputrip(暁月クララ・常磐カナメ・香鳴ハノン)"
+      ],
+      "identityUrl": "https://www.youtube.com/watch?v=_cjzueb-tZk",
+      "aliases": [],
+      "readings": [],
+      "visibility": "public",
+      "id": "song-000099"
+    },
+    {
+      "title": "Dreamin’Train♡",
+      "originalArtists": [
+        "Sputrip(暁月クララ・常磐カナメ・香鳴ハノン)"
+      ],
+      "identityUrl": "https://www.youtube.com/watch?v=uf9aGbBPlqM",
+      "aliases": [],
+      "readings": [],
+      "visibility": "public",
+      "id": "song-000100"
+    },
+    {
+      "title": "with your JOURNEY",
+      "originalArtists": [
+        "Sputrip(暁月クララ・常磐カナメ・香鳴ハノン)"
+      ],
+      "identityUrl": "https://www.youtube.com/watch?v=S2oZFzXHzX8",
+      "aliases": [],
+      "readings": [],
+      "visibility": "public",
+      "id": "song-000101"
+    },
+    {
+      "title": "Starry☆Melody",
+      "originalArtists": [
+        "Sputrip(暁月クララ・常磐カナメ・香鳴ハノン)"
+      ],
+      "identityUrl": "https://www.youtube.com/watch?v=NZk1e68uie8",
+      "aliases": [],
+      "readings": [],
+      "visibility": "public",
+      "id": "song-000102"
+    },
+    {
+      "title": "アイドライフライト",
+      "originalArtists": [
+        "Sputrip(暁月クララ・常磐カナメ・香鳴ハノン)"
+      ],
+      "identityUrl": "https://www.youtube.com/watch?v=pHxVKq8QoTY",
+      "aliases": [],
+      "readings": [],
+      "visibility": "public",
+      "id": "song-000103"
+    },
+    {
+      "title": "トイ×トイ☆パーティー！",
+      "originalArtists": [
+        "Sputrip(暁月クララ・常磐カナメ・香鳴ハノン)"
+      ],
+      "identityUrl": "https://www.youtube.com/watch?v=WfOjIJFTt_Q",
+      "aliases": [],
+      "readings": [],
+      "visibility": "public",
+      "id": "song-000104"
+    },
+    {
+      "title": "Like A Night Cruising",
+      "originalArtists": [
+        "Sputrip(暁月クララ・常磐カナメ・香鳴ハノン)"
+      ],
+      "identityUrl": "https://www.youtube.com/watch?v=qNMoLNr45L8",
+      "aliases": [],
+      "readings": [],
+      "visibility": "public",
+      "id": "song-000105"
+    },
+    {
+      "title": "浮かれたってムテキ",
+      "originalArtists": [
+        "Sputrip(暁月クララ・常磐カナメ・香鳴ハノン)"
+      ],
+      "identityUrl": "https://www.youtube.com/watch?v=TmUJZVlLCGY",
+      "aliases": [],
+      "readings": [],
+      "visibility": "public",
+      "id": "song-000106"
     }
   ],
   "musicVideos": [
@@ -1789,6 +1899,146 @@
       "registeredAt": "2026-11-25T13:43:01.302Z",
       "rawSongTitle": "RAISE MYSELF",
       "id": "mv-000043"
+    },
+    {
+      "talentIds": [
+        "tal-000008",
+        "tal-000007",
+        "tal-000011"
+      ],
+      "visibility": "public",
+      "youtubeId": "PUWeJMDqQR8",
+      "type": "original",
+      "songId": "song-000097",
+      "registeredAt": "2026-11-25T16:27:56.528Z",
+      "rawSongTitle": "Breeze In The Sun",
+      "id": "mv-000044"
+    },
+    {
+      "talentIds": [
+        "tal-000008",
+        "tal-000007",
+        "tal-000011"
+      ],
+      "visibility": "public",
+      "youtubeId": "KdP6xlOHesM",
+      "type": "original",
+      "songId": "song-000098",
+      "registeredAt": "2026-11-25T16:28:13.351Z",
+      "rawSongTitle": "光の惑星",
+      "id": "mv-000045"
+    },
+    {
+      "talentIds": [
+        "tal-000008",
+        "tal-000007",
+        "tal-000011"
+      ],
+      "visibility": "public",
+      "youtubeId": "_cjzueb-tZk",
+      "type": "original",
+      "songId": "song-000099",
+      "registeredAt": "2026-11-25T16:28:26.968Z",
+      "rawSongTitle": "Citylight Fantasy",
+      "id": "mv-000046"
+    },
+    {
+      "talentIds": [
+        "tal-000008",
+        "tal-000007",
+        "tal-000011"
+      ],
+      "visibility": "public",
+      "youtubeId": "uf9aGbBPlqM",
+      "type": "original",
+      "songId": "song-000100",
+      "registeredAt": "2026-11-25T16:28:44.684Z",
+      "rawSongTitle": "Dreamin’Train♡",
+      "id": "mv-000047"
+    },
+    {
+      "talentIds": [
+        "tal-000008",
+        "tal-000007",
+        "tal-000011"
+      ],
+      "visibility": "public",
+      "youtubeId": "S2oZFzXHzX8",
+      "type": "original",
+      "songId": "song-000101",
+      "registeredAt": "2026-11-25T16:29:01.300Z",
+      "rawSongTitle": "with your JOURNEY",
+      "id": "mv-000048"
+    },
+    {
+      "talentIds": [
+        "tal-000008",
+        "tal-000007",
+        "tal-000011"
+      ],
+      "visibility": "public",
+      "youtubeId": "NZk1e68uie8",
+      "type": "original",
+      "songId": "song-000102",
+      "registeredAt": "2026-11-25T16:29:17.449Z",
+      "rawSongTitle": "Starry☆Melody",
+      "id": "mv-000049"
+    },
+    {
+      "talentIds": [
+        "tal-000008",
+        "tal-000007",
+        "tal-000011"
+      ],
+      "visibility": "public",
+      "youtubeId": "pHxVKq8QoTY",
+      "type": "original",
+      "songId": "song-000103",
+      "registeredAt": "2026-11-25T16:29:31.731Z",
+      "rawSongTitle": "アイドライフライト",
+      "id": "mv-000050"
+    },
+    {
+      "talentIds": [
+        "tal-000008",
+        "tal-000007",
+        "tal-000011"
+      ],
+      "visibility": "public",
+      "youtubeId": "WfOjIJFTt_Q",
+      "type": "original",
+      "songId": "song-000104",
+      "registeredAt": "2026-11-25T16:29:45.247Z",
+      "rawSongTitle": "トイ×トイ☆パーティー！",
+      "id": "mv-000051"
+    },
+    {
+      "talentIds": [
+        "tal-000008",
+        "tal-000007",
+        "tal-000011"
+      ],
+      "visibility": "public",
+      "youtubeId": "qNMoLNr45L8",
+      "type": "original",
+      "songId": "song-000105",
+      "registeredAt": "2026-11-25T16:30:00.235Z",
+      "rawSongTitle": "Like A Night Cruising",
+      "id": "mv-000052"
+    },
+    {
+      "talentIds": [
+        "tal-000008",
+        "tal-000007",
+        "tal-000011"
+      ],
+      "visibility": "public",
+      "youtubeId": "TmUJZVlLCGY",
+      "type": "original",
+      "songId": "song-000106",
+      "registeredAt": "2026-11-25T16:30:15.387Z",
+      "rawSongTitle": "浮かれたってムテキ",
+      "id": "mv-000053"
     }
   ]
 }

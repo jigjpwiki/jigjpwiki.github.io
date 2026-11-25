@@ -67,8 +67,21 @@ test("all roles share the shell and separate collections while viewers have read
       assert.equal(await page.locator("nav[aria-label='管理ナビゲーション']").count(), 1);
       assert.ok(await page.locator(".cms-navigation a svg[aria-hidden=true]").count() >= 18);
       assert.equal(await page.locator("[data-owner-only]").isVisible(), role === "owner");
+      if (role === "editor") {
+        const menu = page.getByRole("button", { name: "メニュー", exact: true });
+        assert.equal(await menu.getAttribute("aria-expanded"), "false");
+        await menu.click();
+        await page.locator("#admin-nav").getByRole("link", { name: "VTuber", exact: true }).click();
+        assert.equal(await menu.getAttribute("aria-expanded"), "false");
+      }
+      if (process.env.ADMIN_V7_SCREENSHOTS) {
+        await mkdir(process.env.ADMIN_V7_SCREENSHOTS, { recursive: true });
+        await page.screenshot({ path: path.join(process.env.ADMIN_V7_SCREENSHOTS, role + "-initial.png"), fullPage: true });
+      }
       for (const [entity, label] of collection) {
         await page.goto(base + "/#content/" + entity);
+        await page.locator("#view h2").getByText(label, { exact: true }).waitFor();
+        await page.getByRole("button", { name: label + "の試験レコード", exact: true }).waitFor();
         await page.locator("#view table").waitFor();
         assert.equal(await page.locator("#view h2").textContent(), label);
         assert.equal(await page.locator("#view table").count(), 1);
@@ -90,6 +103,9 @@ test("all roles share the shell and separate collections while viewers have read
           await page.locator(".cms-columns summary").click();
           await table.getByRole("button", { name: label + "の試験レコード", exact: true }).click();
           await page.getByLabel("表示名", { exact: true }).waitFor();
+          if (process.env.ADMIN_V7_SCREENSHOTS) {
+            await page.screenshot({ path: path.join(process.env.ADMIN_V7_SCREENSHOTS, role + "-editor-before-check.png"), fullPage: true });
+          }
           assert.equal(await page.getByLabel("表示名", { exact: true }).isEnabled(), role !== "viewer");
           assert.equal(await page.getByLabel("公開サイトへの掲載状態", { exact: true }).isEnabled(), role !== "viewer");
           assert.ok(await page.locator(".cms-collection-workspace.has-editor").count());

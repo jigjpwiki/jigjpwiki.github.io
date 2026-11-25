@@ -12,9 +12,12 @@
   <body>
     <a href="#main-content" class="skip-link">本文へ移動</a>
     <header class="app-sidebar">
-      <h1>jigwiki Admin</h1>
+      <div class="cms-brand-row">
+        <h1>jigwiki Admin</h1>
+        <button type="button" id="mobile-nav-toggle" aria-expanded="true" aria-controls="admin-nav">メニュー</button>
+      </div>
       <p class="sidebar-caption">編集ワークスペース</p>
-      <nav aria-label="管理ナビゲーション" class="cms-navigation">
+      <nav id="admin-nav" aria-label="管理ナビゲーション" class="cms-navigation">
         <span class="nav-label">ワークスペース</span>
         <a href="#dashboard">ダッシュボード</a><a href="#drafts">下書き</a><a href="#publication">公開状況</a><a href="#history">更新履歴</a><a href="#search">全体検索</a>
         <span class="nav-label">人物・企画</span>

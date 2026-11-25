@@ -56,6 +56,27 @@ document.querySelector(".skip-link")?.addEventListener("click", (e) => {
   $("#main-content").focus();
 });
 let me, workspace, resumeOperationKey;
+const mobileNav = $("#admin-nav");
+const mobileToggle = $("#mobile-nav-toggle");
+const smallScreen = matchMedia("(max-width: 767px)");
+function setMobileNav(open, focus = false) {
+  mobileNav.dataset.collapsed = String(!open);
+  mobileToggle.setAttribute("aria-expanded", String(open));
+  if (focus) mobileToggle.focus();
+}
+mobileToggle.onclick = () => setMobileNav(mobileToggle.getAttribute("aria-expanded") !== "true");
+mobileNav.addEventListener("keydown", (event) => {
+  if (event.key === "Escape" && smallScreen.matches) setMobileNav(false, true);
+});
+mobileNav.addEventListener("click", (event) => {
+  const link = event.target.closest("a");
+  if (smallScreen.matches && link && !link.closest("details[data-owner-only]") && me?.simpleCms &&
+      !document.querySelector("[data-cms-dirty], [data-cms-saving]")) setMobileNav(false, true);
+});
+smallScreen.addEventListener("change", () => {
+  if (!smallScreen.matches) setMobileNav(true);
+  else if (me?.provider === "google") setMobileNav(false);
+});
 const workspaceLabels = {
   saved: "保存済み",
   unsaved: "未保存",
@@ -401,6 +422,7 @@ async function start() {
     me.simpleCms = me.simpleCms || me.provider === "google";
     if (me.provider === "google") {
       document.querySelectorAll("[data-owner-only]").forEach((item) => { item.hidden = true; });
+      if (smallScreen.matches) setMobileNav(false);
       $("#identity").textContent = me.role === "viewer" ? "閲覧者" : "編集者";
       $("#logout").onclick = async () => {
         if (!mayLeave()) return;

@@ -53,21 +53,35 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
   const selectedEntity = options.entity;
   const sections = selectedEntity ? catalog.sections.filter(({ entity }) => entity === selectedEntity) : catalog.sections;
   const browsing = ["legacy", "content", "search"].includes(view);
-  function songPicker(select, selected) {
+  function bindPicker(select, choices, selected, label, empty = "選択してください") {
     const search = el("input");
     search.type = "search";
-    const label = el("label", "曲名・原曲アーティストで検索");
-    label.append(search);
-    const refresh = (current) => {
-      const query = search.value.trim().normalize("NFKC").toLocaleLowerCase("ja");
-      select.replaceChildren(new Option("紐づけなし", ""), ...catalog.songs.filter(({ id, name }) =>
-        id === current || name.normalize("NFKC").toLocaleLowerCase("ja").includes(query),
-      ).map(({ id, name }) => new Option(name, id)));
+    search.placeholder = "名前・IDで検索";
+    search.setAttribute("aria-label", label + "を検索");
+    const group = el("div");
+    group.className = "cms-picker";
+    const summary = el("small");
+    summary.setAttribute("aria-live", "polite");
+    const norm = (text) => String(text ?? "").normalize("NFKC").toLocaleLowerCase("ja");
+    const entries = (choices || []).map((row) => ({ id: row.id, name: row.name || row.title || row.id, context: row.context || "" }));
+    function refresh(current) {
+      const query = norm(search.value.trim());
+      const matched = entries.filter((row) => norm(row.name + " " + row.id + " " + row.context).includes(query));
+      const visible = matched.filter((row) => row.id !== current).slice(0, 50);
+      const chosen = entries.find((row) => row.id === current);
+      if (current) visible.unshift(chosen || { id: current, name: current + "（現在の参照）" });
+      select.replaceChildren(new Option(empty, ""), ...visible.map((row) =>
+        new Option(row.name + (row.context ? " / " + row.context : ""), row.id)));
       select.value = current || "";
-    };
+      summary.textContent = matched.length + "件の候補" + (matched.length > 50 ? "・検索で絞り込み" : "");
+    }
     refresh(selected);
     search.oninput = () => refresh(select.value);
-    return label;
+    group.append(search, summary);
+    return group;
+  }
+  function songPicker(select, selected) {
+    return bindPicker(select, catalog.songs, selected, "曲名・原曲アーティスト", "紐づけなし");
   }
 
   const formArea = el("section");
@@ -395,6 +409,7 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
     const relationLink = (entity, id) => "#content/" + entity + "?" + new URLSearchParams({ record: id });
     function add(key, label, control, host = form) {
       const wrapping = el("label", label);
+      control.setAttribute("aria-label", label);
       control.value = input[key] ?? (["format", "activity"].includes(key) ? "unknown" : key === "kind" ? "birthday" : key === "visibility" ? "public" : "");
       wrapping.append(control);
       if (control.required) wrapping.dataset.required = "true";
@@ -483,22 +498,11 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
     if ((!input.id && !["campaign", "song", "video", "organization", "group", "offer", "performance"].includes(entity)) || entity === "talent") {
       const key = ["talent", "event"].includes(entity) ? "organization" : "talent";
       const choices = key === "organization" ? catalog.organizations : catalog.people;
-      const search = el("input");
-      search.type = "search";
-      const searchLabel = el("label", "候補を絞り込む");
-      searchLabel.append(search);
-      form.append(searchLabel);
       const select = el("select");
       select.required = !input.id;
-      function fill(query = "", active = input[key]) {
-        select.replaceChildren(new Option("選択してください", ""), ...choices
-          .filter((row) => row.name.includes(query) || row.id === active)
-          .map((row) => new Option(row.name, row.id)));
-        select.value = active || "";
-      }
-      fill();
-      add(key, key === "organization" ? "関連事務所" : "関連する人物", select);
-      search.oninput = () => fill(search.value, select.value);
+      const label = key === "organization" ? "関連事務所" : "関連する人物";
+      form.append(bindPicker(select, choices, input[key], label));
+      add(key, label, select);
     }
     for (const [key, label, choices, required] of entity === "group"
       ? [["organizationId", "関連事務所", catalog.organizations, false]]
@@ -508,24 +512,14 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
         : entity === "performance"
           ? [["karaokeId", "歌枠", catalog.sections.find((row) => row.entity === "karaoke")?.items, true],
             ["songId", "楽曲", catalog.songs, false]] : []) {
-      const search = el("input");
-      search.type = "search";
-      search.setAttribute("aria-label", label + "を検索");
       const select = el("select");
       select.required = required;
-      const fill = (query = "", selected = input[key]) => {
-        select.replaceChildren(new Option("選択してください", ""), ...(choices || [])
-          .filter((row) => (row.name || row.title).includes(query) || row.id === selected)
-          .map((row) => new Option(row.name || row.title, row.id)));
-        select.value = selected || "";
-      };
-      fill();
-      search.oninput = () => fill(search.value, select.value);
-      form.append(search);
+      const picker = bindPicker(select, choices, input[key], label);
+      form.append(picker);
       add(key, label, select);
       if (entity === "offer" && input.id) {
         select.disabled = true;
-        search.disabled = true;
+        picker.querySelector("input").disabled = true;
       }
     }
     const relations = new Map();
@@ -565,6 +559,7 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
       fieldset.append(search, summary, rows);
       form.append(fieldset);
       draw();
+      return selected;
     }
     if (catalog.contentPolicy === "all-content-v1" && (input.id || draftId)) {
       if (["anniversary", "product", "musicVideo", "karaoke"].includes(entity))
@@ -576,38 +571,12 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
         multiRelation("relatedOrganizationIds", "関連事務所", catalog.organizations, input.relatedOrganizationIds);
       }
     }
-    let selectedPeople;
-    if (["group", "performance"].includes(entity)) {
-      selectedPeople = new Set(input.talentIds || []);
-      const members = el("fieldset");
-      members.append(el("legend", entity === "group" ? "所属メンバー" : "歌唱者"));
-      const search = el("input");
-      search.type = "search";
-      search.setAttribute("aria-label", "人物を検索");
-      const choices = el("div");
-      const renderPeople = () => {
-        choices.replaceChildren(...catalog.people.filter(({ id, name }) =>
-          name.includes(search.value) || selectedPeople.has(id)).map(({ id, name }) => {
-          const label = el("label", name);
-          const input = el("input");
-          input.type = "checkbox";
-          input.checked = selectedPeople.has(id);
-          input.onchange = () => input.checked ? selectedPeople.add(id) : selectedPeople.delete(id);
-          label.prepend(input);
-          return label;
-        }));
-      };
-      renderPeople();
-      search.oninput = renderPeople;
-      members.append(search, choices);
-      form.append(members);
-    }
+    if (["group", "performance"].includes(entity))
+      multiRelation("talentIds", entity === "group" ? "所属メンバー" : "歌唱者", catalog.people, input.talentIds);
     if (entity === "product" && !input.id) {
       const campaigns = catalog.sections.find(({ entity }) => entity === "campaign")?.items || [];
       const select = el("select");
-      select.append(new Option("キャンペーンなし／新規", ""), ...campaigns.map(
-        ({ id, title }) => new Option(title, id),
-      ));
+      form.append(bindPicker(select, campaigns, input.campaignId, "キャンペーン", "キャンペーンなし／新規"));
       add("campaignId", "既存キャンペーン（任意）", select);
       add("campaignTitle", "新しいキャンペーン名（任意）", el("input"));
     }
@@ -641,9 +610,7 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
         }
         if (chooseCampaign && productId && !value.id) {
           const campaign = el("select");
-          campaign.append(new Option("キャンペーンなし", ""), ...(catalog.sections
-            .find(({ entity }) => entity === "campaign")?.items || [])
-            .map(({ id, title }) => new Option(title, id)));
+          row.append(bindPicker(campaign, catalog.sections.find(({ entity }) => entity === "campaign")?.items, value.campaignId, "関連キャンペーン", "キャンペーンなし"));
           addSaleField("campaignId", "関連キャンペーン", campaign);
         }
         const sale = { row, id: value.id, key, controls };
@@ -687,9 +654,7 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
         }
         if (!value.id) {
           const select = el("select");
-          select.append(new Option("選択してください", ""), ...catalog.people.map(
-            ({ id, name }) => new Option(name, id),
-          ));
+          row.append(bindPicker(select, catalog.people, value.talent, "関連する人物"));
           field("talent", "関連する人物", select, true);
         }
         const editor = saleEditor(value.sales || [], value.id, false);
@@ -717,21 +682,8 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
       for (const [key, control] of Object.entries(controls)) fields.set(key, control);
       form.append(details);
     }
-    if (entity === "event") {
-      const performers = el("fieldset");
-      performers.append(el("legend", "出演者"));
-      for (const person of catalog.people) {
-        const label = el("label", person.name);
-        const checkbox = el("input");
-        checkbox.type = "checkbox";
-        checkbox.name = "performer";
-        checkbox.value = person.id;
-        checkbox.checked = input.performers?.includes(person.id) ?? false;
-        label.prepend(checkbox);
-        performers.append(label);
-      }
-      form.append(performers);
-    }
+    if (entity === "event") multiRelation("performers", "出演者", catalog.people, input.performers);
+
     const tracks = [];
     const complete = el("input");
     complete.type = "checkbox";
@@ -838,15 +790,7 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
       submit.disabled = true;
       try {
         const values = Object.fromEntries([...fields].map(([key, control]) => [key, control.value]));
-        if (selectedPeople) values.talentIds = [...selectedPeople];
         for (const [key, ids] of relations) values[key] = [...ids];
-        if (entity === "event") {
-          const checked = new Set(new FormData(form).getAll("performer"));
-          values.performers = [
-            ...(input.performers || []).filter((id) => checked.delete(id)),
-            ...checked,
-          ];
-        }
         if (entity === "karaoke") {
           values.complete = complete.checked;
           values.setlist = tracks.map(({ id, key, title, song, times, work }) => ({

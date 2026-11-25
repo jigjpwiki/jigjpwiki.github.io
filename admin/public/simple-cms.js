@@ -349,6 +349,32 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
       form.append(search);
       add(key, label, select);
     }
+    let selectedPeople;
+    if (["group", "performance"].includes(entity)) {
+      selectedPeople = new Set(input.talentIds || []);
+      const members = el("fieldset");
+      members.append(el("legend", entity === "group" ? "所属メンバー" : "歌唱者"));
+      const search = el("input");
+      search.type = "search";
+      search.setAttribute("aria-label", "人物を検索");
+      const choices = el("div");
+      const renderPeople = () => {
+        choices.replaceChildren(...catalog.people.filter(({ id, name }) =>
+          name.includes(search.value) || selectedPeople.has(id)).map(({ id, name }) => {
+          const label = el("label", name);
+          const input = el("input");
+          input.type = "checkbox";
+          input.checked = selectedPeople.has(id);
+          input.onchange = () => input.checked ? selectedPeople.add(id) : selectedPeople.delete(id);
+          label.prepend(input);
+          return label;
+        }));
+      };
+      renderPeople();
+      search.oninput = renderPeople;
+      members.append(search, choices);
+      form.append(members);
+    }
     if (entity === "product" && !input.id) {
       const campaigns = catalog.sections.find(({ entity }) => entity === "campaign")?.items || [];
       const select = el("select");
@@ -551,6 +577,7 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
       submit.disabled = true;
       try {
         const values = Object.fromEntries([...fields].map(([key, control]) => [key, control.value]));
+        if (selectedPeople) values.talentIds = [...selectedPeople];
         if (entity === "event") {
           const checked = new Set(new FormData(form).getAll("performer"));
           values.performers = [

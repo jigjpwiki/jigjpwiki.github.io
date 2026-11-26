@@ -128,6 +128,13 @@ test("all roles share the shell and separate collections while viewers have read
           await page.getByLabel("公開状態で絞り込む").selectOption("public");
           assert.equal(await table.locator("tbody tr").count(), 1);
           await page.getByLabel("公開状態で絞り込む").selectOption("");
+          if (role === "owner") {
+            assert.equal(await table.locator("th[data-column=id]").count(), 0);
+            await page.locator("#page-title").click();
+            await page.keyboard.press("c");
+            assert.equal(await page.locator(".cms-global-create").evaluate(node=>node.open), true);
+            await page.locator(".cms-global-create summary").click();
+          }
           await page.locator(".cms-columns summary").click();
           await page.locator(".cms-columns").getByLabel("固定ID", { exact: true }).uncheck();
           assert.equal(await table.locator("th[data-column=id]").count(), 0);
@@ -141,6 +148,12 @@ test("all roles share the shell and separate collections while viewers have read
           assert.equal(await page.getByLabel("表示名", { exact: true }).isEnabled(), role !== "viewer");
           assert.equal(await page.getByLabel("公開サイトへの掲載状態", { exact: true }).isEnabled(), role !== "viewer");
           assert.ok(await page.locator(".cms-collection-workspace.has-editor").count());
+          if (role === "owner") {
+            await page.getByRole("button", {name:"拡大",exact:true}).click();
+            assert.ok(await page.locator(".cms-editor-expanded").count());
+            await page.getByRole("button", {name:"一覧と並べる",exact:true}).click();
+            assert.equal(await page.locator(".cms-editor-expanded").count(),0);
+          }
           assert.equal(await page.getByLabel("事務所所属状態", { exact: true }).isEnabled(), role !== "viewer");
           assert.equal(await page.getByLabel("TwitchチャンネルURL", { exact: true }).isEnabled(), role !== "viewer");
           if (role === "editor") {
@@ -249,6 +262,7 @@ test("all roles share the shell and separate collections while viewers have read
         await page.getByRole("button",{name:"単独商品を新規登録",exact:true}).click();
         assert.equal(await page.locator(".cms-goods-product").count(),1);
         assert.equal(await page.getByRole("button",{name:"商品を追加",exact:true}).count(),0);
+        assert.equal(await page.getByRole("button",{name:"保存して次を作成",exact:true}).count(),1);
         await page.getByRole("button",{name:"閉じる",exact:true}).click();
       }
       await page.locator("#page-title").click();

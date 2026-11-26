@@ -1846,7 +1846,7 @@ screen = function () {
       panel.append(review);
     }
     $("#view").replaceChildren(panel);
-    import("./simple-cms.js").then(({ mountSimpleCms }) => mountSimpleCms(panel, status, api, { entity: contentEntity, recordId, view: cmsPages[route] || "content" }))
+    import("./simple-cms.js").then(({ mountSimpleCms }) => mountSimpleCms(panel, status, api, { entity: contentEntity, recordId, view: cmsPages[route] || "content", userKey: String(me.id || me.login || me.role || "local") }))
       .catch(() => {
         status.textContent = "コンテンツを取得できませんでした。";
         const retry = node("button", "再試行");
@@ -1941,6 +1941,13 @@ if (me && location.hash === "#masters")
   loadMasters().catch((e) => showStatus(e.message));
 
 window.addEventListener("keydown", (e) => {
+  if (!e.isComposing && !e.defaultPrevented && !e.ctrlKey && !e.metaKey && !e.altKey &&
+      !e.target.closest?.("input,textarea,select,[contenteditable=true],dialog") && me?.simpleCms) {
+    const panel = document.querySelector("#view > .cms-content");
+    if (panel && e.key.toLowerCase() === "c" && panel.querySelector(".cms-global-create")) {
+      e.preventDefault(); panel.dispatchEvent(new Event("cms-create-shortcut")); return;
+    }
+  }
   if (
     !(e.ctrlKey || e.metaKey) ||
     e.altKey ||

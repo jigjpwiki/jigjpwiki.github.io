@@ -3697,7 +3697,7 @@
         }
       ],
       "agencyStatus": {
-        "value": "unknown"
+        "value": "unaffiliated"
       },
       "activityStatus": {
         "value": "ended"
@@ -3730,7 +3730,7 @@
         }
       ],
       "agencyStatus": {
-        "value": "unknown"
+        "value": "unaffiliated"
       },
       "activityStatus": {
         "value": "ended"
@@ -4249,6 +4249,33 @@
         "value": "ended"
       },
       "id": "tal-000101"
+    },
+    {
+      "aliases": [],
+      "affiliations": [
+        {
+          "organizationId": "org-000002",
+          "status": "former",
+          "from": "2025-05-10",
+          "to": "2025-08-31"
+        }
+      ],
+      "agencyStatus": {
+        "value": "unaffiliated"
+      },
+      "accounts": [],
+      "wiki": {
+        "url": "https://wikiwiki.jp/jigjp/%E6%98%9F%E3%83%8E%E5%A4%A2%E3%81%BF%E3%82%88"
+      },
+      "visibility": "public",
+      "displayName": "星ノ夢みよ",
+      "profileImage": {
+        "url": "https://cdn.wikiwiki.jp/to/w/jigjp/%E6%98%9F%E3%83%8E%E5%A4%A2%E3%81%BF%E3%82%88/::ref/face_org.png.webp?rev=e1cd70163c33db9078d84b99ae0b5353&t=20250502165816"
+      },
+      "activityStatus": {
+        "value": "ended"
+      },
+      "id": "tal-000102"
     }
   ]
 }

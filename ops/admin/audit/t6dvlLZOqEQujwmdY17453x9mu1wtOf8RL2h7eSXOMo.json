@@ -1,0 +1,208 @@
+{
+  "version": 2,
+  "batchId": "t6dvlLZOqEQujwmdY17453x9mu1wtOf8RL2h7eSXOMo",
+  "actor": "900116782922894341339274276841604414178152",
+  "createdAt": "2026-11-26T13:00:10.504Z",
+  "baseCommit": "996b1b45cfa4d7ebed5f019fef4a6490454fc1eb",
+  "reason": null,
+  "submissionId": "t6dvlLZOqEQujwmdY17453x9mu1wtOf8RL2h7eSXOMo",
+  "branch": "admin/change-t6dvlLZOqEQujwmdY17453x9mu1wtOf8RL2h7eSXOMo",
+  "operations": [
+    {
+      "operationId": "cms-talent-9a7379c0cda941afb0c09d24",
+      "entity": "talent",
+      "recordId": "tal-000084",
+      "action": "edit",
+      "changedFields": [
+        "agencyStatus"
+      ],
+      "before": {
+        "id": "tal-000084",
+        "displayName": "白銀ヘレナ",
+        "aliases": [],
+        "affiliations": [
+          {
+            "organizationId": "org-000003",
+            "status": "former",
+            "from": null,
+            "to": "2019-11-06"
+          }
+        ],
+        "agencyStatus": {
+          "value": "unknown"
+        },
+        "activityStatus": {
+          "value": "ended"
+        },
+        "accounts": [
+          {
+            "service": "youtube",
+            "accountId": "UC9wTdox728Y2lp3WR7dhoVw",
+            "url": "https://www.youtube.com/channel/UC9wTdox728Y2lp3WR7dhoVw"
+          }
+        ],
+        "wiki": {
+          "url": "https://wikiwiki.jp/jigjp/Palette%20Project/%E7%99%BD%E9%8A%80%E3%83%98%E3%83%AC%E3%83%8A"
+        },
+        "profileImage": {
+          "url": "https://yt3.googleusercontent.com/ytc/AIdro_njPkUs5LHHDZAsfVTN6_Oe-Nv1ViL7KE4l_CiW23Lj6Q=s160-c-k-c0x00ffffff-no-rj"
+        },
+        "officialProfileUrl": "https://paletteproject.jp/shiroganeherena_20191106/"
+      },
+      "after": {
+        "id": "tal-000084",
+        "displayName": "白銀ヘレナ",
+        "aliases": [],
+        "affiliations": [
+          {
+            "organizationId": "org-000003",
+            "status": "former",
+            "from": null,
+            "to": "2019-11-06"
+          }
+        ],
+        "agencyStatus": {
+          "value": "unaffiliated"
+        },
+        "activityStatus": {
+          "value": "ended"
+        },
+        "accounts": [
+          {
+            "service": "youtube",
+            "accountId": "UC9wTdox728Y2lp3WR7dhoVw",
+            "url": "https://www.youtube.com/channel/UC9wTdox728Y2lp3WR7dhoVw"
+          }
+        ],
+        "wiki": {
+          "url": "https://wikiwiki.jp/jigjp/Palette%20Project/%E7%99%BD%E9%8A%80%E3%83%98%E3%83%AC%E3%83%8A"
+        },
+        "profileImage": {
+          "url": "https://yt3.googleusercontent.com/ytc/AIdro_njPkUs5LHHDZAsfVTN6_Oe-Nv1ViL7KE4l_CiW23Lj6Q=s160-c-k-c0x00ffffff-no-rj"
+        },
+        "officialProfileUrl": "https://paletteproject.jp/shiroganeherena_20191106/"
+      }
+    },
+    {
+      "operationId": "cms-talent-bdb9a31e678e40b8a0a23cf6",
+      "entity": "talent",
+      "recordId": "tal-000085",
+      "action": "edit",
+      "changedFields": [
+        "agencyStatus"
+      ],
+      "before": {
+        "id": "tal-000085",
+        "displayName": "遠坂ユラ",
+        "aliases": [],
+        "affiliations": [
+          {
+            "organizationId": "org-000003",
+            "status": "former",
+            "from": null,
+            "to": null
+          }
+        ],
+        "agencyStatus": {
+          "value": "unknown"
+        },
+        "activityStatus": {
+          "value": "ended"
+        },
+        "accounts": [
+          {
+            "service": "youtube",
+            "accountId": "UCeAjLbNpaB4v5oHGUCuQaBA",
+            "url": "https://www.youtube.com/channel/UCeAjLbNpaB4v5oHGUCuQaBA"
+          }
+        ],
+        "wiki": {
+          "url": "https://wikiwiki.jp/jigjp/Palette%20Project/%E9%81%A0%E5%9D%82%E3%83%A6%E3%83%A9"
+        },
+        "profileImage": {
+          "url": "https://asset.panora.tokyo/wp-content/uploads/2021/03/17115859/2kfBEJOg_400x400.jpg"
+        },
+        "officialProfileUrl": "https://x.com/PaletteProject_/status/1371797985168744452"
+      },
+      "after": {
+        "id": "tal-000085",
+        "displayName": "遠坂ユラ",
+        "aliases": [],
+        "affiliations": [
+          {
+            "organizationId": "org-000003",
+            "status": "former",
+            "from": null,
+            "to": null
+          }
+        ],
+        "agencyStatus": {
+          "value": "unaffiliated"
+        },
+        "activityStatus": {
+          "value": "ended"
+        },
+        "accounts": [
+          {
+            "service": "youtube",
+            "accountId": "UCeAjLbNpaB4v5oHGUCuQaBA",
+            "url": "https://www.youtube.com/channel/UCeAjLbNpaB4v5oHGUCuQaBA"
+          }
+        ],
+        "wiki": {
+          "url": "https://wikiwiki.jp/jigjp/Palette%20Project/%E9%81%A0%E5%9D%82%E3%83%A6%E3%83%A9"
+        },
+        "profileImage": {
+          "url": "https://asset.panora.tokyo/wp-content/uploads/2021/03/17115859/2kfBEJOg_400x400.jpg"
+        },
+        "officialProfileUrl": "https://x.com/PaletteProject_/status/1371797985168744452"
+      }
+    },
+    {
+      "operationId": "cms-talent-0885dca9151541f8bcc6e42f",
+      "entity": "talent",
+      "recordId": "tal-000102",
+      "action": "create",
+      "changedFields": [
+        "aliases",
+        "affiliations",
+        "agencyStatus",
+        "accounts",
+        "wiki",
+        "visibility",
+        "displayName",
+        "profileImage",
+        "activityStatus",
+        "id"
+      ],
+      "before": null,
+      "after": {
+        "aliases": [],
+        "affiliations": [
+          {
+            "organizationId": "org-000002",
+            "status": "former",
+            "from": "2025-05-10",
+            "to": "2025-08-31"
+          }
+        ],
+        "agencyStatus": {
+          "value": "unaffiliated"
+        },
+        "accounts": [],
+        "wiki": {
+          "url": "https://wikiwiki.jp/jigjp/%E6%98%9F%E3%83%8E%E5%A4%A2%E3%81%BF%E3%82%88"
+        },
+        "visibility": "public",
+        "displayName": "星ノ夢みよ",
+        "profileImage": {
+          "url": "https://cdn.wikiwiki.jp/to/w/jigjp/%E6%98%9F%E3%83%8E%E5%A4%A2%E3%81%BF%E3%82%88/::ref/face_org.png.webp?rev=e1cd70163c33db9078d84b99ae0b5353&t=20250502165816"
+        },
+        "activityStatus": {
+          "value": "ended"
+        },
+        "id": "tal-000102"
+      }
+    }
+  ]
+}

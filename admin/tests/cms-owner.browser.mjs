@@ -63,7 +63,12 @@ export async function cmsOwnerBrowser({ browser, base, mainSha }) {
     assert.equal(await optional.evaluate(node=>node.open),false);
     await optional.locator("summary").click();
     await page.getByLabel("曲の別名（1行に1件）", { exact: true }).fill("別タイトル");
-    await page.locator("#view").getByRole("button", { name: "下書きを保存", exact: true }).click();
+    await page.getByRole("checkbox",{name:"次の登録にも原曲アーティストを引き継ぐ"}).check();
+    await page.getByRole("button",{name:"保存して次を作成",exact:true}).click();
+    await page.getByLabel("名称",{exact:true}).evaluate(node=>node.value === "");
+    await page.waitForFunction(()=>document.querySelector(".cms-record-form [aria-label=名称]")?.value==="");
+    assert.equal(await page.getByLabel("原曲アーティスト（1行に1名）",{exact:true}).inputValue(),"作者");
+    assert.equal(await page.getByLabel("楽曲の公式情報URL",{exact:true}).inputValue(),"");
     await page.getByRole("link", { name: "下書き", exact: true }).click();
     const savedSong = page.getByRole("button", { name: songTitle, exact: true });
     await savedSong.click();

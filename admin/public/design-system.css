@@ -806,3 +806,15 @@ button:hover:not(:disabled), .button:hover { border-color: var(--accent); }
   .cms-editor-width{display:block;width:62px;min-width:0;min-height:24px;margin:0;padding:0}
   .cms-editor-expanded .cms-editor-width{display:none}
 }
+
+/* Keep utility actions in the existing page heading rather than adding vertical bars. */
+.cms-header-tools{display:flex;align-items:center;flex-wrap:wrap;gap:6px}
+.cms-collection-actions>.cms-header-tools{order:-1}
+.cms-header-tools .cms-global-create{position:relative;align-self:center}
+.cms-header-tools .cms-create-options{position:absolute;top:100%;right:0;z-index:12;width:min(360px,calc(100vw - 40px));max-height:50dvh;overflow:auto;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);box-shadow:0 5px 15px #0002}
+.cms-header-tools .cms-create-options button{flex:1 1 140px;text-align:left}
+.cms-row-title{display:flex;align-items:center;gap:3px;min-width:0}
+.cms-row-title .cms-record-link{flex:1;min-width:0}
+.cms-row-link-copy{flex:0 0 auto;min-height:24px;min-width:24px;padding:0 3px;border:0;background:transparent;color:var(--muted);opacity:.65}
+@media(hover:hover){.cms-row-link-copy{opacity:0}.cms-table tr:hover .cms-row-link-copy,.cms-row-link-copy:focus-visible,.cms-row-title:focus-within .cms-row-link-copy{opacity:1}}
+@media(max-width:767px){.cms-header-tools .cms-create-options{left:0;right:auto;width:min(300px,calc(100vw - 40px))}}

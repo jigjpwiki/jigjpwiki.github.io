@@ -1453,6 +1453,14 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
       width.oninput=()=>{workspaceArea.style.setProperty("--cms-editor-width",width.value+"%");try{sessionStorage.setItem("jigwiki:editor-width",width.value)}catch{}};
       heading.append(width);
     }
+    if(catalog.editable && input.id && view !== "legacy" && ["song","event"].includes(entity)) {
+      const reuse=button("入力を引き継いで新規作成",()=>{
+        const keys=entity==="song"?["artists"]:["venue","format","fee"];
+        const seed=Object.fromEntries(keys.filter(key=>fields.has(key)).map(key=>[key,fields.get(key).value]));
+        edit(entity,seed,undefined,forceUnified||unifiedGoods);
+      });
+      reuse.title="共通項目だけ引き継ぎます。名称、URL、日時、固定IDは引き継ぎません。";heading.append(reuse);
+    }
     heading.append(button("閉じる", () => closeEditor()));
     if (view !== "legacy") {
       const body = el("div");
@@ -1472,6 +1480,7 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
     history.open = view === "history";
     panel.append(history);
   }
+  const headerTools = el("div"); headerTools.className="cms-header-tools";
   // A single entry point for creation, using the same validated editor and permissions.
   if (catalog.editable && view !== "legacy") {
     const createMenu = el("details"); createMenu.className = "cms-global-create";
@@ -1486,7 +1495,7 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
     }
     createMenu.append(choices);
     if (choices.childElementCount) {
-      panel.insertBefore(createMenu, panel.children[1] || null);
+      headerTools.append(createMenu);
       panel.addEventListener("cms-create-shortcut", () => { if (saving) return; createMenu.open = true; choices.querySelector("button")?.focus(); });
     }
   }
@@ -1509,8 +1518,13 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
     query.addEventListener("input",drawCommands);
     dialog.addEventListener("keydown",event=>{if(event.isComposing)return;const choices=[...results.querySelectorAll("button")];if(event.key==="ArrowDown"||event.key==="ArrowUp"){event.preventDefault();const at=choices.indexOf(document.activeElement);const next=event.key==="ArrowDown"?Math.min(choices.length-1,at+1):at<0?choices.length-1:Math.max(0,at-1);choices[next]?.focus();}else if(event.key==="Enter"&&event.target===query){event.preventDefault();choices[0]?.click();}});
     dialog.append(bar,query,results,el("small","↑ ↓ 選択 · Enter 実行 · Esc 閉じる"));
-    panel.insertBefore(launch,panel.children[1]||null); panel.append(dialog);
+    headerTools.prepend(launch); panel.append(dialog);
     panel.addEventListener("cms-command-shortcut",openCommands);
+  }
+  if (!browsing && view !== "legacy" && headerTools.childElementCount) {
+    const title=panel.querySelector("h2");
+    if(title){const heading=el("div");heading.className="cms-page-heading";title.before(heading);heading.append(title,headerTools);}
+    else panel.prepend(headerTools);
   }
   if (view === "dashboard") {
     const shortcuts = el("div");
@@ -1562,7 +1576,7 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
       const heading = el("div");
       heading.className = "cms-page-heading";
       title.before(heading);
-      heading.append(title, actions);
+      heading.append(title, actions); actions.append(headerTools);
     } else list.append(actions);
   } else list.append(actions);
   if (goodsView && catalog.editable && catalog.categories.includes("goods")) {
@@ -1787,7 +1801,17 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
           if(!["ArrowUp","ArrowDown"].includes(event.key))return;
           const rows=[...list.querySelectorAll(".cms-record-link")];const at=rows.indexOf(title);const target=rows[at+(event.key==="ArrowDown"?1:-1)];if(target){event.preventDefault();target.focus();}
         });
-        cell.append(title);
+        const entry=el("div");entry.className="cms-row-title";entry.append(title);
+        if(view!=="legacy") {
+          const link=button("↗",async()=>{
+            const routeEntity=["campaign","product"].includes(entity)&&catalog.goodsEntries?.some(row=>row.entity===entity&&row.id===item.id)?"goods":entity;
+            const url=new URL("#content/"+routeEntity+"?"+new URLSearchParams({record:item.id}),location.href).href;
+            try { await navigator.clipboard.writeText(url); status.textContent="編集リンクをコピーしました。"; }
+            catch { status.textContent="編集リンクをコピーできませんでした。"; }
+          });
+          link.className="cms-row-link-copy";link.title="編集リンクをコピー";link.setAttribute("aria-label",(item.title||item.id)+"の編集リンクをコピー");entry.append(link);
+        }
+        cell.append(entry);
       } else if (key === "visibility" || key === "state") {
         const field = key === "visibility" ? "visibility" : entity === "talent" ? "activity" : entity === "performance" ? "verification" : null;
         const canInline = bulkAvailable && catalog.publishable && !catalog.owner && field && !draft && bulkValues[field]?.includes(item[key]);

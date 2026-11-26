@@ -40,16 +40,20 @@ const navigationCount=require('../lib/site-pages').pages.filter(p=>p.ready).leng
       const checkShell = async (route) => {
         const info = await page.locator('.site-header').evaluate(header => {
           const rect=header.getBoundingClientRect(),links=[...header.querySelectorAll('.site-nav a')];
-          return {width:innerWidth,scroll:document.documentElement.scrollWidth,header:rect.height,links:links.map(a=>{const r=a.getBoundingClientRect();return {left:r.left,right:r.right,height:r.height};})};
+          return {width:innerWidth,scroll:document.documentElement.scrollWidth,header:rect.height,links:links.map(a=>{const r=a.getBoundingClientRect(),s=getComputedStyle(a),label=[...a.querySelectorAll("span")].find(n=>getComputedStyle(n).display!=="none");return {left:r.left,right:r.right,height:r.height,color:s.color,background:s.backgroundColor,border:s.borderBottomColor,whiteSpace:getComputedStyle(label).whiteSpace,labelFits:label.getBoundingClientRect().width+a.querySelector("svg").getBoundingClientRect().width<=r.width};})};
         });
         assert(info.scroll<=width, route+' horizontal overflow');
-        assert(info.header<220, route+' oversized header: '+info.header);
+        assert(info.header<=(width>=1100?80:160), route+' oversized header: '+info.header);
         assert.equal(info.links.length,navigationCount);
         assert(info.links.every(r=>r.left>=-1&&r.right<=width+1&&r.height>=43),route+' navigation outside viewport or too small');
         assert.equal(await page.locator('.site-nav svg[aria-hidden=true]').count(),navigationCount);
         assert.equal(await page.locator('.site-skip[href="#main-content"]').count(),1);
         assert.equal(await page.locator('main#main-content').count(),1);
-        if(route!=='/')assert.equal(await page.locator('.site-footer a[href="/terms/"]').count(),1);
+        assert(info.links.every(r=>r.whiteSpace==="nowrap"&&r.labelFits),route+' wrapped or clipped nav label');
+        assert(info.links.every(r=>{const c=r.color.match(/\d+/g).map(Number);return c[0]===c[1]&&c[1]===c[2];}),route+' non-neutral navigation');
+        assert.equal(await page.locator('.site-header a[href="/terms/"]').count(),0);
+        assert.equal(await page.locator('footer a[href="/terms/"]').count(),1);
+        if(route==='/')assert.equal(await page.locator('.site-header #show-videos-toggle').count(),1);
       };
       await checkShell('/');
       await page.locator('.site-skip').focus();

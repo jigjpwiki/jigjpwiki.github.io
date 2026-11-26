@@ -159,3 +159,18 @@ test("an empty song archive can be bulk-staged and reconstructed using the norma
   const scoped = await h.login({ ...member, id: "scoped-music", contentPolicy: "scoped-v1", scope: { organizations: ["org-000001"], categories: ["events"] } });
   assert.deepEqual((await expect(await scoped.request("/api/cms/catalog?fresh=1"), 200)).songs, []);
  });
+
+test("transfer preview does not save, atomic PUT validates revision and rejects unauthorized accounts",async()=>{
+  const h=await harness();const editor=await h.login(member);
+  const viewer=await h.login({...member,id:"viewer",role:"viewer",directPublish:false});
+  const route="/api/cms/transfer";
+  const payload={entity:"organization",mode:"create",rows:[{name:"原子的な取り込み試験A"},{name:"原子的な取り込み試験B"}],revision:0,sha};
+  await expect(await viewer.request(route,"POST",payload),403,"cms_scope_denied");
+  const preview=await expect(await editor.request(route,"POST",payload),200);
+  assert.equal(preview.preview.length,2);assert.equal(await h.workspace.get(owner),null);
+  await expect(await editor.request(route,"PUT",{...payload,rows:[{name:"原子的な取り込み試験A"},{id:"org-000001",name:"上書き"}]}),400,"cms_invalid_batch");
+  assert.equal(await h.workspace.get(owner),null);
+  const saved=await expect(await editor.request(route,"PUT",payload),200);
+  assert.equal(saved.draftIds.length,2);assert.equal((await h.workspace.get(owner)).operations.length,2);
+  await expect(await editor.request(route,"PUT",payload),409,"workspace_revision_conflict");
+});

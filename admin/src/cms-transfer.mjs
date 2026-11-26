@@ -3,6 +3,7 @@ import { parseTransfer, newRecordInput, editFields, editableKeys } from "../publ
 import { hasAllContent, cmsPermissions } from "./cms-scope.mjs";
 import { planSubmission, equal, recordAt } from "./submission-plan.mjs";
 import { fail, hash } from "./security.mjs";
+import { workspaceOperations } from "./workspace.mjs";
 
 function expectedValue(before, entity, field, value) {
   if(field==="visibility"){if(!["public","draft"].includes(value))fail(400,"cms_invalid_batch");return ["visibility",value];}
@@ -63,7 +64,9 @@ export async function prepareTransfer(snapshot, member, input, existing=[], look
   }
   if(!combined.length)fail(409,"no_changes");
   if(combined.length>60)fail(413,"workspace_operation_limit");
-  const plan=await planSubmission(snapshot,combined,{actor:"0",batchId:await hash(combined)});
+  // Validate the entire prospective workspace, including unissued identities in prior drafts.
+  workspaceOperations(result);
+  const plan=await planSubmission(snapshot,result,{actor:"0",batchId:await hash(result)});
   if(plan.conflicts?.length)fail(409,"main_changed_reload");
   const after=cmsPermissions({...snapshot.models,...plan.files},member);
   for(const row of plan.impact.records)after.assertChange(row.entity,row.before,row.value);

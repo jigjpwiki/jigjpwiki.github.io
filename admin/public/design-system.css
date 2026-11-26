@@ -885,3 +885,9 @@ button:hover:not(:disabled), .button:hover { border-color: var(--accent); }
 .cms-source-value{padding:8px;border-block-end:1px solid var(--line)}
 .cms-source-value p{color:var(--ink);margin:4px 0}
 .cms-source-value button{margin-right:6px}
+
+.cms-multi-edit-fields{display:grid;gap:6px}
+.cms-multi-edit-row{display:grid;grid-template-columns:minmax(130px,1fr) minmax(140px,2fr);align-items:center;gap:8px}
+.cms-multi-edit-row label{display:flex;align-items:center;gap:8px}
+.cms-multi-edit-row label input[type=checkbox]{width:16px;min-width:16px;height:16px;min-height:16px;margin:0}
+.cms-multi-edit-row>input:disabled,.cms-multi-edit-row>textarea:disabled,.cms-multi-edit-row>select:disabled{opacity:.55}

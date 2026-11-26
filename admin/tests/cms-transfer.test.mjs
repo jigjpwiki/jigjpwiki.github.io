@@ -21,11 +21,12 @@ test("atomic transfer creates multiple draft groups without mutating the snapsho
   await assert.rejects(prepareTransfer(snapshot,member,{...input,rows:[{name:"試験"},{id:"org-000001",name:"上書き"}]}),/cms_invalid_batch/);
 });
 test("multiple fields are changed in the same lossless draft",async()=>{
-  const id=fixture.catalog.groups[0].id;
-  const input={sha:snapshot.sha,entity:"group",mode:"update",rows:[{id,name:"一括変更グループ",visibility:"draft"}]};
+  const id=fixture.music.songs[0].id;
+  const input={sha:snapshot.sha,entity:"song",mode:"update",rows:[{id,title:"一括変更楽曲",aliases:"一括試験の別名"}]};
   const out=await prepareTransfer(snapshot,member,input);
-  assert.equal(out.operations.length,1);assert.equal(out.operations[0].value.name,"一括変更グループ");assert.equal(out.operations[0].value.visibility,"draft");
+  assert.equal(out.operations.length,1);assert.equal(out.operations[0].value.title,"一括変更楽曲");assert.deepEqual(out.operations[0].value.aliases,["一括試験の別名"]);
   await assert.rejects(prepareTransfer(snapshot,member,input,out.operations),/cms_bulk_existing_draft/);
+  await assert.rejects(prepareTransfer(snapshot,member,{sha:snapshot.sha,entity:"group",mode:"update",rows:[{id:fixture.catalog.groups[0].id,name:"一括変更グループ",visibility:"draft"}]}),/public reference to draft group/);
 });
 
 import { pageMetadata } from "../public/cms-transfer.js";

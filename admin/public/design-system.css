@@ -818,3 +818,38 @@ button:hover:not(:disabled), .button:hover { border-color: var(--accent); }
 .cms-row-link-copy{flex:0 0 auto;min-height:24px;min-width:24px;padding:0 3px;border:0;background:transparent;color:var(--muted);opacity:.65}
 @media(hover:hover){.cms-row-link-copy{opacity:0}.cms-table tr:hover .cms-row-link-copy,.cms-row-link-copy:focus-visible,.cms-row-title:focus-within .cms-row-link-copy{opacity:1}}
 @media(max-width:767px){.cms-header-tools .cms-create-options{left:0;right:auto;width:min(300px,calc(100vw - 40px))}}
+
+/* vNext 8.1 — quiet, searchable action chooser. */
+.cms-chooser{width:min(560px,calc(100vw - 24px));max-height:min(680px,85dvh);padding:0;border:1px solid var(--line);border-radius:14px;box-shadow:0 22px 70px #1114;overflow:hidden}
+.cms-chooser[open]{display:flex;flex-direction:column}
+.cms-chooser::backdrop{background:#18223855;backdrop-filter:blur(2px)}
+.cms-chooser .cms-command-bar{margin:0;padding:14px 16px 6px;flex:0 0 auto}
+.cms-chooser .cms-command-bar h3{font-size:15px;letter-spacing:-.02em}
+.cms-chooser-close{border:0;background:transparent;color:var(--muted);font-size:22px;min-height:28px;min-width:28px;padding:0}
+.cms-chooser-search{display:flex;align-items:center;gap:10px;margin:6px 14px 0;padding:0 11px;border:1px solid var(--line);border-radius:8px;background:var(--soft)}
+.cms-chooser-search:focus-within{border-color:var(--accent)}
+.cms-chooser-search>span{font-size:25px;color:var(--muted)}
+.cms-chooser-search input[type=search]{flex:1;min-width:0;border:0;background:transparent;margin:0;box-shadow:none!important;outline:none!important;min-height:42px}
+.cms-chooser .cms-command-results{padding:4px 8px 10px;margin:0;max-height:min(500px,58dvh);overflow:auto;gap:1px;min-height:0}
+.cms-chooser-group{padding:12px 10px 5px;font-size:11px;letter-spacing:.04em;font-weight:650;color:var(--muted)}
+.cms-chooser .cms-chooser-option{width:100%;display:flex;align-items:center;gap:10px;min-height:38px;padding:7px 10px;border:1px solid transparent;background:transparent;color:var(--ink);border-radius:7px;text-align:left;font-weight:500}
+.cms-chooser .cms-chooser-option[data-active],.cms-chooser .cms-chooser-option:hover,.cms-chooser .cms-chooser-option:focus-visible{background:var(--hover);border-color:var(--line)}
+.cms-chooser-icon{display:grid;place-items:center;width:23px;height:23px;flex:0 0 23px;color:var(--muted)}
+.cms-chooser-icon svg{width:17px;height:17px}
+.cms-chooser-name{flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.cms-chooser-option small{font-size:11px;white-space:nowrap;color:var(--muted)}
+.cms-chooser-footer{border-top:1px solid var(--line);padding:9px 16px;color:var(--muted);background:var(--soft)}
+.cms-header-tools .cms-command-launch{display:flex;align-items:center;gap:9px;color:var(--muted);background:var(--soft);border:1px solid var(--line);min-height:32px}
+.cms-command-launch kbd{font:inherit;font-size:11px;border:1px solid var(--line);border-radius:4px;padding:0 5px;color:var(--muted)}
+.cms-header-tools button.cms-global-create{border:1px solid var(--line);background:var(--surface);padding:6px 10px;min-height:32px;color:var(--ink);font-size:12px}
+.cms-presets{position:relative;border:0;padding:0}
+.cms-presets summary{cursor:pointer;border:1px solid var(--line);border-radius:6px;padding:7px 10px;font-size:12px}
+.cms-presets-body{display:grid;gap:6px;padding:8px;position:absolute;right:0;top:100%;z-index:10;width:min(255px,75vw);background:var(--surface);border:1px solid var(--line);border-radius:8px;box-shadow:0 5px 18px #0002}
+.cms-presets-body small,.cms-bulk-paste small{font-size:12px;color:var(--muted)}
+.cms-bulk-paste{flex-basis:100%;padding:8px;border:1px solid var(--line);border-radius:6px}
+.cms-bulk-paste>textarea{margin:6px 0}
+.cms-bulk-paste>button{margin:3px}
+.cms-table .cms-inline-select{border-color:transparent;background:transparent;border-radius:5px;padding-inline:6px;color:var(--ink)}
+.cms-table .cms-inline-select:hover,.cms-table .cms-inline-select:focus-visible{border-color:var(--control-line);background:var(--surface)}
+.cms-table td[data-column=quality]{font-size:12px;color:var(--muted);overflow-wrap:anywhere}
+@media(max-width:767px){.cms-presets-body{left:0;right:auto}.cms-chooser-option small{max-width:100px;overflow:hidden;text-overflow:ellipsis}}

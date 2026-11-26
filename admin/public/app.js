@@ -1941,10 +1941,13 @@ if (me && location.hash === "#masters")
   loadMasters().catch((e) => showStatus(e.message));
 
 window.addEventListener("keydown", (e) => {
-  if (!e.isComposing && !e.defaultPrevented && !e.ctrlKey && !e.metaKey && !e.altKey &&
-      !e.target.closest?.("input,textarea,select,[contenteditable=true],dialog") && me?.simpleCms) {
+  if (!e.isComposing && !e.defaultPrevented && !e.repeat &&
+      !e.target.closest?.("input,textarea,select,[contenteditable=true],dialog") && !document.querySelector("dialog[open]") && me?.simpleCms) {
     const panel = document.querySelector("#view > .cms-content");
-    if (panel && e.key.toLowerCase() === "c" && panel.querySelector(".cms-global-create")) {
+    if (panel?.querySelector(".cms-command-launch") && !e.ctrlKey && !e.metaKey && !e.shiftKey && ((!e.altKey && e.key === "/") || (e.altKey && e.code === "KeyK"))) {
+      e.preventDefault(); panel.dispatchEvent(new Event("cms-command-shortcut")); return;
+    }
+    if (panel && !e.ctrlKey && !e.metaKey && !e.altKey && !e.shiftKey && e.key.toLowerCase() === "c" && panel.querySelector(".cms-global-create")) {
       e.preventDefault(); panel.dispatchEvent(new Event("cms-create-shortcut")); return;
     }
   }

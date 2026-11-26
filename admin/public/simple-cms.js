@@ -64,7 +64,8 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
     ? catalog.sections.filter(({ entity }) => entity === selectedEntity)
     : view === "legacy" ? catalog.sections : mergedSections;
   const browsing = ["legacy", "content", "search"].includes(view);
-  const needsReview = (entity,item) => entity === "event" ? (!item.date || item.state === "unknown") : ["talent","performance","goods","karaoke"].includes(entity) && ["unknown","unreviewed","partial","unavailable"].includes(item.state);
+  const qualityReasons=(entity,item)=>{const reasons=[];if(["talent","performance","goods","karaoke","event"].includes(entity)&&["unknown","unreviewed","partial","unavailable"].includes(item.state))reasons.push("確認状態が不明・未完了");if(entity==="event"&&!item.date)reasons.push("開催日時が未登録");if(["talent","goods","event"].includes(entity)&&!item.image)reasons.push("画像が未登録");if(entity==="song"&&!item.context)reasons.push("原曲アーティストが未登録");return reasons;};
+  const needsReview=(entity,item)=>qualityReasons(entity,item).length>0;
   let pickerSequence = 0;
   const relationEntries = (rows) => (rows || []).map((row) => ({
     ...row, name: row.name || row.title || row.id,
@@ -1460,6 +1461,14 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
         edit(entity,seed,undefined,forceUnified||unifiedGoods);
       });
       reuse.title="共通項目だけ引き継ぎます。名称、URL、日時、固定IDは引き継ぎません。";heading.append(reuse);
+      const duplicate=button("複製して新規作成",()=>{
+        const keys=entity==="song"?["title","artists","aliases","readings"]:["title","summary","thumbnailUrl","venue","format","fee","streamUrl"];
+        const seed=Object.fromEntries(keys.filter(key=>fields.has(key)).map(key=>[key,fields.get(key).value]));
+        seed.title=(seed.title||"")+"（コピー）";seed.visibility="draft";
+        if(entity==="event")seed.performers=[...(relations.get("performers")||[])];
+        if(!confirm("入力内容を複製します。公式識別URL・開催日時・固定IDは引き継ぎません。新規データとして内容を確認してください。"))return;
+        edit(entity,seed,undefined,forceUnified||unifiedGoods);
+      });heading.append(duplicate);
     }
     heading.append(button("閉じる", () => closeEditor()));
     if (view !== "legacy") {
@@ -1481,45 +1490,54 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
     panel.append(history);
   }
   const headerTools = el("div"); headerTools.className="cms-header-tools";
-  // A single entry point for creation, using the same validated editor and permissions.
-  if (catalog.editable && view !== "legacy") {
-    const createMenu = el("details"); createMenu.className = "cms-global-create";
-    const createSummary = el("summary", "＋ 新規作成");
-    createSummary.title = "新規作成メニュー（C）"; createSummary.setAttribute("aria-keyshortcuts", "C"); createMenu.append(createSummary);
-    const choices = el("div"); choices.className = "cms-create-options";
-    for (const [entity, spec] of Object.entries(categories)) {
-      if (entity === "offer" || !catalog.categories.includes(spec.category) || (spec.ownerCreate && !catalog.owner && catalog.contentPolicy !== "all-content-v1")) continue;
-      const label = entity === "campaign" ? "グッズ販売企画" : entity === "product" ? "単独商品" : spec.label;
-      const action = button(label + "を作成", () => { createMenu.open = false; edit(entity, {}, undefined, true); });
-      choices.append(action);
-    }
-    createMenu.append(choices);
-    if (choices.childElementCount) {
-      headerTools.append(createMenu);
-      panel.addEventListener("cms-create-shortcut", () => { if (saving) return; createMenu.open = true; choices.querySelector("button")?.focus(); });
-    }
-  }
   if (view !== "legacy") {
-    // Keep global search shortcut compatible; the command menu has its own shortcut.
-    const launch = button("操作を検索", () => openCommands()); launch.className="cms-command-launch";
-    launch.title="操作を検索（Ctrl / ⌘ + Shift + K）"; launch.setAttribute("aria-keyshortcuts","Control+Shift+K Meta+Shift+K");
-    const dialog = el("dialog"); dialog.className="cms-command-dialog"; dialog.setAttribute("aria-label","操作を検索");
-    const bar=el("div");bar.className="cms-command-bar";bar.append(el("h3","操作を検索"),button("閉じる",()=>dialog.close()));
-    const query=el("input");query.type="search";query.placeholder="新規作成、楽曲、下書き…";query.setAttribute("aria-label","操作名を検索");
-    const results=el("div");results.className="cms-command-results";
-    const commands=[];
-    for(const [name,route] of [["ダッシュボード","#dashboard"],["下書き","#drafts"],["公開状況","#publication"],["全体検索","#search"],...mergedSections.map(s=>[s.label,"#content/"+s.entity])])commands.push({label:name+"を開く",run:()=>{if(location.hash!==route)location.hash=route;}});
-    if(catalog.editable) for(const [entity,spec] of Object.entries(categories)) {
-      if(entity==="offer" || !catalog.categories.includes(spec.category) || (spec.ownerCreate&&!catalog.owner&&catalog.contentPolicy!=="all-content-v1"))continue;
-      commands.push({label:(entity==="campaign"?"グッズ販売企画":entity==="product"?"単独商品":spec.label)+"を新規作成",run:()=>edit(entity,{},undefined,true)});
+    // One consistent searchable chooser, with scoped destinations and creation actions.
+    const dialog=el("dialog"); dialog.className="cms-command-dialog cms-chooser";
+    const heading=el("h3","操作を検索"); heading.id="cms-chooser-heading";
+    dialog.setAttribute("aria-labelledby",heading.id);
+    const close=button("×",()=>dialog.close());close.className="cms-chooser-close";close.setAttribute("aria-label","閉じる");
+    const bar=el("div");bar.className="cms-command-bar";bar.append(heading,close);
+    const searchRow=el("div");searchRow.className="cms-chooser-search";
+    const searchIcon=el("span","⌕");searchIcon.setAttribute("aria-hidden","true");
+    const query=el("input");query.type="search";query.autocomplete="off";query.setAttribute("aria-label","操作名を検索");
+    searchRow.append(searchIcon,query);
+    const results=el("div");results.className="cms-command-results";results.id="cms-chooser-results";
+    const hint=el("div");hint.className="cms-chooser-footer";hint.append(el("small","↑ ↓ 選択　 Enter 実行　 Esc 閉じる"));
+    const categoryLabels={talents:"人物・組織",organizations:"人物・組織",anniversaries:"人物・企画",events:"人物・企画",music:"音楽",goods:"グッズ"};
+    const creationOrder=["talent","organization","group","anniversary","event","song","musicVideo","video","karaoke","performance","campaign","product"];
+    const icons={talent:"user",organization:"building",group:"users",anniversary:"calendar",event:"calendar",song:"music",musicVideo:"video",video:"video",karaoke:"mic",performance:"list",campaign:"package",product:"package",goods:"package"};
+    const iconPaths={user:'<circle cx="12" cy="8" r="3"/><path d="M5 21v-2a7 7 0 0 1 14 0v2"/>',users:'<circle cx="9" cy="8" r="3"/><path d="M2 21v-2a7 7 0 0 1 14 0v2M16 5a3 3 0 0 1 0 6m3 3a5 5 0 0 1 3 5v2"/>',building:'<rect x="5" y="3" width="14" height="18" rx="1"/><path d="M9 7h1m4 0h1M9 11h1m4 0h1M10 21v-5h4v5"/>',calendar:'<rect x="3" y="5" width="18" height="16" rx="2"/><path d="M7 3v4m10-4v4M3 10h18"/>',music:'<path d="M9 18V5l12-2v13M9 9l12-2"/><ellipse cx="6" cy="18" rx="3" ry="3"/><ellipse cx="18" cy="16" rx="3" ry="3"/>',video:'<rect x="3" y="5" width="18" height="14" rx="2"/><path d="m10 9 5 3-5 3z"/>',mic:'<rect x="9" y="3" width="6" height="12" rx="3"/><path d="M5 11a7 7 0 0 0 14 0M12 18v3m-4 0h8"/>',list:'<path d="M5 5h14M5 10h14M5 15h14M5 20h9"/>',package:'<path d="m3 7 9-4 9 4v10l-9 4-9-4zM3 7l9 4 9-4M12 11v10M7 5l10 4"/>',arrow:'<path d="M5 12h14m-6-6 6 6-6 6"/>'};
+    function glyph(entity){const svg=document.createElementNS("http://www.w3.org/2000/svg","svg");svg.setAttribute("viewBox","0 0 24 24");svg.setAttribute("fill","none");svg.setAttribute("stroke","currentColor");svg.setAttribute("stroke-width","1.6");svg.setAttribute("stroke-linecap","round");svg.setAttribute("stroke-linejoin","round");svg.setAttribute("aria-hidden","true");svg.innerHTML=iconPaths[icons[entity]||"arrow"];return svg;}
+    const available=creationOrder.filter(entity=>{const spec=categories[entity];return catalog.editable&&catalog.categories.includes(spec.category)&&(!spec.ownerCreate||catalog.owner||catalog.contentPolicy==="all-content-v1")});
+    const nameOf=entity=>entity==="campaign"?"グッズ販売企画":entity==="product"?"単独商品":categories[entity]?.label||entity;
+    const destinations=[["ダッシュボード","#dashboard",""],["下書き","#drafts",""],["公開状況","#publication",""],["全体検索","#search",""],["更新履歴","#history",""],...mergedSections.map(s=>[s.label,"#content/"+s.entity,s.entity])];
+    const creates=available.map(entity=>({group:categoryLabels[categories[entity].category]||"その他",entity,label:nameOf(entity)+"を新規作成",short:nameOf(entity),hint:"新しいデータを下書きに登録",run:()=>edit(entity,{},undefined,true)}));
+    const navigations=destinations.map(([name,route,entity])=>({group:"ページを開く",entity,label:name+"を開く",short:name,hint:"移動",run:()=>{if(location.hash!==route)location.hash=route}}));
+    let mode="command", current=[],active=0,returnFocus;
+    const normalize=value=>String(value||"").normalize("NFKC").toLocaleLowerCase("ja");
+    function setActive(index){if(!current.length)return;active=Math.max(0,Math.min(current.length-1,index));const rows=[...results.querySelectorAll(".cms-chooser-option")];rows.forEach((row,i)=>row.toggleAttribute("data-active",i===active));rows[active]?.scrollIntoView({block:"nearest"});}
+    function draw(){
+      const needle=normalize(query.value.trim()),words=needle.split(/\s+/).filter(Boolean);
+      let rows=mode==="create"?creates:[...creates.map(c=>({...c,group:"新規作成"})),...navigations];
+      rows=rows.filter(c=>words.every(w=>normalize(c.label+" "+c.group+" "+c.hint).includes(w)));
+      if(mode==="command"&&words.length){const found=[];for(const s of mergedSections){for(const item of s.items){if(words.every(w=>normalize([item.title,item.id,item.context].join(" ")).includes(w))){const route="#content/"+s.entity+"?"+new URLSearchParams({record:item.id});found.push({group:"登録済みデータ",entity:s.entity,label:item.title||item.id,short:item.title||item.id,hint:s.label,run:()=>{if(location.hash===route)openRecord(item.entity||s.entity,item.id);else location.hash=route;}});if(found.length>=20)break;}}if(found.length>=20)break;}rows.push(...found);}
+      current=rows;active=0;results.replaceChildren();
+      let group;for(const [i,c] of rows.entries()){
+        if(group!==c.group){group=c.group;const label=el("div",group);label.className="cms-chooser-group";results.append(label);}
+        const option=button("",()=>{dialog.close();c.run()});option.className="cms-chooser-option";option.setAttribute("aria-label",c.label);
+        const icon=el("span");icon.className="cms-chooser-icon";icon.append(glyph(c.entity));const name=el("span",c.short);name.className="cms-chooser-name";const meta=el("small",mode==="create"?"":c.hint);meta.setAttribute("aria-hidden","true");option.append(icon,name,meta);option.addEventListener("pointermove",()=>setActive(i));results.append(option);
+      }
+      if(!rows.length)results.append(el("p","一致する項目がありません。別の言葉で検索してください。"));
+      results.scrollTop=0;setActive(0);
     }
-    function drawCommands(){const needle=query.value.normalize("NFKC").trim().toLocaleLowerCase("ja");results.replaceChildren(...commands.filter(c=>c.label.normalize("NFKC").toLocaleLowerCase("ja").includes(needle)).map(c=>button(c.label,()=>{dialog.close();c.run()})));if(!results.childElementCount)results.append(el("p","一致する操作がありません。"));}
-    function openCommands(){if(saving||dialog.open||!panel.isConnected)return;query.value="";drawCommands();dialog.showModal();query.focus();}
-    query.addEventListener("input",drawCommands);
-    dialog.addEventListener("keydown",event=>{if(event.isComposing)return;if(event.key==="Escape"){event.preventDefault();event.stopPropagation();dialog.close();return;}const choices=[...results.querySelectorAll("button")];if(event.key==="ArrowDown"||event.key==="ArrowUp"){event.preventDefault();const at=choices.indexOf(document.activeElement);const next=event.key==="ArrowDown"?Math.min(choices.length-1,at+1):at<0?choices.length-1:Math.max(0,at-1);choices[next]?.focus();}else if(event.key==="Enter"&&event.target===query){event.preventDefault();choices[0]?.click();}});
-    dialog.append(bar,query,results,el("small","↑ ↓ 選択 · Enter 実行 · Esc 閉じる"));
-    headerTools.prepend(launch); panel.append(dialog);
-    panel.addEventListener("cms-command-shortcut",openCommands);
+    function openChooser(nextMode="command"){if(saving||dialog.open||!panel.isConnected)return;mode=nextMode;returnFocus=document.activeElement;heading.textContent=mode==="create"?"何を作成しますか？":"操作を検索";query.placeholder=mode==="create"?"データの種類を検索…":"操作・ページ・データ名を検索…";query.value="";draw();dialog.showModal();query.focus();}
+    query.addEventListener("input",draw);
+    dialog.addEventListener("keydown",event=>{if(event.isComposing)return;if(event.key==="Escape"){event.preventDefault();event.stopPropagation();dialog.close();return;}if(event.key==="ArrowDown"||event.key==="ArrowUp"){event.preventDefault();setActive(active+(event.key==="ArrowDown"?1:-1));}else if(event.key==="Enter"&&event.target===query){event.preventDefault();results.querySelectorAll(".cms-chooser-option")[active]?.click();}});
+    dialog.addEventListener("close",()=>{if(document.activeElement===document.body&&returnFocus?.isConnected)returnFocus.focus();});
+    dialog.append(bar,searchRow,results,hint);panel.append(dialog);
+    const launch=button("操作を検索",()=>openChooser());launch.className="cms-command-launch";launch.title="操作を検索（/ または Alt / Option + K）";launch.setAttribute("aria-keyshortcuts","/ Alt+K");const key=el("kbd","/");key.setAttribute("aria-hidden","true");launch.append(key);headerTools.append(launch);
+    if(creates.length){const create=button("＋ 新規作成",()=>openChooser("create"));create.className="cms-global-create";create.title="新規作成（C）";create.setAttribute("aria-keyshortcuts","C");headerTools.append(create);panel.addEventListener("cms-create-shortcut",()=>openChooser("create"));}
+    panel.addEventListener("cms-command-shortcut",()=>openChooser());
   }
   if (!browsing && view !== "legacy" && headerTools.childElementCount) {
     const title=panel.querySelector("h2");
@@ -1608,7 +1626,7 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
   const columns = [
     ["title", goodsView?"販売企画・商品名":"名称"], ["context", ({talent:"所属・グループ",group:"所属事務所",song:"原曲アーティスト",event:"主催・会場",anniversary:"関連人物",musicVideo:"歌唱者",karaoke:"関連人物",performance:"歌唱者",goods:"商品・関連人物"})[selectedEntity] || "関連情報"], ["date", goodsView?"販売開始":selectedEntity==="event"?"開催日時":selectedEntity==="video"?"動画公開日時":"日時"],
     ...(goodsView?[["saleMode","販売方式"]]:[]),
-    ["state", ({talent:"活動状態",event:"日程区分",video:"動画の公開状態",performance:"確認状態",goods:"販売状態"})[selectedEntity] || "状態"], ["visibility", "掲載状態"], ["draft", "下書き"], ["id", "固定ID"],
+    ["state", ({talent:"活動状態",event:"日程区分",video:"動画の公開状態",performance:"確認状態",goods:"販売状態"})[selectedEntity] || "状態"], ["visibility", "掲載状態"], ["draft", "下書き"], ["quality","確認候補"], ["id", "固定ID"],
   ];
   const hasValue = (key) => sections.some(({ items }) => items.some((item) => Boolean(item[key])));
   const compactViewport = matchMedia("(max-width: 767px)").matches;
@@ -1620,10 +1638,12 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
   const viewKey = "jigwiki:cms-view:v1:" + (options.userKey || "local") + ":" + (selectedEntity || view);
   let viewState = {};
   try { viewState = JSON.parse(sessionStorage.getItem(viewKey) || "{}") || {}; } catch {}
+  if (options.quality==="review") activeColumns.add("quality");
   if (Array.isArray(viewState.columns)) {
     activeColumns.clear(); activeColumns.add("title");
     for (const [key] of columns) if (viewState.columns.includes(key)) activeColumns.add(key);
   }
+  if(options.quality==="review")activeColumns.add("quality");
   const bulkBar = el("div");
   bulkBar.className = "cms-bulk-bar";
   const bulkCount = el("span");
@@ -1667,6 +1687,15 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
     clearBulk.disabled = saving || !selectedRows.size;
   };
   bulkBar.append(bulkCount, bulkField, bulkValue, bulkSave, clearBulk);
+  // Paste values into one supported field using the existing lossless bulk API.
+  if(bulkAvailable&&catalog.publishable&&!catalog.owner){
+    const paste=el("details");paste.className="cms-bulk-paste";paste.append(el("summary","表から貼り付け"));
+    const area=el("textarea");area.setAttribute("aria-label","貼り付けデータ");area.placeholder="固定ID\\t値（1行に1件、最大12件）";area.rows=4;
+    const info=el("small","上の変更項目を選択し、固定IDと値の2列を貼り付けてください。");const preview=el("div");let plan=[];
+    function validate(){plan=[];preview.replaceChildren();const field=bulkField.value,allowed=bulkValues[field];const rows=area.value.trim().split(/\\r?\\n/).filter(Boolean);const ids=new Set();const items=sections.flatMap(s=>s.items);const used=new Set((saved?.drafts||[]).filter(d=>d.input?.entity===selectedEntity).map(d=>d.input.id));if(!rows.length||rows.length>12){preview.textContent="1〜12行を入力してください。";return false;}for(const line of rows){const parts=line.split("\\t").map(s=>s.trim());const [id,label]=parts;const value=allowed.find(v=>v===label||translated(v)===label);if(parts.length!==2||!items.some(i=>i.id===id)||used.has(id)||ids.has(id)||!value){preview.textContent="無効な行、重複ID、既存下書き、または未対応の値があります："+line;plan=[];return false;}ids.add(id);plan.push({id,value});}for(const row of plan)preview.append(el("div",row.id+" → "+translated(row.value)));return true;}
+    const check=button("内容を確認",validate);const apply=button("貼り付けを下書きに保存",async()=>{if(saving||!saveAvailable||panel.dataset.cmsDirty||!validate())return;const field=bulkField.value;if(!confirm(plan.length+"件の変更を下書きに保存します。複数の値がある場合は順次保存します。"))return;const groups=new Map();for(const row of plan){if(!groups.has(row.value))groups.set(row.value,[]);groups.get(row.value).push(row.id);}saving=true;panel.dataset.cmsSaving="true";let done=0;try{for(const [value,ids] of groups){const result=await api("/api/cms/draft/bulk","PUT",{entity:selectedEntity,ids,field,value,revision,sha:catalog.sha});revision=result.revision;done+=result.draftIds.length;}area.value="";preview.textContent="保存済み";status.textContent=done+"件の下書きを保存しました。";}catch{status.textContent=done+"件保存済み。残りは保存できませんでした。下書きと入力を確認してください。";}finally{try{await refreshDrafts()}catch{saveAvailable=false;}saving=false;delete panel.dataset.cmsSaving;filter();}});
+    paste.append(info,area,check,preview,apply);bulkBar.append(paste);
+  }
   if (bulkAvailable) {
     bulkBar.hidden = true;
     list.append(bulkBar);
@@ -1713,7 +1742,7 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
   const modeFilter=el("select");modeFilter.setAttribute("aria-label","販売方式で絞り込む");
   modeFilter.append(new Option("販売方式：すべて",""),...[...new Set(goodsSection.items.map(item=>item.saleMode).filter(Boolean))].map(mode=>new Option(mode,mode)));
   const qualityFilter=el("select");qualityFilter.setAttribute("aria-label","確認候補で絞り込む");qualityFilter.append(new Option("確認候補：すべて",""),new Option("確認候補のみ","review"));
-  qualityFilter.hidden=!["event","talent","performance","goods","karaoke"].includes(selectedEntity);
+  qualityFilter.hidden=!["event","talent","performance","goods","karaoke","song"].includes(selectedEntity);
   modeFilter.hidden=!goodsView;tools.append(category, search, visibility, state, modeFilter, draftFilter, qualityFilter, order, columnMenu);
   list.append(tools);
   const views = [];
@@ -1727,6 +1756,20 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
   }
   if(options.quality==="review"&&!qualityFilter.hidden){qualityFilter.value="review";page=0;search.value="";visibility.value="";state.value="";draftFilter.value="";modeFilter.value="";}
   const resetFilters=button("絞り込みを解除",()=>{for(const control of Object.values(filters))control.value="";page=0;filter()});resetFilters.className="cms-reset-filters";tools.append(resetFilters);
+  const presetsKey=viewKey+":presets";let presets=[];
+  try{const value=JSON.parse(localStorage.getItem(presetsKey)||"[]");if(Array.isArray(value))presets=value.filter(x=>typeof x.name==="string"&&x.filters&&Array.isArray(x.columns)).slice(0,20);}catch{}
+  if(view==="content"){
+    const presetMenu=el("details");presetMenu.className="cms-presets";presetMenu.append(el("summary","保存ビュー"));
+    const body=el("div");body.className="cms-presets-body";const savedSelect=el("select");savedSelect.setAttribute("aria-label","保存ビューを選択");
+    const drawPresets=()=>{savedSelect.replaceChildren(new Option("保存ビューを選択",""),...presets.map((p,i)=>new Option(p.name,String(i))));};drawPresets();
+    const name=el("input");name.placeholder="ビュー名";name.maxLength=50;name.setAttribute("aria-label","ビュー名");
+    const store=next=>{try{localStorage.setItem(presetsKey,JSON.stringify(next));presets=next;drawPresets();return true;}catch{status.textContent="ビューを保存できませんでした。";return false;}};
+    const apply=()=>{const p=presets[Number(savedSelect.value)];if(savedSelect.value===""||!p)return;for(const [key,control] of Object.entries(filters)){const value=p.filters[key];control.value=typeof value==="string"&&(control===search||[...control.options].some(o=>o.value===value))?value:"";}activeColumns.clear();activeColumns.add("title");for(const [key] of columns)if(p.columns.includes(key))activeColumns.add(key);[...columnMenu.querySelectorAll("input")].forEach((c,i)=>c.checked=activeColumns.has(columns[i+1][0]));page=0;filter();presetMenu.open=false;};
+    savedSelect.onchange=apply;
+    const storeButton=button("現在の表示を保存",()=>{const label=name.value.trim();if(!label)return name.focus();if(presets.length>=20&&!presets.some(p=>p.name===label)){status.textContent="保存ビューは20件までです。";return;}if(presets.some(p=>p.name===label)&&!confirm("同じ名前のビューを上書きしますか？"))return;const p={name:label,filters:Object.fromEntries(Object.entries(filters).map(([k,c])=>[k,c.value])),columns:[...activeColumns]};if(store([...presets.filter(p=>p.name!==label),p])){name.value="";status.textContent="ビューを保存しました。";}});
+    const remove=button("名前を指定して削除",()=>{const label=name.value.trim();if(label&&presets.some(p=>p.name===label)&&confirm("保存ビュー「"+label+"」を削除しますか？")){store(presets.filter(p=>p.name!==label));name.value="";}});
+    body.append(savedSelect,name,storeButton,remove,el("small","このブラウザーにのみ保存されます。"));presetMenu.append(body);tools.append(presetMenu);
+  }
   function persistView() {
     try { sessionStorage.setItem(viewKey, JSON.stringify({ ...Object.fromEntries(Object.entries(filters).map(([key, control]) => [key, control.value])), columns: [...activeColumns], page, scroll: list.scrollTop })); } catch {}
   }
@@ -1840,6 +1883,8 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
           if (draftValue && draftValue !== item[key]) { tag.title = "公開中：" + translated(item[key]); tag.classList.add("cms-pending-state"); }
           cell.append(tag);
         }
+      } else if(key==="quality"){
+        const reasons=qualityReasons(goodsView?"goods":entity,item);cell.textContent=reasons.join("・")||"—";cell.title=cell.textContent;
       } else if (key === "draft") {
         cell.textContent = draft ? draft.conflict ? "要確認" : "下書きあり" : "—";
       } else {
@@ -1864,7 +1909,7 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
           (!visibility.value || item.visibility === visibility.value) &&
           (!state.value || item.state === state.value) &&
           (!modeFilter.value || item.saleMode === modeFilter.value) &&
-          (!qualityFilter.value || needsReview(entity,item)) &&
+          (!qualityFilter.value || needsReview(goodsView?"goods":entity,item)) &&
           (!draftFilter.value || Boolean(draft) === (draftFilter.value === "yes"));
       });
       if (order.value === "name" || order.value === "name-desc") matching.sort((a, b) => collator.compare(a.title || a.id, b.title || b.id) * (order.value === "name-desc" ? -1 : 1));

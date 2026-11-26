@@ -132,15 +132,24 @@ test("all roles share the shell and separate collections while viewers have read
             assert.equal(await table.locator("th[data-column=id]").count(), 0);
             await page.locator("#page-title").click();
             await page.keyboard.press("c");
-            assert.equal(await page.locator(".cms-global-create").evaluate(node=>node.open), true);
-            await page.locator(".cms-global-create summary").click();
-            await page.getByRole("button",{name:"操作を検索",exact:true}).click();
+            const createChooser=page.getByRole("dialog",{name:"何を作成しますか？"});
+            await createChooser.waitFor();
+            await createChooser.getByRole("searchbox").fill("楽曲");
+            assert.equal(await createChooser.getByRole("button",{name:"楽曲を新規作成",exact:true}).count(),1);
+            await createChooser.getByRole("searchbox").press("Escape");
+            await createChooser.waitFor({state:"hidden"});
+            await page.locator("#page-title").click();
+            await page.keyboard.press("/");
             const commands=page.getByRole("dialog",{name:"操作を検索"});
             await commands.getByRole("searchbox").fill("楽曲");
             assert.equal(await commands.getByRole("button",{name:"楽曲を開く",exact:true}).count(),1);
             await commands.getByRole("searchbox").press("Escape");
             await commands.waitFor({state:"hidden"});
             assert.equal(await commands.isVisible(),false);
+            await page.getByRole("button",{name:"操作を検索",exact:true}).click();
+            await commands.waitFor();
+            await commands.getByRole("button",{name:"閉じる",exact:true}).click();
+            await commands.waitFor({state:"hidden"});
           }
           await page.locator(".cms-columns summary").click();
           await page.locator(".cms-columns").getByLabel("固定ID", { exact: true }).uncheck();

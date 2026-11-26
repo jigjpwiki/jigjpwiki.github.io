@@ -201,6 +201,20 @@ test("all roles share the shell and separate collections while viewers have read
             await page.getByRole("button", { name: "一括で下書きを保存", exact: true }).click();
             await page.getByText("1件の下書きを保存しました。", { exact: true }).waitFor();
             assert.equal(savedByRole.get(role).revision, 1);
+            let inlineInput;
+            await page.route("**/api/cms/draft/bulk", route => {
+              inlineInput = route.request().postDataJSON();
+              savedByRole.set(role,{revision:2,drafts:[...savedByRole.get(role).drafts,{draftId:"inline-one",input:{entity:"talent",id:"talent-002",activity:"active"}}]});
+              return route.fulfill({json:{revision:2,draftIds:["inline-one"]}});
+            });
+            await page.getByLabel("VTuberの別レコードの活動状態",{exact:true}).selectOption("active");
+            await page.getByText("下書きを保存しました。公開サイトには反映されていません。",{exact:true}).waitFor();
+            assert.deepEqual(inlineInput.ids,["talent-002"]);
+            assert.equal(inlineInput.field,"activity");
+            assert.equal(inlineInput.revision,1);
+            assert.equal(await table.locator("tbody tr").last().locator("[data-column=state]").innerText(),"活動中");
+            await page.unroute("**/api/cms/draft/bulk");
+            savedByRole.set(role,{revision:1,drafts:savedByRole.get(role).drafts.slice(0,1)});
           }
           if (role === "owner") {
             const height = await page.locator(".cms-collection-toolbar").evaluate((node) => node.getBoundingClientRect().height);

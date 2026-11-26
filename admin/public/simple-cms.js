@@ -50,6 +50,7 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
     return node;
   };
   const view = options.view || "legacy";
+  panel.dataset.cmsView = view;
   const selectedEntity = options.entity;
   const musicView = ["song", "musicVideo", "karaoke", "performance"].includes(selectedEntity);
   const catalog = await api("/api/cms/catalog" + (musicView ? "?fresh=1" : ""));
@@ -469,6 +470,7 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
   async function refreshDrafts(reuse = false) {
     if (reuse !== true) saved = await api("/api/cms/draft");
     revision = saved.revision;
+    if (view === "dashboard") draftsArea.hidden = !saved.drafts.length;
     const draftHeading = el("div");
     draftHeading.className = "cms-section-heading";
     draftHeading.append(el("h3", "保存済みの下書き"), el("span", saved.drafts.length + "件"));
@@ -1276,6 +1278,7 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
     };
     if (catalog.editable && view !== "legacy") {
       submit.title = "下書きを保存（Ctrl / ⌘ + Enter）";
+      submit.setAttribute("aria-keyshortcuts","Control+Enter Meta+Enter");
       const closeSave = button("保存して閉じる", () => requestSave("close"));
       closeSave.dataset.pickerNavigation = ""; footer.append(closeSave);
       if (!input.id) {
@@ -1415,7 +1418,11 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
         const index = neighbors.findIndex(node => node.dataset.recordId === input.id && node.dataset.entity === entity);
         for (const [label, delta] of [["前のレコード", -1], ["次のレコード", 1]]) {
           const target = index < 0 ? null : neighbors[index + delta];
-          const nav = button(label, () => target?.click()); nav.disabled = !target; nav.title = label; heading.append(nav);
+          const nav = button(label, () => {
+            const current = [...list.querySelectorAll(".cms-record-link")];
+            const at = current.findIndex(node => node.dataset.recordId === input.id && node.dataset.entity === entity);
+            if (at >= 0) current[at + delta]?.click();
+          }); nav.disabled = !target; nav.title = label; heading.append(nav);
         }
       }
     }
@@ -1447,7 +1454,8 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
   // A single entry point for creation, using the same validated editor and permissions.
   if (catalog.editable && view !== "legacy") {
     const createMenu = el("details"); createMenu.className = "cms-global-create";
-    createMenu.append(el("summary", "＋ 新規作成"));
+    const createSummary = el("summary", "＋ 新規作成");
+    createSummary.title = "新規作成メニュー（C）"; createSummary.setAttribute("aria-keyshortcuts", "C"); createMenu.append(createSummary);
     const choices = el("div"); choices.className = "cms-create-options";
     for (const [entity, spec] of Object.entries(categories)) {
       if (entity === "offer" || !catalog.categories.includes(spec.category) || (spec.ownerCreate && !catalog.owner && catalog.contentPolicy !== "all-content-v1")) continue;
@@ -1478,7 +1486,6 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
         summary.append(link);
       }
     }
-    const heading = el("h3", "コレクション");
     for (const { entity, label, items } of mergedSections) {
       const link = el("a");
       link.href = "#content/" + entity;
@@ -1524,7 +1531,7 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
   const stateLabels = {
     public: "公開", private: "非公開", draft: "非公開・下書き",
     active: "活動中", hiatus: "活動休止", retired: "引退", ended: "終了",
-    on_sale: "販売期間中", scheduled: "販売予定", sold_out: "売り切れ", unknown: "未確認",
+    on_sale: "販売期間中", scheduled: "販売予定", actual: "実施日時", sold_out: "売り切れ", unknown: "未確認",
     partial_sale:"一部販売期間中",partial_scheduled:"一部販売予定",closed:"販売終了・売り切れ",
     verified: "確認済み", unreviewed: "未確認", rejected: "対象外",
     complete: "確認完了", partial: "一部確認", unavailable: "利用不可",
@@ -1803,6 +1810,8 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
       }
     }
     const max = view === "search" ? total : longest;
+    const lastPage = Math.max(0, Math.ceil(max / pageSize) - 1);
+    if (page > lastPage) { page = lastPage; filter(); return; }
     previous.disabled = page === 0;
     next.disabled = (page + 1) * pageSize >= max;
     count.textContent = total + "件 / " + (page + 1) + "ページ";

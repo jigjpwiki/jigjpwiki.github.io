@@ -755,9 +755,9 @@ button:hover:not(:disabled), .button:hover { border-color: var(--accent); }
 .cms-global-create > summary { cursor:pointer; color:var(--accent); font-weight:600; padding:5px 8px; }
 .cms-create-options { display:flex; flex-wrap:wrap; gap:5px; padding:6px; }
 .cms-create-options button { min-height:32px; font-size:12px; }
-.cms-content[data-cms-layout=page] .cms-publication-area[data-phase=published],
-.cms-content[data-cms-layout=page] .cms-publication-area[data-phase=idle] { padding:12px; gap:8px; }
-.cms-content[data-cms-layout=page] .cms-publication-area[data-phase=published] .cms-publication-progress { display:none; }
+.cms-content[data-cms-view=dashboard] .cms-publication-area[data-phase=published],
+.cms-content[data-cms-view=dashboard] .cms-publication-area[data-phase=idle] { padding:12px; gap:8px; }
+.cms-content[data-cms-view=dashboard] .cms-publication-area[data-phase=published] .cms-publication-progress { display:none; }
 @media(min-width:768px) {
   body:has(#view > .cms-content[data-cms-layout]) #main-content { padding:12px 16px 8px; }
   body:has(#view > .cms-content[data-cms-layout]) .app-page-header { padding-block:2px; margin-block:0; }

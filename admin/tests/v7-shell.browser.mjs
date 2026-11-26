@@ -36,6 +36,7 @@ test("all roles share the shell and separate collections while viewers have read
           ...Array.from({ length: 65 }, (_, i) => ({ id: "song-" + String(65 - i).padStart(6, "0"), name: "試験楽曲" + (65 - i), visibility: "public" })),
         ], people: Array.from({ length: 85 }, (_, i) => ({ id: "tal-" + String(i + 1).padStart(6, "0"), name: "試験ライバー" + (i + 1) })),
         organizations: Array.from({ length: 65 }, (_, i) => ({ id: "org-" + String(i + 1).padStart(6, "0"), name: "試験事務所" + (i + 1) })),
+        goodsEntries:[{entity:"campaign",id:"campaign-001",title:"販売企画の試験",context:"2商品 · 試験ライバー1",description:"試験商品A 試験商品B",state:"scheduled",saleMode:"受注販売",visibility:"public",productCount:2},{entity:"product",id:"product-002",title:"単独商品の試験",context:"1商品",state:"on_sale",saleMode:"先着販売",visibility:"public",productCount:1}],
         sections: collection.map(([entity, label]) => ({ entity, label, items: [
           { id: entity + "-001", title: label + "の試験レコード", context: "確認用関連情報", state: "active", visibility: "public" },
           { id: entity + "-002", title: label + "の別レコード", context: "別の関連情報", state: "hiatus", visibility: "draft" },
@@ -92,7 +93,11 @@ test("all roles share the shell and separate collections while viewers have read
       await page.goto(base);
       await page.locator("#view h2").getByText("ダッシュボード", { exact: true }).waitFor();
       assert.equal(await page.locator("nav[aria-label='管理ナビゲーション']").count(), 1);
-      assert.ok(await page.locator(".cms-navigation a svg[aria-hidden=true]").count() >= 18);
+      // The owner-only compatibility shortcut (#cms) is not a primary navigation item.
+      const primaryLinks = page.locator(".cms-navigation > a:not(#simple-cms-link)");
+      assert.equal(await primaryLinks.count(), 16, "5 workspace + 5 people/events + 5 music + 1 goods");
+      assert.equal(await primaryLinks.locator("svg[aria-hidden=true]").count(), 16, "each primary navigation link has its icon");
+      assert.equal(await primaryLinks.filter({hasText:"グッズ"}).count(),1);
       assert.equal(await page.locator("[data-owner-only]").isVisible(), role === "owner");
       if (role === "editor") {
         const menu = page.getByRole("button", { name: "メニュー", exact: true });
@@ -195,6 +200,56 @@ test("all roles share the shell and separate collections while viewers have read
           await page.screenshot({ path: path.join(process.env.ADMIN_V7_SCREENSHOTS, `${role}-${entity}.png`), fullPage: true });
         }
         if (role === "viewer") assert.equal(await page.locator("#view").getByRole("button", { name: /新規登録|下書きを保存|公開/ }).count(), 0);
+      }
+      await page.goto(base+"/#content/goods");
+      await page.getByRole("button",{name:"販売企画の試験",exact:true}).waitFor();
+      assert.equal(await page.locator("#view table tbody tr").count(),2);
+      assert.equal(await page.locator('#admin-nav a[href="#content/goods"]').count(),1);
+      assert.equal(await page.locator('#admin-nav a[href="#content/product"],#admin-nav a[href="#content/campaign"],#admin-nav a[href="#content/offer"]').count(),0);
+      await page.getByRole("searchbox",{name:"名称を検索"}).fill("試験商品B");
+      assert.equal(await page.locator("#view table tbody tr").count(),1);
+      await page.getByRole("searchbox",{name:"名称を検索"}).fill("");
+      if(role==="editor"){
+        await page.getByRole("button",{name:"販売企画を新規登録",exact:true}).click();
+        const common=page.locator(".cms-goods-common");
+        await common.getByLabel("販売方式",{exact:true}).selectOption("preorder");
+        assert.equal(await common.getByLabel("販売終了日時（JST）",{exact:true}).evaluate(e=>e.required),true);
+        await common.getByLabel("販売開始日時（JST）",{exact:true}).fill("2027-01-01T10:00");
+        await common.getByLabel("販売終了日時（JST）",{exact:true}).fill("2027-01-15T23:59");
+        await common.getByLabel("公式販売URL",{exact:true}).fill("https://example.com/sale");
+        await common.getByRole("combobox",{name:"関連VTuber",exact:true}).fill("試験ライバー85");
+        await common.getByRole("option",{name:/試験ライバー85/}).click();
+        await page.getByLabel("名称",{exact:true}).fill("新しい販売企画");
+        const items=page.locator(".cms-goods-product");
+        await items.first().getByLabel("商品名",{exact:true}).fill("試験商品A");
+        await items.first().getByLabel("価格（JPY・任意）",{exact:true}).fill("1000");
+        await page.getByRole("button",{name:"商品を追加",exact:true}).click();
+        await items.last().getByLabel("商品名",{exact:true}).fill("試験商品B");
+        await items.last().getByLabel("価格（JPY・任意）",{exact:true}).fill("2000");
+        await items.last().getByRole("checkbox",{name:"共通と異なる販売条件"}).check();
+        await items.last().getByLabel("販売方式",{exact:true}).selectOption("first_come");
+        await items.last().getByLabel("販売終了日時（JST）",{exact:true}).fill("");
+        let submitted;
+        await page.route("**/api/cms/draft",route=>{
+          if(route.request().method()!=="PUT")return route.continue();
+          submitted=route.request().postDataJSON();return route.fulfill({json:{revision:2,draftId:"goods-new"}});
+        });
+        await page.getByRole("button",{name:"下書きを保存",exact:true}).click();
+        await page.getByText("下書きを保存しました。公開サイトには反映されていません。",{exact:true}).waitFor();
+        assert.equal(submitted.entity,"campaign");
+        assert.equal(submitted.products.length,2);
+        assert.equal(submitted.products[0].sales[0].saleMode,"preorder");
+        assert.equal(submitted.products[0].sales[0].endsAt,"2027-01-15T23:59");
+        assert.equal(submitted.products[1].sales[0].saleMode,"first_come");
+        assert.equal(submitted.products[1].sales[0].url,"https://example.com/sale");
+        assert.equal(submitted.products[1].sales[0].endsAt,"");
+        assert.deepEqual(submitted.products.map(p=>p.talentIds),[["tal-000085"],["tal-000085"]]);
+        await page.unroute("**/api/cms/draft");
+        await page.getByRole("button",{name:"閉じる",exact:true}).click();
+        await page.getByRole("button",{name:"単独商品を新規登録",exact:true}).click();
+        assert.equal(await page.locator(".cms-goods-product").count(),1);
+        assert.equal(await page.getByRole("button",{name:"商品を追加",exact:true}).count(),0);
+        await page.getByRole("button",{name:"閉じる",exact:true}).click();
       }
       await page.locator("#page-title").click();
       await page.keyboard.press(process.platform === "darwin" ? "Meta+k" : "Control+k");

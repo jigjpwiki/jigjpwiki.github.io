@@ -100,6 +100,17 @@
               "public",
               "draft"
             ]
+          },
+          "image": {
+            "anyOf": [
+              {
+                "type": "string",
+                "format": "image-ref"
+              },
+              {
+                "type": "null"
+              }
+            ]
           }
         }
       }
@@ -227,6 +238,12 @@
             "enum": [
               "public",
               "draft"
+            ]
+          },
+          "saleMode": {
+            "enum": [
+              "preorder",
+              "first_come"
             ]
           }
         }

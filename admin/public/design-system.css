@@ -704,3 +704,20 @@ button:hover:not(:disabled), .button:hover { border-color: var(--accent); }
   .cms-editor-footer{position:sticky;bottom:0;z-index:3;padding-bottom:max(12px,env(safe-area-inset-bottom))}
   .cms-picker-listbox{max-height:min(240px,38dvh)}
 }
+
+/* Goods: one common sale form and progressively expanded product rows. */
+.cms-goods-editor{gap:var(--space-3);min-width:0}
+.cms-goods-editor fieldset{margin:0;display:flex;flex-direction:column;gap:8px}
+.cms-goods-editor label{margin:0;min-width:0}
+.cms-goods-editor label:has(input[type=checkbox]){display:flex;align-items:center;gap:8px;font-size:var(--text-small)}
+.cms-goods-editor label input[type=checkbox]{width:18px;height:18px;min-height:18px;margin:0}
+.cms-goods-common{background:var(--soft)}
+.cms-goods-condition{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;min-width:0}
+.cms-goods-condition>label:first-child,.cms-goods-condition>label:nth-child(4),.cms-goods-condition>small{grid-column:1/-1}
+.cms-goods-editor small{color:var(--muted);font-size:var(--text-small)}
+.cms-goods-preview{width:100%;max-width:260px;height:150px;object-fit:contain;background:var(--soft);border:1px solid var(--line);border-radius:var(--radius)}
+.cms-goods-product{border:1px solid var(--line);border-radius:var(--radius);padding:10px;background:var(--surface);min-width:0}
+.cms-goods-product summary{cursor:pointer;font-weight:600;overflow-wrap:anywhere}
+.cms-goods-product-body{padding-top:10px;gap:10px}
+.cms-goods-sale{background:var(--surface)}
+@media(max-width:479px){.cms-goods-condition{grid-template-columns:1fr}}

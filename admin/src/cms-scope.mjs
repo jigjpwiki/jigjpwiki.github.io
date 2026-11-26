@@ -1,6 +1,7 @@
 import { canEditSong } from "./cms-music.mjs";
 import { fail } from "./security.mjs";
 import { contentTypes } from "./content-definitions.mjs";
+import goodsCore from "../../assets/js/goods-core.js";
 
 const types = {
   ...contentTypes,
@@ -231,3 +232,37 @@ export function assertExistingCampaign(models, permissions, id) {
   if (!permissions.canRead("campaign", campaign)) fail(403, "cms_scope_denied");
 }
 
+
+/** Presentation projection only: never invent campaign membership, change IDs,
+ * or expose products/offers outside the caller's existing catalog permission. */
+export function scopedGoodsEntries(models, member, sections = scopedCatalog(models, member)) {
+  const by = entity => new Map((sections.find(row => row.entity === entity)?.items || []).map(row => [row.id,row]));
+  const products = by("product"), campaigns = by("campaign"), offers = by("offer");
+  const saleRows = models.goods.offers.filter(row => offers.has(row.id) && products.has(row.productId));
+  const names = new Map(models.talents.talents.map(row=>[row.id,row.displayName]));
+  const groups = new Map(models.catalog.groups.map(row=>[row.id,row.name]));
+  const records = new Map(models.goods.products.map(row=>[row.id,row]));
+  const rows = [];
+  const create = (entity,item,items,sales,image) => {
+    const subject = [...new Set(items.flatMap(p=>[...p.talentIds.map(id=>names.get(id)),...p.groupIds.map(id=>groups.get(id))]).filter(Boolean))];
+    return {...item,entity,image:image||"",context:[items.length+"商品",...subject.slice(0,3)].join(" · "),
+      description: [...items.map(p=>p.title),...subject].join(" "),
+      date: sales.map(o=>o.startsAt).filter(Boolean).sort().at(-1)||"",
+      state: goodsCore.productAggregate(sales).code,
+      sales: sales.map(({productId,startsAt,endsAt,status,saleMode})=>({productId,startsAt,endsAt,status,saleMode})),
+      saleMode: goodsCore.modeLabel(sales), productCount:items.length};
+  };
+  for (const c of models.goods.campaigns) if(campaigns.has(c.id)){
+    const sales=saleRows.filter(o=>o.campaignId===c.id);
+    const items=[...new Set(sales.map(o=>o.productId))].map(id=>records.get(id)).filter(Boolean);
+    rows.push(create("campaign",campaigns.get(c.id),items,sales,c.image));
+  }
+  for(const [id,p] of products){
+    const allSales=models.goods.offers.filter(o=>o.productId===id);
+    // Scoped legacy members can still reach an allowed product when its
+    // shared campaign is not in scope, without revealing the campaign.
+    const standalone=saleRows.filter(o=>o.productId===id&&(!o.campaignId||!campaigns.has(o.campaignId)));
+    if(!allSales.length||standalone.length) rows.push(create("product",p,[records.get(id)],standalone,p.image));
+  }
+  return rows;
+}

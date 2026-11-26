@@ -42,3 +42,16 @@ test('inline public JSON escapes script terminators and round trips without chan
  const { inlineJson }=require('../lib/info-pages');const value={note:'</script><img src=x onerror=alert(1)>'};const encoded=inlineJson(value);
  assert.doesNotMatch(encoded,/<\/script/);assert.deepEqual(JSON.parse(encoded),value);
 });
+
+test('explicit sale modes follow exact boundaries without inventing inventory, and resales retain product identity',()=>{
+ const o={...fixture().goods.offers[0],saleMode:'preorder',status:'unknown',startsAt:'2026-11-25T12:00:00Z',endsAt:'2026-11-26T12:00:00Z'};
+ assert.equal(core.status(o,new Date('2026-11-25T11:59:59.999Z')),'scheduled');
+ assert.equal(core.status(o,new Date(o.startsAt)),'on_sale');
+ assert.equal(core.offerLabel(o,new Date(o.startsAt)),'受注受付期間中');
+ assert.equal(core.status(o,new Date(o.endsAt)),'ended');
+ const stock={...o,saleMode:'first_come',endsAt:null};
+ assert.equal(core.offerLabel(stock,new Date('2030-01-01')),'販売期間中');
+ assert.equal(core.status({...stock,status:'sold_out'},new Date('2030-01-01')),'sold_out');
+ assert.equal(core.productAggregate([{...o,status:'ended'},stock],new Date('2030-01-01')).code,'on_sale');
+ const m=fixture();m.goods.offers[0]={...m.goods.offers[0],saleMode:'preorder',endsAt:null};assert.throws(()=>check(m),/sale mode/);
+});

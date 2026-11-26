@@ -43,6 +43,7 @@ test("all roles share the shell and separate collections while viewers have read
         ] })),
       };
       }
+      else if(url.pathname==="/api/cms/video-preview") {assert.equal(role,"editor");assert.equal(url.searchParams.get("id"),"abcdefghijk");data={title:"確認用の動画タイトル",publishedAt:null,source:"collected"};}
       else if (url.pathname === "/api/cms/detail") data = { sha: "a".repeat(40), fields: {
         displayName: "VTuberの試験レコード", activity: "active", agencyState: "affiliated",
         affiliations: [{ organizationId: "org-000001", status: "current", from: null, to: null }],
@@ -132,15 +133,26 @@ test("all roles share the shell and separate collections while viewers have read
             assert.equal(await table.locator("th[data-column=id]").count(), 0);
             await page.locator("#page-title").click();
             await page.keyboard.press("c");
-            assert.equal(await page.locator(".cms-global-create").evaluate(node=>node.open), true);
-            await page.locator(".cms-global-create summary").click();
-            await page.getByRole("button",{name:"操作を検索",exact:true}).click();
+            const createChooser=page.getByRole("dialog",{name:"何を作成しますか？"});
+            await createChooser.waitFor();
+            await createChooser.getByRole("searchbox").fill("楽曲");
+            assert.equal(await createChooser.getByRole("button",{name:"楽曲を新規作成",exact:true}).count(),1);
+            await createChooser.getByRole("searchbox").press("Escape");
+            await createChooser.waitFor({state:"hidden"});
+            await page.locator("#page-title").click();
+            await page.keyboard.press("/");
             const commands=page.getByRole("dialog",{name:"操作を検索"});
+            await commands.getByRole("searchbox").fill("talent-001");
+            assert.equal(await commands.getByRole("button",{name:"VTuberの試験レコード",exact:true}).count(),1);
             await commands.getByRole("searchbox").fill("楽曲");
             assert.equal(await commands.getByRole("button",{name:"楽曲を開く",exact:true}).count(),1);
             await commands.getByRole("searchbox").press("Escape");
             await commands.waitFor({state:"hidden"});
             assert.equal(await commands.isVisible(),false);
+            await page.getByRole("button",{name:"操作を検索",exact:true}).click();
+            await commands.waitFor();
+            await commands.getByRole("button",{name:"閉じる",exact:true}).click();
+            await commands.waitFor({state:"hidden"});
           }
           await page.locator(".cms-columns summary").click();
           await page.locator(".cms-columns").getByLabel("固定ID", { exact: true }).uncheck();
@@ -349,6 +361,11 @@ test("all roles share the shell and separate collections while viewers have read
         await page.getByRole("button", {name:"閉じる",exact:true}).click();
         await page.goto(base + "/#content/musicVideo");
         await page.getByRole("button", { name: "歌動画を新規登録", exact: true }).click();
+        const videoUrl=page.getByLabel("YouTube動画URL",{exact:true});await videoUrl.fill("https://youtu.be/abcdefghijk");
+        await page.getByRole("button",{name:"YouTubeの情報を確認",exact:true}).click();
+        await page.getByText("確認用の動画タイトル",{exact:true}).waitFor();
+        await page.getByRole("button",{name:"正式な動画URLを使用",exact:true}).click();
+        assert.equal(await videoUrl.inputValue(),"https://www.youtube.com/watch?v=abcdefghijk");
         const song = page.getByRole("combobox", { name: "既存の楽曲", exact: true });
         await song.waitFor();
         await song.click();

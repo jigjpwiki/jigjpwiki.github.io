@@ -22,7 +22,7 @@ await mountSimpleCms(root, document.querySelector("#status"), async (path, metho
   return result.json();
 });
 </script></html>` });
-      if (["/simple-cms.js", "/cms-history.js", "/cms-conflicts.js"].includes(pathname)) {
+      if (["/simple-cms.js", "/cms-history.js", "/cms-conflicts.js", "/content-utils.js", "/cms-transfer.js"].includes(pathname)) {
         const body = await readFile(new URL("../public" + pathname, import.meta.url));
         return route.fulfill({ contentType: "text/javascript", body });
       }

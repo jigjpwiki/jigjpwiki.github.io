@@ -1,6 +1,8 @@
 import { publicationReview } from "./cms-review.mjs";
 import { recoverAppliedGroup } from "./cms-recover-draft.mjs";
-import { youtubeVideoLookup } from "./cms-music.mjs";
+import { youtubeVideoLookup, videoForCms, collectedVideo } from "./cms-music.mjs";
+import { prepareTransfer } from "./cms-transfer.mjs";
+import { fetchOfficialMetadata } from "./cms-official.mjs";
 import { readCmsHistory, prepareAuditReversal, assertReversalRoundTrip } from "./cms-history.mjs";
 import { inspectDraftConflicts } from "./cms-conflicts.mjs";
 import { publicationPlan } from "./cms-publish.mjs";
@@ -276,7 +278,7 @@ export class Admin {
         }
       }
     }
-    const cmsRoutes = ["/api/cms/catalog", "/api/cms/detail", "/api/cms/draft", "/api/cms/draft/bulk", "/api/cms/draft/conflicts", "/api/cms/history", "/api/cms/publication/reapply", "/api/cms/publication/preview"];
+    const cmsRoutes = ["/api/cms/catalog", "/api/cms/official-preview", "/api/cms/transfer", "/api/cms/video-preview", "/api/cms/detail", "/api/cms/draft", "/api/cms/draft/bulk", "/api/cms/draft/conflicts", "/api/cms/history", "/api/cms/publication/reapply", "/api/cms/publication/preview"];
     if (cmsRoutes.includes(url.pathname)) {
       await this.atomic(async () => {
         const key = "cms-rate:" + sid;
@@ -324,6 +326,21 @@ export class Admin {
               visibility: row.visibility ?? "public",
             })),
         });
+      }
+      if(url.pathname==="/api/cms/official-preview"&&request.method==="GET"){
+        if(member.role!=="editor"||!hasAllContent(member))fail(403,"cms_scope_denied");
+        const info=await fetchOfficialMetadata(url.searchParams.get("url"),this.env.CMS_OFFICIAL_HOSTS,this.transport);
+        await requireCurrentGrant();return json(info);
+      }
+      if(url.pathname==="/api/cms/video-preview"&&request.method==="GET") {
+        if(member.role!=="editor"||!hasAllContent(member)||!contentCategories(member).includes("music"))fail(403,"cms_scope_denied");
+        const id=url.searchParams.get("id");if(!/^[\\w-]{11}$/.test(id||""))fail(400,"cms_invalid_video_url");
+        const registered=models.media.videos.find(row=>row.youtubeId===id);
+        const collected=collectedVideo(models,id);
+        const video=registered||await videoForCms(models,id,this.cmsVideoLookup);
+        if(!cmsPermissions(models,member).canRead("video",video))fail(403,"cms_scope_denied");
+        await requireCurrentGrant();
+        return json({title:video.title,publishedAt:video.publishedAt||null,source:registered?"catalog":collected?"collected":"youtube"});
       }
       if (url.pathname === "/api/cms/detail" && request.method === "GET")
         return json({ sha: snapshot.sha, fields: draftDetails(snapshot, member, url.searchParams.get("entity"), url.searchParams.get("id")) });
@@ -450,6 +467,21 @@ export class Admin {
             return json({ revision: result.revision });
           });
         }
+      }
+      if(url.pathname==="/api/cms/transfer"&&["POST","PUT"].includes(request.method)){
+        if(member.role!=="editor"||!hasAllContent(member))fail(403,"cms_scope_denied");
+        const input=await body(request,100000);
+        const workspace=new WorkspaceStore(this.store,this.env.SESSION_KEY);
+        const previous=await workspace.get(session.id);
+        if(!Number.isInteger(input?.revision)||input.revision!==(previous?.revision??0))fail(409,"workspace_revision_conflict");
+        const batch=await prepareTransfer(snapshot,member,input,previous?.operations||[],this.cmsVideoLookup);
+        await requireCurrentGrant();
+        if(request.method==="POST")return json({preview:batch.preview,revision:input.revision});
+        return this.atomic(async()=>{
+          await requireCurrentGrant();
+          const saved=await workspace.save(session.id,{protocol:1,revision:input.revision,operations:batch.operations});
+          return json({revision:saved.revision,draftIds:batch.draftIds,preview:batch.preview});
+        });
       }
       if (url.pathname === "/api/cms/draft/bulk" && request.method === "PUT") {
         if (member.role !== "editor" || !hasAllContent(member)) fail(403, "cms_scope_denied");

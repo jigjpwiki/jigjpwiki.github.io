@@ -41,16 +41,23 @@ const navigationCount=require('../lib/site-pages').pages.filter(p=>p.ready).leng
       const checkShell = async (route) => {
         const info = await page.locator('.site-header').evaluate(header => {
           const rect=header.getBoundingClientRect(),links=[...header.querySelectorAll('.site-nav a')],logo=header.querySelector('.logo img,.brand img').getBoundingClientRect(),nav=header.querySelector('.site-nav').getBoundingClientRect();
-          return {width:innerWidth,scroll:document.documentElement.scrollWidth,header:rect.height,center:(rect.left+rect.right)/2,navCenter:(nav.left+nav.right)/2,logoX:logo.left,logoY:logo.top-rect.top,links:links.map(a=>{const r=a.getBoundingClientRect(),s=getComputedStyle(a),label=[...a.querySelectorAll("span")].find(n=>getComputedStyle(n).display!=="none");return {left:r.left,right:r.right,height:r.height,color:s.color,background:s.backgroundColor,border:s.borderBottomColor,whiteSpace:getComputedStyle(label).whiteSpace,labelFits:label.getBoundingClientRect().width+a.querySelector("svg").getBoundingClientRect().width<=r.width};})};
+          return {width:innerWidth,scroll:document.documentElement.scrollWidth,header:rect.height,center:(rect.left+rect.right)/2,navCenter:(nav.left+nav.right)/2,logoX:logo.left,logoY:logo.top-rect.top,links:links.map(a=>{const r=a.getBoundingClientRect(),s=getComputedStyle(a),label=[...a.querySelectorAll("span")].find(n=>getComputedStyle(n).display!=="none"),lr=label.getBoundingClientRect(),ir=a.querySelector("svg").getBoundingClientRect();return {left:r.left,right:r.right,top:r.top,bottom:r.bottom,height:r.height,labelX:lr.left,labelY:lr.top,labelW:lr.width,iconX:ir.left,iconY:ir.top,font:s.fontFamily,weight:s.fontWeight,color:s.color,background:s.backgroundColor,border:s.borderBottomColor,whiteSpace:getComputedStyle(label).whiteSpace,labelFits:lr.width+ir.width<=r.width};})};
         });
         assert(info.scroll<=width, route+' horizontal overflow');
         assert(info.header<=(width>=1100?80:160), route+' oversized header: '+info.header);
         assert(Math.abs(info.navCenter-info.center)<=1,route+' navigation is not centered');
+        assert.equal(await page.locator('.site-header > .site-brand > a.brand').count(),1);
+        assert.equal(await page.locator('.site-header > .header-policy').count(),1);
         if (!baselineShell) baselineShell=info;
         else {
           assert(Math.abs(info.logoX-baselineShell.logoX)<=1 && Math.abs(info.logoY-baselineShell.logoY)<=1,route+' logo shifts across routes');
           assert(Math.abs(info.header-baselineShell.header)<=1,route+' header height shifts across routes');
-          assert(info.links.every((r,i)=>Math.abs(r.left-baselineShell.links[i].left)<=1&&Math.abs(r.right-baselineShell.links[i].right)<=1),route+' navigation tracks shift across routes');
+          for (const [i,r] of info.links.entries()) {
+            const b=baselineShell.links[i];
+            for (const key of ['left','right','top','bottom','labelX','labelY','labelW','iconX','iconY']) assert(Math.abs(r[key]-b[key])<=0.5,route+' nav '+i+' '+key+' shifts: '+b[key]+' -> '+r[key]);
+            assert.equal(r.font,b.font,route+' inconsistent font');
+            assert.equal(r.weight,b.weight,route+' active state changes font weight');
+          }
         }
         assert.equal(info.links.length,navigationCount);
         assert(info.links.every(r=>r.left>=-1&&r.right<=width+1&&r.height>=43),route+' navigation outside viewport or too small');
@@ -63,6 +70,9 @@ const navigationCount=require('../lib/site-pages').pages.filter(p=>p.ready).leng
         assert.equal(await page.locator('footer a[href="/terms/"]').count(),1);
         if(route==='/')assert.equal(await page.locator('.site-header #show-videos-toggle').count(),1);
       };
+      await checkShell('/');
+      // Simulate a route-specific webfont/body font change, without changing the shared header.
+      await page.addStyleTag({content:'body.site-shell {font-family: monospace !important; line-height: 2.1 !important;}'});
       await checkShell('/');
       await page.locator('.site-skip').focus();
       await page.keyboard.press('Enter');

@@ -1029,7 +1029,10 @@
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/QZB2DmdUlCc/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/Gwr7KJNWnI6CEgmIfEeMZahF5pbGNKlRhQXBEkuMWE0D66--IJE77z-5Zu2i5LFBc_CA6ZkqY4Y=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=QZB2DmdUlCc"
+    "url": "https://www.youtube.com/watch?v=QZB2DmdUlCc",
+    "descriptionPartnerIds": [
+      "tal-000070"
+    ]
   },
   {
     "videoId": "x9whmwnTb1c",
@@ -1591,7 +1594,7 @@
     "date": "2026-11-26T12:03:05.000Z",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/9ZSYZhLO1rc/mqdefault.jpg?v=6b06ba51",
+    "thumbnail": "https://i.ytimg.com/vi/9ZSYZhLO1rc/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/nMtec5z3KY5RUGCSbQENm9culC2VpB7Ate_dUueAINpAJdFK4wwe7Q6eH88QiMXqjImAleLI=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=9ZSYZhLO1rc"
   },
@@ -1750,6 +1753,18 @@
     "thumbnail": "https://i.ytimg.com/vi/FAIEyxJSzrA/mqdefault.jpg?v=6b086b3c",
     "channelIcon": "https://yt3.ggpht.com/hBz75E3AEST1Dzv5vOTHAqoJfayd30WIWWQ3ZFLlWMHDsyZ_QD6ZVVUtLTKSizalT3APPtdpFGI=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=FAIEyxJSzrA"
+  },
+  {
+    "videoId": "-Umyf_HfMtc",
+    "name": "汐月永遠",
+    "youtubeid": "UCCCm2ueQtW3mYUMB7Excq8g",
+    "title": "【改】回線と相談しながらチル歌雑談の会【汐月永遠/パレデミア学園】#永遠との時間",
+    "date": "2026-11-26T17:56:56.000Z",
+    "status": "archive",
+    "type": "video",
+    "thumbnail": "https://i.ytimg.com/vi/-Umyf_HfMtc/mqdefault.jpg?v=6b0872e8",
+    "channelIcon": "https://yt3.ggpht.com/68oh3mZjSYRleiuocaxnF9VcHdbaxLQzjCq4QgdPlHe3083eTdmNkfXZ6YV81vTUA51qoNXH_g=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=-Umyf_HfMtc"
   },
   {
     "videoId": "5404EIWXX6E",

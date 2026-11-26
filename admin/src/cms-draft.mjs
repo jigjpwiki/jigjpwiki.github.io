@@ -320,6 +320,7 @@ export async function prepareDraft(snapshot, member, input, lookup) {
   }
   for (const key of fields[entity]) {
     if (typeof input[key] !== "string") fail(400, "cms_invalid_input");
+    if (entity === "product" && key === "identityUrl" && before && !before.identityUrl && !input[key].trim()) continue;
     value[key] = input[key].trim() || null;
   }
   if (entity === "campaign" && input.campaignImage !== undefined) {
@@ -404,6 +405,7 @@ export async function prepareDraft(snapshot, member, input, lookup) {
       applyRelations("product", productValue, product, member);
       for (const field of fields.product) {
         if (typeof product[field] !== "string") fail(400, "cms_invalid_input");
+        if (field === "identityUrl" && old && !old.identityUrl && !product[field].trim()) continue;
         productValue[field] = product[field].trim() || null;
       }
       const sales = saleOperations(snapshot, access, product, { campaignId, productKey, visibility: productValue.visibility === "draft" || value.visibility === "draft" ? "draft" : "public" });

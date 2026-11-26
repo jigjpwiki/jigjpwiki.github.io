@@ -25,9 +25,37 @@
  function date(value){return value?new Date(value).toLocaleString('ja-JP',{timeZone:'Asia/Tokyo',year:'numeric',month:'2-digit',day:'2-digit',hour:'2-digit',minute:'2-digit',hourCycle:'h23'})+' JST':null;}
  function price(value){return !value||value.amount===null||value.currency===null?'価格未確認':new Intl.NumberFormat('ja-JP',{style:'currency',currency:value.currency}).format(value.amount);}
  const modeLabels={preorder:'受注販売',first_come:'先着販売'};
- function modeLabel(offers){
+ function modeCode(offers){
   const modes=[...new Set(offers.map(o=>o.saleMode||'unknown'))];
-  return modes.length===1?(modeLabels[modes[0]]||'販売方式未確認'):modes.length?'複数の販売方式・未確認を含む':'販売方式未確認';
+  return modes.length===1?modes[0]:modes.length?'mixed':'unknown';
+ }
+ function modeLabel(offers){
+  const code=modeCode(offers);
+  return modeLabels[code]||(code==='mixed'?'複数の販売方式・未確認を含む':'販売方式未確認');
+ }
+ // Aggregate by merchandise identity rather than counting historical resales
+ // as extra products. An active resale takes priority over an ended old sale.
+ function productAggregate(offers,now=new Date()){
+  const groups=new Map();
+  for(const [i,o] of offers.entries()){
+   const key=o.productId||'offer:'+i;
+   if(!groups.has(key))groups.set(key,[]);
+   groups.get(key).push(status(o,now));
+  }
+  const representative=[...groups.values()].map(states=>({
+   status:states.includes('on_sale')?'on_sale':states.includes('scheduled')?'scheduled':states.includes('unknown')?'unknown':states.every(s=>s==='sold_out')?'sold_out':'ended'
+  }));
+  return aggregate(representative,now);
+ }
+ function aggregateLabel(offers,now=new Date()){
+  const code=productAggregate(offers,now).code;
+  if(code==='on_sale'){
+   const active=offers.filter(o=>status(o,now)==='on_sale');
+   if(active.every(o=>o.saleMode==='preorder'))return '受注受付期間中';
+   if(active.some(o=>o.saleMode))return '販売期間中';
+  }
+  if(code==='partial_sale'&&offers.some(o=>o.saleMode))return '一部販売期間中';
+  return labels[code];
  }
  function offerLabel(o,now=new Date()){
   const code=status(o,now);
@@ -35,5 +63,5 @@
   if(code==='on_sale'&&o.saleMode==='first_come')return '販売期間中';
   return labels[code];
  }
- return {labels,status,aggregate,date,price,modeLabels,modeLabel,offerLabel};
+ return {labels,status,aggregate,productAggregate,aggregateLabel,date,price,modeLabels,modeCode,modeLabel,offerLabel};
 });

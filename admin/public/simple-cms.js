@@ -1245,6 +1245,7 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
     form.append(footer);
     form.addEventListener("invalid", (event) => {
       const control = event.target;
+      for(let parent=control.parentElement;parent&&parent!==form;parent=parent.parentElement)if(parent.tagName==="DETAILS")parent.open=true;
       const label = control.closest("label");
       if (!label) return;
       let message = label.querySelector(".cms-field-error");
@@ -1689,6 +1690,23 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
   list.append(paging);
   refreshList = filter;
   filter();
+  if (goodsView && globalThis.Goods?.productAggregate) {
+    const refreshSales=()=>{
+      if(!panel.isConnected){clearInterval(timer);return;}
+      let changed=false;
+      for(const item of goodsSection.items){
+        const next=globalThis.Goods.productAggregate(item.sales||[]).code;
+        if(next!==item.state){item.state=next;changed=true;}
+      }
+      if(changed){
+        const selected=state.value;
+        state.replaceChildren(new Option("状態：すべて",""),...[...new Set(goodsSection.items.map(item=>item.state).filter(Boolean))].map(value=>new Option(translated(value),value)));
+        if([...state.options].some(option=>option.value===selected))state.value=selected;
+        filter();
+      }
+    };
+    const timer=setInterval(refreshSales,60000);
+  }
   if (view === "search") search.focus();
   if (saveAvailable) status.textContent = "";
   if (options.recordId && selectedEntity) {

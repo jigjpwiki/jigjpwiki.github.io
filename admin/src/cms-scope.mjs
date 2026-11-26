@@ -248,8 +248,8 @@ export function scopedGoodsEntries(models, member, sections = scopedCatalog(mode
     return {...item,entity,image:image||"",context:[items.length+"商品",...subject.slice(0,3)].join(" · "),
       description: [...items.map(p=>p.title),...subject].join(" "),
       date: sales.map(o=>o.startsAt).filter(Boolean).sort().at(-1)||"",
-      state: goodsCore.aggregate(sales).code,
-      sales: sales.map(({startsAt,endsAt,status,saleMode})=>({startsAt,endsAt,status,saleMode})),
+      state: goodsCore.productAggregate(sales).code,
+      sales: sales.map(({productId,startsAt,endsAt,status,saleMode})=>({productId,startsAt,endsAt,status,saleMode})),
       saleMode: goodsCore.modeLabel(sales), productCount:items.length};
   };
   for (const c of models.goods.campaigns) if(campaigns.has(c.id)){

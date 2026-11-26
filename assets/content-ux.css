@@ -58,3 +58,38 @@
 @media(max-width:600px){.events-page .event-card-grid{grid-template-columns:minmax(0,1fr);gap:14px}.events-page .feature-filters{padding:12px;gap:8px}.events-page .feature-filters label{flex:1 1 125px}.events-page .feature-filters label:first-child{flex-basis:100%}.event-card-body{padding:16px}.event-detail-overview{padding:16px}.events-page .event-section-heading h2{font-size:18px}}
 
 .event-detail [data-event-phase][hidden]{display:none}
+
+/* Merchandise listing and details use the same compact content language as events. */
+.goods-page .goods-intro{color:#64748b;font-size:14px;margin:-12px 0 20px}
+.goods-page .feature-filters{background:#fff;border-radius:12px;padding:16px}
+.goods-page .feature-filters :is(input,select,button){border-radius:7px}
+.content-page .goods-page .goods-archive-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.content-page .goods-page .goods-card{border-radius:12px;padding:0;display:flex;flex-direction:column;overflow:hidden;background:#fff}
+.content-page .goods-page .goods-card:hover{border-color:#aebed0}
+.goods-page .goods-cover-campaign .goods-image,.goods-page .goods-hero .goods-image{aspect-ratio:16/9}
+.goods-page .goods-cover-single .goods-image{aspect-ratio:1}
+.goods-page .goods-cover-empty .goods-image{aspect-ratio:auto;min-height:70px;background:#edf1f5}
+.goods-page .goods-cover .goods-image{border-bottom:1px solid #dce1e6}
+.goods-page .goods-archive-body,.goods-page .goods-product-body{padding:16px;display:flex;flex-direction:column;align-items:flex-start;flex:1;min-width:0;gap:6px}
+.goods-page .goods-card-kinds{display:flex;gap:6px;flex-wrap:wrap;align-items:center}
+.goods-page .goods-kind,.goods-page .goods-mode,.goods-page .goods-status{font-size:11px;line-height:1.5;font-weight:600;display:inline-flex;padding:3px 8px;border-radius:5px;background:#edf1f5;color:#475569;align-items:center}
+.goods-page .goods-mode{background:#e7effa;color:#175b9b}
+.goods-page .goods-status[data-goods-state="on_sale"],.goods-page .goods-status[data-goods-state="partial_sale"]{background:#e1f3e8;color:#17623b}
+.goods-page .goods-status[data-goods-state="scheduled"],.goods-page .goods-status[data-goods-state="partial_scheduled"]{background:#e7f1fe;color:#175c99}
+.content-page .goods-page .goods-card h2{font-size:17px;margin:2px 0 4px;line-height:1.45}
+.content-page .goods-page .goods-card h2 a{color:#172d40;text-decoration:none}
+.content-page .goods-page .goods-card h2 a:hover{text-decoration:underline}
+.content-page .goods-page .goods-card p{margin:0;font-size:13px}
+.goods-page .goods-card .goods-period{font-size:12px;color:#526273}
+.goods-page .goods-more{display:flex;align-self:stretch;justify-content:space-between;gap:8px;border-top:1px solid #e8edf2;padding-top:10px;margin-top:auto;text-decoration:none;font-size:12px;font-weight:600}
+.goods-page .goods-hero{max-width:760px;margin:12px auto 20px;border:1px solid #dce1e6;border-radius:12px;overflow:hidden}
+.goods-page .goods-detail-overview{border-radius:12px;background:#fff;padding:22px;border:1px solid #dce1e6}
+.goods-page .goods-detail-overview h2{font-size:19px;margin:16px 0 12px}
+.goods-page .goods-period-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:12px}
+.goods-page .goods-period-row{border:1px solid #e3e8ed;border-radius:8px;padding:14px;min-width:0}
+.goods-page .goods-period-row>span{margin-right:6px}
+.goods-page .goods-offer{width:100%;border-top:1px solid #e8edf2;display:flex;flex-direction:column;align-items:flex-start;gap:6px;margin:4px 0 0;padding:10px 0 0}
+.goods-page .goods-product-card .goods-image{width:100%;max-width:100%;border-bottom:1px solid #e8edf2}
+.goods-page .goods-product-card .goods-price{font-size:19px}
+@media(max-width:980px){.content-page .goods-page .goods-archive-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:600px){.content-page .goods-page .goods-archive-grid{grid-template-columns:minmax(0,1fr);gap:14px}.goods-page .goods-detail-overview{padding:14px}.goods-page .goods-product-body,.goods-page .goods-archive-body{padding:12px}.goods-page .goods-cover-campaign .goods-image{aspect-ratio:16/9}.goods-page .goods-cover-empty .goods-image{aspect-ratio:auto}}

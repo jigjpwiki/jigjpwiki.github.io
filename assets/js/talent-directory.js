@@ -13,6 +13,8 @@
       .toLowerCase()
       .replace(/[ァ-ヶ]/g, (c) => String.fromCharCode(c.charCodeAt(0) - 96))
       .replace(/\s/g, "");
+  const ended = p => ["ended","retired"].includes(p.activity);
+  const independent = p => p.unaffiliated === true && !ended(p);
   function matches(p, f = {}) {
     return (
       (!f.q ||
@@ -31,14 +33,14 @@
         (f.relation === "unknown"
           ? !p.current.length && !p.former.length && !p.unaffiliated
           : f.relation === "unaffiliated"
-            ? p.unaffiliated === true
+            ? independent(p)
             : p[f.relation].length > 0))
     );
   }
   function representative(p, organizations) {
     return (
       organizations.find((o) => p.current.includes(o.id))?.id ||
-      (p.unaffiliated ? "unaffiliated" : p.former.length ? "former" : "unknown")
+      (ended(p) ? (p.former.length ? "former" : "ended") : independent(p) ? "unaffiliated" : p.former.length ? "former" : "unknown")
     );
   }
   function arrange(people, organizations, sort = "agency") {
@@ -64,6 +66,7 @@
       ...organizations.map((o) => ({ id: o.id, name: o.name })),
       { id: "unaffiliated", name: "無所属" },
       { id: "former", name: "旧所属のタレント" },
+      { id: "ended", name: "活動終了・引退" },
       { id: "unknown", name: "所属不明" },
     ]
       .map((section) => ({

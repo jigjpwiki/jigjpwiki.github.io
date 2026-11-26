@@ -177,7 +177,7 @@ test("all roles share the shell and separate collections while viewers have read
             assert.equal(await page.locator(".cms-collection-workspace").evaluate(node=>node.style.getPropertyValue("--cms-editor-width")),"55%");
             await width.fill("46");
           }
-          assert.equal(await page.getByLabel("事務所所属状態", { exact: true }).isEnabled(), role !== "viewer");
+          assert.equal(await page.getByLabel("現在の所属状況", { exact: true }).isEnabled(), role !== "viewer");
           assert.equal(await page.getByLabel("TwitchチャンネルURL", { exact: true }).isEnabled(), role !== "viewer");
           if (role === "editor") {
             await page.getByRole("button", { name: "所属を追加", exact: true }).click();
@@ -432,6 +432,13 @@ test("all roles share the shell and separate collections while viewers have read
         await page.goto(base + "/#content/talent");
         await page.getByRole("button",{name:"VTuberを新規登録",exact:true}).click();
         await page.getByLabel("表示名",{exact:true}).fill("自動更新と並行した新規登録");
+        await page.getByLabel("活動状態",{exact:true}).selectOption("ended");
+        await page.getByRole("button",{name:"所属を追加",exact:true}).click();
+        const former=page.locator(".cms-affiliation-editor fieldset").last();
+        await former.getByRole("combobox",{name:"事務所",exact:true}).fill("試験事務所65");
+        await former.getByRole("option",{name:/試験事務所65/}).click();
+        assert.equal(await former.getByLabel("所属状態",{exact:true}).inputValue(),"former");
+        await page.getByLabel("現在の所属状況",{exact:true}).selectOption("unaffiliated");
         const payloads=[];
         await page.route("**/api/cms/catalog?fresh=1",async route=>{
           const response=await route.fetch();
@@ -449,6 +456,8 @@ test("all roles share the shell and separate collections while viewers have read
         assert.equal(payloads.length,2);
         assert.equal(payloads[0].sha,"a".repeat(40));
         assert.equal(payloads[1].sha,"b".repeat(40));
+        assert.equal(payloads[1].agencyState,"unaffiliated");
+        assert.equal(payloads[1].affiliations[0].status,"former");
         assert.deepEqual({...payloads[1],sha:payloads[0].sha},payloads[0]);
         assert.equal(await page.getByLabel("表示名",{exact:true}).inputValue(),"自動更新と並行した新規登録");
         await page.unroute("**/api/cms/draft");
@@ -466,6 +475,26 @@ test("all roles share the shell and separate collections while viewers have read
         await page.getByText("保存できませんでした（入力は保持されています）",{exact:true}).waitFor();
         assert.equal(staleAttempts,1);
         assert.equal(await page.getByLabel("表示名",{exact:true}).inputValue(),"競合を自動上書きしない");
+      }
+      if(role==="owner"){
+        await page.route("**/api/cms/catalog?fresh=1",async route=>{
+          const response=await route.fetch();const data=await response.json();
+          data.sections.find(s=>s.entity==="video").items=Array.from({length:125},(_,i)=>({id:"video-scroll-"+i,title:"スクロール試験 "+i,state:"active",visibility:"public"}));
+          await route.fulfill({json:data});
+        });
+        await page.goto(base+"/#content/video");
+        await page.getByText("50 / 125件を表示",{exact:true}).waitFor();
+        const list=page.locator(".cms-collection-list");
+        const original=await list.locator(".cms-record-link").first().elementHandle();
+        await list.evaluate(node=>node.scrollTop=node.scrollHeight);
+        await page.getByText("100 / 125件を表示",{exact:true}).waitFor();
+        assert.equal(await original.evaluate(node=>node.isConnected),true);
+        await list.evaluate(node=>node.scrollTop=node.scrollHeight);
+        await page.getByText("125 / 125件を表示",{exact:true}).waitFor();
+        const ids=await list.locator(".cms-record-link").evaluateAll(nodes=>nodes.map(n=>n.dataset.recordId));
+        assert.equal(ids.length,125);assert.equal(new Set(ids).size,125);
+        await list.getByRole("searchbox").first().fill("スクロール試験 124");
+        await page.getByText("1 / 1件を表示",{exact:true}).waitFor();
       }
       assert.deepEqual(errors, []);
       await context.close();

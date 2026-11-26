@@ -147,3 +147,24 @@ test("registration order survives reading an already grouped DOM", () => {
     ["b", "a"],
   );
 });
+
+test("ended former members stay in former section; active independent talents stay independent",()=>{
+  const graduate={...row("g","卒業",[],["a"],true),activity:"ended"};
+  const retired={...row("r","引退",[],[],true),activity:"retired"};
+  const active={...row("a","個人活動",[],["b"],true),activity:"active"};
+  const current={...row("c","所属中",["a"],[],false),activity:"ended"};
+  assert.equal(directory.representative(graduate,organizations),"former");
+  assert.equal(directory.representative(retired,organizations),"ended");
+  assert.equal(directory.representative(active,organizations),"unaffiliated");
+  assert.equal(directory.representative(current,organizations),"a");
+  assert.equal(directory.matches(graduate,{relation:"unaffiliated"}),false);
+  assert.equal(directory.matches(graduate,{relation:"former",organization:"a"}),true);
+  assert.equal(directory.matches(active,{relation:"unaffiliated"}),true);
+  const master=structuredClone(require("./fixtures/admin-vnext-baseline.json").talents);
+  const t=master.talents[3];t.visibility="public";t.affiliations=t.affiliations.map(a=>({...a,status:"former"}));t.agencyStatus.value="unaffiliated";t.activityStatus.value="ended";
+  const html=talentCards(master);
+  const card=html.split('id="'+t.id+'"')[1].split("</li>")[0];
+  assert(!card.includes("<p>無所属</p>"));assert(card.includes("旧所属："));
+  const section=html.split('data-directory-section="former"')[1].split("</section>")[0];
+  assert(section.includes('id="'+t.id+'"'));
+});

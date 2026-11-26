@@ -25,7 +25,7 @@ test('v2 affiliation and activity states are independent, never inferred from fo
       assert.doesNotMatch(hero, />引退<|>活動終了</);
       if (label) assert(html.includes(`<p>${label}</p>`));
       else assert.doesNotMatch(html, />活動中<|>活動休止<|>引退<|>活動終了</);
-      assert.equal(html.includes('<p>無所属</p>'), agency === 'unaffiliated');
+      assert.equal(html.includes('<p>無所属</p>'), agency === 'unaffiliated' && !['retired','ended'].includes(activity));
       assert.equal(html.includes('旧所属：ProForma Nova'), agency !== 'affiliated');
       assert.doesNotMatch(html, /sourceRefs|displayNameSourceRefs|agencyStatus|activityStatus/);
     }

@@ -46,7 +46,7 @@ await mountSimpleCms(document.querySelector("#cms"), document.querySelector("#st
 </script></html>`);
       }
       let result;
-      if (req.url === "/api/cms/catalog") result = { ...catalog, editable, publishable: editable };
+      if (req.method === "GET" && new URL(req.url, "http://localhost").pathname === "/api/cms/catalog") result = { ...catalog, editable, publishable: editable };
       else if (req.method === "GET" && req.url === "/api/cms/draft") result = getDrafts();
       else if (req.method === "GET" && req.url === "/api/cms/publication") result = { publication };
       else {

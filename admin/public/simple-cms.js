@@ -54,8 +54,8 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
   const view = options.view || "legacy";
   panel.dataset.cmsView = view;
   const selectedEntity = options.entity;
-  const musicView = ["song", "musicVideo", "karaoke", "performance"].includes(selectedEntity);
-  const catalog = await api("/api/cms/catalog" + (musicView ? "?fresh=1" : ""));
+  // Every workspace starts with the current main ref; the reader still reuses immutable model data.
+  const catalog = await api("/api/cms/catalog?fresh=1");
   const goodsView = selectedEntity === "goods";
   const goodsSection = { entity: "goods", category: "goods", label: "グッズ", items: catalog.goodsEntries || [] };
   const mergedSections = catalog.goodsEntries
@@ -828,16 +828,28 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
     if (fullTalent) {
       const section = el("fieldset");
       section.className = "cms-affiliation-editor";
-      section.append(el("legend", input.id ? "所属履歴" : "所属"), el("p", input.id ? "移籍する場合は現在の所属を終了し、新しい所属を追加してください。" : "所属が分かる場合は事務所を追加してください。不明な場合は後から編集できます。"));
+      section.append(el("legend", "所属・所属履歴"), el("p", "現在・過去の所属を登録できます。卒業・移籍した事務所は削除せず「所属終了」にしてください。"));
       agencyState = el("select");
-      agencyState.append(new Option("所属あり", "affiliated"), new Option("個人・無所属", "unaffiliated"), new Option("不明", "unknown"));
+      agencyState.append(new Option("所属中", "affiliated"), new Option("現在の所属なし", "unaffiliated"), new Option("未確認", "unknown"));
       agencyState.value = input.agencyState || "unknown";
-      agencyState.setAttribute("aria-label", "事務所所属状態");
-      const agencyLabel = el("label", "事務所所属状態");
+      agencyState.setAttribute("aria-label", "現在の所属状況");
+      const agencyLabel = el("label", "現在の所属状況");
       agencyLabel.append(agencyState);
-      section.append(agencyLabel);
+      const agencyHint=el("small");agencyHint.className="cms-agency-hint";
       const rows = el("div");
       rows.className = "stack";
+      function syncAgency(){
+        const current=affiliationRows.some(r=>r.org.value&&r.status.value==="current");
+        const former=affiliationRows.some(r=>r.org.value&&r.status.value==="former");
+        const ended=["ended","retired"].includes(fields.get("activity")?.value);
+        agencyState.options[0].disabled=!current;
+        agencyState.options[1].disabled=agencyState.options[2].disabled=current;
+        agencyState.options[1].text=former&&ended?"所属終了（現在の所属なし）":"現在の所属なし";
+        if(current)agencyState.value="affiliated";
+        else if(agencyState.value==="affiliated"||!agencyState.value)agencyState.value="unknown";
+        agencyHint.textContent=current?"所属中の履歴から自動設定しています。":former&&ended?"卒業・所属終了が確認済みで、現在の所属がない場合は「所属終了」を選択してください。":"現在の所属が確認できない場合は「未確認」を選択してください。";
+      }
+      fields.get("activity")?.addEventListener("change",syncAgency);
       function affiliation(value = {}, existing = false) {
         const row = el("fieldset");
         row.append(el("legend", existing ? "登録済みの所属" : "追加した所属"));
@@ -849,25 +861,31 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
           row.querySelector('input[type="search"]').disabled = true;
         }
         const status = el("select");
-        status.append(new Option("現在", "current"), new Option("過去", "former"), new Option("不明", "unknown"));
-        status.value = value.status || (input.id ? "former" : "current");
+        status.append(new Option("所属中", "current"), new Option("所属終了", "former"), new Option("未確認", "unknown"));
+        status.value = value.status || (["ended","retired"].includes(fields.get("activity")?.value) ? "former" : "current");
         const from = el("input"), to = el("input");
         from.type = to.type = "date";
         from.value = value.from || "";
         to.value = value.to || "";
-        for (const [label, field] of [["事務所", org], ["所属状態", status], ["開始日", from], ["終了日", to]]) {
+        for (const [label, field] of [["事務所", org], ["所属状態", status], ["所属開始日", from], ["所属終了日・卒業日", to]]) {
+          // Native selects and dates have explicit accessible names, independent of option text.
+          if (!field.cmsPicker) field.setAttribute("aria-label", label);
           row.append(pickerField(label, field));
         }
         const entry = { row, org, status, from, to };
         if (!existing) row.append(button("追加した所属を削除", () => {
           affiliationRows.splice(affiliationRows.indexOf(entry), 1);
-          row.remove();
+          row.remove();syncAgency();
         }));
         affiliationRows.push(entry);
         rows.append(row);
+        org.addEventListener("change",syncAgency);status.addEventListener("change",syncAgency);
+        to.addEventListener("change",()=>{if(to.value&&status.value==="current"){status.value="former";syncAgency();}});
+        syncAgency();
       }
       for (const value of input.affiliations || []) affiliation(value, Boolean(input.id));
-      section.append(rows, button("所属を追加", () => { affiliation(); rows.lastElementChild?.querySelector("input[type=search]")?.focus(); }));
+      section.append(rows, button("所属を追加", () => { affiliation(); rows.lastElementChild?.querySelector("input[type=search]")?.focus(); }),agencyLabel,agencyHint);
+      syncAgency();
       form.append(section);
       if (input.accounts?.length) {
         const accounts = el("details");
@@ -1452,9 +1470,29 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
           id: value.id, key, sales: editor.read(),
           ...Object.fromEntries([...controls].map(([name, control]) => [name, control.value])),
         }));
-        const result = await api("/api/cms/draft", "PUT", {
-          entity, id: input.id, draftId, sha: formSha, revision, ...values,
-        });
+        const payload = { entity, id: input.id, draftId, sha: formSha, revision, ...values };
+        let result;
+        try {
+          result = await api("/api/cms/draft", "PUT", payload);
+        } catch (error) {
+          // Only a never-saved, standalone talent is eligible. Never rebase an
+          // existing record, saved draft, or multi-record editor automatically.
+          if ((error.code || error.message) !== "main_changed_reload" ||
+              entity !== "talent" || input.id || draftId || !form.isConnected ||
+              inputRevision !== submittedInputRevision) throw error;
+          saveStatus.textContent = "最新データを確認中…";
+          const latest = await api("/api/cms/catalog?fresh=1");
+          if (!form.isConnected || inputRevision !== submittedInputRevision ||
+              !latest.editable || latest.owner !== catalog.owner ||
+              latest.contentPolicy !== catalog.contentPolicy ||
+              !latest.categories?.includes("talents") ||
+              !/^[0-9a-f]{40}$/.test(latest.sha || "") ||
+              latest.sha === payload.sha) throw error;
+          // Preserve the original workspace revision. The server revalidates
+          // references, duplicate identities, permissions and revision as usual.
+          formSha = latest.sha;
+          result = await api("/api/cms/draft", "PUT", { ...payload, sha: formSha });
+        }
         revision = result.revision;
         draftId = result.draftId;
         formArea.dataset.draftId = draftId;
@@ -1478,6 +1516,8 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
         saveStatus.textContent = authExpired ? "再ログインが必要・入力保持" : "保存失敗・入力保持";
         status.textContent = authExpired
           ? "このタブを閉じず、上の再ログイン案内から認証を確認してから、もう一度下書きを保存してください。"
+          : code === "main_changed_reload" && entity === "talent" && !input.id && !draftId
+          ? "データの更新が続いています。入力は保持されています。少し時間をおいて、もう一度下書きを保存してください。"
           : ["main_changed_reload", "workspace_revision_conflict"].includes(code)
           ? "別の更新がありました。入力を控えてから画面を開き直してください。"
           : error.message === "cms_identity_anchor" ? "固定済みの収集アカウントはこの画面から変更できません。"
@@ -1489,8 +1529,8 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
         const accountService=code.startsWith("cms_invalid_account_url:")?code.split(":")[1]:null;
         const accountField={youtube:"youtubeUrl",x:"xUrl",twitch:"twitchUrl",tiktok:"tiktokUrl"}[accountService];
         const specific={
-          cms_affiliation_state_mismatch:"事務所所属状態と所属履歴が一致していません。「所属あり」の場合は現在の所属を追加してください。",
-          cms_affiliation_current_end:"終了日を入力した所属は「過去」に変更してください。",
+          cms_affiliation_state_mismatch:"現在の所属状況と所属履歴が一致していません。所属中の事務所、または所属終了の履歴を確認してください。",
+          cms_affiliation_current_end:"終了日を入力した所属は「所属終了」に変更してください。",
           cms_affiliation_period:"所属の開始日と終了日の順序を確認してください。",
           identity_already_reserved:"同じ公式プロフィールまたはアカウントが登録済みです。既存のVTuberを検索してください。",
           cms_invalid_input:"入力形式または必須項目を確認してください。",
@@ -1915,8 +1955,10 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
   if(pasteMenu)list.append(pasteMenu);
   const views = [];
   const collator = new Intl.Collator("ja");
+  const continuous = view !== "legacy";
   let page = Number.isSafeInteger(viewState.page) && viewState.page >= 0 ? viewState.page : 0;
   const pageSize = 50;
+  let renderedPage=-1, hasMore=false, observer;
   const filters = { search, category, visibility, state, modeFilter, draftFilter, qualityFilter, order };
   for (const [key, control] of Object.entries(filters)) {
     if (typeof viewState[key] !== "string") continue;
@@ -1947,8 +1989,19 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
   const count = el("p");
   count.setAttribute("aria-live", "polite");
   const previous = button("前のページ", () => { page--; filter(); });
-  const next = button("次のページ", () => { page++; filter(); });
-  paging.append(count, previous, next);
+  const next = button(continuous?"さらに表示":"次のページ", () => { if(continuous)loadMore();else{page++;filter();} });
+  if(continuous){
+    count.className="cms-list-count";tools.append(count);
+    paging.append(next);
+    observer=new IntersectionObserver(entries=>{
+      if(!list.isConnected){observer.disconnect();return;}
+      if(entries.some(entry=>entry.isIntersecting))loadMore();
+    },{root:null,rootMargin:"0px 0px 160px 0px"});
+  }else paging.append(count,previous,next);
+  function loadMore(){
+    if(!continuous||!hasMore||!list.isConnected||!list.getClientRects().length)return;
+    page++;filter(true);
+  }
   async function openRecord(entity, id) {
     if (saving) return;
     const request = ++requestSerial;
@@ -2063,10 +2116,12 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
     }
     return row;
   };
-  function filter() {
+  function filter(appendOnly = false) {
+    // Event handlers may pass an Event; only an explicit true requests an append.
+    const append = continuous && appendOnly === true && renderedPage === page - 1;
     const needle = normal(search.value.trim());
     const drafts = new Map((saved?.drafts || []).filter(({ input }) => input?.id).map((draft) => [draft.input.entity + ":" + draft.input.id, draft]));
-    let total = 0, longest = 0, offset = 0;
+    let total = 0, longest = 0, offset = 0, displayed=0;
     for (const { entity, section, headerRow, entries, items } of views) {
       const visible = !category.value || category.value === entity;
       section.hidden = !visible;
@@ -2085,20 +2140,23 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
       total += matching.length;
       longest = Math.max(longest, matching.length);
       // Search pages have one global 50-row budget; legacy grouped view retains its separate collections.
-      const lower = page * pageSize - (view === "search" ? offset : 0);
-      const upper = lower + pageSize;
+      const sectionOffset=view==="search"?offset:0;
+      const lower=(continuous ? (append?page*pageSize:0) : page*pageSize)-sectionOffset;
+      const upper=(page+1)*pageSize-sectionOffset;
       offset += matching.length;
       const windowRows = matching.slice(Math.max(0, lower), Math.max(0, upper));
+      displayed+=continuous?Math.min(matching.length,Math.max(0,upper)):windowRows.length;
       const shown = columns.filter(([key]) => activeColumns.has(key));
-      headerRow.replaceChildren(...shown.map(([key, label]) => { const th = el("th", label); th.scope = "col"; th.dataset.column = key; return th; }));
-      if (bulkAvailable) {
+      if(!append)headerRow.replaceChildren(...shown.map(([key, label]) => { const th = el("th", label); th.scope = "col"; th.dataset.column = key; return th; }));
+      if (bulkAvailable && !append) {
         const th = el("th", "選択");
         th.scope = "col";
         headerRow.prepend(th);
       }
-      entries.replaceChildren(...windowRows.map((item) => makeRow(entity, item, drafts.get((item.entity || entity) + ":" + item.id))));
-      if (view === "search" && !windowRows.length) section.hidden = true;
-      else if (!windowRows.length) {
+      const nodes=windowRows.map(item=>makeRow(entity,item,drafts.get((item.entity||entity)+":"+item.id)));
+      if(append)entries.append(...nodes);else entries.replaceChildren(...nodes);
+      if (view === "search" && !entries.childElementCount) section.hidden = true;
+      else if (!append && !windowRows.length) {
         const empty = el("tr");
         const cell = el("td", "該当するコンテンツはありません。");
         cell.colSpan = shown.length + Number(bulkAvailable);
@@ -2109,14 +2167,21 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
     const max = view === "search" ? total : longest;
     const lastPage = Math.max(0, Math.ceil(max / pageSize) - 1);
     if (page > lastPage) { page = lastPage; filter(); return; }
+    renderedPage=page;
     previous.disabled = page === 0;
-    next.disabled = (page + 1) * pageSize >= max;
-    count.textContent = total + "件 / " + (page + 1) + "ページ";
+    hasMore=(page+1)*pageSize<max;
+    next.disabled=!hasMore;
+    if(continuous){
+      count.textContent=displayed+" / "+total+"件を表示";
+      paging.hidden=!hasMore;
+      observer.unobserve(paging);
+      if(hasMore&&paging.isConnected)observer.observe(paging);
+    }else count.textContent=total+"件 / "+(page+1)+" / "+(lastPage+1)+"ページ";
     if (bulkAvailable) updateBulk();
     resetFilters.hidden=!Object.entries(filters).some(([key,control])=>key!=="order"&&Boolean(control.value));
     persistView();
   }
-  const reset = () => { page = 0; filter(); };
+  const reset = () => { page = 0; list.scrollTop=0; filter(); };
   search.addEventListener("input", reset);
   for (const control of [category, visibility, state, modeFilter, draftFilter, qualityFilter, order]) control.addEventListener("change", reset);
   for (const { entity, label, items } of sections) {

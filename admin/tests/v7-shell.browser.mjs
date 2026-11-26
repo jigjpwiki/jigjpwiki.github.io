@@ -93,7 +93,10 @@ test("all roles share the shell and separate collections while viewers have read
       await page.goto(base);
       await page.locator("#view h2").getByText("ダッシュボード", { exact: true }).waitFor();
       assert.equal(await page.locator("nav[aria-label='管理ナビゲーション']").count(), 1);
-      assert.ok(await page.locator(".cms-navigation a svg[aria-hidden=true]").count() >= 18);
+      const primaryLinks = page.locator(".cms-navigation > a:not([hidden])");
+      assert.equal(await primaryLinks.count(), 16, "5 workspace + 5 people/events + 5 music + 1 goods");
+      assert.equal(await primaryLinks.locator("svg[aria-hidden=true]").count(), 16, "each primary navigation link has its icon");
+      assert.equal(await primaryLinks.filter({hasText:"グッズ"}).count(),1);
       assert.equal(await page.locator("[data-owner-only]").isVisible(), role === "owner");
       if (role === "editor") {
         const menu = page.getByRole("button", { name: "メニュー", exact: true });

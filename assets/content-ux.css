@@ -89,7 +89,8 @@
 .goods-page .goods-period-row{border:1px solid #e3e8ed;border-radius:8px;padding:14px;min-width:0}
 .goods-page .goods-period-row>span{margin-right:6px}
 .goods-page .goods-offer{width:100%;border-top:1px solid #e8edf2;display:flex;flex-direction:column;align-items:flex-start;gap:6px;margin:4px 0 0;padding:10px 0 0}
-.goods-page .goods-product-card .goods-image{width:100%;max-width:100%;border-bottom:1px solid #e8edf2}
+.goods-page .goods-product-card .goods-image{width:100%;max-width:100%;aspect-ratio:1/1;overflow:hidden;flex:none;box-shadow:0 1px 0 #e8edf2}
+.goods-page .goods-product-card .goods-image img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;display:block}
 .goods-page .goods-product-card .goods-price{font-size:19px}
 @media(max-width:980px){.content-page .goods-page .goods-archive-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:600px){.content-page .goods-page .goods-archive-grid{grid-template-columns:minmax(0,1fr);gap:14px}.goods-page .goods-detail-overview{padding:14px}.goods-page .goods-product-body,.goods-page .goods-archive-body{padding:12px}.goods-page .goods-cover-campaign .goods-image{aspect-ratio:16/9}.goods-page .goods-cover-empty .goods-image{aspect-ratio:auto}}

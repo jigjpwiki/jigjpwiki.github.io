@@ -480,7 +480,7 @@ function saleOperations(snapshot, access, input, context) {
       key, entity: "offer", ...(old ? { id: old.id } : {}),
       value: {
         ...(old || { productId: id || "@" + (context?.productKey || "cms-product"), campaignId, startsAt: null, endsAt: null,
-          periodNote: null, status: "unknown", visibility: context?.visibility || "public" }),
+          periodNote: null, status: "unknown", visibility: context?.visibility || (input.visibility === "draft" ? "draft" : "public") }),
         ...period,
         ...(sale.saleMode !== undefined && sale.saleMode !== "" ? { saleMode: sale.saleMode } : {}),
         ...(sale.status !== undefined ? { status: sale.status } : {}),

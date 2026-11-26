@@ -35,6 +35,7 @@ const navIcons = {
   "#content/video": "M3 6h12v12H3z M15 10l6-4v12l-6-4",
   "#content/karaoke": "M9 6a3 3 0 0 1 6 0v6a3 3 0 0 1-6 0z M5 10v2a7 7 0 0 0 14 0v-2 M12 19v3 M8 22h8",
   "#content/performance": "M4 4h16v16H4z M8 8h8 M8 12h8 M8 16h5",
+  "#content/goods": "M3 7l9-4 9 4v10l-9 4-9-4z M3 7l9 4 9-4 M12 11v10",
   "#content/product": "M3 7l9-4 9 4v10l-9 4-9-4z M3 7l9 4 9-4 M12 11v10",
   "#content/campaign": "M3 9v6h4l10 4V5L7 9z M7 15l2 6h4 M20 9v6",
   "#content/offer": "M4 8h16l1 13H3z M8 8V6a4 4 0 0 1 8 0v2",
@@ -1824,13 +1825,13 @@ screen = function () {
       if (group && !group.hidden) group.open = true;
     } else a.removeAttribute("aria-current");
   }
-  const compatibility = { "#masters": "talent", "#anniversaries": "anniversary", "#events": "event", "#music": "song", "#goods": "product", "#organizations": "organization" };
+  const compatibility = { "#masters": "talent", "#anniversaries": "anniversary", "#events": "event", "#music": "song", "#goods": "goods", "#organizations": "organization" };
   const contentEntity = route.startsWith("#content/") ? route.slice(9).split("?")[0] : me.provider === "google" ? compatibility[route] : null;
   const recordId = route.startsWith("#content/") ? new URLSearchParams(route.split("?")[1] || "").get("record") : null;
   const cmsPages = { "#dashboard": "dashboard", "#cms": "dashboard", "#drafts": "drafts", "#publication": "publication", "#history": "history", "#search": "search", ...(me.provider === "google" ? { "#workspace": "drafts" } : {}) };
   if (me.simpleCms && (contentEntity || cmsPages[route])) {
     const pageNames = { dashboard: "ダッシュボード", drafts: "下書き", publication: "公開状況", history: "更新履歴", search: "全体検索" };
-    const names = { talent: "VTuber", organization: "事務所", group: "グループ", anniversary: "記念日", event: "イベント", song: "楽曲", musicVideo: "歌動画", video: "動画情報", karaoke: "歌枠", performance: "歌唱記録", product: "商品", campaign: "キャンペーン", offer: "販売情報" };
+    const names = { talent: "VTuber", organization: "事務所", group: "グループ", anniversary: "記念日", event: "イベント", song: "楽曲", musicVideo: "歌動画", video: "動画情報", karaoke: "歌枠", performance: "歌唱記録", product: "商品", campaign: "キャンペーン", offer: "販売情報", goods: "グッズ" };
     const title = contentEntity ? names[contentEntity] : pageNames[cmsPages[route]];
     $("#page-title").textContent = title || "コンテンツ";
     const panel = node("section");

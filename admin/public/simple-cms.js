@@ -53,7 +53,15 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
   const selectedEntity = options.entity;
   const musicView = ["song", "musicVideo", "karaoke", "performance"].includes(selectedEntity);
   const catalog = await api("/api/cms/catalog" + (musicView ? "?fresh=1" : ""));
-  const sections = selectedEntity ? catalog.sections.filter(({ entity }) => entity === selectedEntity) : catalog.sections;
+  const goodsView = selectedEntity === "goods";
+  const goodsSection = { entity: "goods", category: "goods", label: "グッズ", items: catalog.goodsEntries || [] };
+  const mergedSections = catalog.goodsEntries
+    ? [...catalog.sections.filter(row => !["product","campaign","offer"].includes(row.entity)),
+      ...(catalog.categories.includes("goods") ? [goodsSection] : [])]
+    : catalog.sections;
+  const sections = goodsView ? [goodsSection] : selectedEntity
+    ? catalog.sections.filter(({ entity }) => entity === selectedEntity)
+    : view === "legacy" ? catalog.sections : mergedSections;
   const browsing = ["legacy", "content", "search"].includes(view);
   let pickerSequence = 0;
   const relationEntries = (rows) => (rows || []).map((row) => ({
@@ -636,6 +644,8 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
     requestSerial++;
     if (!formArea.contains(document.activeElement)) restoreFocus = document.activeElement;
     const spec = categories[entity];
+    const unifiedGoods = view !== "legacy" && ["product","campaign"].includes(entity) &&
+      (goodsView || view === "drafts" || view === "search" || input.sales?.some(s=>s.saleMode) || input.products?.some(p=>p.sales?.some(s=>s.saleMode)));
     let formSha = input.sha || catalog.sha;
     const form = el("form");
     form.className = "stack cms-record-form";
@@ -728,7 +738,7 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
         control.readOnly = true;
         control.title = "固定済みの収集アカウントは高度な管理で確認してください。";
       }
-      control.required = ["month", "day"].includes(key) || ["name", "title", "displayName", "rawSongTitle", "rawLabel", "videoUrl", "videoKind"].includes(key) || key === "announcementUrl" || key === "summary" || key === "identityUrl" || key === "songIdentityUrl";
+      control.required = ["month", "day"].includes(key) || ["name", "title", "displayName", "rawSongTitle", "rawLabel", "videoUrl", "videoKind"].includes(key) || key === "announcementUrl" || key === "summary" || (key === "identityUrl" && !unifiedGoods) || key === "songIdentityUrl";
       if (key === "price") {
         control.min = "0";
         control.step = input.currency && input.currency !== "JPY" ? "any" : "1";
@@ -800,7 +810,7 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
         form.append(accounts);
       }
     }
-    if (!fullTalent && ((!input.id && !["campaign", "song", "video", "organization", "group", "offer", "performance"].includes(entity)) || entity === "talent")) {
+    if (!unifiedGoods && !fullTalent && ((!input.id && !["campaign", "song", "video", "organization", "group", "offer", "performance"].includes(entity)) || entity === "talent")) {
       const key = ["talent", "event"].includes(entity) ? "organization" : "talent";
       const choices = key === "organization" ? catalog.organizations : catalog.people;
       const select = el("select");
@@ -878,9 +888,9 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
       return selected;
     }
     if (catalog.contentPolicy === "all-content-v1" && (input.id || draftId)) {
-      if (["anniversary", "product", "musicVideo", "karaoke"].includes(entity))
+      if (!unifiedGoods && ["anniversary", "product", "musicVideo", "karaoke"].includes(entity))
         multiRelation("talentIds", "関連する人物", catalog.people, input.talentIds);
-      if (["anniversary", "product", "event"].includes(entity))
+      if (!unifiedGoods && ["anniversary", "product", "event"].includes(entity))
         multiRelation("groupIds", "関連グループ", (catalog.sections.find((row) => row.entity === "group")?.items || []).map(({ id, title }) => ({ id, name: title })), input.groupIds);
       if (entity === "event") {
         multiRelation("organizerIds", "主催事務所", catalog.organizations, input.organizerIds);
@@ -889,7 +899,7 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
     }
     if (["group", "performance"].includes(entity))
       multiRelation("talentIds", entity === "group" ? "所属メンバー" : "歌唱者", catalog.people, input.talentIds);
-    if (entity === "product" && !input.id) {
+    if (!unifiedGoods && entity === "product" && !input.id) {
       const campaigns = catalog.sections.find(({ entity }) => entity === "campaign")?.items || [];
       const select = el("select");
       form.append(bindPicker(select, campaigns, input.campaignId, "キャンペーン", "キャンペーンなし／新規"));
@@ -942,10 +952,10 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
         id, key, ...Object.fromEntries(Object.entries(controls).map(([name, control]) => [name, control.value])),
       })) };
     }
-    const productSales = entity === "product" ? saleEditor(input.sales || [], input.id, true) : null;
+    const productSales = entity === "product" && !unifiedGoods ? saleEditor(input.sales || [], input.id, true) : null;
     if (productSales) form.append(productSales.fieldset);
     const products = [];
-    if (entity === "campaign") {
+    if (entity === "campaign" && !unifiedGoods) {
       const group = el("fieldset");
       group.append(el("legend", "商品と販売情報"));
       const rows = el("div");
@@ -987,6 +997,135 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
       group.append(rows, button("商品を追加", () => appendProduct()));
       form.append(group);
     }
+
+    // The common sales editor expands shared conditions into the original
+    // independently identified offer records. Old records and URLs stay valid.
+    function mountGoodsEditor() {
+      const campaign = entity === "campaign", root = el("section");
+      root.className="cms-goods-editor stack";
+      const keys=["saleMode","startsAt","endsAt","url"];
+      const conditions=(sale={})=>Object.fromEntries(keys.map(k=>[k,sale[k]||""]));
+      const subjectOf=p=>({talentIds:p.talentIds||(p.talent?[p.talent]:[]),groupIds:p.groupIds||[]});
+      const same=(a,b)=>JSON.stringify(a)===JSON.stringify(b);
+      function commonest(rows,fallback){
+        const counts=new Map();
+        for(const r of rows){const k=JSON.stringify(r);counts.set(k,(counts.get(k)||0)+1);}
+        const top=[...counts].sort((a,b)=>b[1]-a[1])[0];return top?JSON.parse(top[0]):fallback;
+      }
+      function field(host,label,type,value="",required=false){
+        const c=el("input");c.type=type;c.value=value??"";c.required=required;host.append(pickerField(label,c));return c;
+      }
+      function imageField(host,label,value){
+        const c=field(host,label,"url",value),img=el("img");
+        img.alt="画像プレビュー";img.referrerPolicy="no-referrer";img.className="cms-goods-preview";
+        const update=()=>{img.hidden=!/^https:\/\//i.test(c.value);if(!img.hidden)img.src=c.value;};
+        c.addEventListener("change",update);img.onerror=()=>{img.hidden=true;};update();host.append(img);return c;
+      }
+      function saleCondition(host,initial,requiredMode){
+        const grid=el("div");grid.className="cms-goods-condition";
+        const mode=el("select");
+        mode.append(new Option(requiredMode?"販売方式を選択":"未確認（既存情報を維持）",""),new Option("先着販売","first_come"),new Option("受注販売","preorder"));
+        mode.value=initial.saleMode||"";mode.required=requiredMode;grid.append(pickerField("販売方式",mode));
+        const start=field(grid,"販売開始日時（JST）","datetime-local",initial.startsAt);
+        const end=field(grid,"販売終了日時（JST）","datetime-local",initial.endsAt);
+        const url=field(grid,"公式販売URL","url",initial.url,true),hint=el("small");
+        const update=()=>{
+          start.required=requiredMode||!!mode.value;end.required=mode.value==="preorder";
+          hint.textContent=mode.value==="preorder"?"開始・終了日時から受付期間を自動判定します。":mode.value==="first_come"?"開始日時から販売期間を判定します。終了は任意、在庫は手動確認。":"未確認の既存データはそのまま維持できます。";
+          end.min=start.value||"";end.setCustomValidity(start.value&&end.value&&end.value<=start.value?"終了日時は開始日時より後にしてください。":"");
+        };
+        for(const c of [mode,start,end]){c.addEventListener("input",update);c.addEventListener("change",update);}
+        update();grid.append(hint);host.append(grid);
+        return {read:()=>({saleMode:mode.value,startsAt:start.value,endsAt:end.value,url:url.value.trim()}),
+          enabled:v=>{for(const c of [mode,start,end,url])c.disabled=!v||!catalog.editable;}};
+      }
+      function subjects(host,initial,label){
+        const people=new Set(initial.talentIds),groups=new Set(initial.groupIds),all=catalog.contentPolicy==="all-content-v1";
+        const notify=()=>host.dispatchEvent(new Event("change",{bubbles:true}));
+        host.append(el("p",label+"VTuber"),relationPicker({choices:catalog.people,selected:people,label:label+"VTuber",multiple:all,onChange:notify}));
+        if(all)host.append(el("p",label+"グループ"),relationPicker({choices:catalog.sections.find(r=>r.entity==="group")?.items||[],selected:groups,label:label+"グループ",multiple:true,onChange:notify}));
+        return ()=>({talent:[...people][0],talentIds:[...people],groupIds:[...groups]});
+      }
+      function toggle(host,text,checked,content,sync){
+        const c=el("input");c.type="checkbox";c.checked=checked;
+        const label=el("label",text);label.prepend(c);host.append(label,content);
+        const update=()=>{content.hidden=!c.checked;sync(c.checked);};
+        c.addEventListener("change",update);update();return c;
+      }
+      const initial=campaign?(input.products||[]):[{...input,sales:input.sales||[]}];
+      const defaultCondition=commonest(initial.filter(p=>p.sales?.length).map(p=>conditions(p.sales[0])),conditions());
+      const defaultSubject=commonest(initial.map(subjectOf),{talentIds:[],groupIds:[]});
+      const defaultIdentity=commonest(initial.map(p=>p.identityUrl||"").filter(Boolean),"");
+      const common=el("fieldset");common.className="cms-goods-common";
+      common.append(el("legend",campaign?"共通の販売条件":"販売条件"));
+      const commonSale=saleCondition(common,defaultCondition,!input.id);
+      const readSubjects=subjects(common,defaultSubject,"関連");
+      const official=campaign?field(common,"共通の公式商品情報URL（販売URLと同じなら省略）","url",defaultIdentity):null;
+      if(campaign)common.append(el("small","共通項目は各商品に引き継がれます。異なる条件は商品内の例外設定から変更できます。"));
+      root.append(common);
+      if(campaign){
+        const cover=el("fieldset");cover.append(el("legend","企画のメイン画像"));
+        fields.set("campaignImage",imageField(cover,"メイン画像URL（任意）",input.campaignImage||""));root.append(cover);
+      }
+      const rows=el("div");rows.className="cms-goods-products stack";const items=[];
+      function itemEditor(value={},single=false){
+        const item=el(single?"section":"details");item.className="cms-goods-product";
+        const summary=el(single?"h4":"summary",single?"商品・販売履歴":value.title||"新しい商品");
+        item.append(summary);if(!single)item.open=!value.id;
+        const content=el("div");content.className="cms-goods-product-body stack";
+        const title=single?fields.get("title"):field(content,"商品名","text",value.title,true);
+        if(!single)title.addEventListener("input",()=>summary.textContent=title.value||"新しい商品");
+        const image=single?fields.get("image"):imageField(content,"商品画像URL（任意）",value.image||"");
+        let customSubject=()=>readSubjects(),customIdentity=()=>official?.value.trim()||commonSale.read().url;
+        if(!single){
+          const sub=el("fieldset");sub.append(el("legend","個別の関連人物・グループ"));
+          const read=subjects(sub,subjectOf(value),"商品");
+          const check=toggle(content,"この商品だけ関連人物・グループを変更",Boolean((value.id||value.key)&&!same(subjectOf(value),defaultSubject)),sub,v=>{for(const c of sub.querySelectorAll("input,button"))c.disabled=!v||!catalog.editable;});
+          customSubject=()=>check.checked?read():readSubjects();
+          const identityBox=el("div"),identity=field(identityBox,"個別の公式商品情報URL","url",value.identityUrl||"",true);
+          const own=toggle(content,"この商品だけ公式商品情報URLを変更",Boolean((value.id||value.key)&&value.identityUrl&&value.identityUrl!==defaultIdentity),identityBox,v=>identity.disabled=!v||!catalog.editable);
+          customIdentity=()=>own.checked?identity.value.trim():official.value.trim()||commonSale.read().url;
+        } else customIdentity=()=>fields.get("identityUrl").value.trim()||commonSale.read().url;
+        const sales=el("div");sales.className="stack";const saleRows=[];
+        function addSale(sale={},idx=saleRows.length){
+          const block=el("fieldset");block.className="cms-goods-sale";
+          block.append(el("legend",idx?"追加販売・再販 "+idx:"販売情報"));
+          const price=field(block,"価格（"+(sale.currency||"JPY")+"・任意）","number",sale.price||"");
+          price.min="0";price.step=sale.currency&&sale.currency!=="JPY"?"any":"1";
+          const custom=el("div"),individual=saleCondition(custom,conditions(sale),!sale.id);
+          let own=()=>idx>0;
+          if(idx>0){block.append(custom);individual.enabled(true);}
+          else if(!single){
+            const c=toggle(block,"共通と異なる販売条件",Boolean((sale.id||sale.key||sale.url)&&!same(conditions(sale),defaultCondition)),custom,v=>individual.enabled(v));
+            own=()=>c.checked;
+          } else individual.enabled(false);
+          const manual=el("select");
+          manual.append(new Option("自動判定","unknown"),new Option("売り切れ（確認済み）","sold_out"),new Option("販売終了（確認済み）","ended"));
+          if(["on_sale","scheduled"].includes(sale.status))manual.append(new Option("既存の状態を維持（"+(sale.status==="on_sale"?"販売中":"販売予定")+"）",sale.status));
+          manual.value=sale.status||"unknown";block.append(pickerField("販売状態",manual));
+          const note=el("textarea");note.value=sale.periodNote||"";note.maxLength=240;block.append(pickerField("販売条件・補足（任意）",note));
+          const key=sale.key||(single?"cms-sale-":"")+crypto.randomUUID().replaceAll("-","").slice(0,12);
+          const record={read:()=>({id:sale.id,key,...(own()?individual.read():commonSale.read()),price:price.value,currency:sale.currency||"JPY",status:manual.value,periodNote:note.value})};
+          if(!sale.id&&idx)block.append(button("追加販売を取り除く",()=>{saleRows.splice(saleRows.indexOf(record),1);block.remove();}));
+          saleRows.push(record);sales.append(block);
+        }
+        for(const s of value.sales||[])addSale(s);if(!saleRows.length)addSale();
+        content.append(sales,button("再販・追加販売を登録",()=>addSale()));
+        const key=value.key||value.id||crypto.randomUUID().replaceAll("-","").slice(0,12);
+        const record={read:()=>({id:value.id,key,title:title.value,image:image.value,identityUrl:customIdentity(),...customSubject(),sales:saleRows.map(s=>s.read())})};
+        if(!single&&!value.id)content.append(button("追加した商品を取り除く",()=>{items.splice(items.indexOf(record),1);item.remove();}));
+        item.append(content);items.push(record);rows.append(item);
+      }
+      for(const p of initial)itemEditor(p,!campaign);
+      if(campaign){if(!items.length)itemEditor();root.append(el("h4","商品一覧"),rows,button("商品を追加",()=>itemEditor()));}
+      else root.append(rows);
+      form.append(root);
+      return {read:()=>{
+        if(campaign)return {products:items.map(i=>i.read())};
+        const {id,key,...data}=items[0].read();return data;
+      }};
+    }
+    const goodsEditor=unifiedGoods?mountGoodsEditor():null;
     if (entity === "musicVideo") {
       const select = el("select");
       form.append(songPicker(select, input.songId));
@@ -1157,7 +1296,8 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
           }));
         }
         if (productSales) values.sales = productSales.read();
-        if (entity === "campaign") values.products = products.map(({ value, key, controls, editor }) => ({
+        if (goodsEditor) Object.assign(values, goodsEditor.read());
+        if (entity === "campaign" && !goodsEditor) values.products = products.map(({ value, key, controls, editor }) => ({
           id: value.id, key, sales: editor.read(),
           ...Object.fromEntries([...controls].map(([name, control]) => [name, control.value])),
         }));
@@ -1244,7 +1384,7 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
       }
     }
     const heading = el("h3", "コレクション");
-    for (const { entity, label, items } of catalog.sections) {
+    for (const { entity, label, items } of mergedSections) {
       const link = el("a");
       link.href = "#content/" + entity;
       link.append(el("strong", label), el("span", items.length + "件"));
@@ -1269,8 +1409,13 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
       heading.append(title, actions);
     } else list.append(actions);
   } else list.append(actions);
+  if (goodsView && catalog.editable && catalog.categories.includes("goods")) {
+    for(const [entity,label] of [["campaign","販売企画を新規登録"],["product","単独商品を新規登録"]]){
+      const create=button(label,()=>edit(entity));create.className=entity==="campaign"?"primary cms-create":"cms-create";actions.append(create);
+    }
+  }
   for (const [entity, spec] of Object.entries(categories)) {
-    if (["legacy", "content"].includes(view) && (!selectedEntity || selectedEntity === entity) && (!spec.ownerCreate || catalog.owner || catalog.contentPolicy === "all-content-v1") && catalog.editable && catalog.categories.includes(spec.category))
+    if (!goodsView && ["legacy", "content"].includes(view) && (!selectedEntity || selectedEntity === entity) && (!spec.ownerCreate || catalog.owner || catalog.contentPolicy === "all-content-v1") && catalog.editable && catalog.categories.includes(spec.category))
       {
         const create = button(spec.label + "を新規登録", () => edit(entity));
         create.className = "primary cms-create";
@@ -1280,7 +1425,8 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
   const stateLabels = {
     public: "公開", private: "非公開", draft: "非公開・下書き",
     active: "活動中", hiatus: "活動休止", retired: "引退", ended: "終了",
-    on_sale: "販売中", scheduled: "予定", sold_out: "売り切れ", unknown: "不明",
+    on_sale: "販売期間中", scheduled: "販売予定", sold_out: "売り切れ", unknown: "未確認",
+    partial_sale:"一部販売期間中",partial_scheduled:"一部販売予定",closed:"販売終了・売り切れ",
     verified: "確認済み", unreviewed: "未確認", rejected: "対象外",
     complete: "確認完了", partial: "一部確認", unavailable: "利用不可",
     unlisted: "限定公開", cancelled: "中止", postponed: "延期",
@@ -1290,14 +1436,15 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
   const dateFormat = new Intl.DateTimeFormat("ja-JP", { timeZone: "Asia/Tokyo", year: "numeric", month: "2-digit", day: "2-digit", hour: "2-digit", minute: "2-digit", hourCycle: "h23" });
   const formatDate = (value) => !value ? "" : /T\d{2}:\d{2}/.test(value) && Number.isFinite(Date.parse(value)) ? dateFormat.format(new Date(value)) : value;
   const columns = [
-    ["title", "名称"], ["context", "関連情報"], ["date", "日時"],
+    ["title", goodsView?"販売企画・商品名":"名称"], ["context", "関連情報"], ["date", goodsView?"販売開始":"日時"],
+    ...(goodsView?[["saleMode","販売方式"]]:[]),
     ["state", "状態"], ["visibility", "公開状態"], ["draft", "下書き"], ["id", "固定ID"],
   ];
   const hasValue = (key) => sections.some(({ items }) => items.some((item) => Boolean(item[key])));
   const compactViewport = matchMedia("(max-width: 767px)").matches;
   const activeColumns = new Set(compactViewport ? ["title", "visibility", ...["state"].filter(hasValue)] :
-    ["title", "visibility", "draft", "id", ...["context", "date", "state"].filter(hasValue)]);
-  const bulkAvailable = view === "content" && selectedEntity !== "organization" &&
+    ["title", "visibility", "draft", "id", ...["context", "date", "state", ...(goodsView?["saleMode"]:[])].filter(hasValue)]);
+  const bulkAvailable = view === "content" && !goodsView && selectedEntity !== "organization" &&
     catalog.editable && catalog.contentPolicy === "all-content-v1";
   const selectedRows = new Set();
   const bulkBar = el("div");
@@ -1356,7 +1503,7 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
   const state = el("select");
   const draftFilter = el("select");
   search.type = "search";
-  search.placeholder = "名称・ID・関連情報を検索";
+  search.placeholder = goodsView ? "販売企画・商品名・VTuber名を検索" : "名称・ID・関連情報を検索";
   search.setAttribute("aria-label", "名称を検索");
   category.setAttribute("aria-label", "コンテンツの種類");
   order.setAttribute("aria-label", "並び順");
@@ -1386,7 +1533,9 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
     wrapping.prepend(control);
     columnMenu.append(wrapping);
   }
-  tools.append(category, search, visibility, state, draftFilter, order, columnMenu);
+  const modeFilter=el("select");modeFilter.setAttribute("aria-label","販売方式で絞り込む");
+  modeFilter.append(new Option("販売方式：すべて",""),...[...new Set(goodsSection.items.map(item=>item.saleMode).filter(Boolean))].map(mode=>new Option(mode,mode)));
+  modeFilter.hidden=!goodsView;tools.append(category, search, visibility, state, modeFilter, draftFilter, order, columnMenu);
   list.append(tools);
   const views = [];
   const collator = new Intl.Collator("ja");
@@ -1420,6 +1569,7 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
     }
   }
   const makeRow = (entity, item, draft) => {
+    entity = item.entity || entity;
     const row = el("tr");
     if (bulkAvailable) {
       const cell = el("td");
@@ -1476,10 +1626,11 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
       section.hidden = !visible;
       if (!visible) { entries.replaceChildren(); continue; }
       const matching = items.filter((item) => {
-        const draft = drafts.get(entity + ":" + item.id);
+        const draft = drafts.get((item.entity || entity) + ":" + item.id);
         return normal([item.title, item.id, item.context, item.description, formatDate(item.date)].join(" ")).includes(needle) &&
           (!visibility.value || item.visibility === visibility.value) &&
           (!state.value || item.state === state.value) &&
+          (!modeFilter.value || item.saleMode === modeFilter.value) &&
           (!draftFilter.value || Boolean(draft) === (draftFilter.value === "yes"));
       });
       if (order.value === "name" || order.value === "name-desc") matching.sort((a, b) => collator.compare(a.title || a.id, b.title || b.id) * (order.value === "name-desc" ? -1 : 1));
@@ -1498,7 +1649,7 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
         th.scope = "col";
         headerRow.prepend(th);
       }
-      entries.replaceChildren(...windowRows.map((item) => makeRow(entity, item, drafts.get(entity + ":" + item.id))));
+      entries.replaceChildren(...windowRows.map((item) => makeRow(entity, item, drafts.get((item.entity || entity) + ":" + item.id))));
       if (view === "search" && !windowRows.length) section.hidden = true;
       else if (!windowRows.length) {
         const empty = el("tr");
@@ -1516,7 +1667,7 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
   }
   const reset = () => { page = 0; filter(); };
   search.addEventListener("input", reset);
-  for (const control of [category, visibility, state, draftFilter, order]) control.addEventListener("change", reset);
+  for (const control of [category, visibility, state, modeFilter, draftFilter, order]) control.addEventListener("change", reset);
   for (const { entity, label, items } of sections) {
     const section = el("section");
     section.className = "cms-collection";
@@ -1541,8 +1692,8 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
   if (view === "search") search.focus();
   if (saveAvailable) status.textContent = "";
   if (options.recordId && selectedEntity) {
-    if (sections.some(({ items }) => items.some((item) => item.id === options.recordId)))
-      await openRecord(selectedEntity, options.recordId);
+    const match=sections.flatMap(s=>s.items.map(item=>({entity:s.entity,...item}))).find(item=>item.id===options.recordId);
+    if(match)await openRecord(match.entity,options.recordId);
     else status.textContent = "対象レコードが存在しないか、閲覧権限がありません。";
   }
 }

@@ -90,10 +90,16 @@
       img.addEventListener('error', () => img.remove(), { once: true }); face.append(img);
     }
     const description = element('div', 'description');
+    const partners = globalThis.AvatarStack?.create(item.collaborators,{label:'コラボ相手の候補',limit:5});
+    if(partners)description.classList.add('has-collaborators');
     const name = element('div', 'liver-name');
     name.append(element('p', '', item.name));
     const title = element('p', 'live-title', item.title); title.title = item.title;
-    description.append(name, title);
+    if(partners){
+      const byline=element('div','stream-collab-byline');byline.append(name,partners);description.append(byline,title);
+      const destination=block.querySelector('.stream-destination');
+      if(destination)destination.setAttribute('aria-label',destination.getAttribute('aria-label')+'／'+partners.getAttribute('aria-label'));
+    }else description.append(name, title);
     inner.append(face, description);
     const thumbnail = element('div', 'thumbnail-wrapper');
     const poster = image(item.thumbnail, 'thumbnail', ''); poster.width = 320; poster.height = 180;

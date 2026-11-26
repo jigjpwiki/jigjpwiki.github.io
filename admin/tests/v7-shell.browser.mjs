@@ -428,6 +428,44 @@ test("all roles share the shell and separate collections while viewers have read
         await save.click();
         await page.getByText("下書きを保存しました。公開サイトには反映されていません。", { exact: true }).waitFor();
         assert.equal(attempts, 2);
+        await page.unroute("**/api/cms/draft");
+        await page.goto(base + "/#content/talent");
+        await page.getByRole("button",{name:"VTuberを新規登録",exact:true}).click();
+        await page.getByLabel("表示名",{exact:true}).fill("自動更新と並行した新規登録");
+        const payloads=[];
+        await page.route("**/api/cms/catalog?fresh=1",async route=>{
+          const response=await route.fetch();
+          const body=await response.json();
+          return route.fulfill({json:{...body,sha:"b".repeat(40)}});
+        });
+        await page.route("**/api/cms/draft",async route=>{
+          if(route.request().method()!=="PUT")return route.continue();
+          payloads.push(route.request().postDataJSON());
+          if(payloads.length===1)return route.fulfill({status:409,json:{error:"main_changed_reload"}});
+          return route.fulfill({json:{revision:3,draftId:"new-talent-retried"}});
+        });
+        await page.getByRole("button",{name:"下書きを保存",exact:true}).click();
+        await page.getByText("下書きを保存しました。公開サイトには反映されていません。",{exact:true}).waitFor();
+        assert.equal(payloads.length,2);
+        assert.equal(payloads[0].sha,"a".repeat(40));
+        assert.equal(payloads[1].sha,"b".repeat(40));
+        assert.deepEqual({...payloads[1],sha:payloads[0].sha},payloads[0]);
+        assert.equal(await page.getByLabel("表示名",{exact:true}).inputValue(),"自動更新と並行した新規登録");
+        await page.unroute("**/api/cms/draft");
+        await page.unroute("**/api/cms/catalog?fresh=1");
+        // An existing record must still stop on a stale snapshot.
+        await page.goto(base+"/#content/talent?record=talent-002");
+        await page.getByLabel("表示名",{exact:true}).fill("競合を自動上書きしない");
+        let staleAttempts=0;
+        await page.route("**/api/cms/draft",async route=>{
+          if(route.request().method()!=="PUT")return route.continue();
+          staleAttempts++;
+          return route.fulfill({status:409,json:{error:"main_changed_reload"}});
+        });
+        await page.getByRole("button",{name:"下書きを保存",exact:true}).click();
+        await page.getByText("保存できませんでした（入力は保持されています）",{exact:true}).waitFor();
+        assert.equal(staleAttempts,1);
+        assert.equal(await page.getByLabel("表示名",{exact:true}).inputValue(),"競合を自動上書きしない");
       }
       assert.deepEqual(errors, []);
       await context.close();

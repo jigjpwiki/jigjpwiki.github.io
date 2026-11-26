@@ -54,8 +54,8 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
   const view = options.view || "legacy";
   panel.dataset.cmsView = view;
   const selectedEntity = options.entity;
-  const musicView = ["song", "musicVideo", "karaoke", "performance"].includes(selectedEntity);
-  const catalog = await api("/api/cms/catalog" + (musicView ? "?fresh=1" : ""));
+  // Every workspace starts with the current main ref; the reader still reuses immutable model data.
+  const catalog = await api("/api/cms/catalog?fresh=1");
   const goodsView = selectedEntity === "goods";
   const goodsSection = { entity: "goods", category: "goods", label: "グッズ", items: catalog.goodsEntries || [] };
   const mergedSections = catalog.goodsEntries
@@ -1452,9 +1452,29 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
           id: value.id, key, sales: editor.read(),
           ...Object.fromEntries([...controls].map(([name, control]) => [name, control.value])),
         }));
-        const result = await api("/api/cms/draft", "PUT", {
-          entity, id: input.id, draftId, sha: formSha, revision, ...values,
-        });
+        const payload = { entity, id: input.id, draftId, sha: formSha, revision, ...values };
+        let result;
+        try {
+          result = await api("/api/cms/draft", "PUT", payload);
+        } catch (error) {
+          // Only a never-saved, standalone talent is eligible. Never rebase an
+          // existing record, saved draft, or multi-record editor automatically.
+          if ((error.code || error.message) !== "main_changed_reload" ||
+              entity !== "talent" || input.id || draftId || !form.isConnected ||
+              inputRevision !== submittedInputRevision) throw error;
+          saveStatus.textContent = "最新データを確認中…";
+          const latest = await api("/api/cms/catalog?fresh=1");
+          if (!form.isConnected || inputRevision !== submittedInputRevision ||
+              !latest.editable || latest.owner !== catalog.owner ||
+              latest.contentPolicy !== catalog.contentPolicy ||
+              !latest.categories?.includes("talents") ||
+              !/^[0-9a-f]{40}$/.test(latest.sha || "") ||
+              latest.sha === payload.sha) throw error;
+          // Preserve the original workspace revision. The server revalidates
+          // references, duplicate identities, permissions and revision as usual.
+          formSha = latest.sha;
+          result = await api("/api/cms/draft", "PUT", { ...payload, sha: formSha });
+        }
         revision = result.revision;
         draftId = result.draftId;
         formArea.dataset.draftId = draftId;
@@ -1478,6 +1498,8 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
         saveStatus.textContent = authExpired ? "再ログインが必要・入力保持" : "保存失敗・入力保持";
         status.textContent = authExpired
           ? "このタブを閉じず、上の再ログイン案内から認証を確認してから、もう一度下書きを保存してください。"
+          : code === "main_changed_reload" && entity === "talent" && !input.id && !draftId
+          ? "データの更新が続いています。入力は保持されています。少し時間をおいて、もう一度下書きを保存してください。"
           : ["main_changed_reload", "workspace_revision_conflict"].includes(code)
           ? "別の更新がありました。入力を控えてから画面を開き直してください。"
           : error.message === "cms_identity_anchor" ? "固定済みの収集アカウントはこの画面から変更できません。"

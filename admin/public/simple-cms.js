@@ -1388,7 +1388,8 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
       draftsLink.href = "#drafts";
       footer.append(draftsLink);
     }
-    form.append(footer);
+    const saveError = el("div"); saveError.className="cms-save-error"; saveError.setAttribute("role","alert"); saveError.hidden=true;
+    form.append(saveError,footer);
     form.addEventListener("invalid", (event) => {
       const control = event.target;
       for(let parent=control.parentElement;parent&&parent!==form;parent=parent.parentElement)if(parent.tagName==="DETAILS")parent.open=true;
@@ -1426,6 +1427,7 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
       saving = true;
       panel.dataset.cmsSaving = "true";
       saveStatus.textContent = "保存中…";
+      saveError.hidden=true; saveError.replaceChildren();
       submit.disabled = true;
       try {
         const values = Object.fromEntries([...fields].map(([key, control]) => [key, control.value]));
@@ -1471,11 +1473,12 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
         }
       } catch (error) {
         panel.dataset.cmsDirty = "true";
-        const authExpired = ["login_required", "invalid_session", "github_401", "csrf_rejected"].includes(error.code || error.message);
+        const code=String(error.code || error.message || "");
+        const authExpired = ["login_required", "invalid_session", "github_401", "csrf_rejected"].includes(code);
         saveStatus.textContent = authExpired ? "再ログインが必要・入力保持" : "保存失敗・入力保持";
         status.textContent = authExpired
           ? "このタブを閉じず、上の再ログイン案内から認証を確認してから、もう一度下書きを保存してください。"
-          : ["main_changed_reload", "workspace_revision_conflict"].includes(error.message)
+          : ["main_changed_reload", "workspace_revision_conflict"].includes(code)
           ? "別の更新がありました。入力を控えてから画面を開き直してください。"
           : error.message === "cms_identity_anchor" ? "固定済みの収集アカウントはこの画面から変更できません。"
           : error.message === "affiliation_history_must_be_retained" ? "過去の所属を削除することはできません。"
@@ -1483,6 +1486,32 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
           : error.message === "goods_product_required" ? "商品を1件以上登録してください。"
           : error.message === "goods_mode_required" ? "新しい販売・再販は先着販売または受注販売を選択してください。共通条件が未確認の場合は個別の販売条件を設定できます。"
           : "保存できませんでした。入力内容と関連レコードの整合性を確認してください。";
+        const accountService=code.startsWith("cms_invalid_account_url:")?code.split(":")[1]:null;
+        const accountField={youtube:"youtubeUrl",x:"xUrl",twitch:"twitchUrl",tiktok:"tiktokUrl"}[accountService];
+        const specific={
+          cms_affiliation_state_mismatch:"事務所所属状態と所属履歴が一致していません。「所属あり」の場合は現在の所属を追加してください。",
+          cms_affiliation_current_end:"終了日を入力した所属は「過去」に変更してください。",
+          cms_affiliation_period:"所属の開始日と終了日の順序を確認してください。",
+          identity_already_reserved:"同じ公式プロフィールまたはアカウントが登録済みです。既存のVTuberを検索してください。",
+          cms_invalid_input:"入力形式または必須項目を確認してください。",
+          cms_scope_denied:"この操作を行う権限がありません。",
+          workspace_operation_limit:"下書き件数の上限に達しています。保存済みの下書きを確認してください。",
+          no_changes:"保存する変更がありません。",
+        };
+        let detail=accountField?labels[accountField][0]+"が正しいプロフィールURLか確認してください。動画・投稿のURLは使用できません。":specific[code];
+        if(code.startsWith("validation:")){
+          const messages={"agency state contradicts current affiliations":specific.cms_affiliation_state_mismatch,"current affiliation requires affiliated agency state":specific.cms_affiliation_state_mismatch,"current affiliation cannot have an end date":specific.cms_affiliation_current_end,"reversed period":specific.cms_affiliation_period,"duplicate account identity":"同じSNSアカウントが別のVTuberに登録済みです。","unknown YouTube ID requires verified handle URL":"YouTubeは @ハンドル形式のチャンネルURLを入力してください。","internal ID identity anchor changed":"既存の固定IDの識別情報は変更できません。","account service/URL mismatch":"SNSの種類とURLが一致していません。","missing local profile image":"プロフィール画像が見つかりません。"};
+          detail=Object.entries(messages).find(([key])=>code.includes(key))?.[1]||"入力内容がデータの検証条件を満たしていません。";
+        }
+        saveError.append(el("strong","保存できませんでした（入力は保持されています）"),el("p",detail||status.textContent));
+        if(code && (/^[a-z][a-z0-9_]*(?::[a-z]+)?$/.test(code)||code.startsWith("validation:"))) {
+          const technical=el("details");technical.append(el("summary","エラー詳細"),el("p",code.slice(0,650)));saveError.append(technical);
+        }
+        saveError.hidden=false;
+        if(accountField && fields.has(accountField)){
+          const control=fields.get(accountField);for(let p=control.parentElement;p&&p!==form;p=p.parentElement)if(p.tagName==="DETAILS")p.open=true;
+          control.focus();control.scrollIntoView({block:"nearest"});
+        }else saveError.scrollIntoView({block:"nearest"});
       } finally {
         saving = false;
         delete panel.dataset.cmsSaving;

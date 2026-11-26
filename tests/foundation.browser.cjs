@@ -22,7 +22,10 @@ const navigationCount=require('../lib/site-pages').pages.filter(p=>p.ready).leng
   const browser = await chromium.launch({ headless: true, ...(process.env.CHROMIUM_PATH ? { executablePath: process.env.CHROMIUM_PATH } : {}) });
   try {
     for (const width of [1440, 768, 390, 320]) for (const javaScriptEnabled of [true, false]) {
+      console.log(`Foundation browser start: ${width}px, JavaScript=${javaScriptEnabled}`);
       const context = await browser.newContext({ viewport: { width, height: 900 }, javaScriptEnabled });
+      context.setDefaultTimeout(15000);
+      context.setDefaultNavigationTimeout(30000);
       await context.route('**/*', route => {
         const url = new URL(route.request().url());
         if (url.hostname === 'yt3.ggpht.com' && javaScriptEnabled && width === 390) return route.fulfill({ body: fs.readFileSync(path.join(root, 'assets/favicon-32x32.png')), contentType: 'image/png' });
@@ -71,9 +74,17 @@ const navigationCount=require('../lib/site-pages').pages.filter(p=>p.ready).leng
         if(route==='/')assert.equal(await page.locator('.site-header #show-videos-toggle').count(),1);
       };
       await checkShell('/');
-      // Simulate a route-specific webfont/body font change, without changing the shared header.
-      await page.addStyleTag({content:'body.site-shell {font-family: monospace !important; line-height: 2.1 !important;}'});
-      await checkShell('/');
+      // In a JS-disabled context Playwright's dynamic style injection can wait
+      // indefinitely for a stylesheet event. Keep the static cross-route checks
+      // in both modes, and test live font mutation only in the enabled context.
+      if (javaScriptEnabled) {
+        await page.evaluate(() => {
+          const style = document.createElement('style');
+          style.textContent = 'body.site-shell {font-family: monospace !important; line-height: 2.1 !important;}';
+          document.head.appendChild(style);
+        });
+        await checkShell('/');
+      }
       await page.locator('.site-skip').focus();
       await page.keyboard.press('Enter');
       assert.equal(await page.evaluate(()=>document.activeElement.id),'main-content');
@@ -108,5 +119,10 @@ const navigationCount=require('../lib/site-pages').pages.filter(p=>p.ready).leng
       await context.close();
       console.log(`Foundation browser passed: ${width}px, JavaScript=${javaScriptEnabled}, keyboard navigation, static list, unknown state, future links hidden, legal pages`);
     }
-  } finally { await browser.close(); await new Promise(resolve => server.close(resolve)); }
+  } finally {
+    try { await browser.close(); }
+    finally {
+      await new Promise(resolve => { server.close(resolve); server.closeAllConnections(); });
+    }
+  }
 })().catch(error => { console.error(error); process.exitCode = 1; });

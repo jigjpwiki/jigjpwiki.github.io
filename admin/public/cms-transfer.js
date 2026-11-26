@@ -68,3 +68,34 @@ export function newRecordInput(entity,row){
   };
   return {...defaults[entity],...(entity==="organization"?{}:{visibility:"draft"}),...row};
 }
+
+// HTML is parsed as inert text. Never render remote markup or execute scripts.
+export function officialUrl(value) {
+  const url=new URL(value);
+  if(url.protocol!=="https:"||url.username||url.password||url.port||url.href.length>2048)throw Error("公開HTTPS URLを指定してください。");
+  return url;
+}
+function decodeMetadata(value){
+  const entities={amp:"&",quot:'"',apos:"'",lt:"<",gt:">",nbsp:" "};
+  return value.replace(/&(#x[0-9a-f]+|#\d+|amp|quot|apos|lt|gt|nbsp);/gi,(all,k)=>{
+    if(k[0]!=="#")return entities[k.toLowerCase()]||all;
+    const code=k[1].toLowerCase()==="x"?parseInt(k.slice(2),16):Number(k.slice(1));
+    return code>0&&code<=0x10ffff&&!(code>=0xd800&&code<=0xdfff)?String.fromCodePoint(code):"";
+  }).replace(/\s+/g," ").trim();
+}
+export function pageMetadata(html,source) {
+  const base=officialUrl(source);
+  if(typeof html!=="string"||html.length>524288)throw Error("HTMLは512KiB相当までです。");
+  const head=html.split(/<\/head\s*>|<body(?:\s|>)/i,1)[0].replace(/<!--[\s\S]*?-->|<script\b[^>]*>[\s\S]*?<\/script\s*>|<style\b[^>]*>[\s\S]*?<\/style\s*>/gi,"");
+  const meta=new Map();
+  for(const tag of head.matchAll(/<meta\b(?:[^>"']|"[^"]*"|'[^']*')*>/gi)){
+    const attrs=new Map();
+    for(const a of tag[0].matchAll(/([a-z][\w:-]*)\s*=\s*(?:"([^"]*)"|'([^']*)'|([^\s>]+))/gi))attrs.set(a[1].toLowerCase(),a[2]??a[3]??a[4]);
+    const key=(attrs.get("property")||attrs.get("name")||"").toLowerCase();
+    if(key&&attrs.has("content")&&!meta.has(key))meta.set(key,decodeMetadata(attrs.get("content")));
+  }
+  const title=(meta.get("og:title")||meta.get("twitter:title")||decodeMetadata(head.match(/<title\b[^>]*>([\s\S]*?)<\/title\s*>/i)?.[1]||"")).slice(0,500);
+  const description=(meta.get("og:description")||meta.get("description")||meta.get("twitter:description")||"").slice(0,2000);
+  let image="";try{const raw=meta.get("og:image")||meta.get("twitter:image");if(raw)image=officialUrl(new URL(raw,base).href).href;}catch{}
+  return {title,description,image,url:base.href};
+}

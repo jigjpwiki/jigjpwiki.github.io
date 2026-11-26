@@ -871,3 +871,17 @@ button:hover:not(:disabled), .button:hover { border-color: var(--accent); }
 .cms-transfer-help{font-size:12px;line-height:1.6;color:var(--muted)}
 .cms-transfer-actions{display:flex;justify-content:flex-end;gap:8px}
 .cms-transfer-dialog [role=status]:not(:empty){padding:10px;background:var(--soft);border-radius:6px;overflow-wrap:anywhere}
+
+.cms-relation-actions{display:flex;gap:8px;flex-wrap:wrap}
+.cms-relation-actions button{font-size:12px;min-height:28px;padding:3px 6px;border-color:transparent;color:var(--accent);background:transparent}
+.cms-related-dialog form{display:grid;gap:8px}
+.cms-related-dialog details{display:grid;gap:8px}
+.cms-related-dialog details[open]>label{margin-top:6px}
+.cms-official-source{padding:10px;border:1px solid var(--line);border-radius:8px}
+.cms-official-source summary{cursor:pointer;font-weight:600}
+.cms-official-source[open]{display:grid;gap:8px}
+.cms-official-source p,.cms-official-source small{font-size:12px;color:var(--muted);overflow-wrap:anywhere}
+.cms-official-source button{justify-self:start;min-height:30px;font-size:12px}
+.cms-source-value{padding:8px;border-block-end:1px solid var(--line)}
+.cms-source-value p{color:var(--ink);margin:4px 0}
+.cms-source-value button{margin-right:6px}

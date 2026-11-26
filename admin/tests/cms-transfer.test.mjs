@@ -27,3 +27,16 @@ test("multiple fields are changed in the same lossless draft",async()=>{
   assert.equal(out.operations.length,1);assert.equal(out.operations[0].value.name,"一括変更グループ");assert.equal(out.operations[0].value.visibility,"draft");
   await assert.rejects(prepareTransfer(snapshot,member,input,out.operations),/cms_bulk_existing_draft/);
 });
+
+import { pageMetadata } from "../public/cms-transfer.js";
+import { fetchOfficialMetadata } from "../src/cms-official.mjs";
+test("metadata is inert and only trusted HTTPS origins are fetched",async()=>{
+  const html='<html><head><title>Fallback</title><meta property="og:title" content="A &amp; B"><meta name="description" content="概要"><meta property="og:image" content="/image.png"><script>throw Error("never run")</script></head></html>';
+  assert.deepEqual(pageMetadata(html,"https://paletteproject.jp/event"),{title:"A & B",description:"概要",image:"https://paletteproject.jp/image.png",url:"https://paletteproject.jp/event"});
+  let calls=0;
+  const transport=async(url,options)=>{calls++;assert.equal(url.hostname,"paletteproject.jp");assert.equal(options.redirect,"manual");return new Response(html,{headers:{"content-type":"text/html; charset=UTF-8"}})};
+  const result=await fetchOfficialMetadata("https://paletteproject.jp/event","",transport);assert.equal(result.title,"A & B");
+  for(const url of ["http://paletteproject.jp/","https://127.0.0.1/","https://paletteproject.jp.evil.test/","https://user@paletteproject.jp/"])await assert.rejects(fetchOfficialMetadata(url,"",transport),/cms_(invalid_source_url|source_host_not_allowed)/);
+  assert.equal(calls,1);
+  await assert.rejects(fetchOfficialMetadata("https://paletteproject.jp/event","",async()=>new Response(null,{status:302,headers:{Location:"https://evil.test/"}})),/cms_source_unavailable/);
+});

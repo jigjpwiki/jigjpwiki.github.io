@@ -119,7 +119,7 @@ header {
 }
 
 .content-type-toggle input:focus-visible ~ .toggle-track {
-  outline: 3px solid #1a6fd4;
+  outline: 3px solid #292929;
   outline-offset: 3px;
 }
 
@@ -205,7 +205,7 @@ header {
 }
 
 .today-block {
-  background-color: #ecf0f6;
+  background-color: #eeeeee;
 }
 
 
@@ -667,7 +667,7 @@ header { position: relative; min-height: 62px; }
 .platform-border { flex: 0 0 5px; }
 .face-icon { align-self: center; height: auto; }
 .thumbnail-wrapper { flex-shrink: 0; }
-a:focus-visible, button:focus-visible { outline: 3px solid #1a6fd4; outline-offset: 3px; }
+a:focus-visible, button:focus-visible { outline: 3px solid #292929; outline-offset: 3px; }
 button { font: inherit; }
 footer { flex-shrink: 0; }
 @media (max-width: 600px) {
@@ -704,17 +704,17 @@ footer { flex-shrink: 0; }
 }
 
 /* Optional verified karaoke destination; the original video card/link stays intact. */
-.karaoke-link { display:block; margin:4px 0 8px; padding:3px 2px; min-height:24px; font-size:11px; line-height:1.5; text-align:right; color:#185497; }
-.karaoke-link:focus-visible { outline:3px solid #1765ae; outline-offset:2px; }
+.karaoke-link { display:block; margin:4px 0 8px; padding:3px 2px; min-height:24px; font-size:11px; line-height:1.5; text-align:right; color:#292929; }
+.karaoke-link:focus-visible { outline:3px solid #292929; outline-offset:2px; }
 
 /* Separate sibling destinations: full-card stream target and the profile icon. */
 .stream-destination { position:absolute; inset:0; z-index:0; border-radius:12px; }
 .live-block > :not(.stream-destination) { pointer-events:none; }
 .face-icon { position:relative; }
-.face-fallback { border:1px solid #ccc; display:grid; place-items:center; width:68px; height:68px; border-radius:50%; background:#ecf0f6; color:#555; font-size:24px; flex-shrink:0; }
+.face-fallback { border:1px solid #ccc; display:grid; place-items:center; width:68px; height:68px; border-radius:50%; background:#eeeeee; color:#555; font-size:24px; flex-shrink:0; }
 .face-icon img { position:absolute; left:0; top:0; }
 .stream-profile-link { pointer-events:auto; z-index:3; border-radius:50%; text-decoration:none; cursor:pointer; }
-.stream-profile-link:hover { outline:2px solid #185497; outline-offset:2px; }
-.stream-profile-link:focus-visible { outline:3px solid #1a6fd4; outline-offset:3px; }
-.stream-destination:focus-visible { outline:3px solid #1a6fd4; outline-offset:3px; }
+.stream-profile-link:hover { outline:2px solid #292929; outline-offset:2px; }
+.stream-profile-link:focus-visible { outline:3px solid #292929; outline-offset:3px; }
+.stream-destination:focus-visible { outline:3px solid #292929; outline-offset:3px; }
 @media(max-width:600px) { .face-fallback { width:48px; height:48px; font-size:20px; } }

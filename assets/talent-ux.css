@@ -63,8 +63,8 @@
   box-shadow: none;
 }
 .talent-directory a.talent-card:hover {
-  border-color: #185497;
-  background: #fafbfc;
+  border-color: #292929;
+  background: #fafafa;
   box-shadow: none;
 }
 .talent-card h3 {
@@ -175,7 +175,7 @@
 }
 .anniversary-cta {
   font-size: 12px;
-  color: #185497;
+  color: #292929;
   margin-left: auto;
 }
 .talent-profile .related-list {

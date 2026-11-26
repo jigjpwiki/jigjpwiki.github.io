@@ -2,13 +2,13 @@
   --jigdule-surface: #fff;
   --jigdule-text: #333;
   --jigdule-line: #dedede;
-  --jigdule-muted-surface: #ecf0f6;
+  --jigdule-muted-surface: #eeeeee;
   --jigdule-muted-text: #555;
-  --jigdule-link: #185497;
-  --jigdule-focus: #1765ae;
+  --jigdule-link: #292929;
+  --jigdule-focus: #292929;
   --jigdule-control-line: #aaa;
 }
-/* Shared with the schedule: neutral surfaces, blue links, compact typography. */
+/* Shared with the schedule: neutral surfaces, monochrome links, compact typography. */
 .talent-stream-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(min(240px, 100%), 1fr));
@@ -92,7 +92,7 @@
   border-radius: 50%;
   overflow: hidden;
   flex: 0 0 28px;
-  background: #ecf0f6;
+  background: #eeeeee;
 }
 .stream-avatar img {
   position: absolute;

@@ -170,14 +170,30 @@ export async function prepareDraft(snapshot, member, input, lookup) {
       }
       let url;
       try { url = new URL(supplied); }
-      catch { fail(400, "cms_invalid_input"); }
+      catch { fail(400, "cms_invalid_account_url:" + service); }
+      const hosts = {youtube:["youtube.com","www.youtube.com","m.youtube.com"],x:["x.com","www.x.com","twitter.com","www.twitter.com"],twitch:["twitch.tv","www.twitch.tv"],tiktok:["www.tiktok.com","tiktok.com"]};
+      if (url.protocol !== "https:" || url.username || url.password || url.port || !hosts[service].includes(url.hostname) ||
+          [...url.searchParams.keys()].some(k=>/key|token|password|secret|auth/i.test(k)))
+        fail(400, "cms_invalid_account_url:" + service);
+      // Normalize copied profile tabs without treating a handle as a verified channel ID.
+      const path = url.pathname.replace(/\/+$/, "");
+      if (service === "youtube") {
+        const match = /^(\/@[^/]+|\/channel\/UC[\w-]{22})(?:\/(?:featured|videos|shorts|streams|playlists|community|posts|about|live|podcasts|releases|channels|search))?$/.exec(path);
+        if (!match) fail(400, "cms_invalid_account_url:youtube");
+        url = new URL("https://www.youtube.com" + match[1]);
+      } else {
+        const host = {x:"x.com",twitch:"www.twitch.tv",tiktok:"www.tiktok.com"}[service];
+        const pattern = service === "tiktok" ? /^\/@[a-zA-Z0-9_]+(?:\.[a-zA-Z0-9_]+)*$/ : /^\/[a-zA-Z0-9_]+$/;
+        if (!pattern.test(path)) fail(400, "cms_invalid_account_url:" + service);
+        url = new URL("https://" + host + path);
+      }
       const slug = service === "youtube" ? /^\/channel\/(UC[\w-]{22})$/.exec(url.pathname)?.[1]
         : service === "tiktok" ? /^\/@([a-zA-Z0-9_]+(?:\.[a-zA-Z0-9_]+)*)$/.exec(url.pathname)?.[1]
         : /^\/([a-zA-Z0-9_]+)$/.exec(url.pathname)?.[1];
       if (["twitch", "tiktok"].includes(service) && !slug) fail(400, "cms_invalid_input");
       // A channel URL alone does not prove ownership.
       if (service === "youtube" && slug) fail(403, "cms_identity_anchor");
-      const account = { service, accountId: slug ?? null, url: supplied };
+      const account = { service, accountId: slug ?? null, url: url.href };
       if (old) value.accounts[index] = account;
       else value.accounts.push(account);
     }
@@ -203,7 +219,11 @@ export async function prepareDraft(snapshot, member, input, lookup) {
       if (before?.affiliations.some((row) => count(input.affiliations, row.organizationId) < count(before.affiliations, row.organizationId)))
         fail(409, "affiliation_history_must_be_retained");
       value.affiliations = input.affiliations.map(({ organizationId, status, from, to }) => ({ organizationId, status, from, to }));
-      const agencyState = input.agencyState ?? (value.affiliations.some((row) => row.status === "current") ? "affiliated" : "unknown");
+      const hasCurrent = value.affiliations.some((row) => row.status === "current");
+      const agencyState = input.agencyState ?? (hasCurrent ? "affiliated" : "unknown");
+      if ((hasCurrent && agencyState !== "affiliated") || (!hasCurrent && agencyState === "affiliated")) fail(400, "cms_affiliation_state_mismatch");
+      if (value.affiliations.some(row => row.status === "current" && row.to)) fail(400, "cms_affiliation_current_end");
+      if (value.affiliations.some(row => row.from && row.to && row.from > row.to)) fail(400, "cms_affiliation_period");
       if (!["affiliated", "unaffiliated", "unknown"].includes(agencyState)) fail(400, "cms_invalid_input");
       value.agencyStatus = { value: agencyState };
     }

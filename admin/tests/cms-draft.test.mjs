@@ -317,3 +317,22 @@ test("standalone video registration and title editing use the verified ID and sc
   const linked=await publicationPlan(next,{id:"new-video-link-test",owner,createdAt:"2026-11-25T00:00:00Z",operations:ops},all);
   assert.equal(linked.plan.files.music.musicVideos.find(row=>row.youtubeId===video.youtubeId).songId,published.id);
  });
+
+test("new talent accepts copied Unicode YouTube handle profile links and normalizes SNS URLs",async()=>{
+  const editor={role:"editor",contentPolicy:"all-content-v1",directPublish:true};
+  const input={sha:snapshot.sha,entity:"talent",displayName:"新規登録回帰試験",image:"",activity:"ended",officialProfileUrl:"",
+    youtubeUrl:"https://www.youtube.com/@%E6%96%B0%E8%A6%8F%E8%A9%A6%E9%A8%93/videos?si=example",
+    xUrl:"https://x.com/cms_talent_regression/",tiktokUrl:"https://www.tiktok.com/@cms_talent_regression/",
+    wikiUrl:"https://wikiwiki.jp/jigjp/%E8%A9%A6%E9%A8%93",agencyState:"affiliated",
+    affiliations:[{organizationId:"org-000002",status:"current",from:null,to:null}],visibility:"public"};
+  const ops=await prepareDraft(snapshot,editor,input);
+  const value=ops[0].value;
+  assert.equal(value.activityStatus.value,"ended");
+  assert.equal(value.accounts.find(a=>a.service==="youtube").accountId,null);
+  assert.equal(value.accounts.find(a=>a.service==="youtube").url,"https://www.youtube.com/@%E6%96%B0%E8%A6%8F%E8%A9%A6%E9%A8%93");
+  assert.equal(value.accounts.find(a=>a.service==="tiktok").accountId,"cms_talent_regression");
+  await assert.rejects(prepareDraft(snapshot,editor,{...input,youtubeUrl:"https://www.youtube.com/watch?v=abcdefghijk"}),/cms_invalid_account_url:youtube/);
+  await assert.rejects(prepareDraft(snapshot,editor,{...input,youtubeUrl:"https://evil.example/@test"}),/cms_invalid_account_url:youtube/);
+  await assert.rejects(prepareDraft(snapshot,editor,{...input,agencyState:"unknown"}),/cms_affiliation_state_mismatch/);
+  await assert.rejects(prepareDraft(snapshot,editor,{...input,affiliations:[{organizationId:"org-000002",status:"current",from:null,to:"2026-11-01"}]}),/cms_affiliation_current_end/);
+});

@@ -139,6 +139,7 @@ test("all roles share the shell and separate collections while viewers have read
             await commands.getByRole("searchbox").fill("楽曲");
             assert.equal(await commands.getByRole("button",{name:"楽曲を開く",exact:true}).count(),1);
             await commands.getByRole("searchbox").press("Escape");
+            await commands.waitFor({state:"hidden"});
             assert.equal(await commands.isVisible(),false);
           }
           await page.locator(".cms-columns summary").click();

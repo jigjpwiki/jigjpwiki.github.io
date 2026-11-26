@@ -1,6 +1,7 @@
 import { publicationReview } from "./cms-review.mjs";
 import { recoverAppliedGroup } from "./cms-recover-draft.mjs";
 import { youtubeVideoLookup, videoForCms, collectedVideo } from "./cms-music.mjs";
+import { prepareTransfer } from "./cms-transfer.mjs";
 import { readCmsHistory, prepareAuditReversal, assertReversalRoundTrip } from "./cms-history.mjs";
 import { inspectDraftConflicts } from "./cms-conflicts.mjs";
 import { publicationPlan } from "./cms-publish.mjs";
@@ -276,7 +277,7 @@ export class Admin {
         }
       }
     }
-    const cmsRoutes = ["/api/cms/catalog", "/api/cms/video-preview", "/api/cms/detail", "/api/cms/draft", "/api/cms/draft/bulk", "/api/cms/draft/conflicts", "/api/cms/history", "/api/cms/publication/reapply", "/api/cms/publication/preview"];
+    const cmsRoutes = ["/api/cms/catalog", "/api/cms/transfer", "/api/cms/video-preview", "/api/cms/detail", "/api/cms/draft", "/api/cms/draft/bulk", "/api/cms/draft/conflicts", "/api/cms/history", "/api/cms/publication/reapply", "/api/cms/publication/preview"];
     if (cmsRoutes.includes(url.pathname)) {
       await this.atomic(async () => {
         const key = "cms-rate:" + sid;
@@ -460,6 +461,21 @@ export class Admin {
             return json({ revision: result.revision });
           });
         }
+      }
+      if(url.pathname==="/api/cms/transfer"&&["POST","PUT"].includes(request.method)){
+        if(member.role!=="editor"||!hasAllContent(member))fail(403,"cms_scope_denied");
+        const input=await body(request,100000);
+        const workspace=new WorkspaceStore(this.store,this.env.SESSION_KEY);
+        const previous=await workspace.get(session.id);
+        if(!Number.isInteger(input?.revision)||input.revision!==(previous?.revision??0))fail(409,"workspace_revision_conflict");
+        const batch=await prepareTransfer(snapshot,member,input,previous?.operations||[],this.cmsVideoLookup);
+        await requireCurrentGrant();
+        if(request.method==="POST")return json({preview:batch.preview,revision:input.revision});
+        return this.atomic(async()=>{
+          await requireCurrentGrant();
+          const saved=await workspace.save(session.id,{protocol:1,revision:input.revision,operations:batch.operations});
+          return json({revision:saved.revision,draftIds:batch.draftIds,preview:batch.preview});
+        });
       }
       if (url.pathname === "/api/cms/draft/bulk" && request.method === "PUT") {
         if (member.role !== "editor" || !hasAllContent(member)) fail(403, "cms_scope_denied");

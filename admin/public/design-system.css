@@ -862,3 +862,12 @@ button:hover:not(:disabled), .button:hover { border-color: var(--accent); }
 .cms-bulk-paste>summary{cursor:pointer;color:var(--muted)}
 .cms-bulk-paste[open]{display:grid;gap:6px}
 .cms-bulk-paste[open]>button{justify-self:start}
+
+.cms-transfer-dialog{width:min(720px,calc(100vw - 24px));max-height:85dvh;overflow:auto;padding:18px;border:1px solid var(--line);border-radius:12px;background:var(--surface);color:var(--ink);box-shadow:0 20px 60px #1114}
+.cms-transfer-dialog::backdrop{background:#18223855}
+.cms-transfer-dialog[open]{display:grid;gap:10px}
+.cms-transfer-dialog label{display:grid;grid-template-columns:100px 1fr;align-items:center;gap:8px}
+.cms-transfer-dialog textarea{font-family:monospace;min-height:150px}
+.cms-transfer-help{font-size:12px;line-height:1.6;color:var(--muted)}
+.cms-transfer-actions{display:flex;justify-content:flex-end;gap:8px}
+.cms-transfer-dialog [role=status]:not(:empty){padding:10px;background:var(--soft);border-radius:6px;overflow-wrap:anywhere}

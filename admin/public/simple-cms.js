@@ -1,6 +1,7 @@
 import { mountCmsHistory } from "./cms-history.js";
 import { renderDraftConflicts } from "./cms-conflicts.js";
 import { youtubeId } from "./content-utils.js";
+import { parseTransfer, transferFields, editableKeys } from "./cms-transfer.js";
 
 const labels = {
   name: ["名称", "text"], status: ["販売状態", "select"], periodNote: ["販売条件・補足", "textarea"],
@@ -1516,6 +1517,36 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
     panel.append(history);
   }
   const headerTools = el("div"); headerTools.className="cms-header-tools";
+  if(view!=="legacy"&&catalog.editable&&catalog.contentPolicy==="all-content-v1"){
+    const dialog=el("dialog");dialog.className="cms-transfer-dialog";dialog.setAttribute("aria-label","一括登録・編集");
+    const heading=el("h3","一括登録・編集");const dismiss=button("閉じる",()=>dialog.close());const top=el("div");top.className="cms-command-bar";top.append(heading,dismiss);
+    const kind=el("select");kind.setAttribute("aria-label","対象データ");kind.append(...Object.entries(categories).filter(([entity,spec])=>catalog.categories.includes(spec.category)).map(([entity,spec])=>new Option(spec.label,entity)));
+    const mode=el("select");mode.setAttribute("aria-label","一括操作");mode.append(new Option("既存データを編集","update"),new Option("新規登録","create"));
+    const format=el("select");format.setAttribute("aria-label","入力形式");format.append(new Option("CSV","csv"),new Option("JSON","json"),new Option("表から貼り付け（TSV）","tsv"));
+    const file=el("input");file.type="file";file.accept=".csv,.json,.tsv,text/csv,application/json,text/tab-separated-values";file.setAttribute("aria-label","ファイルを選択");
+    const area=el("textarea");area.rows=8;area.setAttribute("aria-label","一括入力データ");
+    const help=el("p");help.className="cms-transfer-help";
+    const report=el("div");report.setAttribute("role","status");
+    const actions=el("div");actions.className="cms-transfer-actions";
+    let checked=null,busy=false;
+    function invalidate(){checked=null;save.disabled=true;report.replaceChildren();}
+    function updateHelp(){const keys=mode.value==="update"?["id",...editableKeys(kind.value)]:transferFields[kind.value].split(" ");help.textContent="使用できる列名："+keys.join(" / ")+"。1〜12件。空欄は空の値として扱います。変更しない列は含めないでください。配列項目はJSON配列で指定します。";area.placeholder=format.value==="json"?"[{ \""+keys[0]+"\": \"...\" }]":keys.slice(0,3).join(format.value==="tsv"?"\t":",");invalidate();}
+    function payload(){return {entity:kind.value,mode:mode.value,rows:parseTransfer(area.value,format.value,kind.value,mode.value),revision,sha:catalog.sha};}
+    const check=button("内容を検証",async()=>{if(busy||saving||!saveAvailable)return;invalidate();let input;try{input=payload();}catch(error){report.textContent=error.message;return;}busy=true;check.disabled=true;report.textContent="検証中…";
+      try{const r=await api("/api/cms/transfer","POST",input);if(JSON.stringify(input)!==JSON.stringify(payload())){report.textContent="入力が変わりました。再検証してください。";return;}checked=input;report.replaceChildren(el("strong","検証済み： "+r.preview.filter(row=>!row.unchanged).length+"件"));for(const row of r.preview)report.append(el("div",row.row+"行目　"+(row.name||row.id||"新規データ")+(row.unchanged?"（変更なし）":"")));save.disabled=false;}
+      catch(error){report.textContent="検証できませんでした："+error.message;}finally{busy=false;check.disabled=false;}});
+    const save=button("まとめて下書きに保存",async()=>{if(!checked||busy||saving||!saveAvailable||panel.dataset.cmsDirty)return;let input;try{input=payload();}catch{return;}if(JSON.stringify(input)!==JSON.stringify(checked)){invalidate();return;}if(!confirm("検証済みの内容を下書きに保存します。公開は別途確認が必要です。"))return;
+      busy=true;saving=true;panel.dataset.cmsSaving="true";save.disabled=true;check.disabled=true;
+      try{const r=await api("/api/cms/transfer","PUT",input);revision=r.revision;checked=null;report.textContent=r.draftIds.length+"件の下書きを保存しました。";try{await refreshDrafts();}catch{saveAvailable=false;report.textContent+=" 一覧の再取得に失敗しました。再読み込みしてください。";}}
+      catch(error){checked=null;report.textContent="一括保存できませんでした。下書きの状態を確認し、再検証してください："+error.message;}finally{busy=false;saving=false;delete panel.dataset.cmsSaving;check.disabled=false;refreshList();}});
+    save.className="primary";save.disabled=true;
+    for(const c of [kind,mode,format])c.onchange=updateHelp;area.oninput=invalidate;
+    file.onchange=async()=>{const selected=file.files?.[0];if(!selected)return;if(selected.size>100000){report.textContent="100KB以下のファイルを選択してください。";return;}try{area.value=await selected.text();if(selected.name.endsWith(".json"))format.value="json";else if(selected.name.endsWith(".tsv"))format.value="tsv";else format.value="csv";updateHelp();}catch{report.textContent="ファイルを読み込めませんでした。";}};
+    dialog.addEventListener("cancel",event=>{if(busy||saving)event.preventDefault();});dismiss.onclick=()=>{if(!busy&&!saving)dialog.close();};
+    actions.append(check,save);dialog.append(top,pickerField("対象データ",kind),pickerField("操作",mode),pickerField("形式",format),file,help,area,report,actions);panel.append(dialog);
+    const openTransfer=button("一括登録・編集",()=>{if(saving||panel.dataset.cmsDirty){status.textContent="編集中の変更を保存してから一括操作を開始してください。";return;}if(categories[selectedEntity])kind.value=selectedEntity;updateHelp();dialog.showModal();});
+    headerTools.append(openTransfer);
+  }
   if (view !== "legacy") {
     // One consistent searchable chooser, with scoped destinations and creation actions.
     const dialog=el("dialog"); dialog.className="cms-command-dialog cms-chooser";
@@ -1721,7 +1752,7 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
     const pasteField=el("select");pasteField.setAttribute("aria-label","貼り付ける項目");pasteField.append(...[...bulkField.options].map(o=>new Option(o.text,o.value)));
     const info=el("small","変更項目を選択し、固定IDと値の2列を貼り付けてください。");const preview=el("div");let plan=[];
     function validate(){plan=[];preview.replaceChildren();const field=pasteField.value,allowed=bulkValues[field];const rows=area.value.trim().split(/\\r?\\n/).filter(Boolean);const ids=new Set();const items=sections.flatMap(s=>s.items);const used=new Set((saved?.drafts||[]).filter(d=>d.input?.entity===selectedEntity).map(d=>d.input.id));if(!rows.length||rows.length>12){preview.textContent="1〜12行を入力してください。";return false;}for(const line of rows){const parts=line.split("\\t").map(s=>s.trim());const [id,label]=parts;const value=allowed.find(v=>v===label||translated(v)===label);if(parts.length!==2||!items.some(i=>i.id===id)||used.has(id)||ids.has(id)||!value){preview.textContent="無効な行、重複ID、既存下書き、または未対応の値があります："+line;plan=[];return false;}ids.add(id);plan.push({id,value});}for(const row of plan)preview.append(el("div",row.id+" → "+translated(row.value)));return true;}
-    const check=button("内容を確認",validate);const apply=button("貼り付けを下書きに保存",async()=>{if(saving||!saveAvailable||panel.dataset.cmsDirty||!validate())return;const field=pasteField.value;if(!confirm(plan.length+"件の変更を下書きに保存します。複数の値がある場合は順次保存します。"))return;const groups=new Map();for(const row of plan){if(!groups.has(row.value))groups.set(row.value,[]);groups.get(row.value).push(row.id);}saving=true;panel.dataset.cmsSaving="true";let done=0;try{for(const [value,ids] of groups){const result=await api("/api/cms/draft/bulk","PUT",{entity:selectedEntity,ids,field,value,revision,sha:catalog.sha});revision=result.revision;done+=result.draftIds.length;}area.value="";preview.textContent="保存済み";status.textContent=done+"件の下書きを保存しました。";}catch{status.textContent=done+"件保存済み。残りは保存できませんでした。下書きと入力を確認してください。";}finally{try{await refreshDrafts()}catch{saveAvailable=false;}saving=false;delete panel.dataset.cmsSaving;filter();}});
+    const check=button("内容を確認",validate);const apply=button("貼り付けを下書きに保存",async()=>{if(saving||!saveAvailable||panel.dataset.cmsDirty||!validate())return;const field=pasteField.value;if(!confirm(plan.length+"件の変更をまとめて下書きに保存します。"))return;saving=true;panel.dataset.cmsSaving="true";try{const result=await api("/api/cms/transfer","PUT",{entity:selectedEntity,mode:"update",rows:plan.map(row=>({id:row.id,[field]:row.value})),revision,sha:catalog.sha});revision=result.revision;area.value="";preview.textContent="保存済み";status.textContent=result.draftIds.length+"件の下書きを保存しました。";try{await refreshDrafts()}catch{saveAvailable=false;status.textContent+=" 一覧の再取得に失敗しました。";}}catch{status.textContent="一括保存できませんでした。下書きと入力を確認してください。";}finally{saving=false;delete panel.dataset.cmsSaving;filter();}});
     paste.append(pasteField,info,area,check,preview,apply);pasteMenu=paste;
   }
   if (bulkAvailable) {

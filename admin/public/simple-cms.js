@@ -1014,7 +1014,7 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
         const top=[...counts].sort((a,b)=>b[1]-a[1])[0];return top?JSON.parse(top[0]):fallback;
       }
       function field(host,label,type,value="",required=false){
-        const c=el("input");c.type=type;c.value=value??"";c.required=required;host.append(pickerField(label,c));return c;
+        const c=el("input");c.type=type;c.value=value??"";c.required=required;c.setAttribute("aria-label",label);host.append(pickerField(label,c));return c;
       }
       function imageField(host,label,value){
         const c=field(host,label,"url",value),img=el("img");
@@ -1028,7 +1028,7 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
         const grid=el("div");grid.className="cms-goods-condition";
         const mode=el("select");
         mode.append(new Option(requiredMode?"販売方式を選択":"未確認（既存情報を維持）",""),new Option("先着販売","first_come"),new Option("受注販売","preorder"));
-        mode.value=initial.saleMode||"";mode.required=requiredMode;grid.append(pickerField("販売方式",mode));
+        mode.value=initial.saleMode||"";mode.required=requiredMode;mode.setAttribute("aria-label","販売方式");grid.append(pickerField("販売方式",mode));
         const start=field(grid,"販売開始日時（JST）","datetime-local",initial.startsAt);
         const end=field(grid,"販売終了日時（JST）","datetime-local",initial.endsAt);
         const url=field(grid,"公式販売URL","url",initial.url,true),hint=el("small");
@@ -1110,7 +1110,7 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
           const manual=el("select");
           manual.append(new Option("自動判定","unknown"),new Option("売り切れ（確認済み）","sold_out"),new Option("販売終了（確認済み）","ended"));
           if(["on_sale","scheduled"].includes(sale.status))manual.append(new Option("既存の状態を維持（"+(sale.status==="on_sale"?"販売中":"販売予定")+"）",sale.status));
-          manual.value=sale.status||"unknown";block.append(pickerField("販売状態",manual));
+          manual.value=sale.status||"unknown";manual.setAttribute("aria-label","販売状態");block.append(pickerField("販売状態",manual));
           const note=el("textarea");note.value=sale.periodNote||"";note.maxLength=240;
           const extra=el("details");extra.append(el("summary","販売条件・補足（任意）"),pickerField("販売条件・補足",note));block.append(extra);
           const key=sale.key||(single?"cms-sale-":"")+crypto.randomUUID().replaceAll("-","").slice(0,12);

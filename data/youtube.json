@@ -1128,18 +1128,6 @@
     "url": "https://www.youtube.com/watch?v=79rFsh0zixw"
   },
   {
-    "videoId": "Ia0mOuRIk7Y",
-    "name": "七音うら",
-    "youtubeid": "UCv2IYO-4waCpHvn50SWWY2A",
-    "title": "【#雑談配信】めちゃくちゃジャンキーなものが食べたい日の雑談。【七音うら】",
-    "date": "2026-11-25T14:49:15.000Z",
-    "status": "archive",
-    "type": "video",
-    "thumbnail": "https://i.ytimg.com/vi/Ia0mOuRIk7Y/mqdefault.jpg?v=6b06f56b",
-    "channelIcon": "https://yt3.ggpht.com/62ws-Q3hPuNjc64T5sz41MNbFqxlI7Gefwnsrysdn2FNYqlxH5E5VifRCMtsFIUyZe5lsHJmxA=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=Ia0mOuRIk7Y"
-  },
-  {
     "videoId": "WfbgMqueZsE",
     "name": "堂下さとり",
     "youtubeid": "UCBq6MSUL-Ermvnoj3PtX7Iw",
@@ -1579,7 +1567,7 @@
     "date": "2026-11-26T11:55:07.000Z",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/spPTB9UJKOg/mqdefault.jpg?v=6b081b06",
+    "thumbnail": "https://i.ytimg.com/vi/spPTB9UJKOg/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/eW_Hug0M6zFk9QSbAmOUWLMSfzBlCHmes-8yAksvfUNzyLgY6TSsE_eW8ncfE4bHYZXKoTWxmQ=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=spPTB9UJKOg"
   },
@@ -1702,6 +1690,18 @@
     "thumbnail": "https://i.ytimg.com/vi/raV0VYDUZMc/mqdefault.jpg?v=6b083ae8",
     "channelIcon": "https://yt3.ggpht.com/K9NG8yMDYt1GGoQjhc9c-XEBm1PxGVkEhIQxos6ODhB_pk5HpUvETjUOe5LLkzzJ3biot_nWwQ=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=raV0VYDUZMc"
+  },
+  {
+    "videoId": "Ia0mOuRIk7Y",
+    "name": "七音うら",
+    "youtubeid": "UCv2IYO-4waCpHvn50SWWY2A",
+    "title": "【#雑談配信】めちゃくちゃジャンキーなものが食べたい日の雑談。【七音うら】",
+    "date": "2026-11-26T15:05:42.000Z",
+    "status": "live",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/Ia0mOuRIk7Y/mqdefault.jpg?v=6b06f56b",
+    "channelIcon": "https://yt3.ggpht.com/62ws-Q3hPuNjc64T5sz41MNbFqxlI7Gefwnsrysdn2FNYqlxH5E5VifRCMtsFIUyZe5lsHJmxA=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=Ia0mOuRIk7Y"
   },
   {
     "videoId": "YQhSoAEjTjg",

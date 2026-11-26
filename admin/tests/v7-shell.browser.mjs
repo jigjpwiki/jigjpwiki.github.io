@@ -432,7 +432,7 @@ test("all roles share the shell and separate collections while viewers have read
         await page.goto(base + "/#content/talent");
         await page.getByRole("button",{name:"VTuberを新規登録",exact:true}).click();
         await page.getByLabel("表示名",{exact:true}).fill("自動更新と並行した新規登録");
-        await page.getByLabel("活動状態",{exact:true}).selectOption("ended");
+        await page.getByRole("region",{name:"レコード詳細"}).getByLabel("活動状態",{exact:true}).selectOption("ended");
         await page.getByRole("button",{name:"所属を追加",exact:true}).click();
         const former=page.locator(".cms-affiliation-editor fieldset").last();
         await former.getByRole("combobox",{name:"事務所",exact:true}).fill("試験事務所65");

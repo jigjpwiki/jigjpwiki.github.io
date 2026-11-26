@@ -1992,12 +1992,12 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
     count.className="cms-list-count";tools.append(count);
     paging.append(next);
     observer=new IntersectionObserver(entries=>{
-      if(!panel.isConnected){observer.disconnect();return;}
+      if(!list.isConnected){observer.disconnect();return;}
       if(entries.some(entry=>entry.isIntersecting))loadMore();
     },{root:null,rootMargin:"0px 0px 160px 0px"});
   }else paging.append(count,previous,next);
   function loadMore(){
-    if(!continuous||!hasMore||!list.getClientRects().length||!panel.isConnected)return;
+    if(!continuous||!hasMore||!list.isConnected||!list.getClientRects().length)return;
     page++;filter(true);
   }
   async function openRecord(entity, id) {

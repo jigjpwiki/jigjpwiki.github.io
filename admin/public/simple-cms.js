@@ -50,6 +50,7 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
     return node;
   };
   const view = options.view || "legacy";
+  panel.dataset.cmsView = view;
   const selectedEntity = options.entity;
   const musicView = ["song", "musicVideo", "karaoke", "performance"].includes(selectedEntity);
   const catalog = await api("/api/cms/catalog" + (musicView ? "?fresh=1" : ""));
@@ -63,6 +64,7 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
     ? catalog.sections.filter(({ entity }) => entity === selectedEntity)
     : view === "legacy" ? catalog.sections : mergedSections;
   const browsing = ["legacy", "content", "search"].includes(view);
+  const needsReview = (entity,item) => entity === "event" ? (!item.date || item.state === "unknown") : ["talent","performance","goods","karaoke"].includes(entity) && ["unknown","unreviewed","partial","unavailable"].includes(item.state);
   let pickerSequence = 0;
   const relationEntries = (rows) => (rows || []).map((row) => ({
     ...row, name: row.name || row.title || row.id,
@@ -333,7 +335,7 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
     delete formArea.dataset.draftId;
     formArea.replaceChildren();
     formArea.hidden = true;
-    workspaceArea.classList.remove("has-editor");
+    workspaceArea.classList.remove("has-editor", "cms-editor-expanded");
     if (restoreFocus?.isConnected && !restoreFocus.disabled) restoreFocus.focus();
     else (list.querySelector("button, input") || panel.querySelector("h2"))?.focus();
   };
@@ -395,8 +397,8 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
       : "公開処理はありません。";
     publicationStatus.dataset.phase = publication?.phase || "idle";
     const stages = [
-      ["queued", "順番待ち"], ["candidate", "候補作成"], ["checking", "CI検証"],
-      ["promoting", "main反映"], ["pages", "サイト反映"], ["published", "完了"],
+      ["queued", "順番待ち"], ["candidate", "変更準備"], ["checking", "公開前チェック"],
+      ["promoting", "データ更新"], ["pages", "サイト反映"], ["published", "完了"],
     ];
     const stage = stages.findIndex(([key]) => key === publication?.phase);
     publicationProgress.hidden = stage < 0;
@@ -427,7 +429,8 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
       else row.textContent = label;
       list.append(row);
     }
-    publishedRecords.replaceChildren(el("summary", "発行済みレコード"), list);
+    publishedRecords.replaceChildren(el("summary", "公開したデータ"), list);
+    publicationArea.dataset.phase = publication?.phase || "idle";
   }
 
   const reconcileButton = button("公開結果を再確認", async () => {
@@ -468,6 +471,7 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
   async function refreshDrafts(reuse = false) {
     if (reuse !== true) saved = await api("/api/cms/draft");
     revision = saved.revision;
+    if (view === "dashboard") draftsArea.hidden = !saved.drafts.length;
     const draftHeading = el("div");
     draftHeading.className = "cms-section-heading";
     draftHeading.append(el("h3", "保存済みの下書き"), el("span", saved.drafts.length + "件"));
@@ -638,7 +642,7 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
       draftsArea.append(row);
     }
   }
-  function edit(entity, input = {}, draftId) {
+  function edit(entity, input = {}, draftId, forceUnified = false) {
     if (saving || !panel.isConnected || !Object.hasOwn(categories, entity)) return;
     if (panel.dataset.cmsDirty && !confirm("保存していない入力を破棄して別の編集を開きますか？")) return;
     requestSerial++;
@@ -646,7 +650,7 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
     const spec = categories[entity];
     const unifiedGoods = view !== "legacy" && ["product","campaign"].includes(entity) &&
       !(entity === "product" && !input.id && (input.campaignTitle || input.campaignId)) &&
-      (goodsView || view === "drafts" || view === "search" || input.sales?.some(s=>s.saleMode) || input.products?.some(p=>p.sales?.some(s=>s.saleMode)));
+      (forceUnified || goodsView || view === "drafts" || view === "search" || input.sales?.some(s=>s.saleMode) || input.products?.some(p=>p.sales?.some(s=>s.saleMode)));
     let formSha = input.sha || catalog.sha;
     const form = el("form");
     form.className = "stack cms-record-form";
@@ -725,8 +729,20 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
     if (fullTalent) fieldNames.push("twitchUrl", "tiktokUrl", "wikiUrl");
     if (entity === "song" && !input.id) fieldNames.push("songIdentityUrl");
     if (entity === "video" && input.id) fieldNames.push("title");
+    // Keep the fields required for the task in view; optional metadata remains available.
+    const optionalGroups = entity === "talent" ? { image:"プロフィール・画像", officialProfileUrl:"プロフィール・画像", aliasNames:"別名・補足", youtubeUrl:"SNS・公式リンク", xUrl:"SNS・公式リンク", twitchUrl:"SNS・公式リンク", tiktokUrl:"SNS・公式リンク", wikiUrl:"SNS・公式リンク" } : entity === "song" ? { aliases:"別名・読み", readings:"別名・読み" } : entity === "event" ? { thumbnailUrl:"画像・配信・料金", streamUrl:"画像・配信・料金", fee:"画像・配信・料金" } : {};
+    const extraGroups = new Map();
+    const fieldHost = key => {
+      if (view === "legacy" || !optionalGroups[key]) return basicGrid;
+      const label = optionalGroups[key];
+      if (!extraGroups.has(label)) {
+        const details = el("details"); details.className = "cms-optional-fields";
+        const grid = el("div"); grid.className = "cms-field-grid";
+        details.append(el("summary", label), grid); extraGroups.set(label, {details, grid});
+      }
+      return extraGroups.get(label).grid;
+    };
     for (const key of fieldNames) {
-
       const [label, type] = labels[key];
       const control = el(["textarea", "select"].includes(type) ? type : "input");
       if (type === "select") control.append(...Object.entries(key === "status" ? { unknown: "不明", on_sale: "販売中", scheduled: "販売予定", ended: "販売終了", sold_out: "売り切れ" } : key === "verification" ? { unreviewed: "未確認", verified: "確認済み", rejected: "対象外" } : key === "videoKind" ? { cover: "歌ってみた", original: "オリジナル", other: "その他" } : key === "activity" ? { unknown: "不明", active: "活動中", hiatus: "休止中", retired: "引退", ended: "活動終了" } : key === "kind" ? { birthday: "誕生日", debut: "デビュー記念日", group: "グループ記念日", other: "その他" } : {
@@ -748,11 +764,12 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
         control.min = "0";
         control.step = input.feeCurrency && input.feeCurrency !== "JPY" ? "any" : "1";
       }
-      add(key, entity === "talent" && key === "image" ? "プロフィール画像URL" : key === "fee" ? "料金（" + (input.feeCurrency || "JPY") + "）" : key === "price" && input.currency ? "価格（" + input.currency + "）" : label, control, basicGrid);
+      add(key, entity === "talent" && key === "image" ? "プロフィール画像URL" : key === "fee" ? "料金（" + (input.feeCurrency || "JPY") + "）" : key === "price" && input.currency ? "価格（" + input.currency + "）" : label, control, fieldHost(key));
     }
     if (entity !== "organization" && catalog.contentPolicy === "all-content-v1") {
       const visibility = el("select");
       visibility.append(new Option("公開", "public"), new Option("非公開・下書き", "draft"));
+      // Saving a draft never publishes it. Keep the existing target visibility default.
       add("visibility", "公開サイトへの掲載状態", visibility, basicGrid);
     }
     const affiliationRows = [];
@@ -760,7 +777,7 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
     if (fullTalent) {
       const section = el("fieldset");
       section.className = "cms-affiliation-editor";
-      section.append(el("legend", "所属履歴"), el("p", "過去の所属を残したまま、所属状態と期間を編集できます。移籍する場合は現在の所属を終了し、新しい行を追加してください。"));
+      section.append(el("legend", input.id ? "所属履歴" : "所属"), el("p", input.id ? "移籍する場合は現在の所属を終了し、新しい所属を追加してください。" : "所属が分かる場合は事務所を追加してください。不明な場合は後から編集できます。"));
       agencyState = el("select");
       agencyState.append(new Option("所属あり", "affiliated"), new Option("個人・無所属", "unaffiliated"), new Option("不明", "unknown"));
       agencyState.value = input.agencyState || "unknown";
@@ -782,7 +799,7 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
         }
         const status = el("select");
         status.append(new Option("現在", "current"), new Option("過去", "former"), new Option("不明", "unknown"));
-        status.value = value.status || "former";
+        status.value = value.status || (input.id ? "former" : "current");
         const from = el("input"), to = el("input");
         from.type = to.type = "date";
         from.value = value.from || "";
@@ -799,7 +816,7 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
         rows.append(row);
       }
       for (const value of input.affiliations || []) affiliation(value, Boolean(input.id));
-      section.append(rows, button("所属を追加", () => affiliation()));
+      section.append(rows, button("所属を追加", () => { affiliation(); rows.lastElementChild?.querySelector("input[type=search]")?.focus(); }));
       form.append(section);
       if (input.accounts?.length) {
         const accounts = el("details");
@@ -1240,6 +1257,11 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
       else help.append(note);
       form.prepend(help);
     }
+    if (view !== "legacy") {
+      const guide = el("p", input.id ? "変更したい項目だけ編集できます。保存しても公開サイトには反映されません。" : "必須項目から入力してください。その他の情報は後から追加できます。");
+      guide.className = "cms-editor-guide"; form.prepend(guide);
+      for (const {details} of extraGroups.values()) form.append(details);
+    }
     const submit = el("button", "下書きを保存");
     submit.type = "submit";
     submit.className = "primary";
@@ -1250,6 +1272,32 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
     saveStatus.setAttribute("role", "status");
     saveStatus.className = "cms-save-status";
     footer.append(saveStatus, submit);
+    let afterSave = "stay";
+    let carry;
+    const carryKeys = entity === "song" ? ["artists"] : entity === "event" ? ["venue","format","fee"] : [];
+    if (catalog.editable && !input.id && view !== "legacy" && carryKeys.length) {
+      carry=el("input"); carry.type="checkbox"; carry.checked=Boolean(input.carryNext);
+      const label=el("label", entity==="song"?"次の登録にも原曲アーティストを引き継ぐ":"次の登録にも会場・開催形式・料金を引き継ぐ");
+      label.className="cms-carry-next"; label.prepend(carry); footer.append(label);
+    }
+    const requestSave = mode => {
+      if (saving || !saveAvailable || !catalog.editable || !form.reportValidity()) return;
+      afterSave = mode; form.requestSubmit(submit);
+    };
+    if (catalog.editable && view !== "legacy") {
+      submit.title = "下書きを保存（Ctrl / ⌘ + Enter）";
+      submit.setAttribute("aria-keyshortcuts","Control+Enter Meta+Enter");
+      const closeSave = button("保存して閉じる", () => requestSave("close"));
+      closeSave.dataset.pickerNavigation = ""; footer.append(closeSave);
+      if (!input.id) {
+        const nextSave = button("保存して次を作成", () => requestSave("next"));
+        nextSave.dataset.pickerNavigation = ""; footer.append(nextSave);
+      }
+      form.addEventListener("keydown", event => {
+        if (event.isComposing || event.defaultPrevented || event.altKey || !(event.ctrlKey || event.metaKey) || event.key !== "Enter") return;
+        event.preventDefault(); event.stopPropagation(); requestSave(event.shiftKey && !input.id ? "next" : "stay");
+      });
+    }
     if (catalog.editable && view !== "legacy") {
       const draftsLink = el("a", "下書きへ");
       draftsLink.href = "#drafts";
@@ -1272,7 +1320,7 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
     }, true);
     let inputRevision = 0;
     const markDirty = (event) => {
-      if (!catalog.editable || event?.target?.matches("input[type=search]")) return;
+      if (!catalog.editable || event?.target === carry || event?.target?.matches("input[type=search]")) return;
       event?.target?.removeAttribute("aria-invalid");
       event?.target?.closest("label")?.querySelector(".cms-field-error")?.remove();
       inputRevision++;
@@ -1288,6 +1336,8 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
       event.preventDefault();
       if (!catalog.editable || saving || !saveAvailable) return;
       const submittedInputRevision = inputRevision;
+      const saveMode = afterSave; afterSave = "stay";
+      let completed = false;
       saving = true;
       panel.dataset.cmsSaving = "true";
       saveStatus.textContent = "保存中…";
@@ -1328,6 +1378,7 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
         try {
           await refreshDrafts();
           status.textContent = "下書きを保存しました。公開サイトには反映されていません。";
+          completed = true;
         } catch {
           saveAvailable = false;
           status.textContent = "下書きは保存されましたが一覧の再取得に失敗しました。再読み込みしてから編集を続けてください。";
@@ -1352,6 +1403,13 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
         delete panel.dataset.cmsSaving;
         submit.disabled = !saveAvailable;
       }
+      if (completed && inputRevision === submittedInputRevision && panel.isConnected) {
+        if (saveMode === "close") closeEditor(true);
+        if (saveMode === "next") {
+          const seed = carry?.checked ? { ...Object.fromEntries(carryKeys.filter(key=>fields.has(key)).map(key=>[key,fields.get(key).value])), carryNext:true } : {};
+          edit(entity, seed, undefined, forceUnified || unifiedGoods);
+        }
+      }
     };
     delete panel.dataset.cmsDirty;
     formArea.dataset.draftId = draftId || "";
@@ -1364,7 +1422,45 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
     const title = el("h3", spec.label + (catalog.editable ? input.id ? "を編集" : "を登録" : "の詳細"));
     title.tabIndex = -1;
     heading.append(title);
-    if (input.id) heading.append(el("small", input.id));
+    if (input.id) {
+      const meta = el("small", input.id); meta.className = "cms-editor-id"; heading.append(meta);
+      if (browsing) {
+        const neighbors = [...list.querySelectorAll(".cms-record-link")];
+        const index = neighbors.findIndex(node => node.dataset.recordId === input.id && node.dataset.entity === entity);
+        for (const [label, delta] of [["前のレコード", -1], ["次のレコード", 1]]) {
+          const target = index < 0 ? null : neighbors[index + delta];
+          const nav = button(label, () => {
+            const current = [...list.querySelectorAll(".cms-record-link")];
+            const at = current.findIndex(node => node.dataset.recordId === input.id && node.dataset.entity === entity);
+            if (at >= 0) current[at + delta]?.click();
+          }); nav.disabled = !target; nav.title = label; heading.append(nav);
+        }
+      }
+    }
+    if (view !== "legacy" && browsing) {
+      const expand = button("拡大", () => {
+        const expanded = workspaceArea.classList.toggle("cms-editor-expanded");
+        expand.textContent = expanded ? "一覧と並べる" : "拡大"; expand.setAttribute("aria-pressed", String(expanded));
+      });
+      expand.setAttribute("aria-pressed", String(workspaceArea.classList.contains("cms-editor-expanded"))); heading.append(expand);
+    }
+    if (view !== "legacy" && browsing) {
+      const width = el("input"); width.type="range"; width.min="38"; width.max="65"; width.step="1";
+      width.className="cms-editor-width"; width.setAttribute("aria-label","編集パネルの幅"); width.title="編集パネルの幅";
+      let preferred=46;
+      try { const value=Number(sessionStorage.getItem("jigwiki:editor-width")); if(value>=38&&value<=65)preferred=value; } catch {}
+      width.value=String(preferred); workspaceArea.style.setProperty("--cms-editor-width",width.value+"%");
+      width.oninput=()=>{workspaceArea.style.setProperty("--cms-editor-width",width.value+"%");try{sessionStorage.setItem("jigwiki:editor-width",width.value)}catch{}};
+      heading.append(width);
+    }
+    if(catalog.editable && input.id && view !== "legacy" && ["song","event"].includes(entity)) {
+      const reuse=button("入力を引き継いで新規作成",()=>{
+        const keys=entity==="song"?["artists"]:["venue","format","fee"];
+        const seed=Object.fromEntries(keys.filter(key=>fields.has(key)).map(key=>[key,fields.get(key).value]));
+        edit(entity,seed,undefined,forceUnified||unifiedGoods);
+      });
+      reuse.title="共通項目だけ引き継ぎます。名称、URL、日時、固定IDは引き継ぎません。";heading.append(reuse);
+    }
     heading.append(button("閉じる", () => closeEditor()));
     if (view !== "legacy") {
       const body = el("div");
@@ -1375,7 +1471,8 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
     formArea.replaceChildren(heading, form);
     formArea.hidden = false;
     workspaceArea.classList.add("has-editor");
-    (form.querySelector("input:not(:disabled):not([hidden]), textarea:not(:disabled), select:not(:disabled):not([hidden])") || title).focus({ preventScroll: true });
+    if (!browsing && view !== "legacy") formArea.scrollIntoView({block:"nearest"});
+    ([...form.querySelectorAll("input:not(:disabled), textarea:not(:disabled), select:not(:disabled)")].find(control => !control.closest("[hidden]") && control.getClientRects().length) || title).focus({ preventScroll: true });
   }
   if (saved) await refreshDrafts(true);
   if (["legacy", "history"].includes(view)) {
@@ -1383,10 +1480,56 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
     history.open = view === "history";
     panel.append(history);
   }
+  const headerTools = el("div"); headerTools.className="cms-header-tools";
+  // A single entry point for creation, using the same validated editor and permissions.
+  if (catalog.editable && view !== "legacy") {
+    const createMenu = el("details"); createMenu.className = "cms-global-create";
+    const createSummary = el("summary", "＋ 新規作成");
+    createSummary.title = "新規作成メニュー（C）"; createSummary.setAttribute("aria-keyshortcuts", "C"); createMenu.append(createSummary);
+    const choices = el("div"); choices.className = "cms-create-options";
+    for (const [entity, spec] of Object.entries(categories)) {
+      if (entity === "offer" || !catalog.categories.includes(spec.category) || (spec.ownerCreate && !catalog.owner && catalog.contentPolicy !== "all-content-v1")) continue;
+      const label = entity === "campaign" ? "グッズ販売企画" : entity === "product" ? "単独商品" : spec.label;
+      const action = button(label + "を作成", () => { createMenu.open = false; edit(entity, {}, undefined, true); });
+      choices.append(action);
+    }
+    createMenu.append(choices);
+    if (choices.childElementCount) {
+      headerTools.append(createMenu);
+      panel.addEventListener("cms-create-shortcut", () => { if (saving) return; createMenu.open = true; choices.querySelector("button")?.focus(); });
+    }
+  }
+  if (view !== "legacy") {
+    // Keep global search shortcut compatible; the command menu has its own shortcut.
+    const launch = button("操作を検索", () => openCommands()); launch.className="cms-command-launch";
+    launch.title="操作を検索（Ctrl / ⌘ + Shift + K）"; launch.setAttribute("aria-keyshortcuts","Control+Shift+K Meta+Shift+K");
+    const dialog = el("dialog"); dialog.className="cms-command-dialog"; dialog.setAttribute("aria-label","操作を検索");
+    const bar=el("div");bar.className="cms-command-bar";bar.append(el("h3","操作を検索"),button("閉じる",()=>dialog.close()));
+    const query=el("input");query.type="search";query.placeholder="新規作成、楽曲、下書き…";query.setAttribute("aria-label","操作名を検索");
+    const results=el("div");results.className="cms-command-results";
+    const commands=[];
+    for(const [name,route] of [["ダッシュボード","#dashboard"],["下書き","#drafts"],["公開状況","#publication"],["全体検索","#search"],...mergedSections.map(s=>[s.label,"#content/"+s.entity])])commands.push({label:name+"を開く",run:()=>{if(location.hash!==route)location.hash=route;}});
+    if(catalog.editable) for(const [entity,spec] of Object.entries(categories)) {
+      if(entity==="offer" || !catalog.categories.includes(spec.category) || (spec.ownerCreate&&!catalog.owner&&catalog.contentPolicy!=="all-content-v1"))continue;
+      commands.push({label:(entity==="campaign"?"グッズ販売企画":entity==="product"?"単独商品":spec.label)+"を新規作成",run:()=>edit(entity,{},undefined,true)});
+    }
+    function drawCommands(){const needle=query.value.normalize("NFKC").trim().toLocaleLowerCase("ja");results.replaceChildren(...commands.filter(c=>c.label.normalize("NFKC").toLocaleLowerCase("ja").includes(needle)).map(c=>button(c.label,()=>{dialog.close();c.run()})));if(!results.childElementCount)results.append(el("p","一致する操作がありません。"));}
+    function openCommands(){if(saving||dialog.open||!panel.isConnected)return;query.value="";drawCommands();dialog.showModal();query.focus();}
+    query.addEventListener("input",drawCommands);
+    dialog.addEventListener("keydown",event=>{if(event.isComposing)return;if(event.key==="Escape"){event.preventDefault();event.stopPropagation();dialog.close();return;}const choices=[...results.querySelectorAll("button")];if(event.key==="ArrowDown"||event.key==="ArrowUp"){event.preventDefault();const at=choices.indexOf(document.activeElement);const next=event.key==="ArrowDown"?Math.min(choices.length-1,at+1):at<0?choices.length-1:Math.max(0,at-1);choices[next]?.focus();}else if(event.key==="Enter"&&event.target===query){event.preventDefault();choices[0]?.click();}});
+    dialog.append(bar,query,results,el("small","↑ ↓ 選択 · Enter 実行 · Esc 閉じる"));
+    headerTools.prepend(launch); panel.append(dialog);
+    panel.addEventListener("cms-command-shortcut",openCommands);
+  }
+  if (!browsing && view !== "legacy" && headerTools.childElementCount) {
+    const title=panel.querySelector("h2");
+    if(title){const heading=el("div");heading.className="cms-page-heading";title.before(heading);heading.append(title,headerTools);}
+    else panel.prepend(headerTools);
+  }
   if (view === "dashboard") {
     const shortcuts = el("div");
     shortcuts.className = "cms-dashboard-collections";
-    const intro = el("p", "編集するコレクションを選択してください。変更は下書きに保存され、確認・検証後に公開されます。");
+    const intro = el("p", "新しいデータを作成するか、下書きの続きや既存データの編集を始めましょう。保存した変更は確認後に公開できます。");
     const summary = el("div");
     summary.className = "cms-dashboard-summary";
     if (catalog.editable && saved) {
@@ -1400,7 +1543,6 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
         summary.append(link);
       }
     }
-    const heading = el("h3", "コレクション");
     for (const { entity, label, items } of mergedSections) {
       const link = el("a");
       link.href = "#content/" + entity;
@@ -1409,7 +1551,18 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
     }
     panel.insertBefore(intro, draftsArea);
     if (summary.childElementCount) panel.insertBefore(summary, draftsArea);
-    panel.append(heading, shortcuts);
+    const quality = el("section"); quality.className="cms-quality-summary";
+    const reviewLinks = mergedSections.map(s=>({entity:s.entity,label:s.label,count:s.items.filter(item=>needsReview(s.entity,item)).length})).filter(s=>s.count);
+    if (reviewLinks.length) {
+      quality.append(el("h3","確認候補"),el("p","未確認の状態や開催日時がないデータを表示します。情報の非公表・不明は誤りとは限りません。"));
+      for(const s of reviewLinks){const link=el("a",s.label+" · "+s.count+"件");link.href="#content/"+s.entity+"?quality=review";quality.append(link);}
+      panel.insertBefore(quality,draftsArea);
+    }
+    const startHeading = el("h3", "編集するデータを選ぶ");
+    panel.insertBefore(startHeading, draftsArea); panel.insertBefore(shortcuts, draftsArea);
+    if (tracksPublication) panel.append(publicationArea);
+    // An empty review list is not an action; the dedicated drafts screen keeps all controls.
+    if (saved && !saved.drafts.length) draftsArea.hidden = true;
   }
   if (!browsing) {
     if (saveAvailable) status.textContent = "";
@@ -1423,7 +1576,7 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
       const heading = el("div");
       heading.className = "cms-page-heading";
       title.before(heading);
-      heading.append(title, actions);
+      heading.append(title, actions); actions.append(headerTools);
     } else list.append(actions);
   } else list.append(actions);
   if (goodsView && catalog.editable && catalog.categories.includes("goods")) {
@@ -1442,28 +1595,35 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
   const stateLabels = {
     public: "公開", private: "非公開", draft: "非公開・下書き",
     active: "活動中", hiatus: "活動休止", retired: "引退", ended: "終了",
-    on_sale: "販売期間中", scheduled: "販売予定", sold_out: "売り切れ", unknown: "未確認",
+    on_sale: "販売期間中", scheduled: "販売予定", actual: "実施日時", sold_out: "売り切れ", unknown: "未確認",
     partial_sale:"一部販売期間中",partial_scheduled:"一部販売予定",closed:"販売終了・売り切れ",
     verified: "確認済み", unreviewed: "未確認", rejected: "対象外",
     complete: "確認完了", partial: "一部確認", unavailable: "利用不可",
     unlisted: "限定公開", cancelled: "中止", postponed: "延期",
   };
-  const translated = (value) => value ? stateLabels[value] || value : "—";
+  const translated = (value) => value ? (selectedEntity === "event" ? ({scheduled:"開催予定",actual:"実施日時",unknown:"未確認"})[value] : undefined) || stateLabels[value] || "未確認" : "—";
   const normal = (value) => String(value ?? "").normalize("NFKC").toLocaleLowerCase("ja");
   const dateFormat = new Intl.DateTimeFormat("ja-JP", { timeZone: "Asia/Tokyo", year: "numeric", month: "2-digit", day: "2-digit", hour: "2-digit", minute: "2-digit", hourCycle: "h23" });
   const formatDate = (value) => !value ? "" : /T\d{2}:\d{2}/.test(value) && Number.isFinite(Date.parse(value)) ? dateFormat.format(new Date(value)) : value;
   const columns = [
-    ["title", goodsView?"販売企画・商品名":"名称"], ["context", "関連情報"], ["date", goodsView?"販売開始":"日時"],
+    ["title", goodsView?"販売企画・商品名":"名称"], ["context", ({talent:"所属・グループ",group:"所属事務所",song:"原曲アーティスト",event:"主催・会場",anniversary:"関連人物",musicVideo:"歌唱者",karaoke:"関連人物",performance:"歌唱者",goods:"商品・関連人物"})[selectedEntity] || "関連情報"], ["date", goodsView?"販売開始":selectedEntity==="event"?"開催日時":selectedEntity==="video"?"動画公開日時":"日時"],
     ...(goodsView?[["saleMode","販売方式"]]:[]),
-    ["state", "状態"], ["visibility", "公開状態"], ["draft", "下書き"], ["id", "固定ID"],
+    ["state", ({talent:"活動状態",event:"日程区分",video:"動画の公開状態",performance:"確認状態",goods:"販売状態"})[selectedEntity] || "状態"], ["visibility", "掲載状態"], ["draft", "下書き"], ["id", "固定ID"],
   ];
   const hasValue = (key) => sections.some(({ items }) => items.some((item) => Boolean(item[key])));
   const compactViewport = matchMedia("(max-width: 767px)").matches;
   const activeColumns = new Set(compactViewport ? ["title", "visibility", ...["state"].filter(hasValue)] :
-    ["title", "visibility", "draft", "id", ...["context", "date", "state", ...(goodsView?["saleMode"]:[])].filter(hasValue)]);
+    ["title", "visibility", "draft", ...["context", "date", "state", ...(goodsView?["saleMode"]:[])].filter(hasValue)]);
   const bulkAvailable = view === "content" && !goodsView && selectedEntity !== "organization" &&
     catalog.editable && catalog.contentPolicy === "all-content-v1";
   const selectedRows = new Set();
+  const viewKey = "jigwiki:cms-view:v1:" + (options.userKey || "local") + ":" + (selectedEntity || view);
+  let viewState = {};
+  try { viewState = JSON.parse(sessionStorage.getItem(viewKey) || "{}") || {}; } catch {}
+  if (Array.isArray(viewState.columns)) {
+    activeColumns.clear(); activeColumns.add("title");
+    for (const [key] of columns) if (viewState.columns.includes(key)) activeColumns.add(key);
+  }
   const bulkBar = el("div");
   bulkBar.className = "cms-bulk-bar";
   const bulkCount = el("span");
@@ -1552,12 +1712,25 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
   }
   const modeFilter=el("select");modeFilter.setAttribute("aria-label","販売方式で絞り込む");
   modeFilter.append(new Option("販売方式：すべて",""),...[...new Set(goodsSection.items.map(item=>item.saleMode).filter(Boolean))].map(mode=>new Option(mode,mode)));
-  modeFilter.hidden=!goodsView;tools.append(category, search, visibility, state, modeFilter, draftFilter, order, columnMenu);
+  const qualityFilter=el("select");qualityFilter.setAttribute("aria-label","確認候補で絞り込む");qualityFilter.append(new Option("確認候補：すべて",""),new Option("確認候補のみ","review"));
+  qualityFilter.hidden=!["event","talent","performance","goods","karaoke"].includes(selectedEntity);
+  modeFilter.hidden=!goodsView;tools.append(category, search, visibility, state, modeFilter, draftFilter, qualityFilter, order, columnMenu);
   list.append(tools);
   const views = [];
   const collator = new Intl.Collator("ja");
-  let page = 0;
+  let page = Number.isSafeInteger(viewState.page) && viewState.page >= 0 ? viewState.page : 0;
   const pageSize = 50;
+  const filters = { search, category, visibility, state, modeFilter, draftFilter, qualityFilter, order };
+  for (const [key, control] of Object.entries(filters)) {
+    if (typeof viewState[key] !== "string") continue;
+    if (control === search || [...control.options].some(option => option.value === viewState[key])) control.value = viewState[key];
+  }
+  if(options.quality==="review"&&!qualityFilter.hidden){qualityFilter.value="review";page=0;search.value="";visibility.value="";state.value="";draftFilter.value="";modeFilter.value="";}
+  const resetFilters=button("絞り込みを解除",()=>{for(const control of Object.values(filters))control.value="";page=0;filter()});resetFilters.className="cms-reset-filters";tools.append(resetFilters);
+  function persistView() {
+    try { sessionStorage.setItem(viewKey, JSON.stringify({ ...Object.fromEntries(Object.entries(filters).map(([key, control]) => [key, control.value])), columns: [...activeColumns], page, scroll: list.scrollTop })); } catch {}
+  }
+  list.addEventListener("scroll", persistView, {passive:true});
   const paging = el("div");
   paging.className = "cms-toolbar cms-paging";
   const count = el("p");
@@ -1611,6 +1784,8 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
       if (key === "title") {
         const title = button(item.title || item.id, () => openRecord(entity, item.id));
         title.className = "cms-record-link";
+        title.dataset.recordId = item.id; title.dataset.entity = entity; title.title = item.title || item.id;
+        const name = el("span", item.title || item.id); name.className = "cms-record-name"; title.replaceChildren(name);
         if (item.image && /^https:\/\//i.test(item.image)) {
           const image = el("img");
           image.src = item.image;
@@ -1621,15 +1796,56 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
           image.onerror = () => image.remove();
           title.prepend(image);
         }
-        cell.append(title);
+        title.addEventListener("keydown",event=>{
+          if(event.isComposing||event.altKey||event.ctrlKey||event.metaKey)return;
+          if(!["ArrowUp","ArrowDown"].includes(event.key))return;
+          const rows=[...list.querySelectorAll(".cms-record-link")];const at=rows.indexOf(title);const target=rows[at+(event.key==="ArrowDown"?1:-1)];if(target){event.preventDefault();target.focus();}
+        });
+        const entry=el("div");entry.className="cms-row-title";entry.append(title);
+        if(view!=="legacy") {
+          const link=button("↗",async()=>{
+            const routeEntity=["campaign","product"].includes(entity)&&catalog.goodsEntries?.some(row=>row.entity===entity&&row.id===item.id)?"goods":entity;
+            const url=new URL("#content/"+routeEntity+"?"+new URLSearchParams({record:item.id}),location.href).href;
+            try { await navigator.clipboard.writeText(url); status.textContent="編集リンクをコピーしました。"; }
+            catch { status.textContent="編集リンクをコピーできませんでした。"; }
+          });
+          link.className="cms-row-link-copy";link.title="編集リンクをコピー";link.setAttribute("aria-label",(item.title||item.id)+"の編集リンクをコピー");entry.append(link);
+        }
+        cell.append(entry);
       } else if (key === "visibility" || key === "state") {
-        const tag = el("span", translated(item[key]));
-        tag.className = "cms-record-state";
-        tag.dataset.state = item[key] || "";
-        cell.append(tag);
+        const field = key === "visibility" ? "visibility" : entity === "talent" ? "activity" : entity === "performance" ? "verification" : null;
+        const canInline = bulkAvailable && catalog.publishable && !catalog.owner && field && !draft && bulkValues[field]?.includes(item[key]);
+        if (canInline) {
+          const select = el("select"); select.className = "cms-inline-select";
+          select.setAttribute("aria-label", (item.title || item.id) + "の" + (key === "visibility" ? "掲載状態" : entity === "talent" ? "活動状態" : "確認状態"));
+          select.append(...bulkValues[field].map(value => new Option(translated(value),value))); select.value = item[key];
+          select.disabled = saving || !saveAvailable;
+          select.onchange = async () => {
+            const value = select.value; select.value = item[key];
+            if (saving || !saveAvailable || panel.dataset.cmsDirty) { status.textContent = "編集中の変更を保存してから一覧を編集してください。"; return; }
+            saving = true; panel.dataset.cmsSaving = "true"; select.disabled = true;
+            try {
+              const result = await api("/api/cms/draft/bulk", "PUT", { entity, ids:[item.id], field, value, revision, sha:catalog.sha });
+              revision = result.revision;
+              try { await refreshDrafts(); status.textContent = "下書きを保存しました。公開サイトには反映されていません。"; }
+              catch { saveAvailable = false; status.textContent = "下書きは保存されましたが再取得に失敗しました。再読み込みしてください。"; }
+            } catch { status.textContent = "変更を保存できませんでした。既存の下書きや最新のデータを確認してください。"; }
+            finally { saving = false; delete panel.dataset.cmsSaving; filter(); }
+          };
+          cell.append(select);
+        } else {
+          const draftValue = draft && !draft.conflict && !draft.reapplyJobId && field ? draft.input?.[field] : undefined;
+          const tag = el("span", translated(draftValue || item[key]));
+          tag.className = "cms-record-state"; tag.dataset.state = draftValue || item[key] || "";
+          if (draftValue && draftValue !== item[key]) { tag.title = "公開中：" + translated(item[key]); tag.classList.add("cms-pending-state"); }
+          cell.append(tag);
+        }
       } else if (key === "draft") {
         cell.textContent = draft ? draft.conflict ? "要確認" : "下書きあり" : "—";
-      } else cell.textContent = key === "date" ? formatDate(item.date) || "—" : item[key] || "—";
+      } else {
+        cell.textContent = key === "date" ? formatDate(item.date) || "—" : item[key] || "—";
+        if (key === "context" || key === "date") cell.title = cell.textContent;
+      }
       row.append(cell);
     }
     return row;
@@ -1648,6 +1864,7 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
           (!visibility.value || item.visibility === visibility.value) &&
           (!state.value || item.state === state.value) &&
           (!modeFilter.value || item.saleMode === modeFilter.value) &&
+          (!qualityFilter.value || needsReview(entity,item)) &&
           (!draftFilter.value || Boolean(draft) === (draftFilter.value === "yes"));
       });
       if (order.value === "name" || order.value === "name-desc") matching.sort((a, b) => collator.compare(a.title || a.id, b.title || b.id) * (order.value === "name-desc" ? -1 : 1));
@@ -1677,14 +1894,18 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
       }
     }
     const max = view === "search" ? total : longest;
+    const lastPage = Math.max(0, Math.ceil(max / pageSize) - 1);
+    if (page > lastPage) { page = lastPage; filter(); return; }
     previous.disabled = page === 0;
     next.disabled = (page + 1) * pageSize >= max;
     count.textContent = total + "件 / " + (page + 1) + "ページ";
     if (bulkAvailable) updateBulk();
+    resetFilters.hidden=!Object.entries(filters).some(([key,control])=>key!=="order"&&Boolean(control.value));
+    persistView();
   }
   const reset = () => { page = 0; filter(); };
   search.addEventListener("input", reset);
-  for (const control of [category, visibility, state, modeFilter, draftFilter, order]) control.addEventListener("change", reset);
+  for (const control of [category, visibility, state, modeFilter, draftFilter, qualityFilter, order]) control.addEventListener("change", reset);
   for (const { entity, label, items } of sections) {
     const section = el("section");
     section.className = "cms-collection";
@@ -1705,7 +1926,9 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
   }
   list.append(paging);
   refreshList = filter;
+  const initialScroll = Number(viewState.scroll) || 0;
   filter();
+  list.scrollTop = initialScroll;
   if (goodsView && globalThis.Goods?.productAggregate) {
     const refreshSales=()=>{
       if(!panel.isConnected){clearInterval(timer);return;}

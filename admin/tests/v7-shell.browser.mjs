@@ -128,6 +128,20 @@ test("all roles share the shell and separate collections while viewers have read
           await page.getByLabel("公開状態で絞り込む").selectOption("public");
           assert.equal(await table.locator("tbody tr").count(), 1);
           await page.getByLabel("公開状態で絞り込む").selectOption("");
+          if (role === "owner") {
+            assert.equal(await table.locator("th[data-column=id]").count(), 0);
+            await page.locator("#page-title").click();
+            await page.keyboard.press("c");
+            assert.equal(await page.locator(".cms-global-create").evaluate(node=>node.open), true);
+            await page.locator(".cms-global-create summary").click();
+            await page.getByRole("button",{name:"操作を検索",exact:true}).click();
+            const commands=page.getByRole("dialog",{name:"操作を検索"});
+            await commands.getByRole("searchbox").fill("楽曲");
+            assert.equal(await commands.getByRole("button",{name:"楽曲を開く",exact:true}).count(),1);
+            await commands.getByRole("searchbox").press("Escape");
+            await commands.waitFor({state:"hidden"});
+            assert.equal(await commands.isVisible(),false);
+          }
           await page.locator(".cms-columns summary").click();
           await page.locator(".cms-columns").getByLabel("固定ID", { exact: true }).uncheck();
           assert.equal(await table.locator("th[data-column=id]").count(), 0);
@@ -141,6 +155,16 @@ test("all roles share the shell and separate collections while viewers have read
           assert.equal(await page.getByLabel("表示名", { exact: true }).isEnabled(), role !== "viewer");
           assert.equal(await page.getByLabel("公開サイトへの掲載状態", { exact: true }).isEnabled(), role !== "viewer");
           assert.ok(await page.locator(".cms-collection-workspace.has-editor").count());
+          if (role === "owner") {
+            await page.getByRole("button", {name:"拡大",exact:true}).click();
+            assert.ok(await page.locator(".cms-editor-expanded").count());
+            await page.getByRole("button", {name:"一覧と並べる",exact:true}).click();
+            assert.equal(await page.locator(".cms-editor-expanded").count(),0);
+            const width=page.getByLabel("編集パネルの幅",{exact:true});
+            await width.fill("55");
+            assert.equal(await page.locator(".cms-collection-workspace").evaluate(node=>node.style.getPropertyValue("--cms-editor-width")),"55%");
+            await width.fill("46");
+          }
           assert.equal(await page.getByLabel("事務所所属状態", { exact: true }).isEnabled(), role !== "viewer");
           assert.equal(await page.getByLabel("TwitchチャンネルURL", { exact: true }).isEnabled(), role !== "viewer");
           if (role === "editor") {
@@ -188,6 +212,20 @@ test("all roles share the shell and separate collections while viewers have read
             await page.getByRole("button", { name: "一括で下書きを保存", exact: true }).click();
             await page.getByText("1件の下書きを保存しました。", { exact: true }).waitFor();
             assert.equal(savedByRole.get(role).revision, 1);
+            let inlineInput;
+            await page.route("**/api/cms/draft/bulk", route => {
+              inlineInput = route.request().postDataJSON();
+              savedByRole.set(role,{revision:2,drafts:[...savedByRole.get(role).drafts,{draftId:"inline-one",input:{entity:"talent",id:"talent-002",activity:"active"}}]});
+              return route.fulfill({json:{revision:2,draftIds:["inline-one"]}});
+            });
+            await page.getByLabel("VTuberの別レコードの活動状態",{exact:true}).selectOption("active");
+            await page.getByText("下書きを保存しました。公開サイトには反映されていません。",{exact:true}).waitFor();
+            assert.deepEqual(inlineInput.ids,["talent-002"]);
+            assert.equal(inlineInput.field,"activity");
+            assert.equal(inlineInput.revision,1);
+            assert.equal(await table.locator("tbody tr").last().locator("[data-column=state]").innerText(),"活動中");
+            await page.unroute("**/api/cms/draft/bulk");
+            savedByRole.set(role,{revision:1,drafts:savedByRole.get(role).drafts.slice(0,1)});
           }
           if (role === "owner") {
             const height = await page.locator(".cms-collection-toolbar").evaluate((node) => node.getBoundingClientRect().height);
@@ -249,6 +287,7 @@ test("all roles share the shell and separate collections while viewers have read
         await page.getByRole("button",{name:"単独商品を新規登録",exact:true}).click();
         assert.equal(await page.locator(".cms-goods-product").count(),1);
         assert.equal(await page.getByRole("button",{name:"商品を追加",exact:true}).count(),0);
+        assert.equal(await page.getByRole("button",{name:"保存して次を作成",exact:true}).count(),1);
         await page.getByRole("button",{name:"閉じる",exact:true}).click();
       }
       await page.locator("#page-title").click();

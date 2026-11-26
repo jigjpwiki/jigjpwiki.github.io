@@ -21,7 +21,7 @@ const navigationCount=require('../lib/site-pages').pages.filter(p=>p.ready).leng
   const base = `http://127.0.0.1:${server.address().port}`;
   const browser = await chromium.launch({ headless: true, ...(process.env.CHROMIUM_PATH ? { executablePath: process.env.CHROMIUM_PATH } : {}) });
   try {
-    for (const width of [1440, 390, 320]) for (const javaScriptEnabled of [true, false]) {
+    for (const width of [1440, 768, 390, 320]) for (const javaScriptEnabled of [true, false]) {
       const context = await browser.newContext({ viewport: { width, height: 900 }, javaScriptEnabled });
       await context.route('**/*', route => {
         const url = new URL(route.request().url());
@@ -37,11 +37,30 @@ const navigationCount=require('../lib/site-pages').pages.filter(p=>p.ready).leng
       const nav = page.getByRole('navigation', { name: 'メインナビゲーション' });
       assert.equal(await nav.getByRole('link').count(), navigationCount);
       assert.equal(await nav.locator('[aria-current="page"]').getAttribute('href'), '/');
+      const checkShell = async (route) => {
+        const info = await page.locator('.site-header').evaluate(header => {
+          const rect=header.getBoundingClientRect(),links=[...header.querySelectorAll('.site-nav a')];
+          return {width:innerWidth,scroll:document.documentElement.scrollWidth,header:rect.height,links:links.map(a=>{const r=a.getBoundingClientRect();return {left:r.left,right:r.right,height:r.height};})};
+        });
+        assert(info.scroll<=width, route+' horizontal overflow');
+        assert(info.header<220, route+' oversized header: '+info.header);
+        assert.equal(info.links.length,navigationCount);
+        assert(info.links.every(r=>r.left>=-1&&r.right<=width+1&&r.height>=43),route+' navigation outside viewport or too small');
+        assert.equal(await page.locator('.site-nav svg[aria-hidden=true]').count(),navigationCount);
+        assert.equal(await page.locator('.site-skip[href="#main-content"]').count(),1);
+        assert.equal(await page.locator('main#main-content').count(),1);
+        if(route!=='/')assert.equal(await page.locator('.site-footer a[href="/terms/"]').count(),1);
+      };
+      await checkShell('/');
+      await page.locator('.site-skip').focus();
+      await page.keyboard.press('Enter');
+      assert.equal(await page.evaluate(()=>document.activeElement.id),'main-content');
       await nav.getByRole('link', { name: 'タレント一覧' }).focus();
       await Promise.all([page.waitForURL(base + '/talents/'), page.keyboard.press('Enter')]);
       assert.equal(await page.locator('.talent-card').count(), master.talents.length);
       assert.equal(await page.locator('nav [aria-current="page"]').getAttribute('href'), '/talents/');
       assert.equal(await page.locator('.site-nav a[href="/goods/"]').count(), 1);
+      await checkShell('/talents/');
       assert.equal(await page.locator('input[type="password"]').count(), 0);
       if (javaScriptEnabled && width === 390) await page.locator('.talent-avatar img.is-loaded').first().waitFor();
       else assert.equal(await page.locator('.talent-avatar img.is-loaded').count(), 0);
@@ -58,10 +77,11 @@ const navigationCount=require('../lib/site-pages').pages.filter(p=>p.ready).leng
       await page.waitForURL(base + '/');
       assert.equal(await page.locator('#show-videos-toggle').count(), 1);
       assert.equal(await page.locator('#videolist.swiper-wrapper').count(), 1);
-      for (const route of ['/terms/', '/privacy-policy/']) {
+      for (const route of ['/anniversaries/', '/music/', '/events/', '/goods/', '/terms/', '/privacy-policy/']) {
         await page.goto(base + route);
         assert.equal(await page.getByRole('navigation', { name: 'メインナビゲーション' }).getByRole('link').count(), navigationCount);
         assert.equal(await page.evaluate(() => document.documentElement.scrollWidth > innerWidth), false);
+        await checkShell(route);
       }
       await context.close();
       console.log(`Foundation browser passed: ${width}px, JavaScript=${javaScriptEnabled}, keyboard navigation, static list, unknown state, future links hidden, legal pages`);

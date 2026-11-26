@@ -1,7 +1,118 @@
-/* Shared navigation is static HTML, usable without JavaScript. */
-.site-nav { display: flex; justify-content: center; align-items: center; flex-wrap: wrap; gap: 4px 12px; padding: 8px 12px 0; font: 14px/1.4 sans-serif; }
-.site-nav a { display: inline-flex; align-items: center; min-height: 32px; padding: 4px 12px; box-sizing: border-box; color: #333; text-decoration: none; border-radius: 6px; }
-.site-nav a:hover { background: #eef2f8; }
-.site-nav a[aria-current] { background: #e5edf8; color: #174d92; font-weight: 700; }
-.site-nav a:focus-visible { outline: 3px solid #1a6fd4; outline-offset: 2px; }
-@media (max-width: 600px) { .site-nav { font-size: 13px; padding-top: 4px; gap: 4px; } }
+/* Public shell: one set of tokens, navigation and responsive layout.
+   Keep schedule/card algorithms and the admin stylesheet independent. */
+.site-shell {
+  --site-bg: #f5f6f8;
+  --site-surface: #fff;
+  --site-ink: #263343;
+  --site-muted: #586879;
+  --site-line: #dce3eb;
+  --site-blue: #185497;
+  --site-blue-soft: #eaf1fa;
+  --site-radius: 8px;
+  --site-content: 1200px;
+  --site-gutter: clamp(12px, 3vw, 32px);
+  font-family: Roboto, "Noto Sans JP", system-ui, sans-serif;
+  background: var(--site-bg);
+  color: var(--site-ink);
+}
+.site-skip {
+  position: absolute; top: 8px; left: 8px; z-index: 2000;
+  transform: translateY(-160%); padding: 10px 16px;
+  background: var(--site-surface); color: var(--site-blue);
+  border: 2px solid var(--site-blue); border-radius: var(--site-radius);
+}
+.site-skip:focus { transform: none; }
+header.site-header {
+  display: grid; grid-template-columns: minmax(0, 1fr) auto;
+  grid-template-areas: "brand tools" "nav nav";
+  align-items: center; gap: 6px 16px;
+  position: relative; width: 100%; max-height: none; min-height: 0;
+  box-sizing: border-box; margin: 0; padding: 10px var(--site-gutter) 8px;
+  background: var(--site-surface); border-bottom: 1px solid var(--site-line);
+  flex: 0 0 auto;
+}
+.site-header > .brand, .site-header > .header-wrapper {
+  grid-area: brand; justify-self: start; display: flex; align-items: center;
+  width: auto; height: auto; min-width: 0; margin: 0;
+}
+.site-header .logo, .site-header .brand {
+  width: 142px; max-width: 100%; margin: 0; line-height: 1;
+}
+.site-header .logo img, .site-header .brand img {
+  width: 100%; max-width: 142px; height: auto; display: block;
+}
+.site-header > .header-policy {
+  grid-area: tools; position: static; display: flex; flex-wrap: wrap;
+  flex-direction: row; align-items: center; justify-content: flex-end;
+  width: auto; margin: 0; padding: 0; gap: 4px 12px;
+  font-size: 11px; line-height: 1.5;
+}
+.site-header .header-policy a { color: var(--site-muted); }
+.site-header .content-type-toggle { margin: 0; min-height: 32px; }
+.site-nav {
+  grid-area: nav; display: grid; grid-template-columns: repeat(6, minmax(0, 1fr));
+  align-items: stretch; gap: 4px; width: 100%; max-width: 760px; min-width: 0;
+  margin: 0 auto; padding: 0; font-size: 13px; line-height: 1.4;
+}
+.site-nav a {
+  display: flex; justify-content: center; align-items: center; gap: 6px;
+  min-height: 44px; min-width: 0; padding: 6px 8px; box-sizing: border-box;
+  color: var(--site-muted); text-align: center; text-decoration: none;
+  border-radius: var(--site-radius); border: 1px solid transparent;
+  overflow-wrap: normal; word-break: normal; font-weight: 500;
+}
+.site-nav svg { width: 18px; height: 18px; flex: 0 0 18px; }
+.site-nav a:hover { background: #f0f4f8; color: var(--site-blue); }
+.site-nav a[aria-current] {
+  background: var(--site-blue-soft); color: var(--site-blue);
+  border-color: #cfdef0; font-weight: 700;
+}
+.site-shell :is(.site-nav a,.site-footer a,.site-header .brand):focus-visible {
+  outline: 3px solid #1768ac; outline-offset: 2px;
+}
+.site-shell--browse > main {
+  width: 100%; max-width: var(--site-content); box-sizing: border-box;
+  padding: clamp(20px, 3vw, 32px) var(--site-gutter) 48px;
+}
+.site-shell--browse > main > h1 {
+  font-size: clamp(24px, 3vw, 32px); line-height: 1.35;
+  letter-spacing: -.02em; margin: 0 0 16px; color: var(--site-ink);
+}
+.site-shell--browse :is(.browse-filters,.feature-filters) {
+  border-color: var(--site-line); border-radius: var(--site-radius);
+  background: var(--site-surface);
+}
+.site-shell--browse :is(.browse-filters,.feature-filters) :is(input,select,button) {
+  min-height: 44px; border-radius: 6px;
+}
+.site-shell--legal > main { margin-top: 0; }
+.site-shell:not(.site-shell--schedule) { min-height: 100vh; display: flex; flex-direction: column; }
+.site-shell--browse > main { flex: 1 0 auto; }
+.site-footer {
+  display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between;
+  gap: 12px 24px; padding: 20px var(--site-gutter);
+  border-top: 1px solid var(--site-line); background: var(--site-surface);
+  color: var(--site-muted); font-size: 12px; text-align: left; flex-shrink: 0;
+}
+.site-footer-name { color: var(--site-ink); font-weight: 700; font-size: 14px; }
+.site-footer-name span { margin-left: 10px; color: var(--site-muted); font-size: 11px; font-weight: 400; }
+.site-footer-links { display: flex; flex-wrap: wrap; gap: 4px 16px; }
+.site-footer-links a { color: var(--site-muted); margin: 0; padding: 4px 0; }
+@media (min-width: 1280px) {
+  header.site-header { grid-template-columns: minmax(142px, 1fr) minmax(0, 760px) minmax(142px, 1fr); grid-template-areas: "brand nav tools"; gap: 12px; min-height: 70px; }
+}
+@media (max-width: 760px) {
+  .site-nav { grid-template-columns: repeat(3, minmax(0, 1fr)); max-width: none; }
+  .site-nav a { font-size: 12px; padding: 5px 3px; gap: 4px; }
+  .site-nav svg { width: 16px; height: 16px; flex-basis: 16px; }
+  .site-header .logo, .site-header .brand { width: 112px; }
+  .site-header .header-policy { max-width: 100%; gap: 2px 8px; font-size: 10px; }
+  .site-header .toggle-label { font-size: 11px; }
+  .site-footer { flex-direction: column; align-items: flex-start; }
+}
+@media (max-width: 360px) {
+  header.site-header { gap: 4px 8px; padding-inline: 10px; }
+  .site-nav a { font-size: 11px; gap: 3px; }
+  .site-nav svg { width: 14px; height: 14px; flex-basis: 14px; }
+  .site-header .header-policy { max-width: 176px; }
+}

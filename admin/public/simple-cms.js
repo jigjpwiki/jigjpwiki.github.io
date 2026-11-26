@@ -868,6 +868,8 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
         from.value = value.from || "";
         to.value = value.to || "";
         for (const [label, field] of [["事務所", org], ["所属状態", status], ["所属開始日", from], ["所属終了日・卒業日", to]]) {
+          // Native selects and dates have explicit accessible names, independent of option text.
+          if (!field.cmsPicker) field.setAttribute("aria-label", label);
           row.append(pickerField(label, field));
         }
         const entry = { row, org, status, from, to };

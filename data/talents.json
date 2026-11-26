@@ -3763,7 +3763,7 @@
         }
       ],
       "agencyStatus": {
-        "value": "unknown"
+        "value": "unaffiliated"
       },
       "activityStatus": {
         "value": "ended"
@@ -3796,7 +3796,7 @@
         }
       ],
       "agencyStatus": {
-        "value": "unknown"
+        "value": "unaffiliated"
       },
       "activityStatus": {
         "value": "ended"
@@ -3823,7 +3823,7 @@
         }
       ],
       "agencyStatus": {
-        "value": "unknown"
+        "value": "unaffiliated"
       },
       "activityStatus": {
         "value": "ended"
@@ -3850,7 +3850,7 @@
         }
       ],
       "agencyStatus": {
-        "value": "unknown"
+        "value": "unaffiliated"
       },
       "activityStatus": {
         "value": "ended"
@@ -3877,7 +3877,7 @@
         }
       ],
       "agencyStatus": {
-        "value": "unknown"
+        "value": "unaffiliated"
       },
       "activityStatus": {
         "value": "ended"
@@ -3904,7 +3904,7 @@
         }
       ],
       "agencyStatus": {
-        "value": "unknown"
+        "value": "unaffiliated"
       },
       "activityStatus": {
         "value": "ended"
@@ -3931,7 +3931,7 @@
         }
       ],
       "agencyStatus": {
-        "value": "unknown"
+        "value": "unaffiliated"
       },
       "activityStatus": {
         "value": "ended"
@@ -3958,7 +3958,7 @@
         }
       ],
       "agencyStatus": {
-        "value": "unknown"
+        "value": "unaffiliated"
       },
       "activityStatus": {
         "value": "ended"
@@ -3994,7 +3994,7 @@
         }
       ],
       "agencyStatus": {
-        "value": "unknown"
+        "value": "unaffiliated"
       },
       "activityStatus": {
         "value": "ended"
@@ -4019,7 +4019,7 @@
         }
       ],
       "agencyStatus": {
-        "value": "unknown"
+        "value": "unaffiliated"
       },
       "activityStatus": {
         "value": "ended"
@@ -4050,7 +4050,7 @@
         }
       ],
       "agencyStatus": {
-        "value": "unknown"
+        "value": "unaffiliated"
       },
       "activityStatus": {
         "value": "ended"
@@ -4234,7 +4234,7 @@
         }
       ],
       "agencyStatus": {
-        "value": "unknown"
+        "value": "unaffiliated"
       },
       "accounts": [],
       "wiki": {

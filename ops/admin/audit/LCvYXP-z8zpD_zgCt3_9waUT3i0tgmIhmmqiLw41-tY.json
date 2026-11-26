@@ -1,0 +1,798 @@
+{
+  "version": 2,
+  "batchId": "LCvYXP-z8zpD_zgCt3_9waUT3i0tgmIhmmqiLw41-tY",
+  "actor": "900116782922894341339274276841604414178152",
+  "createdAt": "2026-11-26T12:41:32.595Z",
+  "baseCommit": "e5cd397bc652ddfdcb4c236b49088e31b102dfb6",
+  "reason": null,
+  "submissionId": "LCvYXP-z8zpD_zgCt3_9waUT3i0tgmIhmmqiLw41-tY",
+  "branch": "admin/change-LCvYXP-z8zpD_zgCt3_9waUT3i0tgmIhmmqiLw41-tY",
+  "operations": [
+    {
+      "operationId": "cms-talent-baf4070eea1f4ccba5fc1047",
+      "entity": "talent",
+      "recordId": "tal-000101",
+      "action": "edit",
+      "changedFields": [
+        "agencyStatus"
+      ],
+      "before": {
+        "aliases": [],
+        "affiliations": [
+          {
+            "organizationId": "org-000002",
+            "status": "former",
+            "from": "2025-05-10",
+            "to": "2025-11-30"
+          }
+        ],
+        "agencyStatus": {
+          "value": "unknown"
+        },
+        "accounts": [],
+        "wiki": {
+          "url": "https://wikiwiki.jp/jigjp/%E4%B9%99%E5%A5%B3%E3%81%8D%E3%82%85%E3%82%93"
+        },
+        "visibility": "public",
+        "displayName": "乙女きゅん",
+        "profileImage": {
+          "url": "https://cdn.wikiwiki.jp/to/w/jigjp/%E4%B9%99%E5%A5%B3%E3%81%8D%E3%82%85%E3%82%93/::ref/face_org.png.webp?rev=0b56ba946f8e8c3d89c4be0ff9091ab7&t=20250419150505"
+        },
+        "activityStatus": {
+          "value": "ended"
+        },
+        "id": "tal-000101"
+      },
+      "after": {
+        "aliases": [],
+        "affiliations": [
+          {
+            "organizationId": "org-000002",
+            "status": "former",
+            "from": "2025-05-10",
+            "to": "2025-11-30"
+          }
+        ],
+        "agencyStatus": {
+          "value": "unaffiliated"
+        },
+        "accounts": [],
+        "wiki": {
+          "url": "https://wikiwiki.jp/jigjp/%E4%B9%99%E5%A5%B3%E3%81%8D%E3%82%85%E3%82%93"
+        },
+        "visibility": "public",
+        "displayName": "乙女きゅん",
+        "profileImage": {
+          "url": "https://cdn.wikiwiki.jp/to/w/jigjp/%E4%B9%99%E5%A5%B3%E3%81%8D%E3%82%85%E3%82%93/::ref/face_org.png.webp?rev=0b56ba946f8e8c3d89c4be0ff9091ab7&t=20250419150505"
+        },
+        "activityStatus": {
+          "value": "ended"
+        },
+        "id": "tal-000101"
+      }
+    },
+    {
+      "operationId": "cms-talent-6e606bab2a124f9882425c3c",
+      "entity": "talent",
+      "recordId": "tal-000096",
+      "action": "edit",
+      "changedFields": [
+        "agencyStatus"
+      ],
+      "before": {
+        "id": "tal-000096",
+        "displayName": "ニコ・ダークウェル",
+        "aliases": [],
+        "affiliations": [
+          {
+            "organizationId": "org-000002",
+            "status": "former",
+            "from": null,
+            "to": null
+          }
+        ],
+        "agencyStatus": {
+          "value": "unknown"
+        },
+        "activityStatus": {
+          "value": "ended"
+        },
+        "accounts": [],
+        "wiki": {
+          "url": "https://wikiwiki.jp/jigjp/%E3%83%8B%E3%82%B3%E3%83%BB%E3%83%80%E3%83%BC%E3%82%AF%E3%82%A6%E3%82%A7%E3%83%AB"
+        },
+        "profileImage": null,
+        "officialProfileUrl": "https://x.com/parerdemia/status/2110249242853888337"
+      },
+      "after": {
+        "id": "tal-000096",
+        "displayName": "ニコ・ダークウェル",
+        "aliases": [],
+        "affiliations": [
+          {
+            "organizationId": "org-000002",
+            "status": "former",
+            "from": null,
+            "to": null
+          }
+        ],
+        "agencyStatus": {
+          "value": "unaffiliated"
+        },
+        "activityStatus": {
+          "value": "ended"
+        },
+        "accounts": [],
+        "wiki": {
+          "url": "https://wikiwiki.jp/jigjp/%E3%83%8B%E3%82%B3%E3%83%BB%E3%83%80%E3%83%BC%E3%82%AF%E3%82%A6%E3%82%A7%E3%83%AB"
+        },
+        "profileImage": null,
+        "officialProfileUrl": "https://x.com/parerdemia/status/2110249242853888337"
+      }
+    },
+    {
+      "operationId": "cms-talent-c757b4c54d82459cb1bc74c1",
+      "entity": "talent",
+      "recordId": "tal-000095",
+      "action": "edit",
+      "changedFields": [
+        "agencyStatus"
+      ],
+      "before": {
+        "id": "tal-000095",
+        "displayName": "斗瀬ひおり",
+        "aliases": [],
+        "affiliations": [
+          {
+            "organizationId": "org-000002",
+            "status": "former",
+            "from": null,
+            "to": null
+          }
+        ],
+        "agencyStatus": {
+          "value": "unknown"
+        },
+        "activityStatus": {
+          "value": "ended"
+        },
+        "accounts": [
+          {
+            "service": "youtube",
+            "accountId": "UC08QpBje15pNUqtG9_SivMw",
+            "url": "https://www.youtube.com/channel/UC08QpBje15pNUqtG9_SivMw"
+          }
+        ],
+        "wiki": {
+          "url": "https://wikiwiki.jp/jigjp/%E6%96%97%E7%80%AC%E3%81%B2%E3%81%8A%E3%82%8A"
+        },
+        "profileImage": null,
+        "officialProfileUrl": "https://x.com/parerdemia/status/2066438060133220843"
+      },
+      "after": {
+        "id": "tal-000095",
+        "displayName": "斗瀬ひおり",
+        "aliases": [],
+        "affiliations": [
+          {
+            "organizationId": "org-000002",
+            "status": "former",
+            "from": null,
+            "to": null
+          }
+        ],
+        "agencyStatus": {
+          "value": "unaffiliated"
+        },
+        "activityStatus": {
+          "value": "ended"
+        },
+        "accounts": [
+          {
+            "service": "youtube",
+            "accountId": "UC08QpBje15pNUqtG9_SivMw",
+            "url": "https://www.youtube.com/channel/UC08QpBje15pNUqtG9_SivMw"
+          }
+        ],
+        "wiki": {
+          "url": "https://wikiwiki.jp/jigjp/%E6%96%97%E7%80%AC%E3%81%B2%E3%81%8A%E3%82%8A"
+        },
+        "profileImage": null,
+        "officialProfileUrl": "https://x.com/parerdemia/status/2066438060133220843"
+      }
+    },
+    {
+      "operationId": "cms-talent-3f61326e2d624ff3b68e327a",
+      "entity": "talent",
+      "recordId": "tal-000094",
+      "action": "edit",
+      "changedFields": [
+        "agencyStatus"
+      ],
+      "before": {
+        "id": "tal-000094",
+        "displayName": "神童めしあ",
+        "aliases": [],
+        "affiliations": [
+          {
+            "organizationId": "org-000002",
+            "status": "former",
+            "from": null,
+            "to": null
+          }
+        ],
+        "agencyStatus": {
+          "value": "unknown"
+        },
+        "activityStatus": {
+          "value": "ended"
+        },
+        "accounts": [],
+        "wiki": {
+          "url": "https://wikiwiki.jp/jigjp/%E7%A5%9E%E7%AB%A5%E3%82%81%E3%81%97%E3%81%82"
+        },
+        "profileImage": null,
+        "officialProfileUrl": "https://x.com/parerdemia/status/2097203279608320171"
+      },
+      "after": {
+        "id": "tal-000094",
+        "displayName": "神童めしあ",
+        "aliases": [],
+        "affiliations": [
+          {
+            "organizationId": "org-000002",
+            "status": "former",
+            "from": null,
+            "to": null
+          }
+        ],
+        "agencyStatus": {
+          "value": "unaffiliated"
+        },
+        "activityStatus": {
+          "value": "ended"
+        },
+        "accounts": [],
+        "wiki": {
+          "url": "https://wikiwiki.jp/jigjp/%E7%A5%9E%E7%AB%A5%E3%82%81%E3%81%97%E3%81%82"
+        },
+        "profileImage": null,
+        "officialProfileUrl": "https://x.com/parerdemia/status/2097203279608320171"
+      }
+    },
+    {
+      "operationId": "cms-talent-c2c0f7dadc7b4d378aeb855c",
+      "entity": "talent",
+      "recordId": "tal-000093",
+      "action": "edit",
+      "changedFields": [
+        "agencyStatus"
+      ],
+      "before": {
+        "id": "tal-000093",
+        "displayName": "采多しゆあ",
+        "aliases": [],
+        "affiliations": [
+          {
+            "organizationId": "org-000002",
+            "status": "former",
+            "from": null,
+            "to": null
+          }
+        ],
+        "agencyStatus": {
+          "value": "unknown"
+        },
+        "activityStatus": {
+          "value": "ended"
+        },
+        "accounts": [
+          {
+            "service": "youtube",
+            "accountId": "UCH-y5TRNvToQpVKZ9JrD5WA",
+            "url": "https://www.youtube.com/channel/UCH-y5TRNvToQpVKZ9JrD5WA"
+          },
+          {
+            "service": "x",
+            "accountId": "cider_siyua",
+            "url": "https://x.com/cider_siyua"
+          }
+        ],
+        "wiki": {
+          "url": "https://wikiwiki.jp/jigjp/%E9%87%87%E5%A4%9A%E3%81%97%E3%82%86%E3%81%82"
+        },
+        "profileImage": null,
+        "officialProfileUrl": "https://x.com/parerdemia/status/2086648736919474488"
+      },
+      "after": {
+        "id": "tal-000093",
+        "displayName": "采多しゆあ",
+        "aliases": [],
+        "affiliations": [
+          {
+            "organizationId": "org-000002",
+            "status": "former",
+            "from": null,
+            "to": null
+          }
+        ],
+        "agencyStatus": {
+          "value": "unaffiliated"
+        },
+        "activityStatus": {
+          "value": "ended"
+        },
+        "accounts": [
+          {
+            "service": "youtube",
+            "accountId": "UCH-y5TRNvToQpVKZ9JrD5WA",
+            "url": "https://www.youtube.com/channel/UCH-y5TRNvToQpVKZ9JrD5WA"
+          },
+          {
+            "service": "x",
+            "accountId": "cider_siyua",
+            "url": "https://x.com/cider_siyua"
+          }
+        ],
+        "wiki": {
+          "url": "https://wikiwiki.jp/jigjp/%E9%87%87%E5%A4%9A%E3%81%97%E3%82%86%E3%81%82"
+        },
+        "profileImage": null,
+        "officialProfileUrl": "https://x.com/parerdemia/status/2086648736919474488"
+      }
+    },
+    {
+      "operationId": "cms-talent-613827ef264b4178bfb273ae",
+      "entity": "talent",
+      "recordId": "tal-000092",
+      "action": "edit",
+      "changedFields": [
+        "agencyStatus"
+      ],
+      "before": {
+        "id": "tal-000092",
+        "displayName": "愛染アネラ",
+        "aliases": [],
+        "affiliations": [
+          {
+            "organizationId": "org-000003",
+            "status": "former",
+            "from": null,
+            "to": "2026-06-29"
+          }
+        ],
+        "agencyStatus": {
+          "value": "unknown"
+        },
+        "activityStatus": {
+          "value": "ended"
+        },
+        "accounts": [],
+        "wiki": {
+          "url": "https://wikiwiki.jp/jigjp/Palette%20Project/%E6%84%9B%E6%9F%93%E3%82%A2%E3%83%8D%E3%83%A9"
+        },
+        "profileImage": {
+          "url": "https://cdn.wikiwiki.jp/to/w/jigjp/%E6%84%9B%E6%9F%93%E3%82%A2%E3%83%8D%E3%83%A9/::ref/face_org.png.webp?rev=5610983e2501e083aa66f0e5b06a80d9&t=20260117192005"
+        },
+        "officialProfileUrl": "https://x.com/PaletteProject_/status/2042452515547910253"
+      },
+      "after": {
+        "id": "tal-000092",
+        "displayName": "愛染アネラ",
+        "aliases": [],
+        "affiliations": [
+          {
+            "organizationId": "org-000003",
+            "status": "former",
+            "from": null,
+            "to": "2026-06-29"
+          }
+        ],
+        "agencyStatus": {
+          "value": "unaffiliated"
+        },
+        "activityStatus": {
+          "value": "ended"
+        },
+        "accounts": [],
+        "wiki": {
+          "url": "https://wikiwiki.jp/jigjp/Palette%20Project/%E6%84%9B%E6%9F%93%E3%82%A2%E3%83%8D%E3%83%A9"
+        },
+        "profileImage": {
+          "url": "https://cdn.wikiwiki.jp/to/w/jigjp/%E6%84%9B%E6%9F%93%E3%82%A2%E3%83%8D%E3%83%A9/::ref/face_org.png.webp?rev=5610983e2501e083aa66f0e5b06a80d9&t=20260117192005"
+        },
+        "officialProfileUrl": "https://x.com/PaletteProject_/status/2042452515547910253"
+      }
+    },
+    {
+      "operationId": "cms-talent-a122c575e8d54e0e9ce35a34",
+      "entity": "talent",
+      "recordId": "tal-000091",
+      "action": "edit",
+      "changedFields": [
+        "agencyStatus"
+      ],
+      "before": {
+        "id": "tal-000091",
+        "displayName": "彩音るか",
+        "aliases": [],
+        "affiliations": [
+          {
+            "organizationId": "org-000003",
+            "status": "former",
+            "from": null,
+            "to": "2026-01-22"
+          }
+        ],
+        "agencyStatus": {
+          "value": "unknown"
+        },
+        "activityStatus": {
+          "value": "ended"
+        },
+        "accounts": [],
+        "wiki": {
+          "url": "https://wikiwiki.jp/jigjp/Palette%20Project/%E5%BD%A9%E9%9F%B3%E3%82%8B%E3%81%8B"
+        },
+        "profileImage": {
+          "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRk0NFLuGUkOqJEVgwlJ_KgTD4pcBTqgwQrKVzxP0vCSg&s=10"
+        },
+        "officialProfileUrl": "https://x.com/PaletteProject_/status/2008750443074383895"
+      },
+      "after": {
+        "id": "tal-000091",
+        "displayName": "彩音るか",
+        "aliases": [],
+        "affiliations": [
+          {
+            "organizationId": "org-000003",
+            "status": "former",
+            "from": null,
+            "to": "2026-01-22"
+          }
+        ],
+        "agencyStatus": {
+          "value": "unaffiliated"
+        },
+        "activityStatus": {
+          "value": "ended"
+        },
+        "accounts": [],
+        "wiki": {
+          "url": "https://wikiwiki.jp/jigjp/Palette%20Project/%E5%BD%A9%E9%9F%B3%E3%82%8B%E3%81%8B"
+        },
+        "profileImage": {
+          "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRk0NFLuGUkOqJEVgwlJ_KgTD4pcBTqgwQrKVzxP0vCSg&s=10"
+        },
+        "officialProfileUrl": "https://x.com/PaletteProject_/status/2008750443074383895"
+      }
+    },
+    {
+      "operationId": "cms-talent-2e72bdadca05448b90209487",
+      "entity": "talent",
+      "recordId": "tal-000090",
+      "action": "edit",
+      "changedFields": [
+        "agencyStatus"
+      ],
+      "before": {
+        "id": "tal-000090",
+        "displayName": "鎖乙女がぶ",
+        "aliases": [],
+        "affiliations": [
+          {
+            "organizationId": "org-000003",
+            "status": "former",
+            "from": null,
+            "to": "2026-01-22"
+          }
+        ],
+        "agencyStatus": {
+          "value": "unknown"
+        },
+        "activityStatus": {
+          "value": "ended"
+        },
+        "accounts": [],
+        "wiki": {
+          "url": "https://wikiwiki.jp/jigjp/Palette%20Project/%E9%8E%96%E4%B9%99%E5%A5%B3%E3%81%8C%E3%81%B6"
+        },
+        "profileImage": {
+          "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6QEotikCjs1rpphNf8WSxCYQRm_AjSpnW17ZhnnTJ2w&s"
+        },
+        "officialProfileUrl": "https://x.com/PaletteProject_/status/2008750443074383895"
+      },
+      "after": {
+        "id": "tal-000090",
+        "displayName": "鎖乙女がぶ",
+        "aliases": [],
+        "affiliations": [
+          {
+            "organizationId": "org-000003",
+            "status": "former",
+            "from": null,
+            "to": "2026-01-22"
+          }
+        ],
+        "agencyStatus": {
+          "value": "unaffiliated"
+        },
+        "activityStatus": {
+          "value": "ended"
+        },
+        "accounts": [],
+        "wiki": {
+          "url": "https://wikiwiki.jp/jigjp/Palette%20Project/%E9%8E%96%E4%B9%99%E5%A5%B3%E3%81%8C%E3%81%B6"
+        },
+        "profileImage": {
+          "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6QEotikCjs1rpphNf8WSxCYQRm_AjSpnW17ZhnnTJ2w&s"
+        },
+        "officialProfileUrl": "https://x.com/PaletteProject_/status/2008750443074383895"
+      }
+    },
+    {
+      "operationId": "cms-talent-bb988e798b4f4bc58503e74e",
+      "entity": "talent",
+      "recordId": "tal-000089",
+      "action": "edit",
+      "changedFields": [
+        "agencyStatus"
+      ],
+      "before": {
+        "id": "tal-000089",
+        "displayName": "月宮あお",
+        "aliases": [],
+        "affiliations": [
+          {
+            "organizationId": "org-000003",
+            "status": "former",
+            "from": null,
+            "to": null
+          }
+        ],
+        "agencyStatus": {
+          "value": "unknown"
+        },
+        "activityStatus": {
+          "value": "ended"
+        },
+        "accounts": [],
+        "wiki": {
+          "url": "https://wikiwiki.jp/jigjp/Palette%20Project/%E6%9C%88%E5%AE%AE%E3%81%82%E3%81%8A"
+        },
+        "profileImage": {
+          "url": "https://yt3.googleusercontent.com/H7kn_WUw-fKhxl3CLbpv1-EaqnEwBZYDbw-2ojv4bfkds6bWYmZjT0j4L6kdfWji131060Od=s900-c-k-c0x00ffffff-no-rj"
+        },
+        "officialProfileUrl": "https://x.com/PaletteProject_/status/1961640022593212818"
+      },
+      "after": {
+        "id": "tal-000089",
+        "displayName": "月宮あお",
+        "aliases": [],
+        "affiliations": [
+          {
+            "organizationId": "org-000003",
+            "status": "former",
+            "from": null,
+            "to": null
+          }
+        ],
+        "agencyStatus": {
+          "value": "unaffiliated"
+        },
+        "activityStatus": {
+          "value": "ended"
+        },
+        "accounts": [],
+        "wiki": {
+          "url": "https://wikiwiki.jp/jigjp/Palette%20Project/%E6%9C%88%E5%AE%AE%E3%81%82%E3%81%8A"
+        },
+        "profileImage": {
+          "url": "https://yt3.googleusercontent.com/H7kn_WUw-fKhxl3CLbpv1-EaqnEwBZYDbw-2ojv4bfkds6bWYmZjT0j4L6kdfWji131060Od=s900-c-k-c0x00ffffff-no-rj"
+        },
+        "officialProfileUrl": "https://x.com/PaletteProject_/status/1961640022593212818"
+      }
+    },
+    {
+      "operationId": "cms-talent-e55c19fe67d94fd286a19f81",
+      "entity": "talent",
+      "recordId": "tal-000088",
+      "action": "edit",
+      "changedFields": [
+        "agencyStatus"
+      ],
+      "before": {
+        "id": "tal-000088",
+        "displayName": "六連星なる",
+        "aliases": [],
+        "affiliations": [
+          {
+            "organizationId": "org-000003",
+            "status": "former",
+            "from": null,
+            "to": null
+          }
+        ],
+        "agencyStatus": {
+          "value": "unknown"
+        },
+        "activityStatus": {
+          "value": "ended"
+        },
+        "accounts": [],
+        "wiki": {
+          "url": "https://wikiwiki.jp/jigjp/Palette%20Project/%E5%85%AD%E9%80%A3%E6%98%9F%E3%81%AA%E3%82%8B"
+        },
+        "profileImage": {
+          "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJJBwQquK2_B8VCiNo7nm3luLir4BUdALgRG5KmeUrz5DrVSLckVGBJg&s=10"
+        },
+        "officialProfileUrl": "https://x.com/PaletteProject_/status/1961640022593212818"
+      },
+      "after": {
+        "id": "tal-000088",
+        "displayName": "六連星なる",
+        "aliases": [],
+        "affiliations": [
+          {
+            "organizationId": "org-000003",
+            "status": "former",
+            "from": null,
+            "to": null
+          }
+        ],
+        "agencyStatus": {
+          "value": "unaffiliated"
+        },
+        "activityStatus": {
+          "value": "ended"
+        },
+        "accounts": [],
+        "wiki": {
+          "url": "https://wikiwiki.jp/jigjp/Palette%20Project/%E5%85%AD%E9%80%A3%E6%98%9F%E3%81%AA%E3%82%8B"
+        },
+        "profileImage": {
+          "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJJBwQquK2_B8VCiNo7nm3luLir4BUdALgRG5KmeUrz5DrVSLckVGBJg&s=10"
+        },
+        "officialProfileUrl": "https://x.com/PaletteProject_/status/1961640022593212818"
+      }
+    },
+    {
+      "operationId": "cms-talent-d4227208beb448ab91d5c438",
+      "entity": "talent",
+      "recordId": "tal-000087",
+      "action": "edit",
+      "changedFields": [
+        "agencyStatus"
+      ],
+      "before": {
+        "id": "tal-000087",
+        "displayName": "日本晴ここ",
+        "aliases": [],
+        "affiliations": [
+          {
+            "organizationId": "org-000003",
+            "status": "former",
+            "from": null,
+            "to": "2025-03-19"
+          }
+        ],
+        "agencyStatus": {
+          "value": "unknown"
+        },
+        "activityStatus": {
+          "value": "ended"
+        },
+        "accounts": [],
+        "wiki": {
+          "url": "https://wikiwiki.jp/jigjp/Palette%20Project/%E6%97%A5%E6%9C%AC%E6%99%B4%E3%81%93%E3%81%93"
+        },
+        "profileImage": {
+          "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQM_r5-lYESbghFCBIsa8-vL-YIzQcLVCs1-QFVzWHLH4wGqQ43G1ozA5Mv&s=10"
+        },
+        "officialProfileUrl": "https://x.com/PaletteProject_/status/1889147349370306783"
+      },
+      "after": {
+        "id": "tal-000087",
+        "displayName": "日本晴ここ",
+        "aliases": [],
+        "affiliations": [
+          {
+            "organizationId": "org-000003",
+            "status": "former",
+            "from": null,
+            "to": "2025-03-19"
+          }
+        ],
+        "agencyStatus": {
+          "value": "unaffiliated"
+        },
+        "activityStatus": {
+          "value": "ended"
+        },
+        "accounts": [],
+        "wiki": {
+          "url": "https://wikiwiki.jp/jigjp/Palette%20Project/%E6%97%A5%E6%9C%AC%E6%99%B4%E3%81%93%E3%81%93"
+        },
+        "profileImage": {
+          "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQM_r5-lYESbghFCBIsa8-vL-YIzQcLVCs1-QFVzWHLH4wGqQ43G1ozA5Mv&s=10"
+        },
+        "officialProfileUrl": "https://x.com/PaletteProject_/status/1889147349370306783"
+      }
+    },
+    {
+      "operationId": "cms-talent-fce2d4d31a5e41a3bc4f23f9",
+      "entity": "talent",
+      "recordId": "tal-000086",
+      "action": "edit",
+      "changedFields": [
+        "agencyStatus"
+      ],
+      "before": {
+        "id": "tal-000086",
+        "displayName": "神菜コハネ",
+        "aliases": [],
+        "affiliations": [
+          {
+            "organizationId": "org-000003",
+            "status": "former",
+            "from": null,
+            "to": "2023-01-31"
+          }
+        ],
+        "agencyStatus": {
+          "value": "unknown"
+        },
+        "activityStatus": {
+          "value": "ended"
+        },
+        "accounts": [
+          {
+            "service": "youtube",
+            "accountId": "UCbVzOA4KOmAoJuZP65gOLEQ",
+            "url": "https://www.youtube.com/channel/UCbVzOA4KOmAoJuZP65gOLEQ"
+          }
+        ],
+        "wiki": {
+          "url": "https://wikiwiki.jp/jigjp/Palette%20Project/%E7%A5%9E%E8%8F%9C%E3%82%B3%E3%83%8F%E3%83%8D"
+        },
+        "profileImage": {
+          "url": "https://yt3.googleusercontent.com/EkwTclxgy577Wrymr5EoaCOhdI-e2km0kHFEgoT7fLAG9xdbkaKMtDfOlAQ5inzbhvTTasM5=s160-c-k-c0x00ffffff-no-rj"
+        },
+        "officialProfileUrl": "https://x.com/KaminaKohane/status/1612839371039977473"
+      },
+      "after": {
+        "id": "tal-000086",
+        "displayName": "神菜コハネ",
+        "aliases": [],
+        "affiliations": [
+          {
+            "organizationId": "org-000003",
+            "status": "former",
+            "from": null,
+            "to": "2023-01-31"
+          }
+        ],
+        "agencyStatus": {
+          "value": "unaffiliated"
+        },
+        "activityStatus": {
+          "value": "ended"
+        },
+        "accounts": [
+          {
+            "service": "youtube",
+            "accountId": "UCbVzOA4KOmAoJuZP65gOLEQ",
+            "url": "https://www.youtube.com/channel/UCbVzOA4KOmAoJuZP65gOLEQ"
+          }
+        ],
+        "wiki": {
+          "url": "https://wikiwiki.jp/jigjp/Palette%20Project/%E7%A5%9E%E8%8F%9C%E3%82%B3%E3%83%8F%E3%83%8D"
+        },
+        "profileImage": {
+          "url": "https://yt3.googleusercontent.com/EkwTclxgy577Wrymr5EoaCOhdI-e2km0kHFEgoT7fLAG9xdbkaKMtDfOlAQ5inzbhvTTasM5=s160-c-k-c0x00ffffff-no-rj"
+        },
+        "officialProfileUrl": "https://x.com/KaminaKohane/status/1612839371039977473"
+      }
+    }
+  ]
+}

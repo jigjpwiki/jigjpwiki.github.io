@@ -1,6 +1,5 @@
 html, body {
   height: 100vh;
-  scrollbar-width: none; /* Firefoxでスクロールバーを非表示にする */
 
 }
 
@@ -485,10 +484,6 @@ header {
 
 /* ────────scroll bar──────── */
 
-/* Chrome / Edge / Safari対応*/
-html::-webkit-scrollbar {
-  display: none;
-}
 
 /* ────────version───────── */
 .version {

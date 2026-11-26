@@ -68,10 +68,17 @@ const fixture = [
       const layout = await page.evaluate(() => ({ overflow: document.documentElement.scrollWidth > innerWidth,
         widths: [...document.querySelectorAll('.today-block .thumbnail-wrapper')].map(n => [n.getBoundingClientRect().width, n.closest('.live-wrapper').getBoundingClientRect().width]),
         bottom: document.querySelector('.today-block').getBoundingClientRect().bottom,
-        footer: document.querySelector('footer').getBoundingClientRect().top }));
+        footer: document.querySelector('footer').getBoundingClientRect().top,
+        heading: (()=>{const r=document.querySelector('.today-block .date-heading').getBoundingClientRect();return {top:r.top,bottom:r.bottom};})(),
+        arrows: [...document.querySelectorAll('.swipe-button')].map(n=>{const r=n.getBoundingClientRect();return {top:r.top,bottom:r.bottom};}) }));
       assert.equal(layout.overflow, false);
       assert.ok(layout.widths.every(([thumbnail, card]) => thumbnail <= card));
       assert.ok(layout.bottom <= layout.footer + 1);
+      for(const arrow of layout.arrows){
+        const above=arrow.top-layout.heading.top,below=layout.heading.bottom-arrow.bottom;
+        assert(above>=5&&below>=5&&Math.abs(above-below)<=1,'date buttons must be vertically centered with breathing room');
+        assert(arrow.bottom-arrow.top>=43,'date button target is too small');
+      }
       if (width >= 1177) {
         const positions = await page.locator('.today-block .live-wrapper:not([hidden])').evaluateAll(nodes => nodes.map(n => {
           const r = n.getBoundingClientRect(); return { x: r.x, y: r.y, width: r.width };

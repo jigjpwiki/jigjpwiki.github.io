@@ -1,4 +1,7 @@
 /* Public design foundation. Keep content and platform identity distinct from navigation. */
+/* Reserve the same classic scrollbar space on all routes, including the schedule. */
+html.site-root { scrollbar-gutter: stable; scrollbar-width: auto; }
+html.site-root::-webkit-scrollbar { display: revert; }
 .site-shell {
   --site-bg: #f5f5f5;
   --site-surface: #fff;
@@ -25,6 +28,7 @@ header.site-header {
   display: grid; grid-template-columns: minmax(0, 1fr) auto;
   grid-template-areas: "brand tools" "nav nav";
   align-items: center; gap: 0 16px;
+  grid-template-rows: minmax(44px, auto) auto;
   position: relative; width: 100%; max-height: none; min-height: 0;
   box-sizing: border-box; margin: 0; padding: 8px var(--site-gutter) 0;
   background: var(--site-surface); border-bottom: 1px solid var(--site-line);
@@ -48,8 +52,10 @@ header.site-header {
 .site-header .content-type-toggle input:checked ~ .toggle-track { background: #171717; }
 .site-header .content-type-toggle input:checked ~ .toggle-track::after { transform: translateX(14px); }
 .site-nav {
-  grid-area: nav; display: flex; justify-content: center; align-items: stretch;
-  gap: clamp(4px, 1vw, 16px); width: 100%; min-width: 0;
+  grid-area: nav; display: grid; justify-content: center; align-items: stretch;
+  /* Fixed tracks keep labels and icons in place even when the active label is bold. */
+  grid-template-columns: 164px 132px 84px 76px 100px 84px;
+  gap: 8px; width: 100%; min-width: 0;
   margin: 0 auto; padding: 0; font-size: 14px; line-height: 1.4;
 }
 .site-nav a {
@@ -99,13 +105,15 @@ header.site-header {
 .schedule-footer-links a { color: #595959; font-size: 11px; text-decoration: underline; text-underline-offset: 2px; }
 @media (min-width: 1100px) {
   header.site-header {
-    grid-template-columns: auto minmax(0, 1fr) auto;
+    grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+    grid-template-rows: auto;
     grid-template-areas: "brand nav tools"; gap: 16px; min-height: 64px; padding-block: 0;
   }
   .site-nav { width: max-content; max-width: 100%; }
   .site-nav a { min-height: 63px; }
 }
 @media (max-width: 900px) {
+  .site-nav { grid-template-columns: repeat(6,minmax(0,1fr)); max-width: 700px; }
   .site-nav .nav-full { display: none; }
   .site-nav .nav-short { display: inline; }
 }

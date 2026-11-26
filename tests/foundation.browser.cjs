@@ -37,13 +37,21 @@ const navigationCount=require('../lib/site-pages').pages.filter(p=>p.ready).leng
       const nav = page.getByRole('navigation', { name: 'メインナビゲーション' });
       assert.equal(await nav.getByRole('link').count(), navigationCount);
       assert.equal(await nav.locator('[aria-current="page"]').getAttribute('href'), '/');
+      let baselineShell;
       const checkShell = async (route) => {
         const info = await page.locator('.site-header').evaluate(header => {
-          const rect=header.getBoundingClientRect(),links=[...header.querySelectorAll('.site-nav a')];
-          return {width:innerWidth,scroll:document.documentElement.scrollWidth,header:rect.height,links:links.map(a=>{const r=a.getBoundingClientRect(),s=getComputedStyle(a),label=[...a.querySelectorAll("span")].find(n=>getComputedStyle(n).display!=="none");return {left:r.left,right:r.right,height:r.height,color:s.color,background:s.backgroundColor,border:s.borderBottomColor,whiteSpace:getComputedStyle(label).whiteSpace,labelFits:label.getBoundingClientRect().width+a.querySelector("svg").getBoundingClientRect().width<=r.width};})};
+          const rect=header.getBoundingClientRect(),links=[...header.querySelectorAll('.site-nav a')],logo=header.querySelector('.logo img,.brand img').getBoundingClientRect(),nav=header.querySelector('.site-nav').getBoundingClientRect();
+          return {width:innerWidth,scroll:document.documentElement.scrollWidth,header:rect.height,center:(rect.left+rect.right)/2,navCenter:(nav.left+nav.right)/2,logoX:logo.left,logoY:logo.top-rect.top,links:links.map(a=>{const r=a.getBoundingClientRect(),s=getComputedStyle(a),label=[...a.querySelectorAll("span")].find(n=>getComputedStyle(n).display!=="none");return {left:r.left,right:r.right,height:r.height,color:s.color,background:s.backgroundColor,border:s.borderBottomColor,whiteSpace:getComputedStyle(label).whiteSpace,labelFits:label.getBoundingClientRect().width+a.querySelector("svg").getBoundingClientRect().width<=r.width};})};
         });
         assert(info.scroll<=width, route+' horizontal overflow');
         assert(info.header<=(width>=1100?80:160), route+' oversized header: '+info.header);
+        assert(Math.abs(info.navCenter-info.center)<=1,route+' navigation is not centered');
+        if (!baselineShell) baselineShell=info;
+        else {
+          assert(Math.abs(info.logoX-baselineShell.logoX)<=1 && Math.abs(info.logoY-baselineShell.logoY)<=1,route+' logo shifts across routes');
+          assert(Math.abs(info.header-baselineShell.header)<=1,route+' header height shifts across routes');
+          assert(info.links.every((r,i)=>Math.abs(r.left-baselineShell.links[i].left)<=1&&Math.abs(r.right-baselineShell.links[i].right)<=1),route+' navigation tracks shift across routes');
+        }
         assert.equal(info.links.length,navigationCount);
         assert(info.links.every(r=>r.left>=-1&&r.right<=width+1&&r.height>=43),route+' navigation outside viewport or too small');
         assert.equal(await page.locator('.site-nav svg[aria-hidden=true]').count(),navigationCount);

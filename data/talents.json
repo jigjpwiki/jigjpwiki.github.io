@@ -4144,6 +4144,84 @@
       "visibility": "public",
       "id": "tal-000098",
       "officialProfileUrl": "https://www.youtube.com/@hengerime"
+    },
+    {
+      "aliases": [],
+      "affiliations": [
+        {
+          "organizationId": "org-000005",
+          "status": "current",
+          "from": "2024-12-18",
+          "to": null
+        }
+      ],
+      "agencyStatus": {
+        "value": "affiliated"
+      },
+      "accounts": [
+        {
+          "service": "youtube",
+          "accountId": null,
+          "url": "https://www.youtube.com/@YachiyoAsa"
+        },
+        {
+          "service": "x",
+          "accountId": "YachiyoAsa",
+          "url": "https://x.com/YachiyoAsa"
+        }
+      ],
+      "wiki": {
+        "url": "https://wikiwiki.jp/jigjp/%E5%85%AB%E5%8D%83%E4%BB%A3%E3%81%82%E3%81%95"
+      },
+      "officialProfileUrl": "https://www.youtube.com/@YachiyoAsa",
+      "visibility": "public",
+      "displayName": "八千代あさ",
+      "profileImage": {
+        "url": "https://yt3.googleusercontent.com/kImbwyf9Nhrun_waSWFsAjZnzbQx21lnHqG1tgLaEVKO8hoP8bWt4zyZbXvtSgBuuE39A77THA=s160-c-k-c0x00ffffff-no-rj"
+      },
+      "activityStatus": {
+        "value": "unknown"
+      },
+      "id": "tal-000099"
+    },
+    {
+      "aliases": [],
+      "affiliations": [
+        {
+          "organizationId": "org-000005",
+          "status": "current",
+          "from": "2024-12-28",
+          "to": null
+        }
+      ],
+      "agencyStatus": {
+        "value": "affiliated"
+      },
+      "accounts": [
+        {
+          "service": "youtube",
+          "accountId": null,
+          "url": "https://www.youtube.com/@YachiyoYoru"
+        },
+        {
+          "service": "x",
+          "accountId": "YachiyoYoru",
+          "url": "https://x.com/YachiyoYoru"
+        }
+      ],
+      "wiki": {
+        "url": "https://wikiwiki.jp/jigjp/%E5%85%AB%E5%8D%83%E4%BB%A3%E3%82%88%E3%82%8B"
+      },
+      "officialProfileUrl": "https://www.youtube.com/@YachiyoYoru",
+      "visibility": "public",
+      "displayName": "八千代よる",
+      "profileImage": {
+        "url": "https://cdn.wikiwiki.jp/to/w/jigjp/%E5%85%AB%E5%8D%83%E4%BB%A3%E3%82%88%E3%82%8B/::ref/face_org.png.webp?rev=279b0ac900a90e027fd375ceeedd327a&t=20250318230152"
+      },
+      "activityStatus": {
+        "value": "unknown"
+      },
+      "id": "tal-000100"
     }
   ]
 }

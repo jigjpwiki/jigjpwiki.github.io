@@ -87,3 +87,47 @@ test("campaign batch editing can add a product and resale without replacing exis
   assert.equal(offers.length, original.length + 2);
   assert.deepEqual(offers.filter(({ id }) => original.some((offer) => offer.id === id)), original);
 });
+
+
+test("unified campaign preserves explicit modes, images, distinct periods and historical offers across draft roundtrip", async () => {
+  const all={role:"editor",directPublish:true,contentPolicy:"all-content-v1",scope:{}};
+  const id="campaign-000001", original=draftDetails(snapshot,all,"campaign",id);
+  const input={...original,entity:"campaign",id,sha:snapshot.sha,campaignImage:"https://example.com/campaign-image.png"};
+  const first=input.products[0].sales[0];
+  first.saleMode="preorder";first.startsAt="2026-11-15T21:00";first.endsAt="2026-11-25T23:59";
+  input.products[0].sales.push({key:"resale",url:"https://example.com/goods-resale",price:"4100",saleMode:"first_come",startsAt:"2027-01-01T10:00",endsAt:"",status:"sold_out",periodNote:"在庫終了確認"});
+  const previous=structuredClone(fixture.goods);
+  const saved=writeDraft([],undefined,await prepareDraft(snapshot,all,input));
+  const restored=draftInput({operations:draftGroups(saved.operations).get(saved.id)});
+  assert.equal(restored.campaignImage,input.campaignImage);
+  assert.equal(restored.products[0].sales[0].saleMode,"preorder");
+  assert.equal(restored.products[0].sales[1].saleMode,"first_come");
+  assert.equal(restored.products[0].sales[1].status,"sold_out");
+  const replay=writeDraft(saved.operations,saved.id,await prepareDraft(snapshot,all,restored));
+  const {plan}=await publicationPlan(snapshot,job(replay.operations),all);
+  const goods=plan.files.goods;
+  assert.equal(goods.campaigns.find(c=>c.id===id).image,input.campaignImage);
+  assert.equal(goods.offers.find(o=>o.id===first.id).saleMode,"preorder");
+  assert.ok(goods.offers.some(o=>o.productId===input.products[0].id&&o.url==="https://example.com/goods-resale"&&o.status==="sold_out"));
+  for(const old of previous.offers.filter(o=>o.id!==first.id))assert.deepEqual(goods.offers.find(o=>o.id===old.id),old);
+  assert.deepEqual(fixture.goods,previous);
+  const invalid=structuredClone(input);invalid.products[0].sales[0].endsAt="";
+  await assert.rejects(prepareDraft(snapshot,all,invalid));
+  await assert.rejects(prepareDraft(snapshot,{...all,role:"viewer"},input),/cms_scope_denied/);
+});
+test("single merchandise registration produces only a product and its sale, without a synthetic campaign",async()=>{
+  const all={role:"editor",directPublish:true,contentPolicy:"all-content-v1",scope:{}};
+  const input={entity:"product",sha:snapshot.sha,title:"単独販売テスト",talent:"tal-000010",talentIds:["tal-000010"],groupIds:[],image:"https://example.com/item.png",identityUrl:"https://example.com/item",sales:[{key:"cms-sale-single",url:"https://example.com/item",price:"500",saleMode:"first_come",startsAt:"2027-01-01T10:00",endsAt:"",status:"unknown"}]};
+  const ops=await prepareDraft(snapshot,all,input);
+  assert.deepEqual(ops.map(o=>o.entity),["product","offer"]);
+  const {plan}=await publicationPlan(snapshot,job(ops),all);
+  assert.equal(plan.files.goods.campaigns.length,fixture.goods.campaigns.length);
+  const item=plan.files.goods.products.find(p=>p.title===input.title),sale=plan.files.goods.offers.find(o=>o.productId===item.id);
+  assert.equal(sale.campaignId,null);assert.equal(sale.saleMode,"first_come");
+  const {scopedGoodsEntries}=await import("../src/cms-scope.mjs");
+  const rows=scopedGoodsEntries({...fixture,...plan.files},all);
+  assert.equal(rows.filter(r=>r.id===item.id&&r.entity==="product").length,1);
+  assert.ok(rows.some(r=>r.entity==="campaign"&&r.productCount>1));
+  assert.ok(!rows.some(r=>r.id==="product-000001"&&r.entity==="product"));
+  assert.deepEqual(scopedGoodsEntries({...fixture,...plan.files},{role:"viewer",scope:{organizations:[],categories:[]}}),[]);
+});

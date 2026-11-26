@@ -645,6 +645,7 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
     if (!formArea.contains(document.activeElement)) restoreFocus = document.activeElement;
     const spec = categories[entity];
     const unifiedGoods = view !== "legacy" && ["product","campaign"].includes(entity) &&
+      !(entity === "product" && !input.id && (input.campaignTitle || input.campaignId)) &&
       (goodsView || view === "drafts" || view === "search" || input.sales?.some(s=>s.saleMode) || input.products?.some(p=>p.sales?.some(s=>s.saleMode)));
     let formSha = input.sha || catalog.sha;
     const form = el("form");
@@ -1037,6 +1038,7 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
         for(const c of [mode,start,end]){c.addEventListener("input",update);c.addEventListener("change",update);}
         update();grid.append(hint);host.append(grid);
         return {read:()=>({saleMode:mode.value,startsAt:start.value,endsAt:end.value,url:url.value.trim()}),
+          set:v=>{mode.value=v.saleMode||"";start.value=v.startsAt||"";end.value=v.endsAt||"";url.value=v.url||"";update();},
           enabled:v=>{for(const c of [mode,start,end,url])c.disabled=!v||!catalog.editable;}};
       }
       function subjects(host,initial,label){
@@ -1082,8 +1084,8 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
           const read=subjects(sub,subjectOf(value),"商品");
           const check=toggle(content,"この商品だけ関連人物・グループを変更",Boolean((value.id||value.key)&&!same(subjectOf(value),defaultSubject)),sub,v=>{for(const c of sub.querySelectorAll("input,button"))c.disabled=!v||!catalog.editable;});
           customSubject=()=>check.checked?read():readSubjects();
-          const identityBox=el("div"),identity=field(identityBox,"個別の公式商品情報URL","url",value.identityUrl||"",true);
-          const own=toggle(content,"この商品だけ公式商品情報URLを変更",Boolean((value.id||value.key)&&value.identityUrl&&value.identityUrl!==defaultIdentity),identityBox,v=>identity.disabled=!v||!catalog.editable);
+          const identityBox=el("div"),identity=field(identityBox,"個別の公式商品情報URL","url",value.identityUrl||"",!value.id||!!value.identityUrl);
+          const own=toggle(content,"この商品だけ公式商品情報URLを変更",Boolean((value.id||value.key)&&(value.identityUrl||"")!==defaultIdentity),identityBox,v=>identity.disabled=!v||!catalog.editable);
           customIdentity=()=>own.checked?identity.value.trim():official.value.trim()||commonSale.read().url;
         } else customIdentity=()=>fields.get("identityUrl").value.trim()||commonSale.read().url;
         const sales=el("div");sales.className="stack";const saleRows=[];
@@ -1093,17 +1095,22 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
           const price=field(block,"価格（"+(sale.currency||"JPY")+"・任意）","number",sale.price||"");
           price.min="0";price.step=sale.currency&&sale.currency!=="JPY"?"any":"1";
           const custom=el("div"),individual=saleCondition(custom,conditions(sale),!sale.id);
+          let seeded=Boolean(sale.url);
           let own=()=>idx>0;
           if(idx>0){block.append(custom);individual.enabled(true);}
           else if(!single){
-            const c=toggle(block,"共通と異なる販売条件",Boolean((sale.id||sale.key||sale.url)&&!same(conditions(sale),defaultCondition)),custom,v=>individual.enabled(v));
+            const c=toggle(block,"共通と異なる販売条件",Boolean((sale.id||sale.key||sale.url)&&!same(conditions(sale),defaultCondition)),custom,v=>{
+              if(v&&!seeded){individual.set(commonSale.read());seeded=true;}
+              individual.enabled(v);
+            });
             own=()=>c.checked;
           } else individual.enabled(false);
           const manual=el("select");
           manual.append(new Option("自動判定","unknown"),new Option("売り切れ（確認済み）","sold_out"),new Option("販売終了（確認済み）","ended"));
           if(["on_sale","scheduled"].includes(sale.status))manual.append(new Option("既存の状態を維持（"+(sale.status==="on_sale"?"販売中":"販売予定")+"）",sale.status));
           manual.value=sale.status||"unknown";block.append(pickerField("販売状態",manual));
-          const note=el("textarea");note.value=sale.periodNote||"";note.maxLength=240;block.append(pickerField("販売条件・補足（任意）",note));
+          const note=el("textarea");note.value=sale.periodNote||"";note.maxLength=240;
+          const extra=el("details");extra.append(el("summary","販売条件・補足（任意）"),pickerField("販売条件・補足",note));block.append(extra);
           const key=sale.key||(single?"cms-sale-":"")+crypto.randomUUID().replaceAll("-","").slice(0,12);
           const record={read:()=>({id:sale.id,key,...(own()?individual.read():commonSale.read()),price:price.value,currency:sale.currency||"JPY",status:manual.value,periodNote:note.value})};
           if(!sale.id&&idx)block.append(button("追加販売を取り除く",()=>{saleRows.splice(saleRows.indexOf(record),1);block.remove();}));
@@ -1121,8 +1128,11 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
       else root.append(rows);
       form.append(root);
       return {read:()=>{
-        if(campaign)return {products:items.map(i=>i.read())};
-        const {id,key,...data}=items[0].read();return data;
+        const products=items.map(i=>i.read());
+        if(!products.length)throw new Error("goods_product_required");
+        if(products.some(p=>!p.talentIds.length&&!p.groupIds.length))throw new Error("goods_subject_required");
+        if(campaign)return {products};
+        const {id,key,...data}=products[0];return data;
       }};
     }
     const goodsEditor=unifiedGoods?mountGoodsEditor():null;
@@ -1330,6 +1340,8 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
           ? "別の更新がありました。入力を控えてから画面を開き直してください。"
           : error.message === "cms_identity_anchor" ? "固定済みの収集アカウントはこの画面から変更できません。"
           : error.message === "affiliation_history_must_be_retained" ? "過去の所属を削除することはできません。"
+          : error.message === "goods_subject_required" ? "関連VTuberまたはグループを1件以上選択してください。"
+          : error.message === "goods_product_required" ? "商品を1件以上登録してください。"
           : "保存できませんでした。入力内容と関連レコードの整合性を確認してください。";
       } finally {
         saving = false;

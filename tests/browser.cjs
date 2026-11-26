@@ -8,8 +8,9 @@ const root = path.resolve(__dirname, '../_site');
 const now = new Date('2026-11-08T11:00:00Z');
 const stamp = '2026-11-08T11:00:00Z';
 const title = '<img src=x onerror="window.__injected=1"> Fixture';
+const partners=Array.from({length:6},(_,i)=>({id:'tal-'+String(i+10).padStart(6,'0'),name:'参加者'+i,image:'/assets/thumbnail/placeholder.svg'}));
 const fixture = [
-  { name: '配信者', title, date: stamp, status: 'live', type: 'stream', url: 'https://www.youtube.com/watch?v=live', thumbnail: '/assets/thumbnail/placeholder.svg' },
+  { name: '配信者', title, date: stamp, status: 'live', type: 'stream', url: 'https://www.youtube.com/watch?v=live', thumbnail: '/assets/thumbnail/placeholder.svg',collaborators:partners },
   { name: '動画', title: '通常動画', date: stamp, status: 'archive', type: 'video', url: 'https://www.youtube.com/watch?v=video', thumbnail: '/assets/thumbnail/placeholder.svg' }
 ];
 (async () => {
@@ -56,6 +57,16 @@ const fixture = [
       assert.equal(await page.locator('.today-block .formatted-time').first().innerText(), '20:00');
       assert.equal(await page.locator('.live-block:has(a[href="https://www.youtube.com/watch?v=live"]) .live-title').innerText(), title);
       assert.equal(await page.evaluate(() => window.__injected), undefined);
+      const stack=page.locator('.avatar-stack');
+      assert.equal(await stack.count(),1);
+      assert.equal(await stack.locator('.avatar-stack-item[data-talent-id]').count(),4);
+      assert.equal(await stack.locator('.avatar-stack-more').innerText(),'+2');
+      assert.equal(await stack.locator('a,button,[title]').count(),0);
+      assert.match(await stack.getAttribute('aria-label'),/参加者5/);
+      assert.match(await page.locator('.live-block:has(.avatar-stack) .stream-destination').getAttribute('aria-label'),/参加者5/);
+      const stackLayout=await stack.evaluate(n=>{const s=n.getBoundingClientRect(),t=n.closest('.description').querySelector('.live-title').getBoundingClientRect(),d=n.closest('.description').getBoundingClientRect(),r=[...n.children].map(x=>x.getBoundingClientRect());return {above:s.bottom<=t.top+1,inside:s.left>=d.left-1&&s.right<=d.right+1,overlap:r[1].left<r[0].right};});
+      assert(stackLayout.above&&stackLayout.inside&&stackLayout.overlap,'collaboration avatars overlap each other, not the title or card boundary');
+      assert.deepEqual(await page.evaluate(people=>{const el=AvatarStack.create(people.slice(0,5));return [el.querySelectorAll('[data-talent-id]').length,el.querySelectorAll('.avatar-stack-more').length,AvatarStack.create([])===null]},partners),[5,0,true]);
       assert.equal(await page.locator('a[href="https://www.twitch.tv/videos/123"]').count(), 1);
       assert.equal(await page.locator('#data-message, #retry-data, .data-status').count(), 0);
       if (width >= 1177) await page.addStyleTag({ content: '.today-block { overflow-y: scroll; scrollbar-gutter: stable; }' });

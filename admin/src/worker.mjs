@@ -9,7 +9,7 @@ import { installationReadToken, publishingEnabled } from "./github-app.mjs";
 import { prepareDraft, draftDetails, draftInput, draftGroups, writeDraft, draftConflict, prepareBulkDrafts } from "./cms-draft.mjs";
 import { cmsPermissions } from "./cms-scope.mjs";
 import { createCmsReader } from "./cms-read.mjs";
-import { normalizeScope, scopedCatalog, normalizeMemberPolicy, contentCategories, hasAllContent } from "./cms-scope.mjs";
+import { normalizeScope, scopedCatalog, scopedGoodsEntries, normalizeMemberPolicy, contentCategories, hasAllContent } from "./cms-scope.mjs";
 import { googleAuth, googleEnabled, emailKey } from "./google.mjs";
 import {
   Failure,
@@ -305,8 +305,9 @@ export class Admin {
         const access = cmsPermissions(models, { ...member, scope: {
           ...member.scope, categories: ["talents"],
         } });
+        const sections = scopedCatalog(models, member);
         return json({
-          sha: snapshot.sha, sections: scopedCatalog(models, member), contentPolicy: member.contentPolicy || "scoped-v1", owner: member.owner === true,
+          sha: snapshot.sha, sections, goodsEntries: scopedGoodsEntries(models, member, sections), contentPolicy: member.contentPolicy || "scoped-v1", owner: member.owner === true,
           songs: contentCategories(member).includes("music")
             ? models.music.songs.filter((song) => hasAllContent(member) || song.visibility === "public")
               .map(({ id, title, originalArtists, aliases, readings, visibility }) => ({

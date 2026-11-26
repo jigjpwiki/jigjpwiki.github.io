@@ -322,6 +322,11 @@ export async function prepareDraft(snapshot, member, input, lookup) {
     if (typeof input[key] !== "string") fail(400, "cms_invalid_input");
     value[key] = input[key].trim() || null;
   }
+  if (entity === "campaign" && input.campaignImage !== undefined) {
+    if (typeof input.campaignImage !== "string") fail(400, "cms_invalid_input");
+    if (input.campaignImage.trim()) value.image = input.campaignImage.trim();
+    else if (Object.hasOwn(value, "image")) delete value.image;
+  }
   if (entity === "event") {
     // Optional field; omitted input from older clients must not erase it.
     if (input.thumbnailUrl !== undefined) {
@@ -395,12 +400,13 @@ export async function prepareDraft(snapshot, member, input, lookup) {
         fail(400, "cms_invalid_input");
       keys.add(key);
       const productKey = "cms-item-" + key;
-      const productValue = structuredClone(old || { talentIds: [product.talent], groupIds: [], visibility: "public" });
+      const productValue = structuredClone(old || { talentIds: product.talent ? [product.talent] : [], groupIds: [], visibility: value.visibility || "public" });
+      applyRelations("product", productValue, product, member);
       for (const field of fields.product) {
         if (typeof product[field] !== "string") fail(400, "cms_invalid_input");
         productValue[field] = product[field].trim() || null;
       }
-      const sales = saleOperations(snapshot, access, product, { campaignId, productKey });
+      const sales = saleOperations(snapshot, access, product, { campaignId, productKey, visibility: productValue.visibility === "draft" || value.visibility === "draft" ? "draft" : "public" });
       if (!old && !sales.length) fail(400, "cms_invalid_input");
       operations.push({ key: productKey, entity: "product", ...(old ? { id: old.id } : {}), value: productValue }, ...sales);
     }
@@ -467,12 +473,19 @@ function saleOperations(snapshot, access, input, context) {
         fail(400, "cms_invalid_input");
       period[field] = sale[field] ? new Date(time).toISOString() : null;
     }
+    if (sale.saleMode !== undefined && !["", "preorder", "first_come"].includes(sale.saleMode)) fail(400, "cms_invalid_input");
+    if (sale.status !== undefined && !["unknown", "on_sale", "scheduled", "sold_out", "ended"].includes(sale.status)) fail(400, "cms_invalid_input");
+    if (sale.periodNote !== undefined && typeof sale.periodNote !== "string") fail(400, "cms_invalid_input");
     operations.push({
       key, entity: "offer", ...(old ? { id: old.id } : {}),
       value: {
         ...(old || { productId: id || "@" + (context?.productKey || "cms-product"), campaignId, startsAt: null, endsAt: null,
-          periodNote: null, status: "unknown", visibility: "public" }),
-        ...period, url: sale.url.trim(),
+          periodNote: null, status: "unknown", visibility: context?.visibility || "public" }),
+        ...period,
+        ...(sale.saleMode !== undefined && sale.saleMode !== "" ? { saleMode: sale.saleMode } : {}),
+        ...(sale.status !== undefined ? { status: sale.status } : {}),
+        ...(sale.periodNote !== undefined ? { periodNote: sale.periodNote || null } : {}),
+        url: sale.url.trim(),
         price: { amount: sale.price ? Number(sale.price) : null, currency: sale.price ? old?.price.currency || "JPY" : null },
       },
     });
@@ -491,6 +504,7 @@ function saleFields(offer, key, campaign) {
     id: offer.id, key, campaignId: campaign ? "" : offer.campaignId || "",
     startsAt: localInstant(offer.startsAt), endsAt: localInstant(offer.endsAt),
     url: offer.url, currency: offer.price.currency ?? "JPY", price: String(offer.price.amount ?? ""),
+    saleMode: offer.saleMode || "", status: offer.status, periodNote: offer.periodNote || "",
   };
 }
 
@@ -545,7 +559,7 @@ function songFields(record) {
 
 function productFields(record, sales, key) {
   return {
-    id: record.id, key, talent: record.talentIds[0],
+    id: record.id, key, talent: record.talentIds[0], talentIds: record.talentIds, groupIds: record.groupIds,
     ...Object.fromEntries(fields.product.map((field) => [field, record[field] ?? ""])),
     sales,
   };
@@ -585,6 +599,7 @@ export function draftDetails(snapshot, member, entity, id) {
   if (entity === "anniversary") Object.assign(details, anniversaryFields(record));
   if (entity === "event") Object.assign(details, eventFields(record));
   if (entity === "campaign") {
+    details.campaignImage = record.image || "";
     const offers = snapshot.models.goods.offers.filter((offer) => offer.campaignId === id);
     details.products = snapshot.models.goods.products.filter((product) =>
       offers.some((offer) => offer.productId === product.id)).map((product) =>
@@ -630,6 +645,7 @@ export function draftInput(workspace) {
     ...(op.entity === "anniversary" ? anniversaryFields(op.value) : {}),
     ...(op.entity === "event" ? eventFields(op.value) : {}),
     ...(op.entity === "campaign" ? {
+      campaignImage: op.value.image || "",
       products: workspace.operations.filter((row) => row.entity === "product").map((product) => {
         const key = product.key.replace(/-[a-f0-9]{24}$/, "");
         const sales = offers.filter((offer) => offer.value.productId === (product.id || "@" + product.key))

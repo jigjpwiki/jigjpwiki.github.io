@@ -1,0 +1,75 @@
+{
+  "version": 2,
+  "batchId": "MAjHlkBHmRB1l1638bjMIoubv9McEDWDZGpRJF7Bhxk",
+  "actor": "900116782922894341339274276841604414178152",
+  "createdAt": "2026-11-26T12:01:51.712Z",
+  "baseCommit": "fc10b79b6b3a347e49a537c9484301e8f063a736",
+  "reason": null,
+  "submissionId": "MAjHlkBHmRB1l1638bjMIoubv9McEDWDZGpRJF7Bhxk",
+  "branch": "admin/change-MAjHlkBHmRB1l1638bjMIoubv9McEDWDZGpRJF7Bhxk",
+  "operations": [
+    {
+      "operationId": "cms-talent-f6fe92bc74c94fe4a80384fc",
+      "entity": "talent",
+      "recordId": "tal-000101",
+      "action": "edit",
+      "changedFields": [
+        "agencyStatus"
+      ],
+      "before": {
+        "aliases": [],
+        "affiliations": [
+          {
+            "organizationId": "org-000002",
+            "status": "former",
+            "from": "2025-05-10",
+            "to": "2025-11-30"
+          }
+        ],
+        "agencyStatus": {
+          "value": "unaffiliated"
+        },
+        "accounts": [],
+        "wiki": {
+          "url": "https://wikiwiki.jp/jigjp/%E4%B9%99%E5%A5%B3%E3%81%8D%E3%82%85%E3%82%93"
+        },
+        "visibility": "public",
+        "displayName": "乙女きゅん",
+        "profileImage": {
+          "url": "https://cdn.wikiwiki.jp/to/w/jigjp/%E4%B9%99%E5%A5%B3%E3%81%8D%E3%82%85%E3%82%93/::ref/face_org.png.webp?rev=0b56ba946f8e8c3d89c4be0ff9091ab7&t=20250419150505"
+        },
+        "activityStatus": {
+          "value": "ended"
+        },
+        "id": "tal-000101"
+      },
+      "after": {
+        "aliases": [],
+        "affiliations": [
+          {
+            "organizationId": "org-000002",
+            "status": "former",
+            "from": "2025-05-10",
+            "to": "2025-11-30"
+          }
+        ],
+        "agencyStatus": {
+          "value": "unknown"
+        },
+        "accounts": [],
+        "wiki": {
+          "url": "https://wikiwiki.jp/jigjp/%E4%B9%99%E5%A5%B3%E3%81%8D%E3%82%85%E3%82%93"
+        },
+        "visibility": "public",
+        "displayName": "乙女きゅん",
+        "profileImage": {
+          "url": "https://cdn.wikiwiki.jp/to/w/jigjp/%E4%B9%99%E5%A5%B3%E3%81%8D%E3%82%85%E3%82%93/::ref/face_org.png.webp?rev=0b56ba946f8e8c3d89c4be0ff9091ab7&t=20250419150505"
+        },
+        "activityStatus": {
+          "value": "ended"
+        },
+        "id": "tal-000101"
+      }
+    }
+  ]
+}

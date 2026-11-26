@@ -1,5 +1,6 @@
 import { mountCmsHistory } from "./cms-history.js";
 import { renderDraftConflicts } from "./cms-conflicts.js";
+import { youtubeId } from "./content-utils.js";
 
 const labels = {
   name: ["名称", "text"], status: ["販売状態", "select"], periodNote: ["販売条件・補足", "textarea"],
@@ -705,6 +706,17 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
       host.append(field);
       fields.set(key, control);
     }
+    function connectNewSong(select, details, controls) {
+      if(view==="legacy"||!catalog.editable||!select.cmsPicker)return;
+      const picker=select.cmsPicker, search=picker.querySelector("input[type=search]");
+      const create=button("候補にない楽曲を登録",()=>{
+        if(select.value)return;
+        if(!controls.newSongTitle.value)controls.newSongTitle.value=search.value.trim();
+        details.open=true;controls.newSongTitle.dispatchEvent(new Event("input",{bubbles:true}));controls.newSongTitle.focus();
+      });create.className="cms-relation-create";create.dataset.pickerNavigation="";
+      const sync=()=>{create.hidden=Boolean(select.value)||!search.value.trim()||Boolean(picker.querySelector("[role=option]"));};
+      search.addEventListener("input",sync);select.addEventListener("change",sync);create.hidden=true;picker.append(create);
+    }
     function newSongFields(values) {
       const details = el("details");
       details.append(el("summary", "新しい楽曲を同時に登録"));
@@ -1163,9 +1175,22 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
       add("songId", "既存の楽曲", select);
       const {details, controls} = newSongFields(input);
       for (const [key, control] of Object.entries(controls)) fields.set(key, control);
-      form.append(details);
+      form.append(details);connectNewSong(select,details,controls);
     }
     if (entity === "event") multiRelation("performers", "出演者", catalog.people, input.performers);
+    if(view!=="legacy"&&catalog.editable&&catalog.contentPolicy==="all-content-v1"&&["video","musicVideo","karaoke"].includes(entity)&&fields.has("videoUrl")) {
+      const source=fields.get("videoUrl");const box=el("div");box.className="cms-video-lookup";
+      const result=el("div");result.setAttribute("role","status");const find=button("YouTubeの情報を確認",async()=>{
+        let id;try{id=youtubeId(source.value);}catch(error){result.textContent=error.message;return;}
+        find.disabled=true;result.textContent="動画情報を取得中…";
+        try{const data=await api("/api/cms/video-preview?"+new URLSearchParams({id}));if(!form.isConnected)return;let current;try{current=youtubeId(source.value)}catch{}if(current!==id){result.textContent="URLが変更されました。もう一度確認してください。";return;}
+          result.replaceChildren(el("strong",data.title),el("small",data.publishedAt?new Date(data.publishedAt).toLocaleString("ja-JP",{timeZone:"Asia/Tokyo"}):"公開日時は未確認"),el("small","取得元："+(data.source==="catalog"?"登録済みデータ":data.source==="collected"?"収集済みデータ":"YouTube API")));
+          const canonical="https://www.youtube.com/watch?v="+id;
+          if(source.value!==canonical&&!source.readOnly){const use=button("正式な動画URLを使用",()=>{source.value=canonical;source.dispatchEvent(new Event("input",{bubbles:true}));use.remove()});use.dataset.pickerNavigation="";result.append(use);}
+          if(entity==="musicVideo"&&fields.has("rawSongTitle")&&!fields.get("rawSongTitle").value){const use=button("動画タイトルを入力候補に使用",()=>{const target=fields.get("rawSongTitle");if(target.value&&!confirm("入力済みの曲名を動画タイトルで置き換えますか？"))return;target.value=data.title;target.dispatchEvent(new Event("input",{bubbles:true}));use.remove()});use.dataset.pickerNavigation="";result.append(use);}
+        }catch(error){result.textContent="動画情報を取得できませんでした。公開動画のURL・収集状況を確認してください。";}finally{find.disabled=false;}
+      });find.dataset.pickerNavigation="";box.append(find,result);source.addEventListener("input",()=>result.replaceChildren());source.closest(".cms-field")?.append(box);
+    }
 
     const tracks = [];
     const complete = el("input");
@@ -1203,6 +1228,7 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
           return { field, control };
         });
         const work = newSongFields(track);
+        connectNewSong(song,work.details,work.controls);
         row.append(label, ...(song.cmsPicker ? [] : [songSearch]), songLabel, work.details, ...times.map(({ field }) => field), button("上へ", () => move(-1)), button("下へ", () => move(1)));
         if (!track.id) row.append(button("追加行を取り除く", () => {
           tracks.splice(tracks.findIndex((item) => item.row === row), 1);
@@ -1468,7 +1494,7 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
         if(entity==="event")seed.performers=[...(relations.get("performers")||[])];
         if(!confirm("入力内容を複製します。公式識別URL・開催日時・固定IDは引き継ぎません。新規データとして内容を確認してください。"))return;
         edit(entity,seed,undefined,forceUnified||unifiedGoods);
-      });heading.append(duplicate);
+      });if(catalog.contentPolicy==="all-content-v1")heading.append(duplicate);
     }
     heading.append(button("閉じる", () => closeEditor()));
     if (view !== "legacy") {
@@ -1688,13 +1714,15 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
   };
   bulkBar.append(bulkCount, bulkField, bulkValue, bulkSave, clearBulk);
   // Paste values into one supported field using the existing lossless bulk API.
+  let pasteMenu;
   if(bulkAvailable&&catalog.publishable&&!catalog.owner){
     const paste=el("details");paste.className="cms-bulk-paste";paste.append(el("summary","表から貼り付け"));
     const area=el("textarea");area.setAttribute("aria-label","貼り付けデータ");area.placeholder="固定ID\\t値（1行に1件、最大12件）";area.rows=4;
-    const info=el("small","上の変更項目を選択し、固定IDと値の2列を貼り付けてください。");const preview=el("div");let plan=[];
-    function validate(){plan=[];preview.replaceChildren();const field=bulkField.value,allowed=bulkValues[field];const rows=area.value.trim().split(/\\r?\\n/).filter(Boolean);const ids=new Set();const items=sections.flatMap(s=>s.items);const used=new Set((saved?.drafts||[]).filter(d=>d.input?.entity===selectedEntity).map(d=>d.input.id));if(!rows.length||rows.length>12){preview.textContent="1〜12行を入力してください。";return false;}for(const line of rows){const parts=line.split("\\t").map(s=>s.trim());const [id,label]=parts;const value=allowed.find(v=>v===label||translated(v)===label);if(parts.length!==2||!items.some(i=>i.id===id)||used.has(id)||ids.has(id)||!value){preview.textContent="無効な行、重複ID、既存下書き、または未対応の値があります："+line;plan=[];return false;}ids.add(id);plan.push({id,value});}for(const row of plan)preview.append(el("div",row.id+" → "+translated(row.value)));return true;}
-    const check=button("内容を確認",validate);const apply=button("貼り付けを下書きに保存",async()=>{if(saving||!saveAvailable||panel.dataset.cmsDirty||!validate())return;const field=bulkField.value;if(!confirm(plan.length+"件の変更を下書きに保存します。複数の値がある場合は順次保存します。"))return;const groups=new Map();for(const row of plan){if(!groups.has(row.value))groups.set(row.value,[]);groups.get(row.value).push(row.id);}saving=true;panel.dataset.cmsSaving="true";let done=0;try{for(const [value,ids] of groups){const result=await api("/api/cms/draft/bulk","PUT",{entity:selectedEntity,ids,field,value,revision,sha:catalog.sha});revision=result.revision;done+=result.draftIds.length;}area.value="";preview.textContent="保存済み";status.textContent=done+"件の下書きを保存しました。";}catch{status.textContent=done+"件保存済み。残りは保存できませんでした。下書きと入力を確認してください。";}finally{try{await refreshDrafts()}catch{saveAvailable=false;}saving=false;delete panel.dataset.cmsSaving;filter();}});
-    paste.append(info,area,check,preview,apply);bulkBar.append(paste);
+    const pasteField=el("select");pasteField.setAttribute("aria-label","貼り付ける項目");pasteField.append(...[...bulkField.options].map(o=>new Option(o.text,o.value)));
+    const info=el("small","変更項目を選択し、固定IDと値の2列を貼り付けてください。");const preview=el("div");let plan=[];
+    function validate(){plan=[];preview.replaceChildren();const field=pasteField.value,allowed=bulkValues[field];const rows=area.value.trim().split(/\\r?\\n/).filter(Boolean);const ids=new Set();const items=sections.flatMap(s=>s.items);const used=new Set((saved?.drafts||[]).filter(d=>d.input?.entity===selectedEntity).map(d=>d.input.id));if(!rows.length||rows.length>12){preview.textContent="1〜12行を入力してください。";return false;}for(const line of rows){const parts=line.split("\\t").map(s=>s.trim());const [id,label]=parts;const value=allowed.find(v=>v===label||translated(v)===label);if(parts.length!==2||!items.some(i=>i.id===id)||used.has(id)||ids.has(id)||!value){preview.textContent="無効な行、重複ID、既存下書き、または未対応の値があります："+line;plan=[];return false;}ids.add(id);plan.push({id,value});}for(const row of plan)preview.append(el("div",row.id+" → "+translated(row.value)));return true;}
+    const check=button("内容を確認",validate);const apply=button("貼り付けを下書きに保存",async()=>{if(saving||!saveAvailable||panel.dataset.cmsDirty||!validate())return;const field=pasteField.value;if(!confirm(plan.length+"件の変更を下書きに保存します。複数の値がある場合は順次保存します。"))return;const groups=new Map();for(const row of plan){if(!groups.has(row.value))groups.set(row.value,[]);groups.get(row.value).push(row.id);}saving=true;panel.dataset.cmsSaving="true";let done=0;try{for(const [value,ids] of groups){const result=await api("/api/cms/draft/bulk","PUT",{entity:selectedEntity,ids,field,value,revision,sha:catalog.sha});revision=result.revision;done+=result.draftIds.length;}area.value="";preview.textContent="保存済み";status.textContent=done+"件の下書きを保存しました。";}catch{status.textContent=done+"件保存済み。残りは保存できませんでした。下書きと入力を確認してください。";}finally{try{await refreshDrafts()}catch{saveAvailable=false;}saving=false;delete panel.dataset.cmsSaving;filter();}});
+    paste.append(pasteField,info,area,check,preview,apply);pasteMenu=paste;
   }
   if (bulkAvailable) {
     bulkBar.hidden = true;
@@ -1745,6 +1773,7 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
   qualityFilter.hidden=!["event","talent","performance","goods","karaoke","song"].includes(selectedEntity);
   modeFilter.hidden=!goodsView;tools.append(category, search, visibility, state, modeFilter, draftFilter, qualityFilter, order, columnMenu);
   list.append(tools);
+  if(pasteMenu)list.append(pasteMenu);
   const views = [];
   const collator = new Intl.Collator("ja");
   let page = Number.isSafeInteger(viewState.page) && viewState.page >= 0 ? viewState.page : 0;

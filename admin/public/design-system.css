@@ -853,3 +853,12 @@ button:hover:not(:disabled), .button:hover { border-color: var(--accent); }
 .cms-table .cms-inline-select:hover,.cms-table .cms-inline-select:focus-visible{border-color:var(--control-line);background:var(--surface)}
 .cms-table td[data-column=quality]{font-size:12px;color:var(--muted);overflow-wrap:anywhere}
 @media(max-width:767px){.cms-presets-body{left:0;right:auto}.cms-chooser-option small{max-width:100px;overflow:hidden;text-overflow:ellipsis}}
+
+.cms-video-lookup{display:flex;flex-direction:column;gap:6px;margin-top:6px}
+.cms-video-lookup>button,.cms-relation-create{align-self:flex-start;font-size:12px;min-height:30px}
+.cms-video-lookup [role=status]:not(:empty){display:flex;flex-direction:column;gap:4px;padding:8px;border:1px solid var(--line);border-radius:6px;background:var(--soft)}
+.cms-video-lookup [role=status] small{color:var(--muted)}
+.cms-bulk-paste{margin-bottom:8px;font-size:12px}
+.cms-bulk-paste>summary{cursor:pointer;color:var(--muted)}
+.cms-bulk-paste[open]{display:grid;gap:6px}
+.cms-bulk-paste[open]>button{justify-self:start}

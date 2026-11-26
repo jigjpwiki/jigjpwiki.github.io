@@ -1,6 +1,6 @@
 import { publicationReview } from "./cms-review.mjs";
 import { recoverAppliedGroup } from "./cms-recover-draft.mjs";
-import { youtubeVideoLookup } from "./cms-music.mjs";
+import { youtubeVideoLookup, videoForCms, collectedVideo } from "./cms-music.mjs";
 import { readCmsHistory, prepareAuditReversal, assertReversalRoundTrip } from "./cms-history.mjs";
 import { inspectDraftConflicts } from "./cms-conflicts.mjs";
 import { publicationPlan } from "./cms-publish.mjs";
@@ -276,7 +276,7 @@ export class Admin {
         }
       }
     }
-    const cmsRoutes = ["/api/cms/catalog", "/api/cms/detail", "/api/cms/draft", "/api/cms/draft/bulk", "/api/cms/draft/conflicts", "/api/cms/history", "/api/cms/publication/reapply", "/api/cms/publication/preview"];
+    const cmsRoutes = ["/api/cms/catalog", "/api/cms/video-preview", "/api/cms/detail", "/api/cms/draft", "/api/cms/draft/bulk", "/api/cms/draft/conflicts", "/api/cms/history", "/api/cms/publication/reapply", "/api/cms/publication/preview"];
     if (cmsRoutes.includes(url.pathname)) {
       await this.atomic(async () => {
         const key = "cms-rate:" + sid;
@@ -324,6 +324,16 @@ export class Admin {
               visibility: row.visibility ?? "public",
             })),
         });
+      }
+      if(url.pathname==="/api/cms/video-preview"&&request.method==="GET") {
+        if(member.role!=="editor"||!hasAllContent(member)||!contentCategories(member).includes("music"))fail(403,"cms_scope_denied");
+        const id=url.searchParams.get("id");if(!/^[\\w-]{11}$/.test(id||""))fail(400,"cms_invalid_video_url");
+        const registered=models.media.videos.find(row=>row.youtubeId===id);
+        const collected=collectedVideo(models,id);
+        const video=registered||await videoForCms(models,id,this.cmsVideoLookup);
+        if(!cmsPermissions(models,member).canRead("video",video))fail(403,"cms_scope_denied");
+        await requireCurrentGrant();
+        return json({title:video.title,publishedAt:video.publishedAt||null,source:registered?"catalog":collected?"collected":"youtube"});
       }
       if (url.pathname === "/api/cms/detail" && request.method === "GET")
         return json({ sha: snapshot.sha, fields: draftDetails(snapshot, member, url.searchParams.get("entity"), url.searchParams.get("id")) });

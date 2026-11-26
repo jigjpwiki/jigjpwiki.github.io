@@ -134,6 +134,12 @@ test("all roles share the shell and separate collections while viewers have read
             await page.keyboard.press("c");
             assert.equal(await page.locator(".cms-global-create").evaluate(node=>node.open), true);
             await page.locator(".cms-global-create summary").click();
+            await page.getByRole("button",{name:"操作を検索",exact:true}).click();
+            const commands=page.getByRole("dialog",{name:"操作を検索"});
+            await commands.getByRole("searchbox").fill("楽曲");
+            assert.equal(await commands.getByRole("button",{name:"楽曲を開く",exact:true}).count(),1);
+            await commands.getByRole("searchbox").press("Escape");
+            assert.equal(await commands.isVisible(),false);
           }
           await page.locator(".cms-columns summary").click();
           await page.locator(".cms-columns").getByLabel("固定ID", { exact: true }).uncheck();
@@ -153,6 +159,10 @@ test("all roles share the shell and separate collections while viewers have read
             assert.ok(await page.locator(".cms-editor-expanded").count());
             await page.getByRole("button", {name:"一覧と並べる",exact:true}).click();
             assert.equal(await page.locator(".cms-editor-expanded").count(),0);
+            const width=page.getByLabel("編集パネルの幅",{exact:true});
+            await width.fill("55");
+            assert.equal(await page.locator(".cms-collection-workspace").evaluate(node=>node.style.getPropertyValue("--cms-editor-width")),"55%");
+            await width.fill("46");
           }
           assert.equal(await page.getByLabel("事務所所属状態", { exact: true }).isEnabled(), role !== "viewer");
           assert.equal(await page.getByLabel("TwitchチャンネルURL", { exact: true }).isEnabled(), role !== "viewer");

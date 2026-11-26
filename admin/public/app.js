@@ -1846,7 +1846,7 @@ screen = function () {
       panel.append(review);
     }
     $("#view").replaceChildren(panel);
-    import("./simple-cms.js").then(({ mountSimpleCms }) => mountSimpleCms(panel, status, api, { entity: contentEntity, recordId, view: cmsPages[route] || "content", userKey: String(me.id || me.login || me.role || "local") }))
+    import("./simple-cms.js").then(({ mountSimpleCms }) => mountSimpleCms(panel, status, api, { entity: contentEntity, recordId, quality: new URLSearchParams(route.split("?")[1] || "").get("quality"), view: cmsPages[route] || "content", userKey: String(me.id || me.login || me.role || "local") }))
       .catch(() => {
         status.textContent = "コンテンツを取得できませんでした。";
         const retry = node("button", "再試行");
@@ -1957,6 +1957,7 @@ window.addEventListener("keydown", (e) => {
   )
     return;
   if (e.key.toLowerCase() === "k" && me?.simpleCms) {
+    if(e.shiftKey){const panel=document.querySelector("#view > .cms-content");if(panel?.querySelector(".cms-command-launch")){e.preventDefault();panel.dispatchEvent(new Event("cms-command-shortcut"));}return;}
     e.preventDefault();
     if (location.hash === "#search") document.querySelector("#view input[type=search]")?.focus();
     else location.hash = "#search";

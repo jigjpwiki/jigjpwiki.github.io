@@ -64,6 +64,7 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
     ? catalog.sections.filter(({ entity }) => entity === selectedEntity)
     : view === "legacy" ? catalog.sections : mergedSections;
   const browsing = ["legacy", "content", "search"].includes(view);
+  const needsReview = (entity,item) => entity === "event" ? (!item.date || item.state === "unknown") : ["talent","performance","goods","karaoke"].includes(entity) && ["unknown","unreviewed","partial","unavailable"].includes(item.state);
   let pickerSequence = 0;
   const relationEntries = (rows) => (rows || []).map((row) => ({
     ...row, name: row.name || row.title || row.id,
@@ -1272,6 +1273,13 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
     saveStatus.className = "cms-save-status";
     footer.append(saveStatus, submit);
     let afterSave = "stay";
+    let carry;
+    const carryKeys = entity === "song" ? ["artists"] : entity === "event" ? ["venue","format","fee"] : [];
+    if (catalog.editable && !input.id && view !== "legacy" && carryKeys.length) {
+      carry=el("input"); carry.type="checkbox"; carry.checked=Boolean(input.carryNext);
+      const label=el("label", entity==="song"?"次の登録にも原曲アーティストを引き継ぐ":"次の登録にも会場・開催形式・料金を引き継ぐ");
+      label.className="cms-carry-next"; label.prepend(carry); footer.append(label);
+    }
     const requestSave = mode => {
       if (saving || !saveAvailable || !catalog.editable || !form.reportValidity()) return;
       afterSave = mode; form.requestSubmit(submit);
@@ -1312,7 +1320,7 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
     }, true);
     let inputRevision = 0;
     const markDirty = (event) => {
-      if (!catalog.editable || event?.target?.matches("input[type=search]")) return;
+      if (!catalog.editable || event?.target === carry || event?.target?.matches("input[type=search]")) return;
       event?.target?.removeAttribute("aria-invalid");
       event?.target?.closest("label")?.querySelector(".cms-field-error")?.remove();
       inputRevision++;
@@ -1397,7 +1405,10 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
       }
       if (completed && inputRevision === submittedInputRevision && panel.isConnected) {
         if (saveMode === "close") closeEditor(true);
-        if (saveMode === "next") edit(entity, {}, undefined, forceUnified || unifiedGoods);
+        if (saveMode === "next") {
+          const seed = carry?.checked ? { ...Object.fromEntries(carryKeys.filter(key=>fields.has(key)).map(key=>[key,fields.get(key).value])), carryNext:true } : {};
+          edit(entity, seed, undefined, forceUnified || unifiedGoods);
+        }
       }
     };
     delete panel.dataset.cmsDirty;
@@ -1433,6 +1444,15 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
       });
       expand.setAttribute("aria-pressed", String(workspaceArea.classList.contains("cms-editor-expanded"))); heading.append(expand);
     }
+    if (view !== "legacy" && browsing) {
+      const width = el("input"); width.type="range"; width.min="38"; width.max="65"; width.step="1";
+      width.className="cms-editor-width"; width.setAttribute("aria-label","編集パネルの幅"); width.title="編集パネルの幅";
+      let preferred=46;
+      try { const value=Number(sessionStorage.getItem("jigwiki:editor-width")); if(value>=38&&value<=65)preferred=value; } catch {}
+      width.value=String(preferred); workspaceArea.style.setProperty("--cms-editor-width",width.value+"%");
+      width.oninput=()=>{workspaceArea.style.setProperty("--cms-editor-width",width.value+"%");try{sessionStorage.setItem("jigwiki:editor-width",width.value)}catch{}};
+      heading.append(width);
+    }
     heading.append(button("閉じる", () => closeEditor()));
     if (view !== "legacy") {
       const body = el("div");
@@ -1443,6 +1463,7 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
     formArea.replaceChildren(heading, form);
     formArea.hidden = false;
     workspaceArea.classList.add("has-editor");
+    if (!browsing && view !== "legacy") formArea.scrollIntoView({block:"nearest"});
     ([...form.querySelectorAll("input:not(:disabled), textarea:not(:disabled), select:not(:disabled)")].find(control => !control.closest("[hidden]") && control.getClientRects().length) || title).focus({ preventScroll: true });
   }
   if (saved) await refreshDrafts(true);
@@ -1469,6 +1490,28 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
       panel.addEventListener("cms-create-shortcut", () => { if (saving) return; createMenu.open = true; choices.querySelector("button")?.focus(); });
     }
   }
+  if (view !== "legacy") {
+    // Keep global search shortcut compatible; the command menu has its own shortcut.
+    const launch = button("操作を検索", () => openCommands()); launch.className="cms-command-launch";
+    launch.title="操作を検索（Ctrl / ⌘ + Shift + K）"; launch.setAttribute("aria-keyshortcuts","Control+Shift+K Meta+Shift+K");
+    const dialog = el("dialog"); dialog.className="cms-command-dialog"; dialog.setAttribute("aria-label","操作を検索");
+    const bar=el("div");bar.className="cms-command-bar";bar.append(el("h3","操作を検索"),button("閉じる",()=>dialog.close()));
+    const query=el("input");query.type="search";query.placeholder="新規作成、楽曲、下書き…";query.setAttribute("aria-label","操作名を検索");
+    const results=el("div");results.className="cms-command-results";
+    const commands=[];
+    for(const [name,route] of [["ダッシュボード","#dashboard"],["下書き","#drafts"],["公開状況","#publication"],["全体検索","#search"],...mergedSections.map(s=>[s.label,"#content/"+s.entity])])commands.push({label:name+"を開く",run:()=>{if(location.hash!==route)location.hash=route;}});
+    if(catalog.editable) for(const [entity,spec] of Object.entries(categories)) {
+      if(entity==="offer" || !catalog.categories.includes(spec.category) || (spec.ownerCreate&&!catalog.owner&&catalog.contentPolicy!=="all-content-v1"))continue;
+      commands.push({label:(entity==="campaign"?"グッズ販売企画":entity==="product"?"単独商品":spec.label)+"を新規作成",run:()=>edit(entity,{},undefined,true)});
+    }
+    function drawCommands(){const needle=query.value.normalize("NFKC").trim().toLocaleLowerCase("ja");results.replaceChildren(...commands.filter(c=>c.label.normalize("NFKC").toLocaleLowerCase("ja").includes(needle)).map(c=>button(c.label,()=>{dialog.close();c.run()})));if(!results.childElementCount)results.append(el("p","一致する操作がありません。"));}
+    function openCommands(){if(saving||dialog.open||!panel.isConnected)return;query.value="";drawCommands();dialog.showModal();query.focus();}
+    query.addEventListener("input",drawCommands);
+    dialog.addEventListener("keydown",event=>{if(event.isComposing)return;const choices=[...results.querySelectorAll("button")];if(event.key==="ArrowDown"||event.key==="ArrowUp"){event.preventDefault();const at=choices.indexOf(document.activeElement);const next=event.key==="ArrowDown"?Math.min(choices.length-1,at+1):at<0?choices.length-1:Math.max(0,at-1);choices[next]?.focus();}else if(event.key==="Enter"&&event.target===query){event.preventDefault();choices[0]?.click();}});
+    dialog.append(bar,query,results,el("small","↑ ↓ 選択 · Enter 実行 · Esc 閉じる"));
+    panel.insertBefore(launch,panel.children[1]||null); panel.append(dialog);
+    panel.addEventListener("cms-command-shortcut",openCommands);
+  }
   if (view === "dashboard") {
     const shortcuts = el("div");
     shortcuts.className = "cms-dashboard-collections";
@@ -1494,6 +1537,13 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
     }
     panel.insertBefore(intro, draftsArea);
     if (summary.childElementCount) panel.insertBefore(summary, draftsArea);
+    const quality = el("section"); quality.className="cms-quality-summary";
+    const reviewLinks = mergedSections.map(s=>({entity:s.entity,label:s.label,count:s.items.filter(item=>needsReview(s.entity,item)).length})).filter(s=>s.count);
+    if (reviewLinks.length) {
+      quality.append(el("h3","確認候補"),el("p","未確認の状態や開催日時がないデータを表示します。情報の非公表・不明は誤りとは限りません。"));
+      for(const s of reviewLinks){const link=el("a",s.label+" · "+s.count+"件");link.href="#content/"+s.entity+"?quality=review";quality.append(link);}
+      panel.insertBefore(quality,draftsArea);
+    }
     const startHeading = el("h3", "編集するデータを選ぶ");
     panel.insertBefore(startHeading, draftsArea); panel.insertBefore(shortcuts, draftsArea);
     if (tracksPublication) panel.append(publicationArea);
@@ -1648,17 +1698,21 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
   }
   const modeFilter=el("select");modeFilter.setAttribute("aria-label","販売方式で絞り込む");
   modeFilter.append(new Option("販売方式：すべて",""),...[...new Set(goodsSection.items.map(item=>item.saleMode).filter(Boolean))].map(mode=>new Option(mode,mode)));
-  modeFilter.hidden=!goodsView;tools.append(category, search, visibility, state, modeFilter, draftFilter, order, columnMenu);
+  const qualityFilter=el("select");qualityFilter.setAttribute("aria-label","確認候補で絞り込む");qualityFilter.append(new Option("確認候補：すべて",""),new Option("確認候補のみ","review"));
+  qualityFilter.hidden=!["event","talent","performance","goods","karaoke"].includes(selectedEntity);
+  modeFilter.hidden=!goodsView;tools.append(category, search, visibility, state, modeFilter, draftFilter, qualityFilter, order, columnMenu);
   list.append(tools);
   const views = [];
   const collator = new Intl.Collator("ja");
   let page = Number.isSafeInteger(viewState.page) && viewState.page >= 0 ? viewState.page : 0;
   const pageSize = 50;
-  const filters = { search, category, visibility, state, modeFilter, draftFilter, order };
+  const filters = { search, category, visibility, state, modeFilter, draftFilter, qualityFilter, order };
   for (const [key, control] of Object.entries(filters)) {
     if (typeof viewState[key] !== "string") continue;
     if (control === search || [...control.options].some(option => option.value === viewState[key])) control.value = viewState[key];
   }
+  if(options.quality==="review"&&!qualityFilter.hidden){qualityFilter.value="review";page=0;search.value="";visibility.value="";state.value="";draftFilter.value="";modeFilter.value="";}
+  const resetFilters=button("絞り込みを解除",()=>{for(const control of Object.values(filters))control.value="";page=0;filter()});resetFilters.className="cms-reset-filters";tools.append(resetFilters);
   function persistView() {
     try { sessionStorage.setItem(viewKey, JSON.stringify({ ...Object.fromEntries(Object.entries(filters).map(([key, control]) => [key, control.value])), columns: [...activeColumns], page, scroll: list.scrollTop })); } catch {}
   }
@@ -1728,6 +1782,11 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
           image.onerror = () => image.remove();
           title.prepend(image);
         }
+        title.addEventListener("keydown",event=>{
+          if(event.isComposing||event.altKey||event.ctrlKey||event.metaKey)return;
+          if(!["ArrowUp","ArrowDown"].includes(event.key))return;
+          const rows=[...list.querySelectorAll(".cms-record-link")];const at=rows.indexOf(title);const target=rows[at+(event.key==="ArrowDown"?1:-1)];if(target){event.preventDefault();target.focus();}
+        });
         cell.append(title);
       } else if (key === "visibility" || key === "state") {
         const field = key === "visibility" ? "visibility" : entity === "talent" ? "activity" : entity === "performance" ? "verification" : null;
@@ -1781,6 +1840,7 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
           (!visibility.value || item.visibility === visibility.value) &&
           (!state.value || item.state === state.value) &&
           (!modeFilter.value || item.saleMode === modeFilter.value) &&
+          (!qualityFilter.value || needsReview(entity,item)) &&
           (!draftFilter.value || Boolean(draft) === (draftFilter.value === "yes"));
       });
       if (order.value === "name" || order.value === "name-desc") matching.sort((a, b) => collator.compare(a.title || a.id, b.title || b.id) * (order.value === "name-desc" ? -1 : 1));
@@ -1816,11 +1876,12 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
     next.disabled = (page + 1) * pageSize >= max;
     count.textContent = total + "件 / " + (page + 1) + "ページ";
     if (bulkAvailable) updateBulk();
+    resetFilters.hidden=!Object.entries(filters).some(([key,control])=>key!=="order"&&Boolean(control.value));
     persistView();
   }
   const reset = () => { page = 0; filter(); };
   search.addEventListener("input", reset);
-  for (const control of [category, visibility, state, modeFilter, draftFilter, order]) control.addEventListener("change", reset);
+  for (const control of [category, visibility, state, modeFilter, draftFilter, qualityFilter, order]) control.addEventListener("change", reset);
   for (const { entity, label, items } of sections) {
     const section = el("section");
     section.className = "cms-collection";

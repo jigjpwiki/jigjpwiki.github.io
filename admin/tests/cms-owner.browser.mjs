@@ -59,6 +59,9 @@ export async function cmsOwnerBrowser({ browser, base, mainSha }) {
     await page.getByLabel("名称", { exact: true }).fill(songTitle);
     await page.getByLabel("原曲アーティスト（1行に1名）", { exact: true }).fill("作者");
     await page.getByLabel("楽曲の公式情報URL", { exact: true }).fill(songUrl);
+    const optional = page.locator(".cms-optional-fields").filter({has:page.getByText("別名・読み",{exact:true})});
+    assert.equal(await optional.evaluate(node=>node.open),false);
+    await optional.locator("summary").click();
     await page.getByLabel("曲の別名（1行に1件）", { exact: true }).fill("別タイトル");
     await page.locator("#view").getByRole("button", { name: "下書きを保存", exact: true }).click();
     await page.getByRole("link", { name: "下書き", exact: true }).click();

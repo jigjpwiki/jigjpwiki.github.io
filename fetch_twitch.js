@@ -1,9 +1,11 @@
 'use strict';
 
 const path = require('node:path');
+const collaboration = require('./lib/collaboration');
 const { requestJson, arrayField, readJson, dateWindow, saveResult } = require('./lib/collection');
 
-async function collect({ streamers, clientId, clientSecret, now, request = requestJson }) {
+async function collect({ streamers, clientId, clientSecret, now, request = requestJson, people = [] }) {
+  const collabIndex=collaboration.index(people);
   if (!clientId || !clientSecret) throw new Error('TWITCH_CLIENT_ID and TWITCH_CLIENT_SECRET are required');
   if (!Array.isArray(streamers)) throw new Error('Invalid Twitch streamer list');
   const auth = await request('https://id.twitch.tv/oauth2/token', {
@@ -52,13 +54,16 @@ async function collect({ streamers, clientId, clientSecret, now, request = reque
       for (const video of videos) {
         if (!video.id || !Number.isFinite(Date.parse(video.created_at)) || typeof video.title !== 'string') throw new Error('Invalid Twitch archive');
         if (Date.parse(video.created_at) < start || (stream && video.stream_id === stream.id)) continue;
-        output.set(`video:${video.id}`, {
+        const row = {
           name: s.name, twitchid: s.twitchUserLogin, videoId: video.id, streamId: video.stream_id,
           title: video.title, date: new Date(video.created_at).toISOString(), status: 'archive', type: 'stream',
           url: `https://www.twitch.tv/videos/${encodeURIComponent(video.id)}`,
           channelIcon: user.profile_image_url || '',
           thumbnail: (video.thumbnail_url || '').replace('%{width}', '320').replace('%{height}', '180')
-        });
+        };
+        const partners=collaboration.collected(row,'twitch',video.description,collabIndex);
+        if(partners.length)row.descriptionPartnerIds=partners;
+        output.set(`video:${video.id}`,row);
       }
       cursor = videos.length && Date.parse(videos[videos.length - 1].created_at) >= start ? result.pagination?.cursor || '' : '';
       if (cursor && seen.has(cursor)) throw new Error('Repeated Twitch page cursor');
@@ -70,6 +75,7 @@ async function collect({ streamers, clientId, clientSecret, now, request = reque
 
 async function main({ directory = path.join(__dirname, 'data'), env = process.env, now = new Date(), request = requestJson } = {}) {
   const data = await collect({ streamers: await readJson(path.join(directory, 'twitch_streamers.json'), null),
+    people: (await readJson(path.join(directory, 'talents.json'), {talents:[]})).talents,
     clientId: env.TWITCH_CLIENT_ID, clientSecret: env.TWITCH_CLIENT_SECRET, now, request });
   await saveResult(directory, 'twitch', data, now);
   console.log(`Twitch: saved ${data.length} items`);

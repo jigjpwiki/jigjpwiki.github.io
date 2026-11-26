@@ -30,3 +30,31 @@ test('public feed strips evidence, filters unknown and hidden IDs and excludes h
   assert.deepEqual(row.collaborators,[{id:'tal-000002',name:'花晴りら',image:'/assets/face/lira.png'},{id:'tal-000004',name:'星空ユウ',image:null}]);
   assert(!Object.hasOwn(row,'descriptionPartnerIds'));
 });
+
+test('reported QZB2DmdUlCc: blank-separated collaboration members, channel-ID registrations and handle links',()=>{
+  const participants=[
+    person(44,'愛乃宮ゆめ',[{service:'youtube',accountId:'UCttSjPiwPYpiPuCrgxK7c1g',url:'https://www.youtube.com/channel/UCttSjPiwPYpiPuCrgxK7c1g'}]),
+    person(70,'藤森ちとせ',[{service:'youtube',accountId:'UCAhdxmsdngH4noySdpVAVWQ',url:'https://www.youtube.com/channel/UCAhdxmsdngH4noySdpVAVWQ'}]),
+    person(28,'堂下さとり',[{service:'youtube',accountId:'UCBq6MSUL-Ermvnoj3PtX7Iw',url:'https://www.youtube.com/channel/UCBq6MSUL-Ermvnoj3PtX7Iw'}]),
+    person(1,'別の配信者',[{service:'x',accountId:'other',url:'https://x.com/other'}])
+  ];
+  const index=c.index(participants);
+  const row={videoId:'QZB2DmdUlCc',name:'愛乃宮ゆめ',youtubeid:'UCttSjPiwPYpiPuCrgxK7c1g',title:'【マイクラ/コラボ】海底神殿とやらに行きたいと思います！シーグラタン！！【愛乃宮ゆめ/パレデミア学園】'};
+  // Reconstructed from the reported screenshot, not the full raw API description.
+  const description='コラボメンバー\n\n藤森ちとせ\nhttps://www.youtube.com/@藤森ちとせ\n\n堂下さとり\nhttps://www.youtube.com/@堂下さとり\n\n来てくれてありがとう🫶\n別の配信者 https://x.com/other';
+  const ids=c.collected(row,'youtube',description,index);
+  assert.deepEqual(ids,['tal-000070','tal-000028']);
+  assert.deepEqual(c.project({...row,descriptionPartnerIds:ids},'youtube',index).collaborators.map(p=>p.name),['藤森ちとせ','堂下さとり']);
+});
+test('blank-separated sections do not absorb promotions or unrelated prose',()=>{
+  const cases=[
+    'コラボメンバー\n花晴りら\n\n【おすすめ】\n花晴りら子',
+    'コラボメンバー\n花晴りら\n\n今日は花晴りら子の動画も見てね\n花晴りら子',
+    'コラボメンバー\n花晴りら\n\n来てくれてありがとう\n花晴りら子',
+    'コラボメンバー\n花晴りら\n\n告知\n花晴りら子'
+  ];
+  for(const desc of cases)assert.deepEqual(c.collected(host,'youtube',desc,idx),['tal-000002'],desc);
+});
+test('blank-separated exact name and verified profile-only entries continue the section',()=>{
+  assert.deepEqual(c.collected(host,'youtube','コラボメンバー\n花晴りら\n\n星空ユウさん\n\nhttps://x.com/Lira\n\n【告知】\n花晴りら子',idx),['tal-000002','tal-000004']);
+});

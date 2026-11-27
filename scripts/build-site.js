@@ -15,7 +15,7 @@ const { anniversaryPage } = require('../lib/info-pages');
 const catalog = publicCatalog(loadCatalog(fullTalents, root));
 const { talentPage: renderTalentPage } = require('../lib/talent-details');
 const collaboration = require('../lib/collaboration');
-const collabIndex = collaboration.index(fullTalents.talents);
+const collabIndex = collaboration.index(fullTalents.talents,{organizations:fullTalents.organizations,youtubeStreamers:JSON.parse(fs.readFileSync(path.join(root,'data','youtube_streamers.json'),'utf8'))});
 const readFeed = name => publicFeed(JSON.parse(fs.readFileSync(path.join(root,'data',name+'.json'),'utf8')),fullTalents).map(row=>collaboration.project(row,name,collabIndex));
 const { goodsPage, relatedGoods, productPage, campaignPage } = require('../lib/goods-pages');
 const feeds = { youtube: readFeed('youtube'), twitch: readFeed('twitch'), tiktok: readFeed('tiktok') };

@@ -1487,7 +1487,7 @@
     "date": "2026-11-26T10:39:38.000Z",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/f_nVfURVVP8/mqdefault.jpg?v=6b080bb5",
+    "thumbnail": "https://i.ytimg.com/vi/f_nVfURVVP8/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/eW_Hug0M6zFk9QSbAmOUWLMSfzBlCHmes-8yAksvfUNzyLgY6TSsE_eW8ncfE4bHYZXKoTWxmQ=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=f_nVfURVVP8"
   },
@@ -1833,7 +1833,7 @@
     "youtubeid": "UCay6Y3oEoiC6ZEE2G0UZu_A",
     "title": "【雑談】起きれたら朝活をしたい。起きたい。【#パレプロ #香鳴ハノン】",
     "date": "2026-11-26T22:21:22.000Z",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/FkAXcVwsOUI/mqdefault.jpg?v=6b08af7d",
     "channelIcon": "https://yt3.ggpht.com/qvbeb9E-gYc822fxxzi6Ug5QyjhqZAWbUskHANcwDWP5W8iTsK3LcQJnjS4CVBuFJ6fONsM9F7M=s240-c-k-c0x00ffffff-no-rj",
@@ -1886,6 +1886,18 @@
     "thumbnail": "https://i.ytimg.com/vi/g38CPGo1sIg/mqdefault.jpg?v=6b08b233",
     "channelIcon": "https://yt3.ggpht.com/6QXGvenKC_ssgHLjSjbxboEcVDgYLRoG529bCe5qbXnBc0Va-2qWJ2xvg3A7hOSQlOG0r5F9=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=g38CPGo1sIg"
+  },
+  {
+    "videoId": "OuGwmAYLlMI",
+    "name": "水透ユウ",
+    "youtubeid": "UCOah55SQYynzPgQQ4wxuzkA",
+    "title": "【#ブループロトコルスターレゾナンス  】完全初見🔰～＃９デイリー編～【水透ユウ】【PR/ぶいきゃす】",
+    "date": "2026-11-26T23:36:43.000Z",
+    "status": "live",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/OuGwmAYLlMI/mqdefault.jpg?v=6b08c1db",
+    "channelIcon": "https://yt3.ggpht.com/eVD8Ygm7KVyh3dvWnyebfYlbYpD13ZYQ-Bos8WdR5LDE61A3svHVHCLEY-rM3IQgw9O4uvdd=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=OuGwmAYLlMI"
   },
   {
     "videoId": "8xxRjSSEgd0",

@@ -58,3 +58,37 @@ test('blank-separated sections do not absorb promotions or unrelated prose',()=>
 test('blank-separated exact name and verified profile-only entries continue the section',()=>{
   assert.deepEqual(c.collected(host,'youtube','コラボメンバー\n花晴りら\n\n星空ユウさん\n\nhttps://x.com/Lira\n\n【告知】\n花晴りら子',idx),['tal-000002','tal-000004']);
 });
+
+test('reported WfbgMqueZsE: cohort subtitle, blank line and inline mentions',()=>{
+  const p=[person(28,'堂下さとり'),person(44,'愛乃宮ゆめ'),person(70,'藤森ちとせ')],index=c.index(p);
+  const d='マイクラ初心者！！お手柔らかにお願いします\n\nコラボメンバー\nパレデミア学園１期生\n\n愛乃宮ゆめちゃん→ @愛乃宮ゆめ\n藤森ちとせちゃん→ @藤森ちとせ\n\n°△ ─── △°\n\n新人VTuberの堂下さとりです';
+  assert.deepEqual(c.collected({name:'堂下さとり',title:'【コラボ】海底神殿へ！マイクラ'},'youtube',d,index),['tal-000044','tal-000070']);
+});
+test('reported DrjT0Q_L0AE: star-decorated collaboration heading',()=>{
+  const index=c.index([person(59,'牡丹雪'),person(57,'灯野ぺけ。')]);
+  const d='オタクの意見100%でお届けします\n\n★コラボ相手★\n灯野ぺけ。 https://youtube.com/@灯野ぺけまる\nX(旧Twitter)：@hino_pekemaru\n\n応援団長！なグッズが発売中です！！';
+  assert.deepEqual(c.collected({name:'牡丹雪',title:'【同時視聴】ぶいかふぇ'},'youtube',d,index),['tal-000057']);
+});
+test('reported keCDN4Lf0mw: isolated exact name + mention with a co-watch title',()=>{
+  const index=c.index([person(59,'牡丹雪'),person(57,'灯野ぺけ。'),person(1,'別の配信者')]);
+  const d='配信見に来てくれてありがちょ\nパレデミア学園ミュウ寮在籍中の灯野ぺけ。だよん\n\n目指せch登録者さん2000人！\nぜひ応援よろぴこまる〜\n\n牡丹雪\n@botan_setu\n\n｡･:*ﾟ\n\n【おすすめ】\n\n別の配信者\n@other';
+  const row={name:'灯野ぺけ。',title:'【ぶいかふぇ♪Vol.325アーカイブ同時視聴】雪子と見ていく！'};
+  assert.deepEqual(c.collected(row,'youtube',d,index),['tal-000059']);
+  assert.deepEqual(c.collected({...row,title:'雑談'},'youtube',d,index),[]);
+  assert.deepEqual(c.collected(row,'youtube','【おすすめ】\n\n牡丹雪\n@botan_setu',index),[]);
+});
+test('reported 88mMnaaYWmc: configured official organization and explicit member archive list',()=>{
+  const names=['暁月クララ','七海ロナ','常磐カナメ','藤宮コトハ','江波キョウカ','鬼多見アユム','香鳴ハノン','夏渚まはろ'];
+  const org='org-000003',channel='UC_cCW1xmXwRFp1tX-RD2X1Q';
+  const people=names.map((n,i)=>person(i+1,n,[],{affiliations:[{organizationId:org,status:'current'}]}));
+  people.push(person(20,'別の配信者',[],{affiliations:[{organizationId:'org-000002',status:'current'}]}));
+  const index=c.index(people,{organizations:[{id:org,name:'Palette Project'}],youtubeStreamers:[{name:'Palette Project',youtubeChannelId:channel}]});
+  const row={name:'Palette Project',youtubeid:channel,title:'【感謝の最終回】メンバーが選ぶパレプロEXの名シーンを見よう!!'};
+  const list=names.map((n,i)=>n+'\nhttps://www.youtube.com/watch?v='+String(i).repeat(11)).join('\n');
+  const d='公式番組 パレプロEX\n\nメンバーが選んだ配信のアーカイブはこちら！\n'+list+'\n別の配信者\nhttps://youtu.be/abcdefghijk\n\n----------------\nPalette Project OFFICIAL STORE';
+  const ids=c.collected(row,'youtube',d,index);
+  assert.equal(ids.length,8);
+  assert.deepEqual(c.project({...row,descriptionPartnerIds:ids},'youtube',index).collaborators.map(p=>p.name),names);
+  assert.deepEqual(c.collected({...row,youtubeid:'UC'+'z'.repeat(22)},'youtube',d,index),[]);
+  assert.deepEqual(c.collected(row,'youtube','おすすめ動画\n'+list,index),[]);
+});

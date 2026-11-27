@@ -9,8 +9,8 @@ function videoId(item) {
   try { return new URL(item.url).searchParams.get('v'); } catch { return null; }
 }
 
-async function collect({ streamers, existing, cache, apiKey, now, request = requestJson, refreshOnly = false, people = [] }) {
-  const collabIndex = collaboration.index(people);
+async function collect({ streamers, existing, cache, apiKey, now, request = requestJson, refreshOnly = false, people = [], organizations = [] }) {
+  const collabIndex = collaboration.index(people,{organizations,youtubeStreamers:streamers});
   if (!apiKey) throw new Error('YOUTUBE_API_KEY is required');
   if (!Array.isArray(streamers) || !Array.isArray(existing) || !cache || Array.isArray(cache) || typeof cache !== 'object') {
     throw new Error('Invalid YouTube input data');
@@ -151,11 +151,12 @@ async function collect({ streamers, existing, cache, apiKey, now, request = requ
 async function main({ directory = path.join(__dirname, 'data'), env = process.env, now = new Date(), request = requestJson } = {}) {
   const previousCache = await readJson(path.join(directory, 'youtube_cache.json'), {});
   const refreshOnly = env.YOUTUBE_REFRESH_ONLY === 'true' || (env.YOUTUBE_REFRESH_ONLY === 'auto' && now - new Date(previousCache.__lastDiscovery__ || 0) < 3600000);
+  const master=await readJson(path.join(directory, 'talents.json'), {talents:[],organizations:[]});
   const result = await collect({
     streamers: await readJson(path.join(directory, 'youtube_streamers.json'), null),
     existing: await readJson(path.join(directory, 'youtube.json'), []),
     cache: previousCache,
-    people: (await readJson(path.join(directory, 'talents.json'), {talents:[]})).talents,
+    people: master.talents, organizations: master.organizations || [],
     apiKey: env.YOUTUBE_API_KEY, now, request, refreshOnly
   });
   result.cache.__lastStatusCheck__ = now.toISOString();

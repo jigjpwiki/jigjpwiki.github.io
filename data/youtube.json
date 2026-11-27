@@ -1542,7 +1542,7 @@
     "date": "2026-11-27T09:01:01.000Z",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/TzK1rCmkU9I/mqdefault.jpg?v=6b0941a1",
+    "thumbnail": "https://i.ytimg.com/vi/TzK1rCmkU9I/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/MwFtS4Atq-VZX_p-mgdnGa95NMQAnQCz9boYbtkLbNvkbA_kgvqLMOMU3J34uFX1FCrvzyP3_g=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=TzK1rCmkU9I"
   },
@@ -1758,7 +1758,7 @@
     "date": "2026-11-27T13:30:29.000Z",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/tgqBwyaLlII/mqdefault.jpg?v=6b097baf",
+    "thumbnail": "https://i.ytimg.com/vi/tgqBwyaLlII/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/vb_kLF_4hQ7UdEtOnEtL-_pI320ZMQ-lVQ9OV3xMvdTQitHXX1zk0b6GKQ977dawvfoB5Sb8OQ=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=tgqBwyaLlII"
   },
@@ -1917,6 +1917,18 @@
     "thumbnail": "https://i.ytimg.com/vi/ykiaYPxGi4M/mqdefault.jpg?v=6b095571",
     "channelIcon": "https://yt3.ggpht.com/CH5JMWVQZ_RtloaXoj6W-yXjo9x8UxXSBG_vMyDnfk7M2QTOApVE1zOesu_aDrSAqvDbGrUyxs0=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=ykiaYPxGi4M"
+  },
+  {
+    "videoId": "opbqPecYqlw",
+    "name": "桜庭羽奈",
+    "youtubeid": "UCPgg_A08ksSYP-VivJGniRw",
+    "title": "マリオのモノマネ難しい #パレデミア学園",
+    "date": "2026-11-27T22:00:14.000Z",
+    "status": "archive",
+    "type": "video",
+    "thumbnail": "https://i.ytimg.com/vi/opbqPecYqlw/mqdefault.jpg",
+    "channelIcon": "https://yt3.ggpht.com/Iqa8kv9Rtxo6WwJDofayPUFNXpzczylLfnLo7PZFqtgBos31fl5FH1bEldVwBn04oSSbmN8D=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=opbqPecYqlw"
   },
   {
     "videoId": "0b9zh569vYE",

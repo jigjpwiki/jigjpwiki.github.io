@@ -1816,7 +1816,7 @@
     "date": "2026-11-26T22:00:37.000Z",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/Yoaw2OMsvNQ/mqdefault.jpg?v=6b085266",
+    "thumbnail": "https://i.ytimg.com/vi/Yoaw2OMsvNQ/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/nMtec5z3KY5RUGCSbQENm9culC2VpB7Ate_dUueAINpAJdFK4wwe7Q6eH88QiMXqjImAleLI=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=Yoaw2OMsvNQ"
   },
@@ -2025,18 +2025,6 @@
     "url": "https://www.youtube.com/watch?v=bd2TDp5o_rQ"
   },
   {
-    "videoId": "1yTgBP8Ey58",
-    "name": "天辻ゆらぐ",
-    "youtubeid": "UCeOFQCn_QZJMTszlRYRg3rQ",
-    "title": "【 #雑談 】運動会グッズ紹介配信【天辻ゆらぐ/パレデミア学園】 #新人Vtuber #ゆらぐっどたいむ",
-    "date": "2026-11-27T11:00:00.000Z",
-    "status": "upcoming",
-    "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/1yTgBP8Ey58/mqdefault.jpg?v=6b096311",
-    "channelIcon": "https://yt3.ggpht.com/Am7YiPKV2mx_EEJ8AGa3NXbU8sHgrB6sX4AnL75tKxTJq2MtA18t3NVK3S9-h6d3UKZHy7Bh=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=1yTgBP8Ey58"
-  },
-  {
     "videoId": "a9oD592TbGY",
     "name": "七海ロナ",
     "youtubeid": "UCIaZylf5L9MsCMOJX3BdTEg",
@@ -2047,6 +2035,18 @@
     "thumbnail": "https://i.ytimg.com/vi/a9oD592TbGY/mqdefault.jpg?v=6b084d0c",
     "channelIcon": "https://yt3.ggpht.com/86cM_4q1A56pIYgdKxh776hM0nropjiZIlmXbfroWHXQ-MjdGGsjLcL5hMDOFL-T2EJHmybT=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=a9oD592TbGY"
+  },
+  {
+    "videoId": "1yTgBP8Ey58",
+    "name": "天辻ゆらぐ",
+    "youtubeid": "UCeOFQCn_QZJMTszlRYRg3rQ",
+    "title": "【 #雑談 】運動会グッズ紹介配信【天辻ゆらぐ/パレデミア学園】 #新人Vtuber #ゆらぐっどたいむ",
+    "date": "2026-11-27T11:15:27.000Z",
+    "status": "live",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/1yTgBP8Ey58/mqdefault.jpg?v=6b096311",
+    "channelIcon": "https://yt3.ggpht.com/Am7YiPKV2mx_EEJ8AGa3NXbU8sHgrB6sX4AnL75tKxTJq2MtA18t3NVK3S9-h6d3UKZHy7Bh=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=1yTgBP8Ey58"
   },
   {
     "videoId": "H3GJiH_pQbI",

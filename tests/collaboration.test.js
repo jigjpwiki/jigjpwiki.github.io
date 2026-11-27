@@ -92,3 +92,25 @@ test('reported 88mMnaaYWmc: configured official organization and explicit member
   assert.deepEqual(c.collected({...row,youtubeid:'UC'+'z'.repeat(22)},'youtube',d,index),[]);
   assert.deepEqual(c.collected(row,'youtube','おすすめ動画\n'+list,index),[]);
 });
+
+test('reported 88mMnaaYWmc: mixed watch paths and short IDs, all eight entries',()=>{
+  const names=['暁月クララ','七海ロナ','常磐カナメ','藤宮コトハ','江波キョウカ','鬼多見アユム','香鳴ハノン','夏渚まはろ'];
+  const org='org-000003',channel='UC_cCW1xmXwRFp1tX-RD2X1Q';
+  const people=names.map((n,i)=>person(i+1,n,[],{affiliations:[{organizationId:org,status:'current'}]}));
+  people.push(person(20,'別の配信者',[],{affiliations:[{organizationId:org,status:'current'}]}));
+  const index=c.index(people,{organizations:[{id:org,name:'Palette Project'}],youtubeStreamers:[{name:'Palette Project',youtubeChannelId:channel}]});
+  const row={name:'Palette Project',youtubeid:channel,title:'メンバーが選ぶパレプロEXの名シーン'};
+  const refs=['https://www.youtube.com/watch/xf28wSL','https://www.youtube.com/watch?v=imTt02pAGQo','https://www.youtube.com/watch/AnRoOIw','https://www.youtube.com/watch/NuEHEOeuxu','https://www.youtube.com/watch/WxV1K-M','https://www.youtube.com/watch/Rt0Rcg9','https://www.youtube.com/watch/Jh9lgLy','https://www.youtube.com/watch/rf7RWPc'];
+  const intro='🎨歌って踊るバーチャルアイドル「Palette Project」公式番組「パレプロEX」✨\n\nメンバーが選んだ配信のアーカイブはこちら！\n';
+  const suffix='\n-------------------------------\nPalette Project OFFICIAL STORE\nhttps://store.paletteproject.jp/\n\nチャンネル登録&Xフォローよろしくお願いします！\n別の配信者\nhttps://www.youtube.com/watch?v=abcdefghijk';
+  const plain=names.map((n,i)=>n+'\n'+refs[i]).join('\n');
+  const expected=people.slice(0,8).map(p=>p.id);
+  assert.deepEqual(c.collected(row,'youtube',intro+plain+suffix,index),expected);
+  const copied=names.map((n,i)=>n+' [動画'+i+']('+refs[i]+')'+(i===1?' ([image](https://www.gstatic.com/youtube/img/watch/yt_favicon_ringo2.png))':'')).join(' ');
+  assert.deepEqual(c.collected(row,'youtube',(intro+copied+suffix).replace(/\n/g,' '),index),expected);
+  const broken=names.map((n,i)=>n+'\n'+(i===3?'https://example.org/broken':refs[i])).join('\n');
+  assert.deepEqual(c.collected(row,'youtube',intro+broken+suffix,index),expected.filter((_,i)=>i!==3));
+  const absent=names.map((n,i)=>n+(i===3?'':'\n'+refs[i])).join('\n');
+  assert.deepEqual(c.collected(row,'youtube',intro+absent+suffix,index),expected.filter((_,i)=>i!==3));
+  assert.deepEqual(c.collected(row,'youtube','おすすめ動画\n'+plain,index),[]);
+});

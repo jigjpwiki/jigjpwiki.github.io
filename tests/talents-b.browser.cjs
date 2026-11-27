@@ -139,6 +139,15 @@ const yt = [
           await p.locator("[data-person]").count(),
           master.talents.length,
         );
+        assert.equal(await p.locator("#directory-jumps a").count(),await sections.count());
+        const jump=await p.locator("#directory-jumps a").first().getAttribute("href");
+        assert.equal(await p.locator(jump).count(),1);
+        await p.locator("#talent-activity").selectOption("ended");
+        assert.equal(await p.locator(".talent-card:visible").count(),master.talents.filter(t=>t.activityStatus.value==="ended").length);
+        assert.equal(new URL(p.url()).searchParams.get("activity"),"ended");
+        await p.getByRole("button",{name:"条件を解除"}).click();
+        assert(!new URL(p.url()).searchParams.has("activity"));
+        assert.equal(await p.evaluate(()=>document.documentElement.scrollWidth>innerWidth),false);
         await p.locator("#talent-sort").selectOption("name");
         await capture("name");
         const expected = [...master.talents].sort((a, b) =>
@@ -281,6 +290,10 @@ const yt = [
           false,
         );
         assert.equal(await p.locator(".profile-provenance").count(),0);
+        const sectionLinks=await p.locator(".profile-jumps a").evaluateAll(links=>links.map(a=>({href:a.getAttribute("href"),exists:!!document.getElementById(a.hash.slice(1))})));
+        assert(sectionLinks.length>=2&&sectionLinks.every(l=>l.exists));
+        assert.equal(await p.locator(".profile-biography details").getAttribute("open"),"");
+        if(person.activityStatus.value!=="unknown")assert.equal(await p.locator(".profile-activity").getAttribute("data-activity"),person.activityStatus.value);
       }
       await capture("profile");
       if (!before) {

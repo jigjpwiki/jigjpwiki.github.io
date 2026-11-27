@@ -123,7 +123,7 @@ test("sparse profiles omit unrelated empty sections and keep Wiki links and huma
   assert(html.includes(person.wiki.url.replaceAll("&", "&amp;")));
   assert(!html.includes(">引退<"));
   assert(
-    html.indexOf('id="talent-streams"') < html.indexOf("profile-biography"),
+    html.indexOf('id="talent-streams"') < html.indexOf('id="profile-biography"'),
   );
   person.affiliations = [];
   person.agencyStatus = { value: "unknown" };
@@ -167,4 +167,27 @@ test("ended former members stay in former section; active independent talents st
   assert(!card.includes("<p>無所属</p>"));assert(card.includes("旧所属："));
   const section=html.split('data-directory-section="former"')[1].split("</section>")[0];
   assert(section.includes('id="'+t.id+'"'));
+});
+
+test("activity filters use recorded status, including unknown, without inferring retirement from affiliation",()=>{
+  const rows=[{...row("a","活動中",["a"]),activity:"active"},{...row("b","卒業",[],["a"]),activity:"ended"},{...row("c","旧所属",[],["a"]),activity:"unknown"},{...row("d","休止",["a"]),activity:"hiatus"}];
+  assert.deepEqual(rows.filter(p=>directory.matches(p,{activity:"ended"})).map(p=>p.id),["b"]);
+  assert.deepEqual(rows.filter(p=>directory.matches(p,{activity:"unknown",relation:"former"})).map(p=>p.id),["c"]);
+  assert.deepEqual(rows.filter(p=>directory.matches(p,{activity:"hiatus",organization:"a"})).map(p=>p.id),["d"]);
+});
+test("profile navigation only links to rendered sections and group filter links retain stable IDs",()=>{
+  const {talentPage}=require("../lib/talent-details");
+  const master=structuredClone(require("./fixtures/admin-vnext-baseline.json").talents);
+  const t=master.talents[0]; t.activityStatus.value="hiatus";
+  const group={id:"grp-000001",name:"試験グループ",talentIds:[t.id]};
+  const render=()=>'<section class="profile-section"><h2>音楽</h2><p>曲</p></section><section class="profile-section"><h2>関連イベント</h2><p>イベント</p></section>';
+  const html=talentPage(t,master,{groups:[group],events:[]},{},null,render);
+  assert(html.includes('href="/talents/?group=grp-000001"'));
+  assert(html.includes('data-activity="hiatus">活動休止</span>'));
+  const nav=html.split('class="profile-jumps"')[1].split("</nav>")[0];
+  for(const id of ["talent-streams","profile-music","profile-events","profile-biography"]){
+    assert(nav.includes('href="#'+id+'"'));
+    assert.equal((html.match(new RegExp('id="'+id+'"','g'))||[]).length,1);
+  }
+  assert(!nav.includes("#profile-anniversaries"));assert(!nav.includes("#profile-goods"));
 });

@@ -29,6 +29,7 @@
             : [...p.current, ...p.former]
         ).includes(f.organization)) &&
       (!f.group || p.groups.includes(f.group)) &&
+      (!f.activity || (p.activity || "unknown") === f.activity) &&
       (!f.relation ||
         (f.relation === "unknown"
           ? !p.current.length && !p.former.length && !p.unaffiliated
@@ -98,6 +99,7 @@
       organization: document.getElementById("talent-organization"),
       group: document.getElementById("talent-group"),
       relation: document.getElementById("talent-relation"),
+      activity: document.getElementById("talent-activity"),
       sort: document.getElementById("talent-sort"),
     };
     for (const [key, rows] of [
@@ -124,6 +126,8 @@
             : value;
       }
     }
+    const byId = new Map(cards.map(c => [c.p.id,c]));
+    const jumps = document.getElementById("directory-jumps");
     function draw(save = false, replace = false) {
       const f = Object.fromEntries(
         Object.entries(fields).map(([key, input]) => [key, input.value]),
@@ -134,6 +138,7 @@
         if (!card.el.hidden) count++;
       }
       result.replaceChildren();
+      jumps.replaceChildren();
       for (const group of arrange(
         cards.map((c) => c.p),
         config.organizations,
@@ -144,10 +149,11 @@
           list = document.createElement("ul");
         section.className = "agency-section";
         section.dataset.directorySection = group.id;
+        section.id = "directory-" + group.id;
         list.className = "talent-grid";
         let n = 0;
         for (const person of group.people) {
-          const card = cards.find((c) => c.p.id === person.id);
+          const card = byId.get(person.id);
           list.append(card.el);
           if (!card.el.hidden) n++;
         }
@@ -158,8 +164,16 @@
         section.append(heading, list);
         section.hidden = n === 0;
         result.append(section);
+        if (n && f.sort === "agency") {
+          const jump = document.createElement("a");
+          jump.href = "#" + section.id;
+          jump.textContent = group.name + " ";
+          const num = document.createElement("span");num.textContent = n; jump.append(num);
+          jumps.append(jump);
+        }
       }
-      for (const key of ["organization", "group", "relation"])
+      jumps.hidden = jumps.childElementCount < 2;
+      for (const key of ["organization", "group", "relation", "activity"])
         for (const option of fields[key].options) {
           const n = cards.filter(({ p }) =>
             matches(p, { ...f, [key]: option.value }),

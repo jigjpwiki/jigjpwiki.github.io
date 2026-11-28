@@ -53,11 +53,22 @@ const goodsListingCount=publishedGoods.campaigns.length+publishedGoods.products.
      await compact.locator('summary').click();assert.equal(await compact.locator('.music-singer-expanded').isVisible(),true);
      await compact.locator('summary').click();
     }
-    if(category==='songs'){const b=await card.locator('.music-song-art').boundingBox();assert(Math.abs(b.width/b.height-16/9)<0.04);}
+    if(category==='songs'){
+     const b=await card.locator('.music-song-art').boundingBox();assert(Math.abs(b.width/b.height-16/9)<0.04);
+     const checkRows=async()=>{
+      const rows=await panel.locator('.music-song-card:visible').evaluateAll(cards=>cards.map(e=>{const r=e.getBoundingClientRect(),t=e.querySelector('.music-song-heading').getBoundingClientRect();return {top:r.top,bottom:r.bottom,titleTop:t.top};}));
+      assert(rows.length>1);
+      for(let i=0;i+1<rows.length;i+=2){assert(Math.abs(rows[i].top-rows[i+1].top)<1,'Song card row top');assert(Math.abs(rows[i].bottom-rows[i+1].bottom)<1,'Song card row bottom');assert(Math.abs(rows[i].titleTop-rows[i+1].titleTop)<1,'Song title alignment');}
+     };
+     await checkRows();
+     if(await compact.count()){await compact.locator('summary').click();await checkRows();await compact.locator('summary').click();await checkRows();}
+    }
     if(category==='karaoke'){
      assert.equal(await card.locator('h2 a').evaluate(e=>getComputedStyle(e).webkitLineClamp),'2');
      assert.equal(await panel.locator('.music-karaoke-grid').evaluate(e=>getComputedStyle(e).gridTemplateColumns.split(' ').length),6);
      for(const name of ['from','to','setlist'])assert.equal(await p.locator('[name='+name+']').isEnabled(),true);
+     const searchBox=await p.locator('[name=q]').boundingBox(),resetBox=await p.locator('#catalog-filters button[type=reset]').boundingBox();
+     assert(Math.abs(searchBox.y+searchBox.height-resetBox.y-resetBox.height)<2,'Karaoke filters and reset share one row');
      const dates=await panel.locator('.music-date time').evaluateAll(nodes=>nodes.map(n=>n.dateTime));
      assert.deepEqual(dates,[...dates].sort((a,b)=>Date.parse(b)-Date.parse(a)));
      const count=await panel.locator('[data-filter-row]').count();

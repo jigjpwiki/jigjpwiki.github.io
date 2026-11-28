@@ -98,7 +98,7 @@
   .content-page .music-list-view .music-date,.content-page .music-list-view .music-counts { font-size: 12px; color: var(--site-muted); font-variant-numeric: tabular-nums; }
   .music-list-view .music-setlist-status[data-setlist-status="unreviewed"] { color: var(--site-muted); }
   .music-list-view .music-setlist-status[data-setlist-status="complete"] { color: #276749; }
-  .content-page .music-page .music-list-view .music-song-grid { gap: 10px; margin: 12px 0 0; align-items: start; }
+  .content-page .music-page .music-list-view .music-song-grid { gap: 10px; margin: 12px 0 0; align-items: stretch; }
   .content-page .music-page .music-list-view .music-song-card { grid-template-columns: 108px minmax(0,1fr); gap: 12px; padding: 12px; align-items: center; min-height: 112px; box-sizing: border-box; }
   .music-list-view .music-song-card .music-song-art { aspect-ratio: 16/9; max-width: none; border-radius: 8px; }
   .content-page .music-list-view .music-song-body h2 { margin: 0; font-size: 16px; line-height: 1.4; }
@@ -204,4 +204,22 @@
  .content-page .music-detail-view h1{font-size:20px}
  .music-history-list>li{grid-template-columns:88px minmax(0,1fr);gap:8px}
  .music-history-list .track-play{grid-column:2}
+}
+
+/* Final desktop alignment pass: equal-height rows without truncating expanded singers. */
+@media(min-width:1000px){
+ .content-page .music-page .music-list-view .music-song-card{align-self:stretch}
+ .music-list-view .music-song-body{align-self:stretch;display:flex;flex-direction:column;gap:3px}
+ .content-page .music-list-view .music-song-body :is(h2,p){margin:0}
+ .content-page .music-list-view .music-song-body .music-counts{margin-top:auto}
+ .content-page .music-list-view .music-video-footer:has(.music-video-action-redundant):not(:has(.music-video-action:not(.music-video-action-redundant))){margin:0;gap:0}
+ .content-page .music-list-view .content-tabs a:focus-visible{outline:2px solid var(--site-ink);outline-offset:-4px;border-radius:6px}
+ .content-page .music-list-view[data-enhanced]:has([data-category="karaoke"][aria-current="page"]) .feature-filters{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));align-items:end}
+ .music-list-view[data-enhanced]:has([data-category="karaoke"][aria-current="page"]) .feature-filters label:first-child{grid-column:span 2}
+ .music-list-view[data-enhanced]:has([data-category="karaoke"][aria-current="page"]) .feature-filters :is(label,input,select){min-width:0;max-width:100%}
+ .music-list-view[data-enhanced]:has([data-category="karaoke"][aria-current="page"]) .feature-filters button{justify-self:end;margin-left:0;white-space:nowrap}
+}
+@media(min-width:1280px){
+ .content-page .music-list-view[data-enhanced]:has([data-category="karaoke"][aria-current="page"]) .feature-filters{grid-template-columns:minmax(0,1.5fr) repeat(5,minmax(0,1fr)) auto}
+ .music-list-view[data-enhanced]:has([data-category="karaoke"][aria-current="page"]) .feature-filters label:first-child{grid-column:auto}
 }

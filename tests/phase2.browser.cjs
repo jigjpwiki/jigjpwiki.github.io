@@ -54,6 +54,15 @@ const goodsListingCount=publishedGoods.campaigns.length+publishedGoods.products.
     const monthBox=await page.locator('.anniversary-month').boundingBox(),overviewBox=await page.locator('.anniversary-overview').boundingBox();
     assert(monthBox.x+monthBox.width<=overviewBox.x,'Calendar and upcoming are side-by-side');
     assert(Math.abs(monthBox.y-overviewBox.y)<2,'Calendar starts alongside today');
+    for (const selector of ['.anniversary-today','.anniversary-upcoming']) {
+      const box=await page.locator(selector).boundingBox();
+      assert(Math.abs(box.x-overviewBox.x)<1 && Math.abs(box.width-overviewBox.width)<1,'Sidebar cards fill the same column');
+    }
+    const calendar=await page.locator('#calendar').boundingBox(), legend=await page.locator('.calendar-legend').boundingBox(), details=await page.locator('#day-details').boundingBox();
+    assert(calendar.y+calendar.height<=legend.y && legend.y+legend.height<=details.y,'Legend is directly below calendar');
+    assert.equal(await page.locator('.day-preview:visible').first().evaluate(e=>getComputedStyle(e).fontSize),'12px');
+    const labels=await page.locator('.day-preview:visible').evaluateAll(nodes=>nodes.map(e=>({title:e.getAttribute('title'),label:e.textContent})));
+    assert(labels.every(e=>e.title && e.label && (e.label===e.title || e.title.startsWith(e.label+' '))),'Calendar previews preserve full custom titles or show exact subject names');
     assert(await page.locator('.day-preview:visible').count()>0,'Calendar shows event titles');
     const preview=page.locator('.day-preview:visible').first();
     assert((await preview.innerText()).trim().length>0);

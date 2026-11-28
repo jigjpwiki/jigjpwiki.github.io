@@ -335,7 +335,9 @@ const yt = [
           if (await official.count()) assert.equal(await official.locator(".profile-link-external").isVisible(),true);
           const wiki = refs.getByRole("link",{name:"非公式Wiki",exact:true});
           if (await wiki.count()) {
-            assert.equal(await wiki.locator("svg.profile-wiki-logo").getAttribute("viewBox"),"0 0 39 19");
+            assert.equal(await wiki.locator("svg.profile-wiki-logo").getAttribute("viewBox"),"150 345 780 380");
+            assert.equal(await wiki.locator("svg.profile-wiki-logo rect").count(),68);
+            assert.deepEqual(await wiki.evaluate(e=>{const r=e.getBoundingClientRect();return [r.width,r.height];}),[44,40]);
             assert.equal(await wiki.locator("svg.profile-wiki-logo").isVisible(),true);
             assert.equal(await wiki.locator(".profile-service-label").evaluate(e=>e.getBoundingClientRect().width),1);
             assert.equal(await wiki.getAttribute("target"),"_blank");

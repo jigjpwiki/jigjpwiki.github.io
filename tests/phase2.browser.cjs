@@ -50,6 +50,15 @@ const goodsListingCount=publishedGoods.campaigns.length+publishedGoods.products.
    assert.equal(await page.locator('#today-heading').innerText(),'今日の記念日');
    assert.equal(await page.locator('#today-date').getAttribute('datetime'),'2026-12-25');
    assert.equal(await page.locator('#today-events [data-event-id]').count(),core.between(events,'2026-12-25','2026-12-26').length);
+   if(width>=1000){
+    const monthBox=await page.locator('.anniversary-month').boundingBox(),overviewBox=await page.locator('.anniversary-overview').boundingBox();
+    assert(monthBox.x+monthBox.width<=overviewBox.x,'Calendar and upcoming are side-by-side');
+    assert(Math.abs(monthBox.y-overviewBox.y)<2,'Calendar starts alongside today');
+    assert(await page.locator('.day-preview:visible').count()>0,'Calendar shows event titles');
+    const preview=page.locator('.day-preview:visible').first();
+    assert((await preview.innerText()).trim().length>0);
+    if(process.env.EVENT_SCREENSHOTS){const out=path.join(process.env.EVENT_SCREENSHOTS,'anniversaries');fs.mkdirSync(out,{recursive:true});await page.screenshot({path:path.join(out,'dashboard-1440.png')});}
+   }
    const upcomingDay=await page.locator('#upcoming [data-anniversary-day]').first().getAttribute('data-anniversary-day');
    await page.locator('#upcoming [data-anniversary-day]').first().click();
    assert.equal(await page.locator('[data-day="'+upcomingDay+'"]').getAttribute('aria-pressed'),'true');
@@ -67,6 +76,7 @@ const goodsListingCount=publishedGoods.campaigns.length+publishedGoods.products.
    await page.keyboard.press('ArrowLeft');
    assert.equal(await page.locator('#day-details [data-event-id]').count(),core.between(events,'2027-03-07','2027-03-08').length);assert.match(await page.locator('#day-details').innerText(),/2周年/);
    assert.equal(await page.locator('#day-details details').count(),0);
+   if(width>=1000 && process.env.EVENT_SCREENSHOTS){const out=path.join(process.env.EVENT_SCREENSHOTS,'anniversaries');fs.mkdirSync(out,{recursive:true});await page.screenshot({path:path.join(out,'selected-1440.png'),fullPage:true});}
    if(process.env.BROWSER_SCREENSHOT_DIR)await page.screenshot({path:path.join(process.env.BROWSER_SCREENSHOT_DIR,`calendar-filled-${width}.png`),fullPage:true});
    await page.locator('#event-type').selectOption('birthday');assert.equal(await page.locator('#day-details [data-event-id]').count(),0);
    await page.locator('#event-type').selectOption('');await page.getByRole('button',{name:'前月',exact:true}).focus();await page.keyboard.press('Enter');

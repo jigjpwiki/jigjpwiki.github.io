@@ -56,3 +56,71 @@
  .anniversary-filters button{flex:1 1 100%}
 }
 @media(max-width:359px){.content-page .anniversary-page .day-button,.content-page .anniversary-page .day-static{min-height:52px}.anniversary-page .day-count{font-size:10px}.anniversary-page .day-markers{gap:2px}.anniversary-page .dot{width:5px;height:5px}}
+
+/* PC: calendar-led dashboard. Keep mobile layout and static fallback intact. */
+.anniversary-page .day-preview { display: none; }
+@media (min-width: 1000px) {
+  .site-shell--browse > main.content-page:has(.anniversary-page) { padding-top: 24px; }
+  .content-page:has(.anniversary-page) > h1 { margin-bottom: 8px; }
+  .content-page .anniversary-page .anniversary-intro { margin: 0 0 12px; color: var(--site-muted); }
+  .content-page .anniversary-filters { margin: 12px 0 16px; padding: 12px; gap: 10px; border-radius: 12px; background: var(--site-surface); border-color: var(--site-line); }
+  .anniversary-page .anniversary-filters :is(select,button) { min-height: 40px; border-radius: 8px; font-size: 13px; }
+  .anniversary-page .anniversary-dashboard { display: grid; grid-template-columns: minmax(0, 1.65fr) minmax(300px, 1fr); gap: 20px; align-items: start; }
+  .anniversary-page .anniversary-month { grid-column: 1; grid-row: 1; margin: 0; min-width: 0; }
+  .anniversary-page .anniversary-overview { grid-column: 2; grid-row: 1; display: flex; flex-direction: column; gap: 14px; margin: 0; min-width: 0; }
+  .anniversary-page :is(.anniversary-today,.anniversary-upcoming,.day-details,.calendar-scroll) { background: var(--site-surface); border: 1px solid var(--site-line); border-radius: 12px; box-shadow: 0 2px 5px #0000000a; }
+  .content-page .anniversary-page :is(.anniversary-today,.anniversary-upcoming,.day-details) { padding: 14px 16px; }
+  .anniversary-page .anniversary-section-heading { border-color: var(--site-line); padding-bottom: 8px; }
+  .content-page .anniversary-page .anniversary-section-heading h2 { font-size: 18px; line-height: 1.4; color: var(--site-ink); }
+  .anniversary-page .anniversary-section-heading > span { background: var(--site-subtle); border-radius: 12px; padding: 1px 8px; }
+  .content-page .anniversary-page .anniversary-no-today { margin: 10px 0 0; padding: 8px 10px; border-radius: 8px; background: var(--site-subtle); font-size: 12px; }
+  .content-page .anniversary-page #upcoming-range { font-size: 11px; margin: 8px 0 4px; }
+  .anniversary-page #upcoming { max-height: 480px; overflow-y: auto; scrollbar-gutter: stable; }
+  .content-page .anniversary-page .anniversary-agenda > li { grid-template-columns: 78px minmax(0,1fr); gap: 8px; padding: 3px 0; border-color: var(--site-line); }
+  .anniversary-page .agenda-date { padding-top: 5px; }
+  .anniversary-page .agenda-date button { border-radius: 8px; padding: 5px; }
+  .anniversary-page .agenda-date time { font-size: 16px; }
+  .anniversary-page :is(.anniversary-today-list,.agenda-items) > li { padding: 7px 0; }
+  .anniversary-page .anniversary-event-meta { gap: 6px; }
+  .anniversary-page .anniversary-event-meta .category[data-kind] { display: inline-flex; align-items: center; gap: 5px; }
+  .anniversary-page .category[data-kind]::before { content: ''; width: 7px; height: 7px; border-radius: 50%; background: #666; flex: 0 0 7px; }
+  .anniversary-page .category[data-kind="birthday"]::before { background: #ad3c68; }
+  .anniversary-page .category[data-kind="debut"]::before { background: #2469ac; }
+  .anniversary-page .category[data-kind="group"]::before { background: #7554a8; }
+  .anniversary-page .anniversary-simple-event { position: relative; }
+  .anniversary-page .anniversary-simple-event > strong { position: absolute; width: 1px; height: 1px; padding: 0; margin: 0; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+  .anniversary-page .anniversary-simple-event .anniversary-subjects { margin-top: 3px; }
+  .anniversary-page .anniversary-simple-event .anniversary-person { font-size: 14px; font-weight: 600; text-decoration: none; }
+  .anniversary-page .anniversary-simple-event a.anniversary-person:hover { text-decoration: underline; }
+  .anniversary-page .anniversary-avatar { width: 32px; height: 32px; }
+  .content-page .anniversary-page .anniversary-month-controls { margin: 10px 0 6px; gap: 6px; }
+  .anniversary-page .anniversary-month-controls button { min-height: 36px; font-size: 13px; padding: 5px 12px; border-radius: 8px; border-color: var(--site-line); }
+  .anniversary-page .anniversary-month-controls strong { min-width: 92px; font-size: 17px; }
+  .anniversary-page .anniversary-month-controls #current-month { margin-left: auto; }
+  .content-page .anniversary-page #calendar-status { margin: 0; }
+  .anniversary-page #calendar-status:not(:empty) { font-size: 11px; }
+  .content-page .anniversary-page .calendar-hint { margin: 4px 0 8px; font-size: 11px; }
+  .content-page .anniversary-page .calendar-layout { grid-template-columns: minmax(0,1fr); gap: 12px; }
+  .content-page .anniversary-page .calendar-scroll { padding: 8px; }
+  .content-page .anniversary-page .anniversary-calendar caption { font-size: 16px; padding: 8px 6px 10px; }
+  .anniversary-page .anniversary-calendar th { padding: 6px 0; }
+  .content-page .anniversary-page .anniversary-calendar td { padding: 2px; }
+  .content-page .anniversary-page .anniversary-calendar td.outside { border-radius: 6px; background: var(--site-subtle); }
+  .content-page .anniversary-page :is(.day-button,.day-static) { box-sizing: border-box; min-height: 70px; padding: 4px 5px; align-items: flex-start; justify-content: flex-start; gap: 3px; border-radius: 8px; border-color: transparent; background: transparent; overflow: hidden; text-decoration: none; }
+  .anniversary-page :is(.day-button,.day-static) > time { display: grid; place-items: center; width: 24px; height: 24px; font-size: 13px; font-weight: 600; }
+  .anniversary-page .day-button:hover { background: var(--site-subtle); }
+  .content-page .anniversary-page .day-button[aria-pressed="true"] { border-color: var(--site-ink); background: var(--site-subtle); }
+  .content-page .anniversary-page .day-button:focus-visible { outline: 2px solid var(--site-ink); outline-offset: -2px; }
+  .content-page .anniversary-page .day-button[aria-pressed="true"]:focus-visible { border-color: transparent; }
+  .anniversary-page .day-markers { display: none; }
+  .anniversary-page .day-preview { display: flex; align-items: flex-start; gap: 4px; width: 100%; min-width: 0; text-align: left; font-size: 10px; line-height: 1.35; color: var(--site-ink); }
+  .anniversary-page .day-preview .dot { flex: 0 0 6px; width: 6px; height: 6px; margin-top: 3px; }
+  .anniversary-page .day-preview-title { display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; overflow: hidden; overflow-wrap: anywhere; min-width: 0; }
+  .anniversary-page .day-count { min-height: 0; line-height: 1.2; font-size: 10px; }
+  .anniversary-page .day-count[data-count="1"] { display: none; }
+  .anniversary-page .day-details h2 { margin: 0 0 8px; font-size: 17px; }
+  .anniversary-page .day-details ul { margin: 0; }
+  .anniversary-page .day-details li { padding: 8px 0; }
+  .content-page .anniversary-page .day-details > p { margin: 6px 0 0; font-size: 13px; color: var(--site-muted); }
+  .content-page .anniversary-page .calendar-legend { margin: 10px 0 0; font-size: 11px; }
+}

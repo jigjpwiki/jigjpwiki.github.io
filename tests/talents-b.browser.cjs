@@ -295,6 +295,18 @@ const yt = [
         assert.equal(await p.locator(".profile-biography details").getAttribute("open"),"");
         if(person.activityStatus.value!=="unknown")assert.equal(await p.locator(".profile-activity").getAttribute("data-activity"),person.activityStatus.value);
       }
+      if (width >= 1000 && !before) {
+        const mainColumn = await p.locator(".profile-primary").boundingBox();
+        const side = await p.locator(".profile-secondary").boundingBox();
+        assert(side.x >= mainColumn.x + mainColumn.width, "Profile metadata is placed alongside content");
+        assert.equal(await p.locator(".profile-link-icon").first().isVisible(), true);
+        if (process.env.EVENT_SCREENSHOTS) {
+          const out = path.join(process.env.EVENT_SCREENSHOTS, "talent-profile");
+          fs.mkdirSync(out, {recursive:true});
+          await p.screenshot({path:path.join(out,"fixture-live-1440.png")});
+          await p.screenshot({path:path.join(out,"fixture-full-1440.png"),fullPage:true});
+        }
+      }
       await capture("profile");
       if (!before) {
         const unregistered = master.talents.find(

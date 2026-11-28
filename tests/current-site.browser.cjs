@@ -117,6 +117,18 @@ const { chromium } = require("playwright"),
             1,
           );
         }
+        if (width === 1440 && javaScriptEnabled && process.env.EVENT_SCREENSHOTS) {
+          const out = path.join(process.env.EVENT_SCREENSHOTS, "talent-profile");
+          fs.mkdirSync(out,{recursive:true});
+          for (const id of ["tal-000002","tal-000070"]) {
+            if (!people.some(t=>t.id===id)) continue;
+            await p.goto(base + "/talents/" + id + "/");
+            await p.waitForFunction(()=>!document.querySelector("#talent-streams").hasAttribute("aria-busy"));
+            assert.equal(await p.evaluate(()=>document.documentElement.scrollWidth>innerWidth),false);
+            await p.screenshot({path:path.join(out,id+"-1440.png")});
+            await p.screenshot({path:path.join(out,id+"-full-1440.png"),fullPage:true});
+          }
+        }
         assert.deepEqual(errors, []);
         await c.close();
         console.log(

@@ -489,3 +489,126 @@
     white-space: nowrap;
   }
 }
+
+/* Profile dashboard: desktop design follows the schedule and talent directory.
+   Mobile retains the existing reading order and vertical stream cards. */
+.talent-profile .profile-layout { display: flex; flex-direction: column; }
+.talent-profile :is(.profile-primary,.profile-secondary,.profile-stream-header) { display: contents; }
+.talent-profile .profile-layout #talent-streams { order: 0; }
+.talent-profile .profile-layout #profile-anniversaries { order: 1; }
+.talent-profile .profile-layout #profile-music { order: 2; }
+.talent-profile .profile-layout #profile-events { order: 3; }
+.talent-profile .profile-layout #profile-goods { order: 4; }
+.talent-profile .profile-layout #profile-biography { order: 5; }
+.talent-profile .profile-link-icon { display: none; }
+.talent-profile .profile-destinations { display: contents; }
+.talent-profile .profile-hero .talent-links { flex-basis: 100%; }
+.talent-profile .profile-hero { flex-wrap: wrap; }
+.talent-profile .profile-hero .profile-identity { flex: 1; }
+.talent-profile .profile-hero .profile-destinations .talent-links { margin-left: 0; }
+@media (max-width: 999px) {
+  .talent-profile .profile-hero .talent-links { width: 100%; margin-top: 0; }
+}
+@media (min-width: 1000px) {
+  .site-shell--browse > main.talent-profile { padding-top: 22px; }
+  .talent-profile .breadcrumbs { margin-bottom: 12px; font-size: 12px; }
+  .talent-profile .profile-hero {
+    display: grid; grid-template-columns: 104px minmax(0,1fr) minmax(250px, .95fr);
+    align-items: center; gap: 18px; margin: 0 0 12px; padding: 20px;
+    background: var(--site-surface); border: 1px solid var(--site-line);
+    border-radius: 12px; box-shadow: 0 2px 5px #0000000a;
+  }
+  .talent-profile .profile-hero .talent-avatar { width: 104px; height: 104px; flex-basis: 104px; border: 1px solid var(--site-line); }
+  .talent-profile .profile-hero h1 { font-size: clamp(26px,2.5vw,34px); line-height: 1.25; margin: 0; color: var(--site-ink); }
+  .talent-profile .profile-name-row { gap: 6px 12px; margin-bottom: 8px; }
+  .talent-profile .profile-hero p { margin: 3px 0; color: var(--site-muted); font-size: 13px; line-height: 1.6; }
+  .talent-profile .profile-groups { margin-top: 4px; gap: 4px 10px; }
+  .talent-profile .profile-groups a { font-size: 13px; }
+  .talent-profile .profile-activity { background: transparent; border: 0; padding: 0; font-weight: 400; color: var(--site-muted); }
+  .talent-profile .profile-activity[data-activity="active"] { background: transparent; }
+  .talent-profile .profile-destinations { display: block; min-width: 0; border-left: 1px solid var(--site-line); padding-left: 18px; }
+  .talent-profile .profile-destinations .talent-links { margin: 0; gap: 6px; }
+  .talent-profile .talent-links a {
+    min-height: 36px; padding: 5px 10px; border-radius: 8px; gap: 6px;
+    font-size: 12px; line-height: 1.4; color: var(--site-ink);
+  }
+  .talent-profile .profile-link-icon { display: inline-block; width: 16px; height: 16px; flex: 0 0 16px; }
+  .talent-profile [data-profile-service="youtube"] .profile-link-icon { color: #c90000; }
+  .talent-profile [data-profile-service="twitch"] .profile-link-icon { color: #6441a5; }
+  .talent-profile .profile-jumps { margin-bottom: 18px; padding: 0; gap: 18px; border-color: var(--site-line); }
+  .talent-profile .profile-jumps a { min-height: 40px; font-size: 13px; }
+  .talent-profile .profile-layout { display: grid; grid-template-columns: minmax(0, 2.15fr) minmax(280px, 1fr); gap: 22px; align-items: start; }
+  .talent-profile .profile-primary, .talent-profile .profile-secondary { display: flex; flex-direction: column; gap: 22px; min-width: 0; }
+  .talent-profile .profile-primary > .profile-section, .talent-profile .profile-secondary > .profile-section { margin: 0; padding: 0; min-width: 0; border: 0; }
+  .talent-profile .profile-section > h2, .talent-profile .profile-stream-header > h2 { font-size: 20px; line-height: 1.4; margin: 0 0 12px; padding: 0; border: 0; color: var(--site-ink); }
+  .talent-profile .profile-stream-header { display: flex; flex-wrap: wrap; gap: 8px 12px; justify-content: space-between; align-items: center; padding-bottom: 10px; border-bottom: 1px solid var(--site-line); }
+  .talent-profile .profile-stream-header > h2 { margin: 0; }
+  .talent-profile .stream-controls { gap: 10px; justify-content: flex-end; }
+  .talent-profile .stream-controls a { font-size: 12px; text-decoration: none; }
+  .talent-profile .stream-controls button { min-height: 36px; padding: 5px 10px; font-size: 12px; border-radius: 8px; border-color: var(--site-line); }
+  .talent-profile #talent-streams { display: flex; flex-direction: column; }
+  .talent-profile #talent-streams .profile-stream-header { order: 0; }
+  .talent-profile #talent-streams .stream-feedback { order: 1; margin: 8px 0 0; font-size: 12px; }
+  .talent-profile #talent-streams [data-stream-output] { order: 2; }
+  .talent-profile #talent-streams .stream-help { order: 3; }
+  .talent-profile #talent-streams [data-stream-fallback] { order: 4; }
+  .talent-profile #talent-streams :is(.stream-help,[data-stream-fallback]) { margin: 8px 0 0; color: var(--site-muted); font-size: 12px; }
+  .talent-profile #talent-streams :is(.stream-help,[data-stream-fallback]) > summary { padding: 6px 0; }
+  .talent-profile #talent-streams [data-stream-group] { margin: 12px 0 18px; }
+  .talent-profile #talent-streams [data-stream-group] > h3 { font-size: 14px; line-height: 1.4; margin: 0 0 8px; color: var(--site-ink); }
+  .talent-profile .talent-stream-grid { grid-template-columns: minmax(0,1fr); gap: 10px; }
+  .talent-profile .talent-stream-card {
+    display: grid; grid-template-columns: minmax(0,1fr) minmax(144px,30%);
+    grid-template-areas: "body media"; align-items: stretch;
+    border-radius: 12px; border-top-color: var(--site-line); border-right-color: var(--site-line); border-bottom-color: var(--site-line);
+    box-shadow: 0 2px 5px #0000000a;
+  }
+  .talent-profile .talent-stream-card.is-live { border-top-color: #e00; border-right-color: #e00; border-bottom-color: #e00; }
+  .talent-profile .talent-stream-card:hover { box-shadow: 0 4px 12px #00000014; border-top-color: #aaa; border-right-color: #aaa; border-bottom-color: #aaa; }
+  .talent-profile .talent-stream-card.is-live:hover { border-top-color: #e00; border-right-color: #e00; border-bottom-color: #e00; }
+  .talent-profile .stream-media { grid-area: media; align-self: center; width: 100%; aspect-ratio: 16/9; }
+  .talent-profile .stream-card-body { grid-area: body; padding: 10px 14px; min-width: 0; display: flex; flex-direction: column; justify-content: center; }
+  .talent-profile .stream-byline { gap: 0; line-height: 1.4; }
+  .talent-profile .stream-byline :is(.stream-avatar,.stream-person-name) { display: none; }
+  .talent-profile .stream-platform { margin-left: 0; font-size: 11px; font-weight: 600; }
+  .talent-profile .talent-stream-card h4 {
+    font-size: 15px; line-height: 1.45; font-weight: 600; margin: 4px 0;
+    display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;
+  }
+  .talent-profile .talent-stream-card time { font-size: 12px; color: var(--site-muted); font-variant-numeric: tabular-nums; }
+  .talent-profile .talent-stream-card:not(.is-live) .stream-state {
+    position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+    overflow: hidden; clip-path: inset(50%); white-space: nowrap;
+  }
+  .talent-profile .empty-state { border: 0; background: var(--site-subtle); padding: 9px 12px; border-radius: 8px; font-size: 12px; }
+  .talent-profile .profile-secondary > .profile-section {
+    background: var(--site-surface); border: 1px solid var(--site-line); padding: 16px; border-radius: 12px;
+    box-shadow: 0 2px 5px #0000000a;
+  }
+  .talent-profile .profile-secondary .profile-section > h2 { font-size: 17px; margin-bottom: 10px; }
+  .talent-profile .profile-anniversaries { margin: 0; border-top: 0; }
+  .talent-profile .profile-anniversaries li { border-bottom: 0; border-top: 1px solid var(--site-line); }
+  .talent-profile .profile-anniversaries a { display: grid; grid-template-columns: 60px minmax(0,1fr) 14px; gap: 8px; padding: 10px 0; align-items: center; font-size: 13px; line-height: 1.5; }
+  .talent-profile .profile-anniversaries time { min-width: 0; font-size: 15px; font-weight: 700; font-variant-numeric: tabular-nums; }
+  .talent-profile .profile-anniversaries small { margin-top: 3px; font-size: 11px; }
+  .talent-profile .anniversary-cta { font-size: 0; margin: 0; text-align: right; }
+  .talent-profile .anniversary-cta > span { font-size: 14px; color: var(--site-muted); }
+  .talent-profile .profile-anniversaries a:hover { text-decoration: underline; }
+  .talent-profile .profile-biography details { padding: 0; background: transparent; border: 0; }
+  .talent-profile .profile-biography summary { font-size: 13px; min-height: 0; padding: 8px 0; border-top: 1px solid var(--site-line); }
+  .talent-profile .profile-biography details ul { padding-left: 16px; margin: 6px 0; }
+  .talent-profile .profile-biography details p { margin: 6px 0; color: var(--site-muted); }
+  .talent-profile .profile-primary :is(#profile-music,#profile-events,#profile-goods) > h2 { padding-bottom: 10px; border-bottom: 1px solid var(--site-line); }
+  .talent-profile .profile-primary .related-list { display: grid; gap: 8px; margin: 8px 0; }
+  .talent-profile .profile-primary .related-list > li { min-width: 0; margin: 0; padding: 12px 14px; border-radius: 12px; }
+  .talent-profile .profile-primary .related-list > li p { margin: 3px 0 0; font-size: 12px; color: var(--site-muted); }
+  .talent-profile .profile-primary .goods-grid { grid-template-columns: repeat(2,minmax(0,1fr)); gap: 10px; }
+  .talent-profile .profile-primary .goods-card { border-radius: 12px; padding: 12px; min-width: 0; }
+  .talent-profile .profile-primary .goods-cover-empty .goods-image { min-height: 34px; aspect-ratio: auto; font-size: 11px; }
+  .talent-profile .profile-primary .goods-card h2 { font-size: 15px; line-height: 1.5; margin: 7px 0; }
+  .talent-profile .profile-primary .goods-card p { font-size: 12px; margin: 5px 0; overflow-wrap: anywhere; }
+}
+@media (max-width: 600px) {
+  .talent-profile .profile-hero { display: flex; }
+  .talent-profile .profile-hero .talent-links { margin: 0; }
+}

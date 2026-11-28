@@ -1,14 +1,9 @@
 {
-  "version": "2.25.0",
+  "version": "2.25.1",
   "changes": [
-    "タレントの表示順を事務所別・所属開始日／デビュー日順に統一しました。"
+    "PC版タレント一覧の検索・所属別カードをコンパクトに整理しました。"
   ],
   "featurePaths": [
-    "/",
-    "/talents/",
-    "/anniversaries/",
-    "/music/",
-    "/events/",
-    "/goods/"
+    "/talents/"
   ]
 }

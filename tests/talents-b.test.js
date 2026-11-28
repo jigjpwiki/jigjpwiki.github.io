@@ -191,3 +191,15 @@ test("profile navigation only links to rendered sections and group filter links 
   }
   assert(!nav.includes("#profile-anniversaries"));assert(!nav.includes("#profile-goods"));
 });
+
+test("directory cards distinguish the representative affiliation and only abbreviate matching organization group prefixes", () => {
+  const master = structuredClone(require("./fixtures/admin-vnext-baseline.json").talents);
+  const t = master.talents.find(p => p.visibility !== "draft" && p.affiliations.some(a => a.status === "current"));
+  const primary = master.organizations.find(o => t.affiliations.some(a => a.organizationId === o.id && a.status === "current"));
+  const groups = [{id:"test-a",organizationId:primary.id,name:primary.name+" 試験",talentIds:[t.id]}, {id:"test-b",organizationId:"other",name:primary.name+" 別企画",talentIds:[t.id]}];
+  const card = talentCards(master,groups).split('id="'+t.id+'"')[1].split("</li>")[0];
+  assert(card.includes('class="directory-primary-affiliation"'));
+  assert(card.includes('class="directory-group-short">試験</span>'));
+  assert(card.includes(primary.name+" 別企画"));
+  assert(!card.includes('class="directory-group-short">別企画'));
+});

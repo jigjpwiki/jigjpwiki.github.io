@@ -500,7 +500,7 @@
 .talent-profile .profile-layout #profile-events { order: 3; }
 .talent-profile .profile-layout #profile-goods { order: 4; }
 .talent-profile .profile-layout #profile-biography { order: 5; }
-.talent-profile .profile-link-icon { display: none; }
+.talent-profile .profile-link-icon, .talent-profile .stream-platform-strip { display: none; }
 .talent-profile .profile-destinations { display: contents; }
 .talent-profile .profile-hero .talent-links { flex-basis: 100%; }
 .talent-profile .profile-hero { flex-wrap: wrap; }
@@ -558,14 +558,27 @@
   .talent-profile #talent-streams [data-stream-group] > h3 { font-size: 14px; line-height: 1.4; margin: 0 0 8px; color: var(--site-ink); }
   .talent-profile .talent-stream-grid { grid-template-columns: minmax(0,1fr); gap: 10px; }
   .talent-profile .talent-stream-card {
-    display: grid; grid-template-columns: minmax(0,1fr) minmax(144px,30%);
-    grid-template-areas: "body media"; align-items: stretch;
-    border-radius: 12px; border-top-color: var(--site-line); border-right-color: var(--site-line); border-bottom-color: var(--site-line);
-    box-shadow: 0 2px 5px #0000000a;
+    display: grid; grid-template-columns: 5px minmax(0,1fr) minmax(144px,30%);
+    grid-template-areas: "strip body media"; align-items: stretch;
+    border: 0; border-radius: 12px; overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0,0,0,.1);
+    transition: box-shadow .3s ease, transform .3s ease;
   }
-  .talent-profile .talent-stream-card.is-live { border-top-color: #e00; border-right-color: #e00; border-bottom-color: #e00; }
-  .talent-profile .talent-stream-card:hover { box-shadow: 0 4px 12px #00000014; border-top-color: #aaa; border-right-color: #aaa; border-bottom-color: #aaa; }
-  .talent-profile .talent-stream-card.is-live:hover { border-top-color: #e00; border-right-color: #e00; border-bottom-color: #e00; }
+  .talent-profile .talent-stream-card .stream-platform-strip {
+    display: block; grid-area: strip; align-self: stretch; width: 5px;
+  }
+  .talent-profile .service-youtube .stream-platform-strip { background: #ff0000; }
+  .talent-profile .service-twitch .stream-platform-strip { background: #6441a5; }
+  .talent-profile .talent-stream-card.is-live { border: 2px solid #e00; }
+  .talent-profile .talent-stream-card.is-live.service-twitch {
+    border: 2px solid transparent;
+    background: linear-gradient(#fff,#fff) padding-box, linear-gradient(to right,#6441a5,#e00) border-box;
+  }
+  .talent-profile .talent-stream-card:hover { box-shadow: 0 10px 20px rgba(0,0,0,.2); transform: translateY(-3px); }
+  @media (prefers-reduced-motion: reduce) {
+    .talent-profile .talent-stream-card { transition: none; }
+    .talent-profile .talent-stream-card:hover { transform: none; }
+  }
   .talent-profile .stream-media { grid-area: media; align-self: center; width: 100%; aspect-ratio: 16/9; }
   .talent-profile .stream-card-body { grid-area: body; padding: 10px 14px; min-width: 0; display: flex; flex-direction: column; justify-content: center; }
   .talent-profile .stream-byline { gap: 0; line-height: 1.4; }
@@ -588,8 +601,8 @@
   .talent-profile .profile-secondary .profile-section > h2 { font-size: 17px; margin-bottom: 10px; }
   .talent-profile .profile-anniversaries { margin: 0; border-top: 0; }
   .talent-profile .profile-anniversaries li { border-bottom: 0; border-top: 1px solid var(--site-line); }
-  .talent-profile .profile-anniversaries a { display: grid; grid-template-columns: 60px minmax(0,1fr) 14px; gap: 8px; padding: 10px 0; align-items: center; font-size: 13px; line-height: 1.5; }
-  .talent-profile .profile-anniversaries time { min-width: 0; font-size: 15px; font-weight: 700; font-variant-numeric: tabular-nums; }
+  .talent-profile .profile-anniversaries a { display: grid; grid-template-columns: 76px minmax(0,1fr) 14px; gap: 8px; padding: 10px 0; align-items: center; font-size: 13px; line-height: 1.5; }
+  .talent-profile .profile-anniversaries time { min-width: 0; font-size: 15px; font-weight: 700; font-variant-numeric: tabular-nums; white-space: nowrap; overflow-wrap: normal; }
   .talent-profile .profile-anniversaries small { margin-top: 3px; font-size: 11px; }
   .talent-profile .anniversary-cta { font-size: 0; margin: 0; text-align: right; }
   .talent-profile .anniversary-cta > span { font-size: 14px; color: var(--site-muted); }

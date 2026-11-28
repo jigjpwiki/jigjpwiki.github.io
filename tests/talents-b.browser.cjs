@@ -258,20 +258,32 @@ const yt = [
             .innerText(),
           "ON AIR",
         );
-        assert.equal(
-          await p
-            .locator(".service-twitch")
-            .first()
-            .evaluate((e) => getComputedStyle(e).borderLeftColor),
-          "rgb(100, 65, 165)",
-        );
-        assert.equal(
-          await p
-            .locator(".service-youtube")
-            .first()
-            .evaluate((e) => getComputedStyle(e).borderLeftColor),
-          "rgb(255, 0, 0)",
-        );
+        for (const [service, color] of [["twitch","rgb(100, 65, 165)"],["youtube","rgb(255, 0, 0)"]]) {
+          const card = p.locator(".talent-stream-card.service-" + service).first();
+          if (width >= 1000) {
+            const strip = card.locator(".stream-platform-strip");
+            assert.equal(await strip.evaluate(e => getComputedStyle(e).backgroundColor), color);
+            const band = await strip.boundingBox(), outer = await card.boundingBox();
+            assert.equal(band.width, 5);
+            assert(Math.abs(band.x - outer.x) <= 2.1);
+            assert(Math.abs(band.height - outer.height) <= 4.1);
+            const style = await card.evaluate(e => {
+              const s = getComputedStyle(e);
+              return {border: s.borderLeftWidth, top: s.borderTopColor, background: s.backgroundImage, live: e.classList.contains("is-live")};
+            });
+            assert.equal(style.border, style.live ? "2px" : "0px");
+            if (style.live && service === "twitch") assert.match(style.background, /linear-gradient.*rgb\(100, 65, 165\).*rgb\(238, 0, 0\)/);
+            if (style.live && service === "youtube") assert.equal(style.top, "rgb(238, 0, 0)");
+          } else {
+            assert.equal(await card.evaluate(e => getComputedStyle(e).borderLeftColor), color);
+            assert.equal(await card.locator(".stream-platform-strip").isVisible(), false);
+          }
+        }
+        if (width >= 1000) {
+          for (const date of await p.locator(".profile-anniversaries time").all()) {
+            assert.equal(await date.evaluate(e => getComputedStyle(e).whiteSpace), "nowrap");
+          }
+        }
         assert.doesNotMatch(
           await p.locator("[data-stream-output]").innerText(),
           /収集時点|公開フィード|確認済み/,

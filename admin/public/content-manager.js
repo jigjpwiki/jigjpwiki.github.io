@@ -454,8 +454,8 @@ export function mountContent({
               ).label,
           ),
         );
-      const ids = [...new Set(ps.flatMap((p) => p.talentIds))];
-      const names = (globalThis.MemberOrder?.sortIds(ids,referenceModels.talents.talents)||ids)
+      const memberIds = [...new Set(ps.flatMap((p) => p.talentIds))];
+      const names = (globalThis.MemberOrder?.sortIds(memberIds,referenceModels.talents.talents)||memberIds)
         .map(
           (id) =>
             referenceModels.talents.talents.find((t) => t.id === id)

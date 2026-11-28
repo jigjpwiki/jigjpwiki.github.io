@@ -4,8 +4,6 @@
     "PC版タレント個別ページを配信・プロフィール・記念日のダッシュボードに刷新しました。"
   ],
   "featurePaths": [
-    "/talents/",
-    "/talents/tal-000002/",
-    "/talents/tal-000070/"
+    "/talents/"
   ]
 }

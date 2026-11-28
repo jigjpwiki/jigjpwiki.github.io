@@ -150,7 +150,7 @@
 .music-detail-view .music-song-hero{grid-template-columns:minmax(0,220px) minmax(0,1fr)}
 .music-detail-view .music-song-art{aspect-ratio:16/9;max-width:none;border-radius:8px}
 .music-detail-view .music-song-art:not(:has(img)){max-width:120px;aspect-ratio:1}
-.music-detail-view .music-song-hero:not(:has(img)) {grid-template-columns:120px minmax(0,1fr)}
+.music-detail-view .music-song-hero:not(:has(.music-song-art img)) {grid-template-columns:120px minmax(0,1fr)}
 .music-detail-view .content-thumbnail{border-radius:8px}
 .content-page .music-detail-view h1{font-size:24px;line-height:1.4;margin:0;overflow-wrap:anywhere}
 .music-detail-info{display:flex;align-items:flex-start;flex-direction:column;gap:8px;min-width:0}
@@ -188,7 +188,7 @@
  .content-page:has(.music-detail-view){padding-top:24px}
  .content-page .music-detail-view .music-karaoke-hero{grid-template-columns:minmax(0,320px) minmax(0,1fr)}
  .music-detail-view .music-song-hero{grid-template-columns:minmax(0,240px) minmax(0,1fr)}
- .music-detail-view .music-song-hero:not(:has(img)){grid-template-columns:120px minmax(0,1fr)}
+ .music-detail-view .music-song-hero:not(:has(.music-song-art img)){grid-template-columns:120px minmax(0,1fr)}
  .content-page .music-detail-view .feature-setlist>li{grid-template-columns:32px minmax(0,1fr) minmax(124px,auto)}
  .music-detail-view .track-info{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,0.65fr) auto;align-items:center;gap:4px 12px}
  .music-detail-view .track-info .music-singers,.music-detail-view .track-info>p.feature-note,.music-detail-view .track-source[open]{grid-column:1/-1}
@@ -199,7 +199,7 @@
 @media(max-width:700px){
  .music-page .music-card-meta,.music-page .music-song-heading{flex-wrap:wrap}
  .music-detail-view :is(.music-song-hero,.music-karaoke-hero){grid-template-columns:minmax(0,1fr);gap:12px;padding:12px}
- .music-detail-view .music-song-hero:not(:has(img)){grid-template-columns:minmax(0,1fr)}
+ .music-detail-view .music-song-hero:not(:has(.music-song-art img)){grid-template-columns:minmax(0,1fr)}
  .music-detail-view .music-song-art{max-width:240px}
  .content-page .music-detail-view h1{font-size:20px}
  .music-history-list>li{grid-template-columns:88px minmax(0,1fr);gap:8px}

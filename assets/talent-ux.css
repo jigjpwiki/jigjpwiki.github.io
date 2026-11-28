@@ -625,3 +625,28 @@
   .talent-profile .profile-hero { display: flex; }
   .talent-profile .profile-hero .talent-links { margin: 0; }
 }
+
+/* Actual Font Awesome Brands SVGs; keep social destinations and reference links distinct. */
+.talent-profile .profile-link-external { display: none; }
+.talent-profile .profile-destinations:empty { display: none; }
+@media (max-width: 999px) {
+  .talent-profile .profile-hero .profile-destinations:not(:empty) {
+    display: flex; flex: 1 1 100%; width: 100%; flex-wrap: wrap; gap: 6px;
+  }
+  .talent-profile .profile-destinations .talent-links { display: contents; }
+}
+@media (min-width: 1000px) {
+  .talent-profile .profile-destinations:not(:empty) { display: flex; flex-direction: column; gap: 8px; }
+  .talent-profile .profile-destinations .talent-links { flex-basis: auto; }
+  .talent-profile .profile-brand-icon { width: 16px; height: 16px; flex: 0 0 16px; }
+  .talent-profile [data-profile-service="youtube"] .profile-brand-icon { color: #ff0000; }
+  .talent-profile [data-profile-service="twitch"] .profile-brand-icon { color: #6441a5; }
+  .talent-profile [data-profile-service="x"], .talent-profile [data-profile-service="tiktok"] { color: #171717; }
+  .talent-profile [data-profile-service="x"] { position: relative; min-width: 36px; justify-content: center; }
+  .talent-profile [data-profile-service="x"] .profile-service-label {
+    position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+    overflow: hidden; clip-path: inset(50%); white-space: nowrap;
+  }
+  .talent-profile .profile-reference-links a { color: var(--site-muted); }
+  .talent-profile .profile-link-external { display: inline; font-size: 12px; color: var(--site-muted); }
+}

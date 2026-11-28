@@ -312,6 +312,26 @@ const yt = [
         const side = await p.locator(".profile-secondary").boundingBox();
         assert(side.x >= mainColumn.x + mainColumn.width, "Profile metadata is placed alongside content");
         assert.equal(await p.locator(".profile-link-icon").first().isVisible(), true);
+        const brandViewBoxes = {youtube:"0 0 576 512",twitch:"0 0 512 512",x:"0 0 512 512",tiktok:"0 0 448 512"};
+        for (const link of await p.locator(".profile-social-links a").all()) {
+          const service = await link.getAttribute("data-profile-service");
+          if (!Object.hasOwn(brandViewBoxes,service)) continue;
+          const icon = link.locator("svg.profile-brand-icon");
+          assert.equal(await icon.getAttribute("viewBox"),brandViewBoxes[service]);
+          assert.equal(await icon.getAttribute("aria-hidden"),"true");
+          assert.equal(await icon.getAttribute("fill"),"currentColor");
+          assert.equal(await link.getAttribute("target"),"_blank");
+          assert.equal(await icon.isVisible(),true);
+          if (service === "x") {
+            assert.equal(await link.locator(".profile-service-label").evaluate(e=>e.getBoundingClientRect().width),1);
+            assert(await link.getByText("X",{exact:true}).count());
+          }
+        }
+        const refs = p.locator(".profile-reference-links");
+        if (await refs.count()) {
+          assert.equal(await refs.locator("[data-profile-service]").count(),0);
+          assert.equal(await refs.locator(".profile-link-external").first().isVisible(),true);
+        }
         if (process.env.EVENT_SCREENSHOTS) {
           const out = path.join(process.env.EVENT_SCREENSHOTS, "talent-profile");
           fs.mkdirSync(out, {recursive:true});

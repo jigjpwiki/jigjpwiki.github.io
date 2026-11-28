@@ -41,11 +41,14 @@
       return talent ? `<a class="anniversary-person" href="${model.detailsReady ? `/talents/${id}/` : `/talents/#${id}`}">${safe?`<span class="anniversary-avatar" aria-hidden="true"><span>${escape(talent.displayName.slice(0,1))}</span><img src="${escape(image)}" alt="" loading="lazy" referrerpolicy="no-referrer"></span>`:''}${escape(talent.displayName)}</a>` : '';
     }).join('・');
   }
+  function simpleEventPerson(event, model) {
+    const person = event.talentIds.length === 1 && !event.groupIds.length ? model.people.find(p => p.id === event.talentIds[0]) : null;
+    return person && event.title === `${person.displayName} ${types[event.type]}` ? person : null;
+  }
   function eventHtml(item, model, compact = false) {
     const years = item.years > 0 ? ` <span class="anniversary-years">${item.years}周年</span>` : '';
     const event = item.event;
-    const person = event.talentIds.length === 1 && !event.groupIds.length ? model.people.find(p => p.id === event.talentIds[0]) : null;
-    const simple = person && event.title === `${person.displayName} ${types[event.type]}`;
+    const simple = simpleEventPerson(event, model);
     return `<li data-event-id="${escape(item.event.id)}"${simple ? ' class="anniversary-simple-event"' : ""}><div class="anniversary-event-meta"><span class="category" data-kind="${item.event.type}">${types[item.event.type]}</span>${years}</div><strong>${escape(item.event.title)}</strong><div class="anniversary-subjects">${subjectLinks(item.event, model)}</div></li>`;
   }
   function calendar(model, month, today, filters = {}, selected = today, interactive = false) {
@@ -60,7 +63,8 @@
       else {
         const date = `${month}-${String(day).padStart(2, '0')}`;
         const onDay = items.filter(e => e.day === date);
-        const preview = onDay.length ? `<span class="day-preview" aria-hidden="true"><span class="dot ${onDay[0].event.type}"></span><span class="day-preview-title">${escape(onDay[0].event.title)}</span></span>` : '';
+        const previewEvent = onDay[0]?.event;
+        const preview = previewEvent ? `<span class="day-preview" aria-hidden="true" title="${escape(previewEvent.title)}"><span class="dot ${previewEvent.type}"></span><span class="day-preview-title">${escape(simpleEventPerson(previewEvent, model)?.displayName || previewEvent.title)}</span></span>` : '';
         const content = `<time datetime="${date}"${date === today ? ' aria-current="date"' : ''}>${day}</time><span class="day-markers" aria-hidden="true">${[...new Set(onDay.map(i=>i.event.type))].map(type=>`<span class="dot ${type}"></span>`).join('')}</span>${preview}<span class="day-count" data-count="${onDay.length}">${onDay.length?`${onDay.length}件`:''}</span>`;
         const label = `${year}年${m}月${day}日${date===today?' 今日':''}、記念日${onDay.length}件`;
         html += `<td${date === today ? ' class="calendar-today"' : ''}>${interactive ? `<button type="button" class="day-button" data-day="${date}" aria-label="${label}" aria-pressed="${date===selected}">${content}</button>` : onDay.length ? `<a class="day-static" href="#ann-day-${date}" aria-label="${label}">${content}</a>` : `<span class="day-static">${content}</span>`}</td>`;

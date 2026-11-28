@@ -98,7 +98,7 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
     summary.setAttribute("aria-live", "polite");
     let entries = relationEntries(choices), lookup = new Map(entries.map(row => [row.id, row]));
     const talentPicker=choices===catalog.people;
-    const selectedIds=()=>talentPicker?[...selected].sort((a,b)=>{const rank=new Map(entries.map((row,i)=>[row.id,i]));return (rank.get(a)??Infinity)-(rank.get(b)??Infinity);}):[...selected];
+    const selectedIds=()=>{const rank=new Map(entries.map((row,i)=>[row.id,i]));return talentPicker?[...selected].sort((a,b)=>(rank.get(a)??Infinity)-(rank.get(b)??Infinity)):[...selected];};
     let matching = [], active = -1, rendered = 0;
     const chunk = 40;
     const isDisabled = () => !catalog.editable || disabled();
@@ -1136,7 +1136,7 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
         const notify=()=>host.dispatchEvent(new Event("change",{bubbles:true}));
         host.append(el("p",label+"VTuber"),relationPicker({choices:catalog.people,selected:people,label:label+"VTuber",multiple:all,onChange:notify}));
         if(all)host.append(el("p",label+"グループ"),relationPicker({choices:catalog.sections.find(r=>r.entity==="group")?.items||[],selected:groups,label:label+"グループ",multiple:true,onChange:notify}));
-        return ()=>({talent:[...people][0],talentIds:[...people],groupIds:[...groups]});
+        return ()=>{const rank=new Map((catalog.people||[]).map((p,i)=>[p.id,i]));return {talent:[...people][0],talentIds:[...people].sort((a,b)=>(rank.get(a)??Infinity)-(rank.get(b)??Infinity)),groupIds:[...groups]};};
       }
       function toggle(host,text,checked,content,sync){
         const c=el("input");c.type="checkbox";c.checked=checked;
@@ -1451,7 +1451,7 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
       submit.disabled = true;
       try {
         const values = Object.fromEntries([...fields].map(([key, control]) => [key, control.value]));
-        const peopleRank=new Map(catalog.people.map((p,i)=>[p.id,i]));
+        const peopleRank=new Map((catalog.people||[]).map((p,i)=>[p.id,i]));
         for (const [key, ids] of relations) values[key] = ['talentIds','performers'].includes(key)?[...ids].sort((a,b)=>(peopleRank.get(a)??Infinity)-(peopleRank.get(b)??Infinity)):[...ids];
         if (fullTalent) {
           values.agencyState = agencyState.value;

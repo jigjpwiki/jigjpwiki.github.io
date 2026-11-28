@@ -23,7 +23,7 @@
   const starts=affiliations.filter(a=>a.organizationId===org?.id&&a.status===(current?'current':'former')).map(a=>date(a.from)).filter(Boolean).sort();
   // If debut followed entry, use debut; if they were already active before entry, use entry.
   // An earlier agency history makes a missing current entry date unsafe to infer from debut.
-  const joined=current?starts.at(-1):starts.at(-1);
+  const joined=starts.at(-1);
   const d=joined?(debut&&debut>joined?debut:joined):(!current||!former.length?debut:null);
   return {section,agency:org?organizations.indexOf(org):organizations.length,group:current?.id||(independent?'unaffiliated':former.length?'former':ended?'ended':'unknown'),date:d||null};
  }

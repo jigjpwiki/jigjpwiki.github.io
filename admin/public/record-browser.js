@@ -61,7 +61,7 @@ export function mountRecordBrowser({
   search.value = state.query || "";
   sort.setAttribute("aria-label", "並び順");
   sort.append(
-    new Option(entity === "talent" ? "事務所別" : "登録順", "standard"),
+    new Option(entity === "talent" ? "事務所別・所属／デビュー日順" : "登録順", "standard"),
     new Option("名前順", "name"),
   );
   if (entity === "talent") sort.append(new Option("登録順", "registration"));
@@ -88,7 +88,7 @@ export function mountRecordBrowser({
   );
   (entity === "talent"
     ? models.catalog.groups
-    : models.talents.talents
+    : (globalThis.MemberOrder?.orderedPeople(models.talents,models.anniversaries?.events)||models.talents.talents)
   ).forEach((r) => person.append(new Option(r.displayName || r.name, r.id)));
   person.value = state.person || "";
   const choices = columns.filter(
@@ -180,7 +180,7 @@ export function mountRecordBrowser({
     count.textContent = `${data.length}件 / 登録${rows().length}件`;
     const sections =
       entity === "talent" && sort.value === "standard"
-        ? personSections(data, models.talents.organizations)
+        ? personSections(globalThis.MemberOrder?.orderedPeople({...models.talents,talents:data},models.anniversaries?.events)||data, models.talents.organizations)
         : [{ name: search.value ? "検索結果" : title, rows: data }];
     result.replaceChildren();
     let shown = 0;

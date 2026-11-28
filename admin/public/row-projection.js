@@ -32,12 +32,13 @@ export function referenceModels(models, operations) {
     }
     return rows;
   };
+  const master={...models.talents,talents:project(models.talents.talents,"talent"),organizations:project(models.talents.organizations,"organization")};
+  const events=project(models.anniversaries?.events||[],"anniversary");
   return {
     ...models,
     talents: {
-      ...models.talents,
-      talents: project(models.talents.talents, "talent"),
-      organizations: project(models.talents.organizations, "organization"),
+      ...master,
+      talents: globalThis.MemberOrder?.orderedPeople(master,events)||master.talents,
     },
     catalog: {
       ...models.catalog,

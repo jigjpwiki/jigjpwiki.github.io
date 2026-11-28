@@ -325,7 +325,7 @@ export class Admin {
             .map((row) => ({ id: row.id, name: row.displayName,
               search: (row.aliases || []).map(alias => alias.name).join(" "),
               visibility: row.visibility ?? "public",
-              context: (row.affiliations||[]).filter(a=>a.status==="current").map(a=>models.talents.organizations.find(o=>o.id===a.organizationId&&(hasAllContent(member)||member.scope?.organizations?.includes(o.id)))?.name).filter(Boolean).join("・") || "",
+              context: (row.affiliations||[]).map(a=>{const name=models.talents.organizations.find(o=>o.id===a.organizationId&&(hasAllContent(member)||member.scope?.organizations?.includes(o.id)))?.name;return name?(a.status==="former"?"旧："+name:name):"";}).filter(Boolean).join("・") || (row.agencyStatus?.value==="unaffiliated"?"無所属":""),
             })),
         });
       }

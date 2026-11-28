@@ -6,6 +6,7 @@ const esbuild = require("esbuild"),
   { _ } = require("ajv/dist/compile/codegen");
 fs.mkdirSync("build", { recursive: true });
 fs.copyFileSync("../assets/js/goods-core.js", "public/goods-core.js");
+fs.copyFileSync("../assets/js/member-order.js", "public/member-order.js");
 const ajv = new Ajv({
   allErrors: true,
   strict: true,

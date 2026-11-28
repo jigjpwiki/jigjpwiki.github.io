@@ -40,6 +40,7 @@ export function referenceModels(models, operations) {
       ...master,
       talents: globalThis.MemberOrder?.orderedPeople(master,events)||master.talents,
     },
+    anniversaries: { ...models.anniversaries, events },
     catalog: {
       ...models.catalog,
       groups: project(models.catalog.groups, "group"),

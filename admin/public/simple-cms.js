@@ -144,6 +144,13 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
       const end = Math.min(rendered + chunk, matching.length);
       for (; rendered < end; rendered++) {
         const row = matching[rendered];
+        if (talentPicker && row.orderGroup && (rendered === 0 || row.orderGroup !== matching[rendered - 1].orderGroup)) {
+          const heading = el("div", row.orderGroup);
+          heading.className = "cms-picker-group";
+          heading.setAttribute("role", "presentation");
+          heading.setAttribute("aria-hidden", "true");
+          list.append(heading);
+        }
         const item = button("", () => choose(row.id));
         item.type = "button";
         item.id = list.id + "-" + rendered;
@@ -185,7 +192,7 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
       if (!matching.length) return;
       active = Math.max(0, Math.min(matching.length - 1, active + delta));
       while (active >= rendered) appendChunk();
-      const item = list.children[active];
+      const item = list.querySelectorAll('[role="option"]')[active];
       for (const node of list.querySelectorAll("[data-active]")) delete node.dataset.active;
       item.dataset.active = "true";
       search.setAttribute("aria-activedescendant", item.id);

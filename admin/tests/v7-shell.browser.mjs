@@ -34,7 +34,7 @@ test("all roles share the shell and separate collections while viewers have read
         categories: ["talents", "organizations", "anniversaries", "events", "music", "goods"], songs: [
           ...(latestSong ? [{ id: "song-000066", name: "新規登録した曲", search: "新曲別名", visibility: "public" }] : []),
           ...Array.from({ length: 65 }, (_, i) => ({ id: "song-" + String(65 - i).padStart(6, "0"), name: "試験楽曲" + (65 - i), visibility: "public" })),
-        ], people: Array.from({ length: 85 }, (_, i) => ({ id: "tal-" + String(i + 1).padStart(6, "0"), name: "試験ライバー" + (i + 1) })),
+        ], people: Array.from({ length: 85 }, (_, i) => ({ id: "tal-" + String(i + 1).padStart(6, "0"), name: "試験ライバー" + (i + 1), orderGroup: i < 83 ? "試験事務所1" : "試験事務所2" })),
         organizations: Array.from({ length: 65 }, (_, i) => ({ id: "org-" + String(i + 1).padStart(6, "0"), name: "試験事務所" + (i + 1) })),
         goodsEntries:[{entity:"campaign",id:"campaign-001",title:"販売企画の試験",context:"2商品 · 試験ライバー1",description:"試験商品A 試験商品B",state:"scheduled",saleMode:"受注販売",visibility:"public",productCount:2},{entity:"product",id:"product-002",title:"単独商品の試験",context:"1商品",state:"on_sale",saleMode:"先着販売",visibility:"public",productCount:1}],
         sections: collection.map(([entity, label]) => ({ entity, label, items: [
@@ -351,7 +351,9 @@ test("all roles share the shell and separate collections while viewers have read
         await page.getByRole("button", {name:"イベントを新規登録",exact:true}).click();
         const performers = page.getByRole("combobox", {name:"出演者",exact:true});
         await performers.fill("試験ライバー85");
-        await page.getByRole("option", {name:/試験ライバー85/}).click();
+        await page.locator(".cms-picker-group").filter({hasText:"試験事務所2"}).waitFor();
+        await performers.press("ArrowDown");
+        await performers.press("Enter");
         await performers.fill("試験ライバー84");
         await page.getByRole("option", {name:/試験ライバー84/}).click();
         assert.deepEqual(await page.locator(".cms-picker-chip").filter({hasText:/試験ライバー8[45]/}).evaluateAll(nodes=>nodes.map(n=>n.textContent.replace(/×$/,""))),["試験ライバー84","試験ライバー85"]);

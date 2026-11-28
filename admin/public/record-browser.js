@@ -1,4 +1,4 @@
-import { el, action, portrait } from "./controls.js";
+import { el, action, portrait, talentGroupLabel } from "./controls.js";
 const normalize = (s) =>
   String(s ?? "")
     .normalize("NFKC")
@@ -86,10 +86,25 @@ export function mountRecordBrowser({
   person.append(
     new Option(entity === "talent" ? "すべてのグループ" : "すべての人物", ""),
   );
-  (entity === "talent"
-    ? models.catalog.groups
-    : (globalThis.MemberOrder?.orderedPeople(models.talents,models.anniversaries?.events)||models.talents.talents)
-  ).forEach((r) => person.append(new Option(r.displayName || r.name, r.id)));
+  if (entity === "talent") {
+    models.catalog.groups.forEach(r => person.append(new Option(r.name, r.id)));
+  } else {
+    let previous, parent = person;
+    const people = globalThis.MemberOrder?.orderedPeople(models.talents, models.anniversaries?.events) || models.talents.talents;
+    for (const row of people) {
+      const label = talentGroupLabel(row, models.talents.organizations);
+      if (label !== previous) {
+        previous = label;
+        parent = person;
+        if (label) {
+          parent = document.createElement("optgroup");
+          parent.label = label;
+          person.append(parent);
+        }
+      }
+      parent.append(new Option(row.displayName, row.id));
+    }
+  }
   person.value = state.person || "";
   const choices = columns.filter(
     (c) => c.filter && c.options && c.key !== "visibility",

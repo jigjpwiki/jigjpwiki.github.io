@@ -309,6 +309,12 @@ export class Admin {
           ...member.scope, categories: ["talents"],
         } });
         const sections = scopedCatalog(models, member);
+        const visibleOrganizations = models.talents.organizations.filter(row => hasAllContent(member) || member.scope?.organizations.includes(row.id));
+        const groupLabel = row => {
+          const group = memberOrder.membership(row, models.talents.organizations, null).group;
+          return visibleOrganizations.find(o => o.id === group)?.name ||
+            ({ former: "旧所属", unaffiliated: "無所属", ended: "活動終了・引退", unknown: "所属不明" })[group] || "所属情報なし";
+        };
         return json({
           sha: snapshot.sha, sections, goodsEntries: scopedGoodsEntries(models, member, sections), contentPolicy: member.contentPolicy || "scoped-v1", owner: member.owner === true,
           songs: contentCategories(member).includes("music")
@@ -320,11 +326,12 @@ export class Admin {
               .sort((a, b) => b.id.localeCompare(a.id))
             : [],
           editable: member.role === "editor", publicationTracking: google, publishable: member.role === "editor" && member.directPublish === true && publishingEnabled(this.env), categories: contentCategories(member),
-          organizations: models.talents.organizations.filter((row) => hasAllContent(member) || member.scope?.organizations.includes(row.id)),
+          organizations: visibleOrganizations,
           people: memberOrder.orderedPeople(models.talents,models.anniversaries?.events).filter((row) => access.canRead("talent", row))
             .map((row) => ({ id: row.id, name: row.displayName,
               search: (row.aliases || []).map(alias => alias.name).join(" "),
               visibility: row.visibility ?? "public",
+              orderGroup: groupLabel(row),
               context: (row.affiliations||[]).map(a=>{const name=models.talents.organizations.find(o=>o.id===a.organizationId&&(hasAllContent(member)||member.scope?.organizations?.includes(o.id)))?.name;return name?(a.status==="former"?"旧："+name:name):"";}).filter(Boolean).join("・") || (row.agencyStatus?.value==="unaffiliated"?"無所属":""),
             })),
         });

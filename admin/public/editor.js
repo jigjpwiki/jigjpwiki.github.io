@@ -12,6 +12,7 @@ import {
   textField,
   choice,
   namePicker,
+  talentGroupLabel,
   safeLink,
 } from "./controls.js";
 const names = { talent: "VTuber", organization: "事務所", group: "グループ" };
@@ -257,7 +258,7 @@ export function createEditor({
           v.talentIds,
           models.talents.talents,
           (x) => set("talentIds", x),
-          { multiple: true, path: "/talentIds", registry: fields },
+          { multiple: true, path: "/talentIds", registry: fields, groupBy: row => talentGroupLabel(row, models.talents.organizations) },
         ),
       );
       const label = el("label");

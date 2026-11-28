@@ -106,6 +106,33 @@ const { chromium } = require("playwright"),
       );
     for (const route of routes)
       assert.equal((await p.request.get(base + route)).status(), 200, route);
+    // Check every generated public HTML document, including JS-disabled fallback links.
+    const {externalLinkAttrs}=require('../lib/site-pages');
+    let checked=0;
+    function inspect(dir){
+      for(const entry of fs.readdirSync(dir,{withFileTypes:true})){
+        const file=path.join(dir,entry.name);
+        if(entry.isDirectory())inspect(file);
+        else if(file.endsWith('.html')){
+          const html=fs.readFileSync(file,'utf8').replace(/<!--[\s\S]*?-->|<script\b[^>]*>[\s\S]*?<\/script\s*>/gi,'');
+          for(const tag of html.matchAll(/<a\b(?:[^"'<>]|"[^"]*"|'[^']*')*>/gi)){
+            const attrs=Object.fromEntries([...tag[0].matchAll(/\s([-\w:]+)\s*=\s*(?:"([^"]*)"|'([^']*)'|([^\s>]+))/g)].map(m=>[m[1].toLowerCase(),m[2]??m[3]??m[4]]));
+            if(!attrs.href)continue;
+            const href=attrs.href.replace(/&amp;/g,'&');
+            if(externalLinkAttrs(href)){
+              assert.equal(attrs.target,'_blank',file+' '+href);
+              assert((attrs.rel||'').split(/\s+/).includes('noopener'),file+' '+href);
+              assert((attrs.rel||'').split(/\s+/).includes('noreferrer'),file+' '+href);
+              checked++;
+            } else assert.notEqual(attrs.target,'_blank',file+' internal '+href);
+          }
+        }
+      }
+    }
+    inspect(root);
+    assert(checked>0,'External links must be present in generated pages');
+    console.log('Static external link policy checked',checked);
+
     for (const t of require("../data/talents.json").talents.filter(
       (t) => (t.visibility ?? "public") !== "public",
     )) {

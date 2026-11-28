@@ -41,7 +41,7 @@ test('event players accept only concrete HTTPS YouTube IDs, deduplicate and keep
  for(const url of ['http://youtube.com/live/'+id,'https://youtube.com.evil.test/watch?v='+id,'https://youtube.com/@channel/live','https://youtube.com/playlist?list='+id,'https://evil.test/'+id,'https://x@youtube.com/live/'+id,'https://youtube.com:444/live/'+id,'javascript:alert(1)'])assert.equal(eventYoutubeId(url),null);
  const media={videos:[{youtubeId:id,title:'<unsafe>',visibility:'public',availability:'public'}]};
  const html=eventStreamCards({videoIds:[id],streamUrls:['https://youtu.be/'+id,'https://example.com/live']},media);
- assert.equal((html.match(/data-event-player=/g)||[]).length,1);assert.match(html,/&lt;unsafe&gt;/);assert.doesNotMatch(html,/<iframe|<unsafe>/);assert.match(html,/target="_blank" rel="noopener noreferrer"/);assert.match(html,/https:\/\/example.com\/live/);
+ assert.equal((html.match(/data-event-player=/g)||[]).length,1);assert.match(html,/&lt;unsafe&gt;/);assert.doesNotMatch(html,/<unsafe>|event-player-trigger|autoplay=1/);assert.equal((html.match(/<iframe /g)||[]).length,1);assert.match(html,/src="https:\/\/www\.youtube-nocookie\.com\/embed\/cCaF5xDZ8Lc\?autoplay=0&amp;playsinline=1"/);assert.match(html,/loading="lazy"/);assert.match(html,/target="_blank" rel="noopener noreferrer"/);assert.match(html,/https:\/\/example.com\/live/);
  assert.match(eventStreamCards({videoIds:[],streamUrls:['https://youtube.com/live/'+id]},{videos:[]}),/data-event-player="cCaF5xDZ8Lc"/);
- media.videos[0].availability='unavailable';const missing=eventStreamCards({videoIds:[id],streamUrls:['https://youtu.be/'+id]},media);assert.doesNotMatch(missing,/data-event-player=/);assert.match(missing,/現在の視聴不可/);
+ media.videos[0].availability='unavailable';const missing=eventStreamCards({videoIds:[id],streamUrls:['https://youtu.be/'+id]},media);assert.doesNotMatch(missing,/data-event-player=|<iframe/);assert.match(missing,/現在の視聴不可/);
 });

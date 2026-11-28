@@ -16,6 +16,7 @@ const goodsListingCount=publishedGoods.campaigns.length+publishedGoods.products.
   if(u.pathname==='/fixture-events/')return res.setHeader('Content-Type','text/html').end(eventPages.eventList(master,fixtureEvents,'2026-11-20'));
   if(u.pathname==='/fixture-event/')return res.setHeader('Content-Type','text/html').end(eventPages.eventPage(fixtureEvents.events[0],master,fixtureEvents));
   if(u.pathname==='/fixture-event-player/')return res.setHeader('Content-Type','text/html').end(eventPages.eventPage({...fixtureEvents.events[0],streamUrls:['https://youtube.com/live/cCaF5xDZ8Lc','https://youtu.be/cCaF5xDZ8Lc','https://example.com/live']},master,fixtureEvents));
+  if(u.pathname==='/fixture-event-player-single/')return res.setHeader('Content-Type','text/html').end(eventPages.eventPage({...fixtureEvents.events[0],videoIds:[],streamUrls:['https://youtube.com/live/cCaF5xDZ8Lc']},master,fixtureEvents));
   if(u.pathname==='/fixture-campaign/'){
    const data=structuredClone(catalog);data.products[0].image='https://images.example/product.svg';
    return res.setHeader('Content-Type','text/html').end(pages.campaignPage(data.campaigns[0],master,data,now));
@@ -133,14 +134,22 @@ const goodsListingCount=publishedGoods.campaigns.length+publishedGoods.products.
   const detailBox=await detailImage.boundingBox();assert(Math.abs(detailBox.width/detailBox.height-16/9)<0.03);
   if(javaScriptEnabled)assert.equal(await p.locator('[data-event-detail-times] [data-event-phase]').innerText(),'開催予定');
   if(process.env.EVENT_SCREENSHOTS&&javaScriptEnabled&&[390,1440].includes(width))await p.screenshot({path:path.join(process.env.EVENT_SCREENSHOTS,'event-detail-'+width+'.png'),fullPage:true});
-  await p.goto(base+'/fixture-event-player/');await size('event-player-before');
+  await p.goto(base+'/fixture-event-player/');await size('event-player');
   assert.equal(await p.locator('.event-stream-grid [data-event-player]').count(),1);
-  assert.equal(await p.locator('.event-stream-grid iframe').count(),0);
+  assert.equal(await p.locator('.event-stream-grid iframe').count(),1);
   assert.equal(await p.locator('.event-stream-external').count(),2);
   assert.equal(await p.locator('.event-stream-external').first().getAttribute('target'),'_blank');
-  const trigger=p.locator('.event-player-trigger');
-  if(javaScriptEnabled){await trigger.click();const frame=p.locator('.event-player iframe');assert.equal(await frame.getAttribute('src'),'https://www.youtube-nocookie.com/embed/cCaF5xDZ8Lc?autoplay=1&playsinline=1');const rect=await frame.boundingBox();assert(Math.abs(rect.width/rect.height-16/9)<0.04);await size('event-player-after');}
-  else assert.equal(await trigger.isVisible(),false);
+  assert.equal(await p.locator('.event-player-trigger').count(),0);
+  const frame=p.locator('.event-player iframe');
+  assert.equal(await frame.getAttribute('src'),'https://www.youtube-nocookie.com/embed/cCaF5xDZ8Lc?autoplay=0&playsinline=1');
+  assert.equal(await frame.getAttribute('loading'),'lazy');
+  const playerRect=await frame.boundingBox();assert(Math.abs(playerRect.width/playerRect.height-16/9)<0.04);
+  await p.goto(base+'/fixture-event-player-single/');await size('event-player-single');
+  const single=p.locator('.event-stream-card'),singleRect=await single.boundingBox(),gridRect=await p.locator('.event-stream-grid').boundingBox();
+  assert(singleRect.width<=801);assert(Math.abs(singleRect.x+singleRect.width/2-gridRect.x-gridRect.width/2)<2,'Single player is centered');
+  assert.equal(await single.locator('h3').count(),0);
+  assert.equal(await p.locator('.event-streams').evaluate(e=>getComputedStyle(e).borderTopWidth),'0px');
+  if(process.env.EVENT_SCREENSHOTS&&javaScriptEnabled&&[390,1440].includes(width))await p.screenshot({path:path.join(process.env.EVENT_SCREENSHOTS,'event-player-'+width+'.png'),fullPage:true});
   await p.goto(base+'/anniversaries/?date=2027-03-07&type=debut&organization=org-000001');await size('anniversaries');if(javaScriptEnabled){assert.equal(await p.locator('#month-label').innerText(),'2027-03');assert.equal(await p.locator('[data-day="2027-03-07"]').getAttribute('aria-pressed'),'true');await p.locator('#next-month').click();await p.goBack();assert.equal(await p.locator('#month-label').innerText(),'2027-03');await p.locator('[data-day="2027-03-07"]').focus();await p.keyboard.press('ArrowRight');assert.equal(await p.locator('[data-day="2027-03-08"]').getAttribute('aria-pressed'),'true');}
   if(!javaScriptEnabled){await p.goto(base+'/goods/campaigns/campaign-000001/');assert.match(await p.locator('main').innerText(),/販売状態の基準/);}
   assert.deepEqual(errors,[]);await context.close();console.log(`Content UX browser passed ${width}, JS=${javaScriptEnabled}`);

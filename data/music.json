@@ -1693,7 +1693,13 @@
     },
     {
       "talentIds": [
-        "tal-000005"
+        "tal-000005",
+        "tal-000008",
+        "tal-000010",
+        "tal-000009",
+        "tal-000007",
+        "tal-000011",
+        "tal-000012"
       ],
       "visibility": "public",
       "youtubeId": "UWi_qGnBHv8",
@@ -1705,7 +1711,13 @@
     },
     {
       "talentIds": [
-        "tal-000008"
+        "tal-000008",
+        "tal-000005",
+        "tal-000007",
+        "tal-000010",
+        "tal-000012",
+        "tal-000011",
+        "tal-000009"
       ],
       "visibility": "public",
       "youtubeId": "wDPJwaXzN4I",
@@ -1717,7 +1729,13 @@
     },
     {
       "talentIds": [
-        "tal-000008"
+        "tal-000008",
+        "tal-000007",
+        "tal-000009",
+        "tal-000005",
+        "tal-000010",
+        "tal-000011",
+        "tal-000012"
       ],
       "visibility": "public",
       "youtubeId": "Bv4vfuzcmWc",
@@ -1729,7 +1747,13 @@
     },
     {
       "talentIds": [
-        "tal-000008"
+        "tal-000008",
+        "tal-000007",
+        "tal-000009",
+        "tal-000010",
+        "tal-000011",
+        "tal-000012",
+        "tal-000005"
       ],
       "visibility": "public",
       "youtubeId": "JsEbGwNvN6E",

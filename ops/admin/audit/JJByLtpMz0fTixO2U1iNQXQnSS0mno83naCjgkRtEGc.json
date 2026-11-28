@@ -1,0 +1,168 @@
+{
+  "version": 2,
+  "batchId": "JJByLtpMz0fTixO2U1iNQXQnSS0mno83naCjgkRtEGc",
+  "actor": "900116782922894341339274276841604414178152",
+  "createdAt": "2026-11-28T02:42:57.714Z",
+  "baseCommit": "5fc78976d4ecaf01d1edc122795196f3aa4ce9bb",
+  "reason": null,
+  "submissionId": "JJByLtpMz0fTixO2U1iNQXQnSS0mno83naCjgkRtEGc",
+  "branch": "admin/change-JJByLtpMz0fTixO2U1iNQXQnSS0mno83naCjgkRtEGc",
+  "operations": [
+    {
+      "operationId": "cms-musicvideo-ed4c65ce9fdc4dea8ed36ff4",
+      "entity": "musicVideo",
+      "recordId": "mv-000023",
+      "action": "edit",
+      "changedFields": [
+        "talentIds"
+      ],
+      "before": {
+        "talentIds": [
+          "tal-000008"
+        ],
+        "visibility": "public",
+        "youtubeId": "JsEbGwNvN6E",
+        "type": "original",
+        "songId": "song-000076",
+        "registeredAt": "2026-11-25T10:15:02.802Z",
+        "rawSongTitle": "青春の現在地",
+        "id": "mv-000023"
+      },
+      "after": {
+        "talentIds": [
+          "tal-000008",
+          "tal-000007",
+          "tal-000009",
+          "tal-000010",
+          "tal-000011",
+          "tal-000012",
+          "tal-000005"
+        ],
+        "visibility": "public",
+        "youtubeId": "JsEbGwNvN6E",
+        "type": "original",
+        "songId": "song-000076",
+        "registeredAt": "2026-11-25T10:15:02.802Z",
+        "rawSongTitle": "青春の現在地",
+        "id": "mv-000023"
+      }
+    },
+    {
+      "operationId": "cms-musicvideo-f90903b411d44248ac462b45",
+      "entity": "musicVideo",
+      "recordId": "mv-000022",
+      "action": "edit",
+      "changedFields": [
+        "talentIds"
+      ],
+      "before": {
+        "talentIds": [
+          "tal-000008"
+        ],
+        "visibility": "public",
+        "youtubeId": "Bv4vfuzcmWc",
+        "type": "original",
+        "songId": "song-000075",
+        "registeredAt": "2026-11-25T10:14:18.292Z",
+        "rawSongTitle": "ハレバレパレット",
+        "id": "mv-000022"
+      },
+      "after": {
+        "talentIds": [
+          "tal-000008",
+          "tal-000007",
+          "tal-000009",
+          "tal-000005",
+          "tal-000010",
+          "tal-000011",
+          "tal-000012"
+        ],
+        "visibility": "public",
+        "youtubeId": "Bv4vfuzcmWc",
+        "type": "original",
+        "songId": "song-000075",
+        "registeredAt": "2026-11-25T10:14:18.292Z",
+        "rawSongTitle": "ハレバレパレット",
+        "id": "mv-000022"
+      }
+    },
+    {
+      "operationId": "cms-musicvideo-12153de9e03944ebbf607317",
+      "entity": "musicVideo",
+      "recordId": "mv-000021",
+      "action": "edit",
+      "changedFields": [
+        "talentIds"
+      ],
+      "before": {
+        "talentIds": [
+          "tal-000008"
+        ],
+        "visibility": "public",
+        "youtubeId": "wDPJwaXzN4I",
+        "type": "original",
+        "songId": "song-000074",
+        "registeredAt": "2026-11-25T10:13:36.504Z",
+        "rawSongTitle": "Own other side",
+        "id": "mv-000021"
+      },
+      "after": {
+        "talentIds": [
+          "tal-000008",
+          "tal-000005",
+          "tal-000007",
+          "tal-000010",
+          "tal-000012",
+          "tal-000011",
+          "tal-000009"
+        ],
+        "visibility": "public",
+        "youtubeId": "wDPJwaXzN4I",
+        "type": "original",
+        "songId": "song-000074",
+        "registeredAt": "2026-11-25T10:13:36.504Z",
+        "rawSongTitle": "Own other side",
+        "id": "mv-000021"
+      }
+    },
+    {
+      "operationId": "cms-musicvideo-d8c8acacf12e46ec887fc852",
+      "entity": "musicVideo",
+      "recordId": "mv-000020",
+      "action": "edit",
+      "changedFields": [
+        "talentIds"
+      ],
+      "before": {
+        "talentIds": [
+          "tal-000005"
+        ],
+        "visibility": "public",
+        "youtubeId": "UWi_qGnBHv8",
+        "type": "original",
+        "songId": "song-000073",
+        "registeredAt": "2026-11-25T10:12:46.243Z",
+        "rawSongTitle": "Realize",
+        "id": "mv-000020"
+      },
+      "after": {
+        "talentIds": [
+          "tal-000005",
+          "tal-000008",
+          "tal-000010",
+          "tal-000009",
+          "tal-000007",
+          "tal-000011",
+          "tal-000012"
+        ],
+        "visibility": "public",
+        "youtubeId": "UWi_qGnBHv8",
+        "type": "original",
+        "songId": "song-000073",
+        "registeredAt": "2026-11-25T10:12:46.243Z",
+        "rawSongTitle": "Realize",
+        "id": "mv-000020"
+      }
+    }
+  ]
+}

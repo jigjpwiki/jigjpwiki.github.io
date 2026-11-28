@@ -14,3 +14,12 @@ test('a transfer with unknown current membership date is not ordered by an old d
  const p=person('transfer','b',null,[{organizationId:'a',status:'former',from:'2018-01-01',to:'2025-01-01'}]);
  assert.deepEqual(orderedPeople({organizations:orgs,talents:[p,person('new','b','2026-01-01')]},[event('transfer',2018,1,1)]).map(p=>p.id),['new','transfer']);
 });
+
+test('display rank applies before truncating avatar stacks and preserves name links',()=>{
+ const master={organizations:orgs,talents:[{...person('later','b','2026-01-01'),displayName:'後輩'},{...person('earlier','b','2024-01-01'),displayName:'先輩'},{...person('other','a','2020-01-01'),displayName:'別事務所'}]};
+ master.talents=orderedPeople(master);
+ const {peopleStack}=require('../lib/content-components'),{personLinks}=require('../lib/feature-pages');
+ const ids=['other','later','earlier'];
+ assert(peopleStack(ids,master).includes('関連タレント：先輩、後輩、別事務所'));
+ assert(personLinks(ids,master).indexOf('先輩')<personLinks(ids,master).indexOf('後輩'));
+});

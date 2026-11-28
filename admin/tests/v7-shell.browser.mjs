@@ -354,6 +354,7 @@ test("all roles share the shell and separate collections while viewers have read
         await page.getByRole("option", {name:/試験ライバー85/}).click();
         await performers.fill("試験ライバー84");
         await page.getByRole("option", {name:/試験ライバー84/}).click();
+        assert.deepEqual(await page.locator(".cms-picker-chip").filter({hasText:/試験ライバー8[45]/}).evaluateAll(nodes=>nodes.map(n=>n.textContent.replace(/×$/,""))),["試験ライバー84","試験ライバー85"]);
         assert.equal(await page.getByRole("button", {name:"試験ライバー85の選択を解除"}).count(),1);
         await page.getByRole("button", {name:"試験ライバー84の選択を解除"}).click();
         assert.equal(await page.getByRole("button", {name:"試験ライバー84の選択を解除"}).count(),0);

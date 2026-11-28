@@ -72,3 +72,17 @@ test("real catalog exposes all thirteen collections with stable display labels a
   const scoped = scopedCatalog(baseline, member);
   assert.ok(!scoped.some((row) => ["organization", "offer", "performance"].includes(row.entity)));
 });
+
+test("CMS talent collection follows shared seniority order without changing read permissions", async () => {
+  const {scopedCatalog,allContentPolicy}=await import("../src/cms-scope.mjs");
+  const model=structuredClone(baseline);
+  const first=model.talents.talents[0],second=model.talents.talents[1];
+  first.affiliations[0].from="2026-01-01";second.affiliations[0].from="2024-01-01";
+  model.anniversaries.events=[];
+  const before=structuredClone(model);
+  const ids=scopedCatalog(model,{role:"editor",contentPolicy:allContentPolicy}).find(s=>s.entity==="talent").items.map(t=>t.id);
+  assert(ids.indexOf(second.id)<ids.indexOf(first.id));
+  const scoped=scopedCatalog(model,member).find(s=>s.entity==="talent").items;
+  assert(scoped.every(t=>cmsPermissions(model,member).canRead("talent",model.talents.talents.find(p=>p.id===t.id))));
+  assert.deepEqual(model,before);
+});

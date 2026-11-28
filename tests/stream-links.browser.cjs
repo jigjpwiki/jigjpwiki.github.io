@@ -141,12 +141,16 @@ const twitch = {
         }
         assert.equal(await region.locator(".talent-stream-card").first().getAttribute("target"), "_blank");
         assert.equal(await region.locator(".talent-stream-card").first().getAttribute("rel"), "noopener noreferrer");
-        if (width >= 768)
-          assert(
-            (await region.locator(".talent-stream-card").first().boundingBox())
-              .width <= 400,
-            "Single stream cards stay compact on desktop",
-          );
+        if (width >= 1000) {
+          const card = region.locator(".talent-stream-card").first();
+          const bounds = await card.boundingBox(), thumbnail = await card.locator(".stream-media").boundingBox();
+          assert(bounds.width > 400 && bounds.height < 160, "Desktop uses a compact horizontal schedule-style card");
+          assert(thumbnail.x > bounds.x + bounds.width / 2, "Thumbnail is on the right");
+          assert.equal(await card.locator(".stream-person-name").isVisible(), false);
+          assert.equal(await card.locator("h4").evaluate(e => getComputedStyle(e).webkitLineClamp), "2");
+        } else if (width >= 768) {
+          assert((await region.locator(".talent-stream-card").first().boundingBox()).width <= 400);
+        }
         const fallback = region.locator("[data-stream-fallback]");
         assert.equal(
           await fallback.getAttribute("open"),

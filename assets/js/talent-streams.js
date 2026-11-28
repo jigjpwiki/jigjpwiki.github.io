@@ -16,6 +16,8 @@
         `talent-stream-card service-${row.service}${row.status === "live" ? " is-live" : ""}`,
       );
       a.href = row.url;
+      a.dataset.streamState = row.status;
+      a.title = row.title;
       a.target = "_blank";
       a.rel = "noopener noreferrer";
       const media = node("span", undefined, "stream-media");
@@ -69,7 +71,7 @@
       }
       byline.append(
         avatar,
-        node("span", talent.displayName || ""),
+        node("span", talent.displayName || "", "stream-person-name"),
         node(
           "span",
           row.service === "youtube" ? "YouTube" : "Twitch",
@@ -86,6 +88,7 @@
           day: "2-digit",
           hour: "2-digit",
           minute: "2-digit",
+          hourCycle: "h23",
         }) + " JST",
       );
       time.dateTime = row.date;

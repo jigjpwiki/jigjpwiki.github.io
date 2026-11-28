@@ -941,18 +941,6 @@
     "url": "https://www.youtube.com/watch?v=4Hde3IZgYx8"
   },
   {
-    "videoId": "daFdBKU9Fdk",
-    "name": "緋雨柚",
-    "youtubeid": "UCrB-SfrqB5ChY8aAT99grXw",
-    "title": "【#雑談  】さっき起きました【パレデミア学園/緋雨柚】",
-    "date": "2026-11-26T04:01:24.000Z",
-    "status": "archive",
-    "type": "video",
-    "thumbnail": "https://i.ytimg.com/vi/daFdBKU9Fdk/mqdefault.jpg?v=6b07af14",
-    "channelIcon": "https://yt3.ggpht.com/dPJHngNTeEfD_K0Mus141-We4xIuAhttm2pgEBl3VdGXqWvxGfy5mJfDMDbBmwI6UGc17dXb-g=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=daFdBKU9Fdk"
-  },
-  {
     "videoId": "9EBfgmQXHjg",
     "name": "藤森ちとせ",
     "youtubeid": "UCAhdxmsdngH4noySdpVAVWQ",
@@ -1602,7 +1590,7 @@
     "date": "2026-11-27T11:55:45.000Z",
     "status": "archive",
     "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/H3GJiH_pQbI/mqdefault.jpg?v=6b085b13",
+    "thumbnail": "https://i.ytimg.com/vi/H3GJiH_pQbI/mqdefault.jpg",
     "channelIcon": "https://yt3.ggpht.com/Gwr7KJNWnI6CEgmIfEeMZahF5pbGNKlRhQXBEkuMWE0D66--IJE77z-5Zu2i5LFBc_CA6ZkqY4Y=s240-c-k-c0x00ffffff-no-rj",
     "url": "https://www.youtube.com/watch?v=H3GJiH_pQbI"
   },
@@ -1871,18 +1859,6 @@
     "url": "https://www.youtube.com/watch?v=VzFBb1xa_Go"
   },
   {
-    "videoId": "swFNShTnlzA",
-    "name": "鈴木沙透",
-    "youtubeid": "UCj5nRzNFXZn9GRhITRkKElA",
-    "title": "【#歌枠 】帰宅しました【鈴木沙透/パレデミア学園】",
-    "date": "2026-11-27T17:17:47.000Z",
-    "status": "archive",
-    "type": "stream",
-    "thumbnail": "https://i.ytimg.com/vi/swFNShTnlzA/mqdefault.jpg?v=6b09ba0f",
-    "channelIcon": "https://yt3.ggpht.com/HS-52_p7fIqMPokM5Wq_16ALyGWaJMB31ChyEb02uLUl-GpABw-FVtvMCQrkLrJ4i1xrmRS4Ug=s240-c-k-c0x00ffffff-no-rj",
-    "url": "https://www.youtube.com/watch?v=swFNShTnlzA"
-  },
-  {
     "videoId": "wstEuYGajcs",
     "name": "鈴木沙透",
     "youtubeid": "UCj5nRzNFXZn9GRhITRkKElA",
@@ -1912,7 +1888,7 @@
     "youtubeid": "UCqcnlq8uJqnGml6hcIrMCZw",
     "title": "【 初見歓迎/朝活雑談 】午前中に起きる方集合✨おはよう300人目標＆全員の名前呼ぶ朝活🌷【 花晴りら / パレデミア学園 】#れりライブ #新人vtuber",
     "date": "2026-11-27T21:59:53.000Z",
-    "status": "live",
+    "status": "archive",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/ykiaYPxGi4M/mqdefault.jpg?v=6b095571",
     "channelIcon": "https://yt3.ggpht.com/CH5JMWVQZ_RtloaXoj6W-yXjo9x8UxXSBG_vMyDnfk7M2QTOApVE1zOesu_aDrSAqvDbGrUyxs0=s240-c-k-c0x00ffffff-no-rj",
@@ -1979,12 +1955,24 @@
     "url": "https://www.youtube.com/watch?v=cZR1cxLpDio"
   },
   {
+    "videoId": "daFdBKU9Fdk",
+    "name": "緋雨柚",
+    "youtubeid": "UCrB-SfrqB5ChY8aAT99grXw",
+    "title": "【#雑談  】アメリカンドッグと共に【パレデミア学園/緋雨柚】",
+    "date": "2026-11-28T03:00:41.000Z",
+    "status": "live",
+    "type": "stream",
+    "thumbnail": "https://i.ytimg.com/vi/daFdBKU9Fdk/mqdefault.jpg?v=6b07af14",
+    "channelIcon": "https://yt3.ggpht.com/dPJHngNTeEfD_K0Mus141-We4xIuAhttm2pgEBl3VdGXqWvxGfy5mJfDMDbBmwI6UGc17dXb-g=s240-c-k-c0x00ffffff-no-rj",
+    "url": "https://www.youtube.com/watch?v=daFdBKU9Fdk"
+  },
+  {
     "videoId": "CI0Sv-IKmIw",
     "name": "無月いお",
     "youtubeid": "UC2X_mAVGw8e3N9JQZZDVBfQ",
     "title": "【#低音女子】ブラックフライデー買いたいものある？《#パレデミア学園》#雑談#新人VTuber#vtuber#縦型Live#初見さん大歓迎",
-    "date": "2026-11-28T03:00:00.000Z",
-    "status": "upcoming",
+    "date": "2026-11-28T03:10:09.000Z",
+    "status": "live",
     "type": "stream",
     "thumbnail": "https://i.ytimg.com/vi/CI0Sv-IKmIw/mqdefault.jpg?v=6b099078",
     "channelIcon": "https://yt3.ggpht.com/Z7PlAWhweuycNXNXoQ6etyDTkduySM-Kqy8kQW-AD19JuRdxT3HSdIxogPw3GPD5NHw_vZlf=s240-c-k-c0x00ffffff-no-rj",

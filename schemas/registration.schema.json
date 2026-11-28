@@ -157,6 +157,7 @@
             "enum": [
               "original",
               "cover",
+              "collaboration",
               "other",
               null
             ]

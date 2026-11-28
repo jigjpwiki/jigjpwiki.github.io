@@ -378,3 +378,73 @@
   .talent-profile .profile-hero{display:grid;grid-template-columns:64px minmax(0,1fr)}
   .talent-profile .talent-links a{padding:6px 8px;font-size:12px}
 }
+
+/* Keep the existing mobile layout; refine the desktop directory with the
+   schedule's horizontal identity cards and shared neutral design tokens. */
+.talent-directory .directory-card-copy { display: contents; }
+.talent-directory .directory-group-short { display: none; }
+@media (min-width: 1000px) {
+  .site-shell--browse > main.talent-directory { padding-top: 24px; }
+  .site-shell--browse > main.talent-directory > h1 { margin-bottom: 6px; }
+  .talent-directory .intro { margin: 0 0 12px; font-size: 14px; }
+  .talent-directory .browse-filters {
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    column-gap: 10px; row-gap: 8px;
+    margin: 12px 0 10px; padding: 12px;
+    background: var(--site-surface); border-color: var(--site-line);
+  }
+  .talent-directory .browse-filters > label { grid-column: span 3; }
+  .talent-directory .browse-filters > .directory-search { grid-column: span 6; }
+  .talent-directory .browse-filters > label:has(#talent-sort) { grid-column: span 4; }
+  .talent-directory .browse-filters > button { grid-column: span 2; width: 100%; }
+  .talent-directory .browse-filters :is(input,select,button) { min-height: 40px; }
+  .talent-directory .browse-filters select { text-overflow: ellipsis; }
+  .talent-directory .directory-search-field input { font-size: 15px; }
+  .talent-directory .directory-results-bar {
+    flex-direction: row; flex-wrap: wrap; align-items: center;
+    gap: 8px 16px; margin: 12px 0 20px;
+  }
+  .talent-directory #talent-count { white-space: nowrap; }
+  .talent-directory #directory-jumps { flex: 1 1 600px; gap: 6px; }
+  .talent-directory #directory-jumps a { min-height: 34px; padding: 4px 9px; }
+  .talent-directory .agency-section { margin: 20px 0 28px; }
+  .talent-directory .agency-section > h2 {
+    border-color: var(--site-line); font-size: 20px; padding-bottom: 8px;
+    align-items: center; color: var(--site-ink);
+  }
+  .talent-directory .agency-section > h2 > span {
+    font-variant-numeric: tabular-nums; font-size: 12px;
+    background: var(--site-subtle); color: var(--site-muted);
+    border-radius: 12px; padding: 1px 8px;
+  }
+  .talent-directory .talent-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px;
+    margin-top: 12px;
+  }
+  .talent-directory a.talent-card {
+    display: flex; flex-direction: row; align-items: center; text-align: left;
+    gap: 12px; padding: 12px; min-height: 94px; border-radius: 12px;
+    border-color: var(--site-line); background: var(--site-surface);
+    box-shadow: 0 2px 5px #0000000a;
+  }
+  .talent-directory a.talent-card:hover {
+    background: var(--site-surface); border-color: #aaa;
+    box-shadow: 0 4px 10px #00000014;
+  }
+  .talent-directory .directory-card-copy { display: block; flex: 1; min-width: 0; }
+  .talent-directory .talent-card .talent-avatar {
+    width: 64px; height: 64px; flex: 0 0 64px; border: 1px solid var(--site-line);
+  }
+  .talent-directory .talent-card h3 {
+    font-size: 16px; line-height: 1.4; margin: 0; overflow-wrap: anywhere;
+  }
+  .talent-directory .affiliation p, .talent-directory .group-label {
+    font-size: 12px; line-height: 1.5; color: var(--site-muted); margin: 3px 0 0;
+  }
+  .talent-directory .agency-section:not([data-directory-section="all"]) .directory-primary-affiliation { display: none; }
+  .talent-directory .agency-section:not([data-directory-section="all"]) .directory-group-full { display: none; }
+  .talent-directory .agency-section:not([data-directory-section="all"]) .directory-group-short { display: inline; }
+}
+@media (min-width: 1200px) {
+  .talent-directory .talent-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+}

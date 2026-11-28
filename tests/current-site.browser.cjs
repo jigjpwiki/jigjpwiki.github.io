@@ -70,6 +70,24 @@ const { chromium } = require("playwright"),
         }
         await p.goto(base + "/talents/");
         assert.equal(await p.locator("[data-person]").count(), people.length);
+        if (width >= 1200 && people.length) {
+          const card = p.locator(".talent-card").first();
+          assert.equal(await card.evaluate(e => getComputedStyle(e).flexDirection), "row");
+          assert.equal(await card.locator(".talent-avatar").evaluate(e => e.getBoundingClientRect().width), 64);
+          const primary = p.locator('.directory-primary-affiliation').first();
+          if (await primary.count()) assert.equal(await primary.isVisible(), false);
+          if (process.env.EVENT_SCREENSHOTS && width === 1440 && javaScriptEnabled) {
+            const out = path.join(process.env.EVENT_SCREENSHOTS,"talent-directory");
+            fs.mkdirSync(out,{recursive:true});
+            await p.screenshot({path:path.join(out,"desktop-1440.png")});
+            await p.locator(".agency-section").first().scrollIntoViewIfNeeded();
+            await p.screenshot({path:path.join(out,"agency-1440.png")});
+          }
+          if (javaScriptEnabled && await primary.count()) {
+            await p.locator("#talent-sort").selectOption("name");
+            assert.equal(await primary.isVisible(), true);
+          }
+        }
         if (people.length) {
           await p.goto(base + "/talents/" + people[0].id + "/");
           assert.equal(

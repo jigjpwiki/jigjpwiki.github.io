@@ -1,9 +1,10 @@
 {
-  "version": "2.26.4",
+  "version": "2.26.5",
   "changes": [
-    "PC版記念日ページのカード幅、カレンダーの文字サイズ・区切り・凡例を調整しました。"
+    "PC版音楽一覧の歌動画・歌枠・楽曲カードを整理し、歌唱者・検索UIの視認性を改善しました。"
   ],
   "featurePaths": [
-    "/anniversaries/"
+    "/music/",
+    "/music/karaoke/"
   ]
 }

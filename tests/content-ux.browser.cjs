@@ -40,6 +40,26 @@ const goodsListingCount=publishedGoods.campaigns.length+publishedGoods.products.
   await p.goto(base+'/music/?category=videos&q=常磐');if(javaScriptEnabled){await p.locator('[data-category-panel="videos"]').waitFor({state:'visible'});assert.equal(await p.locator('[data-filter-row]:visible').count(),1);await p.locator('[data-category="songs"]').click();assert.equal(await p.locator('[data-category-panel="videos"]').isVisible(),false);await p.goBack();assert.equal(await p.locator('[data-category-panel="videos"]').isVisible(),true);}
   const thumb=p.locator('[data-category-panel="videos"] .content-thumbnail').first();if(!javaScriptEnabled||await thumb.isVisible()){const b=await thumb.boundingBox();assert(Math.abs(b.width/b.height-16/9)<0.03);measurements.push({width,page:'video-thumbnail',ratio:b.width/b.height});}
   await size('music');
+  if(width===1440&&javaScriptEnabled){
+   for(const category of ['videos','karaoke','songs']){
+    await p.goto(base+'/music/?category='+category);
+    const panel=p.locator('[data-category-panel="'+category+'"]');await panel.waitFor({state:'visible'});
+    const card=panel.locator('.feature-card').first();await card.waitFor({state:'visible'});
+    assert.equal(await card.evaluate(e=>getComputedStyle(e).borderRadius),'12px');
+    const compact=panel.locator('.music-singer-details').first();
+    if(await compact.count()){
+     assert.equal(await compact.isVisible(),true);
+     assert.equal(await compact.locator('..').locator('.music-singer-names').isVisible(),false);
+     await compact.locator('summary').click();assert.equal(await compact.locator('.music-singer-expanded').isVisible(),true);
+     await compact.locator('summary').click();
+    }
+    if(category==='songs'){const b=await card.locator('.music-song-art').boundingBox();assert(Math.abs(b.width/b.height-16/9)<0.04);}
+    if(category==='karaoke')assert.equal(await card.locator('h2 a').evaluate(e=>getComputedStyle(e).webkitLineClamp),'2');
+    if(category==='videos')assert.equal(await card.locator('.music-video-footer').evaluate(e=>getComputedStyle(e).display),'flex');
+    await size('music-'+category);
+    if(process.env.EVENT_SCREENSHOTS){const out=path.join(process.env.EVENT_SCREENSHOTS,'music');fs.mkdirSync(out,{recursive:true});await p.screenshot({path:path.join(out,category+'-1440.png')});}
+   }
+  }
   await p.goto(base+'/music/karaoke/');const kbox=await p.locator('.content-thumbnail').first().boundingBox();assert(Math.abs(kbox.width/kbox.height-16/9)<0.03);await size('karaoke-list');
   await p.goto(base+'/music/karaoke/karaoke-000001/');assert.equal(await p.locator('.feature-setlist>li').count(),31);await size('setlist');
   await p.goto(base+'/events/');await size('events');if(javaScriptEnabled){assert.equal(await p.locator('[data-event-group="past"] [data-filter-row]').count(),4);assert.equal(await p.locator('[data-event-group="unknown"] [data-filter-row]').count(),0);assert.equal(await p.locator('[data-event-group="unknown"]').isVisible(),false);assert.equal(await p.locator('[data-event-group="upcoming"] [data-filter-row]').count(),1);await p.clock.setFixedTime(new Date('2026-12-26T10:00:00Z'));await p.evaluate(()=>document.dispatchEvent(new Event('visibilitychange')));assert.equal(await p.locator('[data-event-id="evt-000001"]').getAttribute('data-phase'),'ongoing');await p.clock.setFixedTime(new Date('2026-12-26T11:00:00Z'));await p.evaluate(()=>document.dispatchEvent(new Event('visibilitychange')));assert.equal(await p.locator('[data-event-group="past"] [data-filter-row]').count(),5);assert.equal(await p.locator('[data-event-group="upcoming"]').isVisible(),false);assert.equal(await p.locator('[data-event-group="past"] [data-filter-row]').first().getAttribute('data-event-id'),'evt-000001');await p.clock.setFixedTime(now);}

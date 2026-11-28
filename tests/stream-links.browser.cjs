@@ -139,6 +139,8 @@ const twitch = {
             fullPage: true,
           });
         }
+        assert.equal(await region.locator(".talent-stream-card").first().getAttribute("target"), "_blank");
+        assert.equal(await region.locator(".talent-stream-card").first().getAttribute("rel"), "noopener noreferrer");
         if (width >= 768)
           assert(
             (await region.locator(".talent-stream-card").first().boundingBox())

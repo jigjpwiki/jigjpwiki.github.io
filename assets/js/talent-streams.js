@@ -16,7 +16,8 @@
         `talent-stream-card service-${row.service}${row.status === "live" ? " is-live" : ""}`,
       );
       a.href = row.url;
-      a.rel = "noreferrer";
+      a.target = "_blank";
+      a.rel = "noopener noreferrer";
       const media = node("span", undefined, "stream-media");
       const placeholder = () =>
         node("span", "画像なし", "stream-image-fallback");

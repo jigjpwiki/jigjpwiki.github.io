@@ -69,6 +69,7 @@ const goodsListingCount=publishedGoods.campaigns.length+publishedGoods.products.
     }else for(const name of ['from','to','setlist'])assert.equal(await p.locator('[name='+name+']').isEnabled(),false);
     if(category==='videos'){
      assert.equal(await card.locator('.music-video-footer').evaluate(e=>getComputedStyle(e).display),'flex');
+     const meta=await card.locator('.music-card-meta').boundingBox(),date=await card.locator('.music-card-meta .music-date').boundingBox();assert(Math.abs(meta.x+meta.width-date.x-date.width)<2);assert.doesNotMatch(await card.locator('.music-card-meta .music-date').innerText(),/JST|\d{2}:\d{2}/);
      for(const credit of await panel.locator('.music-credit-duplicate').all())assert.equal(await credit.isVisible(),false);
      for(const action of await panel.locator('.music-video-action-redundant').all())assert.equal(await action.isVisible(),false);
     }
@@ -79,7 +80,12 @@ const goodsListingCount=publishedGoods.campaigns.length+publishedGoods.products.
   await p.goto(base+'/music/karaoke/?setlist=complete');
   if(javaScriptEnabled){await p.waitForURL('**/music/?**');assert.equal(new URL(p.url()).searchParams.get('category'),'karaoke');assert.equal(new URL(p.url()).searchParams.get('setlist'),'complete');await p.locator('[name=setlist]').selectOption('');}
   const kbox=await p.locator('.music-karaoke-grid .content-thumbnail:visible').first().boundingBox();assert(Math.abs(kbox.width/kbox.height-16/9)<0.03);await size('karaoke-list');
-  await p.goto(base+'/music/karaoke/karaoke-000001/');assert.equal(await p.locator('.feature-setlist>li').count(),31);await size('setlist');
+  await p.goto(base+'/music/karaoke/karaoke-000001/');assert.equal(await p.locator('.feature-setlist>li').count(),31);assert.equal(await p.locator('main h1').count(),1);assert.equal(await p.locator('.music-karaoke-hero h1').count(),1);assert.equal(await p.locator('.feature-setlist .music-singers').count(),0);await size('setlist');
+  if(width===1440){const row=await p.locator('.feature-setlist>li').first().boundingBox();assert(row.height<110,'Compact setlist row');}
+  if(width===1440&&javaScriptEnabled&&process.env.EVENT_SCREENSHOTS){const out=path.join(process.env.EVENT_SCREENSHOTS,'music');fs.mkdirSync(out,{recursive:true});await p.screenshot({path:path.join(out,'karaoke-detail-1440.png')});}
+  await p.goto(base+'/music/karaoke/karaoke-000006/');assert.equal(await p.locator('.music-detail-empty').count(),1);await size('karaoke-empty');
+  await p.goto(base+'/music/songs/song-000003/');assert.equal(await p.locator('.music-song-hero h1').count(),1);assert(await p.locator('.music-history-list>li').count()>0);await size('song-detail');
+  if(width===1440&&javaScriptEnabled&&process.env.EVENT_SCREENSHOTS){const out=path.join(process.env.EVENT_SCREENSHOTS,'music');await p.screenshot({path:path.join(out,'song-detail-1440.png')});}
   await p.goto(base+'/events/');await size('events');if(javaScriptEnabled){assert.equal(await p.locator('[data-event-group="past"] [data-filter-row]').count(),4);assert.equal(await p.locator('[data-event-group="unknown"] [data-filter-row]').count(),0);assert.equal(await p.locator('[data-event-group="unknown"]').isVisible(),false);assert.equal(await p.locator('[data-event-group="upcoming"] [data-filter-row]').count(),1);await p.clock.setFixedTime(new Date('2026-12-26T10:00:00Z'));await p.evaluate(()=>document.dispatchEvent(new Event('visibilitychange')));assert.equal(await p.locator('[data-event-id="evt-000001"]').getAttribute('data-phase'),'ongoing');await p.clock.setFixedTime(new Date('2026-12-26T11:00:00Z'));await p.evaluate(()=>document.dispatchEvent(new Event('visibilitychange')));assert.equal(await p.locator('[data-event-group="past"] [data-filter-row]').count(),5);assert.equal(await p.locator('[data-event-group="upcoming"]').isVisible(),false);assert.equal(await p.locator('[data-event-group="past"] [data-filter-row]').first().getAttribute('data-event-id'),'evt-000001');await p.clock.setFixedTime(now);}
   await p.goto(base+'/fixture-events/');await size('events-thumbnail');
   assert.equal(await p.locator('.event-date-tile').count(),fixtureEvents.events.length);

@@ -32,7 +32,7 @@ const musicData = projectMusic(loadMusic(fullTalents,catalog,root));
 const { loadKaraoke, projectKaraoke, karaokeLinks } = require('../lib/karaoke-data');
 const { karaokeList, karaokePage, songHistory, recentKaraoke, talentKaraoke } = require('../lib/karaoke-pages');
 const karaokeData = projectKaraoke(loadKaraoke(fullTalents,catalog,root));
-const musicView = { ...musicData, performances:karaokeData.performances };
+const musicView = { ...musicData, performances:karaokeData.performances, karaokes:karaokeData.karaokes, karaokeVideos:karaokeData.videos };
 const { loadRelease, publishRelease } = require('../lib/release');
 const release = loadRelease(root);
 // Couple redesigned talent markup to its matching CSS/JS release, without changing feed caching.

@@ -48,3 +48,63 @@
  .track-play{grid-column:2;align-items:flex-start;max-width:none}
 }
 @media(max-width:359px){.content-page .music-page :is(.music-video-grid,.music-karaoke-grid){grid-template-columns:1fr}}
+
+/* List-only desktop review: preserve artwork and explicit link destinations.
+   Details pages keep their own presentation. Mobile uses the existing name list. */
+.music-page .music-video-footer { display: contents; }
+.music-page .music-artist-prefix, .music-page .music-singer-details { display: none; }
+@media (min-width:1000px) {
+  .site-shell--browse > main.content-page:has(.music-list-view) { padding-top: 24px; }
+  .content-page:has(.music-list-view) > h1 { margin-bottom: 8px; }
+  .music-list-view .music-intro { margin: 0 0 14px; color: var(--site-muted); }
+  .music-list-view .content-tabs { border-color: var(--site-line); gap: 4px; }
+  .music-list-view .content-tabs a { padding: 8px 14px; font-size: 14px; min-height: 40px; border-radius: 8px 8px 0 0; }
+  .music-list-view .content-tabs a:hover { background: var(--site-subtle); }
+  .music-list-view .content-tabs a:focus-visible { outline-offset: -3px; }
+  .content-page .music-list-view .feature-filters { margin: 12px 0; padding: 12px; border-radius: 12px; gap: 10px; border-color: var(--site-line); background: var(--site-surface); }
+  .content-page .music-list-view .feature-filters :is(input,select,button) { min-height: 40px; border-radius: 8px; font-size: 13px; }
+  .content-page .music-list-view #catalog-status { margin: 10px 0 14px; color: var(--site-muted); font-size: 13px; }
+  .music-list-view .music-section-heading { align-items: center; gap: 10px; margin: 0 0 12px; }
+  .content-page .music-list-view .music-section-heading h2,
+  .content-page .music-list-view [data-category-panel="songs"] > h2 { margin: 0; font-size: 20px; line-height: 1.4; color: var(--site-ink); }
+  .content-page .music-list-view .music-section-heading p { margin: 0; }
+  .content-page .music-list-view .music-section-heading a { font-size: 12px; text-decoration: none; }
+  .content-page .music-list-view .music-section-heading a:hover { text-decoration: underline; }
+  .content-page .music-list-view .music-section-heading a.feature-action { border: 1px solid var(--site-line); border-radius: 8px; min-height: 36px; display: inline-flex; align-items: center; padding: 5px 10px; box-sizing: border-box; }
+  .content-page .music-page .music-list-view :is(.music-video-grid,.music-karaoke-grid) { grid-template-columns: repeat(3,minmax(0,1fr)); gap: 12px; margin: 12px 0 0; align-items: start; }
+  .content-page .music-page .music-list-view :is(.music-video-card,.music-karaoke-card,.music-song-card) { border-radius: 12px; border: 1px solid var(--site-line); background: var(--site-surface); box-shadow: 0 2px 5px #0000000a; }
+  .music-list-view :is(.music-video-card,.music-karaoke-card) > .content-thumbnail { border-radius: 11px 11px 0 0; }
+  .music-list-view .content-thumbnail:focus-visible { outline-offset: -3px; }
+  .music-list-view .music-card-body { padding: 11px 12px; gap: 5px; }
+  .content-page .music-list-view .music-card-body :is(h2,h3) { margin: 0; font-size: 16px; line-height: 1.4; }
+  .content-page .music-list-view :is(.music-card-body,.music-song-body) :is(h2,h3) a { text-decoration: none; }
+  .content-page .music-list-view :is(.music-card-body,.music-song-body) :is(h2,h3) a:hover { text-decoration: underline; }
+  .music-list-view .music-card-body :is(h2,h3) a { display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; overflow: hidden; }
+  .music-list-view .music-karaoke-card .music-card-body h2 { min-height: 2.8em; }
+  .music-list-view .music-card-body .feature-label { color: var(--site-muted); font-size: 11px; }
+  .music-list-view .music-artist-prefix { display: inline; }
+  .content-page .music-list-view .music-artist { font-size: 12px; color: var(--site-muted); line-height: 1.5; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; overflow: hidden; }
+  .music-list-view .music-singers { font-size: 13px; gap: 6px; min-height: 26px; }
+  .music-list-view .music-singers a { text-decoration: none; }
+  .music-list-view .music-singers a:hover { text-decoration: underline; }
+  .music-list-view .music-singers-compact .music-singer-names { display: none; }
+  .music-list-view .music-singer-details { display: block; flex: 1; min-width: 0; }
+  .music-list-view .music-singer-details summary { cursor: pointer; color: var(--site-muted); font-size: 12px; }
+  .music-list-view .music-singer-expanded { padding: 6px 0 2px; overflow-wrap: anywhere; line-height: 1.6; }
+  .music-list-view .music-video-footer { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 5px 10px; margin-top: 2px; }
+  .music-list-view .music-video-action { margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 5px; }
+  .music-list-view .music-video-action a { min-height: 32px; padding: 3px 7px; border-radius: 6px; color: var(--site-muted); border-color: var(--site-line); }
+  .music-list-view .music-video-action a:hover { color: var(--site-ink); }
+  .content-page .music-list-view .music-date,.content-page .music-list-view .music-counts { font-size: 12px; color: var(--site-muted); font-variant-numeric: tabular-nums; }
+  .music-list-view .music-setlist-status[data-setlist-status="unreviewed"] { color: var(--site-muted); }
+  .music-list-view .music-setlist-status[data-setlist-status="complete"] { color: #276749; }
+  .content-page .music-page .music-list-view .music-song-grid { gap: 10px; margin: 12px 0 0; align-items: start; }
+  .content-page .music-page .music-list-view .music-song-card { grid-template-columns: 108px minmax(0,1fr); gap: 12px; padding: 12px; align-items: center; min-height: 112px; box-sizing: border-box; }
+  .music-list-view .music-song-card .music-song-art { aspect-ratio: 16/9; max-width: none; border-radius: 8px; }
+  .content-page .music-list-view .music-song-body h2 { margin: 0; font-size: 16px; line-height: 1.4; }
+  .content-page .music-list-view .music-song-body p { margin: 3px 0; }
+  .music-list-view .music-song-body { min-width: 0; }
+}
+@media (min-width:1200px) {
+  .content-page .music-page .music-list-view :is(.music-video-grid,.music-karaoke-grid) { grid-template-columns: repeat(4,minmax(0,1fr)); }
+}

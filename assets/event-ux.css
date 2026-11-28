@@ -123,3 +123,7 @@
  .event-cast-grid li{font-size:13px}
  .event-cast-grid .avatar-stack{--avatar-size:28px}
 }
+
+/* A collapsed performer group must still fit the narrowest supported view. */
+.event-performer-compact summary{flex-wrap:wrap}
+@media(max-width:700px){.events-page .event-card-body{padding-right:0}.events-page .event-card-arrow{display:none}.event-performer-compact summary{gap:4px}}

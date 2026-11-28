@@ -77,3 +77,20 @@ test('anniversary dashboard groups dates, separates today, respects JST and filt
  assert.doesNotMatch(html,/data-event-id="a"/);assert.match(ann.todayEvents(m,'2026-12-01'),/data-event-id="a"/);
  assert.doesNotMatch(ann.todayEvents(m,'2026-12-01',{type:'debut'}),/data-event-id=/);
 });
+
+test('goods product library deduplicates repeat sales, includes offerless products and excludes drafts',()=>{
+ const d=structuredClone(data),p=d.products[0];d.offers.push({...d.offers[0],id:'offer-999999',campaignId:null});
+ d.products[1].visibility='draft';
+ const rows=pages.productEntries(d);assert.equal(rows.filter(x=>x.id===p.id).length,1);
+ assert.equal(rows.find(x=>x.id===p.id).offers.length,2);
+ assert(!rows.some(x=>x.id===d.products[1].id));
+ assert.match(pages.goodsPage(master,d),/data-category="products"/);
+ assert.match(pages.goodsPage(master,d),/data-goods-product-id=/);
+});
+test('goods registered price range preserves currencies and unknown prices',()=>{
+ const o=(amount,currency='JPY')=>({price:{amount,currency}});
+ assert.equal(pages.priceSummary([]),'価格未確認');
+ assert.equal(pages.priceSummary([o(700),o(3700)]),goods.price(o(700).price)+' ～ '+goods.price(o(3700).price));
+ assert.match(pages.priceSummary([o(700),o(null,null)]),/未確認価格あり/);
+ assert.match(pages.priceSummary([o(700),o(10,'USD')]),/／/);
+});

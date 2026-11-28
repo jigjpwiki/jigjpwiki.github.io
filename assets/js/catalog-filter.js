@@ -14,7 +14,7 @@
    }
    function url(push){const u=new URL(location.href);for(const e of controls){u.searchParams.delete(e.name);if(e.value)u.searchParams.set(e.name,e.value);}u.searchParams.delete('category');if(category&&category!==panels[0]?.dataset.categoryPanel)u.searchParams.set('category',category);if(u.href!==location.href)history[push?'pushState':'replaceState']({},'',u);}
    function draw(push=false){
-    const type=form.elements.namedItem('type');if(panels.length&&type){type.disabled=category!=='videos';type.closest('label').hidden=type.disabled;}
+    const type=form.elements.namedItem('type');if(panels.some(p=>p.dataset.categoryPanel==='videos')&&type){type.disabled=category!=='videos';type.closest('label').hidden=type.disabled;}
     const f=Object.fromEntries(new FormData(form));if(category)f.category=category;let count=0,total=0;
     for(const el of rows){const row=JSON.parse(el.dataset.filterRow);row.category=el.closest('[data-category-panel]')?.dataset.categoryPanel||row.category;if(!category||row.category===category)total++;el.hidden=!matches(row,f);if(!el.hidden)count++;}
     for(const panel of panels)panel.hidden=panel.dataset.categoryPanel!==category;

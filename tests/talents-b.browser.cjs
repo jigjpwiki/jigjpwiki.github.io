@@ -322,15 +322,24 @@ const yt = [
           assert.equal(await icon.getAttribute("fill"),"currentColor");
           assert.equal(await link.getAttribute("target"),"_blank");
           assert.equal(await icon.isVisible(),true);
-          if (service === "x") {
-            assert.equal(await link.locator(".profile-service-label").evaluate(e=>e.getBoundingClientRect().width),1);
-            assert(await link.getByText("X",{exact:true}).count());
-          }
+          assert.equal(await link.locator(".profile-service-label").evaluate(e=>e.getBoundingClientRect().width),1);
+          assert.equal(await link.evaluate(e=>e.getBoundingClientRect().width),44);
+          const label = {youtube:"YouTube",twitch:"Twitch",x:"X",tiktok:"TikTok"}[service];
+          assert.equal(await link.getAttribute("title"),label);
+          assert.equal(await link.locator(".profile-service-label").textContent(),label);
         }
         const refs = p.locator(".profile-reference-links");
         if (await refs.count()) {
           assert.equal(await refs.locator("[data-profile-service]").count(),0);
-          assert.equal(await refs.locator(".profile-link-external").first().isVisible(),true);
+          const official = refs.getByRole("link",{name:"公式プロフィール",exact:true});
+          if (await official.count()) assert.equal(await official.locator(".profile-link-external").isVisible(),true);
+          const wiki = refs.getByRole("link",{name:"非公式Wiki",exact:true});
+          if (await wiki.count()) {
+            assert.equal(await wiki.locator("svg.profile-wiki-logo").getAttribute("viewBox"),"0 0 39 19");
+            assert.equal(await wiki.locator("svg.profile-wiki-logo").isVisible(),true);
+            assert.equal(await wiki.locator(".profile-service-label").evaluate(e=>e.getBoundingClientRect().width),1);
+            assert.equal(await wiki.getAttribute("target"),"_blank");
+          }
         }
         if (process.env.EVENT_SCREENSHOTS) {
           const out = path.join(process.env.EVENT_SCREENSHOTS, "talent-profile");

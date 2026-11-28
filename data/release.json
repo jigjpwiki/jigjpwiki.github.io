@@ -1,7 +1,7 @@
 {
   "version": "2.26.2",
   "changes": [
-    "PC版タレント個別ページのSNSリンクにFont Awesomeのブランドロゴを採用し、参考リンクと分けました。"
+    "PC版タレント個別ページのSNSリンクをブランドロゴのみに統一し、非公式Wikiのロゴを採用しました。"
   ],
   "featurePaths": [
     "/talents/"

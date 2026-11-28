@@ -2,6 +2,7 @@ import { canEditSong } from "./cms-music.mjs";
 import { fail } from "./security.mjs";
 import { contentTypes } from "./content-definitions.mjs";
 import goodsCore from "../../assets/js/goods-core.js";
+import memberOrder from "../../assets/js/member-order.js";
 
 const types = {
   ...contentTypes,
@@ -172,7 +173,8 @@ export function scopedCatalog(models, member) {
   const orgNames = new Map(models.talents.organizations
     .filter((row) => all || member.scope?.organizations?.includes(row.id))
     .map((row) => [row.id, row.name]));
-  const people = new Map(models.talents.talents.map((row) => [row.id, row.displayName]));
+  const ordered=memberOrder.orderedPeople(models.talents,models.anniversaries?.events);
+  const people = new Map(ordered.map((row) => [row.id, row.displayName]));
   const products = new Map(models.goods.products.map((row) => [row.id, row.title]));
   const videos = new Map(models.media.videos.map((row) => [row.youtubeId, row.title]));
   const groupNames = new Map();
@@ -188,7 +190,7 @@ export function scopedCatalog(models, member) {
   };
   const price = (row) => row.price?.amount == null ? "" : row.price.amount + " " + (row.price.currency || "");
   const metadata = (entity, row) => {
-    const persons = all ? compact((row.talentIds || []).map((id) => people.get(id))) : "";
+    const persons = all ? compact(memberOrder.sortIds(row.talentIds||[],ordered).map((id) => people.get(id))) : "";
     switch (entity) {
       case "talent": return { context: compact([...(row.affiliations || []).filter((a) => a.status === "current").map((a) => orgNames.get(a.organizationId)), ...(groupNames.get(row.id) || [])]) };
       case "group": return { context: orgNames.get(row.organizationId) || "" };
@@ -208,7 +210,7 @@ export function scopedCatalog(models, member) {
       category: type.category,
       entity,
       label: type.label || "VTuber",
-      items: models[type.file][type.list].filter((row) => permissions.canRead(entity, row)).map((row) => ({
+      items: (entity==='talent'?ordered:models[type.file][type.list]).filter((row) => permissions.canRead(entity, row)).map((row) => ({
         id: row[type.field || "id"],
         title: row.displayName || row.name || row.title || row.rawSongTitle || row.rawLabel ||
           (entity === "offer" ? products.get(row.productId) : null) ||
@@ -244,7 +246,8 @@ export function scopedGoodsEntries(models, member, sections = scopedCatalog(mode
   const records = new Map(models.goods.products.map(row=>[row.id,row]));
   const rows = [];
   const create = (entity,item,items,sales,image) => {
-    const subject = [...new Set(items.flatMap(p=>[...p.talentIds.map(id=>names.get(id)),...p.groupIds.map(id=>groups.get(id))]).filter(Boolean))];
+    const ordered=memberOrder.orderedPeople(models.talents,models.anniversaries?.events);
+    const subject = [...new Set([...memberOrder.sortIds([...new Set(items.flatMap(p=>p.talentIds))],ordered).map(id=>names.get(id)),...items.flatMap(p=>p.groupIds.map(id=>groups.get(id)))].filter(Boolean))];
     return {...item,entity,image:image||"",context:[items.length+"商品",...subject.slice(0,3)].join(" · "),
       description: [...items.map(p=>p.title),...subject].join(" "),
       date: sales.map(o=>o.startsAt).filter(Boolean).sort().at(-1)||"",

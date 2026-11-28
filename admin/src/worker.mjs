@@ -10,6 +10,7 @@ import { CmsJobs } from "./cms-jobs.mjs";
 import { installationReadToken, publishingEnabled } from "./github-app.mjs";
 import { prepareDraft, draftDetails, draftInput, draftGroups, writeDraft, draftConflict, prepareBulkDrafts } from "./cms-draft.mjs";
 import { cmsPermissions } from "./cms-scope.mjs";
+import memberOrder from "../../assets/js/member-order.js";
 import { createCmsReader } from "./cms-read.mjs";
 import { normalizeScope, scopedCatalog, scopedGoodsEntries, normalizeMemberPolicy, contentCategories, hasAllContent } from "./cms-scope.mjs";
 import { googleAuth, googleEnabled, emailKey } from "./google.mjs";
@@ -320,10 +321,11 @@ export class Admin {
             : [],
           editable: member.role === "editor", publicationTracking: google, publishable: member.role === "editor" && member.directPublish === true && publishingEnabled(this.env), categories: contentCategories(member),
           organizations: models.talents.organizations.filter((row) => hasAllContent(member) || member.scope?.organizations.includes(row.id)),
-          people: models.talents.talents.filter((row) => access.canRead("talent", row))
+          people: memberOrder.orderedPeople(models.talents,models.anniversaries?.events).filter((row) => access.canRead("talent", row))
             .map((row) => ({ id: row.id, name: row.displayName,
               search: (row.aliases || []).map(alias => alias.name).join(" "),
               visibility: row.visibility ?? "public",
+              context: (row.affiliations||[]).filter(a=>a.status==="current").map(a=>models.talents.organizations.find(o=>o.id===a.organizationId&&(hasAllContent(member)||member.scope?.organizations?.includes(o.id)))?.name).filter(Boolean).join("・") || "",
             })),
         });
       }

@@ -36,7 +36,7 @@
      section.hidden=visible===0;
      const count=section.querySelector('[data-event-count]');if(count)count.textContent=visible+'件';
     }
-    document.getElementById('catalog-status').textContent=music?(count===total?`${count}件`:`${count}件 ／ 全${total}件`):`${count}件 ／ 登録${total}件`;document.getElementById('catalog-empty').hidden=count!==0;if(push)url(true);
+    document.getElementById('catalog-status').textContent=(music||document.querySelector('[data-compact-catalog]'))?(count===total?`${count}件`:`${count}件 ／ 全${total}件`):`${count}件 ／ 登録${total}件`;document.getElementById('catalog-empty').hidden=count!==0;if(push)url(true);
    }
    for(const tab of tabs)tab.addEventListener('click',e=>{if(e.ctrlKey||e.metaKey||e.shiftKey||e.altKey)return;e.preventDefault();category=tab.dataset.category;page=1;draw(true);});
    if(pager)for(const button of pager.querySelectorAll('[data-page-step]'))button.addEventListener('click',()=>{page+=Number(button.dataset.pageStep);draw(true);const first=rows.find(el=>!el.hidden);if(first){const link=first.querySelector('a');if(link)link.focus({preventScroll:true});first.scrollIntoView({block:'start'});}});

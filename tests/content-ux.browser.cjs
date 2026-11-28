@@ -101,6 +101,12 @@ const goodsListingCount=publishedGoods.campaigns.length+publishedGoods.products.
   await p.goto(base+'/fixture-events/');await size('events-thumbnail');
   assert.equal(await p.locator('.event-date-tile').count(),fixtureEvents.events.length);
   assert.equal(await p.locator('[data-event-id="evt-000001"] .avatar-stack-more').innerText(),'+4');
+  const cast=p.locator('[data-event-id="evt-000001"] .event-performer-compact details');
+  await cast.locator('summary').click();assert.equal(await cast.locator('.event-performer-expanded').isVisible(),true);
+  await cast.locator('summary').click();assert.equal(await cast.locator('.event-performer-expanded').isVisible(),false);
+  assert.equal(await p.locator('[data-event-id="evt-000001"] .event-card-link').count(),1);
+  assert.doesNotMatch(await p.locator('[data-event-id="evt-000001"] .event-date').innerText(),/2026\/12\/26|JST/);
+  if(width===1440&&javaScriptEnabled){const search=await p.locator('[name=q]').boundingBox(),reset=await p.locator('#catalog-filters button[type=reset]').boundingBox();assert(Math.abs(search.y+search.height-reset.y-reset.height)<2);}
   const eventImg=p.locator('.event-cover img').first();await eventImg.scrollIntoViewIfNeeded();await eventImg.evaluate(e=>e.decode());
   const eventBox=await eventImg.boundingBox();assert(Math.abs(eventBox.width/eventBox.height-16/9)<0.03);
   assert.equal(await eventImg.evaluate(e=>getComputedStyle(e).objectFit),'cover');
@@ -115,6 +121,11 @@ const goodsListingCount=publishedGoods.campaigns.length+publishedGoods.products.
    await p.screenshot({path:path.join(process.env.EVENT_SCREENSHOTS,'events-'+width+'.png'),fullPage:true});
   }
   await p.goto(base+'/fixture-event/');await size('event-detail');
+  assert.equal(await p.locator('main h1').count(),1);
+  assert.equal(await p.locator('.event-detail-hero h1').count(),1);
+  assert.equal(await p.locator('.event-cast-grid li').count(),8);
+  assert.match(await p.locator('.event-detail-facts').innerText(),/8,500円/);
+  if(width===1440){const main=await p.locator('main').boundingBox(),hero=await p.locator('.event-detail-hero').boundingBox(),pad=await p.locator('main').evaluate(e=>parseFloat(getComputedStyle(e).paddingLeft)+parseFloat(getComputedStyle(e).paddingRight));assert(Math.abs(main.width-pad-hero.width)<2,'Detail fills the shared content width');}
   assert.equal(await p.locator('.event-detail-hero .event-official a').getAttribute('href'),fixtureEvents.events[0].announcementUrl);
   assert.equal(await p.locator('.event-timeline').count(),fixtureEvents.events[0].slots.length?1:0);
   const detailImage=p.locator('.event-cover-detail img');await detailImage.evaluate(e=>e.decode());

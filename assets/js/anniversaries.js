@@ -18,11 +18,16 @@
    const next=core.jstToday();if(next!==today){if(selected===today)selected=next;if(month===today.slice(0,7))month=next.slice(0,7);today=next;}
    if(selected.slice(0,7)!==month)selected=month+'-01';
    document.getElementById('month-label').textContent=month;
-   document.getElementById('upcoming-heading').textContent='直近30日間';
+   document.getElementById('today-heading').textContent='今日の記念日';
+   const todayDate=document.getElementById('today-date');todayDate.dateTime=today;todayDate.textContent=today.replaceAll('-','/');
+   document.getElementById('today-events').innerHTML=core.todayEvents(model,today,filters());
+   document.getElementById('upcoming-heading').textContent='もうすぐ記念日';
+   document.getElementById('upcoming-count').textContent=core.horizon(model,today,filters(),true).length+'件';
+   document.getElementById('month-count').textContent=core.between(core.filtered(model,filters()),month+'-01',core.monthShift(month,1)+'-01').length+'件';
    document.getElementById('calendar').innerHTML=core.calendar(model,month,today,filters(),selected,true);
    document.getElementById('day-details').innerHTML=core.dayDetails(model,selected,filters());document.getElementById('day-details').hidden=false;
-   document.getElementById('upcoming').innerHTML=core.upcoming(model,today,filters());
-   document.getElementById('upcoming-range').textContent=`${today}から${core.addDays(today,29)}まで（当日を含む30日間）`;
+   document.getElementById('upcoming').innerHTML=core.upcoming(model,today,filters(),true,true);
+   document.getElementById('upcoming-range').textContent=`${today}から${core.addDays(today,29)}まで（当日は別欄に表示）`;
    document.getElementById('calendar-status').textContent=`${month}の記念日を表示中・選択日 ${selected}`;
    for(const img of document.querySelectorAll('.anniversary-person img')){img.classList.add('is-managed');const load=()=>{if(img.naturalWidth)img.classList.add('is-loaded');};img.onload=load;if(img.complete)load();}
    if(push)save();
@@ -34,7 +39,8 @@
   const focus=()=>document.querySelector(`[data-day="${selected}"]`)?.focus();
   document.getElementById('calendar').addEventListener('click',e=>{const b=e.target.closest('[data-day]');if(b){selected=b.dataset.day;draw(true);focus();}});
   document.getElementById('calendar').addEventListener('keydown',e=>{const b=e.target.closest('[data-day]'),delta={ArrowLeft:-1,ArrowRight:1,ArrowUp:-7,ArrowDown:7}[e.key];if(!b||!delta)return;const next=core.addDays(b.dataset.day,delta);if(Number(next.slice(0,4))<1900||Number(next.slice(0,4))>2200)return;e.preventDefault();selected=next;month=next.slice(0,7);draw(true);focus();});
-  window.addEventListener('popstate',()=>{restore();draw();});restore();document.getElementById('calendar-tools').hidden=false;draw();document.getElementById('calendar-reference').hidden=true;
+  document.getElementById('upcoming').addEventListener('click',e=>{const b=e.target.closest('[data-anniversary-day]');if(!b)return;selected=b.dataset.anniversaryDay;month=selected.slice(0,7);draw(true);focus();});
+  window.addEventListener('popstate',()=>{restore();draw();});restore();document.getElementById('calendar-tools').hidden=false;document.getElementById('month-controls').hidden=false;draw();document.getElementById('calendar-reference').hidden=true;
   document.addEventListener('visibilitychange',()=>{if(!document.hidden)draw();});setInterval(()=>{if(core.jstToday()!==today)draw();},60000);
  }catch{document.getElementById('calendar-status').textContent='操作機能を読み込めませんでした。静的カレンダーと一覧をご利用ください。';}
 })();

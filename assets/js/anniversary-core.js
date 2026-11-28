@@ -42,8 +42,8 @@
     }).join('・');
   }
   function eventHtml(item, model, compact = false) {
-    const years = item.years > 0 ? ` <span>${item.years}周年</span>` : '';
-    return `<li data-event-id="${escape(item.event.id)}"><span class="category">${types[item.event.type]}</span> <strong>${escape(item.event.title)}</strong>${years}<div>${subjectLinks(item.event, model)}</div></li>`;
+    const years = item.years > 0 ? ` <span class="anniversary-years">${item.years}周年</span>` : '';
+    return `<li data-event-id="${escape(item.event.id)}"><div class="anniversary-event-meta"><span class="category" data-kind="${item.event.type}">${types[item.event.type]}</span>${years}</div><strong>${escape(item.event.title)}</strong><div class="anniversary-subjects">${subjectLinks(item.event, model)}</div></li>`;
   }
   function calendar(model, month, today, filters = {}, selected = today, interactive = false) {
     const events = filtered(model, filters); const first = month + '-01'; const next = monthShift(month, 1) + '-01';
@@ -69,9 +69,24 @@
     const items = between(filtered(model,filters),day,addDays(day,1));
     return `<h2><time datetime="${day}">${day.replaceAll('-','/')}</time> の記念日</h2>${items.length ? `<ul>${items.map(item=>eventHtml(item,model,true)).join('')}</ul>` : '<p>この日の記念日はありません。</p>'}`;
   }
-  function upcoming(model, today, filters = {}) {
-    const items = between(filtered(model, filters), today, addDays(today, 30)); // today + 29 days, inclusive
-    return items.length ? `<ul class="event-list">${items.map(item => `<li><time datetime="${item.day}">${item.day.replaceAll('-', '/')}</time><ul>${eventHtml(item, model)}</ul></li>`).join('')}</ul>` : '<p class="empty-state">直近30日間の記念日はありません。</p>';
+  function horizon(model,today,filters={},excludeToday=false){
+    return between(filtered(model,filters),excludeToday?addDays(today,1):today,addDays(today,30));
+  }
+  function todayEvents(model,today,filters={}){
+    const items=between(filtered(model,filters),today,addDays(today,1));
+    return items.length?'<ul class="anniversary-today-list">'+items.map(i=>eventHtml(i,model)).join('')+'</ul>':'<p class="anniversary-no-today">この日の記念日はありません。</p>';
+  }
+  function upcoming(model,today,filters={},interactive=false,excludeToday=false){
+    const items=horizon(model,today,filters,excludeToday);
+    if(!items.length)return '<p class="empty-state">'+(excludeToday?'明日から29日間':'直近30日間')+'の記念日はありません。</p>';
+    const groups=new Map();
+    for(const item of items){if(!groups.has(item.day))groups.set(item.day,[]);groups.get(item.day).push(item);}
+    return '<ul class="event-list anniversary-agenda">'+[...groups].map(([day,rows])=>{
+      const days=Math.round((Date.parse(day+'T00:00:00Z')-Date.parse(today+'T00:00:00Z'))/86400000);
+      const date=day.slice(5).replace('-','/'),weekday=['日','月','火','水','木','金','土'][new Date(day+'T00:00:00Z').getUTCDay()];
+      const label='<time datetime="'+day+'">'+date+' <span class="agenda-weekday">('+weekday+')</span></time><span class="agenda-relative">'+(days===0?'当日':'あと'+days+'日')+'</span>';
+      return '<li class="agenda-day"><div class="agenda-date">'+(interactive?'<button type="button" data-anniversary-day="'+day+'" aria-label="'+day+'のカレンダーを表示">'+label+'</button>':label)+'</div><ul class="agenda-items">'+rows.map(item=>eventHtml(item,model)).join('')+'</ul></li>';
+    }).join('')+'</ul>';
   }
   function viewFromQuery(query,model,today=jstToday()) {
     const p=new URLSearchParams(query),validDay=s=>/^\d{4}-\d{2}-\d{2}$/.test(s||'')&&Number(s.slice(0,4))>=1900&&Number(s.slice(0,4))<=2200&&!Number.isNaN(Date.parse(s))&&iso(new Date(s+'T00:00:00Z'))===s;
@@ -81,5 +96,5 @@
     let month=day.slice(0,7);if(validDay(p.get('month')+'-01'))month=p.get('month');if(day.slice(0,7)!==month)day=month+'-01';
     return {day,month,type:Object.hasOwn(types,p.get('type'))?p.get('type'):'',organization:(model.organizations||[]).some(o=>o.id===p.get('organization'))?p.get('organization'):''};
   }
-  return { viewFromQuery, types, escape, jstToday, addDays, monthShift, occurrence, between, filtered, calendar, upcoming, eventHtml, subjectLinks, dayDetails };
+  return { viewFromQuery, types, escape, jstToday, addDays, monthShift, occurrence, between, filtered, calendar, upcoming, horizon, todayEvents, eventHtml, subjectLinks, dayDetails };
 });

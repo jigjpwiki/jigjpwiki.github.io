@@ -47,6 +47,13 @@ const goodsListingCount=publishedGoods.campaigns.length+publishedGoods.products.
    await page.waitForFunction(()=>document.getElementById('month-label').textContent==='2026-12');
    assert.match(await page.locator('#upcoming').innerText(),/真昼ねる/);
    assert.equal(await page.locator('#calendar-reference').isVisible(),false);
+   assert.equal(await page.locator('#today-heading').innerText(),'今日の記念日');
+   assert.equal(await page.locator('#today-date').getAttribute('datetime'),'2026-12-25');
+   assert.equal(await page.locator('#today-events [data-event-id]').count(),core.between(events,'2026-12-25','2026-12-26').length);
+   const upcomingDay=await page.locator('#upcoming [data-anniversary-day]').first().getAttribute('data-anniversary-day');
+   await page.locator('#upcoming [data-anniversary-day]').first().click();
+   assert.equal(await page.locator('[data-day="'+upcomingDay+'"]').getAttribute('aria-pressed'),'true');
+   await page.getByRole('button',{name:'今月',exact:true}).click();
    await page.clock.setFixedTime(new Date('2026-12-31T15:00:00Z'));
    await page.evaluate(()=>document.dispatchEvent(new Event('visibilitychange')));
    assert.equal(await page.locator('#month-label').innerText(),'2027-01');
@@ -122,6 +129,6 @@ const goodsListingCount=publishedGoods.campaigns.length+publishedGoods.products.
    assert.deepEqual(errors,[]);await context.close();console.log(`Phase 2 browser passed: ${width}px, JST, month movement, filters, keyboard, no overflow`);
   }
   const context=await browser.newContext({javaScriptEnabled:false});await context.route('https://images.example/fixture-avatar.png',r=>r.fulfill({contentType:'image/png',body:fs.readFileSync(path.join(root,'assets/favicon-32x32.png'))}));
-   const page=await context.newPage();await page.goto(base+'/anniversaries/');assert.equal(await page.locator('.anniversary-calendar').count(),1);assert.equal(await page.locator('#calendar-tools').isVisible(),false);assert.match(await page.locator('#calendar-reference').innerText(),/現在の暦ではありません/);assert.equal(await page.locator('#upcoming-heading').innerText(),'基準日から30日間');await context.close();
+   const page=await context.newPage();await page.goto(base+'/anniversaries/');assert.equal(await page.locator('.anniversary-calendar').count(),1);assert.equal(await page.locator('#calendar-tools').isVisible(),false);assert.match(await page.locator('#calendar-reference').innerText(),/現在の暦ではありません/);assert.equal(await page.locator('#upcoming-heading').innerText(),'基準日から30日間');assert.equal(await page.locator('#today-heading').innerText(),'基準日の記念日');assert.equal(await page.locator('#month-controls').isVisible(),false);await context.close();
  }finally{await browser.close();await new Promise(r=>server.close(r));}
 })().catch(e=>{console.error(e);process.exitCode=1});

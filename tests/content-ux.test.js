@@ -64,3 +64,16 @@ test('category/status/search filters compose and malformed dates are refused',()
  const row={search:'テスト 曲',category:'videos',type:'cover',talent:['tal-000010'],organization:['org-000003'],status:'unknown'};
  assert(filters.matches(row,{q:'テスト',category:'videos',type:'cover',talent:'tal-000010',status:'unknown'}));assert(!filters.matches(row,{category:'songs'}));assert(!filters.validDay('2027-02-29'));assert(filters.validDay('2028-02-29'));
 });
+
+test('anniversary dashboard groups dates, separates today, respects JST and filters',()=>{
+ const mk=(id,day,type='birthday')=>({id,type,title:'試験'+id,talentIds:[],groupIds:[],date:{year:null,month:12,day},recursYearly:true,countYears:false});
+ const m={events:[mk('a',1),mk('b',2),mk('c',2,'debut'),mk('d',30),mk('e',31)],groups:[],people:[],organizations:[]};
+ assert.equal(ann.jstToday(new Date('2026-11-30T15:00:00Z')),'2026-12-01');
+ assert.deepEqual(ann.horizon(m,'2026-12-01').map(x=>x.event.id),['a','b','c','d']);
+ assert.deepEqual(ann.horizon(m,'2026-12-01',{},true).map(x=>x.event.id),['b','c','d']);
+ const html=ann.upcoming(m,'2026-12-01',{},true,true);
+ assert.equal((html.match(/class="agenda-day"/g)||[]).length,2);
+ assert.match(html,/あと1日/);assert.match(html,/あと29日/);assert.match(html,/data-anniversary-day="2026-12-02"/);
+ assert.doesNotMatch(html,/data-event-id="a"/);assert.match(ann.todayEvents(m,'2026-12-01'),/data-event-id="a"/);
+ assert.doesNotMatch(ann.todayEvents(m,'2026-12-01',{type:'debut'}),/data-event-id=/);
+});

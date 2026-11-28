@@ -94,6 +94,7 @@ export const enums = {
   other: "その他",
   original: "オリジナル曲",
   cover: "歌ってみた",
+  collaboration: "コラボ楽曲",
   unresolved: "未確定",
   verified: "確認済み",
   unknown: "不明",

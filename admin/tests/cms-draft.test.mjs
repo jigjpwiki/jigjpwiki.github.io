@@ -170,7 +170,7 @@ test("collected media, new work and song video remain one scoped publication bat
   models.youtube = [{ videoId, title: "収録済み動画", youtubeid: channel }];
   const editor = { ...member, directPublish: true, scope: { ...member.scope, categories: ["music"] } };
   const input = { sha: snapshot.sha, entity: "musicVideo", talent: original.talentIds[0],
-    rawSongTitle: "動画の曲名", videoKind: "cover", videoUrl: "https://youtu.be/" + videoId,
+    rawSongTitle: "動画の曲名", videoKind: "collaboration", videoUrl: "https://youtu.be/" + videoId,
     newSongTitle: "試験用新曲", newSongArtist: "試験用作曲者", newSongUrl: "https://example.com/original",
   };
   const snap = { ...snapshot, models };
@@ -179,6 +179,7 @@ test("collected media, new work and song video remain one scoped publication bat
   const job = { id: "bundle-test", owner: "8ebf4fde-85a4-4d34-9feb-d1ba5c4de026", operations: stored.operations };
   const { plan } = await publicationPlan(snap, job, editor);
   assert.equal(plan.files.music.musicVideos.at(-1).songId, plan.files.music.songs.at(-1).id);
+  assert.equal(plan.files.music.musicVideos.at(-1).type, "collaboration");
   assert.equal(plan.files.media.videos.at(-1).channelId, channel);
 });
 

@@ -796,7 +796,7 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
     for (const key of fieldNames) {
       const [label, type] = labels[key];
       const control = el(["textarea", "select"].includes(type) ? type : "input");
-      if (type === "select") control.append(...Object.entries(key === "status" ? { unknown: "不明", on_sale: "販売中", scheduled: "販売予定", ended: "販売終了", sold_out: "売り切れ" } : key === "verification" ? { unreviewed: "未確認", verified: "確認済み", rejected: "対象外" } : key === "videoKind" ? { cover: "歌ってみた", original: "オリジナル", other: "その他" } : key === "activity" ? { unknown: "不明", active: "活動中", hiatus: "休止中", retired: "引退", ended: "活動終了" } : key === "kind" ? { birthday: "誕生日", debut: "デビュー記念日", group: "グループ記念日", other: "その他" } : {
+      if (type === "select") control.append(...Object.entries(key === "status" ? { unknown: "不明", on_sale: "販売中", scheduled: "販売予定", ended: "販売終了", sold_out: "売り切れ" } : key === "verification" ? { unreviewed: "未確認", verified: "確認済み", rejected: "対象外" } : key === "videoKind" ? { original: "オリジナル", cover: "歌ってみた", collaboration: "コラボ楽曲", other: "その他" } : key === "activity" ? { unknown: "不明", active: "活動中", hiatus: "休止中", retired: "引退", ended: "活動終了" } : key === "kind" ? { birthday: "誕生日", debut: "デビュー記念日", group: "グループ記念日", other: "その他" } : {
         unknown: "未定・不明", onsite: "会場開催", online: "オンライン", hybrid: "会場とオンライン",
       }).map(([value, text]) => new Option(text, value)));
       else if (type !== "textarea") control.type = type;

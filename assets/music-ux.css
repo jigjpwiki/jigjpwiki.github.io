@@ -108,3 +108,35 @@
 @media (min-width:1200px) {
   .content-page .music-page .music-list-view :is(.music-video-grid,.music-karaoke-grid) { grid-template-columns: repeat(4,minmax(0,1fr)); }
 }
+
+/* Unified music library: less metadata, more browseable cards. */
+.music-list-view[data-enhanced] .music-category-heading {
+ position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap;
+}
+.music-list-view .feature-filters label[hidden],.music-list-view .music-pager[hidden]{display:none!important}
+.music-list-view .music-pager{display:flex;justify-content:center;align-items:center;gap:16px;margin:20px 0}
+.music-list-view .music-pager button{min-height:40px;border:1px solid var(--site-line);border-radius:8px;background:white;padding:6px 16px;font:inherit}
+.music-list-view .music-pager button:disabled{opacity:.45;cursor:default}
+@media(min-width:1000px){
+ .music-list-view .music-credit-duplicate{display:none}
+ .music-list-view .music-video-action-redundant{display:none}
+ .music-list-view .music-video-card:has(.music-video-action-redundant) > .content-thumbnail::after{content:'YouTube ↗';position:absolute;right:8px;bottom:8px;background:#ffffffed;color:#242424;border-radius:5px;padding:3px 6px;font-size:10px;line-height:1.4}
+ .content-page .music-page .music-list-view .music-video-grid{align-items:stretch}
+ .music-list-view .music-video-footer{margin-top:auto}
+ .content-page .music-page .music-list-view .music-karaoke-grid{grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;align-items:stretch}
+ .music-list-view .music-karaoke-card .music-card-body{padding:9px 10px;gap:4px}
+ .content-page .music-list-view .music-karaoke-card .music-card-body h2{font-size:14px;line-height:1.4;min-height:2.8em}
+ .music-list-view .music-karaoke-card .music-singers{font-size:12px;min-height:23px}
+ .music-list-view .music-karaoke-card .avatar-stack{--avatar-size:22px;--avatar-overlap:6px}
+ .music-list-view .music-karaoke-card .music-setlist-status{display:none}
+ .music-list-view .music-karaoke-count[data-count="0"][data-setlist-status="unreviewed"]{display:none}
+ .music-list-view .music-karaoke-card .music-date{margin-top:auto}
+ .music-list-view .music-karaoke-count[data-setlist-status="complete"]{color:#276749}
+ .music-list-view .music-karaoke-count[data-setlist-status="partial"]::after{content:"（一部）"}
+ .music-list-view[data-enhanced]:has([data-category="karaoke"][aria-current="page"]) .feature-filters label{flex:1 1 150px}
+ .music-list-view[data-enhanced]:has([data-category="karaoke"][aria-current="page"]) .feature-filters label:first-child{flex:2 1 240px}
+ .music-list-view[data-enhanced]:has([data-category="karaoke"][aria-current="page"]) .feature-filters button{margin-left:auto}
+ .music-list-view .music-song-card .music-artist{font-size:12px}
+}
+@media(min-width:1200px){.content-page .music-page .music-list-view .music-karaoke-grid{grid-template-columns:repeat(5,minmax(0,1fr))}}
+@media(min-width:1440px){.content-page .music-page .music-list-view .music-karaoke-grid{grid-template-columns:repeat(6,minmax(0,1fr))}}

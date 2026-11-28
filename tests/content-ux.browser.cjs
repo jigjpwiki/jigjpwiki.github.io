@@ -54,13 +54,27 @@ const goodsListingCount=publishedGoods.campaigns.length+publishedGoods.products.
      await compact.locator('summary').click();
     }
     if(category==='songs'){const b=await card.locator('.music-song-art').boundingBox();assert(Math.abs(b.width/b.height-16/9)<0.04);}
-    if(category==='karaoke')assert.equal(await card.locator('h2 a').evaluate(e=>getComputedStyle(e).webkitLineClamp),'2');
+    if(category==='karaoke'){
+     assert.equal(await card.locator('h2 a').evaluate(e=>getComputedStyle(e).webkitLineClamp),'2');
+     assert.equal(await panel.locator('.music-karaoke-grid').evaluate(e=>getComputedStyle(e).gridTemplateColumns.split(' ').length),6);
+     for(const name of ['from','to','setlist'])assert.equal(await p.locator('[name='+name+']').isEnabled(),true);
+     const dates=await panel.locator('.music-date time').evaluateAll(nodes=>nodes.map(n=>n.dateTime));
+     assert.deepEqual(dates,[...dates].sort((a,b)=>Date.parse(b)-Date.parse(a)));
+     const count=await panel.locator('[data-filter-row]').count();
+     assert.equal(await panel.locator('[data-filter-row]:visible').count(),Math.min(30,count));
+     assert.equal(await p.locator('[data-music-pager]').isVisible(),count>30);
+     await p.locator('[name=setlist]').selectOption('complete');
+     for(const row of await panel.locator('[data-filter-row]:visible').all())assert.equal(JSON.parse(await row.getAttribute('data-filter-row')).setlist,'complete');
+     await p.locator('[name=setlist]').selectOption('');
+    }else for(const name of ['from','to','setlist'])assert.equal(await p.locator('[name='+name+']').isEnabled(),false);
     if(category==='videos')assert.equal(await card.locator('.music-video-footer').evaluate(e=>getComputedStyle(e).display),'flex');
     await size('music-'+category);
     if(process.env.EVENT_SCREENSHOTS){const out=path.join(process.env.EVENT_SCREENSHOTS,'music');fs.mkdirSync(out,{recursive:true});await p.screenshot({path:path.join(out,category+'-1440.png')});}
    }
   }
-  await p.goto(base+'/music/karaoke/');const kbox=await p.locator('.content-thumbnail').first().boundingBox();assert(Math.abs(kbox.width/kbox.height-16/9)<0.03);await size('karaoke-list');
+  await p.goto(base+'/music/karaoke/?setlist=complete');
+  if(javaScriptEnabled){await p.waitForURL('**/music/?**');assert.equal(new URL(p.url()).searchParams.get('category'),'karaoke');assert.equal(new URL(p.url()).searchParams.get('setlist'),'complete');await p.locator('[name=setlist]').selectOption('');}
+  const kbox=await p.locator('.music-karaoke-grid .content-thumbnail:visible').first().boundingBox();assert(Math.abs(kbox.width/kbox.height-16/9)<0.03);await size('karaoke-list');
   await p.goto(base+'/music/karaoke/karaoke-000001/');assert.equal(await p.locator('.feature-setlist>li').count(),31);await size('setlist');
   await p.goto(base+'/events/');await size('events');if(javaScriptEnabled){assert.equal(await p.locator('[data-event-group="past"] [data-filter-row]').count(),4);assert.equal(await p.locator('[data-event-group="unknown"] [data-filter-row]').count(),0);assert.equal(await p.locator('[data-event-group="unknown"]').isVisible(),false);assert.equal(await p.locator('[data-event-group="upcoming"] [data-filter-row]').count(),1);await p.clock.setFixedTime(new Date('2026-12-26T10:00:00Z'));await p.evaluate(()=>document.dispatchEvent(new Event('visibilitychange')));assert.equal(await p.locator('[data-event-id="evt-000001"]').getAttribute('data-phase'),'ongoing');await p.clock.setFixedTime(new Date('2026-12-26T11:00:00Z'));await p.evaluate(()=>document.dispatchEvent(new Event('visibilitychange')));assert.equal(await p.locator('[data-event-group="past"] [data-filter-row]').count(),5);assert.equal(await p.locator('[data-event-group="upcoming"]').isVisible(),false);assert.equal(await p.locator('[data-event-group="past"] [data-filter-row]').first().getAttribute('data-event-id'),'evt-000001');await p.clock.setFixedTime(now);}
   await p.goto(base+'/fixture-events/');await size('events-thumbnail');

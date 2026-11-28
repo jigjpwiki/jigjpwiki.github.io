@@ -67,7 +67,11 @@ const goodsListingCount=publishedGoods.campaigns.length+publishedGoods.products.
      for(const row of await panel.locator('[data-filter-row]:visible').all())assert.equal(JSON.parse(await row.getAttribute('data-filter-row')).setlist,'complete');
      await p.locator('[name=setlist]').selectOption('');
     }else for(const name of ['from','to','setlist'])assert.equal(await p.locator('[name='+name+']').isEnabled(),false);
-    if(category==='videos')assert.equal(await card.locator('.music-video-footer').evaluate(e=>getComputedStyle(e).display),'flex');
+    if(category==='videos'){
+     assert.equal(await card.locator('.music-video-footer').evaluate(e=>getComputedStyle(e).display),'flex');
+     for(const credit of await panel.locator('.music-credit-duplicate').all())assert.equal(await credit.isVisible(),false);
+     for(const action of await panel.locator('.music-video-action-redundant').all())assert.equal(await action.isVisible(),false);
+    }
     await size('music-'+category);
     if(process.env.EVENT_SCREENSHOTS){const out=path.join(process.env.EVENT_SCREENSHOTS,'music');fs.mkdirSync(out,{recursive:true});await p.screenshot({path:path.join(out,category+'-1440.png')});}
    }

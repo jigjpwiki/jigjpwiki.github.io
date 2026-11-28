@@ -139,3 +139,69 @@
 }
 @media(min-width:1200px){.content-page .music-page .music-list-view .music-karaoke-grid{grid-template-columns:repeat(5,minmax(0,1fr))}}
 @media(min-width:1440px){.content-page .music-page .music-list-view .music-karaoke-grid{grid-template-columns:repeat(6,minmax(0,1fr))}}
+
+/* Music metadata and detail pages, aligned with the schedule/talent card system. */
+.music-page .music-card-meta,.music-page .music-song-heading{display:flex;align-items:baseline;justify-content:space-between;gap:6px;min-width:0}
+.music-page .music-card-meta .music-date,.music-page .music-song-heading .music-date{margin:0;white-space:nowrap;text-align:right;font-variant-numeric:tabular-nums}
+.music-page .music-song-heading h2{min-width:0;overflow-wrap:anywhere}
+.music-page .music-video-footer:has(.music-video-action-redundant){min-height:0}
+.music-detail-view .breadcrumbs{margin:0 0 14px}
+.music-detail-view :is(.music-karaoke-hero,.music-song-hero){border-radius:12px;border-color:var(--site-line);box-shadow:0 2px 5px #0000000a;align-items:center;padding:16px;gap:20px}
+.music-detail-view .music-song-hero{grid-template-columns:minmax(0,220px) minmax(0,1fr)}
+.music-detail-view .music-song-art{aspect-ratio:16/9;max-width:none;border-radius:8px}
+.music-detail-view .music-song-art:not(:has(img)){max-width:120px;aspect-ratio:1}
+.music-detail-view .music-song-hero:not(:has(.music-song-art img)) {grid-template-columns:120px minmax(0,1fr)}
+.music-detail-view .content-thumbnail{border-radius:8px}
+.content-page .music-detail-view h1{font-size:24px;line-height:1.4;margin:0;overflow-wrap:anywhere}
+.music-detail-info{display:flex;align-items:flex-start;flex-direction:column;gap:8px;min-width:0}
+.content-page .music-detail-info p{margin:0;font-size:14px}
+.music-detail-info .music-singers{font-size:14px}
+.music-detail-info .avatar-stack{--avatar-size:32px}
+.music-detail-singers{display:flex;flex-wrap:wrap;align-items:center;gap:8px}
+.music-detail-view :is(.music-detail-action,.music-detail-action-wrap a){display:inline-flex;align-items:center;min-height:36px;box-sizing:border-box;padding:6px 12px;border:1px solid var(--site-line);border-radius:8px;background:#fff;font-size:13px;text-decoration:none}
+.music-detail-view :is(.music-detail-action,.music-detail-action-wrap a):hover{background:var(--site-subtle)}
+.music-detail-extra{font-size:12px;color:var(--site-muted)}
+.music-detail-extra summary,.track-source summary{cursor:pointer}
+.music-detail-view .music-detail-section{margin-top:24px}
+.content-page .music-detail-section>h2{display:flex;gap:10px;align-items:center;font-size:20px;margin:0 0 12px;padding-bottom:9px;border-bottom:1px solid var(--site-line)}
+.music-detail-section h2 small{font-weight:400;color:var(--site-muted);font-size:12px}
+.music-detail-empty{background:var(--site-surface);border:1px solid var(--site-line);border-radius:12px;padding:14px 16px;color:var(--site-muted);font-size:13px}
+.music-secondary-empty{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap;border:0}
+.content-page .music-detail-view .feature-setlist,.music-history-list{margin:0;padding:0;list-style:none;border-radius:12px;border:1px solid var(--site-line);background:var(--site-surface);box-shadow:0 2px 5px #0000000a}
+.content-page .music-detail-view .feature-setlist>li{border:0;border-bottom:1px solid var(--site-line);padding:8px 12px;min-height:60px;box-sizing:border-box;line-height:1.4;gap:10px}
+.content-page .music-detail-view .feature-setlist>li:first-child{border-radius:12px 12px 0 0}
+.content-page .music-detail-view .feature-setlist>li:last-child{border-bottom:0;border-radius:0 0 12px 12px}
+.content-page .music-detail-view .track-info h3{font-size:15px;line-height:1.4;margin:0}
+.content-page .music-detail-view .track-info p{font-size:12px;margin:3px 0;color:var(--site-muted)}
+.music-detail-view .track-source{font-size:11px;color:var(--site-muted);margin-top:2px}
+.music-detail-view :is(.track-info,.music-history-info,.music-singers) a{text-decoration:none}
+.music-detail-view :is(.track-info,.music-history-info,.music-singers) a:hover{text-decoration:underline}
+.music-detail-view .track-play a{min-height:36px;border-radius:8px;font-variant-numeric:tabular-nums;box-sizing:border-box;text-align:center}
+.music-history-list>li{display:grid;grid-template-columns:128px minmax(0,1fr) auto;align-items:center;gap:12px;padding:12px;border-bottom:1px solid var(--site-line)}
+.music-history-list>li:last-child{border-bottom:0}
+.music-history-info{min-width:0}
+.content-page .music-history-info h3{font-size:15px;line-height:1.4;margin:0 0 5px;overflow-wrap:anywhere}
+.content-page .music-history-info p{margin:3px 0}
+.music-back a{font-size:13px;text-decoration:none}
+.music-back a:hover{text-decoration:underline}
+@media(min-width:1000px){
+ .content-page:has(.music-detail-view){padding-top:24px}
+ .content-page .music-detail-view .music-karaoke-hero{grid-template-columns:minmax(0,320px) minmax(0,1fr)}
+ .music-detail-view .music-song-hero{grid-template-columns:minmax(0,240px) minmax(0,1fr)}
+ .music-detail-view .music-song-hero:not(:has(.music-song-art img)){grid-template-columns:120px minmax(0,1fr)}
+ .content-page .music-detail-view .feature-setlist>li{grid-template-columns:32px minmax(0,1fr) minmax(124px,auto)}
+ .music-detail-view .track-info{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,0.65fr) auto;align-items:center;gap:4px 12px}
+ .music-detail-view .track-info .music-singers,.music-detail-view .track-info>p.feature-note,.music-detail-view .track-source[open]{grid-column:1/-1}
+ .music-detail-view .track-source:not([open]){grid-column:3}
+ .music-detail-view .music-video-grid{max-width:none}
+ .content-page .music-detail-view .music-video-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+}
+@media(max-width:700px){
+ .music-page .music-card-meta,.music-page .music-song-heading{flex-wrap:wrap}
+ .music-detail-view :is(.music-song-hero,.music-karaoke-hero){grid-template-columns:minmax(0,1fr);gap:12px;padding:12px}
+ .music-detail-view .music-song-hero:not(:has(.music-song-art img)){grid-template-columns:minmax(0,1fr)}
+ .music-detail-view .music-song-art{max-width:240px}
+ .content-page .music-detail-view h1{font-size:20px}
+ .music-history-list>li{grid-template-columns:88px minmax(0,1fr);gap:8px}
+ .music-history-list .track-play{grid-column:2}
+}

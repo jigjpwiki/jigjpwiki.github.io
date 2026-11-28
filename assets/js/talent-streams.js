@@ -42,7 +42,9 @@
         "stream-state",
       );
       media.append(state);
-      a.append(media);
+      const strip = node("span", undefined, "stream-platform-strip");
+      strip.setAttribute("aria-hidden", "true");
+      a.append(strip, media);
       const text = node("div", undefined, "stream-card-body"),
         byline = node("div", undefined, "stream-byline"),
         avatar = node(

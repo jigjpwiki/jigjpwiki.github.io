@@ -312,6 +312,37 @@ const yt = [
         const side = await p.locator(".profile-secondary").boundingBox();
         assert(side.x >= mainColumn.x + mainColumn.width, "Profile metadata is placed alongside content");
         assert.equal(await p.locator(".profile-link-icon").first().isVisible(), true);
+        const brandViewBoxes = {youtube:"0 0 576 512",twitch:"0 0 512 512",x:"0 0 512 512",tiktok:"0 0 448 512"};
+        for (const link of await p.locator(".profile-social-links a").all()) {
+          const service = await link.getAttribute("data-profile-service");
+          if (!Object.hasOwn(brandViewBoxes,service)) continue;
+          const icon = link.locator("svg.profile-brand-icon");
+          assert.equal(await icon.getAttribute("viewBox"),brandViewBoxes[service]);
+          assert.equal(await icon.getAttribute("aria-hidden"),"true");
+          assert.equal(await icon.getAttribute("fill"),"currentColor");
+          assert.equal(await link.getAttribute("target"),"_blank");
+          assert.equal(await icon.isVisible(),true);
+          assert.equal(await link.locator(".profile-service-label").evaluate(e=>e.getBoundingClientRect().width),1);
+          assert.equal(await link.evaluate(e=>e.getBoundingClientRect().width),44);
+          const label = {youtube:"YouTube",twitch:"Twitch",x:"X",tiktok:"TikTok"}[service];
+          assert.equal(await link.getAttribute("title"),label);
+          assert.equal(await link.locator(".profile-service-label").textContent(),label);
+        }
+        const refs = p.locator(".profile-reference-links");
+        if (await refs.count()) {
+          assert.equal(await refs.locator("[data-profile-service]").count(),0);
+          const official = refs.getByRole("link",{name:"公式プロフィール",exact:true});
+          if (await official.count()) assert.equal(await official.locator(".profile-link-external").isVisible(),true);
+          const wiki = refs.getByRole("link",{name:"非公式Wiki",exact:true});
+          if (await wiki.count()) {
+            assert.equal(await wiki.locator("svg.profile-wiki-logo").getAttribute("viewBox"),"150 345 780 380");
+            assert.equal(await wiki.locator("svg.profile-wiki-logo rect").count(),68);
+            assert.deepEqual(await wiki.evaluate(e=>{const r=e.getBoundingClientRect();return [r.width,r.height];}),[44,40]);
+            assert.equal(await wiki.locator("svg.profile-wiki-logo").isVisible(),true);
+            assert.equal(await wiki.locator(".profile-service-label").evaluate(e=>e.getBoundingClientRect().width),1);
+            assert.equal(await wiki.getAttribute("target"),"_blank");
+          }
+        }
         if (process.env.EVENT_SCREENSHOTS) {
           const out = path.join(process.env.EVENT_SCREENSHOTS, "talent-profile");
           fs.mkdirSync(out, {recursive:true});

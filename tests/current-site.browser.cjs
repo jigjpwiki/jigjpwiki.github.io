@@ -74,6 +74,18 @@ const { chromium } = require("playwright"),
           const card = p.locator(".talent-card").first();
           assert.equal(await card.evaluate(e => getComputedStyle(e).flexDirection), "row");
           assert.equal(await card.locator(".talent-avatar").evaluate(e => e.getBoundingClientRect().width), 64);
+          const historical = p.locator('.talent-directory .activity-label:is([data-activity="ended"],[data-activity="retired"])');
+          for (const label of await historical.all()) {
+            const style = await label.evaluate(e => {
+              const s = getComputedStyle(e);
+              return { background: s.backgroundColor, border: s.borderTopWidth, weight: s.fontWeight, order: s.order, text: e.textContent.trim() };
+            });
+            assert.equal(style.background, "rgba(0, 0, 0, 0)");
+            assert.equal(style.border, "0px");
+            assert.equal(style.weight, "400");
+            assert.equal(style.order, "2");
+            assert.match(style.text, /^(活動終了|引退)$/);
+          }
           const primary = p.locator('.directory-primary-affiliation').first();
           if (await primary.count()) assert.equal(await primary.isVisible(), false);
           if (process.env.EVENT_SCREENSHOTS && width === 1440 && javaScriptEnabled) {
@@ -82,6 +94,11 @@ const { chromium } = require("playwright"),
             await p.screenshot({path:path.join(out,"desktop-1440.png")});
             await p.locator(".agency-section").first().scrollIntoViewIfNeeded();
             await p.screenshot({path:path.join(out,"agency-1440.png")});
+            const former = p.locator('[data-directory-section="former"]');
+            if (await former.count()) {
+              await former.evaluate(e => e.scrollIntoView({block:"start"}));
+              await p.screenshot({path:path.join(out,"former-1440.png")});
+            }
           }
           if (javaScriptEnabled && await primary.count()) {
             await p.locator("#talent-sort").selectOption("name");

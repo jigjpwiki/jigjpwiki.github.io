@@ -448,3 +448,44 @@
 @media (min-width: 1200px) {
   .talent-directory .talent-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
 }
+
+/* Historical activity is secondary metadata, not a warning badge.
+   Keep hiatus distinct, and retain every recorded state and portrait. */
+@media (min-width: 1000px) {
+  .talent-directory .directory-card-copy:has(.activity-label:is([data-activity="ended"], [data-activity="retired"])) {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    column-gap: 8px;
+  }
+  .talent-directory .directory-card-copy:has(.activity-label:is([data-activity="ended"], [data-activity="retired"])) h3 {
+    flex: 0 0 100%;
+  }
+  .talent-directory .directory-card-copy:has(.activity-label:is([data-activity="ended"], [data-activity="retired"])):has(.group-label) .affiliation {
+    flex-basis: 100%;
+  }
+  .talent-directory .directory-card-copy:has(.activity-label:is([data-activity="ended"], [data-activity="retired"])) .affiliation:empty,
+  .talent-directory .agency-section:not([data-directory-section="all"]) .directory-card-copy:has(.activity-label:is([data-activity="ended"], [data-activity="retired"])) .affiliation:not(:has(p:not(.directory-primary-affiliation))) {
+    display: none;
+  }
+  .talent-directory .directory-card-copy:has(.activity-label:is([data-activity="ended"], [data-activity="retired"])) .group-label {
+    order: 1;
+    min-width: 0;
+    overflow-wrap: anywhere;
+  }
+  .talent-directory .activity-label:is([data-activity="ended"], [data-activity="retired"]) {
+    display: inline;
+    order: 2;
+    align-self: baseline;
+    margin: 3px 0 0;
+    padding: 0;
+    border: 0;
+    border-radius: 0;
+    background: transparent;
+    color: var(--site-muted);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.5;
+    white-space: nowrap;
+  }
+}

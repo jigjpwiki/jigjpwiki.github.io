@@ -74,7 +74,8 @@
         ...section,
         people: rows
           .map((r) => r.p)
-          .filter((p) => representative(p, organizations) === section.id),
+          .filter((p) => representative(p, organizations) === section.id)
+          .sort((a,b)=>(a.memberRank??Infinity)-(b.memberRank??Infinity)),
       }))
       .filter((s) => s.people.length);
   }

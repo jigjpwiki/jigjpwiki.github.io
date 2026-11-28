@@ -34,7 +34,7 @@
   }
   function subjectLinks(event, model) {
     const groupPeople = model.groups.filter(g => event.groupIds.includes(g.id)).flatMap(g => g.talentIds);
-    return model.groups.filter(g=>event.groupIds.includes(g.id)).map(g=>`<a class="anniversary-group" href="/talents/?group=${encodeURIComponent(g.id)}">${escape(g.name)}</a>`).join('・') + [...new Set([...event.talentIds, ...groupPeople])].map(id => {
+    return model.groups.filter(g=>event.groupIds.includes(g.id)).map(g=>`<a class="anniversary-group" href="/talents/?group=${encodeURIComponent(g.id)}">${escape(g.name)}</a>`).join('・') + model.people.filter(t=>event.talentIds.includes(t.id)||groupPeople.includes(t.id)).map(({id}) => {
       const talent = model.people.find(p => p.id === id);
       const image=talent?.image;let safe=false;try{const u=new URL(image,'https://www.jigdule.jp');safe=Boolean(image)&&u.protocol==='https:'&&!u.username&&!u.password&&!/[<>"']/.test(image);}catch{}
       if(talent?.profileHidden)return `<span class="anniversary-person">${escape(talent.displayName)}</span>`;

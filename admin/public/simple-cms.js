@@ -97,12 +97,14 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
     summary.className = "cms-picker-count";
     summary.setAttribute("aria-live", "polite");
     let entries = relationEntries(choices), lookup = new Map(entries.map(row => [row.id, row]));
+    const talentPicker=choices===catalog.people;
+    const selectedIds=()=>{const rank=new Map(entries.map((row,i)=>[row.id,i]));return talentPicker?[...selected].sort((a,b)=>(rank.get(a)??Infinity)-(rank.get(b)??Infinity)):[...selected];};
     let matching = [], active = -1, rendered = 0;
     const chunk = 40;
     const isDisabled = () => !catalog.editable || disabled();
     const labelFor = (id) => lookup.get(id)?.name || id + "（現在の参照）";
     function syncChips() {
-      chips.replaceChildren(...[...selected].map(id => {
+      chips.replaceChildren(...selectedIds().map(id => {
         const chip = el("span", labelFor(id));
         chip.className = "cms-picker-chip";
         const remove = button("×", () => {
@@ -135,13 +137,20 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
     }
     function changed() {
       syncChips();
-      onChange([...selected]);
+      onChange(selectedIds());
       if (!popup.hidden) refresh();
     }
     function appendChunk() {
       const end = Math.min(rendered + chunk, matching.length);
       for (; rendered < end; rendered++) {
         const row = matching[rendered];
+        if (talentPicker && row.orderGroup && (rendered === 0 || row.orderGroup !== matching[rendered - 1].orderGroup)) {
+          const heading = el("div", row.orderGroup);
+          heading.className = "cms-picker-group";
+          heading.setAttribute("role", "presentation");
+          heading.setAttribute("aria-hidden", "true");
+          list.append(heading);
+        }
         const item = button("", () => choose(row.id));
         item.type = "button";
         item.id = list.id + "-" + rendered;
@@ -183,7 +192,7 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
       if (!matching.length) return;
       active = Math.max(0, Math.min(matching.length - 1, active + delta));
       while (active >= rendered) appendChunk();
-      const item = list.children[active];
+      const item = list.querySelectorAll('[role="option"]')[active];
       for (const node of list.querySelectorAll("[data-active]")) delete node.dataset.active;
       item.dataset.active = "true";
       search.setAttribute("aria-activedescendant", item.id);
@@ -220,7 +229,7 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
     if(view!=="legacy"&&catalog.editable&&catalog.contentPolicy==="all-content-v1"&&relatedEntity&&catalog.categories.includes(categories[relatedEntity]?.category)){
       const actions=el("div");actions.className="cms-relation-actions";
       const create=button("＋ 候補を新規作成",()=>{if(!isDisabled())openRelatedCreator(relatedEntity,search.value.trim());});create.dataset.pickerNavigation="";create.className="cms-related-create";
-      const refresh=button("候補を更新",async()=>{if(saving||isDisabled())return;refresh.disabled=true;try{const latest=await api("/api/cms/catalog?fresh=1");if(latest.contentPolicy!==catalog.contentPolicy||latest.editable!==catalog.editable)throw Error("権限が変更されました");const rows=relatedEntity==="talent"?latest.people:relatedEntity==="organization"?latest.organizations:relatedEntity==="song"?latest.songs:latest.sections.find(s=>s.entity===relatedEntity)?.items||[];group.refreshChoices(rows);group.dispatchEvent(new CustomEvent("cms-relations-refreshed",{bubbles:true,detail:{sha:latest.sha}}));status.textContent="候補を更新しました。";}catch{status.textContent="候補を更新できませんでした。";}finally{refresh.disabled=false;}});refresh.dataset.pickerNavigation="";
+      const refresh=button("候補を更新",async()=>{if(saving||isDisabled())return;refresh.disabled=true;try{const latest=await api("/api/cms/catalog?fresh=1");if(latest.contentPolicy!==catalog.contentPolicy||latest.editable!==catalog.editable)throw Error("権限が変更されました");const rows=relatedEntity==="talent"?latest.people:relatedEntity==="organization"?latest.organizations:relatedEntity==="song"?latest.songs:latest.sections.find(s=>s.entity===relatedEntity)?.items||[];if(relatedEntity==="talent"&&Array.isArray(catalog.people))catalog.people.splice(0,catalog.people.length,...rows);group.refreshChoices(rows);group.dispatchEvent(new CustomEvent("cms-relations-refreshed",{bubbles:true,detail:{sha:latest.sha}}));status.textContent="候補を更新しました。";}catch{status.textContent="候補を更新できませんでした。";}finally{refresh.disabled=false;}});refresh.dataset.pickerNavigation="";
       actions.append(create,refresh);group.append(actions);
     }
     syncChips();
@@ -1134,7 +1143,7 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
         const notify=()=>host.dispatchEvent(new Event("change",{bubbles:true}));
         host.append(el("p",label+"VTuber"),relationPicker({choices:catalog.people,selected:people,label:label+"VTuber",multiple:all,onChange:notify}));
         if(all)host.append(el("p",label+"グループ"),relationPicker({choices:catalog.sections.find(r=>r.entity==="group")?.items||[],selected:groups,label:label+"グループ",multiple:true,onChange:notify}));
-        return ()=>({talent:[...people][0],talentIds:[...people],groupIds:[...groups]});
+        return ()=>{const rank=new Map((catalog.people||[]).map((p,i)=>[p.id,i]));return {talent:[...people][0],talentIds:[...people].sort((a,b)=>(rank.get(a)??Infinity)-(rank.get(b)??Infinity)),groupIds:[...groups]};};
       }
       function toggle(host,text,checked,content,sync){
         const c=el("input");c.type="checkbox";c.checked=checked;
@@ -1449,7 +1458,8 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
       submit.disabled = true;
       try {
         const values = Object.fromEntries([...fields].map(([key, control]) => [key, control.value]));
-        for (const [key, ids] of relations) values[key] = [...ids];
+        const peopleRank=new Map((catalog.people||[]).map((p,i)=>[p.id,i]));
+        for (const [key, ids] of relations) values[key] = ['talentIds','performers'].includes(key)?[...ids].sort((a,b)=>(peopleRank.get(a)??Infinity)-(peopleRank.get(b)??Infinity)):[...ids];
         if (fullTalent) {
           values.agencyState = agencyState.value;
           values.affiliations = affiliationRows.map(({ org, status, from, to }) => ({
@@ -1924,7 +1934,7 @@ export async function mountSimpleCms(panel, status, api, options = {}) {
   state.setAttribute("aria-label", "状態で絞り込む");
   draftFilter.setAttribute("aria-label", "下書きで絞り込む");
   category.append(new Option("すべての種類", ""), ...sections.map(({ entity, label }) => new Option(label, entity)));
-  order.append(new Option("登録順", ""), new Option("名前順", "name"), new Option("名前順（降順）", "name-desc"), new Option("固定ID順", "id"));
+  order.append(new Option(selectedEntity==="talent"?"事務所別・所属／デビュー日順":"標準順", ""), new Option("名前順", "name"), new Option("名前順（降順）", "name-desc"), new Option("固定ID順", "id"));
   visibility.append(new Option("公開状態：すべて", ""), ...[...new Set(sections.flatMap(({ items }) => items.map((row) => row.visibility).filter(Boolean)))].map((value) => new Option(translated(value), value)));
   state.append(new Option("状態：すべて", ""), ...[...new Set(sections.flatMap(({ items }) => items.map((row) => row.state).filter(Boolean)))].map((value) => new Option(translated(value), value)));
   draftFilter.append(new Option("下書き：すべて", ""), new Option("下書きあり", "yes"), new Option("下書きなし", "no"));

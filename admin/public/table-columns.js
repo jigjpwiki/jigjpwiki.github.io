@@ -97,7 +97,7 @@ export function columnsFor(entity, { models, forms, rowsFor = () => [] } = {}) {
     return (field === "campaignId" ? byCampaign : byProduct).get(id) || [];
   }
   const talentNames = (ids) =>
-    (Array.isArray(ids) ? ids : [])
+    (globalThis.MemberOrder?.sortIds(Array.isArray(ids)?ids:[],globalThis.MemberOrder.orderedPeople(models.talents,models.anniversaries?.events))||(Array.isArray(ids)?ids:[]))
       .map((id) => talents.get(id)?.displayName || id)
       .join("・");
   const title = column(

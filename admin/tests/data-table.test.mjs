@@ -107,3 +107,28 @@ test("incomplete event timestamps remain unknown and valid instants display in J
     day: 1,
   });
 });
+
+test("reference models use pending debut dates without modifying the baseline", async () => {
+  const { referenceModels } = await import("../public/row-projection.js");
+  const { default: memberOrder } = await import("../../assets/js/member-order.js");
+  const previous = globalThis.MemberOrder;
+  globalThis.MemberOrder = memberOrder;
+  try {
+    const person = id => ({ id, affiliations: [{ organizationId: "org", status: "current", from: null }] });
+    const event = (id, talent, year) => ({ id, visibility: "public", type: "debut", talentIds: [talent], groupIds: [], date: { year, month: 1, day: 1 } });
+    const models = {
+      talents: { organizations: [{ id: "org" }], talents: [person("a"), person("b")] },
+      catalog: { groups: [] },
+      anniversaries: { events: [event("e1", "a", 2024), event("e2", "b", 2025)] },
+    };
+    const before = structuredClone(models);
+    const result = referenceModels(models, [{ entity: "anniversary", id: "e2", value: event("e2", "b", 2023) }]);
+    assert.deepEqual(result.talents.talents.map(t => t.id), ["b", "a"]);
+    assert.deepEqual(memberOrder.orderedPeople(result.talents, result.anniversaries.events).map(t => t.id), ["b", "a"]);
+    assert.equal(result.anniversaries.events[1].date.year, 2023);
+    assert.deepEqual(models, before);
+  } finally {
+    if (previous === undefined) delete globalThis.MemberOrder;
+    else globalThis.MemberOrder = previous;
+  }
+});

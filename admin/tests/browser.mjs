@@ -471,7 +471,10 @@ try {
       await p
         .getByRole("listbox", { name: "メンバー", exact: true })
         .evaluate((e) => [...e.selectedOptions].map((o) => o.value)),
-      group.talentIds,
+      require("../../assets/js/member-order").sortIds(
+        group.talentIds,
+        require("../../assets/js/member-order").orderedPeople(models.talents, models.anniversaries?.events),
+      ),
     );
     await p.getByRole("tab", { name: "基本情報", exact: true }).focus();
     await p.keyboard.press("ArrowRight");

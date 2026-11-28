@@ -77,12 +77,18 @@ export function choice(label, value, options, change, path, registry) {
   select.onchange = () => change(select.value);
   return labelled(label, select, path, registry);
 }
+export function talentGroupLabel(row, organizations) {
+  if (!globalThis.MemberOrder) return "";
+  const group = globalThis.MemberOrder.membership(row, organizations, null).group;
+  return organizations.find(o => o.id === group)?.name ||
+    ({ former: "旧所属", unaffiliated: "無所属", ended: "活動終了・引退", unknown: "所属不明" })[group] || "";
+}
 export function namePicker(
   label,
   ids,
   rows,
   change,
-  { multiple = false, path, registry } = {},
+  { multiple = false, path, registry, groupBy } = {},
 ) {
   const box = el("div", undefined, "name-picker"),
     search = el("input");
@@ -97,6 +103,7 @@ export function namePicker(
     select.replaceChildren();
     if (!multiple) select.append(new Option("未登録・不明", ""));
     const query = search.value.normalize("NFKC").toLowerCase();
+    let previousGroup, parent = select;
     for (const row of rows.filter(
       (r) =>
         selected.has(r.id) ||
@@ -107,7 +114,17 @@ export function namePicker(
     )) {
       const option = new Option(row.displayName || row.name, row.id);
       option.selected = selected.has(row.id);
-      select.append(option);
+      const groupName = groupBy?.(row);
+      if (groupName !== previousGroup) {
+        previousGroup = groupName;
+        parent = select;
+        if (groupName) {
+          parent = document.createElement("optgroup");
+          parent.label = groupName;
+          select.append(parent);
+        }
+      }
+      parent.append(option);
     }
     for (const id of selected)
       if (!rows.some((r) => r.id === id))

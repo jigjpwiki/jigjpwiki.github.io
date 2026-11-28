@@ -4,6 +4,7 @@ import {
   textField,
   choice,
   namePicker,
+  talentGroupLabel,
   portrait,
   safeLink,
 } from "./controls.js";
@@ -217,7 +218,7 @@ export function fields({
               rerender();
             }
           : set,
-        { multiple: s.type === "array", path, registry },
+        { multiple: s.type === "array", path, registry, groupBy: refs === "talent" ? row => talentGroupLabel(row, models.talents.organizations) : undefined },
       );
       if (refs === "channel")
         picker.append(

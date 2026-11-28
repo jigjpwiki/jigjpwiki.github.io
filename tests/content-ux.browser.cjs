@@ -43,6 +43,8 @@ const goodsListingCount=publishedGoods.campaigns.length+publishedGoods.products.
   await p.goto(base+'/music/karaoke/karaoke-000001/');assert.equal(await p.locator('.feature-setlist>li').count(),31);await size('setlist');
   await p.goto(base+'/events/');await size('events');if(javaScriptEnabled){assert.equal(await p.locator('[data-event-group="past"] [data-filter-row]').count(),4);assert.equal(await p.locator('[data-event-group="unknown"] [data-filter-row]').count(),0);assert.equal(await p.locator('[data-event-group="unknown"]').isVisible(),false);assert.equal(await p.locator('[data-event-group="upcoming"] [data-filter-row]').count(),1);await p.clock.setFixedTime(new Date('2026-12-26T10:00:00Z'));await p.evaluate(()=>document.dispatchEvent(new Event('visibilitychange')));assert.equal(await p.locator('[data-event-id="evt-000001"]').getAttribute('data-phase'),'ongoing');await p.clock.setFixedTime(new Date('2026-12-26T11:00:00Z'));await p.evaluate(()=>document.dispatchEvent(new Event('visibilitychange')));assert.equal(await p.locator('[data-event-group="past"] [data-filter-row]').count(),5);assert.equal(await p.locator('[data-event-group="upcoming"]').isVisible(),false);assert.equal(await p.locator('[data-event-group="past"] [data-filter-row]').first().getAttribute('data-event-id'),'evt-000001');await p.clock.setFixedTime(now);}
   await p.goto(base+'/fixture-events/');await size('events-thumbnail');
+  assert.equal(await p.locator('.event-date-tile').count(),fixtureEvents.events.length);
+  assert.equal(await p.locator('[data-event-id="evt-000001"] .avatar-stack-more').innerText(),'+4');
   const eventImg=p.locator('.event-cover img').first();await eventImg.scrollIntoViewIfNeeded();await eventImg.evaluate(e=>e.decode());
   const eventBox=await eventImg.boundingBox();assert(Math.abs(eventBox.width/eventBox.height-16/9)<0.03);
   assert.equal(await eventImg.evaluate(e=>getComputedStyle(e).objectFit),'cover');
@@ -57,6 +59,8 @@ const goodsListingCount=publishedGoods.campaigns.length+publishedGoods.products.
    await p.screenshot({path:path.join(process.env.EVENT_SCREENSHOTS,'events-'+width+'.png'),fullPage:true});
   }
   await p.goto(base+'/fixture-event/');await size('event-detail');
+  assert.equal(await p.locator('.event-detail-hero .event-official a').getAttribute('href'),fixtureEvents.events[0].announcementUrl);
+  assert.equal(await p.locator('.event-timeline').count(),fixtureEvents.events[0].slots.length?1:0);
   const detailImage=p.locator('.event-cover-detail img');await detailImage.evaluate(e=>e.decode());
   const detailBox=await detailImage.boundingBox();assert(Math.abs(detailBox.width/detailBox.height-16/9)<0.03);
   if(javaScriptEnabled)assert.equal(await p.locator('[data-event-detail-times] [data-event-phase]').innerText(),'開催予定');
